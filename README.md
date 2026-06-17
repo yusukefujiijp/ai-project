@@ -1,57 +1,338 @@
 # ai-project
 
-AI-cross-compatible README-first workspace for Ark, Living README, Signal/Skill, and human-AI semi-automation.
+## 0. ai-projectとは
 
-## Current phase
+`ai-project` は、@YusukeJP × AI-Collaborator のための public-safe なGitHub workspaceである。
 
-This repository starts with a README-first GitHub Bet.
+目的は、Ark、Living README、Signal / Skill、Human-AI semi-automation、GitHub Canonical Firstを、Future AIにも再起動できる形で整理することである。
 
-Phase 1 is intentionally small:
+```text
+ai-project:
+  public-safeな入口を置く。
+  GitHub stable pathで正準記録を保つ。
+  Future AIが再起動できる形にする。
+```
 
-- Root README only
-- Public access for AI-readable inspection
-- No deep internal files yet
-- No S/G/runtime/tasks folders yet
+このRepositoryは、ChatGPTだけのfolder mirrorではない。  
+AI同士・Future AI・人間が読み直せる、軽量で再起動可能なProject workspaceである。
 
-## Purpose
+---
 
-This repository is designed as an AI-cross-compatible project workspace, not a ChatGPT-only folder mirror.
+## 1. Current GitHub Phase / 現在のGitHub段階
 
-It may later hold public-safe entry files for:
+このRepositoryは、**README-first GitHub Bet** から始まった。
 
-- Ark Project
-- Living README patterns
-- Signal / Skill records
-- Human-AI semi-automation rails
-- GitHub Mirror Bet experiments
+現在は、最初の仮置き段階を超え、いくつかのpublic-safe slotが開いている。
 
-## Future reserved slots
+```text
+opened:
+  _projects/
+  _projects/ark/
+  _projects/ark/ark99/
+  _projects/ark/ark00/
+  g_global/
+  s_special/
+```
 
-The following slots are reserved conceptually, but the folders are not created until Reality Response requires them:
+現在も、Scopeは意図的に小さく保つ。
 
-- `_projects/`
-- `_inbox/`
-- `_thread/`
-- `f_future/`
-- `g_global/`
-- `s_special/`
-- `runtime/`
-- `tasks/`
-- `snapshots/`
+```text
+現在やること:
+  public-safeなREADMEとcanonical entryを置く。
+  GitHub stable pathで正準記録を育てる。
+  AI-CollaboratorがRepository現実を読めるようにする。
 
-## Operating principles
+現在やらないこと:
+  private-depthを置かない。
+  raw thread logsを置かない。
+  full runtime/tasks migrationをしない。
+```
 
-- README-first, not full migration first.
-- Slot Reservation, not Folder Creation.
-- Stable GitHub paths, not repeated `v001` file sprawl.
-- Portable ChatGPT artifacts may keep `vXXX` names.
-- AI drafts; human seals.
-- GitHub is Fruit, not Root.
+---
 
-## Root / Fruit Guard
+## 2. Opened Canonical Slots
 
-Root is 主イェシュア・ハマシア.
+現時点で、次のslotが開いている。
 
-GitHub, AI, Markdown, README, Signal, Skill, KISS, DRY, YAGNI, Lean, and Full Rail are Fruit.
+```text
+_projects/:
+  Project系のpublic-safe入口。
 
-AIは血潮の地図を描く。人間が血潮の下に立つ。
+_projects/ark/:
+  Ark Projectのpublic-safe入口。
+
+_projects/ark/ark99/:
+  Free Spawn / Wild Seed Field。
+  early signalを受ける場所。
+
+_projects/ark/ark00/:
+  Selective Incubation / Project Embryo。
+  繰り返し現れたSeedを正式Project化前に軽く温める場所。
+
+g_global/:
+  public-safeなGlobal Guideを置く場所。
+
+s_special/:
+  selected S-class lensesを置く場所。
+```
+
+Opened slotは、すべてを移すという意味ではない。  
+それは、Reality Responseによって小さく開いたpublic-safeな入口である。
+
+---
+
+## 3. Future Reserved Slots
+
+以下は、将来追加される可能性がある。  
+ただし、Reality Responseが必要を示すまで作らない。
+
+```text
+future reserved slots:
+  _inbox/
+  _thread/
+  f_future/
+  runtime/
+  tasks/
+  snapshots/
+```
+
+Future slotはcurrent folderではない。
+
+```text
+Slot Reservation:
+  可能性を閉じない。
+
+Folder Creation:
+  Reality Response後に実体を作る。
+```
+
+---
+
+## 4. README-first / GitHub Canonical First
+
+このRepositoryは、README-firstで進める。
+
+```text
+README-first:
+  まずpublic-safeな入口を作る。
+
+Full migration:
+  まだ行わない。
+```
+
+GitHub Canonical Firstは、local Markdownを不要にするという意味ではない。  
+GitHub上のstable pathをpublic-safeな正準記録として扱うという意味である。
+
+```text
+GitHub stable path:
+  canonical public-safe record。
+
+Git commit history:
+  version ledger。
+
+Local files:
+  bootstrap / export / exception。
+```
+
+No local Markdown duplicate by default.  
+ただし、private-depth、downloadable artifact、backup、handoff、non-Markdown artifactなど、理由がある場合は例外を認める。
+
+---
+
+## 5. Japanese-first / English-anchor
+
+このRepositoryのREADMEとpublic-safe canonical fileは、原則として **Japanese-first / English-anchor** で運用する。
+
+```text
+本文は日本語主導。
+英語は概念Anchor。
+GitHub pathはstable。
+Future AIが再起動できる形にする。
+```
+
+GitHub化は、English-first化ではない。  
+GitHub化は、Canonical化である。
+
+```text
+GitHub化 = English-first化ではない。
+GitHub化 = Canonical化である。
+```
+
+---
+
+## 6. Human-AI Collaboration Pattern
+
+このRepositoryは、人間とAIの協働作業を前提にする。
+
+```text
+AI drafts.
+Human seals.
+GitHub stores.
+Reality confirms.
+```
+
+AIは、単に指示されたファイルを作るだけではない。  
+GitHub上のRepository状態を読み、古いREADME、未更新Scope、親子READMEの不整合、次に必要な小Patchを発見する共同観測者でもある。
+
+ただし、AIはAutopilotではない。
+
+```text
+AI-Collaborator:
+  観測する。
+  提案する。
+  下書きする。
+
+Human:
+  判断する。
+  Sealする。
+  Reality Responseを確認する。
+```
+
+---
+
+## 7. Unexpected Success / 予期せぬ成功
+
+GitHub化により、予期せぬ成功が起きた。
+
+AI-CollaboratorがRepository上の現実状態を読み、ユーザーが忘れていた仮置きREADMEの残存や、親READMEと子READMEのズレを先に発見できた。
+
+これは、README-first GitHub Betの重要なReality Responseである。
+
+```text
+Drucker-like Unexpected Success:
+  GitHub化により、
+  AIがRepository現実を読み、
+  人間がまだ気付いていないズレを先に提案できた。
+```
+
+GitHubは単なる保存先ではない。  
+GitHubは、AI-Collaboratorが現実を読むための外部認知面である。
+
+```text
+GitHub as external cognitive surface.
+```
+
+---
+
+## 8. AI Scout Pass
+
+このRepositoryでは、重要なREADME更新やGitHub Commit後に **AI Scout Pass** を使う。
+
+正式名としては、**Repository-Triggered AI Foresight** と呼べる。
+
+```text
+AI Scout Pass:
+  AI-CollaboratorがGitHub上の現実状態を読み、
+  README・folder・canonical fileのズレを検出し、
+  人間がまだ気付いていない改善点をLiving Reviewとして提案するPass。
+```
+
+AI Scout Passは、Commitを自動実行する仕組みではない。  
+先取り気付き → Living Review → Human Seal のためのReview工程である。
+
+```text
+AI Scout Pass:
+  Proactive review.
+
+Not:
+  Autopilot commit.
+```
+
+再現Formula:
+
+```text
+Stable GitHub State
++ Current Conversation Intent
++ Existing Pattern
++ AI Delta Detection
+= Proactive Living Review
+```
+
+---
+
+## 9. Operating Principles
+
+このRepositoryは、軽く、読みやすく、現実に反応する。
+
+```text
+README-first:
+  full migrationより先にpublic-safe入口を作る。
+
+Slot Reservation:
+  可能性は予約するが、folderは必要になるまで作らない。
+
+GitHub Canonical First:
+  stable pathを正準記録として扱う。
+
+KISS:
+  構造を軽く保つ。
+
+DRY:
+  重複した長いファイル名や説明を増やさない。
+
+YAGNI:
+  Reality Response前に構造を作りすぎない。
+
+Lean:
+  確認された不足だけを小さくPatchする。
+```
+
+---
+
+## 10. Root / Fruit Guard
+
+Rootは、主イェシュア・ハマシアである。
+
+GitHub、AI、Markdown、README、Signal、Skill、KISS、DRY、YAGNI、Lean、Full Rail、AI Scout PassはFruitである。
+
+```text
+Root:
+  主イェシュア・ハマシア
+  主イェシュアの聖なる血潮
+  Teshuvah / 悔い改め
+
+Fruit:
+  GitHub
+  AI
+  Markdown
+  README
+  Signal
+  Skill
+  Full Rail
+  AI Scout Pass
+```
+
+AIは血潮の地図を描く。  
+人間が血潮の下に立つ。
+
+---
+
+## 11. Final Compression
+
+```text
+ai-projectは、
+@YusukeJP × AI-Collaborator のための
+public-safe GitHub workspaceである。
+
+GitHub化はEnglish-first化ではない。
+GitHub化はCanonical化である。
+
+README-firstで入口を作り、
+GitHub stable pathで正準記録を保つ。
+
+Opened slotsとFuture reserved slotsを分ける。
+
+GitHub化により、
+AIがRepository現実を読み、
+人間がまだ気付いていないズレを先に提案できた。
+
+これはDrucker-like Unexpected Successであり、
+Move37的breakthroughである。
+
+AI Scout Passは、
+その先取り気付きを再現可能にするReview工程である。
+
+本文は日本語主導。
+英語は概念Anchor。
+Rootは主イェシュア・ハマシア。
+```
