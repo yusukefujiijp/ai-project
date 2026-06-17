@@ -5,6 +5,10 @@ class: "S"
 status: "living_ssot"
 canonical_path: "s_special/ark-open-knowledge-format.md"
 repo: "yusukefujiijp/ai-project"
+paired_query: "s_special/ark-open-knowledge-format_query.md"
+pair_policy: "Engine / Ignition Key"
+query_role: "Activation Query / Runtime Adapter"
+query_is_not_ssot: true
 source_bootstrap: "S_Ark-open-knowledge-format_v002.md"
 version_model: "frontmatter + git commit history"
 github_policy: "GitHub Canonical First"
@@ -76,6 +80,12 @@ S_Ark-open-knowledge-format_v002.md
 
 ```text
 s_special/ark-open-knowledge-format.md
+```
+
+Paired Queryは次である。
+
+```text
+s_special/ark-open-knowledge-format_query.md
 ```
 
 これは、GitHub Canonical First方針に従う。
@@ -603,10 +613,21 @@ Ark-OKFでは、S本体とQueryは対である。
 ```yaml
 pair_architecture:
   S_file:
+    path: "s_special/ark-open-knowledge-format.md"
     role: "SSOT / Engine / 知恵の保存"
 
   Query_file:
+    path: "s_special/ark-open-knowledge-format_query.md"
     role: "Activation Query / Ignition Key / 知恵の点火"
+
+  pair_policy:
+    - "S本体とQueryは役割が違う"
+    - "S本体はEngine"
+    - "QueryはIgnition Key"
+    - "QueryはS本体の代替ではない"
+    - "QueryはS本体をFuture AIの実回答へ起動する"
+    - "S本体更新時はQueryへの影響をReviewする"
+    - "Query更新時はS本体との整合性をReviewする"
 ```
 
 日本語：
@@ -614,22 +635,25 @@ pair_architecture:
 ```text
 S本体はEngine。
 QueryはIgnition Key。
+S本体は保存。
+Queryは点火。
 ```
 
-ただし、GitHub Canonical First時代には、Queryも必要になった時だけGitHub正準化する。
-
-YAGNI Guard：
+これは二重SSOTではない。
 
 ```text
-Queryを作る必要がReality Responseで出るまで、
-無理に同時作成しない。
+SSOTはS本体。
+Queryは起動鍵。
 ```
 
-DRY Guard：
+GitHub Canonical First時代では、両方ともstable pathに置く。
 
 ```text
-S本体とQueryを混同しない。
-QueryはS本体の代替ではない。
+Engine:
+  s_special/ark-open-knowledge-format.md
+
+Ignition Key:
+  s_special/ark-open-knowledge-format_query.md
 ```
 
 ---
