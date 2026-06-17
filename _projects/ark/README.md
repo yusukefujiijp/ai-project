@@ -10,6 +10,7 @@ Current scope is intentionally small:
 
 - Ark Project entry README
 - Ark99 entry README
+- Ark00 entry README
 - No full S/G/runtime/tasks migration yet
 - No private thread logs or personal operational records
 
@@ -18,10 +19,13 @@ Current scope is intentionally small:
 Ark is organized as a staged project system:
 
 - `ark99/` — Free Spawn / Wild Seed Field / public-safe seed entry
-- `ark00/` — Selective Incubation / Project Embryo / future slot, not created yet
+- `ark00/` — Selective Incubation / Project Embryo / README-first incubation entry
 - `ark01+` — Formal Project / field-tested project stages / future direction
 
-Only `ark99/` is created in this phase.
+In the current phase, `ark99/` and `ark00/` are opened as lightweight README-first entries.
+
+`ark00/` opening does not mean full projectization.  
+It means the first selective incubation slot has been opened after the Ark99 README pattern proved useful.
 
 ## README-first principle
 
@@ -33,7 +37,6 @@ Deeper operational material remains local-first until Reality Response shows tha
 
 The following Ark-related slots may be added later, but are not created in this phase:
 
-- `ark00/`
 - `docs/`
 - `missions/`
 - `runtime/`
