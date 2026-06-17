@@ -415,7 +415,195 @@ After commit, ask the human to verify:
 - public/private boundary is safe
 - no folder sprawl occurred
 
-## 14. S-class promotion conditions
+After Human Reality Review, run AI Scout Pass when useful.
+
+```text
+Human Reality Review
+-> AI Scout Pass
+-> Patch Candidate
+-> Human Seal
+```
+
+AI Scout Pass may detect stale README text, parent/child README mismatch, opened-vs-reserved slot drift, language-policy drift, or an unexpected success.
+
+Do not commit scout findings automatically.
+
+Scout findings are Living Review candidates.  
+Human Seal remains the Commit Gate.
+
+## 14. AI Scout Pass / Repository Reality Review
+
+AI Scout Pass is a proactive repository review step.
+
+Formal name:
+
+```text
+Repository-Triggered AI Foresight
+```
+
+Japanese anchors:
+
+```text
+Repository起点AI先取り気付き
+Repository現実Review
+AI側からの能動的発見
+```
+
+### Definition
+
+```text
+AI Scout Pass:
+  AI-Collaborator reads the current GitHub repository state,
+  compares files, folders, README hierarchy, and canonical patterns,
+  detects mismatches or unexpected signals,
+  and proposes the next useful patch as Living Review.
+```
+
+AI Scout Pass is not an autopilot commit.
+
+```text
+Proactive review, not autopilot commit.
+```
+
+### Why this exists
+
+The README-first GitHub Bet produced an unexpected success.
+
+After selected README files became canonical on GitHub, AI-Collaborator could inspect the actual repository state and notice that older parent README files still carried bootstrap wording.
+
+This was a Drucker-like Unexpected Success.
+
+```text
+GitHub became an external cognitive surface.
+AI could see repository reality.
+AI could notice stale structure before the human explicitly asked.
+```
+
+This guide preserves that discovery as a repeatable procedure.
+
+### When to run
+
+Run AI Scout Pass when useful after:
+
+```text
+- GitHub Commit
+- Human Reality Review
+- creating a new README-first folder
+- opening a new slot
+- updating a canonical SSOT
+- changing parent / child README structure
+- the human says the GitHub display was confirmed
+```
+
+Do not run it as an unlimited repository crawl.
+
+Keep the pass focused on the current task, nearby parent files, and relevant canonical companions.
+
+### What to read
+
+Recommended read order:
+
+```text
+1. Target file
+   The README / SSOT just created or updated.
+
+2. Parent README
+   The README of the parent folder.
+
+3. Root README
+   Repository root README.md.
+
+4. Related canonical companions
+   Paired guide, query, SSOT, index, or project entry file.
+
+5. Recent commit result
+   Commit path, commit message, and human display confirmation.
+```
+
+### What to detect
+
+Look for:
+
+```text
+stale_bootstrap:
+  old placeholder wording
+  "future slot" language after a slot was opened
+  "root README only" language after deeper files exist
+
+parent_child_mismatch:
+  child README exists but parent README does not mention it
+  parent ladder says future while child folder is opened
+
+opened_vs_reserved_slot_drift:
+  opened slot listed as future
+  future slot described as current
+
+language_policy_drift:
+  child README is Japanese-first / English-anchor
+  parent README remains English-first
+
+canonical_policy_drift:
+  GitHub stable path and local duplicate compete
+  versioned filenames appear as canonical GitHub paths
+
+public_private_boundary_risk:
+  private-depth material starts entering a public-safe file
+```
+
+### Output format
+
+AI Scout Pass should output Living Review, not a commit.
+
+Use this format:
+
+```yaml
+AI_Scout_Pass_Output:
+  observation: ""
+  detected_mismatch: ""
+  unexpected_success_or_signal: ""
+  patch_candidate: ""
+  risk_guard: ""
+  human_seal_required: true
+```
+
+### Example
+
+```text
+Observation:
+  Ark99 and Ark00 README files now use Japanese-first / English-anchor,
+  but the parent Ark README and root README still carry bootstrap wording.
+
+Detected mismatch:
+  Parent and root README files do not reflect the current opened slots.
+
+Patch candidate:
+  Rewrite parent Ark README and root README using the new README pattern.
+
+Guard:
+  Do not commit without Human Seal.
+```
+
+### Reusable formula
+
+```text
+Stable GitHub State
++ Current Conversation Intent
++ Existing Pattern
++ AI Delta Detection
+= Proactive Living Review
+```
+
+### Hard guard
+
+```text
+AI Scout Pass may propose.
+AI Scout Pass may draft.
+AI Scout Pass may identify a patch candidate.
+
+AI Scout Pass must not commit without Human Seal.
+```
+
+## 15. S-class promotion conditions
 
 This G-class guide may later be promoted if the pattern becomes broadly reusable.
 
@@ -443,7 +631,7 @@ Excitement is Signal.
 Repeated Reality Response is Seal.
 ```
 
-## 15. Root / Fruit Guard
+## 16. Root / Fruit Guard
 
 Root is 主イェシュア・ハマシア.
 
