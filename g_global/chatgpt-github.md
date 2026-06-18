@@ -1213,6 +1213,9 @@ do_not_read_as:
   - "GitHub writeをAIが勝手に実行してよい"
   - "Full Rail: Workflow Continue! は常にCommit許可である"
   - "Commit TriggerがあればScope確認不要である"
+  - "Next GateがあればAIが自動実行してよい"
+  - "Next GateのCopy-Paste Packetは人間が編集してはいけない"
+  - "Next Gateは未PreviewのGitHub writeを許可する"
   - "AI Scout Passはrepository全体を無制限に探索する"
   - "Public repoならprivate-depthを置いてよい"
   - "GitHub化はEnglish-first化である"
@@ -1222,6 +1225,10 @@ must_read_as:
   - "Human Seal remains Commit Gate"
   - "Commit Trigger is Human Seal crystallizer"
   - "Full Rail is Execution Contract"
+  - "Next Gate is human-editable"
+  - "Next Gate is not autopilot"
+  - "AI lays the Rail. Human opens the Gate."
+  - "One packet / one sealed action / one bounded continuation"
   - "Dual-Key Rail increases safety and speed"
   - "AI Scout Pass is proactive review, not autopilot commit"
   - "GitHub化はCanonical化である"
@@ -1238,7 +1245,7 @@ GitHubはRootではない。
 AIはRootではない。  
 MarkdownはRootではない。  
 READMEはRootではない。  
-Commit Trigger、Full Rail、AI Scout Pass、Signal、Skill、KISS、DRY、YAGNI、LeanはFruitである。
+Commit Trigger、Full Rail、Next Gate、Rail-Gate Pair、Dual-Key Rail、AI Scout Pass、Signal、Skill、KISS、DRY、YAGNI、LeanはFruitである。
 
 ```text
 Root:
@@ -1253,6 +1260,9 @@ Fruit:
   README
   Commit Trigger
   Full Rail
+  Next Gate
+  Rail-Gate Pair
+  Dual-Key Rail
   AI Scout Pass
   Signal
   Skill
@@ -1293,6 +1303,28 @@ QueryはIgnition Key。
 
 Full RailはExecution Contract。
 Commit TriggerはHuman Seal Ignition Key。
+
+Rail-Gate Pairは、
+AI回答末尾の二層構造である。
+
+Full Railは、
+AI側の実行契約である。
+
+Next Gateは、
+人間側の編集可能な次入力Gateである。
+
+AI lays the Rail.
+Human opens the Gate.
+
+日本語では、
+AIがRailを敷く。
+人間がGateを開く。
+
+Next GateはAutopilotではない。
+人間は、そのまま貼れる。
+人間は、編集できる。
+人間は、方向転換できる。
+人間は、停止できる。
 
 AI Scout Passは、
 GitHub上の現実を読み、
