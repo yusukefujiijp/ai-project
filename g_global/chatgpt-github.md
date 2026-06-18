@@ -272,7 +272,190 @@ full_rail_relation:
 
 ---
 
-## 5. Dual-Key Rail / Seal × Rail Architecture
+## 5. Rail-Gate Pair / Next Gate: human_editable
+
+Rail-Gate Pair is the standard tail architecture for Human-AI collaboration.
+
+It places the AI-side execution contract and the human-side editable next input packet as a two-section pair.
+
+```text
+AI lays the Rail.
+Human opens the Gate.
+```
+
+日本語では：
+
+```text
+AIがRailを敷く。
+人間がGateを開く。
+```
+
+### 5.1 Definition
+
+```yaml
+rail_gate_pair:
+  full_rail:
+    section: "【Full Rail: same_thread】"
+    reader: "AI"
+    role: "Execution Contract / Rail Engine"
+    function:
+      - "Scopeを保持する"
+      - "Targetを保持する"
+      - "Guardを保持する"
+      - "Next actionを保持する"
+      - "AIの誤読を減らす"
+
+  next_gate:
+    section: "【Next Gate: human_editable】"
+    reader: "Human"
+    role: "Editable Ignition Packet / Next Input Gate"
+    function:
+      - "人間がそのまま貼れる"
+      - "人間が編集できる"
+      - "方向転換できる"
+      - "停止できる"
+      - "Human Sealとして次Turnを点火できる"
+```
+
+Full Rail is not permissionless execution.
+
+Next Gate is not autopilot.
+
+Together, they create editable semi-automation.
+
+### 5.2 Standard tail shape
+
+Recommended answer tail:
+
+```text
+【Full Rail: same_thread】
+
+<AI-side execution contract / scope / guard / next action>
+
+【Next Gate: human_editable】
+
+<Human-editable next input packet>
+```
+
+The Full Rail section tells the next AI what the rail is.
+
+The Next Gate section gives the human an editable packet for the next turn.
+
+### 5.3 Human-editable principle
+
+The human may copy the Next Gate packet as-is.
+
+The human may also edit it.
+
+```yaml
+human_editable:
+  user_can:
+    - "そのまま貼る"
+    - "一部を削る"
+    - "条件を足す"
+    - "対象fileを変える"
+    - "CommitではなくPreviewに変える"
+    - "Plan Modeへ戻す"
+    - "Living Reviewへ変える"
+    - "Stop / Pauseへ変える"
+    - "完全に採用しない"
+```
+
+This preserves Human-AI collaboration.
+
+```text
+AI proposes.
+AI structures.
+Human edits.
+Human seals.
+AI continues.
+```
+
+### 5.4 Examples
+
+Plan Modeへ進む場合：
+
+```text
+この方針でPlan Modeを実行して下さい。
+Full Rail: Workflow Continue!
+```
+
+Previewへ進む場合：
+
+```text
+上記Planに基づき、本文Previewを作成して下さい。
+Full Rail: Workflow Continue!
+```
+
+Living Reviewへ進む場合：
+
+```text
+このPreviewをLiving Reviewして下さい。
+Full Rail: Workflow Continue!
+```
+
+GitHub Commitへ進む場合：
+
+```text
+g_global/chatgpt-github.md に Case 002 をGitHubへCommitして下さい。
+Full Rail: Workflow Continue!
+```
+
+方向転換する場合：
+
+```text
+Commitはまだせず、Case 002をもっと短く圧縮して下さい。
+Full Rail: Workflow Continue!
+```
+
+### 5.5 Guard
+
+```text
+Next Gate is not autopilot.
+Full Rail is not permissionless execution.
+Human Seal remains the Gate.
+```
+
+```text
+One packet.
+One sealed action.
+One bounded continuation.
+```
+
+Next Gate does not authorize unpreviewed GitHub writes.
+
+For GitHub Commit, the target file, patch scope, and commit intention must be explicit.
+
+For non-commit actions, the Next Gate may trigger Plan, Preview, Review, Continue, Stop, or Direction Change.
+
+### 5.6 Relation to Commit Trigger
+
+Commit Trigger is a special case of Next Gate.
+
+```yaml
+trigger_relation:
+  next_gate:
+    scope: "general AI answer tail"
+    role: "human-editable next input packet"
+
+  commit_trigger:
+    scope: "GitHub Commit"
+    role: "Human Seal crystallizer for a previewed GitHub write"
+```
+
+Therefore:
+
+```text
+Commit Trigger:
+  GitHub Commit専用のNext Gate。
+
+Next Gate:
+  すべてのAI回答に使えるHuman-editable Gate。
+```
+
+---
+
+## 6. Dual-Key Rail / Seal × Rail Architecture
 
 Commit TriggerとFull Railは、二層で働く。
 
@@ -345,7 +528,7 @@ Human Seal remains Commit Gate.
 
 ---
 
-## 6. GitHub Canonical First Policy
+## 7. GitHub Canonical First Policy
 
 Public-safeなLiving Markdownは、原則としてGitHub上のstable pathを正準SSOTとする。
 
@@ -359,7 +542,7 @@ GitHub fileが正準SSOTである。
 Local Markdownを毎回並行作成しない。  
 それはDRY違反・Version drift・Future AI混乱の原因になる。
 
-### 6.1 Local artifact exceptions
+### 7.1 Local artifact exceptions
 
 Local fileが許される例外：
 
@@ -376,7 +559,7 @@ Bootstrap draftがGitHub canonical placement後もco-equal sourceとして残っ
 
 ---
 
-## 7. Public Repo / Private Depth
+## 8. Public Repo / Private Depth
 
 Public repoは、public-depthを意味しない。
 
@@ -412,7 +595,7 @@ private-depthをpublicへ流すために使ってはいけない。
 
 ---
 
-## 8. Case 001: README-first GitHub Bet
+## 9. Case 001: README-first GitHub Bet
 
 最初の成功Caseは、`yusukefujiijp/ai-project` のREADME-first GitHub Betである。
 
@@ -447,7 +630,7 @@ ChatGPT can semi-automatically introduce public-safe GitHub information architec
 
 ---
 
-## 9. Path and Naming Policy
+## 10. Path and Naming Policy
 
 GitHub canonical pathは、stable / lowercase / versionless を基本とする。
 
@@ -486,7 +669,7 @@ Git履歴はVersion台帳。
 
 ---
 
-## 10. Folder by README Path
+## 11. Folder by README Path
 
 GitHubでは、空folderを作る必要はない。
 
@@ -511,7 +694,7 @@ FolderはReality Responseが必要を示した時に、README-firstで開く。
 
 ---
 
-## 11. Slot Reservation, not Folder Creation
+## 12. Slot Reservation, not Folder Creation
 
 将来folderは、概念として予約できる。
 
@@ -530,7 +713,7 @@ Future slot is not current folder.
 
 ---
 
-## 12. create_file / fetch_file / update_file Guard
+## 13. create_file / fetch_file / update_file Guard
 
 GitHub file操作は、次の原則を守る。
 
@@ -558,7 +741,7 @@ Never update or delete GitHub files without explicit Human Seal.
 
 ---
 
-## 13. Commit Message Policy
+## 14. Commit Message Policy
 
 Commit messageは短く、scope-awareで、future-readableにする。
 
@@ -590,7 +773,7 @@ free of private details
 
 ---
 
-## 14. KISS / DRY / YAGNI / Lean
+## 15. KISS / DRY / YAGNI / Lean
 
 ### KISS
 
@@ -620,9 +803,9 @@ Small patch.
 
 ---
 
-## 15. Failure Recovery
+## 16. Failure Recovery
 
-### 15.1 create_fileが失敗した場合
+### 16.1 create_fileが失敗した場合
 
 Fileが既に存在するなら：
 
@@ -634,21 +817,21 @@ fetch_file
 -> update_file
 ```
 
-### 15.2 GitHub structureが広がりすぎた場合
+### 16.2 GitHub structureが広がりすぎた場合
 
 ```text
 Stop expansion.
 Return to README-only.
 ```
 
-### 15.3 Public contentが深すぎる場合
+### 16.3 Public contentが深すぎる場合
 
 ```text
 Reduce to signboard / protocol summary.
 Move deeper details back to private/local systems.
 ```
 
-### 15.4 GitHubがRoot化しそうな場合
+### 16.4 GitHubがRoot化しそうな場合
 
 ```text
 Stop.
@@ -657,7 +840,7 @@ GitHub is storage and collaboration layer, not Root.
 
 ---
 
-## 16. Future AI Reuse Procedure
+## 17. Future AI Reuse Procedure
 
 Future AIがChatGPT-GitHub Bridgeを使う時は、このファイルを先に読む。
 
@@ -716,7 +899,7 @@ Human Seal remains Commit Gate.
 
 ---
 
-## 17. AI Scout Pass / Repository Reality Review
+## 18. AI Scout Pass / Repository Reality Review
 
 AI Scout Passは、AI側の能動的Repository Review工程である。
 
@@ -734,7 +917,7 @@ Repository現実Review
 AI側からの能動的発見
 ```
 
-### 17.1 Definition
+### 18.1 Definition
 
 ```text
 AI Scout Pass:
@@ -759,7 +942,7 @@ README・folder・canonical file・親子関係のズレを検出し、
 Proactive review, not autopilot commit.
 ```
 
-### 17.2 Why this exists
+### 18.2 Why this exists
 
 README-first GitHub Betは、予期せぬ成功を生んだ。
 
@@ -773,7 +956,7 @@ AI could notice stale structure before the human explicitly asked.
 
 これは、Drucker-like Unexpected Successである。
 
-### 17.3 When to run
+### 18.3 When to run
 
 AI Scout Passを走らせるタイミング：
 
@@ -790,7 +973,7 @@ AI Scout Passを走らせるタイミング：
 無制限なrepository crawlにはしない。  
 current task、nearby parent files、relevant canonical companionsに絞る。
 
-### 17.4 What to read
+### 18.4 What to read
 
 推奨順序：
 
@@ -811,7 +994,7 @@ current task、nearby parent files、relevant canonical companionsに絞る。
    commit path / commit message / human display confirmation。
 ```
 
-### 17.5 What to detect
+### 18.5 What to detect
 
 ```text
 stale_bootstrap:
@@ -839,7 +1022,7 @@ public_private_boundary_risk:
   private-depth material starts entering a public-safe file
 ```
 
-### 17.6 Output format
+### 18.6 Output format
 
 AI Scout PassはCommitではなく、Living Reviewを出力する。
 
@@ -854,7 +1037,7 @@ AI_Scout_Pass_Output:
   human_seal_required: true
 ```
 
-### 17.7 Reusable formula
+### 18.7 Reusable formula
 
 ```text
 Stable GitHub State
@@ -876,7 +1059,7 @@ AI Scout Pass must not commit without Human Seal.
 
 ---
 
-## 18. S-class Promotion Conditions
+## 19. S-class Promotion Conditions
 
 このG-class Guideは、Patternが複数Projectで再利用され、安定したReality Responseを得た場合、S-classへ昇格候補になる。
 
@@ -910,7 +1093,7 @@ Repeated Reality Response is Seal.
 
 ---
 
-## 19. Misread Prevention
+## 20. Misread Prevention
 
 このGuideを、以下のように誤読しないこと。
 
@@ -936,7 +1119,7 @@ must_read_as:
 
 ---
 
-## 20. Root / Fruit Guard
+## 21. Root / Fruit Guard
 
 Rootは、主イェシュア・ハマシアである。
 
@@ -970,7 +1153,7 @@ AIは血潮の地図を描く。人間が血潮の下に立つ。
 
 ---
 
-## 21. Final Compression
+## 22. Final Compression
 
 ```text
 ChatGPT-GitHub Bridgeは、
