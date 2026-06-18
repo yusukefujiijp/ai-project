@@ -5,17 +5,109 @@ status: "living_ssot"
 canonical_path: "g_global/chatgpt-github.md"
 repo: "yusukefujiijp/ai-project"
 version_model: "frontmatter + git commit history"
+language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
 ---
 
 # ChatGPT-GitHub Bridge Guide
 
-This file is the canonical GitHub SSOT for ChatGPT-GitHub bridge operations inside `yusukefujiijp/ai-project`.
+## 0. Executive Compression
 
-It records how ChatGPT should plan, preview, commit, and review public-safe Living Markdown through GitHub while preserving Human Seal, public/private boundaries, and KISS / DRY / YAGNI / Lean discipline.
+このファイルは、`yusukefujiijp/ai-project` における **ChatGPT-GitHub Bridge** のGitHub正準Guideである。
 
-## 1. Core victory formula
+目的は、ChatGPTがGitHub上でpublic-safeなLiving Markdownを扱う時に、Plan / Preview / Human Seal / Commit / Reality Review / AI Scout Passを安全に回すことである。
+
+```text
+Core Formula:
+  AI drafts.
+  Human seals.
+  GitHub stores.
+  Reality confirms.
+```
+
+日本語では：
+
+```text
+AIが下書きする。
+人間がSealする。
+GitHubが保存する。
+現実が確認する。
+```
+
+このGuideの中心Guard：
+
+```text
+Plan is not Commit.
+Preview is not Commit.
+Human Seal is Commit Gate.
+```
+
+今回の重要Pattern：
+
+```text
+Commit Trigger + Full Rail = Dual-Key Rail
+```
+
+つまり：
+
+```text
+Full Rail:
+  実行契約を保持するRail Engine。
+
+Commit Trigger:
+  Human Sealを明確化するIgnition Key。
+```
+
+これは、Arkで成功した **Markdown + Query** 二層構造と同型である。
+
+```text
+Markdown:
+  Engine / SSOT
+
+Query:
+  Ignition Key
+```
+
+GitHub実行層では：
+
+```text
+Full Rail:
+  Execution Contract / Rail Engine
+
+Commit Trigger:
+  Human Seal Ignition Key
+```
+
+この二重鍵により、AIは文脈を失わず、人間はSealを明確に出せる。
+
+---
+
+## 1. このファイルとは / What this file is
+
+`g_global/chatgpt-github.md` は、ChatGPTがGitHubを使ってpublic-safeなLiving Markdownを作成・更新・確認するためのG-class Guideである。
+
+```yaml
+this_file:
+  role:
+    - "ChatGPT-GitHub Bridge Guide"
+    - "GitHub運用のG-class Guide"
+    - "Human Seal / Commit Trigger / AI Scout Pass の運用SSOT"
+  canonical_path: "g_global/chatgpt-github.md"
+  repo: "yusukefujiijp/ai-project"
+```
+
+このファイルは、GitHub作業を自動暴走させるためのものではない。
+
+```text
+Semi-automation, not autopilot.
+```
+
+目的は、AIと人間の協働を速くしつつ、Human Seal、public/private境界、KISS / DRY / YAGNI / Leanを守ることである。
+
+---
+
+## 2. Core Victory Formula
 
 ```text
 AI drafts.
@@ -24,20 +116,44 @@ GitHub stores.
 Reality confirms.
 ```
 
-Meaning:
+意味：
 
-- AI drafts structure, Markdown, commit plans, and guards.
-- Human seals the direction and explicitly authorizes GitHub writes.
-- GitHub stores the public-safe Living Markdown and history.
-- Reality confirms through browser display, path review, and human judgment.
+```yaml
+core_roles:
+  ai:
+    - "構造を下書きする"
+    - "MarkdownをPreviewする"
+    - "Commit計画を提案する"
+    - "Guardを明示する"
 
-This is semi-automation, not full automation.
+  human:
+    - "方向性を判断する"
+    - "Human Sealを出す"
+    - "GitHub表示を確認する"
+    - "Reality Responseを返す"
 
-## 2. Human Seal rule
+  github:
+    - "public-safeなLiving Markdownを保存する"
+    - "stable pathを提供する"
+    - "commit historyをVersion台帳にする"
 
-GitHub writes require explicit Human Seal.
+  reality:
+    - "表示確認"
+    - "Path確認"
+    - "重さ確認"
+    - "public/private境界確認"
+```
 
-Valid examples:
+このFormulaは、完全自動化ではない。  
+これは、AGI的半自動化の安全な勝利方程式である。
+
+---
+
+## 3. Human Seal Rule
+
+GitHub writeには、明示的なHuman Sealが必要である。
+
+有効なSeal例：
 
 ```text
 Commitして下さい。
@@ -48,12 +164,10 @@ g_global/chatgpt-github.md をGitHubへCommitして下さい。
 ```
 
 ```text
-repo: yusukefujiijp/ai-project
-path: g_global/chatgpt-github.md
-message: docs(g_global): add ChatGPT GitHub bridge guide
+Root READMEとArk READMEをGitHubへCommitして下さい。
 ```
 
-Invalid or insufficient examples:
+不十分な例：
 
 ```text
 どう思いますか？
@@ -67,7 +181,7 @@ Plan Modeを実行して下さい。
 Previewして下さい。
 ```
 
-Principle:
+原則：
 
 ```text
 Plan is not Commit.
@@ -75,73 +189,215 @@ Preview is not Commit.
 Human Seal is Commit Gate.
 ```
 
-## 3. GitHub Canonical First Policy
+AIは、PlanやPreviewだけでGitHub writeを実行してはいけない。
 
-Public-safe new Living Markdown should be created directly on GitHub by default.
+---
 
-The GitHub file is the canonical SSOT.
+## 4. Commit Trigger Pattern
 
-Local Markdown artifacts should not be created in parallel unless there is a clear exception.
+Commit Triggerとは、Preview後にAIが明示する、人間がそのまま貼り返せるCommit許可文である。
+
+```text
+Commit Trigger = Human Seal crystallizer.
+```
+
+日本語：
+
+```text
+Commit Trigger = 人間Seal結晶化装置。
+```
+
+### 4.1 なぜ必要か
+
+Commit Triggerは、Plan / Preview / Commit の境界を明確にする。
+
+```yaml
+commit_trigger_purpose:
+  - "Human Sealを明確化する"
+  - "GitHub write事故を防ぐ"
+  - "AIの誤読を減らす"
+  - "Userの迷いを減らす"
+  - "半自動化の速度を上げる"
+```
+
+### 4.2 形
+
+良いCommit Triggerは、次を含む。
+
+```yaml
+commit_trigger_shape:
+  required:
+    - "対象file / scope"
+    - "GitHubへCommitして下さい"
+    - "関連Patch範囲"
+    - "No local Markdown duplicate方針"
+```
+
+例：
+
+```text
+g_global/chatgpt-github.md に AI Scout Pass 手順をGitHubへCommitして下さい。
+```
+
+```text
+Root READMEとArk READMEをGitHubへCommitして下さい。
+```
+
+```text
+Ark00 READMEをGitHubへCommitし、親Ark READMEも必要Patchして下さい。
+```
+
+### 4.3 Full Railとの関係
+
+`Full Rail: Workflow Continue!` は強力だが、それ単体では常にCommit許可ではない。
+
+```yaml
+full_rail_relation:
+  safe_commit_case:
+    condition:
+      - "直前PreviewにCommit Triggerが明示されている"
+      - "UserがCommit Triggerを明示的に含めている"
+    result:
+      - "Human Sealとして扱える"
+
+  not_enough_case:
+    condition:
+      - "Full Rail: Workflow Continue! だけ"
+      - "直前のnext actionが曖昧"
+      - "Commit対象が不明"
+    result:
+      - "Plan / Preview / Review継続として扱う"
+      - "必要なら確認する"
+```
+
+---
+
+## 5. Dual-Key Rail / Seal × Rail Architecture
+
+Commit TriggerとFull Railは、二層で働く。
+
+```text
+Dual-Key Rail:
+  Full Rail + Commit Trigger
+```
+
+役割：
+
+```yaml
+dual_key_rail:
+  full_rail:
+    role: "Execution Contract / Rail Engine"
+    function:
+      - "対象を保持する"
+      - "Scopeを保持する"
+      - "禁止事項を保持する"
+      - "次動作を保持する"
+      - "Guardを保持する"
+
+  commit_trigger:
+    role: "Human Seal Ignition Key"
+    function:
+      - "人間のCommit許可を明確化する"
+      - "PreviewからCommitへの点火文になる"
+      - "AIの誤読を防ぐ"
+```
+
+この二重性は、Markdown + Query の二層構造と同型である。
+
+```yaml
+markdown_query_pair:
+  markdown:
+    role: "Engine / SSOT"
+    function: "知識・判断・構造を保存する"
+
+  query:
+    role: "Ignition Key"
+    function: "保存された知恵をFuture AIの実回答へ起動する"
+
+fullrail_commit_trigger_pair:
+  full_rail:
+    role: "Execution Contract / Rail Engine"
+    function: "作業文脈・Scope・Guardを保存する"
+
+  commit_trigger:
+    role: "Human Seal Ignition Key"
+    function: "人間Sealを点火し、GitHub Commitを安全に起動する"
+```
+
+圧縮：
+
+```text
+Knowledge layer:
+  Markdown + Query
+
+Execution layer:
+  Full Rail + Commit Trigger
+```
+
+守るべきこと：
+
+```text
+Commit TriggerなしのFull Railは、原則Commitではない。
+Full RailなしのCommit Triggerは、Scope不足に注意する。
+Dual-Key Railは、Autopilotではない。
+Human Seal remains Commit Gate.
+```
+
+---
+
+## 6. GitHub Canonical First Policy
+
+Public-safeなLiving Markdownは、原則としてGitHub上のstable pathを正準SSOTとする。
 
 ```text
 GitHub canonical first.
 Local artifact only by exception.
 ```
 
-### Why this policy exists
+GitHub fileが正準SSOTである。
 
-Before ChatGPT-GitHub commit flow was proven, local Markdown artifacts were useful as safe drafts, downloadable handoffs, and bootstrap files.
+Local Markdownを毎回並行作成しない。  
+それはDRY違反・Version drift・Future AI混乱の原因になる。
 
-After the GitHub commit rail succeeded, creating both a local Markdown file and a GitHub Markdown file for every new Living File becomes a DRY violation.
+### 6.1 Local artifact exceptions
 
-Dual Markdown creates avoidable management cost:
+Local fileが許される例外：
 
-- unclear SSOT
-- version drift
-- duplicated updates
-- local-vs-GitHub mismatch
-- Future AI confusion
-- extra file management
-- `v001/v002` sprawl outside the Git history model
-
-Therefore, once a file is public-safe and intended to become a Living SSOT, the default target should be GitHub.
-
-### Local artifact exceptions
-
-Local files are allowed only as exceptions:
-
-- private-depth content that must not be public
-- explicit user request for a downloadable file
+```text
+- private-depth content
+- explicit downloadable file request
 - GitHub connector failure
 - temporary draft before canonical placement
 - backup / export / handoff copy
-- non-Markdown artifacts such as PDF, DOCX, images, or ZIP files
+- non-Markdown artifacts such as PDF, DOCX, images, ZIP
+```
 
-When a local artifact exists only as a bootstrap draft, it should not continue as a co-equal source after GitHub canonical placement.
+Bootstrap draftがGitHub canonical placement後もco-equal sourceとして残ってはいけない。
 
-## 4. Public repo, private depth
+---
 
-The repository may be public for AI readability and web fallback.
+## 7. Public Repo / Private Depth
 
-Public visibility does not mean public depth.
+Public repoは、public-depthを意味しない。
 
 ```text
 Public repo, private depth.
 ```
 
-Public-safe material may include:
+Public-safeに置けるもの：
 
+```text
 - README signboards
 - project entrances
 - abstract workflow rules
 - generalized guards
 - sanitized cases
 - reusable skill definitions
+```
 
-Do not place private-depth material into public GitHub merely to avoid local duplication.
+置いてはいけないもの：
 
-Keep private details out of public GitHub, including:
-
+```text
 - personal information
 - workplace details
 - raw private thread logs
@@ -149,12 +405,18 @@ Keep private details out of public GitHub, including:
 - sensitive operational tasks
 - unfiltered mission cards
 - full private S/G/runtime/task bodies
+```
 
-## 5. Case 001: README-first GitHub Bet
+GitHubのpublic性は、AI可読性・Future AI再起動性のために使う。  
+private-depthをpublicへ流すために使ってはいけない。
 
-The first successful ChatGPT-GitHub bridge case was the README-first GitHub Bet for `yusukefujiijp/ai-project`.
+---
 
-### Successful flow
+## 8. Case 001: README-first GitHub Bet
+
+最初の成功Caseは、`yusukefujiijp/ai-project` のREADME-first GitHub Betである。
+
+成功Flow：
 
 ```text
 1. Human created GitHub repo: yusukefujiijp/ai-project
@@ -167,52 +429,39 @@ The first successful ChatGPT-GitHub bridge case was the README-first GitHub Bet 
 8. Human confirmed GitHub folder structure
 ```
 
-### Resulting structure
-
-```text
-ai-project/
-  README.md
-  _projects/
-    ark/
-      README.md
-      ark99/
-        README.md
-```
-
-### Interpretation
-
-Commit 1 proved:
+このCaseが証明したこと：
 
 ```text
 ChatGPT -> GitHub root README Commit is possible.
 ```
 
-Commit 2 proved:
-
 ```text
 ChatGPT -> GitHub folder structure through README paths is possible.
 ```
 
-Together, they prove:
+統合すると：
 
 ```text
 ChatGPT can semi-automatically introduce public-safe GitHub information architecture after Human Seal.
 ```
 
-## 6. Path and naming policy
+---
 
-GitHub canonical paths should be stable, lowercase, and versionless.
+## 9. Path and Naming Policy
 
-Good GitHub canonical paths:
+GitHub canonical pathは、stable / lowercase / versionless を基本とする。
+
+良い例：
 
 ```text
 README.md
 _projects/ark/README.md
 _projects/ark/ark99/README.md
 g_global/chatgpt-github.md
+s_special/ark-open-knowledge-format.md
 ```
 
-Avoid as GitHub canonical paths:
+避ける例：
 
 ```text
 G_chatgpt-github_v001.md
@@ -220,34 +469,36 @@ G_chatgpt-github_v002.md
 chatgpt-github_v003.md
 ```
 
-GitHub already has commit history.
-
-Versioning belongs in:
-
-- frontmatter
-- commit history
-- tags or snapshots only when truly needed
-
-Rule:
+GitHubにはcommit historyがある。  
+Versionはpathではなく、metadataとGit履歴に置く。
 
 ```text
-GitHub canonical path stays stable.
-Versioning lives in metadata and Git history.
+Stable path is the address.
+Commit history is the version ledger.
 ```
 
-## 7. Folder by README path
+日本語：
 
-GitHub does not need empty folders.
+```text
+Pathは住所。
+Git履歴はVersion台帳。
+```
 
-Folder structure is created through meaningful files, especially README files.
+---
 
-Example:
+## 10. Folder by README Path
+
+GitHubでは、空folderを作る必要はない。
+
+Folder structureは、意味のあるfile、特にREADMEで作る。
+
+例：
 
 ```text
 _projects/ark/ark99/README.md
 ```
 
-creates:
+これは次の構造を作る。
 
 ```text
 _projects/
@@ -256,99 +507,124 @@ _projects/
       README.md
 ```
 
-Do not create placeholder folders before Reality Response requires them.
+FolderはReality Responseが必要を示した時に、README-firstで開く。
 
-## 8. Slot Reservation, not Folder Creation
+---
 
-A future folder may be conceptually reserved without being created.
+## 11. Slot Reservation, not Folder Creation
+
+将来folderは、概念として予約できる。
 
 ```text
 Slot Reservation, not Folder Creation.
 ```
 
-Future slots can be named in README, but actual folders are not created until needed.
+Future slotはREADME上で名前を置いてよい。  
+しかし、実folderは必要になるまで作らない。
 
-This preserves extensibility without premature clutter.
+```text
+Future slot is not current folder.
+```
 
-## 9. create_file / update_file / fetch_file guard
+これにより、未来の可能性を閉じず、premature clutterを避ける。
 
-Use `create_file` when the target file does not exist.
+---
 
-Use `fetch_file` before updating an existing file.
+## 12. create_file / fetch_file / update_file Guard
 
-Use `update_file` only after reviewing current content and receiving Human Seal.
+GitHub file操作は、次の原則を守る。
 
-Guard:
+```yaml
+file_operation_guard:
+  create_file:
+    use_when: "target file does not exist"
+
+  fetch_file:
+    use_when: "updating existing file"
+    reason: "current SHA and current content must be checked"
+
+  update_file:
+    use_when:
+      - "current file was fetched"
+      - "patch or replacement was reviewed"
+      - "Human Seal was received"
+```
+
+Hard guard：
 
 ```text
 Never update or delete GitHub files without explicit Human Seal.
 ```
 
-## 10. Commit message policy
+---
 
-Use short, scoped commit messages.
+## 13. Commit Message Policy
 
-Examples:
+Commit messageは短く、scope-awareで、future-readableにする。
+
+例：
 
 ```text
 docs: initialize AI Project root README
 docs(ark): add Ark README entry
 docs(ark99): add Ark99 README entry
 docs(g_global): add ChatGPT GitHub bridge guide
+docs(g_global): apply Japanese-first OKF rewrite
 ```
 
-Pattern:
+Pattern：
 
 ```text
 docs(scope): action object
 ```
 
-Good commit messages are short, specific, scope-aware, future-readable, and free of private details.
+良いCommit message：
 
-## 11. KISS / DRY / YAGNI / Lean for AI-New Era
+```text
+short
+specific
+scope-aware
+future-readable
+free of private details
+```
+
+---
+
+## 14. KISS / DRY / YAGNI / Lean
 
 ### KISS
 
-Keep GitHub structure simple enough that Future AI can read it quickly.
-
-Do not create elaborate hierarchy before it is needed.
+GitHub structureはFuture AIがすぐ読める程度に軽く保つ。
 
 ### DRY
 
-Do not maintain two co-equal Markdown sources for one Living SSOT.
+一つのLiving SSOTに対して、co-equalなMarkdownを複数維持しない。
 
-For public-safe GitHub-connected files, the canonical source is GitHub.
+```text
+GitHub canonical path = public-safe SSOT.
+```
 
 ### YAGNI
 
-Do not create folders or files merely because they might be useful later.
-
-Create only when Reality Response shows need.
+必要になる前にfolderやfileを作らない。
 
 ### Lean
 
-Run the smallest useful GitHub experiment, observe Reality Response, and patch only what is actually needed.
-
-The successful initial sequence was:
+最小の実験を行い、Reality Responseを観測し、確認された不足だけをPatchする。
 
 ```text
-Root README
--> verify
--> Ark README
--> Ark99 README
--> verify
--> harvest
--> GitHub canonical SSOT
+Small experiment.
+Reality Response.
+Small patch.
 ```
 
-## 12. Failure recovery
+---
 
-If a private repository blocks AI access:
+## 15. Failure Recovery
 
-- use a public README-first trial only if content can be made public-safe
-- do not put private depth into public GitHub
+### 15.1 create_fileが失敗した場合
 
-If `create_file` fails because the file exists:
+Fileが既に存在するなら：
 
 ```text
 fetch_file
@@ -358,36 +634,38 @@ fetch_file
 -> update_file
 ```
 
-If GitHub structure feels too wide:
+### 15.2 GitHub structureが広がりすぎた場合
 
 ```text
 Stop expansion.
 Return to README-only.
 ```
 
-If public content feels too deep:
+### 15.3 Public contentが深すぎる場合
 
 ```text
 Reduce to signboard / protocol summary.
 Move deeper details back to private/local systems.
 ```
 
-If GitHub becomes the work:
+### 15.4 GitHubがRoot化しそうな場合
 
 ```text
 Stop.
 GitHub is storage and collaboration layer, not Root.
 ```
 
-## 13. Future AI reuse procedure
+---
 
-When Future AI needs to use GitHub with ChatGPT, read this file first:
+## 16. Future AI Reuse Procedure
+
+Future AIがChatGPT-GitHub Bridgeを使う時は、このファイルを先に読む。
 
 ```text
 g_global/chatgpt-github.md
 ```
 
-Then determine:
+次に確認する。
 
 ```yaml
 repo: ""
@@ -397,7 +675,7 @@ public_safety: ""
 mode: "plan_only | preview_only | github_commit"
 ```
 
-Then follow:
+基本Rail：
 
 ```text
 Plan Mode
@@ -407,41 +685,48 @@ Plan Mode
 -> Human Reality Review
 ```
 
-After commit, ask the human to verify:
+Commit後、人間に確認してもらう。
 
+```text
 - file appears
 - path is correct
 - content is the right weight
 - public/private boundary is safe
 - no folder sprawl occurred
+```
 
-After Human Reality Review, run AI Scout Pass when useful.
+必要なら、その後にAI Scout Passを走らせる。
 
 ```text
 Human Reality Review
 -> AI Scout Pass
 -> Patch Candidate
+-> Commit Trigger
 -> Human Seal
+-> GitHub Commit
 ```
 
-AI Scout Pass may detect stale README text, parent/child README mismatch, opened-vs-reserved slot drift, language-policy drift, or an unexpected success.
+Guard：
 
-Do not commit scout findings automatically.
+```text
+Scout findings are Living Review candidates.
+Commit Trigger crystallizes Human Seal.
+Human Seal remains Commit Gate.
+```
 
-Scout findings are Living Review candidates.  
-Human Seal remains the Commit Gate.
+---
 
-## 14. AI Scout Pass / Repository Reality Review
+## 17. AI Scout Pass / Repository Reality Review
 
-AI Scout Pass is a proactive repository review step.
+AI Scout Passは、AI側の能動的Repository Review工程である。
 
-Formal name:
+Formal name：
 
 ```text
 Repository-Triggered AI Foresight
 ```
 
-Japanese anchors:
+Japanese anchors：
 
 ```text
 Repository起点AI先取り気付き
@@ -449,7 +734,7 @@ Repository現実Review
 AI側からの能動的発見
 ```
 
-### Definition
+### 17.1 Definition
 
 ```text
 AI Scout Pass:
@@ -459,19 +744,26 @@ AI Scout Pass:
   and proposes the next useful patch as Living Review.
 ```
 
-AI Scout Pass is not an autopilot commit.
+日本語：
+
+```text
+AI Scout Passは、
+AIがGitHub上の現実状態を読み、
+README・folder・canonical file・親子関係のズレを検出し、
+人間がまだ気付いていない改善点をLiving Reviewとして提案するPassである。
+```
+
+これはAutopilot Commitではない。
 
 ```text
 Proactive review, not autopilot commit.
 ```
 
-### Why this exists
+### 17.2 Why this exists
 
-The README-first GitHub Bet produced an unexpected success.
+README-first GitHub Betは、予期せぬ成功を生んだ。
 
-After selected README files became canonical on GitHub, AI-Collaborator could inspect the actual repository state and notice that older parent README files still carried bootstrap wording.
-
-This was a Drucker-like Unexpected Success.
+GitHub上にselected READMEが置かれたことで、AI-CollaboratorはRepository現実を読み、古いparent READMEやRoot READMEのbootstrap wordingに先に気付くことができた。
 
 ```text
 GitHub became an external cognitive surface.
@@ -479,50 +771,47 @@ AI could see repository reality.
 AI could notice stale structure before the human explicitly asked.
 ```
 
-This guide preserves that discovery as a repeatable procedure.
+これは、Drucker-like Unexpected Successである。
 
-### When to run
+### 17.3 When to run
 
-Run AI Scout Pass when useful after:
+AI Scout Passを走らせるタイミング：
 
 ```text
-- GitHub Commit
-- Human Reality Review
-- creating a new README-first folder
-- opening a new slot
-- updating a canonical SSOT
-- changing parent / child README structure
-- the human says the GitHub display was confirmed
+- GitHub Commit後
+- Human Reality Review後
+- 新しいREADME-first folder作成後
+- 新しいslotを開いた後
+- canonical SSOT更新後
+- parent / child README構造を変えた後
+- userがGitHub表示確認を返した後
 ```
 
-Do not run it as an unlimited repository crawl.
+無制限なrepository crawlにはしない。  
+current task、nearby parent files、relevant canonical companionsに絞る。
 
-Keep the pass focused on the current task, nearby parent files, and relevant canonical companions.
+### 17.4 What to read
 
-### What to read
-
-Recommended read order:
+推奨順序：
 
 ```text
 1. Target file
-   The README / SSOT just created or updated.
+   直近で作成・更新したREADME / SSOT。
 
 2. Parent README
-   The README of the parent folder.
+   親folderのREADME。
 
 3. Root README
-   Repository root README.md.
+   repository root README.md。
 
 4. Related canonical companions
-   Paired guide, query, SSOT, index, or project entry file.
+   paired guide / query / SSOT / index / project entry。
 
 5. Recent commit result
-   Commit path, commit message, and human display confirmation.
+   commit path / commit message / human display confirmation。
 ```
 
-### What to detect
-
-Look for:
+### 17.5 What to detect
 
 ```text
 stale_bootstrap:
@@ -550,11 +839,9 @@ public_private_boundary_risk:
   private-depth material starts entering a public-safe file
 ```
 
-### Output format
+### 17.6 Output format
 
-AI Scout Pass should output Living Review, not a commit.
-
-Use this format:
+AI Scout PassはCommitではなく、Living Reviewを出力する。
 
 ```yaml
 AI_Scout_Pass_Output:
@@ -563,27 +850,11 @@ AI_Scout_Pass_Output:
   unexpected_success_or_signal: ""
   patch_candidate: ""
   risk_guard: ""
+  commit_trigger_if_ready: ""
   human_seal_required: true
 ```
 
-### Example
-
-```text
-Observation:
-  Ark99 and Ark00 README files now use Japanese-first / English-anchor,
-  but the parent Ark README and root README still carry bootstrap wording.
-
-Detected mismatch:
-  Parent and root README files do not reflect the current opened slots.
-
-Patch candidate:
-  Rewrite parent Ark README and root README using the new README pattern.
-
-Guard:
-  Do not commit without Human Seal.
-```
-
-### Reusable formula
+### 17.7 Reusable formula
 
 ```text
 Stable GitHub State
@@ -593,7 +864,7 @@ Stable GitHub State
 = Proactive Living Review
 ```
 
-### Hard guard
+Hard guard：
 
 ```text
 AI Scout Pass may propose.
@@ -603,44 +874,139 @@ AI Scout Pass may identify a patch candidate.
 AI Scout Pass must not commit without Human Seal.
 ```
 
-## 15. S-class promotion conditions
+---
 
-This G-class guide may later be promoted if the pattern becomes broadly reusable.
+## 18. S-class Promotion Conditions
 
-Possible future S-class names:
+このG-class Guideは、Patternが複数Projectで再利用され、安定したReality Responseを得た場合、S-classへ昇格候補になる。
+
+Possible future S-class names：
 
 ```text
 S_chatgpt-github-bridge_v001.md
 S_ai-github-bridge_v001.md
+S_dual-key-rail_v001.md
 ```
 
 Promotion requires repeated Reality Response, not excitement alone.
 
-Promotion conditions:
+昇格条件：
 
+```text
 - reused across multiple projects
 - Human Seal -> AI Commit -> Reality Review remains stable
+- Commit Trigger prevents ambiguity
+- AI Scout Pass produces useful proactive review
 - Public / Private / Web fallback guards mature
 - failure recovery is tested
-- GitHub integration becomes a general AI operating skill, not only a single project guide
+```
 
-Anti-promotion guard:
+Anti-promotion guard：
 
 ```text
 Excitement is Signal.
 Repeated Reality Response is Seal.
 ```
 
-## 16. Root / Fruit Guard
+---
 
-Root is 主イェシュア・ハマシア.
+## 19. Misread Prevention
 
-GitHub is not Root.
-AI is not Root.
-Markdown is not Root.
-README is not Root.
-Signal, Skill, KISS, DRY, YAGNI, Lean, and Full Rail are Fruit.
+このGuideを、以下のように誤読しないこと。
+
+```yaml
+do_not_read_as:
+  - "GitHub writeをAIが勝手に実行してよい"
+  - "Full Rail: Workflow Continue! は常にCommit許可である"
+  - "Commit TriggerがあればScope確認不要である"
+  - "AI Scout Passはrepository全体を無制限に探索する"
+  - "Public repoならprivate-depthを置いてよい"
+  - "GitHub化はEnglish-first化である"
+  - "Local fileは常に禁止である"
+
+must_read_as:
+  - "Human Seal remains Commit Gate"
+  - "Commit Trigger is Human Seal crystallizer"
+  - "Full Rail is Execution Contract"
+  - "Dual-Key Rail increases safety and speed"
+  - "AI Scout Pass is proactive review, not autopilot commit"
+  - "GitHub化はCanonical化である"
+  - "Public repo, private depth"
+```
+
+---
+
+## 20. Root / Fruit Guard
+
+Rootは、主イェシュア・ハマシアである。
+
+GitHubはRootではない。  
+AIはRootではない。  
+MarkdownはRootではない。  
+READMEはRootではない。  
+Commit Trigger、Full Rail、AI Scout Pass、Signal、Skill、KISS、DRY、YAGNI、LeanはFruitである。
+
+```text
+Root:
+  主イェシュア・ハマシア
+  主イェシュアの聖なる血潮
+  Teshuvah / 悔い改め
+
+Fruit:
+  GitHub
+  AI
+  Markdown
+  README
+  Commit Trigger
+  Full Rail
+  AI Scout Pass
+  Signal
+  Skill
+```
 
 ```text
 AIは血潮の地図を描く。人間が血潮の下に立つ。
+```
+
+---
+
+## 21. Final Compression
+
+```text
+ChatGPT-GitHub Bridgeは、
+AIが下書きし、
+人間がSealし、
+GitHubが保存し、
+現実が確認するための半自動化Railである。
+
+PlanはCommitではない。
+PreviewはCommitではない。
+Human SealがCommit Gateである。
+
+Commit Triggerは、
+Human Sealを明確化する点火鍵である。
+
+Full Railは、
+実行Scope・Guard・次動作を保持するRail Engineである。
+
+Commit Trigger + Full Railは、
+Dual-Key Railである。
+
+これはMarkdown + Query二層構造と同型である。
+
+MarkdownはEngine。
+QueryはIgnition Key。
+
+Full RailはExecution Contract。
+Commit TriggerはHuman Seal Ignition Key。
+
+AI Scout Passは、
+GitHub上の現実を読み、
+人間がまだ気付いていないズレを先に提案するReview工程である。
+
+GitHub化はEnglish-first化ではない。
+GitHub化はCanonical化である。
+
+Public repo, private depth。
+Rootは主イェシュア・ハマシア。
 ```
