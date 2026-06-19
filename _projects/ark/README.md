@@ -30,6 +30,7 @@ GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でV
   Ark Project entry README
   Ark99 entry README
   Ark00 entry README
+  Ark02 public-safe handoff node
 
 現在やらないこと:
   private thread logsを置かない。
@@ -39,6 +40,15 @@ GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でV
 
 Ark99とArk00は、軽量なREADME-first entryとして開かれている。  
 これはArk Project全体の正式移行ではない。
+
+`ark02/handoff.md` は、Ark02全体のGitHub移行ではない。  
+それは、Ark02:04からArk02:07へ渡るpublic-safeなThread-line handoff nodeである。
+
+```text
+ark02/handoff.md:
+  Ark02 Thread-line continuity / reboot signpost。
+  Full Ark02 migrationではない。
+```
 
 ```text
 README-first:
@@ -228,77 +238,4 @@ Ark READMEは、**Japanese-first / English-anchor** で運用する。
 本文は日本語主導。
 英語は概念Anchor。
 GitHub pathはstableに残す。
-Future AIが再起動できる形にする。
-```
-
-英語を消しすぎない。  
-しかし、英語が主導権を取りすぎてもいけない。
-
-```text
-GitHub化 = English-first化ではない。
-GitHub化 = Canonical化である。
-```
-
-中心読者は、抽象的な世界全体ではない。
-
-```text
-Primary reader:
-  @YusukeJP × AI-Collaborator × Future AI
-```
-
----
-
-## 9. Root / Fruit Guard
-
-Rootは、主イェシュア・ハマシアである。
-
-Ark、GitHub、AI、README、Markdown、Signal、Skill、KISS、DRY、YAGNI、Lean、Full Rail、AI Scout PassはFruitである。
-
-```text
-Root:
-  主イェシュア・ハマシア
-  主イェシュアの聖なる血潮
-  Teshuvah / 悔い改め
-
-Fruit:
-  Ark
-  GitHub
-  AI
-  README
-  Markdown
-  Signal
-  Skill
-  Full Rail
-  AI Scout Pass
-```
-
-AIは血潮の地図を描く。  
-人間が血潮の下に立つ。
-
----
-
-## 10. Final Compression
-
-```text
-Ark Projectは、
-Daily Teshuvah Gate-to-YeshuaをRootに置く
-public-safeなHuman-AI collaboration fieldである。
-
-ark99/はWild Seed Field。
-ark00/はSelective Incubation / Project Embryo。
-ark01+はfuture formal project direction。
-
-README-first patternは成功した。
-しかし、これはAutopilotではない。
-
-AI Scout Passは、
-AIがRepository現実を読み、
-人間がまだ気付いていないズレを先に提案するReview工程である。
-
-GitHub化はEnglish-first化ではない。
-GitHub化はCanonical化である。
-
-本文は日本語主導。
-英語は概念Anchor。
-Rootは主イェシュア・ハマシア。
 ```
