@@ -2,7 +2,7 @@
 title: "Thread-End Workflow Gate 2: Thread Harvest / Handoff Builder Query"
 canonical_name: "Thread-End Gate 2 Query"
 class: "S"
-status: "patch_preview"
+status: "living_ssot"
 
 canonical_path: "s_special/thread-end-gate2-query.md"
 role_alias: "thread-end-gate2-query.md"
