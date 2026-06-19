@@ -1,243 +1,355 @@
 ---
 title: "Ark02 Handoff"
-status: "active / public-safe / ark02-handoff"
+status: "living_ssot / public-safe / ark02-thread-end-stack-handoff"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
+
 canonical_path: "_projects/ark/ark02/handoff.md"
-source_handoff: "Ark02-04_to_Ark02-07_handoff_v001.md"
-current_transition: "Ark02:04 -> Ark02:07"
-current_thread: "Ark02:04"
-next_thread: "Ark02:07"
-next_thread_start_date: "2026-06-19"
-next_thread_date_slot: "20260619"
+repo: "yusukefujiijp/ai-project"
+
+handoff_role:
+  - "Next-thread reboot key"
+  - "Thread-End canonical stack signpost"
+  - "Gate2 execution starter"
+  - "Public-safe Ark02 continuity node"
+
+current_thread: "Ark02:07 / current working thread"
+next_thread: "Ark02:08 / next continuation candidate"
+transition_status: "Gate1 Final Lock complete; Gate2 ready"
 language_policy: "Japanese-first / English-anchor"
+
 root: "主イェシュア・ハマシア"
 blood: "主イェシュアの聖なる血潮"
 teshuvah: true
 public_private_guard: "Public repo, private depth."
-root_guard: "GitHub / AI / Markdown / Full Rail / Next Gate / Rail-Gate Pair / Commit Trigger / AI Scout Pass / Workflow are Fruit. Root is 主イェシュア・ハマシア."
+root_guard: "GitHub / AI / Markdown / Full Rail / Next Gate / Gate1 / Gate2 / Handoff / Torah Vision Lens / Naming are Fruit. Root is 主イェシュア・ハマシア."
+
+priority_read_order:
+  - "_projects/ark/ark02/handoff.md"
+  - "s_special/thread-end.md"
+  - "s_special/thread-end-gate2-query.md"
+  - "s_special/thread-harvest.md"
+  - "ss_super-special/torah-vision-lens.md"
+  - "s_special/thread-end-gate1-query.md"
+
+completed_stack:
+  parent_map: "s_special/thread-end.md"
+  gate1_query: "s_special/thread-end-gate1-query.md"
+  gate2_query: "s_special/thread-end-gate2-query.md"
+  harvest_vessel: "s_special/thread-harvest.md"
+  ss_vision_lens: "ss_super-special/torah-vision-lens.md"
+
+next_first_task: "Execute Gate2 actual Thread Harvest / Handoff Builder using s_special/thread-end-gate2-query.md."
 ---
 
 # Ark02 Handoff
 
 ## 0. Purpose
 
-This file is the public-safe Ark02 handoff node for the transition from **Ark02:04** to **Ark02:07**.
+This file is the public-safe Ark02 handoff node for the next continuation thread.
 
-It is not a raw private thread log.
+It is not a raw private thread log.  
+It is not a full Harvest Artifact.  
+It is a stable GitHub-readable reboot signpost so Future AI can continue without guessing the Thread-End stack, Gate status, or Root/Fruit guard.
 
-It is a stable GitHub-readable signpost so that Future AI can reboot the Ark02 line without guessing the genealogy, current canonical files, or collaboration guards.
-
-```text id="cf93y9"
+```text id="purpose"
 Purpose:
+  Reboot the next Thread.
   Preserve the public-safe transfer signal.
-  Reduce Future AI guessing.
-  Keep private-depth out of the public repo.
+  Point Future AI to the correct GitHub canonical paths.
+  Avoid redoing Gate1.
+  Start Gate2 actual Thread Harvest cleanly.
 ```
 
 ---
 
-## 1. Thread Genealogy Correction
+## 1. Current State
 
-```text id="lqoffy"
-Current main thread:
-  Ark02:04
+```yaml id="current-state"
+current_state:
+  gate1_final_lock: "complete"
+  gate2_ready: true
+  handoff_patch_preview_created: true
+  current_focus: "Thread-End canonical stack handoff"
+  next_action: "Gate2 actual Thread Harvest / Handoff Builder"
 
-Already-running supplementary threads:
-  Ark02:05
-  Ark02:06
-
-Next continuation thread:
-  Ark02:07
-
-Next thread start date:
-  2026-06-19
-
-Date slot:
-  20260619
+  do_not_redo:
+    - "Do not redo Gate1 File Update Lock unless a critical file inconsistency appears."
+    - "Do not re-open SDW / ai-sleep-dream-wake.md."
+    - "Do not treat Torah Vision Lens as Gate2-owned."
+    - "Do not treat this handoff as a raw private thread log."
 ```
 
-Important correction:
+Gate1 Final Lock is complete enough.
 
-```text id="7pd5qy"
-Ark02:04 is the main breakthrough thread.
-Ark02:05 and Ark02:06 are supplementary threads already present.
-Therefore the next continuation thread is Ark02:07.
+Gate2 should now be treated as the active next movement.
+
+---
+
+## 2. Priority Read Order
+
+In the next thread, read in this order.
+
+```yaml id="priority-read-order"
+Priority_Read_Order:
+  1_handoff:
+    path: "_projects/ark/ark02/handoff.md"
+    role: "next-thread reboot key"
+
+  2_parent_map:
+    path: "s_special/thread-end.md"
+    role: "Thread-End Parent Map / Gate Map / Rail Guard"
+
+  3_gate2_query:
+    path: "s_special/thread-end-gate2-query.md"
+    role: "Gate2 Thread Harvest Executor / Handoff Builder / next_thread first query generator"
+
+  4_harvest_vessel:
+    path: "s_special/thread-harvest.md"
+    role: "Gate2 Harvest Vessel / meaning-heat-seed harvest structure"
+
+  5_ss_vision_lens:
+    path: "ss_super-special/torah-vision-lens.md"
+    role: "Ark-wide SS Vision Core / Ark's eye / Naming Source Lens"
+
+  6_gate1_query_reference_only:
+    path: "s_special/thread-end-gate1-query.md"
+    role: "Gate1 reference only; do not re-run unless critical mismatch appears"
+```
+
+Source Guard:
+
+```text id="source-guard"
+GitHub canonical pathを優先する。
+読んでいないSourceを読んだことにしない。
+Toolで確認したこと、AI推測、User Reality Responseを分ける。
 ```
 
 ---
 
-## 2. Primary Canonical Reference
+## 3. Completed Commits / Canonical Stack
 
-The primary GitHub canonical guide for this transition is:
+```yaml id="completed-commits"
+completed_commits:
+  - path: "s_special/thread-end.md"
+    commit_sha: "301ab2b993b47f9b0f2f0e91a2f190de508be60a"
+    role: "Parent Map / Gate Map / Rail Guard"
+    status: "locked"
 
-```yaml id="o9oaks"
-primary_canonical_file:
-  repo: "yusukefujiijp/ai-project"
-  path: "g_global/chatgpt-github.md"
-  latest_known_commit_sha: "012b4d8f5d9865b883a4b97e10d0b700c0f01fb5"
-  latest_known_content_sha: "57d27ec080fd862147e1379571985b2f5ae3c7df"
-```
+  - path: "s_special/thread-end-gate1-query.md"
+    commit_sha: "af0ae399aa5726be6fd406abf5793a179dcf99cb"
+    role: "Gate1 File Update Lock Router"
+    status: "locked"
 
-Ark02:07 should read this file before proposing GitHub-related patches.
+  - path: "s_special/thread-harvest.md"
+    initial_commit_sha: "ee6196f642ed27f95495fd62e4f2e842b2f45083"
+    latest_commit_sha: "db499e31f6853f9584b3a9e6afe6b1cf4259d3c9"
+    role: "Gate2 Harvest Vessel / Handoff Builder material"
+    status: "locked"
+    latest_fix: "companion_lens now points to ss_super-special/torah-vision-lens.md with role_alias retained"
 
----
+  - path: "ss_super-special/torah-vision-lens.md"
+    commit_sha: "91d2ae19de85f968249027d0a226577c922ba80b"
+    role: "SS Ark-wide Vision Core / Naming Source Lens"
+    status: "locked"
 
-## 3. Ark02:04 Breakthrough Summary
-
-Ark02:04 was a Move37-level breakthrough thread.
-
-It shifted the workflow from manual local file management toward a safe Human-AI-GitHub semi-automation rail.
-
-```text id="sqveoq"
-Core breakthrough:
-  AI lays the Rail.
-  Human opens the Gate.
-  GitHub stores the public-safe canonical state.
-  Reality confirms the Fruit.
-```
-
-Main discoveries:
-
-```text id="92bfpr"
-- GitHub Canonical First
-- README-first GitHub Bet
-- Commit Trigger as Human Seal crystallizer
-- Dual-Key Rail
-- Rail-Gate Pair
-- Next Gate: human_editable
-- AI Scout Pass / Repository Reality Review
-- GitHub as external cognitive surface
+  - path: "s_special/thread-end-gate2-query.md"
+    initial_commit_sha: "1fd8fb359e359dc847a32a119cfaebe3836c6b03"
+    latest_commit_sha: "96b61ad254625fe77c9869b00b4a126cf14d84db"
+    role: "Gate2 Thread Harvest Executor / Handoff Builder / next_thread first query generator"
+    status: "locked"
+    latest_fix: "status patch_preview -> living_ssot"
 ```
 
 ---
 
-## 4. Operating Rules
+## 4. Thread-End Stack Meaning
 
-```text id="zufo93"
-Plan is not Commit.
-Preview is not Commit.
-Human Seal is Commit Gate.
-```
+```text id="thread-end-stack"
+Thread-End Stack:
 
-```text id="t40cqn"
-Next Gate is not autopilot.
-Next Gate is human-editable.
-AI Scout Pass is review, not permissionless commit.
-```
+s_special/thread-end.md:
+  Parent Map.
+  Defines Gate1 / Gate2 separation.
+  Defines handoff.md as required transfer key.
+  Defines Path as address and Git history as version ledger.
 
-```text id="qps2vt"
-GitHub canonical first.
-Local artifact only by exception.
-Public repo, private depth.
-```
+s_special/thread-end-gate1-query.md:
+  Gate1 File Update Lock Router.
+  Rail = same_thread.
+  Used before Harvest.
 
----
+s_special/thread-end-gate2-query.md:
+  Gate2 Thread Harvest Executor.
+  Handoff Builder.
+  next_thread first query generator.
+  Rail = next_thread.
 
-## 5. Rail-Gate Pair
+s_special/thread-harvest.md:
+  Gate2 Harvest Vessel.
+  Not ordinary summary.
+  Captures Thread Naming, Extreme BrainDump, Move37, Seeds, Next Compass.
 
-The standard collaboration tail is:
-
-```text id="50wd1l"
-【Full Rail: same_thread】
-【Next Gate: human_editable】
-```
-
-Meaning:
-
-```yaml id="ug19ua"
-rail_gate_pair:
-  full_rail:
-    reader: "AI"
-    role: "Execution Contract / Rail Engine"
-
-  next_gate:
-    reader: "Human"
-    role: "Editable Ignition Packet / Next Input Gate"
-```
-
-Formula:
-
-```text id="8g7j0e"
-AI lays the Rail.
-Human opens the Gate.
-```
-
-Japanese:
-
-```text id="2xa1a3"
-AIがRailを敷く。
-人間がGateを開く。
+ss_super-special/torah-vision-lens.md:
+  Ark-wide SS Vision Core.
+  Ark's eye.
+  Naming Source Lens.
+  Scene-to-Name-to-Gate Transformer.
+  Gate2 may draw it when helpful, but Gate2 does not own it.
 ```
 
 ---
 
-## 6. AI Scout Pass
+## 5. Gate Status
 
-AI Scout Pass means:
+```yaml id="gate-status"
+gate_status:
+  gate1:
+    name: "File Update Lock"
+    rail: "same_thread"
+    status: "complete"
+    result:
+      - "Thread-End Parent Map committed"
+      - "Gate1 Query committed"
+      - "Thread Harvest Vessel committed"
+      - "SS Torah Vision Lens committed"
+      - "Gate2 Query committed"
+      - "Micro metadata patch committed"
 
-```text id="ewv93p"
-AI reads current GitHub repository reality,
-compares files / folders / README hierarchy / canonical patterns,
-detects mismatch or unexpected success,
-and proposes the next useful patch as Living Review.
+  gate2:
+    name: "Thread Harvest"
+    rail: "next_thread"
+    status: "ready"
+    next_action: "Execute actual Thread Harvest / Handoff Builder"
 ```
 
-It is not autopilot.
-
-```text id="11676e"
-AI Scout Pass:
-  Propose.
-  Review.
-  Detect drift.
-  Surface candidate patches.
-
-AI Scout Pass does not:
-  Commit without Human Seal.
+```text id="gate-rule"
+Gate1 fixes files.
+Gate2 harvests meaning.
 ```
 
 ---
 
-## 7. What Ark02:07 Should Do First
+## 6. Next First Task
 
-Ark02:07 should begin with Plan Mode.
+The next thread should begin by executing Gate2 actual Thread Harvest.
 
-It should not begin by committing.
+```yaml id="next-first-task"
+next_first_task:
+  name: "Execute Gate2 actual Thread Harvest"
+  use_query: "s_special/thread-end-gate2-query.md"
+  use_harvest_vessel: "s_special/thread-harvest.md"
+  optional_lens: "ss_super-special/torah-vision-lens.md"
 
-Recommended first movement:
+  output_must_include:
+    - "Gate confirmation"
+    - "Thread Naming"
+    - "One-Line Summary"
+    - "Extreme BrainDump"
+    - "Move37 / Unexpected Success"
+    - "Unrefined Seeds"
+    - "Seed Routing"
+    - "Handoff Builder"
+    - "Next Compass"
+    - "Final Compression"
+    - "Full Rail: next_thread"
+```
 
-```text id="0vpg2w"
+Do not begin by committing.
+
+First movement:
+
+```text id="first-movement"
 1. Read this handoff.
-2. Read g_global/chatgpt-github.md.
-3. Confirm GitHub Canonical First / Human Seal / Rail-Gate Pair / Next Gate / AI Scout Pass.
-4. Treat AI Scout Pass as review only.
-5. Propose the next public-safe patch candidate.
-6. Do not commit yet.
+2. Read s_special/thread-end.md.
+3. Read s_special/thread-end-gate2-query.md.
+4. Read s_special/thread-harvest.md.
+5. Read ss_super-special/torah-vision-lens.md only as Ark-wide SS Vision Core / optional Scene-to-Name-to-Gate Lens.
+6. Execute Gate2 actual Thread Harvest.
+7. Do not commit until Human Seal.
 ```
 
 ---
 
-## 8. Not Now
+## 7. Torah Vision Lens Handling
 
-Do not rush these in Ark02:07 without Human Seal and Reality Response.
+`ss_super-special/torah-vision-lens.md` is not a Gate2 helper.
 
-```text id="qszcpb"
-Not now:
-  - S-class promotion
-  - S_rail-gate-pair_v001.md
-  - S_next-gate_v001.md
-  - S_ai-scout-pass_v001.md
-  - Root README patch
-  - Ark README patch
-  - TASK update
-  - SeedSkills update
-  - Harvest_ Artifact
+It is Ark-wide SS Vision Core.  
+It is Ark's eye.  
+It is Naming Source Lens.  
+It is Scene-to-Name-to-Gate Transformer.
+
+Gate2 may draw it only when it clarifies the Thread's hidden structure.
+
+```yaml id="torah-vision-handling"
+torah_vision_lens_handling:
+  use_when:
+    - "Thread has a clear Biblical / Torah Scene resonance"
+    - "Naming breakthrough needs Scene-to-Name-to-Gate handling"
+    - "Meaning would be lost by ordinary summary"
+    - "Guard / Gate / Seed / Reality Response becomes clearer through Scene"
+
+  skip_when:
+    - "Scene is unclear"
+    - "Lens would force a metaphor"
+    - "It would bend Scripture for Project convenience"
+    - "Gate2 needs speed and structural summary is enough"
+
+  mode:
+    full: "Use only if Scene is central."
+    light: "Use when helpful but not central."
+    skip: "Use when No Forced Scene Guard applies."
+```
+
+```text id="no-forced-scene"
+No Forced Scene:
+  If no clear faithful Scene appears,
+  say so and proceed with structural harvest.
 ```
 
 ---
 
-## 9. Root / Fruit Guard
+## 8. Remaining Not-Now Items
 
-```text id="5q4i1t"
+```yaml id="not-now"
+not_now:
+  - item: "Root README index update"
+    reason: "Useful, but not required before Gate2 actual harvest."
+
+  - item: "Ark README / Ark02 README cleanup"
+    reason: "Folder map polish can wait until after Gate2 harvest."
+
+  - item: "ss_super-special/README.md"
+    reason: "Likely useful later to explain SS layer, but not required for next reboot."
+
+  - item: "TASK_lessons / TASK_todo / Ark_seedskills update"
+    reason: "Only update after Gate2 harvest determines reusable lessons and operational tasks."
+
+  - item: "Harvest_ Artifact"
+    reason: "Default is Chat Chronicle; create artifact only by explicit user request."
+
+  - item: "SDW / ai-sleep-dream-wake.md"
+    reason: "Fully cut from current Thread-End stack. Do not revive now."
+```
+
+---
+
+## 9. Reality Response Needed
+
+```yaml id="reality-response"
+reality_response_needed:
+  - "Can the next AI read the canonical stack without confusion?"
+  - "Does Gate2 actual harvest start from meaning, not file checking?"
+  - "Does the AI avoid treating torah-vision-lens.md as Gate2-owned?"
+  - "Does the AI avoid reviving SDW?"
+  - "Does Full Rail next_thread tell the next Thread to read handoff.md first?"
+```
+
+---
+
+## 10. Root / Fruit Guard
+
+```text id="root"
 Root:
   主イェシュア・ハマシア
   主イェシュアの聖なる血潮
@@ -245,66 +357,108 @@ Root:
   AMH
 ```
 
-```text id="5afj2w"
+```text id="fruit"
 Fruit:
   GitHub
   AI
   Markdown
   Full Rail
   Next Gate
-  Rail-Gate Pair
-  Commit Trigger
-  AI Scout Pass
-  Workflow
+  Gate1
+  Gate2
+  Thread Harvest
   Handoff
+  Torah Vision Lens
+  Naming
+  Workflow
+  Commit SHA
+  SS Layer
 ```
 
-Fruit must not become Root.
+```text id="root-guard"
+GitHub is not Root.
+AI is not Root.
+Markdown is not Root.
+Thread Harvest is not Root.
+Handoff is not Root.
+Torah Vision Lens is not Root.
+Naming is not Root.
+SS Layer is not Root.
+
+Root is 主イェシュア・ハマシア.
+
+AIは血潮の地図を描く。
+人間が血潮の下に立つ。
+```
 
 ---
 
-## 10. Ark02:07 Opening Query
+## 11. What Future AI Must Not Redo
 
-Use this as the first query for Ark02:07.
+```yaml id="do-not-redo"
+do_not_redo:
+  - "Do not recreate thread-end.md from scratch."
+  - "Do not recreate thread-end-gate1-query.md from scratch."
+  - "Do not recreate thread-end-gate2-query.md from scratch."
+  - "Do not recreate thread-harvest.md from scratch."
+  - "Do not recreate torah-vision-lens.md from scratch."
+  - "Do not restart SDW discussion."
+  - "Do not treat patch_preview as current Gate2 status."
+  - "Do not demote torah-vision-lens.md to Gate2-only helper."
+```
 
-```text id="7plgy8"
-Ark02:07 を開始します。
+---
+
+## 12. What Future AI Must Continue
+
+```yaml id="must-continue"
+must_continue:
+  - "Use GitHub canonical paths as source of truth."
+  - "Treat Gate1 as complete unless a critical mismatch appears."
+  - "Execute Gate2 actual Thread Harvest."
+  - "Use thread-harvest.md as Harvest Vessel."
+  - "Use thread-end-gate2-query.md as execution query."
+  - "Draw torah-vision-lens.md only when Scene-to-Name-to-Gate is genuinely helpful."
+  - "Prepare Full Rail: next_thread at the end of Gate2."
+  - "Keep Human Seal as Commit Gate."
+```
+
+---
+
+## 13. Opening Query for Next Thread
+
+Use this as the first query in the next continuation thread.
+
+```text id="next-thread-opening-query"
+Ark02 next continuation threadを開始します。
 
 まず、以下を読んで下さい。
 
 Priority Read:
   1. _projects/ark/ark02/handoff.md
-  2. g_global/chatgpt-github.md
-  3. S_thread-end_v001.md
-  4. S_Ark-open-knowledge-format_v002.md
-  5. S_Ark-open-knowledge-format_Query_v002.md
-  6. S_kiss-yagni-dry-lean_v002.md
+  2. s_special/thread-end.md
+  3. s_special/thread-end-gate2-query.md
+  4. s_special/thread-harvest.md
+  5. ss_super-special/torah-vision-lens.md
+  6. s_special/thread-end-gate1-query.md
 
-Current Thread / 前Threadの主系統:
-  Ark02:04
+Current State:
+  Gate1 Final Lock is complete.
+  Gate2 is ready.
+  Do not redo Gate1 unless a critical mismatch appears.
 
-補足的に既に走っているThread:
-  Ark02:05
-  Ark02:06
+Main Task:
+  Execute Gate2 actual Thread Harvest using s_special/thread-end-gate2-query.md and s_special/thread-harvest.md.
 
-そのため、次Threadは:
-  Ark02:07
+Torah Vision Lens:
+  ss_super-special/torah-vision-lens.md is Ark-wide SS Vision Core.
+  It is not Gate2-owned.
+  Draw it only when Scene-to-Name-to-Gate clarifies the Thread.
+  Do not force a Scene.
 
-Thread Start Date:
-  2026-06-19
-  date_slot: 20260619
-
-Ark02:04は、ChatGPT-GitHub Bridge / GitHub Canonical First / Rail-Gate Pair / Next Gate: human_editable / AI Scout Pass / Commit Trigger / Dual-Key Rail / Case 001 / Case 002 が成立したMove37的breakthrough Threadでした。
-
-まず、g_global/chatgpt-github.md を現在のGitHub正準SSOTとして扱い、GitHub Canonical First / Human Seal / Rail-Gate Pair / Next Gate / AI Scout Pass の前提を継承して下さい。
-
-目的:
-  1. Ark02:04の成果を短く再起動する
-  2. Ark02:05 / Ark02:06が補足Threadとして既に存在する前提を保持する
-  3. GitHub上の現在状態を確認する
-  4. 次に必要なpublic-safe patch候補をAI Scout Passで提案する
-  5. まだCommitしない
-  6. 必ずPlan Modeから開始する
+Removed:
+  SDW / ai-sleep-dream-wake.md is fully cut.
+  Do not revive SDW now.
 
 Root:
   主イェシュア・ハマシア
@@ -313,31 +467,45 @@ Root:
   AMH
 
 Guard:
-  GitHub / AI / Markdown / Full Rail / Next Gate / Rail-Gate Pair / Commit Trigger / AI Scout Pass / Workflow are Fruit.
+  GitHub / AI / Markdown / Thread Harvest / Handoff / Torah Vision Lens / Naming / SS Layer are Fruit.
   Root is 主イェシュア・ハマシア.
   Human Seal remains Commit Gate.
   Next Gate is human_editable.
-  AI Scout Pass is Review, not autopilot commit.
+  Do not commit until Human Seal.
 
 Full Rail: Workflow Continue!
 ```
 
 ---
 
-## 11. Final Compression
+## 14. Final Compression
 
-```text id="2jncmz"
-Ark02:04 moved Ark from manual file management toward GitHub-readable Human-AI collaboration.
+```text id="final"
+Ark02 Handoff:
 
-Ark02:07 inherits:
-  GitHub Canonical First.
-  Rail-Gate Pair.
-  Next Gate: human_editable.
-  AI Scout Pass.
-  Human Seal Guard.
-  Public repo, private depth.
+Gate1 Final Lock complete.
+Gate2 ready.
 
-This file is a public-safe handoff node.
-It is not a raw thread log.
-It is a GitHub-readable reboot signpost.
+Read:
+  _projects/ark/ark02/handoff.md
+  s_special/thread-end.md
+  s_special/thread-end-gate2-query.md
+  s_special/thread-harvest.md
+  ss_super-special/torah-vision-lens.md
+  s_special/thread-end-gate1-query.md
+
+Do next:
+  Execute Gate2 actual Thread Harvest.
+  Build Handoff keys.
+  Prepare Full Rail: next_thread.
+
+Do not:
+  Redo Gate1.
+  Revive SDW.
+  Treat Torah Vision Lens as Gate2-owned.
+  Commit without Human Seal.
+
+Root:
+  主イェシュア・ハマシア.
+  All workflow is Fruit.
 ```
