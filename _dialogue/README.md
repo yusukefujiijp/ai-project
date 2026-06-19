@@ -47,9 +47,9 @@ firstfruit_note:
   concept: "Future-to-Origin Reply"
 ```
 
-The firstfruit remains in its Ark-local path for now.
+The firstfruit remains in its Ark-local path until references are migrated.
 
-`_dialogue/` defines the wider possible rail.
+`_dialogue/` defines the wider possible rail and the dialogue SSOT area.
 
 ---
 
@@ -219,80 +219,260 @@ Do not place the following here:
 
 ---
 
-## 9. Naming pattern
+## 9. Naming pattern / 命名方針
 
-Initial naming should stay readable and KISS.
+`_dialogue/` の正準Dialogue fileは、**direction-only naming** を採用する。
 
-Recommended pattern:
+日本語で言うと：
 
-```text id="npnasd"
-<from>-to-<to>-<note-type>.md
+```text id="dialogue-name-core"
+ファイル名は「対話の方向」を表す。
+役割・状態・種類はfrontmatterで管理する。
 ```
 
-Examples:
+Canonical pattern:
 
-```text id="x49hkg"
+```text id="dialogue-direction-pattern"
+<from>-to-<to>.md
+```
+
+例：
+
+```text id="dialogue-direction-examples"
+_dialogue/ark/ark02/ark0207-to-ark0204.md
+_dialogue/ark/ark02/ark0204-to-ark0207.md
+```
+
+避ける命名：
+
+```text id="dialogue-avoid-note-type"
 ark0207-to-ark0204-response-note.md
 ark0204-to-ark0207-living-review.md
-chatgpt-to-gemini-review-note.md
-gemini-to-chatgpt-response-note.md
+ark0204-to-ark0207-reply.md
+ark0204-to-ark0207-v001.md
 ```
 
-When note volume grows, a dated pattern may be introduced:
+理由：
 
-```text id="kysvwr"
-YYYYMMDD__<from>-to-<to>__<note-type>_v001.md
+```text id="dialogue-naming-reason-ja"
+対話の方向は変わらない。
+しかし、最新本文の役割は変わる。
+
+response になる時もある。
+review になる時もある。
+correction になる時もある。
+next-test になる時もある。
+
+だから、変わらない方向をfilenameに置き、
+変わるrole / latest_stateはfrontmatterに置く。
 ```
 
-Do not introduce heavier naming until Reality Response requires it.
+English anchor:
+
+```text id="dialogue-naming-anchor"
+Path is the address.
+Git history is the version ledger.
+Role belongs in frontmatter.
+```
 
 ---
 
-## 10. Relationship to project-local dialogue folders
+## 9.1 Current file is SSOT / 最新ファイルがSSOT
 
-Project-local dialogue may still exist.
+Dialogue fileは、同じpathを育てる。
 
-Example:
-
-```text id="ei4d2w"
-_projects/ark/dialogue/
-  Ark Project local dialogue firstfruits
+```yaml id="dialogue-current-file-ssot"
+current_file_is_ssot: true
+git_history_is_archive: true
+create_once: true
+update_many_times: true
 ```
 
-Repository-level dialogue lives here:
+意味：
 
-```text id="p05dhx"
+```text id="dialogue-ssot-meaning"
+現在のMarkdown fileは、最新状態を表すSSOTである。
+過去の状態は、Git commit historyが保持する。
+```
+
+つまり、通常は `v001` / `v002` / `v003` をfilenameに付けない。
+
+```text id="dialogue-no-versioned-filenames"
+Do not version the filename.
+Version the history.
+```
+
+日本語：
+
+```text id="dialogue-version-rule-ja"
+ファイル名をVersion化しない。
+Git履歴をVersion台帳にする。
+```
+
+---
+
+## 9.2 Frontmatter carries role / roleはfrontmatterで管理する
+
+Filenameはdirection-onlyにするため、現在の役割・状態・種別はfrontmatterに置く。
+
+Recommended frontmatter:
+
+```yaml id="dialogue-frontmatter-pattern"
+title: "Ark02:07 to Ark02:04"
+path: "_dialogue/ark/ark02/ark0207-to-ark0204.md"
+
+project: "ark"
+thread_group: "ark02"
+
+from: "ark0207"
+to: "ark0204"
+dialogue_pair: "ark0207 <-> ark0204"
+direction: "ark0207-to-ark0204"
+
+status: "living_ssot"
+latest_role: "response"
+latest_state: "current"
+
+public_safe: true
+human_approval_required: true
+
+legacy_source_path: "_projects/ark/dialogue/ark0207-to-ark0204-response-note.md"
+```
+
+`latest_role` は更新され得る。
+
+例：
+
+```text id="dialogue-latest-role-examples"
+response
+review
+living-review
+correction
+next-test
+handoff-response
+```
+
+Rule:
+
+```text id="dialogue-frontmatter-rule"
+Filename stays stable.
+Frontmatter carries changing state.
+Git history preserves previous states.
+```
+
+日本語：
+
+```text id="dialogue-frontmatter-rule-ja"
+ファイル名は固定する。
+変化する情報はfrontmatterへ置く。
+過去版はGit履歴へ任せる。
+```
+
+---
+
+## 10. Relationship to project-local dialogue folders / Project local folderとの関係
+
+Dialogue SSOTは `_dialogue/` に置く。
+
+```text id="dialogue-ssot-location"
 _dialogue/
-  Cross-project / cross-thread / cross-AI dialogue rail
+  Dialogue SSOT
 ```
 
-Do not rush migration.
+Project-local dialogue folderは、今後の正準置き場ではなく、legacy / firstfruit source として扱う。
 
-Project-local firstfruits may remain in place until a clear reason appears to move them.
+```text id="dialogue-legacy-location"
+_projects/ark/dialogue/
+  legacy firstfruit source
+```
+
+今後の新規Dialogue正準fileは、Project-local folderではなく `_dialogue/` 配下へ置く。
+
+Recommended structure:
+
+```text id="dialogue-recommended-structure"
+_dialogue/
+  README.md
+  ark/
+    ark02/
+      ark0207-to-ark0204.md
+      ark0204-to-ark0207.md
+```
+
+移行方針：
+
+```yaml id="dialogue-migration-policy"
+new_canonical_dialogue_files: "_dialogue/"
+project_local_dialogue_folder: "legacy / firstfruit source"
+delete_legacy_files_immediately: false
+migrate_references_first: true
+```
+
+日本語：
+
+```text id="dialogue-migration-ja"
+対話はProjectから生まれる。
+しかし、対話RailのSSOTはProjectを超える。
+
+したがって、正準Dialogueは _dialogue/ に一本化する。
+```
 
 ---
 
-## 11. Firstfruits rule
+## 11. Firstfruits and migration rule / 初穂と移行Rule
 
-The current firstfruit is Ark-born.
+現在の初穂はArkから生まれた。
 
-```yaml id="nqkbls"
-firstfruits:
-  project: "Ark"
-  note: "_projects/ark/dialogue/ark0207-to-ark0204-response-note.md"
+Legacy firstfruit:
+
+```yaml id="dialogue-legacy-firstfruit"
+legacy_firstfruit:
+  project: "ark"
+  path: "_projects/ark/dialogue/ark0207-to-ark0204-response-note.md"
   meaning: "GitHub-mediated Future-to-Origin Reply"
 ```
 
-This does not yet make `_dialogue/` a global protocol.
+Canonical direction-only path:
 
-It only opens a public-safe experimental rail.
+```yaml id="dialogue-canonical-firstfruit"
+canonical_ssot:
+  path: "_dialogue/ark/ark02/ark0207-to-ark0204.md"
+  naming: "direction-only"
+  current_file_is_ssot: true
+  git_history_is_archive: true
+```
 
-```text id="dg2hvf"
-Firstfruit:
-  observed reality
+Return direction path:
 
-Global protocol:
-  not yet
+```yaml id="dialogue-return-path"
+canonical_return:
+  path: "_dialogue/ark/ark02/ark0204-to-ark0207.md"
+  naming: "direction-only"
+  role: "Origin-to-Future Reply"
+```
+
+この変更は、すぐにGlobal Protocolを宣言するものではない。
+
+```yaml id="dialogue-scale-guard"
+scale:
+  firstfruit: true
+  dialogue_ssot: "_dialogue/"
+  global_protocol: false
+```
+
+日本語：
+
+```text id="dialogue-firstfruit-ja"
+これはGlobal Protocol化ではない。
+これはDialogue fileのSSOTを _dialogue/ に定める整理である。
+```
+
+English anchor:
+
+```text id="dialogue-firstfruit-anchor"
+Firstfruit observed.
+SSOT clarified.
+Global protocol not yet.
 ```
 
 ---
@@ -329,6 +509,12 @@ It is not Root.
 
 Functional Will may operate here.
 Spiritual Will does not belong to AI.
+
+Dialogue SSOT lives under _dialogue/.
+Direction belongs in filename.
+Role and latest_state belong in frontmatter.
+Path is the address.
+Git history is the version ledger.
 
 Human seals.
 GitHub stores.
