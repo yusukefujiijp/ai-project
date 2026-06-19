@@ -21,7 +21,10 @@ gate_role: "Gate 2 / Thread Harvest"
 rail: "next_thread"
 
 companion_lens:
-  - "torah-vision-lens.md"
+  - path: "ss_super-special/torah-vision-lens.md"
+    role_alias: "torah-vision-lens.md"
+    class: "SS"
+    role: "Ark-wide SS Vision Core / Ark's eye / Naming Source Lens"
 
 removed_from_source_bootstrap:
   - "SDW"
