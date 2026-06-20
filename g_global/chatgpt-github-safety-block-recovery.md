@@ -219,6 +219,193 @@ staged_canonicalization:
 
 ---
 
+## 6.5 Try Once Then Fallback
+
+Blocked write is not fully predictable in advance.
+
+Therefore, if the original intended content is public-safe and Human Seal has been received, AI may try the original write once.
+
+If it passes, the GitHub commit path is complete.
+
+If it is blocked, stop immediately.
+
+Do not repeatedly retry the same blocked payload.
+
+Do not degrade the original intended content merely to satisfy tool transport.
+
+```text id="lt9cj5"
+Try original once.
+If blocked, preserve meaning.
+Change the transport.
+```
+
+日本語：
+
+```text id="lu4sgs"
+本来版で一回は試す。
+ブロックされたら意味を守る。
+搬送経路を変える。
+```
+
+This is not a safety bypass.
+
+This is a transport recovery route under Human Seal.
+
+---
+
+## 6.6 Human Direct Commit Fallback
+
+When AI tool write is blocked, the workflow itself is not blocked.
+
+```text id="9adns7"
+Tool block is not workflow block.
+Manual commit is not failure.
+It is Reality Response.
+```
+
+AI should switch roles.
+
+```yaml id="fqqgj9"
+ai_role_after_block:
+  - "report the block honestly"
+  - "do not claim the exact internal safety reason"
+  - "do not conclude that the content is bad"
+  - "preserve the original intended content"
+  - "prepare a Copy & Paste Pack"
+  - "provide commit message"
+  - "provide extended description"
+  - "provide verification checklist"
+
+human_role_after_block:
+  - "open GitHub UI"
+  - "paste or replace the target file body"
+  - "commit directly"
+  - "return Reality Response"
+```
+
+日本語：
+
+```text id="uve1u1"
+AI tool writeが止まっても、Workflowは止まらない。
+AIは本来版を守り、Copy & Paste Packを作る。
+人間がGitHub UIでDirect Commitする。
+AIはcommit後にVerificationする。
+```
+
+---
+
+## 6.7 Address Placeholder Rail
+
+If the target file does not exist and the original body is blocked, AI may create a minimal placeholder after Human Seal.
+
+The placeholder is not the real content.
+
+It is only a path anchor.
+
+```markdown id="wladh9"
+# Pending Human Direct Commit
+
+This file is a temporary path anchor.
+Replace this body with the original intended version.
+```
+
+```text id="e1jpyo"
+Placeholder creates the address.
+Human replaces the body.
+Git history grows the file.
+```
+
+日本語：
+
+```text id="i5wayd"
+仮ファイルは本体ではない。
+仮ファイルは住所である。
+人間が本来版へ全文置換する。
+```
+
+Use this only when it reduces human friction.
+
+If the target file already exists, do not create a placeholder.  
+Use the existing file as the edit target.
+
+---
+
+## 6.8 Copy & Paste Pack Rail
+
+If AI cannot safely transport the full content through GitHub tool write, AI should provide a Copy & Paste Pack.
+
+```yaml id="nq0kjd"
+copy_paste_pack:
+  includes:
+    - "target path"
+    - "original intended Markdown body"
+    - "downloadable Markdown file if useful"
+    - "ZIP bundle if multiple files are involved"
+    - "commit message"
+    - "extended description"
+    - "manual GitHub UI steps"
+    - "post-commit verification checklist"
+```
+
+Purpose:
+
+```text id="j5gcy2"
+Preserve original meaning.
+Reduce human friction.
+Move final execution to the human owner.
+Verify repository reality after commit.
+```
+
+This route should be used when tool passage would require weakening the original intended content.
+
+```text id="105zaz"
+Do not degrade meaning.
+Change transport.
+Preserve the fire.
+```
+
+---
+
+## 6.9 Commit Message + Extended Description Pair
+
+For important commits, AI should provide both a commit message and an extended description.
+
+```text id="p0xerw"
+Commit message:
+  what changed
+
+Extended description:
+  why it changed
+```
+
+The commit message should be short, scope-aware, and future-readable.
+
+The extended description should be one or two lines.
+
+Use extended description when the reason matters for future AI or future human review.
+
+```yaml id="wq29n0"
+extended_description_use_when:
+  - "canonical guide update"
+  - "SeedSkill / Skill file update"
+  - "Human Direct Commit"
+  - "Safety Block recovery"
+  - "original-intended content replaces safety-softened content"
+  - "future Living Review should understand why"
+```
+
+Example:
+
+```text id="pa87el"
+Commit message:
+docs(g_global): add Human Direct Commit fallback
+
+Extended description:
+Document the Try Once -> Address Placeholder -> Copy & Paste Pack -> Human Direct Commit recovery path so blocked writes do not degrade original intended content.
+```
+
+---
+
 ## 7. Existing SSOT Protection
 
 既存の長い正準Guideを更新する時は、破壊的overwriteを避ける。
