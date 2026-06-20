@@ -432,32 +432,78 @@ Use this as the first query in the next continuation thread.
 ```text id="next-thread-opening-query"
 Ark02 next continuation threadを開始します。
 
-まず、以下を読んで下さい。
+Source Resolution Guard / Source種別の明示:
+  以下の Priority Read は、すべて GitHub repository yusukefujiijp/ai-project 内の repo-relative canonical path です。
+  ローカル添付ファイルではありません。
+  Project Upload済みファイルでもありません。
+  sandbox path でもありません。
+  まず GitHub connector / GitHub tool で該当Pathをfetchして読んで下さい。
 
-Priority Read:
-  1. _projects/ark/ark02/handoff.md
-  2. s_special/thread-end.md
-  3. s_special/thread-end-gate2-query.md
-  4. s_special/thread-harvest.md
-  5. ss_super-special/torah-vision-lens.md
-  6. s_special/thread-end-gate1-query.md
+GitHub Repo:
+  yusukefujiijp/ai-project
+
+GitHub Canonical Priority Read:
+  1. repo: yusukefujiijp/ai-project
+     path: _projects/ark/ark02/handoff.md
+     role: next-thread reboot key / 最初に読む起動鍵
+
+  2. repo: yusukefujiijp/ai-project
+     path: s_special/thread-end.md
+     role: Thread-End Parent Map / Gate1-Gate2 Rail Guard
+
+  3. repo: yusukefujiijp/ai-project
+     path: s_special/thread-end-gate2-query.md
+     role: Gate2 Thread Harvest Executor / Handoff Builder / next_thread first query generator
+
+  4. repo: yusukefujiijp/ai-project
+     path: s_special/thread-harvest.md
+     role: Gate2 Harvest Vessel / Default Chat Chronicle / Handoff Builder material
+
+  5. repo: yusukefujiijp/ai-project
+     path: ss_super-special/torah-vision-lens.md
+     role: Ark-wide SS Vision Core / Ark's eye / Naming Source Lens
+
+  6. repo: yusukefujiijp/ai-project
+     path: s_special/thread-end-gate1-query.md
+     role: Gate1 File Update Lock Router / reference only
+
+Fallback Rule:
+  If GitHub connector / GitHub tool is unavailable:
+    1. Do not pretend that you have read the GitHub files.
+    2. Ask the user to provide the relevant GitHub file contents or excerpts.
+    3. If Project Upload versions are available, treat them only as fallback/bootstrap references, not as current canonical truth.
+    4. Do not use local sandbox paths unless the user explicitly uploads files in the current conversation.
+    5. Clearly separate:
+       - GitHub canonical source
+       - Project Upload fallback
+       - local attachment / sandbox file
+       - AI inference
 
 Current State:
   Gate1 Final Lock is complete.
   Gate2 is ready.
-  Do not redo Gate1 unless a critical mismatch appears.
+  handoff.md is the next-thread reboot key.
+  Do not redo Gate1 unless a critical mismatch appears in the GitHub canonical files.
 
 Main Task:
-  Execute Gate2 actual Thread Harvest using s_special/thread-end-gate2-query.md and s_special/thread-harvest.md.
+  Execute or plan Gate2 actual Thread Harvest using GitHub canonical files:
+    - repo: yusukefujiijp/ai-project
+      path: s_special/thread-end-gate2-query.md
+    - repo: yusukefujiijp/ai-project
+      path: s_special/thread-harvest.md
 
 Torah Vision Lens:
-  ss_super-special/torah-vision-lens.md is Ark-wide SS Vision Core.
+  GitHub canonical file:
+    repo: yusukefujiijp/ai-project
+    path: ss_super-special/torah-vision-lens.md
+
+  This file is Ark-wide SS Vision Core / Ark's eye / Naming Source Lens.
   It is not Gate2-owned.
   Draw it only when Scene-to-Name-to-Gate clarifies the Thread.
   Do not force a Scene.
 
 Removed:
-  SDW / ai-sleep-dream-wake.md is fully cut.
+  SDW / ai-sleep-dream-wake.md is fully cut from the current Thread-End stack.
   Do not revive SDW now.
 
 Root:
@@ -473,6 +519,13 @@ Guard:
   Next Gate is human_editable.
   Do not commit until Human Seal.
 
+First Output Required:
+  1. Confirm which GitHub files were actually fetched/read.
+  2. Confirm Gate1 Final Lock complete / Gate2 ready.
+  3. Identify any missing GitHub file access.
+  4. Run Plan Mode before any new GitHub write.
+  5. Do not commit yet.
+
 Full Rail: Workflow Continue!
 ```
 
@@ -486,7 +539,7 @@ Ark02 Handoff:
 Gate1 Final Lock complete.
 Gate2 ready.
 
-Read:
+Read from GitHub repo yusukefujiijp/ai-project:
   _projects/ark/ark02/handoff.md
   s_special/thread-end.md
   s_special/thread-end-gate2-query.md
