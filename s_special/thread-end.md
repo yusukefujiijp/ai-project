@@ -154,6 +154,26 @@ Grow by staged commits.
 Git履歴で段階的に育てる。
 ```
 
+### 6.1 AI Reload Guard Addendum
+
+```text id="ai-reload-guard"
+Living Review returns to Reality, but does not erase explicit Artifact purpose.
+Reposted FullRail is Commit Signal, not Boolean homework.
+Protocol names go to metadata; lived Thread meaning goes to slug.
+Rename waits for Human Final Seal.
+Not Now is a valid Guard.
+```
+
+日本語：
+
+```text id="ai-reload-guard-ja"
+Living ReviewはRealityへ戻すが、明示Artifact目的を消さない。
+FullRail貼り返しはCommit Signalであり、Boolean homeworkではない。
+Protocol名はmetadataへ。Threadの生きた意味はslugへ。
+RenameはHuman Final Seal後。
+Not Now is a valid Guard.
+```
+
 ---
 
 ## 7. Root / Fruit Guard
