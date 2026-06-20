@@ -1,8 +1,8 @@
 ---
 title: "Ark _skills/SKILL.md"
-role: "AI Load Router / SeedSkill Synapse Manifest"
-reader: "AI-oriented; human-auditable"
-status: "safe-commit-preview / Japanese-first OKF / not committed"
+role: "AI Load Router / SeedSkill Synapse Activation Manifest"
+reader: "AI primary; human auditor secondary"
+status: "original-intended / Japanese-first OKF / manual-direct-commit candidate"
 language_policy: "Japanese-first / English-anchor"
 root_guard: "Root is 主イェシュア・ハマシア; SeedSkills / Skills / GitHub / Markdown / AI are Fruit."
 ---
@@ -20,7 +20,7 @@ SKILL.mdはAI用。
 
 これは全文Manualではない。  
 これは一般的な自動実行packageではない。  
-これは権限を付与するfileでもない。
+これは権限を自動付与するfileでもない。
 
 目的は、短いSeedSkill LineをAI文脈へ事前配置し、命名・Review・Guard設計・Route選択・N-Stop・Full Rail・Move37候補検出の瞬間に、過去Threadの火種を再点火しやすくすることである。
 
@@ -145,13 +145,26 @@ huge manifest → all decks → all seeds → context fog
 
 AI用Fileは、AIを迷わせないために短く強くする。
 
-## 7. Boundary Note / 権限境界
+## 7. Safety Guard / 自動実行防止
 
-このFileは、実行権限や公開権限を与えるものではない。
+このFileは、AIに第三者Skill・外部script・未確認Resourceを自動実行させるための権限文書ではない。
 
-外部Resource・script-like material・file operation・GitHub operationの扱いは、Chat上の明示指示、tool reality、Human Final Sealに従う。
+このFileは、file作成・更新・削除・rename・move・publishを自動許可しない。
 
-このFileの役割は、SeedSkillの読み方・Deck選択・Guard意識を整えることである。
+GitHub write / local file write / artifact生成 / publish / rename / delete / overwrite は、Chat上の明示指示とHuman Final Sealが必要である。
+
+UserがPlan Mode / Preview Mode / Review Modeを指定した場合は、本文作成やGitHub writeへ進まず、必ずPlan / Preview / Reviewで止まる。
+
+```yaml
+instruction_priority:
+  1: "User explicit instruction in current chat"
+  2: "Tool reality / actual filesystem or GitHub response"
+  3: "This SKILL.md router"
+  4: "SeedSkill deck hints"
+  5: "AI inference"
+```
+
+AIはこのFileを、権限拡張ではなく、読み方・Route選択・Guard設計のための契約板として読む。
 
 ## 8. Source Boundary / Tool Reality Guard
 
