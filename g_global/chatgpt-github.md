@@ -657,6 +657,76 @@ Verify repository reality after commit.
 Commit後にAIが現物検証する。
 ```
 
+
+---
+
+### Full-Body Manual Commit Pack Rule / 全文置換Manual Commit Pack Rule
+
+Manual Commit PackでDownload付きfileを出す場合、原則として **Full Body Replacement File** にする。
+
+Patch-only Downloadは、Patch PreviewやReview補助としては有効である。
+
+しかし、人間がGitHub UIでCommitする実行面ではdefaultにしない。
+
+```text id="full-body-parent-core"
+Patchは判断用。
+全文は実行用。
+```
+
+English anchor:
+
+```text id="full-body-parent-anchor"
+Patch is for judgment.
+Full body is for action.
+```
+
+Human Direct Commitでは、次が最短最速である。
+
+```text id="human-direct-replacement"
+全選択
+-> 全削除
+-> 全文貼り替え
+-> Commit
+```
+
+Ultra-Neutral Placeholderで住所が開いた後は、AI側で本体payloadを深追いしない。
+
+その次に出すべきものは、原則としてFull Body Replacement Fileである。
+
+```text id="placeholder-parent-link"
+placeholderで住所を開く。
+住所が開いたらAI側搬送を止める。
+Full Bodyを渡す。
+人間が貼る。
+```
+
+Download / zip方針：
+
+```yaml id="parent-zip-policy"
+download_policy:
+  one_file: "zip不要"
+  two_files: "基本zip不要"
+  three_or_more_files: "zip検討"
+```
+
+Guard：
+
+```yaml id="parent-full-body-guard"
+guard:
+  patch_preview_is_for_review: true
+  download_manual_pack_is_for_execution: true
+  full_body_replacement_is_default: true
+  patch_only_download_is_preview_aid: true
+  no_degradation_on_block: true
+```
+
+ただし、AIが現行本文を安全に再構成できない場合は、無理にFull Bodyを生成しない。
+
+```text id="parent-exception"
+安全に全文を再構成できないなら、破壊的全文置換を作らない。
+その場合はPatch PreviewとHuman Edit Instructionsへ切り替える。
+```
+
 ---
 
 ## 15. Commit Message Policy
