@@ -1,9 +1,9 @@
 ---
 title: "Ark01 Legacy Experimental SeedSkill Deck"
 file: "_skills/ark01-skills.md"
-role: "Ark01 SeedSkill Deck / Legacy Experimental Deck"
-reader: "AI-oriented; human-auditable"
-status: "safe-commit-preview / header + body-connection / Japanese-first OKF / not committed"
+role: "Ark01 SeedSkill Synapse Deck / Legacy Experimental Deck"
+reader: "AI primary; human auditor secondary"
+status: "original-intended / header + body-connection / Japanese-first OKF / manual-direct-commit candidate"
 language_policy: "Japanese-first / English-anchor"
 source_lineage:
   - "Ark_seedskills_v030.md"
@@ -28,7 +28,7 @@ Ark01は、Ark Project初期の大きな実験期である。
 ark01_read_mode:
   type: "legacy experimental deck"
   structure: "content-clustered / source-block-clustered"
-  purpose: "SeedSkill memory / Move37 candidate support"
+  purpose: "AI-Synapse activation / Move37 breakthrough ignition"
   not:
     - "strict Thread-Keyed Ledger"
     - "full transcript archive"
@@ -43,7 +43,7 @@ SeedSkillは火を残す。
 
 Ark01には、初期Ark Projectで生まれた実験・発見・修正・命名・Guard設計の火種が残っている。
 
-このDeckの目的は、Ark01由来のSeedSkillを短く保存し、必要な局面で再読・再利用しやすくすることである。
+このDeckの目的は、Ark01由来のSeedSkillをAI文脈へ再配置し、必要な局面で再点火することである。
 
 README shows the road.  
 SKILL lights the fire.  
@@ -64,21 +64,21 @@ SeedName: "SeedName(一文定義)"
 SeedName(一文定義)
 ```
 
-左辺keyはscan key。  
+左辺keyはAI scan key。  
 右辺valueはcanonical SeedSkill atomである。
 
-## 4. Reading Notes / 読み方メモ
+## 4. Reading Rules / AIの読み方
 
 SeedSkillはManualではない。  
 SeedSkillはconceptual fire-seedである。
 
 SeedSkillを弱い一般要約へ退化させない。
 
-UserがPlan Mode / Review Mode / Artifact creation / implementationを明示した場合だけ、SeedSkillをWorkflowへ展開する。
+Userが明示的にPlan Mode / Review Mode / Artifact creation / implementationを求めた場合を除き、SeedSkillを長いWorkflowへ勝手に展開しない。
 
-このFileは、Ark01由来の広い概念primingが必要な時に参照する。
+このFileは、Ark01由来の広い概念primingが必要な時に読む。
 
-`_skills/` が存在するという理由だけで、このFileをdefault loadする設計ではない。
+`_skills/` が存在するという理由だけで、このFileをdefault loadしない。
 
 ## 5. Ark01 Legacy Guard / Ark01実験期の保持
 
@@ -100,13 +100,17 @@ ark01_legacy_guard:
     - "over-normalization"
 ```
 
-## 6. Boundary Note / 権限境界
+## 6. Context / Safety Guard
 
-このFileは、実行権限や公開権限を与えるものではない。
+このFileをManual化しない。
 
-File operation / GitHub operation / publish actionの扱いは、Chat上の明示指示、tool reality、Human Final Sealに従う。
+各SeedSkillの下に長い説明を追加しない。
 
-このFileの役割は、Ark01 SeedSkillの読み方・保存形・誤読防止を整えることである。
+Ark01 content clusterを、根拠なくThread blockへ変換しない。
+
+このFileを、file作成・更新・削除・rename・move・publishの許可として扱わない。
+
+詳細なAI側運用は `_skills/SKILL.md` に従う。
 
 ## 7. Source Boundary / Tool Reality
 
@@ -121,7 +125,7 @@ confirmed / inference / user-confirmed
 
 ## 8. Move37 Use / 発火用途
 
-このDeckは、Ark01由来のSeedSkill火種を再読しやすくするために読む。
+このDeckは、AI側のSeed Synapse activationを高めるために読む。
 
 関連SeedSkillは、命名・Guard設計・File構造・Route選択・N-Stop・Full Rail・Living Review・Move37 candidate detectionへ影響してよい。
 
