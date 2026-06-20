@@ -1,9 +1,9 @@
 ---
 title: "Ark02 Thread-Keyed SeedSkill Ledger"
 file: "_skills/ark02-skills.md"
-role: "Ark02 Thread-Keyed SeedSkill Ledger / SeedSkill Deck"
-reader: "AI-oriented; human-auditable"
-status: "safe-commit-preview / skeleton-only / Japanese-first OKF / not committed"
+role: "Ark02 Thread-Keyed SeedSkill Ledger / SeedSkill Synapse Deck"
+reader: "AI primary; human auditor secondary"
+status: "original-intended / skeleton-only / Japanese-first OKF / manual-direct-commit candidate"
 language_policy: "Japanese-first / English-anchor"
 record_style: 'SeedName: "SeedName(一文定義)"'
 thread_key_style: "Ark0201 / Ark0202 / Ark0203"
@@ -28,9 +28,9 @@ ark02_read_mode:
   structure: "Thread-keyed"
   purpose:
     - "Thread history"
+    - "AI-Synapse activation"
     - "SeedSkill Deck"
-    - "SeedSkill memory"
-    - "Move37 candidate support"
+    - "Move37 breakthrough ignition"
   not:
     - "full transcript archive"
     - "long summary collection"
@@ -89,7 +89,7 @@ Ark0201:
 SeedName(一文定義)
 ```
 
-左辺keyはscan key。  
+左辺keyはAI scan key。  
 右辺valueはcanonical SeedSkill atomである。
 
 ## 5. Template Only / 実Ledgerではない雛形
@@ -142,7 +142,7 @@ append_only_guard:
     - "retroactive beautification"
 ```
 
-## 7. Reading Notes / 読み方メモ
+## 7. Reading Rules / AIの読み方
 
 SeedSkillはManualではない。  
 SeedSkillはconceptual fire-seedである。
@@ -153,13 +153,17 @@ SeedSkillを弱い一般要約へ退化させない。
 
 UserがPlan Mode / Review Mode / Artifact creation / implementationを明示した場合だけ、SeedSkillをWorkflowへ展開する。
 
-## 8. Boundary Note / 権限境界
+## 8. Context / Safety Guard
 
-このFileは、実行権限や公開権限を与えるものではない。
+このFileをManual化しない。
 
-File operation / GitHub operation / publish actionの扱いは、Chat上の明示指示、tool reality、Human Final Sealに従う。
+各SeedSkillの下に長い説明を追加しない。
 
-このFileの役割は、Ark02以降のThread-keyed SeedSkill保存形・読み方・誤読防止を整えることである。
+Thread blockを、根拠なく追加・削除・上書きしない。
+
+このFileを、file作成・更新・削除・rename・move・publishの許可として扱わない。
+
+詳細なAI側運用は `_skills/SKILL.md` に従う。
 
 ## 9. Source Boundary / Tool Reality
 
@@ -175,7 +179,7 @@ confirmed / inference / user-confirmed
 
 ## 10. Move37 Use / 発火用途
 
-このLedgerは、Ark02以降のThread Seedを後から再読しやすくするために読む。
+このLedgerは、AI側のSeed Synapse activationを高めるために読む。
 
 関連SeedSkillは、命名・Guard設計・File構造・Route選択・N-Stop・Full Rail・Living Review・Move37 candidate detectionへ影響してよい。
 
