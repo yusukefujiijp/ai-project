@@ -2,8 +2,11 @@
 title: "Thread-End Parent Map"
 canonical_name: "Thread-End Parent Map"
 class: "S"
+class_candidate: "SS"
 status: "living_ssot"
+ss_upgrade_status: "candidate / not_moved / not_final_seal"
 canonical_path: "s_special/thread-end.md"
+future_path_candidate: "ss_super-special/thread-end.md"
 repo: "yusukefujiijp/ai-project"
 source_bootstrap: "S_thread-end_v001.md"
 version_model: "frontmatter + git commit history"
@@ -14,6 +17,18 @@ meaning_preservation_guard: true
 length_first_safety_diagnosis: true
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
+runtime_role: "Single Front Door / Multi-Gate Router"
+all_in_one_entrypoint: true
+all_in_one_body_generator: false
+handoff_only: false
+child_file_contract_enabled: true
+gate2_required_read:
+  - "s_special/thread-harvest.md"
+thread_transfer_planned_required_read:
+  - "s_special/thread-handoff.md"
+thread_handoff_status: "candidate / not_created_yet"
+thread_handoff_after_creation: "must_read"
+user_final_seal_required: true
 core_formula:
   - "Thread-End = Gate 1: File Update Lock + Gate 2: Thread Harvest"
   - "Gate 1 fixes files; Gate 2 harvests meaning."
@@ -84,6 +99,25 @@ Gate 2:
   Rail = next_thread。
 ```
 
+### 2.1 SS Runtime Entry Point Candidate
+
+`thread-end.md` は、Thread終端の Single Front Door / Multi-Gate Router 候補である。
+
+```text id="entry-not-body"
+thread-end.md:
+  all-in-one entrypoint
+  not all-in-one body
+```
+
+このfileは、Thread終端処理の本文をすべて抱え込まない。
+Gate 1 / Gate 2 を保持し、必要な詳細をchild living filesへ導く。
+
+```text id="entry-guard"
+Do not reduce thread-end.md to handoff-only.
+Do not inflate thread-end.md into a full Harvest / Handoff body generator.
+Keep Gate 1 / Gate 2 together.
+```
+
 ---
 
 ## 3. Gate Decision
@@ -103,6 +137,39 @@ When uncertain:
   Use Gate 1 first.
 ```
 
+### 3.1 Required Read Contracts
+
+```yaml id="required-read-contracts"
+gate2_required_read:
+  condition: "Gate 2 / Thread Harvest"
+  must_read:
+    - "s_special/thread-harvest.md"
+
+thread_transfer_planned_required_read:
+  condition: "Thread transfer / next_thread handoff creation"
+  planned_required_read:
+    - "s_special/thread-handoff.md"
+  child_status: "candidate / not_created_yet"
+  before_creation_rule:
+    - "Do not assume s_special/thread-handoff.md already exists."
+    - "Use the latest approved thread-handoff Role Candidate as provisional Builder."
+  after_creation_rule:
+    - "After s_special/thread-handoff.md is created and approved, upgrade this contract to must_read."
+```
+
+Builder / Product distinction:
+
+```yaml id="builder-product"
+thread_handoff_md:
+  role: "Handoff Builder / Next-thread Ignition Manual"
+  type: "builder_manual"
+  status: "candidate / not_created_yet"
+
+handoff_md:
+  role: "Next-thread ignition key"
+  type: "generated_product"
+```
+
 ---
 
 ## 4. Handoff Rule
@@ -118,18 +185,59 @@ handoff.md:
 
 ---
 
-## 5. Boundary
+## 5. Boundary / Child File Contract
 
 ```yaml id="boundary"
 thread_end:
   path: "s_special/thread-end.md"
-  role: "Parent Map / Gate Map / Rail Guard"
+  role: "SS Runtime Entry Point Candidate / Gate Router / Thread終端操作卓"
+  function:
+    - "Gate 1 / Gate 2 decision"
+    - "same_thread / next_thread rail routing"
+    - "handoff.md required enforcement"
+    - "child living file routing"
+  not_role:
+    - "Harvest body generator"
+    - "Handoff body generator"
+    - "handoff-only file"
 
 thread_harvest:
-  role: "Gate 2 Harvest Vessel"
+  path: "s_special/thread-harvest.md"
+  role: "Gate 2 Harvest Engine / Harvest Builder"
+  required_when:
+    - "Gate 2 / Thread Harvest"
+  produces:
+    - "harvest.md or Chat Chronicle"
+    - "handoff material"
+
+thread_handoff:
+  path_candidate: "s_special/thread-handoff.md"
+  status: "candidate / not_created_yet"
+  role: "Handoff Builder / Next-thread Ignition Manual"
+  planned_required_when:
+    - "Thread transfer / next_thread handoff creation"
+  after_creation:
+    required_when:
+      - "Thread transfer / next_thread handoff creation"
+  produces:
+    - "handoff.md"
 
 handoff:
-  role: "Next-thread reboot key"
+  role: "Next-thread ignition key / generated product"
+  required: true
+  not_role:
+    - "builder manual"
+    - "full harvest archive"
+
+THREAD_INDEX_Ark_v041:
+  role: "Deep Harvest / Root Thread Distillation Lens"
+  invoke_when:
+    - "harvest_depth: deep"
+    - "harvest_depth: full-enough"
+    - "Mission-ready Overfit Drift risk"
+  not_role:
+    - "thread-end.md replacement"
+    - "final product family"
 ```
 
 `thread-end.md` は、Gate 1 / Gate 2 の全文Prompt Repositoryではない。
@@ -174,6 +282,39 @@ RenameはHuman Final Seal後。
 Not Now is a valid Guard.
 ```
 
+### 6.2 All-in-One Entry, Not All-in-One Body
+
+```text id="all-in-one-entry"
+thread-end.md:
+  all-in-one entrypoint
+  not all-in-one body
+```
+
+`thread-end.md` は入口を一つに固定する。
+詳細はchild living filesへ委譲する。
+
+```yaml id="delegation"
+delegation:
+  harvest_details: "s_special/thread-harvest.md"
+  handoff_details:
+    planned_route_to: "s_special/thread-handoff.md"
+    status: "candidate / not_created_yet"
+    after_creation: "must_read"
+```
+
+Rollback:
+
+```text id="rollback"
+If thread-end.md becomes too long:
+  move details to child file contracts.
+
+If thread-end.md becomes handoff-only:
+  restore Gate 1 / Gate 2.
+
+If Gate 2 required_read causes AI to skip the uncertainty rule:
+  restore "When uncertain: Use Gate 1 first."
+```
+
 ---
 
 ## 7. Root / Fruit Guard
@@ -193,7 +334,7 @@ Root remains 主イェシュア・ハマシア.
 
 ```text id="final"
 thread-end.md:
-  Thread-End Parent Map.
+  SS Runtime Entry Point Candidate / Single Front Door / Multi-Gate Router.
 
 Gate 1:
   File Update Lock.
@@ -202,13 +343,26 @@ Gate 1:
 Gate 2:
   Thread Harvest.
   next_thread.
+  Required Read:
+    s_special/thread-harvest.md.
 
 Handoff:
   required.
+  thread-handoff.md:
+    planned required read until created.
+    after creation, must_read.
+  handoff.md:
+    Next-thread ignition key.
 
 Version:
   Git history.
 
 Path:
   s_special/thread-end.md.
+
+Future Path Candidate:
+  ss_super-special/thread-end.md.
+
+Guard:
+  All-in-one entrypoint, not all-in-one body.
 ```
