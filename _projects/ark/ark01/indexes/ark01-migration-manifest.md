@@ -549,8 +549,7 @@ canonical_status:
 
 next_movement:
   immediate_next:
-    - "Create _projects/ark/ark01/indexes/ark01-migration-manifest.md only after explicit user signal"
-    - "After creation, run Ark01 Migration Manifest Reality Response Check"
+    - "Run Ark01 Migration Manifest Reality Response Check after GitHub creation"
     - "Continue Repository Governance sequence without Ark01 migration execution yet"
 
   not_yet:
