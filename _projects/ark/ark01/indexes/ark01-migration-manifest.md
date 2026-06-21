@@ -309,6 +309,171 @@ ark01_handoff_index_candidates:
       - "Source本文の代替ではない"
 ```
 
+### §5.4 Ark01 Migration Entry Batch 0 / Calibration Batch Candidate
+
+```yaml id="ark01-migration-entry-batch-0"
+ark01_migration_entry_batch_0:
+  batch_name: "Ark01 Migration Entry Batch 0 / Calibration Batch"
+  batch_status:
+    - "github_canonical_candidate_block"
+    - "human_editable"
+    - "not_migration_execution"
+    - "not_bulk_migration"
+    - "not_mission_card_creation"
+    - "source_confirmation_required"
+
+  purpose:
+    - "Manifest table schemaの実地検証"
+    - "document_identity分類の確認"
+    - "destination_patternの妥当性確認"
+    - "date_status混線の検出"
+    - "Protocol parent markdownをArk01 Harvestへ入れないGuard確認"
+
+  batch_policy:
+    entry_count: 4
+    max_entry_count: 5
+    should_migrate_now: false
+    entry_migration_now: false
+    ark01_migration_execution_now: false
+    bulk_migration_now: false
+    mission_card_creation_now: false
+
+  source_truth_policy:
+    - "このBatchは候補Blockであり、source file確認済み一覧ではない"
+    - "conversation_known_candidate は source_file_confirmed を意味しない"
+    - "source_evidence_status が未確認の場合、migration_status は needs_source_confirmation を維持する"
+    - "Migration execution / Bulk Migration / Mission Card creation は別Signalまで行わない"
+
+  entries:
+    - id: "ark01-batch0-001"
+      local_source_name: "Ark0101_20260501_field-test-first-gate_v001.md"
+      local_source_path_if_known: "needs_source_confirmation"
+      source_evidence_status: "conversation_known_candidate / source_file_not_confirmed_in_this_batch"
+      target_github_path_candidate: "_projects/ark/ark01/harvest/thread-analyses/Ark0101_20260501_field-test-first-gate_v001.md"
+      document_identity: "primary_thread_harvest"
+      analysis_layer: "primary"
+      source_role: "Ark01 early field-test / first gate harvest candidate"
+      migration_status: "candidate / needs_source_confirmation / needs_living_review"
+      should_migrate_now: false
+      depends_on:
+        - "source file confirmation"
+        - "thread_date / filename_date check"
+        - "Primary Harvest classification review"
+        - "user explicit signal before any migration execution"
+      guard:
+        - "Mission Cardとして扱わない"
+        - "Protocol parent markdownとして扱わない"
+        - "Threadの現場感 / Root Guard / Breakthroughを削らない"
+        - "conversation_known_candidate を source_confirmed と誤読しない"
+      notes:
+        - "Batch 0のPrimary Harvest測定点"
+        - "まだ移行しない"
+
+    - id: "ark01-batch0-002"
+      local_source_name: "Ark0104_00000000_daily-teshuvah-ark-reboot-harvest_v001.md"
+      local_source_path_if_known: "needs_source_confirmation"
+      source_evidence_status: "conversation_known_candidate / source_file_not_confirmed_in_this_batch"
+      target_github_path_candidate: "_projects/ark/ark01/harvest/thread-analyses/Ark0104_00000000_daily-teshuvah-ark-reboot-harvest_v001.md"
+      document_identity: "primary_thread_harvest"
+      analysis_layer: "primary"
+      source_role: "Ark01 harvest candidate with sentinel-date guard"
+      migration_status: "candidate / needs_source_confirmation / date_guard_required"
+      should_migrate_now: false
+      depends_on:
+        - "source file confirmation"
+        - "00000000 sentinel date acceptance check"
+        - "analysis_date is not target_thread_date check"
+        - "user explicit signal before any migration execution"
+      guard:
+        - "00000000 sentinelを勝手に現在日付へ置換しない"
+        - "analysis_dateをtarget_thread_dateとして誤用しない"
+        - "Mission Cardとして扱わない"
+        - "conversation_known_candidate を source_confirmed と誤読しない"
+      notes:
+        - "Batch 0の日付Guard測定点"
+        - "日付混線検出用に有益"
+        - "まだ移行しない"
+
+    - id: "ark01-batch0-003"
+      local_source_name: "Ark0106_20260503_rci10-teshuvah-gate-tohu-entropy-shabbat_mission-card_v001.md"
+      local_source_path_if_known: "needs_source_confirmation"
+      source_evidence_status: "conversation_known_candidate / source_file_not_confirmed_in_this_batch"
+      target_github_path_candidate: "_projects/ark/ark01/mission-cards/Ark0106_20260503_rci10-teshuvah-gate-tohu-entropy-shabbat_mission-card_v001.md"
+      document_identity: "mission_card"
+      analysis_layer: "secondary"
+      source_role: "existing Mission Card candidate"
+      migration_status: "candidate / needs_source_confirmation / existing_candidate_only"
+      should_migrate_now: false
+      do_not_create_new_mission_card: true
+      source_primary_harvest_relation_required: true
+      depends_on:
+        - "source file confirmation"
+        - "Primary Harvest source relation check"
+        - "Living Review / Meta layer preservation check"
+        - "user explicit signal before any migration execution"
+      guard:
+        - "新規Mission Card creationをしない"
+        - "Mission CardをPrimary Sourceとして扱わない"
+        - "Living Review / Meta layerを削らない"
+        - "conversation_known_candidate を source_confirmed と誤読しない"
+      notes:
+        - "Batch 0のMission Card分類測定点"
+        - "existing candidate only"
+        - "まだ移行しない"
+
+    - id: "ark01-batch0-004"
+      local_source_name: "THREAD_INDEX_Ark_v041.md"
+      local_source_path_if_known: "/mnt/data/THREAD_INDEX_Ark_v041.md"
+      source_evidence_status: "uploaded_protocol_candidate / not_ark01_harvest"
+      target_github_path_candidate: "do_not_place_under_ark01"
+      excluded_target_layer_reference: "s_special/ via Protocol Registry"
+      document_identity: "protocol_parent_markdown"
+      analysis_layer: "reference_only"
+      source_role: "Ark-wide protocol parent markdown / excluded protocol reference"
+      migration_status: "do_not_migrate_here / protocol_registry_reference_only"
+      should_migrate_now: false
+      depends_on:
+        - "Protocol Registry"
+        - "s_special canonicalization decision"
+        - "separate explicit user signal if protocol migration is ever done"
+      guard:
+        - "Ark01 Harvestへ入れない"
+        - "Ark01 Migration Manifestではreference only"
+        - "Protocol Registry / s_special layerで扱う"
+        - "Batch 0の除外確認用Entryであり移行対象ではない"
+        - "Ark01 ManifestをProtocol migration tableとして扱わない"
+      notes:
+        - "これはArk01成果物ではない"
+        - "Batch 0に入れる目的は『入れないものを明確にする』ため"
+        - "target_github_path_candidate は do_not_place_under_ark01 とし、s_special pathは reference のみに留める"
+```
+
+### Batch 0 Review Notes
+
+```yaml id="ark01-batch-0-review-notes"
+batch_0_review_notes:
+  judgment: "safe_as_github_canonical_candidate_block"
+  reason:
+    - "3-5 entries maxに収まっている"
+    - "Primary Harvest / Mission Card / Excluded Protocol Reference が分離されている"
+    - "should_migrate_now: false を全Entryに設定している"
+    - "source_evidence_status によって source未確認Guard が強化された"
+    - "Mission Card creationをしていない"
+    - "Protocol parent markdownをArk01 Harvestへ入れていない"
+    - "Protocol reference entry の target_github_path_candidate を do_not_place_under_ark01 に変更した"
+    - "GitHub canonicalへ挿入後も not_committed / github_update_now の状態矛盾が残らない"
+
+  missing_by_design:
+    - "Handoff or Index実Entryは今回は未投入"
+    - "理由: source file confirmationなしで無理に入れない"
+    - "次Batchで handoff/index candidate を1件追加してよい"
+
+  not_now:
+    - "Ark01 migration execution"
+    - "Bulk Migration"
+    - "Mission Card creation"
+```
+
 ---
 
 ## §6. Do Not Migrate Here
