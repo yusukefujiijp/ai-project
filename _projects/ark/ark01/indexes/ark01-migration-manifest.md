@@ -712,9 +712,22 @@ canonical_status:
     - "human_editable"
     - "not_final_seal"
 
+current_stage:
+  latest_completed:
+    - "Ark01 Migration Manifest GitHub creation"
+    - "Ark01 Migration Manifest §12 post-creation Micro Patch"
+    - "Ark01 Migration Entry Batch 0 §5.4 GitHub addition"
+    - "Ark01 Migration Entry Batch 0 Reality Response Check"
+  current_meaning:
+    - "Manifest is still pre-migration map"
+    - "Batch 0 is calibration candidate block"
+    - "Batch 0 entries are not migrated files"
+    - "source confirmation is required before any migration execution"
+
 next_movement:
   immediate_next:
-    - "Run Ark01 Migration Manifest Reality Response Check after GitHub creation"
+    - "Prepare Ark01 Migration Entry Batch 0 Source Confirmation Plan Mode"
+    - "Confirm source evidence for Batch 0 entries before any migration execution"
     - "Continue Repository Governance sequence without Ark01 migration execution yet"
 
   not_yet:
@@ -725,9 +738,11 @@ next_movement:
 
 guard:
   - "Manifest is pre-migration map, not migration execution"
-  - "Protocol Registry handles protocol parent markdown"
-  - "Candidate Table is intentionally lightweight for now"
-  - "Concrete file entries belong to future reviewed batches after Reality Response"
+  - "Batch 0 is calibration candidate block, not migrated artifact set"
+  - "Source Confirmation Plan is not migration execution"
+  - "Concrete file entries require source evidence before any migration action"
+  - "Protocol parent markdown remains do_not_place_under_ark01 / Protocol Registry reference"
+  - "Mission Card entry remains existing candidate only; do not create new Mission Cards"
   - "Future GitHub commits require explicit Human Final Seal"
   - "human_editable is not human review wait"
   - "AI-side Living Review may continue"
