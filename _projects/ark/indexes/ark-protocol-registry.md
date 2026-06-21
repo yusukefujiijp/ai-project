@@ -674,8 +674,7 @@ canonical_status:
 
 next_movement:
   immediate_next:
-    - "Create _projects/ark/indexes/ark-protocol-registry.md only after explicit user signal"
-    - "After creation, run Protocol Registry Reality Response Check"
+    - "Run Protocol Registry Reality Response Check after GitHub creation"
     - "Continue Repository Governance sequence without Ark01 migration yet"
 
   not_yet:
