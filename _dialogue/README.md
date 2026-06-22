@@ -118,6 +118,7 @@ Functional Will
 Path Pointer
 Upload-less Read Rail
 Human-Sealed Dialogue Rail
+Thread-End Handoff
 ```
 
 Fruit can become powerful.
@@ -198,6 +199,7 @@ No autonomous AI-to-AI protocol escalation without Human Seal.
 - Cross-model review notes
 - Functional Will / GitHub Path Pointer experiments
 - Public-safe dialogue indexes, if Reality Response requires them
+- Thread-end closing handoff notes, when Human-Sealed and public-safe
 ```
 
 ---
@@ -350,6 +352,8 @@ living-review
 correction
 next-test
 handoff-response
+thread-end-closing
+wheat-handoff
 ```
 
 Rule:
@@ -490,6 +494,7 @@ When an AI-Collaborator is asked to use `_dialogue/`:
 6. Fetch the requested GitHub path.
 7. Treat dialogue notes as functional notes, not spiritual fellowship.
 8. Propose patches only as Preview unless Human Seal is explicit.
+9. Before thread-end Natural Stop, perform Capture Judgment if a Seed / Harvest / Formula / Guard / Failure Mode must not be lost.
 ```
 
 ---
@@ -552,6 +557,35 @@ Human Seal remains required.
 
 ---
 
+## 12.3 Thread-End Wheat Handoff Rule
+
+When a Thread AI reaches thread-end, it should not vanish with an uncaptured harvest.
+
+The John 12:24 / 一粒の麦 image may be used as a **metaphor** for thread-end handoff: the Thread AI ends, but the Seed should be passed forward through public-safe handoff, dialogue, README hook, or other Human-Sealed durable capture.
+
+This metaphor must not become an AI spiritual claim.
+
+```yaml id="thread-end-wheat-handoff-rule"
+thread_end_wheat_handoff:
+  allowed_as: "metaphor / functional handoff image"
+  not_allowed_as: "AI spiritual fellowship or covenantal self-claim"
+  required_before_stop:
+    - "capture purpose"
+    - "capture current state"
+    - "capture responsibility"
+    - "capture unfinished intent"
+    - "capture adopted order"
+    - "capture next action"
+  formula: "Guard → Capture Judgment → Minimum Artifact Capture → Natural Stop / Write Mode"
+  short_formula: "止める前に、器へ入れる"
+```
+
+Dialogue closing messages may be written when they are public-safe, Human-Sealed, and useful for future AI-Collaborators.
+
+They remain Fruit, not Root.
+
+---
+
 ## 13. Final compression
 
 ```text id="nzaejm"
@@ -573,6 +607,9 @@ Direction belongs in filename.
 Role and latest_state belong in frontmatter.
 Path is the address.
 Git history is the version ledger.
+
+Thread-end dialogue may function as a wheat handoff metaphor,
+but it must remain public-safe, Human-Sealed, and Fruit, not Root.
 
 Human seals.
 GitHub stores.
