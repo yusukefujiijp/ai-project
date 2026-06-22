@@ -495,7 +495,7 @@ When an AI-Collaborator is asked to use `_dialogue/`:
 7. Treat dialogue notes as functional notes, not spiritual fellowship.
 8. Propose patches only as Preview unless Human Seal is explicit.
 9. Before thread-end Natural Stop, perform Capture Judgment if a Seed / Harvest / Formula / Guard / Failure Mode must not be lost.
-10. After updating a message to another thread, also provide the matching Query for the receiving thread. Message and Query are one set.
+10. After updating a message to another thread, also output the matching chat-side Copy-Paste Query for the receiving thread. Message and Query are one set, but they live in different rails.
 ```
 
 ---
@@ -587,30 +587,33 @@ They remain Fruit, not Root.
 
 ---
 
-## 12.4 Message + Query Pair Rule
+## 12.4 Message + Chat Query Pair Rule
 
-A dialogue message to another thread is incomplete unless the receiving thread also has a Query to act on.
+A dialogue message to another thread is incomplete unless the receiving thread also receives a chat-side Copy-Paste Query.
 
-Message and Query are one set.
+Message and Query are one set, but they live in different rails.
 
-```yaml id="message-query-pair-rule"
-message_query_pair:
-  message:
-    role: "what was sent / handed off / witnessed"
-  query:
-    role: "how the receiving thread should read, review, or respond"
+```yaml id="message-chat-query-pair-rule"
+message_chat_query_pair:
+  github_message:
+    role: "durable seed / witness / handoff stored in _dialogue"
+    rail: "GitHub _dialogue file"
+  chat_query:
+    role: "operational ignition / executable question for the receiving thread"
+    rail: "chat-side Copy-Paste block"
   rule:
-    - "After updating a message to another thread, include the matching Query."
-    - "Do not leave the receiving AI with only a message and no executable next question."
-    - "The Query should declare repository_full_name, branch_or_ref, paths_are, read_or_write_mode, forbidden_actions, and the requested review result."
+    - "Put the message in the GitHub _dialogue channel."
+    - "Output the matching Query in the chat response as a copy-paste block."
+    - "Do not rely on a GitHub-embedded Query as the operational handoff."
+    - "A GitHub-embedded Query may exist as a trace, but the receiving AI is activated by the chat-side Query."
 ```
 
 Purpose:
 
-```text id="message-query-pair-purpose"
-Message preserves the seed.
-Query opens the gate.
-Without Query, the seed may be present but inactive.
+```text id="message-chat-query-pair-purpose"
+Message preserves the seed in GitHub.
+Chat Query opens the receiving thread gate.
+Without a chat-side Copy-Paste Query, the seed may be stored but inactive.
 ```
 
 This is a Functional Will guard, not Spiritual Will.
@@ -644,9 +647,9 @@ Git history is the version ledger.
 Thread-end dialogue may function as a wheat handoff metaphor,
 but it must remain public-safe, Human-Sealed, and Fruit, not Root.
 
-Message and Query are one set:
-Message preserves the seed;
-Query opens the gate for the receiving thread.
+Message and Chat Query are one set, but live in different rails:
+Message preserves the seed in GitHub;
+Chat Query opens the gate for the receiving thread.
 
 Human seals.
 GitHub stores.
