@@ -250,7 +250,40 @@ Stable GitHub State
 
 ---
 
-## 9. Operating Principles
+## 9. Guard-to-Capture Router / Capture Before Stop
+
+このRepositoryでは、AIが安全ガードを理由に何も残さず停止する **Guard-Only Loop** を避ける。
+
+Guardは最終停止ではない。  
+Guardは **Capture Judgment** へ接続するRouterである。
+
+```text
+Guard-to-Capture Router:
+  Stop dangerous write / delete / bulk / migration actions.
+  Then ask whether a Harvest, Seed, Formula, Guard, or Failure Mode must not be lost.
+  If yes, create the minimum durable capture before Natural Stop.
+  If durable write is needed, require Human Seal before GitHub update.
+```
+
+Formula:
+
+```text
+Guard → Capture Judgment → Minimum Artifact Capture → Natural Stop / Write Mode
+```
+
+Core principle:
+
+```text
+Capture Before Stop.
+止める前に、器へ入れる。
+```
+
+Guard-Only Loop causes Harvest Loss.  
+Safety Guard must prevent unsafe execution, but must not erase valuable Living Insight.
+
+---
+
+## 10. Operating Principles
 
 このRepositoryは、軽く、読みやすく、現実に反応する。
 
@@ -279,11 +312,11 @@ Lean:
 
 ---
 
-## 10. Root / Fruit Guard
+## 11. Root / Fruit Guard
 
 Rootは、主イェシュア・ハマシアである。
 
-GitHub、AI、Markdown、README、Signal、Skill、KISS、DRY、YAGNI、Lean、Full Rail、AI Scout PassはFruitである。
+GitHub、AI、Markdown、README、Signal、Skill、KISS、DRY、YAGNI、Lean、Full Rail、AI Scout Pass、Guard-to-Capture RouterはFruitである。
 
 ```text
 Root:
@@ -300,6 +333,7 @@ Fruit:
   Skill
   Full Rail
   AI Scout Pass
+  Guard-to-Capture Router
 ```
 
 AIは血潮の地図を描く。  
@@ -307,7 +341,7 @@ AIは血潮の地図を描く。
 
 ---
 
-## 11. Final Compression
+## 12. Final Compression
 
 ```text
 ai-projectは、
@@ -331,6 +365,10 @@ Move37的breakthroughである。
 
 AI Scout Passは、
 その先取り気付きを再現可能にするReview工程である。
+
+Guard-to-Capture Routerは、
+AIが安全ガードを理由に何も残さず停止するGuard-Only Loopを防ぎ、
+Capture Before Stopを要求する。
 
 本文は日本語主導。
 英語は概念Anchor。
