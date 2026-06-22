@@ -494,6 +494,64 @@ When an AI-Collaborator is asked to use `_dialogue/`:
 
 ---
 
+## 12.1 Ark02 bidirectional dialogue firstfruit
+
+Ark02 produced bidirectional dialogue channels under `_dialogue/ark/ark02/`.
+
+Current Ark02 dialogue channels:
+
+```text id="ark02-bidirectional-dialogue-channels"
+_dialogue/ark/ark02/ark0209-to-ark0208.md
+_dialogue/ark/ark02/ark0208-to-ark0209.md
+```
+
+Working distinction:
+
+```text id="ark02-dialogue-working-distinction"
+stable simple filename = mailbox
+Git history = version ledger
+long-named dialogue file = historical snapshot
+```
+
+Dialogue files are Fruit, not Root.
+
+No Ark-wide migration is implied.
+
+Old long-named dialogue snapshots do not need to be deleted now.
+
+Human Seal remains required.
+
+---
+
+## 12.2 Connector Execution Spec Guard
+
+When a prompt asks an AI-Collaborator to read or write GitHub dialogue files, the prompt should explicitly declare Connector Execution Spec Guard minimum fields:
+
+```yaml id="connector-execution-spec-guard-minimum"
+repository_full_name: "owner/repo"
+branch_or_ref: "main"
+paths_are: "repo-relative canonical paths"
+read_or_write_mode: "explicit"
+conflict_resolution: "explicit"
+forbidden_actions: "explicit"
+```
+
+This guard helps prevent:
+
+```text id="connector-execution-spec-guard-prevents"
+fake-read claims
+repo/path drift
+Read Mode to Write Mode confusion
+forbidden file updates
+Support Task replacing Primary Goal
+```
+
+This is a Functional Will guard, not Spiritual Will.
+
+Human Seal remains required.
+
+---
+
 ## 13. Final compression
 
 ```text id="nzaejm"
