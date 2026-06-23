@@ -26,15 +26,20 @@ _thread-end/thread-end.md:
   runtime primary / SSOT / gate router
 
 Gate 1:
-  _thread-end/thread-end-gate1-query.md
+  handled inside _thread-end/thread-end.md
+  File Update Lock
+  rail = same_thread
 
 Gate 2:
-  _thread-end/thread-end-gate2-query.md
-  _thread-end/thread-harvest.md
-  _thread-end/thread-handoff.md
+  handled inside _thread-end/thread-end.md
+  harvest vessel = _thread-end/thread-harvest.md
+  handoff builder = _thread-end/thread-handoff.md
+  rail = next_thread
 ```
 
 このfolderの目的は、Future AIがThread-End系Pathを迷わず読めるようにすることである。
+
+Query file layerは削除済みであり、現在のRuntime判断は `_thread-end/thread-end.md` に集約する。
 
 ---
 
@@ -52,7 +57,8 @@ _thread_end_folder:
 ```
 
 これは全Project archiveではない。  
-これはArk01分析本文の置き場でもない。
+これはArk01分析本文の置き場でもない。  
+これは削除済みQuery fileの保管場所でもない。
 
 ---
 
@@ -64,11 +70,11 @@ Thread-End系を扱うFuture AIは、原則として次の順で読む。
 Priority_Read_Order:
   1_folder_front_door: "_thread-end/README.md"
   2_runtime_primary: "_thread-end/thread-end.md"
-  3_gate1_query_if_file_update_lock: "_thread-end/thread-end-gate1-query.md"
-  4_gate2_query_if_thread_harvest: "_thread-end/thread-end-gate2-query.md"
-  5_harvest_vessel_if_gate2: "_thread-end/thread-harvest.md"
-  6_handoff_builder_if_thread_transfer: "_thread-end/thread-handoff.md"
+  3_harvest_vessel_if_gate2: "_thread-end/thread-harvest.md"
+  4_handoff_builder_if_thread_transfer: "_thread-end/thread-handoff.md"
 ```
+
+Gate 1 / Gate 2 の判断は `_thread-end/thread-end.md` が保持する。
 
 ---
 
@@ -83,17 +89,10 @@ thread_end_family:
   runtime_primary:
     path: "_thread-end/thread-end.md"
     role: "SS Runtime Entry Point / Single Front Door / Multi-Gate Router"
-
-  gate_queries:
-    gate1:
-      path: "_thread-end/thread-end-gate1-query.md"
-      role: "Gate 1 / File Update Lock Router"
-      rail: "same_thread"
-
-    gate2:
-      path: "_thread-end/thread-end-gate2-query.md"
-      role: "Gate 2 / Thread Harvest / Handoff Builder Query"
-      rail: "next_thread"
+    owns:
+      - "Gate 1 / File Update Lock"
+      - "Gate 2 / Thread Harvest routing"
+      - "same_thread / next_thread routing"
 
   builders:
     harvest:
@@ -119,10 +118,14 @@ thread_end_family:
 Gate 1:
   File Update Lock.
   Rail = same_thread.
+  Controlled by _thread-end/thread-end.md.
 
 Gate 2:
   Thread Harvest.
   Rail = next_thread.
+  Controlled by _thread-end/thread-end.md.
+  Uses _thread-end/thread-harvest.md when meaning harvest is needed.
+  Uses _thread-end/thread-handoff.md when next-thread handoff is needed.
 ```
 
 Gate 1はFile成果を確定する。  
@@ -176,22 +179,27 @@ s_special/thread-handoff.md
 s_special/thread-harvest.md
 ```
 
-新配置：
+現在配置：
 
-```text id="new-topology"
+```text id="current-topology"
 _thread-end/README.md
 _thread-end/thread-end.md
-_thread-end/thread-end-gate1-query.md
-_thread-end/thread-end-gate2-query.md
 _thread-end/thread-handoff.md
 _thread-end/thread-harvest.md
+```
+
+Retired / deleted layer:
+
+```text id="retired-query-layer"
+_thread-end/thread-end-gate1-query.md
+_thread-end/thread-end-gate2-query.md
 ```
 
 Rule:
 
 ```text id="migration-rule"
 Topology first.
-Link repair in same migration.
+Delete unused layers when they no longer reduce confusion.
 README after topology is true.
 ```
 
@@ -204,7 +212,6 @@ Belongs here:
 ```yaml id="belongs-here"
 belongs_here:
   - "Thread-End runtime primary"
-  - "Gate query files"
   - "Thread Harvest builder/vessel"
   - "Handoff builder"
   - "Thread-End folder README"
@@ -218,6 +225,7 @@ does_not_belong_here:
   - "Mission Card body"
   - "general S_ files"
   - "non-Thread-End s_special files"
+  - "retired Query files unless explicitly revived"
   - "generated handoff.md unless project/runtime explicitly places it here"
   - "generated harvest.md unless explicitly requested"
 ```
@@ -248,6 +256,13 @@ risk_drift_guard:
     avoid:
       - "old ss_super-special/thread-end.mdをcurrent primaryとして読む"
       - "old s_special/thread-end.mdをcurrent primaryとして読む"
+
+  retired_query_confusion:
+    avoid:
+      - "deleted Query filesをrequired readとして扱う"
+      - "Gate判断をQuery fileへ戻す"
+    preserve:
+      - "Gate判断は _thread-end/thread-end.md に集約する"
 
   gate_confusion:
     preserve:
@@ -299,19 +314,24 @@ Runtime Primary:
   _thread-end/thread-end.md.
 
 Gate 1:
-  _thread-end/thread-end-gate1-query.md.
+  handled by _thread-end/thread-end.md.
   same_thread.
   File Update Lock.
 
 Gate 2:
-  _thread-end/thread-end-gate2-query.md.
-  _thread-end/thread-harvest.md.
-  _thread-end/thread-handoff.md.
+  handled by _thread-end/thread-end.md.
   next_thread.
   Thread Harvest.
 
+Child living files:
+  _thread-end/thread-harvest.md.
+  _thread-end/thread-handoff.md.
+
 Generated Product:
   handoff.md.
+
+Retired:
+  Query file layer.
 
 Guard:
   Harvest is material.
