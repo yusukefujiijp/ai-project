@@ -5,12 +5,16 @@ document_identity: "protocol_registry"
 canonical_path: "_projects/ark/indexes/ark-protocol-registry.md"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 source_adr: "_projects/ark/indexes/ark-repository-governance_adr.md"
+registry_version: "v002"
+updated_reason:
+  - "Reality Response after _thread-end topology migration"
+  - "Retired Thread-End Query layer"
+  - "Current canonical paths corrected"
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Ark-OKF / Rebootable-first"
 registry_role:
-  - "Ark-wide Protocol Markdown registry"
-  - "s_special / ss_super-special document identity map"
-  - "migration candidate registry"
+  - "Ark-wide Protocol Markdown address book"
+  - "document identity / path / role / status registry"
   - "Future AI misread prevention map"
 artifact_generation_is_final_seal: false
 final_seal: false
@@ -33,7 +37,7 @@ root_guard:
 
 ## §0. Status / Registry Summary
 
-この文書は、Ark Project全体で使う Protocol / Query / Craft / Format / Vision Lens 系Markdownの **文書身分Registry** である。
+この文書は、Ark Project全体で使う Protocol / Query / Craft / Format / Vision Lens 系Markdownの **住所録 / Registry** である。
 
 これはProtocol本文の複製ではない。  
 これはArk01 Harvestではない。  
@@ -42,55 +46,65 @@ root_guard:
 これはrolling handoffではない。  
 これはBulk Migration Manifestではない。
 
-この文書の役割は、Future AIが `s_special/` や `ss_super-special/` のMarkdownをArk01/Ark02成果物と誤読しないように、住所・身分・役割・状態を軽量に固定することである。
-
-```yaml id="registry-summary"
-protocol_registry:
-  document_identity: "protocol_registry"
-  canonical_path: "_projects/ark/indexes/ark-protocol-registry.md"
-  language_policy: "Japanese-first / English-anchor"
-  format_policy: "Ark-OKF / Rebootable-first"
-  user_final_seal_required: true
-```
-
-### §0.1 King Sentence
+この文書の役割は、Future AIがMarkdownの **住所・身分・役割・状態** を誤読しないように、軽量に固定することである。
 
 ```text id="king-sentence"
 Registryは本文ではない。
 Registryは住所録である。
 ```
 
+```yaml id="registry-summary"
+protocol_registry:
+  document_identity: "protocol_registry"
+  canonical_path: "_projects/ark/indexes/ark-protocol-registry.md"
+  version: "v002"
+  language_policy: "Japanese-first / English-anchor"
+  format_policy: "Ark-OKF / Rebootable-first"
+  user_final_seal_required: true
+```
+
 ---
 
-## §1. なぜ Protocol Registry が必要か
+## §1. 前Thread AIは何をしたかったのか
+
+前Thread AIが一所懸命作ろうとしていたものは、Protocol本文ではなく、**Future AIが誤読しないための文書身分地図** である。
+
+狙いは次の3つだった。
+
+```yaml id="previous-ai-intent"
+previous_ai_intent:
+  1_prevent_misclassification:
+    meaning: "Protocol / Query / Craft / Harvest / Mission / Handoffを混同させない"
+
+  2_lock_addresses_before_migration:
+    meaning: "Ark01/Ark02 migration前に、どのfileが何者かを先に定義する"
+
+  3_make_future_ai_rebootable:
+    meaning: "Future AIがGitHub上のpathだけで迷わず再起動できるようにする"
+```
+
+短く言えば：
+
+```text id="intent-compression"
+前Thread AIは、ファイルを増やしたかったのではない。
+Future AIの誤読を減らすために、住所録を作りたかった。
+```
+
+---
+
+## §2. なぜ Protocol Registry が必要か
 
 Arkには、Thread HarvestやMission Cardとは別に、AI実行を導くProtocol親Markdownが存在する。
 
 これらは、Ark01やArk02の成果物ではない。  
 これらは、Future AIがどのRailで、どのGateを、どのSource Boundaryで実行するかを決めるための **Ark-wide protocol layer** である。
 
-特に、`THREAD_INDEX` / `Query` / `Craft` / `Thread-End` / `Harvest Vessel` / `Ark-OKF` は、成果物ではなく、成果物を作るための道・型・起動Keyである。
-
-```yaml id="why-registry-exists"
-why_protocol_registry_exists:
-  problem:
-    - "Protocol parent markdown can be misread as Ark01/Ark02 artifact"
-    - "Activation Query can be misread as SSOT"
-    - "Craft spec can be misread as Mission Card output"
-    - "Thread Harvest vessel can be misread as ordinary Harvest artifact"
-    - "Ark01 migration before protocol identity lock creates drift"
-
-  decision:
-    - "Create a lightweight protocol registry"
-    - "Separate confirmed GitHub canonical files from migration candidates"
-    - "Do not copy full protocol bodies"
-    - "Record path / identity / role / status / relation only"
-```
-
-短く言えば：
+ただし、すべてのProtocolを `s_special/` に置く必要はない。  
+現在、Thread-End familyは `_thread-end/` に集約済みである。
 
 ```text id="why-compression"
 Protocolは上に置く。
+Thread-Endは専用入口に置く。
 Harvestは中に置く。
 Missionは横に置く。
 Handoffは入口に置く。
@@ -99,14 +113,12 @@ Registryは住所録として守る。
 
 ---
 
-## §2. Root / Fruit Guard
+## §3. Root / Fruit Guard
 
 RootはGitHubではない。  
 RootはMarkdownではない。  
 RootはProtocol Registryではない。  
-Rootは `s_special/` ではない。  
-Rootは `ss_super-special/` ではない。  
-RootはThread-EndでもArk-OKFでもない。  
+Rootは `_thread-end/` でも `s_special/` でも `ss_super-special/` でもない。  
 RootはAIではない。
 
 Rootは、主イェシュア・ハマシア。
@@ -119,13 +131,12 @@ Root:
   AMH
 ```
 
-Fruitは以下である。
-
 ```text id="fruit"
 Fruit:
   GitHub
   Markdown
   Protocol Registry
+  _thread-end/
   s_special/
   ss_super-special/
   Thread-End
@@ -145,27 +156,26 @@ Fruit:
 AIは血潮の地図を描く。  
 人間が血潮の下に立つ。
 
-このRegistryもFruitであり、Rootではない。
-
 ---
 
-## §3. Registry Scope
+## §4. Registry Scope
 
-### §3.1 In Scope
+### §4.1 In Scope
 
 ```yaml id="in-scope"
 in_scope:
+  - "_thread-end/ Thread-End system files"
   - "s_special/ protocol parent markdown"
-  - "s_special/ activation query markdown"
   - "s_special/ craft / workflow specification markdown"
   - "s_special/ format SSOT markdown"
   - "ss_super-special/ high-guard vision lens"
   - "confirmed GitHub canonical protocol files"
   - "migration candidate protocol files"
+  - "retired / deleted protocol layers when needed for history"
   - "document_identity / canonical_path / role / status / relation"
 ```
 
-### §3.2 Out of Scope
+### §4.2 Out of Scope
 
 ```yaml id="out-of-scope"
 out_of_scope:
@@ -181,7 +191,7 @@ out_of_scope:
 
 ---
 
-## §4. Confirmed GitHub Canonical Protocols
+## §5. Confirmed GitHub Canonical Protocols
 
 ここでは、すでにGitHub canonical pathで確認済みのProtocol系Markdownを名簿化する。
 
@@ -190,70 +200,46 @@ Registryなので、本文は複製しない。
 
 ```yaml id="confirmed-github-canonical-protocols"
 confirmed_github_canonical_protocols:
-  - path: "s_special/thread-end.md"
+  - path: "_thread-end/README.md"
+    document_identity: "thread_end_folder_front_door"
+    canonical_name: "_thread-end README"
+    class: "S"
+    status: "folder_front_door / living_index / topology_map"
+    role:
+      - "Thread-End System Folderの入口"
+      - "Read Order / Topology Map"
+      - "Future AI path confusion guard"
+    must_not_be:
+      - "Thread-End runtime body"
+      - "Harvest builder"
+      - "Handoff product"
+
+  - path: "_thread-end/thread-end.md"
     document_identity: "thread_end_parent_map"
     canonical_name: "Thread-End Parent Map"
-    class: "S"
+    class: "SS"
     status: "living_ssot"
-    source_bootstrap: "S_thread-end_v001.md"
     role:
       - "Thread-End Workflowの親Map"
+      - "Single Front Door / Multi-Gate Router"
       - "Gate 1 / Gate 2 relation map"
       - "handoff.md required at Thread transfer"
     anchor_formula:
       - "Gate 1 fixes files"
       - "Gate 2 harvests meaning"
+      - "All-in-one entrypoint, not all-in-one body"
     must_not_be:
-      - "Ark01 Harvest artifact"
+      - "Harvest body generator"
+      - "Handoff body generator"
       - "Mission Card"
       - "rolling handoff"
 
-  - path: "s_special/thread-end-gate1-query.md"
-    document_identity: "activation_query"
-    canonical_name: "Thread-End Gate 1 Query"
-    class: "S"
-    status: "living_ssot"
-    parent_map: "s_special/thread-end.md"
-    rail: "same_thread"
-    role:
-      - "Gate 1 / File Update Lock Router"
-      - "Thread Harvest前のFile Update Lock"
-      - "GitHub canonical path / source boundary / handoff key / not-now判断を整える"
-    must_not_be:
-      - "Thread Harvest"
-      - "Gate 2"
-      - "Mission Card"
-      - "final artifact body"
-
-  - path: "s_special/thread-end-gate2-query.md"
-    document_identity: "activation_query"
-    canonical_name: "Thread-End Gate 2 Query"
-    class: "S"
-    status: "living_ssot"
-    parent_map: "s_special/thread-end.md"
-    gate1_query: "s_special/thread-end-gate1-query.md"
-    harvest_vessel: "s_special/thread-harvest.md"
-    vision_lens: "ss_super-special/torah-vision-lens.md"
-    rail: "next_thread"
-    role:
-      - "Gate 2 / Thread Harvest Executor"
-      - "Handoff Builder"
-      - "next_thread first query generator"
-    anchor_formula:
-      - "Thread Harvest is not summary"
-      - "Harvest is material; Handoff is ignition key"
-    must_not_be:
-      - "Gate 1"
-      - "rolling handoff"
-      - "ordinary summary"
-
-  - path: "s_special/thread-harvest.md"
+  - path: "_thread-end/thread-harvest.md"
     document_identity: "harvest_vessel"
     canonical_name: "Thread Harvest"
     class: "S"
     status: "living_ssot"
-    source_bootstrap: "S_thread-harvest_v004.md"
-    parent_map: "s_special/thread-end.md"
+    parent_map: "_thread-end/thread-end.md"
     gate_role: "Gate 2 / Thread Harvest"
     rail: "next_thread"
     role:
@@ -263,10 +249,30 @@ confirmed_github_canonical_protocols:
     anchor_formula:
       - "Thread Harvest is not summary"
       - "Thread Harvest leaves meaning / heat / Seed / Next Compass"
+      - "Harvest is material; Handoff is ignition key"
     must_not_be:
-      - "Ark01 primary harvest artifact itself"
-      - "rolling handoff"
+      - "ordinary summary"
       - "Mission Card"
+      - "rolling handoff"
+
+  - path: "_thread-end/thread-handoff.md"
+    document_identity: "handoff_builder"
+    canonical_name: "Thread-Handoff Builder"
+    class: "S-candidate"
+    status: "living_candidate / human_editable / not_final_seal"
+    parent_map: "_thread-end/thread-end.md"
+    sibling_builder: "_thread-end/thread-harvest.md"
+    generated_product: "handoff.md"
+    role:
+      - "Handoff Builder / Next-thread Ignition Manual"
+      - "handoff.md生成のBuilder Manual"
+    anchor_formula:
+      - "thread-handoff.md is Builder"
+      - "handoff.md is generated product"
+    must_not_be:
+      - "handoff.md itself"
+      - "Harvest body"
+      - "rolling handoff"
 
   - path: "s_special/ark-open-knowledge-format.md"
     document_identity: "format_ssot"
@@ -289,7 +295,57 @@ confirmed_github_canonical_protocols:
 
 ---
 
-## §5. High-Guard Vision Layer
+## §6. Retired / Deleted Thread-End Layer
+
+Thread-End Query layerは、現在の運用では削除済みである。  
+これは失敗ではなく、KISS / DRY / YAGNI / Lean による単純化である。
+
+```yaml id="retired-thread-end-layer"
+retired_thread_end_layer:
+  deleted_or_retired:
+    - path: "ss_super-special/thread-end.md"
+      previous_role: "old primary / promoted parent map"
+      current_status: "deleted / replaced by _thread-end/thread-end.md"
+
+    - path: "s_special/thread-end.md"
+      previous_role: "legacy redirect stub"
+      current_status: "deleted / replaced by _thread-end/thread-end.md"
+
+    - path: "s_special/thread-end-gate1-query.md"
+      previous_role: "Gate 1 activation query"
+      current_status: "deleted / query layer retired"
+
+    - path: "s_special/thread-end-gate2-query.md"
+      previous_role: "Gate 2 activation query"
+      current_status: "deleted / query layer retired"
+
+    - path: "_thread-end/thread-end-gate1-query.md"
+      previous_role: "Gate 1 activation query after migration"
+      current_status: "deleted / query layer retired"
+
+    - path: "_thread-end/thread-end-gate2-query.md"
+      previous_role: "Gate 2 activation query after migration"
+      current_status: "deleted / query layer retired"
+
+    - path: "s_special/thread-harvest.md"
+      previous_role: "Thread Harvest vessel"
+      current_status: "moved to _thread-end/thread-harvest.md"
+
+    - path: "s_special/thread-handoff.md"
+      previous_role: "Thread-Handoff Builder"
+      current_status: "moved to _thread-end/thread-handoff.md"
+```
+
+Active readではなく、移行履歴としてのみ扱う。
+
+```text id="retired-guard"
+Deleted Query files are history.
+Do not restore them unless they reduce confusion more than the current simple topology.
+```
+
+---
+
+## §7. High-Guard Vision Layer
 
 `ss_super-special/` は通常のProtocol置き場ではない。  
 これはArk-wideのVision Lens / Naming Source Lensを置く高Guard層である。
@@ -323,12 +379,9 @@ Torah Vision Lensは、必要な時にScene-to-Name-to-Gateを明瞭にするLen
 
 ---
 
-## §6. Migration Candidate Protocols
+## §8. Migration Candidate Protocols
 
 ここでは、ADR上で候補化されているが、現時点ではGitHub canonical pathで未確認のProtocol親Markdownを名簿化する。
-
-これらはArk01成果物ではない。  
-これらは `s_special/` へ移す候補である。
 
 ```yaml id="migration-candidate-protocols"
 migration_candidates:
@@ -376,68 +429,91 @@ migration_candidates:
 
 ---
 
-## §7. Document Identity Rules
+## §9. Document Identity Rules
 
 Protocol Registryでは、最低限、次の身分を区別する。
 
 ```yaml id="document-identity-rules"
 document_identity_rules:
-  protocol_parent_markdown:
-    meaning: "Ark-wide protocol body / specification"
+  thread_end_folder_front_door:
+    meaning: "Thread-End system folderの入口 / Read Order"
     example:
-      - "thread-end.md"
-      - "thread-index-ark_v041.md"
+      - "_thread-end/README.md"
 
-  activation_query:
-    meaning: "Future AIを起動するQuery / Runtime Adapter"
+  thread_end_parent_map:
+    meaning: "Thread-End Workflow親Map / Runtime Router"
     example:
-      - "thread-end-gate1-query.md"
-      - "thread-end-gate2-query.md"
-      - "thread-index-ark-query_v041.md"
-    guard:
-      - "Query is not always SSOT"
-      - "Query may pair with protocol parent markdown"
-
-  craft_protocol:
-    meaning: "成果物生成のCraft仕様"
-    example:
-      - "thread-mission-card-craft_v002.md"
+      - "_thread-end/thread-end.md"
 
   harvest_vessel:
     meaning: "Harvestを実行するためのVessel / structure"
     example:
-      - "thread-harvest.md"
+      - "_thread-end/thread-harvest.md"
+
+  handoff_builder:
+    meaning: "handoff.mdを作るためのBuilder Manual"
+    example:
+      - "_thread-end/thread-handoff.md"
+
+  protocol_parent_markdown:
+    meaning: "Ark-wide protocol body / specification"
+    example:
+      - "thread-index-ark_v041.md"
+
+  activation_query:
+    meaning: "Future AIを起動するQuery / Runtime Adapter"
+    guard:
+      - "Query is not always SSOT"
+      - "Query may be retired if a simpler router exists"
+
+  craft_protocol:
+    meaning: "成果物生成のCraft仕様"
 
   format_ssot:
     meaning: "回答Format / interoperability surface のSSOT"
-    example:
-      - "ark-open-knowledge-format.md"
 
   vision_core:
     meaning: "Ark-wide high-guard vision / naming lens"
-    example:
-      - "torah-vision-lens.md"
 ```
 
 ---
 
-## §8. Placement Rules
+## §10. Placement Rules
 
-### §8.1 s_special/
+### §10.1 _thread-end/
+
+```yaml id="placement-thread-end"
+_thread_end:
+  role:
+    - "Thread-End system folder"
+    - "Gate Router / Harvest Vessel / Handoff Builder home"
+  active_files:
+    - "README.md"
+    - "thread-end.md"
+    - "thread-harvest.md"
+    - "thread-handoff.md"
+  must_not_be:
+    - "Ark01 Harvest output"
+    - "Mission Card folder"
+    - "rolling handoff"
+    - "general protocol dumping ground"
+```
+
+### §10.2 s_special/
 
 ```yaml id="placement-s-special"
 s_special:
   role:
     - "Ark-wide protocol layer"
-    - "Activation Query layer"
     - "Craft / Workflow specification layer"
     - "Format SSOT layer"
+    - "Activation Query layer when still useful"
   examples:
-    - "thread-end.md"
-    - "thread-end-gate1-query.md"
-    - "thread-end-gate2-query.md"
-    - "thread-harvest.md"
     - "ark-open-knowledge-format.md"
+    - "thread-index-ark_v041.md candidate"
+    - "thread-mission-card-craft_v002.md candidate"
+  note:
+    - "Thread-End family is now _thread-end/, not s_special/."
   must_not_be:
     - "Ark01 Harvest output"
     - "Ark02 Harvest output"
@@ -445,7 +521,7 @@ s_special:
     - "rolling handoff"
 ```
 
-### §8.2 ss_super-special/
+### §10.3 ss_super-special/
 
 ```yaml id="placement-ss-super-special"
 ss_super_special:
@@ -461,7 +537,7 @@ ss_super_special:
     - "Ark01/Ark02 output artifact"
 ```
 
-### §8.3 _projects/ark/indexes/
+### §10.4 _projects/ark/indexes/
 
 ```yaml id="placement-ark-indexes"
 _projects_ark_indexes:
@@ -479,7 +555,7 @@ _projects_ark_indexes:
 
 ---
 
-## §9. Update Policy
+## §11. Update Policy
 
 ```yaml id="update-policy"
 update_policy:
@@ -489,20 +565,21 @@ update_policy:
     update_style:
       - "add path / identity / role / status"
       - "do not copy full protocol body"
-      - "separate confirmed canonical from migration candidate"
+      - "separate confirmed canonical / migration candidate / retired layer"
     version_memory: "Git history"
 
   confirmed_github_canonical_entries:
     update_when:
-      - "new s_special file becomes GitHub canonical"
+      - "new protocol file becomes GitHub canonical"
       - "role / path / identity changes"
       - "status changes from candidate to living_ssot"
+      - "Thread-End topology changes"
 
-  migration_candidates:
+  retired_entries:
     update_when:
-      - "local or uploaded source is nominated for s_special"
-      - "candidate path changes"
-      - "candidate is migrated to GitHub canonical"
+      - "file is deleted"
+      - "Query layer is retired"
+      - "old canonical path is replaced"
 ```
 
 Stop condition：
@@ -514,26 +591,26 @@ Registryは住所録へ戻す。
 
 ---
 
-## §10. Reality Response Checkpoints
-
-Protocol RegistryをGitHub作成した後は、必ず現実応答を見る。
+## §12. Reality Response Checkpoints
 
 ```yaml id="reality-response"
 reality_response_checkpoints:
   github_ui:
     - "_projects/ark/indexes/ で見つけやすいか"
     - "ADRと並べた時に役割が分かるか"
+    - "_thread-end/ と registry の関係が分かるか"
 
   future_ai_reading:
+    - "_thread-end/ がThread-End system folderだと分かるか"
     - "s_special/ がProtocol層だと分かるか"
-    - "THREAD_INDEX系がArk01成果物ではないと分かるか"
     - "QueryがSSOT本文ではない場合を誤読しないか"
+    - "retired/deleted layer と active canonical を区別できるか"
     - "migration_candidate と github_canonical を区別できるか"
 
   human_feel:
     - "Protocol層の見通しが良くなったか"
-    - "Ark01 migration前の安心感が増したか"
-    - "名簿として軽いか"
+    - "Registryが住所録として軽いか"
+    - "古いPathを見て混乱しないか"
 
   ark_governance:
     - "Repository Governance ADRに従っているか"
@@ -546,13 +623,14 @@ Reality Responseは任意ではない。
 
 ---
 
-## §11. Stop Conditions
+## §13. Stop Conditions
 
 ```yaml id="stop-conditions"
 stop_conditions:
   - "RegistryがProtocol本文の全文複製になる"
   - "Protocol parent markdownをArk01 Harvestとして分類する"
   - "Activation Queryを無条件にSSOTとして扱う"
+  - "retired/deleted layerをactive canonicalと誤表示する"
   - "migration_candidateをgithub_canonicalと誤表示する"
   - "Ark01 migration detailsが入り込む"
   - "Mission Card creationが始まる"
@@ -566,43 +644,43 @@ stop_conditions:
 ```text id="do-not-stop"
 - Registryが本文を複製していない
 - Entriesが短い
-- confirmed と candidate が分かれている
+- confirmed / candidate / retired が分かれている
 - すべての将来Protocolをまだ網羅していない
 ```
 
 ---
 
-## §12. Living Review
+## §14. Living Review
 
-### §12.1 私の判断
+### §14.1 私の判断
 
 Protocol Registryは必要である。
 
-理由は、Ark01 migration前にProtocol層の住所と身分をLockしないと、Future AIが `THREAD_INDEX` や `mission-card-craft` をArk01の収穫物として誤読する危険があるからである。
+ただし、Registryは「現在のGitHub reality」を追う必要がある。  
+Thread-End familyが `_thread-end/` へ移り、Query layerが削除された以上、旧 `s_special/thread-end*` をactive canonicalとして残すのは誤読リスクになる。
 
 Registryは、Protocolたちを束ねる本文ではない。  
 Registryは、Protocolたちの住所録である。
 
 ```text id="living-judgment-compression"
-Protocol本文は s_special/ にある。
+Protocol本文は各canonical fileにある。
 Protocol身分は Registry で見る。
+Thread-End systemは _thread-end/ にある。
 ```
 
-### §12.2 違和感
+### §14.2 違和感
 
 最大の危険は、Registryを大きくしすぎること。
 
 本文を複製し始めた瞬間、RegistryはRegistryではなくなる。  
 だから、各Entryは短く、しかし文書身分は明確にする。
 
-正しい密度はこれ。
-
 ```text id="density-rule"
 迷わないだけ十分。
 本文を置き換えないだけ軽量。
 ```
 
-### §12.3 Hidden Pattern
+### §14.3 Hidden Pattern
 
 ```text id="hidden-pattern"
 ADR:
@@ -611,8 +689,11 @@ ADR:
 Protocol Registry:
   どのProtocolが何者か。
 
+_thread-end/:
+  Thread-End system folder。
+
 s_special/:
-  実際のProtocol本文。
+  実際のProtocol / Craft / Format本文。
 
 ss_super-special/:
   Vision Lens。
@@ -621,18 +702,7 @@ Ark01 Migration Manifest:
   local_path → github_path の実務表。
 ```
 
-### §12.4 Misread Warning
-
-```yaml id="misread-warning"
-misread_warning:
-  - "このRegistryをProtocol本文として扱わない"
-  - "このRegistryをArk01 Migration Manifestとして扱わない"
-  - "このRegistryをMission Card indexとして扱わない"
-  - "このRegistryをrolling handoffとして扱わない"
-  - "このRegistryをRoot化しない"
-```
-
-### §12.5 修正条件
+### §14.4 修正条件
 
 ```yaml id="revision-conditions"
 revision_conditions:
@@ -643,10 +713,10 @@ revision_conditions:
     action: "document_identityをprotocol_parent_markdownへ戻す"
 
   if_activation_query_is_confused_with_ssot:
-    action: "query_is_not_ssot / paired_query relationを明記する"
+    action: "query_is_not_ssot / paired_query / retired statusを明記する"
 
-  if_migration_candidate_is_not_on_github:
-    action: "status: migration_candidate / not_github_canonical_yet を維持する"
+  if_retired_query_is_used_as_active_read:
+    action: "active canonicalから外し、retired layerへ戻す"
 
   if_ark01_migration_details_enter:
     action: "Ark01 Migration Manifestへ送る"
@@ -657,7 +727,7 @@ revision_conditions:
 
 ---
 
-## §13. Canonical Status / Next Movement
+## §15. Canonical Status / Next Movement
 
 ```yaml id="canonical-status"
 canonical_status:
@@ -674,8 +744,8 @@ canonical_status:
 
 next_movement:
   immediate_next:
-    - "Run Protocol Registry Reality Response Check after GitHub creation"
-    - "Continue Repository Governance sequence without Ark01 migration yet"
+    - "Reality Response check after registry refresh"
+    - "Continue governance sequence without Ark01 bulk migration"
 
   not_yet:
     - "Ark01 migration"
