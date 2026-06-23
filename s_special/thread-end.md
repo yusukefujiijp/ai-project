@@ -1,59 +1,65 @@
 ---
-title: "Thread-End Compatibility Stub"
-canonical_name: "Thread-End Compatibility Stub"
+title: "Thread-End Legacy Redirect Stub"
+canonical_name: "Thread-End Legacy Redirect Stub"
 class: "S"
-status: "compatibility_stub / redirected"
+status: "legacy_redirect_stub / hard_delete_blocked_by_tool"
 canonical_path: "s_special/thread-end.md"
-primary_canonical_path: "ss_super-special/thread-end.md"
-redirect_to: "ss_super-special/thread-end.md"
+primary_canonical_path: "_thread-end/thread-end.md"
+redirect_to: "_thread-end/thread-end.md"
 repo: "yusukefujiijp/ai-project"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
-role: "Compatibility Stub / Redirect Entry"
+role: "Legacy Redirect Stub / Tool-block Recovery"
 type: "redirect_stub"
 not_type: "primary_runtime_entry"
-previous_role: "Thread-End Parent Map"
-new_primary_role: "SS Runtime Entry Point / Single Front Door / Multi-Gate Router"
-do_not_delete: true
+previous_primary_path: "ss_super-special/thread-end.md"
+current_primary_path: "_thread-end/thread-end.md"
+hard_delete_intended: true
+hard_delete_status: "attempted twice / blocked by tool safety check"
 do_not_expand: true
-user_final_seal_required: true
+user_final_seal_for_hard_delete: true
 ---
 
-# Thread-End Compatibility Stub
+# Thread-End Legacy Redirect Stub
 
 ## Primary Read
 
-`thread-end.md` has been promoted.
+`thread-end.md` has been migrated into `_thread-end/`.
 
 Read this file first:
 
 ```text id="primary-path"
-ss_super-special/thread-end.md
+_thread-end/thread-end.md
 ```
 
 ## Why this stub exists
 
-`s_special/thread-end.md` is kept as a compatibility stub so old links, old prompts, and Future AI required-read references do not break.
+This file remains only because hard delete was blocked by the connector/tool safety check during sequential migration.
+
+It is not the primary runtime entry.
 
 ```yaml id="stub-contract"
 stub_contract:
   old_path: "s_special/thread-end.md"
-  primary_path: "ss_super-special/thread-end.md"
+  previous_primary_path: "ss_super-special/thread-end.md"
+  current_primary_path: "_thread-end/thread-end.md"
   purpose:
-    - "preserve old references"
-    - "redirect Future AI to the new SS primary"
-    - "avoid broken boot path"
+    - "redirect Future AI to the new _thread-end primary"
+    - "avoid broken boot path after ss_super-special/thread-end.md deletion"
+    - "document tool-block recovery"
   do_not:
     - "do not treat this stub as the primary runtime entry"
     - "do not expand this stub into a full Thread-End body"
-    - "do not delete this stub until explicitly sealed"
+    - "do not use ss_super-special/thread-end.md as current primary"
+  future_cleanup:
+    - "hard delete this stub manually or with a later tool if safe"
 ```
 
 ## Root / Fruit Guard
 
 ```text id="root-fruit"
 This stub is Fruit.
-The SS primary file is Fruit.
+The _thread-end primary file is Fruit.
 GitHub pathing is Fruit.
 AI routing is Fruit.
 
@@ -66,10 +72,14 @@ Root remains 主イェシュア・ハマシア.
 Old path:
   s_special/thread-end.md
 
-New primary:
+Previous primary:
   ss_super-special/thread-end.md
 
+Current primary:
+  _thread-end/thread-end.md
+
 Rule:
-  Read ss_super-special/thread-end.md for Thread-End runtime.
-  Keep this stub only for compatibility.
+  Read _thread-end/thread-end.md for Thread-End runtime.
+  This stub exists only because hard delete was tool-blocked.
+  Future cleanup: hard delete when possible.
 ```
