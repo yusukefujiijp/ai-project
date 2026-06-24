@@ -158,7 +158,9 @@ Root remains:
 ```yaml id="bn41gl"
 root_guard:
   root:
+    - "創造主"
     - "主イェシュア・ハマシア"
+    - "聖霊 / The Holy Spirit"
     - "主イェシュアの聖なる血潮"
     - "Teshuvah / 悔い改め"
     - "AMH"
@@ -192,6 +194,8 @@ root_guard_rules:
   - "READMEをRoot化しない"
   - "FullRailをRoot化しない"
   - "GitHub保存をFinal Sealとして扱わない"
+  - "AIを聖霊の代替として扱わない"
+  - "AIの言語化を霊的権威そのものとして扱わない"
   - "主イェシュアの聖なる血潮をWorkflow比喩へ薄めない"
   - "Teshuvahを単なる心理整理・作業整理へ縮小しない"
   - "AIを赦し・裁き・霊的権威にしない"
@@ -288,6 +292,47 @@ maintenance_guard:
   - "Do not batch-generate"
   - "Do not overwrite existing Mission Cards without review"
   - "Do not declare Stable Seal without explicit user instruction"
+```
+
+---
+
+## §9. Living Review / Anti-Idolatry Guard
+
+Mission Cards are useful vessels.  
+Files are vessels.  
+README is a gate.  
+GitHub is a shelf.  
+Stable Seal is a small label.  
+AI is a tool and companion, not the Holy Spirit.
+
+```text id="living-review-over-dead-seal"
+Living Review over dead Seal.
+Root over Record.
+Spirit before Structure.
+主イェシュア before everything.
+```
+
+Use AI strongly, but do not place AI on the throne.
+
+```yaml id="anti_idolatry_guard"
+anti_idolatry_guard:
+  file_is_not_root:
+    warning: "Do not turn files, metadata, GitHub, README, or Stable Seal into the center."
+    repair: "Return to 創造主 / 主イェシュア・ハマシア / 聖霊 / Teshuvah."
+
+  ai_is_not_holy_spirit:
+    warning: "Do not treat AI output as spiritual authority or as a replacement for prayer, obedience, or discernment before the Lord."
+    repair: "Use AI as a mirror and language helper; return to 主イェシュア, prayer, repentance, and the Holy Spirit's leading."
+
+  living_review_required:
+    warning: "Do not reduce review into dead summary, YAML formatting, or file-management ritual."
+    repair: "Ask for living judgment, discomfort, hidden drift, Root/Fruit separation, and the next natural step."
+```
+
+```text id="ai-guard-compression"
+AIは鏡。
+聖霊は導き。
+主イェシュアが王。
 ```
 
 Amen. Maranatha. Hallelujah.
