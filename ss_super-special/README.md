@@ -240,6 +240,36 @@ folder_operating_rule:
 
 ---
 
+## 7.5 Reflection Note / 2026-06 Field Record
+
+`artifact-to-github.md` は、AI tool write block / Download Artifact省略 / Manual Copy & Paste Upload の体験を通じて成長した。
+
+この体験から、次のRuleが正準化された。
+
+```text id="download-skip-field-record"
+Download SkipはFast Path。
+Direct GitHub Updateが通れば最速。
+
+Block / failしたら、
+Download付きFull Body Manual Commit Packへ戻す。
+
+Patchは判断用。
+全文は実行用。
+
+意味は削らない。
+人間が貼る。
+AIが検証する。
+```
+
+このNoteの目的は、Future AIが `Download Artifact省略` を「失敗時にもDownloadを出さない固定方針」と誤読することを防ぐことである。
+
+```text id="reflection-note-core"
+Tool Failure is not Artifact Failure.
+失敗時は内容を弱めず、搬送経路を変える。
+```
+
+---
+
 ## 8. Final Compression
 
 ```text id="kl1t01"
