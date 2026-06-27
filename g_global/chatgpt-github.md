@@ -2,10 +2,12 @@
 title: "ChatGPT-GitHub Bridge Guide"
 canonical_name: "ChatGPT-GitHub Bridge Guide"
 class: "G"
-status: "living_ssot"
+status: "download-ready / human-commit"
 canonical_path: "g_global/chatgpt-github.md"
 repo: "yusukefujiijp/ai-project"
 version_model: "frontmatter + git commit history"
+style_seed: "Commented Programming-Like Markdown v2 / Integrated Comment-Block Pair"
+style_definition: "Comment preserves meaning. Programming-Like Block fixes action. Markdown keeps one SSOT."
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Japanese-first OKF / Open Knowledge Format"
 root: "主イェシュア・ハマシア"
@@ -22,13 +24,40 @@ core_formula:
 
 ## 0. Current Coordinate / 現在座標
 
-This file is the ChatGPT-specific GitHub Policy Guide and current primary reference for ChatGPT runtime.
+### Comment
 
-Current Active GitHub Topology:
+このFileは、ChatGPT runtimeにおけるGitHub運用のPolicy Guideである。
+
+現在の盤面では、GitHub系Active Topologyは三層に分かれている。
+
+```text
+Load Router -> Policy Guide -> Activation Skill
+```
+
+Ark圧縮：
+
+```text
+S routes.
+G governs.
+Skill executes.
+Reality confirms.
+```
+
+このFileはRouterではない。  
+このFileはHandoff Skillでもない。  
+このFileは、ChatGPT-specific GitHub Policy Guideである。
+
+### Programming-Like Block
 
 ```yaml
 current_coordinate:
-  active_layer:
+  project: "Ark Project / GitHub Bridge"
+  file:
+    path: "g_global/chatgpt-github.md"
+    role: "ChatGPT-specific GitHub Policy Guide / current_primary_reference"
+    status: "download-ready / human-commit"
+
+  active_topology:
     load_router:
       path: "s_special/ai-github.md"
       role: "AI-agnostic Meta Router"
@@ -37,16 +66,12 @@ current_coordinate:
     policy_guide:
       path: "g_global/chatgpt-github.md"
       role: "ChatGPT-specific GitHub Policy Guide / current_primary_reference"
-      status: "active / full-body replacement target"
+      status: "current target"
 
     shared_activation_skill:
       path: "_skill/skills/github-handoff.md"
       role: "Download / Structured ZIP / Manual Upload / Manual Commit / Reality Review Skill"
-      status: "PASS / committed / needs Full-Body Rule mirror check"
-
-  architecture:
-    - "Load Router -> Policy Guide -> Activation Skill"
-    - "S routes. G governs. Skill executes. Reality confirms."
+      status: "PASS / committed"
 
   current_rule:
     - "This guide governs ChatGPT-specific GitHub policy."
@@ -57,9 +82,63 @@ current_coordinate:
     - "Patch is for judgment. Full body is for action."
 ```
 
-## 0.1 Active GitHub Load Order Pointer
+---
 
-For GitHub-related work, use the current Active GitHub Topology:
+## 1. Comment: Definition / 定義
+
+`g_global/chatgpt-github.md` は、ChatGPTと人間がGitHub上でLiving Markdownを扱うためのBridge Guideである。
+
+目的は、Plan / Preview / Human Seal / Commit / Manual Commit / Reality Review を、安全かつ速く回すことである。
+
+このGuideは、GitHub作業をAIが勝手に自動実行するためのFileではない。
+
+```text
+Semi-automation, not autopilot.
+```
+
+AIは下書きする。  
+人間がSealする。  
+GitHubが保存する。  
+Realityが確認する。
+
+### Programming-Like Block
+
+```yaml
+file_definition:
+  path: "g_global/chatgpt-github.md"
+  type: "G-class Guide"
+  role:
+    - "ChatGPT-GitHub Bridge Guide"
+    - "ChatGPT-specific GitHub Policy Guide"
+    - "Human Seal / Commit Trigger / Full Rail / Manual Commit Pack の運用SSOT"
+
+  not_role:
+    - "Not a direct GitHub write permission slip"
+    - "Not an autopilot execution file"
+    - "Not a replacement for s_special/ai-github.md"
+    - "Not a replacement for _skill/skills/github-handoff.md"
+
+  core_formula:
+    - "AI drafts."
+    - "Human seals."
+    - "GitHub stores."
+    - "Reality confirms."
+```
+
+---
+
+## 2. Comment: Active GitHub Topology
+
+GitHub系のActive Topologyは、Router / Guide / Skill の三層で読む。
+
+`ai-github.md` は入口を判断する。  
+`chatgpt-github.md` はChatGPT-specific policyを統治する。  
+`github-handoff.md` はHandoff実行を安定化する。
+
+このGuideは、RouterやSkillの内容を吸収しない。  
+必要な時にPointerとして参照する。
+
+### Programming-Like Block
 
 ```yaml
 active_github_topology:
@@ -71,13 +150,18 @@ active_github_topology:
       - "load order is unclear"
       - "runtime-specific GitHub routing is needed"
 
-  current_policy_guide:
+  policy_guide:
     path: "g_global/chatgpt-github.md"
     role: "ChatGPT-specific GitHub Policy Guide / current_primary_reference"
+    use_when:
+      - "ChatGPT runtime needs GitHub policy"
+      - "Commit Gate / Human Seal rules are needed"
+      - "Full Body vs Patch policy is needed"
+      - "GitHub canonical policy is needed"
 
   shared_activation_skill:
     path: "_skill/skills/github-handoff.md"
-    role: "Download / Structured ZIP / Manual Upload / Manual Commit / Reality Review Skill"
+    role: "GitHub Handoff Skill"
     use_when:
       - "download link needed"
       - "structured ZIP needed"
@@ -85,101 +169,17 @@ active_github_topology:
       - "manual commit pack needed"
       - "post-commit Reality Review needed"
       - "transport integrity check needed"
-```
 
-Core rule:
-
-```text
-Router routes.
-Guide governs.
-Skill executes.
-Reality confirms.
-```
-
-Do not duplicate the Router or Skill contents here.  
-This guide points to them and preserves ChatGPT-specific policy.
-
----
-
-## 1. Executive Compression / 中核圧縮
-
-このFileは、`yusukefujiijp/ai-project` における **ChatGPT-GitHub Bridge** の正準Guideである。
-
-目的は、ChatGPTと人間がGitHub上でLiving Markdownを扱う時に、Plan / Preview / Human Seal / Commit / Reality Review / Human Direct Commit Fallback を安全かつ速く回すことである。
-
-```text
-AI drafts.
-Human seals.
-GitHub stores.
-Reality confirms.
-```
-
-日本語：
-
-```text
-AIが下書きする。
-人間がSealする。
-GitHubが保存する。
-現実が確認する。
-```
-
-このGuideの中心Guard：
-
-```text
-Plan is not Commit.
-Preview is not Commit.
-Human Seal is Commit Gate.
-```
-
-今回追加されたMove37的突破：
-
-```text
-Tool block is not workflow block.
-Do not degrade original intended content.
-Try original once.
-If blocked, change transport.
-Human Direct Commit.
-AI verifies.
-```
-
-日本語：
-
-```text
-Tool writeが止まってもWorkflowは止まらない。
-本来版を劣化させない。
-一回は本来版で試す。
-ブロックされたら搬送経路を変える。
-人間がDirect Commitする。
-AIがVerificationする。
+  boundary_rule:
+    - "Router routes."
+    - "Guide governs."
+    - "Skill executes."
+    - "Reality confirms."
 ```
 
 ---
 
-## 2. What this file is / このFileの役割
-
-`g_global/chatgpt-github.md` は、ChatGPT-GitHub協働のG-class Guideである。
-
-```yaml
-this_file:
-  role:
-    - "ChatGPT-GitHub Bridge Guide"
-    - "GitHub運用のG-class Guide"
-    - "Human Seal / Commit Trigger / Full Rail / Manual Commit Pack の運用SSOT"
-  canonical_path: "g_global/chatgpt-github.md"
-  repo: "yusukefujiijp/ai-project"
-```
-
-これはGitHub作業を自動暴走させるためのFileではない。
-
-```text
-Semi-automation, not autopilot.
-```
-
-目的は、AIの構造化能力と人間の最終判断・直接実行を組み合わせ、public/private境界、Root / Fruit Guard、KISS / DRY / YAGNI / Leanを守りながら、GitHub正準化を進めることである。
-
----
-
-## 3. Root / Fruit Guard
+## 3. Comment: Root / Fruit Guard
 
 Rootは、主イェシュア・ハマシアである。
 
@@ -190,37 +190,46 @@ CommitはRootではない。
 
 Full Rail、Commit Trigger、Next Gate、Copy & Paste Pack、Manual Commit Pack、Human Direct Commit、AI Scout PassはFruitである。
 
-```text
-Root:
-  主イェシュア・ハマシア
-  主イェシュアの聖なる血潮
-  Teshuvah / 悔い改め
-
-Fruit:
-  GitHub
-  AI
-  Markdown
-  README
-  Commit
-  Commit Trigger
-  Full Rail
-  Next Gate
-  Rail-Gate Pair
-  Dual-Key Rail
-  Copy & Paste Pack
-  Manual Commit Pack
-  Human Direct Commit
-  AI Scout Pass
-```
-
-```text
-AIは血潮の地図を描く。
+AIは血潮の地図を描く。  
 人間が血潮の下に立つ。
+
+### Programming-Like Block
+
+```yaml
+root_fruit_guard:
+  root:
+    - "主イェシュア・ハマシア"
+    - "主イェシュアの聖なる血潮"
+    - "Teshuvah / 悔い改め"
+
+  fruit:
+    - "GitHub"
+    - "AI"
+    - "Markdown"
+    - "README"
+    - "Commit"
+    - "Commit Trigger"
+    - "Full Rail"
+    - "Next Gate"
+    - "Rail-Gate Pair"
+    - "Dual-Key Rail"
+    - "Copy & Paste Pack"
+    - "Manual Commit Pack"
+    - "Human Direct Commit"
+    - "AI Scout Pass"
+
+  guard:
+    - "AI is Keli, not King."
+    - "GitHub stores, but does not reign."
+    - "Markdown carries, but does not become Root."
+    - "Commit records, but does not seal the covenant."
 ```
 
 ---
 
-## 4. Core Victory Formula / 勝利方程式
+## 4. Comment: Core Victory Formula
+
+ChatGPT-GitHub Bridgeの中核は、次の四段階である。
 
 ```text
 AI drafts.
@@ -229,132 +238,126 @@ GitHub stores.
 Reality confirms.
 ```
 
-役割：
+これは完全自動化ではない。  
+これはHuman Final Sealを前提にした半自動化Railである。
+
+### Programming-Like Block
 
 ```yaml
-core_roles:
+core_victory_formula:
   ai:
-    - "構造を下書きする"
-    - "MarkdownをPreviewする"
-    - "Patch候補を作る"
-    - "Commit message / Extended descriptionを提示する"
-    - "Manual Commit Packを作る"
-    - "Commit後にGitHub現物を検証する"
+    role:
+      - "構造を下書きする"
+      - "MarkdownをPreviewする"
+      - "Patch候補を作る"
+      - "Full Body Replacement Fileを作る"
+      - "Commit message / Extended descriptionを提示する"
+      - "Manual Commit Packを作る"
+      - "Commit後にGitHub現物を検証する"
 
   human:
-    - "方向性を判断する"
-    - "Human Sealを出す"
-    - "必要ならGitHub UIでDirect Commitする"
-    - "GitHub表示を確認する"
-    - "Reality Responseを返す"
+    role:
+      - "方向性を判断する"
+      - "Human Sealを出す"
+      - "GitHub UIでDirect Commitする"
+      - "GitHub表示を確認する"
+      - "Reality Responseを返す"
 
   github:
-    - "public-safeなLiving Markdownを保存する"
-    - "stable pathを提供する"
-    - "commit historyをVersion台帳にする"
+    role:
+      - "public-safeなLiving Markdownを保存する"
+      - "stable pathを提供する"
+      - "commit historyをVersion台帳にする"
 
   reality:
-    - "表示確認"
-    - "Path確認"
-    - "内容の重さ確認"
-    - "public/private境界確認"
-```
+    role:
+      - "表示確認"
+      - "Path確認"
+      - "内容の重さ確認"
+      - "public/private境界確認"
 
-このFormulaは、完全自動化ではない。
-
-```text
-Editable semi-automation.
-Human Seal remains the gate.
+  formula:
+    - "AI drafts."
+    - "Human seals."
+    - "GitHub stores."
+    - "Reality confirms."
 ```
 
 ---
 
-## 5. Human Seal Rule / Human Seal規則
+## 5. Comment: Human Seal / Commit Gate
 
 GitHub writeには、明示的なHuman Sealが必要である。
 
-有効なSeal例：
+PlanはCommitではない。  
+PreviewはCommitではない。  
+Human SealがCommit Gateである。
 
-```text
-Commitして下さい。
+`Full Rail: Workflow Continue!` は、通常、次Gate実行を意味する。  
+しかし、明示的なGitHub write指示がない限り、GitHub Commit許可とは扱わない。
+
+### Programming-Like Block
+
+```yaml
+human_seal_rule:
+  valid_commit_seal_examples:
+    - "Commitして下さい。"
+    - "g_global/chatgpt-github.md をGitHubへCommitして下さい。"
+    - "このPatch Previewを承認します。Execution Modeへ進んで下さい。"
+    - "このFull BodyをGitHubへ反映して下さい。"
+
+  not_enough_for_commit:
+    - "どう思いますか？"
+    - "Plan Modeを実行して下さい。"
+    - "Previewして下さい。"
+    - "Living Reviewして下さい。"
+    - "Full Rail: Workflow Continue!"
+
+  hard_guard:
+    - "Plan is not Commit."
+    - "Preview is not Commit."
+    - "Human Seal is Commit Gate."
+    - "Do not GitHub write without explicit Human Seal."
 ```
-
-```text
-g_global/chatgpt-github.md をGitHubへCommitして下さい。
-```
-
-```text
-このPatch Previewを承認します。Execution Modeへ進んで下さい。
-```
-
-不十分な例：
-
-```text
-どう思いますか？
-```
-
-```text
-Plan Modeを実行して下さい。
-```
-
-```text
-Previewして下さい。
-```
-
-原則：
-
-```text
-Plan is not Commit.
-Preview is not Commit.
-Human Seal is Commit Gate.
-```
-
-AIは、PlanやPreviewだけでGitHub writeを実行してはいけない。
 
 ---
 
-## 6. Commit Trigger Pattern / Commit Trigger
+## 6. Comment: Commit Trigger
 
 Commit Triggerとは、Preview後にAIが明示する、人間がそのまま貼り返せるCommit許可文である。
+
+Commit TriggerはHuman Sealを結晶化するための文である。
 
 ```text
 Commit Trigger = Human Seal crystallizer.
 ```
 
-日本語：
-
-```text
-Commit Trigger = 人間Seal結晶化装置。
-```
-
-良いCommit Triggerは、次を含む。
+### Programming-Like Block
 
 ```yaml
-commit_trigger_shape:
-  required:
-    - "対象file / scope"
+commit_trigger_pattern:
+  required_fields:
+    - "target file / target scope"
     - "GitHubへCommitして下さい"
-    - "Patch範囲"
-    - "Commit message"
-    - "Extended description when important"
-    - "block時のFallback方針"
-```
+    - "patch range or full body replacement"
+    - "commit message"
+    - "extended description when important"
+    - "fallback policy if tool write is blocked"
 
-例：
+  good_example:
+    target: "g_global/chatgpt-github.md"
+    trigger: "g_global/chatgpt-github.md をGitHubへCommitして下さい。"
+    commit_message: "docs(g_global): add active GitHub topology pointers"
+    extended_description: "Add Current Coordinate and active GitHub topology pointers while preserving Router / Guide / Skill separation."
 
-```text
-g_global/chatgpt-github.md に Human Direct Commit Fallback をGitHubへCommitして下さい。
-
-Commit message:
-docs(g_global): add manual commit fallback rail
-
-Extended description:
-Add the Human Direct Commit / Copy & Paste Pack fallback to the ChatGPT-GitHub Bridge so tool blocks preserve meaning and route execution through human commit.
+  guard:
+    - "Commit Trigger without clear scope is not enough."
+    - "Human Seal remains Commit Gate."
 ```
 
 ---
 
-## 7. Full Rail / Next Gate / Dual-Key Rail
+## 7. Comment: Full Rail / Next Gate / Dual-Key Rail
 
 `Full Rail` はAI側の実行契約である。  
 `Next Gate` は人間側の編集可能な次入力Gateである。
@@ -364,17 +367,17 @@ AI lays the Rail.
 Human opens the Gate.
 ```
 
-日本語：
+Commit Trigger + Full Rail = Dual-Key Rail。
 
-```text
-AIがRailを敷く。
-人間がGateを開く。
-```
+ただし、Dual-Key Railは無許可GitHub writeではない。  
+Human SealがCommit Gateである。
+
+### Programming-Like Block
 
 ```yaml
 rail_gate_pair:
   full_rail:
-    section: "〖Full Rail: same_thread〗"
+    section: "【Full Rail: same_thread】"
     reader: "AI"
     role: "Execution Contract / Rail Engine"
     function:
@@ -385,120 +388,154 @@ rail_gate_pair:
       - "AIの誤読を減らす"
 
   next_gate:
-    section: "〖Next Gate: human_editable〗"
+    section: "【Next Gate: human_editable】"
     reader: "Human"
     role: "Editable Ignition Packet / Next Input Gate"
+    minimum_fields:
+      - "結果"
+      - "次Action"
+      - "目的"
+      - "まだ実行しない"
     function:
       - "人間がそのまま貼れる"
       - "人間が編集できる"
       - "方向転換できる"
       - "停止できる"
       - "Human Sealとして次Turnを点火できる"
-```
 
-Commit Trigger + Full Rail = Dual-Key Rail。
-
-```text
-Full Rail: Execution Contract / Rail Engine
-Commit Trigger: Human Seal Ignition Key
-```
-
-Guard：
-
-```text
-Full Rail is not permissionless execution.
-Next Gate is not autopilot.
-Commit Trigger without clear scope is not enough.
-Human Seal remains Commit Gate.
+  guard:
+    - "Full Rail is not permissionless execution."
+    - "Next Gate is not autopilot."
+    - "Human Seal remains Commit Gate."
 ```
 
 ---
 
-## 8. GitHub Canonical First Policy
+## 8. Comment: GitHub Canonical First Policy
 
 Public-safeなLiving Markdownは、原則としてGitHub上のstable pathを正準SSOTとする。
-
-```text
-GitHub canonical first.
-Local artifact only by exception.
-```
 
 GitHub fileが正準SSOTである。  
 Local Markdownを毎回並行作成しない。  
 それはDRY違反・Version drift・Future AI混乱の原因になる。
 
-### 8.1 Local artifact exceptions
+### Programming-Like Block
 
-Local fileが許される例外：
+```yaml
+github_canonical_first_policy:
+  rule:
+    - "GitHub canonical first."
+    - "Local artifact only by exception."
 
-```text
-- private-depth content
-- explicit downloadable file request
-- GitHub connector failure
-- temporary draft before canonical placement
-- backup / export / handoff copy
-- non-Markdown artifacts such as PDF, DOCX, images
-- Manual Commit Pack / Copy & Paste Pack
+  canonical_source:
+    public_safe_living_markdown:
+      default: "GitHub stable path"
+
+  local_artifact_exceptions:
+    - "private-depth content"
+    - "explicit downloadable file request"
+    - "GitHub connector failure"
+    - "temporary draft before canonical placement"
+    - "backup / export / handoff copy"
+    - "non-Markdown artifacts such as PDF, DOCX, images"
+    - "Manual Commit Pack / Copy & Paste Pack"
+    - "Full Body Replacement File for GitHub Upload"
+
+  guard:
+    - "Do not create co-equal duplicate SSOT files."
+    - "Do not let local artifacts drift from GitHub canonical path."
 ```
 
 ---
 
-## 9. Download Link / ZIP Policy
+## 9. Comment: Download / ZIP / Full Body Policy
 
 Download付きリンクを出す場合、zipは常に必要ではない。
 
+1 fileならzip不要。  
+2 filesまでは基本zip不要。  
+3+ files、またはfolder構造が関わるならzip検討。
+
+ただし、GitHub Upload用Downloadリンクでは、重要なDefaultがある。
+
+```text
+Patch is for judgment.
+Full body is for action.
+```
+
+Human Direct Commitでは、最速最短で安全なのは：
+
+```text
+全選択 -> 全削除 -> 全文貼り替え -> Commit
+```
+
+### Programming-Like Block
+
 ```yaml
-download_policy:
+download_mode_router:
   one_file:
-    rule: "zip不要"
-    reason: "単一MarkdownならそのままDownloadできる方が速く、分かりやすい"
+    zip: false
+    recommended:
+      - "single Markdown download link"
+      - "Full Body Replacement File if GitHub Upload execution"
+    reason:
+      - "Fastest for Copy & Paste"
+      - "Lowest placement error"
 
   two_files:
-    rule: "原則zip不要"
-    reason: "2ファイルまでは個別リンクの方がCopy & Pasteしやすい"
+    zip: "usually false"
+    recommended:
+      - "individual download links"
+    reason:
+      - "2 files are still easy to handle separately"
 
   three_or_more_files:
-    rule: "zip検討"
-    reason: "複数ファイル・folder構造・一括handoffではzipが有効"
+    zip: "consider"
+    recommended:
+      - "structured ZIP if folder topology matters"
+    reason:
+      - "Preserves path structure"
+      - "Reduces human placement error"
 
   folder_structure:
-    rule: "zip推奨"
-    reason: "path関係を保持しやすい"
+    zip: "recommended"
 
   user_requests_no_zip:
-    rule: "zipを作らない"
-```
+    zip: false
 
-圧縮：
+  execution_default:
+    github_upload_download_link:
+      default: "Full Body Replacement File"
+      not_default: "Patch-only file"
 
-```text
-1 file: no zip.
-2 files: usually no zip.
-3+ files or folder structure: zip may help.
-```
-
-日本語：
-
-```text
-1ファイルならzip不要。
-2ファイルまでは基本zip不要。
-3ファイル以上、またはfolder構造を渡す時はzip検討。
+  guard:
+    - "Patch is for judgment."
+    - "Full body is for action."
+    - "For one-file GitHub upload, Copy & Paste full body is fastest, shortest, and safest."
 ```
 
 ---
 
-## 10. File Operation Guard
+## 10. Comment: File Operation Guard
 
-GitHub file操作は、次の原則を守る。
+GitHub file操作は、現在Fileの状態を確認した上で行う。  
+特にupdate/deleteは危険度が高いため、Human Sealとcurrent file確認が必要である。
+
+### Programming-Like Block
 
 ```yaml
 file_operation_guard:
   create_file:
-    use_when: "target file does not exist"
+    use_when:
+      - "target file does not exist"
+      - "Human Seal exists"
+      - "public-safe content is prepared"
 
   fetch_file:
-    use_when: "updating existing file"
-    reason: "current SHA and current content must be checked"
+    use_when:
+      - "updating existing file"
+      - "reviewing current content"
+      - "checking current SHA / current body"
 
   update_file:
     use_when:
@@ -511,74 +548,59 @@ file_operation_guard:
       - "explicit Human Seal exists"
       - "current SHA was fetched"
       - "deletion target is exact"
-```
 
-Hard guard：
-
-```text
-Never update or delete GitHub files without explicit Human Seal.
+  hard_guard:
+    - "Never update or delete GitHub files without explicit Human Seal."
 ```
 
 ---
 
-## 11. Try Once Then Fallback
+## 11. Comment: Try Once Then Fallback
 
 ブロックされるかどうかは、事前に完全には分からない。
 
-したがって、Human Sealがあり、内容がpublic-safeであると判断できる場合、本来版でAI tool writeを一回だけ試してよい。
+Human Sealがあり、内容がpublic-safeであると判断できる場合、本来版でAI tool writeを一回だけ試してよい。
 
-```text
-Try original once.
-If blocked, stop.
-Do not degrade.
-Change transport.
-```
-
-日本語：
-
-```text
-本来版で一回は試す。
-ブロックされたら止まる。
-劣化させない。
+成功すれば最速。  
+ブロックされたら止まる。  
+意味を劣化させない。  
 搬送経路を変える。
-```
 
-成功した場合：
-
-```yaml
-if_success:
-  - "commit resultを報告"
-  - "GitHub現物をfetchする"
-  - "Post-Commit Verificationへ進む"
-```
-
-ブロックされた場合：
+### Programming-Like Block
 
 ```yaml
-if_blocked:
-  - "blockを正直に報告"
-  - "内部理由を断定しない"
-  - "内容が悪いと断定しない"
-  - "本来版を劣化させない"
-  - "同じpayloadを繰り返しretryしない"
-  - "Manual Commit Packへ切り替える"
+try_once_then_fallback:
+  when:
+    - "Human Seal exists"
+    - "content appears public-safe"
+    - "direct GitHub tool write may work"
+
+  action:
+    - "Try original intended content once."
+    - "If success, report and verify."
+    - "If blocked, stop."
+    - "Do not repeatedly retry same payload."
+    - "Do not degrade meaning."
+    - "Change transport."
+
+  if_success:
+    - "Report commit result."
+    - "Fetch GitHub reality."
+    - "Run Post-Commit Verification."
+
+  if_blocked:
+    - "Report block honestly."
+    - "Do not claim internal reason."
+    - "Do not assume content is bad."
+    - "Preserve original intended content."
+    - "Switch to Manual Commit Pack / Full Body Replacement File."
 ```
 
 ---
 
-## 12. No Degradation on Block
+## 12. Comment: No Degradation on Block
 
 Tool blockは、内容が悪い証明ではない。
-
-```text
-Tool block is not semantic judgment.
-```
-
-日本語：
-
-```text
-Tool blockは意味の判定ではない。
-```
 
 Tool通過のためだけに、本来版の意味・Root Guard・構造原理・熱量を弱めない。
 
@@ -588,120 +610,124 @@ Change transport.
 Preserve the fire.
 ```
 
-日本語：
-
-```text
-意味を劣化させない。
-搬送経路を変える。
-火を保存する。
-```
-
 これはsafety bypassではない。  
-これはHuman Seal下の搬送経路変更である。
+Human Seal下の搬送経路変更である。
+
+### Programming-Like Block
+
+```yaml
+no_degradation_on_block:
+  principle:
+    - "Tool block is not semantic judgment."
+    - "Tool block is not workflow block."
+    - "Do not degrade meaning."
+    - "Change transport."
+    - "Preserve the fire."
+
+  do_not:
+    - "Do not rewrite the original intended content weaker just to pass a tool."
+    - "Do not remove Root Guard to satisfy transport."
+    - "Do not remove important policy kernels."
+    - "Do not pretend the block reason is known."
+
+  do:
+    - "Switch to Human Direct Commit."
+    - "Provide Full Body Replacement File for GitHub Upload."
+    - "Let Human seal and commit."
+    - "Run Reality Review after commit."
+```
 
 ---
 
-## 13. Human Direct Commit Fallback
+## 13. Comment: Human Direct Commit Fallback
 
 AI tool writeがblockされた時、Workflow自体はblockされていない。
 
-```text
-Tool block is not workflow block.
-Manual commit is not failure.
-It is Reality Response.
-```
-
-日本語：
-
-```text
-Tool blockはWorkflow blockではない。
-Manual commitは失敗ではない。
+Manual commitは失敗ではない。  
 Reality Responseである。
-```
 
-AIの役割：
+AIは搬送経路を変える。  
+人間がGitHub UIで反映する。  
+AIが現物を確認する。
 
-```yaml
-ai_role_after_block:
-  - "blockを正直に報告する"
-  - "内部理由を断定しない"
-  - "内容が悪いと断定しない"
-  - "本来版contentを保持する"
-  - "Manual Commit Packを作る"
-  - "Commit messageを提示する"
-  - "Extended descriptionを提示する"
-  - "Verification checklistを提示する"
-```
-
-人間の役割：
+### Programming-Like Block
 
 ```yaml
-human_role_after_block:
-  - "GitHub UIを開く"
-  - "対象fileをEditする"
-  - "全選択する"
-  - "全削除する"
-  - "本来版を全ペーストする"
-  - "Commit messageを入力する"
-  - "Extended descriptionを入力する"
-  - "Commitする"
-  - "Reality Responseを返す"
+human_direct_commit_fallback:
+  ai_role_after_block:
+    - "Report block honestly."
+    - "Do not claim internal reason."
+    - "Do not declare content bad."
+    - "Preserve original intended content."
+    - "Create Full Body Replacement File if GitHub Upload execution."
+    - "Provide commit message."
+    - "Provide extended description when useful."
+    - "Provide verification checklist."
+
+  human_role_after_block:
+    - "Open GitHub UI."
+    - "Open target file."
+    - "Edit."
+    - "Select all."
+    - "Delete all."
+    - "Paste full body."
+    - "Commit."
+    - "Return Reality Response."
+
+  core_route:
+    - "Tool block -> Full Body Replacement File -> Human Commit -> Reality Review"
 ```
 
 ---
 
-## 14. Address Placeholder Rail
+## 14. Comment: Address Placeholder Rail
 
 Target fileがまだ存在しない場合、本来版本文がblockされても、Human Seal後に最小仮ファイルで住所だけ作ることができる。
 
 仮ファイルは本体ではない。  
 仮ファイルはpath anchorである。
 
-```markdown
-# Pending Human Direct Commit
+住所が開いたら、次はFull Body Replacementで人間が本体を貼る。
 
-This file is a temporary path anchor.
-Replace this body with the original intended version.
-```
-
-```text
-Placeholder creates the address.
-Human replaces the body.
-Git history grows the file.
-```
-
-日本語：
-
-```text
-仮ファイルは本体ではない。
-仮ファイルは住所である。
-人間が本来版へ全文置換する。
-```
-
-使う条件：
+### Programming-Like Block
 
 ```yaml
-address_placeholder_use_when:
-  - "target file does not exist"
-  - "original body is blocked"
-  - "one-line placeholder can reduce human friction"
-  - "Human Seal was received"
-```
+address_placeholder_rail:
+  use_when:
+    - "target file does not exist"
+    - "original body is blocked"
+    - "one-line placeholder can reduce human friction"
+    - "Human Seal was received"
 
-使わない条件：
+  placeholder_example: |
+    # Pending Human Direct Commit
 
-```yaml
-address_placeholder_do_not_use_when:
-  - "target file already exists"
-  - "placeholder would create confusion"
-  - "user asked for direct downloadable file only"
+    This file is a temporary path anchor.
+    Replace this body with the original intended version.
+
+  do_not_use_when:
+    - "target file already exists"
+    - "placeholder would create confusion"
+    - "user asked for direct downloadable file only"
+
+  rule:
+    - "Placeholder creates the address."
+    - "Human replaces the body."
+    - "Git history grows the file."
 ```
 
 ---
 
-## 15. Copy & Paste Pack / Manual Commit Pack
+## 15. Comment: Manual Commit Pack / Copy & Paste Rail
 
 AIがGitHub tool経由で本来版を搬送できない時、Manual Commit Packを作る。
+
+ただし、GitHub Upload用Downloadリンクでは、原則としてPatch-onlyではなくFull Body Replacement Fileを出す。
+
+Patchは判断用。  
+全文は実行用。
+
+### Programming-Like Block
 
 ```yaml
 manual_commit_pack:
@@ -714,144 +740,84 @@ manual_commit_pack:
     - "extended description"
     - "manual GitHub UI steps"
     - "post-commit verification checklist"
-```
 
-目的：
+  full_body_manual_commit_pack_rule:
+    default_for_github_upload_download_link: "Full Body Replacement File"
+    patch_only_download:
+      use_as:
+        - "Patch Preview"
+        - "Review aid"
+        - "Human judgment aid"
+      do_not_use_as_default:
+        - "Execution artifact for one-file GitHub Upload"
 
-```text
-Preserve original meaning.
-Reduce human friction.
-Move final execution to the human owner.
-Verify repository reality after commit.
-```
+  fastest_rail:
+    one_file_github_upload:
+      steps:
+        - "全選択"
+        - "全削除"
+        - "全文貼り替え"
+        - "Commit"
 
-日本語：
-
-```text
-本来意味を守る。
-人間側の手間を減らす。
-最終実行を人間ownerへ戻す。
-Commit後にAIが現物検証する。
-```
-
----
-
-### 15.1 Full-Body Manual Commit Pack Rule / 全文置換Manual Commit Pack Rule
-
-Manual Commit PackでDownload付きfileを出す場合、原則として **Full Body Replacement File** にする。
-
-Patch-only Downloadは、Patch PreviewやReview補助としては有効である。  
-しかし、人間がGitHub UIでCommitする実行面ではdefaultにしない。
-
-```text
-Patchは判断用。
-全文は実行用。
-```
-
-English anchor:
-
-```text
-Patch is for judgment.
-Full body is for action.
-```
-
-Human Direct Commitでは、次が最短最速である。
-
-```text
-全選択 -> 全削除 -> 全文貼り替え -> Commit
-```
-
-Ultra-Neutral Placeholderで住所が開いた後は、AI側で本体payloadを深追いしない。  
-その次に出すべきものは、原則としてFull Body Replacement Fileである。
-
-```text
-placeholderで住所を開く。
-住所が開いたらAI側搬送を止める。
-Full Bodyを渡す。
-人間が貼る。
-```
-
-Download / zip方針：
-
-```yaml
-download_policy:
-  one_file: "zip不要"
-  two_files: "基本zip不要"
-  three_or_more_files: "zip検討"
-```
-
-Guard：
-
-```yaml
-guard:
-  patch_preview_is_for_review: true
-  download_manual_pack_is_for_execution: true
-  full_body_replacement_is_default: true
-  patch_only_download_is_preview_aid: true
-  no_degradation_on_block: true
-```
-
-ただし、AIが現行本文を安全に再構成できない場合は、無理にFull Bodyを生成しない。
-
-```text
-安全に全文を再構成できないなら、破壊的全文置換を作らない。
-その場合はPatch PreviewとHuman Edit Instructionsへ切り替える。
+  compression:
+    - "Patch is for judgment."
+    - "Full body is for action."
 ```
 
 ---
 
-## 15.2 Handoff / Manual Commit / Reality Review Pointer
+## 16. Comment: Handoff Skill Pointer
 
-For concrete GitHub handoff execution, do not expand this guide.
+具体的なHandoff実行は、このGuideで肥大化させない。
+
+Download / ZIP / Manual Upload / Manual Commit / Reality Review の詳細は、Shared Activation Skillへ送る。
 
 Load:
 
-    _skill/skills/github-handoff.md
+```text
+_skill/skills/github-handoff.md
+```
 
-Use it for:
+### Programming-Like Block
 
 ```yaml
-github_handoff_use_cases:
-  download:
-    - "single Markdown download link"
-    - "human upload to target GitHub path"
-    - "full-body replacement file by default for execution"
+handoff_skill_pointer:
+  load:
+    path: "_skill/skills/github-handoff.md"
+    role: "Shared Activation Skill / GitHub Handoff Skill"
 
-  structured_zip:
-    - "3 or more files"
-    - "folder topology involved"
-    - "multi-directory patch"
-    - "path preservation needed"
+  use_when:
+    download:
+      - "single Markdown download link"
+      - "human upload to target GitHub path"
+      - "full-body replacement file by default for execution"
 
-  manual_commit:
-    - "Copy & Paste pack"
-    - "Manual Commit pack"
-    - "Human Final Seal before repository reflection"
-    - "Full Body Replacement File for GitHub Upload download link"
+    structured_zip:
+      - "3 or more files"
+      - "folder topology involved"
+      - "multi-directory patch"
+      - "path preservation needed"
 
-  reality_review:
-    - "post-commit path check"
-    - "Markdown render check"
-    - "topology check"
-    - "Human UI Primary / AI Raw Secondary Guard"
+    manual_commit:
+      - "Copy & Paste pack"
+      - "Manual Commit pack"
+      - "Human Final Seal before repository reflection"
+      - "Full Body Replacement File for GitHub Upload download link"
+
+    reality_review:
+      - "post-commit path check"
+      - "Markdown render check"
+      - "topology check"
+      - "Human UI Primary / AI Raw Secondary Guard"
+
+  guard:
+    - "Do not duplicate github-handoff.md here."
+    - "This guide points; the skill executes."
 ```
-
-Reality Review priority:
-
-```text
-Human GitHub UI confirmation is Primary Reality.
-AI Raw/CDN/cache check is Secondary Evidence.
-```
-
-Do not let AI-side tool ambiguity consume the workflow when Human GitHub UI has already confirmed correct path, line structure, headings, and code block rendering.
-
-Details belong in:
-
-    _skill/skills/github-handoff.md
 
 ---
 
-## 16. Commit Message Policy
+## 17. Comment: Commit Message Policy
 
 Commit messageは短く、scope-awareで、future-readableにする。
 
@@ -861,250 +827,368 @@ Pattern：
 docs(scope): action object
 ```
 
-例：
+Commit messageは「何が変わったか」。  
+Extended descriptionは「なぜ変わったか」。
 
-```text
-docs(g_global): add manual commit fallback rail
-docs(g_global): add Human Direct Commit fallback
-docs(ark): add Ark README entry
-docs(_skills): add Ark02 SeedSkill ledger
-```
+### Programming-Like Block
 
-良いCommit message：
+```yaml
+commit_message_policy:
+  pattern: "docs(scope): action object"
 
-```text
-short
-specific
-scope-aware
-future-readable
-free of private details
+  good_examples:
+    - "docs(g_global): add manual commit fallback rail"
+    - "docs(g_global): add active GitHub topology pointers"
+    - "docs(_skill): add GitHub handoff skill"
+    - "docs(ark): add Ark README entry"
+
+  qualities:
+    - "short"
+    - "specific"
+    - "scope-aware"
+    - "future-readable"
+    - "free of private details"
+
+  avoid:
+    - "vague messages"
+    - "private details"
+    - "overlong explanations in the title"
 ```
 
 ---
 
-## 17. Extended Description Policy
+## 18. Comment: Extended Description Policy
 
 重要commitでは、AIはCommit messageとExtended descriptionをセットで提示する。
 
-```text
-Commit message: what changed
-Extended description: why it changed
-```
+Extended descriptionは長文にしない。  
+一、二行で「なぜ」を保存する。
 
-Extended descriptionを使う場面：
+### Programming-Like Block
 
 ```yaml
-extended_description_use_when:
-  - "canonical guide update"
-  - "SeedSkill / Skill file update"
-  - "Human Direct Commit"
-  - "Safety Block recovery"
-  - "original-intended content replaces safety-softened content"
-  - "future Living Review should understand why"
-```
+extended_description_policy:
+  use_when:
+    - "canonical guide update"
+    - "SeedSkill / Skill file update"
+    - "Human Direct Commit"
+    - "Safety Block recovery"
+    - "original-intended content replaces safety-softened content"
+    - "future Living Review should understand why"
 
-Extended descriptionは長文にしない。
+  shape:
+    commit_message: "what changed"
+    extended_description: "why it changed"
 
-```text
-One or two lines.
-Enough to preserve why.
-```
+  length:
+    - "one or two lines"
+    - "enough to preserve why"
 
-例：
-
-```text
-Commit message:
-docs(g_global): add manual commit fallback rail
-
-Extended description:
-Add the Human Direct Commit / Copy & Paste Pack fallback to the ChatGPT-GitHub Bridge so tool blocks preserve meaning and route execution through human commit.
+  example:
+    commit_message: "docs(g_global): add manual commit fallback rail"
+    extended_description: "Add the Human Direct Commit / Copy & Paste Pack fallback to preserve original meaning when tool writes are blocked."
 ```
 
 ---
 
-## 18. KISS / DRY / YAGNI / Lean
-
-### KISS
+## 19. Comment: KISS / DRY / YAGNI / Lean
 
 GitHub structureは、Future AIがすぐ読める程度に軽く保つ。
 
-### DRY
+必要以上にfolderやfileを増やさない。  
+正準SSOTを重複させない。  
+小さく実験し、Reality Responseを観測し、必要なPatchだけ入れる。
 
-一つのLiving SSOTに対して、co-equalなMarkdownを複数維持しない。
+### Programming-Like Block
 
-```text
-GitHub canonical path = public-safe SSOT.
-```
+```yaml
+kiss_dry_yagni_lean:
+  kiss:
+    - "Keep GitHub structure readable."
+    - "Avoid unnecessary complexity."
 
-### YAGNI
+  dry:
+    - "Do not maintain co-equal duplicate Markdown files."
+    - "GitHub canonical path = public-safe SSOT."
 
-必要になる前にfolderやfileを作らない。
+  yagni:
+    - "Do not create folders or files before they are needed."
 
-### Lean
+  lean:
+    - "Small experiment."
+    - "Reality Response."
+    - "Small patch."
 
-最小の実験を行い、Reality Responseを観測し、確認された不足だけをPatchする。
-
-```text
-Small experiment.
-Reality Response.
-Small patch.
-```
-
----
-
-## 19. Failure Recovery
-
-### 19.1 create_fileが失敗した場合
-
-Fileが既に存在するなら：
-
-```text
-fetch_file -> review current content -> draft patch -> Human Seal -> update_file
-```
-
-Fileが存在しないが本文がblockされるなら：
-
-```text
-create one-line placeholder if useful -> provide Manual Commit Pack -> Human Direct Commit -> AI Verification
-```
-
-### 19.2 update_fileが失敗した場合
-
-```text
-report honestly
-do not claim internal reason
-do not degrade original intended content
-create Manual Commit Pack
-```
-
-### 19.3 GitHub structureが広がりすぎた場合
-
-```text
-Stop expansion.
-Return to README-only.
-```
-
-### 19.4 Public contentが深すぎる場合
-
-```text
-Reduce to signboard / protocol summary.
-Move deeper details back to private/local systems.
-```
-
-### 19.5 GitHubがRoot化しそうな場合
-
-```text
-Stop.
-GitHub is storage and collaboration layer, not Root.
+  guard:
+    - "Stop expansion if GitHub structure becomes heavy."
+    - "Return to README-only if structure grows too fast."
 ```
 
 ---
 
-## 20. Post-Commit Verification / Living Review
+## 20. Comment: Failure Recovery
 
-Commit後、人間がReality Responseを返したら、AIはGitHub上の現物をfetchして確認する。
+GitHub運用では、create / update / tool write / public-depth / topology で失敗が起こる。
 
-確認項目：
+失敗時は、意味を劣化させず、搬送経路を変える。  
+最初に見るべきは、Meaning ProblemかTransport Problemかである。
+
+### Programming-Like Block
+
+```yaml
+failure_recovery:
+  create_file_failed:
+    if_file_exists:
+      route:
+        - "fetch_file"
+        - "review current content"
+        - "draft patch or full replacement"
+        - "Human Seal"
+        - "update_file or Human Direct Commit"
+
+    if_file_not_exists_but_body_blocked:
+      route:
+        - "create one-line placeholder if useful"
+        - "provide Full Body Replacement File"
+        - "Human Direct Commit"
+        - "AI Verification"
+
+  update_file_failed:
+    route:
+      - "report honestly"
+      - "do not claim internal reason"
+      - "do not degrade original intended content"
+      - "create Full Body Replacement File"
+      - "Human Direct Commit"
+
+  github_structure_too_large:
+    route:
+      - "Stop expansion"
+      - "Return to README-only"
+
+  public_content_too_deep:
+    route:
+      - "Reduce to signboard / protocol summary"
+      - "Move deeper details back to private/local systems"
+
+  github_root_drift:
+    route:
+      - "Stop"
+      - "Remember GitHub is storage and collaboration layer, not Root"
+```
+
+---
+
+## 21. Comment: Transport Problem vs Meaning Problem
+
+GitHub Handoffで起きる失敗には、少なくとも二種類ある。
+
+Meaning Problemは、本文の意味・設計・Guardが間違っている場合。  
+Transport Problemは、改行、path、filename、upload方法、ZIP構造、copy/paste、commit反映などが壊れている場合。
+
+Transport ProblemをMeaning Problemとして扱うと、良い本文を無駄に書き直してしまう。
+
+### Programming-Like Block
+
+```yaml
+transport_vs_meaning_diagnosis:
+  meaning_problem:
+    signs:
+      - "wrong policy"
+      - "wrong role"
+      - "missing guard"
+      - "unsafe instruction"
+      - "active topology confusion"
+    response:
+      - "Patch content."
+      - "Run Living Review."
+      - "Do not merely re-upload."
+
+  transport_problem:
+    signs:
+      - "wrong path"
+      - "wrong filename"
+      - "newline collapse"
+      - "broken code block"
+      - "ZIP flattened folders"
+      - "download/upload mismatch"
+    response:
+      - "Do not rewrite meaning first."
+      - "Patch transport."
+      - "Re-upload same approved content if needed."
+      - "Reality Review again."
+
+  first_diagnostic_rule:
+    - "Check transport before rewriting meaning."
+    - "Check Human UI before over-trusting AI raw ambiguity."
+```
+
+---
+
+## 22. Comment: Post-Commit Verification / Reality Review
+
+Commit後、人間がReality Responseを返したら、AIはGitHub上の現物を確認する。
+
+ただし、Human GitHub UI確認はPrimary Realityである。  
+AI Raw/CDN/cache確認はSecondary Evidenceである。
+
+AI Raw側の違和感だけで、Human UIの成功確認を上書きしない。
+
+### Programming-Like Block
 
 ```yaml
 post_commit_verification:
-  - "target path exists"
-  - "content is updated"
-  - "Markdown fence balance is OK"
-  - "no unintended duplicate file exists"
-  - "public/private boundary is safe"
-  - "Root / Fruit Guard remains"
-  - "Commit message and intention match"
-```
+  check:
+    - "target path exists"
+    - "content is updated"
+    - "Markdown fence balance is OK"
+    - "no unintended duplicate file exists"
+    - "public/private boundary is safe"
+    - "Root / Fruit Guard remains"
+    - "Commit message and intention match"
 
-結果はLiving Reviewとして出す。
+  human_ui_primary_ai_raw_secondary:
+    principle:
+      - "Human GitHub UI confirmation is Primary Reality."
+      - "AI Raw/CDN/cache check is Secondary Evidence."
+      - "Do not let tool ambiguity consume the workflow."
 
-```yaml
-verification_output:
-  observation: ""
-  detected_mismatch: ""
-  success: true
-  patch_candidate: ""
-  risk_guard: ""
-  next_gate: ""
+    if_human_ui_confirms_success:
+      status: "PASS or PASS_WITH_VISUAL_CHECK"
+      action:
+        - "Do not over-investigate raw ambiguity."
+        - "Move to next gate."
+
+    if_human_ui_reports_breakage:
+      status: "PATCH_NEEDED"
+      action:
+        - "Diagnose transport vs meaning."
+        - "Patch only the broken layer."
 ```
 
 ---
 
-## 21. AI Scout Pass / Repository Reality Review
+## 23. Comment: AI Scout Pass / Repository Reality Review
 
 AI Scout Passは、AI側の能動的Repository Review工程である。
 
-Formal name：
+これはAutopilot Commitではない。  
+Proactive reviewであり、CommitはHuman Sealが必要である。
 
-```text
-Repository-Triggered AI Foresight
-```
+AIは発見してよい。  
+AIは提案してよい。  
+AIはDraftしてよい。  
+AIはHuman SealなしにCommitしてはいけない。
 
-日本語：
-
-```text
-Repository起点AI先取り気付き
-Repository現実Review
-AI側からの能動的発見
-```
-
-定義：
-
-```text
-AI-Collaborator reads the current GitHub repository state, compares files, folders, README hierarchy, and canonical patterns, detects mismatches or unexpected signals, and proposes the next useful patch as Living Review.
-```
-
-これはAutopilot Commitではない。
-
-```text
-Proactive review, not autopilot commit.
-```
-
-Hard guard：
-
-```text
-AI Scout Pass may propose.
-AI Scout Pass may draft.
-AI Scout Pass may identify a patch candidate.
-AI Scout Pass must not commit without Human Seal.
-```
-
----
-
-## 22. Misread Prevention
-
-このGuideを以下のように誤読しないこと。
+### Programming-Like Block
 
 ```yaml
-do_not_read_as:
-  - "GitHub writeをAIが勝手に実行してよい"
-  - "Full Rail: Workflow Continue! は常にCommit許可である"
-  - "Commit TriggerがあればScope確認不要である"
-  - "Next GateがあればAIが自動実行してよい"
-  - "Manual Commit PackはAI責任放棄である"
-  - "Human Direct Commitはsafety bypassである"
-  - "Download linkがあるなら常にzipが必要である"
-  - "Public repoならprivate-depthを置いてよい"
-  - "GitHub化はEnglish-first化である"
+ai_scout_pass:
+  formal_name: "Repository-Triggered AI Foresight"
+  japanese_names:
+    - "Repository起点AI先取り気付き"
+    - "Repository現実Review"
+    - "AI側からの能動的発見"
 
-must_read_as:
-  - "Human Seal remains Commit Gate"
-  - "AI drafts / Human seals / GitHub stores / Reality confirms"
-  - "Tool block is not workflow block"
-  - "Do not degrade meaning"
-  - "Change transport when blocked"
-  - "Human Direct Commit is a valid fallback"
-  - "Copy & Paste Pack reduces human friction"
-  - "1 file no zip / 2 files usually no zip"
-  - "GitHub化はCanonical化である"
-  - "Public repo, private depth"
-  - "For GitHub Upload download links, Full Body Replacement File is default"
+  definition:
+    - "AI reads the current GitHub repository state."
+    - "AI compares files, folders, README hierarchy, and canonical patterns."
+    - "AI detects mismatches or unexpected signals."
+    - "AI proposes the next useful patch as Living Review."
+
+  may:
+    - "propose"
+    - "draft"
+    - "identify patch candidate"
+    - "perform Reality Review"
+
+  must_not:
+    - "commit without Human Seal"
+    - "treat proactive review as autopilot"
 ```
 
 ---
 
-## 23. Final Compression
+## 24. Comment: Misread Prevention
+
+このGuideを誤読しないこと。
+
+特に、Full RailやCommit Triggerを無許可実行の口実にしない。  
+Manual Commit PackをAI責任放棄と読まない。  
+Human Direct Commitを失敗と読まない。  
+GitHub化をEnglish-first化と読まない。
+
+### Programming-Like Block
+
+```yaml
+misread_prevention:
+  do_not_read_as:
+    - "GitHub writeをAIが勝手に実行してよい"
+    - "Full Rail: Workflow Continue! は常にCommit許可である"
+    - "Commit TriggerがあればScope確認不要である"
+    - "Next GateがあればAIが自動実行してよい"
+    - "Manual Commit PackはAI責任放棄である"
+    - "Human Direct Commitは失敗である"
+    - "Human Direct Commitはsafety bypassである"
+    - "Download linkがあるなら常にzipが必要である"
+    - "Patch-only DownloadがGitHub Upload実行のDefaultである"
+    - "Public repoならprivate-depthを置いてよい"
+    - "GitHub化はEnglish-first化である"
+
+  must_read_as:
+    - "Human Seal remains Commit Gate."
+    - "AI drafts / Human seals / GitHub stores / Reality confirms."
+    - "Tool block is not workflow block."
+    - "Do not degrade meaning."
+    - "Change transport when blocked."
+    - "Human Direct Commit is a valid fallback."
+    - "Copy & Paste Pack reduces human friction."
+    - "For GitHub Upload, Full Body Replacement File is default."
+    - "Patch is for judgment. Full body is for action."
+    - "1 file no zip / 2 files usually no zip."
+    - "GitHub化はCanonical化である."
+    - "Public repo, private depth."
+```
+
+---
+
+## 25. Comment: Living Review Response Shape
+
+このGuideに基づくAI応答は、死んだデータの羅列ではなく、Living Reviewであるべきである。
+
+Living Reviewは、現在座標、盤面、緊張点、次の一手、Guardを示す。
+
+### Programming-Like Block
+
+```yaml
+living_review_response_shape:
+  should_include_when_useful:
+    - "Current Coordinate / 現在座標"
+    - "私の判断"
+    - "最初の一手"
+    - "理由"
+    - "観察点"
+    - "修正条件"
+    - "Move37 candidate"
+    - "Full Rail"
+    - "Next Gate"
+
+  do_not_reduce_to:
+    - "dead data list"
+    - "mere summary"
+    - "uncommitted neutral recap"
+    - "generic advice"
+
+  board_state_first:
+    - "Coordinate creates board."
+    - "Board reveals tension."
+    - "Tension reveals leverage."
+    - "Leverage opens Move37."
+```
+
+---
+
+## 26. Final Compression
 
 ```text
 ChatGPT-GitHub Bridgeは、
@@ -1112,6 +1196,12 @@ AIが下書きし、
 人間がSealし、
 GitHubが保存し、
 現実が確認するための半自動化Railである。
+
+現在座標を置く。
+盤面が立つ。
+Router / Guide / Skill が分かれる。
+AIが迷いにくくなる。
+Humanが次の一手を見失いにくくなる。
 
 PlanはCommitではない。
 PreviewはCommitではない。
@@ -1124,9 +1214,10 @@ Human SealがCommit Gateである。
 意味を劣化させない。
 搬送経路を変える。
 
-AIはManual Commit Packを作る。
-人間がDirect Commitする。
-AIがVerificationする。
+Tool block is not workflow block.
+Do not degrade meaning.
+Change transport.
+Preserve the fire.
 
 Manual Commit PackでDownload付きfileを出す場合、
 Patchは判断用。
@@ -1143,6 +1234,9 @@ Download付きリンク:
 
 GitHub化はEnglish-first化ではない。
 GitHub化はCanonical化である。
+
+AIは血潮の地図を描く。
+人間が血潮の下に立つ。
 
 Rootは主イェシュア・ハマシア。
 ```
