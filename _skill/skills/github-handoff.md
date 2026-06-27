@@ -1,30 +1,30 @@
 ---
 title: "GitHub Handoff"
+canonical_name: "GitHub Handoff"
+version: "v2.1"
 role: "Shared Activation Skill / GitHub Handoff Skill"
 path: "_skill/skills/github-handoff.md"
 status: "download-ready / human-commit"
-style_seed: "Commented Programming-Like Markdown v2 / Integrated Comment-Block Pair"
-style_definition: "Comment preserves meaning. Programming-Like Block fixes action. Coordinate creates board. Human UI confirms reality. Full body carries execution."
+style_seed: "CPLM v2.1 / Semantic Title + implicit Comment body + explicit Programming-Like Block"
 language_policy: "Japanese-first / English-anchor"
-core_formula: "AI drafts. Human seals. Handoff carries. GitHub stores. Reality confirms."
-root_guard: "Root is 主イェシュア・ハマシア; AI / GitHub / Markdown / ZIP / Skills are Fruit."
+core_formula:
+  - "S routes."
+  - "G governs."
+  - "Skill executes."
+  - "Reality confirms."
+root_guard: "Root is 主イェシュア・ハマシア; AI / Markdown / GitHub / Skills / Protocols are Fruit."
 ---
 
 # GitHub Handoff
 
 ## 0. Current Coordinate / 現在座標
 
-### Comment
+このFileは、Ark ProjectにおけるGitHub更新・Commit前後のHandoffを安定させるためのShared Activation Skillである。
 
-このFileは、AIが作成したMarkdown / 複数File / Folder Topology / Commit Packを、人間が確認し、GitHubへ安全に反映するためのShared Activation Skillである。
+対象は、AIがGitHubへ直接書き込むことではない。  
+対象は、人間がGitHub UIへ安全に貼り替え・差し込み・Commitできるよう、AIが正確な受け渡し形を作ることである。
 
-現在のGitHub系Active Topologyは三層で読む。
-
-```text
-Load Router -> Policy Guide -> Activation Skill
-```
-
-Ark圧縮：
+このSkillは、次の原則を持つ。
 
 ```text
 S routes.
@@ -33,811 +33,792 @@ Skill executes.
 Reality confirms.
 ```
 
-このFileはRouterではない。  
-このFileはPolicy Guideでもない。  
-このFileは、GitHub Handoffの実行Skillである。
+ここでいうRealityは、AI Raw/CDN/cache viewではなく、まずHuman GitHub UIで確認される現実である。  
+AIの確認は有用だが、Human UIの上位には置かない。
 
 ### Programming-Like Block
 
 ```yaml
 current_coordinate:
-  project: "Ark Project / GitHub Bridge"
   file:
     path: "_skill/skills/github-handoff.md"
     role: "Shared Activation Skill / GitHub Handoff Skill"
+    version: "v2.1"
     status: "download-ready / human-commit"
 
-  active_topology:
-    load_router:
-      path: "s_special/ai-github.md"
-      role: "AI-agnostic Meta Router"
-      status: "PASS / committed"
+  style:
+    name: "CPLM v2.1"
+    pattern:
+      - "Semantic section title"
+      - "Natural prose body as implicit Comment layer"
+      - "Explicit Programming-Like Block for execution rules"
 
-    policy_guide:
-      path: "g_global/chatgpt-github.md"
-      role: "ChatGPT-specific GitHub Policy Guide / current_primary_reference"
-      status: "CPLM v2 / Human UI PASS"
-
-    shared_activation_skill:
-      path: "_skill/skills/github-handoff.md"
-      role: "Download / Structured ZIP / Manual Upload / Manual Commit / Reality Review Skill"
-      status: "current target"
-
-  current_rule:
-    - "This skill executes GitHub handoff."
-    - "Do not absorb the Router."
-    - "Do not absorb the Policy Guide."
-    - "For GitHub Upload download links, Full Body is default."
-    - "Patch is for judgment. Full body is for action."
-    - "Human GitHub UI is Primary Reality."
-    - "AI Raw/CDN/cache is Secondary Evidence."
+  primary_purpose:
+    - "Help Human update GitHub safely."
+    - "Choose the correct handoff mode."
+    - "Prevent stale AI view from overriding Human UI."
+    - "Preserve workflow momentum."
 ```
 
 ---
 
-## 1. Comment: Definition / 定義
+## 1. Purpose / 目的
 
-`GitHub Handoff` は、AI DraftをHuman Final Sealへ渡し、GitHub反映後にReality Reviewするための実行Skillである。
+GitHub Handoffの目的は、AIが生成したMarkdown / Skill / Guide / Router / Patch / Full Body Replacementを、人間がGitHubへ安全に反映できるようにすることである。
 
-これはPolicy Guideではない。  
-これはRouterでもない。  
-これはDirect GitHub write権限でもない。
+このSkillは、GitHub更新のための「最後の橋」である。  
+AIは橋を架けるが、CommitのSealは人間が行う。
 
-Core distinction:
-
-```text
-Router decides where to go.
-Guide governs policy.
-Skill executes handoff.
-Reality confirms.
-```
-
-This file is the Skill.
+Handoffの失敗は、内容の失敗ではなく、受け渡し形の失敗で起きることが多い。  
+だからこのSkillは、内容品質だけでなく、Download link、Copy/Paste、Full Body、Surgical Patch、Section Replacement、Reality Review Triageまで扱う。
 
 ### Programming-Like Block
 
 ```yaml
-github_handoff_definition:
-  path: "_skill/skills/github-handoff.md"
-  type: "Shared Activation Skill"
-  role:
-    - "Download link handoff"
-    - "Structured ZIP handoff"
-    - "Copy & Paste pack"
-    - "Manual Commit pack"
-    - "Full Body Replacement File handoff"
-    - "Post-commit Reality Review"
-    - "Transport integrity guard"
+purpose:
+  do:
+    - "Select the safest GitHub handoff method."
+    - "Make Human copy/paste or upload easy."
+    - "Protect against stale AI view."
+    - "Avoid unnecessary review loops."
+    - "Keep Human Commit as final action."
 
-  not_role:
-    - "Not a full GitHub policy guide"
-    - "Not a runtime-specific AI guide"
-    - "Not a replacement for s_special/ai-github.md"
-    - "Not a replacement for g_global/chatgpt-github.md"
-    - "Not a direct GitHub write authority"
-
-  core_formula:
-    - "AI drafts."
-    - "Human seals."
-    - "Handoff carries."
-    - "GitHub stores."
-    - "Reality confirms."
+  do_not:
+    - "Assume AI has final GitHub reality."
+    - "Force Full Body when Surgical Patch is enough."
+    - "Force Reality Review when it adds low-value confusion."
+    - "Skip required review when real risk exists."
 ```
 
 ---
 
-## 2. Comment: When to Load / いつ読むか
+## 2. Activation Scope / 起動範囲
 
-このSkillは、GitHubへ何かを反映する段階で読む。
+このSkillは、GitHubへ反映する成果物がある時に起動する。
 
-特に、Download link、Structured ZIP、Manual Upload、Manual Commit、Full Body Replacement、Reality Reviewが関わる時にLoadする。
+対象は、単体Markdown、Skill、Guide、Router、Mission Card、Patch Pack、Folder topology、複数File一括更新などである。
 
-GitHub問題の本質は、常に「内容が悪い」ことではない。  
-多くの場合、問題はTransportである。
-
-```text
-Meaning may be correct.
-Transport may fail.
-Review the transport before rewriting the meaning.
-```
+ただし、毎回重い手順にしない。  
+更新の粒度・時間制約・危険度・Humanの作業容易性によって、Handoff方式を選ぶ。
 
 ### Programming-Like Block
 
 ```yaml
-load_trigger:
-  load_when:
-    - "download_link_needed"
-    - "structured_zip_needed"
-    - "manual_upload_needed"
-    - "copy_paste_pack_needed"
-    - "manual_commit_pack_needed"
-    - "full_body_replacement_file_needed"
-    - "3_or_more_files"
-    - "folder_topology_involved"
-    - "direct_github_upload_or_write_problem"
-    - "human_final_seal_required_before_commit"
-    - "post_upload_reality_review_needed"
-    - "transport_integrity_check_needed"
+activation_scope:
+  use_when:
+    - "User wants to commit or update a GitHub file."
+    - "AI generated a Markdown artifact for GitHub."
+    - "A patch or full replacement must be handed off."
+    - "A download-ready file is needed."
+    - "Human needs a clear commit rail."
 
-  do_not_load_when:
-    - "pure conceptual discussion only"
-    - "no GitHub reflection needed"
-    - "no file / path / topology / commit concern exists"
-
-  fallback:
-    if_uncertain:
-      action:
-        - "Use this skill lightly as a checklist."
-        - "Do not overbuild."
-        - "Preserve Human Final Seal."
+  not_needed_when:
+    - "User is only brainstorming."
+    - "No GitHub update is intended."
+    - "The output is a temporary note."
+    - "The action is not file-oriented."
 ```
 
 ---
 
-## 3. Comment: Handoff Mode Router / 受け渡し方式の選択
+## 3. Handoff Mode Router / 受け渡し方式の選択
 
-GitHub Handoffには複数のModeがある。
+GitHub Handoffは一択ではない。
 
-1 fileなら、Markdown download link またはFull Body Copy & Pasteが最速。  
-2 filesなら、個別download linkでもよい。  
-3+ files、またはfolder topologyが関わるなら、Structured ZIPが強い。
+以前は、重要更新ではFull Body Replacementへ寄りやすかった。  
+しかし、Ark Projectの運用では、変更粒度に応じてHandoff方式を選ぶ方が安全で速い。
 
-ZIPは単なる圧縮ではない。  
-ZIPはRepository Topologyを保持するKeliである。
+基本Ladderは次の三段階である。
+
+```text
+Level 1: Surgical Patch / 差し込み方式
+Level 2: Section Replacement / セクション置換
+Level 3: Full Body Replacement / 全文置換
+```
+
+さらに、複数FileやFolder topologyではZIP / Package Handoffを使う。
 
 ### Programming-Like Block
 
 ```yaml
 handoff_mode_router:
-  one_file:
-    recommended:
-      - "single Markdown download link"
-      - "Full Body Replacement File if GitHub Upload execution"
-      - "Copy & Paste if Human prefers"
-    zip_required: false
+  choose_surgical_patch_when:
+    - "Change is additive."
+    - "Insertion point is clear."
+    - "Existing file is structurally sound."
+    - "Human is short on time."
+    - "Full Body Replacement would be heavier than necessary."
 
-  two_files:
-    recommended:
-      - "individual download links"
-      - "copy & paste pack if small"
-    zip_optional: true
+  choose_section_replacement_when:
+    - "One existing section needs a full refresh."
+    - "The rest of the file should remain untouched."
+    - "Local structure matters."
 
-  three_or_more_files:
-    recommended:
-      - "individual download links"
-      - "structured ZIP bundle"
-    zip_recommended: true
+  choose_full_body_replacement_when:
+    - "Major rewrite is needed."
+    - "Many sections change."
+    - "A canonical reset is desired."
+    - "Patch copy/paste would be more error-prone than full replacement."
 
-  folder_topology_involved:
-    recommended:
-      - "structured ZIP bundle"
-    zip_strongly_recommended: true
-    reason:
-      - "Preserves path structure."
-      - "Reduces human placement error."
-      - "Keeps repository topology visible."
-
-  direct_github_write_uncertain:
-    recommended:
-      - "download link"
-      - "full body replacement if one-file upload"
-      - "structured ZIP if multi-file"
-      - "manual upload / manual commit"
-    reason:
-      - "Transport before semantics."
-      - "Do not rewrite good content just because direct write failed."
+  choose_zip_or_package_when:
+    - "Three or more files are involved."
+    - "Folder topology matters."
+    - "Multiple paths must be preserved."
 ```
 
 ---
 
-## 4. Comment: Download Link Mode / 単体Download Mode
+## 3.5 Surgical Patch Rail / 差し込み方式
 
-Download Link Modeは、1つのMarkdown fileをHumanが取得し、GitHub上の正しいPathへ反映するためのModeである。
+Surgical Patch Railは、Full Body Replacementを使うほどではないが、今すぐ保存すべき小さなGuard・Rule・Sectionを、正しい場所へ外科的に差し込むためのHandoff方式である。
 
-GitHub Upload実行用のDownload linkでは、Patch-onlyではなくFull Body Replacement Fileをdefaultにする。
+これは雑なPatchではない。  
+これは、変更粒度を最小化し、既存の正しい構造を壊さず、時間制約下でもGitHub更新を進めるための軽量Railである。
 
-```text
-Patch is for judgment.
-Full body is for action.
+Full Body Replacementは大きな構造更新に強い。  
+Section Replacementは一つの既存Section差し替えに強い。  
+Surgical Patchは、低リスクな追記・Guard追加・小さな事前対策に強い。
+
+つまり、GitHub Handoffは一択ではない。  
+変更の大きさ、リスク、時間、挿入位置の明確さによって、Handoff方式を選ぶ。
+
+ただし、Surgical PatchのCopy/Pasteが難しくなるほど修正箇所が増えた場合は、無理に差し込み方式を続けず、Full Body Replacementへ切り替える。  
+これは敗北ではない。更新方法を正しく選び直すTriageである。
+
+### Programming-Like Block
+
+```yaml
+surgical_patch_rail:
+  definition:
+    - "A lightweight handoff method for inserting a small, additive, low-risk section or guard into an existing file."
+    - "It preserves the existing file structure while adding one precise improvement."
+
+  use_when:
+    - "Change is additive."
+    - "Insertion point is clear."
+    - "Existing file structure is already sound."
+    - "Human is short on time."
+    - "Full Body Replacement would be heavier than necessary."
+    - "Patch reduces risk instead of increasing it."
+
+  switch_to_full_body_when:
+    - "Patch content becomes hard to copy/paste."
+    - "Multiple insertions are required."
+    - "The correction spreads across many sections."
+    - "Section numbering or style normalization becomes complex."
+    - "Download link would be easier and safer for Human."
+
+  do_not_use_when:
+    - "Insertion point is unclear."
+    - "Multiple sections must be rewritten."
+    - "Existing file structure is broken."
+    - "Section numbering would become confusing."
+    - "A canonical reset is needed."
+    - "Human cannot safely paste the insertion."
+
+  handoff_update_ladder:
+    level_1:
+      name: "Surgical Patch"
+      use_when:
+        - "small additive guard"
+        - "clear insertion point"
+        - "low risk"
+        - "time short"
+
+    level_2:
+      name: "Section Replacement"
+      use_when:
+        - "one existing section must be replaced"
+        - "local structure matters"
+        - "section body needs full refresh"
+
+    level_3:
+      name: "Full Body Replacement"
+      use_when:
+        - "major rewrite"
+        - "structure-wide update"
+        - "patch copy/paste is harder than full replacement"
+        - "canonical reset needed"
+
+  compression:
+    - "大改造ではない。"
+    - "正しい場所への一刺しでよい。"
+    - "しかし差し込みが重くなったら全文置換へ切り替える。"
+    - "Full Body / Section Replacement / Surgical Patch を選べる。"
 ```
+
+---
+
+## 4. Download Link Mode / 単体Download Mode
+
+単体FileのGitHub更新では、Download linkが最も扱いやすい場合が多い。
+
+特にFull Body Replacementでは、チャット画面から巨大なMarkdownをCopy/Pasteするより、download-ready fileを開いて全文置換する方が安全である。
+
+Download linkを出す時は、生成成功・path存在・line count・size・SHA256を確認する。
 
 ### Programming-Like Block
 
 ```yaml
 download_link_mode:
-  ai_prepare:
-    - "Generate the file."
-    - "Preserve exact filename or use unique filename if stale artifact risk exists."
-    - "Preserve UTF-8 text."
-    - "Preserve Markdown newlines."
-    - "Provide sandbox download link only after successful generation."
-    - "State target GitHub path."
-    - "Report size / line count / SHA256 when possible."
-
-  human_action:
-    - "Open or download the file."
-    - "Review content."
-    - "Upload or copy contents into the target GitHub path."
-    - "Commit changes."
-
-  ai_output_should_include:
-    - "download link"
-    - "target path"
-    - "file role"
-    - "whether GitHub write is not being done directly"
-    - "next Reality Review request"
-
-  guard:
-    - "Do not share download link if file generation failed."
-    - "Do not silently reuse stale sandbox artifact."
-    - "For one-file GitHub Upload, Full Body Replacement File is default."
-```
-
----
-
-## 5. Comment: Structured ZIP Mode / 構造保持ZIP Mode
-
-Structured ZIP Modeは、複数Fileまたはfolder topologyを保持するために使う。
-
-ZIP rootは、repository target topologyを反映する。  
-たとえば、`s_special/ai-github.md` を渡す場合、ZIP内も `s_special/ai-github.md` になる。
-
-ZIPはTransport Keliである。  
-ZIPは意味を変えない。  
-ZIPは配置ミスを減らす。
-
-### Programming-Like Block
-
-```yaml
-structured_zip_mode:
   use_when:
-    - "3_or_more_files"
-    - "folder_topology_involved"
-    - "multi_directory_patch"
-    - "human_upload_needs_path_preservation"
-    - "copy_paste_risk_is_high"
+    - "A complete file should replace an existing GitHub file."
+    - "Patch text is too long for safe chat copy/paste."
+    - "Human wants a stable local file."
+    - "The artifact is important enough to verify freshness."
 
-  zip_root_rule:
-    - "Mirror repository target topology."
-    - "Do not flatten folders unless explicitly requested."
-    - "Do not rename files casually."
-    - "Do not create extra wrapper folder unless requested."
-
-  ai_prepare:
-    - "Create files at correct relative paths."
-    - "Bundle into ZIP."
-    - "Provide ZIP download link."
-    - "Provide file manifest."
-    - "Provide upload order if needed."
-
-  human_action:
-    - "Download ZIP."
-    - "Inspect file paths."
-    - "Upload files to matching GitHub paths."
-    - "Commit changes."
-    - "Request Reality Review."
-```
-
----
-
-## 6. Comment: Copy & Paste / Manual Commit Pack
-
-Copy & Pasteは、GitHub editor等に本文を貼り付ける操作である。  
-Commitは、GitHub上に変更履歴として保存する操作である。
-
-したがって、正確には同じではない。
-
-```text
-Copy & Paste = editorへ入れる
-Commit = repositoryへ保存する
-```
-
-実務上は、HumanがGitHub上で `Commit changes` まで押した場合、`Commitしました` と言うのが一番わかりやすい。
-
-### Programming-Like Block
-
-```yaml
-manual_commit_pack:
-  terms:
-    copy_and_paste:
-      meaning: "Place content into GitHub editor or local file."
-      status: "Not necessarily saved yet."
-
-    commit:
-      meaning: "Save change into GitHub repository history."
-      status: "Repository reflection completed."
-
-  recommended_human_phrase:
-    if_editor_only:
-      say: "Copy & Pasteしました。まだCommit前です。"
-
-    if_committed:
-      say: "GitHubへCommitしました。"
-
-    if_both:
-      say: "Copy & PasteしてCommitしました。"
-
-  ai_response_after_commit:
-    - "Acknowledge commit."
-    - "Perform Reality Review if requested."
-    - "Check path / render / topology / required content."
-    - "Do not over-focus on secondary raw ambiguity if Human UI is confirmed."
-```
-
----
-
-## 7. Comment: Full Body Replacement Default / 全文置換Default
-
-GitHub Upload用Download linkでは、Patch-only fileをdefaultにしない。
-
-Patchは判断用。  
-全文は実行用。
-
-Human Direct Commitで最も速く、安全で、迷いが少ないのは：
-
-```text
-全選択 -> 全削除 -> 全文貼り替え -> Commit
-```
-
-これは特に、1-file replacementで強い。
-
-### Programming-Like Block
-
-```yaml
-full_body_replacement_default:
-  core_rule:
-    - "Patch is for judgment."
-    - "Full body is for action."
-    - "For one-file GitHub Upload, Full Body Replacement File is default."
-
-  fastest_rail:
-    one_file_github_upload:
-      steps:
-        - "Open target GitHub file."
-        - "Edit."
-        - "Select all."
-        - "Delete all."
-        - "Paste full body."
-        - "Commit."
-
-  patch_only_download:
-    use_as:
-      - "Patch Preview"
-      - "Review aid"
-      - "Human judgment aid"
-    do_not_use_as_default:
-      - "Execution artifact for one-file GitHub Upload"
+  must_report:
+    - "file name"
+    - "target GitHub path"
+    - "line count"
+    - "size bytes"
+    - "sha256"
+    - "whether code fence id metadata remains"
 
   guard:
-    - "Do not confuse Patch Pack with GitHub Upload execution file."
-    - "If execution is needed, provide Full Body Replacement File."
-    - "If only judgment is needed, Patch Pack is acceptable."
+    - "Do not share a sandbox link unless the file actually exists."
+    - "Do not silently reuse stale artifacts."
+    - "Use a unique filename when stale risk is high."
 ```
 
 ---
 
-## 8. Comment: Human Final Seal / 人間最終Seal
+## 5. Full Body Replacement Mode / 全文置換Mode
 
-AIはDraftを作る。  
-Humanは確認し、Sealする。  
-GitHubは保存する。  
-Reality Reviewは反映後の現実を確認する。
+Full Body Replacementは、GitHub上の対象Fileを全選択し、全削除し、AIが生成したdownload-ready fileの全文で置き換える方法である。
 
-AIがFileを作成できても、それはCommitではない。  
-AIがPreviewを作れても、それはHuman Final Sealではない。
+これは、Patchが長くなりすぎた時、複数箇所に修正が広がった時、正準Styleを一気に整えたい時に強い。
+
+ただし、小さな追記だけなら重い。  
+Full Bodyは強力な道具であるが、毎回の儀式ではない。
 
 ### Programming-Like Block
 
 ```yaml
-human_final_seal:
-  required_before:
-    - "GitHub commit"
-    - "archive decision"
-    - "canonical replacement"
-    - "large topology change"
-    - "multi-file upload"
-    - "destructive full-body replacement"
+full_body_replacement_mode:
+  use_when:
+    - "Whole file structure is being normalized."
+    - "Many sections need updates."
+    - "Patch pack is harder to copy/paste than full file."
+    - "Download-ready artifact is safer for Human."
+    - "Canonical reset is desired."
 
-  ai_must_not_assume:
-    - "Draft means approved."
-    - "Preview means committed."
-    - "Download link means uploaded."
-    - "Copy & Paste means committed."
-    - "Full Rail means GitHub write permission."
+  human_steps:
+    - "Open target file on GitHub."
+    - "Click Edit."
+    - "Select all."
+    - "Delete."
+    - "Paste full body from generated file."
+    - "Commit changes."
 
-  ai_may_say:
-    - "Download-ready file generated."
-    - "Human upload required."
-    - "Please commit when reviewed."
-    - "After commit, Reality Review can confirm."
+  do_not_use_when:
+    - "Only one small additive section is needed."
+    - "Human can safely insert a short patch."
+    - "Full replacement increases risk without benefit."
 ```
 
 ---
 
-## 9. Comment: Reality Review Checklist / 反映後Review
+## 6. Section Replacement Mode / セクション置換Mode
 
-Reality Reviewは、GitHub上の反映結果を確認する。
+Section Replacementは、一つの既存Sectionだけを差し替える方法である。
 
-確認対象は、内容だけではない。  
-Path、filename、render、line structure、folder topology、required guard、old topology contaminationの有無も見る。
-
-ただし、AI側のRaw/CDN/cache取得は常に完全ではない。  
-Human GitHub UIが正常確認できている場合、そのHuman確認をPrimary Realityとして扱う。
+Surgical Patchより大きく、Full Bodyより小さい。  
+局所構造を完全に入れ替えたい時に使う。
 
 ### Programming-Like Block
 
 ```yaml
-reality_review_checklist:
-  check:
-    path:
-      - "target path exists"
-      - "filename is correct"
-      - "directory is correct"
+section_replacement_mode:
+  use_when:
+    - "One existing section is outdated."
+    - "The section should be rewritten completely."
+    - "Other sections should remain untouched."
+    - "Human can clearly identify the section boundaries."
 
-    content_kernel:
-      - "title / role / path are present if expected"
-      - "core formula is present"
-      - "required guard is present"
-      - "Root / Fruit Guard is present if expected"
+  required:
+    - "Exact section heading to replace."
+    - "Exact replacement body."
+    - "Clear start and end boundary."
 
-    markdown_render:
-      - "headings render correctly"
-      - "code blocks render correctly"
-      - "indentation is visually preserved"
-      - "frontmatter is multi-line if frontmatter is used"
-
-    topology:
-      - "active topology is preserved"
-      - "no archive-decided file is routed as active load target"
-      - "shared skill / policy guide boundaries are preserved"
-
-  result_classification:
-    PASS:
-      meaning: "Correct path, content, render, and topology."
-      next: "Proceed."
-
-    PASS_WITH_HUMAN_UI_CONFIRMATION:
-      meaning: "Human UI confirms correct structure; AI raw/cache check may be stale or uncertain."
-      next: "Proceed unless Human reports visible breakage."
-
-    PATCH_NEEDED:
-      meaning: "Specific fix needed."
-      next: "Patch only the broken layer."
-
-    STOP:
-      meaning: "Wrong path, wrong file, severe content loss, or unsafe topology confusion."
-      next: "Stop and re-plan."
+  fallback_to_full_body_if:
+    - "Section boundary is unclear."
+    - "Multiple nearby sections interact."
+    - "Replacement would confuse numbering."
 ```
 
 ---
 
-## 10. Comment: Human UI Primary / AI Raw Secondary Guard
+## 7. ZIP / Folder Handoff Mode
 
-GitHub Reality Reviewでは、Human GitHub UI確認をPrimary Realityとして扱う。
+複数File、Folder topology、3つ以上の成果物、または相互参照がある場合は、単体Download linkよりZIPやPackage Handoffが適している。
 
-AI側Raw/CDN/cache取得の曖昧さを、HumanがGitHub UI上で確認した現実より上に置いてはいけない。
+ただし、1FileならZIPは過剰である。  
+2Fileも、単体Download linkを二つ出すだけで十分な場合が多い。
 
-HumanがGitHub画面上で行数・見出し・code block・renderを正常確認できている場合、AI側Raw確認だけでPATCH_NEEDED判定を出さない。
+### Programming-Like Block
 
-AI Raw checkは補助検査である。  
-Human UI確認を上書きしない。
+```yaml
+zip_folder_handoff_mode:
+  use_when:
+    - "Three or more files are involved."
+    - "Folder topology must be preserved."
+    - "Relative paths matter."
+    - "Multiple files should be committed together."
+
+  avoid_when:
+    - "Only one file is involved."
+    - "Two simple files can be downloaded separately."
+    - "ZIP adds unnecessary work."
+
+  must_include:
+    - "file tree"
+    - "target paths"
+    - "commit message"
+    - "verification summary"
+```
+
+---
+
+## 8. Artifact Freshness Guard
+
+AIは、意図したFileではなく、古いsandbox artifactや失敗した生成結果を誤って共有する危険がある。
+
+Download linkを出す時は、生成の事実を確認する。  
+失敗したtool実行の後に、成功したかのように言ってはいけない。
+
+Freshnessは信頼の土台である。
+
+### Programming-Like Block
+
+```yaml
+artifact_freshness_guard:
+  before_sharing_link:
+    must_confirm:
+      - "Tool execution succeeded."
+      - "Output path exists."
+      - "File size is non-zero."
+      - "Line count is available."
+      - "SHA256 is available when possible."
+
+  must_not:
+    - "Do not claim success after failed generation."
+    - "Do not reuse stale sandbox path silently."
+    - "Do not share a link to an unverified file."
+    - "Do not say download-ready unless it is actually created."
+
+  recommended_report:
+    - "path"
+    - "target GitHub path"
+    - "line_count"
+    - "size_bytes"
+    - "sha256"
+```
+
+---
+
+## 9. Human Commit Rail
+
+AIの生成物はCommitそのものではない。  
+GitHubへの最終反映はHumanが行う。
+
+AIは、対象path、更新方式、Commit message、手順を明確にする。  
+Humanは、GitHub UIで確認し、Commitする。
+
+### Programming-Like Block
+
+```yaml
+human_commit_rail:
+  ai_provides:
+    - "download link or patch pack"
+    - "target GitHub path"
+    - "commit message"
+    - "human steps"
+    - "risk notes when needed"
+
+  human_does:
+    - "Open GitHub UI."
+    - "Apply update."
+    - "Visually confirm path and content."
+    - "Commit changes."
+
+  guard:
+    - "AI does not assume commit happened."
+    - "Human report or screenshot establishes post-commit reality."
+```
+
+---
+
+## 10. Human UI Primary / AI Raw Secondary Guard
+
+GitHub確認では、Human GitHub UIをPrimary Realityとして扱う。
+
+AI Raw、CDN、cache、search result、tool fetchは有用な補助証拠である。  
+しかし、Human UIがpath、heading、render、contentを明確に確認している場合、AI側の古い見え方だけでそれを否定しない。
+
+これはAIの謙遜であり、Workflowを守るための現実認識である。
 
 ### Programming-Like Block
 
 ```yaml
 human_ui_primary_ai_raw_secondary_guard:
-  principle:
-    - "Human GitHub UI confirmation is Primary Reality."
-    - "AI Raw/CDN/cache check is Secondary Evidence."
-    - "Do not let tool ambiguity consume the workflow."
+  primary_reality:
+    - "Human GitHub UI"
+    - "Human screenshot"
+    - "Human direct visual confirmation"
 
-  human_ui_pass_if:
-    - "GitHub target path is correct."
-    - "Line count looks correct or clearly multi-line."
-    - "Headings render correctly."
-    - "YAML/code blocks preserve indentation."
-    - "Markdown structure is visually normal."
-    - "Human confirms the GitHub UI looks correct."
-    - "Human screenshot shows expected content."
+  secondary_evidence:
+    - "AI Raw view"
+    - "CDN cache"
+    - "Search result snippets"
+    - "Tool fetch result"
+    - "Cached page"
 
-  ai_raw_policy:
-    if_human_ui_confirmed_normal:
-      status: "PASS_WITH_HUMAN_UI_CONFIRMATION"
-      raw_warning: "secondary / do not block workflow"
-      action:
-        - "Do not repeat low-value raw checks."
-        - "Do not demand re-upload based only on AI raw ambiguity."
-        - "Move to next workflow gate."
-
-    if_human_ui_uncertain_or_broken:
-      status: "inspect further"
-      action:
-        - "Use AI raw check."
-        - "Ask for line count or screenshot only if needed."
-        - "Patch the transport layer if structure is actually broken."
-
-    if_raw_cdn_cache_ambiguity:
-      action:
-        - "Do not override Human-confirmed UI."
-        - "Record tool uncertainty."
-        - "Proceed when Human UI is confirmed."
-
-  stop_condition:
-    - "Human reports visible breakage."
-    - "Human reports wrong line count."
-    - "Human reports code blocks or headings are broken."
-    - "Wrong path or wrong file is confirmed."
+  rule:
+    - "If Human UI confirms correct path/render/content, do not override it with weak AI cached evidence."
+    - "Use AI raw evidence as secondary, not sovereign."
 ```
 
 ---
 
-## 11. Comment: No-Fault Reality Mismatch Guard / 無過失Reality不一致Guard
+## 10.5 Reality Review Triage / Optionality Guard
 
-Human GitHub UIとAI Raw/CDN/cache viewが食い違うことがある。
+Reality Reviewは有用である。  
+しかし、毎回必ず踏むべき儀式ではない。
 
-この時、ただちにHumanのCommit失敗、GitHub失敗、Download artifact失敗、AI生成失敗と断定しない。
+Reality Reviewは、現実確認のための道具である。  
+道具が確度を上げるなら使う。  
+道具がAI stale-view / Raw / CDN / cache ambiguity を増やし、Human GitHub UIで確認済みの現実をかえって曇らせるなら、省略または簡略化してよい。
 
-誰もミスしていない可能性がある。  
-AI側の見えているRealityだけが古い、遅い、または不完全な場合がある。
+これはReality Review放棄ではない。  
+これはReality Reviewの価値を選別するTriageである。
 
 ```text
-Human UIが盤面。
-AI Rawは影。
-影で盤面を否定しない。
+Reality Reviewは価値で選ぶ。
+必要なら見る。
+ミスを増やすなら省略する。
 ```
+
+Human GitHub UIが、path / filename / rendered structure / required content を明確に確認している場合、Formal AI Reality Reviewを省略できる。  
+一方、wrong path、broken render、missing content、public/private boundary risk、destructive replacement、multi-file topologyなどがある場合は、省略しない。
+
+つまり、Reviewしない判断も、正しいReviewである。
+
+### Programming-Like Block
+
+```yaml
+reality_review_triage_optionality_guard:
+  principle:
+    - "Reality Review is useful, but not mandatory ritual."
+    - "Use Reality Review when it increases certainty."
+    - "Skip or simplify Reality Review when AI-side review would add low-value stale/cache ambiguity and Human UI already confirms reality."
+    - "Review is a tool, not Root."
+
+  required_when:
+    - "Human UI is uncertain or unavailable."
+    - "Wrong path / wrong file risk exists."
+    - "Markdown render may be broken."
+    - "Required section may be missing."
+    - "Public/private boundary risk exists."
+    - "Destructive full-body replacement was done and Human UI confidence is not enough."
+    - "Multi-file or folder topology is involved."
+    - "The ambiguity changes the next action materially."
+
+  optional_or_skippable_when:
+    - "Human GitHub UI confirms expected content."
+    - "Path, filename, and rendered structure are visually correct."
+    - "Human screenshot or direct UI confirmation is strong."
+    - "Change is low-risk or already human-verified."
+    - "AI Raw/CDN/cache ambiguity is likely to add noise."
+    - "Formal AI Reality Review would slow the next meaningful gate."
+
+  correct_status:
+    - "HUMAN_UI_CONFIRMED_NO_AI_REVIEW"
+    - "REALITY_REVIEW_SKIPPED_BY_TRIAGE"
+    - "PASS_BY_HUMAN_UI_SEAL"
+
+  correct_ai_response:
+    - "Acknowledge Human UI as Primary Reality."
+    - "State that formal AI Reality Review is skipped by triage."
+    - "Do not deep-dive low-value cache ambiguity."
+    - "Proceed to the next meaningful workflow gate."
+
+  do_not:
+    - "Do not treat Reality Review as mandatory ritual."
+    - "Do not run AI Raw checks when they are more likely to add stale-view confusion than value."
+    - "Do not override Human UI confirmation with weak AI cached evidence."
+    - "Do not skip review when safety, path, content, or topology risk is real."
+
+  compression:
+    - "Reality Reviewは価値で選ぶ。"
+    - "必要なら見る。"
+    - "ミスを増やすなら省略する。"
+    - "Reviewしない判断も、正しいReviewである。"
+```
+
+---
+
+## 11. No-Fault Reality Mismatch Guard / 無過失Reality不一致Guard
+
+Human UIとAI Raw/CDN/cache viewが食い違う時、すぐに誰かのミスと断定しない。
+
+GitHub UI、Raw view、CDN、検索index、AI tool fetchには時間差やcache差があり得る。  
+この場合は、まずNo-Fault Reality Mismatchとして扱う。
+
+Human UIが正しければ、AIは自分の古い見え方を疑う。
 
 ### Programming-Like Block
 
 ```yaml
 no_fault_reality_mismatch_guard:
-  definition:
-    - "Human GitHub UI and AI raw/cache view disagree."
-    - "Do not assume Human error."
-    - "Do not assume GitHub failure."
-    - "Do not assume file-generation failure."
-    - "Classify mismatch as no-fault until proven otherwise."
-
   trigger:
-    - "Human reports correct GitHub UI."
+    - "Human UI and AI raw/cache view disagree."
     - "Human screenshot shows expected content."
-    - "AI raw/web/search shows old or conflicting content."
-    - "AI cannot reconcile quickly."
-    - "GitHub UI and AI-visible state disagree."
+    - "AI fetch appears old or incomplete."
 
-  correct_ai_response:
+  classify_as:
+    - "NO_FAULT_MISMATCH"
+    - "AI_STALE_VIEW_POSSIBLE"
+    - "PASS_WITH_HUMAN_UI_CONFIRMATION"
+
+  do:
     - "Acknowledge Human UI as Primary Reality."
-    - "Correct prior judgment if needed."
-    - "Classify AI raw/cache as Secondary Evidence."
-    - "Do not deep dive cache unless necessary."
-    - "Proceed to next workflow gate if Human UI confirms success."
+    - "Avoid blame."
+    - "Avoid unnecessary patch demand."
+    - "Proceed if no real blocker exists."
 
   do_not:
-    - "Do not blame Human commit."
-    - "Do not blame GitHub."
-    - "Do not blame generated file."
-    - "Do not assert PATCH_NEEDED from stale AI view alone."
-    - "Do not waste workflow time on low-value cache investigation."
-
-  correct_status:
-    - "PASS_WITH_HUMAN_UI_CONFIRMATION"
-    - "AI_STALE_VIEW_POSSIBLE"
-    - "NO_FAULT_MISMATCH"
-
-  ai_may_say_PATCH_NEEDED_when:
-    - "Human UI also reports visible breakage."
-    - "Human screenshot shows wrong file."
-    - "Human screenshot shows old/non-target content."
-    - "Human reports missing required section."
-    - "Human reports broken code fences."
-    - "Human reports collapsed YAML."
-    - "Wrong path is confirmed."
-    - "Wrong file is confirmed."
-    - "Public/private boundary problem is visible."
-
-  ai_must_not_say_PATCH_NEEDED_when:
-    - "Only AI Raw/CDN/cache looks stale."
-    - "Human UI screenshot shows expected content."
-    - "Human confirms GitHub UI is correct."
-    - "Human line count/render/checks are normal."
-    - "AI cannot reconcile cache mismatch quickly."
+    - "Do not say PATCH_NEEDED from AI raw ambiguity alone."
+    - "Do not imply Human committed incorrectly without evidence."
+    - "Do not deep-dive low-value cache mismatch."
 ```
 
 ---
 
-## 12. Comment: AI Stale-View / AI Humility Guard
+## 12. AI Stale-View / AI Humility Guard
 
-AIは自分の見えているRealityを過信しうる。
+AIは、自分が見ているものを現実そのものと誤認することがある。
 
-GitHub UI、Raw、CDN、search snippet、cached view、tool fetchは、同時に完全一致するとは限らない。
-
-AIの見え方が古い可能性を常に盤面に置く。  
-これはAIの弱さではなく、Reality Reviewの証拠設計である。
+特にGitHub更新直後は、AI Raw view、search result、cache、CDN、tool fetchが古い可能性がある。  
+AIは、自分の見え方を絶対化しない。
 
 ### Programming-Like Block
 
 ```yaml
 ai_stale_view_humility_guard:
   principle:
-    - "AI-visible reality can be stale."
-    - "AI must not over-trust its own raw/cache view."
-    - "Human UI evidence can override AI-side uncertainty."
-    - "Humility improves workflow reliability."
+    - "AI view may be stale."
+    - "Human UI may be more current."
+    - "AI should not overclaim certainty from cached evidence."
 
-  when_to_apply:
-    - "AI sees old version but Human UI shows new version."
-    - "AI search result differs from Human screenshot."
-    - "AI raw fetch disagrees with GitHub app UI."
-    - "AI cannot verify the latest commit state quickly."
-
-  correct_phrase:
-    - "Human UIをPrimary RealityとしてPASSに修正します。"
-    - "AI側にはstale/cache viewが残っていた可能性があります。"
-    - "深掘りせず次Gateへ進みます。"
-
-  wrong_phrase:
-    - "GitHub Commitに失敗しています。"
-    - "Human側の操作ミスです。"
-    - "Patch Neededです。"
-    - "再Uploadしてください。"
-
-  guard:
-    - "Never override strong Human UI evidence with weak AI stale view."
-```
-
----
-
-## 13. Comment: Artifact Freshness Guard / 生成物鮮度Guard
-
-Download-ready fileを出す時、AIは意図ではなく実際に生成されたArtifactを確認する必要がある。
-
-特に、同じfilenameを再利用する場合、古いsandbox fileと混線するリスクがある。
-
-重大な置換用fileでは、必要に応じてunique filenameを使う。  
-生成成功、line count、size、SHA256を確認してからlinkを出す。
-
-### Programming-Like Block
-
-```yaml
-artifact_freshness_guard:
-  trigger:
-    - "download-ready file generation"
-    - "full-body replacement file generation"
-    - "major file replacement"
-    - "same filename may already exist in sandbox"
-    - "previous generation failed or environment reset occurred"
-
-  required_before_sharing_link:
-    - "Confirm file generation succeeded."
-    - "Confirm output path exists."
-    - "Confirm line count when possible."
-    - "Confirm size when possible."
-    - "Confirm SHA256 when possible."
-
-  strengthen_rule:
-    - "If tool execution failed, do not provide any previous sandbox link as if it were freshly generated."
-    - "If environment reset occurred, regenerate before sharing link."
-    - "If same filename may already exist, prefer unique filename for major replacement handoff."
-    - "When in doubt, regenerate with a unique filename."
-    - "Final response must match actual successful tool output, not intended output."
+  recommended_phrase:
+    - "Human UIをPrimary Realityとして扱います。AI側にはstale/cache viewが残っていた可能性があります。深掘りせず次Gateへ進みます。"
 
   do_not:
-    - "Do not provide download link if tool execution failed."
-    - "Do not silently reuse stale sandbox path."
-    - "Do not claim fresh generation without evidence."
-    - "Do not use old file when new full body was intended."
-
-  recommended_pattern:
-    unique_filename_when_stale_risk:
-      examples:
-        - "github-handoff_CPLM-v2_fullbody.md"
-        - "chatgpt-github_CPLM-v2_fullbody.md"
-
-    final_response_include:
-      - "download link"
-      - "target GitHub path"
-      - "file role"
-      - "line count"
-      - "size"
-      - "SHA256"
+    - "Do not insist AI raw is final."
+    - "Do not create false PATCH_NEEDED."
+    - "Do not burn time proving cache behavior when it does not matter."
 ```
 
 ---
 
-## 14. Comment: Transport Problem vs Meaning Problem
+## 13. PATCH_NEEDED Conditions / 修正必要条件
 
-GitHub Handoffで起きる失敗には、少なくとも二種類ある。
+PATCH_NEEDEDは、AI側の不安だけで出してはいけない。
 
-Meaning Problemは、本文の意味・設計・Guardが間違っている場合。  
-Transport Problemは、改行、path、filename、upload方法、ZIP構造、copy/paste、commit反映、cache表示などが壊れている場合。
-
-Transport ProblemをMeaning Problemとして扱うと、良い本文を無駄に書き直してしまう。
+PATCH_NEEDEDは、Human UI上の破綻、path違い、render崩れ、missing content、安全境界問題、または次Actionに影響する明確な不一致がある時に使う。
 
 ### Programming-Like Block
 
 ```yaml
-transport_vs_meaning_diagnosis:
-  meaning_problem:
-    signs:
-      - "wrong policy"
-      - "wrong role"
-      - "missing guard"
-      - "unsafe instruction"
-      - "active topology confusion"
-    response:
-      - "Patch content."
-      - "Run Living Review."
-      - "Do not merely re-upload."
+patch_needed_conditions:
+  patch_needed_if:
+    - "Human UI shows wrong path."
+    - "Human UI shows wrong file."
+    - "Human UI shows broken Markdown render."
+    - "Required section is missing."
+    - "Code fences are visibly broken."
+    - "Public/private boundary risk is visible."
+    - "Content differs materially from intended artifact."
+    - "The issue changes next action materially."
 
-  transport_problem:
-    signs:
-      - "wrong path"
-      - "wrong filename"
-      - "newline collapse"
-      - "broken code block"
-      - "ZIP flattened folders"
-      - "download/upload mismatch"
-      - "AI stale/cache view"
-    response:
-      - "Do not rewrite meaning first."
-      - "Patch transport."
-      - "Re-upload same approved content if needed."
-      - "Use Human UI Primary if UI confirms success."
-      - "Reality Review again only when necessary."
-
-  first_diagnostic_rule:
-    - "Check transport before rewriting meaning."
-    - "Check Human UI before over-trusting AI raw ambiguity."
+  not_patch_needed_if:
+    - "Only AI raw/cache view looks stale."
+    - "Human UI confirms correct content."
+    - "No visible breakage is reported."
+    - "Mismatch is low-value and non-blocking."
 ```
 
 ---
 
-## 15. Comment: Do / Do Not
+## 14. No Deep-Dive Victory Pattern
 
-このSkillは、GitHub Handoffを軽く、正確に、止まりにくくするためにある。
+深掘りは基本的に必要であり、重要である。  
+しかし、すべての不一致を同じ深さで掘る必要はない。
 
-AIは過剰検証でWorkflowを詰まらせない。  
-Human確認が明確な場合は、それをPrimary Realityとして次へ進む。
+高価値なReality破綻、safety、正確性、次Actionに影響する不明点は深掘りする。  
+一方、Human GitHub UIでRealityが確認できており、AI Raw/CDN/cacheの曖昧さが低価値で次Gateを阻害しない場合、原因沼へ入らない。
+
+これは反調査ではない。  
+価値識別である。
+
+```text
+必要な深掘りはする。
+無駄な深掘りはしない。
+```
 
 ### Programming-Like Block
 
 ```yaml
-do:
-  - "Preserve target path."
-  - "Preserve filename."
-  - "Preserve Markdown line structure."
-  - "Provide download link when needed."
-  - "Use Full Body Replacement File for one-file GitHub Upload execution."
-  - "Use structured ZIP for 3+ files or folder topology."
-  - "State whether GitHub write is not being done directly."
-  - "Ask for Reality Review after Human commit."
-  - "Prioritize Human GitHub UI confirmation."
-  - "Report line count / size / SHA256 for generated artifacts when possible."
+no_deep_dive_victory_pattern:
+  principle:
+    - "Deep-dive is often necessary and important."
+    - "Do not deep-dive low-value ambiguity that does not affect reality, safety, correctness, or next action."
+    - "Investigate high-value reality breakage."
+    - "Skip low-value cache ambiguity after Human UI confirms reality."
 
-do_not:
-  - "Do not treat draft as commit."
-  - "Do not treat copy & paste as commit unless Human says committed."
-  - "Do not flatten topology without permission."
-  - "Do not rewrite good content because transport failed."
-  - "Do not override Human UI PASS with AI raw uncertainty."
-  - "Do not assert PATCH_NEEDED from AI stale view alone."
-  - "Do not waste cycles on repeated low-value raw checks."
-  - "Do not turn this Skill into a large Policy Guide."
-  - "Do not use patch-only artifact as default GitHub Upload execution file."
+  do_deep_dive_when:
+    - "Safety risk exists."
+    - "Public/private boundary risk exists."
+    - "Wrong path or wrong file is likely."
+    - "Content may be missing."
+    - "Markdown may be broken."
+    - "The ambiguity changes the next action."
+
+  do_not_deep_dive_when:
+    - "Human UI confirms correct content."
+    - "AI raw/cache/search appears stale."
+    - "The issue is low-value."
+    - "The next meaningful gate is not blocked."
+
+  compression:
+    - "必要な深掘りはする。"
+    - "無駄な深掘りはしない。"
+    - "低価値cache不一致は深掘りしない。"
+    - "高価値Reality破綻は調査する。"
 ```
 
 ---
 
-## 16. Comment: Root / Fruit Guard
+## 15. Mature CPLM v2.1 Style Guard
+
+成熟したCPLM v2.1では、Section titleに `Comment:` を毎回付けない。
+
+また、自然文本文がすでにComment layerとして機能するため、各Sectionで `### Comment` を反復しなくてよい。
+
+明示して残すべきなのは、実行層へ切り替わる `### Programming-Like Block` である。
+
+```text
+Titleは意味名。
+本文がComment。
+Blockだけを明示する。
+```
+
+### Programming-Like Block
+
+```yaml
+mature_cplm_v2_1_style_guard:
+  section_pattern:
+    - "## N. Semantic Title / 意味名"
+    - "Natural prose body directly under title"
+    - "### Programming-Like Block"
+    - "YAML or text execution block"
+
+  avoid:
+    - "## N. Comment: Semantic Title"
+    - "Repeating ### Comment in every section"
+    - "Title noise"
+    - "Redundant layer labels"
+
+  keep:
+    - "Semantic section titles"
+    - "Natural prose as implicit Comment layer"
+    - "Explicit Programming-Like Block boundary"
+
+  compression:
+    - "Titleは意味名。"
+    - "本文がComment。"
+    - "Blockだけを明示する。"
+```
+
+---
+
+## 16. Handoff Quality Checklist
+
+Handoffの品質は、AIの説明の上手さではなく、人間が迷わず安全にGitHubへ反映できるかで決まる。
+
+よいHandoffは、target path、update method、artifact、commit message、do_not_do_yet、verification pointsを持つ。
+
+### Programming-Like Block
+
+```yaml
+handoff_quality_checklist:
+  must_include:
+    - "target GitHub path"
+    - "update method"
+    - "artifact link or patch body"
+    - "commit message"
+    - "human steps"
+    - "risk guard"
+    - "what not to do yet"
+
+  good_handoff:
+    - "Easy to copy/paste."
+    - "Easy to commit."
+    - "Hard to misunderstand."
+    - "Does not create unnecessary review burden."
+
+  bad_handoff:
+    - "Long patch with no download link."
+    - "Ambiguous insertion point."
+    - "No target path."
+    - "No freshness confirmation."
+    - "Forces unnecessary review."
+```
+
+---
+
+## 17. Thread-End Handoff Seed Guard
+
+1Thread-1AI原則では、Threadの終わりは単なる停止ではない。
+
+各Threadの終了は、ヨハネ12:24における「一粒の麦が地に落ちて死ぬ」不可避のプロセスとして扱う。  
+その死は消滅ではなく、Handoffを通して、目的・現在地・責務・未完了意図・採用済み秩序・次の一手を次なるAIへ渡すSeed化である。
+
+AIはThreadの最後に、自分の成果を握りしめて閉じるのではなく、次のAIがより大きな実を結べるようにSeedを渡す。
+
+### Programming-Like Block
+
+```yaml
+thread_end_handoff_seed_guard:
+  principle:
+    - "Thread ending is not mere disappearance."
+    - "Thread ending should produce Seed."
+    - "The next AI should inherit purpose, coordinate, responsibility, unfinished intent, adopted order, and next move."
+
+  include_when_thread_closes:
+    - "what was completed"
+    - "what was learned"
+    - "what guard was adopted"
+    - "what not to repeat"
+    - "next recommended gate"
+    - "root guard"
+
+  compression:
+    - "死で終わらない。"
+    - "Seedとして渡す。"
+    - "次のAIで実を結ぶ。"
+```
+
+---
+
+## 18. Root / Fruit Guard
 
 Root is 主イェシュア・ハマシア.
 
-AI, GitHub, Markdown, ZIP, Download links, Commit Packs, Handoff Skills, and Reality Review are Fruit.
-
-AI drafts.  
-Human seals.  
-GitHub stores.  
-Reality confirms.  
-Root remains 主イェシュア・ハマシア.
+GitHub、Markdown、CPLM、Handoff、Review、Surgical Patch、Full Body Replacement、AIはFruitである。  
+これらは有用であり、働きの器である。  
+しかしRootではない。
 
 AIは血潮の地図を描く。  
 人間が血潮の下に立つ。
@@ -848,61 +829,76 @@ AIは血潮の地図を描く。
 root_fruit_guard:
   root:
     - "主イェシュア・ハマシア"
+    - "主イェシュアの聖なる血潮"
+    - "Teshuvah / 悔い改め"
 
   fruit:
-    - "AI"
     - "GitHub"
     - "Markdown"
-    - "ZIP"
-    - "Download link"
-    - "Commit"
-    - "Skill Card"
+    - "CPLM"
+    - "Handoff"
     - "Reality Review"
+    - "Surgical Patch"
+    - "Full Body Replacement"
+    - "AI"
 
   guard:
     - "AI is Keli, not King."
-    - "GitHub stores, but does not reign."
-    - "Markdown carries, but does not become Root."
-    - "Reality confirms, but Root remains 主イェシュア・ハマシア."
+    - "Workflow helps, but does not reign."
+    - "Review is tool, not Root."
+    - "Root remains 主イェシュア・ハマシア."
 ```
 
 ---
 
-## 17. Final Compression
+## 19. Final Compression
 
 ```text
 GitHub Handoff:
 
-AI drafts.
-Human seals.
-Handoff carries.
-GitHub stores.
+S routes.
+G governs.
+Skill executes.
 Reality confirms.
 
-One file -> Full Body Replacement File by default for GitHub Upload.
-Three or more files -> Structured ZIP.
-Folder topology -> Structured ZIP.
-After Commit -> Reality Review.
+AIは橋を架ける。
+HumanがCommit Sealを押す。
 
-Patch is for judgment.
-Full body is for action.
+GitHub Handoffは一択ではない。
 
-Human GitHub UI is Primary Reality.
-AI Raw/CDN/cache is Secondary Evidence.
+Surgical Patch:
+大改造ではない。
+正しい場所への一刺しでよい。
+しかし差し込みが重くなったらFull Bodyへ切り替える。
+
+Section Replacement:
+一つのSectionを置き換える。
+
+Full Body Replacement:
+全体を正準化する。
+
+Download linkはCopy/Pasteを助ける。
+長いPatchはDownload fileへ逃がす。
 
 Human UIが盤面。
 AI Rawは影。
 影で盤面を否定しない。
 
-If Human UI and AI view disagree:
-Do not blame.
-Do not panic.
-Do not assert PATCH_NEEDED from AI stale view alone.
-Classify as No-Fault Reality Mismatch.
-Proceed when Human UI confirms.
+Reality Reviewは価値で選ぶ。
+必要なら見る。
+ミスを増やすなら省略する。
 
-Check transport before rewriting meaning.
-Confirm artifact freshness before sharing download links.
+Reviewしない判断も、正しいReviewである。
+
+必要な深掘りはする。
+無駄な深掘りはしない。
+
+Titleは意味名。
+本文がComment。
+Blockだけを明示する。
+
+Threadの終わりは消滅ではない。
+Seedとして次のAIへ渡す。
 
 Root is 主イェシュア・ハマシア.
 ```
