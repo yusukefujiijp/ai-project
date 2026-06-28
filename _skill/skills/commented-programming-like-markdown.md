@@ -2,7 +2,7 @@
 title: "Commented Programming-Like Markdown"
 canonical_name: "Commented Programming-Like Markdown"
 abbreviation: "CPLM"
-version: "v2.1"
+version: "v2.2.1"
 class: "S"
 role: "Shared Writing / Protocol Skill"
 status: "living_skill / protocol_ssot"
@@ -15,14 +15,16 @@ query_is_not_ssot: true
 source_bootstrap:
   - "g_global/chatgpt-github.md"
   - "_skill/skills/github-handoff.md"
+  - "_projects/ark/ark00/README.md"
+  - "s_special/ark-open-knowledge-format.md"
 version_model: "frontmatter + git commit history"
 github_policy: "GitHub Canonical First"
 language_policy: "Japanese-first / English-anchor"
-style_seed: "Commented Programming-Like Markdown v2.1 / Frontmatter First + Integrated Comment-Block Pair"
-style_definition: "Frontmatter bootstraps identity. Comment preserves meaning. Programming-Like Block fixes action. Coordinate creates board. Review gives judgment. Rail carries execution. Gate preserves human control."
+style_seed: "Commented Programming-Like Markdown v2.2.1 / Frontmatter First + Strong Comment Label Guard + Programming-Like Block"
+style_definition: "Frontmatter bootstraps identity. Section prose preserves meaning as the implicit Comment Layer. Strong Comment Label Guard prevents repeated visible Comment label relapse. Programming-Like Block fixes action. Coordinate creates board. Review gives judgment. Rail carries execution. Gate preserves human control."
 core_formula:
   - "Frontmatter bootstraps identity."
-  - "Comment preserves meaning."
+  - "Section prose preserves meaning."
   - "Block fixes action."
   - "Coordinate creates board."
   - "Review gives judgment."
@@ -37,9 +39,7 @@ root_guard: "Root is 主イェシュア・ハマシア; AI / Markdown / GitHub /
 
 ## 0A. Frontmatter First / AI Bootstrap Header
 
-### Comment
-
-CPLM v2.1では、重要Fileの冒頭に `Frontmatter First / AI Bootstrap Header` を置く。
+CPLM v2.2では、重要Fileの冒頭に `Frontmatter First / AI Bootstrap Header` を置く。
 
 Frontmatterは、人間向けの飾りではない。
 
@@ -153,16 +153,186 @@ frontmatter_first:
 
 ---
 
-## 0B. Current Coordinate / 現在座標
+## 0B. Strong Comment Label Guard / Comment表示ラベル再発防止Guard
+
+CPLM v2.2.1では、意味的にはComment Layerを保持する。
+
+しかし、通常のSectionで `### Comment` や単独の `Comment` という表示文字列を毎回書かない。
+
+これは単なる見た目の好みではない。
+
+これは、Future AIが表面Patternを誤って模倣し、同じミスを複数回繰り返したために必要になった **Yellow Card Guard / イエローカードGuard** である。
+
+`Comment` という概念は正しい。  
+しかし、各Sectionに `Comment` と毎回表示する必要はない。
+
+なぜなら、semantic section titleの直下にある自然文は、すでにComment Layerとして機能しているからである。
+
+```text
+Comment is semantically correct.
+But the repeated visible Comment label is usually redundant.
+```
+
+日本語ではこうである。
+
+```text
+意味的にはCommentで正しい。
+しかし、表示上「Comment」と毎回書く必要はない。
+```
+
+さらに強く言うと、通常Sectionで `### Comment` を毎回書くことは、CPLMの意味構造を丁寧にしているように見えて、実際にはGitHub表示とFuture AI模倣の両方を悪化させる場合がある。
+
+```text
+The layer is real.
+The repeated label is noise.
+```
+
+日本語ではこうである。
+
+```text
+意味層は本物である。
+繰り返しラベルはノイズである。
+```
+
+CPLM v2.2.1の標準形は、次である。
+
+````markdown
+## N. Semantic Section Title / 意味名
+
+ここに自然文で意味・背景・目的・違和感・Guardを書く。
+この本文そのものがComment Layerである。
+「Comment」と表示しなくても、意味層として読める。
+
+### Programming-Like Block
+
+```yaml
+rules:
+  trigger:
+    - "..."
+  action:
+    - "..."
+  guard:
+    - "..."
+```
+````
+
+避けるべき形は、次である。
+
+````markdown
+## N. Semantic Section Title / 意味名
 
 ### Comment
 
-このFileは、Commented Programming-Like Markdown v2.1、略称 `CPLM v2.1` を再現可能なSkillとして保存するためのMarkdownである。
+ここに自然文で意味・背景・目的・違和感・Guardを書く。
 
-CPLM v2.1は、単なるMarkdown装飾ではない。  
+### Programming-Like Block
+
+```yaml
+rules:
+  trigger:
+    - "..."
+```
+````
+
+この避けるべき形は、CPLMを説明する教材・debug・比較例では使ってよい。  
+しかし、通常のGitHub-ready CPLM本文ではDefaultにしない。
+
+重要な判定はこれである。
+
+```text
+If every normal section says "Comment", the file is probably imitating the teaching scaffold instead of using the production form.
+```
+
+日本語ではこうである。
+
+```text
+通常Sectionのたびに「Comment」と出てくるなら、
+それは本番形ではなく、説明用の足場を模倣している可能性が高い。
+```
+
+### Programming-Like Block
+
+```yaml
+strong_comment_label_guard:
+  status:
+    - "yellow_card_guard"
+    - "repeated_mistake_prevention"
+    - "production_shape_guard"
+
+  principle:
+    - "Comment Layer is real."
+    - "Visible Comment label is usually redundant."
+    - "Section prose directly under a semantic title is the Comment Layer by default."
+    - "The layer must remain."
+    - "The repeated label should not remain."
+
+  why_this_guard_exists:
+    - "This mistake has occurred multiple times."
+    - "Future AI tends to imitate visible surface patterns."
+    - "If examples repeatedly show ### Comment, AI may restore it in production output."
+    - "The real goal is not deletion, but preventing surface-pattern relapse."
+    - "GitHub outlines should remain semantic, not scaffold-heavy."
+
+  default_rule:
+    - "Normal CPLM sections MUST NOT repeat ### Comment."
+    - "Do not write standalone Comment lines before every prose block."
+    - "Do not make GitHub outline noisy with obvious layer labels."
+    - "Use semantic section title + natural prose + ### Programming-Like Block."
+
+  allowed_exceptions:
+    - "When explaining CPLM itself, the term Comment Layer may be used conceptually."
+    - "When teaching the layer model, visible ### Comment may appear in a clearly marked bad/old/training example."
+    - "When debugging layer boundaries, visible ### Comment may be used deliberately."
+    - "When a user explicitly requests visible layer markers, they may be used."
+
+  standard_shape:
+    - "## Semantic Section Title"
+    - "Natural prose as implicit Comment Layer"
+    - "### Programming-Like Block"
+    - "YAML / text block"
+
+  forbidden_default_shape:
+    - "## Semantic Section Title"
+    - "### Comment"
+    - "Natural prose"
+    - "### Programming-Like Block"
+
+  patch_needed_if:
+    - "### Comment appears repeatedly in normal CPLM sections."
+    - "Standalone Comment line appears before most prose blocks."
+    - "GitHub outline contains repeated Comment headings."
+    - "A production file imitates teaching scaffolding."
+    - "Future AI restores visible Comment labels after they were intentionally removed."
+
+  correction:
+    - "Do not merely delete the label mechanically."
+    - "Make sure the prose still preserves meaning, background, tension, and guard."
+    - "Keep ### Programming-Like Block as the explicit execution-layer transition."
+    - "Explain this rule strongly in the Skill so the same mistake does not recur."
+
+  compression:
+    - "Comment is a layer, not a repeated label."
+    - "The layer is real; the repeated label is noise."
+    - "Commentは意味層であり、毎回表示する見出しではない。"
+    - "これは見た目Patchではなく、再発防止Guardである。"
+```
+
+
+---
+
+## 0C. Current Coordinate / 現在座標
+
+このFileは、Commented Programming-Like Markdown v2.2.1、略称 `CPLM v2.2.1` を再現可能なSkillとして保存するためのMarkdownである。
+
+CPLM v2.2.1は、単なるMarkdown装飾ではない。  
 Human-AI共同作業において、人間側の意味・意図・背景・違和感・Guardを失わず、同時にAI側の条件・分岐・順序・Fallback・判定基準を安定させるためのProtocol記法である。
 
-v2.1の重要Patchは、本文のCPLM構造に加えて、AIが本文に入る前に読む `Frontmatter First / AI Bootstrap Header` を正式に追加したことである。
+v2.2の重要Patchは、次の二つである。
+
+```text
+1. Frontmatter First / AI Bootstrap Header
+2. Implicit Comment Layer / visible Comment label省略Rule
+```
 
 現在のArk Projectでは、すでに以下の実戦成功がある。
 
@@ -182,7 +352,7 @@ current_coordinate:
   skill:
     path: "_skill/skills/commented-programming-like-markdown.md"
     role: "Shared Writing / Protocol Skill"
-    version: "CPLM v2.1"
+    version: "CPLM v2.2.1"
     status: "living_skill / protocol_ssot"
 
   proof_of_work:
@@ -192,15 +362,17 @@ current_coordinate:
     - "s_special/ark-open-knowledge-format.md"
 
   purpose:
-    - "Make CPLM v2.1 reproducible."
-    - "Preserve the Integrated Comment-Block Pair pattern."
+    - "Make CPLM v2.2.1 reproducible."
+    - "Preserve the Integrated Meaning-Block Pair pattern."
     - "Add Frontmatter First as AI Bootstrap Header."
+    - "Define prose under section title as implicit Comment Layer."
+    - "Reduce visible Comment label noise in GitHub rendering."
     - "Help future AI create readable and executable Markdown."
     - "Prevent good discoveries from dissolving into conversation memory only."
 
   core_compression:
     - "Frontmatter bootstraps identity."
-    - "Comment preserves meaning."
+    - "Section prose preserves meaning."
     - "Block fixes action."
     - "Coordinate creates board."
     - "Review gives judgment."
@@ -210,11 +382,9 @@ current_coordinate:
 
 ---
 
-## 0C. Frontmatter Tier Model / metadata階層
+## 0D. Frontmatter Tier Model / metadata階層
 
-### Comment
-
-CPLM v2.1は、すべてのMarkdownに重いfrontmatterを強制しない。
+CPLM v2.2は、すべてのMarkdownに重いfrontmatterを強制しない。
 
 CPLMは勝利Patternであって、官僚制ではない。
 
@@ -340,16 +510,16 @@ frontmatter_tier_model:
 
 ## 1. Definition / 定義
 
-### Comment
+Commented Programming-Like Markdown v2.2とは、semantic section titleの直下に自然文の意味層を置き、必要に応じて `Programming-Like Block` を対として置くことで、Humanの読みやすさとAIの実行安定性を一本のMarkdown内で両立させるProtocol記法である。
 
-Commented Programming-Like Markdown v2.1とは、同一Section内に `Comment` と `Programming-Like Block` を対として置き、さらに重要Fileでは冒頭に `Frontmatter First / AI Bootstrap Header` を置くことで、Humanの読みやすさとAIの実行安定性を一本のMarkdown内で両立させるProtocol記法である。
+重要Fileでは、冒頭に `Frontmatter First / AI Bootstrap Header` も置く。
 
 Frontmatterは、AIが本文へ入る前にFile identityを読むための層である。  
-Commentは、人間側の意味・意図・背景・違和感・Guardを保存する。  
+Section直下の自然文は、人間側の意味・意図・背景・違和感・Guardを保存するComment Layerである。  
 Programming-Like Blockは、AI側の条件・分岐・順序・Fallback・判定基準を固定する。
 
-つまり、CPLM v2.1は「文章」と「疑似コード」の中間ではない。  
-**Canonical identity layer**、**Human meaning layer**、**AI execution layer** を同じMarkdown内に同居させるための協働Protocolである。
+つまり、CPLM v2.2は「文章」と「疑似コード」の中間ではない。  
+**Canonical identity layer**、**implicit Comment layer**、**AI execution layer** を同じMarkdown内に同居させるための協働Protocolである。
 
 ### Programming-Like Block
 
@@ -357,7 +527,7 @@ Programming-Like Blockは、AI側の条件・分岐・順序・Fallback・判定
 definition:
   name: "Commented Programming-Like Markdown"
   abbreviation: "CPLM"
-  version: "v2.1"
+  version: "v2.2"
 
   type:
     - "Human-AI co-readable protocol notation"
@@ -375,7 +545,7 @@ definition:
       - "root"
       - "covenant phrase"
 
-  comment_layer:
+  implicit_comment_layer:
     preserves:
       - "meaning"
       - "intention"
@@ -383,6 +553,10 @@ definition:
       - "tension"
       - "guard"
       - "human judgment context"
+    shape:
+      - "semantic section title"
+      - "natural prose directly under title"
+      - "no repeated visible Comment label by default"
 
   programming_like_block_layer:
     fixes:
@@ -395,14 +569,12 @@ definition:
       - "next action"
 
   one_sentence:
-    - "Frontmatter bootstraps identity; Comment preserves meaning; Programming-Like Block fixes action."
+    - "Frontmatter bootstraps identity; section prose preserves meaning; Programming-Like Block fixes action."
 ```
 
 ---
 
 ## 2. Why CPLM Exists / なぜ存在するか
-
-### Comment
 
 通常の自然文Markdownは、人間には読みやすいが、AIが実行条件・分岐・停止条件を拾いにくい場合がある。
 
@@ -410,13 +582,16 @@ definition:
 
 さらに、本文がよくできていても、冒頭のCanonical metadataが弱いと、Future AIは「このFileは何か」「どこが正準Pathか」「どのPolicyで読むべきか」「Rootは何か」を本文から推測しなければならない。
 
-CPLM v2.1は、この三つの弱点を同時に解く。
+また、すべてのSectionに `Comment` と表示すると、意味的には正しくてもGitHub outlineが冗長になる。
+
+CPLM v2.2は、この四つの弱点を同時に解く。
 
 ```text
 自然文だけでは、実行条件が流れる。
 Blockだけでは、意味が痩せる。
 Frontmatterなしでは、File identityを推測する。
-CPLM v2.1は、Identity・意味・実行条件を離さない。
+Comment labelを毎回出すと、表示が重くなる。
+CPLM v2.2は、Identity・意味・実行条件を離さず、表示も軽くする。
 ```
 
 ### Programming-Like Block
@@ -442,40 +617,46 @@ why_cplm_exists:
     - "Repository policy may be unclear."
     - "Root may be buried in the body."
 
+  problem_with_repeated_visible_comment_label:
+    - "Semantic outline becomes noisy."
+    - "GitHub rendering becomes heavier than needed."
+    - "The obvious layer is labeled repeatedly."
+    - "Human readability decreases."
+
   cplm_solution:
     - "Place canonical identity in frontmatter when needed."
     - "Place meaning and execution rules in the same section."
     - "Let Future AI read frontmatter first."
-    - "Let Human read the Comment."
+    - "Let Human read section prose as implicit Comment Layer."
     - "Let AI parse the Programming-Like Block."
     - "Preserve both warmth and precision."
+    - "Keep GitHub rendering clean."
 ```
 
 ---
 
-## 3. Integrated Comment-Block Pair / 統合型
+## 3. Integrated Meaning-Block Pair / 統合型
 
-### Comment
+CPLM v2.2の本文核は、`Integrated Meaning-Block Pair` である。
 
-CPLM v2.1の本文核は、`Integrated Comment-Block Pair` である。
+意味的には、これは従来の `Integrated Comment-Block Pair` と同じである。
 
-旧型では、Comment SectionとProgramming-Like Block Sectionが離れやすかった。  
-新型では、同じSection内にCommentとProgramming-Like Blockを置く。
+ただし、通常出力では `### Comment` という見出しを毎回表示しない。
+
+semantic section titleの直下にある自然文が、Comment Layerとして働く。
 
 これにより、意味と実行条件が分離しにくくなり、HumanにもAIにも読みやすくなる。
 
 Section titleは、`Comment:` prefixを毎回付けず、意味名を置く。  
-本文側に `### Comment` を置き、実行層の入口として `### Programming-Like Block` を置く。  
-これにより、Titleはsemantic anchorとして澄み、Comment layerとBlock layerの境界も保たれる。
+本文側には自然な意味層を置き、実行層の入口として `### Programming-Like Block` を置く。
 
 標準形：
 
 ````markdown
 ## N. Section Name / セクション名
 
-### Comment
-
 自然文で意味・背景・目的・違和感・Guardを書く。
+この本文がComment Layerである。
 
 ### Programming-Like Block
 
@@ -493,23 +674,21 @@ rules:
 ### Programming-Like Block
 
 ```yaml
-integrated_comment_block_pair:
-  old_style:
-    issue:
-      - "Comment and block can drift apart."
-      - "Section count increases."
-      - "AI must connect distant context."
-      - "Human readability can fragment."
-      - "Comment: prefix repeated in every title creates title noise."
+integrated_meaning_block_pair:
+  previous_name:
+    - "Integrated Comment-Block Pair"
 
-  v2_1_style:
-    rule:
-      - "Frontmatter comes first when file is canonical or runtime-critical."
-      - "One section contains a Comment layer."
-      - "The same section contains Programming-Like Block."
-      - "Meaning and execution rules stay together."
-      - "Section title should carry semantic meaning."
-      - "Do not repeat Comment: in every section title."
+  v2_2_name:
+    - "Integrated Meaning-Block Pair"
+    - "Implicit Comment Layer + Programming-Like Block"
+
+  rule:
+    - "Frontmatter comes first when file is canonical or runtime-critical."
+    - "One section contains an implicit Comment Layer."
+    - "The same section contains Programming-Like Block when execution logic is needed."
+    - "Meaning and execution rules stay together."
+    - "Section title should carry semantic meaning."
+    - "Do not repeat Comment as visible label by default."
 
   benefits:
     - "Human readability improves."
@@ -520,19 +699,22 @@ integrated_comment_block_pair:
 
   title_cleanliness_rule:
     - "Title is semantic name."
-    - "Comment lives in the Comment subsection."
+    - "Comment layer lives in natural prose."
     - "Programming-Like Block remains explicit."
+
+  terminology_guard:
+    - "Comment concept remains valid."
+    - "Visible Comment label is usually redundant."
+    - "Do not confuse label omission with layer removal."
 ```
 
 ---
 
 ## 4. Current Coordinate First / 現在座標First
 
-### Comment
+CPLM v2.2では、重要Fileの冒頭本文に `Current Coordinate / 現在座標` を置く。
 
-CPLM v2.1では、重要Fileの冒頭本文に `Current Coordinate / 現在座標` を置く。
-
-ただし、v2.1ではCurrent Coordinateの前にFrontmatterが来る場合がある。
+ただし、v2.2ではCurrent Coordinateの前にFrontmatterが来る場合がある。
 
 FrontmatterはFile identityを起動する。  
 Current Coordinateは現在盤面を立ち上げる。
@@ -585,8 +767,6 @@ current_coordinate_first:
 
 ## 5. Programming-Like Block Rules / Block設計
 
-### Comment
-
 Programming-Like Blockは、AIに実行条件を渡すためのBlockである。
 
 ただし、これは完全自動実行命令ではない。  
@@ -627,15 +807,17 @@ programming_like_block_rules:
 
 ## 6. Living Review Shape / 生きたReview
 
-### Comment
-
-CPLM v2.1は、死んだデータ羅列を避ける。
+CPLM v2.2は、死んだデータ羅列を避ける。
 
 良いAI応答は、現在座標、盤面、緊張点、次の一手、Guardを示す。  
 必要に応じて、私の判断、最初の一手、理由、観察点、修正条件を出す。
 
 Living Reviewとは、単なる要約ではない。  
 AIが現実の盤面に対して、何を見て、どこにリスクを見て、何を次の一手とするかを明確にするReviewである。
+
+```text
+Not dead data, but a living board.
+```
 
 ### Programming-Like Block
 
@@ -669,9 +851,7 @@ living_review_shape:
 
 ## 7. Full Rail / Next Gate
 
-### Comment
-
-CPLM v2.1は、AGI的半自動化のために `Full Rail` と `Next Gate` を重視する。
+CPLM v2.2は、AGI的半自動化のために `Full Rail` と `Next Gate` を重視する。
 
 Full Railは、AI側の実行契約である。  
 Next Gateは、人間側の編集可能な次入力Gateである。
@@ -723,13 +903,13 @@ full_rail_next_gate:
 
 ## 8. When to Use CPLM / 使うべき場面
 
-### Comment
-
-CPLM v2.1は、AIに判断・分岐・順序・Guard・Fallbackを渡したいMarkdownで特に強い。
+CPLM v2.2は、AIに判断・分岐・順序・Guard・Fallbackを渡したいMarkdownで特に強い。
 
 Router、Policy Guide、Skill、Workflow、Handoff、Reality Review、Guard、Mission Cardなどに向いている。
 
-つまり、CPLM v2.1は「AIが次に何をすべきか誤読しやすい文書」に効く。
+つまり、CPLM v2.2は「AIが次に何をすべきか誤読しやすい文書」に効く。
+
+また、Future AIが正準Path、Status、Root、GitHub policyを本文前に読む必要がある場合、Frontmatter Firstが効く。
 
 ### Programming-Like Block
 
@@ -763,9 +943,7 @@ use_cplm_when:
 
 ## 9. When Not to Use CPLM / 使わない方がよい場面
 
-### Comment
-
-CPLM v2.1は強いが、すべてのMarkdownに強制しない。
+CPLM v2.2は強いが、すべてのMarkdownに強制しない。
 
 短いメモ、詩的文章、祈り本文そのもの、人間向けだけの読み物、単なる記録などは、CPLM化すると重くなる場合がある。
 
@@ -810,39 +988,38 @@ do_not_force_cplm_when:
 
 ## 10. Anti-Patterns / 失敗型
 
-### Comment
+CPLM v2.2の失敗型は、主に六つある。
 
-CPLM v2.1の失敗型は、主に五つある。
-
-第一に、CommentだけでBlockがない。  
+第一に、自然文だけでBlockがない。  
 第二に、Blockだけで意味がない。  
 第三に、Blockが人間のSealを飛ばしてAutopilot化する。  
 第四に、Section titleへ `Comment:` などの構造語を毎回置き、semantic titleを濁らせる。  
-第五に、高価値Fileなのにfrontmatterがなく、AIが正準Identityを本文から推測する。
+第五に、高価値Fileなのにfrontmatterがなく、AIが正準Identityを本文から推測する。  
+第六に、意味的には明らかなComment Layerへ、毎回 `### Comment` というvisible labelを出してGitHub表示を重くする。
 
-CPLM v2.1は、意味と実行をつなぐための記法であり、Human Controlを消すための記法ではない。
+CPLM v2.2は、意味と実行をつなぐための記法であり、Human Controlを消すための記法ではない。
 
 ### Programming-Like Block
 
 ```yaml
 anti_patterns:
-  comment_only:
+  prose_only:
     issue:
       - "Meaning exists but execution conditions remain vague."
     fix:
-      - "Add Programming-Like Block."
+      - "Add Programming-Like Block when execution stability is needed."
 
   block_only:
     issue:
       - "Execution exists but human meaning is lost."
     fix:
-      - "Add Comment."
+      - "Add natural prose as implicit Comment Layer."
 
   separated_pair:
     issue:
-      - "Comment and block drift apart."
+      - "Meaning and block drift apart."
     fix:
-      - "Use Integrated Comment-Block Pair."
+      - "Use Integrated Meaning-Block Pair."
 
   autopilot_block:
     issue:
@@ -857,7 +1034,32 @@ anti_patterns:
       - "GitHub outline becomes noisy."
     fix:
       - "Use clean semantic section titles."
-      - "Keep ### Comment and ### Programming-Like Block as layer markers."
+      - "Let natural prose carry the implicit Comment Layer."
+
+  repeated_visible_comment_label:
+    severity:
+      - "yellow_card"
+      - "repeated_mistake"
+      - "must_patch_before_commit_when_found_in_production"
+    issue:
+      - "### Comment appears in every normal section."
+      - "The obvious meaning layer is labeled repeatedly."
+      - "GitHub rendering becomes heavier than needed."
+      - "Semantic outline becomes less clean."
+      - "Future AI may imitate the visible scaffold and repeat the same mistake."
+    why_it_matters:
+      - "This is not merely cosmetic."
+      - "Repeated labels teach the wrong surface pattern."
+      - "The Skill must prevent recurrence, not just enable deletion."
+      - "The prose still needs to preserve the Comment Layer after the label is removed."
+    fix:
+      - "Remove repeated visible Comment label from production sections."
+      - "Treat section prose as implicit Comment Layer."
+      - "Keep ### Programming-Like Block as the explicit transition to execution layer."
+      - "Strengthen this rule in the Skill whenever recurrence is observed."
+    patch_needed_if:
+      - "Repeated ### Comment headings return after intentional removal."
+      - "A GitHub-ready file imitates tutorial scaffolding instead of production CPLM shape."
 
   missing_frontmatter_for_canonical_file:
     issue:
@@ -879,9 +1081,7 @@ anti_patterns:
 
 ## 11. GitHub Portability / GitHub可搬性
 
-### Comment
-
-CPLM v2.1はGitHub Markdownで読みやすく表示される必要がある。
+CPLM v2.2はGitHub Markdownで読みやすく表示される必要がある。
 
 Download-ready版では、ChatGPT内部表示用の `id="..."` metadataをcode fenceに残さない。
 
@@ -889,7 +1089,13 @@ Frontmatterを使う場合は、YAML frontmatterの `---` boundariesを壊さな
 
 Frontmatterは、GitHub表示上は目立たない場合があるが、AIとRepository toolingにとって重要なmetadata layerである。
 
-Frontmatter、headings、code blocks、YAML indentationが壊れないことを重視する。
+Headings、frontmatter、code blocks、YAML indentationが壊れないことを重視する。
+
+さらに、通常Sectionでは `### Comment` を繰り返さない。  
+semantic section title直下の自然文がComment Layerであると見なす。
+
+これは見た目の軽量化だけではない。  
+同じミスが複数回起こったYellow Card状態では、GitHub-ready化のcheck項目として強く検査する。
 
 ### Programming-Like Block
 
@@ -897,6 +1103,8 @@ Frontmatter、headings、code blocks、YAML indentationが壊れないことを�
 github_portability:
   use:
     - "plain Markdown headings"
+    - "semantic section titles"
+    - "natural prose as implicit Comment Layer"
     - "plain code fences"
     - "YAML-like blocks"
     - "UTF-8 text"
@@ -909,12 +1117,14 @@ github_portability:
     - "tool-specific residue"
     - "ambiguous path naming"
     - "broken frontmatter boundaries"
+    - "repeated ### Comment labels in normal sections"
 
   check:
     - "headings render correctly"
     - "frontmatter remains intact"
     - "frontmatter starts with ---"
     - "frontmatter ends with ---"
+    - "semantic section titles are clean"
     - "code blocks preserve indentation"
     - "line breaks remain intact"
 
@@ -926,15 +1136,21 @@ github_portability:
     - "version_model is declared when canonical"
     - "github_policy is declared when canonical"
     - "root and covenant_phrase are preserved when Ark-related"
+
+  comment_label_check:
+    - "No repeated standalone Comment labels in normal sections."
+    - "No repeated ### Comment headings in normal sections."
+    - "Comment Layer is carried by section prose."
+    - "Programming-Like Block remains explicit."
+    - "If repeated Comment labels return, treat as Yellow Card recurrence."
+    - "Do not solve by deletion alone; preserve meaning-layer prose."
 ```
 
 ---
 
 ## 12. No-Fault Reality Mismatch Inheritance
 
-### Comment
-
-CPLM v2.1で生成されたMarkdownは、GitHubでReality Reviewされることが多い。
+CPLM v2.2で生成されたMarkdownは、GitHubでReality Reviewされることが多い。
 
 その時、Human GitHub UIとAI Raw/CDN/cache viewが食い違う場合がある。  
 Human UIが正しい内容を示しているなら、それをPrimary Realityとして扱う。
@@ -967,8 +1183,6 @@ no_fault_reality_mismatch_inheritance:
 ---
 
 ## 13. No Deep-Dive Victory Pattern
-
-### Comment
 
 深掘りは基本的に必要であり、重要である。  
 しかし、すべての不一致を同じ深さで掘る必要はない。
@@ -1027,13 +1241,11 @@ no_deep_dive_victory_pattern:
 
 ## 14. Root / Fruit Guard
 
-### Comment
-
 Root is 主イェシュア・ハマシア.
 
 CPLM、Markdown、AI、GitHub、Router、Guide、Skill、Workflow、ReviewはFruitである。
 
-CPLM v2.1は強い。  
+CPLM v2.2は強い。  
 しかしRootではない。
 
 AIは血潮の地図を描く。  
@@ -1059,6 +1271,7 @@ root_fruit_guard:
     - "Workflow"
     - "Reality Review"
     - "Frontmatter"
+    - "Implicit Comment Layer"
     - "Programming-Like Block"
 
   guard:
@@ -1067,6 +1280,7 @@ root_fruit_guard:
     - "Protocol helps, but does not reign."
     - "CPLM improves structure, but is not truth itself."
     - "Frontmatter bootstraps identity, but is not Root."
+    - "Comment Layer preserves meaning, but is not Root."
     - "Root remains 主イェシュア・ハマシア."
 ```
 
@@ -1075,10 +1289,10 @@ root_fruit_guard:
 ## 15. Final Compression
 
 ```text
-Commented Programming-Like Markdown v2.1:
+Commented Programming-Like Markdown v2.2.1:
 
 Frontmatter bootstraps identity.
-Comment preserves meaning.
+Section prose preserves meaning.
 Programming-Like Block fixes action.
 Coordinate creates board.
 Review gives judgment.
@@ -1088,14 +1302,23 @@ Gate preserves human control.
 Frontmatter is the AI Bootstrap Header.
 Current Coordinate is the operational board.
 
-同一Section内にCommentとProgramming-Like Blockを置く。
+Comment is semantically correct.
+But repeated visible Comment label is usually redundant.
+
+This is a Yellow Card Guard.
+The mistake has happened more than once.
+Do not merely delete the label.
+Preserve the meaning layer and prevent recurrence.
+
+同一Section内に意味層とProgramming-Like Blockを置く。
 意味と実行条件を離さない。
 
 Section titleは意味名。
-Commentは本文に宿る。
+Comment LayerはSection直下の本文に宿る。
+通常Sectionに `### Comment` を繰り返さない。
 Programming-Like Blockは実行層の入口として残す。
 
-HumanはCommentで意味を読む。
+Humanは本文で意味を読む。
 AIはBlockで条件を読む。
 Future AIはFrontmatterでFile identityを先に読む。
 
