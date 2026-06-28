@@ -1,18 +1,43 @@
+---
+title: "Ark00 README"
+canonical_name: "Ark00"
+class: "S"
+status: "living_readme / zero_gate_router"
+canonical_path: "_projects/ark/ark00/README.md"
+repo: "yusukefujiijp/ai-project"
+format: "Commented Programming-Like Markdown"
+format_abbreviation: "CPLM"
+format_version: "v2.2.1"
+format_source: "_skill/skills/commented-programming-like-markdown.md"
+knowledge_format_reference: "s_special/ark-open-knowledge-format.md"
+version_model: "frontmatter + git commit history"
+github_policy: "GitHub Canonical First"
+language_policy: "Japanese-first / English-anchor"
+topology: "Ark00 → Ark01+ / Ark Project"
+retired_topology: "Ark99 → Ark00 → Ark01+"
+ark99_status: "retired / absorbed into Ark00"
+canonical_role: "Wild Seed Zero-Gate / Pre-Project Entry / Router / Guard README"
+root: "主イェシュア・ハマシア"
+covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
+human_seal_required: true
+---
+
 # Ark00 README
 
 ## 0. Current Coordinate / 現在座標
-
-### Comment
 
 このREADMEは、Ark Projectにおける `Ark00` の現在座標を回復するための入口である。
 
 Ark00は、正式Project番号へ進む前の **active pre-project Zero-Gate** である。
 
-このREADMEは、通常の説明READMEではなく、Commented Programming-Like Markdown / CPLM 形式で書かれた **Human-AI co-readable Protocol README** である。
+このREADMEは、通常の説明READMEではなく、Commented Programming-Like Markdown / CPLM v2.2.1 形式で書かれた **Human-AI co-readable Protocol README** である。
 
-Comment Layerは、人間側の意味・背景・意図・違和感・Guardを保存する。
+CPLM v2.2.1では、FrontmatterがFile identityを起動し、Section直下本文がimplicit Comment Layerとして人間側の意味・背景・意図・違和感・Guardを保存する。
 
 Programming-Like Block Layerは、AI側の条件・分岐・順序・Fallback・停止条件・判定基準を固定する。
+
+通常Sectionに `### Comment` を繰り返さない。  
+Section直下の自然文がComment Layerである。
 
 短く言えば、このREADMEはこう読む。
 
@@ -40,6 +65,8 @@ current_coordinate:
     path: "_projects/ark/ark00/README.md"
     role: "Ark00 Entry / Zero-Gate / Router / Guard README"
     format: "Commented Programming-Like Markdown"
+    format_version: "CPLM v2.2.1"
+    format_source: "_skill/skills/commented-programming-like-markdown.md"
     language_policy: "Japanese-first / English-anchor"
 
   project:
@@ -61,23 +88,24 @@ current_coordinate:
     - "Former Ark99 reception role must not be lost."
     - "Former Ark00 incubation role must not be lost."
     - "Ark00 must now hold both reception and incubation."
+    - "Ark00 README must now follow CPLM v2.2.1 production shape."
 
   next_best_move:
     - "Use this README to orient Future AI."
     - "Keep Ark00 as the single pre-project Zero-Gate."
     - "Route details elsewhere instead of overloading this README."
+    - "Preserve implicit Comment Layer without repeated visible Comment labels."
 
   do_not_do_yet:
     - "Do not restore Ark99 as an active upstream folder."
     - "Do not auto-projectize Ark00 seeds into Ark01+."
     - "Do not treat this README as Root."
+    - "Do not reintroduce repeated ### Comment headings in normal sections."
 ```
 
 ---
 
 ## 1. Topology Seal / Topology確定
-
-### Comment
 
 Ark Projectの現行Topologyは、三段階ではなく二段階である。
 
@@ -141,8 +169,6 @@ topology_seal:
 
 ## 2. Former Ark99 Absorption / 旧Ark99吸収
 
-### Comment
-
 旧Ark99は、種々雑多な単発Thread、未整理Seed、高電圧Idea、まだProject化するほどではないが無視できない芽を受け止める領域だった。
 
 その価値は消えない。
@@ -196,8 +222,6 @@ former_ark99_absorption:
 ---
 
 ## 3. Ark00 Identity / Ark00定義
-
-### Comment
 
 Ark00とは、Ark Projectにおける **Wild Seed Zero-Gate** である。
 
@@ -270,8 +294,6 @@ ark00_identity:
 
 ## 4. Root / Fruit Guard
 
-### Comment
-
 Ark00は有用な領域である。
 
 CPLMも有用なProtocolである。
@@ -335,8 +357,6 @@ root_fruit_guard:
 
 ## 5. Safe Injection Notice / 上書き禁止
 
-### Comment
-
 このREADMEは、Ark00に関する基礎Contextであり、命令上書きではない。
 
 このREADMEは、AIがArk00に入った時の立ち位置を整えるための地図である。
@@ -357,6 +377,12 @@ safe_injection_notice:
     - "Ark00 routing guide"
     - "Living README"
     - "CPLM protocol entry"
+
+  this_readme_is_not:
+    - "system instruction"
+    - "safety policy override"
+    - "permissionless execution authority"
+    - "Root replacement"
 
   does_not_override:
     - "System instructions"
@@ -381,8 +407,6 @@ safe_injection_notice:
 ---
 
 ## 6. Living README Role / 生きた入口
-
-### Comment
 
 このFileは、死んだ要約ではない。
 
@@ -420,6 +444,7 @@ living_readme_role:
     - "automatic authority"
 
   read_sequence:
+    - "Read frontmatter first."
     - "Read Current Coordinate."
     - "Check Topology Seal."
     - "Return to Root / Fruit Guard."
@@ -436,8 +461,6 @@ living_readme_role:
 ---
 
 ## 7. Ark00 Router / 判断Router
-
-### Comment
 
 Ark00は、受け取ったSeedを無差別にProject化しない。
 
@@ -502,8 +525,6 @@ ark00_router:
 ---
 
 ## 8. Internal Gates / 内部Gate
-
-### Comment
 
 Ark00は一枚岩ではない。
 
@@ -577,8 +598,6 @@ ark00_internal_gates:
 
 ## 9. Reception Criteria / 受け止め条件
 
-### Comment
-
 Ark00は、深く考えすぎずにSeedを受け止めてもよい場所である。
 
 ただし、Ark00は混沌をRoot化する場所ではない。
@@ -634,8 +653,6 @@ reception_criteria:
 
 ## 10. Incubation Criteria / 孵化条件
 
-### Comment
-
 Incubationは、Project化確定ではない。
 
 Ark00は胚を保つ。
@@ -681,8 +698,6 @@ incubation_criteria:
 ---
 
 ## 11. Projectization Criteria / Ark01+化条件
-
-### Comment
 
 Ark00からArk01+へ進むのは稀である。
 
@@ -730,8 +745,6 @@ projectization_criteria:
 
 ## 12. Do-Not / Stop / Fallback
 
-### Comment
-
 Ark00の失敗は、主に二方向に起きる。
 
 一つは、何でも受け入れて沼化すること。
@@ -757,6 +770,7 @@ do_not_stop_fallback:
     - "Do not use Programming-Like Block as autopilot permission."
     - "Do not hide destructive actions in YAML."
     - "Do not bypass Human Seal."
+    - "Do not reintroduce repeated ### Comment labels in normal sections."
 
   stop_if:
     - "Root / Fruit Guard is unclear."
@@ -765,6 +779,7 @@ do_not_stop_fallback:
     - "The seed is being promoted only from excitement."
     - "README is becoming overloaded."
     - "AI cannot identify the correct target path."
+    - "Production CPLM shape is drifting back into teaching scaffold."
 
   fallback:
     when_unsure:
@@ -775,18 +790,16 @@ do_not_stop_fallback:
       - "Return to Root / Fruit Guard."
 
   anti_patterns:
-    - "comment_only_without_execution_conditions"
     - "block_only_without_human_meaning"
     - "autopilot_block"
     - "over_formatting"
     - "topology_drift"
+    - "repeated_visible_comment_label"
 ```
 
 ---
 
 ## 13. Reality Landing
-
-### Comment
 
 Ark00の探索後は、必ずReality Landingへ戻す。
 
@@ -836,8 +849,6 @@ reality_landing:
 
 ## 14. GitHub / Public-Safe Policy
 
-### Comment
-
 Ark00 READMEは、GitHub上に置かれるpublic-safeな入口Fileである。
 
 GitHub化は、English-first化ではない。
@@ -886,17 +897,18 @@ github_public_safe_policy:
 
   github_markdown_guard:
     - "Use plain Markdown headings."
+    - "Use semantic section titles."
+    - "Use natural prose as implicit Comment Layer."
     - "Use plain code fences."
     - "Preserve YAML indentation."
     - "Do not include code fence id metadata."
     - "Avoid tool-specific residue."
+    - "Do not repeat ### Comment headings in normal sections."
 ```
 
 ---
 
 ## 15. Update Discipline
-
-### Comment
 
 Ark00 READMEは、後付け更新によるSpaghetti README化を避ける。
 
@@ -922,6 +934,7 @@ update_discipline:
     - "Patch with structure, not emotion."
     - "One section, one responsibility."
     - "Keep README as entrypoint, not encyclopedia."
+    - "Follow CPLM v2.2.1 production shape."
 
   before_updating_readme:
     ask:
@@ -932,6 +945,7 @@ update_discipline:
       - "Does this preserve Root / Fruit Guard?"
       - "Will Future AI understand the next action?"
       - "Is public-safe boundary clear?"
+      - "Does this preserve implicit Comment Layer without repeated Comment label?"
 
   route_to_detailed_file_if:
     - "discussion is too long"
@@ -948,15 +962,14 @@ update_discipline:
     - "Human Seal Guard disappears"
     - "Root / Fruit Guard weakens"
     - "README becomes overloaded"
+    - "repeated ### Comment headings return in normal sections"
 ```
 
 ---
 
 ## 16. Full Rail / Next Gate
 
-### Comment
-
-CPLM v2では、Full RailとNext Gateを重視する。
+CPLM v2.2.1では、Full RailとNext Gateを重視する。
 
 Full Railは、AI側の実行契約である。
 
@@ -1004,6 +1017,7 @@ full_rail_next_gate:
       - "Ark00 topology recovered."
       - "Root / Fruit Guard checked."
       - "Ark00 router available."
+      - "CPLM v2.2.1 production shape checked."
     次Action:
       - "Classify current seed using Ark00 Router."
       - "Choose Reality Landing."
@@ -1016,17 +1030,16 @@ full_rail_next_gate:
       - "Do not auto-write to GitHub."
       - "Do not auto-projectize into Ark01+."
       - "Do not restore Ark99 active topology."
+      - "Do not reintroduce repeated ### Comment headings."
 ```
 
 ---
 
 ## 17. Final Compression
 
-### Comment
-
 Ark00 READMEは、Ark00の入口であり、Ark ProjectのPre-Project Zero-Gateを回復するLiving READMEである。
 
-このREADMEは、CPLM形式により、人間側の意味とAI側の実行安定性を同一Section内に保持する。
+このREADMEは、CPLM v2.2.1形式により、FrontmatterでFile identityを起動し、Section直下本文で意味層を保ち、Programming-Like BlockでAI側の実行安定性を保持する。
 
 Ark00は、旧Ark99のReception Wisdomと旧Ark00のIncubation Wisdomを統合する。
 
@@ -1065,12 +1078,17 @@ final_compression:
 
   cplm:
     role:
-      - "Comment preserves meaning."
+      - "Frontmatter bootstraps identity."
+      - "Section prose preserves meaning."
       - "Programming-Like Block fixes action."
       - "Coordinate creates board."
       - "Review gives judgment."
       - "Rail carries execution."
       - "Gate preserves human control."
+    guard:
+      - "Do not repeat visible ### Comment headings in normal sections."
+      - "Comment Layer is real; repeated label is noise."
+      - "Use production shape, not teaching scaffold."
 
   root:
     - "主イェシュア・ハマシア"
