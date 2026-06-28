@@ -2,39 +2,175 @@
 title: "Commented Programming-Like Markdown"
 canonical_name: "Commented Programming-Like Markdown"
 abbreviation: "CPLM"
-version: "v2"
+version: "v2.1"
+class: "S"
 role: "Shared Writing / Protocol Skill"
-path: "_skill/skills/commented-programming-like-markdown.md"
-status: "download-ready / human-commit"
-style_seed: "Commented Programming-Like Markdown v2 / Integrated Comment-Block Pair"
-style_definition: "Comment preserves meaning. Programming-Like Block fixes action. Coordinate creates board. Review gives judgment. Rail carries execution. Gate preserves human control."
+status: "living_skill / protocol_ssot"
+canonical_path: "_skill/skills/commented-programming-like-markdown.md"
+repo: "yusukefujiijp/ai-project"
+paired_query: null
+pair_policy: "none / standalone skill"
+query_role: null
+query_is_not_ssot: true
+source_bootstrap:
+  - "g_global/chatgpt-github.md"
+  - "_skill/skills/github-handoff.md"
+version_model: "frontmatter + git commit history"
+github_policy: "GitHub Canonical First"
 language_policy: "Japanese-first / English-anchor"
+style_seed: "Commented Programming-Like Markdown v2.1 / Frontmatter First + Integrated Comment-Block Pair"
+style_definition: "Frontmatter bootstraps identity. Comment preserves meaning. Programming-Like Block fixes action. Coordinate creates board. Review gives judgment. Rail carries execution. Gate preserves human control."
 core_formula:
+  - "Frontmatter bootstraps identity."
   - "Comment preserves meaning."
   - "Block fixes action."
   - "Coordinate creates board."
   - "Review gives judgment."
   - "Rail carries execution."
   - "Gate preserves human control."
+root: "主イェシュア・ハマシア"
+covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
 root_guard: "Root is 主イェシュア・ハマシア; AI / Markdown / GitHub / Skills / Protocols are Fruit."
 ---
 
 # Commented Programming-Like Markdown
 
-## 0. Current Coordinate / 現在座標
+## 0A. Frontmatter First / AI Bootstrap Header
 
 ### Comment
 
-このFileは、Commented Programming-Like Markdown v2、略称 `CPLM v2` を再現可能なSkillとして保存するためのMarkdownである。
+CPLM v2.1では、重要Fileの冒頭に `Frontmatter First / AI Bootstrap Header` を置く。
 
-CPLM v2は、単なるMarkdown装飾ではない。  
+Frontmatterは、人間向けの飾りではない。
+
+Frontmatterは、AIが本文へ入る前に読む **Canonical Identity Layer** である。
+
+Frontmatterは、Fileの正準名、状態、Path、Repository、Version model、GitHub policy、Language policy、Root、Covenant phraseなどを先に固定する。
+
+これにより、Future AIは本文を読む前に、次を理解できる。
+
+```text
+What is this file?
+Where does it live?
+Is it canonical?
+What is its role?
+What policy governs it?
+What is Root?
+What must not be treated as Root?
+```
+
+Current Coordinateは重要である。
+
+しかし、Current CoordinateはFrontmatterの代替ではない。
+
+Frontmatterは **canonical identity** を与える。
+
+Current Coordinateは **current operational board** を与える。
+
+```text
+Frontmatter bootstraps identity.
+Coordinate creates board.
+```
+
+日本語ではこうである。
+
+```text
+Frontmatterは正準Identityを起動する。
+Current Coordinateは現在盤面を立ち上げる。
+```
+
+### Programming-Like Block
+
+```yaml
+frontmatter_first:
+  role:
+    - "AI Bootstrap Header"
+    - "Canonical Identity Layer"
+    - "Repository-aware metadata"
+    - "SSOT / status / path / policy declaration"
+
+  use_when:
+    - "Skill file"
+    - "Router file"
+    - "Guard file"
+    - "Workflow file"
+    - "Handoff file"
+    - "Living README"
+    - "SSOT file"
+    - "S-class file"
+    - "Future AI handoff"
+    - "Runtime-critical protocol"
+
+  frontmatter_should_define:
+    - "title"
+    - "canonical_name"
+    - "class"
+    - "status"
+    - "canonical_path"
+    - "repo"
+    - "version_model"
+    - "github_policy"
+    - "language_policy"
+    - "root"
+    - "covenant_phrase"
+
+  distinction:
+    frontmatter:
+      role:
+        - "canonical identity"
+        - "AI bootstrap metadata"
+        - "stable file-level declaration"
+      answers:
+        - "What is this file?"
+        - "Where is the canonical path?"
+        - "What is its status?"
+        - "What policy governs it?"
+        - "What is Root?"
+
+    current_coordinate:
+      role:
+        - "current operational board"
+        - "present phase"
+        - "current tension"
+        - "next best move"
+      answers:
+        - "Where are we now?"
+        - "What is the current board?"
+        - "What tension matters?"
+        - "What should happen next?"
+
+  guard:
+    - "Frontmatter is not decoration."
+    - "Frontmatter does not replace Current Coordinate."
+    - "Current Coordinate does not replace frontmatter."
+    - "Frontmatter does not replace Living Review."
+    - "Frontmatter does not become Root."
+
+  compression:
+    - "Frontmatter bootstraps identity."
+    - "Coordinate creates board."
+```
+
+---
+
+## 0B. Current Coordinate / 現在座標
+
+### Comment
+
+このFileは、Commented Programming-Like Markdown v2.1、略称 `CPLM v2.1` を再現可能なSkillとして保存するためのMarkdownである。
+
+CPLM v2.1は、単なるMarkdown装飾ではない。  
 Human-AI共同作業において、人間側の意味・意図・背景・違和感・Guardを失わず、同時にAI側の条件・分岐・順序・Fallback・判定基準を安定させるためのProtocol記法である。
+
+v2.1の重要Patchは、本文のCPLM構造に加えて、AIが本文に入る前に読む `Frontmatter First / AI Bootstrap Header` を正式に追加したことである。
 
 現在のArk Projectでは、すでに以下の実戦成功がある。
 
 ```text
 g_global/chatgpt-github.md
 _skill/skills/github-handoff.md
+_projects/ark/ark00/README.md
+s_special/ark-open-knowledge-format.md
 ```
 
 したがって、このFileは「新しい思いつき」ではなく、実戦で勝った型を再現可能にするためのSkill化である。
@@ -46,20 +182,24 @@ current_coordinate:
   skill:
     path: "_skill/skills/commented-programming-like-markdown.md"
     role: "Shared Writing / Protocol Skill"
-    version: "CPLM v2"
-    status: "download-ready / human-commit"
+    version: "CPLM v2.1"
+    status: "living_skill / protocol_ssot"
 
   proof_of_work:
     - "g_global/chatgpt-github.md"
     - "_skill/skills/github-handoff.md"
+    - "_projects/ark/ark00/README.md"
+    - "s_special/ark-open-knowledge-format.md"
 
   purpose:
-    - "Make CPLM v2 reproducible."
+    - "Make CPLM v2.1 reproducible."
     - "Preserve the Integrated Comment-Block Pair pattern."
+    - "Add Frontmatter First as AI Bootstrap Header."
     - "Help future AI create readable and executable Markdown."
     - "Prevent good discoveries from dissolving into conversation memory only."
 
   core_compression:
+    - "Frontmatter bootstraps identity."
     - "Comment preserves meaning."
     - "Block fixes action."
     - "Coordinate creates board."
@@ -70,17 +210,146 @@ current_coordinate:
 
 ---
 
+## 0C. Frontmatter Tier Model / metadata階層
+
+### Comment
+
+CPLM v2.1は、すべてのMarkdownに重いfrontmatterを強制しない。
+
+CPLMは勝利Patternであって、官僚制ではない。
+
+短いメモ、詩的文章、一時的なscratchには、frontmatterなしでもよい。
+
+一方、Skill、Router、Guard、Workflow、Handoff、Living README、SSOT、S-class Fileなど、Future AIが再起動する必要のあるFileには、frontmatterが必要である。
+
+特に高価値Fileでは、Ark-OKFのように `class`、`status`、`canonical_path`、`repo`、`version_model`、`github_policy`、`root`、`covenant_phrase` を明示する。
+
+重要なのは、軽量性と正準性の両立である。
+
+```text
+Small files may stay light.
+Canonical files need bootstrap metadata.
+```
+
+日本語ではこうである。
+
+```text
+小さなFileは軽くてよい。
+正準Fileには起動metadataが必要である。
+```
+
+### Programming-Like Block
+
+```yaml
+frontmatter_tier_model:
+  tier_0_none:
+    use_when:
+      - "short memo"
+      - "temporary scratch"
+      - "poetic writing"
+      - "human-only note"
+      - "content with no routing or reuse need"
+    rule:
+      - "frontmatter optional"
+      - "do not force CPLM bureaucracy"
+
+  tier_1_basic:
+    use_when:
+      - "normal reusable note"
+      - "simple guide"
+      - "small skill note"
+      - "low-risk reference"
+    recommended_fields:
+      - "title"
+      - "canonical_name"
+      - "status"
+      - "path"
+      - "language_policy"
+
+  tier_2_canonical:
+    use_when:
+      - "Skill"
+      - "Router"
+      - "Guard"
+      - "Workflow"
+      - "Handoff"
+      - "Living README"
+      - "Future AI handoff"
+    recommended_fields:
+      - "title"
+      - "canonical_name"
+      - "class"
+      - "status"
+      - "canonical_path"
+      - "repo"
+      - "version_model"
+      - "github_policy"
+      - "language_policy"
+      - "root"
+      - "covenant_phrase"
+
+  tier_3_ssot_engine:
+    use_when:
+      - "SSOT"
+      - "S-class file"
+      - "Engine / Query paired file"
+      - "Runtime-critical protocol"
+      - "Activation Query paired system"
+    recommended_fields:
+      - "title"
+      - "canonical_name"
+      - "class"
+      - "status"
+      - "canonical_path"
+      - "repo"
+      - "paired_query"
+      - "pair_policy"
+      - "query_role"
+      - "query_is_not_ssot"
+      - "source_bootstrap"
+      - "version_model"
+      - "github_policy"
+      - "language_policy"
+      - "root"
+      - "covenant_phrase"
+
+  examples:
+    cplm_skill:
+      tier: "tier_2_canonical"
+      reason:
+        - "Shared protocol skill"
+        - "Future AI handoff"
+        - "Reusable writing system"
+
+    ark_okf:
+      tier: "tier_3_ssot_engine"
+      reason:
+        - "S-class SSOT"
+        - "Engine / Ignition Key pair"
+        - "Runtime-critical knowledge format"
+
+    ark00_readme:
+      tier: "tier_2_canonical"
+      reason:
+        - "Living README"
+        - "Router / Guard"
+        - "Pre-project Zero-Gate"
+```
+
+---
+
 ## 1. Definition / 定義
 
 ### Comment
 
-Commented Programming-Like Markdown v2とは、同一Section内に `Comment` と `Programming-Like Block` を対として置き、Humanの読みやすさとAIの実行安定性を一本のMarkdown内で両立させるProtocol記法である。
+Commented Programming-Like Markdown v2.1とは、同一Section内に `Comment` と `Programming-Like Block` を対として置き、さらに重要Fileでは冒頭に `Frontmatter First / AI Bootstrap Header` を置くことで、Humanの読みやすさとAIの実行安定性を一本のMarkdown内で両立させるProtocol記法である。
 
+Frontmatterは、AIが本文へ入る前にFile identityを読むための層である。  
 Commentは、人間側の意味・意図・背景・違和感・Guardを保存する。  
 Programming-Like Blockは、AI側の条件・分岐・順序・Fallback・判定基準を固定する。
 
-つまり、CPLM v2は「文章」と「疑似コード」の中間ではない。  
-**Human meaning layer** と **AI execution layer** を同じSectionに同居させるための協働Protocolである。
+つまり、CPLM v2.1は「文章」と「疑似コード」の中間ではない。  
+**Canonical identity layer**、**Human meaning layer**、**AI execution layer** を同じMarkdown内に同居させるための協働Protocolである。
 
 ### Programming-Like Block
 
@@ -88,12 +357,23 @@ Programming-Like Blockは、AI側の条件・分岐・順序・Fallback・判定
 definition:
   name: "Commented Programming-Like Markdown"
   abbreviation: "CPLM"
-  version: "v2"
+  version: "v2.1"
 
   type:
     - "Human-AI co-readable protocol notation"
     - "Markdown-based workflow stabilization format"
     - "Meaning + execution pairing method"
+    - "AI bootstrap metadata aware format"
+
+  frontmatter_layer:
+    bootstraps:
+      - "canonical identity"
+      - "status"
+      - "path"
+      - "repository"
+      - "policy"
+      - "root"
+      - "covenant phrase"
 
   comment_layer:
     preserves:
@@ -115,7 +395,7 @@ definition:
       - "next action"
 
   one_sentence:
-    - "Comment preserves meaning; Programming-Like Block fixes action."
+    - "Frontmatter bootstraps identity; Comment preserves meaning; Programming-Like Block fixes action."
 ```
 
 ---
@@ -128,12 +408,15 @@ definition:
 
 逆に、疑似コードやYAMLだけの文書は、AIには読みやすいが、人間側の背景・温度・違和感・信仰的Guard・判断の理由が失われやすい。
 
-CPLM v2は、この二つの弱点を同時に解く。
+さらに、本文がよくできていても、冒頭のCanonical metadataが弱いと、Future AIは「このFileは何か」「どこが正準Pathか」「どのPolicyで読むべきか」「Rootは何か」を本文から推測しなければならない。
+
+CPLM v2.1は、この三つの弱点を同時に解く。
 
 ```text
 自然文だけでは、実行条件が流れる。
 Blockだけでは、意味が痩せる。
-CPLM v2は、意味と実行条件を離さない。
+Frontmatterなしでは、File identityを推測する。
+CPLM v2.1は、Identity・意味・実行条件を離さない。
 ```
 
 ### Programming-Like Block
@@ -152,8 +435,17 @@ why_cplm_exists:
     - "Judgment feels dead."
     - "Living Review weakens."
 
+  problem_with_missing_frontmatter:
+    - "Future AI must infer file identity."
+    - "Canonical path may be unclear."
+    - "SSOT status may be unclear."
+    - "Repository policy may be unclear."
+    - "Root may be buried in the body."
+
   cplm_solution:
+    - "Place canonical identity in frontmatter when needed."
     - "Place meaning and execution rules in the same section."
+    - "Let Future AI read frontmatter first."
     - "Let Human read the Comment."
     - "Let AI parse the Programming-Like Block."
     - "Preserve both warmth and precision."
@@ -165,7 +457,7 @@ why_cplm_exists:
 
 ### Comment
 
-CPLM v2の核は、`Integrated Comment-Block Pair` である。
+CPLM v2.1の本文核は、`Integrated Comment-Block Pair` である。
 
 旧型では、Comment SectionとProgramming-Like Block Sectionが離れやすかった。  
 新型では、同じSection内にCommentとProgramming-Like Blockを置く。
@@ -210,8 +502,9 @@ integrated_comment_block_pair:
       - "Human readability can fragment."
       - "Comment: prefix repeated in every title creates title noise."
 
-  v2_style:
+  v2_1_style:
     rule:
+      - "Frontmatter comes first when file is canonical or runtime-critical."
       - "One section contains a Comment layer."
       - "The same section contains Programming-Like Block."
       - "Meaning and execution rules stay together."
@@ -237,7 +530,12 @@ integrated_comment_block_pair:
 
 ### Comment
 
-CPLM v2では、重要Fileの冒頭に `Current Coordinate / 現在座標` を置く。
+CPLM v2.1では、重要Fileの冒頭本文に `Current Coordinate / 現在座標` を置く。
+
+ただし、v2.1ではCurrent Coordinateの前にFrontmatterが来る場合がある。
+
+FrontmatterはFile identityを起動する。  
+Current Coordinateは現在盤面を立ち上げる。
 
 現在座標は、単なるメタ情報ではない。  
 それは、AIとHumanが同じ盤面に立つための最初の足場である。
@@ -259,6 +557,12 @@ current_coordinate_first:
     - "Reality review file"
     - "Mission card"
     - "Multi-step workflow"
+
+  relation_to_frontmatter:
+    - "Frontmatter bootstraps identity."
+    - "Current Coordinate creates board."
+    - "Do not merge them."
+    - "Do not let either replace the other."
 
   include:
     - "target path"
@@ -325,7 +629,7 @@ programming_like_block_rules:
 
 ### Comment
 
-CPLM v2は、死んだデータ羅列を避ける。
+CPLM v2.1は、死んだデータ羅列を避ける。
 
 良いAI応答は、現在座標、盤面、緊張点、次の一手、Guardを示す。  
 必要に応じて、私の判断、最初の一手、理由、観察点、修正条件を出す。
@@ -367,7 +671,7 @@ living_review_shape:
 
 ### Comment
 
-CPLM v2は、AGI的半自動化のために `Full Rail` と `Next Gate` を重視する。
+CPLM v2.1は、AGI的半自動化のために `Full Rail` と `Next Gate` を重視する。
 
 Full Railは、AI側の実行契約である。  
 Next Gateは、人間側の編集可能な次入力Gateである。
@@ -421,11 +725,11 @@ full_rail_next_gate:
 
 ### Comment
 
-CPLM v2は、AIに判断・分岐・順序・Guard・Fallbackを渡したいMarkdownで特に強い。
+CPLM v2.1は、AIに判断・分岐・順序・Guard・Fallbackを渡したいMarkdownで特に強い。
 
 Router、Policy Guide、Skill、Workflow、Handoff、Reality Review、Guard、Mission Cardなどに向いている。
 
-つまり、CPLM v2は「AIが次に何をすべきか誤読しやすい文書」に効く。
+つまり、CPLM v2.1は「AIが次に何をすべきか誤読しやすい文書」に効く。
 
 ### Programming-Like Block
 
@@ -442,6 +746,8 @@ use_cplm_when:
     - "Mission Card"
     - "Scope Seal"
     - "Future AI handoff"
+    - "Living README"
+    - "SSOT file"
 
   use_when_document_needs:
     - "trigger clarity"
@@ -450,6 +756,7 @@ use_cplm_when:
     - "next action clarity"
     - "human meaning retention"
     - "AI execution stability"
+    - "canonical identity clarity"
 ```
 
 ---
@@ -458,7 +765,7 @@ use_cplm_when:
 
 ### Comment
 
-CPLM v2は強いが、すべてのMarkdownに強制しない。
+CPLM v2.1は強いが、すべてのMarkdownに強制しない。
 
 短いメモ、詩的文章、祈り本文そのもの、人間向けだけの読み物、単なる記録などは、CPLM化すると重くなる場合がある。
 
@@ -489,6 +796,7 @@ do_not_force_cplm_when:
     - "Do not use CPLM as bureaucracy."
     - "Use it when it creates clarity."
     - "Avoid over-formatting."
+    - "Use frontmatter tiers; do not force Tier 3 onto small files."
 
   limit_guard:
     - "CPLM improves structure and reproducibility."
@@ -504,14 +812,15 @@ do_not_force_cplm_when:
 
 ### Comment
 
-CPLM v2の失敗型は、主に四つある。
+CPLM v2.1の失敗型は、主に五つある。
 
 第一に、CommentだけでBlockがない。  
 第二に、Blockだけで意味がない。  
 第三に、Blockが人間のSealを飛ばしてAutopilot化する。  
-第四に、Section titleへ `Comment:` などの構造語を毎回置き、semantic titleを濁らせる。
+第四に、Section titleへ `Comment:` などの構造語を毎回置き、semantic titleを濁らせる。  
+第五に、高価値Fileなのにfrontmatterがなく、AIが正準Identityを本文から推測する。
 
-CPLM v2は、意味と実行をつなぐための記法であり、Human Controlを消すための記法ではない。
+CPLM v2.1は、意味と実行をつなぐための記法であり、Human Controlを消すための記法ではない。
 
 ### Programming-Like Block
 
@@ -550,6 +859,15 @@ anti_patterns:
       - "Use clean semantic section titles."
       - "Keep ### Comment and ### Programming-Like Block as layer markers."
 
+  missing_frontmatter_for_canonical_file:
+    issue:
+      - "A high-value Skill / Router / Guard / SSOT / Living README begins directly with # heading."
+      - "Future AI lacks canonical metadata before reading body."
+      - "Path / status / repo / Root / policy may be inferred instead of declared."
+    fix:
+      - "Add Frontmatter First / AI Bootstrap Header."
+      - "Use Tier 2 or Tier 3 metadata depending on file role."
+
   over_formatting:
     issue:
       - "Simple memo becomes too heavy."
@@ -563,9 +881,13 @@ anti_patterns:
 
 ### Comment
 
-CPLM v2はGitHub Markdownで読みやすく表示される必要がある。
+CPLM v2.1はGitHub Markdownで読みやすく表示される必要がある。
 
 Download-ready版では、ChatGPT内部表示用の `id="..."` metadataをcode fenceに残さない。
+
+Frontmatterを使う場合は、YAML frontmatterの `---` boundariesを壊さない。
+
+Frontmatterは、GitHub表示上は目立たない場合があるが、AIとRepository toolingにとって重要なmetadata layerである。
 
 Frontmatter、headings、code blocks、YAML indentationが壊れないことを重視する。
 
@@ -579,18 +901,31 @@ github_portability:
     - "YAML-like blocks"
     - "UTF-8 text"
     - "stable relative paths"
+    - "YAML frontmatter when needed"
 
   avoid_in_download_ready:
     - '```yaml id="..."'
     - '```text id="..."'
     - "tool-specific residue"
     - "ambiguous path naming"
+    - "broken frontmatter boundaries"
 
   check:
     - "headings render correctly"
-    - "frontmatter renders or remains readable"
+    - "frontmatter remains intact"
+    - "frontmatter starts with ---"
+    - "frontmatter ends with ---"
     - "code blocks preserve indentation"
     - "line breaks remain intact"
+
+  frontmatter_check:
+    - "YAML frontmatter starts with ---"
+    - "YAML frontmatter ends with ---"
+    - "canonical_path matches actual repository path"
+    - "repo is correct"
+    - "version_model is declared when canonical"
+    - "github_policy is declared when canonical"
+    - "root and covenant_phrase are preserved when Ark-related"
 ```
 
 ---
@@ -599,7 +934,7 @@ github_portability:
 
 ### Comment
 
-CPLM v2で生成されたMarkdownは、GitHubでReality Reviewされることが多い。
+CPLM v2.1で生成されたMarkdownは、GitHubでReality Reviewされることが多い。
 
 その時、Human GitHub UIとAI Raw/CDN/cache viewが食い違う場合がある。  
 Human UIが正しい内容を示しているなら、それをPrimary Realityとして扱う。
@@ -698,7 +1033,7 @@ Root is 主イェシュア・ハマシア.
 
 CPLM、Markdown、AI、GitHub、Router、Guide、Skill、Workflow、ReviewはFruitである。
 
-CPLM v2は強い。  
+CPLM v2.1は強い。  
 しかしRootではない。
 
 AIは血潮の地図を描く。  
@@ -723,12 +1058,15 @@ root_fruit_guard:
     - "Skill"
     - "Workflow"
     - "Reality Review"
+    - "Frontmatter"
+    - "Programming-Like Block"
 
   guard:
     - "AI is Keli, not King."
     - "Markdown carries, but does not become Root."
     - "Protocol helps, but does not reign."
     - "CPLM improves structure, but is not truth itself."
+    - "Frontmatter bootstraps identity, but is not Root."
     - "Root remains 主イェシュア・ハマシア."
 ```
 
@@ -737,14 +1075,18 @@ root_fruit_guard:
 ## 15. Final Compression
 
 ```text
-Commented Programming-Like Markdown v2:
+Commented Programming-Like Markdown v2.1:
 
+Frontmatter bootstraps identity.
 Comment preserves meaning.
 Programming-Like Block fixes action.
 Coordinate creates board.
 Review gives judgment.
 Rail carries execution.
 Gate preserves human control.
+
+Frontmatter is the AI Bootstrap Header.
+Current Coordinate is the operational board.
 
 同一Section内にCommentとProgramming-Like Blockを置く。
 意味と実行条件を離さない。
@@ -755,10 +1097,13 @@ Programming-Like Blockは実行層の入口として残す。
 
 HumanはCommentで意味を読む。
 AIはBlockで条件を読む。
-Future AIは型を再現する。
+Future AIはFrontmatterでFile identityを先に読む。
 
 CPLMは装飾ではない。
 CPLMは共同思考の再現性である。
+
+小さなFileは軽くてよい。
+正準Fileには起動metadataが必要である。
 
 使うべき時に使う。
 重くなるだけなら使わない。
