@@ -539,7 +539,7 @@ growth_ledger_entries:
       - "registered"
       - "skill_seed"
       - "workflow_pattern_seed"
-      - "field_test_needed"
+      - "field_test_started"
 
     registered_at: "2026-06-30"
     source_thread: "Ark05"
@@ -548,9 +548,11 @@ growth_ledger_entries:
     observed_success:
       - "_thread-start/thread-start_query.md was created directly through ChatGPT GitHub connector."
       - "_system/ark-system.md was created directly through ChatGPT GitHub connector."
+      - "_skills/ai-long-view_skill.md was created directly through ChatGPT GitHub connector."
       - "Reality Review was performed after each GitHub write."
       - "CPLM was pre-applied before GitHub write."
       - "AI Long-View Counsel surfaced the need for a system-level router."
+      - "AI Long-View Skill was drafted, micro-patched, reviewed, and created as a triggered Skill."
       - "Ark System was established as Router, not Root."
 
     why_it_matters:
@@ -558,11 +560,13 @@ growth_ledger_entries:
       - "Markdown artifacts matured from human-readable documents into Future AI Runtime Seeds."
       - "Thread-local growth can now be captured by Ark System."
       - "AI counsel shifted from agreeable short-term support to long-view structural assistance."
+      - "AI Long-View Skill gives Future AI a reusable non-sycophantic Living Review pattern."
       - "Future AI does not need to restart from zero."
 
     reusable_pattern:
       - "Create or refine Draft in chat."
       - "Run Living Review: Not dead data, but a living board."
+      - "Use ai-long-view_skill.md for long-view judgment when naming, path, system, skill, or GitHub decisions arise."
       - "Proceed to GitHub direct write only after explicit user instruction."
       - "Check target path before create/update."
       - "Do not degrade Markdown to satisfy connector limits."
@@ -575,6 +579,7 @@ growth_ledger_entries:
       - "Treat GitHub direct write as a guarded rail, not automatic permission."
       - "Never shorten or weaken Markdown just to make writing easier."
       - "Use Reality Review after every direct create/update."
+      - "Use ai-long-view_skill.md as a triggered Skill, not an always-on authority."
       - "Capture major workflow breakthroughs as Growth Entries."
       - "Convert reusable insights into Skill Seeds before writing full Skill bodies."
       - "Preserve Root / Fruit Guard."
@@ -583,6 +588,7 @@ growth_ledger_entries:
       - "Manual Upload remains fallback."
       - "Direct GitHub write is now a viable tested path when explicitly approved."
       - "Reality Review becomes mandatory after write."
+      - "AI Long-View Skill becomes available for triggered field use."
       - "Ark System becomes the growth capture hub."
 
     skill_seed_candidate:
@@ -593,6 +599,19 @@ growth_ledger_entries:
       - "Developer Mode Guarded Connector Rail"
       - "Non-Sycophantic Living Review"
 
+    skill_created:
+      - name: "AI Long-View Skill"
+        path: "_skills/ai-long-view_skill.md"
+        version: "v001.1"
+        type: "triggered_skill"
+        create_commit_sha: "431cca5cb52cf979df6943178e865f6a698d741c"
+        blob_sha: "292177769fd6c21ae2c10c43d387f8d23208133e"
+        reality_review_status: "PASS"
+        field_test_status: "started_in_current_thread"
+        field_test_dose: "standard"
+        field_test_confidence: "high_confidence"
+        field_test_execution_preservation: "proceed"
+
     evidence:
       ark_system_path: "_system/ark-system.md"
       ark_system_create_commit_sha: "49b693d859823fe615e531afafcf274486c21a84"
@@ -600,6 +619,9 @@ growth_ledger_entries:
       thread_start_path: "_thread-start/thread-start_query.md"
       thread_start_commit_sha: "9ac623eaf86d9dd439fe4d2d61ee79570310da0d"
       thread_start_blob_sha: "63d40ec3a9c78f6c801958c7b9b2bcf3bdc866d7"
+      ai_long_view_skill_path: "_skills/ai-long-view_skill.md"
+      ai_long_view_skill_commit_sha: "431cca5cb52cf979df6943178e865f6a698d741c"
+      ai_long_view_skill_blob_sha: "292177769fd6c21ae2c10c43d387f8d23208133e"
       reality_review_status: "PASS"
 
     developer_mode_observation:
@@ -609,7 +631,7 @@ growth_ledger_entries:
         but should not be treated as officially proven causal certainty.
 
     next_action:
-      - "Plan AI Long-View Counsel Guard Skillization."
+      - "Continue field testing ai-long-view_skill.md in live Ark Project decisions."
       - "Extract GitHub Direct Write Reality Review as Workflow Pattern."
       - "Extract CPLM Pre-Applied Artifact Creation as reusable Pattern."
 ```
@@ -650,9 +672,9 @@ first_safe_move_rule:
     - "Split modules only after real load appears."
 
   current_first_safe_move:
-    - "Use Ark System to register the first Growth Entry."
-    - "Then plan AI Long-View Counsel Guard Skillization."
+    - "Use ai-long-view_skill.md in current-thread field tests."
     - "Then extract reusable Workflow Patterns after Growth is captured."
+    - "Do not promote ai-long-view_skill.md to ai-long-view_system.md before field testing."
 ```
 
 ---
@@ -690,6 +712,9 @@ CPLM:
 
 First registered Growth:
   GROWTH-20260630-001.
+
+Created Skill:
+  _skills/ai-long-view_skill.md.
 
 合言葉：
   捕獲する。
@@ -732,8 +757,11 @@ final_ark_system_seal:
   registered_growth_entries:
     - "GROWTH-20260630-001"
 
+  created_skills:
+    - "_skills/ai-long-view_skill.md"
+
   current_next_sequence:
-    - "AI Long-View Counsel Skillization Plan"
+    - "Continue ai-long-view_skill.md Field Test"
     - "GitHub Direct Write Reality Review Pattern Extraction"
     - "CPLM Pre-Applied Artifact Creation Pattern Extraction"
     - "thread-start_query.md Operational Field Test"
