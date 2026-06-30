@@ -527,32 +527,91 @@ module_split_rule:
 
 ---
 
-## 10. Pending First Growth Entry Candidate
+## 10. Growth Ledger Entries
 
-This is not yet an append-only entry.  
-This is the first candidate to register after this file is approved.
+This section captures real Ark Project growth.  
+Entries should remain append-only, reusable, and future-actionable.
 
-```yaml id="pending-first-growth-entry-candidate"
-pending_first_growth_entry_candidate:
-  id: "GROWTH-20260630-001"
-  event_name: "GitHub Direct Create + CPLM Pre-Applied Artifact + AI Long-View Counsel"
-  source_thread: "Ark05"
+```yaml id="growth-ledger-entries"
+growth_ledger_entries:
+  - id: "GROWTH-20260630-001"
+    status:
+      - "registered"
+      - "skill_seed"
+      - "workflow_pattern_seed"
+      - "field_test_needed"
 
-  captures:
-    - "ChatGPT GitHub connector created _thread-start/thread-start_query.md directly."
-    - "Reality Review confirmed the GitHub file."
-    - "CPLM was pre-applied before commit."
-    - "AI Long-View Counsel Guard was integrated."
-    - "Thread-Start / Thread-End Gate Architecture matured."
+    registered_at: "2026-06-30"
+    source_thread: "Ark05"
+    event_name: "GitHub Direct Create + CPLM Pre-Applied Artifact + AI Long-View Counsel"
 
-  skill_seed_candidates:
-    - "AI Long-View Counsel Guard"
-    - "GitHub Direct Write Reality Review"
-    - "CPLM Pre-Applied Artifact Creation"
-    - "Preverbal System Extraction"
+    observed_success:
+      - "_thread-start/thread-start_query.md was created directly through ChatGPT GitHub connector."
+      - "_system/ark-system.md was created directly through ChatGPT GitHub connector."
+      - "Reality Review was performed after each GitHub write."
+      - "CPLM was pre-applied before GitHub write."
+      - "AI Long-View Counsel surfaced the need for a system-level router."
+      - "Ark System was established as Router, not Root."
 
-  status:
-    - "pending_registration_after_ark_system_approval"
+    why_it_matters:
+      - "Ark Project moved from manual upload dependency toward guarded direct GitHub write."
+      - "Markdown artifacts matured from human-readable documents into Future AI Runtime Seeds."
+      - "Thread-local growth can now be captured by Ark System."
+      - "AI counsel shifted from agreeable short-term support to long-view structural assistance."
+      - "Future AI does not need to restart from zero."
+
+    reusable_pattern:
+      - "Create or refine Draft in chat."
+      - "Run Living Review: Not dead data, but a living board."
+      - "Proceed to GitHub direct write only after explicit user instruction."
+      - "Check target path before create/update."
+      - "Do not degrade Markdown to satisfy connector limits."
+      - "After write, fetch the GitHub file immediately."
+      - "Run Reality Review against actual repository content."
+      - "Record commit SHA and blob SHA when available."
+      - "If direct write fails, stop quickly and fallback to manual upload."
+
+    future_ai_instruction:
+      - "Treat GitHub direct write as a guarded rail, not automatic permission."
+      - "Never shorten or weaken Markdown just to make writing easier."
+      - "Use Reality Review after every direct create/update."
+      - "Capture major workflow breakthroughs as Growth Entries."
+      - "Convert reusable insights into Skill Seeds before writing full Skill bodies."
+      - "Preserve Root / Fruit Guard."
+
+    workflow_impact:
+      - "Manual Upload remains fallback."
+      - "Direct GitHub write is now a viable tested path when explicitly approved."
+      - "Reality Review becomes mandatory after write."
+      - "Ark System becomes the growth capture hub."
+
+    skill_seed_candidate:
+      - "AI Long-View Counsel Guard"
+      - "GitHub Direct Write Reality Review"
+      - "CPLM Pre-Applied Artifact Creation"
+      - "Preverbal System Extraction"
+      - "Developer Mode Guarded Connector Rail"
+      - "Non-Sycophantic Living Review"
+
+    evidence:
+      ark_system_path: "_system/ark-system.md"
+      ark_system_create_commit_sha: "49b693d859823fe615e531afafcf274486c21a84"
+      ark_system_initial_blob_sha: "c2a7465f987029549c2a731ccd7505353e15804b"
+      thread_start_path: "_thread-start/thread-start_query.md"
+      thread_start_commit_sha: "9ac623eaf86d9dd439fe4d2d61ee79570310da0d"
+      thread_start_blob_sha: "63d40ec3a9c78f6c801958c7b9b2bcf3bdc866d7"
+      reality_review_status: "PASS"
+
+    developer_mode_observation:
+      status: "high_circumstantial_signal"
+      note: >
+        Developer Mode ON appears to correlate with successful GitHub direct writes,
+        but should not be treated as officially proven causal certainty.
+
+    next_action:
+      - "Plan AI Long-View Counsel Guard Skillization."
+      - "Extract GitHub Direct Write Reality Review as Workflow Pattern."
+      - "Extract CPLM Pre-Applied Artifact Creation as reusable Pattern."
 ```
 
 ---
@@ -591,9 +650,9 @@ first_safe_move_rule:
     - "Split modules only after real load appears."
 
   current_first_safe_move:
-    - "Create Ark System Full Draft."
-    - "Run Living Review."
-    - "Then prepare Download / GitHub write only after approval."
+    - "Use Ark System to register the first Growth Entry."
+    - "Then plan AI Long-View Counsel Guard Skillization."
+    - "Then extract reusable Workflow Patterns after Growth is captured."
 ```
 
 ---
@@ -628,6 +687,9 @@ Reality Review:
 
 CPLM:
   MarkdownをFuture AI Runtime Seedに変える。
+
+First registered Growth:
+  GROWTH-20260630-001.
 
 合言葉：
   捕獲する。
@@ -667,15 +729,14 @@ final_ark_system_seal:
     - "Future AI Onboarding"
     - "Gate Index"
 
+  registered_growth_entries:
+    - "GROWTH-20260630-001"
+
   current_next_sequence:
-    - "Full Draft"
-    - "Living Review"
-    - "Download Markdown"
-    - "Final Pre-Commit Review"
-    - "GitHub Direct Create"
-    - "GitHub Reality Review"
-    - "First Growth Entry Registration"
-    - "AI Long-View Counsel Skillization"
+    - "AI Long-View Counsel Skillization Plan"
+    - "GitHub Direct Write Reality Review Pattern Extraction"
+    - "CPLM Pre-Applied Artifact Creation Pattern Extraction"
+    - "thread-start_query.md Operational Field Test"
 
   compression:
     - "Do not restart from zero."
