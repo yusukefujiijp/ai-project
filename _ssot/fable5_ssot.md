@@ -1,7 +1,8 @@
 ---
 title: "Fable5 SSOT"
 canonical_name: "Fable5 Single Source of Truth"
-version: "v001"
+version: "v001.1"
+version_note: "v001.1 appends the Ark05 observed usage timeline from same-thread Fable5 screenshots so Future AI can reuse the data even if it cannot access the original images."
 status: "human-editable / growing-ledger"
 canonical_path: "_ssot/fable5_ssot.md"
 role: "Fable5 usage / limit / effort / answer weight / breakthrough / adopted-patch SSOT"
@@ -909,3 +910,538 @@ Usage %
 × Answer Weight
 × Breakthrough
 = Fable5 Living Review
+
+---
+
+## 19. Observed Usage Timeline: Ark05 / 2026-07-04
+
+### 19.1 Purpose / このSectionの目的
+
+このSectionは、Ark05 Thread内にUploadされたFable5使用状況画像から、現AIが読み取れた使用率・Effort・関連作業内容をFuture AIへ渡すための観測Recordである。
+
+重要:
+
+```text
+Ruleだけでは未来へ渡らない。
+Observed Recordを残して初めて、Future AIが同じ盤面から再開できる。
+```
+
+Future AIは、このThread内画像を読めない可能性がある。  
+したがって、現AIが読める使用率Snapshot・Effort・作業内容・推定境界をSSOTへ固定する。
+
+このSectionでは、以下を分けて記録する。
+
+```text
+observed = 画像またはGitHub結果から直接確認できる
+inferred = 時系列・作業内容から合理的に推定した
+unknown = 確定できない
+```
+
+---
+
+### 19.2 Observed Screenshot Timeline / 画像から読めた使用率推移
+
+```yaml
+observed_usage_timeline:
+  thread: "Ark05"
+  source: "same-thread uploaded Fable5 usage screenshots / contact sheet"
+  status: "AI-observed visual data"
+  confidence: "high for visible percentages / medium for alignment to exact per-answer boundaries"
+
+  snapshots:
+    - label: "initial_zero_state"
+      visible_time: "not visible / unknown"
+      source_type: "observed_from_image"
+      screen_type: "usage_status"
+      current_session_usage: "0%"
+      weekly_all_models_usage: "0%"
+      weekly_fable_only_usage: "0%"
+      note:
+        - "Fableがまだ使用されていない、または使用開始前に近い初期状態として扱う"
+        - "画面下部に『この期間中、Fableはまだ使用されていません』に近い表示あり"
+
+    - label: "effort_selection"
+      visible_time: "15:33"
+      source_type: "observed_from_image"
+      screen_type: "effort_selection"
+      selected_effort: "高"
+      effort_options_visible:
+        - "低"
+        - "中"
+        - "高"
+        - "超高"
+        - "最大"
+      note:
+        - "Effort選択画面で『高』にチェックあり"
+        - "説明上、『高』はデフォルト / balanced寄りとして扱える"
+
+    - label: "usage_snapshot_1600"
+      visible_time: "16:00"
+      source_type: "observed_from_image"
+      screen_type: "usage_status"
+      current_session_usage: "7%"
+      weekly_all_models_usage: "0%"
+      weekly_fable_only_usage: "1%"
+      reset_notes_visible:
+        current_session: "約4時間49分後にリセット"
+      note:
+        - "Fable5使用が開始された後の初期Snapshot"
+        - "weekly Fable onlyが0%から1%へ増加"
+
+    - label: "usage_snapshot_1749"
+      visible_time: "17:49"
+      source_type: "observed_from_image"
+      screen_type: "usage_status"
+      current_session_usage: "14%"
+      weekly_all_models_usage: "2%"
+      weekly_fable_only_usage: "3%"
+      reset_notes_visible:
+        current_session: "約3時間0分後にリセット"
+        weekly_all_models: "リセット: 1日10:00"
+        weekly_fable_only: "リセット: 1日10:00"
+      note:
+        - "Fable5関連作業が進んだ中盤Snapshot"
+        - "weekly all modelsが2%、weekly Fable onlyが3%へ増加"
+
+    - label: "upgrade_screen_1809"
+      visible_time: "18:09"
+      source_type: "observed_from_image"
+      screen_type: "subscription_or_upgrade_information"
+      usage_values: "not a usage percentage screen"
+      note:
+        - "使用率Snapshotではない"
+        - "Fable5利用環境・制限理解に関係する可能性がある画像"
+        - "『コンテンツをレベルアップ』等の表示が見える"
+
+    - label: "usage_snapshot_1943"
+      visible_time: "19:43"
+      source_type: "observed_from_image"
+      screen_type: "usage_status"
+      current_session_usage: "29%"
+      weekly_all_models_usage: "3%"
+      weekly_fable_only_usage: "5%"
+      reset_notes_visible:
+        current_session: "約1時間6分後にリセット"
+        weekly_all_models: "リセット: 19:59"
+        weekly_fable_only: "リセット: 19:59"
+      note:
+        - "Current Session使用率の最大観測値"
+        - "weekly Fable onlyが5%へ増加"
+        - "この時点までにFable5関連作業がかなり進んだと見られる"
+
+    - label: "usage_snapshot_2225"
+      visible_time: "22:25"
+      source_type: "observed_from_image"
+      screen_type: "usage_status"
+      current_session_usage: "11%"
+      weekly_all_models_usage: "3%"
+      weekly_fable_only_usage: "6%"
+      reset_notes_visible:
+        current_session: "約4時間54分後にリセット"
+      note:
+        - "最終観測Snapshot"
+        - "Current Sessionが29%から11%へ下がっているため、Session resetが発生した可能性が高い"
+        - "weekly Fable onlyは5%から6%へ増加"
+
+    - label: "fable_answer_screenshot"
+      visible_time: "not clearly used for usage percentage"
+      source_type: "observed_from_image"
+      screen_type: "fable_answer_sample"
+      content_summary:
+        - "Minecraftの新規な世界観設定、Mojang技術デモ、ゲーム内惑星などに関する日本語回答が見える"
+      note:
+        - "使用率画面ではない"
+        - "同Thread内でFable5回答実例が存在したことを示す画像"
+        - "C2XC Reviewとの直接対応は未確定"
+```
+
+---
+
+### 19.3 Human-readable Usage Table / 人間用Table
+
+| Snapshot | Time | Current Session | Weekly All Models | Weekly Fable Only | Evidence | Note |
+|---|---:|---:|---:|---:|---|---|
+| initial_zero_state | unknown | 0% | 0% | 0% | observed | Fable未使用に近い初期状態 |
+| effort_selection | 15:33 | n/a | n/a | n/a | observed | Effort「高」が選択されていた |
+| usage_snapshot_1600 | 16:00 | 7% | 0% | 1% | observed | Fable使用開始後の初期Snapshot |
+| usage_snapshot_1749 | 17:49 | 14% | 2% | 3% | observed | 中盤Snapshot |
+| upgrade_screen_1809 | 18:09 | n/a | n/a | n/a | observed | 使用率ではなく契約/アップグレード画面 |
+| usage_snapshot_1943 | 19:43 | 29% | 3% | 5% | observed | Current Session最大観測値 |
+| usage_snapshot_2225 | 22:25 | 11% | 3% | 6% | observed | Session reset後の可能性あり |
+| fable_answer_screenshot | unknown | n/a | n/a | n/a | observed | Fable回答実例。Minecraft関連内容が見える |
+
+---
+
+## 20. Thread-Level Before / After Reconstruction
+
+### 20.1 Core Finding
+
+このThread内で観測できる最重要の使用率推移は以下である。
+
+```text
+Weekly Fable only:
+0% → 1% → 3% → 5% → 6%
+```
+
+Current Sessionは以下のように推移した。
+
+```text
+Current Session:
+0% → 7% → 14% → 29% → 11%
+```
+
+ただし、`29% → 11%` は減少しているため、Current Sessionは途中でresetされた可能性が高い。  
+そのため、Thread全体の累積を見るには、Current Sessionよりも **weekly Fable only usage** の方が安定した指標である。
+
+---
+
+### 20.2 Thread-Level Reconstruction
+
+```yaml
+thread_level_before_after_reconstruction:
+  before:
+    label: "initial_zero_state"
+    current_session_usage: "0%"
+    weekly_all_models_usage: "0%"
+    weekly_fable_only_usage: "0%"
+    evidence: "observed_from_image"
+
+  progression:
+    - label: "usage_snapshot_1600"
+      current_session_usage: "7%"
+      weekly_all_models_usage: "0%"
+      weekly_fable_only_usage: "1%"
+      delta_from_initial:
+        current_session: "+7%"
+        weekly_all_models: "+0%"
+        weekly_fable_only: "+1%"
+
+    - label: "usage_snapshot_1749"
+      current_session_usage: "14%"
+      weekly_all_models_usage: "2%"
+      weekly_fable_only_usage: "3%"
+      delta_from_initial:
+        current_session: "+14%"
+        weekly_all_models: "+2%"
+        weekly_fable_only: "+3%"
+
+    - label: "usage_snapshot_1943"
+      current_session_usage: "29%"
+      weekly_all_models_usage: "3%"
+      weekly_fable_only_usage: "5%"
+      delta_from_initial:
+        current_session: "+29%"
+        weekly_all_models: "+3%"
+        weekly_fable_only: "+5%"
+      note:
+        - "Current Session最大観測値"
+
+    - label: "usage_snapshot_2225"
+      current_session_usage: "11%"
+      weekly_all_models_usage: "3%"
+      weekly_fable_only_usage: "6%"
+      stable_weekly_delta_from_initial:
+        weekly_all_models: "+3%"
+        weekly_fable_only: "+6%"
+      current_session_delta_from_initial:
+        value: "not safe as continuous delta"
+        reason: "Session resetが発生した可能性が高い"
+```
+
+---
+
+### 20.3 Practical Interpretation
+
+```yaml
+practical_interpretation:
+  most_stable_observed_delta:
+    metric: "weekly_fable_only_usage"
+    from: "0%"
+    to: "6%"
+    delta: "+6%"
+    interpretation:
+      - "同Thread観測内で、Fable only weekly usageは少なくとも6ポイント増加した"
+
+  current_session_peak:
+    metric: "current_session_usage"
+    peak: "29%"
+    time: "19:43"
+    interpretation:
+      - "少なくとも一時点で、Current Session usageは29%まで上昇した"
+
+  session_reset_warning:
+    observed: true
+    evidence:
+      - "19:43 = current session 29%"
+      - "22:25 = current session 11%"
+    interpretation:
+      - "19:43から22:25の間にCurrent Session resetが起きた可能性が高い"
+      - "Current SessionだけでThread全体消費を読むと誤る可能性がある"
+```
+
+---
+
+## 21. Work Performed During Observed Usage Window
+
+### 21.1 Purpose
+
+使用率データだけでは不十分である。  
+Future AIが再利用できるように、**何をしてその使用率になったのか**を同時に保存する。
+
+---
+
+### 21.2 Reconstructed Work Summary
+
+```yaml
+work_performed_during_observed_usage_window:
+  thread: "Ark05"
+  broad_task:
+    - "Fable5 usage experiment"
+    - "Fable5 effort observation"
+    - "C2XC skill review"
+    - "C2XC GitHub canonicalization"
+    - "Fable5 SSOT creation"
+
+  reconstructed_steps:
+    - step: 1
+      evidence_status: "observed"
+      description: "Fable5のEffort選択画面で『高』が選択されていた"
+
+    - step: 2
+      evidence_status: "thread_context"
+      description: "Fable5に chatgpt-to-xchain_skill.md v001 Draft のPre-Commit Reviewを依頼した"
+
+    - step: 3
+      evidence_status: "thread_context"
+      description: "Review形式は One Critical Flaw Audit だった"
+
+    - step: 4
+      evidence_status: "thread_context"
+      description: "Fable5回答は Overall Judgment = Conditional Pass だった"
+
+    - step: 5
+      evidence_status: "thread_context"
+      description: "Fable5は One Critical Flaw として Safety Inheritance Gap を検出した"
+
+    - step: 6
+      evidence_status: "thread_context"
+      description: "Fable5は Minimal Patch として Safety Inheritance Rule を提示した"
+
+    - step: 7
+      evidence_status: "thread_context"
+      description: "ChatGPTがSafety Inheritance RuleをC2XC v001へ統合した"
+
+    - step: 8
+      evidence_status: "thread_context"
+      description: "User correctionにより Same-Thread Context Rail を追加した"
+
+    - step: 9
+      evidence_status: "thread_context"
+      description: "ChatGPTがC2XC v001 Final Markdownを生成した"
+
+    - step: 10
+      evidence_status: "observed_github_result"
+      description: "GitHubへ _skill/skills/chatgpt-to-xchain_skill.md を新規作成した"
+      commit:
+        repo: "yusukefujiijp/ai-project"
+        path: "_skill/skills/chatgpt-to-xchain_skill.md"
+        commit_message: "Add chatgpt-to-xchain skill"
+        commit_sha: "d23d132c64d25c25d9344da4ccd141244fc104a3"
+
+    - step: 11
+      evidence_status: "thread_context"
+      description: "Fable5使用率・Effort・回答重量・Breakthroughを記録するSSOTを設計した"
+
+    - step: 12
+      evidence_status: "observed_github_result"
+      description: "GitHubへ _ssot/fable5_ssot.md を新規作成した"
+      commit:
+        repo: "yusukefujiijp/ai-project"
+        path: "_ssot/fable5_ssot.md"
+        commit_message: "Add fable5 SSOT"
+        commit_sha: "172461072d24ca79a5c8b845727b78f6518321d5"
+```
+
+---
+
+### 21.3 Cost Attribution Guard / 使用量帰属Guard
+
+Fable5の使用率とChatGPT側の後続作業を混同してはいけない。
+
+```yaml
+cost_attribution_guard:
+  fable5_usage_scope:
+    includes:
+      - "Fable5へ投げたQuery"
+      - "Fable5が生成した回答"
+      - "Fable5 UI上でのEffort設定"
+    metric:
+      - "Fable5 usage %"
+      - "weekly Fable only usage %"
+
+  chatgpt_thread_work_scope:
+    includes:
+      - "Fable5回答の読解"
+      - "C2XCへの統合"
+      - "Same-Thread Context Rail抽出"
+      - "GitHub create_file"
+      - "Fable5 SSOT本文作成"
+    metric:
+      - "ChatGPT側Thread作業"
+      - "Fable5 usage %には直接帰属させない"
+
+  guard:
+    - "Fable5 usage %を、ChatGPT側の後続作業コストと混同しない"
+    - "ただし、Fable5回答が後続作業に与えた価値はBreakthroughとして記録する"
+```
+
+---
+
+## 22. Evidence Status / Confidence
+
+### 22.1 Evidence Classes
+
+```yaml
+evidence_classes:
+  observed:
+    meaning: "画像・GitHub tool result・明示された画面から直接確認できる"
+    examples:
+      - "16:00 = 7% / 0% / 1%"
+      - "17:49 = 14% / 2% / 3%"
+      - "19:43 = 29% / 3% / 5%"
+      - "22:25 = 11% / 3% / 6%"
+      - "Effort selected = 高"
+      - "GitHub commit SHA"
+
+  thread_context:
+    meaning: "このThread内の会話・作業ログから確認できる"
+    examples:
+      - "C2XC v001 Review"
+      - "Safety Inheritance Gap"
+      - "Safety Inheritance Rule採用"
+      - "Same-Thread Context Rail追加"
+
+  inferred:
+    meaning: "観測値と時系列から合理的に推定した"
+    examples:
+      - "19:43から22:25の間にCurrent Session resetが発生した可能性"
+      - "観測Window内にC2XC Review関連作業が含まれる"
+
+  unknown:
+    meaning: "現時点では確定できない"
+    examples:
+      - "各Fable5回答1本ごとの正確な使用率Delta"
+      - "各Snapshot直前/直後の完全な作業境界"
+      - "Minecraft関連Fable回答ScreenshotとC2XC Reviewの直接対応"
+```
+
+---
+
+### 22.2 Confidence Notes
+
+```yaml
+confidence_notes:
+  high_confidence:
+    - "画像に見える使用率パーセンテージ"
+    - "Effort『高』の選択"
+    - "GitHub commit SHA"
+
+  medium_confidence:
+    - "Snapshot間の作業内容との対応"
+    - "C2XC Review関連作業が観測Window内に含まれること"
+
+  low_or_unknown_confidence:
+    - "Fable5回答1本ごとの正確な使用率Delta"
+    - "Session resetの正確な発生時刻"
+```
+
+---
+
+## 23. Future AI Handoff Note
+
+Future AIへ。
+
+このSectionは、Ark05 Thread内で現AIが確認できたFable5使用状況画像・Effort・作業内容をSSOTへ固定したものである。
+
+重要:
+
+```text
+Future AIは、このThread内画像を読めない可能性がある。
+そのため、このSectionのObserved Usage Timelineを一次Handoffとして扱う。
+```
+
+このThreadで観測されたFable5使用率の重要な流れは以下である。
+
+```text
+Weekly Fable only:
+0% → 1% → 3% → 5% → 6%
+```
+
+Current Sessionは以下である。
+
+```text
+Current Session:
+0% → 7% → 14% → 29% → 11%
+```
+
+ただし、Current Sessionは途中でresetされた可能性が高い。
+
+したがって、Future AIは以下のように読む。
+
+```text
+Thread全体の累積傾向を見るなら weekly Fable only usage を重視する。
+Session内の瞬間負荷を見るなら current session usage を見る。
+1回答単位の燃費は、まだ正確には確定しない。
+```
+
+また、この使用Windowでは、少なくとも以下の重要作業が発生した。
+
+```text
+Fable5 Effort『高』
+→ C2XC v001 Pre-Commit Review
+→ Safety Inheritance Gap検出
+→ Safety Inheritance Rule採用
+→ Same-Thread Context Rail追加
+→ chatgpt-to-xchain_skill.md GitHub作成
+→ fable5_ssot.md GitHub作成
+```
+
+このRecordの主目的は、Rule追加ではない。  
+今このThread内にしかない実観測データを、Future AIへ渡すことである。
+
+---
+
+## 24. Patch Final Compression
+
+```text
+Ruleだけでは足りない。
+Recordが必要。
+
+このThreadでは、
+Fable only weekly usageが
+0% → 1% → 3% → 5% → 6%
+へ進んだことが画像から観測された。
+
+Current Sessionは
+0% → 7% → 14% → 29% → 11%
+と推移した。
+
+29% → 11% はSession resetの可能性が高い。
+
+Effortは『高』が選択されていた。
+
+この使用Windowで、
+C2XC v001 Review、
+Safety Inheritance Gap検出、
+Safety Inheritance Rule採用、
+Same-Thread Context Rail追加、
+GitHub commit、
+Fable5 SSOT作成が行われた。
+
+Future AIは、このThread内画像を読めない可能性がある。
+だから、現AIが読めるObserved RecordをSSOTへ固定する。
+
+Humanは画像を貼る。
+AIは時系列を読む。
+SSOTは未来へ渡す。
+```
