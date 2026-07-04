@@ -1072,7 +1072,7 @@ No visible source = no handoff.
 High-risk hook = do not amplify.  
 Human seals.
 
-English anchor:
+English anchor: 
 
 ```text
 Source first.
