@@ -1,9 +1,9 @@
 ---
 title: "Ark-WTP"
 canonical_name: "Ark-WTP Dedicated Project Folder README"
-version: "v001.0"
+version: "v001.1"
 path: "_projects/ark-wtp/README.md"
-status: "public-safe / human-editable / dedicated-folder-door"
+status: "public-safe / human-editable / dedicated-folder-door / topology-first-complete"
 role: "Ark-WTP Door / Router / Dedicated Project Folder Entry"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
@@ -77,28 +77,18 @@ _projects/ark-wtp/ark-wtp.md is Ark-WTP Root Spec.
 
 ---
 
-## 3. Migration Note
-
-Ark-WTP Root Spec was first created at:
-
-```text
-_projects/ark/ark-wtp.md
-```
-
-The dedicated folder path is now:
-
-```text
-_projects/ark-wtp/ark-wtp.md
-```
-
-The old path should later become a lightweight bridge after Reality confirmation and Human Final Seal.
+## 3. Topology-First Migration Note
 
 ```yaml
+migration_status:
+  old_path: "_projects/ark/ark-wtp.md"
+  old_path_status: "deleted / topology-first migration completed"
+  new_canonical: "_projects/ark-wtp/ark-wtp.md"
+
 migration_guard:
-  - "Do not keep two full canonical Ark-WTP bodies forever."
-  - "Do not delete the old path abruptly."
-  - "Populate the dedicated folder first."
-  - "Bridge old path later after Human Seal."
+  - "Do not recreate the old path."
+  - "Do not create a bridge file unless Human explicitly reverses this topology decision."
+  - "All new links should point to _projects/ark-wtp/."
 ```
 
 ---
@@ -153,8 +143,9 @@ Root remains 主イェシュア・ハマシア.
 Ark-WTP has a dedicated folder.
 README is the folder door.
 ark-wtp.md is the Root Spec.
-Old path becomes bridge later.
+Old path was deleted by Topology-first decision.
 
+Do not recreate the old path.
 Do not split-brain.
 Do not over-migrate.
 Do not root the tool.
