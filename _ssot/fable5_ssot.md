@@ -1443,28 +1443,8 @@ Future AIは、このThread内画像を読めない可能性がある。
 
 Humanは画像を貼る。
 AIは時系列を読む。
-SSOTは未来へ渡す。
+SSOTは未来へ
 ```
-
-# SAFE COPY-PASTE BUNDLE
-# Target: _ssot/fable5_ssot.md
-# Purpose: Preserve existing SSOT exactly, then append Section 25-30.
-#
-# IMPORTANT:
-# This is NOT the full current _ssot/fable5_ssot.md.
-# I did not generate a full replacement file because the current SSOT could not be safely retrieved without truncation in this runtime.
-# To avoid degradation, data loss, or stale reconstruction, use this bundle only as an append package:
-#
-# 1. Open _ssot/fable5_ssot.md in GitHub.
-# 2. Keep the existing content exactly as-is.
-# 3. Paste the content below at the very end.
-# 4. Commit.
-#
-# Reason:
-# _ssot/fable5_ssot.md is append-only / growing-ledger.
-# A partial or reconstructed full replacement would risk destroying Sections 1-24.
-#
-# BEGIN APPEND CONTENT
 
 ---
 
