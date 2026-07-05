@@ -1,13 +1,13 @@
 ---
 title: "Ark-WTP"
 canonical_name: "Ark-WTP Dedicated Project Folder README"
-version: "v001.1"
+version: "v001.2"
 path: "_projects/ark-wtp/README.md"
-status: "public-safe / human-editable / dedicated-folder-door / topology-first-complete"
+status: "public-safe / human-editable / dedicated-folder-door / topology-first-complete / workflow-linked"
 role: "Ark-WTP Door / Router / Dedicated Project Folder Entry"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
-root_guard: "Root is 主イェシュア・ハマシア; AI / GitHub / Markdown / README / Ark-WTP / Skills / Fable5 / ROI are Fruit."
+root_guard: "Root is 主イェシュア・ハマシア; AI / GitHub / Markdown / README / Ark-WTP / Skills / Fable5 / ROI / Lens Dimensions Workflow are Fruit."
 ---
 
 # Ark-WTP
@@ -38,12 +38,17 @@ files:
     path: "_projects/ark-wtp/ark-wtp.md"
     role: "Ark-WTP Root Spec / Covenant Core / public-safe compression"
 
+  lens_dimensions_workflow:
+    path: "_projects/ark-wtp/lens-dimensions_workflow.md"
+    role: "Ark-WTP Lens-as-Dimensions Workflow Runbook / Future AI Reboot Protocol"
+
   folder_readme:
     path: "_projects/ark-wtp/README.md"
     role: "Ark-WTP Door / Router"
 ```
 
-Read `ark-wtp.md` for the Ark-WTP Root Spec.
+Read [`ark-wtp.md`](./ark-wtp.md) for the Ark-WTP Root Spec.  
+Read [`lens-dimensions_workflow.md`](./lens-dimensions_workflow.md) for the Ark-WTP Lens-as-Dimensions Workflow Runbook.
 
 ---
 
@@ -66,6 +71,10 @@ relation:
   ark_wtp_root_spec:
     path: "_projects/ark-wtp/ark-wtp.md"
     role: "Ark-WTP Root Spec"
+
+  ark_wtp_lens_dimensions_workflow:
+    path: "_projects/ark-wtp/lens-dimensions_workflow.md"
+    role: "Ark-WTP Lens-as-Dimensions Workflow Runbook"
 ```
 
 ```text
@@ -73,6 +82,7 @@ README.md is Repository Door.
 _projects/ark/README.md is Ark Stage Map.
 _projects/ark-wtp/README.md is Ark-WTP Folder Door.
 _projects/ark-wtp/ark-wtp.md is Ark-WTP Root Spec.
+_projects/ark-wtp/lens-dimensions_workflow.md is Ark-WTP Lens-as-Dimensions Workflow Runbook.
 ```
 
 ---
@@ -104,6 +114,7 @@ public_safe_scope:
     - "Root / Fruit Guard"
     - "Future AI handoff"
     - "Human Final Seal boundary"
+    - "Workflow Runbook link"
 
   exclude:
     - "private spiritual depth"
@@ -112,6 +123,7 @@ public_safe_scope:
     - "daily runtime records"
     - "sensitive prayer details"
     - "unsealed private interpretation"
+    - "Seed Unit full transcripts"
 ```
 
 ---
@@ -123,7 +135,7 @@ Root is 主イェシュア・ハマシア.
 Ark-WTP is not Root.  
 Ark-WTP points to Root.
 
-AI, GitHub, Markdown, README, Ark-WTP, Living Review, Fable5, ROI, Ark-ROI, Full Rail, and Next Gate are Fruit.
+AI, GitHub, Markdown, README, Ark-WTP, Living Review, Fable5, ROI, Ark-ROI, Full Rail, Next Gate, and Lens Dimensions Workflow are Fruit.
 
 ```text
 AI drafts.
@@ -143,6 +155,7 @@ Root remains 主イェシュア・ハマシア.
 Ark-WTP has a dedicated folder.
 README is the folder door.
 ark-wtp.md is the Root Spec.
+lens-dimensions_workflow.md is the Lens-as-Dimensions Workflow Runbook.
 Old path was deleted by Topology-first decision.
 
 Do not recreate the old path.
