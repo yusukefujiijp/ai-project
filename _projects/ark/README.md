@@ -28,6 +28,7 @@ GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でV
 ```text
 現在開いているもの:
   Ark Project entry README
+  Ark-WTP Root Spec
   Ark99 entry README
   Ark00 entry README
   Ark02 public-safe handoff node
@@ -37,6 +38,9 @@ GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でV
   personal operational recordsを置かない。
   full S/G/runtime/tasks migrationをしない。
 ```
+
+[`ark-wtp.md`](./ark-wtp.md) は、Ark-WTPのpublic-safe Root Specである。  
+これはArk Project READMEの代替ではなく、Daily Teshuvah Gate-to-Yeshua方向をFuture AIが再起動するためのRoot Specである。
 
 Ark99とArk00は、軽量なREADME-first entryとして開かれている。  
 これはArk Project全体の正式移行ではない。
