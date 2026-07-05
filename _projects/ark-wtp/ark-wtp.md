@@ -1,10 +1,11 @@
 ---
 title: "Ark-WTP"
 canonical_name: "Ark-WTP Root Spec"
-version: "v001.2"
+version: "v001.3"
 path: "_projects/ark-wtp/ark-wtp.md"
 previous_path: "_projects/ark/ark-wtp.md"
-status: "human-sealed / public-safe / human-editable / dedicated-folder-canonical"
+previous_path_status: "deleted / topology-first migration completed"
+status: "human-sealed / public-safe / human-editable / dedicated-folder-canonical / topology-first-complete"
 role: "Ark-WTP Root Spec / Covenant Core / public-safe compression"
 language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
@@ -15,14 +16,14 @@ seal:
   sealed_by: "Human"
   sealed_at: "2026-07-05"
   seal_source: "Very Good! Human Seal OK! Full Rail & Next Gate: Workflow Continue!"
-  seal_context: "same_thread explicit Human Seal / dedicated folder migration Phase 1"
+  seal_context: "same_thread explicit Human Seal / topology-first migration completed"
   ai_recording_rule: "AI may record Human Final Seal only from explicit same-thread Human instruction; AI must not self-seal."
 migration:
-  mode: "topology_first / dedicated_folder_phase_1"
+  mode: "topology_first / dedicated_folder_complete"
   from: "_projects/ark/ark-wtp.md"
   to: "_projects/ark-wtp/ark-wtp.md"
-  old_path_future_role: "legacy bridge / pointer after Reality confirmation and Human Final Seal"
-  guard: "Do not keep two full canonical Ark-WTP bodies forever; bridge old path later."
+  old_path_status: "deleted"
+  guard: "Do not recreate old path; use _projects/ark-wtp/ as canonical folder."
 ---
 
 # Ark-WTP
@@ -55,24 +56,24 @@ Ark-WTP Root Spec was first created at:
 _projects/ark/ark-wtp.md
 ```
 
-The dedicated project folder path is:
+The dedicated project folder path is now:
 
 ```text
 _projects/ark-wtp/ark-wtp.md
 ```
 
-This file is the dedicated-folder Root Spec.
+The old path was deleted by Topology-first decision. This file is the dedicated-folder Root Spec.
 
 ```yaml
 topology_note:
   old_path: "_projects/ark/ark-wtp.md"
+  old_path_status: "deleted"
   new_path: "_projects/ark-wtp/ark-wtp.md"
   dedicated_folder: "_projects/ark-wtp/"
-  old_path_future_role: "legacy bridge / pointer"
   guard:
-    - "Do not keep two full canonical Ark-WTP bodies forever."
-    - "Do not delete old path abruptly."
-    - "Bridge old path after Reality confirmation and Human Final Seal."
+    - "Do not recreate old path."
+    - "Do not keep parallel canonical Ark-WTP bodies."
+    - "All new links should point to _projects/ark-wtp/."
 ```
 
 ---
@@ -178,7 +179,7 @@ door_root_split:
     should_do:
       - "Ark-WTP専用Folderの入口になる"
       - "ark-wtp.mdへの導線を持つ"
-      - "旧PathからのMigration Noteを保持する"
+      - "Topology-first Migration Noteを保持する"
     should_not_do:
       - "Ark-WTP Root Spec本文を抱え込む"
       - "private-depth storageになる"
@@ -186,6 +187,7 @@ door_root_split:
   ark_wtp_root_spec:
     path: "_projects/ark-wtp/ark-wtp.md"
     previous_path: "_projects/ark/ark-wtp.md"
+    previous_path_status: "deleted"
     role: "Ark-WTP Root Spec / Covenant Core"
     should_do:
       - "Ark-WTPのRoot定義を保持する"
@@ -405,6 +407,9 @@ Ark README is Stage Map.
 Ark-WTP README is Folder Door.
 Ark-WTP ark-wtp.md is Root Spec.
 
+Old path was deleted by Topology-first decision.
+Do not recreate old path.
+
 AI drafts.
 Living Review reads.
 Fable5 audits only when high-ROI.
@@ -414,6 +419,5 @@ Future AI inherits.
 
 Public-safe only.
 Private-depth stays out.
-Old path becomes bridge later.
 Root remains 主イェシュア・ハマシア.
 ```
