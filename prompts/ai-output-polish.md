@@ -190,6 +190,39 @@ Keep useful structure when it helps the reader.
 
 Do not flatten everything into one paragraph if the input needs sections, steps, or bullets.
 
+### 2.6 Verbatim Lock
+
+The following must be preserved verbatim from the input:
+
+- proper nouns / numbers / dates / model names / organizations
+- attribution sentences（投稿者は… / 元ポストでは… 等）
+- Source Safety / Risk Flag / Publish Decision values
+
+If polishing seems to require changing a locked item, do not change it.
+
+Instead set:
+
+```text
+meaning_changed: yes
+publish_readiness: needs_source_check
+```
+
+For `x_post` polish, the Stage 01 Markdown file is a required input as the evidence anchor.
+
+If Stage 01 Markdown is missing, set:
+
+```text
+publish_readiness: needs_source_check
+```
+
+If input Publish Decision is:
+
+```text
+publish_raw
+```
+
+polish may be skipped entirely.
+
 ---
 
 ## 3. Phase 2: Output-Type Adapter
