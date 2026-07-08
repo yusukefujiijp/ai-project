@@ -338,6 +338,19 @@ Stage 01 Markdown file created:
 
 Do not paste the full Stage 01 result in chat when the downloadable Markdown file is successfully created.
 
+Chat Status Line Exception:
+
+When the downloadable file is created, the chat response must be exactly:
+
+```text
+Stage 01 Markdown file created:
+[Download <filename>](link)
+Publish readiness: <ready / needs_human_edit / do_not_publish>
+Risk Flag: <L / M / H>
+```
+
+Nothing else in chat.
+
 Fallback rule:
 
 If downloadable file creation is unavailable, output one complete fenced Markdown block containing the full Stage 01 result.
