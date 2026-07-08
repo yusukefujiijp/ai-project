@@ -213,6 +213,10 @@ If any danger type appears, escalate to Full 02R.
 
 Full 02R is the course-correction / source re-anchoring route.
 
+Cross-file references must use stage names only.
+
+Do not pin patch versions.
+
 ---
 
 ## 8. Mechanical Routing Rule
@@ -520,6 +524,30 @@ Stage 02 Lite Markdown file created:
 
 Do not paste the full Stage 02 result in chat when the downloadable Markdown file is successfully created.
 
+Chat Status Line Exception:
+
+When the downloadable file is created, the chat response must be exactly:
+
+```text
+Stage 02 Markdown file created:
+[Download <filename>](link)
+Publish Decision: <publish_raw / light_tune_then_publish / hold_with_reason>
+Source Safety: <pass / needs_check / hold>
+Risk Flag: <L / M / H>
+```
+
+For Lite Execution:
+
+```text
+Stage 02 Lite Markdown file created:
+[Download <filename>](link)
+Publish Decision: <publish_raw / light_tune_then_publish / hold_with_reason>
+Source Safety: <pass / needs_check / hold>
+Risk Flag: <L / M / H>
+```
+
+Nothing else in chat.
+
 Fallback rule:
 
 If downloadable file creation is unavailable, output one complete fenced Markdown block containing the full Stage 02 or Lite result.
@@ -648,7 +676,7 @@ route: lite / full_required
 Routing Check:
 lite_allowed: yes / no
 reason:
-if_full_required: use x-deepquote_02r-fresh-contribution-loop_v001-2.md
+if_full_required: use latest x-deepquote_02r (course-correction gate)
 
 Selected Candidate:
 choice: 1 / 2 / 3
