@@ -3,7 +3,7 @@ title: "ChatGPT GitHub Note — Main-First Direct Write Policy"
 filename: "chatgpt-github_note.md"
 canonical_path: "_note/chatgpt-github_note.md"
 migrated_from: "g_global/chatgpt-github.md"
-status: "active_note / main-first / personal-dev / speed-first / simple-is-best"
+status: "active_note / main-first / personal-dev / speed-first / simple-is-best / fable5-redteam-patched"
 class: "_note"
 repo: "yusukefujiijp/ai-project"
 language_policy: "Japanese-first / English-anchor"
@@ -26,6 +26,14 @@ github_write_policy:
     - "simple_is_best"
     - "low_friction"
     - "no_unnecessary_PR_churn"
+fable5_redteam_patch:
+  source: "Fable5 Red-Team Report / chatgpt-github_note.md Main-First Policy"
+  adopted:
+    - "Pre-Write Public Safety Gate"
+    - "Half-Migration Rule"
+    - "Seal Scope Rule"
+    - "Recovery / Critical Marker / Silent Drop Guard"
+    - "Old Path Reference Note"
 core_formula:
   - "AI drafts."
   - "Human seals."
@@ -43,7 +51,7 @@ core_formula:
 旧位置:
 
 ```text
- g_global/chatgpt-github.md
+g_global/chatgpt-github.md
 ```
 
 新位置:
@@ -51,8 +59,6 @@ core_formula:
 ```text
 _note/chatgpt-github_note.md
 ```
-
-この移籍の意味は大きい。
 
 旧Fileは、やや大きなGlobal GuideとしてGitHub運用全体を統治しようとしていた。  
 新Fileは、Ark Projectの現実運用に合わせて、**ChatGPT × GitHub の実務判断Note** として扱う。
@@ -74,6 +80,14 @@ github_write_policy:
 
 ```text
 個人開発では、過剰なPR運用より、main直書き + fetch verify + commit history の方が強い。
+```
+
+Fable5 Red-Team後の追加Seal:
+
+```text
+Main-first is correct.
+But main commit is permanent ink.
+Therefore, write fast only after a pre-write public safety glance.
 ```
 
 ---
@@ -223,6 +237,36 @@ not_enough_for_github_write:
 
 ただし、Userが明確に `Human Seal OK! Execute GitHub OK!` と言った場合は、mainへ進めてよい。
 
+### 4.3 Seal Scope Rule / Seal範囲固定
+
+GitHub write permissionは、現在のUser承認で明示されたpath / operation / scopeにのみ適用される。
+
+```yaml
+seal_scope_rule:
+  core:
+    - "One Seal = one declared path set."
+    - "One GitHub write approval does not create residual permission."
+    - "Do not carry write permission into a different file, different operation, or later scope."
+
+  delete_or_migration:
+    - "For delete / migration, AI must restate target path(s) before execution when ambiguity exists."
+    - "If the target path is unclear, STOP and ask human."
+    - "If the operation changes from create/update to delete/migration, require fresh confirmation."
+
+  examples:
+    valid:
+      - "Update _note/chatgpt-github_note.md on main."
+      - "Move g_global/chatgpt-github.md to _note/chatgpt-github_note.md."
+    invalid:
+      - "Use previous approval to update another file."
+      - "Treat general enthusiasm as repository-wide write permission."
+```
+
+```text
+Human Seal is scoped.
+No residual write permission.
+```
+
 ---
 
 ## 5. Fetch Before Write / 書く前に必ず読む
@@ -263,6 +307,35 @@ create new path if 404
 verify new path
 then delete old path if migration requested
 verify old path is gone
+```
+
+### 5.1 Pre-Write Public Safety Gate / main投入前公開安全Gate
+
+mainへ書く前に、AIは本文を一瞥してPublic Safetyを確認する。
+
+```yaml
+pre_write_public_safety_gate:
+  scan_before_any_main_write:
+    - "認証系の秘密値"
+    - "非公開の個人情報"
+    - "非公開の私信や内部メモ"
+    - "非公開画像・添付由来の情報"
+    - "公開前提ではない機微情報"
+
+  if_suspected:
+    - "STOP"
+    - "Do not write to main"
+    - "Ask human for confirmation or redaction"
+
+  reason:
+    - "main commit is permanent"
+    - "delete_file does not purge Git history"
+    - "commit history is a version ledger, but can become a permanent contamination ledger"
+```
+
+```text
+Main-first is fast.
+Therefore pre-write safety must be first.
 ```
 
 ---
@@ -428,6 +501,48 @@ VerifyはGitHub保存の一部である。
 Write without verify is incomplete.
 ```
 
+### 10.1 Recovery / Critical Marker / Silent Drop Guard
+
+誤updateや内容欠落が起きた場合、回復は履歴改変ではなく新commitで行う。
+
+```yaml
+recovery_rule:
+  default:
+    - "Recovery = revert as new commit."
+    - "Never force-push."
+    - "Never rewrite history."
+
+  reason:
+    - "main-first relies on visible commit history"
+    - "history rewrite increases confusion"
+    - "recovery should preserve auditability"
+```
+
+`critical markers` は最低限、以下の3点を指す。
+
+```yaml
+critical_markers:
+  required_minimum:
+    - "title"
+    - "canonical_path"
+    - "most important policy block"
+```
+
+Full Body update時は、section silent dropを警戒する。
+
+```yaml
+silent_drop_guard:
+  full_body_update:
+    - "check section count did not shrink unless deletion was requested"
+    - "check major headings still exist"
+    - "if large unexpected shrinkage is detected: STOP and report"
+```
+
+```text
+sha guard prevents collision.
+It does not prevent content loss.
+```
+
 ---
 
 ## 11. Download Link vs GitHub Write
@@ -496,6 +611,61 @@ migration_policy:
     - "verify new file"
     - "delete old file when migration is complete"
     - "report both commit SHAs if available"
+```
+
+### 13.1 Half-Migration Rule / 半移籍状態Rule
+
+移籍処理では、`create new` が成功し、`delete old` が失敗する場合がある。
+
+```yaml
+half_migration_rule:
+  if_create_new_succeeds_but_delete_old_fails:
+    canonical_state:
+      - "new path is canonical"
+      - "old path is stale"
+
+    required_report:
+      - "report new path state"
+      - "report old path state"
+      - "report that migration is incomplete"
+      - "warn about Dangling Artifact Reference risk"
+
+    retry_rule:
+      - "retry delete only under next Human Seal"
+      - "do not improvise"
+      - "do not silently treat both files as equally live"
+```
+
+```text
+Dangling Artifact Reference
+=
+旧pathが残り、次Threadや次AIが古いArtifactをSSOTとして読んでしまう危険。
+```
+
+半移籍状態では、AIは必ずこう報告する。
+
+```text
+New path is canonical.
+Old path is stale.
+Migration is incomplete.
+Next action requires Human Seal.
+```
+
+### 13.2 Old Path Reference Note / 旧path参照Note
+
+移籍後、他Fileが旧pathを参照している可能性がある。
+
+```yaml
+old_path_reference_note:
+  after_migration:
+    - "report that other files may reference old path"
+    - "checking all references may be deferred to human unless explicitly requested"
+    - "do not expand into repo-wide search unless it is the current mission"
+```
+
+```text
+Reference check is useful.
+But do not turn a small migration into repo-wide churn.
 ```
 
 ファイル移籍は、単なるrenameではなく、Ark Project内での役割変更である。
