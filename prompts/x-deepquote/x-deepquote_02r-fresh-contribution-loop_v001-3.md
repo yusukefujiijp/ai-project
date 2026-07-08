@@ -19,45 +19,42 @@ Use this Markdown only when Lite is unsafe, unclear, stale, mixed, or drifting.
 
 02R exists to re-anchor the revision to the original source and return the post to the correct trajectory.
 
----
-
-## 1. Use When
-
 Use 02R when:
 
 ```text
-Mechanical Routing says Full 02R
-Lite conditions fail
+Mechanical Routing says Full 02R is required
 Lite output drifted
-Source Safety is uncertain
-Voice attribution is unclear
-selected candidate may mix with other candidates
+Source Safety became uncertain
+voice attribution became unclear
+selected candidate mixed with unselected candidates
 runtime_pass >= 3
-source context is stale or far away
+same-chat source context is stale
 post became scattered
 publish_ready was reached but another loop was suggested
 ```
 
-Do not use 02R for ordinary light polishing.
+Full 02R is not a new article generator.
 
-Do not use 02R when Lite is clearly safe.
+Full 02R is not a normal loop habit.
+
+Full 02R is a safety escalation and course-correction gate.
 
 ---
 
-## 2. Required Inputs
+## 1. Required Inputs
 
-02R requires:
+02R must receive:
 
 ```text
-1. original source post text
+1. Original source post text
 2. Stage 01 draft
-3. previous Final Quote Post
-4. previous Fresh Contribution
-5. previous Candidate Deck
-6. selected candidate
-7. current concern / reason for 02R
-8. previous Source Safety
-9. previous Risk Flag
+3. Previous Final Quote Post
+4. Previous Fresh Contribution
+5. Previous Next Fresh Contribution Candidates
+6. Selected Fresh Contribution Candidate
+7. Current weakness / Human concern
+8. Previous Source Safety
+9. Previous Risk Flag
 10. runtime_pass
 ```
 
@@ -73,9 +70,17 @@ If previous Final Quote Post is missing, output only:
 No Previous Final Quote Post.
 ```
 
+If Selected Candidate is missing, output only:
+
+```text
+No Selected Candidate.
+```
+
+If choice is `stop`, do not rewrite. Return previous Final Quote Post as current best version and recommend stop.
+
 ---
 
-## 3. Visible Runtime Header Rule
+## 2. Visible Runtime Header Rule
 
 Every Markdown artifact content must start with:
 
@@ -87,97 +92,154 @@ Use:
 
 ```text
 stage: 02R_course_correction_gate
-runtime_pass:
 loop_policy: no_hard_cap__natural_stop
-loop_status: continue / stop_recommended / publish_ready
 ```
 
 Do not use YAML frontmatter inside the Markdown artifact result.
 
----
-
-## 4. Course-Correction Principle
-
-02R is not a new creativity loop.
-
-02R must correct one or more of these dangers:
-
-```text
-source_safety drift
-voice_attribution drift
-context_decay drift
-candidate_mixing drift
-loop_addiction drift
-```
-
-The goal is:
-
-```text
-re-anchor to source
-preserve useful contribution
-remove unsupported additions
-return to publishable direction
-stop when publish-ready
-```
+Separate every visible section with one blank line.
 
 ---
 
-## 5. Source Re-Anchoring Rule
+## 3. Course-Correction Principle
 
-Use original source post text as the source of truth.
+02R's job is not to make the post longer.
 
-Every claim in the revised Final Quote Post must be categorized as:
+02R's job is to correct drift.
+
+Correct these failure modes:
 
 ```text
-source_claim
-safe_interpretation
-YusukeJP_application
-needs_check
+1. Source Safety drift
+2. Voice Attribution drift
+3. Context Decay drift
+4. Candidate Mixing drift
+5. Loop Addiction drift
 ```
 
-If a claim cannot be safely anchored, demote, soften, or remove it.
+Prefer:
 
-Do not invent source facts.
-
-Do not use memory as source.
-
-Do not write "as the original poster said" unless the source text supports it.
+```text
+re-anchor to original source text
+execute only selected candidate
+remove unsupported claims
+restore Source Voice / Publication Voice separation
+compress if scattered
+recommend stop if publish-ready
+```
 
 ---
 
-## 6. Selected Candidate Rule
+## 4. Selected Candidate Focus
 
-Execute only the selected candidate unless safety requires modification.
+Execute only the selected candidate.
 
-If the selected candidate is unsafe as written:
+Do not mix unselected candidates.
+
+Do not invent a fourth candidate.
+
+Do not broaden the revision unless required for:
 
 ```text
-modify it to a safer version
-or mark Source Safety needs_check
-or choose stop if the post is already publish-ready
+Source Safety
+Voice Attribution
+readability
+removing contradiction
+restoring the main thesis
+stopping loop addiction
 ```
 
-Do not combine unselected candidates unless explicitly necessary for source safety.
+Workflow:
 
-If you modify the selected candidate, explain in Correction Diagnosis.
+```text
+AI proposes.
+Human chooses.
+System routes.
+AI executes.
+```
 
 ---
 
-## 7. Contribution Stack Rule
+## 5. Mechanical Escalation Memory
 
-Preserve the contribution history.
+02R is required because one or more Lite conditions failed.
 
-Output a Contribution Stack showing:
+Lite conditions were:
 
 ```text
-previous Fresh Contribution
-selected candidate contribution
-02R correction contribution
+1. selected candidate source_safety_risk = L
+2. previous Risk Flag = L
+3. previous Source Safety = pass
+4. runtime_pass < 3
+5. same chat context is alive and still contains Stage 02 output and original source context
 ```
 
-This prevents hidden drift.
+If this file is being used, do not downgrade back to Lite inside the response.
 
-If a previous contribution was removed, say so.
+---
+
+## 6. Hard Rail × Soft Field Judgment
+
+Hard rails:
+
+```text
+selected candidate focus
+source-first verification
+Evidence-or-Demote
+Inheritance Rule
+Source Safety
+Voice Attribution Guard
+no Seed / Ledger / Harvest / Return Evidence
+Output Contract only
+Structural Terminator
+publish_ready Stop Lock
+```
+
+Soft fields:
+
+```text
+how to execute selected candidate
+keep / replace / merge / compress / clarify / stop
+whether the selected candidate is still wise
+recommending next candidate or stop
+preserving strong structure instead of forcing additions
+```
+
+Soft judgment must never invent source facts.
+
+---
+
+## 7. Natural Stop Rule
+
+No hard cap.
+
+Strong natural stop.
+
+Recommend stop when:
+
+```text
+post is publish-ready
+new delta is weak
+post becomes too long
+source safety worsens
+voice attribution becomes unclear
+main idea scatters
+another pass would become rewrite play
+Human Edit is enough
+```
+
+If stop is recommended:
+
+```text
+AI Recommendation:
+choose: stop
+```
+
+and loop_status:
+
+```text
+stop_recommended / publish_ready
+```
 
 ---
 
@@ -276,8 +338,6 @@ After executing the selected candidate, output the next Candidate Deck only if f
 
 Do not output generic Human Edit Notes.
 
-If publish-ready, all candidates must be stop-oriented.
-
 Each candidate must include:
 
 ```text
@@ -309,6 +369,7 @@ hold_with_reason
 No text after the final decision inside the Markdown artifact or fallback block.
 
 ---
+
 
 ## 13. Markdown Handoff Rule
 
@@ -380,6 +441,20 @@ Stage 02R Markdown file created:
 ```
 
 Do not paste the full 02R result in chat when the downloadable Markdown file is successfully created.
+
+Chat Status Line Exception:
+
+When the downloadable file is created, the chat response must be exactly:
+
+```text
+Stage 02R Markdown file created:
+[Download <filename>](link)
+Publish Decision: <publish_raw / light_tune_then_publish / hold_with_reason>
+Source Safety: <pass / needs_check / hold>
+Risk Flag: <L / M / H>
+```
+
+Nothing else in chat.
 
 Fallback rule:
 
