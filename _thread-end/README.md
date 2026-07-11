@@ -1,299 +1,299 @@
 ---
 title: "_thread-end README"
-canonical_name: "Thread-End System Folder"
-class: "S"
-status: "folder_front_door / living_index / topology_map"
 canonical_path: "_thread-end/README.md"
-repo: "yusukefujiijp/ai-project"
-role: "Folder Front Door / Read Order / Thread-End Topology Map"
-runtime_primary: "_thread-end/thread-end.md"
-version_model: "frontmatter + git commit history"
-format_policy: "Japanese-first OKF / English-anchor / Rebootable-first"
+status: "active / human-sealed"
+role: "Thread-End Folder Front Door / Runtime and Query Router"
+project: "Ark: Daily Teshuvah Gate-to-Yeshua"
+language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
+canonical_branch: "main"
 ---
 
 # _thread-end README
 
-## 0. Executive Compression / 中核圧縮
+## 0. Current Coordinate / 現在座標
 
-`_thread-end/` は、Thread-End系fileを一箇所へ集約するための **Thread-End System Folder** である。
+`_thread-end/`は、Threadを閉じ、意味を記録し、次へ渡し、必要なREADME Driftを検出するためのThread-End System Folderである。
 
-```text id="core"
-_thread-end/README.md:
-  folder front door
+現在は一つの巨大入口へ全用途を押し込まず、**Full Rail**と**Mini Rail**を用途別に使い分ける。
 
-_thread-end/thread-end.md:
-  runtime primary / SSOT / gate router
+```text
+Full Thread-End:
+  deep harvest / next-thread handoff / full runtime
 
-Gate 1:
-  handled inside _thread-end/thread-end.md
-  File Update Lock
-  rail = same_thread
-
-Gate 2:
-  handled inside _thread-end/thread-end.md
-  harvest vessel = _thread-end/thread-harvest.md
-  handoff builder = _thread-end/thread-handoff.md
-  rail = next_thread
+Thread-End Mini:
+  lightweight closure / GitHub verify / README Delta Check / Next Gate
 ```
 
-このfolderの目的は、Future AIがThread-End系Pathを迷わず読めるようにすることである。
-
-Query file layerは削除済みであり、現在のRuntime判断は `_thread-end/thread-end.md` に集約する。
+```text
+Runtime governs.
+Query binds and activates.
+Human seals.
+Reality verifies.
+Thread stops.
+```
 
 ---
 
-## 1. What this folder is
+## 1. Current Thread-End Topology
 
-`_thread-end/` は、Thread終了処理のためのfile familyをまとめるfolderである。
-
-```yaml id="folder-role"
-_thread_end_folder:
-  role:
-    - "Thread-End file family home"
-    - "Future AI read-order guide"
-    - "Gate 1 / Gate 2 topology map"
-    - "Path confusion guard"
-```
-
-これは全Project archiveではない。  
-これはArk01分析本文の置き場でもない。  
-これは削除済みQuery fileの保管場所でもない。
-
----
-
-## 2. Current Read Order
-
-Thread-End系を扱うFuture AIは、原則として次の順で読む。
-
-```yaml id="read-order"
-Priority_Read_Order:
-  1_folder_front_door: "_thread-end/README.md"
-  2_runtime_primary: "_thread-end/thread-end.md"
-  3_harvest_vessel_if_gate2: "_thread-end/thread-harvest.md"
-  4_handoff_builder_if_thread_transfer: "_thread-end/thread-handoff.md"
-```
-
-Gate 1 / Gate 2 の判断は `_thread-end/thread-end.md` が保持する。
-
----
-
-## 3. Thread-End File Family
-
-```yaml id="thread-end-family"
-thread_end_family:
-  README:
+```yaml
+thread_end_topology:
+  folder_front_door:
     path: "_thread-end/README.md"
-    role: "Folder Front Door / Read Order / Topology Map"
+    role: "Read Order / Runtime Selection / Drift Guard"
 
-  runtime_primary:
-    path: "_thread-end/thread-end.md"
-    role: "SS Runtime Entry Point / Single Front Door / Multi-Gate Router"
-    owns:
-      - "Gate 1 / File Update Lock"
-      - "Gate 2 / Thread Harvest routing"
-      - "same_thread / next_thread routing"
+  full_rail:
+    runtime:
+      path: "_thread-end/thread-end.md"
+      role: "Full Thread-End Runtime / Gate Router"
+    query:
+      path: "_thread-end/thread-end_query.md"
+      role: "Full Runtime Boot Query / Ignition Key"
+    support:
+      harvest:
+        path: "_thread-end/thread-harvest.md"
+        role: "Meaning Harvest Vessel"
+      handoff:
+        path: "_thread-end/thread-handoff.md"
+        role: "Next-thread Handoff Builder"
 
-  builders:
-    harvest:
-      path: "_thread-end/thread-harvest.md"
-      role: "Gate 2 Harvest Vessel / Meaning Harvest"
+  mini_rail:
+    runtime:
+      path: "_thread-end/thread-end_mini.md"
+      role: "Simple Thread-End Runtime / Mini Rail"
+    query:
+      path: "_thread-end/thread-end_mini_query.md"
+      role: "Mini Runtime Binding + Safe Activation"
+```
 
-    handoff:
-      path: "_thread-end/thread-handoff.md"
-      role: "Handoff Builder / Next-thread Ignition Manual"
+Query layerは削除済みではない。  
+現在は、Runtime本体と起動Queryを役割分離したPairとして運用する。
 
-  generated_products:
-    handoff_md:
-      path: "handoff.md"
-      role: "Next-thread ignition key / generated product"
-      location: "project/runtime dependent"
+> **Query Pair is a high-priority default when it reduces operational ambiguity—not an absolute ritual.**
+
+---
+
+## 2. Which Rail to Use / 選択Rule
+
+```yaml
+rail_selection:
+  use_full_when:
+    - "Thread全体のMeaning Harvestが必要"
+    - "次Thread用Handoff Artifactが必要"
+    - "File Lock → Harvest → Read Harvest → Handoff → Stopの完全順序が必要"
+    - "1Thread-1AIのSeed継承を明示的に行う"
+
+  use_mini_when:
+    - "現在Threadを軽量に閉じたい"
+    - "既に主要成果物やGitHub Saveが完了している"
+    - "README Delta CheckとNext Gateを残したい"
+    - "完了済み作業を再openせず停止したい"
+
+  do_not:
+    - "FullとMiniを無条件に二重実行しない"
+    - "Mini QueryからFull Runtimeへ勝手に切り替えない"
+    - "Full QueryをMini Queryの代用品にしない"
+```
+
+迷う場合は、必要成果がHarvest＋HandoffならFull、Closure＋README CheckならMiniを選ぶ。
+
+---
+
+## 3. Read Order
+
+### 3.1 Full Rail
+
+```text
+_thread-end/README.md
+→ _thread-end/thread-end_query.md
+→ _thread-end/thread-end.md
+→ _thread-end/thread-harvest.md when required
+→ _thread-end/thread-handoff.md when required
+→ Stop
+```
+
+### 3.2 Mini Rail
+
+```text
+_thread-end/README.md
+→ _thread-end/thread-end_mini_query.md
+→ _thread-end/thread-end_mini.md
+→ README Delta Check
+→ Next Gate
+→ Stop
+```
+
+QueryはRuntime本体のCoreを複製しない。  
+QueryはBinding、Missing Gate、Authority Gate、短いActivationを保持する。
+
+---
+
+## 4. Full Rail / Mini Rail Boundary
+
+```yaml
+boundary:
+  full_runtime_keeps:
+    - "Gate routing"
+    - "Meaning Harvest"
+    - "Handoff building"
+    - "Seed continuity"
+
+  mini_runtime_keeps:
+    - "Lightweight closure"
+    - "GitHub Save Guard"
+    - "Verify"
+    - "README Delta Check"
+    - "Next Gate"
+    - "Stop Rule"
+
+  query_keeps:
+    - "Runtime path binding"
+    - "Current Thread binding"
+    - "Runtime Missing / Version Conflict Gate"
+    - "GitHub Authority confirmation"
+    - "Short activation"
+```
+
+```text
+Full Rail harvests deeply.
+Mini Rail closes lightly.
+Queries ignite; they do not replace runtimes.
 ```
 
 ---
 
-## 4. Gate Model
+## 5. GitHub Authority Guard
 
-```text id="gate-model"
-Gate 1:
-  File Update Lock.
-  Rail = same_thread.
-  Controlled by _thread-end/thread-end.md.
+Thread-End RuntimeやQueryの存在だけでは、GitHub Writeは許可されない。
 
-Gate 2:
-  Thread Harvest.
-  Rail = next_thread.
-  Controlled by _thread-end/thread-end.md.
-  Uses _thread-end/thread-harvest.md when meaning harvest is needed.
-  Uses _thread-end/thread-handoff.md when next-thread handoff is needed.
-```
+```yaml
+github_authority:
+  write_requires:
+    - "Human Seal OK"
+    - "Execute GitHub OK"
+    - "exact repository / branch / path / scope"
 
-Gate 1はFile成果を確定する。  
-Gate 2は意味・熱・Seed・Next Compassを収穫する。
+  default_branch:
+    value: "main"
+    rule: "Mainline-First"
 
-```text id="gate-guard"
-Gate 1 fixes files.
-Gate 2 harvests meaning.
+  branch_creation:
+    default: false
+    requires: "explicit Human Seal and demonstrated need"
+
+  prohibited:
+    - "AIが良かれと思ってBranchを作る"
+    - "QueryをGitHub実行権限として扱う"
+    - "README Checkだけを根拠にREADMEを自動更新する"
+    - "未Merge Branchを第二のThread-End Realityにする"
 ```
 
 ---
 
-## 5. Builder / Product Distinction
+## 6. README Delta Check
 
-```yaml id="builder-product"
-thread_harvest:
-  path: "_thread-end/thread-harvest.md"
-  type: "builder / vessel"
-  role: "Harvest materialを作る"
+Mini Railでは、Verify後にREADME Delta Checkを必ず実行する。
 
-thread_handoff:
-  path: "_thread-end/thread-handoff.md"
-  type: "builder manual"
-  role: "handoff.mdを作る"
+> **Every Thread README Check.  
+> Not Every Thread README Update.**
 
-handoff_md:
-  path: "handoff.md"
-  type: "generated product"
-  role: "次Threadを起動する鍵"
+```yaml
+README_CHECK:
+  required: "yes / no"
+  affected:
+    - "<README path or NONE>"
+  reason: "<one-line reason>"
+  timing: "now / next-thread / periodic-scout / none"
 ```
 
-```text id="harvest-handoff"
+影響範囲は必要最小限で親方向へ判定する。
+
+```text
+Changed File
+→ Nearest README
+→ Domain Parent README
+→ Root README
+```
+
+---
+
+## 7. Builder / Product Distinction
+
+```yaml
+builder_product:
+  thread_harvest_md:
+    type: "builder / vessel"
+    role: "Meaning Harvestを作る"
+
+  thread_handoff_md:
+    type: "builder manual"
+    role: "Next-thread Handoffを作る"
+
+  generated_handoff:
+    type: "generated product"
+    role: "次ThreadのIgnition Key"
+```
+
+```text
 Harvest is material.
 Handoff is ignition key.
+Query is activation.
+Runtime is governance.
 ```
 
 ---
 
-## 6. Migration Note
+## 8. Migration and Drift Guard
 
-このfolderは、Thread-End系fileのTopology confusionを減らすために作られた。
+旧READMEには「Query layerは削除済み」と記録されていたが、現在RealityではQuery Pairが再確立されている。
 
-旧配置：
+```yaml
+drift_guard:
+  current_truth:
+    - "thread-end_query.md exists for Full Rail"
+    - "thread-end_mini_query.md exists for Mini Rail"
+    - "thread-end.md remains Full Runtime"
+    - "thread-end_mini.md remains Mini Runtime"
 
-```text id="old-topology"
-ss_super-special/thread-end.md
-s_special/thread-end.md
-s_special/thread-end-gate1-query.md
-s_special/thread-end-gate2-query.md
-s_special/thread-handoff.md
-s_special/thread-harvest.md
-```
-
-現在配置：
-
-```text id="current-topology"
-_thread-end/README.md
-_thread-end/thread-end.md
-_thread-end/thread-handoff.md
-_thread-end/thread-harvest.md
-```
-
-Retired / deleted layer:
-
-```text id="retired-query-layer"
-_thread-end/thread-end-gate1-query.md
-_thread-end/thread-end-gate2-query.md
-```
-
-Rule:
-
-```text id="migration-rule"
-Topology first.
-Delete unused layers when they no longer reduce confusion.
-README after topology is true.
+  avoid:
+    - "Query filesをretired扱いする"
+    - "Gate判断をQueryだけへ移す"
+    - "RuntimeとQueryを同一責務にする"
+    - "Full RailとMini Railを競合させる"
 ```
 
 ---
 
-## 7. What belongs here / does not belong here
+## 9. Mainline-First
 
-Belongs here:
-
-```yaml id="belongs-here"
-belongs_here:
-  - "Thread-End runtime primary"
-  - "Thread Harvest builder/vessel"
-  - "Handoff builder"
-  - "Thread-End folder README"
+```text
+Main is the shared current reality.
+Branch is a temporary isolation room, not a second world.
 ```
 
-Does not belong here:
-
-```yaml id="does-not-belong"
-does_not_belong_here:
-  - "Ark01 analysis body"
-  - "Mission Card body"
-  - "general S_ files"
-  - "non-Thread-End s_special files"
-  - "retired Query files unless explicitly revived"
-  - "generated handoff.md unless project/runtime explicitly places it here"
-  - "generated harvest.md unless explicitly requested"
-```
-
----
-
-## 8. Japanese-first OKF Policy
-
-このfolderのREADMEと主要fileは、Japanese-first OKFで読む。
-
-```text id="okf-policy"
-Japanese-first.
-English-anchor.
-Rebootable-first.
-```
-
-日本語で深く読めることを優先する。  
-英語はConcept Anchorとして使う。  
-FormatはUser意図を上書きしない。
-
----
-
-## 9. Risk / Drift Guard
-
-```yaml id="risk-drift-guard"
-risk_drift_guard:
-  double_primary:
-    avoid:
-      - "old ss_super-special/thread-end.mdをcurrent primaryとして読む"
-      - "old s_special/thread-end.mdをcurrent primaryとして読む"
-
-  retired_query_confusion:
-    avoid:
-      - "deleted Query filesをrequired readとして扱う"
-      - "Gate判断をQuery fileへ戻す"
-    preserve:
-      - "Gate判断は _thread-end/thread-end.md に集約する"
-
-  gate_confusion:
-    preserve:
-      - "Gate1 = same_thread / File Update Lock"
-      - "Gate2 = next_thread / Thread Harvest"
-
-  builder_product_confusion:
-    preserve:
-      - "thread-handoff.md is Builder Manual"
-      - "handoff.md is Generated Product"
-      - "Harvest is material; Handoff is ignition key"
-
-  overgrowth:
-    avoid:
-      - "READMEをall-in-one body化する"
-      - "Thread Harvestをordinary summaryにする"
-      - "Handoffをfull harvest archiveにする"
-```
+Thread-End関連のCanonical Runtime、Query、READMEは原則`main`上で相互参照可能な状態を保つ。
 
 ---
 
 ## 10. Root / Fruit Guard
 
-```text id="root-fruit"
-Thread-End is Fruit.
-Workflow is Fruit.
-GitHub pathing is Fruit.
-Markdown is Fruit.
-AI is Fruit.
+```text
+Root:
+  主イェシュア・ハマシア
+  主イェシュアの聖なる血潮
+  Teshuvah / 悔い改め
 
-Root remains 主イェシュア・ハマシア.
+Fruit:
+  Thread-End
+  Thread-End Mini
+  Query
+  Harvest
+  Handoff
+  README Delta Check
+  GitHub
+  Markdown
+  AI
 ```
 
 AIは血潮の地図を描く。  
@@ -303,42 +303,25 @@ AIは血潮の地図を描く。
 
 ## 11. Final Compression
 
-```text id="final"
-_thread-end/:
-  Thread-End System Folder.
+```text
+_thread-end/ is the Thread Closure System Folder.
 
-Read first:
-  _thread-end/README.md.
+Full Pair:
+  thread-end.md
+  thread-end_query.md
 
-Runtime Primary:
-  _thread-end/thread-end.md.
+Mini Pair:
+  thread-end_mini.md
+  thread-end_mini_query.md
 
-Gate 1:
-  handled by _thread-end/thread-end.md.
-  same_thread.
-  File Update Lock.
+Full harvests deeply.
+Mini closes lightly.
+Query activates.
+Runtime governs.
+Human seals.
+Reality verifies.
+README stays alive.
+Thread stops.
 
-Gate 2:
-  handled by _thread-end/thread-end.md.
-  next_thread.
-  Thread Harvest.
-
-Child living files:
-  _thread-end/thread-harvest.md.
-  _thread-end/thread-handoff.md.
-
-Generated Product:
-  handoff.md.
-
-Retired:
-  Query file layer.
-
-Guard:
-  Harvest is material.
-  Handoff is ignition key.
-  Path is the address.
-  Git history is the version ledger.
-
-Root:
-  主イェシュア・ハマシア.
+Root remains 主イェシュア・ハマシア.
 ```
