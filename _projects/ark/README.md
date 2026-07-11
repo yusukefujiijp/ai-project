@@ -1,81 +1,203 @@
+---
+title: "Ark Project"
+canonical_path: "_projects/ark/README.md"
+status: "active / human-sealed"
+role: "Ark Project public-safe parent entry / topology router"
+root: "主イェシュア・ハマシア"
+language_policy: "Japanese-first / English-anchor"
+current_topology: "Ark00 → Ark01+ / Ark Project"
+retired_topology: "Ark99 → Ark00 → Ark01+"
+---
+
 # Ark Project
 
-## 0. Ark Projectとは
+## 0. Current Coordinate / 現在座標
 
 Ark Projectは、**Daily Teshuvah Gate-to-Yeshua** をRootに置く、public-safeなHuman-AI collaboration fieldである。
 
 このGitHub上のArk Projectは、Arkのすべてを移す場所ではない。  
-まず、public-safeに読める入口・Stage Map・README-first patternを置く場所である。
+Future HumanとFuture AIが現在の地形を回復し、正しい入口へ進むためのCanonical Entryである。
 
 ```text
-Ark Project on GitHub:
-  public-safeな入口を置く。
-  private-depthを置かない。
-  GitHub stable pathで正準記録を保つ。
-```
+Root:
+  主イェシュア・ハマシア
 
-GitHub化は、English-first化ではない。  
-GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でVersionを保つためのCanonical化である。
+GitHub role:
+  public-safe entrance
+  canonical current coordinate
+  rebootable routing surface
+```
 
 ---
 
-## 1. Current GitHub Phase / 現在のGitHub段階
+## 1. Current Topology / 現行Topology
 
-このFolderは、**README-first GitHub Bet** の一部である。
+現在のPre-Project入口は`Ark00`である。
 
-現在のScopeは、意図的に小さく保つ。
-
-```text
-現在開いているもの:
-  Ark Project entry README
-  Ark-WTP dedicated folder
-  Ark99 entry README
-  Ark00 entry README
-  Ark02 public-safe handoff node
-
-現在やらないこと:
-  private thread logsを置かない。
-  personal operational recordsを置かない。
-  full S/G/runtime/tasks migrationをしない。
-```
-
-[`../ark-wtp/README.md`](../ark-wtp/README.md) は、Ark-WTP dedicated folderの入口である。  
-Ark-WTP Root Spec本体は [`../ark-wtp/ark-wtp.md`](../ark-wtp/ark-wtp.md) に置く。
-
-Ark99とArk00は、軽量なREADME-first entryとして開かれている。  
-これはArk Project全体の正式移行ではない。
-
-`ark02/handoff.md` は、Ark02全体のGitHub移行ではない。  
-それは、Ark02:04からArk02:07へ渡るpublic-safeなThread-line handoff nodeである。
+旧Ark99のWild Seed受け付け機能は、Ark00へ吸収された。  
+Ark99は現役のUpstream Folderではなく、歴史的Topologyとしてのみ扱う。
 
 ```text
-ark02/handoff.md:
-  Ark02 Thread-line continuity / reboot signpost。
-  Full Ark02 migrationではない。
+Current:
+  Ark00 → Ark01+ / Ark Project
+
+Retired:
+  Ark99 → Ark00 → Ark01+
 ```
+
+```yaml
+ark_topology:
+  ark00:
+    status: "active pre-project Zero-Gate"
+    role:
+      - "Wild Seed reception"
+      - "Discernment"
+      - "Selective incubation"
+      - "Routing to Ark01+"
+
+  ark99:
+    status: "retired / absorbed into Ark00"
+    active_route: false
+    guard:
+      - "Do not route new seeds to Ark99."
+      - "Do not restore Ark99 as a required stage."
+```
+
+詳細は[`ark00/README.md`](ark00/README.md)を参照する。
+
+---
+
+## 2. Active Public-Safe Entries
+
+```yaml
+active_entries:
+  ark00:
+    path: "_projects/ark/ark00/README.md"
+    role: "Wild Seed Zero-Gate / Pre-Project Entry"
+
+  ark_wtp:
+    readme: "_projects/ark-wtp/README.md"
+    root_spec: "_projects/ark-wtp/ark-wtp.md"
+    role: "Ark-WTP dedicated field"
+
+  ark02_handoff:
+    path: "_projects/ark/ark02/handoff.md"
+    role: "public-safe Thread-line handoff node"
+```
+
+Opened Entryは、Ark全体をGitHubへ完全移行したことを意味しない。
 
 ```text
 README-first:
-  まず入口を作る。
+  まず入口を置く。
 
 Full migration:
-  まだ行わない。
+  Reality Responseが必要を示すまで行わない。
 ```
 
 ---
 
-## 2. Project Ladder
+## 3. Routing Rule / Route選択
 
-Arkは、段階的なProject systemとして扱う。
+```yaml
+routing:
+  unclassified_seed:
+    go_to: "Ark00"
+
+  formal_project:
+    go_to: "Ark01+ after Human discernment and seal"
+
+  ark_wtp_material:
+    go_to: "_projects/ark-wtp/"
+
+  thread_line_continuity:
+    go_to: "the relevant handoff node"
+```
+
+AIは自動Project化しない。  
+HumanがMission、意味、優先順位、正式Project化を判断する。
+
+---
+
+## 4. README Delta Check / 更新Timing
+
+READMEは毎Thread必ず書き換えない。  
+各Thread終了時に、READMEとCanonical Realityの差分を軽量確認する。
+
+> **Every Thread README Check.  
+> Not Every Thread README Update.**
+
+```yaml
+readme_delta_check:
+  run_at: "Thread-End"
+  update_when:
+    - "Canonical File / Folderが新規作成された"
+    - "Path / Role / Status / Active / Retiredが変わった"
+    - "Project TopologyまたはRead Orderが変わった"
+    - "Repository-wide Policyが確定した"
+    - "既存READMEがFuture AIを誤ったRouteへ送る"
+
+  propagation:
+    - "Nearest README"
+    - "Domain Parent README when navigation changes"
+    - "Root README when repository-level coordinate changes"
+
+  automatic_write: false
+```
+
+README更新候補が出ても、GitHub WriteにはHuman Sealと明示的実行許可が必要である。
+
+---
+
+## 5. Mainline-First Mirror Guard
+
+Ark ProjectのCanonical Current Realityは`main`に置く。
+
+```yaml
+mainline_guard:
+  canonical_branch: "main"
+  branch_creation:
+    default: false
+    requires: "explicit Human Seal and demonstrated need"
+  prohibited:
+    - "AIが良かれと思ってBranchを作る"
+    - "重要なArk Fileを未Merge Branchだけに残す"
+    - "Branchを第二のArk Realityとして扱う"
+```
+
+---
+
+## 6. Root / Fruit Guard
 
 ```text
-ark99/:
-  Free Spawn / Wild Seed Field。
-  まだ分類しきれないSeedを受け、観測するpublic-safe入口。
+Root:
+  主イェシュア・ハマシア
+  主イェシュアの聖なる血潮
+  Teshuvah / 悔い改め
 
-ark00/:
-  Selective Incubation / Project Embryo。
-  Ark99で繰り返し現れたSeedを選び、正式Project化前に軽く温める入口。
+Fruit:
+  Ark Project
+  GitHub
+  README
+  Markdown
+  AI
+  Plan Mode
+  Full Rail
+  Thread-End
+```
 
-ark01+:
+AIは血潮の地図を描く。  
+人間が血潮の下に立つ。
+
+---
+
+## 7. Final Compression
+
+```text
+Ark Project on GitHub is a public-safe routing field.
+Ark00 is the active pre-project Zero-Gate.
+Ark99 is retired and absorbed into Ark00.
+README is checked every Thread-End, but updated only when Reality changed.
+main is the shared current reality.
+Root remains 主イェシュア・ハマシア.
 ```
