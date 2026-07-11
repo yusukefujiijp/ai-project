@@ -13,9 +13,7 @@ root_guard:
 
 ## 0. Current Coordinate / 現在座標
 
-`prompts/` は、YusukeJP × AI-Collaboratorが複数のAI RuntimeをHuman-mediatedに起動・接続・役割分担するための、Cross-AI Prompt Runtime Shelfである。
-
-ここに置くPromptは、原則としてChatGPT、Claude、Grok、Fable5など特定Vendorや特定Modelだけに閉じない。
+`prompts/`は、YusukeJP × AI-Collaboratorが複数AIをHuman-mediatedに起動・接続・役割分担するための、Cross-AI Operational Shelfである。
 
 ```text
 One Canonical Prompt.
@@ -24,9 +22,8 @@ Human routes and seals.
 Reality confirms.
 ```
 
-`ai-` Prefixは、特定AI専用という意味ではない。
-
-`ai-` は、そのFileがAI Runtimeによって利用されるHuman-AI Operational Assetであり、Cross-AI再利用を第一に設計された共有Promptであることを示すNamespaceである。
+`ai-` Prefixは特定Vendor専用を意味しない。  
+Cross-AI再利用を第一に設計されたHuman-AI Operational Assetを示す共有Namespaceである。
 
 ---
 
@@ -34,30 +31,24 @@ Reality confirms.
 
 ### 1.1 Runtime-neutral Core First
 
-正準Promptは、特定AI名から開始しない。
+正準Promptは、原則として特定AI名から開始しない。
 
 ```text
 推奨:
-  ai-plan-mode.md
   ai-file-damedashi.md
   ai-output-polish.md
+  ai-plan-mode.md
 
 原則避ける:
-  chatgpt-plan-mode.md
-  claude-plan-mode.md
-  grok-plan-mode.md
-  fable5-plan-mode.md
+  chatgpt-*.md
+  claude-*.md
+  grok-*.md
+  fable5-*.md
 ```
 
-AI別Promptを最初から増殖させると、同じCoreに対するPatchがRuntimeごとに分裂し、意味上のBranchが発生する。
+AI別Coreを増殖させると、Patch・Guard・Version・RealityがRuntimeごとに分裂する。
 
-```text
-Runtime Fork Fragmentation:
-  Canonical CoreがAI名ごとに複製され、
-  修正・Guard・Version・Realityが同期しなくなるFailure。
-```
-
-Runtime固有差は、同一Failureが実地で繰り返し確認され、Canonical Coreでは吸収できない場合に限り、Coreを複製しないMinimal Adapterとして検討する。
+Runtime固有差は、同一Failureが実地で繰り返し確認され、Canonical Coreで吸収できない場合に限り、Coreを複製しないMinimal Adapterとして検討する。
 
 ### 1.2 Kebab-case
 
@@ -69,120 +60,83 @@ ai-file-damedashi.md
 ai-output-polish.md
 ```
 
-`ai-planmode.md`のような概念結合より、`plan`と`mode`の境界が明確な`ai-plan-mode.md`を優先する。
-
 ---
 
 ## 2. Markdown + Query Pair / 正準Pair
 
-Prompt Runtimeと起動Queryを分けられる場合、次のPairを基本形とする。
+Prompt Runtimeと起動Queryを分けられる場合、`_query.md` Pairを**強く推奨する基本形**とする。
 
 ```text
 <ai-prompt>.md
 <ai-prompt>_query.md
 ```
 
-例:
+Queryは、長いRuntimeを短く安全に起動し、Target Binding、Protocol確認、Input Role、State Transitionを安定させる重要Assetである。
 
-```text
-ai-file-damedashi.md
-ai-file-damedashi_query.md
+ただし、`_query.md`はすべてのPromptへ機械的に課す絶対条件ではない。
 
-ai-plan-mode.md
-ai-plan-mode_query.md
-```
+> **Query Pair is a high-priority default when it reduces operational ambiguity—not an absolute ritual.**
 
-### 2.1 Role Separation
+### 2.1 Pair化を優先する条件
 
 ```yaml
-markdown_runtime:
-  role:
-    - "定義"
-    - "Mission"
-    - "Workflow"
-    - "State Machine"
-    - "Guard"
-    - "Stop Rule"
-    - "Human Authority"
+create_query_pair_when:
+  - "対象Fileや変数のBindingが必要"
+  - "Prompt Runtimeが長い"
+  - "Protocol Missing / Version Gateが必要"
+  - "Human SealからExecutionへの状態遷移がある"
+  - "毎回の起動文再作成による事故がある"
+  - "複数AIへ同じ方式で投入する"
+```
 
-query:
-  role:
-    - "対象Binding"
-    - "Protocol存在確認"
-    - "短い起動命令"
-    - "RuntimeへのRouting"
+### 2.2 Runtime単体を許容する条件
+
+```yaml
+single_runtime_allowed_when:
+  - "起動方法が一意で短い"
+  - "Targetや変数のBindingが不要"
+  - "Version DriftのRiskが低い"
+  - "Query追加が本体より運用負荷を増やす"
 ```
 
 ```text
 Markdown governs.
-Query activates.
+Query binds and activates.
 Human seals.
 Reality confirms.
 ```
 
-QueryはRuntime本体の仕様を重複保持しない。重複すると、MarkdownとQueryのVersion Driftが発生する。
-
-ただし、Protocol Missing Gate、Target Binding、実行禁止など、起動事故を防ぐ最小GuardはQuery側にも置ける。
+QueryはRuntime本体のUniversal Coreを重複保持しない。
 
 ---
 
-## 3. Human-mediated Multi-AI Use
+## 3. Active Prompt Assets
 
-各AIは同じPrompt Runtimeを読み、異なるLensで作業する。
-
-AI間Communicationは、原則としてYusukeJPを介した間接的・擬似的Communicationである。
-
-```text
-AI-A Output
-→ YusukeJP selects, contextualizes, and routes
-→ AI-B reviews or extends
-→ YusukeJP integrates and seals
-→ GitHub main stores Canonical Reality
-```
-
-Humanは単なるMessengerではない。
-
-HumanはMission Owner、Semantic Router、Relevance Filter、Decision Authority、Human Final Sealである。
-
----
-
-## 4. Active Prompt Assets
-
-### 4.1 AI File DAME-DASHI
+### 3.1 AI File DAME-DASHI
 
 ```yaml
-runtime:
-  path: "prompts/ai-file-damedashi.md"
-  role: "target-file-paired Reality Red-Team / Minimal Patch"
-
-query:
-  path: "prompts/ai-file-damedashi_query.md"
-  role: "Target Binding Query"
+runtime: "prompts/ai-file-damedashi.md"
+query: "prompts/ai-file-damedashi_query.md"
+role: "Reality Red-Team / Minimal Patch"
 ```
 
-### 4.2 AI Output Polish
+### 3.2 AI Output Polish
 
 ```yaml
-runtime:
-  path: "prompts/ai-output-polish.md"
-  role: "既存AI Outputを意味変更なしで本番用へ整形"
+runtime: "prompts/ai-output-polish.md"
+query: "prompts/ai-output-polish_query.md"
+role: "Meaning-preserving output polish"
 ```
 
-現時点では独立Query Pairを必須化しない。Realityが必要性を示した場合のみ追加する。
+AI Output Polishは、長いRuntime、複数Input Mode、複数Output Type、Target Section指定を持つため、Query Pairによる起動責務分離の実益が確認された。
 
-### 4.3 AI Plan Mode
+### 3.3 AI Plan Mode
 
 ```yaml
-runtime:
-  path: "prompts/ai-plan-mode.md"
-  role: "Human-AI Semi-Automation Protocol / Plan-to-Full-Rail Gate"
-
-query:
-  path: "prompts/ai-plan-mode_query.md"
-  role: "Protocol Identity Gate + Plan Mode Activation"
+runtime: "prompts/ai-plan-mode.md"
+query: "prompts/ai-plan-mode_query.md"
+role: "Plan-to-Full-Rail Human-AI semi-automation gate"
 ```
-
-AI Plan Modeは次の流れを支える。
 
 ```text
 Deep Dialogue
@@ -198,27 +152,42 @@ Deep Dialogue
 
 ---
 
-## 5. Pair Creation Rule
+## 4. Human-mediated Multi-AI Use
 
-すべてのPromptに機械的にQueryを作るわけではない。
-
-次のいずれかが存在する場合にPair化を優先する。
-
-```yaml
-create_query_pair_when:
-  - "対象Fileや変数のBindingが必要"
-  - "Prompt Runtimeが長く、短い起動Commandが必要"
-  - "Protocol Missing / Version Gateが必要"
-  - "Human SealからExecutionへの状態遷移がある"
-  - "毎回の起動文再作成による事故がある"
-  - "複数AI Runtimeへ同じ方式で投入する"
+```text
+AI-A Output
+→ YusukeJP selects, contextualizes, and routes
+→ AI-B reviews or extends
+→ YusukeJP integrates and seals
+→ GitHub main stores Canonical Reality
 ```
 
-QueryがPrompt本体と同程度に長くなる場合は、Role Separationが崩れている可能性を疑う。
+Humanは単なるMessengerではない。  
+Mission Owner、Semantic Router、Relevance Filter、Decision Authority、Human Final Sealである。
 
 ---
 
-## 6. Canonical and Adapter Guard
+## 5. Mainline-First Mirror Guard
+
+`prompts/`配下のCanonical PromptとQueryは、原則として`main`上で管理する。
+
+```yaml
+prompts_mainline_guard:
+  canonical_branch: "main"
+  branch_creation:
+    default: false
+    requires: "explicit Human Seal"
+  rules:
+    - "AIは良かれと思ってBranchを作らない"
+    - "重要なPromptを未Merge Branchだけに残さない"
+    - "Branchを第二のPrompt Realityとして扱わない"
+```
+
+Prompt RuntimeとQueryのPairは、同じ`main` Reality上で相互参照できる状態を保つ。
+
+---
+
+## 6. Canonical Core and Adapter Guard
 
 ```yaml
 canonical_core:
@@ -234,27 +203,19 @@ runtime_adapter:
     - "Human Final Seal is present."
 ```
 
-特定AIで一度挙動差が出ただけでは、AI別Fileを作らない。
-
-まずCanonical Core、Query、Context、Instruction Precedence、Field Test条件を確認する。
-
 ---
 
-## 7. Repository Principle
-
-`prompts/` は、複数AIが同じGoalへ向かうためのShared Operational Layerである。
+## 7. Final Compression
 
 ```text
 One Repository.
 One Main Reality.
+Mainline-First.
 One Canonical Prompt Core.
+Markdown + Query when operationally useful.
 Many AI Lenses.
 Human-mediated Handoff.
 Human Final Seal.
 ```
 
-Namingは整理後のLabelではない。
-
 > **Naming is architecture made visible.**
-
-File名とPair構造だけで、Future HumanとFuture AIがRole、再利用範囲、起動方法を推測できる状態を目指す。
