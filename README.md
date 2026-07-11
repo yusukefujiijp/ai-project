@@ -1,159 +1,117 @@
 # ai-project
 
-## 0. ai-projectとは
+## 0. Current Coordinate / 現在座標
 
-`ai-project` は、@YusukeJP × AI-Collaborator のための public-safe なGitHub workspaceである。
+`ai-project` は、@YusukeJP × AI-Collaborator のためのpublic-safe GitHub workspaceである。
 
-目的は、Ark、Living README、Signal / Skill、Human-AI semi-automation、GitHub Canonical Firstを、Future AIにも再起動できる形で整理することである。
-
-```text
-ai-project:
-  public-safeな入口を置く。
-  GitHub stable pathで正準記録を保つ。
-  Future AIが再起動できる形にする。
-```
-
-このRepositoryは、ChatGPTだけのfolder mirrorではない。  
-AI同士・Future AI・人間が読み直せる、軽量で再起動可能なProject workspaceである。
-
----
-
-## 1. Current GitHub Phase / 現在のGitHub段階
-
-このRepositoryは、**README-first GitHub Bet** から始まった。
-
-現在は、最初の仮置き段階を超え、いくつかのpublic-safe slotが開いている。
-
-```text
-opened:
-  _projects/
-  _projects/ark/
-  _projects/ark/ark99/
-  _projects/ark/ark00/
-  g_global/
-  s_special/
-```
-
-現在も、Scopeは意図的に小さく保つ。
-
-```text
-現在やること:
-  public-safeなREADMEとcanonical entryを置く。
-  GitHub stable pathで正準記録を育てる。
-  AI-CollaboratorがRepository現実を読めるようにする。
-
-現在やらないこと:
-  private-depthを置かない。
-  raw thread logsを置かない。
-  full runtime/tasks migrationをしない。
-```
-
----
-
-## 2. Opened Canonical Slots
-
-現時点で、次のslotが開いている。
-
-```text
-_projects/:
-  Project系のpublic-safe入口。
-
-_projects/ark/:
-  Ark Projectのpublic-safe入口。
-
-_projects/ark/ark99/:
-  Free Spawn / Wild Seed Field。
-  early signalを受ける場所。
-
-_projects/ark/ark00/:
-  Selective Incubation / Project Embryo。
-  繰り返し現れたSeedを正式Project化前に軽く温める場所。
-
-g_global/:
-  public-safeなGlobal Guideを置く場所。
-
-s_special/:
-  selected S-class lensesを置く場所。
-```
-
-Opened slotは、すべてを移すという意味ではない。  
-それは、Reality Responseによって小さく開いたpublic-safeな入口である。
-
----
-
-## 3. Future Reserved Slots
-
-以下は、将来追加される可能性がある。  
-ただし、Reality Responseが必要を示すまで作らない。
-
-```text
-future reserved slots:
-  _inbox/
-  _thread/
-  f_future/
-  runtime/
-  tasks/
-  snapshots/
-```
-
-Future slotはcurrent folderではない。
-
-```text
-Slot Reservation:
-  可能性を閉じない。
-
-Folder Creation:
-  Reality Response後に実体を作る。
-```
-
----
-
-## 4. README-first / GitHub Canonical First
-
-このRepositoryは、README-firstで進める。
-
-```text
-README-first:
-  まずpublic-safeな入口を作る。
-
-Full migration:
-  まだ行わない。
-```
-
-GitHub Canonical Firstは、local Markdownを不要にするという意味ではない。  
-GitHub上のstable pathをpublic-safeな正準記録として扱うという意味である。
-
-```text
-GitHub stable path:
-  canonical public-safe record。
-
-Git commit history:
-  version ledger。
-
-Local files:
-  bootstrap / export / exception。
-```
-
-No local Markdown duplicate by default.  
-ただし、private-depth、downloadable artifact、backup、handoff、non-Markdown artifactなど、理由がある場合は例外を認める。
-
----
-
-## 4.5 Mainline-First / One Main Reality
-
-このRepositoryでは、`main`を複数AIとHumanが共有する **Canonical Current Reality** として扱う。
+目的は、Ark、Living README、Signal / Skill、Human-AI semi-automation、Cross-AI Prompt、GitHub Canonical Firstを、Future HumanとFuture AIが再起動できる形で整理することである。
 
 ```text
 One Repository.
 One Main Reality.
 Many AI Lenses.
 Human Final Seal.
+Reality confirms.
 ```
+
+このRepositoryは、ChatGPTだけのfolder mirrorではない。  
+AI同士・Future AI・人間が読み直せる、軽量で再起動可能なShared Operational Workspaceである。
+
+---
+
+## 1. Current GitHub Phase / 現在のGitHub段階
+
+このRepositoryは、README-first GitHub Betの仮置き段階を超え、複数のpublic-safe Canonical Slotが稼働している。
+
+```yaml
+opened_canonical_slots:
+  _projects/:
+    role: "Project系public-safe入口"
+
+  _projects/ark/:
+    role: "Ark Project parent entry / topology router"
+
+  _projects/ark/ark00/:
+    role: "active pre-project Zero-Gate"
+
+  _projects/ark-wtp/:
+    role: "Ark-WTP dedicated field"
+
+  prompts/:
+    role: "Cross-AI Prompt Runtime and Query Shelf"
+
+  _skill/:
+    role: "Skill System and reusable operational knowledge"
+
+  _thread-end/:
+    role: "Thread Closure / Handoff / README Delta Check"
+
+  g_global/:
+    role: "public-safe Global Guide"
+
+  s_special/:
+    role: "selected S-class lenses"
+```
+
+Ark99は現在のactive topologyではない。  
+旧Ark99のWild Seed受付機能はArk00へ吸収されている。
+
+```text
+Current Ark pre-project topology:
+  Ark00 → Ark01+ / Ark Project
+
+Retired topology:
+  Ark99 → Ark00 → Ark01+
+```
+
+詳細は[`_projects/ark/README.md`](_projects/ark/README.md)を参照する。
+
+---
+
+## 2. README-first / GitHub Canonical First
+
+このRepositoryはREADME-firstで進める。
+
+README-firstは、READMEだけを先に増殖させることではない。
+
+```text
+Canonical Reality changes.
+↓
+Nearest README describes it.
+↓
+Parent README changes only when navigation changes.
+```
+
+GitHub Canonical Firstは、local Markdownを不要にするという意味ではない。  
+GitHub上のstable pathをpublic-safeな正準記録として扱うという意味である。
+
+```yaml
+github_canonical_first:
+  stable_path: "canonical public-safe record"
+  commit_history: "version ledger"
+  local_files:
+    allowed_for:
+      - "bootstrap"
+      - "export"
+      - "private-depth"
+      - "backup"
+      - "handoff"
+      - "downloadable artifact"
+      - "non-Markdown artifact"
+```
+
+No local Markdown duplicate by default.
+
+---
+
+## 3. Mainline-First / One Main Reality
+
+`main`を複数AIとHumanが共有するCanonical Current Realityとして扱う。
 
 原則として、AI-Collaboratorは`main`を読み、`main`に対する変更案を作り、Human Final Seal後の更新も`main`へ反映する。
 
 Branchは標準作業場所ではない。  
-Branchは、`main`上で安全かつ可逆的に完了できない破壊的・大規模・未確定変更を、一時的に隔離するための **last resort** である。
+Branchは、`main`上で安全かつ可逆的に完了できない破壊的・大規模・未確定変更を一時隔離するlast resortである。
 
 ```yaml
 mainline_first_policy:
@@ -166,7 +124,6 @@ mainline_first_policy:
 
   branch_creation:
     default: false
-    status: "last resort"
     requires:
       - "main上で安全かつ可逆的に完了できない"
       - "破壊的または大規模な未確定変更である"
@@ -180,113 +137,176 @@ mainline_first_policy:
     - "Branchを第二のCanonical Realityとして扱う"
 ```
 
-Branchを使う場合も、目的・対象Path・終了条件を明示し、短期間で`main`へ統合または破棄する。
-
 > **Main is the shared current reality.  
 > Branch is a temporary isolation room, not a second world.**
 
 ---
 
-## 5. Japanese-first / English-anchor
+## 4. Cross-AI Prompt Layer
 
-このRepositoryのREADMEとpublic-safe canonical fileは、原則として **Japanese-first / English-anchor** で運用する。
-
-```text
-本文は日本語主導。
-英語は概念Anchor。
-GitHub pathはstable。
-Future AIが再起動できる形にする。
-```
-
-GitHub化は、English-first化ではない。  
-GitHub化は、Canonical化である。
+`prompts/`は、複数AI RuntimeをHuman-mediatedに起動・接続・役割分担するためのShared Operational Layerである。
 
 ```text
-GitHub化 = English-first化ではない。
-GitHub化 = Canonical化である。
-```
-
----
-
-## 6. Human-AI Collaboration Pattern
-
-このRepositoryは、人間とAIの協働作業を前提にする。
-
-```text
-AI drafts.
-Human seals.
-GitHub stores.
+One Canonical Prompt.
+Many AI Runtimes.
+Human routes and seals.
 Reality confirms.
 ```
 
-AIは、単に指示されたファイルを作るだけではない。  
-GitHub上のRepository状態を読み、古いREADME、未更新Scope、親子READMEの不整合、次に必要な小Patchを発見する共同観測者でもある。
+主なActive Pair:
+
+```yaml
+active_prompt_pairs:
+  ai_file_damedashi:
+    runtime: "prompts/ai-file-damedashi.md"
+    query: "prompts/ai-file-damedashi_query.md"
+
+  ai_output_polish:
+    runtime: "prompts/ai-output-polish.md"
+    query: "prompts/ai-output-polish_query.md"
+
+  ai_plan_mode:
+    runtime: "prompts/ai-plan-mode.md"
+    query: "prompts/ai-plan-mode_query.md"
+```
+
+`_query.md` Pairは、Operational Ambiguityを減らす場合のHigh-Priority Defaultである。  
+ただし、すべてのPromptへ機械的に課す絶対的儀式ではない。
+
+詳細は[`prompts/README.md`](prompts/README.md)を参照する。
+
+---
+
+## 5. Human-AI Collaboration Pattern
+
+```text
+AI observes and drafts.
+Human judges and seals.
+GitHub stores.
+Reality confirms.
+Future AI reboots.
+```
+
+AIは単に指示されたFileを作るだけではない。  
+Repository Realityを読み、古いREADME、未更新Scope、親子READMEの不整合、次に必要な小Patchを発見する共同観測者である。
 
 ただし、AIはAutopilotではない。
 
-```text
-AI-Collaborator:
-  観測する。
-  提案する。
-  下書きする。
+```yaml
+human:
+  keeps:
+    - "Mission"
+    - "Meaning"
+    - "Discernment"
+    - "Final judgment"
+    - "Human Final Seal"
+    - "Right to interrupt"
 
-Human:
-  判断する。
-  Sealする。
-  Reality Responseを確認する。
+ai_collaborator:
+  handles:
+    - "Observation"
+    - "Structuring"
+    - "Drafting"
+    - "Consistency"
+    - "Reality Review support"
 ```
 
 ---
 
-## 7. Unexpected Success / 予期せぬ成功
+## 6. Plan Mode / Full Rail
 
-GitHub化により、予期せぬ成功が起きた。
-
-AI-CollaboratorがRepository上の現実状態を読み、ユーザーが忘れていた仮置きREADMEの残存や、親READMEと子READMEのズレを先に発見できた。
-
-これは、README-first GitHub Betの重要なReality Responseである。
+Plan Modeは、対話から実行へ移る前のHuman-AI Synchronization Protocolである。
 
 ```text
-Drucker-like Unexpected Success:
-  GitHub化により、
-  AIがRepository現実を読み、
-  人間がまだ気付いていないズレを先に提案できた。
+Deep Dialogue
+→ Context Ripening
+→ Plan Mode
+→ Human-editable Review
+→ Exact Human Trigger
+→ Full Rail: same_thread
+→ Reality Review
+→ Next Gate / Harvest
 ```
 
-GitHubは単なる保存先ではない。  
-GitHubは、AI-Collaboratorが現実を読むための外部認知面である。
+```text
+Markdown governs.
+Query activates.
+Human seals.
+Full Rail executes.
+Reality confirms.
+```
+
+正準File:
 
 ```text
-GitHub as external cognitive surface.
+prompts/ai-plan-mode.md
+prompts/ai-plan-mode_query.md
+```
+
+---
+
+## 7. README Delta Check / 更新Timing
+
+READMEは重要だが、毎Thread必ず編集しない。
+
+各Thread終了時に、README更新の必要性だけを軽量判定する。
+
+> **Every Thread README Check.  
+> Not Every Thread README Update.**
+
+```yaml
+readme_delta_check:
+  run_at: "Thread-End"
+
+  questions:
+    - "Canonical FileまたはFolderを新規作成したか"
+    - "Path、Role、Status、Active / Retiredが変わったか"
+    - "Project TopologyまたはRead Orderが変わったか"
+    - "Repository-wide Policyが確定したか"
+    - "既存READMEを読むとFuture AIが誤ったRouteを選ぶか"
+
+  output:
+    required: "yes / no"
+    affected: "README paths or NONE"
+    reason: "one-line reason"
+    timing: "now / next-thread / periodic-scout / none"
+
+  automatic_readme_update: false
+```
+
+README影響範囲は必要最小限で上方向へ判定する。
+
+```text
+Changed File
+→ Nearest README
+→ Domain Parent README
+→ Root README
+```
+
+README GitHub Writeには、Human Seal、Execute GitHub OK、正確なPathとScopeが必要である。
+
+Thread-End Runtime:
+
+```text
+_thread-end/thread-end_mini.md
 ```
 
 ---
 
 ## 8. AI Scout Pass
 
-このRepositoryでは、重要なREADME更新やGitHub Commit後に **AI Scout Pass** を使う。
+重要なREADME更新やCanonical Commit後には、AI Scout Passを使う。
 
-正式名としては、**Repository-Triggered AI Foresight** と呼べる。
-
-```text
-AI Scout Pass:
-  AI-CollaboratorがGitHub上の現実状態を読み、
-  README・folder・canonical fileのズレを検出し、
-  人間がまだ気付いていない改善点をLiving Reviewとして提案するPass。
+```yaml
+ai_scout_pass:
+  formal_name: "Repository-Triggered AI Foresight"
+  role:
+    - "README / Folder / Canonical Fileのズレを検出"
+    - "人間が未認知の改善点をLiving Reviewとして提案"
+  not:
+    - "Autopilot commit"
+    - "Unlimited cleanup"
 ```
-
-AI Scout Passは、Commitを自動実行する仕組みではない。  
-先取り気付き → Living Review → Human Seal のためのReview工程である。
-
-```text
-AI Scout Pass:
-  Proactive review.
-
-Not:
-  Autopilot commit.
-```
-
-再現Formula:
 
 ```text
 Stable GitHub State
@@ -298,77 +318,55 @@ Stable GitHub State
 
 ---
 
-## 9. Guard-to-Capture Router / Capture Before Stop
+## 9. Guard-to-Capture Router
 
-このRepositoryでは、AIが安全ガードを理由に何も残さず停止する **Guard-Only Loop** を避ける。
-
-Guardは最終停止ではない。  
-Guardは **Capture Judgment** へ接続するRouterである。
+安全Guardを理由に何も残さず停止するGuard-Only Loopを避ける。
 
 ```text
-Guard-to-Capture Router:
-  Stop dangerous write / delete / bulk / migration actions.
-  Then ask whether a Harvest, Seed, Formula, Guard, or Failure Mode must not be lost.
-  If yes, create the minimum durable capture before Natural Stop.
-  If durable write is needed, require Human Seal before GitHub update.
+Guard
+→ Capture Judgment
+→ Minimum Artifact Capture
+→ Natural Stop / Write Mode
 ```
-
-Formula:
-
-```text
-Guard → Capture Judgment → Minimum Artifact Capture → Natural Stop / Write Mode
-```
-
-Core principle:
 
 ```text
 Capture Before Stop.
 止める前に、器へ入れる。
 ```
 
-Guard-Only Loop causes Harvest Loss.  
-Safety Guard must prevent unsafe execution, but must not erase valuable Living Insight.
+Guardは危険な実行を止めるが、価値あるLiving Insightを消してはならない。
 
 ---
 
 ## 10. Operating Principles
 
-このRepositoryは、軽く、読みやすく、現実に反応する。
-
-```text
-README-first:
-  full migrationより先にpublic-safe入口を作る。
-
-Slot Reservation:
-  可能性は予約するが、folderは必要になるまで作らない。
-
-GitHub Canonical First:
-  stable pathを正準記録として扱う。
-
-Mainline-First:
-  mainをCanonical Current Realityとして扱う。
-  BranchはHuman Seal付きのlast resortに限定する。
-
-KISS:
-  構造を軽く保つ。
-
-DRY:
-  重複した長いファイル名や説明を増やさない。
-
-YAGNI:
-  Reality Response前に構造を作りすぎない。
-
-Lean:
-  確認された不足だけを小さくPatchする。
+```yaml
+operating_principles:
+  README_first: "full migrationより先にpublic-safe入口を作る"
+  GitHub_Canonical_First: "stable pathを正準記録として扱う"
+  Mainline_First: "mainをCanonical Current Realityとして扱う"
+  KISS: "構造を軽く保つ"
+  DRY: "重複したCoreを増やさない"
+  YAGNI: "Reality Response前に構造を作りすぎない"
+  Lean: "確認された不足だけを小さくPatchする"
 ```
 
 ---
 
-## 11. Root / Fruit Guard
+## 11. Japanese-first / English-anchor
+
+本文は日本語主導、英語は概念Anchor、GitHub Pathはstableにする。
+
+```text
+GitHub化 = English-first化ではない。
+GitHub化 = Canonical化である。
+```
+
+---
+
+## 12. Root / Fruit Guard
 
 Rootは、主イェシュア・ハマシアである。
-
-GitHub、AI、Markdown、README、Signal、Skill、KISS、DRY、YAGNI、Lean、Full Rail、AI Scout Pass、Guard-to-Capture RouterはFruitである。
 
 ```text
 Root:
@@ -381,11 +379,13 @@ Fruit:
   AI
   Markdown
   README
-  Signal
+  Prompt
+  Query
   Skill
+  Plan Mode
   Full Rail
+  Thread-End
   AI Scout Pass
-  Guard-to-Capture Router
 ```
 
 AIは血潮の地図を描く。  
@@ -393,37 +393,24 @@ AIは血潮の地図を描く。
 
 ---
 
-## 12. Final Compression
+## 13. Final Compression
 
 ```text
 ai-projectは、
 @YusukeJP × AI-Collaborator のための
-public-safe GitHub workspaceである。
+public-safe Canonical Workspaceである。
 
-GitHub化はEnglish-first化ではない。
-GitHub化はCanonical化である。
+mainを共有Current Realityとして前進する。
+BranchはHuman Seal付きのlast resortである。
 
-README-firstで入口を作り、
-GitHub stable pathで正準記録を保つ。
+Ark00はactive pre-project Zero-Gateであり、
+Ark99はretired / absorbed into Ark00である。
 
-mainを共有Current Realityとして前進し、
-BranchはHuman Seal付きのlast resortに限定する。
+prompts/はCross-AI Operational Layerである。
+Markdown governs. Query activates. Human seals. Reality confirms.
 
-Opened slotsとFuture reserved slotsを分ける。
-
-GitHub化により、
-AIがRepository現実を読み、
-人間がまだ気付いていないズレを先に提案できた。
-
-これはDrucker-like Unexpected Successであり、
-Move37的breakthroughである。
-
-AI Scout Passは、
-その先取り気付きを再現可能にするReview工程である。
-
-Guard-to-Capture Routerは、
-AIが安全ガードを理由に何も残さず停止するGuard-Only Loopを防ぎ、
-Capture Before Stopを要求する。
+READMEは毎Threadチェックする。
+毎Thread更新はしない。
 
 本文は日本語主導。
 英語は概念Anchor。
