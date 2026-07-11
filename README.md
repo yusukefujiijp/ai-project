@@ -139,6 +139,54 @@ No local Markdown duplicate by default.
 
 ---
 
+## 4.5 Mainline-First / One Main Reality
+
+このRepositoryでは、`main`を複数AIとHumanが共有する **Canonical Current Reality** として扱う。
+
+```text
+One Repository.
+One Main Reality.
+Many AI Lenses.
+Human Final Seal.
+```
+
+原則として、AI-Collaboratorは`main`を読み、`main`に対する変更案を作り、Human Final Seal後の更新も`main`へ反映する。
+
+Branchは標準作業場所ではない。  
+Branchは、`main`上で安全かつ可逆的に完了できない破壊的・大規模・未確定変更を、一時的に隔離するための **last resort** である。
+
+```yaml
+mainline_first_policy:
+  canonical_branch: "main"
+
+  default:
+    read_from: "main"
+    propose_against: "main"
+    write_to: "main after Human Final Seal"
+
+  branch_creation:
+    default: false
+    status: "last resort"
+    requires:
+      - "main上で安全かつ可逆的に完了できない"
+      - "破壊的または大規模な未確定変更である"
+      - "移行途中の不完全状態がmainを使用不能にする"
+      - "HumanがBranch作成を明示的にSealした"
+
+  prohibited:
+    - "AIが良かれと思って自動的にBranchを作る"
+    - "複数の作業Branchを並行増殖させる"
+    - "重要Fileを未Merge Branchだけに残す"
+    - "Branchを第二のCanonical Realityとして扱う"
+```
+
+Branchを使う場合も、目的・対象Path・終了条件を明示し、短期間で`main`へ統合または破棄する。
+
+> **Main is the shared current reality.  
+> Branch is a temporary isolation room, not a second world.**
+
+---
+
 ## 5. Japanese-first / English-anchor
 
 このRepositoryのREADMEとpublic-safe canonical fileは、原則として **Japanese-first / English-anchor** で運用する。
@@ -297,6 +345,10 @@ Slot Reservation:
 GitHub Canonical First:
   stable pathを正準記録として扱う。
 
+Mainline-First:
+  mainをCanonical Current Realityとして扱う。
+  BranchはHuman Seal付きのlast resortに限定する。
+
 KISS:
   構造を軽く保つ。
 
@@ -353,6 +405,9 @@ GitHub化はCanonical化である。
 
 README-firstで入口を作り、
 GitHub stable pathで正準記録を保つ。
+
+mainを共有Current Realityとして前進し、
+BranchはHuman Seal付きのlast resortに限定する。
 
 Opened slotsとFuture reserved slotsを分ける。
 
