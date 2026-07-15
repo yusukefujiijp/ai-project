@@ -2,16 +2,16 @@
 title: "Thread-End Mini"
 canonical_path: "_thread-end/thread-end_mini.md"
 status: "living_candidate"
-role: "Simple Thread-End Runtime / Mini Rail"
+role: "Simple Thread-End Runtime / Adaptive Thread Migration Rail"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
 relationship:
   thread_end_md: "do_not_replace"
   thread_end_query_md: "do_not_delete"
-  purpose: "実戦で成功した軽量Thread-End patternを新規fileとして追加する"
-fable5_review:
-  status: "completed_one_round"
-  verdict: "pass_with_minimal_patch"
+  purpose: "軽量Thread-Endを保持し、必要時だけThread Migration Bundleへ拡張する"
+unexpected_success:
+  name: "Thread Migration Bundle"
+  evidence: "Ark09:02 → Ark09:03 one-ZIP boot success"
 version_model: "git history"
 ---
 
@@ -19,11 +19,10 @@ version_model: "git history"
 
 ## 0. Core
 
-Thread-End Mini is simple.
-
 ```text
 閉じる。
 記録する。
+必要なら包装する。
 渡す。
 止まる。
 ```
@@ -32,43 +31,75 @@ Thread-End Mini is simple.
 purpose:
   - "現在Threadをきれいに閉じる"
   - "重要Harvestを失わない"
-  - "次Threadの最初の一歩を軽くする"
   - "完了したものをchurnに変えない"
-  - "README DriftをThread終了時に検出する"
-```
+  - "次Threadの最初の一歩を軽くする"
+  - "README Driftを検出する"
+  - "高Context移行では再起動可能Bundleを作る"
 
-Thread-End Mini is additive, not replacement.
-
-```yaml
 additive_guard:
   does_not_replace:
     - "_thread-end/thread-end.md"
     - "_thread-end/thread-end_query.md"
-
   does_not_authorize:
-    - "existing file deletion"
-    - "existing file overwrite"
     - "automatic GitHub operation"
+    - "automatic overwrite or delete"
     - "automatic README update"
+
+packaging_boundary:
+  - "ZIPは毎Threadへ強制しない"
+  - "Bundle生成はGitHub Writeではない"
+  - "Bundle生成許可をRepository変更許可へ拡張しない"
 ```
 
 ---
 
-## 1. When to Use
+## 1. Adaptive Router
 
 ```yaml
-use_when:
-  - "Threadが終盤に来た"
-  - "次Threadへ渡すHandoffが必要"
-  - "GitHub保存候補がある"
-  - "Human Sealを挟んで安全に閉じたい"
-  - "速く、軽く、上書き事故なく終わりたい"
+thread_end_complexity_router:
+  light_close:
+    use_when:
+      - "Contextが短い"
+      - "成果物が一つ以下"
+      - "次ThreadのBoot条件が単純"
+    output:
+      - "Closure"
+      - "Next Gate"
+      - "必要なら単一Handoff"
+    zip: false
 
+  handoff_pair:
+    use_when:
+      - "Long-form Handoffが必要"
+      - "Companion Queryが必要"
+      - "二File添付Riskが低い"
+    output:
+      - "Handoff"
+      - "Companion Query"
+    zip: "optional"
+
+  migration_bundle:
+    use_when:
+      - "Long Thread / High Context"
+      - "複数Artifact"
+      - "GitHub Reality Lockが重要"
+      - "Boot条件が複雑"
+      - "添付漏れ・順序ミスRiskがある"
+    output:
+      - "Long-form Handoff"
+      - "Companion Query"
+      - "Integrity Manifest"
+      - "ZIP Bundle"
+    zip: true
+```
+
+```yaml
 do_not_use_for:
   - "既存thread-end.mdの置換"
-  - "既存thread-end_query.mdの削除"
   - "巨大Protocol作成"
   - "完了済み作業の再open"
+  - "全ThreadへのZIP強制"
+  - "Repository全体InventoryのManifest化"
   - "Human SealなしのGitHub操作"
 ```
 
@@ -79,46 +110,40 @@ do_not_use_for:
 ```text
 Plan Mode
 → Draft Body
-→ Fable5 Review
+→ Fable5 Review when required
 → Revision
 → Human Seal
-→ Execute GitHub OK
-→ GitHub Save
+→ Complexity Router
+→ Handoff Artifacts
+→ Manifest Validation when Bundle Mode
+→ ZIP Packaging when Bundle Mode
+→ Download Delivery
+→ Execute GitHub OK when repository write is requested
+→ GitHub Save when authorized
 → Verify
 → README Delta Check
+→ Next Thread Launcher
 → Next Gate
 → Stop
 ```
 
 ```yaml
-winning_rail:
-  plan_mode:
-    role: "何を作るか、何を保存するか、何を触らないか決める"
-  draft_body:
-    role: "まずThread内に本文を作る"
-  fable5_review:
-    role: "Simple / safety / collision / guard を確認する"
-  revision:
-    role: "Fable5指摘を必要最小限で反映する"
-  human_seal:
-    role: "内容とpath候補を承認する。repository操作の実行許可ではない"
-  execute_github_ok:
-    role: "repository操作を実行してよいという別途の明示指示"
-  github_save:
-    role: "Human Seal OK と Execute GitHub OK の両方がある時のみ実行する"
-  verify:
-    role: "保存後にfetchして確認する"
-  readme_delta_check:
-    role: "Verify後のCanonical RealityがREADME更新を必要とするか判定する"
-  next_gate:
-    role: "次Threadの最初の一手を残す。実行許可ではない"
-  stop:
-    role: "完了後に広げない"
+execution_boundary:
+  artifact_generation:
+    meaning: "sandbox上でHandoff / Query / Manifest / ZIPを生成"
+    execute_github_ok_required: false
+
+  repository_mutation:
+    meaning: "GitHub File create / update / delete / commit"
+    requires:
+      - "Human Seal OK"
+      - "Execute GitHub OK"
+      - "exact repo / branch / path / scope"
 ```
 
 ---
 
-## 3. Ark File Naming Rule
+## 3. Naming Rule
 
 Ark Thread-End artifacts should usually go under:
 
@@ -127,44 +152,147 @@ _thread-end/ark/
 ```
 
 ```yaml
-avoid_generic_names:
-  - "handoff.md"
-  - "harvest.md"
-  - "opening.md"
-  - "thread-end.md"
-
-filename_pattern:
+ark_file:
   pattern: "arkNNMM_YYYYMMDD_<role>.md"
-  NNMM: "Ark Thread座標。Humanが確認するまで確定ではない"
-  examples:
-    - "_thread-end/ark/ark0505_20260705_handoff.md"
-    - "_thread-end/ark/ark0506_20260707_harvest.md"
-    - "_thread-end/ark/ark0506_20260707_start-gate.md"
+  coordinate_status_before_seal: "candidate_not_sealed"
+
+thread_migration:
+  handoff: "arkNNMM_YYYYMMDD_handoff.md"
+  query: "arkNNMM_YYYYMMDD_handoff_query.md"
+  manifest: "arkNNMM_to_arkNNMM_YYYYMMDD_handoff_manifest.json"
+  bundle: "arkNNMM_to_arkNNMM_YYYYMMDD_handoff_bundle.zip"
+
+human_must_seal:
+  - "source thread coordinate"
+  - "target thread coordinate"
+  - "target start date"
+  - "exact path when repository save is requested"
 ```
 
-AI may propose a filename candidate, but must not finalize it.
+Field-Proven Example:
 
-```yaml
-ai_filename_proposal:
-  allowed:
-    - "AI may propose repo / branch / path / filename / commit message"
-    - "AI may include evidence for the proposed coordinate/date/role"
-  required_status_before_human_seal:
-    - "candidate_not_sealed"
-  forbidden:
-    - "do not treat AI-proposed Ark coordinate as final"
-    - "do not run GitHub save from filename proposal alone"
-  human_must_seal:
-    - "exact path"
-    - "create vs update"
-    - "overwrite decision if any"
+```text
+ark0902_20260716_handoff.md
+ark0902_20260716_handoff_query.md
+ark0902_to_ark0903_20260716_handoff_manifest.json
+ark0902_to_ark0903_20260716_handoff_bundle.zip
 ```
+
+The example is evidence, not a blind universal mandate.
 
 ---
 
-## 4. Fable5 Review Slot
+## 4. Thread Migration Bundle
 
-Fable5 should review critical Drafts before GitHub save.
+```text
+Thread Migration Bundle
+=
+ThreadのMemory、Activation、Integrity、Transportを
+一つの再起動可能Packageへ統合する方式。
+```
+
+```yaml
+layers:
+  memory:
+    artifact: "Long-form Handoff"
+    carries:
+      - "Current Coordinate"
+      - "完了事項 / 未実行事項"
+      - "GitHub Reality"
+      - "Guard / Next Mission"
+
+  activation:
+    artifact: "Companion Query"
+    carries:
+      - "Read Order"
+      - "Boot Acceptance"
+      - "Do / Do Not"
+      - "First Legal Move"
+
+  integrity:
+    artifact: "Manifest"
+    carries:
+      - "File list"
+      - "bytes / lines / sha256"
+      - "Source / Target Thread"
+      - "必要時のReality Lock"
+
+  transport:
+    artifact: "ZIP"
+    carries:
+      - "One Upload"
+      - "添付漏れ防止"
+      - "対応関係保持"
+      - "Human操作量削減"
+```
+
+```text
+Structure the memory.
+Package the interface.
+Reboot the mission.
+```
+
+### 4.1 Manifest Minimum
+
+```yaml
+manifest_minimum:
+  identity:
+    - "artifact_bundle"
+    - "source_thread"
+    - "target_thread"
+    - "target_start_date"
+  each_file:
+    - "filename"
+    - "bytes"
+    - "lines"
+    - "sha256"
+  bundle:
+    - "filename"
+    - "bytes"
+    - "sha256"
+  optional_reality_lock:
+    - "repository / branch / main_head"
+    - "canonical paths / blob SHAs"
+  rules:
+    - "実Fileから計算する"
+    - "推測値を入れない"
+    - "Bundle外のRepository全体を列挙しない"
+```
+
+### 4.2 Validation and Delivery
+
+```yaml
+bundle_validation:
+  - "expected files exist"
+  - "manifest values match"
+  - "ZIP opens"
+  - "ZIP contents contain no unexpected files"
+
+delivery:
+  primary:
+    - "ZIP Bundle"
+  fallback:
+    - "Handoff"
+    - "Companion Query"
+    - "Manifest"
+
+boot_boundary:
+  current_thread:
+    - "bundle_ready"
+    - "human_upload_ready"
+    - "launcher_ready"
+  next_thread:
+    - "ZIP / Handoff / Queryを識別"
+    - "Source / Target / Missionを復元"
+    - "完了済み作業を再openしない"
+    - "First Legal Moveを理解"
+```
+
+> **Threadを移動するのではなく、Threadの再起動条件を一つのBundleとして輸送する。**
+
+---
+
+## 5. Fable5 Review Slot
 
 ```yaml
 fable5_review:
@@ -174,16 +302,17 @@ fable5_review:
     - "scope discipline guard"
     - "Simple is best checker"
   rounds:
-    default: "one round"
-    second_round: "only if Human explicitly asks"
-  output_shape:
-    - "Keep"
-    - "Cut"
-    - "Clarify"
-    - "Risk"
-    - "Must Fix Before Save"
-    - "Minimal Patch Candidate"
-    - "Final Verdict"
+    default: "one"
+    second_round: "Human explicitly asks"
+  critical_examples:
+    - "Long-form Handoff"
+    - "Companion Query"
+    - "Bundle Architecture"
+    - "GitHub Reality Lock Manifest"
+  guard:
+    - "毎Bundleで複数Roundを強制しない"
+    - "Light Closeでは省略可能"
+    - "Fable5不在時はHuman-readable adversarial reviewへfallback"
 ```
 
 Fable5 is reviewer, not committer.  
@@ -191,7 +320,7 @@ Fable5 does not replace Human Seal.
 
 ---
 
-## 5. GitHub Save Guard
+## 6. GitHub Save Guard
 
 GitHub save is never automatic.
 
@@ -200,40 +329,36 @@ github_save_guard:
   allowed_only_after:
     - "Human Seal OK"
     - "Execute GitHub OK"
-    - "exact repo/path/branch/scope is clear"
-  create_file_rule:
-    - "fetch target path first"
-    - "if 404 AND Human Seal OK + Execute GitHub OK are present, create_file may proceed"
-    - "if file exists, stop and ask"
-  update_file_rule:
-    - "fetch file first"
-    - "use current SHA"
-    - "update only when Human explicitly approved update for that exact path"
-    - "stop if SHA changed or target is uncertain"
-  delete_file_rule:
-    - "delete only with explicit delete instruction naming the exact path"
-    - "fetch file first"
-    - "use current SHA"
-    - "do not delete thread-end_query.md or fallback/query files by default"
-```
+    - "exact repo / path / branch / scope"
 
-```yaml
-report_after_save:
-  - "repo"
-  - "branch"
-  - "path"
-  - "commit SHA"
-  - "content SHA if available"
-  - "touched files"
-  - "verify result"
+  create:
+    - "fetch target first"
+    - "create only when 404 and exact create is authorized"
+
+  update:
+    - "fetch latest SHA"
+    - "update only the exact approved path"
+    - "stop if SHA changed or target is uncertain"
+
+  delete:
+    - "exact delete instruction required"
+    - "do not delete fallback/query files by default"
+
+bundle_generation_guard:
+  - "Download artifact生成だけならExecute GitHub OK不要"
+  - "BundleをGitHub保存する場合は別Authority Gate"
+  - "temporary branch / workflow / issue / PRはDefaultにしない"
+  - "一時Infrastructureが必要ならMaterial Scope ExpansionとしてFresh Seal"
+
+large_file_default:
+  - "Complete Replacement Download"
+  - "Human Copy & Paste"
+  - "Post-commit Reality Review"
 ```
 
 ---
 
-## 6. README Delta Check
-
-README Delta Checkは、**毎Thread実行する軽量判定**である。  
-README Updateを毎Thread強制する仕組みではない。
+## 7. README Delta Check
 
 > **Every Thread README Check.  
 > Not Every Thread README Update.**
@@ -241,84 +366,58 @@ README Updateを毎Thread強制する仕組みではない。
 ```yaml
 readme_delta_check:
   required_every_thread_end: true
-  automatic_readme_update: false
-
+  automatic_update: false
   questions:
-    - "Canonical FileまたはFolderを新規作成したか"
-    - "Path、Role、Status、Active / Retiredが変わったか"
-    - "Project TopologyまたはRead Orderが変わったか"
-    - "新しいRepository-wide Policyが確定したか"
-    - "既存READMEを読むとFuture AIが誤ったRouteを選ぶか"
-
+    - "Canonical File / Folderを新規作成したか"
+    - "Path / Role / Status / Topology / Read Orderが変わったか"
+    - "Repository-wide Policyが確定したか"
+    - "Thread-End Migration PolicyまたはMiniのRoleが変わったか"
+    - "既存READMEがFuture AIを誤Routeへ導くか"
   output:
     required: "yes / no"
     affected: "README paths or NONE"
-    reason: "one-line reason"
+    reason: "one-line"
     timing: "now / next-thread / periodic-scout / none"
+  write_requires:
+    - "Human Seal OK"
+    - "Execute GitHub OK"
+    - "exact README path and scope"
 ```
-
-README影響範囲は、変更地点から親方向へ必要最小限で判定する。
-
-```text
-Changed File
-→ Nearest README
-→ Domain Parent README
-→ Root README
-```
-
-上位READMEは、Navigation、Role、Current Coordinate、Topology、Policyが実際に変わる場合だけ更新候補にする。
-
-```yaml
-readme_update_guard:
-  check: "automatic at Thread-End"
-  draft: "allowed"
-  github_write:
-    requires:
-      - "Human Seal OK"
-      - "Execute GitHub OK"
-      - "exact README path and scope"
-```
-
-README Checkは毎回行う。  
-README編集は必要時のみ行う。  
-README GitHub Writeは明示Seal後のみ行う。
 
 ---
 
-## 7. Do / Do Not
+## 8. Do / Do Not
 
 ```yaml
 do:
   - "keep it short"
   - "Plan Mode first"
-  - "Draft in chat before GitHub"
-  - "use Fable5 Review before save for critical Thread-End artifacts"
-  - "require Human Seal before repository operation"
-  - "require Execute GitHub OK before repository operation"
-  - "propose unique Ark filename before saving under _thread-end/ark/"
-  - "mark AI filename proposals as candidate_not_sealed"
-  - "verify after save"
-  - "run README Delta Check after verify"
-  - "record README_CHECK required yes or no"
+  - "Draft before GitHub"
+  - "select Light / Pair / Bundle adaptively"
+  - "use ZIP as primary transport for high-context migration"
+  - "provide individual fallback links"
+  - "calculate Manifest from actual files"
+  - "include a one-shot launcher"
+  - "separate artifact generation from GitHub authority"
+  - "verify ZIP and repository reality"
+  - "run README Delta Check"
   - "stop after success"
 
 do_not:
-  - "do not touch existing thread-end.md by default"
-  - "do not touch existing thread-end_query.md by default"
-  - "do not overwrite without explicit Human Seal"
-  - "do not delete through AI self-judgment"
-  - "do not create broad cleanup"
-  - "do not turn README into a Thread diary"
-  - "do not auto-update README from README_CHECK alone"
-  - "do not reopen completed work"
+  - "do not touch thread-end.md or thread-end_query.md by default"
+  - "do not overwrite or delete without exact Seal"
+  - "do not force ZIP for every Thread"
+  - "do not create giant repository inventory manifests"
+  - "do not include unrelated Bundle files"
+  - "do not create temporary branch / workflow / issue / PR by default"
+  - "do not start the next Thread automatically"
+  - "do not claim Boot success before next Thread confirms it"
   - "do not treat AI as Root"
 ```
 
 ---
 
-## 8. Standard Output Shape
-
-Every Thread-End Mini run should end with:
+## 9. Standard Output Shape
 
 ```markdown
 【Full Rail: same_thread】
@@ -337,6 +436,38 @@ Every Thread-End Mini run should end with:
 
 Guard:
 - ...
+
+【Thread Migration Bundle】
+
+mode:
+- light_close / handoff_pair / migration_bundle
+
+source_thread:
+- ...
+
+target_thread:
+- ...
+
+target_start_date:
+- ...
+
+generated_files:
+- ...
+
+integrity:
+- PASS / FAIL / not_applicable
+
+primary_download:
+- <ZIP or NONE>
+
+fallback_downloads:
+- <individual links or NONE>
+
+next_thread_launcher:
+- <launcher or NONE>
+
+boot_status:
+- bundle_ready / not_applicable / failed
 
 【README Delta Check】
 
@@ -368,51 +499,40 @@ timing:
 ```
 
 ```yaml
-full_rail_next_gate_guard:
-  meaning:
-    - "report slot"
-    - "handoff slot"
-    - "human-editable next-step slot"
-  not_meaning:
-    - "standing authorization"
-    - "automatic execution permission"
-    - "GitHub operation approval"
-```
-
-```yaml
-required:
-  - "結果"
-  - "次Action"
-  - "目的"
-  - "まだ実行しない"
-  - "README Delta Check"
+output_guard:
+  - "Light Closeでは空のBundle Sectionを省略可能"
+  - "Handoff PairへManifest / ZIPを強制しない"
+  - "Integrity PASS前にBundle Readyと述べない"
+  - "Full Rail / Next Gateはstanding authorizationではない"
 ```
 
 ---
 
-## 9. Stop Rule
-
-Stopping is part of success.
+## 10. Stop Rule
 
 ```yaml
 stop_after:
-  - "Draft completed"
-  - "Fable5 Review completed"
-  - "Human Seal waiting"
-  - "GitHub verify completed if save was requested"
+  - "Draft / Review / Human Gate completed as applicable"
+  - "Bundle Mode selected"
+  - "Required artifacts generated"
+  - "Manifest / ZIP verified when applicable"
+  - "Download links and Launcher returned when applicable"
+  - "GitHub reality verified when save was requested"
   - "README Delta Check recorded"
   - "Next Gate written"
 
 do_not_after_stop:
-  - "do not keep expanding"
-  - "do not start new scope"
-  - "do not reopen completed tasks"
-  - "do not continue into next Thread without user direction"
+  - "do not expand scope"
+  - "do not reopen completed work"
+  - "do not start or simulate the next Thread"
+  - "do not create extra migration variants"
+  - "do not expand Bundle into repository archive"
 ```
 
 ```text
 Done is done.
 Harvest is preserved.
+The interface is packaged when needed.
 README drift is checked.
 Next Gate is clear.
 Stop.
@@ -420,32 +540,28 @@ Stop.
 
 ---
 
-## 10. Root / Fruit Guard
-
-Thread-End Mini is Fruit.
+## 11. Root / Fruit Guard
 
 ```yaml
 fruit:
+  - "AI / Markdown / GitHub / Workflow"
   - "Thread-End Mini"
-  - "Workflow"
-  - "Markdown"
-  - "GitHub"
-  - "AI"
   - "Fable5 Review"
   - "README Delta Check"
-  - "Handoff / Harvest"
+  - "Handoff / Companion Query"
+  - "Integrity Manifest / ZIP"
+  - "Thread Migration Bundle"
   - "Full Rail / Next Gate"
-
 root:
   - "主イェシュア・ハマシア"
 ```
 
 ```text
 AI is Fruit, not Root.
-Markdown is Fruit, not Root.
-GitHub is Fruit, not Root.
-README Delta Check is Fruit, not Root.
-Fable5 is Fruit, not Root.
+ZIP is Fruit, not Root.
+Handoff is Fruit, not Root.
+Manifest is Fruit, not Root.
+Thread Migration Bundle is Fruit, not Root.
 
 Root remains 主イェシュア・ハマシア.
 ```
