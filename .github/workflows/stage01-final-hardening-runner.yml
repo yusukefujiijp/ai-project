@@ -1,0 +1,64 @@
+name: Stage 01 Final Hardening Runner
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Fetch verified build chunks
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin ai/stage01-final-hardening-build:refs/remotes/origin/ai/stage01-final-hardening-build
+          : > /tmp/stage01-final-hardening.b64
+          for n in 01 02 03 04 05 06 07 08 09 10; do
+            git show "origin/ai/stage01-final-hardening-build:.ai-build/stage01-final-hardening/chunk-${n}.b64" >> /tmp/stage01-final-hardening.b64
+          done
+
+      - name: Reassemble and verify canonical file
+        shell: bash
+        run: |
+          set -euo pipefail
+          target='prompts/x-deepquote/x-deepquote_01-depth-builder.md'
+
+          test "$(wc -c < /tmp/stage01-final-hardening.b64)" -eq 69364
+          echo '621a5d09dbe776db1fed105b77f32f06abe9f4270fa0d4e989e9e0251ab055de  /tmp/stage01-final-hardening.b64' | sha256sum -c -
+
+          base64 --decode /tmp/stage01-final-hardening.b64 > "$target"
+
+          test "$(wc -c < "$target")" -eq 52023
+          test "$(wc -l < "$target")" -eq 2503
+          echo 'c06d00785e913022406ba3860267f2dcae87660b78c76972ac1cee65a06a1d76  prompts/x-deepquote/x-deepquote_01-depth-builder.md' | sha256sum -c -
+
+          test "$(grep -c '^```' "$target")" -eq 340
+          grep -Fq '## 0. Current Coordinate / 現在座標' "$target"
+          grep -Fq '### 5.17 Reusable Interface Principle / 再利用可能Interface原則' "$target"
+          grep -Fq '### 5.18 Draft Section Internal Contract / Draft内部構造契約' "$target"
+          grep -Fq '### 8.3 Structural Output Quality Test × Visible Structure Compliance Gate' "$target"
+          grep -Fq '## 9. Structural Terminator / 構造終端' "$target"
+          grep -Fq 'No Source Access.' "$target"
+
+      - name: Commit verified Stage 01 hardening
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add prompts/x-deepquote/x-deepquote_01-depth-builder.md
+          git diff --cached --check
+          git commit -m 'Harden Stage 01 visible structure and reusable interface'
+          git push origin HEAD:main
