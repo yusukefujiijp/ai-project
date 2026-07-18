@@ -9,7 +9,7 @@ role: "activation query for prompts/ai-plan-mode.md"
 paired_prompt:
   path: "prompts/ai-plan-mode.md"
   role: "active prompt runtime"
-status: "review-ready candidate / pending Human content seal / not canonical"
+status: "human-sealed field-test candidate / not canonical"
 ---
 
 # AI Plan Mode Query v003 Candidate
