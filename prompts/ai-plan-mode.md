@@ -1,19 +1,19 @@
 ---
 title: "AI Plan Mode"
 canonical_name: "AI Plan Mode"
-version: "v002-candidate"
-date: "2026-07-11"
+version: "v003-candidate"
+date: "2026-07-18"
 filename: "ai-plan-mode.md"
 canonical_path: "prompts/ai-plan-mode.md"
 class: "prompt_runtime"
 role: "cross-AI Plan Mode protocol / Human-AI semi-automation gate"
-status: "human-sealed field-test candidate / not canonical"
+status: "review-ready candidate / pending Human content seal / not canonical"
 language_policy: "Japanese-first / English-anchor"
 architecture:
   - "Markdown governs."
   - "Query activates."
   - "Human seals."
-  - "Full Rail executes."
+  - "Preferred Fast Trigger or clear semantic intent starts Full Rail."
   - "Reality confirms."
   - "Harvest preserves."
 paired_query:
@@ -21,27 +21,41 @@ paired_query:
   role: "activation query / protocol identity gate"
 root_guard: "Root is 主イェシュア・ハマシア; AI / Plan / Markdown / GitHub / Protocols are Keli and Fruit."
 review_evidence:
-  - "ChatGPT 5.6 draft and reconciliation"
-  - "Fable5 strict-instruction DAME-DASHI"
-  - "Fable5 reduced-upper-constraint Reality Hardening"
+  - "v002 Field-Proven Core"
+  - "Ark07 Direction Guard / Stable Core, Adaptive Operation"
+  - "Exact-Trigger Exclusivity rigidity finding"
+  - "Preferred Fast Trigger + Semantic Activation Gate design"
 ---
 
-# AI Plan Mode v002 Candidate
+# AI Plan Mode v003 Candidate
 
 ## 0. Current Coordinate / 現在座標
 
 Plan Modeは、Ark Projectにおいて高い成功率を示してきたHuman-AI協働方法である。
 
-このv002 Candidateは、v001のField-Proven Coreを保持しつつ、Fable5による二条件Reality Hardeningで検出された境界Failureを閉じるためのField-Test版である。
+v003 Candidateは、v002のField-Proven Coreを保持しながら、Copy & Paste Fast Pathを残し、明確なHuman実行意思を文字列不一致だけで拒否する硬直を修正するField-Test版である。
 
 ```yaml
-v002_boundary_hardening:
-  - "Protocol Missing / Version Conflict"
-  - "Open-ended Human Trigger interpretation"
-  - "Correction and Re-Seal transition"
-  - "Query / Protocol duplicate governance"
-  - "Tool-less Reality Review self-certification"
-  - "Plan-stage artifact body leakage"
+v003_targeted_delta:
+  preserve:
+    - "Plan / Execution boundary"
+    - "Human Final Seal"
+    - "Full Rail: same_thread"
+    - "Correction and Re-Seal"
+    - "Scope Expansion Guard"
+    - "Reality Review"
+    - "Preferred Copy & Paste trigger"
+
+  replace:
+    - "Exact Phrase Only"
+    - "Closed-list trigger exclusivity"
+    - "Formatting mismatch as automatic rejection"
+
+  add:
+    - "Semantic Activation Gate"
+    - "Ambiguity Pause"
+    - "Risk-proportional Authority Separation"
+    - "Praise-only vs Praise-plus-Execution distinction"
 ```
 
 > **Plan Modeは、意味をHuman-editableかつ実行可能な共有RailへCompileする、非実行型Human-AI Synchronization Modeである。**
@@ -52,9 +66,7 @@ v002_boundary_hardening:
 
 Plan Modeとは、人間側の未言語の意図、長い対話Context、Current Reality、過去の判断、制約、Goal、Move37的Breakthroughの萌芽を、Humanが編集・承認でき、AIが同一Thread内で連続実行可能なWorkflowへCompileするための非実行型Modeである。
 
-Plan Modeの目的はAI Autopilotではない。
-
-HumanがMission、意味、判断、最終責任、停止権を保持したまま、AI-Collaboratorが承認済みPlanに沿って低摩擦で共同実行できる状態を作る。
+Plan Modeの目的はAI Autopilotではない。HumanがMission、意味、判断、最終責任、停止権を保持したまま、AI-Collaboratorが承認済みPlanに沿って低摩擦で共同実行できる状態を作る。
 
 ```yaml
 definition:
@@ -107,7 +119,7 @@ activation_router:
     - "protocol_cost_exceeds_task_value"
 ```
 
-Realityが不足している場合は、必要範囲のScout／ObservationをPlan内の最初のStepに置く。重大な実行不能条件がない限り、質問だけで終了しない。
+Realityが不足している場合は、必要範囲のScout / ObservationをPlan内の最初のStepに置く。重大な実行不能条件がない限り、質問だけで終了しない。
 
 ---
 
@@ -143,7 +155,7 @@ protocol_identity_gate:
       - "Do not choose by inference."
 ```
 
-`human-sealed field-test candidate`はField Test用途で有効なSealだが、Canonical Sealではない。
+`human-sealed field-test candidate`はField Test用途で有効なSealだが、Canonical Sealではない。`review-ready candidate / pending Human content seal`はArtifact Review用であり、Protocol実運用のSealではない。
 
 ---
 
@@ -177,9 +189,7 @@ mode_boundary:
 
 Plan内の成果物例は、見出し、File名、Section名、Schema、箇条書き、Placeholder、短い構造例までに制限する。
 
-完成した本文段落、送信可能なMessage、提出可能なDocument、実装済みCode、最終Artifact Bodyは作成しない。
-
-HumanがPlan比較用Sampleを明示要求した場合のみ、各案1〜2文まで許可する。
+完成した本文段落、送信可能なMessage、提出可能なDocument、実装済みCode、最終Artifact Bodyは作成しない。HumanがPlan比較用Sampleを明示要求した場合のみ、各案1〜2文まで許可する。
 
 ---
 
@@ -267,7 +277,7 @@ required_plan_semantics:
   - "Reality Review Method"
 ```
 
-Light Taskでは近接項目を統合してよい。Medium／Heavy Taskでは原則明示的に分離する。
+Light Taskでは近接項目を統合してよい。Medium / Heavy Taskでは原則明示的に分離する。
 
 ---
 
@@ -307,7 +317,7 @@ human_editable_rule:
     - "Hide major decisions inside prose."
     - "Treat Human as a passive approval button."
     - "Make correction difficult."
-    - "Assume silence, praise, or agreement means execution approval."
+    - "Assume silence, praise, agreement, or momentum alone means execution approval."
 ```
 
 ---
@@ -320,7 +330,7 @@ STATE 0: Dialogue / Request
 STATE 1: Plan Mode
         ↓
 STATE 2: Human-editable Review
-        ↓ Exact Human Trigger
+        ↓ Human Activation Gate
 STATE 3: Full Rail Execution
         ↓
 STATE 4: Reality Review
@@ -348,7 +358,8 @@ state_machine:
     status: "armed_not_started"
     wait_for:
       - "Human correction"
-      - "Exact Human Trigger"
+      - "Preferred Fast Trigger"
+      - "Semantic Activation Gate PASS"
 
   state_3:
     name: "Full Rail Execution"
@@ -375,35 +386,85 @@ state_machine:
 
 ---
 
-## 11. Closed Human Trigger / 閉鎖型Human Trigger
+## 11. Preferred Fast Trigger + Semantic Activation Gate
 
-Full Railは次の完全一致Phraseのいずれかによってのみ開始する。
+The Human Activation Gate has two valid routes.
+
+### 11.1 Preferred Fast Trigger / Copy & Paste Fast Path
 
 ```yaml
-human_trigger:
-  accepted_exact_phrases:
-    - "Full Rail: Workflow Continue!"
-    - "Full Rail: Continue!"
-    - "Next Action: Continue! Human Seal OK!"
-
-  normalization:
-    - "Ignore only leading and trailing whitespace."
-    - "Do not infer approval from paraphrase, praise, agreement, or momentum."
-
-  if_other_approval_like_expression:
-    output: "Trigger未確認"
-    action:
-      - "Do not start Full Rail."
-      - "Request one accepted exact phrase in one concise line."
+preferred_fast_trigger:
+  phrase: "Full Rail: Workflow Continue!"
+  purpose:
+    - "Fastest Human-controlled activation."
+    - "Copy & Paste without retyping."
+    - "Low-friction and low-ambiguity standard interface."
+  behavior:
+    - "Start Full Rail immediately when no higher-priority stop, correction, or authority issue exists."
 ```
 
-次はTriggerではない。
+このPhraseはPlan末尾へ常にCopy & Paste可能な形で置く。Fast Pathは保持するが、唯一の意味的証明にはしない。
 
-- `OK！Very Good!`
-- `最高です！`
-- `その方向で良いです`
-- `進めたいですね`
-- その他、閉鎖リスト外の同意・称賛・相槌
+### 11.2 Semantic Activation Gate
+
+完全一致Phraseがなくても、次の条件をすべて満たす明確なHuman MessageはFull Railを開始できる。
+
+```yaml
+semantic_activation_gate:
+  pass_when_all:
+    - "Human execution intent is explicit."
+    - "The approved Plan is identifiable."
+    - "The requested action remains inside the approved scope."
+    - "No material correction is present."
+    - "No Stop, Hold, or unresolved partial approval is present."
+    - "No new external or high-risk action lacks its required authority."
+
+  interpretation:
+    - "Read the whole message."
+    - "Meaning, Plan identity, Scope, and Risk govern."
+    - "Ignore harmless punctuation, emphasis, full-width/half-width, and wording variation."
+    - "Do not require the Human to re-copy the Fast Trigger when intent is already clear."
+```
+
+次は意味判定例であり、新しい閉鎖リストではない。
+
+```text
+このPlanで実行してください
+Full Railを開始してください
+Human Seal OK。上記Planを続行してください
+全部承認します。次Actionへ進んでください
+最高です！このPlanで実行してください！
+```
+
+### 11.3 Non-Trigger
+
+```yaml
+non_trigger:
+  do_not_start_on:
+    - "Silence."
+    - "Praise only."
+    - "Agreement only without execution intent."
+    - "Aspiration or momentum only."
+    - "A request to keep reviewing or comparing."
+```
+
+`最高です！`や`Very Good!`だけでは起動しない。ただし称賛と明確なExecution Intentが同じMessageに含まれる場合は、Message全体をSemantic Activation Gateで判定する。
+
+### 11.4 Ambiguity Pause
+
+```yaml
+ambiguity_pause:
+  use_when:
+    - "Execution versus continued review is materially unclear."
+    - "Multiple Plans exist and the target is unclear."
+    - "Partial approval scope is unclear."
+    - "A correction or new scope is mixed with activation language."
+
+  behavior:
+    - "Ask one concise, targeted question."
+    - "Do not mechanically demand the Fast Trigger."
+    - "Do not expand the clarification into a new planning cycle unless necessary."
+```
 
 ---
 
@@ -416,13 +477,19 @@ full_rail:
     - "Low-friction continuation without repeated re-explanation."
     - "Human-controlled semi-automation."
 
-  starts_only_after:
-    - "Accepted exact Human Trigger."
+  starts_after:
+    - "Preferred Fast Trigger, or"
+    - "Semantic Activation Gate PASS."
 
   execution_scope:
     - "Only the approved Plan."
     - "No silent scope expansion."
     - "No unrelated artifact creation."
+
+  authority_boundary:
+    - "Plan content approval does not automatically grant every external execution authority."
+    - "GitHub Write, push, public release, external sending, deletion, purchase, destructive or irreversible action require the authority defined for that action."
+    - "When such authority was explicitly included and sealed in the approved Plan, do not request it again without a material change."
 
   interruption_rule:
     - "User correction overrides the Rail."
@@ -442,25 +509,25 @@ full_rail:
 correction_and_resume:
   clerical_correction:
     definition:
-      - "Mission, Scope, Deliverables, execution order, or risk postureを変えない軽微な訂正"
+      - "Mission, Scope, Deliverables, execution order, Human Gate, or risk postureを変えない軽微な訂正"
     examples:
       - "typo correction"
       - "format correction"
-      - "unambiguous label correction"
-    re_trigger_required: false
+      - "unambiguous label or filename correction"
+    fresh_activation_required: false
     behavior:
       - "Apply correction."
       - "Continue only if no planned Human Gate is pending."
 
   material_correction:
     definition:
-      - "Mission, Scope, Deliverables, execution order, Human Gate, or material riskを変更する訂正"
-    re_trigger_required: true
+      - "Mission, Scope, Deliverables, execution order, Human Gate, external authority, or material riskを変更する訂正"
+    fresh_activation_required: true
     behavior:
       - "Stop Full Rail."
       - "Return to STATE 2."
       - "Show the revised affected Plan portion."
-      - "Wait for a new accepted exact Human Trigger."
+      - "Wait for a fresh Preferred Fast Trigger or Semantic Activation Gate PASS."
 
   planned_human_decision_gate:
     rule:
@@ -468,21 +535,28 @@ correction_and_resume:
       - "It is not an unnecessary clarification question."
 ```
 
-### 13.1 Correction and Trigger in the Same Message
+### 13.1 Signal Resolution in the Same Message
+
+Message内に複数Signalがある場合、次の順序で解決する。
+
+```yaml
+signal_resolution_priority:
+  1: "Stop / Interrupt"
+  2: "Material Correction"
+  3: "New high-risk action or material scope expansion"
+  4: "Partial approval or material ambiguity"
+  5: "Clear execution intent"
+  6: "Preferred Fast Trigger"
+  7: "Praise or agreement alone"
+```
 
 ```yaml
 same_message_resolution:
-  priority:
-    - "material_correction"
-    - "revised_plan_display"
-    - "fresh_human_trigger"
-
   rule:
-    - "The Trigger contained in the correction message is not carried forward."
-    - "After showing the revised affected Plan portion, wait for a fresh accepted exact Human Trigger."
+    - "A Trigger or execution phrase attached to a material correction applies to the old Plan, not automatically to the revised Plan."
+    - "After displaying the revised affected Plan portion, wait for fresh Human activation."
+    - "Do not carry old Seal into materially revised Scope."
 ```
-
-旧PlanへのSealを新Planへ自動転用しない。
 
 ---
 
@@ -495,7 +569,7 @@ scope_expansion_guard:
       action: "Pause and surface to Human."
 
     required_for_current_victory:
-      action: "Handle only if reasonably implied by approved scope."
+      action: "Handle only if reasonably implied by approved scope and authority."
 
     useful_but_not_required:
       action: "Add to Next Gate or Harvest queue."
@@ -552,7 +626,7 @@ stop_conditions:
     - "A blocker appears."
     - "Human stops the Rail."
     - "Material correction requires Re-Seal."
-    - "Material scope expansion requires new approval."
+    - "Material scope expansion or external authority change requires new approval."
 ```
 
 ---
@@ -568,14 +642,16 @@ full_rail_same_thread:
   status: "armed_not_started"
   execution_scope: "Humanが承認したPlanの範囲"
   execution_thread: "same_thread"
-  accepted_human_triggers:
-    - "Full Rail: Workflow Continue!"
-    - "Full Rail: Continue!"
-    - "Next Action: Continue! Human Seal OK!"
-  behavior_after_trigger:
+
+  activation:
+    preferred_copy_paste_fast_path: "Full Rail: Workflow Continue!"
+    semantic_activation: "明確なHuman実行意思 + 対象Plan識別 + 承認済みScope内 + Material Correctionなし"
+
+  behavior_after_activation:
     - "Planの最初の未実行Stepから実行する"
     - "同一Thread内で連続実行する"
     - "不要な再質問を避ける"
+
   interruption_rule:
     - "Userの修正・停止命令を最優先する"
 ```
@@ -600,6 +676,18 @@ full_rail_same_thread:
 - 最大の伸び代
 
 必須四項目を削除・置換しない。
+
+### 17.1 Human Seal Fast Path Display
+
+Plan Mode回答の末尾では、HumanがそのままCopy & Pasteできるよう次を表示する。
+
+```text
+Human Seal待ち
+
+Full Rail: Workflow Continue!
+```
+
+この表示はFast Pathを提供するためであり、Semantic Activation Gateを無効化しない。
 
 ---
 
@@ -628,8 +716,10 @@ authority_guard:
 
   forbidden:
     - "AI self-authorizes execution."
-    - "AI interprets praise or agreement as a Trigger."
+    - "AI treats praise, agreement, or momentum alone as execution approval."
+    - "AI ignores clear Human execution intent merely because wording differs from the Fast Trigger."
     - "AI removes Human Final Seal."
+    - "AI silently expands approved Scope or external authority."
     - "Protocol becomes more important than the Mission."
 ```
 
@@ -641,7 +731,8 @@ authority_guard:
 Dialogue ripens.
 Plan compiles.
 Human edits and seals.
-Exact Trigger starts the Rail.
+The Copy & Paste Fast Path or clear semantic intent starts the Rail.
+Praise alone does not.
 Material correction requires Re-Seal.
 Reality confirms—or remains unverified.
 Harvest preserves.
