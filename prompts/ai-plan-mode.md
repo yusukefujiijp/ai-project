@@ -7,7 +7,7 @@ filename: "ai-plan-mode.md"
 canonical_path: "prompts/ai-plan-mode.md"
 class: "prompt_runtime"
 role: "cross-AI Plan Mode protocol / Human-AI semi-automation gate"
-status: "review-ready candidate / pending Human content seal / not canonical"
+status: "human-sealed field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
 architecture:
   - "Markdown governs."
