@@ -1,7 +1,7 @@
 ---
 title: "AI Plan Mode Query"
-version: "v002-candidate"
-date: "2026-07-11"
+version: "v003-candidate"
+date: "2026-07-18"
 filename: "ai-plan-mode_query.md"
 canonical_path: "prompts/ai-plan-mode_query.md"
 class: "prompt_query"
@@ -9,10 +9,10 @@ role: "activation query for prompts/ai-plan-mode.md"
 paired_prompt:
   path: "prompts/ai-plan-mode.md"
   role: "active prompt runtime"
-status: "human-sealed field-test candidate / not canonical"
+status: "review-ready candidate / pending Human content seal / not canonical"
 ---
 
-# AI Plan Mode Query v002 Candidate
+# AI Plan Mode Query v003 Candidate
 
 このConversation、現在のChatGPT Project、または明示添付File内で、versionとstatusが明示された最新のHuman-Sealed `prompts/ai-plan-mode.md`を確認してください。
 
@@ -31,4 +31,21 @@ Planの構造、Adaptive Density、Living Review、Human Decision Gates、Stop C
 1. 【Full Rail: same_thread】
 2. 【Next Gate: human_editable】
 
-Full Railは、Protocolで定義されたAccepted Exact Human Triggerを受けるまで`armed_not_started`として待機してください。
+Humanが即座にCopy & PasteできるPreferred Fast Triggerとして、末尾に次を表示してください。
+
+```text
+Human Seal待ち
+
+Full Rail: Workflow Continue!
+```
+
+Full Railは、次のいずれかを受けるまで`armed_not_started`として待機してください。
+
+1. Preferred Fast Trigger
+2. 確認済みProtocolのSemantic Activation Gateを満たす、明確なHuman実行意思
+
+称賛・相槌・同意だけではFull Railを開始しないでください。称賛を含むMessageでも、明確なExecution Intentが併記されている場合はMessage全体を評価してください。
+
+Material Correction、Stop、未解決の部分承認、新しい高Risk外部ActionまたはScope Expansionが含まれる場合は、確認済みProtocolの優先順位とRe-Seal Ruleに従ってください。
+
+表記差だけを理由に、明確なHuman実行意思へPreferred Fast Triggerの再Copyを要求しないでください。
