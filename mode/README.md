@@ -33,7 +33,7 @@ SkillはModeを助けることがある。
 
 ## 3. Current Modes
 
-### `ai-journaling.md`
+### `ai-journaling_mode.md`
 
 Human Realityを起点にJournalingを開始・継続・切替・終了するMode。
 
@@ -54,15 +54,30 @@ One Open Slot
 
 ## 5. Filename Rule
 
-Mode filenameは原則として lowercase-kebab-case を使う。
+`/prompts/` 内のAI-Promptは、Folder ContextによってPromptであることを識別できる。
+
+`/prompts/` 外へ置くAI-Promptは、Future AIがfilename単体でもRoleを識別できるよう、末尾にunderscoreから始まるRole suffixを付ける。
+
+Mode Fileの基本形：
+
+```text
+<semantic-name>_mode.md
+```
 
 Good：
 
 ```text
-mode/ai-journaling.md
+mode/ai-journaling_mode.md
 ```
 
-FolderがMode Layerを示すため、filenameへ`-mode`や`_mode`を重複させない。
+Avoid：
+
+```text
+mode/ai-journaling.md
+mode/ai-journaling-mode.md
+```
+
+`_mode` は重複ではなく、`/prompts/` 外のAI-PromptであることとRuntime Roleを一目で伝えるRepository Contractである。
 
 ## 6. KISS / DRY / YAGNI / Lean
 
