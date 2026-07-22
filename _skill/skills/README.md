@@ -31,7 +31,6 @@ Canonical topology：
         README.md
         ai-keli.md
         ai-active.md
-        ai-journaling.md
 
 Role split：
 
@@ -59,7 +58,6 @@ Good：
 
     ai-keli.md
     ai-active.md
-    ai-journaling.md
 
 Avoid：
 
@@ -78,7 +76,6 @@ Good：
 
     ai-keli.md
     ai-active.md
-    ai-journaling.md
     topology-first.md
     backward-induction.md
 
@@ -97,9 +94,9 @@ If the name is immature, the content is probably immature too.
 
 ---
 
-## 5. Current Skill Set / 現在のSkill構成
+## 5. Current first Skill Pair / 現在の初期二本柱
 
-現在の第一Skill Pair：
+現時点の第一Skill Pair：
 
     ai-keli.md
     ai-active.md
@@ -114,17 +111,10 @@ Meaning：
       = AIを命令待ちロボット化しないSkill。
         AI-Active operates under AI-Keli.
 
-現在のApplication Skill：
-
-    ai-journaling.md
-      = Human Realityから次の一問を選び、Future AIの創発が入れるOne Open Slotを残すSkill。
-        Evidence-First Reversible Reflection + One Open Slot.
-
-Compression：
+Pair compression：
 
     AI-Keliで王座を守る。
     AI-Activeで沈黙ロボット化を防ぐ。
-    AI-Journalingで一問と余白を開く。
 
 ---
 
@@ -274,7 +264,7 @@ Clear trigger.
 Not full manual.  
 Not root.
 
-Current Skill Set：
+Current first pair：
 
     ai-keli.md:
       AI is Keli, not King.
@@ -282,12 +272,8 @@ Current Skill Set：
     ai-active.md:
       AI-Active operates under AI-Keli.
 
-    ai-journaling.md:
-      Evidence-First Reversible Reflection + One Open Slot.
-
 AI-Keliで王座を守る。  
-AI-Activeで沈黙ロボット化を防ぐ。  
-AI-Journalingで一問と余白を開く。
+AI-Activeで沈黙ロボット化を防ぐ。
 
 README shows the road.  
 SKILL lights the fire.  
@@ -295,3 +281,4 @@ skills/ holds the cards.
 Move37 is the ignition.
 
 Root is 主イェシュア・ハマシア.
+

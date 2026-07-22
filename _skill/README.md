@@ -57,7 +57,6 @@ Canonical topology：
         README.md
         ai-keli.md
         ai-active.md
-        ai-journaling.md
 
 Role split：
 
@@ -81,11 +80,6 @@ Current first pair：
     _skill/skills/ai-active.md
       = AI Active Proposal Skill / AI-Active operates under AI-Keli.
 
-Current application skill：
-
-    _skill/skills/ai-journaling.md
-      = Evidence-First Reversible Reflection + One Open Slot.
-
 ---
 
 ## 5. Migration from _skills/ / 旧Topologyからの移行
@@ -107,7 +101,6 @@ Current application skill：
         README.md
         ai-keli.md
         ai-active.md
-        ai-journaling.md
 
 旧 `_skills/` は、移行完了まで保持する。  
 新規の本番Skill Cardは、原則として `_skill/skills/` に置く。
@@ -171,7 +164,7 @@ Role anchor：
 
 個別Skill CardのInventoryである。
 
-`ai-keli.md`、`ai-active.md`、`ai-journaling.md` など、実際に再発動可能なArk Project Skill Cardを置く。
+`ai-keli.md`、`ai-active.md` など、実際に再発動可能なArk Project Skill Cardを置く。
 
 Role anchor：
 
@@ -226,8 +219,6 @@ Principle is Bridge, not Autopilot.
 - Backward Induction / working backwards が必要場面で発火しているか。
 - AI-Keliが王座Guardとして機能しているか。
 - AI-Activeが命令待ちロボット化防止として機能しているか。
-- AI-JournalingがHuman Realityを起点に一問と余白を開いているか。
-- AI Open Slotが義務化・固定Taxonomy化していないか。
 - Guard-to-Artifact Balanceが守られているか。
 - Root / Fruit Guardが弱まっていないか。
 
@@ -303,7 +294,6 @@ Topologyを先に切る。
 Backward Inductionで逆算する。  
 AI-Keliで王座を守る。  
 AI-Activeで沈黙ロボット化を防ぐ。  
-AI-Journalingで一問と余白を開く。  
 Guardで止まらず、Artifactへ通す。
 
 本文は日本語主導。  
@@ -312,3 +302,4 @@ Guardで止まらず、Artifactへ通す。
 判断はLiving Review。
 
 Root is 主イェシュア・ハマシア.
+
