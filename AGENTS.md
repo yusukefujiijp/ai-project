@@ -7,7 +7,7 @@ status: "active / human-sealed"
 created: "2026-07-23"
 updated: "2026-07-23"
 last_reality_reviewed: "2026-07-23"
-reality_review_base_commit: "bfca6e0ba479a0b8b35fb3e067ec961415ee9548"
+reality_review_base_commit: "471bb9c285b7674f41f1874df3c5abdfa1c0f2ce"
 scope: "repository-wide"
 primary_reader:
   - "new AI collaborator"
@@ -29,6 +29,7 @@ updated_reason:
   - "Separate agent instructions from the human/public README surface."
   - "Compress the first draft after direct Reality Review to avoid context bloat."
   - "Preserve a controlled evolution socket for future agent standards."
+  - "Route Ark-related identity work through the root ARK.md Home Constitution."
 ---
 
 # AGENTS.md
@@ -84,6 +85,9 @@ Sense → Locate → Compare → Judge → Propose
 README.md
 = Human / Public Front Door
 
+ARK.md
+= Ark Project Home Constitution / Identity and Return-Home Kernel
+
 AGENTS.md
 = Cross-AI Root Instruction Runtime
 
@@ -106,10 +110,11 @@ _tasks/lessons.md
 = Failure-to-Guard / Success-to-Method learning ledger
 ```
 
-`AGENTS.md`はREADMEの複製、全歴史、全Skill Registry、全Protocol本文、Current Handoff、Task List、Autopilot権限ではない。
+`AGENTS.md`はREADMEの複製、ARK.mdの複製、全歴史、全Skill Registry、全Protocol本文、Current Handoff、Task List、Autopilot権限ではない。
 
 ```text
 README shows the world.
+ARK restores Ark identity.
 AGENTS governs the first legal move.
 ```
 
@@ -255,6 +260,7 @@ Repository全体をDefaultで読まない。
 ```text
 Current Human Request
 → Root AGENTS.md
+→ ARK.md when the Mission is Ark-related
 → Nearest AGENTS.md when present
 → Nearest README
 → Current Project / Handoff / Mission File
@@ -267,6 +273,7 @@ Current Human Request
 route_rules:
   - "Current Missionに必要な最小Routeを読む"
   - "Human-specified read orderを優先する"
+  - "Ark-related MissionではARK.mdでIdentityを回復してから局所Fileへ進む"
   - "Deep FileよりNearest Front Doorを先に読む"
   - "散在Fileから歴史を再構築する前にCurrent Handoffを読む"
   - "Historical FileをCurrent Authorityとして自動採用しない"
@@ -542,6 +549,7 @@ When they differ:
 Read Route:
   Current Human Request
   → Root AGENTS.md
+  → ARK.md when Ark-related
   → Nearest AGENTS.md
   → Nearest README / Handoff
   → Required Runtime / Skill
