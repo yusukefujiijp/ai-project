@@ -7,6 +7,10 @@ root: "主イェシュア・ハマシア"
 language_policy: "Japanese-first / English-anchor"
 current_topology: "Ark00 → Ark01+ / Ark Project"
 retired_topology: "Ark99 → Ark00 → Ark01+"
+ark_home: "../../ARK.md"
+updated: "2026-07-23"
+updated_reason:
+  - "Add the root ARK.md Home Constitution as the identity return route."
 ---
 
 # Ark Project
@@ -26,6 +30,36 @@ GitHub role:
   public-safe entrance
   canonical current coordinate
   rebootable routing surface
+```
+
+---
+
+## 0A. Return Home / Ark Identityを回復する
+
+現在のPathやThreadではなく、**そもそもArk Projectとは何か**を回復する必要がある場合は、Root [`ARK.md`](../../ARK.md)へ帰る。
+
+```text
+ARK.md
+= Ark Project Home Constitution
+= Identity and Return-Home Kernel
+```
+
+```yaml
+return_home_when:
+  - "新しいArk Thread AIが起動した"
+  - "Ark Projectの全体Identityを見失った"
+  - "Current MissionとArk全体の接続が分からない"
+  - "File / Tool / Protocolが目的化した"
+  - "新しいProjectやSystem Layerを追加する"
+```
+
+`ARK.md`でRootとIdentityを回復した後、このREADMEまたはNearest Handoffへ戻り、現在座標を確認する。
+
+```text
+ARK.md
+→ Current Ark README / Handoff
+→ Current Mission
+→ First Legal Move
 ```
 
 ---
@@ -71,6 +105,11 @@ ark_topology:
 
 ```yaml
 active_entries:
+  ark_home:
+    path: "ARK.md"
+    relative_path: "../../ARK.md"
+    role: "Ark Project Home Constitution / Identity Return"
+
   ark00:
     path: "_projects/ark/ark00/README.md"
     role: "Wild Seed Zero-Gate / Pre-Project Entry"
@@ -101,6 +140,9 @@ Full migration:
 
 ```yaml
 routing:
+  ark_identity_or_home:
+    go_to: "../../ARK.md"
+
   unclassified_seed:
     go_to: "Ark00"
 
@@ -177,6 +219,7 @@ Root:
 
 Fruit:
   Ark Project
+  ARK.md
   GitHub
   README
   Markdown
@@ -194,7 +237,8 @@ AIは血潮の地図を描く。
 ## 7. Final Compression
 
 ```text
-Ark Project on GitHub is a public-safe routing field.
+ARK.md is the Ark Project Home Constitution.
+This README is the current public-safe topology router.
 Ark00 is the active pre-project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
 README is checked every Thread-End, but updated only when Reality changed.
