@@ -1,0 +1,243 @@
+name: Thread-End Active Reference Cutover
+
+on:
+  push:
+    paths:
+      - ".github/workflows/thread-end-active-reference-cutover.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  cutover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Patch active Thread-End references
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          def read(path: str) -> str:
+              return Path(path).read_text(encoding="utf-8")
+
+          def write(path: str, text: str) -> None:
+              Path(path).write_text(text, encoding="utf-8")
+
+          def replace_exact(text: str, old: str, new: str, *, label: str, expected: int = 1) -> str:
+              actual = text.count(old)
+              if actual != expected:
+                  raise SystemExit(f"{label}: expected {expected} occurrence(s), found {actual}")
+              return text.replace(old, new)
+
+          # 1. Root README: switch the global Thread Lifecycle router.
+          path = "README.md"
+          text = read(path)
+          text = replace_exact(
+              text,
+              "| [`_thread-end/README.md`](_thread-end/README.md) | Thread-End front door / Full and Mini Rail router | Threadを閉じる・移行する時 |",
+              "| [`thread-end/README.md`](thread-end/README.md) | Canonical AI Thread-End front door / 3+1 migration router | Threadを閉じる・移行する時 |",
+              label="README Thread-End router",
+          )
+          write(path, text)
+
+          # 2. ARK.md: update the Current File Ecology organ.
+          path = "ARK.md"
+          text = read(path)
+          text = replace_exact(
+              text,
+              "_thread-end/\n= Harvest / Handoff / Continuity Gate",
+              "thread-end/\n= AI Thread-End / Handoff / Reboot / Continuity Gate",
+              label="ARK file ecology",
+          )
+          write(path, text)
+
+          # 3. Thread-Start: pair it with the new AI Thread-End query/runtime.
+          path = "_thread-start/thread-start_query.md"
+          text = read(path)
+          text = replace_exact(
+              text,
+              'paired_with: "_thread-end/thread-end_query.md"',
+              'paired_with: "thread-end/ai-thread-end_query.md"',
+              label="Thread-Start paired_with",
+          )
+          text, count = re.subn(r'(?<!ai-)thread-end_query\.md', 'ai-thread-end_query.md', text)
+          if count < 2:
+              raise SystemExit(f"Thread-Start plain query references: expected at least 2, found {count}")
+          text = replace_exact(
+              text,
+              '''  thread_end:
+    path: "thread-end/ai-thread-end_query.md"
+    role: "Thread End Gate / Wheat-Grain Handoff"
+    receives:
+      - "Current Thread"
+    produces:
+      - "Harvest Download Artifact"
+      - "Handoff Download Artifact"
+      - "Stop"''',
+              '''  thread_end:
+    front_door: "thread-end/README.md"
+    query: "thread-end/ai-thread-end_query.md"
+    runtime: "thread-end/ai-thread-end.md"
+    role: "AI Thread-End / 3+1 Migration Gate"
+    receives:
+      - "Current Thread Reality"
+    produces:
+      - "Human-readable Handoff"
+      - "AI-native Thread Reboot Map"
+      - "AI-first Start Query"
+      - "Inline Copy & Paste Launch Surface"
+      - "Stop"''',
+              label="Thread-Start topology block",
+          )
+          write(path, text)
+
+          # 4. Ark System: update the Gate Index.
+          path = "_system/ark-system.md"
+          text = read(path)
+          text = replace_exact(
+              text,
+              '''  thread_end:
+    path: "_thread-end/thread-end_query.md"
+    role: "Thread End Runtime / Harvest and Handoff Gate"''',
+              '''  thread_end:
+    front_door: "thread-end/README.md"
+    query: "thread-end/ai-thread-end_query.md"
+    runtime: "thread-end/ai-thread-end.md"
+    role: "AI Thread-End / Multi-Representation Migration Gate"''',
+              label="Ark System Gate Index",
+          )
+          write(path, text)
+
+          # 5. Protocol Registry: replace the old confirmed family with the new 1-set / 2-file family.
+          path = "_projects/ark/indexes/ark-protocol-registry.md"
+          text = read(path)
+          text = replace_exact(
+              text,
+              "  _thread-end/\n",
+              "  thread-end/\n",
+              label="Registry Fruit path",
+          )
+          pattern = re.compile(
+              r'  - path: "_thread-end/README\.md".*?(?=  - path: "_thread-index/README\.md")',
+              re.DOTALL,
+          )
+          replacement = '''  - path: "thread-end/README.md"
+    document_identity: "thread_end_folder_front_door"
+    canonical_name: "Thread-End README"
+    class: "S"
+    status: "active / folder_front_door / canonical_topology_map"
+    role:
+      - "Canonical AI Thread-End Layerの入口"
+      - "1 Set / 2 Control FilesのRead Order"
+      - "3 Persistent Markdown + 1 Inline LaunchのTopology Map"
+    must_not_be:
+      - "AI Thread-End runtime body"
+      - "Thread-specific Handoff"
+      - "Legacy _thread-end router"
+
+  - path: "thread-end/ai-thread-end_query.md"
+    document_identity: "ai_thread_end_activation_query"
+    canonical_name: "AI Thread-End Query"
+    class: "S-candidate"
+    status: "active / human_sealed / activation_query"
+    paired_runtime: "thread-end/ai-thread-end.md"
+    role:
+      - "Current Thread Binding"
+      - "Source / Target Coordinate Binding"
+      - "Authority and Output Profile Binding"
+    must_not_be:
+      - "Thread-End runtime body"
+      - "Standing GitHub write authority"
+
+  - path: "thread-end/ai-thread-end.md"
+    document_identity: "ai_thread_end_runtime"
+    canonical_name: "AI Thread-End"
+    class: "S-candidate"
+    status: "active / human_sealed / field_proven_candidate"
+    paired_query: "thread-end/ai-thread-end_query.md"
+    role:
+      - "Single Thread-End Compiler"
+      - "Human-readable Handoff generator"
+      - "AI-native Reboot Map generator"
+      - "AI-first Start Query generator"
+      - "Inline Copy & Paste Launch closure"
+    must_not_be:
+      - "Legacy _thread-end runtime"
+      - "Human authority replacement"
+      - "Universal Best Practice without further field evidence"
+
+'''
+          text, count = pattern.subn(replacement, text, count=1)
+          if count != 1:
+              raise SystemExit(f"Registry confirmed family: expected 1 block, found {count}")
+
+          retired_anchor = '''retired_deleted_layers:
+  thread_end_query_layer:
+    status: "deleted / query layer retired"'''
+          retired_replacement = '''retired_deleted_layers:
+  legacy_thread_end_system:
+    status: "superseded / pending Human local backup and deletion"
+    replaced_by:
+      - "thread-end/README.md"
+      - "thread-end/ai-thread-end_query.md"
+      - "thread-end/ai-thread-end.md"
+    guard:
+      - "Do not use _thread-end/ as Active Runtime or fallback."
+      - "Historical references may remain as historical evidence."
+      - "Local backup and deletion remain Human-controlled."
+
+  thread_end_query_layer:
+    status: "deleted / query layer retired"'''
+          text = replace_exact(
+              text,
+              retired_anchor,
+              retired_replacement,
+              label="Registry retired legacy block",
+          )
+          write(path, text)
+
+          # Cutover assertions: active routes must point only to thread-end/.
+          assertions = {
+              "README.md": ["[`thread-end/README.md`](thread-end/README.md)"],
+              "ARK.md": ["thread-end/\n= AI Thread-End / Handoff / Reboot / Continuity Gate"],
+              "_thread-start/thread-start_query.md": [
+                  'paired_with: "thread-end/ai-thread-end_query.md"',
+                  'runtime: "thread-end/ai-thread-end.md"',
+              ],
+              "_system/ark-system.md": [
+                  'front_door: "thread-end/README.md"',
+                  'query: "thread-end/ai-thread-end_query.md"',
+                  'runtime: "thread-end/ai-thread-end.md"',
+              ],
+              "_projects/ark/indexes/ark-protocol-registry.md": [
+                  'path: "thread-end/README.md"',
+                  'path: "thread-end/ai-thread-end_query.md"',
+                  'path: "thread-end/ai-thread-end.md"',
+              ],
+          }
+          for file_path, required in assertions.items():
+              current = read(file_path)
+              for needle in required:
+                  if needle not in current:
+                      raise SystemExit(f"Post-patch assertion failed: {file_path}: {needle}")
+
+          # The one-shot workflow removes itself in the same cutover commit.
+          Path(".github/workflows/thread-end-active-reference-cutover.yml").unlink()
+          PY
+
+      - name: Commit verified cutover
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --check
+          git commit -m "refactor: cut over active Thread-End references"
+          git push origin HEAD:main
