@@ -1,0 +1,2 @@
+One-shot trigger for the PR-visible Thread-End active reference cutover.
+This branch is temporary and must not be merged.
