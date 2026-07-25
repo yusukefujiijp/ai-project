@@ -684,7 +684,7 @@ _tasks/lessons.md
 prompts/
 = Reusable Runtime and Query Pairs
 
-_thread-end/
+thread-end/
 = Harvest / Handoff / Continuity Gate
 ```
 

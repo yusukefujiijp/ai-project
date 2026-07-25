@@ -339,7 +339,7 @@ Reality confirms.
 
 | Path | Role | Read when |
 |---|---|---|
-| [`_thread-end/README.md`](_thread-end/README.md) | Thread-End front door / Full and Mini Rail router | Threadを閉じる・移行する時 |
+| [`thread-end/README.md`](thread-end/README.md) | Thread-End front door / Full and Mini Rail router | Threadを閉じる・移行する時 |
 | [`_thread-index/README.md`](_thread-index/README.md) | Thread-to-Card Craft front door | Threadを深く蒸留しCard化する時 |
 | [`_thread-mission/README.md`](_thread-mission/README.md) | Thread Mission assets front door | Mission系Artifactを扱う時 |
 | [`_tasks/README.md`](_tasks/README.md) | Task field orientation | Current Task群を扱う時 |
