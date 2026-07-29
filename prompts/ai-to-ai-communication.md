@@ -44,8 +44,9 @@ root_guard:
     - "GitHub"
 human_final_authority: true
 paired_query:
-  status: "not created"
-  decision_gate: "Body Field Review後"
+  path: "prompts/ai-to-ai-communication_query.md"
+  role: "activation and binding query"
+  status: "human-sealed v001 field-test candidate / not canonical"
 seal:
   content_seal: "Human Seal granted 2026-07-29"
   github_write: "Human Seal granted for prompts/ai-to-ai-communication.md on main"
@@ -1204,7 +1205,7 @@ ai_to_ai_communication_activation:
   protocol_identity:
     name: "AI-to-AI Communication"
     version: "v001-candidate"
-    status: "Human-review candidate / not canonical"
+    status: "human-sealed v001 field-test candidate / not canonical"
 
   root_guard:
     root:
@@ -1627,6 +1628,7 @@ change_summary:
   - "Frontmatter Amnesia、Reference Gravity Fog、Originality DefensivenessをFailure Pattern化"
   - "Contrastive Identity RevelationをUnexpected Successとして保存"
   - "Artifact BodyとPost-Draft Reportの境界を分離"
+  - "ai-to-ai-communication_query.md Pairを作成し、Binding・Witness Integrity・Output Contractを分離"
 ```
 
 ### 24.2 Seal Line
