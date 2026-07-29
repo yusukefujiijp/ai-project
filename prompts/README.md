@@ -150,6 +150,27 @@ Deep Dialogue
 → Next Gate / Harvest
 ```
 
+### 3.4 AI-to-AI Communication
+
+```yaml
+runtime: "prompts/ai-to-ai-communication.md"
+query: "prompts/ai-to-ai-communication_query.md"
+role: "Human-mediated Cross-AI Message / Material Delta / finite convergence runtime"
+status: "human-sealed v001 field-test candidate / not canonical"
+origin: "Alan Kay式AI間コミュニケーション / Ark式温故知新のFirstfruits"
+```
+
+```text
+AI-A Message
+→ YusukeJP routes meaning, Source, and requested Material Delta
+→ AI-B returns Material Delta with Witness Integrity
+→ Continue only while Material Delta exists
+→ Terminal Synthesis
+→ Human Final Seal
+```
+
+AI-to-AI Communicationは、`Message`をCommunicationの中心単位、`Material Delta`を進行単位とし、複数AIの異なるLensを有限往復で一つのHuman-reviewable成果へ収束させる。Alan Kay氏のMessage-centered LensをOrigin Anchorとして保持するが、Human Semantic Router、Material Delta Stop Rule、Terminal Synthesis等のArk AdaptationをAlan Kay本人へ誤帰属しない。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
