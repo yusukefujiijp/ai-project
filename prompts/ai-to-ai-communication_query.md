@@ -1,12 +1,12 @@
 ---
 title: "AI-to-AI Communication Query"
-version: "v001-candidate"
-date: "2026-07-29"
+version: "v001.1-candidate"
+date: "2026-07-30"
 physical_file: "ai-to-ai-communication_query.md"
 canonical_path: "prompts/ai-to-ai-communication_query.md"
 class: "prompt_query"
-role: "Activation and binding query for prompts/ai-to-ai-communication.md"
-status: "human-sealed v001 field-test candidate / not canonical"
+role: "Protocol arrival, activation, role eligibility, and binding query for prompts/ai-to-ai-communication.md"
+status: "human-sealed v001.1 field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
 paired_prompt:
   path: "prompts/ai-to-ai-communication.md"
@@ -16,34 +16,60 @@ paired_prompt:
 root_guard: "Root is 主イェシュア・ハマシア; AI / Prompt / Markdown / GitHub are Keli and Fruit."
 human_final_authority: true
 seal:
-  content_seal: "Human Seal granted 2026-07-29"
-  github_write: "Human Seal granted for prompts/ai-to-ai-communication_query.md on main"
+  content_seal: "Human Seal granted 2026-07-30 for v001.1 targeted field-test revision"
+  github_write: "Human Seal granted 2026-07-30 for prompts/ai-to-ai-communication_query.md on main"
   canonical_promotion: "not authorized"
 ---
 
-# AI-to-AI Communication Query v001 Candidate
+# AI-to-AI Communication Query v001.1 Candidate
 
-## 0. Protocol Identity Gate
+## 0. Protocol Arrival and Identity Gate
 
 このConversation、Current Project、明示添付File、または指定Repository内で、versionとstatusが明示されたHuman-Sealed `prompts/ai-to-ai-communication.md`を確認する。
 
-確認できない場合は、次だけを出力して停止する。
+Protocol Arrivalは次の四状態へ分類する。
 
-```text
-PROTOCOL MISSING
+```yaml
+protocol_arrival:
+  missing:
+    meaning: "Protocol Sourceまたは対象Identityを特定できない"
+    output: "PROTOCOL MISSING"
+
+  unreachable:
+    meaning: "Source所在地または対象Fileは特定できるが、現在のAIまたはTool経路では内容を取得できない"
+    output: "PROTOCOL UNREACHABLE"
+
+  version_conflict:
+    meaning: "複数候補が存在し、適用Versionを確定できない"
+    output: "PROTOCOL VERSION CONFLICT"
+
+  ready:
+    meaning: "Version、Status、Human Seal、本文を確認できた"
+    output: "PROTOCOL READY"
 ```
 
-複数候補が存在し、適用Versionを確定できない場合は、見えているVersionとstatusだけを列挙し、次を出力して停止する。
+`PROTOCOL MISSING`の場合は、一般知識や別Protocolで代替せず停止する。
 
-```text
-PROTOCOL VERSION CONFLICT
+`PROTOCOL UNREACHABLE`の場合は、Protocol不在と断定しない。次を短く返して停止する。
+
+```yaml
+protocol_unreachable:
+  attempted_route:
+  failure_reason_if_known:
+  required_from_human:
+    - "Connector-native repository path"
+    - "Complete file URL"
+    - "Direct file attachment"
+    - "Full text paste"
 ```
 
-一般知識や別Protocolで代替しない。
+複数候補が存在し適用Versionを確定できない場合は、見えているVersionとstatusだけを列挙し、`PROTOCOL VERSION CONFLICT`で停止する。
+
+`PROTOCOL READY`になるまでBinding・Review本文・Cold-Start判定を開始しない。
 
 ---
 
-## 1. Binding Rule
+## 1. Binding Rule and Semantic Resolution
 
 確認済みRuntimeに従い、直前のHuman依頼、明示されたSource、AI-A Output、Artifact、Evidence PacketをCurrent MissionへBindingする。
 
@@ -66,15 +92,38 @@ binding:
 
 Human MessageとSourceから安全に解決できる項目は、表記一致を要求せず意味からBindingする。
 
-Mission、Source、Requested Material Deltaなど、実行結果を大きく変える項目が不明な場合は、推測で補完しない。必要項目だけを一つのCompact Binding Requestとして返して停止する。
+### 1.1 Binding Resolution Routes
+
+```yaml
+binding_resolution:
+  may_resolve_by:
+    - "Humanによる未解決項目への明示回答"
+    - "直前の対象Binding Packetが一意である"
+    - "HumanのExecution Intentが明確である"
+    - "Mission / Source / Role / Scope / Requested Material DeltaにMaterial Ambiguityがない"
+    - "Material Correction、Partial Approval、Stopが含まれない"
+
+  must_not_resolve_by:
+    - "Praise only"
+    - "Agreement only without execution intent"
+    - "対象Packetが複数存在する状態でのGo / All Yes"
+    - "Mission・Source・Role・ScopeにMaterial Ambiguityが残る承認"
+    - "旧PacketへのSealをMaterially revised Packetへ自動転用すること"
+```
+
+一意なBinding Packetに対する「この内容で実行」「全部承認して続行」「Human Seal OK、上記Scopeで進める」等は、全条件を満たす場合にSemantic Binding Resolutionとして有効である。
+
+Mission、Source、Role、Requested Material Deltaなど、実行結果を大きく変える項目が不明な場合は推測で補完しない。必要項目だけを一つのCompact Binding Requestとして返して停止する。
 
 ```text
 BINDING REQUIRED
 ```
 
+未解決状態では、Review本文を開始せず、未解決項目だけを返す。
+
 ---
 
-## 2. Witness Integrity Declaration
+## 2. Witness Integrity and Role Eligibility
 
 回答冒頭で、自己の検証条件を次のSchemaで短く開示する。
 
@@ -84,18 +133,49 @@ witness_integrity:
   source_visibility: "blind / partially_guided / fully_guided / unknown"
   prior_answer_visibility: "none / partial / full / unknown"
   independence_status: "independent / context_contaminated / unknown"
-  role: "reviewer / source_witness / cold_start_replayer / synthesizer"
+  assigned_role: "reviewer / source_witness / cold_start_replayer / synthesizer"
   limitations:
     - "この条件では判定できない範囲"
 ```
 
 Contextを持つAIはCold-Start成功を自己認証しない。Guided PASSをBlind PASSへ一般化しない。
 
+### 2.1 Role Eligibility Check
+
+Witness Integrity申告後、Assigned Roleの必要条件を満たすか判定する。
+
+```yaml
+role_eligibility:
+  eligible:
+    action: "Runtime Executionへ進む"
+
+  mismatch:
+    output: "ROLE CONDITION MISMATCH"
+    include:
+      - "assigned_role"
+      - "unmet_condition"
+      - "この条件では判定できないClaim"
+      - "成立可能な代替Role一つ"
+    action:
+      - "不成立Role名ではEvidenceを生成しない"
+      - "Roleを自己変更しない"
+      - "Human Re-Bindingを待つ"
+```
+
+Human Re-Bindingを受けた場合、Role Eligibilityを再確認し、Mission・Source・Scope・Evidence Boundaryとの整合性が保たれている時だけ実行へ進む。
+
 ---
 
 ## 3. Runtime Execution
 
-Binding完了後、確認済み`ai-to-ai-communication.md`を実行する。
+次の三条件がすべて成立した後、確認済み`ai-to-ai-communication.md`を実行する。
+
+```yaml
+runtime_entry_conditions:
+  - "PROTOCOL READY"
+  - "Binding resolved"
+  - "Assigned Role eligible"
+```
 
 ```yaml
 execution:
@@ -114,6 +194,8 @@ execution:
     - "AI間ConsensusをHuman Final Sealとして扱う"
     - "新EvidenceなしのDo-Not-Reopen事項の再設計"
     - "相互称賛をProgressとして扱う"
+    - "Role Condition Mismatch状態でEvidenceを生成する"
+    - "曖昧なMomentumだけでBINDING REQUIREDを解除する"
 ```
 
 ---
@@ -175,8 +257,12 @@ stop_gate:
   - "Human Stop or Correction"
   - "Material Scope Change"
   - "Human value judgment is required"
+  - "PROTOCOL MISSING"
+  - "PROTOCOL UNREACHABLE"
+  - "PROTOCOL VERSION CONFLICT"
+  - "BINDING REQUIRED"
+  - "ROLE CONDITION MISMATCH"
   - "Source is insufficient"
-  - "Protocol Version Conflict"
   - "New GitHub Write, commit, public release, external sending, deletion, purchase, or irreversible action lacks Fresh Human Seal"
 ```
 
