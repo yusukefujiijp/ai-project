@@ -156,12 +156,15 @@ Deep Dialogue
 runtime: "prompts/ai-to-ai-communication.md"
 query: "prompts/ai-to-ai-communication_query.md"
 role: "Human-mediated Cross-AI Message / Material Delta / finite convergence runtime"
-status: "human-sealed v001 field-test candidate / not canonical"
+status: "human-sealed v001.1 field-test candidate / not canonical"
 origin: "Alan Kay式AI間コミュニケーション / Ark式温故知新のFirstfruits"
 ```
 
 ```text
-AI-A Message
+Protocol Arrival
+→ Mission Binding and Semantic Resolution
+→ Role Eligibility / Human Re-Binding when needed
+→ AI-A Message
 → YusukeJP routes meaning, Source, and requested Material Delta
 → AI-B returns Material Delta with Witness Integrity
 → Continue only while Material Delta exists
@@ -169,7 +172,7 @@ AI-A Message
 → Human Final Seal
 ```
 
-AI-to-AI Communicationは、`Message`をCommunicationの中心単位、`Material Delta`を進行単位とし、複数AIの異なるLensを有限往復で一つのHuman-reviewable成果へ収束させる。Alan Kay氏のMessage-centered LensをOrigin Anchorとして保持するが、Human Semantic Router、Material Delta Stop Rule、Terminal Synthesis等のArk AdaptationをAlan Kay本人へ誤帰属しない。
+AI-to-AI Communicationは、Protocol Arrival・Role Eligibility・Semantic Bindingを実行前Gateとし、`Message`をCommunicationの中心単位、`Material Delta`を進行単位として、複数AIの異なるLensを有限往復で一つのHuman-reviewable成果へ収束させる。Alan Kay氏のMessage-centered LensをOrigin Anchorとして保持するが、Human Semantic Router、Material Delta Stop Rule、Terminal Synthesis等のArk AdaptationをAlan Kay本人へ誤帰属しない。
 
 ---
 
