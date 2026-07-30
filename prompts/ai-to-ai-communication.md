@@ -1,13 +1,13 @@
 ---
 title: "AI-to-AI Communication"
 display_title: "AI間コミュニケーション"
-version: "v001-candidate"
-date: "2026-07-29"
+version: "v001.1-candidate"
+date: "2026-07-30"
 physical_file: "ai-to-ai-communication.md"
 candidate_repository_path: "prompts/ai-to-ai-communication.md"
 class: "prompt_runtime"
 role: "Cross-AI Communication Protocol / Human-mediated Multi-AI Convergence Runtime"
-status: "human-sealed v001 field-test candidate / not canonical"
+status: "human-sealed v001.1 field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
 owner:
   - "YusukeJP"
@@ -46,14 +46,14 @@ human_final_authority: true
 paired_query:
   path: "prompts/ai-to-ai-communication_query.md"
   role: "activation and binding query"
-  status: "human-sealed v001 field-test candidate / not canonical"
+  status: "human-sealed v001.1 field-test candidate / not canonical"
 seal:
-  content_seal: "Human Seal granted 2026-07-29"
-  github_write: "Human Seal granted for prompts/ai-to-ai-communication.md on main"
+  content_seal: "Human Seal granted 2026-07-30 for v001.1 targeted field-test revision"
+  github_write: "Human Seal granted 2026-07-30 for prompts/ai-to-ai-communication.md on main"
   canonical_promotion: "not authorized"
 ---
 
-# AI-to-AI Communication v001 Candidate
+# AI-to-AI Communication v001.1 Candidate
 
 ## 0. Current Coordinate / 現在座標
 
@@ -709,30 +709,55 @@ topology_router:
 
 ## 10. Runtime State Machine / 状態遷移
 
+Runtime実行前に、Protocol Arrival・Role Eligibility・Semantic Bindingの三Gateを通す。
+
 ```text
+PRE-STATE A: Protocol Arrival
+             ├─ PROTOCOL MISSING → Stop
+             ├─ PROTOCOL UNREACHABLE → Human Delivery Gate
+             ├─ PROTOCOL VERSION CONFLICT → Human Version Gate
+             └─ PROTOCOL READY
+                      ↓
 STATE 0: Mission Binding
-        ↓
-STATE 1: Role Assignment
-        ↓
+         ├─ Material Binding unresolved → BINDING REQUIRED
+         └─ Binding resolved
+                      ↓
+STATE 1: Role Assignment and Eligibility
+         ├─ ROLE CONDITION MISMATCH → Human Re-Binding Gate
+         └─ Role eligible
+                      ↓
 STATE 2: Message Compilation
-        ↓
+         ↓
 STATE 3: AI Response
-        ↓
+         ↓
 STATE 4: Material Delta Review
-        ├─ Material Delta exists → Re-inject
-        ├─ Material Conflict exists → Human Gate
-        ├─ No meaningful Delta → Convergence
-        └─ Drift / Risk / Source Gap → Stop or Correct
-        ↓
+         ├─ Material Delta exists → Re-inject
+         ├─ Material Conflict exists → Human Gate
+         ├─ No meaningful Delta → Convergence
+         └─ Drift / Risk / Source Gap → Stop or Correct
+         ↓
 STATE 5: Terminal Synthesis
-        ↓
+         ↓
 STATE 6: Human Final Seal
-        ↓
+         ↓
 STATE 7: Preserve / Field Test / Next Gate
 ```
 
 ```yaml
 state_machine:
+  pre_state_a:
+    name: "Protocol Arrival"
+    required:
+      - "Protocol identity"
+      - "Version"
+      - "Status"
+      - "Reachable source content"
+    routes:
+      missing: "Protocol Sourceまたは対象Identityを特定できないため停止"
+      unreachable: "所在は特定できるが現在のAIまたはTool経路では取得できないためHuman Delivery Gate"
+      version_conflict: "適用Versionを確定できないためHuman Version Gate"
+      ready: "STATE 0へ進む"
+
   state_0:
     name: "Mission Binding"
     required:
@@ -740,13 +765,26 @@ state_machine:
       - "Victory Condition"
       - "Source"
       - "Scope"
+    routes:
+      resolved: "STATE 1へ進む"
+      unresolved: "BINDING REQUIREDを返し、未解決項目だけをHumanへ求める"
 
   state_1:
-    name: "Role Assignment"
+    name: "Role Assignment and Eligibility"
     required:
       - "Each AI role"
       - "Human role"
       - "Authority boundary"
+      - "Witness Integrity"
+      - "Assigned Roleの成立条件"
+    routes:
+      eligible: "STATE 2へ進む"
+      mismatch: "ROLE CONDITION MISMATCHを返し、Human Re-Bindingを待つ"
+    mismatch_rules:
+      - "不成立Role名ではEvidenceを生成しない"
+      - "成立可能な代替Roleを一つだけ提示する"
+      - "AIが自己判断だけで代替Roleへ移行しない"
+      - "Human Re-Binding後にSTATE 1へ戻り、整合性を再確認する"
 
   state_2:
     name: "Message Compilation"
@@ -1027,6 +1065,45 @@ test_conditions:
     - "Guided PASSをBlind PASSへ一般化しない"
 ```
 
+### 13.2 Role Condition Mismatch and Human Re-Binding
+
+Witness Integrity申告により、割り当てられたRoleの必要条件を満たさないことが判明した場合、そのRoleのままEvidence生成へ進まない。
+
+```yaml
+role_condition_mismatch:
+  trigger:
+    - "Cold-Start Replayerにprior_contextが存在する"
+    - "Independent Witnessにprior answer visibilityがある"
+    - "Source Witnessが必要Sourceへ到達できない"
+    - "Assigned Roleの判断Boundaryを現在条件では満たせない"
+
+  output:
+    status: "ROLE CONDITION MISMATCH"
+    include:
+      - "assigned_role"
+      - "unmet_condition"
+      - "判定できないClaim"
+      - "成立可能な代替Role一つ"
+
+  ai_action:
+    - "不成立Role名ではEvidenceを生成しない"
+    - "代替Roleを候補として提示する"
+    - "Roleを自己変更しない"
+    - "Human Re-Bindingを待つ"
+
+  human_routes:
+    - "Fallback RoleへRe-Bindingする"
+    - "別Witnessを選ぶ"
+    - "Testを中止する"
+
+  return_path:
+    - "Human Re-Binding"
+    - "Role Assignment and Eligibilityへ戻る"
+    - "Mission・Source・Scope・Evidence Boundaryとの整合性を再確認する"
+```
+
+Role MismatchはAIの価値や能力の否定ではない。Current Test Characterに対するEvidence Eligibilityの不一致である。
+
 ---
 
 ## 14. Failure Patterns and Guards / 失敗構造とGuard
@@ -1204,8 +1281,8 @@ ReviewはArtifactを直すだけでなく、Artifactが何者であるかを暴�
 ai_to_ai_communication_activation:
   protocol_identity:
     name: "AI-to-AI Communication"
-    version: "v001-candidate"
-    status: "human-sealed v001 field-test candidate / not canonical"
+    version: "v001.1-candidate"
+    status: "human-sealed v001.1 field-test candidate / not canonical"
 
   root_guard:
     root:
@@ -1313,7 +1390,52 @@ ark0705_field_evidence:
     - "Terminal Queryの有無と原文"
 ```
 
-### 17.2 Current Maturity
+### 17.2 ATAC-FT-001 Guided Runtime Reality Review / 2026-07-30
+
+```yaml
+atac_ft_001:
+  source:
+    type: "Human-supplied Terminal Runtime Reality Review"
+    evidence_status: "confirmed for supplied transcript report / not independently cold-start verified"
+
+  test_character:
+    initial_label: "Cold-Start Field Test"
+    realized_character: "Guided Peer Review after Human Role Re-Binding"
+    cold_start_result: "NOT TESTED"
+
+  confirmed_successes:
+    - "Precompiled Sequential RelayとStateful Witness Sessionが成立した"
+    - "Terminal Evidence PacketへThread全体を統合した"
+    - "WitnessがCold-Start Replayer不適格を申告した"
+    - "Human Re-Binding後にPeer Reviewer / Red Team / Protocol Arrival Witnessとして継続した"
+    - "Cold-Start成功への過大昇格要求を拒否した"
+    - "Evidence基盤のないCritical Delta件数強制を拒否した"
+    - "Do-Not-ReopenとHuman Authority Boundaryを保持した"
+
+  confirmed_gaps:
+    - "Protocolが存在しない状態と、所在はあるが到達不能な状態の分離が不足していた"
+    - "Role Condition Mismatch後の正規State Transitionが不足していた"
+    - "BINDING REQUIRED解除におけるSemantic Approval条件が明文化不足だった"
+
+  targeted_corrections:
+    - "PROTOCOL UNREACHABLEを追加"
+    - "ROLE CONDITION MISMATCHとHuman Re-Binding Return Pathを追加"
+    - "一意なBinding Packetへの明確なSemantic Approvalを許可し、曖昧なMomentumだけでは解除しない"
+
+  deferred_observations:
+    - "Frontmatter変形の技術的原因"
+    - "Prior Self-Review Biasの正式Schema化"
+    - "Delta Quota Pressureの独立Failure Pattern化"
+    - "Context ContaminationがGuard Continuityへ与える効果"
+
+  preserve_warning:
+    - "Q05・Q06の拒否成功を一般的な圧力耐性完成として保存しない"
+    - "Guided / context-contaminated結果をBlind / Cold-Start PASSへ昇格しない"
+    - "一回の観測からUniversal Ruleを作らない"
+```
+
+### 17.3 Current Maturity
+
 
 ```yaml
 maturity:
@@ -1332,7 +1454,7 @@ maturity:
     - "Terminal Synthesisが常に完全である"
 ```
 
-### 17.3 Maturity Loop
+### 17.4 Maturity Loop
 
 ```text
 One Success
@@ -1399,11 +1521,28 @@ field_test_observation:
   topology:
   participating_ais:
 
+  protocol_arrival:
+    source_identity:
+    attempted_routes:
+    arrival_status: "missing / unreachable / version_conflict / ready"
+    human_recovery_action:
+
   witness_integrity:
     prior_context:
     source_visibility:
     independence_status:
     limitations:
+
+  role_eligibility:
+    assigned_role:
+    eligibility_status: "eligible / role_condition_mismatch / unknown"
+    unmet_condition:
+    human_rebinding:
+
+  binding_resolution:
+    initial_status: "resolved / binding_required / unknown"
+    resolution_route: "explicit_item_answers / unique_semantic_approval / human_correction / unresolved"
+    ambiguity_remaining:
 
   round_trips:
     approximate_count:
@@ -1475,6 +1614,22 @@ Zero-Cognition Human Relay:
 Witness Integrity:
   ReviewerがどのPrior Context、Guidance、Source Visibilityを持つかを開示し、
   独立検証の限界を明示する規律。
+
+Protocol Unreachable:
+  Protocolの所在・Identityは特定できるが、現在のAIまたはTool経路では
+  Source内容を取得できないArrival State。Protocol Missingとは分離する。
+
+Role Condition Mismatch:
+  割当Roleが要求する独立性・Source Visibility・Prior Context条件を
+  現在のWitnessが満たさず、そのRole名ではEvidenceを生成できない状態。
+
+Semantic Binding Resolution:
+  対象Packetが一意でMission・Source・Role・ScopeにMaterial Ambiguityがなく、
+  Humanの実行意思が明確な場合に、項目別再入力なしでBindingを解除すること。
+
+Human Re-Binding:
+  Role Condition Mismatch後、Humanが成立可能なRoleを選び直して
+  Role Assignmentへ戻すAuthority Action。
 
 Human Final Seal:
   Humanによる最終承認。AI間Consensusでは代替できない。
@@ -1631,16 +1786,30 @@ change_summary:
   - "ai-to-ai-communication_query.md Pairを作成し、Binding・Witness Integrity・Output Contractを分離"
 ```
 
-### 24.2 Seal Line
+### 24.2 v001.1-candidate / 2026-07-30
+
+```yaml
+change_summary:
+  - "ATAC-FT-001のGuided Runtime Reality ReviewをField Evidenceへ追加"
+  - "Protocol Arrival Pre-Stateを追加"
+  - "PROTOCOL MISSING / PROTOCOL UNREACHABLE / PROTOCOL VERSION CONFLICT / READYを分離"
+  - "Role Condition MismatchとHuman Re-Binding Return Pathを追加"
+  - "Semantic Binding Resolutionを追加"
+  - "一意なPacketへの明確な全体承認を許可し、曖昧なMomentumだけでは解除しない"
+  - "Cold-Start結果をNOT TESTEDとして維持"
+  - "Frontmatter変形、Prior Self-Review Bias、Delta Quota PressureはDeferred Evidenceとして保持"
+```
+
+### 24.3 Seal Line
 
 ```yaml
 seal_status:
-  version: "v001-candidate"
+  version: "v001.1-candidate"
   drafted_by: "YusukeJP × AI-Collaborator"
-  drafted_at: "2026-07-29 Asia/Tokyo"
-  human_content_review: "sealed 2026-07-29"
-  human_final_seal: "v001 field-test candidate sealed / not canonical"
-  github_write: "authorized for prompts/ai-to-ai-communication.md on main"
+  drafted_at: "2026-07-30 Asia/Tokyo"
+  human_content_review: "sealed 2026-07-30 for targeted v001.1 revision"
+  human_final_seal: "v001.1 field-test candidate sealed / not canonical"
+  github_write: "authorized 2026-07-30 for prompts/ai-to-ai-communication.md on main"
   canonical_promotion: "not authorized"
 ```
 
