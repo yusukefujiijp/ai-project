@@ -2,12 +2,12 @@
 title: "AI Plan Mode Subsystem"
 canonical_name: "AI Plan Mode"
 version: "v001-candidate"
-date: "2026-08-06"
+date: "2026-08-07"
 filename: "README.md"
 canonical_path: "ai-plan-mode/README.md"
 class: "subsystem_front_door"
 role: "AI Plan Mode subsystem map / semantic ownership / maintenance read order / migration and rollback map"
-status: "review-ready candidate / pending Human content seal / not canonical"
+status: "human-sealed field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
 
 human_facing_entry:
