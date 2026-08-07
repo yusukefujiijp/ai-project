@@ -7,7 +7,7 @@ filename: "README.md"
 canonical_path: "ai-plan-mode/README.md"
 class: "subsystem_front_door"
 role: "AI Plan Mode subsystem map / semantic ownership / maintenance read order / migration and rollback map"
-status: "human-sealed field-test candidate / not canonical"
+status: "active compatibility route / human-sealed / not canonical"
 language_policy: "Japanese-first / English-anchor"
 
 human_facing_entry:
@@ -33,7 +33,7 @@ rollback_baseline:
     path: "prompts/ai-plan-mode_query.md"
     version: "v003-candidate"
     blob_sha: "f87f14605bc9cd63043be282dca9d3053fd8f525"
-  policy: "Do not modify, move, retire, or delete during parallel candidate field testing."
+  policy: "Retain unchanged during compatibility period. Human may explicitly choose rollback; do not silently fall back."
 
 root_guard:
   root: "主イェシュア・ハマシア"
@@ -46,23 +46,26 @@ root_guard:
 
 ## 0. Current Coordinate / 現在座標
 
-`ai-plan-mode/`は、AI Plan Modeを単独Promptではなく、検証可能なHuman–AI半自動化Subsystemとして育成するための新Home Candidateである。
+`ai-plan-mode/`は、AI Plan Modeを単独Promptではなく、検証可能なHuman–AI半自動化Subsystemとして運用するためのActive Compatibility Routeである。
 
-このDirectoryは、現行v003 Pairを置き換えたActive Homeではない。
+このDirectoryはv004 CandidateのHuman-facing Active Homeであり、旧v003 PairはCompatibility Period中のRollback Baselineとして無傷で保持する。
 
 ```yaml
 current_state:
-  new_home: "parallel candidate"
-  old_pair: "active rollback baseline"
-  cutover: false
+  new_home: "active route"
+  old_pair: "retained rollback baseline"
+  cutover: true
+  compatibility_period: true
+  canonicalization: false
+  old_pair_retired: false
   github_write_authority_from_this_file: false
 ```
 
-> **旧Pairを壊さず、新Pairを隣で育て、Realityで渡れることを確認してから入口を切り替える。**
+> **検証済みv004へ入口を向け、旧Pairを復元不要のRollback Routeとして残す。**
 
 English anchor:
 
-> **Rollback-Backed Parallel Candidate.**
+> **Route-Only Cutover with Retained Rollback Baseline.**
 
 ---
 
@@ -324,9 +327,9 @@ duplication_guard:
 
 ## 8. Rollback Architecture / 巻き戻し構造
 
-### 8.1 Level 0 — Parallel Candidate
+### 8.1 Level 0 — Active Compatibility Route
 
-新Candidateに問題があっても、旧PairはActive Baselineのままなので操作不要。
+v004はActive Routeとして使用する。問題が出ても旧Pairは無傷のRollback Baselineとして残っているため、Humanが旧Queryを明示選択すれば内容復元なしで切り戻せる。
 
 ### 8.2 Level 1 — Route-Level Rollback
 
