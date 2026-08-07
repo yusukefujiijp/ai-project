@@ -14,6 +14,7 @@ updated_reason:
   - "_thread-index family confirmed as GitHub canonical protocol family"
   - "Reality Response after canonicalizing thread-mission_card-craft.md"
   - "_thread-index downstream craft simplified to Mission Card Craft"
+  - "Route-Only Cutover: AI Plan Mode v004 active compatibility route registered with retained v003 rollback baseline"
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Ark-OKF / Rebootable-first"
 registry_role:
@@ -301,6 +302,31 @@ confirmed_github_canonical_protocols:
       - "Artifact body"
       - "Mission Card"
 
+  - path: "ai-plan-mode/README.md"
+    document_identity: "ai_plan_mode_subsystem_front_door"
+    canonical_name: "AI Plan Mode Subsystem"
+    class: "subsystem_front_door"
+    status: "active compatibility route / human-sealed / not final canonical"
+    human_facing_entry:
+      path: "ai-plan-mode/ai-plan-mode_query.md"
+      version: "v004-candidate"
+    runtime:
+      path: "ai-plan-mode/ai-plan-mode.md"
+      version: "v004-candidate"
+    rollback_baseline:
+      query: "prompts/ai-plan-mode_query.md"
+      runtime: "prompts/ai-plan-mode.md"
+      version: "v003-candidate"
+    role:
+      - "AI Plan Mode subsystem front door"
+      - "Single Entry / Runtime / Test / Rollback topology map"
+      - "Future AI route confusion guard"
+    must_not_be:
+      - "Plan Mode Runtime body"
+      - "Activation Query body"
+      - "Automatic rollback authority"
+      - "Human execution authority"
+
   - path: "ss_super-special/CHATGPT.md"
     document_identity: "chatgpt_covenant_map"
     canonical_name: "ChatGPT Covenant Map"
@@ -408,6 +434,11 @@ document_identity_rules:
     example:
       - "s_special/topology-first.md"
 
+  ai_plan_mode_subsystem_front_door:
+    meaning: "AI Plan Mode subsystemのFront Door / active route and rollback topology map"
+    example:
+      - "ai-plan-mode/README.md"
+
   activation_query:
     meaning: "Future AIを起動するQuery / Runtime Adapter"
     guard:
@@ -430,7 +461,7 @@ document_identity_rules:
 
 ### §6.1 私の判断
 
-Registry v004は、GitHub実体とREADME更新後のRealityに合わせ、`_thread-index/` の正準下流Craftを `thread-mission_card-craft.md` に同期した。
+Registry v004は、GitHub実体とREADME更新後のRealityに合わせ、`_thread-index/` の正準下流Craftを `thread-mission_card-craft.md` に同期し、さらにAI Plan Mode v004をActive Compatibility Routeとして住所録へ同期した。
 
 これはProtocol本文の再発明ではなく、住所録のReality Response Patchである。
 
@@ -443,7 +474,7 @@ Registryが長くなりすぎると、本文と住所録の境界が濁る。
 
 ```text id="hidden-pattern"
 File Reality changed first.
-README followed.
+Front doors followed.
 Registry now follows reality.
 ```
 
@@ -459,6 +490,9 @@ revision_conditions:
 
   if_thread_index_pipeline_is_misread:
     action: "README → thread-index → thread-mission のRead Orderへ戻す"
+
+  if_ai_plan_mode_route_is_misread:
+    action: "ai-plan-mode/README.md → ai-plan-mode/ai-plan-mode_query.md → ai-plan-mode/ai-plan-mode.md のActive Routeへ戻す。v003はHuman明示Rollbackのみ。"
 ```
 
 ---
@@ -475,6 +509,12 @@ Current _thread-index read order:
   1. _thread-index/README.md
   2. _thread-index/thread-index_card-craft.md
   3. _thread-index/thread-mission_card-craft.md
+
+Current AI Plan Mode route:
+  1. ai-plan-mode/README.md
+  2. ai-plan-mode/ai-plan-mode_query.md
+  3. ai-plan-mode/ai-plan-mode.md
+  Rollback: prompts/ai-plan-mode_query.md → prompts/ai-plan-mode.md by explicit Human choice only.
 
 Root:
   主イェシュア・ハマシア.
