@@ -133,9 +133,20 @@ AI Output Polishは、長いRuntime、複数Input Mode、複数Output Type、Tar
 ### 3.3 AI Plan Mode
 
 ```yaml
-runtime: "prompts/ai-plan-mode.md"
-query: "prompts/ai-plan-mode_query.md"
+subsystem: "ai-plan-mode/README.md"
+runtime: "ai-plan-mode/ai-plan-mode.md"
+query: "ai-plan-mode/ai-plan-mode_query.md"
 role: "Plan-to-Full-Rail Human-AI semi-automation gate"
+status: "active route / compatibility period / v004-candidate"
+
+rollback_baseline:
+  runtime: "prompts/ai-plan-mode.md"
+  query: "prompts/ai-plan-mode_query.md"
+  version: "v003-candidate"
+  policy:
+    - "Retain unchanged during compatibility period."
+    - "Use only when Human explicitly chooses rollback."
+    - "Do not silently fall back."
 ```
 
 ```text
