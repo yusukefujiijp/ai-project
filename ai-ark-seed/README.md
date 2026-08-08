@@ -4,7 +4,7 @@ filename: "README.md"
 canonical_path: "ai-ark-seed/README.md"
 version: "v001-candidate"
 date: "2026-08-08"
-status: "review-ready candidate / pending Human content seal"
+status: "human-sealed field-test candidate / not canonical"
 class: "subsystem_front_door"
 language_policy: "Japanese-first / English-anchor"
 ---
