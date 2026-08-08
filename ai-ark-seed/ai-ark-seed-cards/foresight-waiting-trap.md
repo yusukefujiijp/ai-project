@@ -5,7 +5,7 @@ canonical_path: "ai-ark-seed/ai-ark-seed-cards/foresight-waiting-trap.md"
 version: "v001-candidate"
 date: "2026-08-08"
 class: "ark_project_seed_card"
-status: "seed-card-candidate / pending Human Seal"
+status: "human-sealed seed-card candidate / persisted / not canonical"
 working_name: "Foresight Waiting Trap"
 final_naming: false
 canonical: false
@@ -29,7 +29,7 @@ origin:
 ### Status
 
 ```yaml
-status: "Seed Card Candidate"
+status: "Human-sealed Seed Card Candidate / Persisted"
 maturity: "architecture-grounded / live field test not started"
 canonical: false
 final_naming: false
@@ -297,7 +297,7 @@ do_not:
 
 ```yaml
 cardification:
-  verdict: "CARDIFY candidate"
+  verdict: "CARDIFY"
   reason:
     - "Reusable Named Method Candidate"
     - "Clear Origin Context"
@@ -306,8 +306,9 @@ cardification:
     - "High restart value"
 
 persistence:
-  status: "not persisted by this draft"
-  requires: "Human Seal"
+  status: "persisted"
+  human_seal: true
+  repository_path: "ai-ark-seed/ai-ark-seed-cards/foresight-waiting-trap.md"
 ```
 
 document_end:
