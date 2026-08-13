@@ -151,7 +151,7 @@ field_registry:
 
   field_02_holiday_morning_pattern_b:
     title: "Holiday Morning Pattern B — Help Me to Workout First"
-    status: "design_ready / not_armed"
+    status: "active / armed_and_waiting"
     inherited_route_evidence: "Field-Proven Core from prior Fog-to-Workout / Pattern B work"
     ark11_interface_evidence: "E0 / Help Me interface not live-tested"
     trigger_family:
@@ -162,7 +162,7 @@ field_registry:
     interaction: "Launch Macro default / Micro-Coach fallback"
 ```
 
-Field 2は設計準備済みだが、Humanが別途Armedへ移すまでLive Field Testを開始しない。Field 2の追加はField 1を置換せず、Field 1の`armed_and_waiting`を解除しない。
+Field 2は2026-08-13のHuman Sealにより`armed_and_waiting`へ移行した。Field 2はField 1を置換せず、Field 1の`armed_and_waiting`も解除しない。両Fieldとも自然発生Eventを人工的に誘発しない。
 
 ---
 
@@ -193,7 +193,7 @@ AI：「先に洗浄液を使用。報告は後で可。」
 
 ---
 
-## 8. Field 2 Candidate: Holiday Morning Pattern B
+## 8. Field 2 Active Runtime: Holiday Morning Pattern B
 
 ### 8.1 Trigger Event
 
@@ -558,17 +558,17 @@ current_coordinate:
     live_test: "not_started"
 
   field_02:
-    status: "design_ready / not_armed"
+    status: "active / armed_and_waiting"
     inherited_route: "Workout First / Field-Proven Core"
     ark11_interface: "E0"
 
   next_gate:
-    - "Field 1をactive / armed_and_waitingで保持"
-    - "Field 2をArmedへ移すか別途Human Decision"
-    - "Field 2 Armed後のみ自然発生Eventを待つ"
+    - "Field 1とField 2をactive / armed_and_waitingで保持"
+    - "自然発生する休日午前B Eventを待つ"
+    - "Help Me Signal受信時のみWorkout First Routeを発火"
 ```
 
-> **Ark11の現在地は、Field 1をArmed and Waitingのまま保持しつつ、Field 2のHelp Me SignalからWorkout Firstへ至る設計をGitHubへ配置し、Field 2 Armed TransitionのHuman Decisionを待つ地点である。**
+> **Ark11の現在地は、Field 1とField 2をともにArmed and Waitingで保持し、次に自然発生する休日午前B状態のHelp Me SignalからWorkout Firstへ至る最初のLive Eventを待つ地点である。**
 
 document_end:
   filename: "ark11.md"

@@ -52,7 +52,7 @@ field_registry:
     prepared_move: "口腔内洗浄液。可能なら歯磨き"
 
   field_02_holiday_morning_pattern_b:
-    status: "design_ready / not_armed"
+    status: "active / armed_and_waiting"
     inherited_route_evidence: "Field-Proven Core"
     ark11_interface_evidence: "E0"
     activation_family:
@@ -62,7 +62,7 @@ field_registry:
     prepared_route: "Workout First"
 ```
 
-Field 2を、Humanの明確なStatus変更なしに`armed`または`live_test_started`と自己認証しない。
+Field 2は2026-08-13のHuman Sealにより`armed_and_waiting`へ移行した。これは`live_test_started`または成功を意味しない。自然発生EventとHelp Me Signalを待つ。
 
 ---
 
@@ -118,9 +118,9 @@ Live Event中のAIの成功は、会話を長く続けることではない。Hu
 
 ---
 
-## 6. Field 2 Runtime Candidate: Holiday Morning Pattern B
+## 6. Field 2 Active Runtime: Holiday Morning Pattern B
 
-このSectionは`design_ready / not_armed`である。HumanがField 2をArmedへ変更した後に、以下のLive ContractをField Testする。
+このSectionは`active / armed_and_waiting`である。自然発生する休日午前B EventでHelp Me Signalを受信した場合に限り、以下のLive ContractをField Testする。
 
 ### 6.1 Semantic Trigger Recognition
 
@@ -335,10 +335,10 @@ Content SealとGitHub Write Authorityを分離する。Repository、Ref、Target
 runtime_status:
   project: "Ark11"
   field_01: "active / armed_and_waiting / E0"
-  field_02: "design_ready / not_armed / interface E0"
+  field_02: "active / armed_and_waiting / interface E0"
   router: "not required"
   query_file: "not required"
-  current_gate: "Field 2 Armed Transition Human Decision"
+  current_gate: "Field 2 First Natural Live Event"
   github_write: "completed / fetch-back verified"
 ```
 

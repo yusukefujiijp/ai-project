@@ -59,9 +59,9 @@ ark-project/ark11/
 | Field | Status | Trigger | Prepared Action / Route | Evidence |
 |---|---|---|---|---|
 | Field 1: Pre-Sleep Oral Care | `active / armed_and_waiting` | `開始` | 洗浄液、可能なら歯磨き | Ark11 `E0` |
-| Field 2: Holiday Morning Pattern B | `design_ready / not_armed` | `Help me!` family | Workout First | Inherited Route: Field-Proven Core / Ark11 Interface: `E0` |
+| Field 2: Holiday Morning Pattern B | `active / armed_and_waiting` | `Help me!` family | Workout First | Inherited Route: Field-Proven Core / Ark11 Interface: `E0` |
 
-Field 2はField 1を置換しない。Humanが別途Statusを変更するまで、Field 2のLive Field Testを開始しない。
+Field 2は2026-08-13のHuman Sealにより`armed_and_waiting`へ移行した。Field 1を置換せず、両Fieldとも自然発生Eventを人工的に誘発せずに待つ。
 
 ---
 
@@ -96,7 +96,7 @@ Eventを人工的に誘発しない。詳細分析より睡眠を保護する。
 
 ---
 
-## 7. Field 2 — Design Ready / Not Armed
+## 7. Field 2 — Active / Armed and Waiting
 
 ### 7.1 Human Signal
 
@@ -146,15 +146,15 @@ done:
   - "A/B Model復元"
   - "Help Me Signal / Workout First Architectureを三FileへCompile"
   - "GitHub Write / Fetch-back Reality Review PASS"
+  - "Human SealによるField 2 Armed Transition"
 
 now:
   field_01: "active / armed_and_waiting"
-  field_02: "design_ready / not_armed"
-  gate: "Field 2 Armed Transition Human Decision"
+  field_02: "active / armed_and_waiting"
+  gate: "Field 2 First Natural Live Event"
 
 not_yet:
   - "Field 1 First Natural Live Event"
-  - "Field 2 Armed transition"
   - "Field 2 Help Me Interface Live Test"
   - "Canonicalization"
 ```
@@ -163,11 +163,11 @@ not_yet:
 
 ## 9. Next Gate
 
-1. Field 1は`active / armed_and_waiting`のまま保持する
-2. Field 2を`design_ready / not_armed`から`armed_and_waiting`へ移すかHumanが別途判断する
-3. Field 2をArmedへ移した場合のみ、自然発生する休日午前B Eventを待つ
+1. Field 1とField 2を`active / armed_and_waiting`のまま保持する
+2. 自然発生する休日午前B Eventを待つ
+3. Help Me Signal受信時だけWorkout First Routeを発火し、実行後にRealityを捕捉する
 
-> **Ark11の現在地は、Field 1をArmed and Waitingで保持しながら、休日午前Bの`Help me!`からWorkout Firstへ接続するField 2を設計準備済み・未起動としてGitHubへ配置し、Armed TransitionのHuman Decisionを待つ地点である。**
+> **Ark11の現在地は、Field 1とField 2をともにArmed and Waitingで保持し、次に自然発生する休日午前B状態の`Help me!`からWorkout Firstへ接続する最初のLive Eventを待つ地点である。**
 
 document_end:
   filename: "README.md"
