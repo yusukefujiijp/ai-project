@@ -3,8 +3,8 @@ title: "Ark11: Foresight Waiting Trap"
 filename: "README.md"
 canonical_path: "ark-project/ark11/README.md"
 project: "Ark11"
-version: "v001-draft"
-status: "human-review draft / not GitHub-written / not canonical"
+version: "v001-candidate"
+status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 ---
 
@@ -144,18 +144,18 @@ done:
   - "Ark11独立Project化"
   - "Field 1設計"
   - "A/B Model復元"
-  - "Help Me Signal / Workout First Architecture Draft"
+  - "Help Me Signal / Workout First Architectureを三FileへCompile"
+  - "GitHub Write / Fetch-back Reality Review PASS"
 
 now:
   field_01: "active / armed_and_waiting"
   field_02: "design_ready / not_armed"
-  review: "Human Content Review"
+  gate: "Field 2 Armed Transition Human Decision"
 
 not_yet:
   - "Field 1 First Natural Live Event"
   - "Field 2 Armed transition"
   - "Field 2 Help Me Interface Live Test"
-  - "GitHub Write / Commit"
   - "Canonicalization"
 ```
 
@@ -163,15 +163,15 @@ not_yet:
 
 ## 9. Next Gate
 
-1. 三File DraftをHuman Content Reviewする
-2. Field 2をArmedへ移すかHumanが別途判断する
-3. Content Seal後も、GitHub WriteはFresh Authorityを得てから行う
+1. Field 1は`active / armed_and_waiting`のまま保持する
+2. Field 2を`design_ready / not_armed`から`armed_and_waiting`へ移すかHumanが別途判断する
+3. Field 2をArmedへ移した場合のみ、自然発生する休日午前B Eventを待つ
 
-> **Ark11の現在地は、Field 1をArmed and Waitingで保持しながら、休日午前Bの`Help me!`からWorkout Firstへ接続するField 2を設計準備済み・未起動としてHuman Reviewへ渡す地点である。**
+> **Ark11の現在地は、Field 1をArmed and Waitingで保持しながら、休日午前Bの`Help me!`からWorkout Firstへ接続するField 2を設計準備済み・未起動としてGitHubへ配置し、Armed TransitionのHuman Decisionを待つ地点である。**
 
 document_end:
   filename: "README.md"
-  version: "v001-draft"
-  eof_sentinel: "EOF::ARK11_README::v001-draft"
+  version: "v001-candidate"
+  eof_sentinel: "EOF::ARK11_README::v001-candidate"
 
-EOF::ARK11_README::v001-draft
+EOF::ARK11_README::v001-candidate

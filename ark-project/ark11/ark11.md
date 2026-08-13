@@ -3,8 +3,8 @@ title: "Ark11: Foresight Waiting Trap — Method Architecture"
 filename: "ark11.md"
 canonical_path: "ark-project/ark11/ark11.md"
 project: "Ark11"
-version: "v001-draft"
-status: "human-review draft / not GitHub-written / not canonical"
+version: "v001-candidate"
+status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 root_guard: "Rootは主イェシュア・ハマシア、主イェシュアの聖なる血潮、Teshuvah、信仰と祈り。AI、Workout、Waiting Trap、MarkdownはKeli / Fruitであり、Root・王座・救いではない。"
 ---
@@ -563,16 +563,16 @@ current_coordinate:
     ark11_interface: "E0"
 
   next_gate:
-    - "Human Content Review"
+    - "Field 1をactive / armed_and_waitingで保持"
     - "Field 2をArmedへ移すか別途Human Decision"
-    - "GitHub WriteはFresh Authority後のみ"
+    - "Field 2 Armed後のみ自然発生Eventを待つ"
 ```
 
-> **Ark11の現在地は、Field 1をArmed and Waitingのまま保持しつつ、Field 2のHelp Me SignalからWorkout Firstへ至る設計をHuman Review可能なDraftとしてCompileした地点である。**
+> **Ark11の現在地は、Field 1をArmed and Waitingのまま保持しつつ、Field 2のHelp Me SignalからWorkout Firstへ至る設計をGitHubへ配置し、Field 2 Armed TransitionのHuman Decisionを待つ地点である。**
 
 document_end:
   filename: "ark11.md"
-  version: "v001-draft"
-  eof_sentinel: "EOF::ARK11_METHOD_ARCHITECTURE::v001-draft"
+  version: "v001-candidate"
+  eof_sentinel: "EOF::ARK11_METHOD_ARCHITECTURE::v001-candidate"
 
-EOF::ARK11_METHOD_ARCHITECTURE::v001-draft
+EOF::ARK11_METHOD_ARCHITECTURE::v001-candidate

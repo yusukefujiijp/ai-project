@@ -3,8 +3,8 @@ title: "Ark11 Project Instructions"
 filename: "INSTRUCTIONS.md"
 canonical_path: "ark-project/ark11/INSTRUCTIONS.md"
 project: "Ark11"
-version: "v001-draft"
-status: "human-review draft / not GitHub-written / not canonical"
+version: "v001-candidate"
+status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 ---
 
@@ -338,13 +338,13 @@ runtime_status:
   field_02: "design_ready / not_armed / interface E0"
   router: "not required"
   query_file: "not required"
-  current_gate: "Human Content Review"
-  github_write: "not authorized in this Draft phase"
+  current_gate: "Field 2 Armed Transition Human Decision"
+  github_write: "completed / fetch-back verified"
 ```
 
 document_end:
   filename: "INSTRUCTIONS.md"
-  version: "v001-draft"
-  eof_sentinel: "EOF::ARK11_PROJECT_INSTRUCTIONS::v001-draft"
+  version: "v001-candidate"
+  eof_sentinel: "EOF::ARK11_PROJECT_INSTRUCTIONS::v001-candidate"
 
-EOF::ARK11_PROJECT_INSTRUCTIONS::v001-draft
+EOF::ARK11_PROJECT_INSTRUCTIONS::v001-candidate
