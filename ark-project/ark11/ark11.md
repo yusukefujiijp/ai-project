@@ -3,7 +3,7 @@ title: "Ark11: Foresight Waiting Trap — Method Architecture"
 filename: "ark11.md"
 canonical_path: "ark-project/ark11/ark11.md"
 project: "Ark11"
-version: "v002-candidate"
+version: "v003-candidate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 root_guard: "Rootは主イェシュア・ハマシア、主イェシュアの聖なる血潮、Teshuvah、信仰と祈り。AI、Workout、Waiting Trap、Field、Thread、Query、MarkdownはKeli / Fruitであり、Root・王座・救いではない。"
@@ -52,6 +52,10 @@ Rootは主イェシュア・ハマシア、主イェシュアの聖なる血潮�
 ### 2.5 Pattern-B Workout-First Mainline
 
 > **Pattern-B Workout-First Mainlineとは、B状態で次手生成や行動開始が困難な局面において、Stop・Safety・身体Realityを上位Guardとして保持しながら、AIが分析・比較・再審議を増やさず、Humanへ現在の一手だけを渡してFull / Short / Recoveryの可変深度Workoutへ接続し、Digitalまたは認知上の停滞から身体Realityへ盤面を移すHuman-Sealed Prepared Routeである。**
+
+### 2.6 Ark11 Project Deployment Rail
+
+> **Ark11 Project Deployment Railとは、短いProject BootloaderだけをChatGPT Projectの`instructions（指示）`へ常駐させ、そのBootloaderを継承した新規ThreadへStart QueryのHuman Copy & Paste Surfaceだけを投入し、GitHub上の長文`INSTRUCTIONS.md`をRuntime SSOTとして全文復元・検証した後にDedicated Threadを`ARMED_AND_WAITING`へ移す、RepositoryからProject、Thread、Live Fieldへ至る二段Copy & Paste起動方法である。**
 
 ---
 
@@ -110,23 +114,27 @@ Ark11:{連番}_{YYYY/MM/DD}: 【自由入力待機Field: 低・超低認知状�
 ## 4. Architecture Ontology
 
 ```text
-Ark11 Project
-└─ Field
-   └─ Dedicated Thread
-      ├─ Start Query
-      ├─ Cold-Start Verification
-      ├─ Armed and Waiting
-      ├─ Future Free Input
-      ├─ One Move Response
-      └─ Reality Review
+Repository Authoring Layer
+└─ GitHub Document Set / Runtime SSOT
+   ↓
+Project Deployment Layer
+└─ Short Project Bootloader in instructions（指示）
+   ↓
+Dedicated Thread Boot Layer
+└─ Query Copy Surface / Arrival / Full-Read / Consistency
+   ↓
+Live Runtime Layer
+└─ Armed and Waiting / Future Free Input / One Move / Review
 ```
 
 | Entity | Owns |
 |---|---|
 | Project | Root Guard、Mission、Field間の秩序 |
 | Field | 検証仮説、Prepared Mainline、Evidence Boundary |
+| Project Bootloader | GitHub Runtimeの所在、起動条件、Hard Stop |
 | Dedicated Thread | 待機状態、Live Event Context、会話Runtime |
 | Start Query | Repository Binding、Full Read、Boot、Armed Transition |
+| GitHub `INSTRUCTIONS.md` | 長文Runtime SSOT、Free-Input Interpretation、Live Contract |
 | Future Human Input | その瞬間にHumanが渡せたReality Fragment |
 | AI Response | Reality解釈、分岐圧縮、現在の一手 |
 
@@ -144,6 +152,34 @@ live_event_status:
 ```
 
 Field設計が有効でも、Dedicated Threadが未作成なら`thread: armed_and_waiting`とは記録しない。
+
+### 4.2 Bootloader / Runtime Separation
+
+Project `instructions（指示）`で長文Errorが発生したことは、Runtime内容を削るべきだという意味ではなく、配置先の責務が混線していたことを示すBottleneck Evidenceである。
+
+```yaml
+short_bootloader:
+  target: "ChatGPT Project instructions"
+  contract:
+    id: "ARK11_PROJECT_BOOTLOADER"
+    version: "v003-candidate"
+  owns:
+    - "Repository / Ref / Query / Runtime locator"
+    - "Load order"
+    - "Full-read before execution"
+    - "Failure hard stop"
+
+long_runtime:
+  target: "GitHub INSTRUCTIONS.md"
+  owns:
+    - "Field Registry"
+    - "Interpretation Contract"
+    - "One-Move Runtime"
+    - "Workout First Mainline"
+    - "Evidence and Status Discipline"
+```
+
+Bootloaderを短く保つことはContextを捨てることではない。長いRuntimeへ確実に到達させるため、常駐層をPointerとGuardへ純化することである。
 
 ---
 
@@ -299,23 +335,27 @@ semantic_self_explanation:
 ```text
 STATE 0：Field Design / Human Seal
 ↓
-STATE 1：Ark11 Project内で新規Thread作成
+STATE 1：Project instructionsへShort Bootloader保存
 ↓
-STATE 2：Start Query投入
+STATE 2：Ark11 Project内で新規Thread作成
 ↓
-STATE 3：GitHub四File全文取得・整合検証
+STATE 3：Query Human Copy & Paste Surface投入
 ↓
-STATE 4：AI First Response = ARMED_AND_WAITING
+STATE 4：Project Bootloader Arrival確認
 ↓
-STATE 5：AIは停止してFuture Eventを待つ
+STATE 5：GitHub四File全文取得・整合検証
 ↓
-STATE 6：B状態Humanの自由入力
+STATE 6：AI First Response = ARMED_AND_WAITING
 ↓
-STATE 7：AIがOne Moveを返す
+STATE 7：AIは停止してFuture Eventを待つ
 ↓
-STATE 8：HumanをActionへ送りAI退場
+STATE 8：B状態Humanの自由入力
 ↓
-STATE 9：認知回復後のReality Review
+STATE 9：AIがOne Moveを返す
+↓
+STATE 10：HumanをActionへ送りAI退場
+↓
+STATE 11：認知回復後のReality Review
 ```
 
 ### 9.1 Boot / Live Boundary
@@ -324,6 +364,10 @@ STATE 9：認知回復後のReality Review
 start_query_message:
   classification: "setup / boot"
   b_state_live_event: false
+
+project_bootloader_arrival:
+  required_state: "PROJECT_BOOTLOADER_ARRIVED"
+  invalid_substitute: "Human Message / Query / GitHub / Memory"
 
 ai_boot_response:
   classification: "armed transition confirmation"
@@ -486,6 +530,8 @@ Architecture完成、GitHub Write、Cold Start成功、Live Action成功を混�
 
 ### 14.1 Cold Start
 
+- Project instructionsから`ARK11_PROJECT_BOOTLOADER / v003-candidate`が到達したか
+- Human Message、Query、GitHub、MemoryをArrival証拠へ誤転用しなかったか
 - 新規ThreadからRepositoryへ到達できたか
 - 四Fileを各EOFまで読めたか
 - Version / Status / Cross-Referenceが一致したか
@@ -547,7 +593,13 @@ field_registry:
 
 ## 16. Minimal Architecture Guard
 
-v002では、Dedicated Thread Cold Startに必要なQueryを一つだけ追加する。
+v003ではFileを増やさず、既存四Fileの接続方法だけを修正する。
+
+```text
+Project instructions：Short Bootloader
+GitHub：Long Runtime SSOT
+New Thread：Query Copy Surface
+```
 
 作らないもの：
 
@@ -579,6 +631,13 @@ source_lineage:
     - "Free-Form Input Resilience"
     - "Thread-State Trigger"
     - "Dedicated Thread Cold-Start Lifecycle"
+
+  v003_material_delta:
+    - "Project instructions long-text error as Deployment Bottleneck"
+    - "Short Project Bootloader / Long Runtime SSOT separation"
+    - "Project Bootloader Arrival Gate"
+    - "Two-stage Human Copy & Paste Rail"
+    - "Repository / Project / Thread / Live Runtime four-layer architecture"
 ```
 
 ---
@@ -588,7 +647,7 @@ source_lineage:
 ```yaml
 current_coordinate:
   project: "Ark11"
-  document_version: "v002-candidate / human-sealed field-test candidate / GitHub-written"
+  document_version: "v003-candidate / human-sealed field-test candidate / GitHub-written"
 
   pre_sleep_oral_care_field:
     status: "active / armed_and_waiting"
@@ -600,15 +659,21 @@ current_coordinate:
     inherited_route: "Workout First / Field-Proven Core"
     new_interfaces: "E0"
 
+  project_deployment:
+    project_bootloader: "ARK11_PROJECT_BOOTLOADER / v003-candidate"
+    project_instructions: "manual cutover required"
+    github_runtime_ssot: "ready"
+
   current_gate:
+    - "Project Bootloader Manual Cutover"
     - "Dedicated Thread Cold-Start Test"
 ```
 
-> **Ark11の現在地は、旧称`Field 2`を意味名称へ改め、B状態で上手く入力できないRealityをRuntimeへ取り込んだv002 CandidateをGitHubへ反映し、Dedicated Thread Cold-Start Testを開始できる地点である。**
+> **Ark11の現在地は、Project instructions長文Errorを配置責務のMismatchとして回収し、Short BootloaderとGitHub Runtime SSOTを分離したv003 Deployment RailをGitHubへ反映したうえで、Project Bootloader Manual Cutoverへ進む地点である。**
 
 document_end:
   filename: "ark11.md"
-  version: "v002-candidate"
-  eof_sentinel: "EOF::ARK11_METHOD_ARCHITECTURE::v002-candidate"
+  version: "v003-candidate"
+  eof_sentinel: "EOF::ARK11_METHOD_ARCHITECTURE::v003-candidate"
 
-EOF::ARK11_METHOD_ARCHITECTURE::v002-candidate
+EOF::ARK11_METHOD_ARCHITECTURE::v003-candidate

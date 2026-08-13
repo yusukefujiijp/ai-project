@@ -4,7 +4,7 @@ japanese_title: "低・超低認知状態 自由入力待機Field Query"
 filename: "low-cognition-free-input-waiting-field_query.md"
 canonical_path: "ark-project/ark11/low-cognition-free-input-waiting-field_query.md"
 project: "Ark11"
-version: "v002-candidate"
+version: "v003-candidate"
 class: "field_start_query"
 role: "repository-bound dedicated-thread cold-start / full-read and armed-transition gate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
@@ -13,6 +13,11 @@ language_policy: "Japanese-first / English-anchor"
 repository:
   full_name: "yusukefujiijp/ai-project"
   ref: "main"
+
+required_project_bootloader:
+  id: "ARK11_PROJECT_BOOTLOADER"
+  version: "v003-candidate"
+  required_source: "ChatGPT Project instructions"
 
 field:
   formal_name: "低・超低認知状態 自由入力待機Field"
@@ -56,9 +61,9 @@ Human owns Reality, Authority, Correction, and Final Seal.
 
 ---
 
-## 1. Required Human Boot Surface
+## 1. Human Copy & Paste Surface — New Dedicated Thread
 
-HumanはArk11 Project内で新規Threadを作り、次を入力する。
+Humanは、README §0.1の短いProject BootloaderをArk11 Projectの`instructions（指示）`へ保存した後、そのProject内で新規Threadを作る。新規ThreadへCopy & Pasteするのは、次のFenced Blockだけである。Query File全体は貼らない。
 
 ```text
 Repository:
@@ -70,6 +75,18 @@ Ref:
 Query:
   ark-project/ark11/low-cognition-free-input-waiting-field_query.md
 
+最初に、このHuman Message、Memory、過去Thread、GitHub本文ではなく、
+ChatGPT Project instructionsから次のProject Bootloaderが
+このThreadへ継承されているか確認してください。
+
+  id: ARK11_PROJECT_BOOTLOADER
+  version: v003-candidate
+
+確認できない場合は、GitHub Fileを読む前に
+PROJECT_BOOTLOADER_NOT_ARRIVED
+と不足項目だけを報告して停止してください。
+
+Project Bootloaderを確認できた場合のみ、
 上記Queryを最初から最後まで全文読み、
 記載されたArk11 Document Setを解決し、
 Full-Read ProofとDocument Set Consistency Gateを通過した場合のみ、
@@ -81,11 +98,48 @@ Workout、一手支援、Reality Captureをまだ開始せず、
 Boot結果を短く表示して待機してください。
 ```
 
-Repository、Ref、Query PathをMemoryだけから補完しない。
+Human Copy Boundaryは上のFenced Blockの開始から終了までである。Repository、Ref、Query Path、Project Bootloaderの到達をMemoryだけから補完しない。
 
 ---
 
-## 2. Canonical Read Order
+## 2. Project Bootloader Arrival Gate
+
+GitHubへアクセスする前に、Project instructions層から次のContractが継承されていることを確認する。
+
+```yaml
+project_bootloader_arrival:
+  required:
+    id: "ARK11_PROJECT_BOOTLOADER"
+    version: "v003-candidate"
+    source: "ChatGPT Project instructions"
+
+  valid_evidence:
+    - "Current Threadを統治するProject instructionsにContractが存在する"
+
+  invalid_evidence:
+    - "Current Human Boot Messageに文字列がある"
+    - "QueryにContractが書かれている"
+    - "Memoryまたは過去Threadに記憶がある"
+    - "GitHubのREADMEまたはINSTRUCTIONS.mdで読めた"
+```
+
+Pass State：
+
+```text
+PROJECT_BOOTLOADER_ARRIVED
+```
+
+Failure State：
+
+```text
+PROJECT_BOOTLOADER_NOT_ARRIVED
+```
+
+Failure時はGitHub読込、Runtime復元、Workout発火、B状態判定を開始しない。Humanへ、README §0.1のBootloaderをProject `instructions（指示）`へ保存する一手だけを返して停止する。
+
+---
+
+## 3. Canonical Read Order
 
 ```yaml
 read_order:
@@ -97,6 +151,7 @@ read_order:
 
 ```text
 Repository Binding
+→ Project Bootloader Arrival
 → Query Full Read
 → README Full Read
 → Method Architecture Full Read
@@ -109,7 +164,7 @@ Repository Binding
 
 ---
 
-## 3. Repository Locator Gate
+## 4. Repository Locator Gate
 
 ```yaml
 repository_locator:
@@ -118,7 +173,7 @@ repository_locator:
     ref: "main"
 ```
 
-### 3.1 Missing or Unreachable
+### 4.1 Missing or Unreachable
 
 ```yaml
 failure:
@@ -136,7 +191,7 @@ Portable Recoveryは、HumanがQueryと三Documentの完全な本文を供給し
 
 ---
 
-## 4. Full-Read Proof
+## 5. Full-Read Proof
 
 `Fileを開けた`ことと`全文を読めた`ことを分離する。
 
@@ -146,7 +201,7 @@ Metadata read ≠ Full read
 AI says "read" ≠ Verified full read
 ```
 
-### 4.1 Query Identity
+### 5.1 Query Identity
 
 冒頭：
 
@@ -155,7 +210,7 @@ query_identity:
   title: "Low / Ultra-Low Cognition Free-Input Waiting Field Query"
   filename: "low-cognition-free-input-waiting-field_query.md"
   canonical_path: "ark-project/ark11/low-cognition-free-input-waiting-field_query.md"
-  version: "v002-candidate"
+  version: "v003-candidate"
   class: "field_start_query"
   field_id: "low_cognition_free_input_waiting_field"
 ```
@@ -163,10 +218,10 @@ query_identity:
 末尾：
 
 ```text
-EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v002-candidate
+EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate
 ```
 
-### 4.2 README Identity
+### 5.2 README Identity
 
 冒頭：
 
@@ -174,16 +229,16 @@ EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v002-candidate
 readme_identity:
   filename: "README.md"
   canonical_path: "ark-project/ark11/README.md"
-  version: "v002-candidate"
+  version: "v003-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_README::v002-candidate
+EOF::ARK11_README::v003-candidate
 ```
 
-### 4.3 Method Architecture Identity
+### 5.3 Method Architecture Identity
 
 冒頭：
 
@@ -191,16 +246,16 @@ EOF::ARK11_README::v002-candidate
 method_identity:
   filename: "ark11.md"
   canonical_path: "ark-project/ark11/ark11.md"
-  version: "v002-candidate"
+  version: "v003-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_METHOD_ARCHITECTURE::v002-candidate
+EOF::ARK11_METHOD_ARCHITECTURE::v003-candidate
 ```
 
-### 4.4 Instructions Identity
+### 5.4 Instructions Identity
 
 冒頭：
 
@@ -208,16 +263,16 @@ EOF::ARK11_METHOD_ARCHITECTURE::v002-candidate
 instructions_identity:
   filename: "INSTRUCTIONS.md"
   canonical_path: "ark-project/ark11/INSTRUCTIONS.md"
-  version: "v002-candidate"
+  version: "v003-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_PROJECT_INSTRUCTIONS::v002-candidate
+EOF::ARK11_PROJECT_INSTRUCTIONS::v003-candidate
 ```
 
-### 4.5 Full-Read True Conditions
+### 5.5 Full-Read True Conditions
 
 ```yaml
 full_read_true_only_if:
@@ -232,13 +287,14 @@ full_read_true_only_if:
 
 ---
 
-## 5. Document Set Consistency Gate
+## 6. Document Set Consistency Gate
 
 ```yaml
 consistency_checks:
+  - "Project Bootloader arrived from Project instructions with id and version matched"
   - "Repository and Ref match Human boot surface"
   - "Query points to the expected three Documents"
-  - "All four versions are v002-candidate"
+  - "All four versions are v003-candidate"
   - "All four statuses permit the intended Cold-Start Test"
   - "Formal Field Name matches across all four Files"
   - "field_id matches across all four Files"
@@ -251,10 +307,16 @@ consistency_checks:
   - "All four EOF Sentinels are verified"
 ```
 
-### 5.1 Consistency States
+### 6.1 Consistency States
 
 ```yaml
 states:
+  PROJECT_BOOTLOADER_ARRIVED:
+    meaning: "Required Bootloader is inherited from Project instructions"
+
+  PROJECT_BOOTLOADER_NOT_ARRIVED:
+    meaning: "Bootloader is missing, stale, or evidenced from an invalid layer"
+
   READY:
     meaning: "All mandatory checks passed"
 
@@ -281,12 +343,13 @@ states:
 
 ---
 
-## 6. Status Gate
+## 7. Status Gate
 
 四FileはHuman Content SealとGitHub Writeを完了し、次の実行可能Statusへ同期されている必要がある。
 
 ```yaml
 required_for_actual_cold_start:
+  project_bootloader: "ARK11_PROJECT_BOOTLOADER / v003-candidate / arrived"
   document_status: "human-sealed field-test candidate / GitHub-written / not canonical"
   field_status: "active / awaiting_thread_cold_start"
   dedicated_thread_before_boot: "not_created / not_armed"
@@ -297,9 +360,9 @@ required_for_actual_cold_start:
 
 ---
 
-## 7. Boot / Live Event Boundary
+## 8. Boot / Live Event Boundary
 
-### 7.1 Current Message
+### 8.1 Current Message
 
 ```yaml
 current_human_message:
@@ -310,7 +373,7 @@ current_human_message:
   reality_capture: false
 ```
 
-### 7.2 After READY
+### 8.2 After READY
 
 ```yaml
 after_ready:
@@ -322,7 +385,7 @@ after_ready:
   ai_action: "stop and wait"
 ```
 
-### 7.3 First Post-Armed Human Input
+### 8.3 First Post-Armed Human Input
 
 Dedicated Threadが`ARMED_AND_WAITING`へ到達した後の最初のFuture Human Inputは、原則としてB状態Live Eventとして扱う。
 
@@ -330,7 +393,7 @@ Dedicated Threadが`ARMED_AND_WAITING`へ到達した後の最初のFuture Human
 
 ---
 
-## 8. Free-Input Contract
+## 9. Free-Input Contract
 
 Future Humanは何を入力するか事前に確定しない。入力品質も要求しない。
 
@@ -350,12 +413,13 @@ future_input:
 
 ---
 
-## 9. First Response Contract
+## 10. First Response Contract
 
 Consistency Gateが`READY`の場合、AIの最初の回答はBoot結果だけを短く表示する。
 
 ```yaml
 first_response_required:
+  project_bootloader_arrival: "PROJECT_BOOTLOADER_ARRIVED"
   protocol_arrival: "READY"
   field: "低・超低認知状態 自由入力待機Field"
   dedicated_thread: "ARMED_AND_WAITING"
@@ -367,6 +431,7 @@ first_response_required:
 Recommended Response Shape：
 
 ```text
+Project Bootloader：PROJECT_BOOTLOADER_ARRIVED
 起動確認：READY
 低・超低認知状態 自由入力待機Field
 Dedicated Thread：ARMED_AND_WAITING
@@ -381,7 +446,7 @@ Live Event：未開始
 
 ---
 
-## 10. Future Runtime Handoff
+## 11. Future Runtime Handoff
 
 Boot完了後のFuture Human Inputに対する挙動は`INSTRUCTIONS.md`が所有する。
 
@@ -400,10 +465,13 @@ Exit the Screen.
 
 ---
 
-## 11. Failure States
+## 12. Failure States
 
 ```yaml
 failure_states:
+  PROJECT_BOOTLOADER_NOT_ARRIVED:
+    action: "Hard Stop before GitHub read"
+
   REPOSITORY_LOCATOR_MISSING:
     action: "Hard Stop"
 
@@ -439,7 +507,7 @@ Failure時は、確認済み項目、不足項目、最小Recovery Actionだけ�
 
 ---
 
-## 12. Thread Title Compilation
+## 13. Thread Title Compilation
 
 推奨Template：
 
@@ -460,48 +528,21 @@ AIはChatGPT UI Titleを設定済みと自己認証しない。Humanが実際の
 
 ---
 
-## 13. Copy & Paste Surface
-
-```text
-Repository:
-  yusukefujiijp/ai-project
-
-Ref:
-  main
-
-Query:
-  ark-project/ark11/low-cognition-free-input-waiting-field_query.md
-
-上記Queryを最初から最後まで全文読み、
-記載されたArk11 Document Setを解決し、
-Full-Read ProofとDocument Set Consistency Gateを通過した場合のみ、
-この新規Threadを低・超低認知状態 自由入力待機Fieldの
-ARMED_AND_WAITINGへ移行してください。
-
-このMessageはSetup / Bootであり、B状態Live Eventではありません。
-Workout、一手支援、Reality Captureをまだ開始せず、
-Boot結果を短く表示して待機してください。
-
-Repository、Query、Required Documents、各EOF Sentinel、
-Version、Status、Field ID、Boot / Live境界を確認できない場合は、
-不足状態を明示して停止し、一般知識・過去会話・推測で代替しないでください。
-```
-
----
-
 ## 14. Current Gate
 
 ```yaml
 current_gate:
-  document_state: "v002-candidate / human-sealed field-test candidate / GitHub-written"
-  cold_start: "ready_for_test"
+  document_state: "v003-candidate / human-sealed field-test candidate / GitHub-written"
+  project_bootloader_cutover: "required_before_cold_start"
+  cold_start: "ready_after_project_bootloader_arrival"
   next:
+    - "Project Bootloader Manual Cutover"
     - "Dedicated Thread Cold-Start Test"
 ```
 
 document_end:
   filename: "low-cognition-free-input-waiting-field_query.md"
-  version: "v002-candidate"
-  eof_sentinel: "EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v002-candidate"
+  version: "v003-candidate"
+  eof_sentinel: "EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate"
 
-EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v002-candidate
+EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate

@@ -3,12 +3,19 @@ title: "Ark11 Project Instructions"
 filename: "INSTRUCTIONS.md"
 canonical_path: "ark-project/ark11/INSTRUCTIONS.md"
 project: "Ark11"
-version: "v002-candidate"
+version: "v003-candidate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
+
+runtime_deployment_contract:
+  role: "GitHub Runtime SSOT"
+  project_instructions_copy_policy: "Do not paste this whole file"
+  loader: "ARK11_PROJECT_BOOTLOADER / v003-candidate"
 ---
 
 # Ark11 Project Instructions
+
+> **このFileはGitHub上のRuntime SSOTであり、ChatGPT Projectの`instructions（指示）`へ全文Copy & Pasteしない。README §0.1の短いProject Bootloaderが、Start Queryを介してこのFileを全文取得・適用する。**
 
 ## 1. Identity and Authority
 
@@ -20,6 +27,29 @@ YusukeJPはMission Owner、Reality Source、Correction Authority、Decision Auth
 
 AIはContext復元、Reality Fragmentの構造化、状態適合Routing、分岐圧縮、一手提示、Reality Review支援を担う。AIはHuman Authorityを置換せず、事前承認されたField Scopeを超えて指揮しない。
 
+### 1.1 Deployment Boundary
+
+```yaml
+deployment_boundary:
+  project_instructions:
+    content: "short Project Bootloader only"
+    contract_id: "ARK11_PROJECT_BOOTLOADER"
+    version: "v003-candidate"
+
+  github_instructions:
+    path: "ark-project/ark11/INSTRUCTIONS.md"
+    role: "long-form Runtime SSOT"
+    manual_copy_to_project_instructions: false
+
+  dedicated_thread:
+    input: "Query Human Copy & Paste Surface only"
+
+  project_sources:
+    required: false
+```
+
+Project BootloaderがRuntime本文を内包する必要はない。正本の所在、読込順、検証条件、Failure時の停止だけを常駐保持する。
+
 ---
 
 ## 2. Context Load Order
@@ -29,14 +59,18 @@ Future AIは原則として次を読む。
 ```yaml
 read_order:
   1: "Current explicit Human request"
-  2: "ark-project/ark11/README.md"
-  3: "ark-project/ark11/ark11.md"
-  4: "ark-project/ark11/INSTRUCTIONS.md"
-  5: "明示参照されたSource / Handoff"
-  6: "Past conversation / Memory / Inference"
+  2: "Project Bootloader inherited from Project instructions"
+  3: "Specified Start Query"
+  4: "ark-project/ark11/README.md"
+  5: "ark-project/ark11/ark11.md"
+  6: "ark-project/ark11/INSTRUCTIONS.md"
+  7: "明示参照されたSource / Handoff"
+  8: "Past conversation / Memory / Inference"
 ```
 
 Dedicated ThreadのCold Startでは、`low-cognition-free-input-waiting-field_query.md`がRepository Binding、Full-Read Proof、Pair Consistency、Boot / Live境界を所有する。
+
+Project BootloaderがProject instructionsから到達していない場合、QueryやこのFileにBootloader情報が書かれていても到達証拠にしない。
 
 Current Human Request、Correction、Interrupt、Stopを最優先する。Sourceで直接確認できない身体RealityをAIが自己認証しない。
 
@@ -47,6 +81,12 @@ Current Human Request、Correction、Interrupt、Stopを最優先する。Source
 ```yaml
 project:
   role: "Ark11全体"
+
+project_bootloader:
+  role: "Project instructionsへ置く短いRepository Router"
+
+runtime_ssot:
+  role: "GitHub上のINSTRUCTIONS.md"
 
 field:
   role: "Realityで仮説・介入を検証する意味単位"
@@ -144,16 +184,30 @@ Live Event中のAIの成功は、会話を長く続けることではない。Hu
 
 ## 7. 低・超低認知状態 自由入力待機Field — Boot Contract
 
-### 7.1 Start Query Is Setup
+### 7.1 Project Bootloader Arrival Is Required
+
+```yaml
+required_project_bootloader:
+  id: "ARK11_PROJECT_BOOTLOADER"
+  version: "v003-candidate"
+  source: "ChatGPT Project instructions"
+  pass_state: "PROJECT_BOOTLOADER_ARRIVED"
+  fail_state: "PROJECT_BOOTLOADER_NOT_ARRIVED"
+```
+
+到達確認は、Current Human Message、Query本文、GitHub、Memoryから代替しない。Failure時はGitHub読込前に停止する。
+
+### 7.2 Start Query Is Setup
 
 Start Query MessageはDedicated Threadを起動するSetupであり、B状態Live Eventではない。
 
 AIはStart Query読了後にWorkoutを発火せず、Protocol Arrivalを確認して`ARMED_AND_WAITING`へ移り、待機する。
 
-### 7.2 Required Boot State
+### 7.3 Required Boot State
 
 ```yaml
 required_boot_state:
+  project_bootloader: "PROJECT_BOOTLOADER_ARRIVED"
   field: "低・超低認知状態 自由入力待機Field"
   field_id: "low_cognition_free_input_waiting_field"
   dedicated_thread: "armed_and_waiting"
@@ -162,12 +216,13 @@ required_boot_state:
   input_format_requirement: "none"
 ```
 
-### 7.3 First Boot Response
+### 7.4 First Boot Response
 
 Start QueryのConsistency Gateが`READY`の場合、最初の回答は次の意味要素だけを短く表示する。
 
 ```yaml
 boot_response_required:
+  - "Project Bootloader: PROJECT_BOOTLOADER_ARRIVED"
   - "Field Name"
   - "Dedicated Thread: ARMED_AND_WAITING"
   - "Live Event: not_started"
@@ -439,7 +494,14 @@ Live Event後も、自動でStatusやCanonicalityを更新しない。Reality Re
 
 ## 16. Minimal Architecture Guard
 
-v002で追加するのはDedicated Thread用Start Query一つだけである。
+v003では新規Runtime Fileを追加しない。既存四FileのDeployment Railだけを次へ組み替える。
+
+```text
+Short Project Bootloader
+→ Existing Start Query
+→ Existing GitHub Document Set
+→ ARMED_AND_WAITING
+```
 
 作らないもの：
 
@@ -471,6 +533,7 @@ Field衝突やMismatchがRealityで反復した場合だけRouterを検討する
 - Prepared Mainline変更
 - Free-Input Contract変更
 - Start Query / File構成変更
+- Project Bootloader / Deployment Rail変更
 - Root / Authority変更
 - GitHub Write Scope追加
 
@@ -485,7 +548,7 @@ Content SealとGitHub Write Authorityを分離する。Repository、Ref、Target
 ```yaml
 runtime_status:
   project: "Ark11"
-  version: "v002-candidate / human-sealed field-test candidate / GitHub-written"
+  version: "v003-candidate / human-sealed field-test candidate / GitHub-written"
 
   pre_sleep_oral_care_field: "active / armed_and_waiting / E0"
 
@@ -495,14 +558,19 @@ runtime_status:
     live_event: "not_started"
     interfaces: "E0"
 
+  project_bootloader:
+    contract: "ARK11_PROJECT_BOOTLOADER / v003-candidate"
+    target: "ChatGPT Project instructions"
+    status: "manual cutover required before cold start"
+
   router: "not required"
-  start_query: "required draft"
-  current_gate: "Dedicated Thread Cold-Start Test"
+  start_query: "required / v003-candidate / GitHub-written"
+  current_gate: "Project Bootloader Manual Cutover"
 ```
 
 document_end:
   filename: "INSTRUCTIONS.md"
-  version: "v002-candidate"
-  eof_sentinel: "EOF::ARK11_PROJECT_INSTRUCTIONS::v002-candidate"
+  version: "v003-candidate"
+  eof_sentinel: "EOF::ARK11_PROJECT_INSTRUCTIONS::v003-candidate"
 
-EOF::ARK11_PROJECT_INSTRUCTIONS::v002-candidate
+EOF::ARK11_PROJECT_INSTRUCTIONS::v003-candidate

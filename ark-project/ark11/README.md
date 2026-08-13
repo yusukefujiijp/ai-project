@@ -3,12 +3,92 @@ title: "Ark11: Foresight Waiting Trap"
 filename: "README.md"
 canonical_path: "ark-project/ark11/README.md"
 project: "Ark11"
-version: "v002-candidate"
+version: "v003-candidate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 ---
 
 # Ark11: Foresight Waiting Trap
+
+## 0. Human Deployment Rail
+
+Ark11をChatGPT Projectへ導入するHuman操作は二段階である。長文の`INSTRUCTIONS.md`全文をProjectの`instructions（指示）`へ貼らない。
+
+Product Boundaryは、Project instructionsがProject内のChatへ適用され、そのInstructionsを使う新規ChatはProject内から開始するという[OpenAI公式Projects and chats](https://learn.chatgpt.com/docs/projects)の説明に基づく。GitHub取得能力が利用できない場合は、Project SourcesやMemoryで黙って代替せずHard Stopする。
+
+```text
+Copy & Paste 1
+短いProject Bootloader
+→ Ark11 Projectのinstructions（指示）
+
+Copy & Paste 2
+Start Query内のHuman Copy & Paste Surface
+→ Ark11 Project内の新規Dedicated Thread
+```
+
+### 0.1 Project `instructions（指示）` — Human Copy & Paste Surface
+
+次のFenced Blockだけを先頭から末尾までCopyし、Ark11 Projectの`instructions（指示）`へ旧本文を全置換する形でPasteして保存する。
+
+```text
+Ark11 Project Bootloader
+
+project_bootloader_contract:
+  id: "ARK11_PROJECT_BOOTLOADER"
+  version: "v003-candidate"
+
+Repository: yusukefujiijp/ai-project
+Default Ref: main
+Runtime SSOT: ark-project/ark11/INSTRUCTIONS.md
+Default Query: ark-project/ark11/low-cognition-free-input-waiting-field_query.md
+
+GitHub上のArk11文書を正本とする。
+
+このProject内の新規ThreadでHumanがRepository / Ref / Queryを指定した場合、またはArk11 Fieldの起動を求めた場合は、実質的な回答より先に次を実行すること。
+
+1. このProject instructionsから上記ContractがCurrent Threadへ継承されたことを確認し、`PROJECT_BOOTLOADER_ARRIVED`とする。Human Message、Query、GitHub、Memoryを到達証拠にしない。
+2. 指定Queryを先頭からEOFまで取得する。
+3. QueryのRead Orderどおりに必須文書を全文取得する。
+4. INSTRUCTIONS.mdをEOFまで読み、Runtime SSOTとして適用する。
+5. Full-Read Proofと全Consistency Gate通過前にRuntimeを起動しない。
+6. 取得不能、部分読み、EOF・Ref・Version不一致、文書矛盾では、Memoryや過去Threadで補完せず停止する。
+7. Query入力とBoot処理はSetupであり、B状態Live Eventではない。
+8. ARMED_AND_WAITING後の次の自由入力をLive Event候補として扱い、不完全・短文・誤字・説明不足でも受理する。
+9. HumanのStop / Correction / HoldとSafetyを常に優先する。
+
+Project Sourcesは空でもよい。GitHub Runtimeへ到達できない場合は起動しない。
+```
+
+このBlockはBootloaderであり、Runtime本文ではない。Project instructionsがProject内のChatへ適用される境界を利用し、長いRuntimeをGitHubへ残したまま、各新規Threadを正本へRoutingする。
+
+### 0.2 Dedicated Thread — Human Copy & Paste Surface
+
+1. Ark11 Project内で新規Threadを作る。
+2. [`low-cognition-free-input-waiting-field_query.md`](./low-cognition-free-input-waiting-field_query.md)の`Human Copy & Paste Surface`だけを新規ThreadへPasteする。
+3. AIが`PROJECT_BOOTLOADER_ARRIVED`と全Document Gateの`READY`を確認した場合だけ、`ARMED_AND_WAITING`へ進む。
+4. Boot回答後は何も追加せず、Future B状態の自然発生を待つ。
+
+### 0.3 File Placement Map
+
+| GitHub File / Surface | Human Operation | Target |
+|---|---|---|
+| README内Project Bootloader Block | BlockだけCopy & Paste | Project `instructions（指示）` |
+| Query内Human Copy & Paste Surface | BlockだけCopy & Paste | Project内の新規Dedicated Thread |
+| `INSTRUCTIONS.md` | 手動貼付しない | AIがGitHubから全文取得しRuntimeとして適用 |
+| `README.md` / `ark11.md` | 手動貼付しない | QueryのRead OrderでAIが取得 |
+| Project Sources | Upload不要 | 空でよい |
+
+```yaml
+deployment_victory:
+  project_bootloader: "saved in Project instructions"
+  new_thread_boot_surface: "submitted"
+  project_bootloader_arrival: "verified"
+  document_set: "full-read and consistent"
+  dedicated_thread: "ARMED_AND_WAITING"
+  live_event: "not_started"
+```
+
+---
 
 ## 1. Project Identity
 
@@ -59,13 +139,13 @@ Core Principle：
 ```text
 ark-project/ark11/
 ├─ README.md
-│  └─ Front Door / Current Coordinate / Field Registry
+│  └─ Human Deployment Rail / Front Door / Current Coordinate / Field Registry
 ├─ ark11.md
 │  └─ Method Architecture / Field Theory / Evidence
 ├─ INSTRUCTIONS.md
-│  └─ AI Runtime / Free-Input Interpretation / Live Response Contract
+│  └─ GitHub Runtime SSOT / Free-Input Interpretation / Live Response Contract
 └─ low-cognition-free-input-waiting-field_query.md
-   └─ Dedicated Thread Cold Start / Full-Read / Armed Transition
+   └─ Thread Copy Surface / Bootloader Arrival / Full-Read / Armed Transition
 ```
 
 独立Routerは作らない。新設するQueryはFieldを増殖させるRuntimeではなく、既存のArk11 Contextを新規Dedicated Threadへ接続するSingle Entryである。
@@ -193,8 +273,10 @@ Exit the Screen.
 
 ```text
 高認知状態
+→ Project instructionsへShort Bootloaderを保存
 → Ark11 Project内で新規Threadを作る
-→ Start Queryを投入
+→ Query Human Copy & Paste Surfaceを投入
+→ Project Bootloader Arrivalを確認
 → GitHub四Fileを全文取得・検証
 → AI First Response：ARMED_AND_WAITING
 → AIは停止して待つ
@@ -204,7 +286,7 @@ Exit the Screen.
 → 認知回復後のReality Review
 ```
 
-Start Query MessageはSetupであり、B状態Live Eventではない。Dedicated Threadが`ARMED_AND_WAITING`へ到達した後のFuture Human Inputが、原則として最初のLive Eventである。
+Project Bootloader投入はProject Setup、Start Query MessageはThread Setupであり、どちらもB状態Live Eventではない。Dedicated Threadが`ARMED_AND_WAITING`へ到達した後のFuture Human Inputが、原則として最初のLive Eventである。
 
 ---
 
@@ -222,15 +304,20 @@ done:
   - "v001 Gap発見：Thread Lifecycle / Free-Input Resilience"
   - "v002 Human Content Seal"
   - "v002四File GitHub Write / Fetch-back Reality Review"
+  - "v003 Deployment Architecture Human Seal"
+  - "Project instructions長文ErrorのBottleneck検出"
+  - "Bootloader / Runtime SSOT分離"
 
 now:
   pre_sleep_oral_care_field: "active / armed_and_waiting"
   low_cognition_free_input_waiting_field: "active / awaiting_thread_cold_start"
   dedicated_thread: "not_created / not_armed"
   live_event: "not_started"
-  gate: "Dedicated Thread Cold-Start Test"
+  gate: "Project Bootloader Manual Cutover"
 
 not_yet:
+  - "v003 Project BootloaderをProject instructionsへ保存"
+  - "Project Bootloader Arrival確認"
   - "Dedicated Thread Cold-Start Test"
   - "ARMED_AND_WAITING到達"
   - "First Natural Free-Input Live Event"
@@ -241,15 +328,16 @@ not_yet:
 
 ## 10. Next Gate
 
-1. Ark11 Project内の新規ThreadでStart Queryを実行する
-2. `ARMED_AND_WAITING`を確認して停止する
-3. Future B状態を人工的に誘発せず、自由入力を待つ
+1. §0.1の短いBootloaderだけをProject `instructions（指示）`へ保存する
+2. Ark11 Project内の新規ThreadへQueryのHuman Copy & Paste Surfaceだけを投入する
+3. `PROJECT_BOOTLOADER_ARRIVED`、`READY`、`ARMED_AND_WAITING`を確認して停止する
+4. Future B状態を人工的に誘発せず、自由入力を待つ
 
-> **Ark11の現在地は、意味名称を持つFieldとDedicated Thread Runtimeを分離したv002 CandidateをGitHubへ反映し、新規ThreadのCold-Start Testを開始できる地点である。**
+> **Ark11の現在地は、長大なRuntimeをProject instructionsへ貼る方式を廃止し、短いBootloaderからGitHub Runtime SSOTへ接続するv003 Deployment RailをHuman Sealしたうえで、Project Bootloader Manual Cutoverを開始できる地点である。**
 
 document_end:
   filename: "README.md"
-  version: "v002-candidate"
-  eof_sentinel: "EOF::ARK11_README::v002-candidate"
+  version: "v003-candidate"
+  eof_sentinel: "EOF::ARK11_README::v003-candidate"
 
-EOF::ARK11_README::v002-candidate
+EOF::ARK11_README::v003-candidate
