@@ -17,7 +17,7 @@ thread_title_policy_version: "v001-candidate"
 language_policy: "Japanese-first / English-anchor"
 updated: "2026-08-15"
 last_reality_reviewed: "2026-08-15"
-reviewed_scope: "ark-project direct children / old-new Tree SHA / Root document roles / Ark21 title policy"
+reviewed_scope: "ark-project direct children / old-new Tree SHA / Root document roles / Ark21 title policy / first safe locator repair"
 human_final_seal_required: true
 ---
 
@@ -103,8 +103,8 @@ ARK.md
 
 | Ark | Confirmed Role | Current Entry | Repository State |
 |---|---|---|---|
-| Ark00 | Wild Seed Zero-Gate／Pre-Project Entry | [`ark00/README.md`](./ark00/README.md) | Living README copied; old Locator repair required |
-| Ark01 | Thread Index／Mission Cardを含む初期Ark corpus | [`ark01/`](./ark01/) | Migration confirmed; parent README absent |
+| Ark00 | Wild Seed Zero-Gate／Pre-Project Entry | [`ark00/README.md`](./ark00/README.md) | Current Canonical Path aligned; legacy format-source review remains |
+| Ark01 | Thread Index／Mission Cardを含む初期Ark corpus | [`ark01/`](./ark01/) | Current Shelf Paths aligned; old Migration Manifest reclassified; parent README absent |
 | Ark02 | Handoff／Harvest／Phase Handoff corpus | [`ark02/handoff.md`](./ark02/handoff.md) | Migration confirmed; current authority review required |
 | Ark05 | Markdown Layer Core／Article Production Rail | [`ark05/Ark05_00_markdown-layer-core_human-editable_v001.md`](./ark05/Ark05_00_markdown-layer-core_human-editable_v001.md) | Migration confirmed; README empty |
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/ark07-instruction.md`](./ark07/ark07-instruction.md) | Project Instructions present; README empty |
@@ -277,16 +277,17 @@ Ark Project、AI、GitHub、効率、成果、Title PolicyはRootでも王座で
 Old _projects/ark/ identified as predecessor generation
 └─ ark00 / ark01 / ark02 / ark05 / ark07 copied with matching Tree SHA
    └─ ark-project/ established as current Domain address
-      ├─ Domain README reconstruction  ← CURRENT
-      ├─ Root README / ARK.md Router propagation
-      ├─ Child old Locator repair
+      ├─ Domain README reconstruction  PASS
+      ├─ Root README / ARK.md Router propagation  PASS
+      ├─ Safe Locator repair  PASS: Ark00 / Ark01 shelves / Ark11 lineage
+      ├─ Mixed historical-current review  DEFERRED: Ark02
       ├─ predecessor-only dialogue/ and indexes/ classification
       └─ verified local backup
          └─ Human retirement of _projects/ark/
             └─ Post-retirement Reality Review
 ```
 
-Known next repairsは、Root Router二箇所、Ark00等の旧Locator、Ark01・02・05・07の親README、旧`dialogue/`と`indexes/`の分類である。Historical Referenceを機械的に全置換せず、Active Errorとの区別を先に行う。
+Known next repairsは、Ark02内で混在するHistorical WorkflowとCurrent Locatorの分離、Ark01・02・05・07の親README、Ark00の未解決Format Source、旧`dialogue/`と`indexes/`の分類である。Historical Referenceを機械的に全置換せず、Active Errorとの区別を先に行う。
 
 このSectionは恒久Identityではない。移行完了後、必要な系譜だけを残して軽量化する。
 
