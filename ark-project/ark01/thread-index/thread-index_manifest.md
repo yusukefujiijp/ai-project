@@ -2,7 +2,7 @@
 
 ## Identity
 
-`_projects/ark/ark01/thread-index/` is the Ark01 phase-local Thread Index artifact shelf.
+`ark-project/ark01/thread-index/` is the Ark01 phase-local Thread Index artifact shelf.
 
 This manifest records the current uploaded filenames and optional future short filename candidates.
 
