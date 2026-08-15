@@ -38,7 +38,7 @@ This folder contains Ark01 Mission Cards.
 
 ```yaml id="ihc7ks"
 folder_role:
-  path: "_projects/ark/ark01/mission-card/"
+  path: "ark-project/ark01/mission-card/"
   role:
     - "Ark01 Mission Card shelf"
     - "Future AI reboot index"
