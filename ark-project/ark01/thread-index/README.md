@@ -2,13 +2,13 @@
 
 ## §0. Folder Identity
 
-`_projects/ark/ark01/thread-index/` は、Ark01 phase-local Thread Index artifact folder である。
+`ark-project/ark01/thread-index/` は、Ark01 phase-local Thread Index artifact folder である。
 
 このfolderは、Ark01各Threadの Target Thread Analysis / Full-Enough Harvest / Thread Index artifact を保管する場所であり、Ark-wide protocol folder ではない。
 
 ```yaml id="giwbmo"
 document_identity: "ark01_thread_index_artifact_folder"
-canonical_path: "_projects/ark/ark01/thread-index/"
+canonical_path: "ark-project/ark01/thread-index/"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 phase: "Ark01"
 status: "active / uploaded / original-filename-reality / human_editable / not_final_seal"
