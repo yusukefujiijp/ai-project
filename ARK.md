@@ -6,9 +6,10 @@ version: "v001"
 edition: "Identity and Return-Home Kernel"
 status: "active / human-sealed"
 created: "2026-07-23"
-updated: "2026-07-23"
-last_reality_reviewed: "2026-07-23"
-reality_review_base_commit: "b8c131893cc548c678411be61d93e5661fb707ad"
+updated: "2026-08-15"
+last_reality_reviewed: "2026-08-15"
+reality_review_base_commit: "812ff48952e285b043fb5d72d52375aa5c1b82be"
+reality_review_scope: "Ark README role boundary and current domain router address only"
 scope: "Ark Project repository-wide identity and return-home layer"
 primary_reader:
   - "YusukeJP"
@@ -37,6 +38,7 @@ updated_reason:
   - "Preserve the meaning of YusukeJP × AI-Collaborator one-to-one work."
   - "Define the transformation from Fog and probability into structure and Current Certainty."
   - "Separate Ark identity from README routing, AGENTS instructions, System growth routing, Skills, and Lessons."
+  - "Route Current Ark Topology through ark-project/README.md while preserving ARK.md as the Home Constitution."
 ---
 
 # ARK.md
@@ -663,7 +665,7 @@ ARK.md
 AGENTS.md
 = Cross-AI Root Instruction Runtime / First Legal Move
 
-_projects/ark/README.md
+ark-project/README.md
 = Current Ark Topology / Public-Safe Router
 
 Nearest README / Handoff
