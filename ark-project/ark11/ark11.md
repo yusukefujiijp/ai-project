@@ -790,9 +790,9 @@ source_lineage:
   stable_core:
     - "ai-ark-seed/ai-ark-seed-cards/foresight-waiting-trap.md"
     - "thread-end/ark/ark07/ark0711_20260806_start-query.md"
-    - "_projects/ark/ark01/thread-index/Ark0115_20260516_fog-zone-kernel-harvest-thread-seal-gate_v001.md"
-    - "_projects/ark/ark01/thread-index/Ark0123_20260529_sdw-fog-to-workout-reality-response-first-report-rail_v001.md"
-    - "_projects/ark/ark01/thread-index/Ark0124_20260530_ai-dream-sdw-fog-to-workout-purpose-lock-thread-analysis_v001.md"
+    - "ark-project/ark01/thread-index/Ark0115_20260516_fog-zone-kernel-harvest-thread-seal-gate_v001.md"
+    - "ark-project/ark01/thread-index/Ark0123_20260529_sdw-fog-to-workout-reality-response-first-report-rail_v001.md"
+    - "ark-project/ark01/thread-index/Ark0124_20260530_ai-dream-sdw-fog-to-workout-purpose-lock-thread-analysis_v001.md"
 
   v002_material_delta:
     - "Field naming correction"
