@@ -5,9 +5,10 @@ version: "v001"
 edition: "AI-first Root Bootloader"
 version_basis: "first explicitly versioned AI-first root README"
 status: "active / human-sealed"
-updated: "2026-07-23"
-last_reality_reviewed: "2026-07-23"
-reality_review_base_commit: "8eb19cf87fac1fbc31a1e322ac6f90f9aaf78828"
+updated: "2026-08-15"
+last_reality_reviewed: "2026-08-15"
+reality_review_base_commit: "71267c94501870b902471ccd0fd016dc4752e416"
+reality_review_scope: "Ark Project domain migration router and confirmed moved prompt paths"
 role:
   - "Future AI First Read"
   - "Repository Constitution"
@@ -29,6 +30,8 @@ updated_reason:
   - "Add Global Boot Sequence and Reality Delta Protocol."
   - "Refresh the repository router without turning the root README into a full inventory."
   - "Preserve Human Final Seal, Mainline-First, Reality Review, and Root / Fruit Guard."
+  - "Route Ark Project to ark-project/README.md and retire predecessor-only indexes from the active router."
+  - "Align confirmed moved Topology-First, Ark-OKF, and KISS/YAGNI/DRY/LEAN files with root prompts/."
 ---
 
 # ai-project
@@ -98,9 +101,9 @@ Harvest preserves.
 current_coordinate:
   root_readme_version: "v001"
   edition: "AI-first Root Bootloader"
-  updated: "2026-07-23"
-  last_reality_reviewed: "2026-07-23"
-  reviewed_against_main_commit: "8eb19cf87fac1fbc31a1e322ac6f90f9aaf78828"
+  updated: "2026-08-15"
+  last_reality_reviewed: "2026-08-15"
+  reviewed_against_main_commit: "71267c94501870b902471ccd0fd016dc4752e416"
   canonical_branch: "main"
 
   currentness_scope:
@@ -320,11 +323,9 @@ Reality confirms.
 
 | Path | Role | Read when |
 |---|---|---|
-| [`_projects/ark/README.md`](_projects/ark/README.md) | Ark Project parent entry / topology router | Ark系Projectへ入る時 |
+| [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`_projects/ark-wtp/README.md`](_projects/ark-wtp/README.md) | Ark-WTP dedicated field | Weekly Torah Portion系へ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
-| [`_projects/ark/indexes/ark-protocol-registry.md`](_projects/ark/indexes/ark-protocol-registry.md) | Protocol address book / identity and path registry | Protocolの住所・身分・関係を確認する時 |
-| [`_projects/ark/indexes/ark-repository-governance_adr.md`](_projects/ark/indexes/ark-repository-governance_adr.md) | Repository placement and document-identity governance | Fileの身分・住所・配置判断が必要な時 |
 
 ### 5.2 Prompt and Skill Layer
 
@@ -350,9 +351,9 @@ Reality confirms.
 
 | Path | Role | Read when |
 |---|---|---|
-| [`s_special/ark-open-knowledge-format.md`](s_special/ark-open-knowledge-format.md) | Ark-OKF / readable, reusable, rebootable output surface | Artifact形式・相互運用性が重要な時 |
-| [`s_special/topology-first.md`](s_special/topology-first.md) | Topology-First placement guard | 本文より先に住所・責務を決める時 |
-| [`s_special/kiss-yagni-dry-lean.md`](s_special/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
+| [`prompts/ark-open-knowledge-format.md`](prompts/ark-open-knowledge-format.md) | Ark-OKF / readable, reusable, rebootable output surface | Artifact形式・相互運用性が重要な時 |
+| [`prompts/topology-first.md`](prompts/topology-first.md) | Topology-First placement guard | 本文より先に住所・責務を決める時 |
+| [`prompts/kiss-yagni-dry-lean.md`](prompts/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
 | [`ss_super-special/CHATGPT.md`](ss_super-special/CHATGPT.md) | Highest-grade shared Covenant / behavior map | All-Project級のAI behaviorを確認する時 |
 
 ### 5.5 Direct GitHub Reality Pattern
