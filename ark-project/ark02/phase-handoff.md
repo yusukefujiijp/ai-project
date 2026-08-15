@@ -2,11 +2,11 @@
 title: "Ark02 Phase Handoff"
 status: "active / japanese-first-okf / github_canonical / human_editable / not_final_seal"
 document_identity: "phase_handoff"
-canonical_path: "_projects/ark/ark02/phase-handoff.md"
+canonical_path: "ark-project/ark02/phase-handoff.md"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 phase: "Ark02"
-source_adr: "_projects/ark/indexes/ark-repository-governance_adr.md"
-related_rolling_handoff: "_projects/ark/ark02/handoff.md"
+source_adr: "Git history only: retired ark-repository-governance_adr.md"
+related_rolling_handoff: "ark-project/ark02/handoff.md"
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Ark-OKF / Rebootable-first"
 artifact_generation_is_final_seal: false
@@ -32,7 +32,7 @@ root_guard:
 
 この文書は、Ark02全体のPhase文脈を安定して保持するための `phase-level map` である。
 
-これは `_projects/ark/ark02/handoff.md` を置き換えない。  
+これは `ark-project/ark02/handoff.md` を置き換えない。  
 これはArk01 migrationを開始しない。  
 これはProtocol Registryを作成しない。  
 これはBulk Migrationを許可しない。  
@@ -54,7 +54,7 @@ phase-handoff.md:
 phase_handoff_status:
   document_identity: "phase_handoff"
   phase: "Ark02"
-  canonical_path: "_projects/ark/ark02/phase-handoff.md"
+  canonical_path: "ark-project/ark02/phase-handoff.md"
   language_policy: "Japanese-first / English-anchor"
   format_policy: "Ark-OKF / Rebootable-first"
   user_final_seal_required: true
@@ -193,7 +193,7 @@ Ark02では、Handoffを一枚に押し込めない。
 handoff_layers:
   rolling_handoff:
     file: "handoff.md"
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     document_identity: "rolling_handoff"
     role:
       - "latest next-thread reboot key"
@@ -210,7 +210,7 @@ handoff_layers:
 
   phase_handoff:
     file: "phase-handoff.md"
-    path: "_projects/ark/ark02/phase-handoff.md"
+    path: "ark-project/ark02/phase-handoff.md"
     document_identity: "phase_handoff"
     role:
       - "stable phase-level map"
@@ -247,21 +247,21 @@ Git history は履歴台帳。
 ```yaml id="reading-relation"
 reading_relation:
   first_for_next_thread:
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     reason:
       - "現在の next-thread reboot signal を持つ"
       - "immediate next task を示す"
       - "Thread frontier に応じて更新される"
 
   second_for_phase_context:
-    path: "_projects/ark/ark02/phase-handoff.md"
+    path: "ark-project/ark02/phase-handoff.md"
     reason:
       - "Ark02 phase identity を説明する"
       - "stable document roles を定義する"
       - "handoff.md の過負荷を防ぐ"
 
   repository_level_contract:
-    path: "_projects/ark/indexes/ark-repository-governance_adr.md"
+    path: "Git history only: retired ark-repository-governance_adr.md"
     reason:
       - "Repository-level document identity contract"
       - "この分離がなぜ必要かを定義する"
@@ -286,22 +286,22 @@ Ark02の文書層は、次のように軽量に読む。
 ```yaml id="ark02-layer-map"
 ark02_layer_map:
   ark02_rolling_handoff:
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     role: "next-thread reboot key / rolling handoff"
 
   ark02_phase_handoff:
-    path: "_projects/ark/ark02/phase-handoff.md"
+    path: "ark-project/ark02/phase-handoff.md"
     role: "stable phase-context map"
 
   ark02_harvest:
-    path: "_projects/ark/ark02/harvest/"
+    path: "ark-project/ark02/harvest/"
     role: "Thread Harvest / meaning artifact store"
     guard:
       - "harvest/をrolling handoffとして扱わない"
       - "Harvest artifactをcurrent pointerとして上書きしない"
 
   repository_governance_adr:
-    path: "_projects/ark/indexes/ark-repository-governance_adr.md"
+    path: "Git history only: retired ark-repository-governance_adr.md"
     role: "Repository-level document identity contract"
 
   thread_end_stack:
@@ -347,7 +347,7 @@ ss_super-special/ = vision lens
 ```yaml id="update-policy"
 update_policy:
   handoff_md:
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     update_frequency: "high / each Thread transition if needed"
     version_memory: "Git history"
     content_style:
@@ -357,7 +357,7 @@ update_policy:
       - "immediate next task"
 
   phase_handoff_md:
-    path: "_projects/ark/ark02/phase-handoff.md"
+    path: "ark-project/ark02/phase-handoff.md"
     update_frequency: "low / only when Ark02 phase structure changes"
     version_memory: "Git history"
     content_style:
@@ -367,7 +367,7 @@ update_policy:
       - "stable relation to ADR / protocols / harvest"
 
   harvest_dir:
-    path: "_projects/ark/ark02/harvest/"
+    path: "ark-project/ark02/harvest/"
     update_frequency: "append when Harvest artifacts are explicitly created"
     content_style:
       - "meaning harvest"
@@ -424,7 +424,7 @@ Sealは人間が握る。
 ```yaml id="reality-response"
 reality_response_checkpoints:
   github_ui:
-    - "_projects/ark/ark02/ で見つけやすいか"
+    - "ark-project/ark02/ で見つけやすいか"
     - "handoff.mdとの違いが一目で分かるか"
 
   future_ai_reading:
@@ -568,7 +568,7 @@ revision_conditions:
 ```yaml id="canonical-status"
 canonical_status:
   file: "phase-handoff.md"
-  canonical_path: "_projects/ark/ark02/phase-handoff.md"
+  canonical_path: "ark-project/ark02/phase-handoff.md"
   document_identity: "phase_handoff"
   language_policy: "Japanese-first / English-anchor"
   format_policy: "Ark-OKF / Rebootable-first"
@@ -581,7 +581,7 @@ canonical_status:
 next_movement:
   immediate_next:
     - "Use this file as Ark02 stable phase map"
-    - "Keep _projects/ark/ark02/handoff.md as rolling current-thread handoff"
+    - "Keep ark-project/ark02/handoff.md as rolling current-thread handoff"
     - "Continue Repository Governance sequence without Ark01 migration yet"
 
   not_yet:

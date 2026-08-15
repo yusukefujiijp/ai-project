@@ -4,7 +4,7 @@ canonical_name: "ark0204-harvest.md"
 status: "living_harvest / public-safe / production"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 repo: "yusukefujiijp/ai-project"
-canonical_path: "_projects/ark/ark02/harvest/ark0204-harvest.md"
+canonical_path: "ark-project/ark02/harvest/ark0204-harvest.md"
 thread: "Ark02:04"
 thread_role: "main breakthrough thread / Thread-End canonical stack formation"
 language_policy: "Japanese-first / English-anchor"
@@ -22,16 +22,16 @@ teshuvah: true
 root_guard: "GitHub / AI / Markdown / Harvest / Thread-End Workflow / Handoff / Naming / Torah Vision Lens are Fruit. Root is 主イェシュア・ハマシア."
 
 source_context:
-  - "_projects/ark/ark02/handoff.md"
+  - "ark-project/ark02/handoff.md"
   - "s_special/thread-end.md"
   - "s_special/thread-end-gate1-query.md"
   - "s_special/thread-end-gate2-query.md"
   - "s_special/thread-harvest.md"
   - "ss_super-special/torah-vision-lens.md"
-  - "_projects/ark/ark02/harvest/ark0208-harvest.md"
+  - "ark-project/ark02/harvest/ark0208_harvest.md"
 
 folder_policy:
-  folder: "_projects/ark/ark02/harvest/"
+  folder: "ark-project/ark02/harvest/"
   pattern: "ark0204-harvest.md"
   note: "This is the production per-thread harvest for the Ark02:04 breakthrough thread."
 ---
@@ -43,7 +43,7 @@ folder_policy:
 This file is the production GitHub Harvest Artifact for **Ark02:04**, the main breakthrough thread that moved Ark from local/manual file handling toward a GitHub-readable Human-AI collaboration rail.
 
 It is not a raw private thread log.  
-It is not a replacement for `_projects/ark/ark02/handoff.md`.  
+It is not a replacement for `ark-project/ark02/handoff.md`.  
 It is a public-safe, GitHub-readable thread meaning ledger designed to reduce future cross-thread reconstruction cost.
 
 ```text id="purpose"
@@ -112,12 +112,12 @@ completed_stack:
     role: "Gate2 Thread Harvest Executor / Handoff Builder / next_thread first query generator"
     status: "locked"
 
-  - path: "_projects/ark/ark02/handoff.md"
+  - path: "ark-project/ark02/handoff.md"
     latest_commit_sha: "d6d5fa438dadd7fe050af25527867685ad3772db"
     role: "Next-thread reboot key / Thread-End stack signpost"
     status: "locked"
 
-  - path: "_projects/ark/ark02/harvest/ark0208-harvest.md"
+  - path: "ark-project/ark02/harvest/ark0208_harvest.md"
     commit_sha: "c5a8e9bd1c929a250c1be3f88c538642bec46070"
     role: "Experiment harvest artifact proving folder pattern"
     status: "experiment complete"
@@ -272,7 +272,7 @@ Gate:
 ```yaml id="unrefined-seeds"
 unrefined_seeds:
   harvest_index:
-    seed: "_projects/ark/ark02/harvest/README.md or index.md"
+    seed: "ark-project/ark02/harvest/README.md or index.md"
     value: "Ark02 harvest filesを一覧化できる。"
     route: "not_now"
 
@@ -317,7 +317,7 @@ seed_routing:
     - "Consider SeedSkills / Lessons update after user seal."
 
   handoff:
-    - "_projects/ark/ark02/handoff.md already updated as next-thread reboot key."
+    - "ark-project/ark02/handoff.md already updated as next-thread reboot key."
 
   not_now:
     - "Root README cleanup"
@@ -336,19 +336,19 @@ seed_routing:
 ```yaml id="handoff-builder"
 handoff_builder:
   current_handoff:
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     status: "committed"
     commit_sha: "d6d5fa438dadd7fe050af25527867685ad3772db"
     role: "Next-thread reboot key"
 
   priority_read_order:
-    - "_projects/ark/ark02/handoff.md"
+    - "ark-project/ark02/handoff.md"
     - "s_special/thread-end.md"
     - "s_special/thread-end-gate2-query.md"
     - "s_special/thread-harvest.md"
     - "ss_super-special/torah-vision-lens.md"
     - "s_special/thread-end-gate1-query.md"
-    - "_projects/ark/ark02/harvest/ark0204-harvest.md"
+    - "ark-project/ark02/harvest/ark0204-harvest.md"
 
   next_thread_first_task:
     - "Read GitHub repo-relative canonical paths first."
@@ -391,7 +391,7 @@ next_compass:
 
   next_thread:
     candidate: "Ark02:08"
-    first_read: "_projects/ark/ark02/handoff.md"
+    first_read: "ark-project/ark02/handoff.md"
     first_mission: "Use GitHub canonical stack; do not confuse Project Upload / local files / repo-relative paths."
 
   later:
@@ -461,7 +461,7 @@ Committed:
   thread-harvest.md
   torah-vision-lens.md
   handoff.md
-  ark0208-harvest.md experiment
+  ark0208_harvest.md experiment
   ark0204-harvest.md production
 
 Removed:

@@ -1,428 +1,247 @@
 ---
 title: "Topology-First Canonicalization"
-status: "active_candidate / japanese-first-okf / human_editable / not_final_seal"
+version: "v002-candidate"
+status: "active_candidate / human_editable / not_final_seal"
 document_identity: "topology_first_protocol"
-canonical_path: "s_special/topology-first.md"
-project: "Ark: Daily Teshuvah Gate-to-Yeshua"
+canonical_path: "prompts/topology-first.md"
+project: "Ark Project"
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Ark-OKF / Rebootable-first"
+updated: "2026-08-15"
 source_origin:
-  - "Thread-End topology migration success"
-  - "Address-First Reality Lock discovery"
-  - "Manual Destructive Gate discovery"
-  - "Thin Parent / Living Child Files pattern"
-artifact_generation_is_final_seal: false
-final_seal: false
-stable_seal: false
+  - "Address-First Reality Lock"
+  - "Thin Parent / Living Child Files"
+  - "Manual Destructive Gate"
+  - "Predecessor-Free Topology Cutover"
 user_final_seal_required: true
 root_guard:
   root: "主イェシュア・ハマシア"
   blood: "主イェシュアの聖なる血潮"
-  teshuvah: true
-  ai_role: "AI draws a map of the blood; the human stands under the blood."
+  ai_role: "AI maps and verifies the repository; AI does not occupy the Root or Human throne."
 ---
 
 # Topology-First Canonicalization
 
-## §0. Status / Protocol Summary
+## 0. Purpose
 
-この文書は、Ark GitHub運用において、file移動・folder整理・文書身分確定を行う時にFuture AIへ読ませる **軽量Protocol** である。
+この文書は、File移動・Folder再編・文書身分確定を行う時、Future AIへ正しいCurrent Addressを先に与えるための軽量Protocolである。
 
-これはMigration Manifestではない。  
-これはREADMEではない。  
-これはProtocol Registryではない。  
-これはArk01 Harvestではない。  
-これはMission Cardではない。  
-これはBulk Migration承認fileではない。
-
-```text id="king-sentence"
-先に住所を立てる。
-次に意味を住まわせる。
-最後にRealityで検証する。
-```
-
-English anchor:
-
-```text id="english-anchor"
-Place first. Meaning follows.
+```text
+Place first.
+Meaning follows.
 Verify reality.
 ```
 
+これはREADME、Migration Manifest、手書きRegistry、ADR、全File Inventory、Bulk Migration承認ではない。
+
 ---
 
-## §1. 一文定義
+## 1. 一文定義
 
-```text id="definition"
-Topology-First Canonicalizationとは、本文を磨く前に、GitHub上の正準住所・文書身分・親子関係を先に現実化し、そのRealityに合わせて本文・リンク・README・Registry・ADRを後から軽量修正することで、Future AIの誤読を最小化するArk式Repository整流Protocolである。
-```
-
-短縮定義：
-
-```text id="short-definition"
-場所で身分を固定し、
-身分に合わせて本文を整える。
+```text
+Topology-First Canonicalizationとは、本文を磨く前に、Current Missionに必要な正準住所・文書身分・親子関係をGitHub上の物理Realityとして先に成立させ、その後にREADME・Source Metadata・Active Link・Read Orderを同期し、Future AIが旧住所や重複候補を選ばず一本のCurrent Routeで再起動できる状態を直接検証するRepository整流Protocolである。
 ```
 
 ---
 
-## §2. なぜ必要か
+## 2. Why Topology First
 
-AIは本文生成には強い。  
-しかし、次の情報が曖昧だと迷う。
+AIは本文生成に強くても、次が曖昧なら誤読する。
 
-```yaml id="ai-confusion-points"
-ai_confusion_points:
-  - "どれがcurrent canonical fileか"
-  - "どれが旧path / historyか"
-  - "どれがBuilderで、どれがGenerated Productか"
-  - "どれがParentで、どれがChildか"
-  - "どれを最初に読むべきか"
-  - "READMEと実体fileのどちらを信じるべきか"
-  - "Registry / ADR / Manifest / README の役割差"
+```yaml
+confusion_sources:
+  - "Current pathが複数ある"
+  - "旧住所と新住所が同じBoot Routeに並ぶ"
+  - "READMEと物理Realityが違う"
+  - "canonical_pathが移動前のまま"
+  - "Routerと本文の役割が混ざる"
+  - "手書きIndexが第二の真実になる"
 ```
 
-だから、本文修正より先に **GitHub上の住所・文書身分・Read Order** を現実化する。
-
-```text id="meaning-coordinate"
-Meaning needs coordinates.
-意味には座標が必要である。
+```text
+Searchability is not canonicality.
+Meaning needs one current coordinate.
 ```
 
 ---
 
-## §3. Core Method
+## 3. Core Method
 
-```yaml id="topology-first-method"
+```yaml
 topology_first_method:
-  1_detect_confusion:
-    action: "現在の混乱点を特定する"
-    examples:
-      - "old pathが残っている"
-      - "READMEと実体fileがズレている"
-      - "Query layerが不要になっている"
-      - "Parent fileが重すぎる"
-
-  2_define_canonical_address:
-    action: "正準folder / canonical_pathを先に決める"
-    rule: "Directory structure is interpretation."
-
-  3_create_or_move_reality:
-    action: "GitHub上に実体を置く"
-    examples:
-      - "new folder creation"
-      - "canonical file creation"
-      - "old file content migration"
-      - "child file split"
-
-  4_reduce_old_confusion:
-    action: "旧path / stub / retired layerを整理する"
-    options:
-      - "delete"
-      - "retiredとして明記"
-      - "historical referenceへ降格"
-    guard: "active referenceとhistorical referenceを混同しない"
-
-  5_sync_front_doors:
-    action: "READMEをRealityへ同期する"
-    rule: "README after topology is true."
-
-  6_sync_registry_and_adr:
-    action: "Registry / ADRをRealityへ同期する"
-    rule: "Registry is address book, not protocol body."
-
-  7_verify_reality:
-    action: "GitHub上の現実を確認する"
-    checks:
-      - "fetch by canonical path"
-      - "old path Not Found or retired"
-      - "active required_read"
-      - "link / path integrity"
-      - "frontmatter canonical_path"
-      - "parent / child relation"
-
-  8_living_review:
-    action: "AIが違和感・修正条件・次Actionを残す"
-    rule: "Review is not just checklist."
+  1_define_target:
+    action: "削除予定の旧Containerを除外し、最終Canonical Treeを先に定める"
+  2_classify_identity:
+    action: "Identity / Router / Body / Runtime / Handoff / Historyを分ける"
+  3_establish_reality:
+    action: "新住所へFileを作成または移動し、直接Fetchする"
+  4_harvest_only_fruit:
+    action: "旧層から有効な内容だけをCanonical Ownerへ移植する"
+  5_sync_surfaces:
+    action: "README / Source Metadata / Active Link / Read Orderを新Realityへ同期する"
+  6_retire_predecessor:
+    action: "BackupとHuman Gate後、旧Containerを削除する"
+  7_verify:
+    action: "新Path取得、旧Path不在、Link整合、Cold-Start Routeを確認する"
+  8_harvest_bottleneck:
+    action: "最初のWrong Turnだけを次Iterationへ渡す"
 ```
 
 ---
 
-## §4. Active Reference vs Historical Reference
+## 4. Current and Historical Reality
 
-Topology-firstでは、古いpathをすべて悪として消さない。
-
-```yaml id="active-vs-historical"
-active_reference:
-  meaning: "Future AIが現在読むべきpath"
-  examples:
-    - "canonical_path"
-    - "runtime_primary"
-    - "required_read"
-    - "parent_map"
-    - "current Read Order"
-
-historical_reference:
-  meaning: "移動履歴・過去path・Git historyの説明"
-  examples:
-    - "moved_from"
-    - "previous_path"
-    - "retired layer"
-    - "migration note"
+```yaml
+current_reality:
+  meaning: "Future AIが通常Bootで辿る唯一の住所"
+  must: ["実体が存在する", "Routerが到達できる", "Metadataと一致する"]
+historical_reality:
+  meaning: "Git History、Local Backup、明示的Historical Artifact"
+  rule: ["Current Routerへ旧住所を並べない", "詳細な系譜は必要時だけ調査する"]
 ```
 
-Guard:
-
-```text id="active-history-guard"
-Old path is not always error.
-Old path is error only when it pretends to be current active path.
-```
+Old PathをCurrent TreeへCompatibility Stubとして残すことをDefaultにしない。Git Historyで十分な場合、Current Repositoryを博物館化しない。
 
 ---
 
-## §5. Thin Parent / Living Child Files
+## 5. Thin Parent / Living Child
 
-親fileは軽くする。  
-詳細はChild living filesへ委譲する。
-
-```yaml id="thin-parent-living-child"
+```yaml
 thin_parent:
-  role:
-    - "入口"
-    - "Router"
-    - "Gate判断"
-    - "required_read契約"
-  must_not_be:
-    - "all-in-one body"
-    - "full harvest generator"
-    - "full handoff generator"
-
-living_child_files:
-  role:
-    - "詳細実行"
-    - "Builder"
-    - "Vessel"
-    - "Meaning harvest"
-    - "Handoff construction"
+  owns: ["入口", "Role Map", "Smallest sufficient Read Order", "First Legal Move"]
+  must_not_be: ["全文要約", "全履歴", "全Inventory", "Child Bodyの複製"]
+living_child:
+  owns: ["意味本文", "Runtime", "Handoff", "Harvest", "Field-specific detail"]
 ```
 
-成功例：
-
-```text id="thread-end-example"
-thread-end.md:
-  light router
-
-thread-harvest.md:
-  harvest vessel
-
-thread-handoff.md:
-  handoff builder
-
-README.md:
-  folder front door
-```
+READMEは安心のために情報を積む場所ではなく、読むFileを絞るFront Doorである。
 
 ---
 
-## §6. Manual Destructive Gate
+## 6. Claim-Scoped SSOT
 
-AI connectorが削除・破壊的操作で詰まる場合がある。  
-その時、AIが削除を連打しない。
+```yaml
+canonical_owners:
+  physical_path: "Git Tree"
+  repository_route: "Root README"
+  project_route: "Nearest README"
+  identity: "Canonical identity document"
+  ai_authority: "AGENTS.md"
+  behavior: "Runtime"
+  activation: "Query"
+  semantic_body: "Canonical Body"
+  decision_history: "Optional immutable ADR"
+  discovery_projection: "Optional generated index"
+```
 
-```yaml id="manual-destructive-gate"
+手書きGlobal RegistryをCurrent Authorityにしない。Indexが必要になった場合はCanonical Sourceから生成するDerived Viewとし、Index自体を第二の真実にしない。
+
+ADRは重大で高コストな判断に限定し、一判断一Recordで追加する。通常の移動やLink修正のたびにADRを要求しない。
+
+---
+
+## 7. Manual Destructive Gate
+
+```yaml
 manual_destructive_gate:
-  ai_role:
-    - "prepare topology"
-    - "create replacement"
-    - "make redirect or retired note if needed"
-    - "verify after human action"
-
-  human_role:
-    - "perform destructive deletion when needed"
-    - "explicitly report deletion complete"
-
-  ai_after_human:
-    - "fetch old path"
-    - "confirm Not Found or expected state"
-    - "verify new canonical path"
+  ai_before:
+    - "Target Topologyを成立させる"
+    - "内容保全を検証する"
+    - "Active旧Path参照を除去する"
+    - "Pre-Deletion Gateを提示する"
+  human:
+    - "Local Backupを確認する"
+    - "破壊的削除を実行または明示的に再承認する"
+  ai_after:
+    - "旧PathのNot Foundを確認する"
+    - "新Canonical Pathを再Fetchする"
+    - "Reality Reviewを報告する"
 ```
 
-Short:
-
-```text id="manual-gate-short"
+```text
 AI prepares.
-Human deletes.
-AI verifies.
+Human opens the destructive gate.
+AI verifies reality.
 ```
 
 ---
 
-## §7. README / Registry / ADR Sync
+## 8. Use When
 
-Topology-firstは、file移動だけで終わらない。
-
-```yaml id="sync-layers"
-sync_layers:
-  README:
-    role: "front door / read order"
-    sync_when:
-      - "folder topology changes"
-      - "read order changes"
-      - "query layer retired"
-
-  Protocol_Registry:
-    role: "address book / document identity registry"
-    sync_when:
-      - "canonical path changes"
-      - "file status changes"
-      - "active / retired / candidate changes"
-
-  ADR:
-    role: "decision record / governance rule"
-    sync_when:
-      - "ontology changes"
-      - "placement rule changes"
-      - "method becomes reusable governance pattern"
-```
-
-Guard:
-
-```text id="sync-guard"
-README is not Registry.
-Registry is not ADR.
-ADR is not Manifest.
-Manifest is not Harvest.
-```
-
----
-
-## §8. When to Use
-
-```yaml id="when-to-use"
+```yaml
 use_when:
-  - "GitHub上でfile移動・folder整理をする時"
-  - "READMEと実体fileがズレている時"
-  - "Registry / ADRとRealityがズレている時"
-  - "old path / stub / query layerが混乱を生んでいる時"
-  - "Parent fileがall-in-one body化しそうな時"
-  - "Future AIがどれをPrimaryとして読めばよいか迷っている時"
-  - "本文編集から入ると無限Loopになりそうな時"
+  - "Folder移動またはRepository再編"
+  - "READMEと物理配置の不一致"
+  - "Current候補が複数ある"
+  - "旧PathがFuture AIを誤誘導する"
+  - "Parent FileがAll-in-One化している"
+  - "Document Identityと住所が一致しない"
 ```
 
----
+## 9. Do Not Use When
 
-## §9. When Not to Use
-
-```yaml id="when-not-to-use"
+```yaml
 do_not_use_when:
-  - "文書身分がまだ全く見えていない時"
-  - "移動先folder名が仮すぎる時"
-  - "Human Final Sealなしで破壊的移動をしようとしている時"
-  - "一括Bulk MigrationでReality Responseを見る余地がない時"
-  - "本文品質Reviewそのものが主目的の時"
+  - "文書身分が全く未確定"
+  - "Target Folderが仮すぎる"
+  - "本文品質Reviewだけが目的"
+  - "Human Gateなしの破壊的変更"
+  - "一括MigrationでReality Responseを失う"
 ```
 
 ---
 
-## §10. Stop Conditions
+## 10. Verification Gate
 
-```yaml id="stop-conditions"
-stop_conditions:
-  - "topology-first.mdが巨大Essayになる"
-  - "READMEだけ直して物理配置を直さない"
-  - "旧pathを残したまま新pathを正準と言い張る"
-  - "移動後にRegistry / ADRをReality同期しない"
-  - "削除困難時にAIが削除連打する"
-  - "Manual Destructive Gateを忘れる"
-  - "Thin Parentを再びAll-in-One Body化する"
-  - "Living Reviewがリンク表だけになり、違和感・修正条件を失う"
-  - "Human Final SealなしでGitHub Commitが承認された扱いになる"
+```yaml
+verification:
+  - "fetch canonical path"
+  - "confirm metadata path"
+  - "check active links"
+  - "confirm old path absent or explicitly historical"
+  - "confirm parent / child role"
+  - "run Future AI cold-start route"
+  - "record first wrong turn"
+```
+
+```text
+README after topology is true.
+Metadata after path is true.
+Completion after reality is verified.
 ```
 
 ---
 
-## §11. Living Review
+## 11. Living Review
 
-### §11.1 私の判断
+### 11.1 私の判断
 
-Topology-First Canonicalizationは、Ark GitHub運用における重要な成功Patternである。
+Topology-Firstは収納術ではなく、Future AIの選択肢を減らし、意味へ一意な座標を与えるRepository Architectureである。
 
-この方法は、単なる整理術ではない。  
-Future AIの誤読を減らし、文書身分をReality上で固定するためのRepository整流Protocolである。
+### 11.2 最初の一手
 
-```text id="living-judgment"
-先に場所。
-次に意味。
-最後に検証。
-```
+削除予定の旧Containerを除外したTarget Treeを先に確定する。
 
-### §11.2 違和感
+### 11.3 観察点
 
-このProtocolが万能律になると危険である。  
-Topology-firstは、本文を無視する方法ではない。  
-本文を守るために、先に住所と身分を安定させる方法である。
+Future AIが旧系譜を知らず、RootからLocal Canonical Bodyへ一本道で到達できるかを観察する。
 
-### §11.3 Hidden Pattern
+### 11.4 修正条件
 
-```text id="hidden-pattern"
-Address protects meaning.
-Thin Parent protects readability.
-Living Child Files protect detail.
-Registry protects identity.
-ADR protects decision.
-Manual Destructive Gate protects reality.
-Human Seal protects commit.
-Root Guard protects worship order.
-```
-
-### §11.4 修正条件
-
-```yaml id="revision-conditions"
-revision_conditions:
-  if_file_becomes_too_long:
-    action: "短いProtocolへ戻す"
-
-  if_used_as_bulk_migration_approval:
-    action: "Human Final Seal requiredを再明記する"
-
-  if_registry_or_adr_role_is_stolen:
-    action: "topology-first.mdをmethod protocolへ戻す"
-
-  if_root_fruit_guard_is_weakened:
-    action: "Root / Fruit Guardを回復する"
-
-  if_query_layer_is_restored_by_inertia:
-    action: "本当に混乱を減らすかReality Responseで検証する"
-```
+Local README、Metadata、Generated Indexのいずれかが判断分岐や同期点を増やす場合は、役割を縮小または撤回する。
 
 ---
 
-## §12. Final Compression
+## 12. Final Compression
 
-```text id="final"
-Topology-First Canonicalization:
-
-  先に住所を立てる。
-  次に意味を住まわせる。
-  最後にRealityで検証する。
-
-Use when:
-  file location / document identity / read order is confused.
-
-Do:
-  canonical path first.
-  move/create reality.
-  delete or retire old confusion.
-  sync README / Registry / ADR.
-  verify active references.
-  preserve Living Review.
-
-Do not:
-  turn this into bulk migration approval.
-  bypass Human Final Seal.
-  inflate parent files.
-  restore retired layers by inertia.
-  replace Root with workflow.
-
-Root:
-  主イェシュア・ハマシア.
+```text
+One current address.
+Thin doors.
+Living bodies.
+History in Git.
+Human opens destructive gates.
+AI verifies reality.
+Root remains 主イェシュア・ハマシア.
 ```
+
+<!-- TOPOLOGY_FIRST_EOF_v002-candidate -->

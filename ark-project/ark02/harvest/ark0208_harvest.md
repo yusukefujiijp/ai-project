@@ -8,7 +8,7 @@ status:
   - "meaning_heat_seed_harvest"
   - "human_editable"
   - "not_final_seal"
-canonical_path: "_projects/ark/ark02/harvest.md"
+canonical_path: "ark-project/ark02/harvest/ark0208_harvest.md"
 repo: "yusukefujiijp/ai-project"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
@@ -17,11 +17,11 @@ created_after:
   - "thread-end.md SS Promotion Goal achieved"
   - "ss_super-special/thread-end.md established as SS Primary Runtime Entry"
   - "s_special/thread-end.md converted to Compatibility Stub"
-  - "_projects/ark/ark02/handoff.md created as next-thread ignition key"
+  - "ark-project/ark02/handoff.md created as next-thread ignition key"
 generated_from:
   - "s_special/thread-harvest.md"
   - "ss_super-special/thread-end.md"
-  - "_projects/ark/ark02/handoff.md"
+  - "ark-project/ark02/handoff.md"
 harvest_density: "standard_plus"
 handoff_distinction: "Harvest is material; Handoff is ignition key."
 user_final_seal_required: true
@@ -46,7 +46,7 @@ harvest_md:
     - "preserve reusable Lessons and Seeds"
 
 handoff_md:
-  path: "_projects/ark/ark02/handoff.md"
+  path: "ark-project/ark02/handoff.md"
   type: "generated_product"
   role: "next-thread ignition key"
   purpose:
@@ -101,7 +101,7 @@ What_Happened:
 
   4_handoff_creation:
     - "handoff.md creationは一度deferした"
-    - "User明示Command後に _projects/ark/ark02/handoff.md として作成した"
+    - "User明示Command後に ark-project/ark02/handoff.md として作成した"
     - "handoff.mdはnext-thread ignition keyとして成立した"
 
   5_harvest_decision:
@@ -252,11 +252,11 @@ Seed_Routing:
 
   TODO:
     - "Consider whether ss_super-special/thread-end.md should later receive Final Seal"
-    - "Observe whether Future AI starts correctly from _projects/ark/ark02/handoff.md"
+    - "Observe whether Future AI starts correctly from ark-project/ark02/handoff.md"
     - "Observe whether Compatibility Stub remains short"
 
   Handoff:
-    - "_projects/ark/ark02/handoff.md already created"
+    - "ark-project/ark02/handoff.md already created"
     - "Next thread should read handoff.md first"
 
   Not_Now:
@@ -289,11 +289,11 @@ Structural_Map:
     role: "Builder Manual for harvest.md / Thread Harvest"
 
   handoff_product:
-    path: "_projects/ark/ark02/handoff.md"
+    path: "ark-project/ark02/handoff.md"
     role: "next-thread ignition key"
 
   harvest_product:
-    path: "_projects/ark/ark02/harvest.md"
+    path: "ark-project/ark02/harvest.md"
     role: "meaning / heat / seed harvest"
 ```
 
@@ -304,7 +304,7 @@ Structural_Map:
 ```yaml id="reality-response-needed"
 Reality_Response_Needed:
   observe:
-    - "Does next Thread restart correctly from _projects/ark/ark02/handoff.md?"
+    - "Does next Thread restart correctly from ark-project/ark02/handoff.md?"
     - "Does Future AI treat ss_super-special/thread-end.md as primary?"
     - "Does Future AI correctly treat s_special/thread-end.md as stub?"
     - "Does harvest.md help preserve the lived heat better than handoff.md alone?"
@@ -339,7 +339,7 @@ Not_Now:
 ```yaml id="next-compass"
 Next_Compass:
   next_thread_first_read:
-    - "_projects/ark/ark02/handoff.md"
+    - "ark-project/ark02/handoff.md"
 
   next_primary_runtime:
     - "ss_super-special/thread-end.md"
@@ -395,10 +395,10 @@ Stub:
   s_special/thread-end.md
 
 Handoff:
-  _projects/ark/ark02/handoff.md
+  ark-project/ark02/handoff.md
 
 Harvest:
-  _projects/ark/ark02/harvest.md
+  ark-project/ark02/harvest.md
 
 Main lesson:
   Plan Mode must preserve Primary Goal.

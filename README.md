@@ -7,8 +7,8 @@ version_basis: "first explicitly versioned AI-first root README"
 status: "active / human-sealed"
 updated: "2026-08-15"
 last_reality_reviewed: "2026-08-15"
-reality_review_base_commit: "71267c94501870b902471ccd0fd016dc4752e416"
-reality_review_scope: "Ark Project domain migration router and confirmed moved prompt paths"
+reality_review_base_commit: "63ca396ce1402d4453c4b42359e2456b3b02e7f1"
+reality_review_scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
 role:
   - "Future AI First Read"
   - "Repository Constitution"
@@ -32,6 +32,8 @@ updated_reason:
   - "Preserve Human Final Seal, Mainline-First, Reality Review, and Root / Fruit Guard."
   - "Route Ark Project to ark-project/README.md and retire predecessor-only indexes from the active router."
   - "Align confirmed moved Topology-First, Ark-OKF, and KISS/YAGNI/DRY/LEAN files with root prompts/."
+  - "Route numbered Ark families through ark-project/ and named projects through projects/."
+  - "Remove current routes to missing predecessor-only surfaces."
 ---
 
 # ai-project
@@ -208,7 +210,7 @@ read_order_priority:
   3: "Root README global guards"
   4: "Nearest Domain / Project README"
   5: "Current Handoff / Manifest / Project canonical files"
-  6: "Relevant Protocol Registry or Runtime documentation"
+  6: "Relevant Runtime, nearest README, or canonical metadata"
   7: "Historical files only when needed"
 ```
 
@@ -301,7 +303,7 @@ reality_delta_guard:
   if_multiple_canonical_candidates_conflict:
     - "Expose the conflict."
     - "Do not choose silently when the correct version is materially unclear."
-    - "Use the relevant Registry, nearest README, or Human Seal."
+    - "Use the nearest README, live repository evidence, or Human Seal."
 ```
 
 ```text
@@ -324,7 +326,7 @@ Reality confirms.
 | Path | Role | Read when |
 |---|---|---|
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
-| [`_projects/ark-wtp/README.md`](_projects/ark-wtp/README.md) | Ark-WTP dedicated field | Weekly Torah Portion系へ入る時 |
+| [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
 
 ### 5.2 Prompt and Skill Layer
@@ -332,9 +334,6 @@ Reality confirms.
 | Path | Role | Read when |
 |---|---|---|
 | [`prompts/README.md`](prompts/README.md) | Cross-AI Prompt Runtime and Query Shelf | Prompt / Queryを選ぶ時 |
-| [`_skill/README.md`](_skill/README.md) | Human-facing Skill System Road | Skill Systemの地形を読む時 |
-| [`_skill/SKILL.md`](_skill/SKILL.md) | AI Load Router / Skill activation manifest | AIがSkillを選択・Loadする時 |
-| [`_skill/skills/README.md`](_skill/skills/README.md) | Individual Skill Card inventory guide | 個別Skill Cardを探す時 |
 
 ### 5.3 Thread Lifecycle Layer
 
@@ -344,7 +343,6 @@ Reality confirms.
 | [`_thread-index/README.md`](_thread-index/README.md) | Thread-to-Card Craft front door | Threadを深く蒸留しCard化する時 |
 | [`_thread-mission/README.md`](_thread-mission/README.md) | Thread Mission assets front door | Mission系Artifactを扱う時 |
 | [`_tasks/README.md`](_tasks/README.md) | Task field orientation | Current Task群を扱う時 |
-| [`_dialogue/README.md`](_dialogue/README.md) | Cross-thread / Cross-AI dialogue routing | Dialogue Artifactを扱う時 |
 | [`_note/README.md`](_note/README.md) | Note shelf orientation | Canonical化前のNoteを扱う時 |
 
 ### 5.4 High-Grade Shared Lenses and Formats
@@ -356,13 +354,7 @@ Reality confirms.
 | [`prompts/kiss-yagni-dry-lean.md`](prompts/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
 | [`ss_super-special/CHATGPT.md`](ss_super-special/CHATGPT.md) | Highest-grade shared Covenant / behavior map | All-Project級のAI behaviorを確認する時 |
 
-### 5.5 Direct GitHub Reality Pattern
-
-| Path | Role |
-|---|---|
-| [`_patterns/github-direct-write-reality-review_pattern.md`](_patterns/github-direct-write-reality-review_pattern.md) | GitHub Write後のDirect Reality Review Pattern |
-
-### 5.6 Router Guard
+### 5.5 Router Guard
 
 ```yaml
 router_guard:
@@ -730,7 +722,7 @@ cold_start_test:
     - "Humanへ同じ説明を不必要に繰り返させない"
 ```
 
-答えられない場合は、闇雲に全Fileを読むのではなく、Nearest Front Door、Current Handoff、Registry、Human Instructionへ戻る。
+答えられない場合は、闇雲に全Fileを読むのではなく、Nearest Front Door、Current Handoff、Live Repository Evidence、Human Instructionへ戻る。
 
 ---
 

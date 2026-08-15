@@ -55,7 +55,7 @@ rule:
 case_record:
   id: "case_ark_wtp_root_spec_critical_audit_20260705_001"
   thread: "Ark05"
-  target: "_projects/ark/ark-wtp.md"
+  target: "projects/ark-wtp/ark-wtp.md"
   purpose:
     - "Ark-WTP Root Spec作成前のRoot Knot Audit"
     - "GitHub canonical化前のOne Critical Flaw検出"
@@ -179,7 +179,7 @@ human_seal_phrase:
 github_result:
   created:
     - repo: "yusukefujiijp/ai-project"
-      path: "_projects/ark/ark-wtp.md"
+      path: "projects/ark-wtp/ark-wtp.md"
       role: "Ark-WTP Root Spec / Covenant Core / public-safe compression"
       version: "v001.1"
       status: "human-sealed / public-safe / human-editable"
@@ -189,7 +189,7 @@ github_result:
 
   updated:
     - repo: "yusukefujiijp/ai-project"
-      path: "_projects/ark/README.md"
+      path: "ark-project/README.md"
       role: "Ark Project Door / Stage Map"
       commit_message: "Add Ark-WTP root spec link to Ark README"
       commit_sha: "8a3328e37f483774891f8ad380ddb5df953e7f05"
@@ -197,8 +197,8 @@ github_result:
 
   repository_structure_after_patch:
     - "README.md = Repository Door"
-    - "_projects/ark/README.md = Ark Door / Stage Map"
-    - "_projects/ark/ark-wtp.md = Ark-WTP Root Spec"
+    - "ark-project/README.md = Ark Door / Stage Map"
+    - "projects/ark-wtp/ark-wtp.md = Ark-WTP Root Spec"
 ```
 
 ---

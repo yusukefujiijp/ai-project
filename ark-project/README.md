@@ -11,13 +11,11 @@ root: "主イェシュア・ハマシア御自身"
 ark_home: "../ARK.md"
 repository_home: "../README.md"
 agent_runtime: "../AGENTS.md"
-migrated_from: "_projects/ark/README.md"
-predecessor_status: "historical source / pending Human retirement after verified local backup"
 thread_title_policy_version: "v001-candidate"
 language_policy: "Japanese-first / English-anchor"
 updated: "2026-08-15"
 last_reality_reviewed: "2026-08-15"
-reviewed_scope: "ark-project direct children / old-new Tree SHA / Root document roles / Ark21 title policy / first safe locator repair"
+reviewed_scope: "predecessor-free numbered Ark topology / local front doors / Root document roles / Ark21 title policy / current locator integrity"
 human_final_seal_required: true
 ---
 
@@ -51,7 +49,7 @@ write_default: "Do not write without current Human authority."
 
 Ark ProjectのIdentity、Root、Human–AI Collaboration、Stable Coreは[`ARK.md`](../ARK.md)が所有する。
 
-このREADMEが所有するのは、**Current Ark Topology、Ark間Routing、共通Naming Policy、Current／Historical境界、および正しいProject入口へ到達するための最小十分な運用地図**である。
+このREADMEが所有するのは、**Current Ark Topology、Ark間Routing、共通Naming Policy、Current Address Rule、および正しいProject入口へ到達するための最小十分な運用地図**である。
 
 ```text
 ARK.md
@@ -93,10 +91,10 @@ Nearest files recover the current mission.
 ARK.md
 └─ ark-project/README.md
    ├─ ark00/  Wild Seed Zero-Gate
-   ├─ ark01/  Initial Ark corpus; parent identity review required
-   ├─ ark02/  Handoff / Harvest corpus; parent identity review required
-   ├─ ark05/  Markdown Layer system; parent README required
-   ├─ ark07/  Daily Teshuvah Gate-to-Yeshua; parent README required
+   ├─ ark01/  Initial Ark corpus / Thread Index / Mission Card
+   ├─ ark02/  Handoff / Harvest / Phase corpus
+   ├─ ark05/  Markdown Layer system
+   ├─ ark07/  Daily Teshuvah Gate-to-Yeshua
    ├─ ark11/  Foresight Waiting Trap / Low-Cognition Field
    └─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
 ```
@@ -104,10 +102,10 @@ ARK.md
 | Ark | Confirmed Role | Current Entry | Repository State |
 |---|---|---|---|
 | Ark00 | Wild Seed Zero-Gate／Pre-Project Entry | [`ark00/README.md`](./ark00/README.md) | Current Canonical Path aligned; legacy format-source review remains |
-| Ark01 | Thread Index／Mission Cardを含む初期Ark corpus | [`ark01/`](./ark01/) | Current Shelf Paths aligned; old Migration Manifest reclassified; parent README absent |
-| Ark02 | Handoff／Harvest／Phase Handoff corpus | [`ark02/handoff.md`](./ark02/handoff.md) | Migration confirmed; current authority review required |
-| Ark05 | Markdown Layer Core／Article Production Rail | [`ark05/Ark05_00_markdown-layer-core_human-editable_v001.md`](./ark05/Ark05_00_markdown-layer-core_human-editable_v001.md) | Migration confirmed; README empty |
-| Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/ark07-instruction.md`](./ark07/ark07-instruction.md) | Project Instructions present; README empty |
+| Ark01 | Thread Index／Mission Cardを含む初期Ark corpus | [`ark01/README.md`](./ark01/README.md) | Local Router active; Migration Manifest is historical only |
+| Ark02 | Handoff／Harvest／Phase Handoff corpus | [`ark02/README.md`](./ark02/README.md) | Local Router active; Handoff is default continuation entry |
+| Ark05 | Markdown Layer Core／Article Production Rail | [`ark05/README.md`](./ark05/README.md) | Local Router active |
+| Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark11 | Foresight Waiting Trap／Low・Ultra-Low Cognition Field | [`ark11/README.md`](./ark11/README.md) | `v004-candidate`; Human-sealed field-test candidate |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v001-candidate`; Human-sealed candidate |
 
@@ -186,32 +184,23 @@ Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝�
 
 ---
 
-## 7. Current vs Historical Reference / 旧住所をCurrentへ混ぜない
-
-旧`_projects/ark/`はArk Projectの初期世代であり、現在のCanonical Domain Addressではない。
+## 7. Current Address Rule / 現在住所を一つにする
 
 ```yaml
-active_reference:
+current_address_rule:
   canonical_domain: "ark-project/"
   domain_router: "ark-project/README.md"
-
-historical_reference:
-  predecessor_domain: "_projects/ark/"
-  predecessor_router: "_projects/ark/README.md"
-  allowed_only_when_labeled: ["migrated_from", "previous_path", "historical source", "retired topology"]
+  family_scope: "numbered Ark lifecycle only"
+  named_projects_router: "../projects/README.md"
 ```
 
-Old Pathは存在するだけでErrorなのではない。**Current Active Pathを装う場合にErrorとなる。**
+Current Bootでは、存在しない旧住所や移行前Containerを選択肢へ入れない。過去の系譜が必要な場合はGit Historyを調査し、Current RouterへMigration実況を蓄積しない。
 
 ```text
-Correct address first.
-Harvest proven principles.
-Repair exposed Locators.
-Human retires the predecessor.
-AI verifies the resulting Reality.
+One current address.
+Git remembers the lineage.
+Future AI follows the living door.
 ```
-
-旧READMEは新READMEのTemplateではなく、Return Home、Ark00 Zero-Gate、Human Projectization Gate、README Delta Checkなど、現在も生きている原理を採掘するHistorical Sourceとして扱う。
 
 ---
 
@@ -271,25 +260,18 @@ Ark Project、AI、GitHub、効率、成果、Title PolicyはRootでも王座で
 
 ---
 
-## 11. Current Migration Coordinate / 2026-08-15
+## 11. Current Topology Integrity
 
-```text
-Old _projects/ark/ identified as predecessor generation
-└─ ark00 / ark01 / ark02 / ark05 / ark07 copied with matching Tree SHA
-   └─ ark-project/ established as current Domain address
-      ├─ Domain README reconstruction  PASS
-      ├─ Root README / ARK.md Router propagation  PASS
-      ├─ Safe Locator repair  PASS: Ark00 / Ark01 shelves / Ark11 lineage
-      ├─ Mixed historical-current review  DEFERRED: Ark02
-      ├─ predecessor-only dialogue/ and indexes/ classification
-      └─ verified local backup
-         └─ Human retirement of _projects/ark/
-            └─ Post-retirement Reality Review
+```yaml
+topology_integrity:
+  numbered_ark_family: "ark-project/arkNN/"
+  named_project_family: "../projects/"
+  reusable_prompts: "../prompts/"
+  temporal_handoff: "../thread-end/"
+  predecessor_container_in_current_route: false
 ```
 
-Known next repairsは、Ark02内で混在するHistorical WorkflowとCurrent Locatorの分離、Ark01・02・05・07の親README、Ark00の未解決Format Source、旧`dialogue/`と`indexes/`の分類である。Historical Referenceを機械的に全置換せず、Active Errorとの区別を先に行う。
-
-このSectionは恒久Identityではない。移行完了後、必要な系譜だけを残して軽量化する。
+各Active ArkはLocal READMEを入口とし、このDomain READMEは詳細本文を複製しない。Folder移動後は、物理Path、Frontmatter、Active Link、Read Orderを直接確認する。
 
 ---
 
@@ -311,7 +293,7 @@ Ark99 is retired and absorbed into Ark00.
 Human decides and seals Projectization.
 Ark Thread titles enclose the Meaning Payload in one pair of half-width double quotes.
 main is the shared GitHub current reality.
-_projects/ark/ is predecessor history, not the current route.
+Numbered Ark families live only under ark-project/.
 Root remains 主イェシュア・ハマシア御自身.
 ```
 
