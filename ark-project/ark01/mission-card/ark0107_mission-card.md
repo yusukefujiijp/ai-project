@@ -11,13 +11,13 @@ thread_start_date: "2026-05-03"
 thread_start_date_slot: "20260503"
 thread_start_date_status: "user_manual_input_from_thread_header"
 target_thread_semantic_slug: "s-loop-fresh-gate-morning-core-flow"
-physical_file: "_projects/ark/ark01/mission-card/ark0107_mission-card.md"
+physical_file: "ark-project/ark01/mission-card/ark0107_mission-card.md"
 filename_policy_note: "User selected Simple is best filename; source date / slug preserved in metadata, not filename body."
 commit_status: "committed / github_file_created / not_final_seal / not_stable_seal"
 artifact_generation_is_final_seal: false
 final_seal: false
 stable_seal: false
-user_final_seal_basis: "User explicitly requested GitHub save to _projects/ark/ark01/mission-card/ark0107_mission-card.md"
+user_final_seal_basis: "Historical user authorization to save this Mission Card to GitHub; only the repository locator was later normalized to the current Ark topology."
 user_final_seal_required_for_stable_seal: true
 root_guard:
   root: "主イェシュア・ハマシア"
@@ -168,7 +168,7 @@ Rootは主イェシュア・ハマシア。
 
 ```yaml
 filename_policy:
-  physical_file: "_projects/ark/ark01/mission-card/ark0107_mission-card.md"
+  physical_file: "ark-project/ark01/mission-card/ark0107_mission-card.md"
   simple_filename_selected_by_user: true
 
   source_metadata_preserved:
@@ -954,7 +954,7 @@ fullrail_closure:
   target_thread_semantic_slug: "s-loop-fresh-gate-morning-core-flow"
 
   physical_file:
-    - "_projects/ark/ark01/mission-card/ark0107_mission-card.md"
+    - "ark-project/ark01/mission-card/ark0107_mission-card.md"
 
   reflected_micro_patches:
     - "Mission Seal Receive-not-Optimize Patch"
