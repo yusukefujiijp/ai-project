@@ -18,6 +18,8 @@ canonical_body: ark-project/ark21/ark21.md
 query_path: ark-project/ark21/lords-victory-glory_query.md
 success_context: ARK21_CONTEXT_READY
 success_thread_state: READY_FOR_DIALOGUE
+thread_title_style: half-width-double-quote-enclosure
+thread_title_template: 'Ark21:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 last_updated: 2026-08-15
 ---
 
@@ -45,6 +47,7 @@ last_updated: 2026-08-15
 | Current Status | `v001-candidate / active-candidate / human-sealed-candidate` |
 | Release Target | `active-candidate / human-sealed-candidate` |
 | Boot Success State | `ARK21_CONTEXT_READY / READY_FOR_DIALOGUE` |
+| Thread Title Style | `half-width-double-quote-enclosure` |
 
 ## 2. Direct Judgment
 
@@ -263,23 +266,55 @@ Export先はPurpose Anchorだけを切り出さず、最低限`Root + Purpose + 
 | [`ark21.md`](./ark21.md) | Canonical Body Candidate、Semantic／Theological／Operational Core | 2 |
 | [`INSTRUCTIONS.md`](./INSTRUCTIONS.md) | Runtime SSOT、AI Behavior Contract、Guards | 3 |
 
-## 15. Interfaces with Other Ark Projects
+## 15. Thread Title Policy
 
-### 15.1 Ark11
+Ark21 Dedicated ThreadのTitleは、次の構造を標準とする。
+
+```text
+Ark21:{連番}_{YYYY/MM/DD}: "{Main Name}: {Sub Name}"
+```
+
+Ark21:01の確定例：
+
+```text
+Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝の刈り取り"
+```
+
+### 15.1 Enclosure Rule
+
+- Meaning Payload全体を半角Double quotation（`"`）一組で囲む。
+- Ark21 Titleでは、Meaning Payloadの囲みに隅付き括弧（`【】`）を使用しない。
+- `Ark21:{連番}_{YYYY/MM/DD}: `はDouble quotationの外側に置く。
+- Main NameとSub Nameは半角Colon + 半角Space（`: `）で接続する。
+- Curly quotation（`“”`）や全角引用符へ自動変換しない。
+
+### 15.2 Human Authority Rule
+
+- 連番、実際のThread開始日、Main Name、Sub Name、最終TitleはHumanが確定する。
+- AIはTemplateに基づくTitleを提案・Compileできるが、ChatGPT UI上でRename済みと自己認証しない。
+- UI TitleとArtifact内の推奨Titleが異なる場合、Humanの明示的な最新指定を優先する。
+
+### 15.3 Scope Rule
+
+このPolicyはArk21 Dedicated Threadへ適用する。Ark11その他Arkの既存Title Policyを自動変更せず、Project横断Ruleへの昇格は別のHuman Gateで判断する。
+
+## 16. Interfaces with Other Ark Projects
+
+### 16.1 Ark11
 
 Ark11はWake Fog Runtimeを所有する。Ark21はArk11の手順を複製せず、Purpose Anchor PacketだけをExportする。
 
 最初のIntegration Candidateは、Wake Fogで忘れられやすいPurposeを事前配置するArk11側の`Foresight Waiting Trap`である。ただし実際の組込みはArk11のContent GateとOwnershipに従い、Ark21単独では変更しない。
 
-### 15.2 Ark07
+### 16.2 Ark07
 
 Teshuvahは、自己処罰ではなくRootへの方向転換として接続候補を持つ。ただしArk07のCanonical DefinitionをArk21が上書きしない。
 
-### 15.3 Ark19
+### 16.3 Ark19
 
 Torah／Creation Orderとの接続は、生活の秩序、安全、安息日、身体性をPurposeから切り離さないためのGuard候補である。Ark19のOwnershipを尊重する。
 
-## 16. Open Questions for v002+
+## 17. Open Questions for v002+
 
 - `主の勝利栄光`の日本語表現を今後も連結名詞として維持するか。
 - `νίκη`、`δόξα`、`κύριος`等のGreek Semantic Layerをどの深さで追加するか。
@@ -288,7 +323,7 @@ Torah／Creation Orderとの接続は、生活の秩序、安全、安息日、�
 - 他ArkがPurpose Anchor Packetを消費した際のReality Reviewをどこへ返送するか。
 - 「主の勝利栄光のため」という言葉が過剰努力を誘発した場合のAutomatic Stop Ruleをどう定式化するか。
 
-## 17. Current Coordinate
+## 18. Current Coordinate
 
 ```text
 Repository Source Read
@@ -301,7 +336,7 @@ Repository Source Read
                   └─ Dedicated Thread Boot  ← AFTER CUTOVER
 ```
 
-## 18. Release Gate
+## 19. Release Gate
 
 このDocument Setを次のVersionまたはCanonical Releaseへ移行するには、少なくとも次が必要である。
 
