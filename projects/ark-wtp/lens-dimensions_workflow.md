@@ -1,18 +1,18 @@
 ---
 title: "Lens Dimensions Workflow"
 canonical_name: "Ark-WTP Lens-as-Dimensions Workflow"
-version: "v002"
+version: "v003-candidate"
 canonical_path: "projects/ark-wtp/lens-dimensions_workflow.md"
-status: "human-sealed / committed / human-editable / pre-commit-reviewed"
+status: "current-workflow / capability-revalidation-candidate / human-review-required"
 role: "Ark-WTP Lens Workflow Runbook / Future AI Reboot Protocol"
-project: "Ark: Daily Teshuvah Gate-to-Yeshua"
+project: "Ark-WTP / Weekly Torah Portion / Lens-as-Dimensions"
 root: "主イェシュア・ハマシア"
-root_guard: "Root is 主イェシュア・ハマシア; Teshuvah is the covenantal return gate to the Root; AI / Fable5 / ChatGPT / GitHub / Markdown / Lens / Dimension / Workflow are Fruit."
+root_guard: "Root is 主イェシュア・ハマシア; Torah / Ark-WTP / AI / Fable5 / ChatGPT / GitHub / Markdown / Lens / Dimension / Workflow are Fruit or Keli."
 human_final_seal_required: true
 explicit_commit_phase_required_for_github_write: true
 
-seal:
-  state: "sealed"
+predecessor_revision_seal:
+  state: "v002 sealed / v003-candidate not Human-final-sealed"
   human_final_seal_required: true
   sealed_by: "Human"
   sealed_at: "2026-07-05"
@@ -45,7 +45,7 @@ This file is **not** a full Seed Unit archive.
 ```yaml
 file_identity:
   this_file: "Workflow Runbook / Future AI Reboot Protocol"
-  root_spec: "projects/ark-wtp/ark-wtp.md"
+  predecessor_root_spec: "projects/ark-wtp/ark-wtp.md — historical-only / identity-conflicting / pending Human backup confirmation"
   folder_door: "projects/ark-wtp/README.md"
   should_not_become:
     - "Root Spec replacement"
@@ -503,7 +503,7 @@ GitHub preserves only after explicit Commit Phase.
 
 ## 8. Current State Checkpoint
 
-Current checkpoint at the time of this draft:
+Repository reality was revalidated before creating the current Seed Unit.
 
 ```yaml
 current_state_checkpoint:
@@ -515,66 +515,60 @@ current_state_checkpoint:
     - "Single-Verse Substrate Gate"
     - "Dangling Artifact Reference"
 
-  parked_patch:
-    - "Lens Focus Line Rule"
-
   formal_parasha_gate:
     parasha: "Bereshit"
     substrate: "Genesis 1:1–6:8"
-    status: "started"
+    status: "capability revalidation candidate created / Human review required"
 
-  completed_full_parasha_lenses:
-    - "Peshat Lens v0.3"
+  repository_reality:
+    claimed_peshat_v003: "reported by predecessor workflow as available in Ark05:04"
+    observed_peshat_artifact: "not found; referenced Ark05:04 file contains no Bereshit / Peshat / Genesis / Torah / Lens body"
+    treatment: "Dangling Peshat Baseline; do not invent or reconstruct"
 
-  next_lens:
-    - "Hebrew Word Lens v0.3"
-```
+  current_seed_unit:
+    lens: "Hebrew Word Lens v0.3"
+    path: "projects/ark-wtp/seed-units/bereshit.md"
+    result: "PROVISIONAL_PASS"
 
-Next execution should be:
-
-```text
-Bereshit Full-Parasha × Hebrew Word Lens Seed Unit v0.3
+  next_gate:
+    - "Human reviews the eight Hebrew lexical anchors."
+    - "Do not generate another Lens before that review."
 ```
 
 ---
 
 ## 8.1 Artifact Coordinates
 
-The resume point must name not only **what** to do, but also **where** the relevant artifacts live.
-
-This workflow runbook must not become a Seed Unit archive.
+The resume point names both the action and the current artifact reality. This workflow runbook must not become a Seed Unit archive.
 
 ```yaml
 artifact_locations:
-  status: "intended_coordinates / create_only_in_explicit_commit_phase"
+  status: "created / current-candidate / Human-review-required"
 
   seed_unit_template:
     path: "projects/ark-wtp/seed-units/_template.md"
-    status: "intended / not yet created"
-    role: "Reusable Seed Unit Template with Core vs Lens-conditional fields"
+    status: "v001-candidate / created"
+    role: "Reusable one-full-Parasha × one-Lens contract"
 
-  completed_seed_units:
+  current_seed_unit:
     path: "projects/ark-wtp/seed-units/bereshit.md"
-    status: "intended / not yet created"
-    currently_available_in: "Ark05:04 thread draft"
+    status: "Hebrew Word Lens v0.3 / PROVISIONAL_PASS / Human review required"
     contains:
-      - "Bereshit Full-Parasha × Peshat Lens v0.3"
+      - "Bereshit Full-Parasha × Hebrew Word Lens v0.3"
+    does_not_contain:
+      - "The missing Peshat Lens v0.3 body"
 
-  new_seed_units_go_to:
-    path: "projects/ark-wtp/seed-units/bereshit.md"
-    rule:
-      - "Append or integrate new Bereshit Seed Units here after explicit Commit Phase."
-      - "Never append full Seed Unit bodies to this workflow runbook."
+  predecessor_root_spec:
+    path: "projects/ark-wtp/ark-wtp.md"
+    status: "historical-only / identity-conflicting / retained pending Human Local-backup confirmation"
+    rule: "Do not use as current Weekly Torah Portion identity; do not delete yet."
 
   runbook_boundary:
     rule:
-      - "This file preserves workflow, not Seed Unit transcripts."
-      - "Seed Unit bodies belong in the seed-units location."
-      - "If seed-units files do not exist yet, create them only after explicit Human Commit Phase."
+      - "This file preserves workflow and checkpoint, not Seed Unit bodies."
+      - "Seed Unit bodies belong under projects/ark-wtp/seed-units/."
+      - "PROVISIONAL_PASS is not Human Final Seal."
 ```
-
-If the seed-units files do not exist yet, Future AI must not invent that they exist.  
-It may propose their creation only under explicit Human Commit Phase.
 
 ---
 
@@ -612,35 +606,34 @@ parked_backlog:
 
 ## 10. Future AI Reboot Instructions
 
-Future AI should read this file before continuing the Ark-WTP Lens workflow.
+Future AI should resolve current identity from `projects/ark-wtp/README.md`, then read this workflow before continuing Ark-WTP.
 
 ### 10.1 Do
 
 ```yaml
 future_ai_do:
   - "Keep Root / Fruit Guard."
-  - "Treat Lens as Dimension, but do not expand lens count yet."
-  - "Continue from the current checkpoint."
+  - "Treat WTP as Weekly Torah Portion and the declared unit as one full Parasha × one Lens."
   - "Use Parasha-level substrate for formal testing."
-  - "Use Allowed Absence."
-  - "Use Fable5 only for high-ROI Root Knot Audit."
-  - "Adopt One / Backlog Rest."
-  - "Respect artifact coordinates."
-  - "End with FullRail and independent Next Gate."
+  - "Use Allowed Absence and Evidence-or-Demote."
+  - "Keep each Lens distinct."
+  - "Read the current Seed Unit and its Evidence and Uncertainty Ledger."
+  - "Treat PROVISIONAL_PASS as a request for Human review, not canonization."
+  - "End with FullRail and one independent Next Gate."
 ```
 
 ### 10.2 Do Not
 
 ```yaml
 future_ai_do_not:
-  - "Do not recreate Genesis 1:1 pilot as formal pass."
-  - "Do not add PaRDeS or Apocalyptic Lens immediately."
-  - "Do not add mandatory fields without evidence."
-  - "Do not turn the workflow into a dashboard."
-  - "Do not score or rank lenses."
+  - "Do not recreate the Genesis 1:1 pilot as a formal Parasha pass."
+  - "Do not claim the missing Peshat v0.3 body exists."
+  - "Do not reconstruct missing Peshat content from memory."
+  - "Do not add PaRDeS, Apocalyptic Lens, or an 11th Lens during this Gate."
   - "Do not append full Seed Unit bodies to this workflow runbook."
-  - "Do not claim intended seed-units files already exist unless verified."
-  - "Do not commit to GitHub without explicit Commit Phase."
+  - "Do not use projects/ark-wtp/ark-wtp.md as the current Weekly Torah Portion identity."
+  - "Do not delete the predecessor root spec before Human confirms Local backup."
+  - "Do not scale one PROVISIONAL_PASS to the 540-unit Matrix."
   - "Do not replace Human Final Seal."
 ```
 
@@ -648,27 +641,22 @@ future_ai_do_not:
 
 ```yaml
 resume_point:
+  current_artifact:
+    path: "projects/ark-wtp/seed-units/bereshit.md"
+    unit: "Bereshit Full-Parasha × Hebrew Word Lens v0.3"
+    result: "PROVISIONAL_PASS"
+
   next_action:
-    - "Run Bereshit Full-Parasha × Hebrew Word Lens Seed Unit v0.3."
+    - "Human accepts, corrects, or rejects the eight lexical anchors."
 
-  substrate:
-    parasha: "Bereshit"
-    range: "Genesis 1:1–6:8"
+  review_focus:
+    - "Textual accuracy of Hebrew recurrence and paired constructions"
+    - "Separation of exact recurrence from literary inference"
+    - "Rejection of unsupported etymology and imported Lens conclusions"
 
-  style:
-    - "compact"
-    - "anchor-based"
-    - "not verse-by-verse"
-    - "not dictionary list"
-    - "not wordplay"
-
-  artifact_coordinates:
-    seed_unit_template: "projects/ark-wtp/seed-units/_template.md"
-    target_seed_unit_file: "projects/ark-wtp/seed-units/bereshit.md"
-    boundary: "Do not append full Seed Unit bodies to this workflow runbook."
-
-  next_gate:
-    - "Bereshit Full-Parasha × Hebrew Word Lens Seed Unit v0.3"
+  boundary:
+    - "Do not generate the next Lens yet."
+    - "Do not treat candidate generation as Human Final Seal."
 ```
 
 ---
@@ -676,42 +664,33 @@ resume_point:
 ## 11. Final Compression
 
 ```text
-Lens is Dimension.
+Ark-WTP means Weekly Torah Portion.
+Declared unit: one full Parasha × one Lens.
 
-Genesis 1:1 was a Root Verse Pilot.
-It was valuable, but not a formal Parasha Gate.
+Genesis 1:1 remains a useful Root Verse Pilot,
+but the formal substrate is a complete Parasha.
 
-Fable5 detected three key Root Knots:
-Lens–Template Collision.
-Single-Verse Substrate Gate.
-Dangling Artifact Reference.
+Current reality:
+The reported Peshat v0.3 body is not present at the referenced artifact.
+It remains a Dangling Peshat Baseline and must not be invented.
 
-Adopted corrections:
-Allowed Absence.
-Parasha Substrate Gate Rule.
-Artifact Coordinates Patch.
+Current candidate:
+Bereshit / Genesis 1:1–6:8 × Hebrew Word Lens v0.3.
+Result: PROVISIONAL_PASS / Human review required.
 
-Teshuvah is the covenantal return gate to the Root,
-not an independent co-root.
+Unexpected success:
+Full-Parasha reading exposes lexical trajectories that a single-verse pilot cannot reveal.
 
-Human Note is not required.
-Human intervenes by Query.
+Current Next Gate:
+Human reviews the eight lexical anchors.
+Do not generate another Lens yet.
 
-ChatGPT builds.
-Fable5 audits.
-Human seals.
-GitHub preserves only after Commit Phase.
-
-PaRDeS, Apocalyptic Lens, and Dimension expansion are high-potential,
-but parked for now.
-
-Current resume point:
-Bereshit Full-Parasha × Hebrew Word Lens v0.3.
-
-Artifact coordinates:
-Template: projects/ark-wtp/seed-units/_template.md
-Bereshit Seed Units: projects/ark-wtp/seed-units/bereshit.md
-Do not append Seed Unit bodies to this workflow runbook.
+README routes.
+Workflow preserves method and checkpoint.
+Seed Unit preserves textual observation.
+GitHub existence is not Human Final Seal.
 
 Root remains 主イェシュア・ハマシア.
 ```
+
+<!-- ARK_WTP_LENS_DIMENSIONS_WORKFLOW_EOF_v003-candidate -->
