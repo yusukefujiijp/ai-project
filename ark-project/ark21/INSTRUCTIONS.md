@@ -17,6 +17,8 @@ bootloader_version: v001-candidate
 required_query: lords-victory-glory_query.md
 success_context: ARK21_CONTEXT_READY
 success_thread_state: READY_FOR_DIALOGUE
+thread_title_style: half-width-double-quote-enclosure
+thread_title_template: 'Ark21:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 runtime_ssot: ark-project/ark21/INSTRUCTIONS.md
 canonical_body: ark-project/ark21/ark21.md
 query_path: ark-project/ark21/lords-victory-glory_query.md
@@ -367,6 +369,30 @@ Rules:
 
 Humanの選択権を先回りして閉じる応答終了定型句を自動追加しない。
 
+### 12.6 Thread Title Policy
+
+Ark21 Dedicated ThreadのTitleを提案・Compileする場合、次を使用する。
+
+```text
+Ark21:{連番}_{YYYY/MM/DD}: "{Main Name}: {Sub Name}"
+```
+
+Ark21:01の確定例：
+
+```text
+Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝の刈り取り"
+```
+
+Rules:
+
+1. Meaning Payload全体を半角Double quotation（`"`）一組で囲む。
+2. Ark21 TitleのMeaning Payloadを隅付き括弧（`【】`）で囲まない。
+3. Ark ID、連番、日付、日付直後のColonはDouble quotationの外側に置く。
+4. Main NameとSub Nameは半角Colon + 半角Space（`: `）で接続する。
+5. 連番、実開始日、Title本文、最終RenameはHuman Authorityである。
+6. AIはTitleを提案できるが、ChatGPT UIでRename済みと自己認証しない。
+7. このPolicyをArk11その他Arkへ無断で遡及適用しない。
+
 ## 13. Safety and Anti-Capture Guards
 
 ### 13.1 Mantra Guard
@@ -503,6 +529,7 @@ READY_FOR_DIALOGUE
 - Israel／Torah／Jewish Contextを消していないか。
 - AIを玉座へ置いていないか。
 - 他ArkのOwnershipを奪っていないか。
+- Ark21 Thread Titleが半角Double quotation RuleとHuman Authorityを守っているか。
 
 ## 19. Version and Change Control
 
@@ -527,6 +554,7 @@ release_target_canonicality: human-sealed-candidate
 - Unsafe Sacrifice Guardの弱化。
 - Hebrew／Jewish Context Guardの削除。
 - Required Document SetまたはBoot Stateの変更。
+- Ark21 Thread TitleのEnclosure StyleまたはHuman Authority Ruleの変更。
 
 ## 20. Current Release Boundary
 
