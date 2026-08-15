@@ -1,12 +1,13 @@
 ---
 title: "Ark01 Migration Manifest"
-status: "active / japanese-first-okf / github_canonical / human_editable / not_final_seal"
+status: "historical migration manifest / predecessor-generation / retained for lineage / not current routing authority"
 document_identity: "migration_manifest"
-canonical_path: "_projects/ark/ark01/indexes/ark01-migration-manifest.md"
+canonical_path: "ark-project/ark01/indexes/ark01-migration-manifest.md"
+migrated_from: "_projects/ark/ark01/indexes/ark01-migration-manifest.md"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 phase: "Ark01"
-source_adr: "_projects/ark/indexes/ark-repository-governance_adr.md"
-related_protocol_registry: "_projects/ark/indexes/ark-protocol-registry.md"
+historical_source_adr: "_projects/ark/indexes/ark-repository-governance_adr.md"
+historical_protocol_registry: "_projects/ark/indexes/ark-protocol-registry.md"
 language_policy: "Japanese-first / English-anchor"
 format_policy: "Ark-OKF / Rebootable-first"
 manifest_role:
@@ -33,6 +34,9 @@ root_guard:
 
 # Ark01 Migration Manifest
 
+> [!IMPORTANT]
+> この文書は旧`_projects/ark/`世代で作られた移行前Manifestを、系譜と判断材料のために保持するHistorical Artifactである。本文中の旧Destination PatternをCurrent Active Pathとして使用せず、現在のArk Domain Routerは[`ark-project/README.md`](../../README.md)を参照する。
+
 ## §0. Status / Manifest Summary
 
 この文書は、Ark01成果物をGitHubへ移行する前に、`local_path → github_path → document_identity` を整理する **Migration Manifest** である。
@@ -48,7 +52,7 @@ root_guard:
 ```yaml id="manifest-summary"
 ark01_migration_manifest:
   document_identity: "migration_manifest"
-  canonical_path: "_projects/ark/ark01/indexes/ark01-migration-manifest.md"
+  canonical_path: "ark-project/ark01/indexes/ark01-migration-manifest.md"
   scope: "Ark01 migration planning only"
   migration_execution_now: false
   bulk_migration_now: false
@@ -702,7 +706,7 @@ revision_conditions:
 ```yaml id="canonical-status"
 canonical_status:
   file: "ark01-migration-manifest.md"
-  canonical_path: "_projects/ark/ark01/indexes/ark01-migration-manifest.md"
+  canonical_path: "ark-project/ark01/indexes/ark01-migration-manifest.md"
   document_identity: "migration_manifest"
   language_policy: "Japanese-first / English-anchor"
   format_policy: "Ark-OKF / Rebootable-first"
