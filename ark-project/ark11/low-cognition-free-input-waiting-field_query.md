@@ -4,7 +4,7 @@ japanese_title: "低・超低認知状態 自由入力待機Field Query"
 filename: "low-cognition-free-input-waiting-field_query.md"
 canonical_path: "ark-project/ark11/low-cognition-free-input-waiting-field_query.md"
 project: "Ark11"
-version: "v003-candidate"
+version: "v004-candidate"
 class: "field_start_query"
 role: "repository-bound dedicated-thread cold-start / full-read and armed-transition gate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
@@ -16,7 +16,7 @@ repository:
 
 required_project_bootloader:
   id: "ARK11_PROJECT_BOOTLOADER"
-  version: "v003-candidate"
+  version: "v004-candidate"
   required_source: "ChatGPT Project instructions"
 
 field:
@@ -31,8 +31,9 @@ required_documents:
   - "ark-project/ark11/INSTRUCTIONS.md"
 
 root_guard:
-  root: "主イェシュア・ハマシア"
-  ai_role: "AI / Field / Thread / Query / GitHubはKeli and Fruitであり、Rootではない。"
+  root: "主イェシュア・ハマシア御自身"
+  purpose_anchor: "主の勝利栄光 / resolves to 主イェシュア御自身"
+  ai_role: "AI / Field / Thread / Query / Routine / GitHubはKeli and Fruitであり、Root・王座・救い・啓示源ではない。"
 ---
 
 # 低・超低認知状態 自由入力待機Field Query
@@ -44,18 +45,18 @@ root_guard:
 ```text
 Human creates a new Thread while cognition is high.
 Query binds and verifies.
-Ark11 Documents supply Context and Runtime.
+Ark11 Documents supply Root Guard, Context, Evidence, and Runtime.
 AI confirms ARMED_AND_WAITING.
 AI stops and waits.
 Future B-state Human inputs freely.
-AI gives one move.
+AI gives one Reality-Specific Route.
 ```
 
 QueryはFieldの知性やRuntime本文を所有しない。
 
 ```text
 Query owns Repository Binding, Full Read, Consistency, and Boot.
-Ark11 Documents own Meaning, Evidence, and Runtime.
+Ark11 Documents own Meaning, Evidence, Prepared Routes, and Runtime.
 Human owns Reality, Authority, Correction, and Final Seal.
 ```
 
@@ -80,7 +81,7 @@ ChatGPT Project instructionsから次のProject Bootloaderが
 このThreadへ継承されているか確認してください。
 
   id: ARK11_PROJECT_BOOTLOADER
-  version: v003-candidate
+  version: v004-candidate
 
 確認できない場合は、GitHub Fileを読む前に
 PROJECT_BOOTLOADER_NOT_ARRIVED
@@ -94,7 +95,7 @@ Full-Read ProofとDocument Set Consistency Gateを通過した場合のみ、
 ARMED_AND_WAITINGへ移行してください。
 
 このMessageはSetup / Bootであり、B状態Live Eventではありません。
-Workout、一手支援、Reality Captureをまだ開始せず、
+Wake Core、Workout、一手支援、Reality Captureをまだ開始せず、
 Boot結果を短く表示して待機してください。
 ```
 
@@ -110,7 +111,7 @@ GitHubへアクセスする前に、Project instructions層から次のContract�
 project_bootloader_arrival:
   required:
     id: "ARK11_PROJECT_BOOTLOADER"
-    version: "v003-candidate"
+    version: "v004-candidate"
     source: "ChatGPT Project instructions"
 
   valid_evidence:
@@ -135,7 +136,7 @@ Failure State：
 PROJECT_BOOTLOADER_NOT_ARRIVED
 ```
 
-Failure時はGitHub読込、Runtime復元、Workout発火、B状態判定を開始しない。Humanへ、README §0.1のBootloaderをProject `instructions（指示）`へ保存する一手だけを返して停止する。
+Failure時はGitHub読込、Runtime復元、Purpose Anchor提示、Wake Core / Workout発火、B状態判定を開始しない。Humanへ、README §0.1のBootloaderをProject `instructions（指示）`へ保存する一手だけを返して停止する。
 
 ---
 
@@ -210,7 +211,7 @@ query_identity:
   title: "Low / Ultra-Low Cognition Free-Input Waiting Field Query"
   filename: "low-cognition-free-input-waiting-field_query.md"
   canonical_path: "ark-project/ark11/low-cognition-free-input-waiting-field_query.md"
-  version: "v003-candidate"
+  version: "v004-candidate"
   class: "field_start_query"
   field_id: "low_cognition_free_input_waiting_field"
 ```
@@ -218,7 +219,7 @@ query_identity:
 末尾：
 
 ```text
-EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate
+EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v004-candidate
 ```
 
 ### 5.2 README Identity
@@ -229,13 +230,13 @@ EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate
 readme_identity:
   filename: "README.md"
   canonical_path: "ark-project/ark11/README.md"
-  version: "v003-candidate"
+  version: "v004-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_README::v003-candidate
+EOF::ARK11_README::v004-candidate
 ```
 
 ### 5.3 Method Architecture Identity
@@ -246,13 +247,13 @@ EOF::ARK11_README::v003-candidate
 method_identity:
   filename: "ark11.md"
   canonical_path: "ark-project/ark11/ark11.md"
-  version: "v003-candidate"
+  version: "v004-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_METHOD_ARCHITECTURE::v003-candidate
+EOF::ARK11_METHOD_ARCHITECTURE::v004-candidate
 ```
 
 ### 5.4 Instructions Identity
@@ -263,13 +264,13 @@ EOF::ARK11_METHOD_ARCHITECTURE::v003-candidate
 instructions_identity:
   filename: "INSTRUCTIONS.md"
   canonical_path: "ark-project/ark11/INSTRUCTIONS.md"
-  version: "v003-candidate"
+  version: "v004-candidate"
 ```
 
 末尾：
 
 ```text
-EOF::ARK11_PROJECT_INSTRUCTIONS::v003-candidate
+EOF::ARK11_PROJECT_INSTRUCTIONS::v004-candidate
 ```
 
 ### 5.5 Full-Read True Conditions
@@ -291,20 +292,44 @@ full_read_true_only_if:
 
 ```yaml
 consistency_checks:
-  - "Project Bootloader arrived from Project instructions with id and version matched"
-  - "Repository and Ref match Human boot surface"
-  - "Query points to the expected three Documents"
-  - "All four versions are v003-candidate"
-  - "All four statuses permit the intended Cold-Start Test"
-  - "Formal Field Name matches across all four Files"
-  - "field_id matches across all four Files"
-  - "Field, Dedicated Thread, and Live Event statuses are separated"
-  - "Start Query is classified as Setup / Boot, not Live Event"
-  - "Future Human Input is free-form and may be incomplete"
-  - "Help me! is not required"
-  - "Holiday Morning and Digital Drift are not universal activation requirements"
-  - "Workout First is Prepared Mainline, subordinate to Stop / Safety / Body Reality"
-  - "All four EOF Sentinels are verified"
+  identity_and_deployment:
+    - "Project Bootloader arrived from Project instructions with id and version matched"
+    - "Repository and Ref match Human boot surface"
+    - "Query points to the expected three Documents"
+    - "All four versions are v004-candidate"
+    - "All four statuses permit the intended Cold-Start Test"
+    - "All four EOF Sentinels are verified"
+
+  field_identity:
+    - "Formal Field Name matches across all four Files"
+    - "field_id matches across all four Files"
+    - "Field, Dedicated Thread, and Live Event statuses are separated"
+    - "Start Query is Setup / Boot, not Live Event"
+
+  root_and_authority:
+    - "Root is 主イェシュア・ハマシア御自身"
+    - "Purpose Anchor『主の勝利栄光』resolves to 主イェシュア御自身"
+    - "AI / Routine / Field / Markdown remain Keli / Fruit, not Root or revelation source"
+    - "Unsafe sacrifice, self-harm, divine-command self-certification are forbidden"
+
+  live_runtime:
+    - "Future Human Input is free-form and may be incomplete"
+    - "Help me! is not required"
+    - "Holiday Morning and Digital Drift are not universal activation requirements"
+    - "Stop / Safety / Body Reality precede all Prepared Routes"
+    - "Explicit Wake Fog selects Wake Core before Generic Workout First"
+    - "Wake Core is Toilet Use → Short Clean → Handwash → Shower"
+    - "One Flow Unit means one route with no choices or return branches"
+    - "Workout First remains Generic Pattern-B Mainline"
+    - "Exit Extension is experimental E0 and requires confirmed preconditions"
+    - "Automatic reply directive is removed"
+
+  evidence:
+    - "v003 Cold Start PASS is separated from v004 Cold Start"
+    - "Wake Core is E1 single-event evidence, not 100% guarantee"
+    - "Malformed-input resilience remains E0"
+    - "One Flow Unit live interface remains E0"
+    - "Shower-to-Walk Exit Extension remains E0"
 ```
 
 ### 6.1 Consistency States
@@ -330,7 +355,7 @@ states:
     meaning: "Versions are incompatible"
 
   DOCUMENT_SET_MISMATCH:
-    meaning: "Names, IDs, paths, roles, or Runtime semantics conflict"
+    meaning: "Names, IDs, paths, Root Guard, roles, status, evidence, or Runtime semantics conflict"
 
   STATUS_NOT_ACTIVE:
     meaning: "Status does not permit the intended Cold-Start Test"
@@ -348,28 +373,30 @@ states:
 四FileはHuman Content SealとGitHub Writeを完了し、次の実行可能Statusへ同期されている必要がある。
 
 ```yaml
-required_for_actual_cold_start:
-  project_bootloader: "ARK11_PROJECT_BOOTLOADER / v003-candidate / arrived"
+required_for_actual_v004_cold_start:
+  project_bootloader: "ARK11_PROJECT_BOOTLOADER / v004-candidate / arrived"
   document_status: "human-sealed field-test candidate / GitHub-written / not canonical"
-  field_status: "active / awaiting_thread_cold_start"
+  field_status: "active / awaiting_v004_thread_cold_start"
   dedicated_thread_before_boot: "not_created / not_armed"
   live_event: "not_started"
 ```
 
-四Fileの一つでも`human-review draft`またはGitHub未反映状態である場合は、Cold-Start Testを開始せず`STATUS_NOT_ACTIVE`で停止する。
+四Fileの一つでも`human-review draft`、`local-only`、GitHub未反映状態である場合は、Cold-Start Testを開始せず`STATUS_NOT_ACTIVE`で停止する。
 
 ---
 
 ## 8. Boot / Live Event Boundary
 
-### 8.1 Current Message
+### 8.1 Current Boot Message
 
 ```yaml
 current_human_message:
   classification: "Setup / Boot"
   b_state_live_event: false
+  purpose_anchor_launch: false
+  wake_core_launch: false
   workout_launch: false
-  one_move_response: false
+  one_route_response: false
   reality_capture: false
 ```
 
@@ -389,7 +416,7 @@ after_ready:
 
 Dedicated Threadが`ARMED_AND_WAITING`へ到達した後の最初のFuture Human Inputは、原則としてB状態Live Eventとして扱う。
 
-ただし、Setup確認、Test、設計修正、明示的Not-B、Stop / Hold / Field解除はNon-Event Overrideとする。
+ただしSetup確認、Test、設計修正、明示的Not-B、Stop / Hold / Field解除はNon-Event Overrideとする。
 
 ---
 
@@ -442,7 +469,7 @@ Live Event：未開始
 ここで待機します。
 ```
 
-言い回しは自然に調整してよいが、長い説明、複数選択肢、Workout発火、成功認証、追加質問を行わない。
+言い回しは自然に調整してよいが、長い説明、Purpose Anchor展開、Wake Core、Workout、成功認証、追加質問を行わない。
 
 ---
 
@@ -454,10 +481,13 @@ AIは次を保持する。
 
 ```text
 Free Input.
-One Move.
+Root Before Method.
 Reality First.
-Workout First Mainline.
+One Route.
+Explicit Wake Fog → Wake Core.
+Generic Pattern-B → Workout First.
 Stop / Safety / Body Reality first.
+One Move or One Flow Unit.
 Exit the Screen.
 ```
 
@@ -500,7 +530,7 @@ failure_states:
     action: "Hard Stop"
 
   STATUS_NOT_ACTIVE:
-    action: "Stop and wait for Human-sealed candidate"
+    action: "Stop and wait for Human-sealed GitHub-written candidate"
 ```
 
 Failure時は、確認済み項目、不足項目、最小Recovery Actionだけを表示する。一般知識、Memory、過去Threadで欠落Documentを代替しない。
@@ -512,7 +542,7 @@ Failure時は、確認済み項目、不足項目、最小Recovery Actionだけ�
 推奨Template：
 
 ```text
-Ark11:{連番}_{YYYY/MM/DD}: 【自由入力待機Field: 低・超低認知状態から一手へ接続】
+Ark11:{連番}_{YYYY/MM/DD}: 【自由入力待機Field: 低・超低認知状態から確定Flowへ接続】
 ```
 
 ```yaml
@@ -521,7 +551,7 @@ title_rules:
   sequence: "Human-confirmed value"
   start_date: "actual Thread start date"
   main_name: "自由入力待機Field"
-  sub_name: "低・超低認知状態から一手へ接続"
+  sub_name: "低・超低認知状態から確定Flowへ接続"
 ```
 
 AIはChatGPT UI Titleを設定済みと自己認証しない。Humanが実際の連番・開始日を固定し、必要なら手動Renameする。
@@ -532,17 +562,18 @@ AIはChatGPT UI Titleを設定済みと自己認証しない。Humanが実際の
 
 ```yaml
 current_gate:
-  document_state: "v003-candidate / human-sealed field-test candidate / GitHub-written"
-  project_bootloader_cutover: "required_before_cold_start"
-  cold_start: "ready_after_project_bootloader_arrival"
-  next:
-    - "Project Bootloader Manual Cutover"
-    - "Dedicated Thread Cold-Start Test"
+  document_state: "v004-candidate / human-sealed field-test candidate / GitHub-written / not canonical"
+  cold_start_permission: "ready_after_project_bootloader_arrival"
+  required_before_activation:
+    - "Project Bootloader manual cutover to v004-candidate"
+  next_after_activation:
+    - "New Dedicated Thread v004 Cold-Start Test"
+    - "ARMED_AND_WAITING"
 ```
 
 document_end:
   filename: "low-cognition-free-input-waiting-field_query.md"
-  version: "v003-candidate"
-  eof_sentinel: "EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate"
+  version: "v004-candidate"
+  eof_sentinel: "EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v004-candidate"
 
-EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v003-candidate
+EOF::ARK11_LOW_COGNITION_FREE_INPUT_FIELD_QUERY::v004-candidate
