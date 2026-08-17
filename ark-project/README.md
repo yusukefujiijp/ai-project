@@ -13,9 +13,9 @@ repository_home: "../README.md"
 agent_runtime: "../AGENTS.md"
 thread_title_policy_version: "v001-candidate"
 language_policy: "Japanese-first / English-anchor"
-updated: "2026-08-15"
-last_reality_reviewed: "2026-08-15"
-reviewed_scope: "predecessor-free numbered Ark topology / local front doors / Root document roles / Ark21 title policy / current locator integrity"
+updated: "2026-08-18"
+last_reality_reviewed: "2026-08-18"
+reviewed_scope: "Ark22 projectization and current locator addition / Ark21 v002 status correction / Odd-Even support routing / Ark22 four-document verification"
 human_final_seal_required: true
 ---
 
@@ -96,7 +96,8 @@ ARK.md
    ├─ ark05/  Markdown Layer system
    ├─ ark07/  Daily Teshuvah Gate-to-Yeshua
    ├─ ark11/  Foresight Waiting Trap / Low-Cognition Field
-   └─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
+   ├─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
+   └─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
 ```
 
 | Ark | Confirmed Role | Current Entry | Repository State |
@@ -107,7 +108,8 @@ ARK.md
 | Ark05 | Markdown Layer Core／Article Production Rail | [`ark05/README.md`](./ark05/README.md) | Local Router active |
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark11 | Foresight Waiting Trap／Low・Ultra-Low Cognition Field | [`ark11/README.md`](./ark11/README.md) | `v004-candidate`; Human-sealed field-test candidate |
-| Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v001-candidate`; Human-sealed candidate |
+| Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
+| Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
 
@@ -122,12 +124,27 @@ routing:
   ai_authority_or_first_legal_move: "../AGENTS.md"
   unclassified_seed: "ark00/README.md"
   existing_ark_mission: "Nearest arkNN README / Handoff / Query / Runtime"
+  cross_ark_support_or_closure: "ark22/README.md"
   reusable_prompt_or_query: "../prompts/"
   formal_new_ark_project: "Ark00 discernment → Human Projectization Gate → selected ArkNN"
   thread_continuity: "Explicitly named current Handoff or Query"
 ```
 
 AIは、番号が空いていること、Ideaが面白いこと、またはFolderを作成できることだけを理由に自動Project化しない。
+
+### 4.1 Odd / Even Support Orientation
+
+Human-confirmed Current Architectureとして、奇数系Arkは主としてMain / Front-Line、偶数系Arkは主としてSupport / Auxiliaryへ用いる。
+
+これはRankまたは自動Projectization Ruleではない。
+
+```yaml
+odd_even_orientation:
+  odd: "Main / Front-Line orientation"
+  even: "Support / Auxiliary orientation"
+  authority: "Human chooses Ark number and projectization"
+  guard: "Mission governs; numbering does not."
+```
 
 ---
 
