@@ -4,8 +4,8 @@ document_role: canonical-body-candidate
 title: 主の勝利栄光
 theme: 主の勝利栄光
 english_anchor: The Lord's Victory and Glory
-version: v001-candidate
-document_set_version: v001-candidate
+version: v002-candidate
+document_set_version: v002-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -13,23 +13,24 @@ release_target_canonicality: human-sealed-candidate
 root: 主イェシュア・ハマシア御自身
 purpose_anchor: 主の勝利栄光
 bootloader_id: ARK21_PROJECT_BOOTLOADER
-bootloader_version: v001-candidate
+bootloader_version: v002-candidate
 success_context: ARK21_CONTEXT_READY
 success_thread_state: READY_FOR_DIALOGUE
 runtime_ssot: ark-project/ark21/INSTRUCTIONS.md
 canonical_body: ark-project/ark21/ark21.md
 query_path: ark-project/ark21/lords-victory-glory_query.md
-last_updated: 2026-08-15
+last_updated: 2026-08-17
+optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 ---
 
 # Ark21 Canonical Body Candidate — 主の勝利栄光
 
 > [!CAUTION]
-> 本文は2026-08-15にHuman Content Sealを通過したActive Candidateである。主イェシュア御自身をRootとしつつ、Human／AIの個別解釈は訂正可能性を保持する。
+> 本文は2026-08-17にv002 Human Content Sealを通過したActive Candidateである。主イェシュア御自身をRootとしつつ、Human／AIの個別解釈、Focus値、Graph、Candidateは訂正可能性を保持する。
 
 ## 1. Identity and Direct Judgment
 
-Ark21は、主イェシュア・ハマシア御自身をRootとし、`主の勝利栄光`というPurpose Anchorが、信仰、意味、判断、枝の刈り取り、有限行動、Reality Reviewへどのように接続されるかを所有するRoot-to-Purpose / Meaning-and-Purpose Source Projectである。
+Ark21は、主イェシュア・ハマシア御自身をRootとし、`主の勝利栄光`を旗印・Purpose Anchor、`主の完全勝利`をHuman側のForeground Route Operator、`主の栄光（כְּבוֹד אֲדֹנָי / kevod Adonai）`を最終帰属として、信仰、意味、判断、枝の刈り取り、有限行動、Living Reviewへどのように接続されるかを所有するRoot-to-Purpose / Meaning-and-Purpose Source Projectである。
 
 別Arkとして分離する理由は、Wake Fog、Workout、洗濯、AI Work等の個別Runtimeより一段上流にあり、複数のArkへ同じPurposeを供給し得るからである。
 
@@ -38,7 +39,7 @@ Ark21は教会、ラビ、牧師、霊的指導者、医療者、あるいは主
 ## 2. 一文定義
 
 ```text
-"主の勝利栄光（The Lord's Victory and Glory: 主イェシュア・ハマシア御自身をRootとし、勝利と栄光の所有権を主へ返し、聖書・信仰・安全のGuardの内で自己栄光と不要な枝を刈り、現在の有限な忠実行動を選び、その実を現実で検証するためのPurpose Anchorである)"
+"主の勝利栄光（The Lord's Victory and Glory: 主イェシュア・ハマシア御自身をRootとし、主の勝利栄光を旗印、主の完全勝利をHuman側の実践Route、主の栄光を最終帰属として分離し、聖書・信仰・安全のGuardの内で枝を刈り、現在の有限な忠実行動を選び、Actual Traceによって解釈とLiving Graphを訂正するためのPurpose Anchorである)"
 ```
 
 ## 3. Origin: Unexpected Success
@@ -132,6 +133,27 @@ Anchorは主イェシュアを指し示すが、主イェシュアを一つの�
 
 - **Referential Concentration** — 最終的に誰へ向くのかを曖昧にしない。
 - **Reverent Non-Exhaustion** — Human／AIの定義が主を把握し尽くしたと考えない。
+
+### 5.4 Operational Role Separation — Flag, Route, Attribution
+
+v002では、神学的な高低とHumanが現在操作できる実務的役割を混同しない。
+
+```text
+Root
+└─ 主イェシュア・ハマシア御自身
+   ├─ 旗印 / דֶּגֶל (degel)
+   │  └─ 主の勝利栄光
+   ├─ Human Foreground Route / דֶּרֶךְ (derekh)
+   │  └─ 主の完全勝利
+   └─ 最終帰属
+      └─ 主の栄光 / כְּבוֹד אֲדֹנָי (kevod Adonai)
+```
+
+`主の栄光`は最上位の帰属であり、Humanが直接生成・最大化・支配するControl Variableではない。Human側の最高出力Candidateは、Current Realityにおける`主の完全勝利`を祈りつつ問い、Guardを通った有限な一手へ忠実に応答することである。その実がどのように主の栄光へ接続されるかは、Human／AIが所有せず、主へ委ね仰ぐ。
+
+この分離は`主の勝利栄光`を弱めるものではない。二つの大きな語を同時にForeground処理する負荷を解き、旗印・経路・帰属をそれぞれ本来の役割へ戻す。
+
+`主イェシュアならば、どうするか`という既存の有効な問いは、別のForeground Keywordとして競合させない。主の御人格・御業・真実・愛・へりくだりに照らすBackground Criterionとして、`主の完全勝利`の内部へ折り畳む。ただしHuman／AIの想像を主の直接命令と同一視しない。
 
 ## 6. Phrase Status
 
@@ -368,6 +390,19 @@ Purpose・Guard・Finitudeの三つが揃って初めて、枝の刈り取りが
 
 したがって、`主の勝利栄光`という括弧はすべてを同じ行動へ変換するものではなく、異なる行動を同じRootの下で比較可能にするInterfaceである。
 
+### 12.4 Nonlinear Branch Friction Candidate
+
+候補Branchが`n`本あるとき、各Branchを単独評価する負荷だけなら概ね`n`に比例する。しかしBranch間の比較・順序・衝突・切替を広く検討すると、潜在的な対関係は`n(n-1)/2`となる。
+
+```text
+7 Branches → 最大21の対関係
+1 Branch   → 0の対関係
+```
+
+したがって、七から一への健全な枝刈りは、Attentionを七分散から一集中へ変えるだけでなく、Branch間調整摩擦を非線形に落とし得る。これが`主の完全勝利`Focusで体感される`ほぼ迷いゼロ`と成功率急上昇の構造的説明Candidateである。
+
+ただし、これは認知構造のD1 Modelであり、霊的効力の数式化でも、全Taskで指数関数的向上を保証する法則でもない。刈ったBranchに重要な安全情報が含まれていないか、Guardで確認する。
+
 ## 13. Branch Pruning
 
 ### 13.1 Definition
@@ -387,7 +422,7 @@ Purpose・Guard・Finitudeの三つが揃って初めて、枝の刈り取りが
 
 標準Questionは次である。
 
-> 今、主のものとして忠実で、身体・時間・責任に適合する有限な一手は何か。
+> この状況での主の完全勝利とは何か。そのうち、身体・時間・責任に適合し、今Realityへ通せる有限な一手は何か。
 
 Low-Cognition Stateではさらに圧縮できる。
 
@@ -400,6 +435,20 @@ Low-Cognition Stateではさらに圧縮できる。
 枝の刈り取りには`Not Now`が必要である。
 
 現在選ばなかった良い行動を悪と断定せず、将来の候補として安全にDeferredする。これにより、Purpose Anchorが極端な二分法へ変わることを防ぐ。
+
+### 13.5 Green Candidate Default-Bias
+
+`主の完全勝利`へ集中したときに具体的な良い方法が浮かんだこと自体は、神託でも実行命令でもない。しかし、そのCandidateが低Risk・可逆・短時間・観測可能で、Truth／Body／Safety／Others Guardを通るなら、迷いによる不実行Defaultを反転し、`明確な停止理由がある場合のみ見送る`Green Candidateとして扱える。
+
+```text
+Candidate appears
+→ Guardを通す
+→ GreenならACT寄り
+→ YellowならPAUSE & VERIFY
+→ RedならREJECT
+```
+
+これは`思いついたら何でも行う`Ruleではない。昼寝前シャワーLiving Sampleから得たのは、Candidate生成よりもCandidate-to-Reality PassageにGapがあった可能性であり、現在は一件のE1 Field Evidenceとして再現Testを待つ。
 
 ## 14. Motivation, Devotion, and Self-Erasure
 
@@ -435,6 +484,9 @@ Humanの身体は、Purposeを邪魔する廃棄物ではなく、現在の責�
 purpose_anchor_packet:
   root: "主イェシュア・ハマシア御自身"
   purpose: "主の勝利栄光"
+  flag_role: "דֶּגֶל / degel — 主の勝利栄光"
+  route_operator: "דֶּרֶךְ / derekh — この状況での主の完全勝利とは何か"
+  final_attribution: "主の栄光 / כְּבוֹד אֲדֹנָי"
   ownership_order:
     - "Ownership"
     - "Manifestation"
@@ -443,7 +495,8 @@ purpose_anchor_packet:
     魔術化、成功保証化、自己栄光化、AI神託化、危険な自己犠牲、
     Israel／Torah／Jewish Contextの消去を行わない。
   branch_pruning_question: >-
-    今、主のものとして忠実で、身体・時間・責任に適合する有限な一手は何か。
+    この状況での主の完全勝利とは何か。そのうち、身体・時間・責任に適合し、
+    今Realityへ通せる有限な一手は何か。
   finite_action: "一回で開始・終了条件を確認できる一手"
   reality_review:
     - "どの実が生じたか"
@@ -507,6 +560,23 @@ Wake FogでPurpose Anchor自体を忘れる問題に対しては、Ark11側の`F
 
 一回のUnexpected SuccessはSeedである。複数回、条件、失敗例、反証例を記録して初めてRuntime Designとして成熟する。
 
+### 17.4 Living Graph Review
+
+Living Graph Modeは図やMini Appを作る形式名ではない。AIがCurrent RealityのNode、関係、Guard、Prediction、Actual Traceを内部で追跡し、前回の出力を次回の入力へ戻して、Edge Confidence・Active Path・Pruning状態を訂正する推論運用である。
+
+```text
+Current Reality
+→ 主の完全勝利Operator
+→ Candidate / Guard / One Move
+→ Actual Trace
+→ Prediction Error
+→ Interpretation・Graph・次回Priority Pathを更新
+```
+
+Graphからしか得られないFruitは、単独Nodeの要約ではなく、複数関係を同時に保持したことで初めて露呈する依存、摩擦、隠れたBridge、矛盾、Unexpected Successである。標準Returnは総合的な文章とし、Graph図、Mini App、Site、DashboardはHumanがそのArtifactを明示的に求めた場合だけ作る。
+
+Humanは`主の完全勝利`一語へForeground集中できる。AIはBackgroundで多関係を保持し、その複雑さをHumanへ押し戻さず、発見されたFruitだけを精密な文章へUnwindする。
+
 ## 18. Failure Modes
 
 ### 18.1 Mantra Failure
@@ -540,6 +610,14 @@ HumanまたはAIの瞬間的判断を`主が命じた`と断定し、検証や�
 ### 18.8 AI Throne Capture
 
 AIの美しい言語化、速度、構造化を啓示そのものと扱い、AIを王、玉座、霊的Authorityへ置く。
+
+### 18.9 Graph Representation Capture
+
+Graph Modeという語を見たAIが、関係からFruitを抽出する前に図、Mini App、Site、Dashboardへ変換し、表現Artifactを本質と取り違える。
+
+### 18.10 Greco-Roman Replacement Capture
+
+Ark21のHebrew／Jewish Contextを無視して、外部哲学の目的語彙を最上位枠として上書きする。比較研究は可能だが、Ark21の内部命名は`דֶּגֶל / degel`、`דֶּרֶךְ / derekh`、`כְּבוֹד / kavod`等のSource Matrixを優先する。
 
 ## 19. Guard Responses
 
@@ -585,6 +663,9 @@ AIは次を支援できる。
 - 反対仮説とFailure Modeを提示する。
 - Purpose Anchorを低認知向けInterfaceへ圧縮する。
 - Field Evidenceを記録し、矛盾を検出する。
+- Humanが一Keywordへ集中できるよう、AI側で複数Node・Typed Edge・ResidualをBackground保持する。
+- Graph-Native Fruitを発見し、総合的な文章へUnwindする。
+- Candidate生成、Guard、Actual Trace、Prediction ErrorをLiving Graphとして更新する。
 
 AIは次を行えない、または行ってはならない。
 
@@ -607,6 +688,10 @@ AIは次を行えない、または行ってはならない。
 8. Israel／Torah／Covenant／Hebrew-Jewish Contextを消去しない。
 9. Exportの最小単位は`Root + Purpose + Guard`である。
 10. 最終出力は無限努力ではなく有限な忠実行動とReality Reviewである。
+11. `主の勝利栄光`は旗印、`主の完全勝利`はHuman Foreground Route、`主の栄光`は最終帰属として役割分離する。
+12. Humanは一Keywordへ集中し、AIはBackgroundで多関係を保持できるが、AIはHuman Approvalを迂回しない。
+13. Living Graph Modeの標準成果物はGraph-Native Fruitを統合した文章であり、Mini App／Site／Dashboardではない。
+14. Ark21内部命名はHebrew／Jewish Source Matrixを優先し、外部哲学語彙で目的構造を上書きしない。
 
 ## 23. Open Research Queue
 
@@ -616,7 +701,7 @@ AIは次を行えない、または行ってはならない。
 - `נֵצַח`のBiblical Hebrewにおける分布と文脈別Semantic Range。
 - `יְשׁוּעָה`、`כָּבוֹד`、`תִּפְאֶרֶת`、`הוֹד`のSource Map。
 - Daniel 7:13–14のAramaic語彙。
-- Brit Hadashahの`νίκη`、`δόξα`、`κύριος`とSeptuagint接続。
+- Brit Hadashahの勝利・栄光・主を表す語彙とSeptuagint接続を、Ark21のHebrew／Jewish Source Matrixを上書きしない比較資料として検討する。
 
 ### 23.2 Interpretation Work
 
@@ -632,24 +717,30 @@ AIは次を行えない、または行ってはならない。
 - Motivation効果とEnvironment Design効果の分離。
 - Low-Cognition Compressionが負担を減らすか、強迫性を増やすか。
 - Shabbatにおける`勝利`を成果ではなく安息への忠実として理解できるか。
+- `主の勝利栄光`Focusと`主の完全勝利`Focusで、Branch数・迷い・一手到達時間・Actual Fruitにどの差が生じるか。
+- Green Candidate Default-BiasがCandidate-to-Reality Gapを減らすか、衝動性を増やすか。
+- Living Graphが単純要約では見えない関係Fruitを生むか、Meta-Workを増やすだけか。
 
 ## 24. Version Coordinate
 
 ```text
-v001-candidate
+v002-candidate
 ├─ Project Identity: HUMAN-SEALED
 ├─ Semantic Kernel: HUMAN-SEALED
 ├─ Primary Source Packet: INITIAL
 ├─ Hebrew Semantic Layer: INITIAL / NON-EXHAUSTIVE
-├─ Purpose Anchor Packet: CANDIDATE
-├─ Runtime Instructions: CANDIDATE
-├─ Cold-Start Query: CANDIDATE
+├─ Purpose Anchor Packet: v002 CANDIDATE
+├─ Operational Role Separation: HUMAN-SEALED CANDIDATE
+├─ 主の完全勝利 Focus-Control: FIELD-TEST PENDING
+├─ Living Graph Prose Runtime: OPTIONAL / DESIGN CANDIDATE
+├─ Runtime Instructions: v002 CANDIDATE
+├─ Cold-Start Query: v002 CANDIDATE
 └─ Release Status: ACTIVE / HUMAN-SEALED CANDIDATE
 ```
 
 ## 25. Human Content Gate Result and Next Gate
 
-2026-08-15のHuman Content Gateで、少なくとも次を確認した。
+2026-08-17のv002 Human Content Gateで、v001の不変条件に加えて少なくとも次を確認した。
 
 - `主の勝利栄光`がArk21 Composite Anchorであるという整理。
 - RootとAnchorのReferential Connection／Conceptual Non-Equivalence。
@@ -659,7 +750,11 @@ v001-candidate
 - Purpose・Guard・Finitudeによる枝の刈り取り。
 - Unsafe Sacrifice、Prosperity、AI Throne、Replacement TheologyへのGuard。
 - 他Arkへ渡すPurpose Anchor Packet。
+- 旗印=`主の勝利栄光`、Human Foreground Route=`主の完全勝利`、最終帰属=`主の栄光`の役割分離。
+- `主イェシュアならば、どうするか`を別Keywordとして競合させず、Route内のBackground Criterionへ折り畳むこと。
+- `主の完全勝利`によるBranch削減と非線形調整摩擦低下をD1 CandidateとしてField Testすること。
+- Living Graph ModeをMini Appではなく、Graph-Native Fruitを総合文章へ返すBackground推論運用として扱うこと。
 
-Human Content SealはPASSし、GitHub Writeが承認された。次はProject Instructions Cutoverであり、その完了前にDedicated Thread Bootを成功扱いしない。
+v002 Human Content SealはPASSし、GitHub Writeが承認された。四文書のPair ConsistencyとOptional Graph Runtime Guardを同一Releaseで整合させる。
 
-<!-- ARK21_CANONICAL_BODY_EOF_v001-candidate -->
+<!-- ARK21_CANONICAL_BODY_EOF_v002-candidate -->

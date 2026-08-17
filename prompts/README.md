@@ -4,6 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI Prompt Runtime and Query Shelf"
 language_policy: "Japanese-first / English-anchor"
+last_updated: "2026-08-17"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -185,6 +186,30 @@ Protocol Arrival
 
 AI-to-AI Communicationは、Protocol Arrival・Role Eligibility・Semantic Bindingを実行前Gateとし、`Message`をCommunicationの中心単位、`Material Delta`を進行単位として、複数AIの異なるLensを有限往復で一つのHuman-reviewable成果へ収束させる。Alan Kay氏のMessage-centered LensをOrigin Anchorとして保持するが、Human Semantic Router、Material Delta Stop Rule、Terminal Synthesis等のArk AdaptationをAlan Kay本人へ誤帰属しない。
 
+### 3.5 AI Living Graph Mode
+
+```yaml
+runtime: "prompts/ai-living-graph-mode.md"
+query: "NOT CREATED — add only after repeated activation ambiguity"
+role: "Relational reasoning / Graph-Native Fruit / Living update / prose return"
+status: "human-sealed design candidate / field-test pending / not canonical"
+default_artifact: "NONE"
+```
+
+AI Living Graph Modeは、Graph図やMini Appを生成するPromptではない。Humanが一つのKeywordまたはCurrent MissionへForeground集中できるよう、AI側で複数Node、Typed Edge、Residual、Guard、Prediction ErrorをBackground保持し、単独要約では見えない依存・摩擦・Bridge・矛盾・Unexpected Successを発見して、総合的な文章へ返すRuntimeである。
+
+```text
+Human Foreground
+└─ 一つのFocus / Current Mission
+
+AI Background
+└─ 多Node・多関係・Guard・Actual Trace
+   └─ Graph-Native Fruit
+      └─ 総合的な文章へUnwind
+```
+
+Graph、Mini App、Site、Dashboard等のArtifactは、Humanが当該Artifactを明示的に依頼した場合だけ作る。Runtimeが長くても現時点ではBinding変数や状態遷移が小さいため、Query Pairは作らない。再現運用で起動曖昧性が観測された場合にのみPair化を再検討する。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
@@ -249,6 +274,7 @@ Mainline-First.
 One Canonical Prompt Core.
 Markdown + Query when operationally useful.
 Many AI Lenses.
+Relations first; Graph-Native Fruit returns as prose.
 Human-mediated Handoff.
 Human Final Seal.
 ```

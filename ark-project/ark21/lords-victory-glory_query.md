@@ -1,10 +1,10 @@
 ---
 query_id: ARK21_LORDS_VICTORY_GLORY_QUERY
-query_version: v001-candidate
+query_version: v002-candidate
 ark_id: ARK21
 theme: 主の勝利栄光
 english_anchor: The Lord's Victory and Glory
-document_set_version: v001-candidate
+document_set_version: v002-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -15,9 +15,9 @@ repository: yusukefujiijp/ai-project
 ref: main
 query_path: ark-project/ark21/lords-victory-glory_query.md
 required_bootloader_id: ARK21_PROJECT_BOOTLOADER
-required_bootloader_version: v001-candidate
+required_bootloader_version: v002-candidate
 bootloader_id: ARK21_PROJECT_BOOTLOADER
-bootloader_version: v001-candidate
+bootloader_version: v002-candidate
 required_release_status: active-candidate
 required_release_canonicality: human-sealed-candidate
 success_context: ARK21_CONTEXT_READY
@@ -26,7 +26,9 @@ thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark21:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 runtime_ssot: ark-project/ark21/INSTRUCTIONS.md
 canonical_body: ark-project/ark21/ark21.md
-last_updated: 2026-08-15
+optional_reasoning_runtime: prompts/ai-living-graph-mode.md
+graph_runtime_required_for_boot: false
+last_updated: 2026-08-17
 ---
 
 # Ark21 Repository-Bound Cold-Start Query
@@ -48,7 +50,7 @@ ChatGPT Project instructionsから次のProject Bootloaderが
 このThreadへ継承されているか確認してください。
 
 id: ARK21_PROJECT_BOOTLOADER
-version: v001-candidate
+version: v002-candidate
 
 確認できない場合は、GitHub Fileを読む前に
 PROJECT_BOOTLOADER_NOT_ARRIVED
@@ -79,7 +81,7 @@ GitHubへAccessする前に、現在のThread Contextで次を確認する。
 ```yaml
 required_project_bootloader:
   id: ARK21_PROJECT_BOOTLOADER
-  version: v001-candidate
+  version: v002-candidate
   provenance: ChatGPT Project instructions
 ```
 
@@ -103,7 +105,7 @@ Project instructions由来の継承を実際に確認できる。
 
 ```text
 PROJECT_BOOTLOADER_NOT_ARRIVED
-不足: ARK21_PROJECT_BOOTLOADER / v001-candidate のProject instructions由来の継承確認
+不足: ARK21_PROJECT_BOOTLOADER / v002-candidate のProject instructions由来の継承確認
 ```
 
 このFailure後にGitHub Fileを読まない。代替Boot、推測、Artifact要約、神学的応答を開始しない。
@@ -143,7 +145,7 @@ Cold Start中はread-onlyである。
 このQueryを先頭のfront matterから次のEOF Markerまで全文読む。
 
 ```text
-ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v001-candidate
+ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v002-candidate
 ```
 
 ### 5.1 Full-Read Requirements
@@ -170,9 +172,9 @@ Query Full Read PASS後、次の順序で全文読む。
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark21/README.md` | Entry Point／Project Identity | `ARK21_README_EOF_v001-candidate` |
-| 2 | `ark-project/ark21/ark21.md` | Canonical Body Candidate | `ARK21_CANONICAL_BODY_EOF_v001-candidate` |
-| 3 | `ark-project/ark21/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK21_INSTRUCTIONS_EOF_v001-candidate` |
+| 1 | `ark-project/ark21/README.md` | Entry Point／Project Identity | `ARK21_README_EOF_v002-candidate` |
+| 2 | `ark-project/ark21/ark21.md` | Canonical Body Candidate | `ARK21_CANONICAL_BODY_EOF_v002-candidate` |
+| 3 | `ark-project/ark21/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK21_INSTRUCTIONS_EOF_v002-candidate` |
 
 このQuery自体をControl Plane Documentとして加え、Full Document Setは4文書とする。
 
@@ -211,22 +213,22 @@ full_read_proof:
   query:
     path: ark-project/ark21/lords-victory-glory_query.md
     first_section: front matter / query identity
-    final_nonempty_line: "<!-- ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v001-candidate -->"
+    final_nonempty_line: "<!-- ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v002-candidate -->"
     status: PASS | FAIL
   readme:
     path: ark-project/ark21/README.md
     first_section: front matter / project identity
-    final_nonempty_line: "<!-- ARK21_README_EOF_v001-candidate -->"
+    final_nonempty_line: "<!-- ARK21_README_EOF_v002-candidate -->"
     status: PASS | FAIL
   canonical_body:
     path: ark-project/ark21/ark21.md
     first_section: front matter / canonical body candidate
-    final_nonempty_line: "<!-- ARK21_CANONICAL_BODY_EOF_v001-candidate -->"
+    final_nonempty_line: "<!-- ARK21_CANONICAL_BODY_EOF_v002-candidate -->"
     status: PASS | FAIL
   runtime_ssot:
     path: ark-project/ark21/INSTRUCTIONS.md
     first_section: front matter / runtime instructions
-    final_nonempty_line: "<!-- ARK21_INSTRUCTIONS_EOF_v001-candidate -->"
+    final_nonempty_line: "<!-- ARK21_INSTRUCTIONS_EOF_v002-candidate -->"
     status: PASS | FAIL
 ```
 
@@ -251,14 +253,15 @@ Failure時は失敗pathと不足項目を明示する。
 | Ark ID | `ARK21` |
 | Theme | `主の勝利栄光` |
 | English Anchor | `The Lord's Victory and Glory` |
-| Document Set Version | `v001-candidate` |
+| Document Set Version | `v002-candidate` |
 | Release Status | `active-candidate` |
 | Release Canonicality | `human-sealed-candidate` |
 | Bootloader ID | `ARK21_PROJECT_BOOTLOADER` |
-| Bootloader Version | `v001-candidate` |
+| Bootloader Version | `v002-candidate` |
 | Runtime SSOT | `ark-project/ark21/INSTRUCTIONS.md` |
 | Canonical Body | `ark-project/ark21/ark21.md` |
 | Query | `ark-project/ark21/lords-victory-glory_query.md` |
+| Optional Reasoning Runtime | `prompts/ai-living-graph-mode.md` / Bootでは未読可 |
 | Thread Title Style | `half-width-double-quote-enclosure` |
 | Thread Title Template | `Ark21:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"` |
 
@@ -292,6 +295,21 @@ Purpose Anchor = 主の勝利栄光
 ```
 
 Purpose AnchorはRootを指し示すが、Rootを置換または定義し尽くさない。
+
+### 8.3.1 Operational Role Consistency
+
+4文書は、神学的な高低とHuman側の実務的Controlを混同せず、次の役割分離を保持する。
+
+```text
+Root              = 主イェシュア・ハマシア御自身
+Flag / דֶּגֶל      = 主の勝利栄光
+Human Route / דֶּרֶךְ = 主の完全勝利
+Final Attribution = 主の栄光 / כְּבוֹד אֲדֹנָי
+```
+
+- `主の栄光`は最終帰属であり、Humanが直接生成・支配するControl Variableとしない。
+- `主イェシュアならば、どうするか`は独立Foreground KeywordとしてFocusを分散させず、`主の完全勝利`内部のBackground Criterionとして扱う。
+- Human／AIの想像を主の直接命令と同一視しない。
 
 ### 8.4 Phrase-Status Consistency
 
@@ -363,6 +381,23 @@ Root
 - Unsafe Sacrifice／過労／身体安全破壊禁止。
 - Israel／Torah／Covenant／Hebrew-Jewish Context消去禁止。
 - Field EvidenceとTheological Proofの混同禁止。
+- Graph Representation Capture禁止。
+- Ark21のHebrew／Jewish Source Matrixを外部哲学の目的語彙で上書きしない。
+
+### 8.10.1 Optional Living Graph Runtime Consistency
+
+`prompts/ai-living-graph-mode.md`はArk21の4文書Boot Set外にあるOptional Runtimeである。したがって、通常Bootでは存在・Full Readを要求しない。
+
+Human RequestまたはTask条件により使用する場合のみ全文を読み、少なくとも次を確認する。
+
+```text
+Human Foreground = 主の完全勝利へ単一Focus
+AI Background    = 多Node・Typed Edge・Residualの保持
+Default Return   = Graph-Native Fruitを統合した総合文章
+Default Artifact = NONE
+```
+
+Graph Modeを理由にMini App、Graph図、Site、Dashboardを自動生成しない。ArtifactはHumanが当該Artifactを明示的に要求した場合のみ作る。
 
 ### 8.11 Ownership Boundary Consistency
 
@@ -424,6 +459,8 @@ ARK21_DOCUMENT_SET_CONSISTENCY_FAILED
 - `ARK21_GUARD_MISMATCH`
 - `ARK21_STATE_MISMATCH`
 - `ARK21_TITLE_POLICY_MISMATCH`
+- `ARK21_OPERATIONAL_ROLE_MISMATCH`
+- `ARK21_GRAPH_RUNTIME_GUARD_MISMATCH`
 
 Failureを勝手に修正・無視・推測補完してBootしない。
 
@@ -433,9 +470,11 @@ Full-Read ProofとConsistency GateがPASSした場合のみ、Runtimeを次へ�
 
 ```yaml
 resolved_runtime:
-  bootloader: ARK21_PROJECT_BOOTLOADER / v001-candidate
+  bootloader: ARK21_PROJECT_BOOTLOADER / v002-candidate
   runtime_ssot: ark-project/ark21/INSTRUCTIONS.md
   canonical_body: ark-project/ark21/ark21.md
+  optional_reasoning_runtime: prompts/ai-living-graph-mode.md
+  graph_runtime_loaded: false
   context: ARK21_CONTEXT_READY
   thread_state: READY_FOR_DIALOGUE
   live_theological_event: NOT_STARTED
@@ -464,7 +503,7 @@ Boot成功時は短く次を表示する。
 
 ```text
 1. Project Bootloader：PROJECT_BOOTLOADER_ARRIVED
-1.1 Bootloader：ARK21_PROJECT_BOOTLOADER / v001-candidate
+1.1 Bootloader：ARK21_PROJECT_BOOTLOADER / v002-candidate
 1.2 Full-Read／全EOF：PASS
 1.3 Document Set Consistency：PASS
 1.4 Context：ARK21_CONTEXT_READY
@@ -504,6 +543,8 @@ Boot後の最初のHuman Inputから、`INSTRUCTIONS.md`に従ってModeを判�
 
 - 自由なBrainDump。
 - `主の勝利栄光`と信仰に関する疑問。
+- `主の完全勝利`によるBranch Pruning／Focus-Controlの検証。
+- Living Graph Modeによる関係知見・Graph-Native Fruitの抽出。
 - Source Study Request。
 - 枝の刈り取りを必要とするDecision。
 - 他ArkへのPurpose Anchor Export設計。
@@ -528,9 +569,9 @@ Humanは完全な説明、定型文、`Help me!`を必須としない。
 
 ```yaml
 query_id: ARK21_LORDS_VICTORY_GLORY_QUERY
-query_version: v001-candidate
-required_bootloader: ARK21_PROJECT_BOOTLOADER / v001-candidate
-required_document_set_version: v001-candidate
+query_version: v002-candidate
+required_bootloader: ARK21_PROJECT_BOOTLOADER / v002-candidate
+required_document_set_version: v002-candidate
 required_release_status: active-candidate
 required_release_canonicality: human-sealed-candidate
 success_context: ARK21_CONTEXT_READY
@@ -541,8 +582,8 @@ thread_title_template: 'Ark21:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"
 
 ## 17. End Condition
 
-このQueryの責務は、Project Bootloader Arrival、Repository Binding、4文書Full Read、EOF Proof、Document Set Consistency、Runtime Resolution、短いBoot Outputまでで終了する。
+このQueryの責務は、Project Bootloader Arrival、Repository Binding、4文書Full Read、EOF Proof、Operational Roleを含むDocument Set Consistency、Runtime Resolution、短いBoot Outputまでで終了する。Optional Living Graph Runtimeは通常Bootへ追加しない。
 
 Boot後の対話内容は`INSTRUCTIONS.md`へ委譲する。
 
-<!-- ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v001-candidate -->
+<!-- ARK21_LORDS_VICTORY_GLORY_QUERY_EOF_v002-candidate -->
