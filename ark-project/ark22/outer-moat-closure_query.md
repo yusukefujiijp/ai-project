@@ -6,28 +6,35 @@ date: "2026-08-18"
 last_updated: "2026-08-18"
 canonical_path: "ark-project/ark22/outer-moat-closure_query.md"
 class: "repository_bound_cold_start_query"
-role: "Ark22 document-set resolver / full-read proof / consistency gate"
+role: "Ark22 bootloader arrival / document-set resolver / full-read proof / consistency gate"
 status: "human-sealed field-test candidate / not canonical"
 repository:
   full_name: "yusukefujiijp/ai-project"
   ref: "main"
+bootloader:
+  id: "ARK22_PROJECT_BOOTLOADER"
+  version: "v001-candidate"
+  required: true
+  provenance: "ChatGPT Project instructions"
 document_set:
   entry: "ark-project/ark22/README.md"
   canonical_body: "ark-project/ark22/ark22.md"
   runtime_ssot: "ark-project/ark22/INSTRUCTIONS.md"
 root: "主イェシュア・ハマシア御自身"
-bootloader_required: false
+bootloader_required: true
 language_policy: "Japanese-first / English-anchor"
 ---
 
 # Ark22 Outer-Moat Closure Query
-## Repository-Bound Cold-Start Gate
+## Project-Bootloader-Gated Repository Cold-Start
 
 ## 0. Purpose
 
-このQueryは、Ark22をPast Thread、Memory、推測だけから再構成せず、Current GitHub上のArk22 Document Setを全文取得・検証した後にのみArk22 Contextを起動するためのCold-Start Interfaceである。
+このQueryは、Ark22をHuman Message、Past Thread、Memory、GitHub本文、推測だけから再構成せず、まずChatGPT Project instructionsから継承されたArk22 Project Bootloaderの到着を確認し、その後にのみCurrent GitHub上のArk22 Document Setを全文取得・検証してArk22 Contextを起動するCold-Start Interfaceである。
 
 ```text
+Project Instructions supply Bootloader.
+Bootloader proves Ark22 arrival.
 Human supplies Repository / Ref / Query.
 Query resolves current documents.
 Full Read proves completeness.
@@ -39,6 +46,7 @@ Human Reality selects the moat.
 このQueryはArk22のSemantic TruthやRuntime Intelligenceを所有しない。
 
 ```text
+Project Bootloader arrives.
 README routes.
 ark22.md defines.
 INSTRUCTIONS governs.
@@ -51,7 +59,7 @@ Reality confirms.
 
 ## 1. Required Boot Surface
 
-推奨：
+推奨Human Message：
 
 ```yaml
 Repository:
@@ -64,29 +72,77 @@ Query:
   ark-project/ark22/outer-moat-closure_query.md
 ```
 
+ChatGPT Project instructionsから、次がこのThreadへ継承されていることをGitHub読込前に確認する。
+
+```yaml
+required_project_bootloader:
+  id: "ARK22_PROJECT_BOOTLOADER"
+  version: "v001-candidate"
+  provenance: "ChatGPT Project instructions"
+```
+
 Repository、Ref、Query PathをMemoryだけから補完しない。
+
+Human Message、Memory、過去Thread、GitHub本文へBootloader本文が存在しても、それをProject instructions由来のBootloader到着証明として代用しない。
 
 ---
 
-## 2. Read Order
+## 2. Boot Order / 起動順序
 
 ```yaml
-read_order:
+boot_order:
+  0: "Confirm ARK22_PROJECT_BOOTLOADER / v001-candidate from ChatGPT Project instructions"
   1: "ark-project/ark22/outer-moat-closure_query.md"
   2: "ark-project/ark22/README.md"
   3: "ark-project/ark22/ark22.md"
   4: "ark-project/ark22/INSTRUCTIONS.md"
 ```
 
-Ark22 v001ではChatGPT Project Instructions由来Bootloaderを必須にしない。
+```text
+Project Bootloader Arrival
+→ Repository Binding
+→ Query Full Read
+→ README Full Read
+→ Canonical Body Full Read
+→ Runtime Full Read
+→ Document Set Consistency Gate
+→ Current Request Binding
+```
 
-これはBootloaderを否定する決定ではなく、初回Field TestでRepository-bound Cold Startだけの運用価値を確認するためのSmallest Sufficient Architectureである。
+### 2.1 Project Bootloader Arrival Gate
+
+次をすべて満たす場合のみGitHub読込へ進む。
+
+```yaml
+bootloader_arrival_true_only_if:
+  - "Source is ChatGPT Project instructions"
+  - "id is ARK22_PROJECT_BOOTLOADER"
+  - "version is v001-candidate"
+  - "ark_id is ARK22"
+  - "repository is yusukefujiijp/ai-project"
+  - "ref is main"
+  - "runtime_ssot is ark-project/ark22/INSTRUCTIONS.md"
+  - "canonical_body is ark-project/ark22/ark22.md"
+  - "query is ark-project/ark22/outer-moat-closure_query.md"
+```
+
+確認できない場合：
+
+```yaml
+status: "PROJECT_BOOTLOADER_NOT_ARRIVED"
+action:
+  - "Stop before reading GitHub files."
+  - "Report only the missing or conflicting Bootloader fields."
+  - "Do not reconstruct Bootloader from Human Message, Memory, past Thread, or GitHub."
+```
+
+BootloaderはGitHub Document Setの内容を代替しない。到着確認後もQuery以下のFull-Read Proofを必ず通す。
 
 ---
 
 ## 3. Query Identity Proof
 
-冒頭で次を確認する。
+Query冒頭で次を確認する。
 
 ```yaml
 query_identity:
@@ -95,6 +151,10 @@ query_identity:
   canonical_path: "ark-project/ark22/outer-moat-closure_query.md"
   version: "v001-candidate"
   class: "repository_bound_cold_start_query"
+  bootloader_required: true
+  required_bootloader:
+    id: "ARK22_PROJECT_BOOTLOADER"
+    version: "v001-candidate"
 ```
 
 末尾で次を確認する。
@@ -175,6 +235,8 @@ full_read_true_only_if:
 
 途中で取得が切れた場合、未読位置から継続取得する。
 
+Bootloader到着確認はFull-Read Proofの代替ではない。
+
 ---
 
 ## 6. Document Set Consistency Gate
@@ -183,13 +245,20 @@ full_read_true_only_if:
 
 ```yaml
 consistency_checks:
+  bootloader:
+    - "Project instructions provenance was verified before GitHub read"
+    - "Bootloader id is ARK22_PROJECT_BOOTLOADER"
+    - "Bootloader version is v001-candidate"
+    - "Bootloader repository / ref / runtime / canonical body / query locators match this Query"
+
   identity:
     - "README and canonical body use Ark22 外堀埋め"
     - "Runtime identifies Ark22"
     - "Query resolves the exact current set"
 
   version:
-    - "all four documents are v001-candidate"
+    - "all four repository documents are v001-candidate"
+    - "Bootloader version is independently v001-candidate"
 
   repository:
     - "repository is yusukefujiijp/ai-project"
@@ -216,10 +285,6 @@ consistency_checks:
     - "Cleanup Paralysis prohibited"
     - "Support Mainification prohibited"
     - "scope inflation prohibited"
-
-  boot:
-    - "Project-Instructions Bootloader is not required in v001"
-    - "No missing Bootloader is silently invented"
 ```
 
 ---
@@ -229,7 +294,10 @@ consistency_checks:
 ```yaml
 states:
   READY:
-    meaning: "All required documents fully read and consistent"
+    meaning: "Project Bootloader arrived and all required repository documents were fully read and consistent"
+
+  PROJECT_BOOTLOADER_NOT_ARRIVED:
+    meaning: "Required Project-instructions Bootloader provenance, id, version, or locator fields were not confirmed"
 
   PARTIAL_READ:
     meaning: "One or more required documents not fully read"
@@ -238,7 +306,7 @@ states:
     meaning: "Expected EOF was not confirmed"
 
   VERSION_CONFLICT:
-    meaning: "Document versions conflict"
+    meaning: "Document versions or required Bootloader version conflict"
 
   DOCUMENT_SET_MISMATCH:
     meaning: "Path / role / identity mismatch"
@@ -262,6 +330,9 @@ READY以外ではArk22 RuntimeをCurrentとして起動しない。
 すべてPASSした場合のみ、Human-visibleに次へ圧縮してよい。
 
 ```text
+PROJECT_BOOTLOADER_ARRIVED
+ARK22_PROJECT_BOOTLOADER / v001-candidate
+
 ARK22_QUERY_ARRIVED
 ARK22_OUTER_MOAT_CLOSURE_QUERY / v001-candidate
 
@@ -339,10 +410,12 @@ report:
 
 次をしない。
 
+- Human MessageからProject Bootloader到着を代用認定
 - MemoryからCurrent Ark22を再構成
+- 過去ThreadからBootloader provenanceを代用
+- GitHub本文からBootloader到着を代用
 - 旧VersionへSilent Fallback
 - 存在しないFileを仮定
-- Missing Bootloaderを勝手に要求
 - READYを自己宣言
 
 ---
@@ -355,7 +428,7 @@ HumanはMission、Reality、Projectization、Correction、Final Seal、Stop権�
 
 AIはCurrent Repositoryを読み、構造化し、事前言語化し、Support Routeを提案するKeliである。
 
-Query、Runtime、Ark22、GitHubは王座ではない。
+Bootloader、Query、Runtime、Ark22、GitHubは王座ではない。
 
 ---
 
@@ -371,13 +444,25 @@ Ref:
 Query:
   ark-project/ark22/outer-moat-closure_query.md
 
+最初に、このHuman Message、Memory、過去Thread、GitHub本文ではなく、
+ChatGPT Project instructionsから次のProject Bootloaderが
+このThreadへ継承されているか確認してください。
+
+  id: ARK22_PROJECT_BOOTLOADER
+  version: v001-candidate
+
+確認できない場合は、GitHub Fileを読む前に
+PROJECT_BOOTLOADER_NOT_ARRIVED
+と不足項目だけを報告して停止してください。
+
+Project Bootloaderを確認できた場合のみ、
 上記Queryを最初から最後まで全文読み、
 記載されたArk22 Document Setを解決し、
 全FileのBeginning IdentityとEOF Sentinelを確認し、
 Full-Read ProofとDocument Set Consistency Gateを通過した場合のみ、
 Ark22 Contextを起動してください。
 
-過去Thread、Memory、推測でCurrent Repository Realityを代替しないでください。
+過去Thread、Memory、Human Message、推測でCurrent Repository RealityまたはBootloader到着を代替しないでください。
 ```
 
 ---
