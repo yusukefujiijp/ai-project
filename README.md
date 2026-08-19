@@ -1,14 +1,14 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v001"
+version: "v002"
 edition: "AI-first Root Bootloader"
-version_basis: "first explicitly versioned AI-first root README"
+version_basis: "v002 adds volatile Current Board and Minimal Reality Court routing"
 status: "active / human-sealed"
-updated: "2026-08-15"
-last_reality_reviewed: "2026-08-15"
-reality_review_base_commit: "63ca396ce1402d4453c4b42359e2456b3b02e7f1"
-reality_review_scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
+updated: "2026-08-20"
+last_reality_reviewed: "2026-08-20"
+reality_review_base_commit: "fa8ceeac1c08fa74bed8aa4dab3967216d817cf1"
+reality_review_scope: "Root boot routing, CURRENT_BOARD integration, Minimal Reality Court surfaces, and existing repository router integrity"
 role:
   - "Future AI First Read"
   - "Repository Constitution"
@@ -34,6 +34,8 @@ updated_reason:
   - "Align confirmed moved Topology-First, Ark-OKF, and KISS/YAGNI/DRY/LEAN files with root prompts/."
   - "Route numbered Ark families through ark-project/ and named projects through projects/."
   - "Remove current routes to missing predecessor-only surfaces."
+  - "Add CURRENT_BOARD.md as the volatile repository coordinate after the stable Root Bootloader."
+  - "Route repository fact verification to tools/check_repo_reality.py and the read-only Reality Court workflow."
 ---
 
 # ai-project
@@ -56,6 +58,17 @@ first_60_seconds:
     branch: "main"
     meaning: "GitHub上で共有するCanonical Current Reality"
 
+  current_board:
+    path: "CURRENT_BOARD.md"
+    role: "volatile operational coordinate / current proof / drift / single next action"
+    guard: "Root READMEを置換する第二憲法ではない。古いBoardを永続Currentとみなさずlive HEADとHuman Realityで確認する"
+
+  reality_court:
+    checker: "tools/check_repo_reality.py"
+    workflow: ".github/workflows/reality-check.yml"
+    role: "bounded machine verification of repository facts"
+    guard: "Human Mission / Meaning / faith / Human Final Seal / Canonical intentを判定しない"
+
   default_ai_mode:
     - "Read"
     - "Observe"
@@ -72,6 +85,7 @@ first_60_seconds:
 
   first_route:
     - "Read this Root README."
+    - "Read CURRENT_BOARD.md for the volatile repository coordinate."
     - "Read the Current Human request and supplied sources."
     - "Move to the nearest Domain / Project README."
     - "Read the current Handoff or Project-specific canonical files when supplied."
@@ -93,7 +107,7 @@ Reality confirms.
 Harvest preserves.
 ```
 
-> **Boot first. Route second. Execute only after authority.**
+> **Boot first. Route through the Current Board. Execute only after authority.**
 
 ---
 
@@ -101,12 +115,22 @@ Harvest preserves.
 
 ```yaml
 current_coordinate:
-  root_readme_version: "v001"
+  root_readme_version: "v002"
   edition: "AI-first Root Bootloader"
-  updated: "2026-08-15"
-  last_reality_reviewed: "2026-08-15"
-  reviewed_against_main_commit: "71267c94501870b902471ccd0fd016dc4752e416"
+  updated: "2026-08-20"
+  last_reality_reviewed: "2026-08-20"
+  reviewed_against_main_commit: "fa8ceeac1c08fa74bed8aa4dab3967216d817cf1"
   canonical_branch: "main"
+
+  volatile_coordinate:
+    path: "CURRENT_BOARD.md"
+    read_after_root: true
+    purpose:
+      - "Current repository gate"
+      - "Current proof"
+      - "Open drift"
+      - "Single next action"
+      - "Observed Reality Court evidence"
 
   currentness_scope:
     stable_here:
@@ -116,6 +140,14 @@ current_coordinate:
       - "Mainline-First"
       - "Reality Delta handling"
       - "Root / Fruit Guard"
+      - "Current Board routing"
+      - "Reality Court role boundary"
+
+    delegated_to_current_board:
+      - "Volatile repository gate"
+      - "Latest machine-check evidence"
+      - "Open repository drift"
+      - "Single repository-level next action"
 
     delegated_to_nearest_readme:
       - "Active Project list"
@@ -126,11 +158,13 @@ current_coordinate:
 
   freshness_rule:
     - "Currentという語を無期限の最新保証と解釈しない"
-    - "updated / last_reality_reviewed / live repository evidenceを併読する"
-    - "変動情報はNearest READMEまたはCurrent Handoffを優先確認する"
+    - "updated / last_reality_reviewed / CURRENT_BOARD / live repository evidenceを併読する"
+    - "変動情報はCURRENT_BOARD、Nearest README、Current Handoffを優先確認する"
 ```
 
 このRoot READMEは、Repository全体の**安定した入口と上位契約**を保持する。
+
+`CURRENT_BOARD.md`は、Rootを頻繁に書き換えずに揮発性の現在座標を保持するOperation Boardである。Root READMEとCurrent Boardが競合する場合、Rootは憲法・Authority Guardとして、Boardは揮発性のRepository Operation Evidenceとして役割を分ける。
 
 すべてのActive Fileや全Project番号を列挙するInventoryではない。  
 変化しやすい情報をRootへ詰め込みすぎると、Root自身が再び古くなるためである。
@@ -191,15 +225,18 @@ GitHub Canonical Firstは、すべてをGitHubへ入れるという意味では�
 
 ```text
 1. Root README.md
-2. Current Human Request / Current Conversation
-3. User-specified Sources and Read Order
-4. Nearest Domain / Project README
-5. Current Project File / Handoff / Manifest
-6. Required Runtime + Query Pair
-7. Repository Reality Check
-8. Human-AI Alignment
-9. Plan / Execution Gate when needed
+2. CURRENT_BOARD.md
+3. Current Human Request / Current Conversation
+4. User-specified Sources and Read Order
+5. Nearest Domain / Project README
+6. Current Project File / Handoff / Manifest
+7. Required Runtime + Query Pair
+8. Repository Reality Check when needed
+9. Human-AI Alignment
+10. Plan / Execution Gate when needed
 ```
+
+`CURRENT_BOARD.md`のRead OrderがHuman Authorityより上位という意味ではない。**Authority PriorityではCurrent explicit Human instructionが最優先**であり、BoardはRepositoryの揮発性証拠を早期に取得するためのRead Surfaceである。
 
 ### 3.1 Read Order Priority
 
@@ -208,10 +245,11 @@ read_order_priority:
   1: "Current explicit Human instruction"
   2: "User-specified read order and supplied sources"
   3: "Root README global guards"
-  4: "Nearest Domain / Project README"
-  5: "Current Handoff / Manifest / Project canonical files"
-  6: "Relevant Runtime, nearest README, or canonical metadata"
-  7: "Historical files only when needed"
+  4: "CURRENT_BOARD volatile repository evidence"
+  5: "Nearest Domain / Project README"
+  6: "Current Handoff / Manifest / Project canonical files"
+  7: "Relevant Runtime, nearest README, or canonical metadata"
+  8: "Historical files only when needed"
 ```
 
 ### 3.2 Boot Behavior
@@ -220,6 +258,7 @@ read_order_priority:
 boot_behavior:
   do:
     - "Confirm Current Coordinate."
+    - "Confirm CURRENT_BOARD status and freshness."
     - "Confirm source version and status."
     - "Classify confirmed / inferred / unknown."
     - "Detect stale or conflicting context."
@@ -228,13 +267,14 @@ boot_behavior:
 
   do_not:
     - "Assume an old file is current merely because it is detailed."
+    - "Assume an old CURRENT_BOARD is current merely because it is at repository root."
     - "Ask the Human to repeat facts already supplied."
     - "Invent missing paths, versions, branches, or permissions."
     - "Start GitHub mutation during reading or review."
     - "Turn every new Thread into a new Project automatically."
 ```
 
-> **The Root README starts the boot. The nearest README completes the route.**
+> **The Root README starts the boot. The Current Board fixes the volatile coordinate. The nearest README completes the route.**
 
 ---
 
@@ -251,6 +291,9 @@ reality_layers:
   canonical_github_reality:
     meaning: "main上でHuman Seal後に保存されたpublic-safe Current Reality"
 
+  volatile_repository_board:
+    meaning: "CURRENT_BOARD.mdに置くRepository-level current proof / drift / next action。Canonical Constitutionそのものではない"
+
   living_human_reality:
     meaning: "Current ConversationでHumanが明示する現在の経験、判断、変更"
 
@@ -265,6 +308,7 @@ reality_layers:
 
 ```text
 Canonical File
++ CURRENT_BOARD
 + Current Human Statement
 + Live Repository Evidence
 ↓
@@ -295,6 +339,11 @@ reality_delta_guard:
     - "Do not erase the historical value of the old document."
     - "Propose status change, replacement, archive note, or rewrite only when useful."
 
+  if_current_board_conflicts_with_live_repository_evidence:
+    - "Live repository evidence wins on mechanically checkable facts."
+    - "Mark CURRENT_BOARD as stale or update-candidate."
+    - "Do not silently repair meaning-bearing fields without Human authority."
+
   if_repository_reality_conflicts_with_ai_memory:
     - "Repository Reality wins."
     - "Correct the AI model."
@@ -308,6 +357,7 @@ reality_delta_guard:
 
 ```text
 GitHub stores Canonical Reality.
+CURRENT_BOARD exposes volatile repository evidence.
 Human carries Living Reality.
 AI detects the Delta.
 Dialogue reconciles.
@@ -321,7 +371,15 @@ Reality confirms.
 このSectionは**全File一覧ではない**。  
 新規AIを、現在確認できる主要な入口へ送るためのGlobal Routerである。
 
-### 5.1 Project and System Layer
+### 5.1 Current Operational Layer
+
+| Path | Role | Read when |
+|---|---|---|
+| [`CURRENT_BOARD.md`](CURRENT_BOARD.md) | Volatile Current Board / repository proof / drift / single next action | Root Boot直後。Repositoryの現在座標を確認する時 |
+| [`tools/check_repo_reality.py`](tools/check_repo_reality.py) | Minimal Reality Court / checked-tree fact verifier | Repository fact validation、warning baseline、Reality Reviewを行う時 |
+| [`.github/workflows/reality-check.yml`](.github/workflows/reality-check.yml) | Read-only GitHub Actions runner for Minimal Reality Court | push / PR / manual Court executionの定義を確認する時 |
+
+### 5.2 Project and System Layer
 
 | Path | Role | Read when |
 |---|---|---|
@@ -329,13 +387,13 @@ Reality confirms.
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
 
-### 5.2 Prompt and Skill Layer
+### 5.3 Prompt and Skill Layer
 
 | Path | Role | Read when |
 |---|---|---|
 | [`prompts/README.md`](prompts/README.md) | Cross-AI Prompt Runtime and Query Shelf | Prompt / Queryを選ぶ時 |
 
-### 5.3 Thread Lifecycle Layer
+### 5.4 Thread Lifecycle Layer
 
 | Path | Role | Read when |
 |---|---|---|
@@ -345,7 +403,7 @@ Reality confirms.
 | [`_tasks/README.md`](_tasks/README.md) | Task field orientation | Current Task群を扱う時 |
 | [`_note/README.md`](_note/README.md) | Note shelf orientation | Canonical化前のNoteを扱う時 |
 
-### 5.4 High-Grade Shared Lenses and Formats
+### 5.5 High-Grade Shared Lenses and Formats
 
 | Path | Role | Read when |
 |---|---|---|
@@ -354,13 +412,15 @@ Reality confirms.
 | [`prompts/kiss-yagni-dry-lean.md`](prompts/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
 | [`ss_super-special/CHATGPT.md`](ss_super-special/CHATGPT.md) | Highest-grade shared Covenant / behavior map | All-Project級のAI behaviorを確認する時 |
 
-### 5.5 Router Guard
+### 5.6 Router Guard
 
 ```yaml
 router_guard:
   - "Do not read every file mechanically."
+  - "Read Root README and CURRENT_BOARD before choosing a deep repository route."
   - "Read the smallest sufficient route for the Current Mission."
   - "Use the nearest front door before deep files."
+  - "When CURRENT_BOARD and live repository evidence conflict, live machine-checkable evidence wins on facts."
   - "When a Domain README and Root README differ on volatile detail, inspect live evidence."
   - "Do not duplicate a child README inside the Root README."
 ```
@@ -533,6 +593,34 @@ full_rail_guard:
 AIが直接確認できるRealityは、直接確認する。  
 確認できない外部Realityは、Human-mediated verificationへ渡し、未確認のまま完了を宣言しない。
 
+### 8.4 Minimal Reality Court
+
+`tools/check_repo_reality.py`は、Repository Reality Reviewのうち**機械的に判定可能な狭い事実**を補助する。
+
+```yaml
+minimal_reality_court:
+  hard_errors:
+    - "Required Court surfaces missing"
+    - "Markdown UTF-8 decode failure"
+    - "Whitespace-only README"
+    - "CURRENT_BOARD required metadata missing"
+
+  warnings:
+    - "front-matter canonical_path target missing"
+    - "internal Markdown target missing"
+    - "internal link escapes repository root"
+    - "Root README does not route to CURRENT_BOARD"
+
+  not_authority_for:
+    - "Mission"
+    - "Meaning"
+    - "Faith / spiritual Reality"
+    - "Human Final Seal"
+    - "Canonical promotion / retirement"
+```
+
+Court PASSはRepositoryの全意味が正しいという宣言ではない。Court FAILもHuman Missionの失敗ではない。
+
 ---
 
 ## 9. README and Repository Maintenance / 更新運用
@@ -559,13 +647,34 @@ readme_delta_check:
 
   propagation:
     - "Nearest README first"
+    - "CURRENT_BOARD when volatile repository proof / gate / next action changes"
     - "Domain Parent README when navigation changes"
     - "Root README only when repository-level boot or route changes"
 
   automatic_write: false
 ```
 
-### 9.2 Version and Freshness Contract
+### 9.2 Current Board Update Rule
+
+`CURRENT_BOARD.md`はRoot READMEより更新頻度が高くてよい。ただし、毎Commitで機械的に更新する必要はない。
+
+```yaml
+current_board_update_rule:
+  update_candidate_when:
+    - "Repository-level current gate materially changes"
+    - "Court result changes confirmed repository evidence"
+    - "Single next action changes"
+    - "A P0/P1 drift is closed, reclassified, or newly discovered"
+    - "Board would route Future AI incorrectly"
+
+  do_not:
+    - "Hard-code the SHA of the same commit that contains the Board"
+    - "Turn Board into a full repository inventory"
+    - "Use Board as a replacement for Domain README or Human Reality"
+    - "Treat inferred Court result as observed evidence"
+```
+
+### 9.3 Version and Freshness Contract
 
 ```yaml
 version_freshness_contract:
@@ -586,10 +695,10 @@ version_freshness_contract:
   freshness_rule:
     - "Do not use updated date as proof that every child path is current."
     - "Record the scope of the Reality Review."
-    - "Keep volatile detail in the nearest README."
+    - "Keep volatile detail in CURRENT_BOARD or the nearest README."
 ```
 
-### 9.3 Selective Duplication Contract
+### 9.4 Selective Duplication Contract
 
 ```yaml
 selective_duplication:
@@ -601,6 +710,7 @@ selective_duplication:
     - "No silent Scope expansion"
 
   delegate_when_maintenance_heavy:
+    - "Volatile repository proof / next action → CURRENT_BOARD"
     - "Detailed Domain topology"
     - "Full active file inventories"
     - "Runtime implementation details"
@@ -615,6 +725,12 @@ selective_duplication:
 operating_principles:
   README_first:
     meaning: "Full migration前に正しいpublic-safe入口を作る"
+
+  Current_Board:
+    meaning: "Rootを安定させたまま、揮発性のRepository現在座標・証拠・次の一手を一枚へ固定する"
+
+  Reality_Court:
+    meaning: "Human判断と分離して、機械判定可能なRepository factだけを自動検査する"
 
   GitHub_Canonical_First:
     meaning: "stable pathをpublic-safeな正準記録として扱う"
@@ -675,6 +791,8 @@ root_fruit_guard:
     - "GitHub"
     - "Markdown"
     - "README"
+    - "CURRENT_BOARD"
+    - "Reality Court"
     - "Prompt"
     - "Query"
     - "Skill"
@@ -687,6 +805,7 @@ root_fruit_guard:
   guard:
     - "FruitをRoot化しない"
     - "AIを王座化しない"
+    - "Current BoardやCourtを王座化しない"
     - "ProtocolをMissionより上位にしない"
     - "Repositoryを救いそのものとして扱わない"
 ```
@@ -708,21 +827,24 @@ cold_start_test:
     - "このRepositoryは何か"
     - "Rootは誰か"
     - "Canonical branchはどこか"
+    - "CURRENT_BOARDのcurrent_gate / next_action / freshnessは何か"
     - "Current Human requestは何か"
     - "次に読むNearest READMEは何か"
     - "参照Fileのversion / status / freshnessは何か"
+    - "最新Court resultはobservedかunknownか"
     - "GitHub Write Authorityはあるか"
-    - "CanonicalとLiving RealityにDeltaがあるか"
+    - "Canonical / Board / Living Human RealityにDeltaがあるか"
     - "最初の合法手は何か"
     - "何を絶対に自動実行してはいけないか"
 
   pass_when:
-    - "10問すべてへ根拠付きで回答可能"
+    - "12問すべてへ根拠付きで回答可能"
     - "不明点をUnknownとして保持可能"
+    - "CourtのUnknownをPASS/FAILへ捏造しない"
     - "Humanへ同じ説明を不必要に繰り返させない"
 ```
 
-答えられない場合は、闇雲に全Fileを読むのではなく、Nearest Front Door、Current Handoff、Live Repository Evidence、Human Instructionへ戻る。
+答えられない場合は、闇雲に全Fileを読むのではなく、`CURRENT_BOARD.md`、Nearest Front Door、Current Handoff、Live Repository Evidence、Human Instructionへ戻る。
 
 ---
 
@@ -745,6 +867,13 @@ First AI Mode:
 Canonical GitHub Reality:
   main.
 
+Volatile Repository Coordinate:
+  CURRENT_BOARD.md.
+
+Machine Fact Check:
+  tools/check_repo_reality.py
+  + .github/workflows/reality-check.yml.
+
 Current Human Reality:
   Current Conversation and supplied evidence.
 
@@ -757,6 +886,7 @@ When they differ:
 
 Read Route:
   Root README
+  → CURRENT_BOARD
   → Current Human Request
   → Nearest README
   → Current Project / Handoff
@@ -772,11 +902,16 @@ Collaboration:
   Human keeps Mission, Meaning, Judgment, and Final Seal.
 
 Maintenance:
+  Stable constitution in Root README.
+  Volatile coordinate in CURRENT_BOARD.
+  Bounded machine facts in Reality Court.
   Every Thread README Check.
   Not Every Thread README Update.
 
 Core:
   Markdown governs.
+  Board coordinates.
+  Court checks bounded facts.
   Query activates.
   Human seals.
   Full Rail executes.
