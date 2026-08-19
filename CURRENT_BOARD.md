@@ -9,7 +9,7 @@ reality_base_commit: "27e0329a5702a46257d72aaa3e684f17e5b64e51"
 head_resolution: "derive live at read/check time; do not hard-code self-referential HEAD"
 last_verified: "2026-08-20"
 review_scope: "root-routing / current-board / required-file existence / UTF-8 / empty README / front-matter canonical_path / internal Markdown links"
-current_gate: "RC-01 surfaces committed / first push-run result not directly observable by current connector"
+current_gate: "RC-01 Board + Court + Root routing implemented / first push-run result not directly observable by current connector"
 next_action_id: "RC-01-OBSERVE-FIRST-RUN"
 human_seal_required_for: "canonical cutover / retirement / public write / destructive change"
 root_guard: "Root and Human-AI authority remain governed by README.md; this Board is a Keli, not Root or constitution."
@@ -33,7 +33,7 @@ canonical_branch: "main"
 reality_base_commit: "27e0329a5702a46257d72aaa3e684f17e5b64e51"
 live_head: "derive from GitHub / Actions GITHUB_SHA; do not embed"
 board_status: "experimental-active"
-current_gate: "RC-01 surfaces committed / first-run evidence pending direct observation"
+current_gate: "RC-01 Board + Court + Root routing implemented; first-run evidence pending direct observation"
 next_action: "Observe the first Reality Court run and classify errors/warnings without broad migration."
 ```
 
@@ -70,7 +70,7 @@ Attempt
 
 ## 2. One-Line Current State
 
-`ai-project` is a README-first / Markdown-centered Human-AI collaboration workspace with strong governance and restart memory; RC-01 adds a small operational Board and a machine-checkable Court so basic repository facts no longer depend only on Human/AI recollection.
+`ai-project` now has a stable Root Constitution, a volatile `CURRENT_BOARD.md`, and a read-only Minimal Reality Court. The remaining RC-01 uncertainty is not implementation existence but **direct observation of the first push-triggered Court result through the currently exposed AI tooling**.
 
 ---
 
@@ -79,13 +79,14 @@ Attempt
 | Claim | Evidence | Evidence Type | Last Verified | State |
 |---|---|---|---|---|
 | Root Bootloader / constitution exists | `README.md` | live repository evidence | 2026-08-20 | confirmed |
+| Root README version is v002 and routes through Current Board | `README.md` | live repository evidence | 2026-08-20 | confirmed |
 | Canonical branch is `main` | Repository metadata / Root README | live repository evidence | 2026-08-20 | confirmed |
 | Ark21:06 Session Harvest exists and is non-empty | `ark-project/ark21/Ark21-06/README.md` | live repository evidence | 2026-08-20 | confirmed |
 | Current Board exists | `CURRENT_BOARD.md` | live repository evidence | 2026-08-20 | confirmed |
 | Minimal Reality Court source exists | `tools/check_repo_reality.py` | live repository evidence | 2026-08-20 | confirmed |
 | Reality Court workflow exists | `.github/workflows/reality-check.yml` | live repository evidence | 2026-08-20 | confirmed |
 | Workflow uses current v7 GitHub first-party actions | `.github/workflows/reality-check.yml` + official actions repositories | live file + external primary-source verification | 2026-08-20 | confirmed |
-| Root README routes directly to Current Board | `README.md` | live repository evidence | 2026-08-20 | open / not yet routed |
+| Root README routes directly to Current Board | `README.md` | live repository evidence | 2026-08-20 | confirmed |
 | First `push` Reality Court result is directly observed in this AI tool session | current GitHub connector | tool capability boundary | 2026-08-20 | unknown / not directly observable |
 
 ---
@@ -95,10 +96,12 @@ Attempt
 ### 4.1 Implemented Surfaces
 
 ```text
+README.md v002
+↓
 CURRENT_BOARD.md
-+
+↓
 tools/check_repo_reality.py
-+
+↓
 .github/workflows/reality-check.yml
 ```
 
@@ -118,7 +121,7 @@ The Court may judge only facts it can mechanically inspect from the checked-out 
 - front-matter `canonical_path` points to a missing repository path;
 - internal Markdown link points to a missing repository target;
 - an internal link escapes repository root;
-- Root README does not yet route to `CURRENT_BOARD.md`.
+- Root README does not route to `CURRENT_BOARD.md`.
 
 Warnings are intentionally non-blocking in the first experiment because legacy drift may already exist. Running:
 
@@ -178,6 +181,8 @@ No token, external service, dependency installation, database, package manager, 
 ```yaml
 reality_court:
   workflow_definition_commit: "f653cb85a83ff33d1003e203e191456eda04c307"
+  root_routing_commit: "478444fcc63dea92d29943db1d021c262b7fdb79"
+  latest_board_sync: "this Board commit / derive live"
   push_run_status: "UNOBSERVED_BY_CURRENT_CONNECTOR"
   checked_commit: "unknown until direct run evidence is available"
   errors: "unknown"
@@ -207,6 +212,7 @@ Based on the known repository state before RC-01:
 - the formerly empty Ark21:06 README has already been populated;
 - external review previously found Markdown files UTF-8 readable;
 - required RC-01 files now exist;
+- Root README now contains `CURRENT_BOARD.md`, so the Court's root-route warning should no longer fire;
 - legacy link / canonical-path drift is expected to appear mainly as warnings.
 
 Therefore `PASS_WITH_WARNINGS` is a **reasonable candidate expectation**, not an observed result.
@@ -218,7 +224,7 @@ Therefore `PASS_WITH_WARNINGS` is a **reasonable candidate expectation**, not an
 | ID | Drift / Risk | Severity | State | Next Move |
 |---|---|---:|---|---|
 | D-01 | No repository-wide machine validator existed before RC-01 | P0 | experimental closure implemented | observe first run |
-| D-02 | Root README does not yet route to `CURRENT_BOARD.md` | P1 | open | RC-02 candidate after first-run observation |
+| D-02 | Root README did not route to `CURRENT_BOARD.md` | P1 | **closed** by Root README v002 | keep Court warning as regression detector |
 | D-03 | `status` values remain heterogeneous | P1 | open / outside RC-01 | future minimal state registry candidate |
 | D-04 | `canonical_path` declarations may contain stale paths | P1 | observation armed | classify Court warnings |
 | D-05 | Internal Markdown links may contain stale targets | P1 | observation armed | classify Court warnings |
@@ -255,6 +261,7 @@ Do **not** launch a broad cleanup migration before actual Court output is visibl
 Current status:
 
 ```yaml
+root_boot_route: "PASS"
 surface_1_current_board: "PASS"
 surface_2_checker_source: "PASS"
 surface_3_workflow: "PASS"
@@ -269,7 +276,21 @@ RC-01 reaches full empirical closure when an actual workflow result is directly 
 
 ## 10. Future AI First Read Contract
 
-A Future AI that encounters this Board should resolve:
+A Future AI that enters this Repository should follow:
+
+```text
+README.md
+↓
+CURRENT_BOARD.md
+↓
+Current Human Request / supplied source
+↓
+Nearest Domain / Project README
+↓
+Current Handoff / Runtime / Query as required
+```
+
+Then resolve:
 
 ```yaml
 live_head: "derive from GitHub / Git / Actions"
@@ -289,19 +310,18 @@ Do not treat the Board date as an eternal latest guarantee. Compare with live HE
 
 ```text
 Candidate RC-02
-└─ Root README → CURRENT_BOARD routing
+└─ classify / fix high-confidence broken canonical paths and internal links
 
 Candidate RC-03
-└─ classify / fix high-confidence broken paths and links
-
-Candidate RC-04
 └─ minimal state + Runtime/Query registry
 
-Candidate RC-05
+Candidate RC-04
 └─ generated non-canonical search index
 ```
 
-These are **not** automatically authorized by this Board.
+The former Root-routing Candidate is no longer listed because it is already closed by Root README v002.
+
+These remaining gates are **not** automatically authorized by this Board.
 
 ---
 
@@ -309,7 +329,7 @@ These are **not** automatically authorized by this Board.
 
 ```text
 Root README
-= Constitution / stable governance
+= Constitution / stable governance / boot router
 
 CURRENT_BOARD
 = volatile operational coordinate
