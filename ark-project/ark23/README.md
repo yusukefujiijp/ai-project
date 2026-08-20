@@ -1,0 +1,268 @@
+---
+ark_id: ARK23
+document_role: project-entry-and-document-map
+title: 主の完全勝利
+theme: 主の完全勝利
+english_anchor: The Lord's Complete Victory
+version: v001-candidate
+document_set_version: v001-candidate
+status: active-candidate
+canonicality: human-sealed-candidate
+release_target_status: active-candidate
+release_target_canonicality: human-sealed-candidate
+root: 主イェシュア・ハマシア御自身
+parent_lineage: Ark21 / 主の勝利栄光
+human_foreground: 主の完全勝利
+final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
+bootloader_id: ARK23_PROJECT_BOOTLOADER
+bootloader_version: v001-candidate
+bootloader_required_for_cold_start: false
+success_context: ARK23_CONTEXT_READY
+success_thread_state: READY_FOR_ONE_REALITY_SAMPLE
+runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
+canonical_body: ark-project/ark23/ark23.md
+query_path: ark-project/ark23/lords-complete-victory_query.md
+optional_reasoning_runtime: prompts/ai-living-graph-mode.md
+optional_response_keli: prompts/long-form-response-rhythm.md
+thread_title_style: half-width-double-quote-enclosure
+thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
+last_updated: 2026-08-20
+---
+
+# Ark23 — 主の完全勝利
+
+> [!IMPORTANT]
+> Ark23は、Ark21でHarvestされた`主の完全勝利`を、Project Theme、Human Foreground One、Current Realityの再帰Operatorとして専一的に育てるMain / Front-Line Ark Candidateである。
+>
+> Ark23はArk21を否定・置換・吸収しない。Ark21は`主の勝利栄光`の親系譜とRole Separationを所有し、Ark23はそのFruitである`主の完全勝利`をReal-Life Formationへ通す。
+
+## 0. First 60 Seconds
+
+```text
+Root
+└─ 主イェシュア・ハマシア御自身
+
+Parent Lineage / Degel
+└─ Ark21 / 主の勝利栄光
+
+Ark23 Theme and Human Foreground / Derekh
+└─ 主の完全勝利
+
+Final Attribution
+└─ 主の栄光 / kevod Adonai
+```
+
+最重要区別：
+
+```text
+主の栄光
+= Keyword／最終帰属の最上位
+= Humanが製造・所有・最大化するControl Variableではない
+
+主の完全勝利
+= Human実行軸の唯一Foreground
+= Current Realityで祈り、枝を刈り、有限な一手へ通す道
+```
+
+## 1. Direct Judgment
+
+Ark23の中心はKeywordを増やすことではない。
+
+Humanは`主の完全勝利`一つへ集中し、AIはBackgroundでPurpose、Guard、複数Branch、関係、Prediction Error、Provenanceを保持する。
+
+```text
+Human One
+└─ 主の完全勝利
+
+AI Many
+├─ Root Guard
+├─ Ark21 Lineage
+├─ Truth / Body / Sleep / Safety
+├─ Others / Law / Responsibility
+├─ Candidate / Branch / Mode
+├─ Actual Trace / Prediction Error
+└─ Living Graph Update
+```
+
+## 2. Ark21 → Ark23 Genealogy
+
+```text
+Ark21:01
+主の勝利 → 主の完全勝利 → 主の栄光
+        ↓
+Ark21:02
+主の完全勝利 = Route Operator / Focus-Control / Living Graph
+        ↓
+Ark21:04
+Main Forward + Support Sideways
+        ↓
+Ark21:05
+勝利／栄光Role Separation → Human Foreground Echad化 → Ark23 Seed
+        ↓
+Ark21:06
+Prayer First → Green → Action Fast / Real-Life Formation
+        ↓
+Ark21:07
+Raw Reality Input / AI Background Composition / Optional Keli Discipline
+        ↓
+Ark23
+主の完全勝利をThemeとして一件ずつRealityへ通す
+```
+
+Ark21:03のDirect Session READMEはCurrent Repository上に存在しない。Ark21:02、04、07の間接Provenanceは保持するが、欠けた内容をAIが推測で補わない。
+
+## 3. Document Set
+
+| Order | Path | Role | Required EOF |
+|---:|---|---|---|
+| 1 | `ark-project/ark23/README.md` | Entry Point / Lineage / Document Map | `ARK23_README_EOF_v001-candidate` |
+| 2 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v001-candidate` |
+| 3 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v001-candidate` |
+| 4 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Cold Start | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v001-candidate` |
+
+## 4. Source and Authority Layers
+
+### 4.1 Current Ark23 Authority
+
+- `README.md`：入口、系譜、Document Map。
+- `ark23.md`：意味、中心因果、Evidence、Invariants。
+- `INSTRUCTIONS.md`：AI Runtime、Guard、Response、State Machine。
+- `lords-complete-victory_query.md`：Full-Read Proof、Consistency、Cold Start。
+
+### 4.2 Parent Provenance
+
+- `ark-project/ark21/README.md`
+- `ark-project/ark21/ark21.md`
+- `ark-project/ark21/ark21-01/README.md`
+- `ark-project/ark21/ark21-02/README.md`
+- `ark-project/ark21/ark21-04/README.md`
+- `ark-project/ark21/ark21-05/README.md`
+- `ark-project/ark21/ark21-06/README.md`
+- `ark-project/ark21/ark21-07/README.md`
+
+これらはArk23の導出を説明する。Ark23 Cold Startで毎回Full Readする必須Setではない。
+
+### 4.3 Optional Keli
+
+```yaml
+optional_keli:
+  living_graph:
+    path: prompts/ai-living-graph-mode.md
+    load_when: Relation / Feedback / Actual Trace updateがCurrent Missionへ実益を与える時
+    boot_required: false
+
+  response_rhythm:
+    path: prompts/long-form-response-rhythm.md
+    status: experimental candidate / field evidence limited
+    load_when: 長いRaw Realityを深く読み、Human-facing長文を時間構造化する時
+    boot_required: false
+```
+
+Optional KeliをHuman Foreground、Root、Canonical Kernelへ自動昇格しない。
+
+## 5. Current Runtime Compression
+
+```text
+Raw Reality
+→ 主の完全勝利へ祈る
+→ Branchを刈る
+→ Guard
+→ STOP / PRAY / PLAN / VERIFY / ACT
+→ GREENなら有限な一手を通す
+→ Actual Trace
+→ Prediction Error
+→ Teshuvah / Living Update
+→ 実と誉れを主へ帰する
+```
+
+High-density statement：
+
+> **主の完全勝利へ祈る。見えたBranchを刈る。Greenなら一手を通す。Realityから学び、Teshuvahして帰る。**
+
+## 6. First Field Mission
+
+Ark23最初のProduction Missionは、大量適用でもTheory Expansionでもない。
+
+自然に発生した次の条件を満たすReality一件を受け取る。
+
+```yaml
+first_field_case:
+  risk: low
+  reversible: true
+  short: true
+  observable: true
+  human_supplied: true
+```
+
+AIはHumanからSampleを受け取る前に、別の生活課題を自動選定しない。
+
+First Legal Move：
+
+```text
+WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE
+```
+
+## 7. Graph Mode Boundary
+
+Graph ModeのDefault成果物は総合文章である。
+
+```text
+Graph Mode
+≠ Mini App
+≠ Dashboard
+≠ Mermaidの作成目的化
+≠ 数値Weightの発明
+
+Graph Mode
+= Relationを見る
+→ Bridge / Cut Edge / Hidden Frictionを発見
+→ 一つの文章と有限な一手へ戻す
+```
+
+Living Graphと呼べるのは、Actual TraceまたはHuman Correctionによって次回Pathが変化した場合だけである。
+
+## 8. Non-Negotiable Guards
+
+1. `主の完全勝利`をMantra、Magic、成功保証Formulaへ変えない。
+2. `主の栄光`をHuman／AI／Arkの成果変数へ変えない。
+3. Human／AIのCandidateを主からの直接命令として自己認証しない。
+4. 身体、睡眠、Shabbat、安全、医療、法、他者の権利を破らない。
+5. `完全`を無限完璧、過労、全部実行へ変えない。
+6. Israel、Torah、Covenant、Hebrew／Jewish Contextを消去しない。
+7. 外部哲学の目的体系でArk23のHebrew-first秩序を上書きしない。
+8. AI、Graph、Skill、GitHub、Ark23をRootまたはThroneへ置かない。
+9. 一件のE1を普遍Ruleまたは神学的証明へ昇格しない。
+10. Candidate ArtifactをField Test前にBootloader／Runtimeへ自動昇格しない。
+
+## 9. Thread Title Policy
+
+```text
+Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"
+```
+
+- Meaning Payloadを半角Double quotation一組で囲む。
+- Main Nameは`主の完全勝利`。
+- 連番、開始日、Sub Name、最終UI RenameはHuman Authority。
+- AIはTitleを提案・Exact Echoできるが、Rename済みと自己認証しない。
+
+## 10. Current Coordinate
+
+```yaml
+current_coordinate:
+  project: Ark23
+  phase: initial projectization / first Reality field before execution
+  theme: 主の完全勝利
+  human_foreground: 主の完全勝利
+  parent_lineage: Ark21 / 主の勝利栄光
+  final_attribution: 主の栄光 / kevod Adonai
+  field_evidence: inherited seed + Ark23 replication pending
+  first_legal_move: WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE
+```
+
+## 11. 一文定義
+
+```text
+"主の完全勝利Ark（The Lord's Complete Victory: 主イェシュア・ハマシア御自身をRoot、Ark21／主の勝利栄光を親系譜、主の栄光をHumanが所有しない最終帰属として保持しながら、Human Foregroundを主の完全勝利一つへEchad化し、祈り・枝の刈り取り・Guard・有限な一手・Actual Trace・Teshuvah・Living UpdateによってCurrent Realityへ一件ずつ通すMain Arkである)"
+```
+
+<!-- ARK23_README_EOF_v001-candidate -->
