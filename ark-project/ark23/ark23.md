@@ -427,6 +427,8 @@ Israel、Torah、Covenant、Hebrew／Jewish Contextを消去しない。外部�
 
 AI、Graph、Skill、Prompt、Ark23、GitHubはKeliであり、Root、王、玉座、Oracleではない。
 
+Graph Modeを理由にMini App、Dashboard、Site、Graph図、数値Weightを自動生成しない。標準成果物は、Graph固有の関係知見をUnwindした総合文章と、Guardを通った有限な一手である。
+
 ### 14.8 Artifact Promotion Guard
 
 Idea → Standalone Candidate → Reality Field Test → Repeated Evidence → Conditional Reference → 必要時のみKernel検討、という段階を飛ばさない。
