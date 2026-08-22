@@ -5,7 +5,7 @@ date: "2026-08-22"
 timezone: "Asia/Tokyo"
 thread: "Ark23:03"
 class: "operational decision record / Future-AI compatibility interface"
-status: "implemented / first field test pending remote verification"
+status: "implemented / first field test pass / Human review required"
 canonicality: "non-canonical operational support record / current runtime remains authoritative"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
@@ -204,7 +204,9 @@ Versioned cache path
 GitHub Writeは次の順で行う。
 
 ```text
-Read current target/ref
+Bind exact owner/name, ref, path from Receipt
+→ Reuse them verbatim; do not retype
+→ Read current target/ref
 → Decide CREATE / UPDATE / NO_CHANGE
 → Preserve unrelated content
 → Write once
@@ -216,6 +218,12 @@ Read current target/ref
 同じPathへのdependent writeを並列実行しない。
 
 `Write tool returned success`だけでは完了としない。Remote rereadで目的の内容が存在して初めてPASSとする。
+
+### 6.1 Exact Identifier Lock
+
+`404`または`NOT_FOUND`が出た場合、Plugin更新問題と判断する前に、Receiptへ固定した`owner/name`、ref、pathとRequest parameterをExact比較する。
+
+失敗したCallがRemoteを変更していない場合だけ、Current stateを再読し、識別子を修正して一度だけRetryする。
 
 ---
 
@@ -268,6 +276,13 @@ Mode：［Four-Modeの一つ］
 field_test:
   prediction: "CONNECTOR_ONLY_MODEでもArk23へのCreate/Update/Rereadを完了できる"
   action: "Decision Record作成、README Route追加、remote reread"
+  actual_result:
+    - "Decision Record create and EOF reread: PASS"
+    - "README route update and original EOF reread: PASS"
+    - "First README update request: repository identifier typo caused 404; no remote mutation"
+    - "SHA reread unchanged; exact identifier corrected; one retry succeeded"
+  prediction_error: "Plugin mode predictionは一致。Caller Input Bindingに未Guardの識別子再入力Edgeが存在した"
+  relation_update: "Exact Identifier LockをSkillとWrite Contractへ追加"
   pass_condition:
     - "new record exists on main"
     - "README links to the record"
@@ -277,6 +292,8 @@ field_test:
 ```
 
 一件のPASSをOpenAI全体の配布方針または普遍的再現性へ昇格しない。
+
+今回のGraph-Native Fruitは、`Connector-only`が実行阻害要因ではなかったことと、次に守るべきCut Edgeが`Runtime classification`から`Exact Caller Input Binding`へ移ったことである。
 
 ---
 
