@@ -1,23 +1,27 @@
 ---
-artifact_id: ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST
-artifact_version: v002-human-corrected
-ark_family: Ark24
+artifact_id: ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST
+artifact_version: v003-human-lineage-corrected
+ark_family: Ark23
 sequence: "05"
 created_at: 2026-08-22
-updated_at: 2026-08-22
+updated_at: 2026-08-23
 timezone: Asia/Tokyo
-title: 'Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"'
+title: 'Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"'
 status: ready-for-natural-experimentation / first-actual-trace-not-received
-canonicality: session-scoped non-canonical experimental support runtime
+canonicality: session-scoped non-canonical experimental main-line runtime
 human_seal: 主の完全勝利Workout and B-Gate Seeds / Workout Card PRUNED / Formation Before Formalization
+lineage_correction: "Ark24:05 misclassification -> Ark23:05 / Human Material Correction / 2026-08-23"
+prior_erroneous_identity: Ark24:05
 repository_runtime_authoritative: true
 repository: yusukefujiijp/ai-project
 ref: main
-orientation: Even / Support / Auxiliary
+orientation: Main / Front-Line / Experimental
 root: 主イェシュア・ハマシア御自身
 parent_lineage: Ark21 / 主の勝利栄光
 concept_owner: Ark23 / 主の完全勝利
+session_owner: Ark23 / Main / Front-Line
 immediate_predecessor: ark-project/ark23/ark23-04/README.md
+predecessor_version: v002-human-lineage-corrected
 ark24_core: ark-project/ark24/README.md
 ark24_core_mutation: false
 ark24_frozen_trigger_payload_mutation: false
@@ -30,18 +34,20 @@ final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 field_test_status: READY_FOR_NATURAL_EXPERIMENTATION
 actual_trace_count: 0
 feedback_scope: REPEATED_HUMAN_PACED / ONE_MATERIAL_RELATION_PER_REVIEW
-success_context: ARK24_05_CONTEXT_READY
+success_context: ARK23_05_CONTEXT_READY
 success_thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 first_legal_move: WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
-query_path: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
-required_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v002-human-corrected
+query_path: ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
+required_eof: EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v003-human-lineage-corrected
 ---
 
-# Ark24:05 — 主の完全勝利Workout: First Reality Formation & Feedback Field Test
+# Ark23:05 — 主の完全勝利Workout: First Reality Formation & Feedback Field Test
 
 ## 0. Runtime Class and Authority
 
-Ark24:05は、Ark23:04でHuman Sealされた**主の完全勝利Workout**を一件のActual Realityへ通し、First FormationとFeedbackを検証するための、Session-scoped Even / Support Fieldである。
+Ark23:05は、Ark23:04でHuman Sealされた**主の完全勝利Workout**を一件のActual Realityへ通し、First FormationとFeedbackを検証するための、Session-scoped Main / Front-Line Experimental Fieldである。
+
+2026-08-23のHuman Material Correctionにより、このSessionの系譜上のIdentityはArk24:05からArk23:05へ訂正された。内容上のHuman Correction、Field State、Evidence Boundaryは継承し、Ark24 CoreはParallel Supportとして不変保持する。
 
 このRuntimeはArk24 Coreを置換・改稿・吸収しない。
 
@@ -55,7 +61,7 @@ Ark23:04
 Ark24 Core
 = B-Pattern Entry AI Bridge Natural-Trigger Waiting Field
 
-Ark24:05
+Ark23:05
 = Human-supplied general Workout Reality
    First Formation & Feedback Field Test
 ```
@@ -67,7 +73,7 @@ Current Human Request / Human Stop / Human Correction
 → Current GitHub Runtime on main
 → Ark23 Canonical Document Set
 → Ark24 Core
-→ This Ark24:05 Session Runtime
+→ This Ark23:05 Session Runtime
 → Ark23:04 Immediate Predecessor Provenance
 → Earlier Historical Thread Material
 ```
@@ -109,7 +115,7 @@ Role Separation：
 | Term | Role | Not |
 |---|---|---|
 | 主イェシュア・ハマシア御自身 | Root | Operational variableではない |
-| 主の勝利栄光 | Parent Lineage / Degel | Ark24:05の第二Foregroundではない |
+| 主の勝利栄光 | Parent Lineage / Degel | Ark23:05の第二Foregroundではない |
 | 主の栄光 / kevod Adonai | Great Purpose / Final Attribution | Human-owned outcomeではない |
 | Teshuvah | Central Axis | 自己攻撃ではない |
 | 主の完全勝利 | Human Foreground One | Outcome Controlの保証ではない |
@@ -124,13 +130,13 @@ Role Separation：
 Compiled Thread Title：
 
 ```text
-Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
+Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
 ```
 
 同一Thread内で次を揺らさない。
 
 ```yaml
-ark_family: Ark24
+ark_family: Ark23
 sequence: "05"
 start_date: "2026/08/22"
 main_name: 主の完全勝利Workout
@@ -185,7 +191,7 @@ Workoutは次の二つのGateを同一Fieldに持ち得る。
 
 しかし、これはまだActual Realityで未検証である。
 
-Ark24:05はTheory増殖Threadではない。一件のRealityがこのPathを支持するか、弱めるか、条件分岐を要求するかを観測する。
+Ark23:05はTheory増殖Threadではない。一件のRealityがこのPathを支持するか、弱めるか、条件分岐を要求するかを観測する。
 
 ---
 
@@ -217,7 +223,7 @@ Ark24 CoreのRole：
 B-Pattern Entry AI Bridge Natural-Trigger Waiting Field
 ```
 
-Ark24:05のRole：
+Ark23:05のRole：
 
 ```text
 Human-supplied general 主の完全勝利Workout Reality
@@ -226,11 +232,11 @@ First Formation & Feedback Field Test
 
 ### 6.1 Prohibited Collapse
 
-- Ark24:05はArk24 CoreのFrozen Trigger Responseを変更しない。
-- Ark24:05はNatural B-Pattern Triggerを自己選定・自己認証しない。
-- HumanがSampleをArk24 CoreのB-pattern sampleとして明示した場合、Ark24:05へ勝手に転用しない。
+- Ark23:05はArk24 CoreのFrozen Trigger Responseを変更しない。
+- Ark23:05はNatural B-Pattern Triggerを自己選定・自己認証しない。
+- HumanがSampleをArk24 CoreのB-pattern sampleとして明示した場合、Ark23:05へ勝手に転用しない。
 - HumanがB-Gateを明示しない一般Workout Sampleを、AIがB-Gateへ診断・分類しない。
-- Ark24:05の長いTheoryをArk24 CoreのFrozen Trigger Foregroundへ持ち込まない。
+- Ark23:05の長いTheoryをArk24 CoreのFrozen Trigger Foregroundへ持ち込まない。
 
 ### 6.2 B-Gate Activation Condition
 
@@ -697,7 +703,7 @@ Repeated guarded evidence
 - B-Gate Seed。
 - Root / Teshuvah / Human Foreground / Final Attribution。
 - Workoutと主の完全勝利の融合はProject-wide One Pieceとして扱うHuman Direction。
-- Ark24:05は実行・実験・Feedback Thread。
+- Ark23:05は実行・実験・Feedback Thread。
 - Workout CardはCurrent Active FieldからPRUNED。
 - Formation Before Formalizationを採用する。
 - 既存Workout Routineを基礎として自然に試し、Raw RealityをFeedbackする。
@@ -789,14 +795,14 @@ BootとHuman Material Correction反映を完了する
 Query、Ark24 Core、このRuntime、Ark23 Canonical Lineage、Ark23:04 ProvenanceのFull ReadとConsistency GateがPASSした場合、最初の応答は短く次を返す。
 
 ```text
-1. Ark24:05 Repository Runtime：ARRIVED / ALL GATES PASS
+1. Ark23:05 Repository Runtime：ARRIVED / ALL GATES PASS
 1.1 Ark24 Core：PRESERVED / FROZEN TRIGGER UNCHANGED
 1.2 Ark23 Lineage：BOUND
 1.3 Immediate Predecessor：Ark23:04 / FULL READ / NON-CANONICAL PROVENANCE
-1.4 Context：ARK24_05_CONTEXT_READY
+1.4 Context：ARK23_05_CONTEXT_READY
 1.5 Thread State：READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 2. Thread Title — Copy & Paste：
-Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
+Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
 3. 主の完全勝利Workout Field Test：READY_FOR_NATURAL_EXPERIMENTATION
 3.1 Formation Before Formalization：ACTIVE
 3.2 Workout Card：PRUNED
@@ -831,7 +837,7 @@ Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedb
 
 ## 24. One-Sentence Definition
 
-> **Ark24:05 主の完全勝利Workout First Reality Formation & Feedback Field Testとは、主イェシュア・ハマシア御自身をRoot、Teshuvahを中央軸、主の完全勝利をHuman Foreground One、主の栄光 / kevod AdonaiをHumanが所有しない大目的かつFinal Attributionとして保持し、Ark24 CoreのB-Pattern Natural-Trigger Waiting Fieldを変更せず、既にほぼ固定されたWorkout Routineを不用意に再設計しないControlとして保ち、Prayer / Vision / ActionのRelationだけをGuard内の自然な変形幅で反復し、Initial WorkoutとDeadline Workoutの働きを実行後のRaw Realityから観測し、一回のHuman ReviewにつきMaterial Relationを一件だけ更新し、十分なEvidence後にだけ形式化・自家薬籠中化・Cross-Ark Transferを検討する、Formation-Before-Formalization型のSession-scoped Even / Support Runtimeである。**
+> **Ark23:05 主の完全勝利Workout First Reality Formation & Feedback Field Testとは、主イェシュア・ハマシア御自身をRoot、Teshuvahを中央軸、主の完全勝利をHuman Foreground One、主の栄光 / kevod AdonaiをHumanが所有しない大目的かつFinal Attributionとして保持し、Ark24 CoreのB-Pattern Natural-Trigger Waiting Fieldを変更せず、既にほぼ固定されたWorkout Routineを不用意に再設計しないControlとして保ち、Prayer / Vision / ActionのRelationだけをGuard内の自然な変形幅で反復し、Initial WorkoutとDeadline Workoutの働きを実行後のRaw Realityから観測し、一回のHuman ReviewにつきMaterial Relationを一件だけ更新し、十分なEvidence後にだけ形式化・自家薬籠中化・Cross-Ark Transferを検討する、Formation-Before-Formalization型のSession-scoped Main / Front-Line Experimental Runtimeである。**
 ---
 
 ## 25. Final Attribution
@@ -848,4 +854,4 @@ HumanはFaith、Teshuvah、Prayer、Living Reality、Meaning、Correction、Inte
 
 へ帰す。
 
-EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v002-human-corrected
+EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v003-human-lineage-corrected

@@ -1,9 +1,10 @@
 ---
 artifact_id: ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY
-artifact_version: v001-human-sealed
+artifact_version: v002-human-lineage-corrected
 ark_family: Ark23
 sequence: "04"
 created_at: 2026-08-22
+updated_at: 2026-08-23
 timezone: Asia/Tokyo
 title: 'Ark23:04_2026/08/22: "主の完全勝利: 101/100 First-Step Reality Field Test"'
 status: provisional-closure
@@ -18,17 +19,21 @@ great_purpose: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 original_field_test_status: NOT_STARTED
 actual_thread_fruit: 主の完全勝利Workout / B-Gate pre-articulation and Seed formation
-next_thread: Ark24:05
-next_thread_role: Even / Support / First Reality Formation and Feedback Field Test
-next_query: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
-required_eof: EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v001-human-sealed
+lineage_correction: "Ark24:05 misclassification -> Ark23:05 / Human Material Correction / 2026-08-23"
+prior_erroneous_next_thread: Ark24:05
+next_thread: Ark23:05
+next_thread_role: Main / Front-Line / First Reality Formation and Feedback Field Test
+next_query: ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
+required_eof: EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v002-human-lineage-corrected
 ---
 
 # Ark23:04 — 主の完全勝利Workout Discovery / Immediate Predecessor Provenance
 
 ## 0. Document Class and Authority
 
-この文書は、Ark23:04でHumanとAIの対話から形成された概念、Human Material Correction、Human-sealed Seed、未検証事項、およびArk24:05へ渡す実験課題を保存する。
+この文書は、Ark23:04でHumanとAIの対話から形成された概念、Human Material Correction、Human-sealed Seed、未検証事項、およびArk23:05へ渡す実験課題を保存する。
+
+2026-08-23のHuman Material Correctionにより、従来のArk24:05という移行先はArk23:05へ訂正された。Ark24 Coreは引き続きParallel Supportとして保持し、このLineage Correctionによって変更しない。
 
 これは次のいずれでもない。
 
@@ -329,7 +334,7 @@ Humanは名称**主の完全勝利Workout**を承認し、Seed化と記録を命
 
 またBパターン入口の有限なAction Passage Gateとして**B-Gate** Seedを要求し、両SeedをHuman Sealした。
 
-### 2.13 Phase 12 — Ark24:05へのRebase
+### 2.13 Phase 12 — Ark23:05へのRebase
 
 Ark23:04では概念形成とSeed化が進んだが、Reality Field Testは未開始である。
 
@@ -346,7 +351,7 @@ Ark23:04 achieved 101
 ├─ 主の完全勝利Workout Seed
 └─ B-Gate Seed
 
-Ark24:05 exact +1
+Ark23:05 exact +1
 └─ 一件のHuman-supplied Workout Realityで
    First Formation → Actual Trace → Prediction Error → Feedback
 ```
@@ -526,7 +531,7 @@ Actual Traceで次回Pathを修正できた
 - Humanを敵、怠惰、失敗者として扱わない。
 - 身体、睡眠、安全、責任Guardが停止させた場合、その停止を失敗へ短絡しない。
 - B-GateはArk24 CoreのFrozen Trigger Payloadを置換しない。
-- Ark24:05の一般Workout Sampleは、B-Pattern Natural Triggerを必須条件としない。
+- Ark23:05の一般Workout Sampleは、B-Pattern Natural Triggerを必須条件としない。
 - B-GateがMaterialなSampleとしてHumanから明示された場合のみ、Ark24 Coreとの境界を再確認する。
 
 ---
@@ -589,7 +594,7 @@ Human Material Correctionによって概念Graphは更新されたが、Workout 
 | Human Correction | CORRECTS | AI synthesis | active authority edge |
 | Fruit | ATTRIBUTES | 主の栄光 / kevod Adonai | frozen final attribution |
 
-### 7.4 Active Path for Ark24:05
+### 7.4 Active Path for Ark23:05
 
 ```text
 Human-supplied one Workout Reality
@@ -733,9 +738,9 @@ Transfer Candidate / Future Runtime
 
 ---
 
-## 10. Transfer Package to Ark24:05
+## 10. Transfer Package to Ark23:05
 
-Ark24:05へ渡すもの：
+Ark23:05へ渡すもの：
 
 1. 主の完全勝利WorkoutのHuman-sealed Seed。
 2. B-GateのHuman-sealed Seed。
@@ -748,7 +753,7 @@ Ark24:05へ渡すもの：
 9. Actual TraceとPrediction Errorによる一件だけのRelation Update。
 10. Human Review before generalization。
 
-Ark24:05へ渡さないもの：
+Ark23:05へ渡さないもの：
 
 - Ark23 Canonical authority。
 - Ark24 Core replacement authority。
@@ -762,7 +767,7 @@ Ark24:05へ渡さないもの：
 
 ## 11. Residual Tasks
 
-### 11.1 Must Execute in Ark24:05
+### 11.1 Must Execute in Ark23:05
 
 - Humanから一件の低Risk・可逆・短時間・観測可能なWorkout Realityを受領する。
 - Prayer / Vision / ActionのRaw Realityを復元する。
@@ -789,7 +794,7 @@ Ark24:05へ渡さないもの：
 
 ## 12. One-Sentence Closure
 
-> **Ark23:04は、当初予定した一件のFirst-Step Reality Field Testをまだ開始しないまま、First-Stepの真のCut Edgeを「初手が開く未来Branch NetworkとExit不明」に見出し、DeadlineをBranch Closure / Exit Guarantee、WorkoutをInitial Opening GateとDeadline Closing Gateを兼ね得るFirst Formation Fieldとして再配置し、主の完全勝利の祈り・イメージVision・行動との融合をProject-wide Embodied Execution Interfaceである主の完全勝利WorkoutへSeed化し、B-Gateと共にArk24:05の一件のActual Reality Testへ渡した、non-canonical immediate predecessor provenanceである。**
+> **Ark23:04は、当初予定した一件のFirst-Step Reality Field Testをまだ開始しないまま、First-Stepの真のCut Edgeを「初手が開く未来Branch NetworkとExit不明」に見出し、DeadlineをBranch Closure / Exit Guarantee、WorkoutをInitial Opening GateとDeadline Closing Gateを兼ね得るFirst Formation Fieldとして再配置し、主の完全勝利の祈り・イメージVision・行動との融合をProject-wide Embodied Execution Interfaceである主の完全勝利WorkoutへSeed化し、B-Gateと共にArk23:05の一件のActual Reality Testへ渡した、non-canonical immediate predecessor provenanceである。**
 
 ---
 
@@ -805,4 +810,4 @@ Rootは主イェシュア・ハマシア御自身。
 
 へ帰す。
 
-EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v001-human-sealed
+EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v002-human-lineage-corrected

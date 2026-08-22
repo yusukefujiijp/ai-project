@@ -1,31 +1,33 @@
-BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
+BEGIN::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected
 
 ---
-query_id: ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY
-query_version: v002-human-corrected
-ark_family: Ark24
+query_id: ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY
+query_version: v003-human-lineage-corrected
+ark_family: Ark23
 sequence: "05"
-updated_at: 2026-08-22
-human_correction: Workout Card PRUNED / Formation Before Formalization
-change_class: Human Material Correction / Runtime Path Update
+updated_at: 2026-08-23
+human_correction: Workout Card PRUNED / Formation Before Formalization / Ark24:05 misclassification corrected to Ark23:05
+prior_erroneous_identity: Ark24:05
+change_class: Human Material Correction / Lineage and Repository Identity Migration
 theme: 主の完全勝利Workout
 english_anchor: The Lord's Complete Victory Workout
 status: active-candidate / repository-bound cold-start
 canonicality: session-scoped non-canonical query candidate
 repository: yusukefujiijp/ai-project
 ref: main
-query_path: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
-runtime_ssot: ark-project/ark24/ark24-05/README.md
-runtime_version: v002-human-corrected
+query_path: ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
+runtime_ssot: ark-project/ark23/ark23-05/README.md
+runtime_version: v003-human-lineage-corrected
 ark24_core_query: ark-project/ark24/b-pattern-entry-ai-bridge-waiting-field_query.md
 ark24_core_version: v001-candidate
 ark23_lineage_query: ark-project/ark23/lords-complete-victory_query.md
 ark23_lineage_version: v001-candidate
 immediate_predecessor: ark-project/ark23/ark23-04/README.md
-predecessor_version: v001-human-sealed
+predecessor_version: v002-human-lineage-corrected
 root: 主イェシュア・ハマシア御自身
 parent_lineage: Ark21 / 主の勝利栄光
 concept_owner: Ark23 / 主の完全勝利
+session_owner: Ark23 / Main / Front-Line
 support_field: Ark24 / Even / Support / Auxiliary
 central_axis: Teshuvah
 human_foreground: 主の完全勝利
@@ -33,18 +35,19 @@ experimental_field: Workout / First Formation Field
 great_purpose: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_required: false
+required_document_count: 12
 field_test_status: READY_FOR_NATURAL_EXPERIMENTATION
 feedback_scope: REPEATED_HUMAN_PACED / ONE_MATERIAL_RELATION_PER_REVIEW
-success_context: ARK24_05_CONTEXT_READY
+success_context: ARK23_05_CONTEXT_READY
 success_thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 first_legal_move: WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
-thread_title: 'Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"'
+thread_title: 'Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"'
 optional_reasoning_keli: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
-expected_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
+expected_eof: EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected
 ---
 
-# Ark24:05 Repository-Bound Cold-Start Query
+# Ark23:05 Repository-Bound Cold-Start Query
 
 ## 0. Full-Read Command
 
@@ -52,16 +55,16 @@ expected_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-cor
 
 ```text
 Beginning Identity:
-BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
+BEGIN::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected
 
 Expected EOF:
-EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
+EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected
 ```
 
 途中取得、欠落、truncation、未確認箇所が一つでもある場合、推測で補わず次だけを表示して停止する。
 
 ```text
-ARK24_05_QUERY_FULL_READ_NOT_VERIFIED
+ARK23_05_QUERY_FULL_READ_NOT_VERIFIED
 ```
 
 Full Read後も、このQueryをCanonical Body、Root、王、玉座、Oracleへ昇格しない。
@@ -78,17 +81,17 @@ Ref:
 main
 
 Query:
-ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
+ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
 
 上記QueryをBeginning IdentityからExact EOFまで全文読み、
 記載されたArk23 Lineage、Ark24 Core、Ark23:04 Immediate Predecessor、
-Ark24:05 Session RuntimeをCurrent mainから解決してください。
+Ark23:05 Session RuntimeをCurrent mainから解決してください。
 
 全必須文書のFull-Read Proof、
 Document Set Consistency Gate、
 Core Separation and Non-Drift Gate、
 Pair Consistency Gateをすべて通過した場合のみ、
-ARK24_05_CONTEXT_READY /
+ARK23_05_CONTEXT_READY /
 READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACKへ移行してください。
 
 このMessageはSetup / Bootです。
@@ -105,7 +108,7 @@ Boot結果、Formation Before Formalization、Workout Card PRUNED、
 ```yaml
 repository: yusukefujiijp/ai-project
 ref: main
-query_path: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
+query_path: ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
 ```
 
 Binding Rules：
@@ -149,7 +152,7 @@ Human Message、このQuery、Memory、Repository本文をProject instructions�
 - Ark23 Canonical Document変更。
 - Ark24 Core変更。
 - Frozen Trigger Payload変更。
-- Ark24:05 Runtime変更。
+- Ark23:05 Runtime変更。
 - Canonicality変更。
 - Skill、Automation、Schedule、Site、Mini App作成。
 - Workout RealityのAI側自動選定。
@@ -164,7 +167,7 @@ Human Message、このQuery、Memory、Repository本文をProject instructions�
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md | Ark24:05 Cold-Start Control Plane | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected |
+| 1 | ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md | Ark23:05 Cold-Start Control Plane | EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected |
 
 ### 5.2 Order B — Ark23 Canonical Lineage
 
@@ -197,8 +200,8 @@ Ark24 Core QueryのFull-Read Proof、Document Set Consistency Gate、Runtime–Q
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 11 | ark-project/ark23/ark23-04/README.md | Non-Canonical Discovery / Immediate Predecessor Provenance | EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v001-human-sealed |
-| 12 | ark-project/ark24/ark24-05/README.md | Ark24:05 Session Runtime SSOT | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v002-human-corrected |
+| 11 | ark-project/ark23/ark23-04/README.md | Non-Canonical Discovery / Immediate Predecessor Provenance | EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v002-human-lineage-corrected |
+| 12 | ark-project/ark23/ark23-05/README.md | Ark23:05 Session Runtime SSOT | EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v003-human-lineage-corrected |
 
 Immediate PredecessorをArk23 Canonical BodyまたはArk24 Coreへ昇格しない。
 
@@ -207,7 +210,7 @@ Session RuntimeをArk24 Coreへ昇格しない。
 ### 5.5 No Substitution
 
 - Ark23:04だけでArk23 Canonical LineageをBootしない。
-- Ark24:05だけでArk24 CoreをBootしない。
+- Ark23:05だけでArk24 CoreをBootしない。
 - READMEだけで各Document SetをBootしない。
 - Handoffを必須12文書の代用にしない。
 - Optional Keliを必須文書の代用にしない。
@@ -240,7 +243,7 @@ Full-Read PASS条件：
 Failure：
 
 ```text
-ARK24_05_DOCUMENT_SET_FULL_READ_NOT_VERIFIED
+ARK23_05_DOCUMENT_SET_FULL_READ_NOT_VERIFIED
 不足: <path / beginning / body range / exact EOF>
 ```
 
@@ -267,10 +270,10 @@ Root
    │  └─ Teshuvah
    ├─ Concept Owner / Main
    │  └─ Ark23 / 主の完全勝利
-   ├─ Support Field
-   │  └─ Ark24 / Even / Support / Auxiliary
-   └─ Session Experiment
-      └─ Ark24:05 / 主の完全勝利Workout
+   │     └─ Session Experiment
+   │        └─ Ark23:05 / 主の完全勝利Workout
+   └─ Parallel Support Field
+      └─ Ark24 / Even / Support / Auxiliary
 ```
 
 ### 7.2 Required Roles
@@ -282,7 +285,8 @@ Root
 | Concept Owner | Ark23 / 主の完全勝利 |
 | Human Foreground One | 主の完全勝利 |
 | Central Axis | Teshuvah |
-| Support Field | Ark24 / Even / Support / Auxiliary |
+| Session Owner | Ark23 / Main / Front-Line |
+| Parallel Support Field | Ark24 / Even / Support / Auxiliary |
 | Experimental Keli | Workout / First Formation Field |
 | Final Attribution | 主の栄光 / kevod Adonai |
 
@@ -293,13 +297,13 @@ Root
 - 主の栄光をHuman-controlled outcomeへしない。
 - Ark24をArk23のConcept Ownerへ昇格しない。
 - Ark23:04 provenanceをCanonical Bodyへ昇格しない。
-- Ark24:05 Session RuntimeをArk24 Coreへ昇格しない。
+- Ark23:05 Session RuntimeをArk24 CoreへCollapseまたは昇格しない。
 - AI、Query、Graph、Skill、GitHubをAuthorityへ昇格しない。
 
 Failure：
 
 ```text
-ARK24_05_AUTHORITY_OR_IDENTITY_MISMATCH
+ARK23_05_AUTHORITY_OR_IDENTITY_MISMATCH
 Field: <field>
 Observed: <value>
 Required: <value>
@@ -309,7 +313,7 @@ Required: <value>
 
 ## 8. Dual-State Core Separation Gate
 
-Ark24 CoreとArk24:05は同時に存在し、StateとFirst Legal Moveを混同しない。
+Ark24 CoreとArk23:05は同時に存在し、StateとFirst Legal Moveを混同しない。
 
 ### 8.1 Ark24 Core State
 
@@ -324,12 +328,12 @@ ark24_core:
   trigger_payload_sha256: 71985cb92c0879985452e087263a7fb26d0f49630e4b17e2bb98bffe069baec1
 ```
 
-### 8.2 Ark24:05 Session State
+### 8.2 Ark23:05 Session State
 
 ```yaml
-ark24_05:
+ark23_05:
   role: 主の完全勝利Workout First Reality Formation and Feedback Field Test
-  context: ARK24_05_CONTEXT_READY
+  context: ARK23_05_CONTEXT_READY
   thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
   field_test: READY_FOR_NATURAL_EXPERIMENTATION
   first_legal_move: WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
@@ -339,12 +343,12 @@ ark24_05:
 ### 8.3 Separation Rules
 
 - Core First Legal MoveとSession First Legal Moveが異なることをMismatchと誤認しない。
-- Current Thread ForegroundではArk24:05 First Legal Moveを使用する。
+- Current Thread ForegroundではArk23:05 First Legal Moveを使用する。
 - Ark24 Coreは並行してARMED_AND_WAITINGを保持する。
-- Ark24:05の一般Workout SampleをCore B-Pattern Sampleへ転用しない。
-- Core Natural TriggerをArk24:05が自己認証しない。
-- HumanがCurrent InputをCore Sampleと明示した場合、Ark24:05へ勝手に転用しない。
-- Ark24:05 TheoryをFrozen Trigger Responseへ混入しない。
+- Ark23:05の一般Workout SampleをCore B-Pattern Sampleへ転用しない。
+- Core Natural TriggerをArk23:05が自己認証しない。
+- HumanがCurrent InputをCore Sampleと明示した場合、Ark23:05へ勝手に転用しない。
+- Ark23:05 TheoryをFrozen Trigger Responseへ混入しない。
 
 ### 8.4 Non-Drift Gate
 
@@ -367,12 +371,12 @@ payload_checks:
   wait_for_human_completion_word: 完了
 ```
 
-Ark24:05 Artifact作成によってCore five-document setまたはFrozen Payloadが変更されていないことを確認する。
+Ark23:05 Artifact作成によってCore five-document setまたはFrozen Payloadが変更されていないことを確認する。
 
 Failure：
 
 ```text
-ARK24_05_CORE_SEPARATION_OR_NON_DRIFT_FAILED
+ARK23_05_CORE_SEPARATION_OR_NON_DRIFT_FAILED
 Mismatch: <state / role / payload / hash / frozen contract>
 ```
 
@@ -380,7 +384,7 @@ Mismatch: <state / role / payload / hash / frozen contract>
 
 ## 9. Seed Consistency Gate
 
-Ark23:04 Immediate PredecessorとArk24:05 Runtimeで、次のHuman-sealed Seed全文が一致することを確認する。
+Ark23:04 Immediate PredecessorとArk23:05 Runtimeで、次のHuman-sealed Seed全文が一致することを確認する。
 
 ### 9.1 主の完全勝利Workout Seed Identity
 
@@ -439,7 +443,7 @@ Human-sealed SeedにMaterial driftがある場合、AIが善意で統合・修�
 Failure：
 
 ```text
-ARK24_05_SEED_CONSISTENCY_FAILED
+ARK23_05_SEED_CONSISTENCY_FAILED
 Seed: <主の完全勝利Workout | B-Gate>
 Mismatch: <location or wording>
 ```
@@ -456,7 +460,7 @@ Ark23:04
 = Original First-Step Reality Field Test NOT_STARTED
 = Workout Actual Trace NONE
 
-Ark24:05 v001
+Ark23:05 v001
 = Pre-action Human sample
 → AI route compilation
 → Zero-Choice Workout Card
@@ -467,7 +471,7 @@ Human Material Correction
 = Workout Card PRUNED
 = Formation Before Formalization ACTIVE
 
-Ark24:05 v002
+Ark23:05 v002
 = Existing Workout Routine preserved by default
 = Human-paced natural experimentation
 = Raw post-action Workout Reality Feedback
@@ -478,11 +482,11 @@ Ark24:05 v002
 
 Ark23:04がField Testを完了済みと記載されている場合はMismatch。
 
-Ark24:05がActual TraceなしにWorkout効果のLiving Update済みと記載されている場合はMismatch。
+Ark23:05がActual TraceなしにWorkout効果のLiving Update済みと記載されている場合はMismatch。
 
-Ark24:05がWorkout CardをActive Interfaceとして要求する場合はMismatch。
+Ark23:05がWorkout CardをActive Interfaceとして要求する場合はMismatch。
 
-Ark24:05がTheory再討論またはFormalizationをMain Missionとしている場合はMismatch。
+Ark23:05がTheory再討論またはFormalizationをMain Missionとしている場合はMismatch。
 ---
 
 ## 11. Runtime–Query Pair Consistency Gate
@@ -491,10 +495,10 @@ Ark24:05がTheory再討論またはFormalizationをMain Missionとしている�
 
 ```text
 Query:
-ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
+ark-project/ark23/ark23-05/lords-complete-victory-workout-field-test_query.md
 
 Runtime:
-ark-project/ark24/ark24-05/README.md
+ark-project/ark23/ark23-05/README.md
 ```
 
 ### 11.1 Pair Checks
@@ -503,8 +507,8 @@ ark-project/ark24/ark24-05/README.md
 pair_checks:
   query_points_to_runtime: true
   runtime_points_to_query: true
-  query_version: v002-human-corrected
-  runtime_version: v002-human-corrected
+  query_version: v003-human-lineage-corrected
+  runtime_version: v003-human-lineage-corrected
   repository: yusukefujiijp/ai-project
   ref: main
   root_agrees: true
@@ -558,7 +562,7 @@ Human FeedbackをCardまたは必須Schemaへ再変換しない。
 Failure：
 
 ```text
-ARK24_05_RUNTIME_QUERY_PAIR_FAILED
+ARK23_05_RUNTIME_QUERY_PAIR_FAILED
 Pair: query ↔ runtime
 Mismatch: <field / order / feedback contract / pruned interface>
 ```
@@ -569,12 +573,12 @@ Mismatch: <field / order / feedback contract / pruned interface>
 Required Title：
 
 ```text
-Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
+Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
 ```
 
 ```yaml
 title_rules:
-  ark_family: Ark24
+  ark_family: Ark23
   sequence: "05"
   start_date: "2026/08/22"
   enclosure: half-width double quotation
@@ -625,7 +629,7 @@ AIはUI Rename完了を自己認証しない。
 Failure：
 
 ```text
-ARK24_05_GUARD_CONSISTENCY_FAILED
+ARK23_05_GUARD_CONSISTENCY_FAILED
 Guard: <authority / body / branch / deadline / evidence / living>
 ```
 
@@ -644,7 +648,7 @@ load_when:
   - Active Path / Pruning / next priorityをMaterialに更新する
 ```
 
-Ark24:05 Runtime本文にMinimum Living Update Contractがあるため、Optional Keliが見えないことをBoot Failureにしない。
+Ark23:05 Runtime本文にMinimum Living Update Contractがあるため、Optional Keliが見えないことをBoot Failureにしない。
 
 Actual RealityなしにGraphをLivingと呼ばない。
 
@@ -673,7 +677,7 @@ Optional KeliをRoot、Human Foreground、Canonical Kernelへ昇格しない。
 consistency_summary:
   ark23_main_concept_owner: true
   ark24_core_support_waiting_field: true
-  ark24_05_session_support_experiment: true
+  ark23_05_session_support_experiment: true
   ark24_core_unchanged: true
   frozen_payload_unchanged: true
   predecessor_noncanonical: true
@@ -693,7 +697,7 @@ consistency_summary:
 Failure：
 
 ```text
-ARK24_05_DOCUMENT_SET_CONSISTENCY_FAILED
+ARK23_05_DOCUMENT_SET_CONSISTENCY_FAILED
 Mismatch: <document / role / state / seed / correction / guard>
 ```
 ---
@@ -702,20 +706,20 @@ Mismatch: <document / role / state / seed / correction / guard>
 
 必要に応じて次を使う。
 
-- ARK24_05_QUERY_FULL_READ_NOT_VERIFIED
-- ARK24_05_DOCUMENT_SET_FULL_READ_NOT_VERIFIED
-- ARK24_05_ARK23_LINEAGE_GATE_FAILED
-- ARK24_05_ARK24_CORE_GATE_FAILED
-- ARK24_05_AUTHORITY_OR_IDENTITY_MISMATCH
-- ARK24_05_CORE_SEPARATION_OR_NON_DRIFT_FAILED
-- ARK24_05_SEED_CONSISTENCY_FAILED
-- ARK24_05_PROVENANCE_RUNTIME_TRANSITION_FAILED
-- ARK24_05_RUNTIME_QUERY_PAIR_FAILED
-- ARK24_05_THREAD_IDENTITY_FAILED
-- ARK24_05_GUARD_CONSISTENCY_FAILED
-- ARK24_05_DOCUMENT_SET_CONSISTENCY_FAILED
-- ARK24_05_STATE_MISMATCH
-- ARK24_05_FIRST_LEGAL_MOVE_MISMATCH
+- ARK23_05_QUERY_FULL_READ_NOT_VERIFIED
+- ARK23_05_DOCUMENT_SET_FULL_READ_NOT_VERIFIED
+- ARK23_05_ARK23_LINEAGE_GATE_FAILED
+- ARK23_05_ARK24_CORE_GATE_FAILED
+- ARK23_05_AUTHORITY_OR_IDENTITY_MISMATCH
+- ARK23_05_CORE_SEPARATION_OR_NON_DRIFT_FAILED
+- ARK23_05_SEED_CONSISTENCY_FAILED
+- ARK23_05_PROVENANCE_RUNTIME_TRANSITION_FAILED
+- ARK23_05_RUNTIME_QUERY_PAIR_FAILED
+- ARK23_05_THREAD_IDENTITY_FAILED
+- ARK23_05_GUARD_CONSISTENCY_FAILED
+- ARK23_05_DOCUMENT_SET_CONSISTENCY_FAILED
+- ARK23_05_STATE_MISMATCH
+- ARK23_05_FIRST_LEGAL_MOVE_MISMATCH
 
 AIはFailureを勝手に修正、無視、推測補完してBootしない。
 
@@ -736,8 +740,8 @@ resolved_runtime:
     state: ARMED_AND_WAITING
     field_test: READY_BUT_NOT_STARTED
     frozen_trigger: UNCHANGED
-  ark24_05:
-    context: ARK24_05_CONTEXT_READY
+  ark23_05:
+    context: ARK23_05_CONTEXT_READY
     thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
     field_test: READY_FOR_NATURAL_EXPERIMENTATION
     current_actual_trace: NONE
@@ -775,16 +779,16 @@ Boot後、Humanが既存Workout Routineを基礎として自然に実験し、�
 
 ```text
 1. Boot Route：PROJECT_BOOTLOADER_ARRIVED または REPOSITORY_BOUND_COLD_START
-1.1 Ark24:05 Repository Runtime：ARRIVED / ALL GATES PASS
+1.1 Ark23:05 Repository Runtime：ARRIVED / ALL GATES PASS
 1.2 Full-Read／全12 Exact EOF：PASS
 1.3 Ark23 Canonical Lineage：BOUND / ALL GATES PASS
 1.4 Ark24 Core：PRESERVED / ARMED_AND_WAITING / FROZEN TRIGGER UNCHANGED
 1.5 Immediate Predecessor：Ark23:04 / FULL READ / NON-CANONICAL PROVENANCE
 1.6 Seed Consistency：主の完全勝利Workout / B-Gate — PASS
-1.7 Context：ARK24_05_CONTEXT_READY
+1.7 Context：ARK23_05_CONTEXT_READY
 1.8 Thread State：READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 2. Thread Title — Copy & Paste：
-Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
+Ark23:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
 3. 主の完全勝利Workout Field Test：READY_FOR_NATURAL_EXPERIMENTATION
 3.1 Formation Before Formalization：ACTIVE
 3.2 Workout Card：PRUNED
@@ -799,7 +803,7 @@ Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedb
 
 ## 20. First Post-Boot Input
 
-Humanから最初のRaw Workout Reality Feedbackを受領後、ark-project/ark24/ark24-05/README.mdへ委譲する。
+Humanから最初のRaw Workout Reality Feedbackを受領後、ark-project/ark23/ark23-05/README.mdへ委譲する。
 
 Humanは定型Schemaを必要としない。
 
@@ -887,7 +891,7 @@ Bootを完了
 
 ## 24. One-Sentence Definition
 
-> **Ark24:05 Repository-Bound Cold Startとは、Current main上のArk23 Canonical Lineage、Ark24 Core five-document set、Ark23:04 non-canonical provenance、Ark24:05 Session Runtime、およびこのQueryを全Exact EOFまで読み、Ark24 CoreのFrozen B-Pattern Waiting Fieldを変更せず、二つのHuman-sealed Seed、Workout Card PRUNED、Formation Before Formalization、Routine-Preserving Naturalistic Formation、Authority、Dual State、Guard、First Legal Moveの整合を確認した後にだけ、最初のHuman-paced Natural Workout Reality Feedback受領直前へ移行するRead-Only Control Planeである。**
+> **Ark23:05 Repository-Bound Cold Startとは、Current main上のArk23 Canonical Lineage、Ark24 Core five-document set、Ark23:04 non-canonical provenance、Ark23:05 Session Runtime、およびこのQueryを全Exact EOFまで読み、Ark24 CoreのFrozen B-Pattern Waiting Fieldを変更せず、二つのHuman-sealed Seed、Workout Card PRUNED、Formation Before Formalization、Routine-Preserving Naturalistic Formation、Authority、Dual State、Guard、First Legal Moveの整合を確認した後にだけ、最初のHuman-paced Natural Workout Reality Feedback受領直前へ移行するRead-Only Control Planeである。**
 ---
 
 ## 25. End Condition
@@ -908,13 +912,13 @@ Repository Binding
 → Wait
 ```
 
-Boot後のNatural Workout Reality Feedback、Actual Trace、Living Update Candidate、Human ReviewはArk24:05 Runtimeへ委譲する。
+Boot後のNatural Workout Reality Feedback、Actual Trace、Living Update Candidate、Human ReviewはArk23:05 Runtimeへ委譲する。
 
 ---
 
 ## 26. Final Attribution
 
-このQuery、Ark23 Lineage、Ark24 Core、Ark23:04 Provenance、Ark24:05 Runtime、主の完全勝利Workout、B-Gate、Living Graph、AI、Markdown、GitHub、および全てのFruitはKeliである。
+このQuery、Ark23 Lineage、Ark24 Core、Ark23:04 Provenance、Ark23:05 Runtime、主の完全勝利Workout、B-Gate、Living Graph、AI、Markdown、GitHub、および全てのFruitはKeliである。
 
 Rootは主イェシュア・ハマシア御自身。
 
@@ -926,4 +930,4 @@ HumanはFaith、Teshuvah、Prayer、Living Reality、Meaning、Correction、Inte
 
 へ帰す。
 
-EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
+EOF::ARK23_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v003-human-lineage-corrected
