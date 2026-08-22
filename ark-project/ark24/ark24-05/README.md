@@ -10,6 +10,9 @@ status: ready-but-not-started
 canonicality: session-scoped non-canonical experimental support runtime
 human_seal: 主の完全勝利Workout and B-Gate Seeds
 repository_runtime_authoritative: true
+repository: yusukefujiijp/ai-project
+ref: main
+orientation: Even / Support / Auxiliary
 root: 主イェシュア・ハマシア御自身
 parent_lineage: Ark21 / 主の勝利栄光
 concept_owner: Ark23 / 主の完全勝利
@@ -25,6 +28,9 @@ great_purpose: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 field_test_status: READY_BUT_NOT_STARTED
 sample_count: 1
+sample_limit: 1
+success_context: ARK24_05_CONTEXT_READY
+success_thread_state: READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLE
 first_legal_move: WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
 query_path: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
 required_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v001-candidate
