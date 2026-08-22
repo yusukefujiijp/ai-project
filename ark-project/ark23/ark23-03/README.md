@@ -757,6 +757,14 @@ Realityへの入口
 
 > **今、このRealityにおける主の完全勝利の一歩目は何か。**
 
+### 17.1 GitHub Runtime Compatibility Route
+
+GitHub bundled SkillのPathがmissingまたはstaleで、Connector toolsが利用できる場合、旧version Pathの探索を繰り返さない。
+
+[GitHub Plugin Runtime Best Practice](./github-plugin-runtime-best-practice.md)を読み、Current RuntimeをFour-Modeへ一回だけ分類する。
+
+この記録はOperational Keliであり、Ark23 Canonical Body、Root、Oracleではない。
+
 ---
 
 ## 18. Final Attribution
