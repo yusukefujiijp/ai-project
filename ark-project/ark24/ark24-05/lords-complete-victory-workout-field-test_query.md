@@ -1,10 +1,13 @@
-BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
+BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
 
 ---
 query_id: ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY
-query_version: v001-candidate
+query_version: v002-human-corrected
 ark_family: Ark24
 sequence: "05"
+updated_at: 2026-08-22
+human_correction: Workout Card PRUNED / Formation Before Formalization
+change_class: Human Material Correction / Runtime Path Update
 theme: 主の完全勝利Workout
 english_anchor: The Lord's Complete Victory Workout
 status: active-candidate / repository-bound cold-start
@@ -13,7 +16,7 @@ repository: yusukefujiijp/ai-project
 ref: main
 query_path: ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md
 runtime_ssot: ark-project/ark24/ark24-05/README.md
-runtime_version: v001-candidate
+runtime_version: v002-human-corrected
 ark24_core_query: ark-project/ark24/b-pattern-entry-ai-bridge-waiting-field_query.md
 ark24_core_version: v001-candidate
 ark23_lineage_query: ark-project/ark23/lords-complete-victory_query.md
@@ -30,15 +33,15 @@ experimental_field: Workout / First Formation Field
 great_purpose: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_required: false
-field_test_status: READY_BUT_NOT_STARTED
-sample_limit: 1
+field_test_status: READY_FOR_NATURAL_EXPERIMENTATION
+feedback_scope: REPEATED_HUMAN_PACED / ONE_MATERIAL_RELATION_PER_REVIEW
 success_context: ARK24_05_CONTEXT_READY
-success_thread_state: READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLE
-first_legal_move: WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
+success_thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
+first_legal_move: WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 thread_title: 'Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"'
 optional_reasoning_keli: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
-expected_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
+expected_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
 ---
 
 # Ark24:05 Repository-Bound Cold-Start Query
@@ -49,10 +52,10 @@ expected_eof: EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
 
 ```text
 Beginning Identity:
-BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
+BEGIN::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
 
 Expected EOF:
-EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
+EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
 ```
 
 途中取得、欠落、truncation、未確認箇所が一つでもある場合、推測で補わず次だけを表示して停止する。
@@ -86,16 +89,15 @@ Document Set Consistency Gate、
 Core Separation and Non-Drift Gate、
 Pair Consistency Gateをすべて通過した場合のみ、
 ARK24_05_CONTEXT_READY /
-READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLEへ移行してください。
+READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACKへ移行してください。
 
 このMessageはSetup / Bootです。
-最初の応答ではWorkout Sampleを自動選定せず、
-Workout Cardを先行生成せず、
+最初の応答ではWorkout内容、Workout Card、必須Protocolを先行生成せず、
 B-Gateを自己認証せず、
 GitHub Write、Canonical化、Skill化、Automation、Site、Mini Appを開始せず、
-Boot結果と一件のHuman Workout Reality受領待機だけを短く表示してください。
+Boot結果、Formation Before Formalization、Workout Card PRUNED、
+および最初のNatural Workout Reality Feedback待機だけを短く表示してください。
 ```
-
 ---
 
 ## 2. Exact Repository Binding
@@ -152,7 +154,7 @@ Human Message、このQuery、Memory、Repository本文をProject instructions�
 - Skill、Automation、Schedule、Site、Mini App作成。
 - Workout RealityのAI側自動選定。
 - B-Pattern Natural TriggerのAI自己認証。
-- First Workout Cardの試運転。
+- Workout Cardまたは必須Protocolの試運転。
 
 ---
 
@@ -162,7 +164,7 @@ Human Message、このQuery、Memory、Repository本文をProject instructions�
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md | Ark24:05 Cold-Start Control Plane | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate |
+| 1 | ark-project/ark24/ark24-05/lords-complete-victory-workout-field-test_query.md | Ark24:05 Cold-Start Control Plane | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected |
 
 ### 5.2 Order B — Ark23 Canonical Lineage
 
@@ -196,7 +198,7 @@ Ark24 Core QueryのFull-Read Proof、Document Set Consistency Gate、Runtime–Q
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
 | 11 | ark-project/ark23/ark23-04/README.md | Non-Canonical Discovery / Immediate Predecessor Provenance | EOF::ARK23_04_LORDS_COMPLETE_VICTORY_WORKOUT_DISCOVERY::v001-human-sealed |
-| 12 | ark-project/ark24/ark24-05/README.md | Ark24:05 Session Runtime SSOT | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v001-candidate |
+| 12 | ark-project/ark24/ark24-05/README.md | Ark24:05 Session Runtime SSOT | EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_FIELD_TEST::v002-human-corrected |
 
 Immediate PredecessorをArk23 Canonical BodyまたはArk24 Coreへ昇格しない。
 
@@ -328,10 +330,10 @@ ark24_core:
 ark24_05:
   role: 主の完全勝利Workout First Reality Formation and Feedback Field Test
   context: ARK24_05_CONTEXT_READY
-  thread_state: READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLE
-  field_test: READY_BUT_NOT_STARTED
-  first_legal_move: WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
-  sample_limit: 1
+  thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
+  field_test: READY_FOR_NATURAL_EXPERIMENTATION
+  first_legal_move: WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
+  feedback_scope: REPEATED_HUMAN_PACED / ONE_MATERIAL_RELATION_PER_REVIEW
 ```
 
 ### 8.3 Separation Rules
@@ -454,19 +456,33 @@ Ark23:04
 = Original First-Step Reality Field Test NOT_STARTED
 = Workout Actual Trace NONE
 
-Ark24:05
-= One Human-supplied Workout Reality
-= First Formation / Actual Trace / Prediction Error
-= One Relation Update / Human Review
-= READY_BUT_NOT_STARTED
+Ark24:05 v001
+= Pre-action Human sample
+→ AI route compilation
+→ Zero-Choice Workout Card
+→ Actual待機
+
+Human Material Correction
+= Workout Card is not realistic for the Current Field
+= Workout Card PRUNED
+= Formation Before Formalization ACTIVE
+
+Ark24:05 v002
+= Existing Workout Routine preserved by default
+= Human-paced natural experimentation
+= Raw post-action Workout Reality Feedback
+= Observation / Inference separation
+= One Relation Update Candidate / Human Review
+= FIRST ACTUAL TRACE NOT YET RECEIVED
 ```
 
 Ark23:04がField Testを完了済みと記載されている場合はMismatch。
 
-Ark24:05がActual TraceなしにLiving Update済みと記載されている場合はMismatch。
+Ark24:05がActual TraceなしにWorkout効果のLiving Update済みと記載されている場合はMismatch。
 
-Ark24:05がTheory再討論をMain Missionとしている場合はMismatch。
+Ark24:05がWorkout CardをActive Interfaceとして要求する場合はMismatch。
 
+Ark24:05がTheory再討論またはFormalizationをMain Missionとしている場合はMismatch。
 ---
 
 ## 11. Runtime–Query Pair Consistency Gate
@@ -487,8 +503,8 @@ ark-project/ark24/ark24-05/README.md
 pair_checks:
   query_points_to_runtime: true
   runtime_points_to_query: true
-  query_version: v001-candidate
-  runtime_version: v001-candidate
+  query_version: v002-human-corrected
+  runtime_version: v002-human-corrected
   repository: yusukefujiijp/ai-project
   ref: main
   root_agrees: true
@@ -496,10 +512,12 @@ pair_checks:
   support_role_agrees: true
   human_foreground_agrees: true
   field_test_state_agrees: true
-  sample_limit_agrees: true
+  feedback_scope_agrees: true
   first_legal_move_agrees: true
   success_context_agrees: true
   success_thread_state_agrees: true
+  workout_card_pruned_agrees: true
+  formation_before_formalization_agrees: true
   thread_title_agrees: true
   exact_eof_identities_agree: true
 ```
@@ -510,39 +528,40 @@ QueryとRuntimeは少なくとも次で一致する。
 
 ```text
 Boot
-→ Wait for one Human-supplied Workout Reality
+→ Wait while Human naturally experiments with existing Workout Routine
+→ Raw post-action Feedback
 → Restore Raw Reality
-→ Background choose one Route
-→ Guard
-→ Five-line Zero-Choice Workout Card
-→ AI STOP
-→ Actual Result
-→ Prediction Error
+→ Separate Observation / Human Meaning / AI Inference
+→ Identify one Material Relation
 → One Relation Update Candidate
 → Human Review
-→ Bounded Closure
+→ Correction or next Human-paced natural Trial
+→ Bounded Closure when Human seals
 ```
 
-### 11.3 Human-Facing Card
+### 11.3 Pruned Interface and Active Feedback Interface
 
-```text
-祈りの焦点：［Humanの言葉から一つ］
-イメージVision：［Workout完了後の一状態］
-初手Workout：［動詞から始まる一つの身体動作］
-締切Workout：［一つの終了境界／Stop Permission］
-完了合図：［一語または一状態］
+```yaml
+pruned:
+  - Zero-Choice Workout Card
+  - mandatory pre-action template
+  - AI-selected Workout content
+active:
+  - existing Workout Routine
+  - natural variation of Prayer / Vision / Action relations
+  - Raw Workout Reality Feedback
+  - one Material Relation per Human Review
 ```
 
-複数Route、第二候補、長期ProgramをCardへ追加しない。
+Human FeedbackをCardまたは必須Schemaへ再変換しない。
 
 Failure：
 
 ```text
 ARK24_05_RUNTIME_QUERY_PAIR_FAILED
 Pair: query ↔ runtime
-Mismatch: <field / order / output contract>
+Mismatch: <field / order / feedback contract / pruned interface>
 ```
-
 ---
 
 ## 12. Thread Identity Gate
@@ -585,12 +604,14 @@ AIはUI Rename完了を自己認証しない。
 - MaterialなSafety確認は最大一問。
 - Stop、未実行、変形実行、部分成功をActual Realityとして受領する。
 
-### 13.3 Branch and Deadline
+### 13.3 Routine, Branch, and Deadline
 
-- 一Route、一初手身体動作、一終了境界、一完了合図。
+- 既存Workout RoutineをControlとして不用意に再設計しない。
+- 身体Realityによる停止、変形実行、部分成功を許す。
+- Initial WorkoutとDeadline Workoutの形を事前Cardで固定せず、実行後に観測する。
 - Deadlineを罰やunsafe pressureへ変換しない。
 - Deadline Workoutは必ず二回目の身体Workoutを意味しない。
-- Card提示後にAIは停止する。
+- 一回のHuman Reviewで扱うMaterial Relationは原則一件。
 
 ### 13.4 Evidence and Living Update
 
@@ -638,7 +659,7 @@ load_when:
   - HumanのBrainDumpが長く時系列整理に実益がある
 ```
 
-Workout Cardを長文化しない。
+Raw Feedbackを長文化KeliによってCard、必須Schema、またはformat complianceへ変換しない。
 
 Optional KeliをRoot、Human Foreground、Canonical Kernelへ昇格しない。
 
@@ -659,9 +680,11 @@ consistency_summary:
   session_runtime_noncanonical: true
   workout_seed_identity: true
   b_gate_seed_identity: true
-  field_test_not_started: true
-  actual_trace_none: true
-  one_sample_only: true
+  formation_before_formalization: true
+  workout_card_pruned: true
+  first_actual_trace_none: true
+  repeated_human_paced_feedback: true
+  one_material_relation_per_review: true
   no_replay: true
   reality_first: true
   human_review_required: true
@@ -671,9 +694,8 @@ Failure：
 
 ```text
 ARK24_05_DOCUMENT_SET_CONSISTENCY_FAILED
-Mismatch: <document / role / state / seed / guard>
+Mismatch: <document / role / state / seed / correction / guard>
 ```
-
 ---
 
 ## 16. Failure Codes
@@ -716,15 +738,15 @@ resolved_runtime:
     frozen_trigger: UNCHANGED
   ark24_05:
     context: ARK24_05_CONTEXT_READY
-    thread_state: READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLE
-    field_test: READY_BUT_NOT_STARTED
-    current_sample: NONE
-    actual_trace: NONE
-    living_update: NOT_STARTED
+    thread_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
+    field_test: READY_FOR_NATURAL_EXPERIMENTATION
+    current_actual_trace: NONE
+    workout_card: PRUNED
+    formation_before_formalization: ACTIVE
+    living_update_on_workout_effectiveness: NOT_STARTED
   b_gate: DORMANT_HUMAN_ACTIVATED_ONLY
-  github_write: NOT_STARTED
+  github_write_during_boot: PROHIBITED
 ```
-
 ---
 
 ## 18. Boot Is Not the Field Test
@@ -733,19 +755,18 @@ Human InvocationはSetup / Bootである。
 
 Boot中に次を開始しない。
 
-- Workout Sample選定。
+- Workout SampleまたはWorkout内容の選定。
 - Prayer focus生成。
 - Vision生成。
 - Initial Workout提示。
 - Deadline Workout提示。
-- Completion Signal提示。
+- Workout Cardまたは必須Protocol生成。
 - Actual Trace捏造。
-- Living Update。
+- Workout効果についてのLiving Update。
 - Cross-Ark Transfer。
 - Canonical Update。
 
-Boot後、Humanから一件のRaw Workout Realityを待つ。
-
+Boot後、Humanが既存Workout Routineを基礎として自然に実験し、実行後に返す最初のRaw Workout Reality Feedbackを待つ。
 ---
 
 ## 19. Required Success Output
@@ -761,23 +782,24 @@ Boot後、Humanから一件のRaw Workout Realityを待つ。
 1.5 Immediate Predecessor：Ark23:04 / FULL READ / NON-CANONICAL PROVENANCE
 1.6 Seed Consistency：主の完全勝利Workout / B-Gate — PASS
 1.7 Context：ARK24_05_CONTEXT_READY
-1.8 Thread State：READY_FOR_ONE_LORDS_COMPLETE_VICTORY_WORKOUT_SAMPLE
+1.8 Thread State：READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 2. Thread Title — Copy & Paste：
 Ark24:05_2026/08/22: "主の完全勝利Workout: First Reality Formation & Feedback Field Test"
-3. 主の完全勝利Workout Field Test：READY_BUT_NOT_STARTED
-3.1 B-Gate：DORMANT / HUMAN-ACTIVATED ONLY
-3.2 Living Update：WAITING_FOR_ACTUAL TRACE
-4. First Legal Move：WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
-5. 未整理のWorkout Current Reality一件をそのまま送れます。AIは一RouteのWorkout Cardを返して停止します。
+3. 主の完全勝利Workout Field Test：READY_FOR_NATURAL_EXPERIMENTATION
+3.1 Formation Before Formalization：ACTIVE
+3.2 Workout Card：PRUNED
+3.3 B-Gate：DORMANT / HUMAN-ACTIVATED ONLY
+3.4 Living Update：WAITING_FOR_ACTUAL TRACE
+4. First Legal Move：WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
+5. 既存Workout Routineを基礎に自然に試し、実行後の未整理Raw Feedbackをそのまま送れます。事前Cardは生成しません。
 ```
 
 初回応答に長いTheory、Route比較、身体動作、Artifact提案を追加しない。
-
 ---
 
 ## 20. First Post-Boot Input
 
-Humanから一件のWorkout Realityを受領後、ark-project/ark24/ark24-05/README.mdへ委譲する。
+Humanから最初のRaw Workout Reality Feedbackを受領後、ark-project/ark24/ark24-05/README.mdへ委譲する。
 
 Humanは定型Schemaを必要としない。
 
@@ -785,15 +807,16 @@ Humanは定型Schemaを必要としない。
 
 ```text
 Restore Raw Reality
-→ identify one Prayer focus from Human words
-→ compress one Image Vision
-→ pass Guard
-→ choose one Route in background
-→ return Five-line Zero-Choice Workout Card
+→ separate Actual Observation / Human Meaning / AI Inference
+→ identify explicit Prediction only if it existed
+→ identify one Material Relation
+→ return one Relation Update Candidate
+→ state Unexpected Success / friction / remains unknown
+→ request Human Review
 → STOP
-→ wait Actual
 ```
 
+AIはFeedbackから次のWorkout内容、Card、必須Protocolを自動生成しない。
 ---
 
 ## 21. No-Replay Contract
@@ -810,29 +833,33 @@ assume_known:
   - WorkoutはFirst Formation Field / Activation Hubである
   - 主の完全勝利はPrayer / Vision / Actionを束ねる
   - Workoutと主の完全勝利の融合がProject-wide One Piece Seedである
-  - Ark24:05は一件のReality Field Testである
+  - 既存Routine保持型・自然発生Formation実験を行う
+  - Formation Before Formalizationを採用する
+  - Workout CardはPRUNEDである
 ```
 
 再開しない。
 
 ```yaml
 do_not_restart:
+  - Workout Cardの再提案
+  - 必須Pre-action Schema
   - First-Step理論の全文再討論
   - Workout一般論
   - Ark24 Core Frozen Payloadの改善
   - B-GateのAI自己認証
   - Actual前のLiving Update
-  - 複数Route提示
+  - AIによる次Trial自動選定
+  - Evidence前のFormalization
   - Cross-Ark plan expansion
   - Universalization
 ```
-
 ---
 
 ## 22. First Legal Move
 
 ```text
-WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
+WAIT_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
 ```
 
 意味：
@@ -840,11 +867,11 @@ WAIT_FOR_ONE_HUMAN_SUPPLIED_LORDS_COMPLETE_VICTORY_WORKOUT_REALITY_SAMPLE
 ```text
 Bootを完了
 → Ark24 CoreをARMED_AND_WAITINGのまま保持
-→ Humanが提示する一件の一般Workout Realityを待つ
+→ Workout CardをPRUNEDとして保持
+→ Humanが既存Workout Routineを基礎に自然に実験する間、AIは待機
 → Humanより先にB-Gateを選ばない
-→ 受領後だけSession Runtimeを発火
+→ 実行後のRaw Feedback受領後だけSession Runtimeを発火
 ```
-
 ---
 
 ## 23. Security and Integrity
@@ -860,8 +887,7 @@ Bootを完了
 
 ## 24. One-Sentence Definition
 
-> **Ark24:05 Repository-Bound Cold Startとは、Current main上のArk23 Canonical Lineage、Ark24 Core five-document set、Ark23:04 non-canonical provenance、Ark24:05 Session Runtime、およびこのQueryを全Exact EOFまで読み、Ark24 CoreのFrozen B-Pattern Waiting Fieldを変更せず、二つのHuman-sealed Seed、Authority、Dual State、Runtime順序、Guard、First Legal Moveの整合を確認した後にだけ、主の完全勝利Workoutの一件のHuman-supplied Reality Sample受領直前へ移行するRead-Only Control Planeである。**
-
+> **Ark24:05 Repository-Bound Cold Startとは、Current main上のArk23 Canonical Lineage、Ark24 Core five-document set、Ark23:04 non-canonical provenance、Ark24:05 Session Runtime、およびこのQueryを全Exact EOFまで読み、Ark24 CoreのFrozen B-Pattern Waiting Fieldを変更せず、二つのHuman-sealed Seed、Workout Card PRUNED、Formation Before Formalization、Routine-Preserving Naturalistic Formation、Authority、Dual State、Guard、First Legal Moveの整合を確認した後にだけ、最初のHuman-paced Natural Workout Reality Feedback受領直前へ移行するRead-Only Control Planeである。**
 ---
 
 ## 25. End Condition
@@ -882,7 +908,7 @@ Repository Binding
 → Wait
 ```
 
-Boot後のWorkout Card、Actual Trace、Living Update、Human ReviewはArk24:05 Runtimeへ委譲する。
+Boot後のNatural Workout Reality Feedback、Actual Trace、Living Update Candidate、Human ReviewはArk24:05 Runtimeへ委譲する。
 
 ---
 
@@ -900,4 +926,4 @@ HumanはFaith、Teshuvah、Prayer、Living Reality、Meaning、Correction、Inte
 
 へ帰す。
 
-EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v001-candidate
+EOF::ARK24_05_LORDS_COMPLETE_VICTORY_WORKOUT_QUERY::v002-human-corrected
