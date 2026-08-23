@@ -164,7 +164,7 @@ Binding Rules：
 | 8 | ark-project/ark23/INSTRUCTIONS.md | Ark23 Core Runtime SSOT Candidate | ARK23_INSTRUCTIONS_EOF_v001-candidate | 4b909aecdf1fdf1c3d20ed5b66c66d02175de2fb |
 | 9 | ark-project/ark24/b-pattern-entry-ai-bridge-waiting-field_query.md | Ark24 Core Cold-Start Query | ARK24_B_PATTERN_WAITING_FIELD_QUERY_EOF_v001-candidate | ce856d1c07d3c904529bc5ef3b9c852fc8545a1d |
 | 10 | ark-project/ark24/README.md | Ark24 Core Front Door / Identity / Map | ARK24_README_EOF_v001-candidate | 9fc3e8a7ed61a3f7ca26090133cff37cfaf5e92c |
-| 11 | ark-project/ark24/ark24.md | Ark24 Core Semantic Boundary | ARK24_CANONICAL_BODY_EOF_v001-candidate | 228fa8f1f3b5918faeb078043b24b9d823632a |
+| 11 | ark-project/ark24/ark24.md | Ark24 Core Semantic Boundary | ARK24_CANONICAL_BODY_EOF_v001-candidate | 228fa8f1f3baefd849a7bc2bf3177717b8220334 |
 | 12 | ark-project/ark24/INSTRUCTIONS.md | Ark24 Core Waiting / Trigger Runtime | ARK24_INSTRUCTIONS_EOF_v001-candidate | 3ea4ae9e8d2c3254083030061d426f1239cf94d6 |
 | 13 | ark-project/ark24/b-pattern-entry-ai-bridge-trigger_query.md | Frozen Trigger Payload | ARK24_B_PATTERN_TRIGGER_QUERY_EOF_v001-human-sealed | b25fed4d63d26b0b7efb79cc230dcf01fa33bf20 |
 
