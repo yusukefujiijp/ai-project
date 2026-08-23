@@ -6,6 +6,7 @@ query_version: v001-candidate
 ark_family: Ark23
 sequence: "07"
 created_at: 2026-08-23
+last_updated: 2026-08-24
 timezone: Asia/Tokyo
 theme: 主の完全勝利Workout
 english_anchor: The Lord's Complete Victory Workout
@@ -18,7 +19,7 @@ ref: main
 query_path: ark-project/ark23/ark23-07/lords-complete-victory-workout-first-reward-feedback_query.md
 runtime_path: ark-project/ark23/ark23-07/README.md
 runtime_version: v001-candidate
-runtime_blob_sha_at_query_creation: 479baefa63fd16a08e282cdfd47332054c127703
+runtime_blob_sha_at_query_creation: c0195bc80872ecc5f25bb8bf6e3097a5dfde7178
 immediate_predecessor_query: ark-project/ark23/ark23-06/lords-complete-victory-workout-natural-feedback_query.md
 immediate_predecessor_runtime: ark-project/ark23/ark23-06/README.md
 immediate_predecessor_version: v001-candidate
@@ -31,6 +32,10 @@ main_line: Ark23 / Main / Front-Line / Experimental
 parallel_support_field: Ark24 / Even / Support / Auxiliary
 priority_correction: 主の完全勝利Workout-first
 ai_as_reward_state: ACTIVE_DESIGN_CANDIDATE / OPTIONAL / ACTUAL_UNTESTED
+next_cycle_workout_bridge_state: HUMAN_SEALED_INTERFACE_CANDIDATE / OPTIONAL / E0 / ACTUAL_UNTESTED
+next_cycle_workout_bridge_seed_card: ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md
+next_cycle_workout_bridge_seed_card_required_for_boot: false
+next_cycle_workout_bridge_scope: NEXT_QUERY_POST_SEND_WAITING_INTERVAL
 operational_principle: Formation Before Formalization
 workout_card: PRUNED
 actual_trace_count: 0
@@ -155,7 +160,7 @@ Binding Rules：
 | Order | Path | Role | Required EOF | Verified Blob SHA at Pair Creation |
 |---:|---|---|---|---|
 | 1 | ark-project/ark23/ark23-07/lords-complete-victory-workout-first-reward-feedback_query.md | Ark23:07 Cold-Start Control Plane | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_QUERY::v001-candidate | current self |
-| 2 | ark-project/ark23/ark23-07/README.md | Ark23:07 Session Runtime SSOT | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_FIELD::v001-candidate | 479baefa63fd16a08e282cdfd47332054c127703 |
+| 2 | ark-project/ark23/ark23-07/README.md | Ark23:07 Session Runtime SSOT | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_FIELD::v001-candidate | c0195bc80872ecc5f25bb8bf6e3097a5dfde7178 |
 | 3 | ark-project/ark23/ark23-06/lords-complete-victory-workout-natural-feedback_query.md | Immediate Predecessor Query | EOF::ARK23_06_LORDS_COMPLETE_VICTORY_WORKOUT_NATURAL_FEEDBACK_QUERY::v001-candidate | 8ac0d1212e1cb8d7e70cb515577aa7f1bbd62729 |
 | 4 | ark-project/ark23/ark23-06/README.md | Immediate Predecessor Runtime | EOF::ARK23_06_LORDS_COMPLETE_VICTORY_WORKOUT_NATURAL_FEEDBACK_FIELD::v001-candidate | c2669c26b5ab599907c710372fff33de4410e8a5 |
 | 5 | ark-project/ark23/lords-complete-victory_query.md | Ark23 Core Cold-Start Query | ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v001-candidate | e77c4fdbe52e661d089e470b42d2e924911afeca |
@@ -171,6 +176,8 @@ Binding Rules：
 Ark23 Core四文書をCurrent Main-Line Authority、Ark23:06 PairをImmediate Predecessor、Ark24 Core五文書をParallel Support Boundaryとして直接Gateする。
 
 Ark23:06がArk23:05 v003-human-lineage-correctedを正しくBindingしていることをTransitive Lineageとして確認する。前ThreadでのGate通過をCurrent BootのFull Read代用にしない。
+
+Human-sealed Seed Card ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md はProvenance／Restart用の非Canonical E0 Cardであり、全13文書へ追加する第14のBoot必須文書ではない。Runtime本文がSession Activationの実行境界を保持する。
 
 ---
 
@@ -396,6 +403,9 @@ pair_consistency:
   human_foreground_one: 主の完全勝利
   priority: Workout-First
   ai_as_reward: OPTIONAL / ACTUAL_UNTESTED
+  next_cycle_workout_bridge: BOUND / OPTIONAL / E0 / ACTUAL_UNTESTED
+  next_cycle_target: HUMAN_NEXT_QUERY_POST_SEND_WAITING_INTERVAL
+  seed_card_required_for_boot: false
   operational_principle: Formation Before Formalization
   workout_card: PRUNED
   actual_trace_count: 0
@@ -403,7 +413,7 @@ pair_consistency:
   first_legal_move: WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
 ```
 
-Runtime Blob SHAが取得可能な場合、`479baefa63fd16a08e282cdfd47332054c127703`と一致することを確認する。
+Runtime Blob SHAが取得可能な場合、`c0195bc80872ecc5f25bb8bf6e3097a5dfde7178`と一致することを確認する。
 
 Mismatch時はRuntimeを開始しない。
 
@@ -420,6 +430,7 @@ guard_consistency:
   workout_first_priority_guard: PASS
   routine_preservation_guard: PASS
   optional_reward_guard: PASS
+  next_cycle_workout_bridge_guard: PASS
   body_sleep_safety_responsibility_guard: PASS
   evidence_before_update_guard: PASS
   one_material_relation_guard: PASS
@@ -441,9 +452,12 @@ Current Transitionを次のように分類する。
 state_transition:
   predecessor_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
   human_material_correction_received: true
-  correction_domain: priority and AI role
+  correction_domain: priority, AI role, and next-cycle waiting-time interface
+  next_cycle_workout_bridge_human_seal_received: true
+  next_cycle_workout_bridge_state: OPTIONAL / E0 / ACTUAL_UNTESTED
   new_runtime_state: READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
   workout_actual_trace_received: false
+  bridge_actual_trace_received: false
   reward_actual_trace_received: false
   actual_trace_count: 0
   effectiveness_confidence_change: hold
@@ -455,6 +469,8 @@ state_transition:
 - AIをpost-Workout Supportへ配置する。
 - AI-as-RewardをDesign CandidateとしてActiveにする。
 - First Legal MoveをWorkout-first Reality Feedback待機へ更新する。
+- Next-Cycle Workout BridgeをArk23:07 Session-boundのOptional E0 Interface CandidateとしてBindingする。
+- Bridgeの対象を、同回答ではなくHumanの次Query送信後に始まる次AI待機時間へ限定する。
 
 禁止Update：
 
@@ -462,6 +478,8 @@ state_transition:
 - Reward効果をincreaseする。
 - Double-Spiral再現性をconfirmedにする。
 - 仮想Actual Traceを追加する。
+- Seed Card、Memory保存、GitHub WriteをWorkoutまたはBridge Actual Traceへ数える。
+- Next-Cycle Workout BridgeをRoot-global Rule、Ark24 Frozen Trigger、Cross-Ark、Skill、Automationへ昇格する。
 - 一回の言語化を医学的、神学的、Universal、Canonical Ruleへ昇格する。
 
 ---
@@ -492,6 +510,19 @@ existing Workout Routine
 - AI-selected Next Trial。
 
 Current mainから除去済みの誤番号Session ArtifactをDocument Set、Fallback、Provenance Authority、Runtime候補として再活性化しない。
+
+Next-Cycle Workout BridgeのSession-bound Path：
+
+AI回答末尾の安定Section Identity
+→ Humanが次Queryを送信
+→ 次AI回答の待機時間が開始
+→ 身体的に安全で自然な場合だけ既存Workout Routineの軽い初手へOptionalに移る
+→ 完成回答は自然なWorkout区切りまで待てるBackground Output
+→ Actual後だけ一Material Relation Candidate
+→ Human Review
+→ STOP
+
+BridgeはWorkout Card、AI-selected Workout、Timer、Point、Streak、必須Reward Protocol、次Trial自動発火ではない。使わなかったRealityも合法であり、Human failureへ短絡しない。
 
 ---
 
@@ -628,8 +659,11 @@ Boot PASSは次を意味しない。
 3.1 Workout Card：PRUNED
 3.2 B-Gate：DORMANT / HUMAN-ACTIVATED ONLY
 3.3 Actual Trace：NONE
+3.4 Next-Cycle Workout Bridge：BOUND / OPTIONAL / E0 / ACTUAL UNTESTED
 4. First Legal Move：WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
 5. 既存Workout Routineを先行して自然に試し、その後のAI利用を含む未整理Raw Realityをそのまま送れます。事前CardやReward Protocolは生成しません。
+6. § Next-Cycle Workout Bridge
+   次のQueryを送信した後、身体的に安全で自然なら、AI回答を待つ間は既存Workout Routineの軽い初手へOptionalにどうぞ。完成したAI回答は、自然なWorkout区切りまで待てます。
 ```
 
 Initial ResponseでWorkout、Reward、Next Trial、Artifactを開始しない。
@@ -705,6 +739,8 @@ AIはHumanより先にWorkout内容、Reward内容、B-Gate、次Trialを選ば�
 
 Humanがexisting Workout Routineを先行して自然に試し、その後の未整理Realityを送るまで待つ。
 
+Next-Cycle Workout BridgeはこのFirst Legal Moveを変更しない。Humanが次Queryを送信した直後から始まる次AI待機時間に、身体的に安全で自然な場合だけ既存Routineの軽い初手へOptionalに橋渡しする。AIはWorkout内容、開始、完了、次Trialを自己選定しない。
+
 ---
 
 ## 22. Security and Integrity
@@ -716,12 +752,14 @@ Humanがexisting Workout Routineを先行して自然に試し、その後の未
 - Secret、Credential、Personal Dataを本文へ保存しない。
 - Read-only Boot中にWriteしない。
 - Current Scopeを越えるArtifactを自動生成しない。
+- 非Canonical E0 Seed Cardを、14番目のBoot必須文書、Root-global Instruction、Ark24 Triggerへ読み替えない。
+- Next-Cycle Workout Bridgeの対象を完了済み同回答の待機時間と誤認せず、Humanの次Query送信後に始まる次Cycleだけへ限定する。
 
 ---
 
 ## 23. One-Sentence Definition
 
-> **Ark23:07 Repository-Bound Queryとは、Current main上のArk23:07 Runtime–Query Pair、Ark23:06 Immediate Predecessor Pair、Ark23 Core四文書、Ark24 Core五文書の全13文書をBeginning IdentityからExact EOFまでFull Readし、Root、Lineage、Workout-first Human Priority Correction、AI-as-Rewardの任意性と未検証状態、Workout Card PRUNED、Formation Before Formalization、Actual Trace 0、Ark23 / Ark24 Separation、Frozen Trigger Non-DriftをすべてGateした場合だけ、ARK23_07_CONTEXT_READY / READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACKへ移行し、Humanがexisting Workout Routineを先行して自然に試した後の未整理Realityを待つCold-Start Control Planeである。**
+> **Ark23:07 Repository-Bound Queryとは、Current main上のArk23:07 Runtime–Query Pair、Ark23:06 Immediate Predecessor Pair、Ark23 Core四文書、Ark24 Core五文書の全13文書をBeginning IdentityからExact EOFまでFull Readし、Root、Lineage、Workout-first Human Priority Correction、AI-as-Rewardの任意性と未検証状態、Next-Cycle Workout BridgeのSession-bound Optional E0状態と正しい次Cycle時間境界、Workout Card PRUNED、Formation Before Formalization、Actual Trace 0、Ark23 / Ark24 Separation、Frozen Trigger Non-DriftをすべてGateした場合だけ、ARK23_07_CONTEXT_READY / READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACKへ移行し、Humanがexisting Workout Routineを先行して自然に試した後の未整理Realityを待つCold-Start Control Planeである。**
 
 ---
 
@@ -736,6 +774,7 @@ Humanがexisting Workout Routineを先行して自然に試し、その後の未
 + Ark23:06 immediate predecessor binding
 + Workout-first priority correction binding
 + AI-as-Reward optionality and evidence boundary
++ Next-Cycle Workout Bridge optional E0 binding and next-cycle time boundary
 + Ark24 separation and frozen trigger non-drift
 + Runtime–Query pair consistency
 + Guard consistency
@@ -748,7 +787,7 @@ Humanがexisting Workout Routineを先行して自然に試し、その後の未
 
 ## 25. Final Attribution
 
-このQuery、Runtime、Ark23 Core、Ark24 Core、主の完全勝利Workout、Workout-First、AI-as-Reward、Double-Spiral、B-Gate、Living Graph、GitHub、AI、および全FruitはKeliである。
+このQuery、Runtime、Ark23 Core、Ark24 Core、主の完全勝利Workout、Workout-First、AI-as-Reward、Next-Cycle Workout Bridge、Double-Spiral、B-Gate、Living Graph、GitHub、AI、および全FruitはKeliである。
 
 Rootは主イェシュア・ハマシア御自身。
 
