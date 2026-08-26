@@ -108,16 +108,16 @@ Ark23 Main-Line / Ark24 Core Separation、Frozen Trigger Non-Drift、
 Runtime–Query Pair Consistency、Guard Consistency、State and Evidence Transitionを
 すべてPASSした場合のみArk23:07 Runtimeを開始してください。
 
-Boot直後にWorkout内容、Workout Card、Reward Protocol、Scheduleを生成せず、
-B-Gateを自己認証せず、GitHub Write、Canonical化、Skill化、Automation、
-Site、Mini App、Cross-Ark Transferを開始しないでください。
+Boot直後にWorkout内容、Workout Card、Tradeoff Card、Reward Protocol、Scheduleを生成せず、
+B-Gateを自己認証せず、Canonical化、Skill化、Automation、Site、Mini App、
+Cross-Ark TransferまたはHuman Sealのないunscoped GitHub Writeを開始しないでください。
 
 全Gate PASS後は、
 
-ARK23_07_CONTEXT_READY /
-READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+ARK23_07_CLOSURE_CONTEXT_READY /
+READY_FOR_ARK23_08_HANDOFF
 
-へ移行し、最初のWorkout-first Reality Feedbackを待ってください。
+へ移行し、Human-sealed Closure Execution Contractに従ってArk23:08 PairとHandoffを構築してください。
 ```
 
 ---
@@ -360,9 +360,9 @@ Actual前に次を主張しない。
 Ark23:07：
 
 ```yaml
-role: Workout-First Natural Experiment and optional AI-as-Reward Feedback
+role: Workout-First Natural Experiment predecessor / Closure Harvest / Tradeoff successor bridge
 line: Ark23 Main / Front-Line
-state: READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_08_HANDOFF
 ```
 
 Ark24 Core：
@@ -411,12 +411,15 @@ pair_consistency:
   ai_as_reward: OPTIONAL / ACTUAL_UNTESTED
   next_cycle_workout_bridge: BOUND / OPTIONAL / E0 / ACTUAL_UNTESTED
   next_cycle_target: HUMAN_NEXT_QUERY_POST_SEND_WAITING_INTERVAL
-  seed_card_required_for_boot: false
+  living_fruit: HUMAN-SEALED NAMING / PERSISTED CANDIDATE
+  two_stage_closing: LIVING_FRUIT -> NEXT_CYCLE_WORKOUT_BRIDGE
+  tradeoff_best_practice: NEXT-THREAD FORMATION MISSION / NOT YET FORMED
+  seed_cards_required_for_boot: false
   operational_principle: Formation Before Formalization
   workout_card: PRUNED
   actual_trace_count: 0
   b_gate: DORMANT / HUMAN-ACTIVATED ONLY
-  first_legal_move: WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+  first_legal_move: BUILD_ARK23_08_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_HANDOFF
 ```
 
 Runtime Blob SHAが取得可能な場合、`abf4ad09c74fc8cf6033870ad2f20dde1b793672`と一致することを確認する。
