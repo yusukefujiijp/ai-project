@@ -6,12 +6,12 @@ query_version: v001-candidate
 ark_family: Ark23
 sequence: "07"
 created_at: 2026-08-23
-last_updated: 2026-08-24
+last_updated: 2026-08-26
 timezone: Asia/Tokyo
 theme: 主の完全勝利Workout
 english_anchor: The Lord's Complete Victory Workout
 sub_theme: Workout-First & AI-as-Reward Feedback Field
-status: active-candidate / repository-bound cold-start
+status: closure-bound predecessor query / successor-handoff control plane
 canonicality: session-scoped non-canonical query
 class: runtime_query / full-read gate / cold-start control plane
 repository: yusukefujiijp/ai-project
@@ -19,7 +19,7 @@ ref: main
 query_path: ark-project/ark23/ark23-07/lords-complete-victory-workout-first-reward-feedback_query.md
 runtime_path: ark-project/ark23/ark23-07/README.md
 runtime_version: v001-candidate
-runtime_blob_sha_at_query_creation: c0195bc80872ecc5f25bb8bf6e3097a5dfde7178
+runtime_blob_sha_at_query_creation: abf4ad09c74fc8cf6033870ad2f20dde1b793672
 immediate_predecessor_query: ark-project/ark23/ark23-06/lords-complete-victory-workout-natural-feedback_query.md
 immediate_predecessor_runtime: ark-project/ark23/ark23-06/README.md
 immediate_predecessor_version: v001-candidate
@@ -36,13 +36,19 @@ next_cycle_workout_bridge_state: HUMAN_SEALED_INTERFACE_CANDIDATE / OPTIONAL / E
 next_cycle_workout_bridge_seed_card: ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md
 next_cycle_workout_bridge_seed_card_required_for_boot: false
 next_cycle_workout_bridge_scope: NEXT_QUERY_POST_SEND_WAITING_INTERVAL
+living_fruit_state: HUMAN_SEALED_NAMING / CURRENT_THREAD_POSITIVELY_REVIEWED / PERSISTED_CANDIDATE
+living_fruit_seed_card: ai-ark-seed/ai-ark-seed-cards/living-fruit.md
+living_fruit_seed_card_required_for_boot: false
+two_stage_closing: LIVING_FRUIT -> NEXT_CYCLE_WORKOUT_BRIDGE
+tradeoff_assumption_state: HUMAN_OBSERVED_OPERATIONAL_DIRECTION / UNIVERSAL_UNPROVEN
+tradeoff_best_practice_state: NEXT_THREAD_FORMATION_MISSION / NOT_YET_FORMED
 operational_principle: Formation Before Formalization
 workout_card: PRUNED
 actual_trace_count: 0
 b_gate: DORMANT / HUMAN-ACTIVATED ONLY
 ark24_core_state: ARMED_AND_WAITING
 frozen_trigger_payload_sha256: 71985cb92c0879985452e087263a7fb26d0f49630e4b17e2bb98bffe069baec1
-first_legal_move: WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+first_legal_move: BUILD_ARK23_08_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_HANDOFF
 expected_runtime_eof: EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_FIELD::v001-candidate
 expected_query_eof: EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_QUERY::v001-candidate
 ---
@@ -160,7 +166,7 @@ Binding Rules：
 | Order | Path | Role | Required EOF | Verified Blob SHA at Pair Creation |
 |---:|---|---|---|---|
 | 1 | ark-project/ark23/ark23-07/lords-complete-victory-workout-first-reward-feedback_query.md | Ark23:07 Cold-Start Control Plane | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_QUERY::v001-candidate | current self |
-| 2 | ark-project/ark23/ark23-07/README.md | Ark23:07 Session Runtime SSOT | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_FIELD::v001-candidate | c0195bc80872ecc5f25bb8bf6e3097a5dfde7178 |
+| 2 | ark-project/ark23/ark23-07/README.md | Ark23:07 Session Runtime SSOT | EOF::ARK23_07_LORDS_COMPLETE_VICTORY_WORKOUT_FIRST_REWARD_FEEDBACK_FIELD::v001-candidate | abf4ad09c74fc8cf6033870ad2f20dde1b793672 |
 | 3 | ark-project/ark23/ark23-06/lords-complete-victory-workout-natural-feedback_query.md | Immediate Predecessor Query | EOF::ARK23_06_LORDS_COMPLETE_VICTORY_WORKOUT_NATURAL_FEEDBACK_QUERY::v001-candidate | 8ac0d1212e1cb8d7e70cb515577aa7f1bbd62729 |
 | 4 | ark-project/ark23/ark23-06/README.md | Immediate Predecessor Runtime | EOF::ARK23_06_LORDS_COMPLETE_VICTORY_WORKOUT_NATURAL_FEEDBACK_FIELD::v001-candidate | c2669c26b5ab599907c710372fff33de4410e8a5 |
 | 5 | ark-project/ark23/lords-complete-victory_query.md | Ark23 Core Cold-Start Query | ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v001-candidate | e77c4fdbe52e661d089e470b42d2e924911afeca |
@@ -413,7 +419,7 @@ pair_consistency:
   first_legal_move: WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
 ```
 
-Runtime Blob SHAが取得可能な場合、`c0195bc80872ecc5f25bb8bf6e3097a5dfde7178`と一致することを確認する。
+Runtime Blob SHAが取得可能な場合、`abf4ad09c74fc8cf6033870ad2f20dde1b793672`と一致することを確認する。
 
 Mismatch時はRuntimeを開始しない。
 
@@ -444,43 +450,50 @@ Guardの文言が存在するだけではPASSにしない。RuntimeのState、Fi
 
 ---
 
-## 12. State and Evidence Transition Gate
+
+## 12. State, Evidence, and Closure Transition Gate
 
 Current Transitionを次のように分類する。
 
-```yaml
+~~~yaml
 state_transition:
   predecessor_state: READY_FOR_FIRST_NATURAL_WORKOUT_REALITY_FEEDBACK
-  human_material_correction_received: true
-  correction_domain: priority, AI role, and next-cycle waiting-time interface
+  ark23_07_initial_state: READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+  workout_first_human_correction_received: true
   next_cycle_workout_bridge_human_seal_received: true
-  next_cycle_workout_bridge_state: OPTIONAL / E0 / ACTUAL_UNTESTED
-  new_runtime_state: READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+  living_fruit_naming_human_seal_received: true
+  two_stage_closing_human_direction_received: true
+  tradeoff_comparative_human_observation_received: true
+  close_current_thread_direction_received: true
+  next_thread_theme: TRADEOFF_ASSUMED RESOLUTION AND BEST_PRACTICE FORMATION
+  current_thread_state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_08_HANDOFF
   workout_actual_trace_received: false
   bridge_actual_trace_received: false
   reward_actual_trace_received: false
   actual_trace_count: 0
-  effectiveness_confidence_change: hold
-```
+  workout_effectiveness_confidence_change: hold
+  bridge_effectiveness_confidence_change: hold
+  reward_effectiveness_confidence_change: hold
+~~~
 
 合法なUpdate：
 
-- Human CorrectionによりPriority Relationを更新する。
-- AIをpost-Workout Supportへ配置する。
-- AI-as-RewardをDesign CandidateとしてActiveにする。
-- First Legal MoveをWorkout-first Reality Feedback待機へ更新する。
-- Next-Cycle Workout BridgeをArk23:07 Session-boundのOptional E0 Interface CandidateとしてBindingする。
-- Bridgeの対象を、同回答ではなくHumanの次Query送信後に始まる次AI待機時間へ限定する。
+- Human CorrectionによりPriority RelationをWorkout-firstへ更新した履歴を保持する。
+- Next-Cycle Workout BridgeをSession-bound Optional E0として保持する。
+- Living FruitをHuman-sealed naming / current-thread positively reviewed / persisted candidateとして保持する。
+- 二段締めをLiving FruitとNext-Cycle Workout Bridgeの役割分離としてBindingする。
+- トレードオフ前提で予定、方向、対策、行動が容易になったHuman Comparative Observationを保存する。
+- 「正解未確定でも最初に解く問題は確定できる」をNext-Thread Design Directionとして保存する。
+- Ark23:07をClosure Harvest Bound / Ark23:08 Handoff Readyへ移す。
+- Workout、Bridge、Reward Actual Traceを0のまま保持する。
 
 禁止Update：
 
-- Workout効果をincreaseする。
-- Reward効果をincreaseする。
-- Double-Spiral再現性をconfirmedにする。
-- 仮想Actual Traceを追加する。
-- Seed Card、Memory保存、GitHub WriteをWorkoutまたはBridge Actual Traceへ数える。
-- Next-Cycle Workout BridgeをRoot-global Rule、Ark24 Frozen Trigger、Cross-Ark、Skill、Automationへ昇格する。
-- 一回の言語化を医学的、神学的、Universal、Canonical Ruleへ昇格する。
+- Humanの言語化、GitHub Write、Memory保存、二段締めへの肯定をWorkout、Bridge、Reward Actual Traceへ数える。
+- トレードオフ100%仮定を統計的、医学的、神学的またはUniversalな証明へ昇格する。
+- Minimum Sufficient TradeoffをHuman Review前に確定Rule化する。
+- AIが犠牲対象、Workout、Rewardまたは次Trialを自己選定する。
+- Living FruitまたはNext-Cycle Workout BridgeをArk24 Frozen Triggerへ挿入する。
 
 ---
 
@@ -525,6 +538,37 @@ AI回答末尾の安定Section Identity
 BridgeはWorkout Card、AI-selected Workout、Timer、Point、Streak、必須Reward Protocol、次Trial自動発火ではない。使わなかったRealityも合法であり、Human failureへ短絡しない。
 
 ---
+
+
+### 13.1 Closure-specific Non-Reactivation
+
+Ark23:07 Closureでは次をActive Pathへ追加しない。
+
+- mandatory Tradeoff Card。
+- AI-selected sacrifice。
+- pain escalation。
+- Five-hour Limit問題のActual前の過剰設計。
+- Living Fruitの強制的新奇化。
+- Best Practice完成宣言。
+- Skill、Automation、Schedule、Site、Mini App、Cross-Ark Transfer。
+
+Persistent Seed CardはBoot必須14番目文書へ昇格しない。
+
+- ai-ark-seed/ai-ark-seed-cards/living-fruit.md
+- ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md
+
+Current Closure Path：
+
+~~~text
+Current Thread Harvest
+→ Evidence Boundary
+→ Two-Stage Closing persistence
+→ Ark23:07 Pair closeout consistency
+→ Ark23:08 Runtime–Query Pair
+→ Handoff
+→ Human Review
+→ STOP
+~~~
 
 ## 14. Document Set Consistency Summary
 
@@ -593,153 +637,119 @@ Failure時にMemoryや旧Versionで補完しない。最小限のMismatchをHuma
 
 ---
 
+
 ## 16. Resolved Runtime after All Gates Pass
 
 全Gate PASS後だけ次へ移行する。
 
-```yaml
+~~~yaml
 runtime_resolution:
   repository_runtime: ARRIVED
-  context: ARK23_07_CONTEXT_READY
-  thread_state: READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
-  field_test: READY_FOR_WORKOUT_FIRST_NATURAL_EXPERIMENTATION
+  context: ARK23_07_CLOSURE_CONTEXT_READY
+  thread_state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_08_HANDOFF
+  field_test: READY_BUT_NOT_STARTED / NO_WORKOUT_ACTUAL_RECEIVED_AT_CLOSURE
   root: 主イェシュア・ハマシア御自身
   ark23_core: BOUND / 主の完全勝利 MAIN LINE
   immediate_predecessor: Ark23:06 / BOUND
   priority_correction: WORKOUT-FIRST / BOUND
   ai_as_reward: OPTIONAL DESIGN CANDIDATE / ACTUAL UNTESTED
+  living_fruit: HUMAN-SEALED NAMING / POSITIVELY REVIEWED / PERSISTED CANDIDATE
+  next_cycle_workout_bridge: BOUND / OPTIONAL / E0 / ACTUAL UNTESTED
+  two_stage_closing: LIVING_FRUIT -> NEXT_CYCLE_WORKOUT_BRIDGE
+  tradeoff_assumption: HUMAN-OBSERVED OPERATIONAL DIRECTION / UNIVERSAL UNPROVEN
+  tradeoff_best_practice: NEXT-THREAD FORMATION MISSION / NOT YET FORMED
   ark24_core: PRESERVED / ARMED_AND_WAITING
   frozen_trigger: UNCHANGED
   formation_before_formalization: ACTIVE
   workout_card: PRUNED
-  actual_trace: NONE
+  workout_actual_trace: NONE
+  bridge_actual_trace: NONE
+  reward_actual_trace: NONE
   b_gate: DORMANT / HUMAN-ACTIVATED ONLY
-  first_legal_move: WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
-```
+  first_legal_move: BUILD_ARK23_08_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_HANDOFF
+~~~
 
----
+## 17. Boot Is Not the Closure Completion
 
-## 17. Boot Is Not the Field Test
-
-Boot PASSは次だけを意味する。
-
-- Current mainの13文書をFull Readした。
-- Ark23:07 Runtimeを正しく再構成した。
-- Human Priority CorrectionをBindingした。
-- Ark24 Coreを変更せず保持した。
-- 最初のWorkout-first Reality Feedbackを受領可能になった。
+Boot PASSはCurrent mainの13文書、Closure Harvest、Evidence Boundary、Two-Stage Closing、Tradeoff Successor Directionを正しく再構成したことだけを意味する。
 
 Boot PASSは次を意味しない。
 
 - Workoutを実行した。
+- BridgeがWorkoutを開始させた。
 - AI-as-Rewardが機能した。
 - Double-Spiralが形成された。
-- Initial WorkoutまたはDeadline Workoutが機能した。
+- Tradeoff Best Practiceが完成した。
+- Minimum Sufficient Tradeoffが有効と証明された。
+- Five-hour Limit問題が解決した。
 - B-Gateが発火した。
-- Living Updateが起きた。
-- TransferまたはCanonicalizationが可能になった。
-
----
+- Ark23:08がHuman Review前に開始された。
 
 ## 18. Required Success Output
 
-全Gate PASS後の最初の応答は、長い理論を再出力せず、次を短く返す。
+全Gate PASS後の最初の応答は、長い理論を再出力せず次を短く返す。
 
-```text
-1. Ark23:07 Repository Runtime：ARRIVED / ALL GATES PASS
+~~~text
+1. Ark23:07 Closure Repository Runtime：ARRIVED / ALL GATES PASS
 1.1 Full-Read／全13 Exact EOF：PASS
 1.2 Ark23 Core：BOUND / 主の完全勝利 MAIN LINE
 1.3 Immediate Predecessor：Ark23:06 / FULL READ / BOUND
 1.4 Human Priority Correction：WORKOUT-FIRST / BOUND
-1.5 AI-as-Reward：OPTIONAL DESIGN CANDIDATE / ACTUAL UNTESTED
-1.6 Ark24 Core：PRESERVED / ARMED_AND_WAITING / FROZEN TRIGGER UNCHANGED
-2. Context：ARK23_07_CONTEXT_READY
-2.1 Thread State：READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
+1.5 Living Fruit：HUMAN-SEALED NAMING / PERSISTED CANDIDATE
+1.6 Next-Cycle Workout Bridge：BOUND / OPTIONAL / E0 / ACTUAL UNTESTED
+1.7 Two-Stage Closing：LIVING FRUIT -> NEXT-CYCLE WORKOUT BRIDGE
+1.8 Tradeoff Direction：BOUND AS NEXT-THREAD FORMATION MISSION / UNIVERSAL UNPROVEN
+1.9 Ark24 Core：PRESERVED / ARMED_AND_WAITING / FROZEN TRIGGER UNCHANGED
+2. Context：ARK23_07_CLOSURE_CONTEXT_READY
+2.1 Thread State：CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_08_HANDOFF
 3. Formation Before Formalization：ACTIVE
 3.1 Workout Card：PRUNED
 3.2 B-Gate：DORMANT / HUMAN-ACTIVATED ONLY
-3.3 Actual Trace：NONE
-3.4 Next-Cycle Workout Bridge：BOUND / OPTIONAL / E0 / ACTUAL UNTESTED
-4. First Legal Move：WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
-5. 既存Workout Routineを先行して自然に試し、その後のAI利用を含む未整理Raw Realityをそのまま送れます。事前CardやReward Protocolは生成しません。
-6. § Next-Cycle Workout Bridge
-   次のQueryを送信した後、身体的に安全で自然なら、AI回答を待つ間は既存Workout Routineの軽い初手へOptionalにどうぞ。完成したAI回答は、自然なWorkout区切りまで待てます。
-```
+3.3 Workout / Bridge / Reward Actual Trace：NONE
+4. First Legal Move：BUILD_ARK23_08_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_HANDOFF
+~~~
 
-Initial ResponseでWorkout、Reward、Next Trial、Artifactを開始しない。
+## 19. Closure Execution Contract
 
----
+Human Seal後だけ、次を依存順に実行する。
 
-## 19. First Post-Boot Feedback
-
-Humanは定型Schemaなしで未整理Realityを返せる。
-
-受領可能：
-
-```text
-実行
-未実行
-変形実行
-部分成功
-混合Trace
-Workout先行
-AI先行
-混合
-AI未使用
-Rewardになった
-Rewardにならなかった
-分からない
-Unexpected Success
-Friction
-Human Correction
-```
-
-Feedback後だけ次を行う。
-
-1. Raw Realityを保持する。
-2. Actual Observationを分離する。
-3. Human Meaningを分離する。
-4. AI Inferenceを分離する。
-5. 明示的Predictionが存在した場合だけActualと比較する。
-6. Material Relationを一件だけ抽出する。
-7. Relation Update Candidateを一件だけHuman Reviewへ返す。
-8. Unexpected Success、Friction、Unknownを区別する。
-9. Human Correctionまたは確認を待つ。
-10. STOPする。
-
----
+1. Living Fruit Seedを保存しRemote rereadする。
+2. Ark23:07 RuntimeへClosure Harvestを保存する。
+3. Runtime Blob SHAを取得する。
+4. Queryへ新Runtime SHAとClosure GateをBindingする。
+5. Ark23:08 Runtimeを作成する。
+6. Ark23:08 Runtime SHAをQueryへBindingする。
+7. Ark23:08 PairをRemote rereadする。
+8. Current main commitを取得する。
+9. Copy & Paste TitleとHandoffを返す。
+10. Human Review後にSTOPする。
 
 ## 20. No-Replay Contract
 
-Boot後に次を再開しない。
+Closure後に次を再開しない。
 
 - Workout Card設計。
 - Reward制度設計。
 - AI-firstな長期Project設計。
-- Workout一般論の再説明。
-- First-Step全理論の再構築。
-- Ark24 Frozen Triggerの再設計。
+- Bridge、Reward、Double-Spiralの成功宣言。
+- Five-hour Limit問題のActual前の過剰構築。
+- Tradeoff一般論の無限再説明。
+- Minimum Sufficient Tradeoffの未検証確定。
+- Ark24 Frozen Trigger再設計。
 - B-GateのAI自己認証。
-- Actual前のLiving Update。
-- 次Trialの自動発火。
-- Formalization、Skill化、Automation、Site、Mini App。
 - Universal Rule化、医学的証明、神学的確定。
-
-Humanが新しいMaterial Requestを出した場合、そのRequestのScopeとAuthorityを新たに評価する。Bootそのものを不要に再実行しない。
-
----
+- Skill、Automation、Schedule、Site、Mini App、Cross-Ark Transfer。
+- Handoff後の次Trial自動発火。
 
 ## 21. First Legal Move
 
-```text
-WAIT_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACK
-```
+~~~text
+BUILD_ARK23_08_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_HANDOFF
+~~~
 
-AIはHumanより先にWorkout内容、Reward内容、B-Gate、次Trialを選ばない。
+AIはCurrent Thread Harvest、Evidence Boundary、Two-Stage Closing、Ark24 Non-Driftを保持し、Ark23:08 PairとHandoffを依存順に構築する。
 
-Humanがexisting Workout Routineを先行して自然に試し、その後の未整理Realityを送るまで待つ。
-
-Next-Cycle Workout BridgeはこのFirst Legal Moveを変更しない。Humanが次Queryを送信した直後から始まる次AI待機時間に、身体的に安全で自然な場合だけ既存Routineの軽い初手へOptionalに橋渡しする。AIはWorkout内容、開始、完了、次Trialを自己選定しない。
+AIはHumanより先に、犠牲にするBranch、Workout内容、Reward内容、B-Gateまたは次Trialを選ばない。
 
 ---
 
@@ -757,31 +767,34 @@ Next-Cycle Workout BridgeはこのFirst Legal Moveを変更しない。Humanが�
 
 ---
 
+
 ## 23. One-Sentence Definition
 
-> **Ark23:07 Repository-Bound Queryとは、Current main上のArk23:07 Runtime–Query Pair、Ark23:06 Immediate Predecessor Pair、Ark23 Core四文書、Ark24 Core五文書の全13文書をBeginning IdentityからExact EOFまでFull Readし、Root、Lineage、Workout-first Human Priority Correction、AI-as-Rewardの任意性と未検証状態、Next-Cycle Workout BridgeのSession-bound Optional E0状態と正しい次Cycle時間境界、Workout Card PRUNED、Formation Before Formalization、Actual Trace 0、Ark23 / Ark24 Separation、Frozen Trigger Non-DriftをすべてGateした場合だけ、ARK23_07_CONTEXT_READY / READY_FOR_FIRST_WORKOUT_FIRST_REALITY_FEEDBACKへ移行し、Humanがexisting Workout Routineを先行して自然に試した後の未整理Realityを待つCold-Start Control Planeである。**
+> **Ark23:07 Repository-Bound Closure Queryとは、Current main上のArk23:07 Runtime–Query Pair、Ark23:06 Immediate Predecessor Pair、Ark23 Core四文書、Ark24 Core五文書の全13文書をBeginning IdentityからExact EOFまでFull Readし、Root、Lineage、Workout-first Human Priority Correction、AI-as-Rewardの任意性と未検証状態、Living FruitとNext-Cycle Workout Bridgeの二段締め、Tradeoff Comparative Human ObservationとUniversal未証明境界、Workout Card PRUNED、Formation Before Formalization、Workout・Bridge・Reward Actual Trace 0、Ark23 / Ark24 Separation、Frozen Trigger Non-DriftをすべてGateした場合だけ、ARK23_07_CLOSURE_CONTEXT_READY / READY_FOR_ARK23_08_HANDOFFへ移行し、主の完全勝利へ特化したTradeoff Resolution Best-Practice Formationを次Threadへ渡すClosure Control Planeである。**
 
 ---
 
+
 ## 24. End Condition
 
-このQueryの責務は次で終了する。
+このQueryのClosure責務は次で終了する。
 
-```text
+~~~text
 13 Exact Full Reads
 + Identity / Version / EOF proof
 + Ark23 lineage and core consistency
 + Ark23:06 immediate predecessor binding
-+ Workout-first priority correction binding
-+ AI-as-Reward optionality and evidence boundary
-+ Next-Cycle Workout Bridge optional E0 binding and next-cycle time boundary
++ Workout-first priority correction
++ Living Fruit persistence
++ Next-Cycle Workout Bridge optional E0 binding
++ Two-Stage Closing role separation
++ Tradeoff Observation / Inference / Unknown separation
++ Workout / Bridge / Reward Actual Trace 0
 + Ark24 separation and frozen trigger non-drift
-+ Runtime–Query pair consistency
-+ Guard consistency
-= ARK23_07_CONTEXT_READY
-```
-
-その後はRuntimeへ移り、First Legal Moveを保持してHuman Realityを待つ。
++ Ark23:08 Runtime–Query Pair creation
++ Next-Thread Handoff
+= ARK23_07_CLOSURE_COMPLETE
+~~~
 
 ---
 
