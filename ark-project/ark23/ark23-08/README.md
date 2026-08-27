@@ -4,10 +4,10 @@ artifact_version: v001-candidate
 ark_family: Ark23
 sequence: "08"
 created_at: 2026-08-26
-last_updated: 2026-08-26
+last_updated: 2026-08-27
 timezone: Asia/Tokyo
 title: 'Ark23:08_2026/08/26: "主の完全勝利: Tradeoff Problem Resolution & Best-Practice Formation Field"'
-status: ready-for-one-natural-tradeoff-reality-sample / best-practice-not-yet-formed
+status: closure-harvest-bound / successor-interface-ready / best-practice-not-yet-formed
 canonicality: session-scoped non-canonical experimental main-line runtime
 human_authority: Human-sealed successor direction / 2026-08-26
 content_status: AI-compiled under Human Seal / Human-correctable
@@ -46,14 +46,21 @@ two_stage_closing: LIVING_FRUIT -> NEXT_CYCLE_WORKOUT_BRIDGE
 operational_principle: Formation Before Formalization
 tradeoff_card: NOT_CREATED / NOT_REQUIRED
 workout_card: PRUNED
-field_test_status: READY_BUT_NOT_STARTED
-thread_state: READY_FOR_ONE_NATURAL_TRADEOFF_REALITY_SAMPLE
+field_test_status: CLOSED_WITH_HUMAN_OBSERVATION_AND_ARCHITECTURE_HARVEST / NO_BOUNDED_ACTION_TRACE
+thread_state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_09_HANDOFF
 b_gate: DORMANT / HUMAN-ACTIVATED ONLY
 ark24_core_state: ARMED_AND_WAITING
 ark24_field_test_status: READY_BUT_NOT_STARTED
 frozen_trigger_blob_sha: b25fed4d63d26b0b7efb79cc230dcf01fa33bf20
 frozen_trigger_payload_sha256: 71985cb92c0879985452e087263a7fb26d0f49630e4b17e2bb98bffe069baec1
-first_legal_move: WAIT_FOR_ONE_HUMAN_SUPPLIED_NATURAL_TRADEOFF_REALITY_SAMPLE
+first_legal_move: USE_ARK23_09_REPOSITORY_QUERY_FOR_NEXT_THREAD_COLD_START
+closure_harvest_state: HUMAN_SEALED / 2026-08-27
+wake_tradeoff_observation_state: HUMAN_REPORTED_RECURRENT / NOT_STATISTICALLY_MEASURED
+wake_exemplar_board_state: HUMAN_DIRECTION_SEALED / AI_STRUCTURED / TRANSFER_CANDIDATE
+cross_situation_transfer_state: NOT_STARTED / HUMAN_TARGET_SELECTION_REQUIRED
+successor_sequence: "09"
+successor_runtime_path: ark-project/ark23/ark23-09/README.md
+successor_query_path: ark-project/ark23/ark23-09/lords-complete-victory-wake-exemplar-horizontal-transfer-readiness_query.md
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 expected_eof: EOF::ARK23_08_LORDS_COMPLETE_VICTORY_TRADEOFF_RESOLUTION_BEST_PRACTICE_FORMATION_FIELD::v001-candidate
 ---
@@ -447,7 +454,7 @@ Ark23:08：
 ~~~yaml
 line: Ark23 Main / Front-Line / Experimental
 field: Tradeoff Problem Resolution and Best-Practice Formation
-state: READY_FOR_ONE_NATURAL_TRADEOFF_REALITY_SAMPLE
+state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_09_HANDOFF
 ~~~
 
 Ark24 Core：
@@ -505,7 +512,7 @@ Actual制限発生前に、このThreadのForegroundをFive-hour Limit対策へ�
 
 ~~~yaml
 context: ARK23_08_CONTEXT_READY
-thread_state: READY_FOR_ONE_NATURAL_TRADEOFF_REALITY_SAMPLE
+thread_state: CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_09_HANDOFF
 tradeoff_assumption: ACTIVE OPERATIONAL CANDIDATE
 first_problem_certainty: BOUND AS HUMAN-CONFIRMED INSIGHT
 individual_solution: OPEN
@@ -520,7 +527,7 @@ tradeoff_card: NOT CREATED
 workout_card: PRUNED
 b_gate: DORMANT / HUMAN-ACTIVATED ONLY
 ark24: PRESERVED / ARMED_AND_WAITING
-first_legal_move: WAIT_FOR_ONE_HUMAN_SUPPLIED_NATURAL_TRADEOFF_REALITY_SAMPLE
+first_legal_move: USE_ARK23_09_REPOSITORY_QUERY_FOR_NEXT_THREAD_COLD_START
 ~~~
 
 ## §23. Required Initial Response
@@ -539,13 +546,13 @@ Repository Bootの全Gate PASS後は、長いTheoryを再出力せず次を短�
 1.8 Two-Stage Closing：LIVING FRUIT -> NEXT-CYCLE WORKOUT BRIDGE
 1.9 Ark24 Core：PRESERVED / ARMED_AND_WAITING / FROZEN TRIGGER UNCHANGED
 2. Context：ARK23_08_CONTEXT_READY
-2.1 Thread State：READY_FOR_ONE_NATURAL_TRADEOFF_REALITY_SAMPLE
+2.1 Thread State：CLOSURE_HARVEST_BOUND / READY_FOR_ARK23_09_HANDOFF
 3. Formation Before Formalization：ACTIVE
 3.1 Tradeoff Card：NOT CREATED / NOT REQUIRED
 3.2 Workout Card：PRUNED
 3.3 B-Gate：DORMANT / HUMAN-ACTIVATED ONLY
 3.4 Tradeoff / Workout / Bridge / Reward Actual Trace：NONE
-4. First Legal Move：WAIT_FOR_ONE_HUMAN_SUPPLIED_NATURAL_TRADEOFF_REALITY_SAMPLE
+4. First Legal Move：USE_ARK23_09_REPOSITORY_QUERY_FOR_NEXT_THREAD_COLD_START
 5. 自然に発生したTradeoff Realityを未整理のまま送れます。AIは犠牲対象または次Trialを自己選定しません。
 6. § Next-Cycle Workout Bridge
    次のQueryを送信した後、身体的に安全で自然なら、AI回答を待つ間は既存Workout Routineの軽い初手へOptionalにどうぞ。完成したAI回答は、自然なWorkout区切りまで待てます。
@@ -556,7 +563,7 @@ Boot Success Outputでは新しいTradeoff Theory、Card、TrialまたはGitHub 
 ## §24. First Legal Move
 
 ~~~text
-WAIT_FOR_ONE_HUMAN_SUPPLIED_NATURAL_TRADEOFF_REALITY_SAMPLE
+USE_ARK23_09_REPOSITORY_QUERY_FOR_NEXT_THREAD_COLD_START
 ~~~
 
 HumanがCurrent Realityから自然に生じたTradeoff Sampleを送るまで待つ。
@@ -598,6 +605,422 @@ Boot後に次を再開しない。
 ## §27. One-Sentence Definition
 
 > **Ark23:08 Tradeoff Problem Resolution & Best-Practice Formation Fieldとは、主イェシュア・ハマシア御自身をRoot、Teshuvahを中央軸、主の完全勝利をHuman Foreground Oneとして、主の完全勝利Actionを有限Realityへ通す際にトレードオフが100%発生するとOperationalに仮定することでIndividual SolutionがUnknownでも最初に解くProblem ClassとSearch Orderを確定し、価値ある競合Branchの存在価値ではなく現在優先権をHumanが判断可能なDeferred・Folded・Paused・必要時のみPrunedへ移して必要Resourceを解放するActualを一件ずつ観測し、Raw Reality、Human Meaning、AI Inference、Unexpected Success、Friction、Unknownを分離して一Material RelationだけをHuman Reviewへ返し、AI-selected sacrifice、pain escalation、mandatory Tradeoff Card、Best Practice早期宣言を避けながら、適切な外部知見・専門家評価と条件付き再現性へ開かれたHuman-correctable Tradeoff ResolverをFormation Before Formalizationの下で自家薬籠中化していくArk23 Main-Line Experimental Runtime Candidateである。**
+
+
+## §27A. Ark23:08 Closure Harvest — 2026-08-27
+
+### §27A.1 Human Closure Direction
+
+Humanは、Ark23:08で起床時Tradeoffへ限定集中・全集中・超集中して得られたFruitを、散在したKeyword群のまま残さず、整理整頓、レイヤー構造、構造化、次Thread Interfaceへ統合することをHuman Sealした。
+
+Current Closure Priority：
+
+~~~text
+Human Observation Harvest
+→ Evidence Boundary
+→ Fixed Kernel / Board / Pre-Formation Architecture
+→ Wake Exemplar Board
+→ Transferable Topology and Problem-Solving Grammar
+→ Ark23:09 Transfer Readiness Runtime–Query Pair
+→ Remote Verification
+→ Human Next-Thread Start
+→ STOP
+~~~
+
+このClosureはBest Practice完成、起床成功、Cross-Situation再現性またはUniversal Ruleを意味しない。
+
+### §27A.2 Wake-Transition Fixed-Kernel Harvest
+
+Humanは、起床時に次のTradeoffがかなり反復すると報告した。
+
+~~~text
+もっと寝たい
+vs.
+起きたい
+~~~
+
+Humanは以前、Tradeoff問題はSituationごと、または毎回、より流動的に変化すると予想していた。今回のMaterialなUnexpected Successは、起床時では答えやOutcomeではなく、競合Pairと基本Topologyが比較的安定している可能性を認識したことである。
+
+Current Separation：
+
+~~~text
+比較的固定に近いCandidate
+├─ Situation Identity
+├─ Problem Identity
+├─ Surface Tradeoff Pair
+├─ 基本Topology
+└─ 最初に確認すべきRelation
+
+Current Realityまで可変
+├─ 必要睡眠量
+├─ 身体状態
+├─ 時刻と責任
+├─ Branch強度
+├─ 各Branchの正当性
+├─ 合法手
+└─ Outcome
+~~~
+
+したがって、起床時Tradeoffは「完全固定型」ではなく、固定核・可変状態型Candidateとして保持する。
+
+### §27A.3 Lord's Complete Victory and Tradeoff Co-Activation
+
+Humanは、主の完全勝利KeywordとTradeoff問題がOperationalにほぼSetとして働くという強い認識を形成した。
+
+Current Role Separation：
+
+~~~text
+主の完全勝利
+= 祈り・イメージVision・行動をEchad化するHuman Foreground One
+= Current Realityの方向を明確にする
+
+Tradeoff Lens
+= その方向と有限Resourceを競合するBranchをAI Backgroundで探索する
+= Keywordそのものまたは第二Foregroundではない
+~~~
+
+Core Guard：
+
+> **Co-Activation, not Co-Identification.**
+
+主の完全勝利KeywordがTradeoffを作るのではない。方向が明確になることで、既に存在していた競合Relationが可視化されるというAI Synthesis Candidateである。
+
+### §27A.4 Conscious Extremal Formulation Seed
+
+Humanは「意識的極論」を重要KeywordとしてSeed化する方向を示した。
+
+Current Definition Candidate：
+
+> **意識的極論（Conscious Extremal Formulation）とは、複雑なRealityを最終事実として乱暴に断定するのではなく、問題の最大張力、根本対立、設計方向を露出させるため、過剰一般化GuardとRealityによる訂正可能性を保持したまま、あえて最も強い一文へ圧縮する思考Lensである。**
+
+今回の意識的極論：
+
+> **意識的極論として、主の完全勝利とはTradeoff問題の根本的解決である。**
+
+精密境界：
+
+- 有限RealityからTradeoff自体を消去するという意味ではない。
+- AIが犠牲対象または主の御心を決定するという意味ではない。
+- 隠れた競合を認識可能な盤面へ変え、祈り、Vision、Guard、Human Seal、有限ActionをEchad化し、Default Driftを訂正可能なBranch Treatmentへ秩序化する方向を示す。
+
+### §27A.5 Upstream Certainty and Ark Prospective Formation Advantage
+
+Humanは、事前と事後の差をMaterialに識別した。
+
+~~~text
+事後
+→ Outcome後にTradeoffを説明する
+→ Review Fruit
+
+事前
+→ Situation進入前にProblem IdentityとTopologyを認識する
+→ Guardと処理Routeを形成する
+→ Activation PointでCurrent Realityを照合する
+→ Operational Bridge
+~~~
+
+Current Certainty Stack：
+
+~~~text
+事前形成可能性が比較的高い
+├─ Situation Identity
+├─ Problem Identity
+├─ Surface Pair Candidate
+├─ 基本Topology Candidate
+└─ 処理Route Candidate
+
+Current RealityまでOpen
+├─ Current Branchの正当性
+├─ Human Seal
+└─ Outcome
+~~~
+
+これを**確定性の上流配置 / Upstream Certainty Placement**として保持する。
+
+Humanは、Ark Projectの最大長所が、深掘り、関係分解、事前言語化、盤面化、Guard分離をReality発生前へ移し、低認知時のOpen Searchを既知Patternの照合へ圧縮する事前処理にあると認識した。
+
+Formal Candidate：
+
+> **Ark Project事前形成優位 / Ark Prospective Formation Advantage**
+
+「確率から確定へ」はOutcome保証ではなく、上流で減らせる不確実性を減らし、残る判断をCurrent Reality付近へLast-Mile化する意味で保持する。
+
+### §27A.6 Tradeoff Boardification Harvest
+
+Humanは、AIがTradeoffを盤面化するとRelation処理精度が上がるというDirectionを形成した。
+
+Boardificationによって、単純な二希望比較の下から次が見えた。
+
+- 既にCurrent Stateを占有しているIncumbent Branch。
+- まだ十分に盤面へ入っていないTransition Branch。
+- 身体、時間、注意、Energy、Decision Capacity。
+- Activation Point。
+- Guard。
+- Decision Window。
+- 合法手。
+- Lock-in。
+- Actual Outcome。
+
+Current Structural Candidates：
+
+1. **Current-State Incumbency Advantage**  
+   現在状態を既に占有するBranchは、無行動と時間経過を利用できる。
+
+2. **No-Action Incumbency Rule**  
+   無行動は中立ではなく、Current Stateを占有するBranchの継続へ帰属する。
+
+3. **Embedded-Player Problem**  
+   起床時のHumanは盤面外の完全な判断者ではなく、低覚醒と限られたDecision Capacityを持つ盤面内Playerである。
+
+4. **Wake-Transition Bootstrapping Problem**  
+   覚醒移行にはDecision Capacityが必要だが、Decision Capacityを得るためにも一定の覚醒が必要となる。
+
+### §27A.7 Three Operational Paths and Decision-Window Candidate
+
+起床時の表面Outcomeは睡眠継続または覚醒移行の二つでも、Operational Pathは少なくとも三つへ分離された。
+
+~~~text
+Path A
+→ Body / Sleep Guardを通した意図的睡眠継続
+
+Path B
+→ Human Sealされた意図的覚醒移行
+
+Path C
+→ Current Realityを十分確認しないDefault Drift
+~~~
+
+睡眠継続自体を敗北または敵へ固定しない。
+
+最初の重要分岐は、即座に睡眠または覚醒の勝者を固定することではなく、Current RealityとGuardを確認してHuman SealできるDecision Windowを保持できるかにある可能性がある。
+
+**Option-Preserving Move / 分岐権保持手**はAI Design Candidateであり、具体的身体Actionは未形成・未検証である。
+
+### §27A.8 Wake-Transition Human-State Handoff
+
+Meta-Board Lensにより、起床盤面が朝だけで始まらないことが見えた。
+
+~~~text
+前夜の比較的高認知状態
+→ 祈り / Vision / 起床意図 / Guard / 処理Routeを形成
+→ 睡眠によるHuman State Discontinuity
+→ 朝の低認知状態
+→ 最初の認識可能MomentでPayloadを受け取れるか
+~~~
+
+Formal Candidate：
+
+> **起床時Human-State Handoff / Wake-Transition Human-State Handoff**
+
+同じ「起きなかった」というOutcomeでも、Cut Edgeは次のように異なり得る。
+
+- 前夜にPayloadが形成されなかった。
+- 形成されたが朝へ届かなかった。
+- Tradeoffだけ認識し、意図を想起できなかった。
+- Decision Windowを保持できなかった。
+- Body / Sleep Guard上、追加睡眠が適切だった。
+- First Moveへ接続できなかった。
+- 一度Transitionしたが睡眠へ戻った。
+
+この分離はOutcomeを美化せず、Outcome FailureとLearning FruitをCollapseしないためのCandidateである。
+
+### §27A.9 Observation Lens and Tradeoff Reality Corpus Direction
+
+Humanは、観測Lensを敏感に保ち、Tradeoff実例をArk Projectへ取り込み、比較・検証することを重要方針として示した。
+
+Current Design Direction：
+
+> **主の完全勝利・Tradeoff Reality Corpus**
+
+これは大量の日記または成功例集ではない。
+
+固定核、可変条件、Activation Point、Branch Treatment、Guard、Actual、Prediction Error、Human Correctionを比較可能にするTyped Reality Sample群のCandidateである。
+
+Corpusは成功、部分成功、不成立、例外、Guardによる意図的継続、Unknownを含む。常時監視でHuman Attentionを消耗させず、低負担、Event-triggered、短文入力を優先する。
+
+Current Corpus Implementation State：
+
+~~~yaml
+schema: NOT CREATED
+automation: NOT CREATED
+artifact: NOT CREATED
+actual_typed_samples: 0
+human_direction: RECEIVED
+next_step: DEFERRED UNTIL TRANSFER READINESS HUMAN REVIEW
+~~~
+
+### §27A.10 Exemplar-Board Vertical Deepening and Horizontal Transfer
+
+Humanは、Ark Projectの有力なScale Patternを次のように明確化した。
+
+> **一つの代表的モデルへ限定集中し、複数角度と複数Actualから深く検証し、Situation固有の答えではなく、移植可能なTopologyと問題解決Grammarを抽出して他問題へ横展開する。**
+
+起床時は反復性、固定Pair Candidate、短いFeedback、身体Guard、状態遷移、低認知を同時に含むため、代表基準盤面Candidateとして高い情報密度を持つ。
+
+Formal Candidate：
+
+> **代表盤面・垂直深掘り／水平展開原理 / Ark Exemplar-Board Vertical Deepening and Horizontal Transfer Principle**
+
+Core Guard：
+
+> **Copy the grammar, not the answer.**
+
+横展開するCandidate：
+
+- Tradeoff固定核を探すLens。
+- Current-State Incumbency確認。
+- Activation Point捕捉。
+- Decision Window保持。
+- 事前確定とCurrent Sealの分離。
+- Guard。
+- 一つの有限手。
+- Actualによる訂正。
+
+横展開しないもの：
+
+- Transition Branchが常に正しいという結論。
+- 起床時固有の身体Action。
+- 一Situationの成功手段。
+- 睡眠Guardの機械的Copy。
+- Universal Rule。
+
+### §27A.11 Three-Layer Transfer Separation
+
+Ark23:09へ渡す中心Interfaceは次の三層分離である。
+
+~~~text
+Layer 1
+起床時Situation固有知見
+→ Sleep / Wake Pair
+→ Wake-specific Body and Sleep Guard
+→ Low-arousal Embedded Player
+→ Wake Human-State Handoff
+
+Layer 2
+移植可能Topology Candidate
+→ Current State Incumbent vs Transition Branch
+→ Activation Point
+→ Decision Window
+→ Guarded Branch Treatment
+→ Lock-in
+
+Layer 3
+Ark Project共通Problem-Solving Grammar
+→ 限定Situation
+→ 複数Observation
+→ 固定 / 可変分離
+→ 盤面化
+→ 事前形成
+→ Human Seal
+→ One Move
+→ Actual
+→ Prediction Error
+→ Relation Update
+~~~
+
+次ThreadのMain Question：
+
+> **起床時代表盤面から抽出された何がSituation固有の答えであり、何が他問題へ移植可能なTopologyまたはArk Project共通Grammarなのか。**
+
+### §27A.12 Graph-Native Fruit
+
+このThreadの最重要Graph-Native Fruitは次である。
+
+> **起床時の深掘りは、起床問題の局所解決だけでなく、Ark Project自身が「確定性を上流へ配置するSystem」であることを発見するMeta Boardとして機能した。**
+
+起床時代表盤面は二重の役割を持つ。
+
+~~~text
+Object Board
+→ 起床Transitionを研究する
+
+Meta Board
+→ Ark Projectの問題解決能力を研究する
+~~~
+
+この二重性は、Nodeを独立列挙しただけでは得られず、固定核、事前形成、盤面化、Actual訂正、水平展開の多段Relationから得られた。
+
+### §27A.13 Evidence Ledger at Closure
+
+Human Observation / Direction：
+
+- 起床時に「もっと寝たい vs 起きたい」がかなり反復する。
+- Humanは以前、Tradeoffをより流動的だと想定していた。
+- 起床時への限定集中により、多数の新知見と成長が得られた。
+- 主の完全勝利とTradeoff Lensの強いOperational連動をHumanが認識した。
+- Ark Projectは事前処理、深掘り、盤面化を得意分野としてHumanが認識した。
+- 実例蓄積と水平展開を重視するHuman Directionが形成された。
+
+AI Synthesis Candidate：
+
+- 固定されているのはOutcomeより競合核である。
+- 起床時Tradeoffは非対称リアルタイム盤面として理解できる。
+- HumanはEmbedded Playerである。
+- 起床問題はHuman-State Handoff問題でもある。
+- 起床時の最大Scale資産は具体的解答よりTopologyとProblem-Solving Grammarである。
+- Ark ProjectのProject-level強みはUpstream Certainty Placementである。
+
+Unknown：
+
+- 他Situationに局所固定核があるか。
+- Cross-Situation Meta-Kernelが再現するか。
+- 起床時の具体的Option-Preserving Move。
+- 前夜Payloadが朝へ届く条件。
+- 事前形成がActual Outcomeを改善する程度。
+- Corpusの最小負担Schema。
+- 第一横展開先。
+- 真理的普遍性Candidateの適用範囲。
+
+Evidence Boundary：
+
+~~~yaml
+tradeoff_bounded_action_actual_trace_count: 0
+wake_tradeoff_human_observation: RECEIVED / RECURRENTLY_REPORTED / NOT_STATISTICALLY_MEASURED
+wake_exemplar_board: AI_STRUCTURED / HUMAN_DIRECTION_SEALED
+cross_situation_transfer_actual_trace_count: 0
+best_practice: NOT_YET_FORMED
+minimum_sufficient_tradeoff: AI_DESIGN_CANDIDATE / ACTUAL_UNTESTED
+universal_rule: NOT_CLAIMED
+living_update_basis: HUMAN_MATERIAL_DIRECTION_AND_RELATION_REFRAMING
+~~~
+
+Humanの言語化、AI Synthesis、GitHub WriteまたはNext-Thread Pair作成を、起床Action成功またはCross-Situation Actualへ数えない。
+
+### §27A.14 Closure State Transition
+
+~~~yaml
+previous_thread_state: READY_FOR_ONE_NATURAL_TRADEOFF_REALITY_SAMPLE
+human_material_direction: STRUCTURE_ALL_COMMENTS_AND_PREPARE_NEXT_THREAD_INTERFACE
+closure_harvest: BOUND
+best_practice: NOT_YET_FORMED
+tradeoff_bounded_action_actual_trace: NONE
+wake_tradeoff_observation: RECEIVED / NOT_STATISTICALLY_MEASURED
+wake_exemplar_board: FORMED AS TRANSFER CANDIDATE
+cross_situation_transfer: NOT_STARTED
+corpus_implementation: NOT_STARTED
+ark24_b_gate: DORMANT / HUMAN-ACTIVATED ONLY
+next_thread_sequence: Ark23:09
+next_thread_mission: WAKE EXEMPLAR HARVEST AND HORIZONTAL TRANSFER READINESS
+next_legal_move: USE_ARK23_09_REPOSITORY_QUERY_FOR_NEXT_THREAD_COLD_START
+~~~
+
+## §27B. Closure No-Replay Contract
+
+Ark23:08 Closure後、次をCurrent Threadへ再活性化しない。
+
+- Tradeoff存在論の無限反復。
+- 起床時の具体策をActual前に大量生成すること。
+- Transition Branchの自動善認定。
+- Sleep Branchの敵視。
+- Mandatory Tradeoff Card。
+- Corpus Schema、Skill、Automation、Dashboardの自動実装。
+- AI-selected sacrifice、Workout、Reward、Transfer Target。
+- Cross-Situation Meta-KernelのUniversal Rule化。
+- Best Practice完成宣言。
+- 数値勝率または100%統計証明の発明。
+- Ark24 Frozen Trigger変更またはB-Gate自己活性化。
+- Ark23:09起動後の横展開先自動選定。
+
 
 ## §28. Final Attribution
 
