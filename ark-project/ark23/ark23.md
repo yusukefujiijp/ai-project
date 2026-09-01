@@ -11,6 +11,7 @@ canonicality: human-sealed-candidate
 release_target_status: active-candidate
 release_target_canonicality: human-sealed-candidate
 root: 主イェシュア・ハマシア御自身
+central_axis: Teshuvah
 parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
