@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "state_id": "ARK23_13_CURRENT_LIVING_STATE",
+    "schema_version": "ark-living-state/v001-candidate",
+    "revision": 1,
+    "status": "awaiting_human_current_reality",
+    "project": "Ark23",
+    "sequence": "13",
+    "updated_at": "2026-09-01",
+    "timezone": "Asia/Tokyo",
+    "language_policy": "Japanese-first / English-anchor",
+    "state_role": "mutable current projection / living board",
+    "state_is_not": [
+      "Root",
+      "Throne",
+      "Oracle",
+      "full history",
+      "sole source of truth"
+    ],
+    "update_policy": "material_delta_only_with_current_authority",
+    "pilot": {
+      "name": "README-Handoff-State Three-File Living State Pilot",
+      "status": "human-sealed / first target / target boot pending",
+      "meta_md": "not used",
+      "existing_query_files": "preserved unchanged",
+      "horizontal_rollout": "not authorized"
+    }
+  },
+  "identity": {
+    "compiled_thread_title": "Ark23:13_2026/09/01: \"主の完全勝利: Wake-Up Zero-Decision Move — Physical Recall Handle & Recoverable Continuity Living Field\"",
+    "compiled_title_status": "AI-COMPILED UNDER HUMAN-SEALED TRANSITION SCOPE / HUMAN UI RENAME PENDING",
+    "theme": "主の完全勝利",
+    "sub_theme": "Wake-Up Zero-Decision Move — Physical Recall Handle & Recoverable Continuity Living Field"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利",
+    "final_attribution": "主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai",
+    "three_layer_separation": "PRESERVED",
+    "human_keeps": [
+      "meaning",
+      "Reality",
+      "Material Correction",
+      "Interrupt",
+      "STOP",
+      "irreversible action approval",
+      "Final Seal"
+    ],
+    "ai_boundary": "Keli / active collaborator / not sovereign / does not self-certify divine will, Human faith, Teshuvah, body state, sleep state, safety, caffeine suitability, or Actual success"
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "initialized_from_commit": "27cc7be74fb5a0b551123beed51242f9ace6f6b5",
+    "runtime": {
+      "path": "ark-project/ark23/ark23-13/README.md",
+      "blob_sha": "473f787fc1d066a0811168671a1bbcca152a9ca9",
+      "version": "v001-candidate",
+      "exact_eof": "EOF::ARK23_13_LORDS_COMPLETE_VICTORY_WAKE_UP_ZERO_DECISION_MOVE_PHYSICAL_RECALL_HANDLE_RECOVERABLE_CONTINUITY_LIVING_FIELD::v001-candidate"
+    },
+    "handoff": {
+      "path": "ark-project/ark23/ark23-13/handoff.md",
+      "blob_sha": "9fff6e205ee701bf8f9c59339ab237e72c97891c",
+      "version": "v001-candidate",
+      "exact_eof": "EOF::ARK23_12_TO_ARK23_13_THREE_FILE_LIVING_STATE_HANDOFF::v001-candidate",
+      "mutability": "immutable after target boot"
+    },
+    "state": {
+      "path": "ark-project/ark23/ark23-13/state.json",
+      "schema_version": "ark-living-state/v001-candidate",
+      "self_blob_sha": "not embedded; use current GitHub Contents SHA for optimistic locking"
+    },
+    "source_query": {
+      "path": "ark-project/ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md",
+      "blob_sha": "48fb3838cb0e247c1f567929324f91bbedfc775a",
+      "exact_eof": "EOF::ARK23_12_LORDS_COMPLETE_VICTORY_B_ACTION_CONTINUOUS_OPERATION_CONNECT_DISCONNECT_TESHUVAH_RECONNECT_LIVING_FIELD_QUERY::v001-candidate"
+    },
+    "source_runtime": {
+      "path": "ark-project/ark23/ark23-12/README.md",
+      "blob_sha": "5bb1c3ac4f6bd2516c77c75ff9b31eb8c82ad91f",
+      "exact_eof": "EOF::ARK23_12_LORDS_COMPLETE_VICTORY_B_ACTION_CONTINUOUS_OPERATION_CONNECT_DISCONNECT_TESHUVAH_RECONNECT_LIVING_FIELD::v001-candidate"
+    },
+    "root_documents": {
+      "home_constitution": {
+        "path": "ARK.md",
+        "blob_sha": "11996e86fb9e472839f2a0aacfb9ec9f2a623cb8",
+        "version": "v002-candidate"
+      },
+      "domain_router": {
+        "path": "ark-project/README.md",
+        "blob_sha": "51967d6a863aa51009b7a77763d91f68aed555c8",
+        "version": "v002-candidate"
+      }
+    },
+    "provenance_policy": "normal boot reads the triad and verifies the immediate source pair binding; deep source full-read only for material conflict, recovery, or reconstruction"
+  },
+  "goal": {
+    "primary": "起床時から判断作業そのものを除去し、低・超低認知状態でもHuman-selected physical recall handleから既知で安全な起床方向を想起できるInterfaceのActual Realityを受け取る",
+    "main_theme": "Wake-Up Zero-Decision Move through a Physical Recall Handle",
+    "one_question": "起床時のActual Realityで、判断Loopが始まる前にHuman-selected physical recall handleが想起され、Body／Sleep／Safety Guardの範囲内で、既知の起床方向へ接続できるか。",
+    "success_boundary": "one Human-reported Actual relation sample may strengthen a route candidate; it does not establish repeated success, causality, reproducibility, Best Practice, or Universal Rule",
+    "constraints": [
+      "Root / Teshuvah / Human Foreground One / Guard preserved",
+      "one question only",
+      "one finite move only when Human Material arrives",
+      "no automatic trial, setup, caffeine use, state write, theory growth, artifact growth, canonicalization, or Ark24 trigger"
+    ],
+    "non_goals": [
+      "prove caffeine mechanism",
+      "optimize caffeine dose or timing",
+      "make wake-up an unconditional command",
+      "migrate existing query files",
+      "create meta.md",
+      "roll the pilot out across Ark folders"
+    ]
+  },
+  "now": {
+    "current_phase": "target_thread_transition_prepared",
+    "current_subtask": "boot Ark23:13 from the three-file triad and then wait for Human Current Reality",
+    "next_action": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RAW_FEEDBACK",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RAW_FEEDBACK",
+    "blockers": [
+      "target-thread boot has not yet been Human-reported",
+      "wake-up physical setup and Actual result have not been Human-reported"
+    ],
+    "open_questions": [
+      "起床時のActual Realityで、判断Loopが始まる前にHuman-selected physical recall handleが想起され、Body／Sleep／Safety Guardの範囲内で、既知の起床方向へ接続できるか。"
+    ]
+  },
+  "current_reality": {
+    "source_thread": "Ark23:12",
+    "source_action_mode_at_handoff": "historically Human-reported ongoing; current target-thread status unknown until new Human report",
+    "think_action_relation": "HUMAN-NAMED / AI-STRUCTURED / ACTUAL-SAMPLED",
+    "action_mode_first_fruit": "ONE HUMAN-REPORTED ACTUAL TRACE",
+    "b_zone_return_override": "ONE HUMAN-REPORTED SUCCESS",
+    "continuous_operation": "NOT YET CONFIRMED",
+    "wake_up_physical_setup": "UNKNOWN UNTIL HUMAN REPORT",
+    "wake_up_move_actual_result": "UNKNOWN",
+    "formal_next_trial": "NOT AUTO-STARTED",
+    "field_practice": "HUMAN-LED",
+    "reproducibility": "UNKNOWN",
+    "best_practice": "NOT YET FORMED",
+    "universal_rule": "NOT CLAIMED",
+    "ark24_frozen_trigger": "UNCHANGED / DO NOT EXECUTE"
+  },
+  "relations": [
+    {
+      "id": "recoverable_continuity",
+      "path": [
+        "Connect",
+        "Disconnect",
+        "Teshuvah",
+        "Reconnect",
+        "Connect"
+      ],
+      "vocabulary_status": "HUMAN-CONFIRMED",
+      "operational_effect_status": "CANDIDATE"
+    },
+    {
+      "id": "failure_to_reconnect",
+      "path": [
+        "Failure or Disconnect",
+        "Bottleneck Detection",
+        "Teshuvah",
+        "Reconnect"
+      ],
+      "framing_status": "HUMAN-CONFIRMED",
+      "cross-context_effect_status": "CANDIDATE"
+    },
+    {
+      "id": "wake_up_zero_decision",
+      "path": [
+        "High-Cognition Predecision",
+        "Physical Recall Handle Placement",
+        "Alarm or Wake Cue",
+        "Handle Foreground",
+        "Zero-Comparison Known Move",
+        "Actual Reality"
+      ],
+      "design_status": "HUMAN-PROPOSED CANDIDATE",
+      "actual_status": "UNKNOWN"
+    },
+    {
+      "id": "three_file_living_state",
+      "path": [
+        "README defines",
+        "Handoff initializes",
+        "State continues",
+        "Reality corrects",
+        "Human seals"
+      ],
+      "architecture_status": "HUMAN-SEALED PILOT",
+      "field_result": "TARGET BOOT PENDING"
+    }
+  ],
+  "evidence": {
+    "confirmed": [
+      "Root, Teshuvah, Human Foreground One, and Three-Layer Separation",
+      "one Human-reported B-Action success trace and one B-Zone Return Override success",
+      "single success and continuous operation are separate problems",
+      "B-Action and Connect / Disconnect / Teshuvah / Reconnect vocabulary",
+      "Human framing of failure as expected Bottleneck detection routed through Teshuvah",
+      "Human relation of Combo / association / Routine to continuous operation",
+      "Human correction that Ark does not deny willpower but avoids willpower-dependent systems as a Single Point of Failure",
+      "Human identification of wake-up tradeoff, comparison friction, sleep-direction bias, and recall failure",
+      "Human proposal to place an analog alarm with a selected physical handle in front of it",
+      "Human Seal for the three-file pilot, no meta.md, and preservation of existing query files",
+      "Remote-verified ARK.md and ark-project/README.md v002-candidate updates"
+    ],
+    "candidate": [
+      "Failure → Bottleneck Detection → Teshuvah → Reconnect can work across Ark contexts",
+      "deadline pressure can expose Bottlenecks early and accelerate guarded correction cycles",
+      "Combo-like association and Routine can lower continuous-operation friction",
+      "High-Cognition predecision can reduce Low-Cognition willpower dependence",
+      "physical placement can cross the recall Cut Edge and remove wake-up-time judgment work",
+      "the three-file triad can improve restart accuracy, resource use, updateability, and rollbackability"
+    ],
+    "unknown": [
+      "whether the physical setup has been performed",
+      "whether the handle becomes foreground at wake-up",
+      "whether judgment or hesitation is actually reduced",
+      "whether waking is currently appropriate under Body / Sleep / Safety Guard",
+      "caffeine use, suitability, mechanism, amount, timing, repeated safety, or causal contribution",
+      "second and later B-Action or wake-up move success",
+      "continuous-operation duration and reproducibility",
+      "Best Practice or Universal Rule",
+      "target-thread triad boot success",
+      "state drift, update cost, staleness, and rollback frequency"
+    ]
+  },
+  "progress": {
+    "completed": [
+      "preserved the Ark23:11 single-success Actual trace",
+      "formed Ark23:12 recoverable-continuity relation",
+      "language for Failure / Bottleneck / Teshuvah horizontal expansion",
+      "language for Combo / association / Routine relation",
+      "language for willpower-independent system direction",
+      "language for wake-up recall Cut Edge and zero-decision candidate",
+      "remote-verified ARK.md v002-candidate",
+      "remote-verified ark-project/README.md v002-candidate",
+      "Human Seal for README / handoff / state pilot",
+      "Ark23:13 README and handoff created and remotely verified before state initialization",
+      "Ark23:13 three-file triad initialized at state revision 1"
+    ],
+    "in_progress": [
+      "first target-thread boot of the three-file pilot"
+    ],
+    "hold_for_reality": [
+      "Human Current Reality after target boot",
+      "wake-up physical setup and Actual feedback",
+      "second and later recoverable-continuity samples",
+      "three-file drift and update-friction observations"
+    ],
+    "not_now": [
+      "formal wake-up trial auto-start",
+      "caffeine consumption, redose, dose or timing optimization, or product comparison",
+      "new Routine, multiple Combo branches, or AI-selected Workout",
+      "meta.md, separate schema file, Skill, Automation, Dashboard, Site, or Corpus",
+      "existing query rename or migration",
+      "horizontal rollout to other Ark folders",
+      "canonicalization, Universal Rule, or Ark24 Frozen Trigger"
+    ],
+    "last_result": "three-file triad revision 1 initialized; target-thread boot pending",
+    "failed_attempts_count": 0
+  },
+  "interface": {
+    "boot_order": [
+      "handoff.md full read",
+      "README.md full read and exact blob verification",
+      "state.json full read and strict parse",
+      "Triad Consistency Gate",
+      "Required Initial Success Output",
+      "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RAW_FEEDBACK"
+    ],
+    "accepted_human_inputs": [
+      "free-form natural language",
+      "short fragment",
+      "typo",
+      "emotion",
+      "question",
+      "Actual feedback",
+      "Material Correction",
+      "STOP"
+    ],
+    "one_move_rule": "after Human Material arrives, return at most one known safe reversible move or Safety Stop; do not branch automatically",
+    "initial_success_output_id": "ARK23_13_CONTEXT_READY"
+  },
+  "reality_observation": {
+    "primary": "起床時の比較・迷いが始まる前に、事前配置されたHuman-selected HandleがActualに前景へ入り、既知の安全な起床方向を想起できたか。",
+    "fields": {
+      "physical_setup_completed": "UNKNOWN UNTIL HUMAN REPORT",
+      "alarm_used": "UNKNOWN UNTIL HUMAN REPORT",
+      "handle_became_foreground": "UNKNOWN UNTIL HUMAN REPORT",
+      "comparison_loop_started_first": "UNKNOWN UNTIL HUMAN REPORT",
+      "known_safe_direction_recalled": "UNKNOWN UNTIL HUMAN REPORT",
+      "caffeine_consumed": "DO NOT INFER",
+      "body_or_sleep_effect": "UNKNOWN UNTIL HUMAN REPORT",
+      "repeated_success": "NOT CONFIRMED"
+    }
+  },
+  "guards": {
+    "body_sleep_safety": [
+      "do not override sleep need, physical symptoms, confusion, danger, driving, fall risk, medicine, product-label, or other safety concerns",
+      "wake-up one-option design includes pre-decided STOP conditions",
+      "Safety Stop can be a correct Teshuvah-guided Reconnect"
+    ],
+    "caffeine": [
+      "do not auto-suggest or instruct consumption, redose, amount, interval, frequency, or continued use",
+      "do not infer safety or mechanism from one success trace or product identity",
+      "if current safety context is unknown, stop on the safe side"
+    ],
+    "scope": [
+      "no multiple next steps",
+      "no history replay",
+      "no theory proliferation",
+      "no artifact proliferation",
+      "no automatic GitHub state update",
+      "no canonicalization",
+      "no Ark24 trigger"
+    ],
+    "human_review_stop_conditions": [
+      "Human STOP, Review, Correction, or material disagreement",
+      "one question, one move, or one relation update completed",
+      "Body / Sleep / Safety / Medical / Legal / Others uncertainty",
+      "AI would need to decide current waking, sleeping, or caffeine suitability",
+      "state conflicts materially with Human Reality, README, or handoff",
+      "JSON, SHA, EOF, revision, or Triad consistency cannot be verified",
+      "multiple steps, theory, artifacts, migration, or rollout appear necessary"
+    ]
+  },
+  "state_update_contract": {
+    "update_when": [
+      "Human Correction changes coordinate, evidence, guard, blocker, or first legal move",
+      "Actual feedback materially strengthens, weakens, or resolves one relation",
+      "status or one question materially changes",
+      "Human authorizes the relevant GitHub state update"
+    ],
+    "do_not_store": [
+      "chain-of-thought or transient AI reasoning",
+      "full conversation summary",
+      "prose-only rewording",
+      "unverified prediction",
+      "long failure narrative"
+    ],
+    "write_protocol": [
+      "fetch current state and blob SHA",
+      "classify material delta against Human Reality",
+      "confirm current write authority",
+      "increment revision once",
+      "write with optimistic locking",
+      "remote reread and strict JSON parse",
+      "verify triad bindings and report Reality"
+    ],
+    "rollback_boundary": "state rollback changes the projection, not Actual Reality; reconcile Human Reality before continuing"
+  },
+  "two_stage_closing": {
+    "status": "ACTIVE",
+    "normal_response_order": [
+      "Main Answer",
+      "§ Living Fruit",
+      "§ Next-Cycle Workout Bridge",
+      "Response End"
+    ],
+    "initial_success_exception": "Required Initial Success Output only; do not append closing sections",
+    "living_fruit_guard": "relation-native fruit only; no forced novelty or universalization",
+    "workout_bridge_guard": "optional existing light routine only when naturally safe; no AI-selected workout, timer, points, streak, trial trigger, or dependency loop"
+  },
+  "recovery": {
+    "if_state_missing_invalid_or_stale": [
+      "stop current action",
+      "read immutable handoff and stable README",
+      "report exact missing or mismatched field",
+      "use Ark23:12 source pair only for material provenance recovery",
+      "reconcile with Human Current Reality",
+      "repair only with Human-authorized scope"
+    ],
+    "failure_output": "ARK23_13_TRIAD_CONSISTENCY_NOT_VERIFIED",
+    "rollback_route": [
+      "Git history",
+      "Ark23:12 exact query/runtime pair",
+      "Human Current Reality reconciliation",
+      "README + handoff fallback or revised pilot"
+    ]
+  },
+  "io": {
+    "last_observation": "Human sealed active use of README.md, handoff.md, and state.json for the Ark23:12 to Ark23:13 transition; no meta.md; existing query files unchanged",
+    "pending_tools": [],
+    "artifacts": [
+      {
+        "path": "ark-project/ark23/ark23-13/README.md",
+        "role": "stable runtime",
+        "status": "remote verified"
+      },
+      {
+        "path": "ark-project/ark23/ark23-13/handoff.md",
+        "role": "immutable transition",
+        "status": "remote verified"
+      },
+      {
+        "path": "ark-project/ark23/ark23-13/state.json",
+        "role": "mutable current projection",
+        "status": "revision 1 / initialized"
+      }
+    ]
+  },
+  "eof_sentinel": "EOF::ARK23_13_CURRENT_LIVING_STATE::v001-candidate"
+}
