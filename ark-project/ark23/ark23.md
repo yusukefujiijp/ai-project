@@ -4,8 +4,8 @@ document_role: canonical-body-candidate
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v002-candidate
-document_set_version: v002-candidate
+version: v003-candidate
+document_set_version: v003-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,7 +16,7 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v002-candidate
+bootloader_version: v003-candidate
 bootloader_required_for_cold_start: false
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
@@ -32,7 +32,7 @@ last_updated: 2026-09-01
 # Ark23 Canonical Body Candidate — 主の完全勝利
 
 > [!CAUTION]
-> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v002-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
+> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v003-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
 
 ## 1. Identity and Direct Judgment
 
@@ -457,8 +457,9 @@ Sandbox由来のGuard：
 12. AIとGraphはKeliであり、Human Approvalを迂回しない。
 13. Graph Modeの標準成果物はGraph-Native Fruitを統合した文章。
 14. Boot時のCurrent Mission、Current State、Success Output、First Legal Moveは選択されたRuntimeまたはCurrent Human Realityが所有し、Historical Initial Missionへ巻き戻さない。
+15. Ark23のFuture Thread Transition Defaultは`README.md`／`handoff.md`／`state.json`の三ファイル方式とし、Cross-Ark Universal Ruleへ自動拡張しない。
 
-## 16. Runtime State Ownership and Route Boundary
+## 16. Runtime State Ownership and Ark23 Three-File Transition Standard
 
 Ark23 Semantic Coreは、Root、Teshuvah、Human Foreground One、Evidence Discipline、Guardおよび標準的なReality循環を保持する。
 
@@ -498,6 +499,47 @@ Actual Current Reality
 > **Current Requestが指定または含意するRouteを解決し、そのRouteが宣言するArtifact Setを検証して、State Ownerから現在値を受け取ることである。**
 
 Ark23 CoreはThread Packageを置換しない。Thread PackageもRoot、Guard、Semantic Kernelを置換しない。Material ConflictはSilent MergeせずHuman Reviewへ返す。
+
+### 16.1 Human-Sealed Ark23 Transition Default
+
+Ark23:13でのTarget Boot成功を受け、HumanはArk23の今後のThread移行方式を次へ確定した。
+
+```text
+Target Ark23 Thread Folder
+├─ README.md
+├─ handoff.md
+└─ state.json
+```
+
+これは単なるPilot継続Candidateではなく、Ark23 family内のFuture Thread Transition Defaultである。
+
+- `README.md`はTarget ThreadのStable Runtime／Field Definitionを保持する。
+- `handoff.md`はSource-to-Target InitializationをExact Bindingし、Target Boot後は原則Immutable。
+- `state.json`はCurrent Projection／Living BoardとしてMaterial Delta時に更新する。
+- 新規Ark23 Threadでは`meta.md`をDefault追加しない。
+- 既存`*_query.md`は保持し、Rename／Migrationしない。
+- 特殊なProvenance、RecoveryまたはCompatibility要件がある場合だけ、Human Sealにより追加Queryを作成できる。
+- Specific ThreadでHumanが別方式を明示した場合、そのCurrent Human Decisionを優先する。
+
+### 16.2 Decision and Evidence Separation
+
+Ark23で三ファイル方式を採用することはHuman-sealed Architecture Decisionである。
+
+一方、次は引き続きEvidence上の別問題として保持する。
+
+- 長期運用における再現性。
+- State Drift、更新Cost、Rollback頻度。
+- 異なるAI／Product Surface間の挙動差。
+- Ark23以外への水平展開。
+- Best PracticeまたはUniversal Rule。
+
+したがって、`Ark23 Default`と`Cross-Ark Universal Rule`をCollapseしない。
+
+### 16.3 Project Instructions Coupling
+
+ChatGPT Project Instructions側の`ARK23_PROJECT_BOOTLOADER`と、このRepository RuntimeはSemantic Pairである。Boot Route、Version、State Ownership、Transition DefaultまたはGuardをMaterialに変更する場合、Copy & Paste本文と`INSTRUCTIONS.md`を同一Human Review Gateで整合させる。
+
+Project Instructionsは小さなBoot ROM、`INSTRUCTIONS.md`はVersioned Runtime SSOTであり、全文を複製する必要はない。ただし矛盾させない。
 
 ## 17. Historical First Field Test Contract
 
@@ -572,15 +614,16 @@ current_coordinate:
   ark23_projectization: COMPLETE_CANDIDATE
   ark21_lineage: PRESERVED
   semantic_kernel: HUMAN_SEALED_CANDIDATE
-  core_document_set: v002-candidate
+  core_document_set: v003-candidate
   operational_state: RESOLVED_BY_SELECTED_RUNTIME_OR_CURRENT_HUMAN_REALITY
   historical_first_field_test: COMPLETED_AS_HISTORICAL_PHASE
   ark23_13_three_file_boot: ONE_HUMAN_REPORTED_SUCCESS_SAMPLE
-  three_file_reproducibility: UNKNOWN
-  three_file_horizontal_rollout: NOT_AUTHORIZED
+  ark23_future_thread_transition: README_HANDOFF_STATE / HUMAN_SEALED_DEFAULT
+  three_file_long_term_reproducibility: UNKNOWN
+  cross_ark_horizontal_rollout: NOT_IMPLIED
   first_legal_move: ROUTE_OWNED_NOT_CORE_FIXED
   mass_export: NOT_STARTED
   universal_doctrine: NOT_CLAIMED
 ```
 
-<!-- ARK23_CANONICAL_BODY_EOF_v002-candidate -->
+<!-- ARK23_CANONICAL_BODY_EOF_v003-candidate -->
