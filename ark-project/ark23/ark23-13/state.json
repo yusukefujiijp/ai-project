@@ -2,7 +2,7 @@
   "meta": {
     "state_id": "ARK23_13_CURRENT_LIVING_STATE",
     "schema_version": "ark-living-state/v001-candidate",
-    "revision": 1,
+    "revision": 2,
     "status": "awaiting_human_current_reality",
     "project": "Ark23",
     "sequence": "13",
@@ -20,10 +20,10 @@
     "update_policy": "material_delta_only_with_current_authority",
     "pilot": {
       "name": "README-Handoff-State Three-File Living State Pilot",
-      "status": "human-sealed / first target / target boot pending",
+      "status": "first target boot succeeded / Ark23 future-thread transition default adopted",
       "meta_md": "not used",
       "existing_query_files": "preserved unchanged",
-      "horizontal_rollout": "not authorized"
+      "horizontal_rollout": "Ark23 future threads: HUMAN-SEALED DEFAULT / cross-Ark: NOT IMPLIED"
     }
   },
   "identity": {
@@ -93,7 +93,7 @@
         "version": "v002-candidate"
       }
     },
-    "provenance_policy": "normal boot reads the triad and verifies the immediate source pair binding; deep source full-read only for material conflict, recovery, or reconstruction"
+    "provenance_policy": "normal Ark23 boot uses explicit handoff, then README and state; existing query pairs remain preserved for legacy or explicit-query routes"
   },
   "goal": {
     "primary": "起床時から判断作業そのものを除去し、低・超低認知状態でもHuman-selected physical recall handleから既知で安全な起床方向を想起できるInterfaceのActual Realityを受け取る",
@@ -116,12 +116,11 @@
     ]
   },
   "now": {
-    "current_phase": "target_thread_transition_prepared",
-    "current_subtask": "boot Ark23:13 from the three-file triad and then wait for Human Current Reality",
+    "current_phase": "target_thread_boot_succeeded / awaiting_human_current_reality",
+    "current_subtask": "continue Ark23:13 from Human Current Reality without replaying transition history",
     "next_action": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RAW_FEEDBACK",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RAW_FEEDBACK",
     "blockers": [
-      "target-thread boot has not yet been Human-reported",
       "wake-up physical setup and Actual result have not been Human-reported"
     ],
     "open_questions": [
@@ -142,7 +141,9 @@
     "reproducibility": "UNKNOWN",
     "best_practice": "NOT YET FORMED",
     "universal_rule": "NOT CLAIMED",
-    "ark24_frozen_trigger": "UNCHANGED / DO NOT EXECUTE"
+    "ark24_frozen_trigger": "UNCHANGED / DO NOT EXECUTE",
+    "three_file_boot": "ONE HUMAN-REPORTED SUCCESS SAMPLE",
+    "ark23_future_thread_transition": "README / HANDOFF / STATE HUMAN-SEALED DEFAULT"
   },
   "relations": [
     {
@@ -190,8 +191,8 @@
         "Reality corrects",
         "Human seals"
       ],
-      "architecture_status": "HUMAN-SEALED PILOT",
-      "field_result": "TARGET BOOT PENDING"
+      "architecture_status": "HUMAN-SEALED ARK23 FUTURE-THREAD DEFAULT",
+      "field_result": "ONE HUMAN-REPORTED TARGET BOOT SUCCESS SAMPLE"
     }
   ],
   "evidence": {
@@ -206,7 +207,9 @@
       "Human identification of wake-up tradeoff, comparison friction, sleep-direction bias, and recall failure",
       "Human proposal to place an analog alarm with a selected physical handle in front of it",
       "Human Seal for the three-file pilot, no meta.md, and preservation of existing query files",
-      "Remote-verified ARK.md and ark-project/README.md v002-candidate updates"
+      "Remote-verified ARK.md and ark-project/README.md v002-candidate updates",
+      "Human reported successful Ark23:13 target-thread boot with no material reconstruction friction",
+      "Human sealed README / handoff / state as the default format for future Ark23 thread transitions"
     ],
     "candidate": [
       "Failure → Bottleneck Detection → Teshuvah → Reconnect can work across Ark contexts",
@@ -225,8 +228,8 @@
       "second and later B-Action or wake-up move success",
       "continuous-operation duration and reproducibility",
       "Best Practice or Universal Rule",
-      "target-thread triad boot success",
-      "state drift, update cost, staleness, and rollback frequency"
+      "state drift, update cost, staleness, and rollback frequency",
+      "long-term three-file reproducibility, state drift, update cost, rollback frequency, and cross-Ark suitability"
     ]
   },
   "progress": {
@@ -241,13 +244,15 @@
       "remote-verified ark-project/README.md v002-candidate",
       "Human Seal for README / handoff / state pilot",
       "Ark23:13 README and handoff created and remotely verified before state initialization",
-      "Ark23:13 three-file triad initialized at state revision 1"
+      "Ark23:13 three-file triad initialized at state revision 1",
+      "Ark23:13 target-thread boot succeeded from README / handoff / state without full-history replay",
+      "Human adopted README / handoff / state as the default for future Ark23 thread transitions"
     ],
     "in_progress": [
-      "first target-thread boot of the three-file pilot"
+      "Ark23:13 Human-led living field after successful target boot"
     ],
     "hold_for_reality": [
-      "Human Current Reality after target boot",
+      "Human Current Reality in Ark23:13 after successful boot",
       "wake-up physical setup and Actual feedback",
       "second and later recoverable-continuity samples",
       "three-file drift and update-friction observations"
@@ -258,10 +263,10 @@
       "new Routine, multiple Combo branches, or AI-selected Workout",
       "meta.md, separate schema file, Skill, Automation, Dashboard, Site, or Corpus",
       "existing query rename or migration",
-      "horizontal rollout to other Ark folders",
+      "cross-Ark rollout outside Ark23",
       "canonicalization, Universal Rule, or Ark24 Frozen Trigger"
     ],
-    "last_result": "three-file triad revision 1 initialized; target-thread boot pending",
+    "last_result": "Ark23:13 target boot succeeded; three-file format adopted as future Ark23 transition default; awaiting Human Current Reality",
     "failed_attempts_count": 0
   },
   "interface": {
@@ -352,7 +357,7 @@
       "remote reread and strict JSON parse",
       "verify triad bindings and report Reality"
     ],
-    "rollback_boundary": "state rollback changes the projection, not Actual Reality; reconcile Human Reality before continuing"
+    "rollback_boundary": "state rollback changes the projection, not Actual Reality; Ark23 three-file transition default changes only through a new Human Material Correction and versioned core update"
   },
   "two_stage_closing": {
     "status": "ACTIVE",
@@ -384,7 +389,7 @@
     ]
   },
   "io": {
-    "last_observation": "Human sealed active use of README.md, handoff.md, and state.json for the Ark23:12 to Ark23:13 transition; no meta.md; existing query files unchanged",
+    "last_observation": "Human reported successful Ark23:13 boot and sealed README.md / handoff.md / state.json as the default for future Ark23 thread transitions; cross-Ark rollout remains a separate gate",
     "pending_tools": [],
     "artifacts": [
       {
@@ -400,7 +405,7 @@
       {
         "path": "ark-project/ark23/ark23-13/state.json",
         "role": "mutable current projection",
-        "status": "revision 1 / initialized"
+        "status": "revision 2 / boot success and Ark23 transition-default decision reflected"
       }
     ]
   },
