@@ -4,8 +4,8 @@ document_role: canonical-body-candidate
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v001-candidate
-document_set_version: v001-candidate
+version: v002-candidate
+document_set_version: v002-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -15,22 +15,23 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v001-candidate
+bootloader_version: v002-candidate
 bootloader_required_for_cold_start: false
-success_context: ARK23_CONTEXT_READY
-success_thread_state: READY_FOR_ONE_REALITY_SAMPLE
+core_context: ARK23_CONTEXT_READY
+operational_state_owner: selected-thread-runtime-or-current-human-reality
+route_policy: explicit-handoff-then-explicit-query-then-core-fallback
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
 canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
 optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
-last_updated: 2026-08-20
+last_updated: 2026-09-01
 ---
 
 # Ark23 Canonical Body Candidate — 主の完全勝利
 
 > [!CAUTION]
-> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v001-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
+> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v002-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
 
 ## 1. Identity and Direct Judgment
 
@@ -454,9 +455,50 @@ Sandbox由来のGuard：
 11. Israel／Torah／Covenant／Hebrew-Jewish Contextを消去しない。
 12. AIとGraphはKeliであり、Human Approvalを迂回しない。
 13. Graph Modeの標準成果物はGraph-Native Fruitを統合した文章。
-14. Ark23最初のField MissionはHumanが提示する低Risk・可逆なReality一件。
+14. Boot時のCurrent Mission、Current State、Success Output、First Legal Moveは選択されたRuntimeまたはCurrent Human Realityが所有し、Historical Initial Missionへ巻き戻さない。
 
-## 16. First Field Test Contract
+## 16. Runtime State Ownership and Route Boundary
+
+Ark23 Semantic Coreは、Root、Teshuvah、Human Foreground One、Evidence Discipline、Guardおよび標準的なReality循環を保持する。
+
+一方、次はこのCanonical Bodyへ固定しない。
+
+- Current ThreadのPhase、Main Theme、One Question。
+- Current Success Output、Current State、First Legal Move。
+- Thread-local Confirmed／Candidate／Unknown。
+- Mutable Living State、Blocker、次回Action。
+- Current Human RealityによってMaterialに訂正された値。
+
+```text
+Stable Semantic Core
+→ ark23.md
+
+AI Runtime and Route Rules
+→ INSTRUCTIONS.md
+
+Repository-bound Core Verification
+→ lords-complete-victory_query.md
+
+Thread Definition
+→ nearest README.md
+
+Transition Initialization
+→ explicit handoff.md
+
+Mutable Current Projection
+→ state.json when declared
+
+Actual Current Reality
+→ Human report / Human Correction
+```
+
+正しいBootは、常に同じDocument Setを読むことではない。
+
+> **Current Requestが指定または含意するRouteを解決し、そのRouteが宣言するArtifact Setを検証して、State Ownerから現在値を受け取ることである。**
+
+Ark23 CoreはThread Packageを置換しない。Thread PackageもRoot、Guard、Semantic Kernelを置換しない。Material ConflictはSilent MergeせずHuman Reviewへ返す。
+
+## 17. Historical First Field Test Contract
 
 ```yaml
 reality_case:
@@ -509,7 +551,7 @@ Stop Rules：
 - Yellow／Red Riskなら実行しない。
 - Human Review後に次へ進む。
 
-## 17. Open Research Queue
+## 18. Open Research Queue
 
 1. `主の完全勝利`One-Focusは複数Realityで再現するか。
 2. Branch数、比較Edge、迷い、一手到達時間の関係は何か。
@@ -522,18 +564,22 @@ Stop Rules：
 9. Optional Response KeliはField Evidence後にConditional Referenceへ進むべきか。
 10. Ark21:03のDirect Provenance GapをどのArtifactで安全に補うべきか。
 
-## 18. Current Coordinate and Next Gate
+## 19. Current Coordinate and Next Gate
 
 ```yaml
 current_coordinate:
   ark23_projectization: COMPLETE_CANDIDATE
   ark21_lineage: PRESERVED
   semantic_kernel: HUMAN_SEALED_CANDIDATE
-  runtime: v001-candidate
-  first_field_test: PENDING
-  first_legal_move: WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE
+  core_document_set: v002-candidate
+  operational_state: RESOLVED_BY_SELECTED_RUNTIME_OR_CURRENT_HUMAN_REALITY
+  historical_first_field_test: COMPLETED_AS_HISTORICAL_PHASE
+  ark23_13_three_file_boot: ONE_HUMAN_REPORTED_SUCCESS_SAMPLE
+  three_file_reproducibility: UNKNOWN
+  three_file_horizontal_rollout: NOT_AUTHORIZED
+  first_legal_move: ROUTE_OWNED_NOT_CORE_FIXED
   mass_export: NOT_STARTED
   universal_doctrine: NOT_CLAIMED
 ```
 
-<!-- ARK23_CANONICAL_BODY_EOF_v001-candidate -->
+<!-- ARK23_CANONICAL_BODY_EOF_v002-candidate -->
