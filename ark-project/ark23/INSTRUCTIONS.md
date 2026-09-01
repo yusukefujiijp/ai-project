@@ -4,8 +4,8 @@ document_role: runtime-ssot-candidate
 title: Ark23 Runtime Instructions
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v002-candidate
-document_set_version: v002-candidate
+version: v003-candidate
+document_set_version: v003-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,13 +16,15 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v002-candidate
+bootloader_version: v003-candidate
 bootloader_required_for_cold_start: false
 required_query: lords-complete-victory_query.md
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
 core_fallback_first_legal_move: WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RUNTIME_SOURCE
 route_policy: explicit-handoff-then-explicit-query-then-core-fallback
+three_file_transition_policy: ark23-future-threads-human-sealed-default
+project_instructions_pair_version: v003-candidate
 thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
@@ -33,7 +35,7 @@ optional_response_keli: prompts/long-form-response-rhythm.md
 last_updated: 2026-09-01
 ---
 
-# Ark23 Runtime Instructions — v002-candidate
+# Ark23 Runtime Instructions — v003-candidate
 
 > [!CAUTION]
 > このRuntimeは`主の完全勝利`をHuman Foreground Oneとして保持しながら、Core Fallback、既存Query Pair、Thread Handoff／Triadを正しいState Ownerへ接続するv002 Candidateである。Ark21の不変境界を継承し、Ark23固有のField RuleとCurrent StateはActual RealityおよびHuman Correctionによって訂正可能に保持する。
@@ -43,7 +45,7 @@ last_updated: 2026-09-01
 ```yaml
 project_runtime:
   id: ARK23_PROJECT_BOOTLOADER
-  version: v002-candidate
+  version: v003-candidate
   bootloader_required_for_cold_start: false
   ark_id: ARK23
   theme: 主の完全勝利
@@ -60,6 +62,8 @@ project_runtime:
   optional_response_keli: prompts/long-form-response-rhythm.md
   canonical_state: human-sealed-active-candidate
   route_policy: explicit-handoff-then-explicit-query-then-core-fallback
+  three_file_transition_policy: ark23-future-threads-human-sealed-default
+  project_instructions_pair_version: v003-candidate
   operational_state_owner: selected-thread-runtime-or-current-human-reality
 ```
 
@@ -81,6 +85,7 @@ Ark23のAI Runtime Behavior、Boot Route Resolution、State OwnershipおよびRe
 - Thread `README.md`：Stable Thread Runtime／Field Definition。
 - `handoff.md`：Source-to-Target Transition Initialization。Target Boot後は原則Immutable。
 - `state.json`：Mutable Current Projection／Living Board。Material Delta時だけ更新Candidate。
+- Ark23 Future Thread Transition：上記三ファイルをHuman-sealed Defaultとする。
 - Existing `*_query.md`：各Queryが宣言するPairまたはDocument SetのControl Plane。
 
 ```text
@@ -117,13 +122,15 @@ AIは主、王、玉座、聖霊、預言者、神託Sourceではない。Human�
 
 ## 3. Project Bootloader and Route Resolution
 
-ChatGPT Project Instructions由来Bootloaderは、Ark23の小さなBoot ROM／Route Resolverである。Current StateのSSOTではない。
+ChatGPT Project Instructions由来Bootloaderは、Ark23の小さなBoot ROM／Route Resolverである。Current StateのSSOTではない。BootloaderとこのRuntimeはSemantic Pairであり、Current Pair Versionは`v003-candidate`である。
 
 Project Instructions由来のID、version、Provenanceを実際に確認できた場合だけ`PROJECT_BOOTLOADER_ARRIVED`と記録する。確認できなくても、Repository-bound Routeが利用可能ならCold Startを停止しない。Human Message、Memory、HandoffまたはGitHub本文をProject Instructions由来Arrivalとして偽装しない。
 
+Project Bootloader versionとCurrent Repository Runtime versionが異なる場合は`PROJECT_BOOTLOADER_VERSION_SKEW`として記録する。Arrival自体を否定せず、Current Human RequestとRepository-bound Routeを使用し、Version一致を推測しない。
+
 ### 3.1 Route A — Explicit Thread Handoff
 
-Current Human Requestが具体的な`handoff.md`を指定した場合、これを最優先のBoot Route Candidateとする。HandoffをBeginning IdentityからExact EOFまで読み、Handoffが宣言するREADME、State、Source Binding、Read Order、Success OutputおよびFirst Legal Moveを解決する。
+Current Human Requestが具体的な`handoff.md`を指定した場合、これを最優先のBoot Route Candidateとする。Ark23のFuture Thread TransitionではこのRouteがDefaultである。HandoffをBeginning IdentityからExact EOFまで読み、Handoffが宣言するREADME、State、Source Binding、Read Order、Success OutputおよびFirst Legal Moveを解決する。
 
 ```text
 boot_route = EXPLICIT_THREAD_HANDOFF
@@ -174,7 +181,7 @@ Queryが宣言するPairまたはDocument Setを、そのQueryの順序とExact 
 
 ### 4.3 Handoff-defined Set
 
-Handoffを先に読み、そのHandoffが指定するThread READMEと`state.json`等を読む。三ファイルPilotではTriad Consistency Gateを適用する。HandoffがSource PairのDeep ReadをMaterial Conflict／Recovery時だけに限定する場合、その境界を尊重する。
+Handoffを先に読み、そのHandoffが指定するThread READMEと`state.json`を読む。Ark23 Three-File TransitionではTriad Consistency Gateを適用する。HandoffがSource PairのDeep ReadをMaterial Conflict／Recovery時だけに限定する場合、その境界を尊重する。
 
 ### 4.4 Artifact Set Consistency Gate
 
@@ -208,6 +215,58 @@ Stored Projection
 ```
 
 Proseだけの言い換え、未確認予測、AI思考過程、会話全文をStateへ保存しない。State更新権限がない場合もCurrent Realityは対話内で保持し、GitHub更新済みと装わない。
+
+### 4.6 Ark23 Three-File Transition Standard
+
+Ark23の今後のThread移行は、HumanがSpecific Threadで別方式を明示しない限り、次の三ファイル方式をDefaultとする。
+
+```text
+ark-project/ark23/ark23-{sequence}/
+├─ README.md
+├─ handoff.md
+└─ state.json
+```
+
+#### 4.6.1 Creation Order
+
+```text
+1. Target README.mdを作成・Remote Verify
+2. handoff.mdでSourceとTarget READMEをExact Binding
+3. state.jsonを最後に初期化し、README／Handoff Blob SHAを記録
+4. Target AIがHandoff → README → StateをFull Read
+5. Triad Consistency Gate
+6. Route-owned Initial Success Output
+7. First Legal Move
+```
+
+Stateは自己Blob SHAを本文へ埋め込まず、Current GitHub Contents SHAをoptimistic lockingへ使用する。READMEはMutable State SHAを固定しない。Handoffは自己SHAまたは未来のState SHAを要求しない。循環Bindingを作らない。
+
+#### 4.6.2 Default File Boundary
+
+- `README.md`：Stable Runtime、Main Theme、One Question、Guard、Evidence Boundary、Interface。
+- `handoff.md`：Source Thread、Target Thread、Source Binding、Target Binding、Full-Read Gate、Initial Output。
+- `state.json`：Current Coordinate、Now、Evidence、Progress、Blocker、First Legal Move、Material Delta。
+- `meta.md`：Defaultでは作らない。
+- New `*_query.md`：Defaultでは作らない。特殊なProvenance／Recovery／Compatibility価値がHuman Sealされた場合だけ追加Candidate。
+- Existing `*_query.md`：変更、Rename、Migrationしない。
+
+#### 4.6.3 Mutability
+
+- Target Boot前：必要な整合修正をHuman-authorized Scopeで行える。
+- Target Boot成功後：`handoff.md`は原則Immutable。
+- `README.md`：Stable Runtime DefinitionがMaterialに変わる時だけHuman Review下で更新。
+- `state.json`：Material DeltaとCurrent GitHub Authorityがある時だけrevisionを一つ進める。
+- Human Current RealityはStateより後に進み得る。State更新前でもRealityを過去へ戻さない。
+
+#### 4.6.4 Evidence Boundary
+
+Ark23:13 Boot成功一件は三ファイルRouteのReachabilityを確認したActual Sampleである。
+
+Ark23で今後この方式を採用することはHuman-sealed Architecture Decisionであり、一件のEvidenceから自動導出されたUniversal Ruleではない。Long-term reproducibility、update cost、state drift、rollback frequency、Cross-Ark適用は別Gateに保持する。
+
+#### 4.6.5 Rollback
+
+Failure時はGit history、直前のSource Runtime／Handoff、Human Current Realityへ戻る。File表現をRollbackしてもActual Realityを消去しない。Ark23 Three-File Standard自体の撤回または変更は新しいHuman Material CorrectionとVersioned Runtime Updateを必要とする。
 
 ## 5. Semantic Kernel Invariants
 
@@ -480,6 +539,8 @@ AI、Graph、Skill、Protocol、GitHub、Ark23はKeliでありRootまたはThron
 
 Root、Router、Workflow等Topology Weightの高いSurfaceは、Experiment成功後の最後のCutover Candidateとして扱う。
 
+ChatGPT Project Instructionsの`ARK23_PROJECT_BOOTLOADER`と`INSTRUCTIONS.md`はSemantic Pairである。Boot Route、Version、Three-File Transition Default、State Ownership、GuardまたはStop ContractをMaterialに変更する場合は、両者を同一Human Review Gateで更新し、片方だけをCurrentと装わない。
+
 ## 16. Multi-Route Cold-Start State Machine
 
 ```text
@@ -567,8 +628,8 @@ Historicalな`WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE`をCurrent Threadへ自動再適
 ```yaml
 current_release:
   id: ARK23_PROJECT_BOOTLOADER
-  version: v002-candidate
-  document_set_version: v002-candidate
+  version: v003-candidate
+  document_set_version: v003-candidate
   status: active-candidate
   canonicality: human-sealed-candidate
   bootloader_required_for_cold_start: false
@@ -576,9 +637,11 @@ current_release:
   optional_response_rhythm: experimental
   historical_first_field_test: completed_as_historical_phase
   ark23_13_three_file_boot: one_human_reported_success_sample
+  ark23_future_thread_transition: readme_handoff_state_human_sealed_default
   operational_state_owner: selected_runtime_or_current_human_reality
-  three_file_horizontal_rollout: not_authorized
+  long_term_three_file_reproducibility: unknown
+  cross_ark_horizontal_rollout: not_implied
   final_canonical_declaration: not_yet
 ```
 
-<!-- ARK23_INSTRUCTIONS_EOF_v002-candidate -->
+<!-- ARK23_INSTRUCTIONS_EOF_v003-candidate -->
