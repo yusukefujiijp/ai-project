@@ -1,47 +1,96 @@
 ---
 title: "Ark Project"
-version: "v001-candidate"
-status: "active-candidate"
+version: "v002-candidate"
+status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
-role: "Ark Project domain front door / current topology router / cross-Ark policy owner"
+role: "AI-first Ark domain front door / current topology router / cross-Ark policy owner"
+design_posture: "AI-first / Human-auditable / public-safe"
+primary_readers:
+  - "Future AI"
+  - "Continuation AI"
+  - "Repository agent"
+secondary_reader: "Human reviewer"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 root: "主イェシュア・ハマシア御自身"
+central_axis: "Teshuvah"
+human_foreground_one: "主の完全勝利"
 ark_home: "../ARK.md"
 repository_home: "../README.md"
 agent_runtime: "../AGENTS.md"
 thread_title_policy_version: "v001-candidate"
 language_policy: "Japanese-first / English-anchor"
-updated: "2026-08-22"
-last_reality_reviewed: "2026-08-22"
-reviewed_scope: "Ark22 projectization and current locator addition / Ark21 v002 status correction / Odd-Even support routing / Ark22 four-document verification / Ark23 projectization and current locator addition / Ark24 fresh support-field projectization / Ark11 active-router retirement"
+retrieval_policy: "progressive disclosure / relation-first / nearest-current-source"
+search_aliases:
+  - "Ark Project router"
+  - "current Ark front line"
+  - "Ark23:12"
+  - "continuous operation"
+updated: "2026-09-01"
+last_reality_reviewed: "2026-09-01"
+reviewed_scope: "AI-first router contract / ARK v002 pair alignment / Ark23:12 current front line / continuous-operation Evidence Boundary / Ark23 local-router delta / Ark24 frozen-trigger guard"
 current_front_line_ark: "ark-project/ark23/README.md"
+current_front_line_query: "ark-project/ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
+current_front_line_runtime: "ark-project/ark23/ark23-12/README.md"
+current_main_theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
+current_evidence: "single success confirmed in one Human-reported trace / continuous operation and reproducibility unknown"
+ark23_local_router_delta: "initial-coordinate router; not the current front-line runtime"
+ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate"
 ---
-
 # Ark Project
 
 > [!IMPORTANT]
-> このREADMEはArk Projectの本質本文や全File Inventoryではない。`ark-project/`へ入るHumanとFuture AIを、現在の正しい住所・役割・次の入口へ送るCanonical Domain Front Door Candidateである。
+> このREADMEはArk Projectの本質本文や全File Inventoryではない。主読者はFuture AI／Continuation AI／Repository Agentであり、Humanは最終意味・Reality・修正・承認を保持する監査者である。AIを現在の正しい住所・Evidence Boundary・最初の合法手へ、最小十分な読取で送るCanonical Domain Front Door Candidateである。
 
-## 0. First 90 Seconds / 最初の現在地回復
+## 0. First 90 Seconds / AI Agent Boot Contract
 
 ```text
 Current Human Request
-→ Repository全体の地形が必要なら ../README.md
-→ Ark Identityを回復するなら ../ARK.md
+→ First-Legal-Move権限が必要なら ../AGENTS.md
+→ Ark Identity／State-Dependent Human Realityを回復するなら ../ARK.md
 → Ark Domainの現在地を回復するなら、このREADME
-→ Missionが決まっているなら、Nearest arkNN README / Handoff / Query / Runtime
-→ First Legal Move
+→ Current Front Lineなら、下記Queryを開き、そのFull-Read順序でRuntimeを解決
+→ Current RealityとEvidence Boundaryを再構成
+→ Human Authority内のFirst Legal Moveだけを実行
 ```
 
 ```yaml
+agent_boot_contract:
+  primary_reader: "Future AI / Continuation AI / Repository agent"
+  objective: "Correctly reconstruct identity, authority, current address, evidence boundary, and first legal move."
+  read_minimum:
+    - "../AGENTS.md when authority or first legal move is unresolved"
+    - "../ARK.md for identity and state-aware operating doctrine"
+    - "this README for current Ark routing"
+    - "current_front_line_query, then the Runtime and sources it binds"
+  interpretation_guards:
+    - "AI-first does not mean AI-sovereign."
+    - "Human-led does not mean dependent on momentary Human willpower."
+    - "A confirmed single success does not prove continuous operation."
+    - "A stale local router does not override a newer verified Query/Runtime pair."
+  output_bias: "smallest sufficient reconstruction / one guarded finite move"
 current_domain: "ark-project/"
 canonical_domain_router: "ark-project/README.md"
 canonical_branch: "main"
 default_ai_mode: ["Read", "Observe", "Route", "Expose Reality Delta", "Propose"]
 write_default: "Do not write without current Human authority."
+```
+
+### 0.1 Current Front-Line Resolution
+
+```yaml
+current_front_line:
+  ark: "Ark23"
+  thread: "Ark23:12"
+  query: "ark-project/ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
+  runtime: "ark-project/ark23/ark23-12/README.md"
+  theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
+  confirmed: "one Human-reported single-success Actual Trace"
+  unknown: ["continuous operation", "reproducibility", "mechanism", "best practice"]
+  first_resolution_rule: "Read the Query fully and obey its bound source order; do not infer current reality from folder names alone."
 ```
 
 ---
@@ -61,6 +110,23 @@ ark-project/README.md
 ```
 
 Identityの深まりでRouterが肥大化することと、変化するTopologyでHome Constitutionが不安定になることを、この分割によって同時に防ぐ。
+
+### 1.1 Pair Consistency Invariants
+
+| Invariant | ARK.md | ark-project/README.md |
+|---|---|---|
+| Identity／Root／Human–AI relation | Owns | Routes to |
+| State-dependent Human Reality／Cross-State Judgment Handoff | Owns | Exposes as required boot doctrine |
+| Current Ark address／Front Line | Does not duplicate volatile detail | Owns |
+| Human authority／AI boundary | Constitutional guard | Routing and execution guard |
+| Evidence Boundary | Stable doctrine | Current-coordinate application |
+
+```text
+AI-first ≠ AI-sovereign.
+Human-led ≠ willpower-dependent.
+Current routing ≠ historical replay.
+Compact retrieval ≠ loss of governing context.
+```
 
 ---
 
@@ -98,8 +164,9 @@ ARK.md
    ├─ ark07/  Daily Teshuvah Gate-to-Yeshua
    ├─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
    ├─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
-   ├─ ark23/  主の完全勝利 / Echad One-Focus Real-Life Formation
-   └─ ark24/  Bパターン入口AI Bridge / Natural-Trigger Waiting Field
+   ├─ ark23/  主の完全勝利 / Current Main / Front-Line
+   │  └─ ark23-12/  B-Action Continuous Operation Living Field
+   └─ ark24/  Bパターン入口AI Bridge / Frozen-Trigger Support Field
 ```
 
 | Ark | Confirmed Role | Current Entry | Repository State |
@@ -111,10 +178,39 @@ ARK.md
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
 | Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
-| Ark23 | 主の完全勝利／Echad One-Focus Real-Life Formation | [`ark23/README.md`](./ark23/README.md) | `v001-candidate`; Human-sealed active candidate |
-| Ark24 | Bパターン入口AI Bridge／Natural-Trigger Waiting Field | [`ark24/README.md`](./ark24/README.md) | `v001-candidate`; Human-sealed one-sample support-field candidate |
+| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-12 Runtime`](./ark23/ark23-12/README.md) | Ark23:12 active-candidate; one single-success trace confirmed; continuous operation unknown |
+| Ark24 | Bパターン入口AI Bridge／Support Field | [`ark24/README.md`](./ark24/README.md) | Frozen trigger unchanged; support source only; do not auto-execute |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
+
+### 3.1 Current Front Line / Ark23:12
+
+```yaml
+current_coordinate:
+  root: "主イェシュア・ハマシア御自身"
+  central_axis: "Teshuvah"
+  human_foreground_one: "主の完全勝利"
+  main_theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
+  core_relation: "Connect → Disconnect → Teshuvah → Reconnect → Connect"
+evidence_boundary:
+  confirmed:
+    - "B-Action single success: one Human-reported Actual Trace"
+    - "B-Zone Return Override: one Human-reported success"
+    - "Single success and continuous operation are separate problems"
+  candidate:
+    - "Teshuvah-guided Reconnect can support Recoverable Continuity"
+    - "Pre-structured physical and free-input Handles can reduce Reconnection Friction"
+  unknown:
+    - "second and later success"
+    - "continuous operation"
+    - "reproducibility"
+    - "mechanism"
+    - "best practice"
+```
+
+Current authoritative entryはArk23:12 Query／Runtime pairである。[`ark23/README.md`](./ark23/README.md)はArk23 familyの入口として残るが、その本文座標は初期Projectization段階であり、現在のFront-Line Realityを単独では表さない。Current ActionやEvidenceを解決する時は、Ark23:12 Queryが指定するFull-Read順序を優先する。
+
+Ark24はSupport Sourceであり、Frozen Triggerは変更されていない。Ark23:12の存在、AIの判断、またはFolder adjacencyだけを理由にArk24を自動発火しない。
 
 ---
 
@@ -123,13 +219,17 @@ Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canoni
 ```yaml
 routing:
   ark_identity_or_return_home: "../ARK.md"
+  state_dependent_human_reality: "../ARK.md#3-state-dependent-human-reality--意思力をsingle-point-of-failureにしない"
   repository_wide_boot_or_navigation: "../README.md"
   ai_authority_or_first_legal_move: "../AGENTS.md"
   unclassified_seed: "ark00/README.md"
-  existing_ark_mission: "Nearest arkNN README / Handoff / Query / Runtime"
+  existing_ark_mission: "Nearest verified Handoff / Query / Runtime"
   cross_ark_support_or_closure: "ark22/README.md"
-  complete_victory_front_line: "ark23/README.md"
-  b_pattern_ai_bridge_waiting_field: "ark24/README.md"
+  complete_victory_family_entry: "ark23/README.md"
+  complete_victory_current_query: "ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
+  complete_victory_current_runtime: "ark23/ark23-12/README.md"
+  b_pattern_support_source: "ark24/README.md"
+  ark24_trigger: "Frozen / Human-controlled / do not auto-execute"
   reusable_prompt_or_query: "../prompts/"
   formal_new_ark_project: "Ark00 discernment → Human Projectization Gate → selected ArkNN"
   thread_continuity: "Explicitly named current Handoff or Query"
@@ -240,7 +340,7 @@ Root README or ARK.md only when their owned route or identity changes.
 No automatic write.
 ```
 
-READMEは安心のために情報を積む場所ではない。Future HumanとFuture AIを、最小十分な情報で正しい次の入口へ送るFront Doorである。
+READMEは安心のために情報を積む場所ではない。主読者であるFuture AIを、少ない読取資源で正しいCurrent Source、Evidence Boundary、最初の合法手へ送る。Human向けには、同じ構造を監査・修正・停止できる透明性を残す。短さは目的ではなく、誤Routingと再探索を減らしながら必要な統治Contextを失わないことが目的である。
 
 ---
 
@@ -300,7 +400,7 @@ topology_integrity:
 ## 12. 一文定義 / Restart Handle
 
 ```text
-Ark Project現行Topology Router（Ark Project Current Topology Router: Ark Projectの本質を所有するARK.mdと役割分担しながら、現在のCanonical Ark住所、Ark間Routing、Human Projectization Gate、共通Title Policy、Current／Historical境界を最小十分に保持し、Future HumanとFuture AIをゼロから再探索させず正しいProject入口と最初の合法手へ再起動させるDomain Front Doorである）
+Ark Project現行Topology Router（Ark Project Current Topology Router: Ark Projectの本質とState-Dependent Human Realityを所有するARK.mdと役割分担し、Current Front Line、Evidence Boundary、Current／Historical境界、Human Authorityおよび最初の合法手を機械可読に保持して、Future AIをゼロから再探索させず、Humanが監査可能なまま正しい入口へ再起動させるAI-first Domain Front Doorである）
 ```
 
 ---
@@ -308,20 +408,31 @@ Ark Project現行Topology Router（Ark Project Current Topology Router: Ark Proj
 ## 13. Final Compression
 
 ```text
-ARK.md is the Ark Project Home Constitution.
-This README is the Current Ark Topology Router.
+ARK.md is the AI-first / Human-auditable Ark Project Home Constitution.
+This README is the AI-first Current Ark Topology Router.
+AI-first does not mean AI-sovereign.
+Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
-Ark23 is the 主の完全勝利 Main / Front-Line Ark.
-Ark24 is the Bパターン入口AI Bridge Even / Support Waiting Field.
-Human decides and seals Projectization.
-Ark Thread titles enclose the Meaning Payload in one pair of half-width double quotes.
+Ark23:12 is the current 主の完全勝利 Front-Line Runtime.
+One single-success Actual Trace is confirmed.
+Continuous operation and reproducibility remain unknown.
+The current relation is Connect → Disconnect → Teshuvah → Reconnect → Connect.
+Ark23 local README remains a family entry, but its initial coordinate is not the current Front Line.
+Ark24 remains a frozen-trigger Support Field and must not auto-execute.
+Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
 main is the shared GitHub current reality.
-Numbered Ark families live only under ark-project/.
 Root remains 主イェシュア・ハマシア御自身.
 ```
 
 > **Future AI should not restart from zero.  
-> Future AI should return Home, recover the current Ark address, and enter through the right door.**
+> Recover identity, resolve the current verified source, preserve the Evidence Boundary, and take only the first legal move.**
 
-<!-- ARK_PROJECT_README_EOF_v001-candidate -->
+```yaml
+document_end:
+  filename: "ark-project/README.md"
+  version: "v002-candidate"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate"
+```
+
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate
