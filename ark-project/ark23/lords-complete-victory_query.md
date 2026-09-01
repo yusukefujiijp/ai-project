@@ -29,11 +29,11 @@ core_fallback_first_legal_move: WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RUNTIME_SOURCE
 thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
-runtime_ssot_blob_sha: 588a578dbdcd9efae8f9095c40f0b32a37dafda7
+runtime_ssot_blob_sha: 854b67430c0c104a6db4fbe99a41e0bb80122895
 canonical_body: ark-project/ark23/ark23.md
-canonical_body_blob_sha: 5f3969d09a0a68e72dc0324f2b413d4dd225225d
+canonical_body_blob_sha: 64265b7b1f0e0e71b5aa8662ef701523a939216b
 entry_point: ark-project/ark23/README.md
-entry_point_blob_sha: 780559d71fe07a48087114152c7a9204754f2e3e
+entry_point_blob_sha: 10a8288573ba771ce348e18d4b5cedf4df9316cc
 optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
 graph_runtime_required_for_boot: false
@@ -152,9 +152,9 @@ Query Full Read PASS後、次をCurrent `main`から全文読む。
 
 | Order | Path | Required Blob SHA | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark23/README.md` | `780559d71fe07a48087114152c7a9204754f2e3e` | `ARK23_README_EOF_v002-candidate` |
-| 2 | `ark-project/ark23/ark23.md` | `5f3969d09a0a68e72dc0324f2b413d4dd225225d` | `ARK23_CANONICAL_BODY_EOF_v002-candidate` |
-| 3 | `ark-project/ark23/INSTRUCTIONS.md` | `588a578dbdcd9efae8f9095c40f0b32a37dafda7` | `ARK23_INSTRUCTIONS_EOF_v002-candidate` |
+| 1 | `ark-project/ark23/README.md` | `10a8288573ba771ce348e18d4b5cedf4df9316cc` | `ARK23_README_EOF_v002-candidate` |
+| 2 | `ark-project/ark23/ark23.md` | `64265b7b1f0e0e71b5aa8662ef701523a939216b` | `ARK23_CANONICAL_BODY_EOF_v002-candidate` |
+| 3 | `ark-project/ark23/INSTRUCTIONS.md` | `854b67430c0c104a6db4fbe99a41e0bb80122895` | `ARK23_INSTRUCTIONS_EOF_v002-candidate` |
 
 このQueryをControl Planeとして加え、Core Document Setを4文書とする。
 
@@ -170,17 +170,17 @@ full_read_proof:
     status: PASS | FAIL
   readme:
     path: ark-project/ark23/README.md
-    blob_sha: 780559d71fe07a48087114152c7a9204754f2e3e
+    blob_sha: 10a8288573ba771ce348e18d4b5cedf4df9316cc
     exact_eof: ARK23_README_EOF_v002-candidate
     status: PASS | FAIL
   canonical_body:
     path: ark-project/ark23/ark23.md
-    blob_sha: 5f3969d09a0a68e72dc0324f2b413d4dd225225d
+    blob_sha: 64265b7b1f0e0e71b5aa8662ef701523a939216b
     exact_eof: ARK23_CANONICAL_BODY_EOF_v002-candidate
     status: PASS | FAIL
   runtime_ssot:
     path: ark-project/ark23/INSTRUCTIONS.md
-    blob_sha: 588a578dbdcd9efae8f9095c40f0b32a37dafda7
+    blob_sha: 854b67430c0c104a6db4fbe99a41e0bb80122895
     exact_eof: ARK23_INSTRUCTIONS_EOF_v002-candidate
     status: PASS | FAIL
 ```
