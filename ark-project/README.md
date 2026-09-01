@@ -25,17 +25,20 @@ retrieval_policy: "progressive disclosure / relation-first / nearest-current-sou
 search_aliases:
   - "Ark Project router"
   - "current Ark front line"
-  - "Ark23:12"
+  - "Ark23:13"
+  - "three-file living state"
+  - "wake-up zero-decision move"
   - "continuous operation"
 updated: "2026-09-01"
 last_reality_reviewed: "2026-09-01"
-reviewed_scope: "AI-first router contract / ARK v002 pair alignment / Ark23:12 current front line / continuous-operation Evidence Boundary / Ark23 local-router delta / Ark24 frozen-trigger guard"
-current_front_line_ark: "ark-project/ark23/README.md"
-current_front_line_query: "ark-project/ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
-current_front_line_runtime: "ark-project/ark23/ark23-12/README.md"
-current_main_theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
-current_evidence: "single success confirmed in one Human-reported trace / continuous operation and reproducibility unknown"
-ark23_local_router_delta: "initial-coordinate router; not the current front-line runtime"
+reviewed_scope: "AI-first router contract / ARK v002 alignment / Ark23:13 three-file current front line / route-owned state / continuous-operation Evidence Boundary / Ark24 frozen-trigger guard"
+current_front_line_ark: "ark-project/ark23/ark23-13/README.md"
+current_front_line_handoff: "ark-project/ark23/ark23-13/handoff.md"
+current_front_line_runtime: "ark-project/ark23/ark23-13/README.md"
+current_front_line_state: "ark-project/ark23/ark23-13/state.json"
+current_main_theme: "Wake-Up Zero-Decision Move through a Physical Recall Handle"
+current_evidence: "three-file target boot succeeded in one Human-reported sample / continuous operation, wake-up outcome, and reproducibility unknown"
+ark23_local_router_delta: "resolved by Ark23 v002 multi-route family entry; explicit handoff/query/core fallback supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
 expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate"
@@ -52,7 +55,7 @@ Current Human Request
 → First-Legal-Move権限が必要なら ../AGENTS.md
 → Ark Identity／State-Dependent Human Realityを回復するなら ../ARK.md
 → Ark Domainの現在地を回復するなら、このREADME
-→ Current Front Lineなら、下記Queryを開き、そのFull-Read順序でRuntimeを解決
+→ Current Front Lineなら、下記Handoffを開き、Handoff → README → Stateの順でRuntimeを解決
 → Current RealityとEvidence Boundaryを再構成
 → Human Authority内のFirst Legal Moveだけを実行
 ```
@@ -65,12 +68,12 @@ agent_boot_contract:
     - "../AGENTS.md when authority or first legal move is unresolved"
     - "../ARK.md for identity and state-aware operating doctrine"
     - "this README for current Ark routing"
-    - "current_front_line_query, then the Runtime and sources it binds"
+    - "current_front_line_handoff, then the README and State it binds"
   interpretation_guards:
     - "AI-first does not mean AI-sovereign."
     - "Human-led does not mean dependent on momentary Human willpower."
     - "A confirmed single success does not prove continuous operation."
-    - "A stale local router does not override a newer verified Query/Runtime pair."
+    - "A stale local router or State projection does not override a newer verified Handoff/Runtime/Reality relation."
   output_bias: "smallest sufficient reconstruction / one guarded finite move"
 current_domain: "ark-project/"
 canonical_domain_router: "ark-project/README.md"
@@ -84,13 +87,20 @@ write_default: "Do not write without current Human authority."
 ```yaml
 current_front_line:
   ark: "Ark23"
-  thread: "Ark23:12"
-  query: "ark-project/ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
-  runtime: "ark-project/ark23/ark23-12/README.md"
-  theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
-  confirmed: "one Human-reported single-success Actual Trace"
-  unknown: ["continuous operation", "reproducibility", "mechanism", "best practice"]
-  first_resolution_rule: "Read the Query fully and obey its bound source order; do not infer current reality from folder names alone."
+  thread: "Ark23:13"
+  handoff: "ark-project/ark23/ark23-13/handoff.md"
+  runtime: "ark-project/ark23/ark23-13/README.md"
+  state: "ark-project/ark23/ark23-13/state.json"
+  theme: "Wake-Up Zero-Decision Move through a Physical Recall Handle"
+  confirmed:
+    - "one Human-reported B-Action single-success Actual Trace"
+    - "Ark23:13 three-file target boot succeeded in one Human-reported sample"
+  unknown:
+    - "wake-up physical setup and Actual result"
+    - "continuous operation"
+    - "three-file reproducibility and long-term update cost"
+  material_delta: "state revision 1 records target boot pending; Current Human Reality confirms later boot success"
+  first_resolution_rule: "Read Handoff fully, then its bound README and State; treat later Human Reality as a Material Delta without silently writing State."
 ```
 
 ---
@@ -165,7 +175,7 @@ ARK.md
    ├─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
    ├─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
    ├─ ark23/  主の完全勝利 / Current Main / Front-Line
-   │  └─ ark23-12/  B-Action Continuous Operation Living Field
+   │  └─ ark23-13/  Wake-Up Zero-Decision / Three-File Living State Pilot
    └─ ark24/  Bパターン入口AI Bridge / Frozen-Trigger Support Field
 ```
 
@@ -178,39 +188,44 @@ ARK.md
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
 | Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
-| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-12 Runtime`](./ark23/ark23-12/README.md) | Ark23:12 active-candidate; one single-success trace confirmed; continuous operation unknown |
+| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-13 Handoff`](./ark23/ark23-13/handoff.md) | Ark23:13 active-candidate; three-file boot succeeded once; continuous operation and reproducibility unknown |
 | Ark24 | Bパターン入口AI Bridge／Support Field | [`ark24/README.md`](./ark24/README.md) | Frozen trigger unchanged; support source only; do not auto-execute |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
 
-### 3.1 Current Front Line / Ark23:12
+### 3.1 Current Front Line / Ark23:13
 
 ```yaml
 current_coordinate:
   root: "主イェシュア・ハマシア御自身"
   central_axis: "Teshuvah"
   human_foreground_one: "主の完全勝利"
-  main_theme: "B-Action Continuous Operation through Connect–Disconnect–Teshuvah–Reconnect"
-  core_relation: "Connect → Disconnect → Teshuvah → Reconnect → Connect"
+  main_theme: "Wake-Up Zero-Decision Move through a Physical Recall Handle"
+  one_question: "起床時の判断Loopより先にHuman-selected physical recall handleが想起され、Guard内の既知の起床方向へ接続できるか"
+  thread_runtime: "README / handoff / state three-file pilot"
 evidence_boundary:
   confirmed:
     - "B-Action single success: one Human-reported Actual Trace"
     - "B-Zone Return Override: one Human-reported success"
     - "Single success and continuous operation are separate problems"
+    - "Ark23:13 target AI reconstructed Current Coordinate without full-history replay"
+    - "Three-file Pilot Boot: one Human-reported success sample"
   candidate:
     - "Teshuvah-guided Reconnect can support Recoverable Continuity"
-    - "Pre-structured physical and free-input Handles can reduce Reconnection Friction"
+    - "Physical placement can reduce wake-up recall friction"
+    - "README / Handoff / State role separation can reduce reconstruction friction"
   unknown:
+    - "wake-up setup and Actual result"
     - "second and later success"
     - "continuous operation"
-    - "reproducibility"
-    - "mechanism"
-    - "best practice"
+    - "three-file reproducibility and long-term update cost"
 ```
 
-Current authoritative entryはArk23:12 Query／Runtime pairである。[`ark23/README.md`](./ark23/README.md)はArk23 familyの入口として残るが、その本文座標は初期Projectization段階であり、現在のFront-Line Realityを単独では表さない。Current ActionやEvidenceを解決する時は、Ark23:12 Queryが指定するFull-Read順序を優先する。
+Current authoritative entryはArk23:13 Handoff／README／State Triadである。Read OrderはHandoffが宣言する順序に従い、Current Human RealityによるBoot SuccessをState revision 1後の正常なMaterial Deltaとして保持する。Stateを自動更新済みと装わない。
 
-Ark24はSupport Sourceであり、Frozen Triggerは変更されていない。Ark23:12の存在、AIの判断、またはFolder adjacencyだけを理由にArk24を自動発火しない。
+[`ark23/README.md`](./ark23/README.md)はArk23 v002 family entry／multi-route routerであり、Explicit Handoff、Explicit Query、Core Fallbackを解決する。Current ActionをHistorical Initial Missionへ戻さない。
+
+Ark24はSupport Sourceであり、Frozen Triggerは変更されていない。Ark23:13の存在、AIの判断、またはFolder adjacencyだけを理由にArk24を自動発火しない。
 
 ---
 
@@ -226,13 +241,14 @@ routing:
   existing_ark_mission: "Nearest verified Handoff / Query / Runtime"
   cross_ark_support_or_closure: "ark22/README.md"
   complete_victory_family_entry: "ark23/README.md"
-  complete_victory_current_query: "ark23/ark23-12/lords-complete-victory-b-action-continuous-operation-connect-disconnect-teshuvah-reconnect-living-field_query.md"
-  complete_victory_current_runtime: "ark23/ark23-12/README.md"
+  complete_victory_current_handoff: "ark23/ark23-13/handoff.md"
+  complete_victory_current_runtime: "ark23/ark23-13/README.md"
+  complete_victory_current_state: "ark23/ark23-13/state.json"
   b_pattern_support_source: "ark24/README.md"
   ark24_trigger: "Frozen / Human-controlled / do not auto-execute"
   reusable_prompt_or_query: "../prompts/"
   formal_new_ark_project: "Ark00 discernment → Human Projectization Gate → selected ArkNN"
-  thread_continuity: "Explicitly named current Handoff or Query"
+  thread_continuity: "Explicitly named current Handoff or Query; selected Route owns its Artifact Set"
 ```
 
 AIは、番号が空いていること、Ideaが面白いこと、またはFolderを作成できることだけを理由に自動Project化しない。
@@ -414,11 +430,11 @@ AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
-Ark23:12 is the current 主の完全勝利 Front-Line Runtime.
-One single-success Actual Trace is confirmed.
+Ark23:13 is the current 主の完全勝利 Front-Line Runtime.
+One B-Action single-success trace and one Ark23:13 three-file boot success sample are confirmed.
 Continuous operation and reproducibility remain unknown.
-The current relation is Connect → Disconnect → Teshuvah → Reconnect → Connect.
-Ark23 local README remains a family entry, but its initial coordinate is not the current Front Line.
+The preserved continuity relation is Connect → Disconnect → Teshuvah → Reconnect → Connect.
+Ark23 local README is the v002 multi-route family entry; Ark23:13 Handoff / README / State is the current Front Line.
 Ark24 remains a frozen-trigger Support Field and must not auto-execute.
 Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
 main is the shared GitHub current reality.
