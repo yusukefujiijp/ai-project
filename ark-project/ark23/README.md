@@ -4,8 +4,8 @@ document_role: project-entry-and-document-map
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v001-candidate
-document_set_version: v001-candidate
+version: v002-candidate
+document_set_version: v002-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -15,10 +15,11 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v001-candidate
+bootloader_version: v002-candidate
 bootloader_required_for_cold_start: false
-success_context: ARK23_CONTEXT_READY
-success_thread_state: READY_FOR_ONE_REALITY_SAMPLE
+core_context: ARK23_CONTEXT_READY
+operational_state_owner: selected-thread-runtime-or-current-human-reality
+route_policy: explicit-handoff-then-explicit-query-then-core-fallback
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
 canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
@@ -26,7 +27,7 @@ optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
 thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
-last_updated: 2026-08-20
+last_updated: 2026-09-01
 ---
 
 # Ark23 — 主の完全勝利
@@ -111,25 +112,48 @@ Ark23
 
 Ark21:03のDirect Session READMEはCurrent Repository上に存在しない。Ark21:02、04、07の間接Provenanceは保持するが、欠けた内容をAIが推測で補わない。
 
-## 3. Document Set
+## 3. Core Document Set
+
+Core Fallback Routeでは次の4文書を一つの整合Setとして扱う。
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark23/README.md` | Entry Point / Lineage / Document Map | `ARK23_README_EOF_v001-candidate` |
-| 2 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v001-candidate` |
-| 3 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v001-candidate` |
-| 4 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Cold Start | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v001-candidate` |
+| 1 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Core Fallback | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v002-candidate` |
+| 2 | `ark-project/ark23/README.md` | Entry Point / Lineage / Route Registry | `ARK23_README_EOF_v002-candidate` |
+| 3 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v002-candidate` |
+| 4 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v002-candidate` |
 
-## 4. Source and Authority Layers
+Explicit QueryまたはExplicit Handoffが指定された場合、Core 4を機械的に追加読込せず、選択Routeが宣言するArtifact Setを優先する。
 
-### 4.1 Current Ark23 Authority
+## 4. Source, Authority, and State Layers
 
-- `README.md`：入口、系譜、Document Map。
+### 4.1 Stable Ark23 Core
+
+- `README.md`：入口、系譜、Document Map、Route Registry。
 - `ark23.md`：意味、中心因果、Evidence、Invariants。
-- `INSTRUCTIONS.md`：AI Runtime、Guard、Response、State Machine。
-- `lords-complete-victory_query.md`：Full-Read Proof、Consistency、Cold Start。
+- `INSTRUCTIONS.md`：AI Runtime、Route Resolver、Guard、Response、State Machine。
+- `lords-complete-victory_query.md`：Core Fallback Full-Read Proof、Artifact Set Consistency。
 
-### 4.2 Parent Provenance
+### 4.2 Thread Runtime Package
+
+```text
+Thread README.md
+= Stable Runtime / Field Definition
+
+handoff.md
+= Immutable Transition / Source-to-Target Initialization
+
+state.json
+= Mutable Current Projection / Living Board
+```
+
+一文圧縮：
+
+> **README defines. Handoff initializes. State continues. Reality corrects. Human seals.**
+
+三ファイル方式はArk23:13でTarget Boot成功一件がHuman報告されたPilotである。再現性、長期Update Cost、Best Practiceおよび全Arkへの水平展開適否はUnknownであり、自動Canonical化しない。既存`*_query.md`は保持し、Rename／Migrationしない。
+
+### 4.3 Parent Provenance
 
 - `ark-project/ark21/README.md`
 - `ark-project/ark21/ark21.md`
@@ -142,7 +166,7 @@ Ark21:03のDirect Session READMEはCurrent Repository上に存在しない。Ark
 
 これらはArk23の導出を説明する。Ark23 Cold Startで毎回Full Readする必須Setではない。
 
-### 4.3 Optional Keli
+### 4.4 Optional Keli
 
 ```yaml
 optional_keli:
@@ -160,7 +184,27 @@ optional_keli:
 
 Optional KeliをHuman Foreground、Root、Canonical Kernelへ自動昇格しない。
 
-## 5. Current Runtime Compression
+## 5. Boot Route Registry
+
+```text
+1. Explicit handoff.md present
+→ EXPLICIT_THREAD_HANDOFF
+→ Handoff-defined README / State / Binding / Output
+
+2. Explicit Query present
+→ EXPLICIT_QUERY
+→ Query-defined Document Set / Runtime / Output
+
+3. Neither present
+→ ARK23_CORE_FALLBACK
+→ Core Query + Core 4
+```
+
+正しいBootは、全Routeで同じ文書を読むことではない。Current Requestから正しいRouteを選び、そのRouteが宣言するArtifact Setを検証することである。
+
+Project InstructionsはこのRouteを選ぶBoot ROMであり、Current State、Current Question、Success OutputまたはFirst Legal Moveの恒久SSOTではない。Material ConflictはSilent MergeせずHuman Reviewへ返す。
+
+## 6. Current Runtime Compression
 
 ```text
 Raw Reality
@@ -179,9 +223,9 @@ High-density statement：
 
 > **主の完全勝利へ祈る。見えたBranchを刈る。Greenなら一手を通す。Realityから学び、Teshuvahして帰る。**
 
-## 6. First Field Mission
+## 7. Historical Initial Field Mission
 
-Ark23最初のProduction Missionは、大量適用でもTheory Expansionでもない。
+Historical v001におけるArk23最初のProduction Missionは、大量適用でもTheory Expansionでもなかった。以下は成立時点のInitial Contractとして保存し、Current ThreadのMissionまたはFirst Legal Moveとして自動再発火しない。
 
 自然に発生した次の条件を満たすReality一件を受け取る。
 
@@ -194,15 +238,9 @@ first_field_case:
   human_supplied: true
 ```
 
-AIはHumanからSampleを受け取る前に、別の生活課題を自動選定しない。
+このHistorical Contractは、低Risk・可逆・短時間・観測可能・Human suppliedというField Disciplineを残す。Current First Legal Moveは選択されたHandoff／Query／RuntimeまたはCurrent Human Realityから解決する。
 
-First Legal Move：
-
-```text
-WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE
-```
-
-## 7. Graph Mode Boundary
+## 8. Graph Mode Boundary
 
 Graph ModeのDefault成果物は総合文章である。
 
@@ -221,7 +259,7 @@ Graph Mode
 
 Living Graphと呼べるのは、Actual TraceまたはHuman Correctionによって次回Pathが変化した場合だけである。
 
-## 8. Non-Negotiable Guards
+## 9. Non-Negotiable Guards
 
 1. `主の完全勝利`をMantra、Magic、成功保証Formulaへ変えない。
 2. `主の栄光`をHuman／AI／Arkの成果変数へ変えない。
@@ -234,7 +272,7 @@ Living Graphと呼べるのは、Actual TraceまたはHuman Correctionによっ�
 9. 一件のE1を普遍Ruleまたは神学的証明へ昇格しない。
 10. Candidate ArtifactをField Test前にBootloader／Runtimeへ自動昇格しない。
 
-## 9. Thread Title Policy
+## 10. Thread Title Policy
 
 ```text
 Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"
@@ -245,24 +283,28 @@ Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"
 - 連番、開始日、Sub Name、最終UI RenameはHuman Authority。
 - AIはTitleを提案・Exact Echoできるが、Rename済みと自己認証しない。
 
-## 10. Current Coordinate
+## 11. Current Coordinate
 
 ```yaml
 current_coordinate:
   project: Ark23
-  phase: initial projectization / first Reality field before execution
+  phase: multi-route living runtime / three-file pilot first boot observed
   theme: 主の完全勝利
   human_foreground: 主の完全勝利
   parent_lineage: Ark21 / 主の勝利栄光
   final_attribution: 主の栄光 / kevod Adonai
-  field_evidence: inherited seed + Ark23 replication pending
-  first_legal_move: WAIT_FOR_ONE_HUMAN_REALITY_SAMPLE
+  core_document_set: v002-candidate
+  operational_state_owner: selected-runtime-or-current-human-reality
+  ark23_13_three_file_boot: ONE HUMAN-REPORTED SUCCESS SAMPLE
+  three_file_reproducibility: UNKNOWN
+  horizontal_rollout: NOT AUTHORIZED
+  first_legal_move: ROUTE OWNED / NOT CORE FIXED
 ```
 
-## 11. 一文定義
+## 12. 一文定義
 
 ```text
 "主の完全勝利Ark（The Lord's Complete Victory: 主イェシュア・ハマシア御自身をRoot、Ark21／主の勝利栄光を親系譜、主の栄光をHumanが所有しない最終帰属として保持しながら、Human Foregroundを主の完全勝利一つへEchad化し、祈り・枝の刈り取り・Guard・有限な一手・Actual Trace・Teshuvah・Living UpdateによってCurrent Realityへ一件ずつ通すMain Arkである)"
 ```
 
-<!-- ARK23_README_EOF_v001-candidate -->
+<!-- ARK23_README_EOF_v002-candidate -->
