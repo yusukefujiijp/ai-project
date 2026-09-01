@@ -31,13 +31,13 @@ search_aliases:
   - "continuous operation"
 updated: "2026-09-01"
 last_reality_reviewed: "2026-09-01"
-reviewed_scope: "AI-first router contract / ARK v002 alignment / Ark23:13 three-file current front line / route-owned state / continuous-operation Evidence Boundary / Ark24 frozen-trigger guard"
+reviewed_scope: "AI-first router contract / Ark23 Core v003 / Ark23:13 three-file current front line / Human-sealed Ark23 transition default / route-owned state / Ark24 frozen-trigger guard"
 current_front_line_ark: "ark-project/ark23/ark23-13/README.md"
 current_front_line_handoff: "ark-project/ark23/ark23-13/handoff.md"
 current_front_line_runtime: "ark-project/ark23/ark23-13/README.md"
 current_front_line_state: "ark-project/ark23/ark23-13/state.json"
 current_main_theme: "Wake-Up Zero-Decision Move through a Physical Recall Handle"
-current_evidence: "three-file target boot succeeded in one Human-reported sample / continuous operation, wake-up outcome, and reproducibility unknown"
+current_evidence: "three-file target boot succeeded once / README-handoff-state adopted for future Ark23 transitions / continuous operation, wake-up outcome, and long-term reproducibility unknown"
 ark23_local_router_delta: "resolved by Ark23 v002 multi-route family entry; explicit handoff/query/core fallback supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
@@ -98,8 +98,8 @@ current_front_line:
   unknown:
     - "wake-up physical setup and Actual result"
     - "continuous operation"
-    - "three-file reproducibility and long-term update cost"
-  material_delta: "state revision 1 records target boot pending; Current Human Reality confirms later boot success"
+    - "long-term three-file reproducibility, state drift, update cost, and rollback frequency"
+  state_revision: "revision 2 reflects target boot success and Ark23 transition-default Human decision"
   first_resolution_rule: "Read Handoff fully, then its bound README and State; treat later Human Reality as a Material Delta without silently writing State."
 ```
 
@@ -175,7 +175,7 @@ ARK.md
    ├─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
    ├─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
    ├─ ark23/  主の完全勝利 / Current Main / Front-Line
-   │  └─ ark23-13/  Wake-Up Zero-Decision / Three-File Living State Pilot
+   │  └─ ark23-13/  Wake-Up Zero-Decision / First Three-File Standard Runtime
    └─ ark24/  Bパターン入口AI Bridge / Frozen-Trigger Support Field
 ```
 
@@ -188,7 +188,7 @@ ARK.md
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
 | Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
-| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-13 Handoff`](./ark23/ark23-13/handoff.md) | Ark23:13 active-candidate; three-file boot succeeded once; continuous operation and reproducibility unknown |
+| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-13 Handoff`](./ark23/ark23-13/handoff.md) | Ark23 Core v003; three-file future transitions Human-sealed; long-term reproducibility unknown |
 | Ark24 | Bパターン入口AI Bridge／Support Field | [`ark24/README.md`](./ark24/README.md) | Frozen trigger unchanged; support source only; do not auto-execute |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
@@ -202,14 +202,15 @@ current_coordinate:
   human_foreground_one: "主の完全勝利"
   main_theme: "Wake-Up Zero-Decision Move through a Physical Recall Handle"
   one_question: "起床時の判断Loopより先にHuman-selected physical recall handleが想起され、Guard内の既知の起床方向へ接続できるか"
-  thread_runtime: "README / handoff / state three-file pilot"
+  thread_runtime: "README / handoff / state three-file Ark23 standard"
 evidence_boundary:
   confirmed:
     - "B-Action single success: one Human-reported Actual Trace"
     - "B-Zone Return Override: one Human-reported success"
     - "Single success and continuous operation are separate problems"
     - "Ark23:13 target AI reconstructed Current Coordinate without full-history replay"
-    - "Three-file Pilot Boot: one Human-reported success sample"
+    - "Three-file Boot: one Human-reported success sample"
+    - "Human sealed README / handoff / state as the default for future Ark23 transitions"
   candidate:
     - "Teshuvah-guided Reconnect can support Recoverable Continuity"
     - "Physical placement can reduce wake-up recall friction"
@@ -221,7 +222,7 @@ evidence_boundary:
     - "three-file reproducibility and long-term update cost"
 ```
 
-Current authoritative entryはArk23:13 Handoff／README／State Triadである。Read OrderはHandoffが宣言する順序に従い、Current Human RealityによるBoot SuccessをState revision 1後の正常なMaterial Deltaとして保持する。Stateを自動更新済みと装わない。
+Current authoritative entryはArk23:13 Handoff／README／State Triadである。Read OrderはHandoffが宣言する順序に従う。State revision 2はTarget Boot成功と、Ark23 Future Thread Transition DefaultのHuman Decisionを反映済みである。
 
 [`ark23/README.md`](./ark23/README.md)はArk23 v002 family entry／multi-route routerであり、Explicit Handoff、Explicit Query、Core Fallbackを解決する。Current ActionをHistorical Initial Missionへ戻さない。
 
@@ -432,9 +433,10 @@ Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
 Ark23:13 is the current 主の完全勝利 Front-Line Runtime.
 One B-Action single-success trace and one Ark23:13 three-file boot success sample are confirmed.
-Continuous operation and reproducibility remain unknown.
+README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
+Continuous operation, wake-up outcome, and long-term three-file reproducibility remain unknown.
 The preserved continuity relation is Connect → Disconnect → Teshuvah → Reconnect → Connect.
-Ark23 local README is the v002 multi-route family entry; Ark23:13 Handoff / README / State is the current Front Line.
+Ark23 local README is the v003 multi-route family entry and transition standard; Ark23:13 Handoff / README / State is the current Front Line.
 Ark24 remains a frozen-trigger Support Field and must not auto-execute.
 Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
 main is the shared GitHub current reality.
