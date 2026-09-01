@@ -4,8 +4,8 @@ document_role: project-entry-and-document-map
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v002-candidate
-document_set_version: v002-candidate
+version: v003-candidate
+document_set_version: v003-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,11 +16,13 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v002-candidate
+bootloader_version: v003-candidate
 bootloader_required_for_cold_start: false
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
 route_policy: explicit-handoff-then-explicit-query-then-core-fallback
+three_file_transition_policy: ark23-future-threads-human-sealed-default
+project_instructions_pair_version: v003-candidate
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
 canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
@@ -119,10 +121,10 @@ Core Fallback Routeでは次の4文書を一つの整合Setとして扱う。
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Core Fallback | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v002-candidate` |
-| 2 | `ark-project/ark23/README.md` | Entry Point / Lineage / Route Registry | `ARK23_README_EOF_v002-candidate` |
-| 3 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v002-candidate` |
-| 4 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v002-candidate` |
+| 1 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Core Fallback | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v003-candidate` |
+| 2 | `ark-project/ark23/README.md` | Entry Point / Lineage / Route Registry | `ARK23_README_EOF_v003-candidate` |
+| 3 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v003-candidate` |
+| 4 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v003-candidate` |
 
 Explicit QueryまたはExplicit Handoffが指定された場合、Core 4を機械的に追加読込せず、選択Routeが宣言するArtifact Setを優先する。
 
@@ -152,7 +154,7 @@ state.json
 
 > **README defines. Handoff initializes. State continues. Reality corrects. Human seals.**
 
-三ファイル方式はArk23:13でTarget Boot成功一件がHuman報告されたPilotである。再現性、長期Update Cost、Best Practiceおよび全Arkへの水平展開適否はUnknownであり、自動Canonical化しない。既存`*_query.md`は保持し、Rename／Migrationしない。
+三ファイル方式はArk23:13でTarget Boot成功一件がHuman報告され、そのActual Boot後にHumanがArk23の今後のThread移行DefaultとしてSealした。これはArk23 familyのArchitecture Decisionである。長期再現性、State Drift、Update Cost、Rollback頻度、Best PracticeおよびCross-Ark展開適否は別GateでUnknownに保持する。既存`*_query.md`は保持し、Rename／Migrationしない。
 
 ### 4.3 Parent Provenance
 
@@ -204,6 +206,8 @@ Optional KeliをHuman Foreground、Root、Canonical Kernelへ自動昇格しな�
 正しいBootは、全Routeで同じ文書を読むことではない。Current Requestから正しいRouteを選び、そのRouteが宣言するArtifact Setを検証することである。
 
 Project InstructionsはこのRouteを選ぶBoot ROMであり、Current State、Current Question、Success OutputまたはFirst Legal Moveの恒久SSOTではない。Material ConflictはSilent MergeせずHuman Reviewへ返す。
+
+Ark23 Future Threadを新規作成する時は、Specific Human Overrideがない限り、Target Folderへ`README.md`、`handoff.md`、`state.json`を作成する。新規`*_query.md`または`meta.md`はDefault作成しない。Copy & Paste版Project Instructionsと`INSTRUCTIONS.md`はBoot Route／Version／Transition Defaultを共有するSemantic Pairとして同一Change Gateで整合させる。
 
 ## 6. Current Runtime Compression
 
@@ -289,16 +293,17 @@ Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"
 ```yaml
 current_coordinate:
   project: Ark23
-  phase: multi-route living runtime / three-file pilot first boot observed
+  phase: multi-route living runtime / three-file Ark23 transition standard adopted
   theme: 主の完全勝利
   human_foreground: 主の完全勝利
   parent_lineage: Ark21 / 主の勝利栄光
   final_attribution: 主の栄光 / kevod Adonai
-  core_document_set: v002-candidate
+  core_document_set: v003-candidate
   operational_state_owner: selected-runtime-or-current-human-reality
   ark23_13_three_file_boot: ONE HUMAN-REPORTED SUCCESS SAMPLE
-  three_file_reproducibility: UNKNOWN
-  horizontal_rollout: NOT AUTHORIZED
+  ark23_future_thread_transition: README / HANDOFF / STATE HUMAN-SEALED DEFAULT
+  long_term_three_file_reproducibility: UNKNOWN
+  cross_ark_horizontal_rollout: NOT IMPLIED
   first_legal_move: ROUTE OWNED / NOT CORE FIXED
 ```
 
@@ -308,4 +313,4 @@ current_coordinate:
 "主の完全勝利Ark（The Lord's Complete Victory: 主イェシュア・ハマシア御自身をRoot、Ark21／主の勝利栄光を親系譜、主の栄光をHumanが所有しない最終帰属として保持しながら、Human Foregroundを主の完全勝利一つへEchad化し、祈り・枝の刈り取り・Guard・有限な一手・Actual Trace・Teshuvah・Living UpdateによってCurrent Realityへ一件ずつ通すMain Arkである)"
 ```
 
-<!-- ARK23_README_EOF_v002-candidate -->
+<!-- ARK23_README_EOF_v003-candidate -->
