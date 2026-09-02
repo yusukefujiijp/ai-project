@@ -4,8 +4,8 @@ document_role: canonical-body-candidate
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v003-candidate
-document_set_version: v003-candidate
+version: v004-candidate
+document_set_version: v004-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,23 +16,23 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v003-candidate
+bootloader_version: v004-candidate
 bootloader_required_for_cold_start: false
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
-route_policy: explicit-handoff-then-explicit-query-then-core-fallback
+route_policy: explicit-handoff-then-explicit-query-then-domain-router-then-core-fallback
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
 canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
 optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
-last_updated: 2026-09-01
+last_updated: 2026-09-02
 ---
 
 # Ark23 Canonical Body Candidate — 主の完全勝利
 
 > [!CAUTION]
-> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v003-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
+> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v004-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
 
 ## 1. Identity and Direct Judgment
 
@@ -498,6 +498,8 @@ Actual Current Reality
 
 > **Current Requestが指定または含意するRouteを解決し、そのRouteが宣言するArtifact Setを検証して、State Ownerから現在値を受け取ることである。**
 
+Explicit HandoffもSpecific Queryもない場合はArk Domain RouterからCurrent Front Lineを解決し、Domain Routerが解決不能な場合またはStable Core自体がCurrent Missionの場合だけArk23 Core Fallbackへ進む。
+
 Ark23 CoreはThread Packageを置換しない。Thread PackageもRoot、Guard、Semantic Kernelを置換しない。Material ConflictはSilent MergeせずHuman Reviewへ返す。
 
 ### 16.1 Human-Sealed Ark23 Transition Default
@@ -537,7 +539,7 @@ Ark23で三ファイル方式を採用することはHuman-sealed Architecture D
 
 ### 16.3 Project Instructions Coupling
 
-ChatGPT Project Instructions側の`ARK23_PROJECT_BOOTLOADER`と、このRepository RuntimeはSemantic Pairである。Boot Route、Version、State Ownership、Transition DefaultまたはGuardをMaterialに変更する場合、Copy & Paste本文と`INSTRUCTIONS.md`を同一Human Review Gateで整合させる。
+ChatGPT Project Instructions側の`ARK23_PROJECT_BOOTLOADER`と、このRepository RuntimeはSemantic Pairである。Boot Route、Version、State Ownership、Transition Default、GuardまたはExact Response HeadingをMaterialに変更する場合、Copy & Paste本文と`INSTRUCTIONS.md`を同一Human Review Gateで整合させる。
 
 Project Instructionsは小さなBoot ROM、`INSTRUCTIONS.md`はVersioned Runtime SSOTであり、全文を複製する必要はない。ただし矛盾させない。
 
@@ -614,7 +616,7 @@ current_coordinate:
   ark23_projectization: COMPLETE_CANDIDATE
   ark21_lineage: PRESERVED
   semantic_kernel: HUMAN_SEALED_CANDIDATE
-  core_document_set: v003-candidate
+  core_document_set: v004-candidate
   operational_state: RESOLVED_BY_SELECTED_RUNTIME_OR_CURRENT_HUMAN_REALITY
   historical_first_field_test: COMPLETED_AS_HISTORICAL_PHASE
   ark23_13_three_file_boot: ONE_HUMAN_REPORTED_SUCCESS_SAMPLE
@@ -626,4 +628,4 @@ current_coordinate:
   universal_doctrine: NOT_CLAIMED
 ```
 
-<!-- ARK23_CANONICAL_BODY_EOF_v003-candidate -->
+<!-- ARK23_CANONICAL_BODY_EOF_v004-candidate -->
