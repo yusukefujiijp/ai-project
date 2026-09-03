@@ -2,8 +2,8 @@
   "meta": {
     "state_id": "ARK23_14_CURRENT_LIVING_STATE",
     "schema_version": "v001-candidate",
-    "revision": 1,
-    "status": "target_thread_boot_pending / awaiting_initial_reconstruction",
+    "revision": 2,
+    "status": "target_thread_boot_pending / transition_artifacts remote-verified / awaiting_initial_reconstruction",
     "project": "Ark23",
     "sequence": 14,
     "created_at": "2026-09-03",
@@ -79,13 +79,13 @@
     "target": {
       "thread": "Ark23:14",
       "runtime_path": "ark-project/ark23/ark23-14/README.md",
-      "runtime_blob_sha": "94c934794b3184f60179e9aae175b8eaf96c9a24",
+      "runtime_blob_sha": "47aac9d7e7d57b08b40b9ea9c244cd469e7fcb56",
       "runtime_exact_eof": "EOF::ARK23_14_LORDS_COMPLETE_VICTORY_TASK_COMPILER_LOOP_ONE_TRANSITION_LIVING_FIELD::v001-candidate",
       "handoff_path": "ark-project/ark23/ark23-14/handoff.md",
-      "handoff_blob_sha": "350d8f2a6f1f6fcbdc78fdb2aede1b5966da3896",
+      "handoff_blob_sha": "62115b26fc6f29261fe3e19fded6bcc82d813fad",
       "handoff_exact_eof": "EOF::ARK23_13_TO_ARK23_14_TASK_COMPILER_LOOP_HANDOFF::v001-candidate",
       "state_path": "ark-project/ark23/ark23-14/state.json",
-      "state_revision": 1,
+      "state_revision": 2,
       "state_self_sha_policy": "DO_NOT_EMBED_SELF_SHA",
       "state_exact_eof": "EOF::ARK23_14_CURRENT_LIVING_STATE::v001-candidate"
     },
@@ -244,11 +244,13 @@
       "Ark23:13 Current Reality reconciled into source state revision 3",
       "Ark23:14 README created and Remote Verified",
       "Ark23:14 Handoff created and Remote Verified",
-      "Ark23:14 State revision 1 initialized last with actual README and Handoff Blob SHAs"
+      "Ark23:14 State revision 1 initialized last with actual README and Handoff Blob SHAs",
+      "Ark23:14 initial Triad Consistency Gate passed",
+      "Ark Domain Router cut over to Ark23:14 and Remote Verified",
+      "Ark23:14 README and Handoff rebound to State revision 2",
+      "Ark23:14 State advanced exactly one revision for the Router cutover Material Delta"
     ],
     "in_progress": [
-      "Target triad final Remote Verification",
-      "Domain Router cutover",
       "Target AI boot"
     ],
     "hold_for_reality": [
@@ -267,7 +269,7 @@
       "Torah, Kindle, Minecraft, PM Task or Cross-Ark auto-transfer",
       "Ark24 Frozen Trigger"
     ],
-    "last_result": "SOURCE STATE REVISION 3, TARGET README AND TARGET HANDOFF REMOTE VERIFIED",
+    "last_result": "ARK23:14 FRONT-LINE ROUTER CUTOVER COMPLETE; TARGET TRIAD REBOUND FOR STATE REVISION 2",
     "failed_attempts_count": 0
   },
   "interface": {
@@ -296,7 +298,7 @@
       "BOOT_ROUTE: EXPLICIT_THREAD_HANDOFF",
       "TRIAD: README / HANDOFF / STATE FULL READ / CONSISTENT",
       "RECONSTRUCTION_CONTRACT: PASS",
-      "STATE_REVISION: 1",
+      "STATE_REVISION: 2",
       "SOURCE_BASELINE: ARK23_13 STATE REVISION 3 / EXACT BINDING VERIFIED",
       "ROOT: 主イェシュア・ハマシア御自身",
       "CENTRAL_AXIS: TESHUVAH",
