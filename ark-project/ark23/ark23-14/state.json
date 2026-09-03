@@ -1,0 +1,408 @@
+{
+  "meta": {
+    "state_id": "ARK23_14_CURRENT_LIVING_STATE",
+    "schema_version": "v001-candidate",
+    "revision": 1,
+    "status": "target_thread_boot_pending / awaiting_initial_reconstruction",
+    "project": "Ark23",
+    "sequence": 14,
+    "created_at": "2026-09-03",
+    "updated_at": "2026-09-03",
+    "timezone": "Asia/Tokyo",
+    "language_policy": "Japanese-first with precise English technical anchors",
+    "state_role": "Mutable Current Projection / Living Board",
+    "state_is_not": [
+      "Root",
+      "Throne",
+      "Oracle",
+      "Reality itself",
+      "complete history",
+      "sole SSOT"
+    ],
+    "update_policy": "Advance exactly one revision only for a Material Delta with Current GitHub Authority"
+  },
+  "identity": {
+    "compiled_thread_title": "Ark23:14_2026/09/03: \"主の完全勝利: Task Compiler Loop — One-Transition Dispatch & Event-Driven Reconnect Living Field\"",
+    "compiled_title_status": "AI-COMPILED UNDER HUMAN-SEALED TRANSITION SCOPE / HUMAN UI RENAME PENDING",
+    "theme": "主の完全勝利",
+    "english_anchor": "The Lord's Complete Victory",
+    "sub_theme": "Task Compiler Loop — One-Transition Dispatch & Event-Driven Reconnect Living Field"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利",
+    "final_attribution": "主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai",
+    "keli_boundary": "AI, Human, Thread, Protocol, Ark Project, GitHub, Graph, Task Compiler, README, Handoff, State and all Fruit are Keli, not Root, King, Throne or Oracle",
+    "human_keeps": [
+      "meaning",
+      "Faith",
+      "Prayer",
+      "Teshuvah",
+      "body reality",
+      "Current Reality correction",
+      "Interrupt",
+      "STOP",
+      "irreversible-action approval",
+      "Final Human Seal"
+    ],
+    "ai_boundary": "AI does not self-certify the Lord's will, Human faith, body or sleep state, safety, correct action, Task completion or Actual Success"
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "boot_route": "EXPLICIT_THREAD_HANDOFF",
+    "core_runtime": {
+      "path": "ark-project/ark23/INSTRUCTIONS.md",
+      "version": "v004-candidate",
+      "blob_sha": "827fdff05c11852e04e0d03d9849c200702141a0",
+      "exact_eof": "ARK23_INSTRUCTIONS_EOF_v004-candidate"
+    },
+    "family_entry": {
+      "path": "ark-project/ark23/README.md",
+      "version": "v004-candidate",
+      "blob_sha": "64b9be5415fe2d2a43a4d4678e14da77c8654d08",
+      "exact_eof": "ARK23_README_EOF_v004-candidate"
+    },
+    "source": {
+      "thread": "Ark23:13",
+      "runtime_path": "ark-project/ark23/ark23-13/README.md",
+      "runtime_blob_sha": "473f787fc1d066a0811168671a1bbcca152a9ca9",
+      "handoff_path": "ark-project/ark23/ark23-13/handoff.md",
+      "handoff_blob_sha": "9fff6e205ee701bf8f9c59339ab237e72c97891c",
+      "state_path": "ark-project/ark23/ark23-13/state.json",
+      "state_revision": 3,
+      "state_blob_sha": "67189b756521b5e1e5f83f3442dc4cb2e5f06228",
+      "golden_case_seed_path": "ark-project/ark23/ark23-13/wake-up-one-choice-golden-case-seed.md",
+      "golden_case_seed_blob_sha": "1677915d2ed43112bae69054912bc47d88e1e90d"
+    },
+    "target": {
+      "thread": "Ark23:14",
+      "runtime_path": "ark-project/ark23/ark23-14/README.md",
+      "runtime_blob_sha": "94c934794b3184f60179e9aae175b8eaf96c9a24",
+      "runtime_exact_eof": "EOF::ARK23_14_LORDS_COMPLETE_VICTORY_TASK_COMPILER_LOOP_ONE_TRANSITION_LIVING_FIELD::v001-candidate",
+      "handoff_path": "ark-project/ark23/ark23-14/handoff.md",
+      "handoff_blob_sha": "350d8f2a6f1f6fcbdc78fdb2aede1b5966da3896",
+      "handoff_exact_eof": "EOF::ARK23_13_TO_ARK23_14_TASK_COMPILER_LOOP_HANDOFF::v001-candidate",
+      "state_path": "ark-project/ark23/ark23-14/state.json",
+      "state_revision": 1,
+      "state_self_sha_policy": "DO_NOT_EMBED_SELF_SHA",
+      "state_exact_eof": "EOF::ARK23_14_CURRENT_LIVING_STATE::v001-candidate"
+    },
+    "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals"
+  },
+  "goal": {
+    "primary": "Test whether one Current Task Reality can be compiled into one guarded physical transition and connected to Actual Reality",
+    "main_theme": "Task Compiler Loop — Stateful Task Processing and One-Transition Dispatch",
+    "one_question": "一件のCurrent Task Realityを一つのGuarded physical transitionへCompileしActual Realityへ接続できるか",
+    "current_cut_edge": "Task Graph → One Human Transition",
+    "first_field_candidate": "Laundry → Machine Wait → Cleaning → Laundry Return Event",
+    "success_boundary": "Human connects to one dispatched transition without reopening the global priority field; the Actual Trace returns to Human Review",
+    "constraints": [
+      "Parallel System / Serial Human Interface",
+      "one Human Foreground Token",
+      "one guarded finite transition",
+      "no automatic Trial",
+      "no automatic artifact generation",
+      "no Canonicalization"
+    ],
+    "non_goals": [
+      "complete Task Manager",
+      "full Task inventory",
+      "global priority queue",
+      "whole-day optimization",
+      "Historical Replay",
+      "Cross-Ark rollout"
+    ]
+  },
+  "now": {
+    "current_coordinate": "Ark23:14 transition prepared / target thread boot pending",
+    "current_phase": "BOOT_WAIT",
+    "current_subtask": "Target AI full-read and Target Reconstruction Contract",
+    "next_action": "Target AI reads Handoff → README → State and returns exact success block only if all gates pass",
+    "first_legal_move_after_boot": "WAIT_FOR_ONE_CURRENT_TASK_REALITY_OR_RAW_FEEDBACK",
+    "blockers": [],
+    "open_questions": [
+      "Which one Current Task Reality or Raw Feedback will Human provide?",
+      "Can the Task Graph be compiled to one Human transition in Actual Reality?"
+    ]
+  },
+  "current_reality": {
+    "source_thread": "Ark23:13",
+    "wake_up_one_choice_actual_result": "HUMAN-REPORTED SUCCESS",
+    "morning_caffeine_gum_actual": "Human reports multiple successful passages; exact count, conditions, causal contribution, repeatability and long-term safety remain unknown",
+    "wake_up_golden_case_seed": "CREATED AND REMOTE VERIFIED / intentionally incomplete / non-canonical",
+    "outdoor_workout_one_choice": "Human-selected phase-specific dumbbell-free direction and human-reported success direction; repetition and individual causality unknown",
+    "laundry_as_first_am_task": "HUMAN-SELECTED CANDIDATE",
+    "laundry_to_cleaning_local_successor": "HUMAN-SELECTED DESIGN CANDIDATE / ACTUAL RESULT UNKNOWN",
+    "parallel_system_serial_human_interface": "CURRENT DESIGN CANDIDATE",
+    "ai_x_relation": "SUBORDINATE SUPPORT; may use Action-generated slack but must not create or extend slack",
+    "night_non_caffeine_sugarless_gum": "TWO-POD ROUTE CANDIDATE / ACTUAL RESULT UNKNOWN",
+    "task_compiler_loop": "CURRENT MISSION / DESIGN CANDIDATE",
+    "task_runtime_actual_result": "UNKNOWN",
+    "continuous_operation": "UNKNOWN",
+    "reproducibility": "UNKNOWN",
+    "best_practice": "NOT ESTABLISHED",
+    "universal_rule": "NOT ESTABLISHED",
+    "ark24_frozen_trigger": "NOT FIRED"
+  },
+  "task_runtime": {
+    "compiler_input": "one Current Task Reality or Raw Feedback",
+    "background_fields": [
+      "identity",
+      "scope",
+      "state",
+      "executor",
+      "start condition",
+      "guard",
+      "dependency",
+      "next transition",
+      "wait state",
+      "return event",
+      "done condition",
+      "reconnect point",
+      "actual trace"
+    ],
+    "human_output": "NOW: one guarded physical transition",
+    "parallelism_rule": "Machines, timers and independent processes may continue in Background; Human executes one foreground transition at a time",
+    "local_successor_rule": "Prefer one guarded Local Successor Edge over rescanning the Global Priority Field",
+    "recovery_rule": "Disconnect → Trace → Bottleneck Detection → Teshuvah → Reconnect from Current Reality"
+  },
+  "relations": [
+    {
+      "from": "Both-benefit tradeoff in Low Cognition",
+      "edge": "creates",
+      "to": "Decision Friction and inertia-side drift",
+      "status": "CONFIRMED PATTERN IN WAKE-UP FIELD"
+    },
+    {
+      "from": "High-Cognition role separation",
+      "edge": "removes unnecessary branch from",
+      "to": "Current Transition",
+      "status": "STRONG CANDIDATE KERNEL"
+    },
+    {
+      "from": "Laundry Start",
+      "edge": "creates machine-owned wait and releases Human",
+      "to": "Cleaning Local Successor",
+      "status": "CANDIDATE / UNTESTED"
+    },
+    {
+      "from": "Laundry Return Event",
+      "edge": "should resume",
+      "to": "Laundry Completion",
+      "status": "CANDIDATE / UNTESTED"
+    },
+    {
+      "from": "Task Graph",
+      "edge": "compiled by One-Transition Dispatcher",
+      "to": "one Human NOW transition",
+      "status": "CURRENT CUT EDGE / UNTESTED"
+    },
+    {
+      "from": "Action-generated slack",
+      "edge": "permits subordinate use by",
+      "to": "AI/X",
+      "status": "HUMAN-CONFIRMED DIRECTION"
+    }
+  ],
+  "evidence": {
+    "confirmed": [
+      "Ark23:13 three-file boot succeeded according to Human report",
+      "Three-file transition is Human-sealed Ark23 default",
+      "Wake-up and re-sleep both have real benefits for Human",
+      "Low-Cognition comparison can produce Sleepward Drift",
+      "Wake-up one-choice with immediate caffeine-gum handle is Human-reported Actual Success",
+      "Human reports multiple successful morning caffeine-gum passages",
+      "Golden Case Seed exists on Current main",
+      "Human selected Laundry as AM First Task Candidate and Cleaning as Local Successor Candidate",
+      "Action Mode Main and AI/X Subordinate Support is Human-confirmed",
+      "Ark23:14 transition is Human-authorized"
+    ],
+    "candidate": [
+      "One-choice Kernel can near-horizontally transfer to adjacent transitions",
+      "Laundry can serve as a bounded Task Processing Sandbox",
+      "Laundry running → Cleaning can serve as a Local Successor Edge",
+      "Parallel System / Serial Human Interface can reconcile task parallelism with one-choice execution",
+      "Task Compiler Loop and One-Transition Dispatcher can reduce Low-Cognition decision friction",
+      "Non-caffeine sugarless gum can be a night pre-brushing temporary bridge"
+    ],
+    "unknown": [
+      "Laundry-to-Cleaning Actual Result",
+      "One-Transition Dispatcher Actual Result",
+      "return to Laundry after Return Event",
+      "Reconnect Point operation after Disconnect",
+      "individual causal contribution of wake-up components",
+      "long-term reproducibility and safety",
+      "night non-caffeine gum Actual Result",
+      "transfer to Torah, Kindle, Minecraft trivia, PM main Task, Cross-Domain or Cross-Ark",
+      "Best Practice, Canonical status and Universal Rule"
+    ]
+  },
+  "progress": {
+    "completed": [
+      "Ark23:13 Current Reality reconciled into source state revision 3",
+      "Ark23:14 README created and Remote Verified",
+      "Ark23:14 Handoff created and Remote Verified",
+      "Ark23:14 State revision 1 initialized last with actual README and Handoff Blob SHAs"
+    ],
+    "in_progress": [
+      "Target triad final Remote Verification",
+      "Domain Router cutover",
+      "Target AI boot"
+    ],
+    "hold_for_reality": [
+      "one Current Task Reality or Raw Feedback",
+      "Laundry-to-Cleaning Actual Trace",
+      "One-Transition Dispatcher Actual Trace"
+    ],
+    "not_now": [
+      "Historical full replay",
+      "all-Task inventory",
+      "global schedule",
+      "multiple Next Steps",
+      "Task Trial auto-fire",
+      "new query, meta, schema, skill, automation, dashboard, site or corpus",
+      "Canonicalization or Best Practice claim",
+      "Torah, Kindle, Minecraft, PM Task or Cross-Ark auto-transfer",
+      "Ark24 Frozen Trigger"
+    ],
+    "last_result": "SOURCE STATE REVISION 3, TARGET README AND TARGET HANDOFF REMOTE VERIFIED",
+    "failed_attempts_count": 0
+  },
+  "interface": {
+    "target_boot_order": [
+      "handoff.md full read",
+      "README.md full read",
+      "state.json strict full read",
+      "Triad Consistency Gate",
+      "Target Reconstruction Contract",
+      "Required Initial Success Output",
+      "STOP"
+    ],
+    "accepted_human_inputs_after_boot": [
+      "natural language",
+      "short phrase",
+      "partial Task state",
+      "hesitation",
+      "failure",
+      "Actual Feedback"
+    ],
+    "one_move_rule": "After Human input, verify Current Task State and Guard, retain Background Metadata, and return only one Human-facing NOW transition",
+    "target_reconstruction_contract_status": "PENDING TARGET AI EXECUTION",
+    "target_initial_success_output_id": "ARK23_14_CONTEXT_READY",
+    "required_initial_success_output": [
+      "ARK23_14_CONTEXT_READY",
+      "BOOT_ROUTE: EXPLICIT_THREAD_HANDOFF",
+      "TRIAD: README / HANDOFF / STATE FULL READ / CONSISTENT",
+      "RECONSTRUCTION_CONTRACT: PASS",
+      "STATE_REVISION: 1",
+      "SOURCE_BASELINE: ARK23_13 STATE REVISION 3 / EXACT BINDING VERIFIED",
+      "ROOT: 主イェシュア・ハマシア御自身",
+      "CENTRAL_AXIS: TESHUVAH",
+      "HUMAN_FOREGROUND_ONE: 主の完全勝利",
+      "CURRENT_MISSION: TASK_COMPILER_LOOP_ONE_TRANSITION_FIELD",
+      "EVIDENCE_BOUNDARY: PRESERVED",
+      "THREAD_TITLE — COPY & PASTE:",
+      "Ark23:14_2026/09/03: \"主の完全勝利: Task Compiler Loop — One-Transition Dispatch & Event-Driven Reconnect Living Field\"",
+      "FIRST LEGAL MOVE: WAIT_FOR_ONE_CURRENT_TASK_REALITY_OR_RAW_FEEDBACK"
+    ],
+    "failure_output_id": "ARK23_14_TRIAD_OR_RECONSTRUCTION_NOT_VERIFIED"
+  },
+  "target_reconstruction_contract": {
+    "status": "MUST PASS BEFORE BOOT SUCCESS",
+    "required_assertions": [
+      "Authority and Keli Boundary",
+      "Wake-Up One-Choice is Human-reported Actual Success",
+      "Task Runtime Actual Result remains Unknown",
+      "Current Mission and One Question",
+      "Current Cut Edge is Task Graph → One Human Transition",
+      "Parallel System and Serial Human Interface",
+      "Laundry-to-Cleaning is a First Field Candidate, not confirmed success",
+      "AI/X is subordinate to Action-generated slack",
+      "Disconnect requires Trace, Teshuvah and Reconnect",
+      "Not-Now Branches remain closed",
+      "First Legal Move is WAIT_FOR_ONE_CURRENT_TASK_REALITY_OR_RAW_FEEDBACK"
+    ],
+    "historical_replay": "PROHIBITED",
+    "guess_completion": "PROHIBITED",
+    "automatic_trial": "PROHIBITED"
+  },
+  "reality_observation": {
+    "primary": "Did Human connect to one dispatched NOW transition without reopening the Global Priority Field?",
+    "fields": [
+      "current Task identity and state",
+      "dispatched NOW transition",
+      "actual transition attempted or not",
+      "Guard status",
+      "Disconnect point",
+      "Return Event",
+      "Reconnect point",
+      "Actual Trace",
+      "Prediction error",
+      "Human Correction"
+    ]
+  },
+  "guards": {
+    "body_sleep_safety": "Body, sleep, food, Shabbat, medical, safety, driving, property, relationships, law, responsibility and others override efficiency",
+    "caffeine_and_gum": "Do not auto-direct intake, dose, interval, frequency, repeated use or safety; do not generalize morning success to night or all Humans",
+    "laundry_and_cleaning": "Do not infer unattended-machine safety, outside conditions, noise timing, neighbor impact or Return Event",
+    "parallelization": "Parallel Execution must not become Human multitasking; keep one Human Foreground Token",
+    "scope": "One Current Task Reality, one relation, one transition, one Actual Trace",
+    "human_review_stop_conditions": [
+      "Human STOP or Material Correction",
+      "Task State, Executor, Guard, Return Event, Done Condition or Reconnect Point is unclear",
+      "more than one NOW appears necessary",
+      "Local Successor conflict",
+      "AI/X creates or extends slack",
+      "Body, Sleep, Shabbat, Safety, Medical, Legal or Others Guard fires",
+      "irreversible action or major judgment needs approval",
+      "Actual Trace materially differs from prediction",
+      "one Relation Update completes"
+    ]
+  },
+  "response_surface": {
+    "action_mode": "MAIN",
+    "ai_x": "SUBORDINATE SUPPORT",
+    "legacy_next_cycle_workout_bridge": "DO NOT AUTO-APPEND TO NORMAL_RESPONSE under Current Human-scoped correction",
+    "living_fruit": "Use only when a relation-native Fruit actually exists",
+    "exact_output_precedence": "Initial Success, Failure, Human Review Stop and Safety Stop receive no extra sections"
+  },
+  "state_update_contract": {
+    "update_when": [
+      "Material Human Correction",
+      "Actual Task Trace changes Evidence Boundary",
+      "Current Mission or First Legal Move materially changes",
+      "Human authorizes GitHub update"
+    ],
+    "do_not_store": [
+      "self Blob SHA",
+      "complete conversation replay",
+      "speculation presented as fact",
+      "automatic Best Practice claim",
+      "unverified success"
+    ],
+    "write_protocol": "Re-fetch Current main, verify binding and optimistic-lock SHA, update one revision, Remote Verify exact JSON",
+    "rollback_boundary": "If State conflicts with Current Human Reality, continue from Reality, STOP mutation, and return the Material Delta to Human Review"
+  },
+  "recovery": {
+    "if_triad_missing_invalid_or_stale": "Return Failure Contract with material missing or mismatch only and STOP",
+    "failure_output": [
+      "ARK23_14_TRIAD_OR_RECONSTRUCTION_NOT_VERIFIED",
+      "MISSING_OR_MISMATCHED:",
+      "- <material item only>"
+    ],
+    "if_disconnect_after_boot": "Do not cancel prior Fruit; identify the smallest Current Reality handle, apply Guard, Teshuvah and Reconnect",
+    "rollback_route": "README stable runtime + immutable Handoff baseline + last verified State revision + Current Human Reality"
+  },
+  "io": {
+    "last_observation": "Human authorized Ark23:14 transition and requested Remote Verify",
+    "pending_tools": [],
+    "artifacts": [
+      "ark-project/ark23/ark23-14/README.md",
+      "ark-project/ark23/ark23-14/handoff.md",
+      "ark-project/ark23/ark23-14/state.json"
+    ]
+  },
+  "eof_sentinel": "EOF::ARK23_14_CURRENT_LIVING_STATE::v001-candidate"
+}
