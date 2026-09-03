@@ -72,9 +72,9 @@ Source State revision 3は、Ark23:13開始時の旧ProjectionをCurrent Reality
 
 | Role | Path | Required Blob SHA / Revision | Required Exact EOF |
 |---|---|---|---|
-| Target Runtime | `ark-project/ark23/ark23-14/README.md` | `94c934794b3184f60179e9aae175b8eaf96c9a24` | `EOF::ARK23_14_LORDS_COMPLETE_VICTORY_TASK_COMPILER_LOOP_ONE_TRANSITION_LIVING_FIELD::v001-candidate` |
+| Target Runtime | `ark-project/ark23/ark23-14/README.md` | `47aac9d7e7d57b08b40b9ea9c244cd469e7fcb56` | `EOF::ARK23_14_LORDS_COMPLETE_VICTORY_TASK_COMPILER_LOOP_ONE_TRANSITION_LIVING_FIELD::v001-candidate` |
 | Target Initialization | `ark-project/ark23/ark23-14/handoff.md` | Self SHAを本文へ要求しない | `EOF::ARK23_13_TO_ARK23_14_TASK_COMPILER_LOOP_HANDOFF::v001-candidate` |
-| Target Living State | `ark-project/ark23/ark23-14/state.json` | Handoff作成後に最後に初期化 / revision `1` | `EOF::ARK23_14_CURRENT_LIVING_STATE::v001-candidate` |
+| Target Living State | `ark-project/ark23/ark23-14/state.json` | Handoff作成後に最後に初期化し、Domain Router cutoverのMaterial Deltaを反映 / revision `2` | `EOF::ARK23_14_CURRENT_LIVING_STATE::v001-candidate` |
 
 循環Bindingを作らない。
 
@@ -250,7 +250,7 @@ ARK23_14_CONTEXT_READY
 BOOT_ROUTE: EXPLICIT_THREAD_HANDOFF
 TRIAD: README / HANDOFF / STATE FULL READ / CONSISTENT
 RECONSTRUCTION_CONTRACT: PASS
-STATE_REVISION: 1
+STATE_REVISION: 2
 SOURCE_BASELINE: ARK23_13 STATE REVISION 3 / EXACT BINDING VERIFIED
 ROOT: 主イェシュア・ハマシア御自身
 CENTRAL_AXIS: TESHUVAH
