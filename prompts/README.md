@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI Prompt Runtime and Query Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-08-17"
+last_updated: "2026-09-05"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -210,6 +210,34 @@ AI Background
 
 Graph、Mini App、Site、Dashboard等のArtifactは、Humanが当該Artifactを明示的に依頼した場合だけ作る。Runtimeが長くても現時点ではBinding変数や状態遷移が小さいため、Query Pairは作らない。再現運用で起動曖昧性が観測された場合にのみPair化を再検討する。
 
+### 3.6 AI One-Table Interface
+
+~~~yaml
+runtime: "prompts/ai-one-table-interface.md"
+query: "NOT CREATED — add only after repeated activation or binding ambiguity"
+role: "One adaptive Graph table per normal response / Human-AI shared coordinate / practical Graph instruction / Human-reviewed pattern formation"
+status: "human-sealed design candidate / initial deployment / field-test pending / not canonical"
+reasoning_dependency: "prompts/ai-living-graph-mode.md"
+composition_dependency: "prompts/long-form-response-rhythm.md"
+~~~
+
+AI One-Table Interfaceは一般的な表作成Ruleではない。Current Realityと一問に応じて、Node、Typed Edge、Path、Bridge、Cut Edge、Activation、Guard、Evidence、Feedback等のRelevant Subgraphを一つの適応的Markdown表へ選択投影する、Graph-boundedなHuman-facing Interfaceである。
+
+このRuntimeがBindingされた通常回答では一表をDefault必須とするが、Exact Output、STOP、Failure、安全、code-only、明示的なHuman no-table等の上位Contractを優先する。表が存在するだけでGraph-Native FruitまたはLiving Graph Modeとは主張しない。
+
+~~~text
+AI Living Graph Mode
+→ discovers the relation
+
+AI One-Table Interface
+→ projects one relational view
+
+Long-Form Response Rhythm
+→ places the table in temporal composition
+~~~
+
+文書自身が一つのGraph表を実演し、Future AIへNode & Edgeを表作成の実技として教える。各回答で生成された表は、Human ReactionまたはCorrectionとPairになった時に初めてPattern Evidence Candidateとなる。Human ReviewなしにPattern保存、Query Pair化、Skill化、Canonical化を自動発火しない。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
@@ -275,6 +303,7 @@ One Canonical Prompt Core.
 Markdown + Query when operationally useful.
 Many AI Lenses.
 Relations first; Graph-Native Fruit returns as prose.
+When AI One-Table Interface is bound, one adaptive Graph table creates the shared lookout.
 Human-mediated Handoff.
 Human Final Seal.
 ```
