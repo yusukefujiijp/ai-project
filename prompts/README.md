@@ -238,6 +238,36 @@ Long-Form Response Rhythm
 
 文書自身が一つのGraph表を実演し、Future AIへNode & Edgeを表作成の実技として教える。各回答で生成された表は、Human ReactionまたはCorrectionとPairになった時に初めてPattern Evidence Candidateとなる。Human ReviewなしにPattern保存、Query Pair化、Skill化、Canonical化を自動発火しない。
 
+### 3.7 AI Benefit Branch Pruning
+
+~~~yaml
+runtime: "prompts/ai-benefit-branch-pruning.md"
+query: "NOT CREATED — add only after repeated activation or binding ambiguity"
+role: "Future-AI-first Dual-Benefit Branch Deadlock resolution / Benefit–Carrier separation / guarded Benefit preservation / one-choice recovery"
+status: "human-sealed design candidate / first deployment / field-test pending / not canonical"
+reasoning_dependency: "prompts/ai-living-graph-mode.md"
+optional_projection_dependency: "prompts/ai-one-table-interface.md"
+composition_dependency: "prompts/long-form-response-rhythm.md"
+origin: "Wake-Up One-Choice Human-reported Actual Success"
+~~~
+
+AI Benefit Branch Pruningは、双方のBranchに本物のBenefitがあるため単純削除できず一択化が停止するDual-Benefit Branch Deadlockに対し、Benefitそのものと現在のCarrier BranchをGraph Mode的に分離し、Benefitを別の安全で適切なNode、Phase、Sandbox、AI BackgroundまたはRouteへ保存・再接続した上で、Current Goalに不可欠ではなくなったCarrier Branch／Comparison Edgeだけを剪定するFuture-AI-first Operational Runtimeである。
+
+本文は抽象定義ではなく起床時Originから始まる。起床と再睡眠の双方Benefitを保持しながら、睡眠BenefitをHigh-Cognition判断とBody／Sleep／Safety Guardへ保存し、Low-Cognition起床Transitionから再比較Edgeだけを外したHuman-reported Actual Successを、BBPの最初のReality成立としてSource-boundに保持する。
+
+~~~text
+Two real Benefits
+→ Benefit–Carrier Separation
+→ Benefit preserved in the correct place
+→ Current-Goal-unnecessary Branch pruned
+→ Comparison and Drift Paths reduced
+→ One Human-facing Route
+→ Actual Reality
+→ Human Review
+~~~
+
+Future AIが主読者であるが、AIが最終Authorityになることを意味しない。HumanはReality、意味、Correction、STOPおよびFinal Sealを保持する。一件の成功からQuery Pair、Skill、Canonical化、Cross-Project展開または次Trialを自動発火しない。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
@@ -304,6 +334,7 @@ Markdown + Query when operationally useful.
 Many AI Lenses.
 Relations first; Graph-Native Fruit returns as prose.
 When AI One-Table Interface is bound, one adaptive Graph table creates the shared lookout.
+When Dual-Benefit Branch Deadlock appears, preserve the Benefit and prune only the Current-Goal-unnecessary Carrier Branch.
 Human-mediated Handoff.
 Human Final Seal.
 ```
