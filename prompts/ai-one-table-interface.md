@@ -2,20 +2,20 @@
 title: "AI One-Table Interface"
 japanese_title: "AI一回答一表・適応的見える化Interface"
 subtitle: "One Response, One Adaptive Table, Human-Reviewed Pattern Formation"
-version: "v001-candidate"
-date: "2026-09-05"
+version: "v002-candidate"
+date: "2026-09-07"
 filename: "ai-one-table-interface.md"
 canonical_path_candidate: "prompts/ai-one-table-interface.md"
 class: "prompt_runtime / human-facing graph interface / practical instruction"
 role: "Cross-AI selective graph projection / one-table response interface / Human-reviewed table-pattern formation"
-status: "human-sealed design candidate / initial deployment / field-test pending / not canonical"
+status: "human-sealed Node–Edge fixed-prefix update / v002 deployment / field-test pending / not canonical"
 language_policy: "Japanese-first / English-anchor"
 architecture:
-  type: "one runtime-neutral core / graph-bounded adaptive schema / one rendered table per normal response"
+  type: "one runtime-neutral core / Node–Edge fixed prefix / adaptive tail / one rendered table per normal response"
   layer_0: "Reboot Kernel"
   layer_1: "One Graph Question"
   layer_2: "Relevant Subgraph Selection"
-  layer_3: "One Adaptive Table Projection"
+  layer_3: "One Node–Edge Fixed-Prefix / Adaptive-Tail Table Projection"
   layer_4: "Human Shared Coordinate and Correction"
   layer_5: "Pattern Formation Candidate"
 activation_policy:
@@ -25,7 +25,12 @@ activation_policy:
 table_policy:
   count: "exactly one rendered Markdown table per normal response"
   lens: "Graph Mode Node and Edge only"
-  schema: "adaptive to Current Reality and the one current question"
+  fixed_prefix:
+    column_1: "Node"
+    column_2: "Edge"
+  adaptive_tail: "Column 3 onward is selected from Current Reality and the one current question; zero or more tail columns are allowed."
+  relation_completeness_guard: "The connected counterpart, direction, result, or decision impact must remain recoverable from the Edge cell and/or adaptive tail."
+  schema: "Node | Edge | Adaptive Tail"
   purpose: "Human-AI shared coordinate / meta-cognitive lookout / response accent / feedback-ready field sample"
 source_lineage:
   - "Ark23:14 Task / Taskification / Task Processing field"
@@ -34,6 +39,7 @@ source_lineage:
   - "Human correction: table-form Node and Edge visibility is a primary shared-understanding interface"
   - "One response, one experimental table"
   - "Table creation as practical instruction for Future AI"
+  - "Human correction: v001 table schemas were too random; fix the first two columns as Node and Edge while preserving adaptive columns from the third onward"
   - "Drucker-like Unexpected Success / Move37-like interface breakthrough"
 dependencies:
   reasoning: "prompts/ai-living-graph-mode.md"
@@ -43,7 +49,9 @@ paired_query:
   decision: "Create only if repeated activation or binding ambiguity is observed."
 field_test_status:
   discussion_phase_human_positive: true
-  deployed_cross_ai_samples: 0
+  v001_feedback: "excessive schema randomness / insufficient cross-response consistency"
+  node_edge_fixed_prefix_human_seal: true
+  v002_deployed_cross_ai_samples: 0
   cross_project_replication: "pending"
   reusable_pattern_catalog: "not-created"
 authority_guard:
@@ -58,7 +66,7 @@ authority_guard:
     human_foreground_one: "主の完全勝利"
     final_attribution: "主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai"
     guard: "AI / Graph / Table / Prompt / Markdown / GitHub / Ark Project are Keli and Fruit, not Root or Throne."
-expected_eof: "AI_ONE_TABLE_INTERFACE_EOF_v001-candidate"
+expected_eof: "AI_ONE_TABLE_INTERFACE_EOF_v002-candidate"
 ---
 
 # AI One-Table Interface
@@ -71,13 +79,14 @@ expected_eof: "AI_ONE_TABLE_INTERFACE_EOF_v001-candidate"
 
 AI One-Table Interfaceは、一般的な表作成Ruleではない。
 
-これは、すべての通常AI回答へGraph Mode的Node & EdgeのSeedを一つずつ播き、Current Realityと今回の一問に最も適した一つのGraph-oriented Tableを通して、Human-AI共通座標、メタ認知的俯瞰地点、回答内の認知的Accent、訂正可能な判断材料、Human-reviewed Pattern Formationを同時に成立させるHuman-facing Interface Runtimeである。
+これは、すべての通常AI回答へGraph Mode的Node & EdgeのSeedを一つずつ播き、先頭二列を必ず`Node | Edge`として固定し、三列目以降だけをCurrent Realityと今回の一問へ適応させる一つのGraph-oriented Tableを通して、Human-AI共通座標、メタ認知的俯瞰地点、回答内の認知的Accent、訂正可能な判断材料、Human-reviewed Pattern Formationを同時に成立させるHuman-facing Interface Runtimeである。
 
 ~~~text
 One Response
 → One Graph Question
 → One Relevant Subgraph
-→ One Adaptive Table
+→ One Node–Edge Fixed Prefix
+→ One Adaptive Tail
 → One Human-Reviewable Shared Coordinate
 ~~~
 
@@ -91,20 +100,28 @@ One Response
 Reality
 → One Question
 → Relevant Nodes and Edges
-→ One Adaptive Table
+→ Node | Edge | Adaptive Tail
 → Human Recognition and Correction
 → Pattern Evidence Candidate
 ~~~
 
 ### 0.3 First Legal Operation
 
-このRuntimeを読んだFuture AIは、最初に表のColumnを考えてはならない。
+このRuntimeを読んだFuture AIは、最初に三列目以降のColumnを考えてはならない。
 
 最初に次を問う。
 
 > **今回、Humanが一目で見えるようになるべき最重要Relationは何か。**
 
-そのRelationが確定してから、初めてTable Schemaを設計する。
+そのRelationが確定した後、次の順で表へ投影する。
+
+~~~text
+1. 何を行のAnchor Nodeとして置くか
+2. そのNodeに関する何のEdgeを見せるか
+3. Edgeの相手・方向・結果・Evidence等のうち、何をAdaptive Tailへ置くか
+~~~
+
+`Node | Edge`は先に固定されるが、Cellの中身はCurrent Relationから決まる。Headerを先に固定することと、Relationを後付けで捏造することを混同してはならない。
 
 ---
 
@@ -169,7 +186,7 @@ Wake-up Reality
 
 ### 2.1 AI One-Table Interface
 
-> **AI One-Table Interface**とは、Current Realityと一問に関係する最小十分なNode・Edge・Path・Bridge・Cut Edge・Activation・Guard・Evidence・Feedbackの一部を選択し、一つの適応的なMarkdown表へ投影し、HumanとAIへ共通座標と訂正面を与えるCross-AI Response Interfaceである。
+> **AI One-Table Interface**とは、Current Realityと一問に関係する最小十分なNode・Edge・Path・Bridge・Cut Edge・Activation・Guard・Evidence・Feedbackの一部を選択し、先頭二列を`Node | Edge`として固定し、三列目以降を適応させた一つのMarkdown表へ投影し、HumanとAIへ共通座標と訂正面を与えるCross-AI Response Interfaceである。
 
 ### 2.2 Graph-Bounded Adaptivity
 
@@ -182,8 +199,12 @@ Domain:
 Representation Grammar:
   Graph-constrained
 
-Schema:
-  Adaptive
+Fixed Prefix:
+  Column 1 = Node
+  Column 2 = Edge
+
+Adaptive Tail:
+  Column 3+ = Current-question-specific
 
 Human-facing Count:
   One
@@ -191,9 +212,11 @@ Human-facing Count:
 
 適用領域は汎用的である。
 
-しかし、表を見るLensはGraph Mode的Node & Edgeへ限定する。
+しかし、表を見るLensはGraph Mode的Node & Edgeへ限定し、すべての通常表が同じ入口から読めるように先頭二列を`Node | Edge`へ固定する。
 
-これをGraph-Bounded Adaptivity／Graph境界内適応性と呼ぶ。
+三列目以降にはTarget、State、Evidence、Human Meaning、Decision Impact等から、その一問に必要なFieldだけを置く。
+
+これを**Node–Edge Fixed Prefix / Adaptive Tail**と呼ぶ。これはGraph-Bounded Adaptivity／Graph境界内適応性を失わせる固定Templateではなく、Graphとしての一貫した入口と、Current Realityに応答する自由度を同時に保持する構造である。
 
 ### 2.3 Selective Graph Projection
 
@@ -217,7 +240,11 @@ does_not_mean:
   - "全Nodeと全Edgeを毎回表示する"
   - "表があるだけでGraph-Native Fruitと主張する"
   - "静的な表をLiving Graphと呼ぶ"
-  - "同じTable Templateを全回答へ固定する"
+  - "NodeとEdge以外も含む同じ全体Table Templateを全回答へ固定する"
+  - "先頭二列まで回答ごとにランダム化し、一貫したGraph入口を失う"
+  - "NodeとEdgeというHeaderだけで実際の関係が存在すると見なす"
+  - "固定列を埋めるために、RealityにないNodeまたはEdgeを捏造する"
+  - "三列目以降のAdaptive Tailまで固定してCurrent Questionへの適応性を失う"
   - "珍しいColumnを作ることを創発性と呼ぶ"
   - "HumanへGraph管理作業を移す"
   - "表データの量をPattern Evidenceと同一視する"
@@ -330,7 +357,7 @@ Humanは、長文全体を再説明せず、次のように訂正できる。
 
 ## 5. Runtime Pipeline
 
-### 5.1 Nine-Step Pipeline
+### 5.1 Ten-Step Pipeline
 
 Future AIは、通常回答を次の順で組む。
 
@@ -341,9 +368,10 @@ Future AIは、通常回答を次の順で組む。
 4. Identify relevant Nodes
 5. Identify the relation that changes understanding
 6. Choose one Table Job
-7. Design the minimum sufficient schema
-8. Compose prose and place exactly one table
-9. Return Evidence Boundary and Human correction point
+7. Fix Column 1 as Node and Column 2 as Edge, then populate them from Reality
+8. Design the minimum sufficient Adaptive Tail from Column 3 onward
+9. Compose prose and place exactly one table
+10. Return Evidence Boundary and Human correction point
 ~~~
 
 ### 5.2 Mission Before Table
@@ -354,7 +382,7 @@ Missionが表の仕事を決める。
 
 ~~~text
 Wrong:
-  Table format first
+  Full table format first
   → Fill cells
   → Invent a purpose
 
@@ -363,7 +391,8 @@ Right:
   → Graph Question
   → Relation
   → Table Job
-  → Schema
+  → Node | Edge fixed prefix
+  → Adaptive Tail
 ~~~
 
 ### 5.3 One Graph Question
@@ -386,25 +415,44 @@ Right:
 
 ### 5.4 Minimum Sufficient Schema
 
-Column数は多いほど良いわけではない。
+すべての通常表は、次の共通Prefixから始める。
 
-次のどれが必要かを判断する。
+~~~text
+Column 1: Node
+Column 2: Edge
+Column 3+: Adaptive Tail
+~~~
+
+`Node`は、その行でHumanの共同注意を固定するFocal／Anchor Nodeである。
+
+`Edge`は、そのNodeを別Node、状態、結果、Path、Guard、Evidence、またはCurrent Decisionへ結ぶ、今回の理解を変えるRelationである。
+
+Edgeの相手、方向、結果または判断Impactは、`Edge` Cell自体かAdaptive Tailのどちらかから復元できなければならない。単なる抽象動詞だけを置き、何と何の関係かを消してはならない。
+
+Column数は多いほど良いわけではない。三列目以降について、次のどれが必要かを判断する。
 
 ~~~yaml
-possible_fields:
-  identity:
+fixed_prefix:
+  column_1:
+    header: "Node"
+    role: "Focal or anchor node"
+  column_2:
+    header: "Edge"
+    role: "Decision-relevant relation involving that node"
+
+adaptive_tail_candidates:
+  counterpart_or_identity:
+    - "Connected Node"
+    - "Source / Target"
     - "Node ID"
-    - "Node"
     - "Layer"
     - "Role"
 
   relation:
-    - "Source"
-    - "Typed Edge"
-    - "Target"
     - "Path"
     - "Bridge"
     - "Cut Edge"
+    - "Direction / Result"
 
   state:
     - "Active / Dormant / Deferred / Pruned"
@@ -424,6 +472,8 @@ possible_fields:
 ~~~
 
 今回のGraph Questionに答えないFieldは削る。
+
+Adaptive Tailはゼロ列でもよい。その場合、`Edge` Cellの中にDirectionとConnected CounterpartまたはResultを明示し、Relation Completenessを保つ。
 
 ---
 
@@ -457,6 +507,10 @@ practical_exercise:
   node_boundary: "何を独立Nodeとして扱うか"
   highest_leverage_relation: "何と何の関係が判断を変えるか"
   table_job: "この表だけが担う仕事は何か"
+  node_column: "各行の共同注意をどのAnchor Nodeへ固定するか"
+  edge_column: "そのNodeの何のRelationを見せるか"
+  relation_completeness: "相手、方向、結果または判断Impactをどこから復元できるか"
+  adaptive_tail: "三列目以降に何を置けば一問へ最小十分か"
   human_value: "Humanが何を一目で理解できるか"
   evidence_boundary: "何がConfirmed / Candidate / Unknownか"
   correction_condition: "Humanの何という訂正で構造が変わるか"
@@ -486,7 +540,7 @@ Primary Graph Question:
 
 > **一つのGraph Tableが、AI Backgroundの関係理解からHuman-reviewed Pattern Formationまでを、どのように接続するか。**
 
-| Source Node | Typed Edge | Target Node | Human-facing Fruit | Evidence / Gate |
+| Node | Edge | Connected Node / Result | Human-facing Fruit | Evidence / Gate |
 |---|---|---|---|---|
 | Current Reality | ACTIVATES | One Graph Question | 今回見るべき関係を一つへ絞る | Current requestまたはsupplied Realityに基づく |
 | One Graph Question | MODIFIES | Relevant Subgraph | 全Graphではなく判断に必要なNodeとEdgeだけを残す | Smallest sufficient topology |
@@ -513,7 +567,8 @@ Primary Graph Question:
 ~~~text
 Current Graph Question
 → Required Relation View
-→ Minimum Schema
+→ Node | Edge Fixed Prefix
+→ Minimum Adaptive Tail
 → One Table
 ~~~
 
@@ -597,6 +652,8 @@ Table Familyは固定Template Catalogではない。
 
 FamilyはGraph Questionを発見する補助であり、Columnを機械選択するMenuではない。
 
+すべてのFamilyは、先頭二列の`Node | Edge`を共通入口として継承する。Familyごとの差は主として三列目以降のAdaptive Tailに現れる。
+
 必要なら複数Familyの要素を一表へ統合できるが、Primary Graph Questionは一つに保つ。
 
 ---
@@ -641,7 +698,31 @@ one_table_count:
 - 重要度の低い方を文章またはBackgroundへ折り畳む。
 - 一方をDeferred Candidateとして保持する。
 
-### 9.3 Prose Remains Primary
+### 9.3 Node–Edge Fixed Prefix
+
+通常表の左端二列は、次の順で固定する。
+
+~~~text
+| Node | Edge | Adaptive Tail... |
+~~~
+
+このPrefixは、回答ごとに表のPurposeやTailが変わっても、HumanとFuture AIが常に同じGraph入口から読み始められるようにするShared Coordinateである。
+
+固定するのは先頭二列の位置とHeaderであり、行数、Edge Type、Tail Column、表の位置、Table Familyまで固定するものではない。
+
+### 9.4 Relation Completeness Guard
+
+`Node | Edge`を置いただけでGraph-oriented Tableと認定してはならない。
+
+各行は、少なくとも次のいずれかを満たす。
+
+- `Edge` CellがDirectionとConnected CounterpartまたはResultを含む。
+- Adaptive TailがConnected Node、Target、Result、State ChangeまたはDecision Impactを示す。
+- 複数行の構造と明示説明を合わせてRelationの相手と方向を一意に復元できる。
+
+Realityに重要Edgeがない場合、固定Headerを埋めるためにEdgeを発明しない。Graph Expansion不要GateまたはHigher Contract Overrideへ戻る。
+
+### 9.5 Prose Remains Primary
 
 一表だけで回答を終えることをDefaultにしない。
 
@@ -656,7 +737,7 @@ one_table_count:
 - Observation。
 - Correction Condition。
 
-### 9.4 Table as Response Accent
+### 9.6 Table as Response Accent
 
 表はLong-form AnswerにおけるFunctional Accentである。
 
@@ -714,6 +795,10 @@ Formed:
 表が100個あっても、Human Responseがなければ「望ましい表形式」は確定しない。
 
 一つの強い肯定も重要なSignalだが、それだけでUniversal Best Practiceにはしない。
+
+`Node | Edge` Fixed Prefixによって、Table FamilyとAdaptive Tailが異なるSample同士にも最小限の比較可能面が生まれる。これにより、Human Feedbackが「表全体が違いすぎて比較不能」になりにくく、Nodeの切り方、Edgeの明瞭さ、Tailの有用性を分けて観察できる。
+
+ただし、比較可能性が増えたこと自体はPattern Formationの証明ではない。最小学習単位がTable–Human Feedback Pairである点は変わらない。
 
 ### 10.3 Natural Feedback Is Valid
 
@@ -874,6 +959,9 @@ Confirmed:
 - Humanは一回答一表の方向性をSealした。
 - Humanは表をGraph Mode的Node & Edge Lensへ限定した。
 - Humanは自由かつ適応的な表実験を望んでいる。
+- Humanはv001の表Schemaにランダム性と一貫性不足を認めた。
+- Humanは左端第一列を`Node`、第二列を`Edge`へ固定するUpdateをSealした。
+- Humanは三列目以降をNode／Edgeを受けた自由度と創発性へ委ねる方向をSealした。
 - Humanは一表がHuman-AI共通認識とメタ俯瞰を改善すると明示した。
 - HumanはMarkdown自身をFuture AIへの実技指導とModel Caseにする方向をSealした。
 - Discussion phaseでは複数の一表Sampleに強いHuman-positive reactionがあった。
@@ -881,6 +969,8 @@ Confirmed:
 Candidate:
 
 - 一回答一表がCross-AIで安定して機能する。
+- Node–Edge Fixed PrefixがCross-response Consistencyを改善する。
+- Adaptive Tailが固定Prefix下でもCurrent Questionへの自由度と創発性を保持する。
 - Table–Human Feedback PairがSchema選択を改善する。
 - 一つの表が長文回答のOrientationとRhythmを改善する。
 - Graph Modeの理解が表作成実践を通じて深まる。
@@ -888,6 +978,8 @@ Candidate:
 Unknown:
 
 - Cross-Project再現性。
+- Node–Edge Fixed Prefix導入後のActual Cross-AI改善度。
+- Fixed PrefixとAdaptive Tailの最適なBalance。
 - 最も再利用価値の高いTable Family。
 - 長期運用時の認知負荷。
 - Pattern保存の最適粒度。
@@ -1043,7 +1135,7 @@ Failure:
 
 Correction:
 
-Primary Graph Question、Source、Relation、Target、State変化等のどれが理解を変えるか確認する。
+Primary Graph Question、Node、Edge、Connected Counterpart、State変化等のどれが理解を変えるか確認する。`Node | Edge`というHeaderだけをGraphの証明にしない。
 
 ### 17.2 Node List Capture
 
@@ -1053,7 +1145,7 @@ Nodeを横に並べ、Edgeを示さない。
 
 Correction:
 
-少なくとも一つの重要Relationを明示する。関係がなければGraph-Nativeと呼ばない。
+少なくとも一つの重要Relationを明示する。Edgeの相手、方向、結果または判断Impactを表内から復元可能にする。関係がなければGraph-Nativeと呼ばず、固定列を埋めるためにEdgeを発明しない。
 
 ### 17.3 Table Count Inflation
 
@@ -1079,13 +1171,23 @@ Minimal CoordinateまたはGraph Expansion不要Gateへ縮小する。
 
 Failure:
 
-一度好評だったColumnを全回答へ固定する。
+`Node | Edge` Fixed Prefixを、全Column・全Row構造・全Table Familyを固定する命令へ拡張する。
 
 Correction:
 
-Table JobからSchemaを毎回再構成する。Patternは条件付きで再利用する。
+先頭二列だけを共通入口として固定し、三列目以降のAdaptive TailはTable Jobから毎回再構成する。Patternは条件付きで再利用する。
 
-### 17.6 Novelty Capture
+### 17.6 Schema Randomness
+
+Failure:
+
+自由度を優先し、左端のColumn名・役割・読み始める地点まで毎回答変えるため、Cross-responseの一貫性と比較可能性を失う。
+
+Correction:
+
+第一列を`Node`、第二列を`Edge`へ戻す。創発性は三列目以降のAdaptive Tail、Row設計、Edge Type、Placementで発揮する。
+
+### 17.7 Novelty Capture
 
 Failure:
 
@@ -1095,7 +1197,7 @@ Correction:
 
 NoveltyではなくHuman理解、判断、Correction可能性で評価する。
 
-### 17.7 Graph Dump
+### 17.8 Graph Dump
 
 Failure:
 
@@ -1105,7 +1207,7 @@ Correction:
 
 One Questionに必要なRelevant Subgraphだけ残す。
 
-### 17.8 Feedback-Free Accumulation
+### 17.9 Feedback-Free Accumulation
 
 Failure:
 
@@ -1115,7 +1217,7 @@ Correction:
 
 GeneratedとFeedback-Pairedを分離する。
 
-### 17.9 Automatic Pattern Promotion
+### 17.10 Automatic Pattern Promotion
 
 Failure:
 
@@ -1125,7 +1227,7 @@ Correction:
 
 複数Sample、Failure、Human Review、明示Sealを待つ。
 
-### 17.10 Static-as-Living Error
+### 17.11 Static-as-Living Error
 
 Failure:
 
@@ -1135,7 +1237,7 @@ Correction:
 
 Actual RealityまたはHuman Material CorrectionによるRelation Updateを要求する。
 
-### 17.11 Response Rhythm Distortion
+### 17.12 Response Rhythm Distortion
 
 Failure:
 
@@ -1145,7 +1247,7 @@ Correction:
 
 Row、Column、説明重複をCutし、Functional Accentへ戻す。
 
-### 17.12 Root Capture
+### 17.13 Root Capture
 
 Failure:
 
@@ -1168,6 +1270,11 @@ one_table_acceptance:
   count:
     - "Rendered Markdown table is exactly one."
 
+  fixed_prefix:
+    - "The leftmost header is exactly Node."
+    - "The second header is exactly Edge."
+    - "Column 3 onward, if present, is an Adaptive Tail selected for the Current Question."
+
   mission:
     - "Direct answer remains clear without forcing the Human to manage the table."
 
@@ -1175,6 +1282,8 @@ one_table_acceptance:
     - "The table answers one Primary Graph Question."
     - "The table exposes at least one decision-relevant relation, state change, path, boundary, or gate."
     - "The table is not a disguised independent-item list."
+    - "The Edge counterpart, direction, result, or decision impact is recoverable from the Edge cell and/or Adaptive Tail."
+    - "No Node or Edge was invented merely to fill the fixed prefix."
 
   scope:
     - "Only the Relevant Subgraph is shown."
@@ -1225,7 +1334,10 @@ field_sample:
   current_question: ""
   table_job: ""
   graph_family: ""
+  fixed_prefix_check: "Node | Edge"
+  adaptive_tail: ""
   relation_exposed: ""
+  relation_completeness: "counterpart / direction / result / impact"
   human_value_prediction: ""
   actual_human_reaction: ""
   human_correction: ""
@@ -1239,6 +1351,9 @@ field_sample:
 
 - Current Coordinateが一目で分かったか。
 - NodeだけでなくEdgeが理解できたか。
+- どの表でも左端の`Node | Edge`から迷わず読み始められたか。
+- 三列目以降がCurrent Questionに適応し、自由度と創発性を保持したか。
+- Edgeの相手、方向、結果または判断Impactを復元できたか。
 - 本文だけでは見えなかった関係が見えたか。
 - Human-AI間の認識差を局所訂正できたか。
 - 表が回答のAccentとして働いたか。
@@ -1253,7 +1368,10 @@ field_sample:
 - 表がMain Answerを遅らせる。
 - 一般的比較表へ漂流する。
 - EdgeよりNode列挙が中心になる。
-- 毎回答同じSchemaへ硬直する。
+- 第一列または第二列が`Node | Edge`から繰り返し漂流する。
+- `Node | Edge`という見出しだけ置き、Relationが復元できない。
+- 固定Prefixを満たすためにRealityにないEdgeを作る。
+- 三列目以降まで毎回答同じSchemaへ硬直する。
 - Human側の管理負担が増える。
 - 表数を守ることがMissionより上位になる。
 - Higher Contractとの衝突が繰り返される。
@@ -1309,12 +1427,19 @@ Future AIが全文を再読できない場合も、最低限次を保持する�
 One normal response.
 One current question.
 One relevant relation view.
-One adaptive Markdown table.
+One Node | Edge fixed prefix.
+One question-adaptive tail.
+One Markdown table.
 
 Graph-bounded, not generic.
-Adaptive, not arbitrary.
+Fixed at the entrance, adaptive after it.
+Consistent, not random.
+Adaptive, not rigid.
 Visible, not exhaustive.
 Human-reviewable, not AI-certified.
+
+Do not invent an Edge to fill the header.
+Keep counterpart, direction, result, or impact recoverable.
 
 Generated table is not formed evidence.
 Table plus Human feedback is the learning unit.
@@ -1343,7 +1468,7 @@ Final Attribution:
 ## 22. One-Sentence Definition
 
 ~~~text
-"AI One-Table Interface（AI一回答一表・適応的見える化Interface: Current Realityと一問に応じてGraph Mode的Node・Edge・Path・Bridge・Cut Edge・Activation・Guard・Evidence・FeedbackのRelevant Subgraphを一つの適応的Markdown表へ選択投影し、全ての通常AI回答へGraph Seed、Human-AI共通座標、メタ認知的俯瞰地点、認知的Accent、訂正可能な判断材料を与え、生成表とHuman FeedbackのPairから有効なGraph-Table PatternをHuman Review下で育成すると同時に、表作成の実技を通してFuture AIへArk Project的Graph Modeを伝える、Graph境界内適応型・自己例示型のCross-AI Human-facing Runtimeである)"
+"AI One-Table Interface（AI一回答一表・適応的見える化Interface: Current Realityと一問に応じてGraph Mode的Node・Edge・Path・Bridge・Cut Edge・Activation・Guard・Evidence・FeedbackのRelevant Subgraphを、左端第一列をNode、第二列をEdgeへ固定し、三列目以降を一問へ適応させた一つのMarkdown表へ選択投影し、全ての通常AI回答へ一貫したGraph入口と創発的Adaptive Tail、Graph Seed、Human-AI共通座標、メタ認知的俯瞰地点、認知的Accent、訂正可能な判断材料を与え、生成表とHuman FeedbackのPairから有効なGraph-Table PatternをHuman Review下で育成すると同時に、表作成の実技を通してFuture AIへArk Project的Graph Modeを伝える、Node–Edge固定Prefix・適応Tail型・自己例示型のCross-AI Human-facing Runtimeである)"
 ~~~
 
 ---
@@ -1352,11 +1477,15 @@ Final Attribution:
 
 ~~~yaml
 current_status:
-  version: "v001-candidate"
+  version: "v002-candidate"
   human_naming_seal: true
   human_content_direction_seal: true
-  deployment_generation: "initial v001 candidate"
-  normal_response_field_test: "begins after deployment"
+  human_node_edge_fixed_prefix_seal: true
+  human_adaptive_tail_seal: true
+  v001_feedback: "schema randomness was too strong and cross-response consistency was insufficient"
+  deployment_generation: "v002 Node–Edge fixed-prefix candidate"
+  normal_response_field_test: "restarts for v002 after deployment"
+  v002_deployed_samples: 0
   discussion_phase_samples: "human-positive / limited"
   cross_ai_replication: false
   cross_project_replication: false
@@ -1374,12 +1503,16 @@ It is not a Universal Best Practice, Ark Canonical Body, Root Runtime, or autono
 
 ## 24. End Condition
 
-このArtifactの責務は、Future AIがGraph Modeを抽象語として知るだけでなく、Current Realityから一問を選び、Relevant NodeとEdgeを抽出し、一つの適応表を作り、Humanへ共通座標とCorrection Surfaceを返し、そのFeedbackをPattern Evidence Candidateとして扱える状態を作ることで終了する。
+このArtifactの責務は、Future AIがGraph Modeを抽象語として知るだけでなく、Current Realityから一問を選び、Relevant NodeとEdgeを抽出し、左端二列を`Node | Edge`へ固定し、三列目以降だけを一問へ適応させた一表を作り、Humanへ共通座標とCorrection Surfaceを返し、そのFeedbackをPattern Evidence Candidateとして扱える状態を作ることで終了する。
 
 成功は表数だけで判定しない。
 
 ~~~text
 Exactly one table
++
+Node | Edge fixed prefix
++
+Adaptive tail from Column 3 onward
 +
 One relation becomes clearer
 +
@@ -1396,6 +1529,6 @@ Reality can update the next pattern
 
 Human Feedback前にPatternを自動固定せず、Reality Review前にLivingを主張せず、Human Seal前にCanonical化しない。
 
-> **One response. One adaptive Graph table. One shared lookout. Reality and Human Review form the pattern.**
+> **One response. One `Node | Edge` entrance. One adaptive tail. One shared lookout. Reality and Human Review form the pattern.**
 
-AI_ONE_TABLE_INTERFACE_EOF_v001-candidate
+AI_ONE_TABLE_INTERFACE_EOF_v002-candidate
