@@ -2,8 +2,8 @@
   "meta": {
     "state_id": "ARK23_15_CURRENT_LIVING_STATE",
     "schema_version": "v001-candidate",
-    "revision": 1,
-    "status": "target triad formed / domain router cutover pending",
+    "revision": 2,
+    "status": "current front line / target boot pending / triad and domain router remote verified",
     "project": "Ark23",
     "sequence": 15,
     "created_at": "2026-09-07",
@@ -11,7 +11,7 @@
     "timezone": "Asia/Tokyo",
     "language_policy": "Japanese-first with precise English technical anchors",
     "state_role": "Mutable Current Projection / Living Board",
-    "update_reason": "Human-authorized Ark23:14 to Ark23:15 transition initialization",
+    "update_reason": "Human-authorized Ark23:15 Domain Router cutover and final target-state activation",
     "state_is_not": [
       "Root",
       "Throne",
@@ -123,9 +123,10 @@
     },
     "domain_router": {
       "path": "ark-project/README.md",
-      "cutover_status": "PENDING",
+      "cutover_status": "REMOTE_VERIFIED",
       "blob_sha_before_cutover": "0cfa24187af878e9457f6336176b2a99d66833cd",
-      "current_blob_sha": null
+      "current_blob_sha": "0d9e2c1e81d5ca65cafd9ddac5742eba0b11e187",
+      "commit_sha": "042f3d49c959ea741b4deaca4a846c6376721fe0"
     },
     "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals"
   },
@@ -145,10 +146,10 @@
     ]
   },
   "now": {
-    "current_coordinate": "Ark23:15 target triad formed / domain router cutover pending",
-    "current_phase": "TARGET_TRIAD_INITIALIZED_AWAITING_ROUTER_CUTOVER",
-    "current_subtask": "Remote-verify initial target state, cut over Domain Router, then advance this state to revision 2",
-    "next_action": "Complete the Human-authorized router cutover and final verification",
+    "current_coordinate": "Ark23:15 current front line / awaiting one Human Current Taskification Reality or question",
+    "current_phase": "TARGET_BOOT_PENDING_HUMAN_CURRENT_REALITY",
+    "current_subtask": "None; transition artifacts are formed and router cutover is remote verified",
+    "next_action": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
     "first_legal_move_after_boot": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
     "blockers": [],
     "open_questions": [
@@ -300,10 +301,12 @@
       "Benefit Branch Pruning Runtime created, registered and remote verified",
       "AI One-Table Interface updated to v002 Node–Edge Fixed Prefix / Adaptive Tail and remote verified",
       "Ark23:15 README created and remotely verified",
-      "Ark23:15 handoff created and remotely verified"
+      "Ark23:15 handoff created and remotely verified",
+      "Ark23:15 state revision 1 created and remotely verified",
+      "Domain Router cut over to Ark23:15 and remotely verified"
     ],
     "in_progress": [
-      "Ark23:15 initial state remote verification and Domain Router cutover"
+      "Final Triad Consistency and Target Reconstruction verification"
     ],
     "hold_for_reality": [
       "one Human-supplied natural Taskification Reality or question",
@@ -328,20 +331,17 @@
     "target_runtime_path": "ark-project/ark23/ark23-15/README.md",
     "target_handoff_path": "ark-project/ark23/ark23-15/handoff.md",
     "target_state_path": "ark-project/ark23/ark23-15/state.json",
-    "phase": "TARGET_STATE_REVISION_1_CREATED_ROUTER_CUTOVER_PENDING",
-    "domain_router_cutover": "PENDING",
-    "target_revision_after_cutover": 2,
+    "phase": "CURRENT_FRONT_LINE_ROUTER_CUTOVER_VERIFIED",
+    "domain_router_cutover": "REMOTE_VERIFIED",
+    "current_target_revision": 2,
     "target_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
     "first_legal_move_after_boot": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
     "new_field_trial_started": false,
     "canonicalization": false
   },
   "io": {
-    "last_observation": "Target README and Handoff are remotely verified; target state initialization is being completed before Domain Router cutover",
+    "last_observation": "Ark23:15 Triad is formed and Domain Router cutover is remotely verified; no Field Trial has started",
     "pending_tools": [
-      "Remote verify Ark23:15 state revision 1",
-      "Update and remote verify ark-project/README.md",
-      "Advance and remote verify Ark23:15 state revision 2",
       "Final Triad Consistency and Target Reconstruction verification"
     ],
     "artifacts": [
