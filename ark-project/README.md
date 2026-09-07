@@ -25,20 +25,24 @@ retrieval_policy: "progressive disclosure / relation-first / nearest-current-sou
 search_aliases:
   - "Ark Project router"
   - "current Ark front line"
-  - "Ark23:14"
+  - "Ark23:15"
   - "three-file living state"
+  - "taskification capability"
+  - "B-Gate fast-prune"
+  - "Task-First"
+  - "benefit branch pruning"
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-09-03"
-last_reality_reviewed: "2026-09-03"
-reviewed_scope: "AI-first router contract / Ark23 Core v004 / Ark23:14 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / Task Compiler Loop candidate / Ark24 frozen-trigger guard"
-current_front_line_ark: "ark-project/ark23/ark23-14/README.md"
-current_front_line_handoff: "ark-project/ark23/ark23-14/handoff.md"
-current_front_line_runtime: "ark-project/ark23/ark23-14/README.md"
-current_front_line_state: "ark-project/ark23/ark23-14/state.json"
-current_main_theme: "Task Compiler Loop — Stateful Task Processing and One-Transition Dispatch"
-current_evidence: "wake-up one-choice Human-reported Actual Success / Golden Case Seed and Ark23:14 Triad Remote Verified / Task Compiler and Laundry-to-Cleaning Actual results unknown"
+updated: "2026-09-07"
+last_reality_reviewed: "2026-09-07"
+reviewed_scope: "AI-first router contract / Ark23 Core v004 / Ark23:15 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / BBP / B-Gate Fast-Prune / Task化能力 / One-Table v002 / Ark24 frozen-trigger guard"
+current_front_line_ark: "ark-project/ark23/ark23-15/README.md"
+current_front_line_handoff: "ark-project/ark23/ark23-15/handoff.md"
+current_front_line_runtime: "ark-project/ark23/ark23-15/README.md"
+current_front_line_state: "ark-project/ark23/ark23-15/state.json"
+current_main_theme: "Task化能力の向上 — B-Gate Fast-Prune to Task-First"
+current_evidence: "wake-up one-choice Human-reported Actual Success and BBP Origin / earlier B-Gate Detection Human-reported / Ark23:15 Triad Remote Verified / Fast-Prune plus Task化 end-to-end Actual result unknown"
 ark23_local_router_delta: "resolved by Ark23 v004 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
@@ -88,19 +92,23 @@ write_default: "Do not write without current Human authority."
 ```yaml
 current_front_line:
   ark: "Ark23"
-  thread: "Ark23:14"
-  handoff: "ark-project/ark23/ark23-14/handoff.md"
-  runtime: "ark-project/ark23/ark23-14/README.md"
-  state: "ark-project/ark23/ark23-14/state.json"
-  theme: "Task Compiler Loop — Stateful Task Processing and One-Transition Dispatch"
+  thread: "Ark23:15"
+  handoff: "ark-project/ark23/ark23-15/handoff.md"
+  runtime: "ark-project/ark23/ark23-15/README.md"
+  state: "ark-project/ark23/ark23-15/state.json"
+  theme: "Task化能力の向上 — B-Gate Fast-Prune to Task-First"
   confirmed:
-    - "wake-up one-choice Human-reported Actual Success"
-    - "morning caffeine-gum route has multiple Human-reported successful passages; exact count and causal contribution remain unknown"
-    - "Ark23:14 three-file transition artifacts were created and Remote Verified"
+    - "wake-up one-choice is Human-reported Actual Success and the Reality-first Origin of BBP"
+    - "earlier and clearer B-Gate Detection under 主の完全勝利 foreground awareness is Human-reported"
+    - "Task-First is on the Task-processing side and Task化 is required upstream"
+    - "Ark23:15 README / Handoff / State were created and Remote Verified"
     - "README / Handoff / State remains the Human-sealed Ark23 transition default"
+  candidate:
+    - "Fast B-side Close plus Task化 can prevent Action Vacuum and reach One Task / Task-First"
   unknown:
-    - "Task Compiler / One-Transition Dispatcher Actual result"
-    - "Laundry-to-Cleaning Actual result and Return Event reconnect"
+    - "B-Gate Fast-Prune Actual field result"
+    - "Fast Close → Task化 → Task-First end-to-end Actual result"
+    - "Task化能力 internalization speed, cross-domain transfer, and long-term reproducibility"
     - "continuous operation and long-term three-file reproducibility, state drift, update cost, and rollback frequency"
   state_revision: "Read the Current Target State; this Router does not pin mutable revision."
   first_resolution_rule: "Read Handoff fully, then its bound README and State; pass the Target Reconstruction Contract; treat later Human Reality as a Material Delta without silently writing State."
@@ -179,7 +187,8 @@ ARK.md
    ├─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
    ├─ ark23/  主の完全勝利 / Current Main / Front-Line
    │  ├─ ark23-13/  Wake-Up One-Choice / Source Baseline
-   │  └─ ark23-14/  Task Compiler Loop / Current Three-File Runtime
+   │  ├─ ark23-14/  Task Compiler Loop / Transition Source Runtime
+   │  └─ ark23-15/  Task化能力の向上 / Current Three-File Runtime
    └─ ark24/  Bパターン入口AI Bridge / Frozen-Trigger Support Field
 ```
 
@@ -192,43 +201,46 @@ ARK.md
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
 | Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
-| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-14 Handoff`](./ark23/ark23-14/handoff.md) | Ark23 Core v004; Task Compiler Loop current candidate; Task Runtime and long-term reproducibility unknown |
+| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-15 Handoff`](./ark23/ark23-15/handoff.md) | Ark23 Core v004; Task化能力の向上 current candidate; Fast-Prune → Task化 → Task-First Actual result unknown |
 | Ark24 | Bパターン入口AI Bridge／Support Field | [`ark24/README.md`](./ark24/README.md) | Frozen trigger unchanged; support source only; do not auto-execute |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
 
-### 3.1 Current Front Line / Ark23:14
+### 3.1 Current Front Line / Ark23:15
 
 ```yaml
 current_coordinate:
   root: "主イェシュア・ハマシア御自身"
   central_axis: "Teshuvah"
   human_foreground_one: "主の完全勝利"
-  main_theme: "Task Compiler Loop — Stateful Task Processing and One-Transition Dispatch"
-  one_question: "一件のCurrent Task Realityを一つのGuarded physical transitionへCompileしActual Realityへ接続できるか"
-  current_cut_edge: "Task Graph → One Human Transition"
+  main_theme: "Task化能力の向上 — B-Gate Fast-Prune to Task-First"
+  one_question: "B-Gateが実際に存在する一つのCurrent Realityで、B側Branchをできる限り早く閉じ、Action VacuumをTask化によってOne Taskへ変え、Task-FirstからActual Traceへ接続できるか"
+  current_cut_edge: "B-Gate Detection → B-side Branchの継続比較"
+  current_bridge_edge: "Action Vacuum → Task化 → One Task → Task-First"
+  first_legal_move: "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION"
   thread_runtime: "README / handoff / state three-file Ark23 standard"
 evidence_boundary:
   confirmed:
-    - "Wake-Up One-Choice: Human-reported Actual Success"
-    - "Morning caffeine-gum route: multiple Human-reported successful passages; exact count and causal contribution unknown"
-    - "Golden Case Seed exists on Current main"
-    - "Ark23:14 Triad created and Remote Verified"
+    - "Wake-Up One-Choice: Human-reported Actual Success and BBP Origin"
+    - "Reality preceded BBP naming"
+    - "Earlier B-Gate Detection under 主の完全勝利 foreground awareness: Human-reported"
+    - "Post-Detection B-side openness: Human-identified Bottleneck"
+    - "Task-First is on the processing side and Task化 is required upstream"
+    - "Ark23:15 Triad created and Remote Verified"
     - "README / Handoff / State is the Human-sealed default for future Ark23 transitions"
-    - "Action Mode Main / AI-X Subordinate Support is Human-confirmed"
   candidate:
-    - "Laundry-to-Cleaning as the first Stateful Task field"
-    - "Parallel System / Serial Human Interface"
-    - "Task Compiler Loop / One-Transition Dispatcher / Event-Driven Reconnect"
+    - "Virtual-Deadline Fast Close plus Task化 can prevent Action Vacuum"
+    - "Task Node grammar can transfer from household Tasks to Mission Task Nodes"
+    - "Torah Task Hub as a Mission Task Hub / creative sandbox"
   unknown:
-    - "Task Runtime Actual result"
-    - "Laundry-to-Cleaning Actual result and Return Event reconnect"
-    - "continuous operation"
-    - "three-file reproducibility and long-term update cost"
-    - "Torah, Kindle, Minecraft, PM Task, Cross-Domain or Cross-Ark transfer"
+    - "B-Gate Fast-Prune Actual result"
+    - "Fast Close → Task化 → Task-First end-to-end Actual result"
+    - "Task化能力 internalization speed and cross-domain transfer"
+    - "Bed → Toilet-Cleaning → Workout and Laundry → Cleaning Actual chains"
+    - "continuous operation and long-term three-file reproducibility"
 ```
 
-Current authoritative entryはArk23:14 Handoff／README／State Triadである。Read OrderはHandoffが宣言する順序に従い、Target Reconstruction ContractをPASSした場合だけRequired Initial Success Outputを返す。Mutable State revisionはこのRouterへ固定せず、Current Stateから読む。
+Current authoritative entryはArk23:15 Handoff／README／State Triadである。Read OrderはHandoffが宣言する順序に従い、Triad Consistency GateとTarget Reconstruction ContractをPASSした場合だけRequired Initial Success Outputを返す。Mutable State revisionはこのRouterへ固定せず、Current Stateから読む。
 
 [`ark23/README.md`](./ark23/README.md)はArk23 v004 family entry／multi-route routerであり、Explicit Handoff、Explicit Query、Domain Router、Core FallbackおよびThree-File Transition Standardを解決する。Current ActionをHistorical Initial Missionへ戻さない。
 
@@ -248,9 +260,9 @@ routing:
   existing_ark_mission: "Nearest verified Handoff / Query / Runtime"
   cross_ark_support_or_closure: "ark22/README.md"
   complete_victory_family_entry: "ark23/README.md"
-  complete_victory_current_handoff: "ark23/ark23-14/handoff.md"
-  complete_victory_current_runtime: "ark23/ark23-14/README.md"
-  complete_victory_current_state: "ark23/ark23-14/state.json"
+  complete_victory_current_handoff: "ark23/ark23-15/handoff.md"
+  complete_victory_current_runtime: "ark23/ark23-15/README.md"
+  complete_victory_current_state: "ark23/ark23-15/state.json"
   b_pattern_support_source: "ark24/README.md"
   ark24_trigger: "Frozen / Human-controlled / do not auto-execute"
   reusable_prompt_or_query: "../prompts/"
@@ -437,12 +449,12 @@ AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
-Ark23:14 is the current 主の完全勝利 Front-Line Runtime.
-Wake-Up One-Choice Human-reported Actual Success and the Ark23:14 three-file transition artifact set are confirmed.
+Ark23:15 is the current 主の完全勝利 Front-Line Runtime.
+Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
-Task Compiler, Laundry-to-Cleaning Actual operation, continuous operation, and long-term three-file reproducibility remain unknown.
+B-Gate Fast-Prune, Fast Close → Task化 → Task-First Actual operation, continuous operation, and long-term three-file reproducibility remain unknown.
 The preserved continuity relation is Connect → Disconnect → Teshuvah → Reconnect → Connect.
-Ark23 local README is the v004 multi-route family entry and transition standard; Ark23:14 Handoff / README / State is the current Front Line.
+Ark23 local README is the v004 multi-route family entry and transition standard; Ark23:15 Handoff / README / State is the current Front Line.
 Ark24 remains a frozen-trigger Support Field and must not auto-execute.
 Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
 main is the shared GitHub current reality.
