@@ -1,7 +1,7 @@
 ---
 runtime_id: ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD
-version: v001-candidate
-status: target-boot-pending / non-canonical / Human-review-required
+version: v002-candidate
+status: runtime-upgrade / non-canonical / Human-review-required
 project: Ark23
 sequence: 15
 date: 2026-09-07
@@ -13,15 +13,25 @@ repository: yusukefujiijp/ai-project
 ref: main
 boot_route: EXPLICIT_THREAD_HANDOFF
 read_order:
-  - ark-project/ark23/ark23-15/handoff.md
+  - ark-project/ark23/ark23-15/runtime-upgrade-handoff.md
   - ark-project/ark23/ark23-15/README.md
   - ark-project/ark23/ark23-15/state.json
-first_legal_move: WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION
+first_legal_move: WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION
 compiled_thread_title: 'Ark23:15_2026/09/07: "主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field"'
 title_authority: Human retains final title and ChatGPT UI rename authority
 ---
 
 # 【主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field】
+
+## §0A. Current Mission and Scope — 2026-09-08
+
+Current HumanはAstra（軽）へProject InstructionsとGitHub Runtimeを最適化する計画を承認し、Execute GitHub OK / Human Seal OKを与えた。Current Missionは`ASTRA_INSTRUCTIONS_PAIR_ADOPTION_REVIEW`、Current Themeは`Astra向け指示の最適化と適用確認`。Root／Human Foreground Oneは変更しない。
+
+GitHub側v005-candidateとProject貼付用全文の準備後、最初の合法手は`WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION`。Project設定貼付やモデル挙動の改善を観測なしに成功認定しない。新しいCurrent Human Requestはこの待機値より優先する。
+
+以下§0〜§11、§14、§17のTask化Fieldは保存されたField Definitionであり、現在の指示改訂Missionでは保留である。それらの一Relation・一身体動作の停止条件はField観察に適用する。承認済みAI文書改訂の工程数制限や自動Field Trialへの命令として再利用しない。Field再開はHuman Current Requestで明示された範囲に従う。
+
+現在のBootは§12〜§15の再接続契約を使用する。旧`handoff.md`は初期移行のHistorical Artifactとして変更せず保持する。
 
 ## §0. Direct Runtime Compression
 
@@ -664,56 +674,17 @@ Ark23:15 Boot時には次を扱わない。
 
 ## §12. Boot / Full-Read Contract
 
-### §12.1 Exact Boot Order
+Current入口は`ark-project/ark23/ark23-15/runtime-upgrade-handoff.md`。新Handoff → このREADME → Current state.json → Handoffが宣言するCurrent Core Sourceの順で全文読み、SHA／Version／EOF／Identityを照合する。
 
-1. `ark-project/ark23/ark23-15/handoff.md`をBeginning IdentityからExact EOFまで全文読む。
-2. `ark-project/ark23/ark23-15/README.md`をCurrent mainから全文読む。
-3. `ark-project/ark23/ark23-15/state.json`をCurrent mainから全文読む。
-4. Handoff内のSource BindingとTarget BindingをCurrent mainのblob SHA／version／Exact EOFに照合する。
-5. Triad Consistency Gateを通す。
-6. Target Reconstruction Contractを通す。
-7. 両方PASSした場合だけRequired Initial Success Outputを返す。
-
-### §12.2 Non-Substitution Rule
-
-Source Thread会話履歴、Memory、過去回答、Snippet、検索断片、添付コピー、推測をCurrent mainのFull Readへ代用しない。
-
-### §12.3 Failure Contract
-
-不足、不一致、404、JSON parse failure、SHA mismatch、EOF mismatch、revision mismatch、Source／Target混線が一つでもある場合:
-
-- Silent Repairしない。
-- 続行しない。
-- Trialを開始しない。
-- `ARK23_15_CONTEXT_FAILURE`でSTOPする。
-- mismatch field、expected、actualを最小限提示する。
-
----
+Current mainのFull ReadをSource Thread会話履歴、Memory、Snippet、添付コピー、推測で代用しない。旧Handoffの検証Failureを新RouteへのSilent Fallbackで隠さない。
 
 ## §13. Triad Consistency Gate
 
-次をすべて確認する。
-
-- Handoff source = Ark23:14。
-- Handoff target = Ark23:15。
-- README runtime_id = Ark23:15 target runtime。
-- State state_id = `ARK23_15_CURRENT_LIVING_STATE`。
-- State revision = Handoffが要求するcurrent revision。
-- README／Handoff／StateのCurrent Themeが`Task化能力の向上`で一致。
-- First Legal Moveが`WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION`で一致。
-- Source state revision 3 bindingが一致。
-- Target README／Handoff SHA bindingが一致。
-- Exact EOFが一致。
-- Root／Human Foreground One／Guard／Evidence Boundaryが一致。
-- Target stateにrouter cutover remote verificationが記録されている。
-
-一つでも不一致ならFAIL。
-
----
+再接続HandoffがCurrent Gate、Current revision policy、Exact Initial Outputを所有する。StateはこのREADMEと選択HandoffのCurrent SHAへ一致すること。Root／Authority／Guard／Evidence Boundaryは維持する。StateのCurrent Missionは指示改訂の適用Reviewであり、保存されたTask化FieldとはRoleを分ける。旧State revision 2をCurrentへ強制しない。
 
 ## §14. Target Reconstruction Contract
 
-Future AIは次をすべて復元できた場合のみPASSする。
+以下は保存されたTask化FieldのReconstructionである。Current Bootではこの因果とEvidenceを保持し、Current Mission／First Legal Moveは§0Aと新Handoffから解決する。以下のCurrentという表現はField内の座標を指す。
 
 - [PASS] Main OwnerはArk23:15であり、SourceはArk23:14である。
 - [PASS] Ark24:02／Ark24:03はSupplemental Deltaであり、Ark23:14を置換しない。
@@ -739,29 +710,7 @@ Future AIは次をすべて復元できた場合のみPASSする。
 
 ## §15. Required Initial Success Output
 
-Triad Consistency GateとTarget Reconstruction Contractが両方PASSした場合に限り、次をそのまま返す。
-
-```text
-ARK23_15_CONTEXT_READY
-BOOT_ROUTE: EXPLICIT_THREAD_HANDOFF
-TRIAD: README / HANDOFF / STATE FULL READ / CONSISTENT
-RECONSTRUCTION_CONTRACT: PASS
-STATE_REVISION: 2
-SOURCE_BASELINE: ARK23_14 STATE REVISION 3 / EXACT BINDING VERIFIED
-ROOT: 主イェシュア・ハマシア御自身
-CENTRAL_AXIS: TESHUVAH
-HUMAN_FOREGROUND_ONE: 主の完全勝利
-CURRENT_MISSION: TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_FIELD
-CURRENT_THEME: Task化能力の向上
-EVIDENCE_BOUNDARY: PRESERVED
-THREAD_TITLE — COPY & PASTE:
-Ark23:15_2026/09/07: "主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field"
-FIRST LEGAL MOVE: WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION
-```
-
-このExact Success Outputへ表、質問、補足見出し、Next Step、Legacy Bridgeを追加しない。
-
----
+新しい再接続Handoffが要求するExact Outputだけを、全Gate PASS後に返す。旧Initial OutputのSTATE_REVISION: 2やTask化Fieldへの待機値を再演しない。Failure時はHandoffのFailure Contractで停止し、Silent Repairしない。
 
 ## §16. State Update Contract
 
@@ -816,4 +765,4 @@ Human inputなしにField Trial、Task選定、Action、Theory Expansion、Artif
 
 > Ark23:15とは、Wake-Up Actual SuccessをOriginとするBenefit Branch PruningのTopologyを保持し、早期B-Gate Detection後のB側Branchを仮想Deadline Pressureの下でできる限り早く閉じた際に残り得るAction Vacuumを、Task化によってOne Taskへ変換しTask-FirstとTask処理へ接続できるかを、Root Guard・Human Foreground One・Confirmed／Candidate／UnknownのEvidence Boundaryの下で一つのHuman-supplied Current Realityから観察する、非CanonicalなLiving Fieldである。
 
-EOF::ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD::v001-candidate
+EOF::ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD::v002-candidate

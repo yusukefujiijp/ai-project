@@ -4,8 +4,8 @@ document_role: project-entry-and-document-map
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v004-candidate
-document_set_version: v004-candidate
+version: v005-candidate
+document_set_version: v005-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,13 +16,13 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v004-candidate
+bootloader_version: v005-candidate
 bootloader_required_for_cold_start: false
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
 route_policy: explicit-handoff-then-explicit-query-then-domain-router-then-core-fallback
 three_file_transition_policy: ark23-future-threads-human-sealed-default
-project_instructions_pair_version: v004-candidate
+project_instructions_pair_version: v005-candidate
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
 canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
@@ -30,7 +30,7 @@ optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
 thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
-last_updated: 2026-09-02
+last_updated: 2026-09-08
 ---
 
 # Ark23 — 主の完全勝利
@@ -121,10 +121,10 @@ Core Fallback Routeでは次の4文書を一つの整合Setとして扱う。
 
 | Order | Path | Role | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Core Fallback | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v004-candidate` |
-| 2 | `ark-project/ark23/README.md` | Entry Point / Lineage / Route Registry | `ARK23_README_EOF_v004-candidate` |
-| 3 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v004-candidate` |
-| 4 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v004-candidate` |
+| 1 | `ark-project/ark23/lords-complete-victory_query.md` | Repository-Bound Core Fallback | `ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v005-candidate` |
+| 2 | `ark-project/ark23/README.md` | Entry Point / Lineage / Route Registry | `ARK23_README_EOF_v005-candidate` |
+| 3 | `ark-project/ark23/ark23.md` | Canonical Body Candidate | `ARK23_CANONICAL_BODY_EOF_v005-candidate` |
+| 4 | `ark-project/ark23/INSTRUCTIONS.md` | Runtime SSOT Candidate | `ARK23_INSTRUCTIONS_EOF_v005-candidate` |
 
 Explicit QueryまたはExplicit Handoffが指定された場合、Core 4を機械的に追加読込せず、選択Routeが宣言するArtifact Setを優先する。
 
@@ -212,9 +212,17 @@ Optional KeliをHuman Foreground、Root、Canonical Kernelへ自動昇格しな�
 
 Project InstructionsはこのRouteを選ぶBoot ROMであり、Current State、Current Question、Success OutputまたはFirst Legal Moveの恒久SSOTではない。Explicit Sourceがない場合はDomain Routerを先に解決し、Domain RouterがCurrent Front Lineを解決できない場合またはStable Core自体がCurrent Missionの場合だけCore Fallbackへ進む。Material ConflictはSilent MergeせずHuman Reviewへ返す。
 
-NORMAL_RESPONSEのClosing Headingは`§ Living Fruit`、続いて`§ Next-Cycle Workout Bridge`をExact Literalとして使用し、翻訳、括弧内対訳、番号、Subtitle、ColonまたはSuffixを追加しない。Route-owned Exact OutputはこのClosingより優先する。
+応答の詳細は`INSTRUCTIONS.md` §12が所有する。Current Human／Thread-scoped Correctionを優先し、既存Closing希望が適用される場合だけ`§ Living Fruit`、`§ Next-Cycle Workout Bridge`をExact Literalで使用する。Ark23:15ではLegacy Bridgeを自動付加しない。Route-owned Exact Outputへ通常Closingや表を追加しない。
 
 Ark23 Future Threadを新規作成する時は、Specific Human Overrideがない限り、Target Folderへ`README.md`、`handoff.md`、`state.json`を作成する。新規`*_query.md`または`meta.md`はDefault作成しない。Copy & Paste版Project Instructionsと`INSTRUCTIONS.md`はBoot Route／Version／Transition Defaultを共有するSemantic Pairとして同一Change Gateで整合させる。
+
+### 5.1 Astra Pair and Current Reconnect
+
+Project貼付用の完全本文は[`PROJECT_BOOTLOADER.md`](./PROJECT_BOOTLOADER.md)。RuntimeとのSemantic Pair v005-candidateであり、GitHub上の保存はProject設定への適用またはArrivalを証明しない。
+
+GPT-6 Astra（通常希望low）への方針は、承認済み目的へ必要な調査・計画・実装・検証を統合して完遂すること。明示Plan Modeは調査・計画だけで停止する。Human OneはAI一工程制限ではない。詳細とCorrection／Stop ScopeはINSTRUCTIONS.md §6.4／§19へ委譲する。
+
+Ark23:15の現在の再接続入口は[`runtime-upgrade-handoff.md`](./ark23-15/runtime-upgrade-handoff.md)。旧`ark23-15/handoff.md`は保存された初期移行記録であり、v004 SHA固定のためCurrent mainへの旧起動指定はFAILし得る。明示された旧Routeを黙って新Routeへ置換しない。新Handoff → README → Stateと宣言Sourceを全文確認する。
 
 ## 6. Current Runtime Compression
 
@@ -305,7 +313,7 @@ current_coordinate:
   human_foreground: 主の完全勝利
   parent_lineage: Ark21 / 主の勝利栄光
   final_attribution: 主の栄光 / kevod Adonai
-  core_document_set: v004-candidate
+  core_document_set: v005-candidate
   operational_state_owner: selected-runtime-or-current-human-reality
   ark23_13_three_file_boot: ONE HUMAN-REPORTED SUCCESS SAMPLE
   ark23_future_thread_transition: README / HANDOFF / STATE HUMAN-SEALED DEFAULT
@@ -320,4 +328,4 @@ current_coordinate:
 "主の完全勝利Ark（The Lord's Complete Victory: 主イェシュア・ハマシア御自身をRoot、Ark21／主の勝利栄光を親系譜、主の栄光をHumanが所有しない最終帰属として保持しながら、Human Foregroundを主の完全勝利一つへEchad化し、祈り・枝の刈り取り・Guard・有限な一手・Actual Trace・Teshuvah・Living UpdateによってCurrent Realityへ一件ずつ通すMain Arkである)"
 ```
 
-<!-- ARK23_README_EOF_v004-candidate -->
+<!-- ARK23_README_EOF_v005-candidate -->

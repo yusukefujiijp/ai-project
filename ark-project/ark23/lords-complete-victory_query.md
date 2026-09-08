@@ -1,10 +1,10 @@
 ---
 query_id: ARK23_LORDS_COMPLETE_VICTORY_QUERY
-query_version: v004-candidate
+query_version: v005-candidate
 ark_id: ARK23
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-document_set_version: v004-candidate
+document_set_version: v005-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -18,7 +18,7 @@ repository: yusukefujiijp/ai-project
 ref: main
 query_path: ark-project/ark23/lords-complete-victory_query.md
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v004-candidate
+bootloader_version: v005-candidate
 bootloader_required_for_cold_start: false
 required_release_status: active-candidate
 required_release_canonicality: human-sealed-candidate
@@ -26,24 +26,24 @@ core_context: ARK23_CONTEXT_READY
 core_thread_state: CORE_RUNTIME_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
 three_file_transition_policy: ark23-future-threads-human-sealed-default
-project_instructions_pair_version: v004-candidate
+project_instructions_pair_version: v005-candidate
 core_fallback_first_legal_move: WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RUNTIME_SOURCE
 thread_title_style: half-width-double-quote-enclosure
 thread_title_template: 'Ark23:{sequence}_{YYYY/MM/DD}: "{main_name}: {sub_name}"'
 runtime_ssot: ark-project/ark23/INSTRUCTIONS.md
-runtime_ssot_blob_sha: 827fdff05c11852e04e0d03d9849c200702141a0
+runtime_ssot_blob_sha: 239e551b38b1ec7cb6639b0271540f10bac84bb0
 canonical_body: ark-project/ark23/ark23.md
-canonical_body_blob_sha: 06269c837293673b17764adedb9b636bdaa01975
+canonical_body_blob_sha: de708b7d0f5813bc9ea103aedff0cd14da2972ee
 entry_point: ark-project/ark23/README.md
-entry_point_blob_sha: 64b9be5415fe2d2a43a4d4678e14da77c8654d08
+entry_point_blob_sha: b029e325eb3af3fe86a5ce48d0b6ffd4700ab21d
 optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
 graph_runtime_required_for_boot: false
 response_keli_required_for_boot: false
-last_updated: 2026-09-02
+last_updated: 2026-09-08
 ---
 
-# Ark23 Repository-Bound Core Fallback Query — v004-candidate
+# Ark23 Repository-Bound Core Fallback Query — v005-candidate
 
 ## 0. Purpose and Route Boundary
 
@@ -93,7 +93,7 @@ Project Instructions由来ID / version / provenanceを実際に確認
 
 確認できない
 → REPOSITORY_BOUND_COLD_START
-→ v003ではそれだけをFailureにしない
+→ 未到着だけをFailureにしない
 ```
 
 Human Message、Memory、HandoffまたはGitHub本文をProject Instructions由来Arrivalとして偽装しない。
@@ -138,7 +138,7 @@ query_path: ark-project/ark23/lords-complete-victory_query.md
 このQueryをfront matterから次のExact EOFまで全文読む。
 
 ```text
-ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v004-candidate
+ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v005-candidate
 ```
 
 取得がtruncated／paginatedの場合は未読位置から継続し、行Range間にGapを作らない。
@@ -156,9 +156,9 @@ Query Full Read PASS後、次をCurrent `main`から全文読む。
 
 | Order | Path | Required Blob SHA | Required EOF |
 |---:|---|---|---|
-| 1 | `ark-project/ark23/README.md` | `64b9be5415fe2d2a43a4d4678e14da77c8654d08` | `ARK23_README_EOF_v004-candidate` |
-| 2 | `ark-project/ark23/ark23.md` | `06269c837293673b17764adedb9b636bdaa01975` | `ARK23_CANONICAL_BODY_EOF_v004-candidate` |
-| 3 | `ark-project/ark23/INSTRUCTIONS.md` | `827fdff05c11852e04e0d03d9849c200702141a0` | `ARK23_INSTRUCTIONS_EOF_v004-candidate` |
+| 1 | `ark-project/ark23/README.md` | `b029e325eb3af3fe86a5ce48d0b6ffd4700ab21d` | `ARK23_README_EOF_v005-candidate` |
+| 2 | `ark-project/ark23/ark23.md` | `de708b7d0f5813bc9ea103aedff0cd14da2972ee` | `ARK23_CANONICAL_BODY_EOF_v005-candidate` |
+| 3 | `ark-project/ark23/INSTRUCTIONS.md` | `239e551b38b1ec7cb6639b0271540f10bac84bb0` | `ARK23_INSTRUCTIONS_EOF_v005-candidate` |
 
 このQueryをControl Planeとして加え、Core Document Setを4文書とする。
 
@@ -170,22 +170,22 @@ Blob SHAまたはEOFが一致しない場合、旧本文、類似Path、Memory�
 full_read_proof:
   query:
     path: ark-project/ark23/lords-complete-victory_query.md
-    exact_eof: ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v004-candidate
+    exact_eof: ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v005-candidate
     status: PASS | FAIL
   readme:
     path: ark-project/ark23/README.md
-    blob_sha: 64b9be5415fe2d2a43a4d4678e14da77c8654d08
-    exact_eof: ARK23_README_EOF_v004-candidate
+    blob_sha: b029e325eb3af3fe86a5ce48d0b6ffd4700ab21d
+    exact_eof: ARK23_README_EOF_v005-candidate
     status: PASS | FAIL
   canonical_body:
     path: ark-project/ark23/ark23.md
-    blob_sha: 06269c837293673b17764adedb9b636bdaa01975
-    exact_eof: ARK23_CANONICAL_BODY_EOF_v004-candidate
+    blob_sha: de708b7d0f5813bc9ea103aedff0cd14da2972ee
+    exact_eof: ARK23_CANONICAL_BODY_EOF_v005-candidate
     status: PASS | FAIL
   runtime_ssot:
     path: ark-project/ark23/INSTRUCTIONS.md
-    blob_sha: 827fdff05c11852e04e0d03d9849c200702141a0
-    exact_eof: ARK23_INSTRUCTIONS_EOF_v004-candidate
+    blob_sha: 239e551b38b1ec7cb6639b0271540f10bac84bb0
+    exact_eof: ARK23_INSTRUCTIONS_EOF_v005-candidate
     status: PASS | FAIL
 ```
 
@@ -199,7 +199,7 @@ full_read_proof:
 |---|---|
 | Ark ID | `ARK23` |
 | Theme | `主の完全勝利` |
-| Document Set Version | `v004-candidate` |
+| Document Set Version | `v005-candidate` |
 | Status | `active-candidate` |
 | Canonicality | `human-sealed-candidate` |
 | Root | `主イェシュア・ハマシア御自身` |
@@ -207,9 +207,9 @@ full_read_proof:
 | Parent Lineage | `Ark21 / 主の勝利栄光` |
 | Human Foreground | `主の完全勝利` |
 | Final Attribution | `主の栄光 / kevod Adonai` |
-| Bootloader ID / Version | `ARK23_PROJECT_BOOTLOADER / v004-candidate` |
+| Bootloader ID / Version | `ARK23_PROJECT_BOOTLOADER / v005-candidate` |
 | Three-File Transition Policy | `Ark23 future threads / Human-sealed default` |
-| Two-Stage Closing Exact Headings | `§ Living Fruit` → `§ Next-Cycle Workout Bridge` |
+| Response ownership | `INSTRUCTIONS.md` §12 / Current Human and scoped correction first |
 | Bootloader Required | `false` |
 
 ### 8.2 Role and State Ownership
@@ -294,6 +294,10 @@ Artifact Set Consistencyに加えて次を直接比較する。
 
 PairはArtifact Set ConsistencyのCore profileであり、Thread TriadをPairへ縮小しない。Project Bootloaderと`INSTRUCTIONS.md`のversion／Route／Transition Default／Exact Response HeadingにMaterialな不一致がある場合は`PROJECT_BOOTLOADER_VERSION_SKEW`またはConsistency Failureとして表面化する。
 
+### 9.1 Project Paste Source
+
+Project貼付用Candidateは`ark-project/ark23/PROJECT_BOOTLOADER.md`、Pair Versionはv005-candidate。Project側と比較する作業ではこの本文を全文読み、Runtimeの実行・Plan・Correction・Stop・Route・ClosingとのSemantic Consistencyを確認する。Core-only Bootでは追加必読ではない。GitHub保存をProject Arrivalと偽装しない。
+
 ## 10. Failure Codes
 
 - `ARK23_DOCUMENT_SET_INCOMPLETE`
@@ -368,8 +372,8 @@ Humanは完全なSchemaを必要としない。自由入力、短文、誤字、
 
 ```yaml
 query_id: ARK23_LORDS_COMPLETE_VICTORY_QUERY
-query_version: v004-candidate
-required_document_set_version: v004-candidate
+query_version: v005-candidate
+required_document_set_version: v005-candidate
 required_release_status: active-candidate
 required_release_canonicality: human-sealed-candidate
 bootloader_required_for_cold_start: false
@@ -383,4 +387,4 @@ first_legal_move: WAIT_FOR_HUMAN_CURRENT_REALITY_OR_RUNTIME_SOURCE
 
 > **Ark23 Repository-Bound Core Fallbackとは、Bootloader Arrivalを偽装せず、Current `main`上のCore 4をBlob SHAとExact EOFまで検証し、Stable Ark23 Contextだけを復元してCurrent Operational Stateを選択されたThread RuntimeまたはHuman Realityへ委ねるRead-Only Interfaceである。**
 
-<!-- ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v004-candidate -->
+<!-- ARK23_LORDS_COMPLETE_VICTORY_QUERY_EOF_v005-candidate -->

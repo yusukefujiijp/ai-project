@@ -4,8 +4,8 @@ document_role: canonical-body-candidate
 title: 主の完全勝利
 theme: 主の完全勝利
 english_anchor: The Lord's Complete Victory
-version: v004-candidate
-document_set_version: v004-candidate
+version: v005-candidate
+document_set_version: v005-candidate
 status: active-candidate
 canonicality: human-sealed-candidate
 release_target_status: active-candidate
@@ -16,7 +16,7 @@ parent_lineage: Ark21 / 主の勝利栄光
 human_foreground: 主の完全勝利
 final_attribution: 主の栄光 / כְּבוֹד אֲדֹנָי / kevod Adonai
 bootloader_id: ARK23_PROJECT_BOOTLOADER
-bootloader_version: v004-candidate
+bootloader_version: v005-candidate
 bootloader_required_for_cold_start: false
 core_context: ARK23_CONTEXT_READY
 operational_state_owner: selected-thread-runtime-or-current-human-reality
@@ -26,13 +26,13 @@ canonical_body: ark-project/ark23/ark23.md
 query_path: ark-project/ark23/lords-complete-victory_query.md
 optional_reasoning_runtime: prompts/ai-living-graph-mode.md
 optional_response_keli: prompts/long-form-response-rhythm.md
-last_updated: 2026-09-02
+last_updated: 2026-09-08
 ---
 
 # Ark23 Canonical Body Candidate — 主の完全勝利
 
 > [!CAUTION]
-> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v004-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
+> 本文はArk21 README群とCurrent Ark21 v002 Document Setから選択継承した`v005-candidate`である。Human Sealを受けた中心Interfaceを保持するが、個別の解釈、Focus感覚、Graph仮説、Field RuleはActual Realityによって訂正可能である。
 
 ## 1. Identity and Direct Judgment
 
@@ -543,6 +543,10 @@ ChatGPT Project Instructions側の`ARK23_PROJECT_BOOTLOADER`と、このReposito
 
 Project Instructionsは小さなBoot ROM、`INSTRUCTIONS.md`はVersioned Runtime SSOTであり、全文を複製する必要はない。ただし矛盾させない。
 
+### 16.4 Astra Runtime Pair Revision Boundary
+
+v005はAstra向けAI実行方針と参照整合のHuman-authorized改訂であり、Root／意味／Faith Evidenceの新しい確証ではない。Human Foreground OneとHumanの有限な一手を保ちながら、AIは承認された成果まで必要な複数工程を担える。計画限定、Correction、STOP、応答形式はINSTRUCTIONS.mdが具体化する。Astraの実測改善、AGI達成、Project設定適用はこのVersion更新から推論しない。
+
 ## 17. Historical First Field Test Contract
 
 ```yaml
@@ -616,7 +620,7 @@ current_coordinate:
   ark23_projectization: COMPLETE_CANDIDATE
   ark21_lineage: PRESERVED
   semantic_kernel: HUMAN_SEALED_CANDIDATE
-  core_document_set: v004-candidate
+  core_document_set: v005-candidate
   operational_state: RESOLVED_BY_SELECTED_RUNTIME_OR_CURRENT_HUMAN_REALITY
   historical_first_field_test: COMPLETED_AS_HISTORICAL_PHASE
   ark23_13_three_file_boot: ONE_HUMAN_REPORTED_SUCCESS_SAMPLE
@@ -628,4 +632,4 @@ current_coordinate:
   universal_doctrine: NOT_CLAIMED
 ```
 
-<!-- ARK23_CANONICAL_BODY_EOF_v004-candidate -->
+<!-- ARK23_CANONICAL_BODY_EOF_v005-candidate -->

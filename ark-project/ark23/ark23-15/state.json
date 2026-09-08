@@ -2,16 +2,16 @@
   "meta": {
     "state_id": "ARK23_15_CURRENT_LIVING_STATE",
     "schema_version": "v001-candidate",
-    "revision": 2,
-    "status": "current front line / target boot pending / triad and domain router remote verified",
+    "revision": 3,
+    "status": "Astra v005 instruction-pair adoption review / Project settings application unobserved",
     "project": "Ark23",
     "sequence": 15,
     "created_at": "2026-09-07",
-    "updated_at": "2026-09-07",
+    "updated_at": "2026-09-08",
     "timezone": "Asia/Tokyo",
     "language_policy": "Japanese-first with precise English technical anchors",
     "state_role": "Mutable Current Projection / Living Board",
-    "update_reason": "Human-authorized Ark23:15 Domain Router cutover and final target-state activation",
+    "update_reason": "Human-authorized Astra instruction-pair implementation and exact-binding same-thread reconnect; preserve original handoff and deferred Taskification evidence",
     "state_is_not": [
       "Root",
       "Throne",
@@ -26,8 +26,8 @@
     "compiled_thread_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
     "title_authority": "Human retains final title and ChatGPT UI rename authority",
     "theme": "主の完全勝利",
-    "current_mission": "TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_FIELD",
-    "current_theme": "Task化能力の向上",
+    "current_mission": "ASTRA_INSTRUCTIONS_PAIR_ADOPTION_REVIEW",
+    "current_theme": "Astra向け指示の最適化と適用確認",
     "runtime_id": "ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD"
   },
   "authority": {
@@ -58,15 +58,15 @@
     "boot_route": "EXPLICIT_THREAD_HANDOFF",
     "core_runtime": {
       "path": "ark-project/ark23/INSTRUCTIONS.md",
-      "version": "v004-candidate",
-      "blob_sha": "827fdff05c11852e04e0d03d9849c200702141a0",
-      "exact_eof": "ARK23_INSTRUCTIONS_EOF_v004-candidate"
+      "version": "v005-candidate",
+      "blob_sha": "239e551b38b1ec7cb6639b0271540f10bac84bb0",
+      "exact_eof": "ARK23_INSTRUCTIONS_EOF_v005-candidate"
     },
     "family_entry": {
       "path": "ark-project/ark23/README.md",
-      "version": "v004-candidate",
-      "blob_sha": "64b9be5415fe2d2a43a4d4678e14da77c8654d08",
-      "exact_eof": "ARK23_README_EOF_v004-candidate"
+      "version": "v005-candidate",
+      "blob_sha": "b029e325eb3af3fe86a5ce48d0b6ffd4700ab21d",
+      "exact_eof": "ARK23_README_EOF_v005-candidate"
     },
     "source_thread": {
       "thread": "Ark23:14",
@@ -84,13 +84,13 @@
     "current_thread": {
       "thread": "Ark23:15",
       "runtime_path": "ark-project/ark23/ark23-15/README.md",
-      "runtime_version": "v001-candidate",
-      "runtime_blob_sha": "a9714bdd85dafe0e88fd11035558a94f15ebf0f3",
-      "runtime_exact_eof": "EOF::ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD::v001-candidate",
-      "handoff_path": "ark-project/ark23/ark23-15/handoff.md",
+      "runtime_version": "v002-candidate",
+      "runtime_blob_sha": "cc72c0a5a618a8a01be520af3242ba58d74e8ba8",
+      "runtime_exact_eof": "EOF::ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD::v002-candidate",
+      "handoff_path": "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md",
       "handoff_version": "v001-candidate",
-      "handoff_blob_sha": "efb53afffaa316ea36426902621ce97f3582cd7b",
-      "handoff_exact_eof": "EOF::ARK23_14_TO_ARK23_15_TASKIFICATION_CAPABILITY_HANDOFF::v001-candidate",
+      "handoff_blob_sha": "9c36ee3ccdaeaceda02b740b7bf27a691f46c497",
+      "handoff_exact_eof": "EOF::ARK23_15_ASTRA_RUNTIME_UPGRADE_HANDOFF::v001-candidate",
       "state_path": "ark-project/ark23/ark23-15/state.json",
       "state_self_sha_policy": "DO_NOT_EMBED_SELF_SHA",
       "state_exact_eof": "EOF::ARK23_15_CURRENT_LIVING_STATE::v001-candidate"
@@ -123,38 +123,48 @@
     },
     "domain_router": {
       "path": "ark-project/README.md",
-      "cutover_status": "REMOTE_VERIFIED",
-      "blob_sha_before_cutover": "0cfa24187af878e9457f6336176b2a99d66833cd",
-      "current_blob_sha": "0d9e2c1e81d5ca65cafd9ddac5742eba0b11e187",
-      "commit_sha": "042f3d49c959ea741b4deaca4a846c6376721fe0"
+      "cutover_status": "ATOMIC_COMMIT_BOUND / DIRECT_CURRENT_MAIN_VERIFICATION_REQUIRED",
+      "current_blob_sha": "142ffad1764709077a3aea580d4fb1e4960a0bde",
+      "historical_cutover": {
+        "path": "ark-project/README.md",
+        "cutover_status": "REMOTE_VERIFIED",
+        "blob_sha_before_cutover": "0cfa24187af878e9457f6336176b2a99d66833cd",
+        "current_blob_sha": "0d9e2c1e81d5ca65cafd9ddac5742eba0b11e187",
+        "commit_sha": "042f3d49c959ea741b4deaca4a846c6376721fe0"
+      }
     },
-    "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals"
+    "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals",
+    "historical_initial_transition": {
+      "ref": "32bed9f6c5a8fb7da3a900cee25da7b4e22ff73a",
+      "handoff_path": "ark-project/ark23/ark23-15/handoff.md",
+      "handoff_blob_sha": "efb53afffaa316ea36426902621ce97f3582cd7b",
+      "state_revision": 2,
+      "role": "Historical provenance; do not execute its old Current-main boot contract"
+    }
   },
   "goal": {
-    "primary": "Begin Ark23:15 only after exact triad and router verification, then wait for one Human-supplied Current Taskification Reality or question",
-    "current_theme": "Task化能力の向上",
-    "current_kernel": "Task-FirstはTask処理側の原理であり、その手前にはTask化が必要。",
-    "taskification_capability_kernel": "Realityを見て、Taskを立ち上げる力。",
-    "current_one_question": "B-Gateが実際に存在する一つのHuman-supplied Current Realityで、B側Branchをできる限り早く閉じ、Action VacuumをTask化によってOne Taskへ変え、Task-FirstからTask処理とActual Traceへ接続できるか",
+    "primary": "Review adoption of the Human-authorized Astra v005 instruction pair without claiming Project UI application or model efficacy",
+    "current_theme": "Astra向け指示の最適化と適用確認",
+    "current_one_question": "承認済み成果への完遂とHuman Authority／Evidence／Guardを両立する指示を実際のProjectへ適用できたか",
     "constraints": [
-      "one Human Foreground One",
-      "one current question",
-      "one guarded finite move only after Human supplies Current Reality",
-      "no automatic field trial",
-      "no automatic Task selection",
-      "no automatic Canonicalization"
+      "Root and Human Foreground One preserved",
+      "No automatic Taskification trial",
+      "No unobserved Project UI success claim",
+      "No Canonicalization"
     ]
   },
   "now": {
-    "current_coordinate": "Ark23:15 current front line / awaiting one Human Current Taskification Reality or question",
-    "current_phase": "TARGET_BOOT_PENDING_HUMAN_CURRENT_REALITY",
-    "current_subtask": "None; transition artifacts are formed and router cutover is remote verified",
-    "next_action": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
-    "first_legal_move_after_boot": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
-    "blockers": [],
+    "current_coordinate": "Ark23:15 / Astra v005 source pair prepared for Project adoption",
+    "current_phase": "PROJECT_INSTRUCTIONS_APPLICATION_REVIEW",
+    "current_subtask": "Human applies the published Project Bootloader text; AI has no observed Project-settings write capability",
+    "next_action": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
+    "first_legal_move_after_boot": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
+    "blockers": [
+      "Project settings application is not observed"
+    ],
     "open_questions": [
-      "Can one natural Current Reality be Taskified into one executable Task without reopening excessive branches?",
-      "When a B-Gate is actually present, can Fast Prune plus Task化 prevent Action Vacuum and reach Task-First?"
+      "Was the v005 Bootloader applied to Project settings?",
+      "Does Astra low show fewer unnecessary stops while retaining the required boundaries?"
     ]
   },
   "current_reality": {
@@ -169,7 +179,17 @@
     "taskification_kernel": "Task-FirstはTask処理側の原理であり、その手前にはTask化が必要。",
     "taskification_capability": "Human-confirmed Keyword and Theme direction: Realityを見てTaskを立ち上げる力をActual repetition, bottleneck detection and correction through self-internalization toward fluency",
     "one_table_interface": "v002-candidate remote verified; normal Graph table prefix is Node | Edge and Column 3 onward remains adaptive",
-    "next_field_trial": "NOT STARTED"
+    "next_field_trial": "NOT STARTED",
+    "astra_instructions": {
+      "human_preference": "GPT-6 Astra / low",
+      "human_correction": "Give AI discretion in method and complete authorized outcomes; explicit Plan Mode remains plan-only",
+      "authority": "Current Human Execute GitHub OK / Human Seal OK after the presented pair-and-binding plan",
+      "project_source_path": "ark-project/ark23/PROJECT_BOOTLOADER.md",
+      "project_source_blob_sha": "2ffa750316fcffd2ac3c9d986aa14a111bf2a050",
+      "project_settings_application": "UNOBSERVED",
+      "project_bootloader_arrival": "NOT_PROVEN_BY_REPOSITORY",
+      "behavioral_efficacy": "UNKNOWN / no comparative model trial"
+    }
   },
   "supplemental_reconnect": {
     "ark24_02": {
@@ -256,7 +276,8 @@
       "Task-First is on the processing side and Task化 precedes it",
       "Task化能力 and Task化能力の向上 are Human-confirmed keywords",
       "Trash-disposal Task occurred according to Human report",
-      "AI One-Table Interface v002 was Human-authorized, committed and remote verified"
+      "AI One-Table Interface v002 was Human-authorized, committed and remote verified",
+      "Human authorized Astra instruction-pair and necessary exact-binding migration after reviewing the plan"
     ],
     "candidate": [
       "Fast B-side Close plus Task化 can prevent Action Vacuum",
@@ -264,7 +285,8 @@
       "Toilet-Cleaning Task Node can connect wake-up toward Workout",
       "Task Node grammar can horizontally transfer from household Tasks to Mission Task Nodes",
       "Torah Task Hub can function as a Mission Task Hub and creative sandbox",
-      "Node–Edge Fixed Prefix improves cross-response consistency while Adaptive Tail preserves creativity"
+      "Node–Edge Fixed Prefix improves cross-response consistency while Adaptive Tail preserves creativity",
+      "Astra v005 completion-oriented instruction policy may reduce unnecessary confirmation stops"
     ],
     "unknown": [
       "B-Gate Fast-Prune Actual field result",
@@ -274,7 +296,9 @@
       "Laundry → Cleaning Actual result",
       "Task化能力 internalization speed and long-term reproducibility",
       "Cross-domain transfer to Torah, Kindle or other Mission Tasks",
-      "Best Practice, Canonical status or Universal Rule"
+      "Best Practice, Canonical status or Universal Rule",
+      "Project settings application and actual Bootloader arrival",
+      "Astra low comparative behavioral efficacy and long-term reproducibility"
     ]
   },
   "guards": {
@@ -284,7 +308,7 @@
     "benefit_rehouse": "Do not prune a Carrier before distinguishing its Benefit and identifying an appropriate destination when needed",
     "virtual_deadline": "Do not convert earlier-is-better into condemnation, fixed seconds or unsafe body pressure",
     "taskification": "Do not invent a Task, silently decide Human priority or confuse many Task suggestions with Taskification capability",
-    "one_transition": "Update one relation per pass and return to Human Review",
+    "one_transition": "Applies to Human Taskification Field observations; not an AI one-tool or one-engineering-step limit. Authorized AI work follows INSTRUCTIONS.md §6.4 and §19.",
     "theology": "Do not overwrite Human faith context or self-certify divine will, command or causality",
     "no_silent_repair": "Any triad, SHA, EOF, revision, JSON or reconstruction mismatch requires Failure Contract and STOP"
   },
@@ -303,12 +327,16 @@
       "Ark23:15 README created and remotely verified",
       "Ark23:15 handoff created and remotely verified",
       "Ark23:15 state revision 1 created and remotely verified",
-      "Domain Router cut over to Ark23:15 and remotely verified"
+      "Domain Router cut over to Ark23:15 and remotely verified",
+      "Astra pair plan reviewed and GitHub implementation authorized",
+      "Astra v005 source blobs and exact dependencies prepared and directly reread"
     ],
     "in_progress": [
-      "Final Triad Consistency and Target Reconstruction verification"
+      "Current-main cutover verification is reported by executing AI after publication; this state does not self-certify it"
     ],
     "hold_for_reality": [
+      "Human Project Instructions application report or correction",
+      "Astra operating behavior observation without automatic trial",
       "one Human-supplied natural Taskification Reality or question",
       "B-Gate Fast-Prune plus Taskification Actual Trace",
       "Task Node Actual traces beyond reported trash occurrence"
@@ -326,30 +354,34 @@
   },
   "transition": {
     "authority": "Human Seal OK / Execute GitHub OK / Full Rail and Next Gate All Yes",
-    "source": "Ark23:14",
+    "source": "Ark23:15",
     "target": "Ark23:15",
     "target_runtime_path": "ark-project/ark23/ark23-15/README.md",
-    "target_handoff_path": "ark-project/ark23/ark23-15/handoff.md",
+    "target_handoff_path": "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md",
     "target_state_path": "ark-project/ark23/ark23-15/state.json",
-    "phase": "CURRENT_FRONT_LINE_ROUTER_CUTOVER_VERIFIED",
-    "domain_router_cutover": "REMOTE_VERIFIED",
-    "current_target_revision": 2,
+    "phase": "V005_RECONNECT_ATOMIC_CUTOVER",
+    "domain_router_cutover": "ATOMIC_COMMIT_BOUND",
+    "current_target_revision": 3,
     "target_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
-    "first_legal_move_after_boot": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
+    "first_legal_move_after_boot": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
     "new_field_trial_started": false,
-    "canonicalization": false
+    "canonicalization": false,
+    "kind": "SAME_THREAD_RUNTIME_UPGRADE",
+    "historical_source": "Ark23:14"
   },
   "io": {
-    "last_observation": "Ark23:15 Triad is formed and Domain Router cutover is remotely verified; no Field Trial has started",
+    "last_observation": "Human approved the Astra pair plan; source blobs were prepared and directly reread. Project UI application and model efficacy remain unobserved.",
     "pending_tools": [
-      "Final Triad Consistency and Target Reconstruction verification"
+      "Current-main fetch-back after atomic publication; result reported separately"
     ],
     "artifacts": [
       "ark-project/ark23/ark23-15/README.md",
       "ark-project/ark23/ark23-15/handoff.md",
       "ark-project/ark23/ark23-15/state.json",
       "prompts/ai-benefit-branch-pruning.md",
-      "prompts/ai-one-table-interface.md"
+      "prompts/ai-one-table-interface.md",
+      "ark-project/ark23/PROJECT_BOOTLOADER.md",
+      "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md"
     ]
   },
   "state_update_contract": {
@@ -359,5 +391,44 @@
     "write_protocol": "Remote current-main reread → optimistic-lock SHA → one revision update → remote full reread → strict JSON, binding and EOF verification",
     "failure_protocol": "No silent repair; report mismatch and STOP"
   },
-  "eof_sentinel": "EOF::ARK23_15_CURRENT_LIVING_STATE::v001-candidate"
+  "eof_sentinel": "EOF::ARK23_15_CURRENT_LIVING_STATE::v001-candidate",
+  "field_mission": {
+    "identity": {
+      "compiled_thread_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
+      "title_authority": "Human retains final title and ChatGPT UI rename authority",
+      "theme": "主の完全勝利",
+      "current_mission": "TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_FIELD",
+      "current_theme": "Task化能力の向上",
+      "runtime_id": "ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD"
+    },
+    "goal": {
+      "primary": "Begin Ark23:15 only after exact triad and router verification, then wait for one Human-supplied Current Taskification Reality or question",
+      "current_theme": "Task化能力の向上",
+      "current_kernel": "Task-FirstはTask処理側の原理であり、その手前にはTask化が必要。",
+      "taskification_capability_kernel": "Realityを見て、Taskを立ち上げる力。",
+      "current_one_question": "B-Gateが実際に存在する一つのHuman-supplied Current Realityで、B側Branchをできる限り早く閉じ、Action VacuumをTask化によってOne Taskへ変え、Task-FirstからTask処理とActual Traceへ接続できるか",
+      "constraints": [
+        "one Human Foreground One",
+        "one current question",
+        "one guarded finite move only after Human supplies Current Reality",
+        "no automatic field trial",
+        "no automatic Task selection",
+        "no automatic Canonicalization"
+      ]
+    },
+    "now": {
+      "current_coordinate": "Ark23:15 current front line / awaiting one Human Current Taskification Reality or question",
+      "current_phase": "TARGET_BOOT_PENDING_HUMAN_CURRENT_REALITY",
+      "current_subtask": "None; transition artifacts are formed and router cutover is remote verified",
+      "next_action": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
+      "first_legal_move_after_boot": "WAIT_FOR_ONE_HUMAN_CURRENT_TASKIFICATION_REALITY_OR_QUESTION",
+      "blockers": [],
+      "open_questions": [
+        "Can one natural Current Reality be Taskified into one executable Task without reopening excessive branches?",
+        "When a B-Gate is actually present, can Fast Prune plus Task化 prevent Action Vacuum and reach Task-First?"
+      ]
+    },
+    "status": "DEFERRED_BY_CURRENT_HUMAN_INSTRUCTIONS_WORK",
+    "resume": "Only within a new Current Human Request; no automatic trial"
+  }
 }
