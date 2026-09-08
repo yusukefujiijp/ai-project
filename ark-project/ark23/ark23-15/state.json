@@ -2,8 +2,8 @@
   "meta": {
     "state_id": "ARK23_15_CURRENT_LIVING_STATE",
     "schema_version": "v001-candidate",
-    "revision": 3,
-    "status": "Astra v005 instruction-pair adoption review / Project settings application unobserved",
+    "revision": 4,
+    "status": "GitHub Astra v005 pair and reconnect remotely verified / Project settings application unobserved",
     "project": "Ark23",
     "sequence": 15,
     "created_at": "2026-09-07",
@@ -11,7 +11,7 @@
     "timezone": "Asia/Tokyo",
     "language_policy": "Japanese-first with precise English technical anchors",
     "state_role": "Mutable Current Projection / Living Board",
-    "update_reason": "Human-authorized Astra instruction-pair implementation and exact-binding same-thread reconnect; preserve original handoff and deferred Taskification evidence",
+    "update_reason": "Record observed current-main full-content and SHA verification after the authorized atomic v005 cutover",
     "state_is_not": [
       "Root",
       "Throne",
@@ -123,7 +123,7 @@
     },
     "domain_router": {
       "path": "ark-project/README.md",
-      "cutover_status": "ATOMIC_COMMIT_BOUND / DIRECT_CURRENT_MAIN_VERIFICATION_REQUIRED",
+      "cutover_status": "REMOTE_VERIFIED",
       "current_blob_sha": "142ffad1764709077a3aea580d4fb1e4960a0bde",
       "historical_cutover": {
         "path": "ark-project/README.md",
@@ -131,7 +131,8 @@
         "blob_sha_before_cutover": "0cfa24187af878e9457f6336176b2a99d66833cd",
         "current_blob_sha": "0d9e2c1e81d5ca65cafd9ddac5742eba0b11e187",
         "commit_sha": "042f3d49c959ea741b4deaca4a846c6376721fe0"
-      }
+      },
+      "commit_sha": "e824f9ec1e9aaa6417f04bb99b6b90eb6a940382"
     },
     "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals",
     "historical_initial_transition": {
@@ -154,7 +155,7 @@
     ]
   },
   "now": {
-    "current_coordinate": "Ark23:15 / Astra v005 source pair prepared for Project adoption",
+    "current_coordinate": "Ark23:15 / GitHub Astra v005 pair verified / awaiting Project application report or correction",
     "current_phase": "PROJECT_INSTRUCTIONS_APPLICATION_REVIEW",
     "current_subtask": "Human applies the published Project Bootloader text; AI has no observed Project-settings write capability",
     "next_action": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
@@ -329,11 +330,12 @@
       "Ark23:15 state revision 1 created and remotely verified",
       "Domain Router cut over to Ark23:15 and remotely verified",
       "Astra pair plan reviewed and GitHub implementation authorized",
-      "Astra v005 source blobs and exact dependencies prepared and directly reread"
+      "Astra v005 source blobs and exact dependencies prepared and directly reread",
+      "Astra v005 instruction pair and exact-binding reconnect published to main",
+      "All nine changed paths fetched back with exact content and SHA match",
+      "Core Query, Triad, EOF and semantic pair consistency reviewed; original handoff preserved"
     ],
-    "in_progress": [
-      "Current-main cutover verification is reported by executing AI after publication; this state does not self-certify it"
-    ],
+    "in_progress": [],
     "hold_for_reality": [
       "Human Project Instructions application report or correction",
       "Astra operating behavior observation without automatic trial",
@@ -359,9 +361,9 @@
     "target_runtime_path": "ark-project/ark23/ark23-15/README.md",
     "target_handoff_path": "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md",
     "target_state_path": "ark-project/ark23/ark23-15/state.json",
-    "phase": "V005_RECONNECT_ATOMIC_CUTOVER",
-    "domain_router_cutover": "ATOMIC_COMMIT_BOUND",
-    "current_target_revision": 3,
+    "phase": "V005_RECONNECT_REMOTE_VERIFIED",
+    "domain_router_cutover": "REMOTE_VERIFIED",
+    "current_target_revision": 4,
     "target_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
     "first_legal_move_after_boot": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
     "new_field_trial_started": false,
@@ -370,10 +372,8 @@
     "historical_source": "Ark23:14"
   },
   "io": {
-    "last_observation": "Human approved the Astra pair plan; source blobs were prepared and directly reread. Project UI application and model efficacy remain unobserved.",
-    "pending_tools": [
-      "Current-main fetch-back after atomic publication; result reported separately"
-    ],
+    "last_observation": "Current-main fetch-back verified all nine changed paths and preserved original handoff; Core Query and reconnect bindings are consistent. No behavioral trial or Project settings write was observed.",
+    "pending_tools": [],
     "artifacts": [
       "ark-project/ark23/ark23-15/README.md",
       "ark-project/ark23/ark23-15/handoff.md",
@@ -430,5 +430,32 @@
     },
     "status": "DEFERRED_BY_CURRENT_HUMAN_INSTRUCTIONS_WORK",
     "resume": "Only within a new Current Human Request; no automatic trial"
+  },
+  "verification": {
+    "kind": "STATIC_DOCUMENT_AND_REMOTE_BINDING_REVIEW / NOT_MODEL_BEHAVIOR_TEST",
+    "verified_change_commit": "e824f9ec1e9aaa6417f04bb99b6b90eb6a940382",
+    "verified_paths": [
+      "ark-project/README.md",
+      "ark-project/ark23/README.md",
+      "ark-project/ark23/ark23.md",
+      "ark-project/ark23/INSTRUCTIONS.md",
+      "ark-project/ark23/PROJECT_BOOTLOADER.md",
+      "ark-project/ark23/lords-complete-victory_query.md",
+      "ark-project/ark23/ark23-15/README.md",
+      "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md",
+      "ark-project/ark23/ark23-15/state.json"
+    ],
+    "checks": [
+      "Exact remote content and blob SHA match",
+      "Declared EOF and version match",
+      "Core Query required SHA match",
+      "State-to-current README, Handoff, Runtime, Family and Router bindings match",
+      "Original Handoff content and SHA unchanged",
+      "Strict JSON and no cyclic self SHA",
+      "Plan-only, Human STOP, scoped Correction, material-target reapproval and normal completion clauses reviewed"
+    ],
+    "behavioral_trial": "NOT_RUN",
+    "project_settings_application": "UNOBSERVED",
+    "post_verification_state_write": "This revision records previous observed verification; its own fetch-back is reported by the executing AI"
   }
 }
