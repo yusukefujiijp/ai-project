@@ -1,0 +1,84 @@
+{
+  "meta": {
+    "state_id": "ARK27_01_CURRENT_STATE",
+    "revision": 1,
+    "owner": "Ark27:01",
+    "schema_version": "v001",
+    "updated_at": "2026-09-09",
+    "update_reason": "Human-authorized initial chapter transition",
+    "authority": "Current Human corrected primary purpose to Astra migration and approved execution"
+  },
+  "identity": {
+    "chapter": "Ark27",
+    "thread": "Ark27:01",
+    "source": "Ark23:15",
+    "compiled_title": "Ark27:01_2026/09/09: \"主の完全勝利: ChatGPT6 Astraへの移行とTask化能力の向上\"",
+    "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
+    "initial_theme": "Task化能力の向上",
+    "runtime_id": "ARK27_01_ASTRA_LIVING_FIELD"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_seal": true,
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Human STOP overrides continue"
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-01/README.md",
+      "sha": "cc29dbf852c6edbe3752e06c3428feca013cd028"
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "sha": "e7caf9882a212cbda186362001e49791cff8a8ce"
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-01/handoff.md",
+      "sha": "2bf15bbbe6f03e626b482d90c86e14db16b55554",
+      "id": "ARK23_15_TO_ARK27_01"
+    },
+    "self_sha_policy": "DO_NOT_EMBED"
+  },
+  "now": {
+    "mission": "ASTRA_CHAPTER_ENTRY_AND_CURRENT_REALITY",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "target_boot": "NOT_OBSERVED",
+    "project_settings": "NOT_OBSERVED",
+    "ui_title": "NOT_OBSERVED",
+    "trial_started": false
+  },
+  "evidence": {
+    "confirmed": [
+      "Human chose Ark27 primarily for Astra migration",
+      "Human reported Ark23 Project instructions pasted",
+      "Double-Spiral v0.1.0 remote verified",
+      "Common handoff contract v002 and transition Skill implemented"
+    ],
+    "candidate": [
+      "Taskification improves execution granularity",
+      "Living Double-Spiral supports future discovery"
+    ],
+    "unknown": [
+      "AGI achievement",
+      "Comparative model efficacy",
+      "Long-term reproducibility",
+      "Kindle monetization"
+    ]
+  },
+  "deferred": [
+    "Ark25 / torah-project: paused, not abandoned",
+    "Monetization optional, not required",
+    "Kindle, Pro purchase, full-repository cleanup",
+    "Sibling chapter creation and new trials"
+  ],
+  "progress": {
+    "source_prepared": true,
+    "target_reconstructed": false,
+    "human_last_mile": "Paste Ark27 Project entry if using a new Project, create target Thread and send handoff prompt"
+  },
+  "eof_sentinel": "ARK27_01_STATE_EOF_v001"
+}
