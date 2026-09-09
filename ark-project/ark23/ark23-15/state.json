@@ -2,16 +2,16 @@
   "meta": {
     "state_id": "ARK23_15_CURRENT_LIVING_STATE",
     "schema_version": "v001-candidate",
-    "revision": 4,
-    "status": "GitHub Astra v005 pair and reconnect remotely verified / Project settings application unobserved",
+    "revision": 5,
+    "status": "Ark27 source prepared; target boot unobserved",
     "project": "Ark23",
     "sequence": 15,
     "created_at": "2026-09-07",
-    "updated_at": "2026-09-08",
+    "updated_at": "2026-09-09",
     "timezone": "Asia/Tokyo",
     "language_policy": "Japanese-first with precise English technical anchors",
     "state_role": "Mutable Current Projection / Living Board",
-    "update_reason": "Record observed current-main full-content and SHA verification after the authorized atomic v005 cutover",
+    "update_reason": "Record Human-authorized chapter transition and post-revision-4 Material Delta",
     "state_is_not": [
       "Root",
       "Throne",
@@ -26,8 +26,8 @@
     "compiled_thread_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
     "title_authority": "Human retains final title and ChatGPT UI rename authority",
     "theme": "主の完全勝利",
-    "current_mission": "ASTRA_INSTRUCTIONS_PAIR_ADOPTION_REVIEW",
-    "current_theme": "Astra向け指示の最適化と適用確認",
+    "current_mission": "ARK27_CHAPTER_TRANSITION_SOURCE_PREPARED",
+    "current_theme": "ChatGPT6 Astraへの章移行",
     "runtime_id": "ARK23_15_LORDS_COMPLETE_VICTORY_TASKIFICATION_CAPABILITY_B_GATE_FAST_PRUNE_TASK_FIRST_LIVING_FIELD"
   },
   "authority": {
@@ -124,7 +124,6 @@
     "domain_router": {
       "path": "ark-project/README.md",
       "cutover_status": "REMOTE_VERIFIED",
-      "current_blob_sha": "142ffad1764709077a3aea580d4fb1e4960a0bde",
       "historical_cutover": {
         "path": "ark-project/README.md",
         "cutover_status": "REMOTE_VERIFIED",
@@ -132,7 +131,9 @@
         "current_blob_sha": "0d9e2c1e81d5ca65cafd9ddac5742eba0b11e187",
         "commit_sha": "042f3d49c959ea741b4deaca4a846c6376721fe0"
       },
-      "commit_sha": "e824f9ec1e9aaa6417f04bb99b6b90eb6a940382"
+      "commit_sha": "e824f9ec1e9aaa6417f04bb99b6b90eb6a940382",
+      "current_blob_sha_policy": "Current router read dynamically after chapter cutover; previous exact pin retained only as history",
+      "historical_blob_sha": "142ffad1764709077a3aea580d4fb1e4960a0bde"
     },
     "binding_rule": "README defines; Handoff initializes; State continues; Reality corrects; Human seals",
     "historical_initial_transition": {
@@ -155,17 +156,12 @@
     ]
   },
   "now": {
-    "current_coordinate": "Ark23:15 / GitHub Astra v005 pair verified / awaiting Project application report or correction",
-    "current_phase": "PROJECT_INSTRUCTIONS_APPLICATION_REVIEW",
-    "current_subtask": "Human applies the published Project Bootloader text; AI has no observed Project-settings write capability",
-    "next_action": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
-    "first_legal_move_after_boot": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
-    "blockers": [
-      "Project settings application is not observed"
-    ],
+    "current_coordinate": "Ark23:15 source / Ark27:01 materials prepared",
+    "current_phase": "SOURCE_PREPARED_TARGET_BOOT_UNOBSERVED",
+    "next_action": "HUMAN_OPENS_ARK27_TARGET_WITH_VERIFIED_HANDOFF",
+    "blockers": [],
     "open_questions": [
-      "Was the v005 Bootloader applied to Project settings?",
-      "Does Astra low show fewer unnecessary stops while retaining the required boundaries?"
+      "Target reconstruction and UI application not observed"
     ]
   },
   "current_reality": {
@@ -187,7 +183,7 @@
       "authority": "Current Human Execute GitHub OK / Human Seal OK after the presented pair-and-binding plan",
       "project_source_path": "ark-project/ark23/PROJECT_BOOTLOADER.md",
       "project_source_blob_sha": "2ffa750316fcffd2ac3c9d986aa14a111bf2a050",
-      "project_settings_application": "UNOBSERVED",
+      "project_settings_application": "HUMAN_REPORTED_APPLIED; NOT_DIRECT_UI_OBSERVATION",
       "project_bootloader_arrival": "NOT_PROVEN_BY_REPOSITORY",
       "behavioral_efficacy": "UNKNOWN / no comparative model trial"
     }
@@ -298,8 +294,8 @@
       "Task化能力 internalization speed and long-term reproducibility",
       "Cross-domain transfer to Torah, Kindle or other Mission Tasks",
       "Best Practice, Canonical status or Universal Rule",
-      "Project settings application and actual Bootloader arrival",
-      "Astra low comparative behavioral efficacy and long-term reproducibility"
+      "Astra low comparative behavioral efficacy and long-term reproducibility",
+      "Actual Bootloader arrival and Ark27 target boot"
     ]
   },
   "guards": {
@@ -333,11 +329,14 @@
       "Astra v005 source blobs and exact dependencies prepared and directly reread",
       "Astra v005 instruction pair and exact-binding reconnect published to main",
       "All nine changed paths fetched back with exact content and SHA match",
-      "Core Query, Triad, EOF and semantic pair consistency reviewed; original handoff preserved"
+      "Core Query, Triad, EOF and semantic pair consistency reviewed; original handoff preserved",
+      "Human reported Project instructions pasted",
+      "Double-Spiral v0.1.0 remotely verified",
+      "Shared handoff v002 and Ark Transition Skill implemented",
+      "Ark27 chapter and first-thread triad prepared and remotely verified"
     ],
     "in_progress": [],
     "hold_for_reality": [
-      "Human Project Instructions application report or correction",
       "Astra operating behavior observation without automatic trial",
       "one Human-supplied natural Taskification Reality or question",
       "B-Gate Fast-Prune plus Taskification Actual Trace",
@@ -355,24 +354,18 @@
     ]
   },
   "transition": {
-    "authority": "Human Seal OK / Execute GitHub OK / Full Rail and Next Gate All Yes",
+    "kind": "CHAPTER_TRANSITION",
     "source": "Ark23:15",
-    "target": "Ark23:15",
-    "target_runtime_path": "ark-project/ark23/ark23-15/README.md",
-    "target_handoff_path": "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md",
-    "target_state_path": "ark-project/ark23/ark23-15/state.json",
-    "phase": "V005_RECONNECT_REMOTE_VERIFIED",
-    "domain_router_cutover": "REMOTE_VERIFIED",
-    "current_target_revision": 4,
-    "target_title": "Ark23:15_2026/09/07: \"主の完全勝利: Task化能力の向上 — B-Gate Fast-Prune to Task-First Living Field\"",
-    "first_legal_move_after_boot": "WAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION",
-    "new_field_trial_started": false,
-    "canonicalization": false,
-    "kind": "SAME_THREAD_RUNTIME_UPGRADE",
-    "historical_source": "Ark23:14"
+    "target": "Ark27:01",
+    "primary_purpose": "ChatGPT6 Astraへの移行",
+    "target_handoff_path": "ark-project/ark27/ark27-01/handoff.md",
+    "phase": "SOURCE_PREPARED_TARGET_BOOT_UNOBSERVED",
+    "authority": "Current Human corrected chapter purpose and explicitly approved execution",
+    "target_reconstructed": false,
+    "new_field_trial_started": false
   },
   "io": {
-    "last_observation": "Current-main fetch-back verified all nine changed paths and preserved original handoff; Core Query and reconnect bindings are consistent. No behavioral trial or Project settings write was observed.",
+    "last_observation": "Ark27 materials remotely verified; Human UI and receiving AI boot remain unobserved.",
     "pending_tools": [],
     "artifacts": [
       "ark-project/ark23/ark23-15/README.md",
