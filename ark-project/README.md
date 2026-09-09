@@ -1,6 +1,6 @@
 ---
 title: "Ark Project"
-version: "v002-candidate"
+version: "v003-candidate"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
@@ -34,19 +34,19 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-09-08"
-last_reality_reviewed: "2026-09-08"
+updated: "2026-09-09"
+last_reality_reviewed: "2026-09-09"
 reviewed_scope: "AI-first router contract / Ark23 Core v005 / Ark23:15 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / BBP / B-Gate Fast-Prune / Task化能力 / One-Table v002 / Ark24 frozen-trigger guard"
-current_front_line_ark: "ark-project/ark23/ark23-15/README.md"
-current_front_line_handoff: "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md"
-current_front_line_runtime: "ark-project/ark23/ark23-15/README.md"
-current_front_line_state: "ark-project/ark23/ark23-15/state.json"
-current_main_theme: "Astra向け指示の最適化と適用確認"
+current_front_line_ark: "ark-project/ark27/ark27-01/README.md"
+current_front_line_handoff: "ark-project/ark27/ark27-01/handoff.md"
+current_front_line_runtime: "ark-project/ark27/ark27-01/README.md"
+current_front_line_state: "ark-project/ark27/ark27-01/state.json"
+current_main_theme: "ChatGPT6 Astraへの移行"
 current_evidence: "wake-up one-choice Human-reported Actual Success and BBP Origin / earlier B-Gate Detection Human-reported / Ark23:15 Triad Remote Verified / Fast-Prune plus Task化 end-to-end Actual result unknown"
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
-expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate"
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v003-candidate"
 ---
 # Ark Project
 
@@ -89,35 +89,16 @@ write_default: "Do not write without current Human authority."
 
 ### 0.1 Current Front-Line Resolution
 
-2026-09-08のHuman-authorized Astra指示改訂により、同一Ark23:15のCurrent入口をruntime-upgrade-handoff.mdへ切り替える。Current MissionはASTRA_INSTRUCTIONS_PAIR_ADOPTION_REVIEW。First Legal MoveはWAIT_FOR_HUMAN_PROJECT_INSTRUCTIONS_APPLY_REPORT_OR_CORRECTION。Project設定適用とモデル効果は観測前にはUnknown。Task化Fieldは§3.1に保存して保留し、自動再開しない。
+2026-09-09、HumanはArk27の第一義をChatGPT6 Astraへの移行と明示し、章移行を承認した。
+Current entryは[Ark27:01 Handoff](ark27/ark27-01/handoff.md)。
+Handoff → Thread README → State → 章READMEを全文読み、宣言されたGateを確認する。
+章第一義はAstra移行、初期テーマはTask化能力の向上。FIRST LEGAL MOVEはWAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST。
+Source資料準備・Remote検証と、Target実起動・Project UI適用は別。Target bootは未観測。
 
-旧ark23-15/handoff.mdは変更せず初期移行記録として保存する。旧入口を明示指定した場合にCurrent SHA不一致を無視せず、そのFailure ContractでSTOPする。新入口へのSilent Fallbackはしない。
-
-
-```yaml
-current_front_line:
-  ark: "Ark23"
-  thread: "Ark23:15"
-  handoff: "ark-project/ark23/ark23-15/runtime-upgrade-handoff.md"
-  runtime: "ark-project/ark23/ark23-15/README.md"
-  state: "ark-project/ark23/ark23-15/state.json"
-  theme: "Astra向け指示の最適化と適用確認"
-  confirmed:
-    - "wake-up one-choice is Human-reported Actual Success and the Reality-first Origin of BBP"
-    - "earlier and clearer B-Gate Detection under 主の完全勝利 foreground awareness is Human-reported"
-    - "Task-First is on the Task-processing side and Task化 is required upstream"
-    - "Ark23:15 README / Handoff / State were created and Remote Verified"
-    - "README / Handoff / State remains the Human-sealed Ark23 transition default"
-  candidate:
-    - "Fast B-side Close plus Task化 can prevent Action Vacuum and reach One Task / Task-First"
-  unknown:
-    - "B-Gate Fast-Prune Actual field result"
-    - "Fast Close → Task化 → Task-First end-to-end Actual result"
-    - "Task化能力 internalization speed, cross-domain transfer, and long-term reproducibility"
-    - "continuous operation and long-term three-file reproducibility, state drift, update cost, and rollback frequency"
-  state_revision: "Read the Current Target State; this Router does not pin mutable revision."
-  first_resolution_rule: "Read Handoff fully, then its bound README and State; pass the Target Reconstruction Contract; treat later Human Reality as a Material Delta without silently writing State."
-```
+Ark23:15はSource／系譜として保持する。旧Handoffを明示指定した場合はその契約を尊重し、
+不一致からArk27へSilent Fallbackしない。Current Human Requestが古い保存状態より優先する。
+Ark25 / torah-projectはHuman報告で一時中断。偶数系は支援、Ark24のFrozen Triggerは自動実行しない。
+この節とfront matterが現在の入口を所有する。下記Ark23の地形・Task化Field記録は歴史的Source座標である。
 
 ---
 
@@ -178,7 +159,7 @@ Nearest files recover the current mission.
 
 ---
 
-## 3. Current Ark Topology / 現在のArk地形
+## 3. Source Ark Topology / Ark23時点の地形（Historical）
 
 ```text
 ARK.md
@@ -253,7 +234,9 @@ Ark24はSupport Sourceであり、Frozen Triggerは変更されていない。Ar
 
 ---
 
-## 4. Routing Rules / どこへ進むか
+## 4. Historical Routing Rules / Source時点の経路
+
+現在のFront Lineは§0.1のArk27。以下はSourceの経路記録でありCurrent自動起動先ではない。
 
 ```yaml
 routing:
@@ -472,8 +455,8 @@ Root remains 主イェシュア・ハマシア御自身.
 ```yaml
 document_end:
   filename: "ark-project/README.md"
-  version: "v002-candidate"
-  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate"
+  version: "v003-candidate"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v003-candidate"
 ```
 
-EOF::ARK_PROJECT_DOMAIN_ROUTER::v002-candidate
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v003-candidate
