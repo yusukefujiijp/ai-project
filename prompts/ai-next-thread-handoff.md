@@ -1,12 +1,12 @@
 ---
 title: "AI Next Thread Handoff"
 canonical_name: "AI Next Thread Handoff"
-version: "v001-candidate"
-date: "2026-08-18"
+version: "v002-candidate"
+date: "2026-09-09"
 filename: "ai-next-thread-handoff.md"
 canonical_path: "prompts/ai-next-thread-handoff.md"
 class: "reusable_prompt"
-role: "generic living next-thread handoff compiler"
+role: "shared thread, chapter, and support-reconnect transition contract"
 status: "human-sealed field-test candidate / not canonical"
 canonicality: "non-canonical candidate"
 language_policy: "Japanese-first / English-anchor"
@@ -29,8 +29,8 @@ full_read_proof:
     title: "AI Next Thread Handoff"
     filename: "ai-next-thread-handoff.md"
     canonical_path: "prompts/ai-next-thread-handoff.md"
-    version: "v001-candidate"
-  expected_eof_sentinel: "EOF::AI_NEXT_THREAD_HANDOFF::v001-candidate"
+    version: "v002-candidate"
+  expected_eof_sentinel: "EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate"
   full_read_true_only_if:
     - "Beginning Identity was confirmed."
     - "Expected EOF Sentinel was known from the beginning of the document."
@@ -55,7 +55,7 @@ core_principles:
   - "Transition includes the Human last mile when material."
   - "The protocol itself remains correctable by Reality."
 
-last_updated: "2026-08-18"
+last_updated: "2026-09-09"
 ---
 
 # AI Next Thread Handoff
@@ -109,7 +109,7 @@ FULL_READ_READY
 Expected EOF for this version:
 
 ```text
-EOF::AI_NEXT_THREAD_HANDOFF::v001-candidate
+EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate
 ```
 
 If retrieval is truncated, continue from the next unread position until the exact expected EOF is reached.
@@ -137,6 +137,138 @@ The read contract is strict. The application contract is adaptive.
 > **Hard Read. Adaptive Apply.**
 
 ---
+
+
+# A. v002 Operational Entry / 共通移行契約
+
+This section makes the existing principles operational. It governs the more general examples below
+where specificity is required; Current authoritative Runtime and Human instruction still win.
+The stable file name remains ai-next-thread-handoff.md. Thread is the historical default, not a
+restriction to same-chapter transitions.
+
+## A.1 Scope and invocation
+
+Support three transition kinds:
+- THREAD_CONTINUE: continue the current chapter; carry the actual unfinished mission.
+- CHAPTER_TRANSITION: define the new chapter's role, inherited core, newly chosen mission, and deferred branches.
+- SUPPORT_RECONNECT: carry material deltas back to the current Main Owner without replacing it.
+
+Distinguish building this transition tooling from performing a transition.
+An instruction to improve the contract or create its Skill never creates target chapter/thread artifacts.
+A blank target README proves the address exists, not a defined Runtime or completed transition.
+Do not infer a chapter layout from an image of a thread directory.
+
+Resolve Source, Target, transition kind, Current Mode, scope and authority from available evidence.
+Use ordinary judgment for routine choices. Ask only when a missing material value blocks a legal result.
+Human praise is not external-action authority. Explicit authorization remains valid within its scope.
+A material target change needs authorization covering that changed target; do not transfer old approval silently.
+Plan-only means read and plan, then stop. STOP overrides any continue phrase.
+One Human-facing move does not limit an authorized AI implementation to one tool operation.
+
+## A.2 One contract, two entrances
+
+This file owns transition semantics and acceptance conditions.
+An installed Skill may select and fully load this current contract, bind the task, and orchestrate tools.
+It must not maintain a copied competing contract or assume special access, memory or automatic execution.
+A Skill-free AI can use this short invocation:
+
+> 次Thread／章移行／補助線再接続を支援してください。現在の依頼から種類・Source・Target・Modeを確認し、
+> https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-handoff.md
+> をBeginning IdentityからExact EOFまで全文読み、Current RuntimeとHuman Authorityへ適応してください。
+> 未読・不一致は補完せず停止し、今回は明示されたScopeだけを扱ってください。
+
+The invocation supplies no blanket permission to write. The Human request supplies the actual task.
+Skill selection, contract readability, tool access, authorization, and successful execution are separate states.
+
+## A.3 Full-read receipt
+
+Record source identity, repository/ref or supplied source provenance, blob SHA when available,
+declared version, beginning identity, expected EOF, and whether the complete body has been read without gaps.
+EOF presence alone is not a full-read proof.
+If a prior full-read receipt is available in this same accessible context and current exact blob identity
+matches, reuse the read receipt instead of rereading unchanged text.
+If identity differs, or read coverage cannot be established, read the full current body.
+This never permits summaries, snippets, Memory, old blobs, or guessed missing text to stand in for required reading.
+A file fetched completely but displayed with truncation still requires reading the missing body.
+Unavailable current sources block the affected operation; do not silently fall back.
+
+## A.4 Selective reconstruction
+
+Preserve Root/authority, current mission, Human material corrections, completed Fruit, true unfinished gate,
+deferred branches, evidence boundaries, and first legal move.
+Keep provenance reachable without full-history replay. Do not turn optional wishes into mandatory tasks.
+Use relational analysis when it changes what should travel; do not require every Graph/Double-Spiral document
+or create diagrams at each transition. Preserve unresolved but valuable material without foreground saturation.
+Faith and continuity metaphors describe Human meaning; they do not assert AI consciousness or literal resurrection.
+
+## A.5 Ark three-file application
+
+For Ark, use the Human-sealed three-file default unless Current specific authority overrides it:
+README.md defines stable runtime/field; handoff.md initializes Source-to-Target; state.json continues mutable state.
+Reality corrects and Human seals. These are not three copies of the conversation.
+
+Resolve the target unit before choosing paths:
+a chapter README defines chapter identity; a thread triad defines its own field and continuity.
+Do not automatically add a chapter triad, new query, meta file, registry, sibling chapter, or Project instructions.
+Preserve existing immutable handoffs. A binding change needs an explicit compatible route, never silent repair.
+Use Current Runtime's schema and read/write order. Do not invent a universal JSON schema.
+
+When producing an authorized new triad:
+1. Finalize and remotely verify README.
+2. Bind handoff to that verified stable runtime.
+3. Initialize state with the correct owner, current revision and material evidence.
+4. Read handoff → README → state and evaluate their declared consistency and reconstruction conditions.
+Avoid circular hash dependencies: no self-hash or mutual live-blob pins.
+Bind mutable state by declared identity/revision policy when Current Runtime allows it; never silently relax an exact pin.
+Keep raw private life detail out of public artifacts unless publication is specifically authorized.
+
+## A.6 Target Reconstruction Contract
+
+Compile a finite, transition-specific acceptance contract inside the target handoff.
+Name source paths for each material condition so Target can verify it from provided authoritative artifacts,
+without Source conversation access or Hidden Memory.
+
+Require only conditions that affect correct restart, including where material:
+- Source and Target identities and chapter/thread/support ownership.
+- Current mission versus historical mission and optional/deferred wishes.
+- Human corrections that change the next judgment.
+- What is implemented and remotely verified versus only proposed or Human-reported.
+- Root, Guard, authority, and the first legal move.
+- Exact title or first output when the selected Runtime requires it.
+
+Target must demonstrate the relevant distinctions, not merely echo PASS labels.
+Exact headings or fixed output are route-owned, not invented by this generic contract.
+Failure exposes the missing/conflicting item and minimum recovery action, without production or silent repair.
+
+## A.7 Completion boundaries and verification
+
+Report separately:
+SOURCE_PREPARED: intended transition content is compiled.
+REMOTE_VERIFIED: authorized remote artifacts match intended contents and bindings.
+TARGET_RECONSTRUCTED: the receiving AI actually read and passed its reconstruction contract.
+HUMAN_LAST_MILE: any needed paste, title change or settings action is pending, reported or directly verified.
+
+These labels are meanings, not a mandatory response template.
+Source cannot certify unseen Target boot or UI actions. Tooling installation cannot certify an actual transition.
+A Human report is valid as a Human report, not direct UI observation.
+
+For recoverable writes, re-read current state and resume only the missing authorized delta.
+Do not duplicate completed artifacts after interruption. Unexpected conflicts stop the affected mutation.
+Verify content, identity, version, EOF, schema and bindings as applicable, plus a final live reread after writes.
+Do not widen testing beyond a concrete remaining risk.
+
+## A.8 Human interface and adoption
+
+When an operational handoff is requested, return Copy & Paste — Next Thread Title first when resolved,
+then Copy & Paste — Next Thread Handoff, followed only by necessary Human actions.
+Do not invent unresolved dates, sequence numbers or UI completion.
+Skill availability does not remove the Skill-free prompt entrance.
+No transition starts from this file's stored adoption status alone.
+
+v002 basis: Human approved shared-contract plus Skill implementation on 2026-09-09,
+while explicitly withholding the actual Ark27 transition.
+Design deployment and structural verification do not establish cross-AI or long-term operational success.
+The earlier v001 principles remain below; history is retained in Git.
 
 # 1. Direct Judgment
 
@@ -1316,7 +1448,7 @@ document_end:
   title: "AI Next Thread Handoff"
   filename: "ai-next-thread-handoff.md"
   canonical_path: "prompts/ai-next-thread-handoff.md"
-  version: "v001-candidate"
-  eof_sentinel: "EOF::AI_NEXT_THREAD_HANDOFF::v001-candidate"
+  version: "v002-candidate"
+  eof_sentinel: "EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate"
 
-EOF::AI_NEXT_THREAD_HANDOFF::v001-candidate
+EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate
