@@ -5,7 +5,7 @@ version: "v001"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-sealed"
 created: "2026-07-23"
-updated: "2026-07-23"
+updated: "2026-09-10"
 last_reality_reviewed: "2026-07-23"
 reality_review_base_commit: "471bb9c285b7674f41f1874df3c5abdfa1c0f2ce"
 scope: "repository-wide"
@@ -25,6 +25,7 @@ role:
   - "Human-AI Authority Contract"
   - "Reality Delta Gate"
 updated_reason:
+  - "2026-09-10: Repair unavailable skill-router references to skills/README.md; preserve identity and existing contracts."
   - "Create the first root AGENTS.md for cross-AI guidance."
   - "Separate agent instructions from the human/public README surface."
   - "Compress the first draft after direct Reality Review to avoid context bloat."
@@ -100,8 +101,8 @@ ss_super-special/CHATGPT.md
 _system/ark-system.md
 = Project-level Operating Map / Growth Memory Hub
 
-_skill/SKILL.md
-= Skill System Load Router
+skills/README.md
+= Shared Skill Source / Distribution Hub
 
 prompts/
 = Reusable Runtime and Query Shelf
@@ -310,7 +311,7 @@ runtime_skill_guard:
   - "Third-party scriptを検証・権限なしに実行しない"
 ```
 
-Canonical Ark Skill router: [`_skill/SKILL.md`](_skill/SKILL.md)
+Canonical Ark Skill router: [`skills/README.md`](skills/README.md)
 
 ---
 
