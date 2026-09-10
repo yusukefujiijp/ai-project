@@ -6,7 +6,7 @@ version: "v002-candidate"
 edition: "AI-First Identity, Agent-Operability, and Return-Home Kernel"
 status: "active-candidate / human-sealed for field validation"
 created: "2026-07-23"
-updated: "2026-09-01"
+updated: "2026-09-10"
 last_reality_reviewed: "2026-09-01"
 reality_review_base_commit: "976789ced38e1d303514df1eedbace61b82ba229"
 reality_review_scope: "Ark23:12 state-dependent Human Reality, willpower-independent execution, AI-first reader identity, agent-operability, and Ark domain routing"
@@ -62,6 +62,7 @@ reality_basis:
   - "Repeated AI-first / Human-auditable Ark documentation patterns"
   - "Repeated Ark Project collaboration patterns"
 updated_reason:
+  - "2026-09-10: Repair unavailable skill-router references to skills/README.md; preserve identity and existing contracts."
   - "Give every Ark Thread AI a shared Home Coordinate."
   - "Define Ark Project as an organic Human-AI collaboration system rather than a file collection."
   - "Preserve the meaning of YusukeJP × AI-Collaborator one-to-one work."
@@ -853,10 +854,10 @@ Nearest README / Handoff
 _system/ark-system.md
 = Growth Memory / Skill Seed / Pattern Router
 
-_skill/SKILL.md
-= Skill System Load Router
+skills/README.md
+= Shared Skill Source / Distribution Hub
 
-_skill/skills/*
+skills/<skill-name>/SKILL.md
 = Individual Ark Capabilities
 
 _tasks/lessons.md
