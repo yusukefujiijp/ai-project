@@ -1,0 +1,198 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark27-01:task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-09-12",
+  "updated": "2026-09-12",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark27:01",
+    "canonical_path": "ark-project/ark27/ark27-01/task-records.json",
+    "reported_date": "2026-09-12",
+    "timezone": null,
+    "time_note": "日付・時刻はHuman報告の表記。ここに同梱した発言はtimezoneを明示していないため、UTC変換しない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "過去の経験資料。Current Runtime、現在の身体状態、実行命令、次Taskの起動権限ではない。",
+    "source_access": "関連するHuman発言の抜粋をsourcesへ同梱した。元Threadの閲覧URL・メッセージIDは未取得。source IDはこの記録内で付与した識別子である。"
+  },
+  "coverage": {
+    "kind": "representative_slice",
+    "thread_complete": false,
+    "includes": [
+      "10:00を区切りにシャワーを終了したというHumanの説明",
+      "シャワー中の歯磨き完了と、併用を必須にしないというHumanの留保",
+      "外出前のLaundry見送りと、ゴミ捨て・Walkingの優先判断",
+      "10:45頃の河原でのWalking実行報告"
+    ],
+    "excludes": [
+      "このThreadの全Task・全発言の収録",
+      "コロコロTask、トイレTask、軽いWorkout、帰宅後の経過の詳細",
+      "飲食・カフェイン・バッテリー等の別の実験材料",
+      "保存時点のHumanの現在状態および未承認の次の実行計画"
+    ],
+    "note": "初回の記録方式を検証するための一場面。収録範囲外であることは、未実行・不要・失敗を意味しない。"
+  },
+  "sources": [
+    {
+      "id": "s1",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:01内の『今現在、2026/09/12 10:45頃です！』で始まる進捗報告部分",
+      "excerpt": "今現在、2026/09/12 10:45頃です！\n進捗報告します！\nシャワーTask終了が10:00というより\n10：00になったのでシャワーTaskを終了しました！\nなぜなら、ゴミ捨てTaskはゴミ収集車が来るまでに出さなければならないという締切があるからです！\n10：00にシャワー終了がギリギリです！\nしかし、本来ならば\nゴミ捨て前に洗濯機を回して\nLaundry Task→ゴミ捨てTask→Walking Task\nと行きたかったが**締切理論**的にも\nLaundry Taskを飛ばして\nゴミ捨てTask→Walking Taskを優先しました！\n今現在、近所の河原でWalking Workout(Outdoor Workout)中です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同一発言の関連部分を連続抜粋。これは報告時刻・当時の希望・判断・実行報告を含むが、ゴミの排出完了や回収成功を独立に断定する文ではない。"
+    },
+    {
+      "id": "s2",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "s1より後のBrainDump中、『歯磨きTaskはシャワー中に終了です！』で始まる部分",
+      "excerpt": "歯磨きTaskはシャワー中に終了です！\nというよりも、シャワーTask中に必ず歯磨きTaskは100%内包されています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当日の完了報告と、Humanが説明する普段の運用を含む。100%はHumanの表現として保持し、AIによる反復実測値にしない。"
+    },
+    {
+      "id": "s3",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "s1より前の『歯磨きとシャワー同時にする事が最も効率的です！』で始まる発言部分",
+      "excerpt": "歯磨きとシャワー同時にする事が最も効率的です！\n但し、絶対に、そうしなければならないという意味合いではないです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "効率についてのHumanの評価と、同時実施を義務化しない留保。一般的な効率の実証値として扱わない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "shower-01",
+      "kind": "task",
+      "label": "シャワーTask",
+      "description": "この場面のシャワーを、Humanは10:00という区切りで終了したと説明した。所要時間や全工程の達成度は報告されていない。",
+      "task_state": "completed",
+      "scope": "この一回の終了報告。完全な清潔達成や毎日の運用を認定しない。",
+      "time_text": "10：00になったので終了／2026/09/12 10:45頃の報告",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "oral-care-01",
+      "kind": "task",
+      "label": "歯磨きTask",
+      "description": "Humanは、この場面の歯磨きがシャワー中に終了したと報告した。",
+      "task_state": "completed",
+      "scope": "当日の一回。歯科的な効果や以後の全睡眠前の実行は、この完了報告から認定しない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s2"] }
+    },
+    {
+      "id": "laundry-start-01",
+      "kind": "task",
+      "label": "Laundry Task（外出前に洗濯機を回す）",
+      "description": "希望していた外出前の洗濯機始動を、この出発判断では見送った。洗濯・乾燥・収納全体を一括評価した記録ではない。",
+      "task_state": "deferred",
+      "scope": "s1で報告された出発前の判断まで。その後の実施有無は、この抜粋では未確認。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "waste-disposal-01",
+      "kind": "task",
+      "label": "ゴミ捨てTask",
+      "description": "優先経路に置かれた行動対象。実際の排出完了、排出時刻、収集へ間に合ったかは、収録した発言からは個別に確認できない。",
+      "task_state": "unknown",
+      "scope": "実行結果のみUnknown。優先対象になったことはpriority-choice-01とEdgeにHuman報告として記録する。",
+      "evidence": { "status": "unknown", "basis": "not_reported", "source_refs": ["s1"], "note": "s1は優先経路を報告している。経路から結果を補完しない。" }
+    },
+    {
+      "id": "walking-01",
+      "kind": "task",
+      "label": "Walking Task / Walking Workout",
+      "description": "Humanは近所の河原でWalking Workout中と報告した。",
+      "task_state": "in_progress",
+      "scope": "s1の報告時点のみ。収録範囲外の終了報告や現在状態を表さない。",
+      "time_text": "2026/09/12 10:45頃",
+      "place_text": "近所の河原",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "collection-deadline-01",
+      "kind": "constraint",
+      "label": "ゴミ収集前の排出という締切",
+      "description": "Humanは、ゴミ収集車が来るまでに出す必要があり、10:00のシャワー終了がギリギリだと判断した。収集車の到着時刻を10:00とする記録ではない。",
+      "scope": "Humanが述べたこの日の制約と判断。自治体の時刻表を確認した結果ではない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "priority-choice-01",
+      "kind": "decision",
+      "label": "Laundryを見送り、ゴミ捨てとWalkingを優先",
+      "description": "当初希望したLaundry→ゴミ捨て→Walkingから、締切を理由にLaundryを外した経路を選んだというHumanの報告。",
+      "scope": "今回の選択。洗濯の価値を否定したり、全日共通の固定手順へ昇格したりしない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "oral-care-practice-01",
+      "kind": "practice_statement",
+      "label": "シャワーには歯磨きを含めるが、併用は義務ではない",
+      "description": "Humanはシャワー時に歯磨きが100%内包されると説明する一方、歯磨きとシャワーを絶対に同時にしなければならないとは述べていない。",
+      "scope": "Humanが説明した運用と留保。観測上の100%成功率や、シャワーなしでは歯磨きできないという依存を意味しない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s2", "s3"] }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1", "from": "shower-01", "to": "oral-care-01", "relation": "contains",
+      "scope": "この一回のシャワー中に歯磨き完了との報告。必須の前提条件を意味しない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s2"] }
+    },
+    {
+      "id": "e2", "from": "collection-deadline-01", "to": "shower-01", "relation": "motivates",
+      "scope": "Humanが説明した、10:00でシャワーを終了した理由。独立に実証した因果効果ではない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e3", "from": "collection-deadline-01", "to": "priority-choice-01", "relation": "motivates",
+      "scope": "Humanは締切理論を挙げ、希望順序を変更した理由を説明した。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e4", "from": "priority-choice-01", "to": "laundry-start-01", "relation": "defers",
+      "scope": "この出発前の始動を見送った判断。恒久的な中止や失敗ではない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e5", "from": "priority-choice-01", "to": "waste-disposal-01", "relation": "prioritizes",
+      "scope": "優先対象に置いたという判断。対象Taskの実行完了までは保証しない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e6", "from": "priority-choice-01", "to": "walking-01", "relation": "prioritizes",
+      "scope": "優先対象に置いたという判断。実行中の報告はwalking-01自身の根拠で保持する。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e7", "from": "waste-disposal-01", "to": "walking-01", "relation": "planned_before",
+      "scope": "Humanが優先した経路上の順序。両Taskが実行された時刻順の独立確認や必須依存ではない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    },
+    {
+      "id": "e8", "from": "laundry-start-01", "to": "waste-disposal-01", "relation": "planned_before",
+      "scope": "見送り前に希望していた経路上の順序。採用済みの最新計画や実績として読まない。",
+      "evidence": { "status": "confirmed", "basis": "human_report", "source_refs": ["s1"] }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "q1", "subject_refs": ["waste-disposal-01"],
+      "question": "ゴミの排出完了と、収集への間に合いは個別に確認されているか。",
+      "scope": "この記録に同梱した抜粋からは未確認。Humanへの再質問や調査の自動起動を要求しない。",
+      "evidence": { "status": "unknown", "basis": "not_reported", "source_refs": ["s1"] }
+    },
+    {
+      "id": "q2", "subject_refs": ["laundry-start-01"],
+      "question": "見送った洗濯機始動は、その後に実行されたか。",
+      "scope": "この代表ケースの収録範囲外。未実行・失敗と断定しない。",
+      "evidence": { "status": "unknown", "basis": "not_reported", "source_refs": ["s1"] }
+    }
+  ]
+}
