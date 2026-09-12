@@ -1,12 +1,12 @@
 {
   "meta": {
     "state_id": "ARK27_01_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:01",
     "schema_version": "v001",
-    "updated_at": "2026-09-09",
-    "update_reason": "Human-authorized initial chapter transition",
-    "authority": "Current Human corrected primary purpose to Astra migration and approved execution"
+    "updated_at": "2026-09-12",
+    "update_reason": "Human-authorized selective field harvest and Ark27:02 transition preparation",
+    "authority": "Execute GitHub OK / Human Seal OK after reviewed plan; preserve immutable source bindings"
   },
   "identity": {
     "chapter": "Ark27",
@@ -44,29 +44,42 @@
     "self_sha_policy": "DO_NOT_EMBED"
   },
   "now": {
-    "mission": "ASTRA_CHAPTER_ENTRY_AND_CURRENT_REALITY",
-    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "mission": "ARK27_01_FIELD_HARVEST_AND_ARK27_02_HANDOFF",
+    "first_legal_move": "HUMAN_CREATE_TARGET_THREAD_AND_SEND_EXPLICIT_HANDOFF",
     "target_boot": "NOT_OBSERVED",
     "project_settings": "NOT_OBSERVED",
     "ui_title": "NOT_OBSERVED",
-    "trial_started": false
+    "trial_started": true,
+    "current_reality": "Human reported outdoor Walking plus smartphone AI collaboration and return home; natural pause for transition",
+    "bbp_status": "Dual benefits identified; preservation sufficiency unknown; no pruning",
+    "source_field_trial": "Human-reported first outdoor field loop, not universal reproducibility"
   },
   "evidence": {
     "confirmed": [
       "Human chose Ark27 primarily for Astra migration",
       "Human reported Ark23 Project instructions pasted",
       "Double-Spiral v0.1.0 remote verified",
-      "Common handoff contract v002 and transition Skill implemented"
+      "Common handoff contract v002 and transition Skill implemented",
+      "Human reported actual outdoor Walking with AI and return home",
+      "Human reported shower with toothbrushing completed; independent brushing remains legal",
+      "Task Mode and xx Task naming adopted without flattening priorities",
+      "Battery limitation and both home/outdoor benefits recognized",
+      "Ark27:02 stable README, handoff and state individually written and remotely reread"
     ],
     "candidate": [
       "Taskification improves execution granularity",
-      "Living Double-Spiral supports future discovery"
+      "Living Double-Spiral supports future discovery",
+      "Home-side service and power benefits may be preserved through other carriers",
+      "Derivative-task load includes both new coordination and existing needs made visible"
     ],
     "unknown": [
       "AGI achievement",
       "Comparative model efficacy",
       "Long-term reproducibility",
-      "Kindle monetization"
+      "Kindle monetization",
+      "Laundry and breakfast completion after last report",
+      "BBP preservation sufficiency",
+      "Ark27:02 actual boot and UI state"
     ]
   },
   "deferred": [
@@ -78,7 +91,19 @@
   "progress": {
     "source_prepared": true,
     "target_reconstructed": false,
-    "human_last_mile": "Paste Ark27 Project entry if using a new Project, create target Thread and send handoff prompt"
+    "human_last_mile": "Create Ark27:02 and paste explicit handoff; Ark27:02 Target must verify its own reconstruction"
   },
-  "eof_sentinel": "ARK27_01_STATE_EOF_v001"
+  "eof_sentinel": "ARK27_01_STATE_EOF_v001",
+  "transition": {
+    "kind": "THREAD_CONTINUE",
+    "target": "Ark27:02",
+    "compiled_title": "Ark27:02_2026/09/12: \"主の完全勝利: 散歩モード初穂からTask Mode・Benefit保存の次Gateへ\"",
+    "handoff": "ark-project/ark27/ark27-02/handoff.md",
+    "readme_sha": "7c2cbc5bdc8575cf9cce9a7b7f2ec1c145523a93",
+    "handoff_sha": "61e846419811a1281f1faa4c5c51c9cbd02fe6e8",
+    "state_id": "ARK27_02_CURRENT_STATE",
+    "target_reconstructed": "NOT_OBSERVED",
+    "chapter_entry_policy": "Existing pinned chapter README and immutable initial handoff unchanged; use explicit Ark27:02 handoff",
+    "verification_boundary": "Individual remote content checks done; final ordered verification performed by source after this update."
+  }
 }
