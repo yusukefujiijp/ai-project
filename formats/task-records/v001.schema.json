@@ -1,0 +1,140 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/yusukefujiijp/ai-project/main/formats/task-records/v001.schema.json",
+  "title": "Ark Task Records v001 — candidate",
+  "description": "Thread経験資料の構造契約。実行エンジンではなく、真実性・因果・全AIへの伝達成功を検証するものでもない。意味は同階層READMEを参照。",
+  "type": "object",
+  "required": ["$schema", "format", "format_version", "record_id", "revision", "role", "created", "updated", "source_context", "coverage", "sources", "nodes", "edges", "open_questions"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "$ref": "#/$defs/text" },
+    "format": { "const": "ark-task-records" },
+    "format_version": { "const": "v001" },
+    "record_id": { "$ref": "#/$defs/id" },
+    "revision": { "type": "integer", "minimum": 1 },
+    "role": { "const": "thread_experience_record" },
+    "created": { "type": "string", "format": "date" },
+    "updated": { "type": "string", "format": "date" },
+    "source_context": {
+      "type": "object",
+      "required": ["repository", "thread", "canonical_path", "reported_date", "timezone", "time_note", "authority_note", "source_access"],
+      "additionalProperties": false,
+      "properties": {
+        "repository": { "$ref": "#/$defs/text" },
+        "thread": { "$ref": "#/$defs/text" },
+        "canonical_path": { "$ref": "#/$defs/text" },
+        "reported_date": { "type": ["string", "null"], "format": "date" },
+        "timezone": { "type": ["string", "null"], "minLength": 1 },
+        "time_note": { "$ref": "#/$defs/text" },
+        "root": { "$ref": "#/$defs/text" },
+        "human_foreground_one": { "$ref": "#/$defs/text" },
+        "authority_note": { "$ref": "#/$defs/text" },
+        "source_access": { "$ref": "#/$defs/text" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": ["kind", "thread_complete", "includes", "excludes", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["representative_slice", "selected_thread_material", "thread_task_coverage"] },
+        "thread_complete": { "type": "boolean" },
+        "includes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/text" } },
+        "excludes": { "type": "array", "items": { "$ref": "#/$defs/text" } },
+        "note": { "$ref": "#/$defs/text" }
+      },
+      "allOf": [{ "if": { "properties": { "kind": { "enum": ["representative_slice", "selected_thread_material"] } } }, "then": { "properties": { "thread_complete": { "const": false } } } }]
+    },
+    "sources": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/source" } },
+    "nodes": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/node" } },
+    "edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "open_questions": { "type": "array", "items": { "$ref": "#/$defs/question" } },
+    "extensions": { "$ref": "#/$defs/extensions" }
+  },
+  "$defs": {
+    "text": { "type": "string", "minLength": 1 },
+    "id": { "type": "string", "pattern": "^[a-z0-9][a-z0-9._:-]*$" },
+    "refs": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/id" } },
+    "extensions": { "type": "object", "description": "任意の追加情報。READMEで意味を説明し、Coreの意味を上書きしない。" },
+    "evidence": {
+      "type": "object",
+      "required": ["status", "basis", "source_refs"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["confirmed", "candidate", "unknown"] },
+        "basis": { "enum": ["human_report", "source_statement", "tool_observation", "ai_inference", "not_reported", "insufficient_evidence"] },
+        "source_refs": { "$ref": "#/$defs/refs" },
+        "note": { "$ref": "#/$defs/text" }
+      },
+      "allOf": [
+        { "if": { "properties": { "status": { "const": "confirmed" } } }, "then": { "properties": { "basis": { "enum": ["human_report", "source_statement", "tool_observation"] }, "source_refs": { "minItems": 1 } } } },
+        { "if": { "properties": { "basis": { "const": "ai_inference" } } }, "then": { "properties": { "status": { "const": "candidate" } }, "required": ["note"] } },
+        { "if": { "properties": { "basis": { "enum": ["not_reported", "insufficient_evidence"] } } }, "then": { "properties": { "status": { "const": "unknown" } } } }
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "speaker", "medium", "locator", "excerpt", "excerpt_kind"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "speaker": { "$ref": "#/$defs/text" },
+        "medium": { "enum": ["user_message", "assistant_message", "repository_file", "tool_result"] },
+        "locator": { "$ref": "#/$defs/text" },
+        "excerpt": { "$ref": "#/$defs/text" },
+        "excerpt_kind": { "enum": ["verbatim_contiguous", "paraphrase"] },
+        "url": { "type": "string", "format": "uri" },
+        "note": { "$ref": "#/$defs/text" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      }
+    },
+    "node": {
+      "type": "object",
+      "required": ["id", "kind", "label", "description", "scope", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "kind": { "enum": ["task", "decision", "constraint", "practice_statement", "observation", "interpretation"] },
+        "label": { "$ref": "#/$defs/text" },
+        "description": { "$ref": "#/$defs/text" },
+        "scope": { "$ref": "#/$defs/text" },
+        "task_state": { "enum": ["completed", "in_progress", "planned", "deferred", "cancelled", "assumed_complete", "unknown"] },
+        "time_text": { "$ref": "#/$defs/text" },
+        "place_text": { "$ref": "#/$defs/text" },
+        "evidence": { "$ref": "#/$defs/evidence" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "task" } } }, "then": { "required": ["task_state"] }, "else": { "not": { "required": ["task_state"] } } },
+        { "if": { "required": ["task_state"], "properties": { "task_state": { "const": "unknown" } } }, "then": { "properties": { "evidence": { "properties": { "status": { "const": "unknown" } } } } } }
+      ]
+    },
+    "edge": {
+      "type": "object",
+      "required": ["id", "from", "to", "relation", "scope", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "from": { "$ref": "#/$defs/id" },
+        "to": { "$ref": "#/$defs/id" },
+        "relation": { "enum": ["contains", "planned_before", "observed_before", "depends_on", "motivates", "defers", "prioritizes", "corrects"] },
+        "scope": { "$ref": "#/$defs/text" },
+        "evidence": { "$ref": "#/$defs/evidence" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      }
+    },
+    "question": {
+      "type": "object",
+      "required": ["id", "subject_refs", "question", "scope", "evidence"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "$ref": "#/$defs/id" },
+        "subject_refs": { "allOf": [{ "$ref": "#/$defs/refs" }], "minItems": 1 },
+        "question": { "$ref": "#/$defs/text" },
+        "scope": { "$ref": "#/$defs/text" },
+        "evidence": { "$ref": "#/$defs/evidence" }
+      }
+    }
+  }
+}
