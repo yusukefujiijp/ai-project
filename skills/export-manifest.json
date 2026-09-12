@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "exported_on": "2026-09-12",
+  "source_thread": "Ark27:02",
+  "repository": "yusukefujiijp/ai-project",
+  "ref": "main",
+  "scope": [
+    "analyze-living-graph",
+    "audit-agent-instructions"
+  ],
+  "source": "Installed personal skills after the authorized revisions in this thread",
+  "content_policy": "Exact UTF-8 copies including supporting references and OpenAI metadata/assets; no semantic adaptation",
+  "verification_boundary": "Limited prior response checks; upload integrity separately verified by remote reread. No claim of cross-vendor execution, automatic installation, universal validity or model-memory backup.",
+  "files": [
+    {
+      "path": "skills/audit-agent-instructions/SKILL.md",
+      "sha256": "faa7472b93f43095f18ba8e87581e79312d5094e5ab9794bc26c873c1bf0dc1f"
+    },
+    {
+      "path": "skills/audit-agent-instructions/agents/openai.yaml",
+      "sha256": "8bc0d8de1f8c496e7212537de648b753e171a8f250f8e6e339d42666b23629a2"
+    },
+    {
+      "path": "skills/audit-agent-instructions/assets/icon.svg",
+      "sha256": "fbb6c7314886573cd56c3f86884a65afe3b5f4ce4bf1ee6baeeeb1fa50aea7a4"
+    },
+    {
+      "path": "skills/audit-agent-instructions/references/source-notes.md",
+      "sha256": "72a24c5629b84a56fd244ca1dd2bcc1f8b31fba8411df2cd0c2780a53c515ed9"
+    },
+    {
+      "path": "skills/analyze-living-graph/SKILL.md",
+      "sha256": "1fc2b26ee589ed4145d09c662294b17d866c0b62cf9230927eb7aab075a87921"
+    },
+    {
+      "path": "skills/analyze-living-graph/agents/openai.yaml",
+      "sha256": "15e4a9ccd412c0e74cff8ca402dd4c5550599d79cb2c835d1f45746d380e7c1b"
+    },
+    {
+      "path": "skills/analyze-living-graph/assets/icon.svg",
+      "sha256": "e9301497fa98ef56aaca7ede0857b9a18dc06c34040f0679c609a6bf49b1d38b"
+    },
+    {
+      "path": "skills/analyze-living-graph/references/ark21-binding.md",
+      "sha256": "cceec2cc8397129903ca602ba61b03599d04fed2548d28795db544f425657f7d"
+    },
+    {
+      "path": "skills/analyze-living-graph/references/graph-operations.md",
+      "sha256": "8814445fd8f48fa41c4be2ec03e92ff6c070d0959abfd39b802951c3400e88a0"
+    },
+    {
+      "path": "skills/analyze-living-graph/references/living-update.md",
+      "sha256": "2cf6dc0c44a2d75e70cd7f4d255a169c3cac01da161d2a34bcfceeecd24bf6b6"
+    }
+  ]
+}

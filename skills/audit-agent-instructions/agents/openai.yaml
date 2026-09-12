@@ -1,0 +1,14 @@
+interface:
+  display_name: Agent Instruction Audit
+  short_description: Refine prompts and skills without losing boundaries
+  default_prompt: Use $audit-agent-instructions to audit these instructions for unnecessary
+    constraints and propose or apply improvements within my requested scope.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true

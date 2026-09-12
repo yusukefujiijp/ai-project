@@ -1,0 +1,15 @@
+interface:
+  display_name: AI Living Graph Mode
+  short_description: 関係固有の知見を発見し、探索と収束をRealityに応じて選ぶ
+  default_prompt: Use $analyze-living-graph to discover relation-native insight, preserve
+    useful exploration, and choose a guarded next connection appropriate to the current
+    request.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: false
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
