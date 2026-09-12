@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI Prompt Runtime and Query Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-05"
+last_updated: "2026-09-12"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -244,7 +244,7 @@ Long-Form Response Rhythm
 runtime: "prompts/ai-benefit-branch-pruning.md"
 query: "NOT CREATED — add only after repeated activation or binding ambiguity"
 role: "Future-AI-first Dual-Benefit Branch Deadlock resolution / Benefit–Carrier separation / guarded Benefit preservation / one-choice recovery"
-status: "human-sealed design candidate / first deployment / field-test pending / not canonical"
+status: "v002-candidate / Human-authorized operational revision / inherited origin and naming seals / field validation pending / not canonical"
 reasoning_dependency: "prompts/ai-living-graph-mode.md"
 optional_projection_dependency: "prompts/ai-one-table-interface.md"
 composition_dependency: "prompts/long-form-response-rhythm.md"
@@ -253,7 +253,7 @@ origin: "Wake-Up One-Choice Human-reported Actual Success"
 
 AI Benefit Branch Pruningは、双方のBranchに本物のBenefitがあるため単純削除できず一択化が停止するDual-Benefit Branch Deadlockに対し、Benefitそのものと現在のCarrier BranchをGraph Mode的に分離し、Benefitを別の安全で適切なNode、Phase、Sandbox、AI BackgroundまたはRouteへ保存・再接続した上で、Current Goalに不可欠ではなくなったCarrier Branch／Comparison Edgeだけを剪定するFuture-AI-first Operational Runtimeである。
 
-本文は抽象定義ではなく起床時Originから始まる。起床と再睡眠の双方Benefitを保持しながら、睡眠BenefitをHigh-Cognition判断とBody／Sleep／Safety Guardへ保存し、Low-Cognition起床Transitionから再比較Edgeだけを外したHuman-reported Actual Successを、BBPの最初のReality成立としてSource-boundに保持する。
+本文は抽象定義ではなく起床時Originから始まる。v002は適用判断・保存条件・実行境界・Actual更新を整理し、保存先の探索と剪定成立、有限のHuman実行とAIの探索範囲を区別する。起床と再睡眠の双方Benefitを保持しながら、睡眠BenefitをHigh-Cognition判断とBody／Sleep／Safety Guardへ保存し、Low-Cognition起床Transitionから再比較Edgeだけを外したHuman-reported Actual Successを、Humanが採用したBBP OriginとしてSource-boundに保持する。Human報告・採用されたMeaning・AIの構造的説明を、保存の実測や医学的因果の証明と区別する。
 
 ~~~text
 Two real Benefits
