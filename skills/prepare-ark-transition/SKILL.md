@@ -1,13 +1,15 @@
 ---
 name: prepare-ark-transition
-description: Prepare or review thread handoffs, Ark chapter transitions, and support-thread reconnections using the current shared transition contract. Use for transition planning, authorized preparation, or target reconstruction; distinguish tooling improvements from actual migration and respect plan-only requests. Do not activate for ordinary brainstorming without a transition task.
+description: Plan, prepare, or review thread and chapter handoffs and support reconnections using the current shared contract. Also use for scoped improvements to this transition tooling.
 ---
 
 # Ark Transition
 
 ## Bind the task
 
-Identify the current Human request, source, target, transition kind, mode, and authorization from available context. Distinguish THREAD_CONTINUE, CHAPTER_TRANSITION, and SUPPORT_RECONNECT. Do not assume a support thread takes Main ownership or a new chapter inherits the old mission unchanged.
+First distinguish an actual transition from work on its tooling. For tooling work, bind the prompt, Skill, or contract being reviewed; do not require a fictional destination thread or produce migration artifacts.
+
+For an actual transition, resolve source, target, transition kind, mode, and authorization from current evidence; reuse settled values and ask only for material gaps. Distinguish THREAD_CONTINUE, CHAPTER_TRANSITION, and SUPPORT_RECONNECT. Resolve project-specific roles from the applicable runtime, including outside Ark. Do not assume a support thread takes Main ownership or a new project/chapter inherits the old mission unchanged.
 
 An instruction to build or improve transition tooling is not permission to migrate the project. Respect explicit plan-only, review-only, and no-migration constraints. Reuse clear authorization within its scope; do not transfer it to a materially changed target. STOP overrides continue.
 
@@ -20,6 +22,12 @@ https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-han
 Read the entire contract from Beginning Identity to its declared exact EOF, with no unread gaps. Use an available GitHub connector or permitted public retrieval. Verify source identity and version; a same-context full-read receipt can be reused only under the contract's exact-identity rule. Do not use a snippet, remembered version, or copied local contract as fallback. If unavailable or inconsistent, report the precise missing condition and stop the affected operation.
 
 This Skill owns discovery and orchestration only. The linked contract owns transition semantics, Ark triad application, reconstruction requirements, completion states, and Human copy surfaces. Do not duplicate or silently override those rules. Existing specific Runtime takes precedence as declared by the contract.
+
+## Find material operating sources
+
+Follow the selected runtime to the sources that own active collaboration systems and adopted practices when these change correct restart. Connect their purpose, decision-changing formation history and Human corrections, evidence, unresolved questions, and current amendment authority. Let the contract's reconstruction conditions determine what must travel; do not inventory every system, import every reference, or create a new registry.
+
+When experience records matter, read their applicable guide and selected records to recover meaning; load schemas when structural validation is needed. For Ark Task Records, the guide is https://github.com/yusukefujiijp/ai-project/blob/main/formats/task-records/README.md. It owns the distinction between Task Mode, Task Records, and Task Mode System; do not copy its rules here. Historical records explain experience, not present bodily state or commands to repeat tasks. Keep ordinary Unknowns available for dialogue; stop the affected operation where a required source, identity, binding, authority, or applicable Guard prevents a legal next action.
 
 ## Apply only relevant operations
 
