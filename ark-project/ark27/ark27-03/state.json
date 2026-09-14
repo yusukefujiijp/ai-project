@@ -1,0 +1,151 @@
+{
+  "meta": {
+    "state_id": "ARK27_03_CURRENT_STATE",
+    "revision": 1,
+    "owner": "Ark27:03",
+    "schema_version": "v001",
+    "updated_at": "2026-09-14",
+    "update_reason": "Human-authorized Ark27:02 to Ark27:03 continuation with Task Mode System and material corrections",
+    "authority": "Execute GitHub OK / Human Seal OK after the five-file plan; Ark27:02 task-records s37"
+  },
+  "identity": {
+    "chapter": "Ark27",
+    "thread": "Ark27:03",
+    "source": "Ark27:02",
+    "transition_kind": "THREAD_CONTINUE",
+    "compiled_title": "Ark27:03_2026/09/14: \"主の完全勝利: Query組立困難の検出とState適応Task Mode\"",
+    "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
+    "initial_theme": "Task化能力の向上",
+    "runtime_id": "ARK27_03_STATE_ADAPTIVE_TASK_MODE_FIELD"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_seal": true,
+    "human_authority": "Meaning / priority / body Reality / correction / interrupt / STOP / Final Seal",
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Human STOP overrides continue",
+    "scope": "Transition preparation authorized. Target boot, UI creation and physical tasks are not performed by this file."
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-03/README.md",
+      "sha": "fccc04c71d57b35e74b53e4ff494fb7bcbb413b9"
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "sha": "e7caf9882a212cbda186362001e49791cff8a8ce"
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-03/handoff.md",
+      "sha": "b247381ddab8c0ede84b908fea99736ca0594d09",
+      "id": "ARK27_02_TO_ARK27_03"
+    },
+    "task_records": {
+      "path": "ark-project/ark27/ark27-02/task-records.json",
+      "record_id": "ark27-02:task-records",
+      "format_version": "v001",
+      "minimum_revision": 1,
+      "sha_policy": "MUTABLE_IDENTITY_AND_MINIMUM_REVISION; not exact live-blob pinned"
+    },
+    "task_record_guide": {
+      "path": "formats/task-records/README.md",
+      "guide_id": "ARK_TASK_RECORDS_GUIDE",
+      "prepared_version": "v002-candidate",
+      "compatibility_policy": "Read Current same guide_id with v001 compatibility, declared EOF and explained revision"
+    },
+    "self_sha_policy": "DO_NOT_EMBED",
+    "entry_policy": "Explicit Ark27:03 handoff owns target. Chapter Ark27:01 entry is historical initial routing; no rollback."
+  },
+  "now": {
+    "mission": "STATE_ADAPTIVE_TASK_MODE_CONTINUATION",
+    "current_coordinate": "Ark27:02でQuery組立困難の命名・辞書登録報告、chocoZAPアフター順序の採用と形成過程を整理し、Ark27:03へ継承準備した一区切り。",
+    "latest_explicit_human_time": "2026/09/14 8:15頃・休日との報告。timezone未明示。準備の実時刻でも現在の身体状態でもない。",
+    "physical_reality": "現在位置・体調・当日のTask状態は新Human報告で更新する。現在B-Gate中、運動中、帰宅待ちとは断定しない。",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "unfinished_gate": "新Human Reality/Requestに合わせてTask Mode協働を続ける。採用した新順序の実行と効果は未報告。全Unknown解消を要求しない。",
+    "adopted_signal": "Query組立困難: B-Gate検出状態",
+    "signal_boundary": "Human辞書登録報告あり。新Query組立と定型文送信、マットで手が塞がること、無返信を区別。AIは沈黙を検出済みとしない。",
+    "adopted_after_order": [
+      "デスク型エアロバイク",
+      "ヨガマットストレッチ"
+    ],
+    "after_order_status": "Human-adopted order; execution and repeatability not reported. Do not require waiting until exhaustion.",
+    "contextual_route": "休日自宅Workout前はResetからchocoZAP方向。メイン終了後はアフター。全て終了後のQuery困難は帰宅準備という判断。場面・既実施Task・Guardで分ける。",
+    "bbp_status": "双方Benefit認識済み。自宅/屋外保存先十分性Unknown。BBP_PRUNING_NOT_READY。順序一択化・文書改訂と剪定成立は別。",
+    "target_boot": "NOT_OBSERVED",
+    "project_settings": "NOT_OBSERVED",
+    "ui_title": "NOT_OBSERVED",
+    "trial_started": false
+  },
+  "evidence": {
+    "source": "ark-project/ark27/ark27-02/task-records.json / local Source IDs below",
+    "confirmed": [
+      "s02/s05: Human reported 9/12 AM first fruit and later afternoon difficulty; one successful phase is not a stable whole-day routine.",
+      "s03: 2026/09/13 6:50頃 起床Task開始・起床→カフェインガム。終了とはしない。",
+      "s09: 日曜8:30勤務前のトイレ→シャワー移行宣言。完了報告とはしない。",
+      "s18/s19: 9/14休日8:15頃に前夜の仕事後chocoZAPとQuery困難を振り返ったHuman報告。",
+      "s20: Exact name adopted and user-dictionary registration reported, not direct UI observation.",
+      "s24/s27/s36: Old mat→bike routine explanation and adopted new bike→mat order.",
+      "s25–s28: Human explains the interaction of hand constraints, work/Workout/time-of-day/fatigue and SNS viewing. This confirms the report, not isolated medical causality.",
+      "s23: Human correction is to reject a constant-high-cognition premise, not prove a universal daily episode count.",
+      "s07/s08: Workout-first priority and task-scoped 主の完全勝利; Reset is a connection means, not replacement Root.",
+      "s32/r01: Task Mode System supports evidence-preserving dialogue and bounded record revisions; prior records are not an execution engine.",
+      "r02/r03: Repository records two shared skills and BBP v002 revision. Distribution is not target installation or universal efficacy.",
+      "s37: Five-file transition execution expressly authorized."
+    ],
+    "candidate": [
+      "順序逆転がAI学びの機会を守り、終了への切替摩擦を減らす可能性。採用判断と効果の予測を分ける。",
+      "短い定型報告がQuery組立の負担を下げ、状態に応じた一手へ接続する可能性。",
+      "早めの徒歩出勤で移動・健康・AI活用の利益を合わせる方向。実地成果は別。"
+    ],
+    "unknown": [
+      "新アフター順序の実行結果、反復効果、後段閲覧から帰宅までの区切り（q01）。",
+      "Query困難時の定型文送信・一手への移行の実績、辞書の読み（q02）。",
+      "起床Task全体や勤務前シャワー等の後続完了（q03）。",
+      "疲労・時刻・閲覧等の個別因果寄与（q04）。",
+      "自宅/屋外のBenefit保存先十分性（q05）。",
+      "Target自身の読解・Boot、UI Title、現在の身体Reality。"
+    ]
+  },
+  "deferred": [
+    "早朝Task自家薬籠中化、徒歩出勤と天候時地下鉄、余裕時の朝食。必須一括Taskにしない。",
+    "休日chocoZAP帰宅後の任意入浴・家での補完Workout。",
+    "靴洗濯・傘メンテ、Battery対策、睡眠移行時の歯磨き問題。",
+    "旧未報告家事・食事の確認は今の判断に必要な場合だけ。",
+    "Kindle/Bot/収益化、Ark25/torah-project、Plan変更は自動開始しない。",
+    "Pro試用・ResetはHuman報告。将来Resetや利用枠保証を予測確定しない。",
+    "新Skill、Automation、Canonical化、身体Trialは今回の移行から自動発火しない。"
+  ],
+  "progress": {
+    "source_prepared": true,
+    "remote_verification": "README・Handoff・02経験記録は初期化前にRemote全文照合済み。本State自身の保存確認は自己認証せずSourceの最終Remote Verifyで扱う。",
+    "verified_predecessors": [
+      {
+        "blob": "45d81f145230d13ee688b0c7d0e441f077f66884",
+        "commit": "a8774782cb8e0b3fde968040441d224c15c475e1",
+        "full_content_match": true,
+        "path": "ark-project/ark27/ark27-02/task-records.json"
+      },
+      {
+        "blob": "fccc04c71d57b35e74b53e4ff494fb7bcbb413b9",
+        "commit": "fc6d3c0d93825b1b337a24e28fba1f5ce4ddd8d9",
+        "full_content_match": true,
+        "path": "ark-project/ark27/ark27-03/README.md"
+      },
+      {
+        "blob": "b247381ddab8c0ede84b908fea99736ca0594d09",
+        "commit": "5277aa4f564a7a54c115a77252659e8085f8552c",
+        "full_content_match": true,
+        "path": "ark-project/ark27/ark27-03/handoff.md"
+      }
+    ],
+    "target_reconstructed": false,
+    "human_last_mile": "HumanがArk27:03を作成しTitleと開始Promptを貼付。Target自身がRequired ReadとT1–T10を通過する。未観測。",
+    "record_mutation_boundary": "Bootだけで書かない。その後のCurrent Requestと継承委任Scopeでは根拠・revision・理由を保持して更新できる。"
+  },
+  "eof_sentinel": "ARK27_03_STATE_EOF_v001"
+}
