@@ -1,0 +1,4 @@
+interface:
+  display_name: "SNS投稿の全文取得"
+  short_description: "URL一つからSNS投稿の全文を確認し、コピーの手間を減らす"
+  default_prompt: "$read-social-post で、この投稿URLから本文を末尾まで取得してください。"
