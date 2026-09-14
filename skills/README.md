@@ -22,6 +22,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | X投稿一件でログインなし全文取得を観測。スキル形式・判断境界を確認。全SNS互換性は未検証 |
+
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
 2026-09-14、URL一つからSNS投稿の全文を取得する `read-social-post` を追加しました。本文はインストール版と一致し、UI metadataは環境が自動付与するアイコン・内部設定を含まない配布用です。追加スキルは2026-09-12のexport-manifestの対象外です。
