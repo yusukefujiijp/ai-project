@@ -1,12 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_02_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:02",
     "schema_version": "v001",
-    "updated_at": "2026-09-12",
-    "update_reason": "Human-authorized same-chapter continuation after first outdoor field loop",
-    "authority": "Execute GitHub OK / Human Seal OK following reviewed Ark27:02 transition plan"
+    "updated_at": "2026-09-14",
+    "update_reason": "Record current Ark27:02 closure and verified Ark27:03 preparation without modifying immutable predecessor bindings",
+    "authority": "Execute GitHub OK / Human Seal OK after five-file transition plan; task-records.json s37",
+    "previous_blob_sha": "fd88079bda821d8695e42806fd02fe304d175533"
   },
   "identity": {
     "chapter": "Ark27",
@@ -21,7 +22,7 @@
   "authority": {
     "root": "主イェシュア・ハマシア御自身",
     "central_axis": "Teshuvah",
-    "human_foreground_one": "主の完全勝利",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "final_attribution": "主の栄光 / kevod Adonai",
     "human_seal": true,
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Human STOP overrides continue"
@@ -43,20 +44,37 @@
       "id": "ARK27_01_TO_ARK27_02"
     },
     "self_sha_policy": "DO_NOT_EMBED",
-    "entry_policy": "Explicit Ark27:02 handoff owns this target; unchanged chapter Ark27:01 entry is historical initial routing, not rollback."
+    "entry_policy": "Explicit Ark27:02 handoff owns this target; unchanged chapter Ark27:01 entry is historical initial routing, not rollback.",
+    "task_records": {
+      "path": "ark-project/ark27/ark27-02/task-records.json",
+      "record_id": "ark27-02:task-records",
+      "format_version": "v001",
+      "minimum_revision": 1
+    }
   },
   "now": {
-    "mission": "TASK_MODE_FIRST_FRUIT_AND_BENEFIT_PRESERVATION_REVIEW",
-    "current_coordinate": "Human-reported return home and natural pause after outdoor Walking plus AI collaboration",
+    "mission": "ARK27_03_TRANSITION_PREPARED_FROM_STATE_ADAPTIVE_TASK_MODE",
+    "current_coordinate": "Ark27:02でTask Mode System・Query組立困難の命名・chocoZAPアフター順序と形成過程を整理し、Ark27:03継承準備を行った一区切り。",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "unfinished_gate": "Identify and verify a concrete destination preserving home-side benefits before any BBP pruning",
-    "bbp_status": "BBP_PRUNING_NOT_READY / HUMAN REVIEW",
-    "target_boot": "NOT_OBSERVED",
+    "unfinished_gate": "Source側の準備とTarget側の実際の全文読解・再構成・Human UI操作を分離し、Target Boot報告またはHuman Correctionへ接続する。",
+    "bbp_status": "BBP_PRUNING_NOT_READY / 保存先十分性未確認を保留。BBP v002改訂やアフター順序採用は剪定実績ではない。",
+    "target_boot": "Ark27:02の継続対話は本記録のSource。Ark27:03 Target BootはNOT_OBSERVED。",
     "project_settings": "NOT_OBSERVED",
     "ui_title": "NOT_OBSERVED",
     "trial_started": false,
     "source_actual": "One Human-reported outdoor field loop; not a reproducible completed routine",
-    "current_question": "自宅で守れている集中・手軽さ・生活設備へのアクセスをどう保存すれば、散歩モードの利益と両立できるか"
+    "current_question": "新しいHuman RealityとTask Mode Systemをどう接続するか。旧自宅/屋外Benefitの問いは保留として保持。",
+    "latest_explicit_human_time": "2026/09/14 8:15頃・休日（task-records s18）。現在時刻・身体状態・位置ではない。",
+    "adopted_signal": "Query組立困難: B-Gate検出状態",
+    "adopted_after_order": "デスク型エアロバイク→ヨガマットストレッチ。Human採用済み、実施・反復効果は未報告。",
+    "initialization_coordinate": {
+      "revision": 1,
+      "reported_date": "2026-09-12",
+      "current_coordinate": "Human-reported return home and natural pause after outdoor Walking plus AI collaboration",
+      "mission": "TASK_MODE_FIRST_FRUIT_AND_BENEFIT_PRESERVATION_REVIEW",
+      "current_question": "自宅で守れている集中・手軽さ・生活設備へのアクセスをどう保存すれば、散歩モードの利益と両立できるか",
+      "note": "初期化時の歴史座標。現Realityへ巻き戻す命令ではない。"
+    }
   },
   "evidence": {
     "confirmed": [
@@ -67,14 +85,24 @@
       "Task Mode / xx Task naming and deep hypothesis articulation are Human-supported",
       "Both home and outdoor routes have real Human-recognized benefits",
       "Early-morning prayer is an important faith lens, not a Human claim of health-motivated walking",
-      "Next-Cycle Workout Bridge is abolished"
+      "Next-Cycle Workout Bridge is abolished",
+      "9/13 6:50頃の起床Taskは開始報告。勤務前のトイレ→シャワーは移行宣言（s03/s09）。",
+      "9/14朝に仕事後chocoZAPとその後のQuery困難を振り返ったHuman報告（s18/s19）。",
+      "Query組立困難: B-Gate検出状態という名称の採用とUser辞書登録のHuman報告（s20）。",
+      "デスク型エアロバイク→ヨガマットストレッチの順序をHumanが採用（s24/s27）。",
+      "疲労・時間帯・手の制約・SNS閲覧が噛み合うというHuman説明と、その形成過程を継承する要請（s25–s29）。",
+      "Task Mode Systemの記録・対話・改訂・現場再接続と限定委任Scope（s32/r01）。",
+      "二Skill共有とBBP v002改訂がCurrent Repositoryに記録されている（r02/r03）。",
+      "五ファイルの作成・更新とRemote Verifyに対する最新の明示承認（s37）。"
     ],
     "candidate": [
       "Relocating power and daily-service access may preserve home-side benefits outdoors",
       "Some derivative tasks expose existing needs; some add setup and coordination",
       "First-run discovery cost may differ from recurring operating cost",
       "A food/service stop could combine needs; this was not the observed executed path",
-      "Unsweetened coffee test is a future Human intention"
+      "Unsweetened coffee test is a future Human intention",
+      "新アフター順序によるAI学びの保存と終了への移行改善。採用方針と効果の予測は別。",
+      "定型報告から一手へつなぐことによる低認知時の入力摩擦低減。"
     ],
     "unknown": [
       "Laundry completion after deferral",
@@ -82,23 +110,90 @@
       "Full bedmaking completion; early roller completion was hypothetical",
       "Component-specific caffeine/sugar causal effects and long-term outcomes",
       "Preservation sufficiency and stable outdoor repeatability",
-      "Actual next-thread model, plan, UI and boot state"
-    ]
+      "新アフター順序の実行・反復効果、後段閲覧から帰宅への区切り（q01）。",
+      "困難時の定型文送信・実行への接続成功（q02）。",
+      "後続の起床関連・シャワーTask完了（q03）。",
+      "疲労・時刻・SNSの個別因果寄与（q04）。",
+      "Ark27:03 Target Boot・UI Title・現在の身体Reality。"
+    ],
+    "source_map": "ark-project/ark27/ark27-02/task-records.json / s and r IDs; earlier material retained in original Ark27:02 handoff and Ark27:01 records"
   },
   "deferred": [
     "No automatic new outing, Workout, caffeine test or BBP pruning",
     "Sleep-transition toothbrushing remains a broader unresolved life issue despite this completed instance",
     "Kindle and independent Bot execution; preserve four-part cycle deliverable",
-    "AI cost self-funding/monetization; no plan purchase or revenue claim",
+    "AI費用自給・収益化は保留。Pro一ヶ月試用とResetはHuman報告済み（s31）；収益実績・将来Reset・公式利用枠保証は未確認。",
     "Mite-related focused project",
     "Ark25 / torah-project paused, not abandoned",
-    "No new sibling chapter, skill, automation, canonical theory or repository-wide cleanup"
+    "No new sibling chapter, skill, automation, canonical theory or repository-wide cleanup",
+    "早朝Task自家薬籠中化、徒歩出勤、天候時地下鉄、任意朝食/入浴、靴・傘メンテ。",
+    "学び順序を採用しただけで全Unknown解消・実地検証・Canonical化を要求しない。"
   ],
   "progress": {
     "source_prepared": true,
-    "remote_verification": "Source performs final triad verification after initialization; this field alone is not proof",
+    "remote_verification": "Ark27:03 Triadと02経験記録を依存順にRemote全文照合済み。本Source State更新後の最終再取得は別途実施し、自己SHAは埋め込まない。",
     "target_reconstructed": false,
-    "human_last_mile": "Create Ark27:02, paste the explicit handoff prompt, use exact compiled title; target must run its own reconstruction gate"
+    "target_reconstructed_scope": "このfalseは次Target Ark27:03の未観測を表す。初期02 Boot状態はhistorical_initialization_progressへ保持。",
+    "human_last_mile": "Ark27:03作成・Title設定・開始Prompt貼付とTarget自身の再構成Gate。Sourceは未観測。",
+    "historical_initialization_progress": {
+      "source_prepared": true,
+      "remote_verification": "Source performs final triad verification after initialization; this field alone is not proof",
+      "target_reconstructed": false,
+      "human_last_mile": "Create Ark27:02, paste the explicit handoff prompt, use exact compiled title; target must run its own reconstruction gate"
+    },
+    "next_transition": {
+      "source": "Ark27:02",
+      "target": "Ark27:03",
+      "transition_kind": "THREAD_CONTINUE",
+      "handoff_path": "ark-project/ark27/ark27-03/handoff.md",
+      "compiled_title": "Ark27:03_2026/09/14: \"主の完全勝利: Query組立困難の検出とState適応Task Mode\"",
+      "source_prepared": true,
+      "remote_verified_artifacts": [
+        {
+          "blob": "45d81f145230d13ee688b0c7d0e441f077f66884",
+          "commit": "a8774782cb8e0b3fde968040441d224c15c475e1",
+          "full_content_match": true,
+          "path": "ark-project/ark27/ark27-02/task-records.json"
+        },
+        {
+          "blob": "fccc04c71d57b35e74b53e4ff494fb7bcbb413b9",
+          "commit": "fc6d3c0d93825b1b337a24e28fba1f5ce4ddd8d9",
+          "full_content_match": true,
+          "path": "ark-project/ark27/ark27-03/README.md"
+        },
+        {
+          "blob": "b247381ddab8c0ede84b908fea99736ca0594d09",
+          "commit": "5277aa4f564a7a54c115a77252659e8085f8552c",
+          "full_content_match": true,
+          "path": "ark-project/ark27/ark27-03/handoff.md"
+        },
+        {
+          "blob": "3611edb0358f0ff4eaac6f6e43160a5668f60b59",
+          "commit": "24e8ef8c18c6b30eb699729855975db5c0299b39",
+          "full_content_match": true,
+          "path": "ark-project/ark27/ark27-03/state.json"
+        }
+      ],
+      "receipt_policy": "ここに列挙したBlobは準備時Remote Verifyの履歴であり、mutable Stateや経験記録のexact live bindingではない。",
+      "target_reconstructed": false,
+      "ui_title": "NOT_OBSERVED",
+      "physical_trial_started": false
+    },
+    "revision_history": [
+      {
+        "revision": 2,
+        "date": "2026-09-14",
+        "previous_blob_sha": "fd88079bda821d8695e42806fd02fe304d175533",
+        "source_refs": [
+          "task-records.json#s18",
+          "task-records.json#s20",
+          "task-records.json#s27",
+          "task-records.json#s29",
+          "task-records.json#s37"
+        ],
+        "reason": "Humanの新Realityと訂正を反映し、既存Identityと固定Bindingを保ったまま03準備結果へ接続。"
+      }
+    ]
   },
   "eof_sentinel": "ARK27_02_STATE_EOF_v001"
 }
