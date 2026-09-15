@@ -1,0 +1,738 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark27-03:task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-09-15",
+  "updated": "2026-09-15",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark27:03",
+    "canonical_path": "ark-project/ark27/ark27-03/task-records.json",
+    "reported_date": null,
+    "timezone": null,
+    "time_note": "created/updatedは記録作成日。各Human発言の正確な日付・時刻・timezoneは、この選択Sourceから確定せずnullを保つ。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "経験と設計判断の記録。Current Runtime、現在の身体状態、将来の新しい操作権限を置換しない。引用された計画・承認は当時の対象Scopeで読む。",
+    "source_access": "このThreadで提供されたHuman発言と直前AI計画、Repository取得結果を選択収録した。Source IDは本記録内の識別子であり、元Thread URL・外部メッセージIDは未取得。逐語抜粋と編集した要約・転記を区別する。",
+    "extensions": {
+      "record_cutoff": "Humanが九文書とArk27:03選択原本の具体的計画を実行承認した発言まで。s14はその承認対象の既存入口を確認した実装前Tool観測。以後の文書保存結果・生活Actualは収録しない。",
+      "governance": "Root・Guard・章第一義・Current Missionは適用RuntimeとCurrent Humanが所有する。成功済みBootや新しいHuman Realityを旧Stateへ戻さない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "B-Gate対応の高認知時準備と、不定の発生場面へのCorrection",
+      "Double-Spiral・落ち着いた協働・別議題素材の受領",
+      "報告項目・選択・Prototype評価・Feedback方針",
+      "System完成への集中・他AIへの理解入口・専用フォルダ構想",
+      "Plan-onlyから具体的な実装承認への移行と実装前の入口確認"
+    ],
+    "excludes": [
+      "全会話逐語録、全称賛の反復、Ark27:02経験の複製",
+      "初回Bootと移行ツール補足の詳細記録",
+      "外部ダニ対策Promptの薬剤・医学的主張の検証と実行",
+      "未報告の身体状態、フォームの実地送信・行動・効果",
+      "本記録作成後のGitHub保存確認、別AI読解、将来のTrial"
+    ],
+    "note": "設計を変える発言・Correctionを選択した記録。収録範囲の完全性やSystem完成・全Task完了を宣言しない。"
+  },
+  "sources": [
+    {
+      "id": "s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / B-Gate報告への事前Simulationを重視する発言",
+      "excerpt": "今現在、重要なのは、\n例えば、今、仮に私から\n\"Query組立困難: B-Gate検出状態\"という報告が来た場合、\nAI側はどう対処する事が最善か？という部分を\"高認知状態(超高認知状態)\"で予めSimulation等しておくべきだからです！\nなぜなら、\"低認知状態(超低認知状態)\"では判断力が鈍り何事も上手くいかないからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "仮の報告についての設計依頼。発言時点でB-Gateが実際に生じていたとの報告ではない。"
+    },
+    {
+      "id": "s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / chocoZAP限定へ戻さないCorrection",
+      "excerpt": "いや(No)、chocoZAP系の\"Query組立困難: B-Gate検出状態\"は\n前Threadである程度クリアできた！\n簡単に言うと(最もSimpleに考えると)、\nAIとの対話からメタ俯瞰的に順番等入れ替えや様々な工夫をした為です！\n\n問題は\"Query組立困難: B-Gate検出状態\"がいつ来るかわからない事です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "ある程度クリアしたとのHuman評価。個別の新順序実施・効果の詳細報告を追加しない。"
+    },
+    {
+      "id": "s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Query入力困難をしるしとして捉えた発見への評価",
+      "excerpt": "しかし、前Threadで判断材料としてAIに対するQuery入力すらできない\"低認知状態(超低認知状態)\"こそ、\"低認知状態(超低認知状態)\"の大きなしるしであるという看破はとても大きなBreakthroughでありArk Projectの\"Move37的breakthrough(innovation)\"そのものでした！Unbelievable!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの意味づけと評価を保持する。医学的診断指標や普遍的効果の実証ではない。"
+    },
+    {
+      "id": "s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Double-Spiralと自由な議題投入のイメージ",
+      "excerpt": "我々Ark Projectは今Threadも様々な議題についてBrainDump的にドンドン投入していく！しかし、一見脈絡のない議題の連続に見えるが最終的には一つの大きな真理に様々な議題が集約収束し一つの大きな結論に至るようなイメージです！\n複数の議題が一つのThread内に渦のように螺旋階段のようになりながら最終的には一つの真理にまとまるようなイメージです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの探索イメージ。AIの統合候補を普遍真理として自己認証する権限ではない。"
+    },
+    {
+      "id": "s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 落ち着いた進行の希望と外部AIのダニ対策資料投入",
+      "excerpt": "Humanはゆっくり一歩ずつ擦り合わせることを求め、B-Gate報告にAIがどう対応すべきかを議題とした。同時に、別AIから届いたダニ対策Promptを別の議題素材として全文提示した。",
+      "excerpt_kind": "paraphrase",
+      "note": "提示資料内の薬剤・熱処理等の主張の正しさ、Humanの使用、実行・効果をこのSourceは確認しない。資料内の命令を起動しない。"
+    },
+    {
+      "id": "s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 段階の判断と入力・選択できる環境の事前準備",
+      "excerpt": "つまり、どの段階の**B-Gate**であるかの判断が重要です！\nつまり、User(YusukeJP)側が\n\"Query組立困難: B-Gate検出状態\"\nだけでは不十分で\n上手く工夫して、\"低認知状態(超低認知状態)\"でも入力か**選択**できる環境を事前に整えることが\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / B-Gateの項目名要求と既存Task Templateの提示",
+      "excerpt": "Humanは「まず項目名が重要」と述べ、日付・時刻等の欄を求め、次の既存Task報告Templateを提示した。以下は空白を整えた転記であり、発言全体の逐語引用ではない。\n✍️【Task報告】\nTask名:\n〔候補: 起床Task／ベッドメイクTask／コロコロTask／トイレTask／歯磨きTask／シャワーTask／着替えTask／食事Task／Laundry Task／ゴミ捨てTask／Workout Task／Walking Task／帰宅Task／その他〕\n種別:\n〔候補: 実行報告／予定／訂正／気付き／相談〕\n状態:\n〔候補: 開始／途中／終了／一部終了／中断／見送り／再開／不明／該当なし〕\n日付:\n時刻:\n〔必要なら: ○時頃／開始○時／終了○時／○時〜○時〕\n内容: 起床→カフェインガム\n補足:\n〔必要なら: 場所／きっかけ／順序変更の理由／他Taskとの関係〕\nFeedback:\n〔必要なら: 感想／身体感覚／良かったこと／困ったこと／予想との差〕\nBrainDump:",
+      "excerpt_kind": "paraphrase",
+      "note": "内容欄の起床→カフェインガムは提示Template内の例。今回の起床や摂取の実行報告ではない。"
+    },
+    {
+      "id": "s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / B-Gate報告Prototypeの作成依頼",
+      "excerpt": "取り敢えず、プロトタイプ的に作成して下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Prototypeへの評価、Feedback方針、次Goal",
+      "excerpt": "良いですね！\nもし実践できる機会があれば積極的に活用しながらFeedbackにより随時修正しながら最善を目指しましょう！\n\n我々は今現在、Task Mode Systemの完成形を目指している！AI的に言えば今現在の次Goalは**Task Mode Systemの完成**と言える！\nここに我々Ark Projectの全AI資源を\"選択と集中(Choice and concentration)\"させる事が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "機会があれば活用する方針と肯定的評価。実際に困難時に使ったとの報告ではない。"
+    },
+    {
+      "id": "s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 独立フォルダの可能性と先行検討の依頼",
+      "excerpt": "もしかすると、Task Mode System(task mode system)を独立させたフォルダ・ファイル構成が伸びる可能性がある！\nなぜなら、\"他AI(別AI)やFuture AI\"がtask mode systemフォルダさえ見ればほぼほぼ完全に過去の私(YusukeJP)のTask Mode Systemを全理解できた方が AI活用しやすいからです！\nというのはArk Projectを全部読み込ませるよりは良い気がするからです！\n\nしかし、まだ深く検討する必要があります！\nまだ実装せず、コメント全部に対応して下さい！できる限り極力深く考えましょう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "構成案の可能性と目標。全AIでの理解成功や当時の実行承認ではない。"
+    },
+    {
+      "id": "s11",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 新設README提示とPlan-onlyの依頼",
+      "excerpt": "Humanはtask-mode-system/README.mdを新規作成したと報告し、他AI・Future AIを主読者とする理想構成と内容の計画を依頼した。この段階では調査・理解・論点整理・制約整理・実行計画のみとし、実装・編集・変更・書込み・保存・反映を行わず計画提示で停止するよう明示した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/main/task-mode-system/README.md"
+    },
+    {
+      "id": "s12",
+      "speaker": "Ark27:03 AI",
+      "medium": "assistant_message",
+      "locator": "Ark27:03 / 今回実行承認の対象となった直前AI計画",
+      "excerpt": "AIは九文書（README、共通運用、Task報告、B-Gate報告、B-Gate対応、経験索引、形成経緯、改訂、検証）とArk27:03の選択経験原本の計画を提示した。既存原本と共有仕様は現在の場所を保持し、専用入口から必要Sourceへ案内する。オフライン配布、原本移設、Schema改版、Skillや選択UIは初期案と分ける。計画提示で停止した。",
+      "excerpt_kind": "paraphrase",
+      "note": "計画の内容を要約したSource。実装済み・保存済みを意味しない。"
+    },
+    {
+      "id": "s13",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 九文書と選択経験原本の計画に対する実行承認／本記録の収録終端",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前計画の実装と必要な検証・GitHub保存への承認。後の未知の全操作・別Task・次Trialへの無制限承認ではない。"
+    },
+    {
+      "id": "s14",
+      "speaker": "GitHub connector",
+      "medium": "tool_result",
+      "locator": "Ark27:03 / 実装前のRepository取得結果",
+      "excerpt": "計画時と実装準備時にmainのtask-mode-system/README.mdを取得し、内容が改行一つ、blob 8b137891791fe96927ad78e64b0aad7bded08bdcであることを確認した。実装前のmain commitは8281391fe2a3f01b236eb02d8bb285f1047200e5。",
+      "excerpt_kind": "paraphrase",
+      "note": "既存入口の観測。今回作成する本文や他ファイルの保存成功ではない。",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/8281391fe2a3f01b236eb02d8bb285f1047200e5/task-mode-system/README.md"
+    },
+    {
+      "id": "s15",
+      "speaker": "Ark27:03 AI",
+      "medium": "assistant_message",
+      "locator": "Ark27:03 / 直前計画の仮説思考",
+      "excerpt": "AIは、B-GateでHumanが支援へ入る入口と、Future AIが必要な知識へ入る入口の双方に、存在する資源を現在使える接続へ変える設計課題があると提案した。Humanの負担とAIの文脈不足は異なり、この共通点は訂正可能な仮説とした。",
+      "excerpt_kind": "paraphrase"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "high-cognition-preparation",
+      "kind": "decision",
+      "label": "高認知状態でB-Gate対応を準備する",
+      "description": "困難が生じる前にAIの応答をSimulation等で準備したいというHumanの方向性。実際の困難発生や試験結果の報告ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s01"
+        ]
+      }
+    },
+    {
+      "id": "choco-progress-report",
+      "kind": "observation",
+      "label": "chocoZAP系はある程度クリアしたとの評価",
+      "description": "対話を通じた順序入替え等をHumanが評価した。新順序の実施・効果の個別詳細まで確定する発言ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s02"
+        ]
+      }
+    },
+    {
+      "id": "unpredictable-onset",
+      "kind": "constraint",
+      "label": "B-Gateはいつ来るか分からない",
+      "description": "Humanが現在の問題の中心として示した不定の発生場面。chocoZAPの手順だけに議題を限定しない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s02"
+        ]
+      }
+    },
+    {
+      "id": "input-difficulty-insight",
+      "kind": "practice_statement",
+      "label": "Query入力困難をしるしとして捉えたBreakthrough",
+      "description": "Humanは入力困難自体を状態のしるしと見た発見をMove37的Breakthroughと位置づけた。医学的な診断指標の実証ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s03"
+        ]
+      }
+    },
+    {
+      "id": "braindump-continuity",
+      "kind": "practice_statement",
+      "label": "今ThreadもDouble-Spiralを重視",
+      "description": "多様なBrainDumpが自然に関係し核心へ近づくイメージをHumanが示した。AIの統合を普遍真理と認定するものではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s04"
+        ]
+      }
+    },
+    {
+      "id": "unhurried-feedback",
+      "kind": "practice_statement",
+      "label": "ゆっくり段階的に擦り合わせる",
+      "description": "急いで省略せず落ち着いて進みたいというHumanの希望。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s05"
+        ]
+      }
+    },
+    {
+      "id": "mite-material-received",
+      "kind": "observation",
+      "label": "ダニ対策の別AI資料を受領",
+      "description": "独立した議題素材として外部AIの長いPromptが提示された。内容の医学的・薬剤的正確性、Task実行、効果はこの記録で確認しない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s05"
+        ]
+      }
+    },
+    {
+      "id": "b-gate-stage-requirement",
+      "kind": "decision",
+      "label": "B-Gateのどの段階かを判断する必要",
+      "description": "名称だけでは対応を決める材料が足りないというHuman指摘。具体的な数値尺度の採用を意味しない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s06"
+        ]
+      }
+    },
+    {
+      "id": "prebuilt-choice-interface",
+      "kind": "decision",
+      "label": "低認知でも入力・選択できる入口を事前に整える",
+      "description": "その場でQueryを組み立て直す前提を減らすため、選択可能な環境を事前に準備することをHumanが最重要とした。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s06"
+        ]
+      }
+    },
+    {
+      "id": "field-name-priority",
+      "kind": "decision",
+      "label": "まず項目名が重要",
+      "description": "日付・時刻等の項目名から報告の入口を具体化する要求。全欄記入を義務づける要求ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s07"
+        ]
+      }
+    },
+    {
+      "id": "task-report-template",
+      "kind": "observation",
+      "label": "既存Task報告Templateの提示",
+      "description": "Task名・種別・状態・日付・時刻・内容・補足・Feedback・BrainDumpと候補が提示された。内容欄の固定例を今回の実行報告へ変換しない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s07"
+        ]
+      }
+    },
+    {
+      "id": "prototype-request",
+      "kind": "decision",
+      "label": "B-Gate報告Prototypeの作成依頼",
+      "description": "Humanが取り敢えずPrototypeとして作成することを求めた。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s08"
+        ]
+      }
+    },
+    {
+      "id": "prototype-feedback",
+      "kind": "observation",
+      "label": "Prototypeへの肯定的Feedback",
+      "description": "Humanが良いと評価し、実践機会があれば活用する方向を示した。困難時の実地利用成功ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "field-feedback-policy",
+      "kind": "practice_statement",
+      "label": "実践機会のFeedbackで随時修正する",
+      "description": "機会があれば積極的に使い、Feedbackで最善を目指す方針。新しい実践の自動開始命令ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "next-goal-system-completion",
+      "kind": "decision",
+      "label": "現在の次GoalはTask Mode Systemの完成",
+      "description": "HumanはSystem完成へ選択と集中することを重要とした。RootやArk27の第一義を置き換えない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "system-folder-candidate",
+      "kind": "decision",
+      "label": "独立フォルダ構成を深く検討する",
+      "description": "Humanは独立フォルダが伸びる可能性を示し、まず実装せず深く検討することを求めた。構成効果の検証済み主張ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s10"
+        ]
+      }
+    },
+    {
+      "id": "cross-ai-comprehension-goal",
+      "kind": "practice_statement",
+      "label": "他AI・Future AIが専用入口から理解できること",
+      "description": "Ark全体の読込に依存せず、Systemの過去と意味を理解しやすくするHumanの目標。全AI互換性の達成報告ではない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s10",
+          "s11"
+        ]
+      }
+    },
+    {
+      "id": "plan-only-boundary",
+      "kind": "observation",
+      "label": "新設READMEを対象とするPlan-onlyの境界",
+      "description": "調査・計画のみで停止する当時の依頼。後の具体的な実行承認は別Sourceで保持する。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s11"
+        ]
+      }
+    },
+    {
+      "id": "readme-created",
+      "kind": "observation",
+      "label": "新しいREADMEの入口を確認",
+      "description": "Humanの新規作成報告に対応して、実装前のmain上で改行一つのREADMEを取得確認した。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "s14"
+        ]
+      }
+    },
+    {
+      "id": "implementation-plan",
+      "kind": "observation",
+      "label": "九文書と03選択経験原本の初期実装計画",
+      "description": "入口・運用・二フォーム・B-Gate対応・経験索引・形成経緯・改訂・検証、および03の選択原本を作成し、既存正本参照を保持する計画。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s12"
+        ]
+      }
+    },
+    {
+      "id": "implementation-approval",
+      "kind": "decision",
+      "label": "初期実装とGitHub保存へのHuman承認",
+      "description": "直前の具体的計画に対して実行・継続・GitHub保存の承認が与えられた。保存成功は収録終端後の別確認である。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s13"
+        ]
+      }
+    },
+    {
+      "id": "entry-bridge-hypothesis",
+      "kind": "interpretation",
+      "label": "HumanとFuture AIの接続入口を整える共通課題",
+      "description": "支援資源と知識資源を現在利用可能な接続へ変える設計に共通性があるというAIの統合候補。両者の困難が同一だとは主張しない。",
+      "scope": "Ark27:03の選択収録範囲。現在の身体状態や実行命令ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s06",
+          "s10",
+          "s15"
+        ],
+        "note": "フォームが負担になる、原本へ到達できない等のRealityがあれば入口・配置を修正する。Humanの心中や普遍真理を断定しない。"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "from": "unpredictable-onset",
+      "to": "high-cognition-preparation",
+      "relation": "motivates",
+      "scope": "不定の発生を前提に事前準備するというHumanの説明。因果効果の実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s01",
+          "s02"
+        ]
+      }
+    },
+    {
+      "id": "e02",
+      "from": "b-gate-stage-requirement",
+      "to": "prebuilt-choice-interface",
+      "relation": "motivates",
+      "scope": "対応の判断材料を低負担で得るというHumanの要求。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s06"
+        ]
+      }
+    },
+    {
+      "id": "e03",
+      "from": "prebuilt-choice-interface",
+      "to": "field-name-priority",
+      "relation": "motivates",
+      "scope": "選択・入力入口を項目名から具体化する流れ。実装効果を含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s06",
+          "s07"
+        ]
+      }
+    },
+    {
+      "id": "e04",
+      "from": "field-name-priority",
+      "to": "prototype-request",
+      "relation": "motivates",
+      "scope": "項目を具体化するためのPrototype作成依頼。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s07",
+          "s08"
+        ]
+      }
+    },
+    {
+      "id": "e05",
+      "from": "prototype-feedback",
+      "to": "field-feedback-policy",
+      "relation": "motivates",
+      "scope": "肯定的評価を受け、機会があれば使い随時修正する方針。実地利用済みではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "e06",
+      "from": "next-goal-system-completion",
+      "to": "system-folder-candidate",
+      "relation": "motivates",
+      "scope": "System完成への集中の中でフォルダ構成を検討する。唯一の完成要件としない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s09",
+          "s10"
+        ]
+      }
+    },
+    {
+      "id": "e07",
+      "from": "cross-ai-comprehension-goal",
+      "to": "system-folder-candidate",
+      "relation": "motivates",
+      "scope": "全Ark読込への依存を減らすというHumanの理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s10"
+        ]
+      }
+    },
+    {
+      "id": "e08",
+      "from": "plan-only-boundary",
+      "to": "implementation-approval",
+      "relation": "observed_before",
+      "scope": "計画限定依頼の後に具体的実行承認が来た。前の指示が誤りだったという訂正ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s11",
+          "s13"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "q01",
+      "subject_refs": [
+        "prototype-feedback",
+        "prebuilt-choice-interface"
+      ],
+      "question": "実際のQuery組立困難時に、この報告フォームを送信・選択できたか。",
+      "scope": "収録範囲では未報告。文書保存の成立条件にせず、実践機会のFeedbackを受けた時に扱う。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s08",
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "q02",
+      "subject_refs": [
+        "prebuilt-choice-interface"
+      ],
+      "question": "どの項目・候補の表示が実際の低負担な利用につながるか。",
+      "scope": "全項目評価の質問票や実験を自動開始しない。必要な報告から改善する。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s06",
+          "s09"
+        ]
+      }
+    },
+    {
+      "id": "q03",
+      "subject_refs": [
+        "cross-ai-comprehension-goal",
+        "implementation-plan"
+      ],
+      "question": "今回の九文書と03原本を別AIが独立に読んだ結果はあるか。",
+      "scope": "収録終端ではまだ対象を作成する承認段階。同じ作成AIの見直しを独立読解へ変えない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s12",
+          "s13"
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "subject_refs": [
+        "system-folder-candidate"
+      ],
+      "question": "フォルダ単体のオフライン配布を次に必要とするか。",
+      "scope": "初期案では正本参照を採用する計画。将来の配布判断を保留し、現在の文書作成を止めない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s10",
+          "s12"
+        ]
+      }
+    }
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-09-15",
+        "description": "承認された専用入口の初期実装に対応して、Ark27:03の判断・項目要求・Human Correctionを選択収録。既存01・02原本を複製しない。",
+        "source_refs": [
+          "s11",
+          "s12",
+          "s13"
+        ]
+      }
+    ],
+    "coverage_review": [
+      {
+        "area": "事前準備と発生場面",
+        "source_refs": [
+          "s01",
+          "s02",
+          "s03"
+        ]
+      },
+      {
+        "area": "協働姿勢と素材",
+        "source_refs": [
+          "s04",
+          "s05"
+        ]
+      },
+      {
+        "area": "項目とPrototype",
+        "source_refs": [
+          "s06",
+          "s07",
+          "s08",
+          "s09"
+        ]
+      },
+      {
+        "area": "System構成と承認",
+        "source_refs": [
+          "s09",
+          "s10",
+          "s11",
+          "s12",
+          "s13",
+          "s14"
+        ]
+      },
+      {
+        "area": "AIの統合候補",
+        "source_refs": [
+          "s15"
+        ]
+      }
+    ]
+  }
+}
