@@ -1,21 +1,25 @@
 ---
 title: "B-Gate報告 — 低負担で状況を伝える入口"
-version: "0.1.0"
+version: "0.2.0"
 status: "human-authorized prototype / sending and selection usability unverified"
-role: "Human-facing report fields; not a diagnosis or automatic UI"
+role: "AI-managed source for low-burden B-Gate report presentation and interpretation"
+primary_reader: "Current AI / other AI / Future AI"
+updated_reason: "Make AI responsible for presenting and interpreting fields without changing the copied form."
 canonical_path: "task-mode-system/interfaces/b-gate-report.md"
 created: "2026-09-15"
 updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_B_GATE_REPORT::v0.1.0"
+expected_eof: "EOF::TASK_MODE_SYSTEM_B_GATE_REPORT::v0.2.0"
 ---
 
 # B-Gate報告
 
-## 1. 目的と身分
+## 1. AIが扱うフォーム原本
+
+本書の読者はAIである。Humanに内部文書の読解や全項目の管理を要求しない。現在の入力・希望に合わせ、必要なフォーム・項目・選択だけを会話へ取り出す。フォーム全体が必要との依頼には全体を渡せる。
 
 「Query組立困難: B-Gate検出状態」を送る際、説明を一から組み立てる負担を減らすための項目と候補である。Humanが重要としたのは、状態が来てから詳細Queryを考えることを前提にせず、入力・選択できる入口を事前に用意することだった。
 
-本版はArk27:03の対話と承認済み計画を文書へ具体化したPrototypeである。名称の採用・User辞書登録報告は[02原本](../../ark-project/ark27/ark27-02/task-records.json)の`adopted-name`／`s20`、項目設計と訂正は[03原本](../../ark-project/ark27/ark27-03/task-records.json)を参照する。全項目の実用性が実地で確認された意味ではない。
+本版はArk27:03の対話と承認済み計画を文書へ具体化したPrototypeである。名称の採用・User辞書登録報告は[02原本](../../ark-project/ark27/ark27-02/task-records.json)の`adopted-name`／`s20`、項目設計と訂正は[03原本](../../ark-project/ark27/ark27-03/task-records.json)を参照する。全項目の実用性が実地で確認された意味ではない。0.2.0はAI側の読者・責務を明確化する改訂であり、コピー用本文・項目名・採用名称を保持する。
 
 **埋められる項目だけでよい。名称だけ、一項目だけ、自由文だけでも報告として受け取れる。** 日付と時刻を含め、全欄入力を送信条件にしない。候補は自由に置き換えられる。
 
@@ -79,4 +83,4 @@ AIへの希望: 選択肢で聞いて
 
 [AI側の対応](../responses/b-gate.md)／[共通運用](../operation.md)／[System入口](../README.md)
 
-EOF::TASK_MODE_SYSTEM_B_GATE_REPORT::v0.1.0
+EOF::TASK_MODE_SYSTEM_B_GATE_REPORT::v0.2.0

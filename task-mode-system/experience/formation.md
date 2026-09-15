@@ -1,12 +1,14 @@
 ---
 title: "Task Mode System — 判断を変えた形成経緯"
-version: "0.1.0"
+version: "0.2.0"
 status: "source-linked editorial reconstruction / interpretations remain revisable"
 role: "Selective formation history, not current physical state"
+primary_reader: "Current AI / other AI / Future AI"
+updated_reason: "Preserve the Human correction from a dedicated folder to AI-owned operations and flexible architecture."
 canonical_path: "task-mode-system/experience/formation.md"
 created: "2026-09-15"
 updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_FORMATION::v0.1.0"
+expected_eof: "EOF::TASK_MODE_SYSTEM_FORMATION::v0.2.0"
 ---
 
 # 判断を変えた形成経緯
@@ -109,6 +111,24 @@ Humanは今ThreadもDouble-Spiralを重視し、BrainDump的な議題投入と�
 
 根拠：R03 `braindump-continuity`、`mite-material-received`／`s04`・`s05`。詳しいダニ対策や他のProjectは、この初期文書化で自動開始しない。
 
+### 4.5 AIが読む・運用する場所への限定集中
+
+初期Prototypeの後、Humanは、内部の複雑な処理をAIへ委ね、自分は入力と成果に接する「半ブラックボックス」の方向を示した。さらに「task-mode-systemフォルダ自体はほぼほぼ全てAI側が読むもの」と明確化した。Human向けの内部マニュアルを充実させることへ議題を広げる必要はなかった。
+
+Humanはこの方向を初期段階から今後も維持し、AIが自由度と創発性によって運用・改善することを重視した。根拠：R03 `ai-managed-system`、`ai-primary-reader`、`continuous-ai-direction`／`s16`–`s18`。Humanは目的・Reality・Correction・STOP・Sealを保持し、内部読解を要求されないという分担である。
+
+### 4.6 現在の仕様を将来のAIの制約にしない
+
+Humanは、AI開発や新しいアイデアによって根本的変更に価値が生じたら、採用・改善してよいと述べた。今回のAI向けへの変更自体もその実例であり、大幅変更に耐えるためミニマルな設計を求めた。
+
+根拠：R03 `fundamental-redesign-policy`、`minimal-change-design`、`flexible-change-policy`／`s19`・`s20`。現在の九文書や方式を恒久化する要求ではない。今回の計画は、意味の所有先を明確にし、重複規則を整理し、八文書と03記録を更新してB-Gate対応本文を保持するものへ調整された（`revision-plan-v02`／`s21`）。この具体的な改訂と保存への承認は`revision-approval-v02`／`s22`に残す。
+
+### 4.7 長時間反復への備え
+
+Humanは前回の「何時間もループしたような挙動」を避ける事前策も求めた（R03 `loop-prevention-request`／`s18`）。これはHumanが経験した表示・待機の問題に対する要求であり、内部処理のループや原因が技術的に確定したという記録ではない。
+
+改訂では、確認済み結果の再利用、進捗のない反復の再判断、保存成否不明時の照合、必要な検証後の完了を保守原則へまとめる。旧Prototypeの保存内容は別のTool観測（`prior-prototype-remote`／`s23`）として残す。旧成果が存在することは、停止の原因や停止時点を証明しない。新しい原則が長時間停滞を防げるかも、まだ実地で確認されていない。
+
 ## 5. 統合候補と、残る検証
 
 AIの統合候補として、B-GateでHumanが支援へ入る入口と、Future AIが必要な知識へ入る入口の双方に「存在する資源を、現在使える接続へ変える」という設計課題がある。根拠はR03 `s06`・`s10`・`s15`、Node `entry-bridge-hypothesis`。
@@ -117,4 +137,4 @@ AIの統合候補として、B-GateでHumanが支援へ入る入口と、Future 
 
 初期文書化、別AIの再構成、実生活の送信・選択・行動・効果は別の確認対象である。通常のUnknownを保ったまま、現在の依頼に必要な一つの接続へ進める。
 
-EOF::TASK_MODE_SYSTEM_FORMATION::v0.1.0
+EOF::TASK_MODE_SYSTEM_FORMATION::v0.2.0

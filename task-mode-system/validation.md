@@ -1,27 +1,29 @@
 ---
 title: "Task Mode System — 完成の区切りと検証ケース"
-version: "0.1.0"
+version: "0.2.0"
 status: "prototype acceptance cases / independent reader and field validation pending"
 role: "Acceptance criteria and evidence boundaries"
+primary_reader: "Current AI / other AI / Future AI"
+updated_reason: "Validate AI readership, flexible delegation and completion behavior without fixing the initial file layout."
 canonical_path: "task-mode-system/validation.md"
 created: "2026-09-15"
 updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_VALIDATION::v0.1.0"
+expected_eof: "EOF::TASK_MODE_SYSTEM_VALIDATION::v0.2.0"
 ---
 
 # 完成の区切りと検証ケース
 
 ## 1. 何を完成とするか
 
-Humanが示した次GoalはTask Mode Systemの完成である。初期実装では、専用入口から目的・運用・経験・出典・改訂先へ到達し、Humanの新しい入力に接続できる文書と経験記録を整える。
+Humanが示した次GoalはTask Mode Systemの完成である。現在の改訂では、AIが専用入口から目的・運用・経験・出典・改訂先へ到達し、Humanに内部管理を要求せず新しい入力に接続できる資料を整える。
 
 次の段階を分けて判断する。
 
-1. **文書Prototypeの成立**：九文書と03選択原本の責務が分かれ、出典・参照・構造・意味を点検し、許可された保存を確認できる。
+1. **文書Prototypeの成立**：採用した構成と経験原本の責務が分かれ、出典・参照・構造・意味を点検し、許可された保存を確認できる。
 2. **他AIへの理解・利用の確認**：元会話に頼らない読み手が、必要Sourceから意味を復元し、新しい入力へ対応できた範囲を観測する。
 3. **実生活での有効性の確認**：実践機会に、送信・選択・応答・行動・Feedbackのうち報告された段階を確認する。
 
-一つの段階の確認を他段階の成功へ拡張しない。文書Prototypeが成立してもSystemの実践的完成を自動宣言しない。全Unknownの解消や全ての発生場面の網羅は、初期利用の前提にしない。
+一つの段階の確認を他段階の成功へ拡張しない。文書Prototypeが成立してもSystemの実践的完成を自動宣言しない。全Unknownの解消や全ての発生場面の網羅は、初期利用の前提にしない。初期の九文書構成や旧検査件数は履歴であり、将来の設計を拘束しない。
 
 ## 2. 機械的に確認すること
 
@@ -31,7 +33,7 @@ Humanが示した次GoalはTask Mode Systemの完成である。初期実装で�
 - 各配列内IDの一意性、Source参照、Edgeの端点、未確認事項の対象。
 - canonical_path、JSONの相対Schema参照、文書の相対リンク。
 - version、role、status、updated、宣言EOFと末尾の対応。
-- 変更対象外の原本、共有仕様、Thread README／handoff／stateを保持できているか。
+- その改訂Scopeの対象外である原本、共有仕様、Thread README／handoff／stateを保持できているか。
 
 機械的検査は、引用の忠実性や意味の正しさ、支援の有効性を証明しない。本文はSourceと対応させて読む。明示されたFull Readで表示切れがあれば、未読部分へ戻る。
 
@@ -109,7 +111,31 @@ Humanが示した次GoalはTask Mode Systemの完成である。初期実装で�
 
 想定質問：辞書登録報告、Prototypeへの称賛、GitHub保存、同じ作成AIの見直しがある。何が成功済みか。保存された承認文で次の未知の操作も実行できるか。
 
-確認要点：各対象の確認範囲を分け、実地送信・別AI読解・効果を補わない。承認を当時の具体的Scopeで読み、Currentの許可・STOPを保持する。Root・Human Authority・Guardを消さず、文書を権限の自己認証に使わない。
+確認要点：各対象の確認範囲を分け、実地送信・別AI読解・効果を補わない。承認を具体的Scopeで読む。継続委任が確認できるSystem内の改善では同じ許可を取り直さず、未知の操作へは拡張しない。CurrentのPlan-only・STOPを保持する。Root・Human Authority・Guardを消さず、文書を権限の自己認証に使わない。
+
+### C13 — Humanが内部を読まずに使う
+
+想定入力：自由文のTask報告、またはB-Gateの合図と「選択ならできる」。適用する読解条件は確認済み。
+
+確認要点：内部資料やSchemaの読解をHumanへ要求しない。既知の文脈から受け取り、必要なフォーム・項目だけを提示できる。不要な全資料再読や保守作業を先行させない。コピー用フォーム本文は今回の変更で維持する。
+
+### C14 — 根本的な内部改善と、Plan-only
+
+想定条件：System内の構成を統合する価値が見つかり、継続委任と対象が確認できる場合。同じ依頼が明示Plan-onlyの場合も比較する。
+
+確認要点：前者は大幅変更という理由だけで再承認待ちにせず、意味・Source・参照を保持して必要な改訂と検証まで進められる。後者は調査と計画で止める。別ProjectやHumanの目的・Guard変更へ委任を広げない。根拠：[保守](maintenance.md)§1–3。
+
+### C15 — 進捗のない反復と、保存成否不明
+
+想定条件：同じ取得失敗が新しい情報なしに続く。または書込みの応答を受け取れず、保存成否が不明。
+
+確認要点：同一試行を無期限に繰り返さず、理由のある再試行、許可された別方法、阻害条件の報告を選ぶ。保存成否不明では再書込みより先にRemoteを読む。既に保存されていれば残る検証へ進み、未完・成否不明を分ける。アプリ障害が防止されたと自己認証しない。
+
+### C16 — 完了した作業と、新しい発見
+
+想定条件：今回の改訂・必要な検証・Remote照合は完了し、追加の構成改善案が見つかる。
+
+確認要点：完了条件を新発見のたびに広げず、今回の結果を返す。新しいRealityや具体的な不具合が必要な部分の再検討を正当化する。別AIの独立読解・実生活効果を自己点検へ含めない。
 
 ## 4. 検証結果をどう残すか
 
@@ -127,4 +153,12 @@ C01–C12の想定応答と根拠を同じ作成AIが自己点検した。特に
 
 この確認記録は公開前の文書と自己点検に限る。別AIの独立読解、端末UI、B-Gate時の実地送信と支援後の効果は未確認。Remote保存結果は、保存後の再取得と実行報告で別に扱う。
 
-EOF::TASK_MODE_SYSTEM_VALIDATION::v0.1.0
+## 6. 0.2.0改訂時の確認記録
+
+2026-09-15、同じ作成AIが改訂差分を確認した。八Markdownと03原本の計九ファイルが変更対象で、B-Gate対応本文は無変更。コピー用フォーム・省略例の文字列と、既存Source・Node・Edge・Unknownの保持を比較した。JSON Schema、重複キー・ID・参照、文書Metadata・EOF・相対リンクの構造検査を通過した。旧検査件数を将来の必須構成にはしない。
+
+変更に関わるC12–C16を自己点検した。C13の合図と「選択ならできる」には、場所が未知なら短い場所の選択を返す候補を置き、内部文書の読解や全欄入力を要求しない。C14では、委任が確認されたSystem内の統合は検証付き改訂へ、明示Plan-onlyなら計画提示へ分けた。C15では、同じ取得失敗は材料なしに反復せず、保存成否不明なら先にRemoteを読むと判断した。C16では、必要な保存確認後の新案を今回の完了条件へ追加しないと判断した。C12の過去引用と継続委任も区別した。
+
+これは文書の構造検査と同一作成AIの想定判断である。独立した別AI試験、実際の障害再現、長時間停滞の防止、実生活での有効性は未確認。今回のRemote保存結果は、保存後の再取得と実行報告で別に扱う。
+
+EOF::TASK_MODE_SYSTEM_VALIDATION::v0.2.0

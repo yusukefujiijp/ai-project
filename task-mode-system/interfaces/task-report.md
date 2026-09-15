@@ -1,19 +1,23 @@
 ---
 title: "Task報告 — コピー用フォームと解釈"
-version: "0.1.0"
+version: "0.2.0"
 status: "prototype / existing Human-supplied template preserved"
-role: "Human-facing report form and interpretation guidance"
+role: "AI-managed source for presenting and interpreting Human Task reports"
+primary_reader: "Current AI / other AI / Future AI"
+updated_reason: "Define the file as AI-managed form source while preserving the Human input template."
 canonical_path: "task-mode-system/interfaces/task-report.md"
 created: "2026-09-15"
 updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_TASK_REPORT::v0.1.0"
+expected_eof: "EOF::TASK_MODE_SYSTEM_TASK_REPORT::v0.2.0"
 ---
 
 # Task報告
 
-## 1. 使い方
+## 1. AIが提示・解釈する原本
 
-埋められる項目だけでよい。自由文だけでも受け取れる。候補は選択肢であり、全部を選んだ意味ではない。候補外の表現を自由に使える。辞書登録や端末上の選択UIの導入状況は、別に確認する。
+本書の読者はAIである。Humanへ本書の読解やSchema理解を要求せず、必要なフォーム・項目を会話へ取り出して使う。コピー用本文だけがHumanへ渡す内容であり、内部の解釈・更新規則まで一緒に提示する必要はない。フォーム不要の報告にはそのまま応答する。
+
+入力は埋められる項目だけでよい。自由文だけでも受け取れる。候補は選択肢であり、全部を選んだ意味ではない。候補外の表現を自由に使える。辞書登録や端末上の選択UIの導入状況は、別に確認する。
 
 下記はHumanがArk27:03で提示した既存Templateを基に、内容欄の固定例「起床→カフェインガム」を空欄へ変更したコピー用版である。新しい報告が誤ってその実行報告になるのを防ぐための編集である。固定例を含む提示内容は、空白を整えた転記と明示して[03経験原本](../../ark-project/ark27/ark27-03/task-records.json)の`s07`に残す。
 
@@ -58,8 +62,8 @@ Humanの「完了か分からない」という発言を確認できても、Tas
 
 ## 5. 返却と改善
 
-AIは現在の依頼に必要な意味を返し、記録する場合は対象原本と差分を区別する。全欄の清書や全Unknownの解消を前提にしない。欄が多い、候補が選びにくい、何を書くか迷う等のFeedbackから、項目と見せ方を改訂できる。
+AIは現在の依頼に必要な意味を返し、記録する場合は対象原本と差分を区別する。全欄の清書や全Unknownの解消を前提にしない。欄が多い、候補が選びにくい、何を書くか迷う等のFeedbackから、項目と見せ方を[委任範囲で改訂](../maintenance.md)できる。内部の読者設定を変える今回の版では、コピー用本文と項目名を保持する。
 
 [共通運用](../operation.md)／[B-Gate報告](b-gate-report.md)／[改訂ガイド](../maintenance.md)
 
-EOF::TASK_MODE_SYSTEM_TASK_REPORT::v0.1.0
+EOF::TASK_MODE_SYSTEM_TASK_REPORT::v0.2.0

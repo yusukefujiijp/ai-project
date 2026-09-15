@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark27-03:task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-09-15",
   "updated": "2026-09-15",
@@ -17,9 +17,9 @@
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験と設計判断の記録。Current Runtime、現在の身体状態、将来の新しい操作権限を置換しない。引用された計画・承認は当時の対象Scopeで読む。",
-    "source_access": "このThreadで提供されたHuman発言と直前AI計画、Repository取得結果を選択収録した。Source IDは本記録内の識別子であり、元Thread URL・外部メッセージIDは未取得。逐語抜粋と編集した要約・転記を区別する。",
+    "source_access": "このThreadで提供されたHuman発言、対応するAI計画、Repository取得結果を選択収録する。Source IDは記録内の識別子であり、未取得のThread URLや外部メッセージIDは作らない。逐語抜粋と要約・編集を区別する。",
     "extensions": {
-      "record_cutoff": "Humanが九文書とArk27:03選択原本の具体的計画を実行承認した発言まで。s14はその承認対象の既存入口を確認した実装前Tool観測。以後の文書保存結果・生活Actualは収録しない。",
+      "record_cutoff": "revision 1の終端は改訂履歴に保持。revision 2はAI主体・読者限定・根本改訂・ミニマル設計・反復対策を巡る対話と、八文書と03記録の調整済み計画への実行承認までを追加。s23は今回の実装前に旧Prototypeを確認したTool観測。0.2.0の保存結果・生活Actualは先取りしない。",
       "governance": "Root・Guard・章第一義・Current Missionは適用RuntimeとCurrent Humanが所有する。成功済みBootや新しいHuman Realityを旧Stateへ戻さない。"
     }
   },
@@ -31,14 +31,18 @@
       "Double-Spiral・落ち着いた協働・別議題素材の受領",
       "報告項目・選択・Prototype評価・Feedback方針",
       "System完成への集中・他AIへの理解入口・専用フォルダ構想",
-      "Plan-onlyから具体的な実装承認への移行と実装前の入口確認"
+      "Plan-onlyから具体的な実装承認への移行と実装前の入口確認",
+      "AI主読者・AI運用・継続委任、根本的仕様変更を許容するミニマル設計",
+      "長時間反復を避ける事前策の要求と、調整した0.2.0計画への実行承認",
+      "実装前に確認した0.1.0 PrototypeのRepository状態"
     ],
     "excludes": [
       "全会話逐語録、全称賛の反復、Ark27:02経験の複製",
       "初回Bootと移行ツール補足の詳細記録",
       "外部ダニ対策Promptの薬剤・医学的主張の検証と実行",
       "未報告の身体状態、フォームの実地送信・行動・効果",
-      "本記録作成後のGitHub保存確認、別AI読解、将来のTrial"
+      "0.2.0の保存成功・独立AI読解・実地効果の先取り",
+      "前回停止表示の原因・正確な停止時点の推測、表示履歴全体の収録"
     ],
     "note": "設計を変える発言・Correctionを選択した記録。収録範囲の完全性やSystem完成・全Task完了を宣言しない。"
   },
@@ -175,6 +179,77 @@
       "locator": "Ark27:03 / 直前計画の仮説思考",
       "excerpt": "AIは、B-GateでHumanが支援へ入る入口と、Future AIが必要な知識へ入る入口の双方に、存在する資源を現在使える接続へ変える設計課題があると提案した。Humanの負担とAIの文脈不足は異なり、この共通点は訂正可能な仮説とした。",
       "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "s16",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 内部処理の委任と半ブラックボックスの説明",
+      "excerpt": "できればこのTask Mode Systemの複雑さはあなた(AI)ChatGPT6 Astra系のブラックボックス的に人間側は殆ど触れないがAI側が自由にUpdateしてOK！\nつまり、複雑な事はtask-mode-system内で上手く工夫して、AI側が処理しつつ人間側は複雑な処理からの果実のみをいただくという方向性が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言ではまだ実装しないことも明示。方向性の委任と、その回の実行停止を分ける。"
+    },
+    {
+      "id": "s17",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / フォルダの主読者をAIへ限定するCorrection",
+      "excerpt": "task-mode-system フォルダ自体はほぼほぼ全てAI側が読むものとして限定集中するべきという意味合いです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s18",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / AI主体の継続方向と長時間反復への事前策要求",
+      "excerpt": "大事な事はこのtask-mode-systemフォルダは完全にAI側の自由な**自由度と創発性**で運用運営してよく読者もAIという特殊だが実戦的な方法論です！つまり、今後もこの方向性で貫く方向性がこの初期段階で最重要です！\n\nあとは前回のように何時間もループしたような挙動をしないようにする何か事前策が必要です！\n何か良いアイデアはないですか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが経験した表示・待機に関する表現。実際の内部ループや原因の技術的確定ではない。この発言ではまだ実装しないよう指定された。"
+    },
+    {
+      "id": "s19",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 根本的な新規アイデアとミニマル設計",
+      "excerpt": "例えば、AI開発が加速してこのtask-mode-systemを根本的に変える新規アイデアが出た場合、採用の価値があると判断されれば**自由度と創発性**により改善して良いという方針が重要です！つまり、あまり固定しすぎない柔軟性が重要です！\nつまり、できる限りミニマルにしておかないと変更に弱くなります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s20",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 今回の変更を柔軟な大幅仕様変更の実例とする説明",
+      "excerpt": "つまり、今回の変更もある意味、完全にAIよりのするという柔軟性のある**自由度と創発性**の判断です！\nこのように積極的な仕様変更を柔軟にやって良いという意味合いです！その為には、設計ミニマルにする必要があるからです！\nある程度大幅の仕様変更にも耐えられる強靭な設計方針が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言の実装停止は当時の境界。後の調整済み計画への実行承認はs22に保持する。"
+    },
+    {
+      "id": "s21",
+      "speaker": "Ark27:03 AI",
+      "medium": "assistant_message",
+      "locator": "Ark27:03 / Next stepによる計画調整の結果",
+      "excerpt": "AIは既存の用途別ファイル分担を活かし、読者設定・責務・変更の自由度を整える計画を提示した。八文書と03経験原本を更新し、responses/b-gate.mdは保持する。共通方針をREADME、継続委任と反復・保存・完了原則をmaintenanceへ集約する。確認結果の再利用、進捗のない反復の再判断、保存成否不明時の照合を採用候補とした。Humanの入力フォームを保持し、構造・参照・意味と保存後の一致を確認する。計画提示で停止し、実装はまだ行っていない。",
+      "excerpt_kind": "paraphrase",
+      "note": "次のs22が承認した具体的な計画。計画内の検査や対策の実行・効果は、このSourceでは未確認。"
+    },
+    {
+      "id": "s22",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 調整済み0.2.0改訂計画への実行承認",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "s21の具体的改訂・検証・GitHub保存への承認。s16–s20のSystem内部改善に関する継続委任の意味を保持し、未知の別対象へは広げない。"
+    },
+    {
+      "id": "s23",
+      "speaker": "GitHub connector",
+      "medium": "tool_result",
+      "locator": "Ark27:03 / 0.2.0実装前のCurrent mainとローカル本文照合",
+      "excerpt": "Current mainから取得した一覧上の九文書と03記録のblobは、0.1.0のローカル本文から計算したblobと一致した。既存コミット317d12ed2ded59664b392e8e2229a52643086399のtreeは4206c6b71bc343715d835458cb38bfcab65b189f。旧Prototypeの保存内容を確認した。",
+      "excerpt_kind": "paraphrase",
+      "note": "今回の0.2.0保存完了でも、前回の停止原因・時点の証明でもない。",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/317d12ed2ded59664b392e8e2229a52643086399"
     }
   ],
   "nodes": [
@@ -489,6 +564,148 @@
         ],
         "note": "フォームが負担になる、原本へ到達できない等のRealityがあれば入口・配置を修正する。Humanの心中や普遍真理を断定しない。"
       }
+    },
+    {
+      "id": "ai-managed-system",
+      "kind": "decision",
+      "label": "内部の複雑さをAIへ委ね成果を受け取る",
+      "description": "Humanは内部処理・方法・更新をAIへ委ね、自分は入力・成果・Feedbackに接する方向を示した。当時の実装停止は保持し、継続委任の方向とその回の実行可否を分ける。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s16",
+          "s18"
+        ]
+      }
+    },
+    {
+      "id": "ai-primary-reader",
+      "kind": "decision",
+      "label": "フォルダの主読者をほぼAIへ限定する",
+      "description": "Human向けの内部マニュアル作成へ議題を広げず、現在AI・別AI・Future AIが読む場所として集中するCorrection。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s17"
+        ]
+      }
+    },
+    {
+      "id": "continuous-ai-direction",
+      "kind": "practice_statement",
+      "label": "AIの自由度と創発性による運用を継続する",
+      "description": "Humanは初期段階から今後もAI主読者・AI主体の運用方向を維持することを重視した。常時実行機能を実装したとの報告ではない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s18"
+        ]
+      }
+    },
+    {
+      "id": "loop-prevention-request",
+      "kind": "decision",
+      "label": "長時間ループしたような挙動への事前策を求める",
+      "description": "Humanは前回の待機・表示経験を踏まえ事前策を求めた。原因や内部ループの有無、対策の実地効果はこの記録で確定しない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s18"
+        ]
+      }
+    },
+    {
+      "id": "fundamental-redesign-policy",
+      "kind": "decision",
+      "label": "採用価値があればSystemを根本から改善できる",
+      "description": "新しいAI能力やアイデアに応じ、既存構成の手直しに限定せず根本的な仕様変更も認めるHuman方針。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s19"
+        ]
+      }
+    },
+    {
+      "id": "minimal-change-design",
+      "kind": "decision",
+      "label": "大幅変更に耐えるミニマル設計",
+      "description": "Humanは固定しすぎない柔軟性のためにミニマル設計を求めた。記録の根拠を削除する指示や単なる最短文字数目標ではない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s19",
+          "s20"
+        ]
+      }
+    },
+    {
+      "id": "flexible-change-policy",
+      "kind": "practice_statement",
+      "label": "今回のAI向け変更も積極的仕様変更の実例",
+      "description": "Humanは今回の読者・運用変更そのものを柔軟な判断の実例と説明した。今回の構成を恒久的な完成形へ固定しない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s20"
+        ]
+      }
+    },
+    {
+      "id": "revision-plan-v02",
+      "kind": "observation",
+      "label": "八文書と03記録の改訂計画",
+      "description": "AIが用途別構成と既存フォーム・B-Gate対応を保持し、重複を整理する具体的計画を提示した。想定ケースと必要な保存確認は計画内容であり、実施結果ではない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s21"
+        ]
+      }
+    },
+    {
+      "id": "revision-approval-v02",
+      "kind": "decision",
+      "label": "調整済み計画の実装・保存を承認",
+      "description": "Humanがs21の改訂計画の実行とGitHub保存を承認した。以前のPlan-onlyは当時の境界として残す。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s22"
+        ]
+      }
+    },
+    {
+      "id": "prior-prototype-remote",
+      "kind": "observation",
+      "label": "0.1.0 Prototypeの保存内容を確認",
+      "description": "今回の改訂準備時に、既存九文書と03記録の本文blob一致と既存コミットを確認した。今回の改訂結果や前回の停止原因は含まない。",
+      "scope": "Ark27:03の設計方針・委任とその確認範囲。生活Actualや効果の実証とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "s23"
+        ]
+      }
     }
   ],
   "edges": [
@@ -608,6 +825,36 @@
           "s13"
         ]
       }
+    },
+    {
+      "id": "e09",
+      "from": "fundamental-redesign-policy",
+      "to": "minimal-change-design",
+      "relation": "motivates",
+      "scope": "大幅な変更を受け入れるためにミニマルにするというHumanの説明。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s19",
+          "s20"
+        ]
+      }
+    },
+    {
+      "id": "e10",
+      "from": "revision-plan-v02",
+      "to": "revision-approval-v02",
+      "relation": "observed_before",
+      "scope": "調整計画の提示後に、その具体的計画への実行承認が来た。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s21",
+          "s22"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -688,6 +935,22 @@
           "s11",
           "s12",
           "s13"
+        ],
+        "record_cutoff": "Humanが九文書とArk27:03選択原本の具体的計画を実行承認した発言まで。s14はその承認対象の既存入口を確認した実装前Tool観測。以後の文書保存結果・生活Actualは収録しない。"
+      },
+      {
+        "revision": 2,
+        "date": "2026-09-15",
+        "description": "AI主読者・継続委任・根本的仕様変更とミニマル設計の方針、反復対策の要求、調整計画への実行承認を追加。旧原本とSourceを保持し、0.2.0の保存成功・実地効果は先取りしない。",
+        "source_refs": [
+          "s16",
+          "s17",
+          "s18",
+          "s19",
+          "s20",
+          "s21",
+          "s22",
+          "s23"
         ]
       }
     ],
@@ -731,6 +994,30 @@
         "area": "AIの統合候補",
         "source_refs": [
           "s15"
+        ]
+      },
+      {
+        "area": "AI主体・読者限定・将来の根本改訂",
+        "source_refs": [
+          "s16",
+          "s17",
+          "s18",
+          "s19",
+          "s20"
+        ]
+      },
+      {
+        "area": "反復対策要求と調整計画・承認",
+        "source_refs": [
+          "s18",
+          "s21",
+          "s22"
+        ]
+      },
+      {
+        "area": "旧Prototypeの保存内容確認",
+        "source_refs": [
+          "s23"
         ]
       }
     ]

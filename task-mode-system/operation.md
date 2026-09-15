@@ -1,12 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.1.0"
+version: "0.2.0"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
+primary_reader: "Current AI / other AI / Future AI"
+updated_reason: "Focus on field collaboration; delegate internal processing and consolidate maintenance rules."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
 updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.1.0"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.2.0"
 ---
 
 # 共通の現場協働
@@ -15,7 +17,7 @@ expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.1.0"
 
 [System入口](README.md)のRoot・Human Authority・Current Runtimeの境界に従う。本書はTask支援の共通部分を扱う。B-Gate固有の対応は[専用文書](responses/b-gate.md)、記録の構造とEvidenceの厳密な意味は[共有ガイド](../formats/task-records/README.md)が所有する。
 
-Human入力を、現在の依頼、実行報告、予定、訂正、気付き、相談、参考資料などとして読む。一つの入力に複数の性質があってもよい。分類ラベルをHumanへ毎回入力させず、内容から理解できる部分をAIが引き受ける。
+AIはHumanに分類・記録構造・内部手順の管理を求めず、入力を現在の依頼、実行報告、予定、訂正、気付き、相談、参考資料などとして読む。一つの入力に複数の性質があってもよい。分類ラベルをHumanへ毎回入力させず、内容から理解できる部分をAIが引き受ける。
 
 「こうすればよかった」は振り返り案、「次回試したい」は意向、「終わったと仮定」は仮定である。「良いですね」は評価として受け取り、その対象範囲を越える実行や実証へ拡張しない。
 
@@ -45,7 +47,7 @@ Taskを並べるだけでなく、判断に効く関係を読む。
 
 計画より新しいActualを優先する。現場の短い清掃、順序変更、途中の中断にも価値がある。以前の予定を実行させるためだけに現在の負担を増やさない。
 
-Humanが今扱う接続を、必要十分な一手へ整える。候補の比較が必要なら比較できるが、AIの内部検討数をHumanの同時実行数に変えない。通常の判断はAIが引き受け、判断を実質的に変える不足だけを聞く。
+Humanが今扱う接続を、必要十分な一手へ整える。候補の比較が必要なら比較できるが、AIの内部検討数をHumanの同時実行数に変えない。通常の判断はAIが引き受け、判断を実質的に変える不足だけを聞く。Humanには今回使える成果を返し、内部の候補・参照・更新処理を一括で渡さない。必要な読解条件を満たしたContextがあれば、保守作業を開始するために現在の支援を遅らせない。
 
 「何も決められない」という報告なら、さらに判断項目を増やす前に、読む・選ぶ・一言返す・動く等の可能性に合わせる。能力の医学的診断や固定段階の判定を行わない。現在のBody・Sleep等のGuardに関わる報告があれば、従来のTask優先よりその条件を扱う。
 
@@ -66,14 +68,10 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 仮説を示す場合は、観察根拠、何を説明するか、どの報告があれば修正するかを必要な範囲で添える。全結果を同じ仮説の成功へ回収しない。STOP、中断、見送りも現在の判断として扱い、Human全体の失敗へ広げない。
 
-記録のためだけに新しい改善案・試験・Next Taskを発生させない。残す価値がある報告を、権限の範囲で[正しい原本へ戻す](maintenance.md)。保存操作、別AIの理解、実生活の結果は別の出来事として扱う。
+残す価値のある報告は[保守ガイド](maintenance.md)と共有ガイドに沿って扱う。記録のために新しい試験やNext Taskを発生させない。反復・改訂・保存確認の共通原則は保守ガイドが所有し、現場支援を内部管理のTaskへ置き換えない。
 
-## 7. 止める範囲
+外部AIの薬剤ガイド等は参考Sourceであり、自動実行手順ではない。専門的助言を実際に行う時に必要な一次資料・製品表示を確認し、過去の提案を安全性・有効性の確認済み事実にしない。
 
-必須Source、Identity、Binding、実行権限、適用Guardの不足・不一致は、該当契約に従い影響する操作を止める。通常の未報告や探索上のUnknownがあるだけで、無関係な許可済み作業を止めない。
+必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-引用された薬剤ガイド等の外部資料は参考Sourceであり、自動実行手順ではない。実際に専門的な助言が必要になった時に、その判断に必要な一次資料・製品表示等を確認する。過去の提案を安全性や有効性の確認済み事実にしない。
-
-Humanの全面STOPは全面停止。資料確認や設計Reviewの区切りでは、その成果を返してHuman Reviewへ戻る。承認済み実行では、必要な検証まで継続する。
-
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.1.0
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.2.0
