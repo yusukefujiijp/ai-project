@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "state_id": "ARK27_04_CURRENT_STATE",
+    "revision": 1,
+    "owner": "Ark27:04",
+    "schema_version": "v001",
+    "updated_at": "2026-09-17",
+    "update_reason": "Initialize Ark27:04 from Ark27:03 after Task Mode System v0.3.0 completion and explicit transition execution request.",
+    "authority": "Current Human: Ark27:03 to Ark27:04; Human Seal OK / Execute GitHub OK / Full Rail & Next Gate. Scope is transition preparation, necessary persistence, consistency and verification."
+  },
+  "identity": {
+    "chapter": "Ark27",
+    "thread": "Ark27:04",
+    "source": "Ark27:03",
+    "transition_kind": "THREAD_CONTINUE",
+    "compiled_title": "Ark27:04_2026/09/17: \"主の完全勝利: AI主体Task Mode Systemの継続運用とReality Feedback\"",
+    "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
+    "initial_theme": "Task化能力の向上",
+    "runtime_id": "ARK27_04_AI_MANAGED_TASK_MODE_FIELD",
+    "date_scope": "Source preparation date, not observed UI creation or Human Task time"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_seal": true,
+    "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and tool access controls remain effective.",
+    "scope": "Source transition preparation is authorized. TMS continuing internal delegation is retained with its limits. Boot alone does not begin another revision, physical Task or Trial.",
+    "delegation_source": "task-mode-system/maintenance.md; supporting Human formation in ark27-03:task-records, including ai-managed-system, ai-primary-reader, fundamental-redesign-policy and flexible-change-policy",
+    "stop_precedence": "Current Human Plan-only / Correction / STOP prevails over earlier Continue. AI is Keli, not King / Throne / Oracle."
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-04/README.md",
+      "runtime_id": "ARK27_04_AI_MANAGED_TASK_MODE_FIELD",
+      "sha": "c672d8f3022c9041f6ee38475b1d357946ceadfb"
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "sha": "e7caf9882a212cbda186362001e49791cff8a8ce"
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-04/handoff.md",
+      "id": "ARK27_03_TO_ARK27_04",
+      "sha": "395bfd448576c159beaf1b28d09e1f90cf0de6e1"
+    },
+    "task_mode_system": {
+      "path": "task-mode-system/README.md",
+      "prepared_version": "0.3.0",
+      "observed_blob": "23b58e24146010ce5ab4b000c119811203563567",
+      "observed_commit": "3c4ba87d4491f87410fe87ebeda3647e0623bb34",
+      "policy": "Current owner document; observation is not a permanent exact-blob pin. Resolve explained compatible changes and material conflicts under Handoff."
+    },
+    "task_records": {
+      "R01": {
+        "path": "ark-project/ark27/ark27-01/task-records.json",
+        "record_id": "ark27-01:task-records",
+        "format_version": "v001",
+        "minimum_revision": 2
+      },
+      "R02": {
+        "path": "ark-project/ark27/ark27-02/task-records.json",
+        "record_id": "ark27-02:task-records",
+        "format_version": "v001",
+        "minimum_revision": 1
+      },
+      "R03": {
+        "path": "ark-project/ark27/ark27-03/task-records.json",
+        "record_id": "ark27-03:task-records",
+        "format_version": "v001",
+        "minimum_revision": 3
+      },
+      "policy": "MUTABLE_IDENTITY_AND_MINIMUM_REVISION. Originals remain in existing Thread locations; guide-first reading for original record work. No empty R04 is created just for Boot."
+    },
+    "task_record_guide": {
+      "path": "formats/task-records/README.md",
+      "guide_id": "ARK_TASK_RECORDS_GUIDE",
+      "prepared_version": "v002-candidate",
+      "compatibility_policy": "Read Current same guide_id with v001 compatibility, declared EOF and explained revision when using or revising originals."
+    },
+    "self_sha_policy": "DO_NOT_EMBED",
+    "entry_policy": "Explicit Ark27:04 Handoff owns this continuation. Chapter Ark27:01 entry and old Ark27:03 initial State are historical routing/snapshots, not rollback targets."
+  },
+  "now": {
+    "mission": "AI_MANAGED_TASK_MODE_SYSTEM_CONTINUATION",
+    "current_coordinate": "Task Mode System v0.3.0の文書改訂・構造検査・Source Remote照合を完了し、一区切りとして03→04を準備。Humanに簡潔な入力と成果を返し、他AIも運用・改訂できる内部を継承する。",
+    "current_practical_goal": "Humanが次Goalに置いたTask Mode Systemの完成・成長。v0.3.0の完了境界を保ち、永久完成や全Unknown解消へ拡大しない。",
+    "latest_human_request": "今回の移行準備を、計画機能を実行に内包してGitHub保存・再取得確認まで連続実行する。Source03、Target04は確定。",
+    "physical_reality": "この移行依頼に新しい身体・場所・当日のTask進行報告はない。現在B-Gate中、運動中、帰宅待ちとは扱わない。新しいHuman入力があれば受領する。",
+    "historical_time_boundary": "R02にある9/14 8:15頃・休日等の時刻やR03のcreated/updatedは現在の身体Realityではない。不明な発言日時・timezoneは創作しない。",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "unfinished_gate": "Target自身によるRequired Sources、Triad Consistency、T1–T12の受入れ。通過後は既にある新Human入力、またはHuman Reviewへ。生活Trialを受入れ条件にしない。",
+    "adopted_signal": "Query組立困難: B-Gate検出状態",
+    "signal_boundary": "命名・辞書登録はHuman報告。実地送信・選択・行動・効果は未確認。名称のみを受領できるが場面・進行・応答可能性は別。手の制約・沈黙・通信不良から発生を自動認定しない。",
+    "adopted_after_order": [
+      "デスク型エアロバイク",
+      "ヨガマットストレッチ"
+    ],
+    "after_order_status": "Human-adopted order; implementation in documents is not reported physical execution or effectiveness. Human assessment that chocoZAP cases were partly cleared does not fill missing individual outcomes.",
+    "contextual_route": "休日自宅Workout前はWorkout-first/chocoZAP方向、メイン終了後でマットが残るならマットへの接続、全て終了後なら帰宅準備。現在のGuardに従い、Resetを常に必須にしない。",
+    "reading_policy": "One entry, purpose-sensitive routes; reuse verified accessible context, preserve mandatory full reads, recover material missing sources. Do not read all links every reply or reduce Human support to repository maintenance.",
+    "bbp_status": "双方Benefitを保持。自宅/屋外のBenefit保存先十分性はUnknown。BBP_PRUNING_NOT_READY。",
+    "source_03_boot": "Human-reported successful Boot and subsequent collaboration; old initial NOT_OBSERVED does not revoke it.",
+    "target_boot": "NOT_OBSERVED",
+    "project_settings": "NOT_OBSERVED",
+    "ui_thread_creation": "NOT_OBSERVED",
+    "ui_title": "NOT_OBSERVED",
+    "target_skill_installation": "NOT_OBSERVED",
+    "trial_started": false
+  },
+  "evidence": {
+    "source": "Handoff sections 2–4, Task Mode System formation and linked R01/R02/R03 originals. R03 coverage ends at v0.3.0 design approval; actual v0.3.0 remote observation is recorded separately below.",
+    "confirmed": [
+      "R01 / formation section 2: Human reports time-scoped shower completion, included toothbrushing, Laundry deferral, and correction from toilet-cleaning deferral to short cleaning. Hypothetical roller completion is not an execution report.",
+      "R02 / formation section 3: Human naming and dictionary-registration report; old mat→bike order, hand constraints and dialogue led to adoption of bike→mat. Adoption is confirmed as Human policy, not field effectiveness.",
+      "R03 s01–s09 / formation 4.1–4.2: Human correction toward unpredictable B-Gate occurrence, high-cognition preparation, first field names and low-burden entry/selection, feedback-based revision policy.",
+      "R03 s16–s22 / formation 4.5–4.7: AI-primary reader/operator/maintainer, continuing internal delegation, flexibility for fundamental redesign, minimal design, and request to avoid unproductive prolonged repetition.",
+      "R03 s24–s34 / formation 4.8–4.11: preserve Ark original locations with links; one-entry understanding and continued AI use; selective reading without material loss; operational Node & Edge; necessary transferable complexity; Black box thought experiment.",
+      "R03 s35/s36: AI design proposal and Human approval are separate sources. Positive evaluation and authorization do not independently validate the design's effects.",
+      "Source tool observation: commit 3c4ba87d4491f87410fe87ebeda3647e0623bb34 saved TMS v0.3.0 across six Markdown files and R03 revision 3. All seven files were reread from main with full-content and blob equality; 269 other files were unchanged. Structural checks and same-AI case review completed.",
+      "Source current Human request: explicitly execute the 03→04 preparation through necessary artifacts, GitHub persistence and remote verification. Earlier request for an execution Prompt alone was a separate drafting task.",
+      "Source tool observation: Ark27:04 README blob c672d8f3022c9041f6ee38475b1d357946ceadfb was remotely verified at commit b9f896dcfba11be1bff6be5b20472f8072c906c7 before Handoff binding."
+    ],
+    "candidate": [
+      "Human-facing simplicity with recoverable AI internals may improve continuity and reduce Human management burden. This design is adopted; actual cross-AI and field benefit remains unverified.",
+      "A shared design problem may connect the B-Gate entry for Human with the information entry for Future AI: making existing resources usable under current conditions. R03 entry-bridge-hypothesis remains AI inference, not universal truth.",
+      "Meaningful progress reports and bounded completion may reduce ambiguous waiting. They do not establish the cause of the earlier apparent stall or guarantee platform behavior."
+    ],
+    "unknown": [
+      "B-Gate field sending/selection/action/effects and adopted after-order execution/repeatability.",
+      "Independent AI operational success with TMS v0.3.0; its reading burden and practical effectiveness under new conditions.",
+      "Cause of earlier prolonged unchanged UI / possible interruption, and effectiveness of new process safeguards.",
+      "Historical tasks without later reports; current body/place/task Reality; individual causal contributions of fatigue/time/viewing.",
+      "Sufficiency of home/outdoor Benefit carriers; no completed BBP pruning claim.",
+      "Target04 reconstruction, Skill installation, Human UI creation/title/settings and future real-world results."
+    ]
+  },
+  "deferred": [
+    "外部AIのダニ対策資料は未検証の素材。薬剤・手順の実行、健康助言の自動再開はしない。",
+    "早朝Task、徒歩出勤と天候、朝食、Battery、靴洗濯・傘、睡眠移行時の歯磨き、休日の補完運動等は今の依頼で必要になった時に扱う。",
+    "Kindle/Bot/収益化、Ark25/torah-project等の別Branchは価値を保持して自動開始しない。",
+    "新しい選択UI、辞書導入、通知・Automation・常時監視、オフライン完全配布、独立AI試験は未実装または未実施。今回の受入れ条件へ追加しない。",
+    "連続実行用移行Promptの共有Hub保存・Skill改訂は今回の移行Scopeでは行っていない。モデル設定を権限・成功保証にしない。"
+  ],
+  "progress": {
+    "source_prepared": true,
+    "source_prepared_scope": "Runtime finalized and remotely verified; bound Handoff and this initial State compiled. Preparation is distinct from remote verification of these final two files and from Target success.",
+    "remote_verification": "README is already remotely verified. Handoff and State are to be verified by Source's final live reread after their authorized save. This State does not self-certify its own future remote persistence or contain its own SHA.",
+    "verified_predecessors": [
+      {
+        "path": "task-mode-system/README.md",
+        "blob": "23b58e24146010ce5ab4b000c119811203563567",
+        "commit": "3c4ba87d4491f87410fe87ebeda3647e0623bb34",
+        "full_content_match": true,
+        "scope": "TMS v0.3.0 seven-file remote verification; see Handoff section 4.1"
+      },
+      {
+        "path": "ark-project/ark27/ark27-04/README.md",
+        "blob": "c672d8f3022c9041f6ee38475b1d357946ceadfb",
+        "commit": "b9f896dcfba11be1bff6be5b20472f8072c906c7",
+        "full_content_match": true
+      }
+    ],
+    "target_reconstructed": false,
+    "human_last_mile": "Human creates/opens Ark27:04 and pastes the exact Title and next-thread entry. Target itself reads Required Sources and passes Triad Consistency plus T1–T12. No UI action is claimed here.",
+    "record_mutation_boundary": "No empty R04 for Boot. Existing Task/System delegation remains usable for actual requests, feedback and material experience, with provenance/revision/reason preserved.",
+    "completion_boundary": "After source remote consistency checks, return copyable Title and Handoff plus minimal Human action. No automatic Task, further redesign or next Trial."
+  },
+  "eof_sentinel": "ARK27_04_STATE_EOF_v001"
+}
