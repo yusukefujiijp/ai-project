@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 判断を変えた形成経緯"
-version: "0.2.0"
+version: "0.3.0"
 status: "source-linked editorial reconstruction / interpretations remain revisable"
 role: "Selective formation history, not current physical state"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Preserve the Human correction from a dedicated folder to AI-owned operations and flexible architecture."
+updated_reason: "Preserve the path from one-link access to selective reading, necessary complexity and recoverable Black box operation."
 canonical_path: "task-mode-system/experience/formation.md"
 created: "2026-09-15"
-updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_FORMATION::v0.2.0"
+updated: "2026-09-17"
+expected_eof: "EOF::TASK_MODE_SYSTEM_FORMATION::v0.3.0"
 ---
 
 # 判断を変えた形成経緯
@@ -129,6 +129,30 @@ Humanは前回の「何時間もループしたような挙動」を避ける事
 
 改訂では、確認済み結果の再利用、進捗のない反復の再判断、保存成否不明時の照合、必要な検証後の完了を保守原則へまとめる。旧Prototypeの保存内容は別のTool観測（`prior-prototype-remote`／`s23`）として残す。旧成果が存在することは、停止の原因や停止時点を証明しない。新しい原則が長時間停滞を防げるかも、まだ実地で確認されていない。
 
+### 4.8 一つの入口から、既存の経験原本へ
+
+Humanは01・02分の所在を問い、資料が重すぎると他AIが使いにくく、軽すぎると必要な意味を失うと指摘した。次Threadの保存構成を検討する中で、従来のArk構成を保持し、Systemからリンクする案を示した。その後、一つのフォルダリンクから新規AIが全容を理解できることを最重要とし、理解済みAIの継続利用も明確にした。
+
+根拠：R03 `reading-weight-tradeoff`、`keep-ark-storage`、`single-entry-goal`、`continuing-ai-use`／`s24`–`s27`。入口の一元化は原本の物理的集約を要求しない。今回も01・02原本の保存先を保持する。
+
+### 4.9 選択読解と、判断材料の保存を両立する
+
+Humanは毎回全リンクを参照しない設計を求めつつ、資料の抜け漏れを防ぐ必要も強調した。これは、使う資料を現在の目的から選ぶことと、後から必要な意味を取り戻せるよう保存・案内することの両立として具体化する。少ない読込量そのものを成功とせず、必要な条件・訂正・証拠が落ちていないかを確かめる。
+
+根拠：R03 `selective-reading-request`、`coverage-preservation`／`s28`・`s29`。Humanは高度なAIの実験場とも位置づけた（`ai-experiment-field`／`s30`）。これはHumanの位置づけであり、AGI達成や支援効果を証明しない。
+
+### 4.10 必要な複雑さを、別AIが運用できる形にする
+
+HumanはNode & Edgeを実際の判断へ生かすことを求め、整理整頓→レイヤー構造→構造化→interface化を経る改善案と、その後のPlan-onlyを依頼した（R03 `node-edge-practice`、`revision-plan-v03`／`s31`・`s32`）。この時点での次Thread移行予定は、移行自体を実行する命令とは分ける。
+
+さらに、Humanの入力・出力は単純明快にし、内部はAIが処理できるなら多少複雑でもよいが、現在のAIだけが理解していても意味がなく、別AI・Future AIが理解し運用できる必要があると明確にした（`portable-complexity`／`s33`）。以前のミニマル設計は、すべての内部を最短にする意味へ固定しない。必要な複雑さと、意味の所有先が不明な重複を分ける。これは既存方針の精密化であり、全てを過去判断の誤りとして訂正扱いしない。
+
+### 4.11 Black box化しても、意味と統制へ戻れる
+
+Humanは内部をほとんど閲覧しない前提から、半Black boxをさらにBlack box化する思考実験を提示し、可読性を残す判断の価値も問い直した（R03 `black-box-thought-experiment`／`s34`）。AIは、Humanへ見せる処理詳細を減らしつつ、他AIが目的・条件・根拠・権限を復元できる資料、重要なUnknown、進行・保存・停止の区別、Correction・STOPの接点を保つ設計を提案した（`black-box-balance-proposal`／`s35`）。可読性が別AIによる見直しを可能にし、Humanの内部読解負担を減らせるという説明は設計上の推論であり、効果実証ではない。
+
+Humanはバランスを肯定し、計画とこの調整の実装・検証・GitHub保存を承認した（`revision-approval-v03`／`s36`）。原本ではAIの設計推論とHumanの採用・承認を別Nodeで保持する。実装前の0.2.0保存確認は別のTool観測（`prior-v02-remote`／`s37`）であり、今回の保存成功を先取りしない。
+
 ## 5. 統合候補と、残る検証
 
 AIの統合候補として、B-GateでHumanが支援へ入る入口と、Future AIが必要な知識へ入る入口の双方に「存在する資源を、現在使える接続へ変える」という設計課題がある。根拠はR03 `s06`・`s10`・`s15`、Node `entry-bridge-hypothesis`。
@@ -137,4 +161,4 @@ AIの統合候補として、B-GateでHumanが支援へ入る入口と、Future 
 
 初期文書化、別AIの再構成、実生活の送信・選択・行動・効果は別の確認対象である。通常のUnknownを保ったまま、現在の依頼に必要な一つの接続へ進める。
 
-EOF::TASK_MODE_SYSTEM_FORMATION::v0.2.0
+EOF::TASK_MODE_SYSTEM_FORMATION::v0.3.0

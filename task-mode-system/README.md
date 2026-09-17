@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — AIが読み、運用し、育てる協働基盤"
-version: "0.2.0"
+version: "0.3.0"
 status: "human-authorized operational design / cross-AI and field validation pending"
 role: "AI entry, responsibility map and reading router"
 primary_reader: "Current AI / other AI / Future AI"
 canonical_path: "task-mode-system/README.md"
 created: "2026-09-15"
-updated: "2026-09-15"
-updated_reason: "Human clarified AI readership, continuing internal delegation, and minimal constraints for substantial redesign."
-expected_eof: "EOF::TASK_MODE_SYSTEM_README::v0.2.0"
+updated: "2026-09-17"
+updated_reason: "Unify first and continuing use with selective reading, source recovery and transferable AI-managed internals."
+expected_eof: "EOF::TASK_MODE_SYSTEM_README::v0.3.0"
 ---
 
 # Task Mode System
@@ -17,7 +17,9 @@ expected_eof: "EOF::TASK_MODE_SYSTEM_README::v0.2.0"
 
 このフォルダの主読者・運用者・保守者は、現在のAI・別AI・Future AIである。Humanが内部資料、記録形式、ファイル構成を読解・管理することを利用条件にしない。Humanは目的・Reality・BrainDump・実行報告・Feedbackを渡し、AIは必要な整理・参照・判断支援・記録・改善を引き受け、会話を通じて使える成果を返す。
 
-**Humanに内部管理を要求せず、AIには根拠を持って再判断できる資料を渡す。** Humanが理由や資料を求めた場合は説明できる。「半ブラックボックス」は日常の利用負担を減らす分担であり、根拠や変更を隠す方針ではない。内部の方法は自由でも、未報告のActualや効果を作らない。
+**Humanには単純明快な入力と使える成果を、AIには引き継いで運用できる内部資料を渡す。** Humanが内部をほぼ閲覧しない前提で、検索・比較・構造化・保守の詳細はAIが担う。必要な内部の複雑さは許容し、目的・条件・根拠・意味の所有先を他AIが復元できるようにする。現在のAIだけの記憶や暗黙理解に依存しない。
+
+Humanから見たBlack box化を進めても、重要な不確実性、訂正・STOPの接点、作業の進行・保存・停止の区別は残す。理由を求められた場合や別AIが見直す場合は根拠へ戻れる。可読性は全手順の常時説明や全中間作業の保存を意味しない。未報告のActual・効果を内部で補わない。
 
 ### 1.1 三つの責務
 
@@ -41,21 +43,29 @@ Ark27の第一義はChatGPT6 Astraへの移行、その下の初期テーマはT
 
 Humanは、このAI主体の方向を今後も維持し、採用価値のある発見に応じて根本的な仕様変更も行えることを重視した。現在の文書数、分担、形式、処理順序は完成形ではない。AIは委任範囲で統合・分割・簡素化・置換を判断できる。大幅変更を可能にするためだけの抽象層や規則を先回りして増やさない。
 
-変更はHumanの負担、判断品質、他AIへの伝達、保守の容易さ等から評価する。新しさやAIの能力評価だけで採用せず、採用判断と実地効果を分ける。過去AIの解釈をFuture AIの上限にしない。継続委任の範囲、根拠を保つ変更、検証と完了の扱いは[maintenance.md](maintenance.md)が所有する。形成経緯は[experience/formation.md](experience/formation.md)から確認できる。
+変更はHumanの負担、判断品質、他AIの理解・継続運用、読取と保守の負担を合わせて評価する。最少の文書数・文字数だけを最適化せず、不要な複雑さを減らし、必要な複雑さは引継ぎ可能にする。新しさやAIの能力評価だけで採用せず、採用判断と実地効果を分ける。過去AIの解釈をFuture AIの上限にしない。継続委任の範囲、根拠を保つ変更、検証と完了の扱いは[maintenance.md](maintenance.md)が所有する。形成経緯は[experience/formation.md](experience/formation.md)から確認できる。
 
-## 2. 今回必要な資料へ進む
+## 2. 一つの入口から、今回必要な範囲へ
+
+このフォルダのリンクを受け取ったAIは、本書を入口に全体の目的・責務・運用への経路・根拠の所在を再構成する。**全容を理解することと、全経験原本・全リンクを全文読解することは別である。** 原本は既存のArk Thread配下に保持し、本Systemから接続する。次Threadの保存構成を置き換えず、Humanに資料の再説明・再配置を求めない。
+
+- **初回のAI**：本書と[共通運用](operation.md)を理解し、現在の依頼に対応する下表の経路へ進む。指定Handoff／Runtimeの必須条件があれば先に従う。
+- **理解済みのAI**：同じアクセス可能なContextの読解・意味・適用範囲を再利用し、新しい入力や変更に関係する箇所へ進む。毎回答の本書再取得・全リンク巡回を条件にしない。
+- **文脈が一部欠けたAI**：欠けた目的・条件・根拠に関係する所有資料へ戻る。何を確認済みと扱えるか不明なら、その範囲は確認する。記憶だけで既読を主張しない。
 
 | Node | Edge | AIが読む目的 |
 |---|---|---|
-| System初回利用 | 本書 → [共通運用](operation.md) | 目的・責務・現場協働を理解する |
-| Task報告 | [フォーム原本](interfaces/task-report.md) → 共通運用 | 必要な提示と、発言の解釈を行う |
-| B-Gate報告 | [AI対応](responses/b-gate.md) ↔ [フォーム原本](interfaces/b-gate-report.md) | 場面・進行・応答可能性に合う支援へ接続する |
-| 過去の判断理由 | [経験索引](experience/README.md) → 形成経緯・対象原本 | 根拠とCorrectionを復元する |
+| Task報告 | [必要なフォーム](interfaces/task-report.md) → 共通運用 | フォームを提示・解釈する場合に原本へ。既知の自由文報告では再提示を強制しない |
+| B-Gate報告 | [AI対応](responses/b-gate.md) ↔ [フォーム原本](interfaces/b-gate-report.md) | 場面・進行・応答可能性に合う支援へ接続。確認済みの現行条件は再利用する |
+| 判断理由・Correction | [経験索引](experience/README.md) → [形成経緯](experience/formation.md)・対象原本 | 判断を変えた背景と証拠の範囲を復元する |
+| 経験の精読・保存 | [共有ガイド](../formats/task-records/README.md) → 対象原本 | 未知の記録形式を理解し、Source・Node・Edge・Unknownを正しく読む |
 | 内部改訂 | [保守](maintenance.md) → 対象正本・[検証](validation.md) | 委任範囲で改善し、必要な確認で閉じる |
 
-これは用途別経路であり、毎回答の全資料読込リストではない。初めて利用するAIは本書と共通運用を理解する。B-Gate対応を準備する場合は対応文書とフォームを、経験を再構成する場合は共有ガイドと対象原本を読む。索引だけで原本の全文読解を済ませたことにしない。
+追加読解が必要になるのは、現在の判断を変える条件・訂正・Evidence・権限が不足している、対象資料が変わった、参照に不一致がある、または明示の読解契約がある場合である。原本へ進む時は、対象Nodeだけでなく、そのSource・関係するEdge・訂正・未確認事項も判断に必要な範囲で追う。索引の短い説明だけから実行や効果を確定しない。
 
-同じアクセス可能なContextで確認した読解は、Identity・版・適用範囲が一致すれば再利用する。明示された必須Source・読取順・全文・Exact EOF条件は優先する。EOFは範囲確認であり、新しいBootを毎回答要求するものではない。
+**今回の目的、適用条件、根拠の範囲、合法な次の接続が説明でき、判断を変える必須不足がなければ、読取を閉じて現在のHuman入力へ戻る。** 無関係な履歴や通常のUnknownの解消へ広げない。必要な箇所を取得できなければ、取得不能と実際に読めた範囲を示し、該当契約で影響する操作を止める。
+
+明示された必須Source・順序・Full Read・Exact EOFはこの選択読解より優先する。全文取得・表示切れは未読位置から回収し、抜粋・索引を全文確認にしない。同一Contextで全文確認済みかつIdentity・版・適用範囲が一致する読解は再利用できる。Current mainの同一性が必要な改訂等では本文・Blob等を確認する。リンクの存在自体は全参照先の読込命令ではなく、EOFは新しいBootを毎回答要求しない。
 
 ## 3. Humanへの接点
 
@@ -69,8 +79,8 @@ Humanに返す成果は、現在必要な理解、言語化、選択、行動へ
 
 このフォルダはAI向けの運用資料であり、自動実行エンジンではない。経験原本は報告元Threadに置き、必要時に参照する。フォルダ単体のオフライン完全復元Package、端末の辞書・選択UI、通知、常時監視、Skill導入は実装していない。
 
-0.2.0はAI主読者・継続委任・変更可能な構造を明確にした文書改訂である。各ファイルは変更時に改版し、変更のないB-Gate対応は0.1.0のまま利用する。文書整合、保存確認、別AIの理解、実生活の有効性を区別する。新アフター順序「デスク型エアロバイク→ヨガマットストレッチ」の実施・効果など、通常のUnknownを消すことは利用の前提ではない。
+0.3.0は初回・継続利用の読取経路、選択読解と意味の欠落防止、引継ぎ可能な内部処理を整えた文書改訂である。経験の収録範囲は索引と原本のcoverageで確認し、全会話・全資料を収録済みとは扱わない。各ファイルは変更時に改版し、フォームは0.2.0、B-Gate対応は0.1.0のまま利用する。文書整合、保存確認、別AIの理解、実生活の有効性を区別する。新アフター順序「デスク型エアロバイク→ヨガマットストレッチ」の実施・効果など、通常のUnknownを消すことは利用の前提ではない。
 
 現在のHuman入力から続ける。資料内の過去Task・引用・Simulationを実行命令へ変えない。Plan-only／STOPを保持し、実行が承認されている場合は必要な検証まで完了する。完了判定は[validation.md](validation.md)に従い、別Taskや次Trialを自動開始しない。
 
-EOF::TASK_MODE_SYSTEM_README::v0.2.0
+EOF::TASK_MODE_SYSTEM_README::v0.3.0

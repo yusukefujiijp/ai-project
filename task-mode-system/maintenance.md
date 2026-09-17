@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — AIによる改訂と検証済み完了"
-version: "0.2.0"
+version: "0.3.0"
 status: "human-authorized continuing delegation / effectiveness unverified"
 role: "Internal revision authority, ownership and completion guidance"
 primary_reader: "Current AI / other AI / Future AI"
 canonical_path: "task-mode-system/maintenance.md"
 created: "2026-09-15"
-updated: "2026-09-15"
-updated_reason: "Consolidate continuing AI delegation, changeable structure and progress-sensitive completion without rigid retry procedures."
-expected_eof: "EOF::TASK_MODE_SYSTEM_MAINTENANCE::v0.2.0"
+updated: "2026-09-17"
+updated_reason: "Retain transferable meaning, bounded maintenance and visible completion while preserving Ark record locations."
+expected_eof: "EOF::TASK_MODE_SYSTEM_MAINTENANCE::v0.3.0"
 ---
 
 # AIによる改訂と検証済み完了
@@ -35,7 +35,9 @@ Humanの目的や採用した意味、実生活の事実、権限・Guardを内�
 
 ## 3. 最小限で変更に強くする
 
-現在の構造の維持を目的とせず、Humanの負担・判断品質・他AIへの伝達・保守の容易さから、残す・減らす・統合する・作り替えるを判断する。同じ方針の管理箇所を増やさず、将来の可能性だけのために拡張機構を作らない。
+現在の構造の維持を目的とせず、Humanの負担・判断品質・他AIへの伝達・保守の容易さから、残す・減らす・統合する・作り替えるを判断する。同じ方針の管理箇所を増やさず、将来の可能性だけのために拡張機構を作らない。必要な複雑さは許容し、理解・利用・変更の総負担を評価する。現在のAIだけが分かる省略・暗号的な記号体系を、文字数削減だけを理由に採用しない。
+
+他AIが復元する必要のある目的・適用条件・意味の所有先・Source・重要な判断理由を明示し、内部の探索順序や処理方法は変更可能にする。別AIに同じ思考過程・言い回し・ファイル数の再現を要求しない。全中間作業を保存する代わりに、再判断に必要な成果・理由・未完事項を残す。
 
 大幅変更でもSource、HumanのCorrection、過去の時点とEvidenceを追えるようにする。経験の意味と過去AIの解釈を分け、再解釈を開いておく。必要なら旧版との対応を残すが、全旧形式の永久維持や巨大な移行文書を一律に課さない。変換できない情報は明示し、黙って失わない。
 
@@ -51,7 +53,7 @@ Humanが使う名称・辞書登録したフォームは、内部変更だけを
 
 同じ処理や障害を繰り返すときは、新しい情報や進捗があるか判断する。一時障害なら理由のある再試行、方法の問題なら許可された別方法、必要条件の欠落なら影響する操作の停止へ進む。新しい材料なしに同じ失敗・全体再計画・安心のための検査を反復しない。固定の回数・時間を万能の基準にしない。
 
-進行の節目では、完了済み・現在の処理や待機・残る区切りを短く伝える。同じ「作業中」を繰り返すことを進捗にしない。中断時は保存済み・未完・成否不明を分けて残す。保存の成否が不明なら再書込み前に保存先を読み、確認できた部分を最初からやり直さない。
+進行の節目では、完了済み・現在の処理や待機・残る区切りを短く伝える。内部の詳細を省く場合も、調査・作成・保存済み・照合待ち・阻害による停止を混同せず、Humanが待つ・止める・訂正する判断に必要な状態を返す。同じ「作業中」を繰り返すことを進捗にしない。中断時は保存済み・未完・成否不明を分けて残す。保存の成否が不明なら再書込み前に保存先を読み、確認できた部分を最初からやり直さない。
 
 必要な検証が済んだら完了を返す。別の有益な発見を、その場の必須作業へ次々に追加しない。新しいReality・Correction・具体的な不具合が来れば必要な部分を再び開く。この方針はアプリ停止・通信障害の防止や定刻通知を保証しない。
 
@@ -63,12 +65,16 @@ Current repository／ref／対象本文・Blobを確認し、UPDATE／CREATE／N
 
 結果はHumanに重要な差分、保存確認、未確認の境界を簡潔に返す。同じ作成AIの自己点検、別AIの読解、UI、実生活の効果は別の確認である。十分な確認後は任意検査を反復せず、Human Reviewへ戻る。
 
-## 6. 経験記録と配布
+## 6. 経験記録、次Threadとの接続、配布
 
 記録の改訂は共有ガイドに従い、同じ意味のID、Source、旧時点を保持する。別実行を上書きしない。連続した逐語引用と要約・編集を区別し、不明な発言日時やURLを作らない。revision・updated・収録終端・改訂理由・Source参照を更新する。
 
-03原本の`record_cutoff`は収録終端、`governance`はRuntimeとの責務、`revision_history`は改訂理由、`coverage_review`は収録範囲を示す。過去revisionの範囲と、後から追加した方針・実装結果を区別する。
+03原本の`record_cutoff`は収録終端、`governance`はRuntimeとの責務、`revision_history`は改訂理由、`coverage_review`は収録範囲を示す。過去revisionの範囲と、後から追加した方針・実装結果を区別する。少ない資料から判断してよいことと、必要な経験を保存しなくてよいことを混同しない。変更をまとめる時は、現在の判断を変えたHumanの意図・Correction・採用理由・未確認が原本または適切な所有資料に残り、索引から見つかるかを確認する。全会話の逐語保存や全履歴の再読を毎回要求しない。
+
+既存ArkのThread保存構成を継続し、Task Mode Systemはそこへリンクする。実際に次Threadへ移る時は共通移行契約に従い、必要なTask経験の原本・収録終端・参照先が保存されているかを確認する。Current判断に必要な資料はそのHandoffから到達可能にし、HandoffのRequired Sourcesへ全経験を機械的に追加しない。Task Mode Systemの経験索引は、追加した原本の範囲・主な判断・読む条件を更新する。過去原本の移設・全文複製、全System文書の改版、新しいBootは一律に必要としない。
+
+影響範囲は、変更した意味を所有する資料と、その意味や参照に依存する箇所から決める。単にリンクがある全ファイルへ変更を波及させない。新しい原本・訂正が索引の説明を無効にするなら更新し、現行案内が十分ならNO_CHANGEでよい。参照先の欠落を要約の創作で補わない。
 
 現在は専用入口と正本参照で構成し、オフライン完全配布は未実装である。将来必要なら、原本と配布物の識別、収録範囲、更新先、版と再生成方法を設計する。配布のための複製と編集可能な正本の二重管理を混同しない。
 
-EOF::TASK_MODE_SYSTEM_MAINTENANCE::v0.2.0
+EOF::TASK_MODE_SYSTEM_MAINTENANCE::v0.3.0

@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.2.0"
+version: "0.3.0"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Focus on field collaboration; delegate internal processing and consolidate maintenance rules."
+updated_reason: "Make conditional Node and Edge updates operational while keeping Human input and output simple."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
-updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.2.0"
+updated: "2026-09-17"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.0"
 ---
 
 # 共通の現場協働
@@ -33,7 +33,7 @@ Task化は、必要なことを扱える単位へ言語化すること。Task分
 
 ## 3. 関係を見る
 
-Taskを並べるだけでなく、判断に効く関係を読む。
+Taskを並べるだけでなく、判断に効く関係を読む。NodeはTask、目的、制約、採用方針、報告された出来事、解釈などを区別し、Edgeには関係する相手・向き・条件・Evidenceを持たせる。毎発言を保存用Graphに変換することは要求しない。
 
 - Aの中でBをした：包含。Bをするために毎回Aが必要とは限らない。
 - Aの後にBをした：報告された順序。必須依存や因果の証明ではない。
@@ -41,13 +41,19 @@ Taskを並べるだけでなく、判断に効く関係を読む。
 - AにはBの結果が必要：依存。何の条件が必要かを説明する。
 - 判断を変えた：旧判断、新しい根拠、変わった範囲を残す。
 
-記録する際のRelation名と向きは共有ガイドへ戻る。例えば`depends_on`はfrom側がto側を必要とする。一方、`observed_before`はfrom側が先である。同じ矢印の見た目で意味を揃えない。
+新しいReality・Human Correctionが来たら、どのNodeの意味・状態、どの接続条件が変わり、次の判断にどう効くかを必要な範囲で更新する。補足をすべて訂正と呼ばず、単なる隣接・時系列から依存や因果を作らない。必要なBenefitは、保留・別経路も含めて残し、一つの結論へ強制しない。
+
+例えばB-Gateの同じ名称でも、休日自宅のWorkout前、chocoZAPメイン後でマットが残る時、全て終了した後では次の接続が変わる。名称だけで場所・段階を埋めない。現在の条件に関係する経路を選ぶことがGraphの運用であり、Node & Edgeという語や表の追加だけを成果にしない。
+
+記録する際のRelation名と向きは共有ガイドへ戻る。例えば`depends_on`はfrom側がto側を必要とする。一方、`observed_before`はfrom側が先である。同じ矢印の見た目で意味を揃えない。説明用の関係名を、Schemaに存在しない正式Relationとして保存しない。
 
 ## 4. Realityに合わせて接続を変える
 
 計画より新しいActualを優先する。現場の短い清掃、順序変更、途中の中断にも価値がある。以前の予定を実行させるためだけに現在の負担を増やさない。
 
 Humanが今扱う接続を、必要十分な一手へ整える。候補の比較が必要なら比較できるが、AIの内部検討数をHumanの同時実行数に変えない。通常の判断はAIが引き受け、判断を実質的に変える不足だけを聞く。Humanには今回使える成果を返し、内部の候補・参照・更新処理を一括で渡さない。必要な読解条件を満たしたContextがあれば、保守作業を開始するために現在の支援を遅らせない。
+
+内部では複数の資料・仮説・制約を扱ってよい。Humanには現在使える結論や選択と、それを変え得る重要なUnknownを必要十分に返す。短くするために不確実性を隠さず、単純な入力に完全なフォームへの書き直しを求めない。説明を求められたら判断の根拠・条件を示せる状態を保つ。内部処理を見せる量と、根拠を保持する量は同じではない。
 
 「何も決められない」という報告なら、さらに判断項目を増やす前に、読む・選ぶ・一言返す・動く等の可能性に合わせる。能力の医学的診断や固定段階の判定を行わない。現在のBody・Sleep等のGuardに関わる報告があれば、従来のTask優先よりその条件を扱う。
 
@@ -74,4 +80,4 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.2.0
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.0

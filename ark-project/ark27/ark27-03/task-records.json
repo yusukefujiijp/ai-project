@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark27-03:task-records",
-  "revision": 2,
+  "revision": 3,
   "role": "thread_experience_record",
   "created": "2026-09-15",
-  "updated": "2026-09-15",
+  "updated": "2026-09-17",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark27:03",
     "canonical_path": "ark-project/ark27/ark27-03/task-records.json",
     "reported_date": null,
     "timezone": null,
-    "time_note": "created/updatedは記録作成日。各Human発言の正確な日付・時刻・timezoneは、この選択Sourceから確定せずnullを保つ。",
+    "time_note": "created/updatedは記録作成・改訂日。各Human発言の正確な日付・時刻・timezoneは、この選択Sourceから確定せずnullを保つ。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験と設計判断の記録。Current Runtime、現在の身体状態、将来の新しい操作権限を置換しない。引用された計画・承認は当時の対象Scopeで読む。",
     "source_access": "このThreadで提供されたHuman発言、対応するAI計画、Repository取得結果を選択収録する。Source IDは記録内の識別子であり、未取得のThread URLや外部メッセージIDは作らない。逐語抜粋と要約・編集を区別する。",
     "extensions": {
-      "record_cutoff": "revision 1の終端は改訂履歴に保持。revision 2はAI主体・読者限定・根本改訂・ミニマル設計・反復対策を巡る対話と、八文書と03記録の調整済み計画への実行承認までを追加。s23は今回の実装前に旧Prototypeを確認したTool観測。0.2.0の保存結果・生活Actualは先取りしない。",
+      "record_cutoff": "revision 1・2の終端と既存項目は保持。revision 3は、01・02の所在と読取負担、一つの入口と継続利用、選択読解と資料の漏れ防止、Node & Edge、必要な内部複雑さ、Black box化と他AIへの可読性に関する対話、およびその調整を含む0.3.0改訂への実行承認までを追加。s37は実装前に確認した0.2.0のRepository状態。今回の0.3.0保存結果・独立AI読解・生活Actualは先取りしない。",
       "governance": "Root・Guard・章第一義・Current Missionは適用RuntimeとCurrent Humanが所有する。成功済みBootや新しいHuman Realityを旧Stateへ戻さない。"
     }
   },
@@ -34,14 +34,20 @@
       "Plan-onlyから具体的な実装承認への移行と実装前の入口確認",
       "AI主読者・AI運用・継続委任、根本的仕様変更を許容するミニマル設計",
       "長時間反復を避ける事前策の要求と、調整した0.2.0計画への実行承認",
-      "実装前に確認した0.1.0 PrototypeのRepository状態"
+      "実装前に確認した0.1.0 PrototypeのRepository状態",
+      "既存Ark保存構成とリンク、一つの入口からの全容理解と理解済みAIの継続利用",
+      "毎回全リンクを読まない方針と、判断を変える資料・Correction・Evidenceの保存",
+      "AIの実験場というHumanの位置づけと、Node & Edgeを判断へ生かす要求",
+      "Humanの単純な入出力、必要な内部複雑さ、他AIの運用可能性とBlack box化の思考実験",
+      "0.3.0改訂の計画限定段階、AIの調整案とHumanの採用・実行承認",
+      "改訂前に確認した0.2.0のRepository状態"
     ],
     "excludes": [
       "全会話逐語録、全称賛の反復、Ark27:02経験の複製",
       "初回Bootと移行ツール補足の詳細記録",
       "外部ダニ対策Promptの薬剤・医学的主張の検証と実行",
       "未報告の身体状態、フォームの実地送信・行動・効果",
-      "0.2.0の保存成功・独立AI読解・実地効果の先取り",
+      "0.3.0の保存成功・独立AI読解・実地効果の先取り",
       "前回停止表示の原因・正確な停止時点の推測、表示履歴全体の収録"
     ],
     "note": "設計を変える発言・Correctionを選択した記録。収録範囲の完全性やSystem完成・全Task完了を宣言しない。"
@@ -250,6 +256,133 @@
       "excerpt_kind": "paraphrase",
       "note": "今回の0.2.0保存完了でも、前回の停止原因・時点の証明でもない。",
       "url": "https://github.com/yusukefujiijp/ai-project/commit/317d12ed2ded59664b392e8e2229a52643086399"
+    },
+    {
+      "id": "s24",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 01・02分の所在と資料の重さのトレードオフ",
+      "excerpt": "HumanはArk27:01・02分のTask Mode Systemがどうなったかを問い、他AI・Future AIが参照するため資料が重すぎてもよくないが、軽すぎると本当に必要な情報が失われるというトレードオフを示した。",
+      "excerpt_kind": "paraphrase",
+      "note": "所在と設計への問い。01・02の原本が消失したという報告ではない。"
+    },
+    {
+      "id": "s25",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 既存Arkの保存構成を継続してSystemからリンクする提案",
+      "excerpt": "今迄のArk Projectの移行時のフォルダ・ファイル構成は変わらずそこにTask Mode Systemからリンクを貼るというイメージですか？\nそうすれば既存のArk Project Systemはそのまま継続で新たなTask Mode Systemにも接続できる複数問題同時解決のBreakthroughを達成できるような気がします！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "問いと期待を伴う構成提案。複数問題の実地解決や新しいThread移行の実施報告ではない。"
+    },
+    {
+      "id": "s26",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 一つのフォルダリンクから新規AIが全容を理解する目標",
+      "excerpt": "新規AIや\"他AI(別AI)やFuture AI\"がtask-mode-systemフォルダリンクを渡せばtask-mode-systemの全容が理解できるという事が最重要だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの到達目標。単一ファイルに全資料がある、全リンクを全文読解済み、全AIで理解成功したという意味ではない。"
+    },
+    {
+      "id": "s27",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 理解済みAIによる継続利用を含める補足",
+      "excerpt": "と同時に、あなた(AI)のような既にtask-mode-systemを理解している場合にも活用する事は勿論、継続です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "初回利用に加える補足。先の目標が誤りだったという訂正ではない。"
+    },
+    {
+      "id": "s28",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 毎回全リンクを参照しない設計の要求",
+      "excerpt": "task-mode-systemフォルダを渡すものの\n毎回全リンクを参照しないように設計する必要があるのではないか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言でまだ実装しないよう明示。明示された必須Full Readを免除する命令ではない。"
+    },
+    {
+      "id": "s29",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 資料の抜け漏れ防止とのバランス",
+      "excerpt": "かといって資料分等は抜け漏れないようにしないといけない！\nこのバランスが重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "選択読解の要望に対する追加条件。全Unknown解消や全リンクの毎回読解の要求ではない。"
+    },
+    {
+      "id": "s30",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 高度なAIの実験場と単純なHuman入出力の位置づけ",
+      "excerpt": "HumanはTask Mode Systemを高度なAIの実験場と位置づけた。見た目は単純でも内部では複雑なTaskが絡み合い、人間のinputとOutputは単純明快にする一方、その複雑な設計をAIへ担わせることを半black box化の意味として説明した。",
+      "excerpt_kind": "paraphrase",
+      "note": "連続するHuman発言の編集要約。AIの能力評価・期待をAGI達成や支援効果の技術的実証としない。"
+    },
+    {
+      "id": "s31",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Node & Edgeの実践とThread終盤の改善案要求",
+      "excerpt": "Humanは添付資料を熟読し、Node & Edgeを引き続き実装して多次元的に問題解決することを求めた。整理整頓→レイヤー構造→構造化→interface化を通じ、task-mode-systemのThread終盤の改善案をBrainDumpで出し尽くすよう依頼した。修正完了後に次Threadへ移る予定も示した。",
+      "excerpt_kind": "paraphrase",
+      "note": "この時点の依頼の中心は改善案の形成。次Thread移行予定を移行自体の実行命令へ変えない。"
+    },
+    {
+      "id": "s32",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / BrainDumpを基にした計画限定依頼",
+      "excerpt": "上記GTD的BrainStorming(BrainDump)を元にしてまずPlan Modeで、調査・理解・論点整理・制約整理・実行計画の作成のみを行ってください。まだ実装、編集、変更、実行、書き込み、保存、反映はしないでください。必要なら確認事項や不明点も洗い出し、計画案を提示した時点で停止してください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当時の計画限定境界。後の具体的な実行承認はs36に保持する。"
+    },
+    {
+      "id": "s33",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / 必要な内部複雑さと他AIの理解・運用可能性",
+      "excerpt": "このtask-mode-systemは\n人間側の入力と出力を単純明快にする事が重要であり\ntask-mode-system内部は完全にAI側処理となり半Black box内部はAI側さえ上手く処理できれば多少複雑でも良いという部分です！\n但し、あなた(AI)だけがわかっても意味がなくこのThread自体が終了するように\"他AI(別AI)やFuture AI\"が理解できて運用できる根本的Systemが重要です！\nつまり、複雑すぎると新規AIは理解できない場合無意味というトレードオフとバランスが重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "ミニマル設計の意味を精密化する追加条件。現在のAIだけが理解できる方式や、無条件の複雑化を採用する承認ではない。"
+    },
+    {
+      "id": "s34",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Black box化を進める思考実験と可読性の問い",
+      "excerpt": "これを半Black boxをできる限りBlack box化するとどうなるか？\nこれはとても高度な思考実験です！\n実際の所、恐らく、人間側はtask-mode-systemの中身は殆ど閲覧しない事は確定しているからです！\nしかし、それでも可読性は残した方が良いという判断もあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが内部をほぼ閲覧しないという利用前提の提示と設計上の問い。実際の閲覧頻度の計測ではない。"
+    },
+    {
+      "id": "s35",
+      "speaker": "Ark27:03 AI",
+      "medium": "assistant_message",
+      "locator": "Ark27:03 / Black box化と引継ぎ可能な可読性を両立するAI案",
+      "excerpt": "AIは、人間が内部を理解・管理せずに使える度合いと、別AIが内部を理解して引き継げる度合いを同時に高める設計を提案した。処理詳細の常時表示を減らしても、目的・適用条件・Source・重要な判断理由・権限を復元でき、重要な不確実性とCorrection・STOPの接点、進行・保存・停止の区別を残す。可読性が別AIによる再検討を支えHumanの負担を減らせると説明した。全中間作業ではなく次の再判断に必要な情報を残し、今回の回答は思考実験の整理までで実装・保存していないと明示した。",
+      "excerpt_kind": "paraphrase",
+      "note": "AIの設計提案・説明の要約。効果や全AI互換性は実証していない。既存の初回・継続・選択読解を整える改訂計画に対する追加設計。"
+    },
+    {
+      "id": "s36",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:03 / Black box化の調整を含む0.3.0改訂への承認",
+      "excerpt": "Humanは直前の案を、バランスが取れトレードオフをクリアしていると肯定した上で、「Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!」と、承認済み計画と調整内容の実装・必要な検証・GitHub保存の続行を求めた。",
+      "excerpt_kind": "paraphrase",
+      "note": "今回の具体的なSystem改訂への承認。設計への評価を独立AI試験・実地効果に拡張せず、次Thread作成・別Task開始への命令にも変えない。"
+    },
+    {
+      "id": "s37",
+      "speaker": "GitHub connector and local hash check",
+      "medium": "tool_result",
+      "locator": "Ark27:03 / 0.3.0改訂前のmain・treeと検証済み本文照合",
+      "excerpt": "Current mainは552d54c4b5eea2026a070d8088375ce9f0acc690、treeは54600f6041ed209f2601cda4b14f01795530e314。GitHubから取得したtree上の九文書と03記録のblobは、以前に全文を再取得して一致確認した0.2.0作業本文のblobと一致し、今回もローカル本文のblobを照合した。唯一の適用AGENTS.mdはルートで変更なし。",
+      "excerpt_kind": "paraphrase",
+      "note": "0.2.0の保存状態の確認。0.3.0保存成功、前回停止の原因、独立AI・実生活の検証は含まない。",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/552d54c4b5eea2026a070d8088375ce9f0acc690"
     }
   ],
   "nodes": [
@@ -706,6 +839,203 @@
           "s23"
         ]
       }
+    },
+    {
+      "id": "reading-weight-tradeoff",
+      "kind": "constraint",
+      "label": "資料の重さと必要情報の保持を両立する",
+      "description": "Humanは01・02分の所在を問い、他AIの読取負担と意味の欠落の両方を設計課題として示した。原本の消失や内容不足が確認されたという記録ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s24"
+        ]
+      }
+    },
+    {
+      "id": "keep-ark-storage",
+      "kind": "practice_statement",
+      "label": "既存Arkの構成を継続しSystemからリンクする",
+      "description": "既存のThread保存構成を保ったままTask Mode Systemを接続するHumanの案。複数問題を同時に解決できるとの期待と、実装・効果確認を分ける。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s25"
+        ]
+      }
+    },
+    {
+      "id": "single-entry-goal",
+      "kind": "decision",
+      "label": "一つのフォルダリンクから新規AIが全容を理解する",
+      "description": "Humanが最重要と明示した理解入口の目標。全原本のフォルダ内複製や、全履歴の毎回全文読解、実際の他AI理解成功を意味しない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s26"
+        ]
+      }
+    },
+    {
+      "id": "continuing-ai-use",
+      "kind": "practice_statement",
+      "label": "理解済みAIも継続して利用する",
+      "description": "新規AIの理解入口に加え、既にSystemを理解したAIによる日常運用も対象とする補足。初回読解を毎回答反復する要求ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s27"
+        ]
+      }
+    },
+    {
+      "id": "selective-reading-request",
+      "kind": "practice_statement",
+      "label": "毎回の全リンク参照を避ける設計",
+      "description": "Humanは、フォルダを渡しても毎回全リンクを読む必要がない設計を求めた。必要な根拠の読解や明示のFull Readを省略する意味ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s28"
+        ]
+      }
+    },
+    {
+      "id": "coverage-preservation",
+      "kind": "constraint",
+      "label": "選択読解でも必要資料を抜け落とさない",
+      "description": "読取負担を減らす一方、判断に必要な資料の抜け漏れを避けるというHumanの追加条件。全会話収録済みの宣言ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s29"
+        ]
+      }
+    },
+    {
+      "id": "ai-experiment-field",
+      "kind": "practice_statement",
+      "label": "単純なHuman入出力を複雑なAI処理で支える実験場",
+      "description": "HumanはTask Mode Systemを高度なAIの実験場と位置づけ、複雑なTaskが絡む内部をAIが担うことを半Black box化の意味として説明した。能力の技術的実証と区別する。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s30"
+        ]
+      }
+    },
+    {
+      "id": "node-edge-practice",
+      "kind": "practice_statement",
+      "label": "Node & Edgeを判断と問題解決へ生かす",
+      "description": "Humanは単純な線形Chatに限定せず関係から多次元的に問題解決し、整理・レイヤー化・構造化を経てSystem改善案を出すことを求めた。Graphの表示だけを実践成果としない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s31"
+        ]
+      }
+    },
+    {
+      "id": "revision-plan-v03",
+      "kind": "observation",
+      "label": "BrainDumpを基にした計画限定段階",
+      "description": "Humanが改善案を調査・理解・論点・制約・実行計画へ整えることを求め、この時点では実装・保存を禁じた。後続の説明で必要な内部複雑さとBlack box化の条件が精密化され、s36で実行承認へ進んだ。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s32"
+        ]
+      }
+    },
+    {
+      "id": "portable-complexity",
+      "kind": "constraint",
+      "label": "必要な内部複雑さと他AIの運用可能性",
+      "description": "Humanの入出力は単純明快にし、内部はAIが処理できれば多少複雑でもよい。ただし現在のAIだけの理解では不十分で、別AI・Future AIが理解し運用できることを必要とする。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s33"
+        ]
+      }
+    },
+    {
+      "id": "black-box-thought-experiment",
+      "kind": "observation",
+      "label": "Black box化を進める前提を問い直す",
+      "description": "Humanは内部をほぼ読まないという利用前提からBlack box化を進める思考実験を提案し、同時に可読性を残す価値を検討した。根拠や統制を消す採用命令ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s34"
+        ]
+      }
+    },
+    {
+      "id": "black-box-balance-proposal",
+      "kind": "interpretation",
+      "label": "Humanの処理負担と他AIの意味復元を両立する案",
+      "description": "AIは処理詳細の常時表示を減らしつつ、他AIが目的・適用条件・根拠・権限へ戻れ、Humanが重要なUnknown・進捗・訂正・停止を扱える設計を提案した。全中間過程の保存は求めない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s35"
+        ],
+        "note": "訂正可能な設計推論。Humanの採用・実行承認は別Nodeに保持し、その承認だけでは効果実証にならない。"
+      }
+    },
+    {
+      "id": "revision-approval-v03",
+      "kind": "decision",
+      "label": "計画とBlack box調整の実装・GitHub保存を承認",
+      "description": "Humanは直前案のバランスを肯定し、計画と追加設計を含むSystem改訂の実行・必要な検証・GitHub保存を承認した。過去の計画限定段階を誤りとして消さず、実際の保存結果は別に確認する。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s36"
+        ]
+      }
+    },
+    {
+      "id": "prior-v02-remote",
+      "kind": "observation",
+      "label": "改訂前の0.2.0本文とCurrent mainが一致",
+      "description": "0.3.0改訂準備時にCurrent main・treeを取得し、以前の全文再取得結果と作業本文のblobを照合した。今回の0.3.0保存成功や独立AI読解の観測ではない。",
+      "scope": "Ark27:03の設計形成・採用・改訂範囲。現在の身体State、実生活の実施・効果、将来の未知の操作権限は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "s37"
+        ]
+      }
     }
   ],
   "edges": [
@@ -855,6 +1185,129 @@
           "s22"
         ]
       }
+    },
+    {
+      "id": "e11",
+      "from": "reading-weight-tradeoff",
+      "to": "selective-reading-request",
+      "relation": "motivates",
+      "scope": "資料の重さと意味保持の課題に、用途に応じた読解が応えるというAIの解釈。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s24",
+          "s28",
+          "s29"
+        ],
+        "note": "対話からのAIの関係解釈。因果・効果の実証ではなく、訂正可能。"
+      }
+    },
+    {
+      "id": "e12",
+      "from": "single-entry-goal",
+      "to": "keep-ark-storage",
+      "relation": "motivates",
+      "scope": "一つの入口から理解できることを、既存保存先を保つリンク構成で支えるというHumanの説明。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s25",
+          "s26"
+        ]
+      }
+    },
+    {
+      "id": "e13",
+      "from": "continuing-ai-use",
+      "to": "selective-reading-request",
+      "relation": "motivates",
+      "scope": "既に理解しているAIも利用するという補足を受け、毎回全リンクを読まない設計が必要だとHumanが続けた。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s27",
+          "s28"
+        ]
+      }
+    },
+    {
+      "id": "e14",
+      "from": "selective-reading-request",
+      "to": "coverage-preservation",
+      "relation": "depends_on",
+      "scope": "選択読解の採用には必要な資料の抜け漏れを防ぐ条件を保つ。from側の設計がto側の条件を必要とする。全資料の毎回読解を要求する関係ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s28",
+          "s29"
+        ]
+      }
+    },
+    {
+      "id": "e15",
+      "from": "node-edge-practice",
+      "to": "revision-plan-v03",
+      "relation": "observed_before",
+      "scope": "関係を実践に生かす改善案の依頼の後に、BrainDumpを基にした計画限定依頼が来た。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s31",
+          "s32"
+        ]
+      }
+    },
+    {
+      "id": "e16",
+      "from": "portable-complexity",
+      "to": "black-box-balance-proposal",
+      "relation": "motivates",
+      "scope": "別AIが運用できる必要な複雑さという条件を、AIの両立案が扱う関係。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s33",
+          "s35"
+        ],
+        "note": "対話からのAIの関係解釈。因果・効果の実証ではなく、訂正可能。"
+      }
+    },
+    {
+      "id": "e17",
+      "from": "black-box-thought-experiment",
+      "to": "black-box-balance-proposal",
+      "relation": "observed_before",
+      "scope": "Humanの思考実験を受けてAIが設計案を説明した。説明の存在は実装効果を証明しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s34",
+          "s35"
+        ]
+      }
+    },
+    {
+      "id": "e18",
+      "from": "black-box-balance-proposal",
+      "to": "revision-approval-v03",
+      "relation": "observed_before",
+      "scope": "AIの両立案をHumanが肯定し、計画と追加設計の実装を承認した。単なる時系列を一般的な必須手順にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s35",
+          "s36"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -923,6 +1376,29 @@
           "s12"
         ]
       }
+    },
+    {
+      "id": "q05",
+      "subject_refs": [
+        "single-entry-goal",
+        "continuing-ai-use",
+        "portable-complexity",
+        "black-box-balance-proposal"
+      ],
+      "question": "0.3.0で整える入口・選択読解・内部説明を、別AIが元会話なしで理解・運用でき、継続利用でも必要情報を落とさず負担を抑えられるか。",
+      "scope": "今回の収録終端では設計と実行承認まで。旧q03の初期九文書時点の問いは保持する。同じ作成AIの点検や保存確認を独立読解・実地効果としない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s26",
+          "s27",
+          "s29",
+          "s33",
+          "s35",
+          "s36"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -951,7 +1427,30 @@
           "s21",
           "s22",
           "s23"
-        ]
+        ],
+        "record_cutoff": "revision 1の終端は改訂履歴に保持。revision 2はAI主体・読者限定・根本改訂・ミニマル設計・反復対策を巡る対話と、八文書と03記録の調整済み計画への実行承認までを追加。s23は今回の実装前に旧Prototypeを確認したTool観測。0.2.0の保存結果・生活Actualは先取りしない。"
+      },
+      {
+        "revision": 3,
+        "date": "2026-09-17",
+        "description": "既存Ark保存と入口の接続、初回と継続利用、選択読解と漏れ防止、必要な内部複雑さ、Black box化と可読性の両立を巡る対話を選択追加。原本の既存ID・Source・時点・Unknownを保持し、実際に得たHumanの条件とAI推論を区別する。今回の保存結果は先取りしない。",
+        "source_refs": [
+          "s24",
+          "s25",
+          "s26",
+          "s27",
+          "s28",
+          "s29",
+          "s30",
+          "s31",
+          "s32",
+          "s33",
+          "s34",
+          "s35",
+          "s36",
+          "s37"
+        ],
+        "record_cutoff": "revision 1・2の終端と既存項目は保持。revision 3は、01・02の所在と読取負担、一つの入口と継続利用、選択読解と資料の漏れ防止、Node & Edge、必要な内部複雑さ、Black box化と他AIへの可読性に関する対話、およびその調整を含む0.3.0改訂への実行承認までを追加。s37は実装前に確認した0.2.0のRepository状態。今回の0.3.0保存結果・独立AI読解・生活Actualは先取りしない。"
       }
     ],
     "coverage_review": [
@@ -1018,6 +1517,45 @@
         "area": "旧Prototypeの保存内容確認",
         "source_refs": [
           "s23"
+        ]
+      },
+      {
+        "area": "既存保存と一つの入口・継続利用",
+        "source_refs": [
+          "s24",
+          "s25",
+          "s26",
+          "s27"
+        ]
+      },
+      {
+        "area": "選択読解・資料保持・実験場の位置づけ",
+        "source_refs": [
+          "s28",
+          "s29",
+          "s30"
+        ]
+      },
+      {
+        "area": "Node & Edgeと計画限定段階",
+        "source_refs": [
+          "s31",
+          "s32"
+        ]
+      },
+      {
+        "area": "必要な複雑さ・Black box化・Human採用と実行承認",
+        "source_refs": [
+          "s33",
+          "s34",
+          "s35",
+          "s36"
+        ]
+      },
+      {
+        "area": "改訂前の0.2.0保存状態",
+        "source_refs": [
+          "s37"
         ]
       }
     ]
