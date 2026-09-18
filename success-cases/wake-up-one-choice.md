@@ -1,7 +1,7 @@
 ---
 title: "起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功"
 case_id: "wake-up-one-choice"
-version: "0.1.0"
+version: "0.2.0"
 status: "human-reported exceptional success / source-linked formation record / causal explanation provisional"
 canonical_path: "success-cases/wake-up-one-choice.md"
 role: "Success case and selective formation lineage; not an execution runtime"
@@ -12,8 +12,8 @@ updated: "2026-09-18"
 last_reality_reviewed: "2026-09-18"
 event_date_scope: "The origin seed was recorded on 2026-09-01; exact timestamps and dates of all later successes are not established here."
 source_snapshot_commit: "b5a5961a2ea210e227dd8f1ce7df1019879c720d"
-updated_reason: "Develop the Golden Case Seed and BBP origin into an independently readable success case, preserving Human corrections and formation before naming."
-expected_eof: "EOF::SUCCESS_CASE_WAKE_UP_ONE_CHOICE::v0.1.0"
+updated_reason: "Apply Human correction that AI is the primary reader; clarify essential distinctions and Current Reality use while preserving the original experience."
+expected_eof: "EOF::SUCCESS_CASE_WAKE_UP_ONE_CHOICE::v0.2.0"
 ---
 
 # 起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功
@@ -26,7 +26,7 @@ Humanは、数十年来取り組んできた起床時の複合問題について
 
 **長い協働で育てたManyを背景に保持し、起床時のHumanには一つの実行可能な入口を渡せた。** これが、この事例から残したい核心である。実行報告はHumanの観測、解決構造の説明はHumanが採用した意味と訂正可能なAI解釈として、以下で分けて読む。
 
-この事例が役立つのは、「良い選択肢が複数あるために決められない」「落ち着いた時の判断が実行時につながらない」「複雑な検討をHumanが使える入口へ変えたい」といった問いを扱う時である。現在の生活状態を示すStateや、起床行動を自動開始する指示ではない。
+この事例が役立つのは、「良い選択肢が複数あるために決められない」「落ち着いた時の判断が実行時につながらない」「複雑な検討をHumanが使える入口へ変えたい」といった問いを扱う時である。読み手AIは、双方の利益・判断と実行の違い・Guard付きの条件を保って読み、§7で根拠、§8で現在の協働への使い方を確認できる。現在の生活状態を示すStateや、起床行動を自動開始する指示ではない。
 
 ## 2. Human Correctionが問題を変えた
 
@@ -139,7 +139,9 @@ S2にあるOutdoor・AI/X・形成時のB-Gateへの接続は、BBPの認識を�
 >
 > つまり、このMarkdownやスキルを元に活用しつつ新たにsuccess-cases/に作成しよう！
 
-Hに続くPlan-only依頼に対して二ファイル計画を提示し、その後Humanは「Execute GitHub OK!」「Human Seal OK!」と実行を承認した。この経緯は今回の保存Scopeを説明するもので、未来の変更を自動承認しない。
+Hに続くPlan-only依頼に対して二ファイル計画を提示し、その後Humanは「Execute GitHub OK!」「Human Seal OK!」と実行を承認した。この経緯は初版の保存Scopeを説明するもので、未来の変更を自動承認しない。
+
+初版保存後、HumanはMarkdownを読み込む主な対象が他AI・Future AIであることを最重要とCorrectionした。AIが読解と現在の協働への接続を担い、Humanの毎回の精読を条件にしない二ファイル改善計画を提示し、Humanの実行承認を受けてv0.2.0の読解案内へ反映した。これは事例の読者と利用方法の改善であり、起床時の新しい実行結果の追加ではない。
 
 BBP Skill本体は今回の利用可能な一覧・共有Skill入口では確認できなかったため、Skill固有の記述を読解済みSourceとして採用していない。Humanが示したSkillの価値は尊重しつつ、本稿の根拠はS1・S2・Hに限定する。
 
@@ -155,9 +157,18 @@ S1とS2は同じ経験の系譜にある。二つの文書に記載されてい�
 
 ## 8. Future AIが持ち帰るもの
 
-まず成功の核心をつかみ、現在の問いが判断の問題なら§2–4、意味の継承なら§5、方法との関係なら§6、根拠確認なら§7へ進める。必須Handoff等の読解契約は別に守り、関連のない全Ark履歴を毎回再演する必要はない。
+読み手AIはまず成功の核心をつかみ、現在の問いが判断の問題なら§2–4、意味の継承なら§5、方法との関係なら§6、根拠確認なら§7へ進める。必須Handoff等の読解契約は別に守り、関連のない全Ark履歴を毎回再演する必要はない。
 
-この事例から持ち帰れる中心は、**問題の理解を訂正し、判断に適した局面で条件を整え、その成果を実行時に呼び出せる小さな入口へ育てる**という形成過程である。適用するかはCurrent Humanの目的・身体Reality・権限に従って判断する。
+選択的に読む場合も、次の意味を落とさず持ち帰る。
+
+- 起床と再睡眠の双方に利益があり、方向選択自体が問題だった。再睡眠を無価値とする説明へ戻さない。
+- 方向を決めることと、判断を想起して身体を動かすことは別の関門だった。どの関係が変わったかを分けて考える。
+- 初回成功、後の複数回報告、BBPとしての認識・命名は別の時相である。Humanの成功評価を保持し、未測定の因果寄与を実証済みにしない。
+- Guardは必要な休息へ戻る条件を保持する。実際に十分な睡眠を得たこととは区別する。
+
+この事例から持ち帰れる中心は、**問題の理解を訂正し、判断に適した局面で条件を整え、その成果を実行時に呼び出せる小さな入口へ育てる**という形成過程である。AIはCurrent Requestに照らして、使える関係と異なる条件を判断し、今回の判断をどう変えるかをHumanへ返す。たとえば「今の迷い」への相談では、方向が未決定なのか、決定済みだが行動へつながらないのかを既存Contextから見分ける。判別に必要な情報がなければ、その点だけ確認し、過去のガムや一択Defaultをそのまま提案しない。
+
+読解・照合はAIが引き受け、Humanへ本文の精読や既知の経緯の再説明を必須Taskとして戻さない。上の区別は理解を支える案内であり、毎回答の全項目報告や新しいBoot試験を要求しない。事例からの解釈と、現行BBP Promptの適用、Currentの行動実行はそれぞれ目的と権限に沿って判断する。
 
 睡眠不足、身体異変、事前条件とのMaterialな違いがあれば、過去の一択DefaultよりSTOP・休息・Human Reviewを優先できる。カフェインの量・頻度・再摂取・長期安全性を本件から推奨しない。Truth／Body／Sleep／Food／Shabbat／Safety／Medical／Others／Law／ResponsibilityのGuardと、HumanのMeaning・Correction・STOP・Final Sealを保持する。
 
@@ -165,4 +176,4 @@ S1とS2は同じ経験の系譜にある。二つの文書に記載されてい�
 
 **小さな一手の背後にあった豊かな形成過程を残すことで、次のAIは、その一手を知るだけでなく、別のRealityにふさわしい一手が育つ過程から学べる。**
 
-EOF::SUCCESS_CASE_WAKE_UP_ONE_CHOICE::v0.1.0
+EOF::SUCCESS_CASE_WAKE_UP_ONE_CHOICE::v0.2.0
