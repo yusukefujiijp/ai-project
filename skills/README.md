@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.4.1
+version: v0.5.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-17
+updated: 2026-09-18
 ---
 # Ark Shared Skills Hub
 
@@ -22,12 +22,17 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
+| Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
 2026-09-14、URL一つからSNS投稿の全文を取得する `read-social-post` を追加しました。本文はインストール版と一致し、UI metadataは環境が自動付与するアイコン・内部設定を含まない配布用です。追加スキルは2026-09-12のexport-manifestの対象外です。
 
 2026-09-17、`read-social-post` の早期停止を改善しました。検索や一つの取得ツールの失敗から全経路の取得不能を推定せず、許可された公開HTTP取得も検討します。[検証対象のX投稿](https://x.com/redp314/status/2100489858951073858)では、公式埋め込みAPIの本文は途中省略されましたが、公開ページHTMLの対象本文は全段落を取得できました。HTTP 200だけで全文成功とは判定しません。引用投稿の省略は対象本文と分離し、動画の403は動画未確認として保持しました。ブラウザ利用条件・アクセス拒否・Plan-only境界は維持します。改訂後、先行する結論や取得済み本文を渡さない独立AIの確認でも、同じ投稿の公開HTMLから本文3段落を取得し、モデル時間と実行全体の時間を区別できました。異なる投稿での汎化、動画、実装コードは未検証です。これは限定的な実地証拠であり、特定API・HTMLタグや全SNSでの成功保証ではありません。
+
+2026-09-18、`write-ark-markdown` を追加しました。ArkのMarkdownを他AI・Future AIへ渡す共通入口として、文書の役割と必要な知識をAIが選びます。共通の核は短く保ち、後の重要点は共通原則・条件付き知識・経験の根拠へ分け、追加・統合・Correctionを受け入れます。注意書きの全文を各文書へ貼る仕組みではありません。小さな成功も独立した学びとして残す方針を含みます。
+
+共有版はSKILL.mdと配布用の最小表示設定の二ファイルです。導入環境が自動付与するアイコン・内部設定は含めません。自動選択を許可する通常設定で導入し、共有本文との一致を確認しました。独立したAIへ架空のTask報告素材を渡した限定確認では、成功事例と入力ガイドを書き分け、報告成功とTask完了、Human評価と測定、任意入力と必須条件を区別できました。自動選択される頻度や実生活効果は、この確認の対象ではありません。本Skillは2026-09-12のexport-manifestの対象外です。
 
 ## 3. Mobile / explicit entry
 
@@ -110,4 +115,4 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.4.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.5.0

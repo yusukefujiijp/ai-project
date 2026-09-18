@@ -1,6 +1,6 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.3.0"
+version: "0.4.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "success-cases/README.md"
 role: "Success discovery and reading entry"
@@ -8,8 +8,8 @@ primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
 updated: "2026-09-18"
 last_reality_reviewed: "2026-09-18"
-updated_reason: "Clarify AI-primary reading, selective reconstruction, and Human review without mandatory manual rereading."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.3.0"
+updated_reason: "Add the unified transition-entry case and allow small, independently useful successes without fragmenting their essential context."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.4.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -28,8 +28,9 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 |---|---|---|
 | [Ark27:03→04 — 深いAI処理と、Humanから見た移行のほぼ瞬時化](ark27-03-to-04-transition.md) | Source準備からTarget再構成・Living Reviewへ接続し、Humanが「完全完璧な成功事例」と評価した | Thread移行、承認Scopeの連続実行、Humanの工程管理負担、AIへの内部処理の委任を考える時 |
 | [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](wake-up-one-choice.md) | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
+| [複数の移行場面を、一つの入口へ統合した成功](one-transition-entry.md) | 共通queryと一つのSkillで、場面の判別と必要な処理をAIが引き受ける構成へまとめた | 複数用途の入口統合、Humanの選択負担、機能が増えても扱いやすいSkill設計を考える時 |
 
-起床時の一択化とThread移行は、Humanが重要と評価した二つの成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動と情報継承の固有条件をそれぞれ残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
+起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
 
 ## 3. 他AI・Future AIの使い方
 
@@ -52,6 +53,10 @@ Human Reviewは意味・Reality・方向を訂正できる接点であり、全�
 
 成功事例本文は、選び出した理由、重要な出来事、Humanの言葉、資料間の関係を読み解くための文書である。既存の経験原本、Handoff、成果物の詳細は参照でつなぎ、第二のCurrent Stateや新しいBoot契約にしない。
 
+収録単位は「一つの独立して役立つ成功」を基本とする。大きな突破だけでなく、小さな工夫・部分的成功・設計上の改善も扱う。一Thread一件や固定文字数にせず、異なる問いに独立して役立つものは分け、必要な関係をリンクで示す。一件の意味を支える条件とCorrectionは一緒に残す。既存の大きな事例を機械的に分割したり、同じ経験の重複原本を増やしたりしない。
+
+小さな事例に大きな完成史の体裁を要求しない。成功から繰り返し役立つ判断が得られた場合、承認された改善の中で共通Skillへ取り込める。すべての成功を新しい規則や新しいSkillにする必要はない。
+
 新しいHuman評価が会話にしかない場合、会話内の位置と収録範囲を説明して本文へ残せる。逐語引用と編集要約を区別し、存在しない会話URLや日時を作らない。リンク先の過去状態が重要なら確認した版・SHAまたは固定commitへの参照を残す。
 
 共通の最低限は「何が成功したか／なぜHumanに重要か／根拠の所在／解釈と未確認」である。AI向けの可読性は、元会話への暗黙依存を減らし、重要な区別と根拠を辿れることで確保する。自然言語、Humanの言葉、喜び、比喩も意味を担う情報として残す。固定の全欄記入、数値スコア、専用Schemaは課さず、事例の核心に応じて構成・密度を変える。
@@ -66,4 +71,4 @@ Current Human Request、[AGENTS.md](../AGENTS.md)、対象Runtimeに従う。Hum
 
 事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
 
-EOF::SUCCESS_CASES_README::v0.3.0
+EOF::SUCCESS_CASES_README::v0.4.0

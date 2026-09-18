@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ark Markdown Writer"
+  short_description: "他AI・Future AIが理解し活用できるArk文書を作成・改訂する"
+  default_prompt: "$write-ark-markdown を使用し、今回の目的と文書の役割に合わせて、他AIが理解し活用できるMarkdownに整えてください。"
