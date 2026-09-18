@@ -1,0 +1,6 @@
+interface:
+  display_name: "Bedtime Recall"
+  short_description: "就寝前に思い出したいことを預かり、合図から短い案内へつなぐ"
+  default_prompt: "$recall-bedtime-care を使い、今回のBrainDumpまたは就寝前の合図を受け取り、今必要な対応をしてください。"
+policy:
+  allow_implicit_invocation: true

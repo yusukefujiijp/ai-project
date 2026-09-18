@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.0"
+version: "0.3.1"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Route selective readers to preserved Ark originals and the new portability and Black box decisions."
+updated_reason: "Add scoped Ark27:04 bedtime recall wishes, Human Correction and an entry for continuing updates; keep task state in source records."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-17"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.0"
+updated: "2026-09-18"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.1"
 ---
 
 # 経験とSourceの索引
@@ -51,6 +51,15 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 - 境界：revision 1・2の時点と既存IDを保持し、revision 3で後続の対話と確認済み0.2.0のRepository状態を追加した。今回の0.3.0保存結果・独立AI検証・新しい生活Actualは先取りしない。旧q03は初期九文書時点の問いとして保持する。
 - 原本の自己blobは埋め込まない。現在の版は原本とGit履歴で確認する。
 
+### 2.4 R04 — Ark27:04：就寝前想起の選択収録
+
+- [原本](../../ark-project/ark27/ark27-04/task-records.json)
+- record_id：`ark27-04:task-records`、revision：`1`、format_version：`v001`。
+- coverage：`selected_thread_material`、`thread_complete:false`。
+- 主な内容：低認知の就寝前に合図から思い出したい希望、耳揉み・肌スキンケア兼マッサージ・就寝前用サプリ、失念と終了の難しさ、個別受付から継続BrainDump集約へのHuman Material Correction、就寝前リコール計画の実行承認。
+- 時点：Humanの現場報告日2026/09/19と、保存作業環境のUTC日付2026-09-18を区別する。各想起発言の時刻やtimezoneは補完しない。
+- 境界：希望の登録は、実際の就寝前Trigger送信・ケア実施・医学的効果・Skill導入の証明ではない。起床ガム、散歩、ダニ対策など他の04経験は今回の収録範囲外であり、未実行とは扱わない。ThreadのREADME／handoff／stateは変更しない。
+
 ## 3. 問いからSourceへ
 
 ### 3.1 Taskの区切り・順序・変更を理解したい
@@ -87,6 +96,14 @@ R03の`reading-weight-tradeoff`、`keep-ark-storage`、`single-entry-goal`、`co
 
 R03の`ai-experiment-field`、`node-edge-practice`、`portable-complexity`、`black-box-thought-experiment`、`black-box-balance-proposal`（`s30`・`s31`・`s33`–`s35`）を読む。Humanの目標、AIの設計候補、採用への承認、実地効果を分ける。0.3.0の計画・承認は`revision-plan-v03`／`revision-approval-v03`（`s32`・`s35`・`s36`）、改訂前の0.2.0確認は`prior-v02-remote`（`s37`）にある。
 
+### 3.9 就寝前に思い出したいことを復元する
+
+R04の`bedtime-trigger-request`・`bedtime-braindump-correction`から、Humanが思いついた時に短く預け、AIが整理・更新し、就寝前の自然な合図で使える形へ戻す意図を読む。個別希望は`bedtime-ear-care`・`bedtime-skin-care`・`bedtime-supplement`、理由は`bedtime-ear-recall-gap`・`bedtime-stop-boundary-experience`。Source `bedtime-s01`–`bedtime-s07`と関係するUnknownを合わせて確認する。
+
+`bedtime-ear-only-reception`から`bedtime-braindump-correction`への関係は、耳揉み一項目への応答だけで閉じず、継続的な集約を支えるための重要なCorrectionである。耳揉みの希望を撤回したわけではない。登録の希望と、今回実施済み・今回だけ見送り・恒久的取消しは別の意味として扱う。
+
+対応の方法は[Bedtime Recall](../../skills/recall-bedtime-care/SKILL.md)が所有する。本索引は個別項目の第二の台帳ではなく、原本と変更先の案内である。以後、新しい就寝前想起の希望・適用方針・取消し・Correctionが別Threadへ記録されたら、この項からその原本・対象Nodeと読取条件も辿れるようにする。初期のR04だけを永続的な最新リストとみなさず、Current Humanの入力と後続訂正を照合する。一夜の実施済みは次の就寝機会へ自動転用しない。
+
 ## 4. 共有仕様と理論の所有資料
 
 - 記録の意味・更新・Evidence：[Task Records共有ガイド](../../formats/task-records/README.md)、準備時blob `1642bd39ebdb942cb9bab36531a6d078536166a8`、版`v002-candidate`。
@@ -106,4 +123,4 @@ R03の`ai-experiment-field`、`node-edge-practice`、`portable-complexity`、`bl
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.0
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.1

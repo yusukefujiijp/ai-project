@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.5.0
+version: v0.6.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-18
 ---
@@ -23,6 +23,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
 | Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
+| Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -33,6 +34,14 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 2026-09-18、`write-ark-markdown` を追加しました。ArkのMarkdownを他AI・Future AIへ渡す共通入口として、文書の役割と必要な知識をAIが選びます。共通の核は短く保ち、後の重要点は共通原則・条件付き知識・経験の根拠へ分け、追加・統合・Correctionを受け入れます。注意書きの全文を各文書へ貼る仕組みではありません。小さな成功も独立した学びとして残す方針を含みます。
 
 共有版はSKILL.mdと配布用の最小表示設定の二ファイルです。導入環境が自動付与するアイコン・内部設定は含めません。自動選択を許可する通常設定で導入し、共有本文との一致を確認しました。独立したAIへ架空のTask報告素材を渡した限定確認では、成功事例と入力ガイドを書き分け、報告成功とTask完了、Human評価と測定、任意入力と必須条件を区別できました。自動選択される頻度や実生活効果は、この確認の対象ではありません。本Skillは2026-09-12のexport-manifestの対象外です。
+
+2026-09-18（保存作業環境のUTC日付）、`recall-bedtime-care`を追加しました。Humanが2026/09/19と記した現場報告に続く対話から、就寝前の合図で耳揉み等を想起したい希望と、項目をBrainDumpで継続追加してAIにまとめてほしいというCorrectionを受けています。方法はSkill、個別希望・根拠・訂正は[Ark27:04原本](../ark-project/ark27/ark27-04/task-records.json)が所有し、項目追加のたびにSkillを書き換える必要はありません。
+
+一回の見送りと恒久取消し、実施報告と登録削除、設計相談と実際の就寝前の合図を区別します。出力を一回答一項目や全項目表示へ固定せず、Humanがそのまま就寝できる簡潔さを優先します。原本への到達経路と取得不能時の扱いを含み、通知・常時監視・朝の起床方法変更・成功事例登録は含みません。共有版はSKILL.mdと最小の表示・自動選択設定です。自動選択を許可する設定と、実際に合図から自動選択されたという観測は別です。
+
+限定的な独立応答確認では、元会話を渡さず、作成したSkill本文・選択読解可能な04原本・七つの仮想入力だけを別AIへ渡しました。昼の追加と条件変更、就寝合図、日付を跨ぐ同じ就寝機会の実施済み・見送り、恒久取消し、STOP、合図の設計相談、原本取得不能時の現在入力からの支援を区別できました。初期三項目とHuman CorrectionのNode／Sourceを辿れ、サプリ服用不明から再摂取を促さず、架空の鍵の項目を実際のArk履歴へ混入しませんでした。これはローカルに渡した原本からの限定応答確認であり、遠隔取得経路、自動選択、保存更新の動作、全AI互換性、実生活効果の検証ではありません。
+
+形式検査と導入先の保存確認を完了しました。導入先のSKILL.mdは共有する本文と一致し、通常の自動選択を許可しています。導入環境が付加するアイコン・内部表示設定は共有版へ含めません。2026-09-12のexport-manifestは当時の輸出記録として保持し、本Skillを収録済みとは扱いません。
 
 ## 3. Mobile / explicit entry
 
@@ -115,4 +124,4 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.5.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.6.0

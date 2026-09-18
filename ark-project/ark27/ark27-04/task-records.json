@@ -1,0 +1,430 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark27-04:task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-09-18",
+  "updated": "2026-09-18",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark27:04",
+    "canonical_path": "ark-project/ark27/ark27-04/task-records.json",
+    "reported_date": "2026-09-19",
+    "timezone": null,
+    "time_note": "reported_dateはHumanが前後の現場報告に明示した2026/09/19。各就寝前想起発言の時刻は未提示で、04:50や06:25を当該発言時刻に流用しない。created/updatedは保存作業環境のUTC日付2026-09-18。両者を同一の時計に変換しない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Current Humanが引用した就寝前リコール計画を実行承認。記録は経験と希望を保持し、Current Runtime・Human Correction・STOP・Final Sealを置換しない。",
+    "source_access": "本記録のsourcesに必要な原文抜粋と編集要約を同梱。元会話URL・外部メッセージIDは未提示。",
+    "extensions": {
+      "central_axis": "Teshuvah",
+      "final_attribution": "主の栄光",
+      "record_cutoff": "就寝前リコール計画を全文引用したHuman実行承認まで。作成・保存・導入・独立応答の結果は先取りしない。",
+      "governance": "Thread README/handoff/stateとTask Recordsは別責務。本選択収録でArk27:04のBoot・Title・State revisionは更新しない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "就寝前の合図で想起支援を受けたいという希望",
+      "耳揉み・肌スキンケア兼マッサージ・就寝前用サプリの想起希望",
+      "耳揉みの失念というHuman評価と、活動を終えにくかった経験",
+      "個別項目から継続BrainDump受付へのHuman Material Correction",
+      "就寝前リコール計画と今回の実行承認"
+    ],
+    "excludes": [
+      "Ark27:04の全会話・全Task",
+      "起床時のミント／カフェインガム試行の全経過",
+      "ダニ対策・布団乾燥・散歩の現場記録",
+      "実際の就寝前Trigger送信・ケア実施・想起効果",
+      "今回のスキル作成・保存・導入・応答確認の結果"
+    ],
+    "note": "希望と背景を選択収録した初版。掲載なしは出来事なし・未実行・失敗を意味しない。"
+  },
+  "sources": [
+    {
+      "id": "bedtime-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：2026/09/19 04:40の現場報告後、04:50頃を含むBrainDumpの就寝前想起部分。メッセージ固有URL・IDなし。",
+      "excerpt": "後はDouble-Spiral的には\n就寝前の\"低認知状態(超低認知状態)\"でこちらから就寝前の何か合図やTriggerから思い出させて欲しい！\n例えば、**就寝前用サプリを飲む事**や肌スキンケア兼マッサージ等です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "bedtime-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "bedtime-s01と同じBrainDump。前夜の活動と終了の難しさ。",
+      "excerpt": "昨晩はカフェイン系での覚醒でやるべき事を連続でやる事には成功したが、となると、カフェイン系のキリがない事がわかった！\nこれはとても微妙な問題です！\nつまり、終わるタイミングを見失うという大きな欠陥や欠点やデメリットがあります！\nしかし、できる限りTaskを達成できるという大きなメリットもあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが経験をこう報告したことの確認。カフェインによる因果を独立に検証したものではない。"
+    },
+    {
+      "id": "bedtime-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：05:00の現場報告とセスキ商品URLの後の耳揉み登録希望。発言時刻は未提示。",
+      "excerpt": "就寝前に思い出させて欲しい事: 耳揉みマッサージ\nこれは就寝前にやれれば大きい\"Benefit(利益)\"だがほぼほぼ100%忘れているので AI活用のレバレッジは大きいです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "100%は本人の表現。測定した頻度や医学的効果へ変換しない。"
+    },
+    {
+      "id": "bedtime-s04",
+      "speaker": "Ark27:04 assistant",
+      "medium": "assistant_message",
+      "locator": "bedtime-s03直後のAI回答。",
+      "excerpt": "AIは耳揉みマッサージを就寝前に思い出したい個別項目として受け取り、「寝る前」などの合図で支援し、自動通知は未設定と説明した。Humanが後続入力で説明した、項目をBrainDumpで継続追加しAIがまとめる仕組み全体までは、この回答では十分に捉えていなかった。",
+      "excerpt_kind": "paraphrase",
+      "note": "過去AI回答の編集要約。現在の固定手順やHumanの原文ではない。"
+    },
+    {
+      "id": "bedtime-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "bedtime-s04後のHuman Material Correction。",
+      "excerpt": "つまり、就寝前に思い出したい事を私(YusukeJP)側はどんどん思いついたらBrainDump的に入力するので上手くまとめて欲しいという意味合いです！\nこれはスキル化の価値があります！\nつまり、就寝前トリガーに反応するスキルです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "bedtime-s06",
+      "speaker": "Ark27:04 assistant",
+      "medium": "assistant_message",
+      "locator": "HumanのPlan-only依頼後に提示した就寝前リコール計画。後続のbedtime-s07で同計画が全文引用され実行承認された。",
+      "excerpt": "一つのrecall-bedtime-careスキルで、BrainDumpの追加・条件訂正・今回見送り・恒久取消し・実施報告・自然な就寝前の合図を扱う計画。方法と個別項目は分離し、Task Records原本と経験索引へ接続する。Humanに短い出力を返し、項目ごとの返信や全項目実施を義務にしない。共有Skill本文・表示設定・04原本・経験索引・Skill索引を対象とし、保存再取得・導入・限定応答確認・実生活効果を区別する。自動通知、全生活場面への拡張、朝の起床方法の変更、成功事例への登録は対象外。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "bedtime-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：06:25頃の布団乾燥相談の後、bedtime-s06の計画を全文引用した実行依頼。発言時刻は未提示。",
+      "excerpt": "以下を実行して下さい！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "引用された就寝前リコール計画の作成・個別記録・GitHub保存検証・導入・応答確認のScopeを承認。将来の未知の外部操作への無制限承認ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bedtime-trigger-request",
+      "kind": "practice_statement",
+      "label": "就寝前の合図から想起支援を受けたい",
+      "description": "低・超低認知となる就寝前に、Humanが送る合図を受けて、AIに就寝前の行動を思い出させてほしい。時刻自動通知や常時監視の依頼としては採用していない。",
+      "scope": "継続的な想起希望。現在就寝前との報告・具体的行動の完了ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s01",
+          "bedtime-s05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-ear-care",
+      "kind": "practice_statement",
+      "label": "耳揉みマッサージを就寝前に思い出したい",
+      "description": "耳揉みマッサージを就寝前の想起対象にする希望。Humanは実施できれば利益が大きいと評価している。具体的方法・強さ・回数・時間・必須頻度は未指定。",
+      "scope": "継続的な登録希望。実施の義務、医学的効果、実施済みとは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s03"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-ear-recall-gap",
+      "kind": "observation",
+      "label": "耳揉みをほぼ忘れてしまうというHuman報告",
+      "description": "Humanは「ほぼほぼ100%忘れている」と表現し、AIの想起支援に大きな価値を見ている。測定された失念率ではない。",
+      "scope": "本人の経験と評価。継続的なAI利用効果の観測ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s03"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-skin-care",
+      "kind": "practice_statement",
+      "label": "肌スキンケア兼マッサージを就寝前に思い出したい",
+      "description": "就寝前に思い出したい内容の例として、肌スキンケア兼マッサージを挙げた。使用品・部位・方法・所要時間・順序は未指定。耳揉みと自動的に同一項目へ統合しない。",
+      "scope": "継続的な想起希望。毎晩必須の採用手順や実施報告ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-supplement",
+      "kind": "practice_statement",
+      "label": "就寝前用サプリを思い出したい",
+      "description": "就寝前用サプリを飲むことを、想起したい内容の例として挙げた。種類・成分・製品用法・量・服用済みかは未確認。登録希望だけで摂取・再摂取を指示しない。",
+      "scope": "希望の保持。安全性・有効性・今回の服用の確認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-stop-boundary-experience",
+      "kind": "observation",
+      "label": "連続実行の利益と、終わるタイミングを見失う問題",
+      "description": "前夜、カフェイン系の覚醒でやるべき事を連続実行できた一方、終わるタイミングを見失ったとHumanが報告した。活動の利益と終了の難しさを両方保持する。",
+      "scope": "過去一夜のHuman報告。特定成分の因果、今夜の身体状態、カフェイン増量指示ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s02"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-ear-only-reception",
+      "kind": "interpretation",
+      "label": "AIの初期応答は耳揉み個別項目に焦点を当てた",
+      "description": "AIは耳揉みの個別受付として応答し、BrainDumpを継続収集してAIがまとめる仕組み全体の意図を十分には復元しなかった。後のHuman Correctionで範囲が明確になった。",
+      "scope": "形成経緯。Future AIが個別一項目受付へ巻き戻らないための背景。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "bedtime-s04",
+          "bedtime-s05"
+        ],
+        "note": "先行AI応答と後続Human訂正の関係を、保存担当AIが解釈した。"
+      }
+    },
+    {
+      "id": "bedtime-braindump-correction",
+      "kind": "practice_statement",
+      "label": "BrainDumpを継続して預け、AIにまとめてほしい",
+      "description": "耳揉み一項目への対応に加え、思いついた就寝前の内容をHumanが順不同に追加し、AIが整理し、就寝前Triggerで使える形にする仕組みが意図だと明示した。",
+      "scope": "Human Material Correction。Humanに分類・記録管理を背負わせない継続協働。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-skill-value",
+      "kind": "decision",
+      "label": "就寝前Triggerへ反応するスキル化の価値を認めた",
+      "description": "Humanはこの継続的な受付と想起の仕組みについて、スキル化の価値があると明示した。設計採用と、実際に就寝前に役立ったことは別。",
+      "scope": "Humanの方向性評価と採用意向。インストールや実生活の成功の確認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-implementation-authority",
+      "kind": "decision",
+      "label": "就寝前リコール計画の実行を承認",
+      "description": "Humanが計画を全文引用し、recall-bedtime-careの作成、個別情報の記録、共有原本と索引の更新、GitHub保存再取得、導入、応答確認を承認した。先行するPlan-only段階から今回の実行へ進む。",
+      "scope": "今回引用された計画。Root・Guard・Correction・STOPを保持し、無関係なTaskを自動開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s07"
+        ],
+        "note": "計画内容はbedtime-s06の編集要約とCurrent Humanの引用計画で確認。"
+      }
+    },
+    {
+      "id": "bedtime-initial-scope",
+      "kind": "constraint",
+      "label": "初版の範囲と実地効果の境界",
+      "description": "個別希望とスキル手順を分離し、短い想起支援・継続訂正・Sourceへの到達を整える。自動通知、全生活場面への拡張、朝の起床方法変更、success-cases登録は今回の対象外。導入後の実生活での想起・負担・就寝への影響は未確認として扱う。",
+      "scope": "今回承認された計画の実行境界。今後のHumanによる変更可能性は残す。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s07"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "bedtime-e01",
+      "from": "bedtime-trigger-request",
+      "to": "bedtime-supplement",
+      "relation": "contains",
+      "scope": "想起希望の例に含まれる。必須順序ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-e02",
+      "from": "bedtime-trigger-request",
+      "to": "bedtime-skin-care",
+      "relation": "contains",
+      "scope": "想起希望の例に含まれる。毎晩の実施義務ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-e03",
+      "from": "bedtime-trigger-request",
+      "to": "bedtime-ear-care",
+      "relation": "contains",
+      "scope": "後から追加された就寝前想起項目。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s03",
+          "bedtime-s05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-e04",
+      "from": "bedtime-ear-recall-gap",
+      "to": "bedtime-ear-care",
+      "relation": "motivates",
+      "scope": "忘れやすいという経験が、AIに思い出させてほしい理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s03"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-e05",
+      "from": "bedtime-braindump-correction",
+      "to": "bedtime-ear-only-reception",
+      "relation": "corrects",
+      "scope": "個別項目だけの受領から、継続BrainDumpの集約とTrigger応答へ意図を広げる。耳揉み希望は撤回しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-e06",
+      "from": "bedtime-braindump-correction",
+      "to": "bedtime-skill-value",
+      "relation": "motivates",
+      "scope": "継続して入力する内容をAIがまとめるためにスキル化を重視。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-s05"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "bedtime-q01",
+      "subject_refs": [
+        "bedtime-supplement"
+      ],
+      "question": "対象サプリの種類・成分・用法・今回の服用状況は何か。",
+      "scope": "具体的な摂取案内が必要な時だけ確認する。作成や他の想起支援の停止条件にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "bedtime-q02",
+      "subject_refs": [
+        "bedtime-ear-care",
+        "bedtime-skin-care"
+      ],
+      "question": "Humanが既に行っている具体的方法や適用条件は何か。",
+      "scope": "未提示の方法・医学的効果・頻度を作らない。必要時のみ擦り合わせる。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "bedtime-q03",
+      "subject_refs": [
+        "bedtime-trigger-request",
+        "bedtime-braindump-correction"
+      ],
+      "question": "実際の就寝前に合図と短い案内が使え、想起や就寝にどう影響したか。",
+      "scope": "スキル導入・文書保存・架空ケースの応答確認から実地効果を推定しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    }
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "reason": "Current Humanが承認した就寝前リコール初版のため、希望・形成経緯・Material Correction・実行範囲を選択収録。",
+        "source_refs": [
+          "bedtime-s01",
+          "bedtime-s02",
+          "bedtime-s03",
+          "bedtime-s04",
+          "bedtime-s05",
+          "bedtime-s06",
+          "bedtime-s07"
+        ]
+      }
+    ],
+    "coverage_review": {
+      "meaning": "以下のID一覧は選択読解の入口。別の項目状態台帳ではない。Sourceと訂正を合わせて読む。",
+      "bedtime_item_node_refs": [
+        "bedtime-ear-care",
+        "bedtime-skin-care",
+        "bedtime-supplement"
+      ],
+      "intent_node_refs": [
+        "bedtime-trigger-request",
+        "bedtime-braindump-correction",
+        "bedtime-initial-scope"
+      ],
+      "all_thread_reviewed": false
+    }
+  }
+}
