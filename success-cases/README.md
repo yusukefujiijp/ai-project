@@ -1,6 +1,6 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.1.0"
+version: "0.2.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "success-cases/README.md"
 role: "Success discovery and reading entry"
@@ -8,8 +8,8 @@ primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
 updated: "2026-09-18"
 last_reality_reviewed: "2026-09-18"
-updated_reason: "Create the first success-case entry and preserve the Ark27:03 to 04 transition experience."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.1.0"
+updated_reason: "Add the wake-up one-choice success case, connecting the original Golden Case Seed and BBP formation without replacing the prompt."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.2.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -27,8 +27,9 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | 事例 | 何が大きく変わったか | 読むと役立つ場面 |
 |---|---|---|
 | [Ark27:03→04 — 深いAI処理と、Humanから見た移行のほぼ瞬時化](ark27-03-to-04-transition.md) | Source準備からTarget再構成・Living Reviewへ接続し、Humanが「完全完璧な成功事例」と評価した | Thread移行、承認Scopeの連続実行、Humanの工程管理負担、AIへの内部処理の委任を考える時 |
+| [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](wake-up-one-choice.md) | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
 
-今回は一件から始める。起床時の一択化はHumanが挙げた重要な比較対象だが、このフォルダへの事例収録はまだ行っていない。件数・分類・形式を先に増やさず、必要な経験から育てる。
+起床時の一択化とThread移行は、Humanが重要と評価した二つの成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動と情報継承の固有条件をそれぞれ残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
 
 ## 3. 他AI・Future AIの使い方
 
@@ -61,4 +62,4 @@ Current Human Request、[AGENTS.md](../AGENTS.md)、対象Runtimeに従う。Hum
 
 事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
 
-EOF::SUCCESS_CASES_README::v0.1.0
+EOF::SUCCESS_CASES_README::v0.2.0
