@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.7.1
+version: v0.8.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-19
 ---
@@ -25,6 +25,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
+| Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -51,6 +52,14 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 元会話を渡さないAIにSkill本文と六つの相談例を渡した限定応答確認では、利用枠表示と課金原因の仮説、眠い時の受領だけの依頼、見送りへの訂正と想起希望、引用を含むTrigger設計、承認された一文の書換え、STOPを区別できました。比較用にSkill本文を渡さなかった別AIも、同じ相談で重要な区別を維持しました。この一回の比較では回答品質の優位性やトークン効率の改善を実証していません。Skillを渡した側の応答確認も、実環境の自動選択や保存更新の動作確認ではありません。
 
 共有版はSKILL.mdと最小の表示設定です。形式検査・参照先確認・導入先の保存確認を行い、共有するSKILL.md本文との一致を確認しました。通常の自動選択を許可しますが、実際の自然な合図からの自動選択、全AIでの互換性、実生活での負担軽減は未観測です。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
+
+2026-09-19、`co-design-everyday-solutions`（暮らしの工夫・共同設計）を追加しました。100均DIYから料理・収納へ広がった対話を受け、材料・道具・空間・準備から片付けまでの条件を、選べる具体案へ結び付ける役割に絞っています。一般的な相談受付やTask管理は既存の役割へ残し、`solve-with-human`の新設保留を覆す汎用問題解決スキルにはしていません。
+
+共有する判断は、個別条件の尊重、実用上の成立条件、意味のある比較、条件を見直した横展開、根拠と結果の区別です。100均・特定寸法・提案数・手順順序・出力形式を全場面へ固定せず、Future AIがより適した方法へ組み替えられるようにしています。本文と最小の表示設定だけで構成し、日常の記録や添付の表示Runtimeは複製しません。
+
+元会話や期待回答を渡さない独立AIに、収納から料理への条件切替、工作と料理の共通負担の探索、洗濯への応用、未報告の結果、単位換算の五つの仮想相談を提示しました。具体案と条件を結び付け、食品用と工作用の道具を区別し、探索段階を保ち、評価と実施結果を分け、答えだけの指定にも応じました。比較用のSkill本文を渡さないAIも主要な条件を維持しました。この限定比較は、回答品質の優位性、全AIへの汎化、自然な自動選択、現物の有効性を実証していません。
+
+形式検証と導入先の保存確認を完了し、共有本文との一致を確認しています。通常の自動選択を許可します。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
 
 ## 3. Mobile / explicit entry
 
@@ -145,4 +154,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.7.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.8.0
