@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.1"
+version: "0.3.2"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Add scoped Ark27:04 bedtime recall wishes, Human Correction and an entry for continuing updates; keep task state in source records."
+updated_reason: "Index Ark27:04 revision 2: Action-First correction, selective reporting and Token Reset Seeds while preserving bedtime sources."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-18"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.1"
+updated: "2026-09-19"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.2"
 ---
 
 # 経験とSourceの索引
@@ -51,14 +51,15 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 - 境界：revision 1・2の時点と既存IDを保持し、revision 3で後続の対話と確認済み0.2.0のRepository状態を追加した。今回の0.3.0保存結果・独立AI検証・新しい生活Actualは先取りしない。旧q03は初期九文書時点の問いとして保持する。
 - 原本の自己blobは埋め込まない。現在の版は原本とGit履歴で確認する。
 
-### 2.4 R04 — Ark27:04：就寝前想起の選択収録
+### 2.4 R04 — Ark27:04：就寝前想起・開始時・選択報告・Token Reset
 
 - [原本](../../ark-project/ark27/ark27-04/task-records.json)
-- record_id：`ark27-04:task-records`、revision：`1`、format_version：`v001`。
+- record_id：`ark27-04:task-records`、revision：`2`、format_version：`v001`。
 - coverage：`selected_thread_material`、`thread_complete:false`。
-- 主な内容：低認知の就寝前に合図から思い出したい希望、耳揉み・肌スキンケア兼マッサージ・就寝前用サプリ、失念と終了の難しさ、個別受付から継続BrainDump集約へのHuman Material Correction、就寝前リコール計画の実行承認。
-- 時点：Humanの現場報告日2026/09/19と、保存作業環境のUTC日付2026-09-18を区別する。各想起発言の時刻やtimezoneは補完しない。
-- 境界：希望の登録は、実際の就寝前Trigger送信・ケア実施・医学的効果・Skill導入の証明ではない。起床ガム、散歩、ダニ対策など他の04経験は今回の収録範囲外であり、未実行とは扱わない。ThreadのREADME／handoff／stateは変更しない。
+- revision 1の内容：就寝前に合図から思い出したい希望、耳揉み・肌スキンケア兼マッサージ・就寝前用サプリ、失念と終了の難しさ、継続BrainDump集約へのHuman Material Correction、就寝前リコール計画の実行承認。
+- revision 2の追加：開始時の締切を時刻設定中心からキリ待ち解除へ訂正した意味、当時の重点テーマ、成功報告の意図的省略と資源配分、Token Reset跨ぎの経験と未確認、三つのSeedの編集定義、長期記憶へ保持したい意向。
+- 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2更新日2026-09-19を区別する。追加発言の正確な時刻・timezoneは補完しない。
+- 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。就寝前の既存Source・Node・Unknownは保持し、ThreadのREADME／handoff／stateは変更しない。
 
 ## 3. 問いからSourceへ
 
@@ -104,6 +105,17 @@ R04の`bedtime-trigger-request`・`bedtime-braindump-correction`から、Human�
 
 対応の方法は[Bedtime Recall](../../skills/recall-bedtime-care/SKILL.md)が所有する。本索引は個別項目の第二の台帳ではなく、原本と変更先の案内である。以後、新しい就寝前想起の希望・適用方針・取消し・Correctionが別Threadへ記録されたら、この項からその原本・対象Nodeと読取条件も辿れるようにする。初期のR04だけを永続的な最新リストとみなさず、Current Humanの入力と後続訂正を照合する。一夜の実施済みは次の就寝機会へ自動転用しない。
 
+
+### 3.10 開始時の締切・選択報告・利用枠の関係を理解する
+
+R04の `start-without-closure`・`finish-deadline-working`・`start-focus-current` と `connect-s01`–`connect-s02` から、終了側のある程度の成立を背景に開始側へ重点を移し、開始時刻の設定だけでなくキリのよい完了待ちを外すCorrectionを読む。
+
+`selective-success-reporting`・`reporting-memory-importance`・`reporting-unexpected-success` と `connect-s03`–`connect-s05` から、報告の問題密度が生活全体の失敗率ではないこと、順調な実績を省略して時間・注意・利用枠を問題解決に使う理由を復元する。全件成功報告を再要求せず、未報告個別状態はUnknownのままにする。長期記憶へ保持したいという意向は、書込み成功の確認ではない。
+
+`token-reset-boundary-report`・`token-budget-ongoing` と `token-s01`–`token-s03` は、Reset跨ぎ後の新期間残量減少のHuman報告と、週内配分・失効前余剰活用の改善課題を所有する。全処理の終了時刻一括計上などの内部仕様はUnknown。
+
+一文定義は `seed-start-deadline`・`seed-selective-reporting`・`seed-token-reset` のdescriptionへ進む。三つとも二重引用符付きのAI編集定義であり、意図の確認・文言へのHuman Review・実地効果は別である。今回の共通対応は[運用文書](../operation.md)§1.1・§4.1・§6、個別経験と根拠はR04が所有する。
+
 ## 4. 共有仕様と理論の所有資料
 
 - 記録の意味・更新・Evidence：[Task Records共有ガイド](../../formats/task-records/README.md)、準備時blob `1642bd39ebdb942cb9bab36531a6d078536166a8`、版`v002-candidate`。
@@ -123,4 +135,4 @@ R04の`bedtime-trigger-request`・`bedtime-braindump-correction`から、Human�
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.1
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.2

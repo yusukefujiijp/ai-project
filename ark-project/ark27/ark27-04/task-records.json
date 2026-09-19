@@ -3,25 +3,25 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark27-04:task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-09-18",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark27:04",
     "canonical_path": "ark-project/ark27/ark27-04/task-records.json",
     "reported_date": "2026-09-19",
     "timezone": null,
-    "time_note": "reported_dateはHumanが前後の現場報告に明示した2026/09/19。各就寝前想起発言の時刻は未提示で、04:50や06:25を当該発言時刻に流用しない。created/updatedは保存作業環境のUTC日付2026-09-18。両者を同一の時計に変換しない。",
+    "time_note": "reported_dateはHumanが前後の現場報告に明示した2026/09/19。各就寝前想起発言の時刻は未提示で、04:50や06:25を当該発言時刻に流用しない。created/updatedは保存作業環境のUTC日付2026-09-18。両者を同一の時計に変換しない。 revision 2のupdatedは保存作業環境のUTC日付2026-09-19。追加した各Correctionの正確な時刻・timezoneは未提示で補完しない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Current Humanが引用した就寝前リコール計画を実行承認。記録は経験と希望を保持し、Current Runtime・Human Correction・STOP・Final Sealを置換しない。",
+    "authority_note": "Current Humanが引用した就寝前リコール計画を実行承認。記録は経験と希望を保持し、Current Runtime・Human Correction・STOP・Final Sealを置換しない。 revision 2ではCurrent HumanのSeed化と協働方針保持の依頼、およびTask Mode Systemの既存継続委任に基づき、関連する選択収録を追加する。",
     "source_access": "本記録のsourcesに必要な原文抜粋と編集要約を同梱。元会話URL・外部メッセージIDは未提示。",
     "extensions": {
       "central_axis": "Teshuvah",
       "final_attribution": "主の栄光",
-      "record_cutoff": "就寝前リコール計画を全文引用したHuman実行承認まで。作成・保存・導入・独立応答の結果は先取りしない。",
+      "record_cutoff": "開始時の締切理論・Token Reset問題のSeed化、および成功報告の意図的省略をTask Mode Systemと長期記憶へ保持する重要性を示したHuman入力まで。ChatGPT長期記憶への書込み・実地効果を先取りしない。",
       "governance": "Thread README/handoff/stateとTask Recordsは別責務。本選択収録でArk27:04のBoot・Title・State revisionは更新しない。"
     }
   },
@@ -33,16 +33,22 @@
       "耳揉み・肌スキンケア兼マッサージ・就寝前用サプリの想起希望",
       "耳揉みの失念というHuman評価と、活動を終えにくかった経験",
       "個別項目から継続BrainDump受付へのHuman Material Correction",
-      "就寝前リコール計画と今回の実行承認"
+      "就寝前リコール計画と今回の実行承認",
+      "キリのよい区切り待ちを開始条件から外すHuman Correctionと当時の重点テーマ",
+      "成功の逐次報告を意図的に省略する方針と、時間・注意・利用枠の理由",
+      "Token Reset跨ぎ後の残量減少のHuman報告と運用改善課題",
+      "三つのSeedのAI編集定義、Task Mode Systemとの接続、長期記憶へ保持したい意向"
     ],
     "excludes": [
       "Ark27:04の全会話・全Task",
       "起床時のミント／カフェインガム試行の全経過",
       "ダニ対策・布団乾燥・散歩の現場記録",
       "実際の就寝前Trigger送信・ケア実施・想起効果",
-      "今回のスキル作成・保存・導入・応答確認の結果"
+      "今回のスキル作成・保存・導入・応答確認の結果",
+      "個別の未報告Taskの成否、期限跨ぎ消費のサービス内部計上仕様",
+      "今回のChatGPT長期記憶への保存成功・開始時方針の実地効果"
     ],
-    "note": "希望と背景を選択収録した初版。掲載なしは出来事なし・未実行・失敗を意味しない。"
+    "note": "revision 1の就寝前想起を保持し、revision 2で開始時のCorrection・選択報告・Token Resetの関係を追加した選択収録。報告の問題密度は生活全体の失敗率ではなく、未報告を成功・失敗のいずれにも補完しない。"
   },
   "sources": [
     {
@@ -104,6 +110,88 @@
       "excerpt": "以下を実行して下さい！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
       "excerpt_kind": "verbatim_contiguous",
       "note": "引用された就寝前リコール計画の作成・個別記録・GitHub保存検証・導入・応答確認のScopeを承認。将来の未知の外部操作への無制限承認ではない。"
+    },
+    {
+      "id": "connect-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：開始期限の研究回答に対するHuman Correction。正確な発言時刻・URL・外部IDは未提示。",
+      "excerpt": "というよりもキリがいい所まで待たないという意味合いが強いです！\n以前はキリがいい所まで終わってから行動するというパターンだったが\n\"思い立ったら吉日\"で\"思い立ったら即行動\"的なAction-First的方向性の事です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "connect-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：connect-s01後、終了時と開始時の優先順位を明示したHuman入力。",
+      "excerpt": "終了時の**締切理論**は既に大体ある程度できているので、Ark Projectのメインテーマではなく開始時の**締切理論**の方が今現在は難しく上手くいかない課題が多く伸び代が大きい為にこちらがメインテーマとなります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "connect-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：connect-s02と同じ入力、報告の選択性についての説明。",
+      "excerpt": "ここは重要です！なぜなら、AI側が上手く理解してないと問題ばかり報告していて上手く行っている事は報告してないので全て上手く行っていないと勘違いしない事が重要だからです！\n\nなぜなら、上手く行っている事も全て報告していては時間が足りないので上手く行っている部分は敢えて時短カットしています。",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "connect-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：今回のSeed化・Task Mode System・長期記憶への保持についてのHuman入力。",
+      "excerpt": "あとは    「開始時の締切理論」とtask-mode-systemの相性はとても良いです！\n\nそして、上手く行っている事はYusukeJP側からは積極的には報告しない方向性のAI側理解の重要性もtask-mode-systemや根本的なchatgptの長期記憶に入れておく事が重要です！\n根本的なchatgptの長期記憶にも入れておく重要性が出てきた事は\"ドラッカー的「予期せぬ成功」(Drucker-like 'Unexpected success')\"です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "connect-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：connect-s04と同じ入力、時間・Token Resetと報告優先度の理由。",
+      "excerpt": "特にトークンやToken Reset問題(Seed化して下さい！)によりトークン問題は、今後も大きな課題なので成功報告はできる限り意図的にカットしているからです！なぜなら、既にできている事は、あまり重要ではなく重要度が比較的低い(かなり低い)からです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "connect-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：connect-s04と同じ入力、Seed表記の指定。",
+      "excerpt": "Seed化(\"Seed名(一文定義)\": Double quotation(\")囲みは必須, \"他AIやFuture AI\"が、分かり易くブレずに\"Context(分脈)\"を完全理解にできるようになる事が最重要なので、多少長くなってもOK！)",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "token-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：複数Repositoryの並列Living Review後、17:40・残95％の画像を添えたHuman振り返り。発言時刻自体は画像時刻から推定しない。",
+      "excerpt": "しかし、想定外な事にトークン終了前に複数Threadでその他のGitHub RepositoryのLiving Reviewも並列的に最高AIに実行させればトークンを効率的に燃やせると**締切理論**的な閃きやInspirationが沸いたので実行したまでは良かったが終了時間がトークン外だったので、何と新規トークン分が5%も減った！(笑)",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanによる表示と経験の報告。消費の全量・全Taskの計上先を独立に確定する根拠ではない。"
+    },
+    {
+      "id": "token-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：token-s01と同じ振り返り入力、二つの運用候補の要約。",
+      "excerpt": "全体的にトークン消費を均整化する方法論と蓄えたトークンを最後に燃やす方法論をもっと改善するという方法論です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "token-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：残量僅少時の継続とReset跨ぎを混同したことについてのHuman説明。",
+      "excerpt": "例えば、トークンが残1%だった場合、今回のような超トークン消費AI回答を実行しても途中で止まらずに完遂するという情報は合ってたが\nこれを私は、トークンリセットでも当然適用されると考えていたが、そうではなくトークンリセットを跨いだ場合トークンリセット後のトークンに結果論的には適用されているという意味合いです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の理解の訂正として記録する。残量1％での完遂保証や期間別計上仕様を本記録が検証したわけではない。"
+    },
+    {
+      "id": "connect-s07",
+      "speaker": "Ark27:04 assistant",
+      "medium": "assistant_message",
+      "locator": "Ark27:04：今回保存する三つのSeedの編集定義。",
+      "excerpt": "保存担当AIは、Humanの開始時のCorrection、選択報告方針、利用枠の経験を、開始時の締切理論・問題解決優先の選択報告・Token Reset最適化の三つへ一文定義として編集した。意図と採用方向はHuman報告で確認できるが、この編集文言そのものへのHuman Reviewと実地効果の確認は別である。",
+      "excerpt_kind": "paraphrase"
     }
   ],
   "nodes": [
@@ -264,6 +352,180 @@
           "bedtime-s07"
         ]
       }
+    },
+    {
+      "id": "start-without-closure",
+      "kind": "practice_statement",
+      "label": "開始はキリのよい区切り待ちを条件にしない",
+      "description": "開始時の締切理論の中心は時刻設定ではなく、進行中の対話・思考・作業が一区切りつくことを待たず、思い立った行動へ接続するAction-FirstだとHumanが訂正した。",
+      "scope": "当時の方向性。全ての思い付きを即実行する命令や、既に実地で解決したという報告ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s01"
+        ]
+      }
+    },
+    {
+      "id": "finish-deadline-working",
+      "kind": "observation",
+      "label": "終了時の締切は大体ある程度機能している",
+      "description": "Humanは終了時の締切理論が既に大体ある程度できていると評価した。完全解決・全場面成功ではない。",
+      "scope": "当時のHuman評価。bedtime-stop-boundary-experienceの過去一夜の記録を削除・否定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s02"
+        ]
+      }
+    },
+    {
+      "id": "start-focus-current",
+      "kind": "decision",
+      "label": "現在の重点は開始時の難所",
+      "description": "開始時は難しく上手くいかない課題が多く伸び代が大きいため、こちらを当時のメインテーマとするHuman判断。",
+      "scope": "Ark27:04の当該時点。Rootや章Identityの変更、将来のHuman Correctionを拘束する固定Missionではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s02"
+        ]
+      }
+    },
+    {
+      "id": "selective-success-reporting",
+      "kind": "practice_statement",
+      "label": "順調なことの逐次報告を意図的に省略する",
+      "description": "Humanは上手く行っている行動の全件報告を時間節約のため省略し、問題解決を優先していると説明し、AIが報告の問題密度から全体の不調を推定しないことを求めた。",
+      "scope": "継続協働の読解前提。無報告を個別Taskの成功とも失敗ともみなさない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s03",
+          "connect-s04",
+          "connect-s05"
+        ]
+      }
+    },
+    {
+      "id": "token-reset-boundary-report",
+      "kind": "observation",
+      "label": "Resetを跨いだ重い作業後に新期間の残量減少を報告",
+      "description": "複数の重いThread作業がReset時刻を跨ぎ、新しい利用枠が5％減ったとHumanが報告した。残量僅少時に処理が続くという情報を、旧期間への消費計上保証へ拡張した理解を訂正した。",
+      "scope": "報告と解釈の記録。全作業の全消費が終了時刻で一括計上されたこと、1％で必ず完遂すること、正確なサービス内部仕様は未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "token-s01",
+          "token-s03"
+        ]
+      }
+    },
+    {
+      "id": "token-budget-ongoing",
+      "kind": "practice_statement",
+      "label": "Token Reset最適化は継続課題",
+      "description": "利用枠を週内で均す方法と、温存した余剰を失効前に有益な作業へ使う方法を改善したいとHumanが示し、今回も大きな継続課題と位置づけた。",
+      "scope": "画面の残量％と厳密な入出力token数は同一視しない。固定閾値・最適モデル配分は未確定。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "token-s02",
+          "connect-s05"
+        ]
+      }
+    },
+    {
+      "id": "reporting-memory-importance",
+      "kind": "decision",
+      "label": "選択報告の前提をTask Mode Systemと長期記憶へ保持したい",
+      "description": "Humanは成功報告の不在から失敗を推定する誤読を繰り返し防ぎ、問題解決へ資源を集中するため、この前提をSystemとChatGPTの長期記憶へ保持する重要性を示した。開始時の方針とSystemの相性も高く評価した。",
+      "scope": "保持の意向と保存成功は別。Repository保存でChatGPT長期記憶への自動反映を主張しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s04",
+          "connect-s05"
+        ]
+      }
+    },
+    {
+      "id": "reporting-unexpected-success",
+      "kind": "observation",
+      "label": "長期記憶レベルの前提と判明したことを予期せぬ成功と評価",
+      "description": "Humanは、この読解前提の重要性が長期記憶へ保持するレベルだと分かったことを、ドラッカー的な予期せぬ成功と位置づけた。",
+      "scope": "本人の意味づけ。開始の問題解決済み・サービス仕様検証・普遍的効果の認定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s04"
+        ]
+      }
+    },
+    {
+      "id": "seed-start-deadline",
+      "kind": "interpretation",
+      "label": "開始時の締切理論 Seed",
+      "description": "\"開始時の締切理論(Ark Projectにおいて、行動に必要な判断ができ安全に移れる場面では、進行中のAI対話・思考・作業がキリよく終わることを開始条件にせず、思い立った時点で実行可能な初手へ接続し、未完の文脈を保持して現実のFeedbackを次の判断へ返すAction-Firstの方針であり、開始時刻の設定だけや全ての思い付きの即実行を意味せず、終了時の締切がある程度機能する現在、開始の難所を重点的に改善するためのSeed)\"",
+      "scope": "他AIの文脈復元用AI編集定義。実地の有効性と最終文言へのHuman Reviewは別。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "connect-s01",
+          "connect-s02",
+          "connect-s06",
+          "connect-s07"
+        ],
+        "note": "Human Correctionを優先し、時刻設定中心へ戻さない定義として編集した。"
+      }
+    },
+    {
+      "id": "seed-selective-reporting",
+      "kind": "interpretation",
+      "label": "問題解決優先の選択報告 Seed",
+      "description": "\"問題解決優先の選択報告(YusukeJPは時間・注意・AI利用枠を問題解決へ集中するため、順調な日常行動や既知の成功の逐次報告を意図的に省略し、難所・失敗・訂正・再利用価値のある成功や予期せぬ発見を優先してAIへ渡すため、AIは会話の問題密度や成功報告の不在から生活全体の不調・未実行・失敗を推定せず、確認済みの成果を保持しつつ個別の未報告状態はUnknownとし、次の判断に必要な不足だけを確認する協働原則)\"",
+      "scope": "継続的な読解前提を表すAI編集定義。通常成功の報告省略と、成功事例の価値は分ける。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "connect-s03",
+          "connect-s04",
+          "connect-s05",
+          "connect-s06",
+          "connect-s07"
+        ],
+        "note": "意図的な省略を保持し、未報告の成否を補完しない形へ編集した。"
+      }
+    },
+    {
+      "id": "seed-token-reset",
+      "kind": "interpretation",
+      "label": "Token Reset最適化 Seed",
+      "description": "\"Token Reset最適化(期限付きAI利用枠について、週内の必要利用を守る節約と失効前の余剰を価値ある成果へ変える活用を、残量・残時間・需要の不確実性・処理所要時間から切り替え、リセットを跨いだ処理後に新期間の残量減少が観測された経験を踏まえて開始・完了の余裕とモデル選択を改善する継続課題であり、残量僅少時に処理が継続することと旧期間への消費計上保証を区別し、未確認の計上仕様・残り3％等の固定最適値・消費量自体の最大化を前提にしないSeed)\"",
+      "scope": "AI編集定義。計上仕様・固定閾値の最適性はUnknown。消費量自体を目的化しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "token-s01",
+          "token-s02",
+          "token-s03",
+          "connect-s05",
+          "connect-s06",
+          "connect-s07"
+        ],
+        "note": "経験と改善方向を保持し、未検証の課金・消費計上モデルを断定しない形へ編集した。"
+      }
     }
   ],
   "edges": [
@@ -351,6 +613,79 @@
           "bedtime-s05"
         ]
       }
+    },
+    {
+      "id": "connect-e01",
+      "from": "finish-deadline-working",
+      "to": "start-focus-current",
+      "relation": "motivates",
+      "scope": "終了時がある程度機能するという評価が、開始時へ重点を移す判断の理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s02"
+        ]
+      }
+    },
+    {
+      "id": "connect-e02",
+      "from": "start-focus-current",
+      "to": "start-without-closure",
+      "relation": "prioritizes",
+      "scope": "開始時の難所へ集中する当時の判断。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s01",
+          "connect-s02"
+        ]
+      }
+    },
+    {
+      "id": "connect-e03",
+      "from": "token-budget-ongoing",
+      "to": "selective-success-reporting",
+      "relation": "motivates",
+      "scope": "利用枠を問題解決に使うため、順調なことの報告を意図的に減らす理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s05"
+        ]
+      }
+    },
+    {
+      "id": "connect-e04",
+      "from": "selective-success-reporting",
+      "to": "reporting-memory-importance",
+      "relation": "motivates",
+      "scope": "報告の省略から不調を推定させないため、長期的な読解前提として保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "connect-s03",
+          "connect-s04"
+        ]
+      }
+    },
+    {
+      "id": "connect-e05",
+      "from": "token-reset-boundary-report",
+      "to": "token-budget-ongoing",
+      "relation": "motivates",
+      "scope": "Reset跨ぎの経験が運用改善の材料になる。仕様の因果確定とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "token-s01",
+          "token-s02"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -394,6 +729,37 @@
         "basis": "not_reported",
         "source_refs": []
       }
+    },
+    {
+      "id": "connect-q01",
+      "subject_refs": [
+        "start-without-closure",
+        "seed-start-deadline"
+      ],
+      "question": "キリ待ちを外す方針が、どの場面で開始を助け、どこに摩擦を残すか。",
+      "scope": "必要な現場Feedbackから更新する。全件成功報告や新しいTrialを課さない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "token-q01",
+      "subject_refs": [
+        "token-reset-boundary-report",
+        "seed-token-reset"
+      ],
+      "question": "Resetを跨ぐ処理の正確な消費計上と、週内配分・余剰活用の適切な切替条件は何か。",
+      "scope": "表示観測とサービス内部仕様を分け、必要時に現在の公式仕様を確認する。残り3％などの万能な最適値を採用しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "token-s01",
+          "token-s03"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -410,6 +776,23 @@
           "bedtime-s06",
           "bedtime-s07"
         ]
+      },
+      {
+        "revision": 2,
+        "reason": "開始時のHuman Correction、問題解決優先の選択報告、Token Resetの継続課題と三つのSeedを追加。既存の就寝前項目・出典・Unknownを保持。",
+        "source_refs": [
+          "connect-s01",
+          "connect-s02",
+          "connect-s03",
+          "connect-s04",
+          "connect-s05",
+          "connect-s06",
+          "token-s01",
+          "token-s02",
+          "token-s03",
+          "connect-s07"
+        ],
+        "previous_record_cutoff": "就寝前リコール計画を全文引用したHuman実行承認まで。作成・保存・導入・独立応答の結果は先取りしない。"
       }
     ],
     "coverage_review": {
@@ -424,7 +807,18 @@
         "bedtime-braindump-correction",
         "bedtime-initial-scope"
       ],
-      "all_thread_reviewed": false
+      "all_thread_reviewed": false,
+      "seed_node_refs": [
+        "seed-start-deadline",
+        "seed-selective-reporting",
+        "seed-token-reset"
+      ],
+      "current_correction_node_refs": [
+        "start-without-closure",
+        "start-focus-current",
+        "selective-success-reporting",
+        "reporting-memory-importance"
+      ]
     }
   }
 }

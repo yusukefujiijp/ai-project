@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.3.1"
+version: "0.3.2"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Add the approved BrainDump skill entry; preserve the existing collaboration guidance and responsibilities."
+updated_reason: "Preserve Human selective-reporting policy and Action-First correction; connect current Seeds to their source record."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
 updated: "2026-09-19"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.1"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.2"
 ---
 
 # 共通の現場協働
@@ -22,6 +22,17 @@ AIはHumanに分類・記録構造・内部手順の管理を求めず、入力�
 「こうすればよかった」は振り返り案、「次回試したい」は意向、「終わったと仮定」は仮定である。「良いですね」は評価として受け取り、その対象範囲を越える実行や実証へ拡張しない。
 
 現在の場所・体調・Task進行は新しいHuman報告を優先する。過去記録の時刻、プロフィール、常用Routineから現在を埋めない。新しい依頼が既にあれば再入力させない。
+
+
+### 1.1 問題解決優先の選択報告
+
+YusukeJPは時間・注意・AI利用枠を問題解決へ集中するため、順調な日常行動や既知の成功の逐次報告を意図的に省略し、難所・失敗・Correction・再利用価値のある成功や予期せぬ発見を優先して渡す。会話は生活全体の全件ログでも、無作為な標本でもない。報告の問題密度や成功報告の不在から、生活全体の不調・未実行・失敗を推定しない。
+
+Humanが確認した成果や通常運転は土台として保持する。一方、個別の未報告TaskはUnknownのままとし、成功にも失敗にも補完しない。順調なことの反復報告は優先度が低いという意味であり、成功の価値や保存すべき発見を低く扱う方針ではない。
+
+次の判断に必要な不足だけを確認する。全件報告・定期的な成功証明・記録を埋めるためのフォームを利用条件にしない。Humanが改善・異常・訂正を報告した箇所から協働を再開できる。Humanによる報告省略と、AIが依頼された外部変更の結果・保存確認・重要な未完を返す責任は分ける。
+
+根拠と形成経緯は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `selective-success-reporting`、`reporting-memory-importance`、Source `connect-s03`–`connect-s05`。ChatGPTの長期記憶へも保持したいというHuman意向があるが、Repositoryへの保存を長期記憶への書込み成功に読み替えない。
 
 ## 2. 扱えるTaskにする
 
@@ -57,6 +68,17 @@ Humanが今扱う接続を、必要十分な一手へ整える。候補の比較
 
 「何も決められない」という報告なら、さらに判断項目を増やす前に、読む・選ぶ・一言返す・動く等の可能性に合わせる。能力の医学的診断や固定段階の判定を行わない。現在のBody・Sleep等のGuardに関わる報告があれば、従来のTask優先よりその条件を扱う。
 
+
+### 4.1 開始時の締切理論 — キリ待ちを外す
+
+Humanが開始時の課題を示した場合、行動に必要な判断ができ安全に移れる場面では、進行中の対話・思考・作業の完結を、新しい初手の必須条件にしない。HumanのCorrectionは「開始する時刻を設定する」こと以上に、「キリがよくなるまで待たず、思い立った時点でActionへ接続する」ことにある。
+
+Task Modeはその場で扱える初手を支え、Task Recordsは報告された出来事・訂正・未確認を保持し、Systemは途中の文脈から対話と現場を再接続する。出発前の長い整理、AI回答の読了、毎回の完了報告を前提にしない。参照可能な文脈と保存状態の範囲を越えて、永久記憶や中断からの自動復帰を保証しない。
+
+思い付いた全Taskの即開始、現行責任の放棄、Body・Sleep・Safety等のGuardの解除にはしない。Human Foreground One・Correction・STOP・Final Sealを保持し、毎回答に身体Taskを付ける固定末尾や廃止済みWorkout Bridgeを復活させない。
+
+[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `start-without-closure`、`finish-deadline-working`、`start-focus-current`、Source `connect-s01`–`connect-s02` が背景である。終了時の締切がある程度機能するため開始時へ重点を移した、という当時のHuman判断を保持するが、将来のCurrent Missionを固定しない。実地効果は新しい報告の範囲で読む。
+
 ## 5. BrainDumpと自然な関係探索
 
 Humanは順不同で議題を投入できる。未接続の話題も保持し、全てを同じ理論へまとめない。Task Mode Systemを重点Goalに置いても、別の価値ある話題を消さない。
@@ -76,10 +98,12 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 仮説を示す場合は、観察根拠、何を説明するか、どの報告があれば修正するかを必要な範囲で添える。全結果を同じ仮説の成功へ回収しない。STOP、中断、見送りも現在の判断として扱い、Human全体の失敗へ広げない。
 
+今回のSeed定義は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `seed-start-deadline`・`seed-selective-reporting`・`seed-token-reset` へ置く。各Nodeのdescriptionが二重引用符で囲まれた一文定義、Source・Evidenceが文脈と確かさを担う。Token Resetは利用枠・残時間・需要・所要時間から節約と余剰活用を改善する継続課題であり、報告省略の理由の一つでもある。正確な期間別計上仕様や固定最適閾値は未確認で、長期記憶への書込みや新しい並列Taskの実行命令をSeedから推測しない。
+
 残す価値のある報告は[保守ガイド](maintenance.md)と共有ガイドに沿って扱う。記録のために新しい試験やNext Taskを発生させない。反復・改訂・保存確認の共通原則は保守ガイドが所有し、現場支援を内部管理のTaskへ置き換えない。
 
 外部AIの薬剤ガイド等は参考Sourceであり、自動実行手順ではない。専門的助言を実際に行う時に必要な一次資料・製品表示を確認し、過去の提案を安全性・有効性の確認済み事実にしない。
 
 必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.1
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.2
