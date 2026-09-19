@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.2"
+version: "0.3.3"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Index Ark27:04 revision 2: Action-First correction, selective reporting and Token Reset Seeds while preserving bedtime sources."
+updated_reason: "Index Ark27:04 revision 3: collaborative problem solving, holiday Action Mode feedback and Future AI skill discretion."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
 updated: "2026-09-19"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.2"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.3"
 ---
 
 # 経験とSourceの索引
@@ -51,14 +51,15 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 - 境界：revision 1・2の時点と既存IDを保持し、revision 3で後続の対話と確認済み0.2.0のRepository状態を追加した。今回の0.3.0保存結果・独立AI検証・新しい生活Actualは先取りしない。旧q03は初期九文書時点の問いとして保持する。
 - 原本の自己blobは埋め込まない。現在の版は原本とGit履歴で確認する。
 
-### 2.4 R04 — Ark27:04：就寝前想起・開始時・選択報告・Token Reset
+### 2.4 R04 — Ark27:04：就寝前想起・開始時・選択報告・Token Reset・協働方針
 
 - [原本](../../ark-project/ark27/ark27-04/task-records.json)
-- record_id：`ark27-04:task-records`、revision：`2`、format_version：`v001`。
+- record_id：`ark27-04:task-records`、revision：`3`、format_version：`v001`。
 - coverage：`selected_thread_material`、`thread_complete:false`。
 - revision 1の内容：就寝前に合図から思い出したい希望、耳揉み・肌スキンケア兼マッサージ・就寝前用サプリ、失念と終了の難しさ、継続BrainDump集約へのHuman Material Correction、就寝前リコール計画の実行承認。
 - revision 2の追加：開始時の締切を時刻設定中心からキリ待ち解除へ訂正した意味、当時の重点テーマ、成功報告の意図的省略と資源配分、Token Reset跨ぎの経験と未確認、三つのSeedの編集定義、長期記憶へ保持したい意向。
-- 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2更新日2026-09-19を区別する。追加発言の正確な時刻・timezoneは補完しない。
+- revision 3の追加：人間–AI協働による積極的な問題解決、複数問題同時解決の探索、休日のAction ModeがAI対話時間を減らしたという報告、Future AIの深化・進化を妨げないSkill設計方針と今回の実行承認。
+- 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2・3更新日2026-09-19を区別する。追加発言の正確な時刻・timezoneは補完しない。
 - 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。就寝前の既存Source・Node・Unknownは保持し、ThreadのREADME／handoff／stateは変更しない。
 
 ## 3. 問いからSourceへ
@@ -116,6 +117,14 @@ R04の `start-without-closure`・`finish-deadline-working`・`start-focus-curren
 
 一文定義は `seed-start-deadline`・`seed-selective-reporting`・`seed-token-reset` のdescriptionへ進む。三つとも二重引用符付きのAI編集定義であり、意図の確認・文言へのHuman Review・実地効果は別である。今回の共通対応は[運用文書](../operation.md)§1.1・§4.1・§6、個別経験と根拠はR04が所有する。
 
+### 3.11 協働の目的と、Skillを固定しない理由を理解する
+
+R04の `collaborative-problem-solving`・`multi-problem-discovery`（Source `work-s01`・`work-s03`）から、Human–AI協働による問題解決と、複数の難所へ効く接続を積極的に探す意図を読む。RootやTeshuvahを実務目的へ置き換えるものではなく、画期的成果を毎回保証するものでもない。
+
+`holiday-action-connection`（`work-s02`）は、実生活への接続が進み、休日のAI対話時間が減ったことを利用枠余剰の一因としたHumanの説明を保持する。対話・報告・消費の減少だけで成果の低下を推定せず、個別実績や因果の寄与量は補完しない。実際に使える共通対応は[運用文書](../operation.md)§1.2・§3へ。
+
+`problem-solving-skill-possibility`・`future-ai-skill-discretion`・`problem-solving-plan-authorized`（`work-s03`–`work-s05`）から、Skillの作成価値への問い、Future AIを拘束しないCorrection、Plan-onlyから今回の実行承認への移行を区別する。採否判断と成長方針は[Skill共有Hub](../../skills/README.md#51-future-aiへの開放性とskill追加の判断)が所有する。経験原本は導入成功や実地効果を先取りしない。
+
 ## 4. 共有仕様と理論の所有資料
 
 - 記録の意味・更新・Evidence：[Task Records共有ガイド](../../formats/task-records/README.md)、準備時blob `1642bd39ebdb942cb9bab36531a6d078536166a8`、版`v002-candidate`。
@@ -135,4 +144,4 @@ R04の `start-without-closure`・`finish-deadline-working`・`start-focus-curren
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.2
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.3

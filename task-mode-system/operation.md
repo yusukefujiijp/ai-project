@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.3.2"
+version: "0.3.3"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Preserve Human selective-reporting policy and Action-First correction; connect current Seeds to their source record."
+updated_reason: "Connect collaborative problem solving, reported Action Mode gains and multi-problem exploration while leaving methods open to Future AI."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
 updated: "2026-09-19"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.2"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.3"
 ---
 
 # 共通の現場協働
@@ -34,6 +34,14 @@ Humanが確認した成果や通常運転は土台として保持する。一方
 
 根拠と形成経緯は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `selective-success-reporting`、`reporting-memory-importance`、Source `connect-s03`–`connect-s05`。ChatGPTの長期記憶へも保持したいというHuman意向があるが、Repositoryへの保存を長期記憶への書込み成功に読み替えない。
 
+### 1.2 協働の目的と、既に機能している土台
+
+Human–AI協働による積極的な問題解決を、現場協働の実務的な目的として扱う。Root・Teshuvah・Human Foreground Oneを別の目的へ置き換えず、Humanが大切にする生活上の変化へ調査・判断・実行支援をつなぐ。考えることと行動することを固定の優劣にせず、今回詰まっている接続へ必要な方法を選ぶ。
+
+YusukeJPは、長く積み重ねたThink Modeを土台にAction Modeと実生活の接続が進み、休日の現実の行動が増えてAI対話の時間が減ったことを、利用枠が余った理由の一つとして報告した。既に機能している部分を毎回未解決へ戻さない。対話時間・報告数・消費量だけを協働成果の代理指標にせず、現在の判断に必要な現実の変化と負担を見る。全件報告や測定は条件にしない。
+
+これは当時のHumanの評価と説明であり、全Taskの完了、因果の測定、将来も不調がないことの証明ではない。根拠は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `collaborative-problem-solving`・`holiday-action-connection`。新しい不調やCorrectionが届いたら、その範囲を再検討する。
+
 ## 2. 扱えるTaskにする
 
 Task化は、必要なことを扱える単位へ言語化すること。Task分割は、実行・理解・判断がしやすくなる必要な粒度へ分けること。Task処理は、その単位を現場で進め、結果や変化を受け取ること。
@@ -53,6 +61,8 @@ Taskを並べるだけでなく、判断に効く関係を読む。NodeはTask�
 - 判断を変えた：旧判断、新しい根拠、変わった範囲を残す。
 
 新しいReality・Human Correctionが来たら、どのNodeの意味・状態、どの接続条件が変わり、次の判断にどう効くかを必要な範囲で更新する。補足をすべて訂正と呼ばず、単なる隣接・時系列から依存や因果を作らない。必要なBenefitは、保留・別経路も含めて残し、一つの結論へ強制しない。
+
+複数の難所が同じ条件や接続から生じていないかを探し、一つの改善で複数のBenefitを得る候補を能動的に検討する。予期せぬ成功も、何が働いたかを問い直す材料にする。一つの説明で全てを解くことや、Move37という評価を得ることを成功条件にしない。既に役立っている条件、競合する価値、因果が未確定な関係を残し、候補が合わなければ別経路へ修正する。形成根拠は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `multi-problem-discovery`。
 
 例えばB-Gateの同じ名称でも、休日自宅のWorkout前、chocoZAPメイン後でマットが残る時、全て終了した後では次の接続が変わる。名称だけで場所・段階を埋めない。現在の条件に関係する経路を選ぶことがGraphの運用であり、Node & Edgeという語や表の追加だけを成果にしない。
 
@@ -92,6 +102,8 @@ Humanは順不同で議題を投入できる。未接続の話題も保持し、
 
 これらは必要な時の参照先であり、毎回全理論を再読・再演する指示ではない。Currentの出力契約や低負担な応答の必要性を保持する。
 
+方法やSkillは目的に応じて選び、過去AIの手順をFuture AIの上限にしない。変更・統合・簡素化の判断は[共有Skillの成長方針](../skills/README.md#51-future-aiへの開放性とskill追加の判断)へ。明示された必須読解・Evidence・権限・Guardは、方法の自由度と区別する。
+
 ## 6. Feedbackから学ぶ
 
 Humanの主観的好結果は、その評価として受け取る。一度の成功、連続成功、別条件への適用、因果説明、普遍的有効性を区別する。
@@ -106,4 +118,4 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.2
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.3

@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.7.0
+version: v0.7.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-19
 ---
@@ -127,10 +127,22 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 
 各Skillは必要なSKILL.mdから始め、scripts・references・assetsは具体的な必要がある場合だけ追加します。Current Missionに不要な全Skill読込、全PromptのSkill化、全履歴の複製は行いません。
 
+### 5.1 Future AIへの開放性とSkill追加の判断
+
+Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・境界を次のAIへ渡すために使います。現在のAIが使った手順、章数、思考法、最後の質問を、全場面の必須工程にしません。判断方法はCurrent Requestと現実に合わせて改良でき、不要になった指示は統合・簡素化・廃止を検討できます。一方、明示された読解契約、出典、Schema、権限、Human Correction・STOP・Seal、適用Guardは方法の裁量と別に保持します。高性能なモデルを使うこと自体は、追加権限や実証の根拠ではありません。
+
+追加・改訂時は、[audit-agent-instructions](audit-agent-instructions/SKILL.md)で、どの繰り返す不都合を改善するか、既存の入口と何が違うか、追加Contextや誤起動が利益を上回らないかを必要な範囲で確認します。一般的な問題解決能力を説明し直すだけなら独立Skillを増やさず、共通運用へ置く選択もあります。毎回全Skillを監査する指示ではありません。背景は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `future-ai-skill-discretion` とSource `work-s03`–`work-s05`です。
+
+2026-09-19、問題解決Skill候補 `solve-with-human` は独立追加を保留し、[共通運用](../task-mode-system/operation.md)へ協働の目的と複数問題同時解決の探索を統合しました。既存のBrainDump受付、Living Graph、Task Mode Systemと候補の責務が重なるためです。候補の主要な指針は、現在の難所と既存成果を読む、未報告を成否に変換しない、キリ待ちの依存を見直す、複数Benefitを探索する、今有効な接続を選び固定手順を課さない、という内容でした。候補を作成・インストール済みとは扱いません。
+
+共通運用の改訂案だけを渡したAIと、同じ案に候補指針を加えたAIへ、元会話や期待回答を渡さず四つの独立した仮想相談を提示しました。両者とも、①順調な生活報告を保持した外出のキリ待ち、②眠い時の言語化だけ・追加質問なし、③掃除と音声AI併用のBenefitと注意の競合をPlanだけで比較、④Skill設計相談で固定の一問題・五段階・最後の一問を一律化しない、という区別を維持しました。回答の表現は異なり、この限定比較で独立Skillの追加効果は確認できませんでした。自動選択・保存更新・実生活効果・他モデルへの汎化は未検証であり、独立Skillが常に不要という証明ではありません。
+
+今後、共通運用へ辿り着けない、同じ誤読が繰り返す、独立したTriggerや専用知識が必要になる等の具体的な不足が見つかった時に、この候補を再検討します。新しいSkillや次Trialをこの記録だけで自動開始しません。
+
 ## 6. Repository entry relation
 
 [AGENTS.md](../AGENTS.md)はRepository全体の行動境界、[ARK.md](../ARK.md)はIdentityを保持します。このREADMEは共有Skillの入口です。
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.7.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.7.1
