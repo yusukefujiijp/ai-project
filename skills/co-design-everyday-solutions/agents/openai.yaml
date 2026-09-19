@@ -1,0 +1,4 @@
+interface:
+  display_name: "暮らしの工夫・共同設計"
+  short_description: "身近な物・空間・手順を、暮らしに合う選択肢へ具体化する"
+  default_prompt: "$co-design-everyday-solutions を使い、今ある物や生活の条件から、使いやすい工夫や選択肢を一緒に考えてください。"
