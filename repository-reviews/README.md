@@ -1,19 +1,20 @@
 ---
 title: "Ark Repository Living Review"
 canonical_path: "repository-reviews/README.md"
-version: "0.1.0"
-status: "active review entry / recurring-use benefit not yet observed"
+version: "0.1.1"
+status: "active review entry / first same-AI focused follow-up recorded / cross-AI benefit unobserved"
 created: "2026-09-19"
 updated: "2026-09-19"
 last_reality_reviewed: "2026-09-19"
-reality_review_scope: "This review Bridge, source preservation, read routes, and persistence; not a new whole-repository review"
+reality_review_scope: "Bridge navigation and full-versus-focused report routing; not a new whole-repository review"
 repository: "yusukefujiijp/ai-project"
 default_ref: "main"
 primary_reader: "Current AI / other AI / Future AI"
 role: "Review entry, report history, and continuity guide; not Current Runtime or a task registry"
 origin_context: "Ark27:04 / YusukeJP × AI-Collaborator"
 validation_boundary: "Document and same-AI scenario checks are separate from independent AI use and real-world benefit"
-expected_eof: "EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.0"
+updated_reason: "Record the first focused follow-up; distinguish latest observation from the whole-repository comparison baseline."
+expected_eof: "EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.1"
 ---
 
 # Ark Repository Living Review
@@ -30,9 +31,10 @@ Humanは、この入口と短い依頼を渡せばよい。AIが前回の範囲�
 |---|---|---|
 | このREADME | 入口、責務、報告の履歴、保存と比較の扱い | この仕組みを利用・保守する時 |
 | [共通Review Prompt](review-prompt.md) | 調査・意味復元・関係探索・比較・提案の方法 | 実際のレビューを依頼された時 |
-| [最新の保存レポート：2026-09-19](reports/2026-09-19.md) | 当時の観測・根拠・判断・未確認範囲 | 現在との比較を始める時 |
+| [最新の観測：2026-09-19／入口整合](reports/2026-09-19-02.md) | 限定改善の内容・変更後の検証・残存課題 | 入口修正の結果を確認する時 |
+| [全体比較の基点：2026-09-19](reports/2026-09-19.md) | 全体の観測・根拠・判断・未確認範囲 | Repository全体の比較を始める時 |
 
-最新の保存レポートは上表から辿れる。「最新の保存」は、現在のRepositoryと同じ状態を観測済みという意味ではない。報告内の観測commitと、今回の対象commitを区別する。
+最新の保存レポートは上表から辿れる。「最新の保存」は、現在のRepositoryと同じ状態を観測済みという意味ではない。報告内の観測commitと、今回の対象commitを区別する。最新が重点レビューの場合、全体比較では最新の全体基点と、それ以後の関連する差分観測を併読する。最新の一件だけで未観測Branchを消さない。
 
 ### 1.1 Humanからの短い呼出例
 
@@ -140,13 +142,14 @@ flowchart TD
 
 | レビュー | 対象snapshot | 比較対象・位置づけ |
 |---|---|---|
+| [2026-09-19／入口整合](reports/2026-09-19-02.md) | [`47509f5c3e37`](https://github.com/yusukefujiijp/ai-project/commit/47509f5c3e37f6307ff518edd499ede860b90843) | 限定的な変更後観測。下の全体基点を置換しない |
 | [2026-09-19](reports/2026-09-19.md) | [`694d3cce1e84`](https://github.com/yusukefujiijp/ai-project/commit/694d3cce1e84dfc6106612b782a1a1d5c8cf6166) | 初回の比較基点。全体構成と重要資料の選択読解。レビューと改善提案 |
 
 初回レポートは、Ark27:04で作成された `ark-repository-living-review-2026-09-19.md` の本文・metadata・42の固定commit参照・EOFを、そのまま保存した。保存先を作ったことを、二回目のRepositoryレビューや、指摘の解決実績として数えない。
 
 初回調査で使用したPromptは [v001の保存版](https://github.com/yusukefujiijp/ai-project/blob/703a80c98f9d5979e9ed99e3746386ad81b2703d/repository-reviews/review-prompt.md) である。現在の[共通Prompt](review-prompt.md)はv002として、反復比較・保存範囲・Current Authorityの再解決を加えた。v002で初回調査を行ったと遡及して書き換えない。
 
-初回レポート§9の入口整合案は、当時の提案として残る。このBridgeの作成承認だけで、その提案全体の実装や章の固定Binding変更が承認されたとは扱わない。
+初回レポート§9の入口整合案は、当時の提案として残る。Bridge作成承認だけでは実装権限ではない。その後の新しいHuman実行委任により行った限定的な入口修正を、後続レポートへ記録した。提案全体の完了や章の固定Binding変更とは区別する。
 
 ## 7. 次回までの維持と観察
 
@@ -156,6 +159,6 @@ flowchart TD
 
 期間を開けた全体レビューや、大きな構成・権限・Runtime変更後の重点レビューに利用できる。固定の周期や自動実行は、この入口を作っただけでは設定されない。次回のCurrent Requestから、必要な範囲と深さを決める。
 
-次に観察したいのは、**Humanの短い依頼から、AIが前回の根拠と今回の原本へ到達し、何が変わったかを説明できるか**である。このBridgeの設計・保存と、反復利用による負担軽減は別であり、後者はまだ未観測として保持する。
+同一AIによる最初の限定的な継続利用を、入口整合の後続レポートへ記録した。次に観察したいのは、**期間を開けた時や他AIへの継承で、短い依頼から前回の根拠と現在の原本へ到達できるか**である。今回の利用と、継続的な負担軽減・全AI互換性は別であり、後者はまだ未観測として保持する。
 
-EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.0
+EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.1
