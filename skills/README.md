@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.6.0
+version: v0.7.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-18
+updated: 2026-09-19
 ---
 # Ark Shared Skills Hub
 
@@ -24,6 +24,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
 | Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
+| BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -42,6 +43,14 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 限定的な独立応答確認では、元会話を渡さず、作成したSkill本文・選択読解可能な04原本・七つの仮想入力だけを別AIへ渡しました。昼の追加と条件変更、就寝合図、日付を跨ぐ同じ就寝機会の実施済み・見送り、恒久取消し、STOP、合図の設計相談、原本取得不能時の現在入力からの支援を区別できました。初期三項目とHuman CorrectionのNode／Sourceを辿れ、サプリ服用不明から再摂取を促さず、架空の鍵の項目を実際のArk履歴へ混入しませんでした。これはローカルに渡した原本からの限定応答確認であり、遠隔取得経路、自動選択、保存更新の動作、全AI互換性、実生活効果の検証ではありません。
 
 形式検査と導入先の保存確認を完了しました。導入先のSKILL.mdは共有する本文と一致し、通常の自動選択を許可しています。導入環境が付加するアイコン・内部表示設定は共有版へ含めません。2026-09-12のexport-manifestは当時の輸出記録として保持し、本Skillを収録済みとは扱いません。
+
+2026-09-19、`receive-braindump`を追加しました。Humanが繰り返しているBrainDump／GTD的BrainStormingを、未整理のまま預けられる共通入口として共有するためです。高性能なAIへ固定手順を重ねる懸念も保持し、受領の意味と重要な境界を明確にしながら、整理方法・説明密度・関係探索・次の接続はAIが現在の内容から判断します。[共通運用](../task-mode-system/operation.md)にある方針を活かし、第二のTask管理基盤を作りません。
+
+観察と仮説、希望と実施、見送りと取消し、設計相談と現在の合図、会話での受領と永続保存を区別します。未接続の議題や競合するBenefitを保持し、全項目のTask化や統一結論を強制しません。Task支援・関係分析・就寝前想起・保存へ必要時に接続します。個別の生活項目や今回限りの経験はSkill本文へ蓄積しません。
+
+元会話を渡さないAIにSkill本文と六つの相談例を渡した限定応答確認では、利用枠表示と課金原因の仮説、眠い時の受領だけの依頼、見送りへの訂正と想起希望、引用を含むTrigger設計、承認された一文の書換え、STOPを区別できました。比較用にSkill本文を渡さなかった別AIも、同じ相談で重要な区別を維持しました。この一回の比較では回答品質の優位性やトークン効率の改善を実証していません。Skillを渡した側の応答確認も、実環境の自動選択や保存更新の動作確認ではありません。
+
+共有版はSKILL.mdと最小の表示設定です。形式検査・参照先確認・導入先の保存確認を行い、共有するSKILL.md本文との一致を確認しました。通常の自動選択を許可しますが、実際の自然な合図からの自動選択、全AIでの互換性、実生活での負担軽減は未観測です。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
 
 ## 3. Mobile / explicit entry
 
@@ -124,4 +133,4 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.6.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.7.0

@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.3.0"
+version: "0.3.1"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Make conditional Node and Edge updates operational while keeping Human input and output simple."
+updated_reason: "Add the approved BrainDump skill entry; preserve the existing collaboration guidance and responsibilities."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
-updated: "2026-09-17"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.0"
+updated: "2026-09-19"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.1"
 ---
 
 # 共通の現場協働
@@ -61,6 +61,8 @@ Humanが今扱う接続を、必要十分な一手へ整える。候補の比較
 
 Humanは順不同で議題を投入できる。未接続の話題も保持し、全てを同じ理論へまとめない。Task Mode Systemを重点Goalに置いても、別の価値ある話題を消さない。
 
+未整理の入力を受け取るSkill入口は[BrainDump Reception / receive-braindump](../skills/receive-braindump/SKILL.md)。短い合図から意味を保って現在の協働へ接続する。設計相談と実際のBrainDump、受領と保存を区別し、Task Mode・Task Records・就寝前リコールの既存責務へ必要時につなぐ。本節とSkillは固定の回答Templateや全理論の必須読込を要求しない。
+
 - [Double-Spiral](../prompts/ai-double-spiral.md)：議題・現場と、そこから生じる関係理解を往復し、Correctionで更新する。局所完了はThread終了ではない。
 - [Living Graph](../prompts/ai-living-graph-mode.md)：どの依存、詰まった接続、条件変更が次の判断を変えるかを見る。
 - [BBP](../prompts/ai-benefit-branch-pruning.md)：Benefitと、それを現在運ぶ行動・場所・経路を分ける。保存先が不明なBenefitは、剪定済みにしない。
@@ -80,4 +82,4 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.0
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.1

@@ -1,0 +1,7 @@
+interface:
+  display_name: "BrainDump Reception"
+  short_description: "未整理の考え・報告・訂正を受け取り、意味を保って協働へつなぐ"
+  default_prompt: "$receive-braindump を使い、次の未整理の入力を受け取り、今必要な理解や判断へつないでください。"
+
+policy:
+  allow_implicit_invocation: true
