@@ -1,19 +1,23 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v001"
-edition: "AI-first Root Bootloader"
-version_basis: "first explicitly versioned AI-first root README"
-status: "active / human-sealed"
+version: "v002"
+edition: "AI-first Repository Front Door / AGENTS-aligned routing"
+version_basis: "v001 preserved in Git history; v002 aligns live routes and shared authority with current owners"
+status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-09-19"
-last_reality_reviewed: "2026-08-15"
-reality_review_base_commit: "63ca396ce1402d4453c4b42359e2456b3b02e7f1"
-reality_review_scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
+last_reality_reviewed: "2026-09-19"
+reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
+reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
+prior_reality_review:
+  date: "2026-08-15"
+  base_commit: "63ca396ce1402d4453c4b42359e2456b3b02e7f1"
+  scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
 role:
   - "Future AI First Read"
-  - "Repository Constitution"
+  - "Repository Identity and Navigation"
   - "Global Boot Router"
-  - "Human-AI Authority Gate"
+  - "Shared Guard Summary / routes to AGENTS authority owner"
 primary_audience:
   - "new AI collaborator"
   - "new Project AI"
@@ -33,6 +37,7 @@ review_bridge_entry_addition:
   scope: "repository-reviews route only; existing policy and historical review metadata are retained"
   base_commit: "694d3cce1e84dfc6106612b782a1a1d5c8cf6166"
 updated_reason:
+  - "2026-09-19: Align general authority summaries with AGENTS; route Task, Skill, Plan Mode, and transition work to current owners while retaining explicit legacy routes."
   - "2026-09-19: Add the recurring repository review entry; preserve existing policies and review history."
   - "2026-09-18: Add success-cases to the repository router; no change to existing policies."
   - "Rebuild the root README around AI cold-start needs."
@@ -75,13 +80,12 @@ first_60_seconds:
 
   write_guard:
     required:
-      - "Human Seal OK"
-      - "Execute GitHub OK"
+      - "current scoped Human authority, interpreted under AGENTS.md"
       - "exact repository / branch / path / scope"
-    default: "Do not write."
+    default: "Do not write without authority; complete authorized work through verification."
 
   first_route:
-    - "Read this Root README."
+    - "Use the current Human request and mandatory read order; reuse verified same-context reading."
     - "Read the Current Human request and supplied sources."
     - "Move to the nearest Domain / Project README."
     - "Read the current Handoff or Project-specific canonical files when supplied."
@@ -103,7 +107,9 @@ Reality confirms.
 Harvest preserves.
 ```
 
-> **Boot first. Route second. Execute only after authority.**
+> **Resolve the current request and required sources. Reuse verified Boot. Complete only authorized work.**
+
+共通Agent判断・読取・権限の所有先は[AGENTS.md](AGENTS.md)。このREADMEの要約で別の承認条件を追加しない。明示された局所Runtime・Handoffの適用関係や必須契約は、Current Human RequestとAGENTSに従って解決する。
 
 ---
 
@@ -111,18 +117,18 @@ Harvest preserves.
 
 ```yaml
 current_coordinate:
-  root_readme_version: "v001"
-  edition: "AI-first Root Bootloader"
-  updated: "2026-08-15"
-  last_reality_reviewed: "2026-08-15"
-  reviewed_against_main_commit: "71267c94501870b902471ccd0fd016dc4752e416"
+  root_readme_version: "v002"
+  edition: "AI-first Repository Front Door / AGENTS-aligned routing"
+  updated: "2026-09-19"
+  last_reality_reviewed: "2026-09-19"
+  reviewed_against_main_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
   canonical_branch: "main"
 
   currentness_scope:
     stable_here:
       - "Repository identity"
       - "Global Boot Sequence"
-      - "Human-AI authority"
+      - "Short authority summary; AGENTS.md owns the common decision contract"
       - "Mainline-First"
       - "Reality Delta handling"
       - "Root / Fruit Guard"
@@ -140,7 +146,7 @@ current_coordinate:
     - "変動情報はNearest READMEまたはCurrent Handoffを優先確認する"
 ```
 
-このRoot READMEは、Repository全体の**安定した入口と上位契約**を保持する。
+このRoot READMEは、Repository全体の**安定した入口・役割・共通Guardの要約**を保持する。Agent判断・承認の詳細はAGENTS、DomainやThreadの詳細は各所有資料へ委ねる。
 
 すべてのActive Fileや全Project番号を列挙するInventoryではない。  
 変化しやすい情報をRootへ詰め込みすぎると、Root自身が再び古くなるためである。
@@ -206,9 +212,9 @@ GitHub Canonical Firstは、すべてをGitHubへ入れるという意味では�
 4. Nearest Domain / Project README
 5. Current Project File / Handoff / Manifest
 6. Required Runtime + Query Pair
-7. Repository Reality Check
-8. Human-AI Alignment
-9. Plan / Execution Gate when needed
+7. Repository Reality Check relevant to the request
+8. Human-AI Alignment when material meaning or authority remains unresolved
+9. Plan-only stops; authorized work proceeds through necessary verification
 ```
 
 ### 3.1 Read Order Priority
@@ -217,7 +223,7 @@ GitHub Canonical Firstは、すべてをGitHubへ入れるという意味では�
 read_order_priority:
   1: "Current explicit Human instruction"
   2: "User-specified read order and supplied sources"
-  3: "Root README global guards"
+  3: "Applicable AGENTS and Root guards, within Host authority"
   4: "Nearest Domain / Project README"
   5: "Current Handoff / Manifest / Project canonical files"
   6: "Relevant Runtime, nearest README, or canonical metadata"
@@ -284,13 +290,13 @@ Classify: confirmed / inferred / unknown / historical
 ↓
 Explain the Reality Delta
 ↓
-Human-AI Alignment
+Resolve meaning and the scope of current authority
 ↓
 Update Candidate when warranted
 ↓
-Human Final Seal
+Use existing approval; obtain a new decision only for a material unresolved boundary
 ↓
-GitHub Write
+Authorized GitHub Write
 ↓
 Direct Reality Review
 ```
@@ -346,15 +352,18 @@ Reality confirms.
 | Path | Role | Read when |
 |---|---|---|
 | [`prompts/README.md`](prompts/README.md) | Cross-AI Prompt Runtime and Query Shelf | Prompt / Queryを選ぶ時 |
+| [`skills/README.md`](skills/README.md) | Shared Skill Source and Distribution Hub | Skillの手順・共有原本・導入との違いを確認する時 |
 
 ### 5.3 Thread Lifecycle Layer
 
 | Path | Role | Read when |
 |---|---|---|
-| [`thread-end/README.md`](thread-end/README.md) | Thread-End front door / Full and Mini Rail router | Threadを閉じる・移行する時 |
+| [`prompts/ai-next-thread-handoff.md`](prompts/ai-next-thread-handoff.md) | Current shared transition contract | Thread継続・章移行・Support再接続を準備・受け入れる時。指定Runtimeの契約を保持 |
+| [`thread-end/README.md`](thread-end/README.md) | Preserved Full / Mini Thread-End assets | そのRailが明示指定され、現在の依頼に適用する時。共通移行契約への自動代替ではない |
 | [`_thread-index/README.md`](_thread-index/README.md) | Thread-to-Card Craft front door | Threadを深く蒸留しCard化する時 |
 | [`_thread-mission/README.md`](_thread-mission/README.md) | Thread Mission assets front door | Mission系Artifactを扱う時 |
-| [`_tasks/README.md`](_tasks/README.md) | Task field orientation | Current Task群を扱う時 |
+| [`task-mode-system/README.md`](task-mode-system/README.md) | AI主体Task Mode Systemの入口 | 現場のTask支援・記録・Feedbackへの再接続を扱う時 |
+| [`task-mode-system/experience/README.md`](task-mode-system/experience/README.md) | Task経験原本・Correctionへの案内 | 出来事と根拠を回復する時。全領域の学習台帳ではない |
 | [`_note/README.md`](_note/README.md) | Note shelf orientation | Canonical化前のNoteを扱う時 |
 
 ### 5.4 High-Grade Shared Lenses and Formats
@@ -446,52 +455,13 @@ ai_behavior_guard:
 
 ### 7.1 Mainline-First
 
-`main`を、複数AIとHumanが共有するGitHub上のCanonical Current Realityとして扱う。
-
-```yaml
-mainline_first:
-  canonical_branch: "main"
-
-  default:
-    read_from: "main"
-    propose_against: "main"
-    write_to: "main only after required Human authority"
-
-  branch:
-    default: false
-    role: "temporary isolation room / last resort"
-    requires:
-      - "main上で安全かつ可逆的に完了できない"
-      - "破壊的・大規模・未確定変更である"
-      - "HumanがBranch作成を明示的にSealした"
-```
-
-> **Main is the shared current reality. Branch is an isolation room, not a second world.**
+`main`をGitHub上の共有基準とする。直接main・Branch・Worktreeの方法は、Current Request、競合、変更の性質、適用Toolから必要十分に選ぶ。現在指定されたRefを勝手に変えず、隔離作業と公開・mergeの権限を混同しない。詳細は[AGENTS §5](AGENTS.md)が所有する。
 
 ### 7.2 GitHub Write Authority
 
-```yaml
-github_write_authority:
-  required:
-    - "Human Seal OK"
-    - "Execute GitHub OK"
-    - "exact repository"
-    - "exact branch"
-    - "exact path"
-    - "exact scope"
+権限は現在の依頼と有効な既存承認の意味から判断する。`Human Seal OK`や`Execute GitHub OK`は明確な表現だが、特定の二句を毎回要求しない。Plan-onlyとSTOPを優先し、承認済みScopeは必要な検証まで完了する。対象・意味・公開先・影響が実質的に広がる場合は、その差分を扱う。
 
-  not_sufficient_by_itself:
-    - "A Runtime exists."
-    - "A Query was pasted."
-    - "The AI created a Plan."
-    - "The Human praised the Plan."
-    - "README Delta Check says update may be useful."
-
-  after_write:
-    - "Fetch the written file directly."
-    - "Verify path, content, metadata, and links when possible."
-    - "Report verified / mismatch_found / unverified."
-```
+Toolが使えること、Promptを読んだこと、計画・称賛・過去の承認だけでは、新しい外部変更を自己承認できない。対象repository／ref／pathを確認し、他者の変更を保持し、保存後はRemoteから直接再取得する。本文・Metadata・Links・必要なEOF・SHA等を、変更した範囲に合わせて確認する。
 
 ### 7.3 Destructive and External Action Guard
 
@@ -520,12 +490,12 @@ Deep Dialogue
 
 Plan Modeは、意味をHuman-editableかつ実行可能な共有RailへCompileする**非実行型Mode**である。
 
-Current pair:
+通常入口は[AI Plan Mode Subsystem](ai-plan-mode/README.md)。Active pairは次の二つ。
 
-- [`prompts/ai-plan-mode.md`](prompts/ai-plan-mode.md)
-- [`prompts/ai-plan-mode_query.md`](prompts/ai-plan-mode_query.md)
+- [`ai-plan-mode/ai-plan-mode.md`](ai-plan-mode/ai-plan-mode.md)
+- [`ai-plan-mode/ai-plan-mode_query.md`](ai-plan-mode/ai-plan-mode_query.md)
 
-使用前に、RuntimeとQueryのversion・status・pair relationを確認する。
+旧[`prompts/ai-plan-mode.md`](prompts/ai-plan-mode.md)と[旧Query](prompts/ai-plan-mode_query.md)は、Humanが明示選択するrollback baselineとして保持する。黙って旧版へ切り替えない。指定されたRuntime／Queryのversion・status・pair relationと必須読取を確認する。入口の修正は、各Runtimeの内部条件を改訂・再検証したことではない。
 
 ### 8.2 Full Rail
 
@@ -536,7 +506,7 @@ full_rail_guard:
   - "Execute only approved Scope."
   - "Preserve same-thread context."
   - "User interruption overrides the Rail."
-  - "Material Correction requires Re-Seal."
+  - "Use a correction that includes execution authority; return only a materially unresolved scope or permission change to Human."
   - "External authority remains action-specific."
 ```
 
@@ -609,7 +579,7 @@ selective_duplication:
     - "Root / Fruit"
     - "Human Final Seal"
     - "No unauthorized GitHub Write"
-    - "No automatic Branch creation"
+    - "No unauthorized branch, publication, or scope expansion"
     - "No silent Scope expansion"
 
   delegate_when_maintenance_heavy:
@@ -763,7 +733,7 @@ Current Human Reality:
 When they differ:
   Surface the Delta.
   Align.
-  Human seals.
+  Human judges and authorizes; valid existing approval is reused.
   GitHub stores.
   Reality verifies.
 
@@ -775,9 +745,9 @@ Read Route:
   → Required Runtime / Query
 
 Write Rule:
-  Human Seal OK
-  + Execute GitHub OK
-  + exact repository / branch / path / scope.
+  Current scoped Human authority, resolved under AGENTS.md.
+  Exact repository / branch / path / scope.
+  Plan-only and STOP prevail; verify authorized completion.
 
 Collaboration:
   AI observes, structures, challenges, and drafts.

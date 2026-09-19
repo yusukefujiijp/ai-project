@@ -5,7 +5,11 @@ version: "v002-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-09-12"
+updated: "2026-09-19"
+navigation_patch:
+  date: "2026-09-19"
+  base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
+  scope: "Replace absent lessons entry with existing experience, success-case, and method owners; behavioral kernel unchanged"
 last_reality_reviewed: "2026-09-12"
 reality_review_base_commit: "01768c9671cc82ff46a5e0e99c396a30339ac396"
 previous_blob_sha: "74479e6b729a77121b99ed36c279b4357afeafe7"
@@ -34,6 +38,7 @@ revision_authority: "Human approved the AGENTS.md-only audit plan and implementa
 publication_policy_basis: "YusukeJP explicitly permits his supplied Ark experiment and Task material to be recorded and published, and values contributing reusable data to AI development"
 validation_boundary: "Document checks and remote persistence do not establish cross-AI behavior or real-world outcomes"
 updated_reason:
+  - "2026-09-19: Replace missing _tasks/lessons.md navigation without creating a second learning ledger."
   - "Recognize Human-authorized publication of personal Task experience without repeated consent loops."
   - "Distinguish plan-only work from authorized completion, and instruction authority from evidence."
   - "Reuse verified context, preserve mandatory full reads, and scope stops to the affected operation."
@@ -67,7 +72,10 @@ updated_reason:
 - [_system/ark-system.md](_system/ark-system.md): Project-level Operating Map / Growth Memory Hub。
 - [skills/README.md](skills/README.md): Shared Skill Source / Distribution Hub。
 - [prompts/](prompts/): 再利用するRuntimeとQuery。
-- [_tasks/lessons.md](_tasks/lessons.md): Failure-to-Guard / Success-to-Method learning ledger。
+- [task-mode-system/experience/README.md](task-mode-system/experience/README.md): Task経験原本・Human Correctionへの入口。全領域の学習台帳ではない。
+- [success-cases/README.md](success-cases/README.md): 成功の形成・根拠・成立条件から学ぶ入口。
+
+旧`_tasks/lessons.md`は存在しない。新しい学びは、出来事なら該当経験原本、成功事例ならsuccess-cases、承認された方法改訂ならその方法の所有資料へ接続する。不在のパスを埋めるためだけの台帳は作らない。
 
 この一覧は全資料の必須読込リストではない。本書へ章固有のFormat、全歴史、Task一覧、Skill本文、Current Handoffを複製しない。経験データはSourceとして扱い、Runtime・Current State・実行命令と同一視しない。
 
