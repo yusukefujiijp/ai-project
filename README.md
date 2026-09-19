@@ -5,7 +5,7 @@ version: "v001"
 edition: "AI-first Root Bootloader"
 version_basis: "first explicitly versioned AI-first root README"
 status: "active / human-sealed"
-updated: "2026-09-18"
+updated: "2026-09-19"
 last_reality_reviewed: "2026-08-15"
 reality_review_base_commit: "63ca396ce1402d4453c4b42359e2456b3b02e7f1"
 reality_review_scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
@@ -28,7 +28,12 @@ entry_addition_review:
   date: "2026-09-18"
   scope: "success-cases route only; the historical whole-repository review above is retained"
   base_commit: "f534740488804a4076588c2e6a1c80f2f16ec9f6"
+review_bridge_entry_addition:
+  date: "2026-09-19"
+  scope: "repository-reviews route only; existing policy and historical review metadata are retained"
+  base_commit: "694d3cce1e84dfc6106612b782a1a1d5c8cf6166"
 updated_reason:
+  - "2026-09-19: Add the recurring repository review entry; preserve existing policies and review history."
   - "2026-09-18: Add success-cases to the repository router; no change to existing policies."
   - "Rebuild the root README around AI cold-start needs."
   - "Add explicit version and freshness metadata."
@@ -334,6 +339,7 @@ Reality confirms.
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
 | [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
+| [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
 
 ### 5.2 Prompt and Skill Layer
 
