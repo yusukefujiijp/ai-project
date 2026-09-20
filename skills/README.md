@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.8.0
+version: v0.8.1
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-19
+updated: 2026-09-20
 ---
 # Ark Shared Skills Hub
 
@@ -68,19 +68,26 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 ### Copy & Paste — Transition Plan
 
 ```text
-prepare-ark-transition（Ark Transition）を使用し、今回の移行準備をPlan Modeで進めてください。種類・移行元・移行先・目的はCurrent Contextから確認し、確定事項を再利用してください。
+prepare-ark-transition（Ark Transition）を使用し、今回の移行準備をPlan Modeで進めてください。
 
-SKILL.mdと指定された共通契約のCurrent版を、宣言された全文読解・Identity・Exact EOF・Binding条件に従って確認してください。Skill非対応の環境では、次の共通契約を直接全文読解してください。
+種類・移行元・移行先・目的・承認範囲はCurrent Contextから確認し、確定事項を再利用してください。Human確認済み・AI提案・Unknownを区別し、重要な未確定事項だけを確認してください。
+
+SKILL.mdと次の共通契約のCurrent版を確認し、各資料に宣言された全文読解・Identity・Exact EOF・Binding条件を守ってください。
 https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-handoff.md
+
+確認済みの全文読解記録は、共通契約の同一性条件を満たす場合に再利用してください。取得・表示が切れた場合は未読位置から続け、Gapを残さないでください。Skillを利用できない環境では、共通契約を直接読解して適用してください。
 
 整理整頓→レイヤー構造→構造化→interface化。
 interface: 今回の移行準備計画。
+これは固定の思考手順や出力Templateではありません。分析方法・構成・説明密度は、今回の移行判断に最も役立つ形をAIが選んでください。
 
-移行先AIがSource Threadの会話履歴に依存せず、現在地・目的・主要な成果と運用・Human Material Corrections・Evidence Boundary・First Legal Moveを、必要な根拠から復元して協働を続けられる計画にしてください。
+移行先AIがSource Threadの会話履歴に依存せず、現在地・目的・主要な成果と運用・Human Material Corrections・本当に残る未完了Gateと保留Branch・Evidence Boundary・First Legal Moveを、必要な根拠から復元して協働を続けられる計画にしてください。
 
-Current authoritative Runtimeを優先し、適用されるRoot・Human Authority・Guardを保持してください。必要な資料・Artifact・作成更新順・移行固有の再構成条件・検証方法はAIが判断し、準備完了と移行先の実際の再構成成功を区別してください。
+Current authoritative Runtimeを優先し、その後のHuman入力・訂正との時点と権限の関係を整合させてください。適用されるRoot・Human Authority・Guardを保持してください。
 
-必須Sourceの未読・不足・不一致は補完せず該当契約で停止し、重要な確認事項だけを示してください。通常のUnknownは未確定として保持し、全解消を計画成立の条件にしないでください。
+必要な資料・Artifact・作成更新順・移行固有の再構成条件・検証方法はAIが判断してください。計画では、何をなぜ作成・更新するか、依存関係と完了条件を示し、Source側の準備・保存確認・Target自身の再構成成功・Human側の操作を区別してください。
+
+必須Sourceの未読・不足・不一致は推測や旧版で補わず、該当契約に従って影響する操作を停止し、欠けた条件と最小の回復方法を示してください。通常のUnknownは未確定として保持し、全解消を計画成立の条件にしないでください。
 
 今回は調査と計画のみです。実装・変更・書き込み・保存・反映・実際の移行は行わず、実行可能な計画の提示で停止してください。
 ```
@@ -128,6 +135,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 
 2026-09-14のArk Transition改訂は、ツール改善と実移行の入口を分け、Current Runtimeから重要な運用Systemの資料へ必要時に接続する案内を補いました。共通移行契約の本文・名前・既存Handoffは変更せず、汎用の計画用Promptを第3節へ集約しています。検証で使う説明用ケースを実際のTask実績や全AI互換性の証明にしません。
 
+2026-09-20、Ark27:04でのHuman承認により、第3節の計画用Promptを改訂しました。共通契約にある全文読解記録の再利用条件、資料ごとの宣言条件、Human確認済み・AI提案・Unknown、未完了Gateと保留Branch、停止範囲と最小回復方法を入口でも明確にしています。構造化を固定Templateにせず、Source準備・保存確認・Target再構成・Human操作を分ける方針を保持しました。変更はこのHubの呼出しPrompt・版情報・改訂理由に限定し、共通契約とSkill本文の改訂、Skillの再導入、実際の移行やTarget Bootを含みません。
+
 ## 5. Validation and growth
 
 区別する状態は、共有原本の保存、Remote再取得確認、各環境への導入、実際の振る舞いの確認です。結果を観察していない段階を成功へ昇格させません。
@@ -154,4 +163,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.8.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.8.1
