@@ -353,6 +353,7 @@ Reality confirms.
 |---|---|---|
 | [`prompts/README.md`](prompts/README.md) | Cross-AI Prompt Runtime and Query Shelf | Prompt / Queryを選ぶ時 |
 | [`skills/README.md`](skills/README.md) | Shared Skill Source and Distribution Hub | Skillの手順・共有原本・導入との違いを確認する時 |
+| [`schedules/README.md`](schedules/README.md) | Schedule PromptのDurable / Versioned SourceとRuntime同期入口 | Schedule Taskを再現・修正・監査し、Future AIへ変遷を継承する時 |
 
 ### 5.3 Thread Lifecycle Layer
 
