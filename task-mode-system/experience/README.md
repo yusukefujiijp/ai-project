@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.3"
+version: "0.3.4"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Index Ark27:04 revision 3: collaborative problem solving, holiday Action Mode feedback and Future AI skill discretion."
+updated_reason: "Index Ark27:04 revision 4: selected Reality reports and time boundaries for the authorized 04 to 05 continuation."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-19"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.3"
+updated: "2026-09-20"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.4"
 ---
 
 # 経験とSourceの索引
@@ -19,7 +19,7 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 
 本書では収録済み経験の範囲と判断の入口を把握し、現在の問いに関係する原本へ進む。継続AIは確認済みの経緯を再利用できる。短い案内で適用条件やEvidenceを解決できなければ、対象NodeのSource・関係するEdge・Correction・Unknownへ戻る。明示された全文読解条件は省略しない。
 
-索引は正本への案内であり、Taskの最新状態を二重管理しない。Node IDやSource IDは記録内で有効である。`ark27-02:task-records / node:new-after-order / source:s24`のように、記録IDと種別を添えて参照する。本文中のR01／R02／R03は、この索引内の短縮名であり新しい外部IDではない。
+索引は正本への案内であり、Taskの最新状態を二重管理しない。Node IDやSource IDは記録内で有効である。`ark27-02:task-records / node:new-after-order / source:s24`のように、記録IDと種別を添えて参照する。本文中のR01／R02／R03／R04は、この索引内の短縮名であり新しい外部IDではない。
 
 ## 2. 原本と収録範囲
 
@@ -54,13 +54,14 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 ### 2.4 R04 — Ark27:04：就寝前想起・開始時・選択報告・Token Reset・協働方針
 
 - [原本](../../ark-project/ark27/ark27-04/task-records.json)
-- record_id：`ark27-04:task-records`、revision：`3`、format_version：`v001`。
+- record_id：`ark27-04:task-records`、revision：`4`、format_version：`v001`。
 - coverage：`selected_thread_material`、`thread_complete:false`。
 - revision 1の内容：就寝前に合図から思い出したい希望、耳揉み・肌スキンケア兼マッサージ・就寝前用サプリ、失念と終了の難しさ、継続BrainDump集約へのHuman Material Correction、就寝前リコール計画の実行承認。
 - revision 2の追加：開始時の締切を時刻設定中心からキリ待ち解除へ訂正した意味、当時の重点テーマ、成功報告の意図的省略と資源配分、Token Reset跨ぎの経験と未確認、三つのSeedの編集定義、長期記憶へ保持したい意向。
 - revision 3の追加：人間–AI協働による積極的な問題解決、複数問題同時解決の探索、休日のAction ModeがAI対話時間を減らしたという報告、Future AIの深化・進化を妨げないSkill設計方針と今回の実行承認。
-- 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2・3更新日2026-09-19を区別する。追加発言の正確な時刻・timezoneは補完しない。
-- 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。就寝前の既存Source・Node・Unknownは保持し、ThreadのREADME／handoff／stateは変更しない。
+- revision 4の追加：03→04のHuman成功評価、ダニ対策のテーマ採用とFeedback方針、ミントガムの選択観察、2026/09/19の朝の時系列、13:00頃のB-Gate名称を含む実地入力、対話と並行する生活行動の総括、04→05準備の実行承認。
+- 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2・3更新日2026-09-19、revision 4更新日2026-09-20を区別する。日付・時刻を明示した入力と、未提示の各発言を分け、timezoneは補完しない。
+- 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。既存Source・Node・Unknownは保持する。経験原本の追加だけでThreadのREADME／handoff／stateが更新されたとは扱わず、移行準備のState同期は別Artifactの責務とする。
 
 ## 3. 問いからSourceへ
 
@@ -125,6 +126,16 @@ R04の `collaborative-problem-solving`・`multi-problem-discovery`（Source `wor
 
 `problem-solving-skill-possibility`・`future-ai-skill-discretion`・`problem-solving-plan-authorized`（`work-s03`–`work-s05`）から、Skillの作成価値への問い、Future AIを拘束しないCorrection、Plan-onlyから今回の実行承認への移行を区別する。採否判断と成長方針は[Skill共有Hub](../../skills/README.md#51-future-aiへの開放性とskill追加の判断)が所有する。経験原本は導入成功や実地効果を先取りしない。
 
+### 3.12 04の現場報告と、初期Stateとの時点差を理解する
+
+R04の `source04-transition-success-report`（Source `continuity-s01`）は03→04のHuman成功評価を保持する。初期Stateの未観測表示を、後続の評価や継続対話へ巻き戻さない。05の受入れ成功は別に確認する。
+
+`dani-main-theme-adopted`・`reality-feedback-loop`（`dani-s01`–`dani-s02`）は、外部素材の保留から現実改善テーマの採用へ変わった意味を所有する。洗剤ガイドの検証済み化ではない。`bed-cleaning-report`（`reality-s01`・`dani-s03`）と、原因・効果のUnknownを合わせて読む。
+
+`mint-wake-observation`・`mint-tolerability-report`・`mint-first-caffeine-reserve`・`mint-wake-duration-uncertain`（`wake-s01`–`wake-s04`）は、二度寝回避、徐々の覚醒、本人が副作用を感じなかった報告、当該試行の追加摂取なし、不確かな時間を分ける。`morning-timeline-20260919`と`walking-connect-friction`（`reality-s01`–`reality-s02`）では、行動の時系列、完全覚醒、カフェイン投入意向、実際の散歩開始を混同しない。過去の起床一択化の成功を消さず、最終的な起床方法を新たに確定しない。
+
+`b-gate-field-report-20260919`・`nap-after-oral-care-plan`（`reality-s03`）は、9/19 13:00頃に名称を含むHuman入力を実際に受け取ったことと、歯磨き後の昼寝の予定を所有する。R02の名称・辞書登録とは段階が違い、選択UI、自動検知、実行、回復、効果は未確認。`parallel-household-action-report`（`reality-s04`）は、掃除・洗濯・ダニ対策が対話の裏で進むという総括報告を保持する。どちらも次Threadの現在の身体状態や全件実績へ変換しない。
+
 ## 4. 共有仕様と理論の所有資料
 
 - 記録の意味・更新・Evidence：[Task Records共有ガイド](../../formats/task-records/README.md)、準備時blob `1642bd39ebdb942cb9bab36531a6d078536166a8`、版`v002-candidate`。
@@ -144,4 +155,4 @@ R04の `collaborative-problem-solving`・`multi-problem-discovery`（Source `wor
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.3
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.4
