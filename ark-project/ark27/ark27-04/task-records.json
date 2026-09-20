@@ -3,26 +3,26 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark27-04:task-records",
-  "revision": 3,
+  "revision": 4,
   "role": "thread_experience_record",
   "created": "2026-09-18",
-  "updated": "2026-09-19",
+  "updated": "2026-09-20",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark27:04",
     "canonical_path": "ark-project/ark27/ark27-04/task-records.json",
     "reported_date": "2026-09-19",
     "timezone": null,
-    "time_note": "reported_dateはHumanが前後の現場報告に明示した2026/09/19。各就寝前想起発言の時刻は未提示で、04:50や06:25を当該発言時刻に流用しない。created/updatedは保存作業環境のUTC日付2026-09-18。両者を同一の時計に変換しない。 revision 2のupdatedは保存作業環境のUTC日付2026-09-19。追加した各Correctionの正確な時刻・timezoneは未提示で補完しない。 revision 3も保存作業環境のUTC日付2026-09-19。work-s01–work-s05の発言時刻は未提示。",
+    "time_note": "reported_dateはHumanが前後の現場報告に明示した2026/09/19。各就寝前想起発言の時刻は未提示で、04:50や06:25を当該発言時刻に流用しない。created/updatedは保存作業環境のUTC日付2026-09-18。両者を同一の時計に変換しない。 revision 2のupdatedは保存作業環境のUTC日付2026-09-19。追加した各Correctionの正確な時刻・timezoneは未提示で補完しない。 revision 3も保存作業環境のUTC日付2026-09-19。work-s01–work-s05の発言時刻は未提示。 revision 4の保存準備日は2026-09-20。reality-s01・reality-s03の明示時刻と、日付未提示のwake-s01–wake-s04を分ける。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Current Humanが引用した就寝前リコール計画を実行承認。記録は経験と希望を保持し、Current Runtime・Human Correction・STOP・Final Sealを置換しない。 revision 2ではCurrent HumanのSeed化と協働方針保持の依頼、およびTask Mode Systemの既存継続委任に基づき、関連する選択収録を追加する。 revision 3はwork-s05の実行承認に基づく。",
+    "authority_note": "Current Humanが引用した就寝前リコール計画を実行承認。記録は経験と希望を保持し、Current Runtime・Human Correction・STOP・Final Sealを置換しない。 revision 2ではCurrent HumanのSeed化と協働方針保持の依頼、およびTask Mode Systemの既存継続委任に基づき、関連する選択収録を追加する。 revision 3はwork-s05の実行承認に基づく。 revision 4はtransition-s01の04→05移行準備の実行承認に基づく選択収録。",
     "source_access": "本記録のsourcesに必要な原文抜粋と編集要約を同梱。元会話URL・外部メッセージIDは未提示。",
     "extensions": {
       "central_axis": "Teshuvah",
       "final_attribution": "主の栄光",
-      "record_cutoff": "人間–AI協働の問題解決、休日のAction Modeと利用枠余剰、Future AIの深化・進化を妨げないSkill設計のHuman入力、およびその計画の実行承認まで。今回の実装結果や応答比較は先取りしない。",
-      "governance": "Thread README/handoff/stateとTask Recordsは別責務。本選択収録でArk27:04のBoot・Title・State revisionは更新しない。"
+      "record_cutoff": "既存revision 1–3に加え、04の移行成功評価、ダニ対策採用、起床時ミントの選択観察、2026/09/19の朝と13:00頃の報告、生活行動の総括、および04→05準備の今回承認を選択収録。05のBoot・UI・今回保存結果は先取りしない。",
+      "governance": "Task Recordsは経験原本であり、Thread README/handoff/stateとは別責務。記録追加だけでStateやBindingが更新されたとは扱わない。今回のSource State同期・Target Triad準備は別Artifactとして検証する。"
     }
   },
   "coverage": {
@@ -40,18 +40,23 @@
       "三つのSeedのAI編集定義、Task Mode Systemとの接続、長期記憶へ保持したい意向",
       "人間–AI協働による問題解決という目的の言語化と、複数問題同時解決の探索方針",
       "休日の実生活への接続が進み、AI対話時間が減ったというHuman報告",
-      "Future AIを拘束しないSkill設計のHuman Correctionと今回の実行承認"
+      "Future AIを拘束しないSkill設計のHuman Correctionと今回の実行承認",
+      "03→04移行に対するHuman成功評価",
+      "ダニ対策の採用と現実改善Feedback Loopの理由",
+      "ミントガム試行の本人観察・時間の不確かさ・散歩AIへの接続意向",
+      "2026/09/19の朝の大まかな時系列と13:00頃のB-Gate名称を含む実地入力",
+      "対話の裏で進む掃除・洗濯等の総括報告と04→05準備の実行承認"
     ],
     "excludes": [
       "Ark27:04の全会話・全Task",
-      "起床時のミント／カフェインガム試行の全経過",
-      "ダニ対策・布団乾燥・散歩の現場記録",
+      "選択箇所以外のミント／カフェインガム試行の全経過・医学的因果・最終採用",
+      "ダニ対策・布団乾燥・散歩の網羅的記録、未報告の実施・効果",
       "実際の就寝前Trigger送信・ケア実施・想起効果",
       "今回のスキル作成・保存・導入・応答確認の結果",
       "個別の未報告Taskの成否、期限跨ぎ消費のサービス内部計上仕様",
       "今回のChatGPT長期記憶への保存成功・開始時方針の実地効果"
     ],
-    "note": "revision 1の就寝前想起を保持し、revision 2で開始時のCorrection・選択報告・Token Resetの関係を追加した選択収録。報告の問題密度は生活全体の失敗率ではなく、未報告を成功・失敗のいずれにも補完しない。 revision 3はその後の目的の言語化・休日の補足・Skill設計方針を追加。旧Node・Source・Unknownを保持し、後続の言語化を新しい生活実績へ変換しない。"
+    "note": "revision 1の就寝前想起を保持し、revision 2で開始時のCorrection・選択報告・Token Resetの関係を追加した選択収録。報告の問題密度は生活全体の失敗率ではなく、未報告を成功・失敗のいずれにも補完しない。 revision 3はその後の目的の言語化・休日の補足・Skill設計方針を追加。旧Node・Source・Unknownを保持し、後続の言語化を新しい生活実績へ変換しない。 revision 4は時点差を解消するために重要報告を追加するが、全Thread収録・全Task完了・05受入れ成功を意味しない。"
   },
   "sources": [
     {
@@ -240,6 +245,124 @@
       "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
       "excerpt_kind": "verbatim_contiguous",
       "note": "今回の保存差分とSkill採否判断を含む計画の実行承認。独立Skillの採用、実地効果、無関係な外部操作の承認をこの引用から自動推定しない。"
+    },
+    {
+      "id": "continuity-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：03→04受入れ後のHuman評価。発言日時・外部メッセージIDは未提示。",
+      "excerpt": "特にChatGPT6 Astra(Max)により次Thread移行がほぼほぼ瞬時化(思考時間は長くてOK！)で完全完成したメリットはとても大きく計り知れません！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "移行体験へのHuman評価。計測された秒数、特定モデルの因果的優位、05のBoot成功を証明しない。"
+    },
+    {
+      "id": "dani-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04へHumanが貼り付けたARK27_04_DANI_REALITY_FEEDBACK_CONNECT v001、§2.1のHuman原文。接続元会話URL・発言時刻は未提示。",
+      "excerpt": "「Arkの今現在の本流Ark27:04のメインテーマに格上げされます！」",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "別Threadの採用判断をHumanが現在の本流へ持参したSource。洗剤ガイドの検証済み化や章Identity変更ではない。"
+    },
+    {
+      "id": "dani-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "同SUPPORT_RECONNECT Prompt、§2.1のHuman原文。",
+      "excerpt": "「これは AI活用がデジタル内からリアルに移り実践反復するFeedback Loopの良い機会だからです！」",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "テーマの採用理由。AIの調査・判断とHuman実行・Feedbackの往復を重視した意味を保持し、生活改善の実証とは分ける。"
+    },
+    {
+      "id": "dani-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：2026/09/19の05:00を含むHuman入力、セスキスプレーの製品リンク。",
+      "excerpt": "https://jp.daisonet.com/products/4549131530834?_pos=2&_sid=1495ab9dc&_ss=r",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが対象として提示したURL。製品本文の取得・寝具への適合性・ダニへの有効性をこの記録で検証したとは扱わない。",
+      "url": "https://jp.daisonet.com/products/4549131530834?_pos=2&_sid=1495ab9dc&_ss=r"
+    },
+    {
+      "id": "wake-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：ミントガム試行の「半覚醒」をHumanが精密化した入力。日付・時刻は未提示。",
+      "excerpt": "半覚醒とは目は開いて意識はあるが身体が動かないという状態です！朧げというかボーッとしているような時間帯です！しかし、**ミントガムなしでは二度寝する所を二度寝しない**という大きな違い(メリット？)があります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の身体感覚と比較の説明。医学的診断、ガムなし条件との統制比較、将来の二度寝防止保証ではない。"
+    },
+    {
+      "id": "wake-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：ミントガムの徐々の覚醒を説明したHuman入力。日付・時刻は未提示。",
+      "excerpt": "その代わり、ミントガムでは、副作用がなかったです！(当然ですが............)",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人が今回感じなかったという報告。ミントガムが完全に無害、カフェインが必ず反動を起こすという一般則へ昇格しない。"
+    },
+    {
+      "id": "wake-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：一択化と覚醒速度の競合を検討したHuman入力。日付・時刻は未提示。",
+      "excerpt": "そこで今朝は第一段階としてミントガム上手くいかなければ追加でカフェインガムという二段階にしてみたが結局の所、ミントガムは本当の瞬間起床はないが、徐々に覚醒したのでカフェインガムは食べなかった！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当該試行ではカフェインを追加しなかったとの報告。後に時刻付きで届いた05:00の投入意向とは別の時点として保持する。"
+    },
+    {
+      "id": "wake-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：半覚醒の所要時間を覚えていないと述べたHuman入力。日付・時刻は未提示。",
+      "excerpt": "恐らく、15分から30分程度だと思いますが定かではないです！\n明日朝そこ(覚醒までの時間)を意識して全く同じ実験をしてみても面白いです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "15–30分は不確かな推定。翌朝の試行提案はこの発言だけでは実行済みでない。"
+    },
+    {
+      "id": "reality-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：Humanが明示した2026/09/19の04:05–04:40の大まかな時系列。",
+      "excerpt": "2026/09/19\n04:05目覚め→ミントガム→アイドリング状態\nアイドリング状態時: ボーッとする\nボーッとする内容: 朧げには頭が働いている\nもし身体が動いたら**こうしたいあなたしたい**が頭の中、特に無意識下で働く\nこの時間帯が重要な可能性もある。\n4:10-15 ダニ対策 100均セスキスプレーダニ対策に効くか試す コロコロでベッド上掃除 何が最も効果がありコスパが良いか考える\n4：35  AI活用開始 ダニ対策と並行\n4:40 今ここ",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "原文表記を保持。4:10–15は現場行動の報告であり完全覚醒の測定時刻ではない。スプレーの試用言及から使用量・接触条件・殺ダニ効果を補完しない。"
+    },
+    {
+      "id": "reality-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：同朝、製品リンクと05:00を含むHuman入力。",
+      "excerpt": "とにかく今は朝のゴールデンタイムの散歩 AI活用にできる限り早く**接続Connect**する必要があり時間がリアルタイムで過ぎて行く懸念がある！\n\nつまり、ここでカフェインガムを投入する！というかせざるを得ない！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "散歩AIへの接続を急ぐ判断と投入意向。実際の摂取・散歩開始・効果は、この入力からは完了扱いにしない。"
+    },
+    {
+      "id": "reality-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：Humanが明示した2026/09/19 13:00頃の疲労・B-Gate報告。",
+      "excerpt": "2026/09/19 13:00頃\nAMに様々なTaskをこなして疲れ果てて\"Query組立困難: B-Gate検出状態\"です！\nしかし、使用期限が近いのにChatGPTトークンを余らせている！\n一旦、昼寝して、B-ZoneからA状態(\"高認知状態(超高認知状態)\")に戻したい！昼寝後に集中して AI活用したい！\n\n上手くできるか微妙です！寝過ごす可能性もあります！\nとにかく、眠いです！\n歯磨き後、寝ます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "名称を含む実際の入力を受け取ったことは確認できる。辞書機能・選択UI経由か、歯磨き・昼寝の実施、覚醒回復、支援効果は未確認。次Threadの現在の身体状態ではない。"
+    },
+    {
+      "id": "reality-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：Think ModeとAction Modeの接続を説明したHuman入力。正確な発言時刻は未提示。",
+      "excerpt": "つまり、これらのThread Sessionの裏では休日に様々な掃除や洗濯やダニ対策を並行して行っています！\nただ全てをtask-mode-systemに報告できていない事ととても上手く行っているので報告していない部分もあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "複数生活行動が進んでいるとの総括報告。各Taskの全件完了・対策ごとの効果は補完しない。"
+    },
+    {
+      "id": "transition-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:04：04→05の同章継続計画を全文引用し、「以下を実行して下さい」と依頼した今回のHuman入力。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "先行する計画提示で停止する段階と、今回の実行承認を区別する。Source記録・索引・Stateの同期、05 Triad作成と検証、通常入口更新が対象。"
     }
   ],
   "nodes": [
@@ -659,6 +782,195 @@
           "work-s05"
         ]
       }
+    },
+    {
+      "id": "source04-transition-success-report",
+      "kind": "observation",
+      "label": "03→04移行のHuman成功評価",
+      "description": "Humanは03→04の移行について、思考時間は長くてよい一方、Human側の移行がほぼ瞬時化して完全完成したと高く評価した。その後、本Threadで継続対話がある。",
+      "scope": "03→04の体験・評価。05のTarget再構成、UI操作の直接観測、全AIでの再現性と別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "continuity-s01"
+        ]
+      }
+    },
+    {
+      "id": "dani-main-theme-adopted",
+      "kind": "decision",
+      "label": "ダニ対策を本流の現実改善テーマへ採用",
+      "description": "別ThreadのHuman採用判断がSUPPORT_RECONNECTで04へ持参された。中心はダニ対策から実生活を改善することであり、洗剤・薬剤の一般知識は必要に応じた手段である。",
+      "scope": "当時の具体的メインテーマ。Root・章第一義を変更せず、その後の開始時・Token Resetへの重点移動も保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "dani-s01",
+          "dani-s02"
+        ]
+      }
+    },
+    {
+      "id": "reality-feedback-loop",
+      "kind": "practice_statement",
+      "label": "AIの判断とHumanの実行Feedbackを往復する",
+      "description": "AI活用をデジタル内から現実へ接続し、実践とFeedbackで次の判断を変える初穂として取り組む意味を保持する。",
+      "scope": "採用理由と方針。Prompt受入れや文書完成だけで現実改善を実証したとは扱わない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "dani-s02"
+        ]
+      }
+    },
+    {
+      "id": "mint-wake-observation",
+      "kind": "observation",
+      "label": "半覚醒でも二度寝を避けたというミントガム報告",
+      "description": "Humanは、目が開き意識はあるが身体が動かずボーッとする時間があり、それでも通常なら二度寝するところを二度寝しなかったと説明した。",
+      "scope": "当該試行の本人報告。瞬時の身体起動、完全覚醒、医学的機序、比較試験の証明と分ける。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "wake-s01"
+        ]
+      }
+    },
+    {
+      "id": "mint-tolerability-report",
+      "kind": "observation",
+      "label": "ミントガムでは副作用を感じなかったとの報告",
+      "description": "Humanはミントガムの当該試行で副作用がなかったと述べた。",
+      "scope": "本人の観察。完全無害や、カフェインの反動が必ず起こるという一般則を認定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "wake-s02"
+        ]
+      }
+    },
+    {
+      "id": "mint-first-caffeine-reserve",
+      "kind": "observation",
+      "label": "当該試行はミント先行・必要ならカフェイン追加",
+      "description": "Humanは二段階で試し、徐々に覚醒したため当該試行ではカフェインガムを食べなかったと報告した。",
+      "scope": "日付未提示の一試行。恒久的な一択化の変更や、その後の別時点の投入意向を否定するものではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "wake-s03"
+        ]
+      }
+    },
+    {
+      "id": "mint-wake-duration-uncertain",
+      "kind": "observation",
+      "label": "覚醒までの時間は記憶が曖昧",
+      "description": "Humanは15–30分程度かもしれないが定かではないと述べ、翌朝に同じ試行で時間を意識することを提案した。",
+      "scope": "推定値と提案を保持し、測定値・実施済み・毎回の所要時間にはしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "wake-s04"
+        ]
+      }
+    },
+    {
+      "id": "morning-timeline-20260919",
+      "kind": "observation",
+      "label": "04:05のミントガムから04:35のAI利用まで",
+      "description": "04:05に目覚めてミントガム、ボーッとしながら行動したい内容が浮かぶと報告。4:10–15にベッド上清掃等、4:35にダニ対策と並行してAI利用開始、4:40が報告時の現在地とされた。",
+      "scope": "2026/09/19の大まかな時系列。意識状態や有益性の仮説は本人の説明。最初の行動までの時間と完全覚醒までの時間を同一視しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s01"
+        ]
+      },
+      "time_text": "2026/09/19 04:05–04:40（Human明示。timezone未提示）"
+    },
+    {
+      "id": "bed-cleaning-report",
+      "kind": "observation",
+      "label": "コロコロによるベッド上掃除とセスキ試用の言及",
+      "description": "4:10–15の報告にコロコロでベッド上掃除、セスキスプレーがダニ対策に効くか試すという言及がある。後に対象製品URLが提示された。",
+      "scope": "具体的なスプレー実施条件・量、ダニの同定、殺ダニ効果、困りごとの改善は未確認。原薬品ガイドの未検証記述を再利用しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s01",
+          "dani-s03"
+        ]
+      }
+    },
+    {
+      "id": "walking-connect-friction",
+      "kind": "decision",
+      "label": "散歩AIへの早期接続を求め、カフェイン投入を意向表明",
+      "description": "05:00、朝の貴重な時間が過ぎる懸念から散歩AIへ早く接続する必要を述べ、カフェインガムを投入する意向を示した。",
+      "scope": "現在の移行先へ摂取を指示するものではない。実際の摂取・出発・効果は未確認。",
+      "time_text": "同朝05:00（Human明示）",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s02"
+        ]
+      }
+    },
+    {
+      "id": "b-gate-field-report-20260919",
+      "kind": "observation",
+      "label": "B-Gate名称を含む実際の疲労報告を受領",
+      "description": "AMの様々なTask後に疲れ果て、眠い状態をHumanが「Query組立困難: B-Gate検出状態」として送信した。名称採用・登録報告だけだった段階から、実際の入力が一件確認された。",
+      "scope": "実際のHuman入力の確認。医学的認知測定、自動検知、辞書・選択UI経由、支援後の実行・効果は確認していない。現在も同状態とみなさない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s03"
+        ]
+      },
+      "time_text": "2026/09/19 13:00頃（Human明示）"
+    },
+    {
+      "id": "nap-after-oral-care-plan",
+      "kind": "task",
+      "label": "歯磨き後に昼寝し、回復後にAI利用したい",
+      "description": "疲労・眠気を受け、歯磨き後に寝て、高認知状態へ戻りAI活用したいと述べた。寝過ごしの懸念も保持する。",
+      "scope": "当時の予定と希望。歯磨き・昼寝の実行、起床時刻、回復は未確認。",
+      "task_state": "planned",
+      "time_text": "2026/09/19 13:00頃の入力",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s03"
+        ]
+      }
+    },
+    {
+      "id": "parallel-household-action-report",
+      "kind": "observation",
+      "label": "対話の裏で掃除・洗濯・ダニ対策が進んでいる",
+      "description": "Humanは休日に様々な生活Taskを並行しており、上手く行っているため報告していない部分もあると説明した。",
+      "scope": "総括的な活動・評価の報告。各Taskの未報告状態はUnknown。後の選択報告方針の背景。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s04"
+        ]
+      }
     }
   ],
   "edges": [
@@ -865,6 +1177,64 @@
         ],
         "note": "Humanが述べた利用枠余剰の一因を、以前の週内配分・余剰活用の改善課題へ接続するAI解釈。"
       }
+    },
+    {
+      "id": "reality-e01",
+      "from": "dani-main-theme-adopted",
+      "to": "reality-feedback-loop",
+      "relation": "prioritizes",
+      "scope": "ダニ対策を現実改善とFeedbackの機会として採用した意味。成果実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "dani-s01",
+          "dani-s02"
+        ]
+      }
+    },
+    {
+      "id": "reality-e02",
+      "from": "morning-timeline-20260919",
+      "to": "bed-cleaning-report",
+      "relation": "contains",
+      "scope": "大まかな時系列の中に清掃報告が含まれる。ガムによる因果や固定手順を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s01"
+        ]
+      }
+    },
+    {
+      "id": "reality-e03",
+      "from": "b-gate-field-report-20260919",
+      "to": "nap-after-oral-care-plan",
+      "relation": "motivates",
+      "scope": "眠気・疲労を受けて歯磨き後の昼寝と回復を希望した。実施・効果ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s03"
+        ]
+      }
+    },
+    {
+      "id": "reality-e04",
+      "from": "parallel-household-action-report",
+      "to": "selective-success-reporting",
+      "relation": "motivates",
+      "scope": "順調な実行を逐次報告せず問題解決に集中する理由を保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "reality-s04",
+          "connect-s03"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -939,6 +1309,61 @@
           "token-s03"
         ]
       }
+    },
+    {
+      "id": "dani-q01",
+      "subject_refs": [
+        "dani-main-theme-adopted",
+        "bed-cleaning-report"
+      ],
+      "question": "困りごとの原因、各対策の実施条件、変化と継続負担のうち、次の判断に必要な情報は何か。",
+      "scope": "テーマ採用・清掃報告を原因確定や対策効果へ昇格しない。全項目の質問を開始条件にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "dani-s01",
+          "reality-s01"
+        ]
+      }
+    },
+    {
+      "id": "wake-q01",
+      "subject_refs": [
+        "mint-wake-observation",
+        "mint-wake-duration-uncertain",
+        "walking-connect-friction"
+      ],
+      "question": "徐々の覚醒、実際に行動へ移れる時点、後の体調の関係と、現在適した起床方針は何か。",
+      "scope": "過去のカフェイン一択化の成功を消さず、ミントを完全無害・最終採用済みとしない。新しい試行は自動開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "wake-s01",
+          "wake-s02",
+          "wake-s03",
+          "wake-s04",
+          "reality-s01",
+          "reality-s02"
+        ]
+      }
+    },
+    {
+      "id": "b-gate-q01",
+      "subject_refs": [
+        "b-gate-field-report-20260919",
+        "nap-after-oral-care-plan"
+      ],
+      "question": "13:00頃の報告後に歯磨き・昼寝・回復がどう進み、支援はどう役立ったか。",
+      "scope": "未報告の結果を成功にも失敗にも埋めない。このUnknownは05 Bootの停止条件ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "reality-s03"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -984,6 +1409,26 @@
           "work-s05"
         ],
         "previous_record_cutoff": "開始時の締切理論・Token Reset問題のSeed化、および成功報告の意図的省略をTask Mode Systemと長期記憶へ保持する重要性を示したHuman入力まで。ChatGPT長期記憶への書込み・実地効果を先取りしない。"
+      },
+      {
+        "revision": 4,
+        "reason": "04→05の受入れ判断に効く、テーマ採用と現場報告の差分を保存。初期Stateの未観測を後続報告へ巻き戻さず、未確認の実行・効果は保持する。",
+        "source_refs": [
+          "continuity-s01",
+          "dani-s01",
+          "dani-s02",
+          "dani-s03",
+          "wake-s01",
+          "wake-s02",
+          "wake-s03",
+          "wake-s04",
+          "reality-s01",
+          "reality-s02",
+          "reality-s03",
+          "reality-s04",
+          "transition-s01"
+        ],
+        "previous_record_cutoff": "人間–AI協働の問題解決、休日のAction Modeと利用枠余剰、Future AIの深化・進化を妨げないSkill設計のHuman入力、およびその計画の実行承認まで。今回の実装結果や応答比較は先取りしない。"
       }
     ],
     "coverage_review": {
@@ -1017,6 +1462,21 @@
         "problem-solving-skill-possibility",
         "future-ai-skill-discretion",
         "problem-solving-plan-authorized"
+      ],
+      "reality_node_refs": [
+        "source04-transition-success-report",
+        "dani-main-theme-adopted",
+        "reality-feedback-loop",
+        "mint-wake-observation",
+        "mint-tolerability-report",
+        "mint-first-caffeine-reserve",
+        "mint-wake-duration-uncertain",
+        "morning-timeline-20260919",
+        "bed-cleaning-report",
+        "walking-connect-friction",
+        "b-gate-field-report-20260919",
+        "nap-after-oral-care-plan",
+        "parallel-household-action-report"
       ]
     }
   }
