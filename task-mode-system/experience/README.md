@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.4"
+version: "0.3.5"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Index Ark27:04 revision 4: selected Reality reports and time boundaries for the authorized 04 to 05 continuation."
+updated_reason: "Index Ark27:05 quality-preservation correction, reasoning-wait start focus, and authorized memory/profile transfer without claiming account writes."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-20"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.4"
+updated: "2026-09-21"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.5"
 ---
 
 # 経験とSourceの索引
@@ -19,7 +19,7 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 
 本書では収録済み経験の範囲と判断の入口を把握し、現在の問いに関係する原本へ進む。継続AIは確認済みの経緯を再利用できる。短い案内で適用条件やEvidenceを解決できなければ、対象NodeのSource・関係するEdge・Correction・Unknownへ戻る。明示された全文読解条件は省略しない。
 
-索引は正本への案内であり、Taskの最新状態を二重管理しない。Node IDやSource IDは記録内で有効である。`ark27-02:task-records / node:new-after-order / source:s24`のように、記録IDと種別を添えて参照する。本文中のR01／R02／R03／R04は、この索引内の短縮名であり新しい外部IDではない。
+索引は正本への案内であり、Taskの最新状態を二重管理しない。Node IDやSource IDは記録内で有効である。`ark27-02:task-records / node:new-after-order / source:s24`のように、記録IDと種別を添えて参照する。本文中のR01／R02／R03／R04／R05は、この索引内の短縮名であり新しい外部IDではない。
 
 ## 2. 原本と収録範囲
 
@@ -62,6 +62,14 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 - revision 4の追加：03→04のHuman成功評価、ダニ対策のテーマ採用とFeedback方針、ミントガムの選択観察、2026/09/19の朝の時系列、13:00頃のB-Gate名称を含む実地入力、対話と並行する生活行動の総括、04→05準備の実行承認。
 - 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2・3更新日2026-09-19、revision 4更新日2026-09-20を区別する。日付・時刻を明示した入力と、未提示の各発言を分け、timezoneは補完しない。
 - 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。既存Source・Node・Unknownは保持する。経験原本の追加だけでThreadのREADME／handoff／stateが更新されたとは扱わず、移行準備のState同期は別Artifactの責務とする。
+
+### 2.5 R05 — Ark27:05：AI回答品質・開始時の接続・メモリ継承
+
+- [原本](../../ark-project/ark27/ark27-05/task-records.json)
+- record_id：`ark27-05:task-records`、revision：`1`、format_version：`v001`。
+- coverage：`selected_thread_material`、`thread_complete:false`。2026-09-21は記録作成日であり、未提示の個別発言日時を意味しない。
+- 主な内容：開始時への重点、1秒／0.1秒へのHumanの着眼、AI言語化のSeed価値、回答側の抑制方向への明示Correction、推論待ちのHuman行動、交互ループへの本人評価、品質原則の長期記録、メモリ・プロフィール要求、Plan-only後の実行承認と中断後の継続指示。
+- 境界：旧AI文面はHumanの引用として保存する。『AI回答直後』という原文とQuery送信直後というAI解釈、指示採用と実地効果、文面準備とメモリ／設定への書込みを分ける。Thread全体の網羅・独立AI読解成功・生活改善を宣言しない。
 
 ## 3. 問いからSourceへ
 
@@ -136,6 +144,14 @@ R04の `source04-transition-success-report`（Source `continuity-s01`）は03→
 
 `b-gate-field-report-20260919`・`nap-after-oral-care-plan`（`reality-s03`）は、9/19 13:00頃に名称を含むHuman入力を実際に受け取ったことと、歯磨き後の昼寝の予定を所有する。R02の名称・辞書登録とは段階が違い、選択UI、自動検知、実行、回復、効果は未確認。`parallel-household-action-report`（`reality-s04`）は、掃除・洗濯・ダニ対策が対話の裏で進むという総括報告を保持する。どちらも次Threadの現在の身体状態や全件実績へ変換しない。
 
+### 3.13 行動開始を促すためAI回答を短くしてよいか、メモリへ何を渡すか
+
+R05の `rejected-output-adjustment`・`quality-correction`・`human-side-change-target`・`reasoning-wait-focus` とSource `quality-s01`–`quality-s03` を読む。Humanが旧AI提案を拒否し、AIは最善を尽くしたままHuman側の開始と接続を改善する方向へ訂正したことを保持する。`corrects` は新Correctionから旧提案へ向き、旧提案はCurrent指示ではない。
+
+`durable-quality-principle`（`quality-s04`）はモデル交代後も保持するHumanの長期原則。`language-as-seed` と `unseen-value-preservation` ではHumanの価値表明とAIの解釈を分ける。`answer-after-wording`・`query-send-interpretation` は原文と時間座標の解釈を分け、`start-effects-unverified` は未観測の行動・効果を補わない。
+
+`memory-profile-request`・`quality-execution-authorized`、Source `memory-s01`・`execution-s01`・`resume-s01` は今回の追加要求と実行範囲。`memory-write-unverified`・`settings-write-unverified` を合わせて読む。共通対応は[運用 §4.2–4.3](../operation.md)、貼付・保存依頼に使える文面は[メモリ・設定へのInterface](../interfaces/ai-quality-personalization.md)へ。
+
 ## 4. 共有仕様と理論の所有資料
 
 - 記録の意味・更新・Evidence：[Task Records共有ガイド](../../formats/task-records/README.md)、準備時blob `1642bd39ebdb942cb9bab36531a6d078536166a8`、版`v002-candidate`。
@@ -155,4 +171,4 @@ R04の `source04-transition-success-report`（Source `continuity-s01`）は03→
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.4
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.5
