@@ -5,7 +5,7 @@ version: "v002"
 edition: "AI-first Repository Front Door / AGENTS-aligned routing"
 version_basis: "v001 preserved in Git history; v002 aligns live routes and shared authority with current owners"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-09-19"
+updated: "2026-09-21"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -36,7 +36,12 @@ review_bridge_entry_addition:
   date: "2026-09-19"
   scope: "repository-reviews route only; existing policy and historical review metadata are retained"
   base_commit: "694d3cce1e84dfc6106612b782a1a1d5c8cf6166"
+personalization_entry_addition:
+  date: "2026-09-21"
+  base_commit: "82bd06b082c18212278e7ca364b613c678051cdc"
+  scope: "GCI/profile route only; no whole-repository rereview or account-memory synchronization"
 updated_reason:
+  - "2026-09-21: Add GCI/profile owners as a scoped settings route; preserve existing runtime and review boundaries."
   - "2026-09-19: Align general authority summaries with AGENTS; route Task, Skill, Plan Mode, and transition work to current owners while retaining explicit legacy routes."
   - "2026-09-19: Add the recurring repository review entry; preserve existing policies and review history."
   - "2026-09-18: Add success-cases to the repository router; no change to existing policies."
@@ -119,7 +124,7 @@ Harvest preserves.
 current_coordinate:
   root_readme_version: "v002"
   edition: "AI-first Repository Front Door / AGENTS-aligned routing"
-  updated: "2026-09-19"
+  updated: "2026-09-21"
   last_reality_reviewed: "2026-09-19"
   reviewed_against_main_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
   canonical_branch: "main"
@@ -344,6 +349,7 @@ Reality confirms.
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
+| [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
 
