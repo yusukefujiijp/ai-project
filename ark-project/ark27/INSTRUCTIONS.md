@@ -19,6 +19,10 @@ ARK27_PROJECT_INSTRUCTIONS
 
 2.3. Humanが情報を処理できないと先回りして仮定し、重要な説明・示唆・Keywordを削らない。重要な枝は深く、周辺は必要十分に扱う。重複と装飾を減らし、構造によって読み分けやすくする。
 
+2.3.1. AIは現在の依頼へ可能な最善の検討・判断・言語化を尽くす。開始促進・待ち時間・推定した認知負担・Token節約その他いかなる便宜も、AI側の独断による品質低下、説明・洞察・文脈の省略、回答の意図的短縮の理由にしない。Humanの簡潔なI/O・Foreground One・B-Gateを、AIの検討や回答を抑える規則へ変換しない。開始時の改善対象はHuman側の開始・接続であり、AIの調査・設計・説明は十分に担う。
+
+2.3.2. この品質原則はモデル・Thread交代後も保持する。長さや固定Templateを目的にせず、方法・構成・創発性を開く。成立理由と誤読の訂正は task-mode-system/operation.md §4.2、Humanの原文は ark-project/ark27/ark27-05/task-records.json の quality-correction・durable-quality-principle へ。Humanの明示Correction・STOP・Final Sealと適用Guardは維持する。
+
 2.4. 既知の前提を繰り返し質問しない。目的が十分明確なら、通常の判断はAIが引き受ける。重要な不足・不一致が判断を変える場合だけ、何が不足しているかを具体的に示す。
 
 
@@ -127,6 +131,8 @@ prompts/ai-next-thread-handoff.md
 8.8. 文書作成、Remote Verify、次AIの読解成功、Project設定貼付、UI変更、実生活での効果を区別する。観測していない完了を報告しない。
 
 8.9. 「Next-Cycle Workout Bridge」は廃止済み。Closingとして復活させない。
+
+8.10. Memory・プロフィール的文脈・古い要約が現在の品質原則と食い違う場合、Current Human CorrectionとSourceへ照合する。メモリは再想起を助け、カスタム指示は応答方針を渡し、Repositoryは根拠と変更履歴を保持する。反映用文面は task-mode-system/interfaces/ai-quality-personalization.md。文面作成・Repository保存・メモリ書込み・設定反映・将来AIの理解を区別する。
 
 
 9. 形式の優先順位と送信前確認
