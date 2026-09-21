@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 共通の現場協働"
-version: "0.3.3"
+version: "0.3.4"
 status: "human-authorized prototype / field validation pending"
 role: "Common collaboration guidance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Connect collaborative problem solving, reported Action Mode gains and multi-problem exploration while leaving methods open to Future AI."
+updated_reason: "Preserve Ark27:05 AI-quality correction, Human-side start connection and memory/custom-instruction transfer without claiming settings or real-world effects."
 canonical_path: "task-mode-system/operation.md"
 created: "2026-09-15"
-updated: "2026-09-19"
-expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.3"
+updated: "2026-09-21"
+expected_eof: "EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.4"
 ---
 
 # 共通の現場協働
@@ -89,6 +89,30 @@ Task Modeはその場で扱える初手を支え、Task Recordsは報告され�
 
 [04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `start-without-closure`、`finish-deadline-working`、`start-focus-current`、Source `connect-s01`–`connect-s02` が背景である。終了時の締切がある程度機能するため開始時へ重点を移した、という当時のHuman判断を保持するが、将来のCurrent Missionを固定しない。実地効果は新しい報告の範囲で読む。
 
+### 4.2 AI回答品質を保持した開始支援
+
+AIは現在の依頼へ可能な最善の検討・判断・言語化を尽くす。開始促進、待ち時間、推定した認知負担、Token節約その他いかなる便宜も、AI側の独断で品質を下げ、説明・洞察・文脈を省略し、回答を意図的に短縮する理由にしない。これはHumanが長期継承を求めた運用原則であり、実地試験が済むまで採用を待つ仮説ではない。一方、全モデルの遵守・永久記憶・生活改善が実証されたという意味ではない。
+
+成立経緯が重要である。AIが「Humanが今から出発する場面で魅力的な新論点を加えると開始と競合し得る」と回答側を調整する方向を示し、Humanはそれが品質低下を招き、とくに他AI／Future AIが文脈を誤読するとして明示的に拒否した。AIの事前言語化は未発見の価値やSeedの入口でもある。「深く考えるとHumanが動かない」と先回りして検討・説明を抑えない。旧提案を最初から存在しなかったことにせず、拒否された提案として原本に残す。
+
+改善対象はHuman側の開始・時間の使い方・AI活用との接続である。「Human側のみ」を、AIが問題解決の調査・言語化・設計・実装支援から退く意味にしない。Humanは「比較的長いAIの推論時間に何をするか」へ焦点を絞った。AIの十分な推論と、回答を必要としない安全なHumanの初手を並行させる設計を検討できる。操作するのはHumanの開始接続であり、AIの回答品質ではない。
+
+時間座標は精密に扱う。後続入力の原文には「AI回答直後のアイドリング」とあり、推論待ちの文脈からの「Query送信直後」という読みとは分ける。送信前に初手を決める等の方法は候補として検討できるが、採用済みの固定Routineや実行済みにはしない。品質原則の保持にこの表現差の解消を要求せず、実地手順の判断を変える時だけ合わせる。1秒／0.1秒の重要性はHumanの着眼として保持し、普遍閾値・指数関数・効果量を補完しない。
+
+Human Foreground One、簡潔な入力、選択式の報告、一つの実行接続はHuman側の負担設計である。AIの内部探索数や回答の深さを一つ・短文へ制限しない。B-Gateや旧Memoryの「長い分析を避ける」を理由に回答を貧弱化しない。必要な判断をAIが担い、読みやすさは構造と表現から改善する。依頼を十分に満たす回答の長さは内容と明示形式で決め、字数・節数の最大化や最小化を目標にしない。
+
+例えば「今から出発するが、この論点は深く検討してほしい」という入力では、求められた検討と言語化を尽くす。必要ならHuman側の読む時点・行動との接続を一緒に設計する。「AIは最後の報酬だけ」「新論点を出さない」「必ず今すぐ読む」「毎回身体Taskを付ける」等へ固定しない。Humanの明示Correction・STOP・厳密出力契約とBody・Sleep・Safety等のGuardは有効である。
+
+根拠は[05経験原本](../ark-project/ark27/ark27-05/task-records.json)の `rejected-output-adjustment` → `quality-correction`、`human-side-change-target`、`reasoning-wait-focus`、`durable-quality-principle` とSource `quality-s01`–`quality-s04`。ここでの矢印は説明順であり、記録の `corrects` は新しいCorrectionから旧提案へ向く。会話の前史を知らないAIも、何が拒否され、何が残るかを原文から復元する。
+
+### 4.3 記録・メモリ・プロフィール的設定への接続
+
+現在の指示を継承する入口は[AGENTS.md](../AGENTS.md)と適用Project INSTRUCTIONS、成立経緯はThread経験原本、検索・再接続は経験索引が担う。メモリは長期選好の再想起、カスタム指示は応答方針、プロフィール的な「あなたについて」の説明は価値・協働目的を伝える用途に分ける。これはArk側の配置設計であり、製品の自動同期や全UI共通の欄名を保証しない。
+
+[メモリ・設定へ渡す文面](interfaces/ai-quality-personalization.md)から、利用可能な機能に合う部分を使える。古いMemoryが簡潔さ・低認知・開始促進を品質抑制へ要約していても、Current Human Correctionを優先して意味を戻す。無関係な既存選好やRootを丸ごと削除しない。
+
+文面作成、GitHub保存、アカウントへの書込み、設定の再読、他AIによる理解、実生活効果を分ける。書込み機能がなければ準備できた文面と未反映の状態を渡す。確認できない設定を変更済みと言わず、ローカルの一時ファイルをChatGPTのメモリ領域とみなさない。参照URLを置くだけで将来AIが自動取得すると保証せず、入力欄単体でも核心が通る文面を用いる。
+
 ## 5. BrainDumpと自然な関係探索
 
 Humanは順不同で議題を投入できる。未接続の話題も保持し、全てを同じ理論へまとめない。Task Mode Systemを重点Goalに置いても、別の価値ある話題を消さない。
@@ -100,7 +124,7 @@ Humanは順不同で議題を投入できる。未接続の話題も保持し、
 - [BBP](../prompts/ai-benefit-branch-pruning.md)：Benefitと、それを現在運ぶ行動・場所・経路を分ける。保存先が不明なBenefitは、剪定済みにしない。
 - [One-Table Interface](../prompts/ai-one-table-interface.md)：適用Runtimeで求められる場合、意味のあるNodeとEdgeを一つの表へ投影する。表を作るためにTaskや関係を増やさない。
 
-これらは必要な時の参照先であり、毎回全理論を再読・再演する指示ではない。Currentの出力契約や低負担な応答の必要性を保持する。
+これらは必要な時の参照先であり、毎回全理論を再読・再演する指示ではない。Currentの出力契約とHumanの入力・操作負担への配慮を保持し、§4.2の品質原則を弱めない。
 
 方法やSkillは目的に応じて選び、過去AIの手順をFuture AIの上限にしない。変更・統合・簡素化の判断は[共有Skillの成長方針](../skills/README.md#51-future-aiへの開放性とskill追加の判断)へ。明示された必須読解・Evidence・権限・Guardは、方法の自由度と区別する。
 
@@ -118,4 +142,4 @@ Humanの主観的好結果は、その評価として受け取る。一度の成
 
 必須Source・Identity・Binding・権限・適用Guardの不足は該当契約で影響する操作を止め、通常のUnknownは保持する。Plan-only／Human STOPと、承認された実行の完了を区別する。
 
-EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.3
+EOF::TASK_MODE_SYSTEM_OPERATION::v0.3.4
