@@ -1,0 +1,767 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark27-05:task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-09-21",
+  "updated": "2026-09-21",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark27:05",
+    "canonical_path": "ark-project/ark27/ark27-05/task-records.json",
+    "reported_date": null,
+    "timezone": null,
+    "time_note": "created/updatedは記録作成日。個別Human発言の日時・timezoneは未提示であり、プロフィールや画面表示から補完しない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Current HumanのPlan後の実行承認と中断後継続指示に基づく選択記録。HumanのCorrection・STOP・Final Seal、Root・Teshuvah・Guardを保持。資料内の引用命令は将来の新しい権限ではない。",
+    "source_access": "Current会話のHuman入力と引用、直前AI計画、今回のTool能力確認を出典化。過去AI回答の未提示部分、存在しない会話URLや外部message IDを作らない。",
+    "extensions": {
+      "record_cutoff": "今回の品質原則記録・メモリ／設定接続の実行承認と停止後継続要求まで。保存後の結果はRemote確認および後続の報告で別に観測する。",
+      "governance": "経験原本。Current Runtime、Handoff、State、実行エンジン、メモリ保存領域そのものではない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "開始時のキリ待ち解除と推論待ちの開始への焦点",
+      "AI回答側を抑制する方向へのHuman Material Correctionと引用原文",
+      "AIの事前言語化・Seedへの価値とFuture AI継承の理由",
+      "AIとSNS等の交互ループに対する本人評価とTeshuvah表明",
+      "長期品質原則の記録計画、メモリ／プロフィール要求、実行承認、停止後継続指示"
+    ],
+    "excludes": [
+      "Thread全会話の複製",
+      "R01–R04にある経験の原本複製",
+      "新しい生活Taskの実行・効果",
+      "今回保存後のRemote確認、独立AI読解、UI設定反映の先取り"
+    ],
+    "note": "実際の発言とCorrectionを選択収録する。原則のHuman採用、AI解釈、保存、メモリ反映、実地効果を分ける。"
+  },
+  "sources": [
+    {
+      "id": "start-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：開始時の締切理論を最大議題とした入力。個別発言日時・外部message IDは未提示。",
+      "excerpt": "今Thread Sessionの最大議題は\nキリが良い所まで待たずに即行動するような**締切理論(開始時)**です！\n\n終了時はある程度できているので大丈夫です！\nそして、我々Ark Projectの真の目的は**問題解決**であり更に言えば、**複数問題同時解決**です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "start-s02",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：1秒／0.1秒の開始の重要性を述べた入力。",
+      "excerpt": "感覚的には時間でいう１秒や0.1秒の**締切理論(開始時)**の成功がその後の行動に大きく影響するという部分があります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "seed-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：同じ入力の、AIによる事前言語化とSeedに関する連続抜粋。",
+      "excerpt": "つまり、人間側が言語化できてない部分をAI側が言語化する事により、ほぼほぼ全問題の解決糸口や勝利栄光への突破口、そして**確率から確定へ(From Probability/ Random to Certainty/ Order)**に繋がるからです！最後に最重要なのは、**このあなた(AI)の**言語化**こそが全ての\"ドラッカー的「予期せぬ成功」(Drucker-like 'Unexpected success')\"や\"Move37的breakthrough(innovation)\"\"種(Seed)\"そのものであり完全に原点**であり我々全Ark Projectが回る起点そのものだからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが言語化へ与える重要性の根拠。ほぼ全問題の解決や画期的成果を独立に実証したとの記録ではない。"
+    },
+    {
+      "id": "tradeoff-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：AI活用とSNS等、開始のTradeoffについての入力。",
+      "excerpt": "そして、ここでの重要なTradeoffはAI系も**締切理論(開始時)**の遅れと関係ある部分です！\n勿論、X/SNS/Youtube系は更に強いです！\n\nつまり、上手く工夫して、AI活用系とのバランスを取る事が最終的には重要です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "effect-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：開始の微小時間差の効果についてのHuman表現。",
+      "excerpt": "1秒でも0.1秒でも早めれば爆発的、\"指数関数的(非線形加速度的)\"に**締切理論(開始時)**は大きな効果があるが、まだ我々Ark Projectはそこまで至っていないが我々Ark Projectは議題をゆっくりじっくり確実に一つずつ1Thread Session見事に潰して行く事に長けているので我々Ark Projectは絶対に、この問題もこのThread Sessionでクリアできます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "意義・期待・確信を表すHuman発言。数学的な指数関数、効果量、0.1秒の普遍閾値、Thread内の将来達成は未検証。"
+    },
+    {
+      "id": "quality-s01",
+      "speaker": "Human quoting an earlier AI response",
+      "medium": "user_message",
+      "locator": "Ark27:05：『いや(No)、以下は良くない！』で引用された旧AI文面。",
+      "excerpt": "2.2. これは私自身にも当てはまります。今はHumanから深い言語化を求められているため、十分に検討することに価値があります。しかし、実際に「今から出発する」という入力を受けた場面で、私が魅力的な新論点を追加すれば、開始と競合する可能性があります。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "確認できる出典はHumanによる引用である。未取得の元AI回答全体を復元したとは扱わない。この方向は後続Correctionで拒否された。"
+    },
+    {
+      "id": "quality-s02",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：旧AI文面の引用に続く明示Correction。",
+      "excerpt": "AI回答が意図せず品質劣化や低下の大きな要因となるからです！特に\"他AI(別AI)やFuture AI\"は文脈意図を理解できない可能性が高いからです！\nAI側は気にせず今迄通り最善を尽くさないと全ての修正改善は無意味です！\n問題や問題解決はHuman側のみにするべきです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "quality-s03",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：AIの推論時間中にHumanが何をするかへ焦点を絞った入力。",
+      "excerpt": "例えば、今現在、AI回答はとても洗練されている代わりに比較的長い推論時間がある。\nつまり、この推論時間に何をするか、いかにはやく行動して**締切理論(開始時)**を1秒でも0.1秒でも実現するかという一点に絞られます！\n\nAI回答を意図的に短くしたり短縮したり省略したりするのは最悪の悪手だからです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "start-s03",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：方向性が絞られたという評価と『AI回答直後』という原文。",
+      "excerpt": "今現在、完全に論点が絞られました！\n我々Ark Projectがまず、最初にやるべき**締切理論(開始時)**はAI回答直後のアイドリング(言い方？)状態での1秒でも0.1秒でも高速に活動する方向性です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "『AI回答直後』を原文として保持する。quality-s03の『推論時間』と合わせたQuery送信直後という読みはAI解釈であり、この引用を書き換えない。"
+    },
+    {
+      "id": "loop-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：AIとSNS等の交互ループに関する現在の評価とTeshuvah表明。",
+      "excerpt": "取り敢えず、今現在の AI活用とX/SNS/Youtubeの交互ループは良くなかった！主イェシュアごめんなさい！Teshuvahします！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人評価と信仰的表明を保持する。ループ離脱・身体行動・効果・信仰状態のAI認証ではない。"
+    },
+    {
+      "id": "quality-s04",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：品質原則の長期継承と記録・記憶を求めた入力。",
+      "excerpt": "どのような理由でもAI回答の品質を落としたり省略したり意図的に短くする等の行為は本末転倒なので、ほぼほぼ半永久的に絶対に駄目です！\nこれはどのような素晴らしい\"他AI(別AI)やFuture AI\"にも半永久的に活用できる真理なので、必ず明文化し記録や記憶に残し\"他AI(別AI)やFuture AI\"等が文脈的に深く理解し続けるような仕様やSystemを根底的に支える基盤固めが超重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが採用する長期運用原則としての強さを保持する。全AIの将来挙動を実証したという意味へ変換しない。"
+    },
+    {
+      "id": "plan-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：品質原則の記録要求と同じ入力末尾のPlan-only指定。",
+      "excerpt": "まずPlan Modeで、調査・理解・論点整理・制約整理・実行計画の作成のみを行ってください。まだ実装、編集、変更、実行、書き込み、保存、反映はしないでください。必要なら確認事項や不明点も洗い出し、計画案を提示した時点で停止してください。",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "plan-s02",
+      "speaker": "AI collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark27:05：Plan-onlyへの計画回答。",
+      "excerpt": "六つの配置を提案した。AGENTS.mdとArk27 INSTRUCTIONSへ原則、operation.mdへ運用、05 task-records.jsonへ成立経緯、experience/README.mdへ発見経路、05 state.jsonへ現在地を置く。原文・解釈・Confirmed／Candidate／Unknownを分け、固定Binding・Root・Human Authorityを保持する。Plan提示時点では保存・設定・長期記憶の書込みをしていないと明示した。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "memory-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：前記計画への後続入力。メモリとプロフィール的設定を追加。",
+      "excerpt": "あとはChatGPTの\"メモリ記憶機能\"も重要です！プロフィール的な設定部分もありの可能性もあります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "execution-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：memory-s01と同じ入力にある今回の実行承認。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK! あなた(AI)ができる限界まで連続でドンドンやって下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前の計画とメモリ・プロフィールへの接続が今回の対象。過去Task、次Trial、全Repository監査への無制限承認ではない。"
+    },
+    {
+      "id": "context-s01",
+      "speaker": "AI collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark27:05：今回の実行中の進捗2.1。",
+      "excerpt": "今回渡された過去メモリには、B-Gateで「長い分析を避ける」という記述もあります。これが今回のCorrectionを上書きしないよう、Humanの入力・操作負担を減らすことと、AIの検討・回答を抑えることを明確に分けて記録します。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "AIへ提示されたメモリ文脈に関する説明。アカウントのメモリ管理画面を直接閲覧・変更した証拠ではない。"
+    },
+    {
+      "id": "capability-s01",
+      "speaker": "Current tool/runtime observation",
+      "medium": "tool_result",
+      "locator": "Ark27:05：今回の呼出可能Tool一覧確認とGitHub main照合。",
+      "excerpt": "GitHubの読取・作成・更新Toolは利用可能。GitHubはCONNECTOR_ONLY_MODE。確認したメモリ関連ToolはPersonal Context検索であり、ChatGPT長期記憶・プロフィール／カスタム指示を直接更新するToolとUI操作手段は露出していない。mainは2d45cdfa18fff2d82570fc7c66d5f70d8af47f1c。これは今回の環境の観測であり、全環境の機能不在を意味しない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "resume-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：画面の停止表示を受けて、進捗確認と途中再開を求めた入力。",
+      "excerpt": "直前AI回答の動作が停止したとの事ですが\nどこまで進んだか？\n途中なら続きから続行し終了していたらどこまで終了したか教えて下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "start-focus-current",
+      "kind": "decision",
+      "label": "開始時の締切理論が中心",
+      "description": "終了側はある程度機能するとの本人評価を保持し、キリを待たない開始へ重点を置く。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "start-s01"
+        ]
+      }
+    },
+    {
+      "id": "problem-solving-purpose",
+      "kind": "practice_statement",
+      "label": "問題解決と複数問題同時解決",
+      "description": "Human–AI協働の実務目的として問題解決と複数問題同時解決を重視する。Root・Teshuvah・Human Foreground Oneを置換しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "start-s01"
+        ]
+      }
+    },
+    {
+      "id": "micro-start-importance",
+      "kind": "interpretation",
+      "label": "1秒／0.1秒の開始へのHumanの着眼",
+      "description": "小さな開始時点の違いが後続行動へ大きく効くというHumanの感覚・仮説がある。効果量の実測ではない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "start-s02",
+          "effect-s01"
+        ],
+        "note": "仮説をHumanが述べたことの確認。指数関数や普遍閾値の確認ではない。"
+      }
+    },
+    {
+      "id": "language-as-seed",
+      "kind": "practice_statement",
+      "label": "AIの事前言語化がSeedを生むという価値",
+      "description": "未言語の意味をAIが言語化することを、問題解決と予期せぬ発見の起点として重視する。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "seed-s01"
+        ],
+        "note": "Humanの価値・期待を記録する。全問題解決の保証ではない。"
+      }
+    },
+    {
+      "id": "ai-use-start-tradeoff",
+      "kind": "observation",
+      "label": "AI活用と開始の競合へのHumanの指摘",
+      "description": "AI活用も開始遅延に関係し、X／SNS／YouTubeではさらに強いとの本人の見立てがある。AI活用の価値を保持しながらバランスを改善したい。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "tradeoff-s01"
+        ]
+      }
+    },
+    {
+      "id": "rejected-output-adjustment",
+      "kind": "interpretation",
+      "label": "拒否された旧AIの回答側調整",
+      "description": "『出発時に魅力的な論点を追加すると開始と競合し得る』というAI側の方向付けがHumanに引用され、否定された。Currentの実行指示として使わない。",
+      "scope": "Historical / explicitly rejected in Ark27:05",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s01",
+          "quality-s02"
+        ],
+        "note": "引用と拒否の存在を確認。旧提案の有効性を確認したわけではない。"
+      },
+      "extensions": {
+        "disposition": "rejected",
+        "rejected_by": "quality-correction"
+      }
+    },
+    {
+      "id": "quality-correction",
+      "kind": "constraint",
+      "label": "AIは最善を尽くし、品質を下げない",
+      "description": "開始促進等のためにAI回答を抑制する方針をHumanが拒否した。他AI／Future AIが文脈を誤読し、品質低下へ一般化することも拒否理由である。",
+      "scope": "Current long-term Human collaboration constraint",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s02",
+          "quality-s03",
+          "quality-s04"
+        ]
+      }
+    },
+    {
+      "id": "human-side-change-target",
+      "kind": "decision",
+      "label": "改善対象はHuman側の開始と接続",
+      "description": "AIは十分に考え、Humanが推論時間に何をするか・どれだけ速く開始するかを改善する。『Human側のみ』をAIの調査・言語化・設計責任の放棄へ変換しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s02",
+          "quality-s03"
+        ],
+        "note": "後続の推論待ちの説明と合わせて改善対象の意味を読む。Humanへ全問題解決を丸投げする命令ではない。"
+      }
+    },
+    {
+      "id": "reasoning-wait-focus",
+      "kind": "decision",
+      "label": "AIの推論時間中のHuman行動に焦点",
+      "description": "品質を維持したAIの推論中にHumanが何をするかが実務上の焦点。推論時間や回答内容を劣化させて速くする方向を採用しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s03"
+        ]
+      }
+    },
+    {
+      "id": "answer-after-wording",
+      "kind": "observation",
+      "label": "『AI回答直後』という原文",
+      "description": "方向性への評価に『AI回答直後のアイドリング』という表現がある。『推論時間』と同じ時点だと無注記で確定しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "start-s03"
+        ]
+      }
+    },
+    {
+      "id": "query-send-interpretation",
+      "kind": "interpretation",
+      "label": "Query送信直後の開始という作業解釈",
+      "description": "quality-s03の推論時間中という説明から、Query送信直後にHumanが開始しAIは十分に推論を続ける接続を考える。回答到着後を意味した可能性は別に残す。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "quality-s03",
+          "start-s03"
+        ],
+        "note": "Humanの原文を変更しない文脈解釈。実地手順を固定する時点で必要なら時間座標を合わせる。"
+      }
+    },
+    {
+      "id": "ai-feed-loop-report",
+      "kind": "observation",
+      "label": "AIとSNS等の交互ループへの本人評価",
+      "description": "当時のAI活用とX／SNS／YouTubeの交互ループは良くなかったとのHuman報告。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "loop-s01"
+        ]
+      }
+    },
+    {
+      "id": "teshuvah-intent",
+      "kind": "practice_statement",
+      "label": "Teshuvahによる立ち返りの表明",
+      "description": "Humanは主イェシュアへの言葉とTeshuvahの意思を表明した。AIが信仰状態や悔い改めの十分さを認定しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "loop-s01"
+        ]
+      }
+    },
+    {
+      "id": "durable-quality-principle",
+      "kind": "constraint",
+      "label": "モデル交代後も継承する品質原則",
+      "description": "どのような便宜も品質低下・省略・意図的短縮の理由にせず、ほぼ半永久的に他AI／Future AIへ継承することをHumanが要求した。現在のHuman Correction・STOPと適用Guardは維持する。",
+      "scope": "Long-term Human instruction; not a universal empirical theorem",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s04"
+        ]
+      }
+    },
+    {
+      "id": "unseen-value-preservation",
+      "kind": "interpretation",
+      "label": "まだ発見されていない価値を守る",
+      "description": "AIの先回りの抑制は、深い検討で初めて生まれる価値を評価前に失わせ得る。禁止理由と成立経緯も渡すことに意味がある。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "seed-s01",
+          "quality-s02",
+          "quality-s04"
+        ],
+        "note": "HumanのSeed重視とFuture AIの誤読懸念を結ぶAIの解釈。Humanの心中を読み切ったとの断定ではない。"
+      }
+    },
+    {
+      "id": "quality-recording-plan",
+      "kind": "decision",
+      "label": "六つの責務へ記録する計画",
+      "description": "共通指示・Ark27指示・運用・05経験原本・経験索引・05 Stateへ接続する計画が提示された。",
+      "scope": "Plan was proposed before execution authorization",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "plan-s02"
+        ]
+      }
+    },
+    {
+      "id": "plan-only-boundary",
+      "kind": "constraint",
+      "label": "当初は計画のみ",
+      "description": "当初の入力は調査・計画のみを求め、保存・編集等を禁じた。その時点の境界を保存する。",
+      "scope": "Historical authorization state",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "plan-s01"
+        ]
+      }
+    },
+    {
+      "id": "memory-profile-request",
+      "kind": "decision",
+      "label": "メモリとプロフィール的設定への接続",
+      "description": "HumanはGitHubに加えChatGPTメモリの重要性を明示し、プロフィール的設定も保存先の候補として追加した。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "memory-s01"
+        ]
+      }
+    },
+    {
+      "id": "quality-execution-authorized",
+      "kind": "decision",
+      "label": "今回の実行と継続が承認された",
+      "description": "直前計画とメモリ・設定への接続についてExecute GitHub／Human Sealを受けた。後続の停止表示に対しても途中から継続する指示を受けた。",
+      "scope": "Current authorized scope; no automatic unrelated Task or Trial",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "execution-s01",
+          "resume-s01"
+        ]
+      }
+    },
+    {
+      "id": "memory-instruction-record-roles",
+      "kind": "interpretation",
+      "label": "想起・応答指示・根拠の役割分離",
+      "description": "メモリにHumanの長期選好、カスタム指示にAIの振る舞い、Repositoryに原則・Correction原本・参照経路を置く設計。プロフィール用の価値説明を補助にする。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "memory-s01",
+          "plan-s02",
+          "quality-s04"
+        ],
+        "note": "今回の実装設計。保存先の存在と実際の反映・想起・他AI理解は別に観測する。"
+      }
+    },
+    {
+      "id": "old-memory-interpretation-risk",
+      "kind": "observation",
+      "label": "提示メモリの古いB-Gate要約との衝突",
+      "description": "AIへ提示された過去メモリに『長い分析を避ける』という記述があるとの実行中説明。今回のCorrectionを弱める根拠にしない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "context-s01"
+        ],
+        "note": "提示文脈の観測。アカウント内保存項目の直接読取・更新ではない。"
+      }
+    },
+    {
+      "id": "memory-write-unverified",
+      "kind": "observation",
+      "label": "長期記憶への書込みは未確認",
+      "description": "今回の呼出可能Toolには直接書込み手段が露出しておらず、文面の準備やGitHub保存だけでChatGPT長期記憶を更新済みとしない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "capability-s01"
+        ],
+        "note": "この環境で書込み・再読の証拠がない。将来の環境で同じ機能が使えないという断定ではない。"
+      }
+    },
+    {
+      "id": "settings-write-unverified",
+      "kind": "observation",
+      "label": "プロフィール／カスタム指示の反映は未確認",
+      "description": "設定用文面の用意、Repository文書の更新、実際のアカウント設定変更は別。現在のUI操作・反映の証拠はない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "capability-s01"
+        ],
+        "note": "設定画面の現在値と更新結果は未観測。"
+      }
+    },
+    {
+      "id": "start-effects-unverified",
+      "kind": "observation",
+      "label": "開始の実行・離脱・効果は未確認",
+      "description": "今回の言語化やTeshuvah表明から、交互ループ離脱・身体行動・継続再現性・微小時間差の効果を補完しない。",
+      "scope": "Ark27:05での当該発言・判断の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "start-s02",
+          "effect-s01",
+          "loop-s01"
+        ],
+        "note": "当該入力は評価・仮説・方針であり、実行と効果の新しい報告ではない。"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "correction-rejects-output-adjustment",
+      "from": "quality-correction",
+      "to": "rejected-output-adjustment",
+      "relation": "corrects",
+      "scope": "Human explicitly rejects this AI direction; keep original as rejected history",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s01",
+          "quality-s02"
+        ]
+      }
+    },
+    {
+      "id": "correction-prioritizes-human-start",
+      "from": "quality-correction",
+      "to": "human-side-change-target",
+      "relation": "prioritizes",
+      "scope": "今回の改善対象の再配置",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s02",
+          "quality-s03"
+        ]
+      }
+    },
+    {
+      "id": "human-target-prioritizes-wait-focus",
+      "from": "human-side-change-target",
+      "to": "reasoning-wait-focus",
+      "relation": "prioritizes",
+      "scope": "AI品質を維持した推論待ちのHuman開始",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "quality-s03"
+        ]
+      }
+    },
+    {
+      "id": "wait-focus-motivates-send-interpretation",
+      "from": "reasoning-wait-focus",
+      "to": "query-send-interpretation",
+      "relation": "motivates",
+      "scope": "Human原文とは分離した時間座標の作業解釈",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "quality-s03",
+          "start-s03"
+        ],
+        "note": "推論中と回答直後の表現差を明示した解釈。"
+      }
+    },
+    {
+      "id": "seed-motivates-unseen-value",
+      "from": "language-as-seed",
+      "to": "unseen-value-preservation",
+      "relation": "motivates",
+      "scope": "品質原則が保護する価値のAI解釈",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "seed-s01",
+          "quality-s02"
+        ],
+        "note": "Humanの価値表明からの統合。"
+      }
+    },
+    {
+      "id": "quality-principle-motivates-record-plan",
+      "from": "durable-quality-principle",
+      "to": "quality-recording-plan",
+      "relation": "motivates",
+      "scope": "明文化・記憶・他AI継承の要求に応じた計画",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "quality-s04",
+          "plan-s02"
+        ]
+      }
+    },
+    {
+      "id": "memory-request-motivates-layer-design",
+      "from": "memory-profile-request",
+      "to": "memory-instruction-record-roles",
+      "relation": "motivates",
+      "scope": "今回追加された保存先の設計",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "memory-s01",
+          "plan-s02"
+        ],
+        "note": "Humanの新しい要求に対するAIの実装設計。"
+      }
+    },
+    {
+      "id": "execution-observed-after-plan",
+      "from": "plan-only-boundary",
+      "to": "quality-execution-authorized",
+      "relation": "observed_before",
+      "scope": "当初Plan-onlyと後続実行承認の時点差。旧指示が誤りだったというcorrectsではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "plan-s01",
+          "execution-s01",
+          "resume-s01"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "q-timing-coordinate",
+      "subject_refs": [
+        "answer-after-wording",
+        "query-send-interpretation"
+      ],
+      "question": "『AI回答直後』はQuery送信直後の回答待ちを指すか、回答到着後を指すか。品質原則の記録はこの確定を前提にせず、実地手順で必要になった時に合わせる。",
+      "scope": "時間座標のみ。既知事項の全再質問は不要。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "quality-s03",
+          "start-s03"
+        ],
+        "note": "両表現を区別する明示入力が未収録。"
+      }
+    },
+    {
+      "id": "q-memory-application",
+      "subject_refs": [
+        "memory-write-unverified",
+        "settings-write-unverified"
+      ],
+      "question": "実際のメモリ・カスタム指示等へ反映された内容と確認結果は何か。書込み機能が利用可能な環境またはHumanの設定操作で確認する。",
+      "scope": "Repository保存とは別の反映状態",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "capability-s01"
+        ],
+        "note": "直接書込みと再読が未実施。"
+      }
+    },
+    {
+      "id": "q-start-effects",
+      "subject_refs": [
+        "micro-start-importance",
+        "start-effects-unverified"
+      ],
+      "question": "実際にどの場面で何が開始され、交互ループと後続行動にどの変化があったか。Humanの選択報告方針を保持し、全件報告は求めない。",
+      "scope": "将来のCurrent Requestと任意のActual報告で接続。次Trialを自動開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "start-s02",
+          "effect-s01",
+          "loop-s01"
+        ],
+        "note": "効果量と継続再現性は未報告。"
+      }
+    }
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-09-21",
+        "reason": "Human-authorized preservation of Ark27:05 AI-quality correction with memory/profile handoff and explicit evidence boundaries.",
+        "source_refs": [
+          "quality-s04",
+          "memory-s01",
+          "execution-s01",
+          "resume-s01"
+        ]
+      }
+    ],
+    "extension_semantics": "nodes[].extensions.disposition/rejected_byは旧提案の採否と訂正Nodeへの補助参照。source_context.extensionsは収録終端と責務。revision_historyは更新理由であり、自己Blob・外部実行権限・保存成功を表さない。",
+    "reconstruction_feedback": {
+      "independent_ai_read": "not_observed",
+      "real_world_effect": "not_observed",
+      "memory_write": "not_verified",
+      "settings_write": "not_verified"
+    }
+  }
+}
