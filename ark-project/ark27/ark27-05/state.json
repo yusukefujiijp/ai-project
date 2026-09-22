@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_05_CURRENT_STATE",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:05",
     "schema_version": "v001",
     "updated_at": "2026-09-22",
-    "update_reason": "Human-authorized 05-to-06 preparation: connect later settings reports, action-connection designs, accepted control-center supplement, ranking intent and bounded execution authority.",
+    "update_reason": "Complete authorized05→06 preparation after remote verification of Target Triad, Domain routing and scoped D03 correction; preserve05 acceptance and all immutable bindings.",
     "authority": "Current Human explicitly authorized the immediately preceding Ark27:05→Ark27:06 preparation plan with Execute GitHub OK / Human Seal OK. This includes necessary record/state/index/support synchronization, target Triad and route verification, but excludes physical archive moves and life trials."
   },
   "identity": {
@@ -105,7 +105,9 @@
       "path": "task-mode-system/experience/README.md",
       "observed_version": "0.3.5",
       "observed_blob": "04f22d0bd1730e4c19e83ce38098dcaa9f83d823",
-      "policy": "Discovery index, not a second original or a permanent version pin."
+      "policy": "Discovery index, not a second original or a permanent version pin.",
+      "current_version": "0.3.6",
+      "current_blob": "96749b14b6181f0941c79532f80d079fdfb7d1f1"
     },
     "self_sha_policy": "DO_NOT_EMBED",
     "entry_policy": "Explicit 05 Handoff owns reception. Earlier chapter01 entry, Source04 initial State and old03 snapshots are historical, not rollback targets.",
@@ -124,7 +126,7 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_ACTION_CONNECTION",
-    "current_coordinate": "Ark27:05の品質原則と設定整備に、後続のHuman成功報告、帰宅後のAction接続案、control-centerの補足受入れと次Threadのランキング希望を接続した。Current Humanは05→06の移行準備計画の実行を承認。今回の同期資料を準備し、06 Triadの作成・Remote検証へ進む段階。",
+    "current_coordinate": "05の後続経験・訂正・補足受入れを同期し、06 README→Remote確認→Handoff→Stateを保存・再取得確認した。Domain入口を06へ同期し、D03の旧04重複案内を限定修正してRemote確認済み。Source05の終端を保存する段階。06自身の再構成・Human UI・アーカイブ実体移動は別で未観測。",
     "current_practical_goal": "AI品質を保持した人間–AI協働による問題解決・複数問題同時解決を継承し、アーカイブ候補を楽しんで比較・選択する次Threadへ、開始時・生活接続の価値と保留も渡す。",
     "latest_source_request": "直前の05→06移行準備計画に対する実行承認。準備・必要な同期・保存・検証・入口整合まで継続する。アーカイブ実体移動は計画の対象外。",
     "improvement_focus": [
@@ -149,7 +151,7 @@
     "bbp_status": "双方Benefitを保持。自宅／屋外の保存先十分性はUnknown。BBP_PRUNING_NOT_READY。",
     "source_04_boot": "Human-reported successful transition and subsequent collaboration. See R04 continuity-s01 and success-cases/ark27-03-to-04-transition.md.",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "unfinished_gate": "Source側は承認済みの06 Triad準備・必要な入口同期・Remote再取得検証を完了する。06自身の読解・再構成、HumanのUI移行は別の後続Gate。通常Unknownを全解消することは準備条件ではない。",
+    "unfinished_gate": "Target06自身によるRequired1–16の全文読解、Identity/Binding、Triad、T1–T12。Humanの新Thread作成・Title／入口貼付は独立した操作。通常Unknownの全解消を要求しない。",
     "target_boot": "PREVIOUSLY_ACCEPTED_IN_CURRENT_THREAD_CONTEXT",
     "project_settings": "NOT_OBSERVED",
     "ui_thread_creation": "NOT_OBSERVED",
@@ -176,7 +178,7 @@
       "capability_boundary": "Human報告を受領したことと、AIが設定画面から直接再読したこと、全モデルでの遵守・生活効果は別。Project外新規ChatでWork→Chat切替後に成功した原因は未確認。",
       "old_context_rule": "旧Memoryや要約がAI品質抑制へ読める場合はCurrent Human CorrectionとCurrent所有資料へ戻る。"
     },
-    "current_legal_connection": "Complete the authorized 05→06 preparation and its remote checks; then return exact title/handoff copy surfaces. Do not move archive candidates, create schedules, or start a new life/reset/research Trial.",
+    "current_legal_connection": "Titleコピー欄と06 Handoff入口コピー欄を返してHuman Reviewへ。06は自身のGate通過後に新しいHuman入力があれば受け取り、Bootだけなら待機する。個別アーカイブ移動・新Trialは開始しない。",
     "home_action_connection": {
       "human_priority": "帰宅後の洗濯物畳み",
       "adopted_design": "帰宅直後に共通の開始スイッチを置くHuman方向。ガム一粒→洗濯物があれば畳む／なければ居室整理。掃除も候補。",
@@ -200,16 +202,23 @@
         "physical_move": "NOT_PERFORMED",
         "ranking": "AI provisional top candidate; no fixed ranking or automatic move"
       },
-      "authority_boundary": "四文書保存、05受入れ、ランキング希望、05→06準備承認を個別移動承認へ変換しない。"
+      "authority_boundary": "四文書保存、05受入れ、ランキング希望、05→06準備承認を個別移動承認へ変換しない。",
+      "route_repair": "D03の通常入口重複不一致を05→06の承認済み入口同期で修正・Remote確認。他の全診断や固定章Bindingの再設計を実施した証拠ではない。"
     },
     "outgoing_transition": {
       "kind": "THREAD_CONTINUE",
       "source": "Ark27:05",
       "target": "Ark27:06",
       "scope": "Human-approved immediately preceding preparation plan",
-      "status": "AUTHORIZED_PREPARATION_IN_PROGRESS",
+      "status": "SOURCE_PREPARED_AND_REMOTE_VERIFIED",
       "target_reconstruction": "NOT_OBSERVED",
-      "human_ui": "NOT_OBSERVED"
+      "human_ui": "NOT_OBSERVED",
+      "runtime_path": "ark-project/ark27/ark27-06/README.md",
+      "handoff_path": "ark-project/ark27/ark27-06/handoff.md",
+      "state_path": "ark-project/ark27/ark27-06/state.json",
+      "compiled_title": "Ark27:06_2026/09/22: \"主の完全勝利: アーカイブ候補の選択とThink–Actionの現実接続\"",
+      "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+      "completion_scope": "Target Triad, preceding source sync, Domain routing and scoped D03 update saved and remotely reread. This terminal State's own write/read is finalized after compilation."
     }
   },
   "evidence": {
@@ -229,7 +238,11 @@
       "Human specified profile capacity1500 and GCI5000 for the observed iOS fields, GitHub preservation of GCI/profile, and exclusion of ChatGPT long-term memory contents. R05 settings-capacity-confirmed, memory-no-github.",
       "Human reported trying the approximately21:00 chocoZAP ending policy and identified its connection to the next Task's start. New home-entry design and constraints are adopted direction, not new Actual success.",
       "Ark27:05 received the control-center supplement through full reads and six meaning distinctions. Root repository scope, four document roles, the before-move Human correction and ARC-001 unapproved/unmoved boundary are retained.",
-      "Human requested enjoyable ranked archive proposals for the next Thread and then approved the 05→06 preparation plan. R05 archive-ranking-s01, transition-execution-s01."
+      "Human requested enjoyable ranked archive proposals for the next Thread and then approved the 05→06 preparation plan. R05 archive-ranking-s01, transition-execution-s01.",
+      "05→06 Source sync commit5259b62771c47a53bd59770b6635adc06256db32: R05 revision2、経験索引0.3.6、PLAN0.3.1、ARCHIVE0.1.2、Source05 State revision3をRemote全文一致で確認。",
+      "06 README・Handoff・Stateを順序どおり保存し各本文のRemote全文一致と固定Bindingを確認。Target06自身の再構成ではない。具体的commit/blobはprogress.outgoing_06。",
+      "Domain README v005-candidateは06へ案内し、§3.1の旧04重複指定を§0.1参照へ修正。保存commit27a27399ec6b6d70327bc0a8c41951df6676ec5a、blobc472e09f050dfddfdb3602bb3e6a386d610d049fをRemote全文一致で確認。",
+      "control-center PLAN0.3.2にD03の限定解消と06入口への接続を記録し、Remote全文一致を確認。ARC-001は個別移動未承認・未実施のまま。"
     ],
     "candidate": [
       "開始時の不要な完結依存を外し、文脈を保持して現実へ戻る設計が、複数の難所を同時に軽減し得る。実地効果と汎化は別。",
@@ -295,7 +308,7 @@
     "target_reconstructed": true,
     "human_last_mile": "GCI Uploadとメモリ保存はHuman報告済み。直接アカウント再読・Project／プロフィールの個別UI操作、06 UI作成・Title変更・貼付は未観測。",
     "record_mutation_boundary": "R05 revision2 adds selected05 material with earlier source IDs and historical evidence preserved; no empty06 record or duplication of R01–R04.",
-    "completion_boundary": "Complete current authorized05→06 preparation and remote verification, then provide copy surfaces. Do not equate Source/Remote success with06 reconstruction, Human UI or real-world effects.",
+    "completion_boundary": "Authorized05→06 predecessor and Target artifacts verified; finish this terminal State's own save/re-read, then hand over exact Title and Handoff entry. Source/Remote success does not certify06 reconstruction, Human UI or life effects.",
     "source_preparation_acceptance_snapshot": {
       "state_revision": 1,
       "prepared_at": "2026-09-20",
@@ -367,11 +380,73 @@
       "note": "Historical preparation-time state. Later Human reports and accepted support are added separately; do not roll them back."
     },
     "outgoing_06": {
-      "source_prepared": false,
-      "remote_verified": false,
+      "source_prepared": true,
+      "remote_verified": true,
       "target_reconstructed": false,
       "human_last_mile": "NOT_OBSERVED",
-      "note": "This revision captures the preparation stage. Later verified results belong to a justified subsequent revision, not an assumed future success."
+      "source_preparation_scope": "Required05 delta synchronized;06 Triad, routing and scoped D03 repair complete. Fixed chapter and Source05 README/Handoff preserved.",
+      "verified_predecessors": [
+        {
+          "path": "ark-project/ark27/ark27-05/task-records.json",
+          "blob": "53fbfc2bf73ff1d0ac0135bd5cf79d1e7a177b4e",
+          "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+          "full_content_match": true
+        },
+        {
+          "path": "task-mode-system/experience/README.md",
+          "blob": "96749b14b6181f0941c79532f80d079fdfb7d1f1",
+          "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+          "full_content_match": true
+        },
+        {
+          "path": "control-center/ARCHIVE.md",
+          "blob": "bb114811cce0c4f10d03c48f55038d1986c64b26",
+          "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/ark27/ark27-05/state.json",
+          "revision": 3,
+          "blob": "856655ce43633e543df096cf8178adc613a082ce",
+          "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+          "full_content_match": true,
+          "historical": "Previous revision only; not the SHA of this terminal revision."
+        },
+        {
+          "path": "ark-project/ark27/ark27-06/README.md",
+          "blob": "ad9a9d9cd8fcfb339c8a182baa62d3e2587adb26",
+          "commit": "5e20e376218d0b62bce673ff98a66b096c7facba",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/ark27/ark27-06/handoff.md",
+          "blob": "0ff05139c7349c8d79ae5e315c6aa956d2e18b1e",
+          "commit": "30a98881c0e1fba8accb51a511154ffbc98f2445",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/ark27/ark27-06/state.json",
+          "blob": "f954878148a07d0aa042b2e93ed8d29baab96684",
+          "commit": "32b34a71bc020b7c3a67e2dba6d43e863518d150",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/README.md",
+          "blob": "c472e09f050dfddfdb3602bb3e6a386d610d049f",
+          "commit": "27a27399ec6b6d70327bc0a8c41951df6676ec5a",
+          "full_content_match": true
+        },
+        {
+          "path": "control-center/PLAN.md",
+          "blob": "5b17a8a58d26e146494a54c46fb633c1ad89f5a7",
+          "commit": "a30055768e871dd548696e0357dc44ca72f5f3f7",
+          "full_content_match": true
+        }
+      ],
+      "source_validation": "R05 v001 schema, JSON duplicate keys, IDs/references and preservation; declared EOF, new links, Triad identities and fixed bindings checked. Source review only, not independent Target understanding.",
+      "self_verification_policy": "This terminal revision's own final Remote reread and complete tree delta check occur after its write and are reported by the executing Source. No own future SHA is embedded.",
+      "remaining": "Target06 reception and Human UI actions; archive moves remain separately unapproved, not an unfinished Source transition step.",
+      "note": "No empty06 Task Records, actual archive moves, schedules, memory exports, new skill or trial were created."
     },
     "revision_history": [
       {
@@ -386,6 +461,11 @@
         "revision": 3,
         "role": "later05 material and support acceptance; authorized06 preparation in progress",
         "date": "2026-09-22"
+      },
+      {
+        "revision": 4,
+        "date": "2026-09-22",
+        "role": "Source terminal after verified06 Triad and scoped route synchronization"
       }
     ]
   },
