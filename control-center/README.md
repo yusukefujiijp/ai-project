@@ -1,30 +1,32 @@
 ---
 title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.1.0"
+version: "0.2.0"
 canonical_path: "control-center/README.md"
-role: "Repository structure diagnosis and improvement entry"
-status: "human-authorized initial implementation / evolving"
+role: "Repository structure diagnosis, archive-first selection and improvement entry"
+status: "human-authorized archive-first workflow / evolving"
 repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.1.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.2.0"
 ---
 
 # Control Center
 
-**ai-projectのどこが、どのように絡まり、読むAIの何の判断を難しくしているかを説明し、根拠のある整理へつなぐ入口。**
+**ai-project全体で今後も使うものを選び、役割を終えた資料を理由とともにアーカイブし、残る構成を理解・変更しやすくする司令塔。**
 
-このフォルダは、Repository全体の構造診断と改善を引き継ぐ。個々の資料の存在理由、現在の役割、参照関係、変更の影響を、元の会話に参加していないAIも理解できるようにする。具体的な診断、優先順位、対応状況、次の作業は[PLAN.md](PLAN.md)が所有する。
+このフォルダは、Repository全体の構造診断と改善を引き継ぐ。個々の資料の存在理由、現在の役割、参照関係、変更の影響を、元の会話に参加していないAIも理解できるようにする。全体の診断・優先順位は[PLAN.md](PLAN.md)、個別アーカイブ案件の提案・承認・実施・確認の経緯は[ARCHIVE.md](ARCHIVE.md)が所有する。承認された保存実体は[__archives/](../__archives/README.md)へ置く。
 
 ## 1. Humanの意図と最初の目的
 
 以下は、このcontrol-centerを作るまでのYusukeJPとAIの対話を編集してまとめたもの。逐語引用ではない。
 
-YusukeJPは、AIが調査・判断・精密な言語化・構造化を十分に担い、蓄積した知恵を実際の問題解決へ使うことを求めている。今回の最優先は、ai-projectのフォルダ・ファイル構成の混乱を具体的に説明し、実際の整理で成果を確かめることにある。
+YusukeJPは、AIが調査・判断・精密な言語化・構造化を十分に担い、蓄積した知恵を実際の問題解決へ使うことを求めている。今回の最優先は、ai-projectのフォルダ・ファイル構成の混乱を具体的に説明し、不要になった現役配置のアーカイブから実際の整理を進めることにある。
 
 「スパゲッティ」の初期診断は、**文書の進歩に、入口・現在地・保存先・役割変更の案内が揃って追随せず、読むAIが食い違いを解く必要のある箇所が残っていること**。確認した場所と反例はPLANにある。ファイル数・階層の深さだけで良否を決めず、読取・保存・変更の判断への影響を見る。
+
+Humanの追加訂正は、**整理整頓→レイヤー構造→関係の構造化→interface化**を、実体の整理へつなぐことだった。「不要」は現在の運用に残す必要がないという判断であり、歴史や知恵の無価値を意味しない。AIが候補・理由・具体例・影響・保存先・戻し方を調べて提案し、YusukeJPがその対象と変更内容を承認した後、`__archives/`への移動と必要な参照整理を行う。全ての案内修正が終わるまで退役を後回しにせず、根拠のある案件から進める。
 
 AIの方法と創発性は開く。Future AIが、当時の目的・根拠・訂正を理解したうえで、よりよい構造や解釈へ改められる余地を持たせる。現在のモデルの能力や期待だけで、再設計の優位性や継承成功を認定しない。
 
@@ -38,7 +40,10 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 2. Humanは「まずアーカイブ」を優先し、手動で実施した。2026-09-22のGitHub metadata確認では、scenes-player-kit、shorts-player-kit、shorts-player-coreの三つとも `archived: true`。この確認は、その時点の観測である。
 3. 継承先は当初の `ark-project/control-center/` 案から、**ai-project全体を見通すrootの `control-center/`** へHumanが訂正した。
 4. Humanが[改行のみのREADMEを作成](https://github.com/yusukefujiijp/ai-project/commit/cc560d14284d99fd9b8a6e6aa896843e73b0c53d)。その後、他AI・Future AIの理解を最重要とし、READMEとPLANの役割を検討した。
-5. Humanはさらに「どこがどうスパゲッティなのかの言語化」を最優先とした。調査・計画だけの段階を経て、今回の二文書の実装・GitHub保存・検証へ進んだ。
+5. Humanはさらに「どこがどうスパゲッティなのかの言語化」を最優先とした。調査・計画だけの段階を経て、READMEとPLANの初版をGitHubへ保存・検証した。
+6. その後Humanは、案内の修復を先行させる初版計画を訂正し、不要な現役配置のアーカイブを優先した。
+7. 既存の `__archives/` を利用し、AIの具体提案→YusukeJPの承認→実体移動→理由と結果の記録、という役割分担を明示した。記録は他AI・Future AIが深く理由と経緯を理解するために必要とされた。
+8. この構成案の提示後、Humanの「早速、やってみましょう！」を受け、四文書の整備と最初の案件の具体化へ進んだ。個別の移動承認と実施結果はARCHIVEの案件が所有する。
 
 Player系で育った[control-centerの保存時点](https://github.com/yusukefujiijp/scenes-player-kit/tree/a0dc266a819e141040256f9afc4a70b6ff295ff9/control-center)は由来である。同資料の「現在の開発先」等はアーカイブ前の座標として読み、後のHuman判断と区別する。
 
@@ -49,7 +54,9 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 | Node | Edge | 所有する意味・使い分け |
 |---|---|---|
 | [このREADME](README.md) | PLANと既存の所有資料へ案内する | control-centerの目的、形成理由、役割、使い方 |
-| [PLAN](PLAN.md) | 診断を根拠・改善・再確認へ接続する | Repository構造整理の現在の判断と作業状況。各Projectの全Task状態は複製しない |
+| [PLAN](PLAN.md) | 診断を根拠・優先順位・改善へ接続する | Repository全体の整理計画。個別案件の承認履歴や各Projectの全Task状態は複製しない |
+| [ARCHIVE](ARCHIVE.md) | 提案・Human判断・変更・結果を一つの案件へ結ぶ | アーカイブ候補の具体案、判断理由、承認範囲、実施・確認・再検討の記録 |
+| [__archives](../__archives/README.md) | 保存物から案件・由来へ戻る | 承認後の保存実体と入口。提案だけの資料を移設済みと表示しない |
 | [Repository README](../README.md) | Repository全体へ入る | Human / Public Front Door。control-center追加はこの役割を移管しない |
 | [AGENTS](../AGENTS.md) | 現在の依頼を読取・判断・実行へ接続する | 共通の権限、読取、継続、停止。ここで別の承認規則を作らない |
 | [ARK](../ARK.md) | Identityと帰属を回復する | Home Constitution。具体的な案内の不一致はPLANの診断対象になる |
@@ -63,9 +70,9 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 ## 4. 他AI・Future AIの使い方
 
-構造整理の依頼では、このREADMEで目的と役割を把握し、PLANの現在地と関係する診断IDへ進む。そこから対象文書・参照元・依存先のCurrent版を確認する。固定commitのEvidenceは観測の再現に、Current本文は今の変更判断に使う。
+構造整理の依頼では、このREADMEからPLANの優先順位へ進む。アーカイブの判断・実行ならARCHIVEの対象案件、保存物の探索なら__archivesの入口へ進む。そこから対象文書・参照元・依存先のCurrent版を確認する。固定commitのEvidenceは観測の再現に、Current本文は今の変更判断に使う。
 
-Graphでは、保存場所に加えて「案内する」「意味を所有する」「内容を固定して参照する」「由来になる」「変更に影響する」というEdgeを区別する。単に関係が多いことを欠陥とせず、どの関係が読取や変更を難しくしているかを説明する。
+Graphでは、保存場所に加えて「案内する」「意味を所有する」「内容を固定して参照する」「由来になる」「変更に影響する」というEdgeを区別する。単に関係が多いことを欠陥とせず、どの関係が読取や変更を難しくしているかを説明する。アーカイブでは「現役として使う」という案内を外し、「なぜ存在し、なぜ退役したか」を辿る関係を残す。移動だけでは旧案内は消えず、保管名だけでコード実行や書込みが技術的に禁止されるわけでもない。
 
 明示されたHandoffや局所Runtimeを読む依頼では、その指定契約を使う。control-centerを全作業の追加Boot条件にしない。通常の依頼の権限判断はCurrent Human RequestとAGENTSに従い、承認済みの範囲を同じ確認で止めない。計画・歴史的承認・ファイルの存在だけから、新しい実行範囲を作らない。
 
@@ -80,10 +87,10 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 ## 5. 継続して育てる
 
-役割・入口・形成理由が変わればREADMEを更新する。問題の状態、優先順位、実行結果が変わればPLANを更新する。変更の具体的な観測は既存のRepository Reviewsへ接続し、当時の報告を後の現在地で塗り替えない。
+役割・入口・形成理由が変わればREADME、全体診断・優先順位が変わればPLAN、個別アーカイブの判断・実施結果が変わればARCHIVEの同じ案件を更新する。__archivesの索引は保存実体と案件へ案内し、承認理由を独立に複製しない。既存のRepository Reviewsは日付付きの観測として参照し、当時の報告を後の現在地で塗り替えない。正式な全体レビューを行う場合は同領域の方法を使うが、案件記録の保存に追加レビュー作成を一律には課さない。
 
 新しい資料を作る場合も、既存資料を移す場合も、参照元と依存先への影響を確認する。履歴中の古いパスは当時の根拠として残す場合があり、現在の案内と区別する。文書の保存、問題の修正、別AIの利用、現実の効果を同じ完了状態にまとめない。
 
-全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版の実体はREADMEとPLANの二つである。ファイル数やこの初版形式を将来の上限にしない。
+全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、今回ARCHIVEを加えた。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.1.0
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.2.0
