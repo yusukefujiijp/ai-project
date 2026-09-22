@@ -184,7 +184,7 @@ flowchart TD
 | Node | Edge | 作業と判断の所有先 | 位置づけ |
 |---|---|---|---|
 | E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANの初版保存・検証。観測は§8 | 完了した出発点 |
-| E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10へ記録する | 今回の文書整備 |
+| E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
 | E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最優先の物理整理候補 |
 | E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | 計画。退役案件の先行必須ではない |
@@ -258,7 +258,19 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 
 2026-09-22、Humanの実行依頼により四文書の整備とARC-001の具体化を開始した。作業基点は[commit d8c744d](https://github.com/yusukefujiijp/ai-project/commit/d8c744dd68d5a366855bb33e3167147adfc213cd)、Tree `aa85ce2f0a286c5c1891437a145c2301c6c99614`、309ファイル、`truncated: false`。
 
-保存後の検証結果は、対象をRemoteから再取得した後に本節へ追記する。今回の整備は四文書に限定し、checkerの移動・削除、他の既存構造の修正、別AIによる独立読解を実施した記録ではない。
+四文書をmainへ保存し、各保存直後と四文書が揃ったcommitの両方でRemote本文を再取得し、意図した全文・blobとの一致を確認した。その観測に基づいて本節とE08を完了へ更新した。
+
+- [ARCHIVEの新設](https://github.com/yusukefujiijp/ai-project/commit/8b5b0bbb2b8c9f574da21721aecb4592b2b7a11e)：blob `8982db5802c46aa5ac8329582eaed2d249008bd7`。案件の役割・形成理由・Human判断の扱い・ARC-001の具体案を保存。
+- [__archives入口の整備](https://github.com/yusukefujiijp/ai-project/commit/fcf9a602af1f8f7e08491f304691255e0aa28783)：blob `8642257c2e89ef550dd47978ad7ff2e73df6a5d2`。改行のみの入口を更新し、提案と保存実体を区別。
+- [PLANの方針更新](https://github.com/yusukefujiijp/ai-project/commit/cc339104933616fb79cb77099ad50eb74bd34363)：blob `795fa20ba3d7de3ec2a03d9969e8f1b634ede772`。本節の完了追記前の観測版。
+- [READMEの方針更新](https://github.com/yusukefujiijp/ai-project/commit/03a9998133604d8f5c8da1a96f294ca061a0d987)：blob `dff12a401d510280c8c73d1dc26ba2008c316d9b`。アーカイブ優先と四文書の責務・形成順序を接続。
+- 四文書が揃った観測commitは `03a9998133604d8f5c8da1a96f294ca061a0d987`、Treeは `685ed4f0503555a0e8137d71c9f478512ff69fc8`。基点との差分は既存三文書の更新とARCHIVE一つの追加のみ。その他の既存306ファイルは同じblobで、総数は310。checkerの現役配置とsandboxは変更していない。
+- 文書検査では、四文書のUTF-8、YAML、canonical_path、版とEOF、相対リンク、新規文書間の参照見出し、参照形式、EvidenceのRepository内パスを照合した。本節の完了追記前のリンクは75出現、不一致なし。上の実装commitリンク四つは、返却された保存結果に基づく。
+- 意味の自己点検では、元の会話なしに目的・担当・承認対象・保存先・根拠・未実施範囲・復元方法を辿れるか確認した。D01–D05・D07の診断本文と再設計構想を保持し、D06を個別案件へ接続した。
+
+**完了したのは、アーカイブの判断・記録・入口の整備とARC-001の具体化。ファイルの物理移動・退役はまだ実績ではない。個別移動の承認・実施状態はARCHIVEが所有する。** Root READMEへの追加案内E01、既存の各構造問題の修正、別AIの独立読解、実利用による効果も、この保存結果から完了としない。
+
+本節に自身の最終blobを埋め込む循環を作らず、追記後の保存はGit履歴とRemote再取得で確認する。上記commit・Tree・件数はこの観測時点の証拠であり、将来の正常条件ではない。
 
 [system]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_system/ark-system.md
 [note]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_note/README.md
