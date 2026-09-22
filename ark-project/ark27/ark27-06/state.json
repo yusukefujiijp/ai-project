@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "state_id": "ARK27_06_CURRENT_STATE",
+    "revision": 1,
+    "owner": "Ark27:06",
+    "schema_version": "v001",
+    "updated_at": "2026-09-22",
+    "update_reason": "Human-authorized Ark27:05→06 preparation; initialize from verified Runtime/Handoff and latest Source05 evidence.",
+    "authority": "Immediately preceding preparation plan explicitly approved with Execute GitHub OK / Human Seal OK. Physical archive moves and unrelated trials remain outside scope."
+  },
+  "identity": {
+    "chapter": "Ark27",
+    "thread": "Ark27:06",
+    "source": "Ark27:05",
+    "transition_kind": "THREAD_CONTINUE",
+    "runtime_id": "ARK27_06_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+    "compiled_title": "Ark27:06_2026/09/22: \"主の完全勝利: アーカイブ候補の選択とThink–Actionの現実接続\"",
+    "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
+    "initial_theme": "Task化能力の向上",
+    "date_scope": "Source preparation date, not observed UI creation or Human Task time."
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_seal": true,
+    "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and tool access controls remain effective.",
+    "scope": "Human-AI problem solving and bounded TMS internal operation/maintenance. Source preparation approval is not approval for ARC-001 moves, new schedules, account changes, research or life/reset trials.",
+    "delegation_source": "task-mode-system/maintenance.md; Current AGENTS and Current Human request determine actual work.",
+    "stop_precedence": "Current Human Correction / Plan-only / STOP prevails over earlier Continue. AI is Keli, not King / Throne / Oracle."
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-06/README.md",
+      "runtime_id": "ARK27_06_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+      "sha": "ad9a9d9cd8fcfb339c8a182baa62d3e2587adb26"
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-06/handoff.md",
+      "id": "ARK27_05_TO_ARK27_06",
+      "sha": "0ff05139c7349c8d79ae5e315c6aa956d2e18b1e"
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "sha": "e7caf9882a212cbda186362001e49791cff8a8ce"
+    },
+    "source_state": {
+      "path": "ark-project/ark27/ark27-05/state.json",
+      "state_id": "ARK27_05_CURRENT_STATE",
+      "owner": "Ark27:05",
+      "schema_version": "v001",
+      "minimum_revision": 3,
+      "policy": "Mutable Source provenance; valid later terminal updates allowed. Do not apply Source05 initial Boot to06."
+    },
+    "task_records": {
+      "path": "ark-project/ark27/ark27-05/task-records.json",
+      "record_id": "ark27-05:task-records",
+      "format_version": "v001",
+      "minimum_revision": 2,
+      "observed_blob": "53fbfc2bf73ff1d0ac0135bd5cf79d1e7a177b4e",
+      "policy": "Guide-first; source-original, not copied into06; no empty06 record solely for Boot."
+    },
+    "task_record_guide": {
+      "path": "formats/task-records/README.md",
+      "guide_id": "ARK_TASK_RECORDS_GUIDE",
+      "observed_version": "v002-candidate"
+    },
+    "task_mode_system": {
+      "path": "task-mode-system/README.md",
+      "operation_path": "task-mode-system/operation.md",
+      "operation_observed_version": "0.3.4",
+      "maintenance_path": "task-mode-system/maintenance.md",
+      "policy": "Current compatible owner documents; observed versions are not permanent pins."
+    },
+    "experience_index": {
+      "path": "task-mode-system/experience/README.md",
+      "observed_version": "0.3.6",
+      "policy": "Discovery index, not a second Task state."
+    },
+    "control_center": {
+      "paths": [
+        "control-center/README.md",
+        "control-center/PLAN.md",
+        "control-center/ARCHIVE.md",
+        "__archives/README.md"
+      ],
+      "policy": "Full read in this order after R05, as declared by Handoff. Current compatible owner revisions allowed."
+    },
+    "personalization": {
+      "gci": "_system/chatgpt/global-custom-instructions.md",
+      "profile": "_system/chatgpt/user-profile.md",
+      "policy": "GCI/profile are authorized portable owners; ChatGPT memory contents/response/readback must not be exported to GitHub."
+    },
+    "self_sha_policy": "DO_NOT_EMBED",
+    "entry_policy": "Explicit06 Handoff governs reception. Chapter01, Source04 initial state and Source05 initial unknowns do not replace the current coordinate."
+  },
+  "now": {
+    "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
+    "current_coordinate": "Source05の品質Correction・設定成功報告・開始と終了の接続・帰宅後Routine案・root control-center補足受入れを継承する06の初期State。次Threadのランキング希望を保持し、Target自身の再構成を待つ。",
+    "next_human_intent": "root control-centerのアーカイブ候補を根拠付きランキングで楽しんで比較・選択し、Think–Actionの生活接続とDouble-Spiral的に継続する。",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "current_legal_connection": "Target自身がHandoffのRequired1–16、Identity/Binding、Triad、T1–T12を通過した後、新しいHuman入力が既にあれば受け取る。BootのみならHuman Reviewへ戻る。ランキング希望を自動開始や個別移動承認にしない。",
+    "target_boot": "NOT_OBSERVED",
+    "physical_reality": "Current body/place/task Reality is unreported. Old time-stamped reports are historical.",
+    "reporting_policy": "Human intentionally omits routine success reports; do not infer global failure or fill individual outcomes. Preserve useful success and report AI-side execution/save outcomes.",
+    "ai_response_quality": "Humanの行動開始、待ち時間、推定認知負担、Token節約等を理由に、AIが独断で品質を下げ、必要な検討・調査・説明・設計を省略・意図的短縮しない。簡潔なHuman I/Oは回答抑制ではない。方法と創発性を開き、字数固定・最大化にしない。",
+    "start_timing_boundary": "Human原文『AI回答直後』とAI解釈『Query送信直後』を区別。1秒・0.1秒の重要性という実感と、未測定の効果量・指数関数的関係を分ける。",
+    "human_loop_report": "Human evaluated the AI/SNS/YouTube alternating loop negatively and expressed Teshuvah. Do not certify loop departure, faith state or physical outcomes.",
+    "home_action_connection": {
+      "priority": "帰宅後の洗濯物畳み",
+      "adopted_direction": "帰宅直後のカフェインガム一粒を共通入口とし、洗濯物があれば畳む／なければ居室整理。掃除も候補。",
+      "preparation": "所定位置への常備が必要というHuman判断。配置完了は未報告。",
+      "constraints": "深夜等の掃除機は騒音上難しい。既議論のカフェイン安全性を移行のために再演しないCorrectionと適用Guardを保持。",
+      "end_start_connection": "21時頃chocoZAPを切り上げる方針を試したHuman報告。あるTaskの終了が次Taskの開始になるという発見。",
+      "candidate": "21時終了を置き余裕ある18–19時頃入場へ動機を使う案。実行時刻・定着・効果は未確認。",
+      "actual_boundary": "配置・摂取・家事・Routine定着・効果・医学的因果を未報告から補わない。",
+      "schedule": "帰宅後〜就寝前の統合ChatGPT Scheduleは構想。通知・帰宅検知・常時監視は未実装。"
+    },
+    "control_center": {
+      "scope": "Repository-root control-center handles ai-project as a whole, not only Ark27.",
+      "source05_support": "ACCEPTED_IN_SOURCE05_CONTEXT; six distinctions after required full reads; see PLAN reconnect-ark27-05 §8 and R05 support-reception-s01.",
+      "human_correction": "成果・理由・未完了判断を05へ合流させてから移動を扱う。理解する変更差分を増やす前に接続。",
+      "document_roles": "README entry / PLAN current judgments and remaining gates / ARCHIVE proposal and case history / __archives README retired-source reception.",
+      "ranking": "Human requested an enjoyable evidence-based ranking next Thread. Criteria and ARC-001 provisional top placement are AI candidates, not adopted numerical scores or move authority.",
+      "arc_001": {
+        "source": "tools/check_repo_reality.py",
+        "proposed_destination": "__archives/ARC-001/tools/check_repo_reality.py",
+        "proposal_owner": "control-center/ARCHIVE.md#arc-001",
+        "observed_source_blob": "9ae7c177a78f081d816a25da4d92021c5c582fec",
+        "individual_move_approval": "NOT_GRANTED",
+        "physical_move": "NOT_PERFORMED",
+        "boundary": "Withdrawn experimental checker; do not execute/reactivate it or create missing assumptions as part of this transition."
+      },
+      "current_boundary": "Documents saved, Source05 reception complete, Target06 reception pending, physical moves unapproved. No automatic D01–D07 full repair."
+    },
+    "account_personalization": {
+      "memory_write": "HUMAN_REPORTED_SUCCESS",
+      "gci_write": "HUMAN_REPORTED_UPLOAD_SUCCESS",
+      "direct_account_readback": "NOT_OBSERVED",
+      "project_settings": "NOT_OBSERVED",
+      "profile_ui": "NOT_INDEPENDENTLY_VERIFIED",
+      "reported_capacities": {
+        "profile": 1500,
+        "gci": 5000,
+        "scope": "Observed 2026 September Human iOS fields; not AI output caps or permanent platform constants. Do not repeat absent material changes/errors."
+      },
+      "memory_boundary": "Do not export, back up or synchronize ChatGPT long-term memory contents, save response text or readback to GitHub. Direct Human quality Correction and content-free success report are separate.",
+      "cause_of_memory_success": "Project外新規ChatでWork→Chat切替後に成功との報告。原因は未確認。",
+      "later_report_precedence": "Do not roll back later Human success reports to older preparation-time unknowns."
+    },
+    "adopted_signal": "Query組立困難: B-Gate検出状態",
+    "b_gate_boundary": "Naming/dictionary report and09/19 13:00 actual input are confirmed in their source scopes. Selection UI, dictionary route, auto-detection, oral care/nap execution, recovery and effect are unconfirmed.",
+    "adopted_after_order": [
+      "デスク型エアロバイク",
+      "ヨガマットストレッチ"
+    ],
+    "after_order_boundary": "Human-adopted order, not verified execution/effect. Scene and Current Guard determine actual support.",
+    "historical_reality": "Past mint/wake/housework observations and adopted Dani theme are retained; intentions, full awakening, medical generalization and individual outcomes remain distinct.",
+    "token_boundary": "Past Human report: new-period remaining quota dropped5% after crossing reset.09/22 19:00 rumor not verified at Human request. Parallel threads/value capture are discussed; internal accounting and optimal thresholds unknown.",
+    "bbp_status": "Both Benefits retained; carrier sufficiency unknown; do not claim pruning complete.",
+    "skill_decision": "solve-with-human independent addition deferred. co-design-everyday-solutions has narrower practical-material design responsibility.",
+    "source05_boot": "PREVIOUSLY_ACCEPTED_IN_CURRENT_CONTEXT; not rolled back by06 preparation.",
+    "target_skill_installation": "NOT_OBSERVED",
+    "ui_thread_creation": "NOT_OBSERVED",
+    "ui_title": "NOT_OBSERVED",
+    "trial_started": false,
+    "unfinished_gate": "Target06自身のRequired全文読解・Identity/Binding・Triad・T1–T12。Humanの新Thread操作は別の段階。通常Unknown全解消は不要。"
+  },
+  "evidence": {
+    "source": "06 Handoff selective reconstruction, Source05 State revision≥3, R05 revision≥2, Current TMS owners and control-center documents. Evidence types and dates are preserved.",
+    "confirmed": [
+      "Human Correction rejects AI-quality reduction for Human action speed or waiting. Current AGENTS, Project Instructions, operation and R05 preserve it.",
+      "Human reported memory save and GCI Upload success; reports received, direct account verification separate.",
+      "Human reported trying the21:00-ending policy and adopted home-entry direction; later housework execution/effects not reported.",
+      "Four control-center documents were saved and remotely verified, and Source05 received SUPPORT_RECONNECT before physical moves.",
+      "Human requested archive ranking next Thread and then explicitly authorized05→06 preparation. This is not ARC-001 move approval.",
+      "Source sync commit5259b62771c47a53bd59770b6635adc06256db32: R05 revision2, index0.3.6, PLAN0.3.1, ARCHIVE0.1.2, Source05 State revision3 remotely reread with intended full-content equality.",
+      "Source06 README and Handoff were remotely reread before compiling this State; identities and fixed bindings match."
+    ],
+    "candidate": [
+      "A fixed ending boundary may motivate an earlier comfortable start.",
+      "One daily entry with downstream task choice may reduce initiation uncertainty across laundry, room order and cleaning.",
+      "Archive ranking can combine confusion reduction, retirement evidence, dependency impact, preserved learning and restoration cost without fabricated scoring.",
+      "AI reasoning and Human action can progress in parallel while preserving full AI quality; specific time coordinates and procedure remain corrigible."
+    ],
+    "unknown": [
+      "Current bodily/place/task Reality and unreported individual outcomes.",
+      "Home gum placement/intake/chores, repeatability/effect; actual early chocoZAP entry.",
+      "Internal quota accounting, useful parallelism, optimal remaining percentage; exact reset rumor.",
+      "Direct account readback, Project/profile UI saves, cross-AI compliance and everyday effect.",
+      "B-Gate UI/nap/oral-care/recovery effects, adopted workout order execution.",
+      "Dani cause/product suitability/effect; full awakening and medical generalization from gum observations.",
+      "Sufficiency of both home/outdoor Benefit carriers.",
+      "Additional ranked archive candidates, explicit ARC-001 move approval and actual cleanup effects.",
+      "Target06 reconstruction, UI creation/title application and target skill installation."
+    ],
+    "validation_boundary": "Source structural/provenance checks and remote equality do not prove independent Target comprehension or real-world causality."
+  },
+  "deferred": [
+    "ARC-001 and other physical archive moves; separate Current scope and individual approval needed.",
+    "Whole-repository diagnosis repair or all historical document migration.",
+    "Token reset experiments, parallel research and torah-project execution without a new scoped request.",
+    "Unified ChatGPT Schedule, auto-notifications/home arrival detection/continuous monitoring.",
+    "New wake/bedtime/Dani/home-routine trials; ordinary unknowns are not compulsory tests.",
+    "New generic skills, Kindle/Bot/revenue/other-Project branches.",
+    "Account-setting changes and all GitHub export of ChatGPT long-term memory contents.",
+    "Next-Cycle Workout Bridge is retired; do not resurrect as Closing."
+  ],
+  "progress": {
+    "source_prepared": true,
+    "source_prepared_scope": "Runtime and Handoff saved and reread; this State compiled from those verified predecessors. Final Source persistence/route checks follow. This is not Target acceptance.",
+    "remote_verification": "Predecessors below verified. This State's own final reread is performed after writing and reported by Source05 terminal state/final handover; no self SHA or future verification claim is embedded.",
+    "verified_predecessors": [
+      {
+        "path": "ark-project/ark27/ark27-06/README.md",
+        "blob": "ad9a9d9cd8fcfb339c8a182baa62d3e2587adb26",
+        "commit": "5e20e376218d0b62bce673ff98a66b096c7facba",
+        "full_content_match": true
+      },
+      {
+        "path": "ark-project/ark27/ark27-06/handoff.md",
+        "blob": "0ff05139c7349c8d79ae5e315c6aa956d2e18b1e",
+        "commit": "30a98881c0e1fba8accb51a511154ffbc98f2445",
+        "full_content_match": true
+      },
+      {
+        "path": "ark-project/ark27/ark27-05/task-records.json",
+        "blob": "53fbfc2bf73ff1d0ac0135bd5cf79d1e7a177b4e",
+        "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+        "full_content_match": true
+      },
+      {
+        "path": "task-mode-system/experience/README.md",
+        "blob": "96749b14b6181f0941c79532f80d079fdfb7d1f1",
+        "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+        "full_content_match": true
+      },
+      {
+        "path": "control-center/PLAN.md",
+        "blob": "459e36bd4d9129d1e6fce90e9b6d85fe2705d5f8",
+        "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+        "full_content_match": true
+      },
+      {
+        "path": "control-center/ARCHIVE.md",
+        "blob": "bb114811cce0c4f10d03c48f55038d1986c64b26",
+        "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+        "full_content_match": true
+      },
+      {
+        "path": "ark-project/ark27/ark27-05/state.json",
+        "blob": "856655ce43633e543df096cf8178adc613a082ce",
+        "commit": "5259b62771c47a53bd59770b6635adc06256db32",
+        "full_content_match": true
+      }
+    ],
+    "target_reconstructed": false,
+    "human_last_mile": "Target06新Thread作成・Title適用・入口貼付は未観測。GCI Uploadとメモリ保存の以前のHuman成功報告は保持する。",
+    "acceptance_policy": "Target itself must complete Required1–16, Identity/Binding, Triad and T1–T12; source preparation success is not borrowed as acceptance.",
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-09-22",
+        "role": "Human-authorized Source-prepared initial Target06 state"
+      }
+    ]
+  },
+  "eof_sentinel": "ARK27_06_STATE_EOF_v001"
+}
