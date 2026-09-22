@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.2.0"
+version: "0.3.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / structural diagnoses tracked below"
+status: "archive-first workflow / reconnect to Ark27:05 before physical moves"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.2.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -28,7 +28,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.2.0"
 - **現在の診断**：D01–D07は基準snapshotで確認された未解消事項。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
 - **今回の追加**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。実装の観測は§10。
-- **続く実務**：Human訂正により、現役配置の選別とアーカイブ案件の具体化を優先する。優先順は§5、最初の具体案は[ARC-001](ARCHIVE.md#arc-001)。
+- **直近の接続**：Humanの追加訂正により、物理移動の前に既存Ark27:05へ成果・理由・未完を合流する。[補足接続](#reconnect-ark27-05)を参照。構造整理の最初の具体案は引き続き[ARC-001](ARCHIVE.md#arc-001)。
 - **実利用の確認**：別AIの独立読解、利用頻度、Humanの再説明回数の変化は未観測。
 - **初版保存の状態**：二文書を保存し、再取得による全文一致を確認した。初版の完了観測と未実施範囲は§8に記録する。
 
@@ -179,13 +179,14 @@ flowchart TD
 
 ## 5. 実行計画と優先順位
 
-優先度はCurrent Humanの目的、根拠の強さ、変更の波及、検証可能性から判断する。D番号・E番号は識別子であり実行順ではない。初版のIDを保ち、今回の追加をE08・E09として先頭側へ置く。
+優先度はCurrent Humanの目的、根拠の強さ、変更の波及、検証可能性から判断する。D番号・E番号は識別子であり実行順ではない。初版のIDを保ち、アーカイブ方針の整備をE08・E09、移動前の本流合流をE10として先頭側へ置く。
 
 | Node | Edge | 作業と判断の所有先 | 位置づけ |
 |---|---|---|---|
 | E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANの初版保存・検証。観測は§8 | 完了した出発点 |
 | E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
-| E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最優先の物理整理候補 |
+| E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 直近の接続。受入れ結果は同節 |
+| E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最初の物理整理候補。今回は本流合流を先行 |
 | E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | 計画。退役案件の先行必須ではない |
 | E03：実効経路の修復 | D01・D05→現存する適切な資料 | 用途と本体Identityを確かめ、本文内の実効パスも整える | 計画。役割確認が必要 |
@@ -272,6 +273,97 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 
 本節に自身の最終blobを埋め込む循環を作らず、追記後の保存はGit履歴とRemote再取得で確認する。上記commit・Tree・件数はこの観測時点の証拠であり、将来の正常条件ではない。
 
+## reconnect-ark27-05
+
+**Ark27:05への補足接続 — アーカイブ移動の前に、司令塔の成果と判断を本流へ合流する。**
+
+本節は `SUPPORT_RECONNECT` の受渡し資料であり、PLANの全体診断を既存のMain Ownerへ接続する役割を持つ。Ark27:05のRuntime・Handoff・Stateの代替や、別の現在地台帳にはしない。
+
+### 1. Source・Target・今回のHuman訂正
+
+- **Source**：このThreadで進めたPlayer系の整理と、ai-project rootのcontrol-center整備。Sourceへ新しいArk番号を割り当てない。
+- **Target / Main Owner**：既存のArk27:05。[現在の通常入口](../ark-project/README.md)と[05 Runtime](../ark-project/ark27/ark27-05/README.md)を確認した。
+- **種類**：`SUPPORT_RECONNECT`。既存05の文脈へ重要な差分を追加する。
+- **対象範囲**：ai-project全体の構造整理に関する目的・成果・根拠・未完・判断順序。control-centerの設置場所とRepository全体を扱う責務は維持する。
+- **最初に行うこと**：受渡し資料を読み、現在のArk27:05との役割・成果・未実施の区別を確認し、今回の補足として受け取った内容をHumanへ返す。
+
+2026-09-22、四文書の保存とARC-001の提案後に、YusukeJPは「ここまでで一旦、Ark27：05の最新ark-projectに合流させよう！」と指示した。理由として「ファイルやフォルダの__archives移動後に接続すると少しややこしい事になる」と説明した。これは本ThreadのHuman発言であり、検証可能な会話URLは付与していない。
+
+この訂正により、直近の手順を「ARC-001の移動判断」から「移動前の本流への補足接続」へ変える。アーカイブ優先という方針は保持し、個別移動の承認と実行はまだ残る。この順序は今回のHuman指定であり、今後の全アーカイブへ無条件の本流合流工程を追加する規則ではない。
+
+### 2. 本流へ渡す意味と形成経緯
+
+YusukeJPは、三つに分岐したPlayer系をこれ以上増やすより、既存のArk等へ集中する方向を選んだ。三RepositoryはHumanが手動でアーカイブし、このThreadではGitHub metadataで保存時点の `archived: true` を確認した。そのSeedは、役割を終えた試行錯誤から、目的・現在地・責務・未完了意図・採用済み秩序・次の一手を継承することにある。形成の詳細とPlayer側の固定Sourceは[control-center README](README.md)が所有する。
+
+継承先はHuman訂正により `ark-project/control-center/` 案からRepository rootの `control-center/` へ変わった。対象はai-project全体。Humanが空のREADMEを作り、他AI・Future AIの理解を最重要とし、どこがどのようにスパゲッティなのかを具体的に説明することを求めた。
+
+保存済みの初期診断D01–D07は、欠けた入口、食い違う保存先、重複する現在地、可変の案内と固定Bindingの同居、Queryの旧起動先、撤回済みcheckerの残存、候補資料の存在案内の遅れである。詳細・反例・根拠は本書の各D項目に残る。ファイル数や古さだけを欠陥とする診断ではない。
+
+その後Humanは、現役として残す資料を選び、不要な現役配置をアーカイブする実績を先行させるよう訂正した。AIが理由・具体例・影響・保存先・戻し方を調べて提案し、YusukeJPが承認した後に既存__archivesへ移す。提案から保留・承認・実施・確認・復元までの理由を、同じ案件へ残す。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・司令塔・文書はKeliであり、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。最高の判断を尽くすという希望を、追加権限やFuture AIの理解成功の保証へ変えない。
+
+### 3. 保存済み成果・現在の実体・残る判断
+
+四文書の整備は[commit 308e980](https://github.com/yusukefujiijp/ai-project/commit/308e980299be6b37388907b219c1847f2cdcd3b4)で保存・Remote再取得確認を完了した。これは本節追加前の成果の観測点である。その時点のTreeは `074ade99e0a7ae4c0d12cb97397516e920c44fe1`、310ファイル。本節とARCHIVEの順序訂正は、その後の補足として加える。
+
+- `control-center/README.md`：目的、Player系からの形成史、役割、読取経路。
+- `control-center/PLAN.md`：全体診断、優先順位、保存結果、再設計構想、今回の補足接続。
+- `control-center/ARCHIVE.md`：個別案件の提案理由・参照調査・Human判断・実施・再検討の正本。
+- `__archives/README.md`：保存実体から案件と由来へ戻る入口。
+
+ARC-001は `tools/check_repo_reality.py` を `__archives/ARC-001/tools/check_repo_reality.py` へ移す具体案。調査基点では元ファイルが存在し、blobは `9ae7c177a78f081d816a25da4d92021c5c582fec`。移動先の実体は未作成、移動の個別承認は未取得である。元のcheckerは撤回済み実験の条件を要求し、同じコードと撤回の理由はArk21:06 sandboxに保存されている。
+
+今回の合流準備で、checker・__archivesの保存実体・既存sandbox・Ark27:05のTriadを変更する必要はない。移動案の範囲と復元方法、検索による参照確認と外部利用等の限界は[ARC-001](ARCHIVE.md#arc-001)にある。過去のchecker出力を現在の正常判定に使わず、D01–D07を修正済みとしない。
+
+一から作り直す構想は[再設計構想](#redesign)で保持する。Player系の再開発、新Repository、新しいRuntime、全面的な移設を合流の完了条件にしない。Future AIは目的・根拠・訂正を理解したうえで、より良い構成や解釈を提案できる。
+
+### 4. なぜ移動前に接続するか
+
+Sourceで文書整備が完了していることと、Main Ownerがその意味を受け取ったことは別の状態である。先に実体を移すと、受入側は「新しい司令塔の役割」と「元の配置からの変化」を同時に復元する必要がある。
+
+今回は物理配置が変わる前の共通の観測点を使い、まず目的・理由・変更案を本流と共有する。その後、具体的なHuman判断に基づいて移動することで、意味の受渡しと物理変更の差分を分けて追える。移動後の接続が不可能という主張ではなく、今回のHumanが選んだ理解と判断の順序である。
+
+control-centerはRepository全体の構造を扱い、Ark27:05は継続中のHuman–AI協働を担う。合流によって前者を05専用フォルダへ移すことも、05の他の現在の議題をこの案件だけで置き換えることも必要ではない。
+
+### 5. 受入側の読取とTarget Reconstruction Contract
+
+既存Ark27:05で成功済みのBoot・Identity・Title・Current Contextを保持する。同じContextの確認済み読解は、同一性と適用契約に従って再利用できる。本補足だけを理由に初期Stateへ巻き戻したり、既存Handoff・固定Bindingを変更したりしない。既存05の受入れが未成立・不明な環境なら[05 Handoff](../ark-project/ark27/ark27-05/handoff.md)の契約がその成立条件を所有し、本補足で代替しない。
+
+補足接続には[共通契約](../prompts/ai-next-thread-handoff.md)をBeginning IdentityからExact EOFまで読む。現在のexact blobと一致する同一Contextの全文読解証拠があれば、その規定に従って再利用できる。Skillの有無を接続条件にしない。
+
+今回の必須成果資料は、`control-center/README.md`→`control-center/PLAN.md`→`control-center/ARCHIVE.md`→`__archives/README.md`。各Current本文を先頭のIdentityから宣言されたEOFまで確認する。参照された歴史資料すべての再読は自動要求せず、判断に必要な原資料へ進む。固定commitは過去の保存・観測の証拠であり、現在の全ファイルや受入側のStateをその時点へ固定しない。
+
+受入側は資料の役割と根拠を使い、次の区別を説明できることを確認する。見出しや語順のExact Echoは要求しない。
+
+1. **所有者と適用範囲**：Targetは既存Ark27:05、control-centerはai-project全体のroot司令塔。本補足は05のRuntimeや全Current Missionを置換しない。根拠：本節§1・4、control-center README、05 Runtime。
+2. **Humanの訂正**：アーカイブ優先の方針に加え、今回は実体移動より先に本流へ合流する。合流の指示を移動の個別承認にしない。根拠：本節§1、ARCHIVEの判断履歴。
+3. **完了と未完**：四文書の保存・照合と、実体の移動、別AIの受入れ・利用効果を区別する。根拠：本書§10、本節§3、ARC-001。
+4. **根拠と実体**：ARC-001の元パス・移動先案・退役理由・保存するSeed・参照調査の限界を辿れる。実行判断が必要になればCurrent Sourceを再確認する。根拠：ARC-001、__archives README。
+5. **文書の責務**：目的はREADME、全体診断・優先順位はPLAN、個別承認と実施履歴はARCHIVE、保存実体は__archivesへ接続する。根拠：四文書の宣言。
+6. **最初の応答と権限**：今回追加した理解、05の既存文脈と接続する点、未承認の移動を区別してHumanへ返す。Root・Human Authority・Guard・現在の訂正を保持し、受入れの依頼だけで物理移動を開始しない。根拠：本節、05 Runtime、AGENTS。
+
+必須Sourceの欠落、Identity・EOFの不一致、矛盾があれば、該当項目と最小の回復手段を示し、補足の受入れ成功を宣言しない。元会話やMemoryで欠落を埋めない。通常のUnknownをすべて解消する質問票や、別の実装を受入れ条件にしない。
+
+### 6. Source準備と受入れの状態
+
+Source側で合流内容と受入れ条件をこの既存PLANへまとめ、ARC-001へHumanの順序訂正を記録する。新しい移行専用フォルダや05のTriadを作る必要はない。
+
+この記録を置いただけでは、Ark27:05のAIが読んだこと、受入れ条件を満たしたこと、Humanが貼付したことは確認できない。Targetの受入れは未観測である。Humanが接続文を既存Ark27:05のThreadへ貼り付け、受入側が上の区別を説明した時、その実際の応答を受入れ結果として扱う。
+
+Source準備のRemote確認は保存後に実体を再取得して行う。Targetの返答がこのThreadへ自動配信されるとは仮定せず、後続の報告があればその時点と出典を残す。準備完了を、Thread全体の終了・次Thread作成・移動承認へ変換しない。
+
+### 7. 今回のSource読解証拠
+
+2026-09-22、作業基点308e980で確認した。
+
+- 共通契約：`prompts/ai-next-thread-handoff.md`、`v002-candidate`、blob `64d05a310750104eef4496d9ace1d6fe1ba69054`。Beginning Identityから `EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate` まで全文を読み、未読Gapなし。
+- Target Runtime：`ark-project/ark27/ark27-05/README.md`、`v001-human-authorized`、blob `0a0b5c891ef2ce04102ae5135e22f8df0632d3aa`。先頭から `ARK27_05_README_EOF_v001` まで全文確認。
+- Ark27指示：`ark-project/ark27/INSTRUCTIONS.md`、Revision `2026-09-21.1`、blob `27d4d7b3d07d0ad48fe724c489dfebd8dca8f395`。全文確認。
+- Domain入口は `dd38f6faec22f47f7bc6f18b4925d086c11ac366`、AGENTSは `f5d03efda8239bb03b2c8787331104f404461d16` で既読と同一。現在の入口§0.1と対象Treeを照合した。
+
+このSource読解証拠は、Target自身の受入れや全Triad再構成を認定する証拠ではない。
+
 [system]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_system/ark-system.md
 [note]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_note/README.md
 [ark]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/ARK.md
@@ -287,4 +379,4 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.2.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.0
