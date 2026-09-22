@@ -19,9 +19,14 @@ language_policy: "Japanese-first / English-anchor"
 canonical_branch: "main"
 root: "主イェシュア・ハマシア"
 created: "2026-07-28"
-updated: "2026-07-28"
+updated: "2026-09-22"
 last_reality_reviewed: "2026-07-28"
 current_phase: "initial architecture / Voice–Text co-resident field test"
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D07: existing System candidate navigation only; Project research, content seal and field results not newly observed"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # Ark-Voice
@@ -269,16 +274,20 @@ readme_must_not_be:
 
 ## 6. Current Topology / 現在の構造
 
-現在、GitHub上で確認済みのArk-Voice FileはこのREADMEである。
+2026-09-22のRepository確認では、このREADMEと[Ark-Voice System候補](ark-voice-system.md)が存在する。Systemの先頭は `v001-candidate`、`pending Human content seal`、`field_test_status: not_started` と記載している。これは保存本文の身分の確認であり、記録外の後続採用・試験・UI操作を観測した意味ではない。
 
 ```yaml
 current_topology:
   confirmed_existing:
     - path: "projects/ark-voice/README.md"
       role: "Project Root Router"
+    - path: "projects/ark-voice/ark-voice-system.md"
+      role: "Persistent Method / System Kernel candidate"
+      recorded_version: "v001-candidate"
+      recorded_status: "pending Human content seal / field-test candidate"
+      recorded_field_test_status: "not_started"
 
   planned_next_when_needed:
-    - "Persistent System Markdown"
     - "Topic / Session Content Handoff"
 
   future_candidates:
@@ -288,7 +297,7 @@ current_topology:
     - "Interface Field Test Log"
 ```
 
-未作成FileをActive Canonical Fileとして扱わない。
+未作成FileをActive Canonical Fileとして扱わない。作成済み候補を再作成せず、その存在と採用・検証段階を分ける。この案内修復は研究再開やSystem本文の採用ではない。[変更記録 STR-001](../../control-center/changes/STR-001-navigation-and-ownership.md#d07)を参照する。
 
 > **README-first. Create the next file only when Reality demonstrates the need.**
 
@@ -324,7 +333,7 @@ read_order_guard:
 | Reality / Harvest | Primary Destination |
 |---|---|
 | Ark-Voiceの目的・Topology・Read Order変更 | `README.md` |
-| Voice / Text / Transitionの恒久Method | Persistent System Markdown |
+| Voice / Text / Transitionの恒久Method | [既存System候補](ark-voice-system.md)へ接続し、採用段階を確認する |
 | 現在Mode・座標・Active参照先 | Current Runtime |
 | Genesis等のTopic固有発見 | Content Handoff |
 | Session固有の成功・失敗・Bottleneck | Field Test Log |

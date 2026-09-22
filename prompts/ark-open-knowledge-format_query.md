@@ -3,9 +3,9 @@ title: "Ark Open Knowledge Format Query"
 canonical_name: "Ark-OKF Query"
 class: "S"
 status: "living_query"
-canonical_path: "s_special/ark-open-knowledge-format_query.md"
+canonical_path: "prompts/ark-open-knowledge-format_query.md"
 repo: "yusukefujiijp/ai-project"
-paired_ssot: "s_special/ark-open-knowledge-format.md"
+paired_ssot: "prompts/ark-open-knowledge-format.md"
 query_role: "Activation Query / Runtime Adapter / Ignition Key"
 query_is_not_ssot: true
 ssot_role: "Engine / Answer Interoperability Surface SSOT"
@@ -15,13 +15,18 @@ github_policy: "GitHub Canonical First"
 language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D05: current self path and Engine/Query pair routes; original bootstrap names and semantic roles retained"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # Ark Open Knowledge Format Query
 
 ## 0. Activation Compression
 
-このQueryは、`s_special/ark-open-knowledge-format.md` をFuture AIの実回答へ点火するための **Activation Query / Runtime Adapter / Ignition Key** である。
+このQueryは、`prompts/ark-open-knowledge-format.md` をFuture AIの実回答へ点火するための **Activation Query / Runtime Adapter / Ignition Key** である。
 
 短く言うと：
 
@@ -41,11 +46,11 @@ Paired files:
 
 ```yaml
 engine:
-  path: "s_special/ark-open-knowledge-format.md"
+  path: "prompts/ark-open-knowledge-format.md"
   role: "Ark-OKF Engine / Answer Interoperability Surface SSOT"
 
 ignition_key:
-  path: "s_special/ark-open-knowledge-format_query.md"
+  path: "prompts/ark-open-knowledge-format_query.md"
   role: "Activation Query / Runtime Adapter"
 ```
 
@@ -75,7 +80,7 @@ Activation target:
 target:
   name: "Ark Open Knowledge Format"
   canonical_name: "Ark-OKF"
-  path: "s_special/ark-open-knowledge-format.md"
+  path: "prompts/ark-open-knowledge-format.md"
   role: "Answer Interoperability Surface"
 ```
 
@@ -110,12 +115,12 @@ Pair Contract:
 ```yaml
 pair_contract:
   ssot:
-    path: "s_special/ark-open-knowledge-format.md"
+    path: "prompts/ark-open-knowledge-format.md"
     role: "Engine / SSOT"
     canonical: true
 
   query:
-    path: "s_special/ark-open-knowledge-format_query.md"
+    path: "prompts/ark-open-knowledge-format_query.md"
     role: "Ignition Key / Runtime Adapter"
     canonical: true
     query_is_not_ssot: true
@@ -651,10 +656,10 @@ S本体はEngine。
 QueryはIgnition Key。
 
 SSOT:
-  s_special/ark-open-knowledge-format.md
+  prompts/ark-open-knowledge-format.md
 
 Query:
-  s_special/ark-open-knowledge-format_query.md
+  prompts/ark-open-knowledge-format_query.md
 
 OKF is not English-first.
 OKF is rebootable-first.

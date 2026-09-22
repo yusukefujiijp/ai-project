@@ -6,6 +6,11 @@ role: "Living Notes Directory Guide"
 project: "Ark: Daily Teshuvah Gate-to-Yeshua"
 root: "主イェシュア・ハマシア"
 version_model: "git history"
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D01: purpose-specific handoff and harvest storage routes; note identity and authority rules retained"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # _note
@@ -61,22 +66,20 @@ A note may later influence README, protocol, or workflow files, but it does not 
 
 ## 2. What Does Not Belong Here
 
-```yaml
-does_not_belong_here:
-  - "large unfiltered transcripts"
-  - "generic temporary scratch"
-  - "files that should be thread handoff artifacts"
-  - "files that should be harvest artifacts"
-  - "files requiring unique Ark thread naming under _thread-end/ark/"
-```
+`_note/`は、未整理の大規模Transcript、一時Scratch、既に専用の所有先があるThread Handoff・Harvestの代替保存先ではない。
 
-If a file is a thread-specific handoff or harvest, prefer:
+保存先は、Current Human Requestと選ばれた契約の役割から決める。
 
-```text
-_thread-end/ark/arkNNMM_YYYYMMDD_<role>.md
-```
+| Node | Edge | 保存判断 |
+|---|---|---|
+| 現行ArkのThread継続・章移行・補助線再接続 | [共通移行契約](../prompts/ai-next-thread-handoff.md) → 明示Handoff／対象Runtime | 対象単位・役割・Exact Pathsを解決する。通常のThread三ファイルはREADMEが安定Runtime、handoffが初期化、stateが可変状態を所有する |
+| 保存されているThread-End方式を明示利用 | [Thread-End入口](../thread-end/README.md) → [Artifact入口](../thread-end/ark/README.md) | その方式のBinding・命名・保存先に従う。既存の平置き履歴は保持する |
+| Thread固有のHarvest | Current Runtime／該当Projectの所有資料 | その成果の意味に合う既存保存先へ接続する。すべてをHandoffやNoteへまとめない |
+| 方法の補助となるLiving Note | このREADME → `_note/` | 専用の所有資料へ昇格していない支援知識を保持する |
 
-Generic names such as `handoff.md` or `harvest.md` should be avoided under `_thread-end/ark/`.
+例えば、Thread単位のフォルダ内にある `handoff.md` は役割が明確な正規名になり得る。旧方式の平置き用ファイル名を、すべてのThread構成へ一律適用しない。新しい補助線再接続から、不要な章・Thread三ファイルを自動作成しない。
+
+旧 `_thread-end/ark/` は現行の保存先ではない。当時の履歴内の旧パスは歴史資料として扱う。案内を読むことは保存や移動の承認を追加しない。修復理由は[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md#d01)を参照する。
 
 ---
 

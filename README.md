@@ -5,7 +5,7 @@ version: "v002"
 edition: "AI-first Repository Front Door / AGENTS-aligned routing"
 version_basis: "v001 preserved in Git history; v002 aligns live routes and shared authority with current owners"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-09-21"
+updated: "2026-09-22"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -41,6 +41,7 @@ personalization_entry_addition:
   base_commit: "82bd06b082c18212278e7ca364b613c678051cdc"
   scope: "GCI/profile route only; no whole-repository rereview or account-memory synchronization"
 updated_reason:
+  - "2026-09-22: Add the repository-wide control-center route; structural change reasons and outcomes are recorded in STR-001."
   - "2026-09-21: Add GCI/profile owners as a scoped settings route; preserve existing runtime and review boundaries."
   - "2026-09-19: Align general authority summaries with AGENTS; route Task, Skill, Plan Mode, and transition work to current owners while retaining explicit legacy routes."
   - "2026-09-19: Add the recurring repository review entry; preserve existing policies and review history."
@@ -54,6 +55,11 @@ updated_reason:
   - "Align confirmed moved Topology-First, Ark-OKF, and KISS/YAGNI/DRY/LEAN files with root prompts/."
   - "Route numbered Ark families through ark-project/ and named projects through projects/."
   - "Remove current routes to missing predecessor-only surfaces."
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "E01: repository-wide control-center entry only; no whole-repository or behavioral revalidation"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # ai-project
@@ -124,7 +130,7 @@ Harvest preserves.
 current_coordinate:
   root_readme_version: "v002"
   edition: "AI-first Repository Front Door / AGENTS-aligned routing"
-  updated: "2026-09-21"
+  updated: "2026-09-22"
   last_reality_reviewed: "2026-09-19"
   reviewed_against_main_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
   canonical_branch: "main"
@@ -346,6 +352,7 @@ Reality confirms.
 
 | Path | Role | Read when |
 |---|---|---|
+| [`control-center/README.md`](control-center/README.md) | Repository全体の構造診断・改善・アーカイブの司令塔 | フォルダ・ファイルの役割、整理計画、変更理由と結果を確認する時。全作業の追加Boot条件ではない |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |

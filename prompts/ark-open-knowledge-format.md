@@ -3,9 +3,9 @@ title: "Ark Open Knowledge Format"
 canonical_name: "Ark-OKF"
 class: "S"
 status: "living_ssot"
-canonical_path: "s_special/ark-open-knowledge-format.md"
+canonical_path: "prompts/ark-open-knowledge-format.md"
 repo: "yusukefujiijp/ai-project"
-paired_query: "s_special/ark-open-knowledge-format_query.md"
+paired_query: "prompts/ark-open-knowledge-format_query.md"
 pair_policy: "Engine / Ignition Key"
 query_role: "Activation Query / Runtime Adapter"
 query_is_not_ssot: true
@@ -15,6 +15,11 @@ github_policy: "GitHub Canonical First"
 language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D05: current self path and Engine/Query pair routes; original bootstrap names and semantic roles retained"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # Ark Open Knowledge Format
@@ -68,7 +73,7 @@ Living Reviewで命が残る。
 
 ## 1. What this file is
 
-`s_special/ark-open-knowledge-format.md` は、Ark Projectにおける Ark Open Knowledge Format のGitHub正準SSOTである。
+`prompts/ark-open-knowledge-format.md` は、Ark Projectにおける Ark Open Knowledge Format のGitHub正準SSOTである。
 
 このファイルは、ローカルBootstrapである次のファイルをSourceとして持つ。
 
@@ -79,13 +84,13 @@ S_Ark-open-knowledge-format_v002.md
 ただし、GitHub上の正準Pathは次である。
 
 ```text
-s_special/ark-open-knowledge-format.md
+prompts/ark-open-knowledge-format.md
 ```
 
 Paired Queryは次である。
 
 ```text
-s_special/ark-open-knowledge-format_query.md
+prompts/ark-open-knowledge-format_query.md
 ```
 
 これは、GitHub Canonical First方針に従う。
@@ -613,11 +618,11 @@ Ark-OKFでは、S本体とQueryは対である。
 ```yaml
 pair_architecture:
   S_file:
-    path: "s_special/ark-open-knowledge-format.md"
+    path: "prompts/ark-open-knowledge-format.md"
     role: "SSOT / Engine / 知恵の保存"
 
   Query_file:
-    path: "s_special/ark-open-knowledge-format_query.md"
+    path: "prompts/ark-open-knowledge-format_query.md"
     role: "Activation Query / Ignition Key / 知恵の点火"
 
   pair_policy:
@@ -650,10 +655,10 @@ GitHub Canonical First時代では、両方ともstable pathに置く。
 
 ```text
 Engine:
-  s_special/ark-open-knowledge-format.md
+  prompts/ark-open-knowledge-format.md
 
 Ignition Key:
-  s_special/ark-open-knowledge-format_query.md
+  prompts/ark-open-knowledge-format_query.md
 ```
 
 ---
@@ -671,7 +676,7 @@ S_Ark-open-knowledge-format_v002.md
 GitHub正準Path：
 
 ```text
-s_special/ark-open-knowledge-format.md
+prompts/ark-open-knowledge-format.md
 ```
 
 Policy：

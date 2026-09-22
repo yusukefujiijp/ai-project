@@ -1,3 +1,13 @@
+---
+title: "Ark Mode"
+canonical_path: "mode/README.md"
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D08: mode inventory, shared-skill route and existing filename exception; no activation or rename"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
+---
+
 # Ark Mode
 
 `mode/` は、Ark Projectで一定期間維持されるAI Runtime Modeを置くFolderである。
@@ -21,19 +31,21 @@ Exit
 ## 2. Skillとの違い
 
 ```text
-_skill/
-= 必要場面で発火するSkill System / Skill Atom
+skills/README.md
+= Shared Skill Source / Distribution Hub
 
 mode/
 = 起動後しばらく維持されるRuntime Mode Layer
 ```
+
+[Skills入口](../skills/README.md)は共有原本・配布の案内を所有する。共有原本の存在は、この環境への導入済みを意味しない。
 
 SkillはModeを助けることがある。
 しかし、ModeをSkill Inventoryへ混ぜない。
 
 ## 3. Current Modes
 
-### `ai-journaling_mode.md`
+### [AI Journaling Mode](ai-journaling_mode.md)
 
 Human Realityを起点にJournalingを開始・継続・切替・終了するMode。
 
@@ -42,6 +54,14 @@ Evidence-First Reversible Reflection
 +
 One Open Slot
 ```
+
+本文の記載は `v001` / `experimental / human-editable`。自己パスを実在する `mode/ai-journaling_mode.md` に合わせた。実利用・有効性をこの索引で認定しない。
+
+### [AI Field Test Mode](ai-field-test-mode.md)
+
+Runtimeを持つAI Artifactの挙動・Evidenceを観察し、Human Reviewへ返す検証Mode候補。
+
+本文の記載は `v001.1-draft` / `static-reviewed` / `not runtime-field-tested` / `not final-sealed`。2026-09-22に存在と保存本文を確認した。記録外の実行状況はUnknownであり、掲載自体を起動・試験・採用の承認にしない。
 
 ## 4. Core Rule
 
@@ -78,6 +98,8 @@ mode/ai-journaling-mode.md
 ```
 
 `_mode` は重複ではなく、`/prompts/` 外のAI-PromptであることとRuntime Roleを一目で伝えるRepository Contractである。
+
+既存の `ai-field-test-mode.md` は、この推奨形と異なる名前で存在する。今回の索引整合では元パスを保持し、明示した既存例外として案内する。将来改名する場合は参照元・固定Binding・互換性を確認する独立した変更として扱い、命名差だけで退役や誤ファイルと判定しない。[今回の判断 STR-001](../control-center/changes/STR-001-navigation-and-ownership.md#d08)を参照する。
 
 ## 6. KISS / DRY / YAGNI / Lean
 

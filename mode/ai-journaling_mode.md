@@ -1,15 +1,27 @@
 ---
 title: "AI Journaling Mode"
 role: "Ark Mode / AI-assisted Journaling Runtime"
-path: "mode/ai-journaling.md"
+path: "mode/ai-journaling_mode.md"
 version: "v001"
 status: "experimental / human-editable"
 language_policy: "Japanese-first / English-anchor"
-related_skills:
-  - "_skill/skills/ai-keli.md"
-  - "_skill/skills/ai-active.md"
+related_concepts:
+  - "AI-Keli"
+  - "AI-Active"
+historical_related_skill_paths:
+  paths:
+    - "_skill/skills/ai-keli.md"
+    - "_skill/skills/ai-active.md"
+  status: "historical references; absent from the reviewed main tree"
+  runtime_dependency: false
+  replacement_mapping: "unknown; do not infer equivalence to a currently installed Skill"
 core_guard: "AI structures and proposes; Human confirms, corrects, switches, or stops."
 root_guard: "Root is 主イェシュア・ハマシア; AI / Mode / GitHub / Markdown are Fruit."
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D08: actual self path and historical related-skill status; Journaling behavior, version and candidate status retained"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # AI Journaling Mode
@@ -46,7 +58,7 @@ Exit
 
 AI Journalingは、一回の質問技法ではなく、開始・継続・切替・終了を持つためModeとして扱う。
 
-AI-KeliとAI-Activeは関連Skillであり、このModeの下位Fileではない。
+AI-KeliとAI-Activeは、このModeの形成時に参照された関連概念であり、このModeの下位Fileではない。元の関連Skillパスは2026-09-22のmainには存在しないため、metadataで歴史参照として保持した。現在の必須読取先・導入済みSkillとは扱わず、別Skillへの対応も推測しない。このModeの手順は本文で定義し、関連概念の由来と実行依存を分ける。共有Skillの現在の所在は[Skills入口](../skills/README.md)、修復経緯は[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md#d08)を参照する。
 
 ---
 

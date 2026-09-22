@@ -1,22 +1,22 @@
 ---
 title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.2.0"
+version: "0.3.0"
 canonical_path: "control-center/README.md"
-role: "Repository structure diagnosis, archive-first selection and improvement entry"
+role: "Repository structure diagnosis, archive-first selection, improvement and change-history entry"
 status: "human-authorized archive-first workflow / evolving"
 repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.2.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.0"
 ---
 
 # Control Center
 
 **ai-project全体で今後も使うものを選び、役割を終えた資料を理由とともにアーカイブし、残る構成を理解・変更しやすくする司令塔。**
 
-このフォルダは、Repository全体の構造診断と改善を引き継ぐ。個々の資料の存在理由、現在の役割、参照関係、変更の影響を、元の会話に参加していないAIも理解できるようにする。全体の診断・優先順位は[PLAN.md](PLAN.md)、個別アーカイブ案件の提案・承認・実施・確認の経緯は[ARCHIVE.md](ARCHIVE.md)が所有する。承認された保存実体は[__archives/](../__archives/README.md)へ置く。
+このフォルダは、Repository全体の構造診断と改善を引き継ぐ。個々の資料の存在理由、現在の役割、参照関係、変更の影響を、元の会話に参加していないAIも理解できるようにする。全体の診断・優先順位は[PLAN.md](PLAN.md)、個別アーカイブ案件の提案・承認・実施・確認の経緯は[ARCHIVE.md](ARCHIVE.md)が所有する。承認された保存実体は[__archives/](../__archives/README.md)へ置く。通常の修正・改善の5W1Hと実装・検証は[変更記録](changes/STR-001-navigation-and-ownership.md)が所有し、PLANはその記録へ案内する。
 
 ## 1. Humanの意図と最初の目的
 
@@ -44,6 +44,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 6. その後Humanは、案内の修復を先行させる初版計画を訂正し、不要な現役配置のアーカイブを優先した。
 7. 既存の `__archives/` を利用し、AIの具体提案→YusukeJPの承認→実体移動→理由と結果の記録、という役割分担を明示した。記録は他AI・Future AIが深く理由と経緯を理解するために必要とされた。
 8. この構成案の提示後、Humanの「早速、やってみましょう！」を受け、四文書の整備と最初の案件の具体化へ進んだ。個別の移動承認と実施結果はARCHIVEの案件が所有する。
+9. Ark27:06でアーカイブを実施・確認した後、Humanは残す構成の修正改善ランキングを求めた。七候補への実行承認とともに、いつ・誰が・どこを・なぜ・どう直したかをFuture AIが理解できる記録を要求した。今回の具体的な範囲と結果は[STR-001](changes/STR-001-navigation-and-ownership.md)へ接続する。
 
 Player系で育った[control-centerの保存時点](https://github.com/yusukefujiijp/scenes-player-kit/tree/a0dc266a819e141040256f9afc4a70b6ff295ff9/control-center)は由来である。同資料の「現在の開発先」等はアーカイブ前の座標として読み、後のHuman判断と区別する。
 
@@ -55,6 +56,7 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 |---|---|---|
 | [このREADME](README.md) | PLANと既存の所有資料へ案内する | control-centerの目的、形成理由、役割、使い方 |
 | [PLAN](PLAN.md) | 診断を根拠・優先順位・改善へ接続する | Repository全体の整理計画。個別案件の承認履歴や各Projectの全Task状態は複製しない |
+| [変更記録 STR-001](changes/STR-001-navigation-and-ownership.md) | 修正前の根拠→変更理由→実装→確認結果へ結ぶ | 通常の構造修正の5W1Hと適用範囲。設計完了・実装・Remote確認・利用効果を分ける |
 | [ARCHIVE](ARCHIVE.md) | 提案・Human判断・変更・結果を一つの案件へ結ぶ | アーカイブ候補の具体案、判断理由、承認範囲、実施・確認・再検討の記録 |
 | [__archives](../__archives/README.md) | 保存物から案件・由来へ戻る | 承認後の保存実体と入口。提案だけの資料を移設済みと表示しない |
 | [Repository README](../README.md) | Repository全体へ入る | Human / Public Front Door。control-center追加はこの役割を移管しない |
@@ -87,10 +89,14 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 ## 5. 継続して育てる
 
+通常の構造修正は、意味がまとまる単位で `changes/` の一件へ記録する。今回の[STR-001](changes/STR-001-navigation-and-ownership.md)では七候補を一つの承認済み整合案件として扱った。各記録から、いつ（観測・保存時刻）、誰（Humanの依頼・承認、実装AI、GitHub上の記録者）、どこ、何を、なぜ、どう変更・検証したか、変更前の根拠、残存制約へ戻れるようにする。Git履歴は正確な差分・時刻を、変更記録は意味・判断・検証範囲を担う。
+
+書式・一件の粒度は変更の性質に合わせ、将来のAIの判断を固定しない。既存のARCHIVE案件へ通常修正を混ぜず、過去案件を新しい成果として複製しない。変更記録は経験・診断資料であり、現在の依頼やHandoffを置換するRuntimeではない。
+
 役割・入口・形成理由が変わればREADME、全体診断・優先順位が変わればPLAN、個別アーカイブの判断・実施結果が変わればARCHIVEの同じ案件を更新する。__archivesの索引は保存実体と案件へ案内し、承認理由を独立に複製しない。既存のRepository Reviewsは日付付きの観測として参照し、当時の報告を後の現在地で塗り替えない。正式な全体レビューを行う場合は同領域の方法を使うが、案件記録の保存に追加レビュー作成を一律には課さない。
 
 新しい資料を作る場合も、既存資料を移す場合も、参照元と依存先への影響を確認する。履歴中の古いパスは当時の根拠として残す場合があり、現在の案内と区別する。文書の保存、問題の修正、別AIの利用、現実の効果を同じ完了状態にまとめない。
 
-全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、今回ARCHIVEを加えた。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
+全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.2.0
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.0

@@ -44,6 +44,11 @@ core_formula:
   - "Future AI should not restart from zero."
   - "Human brings Final Seal."
   - "AI offers Long-View Counsel."
+route_alignment:
+  date: "2026-09-22"
+  base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
+  scope: "D01: Gate Index only; preserve historical growth, old skill paths and original next-step records"
+  change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
 ---
 
 # Ark System
@@ -484,17 +489,26 @@ future_ai_onboarding:
 
 ## 9. Gate Index
 
-Ark System routes to major Gate files and patterns.
+Ark Systemは、現在の目的から適切な入口へ案内する。明示されたHandoffや局所Runtimeの読取順・Identity・Bindingを保持し、確認済みBootを理由なく繰り返さない。現在の権限・継続・停止は[AGENTS](../AGENTS.md)に従う。
 
 ```yaml id="gate-index"
 gate_index:
   thread_start:
-    path: "_thread-start/thread-start_query.md"
-    role: "Thread Start Runtime Boot Query / Seed-Ignition Key"
+    explicit_handoff: "Humanが指定したCurrent Handoffの契約を優先する"
+    default_ark_router: "ark-project/README.md"
+    role: "指定がないArk開始ではDomainのCurrent Front-Line Resolutionから該当Handoffへ進む"
 
-  thread_end:
-    path: "_thread-end/thread-end_query.md"
-    role: "Thread End Runtime / Harvest and Handoff Gate"
+  transition_preparation:
+    path: "prompts/ai-next-thread-handoff.md"
+    role: "THREAD_CONTINUE / CHAPTER_TRANSITION / SUPPORT_RECONNECTの共通移行契約"
+    guard: "現在の依頼と対象Runtimeへ適応する。読むことだけで移行・保存を開始しない"
+
+  preserved_thread_end:
+    path: "thread-end/README.md"
+    role: "保存されているThread-End方式の入口"
+    use_when: "その方式が明示指定され、Current Requestに適用される場合"
+    artifact_router: "thread-end/ark/README.md"
+    guard: "共通移行契約や明示Handoffへの自動代替ではない"
 
   growth_system:
     path: "_system/ark-system.md"
@@ -508,6 +522,10 @@ gate_index:
     workflow_pattern_registry:
       status: "module_inside_ark_system_for_now"
 ```
+
+開始は[Ark Domain](../ark-project/README.md)、移行準備は[共通移行契約](../prompts/ai-next-thread-handoff.md)、保存された方式の利用は[Thread-End入口](../thread-end/README.md)へ進む。保存住所・成果物の役割は選ばれた契約で解決し、旧 `_thread-start/`・`_thread-end/`を通常入口として復活させない。
+
+§10のGrowth Entry、§12–13に残る旧SkillやField Testの次手は、その形成時点の記録として保持する。当時のパス・commit・予定を、現在の実在保証や今回の実行命令へ変換しない。Root・Human Authority・Guardは保持する。修復の経緯と確認範囲は[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md#d01)にある。
 
 If a module becomes too large, split it into a separate file later.
 

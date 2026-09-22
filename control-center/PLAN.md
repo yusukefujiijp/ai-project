@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.5.1"
+version: "0.6.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / ARC-001 verified / ARC-002 archived with pinned source retained / ARC-003–004 moved and remotely verified"
+status: "ARC-001–004 results retained / STR-001 structural repairs prepared; remote verification pending / D04 design separated from binding migration"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.1"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.6.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -25,7 +25,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.1"
 
 初版の出発点ではREADMEが改行のみ、本書は未作成だった。初回実装では、消えやすい会話内の診断を、次のAIが根拠から再検討できるRepository資料へ変えた。下記D01–D07の既存文書自体の修正、移設、退役処理は、この二文書の保存とは別の実装として残す。
 
-- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。Ark27:06の個別実行承認により、D06の現役checkerをARC-001へ退役させ、内容保持・元配置の消失・関連記録をRemoteで確認した。D01・D02・D04・D05・D07は未解消として保持する。その後の三群の整理はARC-002–004へ分け、D05のOKF Query修正と混同しない。固定章Bindingは変更しない。
+- **現在の診断**：D01–D07の元のConfirmedは基準snapshotの診断として保持する。D03の通常入口は05→06準備で修正、D06はARC-001で退役・Remote確認済み。続くARC-002–004の成果も保持する。今回、Human承認済み[STR-001](changes/STR-001-navigation-and-ownership.md)でD01・D02・D05・D07・E01・新規D08の局所修正を準備し、D04は分離設計を具体化した。Remote確認は同記録の検証節で判定する。固定章Bindingの移行・章直入口の制約解消と、通常案内の修正を区別する。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
 - **アーカイブ方針整備の成果**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。当時の保存観測は§10。その後の個別実行はARCHIVEのARC-001–004が所有する。
 - **直近の接続**：05で受け取った次Threadランキング希望を06で実施し、ARC-001完了後に三群・七ファイルを理由付きで提案した。その直後のHumanの「全てOK！」とGitHub実行承認を受け、[ARC-002](ARCHIVE.md#arc-002)のアーカイブ保存・元パス互換保持、[ARC-003](ARCHIVE.md#arc-003)の二原本移動、[ARC-004](ARCHIVE.md#arc-004)の四原本移動と価値の接続を実施し、保存先全文・blob・配置・対象外保持をRemote確認した。実行commitと観測は[今回の案件記録](ARCHIVE.md#archive-batch-2026-09-22)が所有する。05の補足受入れ・移行準備と今回の実行承認は区別する。
@@ -41,6 +41,12 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.1"
 この訂正によって、退役処理を通常案内の全修正後まで待たせる依存を外す。各案件に必要な参照調査と移動時の案内整合は維持する。古い・重複する・名前が似るという観測だけで、現在の役割を終えたと判定しない。
 
 今回の実行依頼は、`control-center/README.md`・本書・`control-center/ARCHIVE.md`・`__archives/README.md`の整備と、最初の提案の具体化として受けた。個別移動はARCHIVEの案件で承認対象を明らかにし、Humanが既に承認した範囲は繰り返し確認せず実施・検証まで進める。文書整備と物理的な退役の実績は別に記録する。
+
+### 1.2 Ark27:06の構造修正と5W1H記録
+
+アーカイブ後の七候補のランキングに対し、Humanは実行と、他AI・Future AIが変更の時点・担当・場所・理由・方法を理解できる記録を要求した。「統一」は、今回の入口・実体・所有先の整合として実装する。文書の独立した役割を消したり、モデルの肩書きで改善効果を認定したりする意味にはしない。
+
+実施順の判断はD01→D02→D05→E01→D07→D08→D04。D04は固定参照の分離設計が対象で、旧Handoffの一括書換えや固定章READMEの改訂は含まない。具体的な5W1H・変更前後・根拠・保存結果・残る判断は[STR-001](changes/STR-001-navigation-and-ownership.md)に集約する。通常Unknownの全解消やD04の移行を、局所修正の前提にしない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -62,7 +68,7 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D01
 
-**開始・終了の案内が、存在しないパスへ向かう。状態：未修正。**
+**基準snapshotでは開始・終了の案内が不存在パスへ向かっていた。状態：STR-001で用途別経路を修正準備、Remote確認待ち。**
 
 - **Node / Edge**：`_system/ark-system.md`がThread開始・終了の入口を案内する。
 - **Confirmed**：§9 Gate Indexの `_thread-start/thread-start_query.md` と `_thread-end/thread-end_query.md` は基点Treeにない。[_note/README §2][note]にも、当該Treeにない `_thread-end/ark/` を保存先に推奨する記載がある。[System §8–9][system]
@@ -73,9 +79,11 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **完了条件**：修正した各通常案内が実在し、目的と役割も一致する。歴史参照を現在の起動命令に変えていない。
 - **Unknown**：通常入口ごとの実際の利用頻度と、この断線が起こした停止回数。
 
+- **STR-001後続対応**：System §9とNote §2を用途別に整合。明示Handoff、Domain通常入口、共通移行準備、保存されたThread-End方式を区別し、過去のGrowth Entry本文を保持した。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d01)を参照。上の基準snapshotの根拠を現在の未修正状態として再利用しない。
+
 ### D02
 
-**学びの保存先について、ARKとAGENTSの説明が一致しない。状態：未修正。**
+**基準snapshotではARKとAGENTSの学びの保存案内が不一致。状態：STR-001でFile Ecologyを修正準備、Remote確認待ち。**
 
 - **Node / Edge**：`ARK.md` §12と`AGENTS.md` §1が、学びを保存する資料へ案内する。
 - **Confirmed**：ARKのFile Ecologyは `_tasks/lessons.md` を学習台帳として紹介する。AGENTSは不存在を明記し、出来事・成功事例・承認された方法改訂をそれぞれの所有先へ案内する。Treeに `_tasks/lessons.md` はない。[ARK §12][ark]、[AGENTS §1][agents]
@@ -85,6 +93,8 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **変更と保持**：案内の意味を更新する。ARK全体のIdentityや共通権限を、この修正のついでに再定義しない。
 - **完了条件**：ARKとAGENTSの双方から、出来事・成功事例・方法改訂について整合する保存判断ができる。不在の旧台帳を埋めるためだけの新設を必要としない。
 - **Unknown**：Task以外の全経験領域の保存先を網羅した調査。今回の局所修正の前提に全解消を課さない。
+
+- **STR-001後続対応**：ARK §12を経験原本・成功事例・方法所有資料の区別へ整合。同節の移行／Thread-End役割説明も現行の入口に合わせ、Identity本文を保持した。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d02)を参照。上の基準snapshotの根拠を現在の未修正状態として再利用しない。
 
 ### D03
 
@@ -104,7 +114,7 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D04
 
-**更新したい現在地と、固定して継承する資料が同居する。状態：設計上の制約として未解消。**
+**更新したい現在地と、固定して継承する資料が同居する。状態：STR-001で分離設計を具体化。固定章の直入口制約は残存。**
 
 - **Node / Edge**：`ark-project/ark27/README.md`は章IdentityとCurrent Entryを保持し、01–05の継承資料から固定参照される。
 - **Confirmed**：章READMEは `current_thread: ark27-01` と旧01のCurrent Entryを保持する。Domain §0.1は通常入口を05へ向ける一方、章文書の固定参照を残存制約として説明する。章blobは `e7caf9882a212cbda186362001e49791cff8a8ce`。[章README][chapter]、[Domainの固定資料との境界][domain]
@@ -115,9 +125,11 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **完了条件**：選んだ入口と保存する履歴の役割が明確で、対象となる引継ぎ契約の整合を確認できる。通常案内の改善だけなら、この章直入口の制約を解消済みにしない。
 - **Unknown**：Binding移行の最適な方法、全ての直接入口の利用状況。この初版では固定資料を変更していない。
 
+- **STR-001後続対応**：01–06の六Handoff・六Stateの同一章blob参照を確認。現行Domainを可変入口として使う案、追加の章入口を設ける案、固定Binding移行を比較し、今回は既存Domainへ委ねる案を選んだ。詳細と残存制約は同記録のD04節。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d04)を参照。固定参照と章直入口の制約は現在も残る。
+
 ### D05
 
-**Queryの現在配置と、本文で起動する本体のパスが違う。状態：未修正。**
+**基準snapshotではQueryの配置と本文の本体パスが不一致。状態：STR-001で本体・Query双方を修正準備、Remote確認待ち。**
 
 - **Node / Edge**：`prompts/ark-open-knowledge-format_query.md`が対応するRuntimeを起動する。
 - **Confirmed**：Queryの `canonical_path`、`paired_ssot`、§0–2の起動先は旧 `s_special/` を指す。Treeにそのディレクトリはなく、`prompts/ark-open-knowledge-format.md`は存在する。[OKF Query §0–2][okf]
@@ -127,6 +139,8 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **変更と保持**：現役の起動経路を修正する。旧版を説明する引用や歴史的パスまで一括置換しない。
 - **完了条件**：Query→本体→必要Sourceの経路と意味が一致する。Markdownリンクだけでなく、YAMLやコードブロック内の実効パスも確認する。
 - **Unknown**：他の全Queryの同種問題。既存レビューの指摘は候補として再確認し、未調査部分を修正済みにしない。
+
+- **STR-001後続対応**：本体側にも旧自己パス・paired_queryが残るため、Query単体の修正から実在するペア双方の現在住所の整合へ具体化した。Bootstrapの由来名、EngineとQueryの役割、本文の判断原則を保持した。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d05)を参照。上の基準snapshotの根拠を現在の未修正状態として再利用しない。
 
 ### D06
 
@@ -143,7 +157,7 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D07
 
-**Projectの存在案内が、実際の候補版の存在へ追随していない。状態：未修正。**
+**基準snapshotではProjectの存在案内が候補版の実在へ未追随。状態：STR-001で候補の所在と記録上の段階を修正準備、Remote確認待ち。**
 
 - **Node / Edge**：`projects/ark-voice/README.md`がProject内の資料を案内する。
 - **Confirmed**：§6 Current Topologyは確認済みファイルをREADMEのみとし、Persistent System Markdownを今後の対象とする。一方、`ark-voice-system.md`は存在し、Identity部分で `v001-candidate`、`pending Human content seal`、`field_test_status: not_started` と宣言する。[Voice README §6][voice]、[SystemのIdentity][voice-system]
@@ -153,6 +167,17 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **変更と保持**：Projectの所在案内が対象。存在確認を研究再開・採用・実地成功へ昇格させない。
 - **完了条件**：READMEから既存の候補へ到達し、その採用・検証段階を正しく説明できる。
 - **Unknown**：記録外の後続採用・試験・UIの状況。古い `not_started` 表記だけで現在まで未実行と断定しない。
+
+- **STR-001後続対応**：READMEから既存Systemへ案内し、候補版・pending Human content seal・記録上のnot_startedを表示。存在確認を採用・試験の観測へ変換しない。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d07)を参照。上の基準snapshotの根拠を現在の未修正状態として再利用しない。
+
+### D08
+
+**Modeの索引・自己パス・関連Skill参照の身分が実体と揃わない。状態：STR-001で局所修正準備、Remote確認待ち。**
+
+- **Confirmed（STR-001の変更前）**：Mode READMEはJournalingのみを掲載し、存在するField Test候補を案内していない。Journalingの `path` は実在名と異なり、`related_skills` は不存在の旧 `_skill/` を指す。Mode READMEのSkill説明も旧配置。具体的な変更前blobと節は[STR-001](changes/STR-001-navigation-and-ownership.md#d08)にある。
+- **変更**：二Modeを保存本文の成熟段階付きで案内し、Skill Hubを正しく参照する。Journalingの自己パスを実体に合わせ、関連概念と旧Skillパスを由来として保持する。
+- **命名判断**：既存Field Testの `-mode.md` はREADME推奨の `_mode.md` と異なる。今回の所在修復では元名を明示した既存例外として保持し、別の改名・固定参照移行を始めない。
+- **残るUnknown**：記録外のMode利用・Field Test結果、旧Skillと現在Skillの厳密な対応、命名統一による効果。不存在を埋めるためだけの代替Skillを作らない。
 
 ## 4. 原因仮説と、残すべき構造
 
@@ -190,11 +215,11 @@ flowchart TD
 | E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
 | E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 05で受入れ済み。後続観測は同節§8。移動承認ではない |
 | E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 個別承認・移動・Remote確認まで完了 |
-| E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
-| E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | D03は05→06準備内で修正・Remote確認。D02は残る。退役案件の先行必須ではない |
-| E03：実効経路の修復 | D01・D05→現存する適切な資料 | 用途と本体Identityを確かめ、本文内の実効パスも整える | 計画。役割確認が必要 |
-| E04：存在の案内 | D07→Voice候補 | 候補の所在と、採用・稼働の未確認を正しく案内する | 計画。初版で同じ行にあったD06はE09へ分けた |
-| E05：固定参照の設計 | D04→章・継承契約 | 可変入口と固定資料の関係を設計し、対象契約を検証する | 設計候補 |
+| E01：入口への接続 | Root README→control-center | Public Front Doorからrepo全体の司令塔へ案内する | STR-001で修正準備。Remote確認は変更記録 |
+| E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と通常入口を整える | D03は確認済み。D02はSTR-001で修正準備 |
+| E03：実効経路の修復 | D01・D05→適切な資料 | 用途別の入口とOKFペア両側の現在住所を整える | STR-001で修正準備 |
+| E04：存在・身分の案内 | D07・D08→候補の実体 | Voice SystemとModeの所在・成熟段階を案内する | STR-001で修正準備。採用・起動とは区別 |
+| E05：固定参照の設計 | D04→章・継承契約 | 既存Domainの可変入口と固定章資料を分けて扱う | STR-001で比較・方針を具体化。章直入口制約とBinding移行は残る |
 | E06：続く実体整理 | 06の三群ランキング→ARC-002–004 | 七原本を保存。Bridgeは固定参照のため元パスも保持し、他六原本は移動。旧Seedの文脈継承価値を入口へ接続する | 保存・移動・案内をRemote確認済み。Bridgeの元パス除去は保留 |
 | E07：観測の継承 | 実装→根拠→再判断 | 個別アーカイブはARCHIVEの同じ案件へ結果を追記。全体レビューを行う場合は既存Repository Reviewsへ接続する | 実施した範囲に伴う記録 |
 
@@ -254,7 +279,7 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 
 ## 9. 継続時の更新方法
 
-各D項目は、その問題の状態・修正理由・Evidence・残存範囲を更新する。過去の観測や撤回理由を消して「最初から整っていた」ことにしない。個別アーカイブの詳細はARCHIVEの同じ案件へ追記し、本書は全体診断と優先順位へ戻れる入口を保つ。既存の日付付きレビューは観測時点の資料として残し、新たに全体レビューを行った場合はRepository Reviewsへ接続する。
+各D項目は、その問題の状態・修正理由・Evidence・残存範囲を更新する。通常の実装の5W1H・変更前後・検証は[changes/の変更記録](changes/STR-001-navigation-and-ownership.md)へ置き、本書から案件へ接続する。過去の観測や撤回理由を消して「最初から整っていた」ことにしない。個別アーカイブの詳細はARCHIVEの同じ案件へ追記し、本書は全体診断と優先順位へ戻れる入口を保つ。既存の日付付きレビューは観測時点の資料として残し、新たに全体レビューを行った場合はRepository Reviewsへ接続する。
 
 優先度はCurrent Humanの目的、新しいReality、参照先の変更で改められる。計画の順序を守るためだけの作業、全Unknownの解消待ち、毎回の全資料再読は課さない。必要な元資料を読んで判断する余地と、明示された契約・権限を両立させる。
 
@@ -407,4 +432,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.6.0
