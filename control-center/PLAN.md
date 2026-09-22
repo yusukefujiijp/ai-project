@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.3.0"
+version: "0.3.1"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / reconnect to Ark27:05 before physical moves"
+status: "archive-first workflow / Ark27:05 supplement accepted / ranked proposals requested; physical moves unapproved"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.1"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -28,8 +28,8 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.0"
 - **現在の診断**：D01–D07は基準snapshotで確認された未解消事項。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
 - **今回の追加**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。実装の観測は§10。
-- **直近の接続**：Humanの追加訂正により、物理移動の前に既存Ark27:05へ成果・理由・未完を合流する。[補足接続](#reconnect-ark27-05)を参照。構造整理の最初の具体案は引き続き[ARC-001](ARCHIVE.md#arc-001)。
-- **実利用の確認**：別AIの独立読解、利用頻度、Humanの再説明回数の変化は未観測。
+- **直近の接続**：Humanの追加訂正に従い、物理移動の前に既存Ark27:05へ成果・理由・未完を合流した。受入れの後続観測は補足§8。[補足接続](#reconnect-ark27-05)を参照。構造整理の最初の具体案は引き続き[ARC-001](ARCHIVE.md#arc-001)。
+- **実利用の確認**：既存05での補足受入れ応答を確認。別Contextでの再現性、利用頻度、再説明負担の変化は未観測。
 - **初版保存の状態**：二文書を保存し、再取得による全文一致を確認した。初版の完了観測と未実施範囲は§8に記録する。
 
 本書の「未実施」は、対応が無価値であることや、永久に禁止されることを意味しない。次の作業ではCurrent Human Requestと既存承認の適用範囲を読み、具体的な対象と影響に応じて進める。
@@ -185,7 +185,7 @@ flowchart TD
 |---|---|---|---|
 | E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANの初版保存・検証。観測は§8 | 完了した出発点 |
 | E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
-| E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 直近の接続。受入れ結果は同節 |
+| E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 05で受入れ済み。後続観測は同節§8。移動承認ではない |
 | E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最初の物理整理候補。今回は本流合流を先行 |
 | E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | 計画。退役案件の先行必須ではない |
@@ -349,7 +349,7 @@ control-centerはRepository全体の構造を扱い、Ark27:05は継続中のHum
 
 Source側で合流内容と受入れ条件をこの既存PLANへまとめ、ARC-001へHumanの順序訂正を記録する。新しい移行専用フォルダや05のTriadを作る必要はない。
 
-この記録を置いただけでは、Ark27:05のAIが読んだこと、受入れ条件を満たしたこと、Humanが貼付したことは確認できない。Targetの受入れは未観測である。Humanが接続文を既存Ark27:05のThreadへ貼り付け、受入側が上の区別を説明した時、その実際の応答を受入れ結果として扱う。
+Source準備時点では、この記録を置いただけでArk27:05のAIの読解・受入れやHumanの貼付は確認できず、Target受入れは未観測だった。後続の実際の受入れは§8に分けて残す。Humanが接続文を既存Ark27:05のThreadへ貼り付け、受入側が上の区別を説明した時、その実際の応答を受入れ結果として扱う。
 
 2026-09-22、[PLANの補足保存](https://github.com/yusukefujiijp/ai-project/commit/038f3b82a4a41fccc1cf6e1c008da8d29aec1456)と[ARCHIVEのHuman訂正保存](https://github.com/yusukefujiijp/ai-project/commit/42e0ab4b700701be3a7db5e30438166f82fdf51f)を行い、各対象をRemoteから再取得して意図した全文との一致を確認した。両文書が揃ったcommit `42e0ab4b700701be3a7db5e30438166f82fdf51f` のTree照合では、変更はPLANとARCHIVEの二つだけで、その他308ファイルは同じblobだった。checkerの元パス、__archives入口、既存sandbox、Ark27:05のTriadを保持し、移動先の実体は未作成である。この観測に基づいて本段落を追記した。
 
@@ -357,7 +357,7 @@ Source準備と保存確認は完了した。Targetの返答がこのThreadへ�
 
 ### 7. 今回のSource読解証拠
 
-2026-09-22、作業基点308e980で確認した。
+2026-09-22、Source準備の作業基点308e980で確認した。
 
 - 共通契約：`prompts/ai-next-thread-handoff.md`、`v002-candidate`、blob `64d05a310750104eef4496d9ace1d6fe1ba69054`。Beginning Identityから `EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate` まで全文を読み、未読Gapなし。
 - Target Runtime：`ark-project/ark27/ark27-05/README.md`、`v001-human-authorized`、blob `0a0b5c891ef2ce04102ae5135e22f8df0632d3aa`。先頭から `ARK27_05_README_EOF_v001` まで全文確認。
@@ -365,6 +365,21 @@ Source準備と保存確認は完了した。Targetの返答がこのThreadへ�
 - Domain入口は `dd38f6faec22f47f7bc6f18b4925d086c11ac366`、AGENTSは `f5d03efda8239bb03b2c8787331104f404461d16` で既読と同一。現在の入口§0.1と対象Treeを照合した。
 
 このSource読解証拠は、Target自身の受入れや全Triad再構成を認定する証拠ではない。
+
+
+### 8. Ark27:05での受入れと、次Threadのランキング希望
+
+2026-09-22の05→06移行準備時、既存Ark27:05で行われたSUPPORT_RECONNECTの実際の受入れ応答を後続観測として追加した。出典は[05経験原本](../ark-project/ark27/ark27-05/task-records.json) revision 2の Source `support-reception-s01`、Node `support-reconnect-accepted`。作成元Threadの準備記録を、そのまま受入れ成功へ昇格したものではない。検証可能な会話URLや未提示の発言時刻は作っていない。
+
+05は共通契約と四文書を宣言順に全文確認し、§5の六条件を根拠付きで説明した。確認した意味は、①既存Main Owner05とrepo全体の司令塔の区別、②実体移動より先の合流というHuman訂正、③文書保存・Target受入れ・物理移動・効果の別段階、④ARC-001の元パス・提案先・退役理由・Seed・参照確認の限界、⑤四文書の責務、⑥Root・Human Authority・Guardと移動未承認を保持した応答である。05の成功済みBootは反復せず、この受入れ時にRepository変更や実体移動は行わなかった。
+
+当該受入れで確認したblobは、共通契約 `64d05a310750104eef4496d9ace1d6fe1ba69054`、README `dff12a401d510280c8c73d1dc26ba2008c316d9b`、PLAN `f96fdd362516b5ecd00c3993c6c70dd076916f9a`、ARCHIVE `48c990603b2f4017ac6a2c6feea53ece64ab78aa`、__archives入口 `8642257c2e89ef550dd47978ad7ff2e73df6a5d2`。これはその版の全文読解記録であり、後続版や06の読解を先取りしない。
+
+その後Humanは、次ThreadでDouble-Spiralの一つとして、アーカイブした方がよいフォルダ・ファイルを**ランキング形式で楽しんで提案**することを求めた（R05 `archive-ranking-s01`）。順位は現役配置が生む混乱、役割終了の根拠、依存・変更影響、Seed保存と戻し方、有限の実施範囲から判断する案がある。ARC-001はAIの暫定上位候補であり、Humanによる移動承認・順位固定ではない。架空の下位候補や根拠のない点数で表を埋めない。古い・似ているという理由だけでは退役としない。
+
+ランキングは会話上の選択Interfaceとして使える。別のランキング台帳を必須にせず、必要な診断・優先順位は本PLAN、具体的な提案と承認・実施はARCHIVEの案件へ戻す。新候補はCurrent Source・呼出し元・参照・保存価値を確認してから提案する。通常の案内修正で足りるものや固定Bindingの設計が必要なものを、物理アーカイブへ混ぜない。
+
+今回の移行準備承認は、05の最新記録・06 Triad・必要な入口同期と検証に限る。ARC-001の個別承認・移動は引き続き未実施。別の生活テーマも保持するが、Humanに複数Taskの同時実行を要求せず、06のBootやこの記録だけで整理作業を開始しない。
 
 [system]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_system/ark-system.md
 [note]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_note/README.md
@@ -381,4 +396,4 @@ Source準備と保存確認は完了した。Targetの返答がこのThreadへ�
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.1

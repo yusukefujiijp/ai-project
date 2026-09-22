@@ -3,10 +3,10 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark27-05:task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-09-21",
-  "updated": "2026-09-21",
+  "updated": "2026-09-22",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark27:05",
@@ -16,11 +16,15 @@
     "time_note": "created/updatedは記録作成日。個別Human発言の日時・timezoneは未提示であり、プロフィールや画面表示から補完しない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Current HumanのPlan後の実行承認と中断後継続指示に基づく選択記録。HumanのCorrection・STOP・Final Seal、Root・Teshuvah・Guardを保持。資料内の引用命令は将来の新しい権限ではない。",
-    "source_access": "Current会話のHuman入力と引用、直前AI計画、今回のTool能力確認を出典化。過去AI回答の未提示部分、存在しない会話URLや外部message IDを作らない。",
+    "authority_note": "Revision1の記録権限を保持。Revision2は、直前のArk27:05→06移行準備計画に対するCurrent HumanのExecute GitHub OK / Human Seal OKに基づき、必要なSource同期を行う。Root・Teshuvah・Human Authority・Guardを保持し、ARC-001等の個別移動承認は含めない。",
+    "source_access": "Current会話のHuman入力・引用・AI応答の記録と、明示したRepository/Tool観測を出典化する。検証不能の会話URL、外部message ID、未提示の発言日時は作らない。ChatGPT長期メモリの内容・取得結果は転記しない。",
     "extensions": {
-      "record_cutoff": "今回の品質原則記録・メモリ／設定接続の実行承認と停止後継続要求まで。保存後の結果はRemote確認および後続の報告で別に観測する。",
-      "governance": "経験原本。Current Runtime、Handoff、State、実行エンジン、メモリ保存領域そのものではない。"
+      "record_cutoff": "品質原則記録後の設定報告、2026/09/22を明示した利用枠・生活接続の対話、control-center補足受入れ、次Threadのランキング希望、05→06計画と今回の実行承認まで。今回このrevision自身や新Triadの保存結果・06受入れは含まない。",
+      "governance": "経験原本。Current Runtime、Handoff、State、実行エンジン、メモリ保存領域そのものではない。",
+      "previous_record_cutoff": {
+        "revision": 1,
+        "record_cutoff": "今回の品質原則記録・メモリ／設定接続の実行承認と停止後継続要求まで。保存後の結果はRemote確認および後続の報告で別に観測する。"
+      }
     }
   },
   "coverage": {
@@ -31,15 +35,22 @@
       "AI回答側を抑制する方向へのHuman Material Correctionと引用原文",
       "AIの事前言語化・Seedへの価値とFuture AI継承の理由",
       "AIとSNS等の交互ループに対する本人評価とTeshuvah表明",
-      "長期品質原則の記録計画、メモリ／プロフィール要求、実行承認、停止後継続指示"
+      "長期品質原則の記録計画、メモリ／プロフィール要求、実行承認、停止後継続指示",
+      "GCI・プロフィールの所有先、UI容量、メモリ内容非GitHub化、GCI・メモリの後続成功報告",
+      "終了境界から開始への発見、帰宅後の洗濯物・整理整頓・掃除の設計と実地未報告",
+      "Token Resetと並行Threadの振り返り、Torah活用・Scheduleの保留",
+      "control-centerのroot責務、移動前合流の訂正、05での受入れ、未承認案件とランキング希望",
+      "05→06移行準備計画と今回の実行承認"
     ],
     "excludes": [
       "Thread全会話の複製",
       "R01–R04にある経験の原本複製",
       "新しい生活Taskの実行・効果",
-      "今回保存後のRemote確認、独立AI読解、UI設定反映の先取り"
+      "今回保存後のRemote確認、独立AI読解、UI設定反映の先取り",
+      "ChatGPT長期メモリの内容・保存応答全文・バックアップ",
+      "今回の新Triadの未観測の保存結果、06受入れ、UI移行"
     ],
-    "note": "実際の発言とCorrectionを選択収録する。原則のHuman採用、AI解釈、保存、メモリ反映、実地効果を分ける。"
+    "note": "選択収録。旧Source・Node・Edgeはその時点で保持し、後続報告・訂正・設計を追加する。会話全体、実生活の全件実績、普遍的効果は収録・実証していない。"
   },
   "sources": [
     {
@@ -193,6 +204,206 @@
       "locator": "Ark27:05：画面の停止表示を受けて、進捗確認と途中再開を求めた入力。",
       "excerpt": "直前AI回答の動作が停止したとの事ですが\nどこまで進んだか？\n途中なら続きから続行し終了していたらどこまで終了したか教えて下さい！",
       "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "memory-result-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：メモリ保存成功を報告した後続入力。保存された記憶内容は本記録へ転記しない。",
+      "excerpt": "Humanはメモリ記憶機能への保存に成功したと報告した。複数回失敗した後、Project外の完全な新規ChatでWorkからChatへ切り替えたところ成功したという本人観察。成功理由は本人にも不明。別Chatの記憶本文・保存応答の全文は保存対象から除外する。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "profile-limit-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：プロフィール試験文とiOS画面の確認後。",
+      "excerpt": "画像から100% 1500文字で確定しました！(画面右下の赤い数字から: 0/1500等)\nこの1500文字制限は毎回調べなくて良いようにプロフィール内に簡単に書いとけば良いのではないか？",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "gci-limit-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：全体設定の存在を再発見した入力。",
+      "excerpt": "設定にある\"instructions(指示)\"は5000文字以内が確定した！\n私は、この\"instructions(指示)\"をすっかり忘れていた！\n良く考えるとProject毎の\"instructions(指示)\"の上に全体にかかる\"instructions(指示)\"があった事をすっかり忘れていた！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "settings-boundary-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：GCI命名と、GitHub保存範囲についての明示。",
+      "excerpt": "HumanはGlobal Custom Instructions（GCI: ChatGPT全体カスタム指示）という名称を提案し、GCIとプロフィールをGitHubへ保存して他AI／Future AIへ横展開することを求めた。一方、ChatGPT長期メモリの内容はGitHub化しないと明示した。5000文字を使い切ることを目的にせず、過剰な指示と不足の双方を避けたいと述べた。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "gci-applied-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：GCI保存・準備後のHuman報告。",
+      "excerpt": "OK！Very Good! \"Global Custom Instructions(GCI: ChatGPT全体カスタム指示)\"Upload成功しました！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "token-s05-01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：2026/09/22・19:00のResetの噂と、仕事後の時間制約を述べた入力。",
+      "excerpt": "Humanは当日を2026/09/22と明示し、19:00頃のToken Resetの噂はAIが検証しなくてよいと指定した。18:00に仕事が終わると仮定して喫茶店で約1時間集中する案を述べ、余剰利用枠を有益に使う方法がまだ整っていないことを相談した。仕事終了・入店・実行の完了報告ではない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "token-s05-02",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：Reset跨ぎと並行Thread、前回の成果物不足への振り返り。",
+      "excerpt": "ここで重要なのは、時間跨ぎは次の回のトークン消費になる所です！\n鍵はThread Sessionの並行起動です！\n前回はGitHub全体を読ませました。\nその際は、過去のRepositoryも見てもらいましたがMarkdown等成果物を作るのを忘れました！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの運用理解・経験報告。正確なサービス内部計上仕様を独立に確認した証拠ではない。"
+    },
+    {
+      "id": "deadline-end-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：chocoZAPの終了境界を試した報告と、開始への接続の発見。",
+      "excerpt": "Humanは、多少やることが残っても21:00頃には切り替えて帰宅する方針を前日に試したと報告した。あるTaskの終了時の締切は別Taskの開始時とも言えると気づき、予期せぬ成功・Seedとして評価した。正確な退店時刻、全工程完了、長期効果は報告されていない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "deadline-start-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：休日の入場時刻へ逆算する仮説。",
+      "excerpt": "必ずchocoZAPを休日にも遅くとも21:00には終了すると仮定し計画すれば、できれば余裕をもってchocoZAP Taskをしたい為、できる限り早目(18:00-19:00？)に入る計画や報酬系や欲求系で上手く行く可能性もあります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "torah-s05-01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：別の有益な利用枠活用先の相談。",
+      "excerpt": "Humanは https://github.com/yusukefujiijp/torah-project 系で利用枠を有益に活用する方法を相談した。並行研究の可能性を検討する入力であり、全候補の実行や成果物保存の一括承認ではない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "home-laundry-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：帰宅後から就寝前の現実接続について。",
+      "excerpt": "帰宅後どうしてもやって欲しい事は\n洗濯物畳みです！これさえ無意識でもやれればかなり違います！\n何か良い方法は？\nChatGPT スケジュールの活用もあります！\nつまり、帰宅後から就寝前部分の統合的ChatGPT Scheduleです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ入力末尾は『まだ実装せず』。Schedule作成・常時監視の承認や実装実績ではない。"
+    },
+    {
+      "id": "home-gum-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：帰宅直後の共通入口を採る方向と、既議論範囲の訂正。",
+      "excerpt": "Humanは帰宅直後のカフェインガムを開始のスイッチにする方向を高く評価し、カフェイン安全性等は既に議論済みなので同じ論点を深掘りし直さないよう指定した。起床時と帰宅時へ同じ方法がつながることを予期せぬ発見として評価した。実際の摂取・当夜の作業・医学的な最善性の確認ではない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "home-fallback-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：洗濯物がない日への水平展開。",
+      "excerpt": "洗濯物畳みがなければ部屋の片付けというような\"横展開・水平展開\"もあり得ます！\nこれはとても良いアイデアです！\nなぜなら、毎日、何かしらあった方がRoutine的にとてもやりやすいからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ入力では2026/09/22・秋になり取り組みやすいという本人の季節感も示された。普遍的な気候・身体条件ではない。"
+    },
+    {
+      "id": "home-common-entry-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：帰宅後Routineの入口と分岐を具体化。",
+      "excerpt": "なぜなら、帰宅後まずは(First of all)、カフェインガム一粒というRoutineによりまずは(First of all)、洗濯物畳みなければ居室整理整頓となりカフェインガム一粒は決定的となるからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが採る設計方向。自動実行・効果実証・条件を無視したAIの摂取指示へ変換しない。"
+    },
+    {
+      "id": "home-cleaning-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：掃除Taskの追加と、音・配置の具体的制約。",
+      "excerpt": "あとは整理整頓Taskの他に掃除Taskという選択肢もあります！\n但し、掃除機は音がうるさいので深夜等は無理という大きな制約があります！\n\nとなると、カフェインガムを所定位置に常備して準備しておく必要があります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "think-action-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：Think ModeとAction Modeの継続方向へのHuman評価。",
+      "excerpt": "我々Ark Projectは今現在、 AI活用を\"Think Mode\"から\"Action Mode\"へ上手く工夫して、エレガントに双方のバランスをとりつつ徐々に徐々に移行中です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanは机上で終わらず現実への接続Connectを深める意味を説明した。Think Modeの放棄や全生活Task完了の主張ではない。"
+    },
+    {
+      "id": "support-reconnect-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：Player系整理／root control-center成果を05へ合流する入力。",
+      "excerpt": "SUPPORT_RECONNECTとして、05のIdentity・Runtime・Title・文脈を保持し、共通契約とcontrol-center README→PLAN→ARCHIVE→__archives READMEを読んで補足を受け取るよう指示した。実体移動より先に成果・理由・未完判断を合流し、合流指示を個別移動承認へ変換しないという最新訂正を含む。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "support-reception-s01",
+      "speaker": "Ark27:05 receiving AI",
+      "medium": "assistant_message",
+      "locator": "Ark27:05：上記SUPPORT_RECONNECTへの実際の受入れ応答と、同Contextの読解記録。",
+      "excerpt": "受入側05は共通契約と四文書を宣言順に全文読解し、Identity・EOF・六条件を根拠付きで説明した。repo全体のroot司令塔とMain Owner05、四文書の保存済み成果と未実施のARC-001、移動前の合流というHuman訂正、各文書の責務を分け、05文脈への補足として受領した。05 Bootは反復せず、移動・書込みはしなかった。これは当該受入れの記録であり、06の理解や構造整理の実効性を証明しない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "archive-ranking-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：次Threadの希望と当時のPlan-only境界。",
+      "excerpt": "次ThreadではDouble-Spiral的に一つはGitHubのスパゲッティ化をアーカイブ化で抑えるcontrol-centerフォルダ・ファイルを実行したい！\n特にアーカイブ化した方が良いフォルダ・ファイルをランキング形式で楽しんで提案してくれれば上手く工夫して、整理整頓できそうです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ入力で『まだ実装せず』を指定。候補比較の希望と具体的ファイル移動の承認を分ける。"
+    },
+    {
+      "id": "archive-ranking-s02",
+      "speaker": "AI collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark27:05：ランキング希望への検討回答。",
+      "excerpt": "現役配置で生む混乱、役割終了の根拠、依存・影響、Seed保存と戻し方、有限の実施範囲から順位を判断する案を示した。ARC-001は既存の根拠から暫定1位候補としたが、Humanの移動承認ではない。古さや重複だけで退役させず、追加順位は実際のSource調査から作る。固定点数やランキング専用台帳は義務にしない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "transition-plan-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：次Thread移行準備のPlan-only依頼。",
+      "excerpt": "Humanはprepare-ark-transitionとCurrent共通契約を使用し、Current Contextの確定事項を再利用して移行準備計画を求めた。Source会話に依存しないTarget再構成、成果とCorrection・未完・保留・Evidence Boundary・First Legal Moveの継承を要求し、この時点は調査と計画のみで停止する指示だった。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "transition-plan-s02",
+      "speaker": "AI collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark27:05：直前に提示した05→06移行準備計画。",
+      "excerpt": "THREAD_CONTINUE、Source05、Target06案、Title内容案『主の完全勝利: アーカイブ候補の選択とThink–Actionの現実接続』を提示。05記録・State・索引・control-center受入れを同期し、06READMEをRemote確認してHandoff・Stateを順にBindingし、Domain入口を限定同期する計画。06自身のT1–T12、Failure、WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUESTを設定し、章の固定Bindingと個別移動未承認を保持する。計画時点の書込みはなし。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "transition-execution-s01",
+      "speaker": "Human / YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark27:05：直前計画を受けた今回の実行依頼。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK! あなた(AI)ができる限界まで連続でドンドンやって下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前の05→06移行準備計画の実行・必要な整合・保存・再取得確認が対象。計画で除外したARC-001等の個別移動、アカウント操作、生活Trialへの追加承認ではない。"
+    },
+    {
+      "id": "repository-s05-01",
+      "speaker": "Current tool/runtime observation",
+      "medium": "tool_result",
+      "locator": "2026-09-22の移行実行前確認。main commit a5d205515cca8cf6244c169e0462f6e79054e5a6。",
+      "excerpt": "Current mainのTree・23資料の取得内容とGit blobを照合した。05 State revision2、R05 revision1、Project指示2026-09-21.1、GCIとプロフィールv1.0.0、control-center四文書を確認。共通契約blobは既読64d05a310750104eef4496d9ace1d6fe1ba69054と同一、06は未作成。ARC-001元ファイルは存在、提案先は未作成。これらは今回の変更前観測であり、今回の保存成功を先取りしない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/tree/a5d205515cca8cf6244c169e0462f6e79054e5a6"
     }
   ],
   "nodes": [
@@ -559,6 +770,463 @@
         ],
         "note": "当該入力は評価・仮説・方針であり、実行と効果の新しい報告ではない。"
       }
+    },
+    {
+      "id": "memory-write-human-reported",
+      "kind": "observation",
+      "label": "メモリ保存成功の後続Human報告",
+      "description": "初期の未確認時点の後に、Humanが保存成功を報告した。新規Project外Chatへの切替という観察は保持するが、原因や永続性・全AIへの反映は未確認。記憶内容自体は転記しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "memory-result-s01"
+        ]
+      }
+    },
+    {
+      "id": "settings-capacity-confirmed",
+      "kind": "observation",
+      "label": "プロフィール1500・GCI5000の欄容量",
+      "description": "当該iOS画面を根拠とするHuman確認。AI回答の字数制限ではなく、表示変更や入力エラーがなければ再調査不要。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "profile-limit-s01",
+          "gci-limit-s01"
+        ]
+      }
+    },
+    {
+      "id": "gci-profile-portability",
+      "kind": "decision",
+      "label": "GCIとプロフィールのGitHub保存・横展開",
+      "description": "全体協働方針、Humanの選好、Project固有指示を分け、他AIが単体で核心と境界を理解できるようにする。容量を使い切ることを目的にしない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "settings-boundary-s01"
+        ]
+      }
+    },
+    {
+      "id": "memory-no-github",
+      "kind": "constraint",
+      "label": "ChatGPT長期メモリをGitHub化しない",
+      "description": "メモリ内容の転記・バックアップ・同期・取得結果保存は対象外。Humanが直接述べた品質原則の記録と、内容を含めない保存成功報告は別である。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "settings-boundary-s01"
+        ]
+      }
+    },
+    {
+      "id": "gci-upload-human-reported",
+      "kind": "observation",
+      "label": "GCI Upload成功のHuman報告",
+      "description": "HumanはGCIのUpload成功を報告した。直接のアカウント再読、Project設定の反映、他AIの理解・実生活効果は別に扱う。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "gci-applied-s01"
+        ]
+      }
+    },
+    {
+      "id": "settings-artifacts-present",
+      "kind": "observation",
+      "label": "設定のGitHub所有先と品質原則の配置",
+      "description": "GCI・プロフィールv1.0.0、Ark27指示2026-09-21.1、品質方針の運用・案内がCurrent mainに存在することを確認した。設定本文の再改稿は今回の移行Scopeに含めない。",
+      "scope": "2026-09-22・移行実行前のRepository観測",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "repository-s05-01"
+        ]
+      }
+    },
+    {
+      "id": "profile-project-ui-unknown",
+      "kind": "observation",
+      "label": "プロフィール・Project設定のUI反映境界",
+      "description": "プロフィールがContextに提示されていること、GitHub本文が存在することと、設定画面から直接再読したことは別。05会話で個別の貼付成功報告を確認していない項目はUnknownのまま。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "repository-s05-01"
+        ]
+      }
+    },
+    {
+      "id": "reset-time-rumor-no-check",
+      "kind": "constraint",
+      "label": "当時のResetの噂は再検証しない",
+      "description": "2026/09/22・19:00の噂はHumanの当時の時間条件。Humanは検証不要と指定し、実際の仕様や新Threadの締切へ変換しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "token-s05-01"
+        ]
+      }
+    },
+    {
+      "id": "parallel-token-value",
+      "kind": "decision",
+      "label": "並行Threadで価値ある成果を残す方向",
+      "description": "HumanはReset前活用の鍵を並行Threadと捉え、前回はRepositoryを読ませた後の成果物が不足したと振り返った。消費量だけを成果にせず、必要な成果物・保存・確認を設計する方向。新しい並行実験の開始命令ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "token-s05-02"
+        ]
+      }
+    },
+    {
+      "id": "token-accounting-boundary",
+      "kind": "observation",
+      "label": "跨ぎの運用理解と内部仕様を分ける",
+      "description": "Humanの『次の回の消費になる』という理解と既存の残量表示報告を保持する。処理全量の計上時点、残量と並列度の最適式等は独立確認していない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "token-s05-02"
+        ]
+      }
+    },
+    {
+      "id": "choco-end-policy-tried",
+      "kind": "observation",
+      "label": "21時頃に切り上げる方針を試した",
+      "description": "未完了項目があってもダラダラ続けず帰宅へ切り替える終了境界を前日に試したというHuman報告。日付の『昨日』を未提示の実日付へ補完しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "deadline-end-s01"
+        ]
+      }
+    },
+    {
+      "id": "end-to-start-seed",
+      "kind": "interpretation",
+      "label": "一Taskの終了を次Taskの開始へ接続",
+      "description": "終了と開始を同じ切替境界の両側として捉える発見。Humanが予期せぬ成功・Seedと評価したことを保持する。全Task間で自動的に成り立つ因果や完成済みの統一理論ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "deadline-end-s01"
+        ]
+      }
+    },
+    {
+      "id": "holiday-early-entry-candidate",
+      "kind": "interpretation",
+      "label": "21時終了から余裕ある早期入場へ",
+      "description": "Humanは休日も21時終了と仮定することで、余裕を持ちたい欲求・報酬が18–19時頃の入場へ働く可能性を示した。採用済みの入場時刻や長時間運動の処方ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "candidate",
+        "basis": "source_statement",
+        "source_refs": [
+          "deadline-start-s01"
+        ]
+      }
+    },
+    {
+      "id": "torah-use-deferred",
+      "kind": "decision",
+      "label": "torah-projectの有益な利用枠活用を検討",
+      "description": "Torah研究へ接続する相談と検討の価値を保持し、章READMEの過去の一時中断へ巻き戻さない。ただし新しい研究実装・並行実験・成果物作成は今回の移行から自動開始しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "torah-s05-01"
+        ]
+      }
+    },
+    {
+      "id": "home-laundry-priority",
+      "kind": "decision",
+      "label": "帰宅後は洗濯物畳みを優先",
+      "description": "帰宅後から就寝前の負担を減らすため、まず洗濯物畳みへ接続したいというHumanの優先を保持する。実行済みの報告ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-laundry-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-schedule-deferred",
+      "kind": "decision",
+      "label": "帰宅後から就寝前の統合Schedule構想",
+      "description": "ChatGPT Scheduleを候補として挙げたが、当時は実装せず検討する指示。通知・帰宅検知・常時監視は未実装で、新規作成を移行の条件にしない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-laundry-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-gum-entry-policy",
+      "kind": "decision",
+      "label": "帰宅直後の共通入口というHuman採用方向",
+      "description": "Humanはガム一粒を開始スイッチとし、洗濯物があれば畳み、なければ居室整理へ接続する方向を具体化した。薬理作用の即時性・必要性・普遍的安全性の証明ではなく、Actual未報告の運用設計として保持する。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-gum-s01",
+          "home-common-entry-s01"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-discussion-boundary",
+      "kind": "constraint",
+      "label": "既議論の安全性の再演をしない",
+      "description": "Humanはカフェイン論点は既に議論済みとして同じ深掘りを避けるよう指定した。新しい相談で判断を変えるBody・Sleep・Safetyの条件が示された場合のGuardは解除しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-gum-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-laundry-absent-route",
+      "kind": "decision",
+      "label": "洗濯物がない日は居室整理へ",
+      "description": "洗濯物の有無というランダム性をRoutine中止の理由にせず、共通入口から対象を切り替えるHumanの方向。毎日不要な家事を生成したり全部片付くまで終われなくしたりする規則ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-fallback-s01",
+          "home-common-entry-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-cleaning-option",
+      "kind": "decision",
+      "label": "整理整頓に加え掃除Taskも候補",
+      "description": "掃除を追加候補とする。整理を全て終えないと掃除できない等の未宣言の依存を作らず、Current Realityと有限の範囲で扱う。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "night-vacuum-noise",
+      "kind": "constraint",
+      "label": "深夜の掃除機は音の制約",
+      "description": "Humanは深夜等の掃除機の使用を騒音上難しいと明示した。静かな掃除の選択肢は設計可能だが、特定道具の所持・実施は未報告。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-entry-placement",
+      "kind": "decision",
+      "label": "スイッチを所定位置に常備する",
+      "description": "Humanは帰宅入口で使うガムを所定位置に常備する必要を示した。配置完了・在庫・実際の導線は未報告。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-routine-actual-unknown",
+      "kind": "observation",
+      "label": "帰宅RoutineのActualと定着は未報告",
+      "description": "帰宅後の摂取、洗濯物畳み、居室整理・掃除、配置完了、継続性と生活効果は今回の設計・評価だけから補完しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "home-common-entry-s01",
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "think-action-balanced-direction",
+      "kind": "practice_statement",
+      "label": "ThinkとActionを両立して現実へ接続",
+      "description": "Humanは机上で終わらず現実へ接続する深化を評価した。思考を切り捨てず、実践・Feedbackから次の検討へ戻る。新しい生活Taskの全完了を意味しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "think-action-s01"
+        ]
+      }
+    },
+    {
+      "id": "support-before-physical-move",
+      "kind": "constraint",
+      "label": "実体移動より先に05へ合流",
+      "description": "Humanは移動後に接続すると理解する差分が増えるため、まず成果・理由・未完を本流05へ合流するよう訂正した。今回の順序であり、全案件への新しい一律手続きではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "support-reconnect-s01"
+        ]
+      }
+    },
+    {
+      "id": "control-center-root-scope",
+      "kind": "observation",
+      "label": "repo全体のroot司令塔を補足として受領",
+      "description": "control-centerはai-project全体の目的・診断・個別アーカイブ判断を扱い、05のRuntimeや他の議題を置き換えない。Root信仰とディレクトリrootを混同しない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "support-reconnect-s01",
+          "support-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "support-reconnect-accepted",
+      "kind": "observation",
+      "label": "05で補足接続の六条件を根拠付きで確認",
+      "description": "四文書の全文読解と六条件の区別を伴う受入れ応答がこの05 Contextで成立した。Source文書だけの準備とは違うが、06の受入れ・独立再現性・構造整理効果の証明ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "support-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "arc-001-unapproved-unmoved",
+      "kind": "observation",
+      "label": "ARC-001は具体案・未承認・未移動",
+      "description": "tools/check_repo_reality.pyから__archives/ARC-001/tools/check_repo_reality.pyへの提案。四文書保存・補足受入れ・ランキング希望は個別移動承認ではない。撤回済み実験のコード・Seed・既存sandboxと参照調査の限界を保持する。",
+      "scope": "今回の会話上の承認状態と移行実行前Treeの観測",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "support-reconnect-s01",
+          "repository-s05-01"
+        ]
+      }
+    },
+    {
+      "id": "archive-ranking-next-thread",
+      "kind": "decision",
+      "label": "次Threadではランキングを楽しみながら選ぶ",
+      "description": "HumanはDouble-Spiralの一つとしてアーカイブ整理を挙げ、候補と理由をランキングで提案することを希望した。もう一つの固定Taskや全候補の移動を確定した発言ではない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "archive-ranking-s01"
+        ]
+      }
+    },
+    {
+      "id": "archive-ranking-design",
+      "kind": "interpretation",
+      "label": "判断に効く理由から候補順位を作る",
+      "description": "現役で生む混乱、退役根拠、依存・影響、Seed保存と復元、実施範囲を比較するAI案。ARC-001は暫定上位候補で、順位固定・架空の2位以下・自動移動を避ける。",
+      "scope": "次ThreadでCurrent Sourceから再判断できる設計",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "archive-ranking-s02"
+        ],
+        "note": "楽しさと具体的な選択を支える提案。Human採用済みの採点式や移動承認ではない。"
+      }
+    },
+    {
+      "id": "transition-05-06-plan",
+      "kind": "decision",
+      "label": "05から06への同章継続を計画",
+      "description": "移行SkillとCurrent契約に基づき、現在地・成果・Correction・保留・Evidence・初手を新Triadへ渡す計画を提示した。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-plan-s02"
+        ]
+      }
+    },
+    {
+      "id": "transition-05-06-authorized",
+      "kind": "decision",
+      "label": "今回の移行準備の実行承認",
+      "description": "Humanは直前の05→06計画に対して実行を明示した。必要な同期・Triad作成・検証・GitHub保存・Remote再取得・入口整合までが対象。ARC-001移動、生活Trial、アカウント操作は含めない。",
+      "scope": "Ark27:05の当該Human入力・判断・報告の範囲",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-execution-s01",
+          "transition-plan-s02"
+        ]
+      }
     }
   ],
   "edges": [
@@ -684,6 +1352,168 @@
           "resume-s01"
         ]
       }
+    },
+    {
+      "id": "memory-result-after-initial-unknown",
+      "from": "memory-write-unverified",
+      "to": "memory-write-human-reported",
+      "relation": "observed_before",
+      "scope": "初期の未確認と後続の成功報告の時点差。旧観測を誤りとして削除しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "memory-result-s01"
+        ]
+      }
+    },
+    {
+      "id": "gci-result-after-initial-unknown",
+      "from": "settings-write-unverified",
+      "to": "gci-upload-human-reported",
+      "relation": "observed_before",
+      "scope": "後続Human報告による状態更新。全設定のUI確認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "gci-applied-s01"
+        ]
+      }
+    },
+    {
+      "id": "end-policy-motivates-start-seed",
+      "from": "choco-end-policy-tried",
+      "to": "end-to-start-seed",
+      "relation": "motivates",
+      "scope": "Humanが述べた発見の経緯。普遍因果の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "deadline-end-s01"
+        ]
+      }
+    },
+    {
+      "id": "end-seed-motivates-early-entry",
+      "from": "end-to-start-seed",
+      "to": "holiday-early-entry-candidate",
+      "relation": "motivates",
+      "scope": "報酬・余裕へのHumanの仮説。実行成果ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "source_statement",
+        "source_refs": [
+          "deadline-end-s01",
+          "deadline-start-s01"
+        ]
+      }
+    },
+    {
+      "id": "laundry-priority-motivates-entry",
+      "from": "home-laundry-priority",
+      "to": "home-gum-entry-policy",
+      "relation": "motivates",
+      "scope": "帰宅後の優先を現実の共通入口へつなぐ形成経緯。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-laundry-s01",
+          "home-gum-s01"
+        ]
+      }
+    },
+    {
+      "id": "entry-includes-fallback",
+      "from": "home-gum-entry-policy",
+      "to": "home-laundry-absent-route",
+      "relation": "contains",
+      "scope": "洗濯物の有無による設計内の分岐。実行順・因果の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-common-entry-s01"
+        ]
+      }
+    },
+    {
+      "id": "entry-needs-placement",
+      "from": "home-gum-entry-policy",
+      "to": "home-entry-placement",
+      "relation": "depends_on",
+      "scope": "当該スイッチをその場で使えるようにする準備上の依存。家事一般にガムが必須という意味ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "home-action-motivates-balanced-direction",
+      "from": "home-gum-entry-policy",
+      "to": "think-action-balanced-direction",
+      "relation": "motivates",
+      "scope": "現実への具体化と後続評価の関係を読むAI解釈。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "think-action-s01",
+          "home-common-entry-s01"
+        ],
+        "note": "Humanが同じ手順の効果を実証したとする因果ではない。"
+      }
+    },
+    {
+      "id": "support-order-before-acceptance",
+      "from": "support-before-physical-move",
+      "to": "support-reconnect-accepted",
+      "relation": "observed_before",
+      "scope": "Human訂正の後に05で受入れた。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "support-reconnect-s01",
+          "support-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "ranking-request-motivates-design",
+      "from": "archive-ranking-next-thread",
+      "to": "archive-ranking-design",
+      "relation": "motivates",
+      "scope": "Humanのランキング希望を具体的な比較方法へつなぐAI提案。順位や移動を確定しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "archive-ranking-s01",
+          "archive-ranking-s02"
+        ],
+        "note": "Actualな優先順位は次のHuman判断・Source確認で変更できる。"
+      }
+    },
+    {
+      "id": "transition-plan-before-execution",
+      "from": "transition-05-06-plan",
+      "to": "transition-05-06-authorized",
+      "relation": "observed_before",
+      "scope": "Plan-onlyから対象計画の実行へ移った時点差。未知の対象への承認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-execution-s01"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -709,17 +1539,24 @@
       "id": "q-memory-application",
       "subject_refs": [
         "memory-write-unverified",
-        "settings-write-unverified"
+        "settings-write-unverified",
+        "memory-write-human-reported",
+        "gci-upload-human-reported",
+        "profile-project-ui-unknown",
+        "memory-no-github"
       ],
-      "question": "実際のメモリ・カスタム指示等へ反映された内容と確認結果は何か。書込み機能が利用可能な環境またはHumanの設定操作で確認する。",
-      "scope": "Repository保存とは別の反映状態",
+      "question": "Humanによるメモリ保存・GCI Upload成功報告は受領済み。直接アカウント再読、プロフィール／Project設定の個別反映、他AIでの遵守・実地効果は未確認。必要な現在依頼がある時にその差分だけを扱い、メモリ内容の取得・GitHub保存は行わない。",
+      "scope": "後続報告を初期Unknownへ巻き戻さない。移行や通常利用のために全設定検証を要求しない。",
       "evidence": {
         "status": "unknown",
         "basis": "insufficient_evidence",
         "source_refs": [
-          "capability-s01"
+          "capability-s01",
+          "memory-result-s01",
+          "gci-applied-s01",
+          "settings-boundary-s01"
         ],
-        "note": "直接書込みと再読が未実施。"
+        "note": "Unknownなのは未観測の直接再読・個別項目・効果。Human報告済み成功そのものを未報告扱いにしない。"
       }
     },
     {
@@ -740,6 +1577,42 @@
         ],
         "note": "効果量と継続再現性は未報告。"
       }
+    },
+    {
+      "id": "q-home-routine-actual",
+      "subject_refs": [
+        "home-gum-entry-policy",
+        "home-routine-actual-unknown",
+        "home-entry-placement"
+      ],
+      "question": "新しいHuman Realityが来た時、帰宅後の入口・対象・区切りのどこが機能し、どこが詰まるか。",
+      "scope": "選択報告を受け取る。全件報告や新Trial、カフェイン論点の反復を移行条件にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "home-common-entry-s01",
+          "home-cleaning-s01"
+        ]
+      }
+    },
+    {
+      "id": "q-archive-next-choice",
+      "subject_refs": [
+        "archive-ranking-next-thread",
+        "archive-ranking-design",
+        "arc-001-unapproved-unmoved"
+      ],
+      "question": "Current Sourceからどの候補を上位とし、Humanがどの具体的な移動範囲を承認するか。",
+      "scope": "06以降の実際の依頼で扱う。移行準備の承認を移動承認にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "archive-ranking-s01",
+          "transition-execution-s01"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -754,10 +1627,47 @@
           "execution-s01",
           "resume-s01"
         ]
+      },
+      {
+        "revision": 2,
+        "date": "2026-09-22",
+        "reason": "05→06 Human-authorized transition preparation: retain later settings reports, action-connection designs, support acceptance and archive ranking intent without memory export or physical moves.",
+        "source_refs": [
+          "transition-plan-s02",
+          "transition-execution-s01"
+        ]
       }
     ],
-    "extension_semantics": "nodes[].extensions.disposition/rejected_byは旧提案の採否と訂正Nodeへの補助参照。source_context.extensionsは収録終端と責務。revision_historyは更新理由であり、自己Blob・外部実行権限・保存成功を表さない。",
+    "extension_semantics": "nodes[].extensions.disposition/rejected_byは旧提案の採否と訂正Nodeへの補助参照。source_context.extensionsは収録終端と責務。revision_historyは更新理由であり、自己Blob・外部実行権限・保存成功を表さない。 Revision2のprevious_record_cutoff・previous_questions・reconstruction_feedback_historyは旧時点保存。後続の成功報告を取り消さず、旧不確定が当時正しかったことを保つ。",
     "reconstruction_feedback": {
+      "independent_ai_read": "Revision2の独立した06読解は未観測。05の補足受入れはsupport-reconnect-acceptedとして別記。",
+      "real_world_effect": "新しい帰宅Routineの実施・効果は未報告。",
+      "memory_write": "HUMAN_REPORTED_SUCCESS / no memory contents recorded / direct account readback not performed",
+      "gci_application": "HUMAN_REPORTED_SUCCESS / direct account readback not performed",
+      "profile_project_ui": "NOT_INDEPENDENTLY_VERIFIED"
+    },
+    "previous_questions": {
+      "revision": 1,
+      "q-memory-application": {
+        "id": "q-memory-application",
+        "subject_refs": [
+          "memory-write-unverified",
+          "settings-write-unverified"
+        ],
+        "question": "実際のメモリ・カスタム指示等へ反映された内容と確認結果は何か。書込み機能が利用可能な環境またはHumanの設定操作で確認する。",
+        "scope": "Repository保存とは別の反映状態",
+        "evidence": {
+          "status": "unknown",
+          "basis": "insufficient_evidence",
+          "source_refs": [
+            "capability-s01"
+          ],
+          "note": "直接書込みと再読が未実施。"
+        }
+      }
+    },
+    "reconstruction_feedback_history": {
+      "revision": 1,
       "independent_ai_read": "not_observed",
       "real_world_effect": "not_observed",
       "memory_write": "not_verified",

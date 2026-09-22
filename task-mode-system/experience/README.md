@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.5"
+version: "0.3.6"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Index Ark27:05 quality-preservation correction, reasoning-wait start focus, and authorized memory/profile transfer without claiming account writes."
+updated_reason: "Index later Ark27:05 settings reports, home-action design, control-center acceptance and 05-to-06 authority; preserve historical unknowns and exclude memory contents."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-21"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.5"
+updated: "2026-09-22"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.6"
 ---
 
 # 経験とSourceの索引
@@ -63,13 +63,15 @@ AIが現在の疑問から対象経験へ進む。索引や原本の管理をHum
 - 時点：現場報告日2026/09/19、初版保存環境のUTC日付2026-09-18、revision 2・3更新日2026-09-19、revision 4更新日2026-09-20を区別する。日付・時刻を明示した入力と、未提示の各発言を分け、timezoneは補完しない。
 - 境界：希望と採用、実行、効果、Repository保存、ChatGPT長期記憶への保存を区別する。個別の未報告実績やサービス内部計上仕様を補完しない。既存Source・Node・Unknownは保持する。経験原本の追加だけでThreadのREADME／handoff／stateが更新されたとは扱わず、移行準備のState同期は別Artifactの責務とする。
 
-### 2.5 R05 — Ark27:05：AI回答品質・開始時の接続・メモリ継承
+### 2.5 R05 — Ark27:05：品質原則・設定・Action接続・司令塔合流
 
 - [原本](../../ark-project/ark27/ark27-05/task-records.json)
-- record_id：`ark27-05:task-records`、revision：`1`、format_version：`v001`。
+- record_id：`ark27-05:task-records`、revision：`2`、format_version：`v001`。
 - coverage：`selected_thread_material`、`thread_complete:false`。2026-09-21は記録作成日であり、未提示の個別発言日時を意味しない。
 - 主な内容：開始時への重点、1秒／0.1秒へのHumanの着眼、AI言語化のSeed価値、回答側の抑制方向への明示Correction、推論待ちのHuman行動、交互ループへの本人評価、品質原則の長期記録、メモリ・プロフィール要求、Plan-only後の実行承認と中断後の継続指示。
 - 境界：旧AI文面はHumanの引用として保存する。『AI回答直後』という原文とQuery送信直後というAI解釈、指示採用と実地効果、文面準備とメモリ／設定への書込みを分ける。Thread全体の網羅・独立AI読解成功・生活改善を宣言しない。
+- revision 2の追加：GCI・プロフィールの所有先と入力欄容量、GCI Upload・メモリ保存の後続Human成功報告、メモリ内容の非GitHub化、終了境界から開始への発見、帰宅後の洗濯物／整理／掃除の設計、Token Resetと並行Threadの振り返り、control-center補足受入れ、ランキング希望、05→06計画と実行承認。
+- 時点の境界：revision 1の未確認は当時の観測として残す。後続Human報告を未報告へ巻き戻さず、直接アカウント再読・生活効果・06受入れへ昇格もしない。2026-09-22は今回の記録更新日で、日時未提示の個別入力へ一律転用しない。
 
 ## 3. 問いからSourceへ
 
@@ -150,7 +152,24 @@ R05の `rejected-output-adjustment`・`quality-correction`・`human-side-change-
 
 `durable-quality-principle`（`quality-s04`）はモデル交代後も保持するHumanの長期原則。`language-as-seed` と `unseen-value-preservation` ではHumanの価値表明とAIの解釈を分ける。`answer-after-wording`・`query-send-interpretation` は原文と時間座標の解釈を分け、`start-effects-unverified` は未観測の行動・効果を補わない。
 
-`memory-profile-request`・`quality-execution-authorized`、Source `memory-s01`・`execution-s01`・`resume-s01` は今回の追加要求と実行範囲。`memory-write-unverified`・`settings-write-unverified` を合わせて読む。共通対応は[運用 §4.2–4.3](../operation.md)、貼付・保存依頼に使える文面は[メモリ・設定へのInterface](../interfaces/ai-quality-personalization.md)へ。
+`memory-profile-request`・`quality-execution-authorized`、Source `memory-s01`・`execution-s01`・`resume-s01` は今回の追加要求と実行範囲。`memory-write-unverified`・`settings-write-unverified` はrevision 1時点の未確認として読む。後続の `memory-write-human-reported`・`gci-upload-human-reported`・`memory-no-github` を合わせ、報告済み成功を取り消さず、記憶内容の転記へ広げない。共通対応は[運用 §4.2–4.3](../operation.md)、GCI・プロフィールの正本へ進む案内は[設定へのInterface](../interfaces/ai-quality-personalization.md)へ。
+
+
+### 3.14 帰宅後のAction接続と、終了から開始への発見を理解する
+
+R05の `choco-end-policy-tried`・`end-to-start-seed`・`holiday-early-entry-candidate`（Source `deadline-end-s01`・`deadline-start-s01`）は、21時頃に切り上げる方針を試した報告、次Taskへの接続の発見、18–19時頃の早期入場を期待する仮説を分ける。
+
+`home-laundry-priority`・`home-gum-entry-policy`・`home-laundry-absent-route`・`home-cleaning-option` は、洗濯物がない日も共通入口から居室整理・掃除へ接続するHumanの設計方向。Source `home-laundry-s01`–`home-cleaning-s01` と、`night-vacuum-noise`・`home-entry-placement`・`home-routine-actual-unknown` を合わせる。ガムの配置、摂取、家事の実施・定着・薬理的効果は補完しない。既議論のカフェイン論点を反復しないCorrectionと適用Guardを両立する。
+
+`think-action-balanced-direction` は思考を切り捨てず現実のFeedbackへつなぐ方向を所有する。統合Scheduleは `home-schedule-deferred`、利用枠・並行Thread・Torah活用は `parallel-token-value`・`reset-time-rumor-no-check`・`token-accounting-boundary`・`torah-use-deferred`。新しい実験・通知・並行研究を記録だけで開始しない。
+
+### 3.15 control-centerの合流と、次Threadの選択を理解する
+
+R05の `support-before-physical-move`・`control-center-root-scope`・`support-reconnect-accepted` とSource `support-reconnect-s01`・`support-reception-s01` から、rootの司令塔を05専用へ縮小せず、実体移動より先に成果と判断を本流へ合流した意味を読む。受入れの正式な補足資料と後続観測は[control-center PLAN](../../control-center/PLAN.md#reconnect-ark27-05)、個別案件の承認・実施の所有先は[ARCHIVE](../../control-center/ARCHIVE.md#arc-001)。
+
+`archive-ranking-next-thread` はHumanの希望、`archive-ranking-design` は比較方法と暫定順位のAI案、`arc-001-unapproved-unmoved` は未承認・未移動の区別を所有する。旧Sourceの準備完了、05の実際の受入れ、06の今後の再構成は別である。
+
+`transition-05-06-plan`・`transition-05-06-authorized` は計画と今回の実行承認の時点差。移行準備の状態は05 State、次Threadの受入れ契約は指定された新Handoffが所有する。本索引は移動承認や新しいBootの代替ではない。
 
 ## 4. 共有仕様と理論の所有資料
 
@@ -171,4 +190,4 @@ R05の `rejected-output-adjustment`・`quality-correction`・`human-side-change-
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.5
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.6

@@ -1,6 +1,6 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.1.1"
+version: "0.1.2"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.1"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.2"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
@@ -73,7 +73,7 @@ flowchart TD
 
 **提案：撤回済み実験のchecker一つを、通常のtoolsから__archivesへ移す。**
 
-- **現在の状態**：提案済み。Humanの訂正により、移動前に既存Ark27:05へ補足接続する。個別移動の承認は未取得、移動は未実施。案件の却下ではなく、直近の順序変更である。合流内容と受入れ状態は[PLANの補足接続](PLAN.md#reconnect-ark27-05)を参照する。
+- **現在の状態**：提案済み。移動前の既存Ark27:05への補足接続は受入れ済み。個別移動の承認は未取得、移動は未実施。次Threadでランキング形式の候補提案を求めるHuman希望があり、本件はAIの暫定上位候補である。受入れ・ランキング・移行準備承認を移動承認へ変換しない。根拠は[PLANの補足接続](PLAN.md#reconnect-ark27-05)§8。
 - **提案日・確認日**：2026-09-22。
 - **Human判断対象**：下記の一ファイル移動と、それに必要な索引・案件記録・診断の更新。
 - **全体診断との関係**：[PLANのD06](PLAN.md#d06)。
@@ -160,6 +160,8 @@ checkerは今回実行していない。レビューにある過去の実行結�
 - **同日・移動前の本流合流を指定**：四文書の保存・具体案の提示後、YusukeJPが「ここまでで一旦、Ark27：05の最新ark-projectに合流させよう！」と指示。移動後では接続が複雑になるという理由を説明した。これを[SUPPORT_RECONNECTの補足](PLAN.md#reconnect-ark27-05)へ反映し、移動を先行させず、成果・理由・未承認の範囲を既存05へ渡す。
 - **Source準備と実体の区別**：今回の補足保存はPLANと本書に限定する。checkerの現役パス、既存sandbox、__archivesの保存実体を変更しない。Target受入れはPLANの補足接続で観測を区別し、そこから移動承認を自動推定しない。
 
+- **2026-09-22・05での受入れを後続記録**：既存Ark27:05が四文書と六条件を根拠付きで理解し補足接続した。次Threadで候補をランキングとして比較したいというHuman希望を受領した。05→06の準備実行が承認されたが、本件の個別移動承認は含まれない。詳細な受入れ観測の所有先はPLAN補足§8、05の発言・判断の出典は同節が案内するR05。
+
 後続のHuman判断とActual Resultはこの履歴へ追記し、冒頭の状態を更新する。実施前の期待を成功実績へ置き換えない。
 
 [checker]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/tools/check_repo_reality.py
@@ -171,4 +173,4 @@ checkerは今回実行していない。レビューにある過去の実行結�
 [session]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/ark-project/ark21/ark21-06/README.md
 [review]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/repository-reviews/reports/2026-09-19.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.1
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.2
