@@ -1,0 +1,4 @@
+interface:
+  display_name: "一言言語化"
+  short_description: "対象の核を、文脈に合う一言で選び二列表に揃えて返します"
+  default_prompt: "$distill-to-core を使い、次の対象を「対象 | 本質」の二列表で一言言語化してください。"
