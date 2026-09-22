@@ -3,7 +3,7 @@ title: "ai-project構造整理 — 診断から改善へ"
 version: "0.1.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "initial delivery in progress / seven diagnoses open"
+status: "initial delivery verified / seven diagnoses open"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
@@ -29,7 +29,7 @@ Humanは、Plan-onlyでの調査・診断・二文書の設計を経て、Next s
 - **今回の成果**：司令塔の入口、根拠付き診断、改善計画の初版。
 - **続く実務候補**：通常入口と保存先案内の整合。優先順は§5で比較する。
 - **実利用の確認**：別AIの独立読解、利用頻度、Humanの再説明回数の変化は未観測。
-- **初版保存の状態**：二文書のGitHub保存と最終照合は進行中。完了観測は§8に記録する。
+- **初版保存の状態**：二文書を保存し、再取得による全文一致を確認した。初版の完了観測と未実施範囲は§8に記録する。
 
 本書の「未実施」は、対応が無価値であることや、永久に禁止されることを意味しない。次の作業ではCurrent Human Requestと既存承認の適用範囲を読み、具体的な対象と影響に応じて進める。
 
@@ -174,7 +174,7 @@ flowchart TD
 
 | Node | Edge | 次の作業と完了条件 | 初版の状態 |
 |---|---|---|---|
-| E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANを保存し、本文・参照・保存先を照合する | 進行中。§8に完了観測を残す |
+| E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANを保存し、本文・参照・保存先を照合する | 完了。初版の保存後観測は§8 |
 | E01：入口への接続 | Root README→control-center | 既存のPublic Front Doorに目的の分かる入口を加える。新しい全作業Boot条件を作らない | 計画。初版二文書の保存後の候補 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への現在地参照を整え、参照元側も照合する | 有力な最初の修正候補。D04を先行必須にしない |
 | E03：実効経路の修復 | D01・D05→目的に合う現存資料 | 起動・継承の用途と本体Identityを確かめ、本文内の実効パスも修正する | 計画。置換先の役割確認が必要 |
@@ -225,9 +225,17 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 
 ## 8. 初版の実装・検証記録
 
-初版二文書の保存と最終照合は進行中。完了前に保存成功・全診断の解消・別AIの理解を先取りしない。
+2026-09-22、二文書の初版をmainへ保存し、それぞれをGitHubから再取得して意図した全文との一致を確認した。その保存後観測に基づき、本節とE00の完了状態を追記した。以下のPLANのblobは追記前の観測版であり、Current PLANを固定するBindingではない。
 
-完了時には、この節へ対象、観測したcommit・blob、検証範囲、残点を記録する。自己の最終blobを本文へ埋め込む循環を作らず、現在の版はGit履歴と再取得で確認する。
+- [PLANの初回保存](https://github.com/yusukefujiijp/ai-project/commit/37ce4b0770e50715a3c7ee5a786ef1ad3f79e18b)：blob `b55fef970c01813365be092572c635abc19f222c`。新規作成後に全文一致を確認。
+- [READMEの実装](https://github.com/yusukefujiijp/ai-project/commit/ad80c0cf4a2ef6a92279ef2287f2dee9c9d88fe6)：blob `8b07a59eee7330e0ae4f570a7b1fad585c7e7f63`。Humanの改行のみの原本を保存直前にも確認して更新し、全文一致を確認。
+- 二文書保存後の観測commit：`ad80c0cf4a2ef6a92279ef2287f2dee9c9d88fe6`、Tree：`90862d08f621d585c3a1a104fb9adc654fd98230`。基点との変更は `control-center/README.md` と `control-center/PLAN.md` の二つ。その他の既存307ファイルは同じblobだった。
+- 文書検査：両文書のYAML、canonical_path、版とEOF、UTF-8を確認。初版のリンク39出現について、相対参照・参照形式・固定EvidenceのRepository内パス・新規文書内の参照見出しを照合し、不一致なし。全外部サイトの稼働や全Repositoryのリンクを検査した意味ではない。
+- 意味の確認：執筆AIが、対象はai-project全体であること、役割と由来、現行と履歴、D01–D07の根拠、変更時の影響、未修正の状態、次の候補を本文から辿れるか点検した。別AIによる独立試験ではない。
+
+**完了したのは司令塔の初版保存。D01–D07の修正、Root READMEからの追加案内E01、物理移設、実験ツールの退役、別AIの実理解は未実施・未観測として残る。**
+
+自己の最終blobを本文へ埋め込む循環を作らず、本節追記後の版はGit履歴と再取得で確認する。二文書保存後のTreeは初期成果の観測であり、将来の全Repositoryを309ファイルへ固定する条件ではない。
 
 ## 9. 継続時の更新方法
 
