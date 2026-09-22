@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.3.2"
+version: "0.4.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / Ark27:05 supplement accepted / Ark27:06 route verified / D03 locally resolved; physical moves unapproved"
+status: "archive-first workflow / D03 locally resolved / ARC-001 individually approved and retirement applied; remote reread pending"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.2"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.4.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -25,10 +25,10 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.2"
 
 初版の出発点ではREADMEが改行のみ、本書は未作成だった。初回実装では、消えやすい会話内の診断を、次のAIが根拠から再検討できるRepository資料へ変えた。下記D01–D07の既存文書自体の修正、移設、退役処理は、この二文書の保存とは別の実装として残す。
 
-- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。他の診断の一括解消や固定章Bindingの変更は行っていない。
+- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。Ark27:06の個別実行承認によりD06の現役checkerをARC-001へ退役させる変更を本改訂へ反映する。Remote確認の結果は保存後に更新する。D01・D02・D04・D05・D07と固定章Bindingは今回の対象外。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
-- **今回の追加**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。実装の観測は§10。
-- **直近の接続**：Humanの追加訂正に従い、物理移動の前に既存Ark27:05へ成果・理由・未完を合流した。受入れの後続観測は補足§8。[補足接続](#reconnect-ark27-05)を参照。構造整理の最初の具体案は引き続き[ARC-001](ARCHIVE.md#arc-001)。
+- **アーカイブ方針整備の成果**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。当時の保存観測は§10。その後の個別実行はARC-001が所有する。
+- **直近の接続**：物理移動前の既存Ark27:05への合流・受入れを経て06へ継承した。06のLiving Reviewで[ARC-001](ARCHIVE.md#arc-001)を具体的に比較・推奨した後、Humanからこの案件のGitHub実行承認を受領した。以前の合流記録は[補足接続](#reconnect-ark27-05)に保持し、個別承認・実施結果はARCHIVEへ接続する。
 - **実利用の確認**：既存05での補足受入れ応答を確認。別Contextでの再現性、利用頻度、再説明負担の変化は未観測。
 - **初版保存の状態**：二文書を保存し、再取得による全文一致を確認した。初版の完了観測と未実施範囲は§8に記録する。
 
@@ -130,16 +130,16 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D06
 
-**撤回した実験のcheckerが、通常のtoolsに残る。状態：退役・役割整理が未実施。**
+**基準snapshotでは撤回済みcheckerが通常のtoolsに残っていた。状態：ARC-001の個別承認により現役配置からの退役を反映。Remote再取得確認は保存後に記録する。**
 
 - **Node / Edge**：`tools/check_repo_reality.py`がRepositoryの正常条件を判定する。
 - **Confirmed**：コードの `REQUIRED_FILES` は `CURRENT_BOARD.md` と `.github/workflows/reality-check.yml` を要求する。両ファイルは基点Treeにない。Sandbox §0–2は、このBoard・checker・Workflowの実験を撤回・隔離し、当時の手動削除対象とした経緯を記録する。[checker][checker]、[撤回・隔離記録][sandbox]
 - **判断への影響**：通常配置のツールを現在の正しい判定基準と受け取ると、撤回された仕組みを復活させることを「修復」と誤認し得る。
 - **原因の見立て**：実験の退役理由と、実体の配置・利用案内が一致していない。
-- **改善案**：現役側checkerを既存の__archivesへ移す具体案を[ARC-001](ARCHIVE.md#arc-001)で扱う。sandboxの実験知識と固定Evidenceを保持する。ツールが要求するという理由で旧Boardを復活させない。
+- **採用した対応**：現役側checkerを [__archives/ARC-001/tools/check_repo_reality.py](../__archives/ARC-001/tools/check_repo_reality.py) へ内容変更なしで移す。承認・実施・確認は[ARC-001](ARCHIVE.md#arc-001)が所有する。sandboxの実験知識と固定Evidenceを保持し、旧Board・Workflowを復活させない。
 - **変更と保持**：過去の撤回理由を残す。古い削除予定は現在の削除命令ではなく、今回の変更範囲に即して扱う。
 - **完了条件**：通常経路から過去の判定基準をCurrent規則として誤用しない構成になり、実験の由来と再検討の根拠へ到達できる。
-- **追加観測とUnknown**：2026-09-22の参照調査・Workflow配置確認・保管先・承認状態は[ARC-001](ARCHIVE.md#arc-001)が所有する。コードを今回の正常判定として実行しておらず、過去レビューの検査件数を今回の実行結果として転記しない。
+- **追加観測とUnknown**：2026-09-22の実行前再確認はmain `e3acc6f2c5e5f24f40a8e35aa3b9dea5801a9c0f`を基点とし、元blob・移動先の空き・通常Workflow配置・参照関係を照合した。変更後の観測は[ARC-001](ARCHIVE.md#arc-001)へ記録する。解消対象は現役toolsの残存配置であり、動的・外部呼出しの全把握や別AIの誤用減少は未確認。checkerを現在の正常判定として実行せず、過去レビューの検査件数も今回の結果へ転記しない。
 
 ### D07
 
@@ -189,7 +189,7 @@ flowchart TD
 | E00：司令塔初版 | 会話の診断→共有資料 | READMEとPLANの初版保存・検証。観測は§8 | 完了した出発点 |
 | E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
 | E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 05で受入れ済み。後続観測は同節§8。移動承認ではない |
-| E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最初の物理整理候補。今回は本流合流を先行 |
+| E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 個別承認済み・退役反映。Remote確認の結果は保存後に記録 |
 | E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | D03は05→06準備内で修正・Remote確認。D02は残る。退役案件の先行必須ではない |
 | E03：実効経路の修復 | D01・D05→現存する適切な資料 | 用途と本体Identityを確かめ、本文内の実効パスも整える | 計画。役割確認が必要 |
@@ -272,7 +272,7 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 - 文書検査では、四文書のUTF-8、YAML、canonical_path、版とEOF、相対リンク、新規文書間の参照見出し、参照形式、EvidenceのRepository内パスを照合した。本節の完了追記前のリンクは75出現、不一致なし。上の実装commitリンク四つは、返却された保存結果に基づく。
 - 意味の自己点検では、元の会話なしに目的・担当・承認対象・保存先・根拠・未実施範囲・復元方法を辿れるか確認した。D01–D05・D07の診断本文と再設計構想を保持し、D06を個別案件へ接続した。
 
-**完了したのは、アーカイブの判断・記録・入口の整備とARC-001の具体化。ファイルの物理移動・退役はまだ実績ではない。個別移動の承認・実施状態はARCHIVEが所有する。** Root READMEへの追加案内E01、既存の各構造問題の修正、別AIの独立読解、実利用による効果も、この保存結果から完了としない。
+**この方針整備時点で完了したのは、判断・記録・入口の整備とARC-001の具体化であり、物理移動・退役は未実施だった。後続の個別移動の承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)が所有する。** Root READMEへの追加案内E01、既存の各構造問題の修正、別AIの独立読解、実利用による効果も、この保存結果から完了としない。
 
 本節に自身の最終blobを埋め込む循環を作らず、追記後の保存はGit履歴とRemote再取得で確認する。上記commit・Tree・件数はこの観測時点の証拠であり、将来の正常条件ではない。
 
@@ -281,6 +281,8 @@ Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自�
 **Ark27:05への補足接続 — アーカイブ移動の前に、司令塔の成果と判断を本流へ合流する。**
 
 本節は `SUPPORT_RECONNECT` の受渡し資料であり、PLANの全体診断を既存のMain Ownerへ接続する役割を持つ。Ark27:05のRuntime・Handoff・Stateの代替や、別の現在地台帳にはしない。
+
+**以下の§1–9は、05への合流準備・受入れと05→06準備の当時の記録である。** その時点の移動未承認・未実施や06受入れ未観測を、後続の現在状態へ固定しない。06で新たに受領した個別承認と実施結果は[ARC-001](ARCHIVE.md#arc-001)を参照する。
 
 ### 1. Source・Target・今回のHuman訂正
 
@@ -405,4 +407,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.2
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.4.0

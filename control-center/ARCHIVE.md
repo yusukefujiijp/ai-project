@@ -1,6 +1,6 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.1.2"
+version: "0.2.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
@@ -8,14 +8,14 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.2"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.2.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の具体案は[ARC-001](#arc-001)。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -71,17 +71,17 @@ flowchart TD
 
 ## ARC-001
 
-**提案：撤回済み実験のchecker一つを、通常のtoolsから__archivesへ移す。**
+**Human承認に基づき、撤回済み実験のchecker一つを通常のtoolsから__archivesへ移す。本改訂は移動反映版であり、Remote再取得の結果は確認後に追記する。**
 
-- **現在の状態**：提案済み。移動前の既存Ark27:05への補足接続は受入れ済み。個別移動の承認は未取得、移動は未実施。次Threadでランキング形式の候補提案を求めるHuman希望があり、本件はAIの暫定上位候補である。受入れ・ランキング・移行準備承認を移動承認へ変換しない。根拠は[PLANの補足接続](PLAN.md#reconnect-ark27-05)§8。
-- **提案日・確認日**：2026-09-22。
-- **Human判断対象**：下記の一ファイル移動と、それに必要な索引・案件記録・診断の更新。
+- **現在の状態**：Ark27:06のLiving Reviewで本件の具体案を提示した後、HumanからGitHub実行・継続・Human Sealの明示承認を受領。本改訂で一ファイルの移動と関連三文書を反映し、Remote再取得確認は次に記録する。05の補足受入れ・ランキング希望・05→06準備の承認とは別の、今回の個別実行承認である。他の候補の移動や順位固定へ拡張しない。
+- **提案日・実行前確認日**：2026-09-22。確認時刻の基準はUTC。Human発言の未提示時刻は補完しない。
+- **今回の承認範囲**：下記の一ファイル移動と、それに必要な索引・案件記録・診断の更新、保存後の確認。
 - **全体診断との関係**：[PLANのD06](PLAN.md#d06)。
 - **調査基点**：[commit d8c744d](https://github.com/yusukefujiijp/ai-project/commit/d8c744dd68d5a366855bb33e3167147adfc213cd)、Tree `aa85ce2f0a286c5c1891437a145c2301c6c99614`。再帰Treeは309ファイル、`truncated: false`。
 
 ### A. 対象と移動先
 
-対象は `tools/check_repo_reality.py` の一つ。移動先案は `__archives/ARC-001/tools/check_repo_reality.py`。移動先はまだ存在せず、提案パスである。
+元の配置は `tools/check_repo_reality.py` の一つ。保存先は [__archives/ARC-001/tools/check_repo_reality.py](../__archives/ARC-001/tools/check_repo_reality.py)。提案・実行前確認時には移動先は存在せず、本改訂で元パスの除去と保存先の追加を同じTreeへ反映する。保存後の観測はG節へ追記する。
 
 対象blobは `9ae7c177a78f081d816a25da4d92021c5c582fec`、7,346 bytes。同じblobは[既存sandbox保存版][sandbox-checker]にもある。今回は現役側の実体を移す案であり、既存sandboxをまとめて移す・消す案ではない。
 
@@ -128,9 +128,9 @@ checkerは今回実行していない。レビューにある過去の実行結�
 
 保存するSeedは、検査の着眼点、当時のコード、仮説を正常条件にした経緯、早い通常運用への接続を撤回した理由である。「失敗したから消す」「現在のcheckerが要求するから旧仕組みを復活させる」のどちらにも単純化しない。Future AIは新しい目的と根拠で再利用・再設計を提案できる。
 
-移動自体でRepository全体のファイル数は減らない。現役側の `tools/` がなくなり、対象の実体と理由へ到達できることが、この案件の具体的な整理成果となる見込みである。
+移動自体でRepository全体のファイル数は減らない。現役側の `tools/` を退役させ、対象の実体と理由へ到達できることが、この案件の具体的な整理成果である。誤認頻度の低下や別AIの実理解は、配置の変更とは別の観測として扱う。
 
-### E. 承認対象の作業範囲
+### E. 今回承認された作業範囲
 
 1. `tools/check_repo_reality.py` を `__archives/ARC-001/tools/check_repo_reality.py` へ、内容を変えずに移す。
 2. `__archives/README.md` に保存実体と本案件への索引を追加する。
@@ -162,6 +162,12 @@ checkerは今回実行していない。レビューにある過去の実行結�
 
 - **2026-09-22・05での受入れを後続記録**：既存Ark27:05が四文書と六条件を根拠付きで理解し補足接続した。次Threadで候補をランキングとして比較したいというHuman希望を受領した。05→06の準備実行が承認されたが、本件の個別移動承認は含まれない。詳細な受入れ観測の所有先はPLAN補足§8、05の発言・判断の出典は同節が案内するR05。
 
+- **2026-09-22・Ark27:06での個別実行承認**：06のLiving Reviewは本件について、現役維持と理由・復元経路を保つ退役を比較し、後者を推奨した。対象一ファイル、保存先、索引・案件履歴・PLANの更新、実行前の現物確認を提示した後、Humanが「良いですね！」「Execute GitHub OK!」「Human Seal OK!」「実行して下さい！」と明示した。この応答を上記具体案の実行承認として受領し、同じ許可を再要求せず、必要な確認・保存・記録を継続する。出典はこのArk27:06のHuman発言。会話URLは未提示。他案件の移動・全診断の修正・新Trialの承認ではない。
+- **同日・実行前のRemote確認**：[commit e3acc6f](https://github.com/yusukefujiijp/ai-project/commit/e3acc6f2c5e5f24f40a8e35aa3b9dea5801a9c0f)、Tree `12f003ce6d22a66fac1280c7b9defbe5255de0d7`。再帰Treeは316ファイル、`truncated: false`。元ファイルとsandbox保存版は同じblob `9ae7c177a78f081d816a25da4d92021c5c582fec`、7,346 bytes。移動先は未作成。`CURRENT_BOARD.md` と `.github/workflows/reality-check.yml` はなく、通常の `.github/workflows/` は改行のみのREADME一つだった。
+- **同日・参照関係の更新確認**：同じ基点を指すGitHubコード検索で `check_repo_reality` は16ファイル、`reality-check` は8ファイル、いずれも `incomplete_results: false`。前回の9ファイルから増えた7件は、本案件、__archives入口、06のREADME・Handoff・State、05のState・Task Records。05・06の資料は確認済みのSource準備版と同じblobであり、当時の配置・未承認状態を継承する根拠として保持する。現役checkerの呼出し追加とは扱わない。sandboxの撤回理由、旧Board・旧Root・Workflowの呼出し箇所、Session記録と過去レビューの対象節を確認した。現在のRoot READMEには検索語の参照がなく、現役Workflowの呼出しも見つからなかった。全316ファイルの全文意味読解、動的呼出し、外部利用の不存在証明ではない。
+- **同日・実装方法**：Git Data APIで現行Treeを基礎にし、元blob・mode `100644` をそのまま保存先へ設定する。元パスの除去、保存先の追加、__archives索引・本案件・PLANの更新を一つのコミットへまとめ、mainを非forceで更新する。親commitが変わった場合は差分を再確認する。checkerの実行や旧Board・Workflowの復活は行わない。
+- **本改訂の確認段階**：移動と記録を同時に反映する版。実行commit、Remote本文・blob照合、元パスの不存在、対象外の不変性は、保存後に実測した結果を次の記録改訂へ追記する。ここでは再取得済みと先取りしない。
+
 後続のHuman判断とActual Resultはこの履歴へ追記し、冒頭の状態を更新する。実施前の期待を成功実績へ置き換えない。
 
 [checker]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/tools/check_repo_reality.py
@@ -173,4 +179,4 @@ checkerは今回実行していない。レビューにある過去の実行結�
 [session]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/ark-project/ark21/ark21-06/README.md
 [review]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/repository-reviews/reports/2026-09-19.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.1.2
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.2.0

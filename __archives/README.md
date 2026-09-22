@@ -1,6 +1,6 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.1.0"
+version: "0.2.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.1.0"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.2.0"
 ---
 
 # ai-project Archives
@@ -29,13 +29,17 @@ ai-project全体の構造整理は[control-center](../control-center/README.md)�
 
 基本案は `__archives/<案件ID>/<元の相対パス>`。案件IDからARCHIVEの同じ記録へ戻り、元の役割・移動理由・承認範囲・復元方法を確認できるようにする。案件の性質に合わない場合は、対応と理由を残して別の構成を選べる。
 
-たとえばARC-001の提案先は `__archives/ARC-001/tools/check_repo_reality.py`。これは候補の説明であり、保存済みパスではない。
+ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_repo_reality.py](ARC-001/tools/check_repo_reality.py) に保存する。現在の実施・確認状態は[同じ案件](../control-center/ARCHIVE.md#arc-001)が所有する。
 
 ## 3. 保存実体の索引
 
 この入口の設置基点（2026-09-22、[commit d8c744d](https://github.com/yusukefujiijp/ai-project/commit/d8c744dd68d5a366855bb33e3167147adfc213cd)）では、__archivesには改行のみのREADME一つがあり、案件配下の保存実体はなかった。
 
-初期の候補は[ARC-001](../control-center/ARCHIVE.md#arc-001)で確認できる。承認・進捗の最新判断は同案件が所有する。実体の移動と確認が完了したら、本節へ案件ID・保存物のリンク・案件記録へのリンクを追加する。
+上の設置基点から、次の保存実体を追加した。承認・実施・Remote確認の詳細は案件記録で確認する。
+
+| Node | Edge | 元の配置と保存する内容 |
+|---|---|---|
+| [ARC-001のchecker](ARC-001/tools/check_repo_reality.py) | [案件の理由・承認・実施・復元](../control-center/ARCHIVE.md#arc-001) → [実験の由来](../ark-project/ark21/Ark21-06/sandbox/README.md) | `tools/check_repo_reality.py`。撤回済み実験のコードを内容変更なしで保存。現在のRepository正常条件を定めるツールではない |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -45,4 +49,4 @@ ai-project全体の構造整理は[control-center](../control-center/README.md)�
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.1.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.2.0
