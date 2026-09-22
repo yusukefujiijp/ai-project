@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI Prompt Runtime and Query Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-12"
+last_updated: "2026-09-22"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -267,6 +267,21 @@ Two real Benefits
 ~~~
 
 Future AIが主読者であるが、AIが最終Authorityになることを意味しない。HumanはReality、意味、Correction、STOPおよびFinal Sealを保持する。一件の成功からQuery Pair、Skill、Canonical化、Cross-Project展開または次Trialを自動発火しない。
+
+
+### 3.8 AI Minimal 2D Bot Icon
+
+[日本語版プロンプト](ai-minimal-2d-bot-icon.md)
+
+~~~yaml
+runtime: "prompts/ai-minimal-2d-bot-icon.md"
+query: "NOT CREATED — 本文と対象画像で使用する単体プロンプト"
+role: "元画像の特徴を保ったミニマル2Dボットアイコンへの変換"
+language: "ja"
+version: "v001"
+~~~
+
+ユーザー提供の韓国語プロンプトを、条件・数値・禁止事項・優先順位を保持して日本語化した画像変換用Prompt。黒いカプセル形の目2つ、口と鼻のない丸い顔、傾けた超アップの構図を定義する。「Grok bot icon」は見た目の名称であり、特定AI専用を意味しない。閲覧・翻訳・編集・保存では画像生成を起動せず、実行時は本文の【実行と追加修正】に従う。
 
 ---
 
