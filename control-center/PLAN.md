@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.4.1"
+version: "0.5.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / D03 locally resolved / D06 retired through ARC-001; remote reread verified"
+status: "archive-first workflow / ARC-001 verified / ARC-002 compatibility preservation and ARC-003–004 moves applied; remote reread pending"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.4.1"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -25,10 +25,10 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.4.1"
 
 初版の出発点ではREADMEが改行のみ、本書は未作成だった。初回実装では、消えやすい会話内の診断を、次のAIが根拠から再検討できるRepository資料へ変えた。下記D01–D07の既存文書自体の修正、移設、退役処理は、この二文書の保存とは別の実装として残す。
 
-- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。Ark27:06の個別実行承認により、D06の現役checkerをARC-001へ退役させ、内容保持・元配置の消失・関連記録をRemoteで確認した。D01・D02・D04・D05・D07と固定章Bindingは今回の対象外。
+- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。Ark27:06の個別実行承認により、D06の現役checkerをARC-001へ退役させ、内容保持・元配置の消失・関連記録をRemoteで確認した。D01・D02・D04・D05・D07は未解消として保持する。その後の三群の整理はARC-002–004へ分け、D05のOKF Query修正と混同しない。固定章Bindingは変更しない。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
-- **アーカイブ方針整備の成果**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。当時の保存観測は§10。その後の個別実行はARC-001が所有する。
-- **直近の接続**：物理移動前の既存Ark27:05への合流・受入れを経て06へ継承した。06のLiving Reviewで[ARC-001](ARCHIVE.md#arc-001)を具体的に比較・推奨した後、Humanからこの案件のGitHub実行承認を受領した。以前の合流記録は[補足接続](#reconnect-ark27-05)に保持し、個別承認・実施結果はARCHIVEへ接続する。
+- **アーカイブ方針整備の成果**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。当時の保存観測は§10。その後の個別実行はARCHIVEのARC-001–004が所有する。
+- **直近の接続**：05で受け取った次Threadランキング希望を06で実施し、ARC-001完了後に三群・七ファイルを理由付きで提案した。その直後のHumanの「全てOK！」とGitHub実行承認を受け、[ARC-002](ARCHIVE.md#arc-002)のアーカイブ保存・元パス互換保持、[ARC-003](ARCHIVE.md#arc-003)の二原本移動、[ARC-004](ARCHIVE.md#arc-004)の四原本移動と価値の接続を本改訂へ反映する。Remote確認は実施後に記録する。05の補足受入れ・移行準備と今回の実行承認は区別する。
 - **実利用の確認**：既存05での補足受入れ応答を確認。別Contextでの再現性、利用頻度、再説明負担の変化は未観測。
 - **初版保存の状態**：二文書を保存し、再取得による全文一致を確認した。初版の完了観測と未実施範囲は§8に記録する。
 
@@ -195,7 +195,7 @@ flowchart TD
 | E03：実効経路の修復 | D01・D05→現存する適切な資料 | 用途と本体Identityを確かめ、本文内の実効パスも整える | 計画。役割確認が必要 |
 | E04：存在の案内 | D07→Voice候補 | 候補の所在と、採用・稼働の未確認を正しく案内する | 計画。初版で同じ行にあったD06はE09へ分けた |
 | E05：固定参照の設計 | D04→章・継承契約 | 可変入口と固定資料の関係を設計し、対象契約を検証する | 設計候補 |
-| E06：続く実体整理 | 現在の役割・依存→選別 | 次のアーカイブ、保持、統合等を比較する。アーカイブ案件はARCHIVEに具体化する | 対象未選定。大規模な最終Treeを既成事実にしない |
+| E06：続く実体整理 | 06の三群ランキング→ARC-002–004 | 七原本を保存。Bridgeは固定参照のため元パスも保持し、他六原本は移動。旧Seedの文脈継承価値を入口へ接続する | Human承認済み・反映版。Remote確認待ち。Bridgeの元パス除去は保留 |
 | E07：観測の継承 | 実装→根拠→再判断 | 個別アーカイブはARCHIVEの同じ案件へ結果を追記。全体レビューを行う場合は既存Repository Reviewsへ接続する | 実施した範囲に伴う記録 |
 
 先に現役として残す対象を選び、退役できる具体例を実施し、その結果から残す資料のレイヤーと案内を育てる。アーカイブ候補の理由を曖昧にしたまま移すことも、全体調査の完了を待つために根拠の揃った案件を止めることも避ける。
@@ -407,4 +407,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.4.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.5.0

@@ -285,6 +285,20 @@ version: "v001"
 
 ---
 
+### 3.9 AI Ark Seed
+
+Seed化・選択的Card化の入口は[AI Ark Seed](../ai-ark-seed/README.md)、Queryは[ai-ark-seed_query.md](../ai-ark-seed/ai-ark-seed_query.md)。旧Compile／Pickupの二組四ファイルは[ARC-004](../control-center/ARCHIVE.md#arc-004)へ保存した。文脈付きSeedを別Threadへ渡して成熟させる価値は[現行入口の案内](../ai-ark-seed/README.md#10-context-preservation)から辿れる。軽量Seedとの完全同等や、AIの説明・文脈保持の縮小を意味しない。
+
+### 3.10 X DeepQuote
+
+現在の入口は[Stage 01: Depth Builder](x-deepquote/x-deepquote_01-depth-builder.md) → [Stage 02: Quote Completion Gate v001-9](x-deepquote/x-deepquote_02-quote-completion-gate_v001-9.md)。必要な修正は[Stage 02R](x-deepquote/x-deepquote_02r-fresh-contribution-loop_v001-3.md)の適用条件に従う。読むこと自体で投稿・監査・次Trialを開始しない。
+
+Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能なMarkdownをPrimaryとする。各Runtimeの契約を区別し、全段階の方式が統一済みと推定しない。
+
+旧Stage 02 v001-8と、旧ダウンロード方式を前提とするFable5監査Packetは[ARC-003](../control-center/ARCHIVE.md#arc-003)へ移動した。`prompts/fable5/`はそのPacket一つだけだったため通常配置からなくなるが、`claude/`のFable5資料やAI Output Polishの役割は変えない。
+
+---
+
 ## 4. Human-mediated Multi-AI Use
 
 ```text

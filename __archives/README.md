@@ -1,6 +1,6 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.2.0"
+version: "0.3.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
 updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.2.0"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.3.0"
 ---
 
 # ai-project Archives
@@ -31,6 +31,8 @@ ai-project全体の構造整理は[control-center](../control-center/README.md)�
 
 ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_repo_reality.py](ARC-001/tools/check_repo_reality.py) に保存する。現在の実施・確認状態は[同じ案件](../control-center/ARCHIVE.md#arc-001)が所有する。
 
+ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も互換用に保持する。アーカイブへの保存と、元パスからの完全な移動を区別する。詳細と残点は[ARC-002](../control-center/ARCHIVE.md#arc-002)を参照する。
+
 ## 3. 保存実体の索引
 
 この入口の設置基点（2026-09-22、[commit d8c744d](https://github.com/yusukefujiijp/ai-project/commit/d8c744dd68d5a366855bb33e3167147adfc213cd)）では、__archivesには改行のみのREADME一つがあり、案件配下の保存実体はなかった。
@@ -40,6 +42,9 @@ ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_re
 | Node | Edge | 元の配置と保存する内容 |
 |---|---|---|
 | [ARC-001のchecker](ARC-001/tools/check_repo_reality.py) | [案件の理由・承認・実施・復元](../control-center/ARCHIVE.md#arc-001) → [実験の由来](../ark-project/ark21/Ark21-06/sandbox/README.md) | `tools/check_repo_reality.py`。撤回済み実験のコードを内容変更なしで保存。現在のRepository正常条件を定めるツールではない |
+| [ARC-002のBridge原本](ARC-002/ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md) | [廃止理由・固定参照・残点](../control-center/ARCHIVE.md#arc-002) → [現在の棚の案内](../ai-ark-seed/ai-ark-seed-cards/README.md) | 一原本を保存。元パスは同一blobの互換原本として保持し、物理移動完了とは数えない |
+| [ARC-003の旧Stage 02](ARC-003/prompts/x-deepquote/x-deepquote_02-quote-completion-gate_v001-8.md)・[監査Packet](ARC-003/prompts/fable5/fable5-x-deepquote-markdown-handoff-ai-output-polish-audit_packet_v001.md) | [旧方式の退役と保存価値](../control-center/ARCHIVE.md#arc-003) → [現在のPrompt入口](../prompts/README.md) | 二原本を移動。Stage 01・後続Stage 02・02Rは保持 |
+| [ARC-004の旧Compile](ARC-004/prompts/ai-compile-ark-seed.md)・[Compile Query](ARC-004/prompts/ai-compile-ark-seed_query.md)・[旧Pickup](ARC-004/prompts/ai-pickup-ark-seed.md)・[Pickup Query](ARC-004/prompts/ai-pickup-ark-seed_query.md) | [役割差と退役理由](../control-center/ARCHIVE.md#arc-004) → [文脈を保持する現在の案内](../ai-ark-seed/README.md#10-context-preservation) | 四原本を移動。軽量Seedとの完全同等やRuntimeの再設計を意味しない |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -49,4 +54,4 @@ ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_re
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.2.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.3.0

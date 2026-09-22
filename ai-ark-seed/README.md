@@ -2,8 +2,10 @@
 title: "AI Ark Seed"
 filename: "README.md"
 canonical_path: "ai-ark-seed/README.md"
-version: "v001-candidate"
+version: "v002-candidate"
 date: "2026-08-08"
+updated: "2026-09-22"
+revision_reason: "ARC-004 legacy routing and context-preservation guide; specialist Runtime contracts unchanged"
 status: "human-sealed field-test candidate / not canonical"
 class: "subsystem_front_door"
 language_policy: "Japanese-first / English-anchor"
@@ -24,6 +26,8 @@ Persist only Cardified Seeds.
 ```
 
 ---
+
+保存済みCardの現行・Historical・互換保持の区別は[Card Shelfの入口](ai-ark-seed-cards/README.md)で確認する。旧Compile／Pickupからの整理と文脈付き移植の価値は[§10](#10-context-preservation)へ。
 
 ## 1. Architecture
 
@@ -281,9 +285,31 @@ No Cardification,
 No Persistence.
 ```
 
+## 10. Context Preservation
+
+2026-09-22のHuman承認に基づき、旧`prompts/ai-compile-ark-seed*.md`と`prompts/ai-pickup-ark-seed*.md`の四原本を[ARC-004](../control-center/ARCHIVE.md#arc-004)へ保存した。軽量SeedとCard化の入口は引き続き`ai-ark-seed_query.md`。旧四ファイルを自動Fallbackや現在の起動先として使わない。
+
+旧方式は、Origin Contextを持つ再起動可能なSeedを作り、別ThreadでConcept Maturationを開始する役割を持つ。新方式の一文Seed／選択的Card化との完全同等を確認したという意味ではない。本改訂は入口と保存価値の案内であり、専門Runtime・Queryの契約、Canonical Status、Field Test状態を変更しない。
+
+### 10.1 依頼の意味から保持する文脈を選ぶ
+
+- **一文で呼び出せるようにしたい**：既存COMPILEで軽量Seedを作る。Seed生成と保存を分ける。
+- **複雑な発見・Correctionを別Threadで深掘りしたい**：一文Seedだけで十分と仮定せず、発見前の状況、Trigger、Humanの原文と意味、因果・変化、Confirmed／Candidate／Unknown、次に考えることと実行境界を必要な深さで保持する。明示されたHandoff・移行契約があればそれに従う。
+- **Seed Cardとして残す価値を検討したい**：既存PICKUPのCardification判断へ進む。文脈付き移植や深掘りを、永続保存の自動承認と扱わない。
+
+例えば「原文の意味を誤読していたAIがHuman Correctionで判断を変えた」発見では、名称だけでなく、何を誤読し、どの訂正が何を変え、何がまだ未確認かが再開に効く。どこまで保持するかはCurrent RequestとSourceから判断し、固定項目の穴埋めや回答の短縮義務にしない。
+
+### 10.2 必要時に戻る設計原本
+
+[旧Compile](../__archives/ARC-004/prompts/ai-compile-ark-seed.md)の§4・§12–16は文脈とPickup-Ready Packet、[旧Pickup](../__archives/ARC-004/prompts/ai-pickup-ark-seed.md)の§7–10は未言語層とConcept Maturationの参考になる。[旧Compile Query](../__archives/ARC-004/prompts/ai-compile-ark-seed_query.md)と[旧Pickup Query](../__archives/ARC-004/prompts/ai-pickup-ark-seed_query.md)も当時の関係を保存する。
+
+これらは必要な意味を読み直すHistorical Sourceであり、全利用の必須読込リストではない。旧原本の`ark-project/prompts/`や起動命令を現在の経路へ読み替えず、Current Human Requestと適用Runtimeの下で使う。現行Subsystemをより重い旧方式へ一括変更したり、深い依頼を一文Seedへ縮めたりしない。
+
+---
+
 document_end:
   filename: "README.md"
-  version: "v001-candidate"
-  eof_sentinel: "EOF::AI_ARK_SEED_README::v001-candidate"
+  version: "v002-candidate"
+  eof_sentinel: "EOF::AI_ARK_SEED_README::v002-candidate"
 
-EOF::AI_ARK_SEED_README::v001-candidate
+EOF::AI_ARK_SEED_README::v002-candidate
