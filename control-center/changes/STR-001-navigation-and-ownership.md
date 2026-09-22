@@ -1,10 +1,10 @@
 ---
 title: "STR-001 — 現役資料の案内・所有先・相互参照の整合"
 record_id: "STR-001"
-version: "v001"
+version: "v001.1"
 canonical_path: "control-center/changes/STR-001-navigation-and-ownership.md"
 role: "Scoped structural change history / 5W1H / evidence and remaining decisions"
-status: "implementation prepared / remote verification pending"
+status: "six repair groups and D04 design saved / remote full-content verified / fixed-chapter direct-entry constraint retained"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
 record_date_utc: "2026-09-22"
@@ -13,7 +13,7 @@ human_authority: "YusukeJP — current explicit approval of the seven proposals 
 implementation_actor: "Ark27:06 execution AI in the current conversation"
 base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
 base_tree: "eb8961fbde7f175de4192247804661d475918747"
-expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001"
+expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.1"
 ---
 
 # STR-001 — 現役資料の案内・所有先・相互参照の整合
@@ -122,30 +122,45 @@ Humanの「予期せぬ成功」「最高AIによる統一」という評価・�
 
 ## file-manifest
 
-以下の変更前blobは、作業前commitの実体。対象パスを同じまま修正し、移動・削除はない。変更後はverificationの実装commitから辿る。
+以下の変更前blobは作業前commit、変更後blobは実装commitの再取得時点の実体。対象パスを同じまま修正し、移動・削除はない。本記録とPLANは、その検証結果の追記でさらに改訂されるため、右列の値を将来のCurrent blob固定条件にしない。
 
-| Node | Edge | 変更前blob |
-|---|---|---|
-| [_system/ark-system.md](../../_system/ark-system.md) | D01：Gate Indexと時間境界 | `6dd14fb2c28239de223e33678544a00e82fade1a` |
-| [_note/README.md](../../_note/README.md) | D01：用途別保存案内 | `5f3208407831310944f54fdcb85911e5734b7cea` |
-| [ARK.md](../../ARK.md) | D02：学びの所有先・移行役割 | `12d209d83c61c249875c5a5e58efa8c24c33d6c1` |
-| [prompts/ark-open-knowledge-format.md](../../prompts/ark-open-knowledge-format.md) | D05：本体の現在住所・Pair | `20682aad7fc92f83a9863a2cd285f160dbe73ba6` |
-| [prompts/ark-open-knowledge-format_query.md](../../prompts/ark-open-knowledge-format_query.md) | D05：Queryの現在住所・Pair | `c4a50e3205fa2f310f618f2abbc5478908f04b83` |
-| [README.md](../../README.md) | E01：司令塔への入口 | `65a3abf1ae41e57a1757a00e9dc3234128dcac51` |
-| [projects/ark-voice/README.md](../../projects/ark-voice/README.md) | D07：作成済み候補の存在・身分 | `c0753238863a3d2ab5178b615ce8a747cca47f4b` |
-| [mode/README.md](../../mode/README.md) | D08：Mode索引・Skill案内・命名例外 | `23878a74117978baa6cec4ad4300c87824dc6cb3` |
-| [mode/ai-journaling_mode.md](../../mode/ai-journaling_mode.md) | D08：自己パス・関連Skillの時間境界 | `625e201220a5fee0032436c195d774ac7abb2d8b` |
-| [control-center/README.md](../../control-center/README.md) | 記録の責務と形成経緯 | `dff12a401d510280c8c73d1dc26ba2008c316d9b` |
-| [control-center/PLAN.md](../../control-center/PLAN.md) | 既存診断・優先順位とSTR-001の接続 | `68af185c7ae332c4c48725a79ffd15d3b718ee2d` |
-| `control-center/changes/STR-001-navigation-and-ownership.md` | 5W1H、設計比較、変更前後・検証結果 | 新規作成 |
+| Node | Edge | 変更前blob | 実装commitで確認したblob |
+|---|---|---|---|
+| [_system/ark-system.md](../../_system/ark-system.md) | D01：Gate Indexと時間境界 | `6dd14fb2c28239de223e33678544a00e82fade1a` | `c10ac44f7743e3ceb442c8f753897bca3f090ee1` |
+| [_note/README.md](../../_note/README.md) | D01：用途別保存案内 | `5f3208407831310944f54fdcb85911e5734b7cea` | `bca4449a8a76c5099a24e5fa45495e0dedf7b9a9` |
+| [ARK.md](../../ARK.md) | D02：学びの所有先・移行役割 | `12d209d83c61c249875c5a5e58efa8c24c33d6c1` | `154acc0f0633d5e9cd4f66517c519f49b944af5c` |
+| [prompts/ark-open-knowledge-format.md](../../prompts/ark-open-knowledge-format.md) | D05：本体の現在住所・Pair | `20682aad7fc92f83a9863a2cd285f160dbe73ba6` | `aacfdc28e58c516f4f312b2ccca8c843550eb1f5` |
+| [prompts/ark-open-knowledge-format_query.md](../../prompts/ark-open-knowledge-format_query.md) | D05：Queryの現在住所・Pair | `c4a50e3205fa2f310f618f2abbc5478908f04b83` | `29932c4796a6742c47aa281eee60b392b01897d5` |
+| [README.md](../../README.md) | E01：司令塔への入口 | `65a3abf1ae41e57a1757a00e9dc3234128dcac51` | `db97b05360e8077a79877d1c1d21d125e32f6da0` |
+| [projects/ark-voice/README.md](../../projects/ark-voice/README.md) | D07：作成済み候補の存在・身分 | `c0753238863a3d2ab5178b615ce8a747cca47f4b` | `59e5d6225ef7eb0c39fd242f32a5550e402803c7` |
+| [mode/README.md](../../mode/README.md) | D08：Mode索引・Skill案内・命名例外 | `23878a74117978baa6cec4ad4300c87824dc6cb3` | `eb29b68d58944507198a7273fbfccfcfb635a775` |
+| [mode/ai-journaling_mode.md](../../mode/ai-journaling_mode.md) | D08：自己パス・関連Skillの時間境界 | `625e201220a5fee0032436c195d774ac7abb2d8b` | `20086fc0883f9ca4799f17c20a8ffad6a4441516` |
+| [control-center/README.md](../../control-center/README.md) | 記録の責務と形成経緯 | `dff12a401d510280c8c73d1dc26ba2008c316d9b` | `2f6e83c0ce54d62375f28225c9bce0aa5919b4c4` |
+| [control-center/PLAN.md](../../control-center/PLAN.md) | 既存診断・優先順位とSTR-001の接続 | `68af185c7ae332c4c48725a79ffd15d3b718ee2d` | `4fc7a3a6d5992f9d60fd87f2eff3284e90630730` |
+| `control-center/changes/STR-001-navigation-and-ownership.md` | 5W1H、設計比較、変更前後・検証結果 | 新規作成 | `8a9a62b47cdabbc6938b5d79d3b4d324029244b1` |
 
 司令塔READMEとPLANは、役割・現在の診断状態・本記録への入口を更新する。本記録だけを追加する。旧アーカイブ案件・保存物、固定章、Thread三ファイル、他ProjectのSourceは今回の編集対象ではない。
 
 ## verification
 
-**状態：Remote確認待ち。** 実装と記録の保存後、変更対象のRemote全文・blobを意図した本文と比較し、基点Treeとの差分から対象外の保持を確認して追記する。ここに未来のcommitや未観測の成功を書かない。
+**実装commitと12対象のRemote全文・blob一致を確認した。六候補の局所修正とD04設計の保存が完了。** 本節は確認後の追記であり、前の保存予定を成功へ読み替えたものではない。
 
-構造検査では、変更した現在パス・相互Pair・新規リンク・metadata・宣言EOFを確認する。既存の歴史パスを一律にエラーとせず、通常案内と分ける。SystemのGrowth Entry以後の元本文と、候補System／Field Test本文の保持も確認する。
+| Node | Edge | 確認した結果 |
+|---|---|---|
+| 実装保存 | 変更前main→[実装commit](https://github.com/yusukefujiijp/ai-project/commit/9dd82cc37d9e95e03505949c18f66ffd26914a99) | `9dd82cc37d9e95e03505949c18f66ffd26914a99` / tree `4a4ec7b7308f48f534454dd7c4644ef1c77c98bf` |
+| When | GitHub保存→Remote確認 | 保存UTC `2026-09-22T15:55:43Z`、JST `2026-09-23T00:55:43+09:00`。12対象の確認完了UTC `2026-09-22T15:56:10Z` |
+| Who | 意味上の実装担当→GitHub記録者 | 実装・検証はArk27:06実行AI。GitHubが返したauthor/committer名はいずれも `yusukefujiijp`。Humanの依頼・承認と区別して記録 |
+| What / Where | 既存11文書更新＋本記録1文書追加 | 9つの案内・本文、司令塔README・PLAN、変更記録。移動・削除なし。正確な場所とblobはfile-manifest |
+| Remote本文 | 意図した全文→保存実体 | 12対象すべてを実装commitから直接再取得し、全文の文字列一致とGit blob一致を確認。main refも実装commitに一致 |
+| 構造 | 新規・変更リンク→実在先 | ローカル検査で新規・変更リンク63出現を確認。相対リンクは参照元ごとの組合せで56件。対象パス・取得可能な参照見出し、12文書のmetadata・Identity・宣言EOFを照合 |
+| 実効パス | System Gate／OKFペア→対応先 | Gate内の5実在パス、OKF本体とQueryの相互参照を確認。旧歴史パスを現行経路として要求しない |
+| 保持 | 作業前317ファイル→実装後318ファイル | 対象外の既存306ファイルはblob・modeが同一。固定章、01–06の三ファイル、アーカイブ原本、Voice System、Field Test本文を保持 |
+| 本文内の保持 | 編集対象の現在案内→歴史・行動本文 | System §10以後、ARKのFile Ecology外の本文、Journaling §3以後、PLANの05補足接続史が元本文と一致することを確認 |
+| 実利用 | 文書・保存検証→別AIの理解／利用効果 | 本件では独立した別AI試験、Human UI操作、Mode起動、Field Test、実生活効果を観測していない |
+
+変更の全差分は[基点から実装commitの比較](https://github.com/yusukefujiijp/ai-project/compare/945f789a845350455a8b56162a1fc8cd58576eff...9dd82cc37d9e95e03505949c18f66ffd26914a99)から確認できる。今回はAI自身の意味・差分点検と保存確認であり、独立した別AIの理解を代行認定しない。
+
+本節とPLANの完了状態は、この確認結果を根拠に後続commitで保存する。記録自身の最終SHAを本文へ埋める循環を作らない。後続保存も再取得し、現在版はGit履歴・fileのCurrent実体で確認する。
 
 ## reuse-and-revision
 
@@ -155,4 +170,4 @@ Future AIは、必要な案件節→file-manifest→変更前commit／実装comm
 
 再発防止の判断は、資料を追加・移動・改訂したとき、必要な入口・自己パス・Pair・固定参照への影響を同じ変更範囲で扱うこと。これを全資料再読・恒久CI新設・巨大台帳の義務へ拡張しない。文書整合の確認、Remote保存、別AIの実理解、実利用の効果はそれぞれ別に観察する。
 
-EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001
+EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.1
