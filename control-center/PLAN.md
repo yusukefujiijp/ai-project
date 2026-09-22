@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.3.1"
+version: "0.3.2"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "archive-first workflow / Ark27:05 supplement accepted / ranked proposals requested; physical moves unapproved"
+status: "archive-first workflow / Ark27:05 supplement accepted / Ark27:06 route verified / D03 locally resolved; physical moves unapproved"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-22"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.1"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.2"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -25,7 +25,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.1"
 
 初版の出発点ではREADMEが改行のみ、本書は未作成だった。初回実装では、消えやすい会話内の診断を、次のAIが根拠から再検討できるRepository資料へ変えた。下記D01–D07の既存文書自体の修正、移設、退役処理は、この二文書の保存とは別の実装として残す。
 
-- **現在の診断**：D01–D07は基準snapshotで確認された未解消事項。
+- **現在の診断**：D01–D07は基準snapshotでの診断。後続の05→06準備でD03の通常入口の重複不一致を修正・Remote確認した。他の診断の一括解消や固定章Bindingの変更は行っていない。
 - **初版の成果**：司令塔の入口、根拠付き診断、改善計画。
 - **今回の追加**：アーカイブを優先する方針、個別案件の記録、__archivesの入口。実装の観測は§10。
 - **直近の接続**：Humanの追加訂正に従い、物理移動の前に既存Ark27:05へ成果・理由・未完を合流した。受入れの後続観測は補足§8。[補足接続](#reconnect-ark27-05)を参照。構造整理の最初の具体案は引き続き[ARC-001](ARCHIVE.md#arc-001)。
@@ -88,7 +88,7 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D03
 
-**同じDomain READMEの中で、現在地が05と04に分かれている。状態：未修正。**
+**基準snapshotでは同じDomain READMEの現在地が05と04に分かれていた。状態：2026-09-22の05→06入口同期で当該不一致を修正し、Remote全文一致を確認。**
 
 - **Node / Edge**：`ark-project/README.md`の複数箇所が、通常のCurrent entryを指定する。
 - **Confirmed**：§0.1・front matter・末尾はArk27:05を案内する。一方、§3.1末尾は「現在のDomain通常入口」をArk27:04と記載する。[Domain README][domain]
@@ -98,6 +98,9 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **変更と保持**：通常の現在地説明が対象。Ark23当時の出来事や、明示指定された旧Handoffの契約は保持する。D04の固定章文書の編集を混ぜない。
 - **完了条件**：通常入口を示す箇所から整合した所有先へ到達する。旧Thread番号が歴史に残ることを検出エラーにせず、「現在」という適用範囲を確認する。
 - **Unknown**：Targetの現在のUI採用・実読解状態。Domainの案内だけから補完しない。
+
+- **後続観測**：Human承認済み05→06移行準備の入口同期により、[Domain README](../ark-project/README.md)の§0.1とfront matterは06へ接続し、§3.1の重複した旧04指定は§0.1への参照へ置換した。§13も06の準備完了とTarget受入れ未観測を分ける。保存commit [27a27399ec6b6d70327bc0a8c41951df6676ec5a](https://github.com/yusukefujiijp/ai-project/commit/27a27399ec6b6d70327bc0a8c41951df6676ec5a)、blob c472e09f050dfddfdb3602bb3e6a386d610d049f。保存後のRemote本文と意図した全文の一致を確認した。上のConfirmedは旧診断snapshotの証拠であり、現在も未修正という意味ではない。
+- **解消範囲**：同一Domain内の通常入口の不一致。Ark23の歴史、05の安定Runtime、章READMEの固定blobを保持。06 Targetの実読解・Human UI・D04の固定章設計・他の診断・物理アーカイブの完了は証明しない。
 
 ### D04
 
@@ -188,7 +191,7 @@ flowchart TD
 | E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 05で受入れ済み。後続観測は同節§8。移動承認ではない |
 | E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 最初の物理整理候補。今回は本流合流を先行 |
 | E01：入口への接続 | Root README→control-center | Public Front Doorに目的の分かる案内を加える。全作業の追加Boot条件にしない | 未実施の案内改善 |
-| E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | 計画。退役案件の先行必須ではない |
+| E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と§0.1への参照を整える | D03は05→06準備内で修正・Remote確認。D02は残る。退役案件の先行必須ではない |
 | E03：実効経路の修復 | D01・D05→現存する適切な資料 | 用途と本体Identityを確かめ、本文内の実効パスも整える | 計画。役割確認が必要 |
 | E04：存在の案内 | D07→Voice候補 | 候補の所在と、採用・稼働の未確認を正しく案内する | 計画。初版で同じ行にあったD06はE09へ分けた |
 | E05：固定参照の設計 | D04→章・継承契約 | 可変入口と固定資料の関係を設計し、対象契約を検証する | 設計候補 |
@@ -381,6 +384,12 @@ Source準備と保存確認は完了した。Targetの返答がこのThreadへ�
 
 今回の移行準備承認は、05の最新記録・06 Triad・必要な入口同期と検証に限る。ARC-001の個別承認・移動は引き続き未実施。別の生活テーマも保持するが、Humanに複数Taskの同時実行を要求せず、06のBootやこの記録だけで整理作業を開始しない。
 
+### 9. 05→06準備での通常入口の整合
+
+Source05は06 README・Handoff・Stateを順に保存してRemote本文一致とBindingを確認し、その後Domain入口を06へ同期した。D03に記した限定修正はこの承認Scopeで行ったもので、control-centerの全診断一括修正やアーカイブ移動を開始したものではない。章READMEの固定blobは保持し、06も同じ章blobへBindingした。
+
+06の入口は[06 Handoff](../ark-project/ark27/ark27-06/handoff.md)。06自身の再構成は未観測であり、05の受入れ結果を代用しない。ランキングの希望・ARC-001の未承認境界・生活のThink–Action接続を保持して渡す。Source終端と最終保存確認は[05 State](../ark-project/ark27/ark27-05/state.json)が所有し、本PLANでThread状態を二重管理しない。
+
 [system]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_system/ark-system.md
 [note]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/_note/README.md
 [ark]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/ARK.md
@@ -396,4 +405,4 @@ Source準備と保存確認は完了した。Targetの返答がこのThreadへ�
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.3.2
