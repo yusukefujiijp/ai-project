@@ -351,7 +351,9 @@ Source側で合流内容と受入れ条件をこの既存PLANへまとめ、ARC-
 
 この記録を置いただけでは、Ark27:05のAIが読んだこと、受入れ条件を満たしたこと、Humanが貼付したことは確認できない。Targetの受入れは未観測である。Humanが接続文を既存Ark27:05のThreadへ貼り付け、受入側が上の区別を説明した時、その実際の応答を受入れ結果として扱う。
 
-Source準備のRemote確認は保存後に実体を再取得して行う。Targetの返答がこのThreadへ自動配信されるとは仮定せず、後続の報告があればその時点と出典を残す。準備完了を、Thread全体の終了・次Thread作成・移動承認へ変換しない。
+2026-09-22、[PLANの補足保存](https://github.com/yusukefujiijp/ai-project/commit/038f3b82a4a41fccc1cf6e1c008da8d29aec1456)と[ARCHIVEのHuman訂正保存](https://github.com/yusukefujiijp/ai-project/commit/42e0ab4b700701be3a7db5e30438166f82fdf51f)を行い、各対象をRemoteから再取得して意図した全文との一致を確認した。両文書が揃ったcommit `42e0ab4b700701be3a7db5e30438166f82fdf51f` のTree照合では、変更はPLANとARCHIVEの二つだけで、その他308ファイルは同じblobだった。checkerの元パス、__archives入口、既存sandbox、Ark27:05のTriadを保持し、移動先の実体は未作成である。この観測に基づいて本段落を追記した。
+
+Source準備と保存確認は完了した。Targetの返答がこのThreadへ自動配信されるとは仮定せず、後続の報告があればその時点と出典を残す。準備完了を、Target受入れ・Thread全体の終了・次Thread作成・移動承認へ変換しない。
 
 ### 7. 今回のSource読解証拠
 
