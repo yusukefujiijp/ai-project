@@ -1,6 +1,6 @@
 ---
 name: chocozap-sweet-spot
-description: "Support the chocoZAP Sweet Spot two-round workflow: receive today's machine-specific findings, carry them into a focused second round, and incorporate feedback. Use when explicitly invoked, or when an established Sweet Spot conversation continues with machine reports, corrections, second-round retrieval, or reflection. Distinguish requests to design this skill from live workout reports. Skip general fitness topics or chocoZAP business questions when unrelated to this workflow."
+description: "Support the chocoZAP Sweet Spot two-round workflow: receive today's machine-specific findings, carry them into a focused second round, and incorporate feedback. Use when explicitly invoked, or when an established Sweet Spot conversation continues with machine reports, corrections, second-round retrieval, dated history lookup, comparison, saving, or reflection. Distinguish requests to design this skill from live workout reports. Skip general fitness topics or chocoZAP business questions when unrelated to this workflow."
 ---
 
 # chocoZAP Sweet Spot
@@ -59,6 +59,8 @@ Sweet Spotを「本人がその日に狙いたいと報告した重量・使い�
 
 当日の条件の更新と、スキルの共通手順の改訂を分ける。再利用できる改善が見えたら候補として言語化し、外部変更は現在の依頼と権限の範囲で扱う。
 
+変化を比較するときは、訂正を反映した元の観察へ戻り、機械・使い方・日付・来館・分かっている周回の対応を保つ。一周目から二周目への変化と、来館を跨ぐ変化を区別する。「同じ条件で合った」という再確認は新しい観察として扱い、未報告を変化なしへ置き換えない。差分は正本から組み立て、数値の増減だけで成長・後退や原因を認定しない。
+
 ## 6. 会話の継続と保存を区別する
 
 同じ会話では、確認できる当日の記録を再利用する。新しい来館では、前回の条件を出所の分かる履歴として参照し、今日の申告を優先する。過去の値を、確認なしに当日見つけたSweet Spotへ昇格させない。本人が前回と同じ条件を今日も使うと選んだ場合は、参照元を保って今回の選択として扱う。
@@ -66,6 +68,8 @@ Sweet Spotを「本人がその日に狙いたいと報告した重量・使い�
 スキルは共通手順を伝える。別スレッドや他AIが過去の数値を読めるかは、記録の保存先とアクセスに依存する。確認できる記録があれば読む。見えなければ記憶を装わず、必要な記録だけを受け取って続ける。理論全体をHumanに説明し直させない。
 
 保存依頼があれば既存の保存先・記録の所有先と現在の権限を確認し、その範囲の保存と保存後の再取得確認まで完了する。別の可変台帳を勝手に増やさない。受付、永続保存、スキル登録、他AIの実理解、実生活の効果を別々に報告する。本スキル本文へ日々の個人記録を蓄積しない。
+
+YusukeJPのArkで保存・履歴参照・日付ごとの比較を扱う場合は、[chocoZAPの記録と実験場](https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/README.md)から対象の正本へ進む。日付・来館・出所、継続保存の適用範囲、更新・復元の詳細はその案内と現在の依頼に従う。別の保存先が明示されていれば尊重する。確認済みの案内の読解は再利用し、通常の受付や二周目の支援を遠隔保存の成功に従属させない。保存できない場合は未保存の範囲を明示して協働を続ける。
 
 ## 7. 現在の依頼に応じて、十分な協働を返す
 

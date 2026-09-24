@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.10.0
+version: v0.11.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-24
 ---
@@ -27,7 +27,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 | 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
-| chocoZAP Sweet Spot / chocozap-sweet-spot | その日の機械・使い方・重量の申告を受け取り、一周目の発見を二周目の集中へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 本文単体と利用可能な当日の文脈で基本支援。現在の訂正・STOPを尊重 | 形式・導入・限定独立応答確認済み。日ごとの条件と訂正を区別。自然な自動選択・全AI互換性・運動効果は未検証 |
+| chocoZAP Sweet Spot / chocozap-sweet-spot | 当日の機械別報告を二周目へつなぎ、日付別の履歴・変化・訂正を扱う | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../chocozap/README.md) | 形式・限定独立応答確認済み。六条件の復元、訂正と新観察、未報告、日跨ぎを区別。確認の範囲は記録入口を参照 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -78,6 +78,10 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 元会話を継承しない四つの独立したAI文脈へ本文と入力を渡し、計六回の応答を確認しました。単独呼び出しでの意味の復元、本人の既報告からの二周目一覧、仮想入力による日付・誤記訂正・二周目の条件変更、履歴が見えない場合、一周での終了、設計相談を扱えました。本文を明示的に読ませた限定的な応答確認であり、自然な自動選択、全AI互換性、実際の二周目の運動成果や時短を実証していません。
 
 共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査・導入確認済みの本文を変更せず収録し、導入環境が自動付与するアイコン・内部設定は含めません。初回共有時の本文はUTF-8で9,757 bytes、SHA-256は`99f6cff05a034bdf796c7e6d138f3fac7a9b9348ee800c097ab8f22082bfe396`です。この値は初回共有版の同一性確認用であり、将来改訂後のCurrent版を固定しません。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
+
+2026-09-24、YusukeJPの追加の実行承認を受け、AI assistantが[chocozap/README.md](../chocozap/README.md)と日付別記録への連携を追加しました。Skillは共通手順、chocozap側は保存規則と本人の観察を所有します。最初の4機械・6条件は実施日未確認の記録として保存する構成にし、変化は訂正を反映した観察から読み出す時に組み立てます。「同条件の再確認」と未報告を分け、通常の受付や二周目支援を遠隔保存の成否に従属させません。
+
+改訂は、呼び出し対象の説明、変化比較の方針、保存・履歴参照時の入口に限定しました。表示設定は引き続き同じ用途を表します。元会話なしの二つの独立AIによる限定読解・応答確認の内容と、実証していない範囲は[chocoZAP記録入口の来歴](../chocozap/README.md#6-変更の来歴と確認範囲)に記載しています。初回共有時の本文ハッシュは当時の記録として保持し、改訂後の本文へ適用しません。
 
 ## 3. Mobile / explicit entry
 
@@ -144,7 +148,7 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 一周目で記録した、その日のSweet Spotを二周目へつなぐ意味を共有して、今回の入力を受け取ってください。
 ~~~
 
-当日の報告が既に読める場合は再利用します。履歴が読めない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
+当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
 
 ## 4. Source and distribution
 
@@ -193,4 +197,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.10.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.11.0
