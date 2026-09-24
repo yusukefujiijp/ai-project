@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.3.1"
+version: "0.4.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.3.1"
+updated: "2026-09-24"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -276,4 +276,50 @@ SourceとPublication Voiceの分離、未根拠情報を除く判断、公開可
 [session]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/ark-project/ark21/ark21-06/README.md
 [review]: https://github.com/yusukefujiijp/ai-project/blob/d8c744dd68d5a366855bb33e3167147adfc213cd/repository-reviews/reports/2026-09-19.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.3.1
+## ARC-005
+
+**chocoZAPの現役記録をREADMEとJSONへ集約し、旧日別Markdown一式を、日付ごとの文脈記録を再利用するための資料として保管する。**
+
+- **判断と実装**：YusukeJPが本会話の修正版計画へ実行・GitHub保存を承認し、AI assistantがこの版で新構成への切替と三資料の保管を行った。確認日：2026-09-24。正確な保存時刻・GitHub上の記録者・変更差分は本案件を追加したコミットで辿る。
+- **調査・原本の基点**：main `4efbf44eb31c22c660d9c75f4be1917e3d3b716f`。GitHub接続はCONNECTOR_ONLY_MODE。確認済みの共通指示・Skillを再利用し、対象外の構成・他案件は保持する。
+
+### A. 何をどこへ保存したか
+
+| Node | Edge | 移行前のblob |
+|---|---|---|
+| `chocozap/README.md` | [注記付き保管版](../__archives/ARC-005/chocozap/README.md)へ接続 | `2c3becb892edbd9502c63215bdfec15057aa144c` |
+| `chocozap/records/2026/2026-09-24.md` | [注記付き保管版](../__archives/ARC-005/chocozap/records/2026/2026-09-24.md)へ接続 | `79f0d020d90dbe624076da201c4faa8226974a2d` |
+| `chocozap/records/undated/cz-visit-0001.md` | [注記付き保管版](../__archives/ARC-005/chocozap/records/undated/cz-visit-0001.md)へ接続 | `e27f1b6e545b4b5a6bdda5cdc8ff87825f338306` |
+
+[現行のREADME](../chocozap/README.md)は案内を簡素化して同じ入口に残し、実データの正本を [sweet-spots.json](../chocozap/sweet-spots.json) とした。旧日別ファイルとundatedの移動案内は元パスから撤去した。旧mainの二つのファイルURLは存続しない。過去版は上記基点の同じパスから参照できる。
+
+保管版にはfrontmatterの `archive_*` 項目と冒頭注記を追加した。注記を除いた原文は移行前の内容と一致する。保存版のblobは注記追加により原blobと異なる。日別記録の数値・引用・来歴、旧案内の設計と限定検証記録を保持した。旧相対リンクは当時の元パスを基準とするため、保存版の冒頭から固定commitの原本へ戻って辿る。
+
+### B. Humanの訂正から残した価値
+
+以下は本会話のHuman発言を編集した要約であり、逐語録やB-Gate実践の結果報告ではない。
+
+1. 数値の記録・訂正に対して処理が重いというFeedbackから、Humanは日別Markdownの継続更新をやめ、READMEと一つのJSONを中心に作り直す方針を選んだ。月別等の分割はデータ量と実運用を見て再検討する。
+2. 当初は旧記録を現行配置から撤去しGit履歴へ残す計画だった。その後Humanは日毎の詳しい記録を「ドラッカー的『予期せぬ成功』」と評価した。忘れやすい休日やB-Gate検出の情報を、日付と文脈を持つ記録から詳しく振り返る用途へ応用できる可能性を挙げた。
+3. Humanは今回のchocoZAP運用ではカットする判断を維持しつつ、復帰や他分野への応用に備えてファイルを残す案を提示した。条件は、他AI・Future AIが現役と誤認して追記しないことだった。
+4. AIが現役の入口・正本と保管資料を分け、状態表示と復帰条件を付ける計画を提示した後、Humanは「Execute GitHub OK」「実行して下さい！」と承認した。承認範囲は本移行・保管・必要な案内と確認である。
+
+保存するSeedは、頻繁に更新する数値の扱いやすさと、一日の状況・本人の言葉・訂正・前後関係を後から辿れる価値を、それぞれの用途に合わせて残すこと。日別Markdownが無価値・不適切一般という判断ではない。Humanの好評価は保持し、B-Gateでの実利用や精密な想起の改善が実証されたとは扱わない。記録にない出来事や本人の心中を補完しない。
+
+### C. 通常運用・再利用・復帰の境界
+
+通常の読み書きと集計は現行READMEとJSONを使う。保管資料は二つ目の可変台帳や自動Fallbackではない。JSONが読めない時も、旧記録へ追記したり旧値を現在の値として代用したりしない。フォルダ名・注記は運用上の区別であり、技術的な書込み禁止権限を設定したものではない。
+
+復帰や転用を検討する時は、この案件と原資料を読み、現在のHumanの目的・判断に照らして必要な要素を選ぶ。chocoZAPへ戻す場合はその時点のJSONとの責務を決め、現在の訂正を保持する。別分野では新しい目的へ合わせ、旧chocoZAP運用を自動再開しない。実際に復帰・転用したら、その根拠と実施結果を本案件へ接続する。
+
+今回、B-Gateのデータ収集・新しい記録システム・別Skill・成功事例ファイル・定刻処理は作成していない。長期メモリは転記していない。Skillは保存詳細を現行READMEへ委ねる既存の接続を維持し、本文や登録設定の変更を必要としなかった。
+
+### D. 確認の範囲
+
+公開前の内容照合では、2026-09-24・来館cz-visit-0001・四機械六条件・O001〜O006・S01〜S06・C01の対応を確認した。O006の現在値は10kg、5kgは訂正前の申告であり、新しい来館や運動上の成長として数えない。日付確認、本人の訂正と実地Sampleへの評価を保持し、未報告の周回・運動量・時刻を追加していない。
+
+JSONの構文とID・出所参照、保管注記を除いた本文の一致、現役側がREADMEとJSONだけになる構成と参照先を照合する。保存後は実行AIが当該版を再取得し、保存内容・撤去対象・参照先を確認して実際の保存版を完了報告に示す。この記録は内容照合とRemote確認を混同せず、保存後の結果を先取りしない。
+
+今回の確認は構造とデータ移行の範囲である。通常の更新速度、他AIの実理解、誤追記防止の実績、B-Gate等での生活上の効果は別に観測する。将来の容量・読書き時間・競合・比較範囲に問題が現れた場合は、分割や運用を再検討する。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.0

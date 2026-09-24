@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "timezone": "Asia/Tokyo",
+  "days": {
+    "2026-09-24": {
+      "visits": [
+        {
+          "id": "cz-visit-0001",
+          "reporter": "YusukeJP",
+          "created_at": "2026-09-24T12:03:25Z",
+          "recorded_by": "AI assistant",
+          "date_source": "S05",
+          "spots": [
+            {"id":"O001","machine":"レッグプレス","mode":"片足","kg":60,"source":"S01"},
+            {"id":"O002","machine":"ラットプルダウン","mode":"片手","kg":15,"source":"S02"},
+            {"id":"O003","machine":"ラットプルダウン","mode":"両手","kg":30,"source":"S02"},
+            {"id":"O004","machine":"チェストプレス","mode":"片手 縦","kg":25,"source":"S03"},
+            {"id":"O005","machine":"チェストプレス","mode":"片手 横","kg":25,"source":"S03"},
+            {"id":"O006","machine":"ショルダープレス","mode":"片手","kg":10,"source":"S06"}
+          ],
+          "corrections": [
+            {"id":"C01","target":"O006","field":"kg","from":5,"to":10,"previous_source":"S04","source":"S06"}
+          ],
+          "feedback": [
+            {"source":"S06","about":"C01"}
+          ],
+          "sources": {
+            "S01": {"text":"レッグプレス: 片足 60kg"},
+            "S02": {"text":"ラットプルダウン:\n片手 15kg\n両手 30kg"},
+            "S03": {"text":"チェストプレス\n片手 縦 25kg\n片手 横 25kg"},
+            "S04": {"text":"ショルダープレス\n片手 5kg"},
+            "S05": {"text":"日付合ってるので登録して下さい！","context":"AIが「この6条件は、今日2026/09/24に見つけたSweet Spotという理解で合っていますか？」と確認した返答。"},
+            "S06": {"text":"ショルダープレスは\n片手 10kgの間違いでした！\n\nしかし、これはとても良いtestです！\n間違えた場合の訂正としてとても良い実地Sampleです！"}
+          }
+        }
+      ]
+    }
+  }
+}

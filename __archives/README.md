@@ -1,14 +1,14 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.3.0"
+version: "0.4.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
-updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.3.0"
+updated: "2026-09-24"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.4.0"
 ---
 
 # ai-project Archives
@@ -45,6 +45,7 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 | [ARC-002のBridge原本](ARC-002/ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md) | [廃止理由・固定参照・残点](../control-center/ARCHIVE.md#arc-002) → [現在の棚の案内](../ai-ark-seed/ai-ark-seed-cards/README.md) | 一原本を保存。元パスは同一blobの互換原本として保持し、物理移動完了とは数えない |
 | [ARC-003の旧Stage 02](ARC-003/prompts/x-deepquote/x-deepquote_02-quote-completion-gate_v001-8.md)・[監査Packet](ARC-003/prompts/fable5/fable5-x-deepquote-markdown-handoff-ai-output-polish-audit_packet_v001.md) | [旧方式の退役と保存価値](../control-center/ARCHIVE.md#arc-003) → [現在のPrompt入口](../prompts/README.md) | 二原本を移動。Stage 01・後続Stage 02・02Rは保持 |
 | [ARC-004の旧Compile](ARC-004/prompts/ai-compile-ark-seed.md)・[Compile Query](ARC-004/prompts/ai-compile-ark-seed_query.md)・[旧Pickup](ARC-004/prompts/ai-pickup-ark-seed.md)・[Pickup Query](ARC-004/prompts/ai-pickup-ark-seed_query.md) | [役割差と退役理由](../control-center/ARCHIVE.md#arc-004) → [文脈を保持する現在の案内](../ai-ark-seed/README.md#10-context-preservation) | 四原本を移動。軽量Seedとの完全同等やRuntimeの再設計を意味しない |
+| [ARC-005の旧chocoZAP案内](ARC-005/chocozap/README.md)・[日別記録](ARC-005/chocozap/records/2026/2026-09-24.md)・[旧移動案内](ARC-005/chocozap/records/undated/cz-visit-0001.md) | [退役理由・予期せぬ成功の評価・復帰条件](../control-center/ARCHIVE.md#arc-005) → [現行の記録入口](../chocozap/README.md) | 三資料を保管注記付きで保存。原文は注記を除いて保持。現役の正本はJSONへ移行し、旧日別方式は追記・集計対象外 |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -54,4 +55,4 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.3.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.4.0
