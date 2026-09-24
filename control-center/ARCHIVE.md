@@ -1,6 +1,6 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.4.0"
+version: "0.4.1"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-09-24"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.1"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
@@ -322,4 +322,10 @@ JSONの構文とID・出所参照、保管注記を除いた本文の一致、�
 
 今回の確認は構造とデータ移行の範囲である。通常の更新速度、他AIの実理解、誤追記防止の実績、B-Gate等での生活上の効果は別に観測する。将来の容量・読書き時間・競合・比較範囲に問題が現れた場合は、分割や運用を再検討する。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.0
+### E. 保存後の再取得確認
+
+2026-09-24、AI assistantが移行コミット [`8121cad`](https://github.com/yusukefujiijp/ai-project/commit/8121cadd25fdf04431b93d81b4af865a771e0923) の公開後にmainを再取得した。更新・追加した七ファイルは保存予定の全文と一致し、ツリーの変更は計画した九パス（七ファイルの作成・更新と旧二ファイルの撤去）だけだった。現役のchocozap配下はREADMEとsweet-spots.jsonの二つ。六条件・訂正・出所を保持し、ショルダープレス片手の現在値10kgを再確認した。
+
+JSONはUTF-8で1,996バイト。今回の再取得呼出しは約0.33秒だった。これは移行直後の一回の取得観測であり、通常の追加・訂正の総所要時間や速度向上の実証ではない。確認済み状態はこの保存版に対するもので、以後の更新は現行正本を読む。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.1
