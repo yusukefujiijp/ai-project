@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.9.0
+version: v0.10.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-22
+updated: 2026-09-24
 ---
 # Ark Shared Skills Hub
 
@@ -27,6 +27,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 | 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
+| chocoZAP Sweet Spot / chocozap-sweet-spot | その日の機械・使い方・重量の申告を受け取り、一周目の発見を二周目の集中へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 本文単体と利用可能な当日の文脈で基本支援。現在の訂正・STOPを尊重 | 形式・導入・限定独立応答確認済み。日ごとの条件と訂正を区別。自然な自動選択・全AI互換性・運動効果は未検証 |
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -69,6 +70,14 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 元会話と期待回答を渡さないAIによる限定応答確認では、15対象の一覧、読み手に届ける価値という観点、原因を特定できない遅延、詳しい会議分析、後続の観点訂正と解説依頼を扱いました。初稿では一部の核が短い説明句になったため、一語・短い複合語を優先し、対象から明らかな修飾を省く指示へ調整しました。調整後の独立した応答では、翻訳・要約・校正が「理解・要点把握・信頼」となりました。後続の訂正では写真を「構図」へ変更し、求められたリサーチの解説も返しています。これらは限定的な応答観測であり、語の唯一の正しさ、品質優位、自然な自動選択、他モデルへの汎化を実証するものではありません。
 
 共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査と導入先の保存確認を完了し、共有する本文との一致を確認しました。導入先の通常の自動選択設定は有効ですが、設定と実際の自動選択は区別します。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
+
+2026-09-24、YusukeJPが考案し、今回の対話で登録を承認した「chocoZAP スイートスポット理論／chocoZAP二周目理論」を、`chocozap-sweet-spot`として追加しました。YusukeJPの明示的なGitHub保存依頼を受け、AIが登録済み本文を共有版へ反映しています。一周目でその日のSweet Spotを見つけて記録し、インターバル後の二周目で記録を参照して集中する構想です。本人が「Move37的breakthrough」と表現した複数問題同時解決の狙いを、集中・探し直しの削減・時短などの改善候補として保持します。実測済みの効果とは区別します。
+
+呼び出しの最初の応答からこの意味を共有し、短い機械別報告を受け取ります。片手／両手・片足・縦／横の条件、誤記訂正と新しい周回の観察、前回の履歴と今日の申告を区別します。記録した条件は二周目の出発点であり、身体の反応に応じた調整、一周での終了、現在のSTOPを尊重します。別AI・Future AIへ共通手順を渡すSkillであり、過去の個人記録が自動的に共有される仕組みではありません。
+
+元会話を継承しない四つの独立したAI文脈へ本文と入力を渡し、計六回の応答を確認しました。単独呼び出しでの意味の復元、本人の既報告からの二周目一覧、仮想入力による日付・誤記訂正・二周目の条件変更、履歴が見えない場合、一周での終了、設計相談を扱えました。本文を明示的に読ませた限定的な応答確認であり、自然な自動選択、全AI互換性、実際の二周目の運動成果や時短を実証していません。
+
+共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査・導入確認済みの本文を変更せず収録し、導入環境が自動付与するアイコン・内部設定は含めません。初回共有時の本文はUTF-8で9,757 bytes、SHA-256は`99f6cff05a034bdf796c7e6d138f3fac7a9b9348ee800c097ab8f22082bfe396`です。この値は初回共有版の同一性確認用であり、将来改訂後のCurrent版を固定しません。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
 
 ## 3. Mobile / explicit entry
 
@@ -125,6 +134,18 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 今回は指定した指示文の監査と改善案までです。必要な参照資料だけ追加で読み、外部変更は行わないでください。
 ~~~
 
+### 3.2 chocoZAP Sweet Spotを他AIへ渡す入口
+
+スキル登録済みの環境では「chocozap-sweet-spotスキルを活用して下さい！」と呼び出せます。他AI・Future AIへ渡す場合は、次の本文URLと現在の依頼を伝えます。
+
+~~~text
+次のchocozap-sweet-spotのSKILL.mdを読み、今回の依頼に適用してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md
+一周目で記録した、その日のSweet Spotを二周目へつなぐ意味を共有して、今回の入力を受け取ってください。
+~~~
+
+当日の報告が既に読める場合は再利用します。履歴が読めない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -172,4 +193,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.9.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.10.0

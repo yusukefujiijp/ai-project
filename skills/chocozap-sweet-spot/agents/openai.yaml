@@ -1,0 +1,4 @@
+interface:
+  display_name: "chocoZAP Sweet Spot"
+  short_description: "その日のSweet Spotを記録し、一周目の発見を二周目の集中へつなぐ"
+  default_prompt: "$chocozap-sweet-spot を活用して、今日のSweet Spotの記録と二周目への接続を手伝ってください。"
