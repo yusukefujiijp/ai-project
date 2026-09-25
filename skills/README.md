@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.11.0
+version: v0.12.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-24
+updated: 2026-09-25
 ---
 # Ark Shared Skills Hub
 
@@ -18,7 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Ark Transition / prepare-ark-transition | Thread継続・章移行・補助Thread再接続の計画、承認済み準備、受入れ | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
+| Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
@@ -85,40 +85,26 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ## 3. Mobile / explicit entry
 
-次の一つのPromptを、Thread継続・章移行・補助Thread再接続、および他Projectでの文脈継承に使います。種類・Source・Targetは既知のContextから解決し、未提示で判断に必要な情報だけを補います。新しいProjectの目的を旧Missionから自動継承しません。
+次の入口をThread継続・章移行・補助Thread再接続、および他Projectの文脈継承に使います。定型知識は共有SkillとCurrent契約が所有し、Humanは今回の意図を伝えます。必要な意味を残すことが優先であり、行数・文字数の目標は設けません。
 
 ### Copy & Paste — Transition Plan
 
 ```text
-prepare-ark-transition（Ark Transition）を使用し、今回の移行準備をPlan Modeで進めてください。
+prepare-ark-transition（Ark Transition）を使い、今回の移行準備をPlan Modeで進めてください。種類・Source・Target・目的は現在の文脈から解決し、確定事項を再利用してください。
 
-種類・移行元・移行先・目的・承認範囲はCurrent Contextから確認し、確定事項を再利用してください。Human確認済み・AI提案・Unknownを区別し、重要な未確定事項だけを確認してください。
+Skillが使えない場合は次の共有本文を指示資料として読み、そこからCurrent共通契約と適用Runtimeへ進んでください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transition/SKILL.md
 
-SKILL.mdと次の共通契約のCurrent版を確認し、各資料に宣言された全文読解・Identity・Exact EOF・Binding条件を守ってください。
-https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-handoff.md
-
-確認済みの全文読解記録は、共通契約の同一性条件を満たす場合に再利用してください。取得・表示が切れた場合は未読位置から続け、Gapを残さないでください。Skillを利用できない環境では、共通契約を直接読解して適用してください。
-
-整理整頓→レイヤー構造→構造化→interface化。
-interface: 今回の移行準備計画。
-これは固定の思考手順や出力Templateではありません。分析方法・構成・説明密度は、今回の移行判断に最も役立つ形をAIが選んでください。
-
-移行先AIがSource Threadの会話履歴に依存せず、現在地・目的・主要な成果と運用・Human Material Corrections・本当に残る未完了Gateと保留Branch・Evidence Boundary・First Legal Moveを、必要な根拠から復元して協働を続けられる計画にしてください。
-
-Current authoritative Runtimeを優先し、その後のHuman入力・訂正との時点と権限の関係を整合させてください。適用されるRoot・Human Authority・Guardを保持してください。
-
-必要な資料・Artifact・作成更新順・移行固有の再構成条件・検証方法はAIが判断してください。計画では、何をなぜ作成・更新するか、依存関係と完了条件を示し、Source側の準備・保存確認・Target自身の再構成成功・Human側の操作を区別してください。
-
-必須Sourceの未読・不足・不一致は推測や旧版で補わず、該当契約に従って影響する操作を停止し、欠けた条件と最小の回復方法を示してください。通常のUnknownは未確定として保持し、全解消を計画成立の条件にしないでください。
-
-今回は調査と計画のみです。実装・変更・書き込み・保存・反映・実際の移行は行わず、実行可能な計画の提示で停止してください。
+宣言された全文読解・Identity・EOF・Binding・再構成条件を守り、重要な不足だけを確認してください。Source準備・保存確認・Target受入れ・Human操作を分け、必要な資料と依存関係を含む実行可能な計画を示してください。今回は調査と計画のみ。実装・保存・実際の移行は行わず、計画提示で停止してください。
 ```
 
-この入口は計画用です。後にその計画の実行を明示承認した場合は、Current Scope内で計画を再利用し、必要な作成・更新・検証まで進めます。引用された入口文や過去の承認を現在の命令へ昇格させません。PromptやSkill自体の改善依頼は、実際の移行依頼と区別します。
+共有Skillは[Current共通契約](../prompts/ai-next-thread-handoff.md)へ接続します。両資料が必要とする全文読解・同一性確認を省く入口ではありません。AIが参照を辿れない時は、必要なSourceと最小の回復方法を示します。Skill機構なしで読んだ場合は指示資料の利用であり、導入済みと称しません。
 
-共有原本: [prepare-ark-transition/SKILL.md](prepare-ark-transition/SKILL.md)。Skill機構がなく、指示資料として読んだ場合はその経路を明示します。UIの候補表示・Skill導入・契約の読解・外部操作の権限は別です。明示的にSkill使用が必須と指定されている場合は、非対応時に使用したと扱わず不足を報告します。
+この文は計画用です。続いて実行承認を受けたら、その承認Scopeで計画を再利用して作成・更新・検証まで進めます。実際のTargetを起動する時は、準備結果として渡された対象Handoffを使います。計画用の文、Target受入れ、日常のB-Gate入力を同じTriggerにしません。
 
-入口には個別System名・Thread番号・固定ファイル数・契約の版やEOF文字列を埋め込みません。Current Runtimeに従って必要なSystem資料と経験記録へ接続し、その意味を所有するガイドと原本を使います。たとえばTask Mode Systemの追加で、この入口へのTask専用追記は不要です。
+Arkの章作成では、Skillから[Domainのペア準備規則](../ark-project/README.md#41-odd--even-paired-preparation)へ進みます。既存章のThread継続では既存Subを再利用し、毎回のSub新設へ変換しません。番号・契約版・EOF文字列・固定ファイル数は、この定型入口に埋め込みません。
+
+**カプセル化の境界。** 必要な目的・対象・Mode・権限は入口と現在の会話から伝え、定型の読解・選別・検証をAI側で担います。Humanに全内部資料の理解や毎回の追加フォームを求めず、AIの方法・説明密度・創発性は開きます。内部の意味・責任・不確実性まで隠さず、必要時には根拠と変更理由を説明します。この入口文は本節だけで保守し、独立した_queryとの二重管理を新設しません。
 
 ### 3.1 Cross-AI entry for the added skills
 
@@ -171,6 +157,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 
 2026-09-20、Ark27:04でのHuman承認により、第3節の計画用Promptを改訂しました。共通契約にある全文読解記録の再利用条件、資料ごとの宣言条件、Human確認済み・AI提案・Unknown、未完了Gateと保留Branch、停止範囲と最小回復方法を入口でも明確にしています。構造化を固定Templateにせず、Source準備・保存確認・Target再構成・Human操作を分ける方針を保持しました。変更はこのHubの呼出しPrompt・版情報・改訂理由に限定し、共通契約とSkill本文の改訂、Skillの再導入、実際の移行やTarget Bootを含みません。
 
+2026-09-25、Ark27:05のHumanが承認した改訂計画に基づき、Ark TransitionのArk章ペアへの条件付きRoutingと本節の入口を更新しました。「Promptは必要な意味を無理に削らない」というCorrectionを受け、定型処理をSkill・共通契約・Ark Domainへ委ねています。共通契約と既存の移行Handoffは改訂せず、章固有の意味は新しいArk28資料へ置きました。共有原本の保存、導入先の更新、限定応答確認、実際のArk28起動は別です。検証記録は後続の確認結果を同節へ追記します。2026-09-12のexport-manifestは対象外の歴史記録として変更しません。
+
 ## 5. Validation and growth
 
 区別する状態は、共有原本の保存、Remote再取得確認、各環境への導入、実際の振る舞いの確認です。結果を観察していない段階を成功へ昇格させません。
@@ -197,4 +185,5 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.11.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.12.0
+

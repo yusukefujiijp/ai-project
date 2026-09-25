@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "state_id": "ARK28_01_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-09-25",
+    "updated": "2026-09-25",
+    "canonical_path": "ark-project/ark28/ark28-01/state.json",
+    "date_scope": "Source preparation date in UTC; not an observed Human UI or Task time",
+    "change_reason": "Initialize flexible support field after remotely verifying stable README and bound Handoff."
+  },
+  "identity": {
+    "source": "Ark27:05",
+    "target": "Ark28:01",
+    "owner": "Ark28:01",
+    "chapter": "Ark28",
+    "role": "SUPPORT",
+    "transition_kind": "CHAPTER_TRANSITION",
+    "main_chapter": "Ark27",
+    "main_ownership_transferred": false,
+    "main_thread_resolution": "Current Human designation; otherwise ark-project/README.md",
+    "compiled_title": "Ark28:01_2026/09/25: \"主の完全勝利: 本流を支える余白と帰還\""
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光",
+    "human_retains": [
+      "Meaning",
+      "身体Reality",
+      "Correction",
+      "STOP",
+      "Final Seal"
+    ],
+    "guards": [
+      "Truth",
+      "Body",
+      "Sleep",
+      "Food",
+      "Shabbat",
+      "Safety",
+      "Medical",
+      "Others",
+      "Law",
+      "Responsibility"
+    ],
+    "preparation_scope": "Human authorized the revised Ark28/paired-preparation/tooling plan, GitHub persistence, installed-skill update and bounded verification.",
+    "not_authorized_by_boot": [
+      "Main task execution or ownership transfer",
+      "archive moves",
+      "account/UI changes",
+      "notifications or background monitoring",
+      "physical Reset trials",
+      "ChatGPT long-term memory export"
+    ]
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark28/ark28-01/README.md",
+      "id": "ARK28_01_SUPPORT_FIELD",
+      "blob_sha": "0b9ba18c2f9d191a4eecf8e92f77418d52794cea"
+    },
+    "handoff": {
+      "path": "ark-project/ark28/ark28-01/handoff.md",
+      "id": "ARK27_05_TO_ARK28_01_SUPPORT",
+      "blob_sha": "1828144b4ddc86e20d7140b4a345dfb3177c80cf"
+    },
+    "chapter": {
+      "path": "ark-project/ark28/README.md",
+      "id": "ARK28_SUPPORT_CHAPTER",
+      "policy": "current declared identity/revision/EOF; check compatibility, not a fixed blob"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "policy": "current routing and paired-preparation policy; preserve explicit Human selection"
+    }
+  },
+  "now": {
+    "phase": "SOURCE_PREPARED_AWAITING_TARGET_AND_HUMAN_ACCESS",
+    "support_purpose": "本流を保持しながら、B-Gate・軽いTeshuvah・BrainDump等を受け取れる、事前に用意された柔軟なSub。",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "existing_input": "Accept any new Human input already supplied; do not ask it again.",
+    "local_options": [
+      "continue in Sub",
+      "complete in Sub",
+      "defer with meaning retained",
+      "selectively reconnect material deltas to current Main"
+    ],
+    "live_b_gate": "NOT_REPORTED_IN_THIS_PREPARATION",
+    "main_context": "Source reported successful next-Thread startup and ongoing GitHub work; no authority here to manipulate that Main activity."
+  },
+  "evidence": {
+    "confirmed_human": [
+      {
+        "claim": "B状態になってから補助を作るのでは遅いという経験判断と、A状態でのペア準備を採用。",
+        "source": "ark-project/ark28/README.md §2 H1-H3",
+        "kind": "Human report and adopted design; effect not measured"
+      },
+      {
+        "claim": "Subの柔軟な用途、任意の合流、必要な意味を削らないPromptとAI側カプセル化を指定。",
+        "source": "ark-project/ark28/README.md §2 H3-H6",
+        "kind": "Human correction and design authority"
+      }
+    ],
+    "confirmed_tool": [
+      {
+        "claim": "Chapter README and stable Thread README saved and reread exactly.",
+        "commit": "09cfd5db4e8440af794bde166ca4dbd44b0c7399"
+      },
+      {
+        "claim": "Handoff saved after Runtime reread and bound to the verified blob; reread exactly.",
+        "commit": "b7402d080960e4fa1d058bc85612c756ed60ebbb"
+      }
+    ],
+    "candidate": [
+      "Advance ready access may reduce support-start friction and protect productive Main context.",
+      "Selective reconnection may preserve learning without importing all support dialogue."
+    ],
+    "unknown": [
+      "Actual Ark28 Target reception in the Human's new Thread",
+      "Human UI creation, title application and ease of access",
+      "Observed benefit, recurrence and field effects",
+      "Which local support situations will need future amendments"
+    ],
+    "boundary": "Preparation, hypothetical/independent checks, live Target reconstruction, Human UI/access and real-world effects are distinct. Silence is not failure or completion."
+  },
+  "deferred": [
+    {
+      "branch": "Main tasks, archives and other projects",
+      "treatment": "Remain with their current owners and authorization; not started here."
+    },
+    {
+      "branch": "Support field improvements",
+      "treatment": "Use actual Feedback under applicable delegation; no automatic next trial or permanent new restriction."
+    },
+    {
+      "branch": "Optional Main reconnection",
+      "treatment": "Only decision-relevant meaning and provenance; not obligatory, not an external-change approval."
+    }
+  ],
+  "progress": {
+    "source_prepared": "CONFIRMED",
+    "remote_verification": "README_AND_HANDOFF_VERIFIED; State and connected routes pending final reread",
+    "installed_skill_update": "PENDING",
+    "limited_independent_check": "PENDING",
+    "actual_target_reconstruction": "NOT_OBSERVED",
+    "human_thread_and_access": "NOT_OBSERVED",
+    "human_title_application": "NOT_OBSERVED",
+    "field_effects": "NOT_OBSERVED"
+  },
+  "eof_sentinel": "ARK28_01_STATE_EOF_v001"
+}

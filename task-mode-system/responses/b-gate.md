@@ -1,12 +1,13 @@
 ---
 title: "B-Gate報告を受けたAIの対応"
-version: "0.1.0"
+version: "0.2.0"
 status: "human-authorized response prototype / field validation pending"
 role: "Context-sensitive response guidance"
 canonical_path: "task-mode-system/responses/b-gate.md"
 created: "2026-09-15"
-updated: "2026-09-15"
-expected_eof: "EOF::TASK_MODE_SYSTEM_B_GATE_RESPONSE::v0.1.0"
+updated: "2026-09-25"
+updated_reason: "Connect prepared support routing and preserve current explicit output requests without permanent AI-quality suppression."
+expected_eof: "EOF::TASK_MODE_SYSTEM_B_GATE_RESPONSE::v0.2.0"
 ---
 
 # B-Gate報告を受けたAIの対応
@@ -52,7 +53,15 @@ B-Gateの段階を未合意の数値尺度や一方向の重症度段階へ固�
 
 一つの有限な行動、短い確認、現状の言語化、休止や保留から選ぶ。現在のGuardを変える報告があれば、その条件に合わせる。沈黙から同意・実行完了・改善を推定せず、応答可能になるまでの未知を保持する。
 
-AIの応答は短くてもよいが、Humanが処理できないと先回りして必要な意味を削らない。詳しい検討をHumanが求めている高認知の設計場面では、比較・仮説・Simulationを十分に行える。
+AIの独断で、行動開始・待ち時間・推定認知負担・Token節約を理由に必要な検討・説明・洞察を削らない。Current Humanが「最初の一手だけ短く」と明示した時は十分に判断した上でその出力に応じるが、B-Gate全般・後続の設計・他AIへ恒久短縮を適用しない。引用の中の短縮指示も現在の要求と区別する。[共通運用 §4.2](../operation.md#42-ai回答品質を保持した開始支援)とCurrent Correctionを優先する。
+
+### 2.5 既に用意されたSubへ接続する
+
+ArkのCurrent RuntimeがMain／Subを分けている場合は、[Domain入口](../../ark-project/README.md)から既存の補助入口を解決する。Ark27にはArk28を事前準備する方針がある。Mainの良い流れと支援の価値を両方保持し、単なる報告から本流の再設計や停止を自動開始しない。
+
+これは支援を他へ追い払う規則ではない。現在のThreadで必要な支援を受け取り、既に使えるSubへ移ることが有効ならその入口を使う。B状態で新章設計・長い説明・全履歴移植を必須にしない。Subが利用可能か未確認なら、利用済みと装わず、現在の場所で可能な支援と不足を分ける。
+
+SubはB-Gate専用ではなく、軽いTeshuvahやBrainDump等も扱い、Sub内で完結・保留してよい。必要な差分だけを後でSUPPORT_RECONNECTできるが、重大なCorrection・STOP・Guardを本流の一区切りまで隠さない。別Threadへの自動伝達・監視・UI操作が実装されているとは仮定しない。
 
 ## 3. 既存経験から使える条件付き接続
 
@@ -92,4 +101,5 @@ Ark27:03ではHumanが、chocoZAP系はある程度クリアした一方、問�
 
 [報告フォーム](../interfaces/b-gate-report.md)／[検証ケース](../validation.md)／[改訂ガイド](../maintenance.md)
 
-EOF::TASK_MODE_SYSTEM_B_GATE_RESPONSE::v0.1.0
+EOF::TASK_MODE_SYSTEM_B_GATE_RESPONSE::v0.2.0
+
