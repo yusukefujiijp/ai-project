@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.6.1"
+version: "0.7.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "ARC-001–004 results retained / STR-001 six repair groups and D04 design remotely verified / D04 design separated from binding migration"
+status: "Prior ARC/STR-001 evidence retained / STR-002 single-prompt consolidation / remaining cutover and fixed-binding gates tracked separately"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-22"
+updated: "2026-09-25"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.6.1"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.7.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -47,6 +47,12 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.6.1"
 アーカイブ後の七候補のランキングに対し、Humanは実行と、他AI・Future AIが変更の時点・担当・場所・理由・方法を理解できる記録を要求した。「統一」は、今回の入口・実体・所有先の整合として実装する。文書の独立した役割を消したり、モデルの肩書きで改善効果を認定したりする意味にはしない。
 
 実施順の判断はD01→D02→D05→E01→D07→D08→D04。D04は固定参照の分離設計が対象で、旧Handoffの一括書換えや固定章READMEの改訂は含まない。具体的な5W1H・変更前後・根拠・保存結果・残る判断は[STR-001](changes/STR-001-navigation-and-ownership.md)に集約する。通常Unknownの全解消やD04の移行を、局所修正の前提にしない。
+
+### 1.3 Ark27:06の単一Prompt化と時間軸の訂正
+
+Humanは、別Queryとの分割は短期の起動には利益があったが、休止・再開・保守・継承を含む長期視点では大きなマイナスだったと評価した。Queryを単純削除せず有益な機能を本体へ統合し、別Queryの推奨・作成条件を完全撤回する方向を承認した。前回のPair相互案内改善から、Pair自体の運用依存を解く作業へ進む。
+
+今回の現在地・6組の統合対応・5W1H・固定commitの復元先・Remote検証は[STR-002](changes/STR-002-single-prompt-consolidation.md)へ集約する。Plan Modeの切替Gate、既存の固定Source Bindingは、通常6組の統合と分ける。別Query方針の撤回と、全対象の物理的な削除完了を混同しない。旧D05の修復は当時の成果として保持し、そのPairを再作成する指示として使わない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -141,6 +147,8 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 - **Unknown**：他の全Queryの同種問題。既存レビューの指摘は候補として再確認し、未調査部分を修正済みにしない。
 
 - **STR-001後続対応**：本体側にも旧自己パス・paired_queryが残るため、Query単体の修正から実在するペア双方の現在住所の整合へ具体化した。Bootstrapの由来名、EngineとQueryの役割、本文の判断原則を保持した。 保存と確認の状態は[変更記録](changes/STR-001-navigation-and-ownership.md#d05)を参照。上の基準snapshotの根拠を現在の未修正状態として再利用しない。
+
+<!-- D05の後続状態はSTR-002が所有する。上記のPair診断は歴史的snapshotであり、現行の別Query推奨ではない。 -->
 
 ### D06
 
@@ -432,4 +440,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.6.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.7.0

@@ -2,9 +2,10 @@
 title: "Prompts"
 canonical_path: "prompts/README.md"
 status: "active / human-sealed"
-scope: "Cross-AI Prompt Runtime and Query Shelf"
+scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-22"
+last_updated: "2026-09-25"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -63,51 +64,21 @@ ai-output-polish.md
 
 ---
 
-## 2. Markdown + Query Pair / 正準Pair
+## 2. Single-Prompt Policy / 一つの本体で再開できる設計
 
-Prompt Runtimeと起動Queryを分けられる場合、`_query.md` Pairを**強く推奨する基本形**とする。
+再利用する一つのPromptについて、起動方法・必要入力・本文・Guardを同じ本体にまとめる。別Queryの強い推奨、任意作成条件、将来の作成予約は撤回した。Runtimeが長い、Bindingが必要、起動差があるという理由で別Queryを新設・再作成しない。問題は本体内の入力・起動・説明の改善へ返す。
 
-```text
-<ai-prompt>.md
-<ai-prompt>_query.md
-```
+理由はArk27:06のHuman Correctionである。分割は短期の起動に利益があったが、時間が空いた後の再開・保守・別AIへの継承では二重管理の負担が大きかった。これはHumanの運用評価であり、あらゆるソフトウェア分割の普遍的な否定ではない。
 
-Queryは、長いRuntimeを短く安全に起動し、Target Binding、Protocol確認、Input Role、State Transitionを安定させる重要Assetである。
+統合は次を守る。
 
-ただし、`_query.md`はすべてのPromptへ機械的に課す絶対条件ではない。
+- 起動・対象束縛・不足時の停止・指示と入力Dataの境界を本体へ移す。機能を捨てる単純削除にしない。
+- 同じ規則を二度維持せず、冒頭の入口から本体内の定義へ接続する。二文書の全文連結や、別名のLauncherへの置換で二重管理を残さない。
+- 一つの用途に一つの本体を育てる。全Promptの巨大一体化や、対象Data・根拠Sourceの同梱義務ではない。
+- Humanの短い入力を、AIの検討・説明・回答品質の抑制へ変換しない。Root、Correction、STOP、Seal、適用Guardを保つ。
+- 過去のQuery作成・使用の記録は履歴として辿れるようにする。履歴は現在の作成許可ではない。
 
-> **Query Pair is a high-priority default when it reduces operational ambiguity—not an absolute ritual.**
-
-### 2.1 Pair化を優先する条件
-
-```yaml
-create_query_pair_when:
-  - "対象Fileや変数のBindingが必要"
-  - "Prompt Runtimeが長い"
-  - "Protocol Missing / Version Gateが必要"
-  - "Human SealからExecutionへの状態遷移がある"
-  - "毎回の起動文再作成による事故がある"
-  - "複数AIへ同じ方式で投入する"
-```
-
-### 2.2 Runtime単体を許容する条件
-
-```yaml
-single_runtime_allowed_when:
-  - "起動方法が一意で短い"
-  - "Targetや変数のBindingが不要"
-  - "Version DriftのRiskが低い"
-  - "Query追加が本体より運用負荷を増やす"
-```
-
-```text
-Markdown governs.
-Query binds and activates.
-Human seals.
-Reality confirms.
-```
-
-QueryはRuntime本体のUniversal Coreを重複保持しない。
+今回の統合と未完了の移行Gateは[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)が所有する。固定参照の旧資料に残る将来作成条件も、現行の方針としては撤回済みである。ただし、その物理的な改訂はBindingを無断で壊さず移行する。移行待ちを恒久的なQuery推奨例外にしない。
 
 ---
 
@@ -117,7 +88,7 @@ QueryはRuntime本体のUniversal Coreを重複保持しない。
 
 ```yaml
 runtime: "prompts/ai-file-damedashi.md"
-query: "prompts/ai-file-damedashi_query.md"
+activation: "同じ本体の§1・§14と対象File"
 role: "Reality Red-Team / Minimal Patch"
 ```
 
@@ -125,11 +96,11 @@ role: "Reality Red-Team / Minimal Patch"
 
 ```yaml
 runtime: "prompts/ai-output-polish.md"
-query: "prompts/ai-output-polish_query.md"
+activation: "同じ本体の§9と整形対象"
 role: "Meaning-preserving output polish"
 ```
 
-AI Output Polishは、長いRuntime、複数Input Mode、複数Output Type、Target Section指定を持つため、Query Pairによる起動責務分離の実益が確認された。
+AI Output Polishの複数Input Mode、Output Type、Target Section指定、Missing／Ambiguity Gateは本体へ統合した。起動の短さと必要な説明の深さを、別ファイルの同期なしで両立させる。
 
 ### 3.3 AI Plan Mode
 
@@ -139,6 +110,7 @@ runtime: "ai-plan-mode/ai-plan-mode.md"
 query: "ai-plan-mode/ai-plan-mode_query.md"
 role: "Plan-to-Full-Rail Human-AI semi-automation gate"
 status: "active route / compatibility period / v004-candidate"
+single_prompt_migration: "approved direction / cutover gates pending; see STR-002"
 
 rollback_baseline:
   runtime: "prompts/ai-plan-mode.md"
@@ -150,13 +122,15 @@ rollback_baseline:
     - "Do not silently fall back."
 ```
 
+ここに残る既存Queryは移行中の互換実体であり、別Queryの推奨・新設条件ではない。単一Prompt候補の準備、独立Cold-Start、挙動同等性、Human Reality Verdict、切替判断を区別し、未通過の切替Gateを自己点検で代替しない。
+
 ```text
 Deep Dialogue
 → Context Ripening
 → Move37-like Breakthrough
 → Plan Mode
 → Human-editable Review
-→ Exact Human Trigger
+→ Clear Human execution intent within the approved scope
 → Full Rail: same_thread
 → Reality Review
 → Next Gate / Harvest
@@ -166,9 +140,9 @@ Deep Dialogue
 
 ```yaml
 runtime: "prompts/ai-to-ai-communication.md"
-query: "prompts/ai-to-ai-communication_query.md"
+activation: "同じ本体の§10・§16"
 role: "Human-mediated Cross-AI Message / Material Delta / finite convergence runtime"
-status: "human-sealed v001.1 field-test candidate / not canonical"
+status: "v002 single-prompt candidate / historical v001.1 evidence retained / not canonical"
 origin: "Alan Kay式AI間コミュニケーション / Ark式温故知新のFirstfruits"
 ```
 
@@ -190,7 +164,7 @@ AI-to-AI Communicationは、Protocol Arrival・Role Eligibility・Semantic Bindi
 
 ```yaml
 runtime: "prompts/ai-living-graph-mode.md"
-query: "NOT CREATED — add only after repeated activation ambiguity"
+activation: "same runtime"
 role: "Relational reasoning / Graph-Native Fruit / Living update / prose return"
 status: "human-sealed design candidate / field-test pending / not canonical"
 default_artifact: "NONE"
@@ -208,13 +182,13 @@ AI Background
       └─ 総合的な文章へUnwind
 ```
 
-Graph、Mini App、Site、Dashboard等のArtifactは、Humanが当該Artifactを明示的に依頼した場合だけ作る。Runtimeが長くても現時点ではBinding変数や状態遷移が小さいため、Query Pairは作らない。再現運用で起動曖昧性が観測された場合にのみPair化を再検討する。
+Graph、Mini App、Site、Dashboard等のArtifactは、Humanが当該Artifactを明示的に依頼した場合だけ作る。起動の曖昧さは本体内の案内改善へ返し、別Queryは作らない。
 
 ### 3.6 AI One-Table Interface
 
 ~~~yaml
 runtime: "prompts/ai-one-table-interface.md"
-query: "NOT CREATED — add only after repeated activation or binding ambiguity"
+activation: "same runtime"
 role: "One adaptive Graph table per normal response / Human-AI shared coordinate / practical Graph instruction / Human-reviewed pattern formation"
 status: "human-sealed design candidate / initial deployment / field-test pending / not canonical"
 reasoning_dependency: "prompts/ai-living-graph-mode.md"
@@ -236,13 +210,13 @@ Long-Form Response Rhythm
 → places the table in temporal composition
 ~~~
 
-文書自身が一つのGraph表を実演し、Future AIへNode & Edgeを表作成の実技として教える。各回答で生成された表は、Human ReactionまたはCorrectionとPairになった時に初めてPattern Evidence Candidateとなる。Human ReviewなしにPattern保存、Query Pair化、Skill化、Canonical化を自動発火しない。
+文書自身が一つのGraph表を実演し、Future AIへNode & Edgeを表作成の実技として教える。各回答で生成された表は、Human ReactionまたはCorrectionとPairになった時に初めてPattern Evidence Candidateとなる。Human ReviewなしにPattern保存、Skill化、Canonical化を自動発火しない。別Query作成の方針は§2で撤回した。
 
 ### 3.7 AI Benefit Branch Pruning
 
 ~~~yaml
 runtime: "prompts/ai-benefit-branch-pruning.md"
-query: "NOT CREATED — add only after repeated activation or binding ambiguity"
+activation: "same runtime"
 role: "Future-AI-first Dual-Benefit Branch Deadlock resolution / Benefit–Carrier separation / guarded Benefit preservation / one-choice recovery"
 status: "v002-candidate / Human-authorized operational revision / inherited origin and naming seals / field validation pending / not canonical"
 reasoning_dependency: "prompts/ai-living-graph-mode.md"
@@ -266,7 +240,7 @@ Two real Benefits
 → Human Review
 ~~~
 
-Future AIが主読者であるが、AIが最終Authorityになることを意味しない。HumanはReality、意味、Correction、STOPおよびFinal Sealを保持する。一件の成功からQuery Pair、Skill、Canonical化、Cross-Project展開または次Trialを自動発火しない。
+Future AIが主読者であるが、AIが最終Authorityになることを意味しない。HumanはReality、意味、Correction、STOPおよびFinal Sealを保持する。一件の成功からSkill、Canonical化、Cross-Project展開または次Trialを自動発火しない。別Queryは作成しない。
 
 
 ### 3.8 AI Minimal 2D Bot Icon
@@ -275,7 +249,7 @@ Future AIが主読者であるが、AIが最終Authorityになることを意味
 
 ~~~yaml
 runtime: "prompts/ai-minimal-2d-bot-icon.md"
-query: "NOT CREATED — 本文と対象画像で使用する単体プロンプト"
+activation: "本文と対象画像で使用する単体プロンプト"
 role: "元画像の特徴を保ったミニマル2Dボットアイコンへの変換"
 language: "ja"
 version: "v001"
@@ -287,7 +261,7 @@ version: "v001"
 
 ### 3.9 AI Ark Seed
 
-Seed化・選択的Card化の入口は[AI Ark Seed](../ai-ark-seed/README.md)、Queryは[ai-ark-seed_query.md](../ai-ark-seed/ai-ark-seed_query.md)。旧Compile／Pickupの二組四ファイルは[ARC-004](../control-center/ARCHIVE.md#arc-004)へ保存した。文脈付きSeedを別Threadへ渡して成熟させる価値は[現行入口の案内](../ai-ark-seed/README.md#10-context-preservation)から辿れる。軽量Seedとの完全同等や、AIの説明・文脈保持の縮小を意味しない。
+Seed化・選択的Card化の入口は[AI Ark Seed](../ai-ark-seed/README.md)。旧Compile／Pickupの二組四ファイルは[ARC-004](../control-center/ARCHIVE.md#arc-004)へ保存した。文脈付きSeedを別Threadへ渡して成熟させる価値は[現行入口の案内](../ai-ark-seed/README.md#10-context-preservation)から辿れる。軽量Seedとの完全同等や、AIの説明・文脈保持の縮小を意味しない。別Domainの実体整理は今回の`prompts/`統合と区別し、この案内から新しいQuery作成や自動移行を始めない。
 
 ### 3.10 X DeepQuote
 
@@ -296,6 +270,12 @@ Seed化・選択的Card化の入口は[AI Ark Seed](../ai-ark-seed/README.md)、
 Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能なMarkdownをPrimaryとする。各Runtimeの契約を区別し、全段階の方式が統一済みと推定しない。
 
 旧Stage 02 v001-8と、旧ダウンロード方式を前提とするFable5監査Packetは[ARC-003](../control-center/ARCHIVE.md#arc-003)へ移動した。`prompts/fable5/`はそのPacket一つだけだったため通常配置からなくなるが、`claude/`のFable5資料やAI Output Polishの役割は変えない。
+
+### 3.11 その他の単一Prompt入口
+
+- [AI Metaphor Mode](ai-metaphor-mode.md)：§1で対象Realityと任意のDepth／Lens／Field-Test設定を受け取る。
+- [Keyword Tree](keyword-tree.md)：§1でKeywordだけから開始し、必要時に同じ本体内で深める。
+- [Ark-OKF](ark-open-knowledge-format.md)：§12・§15が現在の問いと回答前判断を受け持つ。
 
 ---
 
@@ -316,7 +296,7 @@ Mission Owner、Semantic Router、Relevance Filter、Decision Authority、Human 
 
 ## 5. Mainline-First Mirror Guard
 
-`prompts/`配下のCanonical PromptとQueryは、原則として`main`上で管理する。
+`prompts/`配下のPromptは、原則として`main`上で管理する。
 
 ```yaml
 prompts_mainline_guard:
@@ -330,7 +310,7 @@ prompts_mainline_guard:
     - "Branchを第二のPrompt Realityとして扱わない"
 ```
 
-Prompt RuntimeとQueryのPairは、同じ`main` Reality上で相互参照できる状態を保つ。
+単一の本体・必要入力・現在の利用案内の接続を、同じ`main` Reality上で確認する。歴史の再現には固定commitを使い、現役の第二原本を増やさない。
 
 ---
 
@@ -359,7 +339,7 @@ One Repository.
 One Main Reality.
 Mainline-First.
 One Canonical Prompt Core.
-Markdown + Query when operationally useful.
+Activation and runtime in one maintained prompt.
 Many AI Lenses.
 Relations first; Graph-Native Fruit returns as prose.
 When AI One-Table Interface is bound, one adaptive Graph table creates the shared lookout.

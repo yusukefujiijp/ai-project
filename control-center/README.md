@@ -1,6 +1,6 @@
 ---
 title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.3.0"
+version: "0.3.1"
 canonical_path: "control-center/README.md"
 role: "Repository structure diagnosis, archive-first selection, improvement and change-history entry"
 status: "human-authorized archive-first workflow / evolving"
@@ -8,8 +8,8 @@ repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-22"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.0"
+updated: "2026-09-25"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.1"
 ---
 
 # Control Center
@@ -89,6 +89,11 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 ## 5. 継続して育てる
 
+通常修正の変更記録：
+
+- [STR-001: 案内と所有先の整合](changes/STR-001-navigation-and-ownership.md)：2026-09-22の六修正群とD04分離設計。
+- [STR-002: 単一Promptへの統合](changes/STR-002-single-prompt-consolidation.md)：短期の起動利益と長期の二重管理負担を区別したHuman Correction、Query機能の移管、作成方針撤回、削除・検証・残る移行Gate。
+
 通常の構造修正は、意味がまとまる単位で `changes/` の一件へ記録する。今回の[STR-001](changes/STR-001-navigation-and-ownership.md)では七候補を一つの承認済み整合案件として扱った。各記録から、いつ（観測・保存時刻）、誰（Humanの依頼・承認、実装AI、GitHub上の記録者）、どこ、何を、なぜ、どう変更・検証したか、変更前の根拠、残存制約へ戻れるようにする。Git履歴は正確な差分・時刻を、変更記録は意味・判断・検証範囲を担う。
 
 書式・一件の粒度は変更の性質に合わせ、将来のAIの判断を固定しない。既存のARCHIVE案件へ通常修正を混ぜず、過去案件を新しい成果として複製しない。変更記録は経験・診断資料であり、現在の依頼やHandoffを置換するRuntimeではない。
@@ -99,4 +104,4 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.0
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.1

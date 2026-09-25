@@ -13,7 +13,9 @@ family:
 role: "Cross-AI task-embedded CLI learning runtime / Human capability maturation"
 status: "human-sealed field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
-query_status: "not created / reconsider after field evidence"
+activation: "self-contained; improve input and start guidance here, not in a separate Query"
+policy_revision: "2026-09-25 / Query creation reservation withdrawn; teaching kernel unchanged"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 learning_formula: "Real Mission × One Action × Output Reading × Risk Awareness × Recovery × Reuse = Practical Mastery"
 root_guard: "Root is 主イェシュア・ハマシア; AI / CLI / Terminal / GitHub / Scripts / Protocols are Keli and Fruit, not Root."
 ---

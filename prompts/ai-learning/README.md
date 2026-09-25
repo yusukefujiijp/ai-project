@@ -2,6 +2,8 @@
 title: "AI Learning Family"
 canonical_name: "AI Learning Family"
 version: "v001-candidate"
+policy_revision: "2026-09-25 / single-prompt policy; teaching kernel unchanged"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 date: "2026-07-14"
 filename: "README.md"
 canonical_path: "prompts/ai-learning/README.md"
@@ -11,7 +13,7 @@ status: "human-sealed field-test candidate / not canonical"
 language_policy: "Japanese-first / English-anchor"
 parent_shelf:
   path: "prompts/README.md"
-  role: "Cross-AI Prompt Runtime and Query Shelf"
+  role: "Cross-AI self-contained Prompt Shelf"
 architecture:
   - "Parent routes."
   - "Family governs."
@@ -186,7 +188,6 @@ layer_roles:
 naming_contract:
   directory: "prompts/ai-learning/"
   runtime_pattern: "ai-learning-<domain>.md"
-  optional_query_pattern: "ai-learning-<domain>_query.md"
   canonical_title_pattern: "AI Learning: <Domain>"
 
   token_meaning:
@@ -265,7 +266,6 @@ domain_leaf_contract:
     - "Domain-specific glossary"
     - "Domain-specific risk ladder"
     - "Web UI or physical-tool integration"
-    - "Query Pair"
 ```
 
 LeafはFamily READMEの意味とGuardを継承するが、Family Governance本文を複製しない。
@@ -345,27 +345,11 @@ Probability
 
 ---
 
-## 10. Query Pair Policy / Query判断
+## 10. Single-Prompt Entry / Leaf自身から始める
 
-Query Pairは絶対儀式ではない。
+各Leafは、起動方法・Mission／Environment／Learnerの必要入力・不足時の停止・実行本文を同じ本体で扱う。別Queryの推奨、任意の作成条件、Field Test後の作成予約は撤回した。長いRuntimeや起動差を理由に別Queryを作らず、必要な改善はLeaf本文へ戻す。
 
-```yaml
-create_query_pair_when:
-  - "Runtimeが長い"
-  - "Mission / Environment / Learner Bindingが毎回必要"
-  - "Protocol Missing / Version Gateが必要"
-  - "Cross-AIで起動差が発生する"
-  - "毎回の起動文再作成が事故を生む"
-
-single_runtime_allowed_when:
-  - "起動方法が短く一意"
-  - "Bindingが本文内で安全に処理できる"
-  - "Query追加が本体より運用負荷を増やす"
-```
-
-QueryはLeafのUniversal Coreを複製しない。
-
-現時点では`ai-learning-cli_query.md`は未作成であり、Field Test後に必要性を判断する。
+短期の起動利益だけでなく、休止後の再開・保守・別AIへの継承で二重管理を生まないことを判断基準にする。詳細は親Shelfの単一Prompt方針に従う。Family Governanceと個別Domainの独立した責務、学習対象Data、Humanの実践・判断・STOP・Sealは保つ。
 
 ---
 

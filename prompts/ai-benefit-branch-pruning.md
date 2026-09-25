@@ -5,6 +5,8 @@ subtitle: "Preserve the Benefit, Prune the Carrier Branch"
 version: "v002-candidate"
 date: "2026-09-12"
 origin_record_date: "2026-09-05"
+policy_revision: "2026-09-25 / separate Query creation condition withdrawn; BBP kernel unchanged"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 filename: "ai-benefit-branch-pruning.md"
 canonical_path_candidate: "prompts/ai-benefit-branch-pruning.md"
 class: "prompt_runtime / future-ai operational runtime / graph-native branch-resolution method"
@@ -60,9 +62,7 @@ dependencies:
   reasoning: "prompts/ai-living-graph-mode.md"
   optional_projection: "prompts/ai-one-table-interface.md"
   composition: "prompts/long-form-response-rhythm.md"
-paired_query:
-  status: "not-created"
-  decision: "Create only if repeated activation or binding ambiguity demonstrates operational value."
+activation: "self-contained; improve activation and binding in this runtime, not in a separate Query"
 artifact_policy:
   default_output: "purpose-fit prose / preserved exploration or bounded execution / no fixed response template"
   autonomous_artifact_growth: false

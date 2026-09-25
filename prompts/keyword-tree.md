@@ -1,13 +1,15 @@
 ---
 title: "Keyword Tree"
 canonical_name: "Layered Strategic Keyword Tree"
-version: "v001-final-candidate"
+version: "v002-candidate"
 date: "2026-07-20"
+updated: "2026-09-25"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 filename: "keyword-tree.md"
 canonical_path_candidate: "prompts/keyword-tree.md"
 class: "prompt_runtime"
 role: "Human–AI shared semantic exploration map / Move37 discovery and action-compilation tool"
-status: "human-sealed-content candidate / field-tested / not canonical"
+status: "Human-authorized single-prompt revision / inherited v001 field evidence / not canonical"
 language_policy: "Japanese-first / English-anchor"
 
 architecture:
@@ -17,9 +19,7 @@ architecture:
   layer_2: "Layered Strategic Keyword Tree / General Board Construction"
   layer_3: "Strategic Game-Search Overlay / Optional Board Search Accelerator"
 
-paired_query:
-  path_candidate: "prompts/keyword-tree_query.md"
-  role: "protocol check / root-keyword binding / depth and optional-lens activation"
+activation: "self-contained / identity, input and depth controls in section 1"
 
 naming_policy:
   repository_default: "prompts/ generally prefers ai-* shared namespace"
@@ -41,7 +41,7 @@ root_guard:
     - "Game Search"
   guard: "Tool・Tree・AI・Game LensをRootや王座にしない。MissionとHuman RealityをModeより上位に置く。"
 
-field_test_status: "A/B/C completed / PASS / Test Phase closed"
+field_test_status: "historical v001: A/B/C completed / PASS / Test Phase closed; v002 independent behavior untested"
 ---
 
 # Keyword Tree
@@ -124,7 +124,7 @@ instruction_priority:
   1: "Current explicit Human request"
   2: "Tool Reality / supplied evidence"
   3: "keyword-tree.md"
-  4: "Current Query Binding"
+  4: "Current input binding within this prompt"
   5: "AI inference"
 ```
 
@@ -134,11 +134,38 @@ Human Correction、Interrupt、Stopを最優先する。
 
 ## 1. Quick Start / 最短起動
 
-最低限、Humanは重要Keywordだけを渡せばよい。
+このPrompt全文を利用可能にし、Humanは重要Keywordだけを渡せばよい。別Queryは不要。現在の依頼から一意に分かる項目は再入力を求めない。
 
 ```text
 pickup重要Keyword: <Root Keyword>
 ```
+
+### 1.1 Identity / Missing Gate
+
+本体のIdentity・Version・Statusと内容を確認する。本体がなく起動例や名前だけなら`PROMPT MISSING`で停止し、一般知識や過去記憶で代替しない。適用Versionが不明なら`PROTOCOL VERSION CONFLICT`として確認できた版だけを示す。Keywordがなければ`ROOT KEYWORD MISSING`として不足だけを返す。
+
+### 1.2 Optional Controls
+
+```yaml
+binding:
+  ROOT_KEYWORD: "重要Keyword（必須）"
+  CURRENT_REALITY: "現在の問題・出来事・感覚 | AUTO"
+  MISSION: "発見したいこと | AUTO"
+  DEPTH: "AUTO | SIMPLE | DEEP"
+  OPTIONAL_LENS: "AUTO | NONE | GAME_SEARCH | OTHER"
+  OUTPUT_FOCUS: "AUTO | KEYWORDS | FIRST_MOVE | EVALUATION | FULL_MAP"
+  CASE_SPECIFIC_PATCH: "今回の局所条件 | NONE"
+```
+
+これは任意の詳細指定であり、全欄記入を要求しない。未指定は`AUTO`、局所条件は`NONE`。Current Realityが未指定でもKeywordからLayer 1を始め、推測をConfirmedへ昇格しない。
+
+`SIMPLE`はLayer 1、`DEEP`は§3.6のPositive Escalation、`AUTO`は実益に応じた昇格である。`OPTIONAL_LENS=NONE`は追加Lensなし、`GAME_SEARCH`の明示はLayer 2で盤面を構築してLayer 3へ進むPositive Activationとする。ただし§16のNon-Activation Gate、Reality Guard、Mission優先、Human STOPを解除しない。`AUTO`では§15の条件が複数成立する時だけGame Searchを使う。`OTHER`は局所条件に定義・目的・境界が必要で、未定義のLensを補完しない。
+
+Output Focusは、`KEYWORDS`がTree・Missing Node・Pickup、`FIRST_MOVE`が枝刈り・一手・Checkpoint、`EVALUATION`が期待値・Risk・Option Value・下振れ耐性、`FULL_MAP`がLayer 2全体と必要時のみLayer 3を重点にする。独立したHuman Modeは増やさない。Field Testを実際に行う時だけ`output_lines / first_move_confirmed / unknown_keyword_found / trigger_reasons`を観察し、通常回答へ強制しない。
+
+Inputは§0.3のData境界に従う。局所条件で本体を暗黙改訂しない。過剰探索の兆候は§21.6に従ってAIが示し、HumanがContinue／Reduce／Stopを判断する。利用そのものはFile作成・GitHub Write・公開・送信・削除・購入等を自動許可しない。
+
+### 1.3 First Response
 
 AIは次を行う。
 
@@ -934,7 +961,7 @@ DefaultはLayer 1。Layer 2・3は必要性がある時だけLoadする。
 
 ### 21.5 Premature Canonicalization
 
-Field Testは完了したが、Human Final SealおよびRepository反映前は`field-tested / not canonical`を維持する。
+§20のField Test完了はv001の履歴である。v002の統合・保存を新しい独立試験の完了へ昇格しない。Current HumanのCanonical Sealがない限り`not canonical`を維持する。
 
 ### 21.6 Mission Overreach Detection
 
