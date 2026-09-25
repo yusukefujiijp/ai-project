@@ -3,7 +3,7 @@ title: "STR-002 — 起動Queryと本体の統合・別Query作成方針の撤�
 version: "v001"
 canonical_path: "control-center/changes/STR-002-single-prompt-consolidation.md"
 class: "structural_change_record"
-status: "six integrations remote-verified / Plan Mode candidate prepared / independent and binding gates pending"
+status: "six integrations and Plan Mode preparation remote-verified / independent and binding gates pending"
 repository: "yusukefujiijp/ai-project"
 branch: "main"
 source_thread: "Ark27:06"
@@ -49,7 +49,7 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 下表の削除対象はすべて`prompts/`配下。復元元は[変更前の固定Snapshot](https://github.com/yusukefujiijp/ai-project/tree/36b8207d61b98562317b58ac65fb01eb7d04cc94/prompts)であり、六つの旧Queryの内容と旧本体をそのまま辿れる。これは履歴・復元用で、旧Pairの現役維持ではない。
 
-| 本体 | 本体へ移した固有機能・統合先 | 削除するQuery / 変更前Blob |
+| 本体 | 本体へ移した固有機能・統合先 | 削除したQuery / 変更前Blob |
 |---|---|---|
 | [AI File DAME-DASHI](../../prompts/ai-file-damedashi.md) | §1へ一度だけの対象束縛、実名Report、指示／Data境界。§14を同じ本体を使う入力例へ集約。評価・Human Severity判断・Minimal Patch・Exit-to-Realityは保持 | `ai-file-damedashi_query.md` / `47b165496c337bfee771c5c1f9a78c228cadd6c8` |
 | [AI Output Polish](../../prompts/ai-output-polish.md) | §9へInput Mode、複数Inputの役割、Output Type、Target Section、局所Patch、Missing／Ambiguity Gate。§2.6・§5.1で既存Markdownと現行InlineのEvidence受渡しを区別 | `ai-output-polish_query.md` / `d68251cdc9b99dab67bbf848a2f9c0cf843c4491` |
@@ -126,11 +126,20 @@ Tool成功応答だけではなく、Commit、Tree、main、全文、Blobを再�
 
 ### 8.2 Plan Mode候補準備
 
-候補・評価資料・Subsystem案内・本記録を一つの準備変更として保存する。現時点ではそのRemote保存確認前。保存後のCommit、対象範囲、全文・SHA検証を追記し、候補準備完了と独立試験未実施を分ける。
+- 準備Commit：[3ceb77d69b2b1ae261f379139c994710ef14e573](https://github.com/yusukefujiijp/ai-project/commit/3ceb77d69b2b1ae261f379139c994710ef14e573)。Parentは通常6組の実装Commit。Treeは`e6e99f9858c1d5e97f5445e1d1a75b196484f1a0`。
+- 保存時刻：`2026-09-25T04:32:50Z`（13:32:50 JST）。Author／Committerはともに`yusukefujiijp`。
+- Remote検証時刻：`2026-09-25T04:33:08Z`（13:33:08 JST）。下記三Fileと本記録の計四FileをCommit指定で全文再取得し、予定本文・Blob SHAと一致。mainの参照先も確認した。
+  - 候補：`ai-plan-mode/candidates/ai-plan-mode-v005.md` / `6685c44a33ae7826fbd1437efacdb7ed043e327b`
+  - 評価資料：`ai-plan-mode/tests/single-prompt-v005.md` / `af563d1c1adeb68672380ea100a2589a0fd08d79`
+  - Subsystem案内：`ai-plan-mode/README.md` / `1e6d76b7b347469810962b99ba603cfdda9ed0c2`
+- 2 File追加、READMEと本記録の2 File改訂。削除なし。Treeは324→326 File、対象外322 FileのBlobは直前Commitと同一。v004／v003 Pair、旧Test、固定Graph／One-Table、Current Ark27 Triad、AGENTSは保持。
+- 通常6組の再点検を含む18の文書整合点検群を通過。候補のCore一致、単一Identity／EOF、Failure、validation-only、TestのNOT RUN表示、対象外非改訂を確認した。
+
+これは候補準備とRemote保存の完了。独立E1／E5、Human Verdict、切替・退役・Canonical化は完了していない。本節の追記Commitは検証Receiptを残す記録更新で、Prompt本文の再改訂や試験実施ではない。
 
 ## 9. 次の接続と再開条件
 
-通常6組は保存・Remote確認済み。Plan Mode候補・比較・試験準備の保存確認後は、独立Cold-Startを必要とするGateでHuman Reviewへ戻る。次のHuman-facing Oneは、準備済み候補一FileによるE1 Cold-Startの最初の返答を観測すること。到達／全読解／現在依頼の束縛／Plan-only停止を確かめ、Failureまたは最初の返答後にHuman Reviewへ戻す。E1一件だけでE5やCutoverが済んだことにはしない。
+通常6組とPlan Mode候補・比較・試験準備は保存・Remote確認済み。独立Cold-Startを必要とするGateでHuman Reviewへ戻る。次のHuman-facing Oneは、準備済み候補一FileによるE1 Cold-Startの最初の返答を観測すること。到達／全読解／現在依頼の束縛／Plan-only停止を確かめ、Failureまたは最初の返答後にHuman Reviewへ戻す。E1一件だけでE5やCutoverが済んだことにはしない。
 
 固定Binding移行は別の未完了Branchとして保持し、上記試験との同時Human Taskに増やさない。旧Handoffの再Boot、次Trial、別DomainのQuery全削除を自動開始しない。
 
