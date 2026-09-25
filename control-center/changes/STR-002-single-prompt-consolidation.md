@@ -3,7 +3,7 @@ title: "STR-002 — 起動Queryと本体の統合・別Query作成方針の撤�
 version: "v001"
 canonical_path: "control-center/changes/STR-002-single-prompt-consolidation.md"
 class: "structural_change_record"
-status: "implementation prepared / remote verification pending / gated migrations separate"
+status: "six integrations remote-verified / Plan Mode candidate prepared / independent and binding gates pending"
 repository: "yusukefujiijp/ai-project"
 branch: "main"
 source_thread: "Ark27:06"
@@ -38,9 +38,9 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 ## 3. 5W1H
 
-- **Who:** 意味・方向・Correction・実行承認はYusukeJP。調査・統合・点検はArk27:06のAI協働者（Codex実行環境）。GitHub上のauthor／committerは保存後のCommit実体から別途記録する。
-- **When:** 当該実行日は2026-09-25。基点Commitの記録時刻は`2026-09-25T02:07:42Z`（11:07:42 JST）。基点取得と実装日は区別する。保存・Remote検証の実時刻は§8へ追加する。
-- **Where:** `yusukefujiijp/ai-project`の`main`。通常6組の`prompts/`本体とQuery、Shelf README、AI Learningの方針・CLI metadata、BBPのQuery作成予約、control-centerの案内・本記録。
+- **Who:** 意味・方向・Correction・実行承認はYusukeJP。調査・統合・点検はArk27:06のAI協働者（Codex実行環境）。実装CommitのGitHub author／committerは実取得値で`yusukefujiijp`。GitHubの名義とAIによる執筆・検証の担当を区別する。
+- **When:** 当該実行日は2026-09-25。基点Commitの記録時刻は`2026-09-25T02:07:42Z`（11:07:42 JST）。通常6組の保存は04:17:46 UTC、Remote検証は04:18:10 UTC。候補保存は別の段階として§8へ記録する。
+- **Where:** `yusukefujiijp/ai-project`の`main`。通常6組の`prompts/`本体とQuery、Shelf README、AI Learningの方針・CLI metadata、BBPのQuery作成予約、control-centerの案内・本記録。後続準備は`ai-plan-mode/candidates/ai-plan-mode-v005.md`、`ai-plan-mode/tests/single-prompt-v005.md`、Subsystem READMEの候補案内。
 - **What:** 本体へ固有機能を統合して別Queryを通常配置から削除する。別Queryの推奨・任意作成条件・将来予約を撤回し、意味と復元経路を残す。
 - **Why:** 休止後の再開・修正・Future AIへの継承で、二つのファイルの役割・Version・更新を照合する負担を減らすため。短期の利益を否定せず、長期の運用評価を反映する。
 - **How:** Current mainの対象Blob確認 → 本体とQueryの機能対応確認 → 本体内へ集約・重複除去 → 現用参照の修正 → 文書・Guard・変更範囲の点検 → 一貫したCommit → Remote全文・Blob・Tree再取得。別名のLauncherや新しい現役コピーは作らない。
@@ -77,7 +77,13 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 単一Prompt化の方向と必要な移行準備はHuman承認済み。一方、[現在のSubsystem README](../../ai-plan-mode/README.md) §9–11と[試験契約](../../ai-plan-mode/tests/cold-start-test.md)には、独立したE1 Cold-Start、E5 Baseline比較、挙動同等性、Human Reality Verdict、Fresh Human Cutover Sealがある。作成・保存承認を未観測の検証結果へ変換しない。通常6組をこれらの通過待ちにしない。
 
-現行Pair・旧Baseline・過去試験Driverは、必要Gateを通過するまで互換実体として保持する。これは別Queryの恒久推奨例外ではなく、切替途中の状態。候補準備と切替状態の後続更新は本節へ記録する。
+現行Pair・旧Baseline・過去試験Driverは、必要Gateを通過するまで互換実体として保持する。これは別Queryの恒久推奨例外ではなく、切替途中の状態。
+
+候補準備では、[v005単一Prompt](../../ai-plan-mode/candidates/ai-plan-mode-v005.md)と[評価者用の比較・試験資料](../../ai-plan-mode/tests/single-prompt-v005.md)を作成した。旧v004の§1–2と§4–19はByte-identical。旧QueryのLocator、Full Read、Identity、Portable Recovery、Arrival、Current Request Bindingを本体§3へ統合し、旧Pair照合を単一Document Identity照合へ置換した。身分・Version・用途Status・EOFの不一致停止は削除しない。
+
+候補は30,694 bytes、旧Runtime＋Queryは37,402 bytes。一File化と内容保持の記述上の事実であり、文字数削減自体を品質・長期効果の証明にしない。候補の起動はこの一Fileだけで完結し、README／Testsを通常起動の必読Promptへしない。
+
+現行v004と旧v003の本文、過去の試験Driver／Fixtureは変更しない。Subsystem READMEには候補の身分と未実施Gateを案内する。E1独立Cold-Start、E5挙動比較、Human Reality Verdict、Fresh Cutover Sealは未実施／未受領。執筆AIの全文読解・文面比較をE1／E5 PASSへ変換しない。候補保存とRemote検証の状態は§8が所有する。
 
 ### 6.2 Living Graph / One-Table — 固定参照
 
@@ -88,13 +94,15 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 これらを指定するArk23:14／15の固定Bindingが存在する。初期Ark23:15 Handoffは後続StateでHistoricalと明示されているため、それを現在のArk27 Bootとして再実行しない。一方、State内のReusable Source固定参照まで単なる言及と決めつけず、実際のBinding消費先と移行先を分けて扱う。今回はこの二Blobと旧Triadを変更しない。条件の残存を、今後の新設許可として使わない。
 
-固定Sourceの切替は、現在の入口・歴史再現・移行契約を具体化してから行う。文字だけを消して旧SHA契約を黙って壊さない。方向の再承認ではなく、影響するBinding移行が残る。
+追加確認では、Ark23:15のCurrent入口は`runtime-upgrade-handoff.md`（Blob `9c36ee3ccdaeaceda02b740b7bf27a691f46c497`）。その全文を確認し、Reusable Runtimeは再接続Bootの追加必読ではなく、選択利用時のFull Read対象であることを確認した。READMEの§7・§12、Core INSTRUCTIONSの§4・§10、およびCurrent Stateの固定Source記録を区別した。これはArk23へのBoot、移行実行、全旧Handoffの再検証ではない。
+
+固定Sourceの切替は、現在の入口・歴史再現・選択利用時のBinding消費を具体化してから行う。文字だけを消して旧SHA契約を黙って壊さず、古いHandoffの存在だけを無期限の変更禁止にも使わない。現在方針の再承認は不要だが、他ThreadのState／必要な入口移行まで含む影響範囲を明示する作業が残る。
 
 ## 7. 文書点検とEvidence境界
 
 変更前の30読取対象は取得したGit Blobと一致。通常6組のQuery参照検索は結果切れなしで取得し、現用案内とHistorical言及を区別した。検索は外部利用者が存在しない証明ではない。
 
-実装点検では、次を機械照合とAI意味読解で確認する。
+通常6組の実装点検では、次を機械照合とAI意味読解で確認した。
 
 1. DAME-DASHIの評価・Severity・Human Seal・Exit Kernel、MetaphorのLayer 1–4、Keyword Treeの戦略層、AI-to-AIのOrigin・Convergence・Witness Guard、Ark-OKFの定義・Source境界を保持。
 2. 各Query固有の入力・不在／曖昧さ停止・局所条件・出力が対応する本体へ到達する。
@@ -106,11 +114,25 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 ## 8. 保存・Remote検証
 
-現段階は保存前の記録。実装Commit、時刻、Remote全文・SHA一致、削除と対象外保持は保存後に更新する。Toolの成功応答だけを検証済みへ変換しない。
+### 8.1 通常6組・方針・記録
+
+- 実装Commit：[254f5294ddc327fbc0f5f28b73cc5d72a77cc486](https://github.com/yusukefujiijp/ai-project/commit/254f5294ddc327fbc0f5f28b73cc5d72a77cc486)。Parentは冒頭のbase_commit、Treeは`9efac854b90620034dbb7cca26450666998da71d`。
+- 保存時刻：`2026-09-25T04:17:46Z`（13:17:46 JST）。Author／Committerはともに`yusukefujiijp`。
+- Remote検証時刻：`2026-09-25T04:18:10Z`（13:18:10 JST）。変更した13 FileをCommit指定で全文再取得し、予定本文とBlob SHAが一致。mainの参照先も確認した。
+- 12既存Fileの改訂＋本記録1 Fileの追加＋旧Query6 Fileの削除。Treeは329→324 File。対象外311 FileのBlobは基点と同一。六つの削除PathはTreeに存在しないことを確認した。
+- 文書整合の13点検群を通過。Kernelの範囲一致、入力・Failure／Guard、方針条件除去、別Query参照、Fence／EOFを確認。独立実行試験ではない。
+
+Tool成功応答だけではなく、Commit、Tree、main、全文、Blobを再取得して確認した。本記録自身の自己SHAは本文へ埋めない。
+
+### 8.2 Plan Mode候補準備
+
+候補・評価資料・Subsystem案内・本記録を一つの準備変更として保存する。現時点ではそのRemote保存確認前。保存後のCommit、対象範囲、全文・SHA検証を追記し、候補準備完了と独立試験未実施を分ける。
 
 ## 9. 次の接続と再開条件
 
-通常6組の保存確認後は、承認済みのPlan Mode単一Prompt候補・比較・試験準備を進め、独立Cold-StartやHuman Verdictを必要とするGateでHuman Reviewへ戻る。旧Handoffの再Boot、次Trial、別DomainのQuery全削除を自動開始しない。
+通常6組は保存・Remote確認済み。Plan Mode候補・比較・試験準備の保存確認後は、独立Cold-Startを必要とするGateでHuman Reviewへ戻る。次のHuman-facing Oneは、準備済み候補一FileによるE1 Cold-Startの最初の返答を観測すること。到達／全読解／現在依頼の束縛／Plan-only停止を確かめ、Failureまたは最初の返答後にHuman Reviewへ戻す。E1一件だけでE5やCutoverが済んだことにはしない。
+
+固定Binding移行は別の未完了Branchとして保持し、上記試験との同時Human Taskに増やさない。旧Handoffの再Boot、次Trial、別DomainのQuery全削除を自動開始しない。
 
 Human Correction、STOP、必須Source欠落、実質的なScope／権限拡張、Remote競合、固定Binding不一致は影響する操作を止める。入力や長期効果の通常Unknownは、そのまま表示する。
 

@@ -3,6 +3,9 @@ title: "AI Plan Mode Subsystem"
 canonical_name: "AI Plan Mode"
 version: "v001-candidate"
 date: "2026-08-07"
+updated: "2026-09-25"
+policy_revision: "STR-002 / single-Prompt migration preparation; active v004 unchanged"
+change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 filename: "README.md"
 canonical_path: "ai-plan-mode/README.md"
 class: "subsystem_front_door"
@@ -66,6 +69,18 @@ current_state:
 English anchor:
 
 > **Route-Only Cutover with Retained Rollback Baseline.**
+
+### 0.1 現在の移行 — 単一Prompt候補
+
+2026-09-25、Humanは起動Queryと本体の分割を長期保守上のマイナスと評価し、別Query推奨・将来作成条件を撤回した。新設方針は[Prompts Shelf §2](../prompts/README.md)と[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)に従う。
+
+- [v005単一Prompt候補](candidates/ai-plan-mode-v005.md)：起動・全文読解・現在入力と挙動を一Fileへ統合。validation-only、not active、not canonical。
+- [v005比較・試験準備](tests/single-prompt-v005.md)：評価者用。独立E1／E5実測とHuman Verdictは未実施。
+- Active v004 Pair、旧v003 Rollback、既存Testは変更していない。一般の起動先を候補へ黙って切り替えない。
+
+以下のPair所有権・起動順・Safety Echoは、残存v004の互換運用の説明であり、今後も別Queryを作る設計推奨ではない。候補では入口と挙動を同じ本体が所有し、README／Testsは通常起動の追加必読にしない。候補を別名Launcherとの二重管理へ戻さない。
+
+§9の検証・Human Verdict・Fresh Cutover Sealと退役Sealを維持する。v005では§11の「Query／Runtime EOF、Pair READY」に対応する検査を「単一本体の全文読解・EOF・Document Identity／用途Status整合」へ置換し、残りのSafety／Authority条件は省略しない。
 
 ---
 
@@ -403,7 +418,7 @@ authority_separation:
 
 ## 10. Module Admission Rule / 将来分割の条件
 
-初期CandidateではModuleを増やさない。
+初期CandidateではModuleを増やさない。以下は独立した機能のModuleに関する旧来の一般条件であり、起動Queryと本体を再分割する許可ではない。v005のLocator・Full Read・Current Request Bindingは同じPrompt内で保持する。
 
 ```yaml
 split_into_module_only_when:
