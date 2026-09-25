@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-09-25",
     "updated": "2026-09-25",
     "canonical_path": "ark-project/ark28/ark28-01/state.json",
     "date_scope": "Source preparation date in UTC; not an observed Human UI or Task time",
-    "change_reason": "Initialize flexible support field after remotely verifying stable README and bound Handoff."
+    "change_reason": "Record remote rereads, installed Skill confirmation and limited independent responses; keep actual Human Thread/UI and field effects unobserved."
   },
   "identity": {
     "source": "Ark27:05",
@@ -111,6 +111,20 @@
       {
         "claim": "Handoff saved after Runtime reread and bound to the verified blob; reread exactly.",
         "commit": "b7402d080960e4fa1d058bc85612c756ed60ebbb"
+      },
+      {
+        "claim": "Eight scoped repository files were reread after implementation; exact content, identity, EOF and bindings matched.",
+        "commit": "566e20c019d7c81e64e7a4b7c51e8211b386aa42"
+      },
+      {
+        "claim": "Updated installed prepare-ark-transition was verified after save; its SKILL.md blob equals the shared source.",
+        "shared_blob": "d181b9b8579f391d2f35fa23336c466aeda60ff7"
+      },
+      {
+        "claim": "Two independent contexts, without the Source conversation, produced four read-only responses: initial reception with current input, a short hypothetical B-Gate reply, return to a detailed design discussion, and a future paired-chapter/thread-continuation plan.",
+        "kind": "LIMITED_INDEPENDENT_RESPONSE_OBSERVATION",
+        "source": "skills/README.md §4.1, 2026-09-25 validation note",
+        "boundary": "Hypothetical inputs are not Human Task events. This is not the actual Human's Ark28 startup, UI access, automatic skill selection, all-model reproducibility or field effect."
       }
     ],
     "candidate": [
@@ -141,9 +155,9 @@
   ],
   "progress": {
     "source_prepared": "CONFIRMED",
-    "remote_verification": "README_AND_HANDOFF_VERIFIED; State and connected routes pending final reread",
-    "installed_skill_update": "PENDING",
-    "limited_independent_check": "PENDING",
+    "remote_verification": "CONFIRMED_SCOPED_CONTENT_AND_BINDINGS; final status record also subject to post-write reread",
+    "installed_skill_update": "CONFIRMED_SHARED_BODY_MATCH",
+    "limited_independent_check": "CONFIRMED_LIMITED_TWO_CONTEXTS_FOUR_RESPONSES",
     "actual_target_reconstruction": "NOT_OBSERVED",
     "human_thread_and_access": "NOT_OBSERVED",
     "human_title_application": "NOT_OBSERVED",

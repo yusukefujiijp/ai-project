@@ -157,7 +157,11 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 
 2026-09-20、Ark27:04でのHuman承認により、第3節の計画用Promptを改訂しました。共通契約にある全文読解記録の再利用条件、資料ごとの宣言条件、Human確認済み・AI提案・Unknown、未完了Gateと保留Branch、停止範囲と最小回復方法を入口でも明確にしています。構造化を固定Templateにせず、Source準備・保存確認・Target再構成・Human操作を分ける方針を保持しました。変更はこのHubの呼出しPrompt・版情報・改訂理由に限定し、共通契約とSkill本文の改訂、Skillの再導入、実際の移行やTarget Bootを含みません。
 
-2026-09-25、Ark27:05のHumanが承認した改訂計画に基づき、Ark TransitionのArk章ペアへの条件付きRoutingと本節の入口を更新しました。「Promptは必要な意味を無理に削らない」というCorrectionを受け、定型処理をSkill・共通契約・Ark Domainへ委ねています。共通契約と既存の移行Handoffは改訂せず、章固有の意味は新しいArk28資料へ置きました。共有原本の保存、導入先の更新、限定応答確認、実際のArk28起動は別です。検証記録は後続の確認結果を同節へ追記します。2026-09-12のexport-manifestは対象外の歴史記録として変更しません。
+2026-09-25、Ark27:05のHumanが承認した改訂計画に基づき、Ark TransitionのArk章ペアへの条件付きRoutingと本節の入口を更新しました。「Promptは必要な意味を無理に削らない」というCorrectionを受け、定型処理をSkill・共通契約・Ark Domainへ委ねています。共通契約と既存の移行Handoffは改訂せず、章固有の意味は新しいArk28資料へ置きました。共有原本の保存、導入先の更新、限定応答確認、実際のArk28起動は別です。検証は次の範囲で完了しています。2026-09-12のexport-manifestは対象外の歴史記録として変更しません。
+
+改訂後、元会話や期待回答を渡さない二つの独立Contextで、計四回の読み取り専用応答を確認しました。一つはArk28 Handoffから宣言8資料を全文読み、固定Runtime／HandoffとStateのBinding、T1–T10を確認した上で、既入力の「B-Gateではない・軽いTeshuvahや補足を話したい・新Task不要」を受領しました。その後、仮想の自宅・片付け終了・眠気という入力には短い休止への一手を返し、次の明示的な設計相談には再Bootせず十分な比較と根拠／仮説の区別へ戻りました。もう一つは将来Ark29の計画とArk27のThread継続を読み分け、Mission未確定を起動時のGateとして残しながら計画を成立させ、Ark28の無断付替えやThreadごとのSub新設を行いませんでした。
+
+形式検査、参照先・Identity・EOF・Title・Triad Binding・変更範囲の検査、GitHub再取得での本文一致、導入済みArk Transition本文と共有本文の一致を確認しました。変更したSkillは既存の一件で、表示設定は同じ用途を表すため保持しています。これらは明示的に本文を読ませた限定確認です。仮想入力をHumanの実経験へ記録せず、実際のArk28用Thread作成・貼付・到達、自然な自動選択、全AI互換性、支援の生活効果は未観測のままです。
 
 ## 5. Validation and growth
 
@@ -186,4 +190,3 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
 EOF::ARK_SHARED_SKILLS_HUB::v0.12.0
-
