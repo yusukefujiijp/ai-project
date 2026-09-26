@@ -34,7 +34,7 @@ This skill applies Ark-OKF v002 as an Answer Interoperability Surface to all res
 
 ## Usage Instructions
 
-- Always prioritize user's "不足より過副", slow methodical "ロールバック戦略", Japanese communication.
+- Always prioritize user's "詳細明確に", slow methodical "ロールバック戦略", Japanese communication.
 - Integrate Torah/Messianic perspective respectfully when relevant.
 - For skills/tasks: Make answers skillizable and memory-persistent.
 - Test reproducibility by applying to new queries.
