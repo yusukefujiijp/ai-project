@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.12.0
+version: v0.13.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-25
+updated: 2026-09-26
 ---
 # Ark Shared Skills Hub
 
@@ -18,6 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
@@ -136,6 +137,24 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 
 当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
 
+### 3.3 Plan Modeの統一入口
+
+登録済みの環境では、今回の依頼とともに次の一つの入口を使います。
+
+~~~text
+Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査・検討して、計画を提示してください。変更や実行はせず、計画提示で止めてください。
+~~~
+
+短い入力から、必要な深さ・比較・仮説・説明をAIが案件に合わせて選びます。未整理の意図の言語化も対象にし、実装計画だけへ強制収束させません。現在の禁止・STOPを保持し、その後に明確な実行承認があれば承認範囲へ進みます。
+
+共有本体は[SKILL.md](plan-mode/SKILL.md)、表示名と同じ入口文は[agents/openai.yaml](plan-mode/agents/openai.yaml)に保持します。Queryの意味を独立した規則群へ増やさず、表示設定との文字列一致を改訂時に確認します。別の_queryファイル、旧Runtimeの巨大連結、追加の状態管理者は作りません。他AIでは本体URLと現在の依頼を渡し、導入環境の規約に従って使います。URLの提示だけで導入完了とはしません。
+
+**形成・5W1H。** 2026-09-26、Ark27:06でYusukeJPが旧資料の退役、新Skillの導入・GitHub共有、統一Queryの同時作成を承認しました。設計・実装・検証は当該ThreadのAI協働者が担当しました。短期には助けになった専用仕様や二重管理が、時間経過後の保守・再開では負担になるというHumanの評価が出発点です。旧資料の知恵を吸収するかは任意とし、計画の品質、AIの自由な方法選択、Future AIの改善余地を優先しました。共有版は本体と最小表示設定の二ファイル。旧十資料の退役・参照修正・保存の時刻とGitHub記録者は[ARC-006](../control-center/ARCHIVE.md#arc-006)へ接続します。2026-09-12のexport-manifestは今回の対象外です。
+
+**限定検証。** 元会話や期待回答を渡さない三つの独立したAI文脈で計五応答を確認しました。未整理の文書整理相談では、利用頻度Unknownを残し、目的を訂正可能な候補にして、新人・熟練者の価値の競合を扱いました。続く訂正と明確な実行承認では、隔離した仮想素材の一文だけを保存し、後続STOPでは追加保存やSkill変更をしませんでした。別の応答では必須Source BのEOF欠落に従って移行判断を止め、もう一つは引用されたPlan Mode文の翻訳だけを返しました。本文を渡した二文脈と、descriptionによる選択を含む一文脈を区別します。
+
+これらは限定した応答と隔離素材での保存確認です。旧v005 E1／E5の通過、モデル間の品質優位、自然な自動選択の安定性、全AI互換性、Human UI操作、長期の負担軽減は実証していません。形式検証・導入先の保存確認・GitHubとの本文一致は、ARC-006の確認結果で区別します。通常利用ごとの自己監査や、スキルの自動書換えは行いません。実際の不足が生じた場合に、承認範囲で修正・削除・統合・置換を検討できます。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -189,4 +208,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.12.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.13.0

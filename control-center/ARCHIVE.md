@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.4.1"
+version: "0.5.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-24"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.1"
+updated: "2026-09-26"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.5.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -27,7 +27,7 @@ Player系三Repositoryのアーカイブから継承するSeedは、役割を終
 
 原文の要点は「archive候補とその理由を詳細明確に」「人間側YusukeJPが承認後__archivesに放り込む」「その記録と記憶を取るMarkdownが必要」。本書はこの意味を具体化する。GitHub上に元会話への検証可能なURLは記録していないため、上記対話の出典はこのThreadのHuman発言として区別する。
 
-「不要」は現在の運用に置く必要がないという判断であり、知恵の無価値を意味しない。古さ、ファイル名、空ファイル、重複、検索結果がないことだけで退役を決めない。現在の役割と依存、維持・修正・移動それぞれの利益を比較する。たとえば現行Plan Modeと明示されたrollback用の旧版には異なる役割があり、重複に見えるだけでまとめて退役させない。
+「不要」は現在の運用に置く必要がないという判断であり、知恵の無価値を意味しない。古さ、ファイル名、空ファイル、重複、検索結果がないことだけで退役を決めない。現在の役割と依存、維持・修正・移動それぞれの利益を比較する。初回調査時のPlan Modeとrollback用の旧版には異なる役割があり、当時は重複の外見だけで退役を決めなかった。その後のHumanによる用途・維持方針の変更を[ARC-006](#arc-006)へ記録し、初回の保持判断を恒久化しない。
 
 ## 2. HumanとAIの役割
 
@@ -328,4 +328,72 @@ JSONの構文とID・出所参照、保管注記を除いた本文の一致、�
 
 JSONはUTF-8で1,996バイト。今回の再取得呼出しは約0.33秒だった。これは移行直後の一回の取得観測であり、通常の追加・訂正の総所要時間や速度向上の実証ではない。確認済み状態はこの保存版に対するもので、以後の更新は現行正本を読む。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.4.1
+## ARC-006
+
+**旧Plan Modeの専用Subsystem八資料と旧v003 Pair二資料を退役し、一つのQueryから柔軟なPlan Mode Skillへ接続する。** 旧方式の機能同等な更新ではなく、Humanによる目的・維持方針の変更として扱う。
+
+### A. 判断の形成と今回の権限
+
+HumanはQuery分割を「短期視点ではプラス」「長期視点では大きなマイナス」と評価し、専用性の強いPlan Mode資料も時間経過後の使いづらさを理由に退役対象へ追加した。Plan Mode自体の重要性は維持し、一つの長過ぎず短過ぎないQueryから、案件に合わせて十分に考えるSkillへ接続する方針を選んだ。
+
+移行Skillから横展開するのは、定型の責務を一つの入口の奥へ委ねる上層の設計であり、移行固有の本文や固定Gateのコピーではない。HumanはAIの自由度・創発性とFuture AIの深化・進化に応じた改善余地を求め、旧資料からの吸収を任意とした。採用の中心は現在の計画の品質であり、全旧機能の保存・旧v005との挙動同等性を条件にしない。
+
+複数回のPlan-onlyによる調査・検討の後、2026-09-26の現在入力でYusukeJPは統一Queryの同時作成を明示し、「Execute GitHub OK」「Human Seal OK」「実行して下さい」と承認した。対象は新Skillの作成・導入・GitHub共有、旧十資料の退役、必要な九文書の案内・5W1H更新、検証・Remote確認である。以前の包括的なGoだけを根拠にせず、この具体化された計画への現在の承認を使った。
+
+旧v005候補の採用Branchは**目的変更で終了**した。独立E1／E5はNOT RUN、旧方式採用のHuman Reality Verdict／Fresh Cutover Sealは未受領だった履歴を保持する。今回の実行承認を旧試験のPASSやFAILへ変換しない。[STR-002 §6.1](changes/STR-002-single-prompt-consolidation.md#61-plan-mode--目的変更による旧採用branchの終了)が過去の準備との関係を示す。
+
+### B. 5W1Hと変更範囲
+
+- **Who:** 意味・訂正・方向・実行承認はYusukeJP。設計・実装・確認はArk27:06のAI協働者（Codex実行環境）。GitHub author／committerと正確な保存時刻は保存後の取得値を本案件へ追記する。AI担当とGitHub名義は区別する。
+- **When:** 2026-09-26の承認・実装。会話の順序は上記の編集要約で残し、未確認の個別発言時刻や会話URLは補完しない。
+- **Where:** `yusukefujiijp/ai-project` / `main`。原本基点は[commit 57d3d7f](https://github.com/yusukefujiijp/ai-project/commit/57d3d7f1f5d46cbcaefdc752608acb7021c06bae)、Tree `109b9d296c33e6a86b1e60f4220dbe01281fec15`。GitHub接続はCONNECTOR_ONLY_MODE。
+- **What:** 下表の十原本を`__archives/ARC-006/<元パス>`へ移し、旧配置から除去する。共有Skillは`skills/plan-mode/SKILL.md`と`agents/openai.yaml`の二ファイルを追加する。
+- **Why:** 休止・再開・維持・別AIへの継承を含めた負担を減らし、Plan Modeの高い可能性を特定時期の手順・固定出力へ閉じ込めないため。短期の成功を無価値にせず、長期の再評価を反映する。
+- **How:** 元blobをそのまま保管先へ使用し、現役の案内を新Skillへ変更する。Skill形式・限定挙動・導入を確認し、GitHub保存後にCommit・Tree・本文・対象外保持を直接再取得して照合する。
+
+更新九文書はroot `README.md`、`prompts/README.md`、`prompts/ai-full-rail-next-gate.md`、`control-center/README.md`、`control-center/PLAN.md`、本書、`control-center/changes/STR-002-single-prompt-consolidation.md`、`__archives/README.md`、`skills/README.md`。Full Railは§10・§14の旧Plan Mode参照と関連metadataのみを修正し、権限の所有先を現在のHuman入力・AGENTS・適用契約へ戻す。新Skillを全体の状態管理者にしない。
+
+### C. 十原本の保存先
+
+| Node | Edge | 保持するGit blob |
+|---|---|---|
+| `ai-plan-mode/ai-plan-mode_query.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/ai-plan-mode_query.md)へ移動 | `5efcb1ef0cc3288df577b28ec78e351aa9e48987` |
+| `ai-plan-mode/ai-plan-mode.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/ai-plan-mode.md)へ移動 | `aa3c420bbfee56c94e12b7417ca567151139967e` |
+| `ai-plan-mode/candidates/ai-plan-mode-v005.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/candidates/ai-plan-mode-v005.md)へ移動 | `6685c44a33ae7826fbd1437efacdb7ed043e327b` |
+| `ai-plan-mode/README.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/README.md)へ移動 | `1e6d76b7b347469810962b99ba603cfdda9ed0c2` |
+| `ai-plan-mode/tests/cold-start-test.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/tests/cold-start-test.md)へ移動 | `220339b3da56495d9c5395db0e232ddf772f1e32` |
+| `ai-plan-mode/tests/fixtures/truncated-runtime-without-eof.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/tests/fixtures/truncated-runtime-without-eof.md)へ移動 | `2bea9dd426a8ef2c2843c892c5f0ab2f1597c950` |
+| `ai-plan-mode/tests/partial-read-test_query.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/tests/partial-read-test_query.md)へ移動 | `d8e9ed357f0f7c895de24a00fa1a90b2bc89185d` |
+| `ai-plan-mode/tests/single-prompt-v005.md` | [同一原本](../__archives/ARC-006/ai-plan-mode/tests/single-prompt-v005.md)へ移動 | `af563d1c1adeb68672380ea100a2589a0fd08d79` |
+| `prompts/ai-plan-mode_query.md` | [同一原本](../__archives/ARC-006/prompts/ai-plan-mode_query.md)へ移動 | `f87f14605bc9cd63043be282dca9d3053fd8f525` |
+| `prompts/ai-plan-mode.md` | [同一原本](../__archives/ARC-006/prompts/ai-plan-mode.md)へ移動 | `c895fa27ae5e13b4b3343f22e76cf46b845bfa0b` |
+
+保管版は原文・改行・metadata・EOFを含めて同一blobとする。意図的にEOFを欠く`truncated-runtime-without-eof.md`もFixtureとして保存し、完全なRuntimeへ修復しない。原文への注記追加は行わず、本案件と`__archives/README.md`で歴史資料の境界を示す。
+
+元十パスに互換原本・Stubは置かない。旧資料の`active`、`current`、起動命令、試験Gate、`canonical_path`は当時の記述であり、現在の作業を拘束する入口や自動Fallbackではない。保管は旧仕様の全利益を新Skillへ移植したという意味ではない。
+
+### D. 参照影響と復元
+
+実体と現用参照の調査では、旧パス群への言及を退役十資料、現役六文書、歴史的五文書に分けた。Current mainの全Treeと指定語の検索を用いた確認であり、全Git履歴・全外部利用の不存在証明ではない。
+
+歴史的な`thread-end/ark/ark0707_20260726_start-query.md`、`ark0705_20260722_handoff_v002.md`、`ark0705_to_ark0707_20260726_reboot-map.md`には旧v003への参照が残る。これらのmain上の旧資料URLは今回の除去後には解決しない。旧Ark07のBootを現在のmainで互換実行できるとは主張せず、当時の文脈は[移動前の固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/57d3d7f1f5d46cbcaefdc752608acb7021c06bae)の元パスから辿る。履歴本文の一括書換えや旧Bootの再実行は行わない。
+
+`repository-reviews/reports/2026-09-19.md`の固定観測とArk21 sandboxの歴史的記述も保持する。保管版の相対リンクは元配置を基準とするものがあるため、元の参照関係を再現する時は上記固定snapshotを使う。現在のArk27:06 Required SourcesのBindingは旧Plan Mode十原本を指しておらず、Current Triad・固定Runtime・共通移行契約は変更しない。
+
+復元する場合は、現在のHumanの目的・対象・権限を確認し、必要な原本を保管先の同一blobまたは基点commitから取得する。原パスへ戻すことと現役へ再採用することは別であり、再採用時には現在の依存・案内・Guardを再検討して本案件へ理由と結果を追記する。過去の承認を現在の自動復帰許可にしない。
+
+### E. 新Skillと確認境界
+
+新Skillの原本・統一Query・限定応答確認は[Skills Hub §3.3](../skills/README.md#33-plan-modeの統一入口)が所有する。設計は一つの入口、柔軟な方法選択、必要な深さ、訂正可能な仮説、現在の権限と停止を中心にする。通常利用時の方法適応、改善案、永続改訂を区別し、毎回の自己監査や自動書換えを義務化しない。
+
+導入・形式・限定挙動・Remote保存は別の観測であり、全AI互換性、自然な自動選択の安定性、Human UI操作、長期の保守負担軽減は未実証のまま残す。旧資料と新Skillの機能差はHumanが許容した設計変更であり、旧v005の試験通過へ置換しない。
+
+「一時期の成功が、時間経過後の保守負担として現れる」ことを整理整頓の診断へ使い、他分野へ横展開できる可能性はSeedとして保持する。今回はHumanの運用評価と設計仮説であり、一般理論・生活上の効果・独立した新Projectとして確定しない。
+
+ChatGPT長期メモリを保存Sourceに使わず、現在の会話と確認済みRepository本文だけを根拠にする。Root・Teshuvah・Human Foreground One・Guard、Correction・STOP・Final Sealを保持する。固定Graph／One-TableのBinding移行、ARC-002の元パス除去、D04、次Trial、実Thread移行、別の整理案件は開始しない。
+
+### F. 保存後確認
+
+本実装の公開前には、Skillの形式と限定挙動、導入先の保存、変更範囲と案内を確認する。GitHubのRemote確認結果は保存後の直接再取得によって本節へ追記し、作成応答だけで先取りしない。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.5.0

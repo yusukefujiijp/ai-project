@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.7.0"
+version: "0.8.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "Prior ARC/STR-001 evidence retained / STR-002 single-prompt consolidation / remaining cutover and fixed-binding gates tracked separately"
+status: "Prior ARC/STR evidence retained / ARC-006 Plan Mode retirement and skill transition / unrelated fixed-binding work remains"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-25"
+updated: "2026-09-26"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.7.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.8.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -52,7 +52,15 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.7.0"
 
 Humanは、別Queryとの分割は短期の起動には利益があったが、休止・再開・保守・継承を含む長期視点では大きなマイナスだったと評価した。Queryを単純削除せず有益な機能を本体へ統合し、別Queryの推奨・作成条件を完全撤回する方向を承認した。前回のPair相互案内改善から、Pair自体の運用依存を解く作業へ進む。
 
-今回の現在地・6組の統合対応・5W1H・固定commitの復元先・Remote検証は[STR-002](changes/STR-002-single-prompt-consolidation.md)へ集約する。Plan Modeの切替Gate、既存の固定Source Bindingは、通常6組の統合と分ける。別Query方針の撤回と、全対象の物理的な削除完了を混同しない。旧D05の修復は当時の成果として保持し、そのPairを再作成する指示として使わない。
+今回の現在地・6組の統合対応・5W1H・固定commitの復元先・Remote検証は[STR-002](changes/STR-002-single-prompt-consolidation.md)へ集約する。当初のPlan Mode切替Gateと固定Source Bindingは通常6組の統合と分けた。その後、Plan Modeは下記§1.4の目的変更により旧採用Branchを終了した。固定Source Bindingの未完了Branchは残る。別Query方針の撤回と、全対象の物理的な削除完了を混同しない。旧D05の修復は当時の成果として保持し、そのPairを再作成する指示として使わない。
+
+### 1.4 Plan Modeの目的変更とARC-006
+
+2026-09-26、Humanは専用Subsystemと旧Prompt Pairを退役させ、短い一つのQueryから柔軟なPlan Mode Skillへ接続する計画の実行を承認した。旧資料を吸収するかどうかは任意とし、現在・将来のAIによる計画の品質を優先する。旧v005を採用するためのE1／E5等を通過済みへ変更せず、旧方式の機能同等な更新から、旧方式の退役と新しい責務の設計へ目的が変わったと記録する。
+
+十原本の保管・参照影響・5W1H・保存後検証は[ARC-006](ARCHIVE.md#arc-006)、Skillと統一Queryの入口は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)が所有する。Future AIの改善余地を保つが、毎回の自己監査・自動書換えは要求しない。長期的な負担軽減と他分野への横展開は観測候補であり、今回の保存や限定確認だけで実証したとしない。
+
+現在の焦点は承認されたSkill導入・共有・旧資料退役の完了確認である。固定Graph／One-TableのBinding移行、ARC-002互換原本の除去、D04の章Binding移行は別Branchとして保持し、今回の完了に連動して自動開始しない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -206,7 +214,7 @@ flowchart TD
 
 反例も保持する。
 
-- [Plan Mode][plan-mode]は現行の専用フォルダ内ペアと、明示rollbackの旧ペアを区別している。旧版の存在だけで削除候補にしない。
+- 初回調査時の[Plan Mode][plan-mode]は専用フォルダ内ペアとrollback用の旧ペアに異なる役割があった。重複の外見だけでは退役を決めないという観察を保持する。その後のHumanによる用途・維持方針の変更で、両者を[ARC-006](ARCHIVE.md#arc-006)の対象にした。初回の保持判断を無期限の現役指定にはしない。
 - [経験索引][experience]は各Threadの原本へ案内し、最新状態を二重管理しない。索引と原本の別配置には役割がある。
 - [Projects][projects]は固有名Projectと番号付きArkの系譜を区別する。名称が似ることだけを理由に統合しない。
 - 成功事例、方法、原本に同じ出来事が現れても、由来・学び・現在使う方法の役割が違う。同じ経験を独立した複数実証として数えない。
@@ -440,4 +448,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.7.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.8.0

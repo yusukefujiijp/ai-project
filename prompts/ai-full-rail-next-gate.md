@@ -1,8 +1,11 @@
 ---
 title: "AI Full Rail & Next Gate Interface"
 canonical_name: "AI Full Rail & Next Gate Interface"
-version: "v001-candidate"
+version: "v001.1-candidate"
 date: "2026-07-25"
+updated: "2026-09-26"
+revision_scope: "Plan-only authority and skill route in sections 10 and 14; no global state-machine redesign"
+change_record: "control-center/ARCHIVE.md#arc-006"
 filename: "ai-full-rail-next-gate.md"
 canonical_path: "prompts/ai-full-rail-next-gate.md"
 class: "prompt_runtime"
@@ -457,13 +460,19 @@ Workflow Continue
 ```yaml
 protocol_precedence:
   when_ai_plan_mode_is_explicitly_active:
-    workflow_state_and_authority_ssot:
-      - "prompts/ai-plan-mode.md"
+    authority_resolution:
+      - "Current Human request and scoped authorization."
+      - "AGENTS.md and applicable higher-priority instructions / Current Runtime contracts."
+    planning_support:
+      - "skills/plan-mode/SKILL.md; a planning aid, not a global state or authority owner."
+    plan_only_boundary:
+      - "Present the plan and stop while the current request is planning-only."
+      - "A later clear authorization, including a correction with revised execution intent, permits its scoped work."
 
     this_prompt_role:
       - "Provide the Full Rail & Next Gate Interface."
       - "Provide the Canonical Command Namespace."
-      - "Do not redefine Plan Mode states or authority."
+      - "Do not turn interface commands into authority beyond the current approved scope."
 
   otherwise:
     local_namespace:
@@ -590,7 +599,7 @@ this_prompt_is:
 this_prompt_is_not:
   - "An always-on authority."
   - "A replacement for AI judgment."
-  - "A replacement for prompts/ai-plan-mode.md."
+  - "A replacement for the current Human request, applicable authority contracts, or Plan Mode planning support."
   - "A complete Artifact-generation workflow."
   - "An Autopilot."
   - "Automatic GitHub, publishing, sending, deletion, or external authority."

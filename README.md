@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v002"
+version: "v003"
 edition: "AI-first Repository Front Door / AGENTS-aligned routing"
-version_basis: "v001 preserved in Git history; v002 aligns live routes and shared authority with current owners"
+version_basis: "v001/v002 preserved in Git history; v003 changes the Plan Mode route after Human-authorized retirement"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-09-22"
+updated: "2026-09-26"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -40,7 +40,13 @@ personalization_entry_addition:
   date: "2026-09-21"
   base_commit: "82bd06b082c18212278e7ca364b613c678051cdc"
   scope: "GCI/profile route only; no whole-repository rereview or account-memory synchronization"
+plan_mode_route_review:
+  date: "2026-09-26"
+  base_commit: "57d3d7f1f5d46cbcaefdc752608acb7021c06bae"
+  scope: "Plan Mode route and description only; no whole-repository rereview"
+  change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-09-26: Route Plan Mode to the shared skill and one entry Query; archive the retired subsystem and rollback pair under ARC-006."
   - "2026-09-22: Add the repository-wide control-center route; structural change reasons and outcomes are recorded in STR-001."
   - "2026-09-21: Add GCI/profile owners as a scoped settings route; preserve existing runtime and review boundaries."
   - "2026-09-19: Align general authority summaries with AGENTS; route Task, Skill, Plan Mode, and transition work to current owners while retaining explicit legacy routes."
@@ -128,9 +134,9 @@ Harvest preserves.
 
 ```yaml
 current_coordinate:
-  root_readme_version: "v002"
+  root_readme_version: "v003"
   edition: "AI-first Repository Front Door / AGENTS-aligned routing"
-  updated: "2026-09-22"
+  updated: "2026-09-26"
   last_reality_reviewed: "2026-09-19"
   reviewed_against_main_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
   canonical_branch: "main"
@@ -502,14 +508,11 @@ Deep Dialogue
 
 ### 8.1 Plan Mode
 
-Plan Modeは、意味をHuman-editableかつ実行可能な共有RailへCompileする**非実行型Mode**である。
+Plan Modeは、現在の依頼を十分に調査・検討し、Humanが次の判断をできる計画を提示して止める**非実行型Mode**である。未整理の意図の言語化や比較・保留も扱い、実装手順への収束だけを成功条件にしない。
 
-通常入口は[AI Plan Mode Subsystem](ai-plan-mode/README.md)。Active pairは次の二つ。
+通常入口は[Plan Modeの統一Query](skills/README.md#33-plan-modeの統一入口)、方法の共有原本は[`skills/plan-mode/SKILL.md`](skills/plan-mode/SKILL.md)。短い入口と、必要な検討・説明の深さを両立させる。方法や構成は案件に合わせて選び、権限は現在のHuman入力・AGENTS・適用契約に従う。
 
-- [`ai-plan-mode/ai-plan-mode.md`](ai-plan-mode/ai-plan-mode.md)
-- [`ai-plan-mode/ai-plan-mode_query.md`](ai-plan-mode/ai-plan-mode_query.md)
-
-旧[`prompts/ai-plan-mode.md`](prompts/ai-plan-mode.md)と[旧Query](prompts/ai-plan-mode_query.md)は、Humanが明示選択するrollback baselineとして保持する。黙って旧版へ切り替えない。指定されたRuntime／Queryのversion・status・pair relationと必須読取を確認する。入口の修正は、各Runtimeの内部条件を改訂・再検証したことではない。
+旧`ai-plan-mode/`八資料と`prompts/`の旧v003 Pairは[ARC-006](control-center/ARCHIVE.md#arc-006)で退役し、原文を保管した。旧版は現役・自動Fallbackではない。旧v005の同等性検証を通過したことにはせず、Humanの目的変更によって旧採用Branchを閉じた。必要なSource契約は引き続き守り、保存・導入・挙動・現実の効果を区別する。
 
 ### 8.2 Full Rail
 

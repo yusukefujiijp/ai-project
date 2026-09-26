@@ -1,0 +1,4 @@
+interface:
+  display_name: "Plan Mode"
+  short_description: "未整理の意図と現在の文脈から十分に検討し、変更せず計画提示で止まる"
+  default_prompt: "Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査・検討して、計画を提示してください。変更や実行はせず、計画提示で止めてください。"

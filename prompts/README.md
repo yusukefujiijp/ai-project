@@ -4,8 +4,9 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-25"
+last_updated: "2026-09-26"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
+plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -39,7 +40,7 @@ Cross-AI再利用を第一に設計されたHuman-AI Operational Assetを示す�
 推奨:
   ai-file-damedashi.md
   ai-output-polish.md
-  ai-plan-mode.md
+  ark-open-knowledge-format.md
 
 原則避ける:
   chatgpt-*.md
@@ -57,7 +58,7 @@ Runtime固有差は、同一Failureが実地で繰り返し確認され、Canoni
 意味単位はHyphenで分ける。
 
 ```text
-ai-plan-mode.md
+ark-open-knowledge-format.md
 ai-file-damedashi.md
 ai-output-polish.md
 ```
@@ -102,39 +103,13 @@ role: "Meaning-preserving output polish"
 
 AI Output Polishの複数Input Mode、Output Type、Target Section指定、Missing／Ambiguity Gateは本体へ統合した。起動の短さと必要な説明の深さを、別ファイルの同期なしで両立させる。
 
-### 3.3 AI Plan Mode
+### 3.3 Plan Mode — Skillへ接続
 
-```yaml
-subsystem: "ai-plan-mode/README.md"
-runtime: "ai-plan-mode/ai-plan-mode.md"
-query: "ai-plan-mode/ai-plan-mode_query.md"
-role: "Plan-to-Full-Rail Human-AI semi-automation gate"
-status: "active route / compatibility period / v004-candidate"
-single_prompt_migration: "approved direction / cutover gates pending; see STR-002"
+Plan Modeは[共有Skill](../skills/plan-mode/SKILL.md)と[一つの統一Query](../skills/README.md#33-plan-modeの統一入口)を使う。現在の依頼から調査・理解・言語化・比較・計画を組み立て、変更や実行はせず計画提示で止める。短いHuman入力によってAIの必要な検討や説明を省略しない。後続の明確な実行承認は、その対象・範囲で再利用する。
 
-rollback_baseline:
-  runtime: "prompts/ai-plan-mode.md"
-  query: "prompts/ai-plan-mode_query.md"
-  version: "v003-candidate"
-  policy:
-    - "Retain unchanged during compatibility period."
-    - "Use only when Human explicitly chooses rollback."
-    - "Do not silently fall back."
-```
+旧専用Subsystem八資料と本棚のv003本体・Queryは[ARC-006](../control-center/ARCHIVE.md#arc-006)へ退役した。旧資料からの吸収は任意であり、旧機能の全継承や挙動同等性を新Skillの採用条件にしない。旧v005の試験は未実施の履歴として残る。
 
-ここに残る既存Queryは移行中の互換実体であり、別Queryの推奨・新設条件ではない。単一Prompt候補の準備、独立Cold-Start、挙動同等性、Human Reality Verdict、切替判断を区別し、未通過の切替Gateを自己点検で代替しない。
-
-```text
-Deep Dialogue
-→ Context Ripening
-→ Move37-like Breakthrough
-→ Plan Mode
-→ Human-editable Review
-→ Clear Human execution intent within the approved scope
-→ Full Rail: same_thread
-→ Reality Review
-→ Next Gate / Harvest
-```
+本棚には別のPlan Mode本体・Query・互換Stubを置かない。Skill本文を別AIへ渡す場合も、共有原本と現在の依頼を使い、旧版へ自動Fallbackしない。通常6組の単一Prompt統合と、今回の用途再設計による退役は[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md#61-plan-mode--目的変更による旧採用branchの終了)で区別する。
 
 ### 3.4 AI-to-AI Communication
 

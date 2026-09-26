@@ -1,24 +1,24 @@
 ---
 title: "STR-002 — 起動Queryと本体の統合・別Query作成方針の撤回"
-version: "v001"
+version: "v002"
 canonical_path: "control-center/changes/STR-002-single-prompt-consolidation.md"
 class: "structural_change_record"
-status: "six integrations and Plan Mode preparation remote-verified / independent and binding gates pending"
+status: "six integrations remote-verified / former Plan Mode adoption closed by ARC-006 / fixed-binding gates pending"
 repository: "yusukefujiijp/ai-project"
 branch: "main"
 source_thread: "Ark27:06"
 created: "2026-09-25"
-updated: "2026-09-25"
+updated: "2026-09-26"
 base_commit: "36b8207d61b98562317b58ac65fb01eb7d04cc94"
 base_tree: "939741fdbb46ed162a7ecefa245bdf6bb2b8272b"
-expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_002::v001"
+expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_002::v002"
 ---
 
 # STR-002 — 単一Promptへの統合
 
 ## 1. 判断と現在の状態
 
-起動Queryと本体の分割について、Humanは「短期視点ではプラス」「長期視点では大きなマイナス」と評価した。起動・対象束縛・Guardの利益は残し、その利益を得るために別ファイルを同期維持する構造を撤回する。通常6組の統合と、Plan Mode・固定参照の移行を分ける。
+起動Queryと本体の分割について、Humanは「短期視点ではプラス」「長期視点では大きなマイナス」と評価した。起動・対象束縛・Guardの利益は残し、その利益を得るために別ファイルを同期維持する構造を撤回する。通常6組の統合と、Plan Mode・固定参照の移行を分けた。Plan Modeは後のHuman Correctionにより旧採用Branchを終了し、[ARC-006](../ARCHIVE.md#arc-006)の退役と新Skill設計へ接続した。固定参照の移行は未完了のまま保持する。
 
 これは当時の分割を無価値だったと書き換える判断ではない。評価範囲を使用中だけから、休止・再開・変更・別AIへの継承を含む運用へ広げた訂正である。旧版の短期的成功、今回の設計採用、文書保存、独立AIの理解、長期効果は別のEvidenceとする。
 
@@ -71,19 +71,15 @@ Humanは、それ以前に別Queryの強い推奨とAI Learningの作成条件�
 
 ## 6. 別扱いの移行Gate
 
-### 6.1 Plan Mode — 通常6組へ混ぜない
+### 6.1 Plan Mode — 目的変更による旧採用Branchの終了
 
-`prompts/ai-plan-mode.md`と同Queryはv003 Rollback Baseline。現在のActive Routeは`ai-plan-mode/`のv004であり、旧Pairだけを現役と誤認して統合しない。
+**2026-09-26の現在判断：旧v005の採用Branchを目的変更で終了し、旧十資料の退役とPlan Mode Skillへ接続する。** 退役対象・承認・保存・復元は[ARC-006](../ARCHIVE.md#arc-006)が所有する。旧試験のPASS・FAILや機能同等なCutover成功を意味しない。
 
-単一Prompt化の方向と必要な移行準備はHuman承認済み。一方、[現在のSubsystem README](../../ai-plan-mode/README.md) §9–11と[試験契約](../../ai-plan-mode/tests/cold-start-test.md)には、独立したE1 Cold-Start、E5 Baseline比較、挙動同等性、Human Reality Verdict、Fresh Human Cutover Sealがある。作成・保存承認を未観測の検証結果へ変換しない。通常6組をこれらの通過待ちにしない。
+2026-09-25の候補準備時点では、`prompts/ai-plan-mode.md`と同Queryはv003 Rollback Baseline、専用`ai-plan-mode/`内のv004 PairがActive Routeだった。[当時のSubsystem README](../../__archives/ARC-006/ai-plan-mode/README.md) §9–11と[試験契約](../../__archives/ARC-006/ai-plan-mode/tests/cold-start-test.md)のE1 Cold-Start、E5 Baseline比較、挙動同等性、Human Reality Verdict、Fresh Human Cutover Sealを区別し、候補準備だけで通過扱いにしなかった。
 
-現行Pair・旧Baseline・過去試験Driverは、必要Gateを通過するまで互換実体として保持する。これは別Queryの恒久推奨例外ではなく、切替途中の状態。
+準備済みの[v005単一Prompt](../../__archives/ARC-006/ai-plan-mode/candidates/ai-plan-mode-v005.md)は旧v004の§1–2と§4–19をByte-identicalで保持し、旧Queryの起動・全文読解・Identity等を本体§3へ統合した。候補は30,694 bytes、旧Runtime＋Queryは37,402 bytesだった。これは当時の文面・保存の観測であり、品質・長期効果の証明ではない。[比較・試験資料](../../__archives/ARC-006/ai-plan-mode/tests/single-prompt-v005.md)の独立E1／E5はNOT RUNの履歴として保持する。Human Reality Verdict、旧方式を採用するFresh Cutover Sealも未受領だった。
 
-候補準備では、[v005単一Prompt](../../ai-plan-mode/candidates/ai-plan-mode-v005.md)と[評価者用の比較・試験資料](../../ai-plan-mode/tests/single-prompt-v005.md)を作成した。旧v004の§1–2と§4–19はByte-identical。旧QueryのLocator、Full Read、Identity、Portable Recovery、Arrival、Current Request Bindingを本体§3へ統合し、旧Pair照合を単一Document Identity照合へ置換した。身分・Version・用途Status・EOFの不一致停止は削除しない。
-
-候補は30,694 bytes、旧Runtime＋Queryは37,402 bytes。一File化と内容保持の記述上の事実であり、文字数削減自体を品質・長期効果の証明にしない。候補の起動はこの一Fileだけで完結し、README／Testsを通常起動の必読Promptへしない。
-
-現行v004と旧v003の本文、過去の試験Driver／Fixtureは変更しない。Subsystem READMEには候補の身分と未実施Gateを案内する。E1独立Cold-Start、E5挙動比較、Human Reality Verdict、Fresh Cutover Sealは未実施／未受領。執筆AIの全文読解・文面比較をE1／E5 PASSへ変換しない。候補保存とRemote検証の状態は§8が所有する。
+その後、Humanは専用性と保守負担を問題にし、旧資料からの吸収を任意とした。「旧機能を全継承して同等性を証明する」採用目的を撤回し、短い一つのQuery、柔軟な検討、Future AIが改善できるSkillを選んだ。新Skillの限定検証は[Skills Hub](../../skills/README.md#33-plan-modeの統一入口)で確認する。旧試験Driver・意図的にEOFを欠くFixtureは内容を修復せず保管する。
 
 ### 6.2 Living Graph / One-Table — 固定参照
 
@@ -135,14 +131,14 @@ Tool成功応答だけではなく、Commit、Tree、main、全文、Blobを再�
 - 2 File追加、READMEと本記録の2 File改訂。削除なし。Treeは324→326 File、対象外322 FileのBlobは直前Commitと同一。v004／v003 Pair、旧Test、固定Graph／One-Table、Current Ark27 Triad、AGENTSは保持。
 - 通常6組の再点検を含む18の文書整合点検群を通過。候補のCore一致、単一Identity／EOF、Failure、validation-only、TestのNOT RUN表示、対象外非改訂を確認した。
 
-これは候補準備とRemote保存の完了。独立E1／E5、Human Verdict、切替・退役・Canonical化は完了していない。本節の追記Commitは検証Receiptを残す記録更新で、Prompt本文の再改訂や試験実施ではない。
+これは2026-09-25時点の候補準備とRemote保存の完了。当時、独立E1／E5、Human Verdict、切替・退役・Canonical化は完了していなかった。後の目的変更と退役は§6.1／ARC-006で記録し、この履歴の試験結果へ遡及反映しない。本節の追記Commitは検証Receiptを残す記録更新で、Prompt本文の再改訂や試験実施ではない。
 
 ## 9. 次の接続と再開条件
 
-通常6組とPlan Mode候補・比較・試験準備は保存・Remote確認済み。独立Cold-Startを必要とするGateでHuman Reviewへ戻る。次のHuman-facing Oneは、準備済み候補一FileによるE1 Cold-Startの最初の返答を観測すること。到達／全読解／現在依頼の束縛／Plan-only停止を確かめ、Failureまたは最初の返答後にHuman Reviewへ戻す。E1一件だけでE5やCutoverが済んだことにはしない。
+通常6組の統合と旧Plan Mode候補の準備・保存確認は、それぞれ当時の成果として保持する。旧候補によるE1 Cold-Startを次の必須Human Taskとする接続は、2026-09-26の目的変更により終了した。現行のPlan Mode入口は[新Skillと統一Query](../../skills/README.md#33-plan-modeの統一入口)、退役案件の現在状態は[ARC-006](../ARCHIVE.md#arc-006)へ進む。
 
-固定Binding移行は別の未完了Branchとして保持し、上記試験との同時Human Taskに増やさない。旧Handoffの再Boot、次Trial、別DomainのQuery全削除を自動開始しない。
+固定Graph／One-TableのBinding移行は未完了Branchとして保持する。今回のSkill作成・導入・共有や旧資料退役の承認を、この別Branchの一括改訂、旧Handoffの再Boot、次Trial、別DomainのQuery全削除へ広げない。
 
 Human Correction、STOP、必須Source欠落、実質的なScope／権限拡張、Remote競合、固定Binding不一致は影響する操作を止める。入力や長期効果の通常Unknownは、そのまま表示する。
 
-EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_002::v001
+EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_002::v002
