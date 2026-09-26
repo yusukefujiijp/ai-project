@@ -344,7 +344,7 @@ HumanはQuery分割を「短期視点ではプラス」「長期視点では大�
 
 ### B. 5W1Hと変更範囲
 
-- **Who:** 意味・訂正・方向・実行承認はYusukeJP。設計・実装・確認はArk27:06のAI協働者（Codex実行環境）。GitHub author／committerと正確な保存時刻は保存後の取得値を本案件へ追記する。AI担当とGitHub名義は区別する。
+- **Who:** 意味・訂正・方向・実行承認はYusukeJP。設計・実装・確認はArk27:06のAI協働者（Codex実行環境）。GitHub author／committerと正確な保存時刻は、保存後の取得値を§Fへ記録した。AI担当とGitHub名義は区別する。
 - **When:** 2026-09-26の承認・実装。会話の順序は上記の編集要約で残し、未確認の個別発言時刻や会話URLは補完しない。
 - **Where:** `yusukefujiijp/ai-project` / `main`。原本基点は[commit 57d3d7f](https://github.com/yusukefujiijp/ai-project/commit/57d3d7f1f5d46cbcaefdc752608acb7021c06bae)、Tree `109b9d296c33e6a86b1e60f4220dbe01281fec15`。GitHub接続はCONNECTOR_ONLY_MODE。
 - **What:** 下表の十原本を`__archives/ARC-006/<元パス>`へ移し、旧配置から除去する。共有Skillは`skills/plan-mode/SKILL.md`と`agents/openai.yaml`の二ファイルを追加する。
@@ -394,6 +394,13 @@ ChatGPT長期メモリを保存Sourceに使わず、現在の会話と確認済�
 
 ### F. 保存後確認
 
-本実装の公開前には、Skillの形式と限定挙動、導入先の保存、変更範囲と案内を確認する。GitHubのRemote確認結果は保存後の直接再取得によって本節へ追記し、作成応答だけで先取りしない。
+1. **Skillの導入と同一性。** 2026-09-26、形式検証後にPlan Modeを導入し、保存先を再取得して本体・表示名・統一Queryを確認した。共有するSKILL.mdはUTF-8で5,823 bytes、SHA-256は`dec1a4b1d4f6d5df0cfc34aa1d443b1c07869592481cd93cf9ff965832c45a4e`。導入済み本文とGitHub共有本文は一致した。表示設定には同じQueryを保持し、導入環境が付加するアイコン・内部設定はGitHubへ輸出していない。このhashは初回版の証拠で、Future AIの改訂を禁止する固定条件ではない。
+2. **公開直前のmain進行。** 調査基点の後に別作業が進み、公開直前のmainは`197281bbb7d7765bf4cb75a6228667db070cd00e`、Treeは`a79e3db227ee1c1c500efd9e8c763eaca7fa11ae`だった。既存326ファイルのblob・modeは調査基点と同一で、別作業の二追加を確認した。その最新Treeを親として使い、追加内容を保持した。別作業の内容を今回の成果や追加整理対象にしていない。
+3. **実装Commit。** [`2827352`](https://github.com/yusukefujiijp/ai-project/commit/2827352cc7bbc8c22a3f1e89906565300cfd1860)。Parentは上記`197281b`、実装Treeは`0d5390a36239b7592d63e4f548844a8990ea43be`。GitHubから取得したauthor／committerはともに`yusukefujiijp`。保存時刻は`2026-09-26T08:28:14Z`（17:28:14 JST）。意味の承認とAIの執筆・検証担当は§Bの区別を保持する。
+4. **Remote直接再取得。** `2026-09-26T08:29:12.861Z`（17:29:12.861 JST）に検証を完了した。上記Commitを指定して新規・更新11ファイルと保管10ファイルの計21本文を再取得した。11本文は保存予定の全文と一致し、10保管原本のblobは§Cの移動前blobと一致した。旧十パスはTreeに存在しない。
+5. **変更範囲。** 追加12パス（保管10＋Skill2）、削除10パス、既存更新9パスの計31パス。公開直前の328ファイルから330ファイルへ変わった。対象外309ファイルのblob・modeは親Commitと同一で、Current Ark27:06 Triad、固定Runtime、共通移行契約、AGENTS、既存export-manifestを保持した。Commit・非省略の再帰Tree・mainの参照先も再取得して一致を確認した。
+6. **構造と挙動の検証範囲。** 更新文書のIdentity・YAML・必要なExact EOF・Code Fence、243件の相対参照と更新対象内の57件の見出し参照を照合した。保管資料の旧相対リンクを現在の有効リンクと誤認せず、§Dの固定snapshotへ接続する。限定した三AI文脈・五応答の挙動はSkills Hub §3.3に記録した。旧試験E1／E5、全外部リンク、全AIでの再現、自然な自動選択の安定性、Human UI操作、長期効果の検証ではない。
+
+Skill作成・導入、GitHub共有、旧十資料の退役、現用案内・5W1H更新、Remote確認は上記の範囲で完了した。この確認追記は同じ案件への記録更新であり、Skill再改訂や新試験ではない。追記自身の自己SHAは埋め込まず、保存後の再取得で照合する。次の接続はHuman Reviewとし、通常Unknownや残る別Branchを自動実行の理由にしない。
 
 EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.5.0
