@@ -1,12 +1,12 @@
 {
   "meta": {
     "state_id": "ARK27_06_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:06",
     "schema_version": "v001",
-    "updated_at": "2026-09-22",
-    "update_reason": "Human-authorized Ark27:05→06 preparation; initialize from verified Runtime/Handoff and latest Source05 evidence.",
-    "authority": "Immediately preceding preparation plan explicitly approved with Execute GitHub OK / Human Seal OK. Physical archive moves and unrelated trials remain outside scope."
+    "updated_at": "2026-09-27",
+    "update_reason": "Ark27:06の開始時Stateへ後続のHuman Correction・対象別承認・検証済み成果・残存Branchを接続し、Human承認済み06→07準備のSourceを整える。",
+    "authority": "2026-09-27 JST、Humanが直前の06→07同章継続・基本5パスの準備計画へExecute GitHub OK / Human Seal OK / 実行して下さいと明示承認。Target07の実起動、UI操作、別整理・試験は含めない。"
   },
   "identity": {
     "chapter": "Ark27",
@@ -27,7 +27,7 @@
     "human_seal": true,
     "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and tool access controls remain effective.",
-    "scope": "Human-AI problem solving and bounded TMS internal operation/maintenance. Source preparation approval is not approval for ARC-001 moves, new schedules, account changes, research or life/reset trials.",
+    "scope": "Human-AI problem solving and bounded TMS continuing delegation remain. Current authorization additionally covers06→07 preparation, five scoped paths, persistence and remote verification. Earlier scoped archive/prompt approvals are historical completed work, not permission for new branches.",
     "delegation_source": "task-mode-system/maintenance.md; Current AGENTS and Current Human request determine actual work.",
     "stop_precedence": "Current Human Correction / Plan-only / STOP prevails over earlier Continue. AI is Keli, not King / Throne / Oracle."
   },
@@ -88,7 +88,7 @@
         "control-center/ARCHIVE.md",
         "__archives/README.md"
       ],
-      "policy": "Full read in this order after R05, as declared by Handoff. Current compatible owner revisions allowed."
+      "policy": "Current compatible owner revisions. 06初回のRequired読取順はimmutable06 Handoffに保持し、新たな07入口は07自身の宣言に従う。"
     },
     "personalization": {
       "gci": "_system/chatgpt/global-custom-instructions.md",
@@ -96,15 +96,25 @@
       "policy": "GCI/profile are authorized portable owners; ChatGPT memory contents/response/readback must not be exported to GitHub."
     },
     "self_sha_policy": "DO_NOT_EMBED",
-    "entry_policy": "Explicit06 Handoff governs reception. Chapter01, Source04 initial state and Source05 initial unknowns do not replace the current coordinate."
+    "entry_policy": "Explicit06 Handoff governs reception. Chapter01, Source04 initial state and Source05 initial unknowns do not replace the current coordinate.",
+    "material_records": {
+      "paths": [
+        "control-center/ARCHIVE.md",
+        "control-center/changes/STR-001-navigation-and-ownership.md",
+        "control-center/changes/STR-002-single-prompt-consolidation.md",
+        "skills/README.md",
+        "skills/plan-mode/SKILL.md"
+      ],
+      "policy": "案件原本とCurrent Skillが詳細を所有。本Stateは選択的な現在地・来歴の接続。"
+    }
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "Source05の品質Correction・設定成功報告・開始と終了の接続・帰宅後Routine案・root control-center補足受入れを継承する06の初期State。次Threadのランキング希望を保持し、Target自身の再構成を待つ。",
-    "next_human_intent": "root control-centerのアーカイブ候補を根拠付きランキングで楽しんで比較・選択し、Think–Actionの生活接続とDouble-Spiral的に継続する。",
+    "current_coordinate": "06の協働・整理整頓・通常6組の単一Prompt化・旧Plan Mode退役と新Skill導入を経て、Humanが『キリがいい』と07への移行を選択。計画後に準備実行を承認。GitHub案件原本は進展済みだが本Stateは初期revision1だったため、時点差をここで接続する。全Repository整理完了という宣言ではない。",
+    "next_human_intent": "Ark27:07で06の主要成果・運用・Correctionを復元し、Current Human Realityまたは依頼から継続する。特定の次整理・生活Taskは未指定。",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "current_legal_connection": "Target自身がHandoffのRequired1–16、Identity/Binding、Triad、T1–T12を通過した後、新しいHuman入力が既にあれば受け取る。BootのみならHuman Reviewへ戻る。ランキング希望を自動開始や個別移動承認にしない。",
-    "target_boot": "NOT_OBSERVED",
+    "current_legal_connection": "Source06は承認済み07移行準備・保存・Remote検証を完了する。Target07は自身のHandoffのGate通過後、既に新しい入力があれば受け取り、BootのみならHuman Reviewへ戻る。",
+    "target_boot": "ARK27_06_PREVIOUSLY_ACCEPTED_IN_CURRENT_SOURCE_CONTEXT",
     "physical_reality": "Current body/place/task Reality is unreported. Old time-stamped reports are historical.",
     "reporting_policy": "Human intentionally omits routine success reports; do not infer global failure or fill individual outcomes. Preserve useful success and report AI-side execution/save outcomes.",
     "ai_response_quality": "Humanの行動開始、待ち時間、推定認知負担、Token節約等を理由に、AIが独断で品質を下げ、必要な検討・調査・説明・設計を省略・意図的短縮しない。簡潔なHuman I/Oは回答抑制ではない。方法と創発性を開き、字数固定・最大化にしない。",
@@ -118,24 +128,60 @@
       "end_start_connection": "21時頃chocoZAPを切り上げる方針を試したHuman報告。あるTaskの終了が次Taskの開始になるという発見。",
       "candidate": "21時終了を置き余裕ある18–19時頃入場へ動機を使う案。実行時刻・定着・効果は未確認。",
       "actual_boundary": "配置・摂取・家事・Routine定着・効果・医学的因果を未報告から補わない。",
-      "schedule": "帰宅後〜就寝前の統合ChatGPT Scheduleは構想。通知・帰宅検知・常時監視は未実装。"
+      "schedule": "Source05からの継承時点では帰宅後〜就寝前の統合Scheduleは構想で、当該自動化は未実装。06→07準備はScheduleの現行実体・別Contextの進展を検証／変更しない。"
     },
     "control_center": {
       "scope": "Repository-root control-center handles ai-project as a whole, not only Ark27.",
-      "source05_support": "ACCEPTED_IN_SOURCE05_CONTEXT; six distinctions after required full reads; see PLAN reconnect-ark27-05 §8 and R05 support-reception-s01.",
-      "human_correction": "成果・理由・未完了判断を05へ合流させてから移動を扱う。理解する変更差分を増やす前に接続。",
-      "document_roles": "README entry / PLAN current judgments and remaining gates / ARCHIVE proposal and case history / __archives README retired-source reception.",
-      "ranking": "Human requested an enjoyable evidence-based ranking next Thread. Criteria and ARC-001 provisional top placement are AI candidates, not adopted numerical scores or move authority.",
-      "arc_001": {
-        "source": "tools/check_repo_reality.py",
-        "proposed_destination": "__archives/ARC-001/tools/check_repo_reality.py",
-        "proposal_owner": "control-center/ARCHIVE.md#arc-001",
-        "observed_source_blob": "9ae7c177a78f081d816a25da4d92021c5c582fec",
-        "individual_move_approval": "NOT_GRANTED",
-        "physical_move": "NOT_PERFORMED",
-        "boundary": "Withdrawn experimental checker; do not execute/reactivate it or create missing assumptions as part of this transition."
-      },
-      "current_boundary": "Documents saved, Source05 reception complete, Target06 reception pending, physical moves unapproved. No automatic D01–D07 full repair."
+      "source05_support": "05のSUPPORT_RECONNECT受入れを保持。これとランキング希望は、その時点では個別移動承認ではなかった。",
+      "human_correction": "実体移動より前に成果・理由・未完了判断をMainへ接続する。06では後続の対象別承認に基づき限定整理を実施し、両時点を区別する。",
+      "document_roles": "README entry / PLAN current judgments and remaining gates / ARCHIVE case decisions and evidence / changes scoped structural records / __archives retired sources.",
+      "ranking": "Humanは根拠付きランキングで候補を比較・選択し、無ければ無いと言ってよいと明示した。現在も利用可能な選び方だが、07 Bootの自動Taskでも必ず候補を埋める義務でもない。",
+      "completed": [
+        {
+          "id": "ARC-001",
+          "status": "MOVED_AND_REMOTE_VERIFIED",
+          "owner": "control-center/ARCHIVE.md#arc-001",
+          "meaning": "実験checkerの個別退役。05時点の未承認と、06の後続承認・実施を区別。退役checkerを実行・再活性化しない。"
+        },
+        {
+          "id": "ARC-002",
+          "status": "ARCHIVE_COPY_AND_ACTIVE_ROUTE_RETIREMENT_VERIFIED; ORIGINAL_RETAINED",
+          "owner": "control-center/ARCHIVE.md#arc-002",
+          "meaning": "旧Bridgeは退役。固定Bindingのため元パスを保持し、元パス除去は未完。Closing復活の許可ではない。"
+        },
+        {
+          "id": "ARC-003",
+          "status": "TWO_SOURCES_ARCHIVED_AND_VERIFIED",
+          "owner": "control-center/ARCHIVE.md#arc-003",
+          "meaning": "旧Deep Quote02とaudit packetを退役。後継資料まで削除したとはしない。"
+        },
+        {
+          "id": "ARC-004",
+          "status": "FOUR_SOURCES_ARCHIVED_AND_VERIFIED",
+          "owner": "control-center/ARCHIVE.md#arc-004",
+          "meaning": "旧Compile/Pickup群の退役。Seedと復元経路を保持し、全機能同等性は主張しない。"
+        },
+        {
+          "id": "STR-001",
+          "status": "SIX_REPAIR_GROUPS_AND_D04_DESIGN_VERIFIED",
+          "owner": "control-center/changes/STR-001-navigation-and-ownership.md",
+          "meaning": "D01/D02/D05/E01/D07/D08の案内修復。D04の章単独旧入口・固定Binding移行は残る。"
+        },
+        {
+          "id": "STR-002",
+          "status": "SIX_NORMAL_PROMPT_PAIRS_INTEGRATED_AND_REMOTE_VERIFIED",
+          "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
+          "meaning": "Query固有機能を本体へ統合し6 Queryを通常配置から除去。別Queryの推奨・任意作成条件・将来予約を撤回。全Domainのqueryという名称を一括削除する方針ではない。"
+        },
+        {
+          "id": "ARC-006",
+          "status": "PLAN_MODE_SKILL_INSTALLED_SHARED_AND_VERIFIED; TEN_OLD_SOURCES_ARCHIVED",
+          "owner": "control-center/ARCHIVE.md#arc-006",
+          "meaning": "旧専用Subsystem8資料と旧v003 Pair2資料を同一blobで保管し旧配置を除去。新Skill・一つのQuery・現用案内・5W1Hを接続。旧方式の機能同等な更新ではなく目的変更。"
+        }
+      ],
+      "related_external_case": "ARC-005はcontrol-centerに保存された別のchocoZAP記録移行案件。今回の06固有成果や身体効果へ借用せず、必要時に現行所有資料から確認する。",
+      "current_boundary": "実施済み案件を初期提案へ巻き戻さない。今回の承認は07準備であり、固定Binding移行・新ランキング・追加アーカイブ・全面修復の自動実行ではない。"
     },
     "account_personalization": {
       "memory_write": "HUMAN_REPORTED_SUCCESS",
@@ -164,28 +210,75 @@
     "bbp_status": "Both Benefits retained; carrier sufficiency unknown; do not claim pruning complete.",
     "skill_decision": "solve-with-human independent addition deferred. co-design-everyday-solutions has narrower practical-material design responsibility.",
     "source05_boot": "PREVIOUSLY_ACCEPTED_IN_CURRENT_CONTEXT; not rolled back by06 preparation.",
-    "target_skill_installation": "NOT_OBSERVED",
-    "ui_thread_creation": "NOT_OBSERVED",
-    "ui_title": "NOT_OBSERVED",
+    "target_skill_installation": "Historical06初期未観測の後、Plan Modeは06で導入確認済み。他Skill／07環境の導入を一括確認したとはしない。",
+    "ui_thread_creation": "06の開始についてHuman成功報告あり。直接UI観測とは別。07は未観測。",
+    "ui_title": "06の個別UIタイトルは直接未確認。07の作成・Title適用は未観測。",
     "trial_started": false,
-    "unfinished_gate": "Target06自身のRequired全文読解・Identity/Binding・Triad・T1–T12。Humanの新Thread操作は別の段階。通常Unknown全解消は不要。"
+    "unfinished_gate": "現在の実行対象は06→07のSource準備・保存・検証。Target07自身のRequired Sources・Identity/Binding・Triad・T1–T12とHuman last mileは別段階。旧v005採用Gateは目的変更で終了。",
+    "target_boot_boundary": "06の継続Contextでの受入れと後続協働を保持する。DomainにもHumanの次Thread開始・GitHub作業の成功報告がある。今回の新しい独立Boot試験や07の受入れを示さない。",
+    "plan_mode": {
+      "current_owner": "skills/plan-mode/SKILL.md",
+      "invocation_owner": "skills/README.md#33-plan-modeの統一入口",
+      "unified_query": "Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査・検討して、計画を提示してください。変更や実行はせず、計画提示で止めてください。",
+      "query_policy": "これは実装時点の証拠コピーで、可変の第二Query原本ではない。Current Skill/Skills Hubの正当な後続改訂を優先する。別_queryファイルを新設しない。",
+      "implemented": {
+        "date": "2026-09-26",
+        "commit": "2827352cc7bbc8c22a3f1e89906565300cfd1860",
+        "receipt_commit": "5db7fabfe30a5526b125abb8a2f48afe073874db",
+        "shared_body_blob": "51b8e4cabadaaeca8dad2d5f314c164a1f09871f",
+        "source_environment_installation": "CONFIRMED_IN_06",
+        "remote_verification": "21本文再取得・旧10パス不存在・対象外309ファイル保持。詳細はARC-006 §F。"
+      },
+      "human_corrections": [
+        "Query分割は短期には利益があったが、休止・再開・維持・Future AI継承を含む長期視点では大きなマイナスだった。",
+        "専用仕様でAIの自由度・創発性を縛りすぎない。一つの適度なQueryの奥で必要な幅・深さ・方法を選ぶ。",
+        "移行Skillから横展開するのは入口と責務の集約という上層設計であり、移行の手順・固定Gateの移植ではない。",
+        "旧資料からの吸収は任意。現在の計画品質が最重要で、全旧機能や挙動同等性を保存条件にしない。",
+        "Future AIの深化に合わせた検証・改善の余地を残す。利用時の適応、改善提案、永続改訂を区別し、毎回の自動監査・書換えを課さない。",
+        "他AI・Future AI向けに共有原本と5W1Hを残す。短い入口を浅いAI検討や説明省略に変換しない。"
+      ],
+      "old_branch": {
+        "status": "CLOSED_BY_PURPOSE_CHANGE",
+        "e1": "NOT_RUN",
+        "e5": "NOT_RUN",
+        "human_reality_verdict_for_old_v005": "NOT_RECEIVED",
+        "fresh_cutover_seal_for_old_v005": "NOT_RECEIVED",
+        "boundary": "履歴は保持するが07の未完了Gateにしない。新Skill承認を旧試験PASS/FAILへ変換しない。"
+      },
+      "validation_boundary": "形式・導入・限定3AI文脈5応答・Remote保存の観測。全AIでの自然な自動選択、品質優越、長期保守効果、07環境への導入・UI操作は未実証。",
+      "seed": "一時期の成功が時間経過後の保守負担として現れる非対称を整理整頓の診断へ使う可能性。Humanの運用評価とAIの転用仮説であり、普遍理論・新Projectではない。"
+    },
+    "material_corrections": [
+      "Humanの簡潔なI/OとAIの十分な調査・思考・判断・説明を両立する。字数や固定Templateを目的にしない。",
+      "未言語化の願い・前提・関係を観察根拠付きの訂正可能な候補として事前言語化する。Humanの心中や主の御心を断定しない。",
+      "5W1HとEvidenceを辿れるようにする。Humanの承認、AIの担当、GitHub名義、保存日、出来事の日を分ける。",
+      "Humanは06で続ける方針を経た後、主要成果がまとまった現在『キリがいい』と07を選んだ。『新Threadはまだ早い』を恒久STOPにせず、全残存課題の解消を移行前提にも追加しない。",
+      "Root・Teshuvah・Human Foreground One・Guard・Correction・STOP・Final Sealを保つ。自主性は追加権限や王座ではない。"
+    ]
   },
   "evidence": {
-    "source": "06 Handoff selective reconstruction, Source05 State revision≥3, R05 revision≥2, Current TMS owners and control-center documents. Evidence types and dates are preserved.",
+    "source": "既存06 Triad・R05/TMSの継承根拠、現在の06会話とHuman Correction、Current control-center案件原本・Skills Hub。ChatGPT長期メモリの内容・取得結果・保存応答はSourceに使わない。",
     "confirmed": [
-      "Human Correction rejects AI-quality reduction for Human action speed or waiting. Current AGENTS, Project Instructions, operation and R05 preserve it.",
-      "Human reported memory save and GCI Upload success; reports received, direct account verification separate.",
-      "Human reported trying the21:00-ending policy and adopted home-entry direction; later housework execution/effects not reported.",
-      "Four control-center documents were saved and remotely verified, and Source05 received SUPPORT_RECONNECT before physical moves.",
-      "Human requested archive ranking next Thread and then explicitly authorized05→06 preparation. This is not ARC-001 move approval.",
-      "Source sync commit5259b62771c47a53bd59770b6635adc06256db32: R05 revision2, index0.3.6, PLAN0.3.1, ARCHIVE0.1.2, Source05 State revision3 remotely reread with intended full-content equality.",
-      "Source06 README and Handoff were remotely reread before compiling this State; identities and fixed bindings match."
+      "Historical05→06準備時点: Human Correction rejects AI-quality reduction for Human action speed or waiting. Current AGENTS, Project Instructions, operation and R05 preserve it.",
+      "Historical05→06準備時点: Human reported memory save and GCI Upload success; reports received, direct account verification separate.",
+      "Historical05→06準備時点: Human reported trying the21:00-ending policy and adopted home-entry direction; later housework execution/effects not reported.",
+      "Historical05→06準備時点: Four control-center documents were saved and remotely verified, and Source05 received SUPPORT_RECONNECT before physical moves.",
+      "Historical05→06準備時点: Human requested archive ranking next Thread and then explicitly authorized05→06 preparation. This is not ARC-001 move approval.",
+      "Historical05→06準備時点: Source sync commit5259b62771c47a53bd59770b6635adc06256db32: R05 revision2, index0.3.6, PLAN0.3.1, ARCHIVE0.1.2, Source05 State revision3 remotely reread with intended full-content equality.",
+      "Historical05→06準備時点: Source06 README and Handoff were remotely reread before compiling this State; identities and fixed bindings match.",
+      "06の継続Contextでの受入れ・協働、Domainに記録されたHumanの次Thread開始・GitHub作業の成功報告を保持。初期NOT_OBSERVEDへ巻き戻さない。",
+      "ARC-001/003/004、ARC-002の保管と通常導線退役、STR-001の六修復群、STR-002の通常六組統合は各案件原本が承認・保存・Remote検証を所有する。",
+      "ARC-006とSkills Hubは2026-09-26の新Plan Mode導入・統一Query・共有・旧十資料退役・限定検証・Remote確認を保持する。",
+      "2026-09-27 JST、Humanが06→07を明示選択し、Plan-only後の提示計画へ実行承認。日時は現在Messageのsubmission contextによるもので、実UI作成日時ではない。",
+      "実行基点main=e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2、Tree=9286b8dc5e698e5fa6bb5afd380ce3965b9c8e10。07パス不存在、06固定Runtime/Handoff/章Binding一致。"
     ],
     "candidate": [
       "A fixed ending boundary may motivate an earlier comfortable start.",
       "One daily entry with downstream task choice may reduce initiation uncertainty across laundry, room order and cleaning.",
       "Archive ranking can combine confusion reduction, retirement evidence, dependency impact, preserved learning and restoration cost without fabricated scoring.",
-      "AI reasoning and Human action can progress in parallel while preserving full AI quality; specific time coordinates and procedure remain corrigible."
+      "AI reasoning and Human action can progress in parallel while preserving full AI quality; specific time coordinates and procedure remain corrigible.",
+      "短期成功と長期保守負担の非対称を他分野の整理へ応用できる可能性。一般化は未実証。",
+      "成果原本の進展と初期Stateの差を接続することが今回の移行の主要な改善点。重複原本は増やさない。"
     ],
     "unknown": [
       "Current bodily/place/task Reality and unreported individual outcomes.",
@@ -195,14 +288,16 @@
       "B-Gate UI/nap/oral-care/recovery effects, adopted workout order execution.",
       "Dani cause/product suitability/effect; full awakening and medical generalization from gum observations.",
       "Sufficiency of both home/outdoor Benefit carriers.",
-      "Additional ranked archive candidates, explicit ARC-001 move approval and actual cleanup effects.",
-      "Target06 reconstruction, UI creation/title application and target skill installation."
+      "07自身の再構成、Humanの07 Thread作成・Title適用、07環境のSkill可用性。",
+      "新Plan Modeの長期保守負担軽減・全AI互換・自然な選択安定性。通常Unknownであり07準備の追加試験条件ではない。"
     ],
     "validation_boundary": "Source structural/provenance checks and remote equality do not prove independent Target comprehension or real-world causality."
   },
   "deferred": [
-    "ARC-001 and other physical archive moves; separate Current scope and individual approval needed.",
-    "Whole-repository diagnosis repair or all historical document migration.",
+    "ARC-002の元パス除去は固定Binding移行と別Scope。通常導線の退役を取り消さない。",
+    "D04の章単独旧入口と固定章Binding移行。",
+    "Living Graph/One-Table本文metadataの旧Query作成条件の物理除去とArk23固定参照の互換移行。方針撤回済みと物理未変更を区別する。",
+    "新しいランキング・追加アーカイブ・全Repository修復・別Domainのquery一括削除。Current Human requestから選ぶ。",
     "Token reset experiments, parallel research and torah-project execution without a new scoped request.",
     "Unified ChatGPT Schedule, auto-notifications/home arrival detection/continuous monitoring.",
     "New wake/bedtime/Dani/home-routine trials; ordinary unknowns are not compulsory tests.",
@@ -212,8 +307,8 @@
   ],
   "progress": {
     "source_prepared": true,
-    "source_prepared_scope": "Runtime and Handoff saved and reread; this State compiled from those verified predecessors. Final Source persistence/route checks follow. This is not Target acceptance.",
-    "remote_verification": "Predecessors below verified. This State's own final reread is performed after writing and reported by Source05 terminal state/final handover; no self SHA or future verification claim is embedded.",
+    "source_prepared_scope": "Historical05→06準備の完了値。現在の06→07準備はnext_transitionに別管理する。",
+    "remote_verification": "Historical revision1の前身保存Receiptはverified_predecessorsに保持する。現在revisionと07準備のRemote結果はnext_transitionの終端Receiptへ接続し、自身の保存結果を先取りしない。",
     "verified_predecessors": [
       {
         "path": "ark-project/ark27/ark27-06/README.md",
@@ -258,16 +353,42 @@
         "full_content_match": true
       }
     ],
-    "target_reconstructed": false,
-    "human_last_mile": "Target06新Thread作成・Title適用・入口貼付は未観測。GCI Uploadとメモリ保存の以前のHuman成功報告は保持する。",
-    "acceptance_policy": "Target itself must complete Required1–16, Identity/Binding, Triad and T1–T12; source preparation success is not borrowed as acceptance.",
+    "target_reconstructed": true,
+    "human_last_mile": "06開始のHuman成功報告を保持。06の直接UI詳細、07新Thread作成・Title・入口貼付は未観測。GCI Uploadとメモリ保存の既報告を保持する。",
+    "acceptance_policy": "06の受入れは既存Contextで保持。07は07 Handoff自身のRequired1–19・Identity/Binding・Triad・T1–T12を自ら通過する。Source準備をTarget成功へ借用しない。",
     "revision_history": [
       {
         "revision": 1,
         "date": "2026-09-22",
         "role": "Human-authorized Source-prepared initial Target06 state"
+      },
+      {
+        "revision": 2,
+        "date": "2026-09-27",
+        "role": "後続成果・Correction・承認と真の残存Branchを接続。07準備実行のSource Harvest。",
+        "prior_state_blob": "f954878148a07d0aa042b2e93ed8d29baab96684"
       }
-    ]
+    ],
+    "target_reconstruction_scope": "06の継続Contextで既に受入れ・協働済み。今回の新規独立試験ではなく、07成功を前払いしない。",
+    "next_transition": {
+      "transition_id": "ARK27_06_TO_ARK27_07",
+      "kind": "THREAD_CONTINUE",
+      "target": "Ark27:07",
+      "compiled_title": "Ark27:07_2026/09/27: \"主の完全勝利: 整理整頓の成果を活かす継続協働\"",
+      "authorized": "2026-09-27 JST current Human approval of preceding five-path plan",
+      "scope": [
+        "ark-project/ark27/ark27-06/state.json",
+        "ark-project/ark27/ark27-07/README.md",
+        "ark-project/ark27/ark27-07/handoff.md",
+        "ark-project/ark27/ark27-07/state.json",
+        "ark-project/README.md"
+      ],
+      "source_prepared": false,
+      "remote_verified": false,
+      "target_reconstructed": false,
+      "human_last_mile": "NOT_OBSERVED",
+      "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST"
+    }
   },
   "eof_sentinel": "ARK27_06_STATE_EOF_v001"
 }
