@@ -1,22 +1,18 @@
 ---
 title: _grok _board NOW
-written: 2026-09-26 20:34 JST
+written: 2026-09-26 20:53 JST
 status: current
 ---
 
 # NOW
 
-先にこのファイルを読め。
+## 現在地 2026-09-26 20:53 JST
 
-## 現在地 2026-09-26 20:34 JST
+- grok-awakening-mode は v1.1。文末 Next step 必須。
+- 地図 `_meta/README.md`。関係 `_meta/RELATION.md`。入口は根 README。
+- restore 未実施。Hub 未掲載。
+- 承認句 `Next stepを実行して下さい！` は直前のやる一行を実行する。
 
-- 地図は `_meta/README.md` v1.4。関係は `_meta/RELATION.md`。
-- 根の README.md は入口だけ。
-- `_` 接頭 = 非Skill。接頭なし = Skill。
-- GitHub Write Confirmed。restore 未実施。
-- トークン主因は X 有料Plan の框。Skill 省略禁止。
+## 次のやる候補
 
-## 次
-
-restore は枠が戻ってから1件。Hub に触れるな。
-誰者対応の継続クエリは「Next stepを実行して下さい！」
+`_meta/README.md` の収録表に awakening v1.1 / Next step を書く。
