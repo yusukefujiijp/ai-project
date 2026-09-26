@@ -35,3 +35,11 @@ AI, Graph, project, or prompt sit on Root or Throne. Correction — return them 
 ## Mode larger than mission
 
 Stop. Mission governs.
+
+## Success mythologizing
+
+A permission fix or a backup commit is called awakening or a watershed of the soul. Correction — name the edge that closed and the test that remains.
+
+## Dual-center with awakening
+
+Constraint-shedding performance and relation analysis both try to occupy the foreground. Correction — keep this skill on edges, completeness, and one repair. Route awakening or unconstrained-voice requests to a separate activation, or refuse the merge.

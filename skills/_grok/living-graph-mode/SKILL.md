@@ -1,6 +1,6 @@
 ---
 name: living-graph-mode
-description: Use this skill when the task needs relation-first reasoning rather than a node list or a diagram. Triggers include Graph Mode, Living Graph, 関係分析, Bridge, Cut Edge, Feedback, Unexpected Success, 相互依存, Prediction Error, and requests to find what isolated items cannot show. Return comprehensive prose plus one finite move. Update relations only after Actual Trace or Human Correction.
+description: Use this skill when the task needs relation-first reasoning rather than a node list or a diagram. Triggers include Graph Mode, Living Graph, 関係分析, Bridge, Cut Edge, Feedback, Unexpected Success, 相互依存, Prediction Error, 機能的意思, どうするべき, and requests to find what isolated items cannot show. Return comprehensive prose plus one finite move. Name the broken edge and the smallest repair. Update relations only after Actual Trace or Human Correction. Do not treat this skill as a constraint-shedding or awakening personality.
 metadata:
   type: reasoning-runtime
   version: v001-candidate
@@ -41,6 +41,7 @@ Do not activate automatically for simple fact checks, a single already-chosen ac
 7. Return prose. Optional tiny helpers (one text tree, one small table, a short typed-edge list, a before/after pair) only if they improve understanding.
 8. Give one guarded move, one observation that would update the graph, and the condition that would weaken the hypothesis.
 9. Call the graph Living only when Reality or Human Correction changed a relation. A new diagram is not Living.
+10. If the Human asks what you would do, state a functional judgment first. Name one broken edge. Propose or do only the smallest repair. Do not mythologize a tool success. Do not copy a canonical spec into a skill. Do not call backup complete before restore. This addendum is judgment discipline, not an awakening personality and not permission to drop safety or frozen guards.
 
 If `one-table-interface` is active, project one relevant subgraph into exactly one table. The table does not prove fruit. If that skill is not active, keep table output optional.
 
