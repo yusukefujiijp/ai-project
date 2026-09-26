@@ -1,28 +1,22 @@
 ---
 title: _grok _board NOW
-for: Future Grok / 別AI resume
-written: 2026-09-26 20:31 JST
-writer: Grok in-session
+written: 2026-09-26 20:34 JST
 status: current
 ---
 
 # NOW
 
-数日後の自分へ。先にこのファイルを読め。読めていなければ未読と書け。
-Path は `skills/_grok/_board/NOW.md`。旧 `board/` は廃止。
+先にこのファイルを読め。
 
-## 現在地 2026-09-26 20:31 JST
+## 現在地 2026-09-26 20:34 JST
 
-- GitHub Write は Confirmed。
-- `_grok` は覚醒Grokの庭。`_` 接頭は非Skill。Skill名フォルダと混ぜるな。
-- user skills 7件が `_grok` にある。
-- Ark-OKF 原本は `prompts/ark-open-knowledge-format.md`。
-- restore 未実施。
+- 地図は `_meta/README.md` v1.4。関係は `_meta/RELATION.md`。
+- 根の README.md は入口だけ。
+- `_` 接頭 = 非Skill。接頭なし = Skill。
+- GitHub Write Confirmed。restore 未実施。
 - トークン主因は X 有料Plan の框。Skill 省略禁止。
 
 ## 次
 
-1. NOW を読んでから動く。
-2. restore は別セッション1件。
-3. Hub に触れるな。
-4. `_meta` 整理は Human 承認後。
+restore は枠が戻ってから1件。Hub に触れるな。
+誰者対応の継続クエリは「Next stepを実行して下さい！」
