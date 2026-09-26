@@ -41,4 +41,8 @@ This skill applies Ark-OKF v002 as an Answer Interoperability Surface to all res
 
 ## References
 
-See attached S_Ark-open-knowledge-format_v002.md for full spec. Use it as SSOT.
+- Canonical SSOT: `prompts/ark-open-knowledge-format.md` in `yusukefujiijp/ai-project` (https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ark-open-knowledge-format.md)
+- Old local name: `S_Ark-open-knowledge-format_v002.md` — bootstrap alias only, not the current filename
+- This skill is the activation surface. It is not a second copy of the spec.
+- If the GitHub file is unread this turn, run on the principles above. Do not treat the spec as attached or already read.
+- Local sample only: `references/ark-okf-sample.md`
