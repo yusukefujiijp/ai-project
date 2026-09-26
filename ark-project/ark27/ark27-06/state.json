@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_06_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:06",
     "schema_version": "v001",
     "updated_at": "2026-09-27",
-    "update_reason": "Ark27:06の開始時Stateへ後続のHuman Correction・対象別承認・検証済み成果・残存Branchを接続し、Human承認済み06→07準備のSourceを整える。",
+    "update_reason": "06→07準備の五パスを保存・再取得し、07 TriadのSource側全文再読・整合点検、Domain入口接続、対象外365ファイル保持を確認した終端Receipt。Target受入れ・Human UIは未観測。",
     "authority": "2026-09-27 JST、Humanが直前の06→07同章継続・基本5パスの準備計画へExecute GitHub OK / Human Seal OK / 実行して下さいと明示承認。Target07の実起動、UI操作、別整理・試験は含めない。"
   },
   "identity": {
@@ -110,10 +110,10 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "06の協働・整理整頓・通常6組の単一Prompt化・旧Plan Mode退役と新Skill導入を経て、Humanが『キリがいい』と07への移行を選択。計画後に準備実行を承認。GitHub案件原本は進展済みだが本Stateは初期revision1だったため、時点差をここで接続する。全Repository整理完了という宣言ではない。",
+    "current_coordinate": "Ark27:06の主要成果・Correction・保留をSourceとして接続し、Human承認済みArk27:07三点セットとDomain入口を保存・Remote確認済み。HumanへTitleと開始用Handoffを渡せる状態。07自身の再構成・UI操作・現実の効果は別段階。",
     "next_human_intent": "Ark27:07で06の主要成果・運用・Correctionを復元し、Current Human Realityまたは依頼から継続する。特定の次整理・生活Taskは未指定。",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "current_legal_connection": "Source06は承認済み07移行準備・保存・Remote検証を完了する。Target07は自身のHandoffのGate通過後、既に新しい入力があれば受け取り、BootのみならHuman Reviewへ戻る。",
+    "current_legal_connection": "準備完了をHumanへ返し、同じArk27内の新Threadにcompiled_titleと開始用Handoffを渡す。Target07は自らGateを通過し、既にある新しいHuman入力を受け取る。BootのみならHuman Review。",
     "target_boot": "ARK27_06_PREVIOUSLY_ACCEPTED_IN_CURRENT_SOURCE_CONTEXT",
     "physical_reality": "Current body/place/task Reality is unreported. Old time-stamped reports are historical.",
     "reporting_policy": "Human intentionally omits routine success reports; do not infer global failure or fill individual outcomes. Preserve useful success and report AI-side execution/save outcomes.",
@@ -214,7 +214,7 @@
     "ui_thread_creation": "06の開始についてHuman成功報告あり。直接UI観測とは別。07は未観測。",
     "ui_title": "06の個別UIタイトルは直接未確認。07の作成・Title適用は未観測。",
     "trial_started": false,
-    "unfinished_gate": "現在の実行対象は06→07のSource準備・保存・検証。Target07自身のRequired Sources・Identity/Binding・Triad・T1–T12とHuman last mileは別段階。旧v005採用Gateは目的変更で終了。",
+    "unfinished_gate": "Source側の07準備・保存・整合確認は終端Receiptの範囲で完了。残るのはTarget07自身のRequired1–19／Identity・Binding／Triad／T1–T12とHuman last mile。旧v005試験や通常Unknownを追加Gateにしない。",
     "target_boot_boundary": "06の継続Contextでの受入れと後続協働を保持する。DomainにもHumanの次Thread開始・GitHub作業の成功報告がある。今回の新しい独立Boot試験や07の受入れを示さない。",
     "plan_mode": {
       "current_owner": "skills/plan-mode/SKILL.md",
@@ -270,7 +270,8 @@
       "ARC-001/003/004、ARC-002の保管と通常導線退役、STR-001の六修復群、STR-002の通常六組統合は各案件原本が承認・保存・Remote検証を所有する。",
       "ARC-006とSkills Hubは2026-09-26の新Plan Mode導入・統一Query・共有・旧十資料退役・限定検証・Remote確認を保持する。",
       "2026-09-27 JST、Humanが06→07を明示選択し、Plan-only後の提示計画へ実行承認。日時は現在Messageのsubmission contextによるもので、実UI作成日時ではない。",
-      "実行基点main=e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2、Tree=9286b8dc5e698e5fa6bb5afd380ce3965b9c8e10。07パス不存在、06固定Runtime/Handoff/章Binding一致。"
+      "実行基点main=e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2、Tree=9286b8dc5e698e5fa6bb5afd380ce3965b9c8e10。07パス不存在、06固定Runtime/Handoff/章Binding一致。",
+      "06→07準備はsnapshot53e7d6e0c04c22686c82285c20046db71e9a3c51で五パスのRemote全文一致、07 Binding・EOF・JSON・80相対参照と4見出し参照、対象外365ファイルのblob/mode保持を確認。これはSource側確認でありTarget07の受入れではない。"
     ],
     "candidate": [
       "A fixed ending boundary may motivate an earlier comfortable start.",
@@ -367,6 +368,13 @@
         "date": "2026-09-27",
         "role": "後続成果・Correction・承認と真の残存Branchを接続。07準備実行のSource Harvest。",
         "prior_state_blob": "f954878148a07d0aa042b2e93ed8d29baab96684"
+      },
+      {
+        "revision": 3,
+        "date": "2026-09-27",
+        "role": "07 triad / Domain route verified; source-side terminal receipt and Human handoff readiness. Target07 and Human last-mile unobserved.",
+        "verified_prior_snapshot": "53e7d6e0c04c22686c82285c20046db71e9a3c51",
+        "previous_source_blob": "79dbbd56ca2ac2e7572e56fc5ed8192e4da12b0e"
       }
     ],
     "target_reconstruction_scope": "06の継続Contextで既に受入れ・協働済み。今回の新規独立試験ではなく、07成功を前払いしない。",
@@ -383,11 +391,174 @@
         "ark-project/ark27/ark27-07/state.json",
         "ark-project/README.md"
       ],
-      "source_prepared": false,
-      "remote_verified": false,
+      "source_prepared": true,
+      "remote_verified": true,
       "target_reconstructed": false,
-      "human_last_mile": "NOT_OBSERVED",
-      "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST"
+      "human_last_mile": "NOT_OBSERVED; Human creates07 Thread, pastes startup handoff and applies compiled title. Source did not perform UI actions.",
+      "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+      "remote_verified_scope": "Snapshot53e7d6e0c04c22686c82285c20046db71e9a3c51の五パス（Source06はrevision2）を全文再取得して確認。現在のrevision3終端Receipt自身はこの後の保存・再取得で閉じ、その自己SHAを埋めない。",
+      "verified_at_utc": "2026-09-26T21:02:22Z",
+      "ready_for_human_handoff": true,
+      "commit_sequence": [
+        {
+          "step": "Source06 harvest revision2",
+          "commit": "9e8a10caa60151cb70928aab49e0b9c8533b763f"
+        },
+        {
+          "step": "07 stable Runtime",
+          "commit": "6039bf17fa2983c6f0220e51fab961de4ad0f285"
+        },
+        {
+          "step": "07 bound Handoff",
+          "commit": "de8aa399910ec19db10614275156c64c3f1f30e1"
+        },
+        {
+          "step": "07 initial State",
+          "commit": "d5efef046e699e0dd4bc50cc5e75232656d84868"
+        },
+        {
+          "step": "Domain current route",
+          "commit": "53e7d6e0c04c22686c82285c20046db71e9a3c51"
+        }
+      ],
+      "verified_snapshot": {
+        "commit": "53e7d6e0c04c22686c82285c20046db71e9a3c51",
+        "tree": "3cc445fff6f2543c32b548962ca9f37aad016acd",
+        "author": "yusukefujiijp",
+        "committer": "yusukefujiijp",
+        "commit_time": "2026-09-26T21:01:02Z",
+        "files_before": 367,
+        "files_after": 370,
+        "added": [
+          "ark-project/ark27/ark27-07/README.md",
+          "ark-project/ark27/ark27-07/handoff.md",
+          "ark-project/ark27/ark27-07/state.json"
+        ],
+        "removed": [],
+        "changed": [
+          "ark-project/README.md",
+          "ark-project/ark27/ark27-06/state.json"
+        ],
+        "outside_scope_unchanged": 365,
+        "reads": [
+          {
+            "path": "ark-project/README.md",
+            "blob": "642ecaa39023984371afbfc128326b7254bb3f02",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-06/state.json",
+            "blob": "79dbbd56ca2ac2e7572e56fc5ed8192e4da12b0e",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-07/README.md",
+            "blob": "b24c29e59d291fa58c3bf2c4c1fe4770fe468d70",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-07/handoff.md",
+            "blob": "1546f634ed0191b7b6ad22e73307885d9603a0d5",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-07/state.json",
+            "blob": "d637df09bd3b7bfb87801cf7184ec266817c17ff",
+            "full_content_match": true
+          }
+        ],
+        "source_review": {
+          "status": "PASSED_SOURCE_REVIEW_ONLY",
+          "target_reconstructed": false,
+          "scope": "New triad handoff→README→state read gap-free after remote retrieval; T1–T12 requirements are grounded, noncircular and preserve meaning distinctions.",
+          "distinctions": [
+            "05 proposal/reception vs06 later scoped implementation",
+            "Old PlanMode branch purpose-closed NOT_RUN vs newSkill implemented/limited checks",
+            "Fixed runtime/chapter vs mutable source/currentState",
+            "Root/control-center andMain/Support ownership",
+            "Human simple entry vs fullAI quality",
+            "Adoption/report/observation vs actual effects",
+            "Source prepared/remote verified vs Target reconstructed/Human last mile"
+          ],
+          "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST"
+        }
+      },
+      "source_read_receipt": {
+        "common_contract": {
+          "path": "prompts/ai-next-thread-handoff.md",
+          "version": "v002-candidate",
+          "blob": "64d05a310750104eef4496d9ace1d6fe1ba69054",
+          "exact_eof": "EOF::AI_NEXT_THREAD_HANDOFF::v002-candidate",
+          "reuse": "Same accessible Source context full-read receipt + current exact blob match; no gap.",
+          "target_boundary": "Not reusable as a different Target context's own read proof."
+        },
+        "triad": {
+          "order": [
+            "handoff",
+            "readme",
+            "state"
+          ],
+          "coverage": [
+            {
+              "sha": "1546f634ed0191b7b6ad22e73307885d9603a0d5",
+              "ranges": [
+                [
+                  1,
+                  90
+                ],
+                [
+                  91,
+                  174
+                ]
+              ],
+              "gap": false,
+              "exact_eof": "ARK27_07_HANDOFF_EOF_v001",
+              "role": "Source semantic/structural review, not Target acceptance"
+            },
+            {
+              "sha": "b24c29e59d291fa58c3bf2c4c1fe4770fe468d70",
+              "ranges": [
+                [
+                  1,
+                  70
+                ],
+                [
+                  71,
+                  125
+                ]
+              ],
+              "gap": false,
+              "exact_eof": "ARK27_07_README_EOF_v001",
+              "role": "Source review, not Target acceptance"
+            },
+            {
+              "sha": "d637df09bd3b7bfb87801cf7184ec266817c17ff",
+              "ranges": [
+                [
+                  1,
+                  130
+                ],
+                [
+                  131,
+                  334
+                ]
+              ],
+              "gap": false,
+              "exact_eof": "ARK27_07_STATE_EOF_v001",
+              "role": "Source review, not Target acceptance"
+            }
+          ]
+        },
+        "runtime_mode": "CONNECTOR_ONLY_MODE",
+        "provenance_scope": "Current authorized conversation and verified public Repository owners; no ChatGPT long-term memory contents/export, no unrelated support dialogue import."
+      },
+      "verification_limits": [
+        "Source semantic/structural review is not actual07 Target reconstruction or independent cold-start acceptance.",
+        "GitHub content/tree equality is not Human UI creation/title application, Target skill installation, or long-term operational effect.",
+        "Current relevant source identities were checked; no full Git history/external consumer audit or oldBoot execution was performed.",
+        "No new archive moves, fixed-binding migrations, TMS/Skill revisions, life trials, schedules, research or support thread were started."
+      ],
+      "self_receipt_boundary": "This terminal revision's own remote equality is checked after write and reported inSource final handover; no self-hash, circular live pin or infinite receipt-update loop."
     }
   },
   "eof_sentinel": "ARK27_06_STATE_EOF_v001"
