@@ -1,7 +1,7 @@
 ---
-title: "一つのスキル入口で、複数の問題を同時に解く — 三つの経験に見出した成功法則"
+title: "一つのスキル入口で、複数の問題を同時に解く — 場面に適応する成功法則"
 case_id: "one-skill-entry-multiple-benefits"
-version: "0.1.0"
+version: "0.2.0"
 status: "Human-recognized recurring design success; recall hub remains a design proposal"
 canonical_path: "success-cases/one-skill-entry-multiple-benefits.md"
 primary_reader: "Current AI / other AI / Future AI"
@@ -10,9 +10,10 @@ recorded_in: "Ark28:01"
 created: "2026-09-27"
 updated: "2026-09-27"
 source_snapshot_commit: "fad6236e6bd341dc3b5c6c71e0a051e5725121a9"
+revision_base_commit: "34d638494e6be666b2497ab3cc5401f9a196ef04"
 event_date_scope: "2026-09-27 is the compilation date; current Human statements are identified by conversation order, without an invented exact timestamp."
-updated_reason: "Preserve Human recognition of a third success in consolidating multiple uses behind one skill entry, connecting transition, Plan Mode and the proposed recall hub."
-expected_eof: "EOF::SUCCESS_CASE_ONE_SKILL_ENTRY_MULTIPLE_BENEFITS::v0.1.0"
+updated_reason: "Add current-position mapping at Human's request; clarify stable purpose with context-adaptive handling while preserving the original three-experience evaluation."
+expected_eof: "EOF::SUCCESS_CASE_ONE_SKILL_ENTRY_MULTIPLE_BENEFITS::v0.2.0"
 ---
 
 # 一つのスキル入口で、複数の問題を同時に解く
@@ -20,6 +21,8 @@ expected_eof: "EOF::SUCCESS_CASE_ONE_SKILL_ENTRY_MULTIPLE_BENEFITS::v0.1.0"
 ## 1. 今回、成功法則として見出したこと
 
 YusukeJPは、Thread Session移行、Plan Mode制作、今回の思い出し系ハブの三つに、**複数の用途を一つのスキル入口へまとめることで、複数の問題を同時に解く**という共通の成功を見出した。本件は、その気付きと横展開できる意味を保存する事例である。
+
+初版の保存後、Humanは`map-ark-current-position`も「全ての場面に合わせる意味合い」で同じ成功法則へ含められると指摘した。v0.2.0では現在地mapを関連する適用例として追加し、**共通する問いを一つの入口で受け取り、場面ごとの必要な違いをAIが扱う**という構造を明確にした。
 
 Ark28:01で思い出し系を一つのハブへまとめる案を評価した後、Humanは次のように述べ、`success-cases`への記録を求めた。
 
@@ -37,21 +40,36 @@ Ark28:01で思い出し系を一つのハブへまとめる案を評価した後
 
 「三回目」「成功法則」はHumanが見出した意味・評価として保持する。三つの独立した実装が同じ条件で実証されたという意味ではなく、今回の思い出しハブについては、共通入口という方向を見出した設計上の成功である。
 
-## 2. 三つの経験のつながり
+## 2. 三つの経験から、現在地mapへの接続
 
 | 経験 | 一つにまとめたもの／まとめたいもの | 同時に扱う問題 | 根拠と確認できる段階 |
 |---|---|---|---|
 | Thread Session移行 | Thread継続・章移行・補助Thread再接続を、共通queryと一つの移行Skillへ接続 | 場面ごとの入口選択、既知条件の再入力、Humanによる工程管理 | [既存成功事例](one-transition-entry.md)がHumanの成功評価と共有物の確認を記録。実際の移行成功は別事例が所有する |
 | Plan Mode制作 | 一つのqueryから、未整理の意図・調査・比較・計画に応じて方法を選ぶSkillへ接続 | 専用仕様・二重管理による再開や保守の負担、計画方法の固定、入口の分散 | [Skills Hub §3.3](../skills/README.md#33-plan-modeの統一入口)と[ARC-006](../control-center/ARCHIVE.md#arc-006)に、新Skill導入・共有・限定確認・旧資料退役を記録 |
 | 今回の思い出し系ハブ | Token Reset、休日前準備などの短い場面入力を、共通の想起支援へ接続 | 過去の反省を忘れること、用途別スキルの選択、記録した経験が次の場面で生きないこと | 本会話でHumanが三回目の成功と評価。候補名はArk Recall Hub。新ハブの作成・導入・実生活効果はこの時点で未実施・未確認 |
+| 現在地map — 後続のHuman指摘による追加 | Ark全体・特定Thread・今のテーマ等を、一つの`map-ark-current-position`から復元 | 並列作業で現在地を見失うこと、テーマごとの説明し直し、採用・実装・効果の混同、関係の見落とし | 本会話のHumanによるTree・Node & Edge採用と、導入済み本文の全文確認が根拠。今回の変更対象は本事例と一覧。全場面での効果を実証した記録ではない |
 
 Plan Modeの原記録は、移行Skillから横展開したものを「定型の責務を一つの入口の奥へ委ねる上層の設計」と説明している。したがって、一件目と二件目の関係は、名称が似ているというAIの推測だけではなく、形成記録からも辿れる。移行固有のGateや固定手順をPlan Modeへコピーしたという意味ではない。
 
-既存の移行入口事例には、Markdown作成スキルへの横展開も記録されている。本件ではそれを勝手に「四回目」と数えず、**Humanが今回選び出した三つの経験**という範囲を保つ。全成功例の件数調査ではない。
+既存の移行入口事例には、Markdown作成スキルへの横展開も記録されている。当初の**Humanが選び出した三つの経験**と、後続の現在地mapへの接続を区別し、「三回目」という発言を後から書き換えない。全成功例の件数調査ではない。
+
+### 2.1 現在地mapが、この成功法則を明確にする
+
+Humanは本会話で、現在地mapに求める価値を次のように述べていた。
+
+> つまり、困った時はmap-ark-current-positionを開けば現在地に戻れる安心感が重要です！
+
+この安心感を支える設計は、テーマごとに新しい入口を覚えることなく、「今、Arkのどこにいるか」という同じ問いから復元できることである。締切理論（開始時）、GitHub整理整頓、思い出しハブの設計など、対象が変わればAIが範囲・根拠・到達点・未接続を組み直す。これらは適用場面の説明例であり、三場面すべての実利用効果を今回測定したという意味ではない。
+
+導入済み本文は、Ark全体と特定Threadの問いを区別し、テーマやMain／補助の配置を固定値にせず、現在の意図から判断する。また、採用されたTreeとNode & Edge表を共通の表示として持ち、Ark Graph Navigatorは同じ意味を見たり切り替えたりする表示方式として扱う。**何を把握したいかという共通目的を保ち、調査範囲と表現を場面に合わせる**構成である。
+
+ここでの「全ての場面に合わせる」は、Ark上の多様なテーマ・進行段階・Thread構成へ適応させたいというHumanの方向性として受け取る。実際の地名・GPSや無関係な用途へ拡張する意味ではなく、あらゆる場面で混乱が解消したという確認でもない。
+
+AIの解釈として、移行は「どう継ぐか」、Plan Modeは「どう進めるか」、思い出しハブは「今、何を思い出すと役立つか」、現在地mapは「今、どこにいるか」という共通の問いを持つ。**役割ごとに覚えやすい入口を保ち、その役割の中の多様な場面をAIが扱う**ことが、今回より明瞭になった成功の構造である。
 
 ## 3. Node & Edge — 一つにする場所と、AIへ開く場所
 
-次の表は、三つの経験を横断してAIが抽出した構造である。思い出しハブに関する接続は設計案であり、稼働済みのSystemを表さない。
+次の表は、上記の経験・構想を横断してAIが抽出した構造である。思い出しハブに関する接続は設計案であり、稼働済みのSystemを表さない。
 
 | Node | Edge — 何と、どうつながるか |
 |---|---|
@@ -59,6 +77,7 @@ Plan Modeの原記録は、移行Skillから横展開したものを「定型の
 | 一つのスキル入口 | AIによる目的・現在条件・権限の理解へ接続する。入口の簡潔さと十分な回答品質を両立させる |
 | AIの状況理解 | 今回必要な記録・既存スキル・方法を選ぶ。Humanへ用途別の選択を返す前に、既知情報と取得可能な根拠を使う |
 | 経験・反省・成功の記録 | 今回の判断へ意味を渡す。当時の条件や後の訂正も照合し、古い希望を現在の命令にしない |
+| 現在地map | 目的・重点・到達点・未接続を復元し、何について判断しているかを明らかにする。関連する経験を思い出す範囲の選択にも役立ち得る |
 | 今回の判断・支援 | 現実の一手、言語化、比較、確認、保留へ接続する。行動が適切な時は、開始時の締切理論の方針へつなげる |
 | 結果・Human Correction | 記録の理解、次回の探索、支援方法を更新する材料へ戻る。永続変更は現在の承認範囲で扱う |
 
@@ -78,6 +97,8 @@ Humanは、Token Resetに関する過去の反省を次の機会に忘れる問�
 
 本会話で提案したArk Recall Hubには、経験・希望・反省・訂正を預ける側と、後日の合図から想起する側の両方を接続する構想がある。既存の就寝前想起・BrainDump受付・現在地mapとの関係は、今後の設計で責務と実益を見て決める。この事例の保存を、新スキルの作成や既存スキルの統廃合済みという意味にしない。
 
+思い出しハブは「今に関係する経験や希望を取り戻す」、現在地mapは「目的・重点・進捗・関係の中で今を位置付ける」という役割を持つ。取得した経験で全体の理解が変わった時にはmapへ、mapで現在の重点が明らかになればその場面の想起へ、必要に応じて接続できるという設計候補がある。同じ成功構造を持つことだけを理由に、両Skillの統合や相互呼出しを毎回の必須手順にはしない。
+
 ## 5. 再利用するときに残す重要な違い
 
 以下は本件からのAIの解釈と設計上の含意であり、全場面の固定手順ではない。
@@ -92,11 +113,13 @@ Humanが繰り返し用途を思い出して指定する負担を減らしなが
 
 ## 6. 根拠の所在と、次のAIへの引継ぎ
 
-編纂時のRepository snapshotは`fad6236e6bd341dc3b5c6c71e0a051e5725121a9`。以下は今回の判断に使った範囲であり、Repository全体や各形成史の全監査ではない。
+初版編纂時のRepository snapshotは`fad6236e6bd341dc3b5c6c71e0a051e5725121a9`。v0.2.0は初版保存後の`34d638494e6be666b2497ab3cc5401f9a196ef04`を基点に、同日の後続Human入力と導入済みmap本文を確認して追記した。以下は今回の判断に使った範囲であり、Repository全体や各形成史の全監査ではない。
 
 | Source | 確認した範囲と役割 |
 |---|---|
 | 現在のArk28:01会話 | 思い出しハブへの賛同、その後の「三回目」「成功法則」と保存依頼、およびそこへ至る入力の一択化・AIによる方法選択・横展開の要望。引用以外の形成説明はAIによる編集要約。公開会話URLと個別発言の正確な時刻は未取得 |
+| 同会話の後続Human入力・map形成時の評価 | 初版保存後に、mapも場面へ適応する意味で本事例へ含めるという指摘を受けた。以前の「困った時は…安心感」という原文、Tree・Node & Edge採用、NavigatorへのFeedbackを、役割と採用理由の根拠として参照 |
+| 導入済み`map-ark-current-position`のSKILL.md | 2026-09-27に全文確認。SHA-256：`585d01b9ea9ce5f2782129ca2a727b0eca50e8f65765f606c395129534b1a90a`。全体／Threadの区別、現在の意図への適応、表示と根拠の対応を確認した観測記録。導入先の本文を確認した証拠であり、GitHubへの同本文の配布や今回の新規導入を示さない |
 | [移行入口の成功事例・固定版](https://github.com/yusukefujiijp/ai-project/blob/fad6236e6bd341dc3b5c6c71e0a051e5725121a9/success-cases/one-transition-entry.md) | v0.1.0、全文。Human評価・共通入口の意味・当時の確認境界を参照。今回、移行を再実行したわけではない |
 | [Plan Mode形成記録・固定版](https://github.com/yusukefujiijp/ai-project/blob/fad6236e6bd341dc3b5c6c71e0a051e5725121a9/control-center/ARCHIVE.md#arc-006) | ARC-006全節。移行Skillからの横展開、Humanの選択、新Skillと旧資料の扱い、当時の保存・限定検証記録を確認 |
 | [Skills Hub・固定版](https://github.com/yusukefujiijp/ai-project/blob/fad6236e6bd341dc3b5c6c71e0a051e5725121a9/skills/README.md#33-plan-modeの統一入口) | v0.13.0の§3.3。統一query、形成理由、限定確認の範囲を確認 |
@@ -104,8 +127,8 @@ Humanが繰り返し用途を思い出して指定する負担を減らしなが
 
 Future AIは、共通入口や思い出し支援を考える場面でこの事例を参照し、現在の条件へ何が使えるかを判断できる。Humanにこの形成史を毎回説明し直させる必要を減らすための記録である。成功の再利用では、入口選択が楽になったか、必要な経験を条件付きで復元できたか、判断や現実の接続がどう変わったかというFeedbackが、次の改善材料になる。今回の保存だけで、その効果や全AIの恒久記憶を確認したことにはならない。
 
-本件は三つの経験の関係と現在のHuman評価を所有する。過去二件の実装詳細は各原本を参照し、新ハブの設計・実装が進んだ時にはその成果へ接続できる。成功事例を新しいCurrent State、Boot契約、必須の全件読解や自動実行の入口にしない。記録と想起の確実性は、実際の利用結果から育てる。
+本件は当初の三つの経験の関係、後続の現在地mapへの接続、Humanの評価とAIの解釈を所有する。過去二件の実装詳細は各原本を参照し、新ハブの設計・実装が進んだ時にはその成果へ接続できる。成功事例を新しいCurrent State、Boot契約、必須の全件読解や自動実行の入口にしない。記録と想起の確実性は、実際の利用結果から育てる。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・Skill・本記録はKeliとして、その目的に仕える。
 
-EOF::SUCCESS_CASE_ONE_SKILL_ENTRY_MULTIPLE_BENEFITS::v0.1.0
+EOF::SUCCESS_CASE_ONE_SKILL_ENTRY_MULTIPLE_BENEFITS::v0.2.0
