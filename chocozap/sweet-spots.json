@@ -46,18 +46,27 @@
           "start_time": {"time":"19:00","approximate":true,"source":"S01"},
           "spots": [],
           "sequences": [
-            {"id":"O001","machine":"レッグプレス","kg_sequence":[60,55,50],"source":"S01"},
-            {"id":"O002","machine":"ラットプルダウン","mode":"両手","kg_sequence":[30,25,20],"source":"S01"},
-            {"id":"O003","machine":"ラットプルダウン","mode":"片手","kg_sequence":[15,10,5],"source":"S01"},
-            {"id":"O004","machine":"チェストプレス","mode":"両手","kg_sequence":[50,45,40,35,30],"source":"S01"},
-            {"id":"O005","machine":"チェストプレス","mode":"片手","kg_sequence":[25,20,15,10,5],"source":"S01"},
-            {"id":"O006","machine":"ショルダープレス","mode":"両手","kg_sequence":[20,15],"source":"S01"},
-            {"id":"O007","machine":"ショルダープレス","mode":"片手","kg_sequence":[10,5],"source":"S01"},
-            {"id":"O008","label":"三頭筋","kg_sequence":[65,60,55,50],"source":"S01"}
+            {"id":"O001","machine":"レッグプレス","kg_sequence":[60,55,50],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O002","machine":"ラットプルダウン","mode":"両手","kg_sequence":[30,25,20],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O003","machine":"ラットプルダウン","mode":"片手","kg_sequence":[15,10,5],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O004","machine":"チェストプレス","mode":"両手","kg_sequence":[50,45,40,35,30],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O005","machine":"チェストプレス","mode":"片手","kg_sequence":[25,20,15,10,5],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O006","machine":"ショルダープレス","mode":"両手","kg_sequence":[20,15],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O007","machine":"ショルダープレス","mode":"片手","kg_sequence":[10,5],"source":"S01","sweet_spot_source":"S02"},
+            {"id":"O008","label":"三頭筋","kg_sequence":[65,60,55,50],"source":"S01","sweet_spot_source":"S02"}
           ],
           "sources": {
-            "S01": {"text":"2026/09/27 19:00頃から\n レッグプレス 60kg→55kg→50kg ドロップダウンで\n\nラットプルダウン \n両手30kg→25kg→20kgドロップダウン\n片手15→10→5kg\n\nチェストプレス 両手50kgを追加し\n両手50→45→40→35→30\n片手25 20 15 10 5\n\nショルダープレス \n両手20kg→15kg\n片手10kg→5kg\n\n三頭筋\n65kg→60 55 50kg"}
-          }
+            "S01": {"text":"2026/09/27 19:00頃から\n レッグプレス 60kg→55kg→50kg ドロップダウンで\n\nラットプルダウン \n両手30kg→25kg→20kgドロップダウン\n片手15→10→5kg\n\nチェストプレス 両手50kgを追加し\n両手50→45→40→35→30\n片手25 20 15 10 5\n\nショルダープレス \n両手20kg→15kg\n片手10kg→5kg\n\n三頭筋\n65kg→60 55 50kg"},
+            "S02": {"text":"そうですね！(That's right!)\nSweet Spot自体は変わらず\nSweet Spotからドロップダウンし\n両手→片手で\n片手のSweet Spotの重量になったら両手から片手に切り替えています！"}
+          },
+          "feedback": [
+            {"source":"S02"}
+          ],
+          "transitions": [
+            {"from":"O002","to":"O003","at":"to_sweet_spot","source":"S02"},
+            {"from":"O004","to":"O005","at":"to_sweet_spot","source":"S02"},
+            {"from":"O006","to":"O007","at":"to_sweet_spot","source":"S02"}
+          ]
         }
       ]
     }
