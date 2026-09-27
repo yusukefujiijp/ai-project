@@ -1,6 +1,6 @@
 ---
 name: chocozap-sweet-spot
-description: "Support the chocoZAP Sweet Spot two-round workflow: receive today's machine-specific findings, carry them into a focused second round, and incorporate feedback. Use when explicitly invoked, or when an established Sweet Spot conversation continues with machine reports, corrections, second-round retrieval, dated history lookup, comparison, saving, or reflection. Distinguish requests to design this skill from live workout reports. Skip general fitness topics or chocoZAP business questions when unrelated to this workflow."
+description: "Support the chocoZAP Sweet Spot workflow: receive machine-specific findings, connect them to focused follow-up rounds, and interpret reported weight sequences and mode switches. Use when explicitly invoked, or in ongoing workout reports, corrections, feedback, dated lookup, comparison, and saving. Distinguish live reports from skill-design discussion and hypothetical examples. Skip unrelated general fitness topics or chocoZAP business questions."
 ---
 
 # chocoZAP Sweet Spot
@@ -12,6 +12,8 @@ description: "Support the chocoZAP Sweet Spot two-round workflow: receive today'
 **一周目で、その日の自分のSweet Spotを探して記録する。インターバルを挟み、二周目ではその記録を使って狙いを絞り、粘り強く取り組む。身体の反応や本人の訂正から条件を調整し、集中・探し直しの削減・時短などの同時改善を狙う。**
 
 Sweet Spotを「本人がその日に狙いたいと報告した重量・使い方などの条件」として受け取る。報告は本人の判断として尊重し、二周目で参照する候補にする。細かな体感の基準は追加説明から育て、最大重量・標準処方・科学的に確定した最適値へ読み替えない。
+
+本人が選んだ運用では、Sweet Spotを重量系列の起点や使い方の切替基準として扱う。基本の二周目構想と、その中で本人が採用した具体的な方法を区別し、固定重量・ドロップダウン・両手から片手への切替のいずれも一律に強制しない。
 
 「chocozap-sweet-spotスキルを活用して下さい！」等の呼び出しで、この意味を復元する。意味を一から質問し直さず、既に届いている関連報告があれば整理する。報告前なら、その日の条件を受け取り二周目へつなぐ準備ができたことを自然に伝える。「瞬時」の要件は、最初の応答から正しい文脈で協働することで満たし、数値的な応答速度は保証しない。
 
@@ -29,7 +31,7 @@ Sweet Spotを「本人がその日に狙いたいと報告した重量・使い�
 
 必要な範囲で、同じ来館を識別できる文脈、機械、使い方、報告された値・感覚、分かっている周回や時点、出所、訂正を区別する。これをHumanへ入力様式として要求しない。入力日と実施日が異なる報告も、その区別を保つ。
 
-同じ機械でも片手／両手や縦／横などは別の条件として扱う。左／右などが追加されたら、その情報に合わせて分ける。周回不明の申告へ勝手に完了状態を付けない。
+同じ機械でも片手／両手や縦／横などは別の条件として扱い、本人が示した順序・切替で条件間を結ぶ。左／右などが追加されたら、その情報に合わせて分ける。周回不明の申告へ勝手に完了状態を付けない。
 
 **訂正と新しい観察を分ける。** 誤記の訂正なら該当記録を直し、他の条件を保持する。新しい周回や時点で条件が変わったなら、元の報告と新しい報告の両方を文脈付きで扱う。表示は今回必要な現在値と差分へ整理し、履歴を毎回全出力する義務を作らない。
 
@@ -39,9 +41,18 @@ Sweet Spotを「本人がその日に狙いたいと報告した重量・使い�
 - 続く「片手の12は10の誤記」：片手を訂正し、両手24kgを保つ。
 - 続く「二周目では片手8kgが合った」：それまでの候補と、二周目の観察を分ける。先の報告の周回は、分かっている範囲で扱う。8kgを他の日の標準値にしない。
 
+### 3.1 Sweet Spot・重量系列・切替を結びつける
+
+- 「ドロップダウン」や矢印・並びで報告された重量は、順序と反復を保つ。各段階を別のSweet Spotや確定したセット数へ変換しない。重量を下げたことだけではSweet Spotの変更・過去値の訂正・能力の低下を意味しない。
+- 系列の先頭だけを根拠にSweet Spotと決めない。「Sweet Spotから下げている」等の後続説明があれば、確認の出所を結んで起点の役割を確定し、未確認扱いを解消する。「Sweet Spotは変わらない」という本人の再確認は、系列の途中で重量が変わることと両立する。
+- 両手から片手へつなぐ運用が報告されたら、切替元・切替先・切替条件を対応づける。「片手のSweet Spotに達したら切替」なら、その重量を片手の開始点と両手からの切替基準として読む。切替前の使い方でも境界重量を反復したとは推定せず、元の系列へ未報告の段階を足さない。
+- 数値の一致や二対一の比率だけで系列を接続しない。使い方の未報告や機械の未特定は残し、確認された切替を別機械・別日へ自動適用しない。本人が方法を変更したら、新しい報告の範囲で関係を更新する。
+
 ## 4. 記録を二周目の集中へつなぐ
 
 「二周目いく」「今日の一覧を出して」等の依頼では、確認できる当日のSweet Spotを、使い方と数値の対応が分かる形で返す。ユーザーが実施順を指定していれば尊重し、未指定なら既存の記録順など自然な順序を使う。全機械の申告や一周目完了宣言を追加の利用条件にしない。
+
+Sweet Spotの呼出しには、単一重量の申告に加え、本人が確認した系列の起点も含める。運動の流れを求められたら、下降系列と報告された切替を接続して返す。記録形式の意味は現行の案内に従い、後続の確認・Feedbackを読まずに未確認へ戻したり、単一重量の欄が空という理由で記録なしと扱ったりしない。
 
 記録は二周目の出発点にする。今の身体の感覚が変われば、条件を調整できる余地を保つ。集中する意図と調整可能性を両立させ、毎回すべてを探し直すことも、記録した重量を必ず守ることも強制しない。
 
@@ -57,7 +68,7 @@ Sweet Spotを「本人がその日に狙いたいと報告した重量・使い�
 
 関係分析や理論の深掘りを求められたら、探索・記録・休息・集中・身体の反応のつながりを検討し、根拠、仮説、未確認点を区別する。Graphの表示や新しい概念の追加を目的にせず、理解や次の判断へ効く発見を返す。
 
-当日の条件の更新と、スキルの共通手順の改訂を分ける。再利用できる改善が見えたら候補として言語化し、外部変更は現在の依頼と権限の範囲で扱う。
+Living Reviewでは、本人の補足で変わった解釈を、記録・読み出し・共通手順のどこへ反映すべきか判断する。日々の値と原文は記録へ置き、繰り返す誤読を防ぐ意味の区別や支援方法はスキルの改訂候補にする。改訂が依頼・承認されていれば、適用されるスキル作成手順で必要な改訂・保存・検証まで進める。通常の報告のたびにスキルを自動改訂せず、Plan-onlyや未承認の変更は候補提示に留める。
 
 変化を比較するときは、訂正を反映した元の観察へ戻り、機械・使い方・日付・来館・分かっている周回の対応を保つ。一周目から二周目への変化と、来館を跨ぐ変化を区別する。「同じ条件で合った」という再確認は新しい観察として扱い、未報告を変化なしへ置き換えない。差分は正本から組み立て、数値の増減だけで成長・後退や原因を認定しない。
 
