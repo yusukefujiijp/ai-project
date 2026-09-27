@@ -1,15 +1,15 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.4.0"
+version: "0.5.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "success-cases/README.md"
 role: "Success discovery and reading entry"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
-updated: "2026-09-18"
-last_reality_reviewed: "2026-09-18"
-updated_reason: "Add the unified transition-entry case and allow small, independently useful successes without fragmenting their essential context."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.4.0"
+updated: "2026-09-27"
+last_reality_reviewed: "2026-09-27"
+updated_reason: "Add the Human-recognized success pattern across transition, Plan Mode and the proposed recall hub; retain each case's evidence and implementation stage."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.5.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -29,8 +29,11 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | [Ark27:03→04 — 深いAI処理と、Humanから見た移行のほぼ瞬時化](ark27-03-to-04-transition.md) | Source準備からTarget再構成・Living Reviewへ接続し、Humanが「完全完璧な成功事例」と評価した | Thread移行、承認Scopeの連続実行、Humanの工程管理負担、AIへの内部処理の委任を考える時 |
 | [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](wake-up-one-choice.md) | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
 | [複数の移行場面を、一つの入口へ統合した成功](one-transition-entry.md) | 共通queryと一つのSkillで、場面の判別と必要な処理をAIが引き受ける構成へまとめた | 複数用途の入口統合、Humanの選択負担、機能が増えても扱いやすいSkill設計を考える時 |
+| [一つのスキル入口で、複数の問題を同時に解く — 三つの経験に見出した成功法則](one-skill-entry-multiple-benefits.md) | Humanが移行・Plan Mode・思い出しハブ構想を三回の成功として結び、入口の一択化とAIによる方法選択の横展開を見出した | 共通スキルのハブ化、記録を次の場面へ生かす想起支援、複数問題同時解決を設計する時 |
 
 起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
+
+三つの経験を結ぶ事例は、2026-09-27の編纂時にHumanが「三回目」「成功法則」と見出した関係を残す。過去の実装詳細は原資料へ接続し、今回の思い出しハブは設計上の成功評価と、今後の作成・実利用の確認を分けている。
 
 ## 3. 他AI・Future AIの使い方
 
@@ -71,4 +74,4 @@ Current Human Request、[AGENTS.md](../AGENTS.md)、対象Runtimeに従う。Hum
 
 事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
 
-EOF::SUCCESS_CASES_README::v0.4.0
+EOF::SUCCESS_CASES_README::v0.5.0
