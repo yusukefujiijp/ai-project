@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "state_id": "ARK28_02_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-09-29",
+    "updated": "2026-09-29",
+    "canonical_path": "ark-project/ark28/ark28-02/state.json",
+    "date_scope": "Preparation date in Asia/Tokyo; not actual UI creation or a Human Task time",
+    "change_reason": "Initialize Ark28:02 after remotely verifying its stable README and Handoff; retain current material, evidence boundaries and First Legal Move."
+  },
+  "identity": {
+    "source": "Ark28:01",
+    "target": "Ark28:02",
+    "owner": "Ark28:02",
+    "chapter": "Ark28",
+    "role": "SUPPORT",
+    "transition_kind": "THREAD_CONTINUE",
+    "main_chapter": "Ark27",
+    "main_ownership_transferred": false,
+    "main_thread_resolution": "Current Human designation; otherwise ark-project/README.md",
+    "compiled_title": "Ark28:02_2026/09/29: \"主の完全勝利: 想起と現在地を支える継続協働\""
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光",
+    "human_retains": [
+      "Meaning",
+      "Purpose",
+      "Priority",
+      "身体Reality",
+      "Correction",
+      "Interrupt",
+      "STOP",
+      "Final Seal"
+    ],
+    "guards": [
+      "Truth",
+      "Body",
+      "Sleep",
+      "Food",
+      "Shabbat",
+      "Safety",
+      "Medical",
+      "Others",
+      "Law",
+      "Responsibility"
+    ],
+    "source_preparation_scope": "Human authorized preceding Ark28:01→02 plan: Source records/harvest/state, unchanged installed map distribution, Target triad, support routing, scoped verification and Human handoff.",
+    "boot_authority": "Read, reconstruct and receive current Human input. Stored preparation authorization is not blanket permission for new work.",
+    "not_authorized_by_boot": [
+      "Main ownership transfer or Main task execution",
+      "Reset, old tasks or new physical trials",
+      "account/UI changes, notifications or background monitoring",
+      "archive moves or unrelated repository changes",
+      "ChatGPT long-term memory export",
+      "revival of Ark24 Frozen Trigger or Next-Cycle Workout Bridge"
+    ]
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark28/ark28-02/README.md",
+      "id": "ARK28_02_SUPPORT_FIELD",
+      "blob_sha": "e28a1ac9673c10f27d284bce1e0773d86d66802d",
+      "verified_commit": "4892ca6467d8ecba400f1e9679bb0e5cc27aa67f"
+    },
+    "handoff": {
+      "path": "ark-project/ark28/ark28-02/handoff.md",
+      "id": "ARK28_01_TO_ARK28_02_CONTINUE",
+      "blob_sha": "4fb17d3e50b4a424e83ee64939134b126a20a213",
+      "verified_commit": "358afc3f0acf9f72281bbc266ba5e0aaaff24d28"
+    },
+    "source_harvest": {
+      "path": "ark-project/ark28/ark28-01/harvest.md",
+      "id": "ARK28_01_MATERIAL_HARVEST",
+      "blob_sha": "5b2715f85a5766a1f529c433412fde7eaceab1d4"
+    },
+    "source_terminal_receipt": {
+      "path": "ark-project/ark28/ark28-01/state.json",
+      "id": "ARK28_01_CURRENT_STATE",
+      "owner": "Ark28:01",
+      "schema_version": "v001",
+      "minimum_revision": 4,
+      "section": "progress.next_transition",
+      "policy": "Current mutable receipt; no live-blob pin"
+    },
+    "source_experience": {
+      "path": "ark-project/ark28/ark28-01/task-records.json",
+      "record_id": "ark28-01-task-records",
+      "format_version": "v001",
+      "minimum_revision": 2
+    },
+    "chapter": {
+      "path": "ark-project/ark28/README.md",
+      "id": "ARK28_SUPPORT_CHAPTER",
+      "minimum_revision": 2,
+      "policy": "Current identity/revision/EOF and compatible role"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "policy": "Current routing and title/paired-preparation policy; explicit current Human designation takes precedence"
+    }
+  },
+  "now": {
+    "phase": "PREPARED_FOR_TARGET_RECONSTRUCTION",
+    "support_purpose": "Ark27 Mainを保持し、想起と現在地を含む柔軟な協働を継続する。Current Requestに応じて扱う枝を選ぶ。",
+    "latest_source_boundary": "Portal初版の保存・導入、実際の明示呼出しからの具体例案内、Human好評価を経て移行準備。成果を未実装へ巻き戻さない。",
+    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
+    "existing_input": "Accept any new Human input already supplied; do not require re-entry.",
+    "boot_only": "Return evidence-backed reception after all gates; then Human Review. No automatic next task.",
+    "live_b_gate": "NOT_REPORTED_FOR_THIS_TARGET",
+    "local_options": [
+      "continue in support",
+      "complete in support",
+      "defer with meaning retained",
+      "selectively reconnect material deltas to current Main"
+    ]
+  },
+  "evidence": {
+    "confirmed_human": [
+      {
+        "claim": "開始時の締切理論の方針、Tree・Node & Edge表、Navigatorの視認性訂正と星印廃止、map最終Next stepを採用。",
+        "source": "ark-project/ark28/ark28-01/task-records.json transition-s03–s07",
+        "kind": "Human adoption and corrections; not all field outcomes"
+      },
+      {
+        "claim": "Portalは用途を忘れた入口を最優先し、主にB状態を支え、自然な反省の蓄積・訂正から徐々に育てる。",
+        "source": "ark-project/ark28/ark28-01/task-records.json recall-s07–s14",
+        "kind": "Human design authority; no diagnosis or state declaration required"
+      },
+      {
+        "claim": "Portalを実際に明示呼出しし、具体例案内の後に好評価と次Thread移行意向、続いて準備の実行承認があった。",
+        "source": "ark-project/ark28/ark28-01/task-records.json transition-s08–s10 and transition-s15",
+        "kind": "Observed conversation and Human evaluation; not long-term effectiveness"
+      }
+    ],
+    "confirmed_tool": [
+      {
+        "claim": "Portal initial release: seven files remotely verified and installed skill body confirmed.",
+        "commit": "ab1b62b562bac3ef92a127f28dce42e26668a702",
+        "source": "ark-recall-portal/README.md §6; Source records transition-s11"
+      },
+      {
+        "claim": "Source records revision 2, harvest, preparation state and unchanged map distribution saved; eight paths remotely reread and matched.",
+        "commit": "a9d842846bbc2bcb419b9c2e69bd0b9c91126ab3",
+        "source": "Source terminal receipt owns subsequent final verification."
+      },
+      {
+        "claim": "Stable Target README saved and reread before Handoff binding.",
+        "commit": "4892ca6467d8ecba400f1e9679bb0e5cc27aa67f",
+        "blob": "e28a1ac9673c10f27d284bce1e0773d86d66802d"
+      },
+      {
+        "claim": "Target Handoff saved and reread before this initial State.",
+        "commit": "358afc3f0acf9f72281bbc266ba5e0aaaff24d28",
+        "blob": "4fb17d3e50b4a424e83ee64939134b126a20a213"
+      }
+    ],
+    "limited_validation": [
+      {
+        "claim": "Portal initial-release validation covered six independent contexts and ten responses.",
+        "source": "ark-recall-portal/README.md §6; ark-recall-portal/tests/recall-cases.json",
+        "boundary": "Previous scoped validation, not this transition's actual Target boot, natural auto-selection, all-AI compatibility or real-life effect."
+      },
+      {
+        "claim": "Current installed map body passed canonical format validation and distribution body/references match installed sources.",
+        "source": "ark-project/ark28/ark28-01/state.json progress.next_transition",
+        "boundary": "Unchanged distribution, not a new behavioral release or installation."
+      }
+    ],
+    "candidate": [
+      {
+        "claim": "回答を必要としない初手を先に決め、AIへの送信を開始の合図にする。",
+        "source": "Source records start-method-candidate / transition-s13",
+        "boundary": "Specific scene fit, adoption, execution and effect are not confirmed."
+      },
+      {
+        "claim": "想起の入口と現在地回復の連携が、必要時の再接続を助ける。",
+        "source": "Source records portal-map-relation",
+        "boundary": "Human共通軸理解を保持。常時同時起動や生活効果の実証ではない。"
+      }
+    ],
+    "unknown": [
+      "Actual Ark28:02 full-read and reconstruction by receiving AI",
+      "Human thread creation, paste, title application and access",
+      "Start-method candidate real-world feedback",
+      "Portal natural automatic selection, B-state life benefit and long-term effects"
+    ],
+    "boundary": "Human adoption/report, tool verification, limited checks, real explicit use, Target reconstruction, Human UI/access and field effects are separate. Silence is neither success nor failure."
+  },
+  "deferred": [
+    {
+      "branch": "具体的な開始方法候補",
+      "treatment": "Current Humanが選んだ場面で扱う。Bootで開始・試行しない。"
+    },
+    {
+      "branch": "Portalの実生活Feedbackと改善",
+      "treatment": "初版完成を保持し、現実のFeedbackが得られた時に必要な改善へ。毎回報告や試験を要求しない。"
+    },
+    {
+      "branch": "Navigatorの表示・操作改善",
+      "treatment": "同じNode & Edgeの意味と視認性を保持。全場面で固定タブを強制しない。"
+    },
+    {
+      "branch": "Mainへの差分合流",
+      "treatment": "任意。現在の相手のRuntime・権限を確認し、必要な意味だけを渡す。"
+    },
+    {
+      "branch": "MainのGitHub作業、Reset、過去Task、その他Project",
+      "treatment": "現在の所有者と承認に残す。この移行では自動開始しない。"
+    }
+  ],
+  "progress": {
+    "source_prepared": "CONTENT_COMPILED",
+    "remote_verification": {
+      "status": "SOURCE_TERMINAL_RECEIPT_OWNS_FINAL_OBSERVATION",
+      "path": "ark-project/ark28/ark28-01/state.json",
+      "section": "progress.next_transition",
+      "minimum_revision": 4,
+      "note": "This State is initialized before its own remote reread. Source records the result after rereading triad and support routes; no self-hash."
+    },
+    "actual_target_reconstruction": "NOT_OBSERVED",
+    "human_thread_and_access": "NOT_OBSERVED",
+    "human_title_application": "NOT_OBSERVED",
+    "field_effects": "NOT_OBSERVED_FOR_THIS_TARGET"
+  },
+  "eof_sentinel": "ARK28_02_STATE_EOF_v001"
+}
