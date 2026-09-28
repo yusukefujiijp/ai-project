@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.13.1
+version: v0.14.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-27
+updated: 2026-09-28
 ---
 # Ark Shared Skills Hub
 
@@ -18,6 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
@@ -87,6 +88,10 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 2026-09-27、YusukeJPの運用説明とスキルのLiving Review依頼を受け、AI assistantがSweet Spot・下降系列・両手から片手への切替を区別して結ぶ手順を改訂しました。Sweet Spotが起点と切替基準を兼ねる意味、後続確認による未確認状態の解消、系列の確認済み起点も含めた読出しを本文へ反映しています。本人が選んだ運用として扱い、固定の重量・日付・JSONの詳細仕様はスキルへ複製しません。実データと保存形式は[chocoZAP記録入口](../chocozap/README.md)が所有します。通常報告のたびの自動改訂ではなく、共通手順の不足が見つかり、改訂が依頼・承認された範囲で反映します。
 
 改訂本文を明示的に読ませた二つの独立AI文脈で、計三応答を確認しました。一つは仮想の重量列を未確認の起点・切替として受け取り、続く本人確認からSweet Spotと両手→片手の流れを復元し、未報告の中間重量を追加しませんでした。もう一つは保存済みの2026-09-27の記録と後続Feedbackから八条件のSweet Spotとチェストプレスの切替を読み出し、未報告の使い方を残しました。形式検査も通過し、表示設定は同じ用途を表すため維持しています。限定した読解・応答確認であり、自然な自動選択、全AI互換性、運動効果や時短の実証とは区別します。
+
+2026-09-28、Ark28:01でHumanが承認した二場面の初版計画から、`ark-recall-portal`を追加しました。旧称はArk Recall Hubです。用途そのものを忘れた状態でも「何ができるか」と実際の記録の例から入れる想起の入口を優先し、場面が分かる入力には直接応じます。反省の事実はThread経験原本、取り出しやすい項目はPortalのitems、共通運用はPortal README、呼出しはSkillへ分けます。現在地mapは必要時の接続先であり、今回その本体を変更・再配布したとは扱いません。初期の二場面は成長の上限ではありません。
+
+共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
 ## 3. Mobile / explicit entry
 
@@ -212,4 +217,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.13.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.14.0

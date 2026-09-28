@@ -1,0 +1,288 @@
+{
+  "format": "ark-recall-items",
+  "format_version": "v001",
+  "revision": 1,
+  "updated": "2026-09-28",
+  "role": "source-linked recall view; not an independent event ledger",
+  "coverage": {
+    "scope": "Ark28:01で選択保存した休日前準備とToken Resetの二場面",
+    "complete_project_history": false,
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。"
+  },
+  "scenes": [
+    {
+      "id": "pre-holiday-preparation",
+      "label": "休日前の買い物・準備"
+    },
+    {
+      "id": "token-reset-preparation",
+      "label": "Token Reset前の教訓"
+    }
+  ],
+  "items": [
+    {
+      "id": "holiday-yogurt",
+      "scene_ids": [
+        "pre-holiday-preparation"
+      ],
+      "label": "休日前にヨーグルトを思い出す",
+      "recall": "休日前の買い物候補として、以前の「ヨーグルトを買っておけばよかった」という反省を取り出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "休日前",
+        "休日前夜",
+        "明日は休み",
+        "休みに備える",
+        "買っておくもの",
+        "買い物",
+        "食材の準備"
+      ],
+      "conditions": {
+        "applies_when": [
+          "休日前の買い物・食材準備を過去の反省から知りたい"
+        ],
+        "do_not_assume": [
+          "現在の在庫",
+          "必要量",
+          "購入の完了",
+          "健康上の目的",
+          "毎回必ず購入すべきという恒久命令"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "holiday-yogurt-reflection"
+          ],
+          "source_ids": [
+            "recall-s06"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "reset-early-transition",
+      "scene_ids": [
+        "token-reset-preparation"
+      ],
+      "label": "Thread移行の準備を早める",
+      "recall": "Reset情報を受けた段階で、必要なThread移行の準備を早めておきたかったという本人の反省を思い出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "Token Reset",
+        "トークンリセット",
+        "リセット告知",
+        "利用枠",
+        "Thread移行",
+        "引継ぎ"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Reset前の準備や過去の対応を振り返る"
+        ],
+        "do_not_assume": [
+          "今回も移行が必要",
+          "現在の移行先と実行権限",
+          "Resetの確定時刻",
+          "告知からの猶予時間"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "reset-early-transition",
+            "reset-timing-uncertainty"
+          ],
+          "source_ids": [
+            "recall-s01",
+            "recall-s04"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "reset-before-sleep",
+      "scene_ids": [
+        "token-reset-preparation"
+      ],
+      "label": "眠る前にも準備を残せるようにする",
+      "recall": "利用枠を残して眠り、起床時にはResetされていたとの報告を思い出す。必要な準備や文脈保存を起きている間に進められるか考える。",
+      "status": "active",
+      "retrieval_hints": [
+        "寝落ち",
+        "起きたらリセット",
+        "Reset前",
+        "利用枠が残る"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Reset対応が睡眠や生活の区切りに間に合わなかった経験を活かす"
+        ],
+        "do_not_assume": [
+          "今も眠い",
+          "現在の残量",
+          "睡眠を削る必要",
+          "利用枠を使い切ることが目的"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "reset-sleep-report",
+            "reset-timing-uncertainty"
+          ],
+          "source_ids": [
+            "recall-s03",
+            "recall-s04"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "reset-purposeful-work",
+      "scene_ids": [
+        "token-reset-preparation"
+      ],
+      "label": "使うなら意味のある作業へつなぐ",
+      "recall": "本人は以前、GitHub整理整頓への活用を考えたと回想している。現在も必要で承認された作業があるかを確認する材料にする。",
+      "status": "active",
+      "retrieval_hints": [
+        "Tokenの活用",
+        "GitHub整理",
+        "何を進める",
+        "成果を残す"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Reset前にどんな作業へ活用するか検討する"
+        ],
+        "do_not_assume": [
+          "Ark27の過去Taskを今実行してよい",
+          "無目的な大量消費",
+          "古い作業が現在も未完了",
+          "同時作業数を増やせば必ず良い"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "reset-purpose-and-forgetting"
+          ],
+          "source_ids": [
+            "recall-s05"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "reset-settings-review",
+      "scene_ids": [
+        "token-reset-preparation"
+      ],
+      "label": "利用できるAI設定を目的に合わせて見直す",
+      "recall": "本人は普段使わないultraや高速等も活かしたかったと述べた。設定の現行可否と用途への適合が必要なら確認して判断する。",
+      "status": "active",
+      "retrieval_hints": [
+        "ultra",
+        "高速",
+        "推論設定",
+        "Resetの機会"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Reset前のAI活用方法を検討し、設定の選択が判断に関係する"
+        ],
+        "do_not_assume": [
+          "当時の名称が現在も同じ",
+          "現在のプランで選べる",
+          "AIが無断で設定を変更できる",
+          "高速や大量消費そのものが成果"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "reset-settings-review"
+          ],
+          "source_ids": [
+            "recall-s02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "reset-lessons-retention",
+      "scene_ids": [
+        "token-reset-preparation"
+      ],
+      "label": "今回の教訓と未完の文脈を残す",
+      "recall": "以前の詳細や記録すべきことを忘れたという報告を受け、今回の判断・反省・残点を、許可された保存範囲で後から辿れる形にする。",
+      "status": "active",
+      "retrieval_hints": [
+        "前回を忘れた",
+        "反省",
+        "教訓",
+        "記録",
+        "次回に活かす"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Reset対応の前回の教訓を思い出す、または今回の反省を今後へ残す"
+        ],
+        "do_not_assume": [
+          "本人が忘れた詳細をAIが完全復元できる",
+          "この会話の受領だけで永続保存済み",
+          "保存依頼だけで別Taskも承認済み"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "reset-purpose-and-forgetting",
+            "portal-capture"
+          ],
+          "source_ids": [
+            "recall-s05",
+            "recall-s07"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    }
+  ]
+}

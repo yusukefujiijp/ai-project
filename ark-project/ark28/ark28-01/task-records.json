@@ -1,0 +1,397 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark28-01-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-09-28",
+  "updated": "2026-09-28",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark28:01",
+    "canonical_path": "ark-project/ark28/ark28-01/task-records.json",
+    "reported_date": null,
+    "timezone": null,
+    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "経験原本でありRuntime・Handoff・Current Stateではない。保存された承認や過去のTaskは現在の新命令ではない。",
+    "source_access": "このThreadで可視だったHuman発言の連続抜粋、または明示した編集要約。外部メッセージID・会話URLは付与しない。ChatGPT長期メモリからの輸出ではない。",
+    "extensions": {
+      "record_cutoff": "2026-09-28、Portal初版計画へのHuman実行承認までの必要部分。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "休日前ヨーグルトの反省",
+      "Token Resetの準備・利用・忘却についての本人の振り返り",
+      "B状態中心、入口最優先、自然な蓄積、命名、mapとの関係、段階的成長の意味"
+    ],
+    "excludes": [
+      "Thread全会話",
+      "以前のmap実装の全記録",
+      "正確な利用枠履歴やReset時刻",
+      "現在の身体状態",
+      "今回実装後の実生活効果",
+      "ChatGPT長期メモリ"
+    ],
+    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。"
+  },
+  "sources": [
+    {
+      "id": "recall-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。Token Reset後の振り返り。正確な発言日時は未付与。",
+      "excerpt": "今回の反省としてはできる限り、Thread移行時のToken消費は時間とToken消費率は高いので、事前にToken Reset情報が期待時点でなるべく、Thread移行を済ませておくべきだった！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "移行準備を早めたいという本人の振り返り。所要時間や消費量の実測ではない。"
+    },
+    {
+      "id": "recall-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。同じToken Reset振り返りの設定に関する発言。",
+      "excerpt": "あとはChatGPT6 Astraのultraや高速と言った普段使わない高速大量Token消費コマンドをこの時こそ使っておくべきだった！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "製品機能・設定可否・性能の確認資料ではない。利用枠消費そのものを目的にする規則ではない。"
+    },
+    {
+      "id": "recall-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。寝落ち後にResetを知ったとの報告。正確な出来事の日付は未付与。",
+      "excerpt": "今回も\"ChatGPT Pro Plan(x5)\"で週次制限50%以上残した上で寝落ちして起床時にはすでにToken Resetされていた！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の報告。利用履歴の独立確認や現在のプラン情報ではない。"
+    },
+    {
+      "id": "recall-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。Token Reset告知の時刻・方式の不明瞭さについての発言。",
+      "excerpt": "\"X(旧Twitter)\"上でのいわゆるTibo Reset(OpenAI Tibo氏アカウントによる告知)はToken Resetするとはいうもののイマイチ何時とかバンクドリセットなのか即時Resetなのか？等は曖昧です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当時の本人の認識。今後のResetの発生・日時・方式を保証しない。"
+    },
+    {
+      "id": "recall-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。過去のReset対応とArk27のGitHub整理についての振り返り。",
+      "excerpt": "そして、前回も失敗して、確かGitHub整理整頓にTokenを活用しようとして今Ark27はGitHub整理整頓関連に集中しゾーン状態にある！しかし、詳細や記憶して記録するべき事は既に忘れている！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "「確か」を含む本人の回想。当時のMainの活動を、現在の新しい作業命令へ変えない。"
+    },
+    {
+      "id": "recall-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。休日前の反省を例示した発言。後の説明でも同じ文が引用された。",
+      "excerpt": "休日前準備でヨーグルトを買っとけば良かった！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "代表的な反省として提示された。特定日・回数・量・現在在庫は不明。同文の再引用を別の買い忘れに数えない。"
+    },
+    {
+      "id": "recall-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。ヨーグルトを例に、反省を少しずつ蓄積する意図を説明した発言。",
+      "excerpt": "人間側は殆ど意識せずこのような、反省点をAI側が上手く工夫して、蓄積させていきつつUser側の様々なQueryに対応するという意味合いです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "recall-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。本人が日時を明記したB状態の報告。",
+      "excerpt": "そうですね！(That's right!)特に今2026/09/27 21:00はB状態であり何もかも忘れる忘却方面へシフトしています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の自己報告であり医学的診断ではない。この時刻の報告から後日の状態を推定しない。"
+    },
+    {
+      "id": "recall-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。主な利用場面をB状態へ絞ったCorrection。",
+      "excerpt": "しかし、A状態では、Ark Recall Hubはあまり使わないのでB状態での活用がメインです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "recall-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。用途そのものを忘れることと入口の優先順位を訂正した発言。",
+      "excerpt": "何度も言うようにArk Recall Hubで何ができるか部分がArk Recall Hubの入り口です！\n入り口が最重要です！そこさえ上手く工夫して、入れれば派生して思い出す事ができるからです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "recall-s11",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。2026-09-28の名称・GitHub配置に関する発言。",
+      "excerpt": "Ark Recall HubからArk Recall Portalへの命名変更を受け、Humanは旧ark-recall-hub/を削除し、ark-recall-portal/README.mdを作成したと報告した。",
+      "excerpt_kind": "paraphrase",
+      "note": "AIによる編集要約。原文引用ではない。"
+    },
+    {
+      "id": "recall-s12",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。2026-09-28、mapとPortalの共通軸についてのHumanの解釈。",
+      "excerpt": "これは我々Ark Projectがつい最近作成したmap-ark-current-positionとDouble-Spiral的であり我々Ark ProjectがAI側に求める中心軸は同じかとても似ています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが共通性を見いだしたとの記録。連携の実装・実生活効果の証明ではない。"
+    },
+    {
+      "id": "recall-s13",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。2026-09-28 21:26 JSTの初版実行承認に伴う成長方針。",
+      "excerpt": "取り敢えず、一旦、此処まで完成させてから徐々にFeedback等で修正改善する事が\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "recall-s14",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01の可視対話。2026-09-28 21:26 JST。直前の計画へのExecute GitHub OK / Human Seal OK入力。",
+      "excerpt": "Humanは、直前に提示された二場面の初版計画について、GitHubへの保存・必要な検証・Skill導入を含む実行を承認した。",
+      "excerpt_kind": "paraphrase",
+      "note": "対象を伴う今回の承認の要約。保存された過去の承認文だけで将来の別対象へ権限を拡張しない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "holiday-yogurt-reflection",
+      "kind": "observation",
+      "label": "休日前にヨーグルトを買っておけばよかった",
+      "description": "本人が、忘れてしまう反省を蓄積する具体例としてヨーグルトを提示した。",
+      "scope": "代表的な本人の反省。単発の特定日・現在の在庫・購入義務を確定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s06"
+        ]
+      }
+    },
+    {
+      "id": "reset-early-transition",
+      "kind": "practice_statement",
+      "label": "Reset情報を受けた段階で移行準備を早めたい",
+      "description": "Thread移行をReset前になるべく済ませておくべきだったという本人の振り返り。",
+      "scope": "当時の反省。現在の移行先・残時間・準備状況・実行権限は別に解決する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s01"
+        ]
+      }
+    },
+    {
+      "id": "reset-settings-review",
+      "kind": "practice_statement",
+      "label": "利用できるAI設定も機会に合わせて考えたい",
+      "description": "本人は普段使わないultraや高速等の設定を、この機会に活かしたかったと述べた。",
+      "scope": "本人の希望の記録。現在の製品仕様や優位性、無条件の設定切替を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s02"
+        ]
+      }
+    },
+    {
+      "id": "reset-sleep-report",
+      "kind": "observation",
+      "label": "利用枠を残して眠り、起床時にはResetされていた",
+      "description": "本人は週次制限50%以上を残して寝落ちし、起床時にはResetされていたと報告した。",
+      "scope": "当時の報告。正確なリセット時刻や現在の利用枠はUnknown。睡眠を削る指示ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s03"
+        ]
+      }
+    },
+    {
+      "id": "reset-timing-uncertainty",
+      "kind": "observation",
+      "label": "Reset告知の時刻・方式は不明瞭だった",
+      "description": "本人はTibo氏の告知について、時刻や方式が曖昧と説明した。",
+      "scope": "当時の本人認識。現在の告知や将来のResetを確認済みとしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s04"
+        ]
+      }
+    },
+    {
+      "id": "reset-purpose-and-forgetting",
+      "kind": "observation",
+      "label": "GitHub整理への活用意図と、過去の教訓の忘却",
+      "description": "本人は過去にGitHub整理へTokenを活用しようとしたことを回想し、記録すべき詳細を既に忘れたと述べた。",
+      "scope": "「確か」を含む回想。Ark27の過去作業を自動再開せず、未保存の詳細を創作しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s05"
+        ]
+      }
+    },
+    {
+      "id": "portal-capture",
+      "kind": "practice_statement",
+      "label": "自然な反省を少しずつ蓄積する",
+      "description": "Humanの入力負担を増やさず、反省をAIが蓄積し、様々なQueryから利用できるようにしたい。",
+      "scope": "今回の想起支援設計。受領と保存の区別、現在の実行Scopeを維持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s07"
+        ]
+      }
+    },
+    {
+      "id": "portal-b-primary",
+      "kind": "decision",
+      "label": "主な利用場面をB状態に置く",
+      "description": "A状態で既にできている想起より、B状態で必要なことを思い出せない部分へ資源を集中する。",
+      "scope": "Skill起動にB状態の自己診断や申告を要求する意味ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s08",
+          "recall-s09"
+        ]
+      }
+    },
+    {
+      "id": "portal-entry-first",
+      "kind": "decision",
+      "label": "何ができるかを示す入口を最優先する",
+      "description": "用途を思い出せないHumanにも、使い道と実例を示して想起の手掛かりを届ける。",
+      "scope": "検索以前の入口。Humanに検索語や過去の内容の再構成を先に要求しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s10"
+        ]
+      }
+    },
+    {
+      "id": "portal-name",
+      "kind": "decision",
+      "label": "Ark Recall Portalへの名称と配置の変更",
+      "description": "Ark Recall Hubは形成過程の旧称として保持し、現行名をArk Recall Portalとする。",
+      "scope": "同じ構想の継続。別のHubシステムや旧フォルダを増設しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s11"
+        ]
+      }
+    },
+    {
+      "id": "portal-map-relation",
+      "kind": "practice_statement",
+      "label": "mapとの共通軸・Double-Spiral的関係",
+      "description": "Humanは想起の入口と現在地把握に、共通または近い中心軸を見いだした。",
+      "scope": "共通性についてのHuman解釈。両Skillの常時同時起動や同一化の命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s12"
+        ]
+      }
+    },
+    {
+      "id": "portal-incremental-growth",
+      "kind": "decision",
+      "label": "初版を完成させ、Feedbackから徐々に育てる",
+      "description": "Humanは、今回の範囲をまず完成させてから、実際のFeedbackにより修正改善する方向を採用した。",
+      "scope": "無限拡張ではなく今回の初版。実運用の成果は未観測。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s13",
+          "recall-s14"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-yogurt-capture",
+      "from": "holiday-yogurt-reflection",
+      "to": "portal-capture",
+      "relation": "motivates",
+      "scope": "反省を積み重ねるHumanの具体例。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s06",
+          "recall-s07"
+        ]
+      }
+    },
+    {
+      "id": "e-b-entry",
+      "from": "portal-b-primary",
+      "to": "portal-entry-first",
+      "relation": "motivates",
+      "scope": "必要な内容だけでなく使い道も忘れる場面への設計。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "recall-s09",
+          "recall-s10"
+        ]
+      }
+    },
+    {
+      "id": "e-forgotten-recall",
+      "from": "reset-purpose-and-forgetting",
+      "to": "portal-capture",
+      "relation": "motivates",
+      "scope": "過去の反省が次の場面に届かないという接続の問題。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "recall-s05",
+          "recall-s07"
+        ],
+        "note": "異なる発言を、想起と保存の接続という共通構造としてAIが整理した。"
+      }
+    }
+  ],
+  "open_questions": [],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-09-28",
+        "reason": "Humanが承認したArk Recall Portal初版の根拠を、既存のThread経験形式で選択保存。"
+      }
+    ]
+  }
+}

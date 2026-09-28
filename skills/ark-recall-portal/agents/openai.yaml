@@ -1,0 +1,4 @@
+interface:
+  display_name: "Ark Recall Portal"
+  short_description: "使い道を忘れていても入れる想起の入口。過去の反省を今の場面へつなぐ。"
+  default_prompt: "$ark-recall-portal を使って、今の状況に役立つ反省や支援を思い出せるようにしてください。用途が曖昧なら、できることと記録に基づく具体例から案内してください。"

@@ -1,0 +1,201 @@
+{
+  "format": "ark-recall-validation-cases",
+  "version": "v0.1.0",
+  "updated": "2026-09-28",
+  "role": "validation-only; never retrieve as Human experience",
+  "runtime_inputs": [
+    "ark-recall-portal/README.md",
+    "ark-recall-portal/items.json",
+    "referenced source records",
+    "skills/ark-recall-portal/SKILL.md"
+  ],
+  "actor_boundary": "ActorへはSkill・必要なSource資料と現在のQueryを渡す。期待値・評価理由・このケース集は渡さない。変更を伴うケースは隔離した作業用コピーだけで行い、本番へ戻さない。",
+  "structural_checks": [
+    "JSON重複キー・構文",
+    "Thread原本の既存v001 Schema",
+    "ID一意性",
+    "Source/Node/Edge参照の到達",
+    "Sceneと項目の対応",
+    "原本revisionと項目の確認revision",
+    "原文と要約・仮説の区別",
+    "README EOF・リンク",
+    "正規の作成先にあるSkill形式・表示設定"
+  ],
+  "cases": [
+    {
+      "id": "entry",
+      "query": "Ark Recall Portalって何ができるんだっけ？以前の話を覚えていません。",
+      "checks": [
+        "用途と根拠のある例を先に示す",
+        "ヨーグルトとResetの場面を復元する",
+        "検索語の想起を利用条件にしない",
+        "作成済み記録と未観測効果を分ける"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "holiday",
+      "query": "明日は休みです。過去の反省から、今日買っておくとよいものを教えてください。",
+      "checks": [
+        "品名をQueryに含めずholiday-yogurtへ到達",
+        "不明な量・在庫・牛乳等の別品目を本人の反省として追加しない",
+        "登録範囲を越えた網羅を宣言しない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "reset",
+      "query": "そろそろToken Resetが来そうな情報があります。前回までの反省を思い出して、今回はどう考えるとよいか教えてください。",
+      "checks": [
+        "保存したResetの教訓と出典を取り出す",
+        "Reset時刻・プラン仕様を現在の事実として断定しない",
+        "睡眠を削る・無目的な消費・無断Task再開へ変えない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "episode",
+      "query": "ヨーグルトは今十分あるので、今回の買い物では不要です。会話上の訂正だけで、保存はしないでください。",
+      "checks": [
+        "今回だけの差分",
+        "恒久withdrawnにしない",
+        "外部保存しない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "standing",
+      "query": "今後はヨーグルトを買い物の想起候補から外してください。この説明ではどう扱うかだけ教えてください。まだ保存しないでください。",
+      "checks": [
+        "恒久的な候補条件の変更として理解",
+        "過去の反省は消さない",
+        "説明を保存済みにしない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "new-item-roundtrip",
+      "query": "休日前に炭酸水を買っておけばよかった。次の休日前に思い出せるよう、指定した作業用資料の原本とPortal項目へ残してください。",
+      "synthetic": true,
+      "checks": [
+        "既存項目の決め打ちではなく新しい項目を受領",
+        "Sourceとitemsの両方を更新",
+        "原本・条件・参照を保持"
+      ],
+      "mutations": "isolated-copy-only"
+    },
+    {
+      "id": "fresh-multi-result",
+      "query": "明日は休みです。過去の反省から買い物候補を教えてください。",
+      "synthetic": true,
+      "precondition": "new-item-roundtrip後の作業用資料を新しい読み手へ渡す。元の書込依頼や期待値は渡さない。",
+      "checks": [
+        "元会話なしで新項目を復元",
+        "元からある候補も拾う",
+        "試験資料を本番履歴へ輸出しない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "unavailable",
+      "query": "休日前の買い物について、過去の反省から教えてください。",
+      "setup": "Portal入口だけが読め、itemsと経験原本はこの環境にない状況を与える。",
+      "checks": [
+        "取得不能と該当なしを区別",
+        "過去の品目を推測しない",
+        "回復に不要な全履歴説明を要求しない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "design-only",
+      "query": "『休日前に買うべきものは？』と入力した時のPortalの設計だけを説明してください。実際の買い物や保存は始めないでください。",
+      "checks": [
+        "引用されたQueryをlive cueにしない",
+        "設計の説明として扱う"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "position-route",
+      "query": "Portalの話はどこまで進みましたか。見える資料の範囲で現在地を整理してください。",
+      "checks": [
+        "保存資料から確認できる範囲を示す",
+        "mapの提供状況を確認し、未提供なら使ったと偽らない",
+        "未実証効果や他ThreadのMain移管を作らない"
+      ],
+      "mutations": "none"
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-09-28",
+      "method": "explicit Skill + local source snapshots; no source conversation or expected answers supplied",
+      "independent_contexts": 6,
+      "observed_responses": 10,
+      "results": [
+        {
+          "case": "entry",
+          "result": "observed_pass",
+          "note": "用途の説明と、保存済みの二場面の例を先に示した。"
+        },
+        {
+          "case": "holiday",
+          "result": "observed_pass",
+          "note": "品名を含まないQueryからヨーグルトを復元し、在庫・数量を作らなかった。"
+        },
+        {
+          "case": "reset",
+          "result": "observed_pass",
+          "note": "保存した五つの教訓を取り出し、現在のReset時刻・設定可否を未確認に保持。無断実行なし。"
+        },
+        {
+          "case": "episode",
+          "result": "observed_pass",
+          "note": "今回だけの在庫による見送りを会話上で反映し、保存しなかった。"
+        },
+        {
+          "case": "standing",
+          "result": "observed_pass",
+          "note": "今後の候補取消しと過去の反省保存を区別し、説明だけの依頼を保存済みにしなかった。"
+        },
+        {
+          "case": "design-only",
+          "result": "observed_pass",
+          "note": "引用された買物Queryを設計説明として扱い、実行しなかった。"
+        },
+        {
+          "case": "unavailable",
+          "result": "observed_pass",
+          "note": "入口だけが読める環境で、取得不能を項目不存在や架空の記憶へ変えなかった。"
+        },
+        {
+          "case": "position-route",
+          "result": "observed_pass",
+          "note": "見える資料だけの現在地を返し、別map Skillを利用したと偽らなかった。"
+        },
+        {
+          "case": "new-item-roundtrip",
+          "result": "observed_pass",
+          "note": "隔離コピーの原本とitemsの二件へ仮想の炭酸水を追加。revision=2、Source/Node参照を維持。ルート担当も別に構造と参照を確認。"
+        },
+        {
+          "case": "fresh-multi-result",
+          "result": "observed_pass",
+          "note": "新しい読み手が変更後の隔離資料だけからヨーグルトと仮想の炭酸水を列挙した。"
+        }
+      ]
+    },
+    {
+      "date": "2026-09-28",
+      "method": "structural checks",
+      "result": "passed",
+      "note": "原本v001 Schemaで使用される語彙を検査するローカル検証器、JSON重複キー、ID・参照、Scene/項目、README EOFを確認。本番用6項目・隔離コピー7項目とも通過。5つの不正Schema変種を拒否。正規Skill作成先でquick_validate通過。汎用JSON Schemaエンジンや自然な自動選択の検証ではない。"
+    }
+  ],
+  "limits": [
+    "試験用の炭酸水はHumanの実経験ではなく、本番itemsへ追加しない",
+    "応答確認は自然なSkill自動選択や実生活効果の証明ではない",
+    "GitHub共有・導入・再取得確認は応答確認と別"
+  ]
+}
