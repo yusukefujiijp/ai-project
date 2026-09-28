@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-01-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-09-28",
-  "updated": "2026-09-28",
+  "updated": "2026-09-29",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark28:01",
     "canonical_path": "ark-project/ark28/ark28-01/task-records.json",
     "reported_date": null,
     "timezone": null,
-    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。",
+    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験原本でありRuntime・Handoff・Current Stateではない。保存された承認や過去のTaskは現在の新命令ではない。",
     "source_access": "このThreadで可視だったHuman発言の連続抜粋、または明示した編集要約。外部メッセージID・会話URLは付与しない。ChatGPT長期メモリからの輸出ではない。",
     "extensions": {
-      "record_cutoff": "2026-09-28、Portal初版計画へのHuman実行承認までの必要部分。"
+      "record_cutoff": "2026-09-29 07:00 JST、Ark28:01→Ark28:02移行準備計画の実行承認までの選択記録。実際のTarget02受入れは含めない。"
     }
   },
   "coverage": {
@@ -28,7 +28,10 @@
     "includes": [
       "休日前ヨーグルトの反省",
       "Token Resetの準備・利用・忘却についての本人の振り返り",
-      "B状態中心、入口最優先、自然な蓄積、命名、mapとの関係、段階的成長の意味"
+      "B状態中心、入口最優先、自然な蓄積、命名、mapとの関係、段階的成長の意味",
+      "開始時の締切理論、mapとNavigatorの採用・表示訂正・Next step",
+      "Portal初版の保存・導入に関する観測と、09/29の明示呼出し・Human評価",
+      "Ark28:01→02同章継続の計画承認と境界"
     ],
     "excludes": [
       "Thread全会話",
@@ -38,7 +41,7 @@
       "今回実装後の実生活効果",
       "ChatGPT長期メモリ"
     ],
-    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。"
+    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。"
   },
   "sources": [
     {
@@ -162,6 +165,139 @@
       "excerpt": "Humanは、直前に提示された二場面の初版計画について、GitHubへの保存・必要な検証・Skill導入を含む実行を承認した。",
       "excerpt_kind": "paraphrase",
       "note": "対象を伴う今回の承認の要約。保存された過去の承認文だけで将来の別対象へ権限を拡張しない。"
+    },
+    {
+      "id": "transition-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01冒頭、補助場の用途・将来的重要性についてのHuman説明。日時未付与。",
+      "excerpt": "Ark27がGitHub整理整頓に集中しているため、他の問題をArk28で扱う意味を説明した。GitHub整理以外の多くがこちらへ移れば、将来Mainに近い役割になる可能性もあるとして、方法・方法論の柔軟さを最重要とした。",
+      "excerpt_kind": "paraphrase",
+      "note": "将来可能性と用途の広がり。正式なMain所有権移管の承認ではない。"
+    },
+    {
+      "id": "transition-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、中心軸と開始時の締切理論への重点を示したHuman入力。日時未付与。",
+      "excerpt": "Ark Projectの中心(中央部・核・芯・丹田・軸)は根本的には**Teshuvah**です！もちろん主イェシュアがrootですが、私(YusukeJP)人間側がやるべき主題は**Teshuvah**であり、そこからの学びや教訓や様々な展開こそが重要です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "transition-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、Humanが繰り返し提示した締切理論〈開始時〉のSeed。日時未付与。",
+      "excerpt": "締切理論(開始時): Ark Projectにおいて、行動に必要な判断ができ安全に移れる場面では、進行中のAI対話・思考・作業がキリよく終わることを開始条件にせず、思い立った時点で実行可能な初手へ接続し、未完の文脈を保持して現実のFeedbackを次の判断へ返すAction-Firstの方針であり、開始時刻の設定だけや全ての思い付きの即実行を意味せず、終了時の締切がある程度機能する現在、開始の難所を重点的に改善するためのSeed",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが採用・重点化したArk上の方針。Elon Musk本人の発言の逐語引用や、普遍的実証の記録ではない。"
+    },
+    {
+      "id": "transition-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、Treeの実例を引用した後の採用宣言。日時未付与。",
+      "excerpt": "↑とても分かりやすく\"Simple is best!\"で素晴らしいのでmap-ark-current-positionに採用です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "対象は枝・状態・現在地を一緒に示すTree。候補・採用・実行の区別が読み取れる例への評価。"
+    },
+    {
+      "id": "transition-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、Node & Edge表も採用すると述べた直後の理由。日時未付与。",
+      "excerpt": "なぜなら、現在進行形のArk Project全体を貫くFormatなので、とても分かり易いからです！\nAI側が忘れている時があるのでAI側がこの表の重要性を思い出す意味合いでも優れた**複数問題同時解決**です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "transition-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、Navigatorの視野切替・枝・Node枠・Edgeラベルに対する一連のFeedback。日時未付与。",
+      "excerpt": "Humanはタップで全体・今の枝・問いを切り替えられる方式を評価した。細い枝、見えにくいNode枠、図下の読みにくい文字列を改善対象にし、改善後の枝・Node枠とEdgeへの関係ラベルを評価した。現在地は星印なしの「現在地」へ訂正し、NavigatorをNode & Edgeの別表現として捉えた。",
+      "excerpt_kind": "paraphrase",
+      "note": "複数発言の編集要約。操作の全環境検証や生活上の効果ではない。天地創造、とくに第一日は表示実験の題材。"
+    },
+    {
+      "id": "transition-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、mapとNext stepの相性を評価した後の明示採用。日時未付与。",
+      "excerpt": "map-ark-current-positionスキルの最終セクションはNext stepセクションを必ず挿入する事にしよう！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "transition-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-29 05:23 JSTの入力（ユーザー時刻メタデータ）。Portal初版の完成後。",
+      "excerpt": "$ark-recall-portal 今、何ができますか？ 具体例から案内してください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "実際の明示呼出し。B状態の申告や、自然な自動選択の観測ではない。"
+    },
+    {
+      "id": "transition-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、Portal案内後の2026-09-29 06:46 JST入力。",
+      "excerpt": "最高です！(101/100: It's the best!)\nキリが良い為、次Thread移行しよう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前案内後のHuman評価とThread移行意向。この入力では移行準備のPlan Modeを依頼しており、実行承認は後続入力。"
+    },
+    {
+      "id": "transition-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-29 07:00 JST入力。直前の移行準備計画に続くExecute GitHub OK / Human Seal OK。",
+      "excerpt": "HumanはArk28:01→Ark28:02の同章継続準備について、Source記録・Harvest・State、現行mapの共有保存、Target三点セット、補助入口更新、検証、Human向け引渡しを含む直前の計画を実行承認した。",
+      "excerpt_kind": "paraphrase",
+      "note": "今回の限定Scope。実際のTarget受入れ・Human UI操作、Main移管、生活Taskや次Trialの自動実行は含まない。"
+    },
+    {
+      "id": "transition-s11",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01のPortal実装後のTool結果と、2026-09-29の現行main照合。",
+      "excerpt": "Portal初版はcommit ab1b62b562bac3ef92a127f28dce42e26668a702の七ファイルとして保存され、各保存先の再取得と意図した本文の一致を確認した。利用環境のark-recall-portal登録本文も確認した。限定検証の範囲はPortal README §6とケース集に記録されている。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/ab1b62b562bac3ef92a127f28dce42e26668a702",
+      "note": "保存・導入の観測であり、全AI・自然な自動選択・実生活効果の証明ではない。"
+    },
+    {
+      "id": "transition-s12",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "2026-09-29、導入済みmap-ark-current-positionの本文・参照二件・表示設定の全文読解と現行Repository tree確認。",
+      "excerpt": "現行map本文にはTree・Node & Edge表・星印なしの現在地・Navigator参照・最終Next stepを確認した。本文SHA-256は259675f2e3982606f8f13f69dc0b45e8eb53bef6039629e3b5f18f7028149910。調査基点ab1b62bのGitHubには同名の共有Skill本文が存在せず、今回の計画で内容を変えずに共有することになった。",
+      "excerpt_kind": "paraphrase",
+      "note": "共有保存前の観測。共有後のRemote確認はSource Stateのnext_transitionと実際のcommitが所有する。"
+    },
+    {
+      "id": "transition-s13",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、採用したTreeの中で示された開始方法の候補。日時未付与。",
+      "excerpt": "検討中の候補：回答を必要としない初手を先に決め、AIへの送信を開始の合図にする。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが既存説明として引用した候補。Treeの採用を、この方法自体の実行・効果確認へ変換しない。"
+    },
+    {
+      "id": "transition-s14",
+      "speaker": "AI-Collaborator",
+      "medium": "repository_file",
+      "locator": "success-cases/one-skill-entry-multiple-benefits.md v0.2.0、2026-09-29に全文確認。",
+      "excerpt": "Humanは移行、Plan Mode、思い出し系ハブの共通入口を三回目の成功法則と評価し、後続でmapも含めるよう指摘した。資料はHuman評価と設計上の成功を記録し、当時のHub未実装を明記する。これは09/27時点の歴史であり、後続のPortal初版完成を否定しない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ab1b62b562bac3ef92a127f28dce42e26668a702/success-cases/one-skill-entry-multiple-benefits.md"
+    },
+    {
+      "id": "transition-s15",
+      "speaker": "AI-Collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark28:01、2026-09-29 05:23 JSTのPortal呼出しに続く応答。",
+      "excerpt": "AIは現行Portal README、itemsと原本を読み、休日前のヨーグルトとResetの五つの教訓を案内した。過去の反省と現在の在庫・必要量・設定可否を区別し、追加・訂正とmap接続の使い方も説明した。今回は読出しだけで保存・設定変更・別Task開始は行わなかった。",
+      "excerpt_kind": "paraphrase",
+      "note": "この会話内で観測した応答。説明内容の受領と実生活での有効性は別。"
     }
   ],
   "nodes": [
@@ -334,6 +470,204 @@
           "recall-s14"
         ]
       }
+    },
+    {
+      "id": "support-flexibility",
+      "kind": "practice_statement",
+      "label": "Ark28の柔軟な用途と将来可能性",
+      "description": "本流を保持しながら、他の重要な問題・深い対話・方法論を受け取る。重要性が増す可能性もHumanは見ている。",
+      "scope": "正式なMain所有権移管は行われていない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s01"
+        ]
+      }
+    },
+    {
+      "id": "teshuvah-axis",
+      "kind": "practice_statement",
+      "label": "RootとHuman側の中央軸",
+      "description": "Rootは主イェシュア御自身、Human側の主題はTeshuvahとそこからの学び・展開である。",
+      "scope": "Humanの信仰的意味。AIの主権・神意認定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s02"
+        ]
+      }
+    },
+    {
+      "id": "start-deadline-policy",
+      "kind": "decision",
+      "label": "開始時の締切理論を重点化",
+      "description": "必要な判断ができ安全に移れるならキリ待ちを開始条件にせず、初手と未完文脈と現実Feedbackをつなぐ。",
+      "scope": "開始時刻だけの設定、全思い付きの即実行、AI品質低下を意味しない。終了時の締切はある程度機能するというHuman判断。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s03"
+        ]
+      }
+    },
+    {
+      "id": "map-tree-adoption",
+      "kind": "decision",
+      "label": "Treeへ枝・状態・現在地を添える",
+      "description": "何を扱いどこまで進んだかを自然に理解できる共通表示としてHumanが採用した。",
+      "scope": "採用と、全場面での混乱解消の実証を区別する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s04"
+        ]
+      }
+    },
+    {
+      "id": "map-node-edge-adoption",
+      "kind": "decision",
+      "label": "Node & Edge表を共通入口にする",
+      "description": "Humanの関係理解と、AIがGraph Modeの重要性を思い出すことを同時に支える表として採用した。",
+      "scope": "表の存在自体が因果や実地効果の証拠ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s05"
+        ]
+      }
+    },
+    {
+      "id": "navigator-display-corrections",
+      "kind": "decision",
+      "label": "Navigatorの同一意味・視認性・星印廃止",
+      "description": "視野切替、見える枝とNode枠、意味を読めるEdgeを評価し、現在地の星印を廃止した。",
+      "scope": "個々のタブ・配置を全場面の固定方式にしない。図・Tree・表は同じNode & Edgeの別表現。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s06"
+        ]
+      }
+    },
+    {
+      "id": "map-next-step-adoption",
+      "kind": "decision",
+      "label": "mapの最終セクションをNext stepにする",
+      "description": "現在地から次の判断へ接続する最終セクションとしてNext stepを必須にする。",
+      "scope": "map回答での配置。自動実行承認や、すべての会話を新Taskで閉じる規則ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s07"
+        ]
+      }
+    },
+    {
+      "id": "map-current-implementation",
+      "kind": "observation",
+      "label": "導入済みmapの現行本文を確認",
+      "description": "採用表示とNext stepを含む現行Skillおよび参照資料を確認し、共有本文の欠落を今回の移行計画で補う。",
+      "scope": "導入済み本文の観測。GitHub共有の保存確認は今回の後続Receiptへ。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "transition-s12"
+        ]
+      }
+    },
+    {
+      "id": "start-method-candidate",
+      "kind": "interpretation",
+      "label": "回答を必要としない初手と送信の接続候補",
+      "description": "送信前に実行可能な初手を決め、送信を開始の合図にする方法が候補として示された。",
+      "scope": "特定の実場面への適合・採用・実行・効果は未確認。採用済みの品質原則はこの未確認で巻き戻さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s13"
+        ]
+      }
+    },
+    {
+      "id": "portal-release-confirmed",
+      "kind": "observation",
+      "label": "Portal初版の保存・導入確認",
+      "description": "二場面六項目と原本・共通運用・Skill・限定検証を保存し、意図した内容との一致と導入を確認した。",
+      "scope": "限定6文脈10応答の確認と、実Target・自然選択・生活効果を分ける。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "transition-s11"
+        ]
+      }
+    },
+    {
+      "id": "portal-explicit-use",
+      "kind": "observation",
+      "label": "実際のPortal呼出しから具体例を案内",
+      "description": "Humanの明示呼出しを受け、現行記録から用途と実例を返した。",
+      "scope": "自己申告B状態での効果試験ではなく、明示起動・読出し・案内の観測。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s08",
+          "transition-s15"
+        ]
+      }
+    },
+    {
+      "id": "portal-response-praise",
+      "kind": "observation",
+      "label": "案内後の好評価と区切り",
+      "description": "HumanはPortal案内後に最高と評価し、次Threadへ進む意向を示した。",
+      "scope": "好評価の観測。因果・持続効果・全用途の成功へ拡張しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s09"
+        ]
+      }
+    },
+    {
+      "id": "one-entry-success-pattern",
+      "kind": "practice_statement",
+      "label": "一つの入口による複数問題同時解決",
+      "description": "移行・Plan Mode・想起・mapの共通構造を、Humanが成功法則として見出した記録を保持する。",
+      "scope": "入口を一つにすることと、方法・判断・全Skillを一つに固定することは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s14"
+        ]
+      }
+    },
+    {
+      "id": "transition-02-authorized",
+      "kind": "decision",
+      "label": "Ark28:01→02の同章継続準備を承認",
+      "description": "Source成果保存、既存map共有、Target三点セット、補助入口更新、検証と引渡しの計画が承認された。",
+      "scope": "MainはArk27のまま。Target02自身の受入れとHuman UI操作は別段階。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s09",
+          "transition-s10"
+        ]
+      }
     }
   ],
   "edges": [
@@ -382,15 +716,94 @@
         ],
         "note": "異なる発言を、想起と保存の接続という共通構造としてAIが整理した。"
       }
+    },
+    {
+      "id": "e-map-next-step",
+      "from": "map-next-step-adoption",
+      "to": "map-current-implementation",
+      "relation": "observed_before",
+      "scope": "採用発言の後、現行本文への反映を確認した。因果効果や全環境遵守の測定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s07",
+          "transition-s12"
+        ]
+      }
+    },
+    {
+      "id": "e-portal-use-after-release",
+      "from": "portal-release-confirmed",
+      "to": "portal-explicit-use",
+      "relation": "observed_before",
+      "scope": "保存・導入確認後、このThreadで明示呼出しが行われた。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s11",
+          "transition-s08",
+          "transition-s15"
+        ]
+      }
+    },
+    {
+      "id": "e-praise-transition",
+      "from": "portal-response-praise",
+      "to": "transition-02-authorized",
+      "relation": "observed_before",
+      "scope": "案内後の好評価と計画依頼の後、準備の実行承認を受けた。好評価自体を外部変更権限にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s09",
+          "transition-s10"
+        ]
+      }
     }
   ],
-  "open_questions": [],
+  "open_questions": [
+    {
+      "id": "q-start-method-feedback",
+      "subject_refs": [
+        "start-method-candidate"
+      ],
+      "question": "この開始方法候補を、どの現実の場面へ合わせ、どのような結果が得られたか。",
+      "scope": "現在のHumanが再びこの枝を選んだ時に扱う。移行の必須前提や次Trialの自動開始ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "q-portal-real-life-effect",
+      "subject_refs": [
+        "portal-explicit-use",
+        "portal-response-praise"
+      ],
+      "question": "B状態を含む実際の必要場面で、想起・判断・生活がどう変わるか。",
+      "scope": "案内への好評価は保持する。追加報告や試験を毎回要求しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    }
+  ],
   "extensions": {
     "revision_history": [
       {
         "revision": 1,
         "date": "2026-09-28",
         "reason": "Humanが承認したArk Recall Portal初版の根拠を、既存のThread経験形式で選択保存。"
+      },
+      {
+        "revision": 2,
+        "date": "2026-09-29",
+        "reason": "Humanが承認した01→02移行準備。開始支援・map/Navigator・Portal初版と実際の明示呼出しを根拠別に追記。既存Portal参照先は変更なし。"
       }
     ]
   }

@@ -1,0 +1,4 @@
+interface:
+  display_name: Ark現在地マップ
+  short_description: Ark全体と各Threadの重点・進捗・残点を根拠から整理する
+  default_prompt: $map-ark-current-position を使って、Ark Project上の現在地を示してください。今のThreadの進捗と全体の重点・到達点・残点・前回からの変化を、確認できる根拠から整理してください。実際の場所や地名は対象ではありません。

@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-09-25",
-    "updated": "2026-09-25",
+    "updated": "2026-09-29",
     "canonical_path": "ark-project/ark28/ark28-01/state.json",
-    "date_scope": "Source preparation date in UTC; not an observed Human UI or Task time",
-    "change_reason": "Record remote rereads, installed Skill confirmation and limited independent responses; keep actual Human Thread/UI and field effects unobserved."
+    "date_scope": "Current update date in Asia/Tokyo; original creation metadata remains historical. No UI creation time asserted.",
+    "change_reason": "Record subsequent Ark28:01 collaboration, map/Portal material and approved THREAD_CONTINUE preparation; preserve original boot provenance."
   },
   "identity": {
     "source": "Ark27:05",
@@ -53,7 +53,8 @@
       "notifications or background monitoring",
       "physical Reset trials",
       "ChatGPT long-term memory export"
-    ]
+    ],
+    "current_preparation_scope": "Human approved the preceding Ark28:01→Ark28:02 plan: Source records/harvest/state, unchanged installed map distribution, Target triad, support routing and scoped verification. No Main ownership transfer or automatic real-life task."
   },
   "bindings": {
     "runtime": {
@@ -74,11 +75,22 @@
     "domain": {
       "path": "ark-project/README.md",
       "policy": "current routing and paired-preparation policy; preserve explicit Human selection"
+    },
+    "material_harvest": {
+      "path": "ark-project/ark28/ark28-01/harvest.md",
+      "id": "ARK28_01_MATERIAL_HARVEST",
+      "minimum_revision": 1
+    },
+    "experience_record": {
+      "path": "ark-project/ark28/ark28-01/task-records.json",
+      "record_id": "ark28-01-task-records",
+      "format_version": "v001",
+      "minimum_revision": 2
     }
   },
   "now": {
-    "phase": "SOURCE_PREPARED_AWAITING_TARGET_AND_HUMAN_ACCESS",
-    "support_purpose": "本流を保持しながら、B-Gate・軽いTeshuvah・BrainDump等を受け取れる、事前に用意された柔軟なSub。",
+    "phase": "SOURCE01_CURRENT_COLLABORATION_CONFIRMED_TRANSITION02_PREPARING",
+    "support_purpose": "Ark27 Mainを保持し、開始支援・現在地・想起など、現在のHuman依頼に柔軟に応じる。Mainへの正式移管はない。",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
     "existing_input": "Accept any new Human input already supplied; do not ask it again.",
     "local_options": [
@@ -87,8 +99,9 @@
       "defer with meaning retained",
       "selectively reconnect material deltas to current Main"
     ],
-    "live_b_gate": "NOT_REPORTED_IN_THIS_PREPARATION",
-    "main_context": "Source reported successful next-Thread startup and ongoing GitHub work; no authority here to manipulate that Main activity."
+    "live_b_gate": "NOT_INFERRED_FROM_HISTORICAL_REPORTS",
+    "main_context": "Current Domain main route is Ark27:07; preserve current Human designation and Main authority. The old GitHub-work theme is not a command to resume it.",
+    "current_material": "Portal初版の保存・導入後に、Humanが用途の具体例を明示呼出し。案内後の好評価と次Thread移行意向を受けた。現在は承認された移行準備。"
   },
   "evidence": {
     "confirmed_human": [
@@ -101,6 +114,11 @@
         "claim": "Subの柔軟な用途、任意の合流、必要な意味を削らないPromptとAI側カプセル化を指定。",
         "source": "ark-project/ark28/README.md §2 H3-H6",
         "kind": "Human correction and design authority"
+      },
+      {
+        "claim": "開始支援・map/Navigator採用・Portal入口/B状態中心・段階的成長・次Thread準備の承認",
+        "source": "task-records.json revision 2 and harvest.md",
+        "kind": "Human reports, corrections and authorization; not all empirical outcomes"
       }
     ],
     "confirmed_tool": [
@@ -125,6 +143,22 @@
         "kind": "LIMITED_INDEPENDENT_RESPONSE_OBSERVATION",
         "source": "skills/README.md §4.1, 2026-09-25 validation note",
         "boundary": "Hypothetical inputs are not Human Task events. This is not the actual Human's Ark28 startup, UI access, automatic skill selection, all-model reproducibility or field effect."
+      },
+      {
+        "claim": "Current Source required-source identities, exact blobs, EOF and bindings were checked; gap-free full-read receipts reused only where current exact blob matched.",
+        "base_commit": "ab1b62b562bac3ef92a127f28dce42e26668a702",
+        "kind": "CURRENT_SOURCE_RUNTIME_REVIEW"
+      },
+      {
+        "claim": "Portal seven-file initial release remotely matched and installed skill body was confirmed.",
+        "commit": "ab1b62b562bac3ef92a127f28dce42e26668a702",
+        "kind": "PORTAL_RELEASE_VERIFIED",
+        "source": "ark-recall-portal/README.md §6; task-records.json transition-s11"
+      },
+      {
+        "claim": "Installed map skill body and its two references were read and canonical installed-directory validation passed. Unchanged distribution is in the approved scope.",
+        "sha256": "259675f2e3982606f8f13f69dc0b45e8eb53bef6039629e3b5f18f7028149910",
+        "source": "task-records.json transition-s12"
       }
     ],
     "candidate": [
@@ -132,12 +166,19 @@
       "Selective reconnection may preserve learning without importing all support dialogue."
     ],
     "unknown": [
-      "Actual Ark28 Target reception in the Human's new Thread",
-      "Human UI creation, title application and ease of access",
-      "Observed benefit, recurrence and field effects",
-      "Which local support situations will need future amendments"
+      "Original Ark28:01 first boot response was not independently replayed; current collaboration is observed.",
+      "Human UI creation/title application and ease of access are not directly observed.",
+      "Actual Ark28:02 reconstruction and Human last-mile remain unobserved.",
+      "Start-method candidate field feedback and Portal real-life effects remain unreported."
     ],
-    "boundary": "Preparation, hypothetical/independent checks, live Target reconstruction, Human UI/access and real-world effects are distinct. Silence is not failure or completion."
+    "boundary": "Preparation, hypothetical/independent checks, live Target reconstruction, Human UI/access and real-world effects are distinct. Silence is not failure or completion.",
+    "current_conversation": [
+      {
+        "claim": "After Portal release, Human explicitly invoked the portal, AI read its current sources and gave examples, then Human praised the response and requested transition preparation.",
+        "source": "task-records.json transition-s08, transition-s09, transition-s15",
+        "boundary": "Explicit use and praise; not natural auto-selection or demonstrated B-state/long-term life benefit."
+      }
+    ]
   },
   "deferred": [
     {
@@ -151,6 +192,10 @@
     {
       "branch": "Optional Main reconnection",
       "treatment": "Only decision-relevant meaning and provenance; not obligatory, not an external-change approval."
+    },
+    {
+      "branch": "Start method / Portal real-life feedback / Navigator improvement",
+      "treatment": "Preserve candidates and incomplete observations; use only when selected by current Human context, not automatic trials."
     }
   ],
   "progress": {
@@ -158,10 +203,30 @@
     "remote_verification": "CONFIRMED_SCOPED_CONTENT_AND_BINDINGS; final status record also subject to post-write reread",
     "installed_skill_update": "CONFIRMED_SHARED_BODY_MATCH",
     "limited_independent_check": "CONFIRMED_LIMITED_TWO_CONTEXTS_FOUR_RESPONSES",
-    "actual_target_reconstruction": "NOT_OBSERVED",
+    "actual_target_reconstruction": "CURRENT_SOURCE_RUNTIME_REVIEW_CONFIRMED; ORIGINAL_FIRST_BOOT_RESPONSE_NOT_INDEPENDENTLY_REPLAYED",
     "human_thread_and_access": "NOT_OBSERVED",
     "human_title_application": "NOT_OBSERVED",
-    "field_effects": "NOT_OBSERVED"
+    "field_effects": "NOT_OBSERVED",
+    "historical_preparation_receipt": "Existing preparation/installed-skill/limited-check fields above refer to the original Ark28:01 creation, not the present map distribution or Target02 boot.",
+    "current_collaboration": "OBSERVED_IN_SOURCE_CONVERSATION",
+    "portal_explicit_use": "OBSERVED_AND_HUMAN_PRAISED; REAL_LIFE_EFFECTS_SEPARATE",
+    "next_transition": {
+      "kind": "THREAD_CONTINUE",
+      "source": "Ark28:01",
+      "target": "Ark28:02",
+      "owner": "Ark28:02",
+      "role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "compiled_title": "Ark28:02_2026/09/29: \"主の完全勝利: 想起と現在地を支える継続協働\"",
+      "title_basis": "Compiled in the preceding plan and approved for preparation; actual UI application is separate.",
+      "authorization": "Human approved preceding plan with Execute GitHub OK / Human Seal OK.",
+      "source_prepared": "IN_PROGRESS",
+      "remote_verified": "PENDING",
+      "target_reconstructed": "NOT_OBSERVED",
+      "human_last_mile": "NOT_OBSERVED",
+      "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST"
+    }
   },
   "eof_sentinel": "ARK28_01_STATE_EOF_v001"
 }

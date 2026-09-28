@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.14.0
+version: v0.15.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-28
+updated: 2026-09-29
 ---
 # Ark Shared Skills Hub
 
@@ -18,6 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を、TreeとNode & Edge表から回復 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing参照、現在のHuman入力と各Runtime | 導入済み本文を内容変更せず共有。採用内容と導入確認を保持し、全AI互換性・実生活効果とは区別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
@@ -30,6 +31,8 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 | 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
 | chocoZAP Sweet Spot / chocozap-sweet-spot | 当日のSweet Spot・重量系列・本人が選んだ切替を読み、二周目・履歴・訂正へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
+
+2026-09-29（Asia/Tokyo）、Ark28:01→02の承認済み移行準備により、導入済み `map-ark-current-position` を共有しました。本文と参照二件は内容を変えず、UI metadataは三つの表示項目だけを収録します。Tree・Node & Edge表、星印なしの現在地、任意のArk Graph Navigator、回答全体の最後のNext stepが現行本文に含まれます。導入先への再適用・新しい機能改訂は行っていません。導入済みディレクトリの形式検査を通過し、Remote本文と参照の一致は[Source State](../ark-project/ark28/ark28-01/state.json)の移行Receiptが所有します。Humanの採用内容・訂正・到達点は[Harvest](../ark-project/ark28/ark28-01/harvest.md)を参照します。全環境の表示・自然な自動選択・実生活の迷子解消を今回の共有検査で実証したとは扱いません。2026-09-12のexport-manifestは歴史的な記録として変更しません。
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -217,4 +220,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.14.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.15.0
