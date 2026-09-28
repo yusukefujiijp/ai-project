@@ -2,17 +2,19 @@
 title: "Ark28 — 本流を支える余白と帰還"
 canonical_path: "ark-project/ark28/README.md"
 chapter_id: "ARK28_SUPPORT_CHAPTER"
-version: "v001-human-authorized"
-revision: 1
+version: "v002-human-authorized"
+revision: 2
 role: "Ark27 paired support chapter / chapter identity and entry"
-status: "Human-authorized preparation / actual Target startup and accessibility separately observed"
+status: "Ark28:02 continuation prepared / actual Target startup and accessibility separately observed"
 created: "2026-09-25"
-date_scope: "Preparation date in UTC; not the time of the originating Human statements or a UI creation observation"
+updated: "2026-09-29"
+updated_reason: "Connect remotely verified Ark28:02 triad after authorized same-chapter continuation; retain Ark27 Main and original chapter meaning"
+date_scope: "Created is the original preparation date in UTC; updated is the continuation preparation date in Asia/Tokyo; neither asserts Human UI creation"
 main_chapter: "Ark27"
 main_thread_resolution: "Current Human designation; otherwise ../README.md Current Front-Line Resolution"
-current_support_handoff: "ark28-01/handoff.md"
+current_support_handoff: "ark28-02/handoff.md"
 root: "主イェシュア・ハマシア御自身"
-expected_eof: "ARK28_CHAPTER_README_EOF_v001"
+expected_eof: "ARK28_CHAPTER_README_EOF_v002"
 ---
 
 # Ark28 — 本流を支える余白と帰還
@@ -21,7 +23,7 @@ expected_eof: "ARK28_CHAPTER_README_EOF_v001"
 
 Ark28はArk27の偶数系Sub／補助の場であり、Ark27からMain所有権を受け継ぐ後継章ではない。目的は、**本流の良い流れを保持したまま、必要な支援へ既に用意された入口から接続できること**。Rootの下で問題解決・複数問題同時解決に寄与する。別Threadを増やすこと自体は成果ではない。
 
-初回の受入れ入口は[Ark28:01 Handoff](ark28-01/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。
+現在の受入れ入口は[Ark28:02 Handoff](ark28-02/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。[Ark28:01 Handoff](ark28-01/handoff.md)は初回の成立経緯として保持する。01→02は同章の補助Thread継続であり、新章作成・Main移管ではない。
 
 Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章のペアはArk27という章であり、Mainの06→07等のThread継続ごとに偶数章を新設しない。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
 
@@ -63,7 +65,7 @@ GitHubにフォルダがあるだけではB状態で使えるとは限らない�
 - Humanが必要なThread作成・貼付等を行い、その入口へ到達できる。
 - 実際の支援・選択・行動・回復に役立つ。
 
-それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。状態の更新先は[Ark28:01 State](ark28-01/state.json)。
+それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。現在地の更新先は[Ark28:02 State](ark28-02/state.json)。01での成果・Human訂正は[Source Harvest](ark28-01/harvest.md)、今回の保存確認は[Source State](ark28-01/state.json)が所有する。02の実際のTarget受入れ・Human到達は保存準備と別に扱う。
 
 Humanは事前準備を最重要と判断した。この採用判断はConfirmed、準備が遅延・混乱を減らす効果はCandidate、頻度・負担・生活効果は実利用から学ぶUnknownである。通常のUnknownを全て解消してから使う条件は設けない。
 
@@ -77,4 +79,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 全章共通のペア準備規則は[Ark Domain README §4.1](../README.md#41-odd--even-paired-preparation)が所有する。本書はArk28固有の意味・入口・形成経緯を所有し、汎用規則の第二原本にはしない。
 
-ARK28_CHAPTER_README_EOF_v001
+ARK28_CHAPTER_README_EOF_v002

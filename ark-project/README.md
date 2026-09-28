@@ -1,6 +1,6 @@
 ---
 title: "Ark Project"
-version: "v007-candidate"
+version: "v008-candidate"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
@@ -34,25 +34,28 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-09-27"
+updated: "2026-09-29"
 last_reality_reviewed: "2026-09-27"
 route_review_base_commit: "e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2"
 route_review_scope: "Human-authorized Ark27:06→07 thread continuation; update Main route only after triad remote verification; preserve chapter bindings, existing Ark28 support and unrelated work"
-updated_reason: "Connect verified Ark27:06 harvest and prepared07 triad to the current Domain entry; retain actual predecessor progress, purpose-changed Plan Mode branch and separate Target/Human completion."
+updated_reason: "Update only the support entry to the remotely verified Ark28:02 continuation; preserve Ark27:07 Main routing, Main evidence and prior Main review metadata."
+support_route_reviewed: "2026-09-29"
+support_route_review_base_commit: "cf9223dd28277c6eefbdd1fc73974e32a65c5578"
+support_route_review_scope: "Human-authorized Ark28:01→02 THREAD_CONTINUE; triad reread before changing support routing; actual Target and Human last-mile remain separate"
 historical_reviewed_scope_2026_09_09: "AI-first router contract / Ark23 Core v005 / Ark23:15 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / BBP / B-Gate Fast-Prune / Task化能力 / One-Table v002 / Ark24 frozen-trigger guard"
 current_front_line_ark: "ark-project/ark27/ark27-07/README.md"
 current_front_line_handoff: "ark-project/ark27/ark27-07/handoff.md"
 current_front_line_runtime: "ark-project/ark27/ark27-07/README.md"
 current_front_line_state: "ark-project/ark27/ark27-07/state.json"
 current_support_chapter: "ark-project/ark28/README.md"
-current_support_handoff: "ark-project/ark28/ark28-01/handoff.md"
+current_support_handoff: "ark-project/ark28/ark28-02/handoff.md"
 current_main_theme: "ChatGPT6 Astraへの移行"
 current_evidence: "Ark27:06 harvest and07 triad were saved and directly reread before this route update. Source terminal receipt owns final checks. Actual07 reconstruction and Human UI actions remain unobserved bySource. Preserve06 collaboration and Human startup reports; archive/Plan Mode outcomes belong to control-center/skills. Ark28 remains existing support."
 historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earlier B-Gate detection / Ark23:15 triad remote verified / then-unobserved Fast-Prune result"
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
-expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v007-candidate"
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate"
 ---
 # Ark Project
 
@@ -111,7 +114,7 @@ Gate通過後の最初の合法手は `WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST
 
 Ark23:15はSource／系譜として保持する。旧Handoffを明示指定された場合はその契約を尊重し、不一致からArk27へSilent Fallbackしない。より新しい有効なHuman指定は出典・時点・適用範囲から解決する。この節とfront matterが通常入口を所有し、下記Ark23地形・Task化FieldはHistorical。Ark24 Frozen Triggerは自動実行しない。
 
-**補助入口。** [Ark28](ark28/README.md)と[初回Handoff](ark28/ark28-01/handoff.md)は既存の支援構成を継続する。MainはCurrent Humanまたは本Domainの現行入口から解決し、準備時06に永久固定しない。06→07は新支援章・Thread作成やMain移管の理由ではない。B-Gate・軽いTeshuvah・BrainDump等を受け取る柔軟なSubの意味を保持し、資料保存、Target起動、Human到達性、効果は[Ark28 State](ark28/ark28-01/state.json)で区別する。章ペア規則は§4.1、形成理由は章READMEが所有する。隠れた同期、Mainの仕事の自動実行・停止・移管を仮定しない。
+**補助入口。** [Ark28](ark28/README.md)の現在入口は[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。01→02は承認された同章の補助Thread継続であり、三点セットの保存・再取得を確認してから接続した。MainはCurrent Humanまたは本Domainの現行入口から解決し、過去の準備時番号に永久固定しない。MainのThread継続を新支援章の作成やMain移管の理由にしない。B-Gate・軽いTeshuvah・BrainDump・想起・現在地把握等を受け取る柔軟なSubの意味を保持し、資料保存、Target起動、Human到達性、効果は[Ark28:02 State](ark28/ark28-02/state.json)で区別する。01の成果は[Harvest](ark28/ark28-01/harvest.md)、最終保存確認は[Source State](ark28/ark28-01/state.json)が所有する。章ペア規則は§4.1、形成理由は章READMEが所有する。隠れた同期、Mainの仕事の自動実行・停止・移管を仮定しない。
 
 Ark25／torah-projectは09/09時点では一時中断との報告があり、05でtorah-projectの有益な活用を相談する後続入力があった。相談を研究再開・実行完了にせず、保存された保留価値とCurrent Requestから扱う。
 
@@ -473,8 +476,8 @@ Root remains 主イェシュア・ハマシア御自身.
 ```yaml
 document_end:
   filename: "ark-project/README.md"
-  version: "v007-candidate"
-  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v007-candidate"
+  version: "v008-candidate"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate"
 ```
 
-EOF::ARK_PROJECT_DOMAIN_ROUTER::v007-candidate
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate
