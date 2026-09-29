@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.16.0
+version: v0.17.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-29
 ---
@@ -18,7 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
+| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing、[Living Reviewの共通説明](../prompts/ai-living-review.md)への必要時参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
@@ -41,6 +41,16 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 今回の変更はSkill本体・Navigator参照・この共有案内です。導入版と共有版の本文・参照は同じ内容を使用し、Source routingとUI表示設定は変更していません。初回共有の移行Receipt・Harvest・export-manifestは当時の記録として保持します。起動Prompt自体の改訂や次の実地Trialを、この改訂から自動開始しません。
 
 保存後、導入先に保持された本文・作業先の現物・GitHub本文の一致を確認しました。一方、同一会話のSkill参照経路では改訂前と同一の本文が返ることを観測し、その参照表示の更新は未確認です。今回の応答確認は更新済み現物を読んで行いました。保存済み内容と会話内の参照状態を分け、表示差だけで再作成や再導入を行わないようにします。
+
+2026-09-29の後続観測では、上記Living Review導入後の本文が会話内のSkill参照でも取得でき、当該時点のGitHub本文と一致しました。今回の共通説明接続を加える前の再確認でも一致しています。先の「参照表示の更新は未確認」はその保存直後の観測記録として残し、同じ差が現在も未解消だとは扱いません。この確認を全参照経路・全UIの更新証明へ広げません。
+
+2026-09-29、Humanが承認したAI-primaryの改訂計画により、[AI Living Review v0.2-candidate](../prompts/ai-living-review.md)を共通説明として作成し、mapに条件付きの参照を加えました。根本の意味や他用途との違いを深める場合に進む入口であり、通常のmapに必要な条件はSkill本体に保持します。任意参照の取得不能だけで基本支援を停止せず、別途必須とされたSource契約とmap固有の末尾二節を尊重します。
+
+元会話・計画・期待回答を渡さない四つの独立したAI文脈で、構成した相談例に対する計六応答を確認しました。共通本文の概念説明、ボード案レビューと重要な訂正、共通本文を併用するmap、外部リンクを取得できないmapを扱い、重要な訂正による提案の取り下げ・焦点更新、名称のみの訂正での判断維持、必須Source不足と通常Unknownの分離、mapの固有出力と完了の選択を観察しました。仮想の相談内容をHumanの実経験として記録しません。改訂Skillの形式検査と参照先の確認も通過しました。自然な自動選択、別Vendor間や全AIでの互換性、Human UI、実生活の効果は未検証です。
+
+今回のmap差分はSkill本体への参照段落の追加です。Navigator・Source routing・UI表示設定は維持しています。共通本文・prompts入口・Ark-OKFの保存は[作成commit](https://github.com/yusukefujiijp/ai-project/commit/9d77381349d604d043023feb26911eee77075b88)で辿れ、三文書のRemote再取得による全文一致を確認しました。導入先の保存済み本文と現物の全文一致を確認した後、[map接続改訂commit](https://github.com/yusukefujiijp/ai-project/commit/fb56b6c5e018ccc76f9def4bc559935d5c81f40f)から共有本文を再取得し、同一内容であることを確認しました。
+
+今回の保存後に確認した会話内のSkill参照経路では、共通説明への参照を追加する前の本文が返りました。導入先の保存済み内容・現物・GitHub共有本文は新本文で一致しています。これは上記の過去の参照差とは観測時点と対象差分が異なり、今回追加した参照段落の表示反映はその経路では未確認です。任意参照の段落が差分であり、更新済み現物を用いた応答確認と保存確認を、この参照表示の観測と区別します。表示差だけを理由とした再作成・再導入は行っていません。
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -228,4 +238,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.16.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.17.0
