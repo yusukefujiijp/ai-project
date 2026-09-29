@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.15.0
+version: v0.16.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-29
 ---
@@ -18,7 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を、TreeとNode & Edge表から回復 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing参照、現在のHuman入力と各Runtime | 導入済み本文を内容変更せず共有。採用内容と導入確認を保持し、全AI互換性・実生活効果とは区別 |
+| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
@@ -33,6 +33,12 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | chocoZAP Sweet Spot / chocozap-sweet-spot | 当日のSweet Spot・重量系列・本人が選んだ切替を読み、二周目・履歴・訂正へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
 
 2026-09-29（Asia/Tokyo）、Ark28:01→02の承認済み移行準備により、導入済み `map-ark-current-position` を共有しました。本文と参照二件は内容を変えず、UI metadataは三つの表示項目だけを収録します。Tree・Node & Edge表、星印なしの現在地、任意のArk Graph Navigator、回答全体の最後のNext stepが現行本文に含まれます。導入先への再適用・新しい機能改訂は行っていません。導入済みディレクトリの形式検査を通過し、Remote本文と参照の一致は[Source State](../ark-project/ark28/ark28-01/state.json)の移行Receiptが所有します。Humanの採用内容・訂正・到達点は[Harvest](../ark-project/ark28/ark28-01/harvest.md)を参照します。全環境の表示・自然な自動選択・実生活の迷子解消を今回の共有検査で実証したとは扱いません。2026-09-12のexport-manifestは歴史的な記録として変更しません。
+
+2026-09-29（Asia/Tokyo）、上記の初回共有後、Humanが承認した計画に従い、`map-ark-current-position` にLiving Reviewを組み込みました。通常のmap回答の末尾を `Living Review` → `Next step` の隣接する二節とし、Reviewの結びが今判断すべき焦点・重要な選択条件・必要な未確定や保留価値を渡します。独立したhubは標準では設けず、Next step候補の実行可能性や権限を検討して分かった条件もReviewへ反映します。訂正で条件が変わらなければ判断を維持でき、実際の変化が見えない時に差分・効果・新Taskを作りません。Navigatorでは本文の焦点と表示対象を区別し、タブ操作だけで新たなAI判断が行われたとは扱いません。
+
+改訂した導入先の形式検査と相対参照の確認を通過しました。元の計画や期待回答を渡さず、改訂Skillの現物と相談入力から回答する独立AI五件で、開始方法の設計、完了地点の確認、必須Source不足と通常Unknownの分離、Navigatorの文字表示、起動Prompt自体のレビューを確認しました。うち二件には後続の訂正を加え、計七回答を観察しました。開始方法では比較結果が初手の前提になるという訂正でReviewとNext stepを修正し、名称のみの訂正では完了判断を維持しました。Plan-only・未確認効果・依頼対象の区別も保持しました。これは構成した相談例に対する限定的な応答確認であり、自動選択、操作可能なUI、全AI互換性、実生活での効果の実証ではありません。
+
+今回の変更はSkill本体・Navigator参照・この共有案内です。導入版と共有版の本文・参照は同じ内容を使用し、Source routingとUI表示設定は変更していません。初回共有の移行Receipt・Harvest・export-manifestは当時の記録として保持します。起動Prompt自体の改訂や次の実地Trialを、この改訂から自動開始しません。
 
 2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
 
@@ -220,4 +226,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.15.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.16.0
