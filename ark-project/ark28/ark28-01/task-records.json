@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-01-task-records",
-  "revision": 2,
+  "revision": 3,
   "role": "thread_experience_record",
   "created": "2026-09-28",
-  "updated": "2026-09-29",
+  "updated": "2026-09-30",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark28:01",
     "canonical_path": "ark-project/ark28/ark28-01/task-records.json",
     "reported_date": null,
     "timezone": null,
-    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。",
+    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。 revision 3の閉鎖依頼時刻は当該メッセージのAsia/Tokyoメタデータ。その他の後続対話には未確認の細かい時刻を割り当てない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験原本でありRuntime・Handoff・Current Stateではない。保存された承認や過去のTaskは現在の新命令ではない。",
     "source_access": "このThreadで可視だったHuman発言の連続抜粋、または明示した編集要約。外部メッセージID・会話URLは付与しない。ChatGPT長期メモリからの輸出ではない。",
     "extensions": {
-      "record_cutoff": "2026-09-29 07:00 JST、Ark28:01→Ark28:02移行準備計画の実行承認までの選択記録。実際のTarget02受入れは含めない。"
+      "record_cutoff": "2026-09-30 06:14:51+09:00のSource閉鎖・GitHub上書き保存依頼までの選択記録、およびその保存に必要な現行参照経路の照合。Target02自身の受入れ結果は収録しない。"
     }
   },
   "coverage": {
@@ -31,7 +31,9 @@
       "B状態中心、入口最優先、自然な蓄積、命名、mapとの関係、段階的成長の意味",
       "開始時の締切理論、mapとNavigatorの採用・表示訂正・Next step",
       "Portal初版の保存・導入に関する観測と、09/29の明示呼出し・Human評価",
-      "Ark28:01→02同章継続の計画承認と境界"
+      "Ark28:01→02同章継続の計画承認と境界",
+      "移行準備後のLiving Review対象訂正、map末尾二節と共通本文の形成・保存・限定確認",
+      "Bootと現行mapをつなぐ起動文の完成評価、Sourceへの戻り作業と閉鎖・差分保存の依頼"
     ],
     "excludes": [
       "Thread全会話",
@@ -41,7 +43,7 @@
       "今回実装後の実生活効果",
       "ChatGPT長期メモリ"
     ],
-    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。"
+    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。 revision 3は移行準備後の差分を追記。revision 2の全Source・Node・Edge・未確認事項はそのまま保持し、後続成果を新Nodeへ接続する。"
   },
   "sources": [
     {
@@ -298,6 +300,100 @@
       "excerpt": "AIは現行Portal README、itemsと原本を読み、休日前のヨーグルトとResetの五つの教訓を案内した。過去の反省と現在の在庫・必要量・設定可否を区別し、追加・訂正とmap接続の使い方も説明した。今回は読出しだけで保存・設定変更・別Task開始は行わなかった。",
       "excerpt_kind": "paraphrase",
       "note": "この会話内で観測した応答。説明内容の受領と実生活での有効性は別。"
+    },
+    {
+      "id": "post-handoff-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、01→02移行準備の保存後に続いた可視対話。個別時刻は不明の場合に補わない。",
+      "excerpt": "いや(No)、“Living Review: Not dead data, but a living board”は起動開始AI-Promptを“Living Review: Not dead data, but a living board”して下さい！という意味合いですが",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "レビュー対象は起動文そのものという訂正。同じ発言の後半で、起動時に盤面をLiving Reviewする方向も有益な可能性として認めた。対象訂正と新しい可能性を両方保持する。"
+    },
+    {
+      "id": "post-handoff-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、01→02移行準備の保存後に続いた可視対話。個別時刻は不明の場合に補わない。",
+      "excerpt": "HumanはmapそのものへLiving Reviewを組み込み、既存の最終Next step直前へ置く案を示した。二節を有機的に連動させ、Living Review内で次の判断への接続を吸収できれば独立したhubは不要と検討した。Plan Modeを練り直した後、その範囲の実装・GitHub保存を承認した。",
+      "excerpt_kind": "paraphrase",
+      "note": "配置はmapの出力契約。思考の固定手順、毎回答の新Task、単なる長い要約を義務化する意味ではない。"
+    },
+    {
+      "id": "post-handoff-s03",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、01→02移行準備の保存後に続いた可視対話。個別時刻は不明の場合に補わない。",
+      "excerpt": "mapの末尾Living Review→Next step、重要な選択条件の受渡し、候補の実行可能性からReviewも見直す関係を実装し、共有・導入を保存確認した。共有改訂commit 7c5cbd20bedcfa5c39df94513303c42a9d11d770、確認記録04055cba7279a6da95e0105c819729624c23b3aa、導入先保存7e7165e4c75308f400f4ed5a078d8f93f9dd14e6。5つの独立した文脈、後続2応答を含む計7応答の限定確認を記録した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/04055cba7279a6da95e0105c819729624c23b3aa",
+      "note": "当該実装時のTool・限定応答確認の記録。架空の相談例はHumanの実経験ではない。後続の共通Living Review接続前の版であり、Current本文は意味の所有先から読む。"
+    },
+    {
+      "id": "post-handoff-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、01→02移行準備の保存後に続いた可視対話。個別時刻は不明の場合に補わない。",
+      "excerpt": "人間側は殆どGitHub自体読まず基本的根本的にGitHubのコードやMarkdownはAI側の為にあるMarkdownです！\nその為に、ai-living-review.mdも基本的根本的に\"他AI(別AI)やFuture AI\"の為にある事を強く意識して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "共通Living Review新版と必要なmap改善を計画する際の読者・設計方針の明示。"
+    },
+    {
+      "id": "post-handoff-s05",
+      "speaker": "AI-Collaborator",
+      "medium": "repository_file",
+      "locator": "prompts/ai-living-review.md §1–10。今回の保存調査基点ca573638dd38b2b4870f8ac812b9966c3f1ea66dで現行blob f541ce26d2a86d08965c86c0d713d0d4294a228aを確認。",
+      "excerpt": "Human提示の旧ローカルai-living-review.mdを参考に、AI Living Review v0.2-candidateを新規共有本文として作成した。働く価値・問題・関係・未言語化の可能性を、根拠に基づく訂正可能なAI判断と今有効な接続へ結ぶ。固定Gateや毎回の新発見の割当を外し、維持・保留・完了も許容する。mapへのLiving Review導入は旧ファイルの発見より前であり、形成順を逆転させない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ca573638dd38b2b4870f8ac812b9966c3f1ea66d/prompts/ai-living-review.md",
+      "note": "旧ローカル資料は別の歴史的資料であり、新共有本文で上書きしたとは扱わない。"
+    },
+    {
+      "id": "post-handoff-s06",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、01→02移行準備の保存後に続いた可視対話。個別時刻は不明の場合に補わない。",
+      "excerpt": "Humanの実行承認を受け、共通Living Review、prompts入口、Ark-OKF整合をcommit 9d77381349d604d043023feb26911eee77075b88、mapの条件付き参照をfb56b6c5e018ccc76f9def4bc559935d5c81f40f、共有Skillの確認記録をca573638dd38b2b4870f8ac812b9966c3f1ea66dへ保存した。五つの承認済み対象を再取得し本文一致を確認した。導入先mapは37083c370703bf47366f8afdd54eb87cc4daddb6で保存・取得一致を確認した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/ca573638dd38b2b4870f8ac812b9966c3f1ea66d",
+      "note": "Ark-OKFはRoot=主イェシュア御自身と、Teshuvah・Human側の応答・契約の錨を区別し、血潮とCovenantの意味を保持した。通常mapの支援は自己完結し、共通説明の毎回必読化・参照循環を作らない。"
+    },
+    {
+      "id": "post-handoff-s07",
+      "speaker": "AI-Collaborator",
+      "medium": "repository_file",
+      "locator": "prompts/ai-living-review.md §10、skills/README.mdの2026-09-29共通説明接続記録。",
+      "excerpt": "新共通本文は4つの独立したAI文脈で計6応答を確認した。概念説明、共同作業ボードのレビューと訂正、共通本文を併用したmap、外部参照不能時のmapを扱い、判断を変える訂正では焦点を更新し、名称だけの訂正では判断を維持した。必須Source不足と通常Unknown、Plan-only境界、mapの末尾二節を区別した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ca573638dd38b2b4870f8ac812b9966c3f1ea66d/prompts/ai-living-review.md",
+      "note": "共通本文接続時の限定確認。post-handoff-s03の先行map検証と同一試験として数えない。全Vendor・自然起動・実生活の効果は未実証。"
+    },
+    {
+      "id": "post-handoff-s08",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01の起動文作成時の照合記録、および2026-09-30 JSTのskills.readとGitHub fetch_file実結果。",
+      "excerpt": "共通説明接続の保存直後には会話内Skill参照が7,292文字の旧本文を返したが、その後の起動文作成時、および2026-09-30 JSTの本Source保存時には7,580文字の現行本文を返し、GitHubのblob 5e97a8caffa9a0ade90b00d094e1670f54cce7f6の内容と完全一致した。",
+      "excerpt_kind": "paraphrase",
+      "note": "確認した参照経路の後続観測。全UIや全AIへ自動反映された証明ではなく、過去の保存直後の観測も消さない。"
+    },
+    {
+      "id": "post-handoff-s09",
+      "speaker": "AI-Collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark28:01、Source保存依頼直前のAssistant最終応答。writing block 62841で全文提示。",
+      "excerpt": "起動開始AI-Promptを改訂して会話に提示した。Current authoritative Handoff／RuntimeのBoot・全文読解・Identity・Binding・EOFと同一性条件による再利用を先に置き、通過後に現行mapを使う。Skill非対応環境は共有SKILL.mdを実読し、既入力を中心に選択的な現在地復元、Tree・Node & Edge、必要時Navigator、隣接するLiving Review→Next stepへ接続する。Humanの訂正・STOP・Root・Guard、仮説と根拠の区別、品質、完了・Human Reviewを保持し、外部操作や旧Taskへ自動昇格しない。",
+      "excerpt_kind": "paraphrase",
+      "note": "採用された文面の意味の編集要約。別のquery原本は作らず、呼出し文はHumanのユーザー辞書で扱う既存方針を保持する。辞書登録そのものや別Threadでの実動作は観測していない。"
+    },
+    {
+      "id": "post-handoff-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-30 06:14:51+09:00のHuman入力（当該メッセージのユーザー時刻メタデータ）。",
+      "excerpt": "OK！Very Good! 完成した！\n\nこのThread Sessionはここで閉じる。\nこのThread Sessionが次Thread移行でセーブした所から少し進んだのでGitHubに上書きセーブして下さい！\n\nこのように次Thread移行後に次Threadを汚さない為に一旦、手戻りして前Threadに戻って残作業をした場合もセーブしといた方が\"他AI(別AI)やFuture AI\"が理解しやすいと思うがどうですか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前の起動文の完成を受け止め、Thread終了と移行後のSource保存を明示。移行済みとのHuman報告は保持し、受取AI自身のGate通過やUIの詳細をSource側から認定しない。同じ入力で既存Systemの適否と再利用Promptの説明も依頼。"
     }
   ],
   "nodes": [
@@ -668,6 +764,121 @@
           "transition-s10"
         ]
       }
+    },
+    {
+      "id": "living-review-target-correction",
+      "kind": "decision",
+      "label": "レビュー対象を起動文そのものへ戻す",
+      "description": "Humanは最初の依頼の対象を起動開始AI-Promptだと訂正した。一方で起動時のLiving Reviewという発見も検討価値を認めた。",
+      "scope": "対象訂正を消さず、有望な派生も保持する。Living Reviewという語だけで依頼対象をArk全体へ置換しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "post-handoff-s01"
+        ]
+      }
+    },
+    {
+      "id": "map-living-review-integration",
+      "kind": "observation",
+      "label": "mapへLiving Review→Next stepを実装",
+      "description": "現在地から今の意味・判断条件を読み、次の有効な接続へ渡す末尾二節を導入・保存した。候補の検討結果でReviewを更新でき、不要なhubや新Taskを増やさない。",
+      "scope": "Current本文は共有Skillが所有する。先行検証と後続共通説明検証、実生活効果を分ける。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s02",
+          "post-handoff-s03"
+        ]
+      }
+    },
+    {
+      "id": "ai-primary-document-readers",
+      "kind": "decision",
+      "label": "共通Markdownの主読者は他AI・Future AI",
+      "description": "Humanは主に対話を使い、GitHub本文はAIが読解・解釈・継続協働に使う前提で設計する。",
+      "scope": "Humanによる全Repository読解や伝言を利用前提にしない。Root・Meaning・Correction・STOPはHumanに保持。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "post-handoff-s04"
+        ]
+      }
+    },
+    {
+      "id": "living-review-common-core",
+      "kind": "observation",
+      "label": "AI Living Review新版と関連資料を保存",
+      "description": "旧版の価値を継承し、判断・根拠・関係・訂正・次の接続を軸に共通本文を作成。prompts入口、Ark-OKF、mapの条件付き参照と共有案内を整合した。",
+      "scope": "文書・保存・導入の確認。旧添付の発見を先行map実装の原因へ書き換えず、自己完結する基本支援を保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s05",
+          "post-handoff-s06"
+        ]
+      }
+    },
+    {
+      "id": "living-review-limited-checks",
+      "kind": "observation",
+      "label": "共通本文の限定読解・応答確認",
+      "description": "4文脈6応答で意味理解・対象レビュー・重要訂正と名称訂正・map固有出力・参照不能の境界を観察した。",
+      "scope": "架空例は本人の経験でない。全AI互換性・自然起動・長期効果の実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s07"
+        ]
+      }
+    },
+    {
+      "id": "map-reference-path-current-match",
+      "kind": "observation",
+      "label": "会話内Skill参照と共有本文の一致を後続確認",
+      "description": "保存直後の旧本文表示後、参照経路が現行7,580文字の共有本文と一致することを確認した。",
+      "scope": "特定経路の観測。旧未確認記録を現在も未解消と誤読せず、全UI反映とも扱わない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "post-handoff-s08"
+        ]
+      }
+    },
+    {
+      "id": "startup-prompt-completed",
+      "kind": "decision",
+      "label": "Bootと現行mapを接続する起動文が完成",
+      "description": "改訂起動文を会話に提示し、Humanは「完成した」と受け止めてThread終了を選んだ。",
+      "scope": "採用・完成のHuman評価。ユーザー辞書登録や別Threadでの実動作、全起動場面への保証は別。別query原本は作らない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s09",
+          "post-handoff-s10"
+        ]
+      }
+    },
+    {
+      "id": "source-close-after-return-work",
+      "kind": "decision",
+      "label": "移行後にSourceで進んだ残作業を保存して閉じる",
+      "description": "Humanは移行先の文脈を保つためSourceへ戻って進めた成果を保存し、このThreadを閉じると明示した。",
+      "scope": "Source閉鎖と差分保存の権限。Targetの実際の受入れやUI確認、新しい移行・Main移管・共通System再設計を自動認定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "post-handoff-s10"
+        ]
+      }
     }
   ],
   "edges": [
@@ -762,6 +973,96 @@
           "transition-s10"
         ]
       }
+    },
+    {
+      "id": "e-post-review-map",
+      "from": "living-review-target-correction",
+      "to": "map-living-review-integration",
+      "relation": "observed_before",
+      "scope": "対象訂正の後、派生した価値をmapへ統合する設計・実装へ進んだ。固定の全場面手順ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s01",
+          "post-handoff-s02",
+          "post-handoff-s03"
+        ]
+      }
+    },
+    {
+      "id": "e-post-next-review",
+      "from": "map-next-step-adoption",
+      "to": "map-living-review-integration",
+      "relation": "observed_before",
+      "scope": "既採用の最終Next stepを保持し、その直前へLiving Reviewを追加した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s07",
+          "post-handoff-s02",
+          "post-handoff-s03"
+        ]
+      }
+    },
+    {
+      "id": "e-post-ai-primary-core",
+      "from": "ai-primary-document-readers",
+      "to": "living-review-common-core",
+      "relation": "motivates",
+      "scope": "他AI・Future AIへ根本の意味を渡すという明示要件を共通本文の設計へ反映した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s04",
+          "post-handoff-s05"
+        ]
+      }
+    },
+    {
+      "id": "e-post-map-core",
+      "from": "map-living-review-integration",
+      "to": "living-review-common-core",
+      "relation": "observed_before",
+      "scope": "mapへの導入が旧添付の発見と共通本文の改訂より先。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s05"
+        ]
+      }
+    },
+    {
+      "id": "e-post-core-startup",
+      "from": "startup-prompt-completed",
+      "to": "map-living-review-integration",
+      "relation": "depends_on",
+      "scope": "今回の起動文は現行mapの仕様を参照して利用する。全てのBoot方式の普遍的依存ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s09"
+        ]
+      }
+    },
+    {
+      "id": "e-post-startup-close",
+      "from": "startup-prompt-completed",
+      "to": "source-close-after-return-work",
+      "relation": "observed_before",
+      "scope": "起動文提示・完成評価の後、残作業の保存とSource閉鎖を依頼した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s09",
+          "post-handoff-s10"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -804,6 +1105,17 @@
         "revision": 2,
         "date": "2026-09-29",
         "reason": "Humanが承認した01→02移行準備。開始支援・map/Navigator・Portal初版と実際の明示呼出しを根拠別に追記。既存Portal参照先は変更なし。"
+      },
+      {
+        "revision": 3,
+        "date": "2026-09-30",
+        "reason": "HumanのSource再保存・閉鎖依頼に基づき、移行準備後のmap/Living Review/起動文の成果とCorrectionを追加。移行時の固定Harvestと両Threadの固定Runtime・Handoffを保持。",
+        "source_refs": [
+          "post-handoff-s01",
+          "post-handoff-s02",
+          "post-handoff-s04",
+          "post-handoff-s10"
+        ]
       }
     ]
   }
