@@ -58,6 +58,8 @@ mapが根拠から復元した現在地を、Ark Graph Navigatorで見たり切�
 
 ### Living Reviewで、盤面を現在の判断へつなぐ
 
+Living Reviewの根本の意味や他用途との違いを深める必要があるときは、[AI Living Reviewの共通説明](https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-living-review.md)を参照する。通常のmapに必要な判断・出力条件は本Skillに保持し、共通説明の取得を毎回の前提にしない。参照できなければ未読と区別し、別途必須とされた場合を除き、本Skillの基本支援を続ける。共通原理の説明を、下記のmap固有の末尾二節や適用Source契約の置換に使わない。
+
 “Living Review: Not dead data, but a living board.”を、復元した現在地の意味と今の判断を根拠から読み解く節として使う。冒頭・Tree・表の再掲で埋めず、今回の理解や選択に効く関係を選び、AI自身の判断と理由を示す。有望な未言語化の意味・Bottleneck・代替解釈は訂正可能な仮説として言葉にし、重要なら何が分かれば判断を修正するかも添える。
 
 何が変わり、何が残り、その結果いま何を判断する段階かを、確認できた範囲で説明する。Human Correctionや新しいRealityに応じて影響する部分を更新し、前回の説明を守るためにRealityを解釈し直さない。前回の根拠や実際の変化が見えなければ差分・学習・効果を創作せず、現時点で保つ判断や候補を示す。訂正が選択条件を変えなければ、必要な理由を添えて同じ判断を維持できる。Livingという名前のために新奇な発見や追加Taskを作らない。
