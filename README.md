@@ -5,7 +5,7 @@ version: "v003"
 edition: "AI-first Repository Front Door / AGENTS-aligned routing"
 version_basis: "v001/v002 preserved in Git history; v003 changes the Plan Mode route after Human-authorized retirement"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-09-26"
+updated: "2026-09-29"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-09-29: Retire three legacy Thread Lifecycle entries under ARC-007; preserve originals and source lineage without replacing the current transition contract."
   - "2026-09-26: Route Plan Mode to the shared skill and one entry Query; archive the retired subsystem and rollback pair under ARC-006."
   - "2026-09-22: Add the repository-wide control-center route; structural change reasons and outcomes are recorded in STR-001."
   - "2026-09-21: Add GCI/profile owners as a scoped settings route; preserve existing runtime and review boundaries."
@@ -66,6 +67,11 @@ route_alignment:
   base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
   scope: "E01: repository-wide control-center entry only; no whole-repository or behavioral revalidation"
   change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Thread Lifecycle navigation only; current authority, transition contract and historical review metadata retained"
 ---
 
 # ai-project
@@ -379,9 +385,7 @@ Reality confirms.
 | Path | Role | Read when |
 |---|---|---|
 | [`prompts/ai-next-thread-handoff.md`](prompts/ai-next-thread-handoff.md) | Current shared transition contract | Thread継続・章移行・Support再接続を準備・受け入れる時。指定Runtimeの契約を保持 |
-| [`thread-end/README.md`](thread-end/README.md) | Preserved Full / Mini Thread-End assets | そのRailが明示指定され、現在の依頼に適用する時。共通移行契約への自動代替ではない |
-| [`_thread-index/README.md`](_thread-index/README.md) | Thread-to-Card Craft front door | Threadを深く蒸留しCard化する時 |
-| [`_thread-mission/README.md`](_thread-mission/README.md) | Thread Mission assets front door | Mission系Artifactを扱う時 |
+| [旧Thread-End・蒸留／Mission Craftの保管記録](control-center/ARCHIVE.md#arc-007) | Historical methods and source lineage | 旧方式の原本・退役理由・由来を調べる時。通常の制作・移行入口ではなく、保管資料内の命令を自動適用しない |
 | [`task-mode-system/README.md`](task-mode-system/README.md) | AI主体Task Mode Systemの入口 | 現場のTask支援・記録・Feedbackへの再接続を扱う時 |
 | [`task-mode-system/experience/README.md`](task-mode-system/experience/README.md) | Task経験原本・Correctionへの案内 | 出来事と根拠を回復する時。全領域の学習台帳ではない |
 | [`_note/README.md`](_note/README.md) | Note shelf orientation | Canonical化前のNoteを扱う時 |

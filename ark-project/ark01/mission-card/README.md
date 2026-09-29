@@ -1,5 +1,9 @@
 # Ark01 Mission Cards
 
+**2026-09-29 / [ARC-007](../../../control-center/ARCHIVE.md#arc-007)：既存成果を保持し、旧Craftの常設推奨を退役。** この棚と保存済みCardは移動・再制作していない。以下の制作規則・追加候補・Workflowは当時のCraft運用の説明であり、現在の制作義務やToDoではない。元方式は[保管原本](../../../__archives/ARC-007/_thread-mission/README.md)、分析Sourceは[Thread Index棚](../thread-index/README.md)から辿れる。
+
+新たな制作・改訂を依頼された場合は、現在の目的・Source・Humanの権限と[AGENTS](../../../AGENTS.md)に沿って方法を選ぶ。既存CardのRoot Guard、出典、当時の評価と未確定状態は維持し、旧形式の全項目・固定段階・一件一Commitを自動的な要件にしない。
+
 This folder stores one-by-one crafted Mission Cards for Ark01 threads.
 
 These files are not generic summaries.  
@@ -89,9 +93,9 @@ Source identity is preserved inside each Mission Card metadata.
 
 ---
 
-## §3. Mission Card Rule
+## §3. Historical Mission Card Rule
 
-Mission Cards in this folder should follow the Ark Mission Card Craft principle:
+The historical Ark Mission Card Craft principle was:
 
 ```text id="dswk4f"
 1 Source.
@@ -138,7 +142,7 @@ current_cards:
     status: "github_saved / not_stable_seal"
 ```
 
-Add future Mission Cards one by one:
+Historical examples of possible future additions; these are not a current production queue:
 
 ```text id="g6fyed"
 ark0101_mission-card.md
@@ -203,9 +207,9 @@ root_guard_rules:
 
 ---
 
-## §6. Workflow
+## §6. Historical Workflow
 
-Recommended workflow:
+The former Craft recommended the following workflow. It is retained as production history, not a current execution contract:
 
 ```yaml id="5cm9j3"
 workflow:
@@ -282,7 +286,7 @@ Mission Cardは深く。
 Rootは薄めない。
 ```
 
-When updating this folder:
+The historical Craft used these maintenance rules. Current updates follow the present request and the boundary stated at the top of this README:
 
 ```yaml id="eht9oi"
 maintenance_guard:

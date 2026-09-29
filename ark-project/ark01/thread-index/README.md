@@ -1,5 +1,7 @@
 # Ark01 Thread Index
 
+2026-09-29の[ARC-007](../../../control-center/ARCHIVE.md#arc-007)は、旧Craft方式を退役・保管した案件である。この棚の26件の分析原本とmanifestは維持する。Craftの退役を成果物の移動・再制作・一括Card化へ拡張しない。
+
 ## §0. Folder Identity
 
 `ark-project/ark01/thread-index/` は、Ark01 phase-local Thread Index artifact folder である。
@@ -68,7 +70,7 @@ must_not_be:
   - "Thread-to-Card Craft protocol folder"
 ```
 
-Ark-wide protocol / Craft system は `_thread-index/` 側で扱う。  
+当時のArk-wide Craft systemは[旧Thread Index Craftの保管原本](../../../__archives/ARC-007/_thread-index/README.md)から辿る。通常の制作手順としての推奨は退役しており、必要な再利用は現在の依頼から判断する。  
 このfolderは、Ark01 phase-local の成果物置き場である。
 
 ---

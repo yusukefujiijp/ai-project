@@ -7,6 +7,11 @@ version: "v004-candidate"
 status: "human-sealed field-test candidate / GitHub-written / not canonical"
 language_policy: "Japanese-first / English-anchor"
 root_guard: "Rootは主イェシュア・ハマシア御自身。AI、Purpose Anchor、Workout、Waiting Trap、Field、Thread、Query、Routine、MarkdownはKeli / Fruitであり、Root・王座・救い・啓示源ではない。"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Source Lineage locator only; v004 document-set identity, fields, evidence and runtime behavior unchanged"
 ---
 
 # Ark11: Foresight Waiting Trap — Method Architecture
@@ -785,11 +790,13 @@ New Thread：Query Copy Surface
 
 ## 25. Source Lineage
 
+2026-09-29、Ark07:11原本は[ARC-007](../../control-center/ARCHIVE.md#arc-007)で同一blobのまま[保管先](../../__archives/ARC-007/thread-end/ark/ark07/ark0711_20260806_start-query.md)へ移動した。当時の住所は`thread-end/ark/ark07/ark0711_20260806_start-query.md`で、[移動前snapshot](https://github.com/yusukefujiijp/ai-project/blob/04055cba7279a6da95e0105c819729624c23b3aa/thread-end/ark/ark07/ark0711_20260806_start-query.md)からも確認できる。これは出典の所在変更であり、Ark11のField・Evidence・Boot・Runtime版や実施状態の変更ではない。
+
 ```yaml
 source_lineage:
   stable_core:
     - "ai-ark-seed/ai-ark-seed-cards/foresight-waiting-trap.md"
-    - "thread-end/ark/ark07/ark0711_20260806_start-query.md"
+    - "__archives/ARC-007/thread-end/ark/ark07/ark0711_20260806_start-query.md"
     - "ark-project/ark01/thread-index/Ark0115_20260516_fog-zone-kernel-harvest-thread-seal-gate_v001.md"
     - "ark-project/ark01/thread-index/Ark0123_20260529_sdw-fog-to-workout-reality-response-first-report-rail_v001.md"
     - "ark-project/ark01/thread-index/Ark0124_20260530_ai-dream-sdw-fog-to-workout-purpose-lock-thread-analysis_v001.md"

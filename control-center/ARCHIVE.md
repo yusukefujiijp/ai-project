@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.5.0"
+version: "0.6.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-26"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.5.0"
+updated: "2026-09-29"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.6.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -403,4 +403,105 @@ ChatGPT長期メモリを保存Sourceに使わず、現在の会話と確認済�
 
 Skill作成・導入、GitHub共有、旧十資料の退役、現用案内・5W1H更新、Remote確認は上記の範囲で完了した。この確認追記は同じ案件への記録更新であり、Skill再改訂や新試験ではない。追記自身の自己SHAは埋め込まず、保存後の再取得で照合する。次の接続はHuman Reviewとし、通常Unknownや残る別Branchを自動実行の理由にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.5.0
+
+## ARC-007
+
+**旧Thread-EndとThread Index／Mission Craftの常設入口を退役させ、27原本・成果・出典への接続を保持する。**
+
+状態：**Human承認済み / 実装パッケージ / Remote確認結果は§Gへ追記**。Thread-End系21原本と蒸留・Mission Craft系6原本を、一つの案件の中で役割を分けて扱う。
+
+### A. Humanの選択と今回の権限
+
+2026-09-29 JST、Ark27:07のHumanは、GitHub整理整頓への集中を継続し、`thread-end/`・`_thread-index/`・`_thread-mission/`の三つを「取り敢えず、archive化したい」と提示した。最初は実装を止めたLiving Reviewを求め、AIは役割・保存価値・参照影響を調べた。
+
+AIは「三ディレクトリ27原本の保管＋現役案内と出典接続の限定整合」を推奨し、旧方式を常設の実行入口から外し、必要時に参照・再採用する歴史資料へ移す意味を提示した。その直後、Humanは「Execute GitHub OK」「Human Seal OK」「実行して下さい」と、提示済み範囲の継続実行を承認した。本案件の権限はこのCurrent Human入力に基づき、Source06や別Threadの過去承認から借りない。
+
+以上は現在の会話に基づく編集要約で、引用符内のみ短い原文抜粋。検証可能な会話URLは提供されていない。Humanの意味・選択・承認、Ark27:07 AIの調査・執筆・操作・検証、GitHubのauthor／committerと保存時刻を区別する。ChatGPT長期メモリは保存Sourceに使わない。
+
+### B. 何を退役させ、何を残すか
+
+| Node | Edge | 保存する価値と現在の位置づけ |
+|---|---|---|
+| `thread-end/`：21原本 | Threadの状態 → Handoff／Reboot Map／Start QueryとOne-Query Reboot | 方式・案内5文書と過去Thread資料16件。移行の意味、Human Seal、SourceとTargetの成功判定の区別、当時のCorrectionを同一原本で保持 |
+| `_thread-index/`：3原本 | Raw Thread → Distilled Thread Source | Missionに直結する材料だけへ過適合せず、場面・Humanの願い・AIの誤りと回復・未消化の価値を残すCraftを歴史資料として保持 |
+| `_thread-mission/`：3原本 | Distilled Source → Thread固有のMission Card | Sourceの深さとMissionの結晶化は別工程。Root Guard・誤読防止・Living Review等の設計価値を保持し、当時の固定制作手順を通常義務から外す |
+| [Ark01 Thread Index](../ark-project/ark01/thread-index/README.md)と[Mission Card棚](../ark-project/ark01/mission-card/README.md) | 過去の制作方式 → 保存済みの成果 | 26分析原本・manifest・既存Cardをその場所に保持。二READMEのみ、旧Craftの現在の推奨と当時の制作根拠を分ける |
+| 現在の[共通移行契約](../prompts/ai-next-thread-handoff.md) | 現在の依頼・Handoff → 移行準備とTarget再構成 | Current契約を保持する。旧三系統の全機能がこの契約や新Skillへ移植済みという意味ではない |
+
+旧入口はRoot README・ARK・System・Note・Ark Domainに残り、Ark01 Mission Card側にも旧制作Workflowの推奨があった。物理移動だけでは旧手順を通常利用する案内が残るため、移動と現用案内の整合を同じ実装範囲にした。古い・未使用と推定した・似た名前という理由だけではなく、Humanの現在の選択と具体的な役割・依存を根拠とする。
+
+現状維持は旧方式を常設の選択肢として残す。原本を除去してGit履歴だけへ委ねる案は、由来の発見を難しくする。全面的な後継Skillの制作を先行条件にする案は、今回の整理目的を拡張する。このため、既存アーカイブ方式を使う限定退役を採用した。
+
+期待する効果は、現在の入口選択と過去の知恵の参照を区別しやすくすること。実際の利用負担軽減・長期効果・全AIでの理解は未観測。簡潔なHuman I/Oや入口整理を、AIの必要な検討・読解・説明の省略へ変換しない。
+
+### C. 調査基点・変更単位・5W1H
+
+- **いつ／基点**：2026-09-29 JSTの調査・承認。実装直前のmainは[commit 04055cb](https://github.com/yusukefujiijp/ai-project/commit/04055cba7279a6da95e0105c819729624c23b3aa)、Treeは`f4e501555e0558a0d40a5dc143f42fa5c00b4fc1`。再帰Treeは非省略、385ファイル。保存の正確な時刻は§GのGitHub結果で区別する。
+- **誰**：YusukeJPが対象・意味・実行を承認。Ark27:07 AIが調査、原本保管と案内の設計・執筆、GitHub操作、Remote照合を担う。MainはArk27:07、control-centerはai-project全体の司令塔。Ark28の役割・支援入口は変更しない。
+- **どこ／何を**：三ディレクトリ27原本を`__archives/ARC-007/<元の相対パス>`へ移し、元27パスを除去する。互換原本・Stubは残さない。現在の案内5文書、成果物のREADME2文書、出典3文書、台帳・索引3文書の計13既存文書を限定更新する。
+- **なぜ**：旧方式の常設推奨を退役させながら、当時の知恵・未確定状態・成果・出典を辿れるようにする。ファイル総数の削減自体を成功条件にしない。
+- **どう**：元のGit blobを新住所へ直接参照し、原文・改行・metadata・EOFを含め内容を保持する。移動と現用接続を同じTreeへまとめ、mainの進行を公開直前に確認する。Remote再取得・対象外保持・Binding確認後に実施結果を追記する。
+
+調査では、三方式のREADME・Runtime／Craft・Queryの9文書と二Routerを全文読解した。過去16資料は状態・依存・参照箇所を重点確認し、27実体の取得を確認した。全385テキストファイルの参照文字列照合では、対象の元パス・ファイル名・現在のblob SHAを調べた。27原本のSHAを直接固定参照する記述は見つからなかった。これは全385本文の全面意味監査、全Git履歴・全外部利用・暗黙の依存の不存在証明ではない。
+
+### D. 二十七原本の対応
+
+| 元のNode | Edge：同一内容の保存先 | 保持するGit blob |
+|---|---|---|
+| `_thread-index/README.md` | [保管原本](../__archives/ARC-007/_thread-index/README.md) | `c2c00243833e30994206c96aeb0f42888745d119` |
+| `_thread-index/thread-index_card-craft.md` | [保管原本](../__archives/ARC-007/_thread-index/thread-index_card-craft.md) | `fb9e5f3b28e703f4d6f0f0f0acf6db3f4fa11965` |
+| `_thread-index/thread-index_card-craft_query.md` | [保管原本](../__archives/ARC-007/_thread-index/thread-index_card-craft_query.md) | `3f00c261b8f7bc26ab5182fed424ba53d2b245ea` |
+| `_thread-mission/README.md` | [保管原本](../__archives/ARC-007/_thread-mission/README.md) | `8f4a890685e316e1ab8174dfc58419166e7ca882` |
+| `_thread-mission/thread-mission_card-craft.md` | [保管原本](../__archives/ARC-007/_thread-mission/thread-mission_card-craft.md) | `cc189333ef32fd8a0557e7fe71ce61238ec7d347` |
+| `_thread-mission/thread-mission_card-craft_query.md` | [保管原本](../__archives/ARC-007/_thread-mission/thread-mission_card-craft_query.md) | `32dca7822a982e64a42cd039796509b3313bd85b` |
+| `thread-end/README.md` | [保管原本](../__archives/ARC-007/thread-end/README.md) | `b09019703e552993cc13f7b6a5231aba70a0d395` |
+| `thread-end/ai-thread-end.md` | [保管原本](../__archives/ARC-007/thread-end/ai-thread-end.md) | `b00f6ce802590e9280320b70897eb0ebd12b49f1` |
+| `thread-end/ai-thread-end_query.md` | [保管原本](../__archives/ARC-007/thread-end/ai-thread-end_query.md) | `4dd30988a4f2e7e41b61c2b77892615e9a483520` |
+| `thread-end/ark/README.md` | [保管原本](../__archives/ARC-007/thread-end/ark/README.md) | `3f20ba3a490f7913a34a7ab3e8f4cdf0996e0707` |
+| `thread-end/ark/ark07/README.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark07/README.md) | `5654e6a94038e1f0d4470c46f84d0f51dc8bc978` |
+| `thread-end/ark/ark07/ark0705_20260722_handoff_v003.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark07/ark0705_20260722_handoff_v003.md) | `cf3afc5c1f1a9d6485b82bcf6774e701098afd5c` |
+| `thread-end/ark/ark07/ark0705_to_ark0708_20260731_reboot-map.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark07/ark0705_to_ark0708_20260731_reboot-map.md) | `6d14ca80f52b20f10e508f3140b80727bfd8ec70` |
+| `thread-end/ark/ark07/ark0708_20260731_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark07/ark0708_20260731_start-query.md) | `4ce6310c77efe4279dd72556663b0d293b0015f8` |
+| `thread-end/ark/ark07/ark0711_20260806_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark07/ark0711_20260806_start-query.md) | `6d2a0bb998e195f1284137fa5d2f43af1c558b6f` |
+| `thread-end/ark/ark0705_20260722_handoff.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0705_20260722_handoff.md) | `0ccff2b94bfe43aaadddb3eb33aa2227f92de862` |
+| `thread-end/ark/ark0705_20260722_handoff_v002.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0705_20260722_handoff_v002.md) | `215e0f0405ac5278c41a9478237135df9764945a` |
+| `thread-end/ark/ark0705_to_ark0706_20260724_reboot-map.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0705_to_ark0706_20260724_reboot-map.md) | `5850b84f661f4497cdb2e2c239ca13144b36ebed` |
+| `thread-end/ark/ark0705_to_ark0707_20260726_reboot-map.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0705_to_ark0707_20260726_reboot-map.md) | `f4b3f7750763ff462cf1081383cb36b93ee0786d` |
+| `thread-end/ark/ark0706_20260724_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0706_20260724_start-query.md) | `2a85e61f9b759d09d0926e336c90566cef92d0e1` |
+| `thread-end/ark/ark0707_20260726_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark0707_20260726_start-query.md) | `5aa64a4746d17e6c7269d5df10698def4cbdf294` |
+| `thread-end/ark/ark08/ark0707_20260726_handoff.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark08/ark0707_20260726_handoff.md) | `40cb603e57570f9541c608b4ced59c3ca9d93426` |
+| `thread-end/ark/ark08/ark0707_to_ark0801_20260729_reboot-map.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark08/ark0707_to_ark0801_20260729_reboot-map.md) | `02dd825dffb27ab59965189bfda85493ca15705a` |
+| `thread-end/ark/ark08/ark0801_20260729_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark08/ark0801_20260729_start-query.md) | `feeb9c2b3b0d0a55f6ae8aa18ffb9e1c7939009c` |
+| `thread-end/ark/ark17/ark1701_20260802_handoff.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark17/ark1701_20260802_handoff.md) | `b434483a8081d9213a9d3442971a7f310cbfa02b` |
+| `thread-end/ark/ark17/ark1701_to_ark1702_20260802_reboot-map.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark17/ark1701_to_ark1702_20260802_reboot-map.md) | `342c915f069b298fb14e943179207c4d4ddd9c35` |
+| `thread-end/ark/ark17/ark1702_20260802_start-query.md` | [保管原本](../__archives/ARC-007/thread-end/ark/ark17/ark1702_20260802_start-query.md) | `97877bd35f250bd50886d85636822b87bd70116a` |
+
+保管原本には注記を挿入せず、旧`canonical_path`も改変しない。当時の住所・命令・`active`・`pending`・`NOT_RUN`等は歴史記述であり、現在の実行権限や再開指示ではない。アーカイブしたことから、当時のMissionを完了・失敗・中止のいずれにも再分類しない。旧Routerの自動移動禁止と明示Human移行Missionによる再検討条件を踏まえ、今回は§Aの具体的な承認に基づいて移す。
+
+### E. 現用接続と保持した歴史
+
+| 対象 | 今回の変更 | 変更しない意味 |
+|---|---|---|
+| Root README・ARK・System・Note・Ark Domain | 旧方式の通常実行案内をARC-007の歴史資料案内へ変更 | Current共通移行契約、Main／Support、憲章、成長履歴、既存Runtimeの版 |
+| Ark01 Thread Index／Mission CardのREADME | 保持する成果を明記し、旧Craft・追加候補・制作Workflowを歴史的説明へ区分 | 26分析原本・manifest・既存Cardの本文、制作時の出典、未確定評価 |
+| [Ark11 Source Lineage](../ark-project/ark11/ark11.md#25-source-lineage)・[Waiting Trap Seed](../ai-ark-seed/ai-ark-seed-cards/foresight-waiting-trap.md) | Ark07:11原本の保管先と移動前snapshotを接続し、当時の住所を保持 | Field・Evidence・Boot・実施状態。原本保存を新しい実証として数えない |
+| [AI-to-AI Communication §23.2](../prompts/ai-to-ai-communication.md#232-ark-sources) | Ark07:05 Handoffの保管先・元住所・固定snapshotを接続 | 当時のField Test結果、Protocolの実行契約、単一Prompt化の成果 |
+| 本書・PLAN・__archives索引 | 理由・範囲・保存実体・確認結果を同じ案件へ接続 | 過去案件の証拠、日付付きRepository Review、Ark21 sandbox、当時の承認 |
+
+調査で見つかった旧`_thread-end/`（先頭underscore付き）の歴史記述を、今回の`thread-end/`へ機械置換しない。既存CardのCraft名も当時の制作根拠として残す。STR-001の修復履歴やARC-006で説明した古い参照を、今回の所在地へ遡及的に塗り替えない。
+
+### F. 復元・互換性・今回の境界
+
+[今回の移動前snapshot](https://github.com/yusukefujiijp/ai-project/tree/04055cba7279a6da95e0105c819729624c23b3aa)は、今回移した原本・元配置と変更前の案内を回復する根拠である。一方、旧Plan Modeへ依存するArk07資料については、ARC-006が指定した[さらに前のsnapshot](https://github.com/yusukefujiijp/ai-project/tree/57d3d7f1f5d46cbcaefdc752608acb7021c06bae)も保持する。今回の移動前snapshotだけで、既に退役した依存まで復活するとは扱わない。
+
+原本の同一性、出典へ到達できること、当時の文脈を調べられること、旧Bootが現在のmainで動作することは別である。保管内の相対リンク・main指定・起動命令を現在の実行互換性として保証せず、旧Bootや未実施試験を再実行しない。具体的な現用consumerや外部参照の必要性が後から判明した場合は、影響する枝の接続・復元・再採用を現在のHumanの目的と権限から検討し、本案件へ理由と結果を追記する。
+
+Scope外は、Graph／One-Tableの固定Binding移行、ARC-002の元パス除去、D04、Ark01成果の一括変換、旧試験再開、新Skill制作、別のアーカイブ、実Thread移行。旧Plan Mode v005の未実施試験は目的変更で終了した履歴として保持し、今回のNext Gateにしない。新Plan Modeの導入・共有・限定確認と、長期効果・全AI互換性は区別する。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのCorrection・STOP・Final Sealと適用Guardを保持する。器の退役を信仰・Mission・Humanの経験の処分へ変換しない。
+
+### G. 保存後確認
+
+この実装パッケージのRemote確認はまだ記録していない。保存後に対象40本文（保管27＋更新13）、Tree、commit、mainを再取得し、原本のblob一致、元パス除去、更新内容、リンク・EOF、対象外保持、Ark27:07の固定Bindingを照合する。確認前に完了や旧Boot成功を宣言しない。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.6.0

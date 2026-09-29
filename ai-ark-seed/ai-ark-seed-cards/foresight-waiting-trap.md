@@ -17,7 +17,12 @@ origin:
   thread: "Ark07:11"
   thread_start_date: "2026-08-06"
   source:
-    path: "thread-end/ark/ark07/ark0711_20260806_start-query.md"
+    path: "__archives/ARC-007/thread-end/ark/ark07/ark0711_20260806_start-query.md"
+    original_path: "thread-end/ark/ark07/ark0711_20260806_start-query.md"
+    original_ref: "04055cba7279a6da95e0105c819729624c23b3aa"
+    relocation_date: "2026-09-29"
+    relocation_record: "control-center/ARCHIVE.md#arc-007"
+    content_preservation: "same Git blob; historical source, not current field status"
   origin_field: "寝落ち前口腔ケア"
   live_field_test: "not_started"
 ---
@@ -37,6 +42,8 @@ evidence_level: "E0"
 ```
 
 ### Origin
+
+出典は[ARC-007](../../control-center/ARCHIVE.md#arc-007)で同一内容のまま[保管先](../../__archives/ARC-007/thread-end/ark/ark07/ark0711_20260806_start-query.md)へ移動した。[移動前snapshot](https://github.com/yusukefujiijp/ai-project/blob/04055cba7279a6da95e0105c819729624c23b3aa/thread-end/ark/ark07/ark0711_20260806_start-query.md)も保持する。以下の`not_started`・E0等は当時の記述であり、所在変更によって現在の実施状態を再認定しない。
 
 ```yaml
 project: "Ark07"

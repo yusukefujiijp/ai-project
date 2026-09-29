@@ -49,6 +49,11 @@ route_alignment:
   base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
   scope: "D01: Gate Index only; preserve historical growth, old skill paths and original next-step records"
   change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Gate Index historical route only; append-only growth records and field states retained"
 ---
 
 # Ark System
@@ -503,12 +508,12 @@ gate_index:
     role: "THREAD_CONTINUE / CHAPTER_TRANSITION / SUPPORT_RECONNECTの共通移行契約"
     guard: "現在の依頼と対象Runtimeへ適応する。読むことだけで移行・保存を開始しない"
 
-  preserved_thread_end:
-    path: "thread-end/README.md"
-    role: "保存されているThread-End方式の入口"
-    use_when: "その方式が明示指定され、Current Requestに適用される場合"
-    artifact_router: "thread-end/ark/README.md"
-    guard: "共通移行契約や明示Handoffへの自動代替ではない"
+  historical_thread_end:
+    path: "control-center/ARCHIVE.md#arc-007"
+    role: "退役したThread-End方式・過去Artifactの原本と由来"
+    use_when: "歴史資料・出典・復元条件を確認する場合"
+    archive_entry: "__archives/ARC-007/thread-end/README.md"
+    guard: "通常の実行入口ではない。再採用は現在の目的・依存・Human権限から判断する"
 
   growth_system:
     path: "_system/ark-system.md"
@@ -523,7 +528,7 @@ gate_index:
       status: "module_inside_ark_system_for_now"
 ```
 
-開始は[Ark Domain](../ark-project/README.md)、移行準備は[共通移行契約](../prompts/ai-next-thread-handoff.md)、保存された方式の利用は[Thread-End入口](../thread-end/README.md)へ進む。保存住所・成果物の役割は選ばれた契約で解決し、旧 `_thread-start/`・`_thread-end/`を通常入口として復活させない。
+開始は[Ark Domain](../ark-project/README.md)、移行準備は[共通移行契約](../prompts/ai-next-thread-handoff.md)、旧Thread-End資料の調査は[ARC-007](../control-center/ARCHIVE.md#arc-007)へ進む。保存住所・成果物の役割は現在選ばれた契約で解決する。退役資料の起動命令や旧 `_thread-start/`・`_thread-end/`を通常入口として復活させない。
 
 §10のGrowth Entry、§12–13に残る旧SkillやField Testの次手は、その形成時点の記録として保持する。当時のパス・commit・予定を、現在の実在保証や今回の実行命令へ変換しない。Root・Human Authority・Guardは保持する。修復の経緯と確認範囲は[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md#d01)にある。
 

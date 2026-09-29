@@ -3,7 +3,7 @@ title: "AI-to-AI Communication"
 display_title: "AI間コミュニケーション"
 version: "v002-candidate"
 date: "2026-07-30"
-updated: "2026-09-25"
+updated: "2026-09-29"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 physical_file: "ai-to-ai-communication.md"
 candidate_repository_path: "prompts/ai-to-ai-communication.md"
@@ -51,6 +51,11 @@ seal:
   github_write: "Human Seal granted 2026-07-30 for prompts/ai-to-ai-communication.md on main"
   canonical_promotion: "not authorized"
   single_prompt_revision: "Human-authorized 2026-09-25 in Ark27:06; independent behavior and long-term effects unverified"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Historical Ark source locator only; single-prompt runtime and historical test evidence unchanged"
 ---
 
 # AI-to-AI Communication v002 Candidate
@@ -1766,9 +1771,15 @@ primary_sources:
 
 ### 23.2 Ark Sources
 
+Ark07:05のHandoffは[ARC-007](../control-center/ARCHIVE.md#arc-007)で[保管先](../__archives/ARC-007/thread-end/ark/ark0705_20260722_handoff.md)へ移動した。[移動前snapshot](https://github.com/yusukefujiijp/ai-project/blob/04055cba7279a6da95e0105c819729624c23b3aa/thread-end/ark/ark0705_20260722_handoff.md)と元の住所を保持する。出典の所在を整える変更であり、当時のField Test結果や本Protocolの実行契約を改訂するものではない。
+
 ```yaml
 ark_sources:
-  - path: "thread-end/ark/ark0705_20260722_handoff.md"
+  - path: "__archives/ARC-007/thread-end/ark/ark0705_20260722_handoff.md"
+    original_path: "thread-end/ark/ark0705_20260722_handoff.md"
+    original_ref: "04055cba7279a6da95e0105c819729624c23b3aa"
+    relocation_record: "control-center/ARCHIVE.md#arc-007"
+    preservation: "same Git blob; historical experience source"
     relevance:
       - "Alan Kay Lens式AI間Messaging Field Test"
       - "Material Delta continuation"

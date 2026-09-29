@@ -11,6 +11,11 @@ route_alignment:
   base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
   scope: "D01: purpose-specific handoff and harvest storage routes; note identity and authority rules retained"
   change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Storage guidance for retired Thread-End only; current shared transition route retained"
 ---
 
 # _note
@@ -73,7 +78,7 @@ A note may later influence README, protocol, or workflow files, but it does not 
 | Node | Edge | 保存判断 |
 |---|---|---|
 | 現行ArkのThread継続・章移行・補助線再接続 | [共通移行契約](../prompts/ai-next-thread-handoff.md) → 明示Handoff／対象Runtime | 対象単位・役割・Exact Pathsを解決する。通常のThread三ファイルはREADMEが安定Runtime、handoffが初期化、stateが可変状態を所有する |
-| 保存されているThread-End方式を明示利用 | [Thread-End入口](../thread-end/README.md) → [Artifact入口](../thread-end/ark/README.md) | その方式のBinding・命名・保存先に従う。既存の平置き履歴は保持する |
+| 旧Thread-End資料の出典・保存内容を確認 | [ARC-007](../control-center/ARCHIVE.md#arc-007) → [保管原本](../__archives/ARC-007/thread-end/README.md) | 歴史資料として読む。新規保存先・通常移行手順へ自動適用せず、当時の参照関係は案件の固定snapshotから辿る |
 | Thread固有のHarvest | Current Runtime／該当Projectの所有資料 | その成果の意味に合う既存保存先へ接続する。すべてをHandoffやNoteへまとめない |
 | 方法の補助となるLiving Note | このREADME → `_note/` | 専用の所有資料へ昇格していない支援知識を保持する |
 

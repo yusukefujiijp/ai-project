@@ -56,6 +56,11 @@ ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; expl
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
 expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "Historical Thread-End route only; Ark27:07 Main, Ark28:02 support routes and their evidence retained"
 ---
 # Ark Project
 
@@ -433,7 +438,7 @@ topology_integrity:
   named_project_family: "../projects/"
   reusable_prompts: "../prompts/"
   temporal_handoff: "../prompts/ai-next-thread-handoff.md"
-  preserved_thread_end_assets: "../thread-end/README.md; use only when selected and applicable"
+  historical_thread_end_assets: "../control-center/ARCHIVE.md#arc-007; retired methods and source provenance, not a normal execution entry"
   predecessor_container_in_current_route: false
 ```
 

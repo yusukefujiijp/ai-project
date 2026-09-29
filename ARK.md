@@ -6,7 +6,7 @@ version: "v002-candidate"
 edition: "AI-First Identity, Agent-Operability, and Return-Home Kernel"
 status: "active-candidate / human-sealed for field validation"
 created: "2026-07-23"
-updated: "2026-09-22"
+updated: "2026-09-29"
 last_reality_reviewed: "2026-09-01"
 reality_review_base_commit: "976789ced38e1d303514df1eedbace61b82ba229"
 reality_review_scope: "Ark23:12 state-dependent Human Reality, willpower-independent execution, AI-first reader identity, agent-operability, and Ark domain routing"
@@ -80,6 +80,11 @@ route_alignment:
   base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
   scope: "D02: File Ecology learning owners and transition-role summaries; identity kernel/version/EOF retained"
   change_record: "control-center/changes/STR-001-navigation-and-ownership.md"
+archive_navigation_patch:
+  date: "2026-09-29"
+  base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
+  change_record: "control-center/ARCHIVE.md#arc-007"
+  scope: "File Ecology historical route only; constitutional identity and runtime edition unchanged"
 ---
 
 # ARK.md
@@ -881,13 +886,13 @@ prompts/
 prompts/ai-next-thread-handoff.md
 = Current Shared Transition Contract / adapts to the selected Runtime
 
-thread-end/README.md
-= Preserved Thread-End assets / use when explicitly applicable
+control-center/ARCHIVE.md#arc-007
+= Historical Thread-End and Thread Craft provenance / retired from normal execution routes
 ```
 
 学びの保存判断は[AGENTS §1](AGENTS.md#1-role-map--文書の身分を混ぜない)と整合させる。出来事は該当経験原本、成功の意味と成立条件は[成功事例](success-cases/README.md)、承認された方法改訂はその方法の所有資料へ接続する。[Task経験索引](task-mode-system/experience/README.md)を全領域の学習台帳にせず、存在しない旧 `_tasks/lessons.md` を埋めるためだけの台帳を作らない。同じ経験を複数文書で参照しても、独立した複数の実証として数えない。
 
-この案内整合の変更理由・担当・確認範囲は[STR-001](control-center/changes/STR-001-navigation-and-ownership.md#d02)が所有する。
+この案内整合の変更理由・担当・確認範囲は[STR-001](control-center/changes/STR-001-navigation-and-ownership.md#d02)が所有する。後続の旧Thread-End・Thread Craft退役は[ARC-007](control-center/ARCHIVE.md#arc-007)へ進む。原本の保管は、現在の共通移行契約やRoot・Human Authorityの変更ではない。
 
 ```yaml
 file_ecology_guard:
