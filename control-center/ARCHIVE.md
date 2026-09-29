@@ -408,7 +408,7 @@ Skill作成・導入、GitHub共有、旧十資料の退役、現用案内・5W1
 
 **旧Thread-EndとThread Index／Mission Craftの常設入口を退役させ、27原本・成果・出典への接続を保持する。**
 
-状態：**Human承認済み / 実装パッケージ / Remote確認結果は§Gへ追記**。Thread-End系21原本と蒸留・Mission Craft系6原本を、一つの案件の中で役割を分けて扱う。
+状態：**27原本の保管・通常入口の退役・出典整合・Remote確認完了**。Thread-End系21原本と蒸留・Mission Craft系6原本を、一つの案件の中で役割を分けて扱う。
 
 ### A. Humanの選択と今回の権限
 
@@ -502,6 +502,13 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### G. 保存後確認
 
-この実装パッケージのRemote確認はまだ記録していない。保存後に対象40本文（保管27＋更新13）、Tree、commit、mainを再取得し、原本のblob一致、元パス除去、更新内容、リンク・EOF、対象外保持、Ark27:07の固定Bindingを照合する。確認前に完了や旧Boot成功を宣言しない。
+1. **実装commitと担当。** [`8f013f3`](https://github.com/yusukefujiijp/ai-project/commit/8f013f3480f6026008e1505c72739127a0a5cd3c)。Parentは`04055cba7279a6da95e0105c819729624c23b3aa`、Treeは`6e9ff8e2b6fbac9d812debf515ee926b0f8e1c97`。GitHubのauthor／committerはともに`yusukefujiijp`、保存時刻は`2026-09-29T11:59:49Z`（2026-09-29 20:59:49.000 JST）。Humanの意味・承認と、AIの執筆・検証担当は§A・Cの区別を保持する。
+2. **Remote直接再取得。** `2026-09-29T12:00:52.446Z`（2026-09-29 21:00:52.446 JST）に、上記commitを指定して40本文（保管27＋更新13）を直接再取得した。27保管原本は§Dの元blob・byte数と一致し、13更新本文は保存予定の全文・blobと一致した。Toolの保存成功応答だけで完了としなかった。
+3. **配置と対象外保持。** 非省略の再帰Treeで、元27パスと旧三ディレクトリが存在せず、保管27パスが存在することを確認した。追加27・除去27・既存更新13の計67パス差分で、ファイル総数は385のまま。対象外345ファイルのblob・modeはParentと同一。Ark01の26分析原本・manifest・既存Card、旧Review・sandbox・過去案件原本を保持した。
+4. **MainとBinding。** commit・Tree・main参照を再取得し、mainが上記実装commitを指すことを確認した。Ark27:07 Stateは変更せず、そこから参照するRuntime `b24c29e59d291fa58c3bf2c4c1fe4770fe468d70`、Handoff `1546f634ed0191b7b6ad22e73307885d9603a0d5`、章Runtime `e7caf9882a212cbda186362001e49791cff8a8ce`の固定Bindingを照合した。共通移行契約・AGENTS・Ark28資料も保持。既に確認済みのBootは再実行していない。
+5. **構造と意味の確認。** 更新13文書のFrontmatter YAML、必要なExact EOF、Code Fence、251件の相対リンクと更新対象内の52件の見出し参照を照合した。通常の入口は歴史資料案内へ変更し、Ark01の制作手順は当時の説明へ区分した。Ark11・Seed・AI間通信の出典は保管先と固定snapshotへ接続し、元住所と当時のEvidenceを保持した。保管原本内の旧相対リンクは現行互換性の検査対象にせず、§Fの境界を適用する。
+6. **確認の限界。** 以上は原本保存・現用案内・出典・構造・Remote実体の確認である。旧Bootの動作、全外部consumerの不存在、他AIの実読解、Human UI操作、生活上の効果、長期の負担軽減は実証していない。
+
+三ディレクトリの退役と限定した接続整合は、上記の範囲で完了した。この完了追記は同じ案件の検証記録であり、別の整理・Skill改訂・次Trialの開始ではない。追記自身の自己SHAは埋め込まず、保存後に再取得して本文・EOF・Treeを照合する。次の接続はHuman Reviewとする。
 
 EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.6.0

@@ -3,7 +3,7 @@ title: "ai-project構造整理 — 診断から改善へ"
 version: "0.9.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "Prior ARC/STR evidence retained / ARC-007 legacy thread methods retirement authorized / unrelated fixed-binding work remains"
+status: "Prior ARC/STR evidence retained / ARC-007 retirement and source connections remotely verified / unrelated fixed-binding work remains"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
@@ -66,7 +66,7 @@ Humanは、別Queryとの分割は短期の起動には利益があったが、�
 
 2026-09-29、HumanはGitHub整理整頓への集中を続け、`thread-end/`・`_thread-index/`・`_thread-mission/`を具体的な対象として選んだ。Plan-onlyのLiving Review後、27原本の保管と現役案内・出典の限定整合を承認した。過去の候補順位や固定参照移行を、今回の前提Gateにしない。
 
-旧方式と作られた成果を区別し、Ark01の分析26件・manifest・既存Mission Cardは保持する。原本の保存、現在の推奨入口の退役、出典接続、旧Bootの互換動作も区別する。実装・Remote確認・復元条件の正本は[ARC-007](ARCHIVE.md#arc-007)。本PLANでは案件の承認やThread状態を二重管理しない。
+旧方式と作られた成果を区別し、Ark01の分析26件・manifest・既存Mission Cardは保持する。原本の保存、現在の推奨入口の退役、出典接続、旧Bootの互換動作も区別する。27原本の移動・案内・出典整合は保存・Remote確認まで完了した。実装・確認・復元条件の正本は[ARC-007](ARCHIVE.md#arc-007)。本PLANでは案件の承認やThread状態を二重管理しない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -237,7 +237,7 @@ flowchart TD
 | E08：アーカイブの判断と記録 | Human訂正→四文書 | README・本書・ARCHIVE・__archives入口を整合する。今回の保存後観測は§10に記録した | 保存・整合確認済み |
 | E10：移動前の本流合流 | 司令塔の成果→既存Ark27:05 | [補足接続](#reconnect-ark27-05)で、目的・保存済み成果・未承認の案件・次の判断を渡す | 05で受入れ済み。後続観測は同節§8。移動承認ではない |
 | E09：最初の退役案件 | D06→ARC-001→__archives | 対象、提案理由、参照対策、承認・実施状態は[ARC-001](ARCHIVE.md#arc-001)を参照する | 個別承認・移動・Remote確認まで完了 |
-| E11：旧Thread方式の退役 | Humanの三対象選択 → ARC-007 → 歴史資料と現役入口の分離 | 27原本を同一blobで保管し、案内・成果物README・出典を限定整合する | Human承認済み。実装・Remote確認は[ARC-007](ARCHIVE.md#arc-007)が所有 |
+| E11：旧Thread方式の退役 | Humanの三対象選択 → ARC-007 → 歴史資料と現役入口の分離 | 27原本を同一blobで保管し、案内・成果物README・出典を限定整合する | 移動・案内・出典をRemote確認済み。根拠は[ARC-007](ARCHIVE.md#arc-007) |
 | E01：入口への接続 | Root README→control-center | Public Front Doorからrepo全体の司令塔へ案内する | STR-001で保存・Remote確認済み。根拠は変更記録 |
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と通常入口を整える | D03は確認済み。D02はSTR-001で保存・Remote確認済み |
 | E03：実効経路の修復 | D01・D05→適切な資料 | 用途別の入口とOKFペア両側の現在住所を整える | STR-001で保存・Remote確認済み |
