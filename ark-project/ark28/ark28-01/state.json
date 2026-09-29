@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 4,
+    "revision": 5,
     "created": "2026-09-25",
-    "updated": "2026-09-29",
+    "updated": "2026-09-30",
     "canonical_path": "ark-project/ark28/ark28-01/state.json",
     "date_scope": "Current update date in Asia/Tokyo; original creation metadata remains historical. No UI creation time asserted.",
-    "change_reason": "Complete authorized Ark28:01→02 preparation after exact remote rereads of Source material, unchanged map distribution, sequential Target triad and support routes. Record terminal receipt without certifying unseen Target/Human actions."
+    "change_reason": "Human closed Ark28:01 after returning to complete post-handoff work. Preserve the original transition receipt and fixed bindings; add the later map/Living Review/startup-prompt成果, Source record revision 3, current skill-reference observation and Human-reported transition. Target state and routes remain owned by their current context."
   },
   "identity": {
     "source": "Ark27:05",
@@ -54,7 +54,8 @@
       "physical Reset trials",
       "ChatGPT long-term memory export"
     ],
-    "current_preparation_scope": "Human approved the preceding Ark28:01→Ark28:02 plan: Source records/harvest/state, unchanged installed map distribution, Target triad, support routing and scoped verification. No Main ownership transfer or automatic real-life task."
+    "current_preparation_scope": "Human approved the preceding Ark28:01→Ark28:02 plan: Source records/harvest/state, unchanged installed map distribution, Target triad, support routing and scoped verification. No Main ownership transfer or automatic real-life task.",
+    "current_save_scope": "2026-09-30 06:14:51+09:00、Humanが本Sourceの終了と移行準備以降のGitHub上書き保存を依頼。既存Source経験原本と可変Stateの必要な更新・検証、既存Systemの適否と再利用Promptの説明を含む。新移行・Targetの現在地上書き・共通契約の改訂を自動開始しない。"
   },
   "bindings": {
     "runtime": {
@@ -85,11 +86,11 @@
       "path": "ark-project/ark28/ark28-01/task-records.json",
       "record_id": "ark28-01-task-records",
       "format_version": "v001",
-      "minimum_revision": 2
+      "minimum_revision": 3
     }
   },
   "now": {
-    "phase": "SOURCE_PREPARED_REMOTE_VERIFIED_AWAITING_ARK28_02_RECONSTRUCTION_AND_HUMAN_LAST_MILE",
+    "phase": "SOURCE_CLOSED_AFTER_POST_HANDOFF_WORK",
     "support_purpose": "Ark27 Mainを保持し、開始支援・現在地・想起など、現在のHuman依頼に柔軟に応じる。Mainへの正式移管はない。",
     "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
     "existing_input": "Accept any new Human input already supplied; do not ask it again.",
@@ -101,7 +102,14 @@
     ],
     "live_b_gate": "NOT_INFERRED_FROM_HISTORICAL_REPORTS",
     "main_context": "Current Domain main route is Ark27:07; preserve current Human designation and Main authority. The old GitHub-work theme is not a command to resume it.",
-    "current_material": "Portal初版・実際の明示呼出し・Human好評価を保持。Source記録とmap共有、Target02三点セット、補助入口の保存・照合を完了。実際のTarget02受入れとHuman側操作は次段階。"
+    "current_material": "移行準備後にmapのLiving Review→Next step、AI Living Review共通本文と関連資料、Boot→現行mapの起動文を完成。Humanは起動文を「完成した」と評価し、Sourceの差分保存とThread閉鎖を明示した。原文・形成順・検証境界はtask-records.json revision 3のpost-handoff-s01–s10を参照する。",
+    "closure": {
+      "status": "HUMAN_CLOSED",
+      "human_input_at": "2026-09-30T06:14:51+09:00",
+      "source": "task-records.json post-handoff-s10",
+      "remaining_authorized_work": "Final persistence/reread verification and requested explanation only; afterward no automatic continuation.",
+      "target_context": "Human reports this is work done after moving to the next thread. Do not route Current support back to Source01 or overwrite Target02's independent progress."
+    }
   },
   "evidence": {
     "confirmed_human": [
@@ -119,6 +127,21 @@
         "claim": "開始支援・map/Navigator採用・Portal入口/B状態中心・段階的成長・次Thread準備の承認",
         "source": "task-records.json revision 2 and harvest.md",
         "kind": "Human reports, corrections and authorization; not all empirical outcomes"
+      },
+      {
+        "claim": "Living Reviewの当初対象は起動文そのものと訂正。その後mapへ統合し、Next step直前の二節を有機的に連動させる方針と実装を承認した。",
+        "source": "task-records.json post-handoff-s01–s03",
+        "kind": "Human correction, approved design and observed implementation separated in the record"
+      },
+      {
+        "claim": "GitHubの共通本文はCurrent/他AI/Future AIが主に読み、Humanの全資料精読を利用条件にしない。",
+        "source": "task-records.json post-handoff-s04",
+        "kind": "Human reader/design requirement"
+      },
+      {
+        "claim": "完成した起動文を受け、このThreadを閉じ、次Thread移行後にSourceで進めた残作業をGitHubへ保存すると明示した。",
+        "source": "task-records.json post-handoff-s09–s10",
+        "kind": "Human completion assessment, closure, authorization and report of having moved; not a direct Target/UI observation"
       }
     ],
     "confirmed_tool": [
@@ -165,6 +188,20 @@
         "commit": "0b689ca24f4133b04f1e50f65263a4ca5564746c",
         "kind": "SCOPED_TRANSITION_REMOTE_VERIFICATION",
         "boundary": "This terminal receipt is written afterward and is itself subject to a final remote reread; no self-hash or unseen Target certification."
+      },
+      {
+        "claim": "mapへのLiving Review導入と共通Living Review本文・関連資料の保存を確認。Current共有mapと会話内Skill参照が後続で完全一致。",
+        "source": "task-records.json post-handoff-s03 / post-handoff-s05–post-handoff-s08",
+        "commit": "ca573638dd38b2b4870f8ac812b9966c3f1ea66d",
+        "kind": "POST_HANDOFF_ARTIFACT_AND_REFERENCE_CHECK",
+        "boundary": "Past save receipts and limited test observations remain historical; current reference-path match is limited to the checked path."
+      },
+      {
+        "claim": "Source task-records revision 3 saved and fully reread; intended content matched. Existing sources/nodes/edges/open questions are unchanged, current v001 schema vocabulary and all references passed.",
+        "commit": "ff2da75b6916a7655c8fadc91217667a92f46a85",
+        "blob_sha": "5afb0972019285da085fc77150ceee9d12e05e75",
+        "source": "ark-project/ark28/ark28-01/task-records.json",
+        "kind": "POST_HANDOFF_EXPERIENCE_REMOTE_VERIFIED"
       }
     ],
     "candidate": [
@@ -174,7 +211,7 @@
     "unknown": [
       "Original Ark28:01 first boot response was not independently replayed; current collaboration is observed.",
       "Human UI creation/title application and ease of access are not directly observed.",
-      "Actual Ark28:02 reconstruction and Human last-mile remain unobserved.",
+      "Actual Ark28:02 reconstruction is not directly observed by Source. Human now reports the move already occurred; exact UI/title actions and receipt of the post-handoff delta are still not directly observed.",
       "Start-method candidate field feedback and Portal real-life effects remain unreported."
     ],
     "boundary": "Preparation, hypothetical/independent checks, live Target reconstruction, Human UI/access and real-world effects are distinct. Silence is not failure or completion.",
@@ -183,6 +220,11 @@
         "claim": "After Portal release, Human explicitly invoked the portal, AI read its current sources and gave examples, then Human praised the response and requested transition preparation.",
         "source": "task-records.json transition-s08, transition-s09, transition-s15",
         "boundary": "Explicit use and praise; not natural auto-selection or demonstrated B-state/long-term life benefit."
+      },
+      {
+        "claim": "Human accepted the revised startup prompt as completed and closed this Source while authorizing final persistence.",
+        "source": "task-records.json post-handoff-s09–s10",
+        "boundary": "A conversation-delivered prompt; no separate query file, no observed dictionary registration or new Target behavior."
       }
     ]
   },
@@ -230,7 +272,7 @@
       "source_prepared": "CONFIRMED",
       "remote_verified": "CONFIRMED_SCOPED_ARTIFACTS_AND_BINDINGS",
       "target_reconstructed": "NOT_OBSERVED",
-      "human_last_mile": "NOT_OBSERVED",
+      "human_last_mile": "HUMAN_REPORTED_ALREADY_MOVED; EXACT_UI_AND_TITLE_ACTIONS_NOT_DIRECTLY_OBSERVED",
       "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
       "terminal_receipt_revision": 4,
       "preparation_commits": {
@@ -382,12 +424,105 @@
         "Optional Main reconnection"
       ],
       "human_last_mile_actions": [
-        "Open the new Ark28:02 thread",
-        "Apply the compiled title if using thread titles",
-        "Paste the supplied startup Handoff and let the receiving AI perform its own reconstruction"
+        "Historical preparation instructions were to open Ark28:02, apply title if used, and supply the Handoff.",
+        "2026-09-30 Human reports the next-thread move has already occurred. Do not require those operations again from the old NOT_OBSERVED receipt.",
+        "Any receiving-AI uptake of the later Source delta is separate and not certified here."
       ],
-      "receipt_persistence": "Revision 4 is the final Source write. Source must reread it and the live artifacts after saving before reporting completion; its own blob/commit is deliberately not embedded here."
-    }
+      "receipt_persistence": "Revision 4 was the terminal receipt for the initial 01→02 preparation; it was saved in commit 7903e8fec195368b2f8f9f87db299a1f62e175ea. Revision 5 adds later Source work and Human closure without changing the frozen preparation artifacts. No live self-hash is embedded.",
+      "post_handoff_updates": {
+        "update_id": "ARK28_01_POST_HANDOFF_20260930",
+        "source_owner": "Ark28:01",
+        "related_target": "Ark28:02",
+        "kind": "Later Source save within the existing THREAD_CONTINUE provenance; not a new transition kind or Main transfer.",
+        "human_authority_source": "task-records.json post-handoff-s10",
+        "time_relation": "After the initial transition save at 7903e8fec195368b2f8f9f87db299a1f62e175ea; Human closes Source after the later work.",
+        "baseline_commit": "7903e8fec195368b2f8f9f87db299a1f62e175ea",
+        "repository_read_base": "ca573638dd38b2b4870f8ac812b9966c3f1ea66d",
+        "record": {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "revision": 3,
+          "commit": "ff2da75b6916a7655c8fadc91217667a92f46a85",
+          "blob_sha": "5afb0972019285da085fc77150ceee9d12e05e75",
+          "source_ids": [
+            "post-handoff-s01",
+            "post-handoff-s02",
+            "post-handoff-s03",
+            "post-handoff-s04",
+            "post-handoff-s05",
+            "post-handoff-s06",
+            "post-handoff-s07",
+            "post-handoff-s08",
+            "post-handoff-s09",
+            "post-handoff-s10"
+          ]
+        },
+        "material_delta": [
+          {
+            "subject": "map Living Review→Next step",
+            "state": "IMPLEMENTED_AND_SAVED",
+            "meaning": "盤面から現在の意味・選択条件を読み、次の接続へ渡す。候補検討からReviewへ戻れる。標準hub不要、維持・完了を選べる。",
+            "owner_path": "skills/map-ark-current-position/SKILL.md",
+            "current_blob_sha": "5e97a8caffa9a0ade90b00d094e1670f54cce7f6"
+          },
+          {
+            "subject": "AI Living Review common explanation",
+            "state": "CREATED_SAVED_AND_LIMITED_CHECKED",
+            "meaning": "他AI・Future AIへ方法の根本を渡す共通本文。prompts入口・Ark-OKF・map任意参照を整合し、毎回の全件必読を作らない。",
+            "owner_path": "prompts/ai-living-review.md",
+            "current_blob_sha": "f541ce26d2a86d08965c86c0d713d0d4294a228a",
+            "version": "v0.2-candidate",
+            "expected_eof": "EOF::AI_LIVING_REVIEW::v0.2-candidate"
+          },
+          {
+            "subject": "startup AI prompt",
+            "state": "DELIVERED_IN_CONVERSATION_AND_HUMAN_ACCEPTED_AS_COMPLETE",
+            "meaning": "Boot成立確認→現行map→Living Review→Next stepの入口。対象訂正と既入力を優先。query保存はHumanのユーザー辞書方針。",
+            "evidence_source": "task-records.json post-handoff-s09–s10",
+            "boundary": "No separate query original; dictionary registration and target use not observed."
+          },
+          {
+            "subject": "skill-reference display",
+            "state": "CURRENT_CHECKED_PATH_MATCHES",
+            "meaning": "保存直後の旧本文表示から後続で現行7,580文字へ更新され、共有本文と一致した。",
+            "evidence_source": "task-records.json post-handoff-s08",
+            "boundary": "Historical skills/README receipt describes the save-time observation; not proof the old mismatch persists, and not a claim about all UI paths."
+          }
+        ],
+        "formation_corrections": [
+          "Living Reviewの当初レビュー対象は起動文そのもの。そこから起動時・map内のレビューという有益な派生を検討した。",
+          "mapへのLiving Review導入が先で、旧ローカルai-living-review.mdの発見・新版作成は後。逆向きの由来を作らない。",
+          "Current shared Skill owns map behavior; frozen handoff/harvest statements about unchanged initial distribution are historical preparation facts."
+        ],
+        "binding_preservation": {
+          "source_runtime_blob": "0b9ba18c2f9d191a4eecf8e92f77418d52794cea",
+          "source_handoff_blob": "1828144b4ddc86e20d7140b4a345dfb3177c80cf",
+          "frozen_source_harvest_blob": "5b2715f85a5766a1f529c433412fde7eaceab1d4",
+          "target_runtime_blob": "e28a1ac9673c10f27d284bce1e0773d86d66802d",
+          "target_handoff_blob": "4fb17d3e50b4a424e83ee64939134b126a20a213",
+          "reason": "Target02 pins Source harvest revision 1 by exact blob. Preserve it; current Source State (Required Source 5) and Source Task Records (Required Source 14) are already mutable by identity/minimum revision. Target State also points to progress.next_transition. No new boot contract or detached supplement is required."
+        },
+        "receiving_route": {
+          "entry_path": "ark-project/ark28/ark28-01/state.json",
+          "section": "progress.next_transition.post_handoff_updates",
+          "source_material_path": "ark-project/ark28/ark28-01/task-records.json",
+          "policy": "受取AIは現在の依頼に関係する差分と所有資料を、各Sourceの適用読解契約に従って読む。既に起動済みなら成功済みBootをMaterialな理由なく再演しない。Targetの現在の意図・進捗・訂正・権限を保持し、保存だけで自動通知・同期・受入れ済みとしない。",
+          "target_delta_reconstruction": "NOT_OBSERVED_BY_SOURCE"
+        },
+        "completion": {
+          "source_delta_compiled": "CONFIRMED",
+          "experience_record_remote_verified": "CONFIRMED_EXACT_FULL_CONTENT_AFTER_SAVE",
+          "source_state_remote_verified": "The executing AI must reread this revision after saving and report the result outside this payload; this file alone is not proof of its own save. No pending work for the receiving AI is created by this verification rule.",
+          "source_thread_closed": "HUMAN_DECLARED",
+          "target_initial_boot": "NOT_DIRECTLY_OBSERVED_BY_SOURCE",
+          "target_delta_received": "NOT_OBSERVED",
+          "shared_system_redesign": "NOT_PERFORMED; existing responsibilities and mutable references used"
+        },
+        "source_state_revision": 5
+      }
+    },
+    "source_closure": "HUMAN_DECLARED_2026_09_30_AFTER_FINAL_SAVE",
+    "post_handoff_material": "SOURCE_DELTA_COMPILED_IN_RECORD_REVISION_3; SEE_NEXT_TRANSITION_POST_HANDOFF_UPDATES"
   },
   "eof_sentinel": "ARK28_01_STATE_EOF_v001"
 }
