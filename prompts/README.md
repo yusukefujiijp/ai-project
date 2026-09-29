@@ -4,9 +4,10 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-26"
+last_updated: "2026-09-29"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
+living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -251,6 +252,12 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 - [AI Metaphor Mode](ai-metaphor-mode.md)：§1で対象Realityと任意のDepth／Lens／Field-Test設定を受け取る。
 - [Keyword Tree](keyword-tree.md)：§1でKeywordだけから開始し、必要時に同じ本体内で深める。
 - [Ark-OKF](ark-open-knowledge-format.md)：§12・§15が現在の問いと回答前判断を受け持つ。
+
+### 3.12 AI Living Review
+
+[AI Living Review](ai-living-review.md)は、Current AI・他AI・Future AIが、対象の価値・問題・可能性を現在の目的と根拠から読み、訂正可能な見立てを有効な判断・次の接続へ返すための共通本文である。起動方法、判断原理、具体例、Source・権限境界を一つにまとめる。Humanへ内部資料の全文点検や文書間の伝言を求めない。
+
+説明・レビュー・承認済み改訂を現在の依頼から区別し、固定Gate、毎回の新発見や追加Taskを要求しない。Ark-OKFは回答への適用、mapは現在地の復元と末尾のLiving Review → Next stepを担う。本体はこれらの用途固有契約を置き換えず、関連資料を全件必読にしない。版と確認範囲は本体§10を参照する。
 
 ---
 
