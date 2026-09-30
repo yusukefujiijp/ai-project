@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-01-task-records",
-  "revision": 3,
+  "revision": 4,
   "role": "thread_experience_record",
   "created": "2026-09-28",
   "updated": "2026-09-30",
@@ -13,13 +13,13 @@
     "canonical_path": "ark-project/ark28/ark28-01/task-records.json",
     "reported_date": null,
     "timezone": null,
-    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。 revision 3の閉鎖依頼時刻は当該メッセージのAsia/Tokyoメタデータ。その他の後続対話には未確認の細かい時刻を割り当てない。",
+    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。 revision 3の閉鎖依頼時刻は当該メッセージのAsia/Tokyoメタデータ。その他の後続対話には未確認の細かい時刻を割り当てない。 revision 4は、2026-09-30の専用Skill実行承認・Query確認・旧Seed修正・19:04:36+09:00の今回のSource差分保存依頼を、入力メタデータの時刻として所在に記録する。未確認の実行完了時刻は付与しない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験原本でありRuntime・Handoff・Current Stateではない。保存された承認や過去のTaskは現在の新命令ではない。",
     "source_access": "このThreadで可視だったHuman発言の連続抜粋、または明示した編集要約。外部メッセージID・会話URLは付与しない。ChatGPT長期メモリからの輸出ではない。",
     "extensions": {
-      "record_cutoff": "2026-09-30 06:14:51+09:00のSource閉鎖・GitHub上書き保存依頼までの選択記録、およびその保存に必要な現行参照経路の照合。Target02自身の受入れ結果は収録しない。"
+      "record_cutoff": "2026-09-30T19:04:36+09:00の今回のSource差分保存・閉鎖依頼までの選択記録、および保存に必要な現行参照経路の照合。Target02の追加受入れは収録しない。"
     }
   },
   "coverage": {
@@ -33,7 +33,10 @@
       "Portal初版の保存・導入に関する観測と、09/29の明示呼出し・Human評価",
       "Ark28:01→02同章継続の計画承認と境界",
       "移行準備後のLiving Review対象訂正、map末尾二節と共通本文の形成・保存・限定確認",
-      "Bootと現行mapをつなぐ起動文の完成評価、Sourceへの戻り作業と閉鎖・差分保存の依頼"
+      "Bootと現行mapをつなぐ起動文の完成評価、Sourceへの戻り作業と閉鎖・差分保存の依頼",
+      "前回Source保存以降の専用Living Review SkillのHuman決定・計画承認・実装・共有・導入・限定確認",
+      "xxを対象へ差し替えるQueryの確認とAI説明、旧Seed修正依頼と一文定義候補",
+      "会話内Skill参照の後続解消と、既存記録への今回の差分保存・Source閉鎖"
     ],
     "excludes": [
       "Thread全会話",
@@ -43,7 +46,7 @@
       "今回実装後の実生活効果",
       "ChatGPT長期メモリ"
     ],
-    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。 revision 3は移行準備後の差分を追記。revision 2の全Source・Node・Edge・未確認事項はそのまま保持し、後続成果を新Nodeへ接続する。"
+    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。 revision 3は移行準備後の差分を追記。revision 2の全Source・Node・Edge・未確認事項はそのまま保持し、後続成果を新Nodeへ接続する。 revision 4は前回Source保存以降の後続差分を追記し、revision 3の全Source・Node・Edge・未確認事項をそのまま保持する。Seed候補の提示と明示採用、設定と自然な起動、Source保存とTarget受入れを分ける。"
   },
   "sources": [
     {
@@ -394,6 +397,116 @@
       "excerpt": "OK！Very Good! 完成した！\n\nこのThread Sessionはここで閉じる。\nこのThread Sessionが次Thread移行でセーブした所から少し進んだのでGitHubに上書きセーブして下さい！\n\nこのように次Thread移行後に次Threadを汚さない為に一旦、手戻りして前Threadに戻って残作業をした場合もセーブしといた方が\"他AI(別AI)やFuture AI\"が理解しやすいと思うがどうですか？",
       "excerpt_kind": "verbatim_contiguous",
       "note": "直前の起動文の完成を受け止め、Thread終了と移行後のSource保存を明示。移行済みとのHuman報告は保持し、受取AI自身のGate通過やUIの詳細をSource側から認定しない。同じ入力で既存Systemの適否と再利用Promptの説明も依頼。"
+    },
+    {
+      "id": "return-save-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、前回のSource保存814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576以降の可視対話。メッセージに付された時刻のみ所在へ記載し、実行完了時刻は推測しない。",
+      "excerpt": "これも良いがLiving Reviewはスキル化するべきです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ依頼でPlan Modeを指定し、変更・実行前の計画提示を求めた。専用Skill作成の方向をHumanが決定。"
+    },
+    {
+      "id": "return-save-s02",
+      "speaker": "AI-Collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark28:01、前回のSource保存814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576以降の可視対話。メッセージに付された時刻のみ所在へ記載し、実行完了時刻は推測しない。",
+      "excerpt": "living-review、表示名AI Living Reviewを提案。基本運用を自己完結したSkill、必要時に詳説へ進む既存共通本文、用途固有契約を保持するmapへ分担した。新Skill本文・表示設定・共通説明・prompts入口・共有Hubの五つを対象とし、限定的な独立確認、GitHub共有、導入、再取得一致を計画した。",
+      "excerpt_kind": "paraphrase",
+      "note": "計画内容。作成・導入済みの証明ではない。後続の実行承認とTool結果を別Sourceへ記録する。"
+    },
+    {
+      "id": "return-save-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-30T18:26:47+09:00のHuman入力（当該メッセージのユーザー時刻）。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "直前の専用Living Review Skill計画の実行承認。同じ入力で、繰り返す『xxをLiving Reviewして』という入口がSkill化によって活用しやすくなる可能性をHumanが説明した。"
+    },
+    {
+      "id": "return-save-s04",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、living-review作成実行とGitHub保存後のfetch_file・compare_commits結果。",
+      "excerpt": "commit 98600bd99b53dca53517bf3b9ab47226f329ee72でSkill本文・最小表示設定・共通説明v0.3-candidate・prompts入口・共有Hubを保存し、五ファイルをmainから全文再取得して一致を確認した。commit 720507836ce76560347ddf5568a1d4985c4e5246で導入・限定確認のReceiptを共有Hubへ保存し、再取得一致と、差分が同じ五対象に限られることを確認した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/720507836ce76560347ddf5568a1d4985c4e5246",
+      "note": "共通説明の追加は専用Skillとの分担と入口。既存map本文・固定Triad・Harvestは変更していない。"
+    },
+    {
+      "id": "return-save-s05",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、living-review導入後の有効な保存先・現物・表示設定の照合。",
+      "excerpt": "Living Review Skillを導入し、有効な保存先と導入後の現物の本文が共有本文と一致した。本文SHA-256は69ee86acc5d317471f1ae2b032a844a796f18528b4e551c616c23ddb120d4947。導入後の形式検査を通過し、表示名・短い説明・起動文の三項目が共有版と一致した。自然な自動選択は設定で許可されている。",
+      "excerpt_kind": "paraphrase",
+      "note": "環境が付与したアイコン・製品別設定はGitHubの最小表示設定へ複製しない。設定許可は自然文からの実際の起動成功、全AI互換性、Human UIの直接観測とは別。"
+    },
+    {
+      "id": "return-save-s06",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、元会話・作成計画・期待回答を渡さない独立AIへのSkill現物と相談素材による応答確認。",
+      "excerpt": "六つの独立した文脈で計九応答を観察した。対象Promptの内部命令を実行しないレビュー、価値を保持する案と重要な訂正、任意の外部参照なしでの完了と名称だけの訂正、計画限定から後続実行承認への切替、mapへの統合、必須Handoff不足と独立した配色比較を確認した。隔離素材では計画限定時の不変更と、後続承認に沿う一文の変更・保存後の再読を確認した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/720507836ce76560347ddf5568a1d4985c4e5246/skills/README.md#34-ai-living-reviewの入口",
+      "note": "新専用Skillの限定確認。以前のmap五文脈七応答・共通本文四文脈六応答とは別。構成した相談素材をHumanの実経験やTarget02自身の受入れへ変換しない。"
+    },
+    {
+      "id": "return-save-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-30T18:45:50+09:00のHuman入力（当該メッセージのユーザー時刻）。",
+      "excerpt": "xxには自由な変数的に活用できるという\"方向や方向性\"で良いですか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ入力で『$living-review xxを“Living Review: Not dead data, but a living board”してください！』という簡単なQueryと専用Queryの必要性を確認した。"
+    },
+    {
+      "id": "return-save-s08",
+      "speaker": "AI-Collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark28:01、前回のSource保存814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576以降の可視対話。メッセージに付された時刻のみ所在へ記載し、実行完了時刻は推測しない。",
+      "excerpt": "xxを対象名・URL・現在の文脈への参照などへ差し替える入口と説明した。提示された短いQueryで使え、対象ごとの専用Queryや別Queryファイルは不要と回答した。目的や検討のみ等は必要な場面に添え、短い入力から必要な深さを保って検討する。実行・保存の依頼はその現在の範囲を伝える。",
+      "excerpt_kind": "paraphrase",
+      "note": "AIによる使用説明の提示。実際のユーザー辞書登録、自然文からの自動選択、Targetでの実使用は観測していない。"
+    },
+    {
+      "id": "return-save-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-30T18:54:00+09:00のHuman入力（当該メッセージのユーザー時刻）。",
+      "excerpt": "古すぎて今となっては少し検討違いの事を言っているので\n上記Living ReviewrcのSeed化を修正改善して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "旧Seedを提示し、Seed名と一文定義をASCIIのDouble quotationで囲み、他AI・Future AIが文脈を理解できるようにすることを指定した。旧Seedの成果物・未来実装・完成前の特定Markdownへ偏る条件を修正する依頼。原文のLiving Reviewrc表記も引用のまま保持する。"
+    },
+    {
+      "id": "return-save-s10",
+      "speaker": "AI-Collaborator",
+      "medium": "assistant_message",
+      "locator": "Ark28:01、旧Seed修正依頼への応答。writing block 74358の本文。",
+      "excerpt": "\"Living Review(文書・Prompt・構想・運用・現在の盤面などを、その時の目的・文脈・根拠・関係から読み直し、働いている価値・問題・未言語化の可能性を見分け、事実・報告と仮説・Unknownを区別してAI自身の訂正可能な見立てを示し、現在の権限・Source契約・Humanの訂正・STOP・適用Guardを保持しながら、維持・完了も含む今有効な判断や接続へ結び、接続候補の条件や現実のFeedbackを見立てへ返して更新するレビュー方法)\"",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "現行Skillに基づき会話へ提示した新Seed候補。Humanの依頼に応じた作成・提示は確認済みだが、この後の明示採用や共通本文の定義の上書きは観測していない。維持・完了も含む判断と、接続条件・Feedbackからの更新を保持する。"
+    },
+    {
+      "id": "return-save-s11",
+      "speaker": "AI-Collaborator",
+      "medium": "tool_result",
+      "locator": "Ark28:01、旧Seed修正時および2026-09-30 JSTの本差分保存時のskills.read実結果とGitHub共有本文の照合。",
+      "excerpt": "導入直後の会話内Skill参照では新規Skillを取得できなかったが、旧Seed修正時には通常のSkill参照機能からliving-review全文を取得できた。本差分保存時にも4,204文字の本文を取得し、GitHubのblob 6120fbd704ed313b8a9962c6cdea637fa05bd6c9の全文と一致した。",
+      "excerpt_kind": "paraphrase",
+      "note": "確認した参照経路での後続観測。初期の取得不能はその時点の記録として保持し、現在も未反映だとは扱わない。全UI・全AI・自然な自動選択の証明ではない。"
+    },
+    {
+      "id": "return-save-s12",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-09-30T19:04:36+09:00のHuman入力（当該メッセージのユーザー時刻）。",
+      "excerpt": "prepare-ark-transition（Ark Transition）を使い、次Thread移行の保存後に、このSource Threadで進んだ内容をGitHubの既存記録へ差分保存してください。今回は、Source側の残作業を保存し、このThreadを閉じるための実行依頼です。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "現在の保存・更新・検証・再取得を明示承認。固定BindingとTargetの意図・進捗・権限を保ち、新移行・再Boot・別Task・自動同期を行わず、保存と報告後にSourceを閉じる指示。"
     }
   ],
   "nodes": [
@@ -879,6 +992,144 @@
           "post-handoff-s10"
         ]
       }
+    },
+    {
+      "id": "living-review-dedicated-skill-decision",
+      "kind": "decision",
+      "label": "Living Reviewを一つの専用Skillへ",
+      "description": "繰り返すレビュー依頼を一つの入口から使えるよう、Humanは専用Skill化を決定し、計画後に実行を承認した。",
+      "scope": "基本運用・共通説明・用途固有のmapを分担する今回の作成範囲。全関連Skillの同時起動や全PromptのSkill化を命じない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "return-save-s01",
+          "return-save-s03"
+        ]
+      }
+    },
+    {
+      "id": "living-review-dedicated-skill-completed",
+      "kind": "task",
+      "task_state": "completed",
+      "label": "専用Living Review Skillの作成・共有・導入を完了",
+      "description": "Skill本文と最小表示設定を作成・導入し、共通説明と二つの入口を整合してGitHubへ保存・再取得した。本文と表示三項目を照合した。",
+      "scope": "作成・保存・導入確認の完了。参照反映・限定応答・実生活効果とは分ける。固定Source/Target Runtime・Handoff・Harvestは対象外。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "return-save-s04",
+          "return-save-s05"
+        ]
+      },
+      "extensions": {
+        "owners": [
+          "skills/living-review/SKILL.md",
+          "skills/living-review/agents/openai.yaml",
+          "prompts/ai-living-review.md",
+          "prompts/README.md",
+          "skills/README.md"
+        ],
+        "shared_commits": [
+          "98600bd99b53dca53517bf3b9ab47226f329ee72",
+          "720507836ce76560347ddf5568a1d4985c4e5246"
+        ],
+        "body_sha256": "69ee86acc5d317471f1ae2b032a844a796f18528b4e551c616c23ddb120d4947",
+        "unconfirmed": [
+          "natural automatic selection",
+          "all-AI compatibility",
+          "Human UI operations",
+          "real-life effect"
+        ]
+      }
+    },
+    {
+      "id": "living-review-dedicated-limited-checks",
+      "kind": "observation",
+      "label": "新Skillを六文脈・九応答で限定確認",
+      "description": "Prompt対象の区別、価値の保持、重要訂正と名称訂正、維持・完了、Plan-onlyと後続承認、map、必須不足と通常Unknownを確認した。",
+      "scope": "明示的にSkill現物を読ませた構成例と隔離素材。Humanの実経験、実際のTarget受入れ、全環境への保証とは区別する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "return-save-s06"
+        ]
+      }
+    },
+    {
+      "id": "living-review-query-variable-explanation",
+      "kind": "observation",
+      "label": "xxへ対象を差し替える単純なQueryを説明",
+      "description": "HumanのQuery確認に対し、xxへ対象名・URL・文脈への参照を入れ、共通の方法はSkillから適用すると説明した。別Queryファイルを増やさず、現在の目的・権限と必要な品質を保持する。",
+      "scope": "説明の提示。辞書登録や自然起動、他Threadの利用を完了認定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s07",
+          "return-save-s08"
+        ]
+      }
+    },
+    {
+      "id": "living-review-seed-scope-correction",
+      "kind": "constraint",
+      "label": "旧Seedの完成前Markdown・未来実装への偏りを修正",
+      "description": "Humanは旧Seedを古く現行に合わないと評価し、他AI・Future AIへ文脈を渡せる一文定義への修正を求めた。Double quotation囲みを必須とした。",
+      "scope": "Seedの修正文面の依頼。旧資料の形成史を消したり、共通本文・Skillを自動改訂する指示ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "return-save-s09"
+        ]
+      }
+    },
+    {
+      "id": "living-review-seed-current-candidate",
+      "kind": "interpretation",
+      "label": "現在の目的・根拠・関係から判断を更新するSeed候補",
+      "description": "対象の範囲を文書・Prompt・構想・運用・現在の盤面へ広げ、価値・問題・未言語化の可能性と根拠区分、訂正可能な見立て、権限・契約・STOP・Guard、維持・完了を含む接続、Feedbackによる更新を一文にした。",
+      "scope": "会話へ提示した候補。逐語本文はreturn-save-s10。Humanの明示採用や共通本文の定義の置換は未観測。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "return-save-s09",
+          "return-save-s10"
+        ],
+        "note": "現行Skillの意味を一文へ編集したAI提案であり、提示されたことと全場面での有効性・採用は別。"
+      }
+    },
+    {
+      "id": "living-review-reference-path-resolved",
+      "kind": "observation",
+      "label": "新Skillの会話内参照で全文一致を後続確認",
+      "description": "導入直後の取得不能の後、通常のSkill参照機能から新本文を取得でき、GitHub共有本文と完全一致した。",
+      "scope": "観測した参照経路。過去の取得不能は歴史的事実として保持し、全UI・全AI・自然起動へ一般化しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "return-save-s11"
+        ]
+      }
+    },
+    {
+      "id": "source-close-after-living-review-skill",
+      "kind": "decision",
+      "label": "Living Review後続差分を既存Source記録へ保存して閉じる",
+      "description": "Humanは移行後のSource残作業を差分保存し、検証・再取得・報告を終えたらこのThreadを閉じると明示した。",
+      "scope": "Source側の今回の保存権限。Target現在地の上書き、再Boot、新移行、自動同期や別Taskの開始を含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "return-save-s12"
+        ]
+      }
     }
   ],
   "edges": [
@@ -1063,6 +1314,100 @@
           "post-handoff-s10"
         ]
       }
+    },
+    {
+      "id": "e-return-core-skill",
+      "from": "living-review-common-core",
+      "to": "living-review-dedicated-skill-decision",
+      "relation": "observed_before",
+      "scope": "共通説明が先に完成し、その後Humanが専用Skill化を選んだ。一般レビュー能力の普遍的因果ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "post-handoff-s05",
+          "return-save-s01"
+        ]
+      }
+    },
+    {
+      "id": "e-return-decision-implementation",
+      "from": "living-review-dedicated-skill-decision",
+      "to": "living-review-dedicated-skill-completed",
+      "relation": "observed_before",
+      "scope": "Human決定と計画承認の後、その範囲で作成・共有・導入を完了した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s01",
+          "return-save-s03",
+          "return-save-s04",
+          "return-save-s05"
+        ]
+      }
+    },
+    {
+      "id": "e-return-query-skill",
+      "from": "living-review-query-variable-explanation",
+      "to": "living-review-dedicated-skill-completed",
+      "relation": "depends_on",
+      "scope": "今回の短い呼出しは、基本方法を持つSkillと現在の対象・依頼へ接続する。全環境での起動成功を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s07",
+          "return-save-s08"
+        ]
+      }
+    },
+    {
+      "id": "e-return-seed-correction",
+      "from": "living-review-seed-current-candidate",
+      "to": "living-review-seed-scope-correction",
+      "relation": "depends_on",
+      "scope": "Humanが示した旧Seedへの修正要件を受けて提案した一文定義。採用・共通本文への反映は未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s09",
+          "return-save-s10"
+        ]
+      }
+    },
+    {
+      "id": "e-return-reference-after-save",
+      "from": "living-review-dedicated-skill-completed",
+      "to": "living-review-reference-path-resolved",
+      "relation": "observed_before",
+      "scope": "保存・導入確認の後、会話内の専用参照機能で取得可能になったことを観測した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s05",
+          "return-save-s11"
+        ]
+      }
+    },
+    {
+      "id": "e-return-fruit-close",
+      "from": "living-review-dedicated-skill-completed",
+      "to": "source-close-after-living-review-skill",
+      "relation": "observed_before",
+      "scope": "Skill、Query説明、Seed候補を進めた後に、既存Source記録への差分保存と閉鎖を依頼した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "return-save-s04",
+          "return-save-s08",
+          "return-save-s10",
+          "return-save-s12"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -1115,6 +1460,17 @@
           "post-handoff-s02",
           "post-handoff-s04",
           "post-handoff-s10"
+        ]
+      },
+      {
+        "revision": 4,
+        "date": "2026-09-30",
+        "reason": "Humanが専用Living Review Skill・Query・Seedの後続差分を既存Source記録へ保存して閉じると承認。前回のSource保存地点と固定Bindingを保持し、Targetへ自動同期しない。",
+        "source_refs": [
+          "return-save-s01",
+          "return-save-s03",
+          "return-save-s09",
+          "return-save-s12"
         ]
       }
     ]
