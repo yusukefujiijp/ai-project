@@ -94,6 +94,38 @@
           }
         }
       ]
+    },
+    "2026-09-30": {
+      "visits": [
+        {
+          "id": "cz-visit-0004",
+          "reporter": "YusukeJP",
+          "created_at": "2026-09-30T11:35:28.385Z",
+          "recorded_by": "AI assistant",
+          "spots": [
+            {
+              "id": "O001",
+              "machine": "ラットプルダウン",
+              "mode": "両手",
+              "kg": 40,
+              "source": "S01"
+            },
+            {
+              "id": "O002",
+              "machine": "ラットプルダウン",
+              "mode": "片手",
+              "kg": 20,
+              "source": "S01"
+            }
+          ],
+          "sources": {
+            "S01": {
+              "text": "OK！Very Good! \nラットプルダウン\nSweet Spotは\n両手: 40kg\n片手: 20kgになりました！\n\n保存して下さい！",
+              "context": "2026-09-30（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「になりました」を新しい観察として扱い、過去日の両手30kg・片手15kgと重量系列・切替記録は保持。実施時刻・周回・今回の下降系列・切替の実施は未報告。"
+            }
+          }
+        }
+      ]
     }
   }
 }
