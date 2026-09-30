@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 5,
+    "revision": 6,
     "created": "2026-09-25",
     "updated": "2026-09-30",
     "canonical_path": "ark-project/ark28/ark28-01/state.json",
     "date_scope": "Current update date in Asia/Tokyo; original creation metadata remains historical. No UI creation time asserted.",
-    "change_reason": "Human closed Ark28:01 after returning to complete post-handoff work. Preserve the original transition receipt and fixed bindings; add the later map/Living Review/startup-prompt成果, Source record revision 3, current skill-reference observation and Human-reported transition. Target state and routes remain owned by their current context."
+    "change_reason": "Human explicitly requested the later Living Review Skill/Query/Seed delta to be saved into existing Source records and closed. Preserve Source/Target fixed bindings, prior receipts, Target-owned current context and the initial transition provenance; record new artifacts, candidate Seed and later reference-path observation separately."
   },
   "identity": {
     "source": "Ark27:05",
@@ -55,7 +55,7 @@
       "ChatGPT long-term memory export"
     ],
     "current_preparation_scope": "Human approved the preceding Ark28:01→Ark28:02 plan: Source records/harvest/state, unchanged installed map distribution, Target triad, support routing and scoped verification. No Main ownership transfer or automatic real-life task.",
-    "current_save_scope": "2026-09-30 06:14:51+09:00、Humanが本Sourceの終了と移行準備以降のGitHub上書き保存を依頼。既存Source経験原本と可変Stateの必要な更新・検証、既存Systemの適否と再利用Promptの説明を含む。新移行・Targetの現在地上書き・共通契約の改訂を自動開始しない。"
+    "current_save_scope": "2026-09-30T19:04:36+09:00、Humanがprepare-ark-transitionによる既存Source記録への後続差分保存・必要な更新・検証・GitHub保存・再取得・報告と、その後のSource閉鎖を明示承認。前回保存以降のLiving Review Skill、Query説明、Seed候補、参照経路の観測を対象とする。Targetの意図・進捗・訂正・権限と固定Bindingを保持し、新移行・再Boot・過去/別Task・Target自動同期は行わない。"
   },
   "bindings": {
     "runtime": {
@@ -86,7 +86,7 @@
       "path": "ark-project/ark28/ark28-01/task-records.json",
       "record_id": "ark28-01-task-records",
       "format_version": "v001",
-      "minimum_revision": 3
+      "minimum_revision": 4
     }
   },
   "now": {
@@ -102,13 +102,18 @@
     ],
     "live_b_gate": "NOT_INFERRED_FROM_HISTORICAL_REPORTS",
     "main_context": "Current Domain main route is Ark27:07; preserve current Human designation and Main authority. The old GitHub-work theme is not a command to resume it.",
-    "current_material": "移行準備後にmapのLiving Review→Next step、AI Living Review共通本文と関連資料、Boot→現行mapの起動文を完成。Humanは起動文を「完成した」と評価し、Sourceの差分保存とThread閉鎖を明示した。原文・形成順・検証境界はtask-records.json revision 3のpost-handoff-s01–s10を参照する。",
+    "current_material": "前回Source保存814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576以降、living-reviewを作成・共有・導入し六文脈九応答で限定確認。xxを対象へ差し替える単純なQueryを説明し、旧Seedの適用範囲を修正した一文定義候補を提示。導入直後の取得不能後、通常のSkill参照機能で共有本文との全文一致を確認した。原文・形成順・Evidence Boundaryはtask-records.json revision 4のreturn-save-s01–s12。今回のSource差分保存後はHumanの指示により閉じる。",
     "closure": {
       "status": "HUMAN_CLOSED",
-      "human_input_at": "2026-09-30T06:14:51+09:00",
-      "source": "task-records.json post-handoff-s10",
-      "remaining_authorized_work": "Final persistence/reread verification and requested explanation only; afterward no automatic continuation.",
-      "target_context": "Human reports this is work done after moving to the next thread. Do not route Current support back to Source01 or overwrite Target02's independent progress."
+      "human_input_at": "2026-09-30T19:04:36+09:00",
+      "source": "task-records.json return-save-s12",
+      "remaining_authorized_work": "This scoped save, verification and report only; after completion no automatic new work.",
+      "target_context": "Ark28:02 keeps its current Human intent, progress, corrections and authority. Source return work is not a new transition or automatic synchronization.",
+      "previous_closure": {
+        "human_input_at": "2026-09-30T06:14:51+09:00",
+        "source": "task-records.json post-handoff-s10",
+        "save_commit": "814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576"
+      }
     }
   },
   "evidence": {
@@ -142,6 +147,21 @@
         "claim": "完成した起動文を受け、このThreadを閉じ、次Thread移行後にSourceで進めた残作業をGitHubへ保存すると明示した。",
         "source": "task-records.json post-handoff-s09–s10",
         "kind": "Human completion assessment, closure, authorization and report of having moved; not a direct Target/UI observation"
+      },
+      {
+        "claim": "繰り返すLiving Reviewを専用Skillにする方向を決定し、作成計画の実行・共有・導入を承認した。",
+        "source": "task-records.json return-save-s01–s03",
+        "kind": "Human decision and scoped authorization; artifact/installation outcomes are separate"
+      },
+      {
+        "claim": "旧Seedを古く現行に合わないと評価し、Double quotation囲みの一文定義への修正を求めた。",
+        "source": "task-records.json return-save-s09",
+        "kind": "Human correction and requested rewrite; new Seed explicit adoption not observed"
+      },
+      {
+        "claim": "今回のSource残作業を既存記録へ差分保存し、保存・検証・再取得・報告を終えたらThreadを閉じると明示した。",
+        "source": "task-records.json return-save-s12",
+        "kind": "Current Source save/closure authorization; Target uptake is separate"
       }
     ],
     "confirmed_tool": [
@@ -202,6 +222,35 @@
         "blob_sha": "5afb0972019285da085fc77150ceee9d12e05e75",
         "source": "ark-project/ark28/ark28-01/task-records.json",
         "kind": "POST_HANDOFF_EXPERIENCE_REMOTE_VERIFIED"
+      },
+      {
+        "claim": "専用living-reviewの五対象をGitHubへ保存・再取得し、導入先でも本文・表示三項目と形式を確認した。",
+        "source": "task-records.json return-save-s04–s05",
+        "commit": "720507836ce76560347ddf5568a1d4985c4e5246",
+        "kind": "DEDICATED_LIVING_REVIEW_ARTIFACT_AND_INSTALL_VERIFIED",
+        "boundary": "Setting for implicit invocation is not observed natural selection; platform UI and all-AI compatibility are separate."
+      },
+      {
+        "claim": "六つの独立文脈・計九応答と隔離素材で、対象区別・価値保持・重要訂正・完了・Plan-onlyと後続承認・map・必須不足を確認した。",
+        "source": "task-records.json return-save-s06",
+        "kind": "LIMITED_EXPLICIT_SKILL_RESPONSE_OBSERVATION",
+        "boundary": "Synthetic consultations are not Human events, Target reconstruction, automatic selection or life effects."
+      },
+      {
+        "claim": "通常のSkill参照機能で新規living-reviewの4,204文字の全文を取得し、現行GitHub共有本文と一致した。",
+        "source": "task-records.json return-save-s11",
+        "shared_blob": "6120fbd704ed313b8a9962c6cdea637fa05bd6c9",
+        "kind": "LATER_CHECKED_REFERENCE_PATH_MATCH",
+        "boundary": "Earlier unavailability remains a historical observation; no all-UI claim."
+      },
+      {
+        "claim": "Source task-records revision 4と共有Skill Hub v0.18.1を保存後に全文再取得し、意図した内容と完全一致。経験原本は現行v001 Schema・全参照を通過し、以前の39 Sources・34 Nodes・12 Edges・2 Open Questionsをそのまま保持した。",
+        "kind": "LATER_SOURCE_EXPERIENCE_AND_REFERENCE_RECEIPT",
+        "record_commit": "bcb853b9b0d3cd774ddcab7ebd53f2e906f7f5a1",
+        "record_blob": "38f9c06712739b85cc73cb36d8a099134e2ec84c",
+        "hub_commit": "86196a2b819b33dddcc4b7ddbeb007b28267bcfb",
+        "hub_blob": "ba62ed17561d058e2c4de0650d1bf168dd2021db",
+        "boundary": "このState自身の保存確認は実行AIが書込み後に別途行い報告する。Target追加受入れ・自動同期・生活効果は未観測。"
       }
     ],
     "candidate": [
@@ -212,7 +261,8 @@
       "Original Ark28:01 first boot response was not independently replayed; current collaboration is observed.",
       "Human UI creation/title application and ease of access are not directly observed.",
       "Actual Ark28:02 reconstruction is not directly observed by Source. Human now reports the move already occurred; exact UI/title actions and receipt of the post-handoff delta are still not directly observed.",
-      "Start-method candidate field feedback and Portal real-life effects remain unreported."
+      "Start-method candidate field feedback and Portal real-life effects remain unreported.",
+      "専用Living Review Skillの自然な自動選択・全AI互換性・Human UI・実生活効果、新Seedの明示採用、今回Source差分のTarget02追加受入れは未観測。"
     ],
     "boundary": "Preparation, hypothetical/independent checks, live Target reconstruction, Human UI/access and real-world effects are distinct. Silence is not failure or completion.",
     "current_conversation": [
@@ -225,6 +275,16 @@
         "claim": "Human accepted the revised startup prompt as completed and closed this Source while authorizing final persistence.",
         "source": "task-records.json post-handoff-s09–s10",
         "boundary": "A conversation-delivered prompt; no separate query file, no observed dictionary registration or new Target behavior."
+      },
+      {
+        "claim": "xxを対象へ差し替える簡単なQueryで使え、対象別Queryや別ファイルを増やす必要はないとAIが説明した。",
+        "source": "task-records.json return-save-s07–s08",
+        "boundary": "Explanation delivered; dictionary registration and Target use not observed."
+      },
+      {
+        "claim": "旧Seedの修正依頼に応じ、新しい一文定義を会話へ提示した。",
+        "source": "task-records.json return-save-s09–s10",
+        "boundary": "Candidate wording preserved verbatim in the record; no observed explicit adoption or common-core replacement."
       }
     ]
   },
@@ -428,22 +488,20 @@
         "2026-09-30 Human reports the next-thread move has already occurred. Do not require those operations again from the old NOT_OBSERVED receipt.",
         "Any receiving-AI uptake of the later Source delta is separate and not certified here."
       ],
-      "receipt_persistence": "Revision 4 was the terminal receipt for the initial 01→02 preparation; it was saved in commit 7903e8fec195368b2f8f9f87db299a1f62e175ea. Revision 5 adds later Source work and Human closure without changing the frozen preparation artifacts. No live self-hash is embedded.",
+      "receipt_persistence": "Revision 4 was the terminal receipt for the initial 01→02 preparation; it was saved in commit 7903e8fec195368b2f8f9f87db299a1f62e175ea. Revision 5 adds later Source work and Human closure without changing the frozen preparation artifacts. No live self-hash is embedded. Revision 6 records a second Source return save after dedicated Living Review Skill, Query explanation and Seed candidate work; it preserves the earlier closure as history and keeps Target-owned progress separate.",
       "post_handoff_updates": {
         "update_id": "ARK28_01_POST_HANDOFF_20260930",
         "source_owner": "Ark28:01",
         "related_target": "Ark28:02",
         "kind": "Later Source save within the existing THREAD_CONTINUE provenance; not a new transition kind or Main transfer.",
-        "human_authority_source": "task-records.json post-handoff-s10",
-        "time_relation": "After the initial transition save at 7903e8fec195368b2f8f9f87db299a1f62e175ea; Human closes Source after the later work.",
+        "human_authority_source": "task-records.json return-save-s12",
+        "time_relation": "Initial transition save at 7903e8fec195368b2f8f9f87db299a1f62e175ea; first Source return save at 814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576; later Living Review Skill/Query/Seed work and current Source closure request at 2026-09-30T19:04:36+09:00. This is the existing THREAD_CONTINUE provenance.",
         "baseline_commit": "7903e8fec195368b2f8f9f87db299a1f62e175ea",
-        "repository_read_base": "ca573638dd38b2b4870f8ac812b9966c3f1ea66d",
+        "repository_read_base": "720507836ce76560347ddf5568a1d4985c4e5246",
         "record": {
           "path": "ark-project/ark28/ark28-01/task-records.json",
           "record_id": "ark28-01-task-records",
-          "revision": 3,
-          "commit": "ff2da75b6916a7655c8fadc91217667a92f46a85",
-          "blob_sha": "5afb0972019285da085fc77150ceee9d12e05e75",
+          "revision": 4,
           "source_ids": [
             "post-handoff-s01",
             "post-handoff-s02",
@@ -454,8 +512,36 @@
             "post-handoff-s07",
             "post-handoff-s08",
             "post-handoff-s09",
-            "post-handoff-s10"
-          ]
+            "post-handoff-s10",
+            "return-save-s01",
+            "return-save-s02",
+            "return-save-s03",
+            "return-save-s04",
+            "return-save-s05",
+            "return-save-s06",
+            "return-save-s07",
+            "return-save-s08",
+            "return-save-s09",
+            "return-save-s10",
+            "return-save-s11",
+            "return-save-s12"
+          ],
+          "latest_delta_source_ids": [
+            "return-save-s01",
+            "return-save-s02",
+            "return-save-s03",
+            "return-save-s04",
+            "return-save-s05",
+            "return-save-s06",
+            "return-save-s07",
+            "return-save-s08",
+            "return-save-s09",
+            "return-save-s10",
+            "return-save-s11",
+            "return-save-s12"
+          ],
+          "commit": "bcb853b9b0d3cd774ddcab7ebd53f2e906f7f5a1",
+          "blob_sha": "38f9c06712739b85cc73cb36d8a099134e2ec84c"
         },
         "material_delta": [
           {
@@ -468,11 +554,16 @@
           {
             "subject": "AI Living Review common explanation",
             "state": "CREATED_SAVED_AND_LIMITED_CHECKED",
-            "meaning": "他AI・Future AIへ方法の根本を渡す共通本文。prompts入口・Ark-OKF・map任意参照を整合し、毎回の全件必読を作らない。",
+            "meaning": "他AI・Future AIへ方法の根本を渡す共通本文。prompts入口・Ark-OKF・map任意参照を整合し、毎回の全件必読を作らない。 後続v0.3は専用living-reviewとの分担と入口を追記。新Seed候補の定義本文への置換は行っていない。",
             "owner_path": "prompts/ai-living-review.md",
-            "current_blob_sha": "f541ce26d2a86d08965c86c0d713d0d4294a228a",
-            "version": "v0.2-candidate",
-            "expected_eof": "EOF::AI_LIVING_REVIEW::v0.2-candidate"
+            "current_blob_sha": "bf10f3d8da33843713b6f3755b4b50f7aa264055",
+            "version": "v0.3-candidate",
+            "expected_eof": "EOF::AI_LIVING_REVIEW::v0.3-candidate",
+            "previous_saved_version": {
+              "version": "v0.2-candidate",
+              "blob_sha": "f541ce26d2a86d08965c86c0d713d0d4294a228a",
+              "evidence_source": "task-records.json post-handoff-s05–s07"
+            }
           },
           {
             "subject": "startup AI prompt",
@@ -487,12 +578,57 @@
             "meaning": "保存直後の旧本文表示から後続で現行7,580文字へ更新され、共有本文と一致した。",
             "evidence_source": "task-records.json post-handoff-s08",
             "boundary": "Historical skills/README receipt describes the save-time observation; not proof the old mismatch persists, and not a claim about all UI paths."
+          },
+          {
+            "subject": "dedicated Living Review Skill",
+            "state": "IMPLEMENTED_SAVED_INSTALLED_AND_LIMITED_CHECKED",
+            "meaning": "短い反復依頼から対象・目的・権限を受け取り、基本運用を自己完結したSkillと必要時の共通説明へ接続する。既存map固有契約を保持。",
+            "owner_path": "skills/living-review/SKILL.md",
+            "current_blob_sha": "6120fbd704ed313b8a9962c6cdea637fa05bd6c9",
+            "body_sha256": "69ee86acc5d317471f1ae2b032a844a796f18528b4e551c616c23ddb120d4947",
+            "release_commits": [
+              "98600bd99b53dca53517bf3b9ab47226f329ee72",
+              "720507836ce76560347ddf5568a1d4985c4e5246"
+            ],
+            "evidence_source": "task-records.json return-save-s01–s06",
+            "boundary": "Six independent contexts/nine replies and isolation-file check; not all-AI/natural-selection/UI/life-effect proof."
+          },
+          {
+            "subject": "Living Review Query variable",
+            "state": "USAGE_EXPLANATION_DELIVERED",
+            "meaning": "xxは対象名・URL・文脈参照などを差し替える欄。共通方法はSkillが保持し、必要な目的・Mode・実行範囲を現在の会話から受け取る。別Queryファイル不要。",
+            "evidence_source": "task-records.json return-save-s07–s08",
+            "boundary": "No observed dictionary registration or Target use."
+          },
+          {
+            "subject": "Living Review revised Seed",
+            "state": "DELIVERED_CANDIDATE",
+            "meaning": "旧Seedの完成前Markdown・未来実装への偏りを修正し、現在の目的・根拠・関係、訂正可能な見立て、維持・完了、Feedbackからの更新を一文へ。",
+            "owner_path": "ark-project/ark28/ark28-01/task-records.json",
+            "source_id": "return-save-s10",
+            "node_id": "living-review-seed-current-candidate",
+            "evidence_source": "task-records.json return-save-s09–s10",
+            "boundary": "Verbatim proposal retained; explicit Human adoption or common definition replacement not observed."
+          },
+          {
+            "subject": "Living Review Skill reference",
+            "state": "CHECKED_REFERENCE_PATH_RESOLVED_AND_MATCHES",
+            "meaning": "導入直後の会話内取得不能後、通常の参照機能で新本文を取得して共有全文と一致した。",
+            "owner_path": "skills/README.md",
+            "evidence_source": "task-records.json return-save-s11",
+            "boundary": "Specific checked path; preserve earlier history, no all-UI or automatic-selection claim.",
+            "current_blob_sha": "ba62ed17561d058e2c4de0650d1bf168dd2021db",
+            "version": "v0.18.1",
+            "expected_eof": "EOF::ARK_SHARED_SKILLS_HUB::v0.18.1",
+            "verification_commit": "86196a2b819b33dddcc4b7ddbeb007b28267bcfb"
           }
         ],
         "formation_corrections": [
           "Living Reviewの当初レビュー対象は起動文そのもの。そこから起動時・map内のレビューという有益な派生を検討した。",
           "mapへのLiving Review導入が先で、旧ローカルai-living-review.mdの発見・新版作成は後。逆向きの由来を作らない。",
-          "Current shared Skill owns map behavior; frozen handoff/harvest statements about unchanged initial distribution are historical preparation facts."
+          "Current shared Skill owns map behavior; frozen handoff/harvest statements about unchanged initial distribution are historical preparation facts.",
+          "完成前の特定Markdownを未来実装へ近づける旧Seedから、対象・現在の目的・根拠・関係から判断を更新する方法へ広げる修正文面を提示した。候補提示を明示採用・Canonical置換と混同しない。",
+          "新Skillの導入直後の参照不能と、その後の全文取得一致を時点別に保持する。Sourceの保存とTarget自身の追加受入れを区別する。"
         ],
         "binding_preservation": {
           "source_runtime_blob": "0b9ba18c2f9d191a4eecf8e92f77418d52794cea",
@@ -507,22 +643,44 @@
           "section": "progress.next_transition.post_handoff_updates",
           "source_material_path": "ark-project/ark28/ark28-01/task-records.json",
           "policy": "受取AIは現在の依頼に関係する差分と所有資料を、各Sourceの適用読解契約に従って読む。既に起動済みなら成功済みBootをMaterialな理由なく再演しない。Targetの現在の意図・進捗・訂正・権限を保持し、保存だけで自動通知・同期・受入れ済みとしない。",
-          "target_delta_reconstruction": "NOT_OBSERVED_BY_SOURCE"
+          "target_delta_reconstruction": "NOT_OBSERVED_BY_SOURCE",
+          "latest_delta_source_ids": [
+            "return-save-s01",
+            "return-save-s02",
+            "return-save-s03",
+            "return-save-s04",
+            "return-save-s05",
+            "return-save-s06",
+            "return-save-s07",
+            "return-save-s08",
+            "return-save-s09",
+            "return-save-s10",
+            "return-save-s11",
+            "return-save-s12"
+          ]
         },
         "completion": {
           "source_delta_compiled": "CONFIRMED",
           "experience_record_remote_verified": "CONFIRMED_EXACT_FULL_CONTENT_AFTER_SAVE",
-          "source_state_remote_verified": "The executing AI must reread this revision after saving and report the result outside this payload; this file alone is not proof of its own save. No pending work for the receiving AI is created by this verification rule.",
+          "source_state_remote_verified": "The executing AI rereads this revision after saving and reports the result outside the payload; this file is not proof of its own save and does not create a pending receiving-AI task.",
           "source_thread_closed": "HUMAN_DECLARED",
           "target_initial_boot": "NOT_DIRECTLY_OBSERVED_BY_SOURCE",
           "target_delta_received": "NOT_OBSERVED",
           "shared_system_redesign": "NOT_PERFORMED; existing responsibilities and mutable references used"
         },
-        "source_state_revision": 5
+        "source_state_revision": 6,
+        "previous_source_save": {
+          "commit": "814ff0dd3549a343992a6c6e8ab9bb6b1d8dd576",
+          "state_revision": 5,
+          "state_blob": "ef56c69a9ef04d7d4662f92c3eaef619cbadfce8",
+          "record_revision": 3,
+          "record_blob": "5afb0972019285da085fc77150ceee9d12e05e75",
+          "authority_source": "task-records.json post-handoff-s10"
+        }
       }
     },
-    "source_closure": "HUMAN_DECLARED_2026_09_30_AFTER_FINAL_SAVE",
-    "post_handoff_material": "SOURCE_DELTA_COMPILED_IN_RECORD_REVISION_3; SEE_NEXT_TRANSITION_POST_HANDOFF_UPDATES"
+    "source_closure": "HUMAN_DECLARED_2026_09_30_AFTER_THIS_SCOPED_RETURN_SAVE",
+    "post_handoff_material": "SOURCE_DELTA_COMPILED_IN_RECORD_REVISION_4; SEE_NEXT_TRANSITION_POST_HANDOFF_UPDATES"
   },
   "eof_sentinel": "ARK28_01_STATE_EOF_v001"
 }
