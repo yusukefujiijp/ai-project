@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.18.0
+version: v0.18.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-09-30
 ---
@@ -210,6 +210,8 @@ Humanが繰り返し用いている「xxを“Living Review: Not dead data, but 
 
 同じ会話の専用Skill参照機能では、新規Skillを取得できませんでした。保存済みの有効な導入先・現物・GitHub本文の一致と、この参照経路の状態を分けて記録します。Human UIやすべての参照経路への反映は未確認です。この表示・参照差だけを理由に、再作成や再導入は行っていません。
 
+2026-09-30の後続確認では、旧Seedの修正依頼時とSource差分保存時に、通常のSkill参照機能から新規living-reviewの4,204文字の本文を取得でき、当該時点のGitHub共有本文と完全一致しました。上記の取得不能は導入直後の観測として保持し、同じ未反映が現在も続いているとは扱いません。この確認を全UI・全参照経路・自然な自動選択・全AI互換性の証明へ広げません。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -263,4 +265,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.18.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.18.1
