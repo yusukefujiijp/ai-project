@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_07_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:07",
     "schema_version": "v002",
     "updated_at": "2026-10-01",
-    "update_reason": "Human-authorized STR-003 foundation and continuity contract version migration; preserve historical initialization separately.",
+    "update_reason": "STR-003 implementation published and all12 target bodies remotely verified; reconcile observed completion, retain actual Target/UI/field unknowns.",
     "authority": "Current Human approved the complete foundation plan, GitHub execution, required verification and explicit compatibility migration. No unrelated work.",
     "date_scope": "Asia/Tokyo migration date; UTC 2026-09-30"
   },
@@ -203,12 +203,12 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "Human approved the coherent foundation migration for persistent, bounded collaboration. Same chapter Ark27 and Main07; v002 separates historical initialization from live routing and compatible current owners. Actual migration verification is in progress/STR-003, not inferred from this text.",
+    "current_coordinate": "STR-003 foundation migration was published and all12 target bodies remotely verified. Same chapterArk27/Main07; current v002 separates immutable historical evidence from live routing and compatible owners. ActualTarget/UI/field effects remain separately observed.",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
     "current_legal_connection": "Read/reuse verified v002 core and relevant conditional sources, resolve R1–R6, then act on the current request within authority. Check actual external state before resuming uncertain operations.",
     "target_boot": "NOT_OBSERVED_BY_SOURCE",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past life reports are historical.",
-    "next_specific_task": "Complete and verify the approved STR-003 migration; afterward accept current input without automatically starting unrelated branches.",
+    "next_specific_task": "No unrelated task selected. Receive current input or any authorized remaining verification; do not auto-start deferred branches.",
     "inherited_current_outcomes": [
       {
         "owner": "control-center/ARCHIVE.md",
@@ -269,7 +269,7 @@
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "trial_started": false,
-    "unfinished_gate": "Required migration verification and independently observed reception are separate. Historical07 initial Target/UI observations remain historical, not evidence for current completion."
+    "unfinished_gate": "No remaining implementation gate for STR-003 after recorded verification. ActualTarget reconstruction, UI actions and field effects are separately unobserved; not mandatory new tasks."
   },
   "evidence": {
     "source": "Earlier verified public Repository owners and authorized06 conversation, plus current explicit foundation-migration approval and current Repository observations. No ChatGPT memory export.",
@@ -278,7 +278,8 @@
       "06 harvest State revision2 and07 Runtime/Handoff were saved and remotely reread before this initial State was compiled; see verified_predecessors.",
       "ARC/STR and Plan Mode owners distinguish approvals, implementations, remote checks, limited behaviors and residual risks. Refer to the originals rather than duplicating their ledger.",
       "Human's positive evaluation and readiness to move are reports/choices, not proof of universal efficacy.",
-      "Current Human explicitly approved STR-003 plan, GitHub execution and formal version migration after read-only review; this is authority evidence, not proof of published completion."
+      "Current Human explicitly approved STR-003 plan, GitHub execution and formal version migration after read-only review; this is authority evidence, not proof of published completion.",
+      "STR-003 commit d6564b750c9e750c75c8728e2466ba324d12d0bb was published to main and12/12 target bodies reread exactly;378 unrelated existing paths unchanged. Independent source audit and8 modeled response decisions completed, not actual Target boot."
     ],
     "candidate": [
       "Short-term success becoming long-term maintenance burden may be a useful diagnostic seed for other forms of organization.",
@@ -343,14 +344,20 @@
       "record": "control-center/changes/STR-003-persistent-collaboration-foundation.md",
       "base_commit": "d574927dd1671e2acec20e1a6c17f569ae23322f",
       "source_prepared": true,
-      "publication": "PENDING_AFTER_AUTHENTICATION_RECOVERY; no commit/ref update yet",
-      "remote_verification": "PENDING; harmless read at2026-09-30T22:40Z confirmed recovered access and unchanged main. Regenerate current candidate then verify before publication.",
+      "publication": "PUBLISHED_TO_MAIN",
+      "remote_verification": "12/12 full content match from implementation commit before publication and current main after publication; expected blobs match;378 unrelated existing paths unchanged in blob/mode.",
       "independent_review": "SOURCE_SEMANTIC_REVIEW_PASSED_AFTER_DUPLICATE_BODY_FIX; not behavioral or actual Target reception",
       "actual_target_reception": "NOT_OBSERVED",
       "human_ui": "NOT_OBSERVED",
       "real_world_effect": "NOT_OBSERVED",
       "scope": "Current foundation/07 contracts only; no new chapter, Support intent change, personal setting change or new monitor.",
-      "behavioral_scenarios": "8/8 independent staged-document scenario-conditioned response decisions consistent; not actual platform Boot, concurrent-write execution, UI or field outcomes"
+      "behavioral_scenarios": "8/8 independent staged-document scenario-conditioned response decisions consistent; not actual platform Boot, concurrent-write execution, UI or field outcomes",
+      "implementation_commit": "d6564b750c9e750c75c8728e2466ba324d12d0bb",
+      "implementation_tree": "03cc4b8c86102158d815000fd301031d574cd904",
+      "committed_at_utc": "2026-09-30T22:42:11Z",
+      "verified_at_utc": "2026-09-30T22:42Z",
+      "unchanged_existing_files": 378,
+      "recovery": "Initial GitHub transport401 stopped before commit/ref. Read-only recovery check confirmed same main; regenerated candidate, verified it and used non-force publication. No unauthorized fallback."
     },
     "acceptance_policy": "Current Handoff v002 core/conditional sources and R1–R6. Independent scenario review is not actual Target boot or UI observation. Preserve historical v001 preparation separately.",
     "revision_history": [
@@ -363,6 +370,11 @@
         "revision": 2,
         "date": "2026-10-01",
         "role": "Explicitly authorized foundation and continuity contract v002 migration; completion evidence recorded separately."
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-01",
+        "role": "Record observed STR-003 publication and remote verification; no self SHA."
       }
     ]
   },

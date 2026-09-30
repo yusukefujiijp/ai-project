@@ -3,7 +3,7 @@ title: "ai-project構造整理 — 診断から改善へ"
 version: "0.10.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "Prior ARC/STR evidence retained / STR-003 foundation migration authorized; verification recorded in its owning change record"
+status: "Prior ARC/STR evidence retained / STR-003 foundation migration published and remotely verified; actual Target/UI/field evidence separate"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
@@ -23,7 +23,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.10.0"
 
 2026-10-01 JST、HumanはD04の外側案内だけでなく、README等の基盤を継続的協働へ再設計する計画を承認し、GitHub実行と明示的な版移行を求めた。[STR-003](changes/STR-003-persistent-collaboration-foundation.md)が対象・形成・互換・検証の所有記録である。
 
-Root、AGENTS、ARK、Domain、Ark27章／INSTRUCTIONS、07三点セット、共通移行契約を整合する。01–06は固定snapshotから履歴を辿り、旧Current-main固定条件を新版の成功へ黙って変換しない。D04はSTR-001での限定設計から、今回の新しい承認によるC案の版移行へ進んだ。保存・Remote確認・独立AI試験・実Target・UI・実効果は別の状態として同記録で確認する。
+Root、AGENTS、ARK、Domain、Ark27章／INSTRUCTIONS、07三点セット、共通移行契約を整合する。01–06は固定snapshotから履歴を辿り、旧Current-main固定条件を新版の成功へ黙って変換しない。D04はSTR-001での限定設計から、今回の新しい承認によるC案の版移行へ進んだ。実装commit d6564b750c9e750c75c8728e2466ba324d12d0bbで12対象の公開・全文Remote一致と378対象外ファイル保持を確認した。独立意味レビューと限定8シナリオの判断を確認し、実Target・UI・実効果とは別に同記録で保持する。
 
 ARC-002元パス除去、Graph／One-Tableの固定Binding、支援の意図、個人設定、監視、生活試行は今回の対象外。旧案件の当時の残点を削除せず、下の履歴記述と今回の後続結果を分けて読む。
 
@@ -250,7 +250,7 @@ flowchart TD
 | E02：通常案内の整合 | D02・D03→保存先・現在地 | 内容別の保存先と通常入口を整える | D03は確認済み。D02はSTR-001で保存・Remote確認済み |
 | E03：実効経路の修復 | D01・D05→適切な資料 | 用途別の入口とOKFペア両側の現在住所を整える | STR-001で保存・Remote確認済み |
 | E04：存在・身分の案内 | D07・D08→候補の実体 | Voice SystemとModeの所在・成熟段階を案内する | STR-001で保存・Remote確認済み。採用・起動とは区別 |
-| E05：固定参照の設計 | D04→章・継承契約 | 既存Domainの可変入口と固定章資料を分けて扱う | STR-001で比較・方針を保存・Remote確認。章直入口制約とBinding移行は残る |
+| E05：固定参照の設計と版移行 | D04→章・継承契約 | STR-001の設計を経て、STR-003でCurrentと固定来歴を明示分離 | STR-003基盤移行を公開・Remote確認。旧Gate互換実行や別Graph／One-Table移行とは区別 |
 | E06：続く実体整理 | 06の三群ランキング→ARC-002–004 | 七原本を保存。Bridgeは固定参照のため元パスも保持し、他六原本は移動。旧Seedの文脈継承価値を入口へ接続する | 保存・移動・案内をRemote確認済み。Bridgeの元パス除去は保留 |
 | E07：観測の継承 | 実装→根拠→再判断 | アーカイブはARCHIVE、通常修正の5W1Hはchanges/の同じ案件へ追記。全体レビューは既存Repository Reviewsへ接続 | STR-001の実装・Remote確認を記録済み。利用効果は未観測 |
 

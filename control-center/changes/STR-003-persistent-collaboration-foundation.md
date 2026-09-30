@@ -4,7 +4,7 @@ record_id: "STR-003"
 version: "v001-human-authorized"
 canonical_path: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
 role: "Scoped migration rationale, compatibility and verification record"
-status: "source prepared; publication and verification recorded after observation"
+status: "implemented and remotely verified; independent source/scenario checks complete; actual Target/UI/field effects separate"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
 record_date: "2026-10-01"
@@ -111,7 +111,36 @@ DomainのHistorical節内にも旧Ark23のCurrent表現が残るという任意�
 
 ### 5.2 Publication and remote verification
 
-公開は未完。初期candidate tree作成は成功したが、その直後のGitHub読取がtransport HTTP 401 Unauthorizedとなり、repository取得も同じエラーだった。commit作成・main ref更新には進んでいない。認証の拒否を別経路で迂回しない。2026-09-30T22:40Zのread-only再確認で接続が回復し、Current mainは基点と同一だった。後続修正を含むtreeを再構築・再取得してから公開する。公開commit・対象本文・blob・対象外保持・観測時刻は実際の確認後に追記する。
+**実装12パスをmainへ公開し、公開前・公開後の全文一致を確認した。**
+
+- 実装commit: [d6564b750c9e750c75c8728e2466ba324d12d0bb](https://github.com/yusukefujiijp/ai-project/commit/d6564b750c9e750c75c8728e2466ba324d12d0bb)
+- tree: 03cc4b8c86102158d815000fd301031d574cd904
+- GitHub保存時刻: 2026-09-30T22:42:11Z / 2026-10-01T07:42:11+09:00
+- commit author／committer: yusukefujiijp。Humanの意味承認・AI実装と区別する
+- 公開前: 作成treeの12対象blob一致、対象外378ファイルのblob／mode同一、実装commitから12本文の全文一致を確認
+- 公開: headが基点d574927と同一であることを再確認し、non-forceでmain refを一度に更新
+- 公開後: mainから12本文を再取得し意図した本文と一致、main headが実装commitであることを2026-09-30T22:42Zに確認
+- 389既存ファイルのうち11更新、記録1追加で390。01–06三点セット、Ark28:02、その他Support、無関係なSourceを含む378ファイルは変更なし
+- 失敗と復旧: 最初のcandidate tree作成後にtransport HTTP401。commit／refは未操作で停止。22:40Zのread-only確認で接続回復とmain不変を確認し、更新済みcandidateを再構築した。認証迂回や不確かな公開の重複は行っていない
+
+次表は**実装commit時点**の観測blobであり、Currentの永久pinではない。State、PLAN、本記録の検証追記は後続commitとして保存し、再取得する。記録自身の未来のSHAを埋める循環を作らない。
+
+| Path | 実装commitで全文一致したblob |
+|---|---|
+| `AGENTS.md` | `03cf69572231ea724fbe4dec2b4f639a8d9fa5f7` |
+| `ARK.md` | `9e73cc4acf16bf79f328dbb3fb75b34d78f9a6db` |
+| `README.md` | `5cd5d7ffc69cef79d27c40add398f352d64fb6f6` |
+| `ark-project/README.md` | `3db9ac81c1658fc54c514f26db9a5e52b2bcf94f` |
+| `ark-project/ark27/INSTRUCTIONS.md` | `000aae00bdf11cfd9abba4013a9261734262110b` |
+| `ark-project/ark27/README.md` | `735e4ff79d0746e87ce02b86232761d8da1916a2` |
+| `ark-project/ark27/ark27-07/README.md` | `236a1970bdc497667f3fffc245d89509500785ca` |
+| `ark-project/ark27/ark27-07/handoff.md` | `96766cba7e16b5b3423cd5026d457c93969f1c1a` |
+| `ark-project/ark27/ark27-07/state.json` | `73f84ba1562f534be0d4dcc7ee1156ac7cd1f32e` |
+| `control-center/PLAN.md` | `0eef00d9b79758d882aed7d1f6903a79e6e19e9e` |
+| `control-center/changes/STR-003-persistent-collaboration-foundation.md` | `c0592422f4bedf5f47083ed1b789cb505a46100c` |
+| `prompts/ai-next-thread-handoff.md` | `95ba8491d893580336fdb702ba9d036c24e7706a` |
+
+基点との差分は[実装比較](https://github.com/yusukefujiijp/ai-project/compare/d574927dd1671e2acec20e1a6c17f569ae23322f...d6564b750c9e750c75c8728e2466ba324d12d0bb)。後続の検証追記はこの案件のGit履歴から辿れる。
 
 ### 5.3 Behavioral and real-world boundary
 
