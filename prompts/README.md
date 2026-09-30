@@ -259,6 +259,8 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 説明・レビュー・承認済み改訂を現在の依頼から区別し、固定Gate、毎回の新発見や追加Taskを要求しない。Ark-OKFは回答への適用、mapは現在地の復元と末尾のLiving Review → Next stepを担う。本体はこれらの用途固有契約を置き換えず、関連資料を全件必読にしない。版と確認範囲は本体§10を参照する。
 
+日常の呼出しには [AI Living Review / living-review](../skills/living-review/SKILL.md) を使える。対象と現在の依頼から基本支援を行い、詳しい意味や具体例を深める必要時に共通本文へ進む。専用Skillの共有・導入・確認範囲は[Shared Skills Hub](../skills/README.md#34-ai-living-reviewの入口)を参照する。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use

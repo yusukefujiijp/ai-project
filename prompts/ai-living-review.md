@@ -1,13 +1,13 @@
 ---
 title: "AI Living Review: Not dead data, but a living board."
-version: "v0.2-candidate"
+version: "v0.3-candidate"
 status: "Human-authorized revision / cross-AI method candidate"
 canonical_path: "prompts/ai-living-review.md"
-updated: "2026-09-29"
+updated: "2026-09-30"
 audience: "Current AI / other AI / Future AI; human-reviewable"
 language_policy: "Japanese-first / English-anchor"
 document_role: "Self-contained explanation and application guidance; current request determines use and authority"
-activation: "Use this body with the current request and relevant target material; no separate query file"
+activation: "Use living-review when available, or this body with the current request and relevant target material; no separate query file"
 legacy_source:
   filename: "ai-living-review.md"
   version: "v0.1-draft-candidate"
@@ -176,6 +176,7 @@ Humanの開始・待ち時間・推定認知負担・Token節約を理由に、�
 | 文書・方法 | 分担と接続 |
 |---|---|
 | 本書 | Living Reviewの根本の意味、判断原理、適用条件と具体例を説明する。 |
+| [AI Living Review / living-review](../skills/living-review/SKILL.md) | 「xxをLiving Reviewして」という日常の入口から、対象・目的・権限を解決し、根拠を伴う見立てと今有効な接続を返す。基本運用はSkill単体で使い、意味や具体例を深める必要時に本書へ進む。 |
 | [map-ark-current-position](../skills/map-ark-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigator、末尾のLiving Review → Next stepへ適用する。 |
 | [AI Living Graph Mode](ai-living-graph-mode.md) | 関係からの発見や、Actual Traceによる関係評価の更新を深める。表の生成だけをLiving updateとしない。 |
 | [Ark-OKF](ark-open-knowledge-format.md) | 判断・根拠・意味をHumanとFuture AIが再読・再利用できる回答の形へ整える。 |
@@ -207,4 +208,6 @@ mapへのLiving Review導入は、この旧ファイルの発見・今回の改�
 
 同時に、Ark-OKFのLiving Review説明を選択可能な観点と用途固有の契約へ整え、Root・中央軸・Human側の応答を区別した。mapには基本支援を自己完結したまま共通説明へ進む条件付き参照を加える。文書間の接続は、全件必読化や自動改訂の許可を意味しない。
 
-EOF::AI_LIVING_REVIEW::v0.2-candidate
+2026-09-30、Humanが繰り返し使う「xxを“Living Review: Not dead data, but a living board”して下さい！」という入口を専用Skillへ接続する計画を承認したため、`living-review`との分担を追加した。本書は自己完結した共通説明を保持し、Skillは基本運用と呼出しを担う。map固有の末尾二節や既存Skillの本文は変更しない。新Skillの限定応答確認・共有保存・導入の結果は[Shared Skills Hub](../skills/README.md#34-ai-living-reviewの入口)で時点と範囲を区別して記録する。
+
+EOF::AI_LIVING_REVIEW::v0.3-candidate

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Living Review"
+  short_description: "対象の価値・問題・可能性を現在の根拠から読み、次の判断へ結ぶ"
+  default_prompt: "$living-review を使い、現在の対象・目的・文脈に照らしてLiving Reviewしてください。"

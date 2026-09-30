@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.17.0
+version: v0.18.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-29
+updated: 2026-09-30
 ---
 # Ark Shared Skills Hub
 
@@ -18,6 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [SKILL.md](living-review/SKILL.md) | 基本運用は本文、意味・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に参照 | 形式・六つの独立文脈で計九応答を確認。共有・導入の確認状態は§3.4。自然な自動選択・全AI互換性・実生活効果とは区別 |
 | Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing、[Living Reviewの共通説明](../prompts/ai-living-review.md)への必要時参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
@@ -185,6 +186,26 @@ Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査�
 
 これらは限定した応答と隔離素材での保存確認です。旧v005 E1／E5の通過、モデル間の品質優位、自然な自動選択の安定性、全AI互換性、Human UI操作、長期の負担軽減は実証していません。形式検証・導入先の保存確認・GitHubとの本文一致は、ARC-006の確認結果で区別します。通常利用ごとの自己監査や、スキルの自動書換えは行いません。実際の不足が生じた場合に、承認範囲で修正・削除・統合・置換を検討できます。
 
+### 3.4 AI Living Reviewの入口
+
+登録済みの環境では、対象とともに次の入口を使います。
+
+~~~text
+$living-review を使い、現在の対象・目的・文脈に照らしてLiving Reviewしてください。
+~~~
+
+Humanが繰り返し用いている「xxを“Living Review: Not dead data, but a living board”して下さい！」も、専用Skillの発動を意図した自然文の用例です。説明文にはこの依頼を含めていますが、環境ごとの自然な自動選択の実績とは区別します。対象・現在の依頼・訂正をAIが受け取り、Humanに長い定型知識の再入力を求めません。
+
+[共有本文](living-review/SKILL.md)は基本の運用を自己完結して保持し、[表示設定](living-review/agents/openai.yaml)には表示名・説明・上記の起動文を収めます。根本の意味・形成の経緯・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に進みます。共通説明全文の複製、独立した_queryファイル、関連Skillの一括起動は追加しません。Skill機構のない他AIへは、共有本文のURLと今回の依頼・対象資料を渡して指示資料として利用できます。URLを渡すことと導入完了は別です。
+
+2026-09-30、Ark28:01でHumanが専用Skillの作成計画とGitHub共有・導入を承認しました。元会話、作成計画、期待回答を渡さず、Skillの現物と相談素材から回答する六つの独立したAI文脈で、計九応答を確認しました。対象Prompt内の実行指示をレビュー素材として扱うこと、価値を保つ設計と重要な訂正による提案更新、外部リンク取得なしでの完了判断と名称のみの訂正、Plan-onlyから後続の明確な実行承認への切替、mapとの統合、必須Handoff不足と独立した配色検討を扱いました。
+
+計画限定では指定した隔離素材が変更されていないことを確認し、その後の承認に沿う一文の変更は保存後に再読しました。mapではTree・Node & Edge、末尾のLiving Review → Next step、今回の完了を保持しました。必須Source不足は影響する判断を保留し、通常のUnknownや任意参照の取得不能を一律の全面停止へ広げませんでした。導入用ディレクトリの形式検査と、共通説明・表示設定・参照先の整合確認を通過しています。
+
+これらは明示的にSkillを読ませた限定的な応答と隔離素材での保存確認です。架空の相談素材をHumanの実経験へ転記せず、自然な自動選択、全AI互換性、Human UI操作、長期の負担軽減、実生活の効果は実証済みとしません。既存map・Navigator・他Skillの本文、および移行用の固定Bindingを今回の作成から変更しません。通常利用を毎回のSkill自己監査や自動書換えにせず、現実の不足とHuman Feedbackから必要な改訂を判断します。
+
+共有保存・導入の最終確認は、この初回共有に続けて実施する段階です。上記の作成・限定応答確認を、導入済みや全参照経路への反映の証明として扱いません。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -238,4 +259,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.17.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.18.0
