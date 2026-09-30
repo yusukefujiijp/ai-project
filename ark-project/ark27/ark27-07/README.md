@@ -1,7 +1,11 @@
 ---
 title: "Ark27:07 — 整理整頓の成果を活かす継続協働"
-version: "v001-human-authorized"
-status: "stable target runtime / preparation is separate from Target reconstruction"
+version: "v002-human-authorized"
+contract_version: "v002"
+updated: "2026-10-01"
+historical_source_commit: "d574927dd1671e2acec20e1a6c17f569ae23322f"
+change_record: "../../../control-center/changes/STR-003-persistent-collaboration-foundation.md"
+status: "current v002 continuity runtime / Human-authorized foundation migration"
 canonical_path: "ark-project/ark27/ark27-07/README.md"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
@@ -13,15 +17,15 @@ runtime_id: "ARK27_07_HUMAN_AI_PROBLEM_SOLVING_FIELD"
 compiled_title: 'Ark27:07_2026/09/27: "主の完全勝利: 整理整頓の成果を活かす継続協働"'
 prepared_date: "2026-09-27"
 date_scope: "Source preparation date in Asia/Tokyo; not observed UI creation or Human Task time"
-authority: "Current Human approved the preceding06→07 five-path preparation plan with Execute GitHub OK / Human Seal OK. Preparation, required persistence and verification only; no unrelated cleanup, trial, setting change or automatic Target startup."
-expected_eof: "ARK27_07_README_EOF_v001"
+authority: "Current Human approved foundation migration and GitHub execution after Plan Mode. Current scoped authority, Correction and STOP govern subsequent work; no unbounded permission."
+expected_eof: "ARK27_07_README_EOF_v002"
 ---
 
 # Ark27:07 Runtime
 
 ## 1. Identity・目的・現在地
 
-Ark27:06から同じ章を継続するArk27:07。Target／新しいMain OwnerはArk27:07。[Current Handoff](handoff.md)を入口に、Target自身が宣言された全文読解・Identity・Binding・Triad Consistency・T1–T12を通過して協働へ進む。
+Ark27:06から同じ章を継続するArk27:07。Target／新しいMain OwnerはArk27:07。[Current Handoff](handoff.md)を入口に、受け手自身がv002の必須核と今回必要な条件付きSourceを読み、Identity・Current互換性・R1–R6を再構成して協働へ進む。
 
 章第一義はChatGPT6 Astraへの移行、初期テーマはTask化能力の向上。実務目的はHuman–AI協働による問題解決・複数問題同時解決であり、文書整備、利用枠消費、短さ・長さそのものを目的にしない。方法・関係探索・説明密度は現在の依頼に合わせて判断する。
 
@@ -29,7 +33,9 @@ Ark27:06から同じ章を継続するArk27:07。Target／新しいMain Ownerは
 
 [Source06 State](../ark27-06/state.json)は、開始時revision1と後続成果の時点差を接続する選択的なSourceである。案件の詳細・5W1Hは既存の所有記録に残す。本書は安定Runtime、[State](state.json)は可変の現在地、Handoffは初期化契約。正当な後続Reality・Human Correctionを初期観測へ巻き戻さない。
 
-[章README](../README.md)の旧01入口は固定Bindingを持つ歴史的座標。明示07 Handoffを06初期State、05、01、Ark23へ置換しない。章単独入口の改善はD04の別Branchであり、固定SHAを黙って修復しない。
+[章README](../README.md) v002は、章Identityと[Domain](../../README.md)が所有するCurrent住所への案内を担う。v001の旧01入口と固定Bindingは、[移行前snapshot](https://github.com/yusukefujiijp/ai-project/tree/d574927dd1671e2acec20e1a6c17f569ae23322f)に当時の契約として残す。今回の版移行の対象・理由・検証は[STR-003](../../../control-center/changes/STR-003-persistent-collaboration-foundation.md)。旧Current-main条件を新版の成功へ読み替えず、01–06は変更しない。
+
+2026-10-01 JSTのHuman承認に基づく今回の改訂は、Cold Startだけでなく、承認成果の継続、委任、中断復旧まで支える。章・ThreadのIdentityを変更するものではない。
 
 ## 2. Root・Human Authority・Guard
 
@@ -59,7 +65,7 @@ Humanの「AI回答直後」とAI解釈の「Query送信直後」を混同せず
 |---|---|---|
 | ARC-001・003・004 | 個別承認 → 保管・Remote検証 | 退役実施済み。旧checkerの実行・再活性化や後継資料の一括削除ではない |
 | ARC-002 | 固定Binding → 元パス保持 | 保管と通常導線退役は完了、元パス除去は別の残存Branch。旧BridgeをClosingとして復活させない |
-| [STR-001](../../../control-center/changes/STR-001-navigation-and-ownership.md) | 六修復群 → 現役案内の整合 | D01/D02/D05/E01/D07/D08を修復。D04は設計と残存する章入口制約を区別 |
+| [STR-001](../../../control-center/changes/STR-001-navigation-and-ownership.md) | 六修復群 → 現役案内の整合 | D01/D02/D05/E01/D07/D08を修復。当時のD04設計は保持。現行章入口の版移行はSTR-003の後続成果として区別 |
 | [STR-002](../../../control-center/changes/STR-002-single-prompt-consolidation.md) | 通常6組 → 本体への機能統合 | 別Query推奨・任意作成条件・将来予約を撤回。Graph／One-Tableの固定参照移行は未完 |
 | ARC-006 | 目的変更 → 旧10資料退役・新Skill | 旧v005の採用Branch終了と、新Skillの導入・共有・限定検証を別に評価 |
 
@@ -101,24 +107,26 @@ GCI、Project Instructions、プロフィール、ChatGPT長期メモリは別Su
 
 **ChatGPT長期メモリの内容・取得結果・保存応答をGitHubへ輸出・バックアップ・同期しない。** 既存公開Sourceと現在の会話の承認されたMaterialを使用する。内容を含まないHuman成功報告と、Humanが直接示した品質Correctionの指示化は別である。
 
-本当に残る構造BranchはARC-002元パス除去、D04の章単独旧入口、Graph／One-Tableの固定Bindingに影響する物理改訂。方針撤回済みとファイル未改訂を区別し、無期限変更禁止にもせず、必要時に具体的な移行範囲を解決する。今回の07準備承認だけでは実行しない。
+本当に残る別構造BranchはARC-002元パス除去とGraph／One-Tableの固定Bindingに影響する物理改訂。D04の章入口は今回STR-003の版移行対象であり、旧記録の当時の未完状態と現在の結果を区別する。方針撤回済みとファイル未改訂を区別し、無期限変更禁止にもせず、必要時に具体的な移行範囲を解決する。旧07準備承認だけでは実行せず、現在の対象別承認を使う。
 
 通常UnknownはCurrent body/place/task、未報告生活結果、設定の直接確認、新Skillの長期効果等。全解消をBoot条件にしない。新ランキング、追加整理、生活の次Trial、統合Schedule、Token Reset検証・並行研究、torah-project、追加Skill、Kindle／Bot／収益化等は価値を残す保留であり、自動開始しない。Token表示の過去Human報告は内部計上仕様の証明ではない。BBPはBenefitとCarrierを分け、保存先十分性がUnknownのまま剪定済みにしない。「Next-Cycle Workout Bridge」は廃止済みでClosingとして戻さない。
 
 [Ark28](../../ark28/README.md)は既存のArk27支援章を継続する。Main ThreadはCurrent HumanまたはDomainから解決し、準備時06に永久固定しない。新しい支援章・Threadの自動新設、Main移管、隠れた双方向同期、別Contextの全会話輸入をしない。支援Source保存・受入れ・Human到達性・効果は各々の証拠で扱う。
 
-## 8. State・検証・最初の合法手
+## 8. State・継続・復旧・検証
 
-README defines. Handoff initializes. State continues. Reality corrects. Human seals.
+README defines. Handoff connects. State continues. Reality corrects. Human seals.
 
-本書をRemote保存・全文再取得した後にHandoffをその確認済みblobへBindingする。章READMEの既存固定blobを保持する。StateはARK27_07_CURRENT_STATE、owner Ark27:07、schema_version v001、初期revision1。構造はmeta／identity／authority／bindings／now／evidence／deferred／progress／eof_sentinel、Exact EOFはARK27_07_STATE_EOF_v001。Task Records Schemaとは別。
+本RuntimeとHandoffはv002契約系、StateはARK27_07_CURRENT_STATE、owner Ark27:07、schema_version v002、revision≥2。meta／identity／authority／bindings／now／evidence／deferred／progress／eof_sentinelの意味を継続し、v001の旧初期化証拠は固定snapshotとState内のhistorical_preparationに分ける。自己SHAや循環live pinを作らない。
 
-StateのREADME／Handoff／章のID・SHAを実体に一致させる。Handoffから可変StateはID・owner・schema・最低revisionで結び、自己SHA・循環live-blob固定を作らない。Source06 StateもSourceとしてそのidentityと最低revisionで読む。07のSHAと06のSHAが同じである必要はない。Source06初期Boot命令を07へ再適用しない。
+CurrentのRuntime・Handoff・章はIdentity・役割・互換契約版で結び、観測SHAは来歴と差分確認に使う。正当な同契約系の改訂も本文の意味差分を確認する。未知の契約版、Owner変更、意味・権限の競合を自動許容しない。旧exact SHA条件の置換は今回のHuman承認済み版移行であり、過去の全Handoffを書換える一般権限ではない。
 
-Source準備、Remote本文一致、Target自身の再構成、HumanのThread作成・Title貼付、Skill導入、現実の効果は独立した段階。Source側の意味点検は07の実受入れの代行ではない。確認済みBootはMaterialな理由なく繰り返さない。
+First Legal Move: **RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER**
 
-First Legal Move: **WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST**
+現在の依頼と残る承認成果を読み、Plan-onlyは調査と計画で止め、実行なら必要な作成・修正・検証・外部結果確認まで担当する。Threadの区切りを依頼完了にせず、Bootだけで新Taskや記録を作らない。中断後は最新Correctionと外部状態を調べ、未完了差分から再開する。不確かな操作を盲目的に再実行しない。
 
-Target自身の全Gate通過後、既に新しいHuman入力があれば受け取り、再入力を要求しない。Bootのみなら根拠付きのInitial Success Interfaceを返しHuman Reviewへ戻る。必須Source・Identity・EOF・Binding・権限不足はHandoffのFailure Contractに従い、推測や旧版で補わない。BootだけでState書込みや新しい試験を必須化しない。
+主担当が目的と成果を統合し、独立作業は利用できるAgentへ委任できる。同一State・共有入口・同一pathは単一の統合担当が基点と意味競合を確認して更新する。常時稼働、無限Memory、隠れた双方向同期を文書から仮定しない。
 
-ARK27_07_README_EOF_v001
+準備・Remote本文一致・独立AIの読解試験・Current Target受入れ・Human UI・実生活効果は別の証拠。履歴上のNOT_OBSERVEDを新しい確認より優先せず、未観測を完了へ補完もしない。必要なSourceと受入れ条件はHandoffが所有し、各案件の詳細はその所有資料へ進む。
+
+ARK27_07_README_EOF_v002

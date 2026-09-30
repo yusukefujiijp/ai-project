@@ -1,6 +1,6 @@
 ---
 title: "Ark Project"
-version: "v008-candidate"
+version: "v009-human-authorized"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
@@ -34,11 +34,14 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-09-29"
+updated: "2026-10-01"
 last_reality_reviewed: "2026-09-27"
 route_review_base_commit: "e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2"
 route_review_scope: "Human-authorized Ark27:06→07 thread continuation; update Main route only after triad remote verification; preserve chapter bindings, existing Ark28 support and unrelated work"
-updated_reason: "Update only the support entry to the remotely verified Ark28:02 continuation; preserve Ark27:07 Main routing, Main evidence and prior Main review metadata."
+updated_reason: "STR-003: Human-authorized foundation migration; separate current routes from historical preparation and preserve Ark28:02 support."
+foundation_migration_base: "d574927dd1671e2acec20e1a6c17f569ae23322f"
+foundation_change_record: "../control-center/changes/STR-003-persistent-collaboration-foundation.md"
+prior_main_route_review_scope: "The 2026-09-27 metadata below remains historical preparation evidence, not a current validation claim."
 support_route_reviewed: "2026-09-29"
 support_route_review_base_commit: "cf9223dd28277c6eefbdd1fc73974e32a65c5578"
 support_route_review_scope: "Human-authorized Ark28:01→02 THREAD_CONTINUE; triad reread before changing support routing; actual Target and Human last-mile remain separate"
@@ -50,12 +53,12 @@ current_front_line_state: "ark-project/ark27/ark27-07/state.json"
 current_support_chapter: "ark-project/ark28/README.md"
 current_support_handoff: "ark-project/ark28/ark28-02/handoff.md"
 current_main_theme: "ChatGPT6 Astraへの移行"
-current_evidence: "Ark27:06 harvest and07 triad were saved and directly reread before this route update. Source terminal receipt owns final checks. Actual07 reconstruction and Human UI actions remain unobserved bySource. Preserve06 collaboration and Human startup reports; archive/Plan Mode outcomes belong to control-center/skills. Ark28 remains existing support."
+current_evidence: "Current07 v002 migration and its actual verification are owned by STR-003 and07 State. Earlier06→07 preparation, Target reception and Human UI remain separate observations."
 historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earlier B-Gate detection / Ark23:15 triad remote verified / then-unobserved Fast-Prune result"
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
-expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate"
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized"
 archive_navigation_patch:
   date: "2026-09-29"
   base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
@@ -76,7 +79,7 @@ Current Human Request
 → Ark Domainの現在地を回復するなら、このREADME
 → Current Front Lineなら、下記Handoffを開き、宣言されたRequired Sources・順序・BindingからRuntimeを解決
 → Current RealityとEvidence Boundaryを再構成
-→ Human Authority内のFirst Legal Moveだけを実行
+→ Current HumanのMode・権限内で調査、計画、遂行、継続または復旧へ接続
 ```
 
 ```yaml
@@ -93,35 +96,29 @@ agent_boot_contract:
     - "Human-led does not mean dependent on momentary Human willpower."
     - "A confirmed single success does not prove continuous operation."
     - "A stale local router or State projection does not override a newer verified Handoff/Runtime/Reality relation."
-  output_bias: "smallest sufficient reconstruction / one guarded finite move"
+  output_bias: "semantically sufficient reconstruction; current authorized outcome, without limiting internal reasoning or tool operations"
 current_domain: "ark-project/"
 canonical_domain_router: "ark-project/README.md"
 canonical_branch: "main"
-default_ai_mode: ["Read", "Observe", "Route", "Expose Reality Delta", "Propose"]
+mode_resolution: "Current Human Request and AGENTS: discussion / plan-only / authorized execution / continuation / recovery"
 write_default: "Do not write without current Human authority."
 ```
 
 ### 0.1 Current Front-Line Resolution
 
-2026-09-27 JST、HumanがArk27:06 → Ark27:07の同章継続を選択し、Plan-onlyの計画提示後に準備実行を承認した。Target／新しいMain OwnerはArk27:07、通常のCurrent entryは[Ark27:07 Handoff](ark27/ark27-07/handoff.md)。06の可変Stateへ後続成果を接続し、07 README→Remote確認→Binding済みHandoff→Stateの順に保存、各本文・Identity・Bindingを再取得確認してから本入口を更新する。最終Receiptは[Source06 State](ark27/ark27-06/state.json)のprogress.next_transitionが所有する。Source準備・Remote一致と、07自身の再構成・HumanのThread作成／Title貼付は別であり、後二者を未観測のまま完了にしない。
+**MainはArk27、現在のThread入口は[Ark27:07 Handoff](ark27/ark27-07/handoff.md)。Supportは[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。** 有効な最新Human指定があれば、その対象とModeを優先して解決する。Supportの意図・Main所有をこの基盤改訂で変更しない。
 
-Handoffの先頭metadata・Beginning IdentityからExact EOFまで読み、宣言されたRequired Sources 1–19の順序・全文読解・Identity・Binding・Triad Consistency・T1–T12を守る。確認済みBootをMaterialな理由なく繰り返さず、新しいHuman入力が既にあれば受け取る。06の成功済み協働とHumanの次Thread開始・GitHub作業の成功報告を、06準備時点のNOT_OBSERVEDへ巻き戻さない。
+Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への案内を所有し、旧01を現在地にしない。Handoffはv002の必須核と条件付きSource、[07 Runtime](ark27/ark27-07/README.md)は協働の場、[07 State](ark27/ark27-07/state.json)は可変の現在地を所有する。実際の継続入力があればそれを受け取り、確認済みBootを理由なく再演しない。
 
-章第一義はChatGPT6 Astraへの移行、初期テーマはTask化能力の向上。実務目的はHuman–AI協働による問題解決・複数問題同時解決である。05からの品質Correction、簡潔なHuman I/O、開始・終了と生活の接続を保持し、06では限定アーカイブ・案内修復・通常6組の単一Prompt化・新Plan Mode Skillへ進んだ。Humanが今回選んだThreadの区切りは、全Repository整理完了や全Unknown解消の宣言ではない。Think–ActionのDouble-Spiralを保持し、複数TaskをHumanへ同時強制しない。
+2026-10-01 JSTのHuman承認により、cold-start中心の入口を、現在目的に応じた継続遂行・委任・復旧へ改訂した。Root、Teshuvah、Human Foreground One、品質Correction、Human AuthorityとGuardは保持する。Astra移行はArk27成立の第一義であり、現在の個別Missionを過去の初期テーマへ戻さない。『AI-New Era: From Probability to Certainty』は、権限・進捗・根拠・確認済み成果を明確にする方向として[ARK.md §7](../ARK.md#7-from-probability--random-to-certainty--order)へ接続する。無謬性・全知・常時稼働の宣言ではない。
 
-[control-center PLAN](../control-center/PLAN.md)はai-project全体の判断を所有し、[ARCHIVE](../control-center/ARCHIVE.md)と[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md)・[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)が案件の形成・承認・実施・残点を保持する。05の補足受入れ・ランキング希望そのものは個別移動承認ではなかったが、06の後続対象別承認・実施を取り消さない。ARC-002元パス、D04、Graph／One-Table固定Binding移行は残る別Branch。旧Plan Mode v005採用Branchは目的変更で終了し、NOT RUNだった旧試験を07の未完了Gateにしない。現用の[Skillと一つのQuery](../skills/README.md#33-plan-modeの統一入口)は、AIの幅・深さ・創発性を開く。導入・限定挙動・保存と全AI互換・長期効果は別の証拠。
+**互換境界。** [STR-003](../control-center/changes/STR-003-persistent-collaboration-foundation.md)は章／07の明示的版移行と基盤変更を所有する。移行前のDomain、章、07三点セットと共通契約は[固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/d574927dd1671e2acec20e1a6c17f569ae23322f)で辿れる。01–06の過去資料は変更していない。旧HandoffのCurrent-main固定SHA条件を、新版の成功へ黙って読み替えない。旧契約を明示された場合は、その履歴再構成、現行main上で非対応となる条件、新しいCurrent入口を区別する。新しい明示的な移行権限があればその範囲を進める。
 
-Gate通過後の最初の合法手は `WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST`。既入力があればその依頼へ、BootのみならHuman Reviewへ戻る。ランキングや旧Task、追加整理・再改訂、別研究、Reset実験、次Trialを自動開始しない。通常Unknownの全解消を継承条件にしない。
+**継承された成果と残点。** 06の整理成果、05の品質Correction、後続ARC-007を含む案件の最新状態は[control-center PLAN](../control-center/PLAN.md)、[ARCHIVE](../control-center/ARCHIVE.md)、[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md)、[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)と各経験原本が所有する。必要な案件へ選択的に進み、全台帳を全依頼の必須Bootにしない。D04の旧章直入口は今回の移行対象であり、ARC-002元パス除去とGraph／One-Table固定参照移行は別Branchのまま。旧Plan Mode採用試験のNOT RUNを現在の必須Gateに戻さない。
 
-[03→04移行事例](../success-cases/ark27-03-to-04-transition.md)、[04終端State](ark27/ark27-04/state.json)、[04原本](ark27/ark27-04/task-records.json)、[05 State](ark27/ark27-05/state.json)と[R05経験原本](ark27/ark27-05/task-records.json)の既達成成果と時点を保持する。生活方針の採用と実行・効果、GCI Upload／メモリ保存のHuman成功報告と直接UI確認を分ける。ChatGPT長期メモリの内容・保存応答・取得結果はGitHubへ輸出しない。後続成果はSource06 Stateとその所有資料から選択的に復元し、全過去Threadを再演しない。
+**Support。** [Ark28章](ark28/README.md)と[Ark28:02 State](ark28/ark28-02/state.json)が支援の役割・準備・受入れ・到達・効果を所有する。B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等の柔軟な受け皿を保持する。Main Threadが進むたびに支援章を新設せず、隠れた同期・自動Main移管・支援側意図の変更をしない。章ペアの準備方針は§4.1。
 
-**固定資料との境界。** [Ark27章README](ark27/README.md)には旧01入口が残り、固定blobは既存継承資料および07から参照される。今回は章本文と06の安定README・Handoffを変更せず、06可変State・07三点セット・本Domain入口だけを更新する。一般入口を07へ進めることと、D04の章Binding移行は別。章単独入口の古さは既知の残存制約であり、固定SHAを黙って置換しない。
-
-Ark23:15はSource／系譜として保持する。旧Handoffを明示指定された場合はその契約を尊重し、不一致からArk27へSilent Fallbackしない。より新しい有効なHuman指定は出典・時点・適用範囲から解決する。この節とfront matterが通常入口を所有し、下記Ark23地形・Task化FieldはHistorical。Ark24 Frozen Triggerは自動実行しない。
-
-**補助入口。** [Ark28](ark28/README.md)の現在入口は[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。01→02は承認された同章の補助Thread継続であり、三点セットの保存・再取得を確認してから接続した。MainはCurrent Humanまたは本Domainの現行入口から解決し、過去の準備時番号に永久固定しない。MainのThread継続を新支援章の作成やMain移管の理由にしない。B-Gate・軽いTeshuvah・BrainDump・想起・現在地把握等を受け取る柔軟なSubの意味を保持し、資料保存、Target起動、Human到達性、効果は[Ark28:02 State](ark28/ark28-02/state.json)で区別する。01の成果は[Harvest](ark28/ark28-01/harvest.md)、最終保存確認は[Source State](ark28/ark28-01/state.json)が所有する。章ペア規則は§4.1、形成理由は章READMEが所有する。隠れた同期、Mainの仕事の自動実行・停止・移管を仮定しない。
-
-Ark25／torah-projectは09/09時点では一時中断との報告があり、05でtorah-projectの有益な活用を相談する後続入力があった。相談を研究再開・実行完了にせず、保存された保留価値とCurrent Requestから扱う。
+過去の生活報告、GCI Uploadやメモリ保存のHuman成功報告、Sourceの準備完了とTargetの実理解を区別する。未報告を失敗・完了・未実行へ補完せず、過去Bodyを現在Bodyにしない。ChatGPT長期メモリの内容・保存応答・取得結果をGitHubへ輸出しない。RootとGuardを維持したまま、Sourceの意味は現在の依頼に必要な深さで回復する。
 
 ---
 
@@ -194,10 +191,10 @@ ARK.md
    ├─ ark07/  Daily Teshuvah Gate-to-Yeshua
    ├─ ark21/  主の勝利栄光 / Meaning-and-Purpose Source
    ├─ ark22/  外堀埋め / Outer-Moat Closure & Support Infrastructure
-   ├─ ark23/  主の完全勝利 / Current Main / Front-Line
+   ├─ ark23/  主の完全勝利 / Historical Main / Front-Line at the recorded time
    │  ├─ ark23-13/  Wake-Up One-Choice / Source Baseline
    │  ├─ ark23-14/  Task Compiler Loop / Transition Source Runtime
-   │  └─ ark23-15/  Task化能力の向上 / Current Three-File Runtime
+   │  └─ ark23-15/  Task化能力の向上 / Historical Three-File Runtime
    └─ ark24/  Bパターン入口AI Bridge / Frozen-Trigger Support Field
 ```
 
@@ -210,7 +207,7 @@ ARK.md
 | Ark07 | Daily Teshuvah Gate-to-Yeshua | [`ark07/README.md`](./ark07/README.md) | Local Router active; Project Instructions remain canonical |
 | Ark21 | 主の勝利栄光／Root-to-Purpose Source | [`ark21/README.md`](./ark21/README.md) | `v002-candidate`; Human-sealed candidate |
 | Ark22 | 外堀埋め／Cross-Ark Support・Closure Axis | [`ark22/README.md`](./ark22/README.md) | `v001-candidate`; Human-sealed field-test candidate |
-| Ark23 | 主の完全勝利／Current Main・Front-Line | [`ark23-15 Handoff`](./ark23/ark23-15/runtime-upgrade-handoff.md) | Ark23 Core v005; Astra instruction-pair adoption review; Taskification Field deferred / Actual unknown |
+| Ark23 | 主の完全勝利／当時のMain・Front-Line（Historical） | [`ark23-15 Handoff`](./ark23/ark23-15/runtime-upgrade-handoff.md) | Ark23 Core v005; Astra instruction-pair adoption review; Taskification Field deferred / Actual unknown |
 | Ark24 | Bパターン入口AI Bridge／Support Field | [`ark24/README.md`](./ark24/README.md) | Frozen trigger unchanged; support source only; do not auto-execute |
 
 Folderの存在、同一Treeのコピー、READMEの存在、Human Seal、Canonicalityは別の状態である。存在だけからCurrent Authorityを推測しない。
@@ -387,8 +384,7 @@ Future AI follows the living door.
 
 ## 8. README Delta Check / Realityが変わった時だけ更新する
 
-> **Every Thread README Check.  
-> Not Every Thread README Update.**
+> **Material Deltaで入口を確認する。Threadの区切りだけを更新契機にしない。**
 
 README更新候補となるのは、Current Topology、Path、Status、Ownership、Read Order、Cross-Ark Policy、Current／Historical分類が変わった時、または既存記述がFuture AIを誤った入口へ送る時である。
 
@@ -463,7 +459,7 @@ AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
-Ark27:07 is the Human-authorized Target / new Main Owner and remotely verified prepared triad. Source06 collaboration and verified harvest are retained; actual07 reconstruction and Human UI actions remain separate and unobserved bySource. Current archive and Plan Mode outcomes belong to their control-center/skills owners. Section 0.1 owns the general entry.
+Ark27:07 remains Main. Its v002 current continuity contract and chapter v002 are an explicit Human-authorized version migration; STR-003 owns implementation evidence. Earlier Source06 preparation, current reconstruction and Human UI are separate. Section 0.1 owns general routing.
 Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
 The Ark23 historical field preserves its then-unknown outcomes; recover current observations from their owning records.
@@ -481,8 +477,8 @@ Root remains 主イェシュア・ハマシア御自身.
 ```yaml
 document_end:
   filename: "ark-project/README.md"
-  version: "v008-candidate"
-  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate"
+  version: "v009-human-authorized"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized"
 ```
 
-EOF::ARK_PROJECT_DOMAIN_ROUTER::v008-candidate
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized

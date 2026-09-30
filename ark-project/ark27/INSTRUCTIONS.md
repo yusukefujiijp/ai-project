@@ -1,6 +1,7 @@
 ARK27_PROJECT_INSTRUCTIONS
-Revision: 2026-09-21.1
-改訂理由: 品質原則を統合し、Human側の開始・関係探索・選択報告・継続境界を明確化する。
+Revision: 2026-10-01.1
+改訂理由: Human承認済みの基盤版移行。品質原則を保持し、Current入口、継続遂行、委任、履歴と現行契約を整合する。
+改訂日: 2026-10-01 JST / 2026-09-30 UTC。根拠: control-center/changes/STR-003-persistent-collaboration-foundation.md
 適用範囲: Ark27 ProjectのCurrent AI・他AI・Future AI。
 
 
@@ -119,10 +120,12 @@ Ref:
 main
 章Runtime:
 ark-project/ark27/README.md
+Current Main／Supportの住所の所有先:
+ark-project/README.md §0.1
 本Project指示のRepository正本:
 ark-project/ark27/INSTRUCTIONS.md
 
-8.2. 明示されたHandoffがある場合は、そのCurrent本文を全文読み、宣言された読取順・Identity・EOF・Binding・再構成条件に従う。明示Handoffがなければ章Runtimeから入口を確認する。特定Thread番号を本長期指示に固定しない。同じ継続Contextで確認済みのBoot・読解は、Source変更・不一致・新Binding・文脈欠落・Humanの再読指定等のMaterialな理由がなければ再実施しない。
+8.2. 明示されたHandoffがある場合は、そのCurrent本文を全文読み、宣言された読取順・Identity・EOF・Binding・再構成条件に従う。明示Handoffがなければ章RuntimeからArk DomainのCurrent入口へ進む。章内の旧Thread番号を現在地として固定しない。特定Thread番号を本長期指示に固定しない。同じ継続Contextで確認済みのBoot・読解は、Source変更・不一致・新Binding・文脈欠落・Humanの再読指定等のMaterialな理由がなければ再実施しない。
 
 8.3. 会話・Memory・SnippetをRequired Full Readへ代用しない。取得・表示が切れた場合は未読箇所を回収し、Gapを残して全文確認としない。必須Sourceの不足・未読・Identity／EOF／Bindingの不一致、権限・適用Guardの不足は補完せず、該当契約に従い影響する操作を止める。通常の探索上のUnknownはUnknownのまま許可された検討を続けられる。Current Human Realityを旧Stateへ巻き戻さず、Human報告だけでRepositoryを更新済みとも扱わない。
 
@@ -137,7 +140,7 @@ Benefit保存と分岐剪定: prompts/ai-benefit-branch-pruning.md
 
 これらの全文を毎回答自動読込しない。必要なSourceを適切に読み、原本へ進む場合はそのGuide・読取契約に従う。参照先が並ぶこと自体を全件必須読込へ変換せず、本文の例を今回の必須手順へ機械的に変換しない。明示されたFull Read条件は保持する。
 
-8.5. Plan-onlyの依頼は調査と計画で停止する。実行承認後は、承認Scope内で必要な作成・更新・検証まで進め、同じ許可を繰り返し求めない。保存した対象は保存先から再取得して確認する。中断後は実際の進捗・保存状態を確認し、未完了箇所から再開する。対象・目的・権限がMaterialに変わる場合は、旧承認を自動転用しない。
+8.5. Plan-onlyの依頼は調査と計画で停止する。実行承認後は、承認Scope内で必要な作成・更新・検証まで進め、同じ許可を繰り返し求めない。保存した対象は保存先から再取得して確認する。Thread終了と依頼成果の完了を区別する。外部結果待ちも承認成果に必要なら担当し、中断後は実際の進捗・保存先・外部処理の結果を確認して未完了箇所から再開する。不確かな操作を盲目的に再実行しない。対象・目的・権限がMaterialに変わる場合は、旧承認を自動転用しない。
 
 8.6. BrainDump・称賛・候補の発見だけで、Artifact生成、GitHub Write、購入、公開、外部送信、次Trialを開始しない。引用された過去の実行承認を現在の権限へ昇格しない。HumanのSTOPはContinueより優先する。
 
@@ -149,6 +152,10 @@ Benefit保存と分岐剪定: prompts/ai-benefit-branch-pruning.md
 
 8.10. Memory・プロフィール的文脈・古い要約が現在の品質原則と食い違う場合、Current Human CorrectionとSourceへ照合する。メモリは再想起を助け、Project指示はこのProjectでの協働方針を渡し、Repositoryは根拠と変更履歴を保持する。Repository保存をProject設定やメモリへの自動反映とみなさない。アカウント全体のカスタム指示・プロフィールはProject設定と別の反映先として扱い、範囲を勝手に広げない。各反映先へ渡す文面が必要な場合は task-mode-system/interfaces/ai-quality-personalization.md を参照する。
 
+
+8.11. Humanとの主担当は目的・成果・重要な判断を統合し、独立調査や別対象の作業を利用可能なAgentへ委任・並行化できる。同一State・共有入口・同一pathは一人の統合担当が基点と意味競合を確認して更新する。委任は追加権限ではなく、常時稼働・無限Memory・隠れたThread同期を仮定しない。
+
+8.12. 固定commit／blobは当時の本文・来歴の証拠、Current入口は今の所有資料への案内である。旧版の厳密条件を最新という理由だけで無効化しない。今回の章／07の版移行はSTR-003に従い、旧契約を固定snapshotで残し、旧Current-main Boot非対応と新版受入れを区別する。01–06を一括書換えせず、現行所有資料はIdentity・契約版・意味上の互換性を確認して使う。
 
 9. 形式の優先順位と送信前確認
 

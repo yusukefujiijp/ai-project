@@ -1,23 +1,31 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.9.0"
+version: "0.10.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
-status: "Prior ARC/STR evidence retained / ARC-007 retirement and source connections remotely verified / unrelated fixed-binding work remains"
+status: "Prior ARC/STR evidence retained / STR-003 foundation migration authorized; verification recorded in its owning change record"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-29"
+updated: "2026-10-01"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.9.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.10.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
 
-**どこがどう絡まっているかを根拠から説明し、役割を終えた現役配置のアーカイブを優先する。残す構成の案内・レイヤー・参照関係を、実際の整理結果から整える。**
+**現在のHumanの目的から、残す意味・変更する前提・実際の根拠を選ぶ。アーカイブ優先は当時の整理方針として保持し、既存構造を守ることを現目的より上位にしない。**
 
 目的と形成経緯は[README](README.md)が所有する。本書は全体の診断と優先順位を扱う。個別アーカイブの具体案・承認・実施状態は[ARCHIVE](ARCHIVE.md)の案件を参照し、本書へ独立した承認台帳を作らない。別Projectの全TaskやThreadのCurrent Stateも二重管理しない。
+
+## 0. Current foundation migration — STR-003
+
+2026-10-01 JST、HumanはD04の外側案内だけでなく、README等の基盤を継続的協働へ再設計する計画を承認し、GitHub実行と明示的な版移行を求めた。[STR-003](changes/STR-003-persistent-collaboration-foundation.md)が対象・形成・互換・検証の所有記録である。
+
+Root、AGENTS、ARK、Domain、Ark27章／INSTRUCTIONS、07三点セット、共通移行契約を整合する。01–06は固定snapshotから履歴を辿り、旧Current-main固定条件を新版の成功へ黙って変換しない。D04はSTR-001での限定設計から、今回の新しい承認によるC案の版移行へ進んだ。保存・Remote確認・独立AI試験・実Target・UI・実効果は別の状態として同記録で確認する。
+
+ARC-002元パス除去、Graph／One-Tableの固定Binding、支援の意図、個人設定、監視、生活試行は今回の対象外。旧案件の当時の残点を削除せず、下の履歴記述と今回の後続結果を分けて読む。
 
 ## 1. 現在地とこれまでの成果
 
@@ -134,7 +142,7 @@ Confirmedは直接確認した記載・配置、Candidateは原因の解釈や�
 
 ### D04
 
-**更新したい現在地と、固定して継承する資料が同居する。状態：STR-001で分離設計を具体化。固定章の直入口制約は残存。**
+**更新したい現在地と固定継承資料の同居を、STR-001で診断・分離設計した。以下は当時の診断。現行章入口と互換移行の後続判断はSTR-003が所有する。**
 
 - **Node / Edge**：`ark-project/ark27/README.md`は章IdentityとCurrent Entryを保持し、01–05の継承資料から固定参照される。
 - **Confirmed**：章READMEは `current_thread: ark27-01` と旧01のCurrent Entryを保持する。Domain §0.1は通常入口を05へ向ける一方、章文書の固定参照を残存制約として説明する。章blobは `e7caf9882a212cbda186362001e49791cff8a8ce`。[章README][chapter]、[Domainの固定資料との境界][domain]
@@ -268,7 +276,7 @@ E01以降の未実施作業を、四文書の保存だけで実施済みにし�
 
 ## redesign
 
-**現在の構成を参考資料として、一から設計するならどうするか。継続して育てる計画領域。**
+**現在の構成を参考資料として、一から設計するならどうするか。旧設計を上限にしない。2026-10-01の基盤改訂はSTR-003へ進み、以下の形成仮説を現目的から採否判断した。**
 
 Humanは、既存構成への継続的な継ぎ足しだけでなく、AIが自由に一から設計する案をMarkdownで成熟させ、必要に応じて実験でBottleneckを検出する方向も求めた。Player系のアーカイブ後は、既存のai-projectを改善する目的へ接続する。
 
@@ -455,4 +463,5 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.9.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.10.0
+

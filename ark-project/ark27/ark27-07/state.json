@@ -1,12 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_07_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:07",
-    "schema_version": "v001",
-    "updated_at": "2026-09-27",
-    "update_reason": "Human-authorized Ark27:06→07 preparation; initialize from verified07 README/Handoff and Source06 harvest revision2. Source preparation is not Target reception.",
-    "authority": "Current Human explicitly approved the preceding five-path transition preparation plan on2026-09-27 JST. No unrelated cleanup, old trial, account change or automatic Target startup."
+    "schema_version": "v002",
+    "updated_at": "2026-10-01",
+    "update_reason": "Human-authorized STR-003 foundation and continuity contract version migration; preserve historical initialization separately.",
+    "authority": "Current Human approved the complete foundation plan, GitHub execution, required verification and explicit compatibility migration. No unrelated work.",
+    "date_scope": "Asia/Tokyo migration date; UTC 2026-09-30"
   },
   "identity": {
     "chapter": "Ark27",
@@ -27,7 +28,7 @@
     "human_seal": true,
     "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and tool access controls remain effective.",
-    "scope": "Human-AI problem solving and bounded TMS continuing operation/maintenance. Source06 is authorized to prepare and verify07. This does not start a new archive, binding migration, trial, research, schedule or settings task.",
+    "scope": "Current Human-AI problem solving and applicable bounded delegations. STR-003 foundation migration explicitly authorized; other work requires its own current scoped authority. No unbounded autonomy, new monitor or trial.",
     "delegation_source": "task-mode-system/maintenance.md; Current AGENTS and Current Human request govern actual work.",
     "stop_precedence": "Current Human Correction / Plan-only / STOP overrides earlier Continue. AI is Keli, not King / Throne / Oracle."
   },
@@ -37,16 +38,21 @@
     "readme": {
       "path": "ark-project/ark27/ark27-07/README.md",
       "runtime_id": "ARK27_07_HUMAN_AI_PROBLEM_SOLVING_FIELD",
-      "sha": "b24c29e59d291fa58c3bf2c4c1fe4770fe468d70"
+      "contract_version": "v002",
+      "policy": "Current compatible v002 body; observed blob is evidence, not a perpetual live pin."
     },
     "handoff": {
       "path": "ark-project/ark27/ark27-07/handoff.md",
-      "id": "ARK27_06_TO_ARK27_07",
-      "sha": "1546f634ed0191b7b6ad22e73307885d9603a0d5"
+      "id": "ARK27_07_CONTINUITY",
+      "contract_version": "v002",
+      "policy": "Current v002 reception contract; v001 initialization retained at historical snapshot."
     },
     "chapter": {
       "path": "ark-project/ark27/README.md",
-      "sha": "e7caf9882a212cbda186362001e49791cff8a8ce"
+      "chapter": "Ark27",
+      "contract_version": "v002",
+      "current_route_owner": "ark-project/README.md",
+      "policy": "Current compatible chapter identity; do not require current main to equal the historical v001 blob."
     },
     "source_state": {
       "path": "ark-project/ark27/ark27-06/state.json",
@@ -63,24 +69,13 @@
         "ark-project/ark27/ark27-07/handoff.md",
         "ark-project/ark27/ark27-07/README.md",
         "ark-project/ark27/ark27-07/state.json",
-        "ark-project/ark27/README.md",
         "AGENTS.md",
+        "ARK.md",
+        "ark-project/ark27/README.md",
         "ark-project/ark27/INSTRUCTIONS.md",
-        "ark-project/ark27/ark27-06/state.json",
-        "task-mode-system/README.md",
-        "task-mode-system/operation.md",
-        "task-mode-system/maintenance.md",
-        "formats/task-records/README.md",
-        "control-center/README.md",
-        "control-center/PLAN.md",
-        "control-center/ARCHIVE.md",
-        "control-center/changes/STR-001-navigation-and-ownership.md",
-        "control-center/changes/STR-002-single-prompt-consolidation.md",
-        "skills/README.md",
-        "skills/plan-mode/SKILL.md",
-        "ark-project/ark28/README.md"
+        "ark-project/README.md"
       ],
-      "policy": "Full read as Handoff§2; only07 Runtime and chapter are exact fixed blob pins. Mutable owner documents use current compatible identity/version/EOF and explicit conflict handling. Links alone do not make all linked histories mandatory."
+      "policy": "Handoff v002 §2 full-read core; §3 conditional source routes apply when their subject affects the task. Identity, role, contract family, schema/revision and semantic compatibility are verified. No blanket recursive read."
     },
     "observed_owner_blobs": [
       {
@@ -168,7 +163,8 @@
       "archive": "control-center/ARCHIVE.md",
       "structural_records": [
         "control-center/changes/STR-001-navigation-and-ownership.md",
-        "control-center/changes/STR-002-single-prompt-consolidation.md"
+        "control-center/changes/STR-002-single-prompt-consolidation.md",
+        "control-center/changes/STR-003-persistent-collaboration-foundation.md"
       ],
       "scope": "ai-project whole repository root command center, not Ark27-only."
     },
@@ -191,16 +187,28 @@
       "policy": "Authorized portable settings owners are separate from account UI. Never export ChatGPT memory contents/readback/save response."
     },
     "self_sha_policy": "DO_NOT_EMBED",
-    "entry_policy": "Explicit07 Handoff governs reception. Chapter01 and Source06/05 initial states do not replace current coordinate."
+    "entry_policy": "Current07 v002 Handoff governs current reception. Explicit legacy contracts retain their historical semantics and cannot silently pass as v002. Current routes are owned by Ark Domain.",
+    "historical_initialization": {
+      "commit": "d574927dd1671e2acec20e1a6c17f569ae23322f",
+      "paths": [
+        "ark-project/ark27/README.md",
+        "ark-project/ark27/ark27-07/README.md",
+        "ark-project/ark27/ark27-07/handoff.md",
+        "ark-project/ark27/ark27-07/state.json"
+      ],
+      "chapter_blob": "e7caf9882a212cbda186362001e49791cff8a8ce",
+      "policy": "Historical evidence only. Legacy current-main exact conditions are not satisfied by pretending the new version passed them; explicit migration is recorded in STR-003."
+    },
+    "observed_owner_blobs_policy": "The retained entries below are observations from 2026-09-27 initial preparation, not present identity pins or proof of current reading. STR-003 records migration evidence."
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "06の検証済み整理成果とHuman Material Correctionsを継承する07初期State。Humanが成果の区切りで同章継続を選び、準備実行を承認。全Repository整理完了や全Unknown解消ではない。",
-    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "current_legal_connection": "Target07 itself reads Required1–19, resolves Identity/Binding/Triad and T1–T12. After passing, receive already supplied new Human input; if Boot only, return evidence-backed readiness and Human Review.",
+    "current_coordinate": "Human approved the coherent foundation migration for persistent, bounded collaboration. Same chapter Ark27 and Main07; v002 separates historical initialization from live routing and compatible current owners. Actual migration verification is in progress/STR-003, not inferred from this text.",
+    "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+    "current_legal_connection": "Read/reuse verified v002 core and relevant conditional sources, resolve R1–R6, then act on the current request within authority. Check actual external state before resuming uncertain operations.",
     "target_boot": "NOT_OBSERVED_BY_SOURCE",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past life reports are historical.",
-    "next_specific_task": "NOT_SELECTED; do not convert remaining branches or old ranking wishes into automatic tasks.",
+    "next_specific_task": "Complete and verify the approved STR-003 migration; afterward accept current input without automatically starting unrelated branches.",
     "inherited_current_outcomes": [
       {
         "owner": "control-center/ARCHIVE.md",
@@ -217,7 +225,7 @@
       },
       {
         "owner": "control-center/changes/STR-001-navigation-and-ownership.md",
-        "status": "Six repair groups and D04 design saved/verified; chapter-only old entry remains."
+        "status": "Six repair groups and historical D04 design saved/verified. Current chapter-route migration is a later STR-003 action, verified separately."
       },
       {
         "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
@@ -235,7 +243,8 @@
       "旧Plan Modeからの吸収は任意。現在の計画品質が中心。通常の適応・改善提案・永続改訂を分け、毎回の自動監査を課さない。",
       "未言語化の意味を根拠付きの訂正可能な候補として言語化し、Humanの心中や主の御心を断定しない。",
       "誰が・いつ・どこを・なぜ・どう変えたかを案件原本で辿れるようにし、意味承認・AI担当・GitHub名義・検証・効果を区別する。",
-      "06で続ける過去方針の後、Humanが今07を選んだ。残る別Branchの全解消を移行前提にしない。"
+      "06で続ける過去方針の後、Humanが今07を選んだ。残る別Branchの全解消を移行前提にしない。",
+      "Human rejected preserving pre-dots structure as the overriding goal and approved foundational redesign, retaining Root, Human authority, quality, evidence, history and future AI flexibility. Certainty means evidence-backed action and verification, not infallibility."
     ],
     "plan_mode_old_branch": {
       "status": "CLOSED_BY_PURPOSE_CHANGE",
@@ -260,15 +269,16 @@
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "trial_started": false,
-    "unfinished_gate": "Target07自身のRequired全文読解・Identity/Binding・Triad・T1–T12。Human last mile is separate; ordinary Unknowns are not mandatory tests."
+    "unfinished_gate": "Required migration verification and independently observed reception are separate. Historical07 initial Target/UI observations remain historical, not evidence for current completion."
   },
   "evidence": {
-    "source": "Verified Repository owners and current authorized06 conversation, selectively compiled without ChatGPT long-term memory export.",
+    "source": "Earlier verified public Repository owners and authorized06 conversation, plus current explicit foundation-migration approval and current Repository observations. No ChatGPT memory export.",
     "confirmed": [
       "Human chose06→07 and approved preparation of five paths after Plan-only review.",
       "06 harvest State revision2 and07 Runtime/Handoff were saved and remotely reread before this initial State was compiled; see verified_predecessors.",
       "ARC/STR and Plan Mode owners distinguish approvals, implementations, remote checks, limited behaviors and residual risks. Refer to the originals rather than duplicating their ledger.",
-      "Human's positive evaluation and readiness to move are reports/choices, not proof of universal efficacy."
+      "Human's positive evaluation and readiness to move are reports/choices, not proof of universal efficacy.",
+      "Current Human explicitly approved STR-003 plan, GitHub execution and formal version migration after read-only review; this is authority evidence, not proof of published completion."
     ],
     "candidate": [
       "Short-term success becoming long-term maintenance burden may be a useful diagnostic seed for other forms of organization.",
@@ -286,7 +296,6 @@
   },
   "deferred": [
     "ARC-002 original-path removal after explicit fixed-binding migration scope.",
-    "D04 chapter-only obsolete01 route and fixed chapter bindings.",
     "Graph/One-Table physical removal of old Query creation metadata plus compatible fixed-reference migration. Policy already withdrawn; physical files not yet changed.",
     "New rankings, further archive moves, whole-repository repair, other-domain query cleanup.",
     "New wake/bedtime/Dani/home-routine trials, Schedule/monitoring, token reset or parallel research, torah-project, new generic skills, Kindle/Bot/revenue branches.",
@@ -294,40 +303,68 @@
     "Next-Cycle Workout Bridge remains retired, not a future Closing."
   ],
   "progress": {
-    "source_prepared": true,
-    "source_prepared_scope": "This initial State is compiled from verified predecessors. Final persistence and route checks belong toSource06 terminal next_transition receipt; Target success is not implied.",
-    "remote_verification": "Verified predecessors below. This State, final Domain route and Source terminal receipt are checked after their writes. Resolve actual final results fromSource06 progress.next_transition and Source final handover; no self SHA or future success claim.",
-    "verified_predecessors": [
-      {
-        "path": "ark-project/ark27/ark27-06/state.json",
-        "revision": 2,
-        "blob": "79dbbd56ca2ac2e7572e56fc5ed8192e4da12b0e",
-        "commit": "9e8a10caa60151cb70928aab49e0b9c8533b763f",
-        "full_content_match": true
-      },
-      {
-        "path": "ark-project/ark27/ark27-07/README.md",
-        "blob": "b24c29e59d291fa58c3bf2c4c1fe4770fe468d70",
-        "commit": "6039bf17fa2983c6f0220e51fab961de4ad0f285",
-        "full_content_match": true
-      },
-      {
-        "path": "ark-project/ark27/ark27-07/handoff.md",
-        "blob": "1546f634ed0191b7b6ad22e73307885d9603a0d5",
-        "commit": "de8aa399910ec19db10614275156c64c3f1f30e1",
-        "full_content_match": true
-      }
-    ],
-    "target_reconstructed": false,
-    "human_last_mile": "07新Thread作成、開始用Handoff貼付、compiled_title適用は未観測。Targetの成功応答とUI操作を別に扱う。",
-    "acceptance_policy": "Target itself must pass Required1–19, Identity/Binding, Triad and T1–T12 before Initial Success. Do not borrow Source checks. No automatic State write solely for Boot.",
+    "historical_preparation": {
+      "source_prepared": true,
+      "source_prepared_scope": "This initial State is compiled from verified predecessors. Final persistence and route checks belong toSource06 terminal next_transition receipt; Target success is not implied.",
+      "remote_verification": "Verified predecessors below. This State, final Domain route and Source terminal receipt are checked after their writes. Resolve actual final results fromSource06 progress.next_transition and Source final handover; no self SHA or future success claim.",
+      "verified_predecessors": [
+        {
+          "path": "ark-project/ark27/ark27-06/state.json",
+          "revision": 2,
+          "blob": "79dbbd56ca2ac2e7572e56fc5ed8192e4da12b0e",
+          "commit": "9e8a10caa60151cb70928aab49e0b9c8533b763f",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/ark27/ark27-07/README.md",
+          "blob": "b24c29e59d291fa58c3bf2c4c1fe4770fe468d70",
+          "commit": "6039bf17fa2983c6f0220e51fab961de4ad0f285",
+          "full_content_match": true
+        },
+        {
+          "path": "ark-project/ark27/ark27-07/handoff.md",
+          "blob": "1546f634ed0191b7b6ad22e73307885d9603a0d5",
+          "commit": "de8aa399910ec19db10614275156c64c3f1f30e1",
+          "full_content_match": true
+        }
+      ],
+      "target_reconstructed": false,
+      "human_last_mile": "07新Thread作成、開始用Handoff貼付、compiled_title適用は未観測。Targetの成功応答とUI操作を別に扱う。",
+      "acceptance_policy": "Target itself must pass Required1–19, Identity/Binding, Triad and T1–T12 before Initial Success. Do not borrow Source checks. No automatic State write solely for Boot.",
+      "revision_history": [
+        {
+          "revision": 1,
+          "date": "2026-09-27",
+          "role": "Source-prepared initial07 State; actual Target/Human last-mile unobserved."
+        }
+      ]
+    },
+    "foundation_migration": {
+      "record": "control-center/changes/STR-003-persistent-collaboration-foundation.md",
+      "base_commit": "d574927dd1671e2acec20e1a6c17f569ae23322f",
+      "source_prepared": true,
+      "publication": "PENDING_AFTER_AUTHENTICATION_RECOVERY; no commit/ref update yet",
+      "remote_verification": "PENDING; harmless read at2026-09-30T22:40Z confirmed recovered access and unchanged main. Regenerate current candidate then verify before publication.",
+      "independent_review": "SOURCE_SEMANTIC_REVIEW_PASSED_AFTER_DUPLICATE_BODY_FIX; not behavioral or actual Target reception",
+      "actual_target_reception": "NOT_OBSERVED",
+      "human_ui": "NOT_OBSERVED",
+      "real_world_effect": "NOT_OBSERVED",
+      "scope": "Current foundation/07 contracts only; no new chapter, Support intent change, personal setting change or new monitor.",
+      "behavioral_scenarios": "8/8 independent staged-document scenario-conditioned response decisions consistent; not actual platform Boot, concurrent-write execution, UI or field outcomes"
+    },
+    "acceptance_policy": "Current Handoff v002 core/conditional sources and R1–R6. Independent scenario review is not actual Target boot or UI observation. Preserve historical v001 preparation separately.",
     "revision_history": [
       {
         "revision": 1,
         "date": "2026-09-27",
-        "role": "Source-prepared initial07 State; actual Target/Human last-mile unobserved."
+        "role": "Initial06→07 preparation; exact original at historical snapshot."
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-01",
+        "role": "Explicitly authorized foundation and continuity contract v002 migration; completion evidence recorded separately."
       }
     ]
   },
-  "eof_sentinel": "ARK27_07_STATE_EOF_v001"
+  "eof_sentinel": "ARK27_07_STATE_EOF_v002"
 }
