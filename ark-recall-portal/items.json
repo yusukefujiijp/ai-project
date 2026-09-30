@@ -1,13 +1,13 @@
 {
   "format": "ark-recall-items",
   "format_version": "v001",
-  "revision": 1,
-  "updated": "2026-09-28",
+  "revision": 2,
+  "updated": "2026-10-01",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "Ark28:01で選択保存した休日前準備とToken Resetの二場面",
+    "scope": "初版の休日前準備・Token Resetと、2026-10-01 Ark28:01で追加登録された就寝前のフットマッサージ想起希望",
     "complete_project_history": false,
-    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。"
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。"
   },
   "scenes": [
     {
@@ -17,6 +17,10 @@
     {
       "id": "token-reset-preparation",
       "label": "Token Reset前の教訓"
+    },
+    {
+      "id": "bedtime-care",
+      "label": "就寝前に思い出したいケア"
     }
   ],
   "items": [
@@ -283,6 +287,59 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "bedtime-foot-massage",
+      "scene_ids": [
+        "bedtime-care"
+      ],
+      "label": "メンタームQクリームを使ったフットマッサージ",
+      "recall": "就寝前のケア候補として、メンタームQクリームを活用したフットマッサージを思い出す。製品を使う際は手元の表示と現在の足の状態に合わせ、就寝を遅らせない範囲で扱う。",
+      "status": "active",
+      "retrieval_hints": [
+        "就寝前",
+        "寝る前",
+        "そろそろ寝る",
+        "寝る前に何をする",
+        "フットマッサージ",
+        "足のマッサージ",
+        "足裏",
+        "足のケア",
+        "メンタームQクリーム",
+        "メンタームQ軟膏"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Humanが就寝前に思い出したいケアを尋ねた時、または実際の就寝前の合図で案内する時"
+        ],
+        "do_not_assume": [
+          "項目追加の依頼そのものが現在の就寝合図",
+          "今回の実施済み",
+          "毎晩必ず実施する義務",
+          "塗布量・時間・強さ・頻度",
+          "本人が使用している正確な製品と公式Q軟膏の一致",
+          "足の状態や製品使用の適否",
+          "保湿クリームとしての常用や睡眠改善などの医学的効果"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-01/task-records.json",
+          "record_id": "ark28-01-task-records",
+          "reviewed_revision": 5,
+          "node_ids": [
+            "bedtime-foot-massage-recall",
+            "bedtime-foot-product-label"
+          ],
+          "source_ids": [
+            "bedtime-foot-s01",
+            "bedtime-foot-s02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "本人の追加希望と公式製品情報から作った想起用の編集要約。activeは想起候補でありTaskの未完了・実施・義務ではない。具体的な製品使用は手元の表示とBody/Medical/Sleep Guardに合わせる。就寝前の他の希望は経験索引§3.9の原本経路も確認する。"
     }
   ]
 }

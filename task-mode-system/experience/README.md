@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.6"
+version: "0.3.7"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Index later Ark27:05 settings reports, home-action design, control-center acceptance and 05-to-06 authority; preserve historical unknowns and exclude memory contents."
+updated_reason: "Connect the later Ark28:01 bedtime foot-massage recall request and its product-label conditions to §3.9; preserve earlier sources and scopes."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-09-22"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.6"
+updated: "2026-10-01"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.7"
 ---
 
 # 経験とSourceの索引
@@ -118,6 +118,8 @@ R04の`bedtime-trigger-request`・`bedtime-braindump-correction`から、Human�
 対応の方法は[Bedtime Recall](../../skills/recall-bedtime-care/SKILL.md)が所有する。本索引は個別項目の第二の台帳ではなく、原本と変更先の案内である。以後、新しい就寝前想起の希望・適用方針・取消し・Correctionが別Threadへ記録されたら、この項からその原本・対象Nodeと読取条件も辿れるようにする。初期のR04だけを永続的な最新リストとみなさず、Current Humanの入力と後続訂正を照合する。一夜の実施済みは次の就寝機会へ自動転用しない。
 
 
+2026-10-01の後続追加は、[Ark28:01経験原本](../../ark-project/ark28/ark28-01/task-records.json)（record_id `ark28-01-task-records`、確認版revision `5`）の `bedtime-foot-massage-recall`・`bedtime-foot-product-label`、Source `bedtime-foot-s01`–`bedtime-foot-s02`へ進む。就寝前のフットマッサージを思い出したい登録希望と、製品表示に合わせる条件を確認できる。[Portalの項目一覧](../../ark-recall-portal/items.json)の `bedtime-care` → `bedtime-foot-massage` からも到達できる。登録依頼と現在の就寝合図・実施・毎晩の義務・医学的効果を区別し、手元の製品の正確な名称と足の状態は未確認として扱う。
+
 ### 3.10 開始時の締切・選択報告・利用枠の関係を理解する
 
 R04の `start-without-closure`・`finish-deadline-working`・`start-focus-current` と `connect-s01`–`connect-s02` から、終了側のある程度の成立を背景に開始側へ重点を移し、開始時刻の設定だけでなくキリのよい完了待ちを外すCorrectionを読む。
@@ -190,4 +192,4 @@ R05の `support-before-physical-move`・`control-center-root-scope`・`support-r
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.6
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.7

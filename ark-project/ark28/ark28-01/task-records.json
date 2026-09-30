@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-01-task-records",
-  "revision": 4,
+  "revision": 5,
   "role": "thread_experience_record",
   "created": "2026-09-28",
-  "updated": "2026-09-30",
+  "updated": "2026-10-01",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark28:01",
     "canonical_path": "ark-project/ark28/ark28-01/task-records.json",
     "reported_date": null,
     "timezone": null,
-    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。 revision 3の閉鎖依頼時刻は当該メッセージのAsia/Tokyoメタデータ。その他の後続対話には未確認の細かい時刻を割り当てない。 revision 4は、2026-09-30の専用Skill実行承認・Query確認・旧Seed修正・19:04:36+09:00の今回のSource差分保存依頼を、入力メタデータの時刻として所在に記録する。未確認の実行完了時刻は付与しない。",
+    "time_note": "複数発言の選択収録。原発言の正確な日時は一部不明。Humanが明記した2026/09/27 21:00と、実行承認の入力時刻は各Sourceの所在説明へ分離。created/updatedは記録日。 2026-09-29のPortal起動Query・移行依頼・実行承認は、当該入力に付されたユーザー時刻（Asia/Tokyo）を所在へ記載。前段の原発言日時は引き続き未付与。 revision 3の閉鎖依頼時刻は当該メッセージのAsia/Tokyoメタデータ。その他の後続対話には未確認の細かい時刻を割り当てない。 revision 4は、2026-09-30の専用Skill実行承認・Query確認・旧Seed修正・19:04:36+09:00の今回のSource差分保存依頼を、入力メタデータの時刻として所在に記録する。未確認の実行完了時刻は付与しない。 revision 5の就寝前フットマッサージ登録希望は2026-10-01T06:12:14+09:00の入力メタデータ。朝の登録依頼であり、現在の就寝合図や実施報告ではない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "経験原本でありRuntime・Handoff・Current Stateではない。保存された承認や過去のTaskは現在の新命令ではない。",
     "source_access": "このThreadで可視だったHuman発言の連続抜粋、または明示した編集要約。外部メッセージID・会話URLは付与しない。ChatGPT長期メモリからの輸出ではない。",
     "extensions": {
-      "record_cutoff": "2026-09-30T19:04:36+09:00の今回のSource差分保存・閉鎖依頼までの選択記録、および保存に必要な現行参照経路の照合。Target02の追加受入れは収録しない。"
+      "record_cutoff": "2026-10-01T06:12:14+09:00の就寝前フットマッサージ想起項目への登録希望と、それに必要な公式製品情報の確認までの選択記録。以前のSource差分保存範囲はrevision_historyと旧Sourceへ保持。その他の後続対話は全件収録しない。"
     }
   },
   "coverage": {
@@ -36,7 +36,8 @@
       "Bootと現行mapをつなぐ起動文の完成評価、Sourceへの戻り作業と閉鎖・差分保存の依頼",
       "前回Source保存以降の専用Living Review SkillのHuman決定・計画承認・実装・共有・導入・限定確認",
       "xxを対象へ差し替えるQueryの確認とAI説明、旧Seed修正依頼と一文定義候補",
-      "会話内Skill参照の後続解消と、既存記録への今回の差分保存・Source閉鎖"
+      "会話内Skill参照の後続解消と、既存記録への今回の差分保存・Source閉鎖",
+      "就寝前にメンタームQクリームを使ったフットマッサージを思い出したいという登録希望と、製品表示に合わせる適用条件"
     ],
     "excludes": [
       "Thread全会話",
@@ -46,7 +47,7 @@
       "今回実装後の実生活効果",
       "ChatGPT長期メモリ"
     ],
-    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。 revision 3は移行準備後の差分を追記。revision 2の全Source・Node・Edge・未確認事項はそのまま保持し、後続成果を新Nodeへ接続する。 revision 4は前回Source保存以降の後続差分を追記し、revision 3の全Source・Node・Edge・未確認事項をそのまま保持する。Seed候補の提示と明示採用、設定と自然な起動、Source保存とTarget受入れを分ける。"
+    "note": "同文の再引用は一経験として扱う。B状態報告は過去時点。本人の信仰的意味・評価をAIの実証や診断へ変えない。 revision 2は後続成果と未収録の重要な形成発言を追記。既存のPortal六項目が参照するSource・Node・Edgeは変更しない。 revision 3は移行準備後の差分を追記。revision 2の全Source・Node・Edge・未確認事項はそのまま保持し、後続成果を新Nodeへ接続する。 revision 4は前回Source保存以降の後続差分を追記し、revision 3の全Source・Node・Edge・未確認事項をそのまま保持する。Seed候補の提示と明示採用、設定と自然な起動、Source保存とTarget受入れを分ける。 revision 5は新しい就寝前想起の希望を追記し、revision 4の全Source・Node・Edge・未確認事項を保持する。登録希望を今回の就寝・実施・毎晩の義務・医学的効果へ変換しない。"
   },
   "sources": [
     {
@@ -507,6 +508,25 @@
       "excerpt": "prepare-ark-transition（Ark Transition）を使い、次Thread移行の保存後に、このSource Threadで進んだ内容をGitHubの既存記録へ差分保存してください。今回は、Source側の残作業を保存し、このThreadを閉じるための実行依頼です。",
       "excerpt_kind": "verbatim_contiguous",
       "note": "現在の保存・更新・検証・再取得を明示承認。固定BindingとTargetの意図・進捗・権限を保ち、新移行・再Boot・別Task・自動同期を行わず、保存と報告後にSourceを閉じる指示。"
+    },
+    {
+      "id": "bedtime-foot-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:01、2026-10-01T06:12:14+09:00のHuman入力（当該メッセージのAsia/Tokyoメタデータ）。",
+      "excerpt": "就寝前のark-recall-portalにメンタームQクリームを活用したフットマッサージを入れて欲しいです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "就寝前の想起項目への追加を明示依頼。品名は本人表現を保持。今すぐ寝るという合図、実施報告、量・時間・頻度・効果の指定ではない。"
+    },
+    {
+      "id": "bedtime-foot-s02",
+      "speaker": "近江兄弟社（公式製品情報）",
+      "medium": "tool_result",
+      "locator": "2026-10-01 JST、本登録時にメーカー公式製品ページを確認。外部Web資料を参照するSourceであり、このRepositoryが所有する資料ではない。",
+      "url": "https://www.omibh.co.jp/products/medical/qnankou_t.html",
+      "excerpt": "メーカー公式製品ページには、近江兄弟社メンタームQ軟膏チューブタイプの販売名が近江兄弟社メンタームQ軟膏で、第3類医薬品であること、コリや痛みを感じる部位に表示に従って塗擦する用法が記載されている。",
+      "excerpt_kind": "paraphrase",
+      "note": "公式製品ページ本文の編集要約。本人のメンタームQクリームという呼称と手元の製品の一致、現在の足への適合、実施や効果は未確認。添付文書PDFは取得したが本文を読める状態にはできていない。具体的な使用判断では手元の製品表示・添付文書と足の状態を確認する。"
     }
   ],
   "nodes": [
@@ -1130,6 +1150,47 @@
           "return-save-s12"
         ]
       }
+    },
+    {
+      "id": "bedtime-foot-massage-recall",
+      "kind": "practice_statement",
+      "label": "就寝前にメンタームQクリームを使うフットマッサージを想起したい",
+      "description": "Humanは、就寝前のArk Recall Portal項目として、メンタームQクリームを活用したフットマッサージを追加したいと明示した。",
+      "scope": "今後の就寝前に思い出す候補の登録希望。今回の実施・現在の就寝・毎晩の義務・量・時間・頻度・医学的効果は主張しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-foot-s01"
+        ]
+      },
+      "extensions": {
+        "unknowns": [
+          "本人の手元の正確な製品名と公式Q軟膏との一致",
+          "現在の足の状態と製品の使用適否",
+          "既往の実施と本人が感じたBenefit",
+          "塗布量・マッサージの時間・強さ・頻度"
+        ],
+        "routing": {
+          "portal_scene_id": "bedtime-care",
+          "portal_item_id": "bedtime-foot-massage",
+          "method_skill": "recall-bedtime-care"
+        }
+      }
+    },
+    {
+      "id": "bedtime-foot-product-label",
+      "kind": "observation",
+      "label": "公式Q軟膏は製品表示に従って使う医薬品",
+      "description": "メーカー公式ページで販売名・第3類医薬品・用法の表示を確認した。登録の本人表現を保持し、手元の製品との一致や本人への適否を確認済みとはしない。",
+      "scope": "本登録時に確認した公式ページの説明。医学的な個別判断や本人の製品の特定・身体状態の観測ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "bedtime-foot-s02"
+        ]
+      }
     }
   ],
   "edges": [
@@ -1408,6 +1469,22 @@
           "return-save-s12"
         ]
       }
+    },
+    {
+      "id": "e-bedtime-foot-label-condition",
+      "from": "bedtime-foot-massage-recall",
+      "to": "bedtime-foot-product-label",
+      "relation": "depends_on",
+      "scope": "実際の製品使用を案内する際の条件として、手元の製品表示と現在の足の状態を確認する。希望の登録自体は具体的な用量等の確定を待たせない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "bedtime-foot-s01",
+          "bedtime-foot-s02"
+        ],
+        "note": "Medical/Body/Sleep Guardと公式表示から整理したAI側の適用条件。登録希望を無条件の医薬品使用命令へ変えない。"
+      }
     }
   ],
   "open_questions": [
@@ -1471,6 +1548,15 @@
           "return-save-s03",
           "return-save-s09",
           "return-save-s12"
+        ]
+      },
+      {
+        "revision": 5,
+        "date": "2026-10-01",
+        "reason": "Humanの明示依頼により就寝前のメンタームQクリーム・フットマッサージ想起希望を追加。本人表現、登録と実施の区別、製品表示に合わせる条件を保持。原本・Portal・就寝前索引を接続し、ThreadのStateや固定Bindingは更新しない。",
+        "source_refs": [
+          "bedtime-foot-s01",
+          "bedtime-foot-s02"
         ]
       }
     ]
