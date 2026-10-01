@@ -1,0 +1,10 @@
+{
+  "skill": "example-learning",
+  "test_cases": [
+    {"input": "学習モードでプログラミングを一例だけ", "should_trigger": true},
+    {"input": "学びモードでバッティングを一球見て", "should_trigger": true},
+    {"input": "example-learning でこの正本を実地の一例に当てて", "should_trigger": true},
+    {"input": "Plan Modeで計画だけ出して", "should_trigger": false},
+    {"input": "この技能のSKILL.mdを作って", "should_trigger": false}
+  ]
+}
