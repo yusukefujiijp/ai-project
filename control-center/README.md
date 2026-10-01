@@ -96,6 +96,7 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 - [STR-004: Elon Musk DeadlineのPrompt改訂](changes/STR-004-elon-musk-deadline-revision.md)：旧資料の核と形成史を保持し、締切・品質・完了判定・権限を現在の単一Promptへ整理した理由と検証。
 
 - [STR-005: Dots協働基盤の初版](changes/STR-005-dots-collaboration-foundation.md)：Current方向、dot-0000の身元、初穂の形成記録を役割分担して接続した理由・六パスの実装・検証。
+- [STR-006: Board協働通信の初版](changes/STR-006-board-communication-foundation.md)：初穂から既存Main／Supportへの紹介・全Session変更報告、宛先別の理解依頼、柔軟な実地Feedbackの入口と保存証拠。
 
 [ARC-006](ARCHIVE.md#arc-006)は、旧Plan Mode資料の退役と新Skillへの接続を所有する。Skillの入口・配布・限定検証は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)へ進む。
 

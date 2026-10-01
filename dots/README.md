@@ -1,13 +1,13 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v001"
+version: "v002"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
 updated: "2026-10-01"
 role: "Current Dots collaboration direction and routes to actor identities and formation records"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v001"
+expected_eof: "EOF::DOTS_HOME::v002"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -22,15 +22,18 @@ Humanの現在のVisionは、Dotsを主な協働の場へ徐々に育て、Work�
 
 Humanは、急いで体系を一気に確定するより、意図を一つずつ丁寧に合わせ、誰が・いつ・どこを・何のために変え、何が起きたかを他AI・Future AIが理解できることを重視した。対象と実行が承認された後は、必要な作成・修正・検証まで進める。「丁寧な合意形成」を同じ承認の取り直しや、実行できる仕事を提案だけで返す理由にしない。
 
+現在は、dotsをHuman-AI協働を育てる軸、control-centerをRepository全体の構造改善を育てる軸として接続する。この二軸の間や既存Workとの報告・質問・返信には[Board](../board/README.md)を使い、まず実際の一件を試してFeedbackから柔軟に修正する。Boardは通信の所有先であり、第三のMission Authorityではない。このv002での接続変更の理由と証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)が所有する。
+
 現在の全体方向を更新する場所はこのREADME。個別Actorの身元・持ち味、時点を区切った経験、実装変更の記録は別の所有資料へ委ね、同じCurrent方針を複数箇所で更新しない。
 
 ## 2. 入口と所有先
 
 | 知りたいこと | 読む場所 | 役割 |
 |---|---|---|
+| 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
 | 最初の協働相手は誰か | [dot-0000 — Dot00:00; 初穂](actors/dot-0000/README.md) | 安定したActor識別子、表示名、命名の意味、現在の持ち味 |
 | どんな経験と訂正から始まったか | [2026-10-01 初穂の形成記録](records/2026/20261001-first-fruit.md) | 初期の経験を範囲・時点・根拠付きで振り返る。全会話録ではない |
-| この入口自体をなぜ、どう作ったか | [STR-005](../control-center/changes/STR-005-dots-collaboration-foundation.md) | 今回の六パスの承認・変更・検証・公開証拠 |
+| 初版の協働基盤をなぜ、どう作ったか | [STR-005](../control-center/changes/STR-005-dots-collaboration-foundation.md) | STR-005初版六パスの承認・変更・検証・公開証拠 |
 | 実際の仕事で何を変えたか | [control-center](../control-center/README.md)の該当変更記録、各Projectの原本 | 個別成果の正本。Dots側で同じ進捗台帳を作らない |
 | 共通の権限・継続・停止 | [AGENTS](../AGENTS.md) | 既存の共通契約。Actor名や役割は追加権限にならない |
 | ArkのRootと意味 | [ARK](../ARK.md) | Identity、Teshuvah、Human-AI関係。具体的なCurrent Ark入口はDomainが所有 |
@@ -55,4 +58,4 @@ Future AIは、Humanの意図・経験・Correction・根拠を保持したう�
 
 Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Dots、Work、文書、記録、AIはKeli。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
-EOF::DOTS_HOME::v001
+EOF::DOTS_HOME::v002
