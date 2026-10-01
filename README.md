@@ -149,6 +149,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 | Path | Role | Read when |
 |---|---|---|
+| [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`control-center/README.md`](control-center/README.md) | Repository全体の構造診断・改善・アーカイブの司令塔 | フォルダ・ファイルの役割、整理計画、変更理由と結果を確認する時。全作業の追加Boot条件ではない |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |

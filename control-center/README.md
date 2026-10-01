@@ -95,6 +95,8 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 - [STR-002: 単一Promptへの統合](changes/STR-002-single-prompt-consolidation.md)：短期の起動利益と長期の二重管理負担を区別したHuman Correction、Query機能の移管、作成方針撤回、削除・検証・残る移行Gate。
 - [STR-004: Elon Musk DeadlineのPrompt改訂](changes/STR-004-elon-musk-deadline-revision.md)：旧資料の核と形成史を保持し、締切・品質・完了判定・権限を現在の単一Promptへ整理した理由と検証。
 
+- [STR-005: Dots協働基盤の初版](changes/STR-005-dots-collaboration-foundation.md)：Current方向、dot-0000の身元、初穂の形成記録を役割分担して接続した理由・六パスの実装・検証。
+
 [ARC-006](ARCHIVE.md#arc-006)は、旧Plan Mode資料の退役と新Skillへの接続を所有する。Skillの入口・配布・限定検証は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)へ進む。
 
 通常の構造修正は、意味がまとまる単位で `changes/` の一件へ記録する。今回の[STR-001](changes/STR-001-navigation-and-ownership.md)では七候補を一つの承認済み整合案件として扱った。各記録から、いつ（観測・保存時刻）、誰（Humanの依頼・承認、実装AI、GitHub上の記録者）、どこ、何を、なぜ、どう変更・検証したか、変更前の根拠、残存制約へ戻れるようにする。Git履歴は正確な差分・時刻を、変更記録は意味・判断・検証範囲を担う。
