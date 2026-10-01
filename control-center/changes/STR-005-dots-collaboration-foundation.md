@@ -4,7 +4,7 @@ record_id: "STR-005"
 version: "v001"
 canonical_path: "control-center/changes/STR-005-dots-collaboration-foundation.md"
 role: "Scoped Dots foundation purpose, authority, implementation and verification record"
-status: "source prepared; publication and verification recorded after observation"
+status: "implemented and remotely verified / independent source and bounded scenario review complete"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
 record_date: "2026-10-01"
@@ -86,7 +86,26 @@ Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Fo
 
 ### 5.2 公開・Remote確認
 
-PENDING — 最新mainとの競合を確認し、対象外を保持した六パスを整合した単位で公開する。公開前・公開後に本文・Path・ref・blob／commitを直接照合し、保存時刻、GitHub記録者、対象外保持の結果を追記する。
+**実装六パスをmainへ公開し、公開前commitと公開後mainから取得した六本文の全文一致を確認した。**
+
+- 実装commit: [70c2b7ade7ad92d7021635b81c5bccd88d309eb8](https://github.com/yusukefujiijp/ai-project/commit/70c2b7ade7ad92d7021635b81c5bccd88d309eb8)
+- 実装tree: `ccb067760b9a7317edea9a34479bee5e22d4ceee`
+- GitHub保存時刻: 2026-10-01T11:49:14Z / 2026-10-01T20:49:14+09:00
+- GitHub author／committer: `yusukefujiijp`。Humanの意味・実行承認、Dot00:00; 初穂（dot-0000）の編集・統合・報告と区別する
+- 公開前に六対象blobとcommit本文を直接照合し、main headが基点と一致することを再確認。non-force更新で六パスを一度に反映した
+- 393既存ファイルのうち3更新・3追加で396。対象外390ファイルはblob／mode同一。各Ark章、AGENTS／ARK、既存Prompt・Skill、STR-003／004を含む
+- 公開後mainから六パスを直接再取得し、意図した全文と一致。main headも実装commitと一致することを2026-10-01T11:49Zに確認した
+
+| Path | 実装commit時点で一致したblob |
+|---|---|
+| `README.md` | `12612c1dd0bb6a193ce5540167f1545a84c12f11` |
+| `control-center/README.md` | `281a827181db63a735b7bb48058f39b0cd8dd348` |
+| `control-center/changes/STR-005-dots-collaboration-foundation.md` | `cb8a9c7d11fba47597ad5cb0b930d836ba01245a` |
+| `dots/README.md` | `e8a6e55c823b08e13942fec66685f3011271d357` |
+| `dots/actors/dot-0000/README.md` | `8a53750a50720e8fc8208adc60a331e493edfddd` |
+| `dots/records/2026/20261001-first-fruit.md` | `7daa0946a812dcff15ded93b422c64f9f989e63f` |
+
+この表は実装時点の観測であり永久pinではない。本節の検証追記は後続commitで保存し、再取得確認する。記録自身の未来のSHAを埋める循環を作らず、[基点との実装比較](https://github.com/yusukefujiijp/ai-project/compare/02afa89744c7e44abf03acab809aa617910c8bfa...70c2b7ade7ad92d7021635b81c5bccd88d309eb8)と本記録のGit履歴から実体へ戻れるようにする。
 
 保存・構造点検・独立した限定応答・実際のWork受入れ・Future AIの長期継承・個性の再現度・実生活効果は別のEvidenceである。未観測を完成に変換しない。
 
