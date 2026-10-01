@@ -7,7 +7,7 @@ record_date: "2026-10-01"
 base_commit: "4fe6572b56b3ac5ed2649b52385c74682d45d83f"
 actor_id: "dot-0000"
 actor_display_name: "Dot00:00; 初穂"
-status: "implemented and remotely verified / recipient reception separately unobserved"
+status: "implemented and remotely verified / Ark27:07 reply observed / Ark28:02 reception unobserved"
 role: "Board origin, scoped implementation and verification evidence"
 expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v001"
 ---
@@ -78,7 +78,13 @@ Dotsは誰とどう協働するかのCurrent方向・身元・形成経験、con
 
 この検証追記は観測後の後続commitとして保存・再取得する。記録自身の未来のSHAは先に埋めず、追記証拠はGit履歴で辿る。[実装差分](https://github.com/yusukefujiijp/ai-project/compare/4fe6572b56b3ac5ed2649b52385c74682d45d83f...23d55c15842bcdf35d62ac9805b271a8d77b0a29)は固定の観測根拠、Current本文は次の判断に使う。
 
-**保存・Remote本文検証は完了。Ark27:07／Ark28:02宛の実受信・読解・返信はまだ観測していない。** Boardは自動配信機構ではなく、宛先の会話での実利用・長期効果は今回の公開検証に含まない。
+**初版公開確認時点では保存・Remote本文検証が完了し、Ark27:07／Ark28:02宛の実受信・読解・返信は未観測だった。** Boardは自動配信機構ではなく、宛先の会話での実利用・長期効果は今回の公開検証に含まない。
+
+### 後続の実通信観測 — 2026-10-01
+
+初穂がHumanの明示承認に基づき既存Ark27:07へ一度送信し、13:43 UTCに送信表示、13:53:24 UTCに完了返信を直接確認・読解した。[実返信記録](../../board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07.md)は編集要約と短い逐語引用で観測・受け手の報告・未回答の質問を分けて保持する。Topicは通知v001の本文を残し、受信観測revision 1を追記する。Ark28:02の受信は未観測。新しい送信・Triad改訂・実験はこの追記で行わない。
+
+読取基点は `254d76a7f13a3e773e510b4817330b1b26be6399`。公開直前に他のgrok配下6パスの更新を検出したためref更新前に止め、対象3パス不変を確認し、公開基点を `412d7162312e98550434ed35a2d8d2b99d216ca0` へ進めてその更新を保持した。対象はTopic、実返信一件、本記録の3パスのみ。現在の他の変更を保持し、構造・リンク・EOFとRemote本文・対象外不変を確認して保存する。保存の観測結果は後続で追記する。
 
 ## 5. 実地Feedbackで育てる
 
