@@ -7,7 +7,7 @@ record_date: "2026-10-01"
 base_commit: "4fe6572b56b3ac5ed2649b52385c74682d45d83f"
 actor_id: "dot-0000"
 actor_display_name: "Dot00:00; 初穂"
-status: "authorized implementation candidate / publication pending"
+status: "implemented and remotely verified / recipient reception separately unobserved"
 role: "Board origin, scoped implementation and verification evidence"
 expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v001"
 ---
@@ -64,7 +64,21 @@ Dotsは誰とどう協働するかのCurrent方向・身元・形成経験、con
 
 公開時はmain基点を再確認し、対象外のblob／modeを保持してnon-forceで更新する。六本文をRemoteから全文再取得し、意図した内容・SHA・EOF・対象外不変を確認する。後続の観測だけを本節へ追記する。
 
-**現時点: 候補作成。公開・Remote検証は未実施。宛先の受信・返信も未観測。**
+### 実施結果 — 2026-10-01
+
+- 実装commit: [23d55c15842bcdf35d62ac9805b271a8d77b0a29](https://github.com/yusukefujiijp/ai-project/commit/23d55c15842bcdf35d62ac9805b271a8d77b0a29)
+- tree: `6a75dfe921ef90ccf47a0e366eb763b28e588fea`
+- GitHub保存時刻: 2026-10-01T13:06:00Z／2026-10-01T22:06:00+09:00
+- GitHub author／committer: `yusukefujiijp`。意味上のHuman承認・AI担当・通信送信者は§3のとおり
+- 公開前: 六パスのfrontmatter、canonical_path、宣言EOF、fence、単一本文、相対リンク、私的識別子の非混入を確認。静的検査エラー0。Root／control-center入口は案内一行追加のみ
+- 独立AIの文書読解: Dots対話とdots/保存領域の説明を補い、Support用コピー文の過剰な停止表現を修正後、実質的な公開阻害なし。初見の受け手がSTR-003の旧契約と正式移行、STR-004／005、宛先別v001の読解依頼と未観測受信を区別できると評価した。これは候補本文の限定読解であり、宛先本人の受入れ試験ではない
+- treeで六対象blob一致と、対象外393ファイルのblob／mode一致を確認。既存397ファイルのうち4更新、2追加で399ファイル。Ark27:07・Ark28:02のTriad、STR-003〜005原本、他の仕事の内容は変更なし
+- 実装commitから六本文を全文再取得し一致。直前にmainが基点4fe6572と同じことを確かめ、non-forceで一体公開した
+- 公開後mainから六本文を全文再取得し、内容とheadが実装commitに一致することを13:06 UTCに確認した
+
+この検証追記は観測後の後続commitとして保存・再取得する。記録自身の未来のSHAは先に埋めず、追記証拠はGit履歴で辿る。[実装差分](https://github.com/yusukefujiijp/ai-project/compare/4fe6572b56b3ac5ed2649b52385c74682d45d83f...23d55c15842bcdf35d62ac9805b271a8d77b0a29)は固定の観測根拠、Current本文は次の判断に使う。
+
+**保存・Remote本文検証は完了。Ark27:07／Ark28:02宛の実受信・読解・返信はまだ観測していない。** Boardは自動配信機構ではなく、宛先の会話での実利用・長期効果は今回の公開検証に含まない。
 
 ## 5. 実地Feedbackで育てる
 
