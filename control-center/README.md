@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-26"
+updated: "2026-10-01"
 expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.2"
 ---
 
@@ -93,6 +93,7 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 - [STR-001: 案内と所有先の整合](changes/STR-001-navigation-and-ownership.md)：2026-09-22の六修正群とD04分離設計。
 - [STR-002: 単一Promptへの統合](changes/STR-002-single-prompt-consolidation.md)：短期の起動利益と長期の二重管理負担を区別したHuman Correction、Query機能の移管、作成方針撤回、削除・検証・残る移行Gate。
+- [STR-004: Elon Musk DeadlineのPrompt改訂](changes/STR-004-elon-musk-deadline-revision.md)：旧資料の核と形成史を保持し、締切・品質・完了判定・権限を現在の単一Promptへ整理した理由と検証。
 
 [ARC-006](ARCHIVE.md#arc-006)は、旧Plan Mode資料の退役と新Skillへの接続を所有する。Skillの入口・配布・限定検証は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)へ進む。
 
@@ -107,3 +108,4 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
 EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.2
+

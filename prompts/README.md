@@ -4,10 +4,11 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-09-29"
+last_updated: "2026-10-01"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
+deadline_prompt_update: "control-center/changes/STR-004-elon-musk-deadline-revision.md"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -261,6 +262,12 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 日常の呼出しには [AI Living Review / living-review](../skills/living-review/SKILL.md) を使える。対象と現在の依頼から基本支援を行い、詳しい意味や具体例を深める必要時に共通本文へ進む。専用Skillの共有・導入・確認範囲は[Shared Skills Hub](../skills/README.md#34-ai-living-reviewの入口)を参照する。
 
+### 3.13 Elon Musk Deadline
+
+[Elon Musk Deadline](elon-musk-deadline.md)は、採用した締切からScope・優先順位・資源配分・届け方を組み替え、到達可能な最高出力を現実へ渡す単一Prompt。Deadline-first／Scope-cut／Output-sealを核とし、思考実験と実行、成果の完了と学習・報告の完了を区別する。必要な推論・品質・安全・Humanの睡眠を削らず、期限や週次運用を自動設定しない。
+
+起動は本文と現在の依頼を使う。計画だけ・レビュー・承認済み実行を区別し、例から別Taskを始めない。Ark05:01の旧Skill Card candidateからの形成・変更理由と限定検証は[STR-004](../control-center/changes/STR-004-elon-musk-deadline-revision.md)へ接続する。新Skillや別Queryの導入は含まない。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
@@ -333,3 +340,4 @@ Human Final Seal.
 ```
 
 > **Naming is architecture made visible.**
+
