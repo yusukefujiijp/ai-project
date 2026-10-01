@@ -1,0 +1,31 @@
+{
+  "skill": "example-learning",
+  "test_cases": [
+    {
+      "name": "programming_one_example",
+      "input": "学習モードで、境界を越えない関数の書き方を実地の一例で学ばせて",
+      "assertions": [
+        "Locks the subject seed before teaching",
+        "Gives exactly one concrete code example",
+        "Does not expand into a course outline"
+      ]
+    },
+    {
+      "name": "batting_one_pitch",
+      "input": "学びモードでバッティングを一球だけ実地で見て",
+      "assertions": [
+        "Uses a batting inspection from the subject seed",
+        "Does not apply the SRP requester test as the fixed test",
+        "Stops after naming one next pitch"
+      ]
+    },
+    {
+      "name": "missing_seed_stops",
+      "input": "学習モードでこのテーマを深くやって",
+      "assertions": [
+        "Stops and asks for one canonical sentence",
+        "Does not invent the subject seed"
+      ]
+    }
+  ]
+}
