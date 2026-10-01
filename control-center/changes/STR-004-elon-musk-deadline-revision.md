@@ -4,7 +4,7 @@ record_id: "STR-004"
 version: "v001"
 canonical_path: "control-center/changes/STR-004-elon-musk-deadline-revision.md"
 role: "Scoped prompt revision rationale, provenance and verification record"
-status: "document and independent source checks complete / publication verification pending"
+status: "implemented and remotely verified / independent source review complete / field effects separate"
 repository: "yusukefujiijp/ai-project"
 ref: "main"
 record_date: "2026-10-01"
@@ -74,7 +74,28 @@ Current AGENTS、ARK、Nearest prompts README、control-center READMEと既存ST
 - 別AIが候補本文・記録・README差分・元資料を独立に読解し、実質的な公開阻害なしと報告した。締切なしで7日を捏造しない、必要品質を削らない、Failure Reportを元成果の完了にしない、Plan-only／STOPを優先する、承認範囲を再承認で止めない、という境界を文面と意味から照合した。
 - これは構造検査と独立した文書・境界レビューである。実Tool操作の行動試験、実際のWork受入れ、他AIの全場面での挙動、実生活効果は検証していない。
 
-公開結果とcommitは、実際の観測後に本節へ記録する。公開確認を、この方法の実生活上の有効性や実際の試行完了として扱わない。
+### 5.1 mainへの公開とRemote再取得
+
+**実装4パスをmainへ保存し、公開前の4blobと、公開後mainから再取得した4本文の全文一致を確認した。**
+
+- 実装commit: [f3da643ee52ec0b46a015a76df0f7c69743e129e](https://github.com/yusukefujiijp/ai-project/commit/f3da643ee52ec0b46a015a76df0f7c69743e129e)
+- 実装tree: `658f4b00d874e0233e896c380bffd9ff74c9475a`
+- GitHub保存時刻: 2026-10-01T11:11:10Z / 2026-10-01T20:11:10+09:00
+- GitHub author／committer: `yusukefujiijp`。Humanの依頼とAI-Collaboratorの実装担当は上記のとおり区別する
+- 公開直前にmainが基点と一致することを再確認し、対象4パスだけを反映したcommitへnon-forceで更新した
+- 391既存ファイルのうち2更新・2追加で393ファイル。対象外389ファイルはblob／mode一致で変更なし。Dots・各Ark章・Skills等を含む
+- 公開後、mainから4パスを直接再取得し意図した全文との一致を確認。main headも実装commitと一致した
+
+| Path | 実装commit時点で全文一致したblob |
+|---|---|
+| `prompts/elon-musk-deadline.md` | `a12c756832bc5d61156597e78f4a3a879fe7be7c` |
+| `prompts/README.md` | `db1d9d611a57d4c44471ac63c61d7c2b9ca0bb1a` |
+| `control-center/README.md` | `263715403f61860206321f7215a7954416200107` |
+| `control-center/changes/STR-004-elon-musk-deadline-revision.md` | `3d87caf98dc17332338ae7f040db1498b4e7faf8` |
+
+この表は実装commitの観測であり、Currentの永久pinではない。本節の検証追記は後続commitとして保存・再取得する。記録自身の未来のSHAを先に埋める循環は作らず、実装差分は[基点との比較](https://github.com/yusukefujiijp/ai-project/compare/b3e1b95821ce6272557c0f6d16152e4ff61460f0...f3da643ee52ec0b46a015a76df0f7c69743e129e)、追記の保存証拠は本ファイルのGit履歴から辿れる。
+
+公開確認を、この方法の実生活上の有効性や実際の試行完了として扱わない。
 
 ## 6. 実利用で見直すこと
 
