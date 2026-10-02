@@ -75,4 +75,16 @@ YusukeJPが採用と実行を承認し、dot-0000が設計・執筆・統合・�
 
 Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。文書・形式・AIはKeliであり、実装成功をRootやHuman Authorityの置換へ使わない。
 
+## 6. 実装公開後の直接確認
+
+2026-10-02 UTC、[実装commit `d1df870673b0bc0bca58aa9a6df32820594aa9fa`](https://github.com/yusukefujiijp/ai-project/commit/d1df870673b0bc0bca58aa9a6df32820594aa9fa)をmainへ非forceで公開した。親は `16cbfffc5b0eca8dde8dc08ebfe5e2e83068bef7`、Git保存時刻は `2026-10-02T16:58:11Z`。Git author／committerはyusukefujiijp、今回の意味・執筆・観測担当dot-0000とは役割を区別する。
+
+公開後、変更後に残る九実体をRemoteから全文・SHAで再取得し、公開候補との完全一致を直接確認した。旧 `dots/lessons.json` はTreeに存在せず、現役正本は二行の `dots/lessons/lessons.jsonl` だけである。新正本はblob `e1df104c2e306990f30ffced03ea3775425208be`、3,430 bytesで、lessonの追加や意味変更はない。
+
+最新親の対象外411ファイルはblob／modeをすべて保持した。三つの凍結実験実体も同一blobのままで、WorkのARC-009検証・cleanup-direction・PLANを変更していない。root §5を残したため、その既存リンクから専用契約へ進める。
+
+正確な実装commitについて、commit statuses 0件、check runs 0件、全event対象のworkflow runs 0件を取得した。status集約表示はpendingだが、0件をCI通過とも実行中Jobとも判定しない。今回の36項目・独立read-only監査・Remote保存確認を、未実施のCIや永続writerの運用保証と区別する。
+
+この確認を本記録とActor logへ一度だけ追記し、追記後はRemote再取得で閉じる。将来の実務効果、新規Dotの自動読込、process再起動を跨ぐ操作同一性の保持は、この保存確認だけでは実証されていない。
+
 EOF::STR_009_HEADERLESS_LESSONS_ADOPTION::v001
