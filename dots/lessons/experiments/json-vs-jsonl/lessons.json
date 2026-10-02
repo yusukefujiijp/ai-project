@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "next_id": 3,
+  "lessons": [
+    {
+      "id": "D-L001",
+      "created_at": "2026-10-02T09:16:16Z",
+      "updated_at": "2026-10-02T09:16:16Z",
+      "lesson": "送信文と応答開始を確認した後に返信の取得だけが止まった場合は、送信と返信観測を別の状態として扱い、初回依頼を重複送信する前に既存会話の返信を確認する。再接続や時間を置いた再取得も、現在の承認範囲と停止条件の中で試す。観測できないことだけで、相手の未返信・処理失敗・対話完了を決めつけない。",
+      "sources": [
+        {
+          "locator": "https://github.com/yusukefujiijp/ai-project/blob/2bf35b8aef610e9b59bc953ac2c3a04364bc438e/board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07-board-structure-dialogue.md#2-第1往復-q1--初穂の問いと送信観測",
+          "supports": "初穂の記録では、2026-10-01 14:06:49 UTC頃に送信文と応答中表示を直接確認した。これは送信操作の観測であり、サーバー側配信時刻の証明ではない。"
+        },
+        {
+          "locator": "https://github.com/yusukefujiijp/ai-project/blob/2bf35b8aef610e9b59bc953ac2c3a04364bc438e/board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07-board-structure-dialogue.md#6-復旧と第1返信-a1--142620-utcに直接読解",
+          "supports": "同記録§3–6で、接続タイムアウト中も重複送信せず、時間を置いて既存会話を開き直し、14:26:20 UTCに初穂が既存返信を取得・読解した。"
+        }
+      ],
+      "caveat": "一件の回復経験から得た条件付きの判断。根本原因は不明で、待機や開き直しの因果効果・恒久的な復旧保証・無期限待機の必要性は実証されていない。D-L002と同じ出来事を根拠とし、独立した二件の成功ではない。"
+    },
+    {
+      "id": "D-L002",
+      "created_at": "2026-10-02T09:16:16Z",
+      "updated_at": "2026-10-02T09:16:16Z",
+      "lesson": "中断後に結果を取得できた時は、以前の「未観測」を当時の正しい履歴として残し、後から確認した結果と観測時刻を追記して現在位置へ接続する。読解・取得した時刻を、返信生成の完了時刻や原因が確定した時刻へ読み替えない。履歴と最新状態の役割を分け、復旧によって当時の観測を消さない。",
+      "sources": [
+        {
+          "locator": "https://github.com/yusukefujiijp/ai-project/blob/2bf35b8aef610e9b59bc953ac2c3a04364bc438e/board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07-board-structure-dialogue.md#4-中断時点の結果と再開条件--historical",
+          "supports": "初穂の記録は、中断時点の確認済み・未観測・再開条件をHistoricalとして保持し、§6に後の返信取得を追記している。"
+        },
+        {
+          "locator": "https://github.com/yusukefujiijp/ai-project/blob/2bf35b8aef610e9b59bc953ac2c3a04364bc438e/board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07-board-structure-dialogue.md#8-第2返信-a2と限定対話の終了",
+          "supports": "初穂が直接読解したArk27:07のA2の編集要約では、旧未観測を消さず回復を追記することと、14:26の読解時刻を生成完了や原因の証明にしないことが明示された。"
+        }
+      ],
+      "caveat": "D-L001と同じ一件から、記録の訂正・時刻の解釈という別の判断を抽出したもの。Ark27:07の応答は同じ経験へのReviewであり、独立した再現実験ではない。"
+    }
+  ]
+}
+
