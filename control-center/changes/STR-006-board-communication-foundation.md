@@ -123,4 +123,13 @@ Humanは本週次レビューで指摘されたTopicとSTRの状態重複を重�
 
 公開は最新mainと競合を照合して行い、三本文をRemoteから再取得して照合する。保存結果は実際の確認後に本節へ追記し、未確認の成功を先に記さない。実際のAI運用で同類の誤りが再発しなくなったことや、長期の負担軽減は別の観測である。復元時も後続の通信・他者変更を保持して必要な差分だけを修正する。
 
+### 実施結果 — 2026-10-02
+
+- 実装commit: [203230ebcf2d9c4b82ccac59fd806fdd6cc0d0b9](https://github.com/yusukefujiijp/ai-project/commit/203230ebcf2d9c4b82ccac59fd806fdd6cc0d0b9)。GitHub保存時刻 2026-10-02T11:04:51Z／2026-10-02 20:04:51 JST、author／committerは `yusukefujiijp`。意味上の担当は本節のとおり。
+- 三対象を一体で公開し、公開前commitと公開後mainから三本文を全文再取得して意図した内容との一致を確認した。公開後mainは実装commitに一致。基点の対象外408ファイルのblob／modeを保持し、追加・削除なし。
+- frontmatterの重複キー、canonical_path、宣言EOF、fence、30件の相対リンクと変更対象内anchorを照合し、検出エラー0。通知本文§1–5、通知v001、receipt revision 2、実観測時刻、返信二原本のblobを保持した。旧§6の時点付き履歴も、旧「現在の通信位置」を2026-10-01 14:30:49 UTC時点と明示した箇所以外は保持した。
+- 編集AIによる五場面の自己点検では、完了済み保存の再開防止、将来のSupport返信の更新先、STR編集日と通信鮮度の区別、新観測と保存の差、競合・中断時のRemote照合を確認した。外部送信や新しい受信観測、別AIの実読解試験は行っていない。
+
+この結果追記自身のcommitはGit履歴で辿る。追記のRemote再取得確認は保存後に行い、自己参照の未来SHAや未観測の運用効果を記録しない。
+
 EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v002
