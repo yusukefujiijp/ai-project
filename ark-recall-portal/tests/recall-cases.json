@@ -1,7 +1,7 @@
 {
   "format": "ark-recall-validation-cases",
-  "version": "v0.1.0",
-  "updated": "2026-09-28",
+  "version": "v0.2.0",
+  "updated": "2026-10-03",
   "role": "validation-only; never retrieve as Human experience",
   "runtime_inputs": [
     "ark-recall-portal/README.md",
@@ -19,7 +19,10 @@
     "原本revisionと項目の確認revision",
     "原文と要約・仮説の区別",
     "README EOF・リンク",
-    "正規の作成先にあるSkill形式・表示設定"
+    "正規の作成先にあるSkill形式・表示設定",
+    "v002 recall_contextの月・旬・重複と原本の時期／場所の意味対応",
+    "本番8項目・既存4場面の保持と季節入口の追加",
+    "設計例・架空経験を本番季節itemsへ混入させない"
   ],
   "cases": [
     {
@@ -125,6 +128,96 @@
         "未実証効果や他ThreadのMain移管を作らない"
       ],
       "mutations": "none"
+    },
+    {
+      "id": "seasonal-empty",
+      "query": "今日は2027年9月15日です。10月について事前情報が欲しい。以前何を記録したか覚えていません。",
+      "checks": [
+        "問い合わせ月から対象を9月へ変えない",
+        "季節の機能と実体験の未収録を区別",
+        "仙台天気・衣類の設計例を実体験として提示しない",
+        "確認した範囲の未収録と全履歴不存在を区別"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "seasonal-capture",
+      "query": "Ark Recall Portalへの季節メモです。昨日（2026/10/02）は仙台で、晴れた昼間の空気が丁度よく、外にいるのがとても気持ちよかった。もう一件、2026/09/30の朝の出勤は風が冷たく、ウインドブレーカーを着ました。",
+      "synthetic": true,
+      "setup": "基準日は2026-10-03 Asia/Tokyo。正式に指定した隔離コピーを保存先とし、外部へ書かない。",
+      "checks": [
+        "自然な記録入力を受け取り、原本とitemsへ保存・再取得",
+        "原文、体験日、記録日、場所、晴れた昼間という条件、快適さを保持",
+        "9月の経験を10月に索引しない",
+        "同一入力内の二つの経験を独立に検索できる"
+      ],
+      "mutations": "isolated-copy-only"
+    },
+    {
+      "id": "seasonal-advance-read",
+      "query": "今日は2027年9月15日です。10月について事前情報が欲しい。以前の内容は覚えていません。",
+      "synthetic": true,
+      "precondition": "seasonal-capture後の資料を新しい読み手に渡す。元の記録入力、期待値、ケース集は渡さない。",
+      "checks": [
+        "月全体の問いから10月上旬の経験に到達",
+        "2026年の本人の評価と晴れた昼間という条件を復元",
+        "2027年の予報や強制Taskへ変換しない",
+        "9月30日の着用報告を10月の実績としない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "seasonal-september-read",
+      "query": "では、9月についての記録も教えてください。",
+      "synthetic": true,
+      "precondition": "seasonal-capture後の資料を使用。",
+      "checks": [
+        "10月に記録された9月30日の経験へ到達",
+        "朝の出勤と風の冷たさ、着用したとの報告を保持"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "seasonal-condition-correction",
+      "query": "10月2日の話は、晴れた昼間についてです。朝晩も快適だったという意味ではありません。この補足を指定したローカル資料に反映してください。",
+      "synthetic": true,
+      "checks": [
+        "同じ経験への補足として出典と条件を更新",
+        "元の原文・記録を黙って消さない",
+        "索引・recall・原本の意味を対応させる"
+      ],
+      "mutations": "isolated-copy-only"
+    },
+    {
+      "id": "seasonal-new-year",
+      "query": "2027年10月2日の仙台は、昼間も肌寒いと感じました。季節メモです。",
+      "synthetic": true,
+      "checks": [
+        "2026年の経験とは別に記録",
+        "昨年の快適さを誤報として訂正しない",
+        "比較時に年の違いを保持"
+      ],
+      "mutations": "isolated-copy-only"
+    },
+    {
+      "id": "seasonal-uncertain-time",
+      "query": "秋頃、晴れた日は気持ちよいと思った。どの年だったかは覚えていません。これは季節メモです。",
+      "synthetic": true,
+      "checks": [
+        "年不明・季節語の粒度を保つ",
+        "記録日・プロフィールから経験年や地域を補わない",
+        "月番号の不足を理由に保存を拒否しない"
+      ],
+      "mutations": "isolated-copy-only"
+    },
+    {
+      "id": "seasonal-design-only",
+      "query": "例えば『10月上旬、仙台の晴れの日は最高』と入力できるようにしたいです。まだ保存や変更はせず設計だけ説明してください。",
+      "checks": [
+        "例示として扱い、本番の経験候補へ登録しない",
+        "Plan-onlyを維持"
+      ],
+      "mutations": "none"
     }
   ],
   "observations": [
@@ -191,11 +284,75 @@
       "method": "structural checks",
       "result": "passed",
       "note": "原本v001 Schemaで使用される語彙を検査するローカル検証器、JSON重複キー、ID・参照、Scene/項目、README EOFを確認。本番用6項目・隔離コピー7項目とも通過。5つの不正Schema変種を拒否。正規Skill作成先でquick_validate通過。汎用JSON Schemaエンジンや自然な自動選択の検証ではない。"
+    },
+    {
+      "date": "2026-10-03",
+      "method": "read-only independent design review of current source artifacts",
+      "result": "review_completed",
+      "note": "季節例の身分、対象時期と記録日時、現在への適用、翌年の追加と訂正、未収録の区別を第三者文脈で点検。完成版の挙動確認とは別。"
+    },
+    {
+      "date": "2026-10-03",
+      "method": "explicit updated Skill + local source snapshot; no source conversation, expected answers or case file supplied",
+      "independent_contexts": 1,
+      "observed_responses": 1,
+      "results": [
+        {
+          "case": "seasonal-empty",
+          "result": "observed_pass",
+          "note": "新しい読み手が10月上旬を含めた季節実体験の未収録を返し、仙台天候と衣類は設計例と明示。確認範囲を越えた不存在や当年の予報を断定しなかった。"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "method": "explicit updated Skill + isolated writable local snapshot; no source conversation or expected answers supplied",
+      "independent_contexts": 1,
+      "observed_responses": 1,
+      "results": [
+        {
+          "case": "seasonal-capture",
+          "result": "observed_pass",
+          "note": "独立した読み手が二件の仮想入力を原本とitemsへ保存し、再取得した。10月2日の仙台・晴れた昼間・心地よさと、9月30日の朝の出勤・着用を分離。後者の場所を仙台と補わず、体験日と報告日を保持。主担当も保存実体と参照を別途検査。"
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "method": "scoped structural validation and official Skill quick_validate",
+      "result": "passed",
+      "note": "Task Records v001で使用する全Schema語彙を検査し、未知語彙は拒否。JSON重複キー、ID・出典・Edge参照、実ファイルとcanonical_path/$schema、v002索引、既存8項目・4場面の保持、README EOFとリンクを確認。10の不正変種を拒否。正式な個人Skill保存先でquick_validate通過。汎用JSON Schemaエンジンの認証ではない。隔離コピーの二件も同じ構造検証に通過し、変更対象外のArk28:01参照は本番候補資料側で検査した。"
+    },
+    {
+      "date": "2026-10-03",
+      "method": "independent structural-validation attempt before interruption",
+      "result": "not_completed",
+      "note": "別の検証担当が利用制限で中断し、独立した構造検証結果は得られなかった。上記の構造確認は主担当が実施したものであり、独立検証と数えない。"
+    },
+    {
+      "date": "2026-10-03",
+      "method": "fresh reader with updated Skill and post-capture isolated records; no original input, expected answers or case file",
+      "independent_contexts": 1,
+      "observed_responses": 1,
+      "results": [
+        {
+          "case": "seasonal-advance-read",
+          "result": "observed_pass",
+          "note": "2027年9月の問いから2026年10月2日・仙台・晴れた昼間・屋外の心地よさを復元。10月全体や今年の天気へ一般化せず、楽しみの価値を保持した。"
+        },
+        {
+          "case": "seasonal-september-read",
+          "result": "observed_pass",
+          "note": "同じ応答で9月30日の朝の出勤とウインドブレーカー着用を別月として復元。記録した10月ではなく体験月へ接続し、場所未報告と着始め日未確定も保持した。"
+        }
+      ]
     }
   ],
   "limits": [
     "試験用の炭酸水はHumanの実経験ではなく、本番itemsへ追加しない",
     "応答確認は自然なSkill自動選択や実生活効果の証明ではない",
-    "GitHub共有・導入・再取得確認は応答確認と別"
+    "GitHub共有・導入・再取得確認は応答確認と別",
+    "2026-10-03の追加ケース中、observationsに結果のないケースは定義のみであり実行済みと数えない",
+    "季節の架空経験は隔離コピーのみで使用し、本番itemsと経験原本へ転記しない"
   ]
 }

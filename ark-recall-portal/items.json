@@ -1,13 +1,13 @@
 {
   "format": "ark-recall-items",
-  "format_version": "v001",
-  "revision": 3,
-  "updated": "2026-10-02",
+  "format_version": "v002",
+  "revision": 4,
+  "updated": "2026-10-03",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
     "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望",
     "complete_project_history": false,
-    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。"
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
   "scenes": [
     {
@@ -25,6 +25,10 @@
     {
       "id": "commute-preparation",
       "label": "出勤時・出勤前の準備"
+    },
+    {
+      "id": "seasonal-recall",
+      "label": "季節・時期の経験と事前情報"
     }
   ],
   "items": [
@@ -380,7 +384,7 @@
         {
           "path": "ark-project/ark28/ark28-02/task-records.json",
           "record_id": "ark28-02-task-records",
-          "reviewed_revision": 1,
+          "reviewed_revision": 2,
           "node_ids": [
             "commute-towel-recall",
             "commute-scene-addition"

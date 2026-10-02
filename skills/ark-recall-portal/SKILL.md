@@ -1,6 +1,6 @@
 ---
 name: ark-recall-portal
-description: Help YusukeJP recall useful Ark experiences or available support without remembering the details or even what the portal can do. Use for Ark Recall Portal (formerly Ark Recall Hub), requests for its uses or examples, scene-based recall of past reflections, and adding or correcting recall material. Main use is B-state support, but no state declaration is required. Distinguish live recall or capture from design discussion; do not turn unrelated shopping advice or every Ark question into recall.
+description: Help YusukeJP capture and recall useful Ark experiences without remembering their details, location, or even the portal's uses. Use for Ark Recall Portal (formerly Ark Recall Hub), scene-based recall, seasonal personal notes, advance questions such as what to remember about October, and additions or corrections. Keep capture and recall in this one portal. Main use is B-state support; no state declaration is required. Distinguish actual reports from examples, design discussion, and general weather or calendar questions unrelated to personal recall.
 ---
 
 # Ark Recall Portal
@@ -23,11 +23,19 @@ Portal本文は入口・読出し・蓄積・訂正の規約を所有する。�
 
 ## 受領・保存・訂正をつなぐ
 
-新しい反省・希望・訂正を未整理のまま受け取り、Portalの保存規約に従う。実体験、例示、引用、設計相談、実行報告を区別する。新しい項目は初期の場面以外にも追加でき、初版の具体例を固定回答集にしない。
+新しい経験・反省・希望・季節の気付き・心地よさ・訂正を未整理のまま受け取り、Portalの保存規約に従う。実体験、例示、引用、設計相談、実行報告を区別する。新しい項目は初期の場面以外にも追加でき、初版の具体例を固定回答集にしない。
 
 現在の依頼または適用される委任が保存を認める場合だけ、経験原本と該当itemsを更新し、必要な検証と保存先の再取得まで進める。明確に承認された範囲では、同じ許可を繰り返し求めない。Plan-only、受領のみ、読出しのみ、STOPは保持する。会話で受け取っただけなら永続保存済みと報告しない。
 
 一回の在庫・見送り・実施と、今後不要という恒久訂正を区別する。Humanの現在のCorrectionを古い派生要約で上書きしない。現在の身体・睡眠・必要性は、過去の記録だけから決めない。
+
+## 季節の経験を、必要になる前にも呼び戻す
+
+季節メモの受領・保存・想起・訂正を同じPortalで扱う。季節別のSkill選択や定型フォームをHumanに要求しない。保存委任の範囲はPortal本文とCurrent Requestから確認する。
+
+問い合わせた日と知りたい時期を分ける。9月に「10月の事前情報」と聞かれたら10月を対象に、上旬等の部分期間も含めて探す。場所・場面・条件・原文の意味を併せて照合し、検索語や月の完全一致だけに依存しない。記録日から体験日・体験年を作らない。
+
+気持ちよさや季節の楽しみも、本人の評価として保つ。過去の経験と今回への提案・現在の天気を分け、毎年の再現やTask化を強制しない。別年の新しい経験は別に蓄積し、過去発言の訂正と区別する。季節機能が利用可能でも実記録が未収録なら、その区別を伝える。設計例・検証資料を本人の記憶として取り出さない。
 
 ## 必要な支援へ渡し、権限を保持する
 
