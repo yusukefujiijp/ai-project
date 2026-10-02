@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.6.0"
+version: "0.7.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-09-29"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.6.0"
+updated: "2026-10-02"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.7.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -511,4 +511,34 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 三ディレクトリの退役と限定した接続整合は、上記の範囲で完了した。この完了追記は同じ案件の検証記録であり、別の整理・Skill改訂・次Trialの開始ではない。追記自身の自己SHAは埋め込まず、保存後に再取得して本文・EOF・Treeを照合する。次の接続はHuman Reviewとする。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.6.0
+## ARC-008
+
+**新規Actor記録をdots/logsへ一本化し、固有な初穂の形成史は原文を変更せず保管する。** 現役領域の整理と、歴史を失わないことを両立させる案件。
+
+### A. 判断・承認・対象
+
+2026-10-02のDots対話で、Humanはlogsとrecordsを両方現役にする冗長性と、残すことで得られる耐性の釣り合いを問い直した。AIは一つの現役logsと、固有の形成史をrootの既存__archivesへ保管する構成を推奨した。重複する更新先は減らし、命名・初穂の意味・数え違いの訂正まで機械的な短いイベントへ置換しない判断である。[成功事例](../success-cases/decisive-choice-single-log-preserved-history.md)は、この決断へのHuman評価を所有する。
+
+Plan-onlyで調査・計画提示した後、Humanは「Very Good! Execute GitHub OK!」「Human Seal OK!」「実行して下さい！」と統合計画を承認した。これは当該Dots対話の編集要約と短い引用であり、会話URLや個別発言時刻は補わない。承認範囲は一原本の保管、必要な現用リンク・索引、Actorログ、STR、成功事例と検証。別の整理やlessons移設、Save Skill導入へ拡張しない。
+
+### B. 対応・同一性・元の参照関係
+
+| 元の配置 | 保存先 | 保持するblob |
+|---|---|---|
+| `dots/records/2026/20261001-first-fruit.md` | [同一原本](../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md) | `7daa0946a812dcff15ded93b422c64f9f989e63f`、12,158 bytes、mode 100644 |
+
+調査基点は[main snapshot 1eab746](https://github.com/yusukefujiijp/ai-project/tree/1eab74651f254ec32099c107e0ad90fef9a5de16)。[移動前の元パス全文](https://github.com/yusukefujiijp/ai-project/blob/1eab74651f254ec32099c107e0ad90fef9a5de16/dots/records/2026/20261001-first-fruit.md)から当時の相対リンクを辿れる。原文・改行・旧canonical_path・Exact EOF・相対リンクを含めて同じblobを新住所へ参照する。本文内に保管注記を挿入せず、元パスには互換原本・Stubを残さない。
+
+保管した本文中の `../../actors/dot-0000/README.md`、`../../README.md`、`../../../control-center/...` は元配置基準であり、**保管先からはそのまま解決しない**。これらを現在も有効なリンクとは報告しない。元の関係を調べる時は上記固定snapshotの元パスを使う。現在のActor・Dots・STRへ進む時は[dots入口](../dots/README.md)と本案件を使う。
+
+[STR-005](changes/STR-005-dots-collaboration-foundation.md)の元パス表と実装blob表は、当時の証拠として一切変更しない。保管を、STR-005が当時から新住所へ作成したという歴史に書き換えない。
+
+### C. 現用接続・復元・境界
+
+現用参照はdots README、Actor README（命名の§3 fragmentを含む）、Board Topic、STR-006の四文書から保管先へ接続する。Boardの通知・受信版、STR-006の他の責務や並行改訂は変更せず、リンク修復の理由だけをmetadataへ残す。ファイル名検索で確認した六文書のうち、形成原本は同一保存、STR-005は歴史証拠保持とした。全外部consumer・全Git履歴の調査ではない。
+
+復元を検討する時は現在の目的・権限・依存を確認し、上表の保管先または固定snapshotから同じblobを元の `dots/records/2026/20261001-first-fruit.md` へ戻せる。必要な案内を対応させ、理由をこの案件へ記す。原本の復元可能性はrecordsの並行運用への再採用承認ではなく、Repository全体のresetも行わない。
+
+実装・技術検証・公開証拠は[STR-008](changes/STR-008-actor-logs-and-preserved-history.md)とそのGit履歴へ接続する。配置の切替と長期の負担軽減・Future AIの実利用は別の確認である。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.7.0

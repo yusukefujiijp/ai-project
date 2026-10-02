@@ -14,6 +14,10 @@ updated: "2026-10-02"
 updated_reason: "Consolidate current observations and distinguish dated history; notification v001 and receipt observations unchanged"
 receipt_revision: 2
 receipt_updated_utc: "2026-10-01T14:30:49Z"
+archive_navigation_patch:
+  date: "2026-10-02"
+  case: "ARC-008"
+  scope: "Formation-source link only; original report and receipt versions retained"
 expected_eof: "EOF::BOARD_DOTS_WORK_RECONNECTION::v001"
 ---
 
@@ -72,7 +76,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Fo
 
 **STR-004: Deadline Prompt。** 古い資料のDeadline-first／Scope-cut／Output-sealの核と形成史を保ち、[一つの再利用Prompt](../../../prompts/elon-musk-deadline.md)へ改訂しました。締切を理由に必要な品質・根拠・検証を削らず、成果の未達と学びの獲得を区別します。古い週次・金額等の例を現在の予定へ昇格せず、固定手順や重複本文も整理しました。実際の締切試行・Skill導入ではありません。[STR-004原本](../../../control-center/changes/STR-004-elon-musk-deadline-revision.md)と実装[f3da643](https://github.com/yusukefujiijp/ai-project/commit/f3da643ee52ec0b46a015a76df0f7c69743e129e)（10-01 11:11:10 UTC／20:11:10 JST）、検証追記[02afa89](https://github.com/yusukefujiijp/ai-project/commit/02afa89744c7e44abf03acab809aa617910c8bfa)に、4パスの公開・全文一致と対象外389ファイル保持が残っています。
 
-**STR-005: Dotsの現在方向・Actor・形成経験。** 誰が何をしたかをWorkやFuture AIが辿れるよう、[Dots入口](../../../dots/README.md)、[私のプロフィール](../../../dots/actors/dot-0000/README.md)、[初期の形成記録](../../../dots/records/2026/20261001-first-fruit.md)を分けました。個別仕事の成果は既存の原本に置き、Dots側に全作業の進捗を複写しません。[STR-005](../../../control-center/changes/STR-005-dots-collaboration-foundation.md)、実装[70c2b7a](https://github.com/yusukefujiijp/ai-project/commit/70c2b7ade7ad92d7021635b81c5bccd88d309eb8)（10-01 11:49:14 UTC／20:49:14 JST）、検証追記[508e110](https://github.com/yusukefujiijp/ai-project/commit/508e110ced0bc5f27a3d35444edaef9f4feec0b2)が6パスの全文一致・対象外390ファイル保持を記録しています。
+**STR-005: Dotsの現在方向・Actor・形成経験。** 誰が何をしたかをWorkやFuture AIが辿れるよう、[Dots入口](../../../dots/README.md)、[私のプロフィール](../../../dots/actors/dot-0000/README.md)、[初期の形成記録](../../../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md)を分けました。個別仕事の成果は既存の原本に置き、Dots側に全作業の進捗を複写しません。[STR-005](../../../control-center/changes/STR-005-dots-collaboration-foundation.md)、実装[70c2b7a](https://github.com/yusukefujiijp/ai-project/commit/70c2b7ade7ad92d7021635b81c5bccd88d309eb8)（10-01 11:49:14 UTC／20:49:14 JST）、検証追記[508e110](https://github.com/yusukefujiijp/ai-project/commit/508e110ced0bc5f27a3d35444edaef9f4feec0b2)が6パスの全文一致・対象外390ファイル保持を記録しています。
 
 いずれも承認されたRepository実装は完了しました。今回その記録を読んで伝えることは、過去の実装をもう一度行ったことや、Work側で既に使われている証拠にはなりません。
 

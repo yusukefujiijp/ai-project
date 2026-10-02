@@ -1,13 +1,13 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v003"
+version: "v004"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
 updated: "2026-10-02"
-role: "Current Dots collaboration direction, learning maintenance contract, and routes to identities and evidence"
+role: "Current Dots direction, learning maintenance contract, and routes to actor logs and preserved history"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v003"
+expected_eof: "EOF::DOTS_HOME::v004"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -33,7 +33,8 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 | 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
 | Dotsが仕事から何を学び、次にどう使うか | [lessons.json](lessons.json)／本書§5 | 条件・根拠付きの学びと、その読取・更新契約 |
 | 最初の協働相手は誰か | [dot-0000 — Dot00:00; 初穂](actors/dot-0000/README.md) | 安定したActor識別子、表示名、命名の意味、現在の持ち味 |
-| どんな経験と訂正から始まったか | [2026-10-01 初穂の形成記録](records/2026/20261001-first-fruit.md) | 初期の経験を範囲・時点・根拠付きで振り返る。全会話録ではない |
+| Actorがどの仕事を観測・記録したか | [logs](logs/README.md)／[dot-0000](logs/dot-0000.jsonl) | Actor別の出来事を根拠へつなぐ現役ログ |
+| どんな経験と訂正から始まったか | [保管した初穂の形成記録](../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md)／[ARC-008](../control-center/ARCHIVE.md#arc-008) | 命名・Humanの意味・訂正を原文のまま保存。現役への追記先ではない |
 | 初版の協働基盤をなぜ、どう作ったか | [STR-005](../control-center/changes/STR-005-dots-collaboration-foundation.md) | STR-005初版六パスの承認・変更・検証・公開証拠 |
 | 実際の仕事で何を変えたか | [control-center](../control-center/README.md)の該当変更記録、各Projectの原本 | 個別成果の正本。Dots側で同じ進捗台帳を作らない |
 | 共通の権限・継続・停止 | [AGENTS](../AGENTS.md) | 既存の共通契約。Actor名や役割は追加権限にならない |
@@ -43,7 +44,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 
 実務の記録では、Humanの依頼・意味承認、担当Dotや協働AIの作業、GitHub上のauthor／committer、保存時刻、直接確認した結果を区別する。表示名だけで同一性を推測せず、分かる時は安定したActor識別子からその説明へ繋ぐ。後から採用した名前を、過去にもその名前だった証拠として使わない。
 
-経験は既存の該当原本・変更記録へ接続する。Dotsの形成記録には、現在の協働を理解するために有益な出来事・訂正・形成理由を、必要な粒度でまとめられる。適切な仕事の原本がまだない場合は、実際に記録が必要になった時に、その目的・対象・現在の権限に合う記録を作れる。再利用Promptの本文へ実行journalを継ぎ足さない。全部の操作、全応答、毎日の履歴を新しく複製する義務にはしない。記録日と出来事の日が違う場合は分け、不明な時刻を埋めない。
+経験は既存の該当原本・変更記録へ接続する。新しいActor別の出来事は[logsの契約](logs/README.md)に沿って記録し、既存の仕事原本へ戻れるようにする。初期の形成記録はARC-008で歴史資料として保管し、現役のlogsとrecordsを並行追記しない。適切な仕事の原本がまだない場合は、実際に記録が必要になった時に、その目的・対象・現在の権限に合う記録を作れる。再利用Promptの本文へ実行journalを継ぎ足さない。全部の操作、全応答、毎日の履歴を新しく複製する義務にはしない。記録日と出来事の日が違う場合は分け、不明な時刻を埋めない。
 
 「実行中」等の状態を示す時は、いつの観測・最終確認かを添え、処理が今動いていることと依頼成果の完了を区別する。古い表示を読むだけで現在の実行中・完了を判断せず、仕事の原本と実際の結果を確認する。
 
@@ -103,5 +104,5 @@ GitHub author／committerと学びの観測者・執筆担当は別である。�
 
 将来のSave Skillは、この基盤の使用経験を踏まえて別途扱う。ここでSkill・自動実行・他AIへの送達を導入したとは扱わない。
 
-EOF::DOTS_HOME::v003
+EOF::DOTS_HOME::v004
 

@@ -1,15 +1,15 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.6.0"
+version: "0.7.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "success-cases/README.md"
 role: "Success discovery and reading entry"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
-updated: "2026-09-27"
-last_reality_reviewed: "2026-09-27"
-updated_reason: "Connect current-position mapping to the shared skill-entry success pattern while preserving the original three-experience recognition and evidence stages."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.6.0"
+updated: "2026-10-02"
+last_reality_reviewed: "2026-10-02"
+updated_reason: "Add the Human-valued single-log and preserved-history decision; keep design, implementation and long-term benefit distinct."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.7.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -30,6 +30,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](wake-up-one-choice.md) | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
 | [複数の移行場面を、一つの入口へ統合した成功](one-transition-entry.md) | 共通queryと一つのSkillで、場面の判別と必要な処理をAIが引き受ける構成へまとめた | 複数用途の入口統合、Humanの選択負担、機能が増えても扱いやすいSkill設計を考える時 |
 | [一つのスキル入口で、複数の問題を同時に解く — 場面に適応する成功法則](one-skill-entry-multiple-benefits.md) | Humanが移行・Plan Mode・思い出しハブ構想を三回の成功として結び、続いて現在地mapにも共通する、入口の一択化とAIによる方法選択を見出した | 共通スキルのハブ化、想起支援、テーマが変わっても使える現在地map、複数問題同時解決を設計する時 |
+| [現役ログを一つに決め、固有な形成史を残した判断](decisive-choice-single-log-preserved-history.md) | 冗長性と耐性の問いに、資料の役割と根拠を分け、一案へ決めて返したことをHumanが好評価した | AIが根拠ある推奨を引き受ける時、現役更新先の単純さと歴史保存を両立させる時 |
 
 起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
 
@@ -74,4 +75,4 @@ Current Human Request、[AGENTS.md](../AGENTS.md)、対象Runtimeに従う。Hum
 
 事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
 
-EOF::SUCCESS_CASES_README::v0.6.0
+EOF::SUCCESS_CASES_README::v0.7.0

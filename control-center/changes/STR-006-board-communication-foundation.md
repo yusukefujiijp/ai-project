@@ -10,6 +10,10 @@ actor_id: "dot-0000"
 actor_display_name: "Dot00:00; 初穂"
 status: "Initial Board implementation remotely verified on 2026-10-01; subsequent structural revision evidence in section 6"
 role: "Board origin, structural revisions and dated implementation/verification evidence"
+archive_navigation_patch:
+  date: "2026-10-02"
+  case: "ARC-008"
+  scope: "Formation-source link only; original report and receipt versions retained"
 expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v002"
 ---
 
@@ -57,7 +61,7 @@ Dotsは誰とどう協働するかのCurrent方向・身元・形成経験、con
 
 基点[4fe6572](https://github.com/yusukefujiijp/ai-project/tree/4fe6572b56b3ac5ed2649b52385c74682d45d83f)でSTR-006は未使用、board READMEは1改行。AGENTS v004-candidateと既存のRoot／ARK／Dots／control-centerを確認し、Ark Markdownの意味・根拠・読者に応じた役割分離を適用した。GitHubは現在利用可能なconnector経由。基点を保った対象差分だけを一体で公開する。
 
-主要Sourceは[STR-003固定版](https://github.com/yusukefujiijp/ai-project/blob/28037867cce29d9d78cf409dc16ee5518feb7362/control-center/changes/STR-003-persistent-collaboration-foundation.md)、[STR-004固定版](https://github.com/yusukefujiijp/ai-project/blob/02afa89744c7e44abf03acab809aa617910c8bfa/control-center/changes/STR-004-elon-musk-deadline-revision.md)、[STR-005固定版](https://github.com/yusukefujiijp/ai-project/blob/508e110ced0bc5f27a3d35444edaef9f4feec0b2/control-center/changes/STR-005-dots-collaboration-foundation.md)、[初穂形成記録](../../dots/records/2026/20261001-first-fruit.md)。今回のHumanの二軸・Board・柔軟な実地方針は現在のDots対話の報告・承認を編集した。公開されていない会話URLや時刻は作らない。
+主要Sourceは[STR-003固定版](https://github.com/yusukefujiijp/ai-project/blob/28037867cce29d9d78cf409dc16ee5518feb7362/control-center/changes/STR-003-persistent-collaboration-foundation.md)、[STR-004固定版](https://github.com/yusukefujiijp/ai-project/blob/02afa89744c7e44abf03acab809aa617910c8bfa/control-center/changes/STR-004-elon-musk-deadline-revision.md)、[STR-005固定版](https://github.com/yusukefujiijp/ai-project/blob/508e110ced0bc5f27a3d35444edaef9f4feec0b2/control-center/changes/STR-005-dots-collaboration-foundation.md)、[初穂形成記録](../../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md)。今回のHumanの二軸・Board・柔軟な実地方針は現在のDots対話の報告・承認を編集した。公開されていない会話URLや時刻は作らない。
 
 担当は、Human YusukeJPが目的と実行承認、Dot00:00; 初穂（dot-0000）が編集・実装・結果統合。GitHub author／committerと保存時刻は実際のcommitから確認する。通信の送信者とGit記録者を混同しない。
 
