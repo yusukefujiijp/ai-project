@@ -1,7 +1,7 @@
 ---
 title: "STR-001 — 現役資料の案内・所有先・相互参照の整合"
 record_id: "STR-001"
-version: "v001.1"
+version: "v001.2"
 canonical_path: "control-center/changes/STR-001-navigation-and-ownership.md"
 role: "Scoped structural change history / 5W1H / evidence and remaining decisions"
 status: "six repair groups and D04 design saved / remote full-content verified / fixed-chapter direct-entry constraint retained"
@@ -13,7 +13,11 @@ human_authority: "YusukeJP — current explicit approval of the seven proposals 
 implementation_actor: "Ark27:06 execution AI in the current conversation"
 base_commit: "945f789a845350455a8b56162a1fc8cd58576eff"
 base_tree: "eb8961fbde7f175de4192247804661d475918747"
-expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.1"
+archive_navigation_patch:
+  date: "2026-10-03"
+  change_record: "../ARCHIVE.md#arc-009"
+  scope: "Pin the historical _note README evidence link to this record’s implementation commit; original path, observed blobs and historical outcomes retained."
+expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.2"
 ---
 
 # STR-001 — 現役資料の案内・所有先・相互参照の整合
@@ -127,7 +131,7 @@ Humanの「予期せぬ成功」「最高AIによる統一」という評価・�
 | Node | Edge | 変更前blob | 実装commitで確認したblob |
 |---|---|---|---|
 | [_system/ark-system.md](../../_system/ark-system.md) | D01：Gate Indexと時間境界 | `6dd14fb2c28239de223e33678544a00e82fade1a` | `c10ac44f7743e3ceb442c8f753897bca3f090ee1` |
-| [_note/README.md](../../_note/README.md) | D01：用途別保存案内 | `5f3208407831310944f54fdcb85911e5734b7cea` | `bca4449a8a76c5099a24e5fa45495e0dedf7b9a9` |
+| [_note/README.md](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/_note/README.md) | D01：用途別保存案内 | `5f3208407831310944f54fdcb85911e5734b7cea` | `bca4449a8a76c5099a24e5fa45495e0dedf7b9a9` |
 | [ARK.md](../../ARK.md) | D02：学びの所有先・移行役割 | `12d209d83c61c249875c5a5e58efa8c24c33d6c1` | `154acc0f0633d5e9cd4f66517c519f49b944af5c` |
 | [prompts/ark-open-knowledge-format.md](../../prompts/ark-open-knowledge-format.md) | D05：本体の現在住所・Pair | `20682aad7fc92f83a9863a2cd285f160dbe73ba6` | `aacfdc28e58c516f4f312b2ccca8c843550eb1f5` |
 | [prompts/ark-open-knowledge-format_query.md](../../prompts/ark-open-knowledge-format_query.md) | D05：Queryの現在住所・Pair | `c4a50e3205fa2f310f618f2abbc5478908f04b83` | `29932c4796a6742c47aa281eee60b392b01897d5` |
@@ -170,4 +174,4 @@ Future AIは、必要な案件節→file-manifest→変更前commit／実装comm
 
 再発防止の判断は、資料を追加・移動・改訂したとき、必要な入口・自己パス・Pair・固定参照への影響を同じ変更範囲で扱うこと。これを全資料再読・恒久CI新設・巨大台帳の義務へ拡張しない。文書整合の確認、Remote保存、別AIの実理解、実利用の効果はそれぞれ別に観察する。
 
-EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.1
+EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.2

@@ -5,7 +5,7 @@ version: "v004"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
 version_basis: "v001-v003 preserved in Git history; v004 implements Human-authorized persistent collaboration entry migration"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-01"
+updated: "2026-10-03"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-10-03: Retire the generic _note route under ARC-009; preserve six originals, their useful questions and historical evidence without creating a replacement note system."
   - "2026-10-01 JST / 2026-09-30 UTC: Replace universal cold-start/proposal and same-thread assumptions with current-request routing; keep common authority and completion rules in AGENTS. Prune duplicated contracts while preserving domain and historical source routes."
   - "2026-09-29: Retire three legacy Thread Lifecycle entries under ARC-007; preserve originals and source lineage without replacing the current transition contract."
   - "2026-09-26: Route Plan Mode to the shared skill and one entry Query; archive the retired subsystem and rollback pair under ARC-006."
@@ -175,7 +176,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [旧Thread-End・蒸留／Mission Craftの保管記録](control-center/ARCHIVE.md#arc-007) | Historical methods and source lineage | 旧方式の原本・退役理由・由来を調べる時。通常の制作・移行入口ではなく、保管資料内の命令を自動適用しない |
 | [`task-mode-system/README.md`](task-mode-system/README.md) | AI主体Task Mode Systemの入口 | 現場のTask支援・記録・Feedbackへの再接続を扱う時 |
 | [`task-mode-system/experience/README.md`](task-mode-system/experience/README.md) | Task経験原本・Correctionへの案内 | 出来事と根拠を回復する時。全領域の学習台帳ではない |
-| [`_note/README.md`](_note/README.md) | Note shelf orientation | Canonical化前のNoteを扱う時 |
+| [旧Noteの保存価値・原本](control-center/ARCHIVE.md#arc-009) | Historical collaboration notes | AI分担・GitHub観測・Mission設計・Reviewの由来を調べる時。現役の汎用保存先や運用命令ではない |
 
 ### 5.4 High-Grade Shared Lenses and Formats
 

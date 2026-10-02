@@ -1,14 +1,14 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.7.0"
+version: "0.8.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
-updated: "2026-10-02"
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.7.0"
+updated: "2026-10-03"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.8.0"
 ---
 
 # ai-project Archives
@@ -49,6 +49,7 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 | [ARC-006の旧Plan Mode Subsystem](ARC-006/ai-plan-mode/README.md)・[旧v003本体](ARC-006/prompts/ai-plan-mode.md)・[旧Query](ARC-006/prompts/ai-plan-mode_query.md) | [目的変更・十原本・参照影響・復元](../control-center/ARCHIVE.md#arc-006) → [新Skillの統一入口](../skills/README.md#33-plan-modeの統一入口) | 専用フォルダ八資料と旧Pair二資料を同一blobで保管。元パスに互換Stubは置かない。本文中のActive・命令・旧試験Gateは歴史記述 |
 | [ARC-007の旧Thread-End](ARC-007/thread-end/README.md)・[旧Thread Index Craft](ARC-007/_thread-index/README.md)・[旧Mission Craft](ARC-007/_thread-mission/README.md) | [判断・27原本対応・出典・復元条件](../control-center/ARCHIVE.md#arc-007) → [保持するArk01分析](../ark-project/ark01/thread-index/README.md)・[Card](../ark-project/ark01/mission-card/README.md) | 三ディレクトリ27原本を同一blobで保管。通常実行入口は退役し、当時の命令・未完状態・元住所は歴史記述として保持。元パスにStubを置かず、旧Bootの互換動作は保証しない |
 | [ARC-008の初穂形成史](ARC-008/dots/records/2026/20261001-first-fruit.md) | [理由・同一blob・固定snapshot・復元対応](../control-center/ARCHIVE.md#arc-008) → [現役Actorログ](../dots/logs/README.md) | 固有の命名・Humanの意味・訂正を一原本のまま保管。元recordsにStubを置かず、保存本文の旧相対リンクは固定snapshotから辿る |
+| [ARC-009の旧Note六原本](ARC-009/_note/README.md) | [退役理由・六原本対応・保存価値・証拠・復元](../control-center/ARCHIVE.md#arc-009) | AI分担・GitHub運用観測・Mission設計・Reviewの原本を同一blobで保管。現役汎用棚を退役し、旧命令・metadata・相対リンクは当時の記述として読む。元パスにStubを置かない |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -58,4 +59,4 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.7.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.8.0

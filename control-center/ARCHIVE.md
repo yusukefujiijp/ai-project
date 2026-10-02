@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.7.0"
+version: "0.8.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-02"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.7.0"
+updated: "2026-10-03"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.8.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -541,4 +541,80 @@ Plan-onlyで調査・計画提示した後、Humanは「Very Good! Execute GitHu
 
 実装・技術検証・公開証拠は[STR-008](changes/STR-008-actor-logs-and-preserved-history.md)とそのGit履歴へ接続する。配置の切替と長期の負担軽減・Future AIの実利用は別の確認である。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.7.0
+## ARC-009
+
+**旧 `_note/` の六原本を同一blobで保管し、現役の汎用Note棚を退役させる。知恵の保存・再利用と、現在の運用指示を分ける案件。** Humanの実行承認済み。保存後の確認結果は§Gに記録する。
+
+### A. 判断の形成・承認・今回の担当
+
+Ark27:07で、Humanは `_note/` を「活用しようと思ったが上手くいかなかった」と報告し、アーカイブ案と、方法を改善して残す可能性の双方を検討するよう求めた。当初は「まだ実装せず」というPlan-onlyだった。ARC-007の三ディレクトリに対する承認を `_note` へ流用せず、提案段階として保持した。その状態は[当時のBoard受領記録](../board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07.md)にも残る。
+
+2026-10-03 JST、Humanは `_note` 検討への再接続と残り利用枠の活用を求めた。Ark27:07は六本文・参照・現行AGENTS・Dotsの所有範囲を照合し、六原本の同一保存と五文書の限定整合を具体化した。その後、Humanは「OK！Very Good! 実行して下さい！」および「Execute GitHub OK!」「Human Seal OK!」と承認した。今回の変更はこの承認に基づく。上記は本会話の短い引用と編集要約であり、未確認の会話URLや発言の秒時刻は補わない。
+
+- **意味・範囲の承認者**：YusukeJP。
+- **実装・結果統合担当**：Ark27:07のCurrent AI。読取専用の独立レビュー担当は参照・保管境界を点検し、書込みは統合担当のみが行う。
+- **対象**：下記六原本の移動と、Root README・本書・PLAN・__archives索引・STR-001の案内／証拠リンク。別の整理候補の実装は含まない。
+- **併せて受けた別成果物の依頼**：実行後の盤面から、Token Reset後のGitHub整理整頓の指針を一つのMarkdownへ保存する。これは時点付きの再接続資料であり、Reset操作・新Thread移行・候補全件の実行承認ではない。
+- **GitHubの名義・保存時刻・Remote観測**：実施後の§Gで、意味承認・AI担当とは別に記録する。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・整理・文書はKeliであり、HumanのCorrection・STOP・Final Sealと適用Guardを保持する。ChatGPT長期メモリを本案件のSourceや保存対象にしていない。
+
+### B. なぜ現役配置を退役させるか
+
+確認基点は[main snapshot 5badd3a](https://github.com/yusukefujiijp/ai-project/tree/5badd3ab3bbface75a4663c5d03116adae7b0323)。六ファイル、合計70,601 bytesが存在した。READMEのCurrent Notesは五本文のうち一件だけを案内する。本文には条件付きの観測・有用な方法と、特定モデルの固定分担、main一律優先、操作ごとの再承認等の古い運用指示が混在している。これらを現行AGENTSの委任・継続・復旧契約より上位に置かない。
+
+Humanの「うまくいかなかった」という評価と、上記の文書上の不整合はConfirmedとして区別する。低い利用頻度や失敗原因の全体を測定したわけではない。「どの依頼で読み、何の判断に使い、どこで更新するかという接続が弱い」という原因解釈はAIのCandidateである。
+
+維持するなら索引の補完、観測と現行指示の分離、読取条件・更新担当、AGENTS／Skill／Project原本との責務整理が必要になる。現時点では、その保守を必要とする独立した具体用途を確認していない。既存の所有先と並行する総合棚を再建するより、原本と再発見の入口を保存する判断を採用した。古さ、六件という数、検索結果の少なさだけを退役理由にはしない。
+
+Dotsの[lessons契約](../dots/README.md#5-dotsの学びを次の判断へ戻す)はDots自身の仕事から得た条件付き学びを所有する。旧Noteを一括輸入すると、異なる経験の観測者や適用条件を混同し得るため、今回は移植しない。必要になった知恵を出典付きで使う余地は保持する。
+
+### C. 保存する知恵と再利用の入口
+
+| Node | Edge | 保存価値と現在への適用境界 |
+|---|---|---|
+| README | Noteの身分 → 現行所有先との区別 | 判断材料は自動権限ではない。旧汎用保存先の指定はHistorical |
+| AI Multi Production | 工程分担 → Humanの集中・統合責任 | 工程を分ける知恵を保持。モデル名による固定の優劣・役割を現在へ流用しない |
+| ChatGPT GitHub | 保存 → 再取得 → 内容欠落検出・回復 | 保存と検証をつなぐ。main一律規則・再承認の旧条件は現行AGENTSと区別 |
+| Fable5 Mission | 野心＋制約 → 成果・限界・次Action | 終了済み目的の混入を防ぐ。過去の投稿本数・監査制限を今のGateにしない |
+| Fable5 Review | 外部指摘 → 採用・不採用・保留 | レビューを機械的採用せず必要な修正を判断。特定モデルの恒久的必須工程にはしない |
+| GitHub Bottleneck | 条件付き成功・失敗 → 次の操作判断 | 操作・観測・回復を分ける。当時のConnector挙動を現行環境の保証にしない |
+
+この表は原文を置換する要約や、新しい共通運用規則ではない。読み直す際の問いを示す入口である。全知恵のSkill化・Canonical化をアーカイブの前提にせず、原本へ戻れるまま必要時に再検討する。
+
+### D. 六原本の対応と同一性
+
+| 元パス | 保存先 | 保存するblob | bytes |
+|---|---|---|---:|
+| `_note/README.md` | [保管原本](../__archives/ARC-009/_note/README.md) | `96999cba0c375d7115c10b7383bd2f2c235681f1` | 6,155 |
+| `_note/ai-multi-production_note.md` | [保管原本](../__archives/ARC-009/_note/ai-multi-production_note.md) | `faf6ebd02d6db8074f626508992f4b40235a35b2` | 11,605 |
+| `_note/chatgpt-github_note.md` | [保管原本](../__archives/ARC-009/_note/chatgpt-github_note.md) | `3853dec1bdd154c03aaf72fe3510ba5cdbdb73de` | 19,380 |
+| `_note/fable5-mission_note.md` | [保管原本](../__archives/ARC-009/_note/fable5-mission_note.md) | `1bd89fc6991f3c35f6cdeae3a4614eac75b1e4a4` | 13,389 |
+| `_note/fable5-review_note.md` | [保管原本](../__archives/ARC-009/_note/fable5-review_note.md) | `15de19cffc3b8365cd6aa6c06c6f78a55e3d75b7` | 11,259 |
+| `_note/github-bottleneck_note.md` | [保管原本](../__archives/ARC-009/_note/github-bottleneck_note.md) | `a71464c1727966447d65bbc79d7bcad4cb24d520` | 8,813 |
+
+全原本のmodeは100644。本文・改行・旧canonical_path・active等のmetadata・過去の命令を改変せず、同じblobを新住所へ参照する。元の `_note/` にStub・互換原本・新READMEを残さない。六原本の保管を、当時のMissionが完了・失敗・中止した証拠へ変換しない。
+
+### E. 現役案内・歴史証拠・参照の区別
+
+1. **Root README**：現役のNote棚への案内を本案件へ接続し、保存価値とHistorical身分を明示する。
+2. **本書・PLAN・__archives索引**：判断・承認・保存実体を同じ案件へつなぐ。PLANと索引に独立した承認・通信状態台帳を作らない。
+3. **STR-001**：file-manifestの `_note/README.md` リンクを[当時の実装commitの本文](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/_note/README.md)へ固定する。直接再取得したblob `bca4449a8a76c5099a24e5fa45495e0dedf7b9a9` は表の証拠と一致する。今回保存する最新版 `96999cba0c375d7115c10b7383bd2f2c235681f1` と同一視しない。元パス名・当時のblob・担当・結果を保持する。
+4. **保持する歴史**：PLANの `cc560d1` 固定診断、日付付きRepository Review、Ark21 sandbox、Boardの当時の `_note` 提案段階の記録は塗り替えない。旧 `g_global/chatgpt-github.md` の歴史例など、この移動が新たに壊す参照ではない事項を一括修正しない。
+
+調査は `_note/`・五実ファイル名・関係する入口を用いたRepository検索と原文照合である。Current07 Handoffの必須核に六Noteへの直接必須参照は検出されなかった。全Git履歴・全外部consumer・全AIの実行環境を網羅した監査ではなく、未知のconsumerの不存在は保証しない。独立レビューでも同じ限定範囲の参照・保存境界を点検した。任意のblob文字列補助検索の一件はrate limitで未確認だが、必須本文・実ファイル名・入口の確認不足ではない。
+
+### F. 当時のリンク・復元・再検討
+
+保管README内の `../prompts/`・`../control-center/`・`../__archives/` 等は元配置基準であり、保管先から同じようには解決しない。現行リンクとして成功と報告しない。[移動前の_noteフォルダ](https://github.com/yusukefujiijp/ai-project/tree/5badd3ab3bbface75a4663c5d03116adae7b0323/_note)と[README全文](https://github.com/yusukefujiijp/ai-project/blob/5badd3ab3bbface75a4663c5d03116adae7b0323/_note/README.md)から、その時点の参照関係を辿れる。現在の権限・協働方法はAGENTSや該当所有資料へ戻る。
+
+復元を検討する条件は、具体的な現役consumer、保存した知恵を繰り返し使う独立用途、または今回の退役で生じた実害が確認された時。現在の目的・依存・Human判断に照らし、必要な原本を同じblobで元のパスへ戻し、案内を整合できる。main全体を過去commitへresetせず、後続のHuman・他AIの変更を保持する。復元可能性は旧方式の自動再採用承認ではない。
+
+今回の完了条件は、六原本同一保存、元パス退役、五文書の限定整合、保存後のRemote確認と対象外保持である。旧Bootの互換動作、他AIの実読解、UI変更、長期の探索負担軽減、生活効果の実証は別である。
+
+### G. 保存後確認
+
+実装・Remote再取得の後、確認できたcommit・Tree・時刻・本文一致・対象外保持をここへ追記する。保存前の予定を検証済みとしない。記録自身の自己SHAは埋め込まず、最終保存も再取得する。
+
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.8.0

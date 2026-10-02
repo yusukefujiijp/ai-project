@@ -1,16 +1,16 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.10.0"
+version: "0.11.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
 status: "Prior ARC/STR evidence retained / STR-003 foundation migration published and remotely verified; actual Target/UI/field evidence separate"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-01"
+updated: "2026-10-03"
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.10.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.11.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -75,6 +75,12 @@ Humanは、別Queryとの分割は短期の起動には利益があったが、�
 2026-09-29、HumanはGitHub整理整頓への集中を続け、`thread-end/`・`_thread-index/`・`_thread-mission/`を具体的な対象として選んだ。Plan-onlyのLiving Review後、27原本の保管と現役案内・出典の限定整合を承認した。過去の候補順位や固定参照移行を、今回の前提Gateにしない。
 
 旧方式と作られた成果を区別し、Ark01の分析26件・manifest・既存Mission Cardは保持する。原本の保存、現在の推奨入口の退役、出典接続、旧Bootの互換動作も区別する。27原本の移動・案内・出典整合は保存・Remote確認まで完了した。実装・確認・復元条件の正本は[ARC-007](ARCHIVE.md#arc-007)。本PLANでは案件の承認やThread状態を二重管理しない。
+
+### 1.6 Ark27:07の旧Note棚退役とARC-009
+
+2026-10-03 JST、Humanは、提案段階で保持していた `_note/` 六原本の同一保存と五文書の限定整合を承認した。知恵を捨てる判断ではなく、過去の観測・方法と現在の運用指示が混在する現役配置を退役させる判断である。Dots lessonsへの一括移植や新しい汎用Note棚の作成は行わない。
+
+保存する知恵、原本対応、当時の証拠を指すSTR-001固定リンク、承認・実施・Remote確認・復元条件は[ARC-009](ARCHIVE.md#arc-009)が所有する。本PLANの旧D01診断と固定snapshotは当時の履歴として保持する。別の整理候補は、この案件の承認から自動実行しない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -463,5 +469,5 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.10.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.11.0
 
