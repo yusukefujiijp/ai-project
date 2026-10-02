@@ -1,0 +1,116 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark28-02-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-02",
+  "updated": "2026-10-02",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark28:02",
+    "canonical_path": "ark-project/ark28/ark28-02/task-records.json",
+    "reported_date": "2026-10-02",
+    "timezone": "Asia/Tokyo",
+    "time_note": "日付とtimezoneは会話に付随する日時情報に基づく。引用本文に日時を補っていない。想起項目の希望であり、タオルを用意した・巻いた時刻の報告ではない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Current HumanがArk Recall Portalへ出勤時の場面を追加するよう依頼。先行するタオルの想起希望を出典付きで登録する範囲。記録は実行命令・Current Runtime・自動通知の設定ではない。",
+    "source_access": "同じArk28:02内の本人発言を連続した原文として同梱する。外部会話URL・メッセージIDは未提供。"
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "出勤時に首に巻くタオルを想起したい希望",
+      "出勤時をPortalの呼出し場面へ追加する依頼と、現在の種類・仕様を知りたい希望"
+    ],
+    "excludes": [
+      "Ark28:02のその他の対話・経験",
+      "タオルの用意・着用・携帯の実施結果",
+      "全出勤持ち物の一覧"
+    ],
+    "note": "今回のPortal追加に必要な発言のみを選択収録。Thread全体の完全記録ではない。"
+  },
+  "sources": [
+    {
+      "id": "commute-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 2026-10-02 / 出勤時のタオルを提示した本人発言",
+      "excerpt": "出勤時ark-recall-portalとして、首にまくタオル",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "commute-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 2026-10-02 / 出勤時の追加とPortalの種類・仕様の説明を依頼した本人発言",
+      "excerpt": "ark-recall-portalの起動(言い方？)に出勤時も入れて下さい！\n今何種類くらい起動(言い方？)例えば、就寝前とか休日前等のKeyはいくつあるか？\n仕様を忘れている部分もあるので詳細明確に精密に教えて下さい！わかりやすい詳細明確な精密的理由や具体例を添えて教えて下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "commute-towel-recall",
+      "kind": "practice_statement",
+      "label": "出勤時に首に巻くタオルを思い出す",
+      "description": "本人が出勤時のArk Recall Portalの想起内容として『首にまくタオル』を提示した。準備・着用・携帯の実施済みという報告ではない。",
+      "scope": "2026-10-02の本人の想起希望。用途・枚数・具体的な巻き方や、出勤以外への適用は指定されていない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "commute-s01"
+        ],
+        "note": "本人が想起内容を提示したことを確認。実施・効果の確認ではない。"
+      }
+    },
+    {
+      "id": "commute-scene-addition",
+      "kind": "decision",
+      "label": "出勤時をPortalの呼出し場面に加える",
+      "description": "本人が『起動』という表現を用いて出勤時の追加を依頼し、就寝前・休日前等を例に、現在の種類と仕様の説明を求めた。",
+      "scope": "Ark Recall Portalの場面と出典付き想起項目の追加。時刻での自動起動・通知設定の依頼ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "commute-s02"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "commute-scene-contains-towel",
+      "from": "commute-scene-addition",
+      "to": "commute-towel-recall",
+      "relation": "contains",
+      "scope": "出勤時の場面に、先行発言で示された首に巻くタオルの想起希望を結び付ける。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "commute-s01",
+          "commute-s02"
+        ]
+      }
+    }
+  ],
+  "open_questions": [],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-02",
+        "reason": "Humanの依頼に基づき、出勤時のタオル想起希望と場面追加依頼を初回収録。",
+        "source_refs": [
+          "commute-s01",
+          "commute-s02"
+        ]
+      }
+    ]
+  }
+}
