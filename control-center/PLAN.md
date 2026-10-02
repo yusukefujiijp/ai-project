@@ -82,6 +82,8 @@ Humanは、別Queryとの分割は短期の起動には利益があったが、�
 
 保存する知恵、原本対応、当時の証拠を指すSTR-001固定リンク、承認・実施・Remote確認・復元条件は[ARC-009](ARCHIVE.md#arc-009)が所有する。本PLANの旧D01診断と固定snapshotは当時の履歴として保持する。別の整理候補は、この案件の承認から自動実行しない。
 
+六原本の保管と五文書の限定整合は、実装commit `02e9779fc628dbfe7ee9ed08275c6b839407ef0e` で公開し、11本文のRemote一致と対象外407ファイルの保持を確認した。同じHuman依頼による実行後の[2026-10-03整理指針](20261003-cleanup-direction.md)は、時点付きの盤面・候補・再開条件を示す。最新の案件状態を二重管理せず、候補の実装を自動開始しない。
+
 ## 2. 調査基点・根拠・時間
 
 調査基点は[commit cc560d1](https://github.com/yusukefujiijp/ai-project/commit/cc560d14284d99fd9b8a6e6aa896843e73b0c53d)、Tree `099f41ea407e6d8549c9c93a192cae2e0f16d678`。GitHubの再帰Treeは `truncated: false`、308ファイル。初版保存前にもmainがこのcommitであることを確認した。
