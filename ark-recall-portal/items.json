@@ -1,13 +1,13 @@
 {
   "format": "ark-recall-items",
   "format_version": "v001",
-  "revision": 2,
-  "updated": "2026-10-01",
+  "revision": 3,
+  "updated": "2026-10-02",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Resetと、2026-10-01 Ark28:01で追加登録された就寝前のフットマッサージ想起希望",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望",
     "complete_project_history": false,
-    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。"
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。"
   },
   "scenes": [
     {
@@ -21,6 +21,10 @@
     {
       "id": "bedtime-care",
       "label": "就寝前に思い出したいケア"
+    },
+    {
+      "id": "commute-preparation",
+      "label": "出勤時・出勤前の準備"
     }
   ],
   "items": [
@@ -340,6 +344,56 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "本人の追加希望と公式製品情報から作った想起用の編集要約。activeは想起候補でありTaskの未完了・実施・義務ではない。具体的な製品使用は手元の表示とBody/Medical/Sleep Guardに合わせる。就寝前の他の希望は経験索引§3.9の原本経路も確認する。"
+    },
+    {
+      "id": "commute-neck-towel",
+      "scene_ids": [
+        "commute-preparation"
+      ],
+      "label": "首に巻くタオル",
+      "recall": "出勤準備・出勤時に、首に巻くタオルを忘れていないか確認するために思い出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "出勤時",
+        "出勤前",
+        "出勤準備",
+        "仕事に行く",
+        "仕事に出る",
+        "そろそろ出勤",
+        "家を出る前",
+        "首に巻くタオル",
+        "首にまくタオル"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Humanが出勤時に思い出したい内容を尋ねた時、または出勤準備・仕事へ出る場面の合図で案内する時"
+        ],
+        "do_not_assume": [
+          "登録・仕様相談そのものが今まさに出勤する合図",
+          "今回のタオル準備・着用・携帯の完了",
+          "タオルの用途・種類・枚数・巻き方",
+          "出勤以外の散歩・外出にも適用すること",
+          "固定時刻の自動起動・通知設定"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-02/task-records.json",
+          "record_id": "ark28-02-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "commute-towel-recall",
+            "commute-scene-addition"
+          ],
+          "source_ids": [
+            "commute-s01",
+            "commute-s02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "本人の想起希望と場面追加依頼から作った編集要約。activeは想起候補であり、タオルを用意した・巻いた・携帯したという実施報告ではない。"
     }
   ]
 }
