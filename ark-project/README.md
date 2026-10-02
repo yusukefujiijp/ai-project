@@ -34,26 +34,30 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-01"
-last_reality_reviewed: "2026-09-27"
-route_review_base_commit: "e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2"
-route_review_scope: "Human-authorized Ark27:06→07 thread continuation; update Main route only after triad remote verification; preserve chapter bindings, existing Ark28 support and unrelated work"
-updated_reason: "STR-003: Human-authorized foundation migration; separate current routes from historical preparation and preserve Ark28:02 support."
+updated: "2026-10-03"
+last_reality_reviewed: "2026-10-03"
+route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
+route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
+updated_reason: "07→08 approved continuation navigation update; preserve v009 routing policy, chapter v002, STR-003 history, existing support and concurrent work."
 foundation_migration_base: "d574927dd1671e2acec20e1a6c17f569ae23322f"
 foundation_change_record: "../control-center/changes/STR-003-persistent-collaboration-foundation.md"
-prior_main_route_review_scope: "The 2026-09-27 metadata below remains historical preparation evidence, not a current validation claim."
+prior_main_route_review_scope: "The following historical_main_route_preparation retains the 2026-09-27 observations; foundation migration evidence remains with STR-003."
+historical_main_route_preparation:
+  reviewed: "2026-09-27"
+  base_commit: "e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2"
+  scope: "Human-authorized Ark27:06→07 thread continuation; update Main route only after triad remote verification; preserve chapter bindings, existing Ark28 support and unrelated work"
 support_route_reviewed: "2026-09-29"
 support_route_review_base_commit: "cf9223dd28277c6eefbdd1fc73974e32a65c5578"
 support_route_review_scope: "Human-authorized Ark28:01→02 THREAD_CONTINUE; triad reread before changing support routing; actual Target and Human last-mile remain separate"
 historical_reviewed_scope_2026_09_09: "AI-first router contract / Ark23 Core v005 / Ark23:15 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / BBP / B-Gate Fast-Prune / Task化能力 / One-Table v002 / Ark24 frozen-trigger guard"
-current_front_line_ark: "ark-project/ark27/ark27-07/README.md"
-current_front_line_handoff: "ark-project/ark27/ark27-07/handoff.md"
-current_front_line_runtime: "ark-project/ark27/ark27-07/README.md"
-current_front_line_state: "ark-project/ark27/ark27-07/state.json"
+current_front_line_ark: "ark-project/ark27/ark27-08/README.md"
+current_front_line_handoff: "ark-project/ark27/ark27-08/handoff.md"
+current_front_line_runtime: "ark-project/ark27/ark27-08/README.md"
+current_front_line_state: "ark-project/ark27/ark27-08/state.json"
 current_support_chapter: "ark-project/ark28/README.md"
 current_support_handoff: "ark-project/ark28/ark28-02/handoff.md"
 current_main_theme: "ChatGPT6 Astraへの移行"
-current_evidence: "Current07 v002 migration and its actual verification are owned by STR-003 and07 State. Earlier06→07 preparation, Target reception and Human UI remain separate observations."
+current_evidence: "Current08 preparation derives from verified07 harvest. Source07 State progress.next_transition owns publication and reread evidence; actual08 reconstruction and Human UI are separate. STR-003 owns the earlier07 v002 foundation migration."
 historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earlier B-Gate detection / Ark23:15 triad remote verified / then-unobserved Fast-Prune result"
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
@@ -106,15 +110,17 @@ write_default: "Do not write without current Human authority."
 
 ### 0.1 Current Front-Line Resolution
 
-**MainはArk27、現在のThread入口は[Ark27:07 Handoff](ark27/ark27-07/handoff.md)。Supportは[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。** 有効な最新Human指定があれば、その対象とModeを優先して解決する。Supportの意図・Main所有をこの基盤改訂で変更しない。
+**MainはArk27、現在のThread入口は[Ark27:08 Handoff](ark27/ark27-08/handoff.md)。Supportは[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。** 2026-10-03のHuman承認による07→08の同章継続である。有効な最新Human指定があれば、その対象とModeを優先して解決する。Supportの意図・役割を変更せず、Thread/UI作成やTarget受入れ成功をこの案内だけで認定しない。
 
-Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への案内を所有し、旧01を現在地にしない。Handoffはv002の必須核と条件付きSource、[07 Runtime](ark27/ark27-07/README.md)は協働の場、[07 State](ark27/ark27-07/state.json)は可変の現在地を所有する。実際の継続入力があればそれを受け取り、確認済みBootを理由なく再演しない。
+Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への案内を所有し、旧01を現在地にしない。[08 Runtime](ark27/ark27-08/README.md)は協働の場、[08 State](ark27/ark27-08/state.json)は可変の現在地、08 Handoffは必須核・今回の追加Source・条件付きSourceと受入れ条件を所有する。本文初版v001は継承する協働契約系v002と区別する。実際の継続入力があれば受け取り、確認済みBootを理由なく再演しない。
+
+07の収穫と今回の準備・保存結果は[Source07 State](ark27/ark27-07/state.json)へ。08自身の読解・再構成、HumanのThread作成・貼付・Title操作、実利用効果は別の観測である。日付付き整理指針内の07案内は当時の住所であり、08のBootを07へ戻す命令ではない。
 
 2026-10-01 JSTのHuman承認により、cold-start中心の入口を、現在目的に応じた継続遂行・委任・復旧へ改訂した。Root、Teshuvah、Human Foreground One、品質Correction、Human AuthorityとGuardは保持する。Astra移行はArk27成立の第一義であり、現在の個別Missionを過去の初期テーマへ戻さない。『AI-New Era: From Probability to Certainty』は、権限・進捗・根拠・確認済み成果を明確にする方向として[ARK.md §7](../ARK.md#7-from-probability--random-to-certainty--order)へ接続する。無謬性・全知・常時稼働の宣言ではない。
 
 **互換境界。** [STR-003](../control-center/changes/STR-003-persistent-collaboration-foundation.md)は章／07の明示的版移行と基盤変更を所有する。移行前のDomain、章、07三点セットと共通契約は[固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/d574927dd1671e2acec20e1a6c17f569ae23322f)で辿れる。01–06の過去資料は変更していない。旧HandoffのCurrent-main固定SHA条件を、新版の成功へ黙って読み替えない。旧契約を明示された場合は、その履歴再構成、現行main上で非対応となる条件、新しいCurrent入口を区別する。新しい明示的な移行権限があればその範囲を進める。
 
-**継承された成果と残点。** 06の整理成果、05の品質Correction、後続ARC-007を含む案件の最新状態は[control-center PLAN](../control-center/PLAN.md)、[ARCHIVE](../control-center/ARCHIVE.md)、[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md)、[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)と各経験原本が所有する。必要な案件へ選択的に進み、全台帳を全依頼の必須Bootにしない。D04の旧章直入口は今回の移行対象であり、ARC-002元パス除去とGraph／One-Table固定参照移行は別Branchのまま。旧Plan Mode採用試験のNOT RUNを現在の必須Gateに戻さない。
+**継承された成果と残点。** 06の成果・05の品質Correction、後続ARC-007／009等は[control-center PLAN](../control-center/PLAN.md)、[ARCHIVE](../control-center/ARCHIVE.md)、[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md)、[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)と各原本が所有する。D04はSTR-003で基盤移行済み、ARC-002元パス除去とGraph／One-Tableは別の残点。旧Plan採用試験NOT RUNは目的変更で終了した履歴であり、新しい必須Gateにしない。[整理指針](../control-center/20261003-cleanup-direction.md)の時点付き判断と、その後の[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)によるlesson JSONL採用を区別する。必要な案件へ選択的に進み、全台帳を全依頼の追加Bootにしない。
 
 **Support。** [Ark28章](ark28/README.md)と[Ark28:02 State](ark28/ark28-02/state.json)が支援の役割・準備・受入れ・到達・効果を所有する。B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等の柔軟な受け皿を保持する。Main Threadが進むたびに支援章を新設せず、隠れた同期・自動Main移管・支援側意図の変更をしない。章ペアの準備方針は§4.1。
 
@@ -459,7 +465,7 @@ AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 Ark99 is retired and absorbed into Ark00.
-Ark27:07 remains Main. Its v002 current continuity contract and chapter v002 are an explicit Human-authorized version migration; STR-003 owns implementation evidence. Earlier Source06 preparation, current reconstruction and Human UI are separate. Section 0.1 owns general routing.
+Ark27:08 is the Current Main continuation entry prepared fromArk27:07 under Human authority. Source07 State owns preparation/remote receipts;08 must reconstruct its own context. Chapter v002 and the v002 continuity family remain; STR-003 preserves the earlier07 migration. Target reception, Human UI and field effects are separate. Section 0.1 owns general routing.
 Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
 The Ark23 historical field preserves its then-unknown outcomes; recover current observations from their owning records.
