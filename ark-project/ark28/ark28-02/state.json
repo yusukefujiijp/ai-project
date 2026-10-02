@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-09-29",
     "updated": "2026-10-03",
     "canonical_path": "ark-project/ark28/ark28-02/state.json",
     "date_scope": "Preparation date in Asia/Tokyo; not actual UI creation or a Human Task time",
-    "change_reason": "Preserve observed Source02 collaboration and Portal release; prepare the authorized02→03 continuation while keeping original identity and fixed bindings."
+    "change_reason": "Record actual candidate verification and main reread of the authorized Ark28:02→03 preparation; preserve Target reconstruction and Human UI as unobserved."
   },
   "identity": {
     "source": "Ark28:01",
@@ -127,10 +127,10 @@
     }
   },
   "now": {
-    "phase": "SOURCE_PREPARED_FOR_ARK28_03_PUBLICATION",
+    "phase": "ARK28_03_SOURCE_PREPARATION_COMPLETE",
     "support_purpose": "Ark27 Mainを保持し、想起と現在地を含む柔軟な協働を継続する。Current Requestに応じて扱う枝を選ぶ。",
-    "latest_source_boundary": "朝の聖別・優先順位・10/01休息の好結果と未確認、熱傷報告、出勤時想起、季節Portal保存成果を原本revision3とHarvestへ保存。02→03準備が現在の承認Task。",
-    "first_legal_move": "COMPLETE_APPROVED_CONTINUATION_PREPARATION_AND_VERIFY",
+    "latest_source_boundary": "Source原本・Harvest、Target三点セット、章とDomainのSupport入口を保存・再取得確認済み。Main08の並行変更を保持。実際の03再構成とHuman UIは別の未観測段階。",
+    "first_legal_move": "HAND_OFF_PREPARED_TARGET_AND_RECEIVE_HUMAN_REVIEW",
     "existing_input": "2026-10-03の計画に続く実行承認を受領済み。再承認や再入力は不要。",
     "boot_only": "Return evidence-backed reception after all gates; then Human Review. No automatic next task.",
     "live_b_gate": "NOT_REPORTED_FOR_THIS_TARGET",
@@ -376,14 +376,78 @@
         "ark-project/README.md"
       ],
       "remote_verification": {
-        "status": "PENDING_PUBLIC_MAIN_REREAD",
-        "policy": "Verify the full candidate commit before moving main, then reread all published paths. Record actual results here afterward; no self-hash."
+        "status": "REMOTE_VERIFIED",
+        "verified_date": "2026-10-03",
+        "timezone": "Asia/Tokyo",
+        "source_snapshot_commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+        "target_publication_commit": "b9e7d6cec4fd670ccceb2974788f3a0292783dfd",
+        "candidate_verification": {
+          "commit": "b9e7d6cec4fd670ccceb2974788f3a0292783dfd",
+          "paths": [
+            "ark-project/ark28/ark28-02/state.json",
+            "ark-project/ark28/ark28-03/README.md",
+            "ark-project/ark28/ark28-03/handoff.md",
+            "ark-project/ark28/ark28-03/state.json",
+            "ark-project/ark28/README.md",
+            "ark-project/README.md"
+          ],
+          "result": "6 of 6 exact content and blob matches before moving main"
+        },
+        "published_reread": {
+          "ref": "main",
+          "publication_commit": "b9e7d6cec4fd670ccceb2974788f3a0292783dfd",
+          "result": "8 of 8 exact content and blob matches after publication",
+          "artifacts": [
+            {
+              "path": "ark-project/ark28/ark28-02/task-records.json",
+              "blob_sha": "9e495023ca59a3ba48dbfe42f90d258deb9c18dd"
+            },
+            {
+              "path": "ark-project/ark28/ark28-02/harvest.md",
+              "blob_sha": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5"
+            },
+            {
+              "path": "ark-project/ark28/ark28-03/README.md",
+              "blob_sha": "1c34c8ab5c8ee57a3f93f5cd814ab602272e6cb2"
+            },
+            {
+              "path": "ark-project/ark28/ark28-03/handoff.md",
+              "blob_sha": "aca7fa0ffd125e52b9d1503e81cc0b444373108d"
+            },
+            {
+              "path": "ark-project/ark28/ark28-03/state.json",
+              "blob_sha": "53bb31c51c99620b40f30af33ab1d9ecb15f778b"
+            },
+            {
+              "path": "ark-project/ark28/README.md",
+              "blob_sha": "620a266576f140a9da171c8e3d89cab805902433"
+            },
+            {
+              "path": "ark-project/README.md",
+              "blob_sha": "025440a4d4f9d32643fe46fb7658bd14d81bb812"
+            }
+          ],
+          "source_state_observed": {
+            "path": "ark-project/ark28/ark28-02/state.json",
+            "state_id": "ARK28_02_CURRENT_STATE",
+            "schema_version": "v001",
+            "revision": 2,
+            "eof_sentinel": "ARK28_02_STATE_EOF_v001",
+            "note": "Publication snapshot before this receipt update; no self-hash for the current receipt."
+          }
+        },
+        "main_route_preserved": "Ark27:08 Current Main entry; role and ownership remain Ark27",
+        "immutable_source_bindings_preserved": {
+          "runtime": "e28a1ac9673c10f27d284bce1e0773d86d66802d",
+          "handoff": "4fb17d3e50b4a424e83ee64939134b126a20a213"
+        },
+        "receipt_policy": "This current mutable receipt stores earlier observed publication results. Its own final reread is performed after saving, outside its self-content. No recursive live-blob pin."
       },
       "validation": {
         "source_record_schema": "PASSED_EXACT_V001_VOCABULARY_CHECK",
         "source_record_ids_and_refs": "PASSED",
         "prior_sources_preserved": true,
-        "triad_and_routing": "PASSED_SOURCE_SIDE_STATIC_AND_MEANING_REVIEW",
+        "triad_and_routing": "PASSED_SOURCE_SIDE_STATIC_AND_MEANING_REVIEW_AND_REMOTE_MATCH",
         "independent_transition_reader": "NOT_PERFORMED",
         "boundary": "Source preparation checks do not certify actual receiving-AI reconstruction or UI.",
         "checks": [
@@ -409,7 +473,13 @@
       "actual_target_reconstruction": "NOT_OBSERVED",
       "human_thread_and_access": "NOT_OBSERVED",
       "human_title_application": "NOT_OBSERVED",
-      "field_effects": "NOT_OBSERVED_FOR_TARGET03"
+      "field_effects": "NOT_OBSERVED_FOR_TARGET03",
+      "human_handoff": {
+        "status": "COPY_SURFACES_PREPARED; delivery and actual UI/reception are separate",
+        "title": "Ark28:03_2026/10/03: \"主の完全勝利: 朝の聖別と経験の想起を育てる継続協働\"",
+        "handoff_url": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-03/handoff.md",
+        "required_human_action": "Create/open the intended new Thread, use the exact title and paste the supplied startup message; actual receiving AI evaluates R1–R8."
+      }
     },
     "revision_history": [
       {
@@ -426,6 +496,12 @@
           "transition-s02",
           "portal-release-s01"
         ]
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-03",
+        "reason": "Candidate six files and published eight paths reread with exact equality; record SOURCE_PREPARED/REMOTE_VERIFIED only, without certifying actual Target03 boot or UI.",
+        "publication_commit": "b9e7d6cec4fd670ccceb2974788f3a0292783dfd"
       }
     ]
   },
