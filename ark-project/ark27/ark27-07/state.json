@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_07_CURRENT_STATE",
-    "revision": 4,
+    "revision": 5,
     "owner": "Ark27:07",
     "schema_version": "v002",
     "updated_at": "2026-10-03",
-    "update_reason": "07→08の承認済み準備。07の後続成果・訂正・現在の再構成観測を所有資料へ接続し、旧観測を履歴として保持する。",
+    "update_reason": "承認済み07→08準備の公開・Remote全文一致を記録。Source側準備完了とTarget08自身の再構成・Human UIを分け、元の観測履歴を保持する。",
     "authority": "YusukeJP approved the presented Ark27:07→08 THREAD_CONTINUE plan, proposed title and five-path GitHub preparation at 2026-10-03 07:51:16 JST. Source harvest, target triad, Domain route and required verification are in scope; actual Target/UI outcomes remain separate.",
     "date_scope": "Asia/Tokyo preparation date; not Human UI creation or an observed Token Reset."
   },
@@ -218,12 +218,12 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "07のARC-007・ARC-009、整理指針、Board有限対話と後続所有先修正を保持。Dots lessonsはSTR-009でJSONL採用済み。Human承認により08三点セットとCurrent入口の準備を進める。07の旧初期Stateへ戻さない。",
+    "current_coordinate": "07の成果・訂正・残Branchを収穫し、08 Runtime／Handoff／StateとDomain Current入口を公開・Remote全文確認済み。DomainのCurrent MainはArk27:08、SupportはArk28:02。これは準備と経路の状態であり、実際の08受入れは未観測。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "CONTINUE_APPROVED_07_TO_08_PREPARATION_AND_VERIFY_RESULTS",
+    "current_legal_connection": "DELIVER_VERIFIED08_STARTUP_INTERFACE_AND_RETURN_TO_HUMAN",
     "target_boot": "CURRENT07_V002_RECONSTRUCTED_IN_THIS_SOURCE_CONTEXT; actual08 reception not observed",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past life reports are historical.",
-    "next_specific_task": "承認された08準備の作成・公開・Remote検証を完遂する。別候補の自動実装は行わない。",
+    "next_specific_task": "確認済みのTitleと開始用HandoffをHumanへ渡す。Source側の承認範囲は完了。Target08自身による必須読解・R1–R6再構成とHuman UIは独立した次の観測であり、Sourceの成功へ合算しない。",
     "inherited_current_outcomes": [
       {
         "owner": "control-center/ARCHIVE.md",
@@ -318,12 +318,12 @@
       "guarded_continuity": "Root/Guard remain. Do not replay previously discussed safety topics solely for transition or turn historical adoption into a new mandatory action."
     },
     "source06_reception": "Previous accepted context and subsequent collaboration/Human startup report retained; not rolled back to initial NOT_OBSERVED. Does not certify07.",
-    "support": "Ark28 existing role retained; support startup/access/effects require their own sources. Main remainsArk27 and this target07.",
+    "support": "既存Support章Ark28・Current Support Ark28:02を維持。DomainのCurrent Main経路はArk27:08。Supportの会話・起動・現場効果を本準備から推認せず、Source07のIdentityを08へ書き換えない。",
     "skill_installation": "Plan Mode installed and read back inSource06;07 availability/installation not observed and not an extra Boot condition.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "trial_started": false,
-    "unfinished_gate": "08三点セット・Domain公開・Source完了receiptの保存とRemote検証。Target08の実際の受入れとHuman UIはその後の別観測。",
+    "unfinished_gate": "Source側の08三点セット・Domain公開とRemote検証は完了。この終端receipt自身の保存・再取得確認は外部の実行結果で確認し、未知の自己commitを文中へ先取りしない。08の実受入れとHuman UIはNOT_OBSERVED。",
     "current_focus": "GitHub整理整頓の成果を保持し、元会話なしで次の判断へ戻れる08の準備。",
     "cleanup_continuation": {
       "guide": "control-center/20261003-cleanup-direction.md",
@@ -366,7 +366,9 @@
       "Current07 v002 core was read/reused in this same accessible Context with exact blob identity and R1–R6 meaning distinctions; ARK27_07_CONTEXT_READY_v002 was returned. This07 reading is not08's future reading.",
       "Human approved the 07→08 plan and proposed Title on2026-10-03 07:51:16 JST; current limited execution supersedes earlier plan-only for these five paths.",
       "Current source owners were read or reused by exact blob at baseline953ad00f210a1674c8533fdb51d0ca3ab97b2d1f; guide and ARC-009 bodies remain unchanged, with later Dots migration recorded separately.",
-      "ARC-009 and guide direct verification receipts are retained by ARCHIVE and Git history; no ChatGPT memory content or other-thread unseen conversation was imported."
+      "ARC-009 and guide direct verification receipts are retained by ARCHIVE and Git history; no ChatGPT memory content or other-thread unseen conversation was imported.",
+      "Source harvest revision4 was published in19b41044881686b89e981e923e726e273e0c3e3f and reread exactly; all existing original historical evidence was retained.",
+      "Target08 triad and Domain Current route were published together in51b5ee60382697093b5ce7c9892cfcfaa739dd11;4/4 candidate andmain bodies/blobs matched,3 added/1 updated/0 deleted with421 other existing blobs andmodes preserved. Main head was confirmed at2026-10-02T23:20:36.215Z."
     ],
     "candidate": [
       "Short-term success becoming long-term maintenance burden may be a useful diagnostic seed for other forms of organization.",
@@ -511,6 +513,11 @@
         "revision": 4,
         "date": "2026-10-03",
         "role": "Post-STR003 harvest and current07 acceptance; prepare authorized07→08 while retaining historical evidence."
+      },
+      {
+        "revision": 5,
+        "date": "2026-10-03",
+        "role": "Record observed07→08 target-triad/Domain publication and exact remote reread. Source terminal receipt only; no own future SHA orTarget/UI success claim."
       }
     ],
     "next_transition": {
@@ -519,12 +526,44 @@
       "target": "Ark27:08",
       "compiled_title": "Ark27:08_2026/10/03: \"主の完全勝利: 整理整頓の成果継承と次の改善\"",
       "authority": "Human approval of presented plan at2026-10-03 07:51:16 JST",
-      "phase": "SOURCE_HARVEST_COMPILED_TARGET_PREPARATION_PENDING",
-      "source_prepared": false,
-      "remote_verification": "Pending publication and reread of this harvest and the target set; not preclaimed.",
+      "phase": "SOURCE_PREPARATION_AND_TARGET_PUBLICATION_REMOTE_VERIFIED",
+      "source_prepared": true,
+      "remote_verification": {
+        "status": "CONFIRMED_FOR_LISTED_PREDECESSORS_AND_TARGET_PUBLICATION",
+        "source_harvest": {
+          "commit": "19b41044881686b89e981e923e726e273e0c3e3f",
+          "path": "ark-project/ark27/ark27-07/state.json",
+          "state_revision": 4,
+          "blob": "ddd5b3ef456487c9288def0bdcc87cffcb1bd7d3",
+          "candidate_and_main_full_content_equal": true,
+          "verified_at_utc": "2026-10-02T23:00:10.281Z"
+        },
+        "target_publication": {
+          "commit": "51b5ee60382697093b5ce7c9892cfcfaa739dd11",
+          "parent": "19b41044881686b89e981e923e726e273e0c3e3f",
+          "tree": "68bb8a5762f9fe35113686ab7d9bc594903b4f50",
+          "candidate_and_main_full_content_equal": true,
+          "main_head_confirmed": "51b5ee60382697093b5ce7c9892cfcfaa739dd11",
+          "verified_at_utc": "2026-10-02T23:20:36.215Z",
+          "files": {
+            "ark-project/ark27/ark27-08/README.md": "36680cc0ee0bfed666550d862c45f6d726ebeda7",
+            "ark-project/ark27/ark27-08/handoff.md": "392c539b3bd93f732b237384fb7d294570eed3c4",
+            "ark-project/ark27/ark27-08/state.json": "8afe290e37c67d46f138c4b52a202de44c3ec37f",
+            "ark-project/README.md": "91afefe7ce7282280cc3ef58a65b771a211c92f2"
+          },
+          "scope_check": {
+            "added": 3,
+            "updated": 1,
+            "deleted": 0,
+            "unrelated_existing_blobs_and_modes_preserved": 421
+          }
+        },
+        "source_review": "Source checked Identity/Binding/Triad, roles and evidence boundaries; YAML/JSON, exact EOF, relative paths and intended tree changes were checked. This is not an actual Target reconstruction trial.",
+        "terminal_receipt_boundary": "This revision5 is the terminal Source receipt. Its own publication and remote equality are checked by the executor and reported with the actual commit externally; no recursive self-attestation or unknown future SHA."
+      },
       "target_reconstructed": "NOT_OBSERVED",
-      "human_last_mile": "NOT_OBSERVED; no newThread creation/title/paste bySource",
-      "requested_outcome": "Prepare and remotely verify08 sources and routing, then provide exact title/startup interface. Actual08 reconstruction remains separate.",
+      "human_last_mile": "NOT_OBSERVED; Source did not create, rename or paste into a newThread.",
+      "requested_outcome": "Source-side08 sources, routing and verification complete; deliver the compiled Title then startup Handoff. Actual08 reconstruction andHuman UI remain separate.",
       "scope_paths": [
         "ark-project/ark27/ark27-07/state.json",
         "ark-project/ark27/ark27-08/README.md",
@@ -532,6 +571,9 @@
         "ark-project/ark27/ark27-08/state.json",
         "ark-project/README.md"
       ],
+      "source_scope_closed": true,
+      "remaining_source_implementation_gate": "NONE",
+      "next_legal_connection": "HUMAN_STARTS_TARGET_WHEN_READY; TARGET_READS_CURRENT_HANDOFF_AND_SELF_RECONSTRUCTS",
       "self_sha_policy": "DO_NOT_EMBED"
     }
   },
