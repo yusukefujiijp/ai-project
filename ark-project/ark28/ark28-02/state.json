@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-09-29",
-    "updated": "2026-09-29",
+    "updated": "2026-10-03",
     "canonical_path": "ark-project/ark28/ark28-02/state.json",
     "date_scope": "Preparation date in Asia/Tokyo; not actual UI creation or a Human Task time",
-    "change_reason": "Initialize Ark28:02 after remotely verifying its stable README and Handoff; retain current material, evidence boundaries and First Legal Move."
+    "change_reason": "Preserve observed Source02 collaboration and Portal release; prepare the authorized02→03 continuation while keeping original identity and fixed bindings."
   },
   "identity": {
     "source": "Ark28:01",
@@ -57,7 +57,16 @@
       "archive moves or unrelated repository changes",
       "ChatGPT long-term memory export",
       "revival of Ark24 Frozen Trigger or Next-Cycle Workout Bridge"
-    ]
+    ],
+    "current_preparation_scope": {
+      "source": "ark-project/ark28/ark28-02/task-records.json",
+      "source_ids": [
+        "transition-s01",
+        "transition-s02"
+      ],
+      "scope": "Authorized Ark28:02→03 preparation, explicit Portal v002 reception, scoped validation, GitHub publication and Human handoff.",
+      "boundary": "The earlier source_preparation_scope above remains historical01→02 authority; current approval is limited to this preparation and does not start physical trials or Main tasks."
+    }
   },
   "bindings": {
     "runtime": {
@@ -101,14 +110,28 @@
     "domain": {
       "path": "ark-project/README.md",
       "policy": "Current routing and title/paired-preparation policy; explicit current Human designation takes precedence"
+    },
+    "own_experience": {
+      "path": "ark-project/ark28/ark28-02/task-records.json",
+      "record_id": "ark28-02-task-records",
+      "format_version": "v001",
+      "minimum_revision": 3,
+      "policy": "Current original; later corrections remain effective"
+    },
+    "material_harvest": {
+      "path": "ark-project/ark28/ark28-02/harvest.md",
+      "id": "ARK28_02_MATERIAL_HARVEST",
+      "commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+      "blob_sha": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5",
+      "policy": "Fixed historical snapshot; required read at this commit"
     }
   },
   "now": {
-    "phase": "PREPARED_FOR_TARGET_RECONSTRUCTION",
+    "phase": "SOURCE_PREPARED_FOR_ARK28_03_PUBLICATION",
     "support_purpose": "Ark27 Mainを保持し、想起と現在地を含む柔軟な協働を継続する。Current Requestに応じて扱う枝を選ぶ。",
-    "latest_source_boundary": "Portal初版の保存・導入、実際の明示呼出しからの具体例案内、Human好評価を経て移行準備。成果を未実装へ巻き戻さない。",
-    "first_legal_move": "WAIT_FOR_HUMAN_CURRENT_REALITY_OR_REQUEST",
-    "existing_input": "Accept any new Human input already supplied; do not require re-entry.",
+    "latest_source_boundary": "朝の聖別・優先順位・10/01休息の好結果と未確認、熱傷報告、出勤時想起、季節Portal保存成果を原本revision3とHarvestへ保存。02→03準備が現在の承認Task。",
+    "first_legal_move": "COMPLETE_APPROVED_CONTINUATION_PREPARATION_AND_VERIFY",
+    "existing_input": "2026-10-03の計画に続く実行承認を受領済み。再承認や再入力は不要。",
     "boot_only": "Return evidence-backed reception after all gates; then Human Review. No automatic next task.",
     "live_b_gate": "NOT_REPORTED_FOR_THIS_TARGET",
     "local_options": [
@@ -134,6 +157,44 @@
         "claim": "Portalを実際に明示呼出しし、具体例案内の後に好評価と次Thread移行意向、続いて準備の実行承認があった。",
         "source": "ark-project/ark28/ark28-01/task-records.json transition-s08–s10 and transition-s15",
         "kind": "Observed conversation and Human evaluation; not long-term effectiveness"
+      },
+      {
+        "claim": "外枠からTeshuvahの中心へ戻れた喜びと、朝の時間と時間帯を主イェシュアへ捧げる意味。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s01",
+          "morning-s03",
+          "morning-s04",
+          "morning-s05"
+        ],
+        "boundary": "Humanの信仰的意味・評価。AIによる神意の認定ではない。"
+      },
+      {
+        "claim": "朝の聖別習慣を優先する。AI活用の全面禁止ではなく、余裕があれば積極的に使う。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s06",
+          "morning-s07"
+        ],
+        "boundary": "優先順位とCorrection。身体・睡眠・Safety Guardの解除ではない。"
+      },
+      {
+        "claim": "10/01の05:00–06:00は横になって祈るように休息し、本人が好評価した。6:15にはまだ休みたいと述べた。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s08",
+          "morning-s10"
+        ],
+        "boundary": "当時の一回の経験・主観的評価。Walking完成やCurrent Bodyではない。"
+      },
+      {
+        "claim": "翌10/02の4:00–6:00案と睡眠のトレードオフ、仕事日は通常7:00発・一部8:00発という条件が示された。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s09",
+          "morning-s10"
+        ],
+        "boundary": "案・生活条件の報告。試行結果は未報告。"
       }
     ],
     "confirmed_tool": [
@@ -156,6 +217,24 @@
         "claim": "Target Handoff saved and reread before this initial State.",
         "commit": "358afc3f0acf9f72281bbc266ba5e0aaaff24d28",
         "blob": "4fb17d3e50b4a424e83ee64939134b126a20a213"
+      },
+      {
+        "claim": "季節Portalの6ファイル公開後に全文再取得一致。個人Skillの保存先本文・主要UI値も確認。",
+        "commit": "953ad00f210a1674c8533fdb51d0ca3ab97b2d1f",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "portal-release-s01"
+        ],
+        "boundary": "自然な選択・年をまたぐ実生活効果とは別。"
+      },
+      {
+        "claim": "Source02 records revision 3とHarvestを公開し、mainから再取得して全文・blob一致を確認。",
+        "commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+        "files": {
+          "ark-project/ark28/ark28-02/task-records.json": "9e495023ca59a3ba48dbfe42f90d258deb9c18dd",
+          "ark-project/ark28/ark28-02/harvest.md": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5"
+        },
+        "boundary": "Target triadの最終公開結果はSource02 terminal receiptへ。"
       }
     ],
     "limited_validation": [
@@ -183,10 +262,12 @@
       }
     ],
     "unknown": [
-      "Actual Ark28:02 full-read and reconstruction by receiving AI",
+      "The initial Ark28:02 formal full-read/reconstruction receipt is not reproduced by this preparation; later Source02 collaboration is directly observed.",
       "Human thread creation, paste, title application and access",
       "Start-method candidate real-world feedback",
-      "Portal natural automatic selection, B-state life benefit and long-term effects"
+      "Portal natural automatic selection, B-state life benefit and long-term effects",
+      "4:00案の結果、Walking習慣のその後、睡眠を保てる時間帯",
+      "熱傷への対応・回復・機器条件・現在の身体状態"
     ],
     "boundary": "Human adoption/report, tool verification, limited checks, real explicit use, Target reconstruction, Human UI/access and field effects are separate. Silence is neither success nor failure."
   },
@@ -210,6 +291,14 @@
     {
       "branch": "MainのGitHub作業、Reset、過去Task、その他Project",
       "treatment": "現在の所有者と承認に残す。この移行では自動開始しない。"
+    },
+    {
+      "branch": "朝の歩行と睡眠の成立条件",
+      "treatment": "本人の次の入力とBody/Sleep Guardから扱う。過去の4:00案を起動しない。"
+    },
+    {
+      "branch": "熱傷と寝具加熱の安全",
+      "treatment": "Current報告が必要な場面でSafety/Medical判断へ。過去報告で治癒や完全死滅を認定しない。"
     }
   ],
   "progress": {
@@ -224,7 +313,121 @@
     "actual_target_reconstruction": "NOT_OBSERVED",
     "human_thread_and_access": "NOT_OBSERVED",
     "human_title_application": "NOT_OBSERVED",
-    "field_effects": "NOT_OBSERVED_FOR_THIS_TARGET"
+    "field_effects": "NOT_OBSERVED_FOR_THIS_TARGET",
+    "initial_preparation_observation_20260929": {
+      "actual_target_reconstruction": "NOT_OBSERVED",
+      "human_thread_and_access": "NOT_OBSERVED",
+      "human_title_application": "NOT_OBSERVED",
+      "field_effects": "NOT_OBSERVED_FOR_THIS_TARGET"
+    },
+    "source_thread_collaboration": {
+      "status": "OBSERVED_AFTER_INITIAL_PREPARATION",
+      "evidence": "ark-project/ark28/ark28-02/task-records.json",
+      "note": "朝の本人報告と訂正、Portalの設計・実行承認・保存結果を観測。初回BootやUIの遡及証明ではない。"
+    },
+    "next_transition": {
+      "transition_id": "ARK28_02_TO_ARK28_03_CONTINUE",
+      "kind": "THREAD_CONTINUE",
+      "source": "Ark28:02",
+      "target": "Ark28:03",
+      "target_role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "prepared_date": "2026-10-03",
+      "compiled_title": "Ark28:03_2026/10/03: \"主の完全勝利: 朝の聖別と経験の想起を育てる継続協働\"",
+      "authority": {
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "transition-s01",
+          "transition-s02"
+        ],
+        "scope": "Approved eight-file preparation, explicit Portal v002 reception, verification, GitHub publication and Human copy surfaces."
+      },
+      "source_prepared": "SOURCE_PREPARED",
+      "source_snapshot": {
+        "commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+        "remote_verified": true,
+        "files": {
+          "ark-project/ark28/ark28-02/task-records.json": "9e495023ca59a3ba48dbfe42f90d258deb9c18dd",
+          "ark-project/ark28/ark28-02/harvest.md": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5"
+        }
+      },
+      "target_artifacts": {
+        "runtime": {
+          "path": "ark-project/ark28/ark28-03/README.md",
+          "id": "ARK28_03_SUPPORT_FIELD",
+          "blob_sha": "1c34c8ab5c8ee57a3f93f5cd814ab602272e6cb2"
+        },
+        "handoff": {
+          "path": "ark-project/ark28/ark28-03/handoff.md",
+          "id": "ARK28_02_TO_ARK28_03_CONTINUE",
+          "blob_sha": "aca7fa0ffd125e52b9d1503e81cc0b444373108d"
+        },
+        "state": {
+          "path": "ark-project/ark28/ark28-03/state.json",
+          "id": "ARK28_03_CURRENT_STATE",
+          "owner": "Ark28:03",
+          "schema_version": "v001",
+          "minimum_revision": 1
+        }
+      },
+      "routes": [
+        "ark-project/ark28/README.md",
+        "ark-project/README.md"
+      ],
+      "remote_verification": {
+        "status": "PENDING_PUBLIC_MAIN_REREAD",
+        "policy": "Verify the full candidate commit before moving main, then reread all published paths. Record actual results here afterward; no self-hash."
+      },
+      "validation": {
+        "source_record_schema": "PASSED_EXACT_V001_VOCABULARY_CHECK",
+        "source_record_ids_and_refs": "PASSED",
+        "prior_sources_preserved": true,
+        "triad_and_routing": "PASSED_SOURCE_SIDE_STATIC_AND_MEANING_REVIEW",
+        "independent_transition_reader": "NOT_PERFORMED",
+        "boundary": "Source preparation checks do not certify actual receiving-AI reconstruction or UI.",
+        "checks": [
+          "Task Records v001 exact schema vocabulary, duplicate keys, IDs and references",
+          "Existing sources/nodes/edges and Source02 fixed bindings preserved",
+          "Target identity, title, role, Root, state schema, exact EOF and blob bindings",
+          "13 required sources and8 reconstruction conditions with evidence paths",
+          "Chapter/Domain Support routing and concurrent Ark27:08 Main preservation",
+          "Relative links, Portal v002 boundary, planned/result distinctions and no fake Target/UI completion"
+        ],
+        "shared_contract_full_read": {
+          "repository": "yusukefujiijp/ai-project",
+          "ref": "19b41044881686b89e981e923e726e273e0c3e3f",
+          "path": "prompts/ai-next-thread-handoff.md",
+          "blob_sha": "95ba8491d893580336fdb702ba9d036c24e7706a",
+          "version": "v003-human-authorized",
+          "beginning_identity": "AI Next Thread Handoff / prompts/ai-next-thread-handoff.md / v003-human-authorized",
+          "exact_eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized",
+          "read_range": "Beginning metadata through exact EOF, no unread gap",
+          "reader": "Source02 preparing AI; not a transferable receiving-AI read receipt"
+        }
+      },
+      "actual_target_reconstruction": "NOT_OBSERVED",
+      "human_thread_and_access": "NOT_OBSERVED",
+      "human_title_application": "NOT_OBSERVED",
+      "field_effects": "NOT_OBSERVED_FOR_TARGET03"
+    },
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-09-29",
+        "reason": "Initial Source01→Target02 preparation, retained as historical observation."
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-03",
+        "reason": "Update selected later collaboration and current02→03 preparation; preserve original fixed bindings.",
+        "source_refs": [
+          "transition-s01",
+          "transition-s02",
+          "portal-release-s01"
+        ]
+      }
+    ]
   },
   "eof_sentinel": "ARK28_02_STATE_EOF_v001"
 }

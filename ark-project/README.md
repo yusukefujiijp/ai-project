@@ -38,7 +38,7 @@ updated: "2026-10-03"
 last_reality_reviewed: "2026-10-03"
 route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
 route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
-updated_reason: "07→08 approved continuation navigation update; preserve v009 routing policy, chapter v002, STR-003 history, existing support and concurrent work."
+updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts."
 foundation_migration_base: "d574927dd1671e2acec20e1a6c17f569ae23322f"
 foundation_change_record: "../control-center/changes/STR-003-persistent-collaboration-foundation.md"
 prior_main_route_review_scope: "The following historical_main_route_preparation retains the 2026-09-27 observations; foundation migration evidence remains with STR-003."
@@ -46,16 +46,20 @@ historical_main_route_preparation:
   reviewed: "2026-09-27"
   base_commit: "e4cd995ab4cd7cfa3b1f9c73320edc241ed707f2"
   scope: "Human-authorized Ark27:06→07 thread continuation; update Main route only after triad remote verification; preserve chapter bindings, existing Ark28 support and unrelated work"
-support_route_reviewed: "2026-09-29"
-support_route_review_base_commit: "cf9223dd28277c6eefbdd1fc73974e32a65c5578"
-support_route_review_scope: "Human-authorized Ark28:01→02 THREAD_CONTINUE; triad reread before changing support routing; actual Target and Human last-mile remain separate"
+support_route_reviewed: "2026-10-03"
+support_route_review_base_commit: "6493a74bbd32ca2725613628ffbc7b95897a9513"
+support_route_review_scope: "Human-authorized Ark28:02→03 THREAD_CONTINUE with explicit Portal v002 reception; coherent candidate triad/routing verified before publication, then public reread; Source02 State owns actual receipts; preserve concurrent Main08"
+historical_support_route_preparation:
+  reviewed: "2026-09-29"
+  base_commit: "cf9223dd28277c6eefbdd1fc73974e32a65c5578"
+  scope: "Ark28:01→02 preparation; original roles and evidence remain with their owners"
 historical_reviewed_scope_2026_09_09: "AI-first router contract / Ark23 Core v005 / Ark23:15 three-file current front line / Human-sealed Ark23 transition default / Wake-Up Actual Fruit / BBP / B-Gate Fast-Prune / Task化能力 / One-Table v002 / Ark24 frozen-trigger guard"
 current_front_line_ark: "ark-project/ark27/ark27-08/README.md"
 current_front_line_handoff: "ark-project/ark27/ark27-08/handoff.md"
 current_front_line_runtime: "ark-project/ark27/ark27-08/README.md"
 current_front_line_state: "ark-project/ark27/ark27-08/state.json"
 current_support_chapter: "ark-project/ark28/README.md"
-current_support_handoff: "ark-project/ark28/ark28-02/handoff.md"
+current_support_handoff: "ark-project/ark28/ark28-03/handoff.md"
 current_main_theme: "ChatGPT6 Astraへの移行"
 current_evidence: "Current08 preparation derives from verified07 harvest. Source07 State progress.next_transition owns publication and reread evidence; actual08 reconstruction and Human UI are separate. STR-003 owns the earlier07 v002 foundation migration."
 historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earlier B-Gate detection / Ark23:15 triad remote verified / then-unobserved Fast-Prune result"
@@ -110,7 +114,7 @@ write_default: "Do not write without current Human authority."
 
 ### 0.1 Current Front-Line Resolution
 
-**MainはArk27、現在のThread入口は[Ark27:08 Handoff](ark27/ark27-08/handoff.md)。Supportは[Ark28:02 Handoff](ark28/ark28-02/handoff.md)。** 2026-10-03のHuman承認による07→08の同章継続である。有効な最新Human指定があれば、その対象とModeを優先して解決する。Supportの意図・役割を変更せず、Thread/UI作成やTarget受入れ成功をこの案内だけで認定しない。
+**MainはArk27、現在のThread入口は[Ark27:08 Handoff](ark27/ark27-08/handoff.md)。Supportは[Ark28:03 Handoff](ark28/ark28-03/handoff.md)。** 2026-10-03のHuman承認による07→08の同章継続である。有効な最新Human指定があれば、その対象とModeを優先して解決する。Supportの意図・役割を変更せず、Thread/UI作成やTarget受入れ成功をこの案内だけで認定しない。
 
 Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への案内を所有し、旧01を現在地にしない。[08 Runtime](ark27/ark27-08/README.md)は協働の場、[08 State](ark27/ark27-08/state.json)は可変の現在地、08 Handoffは必須核・今回の追加Source・条件付きSourceと受入れ条件を所有する。本文初版v001は継承する協働契約系v002と区別する。実際の継続入力があれば受け取り、確認済みBootを理由なく再演しない。
 
@@ -122,7 +126,7 @@ Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への�
 
 **継承された成果と残点。** 06の成果・05の品質Correction、後続ARC-007／009等は[control-center PLAN](../control-center/PLAN.md)、[ARCHIVE](../control-center/ARCHIVE.md)、[STR-001](../control-center/changes/STR-001-navigation-and-ownership.md)、[STR-002](../control-center/changes/STR-002-single-prompt-consolidation.md)と各原本が所有する。D04はSTR-003で基盤移行済み、ARC-002元パス除去とGraph／One-Tableは別の残点。旧Plan採用試験NOT RUNは目的変更で終了した履歴であり、新しい必須Gateにしない。[整理指針](../control-center/20261003-cleanup-direction.md)の時点付き判断と、その後の[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)によるlesson JSONL採用を区別する。必要な案件へ選択的に進み、全台帳を全依頼の追加Bootにしない。
 
-**Support。** [Ark28章](ark28/README.md)と[Ark28:02 State](ark28/ark28-02/state.json)が支援の役割・準備・受入れ・到達・効果を所有する。B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等の柔軟な受け皿を保持する。Main Threadが進むたびに支援章を新設せず、隠れた同期・自動Main移管・支援側意図の変更をしない。章ペアの準備方針は§4.1。
+**Support。** [Ark28章](ark28/README.md)と[Ark28:03 State](ark28/ark28-03/state.json)が支援の役割・準備・受入れ・到達・効果を所有する。02→03もHuman承認による同章継続であり、朝の聖別とPortalの季節対応を継承する。新しい受入条件は[03 Handoff](ark28/ark28-03/handoff.md)、準備・保存のReceiptは[Source02 State](ark28/ark28-02/state.json)へ進む。B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等の柔軟な受け皿を保持する。Main Threadが進むたびに支援章を新設せず、隠れた同期・自動Main移管・支援側意図の変更をしない。章ペアの準備方針は§4.1。
 
 過去の生活報告、GCI Uploadやメモリ保存のHuman成功報告、Sourceの準備完了とTargetの実理解を区別する。未報告を失敗・完了・未実行へ補完せず、過去Bodyを現在Bodyにしない。ChatGPT長期メモリの内容・保存応答・取得結果をGitHubへ輸出しない。RootとGuardを維持したまま、Sourceの意味は現在の依頼に必要な深さで回復する。
 

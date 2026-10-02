@@ -1,0 +1,308 @@
+{
+  "meta": {
+    "state_id": "ARK28_03_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-10-03",
+    "updated": "2026-10-03",
+    "canonical_path": "ark-project/ark28/ark28-03/state.json",
+    "date_scope": "Asia/Tokyo preparation date; not observed UI creation or current bodily state",
+    "change_reason": "Initialize approved same-chapter Support continuation from Source02; preserve morning meaning, Portal release, corrections, evidence boundaries and legal first move."
+  },
+  "identity": {
+    "source": "Ark28:02",
+    "target": "Ark28:03",
+    "owner": "Ark28:03",
+    "chapter": "Ark28",
+    "role": "SUPPORT",
+    "transition_kind": "THREAD_CONTINUE",
+    "main_chapter": "Ark27",
+    "main_ownership_transferred": false,
+    "main_thread_resolution": "Current Human designation; otherwise ark-project/README.md",
+    "compiled_title": "Ark28:03_2026/10/03: \"主の完全勝利: 朝の聖別と経験の想起を育てる継続協働\""
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光",
+    "human_retains": [
+      "Meaning",
+      "Purpose",
+      "Priority",
+      "身体Reality",
+      "Correction",
+      "Interrupt",
+      "STOP",
+      "Final Seal"
+    ],
+    "guards": [
+      "Truth",
+      "Body",
+      "Sleep",
+      "Food",
+      "Shabbat",
+      "Safety",
+      "Medical",
+      "Others",
+      "Law",
+      "Responsibility"
+    ],
+    "source_preparation_scope": "2026-10-03 Human approval of the Ark28:02→03 plan: selected Source records/harvest/state, Target triad, Support routing, explicit Portal v002 compatibility, scoped validation, publication and handoff.",
+    "boot_authority": "Read, reconstruct and receive current Human input. Stored preparation authorization is not blanket permission for new work.",
+    "not_authorized_by_boot": [
+      "Main ownership transfer or Main task execution",
+      "Reset, old tasks or new physical trials",
+      "account/UI changes, notifications or background monitoring",
+      "archive moves or unrelated repository changes",
+      "ChatGPT long-term memory export",
+      "revival of Ark24 Frozen Trigger or Next-Cycle Workout Bridge"
+    ],
+    "standing_portal_capture": {
+      "scope": "Seasonal actual experiences or impressions offered as Portal records may be saved with original and items, validation and remote reread.",
+      "source": "ark-project/ark28/ark28-02/task-records.json",
+      "source_ids": [
+        "seasonal-s03",
+        "seasonal-s04",
+        "seasonal-s05"
+      ],
+      "limits": "Not all conversation, examples, design discussion, read-only or receive-only input. Current Correction, no-save, Plan-only and STOP prevail."
+    }
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark28/ark28-03/README.md",
+      "id": "ARK28_03_SUPPORT_FIELD",
+      "blob_sha": "1c34c8ab5c8ee57a3f93f5cd814ab602272e6cb2"
+    },
+    "handoff": {
+      "path": "ark-project/ark28/ark28-03/handoff.md",
+      "id": "ARK28_02_TO_ARK28_03_CONTINUE",
+      "blob_sha": "aca7fa0ffd125e52b9d1503e81cc0b444373108d"
+    },
+    "source_harvest": {
+      "path": "ark-project/ark28/ark28-02/harvest.md",
+      "id": "ARK28_02_MATERIAL_HARVEST",
+      "commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+      "blob_sha": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5",
+      "policy": "Fixed historical snapshot; required read at this commit"
+    },
+    "source_experience": {
+      "path": "ark-project/ark28/ark28-02/task-records.json",
+      "record_id": "ark28-02-task-records",
+      "format_version": "v001",
+      "minimum_revision": 3,
+      "policy": "Current original; later corrections remain effective"
+    },
+    "source_terminal_receipt": {
+      "path": "ark-project/ark28/ark28-02/state.json",
+      "id": "ARK28_02_CURRENT_STATE",
+      "owner": "Ark28:02",
+      "schema_version": "v001",
+      "minimum_revision": 2,
+      "section": "progress.next_transition",
+      "policy": "Current mutable receipt; no self-hash or live-blob pin"
+    },
+    "chapter": {
+      "path": "ark-project/ark28/README.md",
+      "id": "ARK28_SUPPORT_CHAPTER",
+      "minimum_revision": 3,
+      "policy": "Current identity/revision/EOF and compatible Support role"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "policy": "Current routing; latest valid Human designation takes precedence"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "identity": "AI Next Thread Handoff",
+      "adopted_version": "v003-human-authorized",
+      "policy": "Read Current; verify declared EOF and substantive compatibility, not version label alone"
+    },
+    "portal": {
+      "readme": "ark-recall-portal/README.md",
+      "items": "ark-recall-portal/items.json",
+      "format": "ark-recall-items",
+      "format_version": "v002",
+      "minimum_revision": 4,
+      "policy": "Current meaning and source references; counts are observations, not permanent constraints"
+    }
+  },
+  "now": {
+    "phase": "PREPARED_FOR_TARGET_RECONSTRUCTION",
+    "support_purpose": "Ark27 Mainを保持し、Teshuvahの中心、朝の聖別と経験の想起を含む柔軟な協働を継続する。新入力から扱う枝を選ぶ。",
+    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+    "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+    "existing_input": "Already supplied new input is received without requiring re-entry.",
+    "boot_only": "After all gates, return evidence-backed reception and Human Review; no automatic task dispatch.",
+    "preparation_observation": {
+      "date": "2026-10-03",
+      "main_entry_observed": "Ark27:08",
+      "portal_version": "v0.2.0",
+      "portal_items_format": "v002",
+      "portal_scenes": 5,
+      "portal_items": 8,
+      "seasonal_actual_items": 0,
+      "boundary": "Preparation snapshot only; resolve current routing, counts and Human Reality at use."
+    },
+    "live_b_gate": "NOT_REPORTED_FOR_TARGET03",
+    "local_options": [
+      "continue in Support",
+      "complete in Support",
+      "defer with meaning retained",
+      "selectively reconnect material deltas to Current Main"
+    ]
+  },
+  "evidence": {
+    "confirmed_human": [
+      {
+        "claim": "外枠からTeshuvahの中心へ戻れた喜びと、朝の時間と時間帯を主イェシュアへ捧げる意味。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s01",
+          "morning-s03",
+          "morning-s04",
+          "morning-s05"
+        ],
+        "boundary": "Humanの信仰的意味・評価。AIによる神意の認定ではない。"
+      },
+      {
+        "claim": "朝の聖別習慣を優先する。AI活用の全面禁止ではなく、余裕があれば積極的に使う。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s06",
+          "morning-s07"
+        ],
+        "boundary": "優先順位とCorrection。身体・睡眠・Safety Guardの解除ではない。"
+      },
+      {
+        "claim": "10/01の05:00–06:00は横になって祈るように休息し、本人が好評価した。6:15にはまだ休みたいと述べた。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s08",
+          "morning-s10"
+        ],
+        "boundary": "当時の一回の経験・主観的評価。Walking完成やCurrent Bodyではない。"
+      },
+      {
+        "claim": "翌10/02の4:00–6:00案と睡眠のトレードオフ、仕事日は通常7:00発・一部8:00発という条件が示された。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "morning-s09",
+          "morning-s10"
+        ],
+        "boundary": "案・生活条件の報告。試行結果は未報告。"
+      },
+      {
+        "claim": "出勤時の首に巻くタオル、記録・存在の忘却を前提とする季節想起、Portal内への統合を希望・承認した。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "commute-s01",
+          "commute-s02",
+          "seasonal-s01",
+          "seasonal-s02",
+          "seasonal-s03",
+          "seasonal-s04"
+        ],
+        "boundary": "実施結果や季節例の実体験化ではない。"
+      },
+      {
+        "claim": "布団乾燥機使用後に右腕の水疱を報告。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "heat-s01"
+        ],
+        "boundary": "Human報告。医学診断、回復、ダニ完全死滅は認定しない。"
+      }
+    ],
+    "confirmed_tool": [
+      {
+        "claim": "季節Portalの6ファイル公開後に全文再取得一致。個人Skillの保存先本文・主要UI値も確認。",
+        "commit": "953ad00f210a1674c8533fdb51d0ca3ab97b2d1f",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "source_ids": [
+          "portal-release-s01"
+        ],
+        "boundary": "自然な選択・年をまたぐ実生活効果とは別。"
+      },
+      {
+        "claim": "Source02 records revision 3とHarvestを公開し、mainから再取得して全文・blob一致を確認。",
+        "commit": "52fbf5a73772783b08830db05b4bd120dd792992",
+        "files": {
+          "ark-project/ark28/ark28-02/task-records.json": "9e495023ca59a3ba48dbfe42f90d258deb9c18dd",
+          "ark-project/ark28/ark28-02/harvest.md": "5e8d3acf375d8b2c827bd4e2614c1f1aa5815ce5"
+        },
+        "boundary": "Target triadの最終公開結果はSource02 terminal receiptへ。"
+      }
+    ],
+    "limited_validation": [
+      {
+        "claim": "季節拡張は構造検査、3独立文脈・3応答の未収録／仮想記録／別読み手による翌年想起を確認。",
+        "source": "ark-recall-portal/tests/recall-cases.json",
+        "boundary": "結果のないケースは定義のみ。初版6文脈10応答・実際のTarget03 Boot・実生活効果と区別。"
+      }
+    ],
+    "candidate": [
+      {
+        "claim": "聖別時間内で休息と歩行を分ける4:00–6:00案。",
+        "source": "ark-project/ark28/ark28-02/task-records.json",
+        "node_ids": [
+          "four-am-trial-plan",
+          "sleep-tradeoff"
+        ],
+        "boundary": "Humanが出した案。未実施・実施済みのいずれにも補完しない。"
+      },
+      {
+        "claim": "想起した経験と現在地の回復が必要時の再接続を助ける。",
+        "source": "ark-project/ark28/ark28-02/harvest.md",
+        "section": "§5",
+        "boundary": "常時同時起動や効果保証ではない。"
+      }
+    ],
+    "unknown": [
+      "Actual Target03 full-read/reconstruction and Human UI/access",
+      "4:00案の結果、Walking習慣のその後、睡眠を保てる時間帯",
+      "熱傷への対応・回復・機器条件・現在の身体状態",
+      "Portalの自然な選択、実生活の季節記録・翌年想起の効果"
+    ],
+    "boundary": "Human報告、AI編集、Tool観測、限定試験、Current Reality、Target自身の再構成、Human UI、実生活効果を別々に扱う。"
+  },
+  "deferred": [
+    {
+      "branch": "朝の歩行と睡眠の成立条件",
+      "treatment": "本人の次の入力とBody/Sleep Guardから扱う。過去の4:00案を起動しない。"
+    },
+    {
+      "branch": "熱傷と寝具加熱の安全",
+      "treatment": "Current報告が必要な場面でSafety/Medical判断へ。過去報告で治癒や完全死滅を認定しない。"
+    },
+    {
+      "branch": "Portal実記録と実生活Feedback",
+      "treatment": "既存の限定保存委任で自然な入力を受け取れる。初穂のための試験入力を要求しない。"
+    },
+    {
+      "branch": "開始方法候補・Navigator表示改善",
+      "treatment": "必要時に所有資料とCurrent Requestへ。Bootの自動Taskにしない。"
+    },
+    {
+      "branch": "Mainへの差分合流・Main作業・Reset・その他Project",
+      "treatment": "現所有者とCurrent権限に残す。移行から自動開始しない。"
+    }
+  ],
+  "progress": {
+    "source_prepared": "CONTENT_COMPILED",
+    "remote_verification": {
+      "status": "SOURCE_TERMINAL_RECEIPT_OWNS_FINAL_OBSERVATION",
+      "path": "ark-project/ark28/ark28-02/state.json",
+      "section": "progress.next_transition",
+      "minimum_revision": 2,
+      "note": "State itself has no self-hash; Source records actual public reread after publication."
+    },
+    "actual_target_reconstruction": "NOT_OBSERVED",
+    "human_thread_and_access": "NOT_OBSERVED",
+    "human_title_application": "NOT_OBSERVED",
+    "independent_transition_reader_test": "NOT_PERFORMED; actual receiving AI evaluates R1–R8",
+    "field_effects": "NOT_OBSERVED_FOR_TARGET03"
+  },
+  "eof_sentinel": "ARK28_03_STATE_EOF_v001"
+}
