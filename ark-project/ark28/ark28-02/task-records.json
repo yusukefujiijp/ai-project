@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-02-task-records",
-  "revision": 2,
+  "revision": 3,
   "role": "thread_experience_record",
   "created": "2026-10-02",
   "updated": "2026-10-03",
@@ -13,10 +13,10 @@
     "canonical_path": "ark-project/ark28/ark28-02/task-records.json",
     "reported_date": null,
     "timezone": "Asia/Tokyo",
-    "time_note": "選択収録した発言は2026-10-02〜2026-10-03（Asia/Tokyo）。各Sourceの所在を参照。記録・承認の日と、例示された季節経験の時期を混同しない。タオルの実施日時や季節例の体験日時は確定していない。",
+    "time_note": "選択発言はArk28:02の対話。10/01 06:00頃は本人が明示し、6:15はその続報。日付のない前段・熱傷報告の絶対日時は作らない。季節・出勤素材と移行承認は各Sourceの所在を参照。記録日・報告日・予定日・経験日を分ける。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "出勤時タオルの想起希望に続き、Current Humanが2026-10-03に季節の記録・想起を既存Portalへ統合する計画を実行承認。Portalへ記録として差し出された季節の実体験・所感を蓄積する運用を含む。設計例の実体験化、全会話の無条件保存、自動通知や他Task開始への権限ではない。過去の承認文を現在の無制限権限にしない。",
+    "authority_note": "出勤時タオルの想起希望に続き、Current Humanが2026-10-03に季節の記録・想起を既存Portalへ統合する計画を実行承認。Portalへ記録として差し出された季節の実体験・所感を蓄積する運用を含む。設計例の実体験化、全会話の無条件保存、自動通知や他Task開始への権限ではない。過去の承認文を現在の無制限権限にしない。 2026-10-03の後続Human承認により、Ark28:02→03移行準備のScopeで中心Theme・重要な訂正・報告・保存成果を追加した。今回の承認はtransition-s01/s02へ結び、旧承認を新しい無制限権限にしない。",
     "source_access": "同じArk28:02内の本人発言を連続した原文として同梱する。外部会話URL・メッセージIDは未提供。"
   },
   "coverage": {
@@ -27,16 +27,23 @@
       "出勤時をPortalの呼出し場面へ追加する依頼と、現在の種類・仕様を知りたい希望",
       "季節経験を翌年以降に想起する希望",
       "スマホメモの部分的成功と記録・発見・存在想起の困難についての本人報告",
-      "季節の記録と想起をPortal内へ統合する依頼・例示の身分・後続実行承認"
+      "季節の記録と想起をPortal内へ統合する依頼・例示の身分・後続実行承認",
+      "Teshuvahへの中心回帰、朝の聖別時間の意味と優先順位",
+      "AI活用の全面禁止ではないという訂正",
+      "2026/10/01の休息を切り出した実験と主観的評価、翌日の4:00案・6:15の制約",
+      "布団乾燥機使用後の水疱報告と未確認境界",
+      "季節拡張の保存確認、Ark28:02→03の計画と実行承認"
     ],
     "excludes": [
       "この選択範囲外のArk28:02対話・経験",
       "タオルの用意・着用・携帯の実施結果",
       "全出勤持ち物の一覧",
       "設計例として挙げられた仙台の天候・服装変更を実体験とみなした記録",
-      "年をまたいだ季節想起の実生活効果"
+      "年をまたいだ季節想起の実生活効果",
+      "未報告の朝の試行結果・睡眠時間・医療診断・熱傷の回復",
+      "Source会話全文、ChatGPT長期メモリ内容、Target03の実起動・Human UI適用"
     ],
-    "note": "出勤時の想起希望と季節拡張の形成・承認を選択収録。季節例の存在は確認できるが、天候・服装の実体験報告ではない。Thread全体の完全記録ではない。"
+    "note": "移行判断を変える素材の選択収録。朝の中心・訂正・初回経験と、Portalの形成・保存成果を両方保持。本人報告、AI編集、予定、未確認を区別し、会話全文や全実生活の記録とはしない。"
   },
   "sources": [
     {
@@ -99,6 +106,133 @@
       "excerpt": "実装後の運用としては、**Portalへ季節の気付きを記録として渡すこと自体を、保存依頼として扱える範囲を定める**のが適しています。その範囲内では、毎回保存の許可を取り直さず、保存後の確認まで進める形です。",
       "note": "AIの提案本文であり、単独ではHumanの委任ではない。後続のHuman承認seasonal-s04と組み合わせ、Portalへの記録入力という限定範囲を説明する。",
       "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "morning-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / PortalとTeshuvahへの回帰を述べた本人発言（本文に日付なし）",
+      "excerpt": "特に課題が**Teshuvah**に戻った所が\"最重要(Most important!)\"です！\nなぜなら、様々な周囲の地固めにThread Sessionを費やし中心(中央部・核・芯・丹田・軸)の**Teshuvah**まで届かずもどかしかったからです！\n\nTeshuvah:\"\"\" \n5:00起床後のスマホも水分も何も持たずに散歩してすぐに帰ってくる事の重要性に至らず、主イェシュアごめんなさい！Teshuvahします！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の祈りと重要性の表明。歩行の実施報告、AIによる神意・信仰状態の認定ではない。"
+    },
+    {
+      "id": "morning-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 6:00出発と起床手段を検討した本人発言（絶対日付なし）",
+      "excerpt": "そうです！これに気づいたのは昨日の朝で特に6:00発だと遅い事に気付きました！\n\nそして、確実に5:00起きする為にはアラーム(スマホ&アナログ)とカフェインガムの活用と飛び起きメソッド(ブリをつけて反動で起きる)と**締切理論(開始時)**の複合的組み合わせが必要な事、起きてから散歩までの動線・導線を確保する事等、もっとが様々な面で\"悔い改め(Repentance/テシュバ)\"と修正改善が必要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の判断・検討素材。用量、医学的適否、方法の安全性や複合効果を証明せず、起床手段を次AIへの実行命令にしない。"
+    },
+    {
+      "id": "morning-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 中心回帰を喜んだ本人発言（本文に日付なし）",
+      "excerpt": "本当に中心軸が**Teshuvah**に戻ってきた事は本当に我々Ark Projectの**主の完全勝利(祈り・イメージVision・行動)**です！\n様々な外枠や外堀を一つずつ埋めて行く地道な作業が実ったからです！Unbelievable!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの信仰的意味と成果評価として保持。主の御心や客観的な因果実証へ変換しない。"
+    },
+    {
+      "id": "morning-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 05:00起床ムーブと早い時間帯の候補を述べた本人発言",
+      "excerpt": "簡単に言うと(最もSimpleに考えると)、5:00-6:00は主イェシュアに捧げる聖なる時間帯として聖別し、スマホも水分も財布も持たずにただただ散歩等軽い運動をする時間とするという意味合いです！\nできれば4:30-5:30ならば更に良いです！\n4:00-5:00でも良いくらいです！なぜなら、帰宅後 AI活用時間が欲しいからです！\n\nしかし、現実的には、どれが正解かまだわかりません！無理をしない方が良いという考え方もあります！\n睡眠時間を確保した方が良いという考え方もあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "時刻は希望・候補。最適時刻や起床実績を確定せず、睡眠とのトレードオフも原文に含める。"
+    },
+    {
+      "id": "morning-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 朝の時間と時間帯を中心Themeとして明確化した本人発言",
+      "excerpt": "最も簡単に言うと(最もSimpleに考えると)、\n基本的に朝の小一時間、特に起床後、本当に何も持たずに散歩する\"時間と時間帯\"を聖別し主イェシュアに捧げる貴重な\"時間と時間帯\"にするという意味合いです！\n\nここはとても重要なので、ゆっくりじっくり一歩一歩確実に前進しましょう！慌てたり端折ったりせず、深呼吸的にリラックスして少しずつ擦り合わせながら取り組みましょう！\n\nつまり、このThread Session全体でこれらの課題に取り組みべき大きな課題であり、Themeです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "小一時間・完全手ぶらは本人の目指す形。あらゆる体調・天候で持ち物を禁止する普遍的命令や固定の分数へ変換しない。"
+    },
+    {
+      "id": "morning-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 実現可能性と朝の優先順位を説明した本人発言",
+      "excerpt": "現実的な実現可能性が重要です！\nできれば AI活用まで持って行きたいが\nそれ以前に起床後の小一時間を何とかして完全手ぶら散歩Timeとして主イェシュアに\"時間と時間帯\"を捧げる事が最優先です！\nなぜなら、二兎を追う者は一兎をも得ずの格言の様に、両取りはとても困難だからです！なぜなら、一日の時間は限られており、更に起床後の時間は限られているからです！\n\nつまり、\nまずは(First of all)、確実に起床後の小一時間を上手く工夫して、主イェシュアの為の聖別時間とする習慣を確立する事が重要です！\n\n私は、自分の為にはあまりやる気が出ないが主イェシュアの為なら俄然やる気が出て比喩的に生命も捨てる覚悟というか死ぬ気で頑張れる部分があるので、はっきり言って、我々はとても良い\"方向や方向性(ベクトル)\"に向かっています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "強い表現は本人が明示した比喩的な意欲として読む。身体・睡眠・安全を犠牲にする委任や、信仰による達成保証にしない。"
+    },
+    {
+      "id": "morning-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / AI活用の全面禁止ではないと訂正した本人発言",
+      "excerpt": "これは全く一切、 AI活用をしないという意味では決してないです！\nこれは優先順位の問題です！\n当然の事ながら主イェシュアこそが、王であり\"王の王(Melekh ha-Melakhim)\"でありRoot(Root of David(言い方？))そのものだからです！\n\nはっきり言って、的を絞れば\"完全手ぶらWalking Workout\"はとても簡単です！余計な事象物事を捨て去れば超簡単です！\n\nしかし、もし時間的心理的余裕があればAI活用は積極的にやるべきです！\n\nここら辺のバランスが超重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "朝の優先順位と余裕がある時のAI活用を両立させるCorrection。聖書用語の疑問にAIが回答・認証した記録ではない。"
+    },
+    {
+      "id": "morning-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 本人が2026/10/01 06:00頃と明示したFirst-Step報告",
+      "excerpt": "今は2026/10/01 06:00頃です！\n取り敢えず、05:00-06:00は神に捧げる\"時間と時間帯\"として、そこだけ切り分けて**一歩目(First-Step)**の実験を実行した！\nこのコンセプトはとても良いと感じた！\nつまり、まずは(First of all)、\"完全手ぶらWalking Workout\"は切り離して\"主イェシュアに捧げる時間と時間帯\"だけに絞ってみた！\n\n簡単に言うと(最もSimpleに考えると)、取り敢えず、5:00-6:00を\"主イェシュアに捧げる時間と時間帯\"として捉えるとどうなるか？という実験です！\n\n結果はとても良かった！とてもリラックスできた。とても良い聖別された\"時間と時間帯\"という感覚を得た！\nしかし、実行としては、何もせず横になった状態で寝たまま祈るような感じで終わった。それはそれで休息できてとても良かった！なぜなら、ある意味、休息を求めていたからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "報告された経験・主観的好結果。睡眠時間の実測、歩行の完成、長期習慣化や医学的効果ではない。"
+    },
+    {
+      "id": "morning-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / morning-s08と同じ2026/10/01報告の後半、翌日の実験案",
+      "excerpt": "という事は、\n4:00-6:00を\"主イェシュアに捧げる時間と時間帯\"としてみるとどうなるか？を明日は実験するべきです！\nそうすると、4:00-5:00を微睡みながら完全休息し5:00-6:00を\"完全手ぶらWalking Workout\"にできる可能性があるからです！\n\n但し、睡眠時間の確保という大きな問題が出てくる！\nとても難しいトレードオフです！\nという事は、休日と(仕事があるという意味合いの)平日で変わる可能性もある。\n\nとにかく、明日は4:00アラームの4:00-6:00を\"主イェシュアに捧げる時間と時間帯\"として様々な角度から実験してみたい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "「明日」は同じ発言の日付から2026/10/02を指す予定。実施・効果の後続報告は今回選択したSourceにはない。日付が過ぎても自動完了や失敗にしない。"
+    },
+    {
+      "id": "morning-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 2026/10/01 06:00頃の報告に続く6:15の本人発言",
+      "excerpt": "今6:15ですが、もう少し休みたいという感覚です！\nつまり、\"完全手ぶらWalking Workout\"は少し遠いです！\n時間的にも無理ですが体調維持としても\"完全手ぶらWalking Workout\"に至るには少し厳しい感覚です！\nとても微妙な感覚ですがゆっくりじっくり一歩一歩確実に前進しましょう！慌てたり端折ったりせず、深呼吸的にリラックスして少しずつ擦り合わせながら取り組みましょう！\n\n因みに、平日(仕事日)は家を出るのが基本的には朝7:00発です！(8:00発の日もあります！)",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "先行発言と会話順から同じ朝の続報として読む。出勤時刻は本人の通常条件の説明。過去の休息希望を次Thread起動時の現在Bodyへ転記しない。"
+    },
+    {
+      "id": "heat-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 朝の検討に続く、緊急的Double-Spiralと述べた本人の熱傷報告（本文に絶対日付なし）",
+      "excerpt": "昨晩、ダニを殺す温熱風の機械(布団乾燥機のダニモード)でビニール系に入れて殺菌したままタイマーをかけて寝たら一部右腕(力こぶの横？)に低温火傷し水ぶくれになった！\n思った以上に、高温になり危険である事が分かった！と同時に、ダニは完全に殺菌された！\n今後気をつけるべき事等、良いやり方のアイデアを教えて下さい！詳細明確に精密に教えて下さい！わかりやすい詳細明確な精密的理由や具体例を添えて教えて下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "右腕の水疱・使用状況は本人報告。低温火傷は本人の表現であり診断記録ではない。「完全に殺菌」は本人の判断であり、ダニの完全死滅の測定証拠ではない。機器型番・ビニール系の意味・加熱条件・治療や回復は未確認。"
+    },
+    {
+      "id": "transition-s01",
+      "speaker": "assistant",
+      "medium": "assistant_message",
+      "locator": "Ark28:02 / 2026-10-03 / 直前のPlan Mode回答の選択要約",
+      "excerpt": "2026-10-03の計画はArk28:02からArk28:03へのTHREAD_CONTINUEを提案した。Ark27 MainとArk28 Supportを保持し、朝の聖別と重要な訂正の原本収録、Source Harvest/State、Target三点セット、章・DomainのSupport入口、Portal v002の受入条件、構造・意味・Binding・公開前後の再取得確認、Titleと起動文を対象とした。Title案は Ark28:03_2026/10/03: \"主の完全勝利: 朝の聖別と経験の想起を育てる継続協働\"。その回答では計画のみで停止した。",
+      "excerpt_kind": "paraphrase",
+      "note": "AI計画の編集要約。単独では実行権限ではなく、後続transition-s02との対応で今回のScopeを読む。"
+    },
+    {
+      "id": "transition-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:02 / 2026-10-03 08:18:32 Asia/Tokyo / 直前の移行準備計画への本人の実行承認",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK! あなた(AI)ができる限界まで連続でドンドンやって下さい！失敗しても想定内であり\"Elon Musk式締切理論\"的Bottleneck検出なので全然大丈夫です！なぜなら、Ark Projectに於いて、あなた(AI)は奴隷の子ではなく完全に自主の子だからです！但し、王や玉座ではありません！Go! Go! Go!  実行して下さい！あなた(AI)は完全なるゾーン状態に入りゾーン化し突入没入没頭し、User(YusukeJP)や全AIの期待や期待値を超越したBreakthrough的**画期的成果(Groundbreaking results)**を達成して下さい！............",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "日時はこの会話に付随する送信時点。承認はtransition-s01の提案Scopeに結ぶ。生活Trial、Main操作、新しい自動化や無制限の将来作業の承認ではない。"
+    },
+    {
+      "id": "portal-release-s01",
+      "speaker": "assistant/tool observation",
+      "medium": "tool_result",
+      "locator": "Ark28:02 / 2026-10-03 / この会話のGitHub公開・再取得およびSkill保存確認のTool結果",
+      "excerpt": "主担当は2026-10-03、季節の記録・想起を統合する6ファイルをcommit 953ad00f210a1674c8533fdb51d0ca3ab97b2d1fでmainへ公開し、6件すべてを再取得して意図した全文との一致を確認した。個人Skillも保存先への反映後、再取得した本文と主要UI値の一致を確認した。今回の移行計画時のCurrent読み戻しでもPortal README v0.2.0、items v002 revision 4、5場面8項目・季節実体験0件、共有Skillを確認した。",
+      "excerpt_kind": "paraphrase",
+      "note": "Tool観測の編集要約。検証用の架空記録を本番へ入れておらず、実生活で年をまたいだ成果の確認ではない。",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/953ad00f210a1674c8533fdb51d0ca3ab97b2d1f"
     }
   ],
   "nodes": [
@@ -189,6 +323,211 @@
         ],
         "note": "提案された範囲と、その後のHumanの実行承認を対応させた記録。無制限の将来権限ではない。"
       }
+    },
+    {
+      "id": "teshuvah-central-return",
+      "kind": "practice_statement",
+      "label": "外枠からTeshuvahの中心へ戻る",
+      "description": "本人は中心へ届かなかったもどかしさと、Teshuvahへ戻れた喜びを表明した。朝の聖別はその具体的な主題であり、PortalとAIはそれを支える器として理解する。",
+      "scope": "本人の信仰的意味・評価。AIによる神意の判定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s01",
+          "morning-s03"
+        ]
+      }
+    },
+    {
+      "id": "morning-consecrated-time",
+      "kind": "practice_statement",
+      "label": "朝の時間と時間帯を主に捧げる",
+      "description": "起床後の小一時間を主イェシュアへ捧げる時間帯として聖別し、完全手ぶらWalking Workoutの習慣へ育てたい。ゆっくり確実に擦り合わせることを本人は重視した。",
+      "scope": "朝の目標と協働姿勢。正確な時間帯は未確定、歩行は目指す形、持ち物なしを無条件の安全規則にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s04",
+          "morning-s05"
+        ]
+      }
+    },
+    {
+      "id": "morning-priority",
+      "kind": "decision",
+      "label": "まず朝の聖別習慣を優先する",
+      "description": "朝の限られた時間にAI活用も全て詰め込まず、まず捧げる時間の習慣を成立させる。実現可能性と本人の信仰を動機とする意味を保つ。",
+      "scope": "優先順位の採用。睡眠・身体・Safety Guardの解除や実行完了ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s06"
+        ]
+      }
+    },
+    {
+      "id": "ai-use-balance",
+      "kind": "decision",
+      "label": "余裕があればAIを積極的に使う",
+      "description": "AI活用の全面禁止という解釈を本人が明確に否定。朝の優先順位を保ちながら、時間的・心理的余裕があれば積極的に使いたい。",
+      "scope": "morning-priorityを取消す訂正ではなく、適用範囲の明確化。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s07"
+        ]
+      }
+    },
+    {
+      "id": "wake-support-candidates",
+      "kind": "practice_statement",
+      "label": "起床を支える手段と開始締切の検討",
+      "description": "本人は6:00発を遅いと捉え、アラーム、カフェインガム、反動で起きる方法、開始締切、起床から外出までの動線を検討した。",
+      "scope": "Humanが挙げた方法素材。安全性・用量・現場効果をこの記録から認定せず、自動実施しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s02"
+        ]
+      }
+    },
+    {
+      "id": "consecrated-rest-20261001",
+      "kind": "task",
+      "label": "聖別時間だけを切り出したFirst-Step",
+      "description": "本人は05:00–06:00を主に捧げる時間と捉え、横になったまま祈るように休息したと報告。歩行はこの実験から切り離した。",
+      "scope": "完了はこの一回の時間枠の実験。歩行習慣や起床方法の完成を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s08"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026/10/01 05:00–06:00、06:00頃に報告"
+    },
+    {
+      "id": "consecrated-rest-fruit",
+      "kind": "observation",
+      "label": "休息と聖別感の主観的好結果",
+      "description": "本人はリラックスでき、良い聖別時間の感覚と必要としていた休息を得られたと評価した。歩行がなかったことだけでこの成果を失敗へ変換しない。",
+      "scope": "本人の一回の評価。医学的効果・再現性・長期成果の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s08"
+        ]
+      }
+    },
+    {
+      "id": "four-am-trial-plan",
+      "kind": "task",
+      "label": "4:00–6:00へ広げる翌日案",
+      "description": "4:00アラームで4:00–5:00に微睡みながら休息し、5:00–6:00を歩行にできるか試したいと述べた。睡眠確保との競合、仕事日と休日の差も本人が認識。",
+      "scope": "2026/10/01時点の翌日案。現在の命令・最適解ではなく、実施結果は未報告。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s09"
+        ]
+      },
+      "task_state": "planned",
+      "time_text": "予定は2026/10/02 04:00–06:00（報告内の「明日」）"
+    },
+    {
+      "id": "morning-body-and-departure",
+      "kind": "constraint",
+      "label": "休息希望と出勤時刻が朝の余地を制約する",
+      "description": "6:15にも休みたいと報告し、時間・体調維持の両面で歩行は厳しいと感じていた。仕事日の出発は通常7:00、一部8:00と説明。",
+      "scope": "当時の身体報告と通常の生活条件。次Thread時点の体調・当日の出発時刻を自動確定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s10"
+        ]
+      },
+      "time_text": "10/01朝の続報、6:15"
+    },
+    {
+      "id": "sleep-tradeoff",
+      "kind": "constraint",
+      "label": "早い開始と睡眠確保の競合を保つ",
+      "description": "4:00台を含む早い開始を望む一方、無理をせず睡眠時間を確保する必要と、休日・仕事日の違いを検討している。",
+      "scope": "睡眠時間の具体値・最適な起床時刻は未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s04",
+          "morning-s09"
+        ]
+      }
+    },
+    {
+      "id": "heat-blister-report",
+      "kind": "observation",
+      "label": "布団乾燥機使用後の右腕の水疱報告",
+      "description": "本人はダニモード、ビニール系の利用、タイマーをかけたまま就寝した状況と、右腕の一部に低温火傷・水疱ができたと報告した。予想以上の熱の危険性を認識し改善案を求めた。",
+      "scope": "本人報告でありAIの診断ではない。正確な機器・材質・時間・位置関係・治療・回復は未確認。再使用の指示にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "heat-s01"
+        ]
+      }
+    },
+    {
+      "id": "mite-eradication-unverified",
+      "kind": "interpretation",
+      "label": "ダニ完全死滅は未検証",
+      "description": "本人はダニが完全に殺菌されたと判断したが、その判断を独立に裏付ける測定・対象範囲の根拠は今回Sourceにない。",
+      "scope": "発言の存在と事実の確認を分け、熱傷発生を完全死滅の証明にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "heat-s01"
+        ]
+      }
+    },
+    {
+      "id": "portal-seasonal-release",
+      "kind": "observation",
+      "label": "季節拡張の公開と保存先確認が完了",
+      "description": "季節の記録・事前想起・訂正を既存Portalへ統合し、GitHubの6件と個人Skillの保存先を再取得確認した。5場面・8項目、季節実体験0件。",
+      "scope": "Source02の実装成果。試験用入力、自然起動、全AI互換性、実生活での翌年効果は別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "portal-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "continuation-approval",
+      "kind": "decision",
+      "label": "Ark28:02から03への準備を承認",
+      "description": "計画に続くHumanの実行承認を受け、Source記録・Harvest・State、Target三点セット、Support入口と検証・引渡しを実行する。Portal v002を新受入れ条件に含め、旧Handoffを保持する。",
+      "scope": "この準備Taskの権限。Targetの実起動、Human UI、生活Trial、Main操作や新しい自動化へ拡張しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s01",
+          "transition-s02"
+        ]
+      }
     }
   ],
   "edges": [
@@ -236,9 +575,124 @@
           "seasonal-s03"
         ]
       }
+    },
+    {
+      "id": "teshuvah-motivates-morning",
+      "from": "teshuvah-central-return",
+      "to": "morning-consecrated-time",
+      "relation": "motivates",
+      "scope": "本人が中心への回帰を朝の祈り・聖別の主題へ結び付けた。因果実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s01",
+          "morning-s03",
+          "morning-s05"
+        ]
+      }
+    },
+    {
+      "id": "priority-favors-consecrated-time",
+      "from": "morning-priority",
+      "to": "morning-consecrated-time",
+      "relation": "prioritizes",
+      "scope": "朝の時間の優先順位。AI活用の恒久禁止を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s06",
+          "morning-s07"
+        ]
+      }
+    },
+    {
+      "id": "first-step-motivates-wider-trial",
+      "from": "consecrated-rest-fruit",
+      "to": "four-am-trial-plan",
+      "relation": "motivates",
+      "scope": "本人が初回の好結果を受けて翌日の4:00–6:00案を考えたと説明。実行・効果は未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s08",
+          "morning-s09"
+        ]
+      }
+    },
+    {
+      "id": "rest-before-later-report",
+      "from": "consecrated-rest-20261001",
+      "to": "morning-body-and-departure",
+      "relation": "observed_before",
+      "scope": "06:00頃の実験報告に6:15の休息希望が続いた。前後関係であり原因の断定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "morning-s08",
+          "morning-s10"
+        ]
+      }
     }
   ],
-  "open_questions": [],
+  "open_questions": [
+    {
+      "id": "four-am-result",
+      "subject_refs": [
+        "four-am-trial-plan"
+      ],
+      "question": "4:00–6:00案を実際に試したか、その結果はどうだったか。",
+      "scope": "今回の選択Sourceに結果なし。今扱う必要が生じた時だけ確認し、未報告を失敗にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "walking-and-sleep",
+      "subject_refs": [
+        "morning-consecrated-time",
+        "sleep-tradeoff"
+      ],
+      "question": "歩行習慣のその後と、十分な睡眠を保てる時間帯は何か。",
+      "scope": "次の生活上の判断に必要な時にCurrent Human Realityから解決。移行の必須解消条件ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "heat-recovery",
+      "subject_refs": [
+        "heat-blister-report"
+      ],
+      "question": "水疱のその後、対応、機器と使用条件はどうか。",
+      "scope": "このBranchを再開する時のSafety/Medical判断に効く。現在の傷の状態を推測しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    },
+    {
+      "id": "seasonal-field-effect",
+      "subject_refs": [
+        "portal-seasonal-release"
+      ],
+      "question": "実際の季節メモと後日の想起が生活でどう役立つか。",
+      "scope": "機能の保存・限定検証とは別。今すぐ試験入力や新TaskをHumanへ要求しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": []
+      }
+    }
+  ],
   "extensions": {
     "revision_history": [
       {
@@ -260,6 +714,27 @@
           "seasonal-s03",
           "seasonal-s04",
           "seasonal-s05"
+        ]
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-03",
+        "reason": "Human承認された02→03準備として朝の中心・Correction・報告と安全上の境界、Portal保存成果、移行承認を追加。既存Source/Node/Edgeを変更せず保持。",
+        "source_refs": [
+          "morning-s01",
+          "morning-s02",
+          "morning-s03",
+          "morning-s04",
+          "morning-s05",
+          "morning-s06",
+          "morning-s07",
+          "morning-s08",
+          "morning-s09",
+          "morning-s10",
+          "heat-s01",
+          "transition-s01",
+          "transition-s02",
+          "portal-release-s01"
         ]
       }
     ]
