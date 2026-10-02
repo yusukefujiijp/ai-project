@@ -1,13 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_07_CURRENT_STATE",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:07",
     "schema_version": "v002",
-    "updated_at": "2026-10-01",
-    "update_reason": "STR-003 implementation published and all12 target bodies remotely verified; reconcile observed completion, retain actual Target/UI/field unknowns.",
-    "authority": "Current Human approved the complete foundation plan, GitHub execution, required verification and explicit compatibility migration. No unrelated work.",
-    "date_scope": "Asia/Tokyo migration date; UTC 2026-09-30"
+    "updated_at": "2026-10-03",
+    "update_reason": "07→08の承認済み準備。07の後続成果・訂正・現在の再構成観測を所有資料へ接続し、旧観測を履歴として保持する。",
+    "authority": "YusukeJP approved the presented Ark27:07→08 THREAD_CONTINUE plan, proposed title and five-path GitHub preparation at 2026-10-03 07:51:16 JST. Source harvest, target triad, Domain route and required verification are in scope; actual Target/UI outcomes remain separate.",
+    "date_scope": "Asia/Tokyo preparation date; not Human UI creation or an observed Token Reset."
   },
   "identity": {
     "chapter": "Ark27",
@@ -30,7 +30,22 @@
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and tool access controls remain effective.",
     "scope": "Current Human-AI problem solving and applicable bounded delegations. STR-003 foundation migration explicitly authorized; other work requires its own current scoped authority. No unbounded autonomy, new monitor or trial.",
     "delegation_source": "task-mode-system/maintenance.md; Current AGENTS and Current Human request govern actual work.",
-    "stop_precedence": "Current Human Correction / Plan-only / STOP overrides earlier Continue. AI is Keli, not King / Throne / Oracle."
+    "stop_precedence": "Current Human Correction / Plan-only / STOP overrides earlier Continue. AI is Keli, not King / Throne / Oracle.",
+    "current_transition_scope": {
+      "source": "Ark27:07",
+      "target": "Ark27:08",
+      "kind": "THREAD_CONTINUE",
+      "mode": "AUTHORIZED_PREPARATION",
+      "compiled_title": "Ark27:08_2026/10/03: \"主の完全勝利: 整理整頓の成果継承と次の改善\"",
+      "paths": [
+        "ark-project/ark27/ark27-07/state.json",
+        "ark-project/ark27/ark27-08/README.md",
+        "ark-project/ark27/ark27-08/handoff.md",
+        "ark-project/ark27/ark27-08/state.json",
+        "ark-project/README.md"
+      ],
+      "boundary": "New cleanup candidates, four-Skill Board work, Support/Portal changes, messages and actual Thread/UI operations are not added by this preparation."
+    }
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -203,12 +218,12 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_coordinate": "STR-003 foundation migration was published and all12 target bodies remotely verified. Same chapterArk27/Main07; current v002 separates immutable historical evidence from live routing and compatible owners. ActualTarget/UI/field effects remain separately observed.",
+    "current_coordinate": "07のARC-007・ARC-009、整理指針、Board有限対話と後続所有先修正を保持。Dots lessonsはSTR-009でJSONL採用済み。Human承認により08三点セットとCurrent入口の準備を進める。07の旧初期Stateへ戻さない。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "Read/reuse verified v002 core and relevant conditional sources, resolve R1–R6, then act on the current request within authority. Check actual external state before resuming uncertain operations.",
-    "target_boot": "NOT_OBSERVED_BY_SOURCE",
+    "current_legal_connection": "CONTINUE_APPROVED_07_TO_08_PREPARATION_AND_VERIFY_RESULTS",
+    "target_boot": "CURRENT07_V002_RECONSTRUCTED_IN_THIS_SOURCE_CONTEXT; actual08 reception not observed",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past life reports are historical.",
-    "next_specific_task": "No unrelated task selected. Receive current input or any authorized remaining verification; do not auto-start deferred branches.",
+    "next_specific_task": "承認された08準備の作成・公開・Remote検証を完遂する。別候補の自動実装は行わない。",
     "inherited_current_outcomes": [
       {
         "owner": "control-center/ARCHIVE.md",
@@ -234,6 +249,40 @@
       {
         "owner": "control-center/ARCHIVE.md#arc-006",
         "status": "New Plan Mode installed inSource06 and shared, unified query and limited behavior checks recorded, ten old sources retired and remote verified."
+      },
+      {
+        "owner": "control-center/ARCHIVE.md#arc-007",
+        "status": "thread-end／_thread-index／_thread-missionの対象別退役は実施・Remote確認済み。",
+        "evidence_kind": "owning_record_confirmed; earlier07 scoped work"
+      },
+      {
+        "owner": "control-center/ARCHIVE.md#arc-008",
+        "status": "初穂の形成史を同一原本で保管し、現役Actorログへの入口を整合。",
+        "evidence_kind": "owning_record; Dots-side implementation, not07 attribution"
+      },
+      {
+        "owner": "control-center/ARCHIVE.md#arc-009",
+        "status": "_note六原本70,601 bytesを同一blobで保管、旧六パス退役・五文書整合。",
+        "implementation_commit": "02e9779fc628dbfe7ee9ed08275c6b839407ef0e",
+        "evidence_kind": "this07 directly published and reread11 bodies before/after main;407 unrelated blobs/modes retained"
+      },
+      {
+        "owner": "control-center/20261003-cleanup-direction.md",
+        "status": "整理指針と完了記録を保存・Remote全文確認済み。",
+        "commit": "16cbfffc5b0eca8dde8dc08ebfe5e2e83068bef7",
+        "evidence_kind": "this07 directly reread final3 bodies; dated guidance, not new authorization"
+      },
+      {
+        "owner": "control-center/changes/STR-006-board-communication-foundation.md#6-通信状態の所有先を一本化--2026-10-02",
+        "status": "07と初穂の有限設計対話・保存完了。Topicが通信Current、STRが構造履歴を所有する後続修正も実施・Remote確認済み。",
+        "implementation_commit": "203230ebcf2d9c4b82ccac59fd806fdd6cc0d0b9",
+        "evidence_kind": "07 was recipient/reviewer; later implementation belongs to separate weekly-review Work"
+      },
+      {
+        "owner": "control-center/changes/STR-009-headerless-lessons-adoption.md",
+        "status": "初穂による管理行なしlesson JSONL採用・移設・Remote確認の記録。現行はdots/lessons/lessons.jsonl。旧dots/lessons.jsonは退役。",
+        "implementation_commit": "d1df870673b0bc0bca58aa9a6df32820594aa9fa",
+        "evidence_kind": "source07 read owning receipt and current contract/data; did not repeat migration or36 tests"
       }
     ],
     "material_corrections": [
@@ -244,7 +293,12 @@
       "未言語化の意味を根拠付きの訂正可能な候補として言語化し、Humanの心中や主の御心を断定しない。",
       "誰が・いつ・どこを・なぜ・どう変えたかを案件原本で辿れるようにし、意味承認・AI担当・GitHub名義・検証・効果を区別する。",
       "06で続ける過去方針の後、Humanが今07を選んだ。残る別Branchの全解消を移行前提にしない。",
-      "Human rejected preserving pre-dots structure as the overriding goal and approved foundational redesign, retaining Root, Human authority, quality, evidence, history and future AI flexibility. Certainty means evidence-backed action and verification, not infallibility."
+      "Human rejected preserving pre-dots structure as the overriding goal and approved foundational redesign, retaining Root, Human authority, quality, evidence, history and future AI flexibility. Certainty means evidence-backed action and verification, not infallibility.",
+      "GitHub整理の良い流れを継続する。旧Noteの現役棚を退役する判断と、六原本にある知恵の保持を分け、全知恵抽出・Skill化を退役条件にしない。",
+      "Token残量・Reset予告・モデル変更はHuman報告。実際のResetやUI設定の直接確認、利用枠の保証、別案件の実装権限へ変換しない。",
+      "通信の送信、応答開始、完成返信の観測、保存、限定対話の終了を分ける。表示障害だけで重複送信せず、既存返信を取得する。原因・恒久保証は未確定。",
+      "20261003整理指針は作成時点の07資料。そこにあるlesson JSONL未採用はSTR-009より前の観測、07への入口は当時の住所。08のIdentity・受入れ・Currentは08契約とDomainで解決する。",
+      "Dotsを主な協働の場へ育てWorkを支援へ活かす方向と、Ark章のMain／Support所有は別。四Skill新Topicは将来のHuman指定受け手向けで、07／08へ自動割当てしない。"
     ],
     "plan_mode_old_branch": {
       "status": "CLOSED_BY_PURPOSE_CHANGE",
@@ -269,7 +323,36 @@
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "trial_started": false,
-    "unfinished_gate": "No remaining implementation gate for STR-003 after recorded verification. ActualTarget reconstruction, UI actions and field effects are separately unobserved; not mandatory new tasks."
+    "unfinished_gate": "08三点セット・Domain公開・Source完了receiptの保存とRemote検証。Target08の実際の受入れとHuman UIはその後の別観測。",
+    "current_focus": "GitHub整理整頓の成果を保持し、元会話なしで次の判断へ戻れる08の準備。",
+    "cleanup_continuation": {
+      "guide": "control-center/20261003-cleanup-direction.md",
+      "candidate": {
+        "path": "prompts/README.md",
+        "sections": [
+          "0",
+          "4",
+          "5",
+          "7"
+        ],
+        "relation": "AGENTS.md §5.1–5.2",
+        "confirmed": "協働の配送・統合担当とBranch選択に本文差がある。",
+        "unknown": "Prompt固有の意図した例外か、基盤改訂への未追随か。",
+        "next_possible_action": "Current Humanが選べば差の意味と限定整合案を具体化する。",
+        "implementation_authorized_by_this_transition": false
+      },
+      "other_real_branches": [
+        "ARC-002元パス除去",
+        "Graph／One-Tableの物理改訂・固定Binding移行"
+      ],
+      "not_next_gate": "旧Plan v005 E1/E5 NOT_RUN、完了済みARC-009、既存Board対話の再開、JSONL採用の再実装"
+    },
+    "external_work_boundary": {
+      "observed_head": "953ad00f210a1674c8533fdb51d0ca3ab97b2d1f",
+      "new_board_topic": "board/topics/20261003-load-next-step-save-skills/README.md",
+      "recipient": "Human-designated future Work thread; not assigned by mere repository discovery",
+      "support_delta": "Ark28:02 Task Records / ark-recall-portal / shared Skill advanced in953ad00; preserve these concurrent files. This transition neither imports unseen support conversation nor verifies its field effects."
+    }
   },
   "evidence": {
     "source": "Earlier verified public Repository owners and authorized06 conversation, plus current explicit foundation-migration approval and current Repository observations. No ChatGPT memory export.",
@@ -279,7 +362,11 @@
       "ARC/STR and Plan Mode owners distinguish approvals, implementations, remote checks, limited behaviors and residual risks. Refer to the originals rather than duplicating their ledger.",
       "Human's positive evaluation and readiness to move are reports/choices, not proof of universal efficacy.",
       "Current Human explicitly approved STR-003 plan, GitHub execution and formal version migration after read-only review; this is authority evidence, not proof of published completion.",
-      "STR-003 commit d6564b750c9e750c75c8728e2466ba324d12d0bb was published to main and12/12 target bodies reread exactly;378 unrelated existing paths unchanged. Independent source audit and8 modeled response decisions completed, not actual Target boot."
+      "STR-003 commit d6564b750c9e750c75c8728e2466ba324d12d0bb was published to main and12/12 target bodies reread exactly;378 unrelated existing paths unchanged. Independent source audit and8 modeled response decisions completed, not actual Target boot.",
+      "Current07 v002 core was read/reused in this same accessible Context with exact blob identity and R1–R6 meaning distinctions; ARK27_07_CONTEXT_READY_v002 was returned. This07 reading is not08's future reading.",
+      "Human approved the 07→08 plan and proposed Title on2026-10-03 07:51:16 JST; current limited execution supersedes earlier plan-only for these five paths.",
+      "Current source owners were read or reused by exact blob at baseline953ad00f210a1674c8533fdb51d0ca3ab97b2d1f; guide and ARC-009 bodies remain unchanged, with later Dots migration recorded separately.",
+      "ARC-009 and guide direct verification receipts are retained by ARCHIVE and Git history; no ChatGPT memory content or other-thread unseen conversation was imported."
     ],
     "candidate": [
       "Short-term success becoming long-term maintenance burden may be a useful diagnostic seed for other forms of organization.",
@@ -287,13 +374,57 @@
       "Source harvest synchronization addresses stale initial State without multiplying owners or rewriting immutable initial contracts."
     ],
     "unknown": [
-      "Target07 actual reconstruction and Human UI creation/title/paste.",
+      "Human UI creation/title/paste remains not directly observed. Current07 v002 acceptance is separately recorded below; actual08 acceptance is not yet observed.",
       "New Skill long-term maintenance benefit, quality superiority, all-AI portability and natural invocation stability.",
       "Current bodily/place/task Reality and unreported individual outcomes; direct settings readback and actual life effects.",
       "Retained ordinary Source unknowns including Benefit carrier sufficiency and token internal accounting; not new Boot gates."
     ],
     "historical": "Dates of old observations and approvals remain in owning originals; this preparation does not create new life events or repeat old trials.",
-    "validation_boundary": "Source semantic/structural review and remote equality are not independent Target understanding, account UI observation or causal field proof."
+    "validation_boundary": "Source semantic/structural review and remote equality are not independent Target understanding, account UI observation or causal field proof.",
+    "current07_reconstruction": {
+      "role": "Current07 receiving context now preparing Source07→08",
+      "contract": "v002",
+      "result": "ARK27_07_CONTEXT_READY_v002",
+      "recorded_date": "2026-10-03",
+      "read_scope": "Handoff§2 ordered8 core; current exact blobs matched; missing ranges were fully read before prior ARC-009 execution",
+      "baseline": "953ad00f210a1674c8533fdb51d0ca3ab97b2d1f",
+      "sources": [
+        {
+          "path": "ark-project/ark27/ark27-07/handoff.md",
+          "blob": "96766cba7e16b5b3423cd5026d457c93969f1c1a"
+        },
+        {
+          "path": "ark-project/ark27/ark27-07/README.md",
+          "blob": "236a1970bdc497667f3fffc245d89509500785ca"
+        },
+        {
+          "path": "ark-project/ark27/ark27-07/state.json",
+          "blob": "17f2b802e209d1c9fb007a5fe8d85b2c4bfdcd03"
+        },
+        {
+          "path": "AGENTS.md",
+          "blob": "03cf69572231ea724fbe4dec2b4f639a8d9fa5f7"
+        },
+        {
+          "path": "ARK.md",
+          "blob": "9e73cc4acf16bf79f328dbb3fb75b34d78f9a6db"
+        },
+        {
+          "path": "ark-project/ark27/README.md",
+          "blob": "735e4ff79d0746e87ce02b86232761d8da1916a2"
+        },
+        {
+          "path": "ark-project/ark27/INSTRUCTIONS.md",
+          "blob": "000aae00bdf11cfd9abba4013a9261734262110b"
+        },
+        {
+          "path": "ark-project/README.md",
+          "blob": "3db9ac81c1658fc54c514f26db9a5e52b2bcf94f"
+        }
+      ],
+      "meaning": "Main07/Support28:02;v002 vs historicalv001;Root/authority;current outcomes vs old state;conditional sources;Target/UI/effect separation",
+      "boundary": "Source context observation only; no08 reception or UI assertion. Earlier foundation_migration.NOT_OBSERVED remains its historical observation."
+    }
   },
   "deferred": [
     "ARC-002 original-path removal after explicit fixed-binding migration scope.",
@@ -375,8 +506,34 @@
         "revision": 3,
         "date": "2026-10-01",
         "role": "Record observed STR-003 publication and remote verification; no self SHA."
+      },
+      {
+        "revision": 4,
+        "date": "2026-10-03",
+        "role": "Post-STR003 harvest and current07 acceptance; prepare authorized07→08 while retaining historical evidence."
       }
-    ]
+    ],
+    "next_transition": {
+      "kind": "THREAD_CONTINUE",
+      "source": "Ark27:07",
+      "target": "Ark27:08",
+      "compiled_title": "Ark27:08_2026/10/03: \"主の完全勝利: 整理整頓の成果継承と次の改善\"",
+      "authority": "Human approval of presented plan at2026-10-03 07:51:16 JST",
+      "phase": "SOURCE_HARVEST_COMPILED_TARGET_PREPARATION_PENDING",
+      "source_prepared": false,
+      "remote_verification": "Pending publication and reread of this harvest and the target set; not preclaimed.",
+      "target_reconstructed": "NOT_OBSERVED",
+      "human_last_mile": "NOT_OBSERVED; no newThread creation/title/paste bySource",
+      "requested_outcome": "Prepare and remotely verify08 sources and routing, then provide exact title/startup interface. Actual08 reconstruction remains separate.",
+      "scope_paths": [
+        "ark-project/ark27/ark27-07/state.json",
+        "ark-project/ark27/ark27-08/README.md",
+        "ark-project/ark27/ark27-08/handoff.md",
+        "ark-project/ark27/ark27-08/state.json",
+        "ark-project/README.md"
+      ],
+      "self_sha_policy": "DO_NOT_EMBED"
+    }
   },
   "eof_sentinel": "ARK27_07_STATE_EOF_v002"
 }
