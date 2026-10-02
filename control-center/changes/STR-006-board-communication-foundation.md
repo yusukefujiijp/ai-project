@@ -2,17 +2,20 @@
 title: "STR-006 — Board協働通信の初版"
 record_id: "STR-006"
 canonical_path: "control-center/changes/STR-006-board-communication-foundation.md"
-version: "v001"
+version: "v002"
 record_date: "2026-10-01"
+updated: "2026-10-02"
 base_commit: "4fe6572b56b3ac5ed2649b52385c74682d45d83f"
 actor_id: "dot-0000"
 actor_display_name: "Dot00:00; 初穂"
-status: "implemented and remotely verified / Ark27:07 reply observed / Ark28:02 reception unobserved"
-role: "Board origin, scoped implementation and verification evidence"
-expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v001"
+status: "Initial Board implementation remotely verified on 2026-10-01; subsequent structural revision evidence in section 6"
+role: "Board origin, structural revisions and dated implementation/verification evidence"
+expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v002"
 ---
 
 # STR-006 — Board協働通信の初版
+
+**通信の最新観測は[TopicのCurrent](../../board/topics/20261001-dots-work-reconnection/README.md#current)が所有する。** 本記録の§1–5は2026-10-01の初版形成・実装と後続通信の保存に関する時点付きの経緯であり、通信状態を追随更新する場所ではない。後続の構造改訂は§6へ。冒頭のrecord_date・base_commit・Actorは初版の情報で、後続改訂の担当とは区別する。
 
 ## 1. Humanの目的と承認
 
@@ -96,4 +99,28 @@ Dotsは誰とどう協働するかのCurrent方向・身元・形成経験、con
 
 復元が必要なら本件の差分を確認し、後続の返信・Human・他AIの変更を保持して修正する。Repository全体を過去へresetしない。
 
-EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v001
+## 6. 通信状態の所有先を一本化 — 2026-10-02
+
+### 目的・根拠・担当
+
+Humanは本週次レビューで指摘されたTopicとSTRの状態重複を重視し、Plan-onlyでの調査・計画提示後、問題を解決し今後の同様の問題も防ぎたい、この問題に多くの時間をかけられない、と依頼した。ここは現在の対話の編集要約。AI側が更新先の照合と修正・保存・検証を引き受け、Humanへ反復管理を戻さないための実施である。
+
+基点はmain [1eab746](https://github.com/yusukefujiijp/ai-project/tree/1eab74651f254ec32099c107e0ad90fef9a5de16)。[当時のSTR-006](https://github.com/yusukefujiijp/ai-project/blob/1eab74651f254ec32099c107e0ad90fef9a5de16/control-center/changes/STR-006-board-communication-foundation.md)のstatusとTopicに同じ通信状態があり、[対話記録§6–9](https://github.com/yusukefujiijp/ai-project/blob/1eab74651f254ec32099c107e0ad90fef9a5de16/board/topics/20261001-dots-work-reconnection/replies/20261001-ark27-07-board-structure-dialogue.md)では未実装の改善提案だった。二重の更新責務は確認したが、それによる誤送信・更新漏れ等の実害を観測したわけではない。
+
+目的・実行依頼はHuman YusukeJP、今回の編集・実装・統合はこの週次レビューを扱うChatGPT WorkのAI。dot-0000／初穂として通信を観測したとは称さない。GitHub author／committerと実装時刻は実commitで辿る。過去の送信承認を流用せず、今回の変更から外部送信を開始しない。
+
+### 三パスの変更と互換境界
+
+- [Board入口](../../board/README.md)をv002へ改訂し、各Topic内の一つのCurrent欄、時点付きの根拠、STRの構造変更記録という更新責務を明記する。保存担当AIが根拠とCurrentを統合し、保存後に再取得する判断を既存入口に置く。
+- [本Topic](../../board/topics/20261001-dots-work-reconnection/README.md)は§6 Currentを最新観測の更新先とし、冒頭statusを案内へ変更する。通知・受信・対話・保存の記録はHistoryとして保持する。通知v001、receipt revision 2とその観測時刻、依頼の意味、既存の返信二原本を維持する。
+- 本記録はv002として、冒頭statusを初版の構造実装・検証へ限定し、通信のCurrentをTopicへ案内する。§1–5の当時の経緯を残し、今回の理由・変更・検証を本節へ置く。
+
+通常の返信でSTRの通信状態を書き換える運用を解消する。Topicにも構造改訂の可変進捗を複写せず、本節へ案内する。日付が新しいだけで全項目の根拠を上書きしない。既存のRoot、AGENTS、各Arkの契約・仕事原本、Dotsの学びやログ、Skillは今回の変更対象ではない。
+
+### 検証の範囲
+
+公開前に三本文の差分、リンク・EOF、通知v001と実観測時刻・返信原本の保持を確認する。文書の自己点検では、旧「保存待ち」を完了根拠へ接続すること、将来のArk28返信はTopicのみのCurrent更新で扱えること、STRの編集日を通信の鮮度へ読み替えないこと、より新しい観測と保存内容の差を扱えることを確認する。これは編集AIの読解点検であり、別AIの実読解試験ではない。
+
+公開は最新mainと競合を照合して行い、三本文をRemoteから再取得して照合する。保存結果は実際の確認後に本節へ追記し、未確認の成功を先に記さない。実際のAI運用で同類の誤りが再発しなくなったことや、長期の負担軽減は別の観測である。復元時も後続の通信・他者変更を保持して必要な差分だけを修正する。
+
+EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_006::v002

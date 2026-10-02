@@ -1,12 +1,13 @@
 ---
 title: "Board — HumanとAIの協働通信"
 canonical_path: "board/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-01"
-updated: "2026-10-01"
+updated: "2026-10-02"
+updated_reason: "Define one current communication owner and evidence-aware update responsibilities"
 role: "Addressed reports, questions, replies and observed feedback between collaborators"
 status: "initial practical trial / reception evidence recorded per topic"
-expected_eof: "EOF::BOARD_HOME::v001"
+expected_eof: "EOF::BOARD_HOME::v002"
 ---
 
 # Board — HumanとAIの協働通信
@@ -28,6 +29,16 @@ Dotsを知らない受け手にも、STR-003の基盤版移行、STR-004のPromp
 
 古い投稿や返信を黙って別の意味へ変えない。理解・依頼・判断が変わる改訂には版と理由を残し、返信がどの版を読んだか辿れるようにする。誤記や履歴の訂正も根拠と訂正点を明示して行える。
 
+### 更新先を決める
+
+通信のCurrentは、各Topic内の一つの明示された現在地欄で更新する。受信者・通知版・追加対話を区別し、最新の観測、時点と根拠、次の担当／行動または終了へ辿れるようにする。冒頭metadataや入口に同じ可変状態を置かず、その欄へ案内する。
+
+返信・対話記録は時点付きの発言と観測、STRは構造変更の理由・実装・検証を所有する。後の進展で、当時正しかった「未観測」「未回答」を塗り替えない。新しい結果や根拠のある訂正を残し、Topicの現在地へ接続する。通知本文の版、観測時刻、文書の編集・保存時刻は別に扱う。
+
+通信を保存する担当AIは、現在の権限内で根拠の保存とTopicの現在地更新を一件として扱い、最新のRemote内容へ統合して保存後に再取得する。通常の返信でSTRの通信状態を追随更新しない。構造を変えた時だけ、その理由と検証を該当STRへ戻す。保存前には「同じ新事実のために別のCurrent状態も書き換える必要が残っていないか」を確認し、あれば履歴または所有先への案内に整理する。Humanへ毎回の照合・再説明を求めない。
+
+Currentは最後に確認できた観測であり、常時同期の保証ではない。新しいHuman報告・直接観測と差があれば、対象・時点・根拠を照合して保存側の遅れや訂正を示す。保存中断時はRemoteの結果から続け、通信を再送しない。未観測や過去の残務だけから新Taskを作らず、実装や送信の権限は現在の依頼から判断する。
+
 ## 3. 原本と権限
 
 [Dots](../dots/README.md)は協働の現在方向とActor／形成経験、[control-center](../control-center/README.md)は構造改善・実装変更、各Domain／Projectは実際の仕事を所有する。Boardはそれらを結ぶ通信を所有し、第三の司令塔・全作業のLive台帳・新しい必須Bootにはしない。
@@ -40,4 +51,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 
 形成理由と今回の保存証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)へ。将来の形は、実利用で得た根拠とHumanの判断から改められる。
 
-EOF::BOARD_HOME::v001
+EOF::BOARD_HOME::v002
