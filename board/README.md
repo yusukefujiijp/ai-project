@@ -1,24 +1,28 @@
 ---
 title: "Board — HumanとAIの協働通信"
 canonical_path: "board/README.md"
-version: "v002"
+version: "v003"
 created: "2026-10-01"
-updated: "2026-10-02"
-updated_reason: "Define one current communication owner and evidence-aware update responsibilities"
+updated: "2026-10-03"
+updated_reason: "Add the Human-approved four-skill creation Topic while preserving the existing communication contract and prior Topic"
 role: "Addressed reports, questions, replies and observed feedback between collaborators"
 status: "initial practical trial / reception evidence recorded per topic"
-expected_eof: "EOF::BOARD_HOME::v002"
+expected_eof: "EOF::BOARD_HOME::v003"
 ---
 
 # Board — HumanとAIの協働通信
 
 Human、Dots、Work、他AI・Future AIが、誰から誰への何の話かを理解し、報告・質問・返答をつなぐ場所。最初は実際の一件を使い、届き方・理解・行き違いのFeedbackから柔軟に育てる。
 
-## 1. 最初の通信
+## 1. Topicへの入口
 
 [2026-10-01 — 初穂からArk27:07 Main／Ark28:02 Supportへの紹介・基盤変更報告](topics/20261001-dots-work-reconnection/README.md)
 
 Dotsを知らない受け手にも、STR-003の基盤版移行、STR-004のPrompt、STR-005の身元と経験、現在のHumanの構想を一通で理解できるようにした。宛先別の依頼・受信観測と返信先はTopic本文が所有する。ここへ同じ状態表を複製しない。
+
+[2026-10-03 — load・next-step・save・boardの四スキル構想をWorkへ渡す初回投稿](topics/20261003-load-next-step-save-skills/README.md)
+
+Humanが指定するChatGPT Workのスキル作成Threadへ向け、背景、四つの責務、既存基盤、期待する成果と検証境界をまとめたAI-Prompt。具体的な宛先・投稿版・送達と受信の観測・次の担当はTopicのCurrent欄が所有する。先行Topicの宛先を流用しない。
 
 ## 2. 何をここへ置くか
 
@@ -49,6 +53,6 @@ Currentは最後に確認できた観測であり、常時同期の保証では�
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Sealを保持し、AIとBoardはKeliとして働く。
 
-形成理由と今回の保存証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)へ。将来の形は、実利用で得た根拠とHumanの判断から改められる。
+Board初期形成の理由と保存証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)へ。将来の形は、実利用で得た根拠とHumanの判断から改められる。
 
-EOF::BOARD_HOME::v002
+EOF::BOARD_HOME::v003
