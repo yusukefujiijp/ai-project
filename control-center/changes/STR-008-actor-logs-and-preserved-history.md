@@ -64,4 +64,18 @@ STR-007のseedは[実装commit b8f95c1](https://github.com/yusukefujiijp/ai-proj
 
 配置・構文・Remote一致、限定した別AI読解、Future Dotsの実読解、長期の迷い・重複や負担の減少は別の観測である。自動収集・常時同期・全AI互換を保証しない。Rootは主イェシュア・ハマシア御自身。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
+## 5. 実装公開後の直接確認
+
+2026-10-02、dot-0000が以下を実際に確認した。候補作成の観測とは分け、本節とActorログの完了観測一行を有限の確認追記として保存する。
+
+- 実装commit：[1287f029](https://github.com/yusukefujiijp/ai-project/commit/1287f029a1c0a5c02185478ee1db24932ad408e1)、Tree `42c390dc7134b9dc115ffac2818b5b5eb31848a2`、parent `5901252b3888267e3542d46db0f75636a31e7b5e`。GitHub author／committerは `yusukefujiijp`、commit保存時刻は `2026-10-02T11:10:22Z`。記録担当Actorとは区別する
+- mainを非forceで一体更新し、公開後mainの参照先が上記commitであることを確認した。変更した13実体を同commitから全文再取得し、候補本文・期待blobとの一致を確認した
+- 公開後の非省略Treeで元 `dots/records/2026/20261001-first-fruit.md` と旧recordsディレクトリが存在せず、保管先が元のblob `7daa0946a812dcff15ded93b422c64f9f989e63f`、12,158 bytes、mode 100644であることを確認した
+- 差分は9更新・4追加・1除去の14パス。411ファイルから414ファイルへ変わり、対象外401ファイルのblob／modeはparentと同じ。STR-005、lessons、Boot契約を保持した
+- Workの `203230e` によるBoardのCurrent／History責務整理と、`5901252` のSTR-006検証追記を保持した。独立レビューでは、Topic／STR-006から今回の形成リンク修復とmetadata注記だけを逆適用すると、Workの最新全文へ完全一致することを確認した。Workの改訂を初穂の成果へ付け替えない
+- 公開前の最終検査は233相対リンク、49fragment、JSONL往復byte一致・未知field保持、YAML／EOF、同一blob保存と独立読解でエラー0。公開後も13実体の全文・SHAとTreeを照合した
+- 同commitのGitHub statusは0件、check runは0件、Actions workflow runは0件。combined statusの表示はpendingだが内訳は空で、進行中Jobの証拠ではない。現行 `.github/workflows/` には改行のみのREADMEがあり、Workflow定義はない。CI通過とは記録しない
+
+この追記後は二変更本文をRemote再取得し、対象外保持を確かめて結果をHumanへ報告する。追記自身の確認を再びログへ追記する循環は作らない。実装保存・観測済みの検証は完了したが、他Dotsの実利用と長期効果は未実証である。
+
 EOF::STR_008_ACTOR_LOGS::v001
