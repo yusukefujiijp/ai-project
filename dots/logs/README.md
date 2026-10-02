@@ -16,7 +16,7 @@ Dotsが、自分の仕事・観測・訂正を、誰が何をしたかと根拠�
 
 ## 1. 何を残し、何へ戻るか
 
-判断・実装・中断・回復・確認・訂正など、後から仕事の経緯を理解するのに役立つ出来事を必要な粒度で残す。全操作・全応答・全Sessionの完全再構成や、Saveごとの新規行は義務にしない。実際の仕事の成果はその原本、通信のCurrentは[Board](../../board/README.md)、構造変更の技術証拠は[control-center](../../control-center/README.md)、再利用する学びは[lessons.json](../lessons.json)、成功の固有の意味は[success-cases](../../success-cases/README.md)が所有する。ログは短い出来事とSourceでそれらを結び、第二のCurrent台帳を作らない。
+判断・実装・中断・回復・確認・訂正など、後から仕事の経緯を理解するのに役立つ出来事を必要な粒度で残す。全操作・全応答・全Sessionの完全再構成や、Saveごとの新規行は義務にしない。実際の仕事の成果はその原本、通信のCurrentは[Board](../../board/README.md)、構造変更の技術証拠は[control-center](../../control-center/README.md)、再利用する学びは[lessonsの契約と現行JSONL](../lessons/README.md)、成功の固有の意味は[success-cases](../../success-cases/README.md)が所有する。ログは短い出来事とSourceでそれらを結び、第二のCurrent台帳を作らない。
 
 初期の固有な命名・訂正・形成史は[保管原本](../../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md)へ残した。新規記録を旧recordsへ並行追記しない。原文内の相対リンクと旧canonical_pathは保存時点のままなので、元の参照関係は[ARC-008の固定snapshot・対応](../../control-center/ARCHIVE.md#arc-008)から辿る。
 

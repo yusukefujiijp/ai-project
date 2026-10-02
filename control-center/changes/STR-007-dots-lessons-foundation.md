@@ -34,8 +34,8 @@ Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; �
 
 | Path | 変更と責務 |
 |---|---|
-| [dots/lessons.json](../../dots/lessons.json) | 改行のみのplaceholderをschema_version 1、next_id 3、初期2件へ初期化。条件付きの学びと根拠を所有 |
-| [dots/README.md](../../dots/README.md) | v003。学びへの入口、読取・適用・更新・競合・互換性の契約を追加。既存の方向・Actor・経験・Boardの所有関係は保持 |
+| [dots/lessons.json](https://github.com/yusukefujiijp/ai-project/blob/b8f95c15e61eb99ed441579150a86affaf611b75/dots/lessons.json) | 改行のみのplaceholderをschema_version 1、next_id 3、初期2件へ初期化。条件付きの学びと根拠を所有 |
+| [dots/README.md v003](https://github.com/yusukefujiijp/ai-project/blob/b8f95c15e61eb99ed441579150a86affaf611b75/dots/README.md) | v003。学びへの入口、読取・適用・更新・競合・互換性の契約を追加。既存の方向・Actor・経験・Boardの所有関係は保持 |
 | [本記録](STR-007-dots-lessons-foundation.md) | 形成理由、Human判断、四パスの責務、根拠と検証境界を所有 |
 | [control-center/README.md](../README.md) | v0.3.3。変更記録の索引から本件へ接続 |
 
@@ -50,9 +50,9 @@ Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; �
 
 二つは同じ一件から、再試行の判断と記録の扱いという別の学びを抽出したもの。二件の独立した成功、普遍的な技術保証、無期限待機の規則として数えない。新しいタブという手段自体を有効性の証明にはしない。学びの登録時刻は2026-10-02の実際の登録時刻であり、出来事が起きた2026-10-01の時刻と分けた。
 
-## 4. 採用した運用判断
+## 4. 採用した運用判断（初版時点）
 
-データ仕様の正本は[dots README §5](../../dots/README.md#5-dotsの学びを次の判断へ戻す)。本記録で第二のschemaを持たない。小さい初期蓄積では新しいDotsが全件を読み、継続時は確認済み内容を使い、文脈喪失・領域変更・関連失敗・Correction・既知の更新で関係箇所へ戻る。入口の整備を自動Boot保証と混同しない。
+当時のデータ仕様は[dots README v003 §5](https://github.com/yusukefujiijp/ai-project/blob/b8f95c15e61eb99ed441579150a86affaf611b75/dots/README.md#5-dotsの学びを次の判断へ戻す)。本記録で第二のschemaを持たない。小さい初期蓄積では新しいDotsが全件を読み、継続時は確認済み内容を使い、文脈喪失・領域変更・関連失敗・Correction・既知の更新で関係箇所へ戻る。入口の整備を自動Boot保証と混同しない。
 
 各Saveに新規lessonを強制せず、既存内容で足りる判断も認める。IDは再利用せず、counterは整理後も下げず、entry追加とcounter増加を同時に保存する。競合や未知のfield、未対応版、壊れたJSONに対して意味を消す再生成を避ける。schema改訂も互換性と現在の権限で判断し、一律のHuman待ちにはしない。重要な意味の損失や権限・Scopeの拡張はHumanへ返す。
 
@@ -64,5 +64,8 @@ Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; �
 
 検証結果は本件のGit差分と完了報告から確認する。commit時刻・author／committerはGit履歴が所有し、本記録自身のcommit SHAを本文へ自己参照で埋め込まない。保存後の正確な証拠は四パスのRemote内容とcommitである。文書・JSONの整合とRemote一致は、Future Dotsが自動で読むことや、将来の実務で再発を防げたことの証明ではない。実利用の効果は今後の経験で判断する。
 
-EOF::STR_007_DOTS_LESSONS_FOUNDATION::v001
+## 6. 後続の採用・移設（2026-10-02 UTC／2026-10-03 JST）
 
+後続Human承認により、現役の正本は管理行なしの[dots/lessons/lessons.jsonl](../../dots/lessons/lessons.jsonl)へ、現行仕様の所有先は[専用README](../../dots/lessons/README.md)へ移った。[STR-009](STR-009-headerless-lessons-adoption.md)が変更理由と検証を所有する。本記録の四パス・schema 1・counterの説明は初版のHistoricalな事実として残す。旧JSONとv003契約へのリンクは当時の実装commitへ固定した。
+
+EOF::STR_007_DOTS_LESSONS_FOUNDATION::v001

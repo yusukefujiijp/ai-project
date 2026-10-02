@@ -2,7 +2,7 @@
 title: "Dots lessons: JSON / JSONL 実ファイル比較とLiving Review"
 canonical_path: "dots/lessons/experiments/json-vs-jsonl/README.md"
 version: "v002"
-status: "two chronological frozen trials / not adopted as live storage"
+status: "frozen chronological trials / later production adoption recorded separately"
 created: "2026-10-02"
 updated: "2026-10-02"
 recorded_by: "dot-0000"
@@ -19,11 +19,15 @@ expected_eof: "EOF::DOTS_LESSONS_JSON_VS_JSONL::v002"
 
 第1試験（§1–5）は当時の契約・実測・結論を保存するHistoricalな記録。後続Human Correction、headerless候補の契約・試験結果と現在の見立ては§6にある。§1の3パスは初回の変更範囲であり、後続試験の範囲ではない。旧契約は凍結した二候補だけへ適用し、新candidateには§6.2を適用する。
 
+## 後続採用の案内（2026-10-02 UTC／2026-10-03 JST）
+
+Humanが「管理行なしでOK！」と実運用採用・移設を承認したため、現在の正本は[lessons/lessons.jsonl](../../lessons.jsonl)、現行の読取・更新契約は[専用README](../../README.md)へ移った。採用・変換の記録は[STR-009](../../../../control-center/changes/STR-009-headerless-lessons-adoption.md)。以下§1–6は各試験時点の目的・観測・推奨として保持し、「本番は変更しない」はその試験のScopeを表す。本フォルダの三つのデータファイルは凍結比較資料のままであり、現役への追記・同期先ではない。
+
 ## 1. 今回の役割と境界
 
-YusukeJPの「jsonとJSONLの2Versionを実際に作成してから内容をLiving Reviewする」という依頼と、その計画へのGitHub実行承認に基づく限定実験である。[JSON候補](lessons.json)と[JSONL候補](lessons.jsonl)は同じ2件を表す凍結比較資料。**現役の正本は引き続き [dots/lessons.json](../../../lessons.json)** であり、このディレクトリへ通常の学びを追記しない。候補を常時同期する運用も導入しない。
+YusukeJPの「jsonとJSONLの2Versionを実際に作成してから内容をLiving Reviewする」という依頼と、その計画へのGitHub実行承認に基づく限定実験である。[JSON候補](lessons.json)と[JSONL候補](lessons.jsonl)は同じ2件を表す凍結比較資料。**当時の現役正本は [dots/lessons.json](https://github.com/yusukefujiijp/ai-project/blob/d0508cd29602c56f5da98f6c1e7f742f42c6389a/dots/lessons.json)** であり、このディレクトリへ通常の学びを追記しない。候補を常時同期する運用も導入しない。
 
-保存対象は本READMEと上記二ファイルの計3点だけ。既存の正本、学びの意味・日時、[保守契約](../../../README.md#5-dotsの学びを次の判断へ戻す)、Actorログ、Workへの連絡は変更しない。この実験の成功は本番形式の採用承認ではない。
+保存対象は本READMEと上記二ファイルの計3点だけ。既存の正本、学びの意味・日時、[当時の保守契約](https://github.com/yusukefujiijp/ai-project/blob/d0508cd29602c56f5da98f6c1e7f742f42c6389a/dots/README.md#5-dotsの学びを次の判断へ戻す)、Actorログ、Workへの連絡は変更しない。この実験の成功は本番形式の採用承認ではない。
 
 入力は[固定commitの正本](https://github.com/yusukefujiijp/ai-project/blob/d0508cd29602c56f5da98f6c1e7f742f42c6389a/dots/lessons.json)。Git blobは `e289326eef11010e0d4d89d243a0b4dfe17fedb3`、`schema_version: 1`、`next_id: 3`、順序はD-L001、D-L002。両件は同じBoard対話から抽出した別判断であり、独立した二つの成功実験ではない。
 
