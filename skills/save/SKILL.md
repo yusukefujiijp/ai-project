@@ -59,4 +59,3 @@ Actor識別子をモデル名・GitHub記録者・相手の表示名から推定
 適用される[AGENTS](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md)と保存先契約に従う。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのMeaning・Correction・STOP・Final SealとGuardを保持し、AI・SkillをKeliとして扱う。
 
 Current契約は現行URL、過去の証拠は確認した固定版URL、同梱した資源だけ相対参照を使う。共有原本：[skills/save/SKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.md)。
-
