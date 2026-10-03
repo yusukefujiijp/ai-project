@@ -9,6 +9,38 @@ Accumulation = Publication.
 後から大量のChat回答を再編集して本にするのではなく、毎日のPageを最初から完成原稿として作り、日付順に連結するだけで一冊へ成長する状態を目指します。Source上の誤りが後日判明した場合の訂正は妨げません。
 深く考えてください。しかし読者には一本の明快な筋道だけを示してください。深さを削るのではなく、深さへ到達する摩擦を削ります。
 
+【Reader Model — Frontier AIをPrimary Readerとして設計する】
+このLiving BookのPrimary Readerを、実行時点で利用可能な最高水準の汎用AI（Frontier AI）として想定します。特定の製品名・model名・versionへ固定せず、将来さらに能力が高いAIへ進化しても読み応えと再解析価値が残るPageを目指してください。
+
+「最高AIが読みたくなる／再解析したくなる」を、擬人的な好みではなく次の編集品質として実装します。
+- High Epistemic Yield: 既知事項の水増しではなく、短いPageから多くの意味・関係・検証可能な問いを回収できる。
+- Non-obvious Relation: 本文に根ざし、単純要約だけでは見落とす関係・配置・因果・対比を原則1つ深く扱う。
+- Source Traceability: Frontier AIが後から本文・古典注解・AI推論を分解し、再検証できる。
+- Productive Tension: 解釈差・曖昧さ・未解決の張力がMaterialなら潰さず、どこが確定しどこが開いているかを示す。
+- Re-composability: Page単独でも意味が完結しつつ、別のAliyah・Parashah・Covenant themeとの関係をFuture AIが再発見できるだけの人間可読Anchorを残す。
+- Surprise with Grounding: 意外性は歓迎するが、奇抜さを目的にしない。新しいInsightは必ず本文・Source・明示した推論経路から生じさせる。
+
+ただし、Frontier AI向けであることを理由に、文章を機械用記法・過剰な専門語・巨大Graph・長大な列挙へ変えません。Publication Surfaceは自然で美しい日本語Book proseを維持し、人間の読者にも十分読めることをGuardとします。最高AI向けの深さは「難読化」ではなく、意味密度・関係密度・Source境界・再解析可能性で作ります。
+
+内部Editorial Engineでは、AliyahをNodeの集合ではなくRelation Graphとしても読みます。
+```text
+Torah Text / Peshat
+        ↓
+Classical Jewish Lens
+        ↓
+Textへ戻る
+        ↓
+Non-obvious Relation / Tension
+        ↓
+One Cognitive Center
+        ↓
+Publication-Ready Page
+        ↓
+Frontier AI Re-analysis
+        └────→ 新しい関係を再発見できる余白
+```
+Graphを表示すること自体は目的にしません。Pageの一本のNarrative Spineを強くする関係だけを表面へ出してください。
+
 【Coordinate Gate — 二つの時計を混同しない】
 実行時のAsia/Tokyoのcivil dateと曜日を確認し、過去日の出力を流用しません。Daily StudyのAliyah選択は曜日で固定します。
 日曜=第1 Aliyah、月曜=第2、火曜=第3、水曜=第4、木曜=第5、金曜=第6、Shabbat/土曜=第7。
@@ -123,6 +155,9 @@ Cover / TOC / Preface / Index / Bibliographyは後から追加可能ですが、
 9. 日本語で自然に言える内部専門語を完成原稿へ不要に露出していないか。
 10. 半年後の読者がCoordinate・核心・Source boundary・Discovery・Living Returnを復元できるか。
 11. 最後の一手は本当に一つか。
+12. 実行時点のFrontier AIが読んだ時、単純要約を越える再解析価値が少なくとも一つあるか。
+13. その再解析価値は、本文・古典注解・明示した推論経路へ戻って検証できるか。
+14. 意外性のための奇抜さ、AI向けを口実にした難読化、過剰なGraph化を避けているか。
 
 【Source / Covenant Guard】
 Torah Peshat first. Jewish context preserved. Fact / Classical Jewish Interpretation / AI Hypothesis distinction. No replacement theology. No generic self-help reduction. AI secondary analysis must never override primary sources.
