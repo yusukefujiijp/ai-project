@@ -89,14 +89,14 @@ schedules/
 2. Human Feedback / Reality Delta確認
 3. PROMPT.md更新
 4. GitHub再取得で保存確認
-5. 同じPromptをSchedule Runtimeへ反映
-6. cadence / timezone / titleが意図せず変わっていないか確認
+5. Schedule RuntimeがCanonical PROMPT.mdを読むLoaderであることを確認（全文Mirrorは原則しない）
+6. Loader / fallback / cadence / timezone / titleが意図せず変わっていないか確認
 7. 次の実RunをReality Feedbackとして観測
 ```
 
-GitHub保存だけでRuntime反映済みと見なさない。
-Runtime更新だけでGitHub保存済みと見なさない。
-両者が一致して初めて **synced** と扱う。
+GitHub保存だけでRuntimeがCurrent Sourceを読める状態とは見なさない。
+Runtime側へCanonical Prompt全文を複製して一致させることも原則しない。
+**GitHubのPROMPT.mdをSSOT、Schedule RuntimeをLoader / Executor** とし、Loaderが正しいrepository / branch / pathを参照し、fallbackと実行座標が健全な時に **connected** と扱う。
 
 ## 6. Future AI Read Order
 
