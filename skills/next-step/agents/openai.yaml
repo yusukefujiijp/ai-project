@@ -1,0 +1,4 @@
+interface:
+  display_name: "next-step"
+  short_description: "目的・制約・依存関係から、理由と条件のある次の接続を選ぶ"
+  default_prompt: "$next-step を使い、現在の目的・制約・根拠から、今有効な次の接続を選んでください。"

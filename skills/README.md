@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.18.1
+version: v0.19.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-09-30
+updated: 2026-10-03
 ---
 # Ark Shared Skills Hub
 
@@ -18,6 +18,10 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [SKILL.md](load/SKILL.md) | 現在指定されたSource契約。現在地の地図が必要なときだけmapへ接続 | 五観点の回復・必須不足・SourceとTargetの区別を限定確認。§3.5参照 |
+| next-step | 目的・制約・依存関係から理由ある接続を選び、実行・比較・保留・完了へつなぐ | [SKILL.md](next-step/SKILL.md) | 現在の権限。必要時だけLiving Review／Plan Mode | STOP・旧Gate・通常Unknown・後続実行承認を限定確認。§3.5参照 |
+| save | 成果・訂正・根拠・再開情報を担当原本へ残し、保存後に確かめる | [SKILL.md](save/SKILL.md) | 成果物・Task Records・Dotsログ／lessons・Boardそれぞれの保存先ガイド | 隔離素材で更新・NO_CHANGE・結果不明・取消し・衝突・並行情報保持を確認。§3.5参照 |
+| board | 相手・目的・通信状態を整理し、既存Topicへ接続 | [SKILL.md](board/SKILL.md) | [Board入口](../board/README.md)と対象TopicのCurrent | 宛先指定・既存返信・草稿と保存／送達の区別を限定確認。§3.5参照 |
 | AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [SKILL.md](living-review/SKILL.md) | 基本運用は本文、意味・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に参照 | 形式・六つの独立文脈で計九応答を確認。共有・導入の確認状態は§3.4。自然な自動選択・全AI互換性・実生活効果とは区別 |
 | Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing、[Living Reviewの共通説明](../prompts/ai-living-review.md)への必要時参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
@@ -212,6 +216,37 @@ Humanが繰り返し用いている「xxを“Living Review: Not dead data, but 
 
 2026-09-30の後続確認では、旧Seedの修正依頼時とSource差分保存時に、通常のSkill参照機能から新規living-reviewの4,204文字の本文を取得でき、当該時点のGitHub共有本文と完全一致しました。上記の取得不能は導入直後の観測として保持し、同じ未反映が現在も続いているとは扱いません。この確認を全UI・全参照経路・自然な自動選択・全AI互換性の証明へ広げません。
 
+### 3.5 load／next-step／save／boardの独立入口
+
+2026-10-03、Ark27:08でYusukeJPが四Skillの作成・検証・GitHub共有・個人Skill導入を承認しました。形成の背景と初穂側の提案は[Board v002の固定版](https://github.com/yusukefujiijp/ai-project/blob/6493a74bbd32ca2725613628ffbc7b95897a9513/board/topics/20261003-load-next-step-save-skills/README.md)にあります。今回のHumanは、WorkとDotsで同じSkillを実験的に活用してきた経験を報告し、管理不能になる冗長な複製を避けることを明示しました。これを受け、各Skillを個人Skillとして一つずつ扱い、Work用／Dots用の別Skillは作りません。
+
+短い名前で必要な共同理解を呼び戻すための四つの独立入口です。loadは意味の回復、next-stepは次の接続の選択、saveは所有先への保存、boardは目的と相手のある通信を担います。四つを毎回順番に使う規則はなく、既存map・Living Review・Plan Mode・保存先ガイドへ必要な場合だけ接続します。可変状態と契約全文は担当原本へ残し、Actorログの出来事、lessonsの再利用する学び、Boardの通信を複製しません。
+
+元会話を持たない読み手が、現在の目的、重要なCorrection・STOP、確認済みの成果と証拠、未完了・Unknown、次の確認対象・再開条件を説明できることをload／saveの意味の基準にしました。五見出しの固定出力や新Schemaではありません。全記憶・人格・実行環境の完全復元を約束せず、成果物・協働文脈・実行環境・製品予定を区別します。
+
+共有版は各SKILL.mdと最小のagents/openai.yaml、計八ファイルです。このHubを含む初版の変更対象は九ファイル。四本文はmodel-neutralで、外部原本にはRepository URLを使用します。常設スクリプト、同期機構、独立Query、新Actorは追加していません。作成は利用可能な正規skill-creator、範囲と過剰制約の確認はaudit-agent-instructionsに従いました。
+
+**実施した限定確認。** 元会話・作成計画・期待解答を渡さない五つの独立したAI文脈で計七応答を観察しました。四つは本文を指定した利用、もう一つはdescriptionの一覧から相談ごとに選択して本文を読む経路です。選択用の相談は正常四例と適用外四例で、対応する四Skillの選択と適用外の不使用を観察しました。これは限定したdescription選択であり、Work／Dots製品内の自然発動を観測したものではありません。
+
+架空資料からの意味回復では、現在の私用目的と公開STOP、当時のCSV候補と後続JSONL採用、完了・未実施・目的変更で終了した枝、Sourceによる確認と読み手自身の確認を区別しました。別の必須資料が欠けた受入れはその範囲だけ停止し、既知の採用形式については説明できました。
+
+隔離したメモ原本では、同一項目の訂正と出典追加を保存後に再読し、並行追加された項目・未知フィールド・順序を保持しました。応答喪失後に既に保存されていた同一結果はNO_CHANGE、保存後に取り消された項目は再作成せず、同一識別子の異なる内容は衝突として保留しました。next-stepは初期Goより最新STOPを保持し、相談後の明確な実行承認で見出しだけを修正して完了しました。統合担当が前後の現物を比較し、試験の変更が承認された二ファイルだけであることを確認しました。
+
+Boardの架空素材では、保存時点の受け手未指定と現在のHuman指定を分け、既存返信を受けて草稿を作りました。版の取得報告を独立検証や利用効果に変換せず、Board保存・外部送達・既読・理解を分けました。試験に本番データのReset、予定再作成、外部送信、Actorログへの記録は含めていません。
+
+**導入と証拠の境界。** 各Skillを一件ずつ正規経路で保存し、保存先から再取得した本文と初版共有本文の一致、表示名・短い説明・起動文の一致を確認しました。自然選択を許可する設定と、実際に選択された観測は別です。四SkillのDotsでの取得・呼出し、全UIへの反映、全AI互換性、実生活での効果は今回の限定試験で確認済みにしていません。Humanが報告した既存SkillのWork／Dots共用経験を、未観測の新規四Skillの動作証明へ借用しません。
+
+初版本文のSHA-256は次のとおりです。将来のCurrent本文を固定するBindingではありません。UI設定を含む導入時の照合は取得した実物で行い、環境が付与する内部設定・アイコン・内部識別子は共有版へ複製しません。
+
+| Skill | 初版SKILL.md SHA-256 |
+|---|---|
+| load | `4710c95775f82c616f6341acb4959398cc0b59222064483505af36db25717774` |
+| next-step | `78bf8455ec23941ef1552d1efde97f5526b63ee1a091ff240d9397332ac83ff4` |
+| save | `e02e1e75eff059992ba642fbc6e6d2b5f539587b420394b2447c995ed7cff25b` |
+| board | `5d83a2ed132c192525bd0e3158707f9afe4fa17c1717722ecbdf6e6133149cdc` |
+
+この履歴はSkillの形成・検証範囲を所有します。通信のCurrentは[当該Topic](../board/topics/20261003-load-next-step-save-skills/README.md)に置き、本節へ重複させません。2026-09-12のexport-manifestは当時の記録として保持します。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -219,6 +254,8 @@ Humanが繰り返し用いている「xxを“Living Review: Not dead data, but 
 - 配布先へ取り込む際は、取得元のRepository・path・commitまたはblob SHAを記録し、実際の本文を比較してください。mainは更新されるため、URLだけでは取り込んだ版を特定できません。
 - 配布先で改善が生じた場合は、共有原本との差分をReviewし、承認範囲で原本へ反映してから再配布します。無条件の双方向同期はしません。
 - 共通契約はSkill本文へ複製しません。Ark TransitionはCurrent mainの契約を読む設計なので、Skill単独のSHAだけで実行全体の再現性を保証しません。実行時に読んだ契約の版・識別情報も保持します。
+- Repository外へ取り込むSkillでは、外部のCurrent契約に現行Repository URL、過去の証拠に確認した固定commit URL、実際の同梱資源だけに相対参照を使います。
+- 同じ個人Skillを複数Runtimeで利用できる場合は、その登録物を共用します。環境名を付けた複製を増やさず、既存の登録対象・版・取得本文を照合し、必要な更新だけを行います。各環境での取得・呼出しの証拠は別に確認します。
 - 各AIへの導入場所、UI metadata、認証、利用可能な道具は環境側で扱います。GitHub保存はインストール・自動発動・全AI互換性の証明ではありません。
 
 ### 4.1 Backup and restoration
@@ -265,4 +302,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.18.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.19.0

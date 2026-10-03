@@ -1,0 +1,4 @@
+interface:
+  display_name: "load"
+  short_description: "目的・訂正・成果と根拠を回復し、続きに必要な文脈へつなぐ"
+  default_prompt: "$load を使い、現在の目的・重要な訂正・成果・未完了と再開条件を根拠から取り戻してください。"

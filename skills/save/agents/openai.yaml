@@ -1,0 +1,4 @@
+interface:
+  display_name: "save"
+  short_description: "成果・訂正・根拠・再開情報を担当する原本へ残し、保存結果を確かめる"
+  default_prompt: "$save を使い、今回残す価値のある成果・訂正・根拠と再開情報を、適切な所有先へ保存してください。"

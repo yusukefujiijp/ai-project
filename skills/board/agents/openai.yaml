@@ -1,0 +1,4 @@
+interface:
+  display_name: "board"
+  short_description: "通信の相手・目的・現状を整理し、既存Boardの適切なTopicへつなぐ"
+  default_prompt: "$board を使い、今回の通信の相手・目的・現状を整理し、適切な既存Topicへつないでください。"
