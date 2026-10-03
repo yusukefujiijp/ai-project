@@ -1,0 +1,7 @@
+interface:
+  display_name: "AI協働SNS投稿"
+  short_description: "対話と資料から、実際のAIとの協働が伝わる正確なX/SNS公開文を作成・修正する"
+  default_prompt: "$write-ai-social-post を使い、現在の会話と資料をもとに、あなたとの協働が伝わるX/SNS公開文を作成してください。"
+
+policy:
+  allow_implicit_invocation: true
