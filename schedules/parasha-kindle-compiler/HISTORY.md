@@ -55,3 +55,23 @@ Humanが `schedules/README.md` を空Fileとして作成し、GitHub-backed Sche
 
 以後、GitHubをDurable / Versioned Source、ScheduleをExecution Runtimeとして接続する。
 過剰なversion複製は行わず、Git historyを履歴のPrimaryとする。
+
+## 2026-10-03 — Frontier AI Reader experiment
+
+Human Correction / New Experiment:
+Daily Book PageのPrimary Readerを、固定された特定modelではなく、実行時点で利用可能な最高水準の汎用AI（Frontier AI）として想定する。
+
+狙いは文章を難解化・機械記法化することではない。
+最高AIが再解析したくなる価値を、次の品質へ翻訳する：
+- High Epistemic Yield
+- Non-obvious Relation
+- Source Traceability
+- Productive Tension
+- Re-composability
+- Surprise with Grounding
+
+Publication Surfaceは自然な日本語Book proseを維持する。
+Graph Modeは表示量を増やすためではなく、Torah本文・古典注解・AI推論の間にある最重要Relationを発見し、One Cognitive Centerへ圧縮するために使う。
+
+中心原則：
+**最高AI向けの深さは、難読化ではなく、意味密度・関係密度・Source境界・再解析可能性で作る。**
