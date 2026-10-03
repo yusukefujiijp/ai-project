@@ -75,3 +75,9 @@ Graph Modeは表示量を増やすためではなく、Torah本文・古典注�
 
 中心原則：
 **最高AI向けの深さは、難読化ではなく、意味密度・関係密度・Source境界・再解析可能性で作る。**
+
+## 2026-10-03 — GitHub canonical prompt becomes runtime source
+
+Frontier AI Reader追加時、Schedule側への全文複製は更新上限に達した。そこで二重管理をやめ、GitHubの `PROMPT.md` をCurrent Source、ScheduleをそのCurrent Sourceを参照して実行する薄い入口へ変更した。取得できない場合だけSchedule内の短い基本契約を使う。
+
+中心原則：**GitHub = SSOT / Schedule = execution entry.**
