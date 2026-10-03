@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-03",
-    "updated": "2026-10-03",
+    "updated": "2026-10-04",
     "canonical_path": "ark-project/ark28/ark28-03/state.json",
     "date_scope": "Asia/Tokyo creation and update dates; preparation date and subsequent receiving-AI observations are separate from UI creation and bodily state",
-    "change_reason": "Record Ark28:03's completed reception and subsequent collaboration under the current Human-authorized save experiment; connect existing Board originals, preserve material corrections and mark skill-discovery limits without duplicating communication Current."
+    "change_reason": "Record Ark28:03's completed reception and subsequent collaboration under the current Human-authorized save experiment; connect existing Board originals, preserve material corrections and mark skill-discovery limits without duplicating communication Current. Publication occurred after Asia/Tokyo midnight; align the update date and daily-record destination with the observed save date while retaining the 2026-10-03 event dates."
   },
   "identity": {
     "source": "Ark28:02",
@@ -171,7 +171,7 @@
       "purpose": "保存の実地実行を通じ、成果を残すとともに取得・保存・再開の接続で起きるBottleneckを観測する。",
       "owners": [
         "ark-project/ark28/ark28-03/state.json",
-        "records/2026/10/2026-10-03.jsonl"
+        "records/2026/10/2026-10-04.jsonl"
       ],
       "completion": "意図した変更と保持内容をRemote再取得で確認し、Humanへ実測結果を返す。保存結果の固定版は日別recordsとGit履歴から辿る。",
       "after_completion": "新入力があれば現在の権限で受け取る。なければ今回の保存を完了としHuman Reviewへ戻る。Thread終端や新Task開始とは扱わない。"
@@ -398,7 +398,7 @@
     "target_reconstruction_receipt": {
       "observer": "Work / Ark28:03",
       "observed_date_jst": "2026-10-03",
-      "recorded_date_jst": "2026-10-03",
+      "recorded_date_jst": "2026-10-04",
       "status": "TARGET_RECONSTRUCTED",
       "evidence_kind": "Own earlier in-thread full-read and explanation; saved retrospectively",
       "main_commit_at_read_start": "fe5b8033566b6ef2ec96ecf45952e663e70f426a",
