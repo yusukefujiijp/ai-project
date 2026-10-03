@@ -275,6 +275,27 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 本文作成とSNSへの投稿操作を区別し、レビュー・保存の依頼から本文生成を自動開始しない。今回の変更理由と確認範囲は本体§3へ。[write-social-post（SNS投稿）](../skills/write-social-post/SKILL.md)を短い呼出しの入口とし、詳しい執筆条件はこのPromptが所有する。起動文と共有・導入・限定確認の状態は[Skills Hub](../skills/README.md#36-ai協働sns投稿の入口)を参照する。
 
+
+### 3.15 AI Frontier Reader
+
+[AI Frontier Reader](ai-frontier-reader.md)は、成果物の主要な読者の一人に、実行時点で利用可能な最高水準の汎用AI（Frontier AI）を想定するRuntime-neutralな汎用Prompt。特定Vendor・model・世代へ固定せず、Future AIにも再解析価値が残るよう、意味密度・関係密度・根拠追跡可能性・再解析可能性を高める。
+
+```yaml
+runtime: "prompts/ai-frontier-reader.md"
+activation: "same runtime / current artifact or task"
+role: "Frontier-AI-readable knowledge quality / relation discovery / re-analysis value"
+status: "v001-candidate / active prompt / field validation ongoing"
+origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
+```
+
+「最高AI向け」を難読化・長文化・専門語増加・巨大Graph化と解釈しない。Human Readerも対象に含まれるTaskでは自然なHuman-readable Surfaceを保持し、内部ではGraph的に重要なEdgeを探索しても、最終成果にはCurrent Goalへ効く関係だけを残す。
+
+中心原則：
+
+> **最高AI向けの深さは、難しさや情報量ではなく、意味密度・関係密度・根拠追跡可能性・再解析可能性によって作る。**
+
+研究、設計、レビュー、Handoff、記事、Book Page、Knowledge Asset等へ汎用適用できるが、単純変換やExact Output等でMaterialな利益がない場合は機械的に適用しない。別Launcher／Queryは作成せず、Single-Prompt Policyに従う。
+
 ---
 
 ## 4. Human-mediated Multi-AI Use
