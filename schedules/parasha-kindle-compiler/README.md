@@ -69,6 +69,7 @@ Daily Aliyah Deep Treeから輸入するのは **内容のコピーではなく�
 
 ## 5. Current Quality Direction
 
+- Primary Reader: evolving Frontier AI — 特定model名へ固定せず、最高AIが再解析したくなる意味密度・関係密度・Source traceabilityを狙う
 - Multi-Speed Reading: 10秒 / 1分 / 5分
 - Direct Answer First / Insight Title
 - One Narrative Spine
