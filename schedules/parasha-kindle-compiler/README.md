@@ -30,7 +30,7 @@ Accumulation = Publication.
 - Timezone: Asia/Tokyo
 - Current Prompt Source: [PROMPT.md](PROMPT.md)
 
-GitHubはExecution Runtimeではない。更新時にRuntimeとの一致を検証する。
+GitHubはExecution Runtimeではない。Current PROMPT.mdをSSOTとし、Schedule Runtimeは毎回Canonical Promptを取得して実行する薄いLoader / Executorとして扱う。全文Mirrorは原則しない。
 
 ## 3. Relation Graph
 
@@ -86,7 +86,7 @@ Daily Aliyah Deep Treeから輸入するのは **内容のコピーではなく�
 ```text
 PROMPT.md update
 → GitHub re-fetch verification
-→ Schedule Runtime update
+→ Runtime Loaderの参照先 / fallback確認
 → Runtime coordinate verification
 → next real run
 → Human Reality Feedback
