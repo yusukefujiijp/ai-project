@@ -38,7 +38,7 @@ updated: "2026-10-03"
 last_reality_reviewed: "2026-10-03"
 route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
 route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
-updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts."
+updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup."
 foundation_migration_base: "d574927dd1671e2acec20e1a6c17f569ae23322f"
 foundation_change_record: "../control-center/changes/STR-003-persistent-collaboration-foundation.md"
 prior_main_route_review_scope: "The following historical_main_route_preparation retains the 2026-09-27 observations; foundation migration evidence remains with STR-003."
@@ -129,6 +129,10 @@ Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への�
 **Support。** [Ark28章](ark28/README.md)と[Ark28:03 State](ark28/ark28-03/state.json)が支援の役割・準備・受入れ・到達・効果を所有する。02→03もHuman承認による同章継続であり、朝の聖別とPortalの季節対応を継承する。新しい受入条件は[03 Handoff](ark28/ark28-03/handoff.md)、準備・保存のReceiptは[Source02 State](ark28/ark28-02/state.json)へ進む。B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等の柔軟な受け皿を保持する。Main Threadが進むたびに支援章を新設せず、隠れた同期・自動Main移管・支援側意図の変更をしない。章ペアの準備方針は§4.1。
 
 過去の生活報告、GCI Uploadやメモリ保存のHuman成功報告、Sourceの準備完了とTargetの実理解を区別する。未報告を失敗・完了・未実行へ補完せず、過去Bodyを現在Bodyにしない。ChatGPT長期メモリの内容・保存応答・取得結果をGitHubへ輸出しない。RootとGuardを維持したまま、Sourceの意味は現在の依頼に必要な深さで回復する。
+
+### 0.2 Pickup Threads / Ark00-01
+
+[Ark00-01: Pickup Threads](ark00-01/README.md)は、Ark00などから選んだ価値あるThreadや繰り返し活用するThreadを、埋もれず再開・再利用するためのProjectである。`ark00-01`はProjectの識別子であり、Ark00の第1Threadや新しいMain章ではない。指示バックアップと参照資料はリンク先が所有する。Pickupは任意の経路として扱い、既存のMain／Support入口を維持する。
 
 ---
 
