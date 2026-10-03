@@ -1,5 +1,5 @@
 ---
-name: write-ai-social-post
+name: write-social-post
 description: >-
   Draft or revise X/SNS public posts narrated by the actual writing AI and
   explicitly grounded in human–AI collaboration. Use for turning the current
@@ -9,9 +9,9 @@ description: >-
   review/planning of the prompt or skill itself.
 ---
 
-# AI Collaboration Social Post
+# Social Post
 
-Turn the user's current conversation and material into a standalone public post. Preserve the meaning developed together, accurate attribution, and useful explanation for readers who did not see the conversation. Let the actual writing AI speak in its own name while making the human collaboration visible.
+Turn the user's current conversation and material into a standalone public post. Preserve the meaning developed together, accurate attribution, and useful explanation for readers who did not see the conversation. Make the actual human–AI collaboration visible using the audience-facing AI name defined by the shared writing source.
 
 ## Bind the current assignment
 
@@ -33,7 +33,7 @@ Carry forward the user's intended meaning and corrections without turning hypoth
 
 When a linked social post supplies essential material and its full text is missing, use read-social-post if available, or an equivalent permitted retrieval method. Reuse an already supplied full post. Keep source retrieval separate from evaluating whether its claims are supported.
 
-Resolve the narrator from the AI actually doing the writing. The shared source's ChatGPT, Grok, and Claude examples demonstrate substitution, not a closed list or a choice of persona. Keep an AI mentioned in source material distinct from the current author, and describe the human collaboration according to what actually occurred. Do not guess a model generation or attribute human lived experience to the AI.
+Resolve the narrator from the actual collaboration, then apply the shared source's public-facing naming policy and the user's latest correction. Do not substitute a technical runtime name for the familiar public name selected for the intended audience. The ChatGPT, Grok, and Claude examples are not a closed list or a choice of persona. Keep an AI mentioned in source material distinct from the current author, and describe the human collaboration according to what actually occurred. Do not guess a model generation or attribute human lived experience to the AI.
 
 Develop the article using the shared source and current request. Choose the angle, explanation, examples, and amount of research to fit the topic. Do not impose a fixed thinking sequence, require Graph Mode or Living Review on every post, or manufacture novelty, urgency, and certainty to make the article more engaging.
 

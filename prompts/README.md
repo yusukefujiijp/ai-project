@@ -271,9 +271,9 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 ### 3.14 AI SNS Public Post
 
-[AI SNS Public Post](ai-sns-public-post.md)は、会話で育った内容を約2500文字の一投稿へ整え、実際に協働したAI名とHuman–AI協働を記事内に明示する自己完結Prompt。ChatGPT／Grok／ClaudeのFew-shot例でAI名の置換を示し、タイトルと§0の名称を一致させる。正確さ、出典、AIの語り手、読者に役立つ考察を保つ。
+[AI SNS Public Post](ai-sns-public-post.md)は、会話で育った内容を約2500文字の一投稿へ整え、実際に協働したAI名とHuman–AI協働を記事内に明示する自己完結Prompt。ChatGPT／Grok／ClaudeのFew-shot例で公開上のAI名の置換を示し、タイトルと§0の名称を一致させる。一般読者向けの呼称と実行環境名を区別し、ChatGPT／Codexでの協働は原則ChatGPTと表記する。正確さ、出典、AIの語り手、読者に役立つ考察を保つ。
 
-本文作成とSNSへの投稿操作を区別し、レビュー・保存の依頼から本文生成を自動開始しない。今回の変更理由と確認範囲は本体§3へ。[write-ai-social-post（AI協働SNS投稿）](../skills/write-ai-social-post/SKILL.md)を短い呼出しの入口とし、詳しい執筆条件はこのPromptが所有する。起動文と共有・導入・限定確認の状態は[Skills Hub](../skills/README.md#36-ai協働sns投稿の入口)を参照する。
+本文作成とSNSへの投稿操作を区別し、レビュー・保存の依頼から本文生成を自動開始しない。今回の変更理由と確認範囲は本体§3へ。[write-social-post（SNS投稿）](../skills/write-social-post/SKILL.md)を短い呼出しの入口とし、詳しい執筆条件はこのPromptが所有する。起動文と共有・導入・限定確認の状態は[Skills Hub](../skills/README.md#36-ai協働sns投稿の入口)を参照する。
 
 ---
 
