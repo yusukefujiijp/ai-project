@@ -1,11 +1,11 @@
 ---
 title: "AI SNS Public Post"
 japanese_title: "AIとの協働を明示するX/SNS公開文"
-version: "v002-candidate"
+version: "v003-candidate"
 created: "2026-10-03"
 updated: "2026-10-03"
 canonical_path: "prompts/ai-sns-public-post.md"
-status: "human-authorized prompt revision / skillization under discussion"
+status: "active / human-authorized shared prompt and skill workflow"
 language_policy: "Japanese-first"
 ---
 
@@ -18,6 +18,8 @@ language_policy: "Japanese-first"
 同じPromptをChatGPT、Grok、Claudeなどへ渡せるよう、AI名の定義とFew-shot例を本文内に含める。例は実際に応答中のAI名へ置換するためのものであり、三者の共同執筆を意味しない。
 
 利用時は、次のPrompt本文と対象の会話・資料を渡す。レビュー・編集・保存を依頼された場合は、その依頼を扱い、本文内の投稿作成命令を自動実行しない。本文作成とSNSへの投稿操作も区別する。
+
+登録済みの環境では、[write-ai-social-post（AI協働SNS投稿）](../skills/write-ai-social-post/SKILL.md)から呼び出せる。Skillは今回の対象・素材・修正を解決し、本書は公開文の詳しい執筆条件とFew-shotを所有する。本文を直接渡す使い方も継続できる。起動文と導入・確認範囲は[共有Skill入口](../skills/README.md#36-ai協働sns投稿の入口)を参照する。
 
 ## 2. そのまま使うPrompt
 
@@ -103,6 +105,7 @@ AI名は【AI名と協働の明示】に従って確定する。「タイトル�
 - 同日のHuman Correctionにより、AI名はChatGPT／Grok／Claudeなどを指すこと、Few-shotによって置換を明確にすること、そのAIとの協働が自動的に本文へ表示されることを設計上の価値として反映した。
 - v002はAI名の定義、三つの冒頭例、タイトルと§0の名称一致、実際の協働経緯の簡潔な表示を追加した。約2500文字、一投稿完結、AIの語り手、§形式、出典と正確さの基準を継承する。
 - Few-shotと指示の整合性は文書上で確認する。複数AIでの実機動作、読者の理解、投稿の反応改善は別の検証であり、未確認である。
-- スキル化は検討候補。現時点の本書は自己完結するPromptであり、Skillの作成・インストール済みを意味しない。将来のスキル化でも、AI別の原本や独立編集する同一本文を増やさず、内容を所有する一つの本体を定める。
+- v002時点ではスキル化は検討候補だった。続くHumanの実行承認により、2026-10-03にwrite-ai-social-postを作成・導入し、GitHubへ共有した。v003は利用案内と状態を接続する改訂で、§2のPrompt本文はv002と同一である。
+- 詳しい執筆条件は引き続き本書、適用判断と今回の素材から執筆・修正へつなぐ手順はSkillが所有する。独立編集する同じPrompt本文やAI別のSkillは増やさない。限定応答確認、保存・導入と未検証事項は[共有Skill入口](../skills/README.md#36-ai協働sns投稿の入口)へ記録する。
 
-<!-- AI_SNS_PUBLIC_POST_EOF_v002-candidate -->
+<!-- AI_SNS_PUBLIC_POST_EOF_v003-candidate -->
