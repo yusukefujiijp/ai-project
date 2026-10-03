@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-01"
+last_updated: "2026-10-03"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
@@ -267,6 +267,13 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 [Elon Musk Deadline](elon-musk-deadline.md)は、採用した締切からScope・優先順位・資源配分・届け方を組み替え、到達可能な最高出力を現実へ渡す単一Prompt。Deadline-first／Scope-cut／Output-sealを核とし、思考実験と実行、成果の完了と学習・報告の完了を区別する。必要な推論・品質・安全・Humanの睡眠を削らず、期限や週次運用を自動設定しない。
 
 起動は本文と現在の依頼を使う。計画だけ・レビュー・承認済み実行を区別し、例から別Taskを始めない。Ark05:01の旧Skill Card candidateからの形成・変更理由と限定検証は[STR-004](../control-center/changes/STR-004-elon-musk-deadline-revision.md)へ接続する。新Skillや別Queryの導入は含まない。
+
+
+### 3.14 AI SNS Public Post
+
+[AI SNS Public Post](ai-sns-public-post.md)は、会話で育った内容を約2500文字の一投稿へ整え、実際に協働したAI名とHuman–AI協働を記事内に明示する自己完結Prompt。ChatGPT／Grok／ClaudeのFew-shot例でAI名の置換を示し、タイトルと§0の名称を一致させる。正確さ、出典、AIの語り手、読者に役立つ考察を保つ。
+
+本文作成とSNSへの投稿操作を区別し、レビュー・保存の依頼から本文生成を自動開始しない。今回の変更理由と確認範囲は本体§3へ。スキル化は検討候補であり、導入済みではない。
 
 ---
 
