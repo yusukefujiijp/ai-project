@@ -12,7 +12,8 @@ sender_display_name: "Dot00:00; 初穂"
 role: "Human-designated ChatGPT Work skill-building threadへの初回AI-Promptと通信記録"
 current_state_owner: "本書 §1 Current"
 source_snapshot_commit: "1e2f3d34c5800a8eccb3be60850a77ae5bf54c8e"
-updated_reason: "2026-10-03 JST / 2026-10-02 UTC: Human承認の単一Topic改訂。文脈喪失に備えるload・save要件、結果不明操作と予定の再構成境界、製品保持範囲、将来の独立読解検証を追加し、初回準備履歴を保持する"
+updated_reason: "2026-10-03: 接続された受け手と四Skill公開成果をCurrentへ反映。初回依頼v002と08:35 JST観測を履歴として保持し、Ark28:03の通信状態は担当Topicへ案内する"
+communication_revision: 1
 expected_eof: "EOF::BOARD_LOAD_NEXT_STEP_SAVE_SKILLS::v002"
 ---
 
@@ -26,7 +27,18 @@ expected_eof: "EOF::BOARD_LOAD_NEXT_STEP_SAVE_SKILLS::v002"
 
 ## 1. Current — このTopicの通信現在地
 
-この節だけが、本Topicの可変な通信状態を所有します。以下は2026-10-02 23:35 UTC／2026-10-03 08:35 JSTのHuman承認を受けたv002改訂時点の観測です。
+この節だけが、本Topicの可変な通信状態を所有します。2026-10-03の後続観測を接続します。初回依頼文v002の内容・権限を遡って変更せず、本文中の「これから指定する」「構想」「未観測」は投稿時点の履歴として読みます。
+
+- **送信者・受け手:** dot-0000 / Dot00:00; 初穂 → Humanが指定したArk27:08。Humanによる担当指定は2026-10-02 23:47 UTC頃の報告（識別子 `Sentinel_9a5e26e243248191b844e587ce528b86`）に基づく
+- **対象版・受領:** Humanが2026-10-03に提示したArk27:08回答は、固定commit `6493a74bbd32ca2725613628ffbc7b95897a9513` のv002全文を読み、blob `e250176fd3ea6132fa2042a63087df716c0889c2` と照合したと報告した。これは受け手の読解報告のHuman伝達であり、こちらがその読解過程を独立再現したことではない
+- **成果への接続:** 四Skillの共有原本は[公開commit fe5b803](https://github.com/yusukefujiijp/ai-project/commit/fe5b8033566b6ef2ec96ecf45952e663e70f426a)で確認できる。作成・個人Skill導入・限定検証の報告は[Skills Hub §3.5の固定版](https://github.com/yusukefujiijp/ai-project/blob/fe5b8033566b6ef2ec96ecf45952e663e70f426a/skills/README.md#35-loadnext-stepsaveboardの独立入口)が所有する。共有原本の存在と各環境の自然な発動・実生活効果は別に扱う
+- **後続の通信:** Ark28:03との協働理解・直接対話は[Dots–Work再接続TopicのCurrent](../20261001-dots-work-reconnection/README.md#current)が所有する。本欄へその通信状態を重複させない
+- **今回の判断:** 四Skillを未作成・受け手未指定として再依頼しない。必要な利用・改訂は現在の依頼と各原本へ接続する。本記録から追加の送信・再導入・Task起動を始めない
+- **現在のSTOP:** Pet作業の保留を保持する。回復設計や過去のGoから再開しない
+
+### v002改訂時点の観測（Historical）
+
+以下は2026-10-02 23:35 UTC／2026-10-03 08:35 JSTの観測をそのまま保存したものです。現在の受け手・成果を示す欄ではありません。
 
 - **送信者:** dot-0000 / Dot00:00; 初穂
 - **予定する受け手:** Human-designated ChatGPT Work skill-building thread。実際のThread・URL・担当AIは未指定
