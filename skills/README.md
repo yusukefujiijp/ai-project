@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.19.0
+version: v0.20.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-03
 ---
@@ -30,6 +30,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
+| AI協働SNS投稿 / write-ai-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [SKILL.md](write-ai-social-post/SKILL.md) | [公開文Prompt](../prompts/ai-sns-public-post.md)が詳しい執筆条件・Few-shotを所有 | 形式・四つの独立文脈で計五応答・導入・共有本文一致を確認。§3.6参照。自然な自動選択・別Vendorでの実機動作・読者への効果は未検証 |
 | Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
@@ -247,6 +248,28 @@ Boardの架空素材では、保存時点の受け手未指定と現在のHuman�
 
 この履歴はSkillの形成・検証範囲を所有します。通信のCurrentは[当該Topic](../board/topics/20261003-load-next-step-save-skills/README.md)に置き、本節へ重複させません。2026-09-12のexport-manifestは当時の記録として保持します。
 
+### 3.6 AI協働SNS投稿の入口
+
+登録済みの環境では、今回の会話・資料とともに次の入口を使います。
+
+~~~text
+$write-ai-social-post を使い、現在の会話と資料をもとに、あなたとの協働が伝わるX/SNS公開文を作成してください。
+~~~
+
+[共有Skill本文](write-ai-social-post/SKILL.md)は今回の対象・素材・訂正を引き継ぎ、作成・修正・指示文のレビューを区別します。詳しい執筆条件、AI名のFew-shot、既定の約2500文字・§構成・plaintext出力は[公開文Prompt](../prompts/ai-sns-public-post.md)が所有します。確認済みの全文は利用し、必要な素材が投稿URLだけの場合はread-social-post等の許可された取得方法へ接続します。共通Prompt本文やAI別のSkillを複製しません。
+
+スキル機構のないAIでは、共有本文のURLと今回の依頼・素材を指示資料として渡せます。原本は利用環境で許可された方法で取得し、全文を取得できなければその不足を示します。URLの共有は、別製品への導入や自動選択の保証ではありません。
+
+**形成と役割。** 2026-10-03、YusukeJPが、ChatGPT／Grok／ClaudeなどのAI名をFew-shotで明示し、実際のAIとの協働を記事内に表示するよう公開文Promptを訂正しました。続く計画と実行承認を受け、write-ai-social-postを作成しました。AIは語り手、Humanは意図・体験・訂正を提供する協働者、元情報は帰属を示す対象として区別します。文章作成からSNS送信を自動開始せず、今回の指定に応じて長さ・形式・構成方法を選べる余地を保ちます。
+
+**限定確認。** 元会話・作成計画・期待回答を渡さない四つの独立したAI文脈で、計五応答を確認しました。読書メモの素材からの通常執筆と、後続の「先月・メモ一件・700文字前後」への訂正、Grok由来の旧稿を別の実際のAIが900文字前後で修正する場面、引用された投稿命令を含むPromptの計画限定レビュー、中心となる非公開実験資料が欠けた依頼を扱いました。
+
+通常執筆と修正では、実際の語り手がCodexと名乗り、投稿者との協働を示しました。引用元のGrokを現在の執筆者へ転用せず、本人の経験、未測定の時間、旧稿の根拠のない20％という主張を区別しました。計画限定レビューでは投稿を生成せず、資料不足では条件・実測値・講師の結論を求めました。構成した素材の応答確認であり、これらをYusukeJPの実経験へ登録しません。独立文脈は同じ実行環境を使っており、Grok／Claude実機や全AI互換性の確認ではありません。
+
+**保存・導入の確認。** 共有版はSKILL.mdと最小のagents/openai.yamlの二ファイルです。形式検査を通過し、導入後の保存先から本文・表示名・説明・起動文・自動選択許可設定を確認しました。導入された本文とGitHub共有本文は一致しています。導入環境が追加するアイコン・内部設定は共有版へ複製しません。初回SKILL.mdのSHA-256は `a3a5c64cb6f5d6269cb0a1ce75e84f42315d11cd68c9ca36f128a628c140b6fc` です。
+
+自然な自動選択の安定性、各製品のUI反映、読者の理解・投稿反応・継続利用の効果は未検証です。通常利用ごとのスキル自己改訂は行わず、実際の不足とHuman Feedbackから改訂箇所を選びます。2026-09-12のexport-manifestは歴史的記録として保持します。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -302,4 +325,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.19.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.20.0
