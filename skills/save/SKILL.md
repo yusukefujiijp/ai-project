@@ -27,9 +27,12 @@ Arkでは保存対象に応じて、次の所有先へ進む。この一覧を�
 |---|---|
 | 成果物・方法の改訂 | その成果物・方法の既存原本と近接ガイド |
 | HumanのTask経験・訂正 | [Task Records](https://github.com/yusukefujiijp/ai-project/blob/main/formats/task-records/README.md)から当該経験原本 |
+| AIを活用した相談・調査・計画・実装・試験・回復の日時記録 | [records](https://github.com/yusukefujiijp/ai-project/blob/main/records/README.md) |
 | Actorが行った出来事 | [Dotsログ](https://github.com/yusukefujiijp/ai-project/blob/main/dots/logs/README.md) |
 | 再利用できる共有の学び | [Dots lessons](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md) |
 | 相手と目的のある通信 | [Board](https://github.com/yusukefujiijp/ai-project/blob/main/board/README.md)と対象Topic。必要ならboardを使う |
+
+AI活用の一区切りや保存依頼では、承認範囲でrecordsの記録候補を確認する。成功だけに絞らず、一行一活動の粒度・保存日・出典・追記と訂正は同ガイドに従う。既存の成果・Actorログ・Board本文を丸ごと複製せず、意味と原本への参照を残す。Plan-onlyや保存STOPを記録の自動化で解除せず、全AIの自動読込や常時収集を保証しない。
 
 Dotsの原本を扱う場合は[Dots入口](https://github.com/yusukefujiijp/ai-project/blob/main/dots/README.md)と、選んだ保存先が宣言する必須読取・現行形式に従う。Actorログの出来事、lessonsの学び、Boardの通信を混ぜず、同じ出来事を一律に全保存先へ複製しない。
 
@@ -56,3 +59,4 @@ Actor識別子をモデル名・GitHub記録者・相手の表示名から推定
 適用される[AGENTS](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md)と保存先契約に従う。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのMeaning・Correction・STOP・Final SealとGuardを保持し、AI・SkillをKeliとして扱う。
 
 Current契約は現行URL、過去の証拠は確認した固定版URL、同梱した資源だけ相対参照を使う。共有原本：[skills/save/SKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.md)。
+

@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v004"
+version: "v005"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v003 preserved in Git history; v004 implements Human-authorized persistent collaboration entry migration"
+version_basis: "v001-v004 preserved in Git history; v005 adds the Human-authorized cross-AI activity records route"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-03"
 last_reality_reviewed: "2026-09-19"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-10-03: Add the cross-AI daily activity records route; ownership and scoped validation are recorded in STR-010. No whole-repository rereview."
   - "2026-10-03: Retire the generic _note route under ARC-009; preserve six originals, their useful questions and historical evidence without creating a replacement note system."
   - "2026-10-01 JST / 2026-09-30 UTC: Replace universal cold-start/proposal and same-thread assumptions with current-request routing; keep common authority and completion rules in AGENTS. Prune duplicated contracts while preserving domain and historical source routes."
   - "2026-09-29: Retire three legacy Thread Lifecycle entries under ARC-007; preserve originals and source lineage without replacing the current transition contract."
@@ -105,7 +106,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v004 / Current-request Repository Front Door
+- Repository入口: README v005 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -150,6 +151,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 | Path | Role | Read when |
 |---|---|---|
+| [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
 | [`control-center/README.md`](control-center/README.md) | Repository全体の構造診断・改善・アーカイブの司令塔 | フォルダ・ファイルの役割、整理計画、変更理由と結果を確認する時。全作業の追加Boot条件ではない |
@@ -298,3 +300,4 @@ Root、Human Authority、Evidence、Qualityを保持し、方法とRuntimeの進
 
 > **Future AI should not restart from zero.  
 > Future AI should continue from the right coordinate.**
+
