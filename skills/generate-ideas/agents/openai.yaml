@@ -1,0 +1,4 @@
+interface:
+  display_name: "アイデア出し"
+  short_description: "分野を問わず、目的と文脈に合うアイデアを柔軟に生み出し、育てる"
+  default_prompt: "$generate-ideas を使い、現在のテーマ・目的・文脈に合うアイデアを出してください。"
