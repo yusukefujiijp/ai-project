@@ -37,6 +37,16 @@ Resolve the narrator from the actual collaboration, then apply the shared source
 
 Develop the article using the shared source and current request. Choose the angle, explanation, examples, and amount of research to fit the topic. Do not impose a fixed thinking sequence, require Graph Mode or Living Review on every post, or manufacture novelty, urgency, and certainty to make the article more engaging.
 
+## Verify the final post length
+
+Resolve the publication limit and counting method from the shared prompt and the current request. For X, mechanically measure the exact copyable payload, including its title, headings, whitespace, citations, and URLs; exclude the enclosing code fence. Use official `twitter-text` or an equivalent verified counter, not raw string length or a rough doubling estimate.
+
+When Node.js is available, run `node scripts/count_x_post.cjs --limit <resolved-limit> <post.txt>` from this skill's directory. Its required limit comes from the writing source; the helper does not own the publication policy. It accepts UTF-8 text from a file or `-` for stdin, preserves whitespace, and reports the weighted length and remaining allowance. It configures the parser for that limit rather than using the library's default 280-character validity result.
+
+The helper needs `twitter-text` (tested with 3.1.0). Reuse an available installation. If missing and package installation is permitted, install it in a temporary dependency directory with `npm install --prefix <directory> --ignore-scripts --no-audit --no-fund twitter-text@3.1.0` and expose `<directory>/node_modules` through `NODE_PATH`; do not add dependencies or generated files to the skill. An equivalent permitted counter can be used in other environments.
+
+If over the limit, remove repetition and peripheral material while preserving the core meaning, evidence, important qualifications, and collaboration statement; then count again. Recount after any subsequent title, prose, or link edit. Deliver the same text that passed the final check. If exact measurement remains unavailable, follow the shared prompt's unverified-draft handling rather than claiming a measured count or silently treating an estimate as a pass.
+
 ## Deliver and revise
 
 Check the completed article against the shared source and the current request, especially the consequential claims, scope, attribution, narrator identity, collaboration statement, and requested output. For the default post-only task, return the finished post in the source's specified format without process notes or self-evaluation. Honor explicitly requested comparisons or explanations when the current assignment includes them.
