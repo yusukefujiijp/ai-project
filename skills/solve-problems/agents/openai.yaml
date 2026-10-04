@@ -1,0 +1,4 @@
+interface:
+  display_name: "問題解決 / Solve Problems"
+  short_description: "未整理の困りごとから方法を選び、問題解決と複数問題の同時解決を進める"
+  default_prompt: "$solve-problems スキルを使い、現在の困りごとを文脈から理解して、依頼の範囲で解決を進めてください。"
