@@ -1,0 +1,78 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark28-03-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-04",
+  "updated": "2026-10-04",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark28:03",
+    "canonical_path": "ark-project/ark28/ark28-03/task-records.json",
+    "reported_date": "2026-10-04",
+    "timezone": "Asia/Tokyo",
+    "time_note": "本入力の提出時刻は2026-10-04 13:29:52 JST。記録日・提出時刻は休日前の具体的な日、買物日、購入や摂取の時刻を示さない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Current HumanがArk Recall Hub（旧称）への追加を明示依頼した範囲で、経験原本とPortal itemsへの保存・構造検査・Remote再取得まで行う。Root・Teshuvah、Human Meaning・Correction・STOP・Final SealとGuardを保持する。買物実行・通知・別仕事の開始は含まない。",
+    "source_access": "このThreadの現在のHuman入力から、追加を求めた原文を同梱した。全会話やChatGPT長期メモリの転記ではない。外部メッセージIDは付与されていない。"
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "2026-10-04の、休日前の買物で納豆を思い出せるようPortalへ追加する希望"
+    ],
+    "excludes": [
+      "このThreadの全会話・全Task",
+      "今回尋ねられた追加アイデアへの未採用のAI提案",
+      "買物・購入・摂取の実績や現在の在庫"
+    ],
+    "note": "今回の明示追加に必要な選択記録。新しい想起項目を保存するためだけに生活Taskや実施済みの出来事へ変えない。"
+  },
+  "sources": [
+    {
+      "id": "holiday-natto-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:03の可視対話、2026-10-04 13:29:52 JST提出。『Ark Recall Hub』として休日前の買物に納豆を追加する現在の依頼。",
+      "excerpt": "Ark Recall Hub\n休日前: 買物 納豆\n追加で",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "想起項目の追加希望。本人は同じ入力で他の良いアイデアも尋ねたが、AIの提案を本人の希望・経験として自動登録しない。納豆の買い忘れ、在庫不足、購入・摂取、具体的な休日前の日付や必要量の報告ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "holiday-natto-recall",
+      "kind": "practice_statement",
+      "label": "休日前の買物で納豆を思い出す",
+      "description": "Humanは休日前の買物候補として納豆をArk Recall Portal（旧Hub）へ追加するよう求めた。",
+      "scope": "休日前の買物・食材準備で使う想起候補。毎回必ず購入する命令や、今回の買物・購入・摂取の完了を意味しない。",
+      "time_text": "2026-10-04の追加依頼。対象となる休日前の日付は未指定。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-natto-s01"
+        ],
+        "note": "確認できるのは本人の追加希望。購入状況や健康上の目的を補完しない。"
+      }
+    }
+  ],
+  "edges": [],
+  "open_questions": [],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-04",
+        "reason": "Current Humanの明示追加を、このThreadの原本として選択保存。Portalの休日前Sceneへ出典付きで接続する。",
+        "source_refs": [
+          "holiday-natto-s01"
+        ]
+      }
+    ]
+  }
+}
