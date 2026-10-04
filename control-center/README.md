@@ -1,6 +1,6 @@
 ---
 title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.3.6"
+version: "0.3.7"
 canonical_path: "control-center/README.md"
 role: "Repository structure diagnosis, archive-first selection, improvement and change-history entry"
 status: "human-authorized archive-first workflow / evolving"
@@ -8,8 +8,8 @@ repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-03"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.6"
+updated: "2026-10-04"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.7"
 ---
 
 # Control Center
@@ -106,6 +106,8 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 - [STR-010: 全AI横断のAI活用日時記録](changes/STR-010-cross-ai-daily-records.md)：日別JSONLの用途・粒度・save接続と、既存原本を複製しない設計・確認範囲。
 
+- [STR-011: Prompt棚と現行権限契約の整合](changes/STR-011-prompt-shelf-authority-alignment.md)：Humanの意味・権限と委任可能な中継・結果統合を分け、mainの正本性と作業方法・公開権限を現行AGENTSへ接続した理由・変更・検証。
+
 [ARC-006](ARCHIVE.md#arc-006)は、旧Plan Mode資料の退役と新Skillへの接続を所有する。Skillの入口・配布・限定検証は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)へ進む。
 
 通常の構造修正は、意味がまとまる単位で `changes/` の一件へ記録する。今回の[STR-001](changes/STR-001-navigation-and-ownership.md)では七候補を一つの承認済み整合案件として扱った。各記録から、いつ（観測・保存時刻）、誰（Humanの依頼・承認、実装AI、GitHub上の記録者）、どこ、何を、なぜ、どう変更・検証したか、変更前の根拠、残存制約へ戻れるようにする。Git履歴は正確な差分・時刻を、変更記録は意味・判断・検証範囲を担う。
@@ -118,7 +120,7 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.6
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.7
 
 
 

@@ -9,6 +9,7 @@ change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
 deadline_prompt_update: "control-center/changes/STR-004-elon-musk-deadline-revision.md"
+shelf_authority_alignment: "control-center/changes/STR-011-prompt-shelf-authority-alignment.md"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -18,12 +19,15 @@ root_guard:
 
 ## 0. Current Coordinate / 現在座標
 
-`prompts/`は、YusukeJP × AI-Collaboratorが複数AIをHuman-mediatedに起動・接続・役割分担するための、Cross-AI Operational Shelfである。
+`prompts/`は、YusukeJP × AI-Collaboratorが目的に応じて方法を選び、単独AIでの利用や複数AIの協働へ接続するCross-AI Operational Shelfである。
+
+このREADMEはPromptの選択・役割・利用先を案内する。共通の権限・読取・実行・継続回復は[AGENTS.md](../AGENTS.md)、個別のRole・Required Sources・Binding・STOP等は適用される各Promptが所有する。必要な原本へ接続し、棚の一覧を全件の起動・必須読込へ変換しない。個別Promptで明示された読取・停止条件は保持する。
 
 ```text
 One Canonical Prompt.
 Many AI Runtimes.
-Human routes and seals.
+Human sets meaning and seals.
+AI completes authorized work.
 Reality confirms.
 ```
 
@@ -300,36 +304,23 @@ origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
 
 ## 4. Human-mediated Multi-AI Use
 
-```text
-AI-A Output
-→ YusukeJP selects, contextualizes, and routes
-→ AI-B reviews or extends
-→ YusukeJP integrates and seals
-→ GitHub main stores Canonical Reality
-```
+HumanはMission Owner、Semantic Router、Relevance Filter、Decision Authority、Human Final Sealを保持する。Human-mediatedの中心は、目的・意味・優先順位・承認Scope・Correction・STOP・最終判断をHumanが担うことにある。Root・Teshuvah・Human Foreground Oneと適用Guardは[AGENTS.md](../AGENTS.md)第3節に従う。
 
-Humanは単なるMessengerではない。  
-Mission Owner、Semantic Router、Relevance Filter、Decision Authority、Human Final Sealである。
+具体的な協働方法はCurrent Requestに合わせる。Humanが出力を選び、文脈を添えて受け渡し、統合する進め方も使える。主担当AIへ委任された範囲では、主担当が調査・作成・検証・結果統合と説明を担い、必要な他AIとの接続を、実際に利用可能なRuntime・権限・既存の役割に沿って選ぶ。Humanによる全件の手動中継や統合を、毎回の必須工程にはしない。
+
+共通の実行境界・継続回復は[AGENTS.md](../AGENTS.md)第5節が所有する。Plan-only・STOPを保持し、承認済みScope内は必要な確認まで完遂する。物理的な受渡しや作業の委任と、Humanの意味・権限の移管を混同しない。外部送信は現在の承認と利用可能な経路を確認し、文書の保存と相手への送達を区別する。
+
+通信の目的・相手・受渡し条件を具体化する必要があるときは[AI-to-AI Communication](ai-to-ai-communication.md)へ進む。本棚は、その個別契約を置換せず、毎回の複数AI起動や固定の通信手順を要求しない。
 
 ---
 
 ## 5. Mainline-First Mirror Guard
 
-`prompts/`配下のPromptは、原則として`main`上で管理する。
+`main`は、現行Prompt本体と利用案内を共有するCanonical GitHub Realityの基準である。直接main・Branch・Worktree等の作業方法と権限は[AGENTS.md](../AGENTS.md)第5節に従い、Current Request、明示Ref、利用可能なTool、競合、変更の性質から選ぶ。作業用の隔離先は第二の現役原本にせず、作業場所の選択と公開・mergeの承認を区別する。
 
-```yaml
-prompts_mainline_guard:
-  canonical_branch: "main"
-  branch_creation:
-    default: false
-    requires: "explicit Human Seal"
-  rules:
-    - "AIは良かれと思ってBranchを作らない"
-    - "重要なPromptを未Merge Branchだけに残さない"
-    - "Branchを第二のPrompt Realityとして扱わない"
-```
+完了条件は現在の依頼に結びつける。PR作成までの依頼なら、その成果と確認範囲を返し、mergeへ自動で進まない。`main`への反映が承認された成果なら、重要な変更を未Merge Branchだけに残して完了とせず、統合・Remote再取得・確認まで行う。
 
-単一の本体・必要入力・現在の利用案内の接続を、同じ`main` Reality上で確認する。歴史の再現には固定commitを使い、現役の第二原本を増やさない。
+単一の本体・必要入力・現在の利用案内の接続を、同じ`main` Reality上で確認する。歴史の再現には固定commitを使い、現役の第二原本を増やさない。中断・結果不明・並行変更への対応は[AGENTS.md](../AGENTS.md)第5.1–5.2節へ接続する。
 
 ---
 
@@ -363,7 +354,8 @@ Many AI Lenses.
 Relations first; Graph-Native Fruit returns as prose.
 When AI One-Table Interface is bound, one adaptive Graph table creates the shared lookout.
 When Dual-Benefit Branch Deadlock appears, preserve the Benefit and prune only the Current-Goal-unnecessary Carrier Branch.
-Human-mediated Handoff.
+Human meaning and authority.
+Authorized AI work and integration.
 Human Final Seal.
 ```
 
