@@ -1,7 +1,7 @@
 ---
 title: chocoZAP Sweet Spot — 記録と運用
-version: v0.2.2
-updated: 2026-09-27
+version: v0.2.3
+updated: 2026-10-04
 canonical_path: chocozap/README.md
 status: active
 ---
@@ -16,6 +16,7 @@ status: active
 - 日付基準は `Asia/Tokyo`。日跨ぎの同じ来館は開始日の下へまとめ、分かっている観察時刻は個別に残す。「今日／昨日」は報告時点から解決し、古い相対日付を読出日で解釈し直さない。実施日不明の来館だけは任意の `undated` 配列へ置く。判明時はID・出所を保って該当日へ移す。
 - `created_at` は記録作成時刻。実施・発言時刻を推定しない。未報告の項目は省略でき、省略や `null` は未確認を表す。未実施・変化なし・ゼロとは扱わない。
 - 一覧や比較はJSONから必要時に作る。「前回」はGit更新順ではなく実施日・来館から解決する。機械・使い方・来館・既知の周回を合わせ、同一来館内の変化と来館間の変化を分ける。数値だけで成長・後退や原因を断定しない。
+- 継続する基本方法はスキルが所有する。両手・片手で運用する種目では、片手のSweet Spot重量を切替基準にする。ある日に `transitions` がないことは基本方法の失効を意味せず、その日に切替を実施したとの報告がないことを表す。直近の確認済み重量を参照しても、過去日の中間重量や実施を当日へ補わない。
 
 ## 2. JSONの最小構造（schema_version: 1）
 
@@ -23,7 +24,7 @@ status: active
 - 来館：`id`、`reporter`、`spots`、`sources`。記録作成の `created_at`・`recorded_by`、本人が日付を確認した `date_source` は分かる場合に添える。来館IDは全体で一意とし、日付変更でも保持する。
 - `spots`：独立した単一重量のSweet Spot申告を記録する。系列の確認済み起点は後述の `sweet_spot_source` でも表せるため、`spots` が空でもSweet Spot未確認とは限らない。各観察の `id`、`machine`、`source` と、報告された `mode`・数値の `kg`。`mode` は片手・片足・縦／横など本人の語を保持する。`round`・感覚等は報告があれば添える。観察IDは `spots`・`sequences` を通じて来館内で一意とし、順番から時刻や周回を推定しない。
 - `sequences`：任意の配列。各観察の `id`、`machine`、`source` と、報告された `mode`、重量の順序を表す数値配列 `kg_sequence` を持つ。機械が特定できない「三頭筋」等の表記は `label` に保持し、`machine` を補わない。配列の順序・同値の反復を保持し、各段階を別のSweet Spotや確定したセット数へ変換しない。開始重量を本人がSweet Spotと確認した場合は `sweet_spot_source` に確認の出所IDを添え、未確認なら省略する。Sweet Spotの読出しでは `spots` とこの確認済み起点（`kg_sequence[0]`）を併せて読み、同じ観察を重複登録しない。重量を下げる系列の報告は、過去の重量の訂正と区別する。
-- `transitions`：任意の配列。`from`・`to` は同じ来館の系列ID、`source` は切替を説明した本人報告の出所。`at: "to_sweet_spot"` は、切替先の確認済みSweet Spot重量に達した時点で使い方を切り替える関係を表す。境界の重量で切替前の使い方でも反復したとは扱わず、元の系列へ未報告の段階を足さない。両手・片手の対応が報告されている機械にだけ結び、他の機械へ広げない。
+- `transitions`：任意の配列。`from`・`to` は同じ来館の系列ID、`source` は切替を説明した本人報告の出所。`at: "to_sweet_spot"` は、切替先の確認済みSweet Spot重量に達した時点で使い方を切り替える関係を表す。境界の重量で切替前の使い方でも反復したとは扱わず、元の系列へ未報告の段階を足さない。対象来館の報告された切替にだけ結び、別の日に切替を実施した事実として複製しない。
 - `start_time`：任意の来館開始時刻。`time` は全体の `timezone` に従う `HH:MM`、`source` は出所。「19:00頃」等は `approximate: true` を添える。実施日と組み合わせて読み、各機械の時刻・終了時刻・所要時間を推定しない。
 - `sources`：来館内の出所IDをキーに、本人の原文を `text` へ一度だけ保存する。必要なAI側の問いや文脈は `context` で区別する。`source`・`date_source`・`previous_source` はここを参照する。
 - `corrections`：任意の配列。`id`、対象観察IDの `target`、変更する `field`、`from`、`to`、訂正の `source`、訂正前の `previous_source` を持つ。IDは来館内で一意。対象の現在値と出所も更新し、履歴へ順に追記する。訂正は新しい運動観察として数えない。
@@ -49,4 +50,4 @@ Git履歴から過去版を参照できる。読むことと、正本へ復元�
 
 2026-09-24、YusukeJPの承認に基づき、AI assistantが旧日別Markdown方式から本構成へ移行した。旧資料と保存価値・本人の「予期せぬ成功」という評価・復帰条件は [ARC-005](../control-center/ARCHIVE.md#arc-005) が所有する。旧資料は目的を持って調べる保管資料であり、現在の集計・追記先に含めない。将来の休日・B-Gateへの応用は候補であり、今回実装した機能ではない。移行前後の構造確認と、速度向上・別AIの実利用の観測は区別する。
 
-EOF::CHOCOZAP_RECORDS_GUIDE::v0.2.2
+EOF::CHOCOZAP_RECORDS_GUIDE::v0.2.3
