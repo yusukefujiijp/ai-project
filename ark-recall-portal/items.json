@@ -1,11 +1,11 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 4,
-  "updated": "2026-10-03",
+  "revision": 5,
+  "updated": "2026-10-04",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望",
     "complete_project_history": false,
     "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
@@ -77,6 +77,55 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "原本の本人発言から作った想起用の編集要約。activeは想起候補であることを示し、Taskの未完了や実行命令を意味しない。"
+    },
+    {
+      "id": "holiday-natto",
+      "scene_ids": [
+        "pre-holiday-preparation"
+      ],
+      "label": "休日前に納豆を思い出す",
+      "recall": "休日前の買物・食材準備で、納豆を買っておく候補として思い出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "休日前",
+        "休日前夜",
+        "明日は休み",
+        "休みに備える",
+        "買っておくもの",
+        "買物",
+        "買い物",
+        "食材の準備",
+        "納豆"
+      ],
+      "conditions": {
+        "applies_when": [
+          "休日前の買物・食材準備について思い出したい内容を尋ねた時、または休日前の準備の合図で案内する時"
+        ],
+        "do_not_assume": [
+          "項目追加の依頼そのものが今まさに休日前の買物を始める合図",
+          "現在の在庫や在庫不足",
+          "必要量・具体的な休日の日程",
+          "購入・摂取の完了",
+          "健康上の目的",
+          "毎回必ず購入すべきという恒久命令"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-03/task-records.json",
+          "record_id": "ark28-03-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "holiday-natto-recall"
+          ],
+          "source_ids": [
+            "holiday-natto-s01"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "本人の明示追加希望から作った想起用の編集要約。activeは想起候補であり、Taskの未完了・購入実績・実行義務ではない。AIによる新しい買物案はまだ登録していない。"
     },
     {
       "id": "reset-early-transition",
