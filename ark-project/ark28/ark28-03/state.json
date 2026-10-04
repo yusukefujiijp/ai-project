@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 4,
+    "revision": 5,
     "created": "2026-10-03",
     "updated": "2026-10-05",
     "canonical_path": "ark-project/ark28/ark28-03/state.json",
     "date_scope": "Asia/Tokyo creation and update dates; preparation date and subsequent receiving-AI observations are separate from UI creation and bodily state",
-    "change_reason": "Human-authorized 03→04 preparation: preserve original03 identity, immutable bindings and successful reception; connect completed save, natto and generate-ideas, new native-read observation, and current preparation. Final public reread is recorded separately in progress.next_transition."
+    "change_reason": "Record actual public reread of the approved03→04 eight-path preparation. Preserve original03 identity, immutable bindings and its successful03 reception. Target04 reconstruction and Human UI remain unobserved."
   },
   "identity": {
     "source": "Ark28:02",
@@ -149,7 +149,7 @@
     }
   },
   "now": {
-    "phase": "SOURCE_PREPARED_AWAITING_TARGET04_PUBLIC_REREAD",
+    "phase": "SOURCE_PREPARATION_COMPLETE_TARGET04_RECEPTION_UNOBSERVED",
     "support_purpose": "Ark27 Mainを保持し、Teshuvahの中心、朝の聖別と経験の想起を含む柔軟な協働を継続する。新入力から扱う枝を選ぶ。",
     "first_legal_move": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
@@ -183,16 +183,17 @@
       "target": "Ark28:04",
       "purpose": "元会話なしで中心・成果・訂正・権限・真の残点を復元できる継承を構築する。",
       "completion": "必要8pathの構築、候補commit照合、公開、Remote再取得、最終ReceiptとTitle・起動文の引渡し。",
-      "after_completion": "Source側の準備完了。Target04自身の受入れとHuman操作は別に残す。"
+      "after_completion": "確定Titleと起動文をHumanへ渡す。Target04は自身のRequired Sources・R1–R8を確認し、既存の新入力があれば受領、BootのみならHuman Reviewへ。",
+      "status": "SOURCE_PREPARATION_COMPLETED"
     },
     "routing_observation": {
       "date_jst": "2026-10-05",
       "main": "Ark27:08",
-      "support_before_publication": "Ark28:03",
-      "prepared_support": "Ark28:04",
+      "support": "Ark28:04",
       "source": "ark-project/README.md",
-      "base_commit": "9db47ab47ea945a0eea1ca47b24d654ab42f2301",
-      "boundary": "Current route publication and reread result are owned by progress.next_transition; resolve future routing from Current Domain and Human."
+      "source_blob": "0adeb93f432aa3b24d7a6ac8078183e1202765c7",
+      "observed_publication_commit": "ffe2c495f7f57e4d3132986e1fa6d0b441b015c2",
+      "boundary": "公開後のCurrent入口をRemoteから再取得して確認。将来のCurrentは最新のDomainと有効なHuman指定へ。"
     }
   },
   "evidence": {
@@ -520,9 +521,39 @@
           "ark-project/ark28/ark28-03/harvest.md": "5837c8719365f5b2d1ee725aa92a01f640e89c2d"
         }
       },
-      "source_prepared": "CONTENT_COMPILED",
+      "source_prepared": "SOURCE_PREPARED",
       "remote_verification": {
-        "status": "PENDING_TARGET_PUBLICATION_AND_REREAD"
+        "status": "REMOTE_VERIFIED",
+        "observer": "Work / Ark28:03",
+        "observed_at_jst": "2026-10-05T07:38:14+09:00",
+        "repository": "yusukefujiijp/ai-project",
+        "ref": "main",
+        "source_snapshot_commit": "bdcb150bb62f6abb35aab191c7a15a2b007c474a",
+        "target_and_routes_commit": "ffe2c495f7f57e4d3132986e1fa6d0b441b015c2",
+        "publication_base_commit": "bdcb150bb62f6abb35aab191c7a15a2b007c474a",
+        "mode": "CONNECTOR_ONLY_MODE",
+        "method": "Construct coherent tree/commit; reread each changed file at candidate commit and compare full text/blob; verify base before non-force ref update; reread all8 paths from public main and compare full text/blob.",
+        "files": {
+          "ark-project/ark28/ark28-03/task-records.json": "a3583d9b6651f6d8f23b07aceb8dbbf2c93409df",
+          "ark-project/ark28/ark28-03/harvest.md": "5837c8719365f5b2d1ee725aa92a01f640e89c2d",
+          "ark-project/ark28/ark28-04/README.md": "2e33fa1eed2cd92e2cd2ee2890bf22f3959cd9ec",
+          "ark-project/ark28/README.md": "b941f3d4483473f6390fd501ae3feb3511b8318c",
+          "ark-project/README.md": "0adeb93f432aa3b24d7a6ac8078183e1202765c7",
+          "ark-project/ark28/ark28-04/handoff.md": "dbcc476173b76f76bbf5f0a28545b71ee9761d4c",
+          "ark-project/ark28/ark28-04/state.json": "2830fd0d9b2916bae9b5949e4446731295a1b7f9"
+        },
+        "source_state_observation": {
+          "path": "ark-project/ark28/ark28-03/state.json",
+          "revision": 4,
+          "at_commit": "ffe2c495f7f57e4d3132986e1fa6d0b441b015c2",
+          "result": "Public full content and blob matched before recording this final revision; no current self-hash is stored."
+        },
+        "scope": "8 approved paths only across source snapshot and coherent target publication. Board, Portal, shared Skills, old03 README/Handoff, Main files and unrelated work were not changed.",
+        "concurrent_changes_preserved": [
+          "skills/solve-problems and Skills Hub v0.22.0",
+          "ezekiel-temple/README.md at 9db47ab47ea945a0eea1ca47b24d654ab42f2301"
+        ],
+        "boundary": "Remote verification establishes saved artifacts and bindings, not Target04 self-reconstruction, Human UI or field effects. This final mutable receipt is separately reread after saving; its commit is reported at handoff without adding a self-hash."
       },
       "actual_target_reconstruction": "NOT_OBSERVED",
       "independent_reader_test": "NOT_PERFORMED",
@@ -531,10 +562,44 @@
         "title_application": "NOT_OBSERVED",
         "startup_input": "NOT_OBSERVED"
       },
-      "requested_outcome": "Preparation in progress; Target reception and Human UI are separate",
+      "requested_outcome": "SOURCE_PREPARATION_COMPLETED_AND_REMOTE_VERIFIED; compiled Title and startup text are the final Human copy surfaces. Target04 reception, submission and Human UI application remain separate unobserved stages.",
       "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
       "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
-      "boundary": "This receipt is for03→04. Top-level identity and target_reconstruction_receipt remain02→03 history; no self-hash. A final revision records observed public reread, not future results."
+      "boundary": "03→04 final source receipt. Top-level identity and prior03 boot receipt remain historical02→03 evidence. No auto-restart of completed work; no self-hash; no future Target/UI certification.",
+      "validation": {
+        "source_records": "Task Records v001 schema vocabulary, duplicate-key/ID checks, references and evidence constraints passed. Original natto Source and Node unchanged.",
+        "documents": "JSON/YAML parsing, canonical paths, declared exact EOF, title equality, new-document relative references and eight-path scope passed.",
+        "triad": "Source03→Target04 / owner04 / SUPPORT / THREAD_CONTINUE / Ark27 Main retained / Root / stable README and Handoff blob bindings / mutable State contract: PASS.",
+        "reconstruction_coverage": "18 ordered Required Sources and source-backed R1–R8 are compiled. Source-side semantic/static review only; not an actual Target acceptance or context-free reader test.",
+        "source_identity_retention": "03 original source02/target03/owner03, immutable runtime/handoff bindings and successful03 target_reconstruction_receipt retained unchanged.",
+        "read_reuse": {
+          "rule": "Only own gap-free full reads in accessible context plus Current exact blob identity were reused. No other-AI PASS, memory or summary used as mandatory-source substitute.",
+          "checked_base": "9db47ab47ea945a0eea1ca47b24d654ab42f2301",
+          "shared_contract": {
+            "path": "prompts/ai-next-thread-handoff.md",
+            "version": "v003-human-authorized",
+            "blob_sha": "95ba8491d893580336fdb702ba9d036c24e7706a",
+            "beginning_identity": "AI Next Thread Handoff / prompts/ai-next-thread-handoff.md / v003-human-authorized",
+            "exact_eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized",
+            "read_range": "Beginning metadata through exact EOF; zero gap"
+          },
+          "source03_handoff_blob": "aca7fa0ffd125e52b9d1503e81cc0b444373108d",
+          "boundary": "This documents Source preparation. Target04 must perform its own declared reads and reconstruction."
+        }
+      },
+      "remaining_gates": [
+        {
+          "owner": "Ark28:04",
+          "gate": "Read ordered Required Sources, verify identities/bindings/triad and explain R1–R8 before Production.",
+          "status": "NOT_OBSERVED"
+        },
+        {
+          "owner": "Human",
+          "gate": "Create or open04, apply compiled title as appropriate and submit startup prompt.",
+          "status": "NOT_OBSERVED"
+        }
+      ],
+      "ordinary_unknowns": "Morning/Body outcomes, natural Skill selection, full-environment reflection, context-free Board reconstruction and field benefits are retained without becoming mandatory pre-boot tasks."
     }
   },
   "eof_sentinel": "ARK28_03_STATE_EOF_v001"
