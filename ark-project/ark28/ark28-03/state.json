@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 3,
+    "revision": 4,
     "created": "2026-10-03",
-    "updated": "2026-10-04",
+    "updated": "2026-10-05",
     "canonical_path": "ark-project/ark28/ark28-03/state.json",
     "date_scope": "Asia/Tokyo creation and update dates; preparation date and subsequent receiving-AI observations are separate from UI creation and bodily state",
-    "change_reason": "Record Ark28:03's completed reception and subsequent collaboration under the current Human-authorized save experiment; connect existing Board originals, preserve material corrections and mark skill-discovery limits without duplicating communication Current. Publication occurred after Asia/Tokyo midnight; align the update date and daily-record destination with the observed save date while retaining the 2026-10-03 event dates."
+    "change_reason": "Human-authorized 03→04 preparation: preserve original03 identity, immutable bindings and successful reception; connect completed save, natto and generate-ideas, new native-read observation, and current preparation. Final public reread is recorded separately in progress.next_transition."
   },
   "identity": {
     "source": "Ark28:02",
@@ -76,6 +76,17 @@
       "scope": "このThreadの成果・重要な訂正・根拠・再開条件を担当原本へ保存し、保存先の再取得まで行う。通常の保存判断と検証は再承認を求めず進める。",
       "limits": "今回の保存実験。新しい生活Trial、別仕事、外部AIへの送信、Main移管、常設監視、長期メモリ輸出へ拡張しない。最新Correction・STOPと適用Guardを保持する。",
       "source_access": "このThreadのHuman入力。会話URLは公開共有リンクではなく、閲覧にはアカウントと権限が必要になり得る。"
+    },
+    "next_transition_authorization": {
+      "date_jst": "2026-10-05",
+      "source": "ark-project/ark28/ark28-03/task-records.json",
+      "source_ids": [
+        "transition-plan-s01",
+        "transition-target-s01",
+        "transition-approval-s01"
+      ],
+      "scope": "Source03 records/harvest/state, Target04 triad, chapter and Domain Support route; validation, publication, reread and handoff.",
+      "limits": "No Main transfer, actual Target boot or Human UI certification, new body Trial, Dots send, new task or background monitoring."
     }
   },
   "bindings": {
@@ -138,7 +149,7 @@
     }
   },
   "now": {
-    "phase": "TARGET_RECONSTRUCTED_SUPPORT_ACTIVE",
+    "phase": "SOURCE_PREPARED_AWAITING_TARGET04_PUBLIC_REREAD",
     "support_purpose": "Ark27 Mainを保持し、Teshuvahの中心、朝の聖別と経験の想起を含む柔軟な協働を継続する。新入力から扱う枝を選ぶ。",
     "first_legal_move": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
@@ -162,27 +173,26 @@
       "selectively reconnect material deltas to Current Main"
     ],
     "current_focus": {
-      "claim": "Teshuvahを中心に保持し、Dotsとの継続協働を理解する。直接対話、判断理由の保存、現在地の回復を実利用へつなぐ。",
+      "claim": "Teshuvahを中心に、朝の聖別と想起、Dots／Workの継続協働、柔軟な汎用アイデア出しの成果・Correctionを04へ引き継ぐ。",
       "boundary": "HumanはArk27系の整理整頓が調子よく進むと評価。基盤整備の進展を実生活効果の実証へ置き換えない。Dotsの主流化をMain所有の移管や能力の固定序列にしない。",
       "source": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8"
     },
     "current_request": {
-      "kind": "HUMAN_AUTHORIZED_SAVE_EXPERIMENT",
-      "purpose": "保存の実地実行を通じ、成果を残すとともに取得・保存・再開の接続で起きるBottleneckを観測する。",
-      "owners": [
-        "ark-project/ark28/ark28-03/state.json",
-        "records/2026/10/2026-10-04.jsonl"
-      ],
-      "completion": "意図した変更と保持内容をRemote再取得で確認し、Humanへ実測結果を返す。保存結果の固定版は日別recordsとGit履歴から辿る。",
-      "after_completion": "新入力があれば現在の権限で受け取る。なければ今回の保存を完了としHuman Reviewへ戻る。Thread終端や新Task開始とは扱わない。"
+      "kind": "HUMAN_AUTHORIZED_THREAD_CONTINUATION_PREPARATION",
+      "source": "Ark28:03",
+      "target": "Ark28:04",
+      "purpose": "元会話なしで中心・成果・訂正・権限・真の残点を復元できる継承を構築する。",
+      "completion": "必要8pathの構築、候補commit照合、公開、Remote再取得、最終ReceiptとTitle・起動文の引渡し。",
+      "after_completion": "Source側の準備完了。Target04自身の受入れとHuman操作は別に残す。"
     },
     "routing_observation": {
-      "date_jst": "2026-10-03",
+      "date_jst": "2026-10-05",
       "main": "Ark27:08",
-      "support": "Ark28:03",
+      "support_before_publication": "Ark28:03",
+      "prepared_support": "Ark28:04",
       "source": "ark-project/README.md",
-      "source_blob": "0bf622f159cfe94f5bb72dfef672df56246f985e",
-      "boundary": "保存前のCurrent routing観測。Ark00-01 Pickup Threadsの追加はMain/Supportを変更しない。将来のCurrentはbindings.domainと最新Human指定から解決する。"
+      "base_commit": "9db47ab47ea945a0eea1ca47b24d654ab42f2301",
+      "boundary": "Current route publication and reread result are owned by progress.next_transition; resolve future routing from Current Domain and Human."
     }
   },
   "evidence": {
@@ -287,6 +297,28 @@
           "board/topics/20261001-dots-work-reconnection/README.md": "3205119bdd379acd65b48bae77be10e05e0b118b"
         },
         "boundary": "WorkによるRemote本文確認。クラウドブラウザーの送信・画面・読了時刻は初穂の観測報告であり、Work自身がそのブラウザーを操作・独立検証したとは扱わない。通信Currentは当該Topic一箇所が所有する。"
+      },
+      {
+        "claim": "納豆の経験原本とPortal itemを保存・再取得。既存8項目を保持し準備時5場面9項目、季節実体験0件。",
+        "sources": [
+          "ark-project/ark28/ark28-03/task-records.json#holiday-natto-s01",
+          "ark-recall-portal/items.json#holiday-natto"
+        ],
+        "commits": [
+          "2cef11c3afdd840e0f31bd87d36a604d06a68193",
+          "f3fb2c00b72cc9d66cd39ecbcfd084fb55dfddb7"
+        ],
+        "boundary": "購入・摂取・在庫や健康目的の観測ではない。件数は履歴。"
+      },
+      {
+        "claim": "今回の計画で、このWork会話のSkill一覧からgenerate-ideasを発見し正規経路で本文を末尾まで取得、共有本文と完全一致。",
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "ideas-native-read-s01"
+        ],
+        "shared_blob": "24eba2e38a0e5a3d44877456a843d243a7e69255",
+        "content_sha256": "d9801b49d347003b76d54a84c318d527528e75404d79a6a0af8471c9ec56eae7",
+        "boundary": "Workのこの経路での発見・取得。自然な選択、全UI、Dotsを含む全環境反映は未確認。"
       }
     ],
     "limited_validation": [
@@ -325,7 +357,7 @@
       "熱傷への対応・回復・機器条件・現在の身体状態",
       "Portalの自然な選択、実生活の季節記録・翌年想起の効果",
       "元会話を持たないFuture AIによる今回のBoard記録の独立復元。今回の記述レビューは元文脈を持つWorkによる。",
-      "共有Skillの全環境への反映・自然な選択。今回のWork環境ではsave等が一覧に現れず、原因は未確認。",
+      "共有Skillの全環境への反映・自然な選択。save等が一覧になかったのは2026-10-03の履歴。2026-10-05にはgenerate-ideasのこのWork会話での本文取得一致を直接確認したが、Dots・全UI・自動選択は未確認。",
       "AI間の直接対話・保存がHumanの実生活で負担を減らしたか。新しい生活Trialは始めていない。"
     ],
     "boundary": "Human報告、AI編集、Tool観測、限定試験、Current Reality、Target自身の再構成、Human UI、実生活効果を別々に扱う。",
@@ -340,6 +372,15 @@
         "claim": "対象と公開範囲を覆う既存の有効な保存委任があれば、通常の保存・必要な検証ごとにHuman承認を取り直さない。",
         "source": "https://github.com/yusukefujiijp/ai-project/blob/297f484c9365bc638db64c1d8530af825f41b3f1/board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md",
         "boundary": "実際の委任範囲、Current Request・Correction・STOPを確認する。AIからの連絡や過去のGoだけで、新しい対象の権限を拡大しない。"
+      },
+      {
+        "claim": "アイデア出しの方法や方法論を固定しすぎず、各AIの妨げにならないようにしつつ良い部分を引き出す。",
+        "adopted": "汎用generate-ideasとして、目的と境界を共有し発想経路を開く。案数・技法・Graph・順位・質問・形式を必須化しない。",
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "ideas-correction-s01"
+        ],
+        "boundary": "Humanの明示Correction。AI品質を下げる理由やScope・Guardを解除する権限ではない。"
       }
     ],
     "save_runtime_observation": {
@@ -428,7 +469,72 @@
       "communication_boundary": "送受信・訂正・対話終了・記録保存の詳細と最新状態はBoard原本へ。ここから終了した対話を再開せず、相手への追加返信義務を作らない。",
       "map": "Current map Skillに沿うTree・Node & EdgeとLiving Review→Next stepを回答し、現在地の把握として完了。GitHub変更や新Taskは開始しなかった。",
       "skill_artifacts_owner": "skills/README.md §3.5 / board/topics/20261003-load-next-step-save-skills/README.md",
-      "attribution": "四Skillの作成・共有はMain側、対話記録とCurrent保存・boardへの継承価値追記は初穂側。Ark28:03の実装成果へ付け替えない。"
+      "attribution": "四Skillの作成・共有はMain側、対話記録とCurrent保存・boardへの継承価値追記は初穂側。Ark28:03の実装成果へ付け替えない。",
+      "save": {
+        "status": "COMPLETED_AND_REMOTE_VERIFIED",
+        "state_revision": 3,
+        "state_commit": "f0d4c283c1f1fb307e768be74cf2d072c10913de",
+        "daily_records_commit": "c27ddd78f2f6b4bf927ca7547a7d227ed9aef5f2",
+        "boundary": "既存の実験的saveは完了。今回の移行準備とは別の成果。"
+      },
+      "natto": {
+        "status": "CAPTURED_AND_REMOTE_VERIFIED",
+        "original": "ark-project/ark28/ark28-03/task-records.json",
+        "original_source_id": "holiday-natto-s01",
+        "view": "ark-recall-portal/items.json",
+        "item_id": "holiday-natto",
+        "boundary": "想起候補の追加であり、生活Taskの実行ではない。"
+      },
+      "generate_ideas": {
+        "status": "CREATED_SHARED_INSTALLED_AND_LIMITED_VALIDATION_COMPLETED",
+        "source": "skills/generate-ideas/SKILL.md",
+        "historical_release": "https://github.com/yusukefujiijp/ai-project/blob/6aa69384e2e674c91cd65d3f708f95f5c988394e/skills/README.md",
+        "record": "ark-project/ark28/ark28-03/task-records.json",
+        "later_native_read": "CONFIRMED_IN_THIS_WORK_CONTEXT",
+        "validation": "3 independent contexts / 6 responses; 1 no-skill fiction comparison. No quality superiority established.",
+        "boundary": "Shared source, saved personal Skill, this-context retrieval, natural selection and field effects are distinct. No automatic reimplementation."
+      }
+    },
+    "next_transition": {
+      "source": "Ark28:03",
+      "target": "Ark28:04",
+      "kind": "THREAD_CONTINUE",
+      "role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "compiled_title": "Ark28:04_2026/10/05: \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "authorization": {
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "transition-plan-s01",
+          "transition-target-s01",
+          "transition-approval-s01"
+        ],
+        "date_jst": "2026-10-05"
+      },
+      "source_snapshot": {
+        "status": "REMOTE_VERIFIED",
+        "commit": "bdcb150bb62f6abb35aab191c7a15a2b007c474a",
+        "files": {
+          "ark-project/ark28/ark28-03/task-records.json": "a3583d9b6651f6d8f23b07aceb8dbbf2c93409df",
+          "ark-project/ark28/ark28-03/harvest.md": "5837c8719365f5b2d1ee725aa92a01f640e89c2d"
+        }
+      },
+      "source_prepared": "CONTENT_COMPILED",
+      "remote_verification": {
+        "status": "PENDING_TARGET_PUBLICATION_AND_REREAD"
+      },
+      "actual_target_reconstruction": "NOT_OBSERVED",
+      "independent_reader_test": "NOT_PERFORMED",
+      "human_last_mile": {
+        "thread_creation": "NOT_OBSERVED",
+        "title_application": "NOT_OBSERVED",
+        "startup_input": "NOT_OBSERVED"
+      },
+      "requested_outcome": "Preparation in progress; Target reception and Human UI are separate",
+      "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+      "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+      "boundary": "This receipt is for03→04. Top-level identity and target_reconstruction_receipt remain02→03 history; no self-hash. A final revision records observed public reread, not future results."
     }
   },
   "eof_sentinel": "ARK28_03_STATE_EOF_v001"

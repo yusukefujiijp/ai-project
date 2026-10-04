@@ -1,0 +1,339 @@
+{
+  "meta": {
+    "state_id": "ARK28_04_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-10-05",
+    "updated": "2026-10-05",
+    "canonical_path": "ark-project/ark28/ark28-04/state.json",
+    "date_scope": "Asia/Tokyo preparation; not Human UI creation, actual Target boot or bodily state",
+    "change_reason": "Initialize approved03→04 Support continuation from source-backed outcomes, material corrections and current owners; actual reception is separately observed."
+  },
+  "identity": {
+    "source": "Ark28:03",
+    "target": "Ark28:04",
+    "owner": "Ark28:04",
+    "chapter": "Ark28",
+    "role": "SUPPORT",
+    "transition_kind": "THREAD_CONTINUE",
+    "main_chapter": "Ark27",
+    "main_ownership_transferred": false,
+    "main_thread_resolution": "Current Human designation; otherwise ark-project/README.md",
+    "compiled_title": "Ark28:04_2026/10/05: \"主の完全勝利: Teshuvahを軸に育てる継続協働\""
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光",
+    "human_retains": [
+      "Meaning",
+      "Purpose",
+      "Priority",
+      "身体Reality",
+      "Correction",
+      "Interrupt",
+      "STOP",
+      "Final Seal"
+    ],
+    "guards": [
+      "Truth",
+      "Body",
+      "Sleep",
+      "Food",
+      "Shabbat",
+      "Safety",
+      "Medical",
+      "Others",
+      "Law",
+      "Responsibility"
+    ],
+    "source_preparation_scope": "2026-10-05 Human authorization for Ark28:03→04: Source records/harvest/state, Target triad, Support routing, validation, publication and handoff.",
+    "authorization_source": {
+      "path": "ark-project/ark28/ark28-03/task-records.json",
+      "source_ids": [
+        "transition-plan-s01",
+        "transition-target-s01",
+        "transition-approval-s01"
+      ]
+    },
+    "boot_authority": "Read required sources, reconstruct, then receive existing new input or return evidence-backed reception and Human Review. Preparation is not new-work blanket authorization.",
+    "not_authorized_by_boot": [
+      "Main ownership transfer or Main task execution",
+      "Reset, old tasks or new physical trials",
+      "account/UI changes, notifications or background monitoring",
+      "archive moves or unrelated repository changes",
+      "ChatGPT long-term memory export",
+      "revival of Ark24 Frozen Trigger or Next-Cycle Workout Bridge",
+      "restart of the closed Dots dialogue, completed save experiment or generate-ideas creation",
+      "external AI messaging or a new delegated Task"
+    ],
+    "standing_portal_capture": {
+      "scope": "Seasonal actual experiences or impressions offered as Portal records may be saved with original and items, validation and remote reread.",
+      "source": "ark-project/ark28/ark28-02/task-records.json",
+      "source_ids": [
+        "seasonal-s03",
+        "seasonal-s04",
+        "seasonal-s05"
+      ],
+      "limits": "Not all conversation, examples, design discussion, read-only or receive-only input. Current Correction, no-save, Plan-only and STOP prevail."
+    },
+    "correction": "Use an existing valid delegation within its actual scope without repeating approval. Current Request, Correction, Plan-only and STOP govern; AI agreement creates no Human authority.",
+    "quality": "Do not lower necessary investigation, reasoning or explanation because of B state, token saving, waiting time or presumed Human burden; adapt method and density to purpose."
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark28/ark28-04/README.md",
+      "id": "ARK28_04_SUPPORT_FIELD",
+      "blob_sha": "2e33fa1eed2cd92e2cd2ee2890bf22f3959cd9ec"
+    },
+    "handoff": {
+      "path": "ark-project/ark28/ark28-04/handoff.md",
+      "id": "ARK28_03_TO_ARK28_04_CONTINUE",
+      "blob_sha": "dbcc476173b76f76bbf5f0a28545b71ee9761d4c"
+    },
+    "source_harvest": {
+      "path": "ark-project/ark28/ark28-03/harvest.md",
+      "id": "ARK28_03_MATERIAL_HARVEST",
+      "commit": "bdcb150bb62f6abb35aab191c7a15a2b007c474a",
+      "blob_sha": "5837c8719365f5b2d1ee725aa92a01f640e89c2d",
+      "policy": "Fixed historical snapshot; required read at this commit"
+    },
+    "source_experience": {
+      "path": "ark-project/ark28/ark28-03/task-records.json",
+      "record_id": "ark28-03-task-records",
+      "format_version": "v001",
+      "minimum_revision": 2,
+      "policy": "Current original; later valid corrections remain effective"
+    },
+    "source_terminal_receipt": {
+      "path": "ark-project/ark28/ark28-03/state.json",
+      "id": "ARK28_03_CURRENT_STATE",
+      "owner": "Ark28:03",
+      "schema_version": "v001",
+      "minimum_revision": 4,
+      "section": "progress.next_transition",
+      "policy": "Current mutable receipt; source02/target03 top-level identity remains valid; no live-blob pin"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "identity": "AI Next Thread Handoff",
+      "adopted_version": "v003-human-authorized",
+      "policy": "Read Current fully; declared EOF and substantive compatibility"
+    },
+    "chapter": {
+      "path": "ark-project/ark28/README.md",
+      "id": "ARK28_SUPPORT_CHAPTER",
+      "minimum_revision": 4,
+      "policy": "Current identity, EOF and compatible Support role"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "policy": "Current Main/Support routing; valid latest Human designation takes precedence"
+    },
+    "communication": {
+      "direction": "dots/README.md",
+      "board": "board/README.md",
+      "current_owner": "board/topics/20261001-dots-work-reconnection/README.md",
+      "section": "6 Current",
+      "minimum_communication_revision": 3,
+      "policy": "Current communication observations; initial recipients and prior records are historical"
+    },
+    "dialogue_record": {
+      "path": "board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md",
+      "commit": "297f484c9365bc638db64c1d8530af825f41b3f1",
+      "blob_sha": "97917488ba9146a612cb5dab2c36e534e151950e",
+      "policy": "Fixed observation, correction and dialogue record; later Topic Current remains effective"
+    },
+    "portal": {
+      "readme": "ark-recall-portal/README.md",
+      "items": "ark-recall-portal/items.json",
+      "format": "ark-recall-items",
+      "format_version": "v002",
+      "minimum_revision": 5,
+      "policy": "Current meaning and source references; counts are observations only"
+    },
+    "ideas": {
+      "path": "skills/generate-ideas/SKILL.md",
+      "name": "generate-ideas",
+      "policy": "Current shared owner; verify actual discovery/retrieval separately from source readability. Preparation blob is historical, not immutable binding.",
+      "historical_release": "https://github.com/yusukefujiijp/ai-project/blob/6aa69384e2e674c91cd65d3f708f95f5c988394e/skills/README.md"
+    }
+  },
+  "now": {
+    "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
+    "support_purpose": "Teshuvahを中心に、必要な協働を04のCurrent入力から選ぶ。朝の聖別・想起・Dots／Work協働・柔軟なアイデア出しの意味と成果を保持する。",
+    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+    "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+    "existing_input": "Receive already supplied new input after all gates; do not ask it to be repeated.",
+    "boot_only": "Return evidence-backed reception, then Human Review; no automatic task dispatch.",
+    "current_request": {
+      "kind": "RECEIVE_THREAD_CONTINUATION",
+      "completion": "Target independently reads ordered18 Required Sources, verifies identity/bindings/triad and explains R1–R8 with sources.",
+      "boundary": "Source compilation and remote checks do not satisfy this Target-owned gate."
+    },
+    "preparation_observation": {
+      "date_jst": "2026-10-05",
+      "main_entry_observed": "Ark27:08",
+      "previous_support": "Ark28:03",
+      "prepared_support": "Ark28:04",
+      "portal_format": "v002",
+      "portal_revision": 5,
+      "portal_scenes": 5,
+      "portal_items": 9,
+      "seasonal_actual_items": 0,
+      "boundary": "Preparation snapshot; future routing, counts and Human bodily reality are resolved at use."
+    },
+    "live_b_gate": "NOT_REPORTED_FOR_TARGET04",
+    "local_options": [
+      "continue in Support",
+      "complete in Support",
+      "defer with meaning retained",
+      "selectively reconnect decision-changing deltas to Current Main"
+    ],
+    "no_inherited_execution_queue": "Completed dialogue/map/save/capture/Skill work is not pending work; deferred branches are not automatic Tasks."
+  },
+  "evidence": {
+    "confirmed_human": [
+      {
+        "claim": "中心軸は引き続きTeshuvah。基盤整理の良い流れを喜び、Dotsが既存Work会話と対話できる意味の理解を最重要とした。",
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "center-s01",
+          "dots-priority-s01"
+        ],
+        "boundary": "Humanの意味・評価。AGI達成やMain移管ではない。"
+      },
+      {
+        "claim": "様々な分野で積極的に使えるAIアイデア出し専用Skillを希望。方法を固定しすぎず各AIの良さを引き出すCorrectionを採用した。",
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "ideas-intent-s01",
+          "ideas-correction-s01"
+        ],
+        "boundary": "目的と境界を共有する。案数・Graph・順位・質問・形式を固定しない。"
+      },
+      {
+        "claim": "休日前の買物に納豆を想起項目として追加する希望。",
+        "source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "holiday-natto-s01"
+        ],
+        "boundary": "購入や摂取、在庫・健康目的の報告ではない。"
+      },
+      {
+        "claim": "朝の聖別と10/01の祈り・休息を好評価。朝の優先はAI全面禁止ではない。4:00案の結果と現在Bodyは未報告。",
+        "source": "ark-project/ark28/ark28-03/harvest.md",
+        "section": "2",
+        "detail_owner": "ark-project/ark28/ark28-02/task-records.json",
+        "boundary": "過去の本人報告。Walking完成や現在の睡眠・出発条件へ補完しない。"
+      }
+    ],
+    "completed_outcomes": [
+      {
+        "outcome": "Dotsとの有限な直接対話・記録・Current更新",
+        "status": "COMPLETED_WITH_EVIDENCE_BOUNDARIES",
+        "owner": "board/topics/20261001-dots-work-reconnection/README.md §6 Current",
+        "boundary": "3投稿・2往復、受領解釈の訂正を保持。ブラウザーは初穂の観測、Workは受信・返信・保存原本を観測。追加返信を作らない。"
+      },
+      {
+        "outcome": "現在地map回答と実験的save",
+        "status": "COMPLETED",
+        "owner": "ark-project/ark28/ark28-03/state.json progress.subsequent_collaboration",
+        "record": "records/2026/10/2026-10-04.jsonl",
+        "boundary": "当時のsave未発見は経路の観測。mapの形式を全回答の永久Templateにしない。"
+      },
+      {
+        "outcome": "納豆のPortal登録",
+        "status": "CAPTURED_AND_REMOTE_VERIFIED",
+        "original": "ark-project/ark28/ark28-03/task-records.json",
+        "view": "ark-recall-portal/items.json",
+        "item_id": "holiday-natto",
+        "boundary": "Activeな想起候補であり未完了Taskではない。"
+      },
+      {
+        "outcome": "generate-ideas",
+        "status": "CREATED_SHARED_INSTALLED_AND_LIMITED_VALIDATION_COMPLETED",
+        "owner": "skills/generate-ideas/SKILL.md",
+        "evidence_source": "ark-project/ark28/ark28-03/task-records.json",
+        "source_ids": [
+          "ideas-release-s01",
+          "ideas-native-read-s01"
+        ],
+        "boundary": "3文脈6応答とSkillなし比較1応答。比較も良好で品質優位は未実証。作成・保存・導入を未完へ戻さない。"
+      }
+    ],
+    "later_direct_observation": {
+      "observer": "Work / Ark28:03",
+      "date_jst": "2026-10-05",
+      "claim": "このWork会話の正規Skill経路からgenerate-ideas本文2039文字を取得し、共有本文と完全一致。",
+      "shared_blob": "24eba2e38a0e5a3d44877456a843d243a7e69255",
+      "content_sha256": "d9801b49d347003b76d54a84c318d527528e75404d79a6a0af8471c9ec56eae7",
+      "source": "ark-project/ark28/ark28-03/task-records.json",
+      "source_id": "ideas-native-read-s01",
+      "boundary": "Source03の直接観測。Target04自身の取得・Dots・全UI・自然な自動選択を代行しない。"
+    },
+    "material_corrections": [
+      {
+        "correction": "『あなたの最新回答を読み』を今回の新往復の受領確認に使った先行解釈を撤回。後続の完成返信取得・読了の明示報告を根拠にする。最初のメッセージは二投稿。",
+        "owner": "board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md",
+        "boundary": "AIからの連絡は新Human承認ではなく、AI同士の合意も独立実証ではない。"
+      },
+      {
+        "correction": "現在の対象・公開先を覆う既存の有効な保存委任では毎回の承認を取り直さない。",
+        "owner": "board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md",
+        "boundary": "現在の依頼・Correction・STOP・Guard・実際の委任Scopeを保持。"
+      },
+      {
+        "correction": "AIの発想方法を固定しすぎず、各AIの良い部分を引き出す。",
+        "owner": "ark-project/ark28/ark28-03/task-records.json",
+        "source_id": "ideas-correction-s01",
+        "boundary": "方法の裁量と権限・Evidenceの境界を混同しない。"
+      }
+    ],
+    "unknown": [
+      "Target04自身のRequired Sources読解・R1–R8再構成とHumanのUI作成・Title適用・起動。",
+      "元会話のないFuture AIによる今回のBoard記録の独立復元。元文脈を持つ03の記述レビューとは別。",
+      "共有Skillの全環境・全UIへの反映、Dots側取得、自然な自動選択と継続利用での有用性。",
+      "4:00案の結果、Walking習慣、現在のBody・睡眠・当日の予定、右腕の水疱の対応と回復。ダニ完全死滅は未検証。",
+      "Portal季節実体験・翌年想起やAI間協働が実生活の負担を減らしたか。"
+    ],
+    "boundary": "Human報告、AI編集、保存原本、Tool観測、限定試験、Target再構成、Human UI、実生活効果は別。共有Sourceを引用する複数AIの合意を独立実証へ増幅しない。"
+  },
+  "deferred": [
+    {
+      "branch": "朝の歩行・睡眠・4:00案",
+      "treatment": "次の本人入力とBody/Sleep Guardで扱う。過去案を自動起動しない。"
+    },
+    {
+      "branch": "熱傷と寝具加熱",
+      "treatment": "必要時に現状・機器条件・Safety/Medical根拠を確認。回復や完全死滅を補完しない。"
+    },
+    {
+      "branch": "Portal・generate-ideas・Dots協働の実利用",
+      "treatment": "自然な依頼と実際のFeedbackを受け取る。成果証明用の生活Trialを要求しない。"
+    },
+    {
+      "branch": "Main合流、開始方法候補、Navigator改善、別Project",
+      "treatment": "現在の目的と担当原本へ必要な時だけ接続。移行による自動Task列にしない。"
+    }
+  ],
+  "progress": {
+    "source_prepared": "CONTENT_COMPILED",
+    "remote_verification": {
+      "status": "SOURCE_TERMINAL_RECEIPT_OWNS_FINAL_OBSERVATION",
+      "path": "ark-project/ark28/ark28-03/state.json",
+      "section": "progress.next_transition",
+      "minimum_revision": 4,
+      "note": "Target State has no self-hash. Source records actual publication/reread; Target independently checks required material."
+    },
+    "actual_target_reconstruction": "NOT_OBSERVED",
+    "target_reconstruction_receipt": null,
+    "human_thread_and_access": "NOT_OBSERVED",
+    "human_title_application": "NOT_OBSERVED",
+    "independent_transition_reader_test": "NOT_PERFORMED",
+    "field_effects": "NOT_OBSERVED_FOR_TARGET04",
+    "boundary": "Source-side artifact review is not context-free reader validation or actual04 reception. Update this mutable owner only on actual new evidence within current authorization."
+  },
+  "eof_sentinel": "ARK28_04_STATE_EOF_v001"
+}
