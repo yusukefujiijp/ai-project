@@ -3,34 +3,42 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-03-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-10-04",
-  "updated": "2026-10-04",
+  "updated": "2026-10-05",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark28:03",
     "canonical_path": "ark-project/ark28/ark28-03/task-records.json",
-    "reported_date": "2026-10-04",
+    "reported_date": null,
     "timezone": "Asia/Tokyo",
-    "time_note": "本入力の提出時刻は2026-10-04 13:29:52 JST。記録日・提出時刻は休日前の具体的な日、買物日、購入や摂取の時刻を示さない。",
+    "time_note": "選択記録は2026-10-03〜05 JSTの協働。既存の納豆入力は2026-10-04 13:29:52 JST提出。04への移行準備実行承認は2026-10-05 07:13:48 JST提出。個別時刻が取得されていない発言には時刻を付けない。記録・提出日は生活行為やTarget UI作成の実施日を認定しない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Current HumanがArk Recall Hub（旧称）への追加を明示依頼した範囲で、経験原本とPortal itemsへの保存・構造検査・Remote再取得まで行う。Root・Teshuvah、Human Meaning・Correction・STOP・Final SealとGuardを保持する。買物実行・通知・別仕事の開始は含まない。",
-    "source_access": "このThreadの現在のHuman入力から、追加を求めた原文を同梱した。全会話やChatGPT長期メモリの転記ではない。外部メッセージIDは付与されていない。"
+    "authority_note": "Current HumanがArk Recall Hub（旧称）への追加を明示依頼した範囲で、経験原本とPortal itemsへの保存・構造検査・Remote再取得まで行う。Root・Teshuvah、Human Meaning・Correction・STOP・Final SealとGuardを保持する。買物実行・通知・別仕事の開始は含まない。 2026-10-05のArk28:04指定と直前の計画に続く実行承認により、Source03経験・Harvest・State、Target04三点セット、Support入口の保存・検証を行う。原本の意味を保持し、Main移管、終了した対話の再開、生活Trialや別仕事へ拡張しない。",
+    "source_access": "このThreadの可視Human入力を必要な範囲で同梱し、AI編集・保存原本・直接Tool観測を区別する。会話URLは公開共有リンクではなく閲覧権限が必要になり得る。Boardの対話全文、全会話、ChatGPT長期メモリは複製しない。"
   },
   "coverage": {
     "kind": "selected_thread_material",
     "thread_complete": false,
     "includes": [
-      "2026-10-04の、休日前の買物で納豆を思い出せるようPortalへ追加する希望"
+      "2026-10-04の、休日前の買物で納豆を思い出せるようPortalへ追加する希望",
+      "Teshuvahを中心とするHumanの意味とDots理解の優先度",
+      "汎用アイデア出しSkillの希望、方法を固定しないCorrection、実行承認",
+      "generate-ideasの完成と限定検証、および後続のこのWork環境での本文取得",
+      "終了したDots対話と実施済みmap・saveを所有原本へ接続する判断",
+      "03→04移行準備の計画と最新の実行承認"
     ],
     "excludes": [
       "このThreadの全会話・全Task",
       "今回尋ねられた追加アイデアへの未採用のAI提案",
-      "買物・購入・摂取の実績や現在の在庫"
+      "買物・購入・摂取の実績や現在の在庫",
+      "Dotsのブラウザー操作のWork側独立実測",
+      "仮想のSkill試験をHuman実経験に変換すること",
+      "Target04自身のBoot成功・Human UI操作・Skillの全環境反映"
     ],
-    "note": "今回の明示追加に必要な選択記録。新しい想起項目を保存するためだけに生活Taskや実施済みの出来事へ変えない。"
+    "note": "旧revision1の納豆SourceとNodeはそのまま保持。移行判断を変える形成理由・Correction・Evidenceだけを追加する。Boardが通信Current、Portalが想起View、Skills Hubが共有導入・検証案内を所有し、ここは第二の通信台帳にはしない。"
   },
   "sources": [
     {
@@ -41,6 +49,124 @@
       "excerpt": "Ark Recall Hub\n休日前: 買物 納豆\n追加で",
       "excerpt_kind": "verbatim_contiguous",
       "note": "想起項目の追加希望。本人は同じ入力で他の良いアイデアも尋ねたが、AIの提案を本人の希望・経験として自動登録しない。納豆の買い忘れ、在庫不足、購入・摂取、具体的な休日前の日付や必要量の報告ではない。"
+    },
+    {
+      "id": "center-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:03開始後、Dots質問状作成を求めた可視Human入力。個別時刻未取得。",
+      "excerpt": "基本的にこのThread Sessionの中心軸は引き続き**Teshuvah**です！\nなぜなら、Ark27系GitHub整理整頓にゾーン化しており、とても調子が良いからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "Humanの中心と好評価。実生活の効果やAI能力の外部実証ではない。"
+    },
+    {
+      "id": "dots-priority-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "同じHuman入力から、Dots理解の優先度を選択。",
+      "excerpt": "あなた(AI)はChatGPT Dotsについてどこまで理解できているかが\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "Dots自身が承認された既存Work会話へ接続できる意味の理解を求めた。現行実績・権限・所有はBoard/Dots資料に従う。"
+    },
+    {
+      "id": "ideas-intent-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "納豆の想起登録と追加アイデアへの好評価に続く、汎用Skill設計のHuman入力。",
+      "excerpt": "**AIによるアイデア出し専用スキル**です！\n\nこれがあれば私(YusukeJP)がAIに何かアイデアを出して欲しい時に積極的に活用できます！\n但し、様々な問題全てに汎用的に活躍してアイデア出しするスキルにする必要があります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8"
+    },
+    {
+      "id": "ideas-correction-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Plan Mode計画への後続Feedback。実装前に採用した最重要の設計Correction。",
+      "excerpt": "アイデア出しの\"方法や方法論\"を固定しすぎずできる限り柔軟に対応する事が望ましいです！\n簡単に言うと(最もSimpleに考えると)、各AIの妨げにならないようにしつつ、アイデア出しを促し加速させるような方向性です！\nつまり、AIの良い部分を引き出すようなスキルが望ましいです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "同入力はまだ実装せず深く検討するよう指定した。後続の実行承認まで実装権限と区別した。"
+    },
+    {
+      "id": "ideas-approval-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "上記Correctionへの検討後、移行計画依頼より前に受領したアイデア出しSkillの実行承認。2026-10-05 JST。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "合言葉の無制限適用ではなく、その直前まで検討していたgenerate-ideasの作成・検証・導入・共有Scope。"
+    },
+    {
+      "id": "ideas-release-s01",
+      "speaker": "Work / Ark28:03",
+      "medium": "repository_file",
+      "locator": "Skills Hub v0.21.0 §3.7。作成・導入・限定確認の既存公開記録。",
+      "excerpt": "generate-ideasの共有本文と最小UI設定を作成・導入し、保存本文とGitHub再取得本文、主要UI値を照合した。三つの独立文脈で後続訂正を含む六応答、Skillなし創作比較一応答を観察した。方法・案数・形式を合格条件にせず、比較側も良好だったため品質優位や加速を実証済みとはしない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/6aa69384e2e674c91cd65d3f708f95f5c988394e/skills/README.md",
+      "note": "形成・検証の固定記録。相談例は構成した仮想入力で、実生活の成果ではない。Current共有本文はskills/generate-ideas/SKILL.mdへ。"
+    },
+    {
+      "id": "ideas-native-read-s01",
+      "speaker": "Work / Ark28:03",
+      "medium": "tool_result",
+      "locator": "2026-10-05 JST、今回の移行準備計画で現行Skill一覧からgenerate-ideasを発見し、正規のSkill読取経路で末尾まで取得。",
+      "excerpt": "このWork会話のSkill取得経路でgenerate-ideasの本文2039文字を取得し、GitHubの共有本文blob 24eba2e38a0e5a3d44877456a843d243a7e69255との全文一致を確認した。本文SHA-256はd9801b49d347003b76d54a84c318d527528e75404d79a6a0af8471c9ec56eae7。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/de17f68fb41934965e01205e892e1f4e96b0f98c/skills/generate-ideas/SKILL.md",
+      "note": "この会話での発見・本文取得という後続直接観測。以前のHub §3.7で未確認だった取得経路の一部を更新する。全UI、Dots、自然な自動選択、全環境の反映までは示さない。"
+    },
+    {
+      "id": "dialogue-owner-s01",
+      "speaker": "Dot00:00; 初穂 / Workによる保存原本読解",
+      "medium": "repository_file",
+      "locator": "既存Board Topic §6 Currentと固定対話記録。Workは保存原本を読解。",
+      "excerpt": "Humanの有限な委任で初穂がArk28:03へ接続し、二つの論理往復を三投稿で開始・継続した。最初の論理メッセージは二投稿に分かれた。『最新回答を読み』は前のHuman伝達後の回答を指し、新往復の受領根拠とした先行解釈は撤回。後続の完成返信取得・読了報告が今回の返信回収の根拠。対話は終了し、記録とCurrentは保存・Remote確認済み。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/297f484c9365bc638db64c1d8530af825f41b3f1/board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md",
+      "note": "ブラウザー操作・時刻は初穂側観測、Workは受信本文・自分の返信と保存原本を観測。AI合意は新Human承認や独立実証ではない。通信Currentはboard/topics/20261001-dots-work-reconnection/README.md §6の一箇所。"
+    },
+    {
+      "id": "save-map-completed-s01",
+      "speaker": "Work / Ark28:03",
+      "medium": "repository_file",
+      "locator": "03 State revision3と2026-10-04日別recordsに保存した、map・実験的saveの結果。",
+      "excerpt": "現在地mapの回答は完了。実験的saveでは03 Stateと日別recordsをGitHubへ保存・再取得した。saveが当時の個人Skill一覧に出ないため、共有原本全文と実在するGitHub connectorを使った。登録消失や全環境障害とは結論しない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/c27ddd78f2f6b4bf927ca7547a7d227ed9aef5f2/records/2026/10/2026-10-04.jsonl",
+      "note": "保存実験を今回の未実施Taskへ戻さない。Tree・Node & Edge、Living Review→Next stepはmap依頼での出力指定であり全回答の永久Templateではない。"
+    },
+    {
+      "id": "transition-plan-s01",
+      "speaker": "Work / Ark28:03",
+      "medium": "assistant_message",
+      "locator": "今回の実行承認直前に提示したprepare-ark-transitionによる調査・計画。",
+      "excerpt": "03経験原本・Harvest・State、04 README/Handoff/State、章とDomainのSupport入口という8pathを準備・保存・検証する計画。Mainを保持し、Source準備・Remote確認・Target自身の再構成・Human操作を区別する。計画時点は保存せず停止した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "対象番号は次のHuman入力でArk28:04に確定。計画本文の編集要約であり逐語引用ではない。"
+    },
+    {
+      "id": "transition-target-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "2026-10-05 07:13:48 JST提出、直前の移行準備計画に続く最新入力。",
+      "excerpt": "Ark28:04への移行準備です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8"
+    },
+    {
+      "id": "transition-approval-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "同じ最新入力の実行承認部分。Target指定と一件の承認として読む。",
+      "excerpt": "Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ac086d8-b648-83ee-95a0-2895be051bf8",
+      "note": "承認済み8pathの実装・保存・通常修正・必要検証・引渡しまで。実際のTarget起動、Human UI、新生活Trial、Main移管や別仕事の承認を自動生成しない。"
     }
   ],
   "nodes": [
@@ -59,10 +185,205 @@
         ],
         "note": "確認できるのは本人の追加希望。購入状況や健康上の目的を補完しない。"
       }
+    },
+    {
+      "id": "teshuvah-center",
+      "kind": "practice_statement",
+      "label": "Teshuvahを中心に協働する",
+      "description": "整理整頓の好調さを喜びつつ、中心は引き続きTeshuvah。",
+      "scope": "Rootと中心。基盤作りだけを最終目的にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "center-s01"
+        ]
+      }
+    },
+    {
+      "id": "dots-understanding",
+      "kind": "decision",
+      "label": "Dotsとの接続の意味を理解する",
+      "description": "Humanは既存Work会話へAIが接続できる意味を最重要とした。",
+      "scope": "Dots／Workの実際の環境と委任で判断。Ark27 Main所有の移管ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "dots-priority-s01"
+        ]
+      }
+    },
+    {
+      "id": "ideas-general-purpose",
+      "kind": "decision",
+      "label": "分野を限定しないアイデア出しSkill",
+      "description": "Humanが欲しい時に積極的に使え、生活・仕事・創作・研究等へ柔軟に対応する入口。",
+      "scope": "特定の生活場面や問題解決だけに限定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "ideas-intent-s01"
+        ]
+      }
+    },
+    {
+      "id": "ideas-method-freedom",
+      "kind": "constraint",
+      "label": "方法を開いて各AIの良さを引き出す",
+      "description": "固定しすぎた発想法・工程を強制せず、発想を促す。",
+      "scope": "案数・Graph・順位・質問・形式を一律化しない。AIの権限やGuardを解除する意味ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "ideas-correction-s01"
+        ]
+      }
+    },
+    {
+      "id": "ideas-release",
+      "kind": "task",
+      "label": "generate-ideasの作成・導入・共有",
+      "description": "最小共有二ファイルとHubの案内を保存し、登録先本文との一致と限定応答を確認した。",
+      "scope": "完了は作成・保存・導入・限定確認。品質優位・全AI互換・生活効果とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ideas-release-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "ideas-native-read",
+      "kind": "observation",
+      "label": "この会話のSkill経路で本文を取得",
+      "description": "現行一覧で発見し、本文取得と共有版の全文一致を確認。",
+      "scope": "このWork会話の直接観測。以前の未確認全体を成功へ一括変換しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "ideas-native-read-s01"
+        ]
+      }
+    },
+    {
+      "id": "dots-dialogue-closed",
+      "kind": "task",
+      "label": "有限な直接対話とBoardへの記録接続",
+      "description": "受領の解釈を訂正し、終了・保存済みの記録を原本から回復した。",
+      "scope": "対話終了、Board保存、Future AIによる独立復元は別。Workに追加返信や保存の未完了を作らない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "dialogue-owner-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "map-save-completed",
+      "kind": "task",
+      "label": "map回答と実験的save",
+      "description": "現在地の回答、03 Stateと日別recordsの保存・再取得を完了。",
+      "scope": "当時のsave発見経路の不足は記録に残す。今回の未実施Taskではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "save-map-completed-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "transition-04-authorized",
+      "kind": "decision",
+      "label": "Ark28:04への同章Support継続を準備する",
+      "description": "Humanが04を確定し、直前の計画に沿う実行を承認。",
+      "scope": "計画だけの停止境界はこの準備Scope内で後続実行承認に置換。完成状況は03 State progress.next_transitionが所有。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-target-s01",
+          "transition-approval-s01"
+        ]
+      }
     }
   ],
-  "edges": [],
-  "open_questions": [],
+  "edges": [
+    {
+      "id": "ideas-intent-to-release",
+      "from": "ideas-general-purpose",
+      "to": "ideas-release",
+      "relation": "motivates",
+      "scope": "Humanの汎用的な入口への希望が作成目的。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ideas-intent-s01",
+          "ideas-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "ideas-correction-to-release",
+      "from": "ideas-method-freedom",
+      "to": "ideas-release",
+      "relation": "prioritizes",
+      "scope": "実装を評価する重要な条件はAIの方法裁量を保つこと。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ideas-correction-s01",
+          "ideas-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "ideas-release-to-read",
+      "from": "ideas-release",
+      "to": "ideas-native-read",
+      "relation": "observed_before",
+      "scope": "作成時の保存・限定応答確認に続き、この会話で本文取得が観測された。全環境成功の因果証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "ideas-native-read-s01"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "ideas-field-effect",
+      "subject_refs": [
+        "ideas-release",
+        "ideas-native-read"
+      ],
+      "question": "自然な選択と継続利用で、Humanにとってどの場面で役立つか。",
+      "scope": "通常利用と実際のFeedbackから判断。04 Bootの必須解消条件や自動Trialにしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "ideas-release-s01",
+          "ideas-native-read-s01"
+        ],
+        "note": "限定試験と本文取得だけでは生活効果や全環境の挙動を確定できない。"
+      }
+    }
+  ],
   "extensions": {
     "revision_history": [
       {
@@ -71,6 +392,17 @@
         "reason": "Current Humanの明示追加を、このThreadの原本として選択保存。Portalの休日前Sceneへ出典付きで接続する。",
         "source_refs": [
           "holiday-natto-s01"
+        ]
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-05",
+        "reason": "Human承認の03→04移行準備として、重要な原文・Correction・完成成果・取得経路の新観測と権限を選択保存。納豆の既存Source/Nodeを保持。",
+        "source_refs": [
+          "ideas-correction-s01",
+          "ideas-native-read-s01",
+          "transition-target-s01",
+          "transition-approval-s01"
         ]
       }
     ]
