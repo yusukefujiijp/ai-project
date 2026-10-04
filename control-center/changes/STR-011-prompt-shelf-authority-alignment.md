@@ -3,7 +3,7 @@ title: "STR-011 — Prompt棚と現行権限契約の整合"
 version: "v001"
 canonical_path: "control-center/changes/STR-011-prompt-shelf-authority-alignment.md"
 role: "Structural change record / evidence and validation boundaries"
-status: "implemented locally / remote verification pending"
+status: "implemented / remote verified / field effect unverified"
 created: "2026-10-04"
 updated: "2026-10-04"
 timezone: "Asia/Tokyo"
@@ -68,7 +68,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 - 適用されるAGENTSとArk27 INSTRUCTIONSを確認し、計画時の全文読解記録と対象Blobの同一性を照合した。Source変更がない確認済みの履歴を、全履歴の再Bootに変換していない。
 - 変更前後の差分、既存節見出し、対象外の本文、metadataと既存EOF、新しく加えた参照の到達先を確認済み。第1–3・6節の本文一致、見出し列の一致、YAML解析、canonical_path、宣言されたEOFの末尾一致を機械確認した。追加リンクは現存パスまたは同時作成する本記録へ到達する。
-- 公開前にmainを再確認し、予定した基点と異なる場合は最新の対象内容へ差分を合わせ直す。同一pathの変更を上書きせず、main更新はnon-forceで行う。
+- 公開直前のmainが基点と同一であることを再確認し、non-forceで更新した。Remote treeの比較でも変更は対象3ファイルだけであり、対象外の全Blobを保持した。今回競合は発生していないため、実際の競合解消成功を主張しない。
 
 ### 有限の読解場面による自己点検
 
@@ -83,7 +83,16 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### Remote確認
 
-この初回記録の公開時点では、公開後のRemote確認は未完了として区別する。3ファイルを同じcommitでmainへ反映後、Remoteから各全文を再取得し、意図した内容・path・ref・Blob・必要なEOFと対象外の保持を照合する。実測結果は本節を更新して残す。
+2026-10-04、実装commit [`f125d6f216245e8a10dbf4060e4e8a38b49bd09a`](https://github.com/yusukefujiijp/ai-project/commit/f125d6f216245e8a10dbf4060e4e8a38b49bd09a)をmainへ反映した。GitHubのcommit時刻は2026-10-04T13:40:52Z（22:40:52 JST）、author / committerは `yusukefujiijp`。実装AIのIdentityとは分けて扱う。
+
+反映後に `refs/heads/main` と対象3ファイルをRemoteから取得し、次を確認した。
+
+- `prompts/README.md`：Blob `d175fe54871d919730c7b7a795a3225d6b52798d`。全文が意図した本文と一致。EOF宣言は追加していない。
+- `control-center/README.md`：Blob `d7cbaad8734bdb08395528d2dfcab155586d4215`。全文一致、version・expected_eof・末尾がv0.3.7で一致。
+- 本記録の初回保存版：Blob `66a48050607c7f52a4e56fda180557a31aa90bea`。全文一致、宣言と末尾のEOFがv001で一致。この初回版ではRemote確認を未完了と明記しており、確認後に本節を追記した。
+- 実装commitのtreeと基点の全Blobを比較し、追加1・更新2・削除0、対象外の変更0を確認した。AGENTS、Ark27 INSTRUCTIONS、個別Prompt、既存Skill、旧変更記録は変更していない。
+
+本節は、実装・main反映・Remote確認が実際に完了した後の記録である。本文の修正commitと結果追記commitを分け、後続commitは本ファイルのGit履歴から辿れる。以上で今回承認された文書整合とGitHub反映を完了とする。独立した他AIの理解・実運用上の効果は次節の未確認事項として保持する。
 
 ## 5. 未確認事項と再訪条件
 
