@@ -162,6 +162,31 @@
           }
         }
       ]
+    },
+    "2026-10-04": {
+      "visits": [
+        {
+          "id": "cz-visit-0006",
+          "reporter": "YusukeJP",
+          "created_at": "2026-10-04T12:59:50.582Z",
+          "recorded_by": "AI assistant",
+          "spots": [
+            {
+              "id": "O001",
+              "machine": "レッグプレス",
+              "mode": "片足",
+              "kg": 75,
+              "source": "S01"
+            }
+          ],
+          "sources": {
+            "S01": {
+              "text": "レッグプレス\nSweet Spot\n片足: 75kgに改善された\n\nもう一度、chocoZAP全体のSweet Spotを教えて下さい！",
+              "context": "2026-10-04（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「75kgに改善された」を新しい本人報告として扱い、過去日の片足70kg・60kgは保持。実施時刻・来館・周回・今回の下降系列は未報告。"
+            }
+          }
+        }
+      ]
     }
   }
 }
