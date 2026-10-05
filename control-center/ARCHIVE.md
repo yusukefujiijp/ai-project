@@ -1,21 +1,21 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.8.0"
+version: "0.9.0"
 canonical_path: "control-center/ARCHIVE.md"
 role: "Single record for archive proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-03"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.8.0"
+updated: "2026-10-05"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.9.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)、旧Ark System原本の保管と入口役割の整合は[ARC-010](#arc-010)にある。全体の目的と形成史は[README](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -624,4 +624,78 @@ Dotsの[lessons契約](../dots/README.md#5-dotsの学びを次の判断へ戻す
 この追記は確認済み結果の保存であり、記録自身の自己SHAは埋め込まない。追記を含む最終本文も保存後に直接再取得する。同じHuman依頼による実行後の再接続指針は[2026-10-03 GitHub整理整頓の指針](20261003-cleanup-direction.md)へ接続する。
 
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.8.0
+## ARC-010
+
+**旧Ark Systemの原本保管と、Root READMEを中心とする入口役割の限定整合。Human承認済み。実装・Remote確認の実際のReceiptは§Gに記録する。**
+
+### A. 判断の形成・Human Correction・今回の承認
+
+SourceはArk27:08のこの案件のHuman入力、GitHubの原本と役割宣言、参照関係である。以下は対話の編集要約であり、逐語録ではない。未提示の会話URLは作らず、ChatGPT長期メモリを転記・輸出していない。
+
+Humanは、以前に作った `_system/` を忘れており、未読のまま必要・不要を判断できないとしてLiving Reviewを依頼した。AIは二つのChatGPT設定原本を保持し、System一件の保管を提案した。その後、Humanは「良い部分を残す」「Root READMEとの関係が重要」「良い部分を残して新しいSystemを作る方法もある」と問い直した。単純な削除・古さ・ファイル数だけを基準にしない方向へ検討が深まった。
+
+Humanは、GitHubは基本的にAI側が読むものであり、AIが構造を自由・自律的に設計し、代々改善を引き継ぐことを望んだ。同時に、Humanのアイデア・閃き・重大な誤りの訂正を入れるため、実装前の承認を保持する。これはHumanへ全資料の校閲を返すことでも、AIの通常判断を毎工程の再承認で止めることでもない。
+
+新設solve-problemsの共有原本を読んだ問題解決と複数回のPlan Modeを経て、最終案は「原本一件の同一保管＋既存九文書の限定整合」となった。Humanは複数回のPlan Modeによる練り込みを成功法則の一つ・最重要と評価した。この評価と形成順序を保持し、全案件への固定回数や新しい必須Gateにはしない。
+
+2026-10-05 JST、Humanは直前の最終計画に対して「一歩一歩確実に整理整頓しましょう！」と述べ、`Execute GitHub OK`・`Human Seal OK`・継続実行を明示した。承認Scopeは本件の原本移設、九文書の限定整合、必要な通常修正・検証・保存後の再取得と結果記録である。AI担当はArk27:08 Mainの本会話の実行AI。GitHubのauthor／committer、時刻は実際のcommitで確認する。モデルの最高性能への期待やHumanの高評価を、文書品質・他AIの理解・実生活効果の実証へ変換しない。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・文書・整理方法はKeliであり、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
+
+### B. なぜ現役配置を退役させるか
+
+[移設前のSystem原本](https://github.com/yusukefujiijp/ai-project/blob/7efcd490f728c25d5572aae20483fe420454f222/_system/ark-system.md)は、Project-level Operating Map／Growth Memory Hub／Skill Seed Routerを掲げ、経験から方法を育て、Future AIがゼロから再出発しないことを目指していた。この目的と、§10の6月30日の形成記録には保存価値がある。
+
+一方、現在は[Root README](../README.md)がCurrent Requestと担当資料への入口、[ARK §8](../ARK.md#8-organic-growth-engine--有機的成長engine)が成長と再投入の意味、[ARK §12](../ARK.md#12-ark-file-ecology--器官の役割)が資料の役割、[AGENTS](../AGENTS.md)が判断・権限・読取・完了、経験原本・成功事例・各方法がそれぞれの内容を担う。旧Systemを同時に現役として案内すると、Growth EntryのNext Action必須、Skill作成前のSeed登録など、別の追加条件へ読む経路が残る。これは本文からの設計上の懸念であり、誤読の頻度や停止回数を測定した結果ではない。
+
+Root READMEは移設前からAIを主読者として宣言していた。「READMEはHuman向け、SystemはAI向け」という単純な分担にはしない。周辺四文書のHuman／Public Front Doorという説明を、既存のAI向け・Humanが確認訂正できる入口へ整合させる。
+
+比較した案は、現状維持、Systemの局所改稿、良い部分を残した新System、原本保管と既存担当先への接続。今回は新Systemだけが担う独立した不足が確認されず、原本保管＋案内整合を選んだ。将来の新用途や不足から再設計する余地は残す。成長機能を捨てる判断でも、全旧機能を別文書へ機械的に移す計画でもない。
+
+§9の旧Gate案内はSTR-001とARC-007で既に修復されていた。今回の理由を「旧Gateが今も未修正」と書き換えない。過去の修復は当時の成果として保持する。
+
+### C. 保存する価値と、読み返す入口
+
+| Node | Edge | 保持する意味・再利用する場面 |
+|---|---|---|
+| 経験を次の協働へ生かす発想 | 原本§0–1 → [ARK §8・§12](../ARK.md) → 担当資料 | 成果だけでなく、成果を生む判断や方法を次へ生かす。概念上の対応であり、直接の歴史的継承や全AIでの有効性の証明ではない |
+| Unexpected Success・理由・成立条件 | 原本§3・§10 → 経験原本／[成功事例](../success-cases/README.md) | 単なる正常終了に縮めず、何が変わり、なぜHumanに重要だったかを根拠とともに読む。一件の経験に再利用Pattern・Next Actionを必須化しない |
+| Future AIに意味を渡す文章 | 原本§7 → [Ark Markdown Writer](../skills/write-ark-markdown/SKILL.md) | 目的・役割・理由・Guardを回復できる形にする。全Markdownを実行Runtimeにする意味ではない |
+| 保存後の実体確認 | 原本§6・§10 → [AGENTS §5](../AGENTS.md#5-mode-scope-and-github-authority--実行境界)／[save](../skills/save/SKILL.md) | 応答だけで成功とせず現物を確かめる。結果不明なら識別子と版を照合し、失敗と決めつけて手動代替や再送を開始しない |
+| AIの独立した長期的助言 | 原本§1・§8・§10 → [AGENTS §3](../AGENTS.md#3-human-ai-authority--自主性と王座guard)／[Living Review](../skills/living-review/SKILL.md) | 迎合だけでなく構造改善・代案・理由を示す。AIの設計裁量とHumanのMeaning・Correction・承認を両立する |
+| 6月30日の固有な形成史 | 原本§10 `GROWTH-20260630-001` → 当時のpath・commit・blob | 直接GitHub保存、再取得確認、長期的助言が当時の協働をどう変えたかを調べる。Developer Modeとの相関を原因断定へ強めず、当時の環境を現在の保証にしない |
+
+この表は原本の解釈を閉じる要約ではない。AIが今回選んだ価値だけを切り出さず、全原本を保持することで、Future AIは別の有益な関係も調べられる。過去の命令・旧Skillパス・試験予定は、現在の必須工程や実行承認にしない。知見を共有lessonsやSkillへ一括複製せず、将来の具体的な依頼と担当資料から判断する。
+
+### D. 原本対応・九文書・歴史証拠
+
+- 調査・実装の基点mainは[7efcd490f728c25d5572aae20483fe420454f222](https://github.com/yusukefujiijp/ai-project/commit/7efcd490f728c25d5572aae20483fe420454f222)。Plan時点の `ffe2c495f7f57e4d3132986e1fa6d0b441b015c2` の後に、Support03 Stateへ04準備の確認結果が追記されていた。その変更を保持する。
+- 元パス `_system/ark-system.md` → [保管原本](../__archives/ARC-010/_system/ark-system.md)。保持するblobは **840fd094e56d9af8648402b22212dcc94d9b4cef**。本文、当時のmetadata、旧 `canonical_path`、状態・指示・改行を改変しない。元パスにStubや互換コピーを置かない。
+- 九文書は `README.md`、`AGENTS.md`、`ARK.md`、`ark-project/README.md`、`control-center/README.md`、`control-center/PLAN.md`、本 `ARCHIVE.md`、`__archives/README.md`、`control-center/changes/STR-001-navigation-and-ownership.md`。原本の追加・元パス除去を含めGit上は11パスの限定差分。
+- Root READMEは成長の理解をARK §8・§12へ、旧Systemを本案件へ案内する。AGENTSは現役System行を除去。ARKのFile Ecology、control-center、DomainのRoot README説明を整える。DomainのCurrent Main08／Support04、Title・ペア方針・受入れ条件は変更しない。
+- PLANは本案件への後続接続のみを持ち、D01や完了済み修復を保持する。__archives索引は保存実体と本案件へ案内する。別のSTR記録、新System、Growth Ledger、Skill、案件配下README、第二の承認・Current台帳は作らない。
+- STR-001のSystemリンクは[当時の実装commit](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/_system/ark-system.md)へ固定する。再取得した当時のblob **c10ac44f7743e3ceb442c8f753897bca3f090ee1** はSTR-001の証拠と一致し、今回保管する最新版とは異なる。元パス名・当時のblob・結果と、先行ARC-009のリンク修正履歴を保持する。
+
+`_system/chatgpt/global-custom-instructions.md` と `user-profile.md` は現役の別責務の原本として保持する。Main08・Support04等の三点セット、Board、Actorログ、各Skill、他のアーカイブ原本、日付付きRepository ReviewやArk21 sandboxは変更対象外。Humanの期待を理由に別仕事・生活Trial・Pet調査制作・Reset操作を開始しない。
+
+### E. 参照調査・契約・確認境界
+
+参照調査は `ark-system.md` とRepository Front Doorの役割記述の検索、対象本文と入口、非切断の再帰Tree、Current08と新Support04 Handoffの依存条件を照合した範囲である。検索結果のsnapshotが実装基点より古い場合は、対象blobの同一性と後続差分を実取得で確認する。全Git履歴・全外部consumer・全AIの実行環境の網羅調査ではない。
+
+Current08の核と新Support04 Handoffは、共有文書の準備時blobを恒久的なlive pinにせず、宣言Identity・役割・意味上の互換を確認する。今回の変更は案内に限定し、Root・権限・品質・読取・Guard・Main/Support所有を保持する。旧固定契約を無断で新版成功へ読み替えず、確認済みBootの再演、Targetの受入れ代理認定、Bindingの改訂は行わない。
+
+検証対象は、原本の同一性、変更九文書の意味・metadata・宣言EOF・変更リンク、履歴証拠、配置と対象外保持、保存後のRemote本文である。通常の仕事、形成史の調査、新しい経験の保存、Main／Support確認という四つの読取場面で、現役契約と歴史が混ざらないかを執筆AI自身が点検する。独立した別AI試験、Human UI操作、長期の探索負担や生活効果の測定とは区別する。
+
+### F. 旧リンク・復元・再検討
+
+原本内の相対リンクは元配置基準であり、保管先から同様に解決するとは限らない。原本の同一保存のため書き換えず、[移設前の全文](https://github.com/yusukefujiijp/ai-project/blob/7efcd490f728c25d5572aae20483fe420454f222/_system/ark-system.md)と[当時の配置](https://github.com/yusukefujiijp/ai-project/tree/7efcd490f728c25d5572aae20483fe420454f222/_system)から読む。固定snapshotも、既に存在しなかった旧パスまで実在化するものではない。現在の運用を調べる時は現行の担当資料へ戻る。
+
+旧 `main/_system/ark-system.md` URLは移設後に開けなくなる。外部ブックマーク・未知のconsumerの有無と実利用への影響はUnknown。必須参照や実際の呼出しが見つかり、承認範囲で意味を保てない場合は影響する操作を止め、差分と再開条件をHumanへ返す。通常のUnknown全解消を完了条件にはしない。
+
+保存価値が現役経路で利用できない、独立した新用途が具体化した、退役による実害が分かった場合は、配置・案内・新Systemの必要性を再検討できる。最初の検討に反復失敗を要求しない。原本を同一blobで元パスへ戻し、必要な案内差分だけを整合できるが、再採用は現在の目的・依存・Human権限から判断する。main全体を過去commitへresetせず、並行・後続変更を保持する。
+
+### G. 実施・保存後確認
+
+本稿の作成時点ではHuman承認と実装内容の準備まで。GitHub実装・公開・Remote確認を未実施のまま成功として記録しない。実際のcommit、再取得結果、対象外保持、確認境界を、検証後にこの節へ記録する。本記録自身の最終SHAを本文へ埋め込む循環は作らず、結果追記後の最終本文も再取得する。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.9.0

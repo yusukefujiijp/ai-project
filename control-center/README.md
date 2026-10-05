@@ -1,6 +1,6 @@
 ---
 title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.3.7"
+version: "0.3.8"
 canonical_path: "control-center/README.md"
 role: "Repository structure diagnosis, archive-first selection, improvement and change-history entry"
 status: "human-authorized archive-first workflow / evolving"
@@ -8,8 +8,9 @@ repository: "yusukefujiijp/ai-project"
 scope: "Repository全体。ark-project/内だけに限定しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-04"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.7"
+updated: "2026-10-05"
+updated_reason: "ARC-010: align the Repository README role and route the retired Ark System to its preservation case; prior change records retained."
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.8"
 ---
 
 # Control Center
@@ -59,12 +60,12 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 | [変更記録 STR-001](changes/STR-001-navigation-and-ownership.md) | 修正前の根拠→変更理由→実装→確認結果へ結ぶ | 通常の構造修正の5W1Hと適用範囲。設計完了・実装・Remote確認・利用効果を分ける |
 | [ARCHIVE](ARCHIVE.md) | 提案・Human判断・変更・結果を一つの案件へ結ぶ | アーカイブ候補の具体案、判断理由、承認範囲、実施・確認・再検討の記録 |
 | [__archives](../__archives/README.md) | 保存物から案件・由来へ戻る | 承認後の保存実体と入口。提案だけの資料を移設済みと表示しない |
-| [Repository README](../README.md) | Repository全体へ入る | Human / Public Front Door。control-center追加はこの役割を移管しない |
+| [Repository README](../README.md) | Current RequestからRepositoryの担当資料へ進む | AIを主読者とする入口。Humanも確認・訂正できる形を保ち、control-centerへ入口の役割を移管しない |
 | [AGENTS](../AGENTS.md) | 現在の依頼を読取・判断・実行へ接続する | 共通の権限、読取、継続、停止。ここで別の承認規則を作らない |
 | [ARK](../ARK.md) | Identityと帰属を回復する | Home Constitution。具体的な案内の不一致はPLANの診断対象になる |
 | [Ark Domain](../ark-project/README.md)／[Projects](../projects/README.md) | 対象の局所入口へ進む | 番号付きArkの系譜と固有名Project。明示Handoffの契約はそのHandoffで確認する |
 | [Repository Reviews](../repository-reviews/README.md) | 観測時点の根拠を保存する | レビュー方法と日付付き観測。PLANは関連する観測と残存課題をつなぐ |
-| [Ark System](../_system/ark-system.md) | Growth・Skill Seed・旧経路を理解する | 既存の成長の知恵。現在のGate案内の不一致は[D01](PLAN.md#d01)で扱う |
+| [旧Ark Systemの保管案件](ARCHIVE.md#arc-010) | 成長の知恵・形成史 → 原本・当時の証拠 | 現役Operating Mapの退役理由と再利用・復元条件。D01の過去のGate修復は履歴として保持 |
 | [Prompts](../prompts/README.md)／[Skills](../skills/README.md) | 再利用する方法へ進む | 方法の所有資料と利用・配布の入口 |
 | [経験索引](../task-mode-system/experience/README.md)／[成功事例](../success-cases/README.md) | 出来事の原本と、そこからの学びへ進む | 経験、Human評価、成立条件。control-centerへ原本を移し集める意味ではない |
 
@@ -120,7 +121,7 @@ Graphでは、保存場所に加えて「案内する」「意味を所有する
 
 全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.7
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.8
 
 
 

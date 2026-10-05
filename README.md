@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v005"
+version: "v006"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v004 preserved in Git history; v005 adds the Human-authorized cross-AI activity records route"
+version_basis: "v001-v005 preserved in Git history; v006 retires the Ark System live route and connects growth understanding with its existing owners under ARC-010"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-03"
+updated: "2026-10-05"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-10-05: ARC-010 preserves the Ark System original, retires its live operating-map route, and connects growth understanding to ARK §8/§12 and historical provenance; no new shared execution contract."
   - "2026-10-03: Add the cross-AI daily activity records route; ownership and scoped validation are recorded in STR-010. No whole-repository rereview."
   - "2026-10-03: Retire the generic _note route under ARC-009; preserve six originals, their useful questions and historical evidence without creating a replacement note system."
   - "2026-10-01 JST / 2026-09-30 UTC: Replace universal cold-start/proposal and same-thread assumptions with current-request routing; keep common authority and completion rules in AGENTS. Prune duplicated contracts while preserving domain and historical source routes."
@@ -75,6 +76,11 @@ archive_navigation_patch:
   base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
   change_record: "control-center/ARCHIVE.md#arc-007"
   scope: "Thread Lifecycle navigation only; current authority, transition contract and historical review metadata retained"
+system_archive_navigation_patch:
+  date: "2026-10-05"
+  base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
+  change_record: "control-center/ARCHIVE.md#arc-010"
+  scope: "Current growth-owner navigation and historical Ark System route only; prior reviews and authority retained"
 foundation_migration:
   change_record: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
   approved_date_jst: "2026-10-01"
@@ -97,7 +103,7 @@ foundation_migration:
 | 今回の目的 | 入口・所有資料 |
 |---|---|
 | 相談・Review・Plan-only・実行の境界を決める | [AGENTS.md](AGENTS.md) §0・§2・§5 |
-| ArkのRoot・Identity・協働の意味を回復する | [ARK.md](ARK.md) |
+| ArkのRoot・Identity・協働の意味を回復し、成長の仕組みを理解する | [ARK.md](ARK.md)。[成長と再投入は§8](ARK.md#8-organic-growth-engine--有機的成長engine)、[資料の役割は§12](ARK.md#12-ark-file-ecology--器官の役割) |
 | 承認済みの作業を継続・再開する | Current Requestと対象のNearest README / Handoff、[AGENTS.md](AGENTS.md) §4・§5 |
 | Thread・章移行やSupport再接続を準備する | [共有移行契約](prompts/ai-next-thread-handoff.md)と、その依頼に適用されるRuntime |
 | Domain・方法・経験の保存先を探す | [Repository Router](#5-repository-router--主要入口) |
@@ -106,7 +112,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v005 / Current-request Repository Front Door
+- Repository入口: README v006 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -157,7 +163,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`control-center/README.md`](control-center/README.md) | Repository全体の構造診断・改善・アーカイブの司令塔 | フォルダ・ファイルの役割、整理計画、変更理由と結果を確認する時。全作業の追加Boot条件ではない |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
-| [`_system/ark-system.md`](_system/ark-system.md) | Project-level Operating Map / Growth Memory Hub / Future AI Onboarding | Thread横断の成長・System・Skill Seedを読む時 |
+| [旧Ark Systemの知恵・形成史](control-center/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
 | [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |

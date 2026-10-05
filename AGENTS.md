@@ -5,7 +5,7 @@ version: "v004-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-01"
+updated: "2026-10-05"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -37,6 +37,11 @@ design_motivation: "Astra migration and observed workflow friction formed the pr
 revision_authority: "Current Human approved the dots foundation migration plan, GitHub execution and scoped continuation; prior Ark27:05 quality-preservation correction remains"
 publication_policy_basis: "YusukeJP explicitly permits his supplied Ark experiment and Task material to be recorded and published, and values contributing reusable data to AI development"
 validation_boundary: "Document checks and remote persistence do not establish cross-AI behavior or real-world outcomes"
+system_archive_navigation_patch:
+  date: "2026-10-05"
+  base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
+  change_record: "control-center/ARCHIVE.md#arc-010"
+  scope: "Role Map navigation only; v004 behavioral kernel and prior migration evidence retained"
 foundation_migration:
   change_record: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
   approved_date_jst: "2026-10-01"
@@ -44,6 +49,7 @@ foundation_migration:
   source_commit: "d574927dd1671e2acec20e1a6c17f569ae23322f"
   scope: "Bounded persistent completion, interruption recovery, independent delegation, and actual-runtime capability; prior quality, authority, evidence, and publication rules retained"
 updated_reason:
+  - "2026-10-05: ARC-010 aligns the README role with its AI-first declaration and removes the retired Ark System live route; common authority, reading and completion contracts unchanged."
   - "2026-10-01 JST / 2026-09-30 UTC: Add task-scoped persistence and result-aware recovery without promising always-on execution or expanding authority; distinguish independent delegation from one accountable integration surface."
   - "2026-09-21: Preserve Ark27:05 AI-quality correction and distinguish memory recall from mandatory instruction sources."
   - "2026-09-19: Replace missing _tasks/lessons.md navigation without creating a second learning ledger."
@@ -72,13 +78,12 @@ updated_reason:
 
 ## 1. Role Map / 文書の身分を混ぜない
 
-- [README.md](README.md): RepositoryのHuman / Public Front Door。局所READMEはDomain入口やRuntimeも担うため、本文の宣言を確認する。
+- [README.md](README.md): AIを主読者とするRepository入口／Current Requestと担当資料への案内。Humanも確認・訂正できる形を保つ。局所READMEはDomain入口やRuntimeも担うため、本文の宣言を確認する。
 - [ARK.md](ARK.md): Ark Project Home Constitution / Identity and Return-Home Kernel。
 - [AGENTS.md](AGENTS.md): Repository共通のAgent判断・権限・読取・実行契約。
 - Nearest README / Handoff / Manifest: Current Domain、Thread Identity、Mission、Binding、Required Read。
 - Applicable Project INSTRUCTIONS.md: Project固有の協働・表示・運用指示。適用範囲を確認して読む。
 - [ss_super-special/CHATGPT.md](ss_super-special/CHATGPT.md): All-Project Covenant Map / Stone Tablet。
-- [_system/ark-system.md](_system/ark-system.md): Project-level Operating Map / Growth Memory Hub。
 - [skills/README.md](skills/README.md): Shared Skill Source / Distribution Hub。
 - [prompts/](prompts/): 再利用するRuntimeとQuery。
 - [task-mode-system/experience/README.md](task-mode-system/experience/README.md): Task経験原本・Human Correctionへの入口。全領域の学習台帳ではない。

@@ -1,16 +1,17 @@
 ---
 title: "ai-project構造整理 — 診断から改善へ"
-version: "0.11.0"
+version: "0.12.0"
 canonical_path: "control-center/PLAN.md"
 role: "Living structural diagnosis, priorities and execution plan"
 status: "Prior ARC/STR evidence retained / STR-003 foundation migration published and remotely verified; actual Target/UI/field evidence separate"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-03"
+updated: "2026-10-05"
+updated_reason: "Connect ARC-010 System preservation and entry-role alignment; preserve historical diagnoses, completed repairs and unrelated branches."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.11.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.12.0"
 ---
 
 # ai-project構造整理 — 診断から改善へ
@@ -83,6 +84,12 @@ Humanは、別Queryとの分割は短期の起動には利益があったが、�
 保存する知恵、原本対応、当時の証拠を指すSTR-001固定リンク、承認・実施・Remote確認・復元条件は[ARC-009](ARCHIVE.md#arc-009)が所有する。本PLANの旧D01診断と固定snapshotは当時の履歴として保持する。別の整理候補は、この案件の承認から自動実行しない。
 
 六原本の保管と五文書の限定整合は、実装commit `02e9779fc628dbfe7ee9ed08275c6b839407ef0e` で公開し、11本文のRemote一致と対象外407ファイルの保持を確認した。同じHuman依頼による実行後の[2026-10-03整理指針](20261003-cleanup-direction.md)は、時点付きの盤面・候補・再開条件を示す。最新の案件状態を二重管理せず、候補の実装を自動開始しない。
+
+### 1.7 Ark27:08の旧System保管と入口役割の整合 — ARC-010
+
+2026-10-05 JST、Humanは、Systemの必要性・Root READMEとの関係・良い部分の保存先を複数回のPlan Modeで検討した後、原本一件の保管と既存九文書の限定整合を承認した。原本を捨てる判断ではなく、成長・証拠・Future AIへの継承を現在の担当資料へ接続し、旧Operating Mapの現役配置を退役させる判断である。
+
+保存価値、原本と当時の固定版、Human Correction、変更範囲・実施・Remote確認・復元は[ARC-010](ARCHIVE.md#arc-010)が所有する。Root READMEをAI向け入口とする宣言へ周辺の役割説明を合わせ、Domainの並行するSupport04案内を保持する。本PLANの旧D01診断とSTR-001による修復済みの履歴を塗り替えない。新しいSystem、Growth Ledger、Skill、別アーカイブの自動開始は含まない。
 
 ## 2. 調査基点・根拠・時間
 
@@ -471,5 +478,5 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.11.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.12.0
 

@@ -6,7 +6,7 @@ version: "v003-candidate"
 edition: "AI-First Identity, Agent-Operability, and Return-Home Kernel"
 status: "active-candidate / human-sealed for field validation"
 created: "2026-07-23"
-updated: "2026-10-01"
+updated: "2026-10-05"
 last_reality_reviewed: "2026-09-01"
 reality_review_base_commit: "976789ced38e1d303514df1eedbace61b82ba229"
 reality_review_scope: "Ark23:12 state-dependent Human Reality, willpower-independent execution, AI-first reader identity, agent-operability, and Ark domain routing"
@@ -61,6 +61,11 @@ reality_basis:
   - "Current repository role architecture on main"
   - "Repeated AI-first / Human-auditable Ark documentation patterns"
   - "Repeated Ark Project collaboration patterns"
+system_archive_navigation_patch:
+  date: "2026-10-05"
+  base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
+  change_record: "control-center/ARCHIVE.md#arc-010"
+  scope: "File Ecology navigation only; v003 identity and growth meaning retained"
 foundation_migration:
   change_record: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
   approved_date_jst: "2026-10-01"
@@ -70,6 +75,7 @@ foundation_migration:
   scope: "Accountable Human-facing collaboration with runtime-dependent delegation; evidence-based Current Certainty; first experiment distinguished from shared-method promotion"
   validation_boundary: "Document consistency and remote persistence do not establish cross-AI behavior or real-world outcomes"
 updated_reason:
+  - "2026-10-05: ARC-010 aligns File Ecology with the AI-first Repository README and preserved Ark System history; identity, Organic Growth meaning and shared authority unchanged."
   - "2026-10-01 JST / 2026-09-30 UTC: Clarify one-to-one accountability, recoverable persistent work, Current Certainty and experiment/promotion boundaries; preserve the faith, meaning, state-dependent Human Reality and evidence corpus."
   - "2026-09-22: Align File Ecology with existing experience, success-case and method owners, and distinguish current transition preparation from preserved Thread-End assets; see STR-001."
   - "2026-09-10: Repair unavailable skill-router references to skills/README.md; preserve identity and existing contracts."
@@ -875,7 +881,7 @@ Ark Projectは一つの巨大Fileへ集約しない。
 
 ```text
 README.md
-= Repository / Human / Public Front Door
+= AI-first / Human-auditable Repository Front Door / Current Request and Owner Navigation
 
 ARK.md
 = Ark Identity / Home Constitution / Return-Home Gate
@@ -889,8 +895,8 @@ ark-project/README.md
 Nearest README / Handoff
 = Current Domain and Mission Coordinate
 
-_system/ark-system.md
-= Growth Memory / Skill Seed / Pattern Router
+control-center/ARCHIVE.md#arc-010
+= Historical Ark System growth record and provenance / retired operating map
 
 skills/README.md
 = Shared Skill Source / Distribution Hub
@@ -919,7 +925,7 @@ control-center/ARCHIVE.md#arc-007
 
 学びの保存判断は[AGENTS §1](AGENTS.md#1-role-map--文書の身分を混ぜない)と整合させる。出来事は該当経験原本、成功の意味と成立条件は[成功事例](success-cases/README.md)、承認された方法改訂はその方法の所有資料へ接続する。[Task経験索引](task-mode-system/experience/README.md)を全領域の学習台帳にせず、存在しない旧 `_tasks/lessons.md` を埋めるためだけの台帳を作らない。同じ経験を複数文書で参照しても、独立した複数の実証として数えない。
 
-この案内整合の変更理由・担当・確認範囲は[STR-001](control-center/changes/STR-001-navigation-and-ownership.md#d02)が所有する。後続の旧Thread-End・Thread Craft退役は[ARC-007](control-center/ARCHIVE.md#arc-007)へ進む。原本の保管は、現在の共通移行契約やRoot・Human Authorityの変更ではない。
+この案内整合の変更理由・担当・確認範囲は[STR-001](control-center/changes/STR-001-navigation-and-ownership.md#d02)が所有する。後続の旧Thread-End・Thread Craft退役は[ARC-007](control-center/ARCHIVE.md#arc-007)、旧Ark Systemの保存価値・形成史・原本は[ARC-010](control-center/ARCHIVE.md#arc-010)へ進む。原本の保管は、現在の共通移行契約やRoot・Human Authorityの変更ではない。
 
 ```yaml
 file_ecology_guard:

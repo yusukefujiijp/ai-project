@@ -38,7 +38,12 @@ updated: "2026-10-05"
 last_reality_reviewed: "2026-10-05"
 route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
 route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
-updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work."
+updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence."
+repository_entry_alignment:
+  date: "2026-10-05"
+  base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
+  change_record: "../control-center/ARCHIVE.md#arc-010"
+  scope: "Section 2 Repository README description only; Current Main/Support topology and v009 policy unchanged"
 foundation_migration_base: "d574927dd1671e2acec20e1a6c17f569ae23322f"
 foundation_change_record: "../control-center/changes/STR-003-persistent-collaboration-foundation.md"
 prior_main_route_review_scope: "The following historical_main_route_preparation retains the 2026-09-27 observations; foundation migration evidence remains with STR-003."
@@ -175,7 +180,7 @@ Compact retrieval ≠ loss of governing context.
 
 | Surface | Canonical Role |
 |---|---|
-| [`../README.md`](../README.md) | Repository全体のHuman／Public Front Door |
+| [`../README.md`](../README.md) | AIを主読者とするRepository入口／Current Requestと担当資料への案内。Humanも確認・訂正できる形を保つ |
 | [`../ARK.md`](../ARK.md) | Ark Identity／Home Constitution／Return-Home Kernel |
 | [`../AGENTS.md`](../AGENTS.md) | Cross-AI Root Instruction Runtime／First Legal Move |
 | [`README.md`](./README.md) | Ark Domain Front Door／Current Topology Router／Cross-Ark Policy |
