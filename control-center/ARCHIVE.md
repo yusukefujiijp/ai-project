@@ -626,7 +626,7 @@ Dotsの[lessons契約](../dots/README.md#5-dotsの学びを次の判断へ戻す
 
 ## ARC-010
 
-**旧Ark Systemの原本保管と、Root READMEを中心とする入口役割の限定整合。Human承認済み。実装・Remote確認の実際のReceiptは§Gに記録する。**
+**旧Ark Systemの原本保管と、Root READMEを中心とする入口役割の限定整合。Human承認範囲の実装を公開し、原本と九文書のRemote全文一致・対象外保持を確認済み。実際のReceiptと確認境界は§G。**
 
 ### A. 判断の形成・Human Correction・今回の承認
 
@@ -696,6 +696,16 @@ Current08の核と新Support04 Handoffは、共有文書の準備時blobを恒�
 
 ### G. 実施・保存後確認
 
-本稿の作成時点ではHuman承認と実装内容の準備まで。GitHub実装・公開・Remote確認を未実施のまま成功として記録しない。実際のcommit、再取得結果、対象外保持、確認境界を、検証後にこの節へ記録する。本記録自身の最終SHAを本文へ埋め込む循環は作らず、結果追記後の最終本文も再取得する。
+2026-10-05 JST、実装commit [1e3b0b1f0e57d85be0c8c8459f2258f2ec4354f9](https://github.com/yusukefujiijp/ai-project/commit/1e3b0b1f0e57d85be0c8c8459f2258f2ec4354f9)（commit作成日時 **13:16:29 JST／04:16:29 UTC**）をmainへ公開した。親commitは上記の `7efcd490f728c25d5572aae20483fe420454f222`、実装treeは `254fa4927b4f18ea0d0ddc6de01ef82c5d2e3423`。原本追加・元パス除去・九文書更新を一つのcommitにまとめ、公開直前のmain一致を確認し、forceを使わずに更新した。GitHubのauthor／committerは `yusukefujiijp`、本件の読解・設計・実行担当はArk27:08 MainのAIであり、この二つを同一Actorと扱わない。
+
+公開後の13:17 JST、mainが実装commitを指すことを再取得で確認し、そのcommitの**原本一件＋変更九文書＝10本文を直接再取得して全文一致**を確認した。非切断のRemote再帰treeも照合し、差分が承認された11パスだけであること、旧パスにStubがなく、保管原本のblobが移設前と同じ **840fd094e56d9af8648402b22212dcc94d9b4cef** であることを確認した。
+
+対象外**451ファイルはblob・mode一致**で保持を確認した。これは451本文を改めて全文読解したという意味ではない。ChatGPT設定二原本、Main08の核、Support03の後続ReceiptとSupport04準備資料、Board・Actorログ・各Skill・既存アーカイブを変更していない。Domainでは周辺の入口説明だけを整え、Current Main08／Support04の案内・条件を保持した。
+
+保存前には、YAML metadataの構文・重複key、Identity・版、宣言EOF、変更リンク、原本のバイト同一性、AGENTS・ARK・Domainの対象外本文とARC-001〜009履歴の不変を照合した。通常の仕事、形成史、経験保存、Main／Support確認の四場面も執筆AI自身が点検した。STR-001の固定証拠は当時のblob `c10ac44f7743e3ceb442c8f753897bca3f090ee1` に接続し、保管した最新版と混同していない。
+
+ここまでで確認したのは、限定差分の文書整合・配置・GitHub保存・Remote一致と、執筆AIによる意味の点検である。独立した別AIの実理解、Human UIの実操作、外部consumer、長期の探索負担・生活効果、Support04 Targetの実際の受入れは確認済みにしていない。これらの通常Unknownを理由に本件の完了を保留せず、実際の新しい根拠が出た時に再検討する。
+
+本節は確認済み結果の追記であり、記録自身の自己SHAを本文へ埋め込む循環は作らない。追記を含む最終本文も保存後に直接再取得する。今回の範囲をここで完了し、次の整理・新System・別Taskへ自動着手しない。
 
 EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.9.0
