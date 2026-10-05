@@ -1,0 +1,4 @@
+interface:
+  display_name: "Usage Token Reset"
+  short_description: "Work/Codex reset coupon tracking and safe use"
+  default_prompt: "$usage-token-resetスキル を使って、報告したリセットクーポンと次の対応を確認して。"
