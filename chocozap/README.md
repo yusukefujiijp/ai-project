@@ -1,7 +1,8 @@
 ---
 title: chocoZAP Sweet Spot — 記録と運用
-version: v0.2.3
-updated: 2026-10-04
+version: v0.2.4
+updated: 2026-10-06
+updated_reason: 足部・足関節の学習記録への参照を追加
 canonical_path: chocozap/README.md
 status: active
 ---
@@ -50,4 +51,10 @@ Git履歴から過去版を参照できる。読むことと、正本へ復元�
 
 2026-09-24、YusukeJPの承認に基づき、AI assistantが旧日別Markdown方式から本構成へ移行した。旧資料と保存価値・本人の「予期せぬ成功」という評価・復帰条件は [ARC-005](../control-center/ARCHIVE.md#arc-005) が所有する。旧資料は目的を持って調べる保管資料であり、現在の集計・追記先に含めない。将来の休日・B-Gateへの応用は候補であり、今回実装した機能ではない。移行前後の構造確認と、速度向上・別AIの実利用の観測は区別する。
 
-EOF::CHOCOZAP_RECORDS_GUIDE::v0.2.3
+## 5. 関連する学習記録
+
+- [足部・足関節モビライゼーションの学習記録](foot-ankle-mobilization-learning.md)：マット上で始まった、骨のつながり・把持・相対運動・観察の学習と発見を保存する。本人の体験・訂正、AIの解釈、解剖学的な確認、未確認事項と出典を収録。重量・来館の実データを所有するSweet SpotのJSONとは文書の役割が異なる。
+
+2026-10-06、YusukeJPのGitHub実行承認に基づき、上記の学習記録と参照を追加した。
+
+EOF::CHOCOZAP_RECORDS_GUIDE::v0.2.4
