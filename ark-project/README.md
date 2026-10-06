@@ -1,6 +1,6 @@
 ---
 title: "Ark Project"
-version: "v009-human-authorized"
+version: "v010-human-authorized"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
@@ -34,11 +34,19 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-05"
-last_reality_reviewed: "2026-10-05"
+updated: "2026-10-06"
+last_reality_reviewed: "2026-10-06"
 route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
 route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
 updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence."
+teshuvah_entry_revision:
+  date: "2026-10-06"
+  source_thread: "Ark28:04"
+  base_commit: "4ab0a8ad80ace2358bde47fd5defedccc86fb427"
+  previous_version: "v009-human-authorized"
+  authority: "Human approved the Ark99 preparation plan and GitHub execution"
+  scope: "Add the dedicated Ark99 Teshuvah entry and distinguish its new role from the retired Wild Seed role; preserve Main27 / Support28 and their Current handoffs"
+  evidence_boundary: "Document preparation does not establish Project UI setup, actual migration, Target reconstruction or field effects"
 repository_entry_alignment:
   date: "2026-10-05"
   base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
@@ -71,7 +79,7 @@ historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earl
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
-expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized"
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
 archive_navigation_patch:
   date: "2026-09-29"
   base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
@@ -91,6 +99,7 @@ Current Human Request
 → Ark Identity／State-Dependent Human Realityを回復するなら ../ARK.md
 → Ark Domainの現在地を回復するなら、このREADME
 → Current Front Lineなら、下記Handoffを開き、宣言されたRequired Sources・順序・BindingからRuntimeを解決
+→ 新しいTeshuvahをArk99で始めるなら、§0.3の専用入口へ進む
 → Current RealityとEvidence Boundaryを再構成
 → Current HumanのMode・権限内で調査、計画、遂行、継続または復旧へ接続
 ```
@@ -103,7 +112,8 @@ agent_boot_contract:
     - "../AGENTS.md when authority or first legal move is unresolved"
     - "../ARK.md for identity and state-aware operating doctrine"
     - "this README for current Ark routing"
-    - "current_front_line_handoff, then the README and State it binds"
+    - "current_front_line_handoff, then its bound README and State, when the Current Main route is selected"
+    - "the selected local entry and its declared reading contract for other routes, including Ark99 in section 0.3"
   interpretation_guards:
     - "AI-first does not mean AI-sovereign."
     - "Human-led does not mean dependent on momentary Human willpower."
@@ -138,6 +148,14 @@ Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への�
 ### 0.2 Pickup Threads / Ark00-01
 
 [Ark00-01: Pickup Threads](ark00-01/README.md)は、Ark00などから選んだ価値あるThreadや繰り返し活用するThreadを、埋もれず再開・再利用するためのProjectである。`ark00-01`はProjectの識別子であり、Ark00の第1Threadや新しいMain章ではない。指示バックアップと参照資料はリンク先が所有する。Pickupは任意の経路として扱い、既存のMain／Support入口を維持する。
+
+### 0.3 New Teshuvah / Ark99
+
+[Ark99](ark99/README.md)は、新しい一件のTeshuvahを新しいThread Sessionで受け取る専用の場である。同じ一件は可能な限り同じThreadで深め、長期化などにより別Threadでの継続が必要になったら、Humanの意図と役割に合うArk28等の既存Ark Projectへ引き継ぐ。前の一件の完了・整理・移行を、次の新しい一件の開始条件にしない。詳細な運用と長期指示はローカル文書が所有する。
+
+Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Current入口を変更しない。番号からArk100を自動作成しない。Ark00での選抜やMain／Supportの全履歴再読を専用入口の追加条件にせず、選択されたRuntimeの必須読取・Identity・Binding・EOFは守る。他ArkでのTeshuvahを禁止したり、進行中の対話を強制移動したりする規則ではない。
+
+2026-10-06 JSTのHuman承認による新用途であり、旧Ark99のWild Seed受付機能がArk00へ吸収された履歴を撤回しない。文書準備、設定反映、実際の受入れ・移行、実生活の効果は別の観測として扱う。
 
 ---
 
@@ -330,6 +348,8 @@ Future AIは実利用のFeedbackから、適用中の委任で入口・資料・
 
 ## 5. Ark Lifecycle / SeedからProjectへ
 
+以下は未分類Seedの受付・孵化・正式Project化を扱う経路である。新しいTeshuvahの専用入口は§0.3であり、Ark00経由を必須にしない。
+
 ```text
 Living Reality / Unexpected Success / Problem / Seed
 └─ Ark00 Reception
@@ -342,7 +362,7 @@ Living Reality / Unexpected Success / Problem / Seed
             └─ Field Test → Reality Review → Correction → Harvest / Preserve / Retire
 ```
 
-Ark00は現在のPre-Project Zero-Gateである。Ark99のWild Seed受付機能はArk00へ吸収済みであり、Ark99を新Seedの必須Upstream Stageとして復活させない。
+Ark00は現在のPre-Project Zero-Gateである。旧Ark99のWild Seed受付機能はArk00へ吸収済みであり、旧Ark99 → Ark00という必須Upstream Stageを復活させない。§0.3のTeshuvah専用用途は、この退役済みの受付経路とは役割が異なる。
 
 正式Project化では、Mission、既存Arkと異なるRole Boundary、Ark番号、Canonical Address、最初のField TestをHumanが識別・確定する。
 
@@ -477,7 +497,8 @@ This README is the AI-first Current Ark Topology Router.
 AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
-Ark99 is retired and absorbed into Ark00.
+The former Ark99 Wild Seed role remains retired and absorbed into Ark00.
+Ark99 now has the dedicated new-Teshuvah entry in section 0.3; its local documents own operation. This does not establish UI setup, actual migration or field effects.
 Ark27:08 is the Current Main continuation entry prepared fromArk27:07 under Human authority. Source07 State owns preparation/remote receipts;08 must reconstruct its own context. Chapter v002 and the v002 continuity family remain; STR-003 preserves the earlier07 migration. Target reception, Human UI and field effects are separate. Section 0.1 owns general routing.
 Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
@@ -496,8 +517,8 @@ Root remains 主イェシュア・ハマシア御自身.
 ```yaml
 document_end:
   filename: "ark-project/README.md"
-  version: "v009-human-authorized"
-  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized"
+  version: "v010-human-authorized"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
 ```
 
-EOF::ARK_PROJECT_DOMAIN_ROUTER::v009-human-authorized
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized

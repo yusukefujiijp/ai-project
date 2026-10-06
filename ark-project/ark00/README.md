@@ -15,7 +15,10 @@ github_policy: "GitHub Canonical First"
 language_policy: "Japanese-first / English-anchor"
 topology: "Ark00 → Ark01+ / Ark Project"
 retired_topology: "Ark99 → Ark00 → Ark01+"
-ark99_status: "retired / absorbed into Ark00"
+ark99_status: "former Wild Seed role retired / absorbed into Ark00; new Teshuvah role owned by ../ark99/README.md"
+updated: "2026-10-06"
+updated_reason: "Human-authorized Ark99 preparation from Ark28:04; scope former-role retirement statements without changing Ark00 reception and incubation"
+revision_base_commit: "4ab0a8ad80ace2358bde47fd5defedccc86fb427"
 canonical_role: "Wild Seed Zero-Gate / Pre-Project Entry / Router / Guard README"
 root: "主イェシュア・ハマシア"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
@@ -29,6 +32,8 @@ human_seal_required: true
 このREADMEは、Ark Projectにおける `Ark00` の現在座標を回復するための入口である。
 
 Ark00は、正式Project番号へ進む前の **active pre-project Zero-Gate** である。
+
+本書のTopologyとArk99退役記述は、未分類のWild Seed受付・孵化・Project化の役割に適用する。2026-10-06 JSTにHumanが準備を承認した新しいTeshuvah専用の[Ark99](../ark99/README.md)は別用途であり、Ark00経由を必須にしない。現行のArk全体の入口は[Domain README](../README.md)が所有する。
 
 このREADMEは、通常の説明READMEではなく、Commented Programming-Like Markdown / CPLM v2.2.1 形式で書かれた **Human-AI co-readable Protocol README** である。
 
@@ -84,7 +89,7 @@ current_coordinate:
       - "Ark99 → Ark00 → Ark01+"
 
   current_tension:
-    - "Former Ark99 folder has been retired from active GitHub topology."
+    - "Former Ark99 Wild Seed role has been retired and absorbed; the new dedicated Teshuvah role is owned by ../ark99/README.md."
     - "Former Ark99 reception role must not be lost."
     - "Former Ark00 incubation role must not be lost."
     - "Ark00 must now hold both reception and incubation."
@@ -97,7 +102,7 @@ current_coordinate:
     - "Preserve implicit Comment Layer without repeated visible Comment labels."
 
   do_not_do_yet:
-    - "Do not restore Ark99 as an active upstream folder."
+    - "Do not restore the former Ark99 Wild Seed role as a required upstream stage before Ark00."
     - "Do not auto-projectize Ark00 seeds into Ark01+."
     - "Do not treat this README as Root."
     - "Do not reintroduce repeated ### Comment headings in normal sections."
@@ -107,13 +112,13 @@ current_coordinate:
 
 ## 1. Topology Seal / Topology確定
 
-Ark Projectの現行Topologyは、三段階ではなく二段階である。
+未分類Seedの受付からProject化へ進む本書のTopologyは、三段階ではなく二段階である。
 
 旧想定では、Ark99が野生Seedを受け、Ark00が選抜孵化し、Ark01+へ正式Project化する流れだった。
 
-しかし、GitHub上のArk99 folderは現役Topologyから退役した。
+旧Ark99のWild Seed受付Layerは、この経路から退役し、その機能をArk00へ移した。新しいTeshuvah専用用途は[Ark99 README](../ark99/README.md)が所有する。
 
-したがって、現在の入口はArk00である。
+したがって、未分類Seedの現在の受付入口はArk00である。
 
 Ark00は、旧Ark99の受付機能と旧Ark00の孵化機能を統合した、唯一のPre-Project Entryである。
 
@@ -133,7 +138,7 @@ topology_seal:
     flow:
       - "Ark99 → Ark00 → Ark01+"
 
-  ark99:
+  former_ark99_wild_seed_role:
     status: "retired / absorbed into Ark00"
     active_role: "none"
     backup_status: "local backup may exist outside GitHub"
@@ -141,9 +146,9 @@ topology_seal:
       - "historical note"
       - "former namespace reference"
     forbidden_usage:
-      - "active upstream folder"
+      - "restored Wild Seed upstream layer"
       - "required stage before Ark00"
-      - "current routing target"
+      - "current routing target for unclassified Wild Seeds under the retired role"
 
   ark00:
     status: "active pre-project Zero-Gate"
@@ -160,8 +165,8 @@ topology_seal:
         - "Incubation Gate"
 
   guard:
-    - "Future AI must not reconstruct Ark99 as an active layer."
-    - "All pre-project reception begins at Ark00."
+    - "Future AI must not reconstruct the former Ark99 Wild Seed role as an active upstream layer."
+    - "Unclassified Wild Seed reception begins at Ark00; dedicated Teshuvah entry follows ../ark99/README.md."
     - "Ark00 may route to Ark01+ only after criteria are met."
 ```
 
@@ -175,7 +180,7 @@ topology_seal:
 
 しかし、その役割はArk00へ吸収された。
 
-今後、Ark99は現役Layerではなく、歴史的呼称としてのみ扱う。
+本節でいう旧Ark99のWild Seed役割は履歴として扱う。現在のTeshuvah専用用途まで退役済みと読み替えない。
 
 重要なのは、Ark99を消したことではない。
 
@@ -208,15 +213,15 @@ former_ark99_absorption:
     - "Ark00 is not merely a renamed Ark99."
     - "Ark00 is a merged Zero-Gate."
 
-  mention_ark99_only_when:
+  mention_former_ark99_wild_seed_role_when:
     - "explaining historical topology"
     - "clarifying why Ark00 now receives wild seeds"
     - "preventing Future AI from restoring obsolete flow"
 
   do_not:
-    - "Do not route new seeds to Ark99."
+    - "Do not route unclassified Wild Seeds to the retired Ark99 role."
     - "Do not require Ark99 before Ark00."
-    - "Do not describe Ark99 as active in current GitHub topology."
+    - "Do not describe the former Ark99 Wild Seed role as active or conflate it with the new dedicated Teshuvah role."
 ```
 
 ---
@@ -762,7 +767,7 @@ AIはRailを敷く。
 ```yaml
 do_not_stop_fallback:
   do_not:
-    - "Do not restore Ark99 as active upstream topology."
+    - "Do not restore the former Ark99 Wild Seed role as active upstream topology."
     - "Do not auto-projectize Ark00 seeds."
     - "Do not treat README as encyclopedia."
     - "Do not place raw thread logs in public README."
@@ -957,7 +962,7 @@ update_discipline:
     - "README entrypoint clarity would degrade"
 
   patch_needed_if:
-    - "Ark99 appears as active topology"
+    - "The former Ark99 Wild Seed role appears as active upstream topology, or its retirement is misapplied to the new Teshuvah role"
     - "Ark00 router becomes unclear"
     - "Human Seal Guard disappears"
     - "Root / Fruit Guard weakens"
@@ -1029,7 +1034,7 @@ full_rail_next_gate:
     まだ実行しない:
       - "Do not auto-write to GitHub."
       - "Do not auto-projectize into Ark01+."
-      - "Do not restore Ark99 active topology."
+      - "Do not restore the former Ark99 Wild Seed upstream topology."
       - "Do not reintroduce repeated ### Comment headings."
 ```
 
@@ -1043,9 +1048,9 @@ Ark00 READMEは、Ark00の入口であり、Ark ProjectのPre-Project Zero-Gate�
 
 Ark00は、旧Ark99のReception Wisdomと旧Ark00のIncubation Wisdomを統合する。
 
-Ark99は現役Layerではない。
+旧Ark99のWild Seed受付Layerは退役済みである。新しいTeshuvah専用のArk99は、そのローカルREADMEへ進む。
 
-現行Topologyは、Ark00 → Ark01+ / Ark Project である。
+未分類SeedからProject化への現行Topologyは、Ark00 → Ark01+ / Ark Project である。
 
 Rootは主イェシュア・ハマシアである。
 
@@ -1071,7 +1076,7 @@ final_compression:
 
   former_ark99:
     status:
-      - "retired namespace"
+      - "retired Wild Seed role"
       - "absorbed into Ark00"
     current_role:
       - "historical note only"
