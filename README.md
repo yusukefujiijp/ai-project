@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v006"
+version: "v007"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v005 preserved in Git history; v006 retires the Ark System live route and connects growth understanding with its existing owners under ARC-010"
+version_basis: "v001-v006 preserved in Git history; v007 distinguishes common organization and GitHub-specific entries under STR-012; ARC-010 ownership retained"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-05"
+updated: "2026-10-06"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-10-06: STR-012 separates the common control-center entry from GitHub organization; keeps existing plan, case records and required-source paths. Scoped navigation update only."
   - "2026-10-05: ARC-010 preserves the Ark System original, retires its live operating-map route, and connects growth understanding to ARK §8/§12 and historical provenance; no new shared execution contract."
   - "2026-10-03: Add the cross-AI daily activity records route; ownership and scoped validation are recorded in STR-010. No whole-repository rereview."
   - "2026-10-03: Retire the generic _note route under ARC-009; preserve six originals, their useful questions and historical evidence without creating a replacement note system."
@@ -81,6 +82,11 @@ system_archive_navigation_patch:
   base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
   change_record: "control-center/ARCHIVE.md#arc-010"
   scope: "Current growth-owner navigation and historical Ark System route only; prior reviews and authority retained"
+control_center_domain_entry_alignment:
+  date: "2026-10-06"
+  base_commit: "fb5f1d2bae683154ed87ffbb8e03acada780f18e"
+  change_record: "control-center/changes/STR-012-control-center-domain-entries.md"
+  scope: "Common organization and GitHub entry routing only; preserve authority, prior evidence and unrelated domain work"
 foundation_migration:
   change_record: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
   approved_date_jst: "2026-10-01"
@@ -112,7 +118,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v006 / Current-request Repository Front Door
+- Repository入口: README v007 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -160,7 +166,8 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
-| [`control-center/README.md`](control-center/README.md) | Repository全体の構造診断・改善・アーカイブの司令塔 | フォルダ・ファイルの役割、整理計画、変更理由と結果を確認する時。全作業の追加Boot条件ではない |
+| [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |
+| [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。既存原本は従来の住所で保持 |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
 | [旧Ark Systemの知恵・形成史](control-center/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
@@ -237,7 +244,7 @@ Full Railは、Humanが承認した成果へ向けて、実装・確認・修正
 
 Path・Role・Status・Read Route・Topologyが変わった時、または既存入口が誤案内している時に、影響するREADMEを確認する。Threadが終わったという理由だけで、全入口の点検や更新を必須にしない。
 
-Nearest READMEを先に扱い、Domain Parentはその案内が変わる時、Root READMEはRepository共通入口が変わる時に更新する。承認Scopeを越える変更を自動開始しない。構造改善の理由・担当・結果は[control-center](control-center/README.md)へ接続する。
+Nearest READMEを先に扱い、Domain Parentはその案内が変わる時、Root READMEはRepository共通入口が変わる時に更新する。承認Scopeを越える変更を自動開始しない。GitHub構造改善の理由・担当・結果は[GitHub専門入口](control-center/github/README.md)から既存の案件へ接続する。
 
 ### 9.2 Version and Freshness Contract
 

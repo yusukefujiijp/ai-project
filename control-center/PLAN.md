@@ -1,24 +1,74 @@
 ---
-title: "ai-project構造整理 — 診断から改善へ"
-version: "0.12.0"
+title: "GitHub整理PLAN — 現在の判断と保存された診断"
+version: "0.13.0"
 canonical_path: "control-center/PLAN.md"
-role: "Living structural diagnosis, priorities and execution plan"
-status: "Prior ARC/STR evidence retained / STR-003 foundation migration published and remotely verified; actual Target/UI/field evidence separate"
+role: "Single GitHub organization plan / current decision and historical evidence routing"
+status: "Human-authorized control-center entry refresh; implementation evidence owned by STR-012"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-05"
-updated_reason: "Connect ARC-010 System preservation and entry-role alignment; preserve historical diagnoses, completed repairs and unrelated branches."
+updated: "2026-10-06"
+updated_reason: "STR-012: put the current decision before dated diagnoses; retain original historical body, IDs, anchors and reconnect contract without changing required source paths."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.12.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.13.0"
+current_observation_base: "fb5f1d2bae683154ed87ffbb8e03acada780f18e"
+change_record: "changes/STR-012-control-center-domain-entries.md"
 ---
 
-# ai-project構造整理 — 診断から改善へ
+<a id="ai-project構造整理--診断から改善へ"></a>
 
-**現在のHumanの目的から、残す意味・変更する前提・実際の根拠を選ぶ。アーカイブ優先は当時の整理方針として保持し、既存構造を守ることを現目的より上位にしない。**
+# GitHub整理PLAN — 現在の判断と保存された診断
 
-目的と形成経緯は[README](README.md)が所有する。本書は全体の診断と優先順位を扱う。個別アーカイブの具体案・承認・実施状態は[ARCHIVE](ARCHIVE.md)の案件を参照し、本書へ独立した承認台帳を作らない。別Projectの全TaskやThreadのCurrent Stateも二重管理しない。
+本書は**ai-projectのGitHub整理計画**である。共通の整理目的は[親入口](README.md)、GitHub領域の使い方・形成史は[専門入口](github/README.md)へ。個別案件の承認・実施・検証は[ARCHIVE](ARCHIVE.md)／[changes](github/README.md#change-records)が所有する。本書に第二の承認台帳や、各Thread・生活TaskのCurrentを作らない。
+
+## current
+
+### 今回の焦点：control-center自体を整理する
+
+2026-10-06、Humanは「まずはcontrol-center/自体の整理整頓から始めましょう」と述べ、提示済みの限定計画にGitHub実行と継続遂行を承認した。共通入口・GitHub専門入口・本PLANを整え、Rootの必要な案内と一件の変更記録を整合する。対象・形成理由・実施と保存後確認は[STR-012](changes/STR-012-control-center-domain-entries.md)が所有する。
+
+この改善では、対象別にfocusを絞ることと、知恵を他分野へ活かすことを両立させる。共通親は領域を選び、GitHub専門入口は具体的な診断・案件・原本へつなぐ。現在のPLAN・ARCHIVE・changes・整理指針は既存住所を保持し、Handoffの必須Sourceや固定証拠を動かさない。
+
+本欄は承認された作業の目的と接続を示す。保存済み／未保存の最新結果を別に複製せず、再開時はSTR-012の結果と実体から未完了差分を判断する。未確認の書込みを失敗として繰り返さない。対象の完了後はHuman Reviewへ返し、下の残点を自動選択しない。
+
+### 成果を現在へ接続する
+
+下記は所有記録への案内であり、今回すべてを再実装・再試験したという意味ではない。
+
+- [STR-001](changes/STR-001-navigation-and-ownership.md)によるD01・D02・D05・D07・D08等の局所修正は後続の保存・確認を保持する。D03の旧04／05住所差の修復も履歴として保持し、現在のMain／Supportは[Ark Domain](../ark-project/README.md)から解決する。
+- D04はSTR-001での分離設計を経て、[STR-003](changes/STR-003-persistent-collaboration-foundation.md)の明示版移行・Remote確認へ進んだ。下の旧診断にある「固定参照が現在も残る」は、その記録時点で読む。別のGraph／One-Table移行とは区別する。
+- [ARC-007](ARCHIVE.md#arc-007)の三ディレクトリ、[ARC-009](ARCHIVE.md#arc-009)の旧Note、[ARC-010](ARCHIVE.md#arc-010)の旧Systemは、各案件の保管・現役案内整理・確認まで進んだ成果である。原本や当時の証拠を未着手へ戻さない。その他の案件はARCHIVEの該当記録へ進む。
+- [2026-10-03整理指針](20261003-cleanup-direction.md)は時点付きの判断である。当時のJSONL候補は、その後の[STR-009](changes/STR-009-headerless-lessons-adoption.md)で採用・移設済みへ進んだ。形式採用、原本保存、実際の自動読込・利用効果を分ける。
+- Boardの有限対話と後続の所有先修正は[STR-006](changes/STR-006-board-communication-foundation.md)と[該当Topic](../board/topics/20261001-dots-work-reconnection/README.md#current)へ。通信のCurrentはTopicが所有し、STRへ二重管理しない。
+- 整理指針で候補だったPrompt棚の権限案内は、[STR-011](changes/STR-011-prompt-shelf-authority-alignment.md)で限定整合を実施した。指針当時の未確定だけから同じ作業を再提案しない。
+
+### 残点・候補・目的変更終了を分ける
+
+- **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
+- **別Branchの未完了**：[STR-002](changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
+- **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
+- **まだ選ばれていない設計候補**：GitHub原本の`github/`配下への物理移設、別領域の専門入口。必要性と現在の権限を解決して初めて対象にする。今回の構成の完了条件にはしない。
+- **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
+
+### 次の判断の仕方
+
+現在のHuman依頼と有効な継続委任から、対象、目的、根拠、依存、保存する価値、確認方法を選ぶ。候補IDや過去の順位は実行順ではない。新しい依頼が既にあるなら受け取り、再入力を要求しない。計画提示で止める依頼ならそこで止め、実行承認がある範囲は検証まで継続する。
+
+GitHub資料の旧配置が実際に誤読や更新負担を生む場合は物理移設を再検討できる。具体的な影響がまだ分からなければ、今の原本へ接続して完了できる。名前の整然さ、ファイル数、モデルへの期待だけで優位性を決めない。
+
+## diagnosis-history
+
+### 保存された診断を使う時
+
+下の履歴には、初期診断D01–D08、E番号、当時の計画、実装・検証、再設計構想、Ark27:05への補足接続と受入れを保持した。**履歴内の「今回」「現在」「未実施」はそれぞれの観測時点で読む。現在の判断は上のcurrentと各案件の後続証拠へ戻る。**
+
+例えばD04は後続STR-003、Prompt棚候補はSTR-011へ進んでいる。05補足接続の移動未承認・06受入れ未観測を現在の未完了へ戻さない。旧補足接続本文とRequired Readは保存し、今回そのGateを解除・再実行したとは扱わない。
+
+[再編前PLAN全文](https://github.com/yusukefujiijp/ai-project/blob/fb5f1d2bae683154ed87ffbb8e03acada780f18e/control-center/PLAN.md)はv0.12.0、blob `982417008ca2ceb88e93a29608e426dde389e836`。下の履歴本文は同版の§0以降を保持している。固定版の全体構成が必要な時はこのURLで確認する。現在欄の更新と、当時の記録に対する後続訂正を区別する。
+
+<details>
+<summary>形成史・初期診断・実装証拠・過去の補足接続を開く</summary>
 
 ## 0. Current foundation migration — STR-003
 
@@ -478,5 +528,6 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 [experience]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/task-mode-system/experience/README.md
 [projects]: https://github.com/yusukefujiijp/ai-project/blob/cc560d14284d99fd9b8a6e6aa896843e73b0c53d/projects/README.md
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.12.0
+</details>
 
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.13.0

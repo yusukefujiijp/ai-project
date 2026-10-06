@@ -1,127 +1,73 @@
 ---
-title: "Control Center — ai-projectの構造を理解し、改善を継承する入口"
-version: "0.3.8"
+title: "Control Center — 整理する対象を選び、専門領域へつなぐ"
+version: "0.4.0"
 canonical_path: "control-center/README.md"
-role: "Repository structure diagnosis, archive-first selection, improvement and change-history entry"
-status: "human-authorized archive-first workflow / evolving"
+role: "Organization purpose and domain entry; routes to existing evidence and method owners"
+status: "human-authorized domain-entry separation; field effects separately observed"
 repository: "yusukefujiijp/ai-project"
-scope: "Repository全体。ark-project/内だけに限定しない"
+scope: "整理整頓の共通入口。現在用意する専門領域はai-projectのGitHub整理"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-05"
-updated_reason: "ARC-010: align the Repository README role and route the retired Ark System to its preservation case; prior change records retained."
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.8"
+updated: "2026-10-06"
+updated_reason: "STR-012: separate the common organization entry from GitHub-specific work; retain existing evidence paths and contracts."
+change_record: "changes/STR-012-control-center-domain-entries.md"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.4.0"
 ---
 
 # Control Center
 
-**ai-project全体で今後も使うものを選び、役割を終えた資料を理由とともにアーカイブし、残る構成を理解・変更しやすくする司令塔。**
+**何を整理したいのかを明らかにし、その対象に適した判断・根拠・次の接続へ進む共通入口。**
 
-このフォルダは、Repository全体の構造診断と改善を引き継ぐ。個々の資料の存在理由、現在の役割、参照関係、変更の影響を、元の会話に参加していないAIも理解できるようにする。全体の診断・優先順位は[PLAN.md](PLAN.md)、個別アーカイブ案件の提案・承認・実施・確認の経緯は[ARCHIVE.md](ARCHIVE.md)が所有する。承認された保存実体は[__archives/](../__archives/README.md)へ置く。通常の修正・改善の5W1Hと実装・検証は[変更記録](changes/STR-001-navigation-and-ownership.md)が所有し、PLANはその記録へ案内する。
+GitHubのフォルダ・ファイル整理は、[GitHub専門入口](github/README.md)から始められる。対象が分かっている時に本書を毎回経由する必要はない。[PLAN](PLAN.md)・[ARCHIVE](ARCHIVE.md)・[changes](github/README.md#change-records)は、従来の住所を保つGitHub整理の原本であり、全領域共通の計画・台帳ではない。
 
 ## 1. Humanの意図と最初の目的
 
-以下は、このcontrol-centerを作るまでのYusukeJPとAIの対話を編集してまとめたもの。逐語引用ではない。
+この節はHumanとの対話を編集してまとめたもので、逐語引用ではない。
 
-YusukeJPは、AIが調査・判断・精密な言語化・構造化を十分に担い、蓄積した知恵を実際の問題解決へ使うことを求めている。今回の最優先は、ai-projectのフォルダ・ファイル構成の混乱を具体的に説明し、不要になった現役配置のアーカイブから実際の整理を進めることにある。
+YusukeJPは、AIが十分に調査・判断・言語化・構造化を担い、代々のAIが蓄積した知恵を使って、よりよい構成へ育てることを求めている。Humanは意味・優先順位・Correction・STOP・Final Sealを保持する。承認は、AIの通常判断を細分化して許可するためだけでなく、Humanの閃き・良い案・重大な誤りの訂正を取り込む機会でもある。具体的な対象を承認した後は、その範囲を必要な検証まで遂行する。
 
-「スパゲッティ」の初期診断は、**文書の進歩に、入口・現在地・保存先・役割変更の案内が揃って追随せず、読むAIが食い違いを解く必要のある箇所が残っていること**。確認した場所と反例はPLANにある。ファイル数・階層の深さだけで良否を決めず、読取・保存・変更の判断への影響を見る。
+形成時の対象はai-project全体の構造整理だった。その実践から、**整理整頓→レイヤー構造→関係の構造化→interface化**を育て、対象ごとにfocusを絞りながら他分野へも活かしたい、という方向が明確になった。2026-10-06の訂正では、GitHub専用名への単独改名案から、共通の親`control-center/`と専門領域`github/`を分ける案へ進んだ。形成・採否・今回の承認は[STR-012](changes/STR-012-control-center-domain-entries.md)へ接続する。
 
-Humanの追加訂正は、**整理整頓→レイヤー構造→関係の構造化→interface化**を、実体の整理へつなぐことだった。「不要」は現在の運用に残す必要がないという判断であり、歴史や知恵の無価値を意味しない。AIが候補・理由・具体例・影響・保存先・戻し方を調べて提案し、YusukeJPがその対象と変更内容を承認した後、`__archives/`への移動と必要な参照整理を行う。全ての案内修正が終わるまで退役を後回しにせず、根拠のある案件から進める。
+共有するのは、有用な問い・判断理由・成立条件への接続である。各領域の現実・制約・成果まで同一化しない。GitHubの構造整理なら参照先や固定証拠が重要になる。居室整理なら使用頻度・動線・安全・保管場所が判断を変える。この具体例は横展開の設計であり、居室への導入や効果を確認した記録ではない。
 
-AIの方法と創発性は開く。Future AIが、当時の目的・根拠・訂正を理解したうえで、よりよい構造や解釈へ改められる余地を持たせる。現在のモデルの能力や期待だけで、再設計の優位性や継承成功を認定しない。
+分類軸は**記録する媒体ではなく、整理する対象**である。居室の記録をGitHubに置いても、居室整理の判断をGitHub整理の案件へ移管しない。同じ出来事を扱う経験原本・方法・事例も、その役割に応じた所有先を保つ。
 
-Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。ここでいうRepository rootは技術上の最上位ディレクトリを指す。司令塔・AI・文書はKeliであり、HumanのMeaning・Correction・STOP・Final Sealと[共通の協働条件](../AGENTS.md)の下で問題解決を担う。
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・司令塔・文書はKeliである。共通の権限・品質・Guardは[AGENTS](../AGENTS.md)、Identityは[ARK](../ARK.md)に従う。簡潔なHuman入力を、AIの必要な検討や説明を省く理由にしない。
 
 ## 2. なぜrootに作ったか — Player系からのSeed
 
-形成順序は、後の判断を変えるため残す。
+Player系三Repositoryの整理を経て、Humanは継承先を`ark-project/control-center/`案からai-project rootの`control-center/`へ訂正した。特定のArk章だけでなくRepository全体を扱い、目的・責務・未完了意図・採用理由・次の一手をFuture AIへ渡すためだった。
 
-1. Player系三Repositoryの分岐と、Living Reviewの成果を継承する場所が課題になった。統合の検討・改善を経て、YusukeJPは三Repositoryをアーカイブし、既存のArk等へ集中する方向を選んだ。
-2. Humanは「まずアーカイブ」を優先し、手動で実施した。2026-09-22のGitHub metadata確認では、scenes-player-kit、shorts-player-kit、shorts-player-coreの三つとも `archived: true`。この確認は、その時点の観測である。
-3. 継承先は当初の `ark-project/control-center/` 案から、**ai-project全体を見通すrootの `control-center/`** へHumanが訂正した。
-4. Humanが[改行のみのREADMEを作成](https://github.com/yusukefujiijp/ai-project/commit/cc560d14284d99fd9b8a6e6aa896843e73b0c53d)。その後、他AI・Future AIの理解を最重要とし、READMEとPLANの役割を検討した。
-5. Humanはさらに「どこがどうスパゲッティなのかの言語化」を最優先とした。調査・計画だけの段階を経て、READMEとPLANの初版をGitHubへ保存・検証した。
-6. その後Humanは、案内の修復を先行させる初版計画を訂正し、不要な現役配置のアーカイブを優先した。
-7. 既存の `__archives/` を利用し、AIの具体提案→YusukeJPの承認→実体移動→理由と結果の記録、という役割分担を明示した。記録は他AI・Future AIが深く理由と経緯を理解するために必要とされた。
-8. この構成案の提示後、Humanの「早速、やってみましょう！」を受け、四文書の整備と最初の案件の具体化へ進んだ。個別の移動承認と実施結果はARCHIVEの案件が所有する。
-9. Ark27:06でアーカイブを実施・確認した後、Humanは残す構成の修正改善ランキングを求めた。七候補への実行承認とともに、いつ・誰が・どこを・なぜ・どう直したかをFuture AIが理解できる記録を要求した。今回の具体的な範囲と結果は[STR-001](changes/STR-001-navigation-and-ownership.md)へ接続する。
-
-Player系で育った[control-centerの保存時点](https://github.com/yusukefujiijp/scenes-player-kit/tree/a0dc266a819e141040256f9afc4a70b6ff295ff9/control-center)は由来である。同資料の「現在の開発先」等はアーカイブ前の座標として読み、後のHuman判断と区別する。
-
-この対話におけるSeedは、**目的・現在地・責務・未完了意図・採用済み秩序・次の一手を次のAIへ渡すこと**。Humanが述べた「一粒の麦」と「比喩的復活」は、この継承の意味を担う。保存できなかったレビューへの反省を、今回は読める根拠と改善計画へ接続する。Player系の開発再開や新Repository作成は、本入口の成立に必要な工程ではない。
+このGitHub領域の形成順序、Player系の固定Source、「一粒の麦」「比喩的復活」に込められたHumanの意味は、[GitHub専門入口の形成史](github/README.md#formation)へ引き継いだ。[再編前READMEの全文](https://github.com/yusukefujiijp/ai-project/blob/fb5f1d2bae683154ed87ffbb8e03acada780f18e/control-center/README.md)も固定版で辿れる。今回、共通の親へ役割を広げても、GitHub整理の対象をArk専用へ狭めたり、Player系の開発を再開したりしない。
 
 ## 3. 何をどこで判断するか
 
-| Node | Edge | 所有する意味・使い分け |
+| Node | Edge | 責務と使い分け |
 |---|---|---|
-| [このREADME](README.md) | PLANと既存の所有資料へ案内する | control-centerの目的、形成理由、役割、使い方 |
-| [PLAN](PLAN.md) | 診断を根拠・優先順位・改善へ接続する | Repository全体の整理計画。個別案件の承認履歴や各Projectの全Task状態は複製しない |
-| [変更記録 STR-001](changes/STR-001-navigation-and-ownership.md) | 修正前の根拠→変更理由→実装→確認結果へ結ぶ | 通常の構造修正の5W1Hと適用範囲。設計完了・実装・Remote確認・利用効果を分ける |
-| [ARCHIVE](ARCHIVE.md) | 提案・Human判断・変更・結果を一つの案件へ結ぶ | アーカイブ候補の具体案、判断理由、承認範囲、実施・確認・再検討の記録 |
-| [__archives](../__archives/README.md) | 保存物から案件・由来へ戻る | 承認後の保存実体と入口。提案だけの資料を移設済みと表示しない |
-| [Repository README](../README.md) | Current RequestからRepositoryの担当資料へ進む | AIを主読者とする入口。Humanも確認・訂正できる形を保ち、control-centerへ入口の役割を移管しない |
-| [AGENTS](../AGENTS.md) | 現在の依頼を読取・判断・実行へ接続する | 共通の権限、読取、継続、停止。ここで別の承認規則を作らない |
-| [ARK](../ARK.md) | Identityと帰属を回復する | Home Constitution。具体的な案内の不一致はPLANの診断対象になる |
-| [Ark Domain](../ark-project/README.md)／[Projects](../projects/README.md) | 対象の局所入口へ進む | 番号付きArkの系譜と固有名Project。明示Handoffの契約はそのHandoffで確認する |
-| [Repository Reviews](../repository-reviews/README.md) | 観測時点の根拠を保存する | レビュー方法と日付付き観測。PLANは関連する観測と残存課題をつなぐ |
-| [旧Ark Systemの保管案件](ARCHIVE.md#arc-010) | 成長の知恵・形成史 → 原本・当時の証拠 | 現役Operating Mapの退役理由と再利用・復元条件。D01の過去のGate修復は履歴として保持 |
-| [Prompts](../prompts/README.md)／[Skills](../skills/README.md) | 再利用する方法へ進む | 方法の所有資料と利用・配布の入口 |
-| [経験索引](../task-mode-system/experience/README.md)／[成功事例](../success-cases/README.md) | 出来事の原本と、そこからの学びへ進む | 経験、Human評価、成立条件。control-centerへ原本を移し集める意味ではない |
+| このREADME | 整理する対象 → 専門入口 | 共通目的、領域の選択、横展開の考え方。全案件のCurrentは持たない |
+| [GitHub専門入口](github/README.md) | GitHub整理の依頼 → 計画・案件・原本 | 当面の対象はai-project全体。別Repositoryへ自動拡張しない |
+| [既存PLAN](PLAN.md) | GitHubの現在の問い → 優先順位・根拠・残点 | この住所にあるGitHub整理計画。第二のPLANを作らない |
+| [ARCHIVE](ARCHIVE.md)・[変更記録](github/README.md#change-records) | 個別の判断・実施 → 根拠・結果・復元条件 | GitHub整理の既存原本。親に残る配置を汎用契約と誤認しない |
+| [Skills](../skills/README.md)・[Prompts](../prompts/README.md) | 必要な方法 → 方法の所有資料 | 本書に方法本文を複製せず、今回必要なものを選ぶ |
+| [経験索引](../task-mode-system/experience/README.md)・[成功事例](../success-cases/README.md) | 出来事・学び → 根拠と成立条件 | 領域間の再利用は条件を確かめる。原本を集め直さない |
+| 将来の他領域 | 実際の依頼・必要性 → 適切な専門入口 | 居室などは候補。未作成・未着手であり、共通化の実証済み領域ではない |
 
-この表は全資料の必須読込リストではない。目的の資料へ届くための役割図として使う。[Plan Mode Skill](../skills/plan-mode/SKILL.md)は計画の方法、`control-center/PLAN.md`は今回のRepository整理計画であり、同名の責務ではない。
+Repository全体の入口は[Root README](../README.md)、ArkのCurrent Main／Supportは[Ark Domain](../ark-project/README.md)が所有する。本書はそれらを置換せず、各Threadの現在地や生活Taskを二重管理しない。
 
 ## 4. 他AI・Future AIの使い方
 
-構造整理の依頼では、このREADMEからPLANの優先順位へ進む。アーカイブの判断・実行ならARCHIVEの対象案件、保存物の探索なら__archivesの入口へ進む。そこから対象文書・参照元・依存先のCurrent版を確認する。固定commitのEvidenceは観測の再現に、Current本文は今の変更判断に使う。
+現在の依頼から対象と必要な深さを判断し、専門入口または既知の原本へ直接進む。目的が未整理なら言語化・比較・保留から始められる。毎回全方法論を起動したり、全履歴を読んだりするための入口ではない。明示HandoffのRequired Sources・順序・Identity・Binding・EOFは、その契約に従う。
 
-Graphでは、保存場所に加えて「案内する」「意味を所有する」「内容を固定して参照する」「由来になる」「変更に影響する」というEdgeを区別する。単に関係が多いことを欠陥とせず、どの関係が読取や変更を難しくしているかを説明する。アーカイブでは「現役として使う」という案内を外し、「なぜ存在し、なぜ退役したか」を辿る関係を残す。移動だけでは旧案内は消えず、保管名だけでコード実行や書込みが技術的に禁止されるわけでもない。
+短い呼出しでも、必要な目的・Correction・成果・未完了・次の条件へ戻れるようにする。保存済みの計画は現在の実行権限ではなく、未報告は失敗や未実行の証拠でもない。権限と中断復旧は[AGENTS](../AGENTS.md)の所有範囲を使う。
 
-明示されたHandoffや局所Runtimeを読む依頼では、その指定契約を使う。control-centerを全作業の追加Boot条件にしない。通常の依頼の権限判断はCurrent Human RequestとAGENTSに従い、承認済みの範囲を同じ確認で止めない。計画・歴史的承認・ファイルの存在だけから、新しい実行範囲を作らない。
-
-元の会話なしに、次を説明できることを目指す。
-
-- この場所を作った目的と、対象がai-project全体である理由。
-- 具体的な不整合、根拠、その不整合が変える判断。
-- 現行・候補・履歴・固定参照の違いと、変更時の影響。
-- 何が完了し、何が未修正で、次に何を確かめるか。
-
-これは文書の設計目標である。自己点検と別AIの実際の理解は別の観測として扱う。
+元会話を持たないAIが、本書から「なぜ対象別に分けたか」「どこへ進むか」「何がまだ候補か」を説明できることを目指す。文書保存・自己点検・他AIの実理解・実利用の効果は別の観測として扱う。
 
 ## 5. 継続して育てる
 
-通常修正の変更記録：
+今回の初版は共通入口とGitHub専門入口を分け、既存のGitHub原本を現在の住所で使う。整理記録の一斉移設、固定Binding移行、新しい統括Skill、万能台帳、他領域の空フォルダは、この構成の成立条件ではない。
 
-- [STR-001: 案内と所有先の整合](changes/STR-001-navigation-and-ownership.md)：2026-09-22の六修正群とD04分離設計。
-- [STR-002: 単一Promptへの統合](changes/STR-002-single-prompt-consolidation.md)：短期の起動利益と長期の二重管理負担を区別したHuman Correction、Query機能の移管、作成方針撤回、削除・検証・残る移行Gate。
-- [STR-004: Elon Musk DeadlineのPrompt改訂](changes/STR-004-elon-musk-deadline-revision.md)：旧資料の核と形成史を保持し、締切・品質・完了判定・権限を現在の単一Promptへ整理した理由と検証。
+新しい領域が必要になったら、具体的な目的、既存の担当資料、対象固有の条件を確かめる。既存の入口で足りればそこへ接続し、独立した入口に実益があれば本フォルダの下へ追加できる。共通する学びはその方法・経験の所有先へ戻す。共通入口へ全本文を集めることは横展開の条件ではない。
 
-- [STR-005: Dots協働基盤の初版](changes/STR-005-dots-collaboration-foundation.md)：Current方向、dot-0000の身元、初穂の形成記録を役割分担して接続した理由・六パスの実装・検証。
-- [STR-006: Board協働通信の初版](changes/STR-006-board-communication-foundation.md)：初穂から既存Main／Supportへの紹介・全Session変更報告、宛先別の理解依頼、柔軟な実地Feedbackの入口と保存証拠。
+将来、既存のGitHub記録が親に残る配置によって誤読・探索負担が実際に生じるなら、参照・契約・固定証拠を照合して物理移設を再検討できる。今回移設しない判断を、永久禁止や自動的な次Taskへ変えない。変更の意味と結果は[STR-012](changes/STR-012-control-center-domain-entries.md)が所有する。
 
-- [STR-007: Dotsの学びの蓄積基盤](changes/STR-007-dots-lessons-foundation.md)：Dots自身がBottleneck・失敗・回復・方法から学び、Future Dotsへ条件と根拠を渡す最小JSON、読取・保守契約、初期2件の由来。
-
-- [STR-008: Actorログと形成史の保管](changes/STR-008-actor-logs-and-preserved-history.md)：一つの現役ログ領域、JSONL契約、ARC-008の同一原本保管、判断の成功事例、検証範囲。
-
-- [STR-009: 管理行なしlesson JSONLの採用](changes/STR-009-headerless-lessons-adoption.md)：同じ2件の意味を保持したschema 2移行、専用フォルダの読取・更新契約、UUID方針と検証境界。
-
-- [STR-010: 全AI横断のAI活用日時記録](changes/STR-010-cross-ai-daily-records.md)：日別JSONLの用途・粒度・save接続と、既存原本を複製しない設計・確認範囲。
-
-- [STR-011: Prompt棚と現行権限契約の整合](changes/STR-011-prompt-shelf-authority-alignment.md)：Humanの意味・権限と委任可能な中継・結果統合を分け、mainの正本性と作業方法・公開権限を現行AGENTSへ接続した理由・変更・検証。
-
-[ARC-006](ARCHIVE.md#arc-006)は、旧Plan Mode資料の退役と新Skillへの接続を所有する。Skillの入口・配布・限定検証は[Skills Hub](../skills/README.md#33-plan-modeの統一入口)へ進む。
-
-通常の構造修正は、意味がまとまる単位で `changes/` の一件へ記録する。今回の[STR-001](changes/STR-001-navigation-and-ownership.md)では七候補を一つの承認済み整合案件として扱った。各記録から、いつ（観測・保存時刻）、誰（Humanの依頼・承認、実装AI、GitHub上の記録者）、どこ、何を、なぜ、どう変更・検証したか、変更前の根拠、残存制約へ戻れるようにする。Git履歴は正確な差分・時刻を、変更記録は意味・判断・検証範囲を担う。
-
-書式・一件の粒度は変更の性質に合わせ、将来のAIの判断を固定しない。既存のARCHIVE案件へ通常修正を混ぜず、過去案件を新しい成果として複製しない。変更記録は経験・診断資料であり、現在の依頼やHandoffを置換するRuntimeではない。
-
-役割・入口・形成理由が変わればREADME、全体診断・優先順位が変わればPLAN、個別アーカイブの判断・実施結果が変わればARCHIVEの同じ案件を更新する。__archivesの索引は保存実体と案件へ案内し、承認理由を独立に複製しない。既存のRepository Reviewsは日付付きの観測として参照し、当時の報告を後の現在地で塗り替えない。正式な全体レビューを行う場合は同領域の方法を使うが、案件記録の保存に追加レビュー作成を一律には課さない。
-
-新しい資料を作る場合も、既存資料を移す場合も、参照元と依存先への影響を確認する。履歴中の古いパスは当時の根拠として残す場合があり、現在の案内と区別する。文書の保存、問題の修正、別AIの利用、現実の効果を同じ完了状態にまとめない。
-
-全面的に作り直す案も、[PLANの再設計構想](PLAN.md#redesign)で継続して育てられる。現在構成の制約を外して考える自由と、採否を比較する根拠を両立させる。必要な密度が育った場合には、MAP・Living Review・Seed・blueprint等をこのフォルダ配下へ分けられるが、初版はREADMEとPLANの二つから始まり、その後ARCHIVEを加え、STR-001では通常修正の変更記録をchanges/へ追加した。案件が育ち一文書で辿りにくくなれば、ARCHIVEを索引として個別資料へ分けられる。同じ案件ID・根拠・Human判断への到達性を保ち、現在のファイル数や形式を将来の上限にしない。
-
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.3.8
-
-
-
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.4.0
