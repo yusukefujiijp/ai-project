@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_08_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:08",
     "schema_version": "v002",
     "updated_at": "2026-10-07",
-    "update_reason": "08開始後のSkill・GitHub整理・自己改善Loopの成果とHuman訂正を収穫し、Humanが確定した08→09準備へ接続する。起動時記録と後続観測を区別し、各仕事の所有原本へ戻す。",
+    "update_reason": "08開始後のSkill・GitHub整理・自己改善Loopの成果とHuman訂正を収穫し、Humanが確定した08→09準備へ接続する。起動時記録と後続観測を区別し、各仕事の所有原本へ戻す。 Source07準備由来のConfirmedをhistorical_preparationへ明示移動し、今回の基点で08フォルダが不存在という誤読を防ぐ。",
     "authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
     "date_scope": "Asia/Tokyo harvest/preparation date; approval time is the current Human message submission time, not UI creation or Target09 reconstruction."
   },
@@ -335,11 +335,6 @@
     "source": "Current08 Human conversation and verified publicRepository owners; no ChatGPT long-term memory export. Other actors' recorded results retain attribution.",
     "source_observation_base": "d15670372b68f05f408c9083a6e678cc98a7620c",
     "confirmed": [
-      "Human chosePlan Mode transition preparation, resumed interrupted investigation, then authorized the concrete07→08 plan/Title/five-path execution.",
-      "Source07 State revision4 was saved and directly reread at19b41044881686b89e981e923e726e273e0c3e3f; current08 artifacts are constructed from that verified harvest.",
-      "Source07 currentv002 R1–R6 acceptance was observed in07 itself and recorded inSource harvest; it is not08 acceptance.",
-      "ARC-009/guide direct evidence isSource07's; STR-006 later fix andSTR-009 production migration have separate owners/observers.",
-      "At preparation baseline there is noexisting08 folder. Chapter already delegatesCurrent routing toDomain; no chapter orSupport rewrite is needed.",
       "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
       "CurrentDomain routes Main08 / Support05.08 State revision1 is initial preparation; later fruit is now joined to its owning artifacts.",
       "During the transition-planning context on2026-10-07 JST, self-improvement-loop appeared in the callable Skill catalog and skills.read returned body identical to sharedSKILL.md blob a676460a499a65151cfedd5889c375350007e0fc. This supersedes the earlier listing-unobserved observation for that context only."
@@ -354,7 +349,7 @@
       "Cross-runtime automaticlesson ingestion and actual production multiwriter behavior are not proved byJSONL adoption or bounded fixtures.",
       "ExactTokenReset occurrence, current quota and current modelUI are not independently observed."
     ],
-    "historical": "Initial08 preparation remains at the fixedrevision1 snapshot. Then-unassignedfourSkills and Prompt shelf candidate were followed by completed work. OldPlan tests closed by purpose change are not09 gates.",
+    "historical": "Initial08 preparation remains at the fixedrevision1 snapshot. Then-unassignedfourSkills and Prompt shelf candidate were followed by completed work. OldPlan tests closed by purpose change are not09 gates. Initial Source07 confirmed statements are explicitly retained underhistorical_preparation.initial_evidence_confirmed; the noexisting08 statement belongs to2026-10-03 preparation, not the current09-preparation base.",
     "validation_boundary": "Source document review, saved receipts and exact remote equality do not establish Target09 reconstruction, UI use or causal field benefit. Runtime body retrieval is separate from actualSkill invocation."
   },
   "deferred": [
@@ -453,6 +448,11 @@
         "revision": 2,
         "date": "2026-10-07",
         "role": "Source08 harvest of completedSkill/cleanup/Loop work and Human corrections for09; preserve initial07→08 state at fixedsnapshot."
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-07",
+        "role": "Clarify historicalSource07 observations before fixing the09 harvestBinding. No outcome/authority change."
       }
     ]
   },
@@ -519,6 +519,13 @@
         }
       ]
     },
-    "interpretation": "07が書いた08受入れ未観測と、初期のSkill未指定・未作成、Prompt棚候補は当時の記録。後続成果やCurrent Humanの指定を否定するGateにしない。08の受入れを今回再Boot・代理認証しない。"
+    "interpretation": "07が書いた08受入れ未観測と、初期のSkill未指定・未作成、Prompt棚候補は当時の記録。後続成果やCurrent Humanの指定を否定するGateにしない。08の受入れを今回再Boot・代理認証しない。",
+    "initial_evidence_confirmed": [
+      "Human chosePlan Mode transition preparation, resumed interrupted investigation, then authorized the concrete07→08 plan/Title/five-path execution.",
+      "Source07 State revision4 was saved and directly reread at19b41044881686b89e981e923e726e273e0c3e3f; current08 artifacts are constructed from that verified harvest.",
+      "Source07 currentv002 R1–R6 acceptance was observed in07 itself and recorded inSource harvest; it is not08 acceptance.",
+      "ARC-009/guide direct evidence isSource07's; STR-006 later fix andSTR-009 production migration have separate owners/observers.",
+      "At preparation baseline there is noexisting08 folder. Chapter already delegatesCurrent routing toDomain; no chapter orSupport rewrite is needed."
+    ]
   }
 }
