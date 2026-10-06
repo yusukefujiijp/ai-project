@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_04_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-05",
-    "updated": "2026-10-05",
+    "updated": "2026-10-06",
     "canonical_path": "ark-project/ark28/ark28-04/state.json",
     "date_scope": "Asia/Tokyo preparation; not Human UI creation, actual Target boot or bodily state",
-    "change_reason": "Initialize approved03→04 Support continuation from source-backed outcomes, material corrections and current owners; actual reception is separately observed."
+    "change_reason": "Record04 own reception, Ark99 formation/releases/material Human corrections and approved04→05 preparation; preserve origin identity and fixed bindings."
   },
   "identity": {
     "source": "Ark28:03",
@@ -79,7 +79,27 @@
       "limits": "Not all conversation, examples, design discussion, read-only or receive-only input. Current Correction, no-save, Plan-only and STOP prevail."
     },
     "correction": "Use an existing valid delegation within its actual scope without repeating approval. Current Request, Correction, Plan-only and STOP govern; AI agreement creates no Human authority.",
-    "quality": "Do not lower necessary investigation, reasoning or explanation because of B state, token saving, waiting time or presumed Human burden; adapt method and density to purpose."
+    "quality": "Do not lower necessary investigation, reasoning or explanation because of B state, token saving, waiting time or presumed Human burden; adapt method and density to purpose.",
+    "next_transition_scope": {
+      "source": {
+        "path": "ark-project/ark28/ark28-04/task-records.json",
+        "source_id": "transition-approval-s01"
+      },
+      "target": "Ark28:05",
+      "authorized_at": "2026-10-06T21:49:01+09:00",
+      "mode": "AUTHORIZED_PREPARATION",
+      "paths": [
+        "ark-project/ark28/ark28-04/task-records.json",
+        "ark-project/ark28/ark28-04/harvest.md",
+        "ark-project/ark28/ark28-04/state.json",
+        "ark-project/ark28/ark28-05/README.md",
+        "ark-project/ark28/ark28-05/handoff.md",
+        "ark-project/ark28/ark28-05/state.json",
+        "ark-project/ark28/README.md",
+        "ark-project/README.md"
+      ],
+      "limits": "Preparation, publication, necessary validation, remote reread and copy surfaces. No Main transfer, AI messaging, UI setup, body trials, Reset or unrelated work."
+    }
   },
   "bindings": {
     "runtime": {
@@ -158,19 +178,35 @@
       "name": "generate-ideas",
       "policy": "Current shared owner; verify actual discovery/retrieval separately from source readability. Preparation blob is historical, not immutable binding.",
       "historical_release": "https://github.com/yusukefujiijp/ai-project/blob/6aa69384e2e674c91cd65d3f708f95f5c988394e/skills/README.md"
+    },
+    "local_experience": {
+      "path": "ark-project/ark28/ark28-04/task-records.json",
+      "record_id": "ark28-04-task-records",
+      "format_version": "v001",
+      "minimum_revision": 1,
+      "policy": "Current original with explicit coverage; not mandatory old04 startup source or a memory export"
+    },
+    "local_harvest": {
+      "path": "ark-project/ark28/ark28-04/harvest.md",
+      "id": "ARK28_04_MATERIAL_HARVEST",
+      "version": "v001-human-authorized",
+      "policy": "Formation and corrections;05 handoff fixes the publication snapshot"
     }
   },
   "now": {
-    "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
-    "support_purpose": "Teshuvahを中心に、必要な協働を04のCurrent入力から選ぶ。朝の聖別・想起・Dots／Work協働・柔軟なアイデア出しの意味と成果を保持する。",
-    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+    "phase": "PREPARING_NEXT_THREAD",
+    "support_purpose": "Teshuvahを中心に04の協働を05へ継続。Ark99の専用入口・00準備・正式名称・指示原本の完成成果を保持し、次のHuman入力を中心にする。",
+    "first_legal_move": "CONTINUE_APPROVED_04_TO_05_PREPARATION",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "existing_input": "Receive already supplied new input after all gates; do not ask it to be repeated.",
     "boot_only": "Return evidence-backed reception, then Human Review; no automatic task dispatch.",
     "current_request": {
-      "kind": "RECEIVE_THREAD_CONTINUATION",
-      "completion": "Target independently reads ordered18 Required Sources, verifies identity/bindings/triad and explains R1–R8 with sources.",
-      "boundary": "Source compilation and remote checks do not satisfy this Target-owned gate."
+      "kind": "PREPARE_THREAD_CONTINUATION",
+      "source": "Ark28:04",
+      "target": "Ark28:05",
+      "scope": "Human-approved eight-path plan",
+      "completion": "Publish and remotely verify Source experience/harvest/state,05 triad and entry alignment; record terminal receipt and deliver exact Title/Handoff copy surfaces.",
+      "boundary": "05 own reconstruction, Human last mile and field effects remain separate."
     },
     "preparation_observation": {
       "date_jst": "2026-10-05",
@@ -191,7 +227,14 @@
       "defer with meaning retained",
       "selectively reconnect decision-changing deltas to Current Main"
     ],
-    "no_inherited_execution_queue": "Completed dialogue/map/save/capture/Skill work is not pending work; deferred branches are not automatic Tasks."
+    "no_inherited_execution_queue": "Completed dialogue/map/save/capture/Skill work is not pending work; deferred branches are not automatic Tasks.",
+    "previous_initial_state": {
+      "snapshot_commit": "ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "blob_sha": "2830fd0d9b2916bae9b5949e4446731295a1b7f9",
+      "revision": 1,
+      "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
+      "interpretation": "Historical source03 preparation observation.04 subsequently received its boot and collaborated; no repeat boot is triggered by this persistence lag."
+    }
   },
   "evidence": {
     "confirmed_human": [
@@ -261,6 +304,31 @@
           "ideas-native-read-s01"
         ],
         "boundary": "3文脈6応答とSkillなし比較1応答。比較も良好で品質優位は未実証。作成・保存・導入を未完へ戻さない。"
+      },
+      {
+        "outcome": "Ark99 foundation",
+        "status": "PUBLISHED_AND_REMOTE_VERIFIED",
+        "commit": "ab9599b2f3d3236d3f826b6e8516a5be038e7f10",
+        "owner": "ark-project/ark99/README.md",
+        "original": "ark-project/ark28/ark28-04/task-records.json",
+        "source_id": "foundation-release-s01",
+        "boundary": "Dedicated new-Teshuvah field and instructions; Main27/Support28 retained; UI and effect separate."
+      },
+      {
+        "outcome": "Ark99:00 startup preparation",
+        "status": "PUBLISHED_AND_REMOTE_VERIFIED",
+        "commit": "71fa59ddd4283afa34640011f44c1f11d0fafd16",
+        "owner": "ark-project/ark99/ark99-00/README.md",
+        "source_id": "control-release-s01",
+        "boundary": "00 handles setup and experiments;01+ production rules. No mandatory00 transit or all-experiments gate."
+      },
+      {
+        "outcome": "Ark99 names and paste-ready instructions",
+        "status": "PUBLISHED_REMOTE_VERIFIED_AND_COPY_SURFACE_DELIVERED",
+        "commit": "474c231f37c96d8e7fa4adcf7a09392c0e5f8cc2",
+        "owner": "ark-project/ark99/INSTRUCTIONS.md",
+        "source_id": "names-release-s01",
+        "boundary": "Current3 Ark99 blobs equal this release at ff0439713b4a5a36683f79dbc64461a2a09bfa5b; not proof of UI paste."
       }
     ],
     "later_direct_observation": {
@@ -289,18 +357,56 @@
         "owner": "ark-project/ark28/ark28-03/task-records.json",
         "source_id": "ideas-correction-s01",
         "boundary": "方法の裁量と権限・Evidenceの境界を混同しない。"
+      },
+      {
+        "correction": "豊かなTeshuvah由来の展開は保持したい成果。次の一件へ入る仕組みを事前に整え、前件完了/保存/移行を新件開始Gateにしない。",
+        "owner": "ark-project/ark28/ark28-04/task-records.json",
+        "source_ids": [
+          "fruit-value-s01",
+          "zone-cause-s01",
+          "two-rules-s01",
+          "ark99-current-s01"
+        ]
+      },
+      {
+        "correction": "00はcontrol-center。新件から始める二大ルールは01以降本番へ適用する。",
+        "owner": "ark-project/ark99/README.md",
+        "source_id": "control-center-s01"
+      },
+      {
+        "correction": "Project名Ark99: Teshuvah Thread、Thread名Ark99:00_2026/10/06; control-center。旧AI回答の『日付を追加しない』はHuman訂正済み。",
+        "owner": "ark-project/ark99/ark99-00/README.md",
+        "source_id": "names-correction-s01"
+      },
+      {
+        "correction": "新しいTitleの日付後は半角セミコロン。04の固定Titleを遡及変更しない。",
+        "owner": "ark-project/README.md",
+        "policy": "thread_title_policy_version v002-human-authorized"
       }
     ],
     "unknown": [
-      "Target04自身のRequired Sources読解・R1–R8再構成とHumanのUI作成・Title適用・起動。",
+      "Humanの04 UI Title適用・画面一致は直接未観測。04自身の受入れとは分ける。",
       "元会話のないFuture AIによる今回のBoard記録の独立復元。元文脈を持つ03の記述レビューとは別。",
       "共有Skillの全環境・全UIへの反映、Dots側取得、自然な自動選択と継続利用での有用性。",
       "4:00案の結果、Walking習慣、現在のBody・睡眠・当日の予定、右腕の水疱の対応と回復。ダニ完全死滅は未検証。",
-      "Portal季節実体験・翌年想起やAI間協働が実生活の負担を減らしたか。"
+      "Portal季節実体験・翌年想起やAI間協働が実生活の負担を減らしたか。",
+      "Ark99 Project指示の貼付全文一致、本番実利用・Cycle改善、元の休日Teshuvahの現在の完了状態。未確認を未実行/失敗へ変えない。",
+      "Target05自身の読解・再構成、Humanの05作成/Title適用/貼付。"
     ],
-    "boundary": "Human報告、AI編集、保存原本、Tool観測、限定試験、Target再構成、Human UI、実生活効果は別。共有Sourceを引用する複数AIの合意を独立実証へ増幅しない。"
+    "boundary": "Human報告、AI編集、保存原本、Tool観測、限定試験、Target再構成、Human UI、実生活効果は別。共有Sourceを引用する複数AIの合意を独立実証へ増幅しない。",
+    "ark99_reception_report": {
+      "status": "HUMAN_RELAYED_RECEIVING_AI_REPORT",
+      "source": "ark-project/ark28/ark28-04/task-records.json",
+      "source_id": "control-reception-s01",
+      "claim": "00 AI reported its own four-source reception at71fa59ddd428; Human relayed the answer.",
+      "boundary": "Not direct04→00 communication observation, independent reader test, UI matching or production effect."
+    }
   },
   "deferred": [
+    {
+      "branch": "休日の元のTeshuvahとカフェインの振返り",
+      "treatment": "本人が続きを持ち込んだ時に扱う。入口整備の完了から当該Teshuvah完了や現在の身体Realityを認定しない。"
+    },
     {
       "branch": "朝の歩行・睡眠・4:00案",
       "treatment": "次の本人入力とBody/Sleep Guardで扱う。過去案を自動起動しない。"
@@ -316,6 +422,10 @@
     {
       "branch": "Main合流、開始方法候補、Navigator改善、別Project",
       "treatment": "現在の目的と担当原本へ必要な時だけ接続。移行による自動Task列にしない。"
+    },
+    {
+      "branch": "Ark99から既存Arkへの実際の個別案件継承",
+      "treatment": "必要が生じた一件のCurrent Requestと権限で判断。04→05準備と同一視しない。"
     }
   ],
   "progress": {
@@ -327,13 +437,47 @@
       "minimum_revision": 4,
       "note": "Target State has no self-hash. Source records actual publication/reread; Target independently checks required material."
     },
-    "actual_target_reconstruction": "NOT_OBSERVED",
-    "target_reconstruction_receipt": null,
+    "actual_target_reconstruction": "RECONSTRUCTED_BY_OWNER04",
+    "target_reconstruction_receipt": {
+      "observer": "Work / Ark28:04 itself",
+      "recorded_date_jst": "2026-10-06",
+      "status": "OWN_SAME_CONTEXT_RECEPTION_RECORD",
+      "scope": "Ordered18 full-read, identity/binding/triad and R1–R8 reception completed before subsequent Ark99 collaboration.",
+      "source": "ark-project/ark28/ark28-04/task-records.json",
+      "source_id": "source04-reception-s01",
+      "boundary": "Owner04 reception record; not context-free external AI validation or Human UI observation."
+    },
     "human_thread_and_access": "NOT_OBSERVED",
     "human_title_application": "NOT_OBSERVED",
     "independent_transition_reader_test": "NOT_PERFORMED",
     "field_effects": "NOT_OBSERVED_FOR_TARGET04",
-    "boundary": "Source-side artifact review is not context-free reader validation or actual04 reception. Update this mutable owner only on actual new evidence within current authorization."
+    "boundary": "Source-side artifact review is not context-free reader validation or actual04 reception. Update this mutable owner only on actual new evidence within current authorization.",
+    "subsequent_collaboration": {
+      "owner": "ark-project/ark28/ark28-04/task-records.json",
+      "harvest": "ark-project/ark28/ark28-04/harvest.md",
+      "ark99_preparation": "COMPLETED",
+      "names_and_instructions_copy": "COMPLETED",
+      "production_and_field_effects": "NOT_OBSERVED_BY_SOURCE04",
+      "note": "Current technical outcomes and corrections are retained; old initial state is historical."
+    },
+    "next_transition": {
+      "source": "Ark28:04",
+      "target": "Ark28:05",
+      "kind": "THREAD_CONTINUE",
+      "role": "SUPPORT",
+      "compiled_title": "Ark28:05_2026/10/06; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "authorized_at": "2026-10-06T21:49:01+09:00",
+      "status": "SOURCE_MATERIAL_COMPILED",
+      "source_prepared": "IN_PROGRESS",
+      "remote_verification": {
+        "status": "PENDING_PUBLICATION_AND_REREAD"
+      },
+      "target_reconstruction": "NOT_OBSERVED",
+      "human_last_mile": "NOT_OBSERVED",
+      "requested_outcome": "Prepare a source-backed05 continuation and deliver exact copy surfaces; actual Target boot remains distinct.",
+      "receipt_owner": "ark-project/ark28/ark28-04/state.json progress.next_transition",
+      "boundary": "No self hash or circular live binding. Final Source receipt follows actual publication and reread."
+    }
   },
   "eof_sentinel": "ARK28_04_STATE_EOF_v001"
 }

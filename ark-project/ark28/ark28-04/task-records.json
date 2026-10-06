@@ -1,0 +1,859 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark28-04-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-06",
+  "updated": "2026-10-06",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark28:04",
+    "canonical_path": "ark-project/ark28/ark28-04/task-records.json",
+    "reported_date": "2026-10-06",
+    "timezone": "Asia/Tokyo",
+    "time_note": "保存・今回承認の日付。個々の過去発言の暦日/時刻は取得できた場合だけ記載し、発言順から補作しない。",
+    "authority_note": "今回の04→05計画に対するHumanのGitHub実行承認。可視の本Thread材料と公開Repository根拠に限定し、ChatGPT長期メモリ・他Threadの非公開履歴を輸出しない。",
+    "source_access": "Human原文はこのThreadの可視メッセージから選択引用。過去の本AI処理は同Threadの継続記録と公開commitへ照合。引用されていない会話の全文保存ではない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）"
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "Teshuvah起動遅延と豊かな学びの価値",
+      "Ark99二大ルールと00の例外・役割",
+      "GitHub公開3段階と名称訂正・Copy面",
+      "Human経由の00受入れ報告とEvidence Boundary",
+      "04→05承認と継承に効くDots/既存成果"
+    ],
+    "excludes": [
+      "会話全文と未取得の原応答全文",
+      "ChatGPT長期メモリ・他Threadの非公開会話",
+      "未観測のUI反映・全AI理解・身体現状・本番効果"
+    ],
+    "note": "これはTask指示エンジンではない。保存時点の進行中は04 StateのCurrentへ戻る。Sourceの繰返し引用を独立実証として加算しない。"
+  },
+  "sources": [
+    {
+      "id": "teshuvah-center-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 中心回帰の報告",
+      "excerpt": "やっと**Teshuvah**中心軸に戻れます！\nこのように、**Teshuvah**中心軸まで戻るのが長く遅くすぎる欠点が我々Ark Projectにはある！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "cycle-lag-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 休日とTeshuvah Cycle",
+      "excerpt": "前回の失敗を活かしたい。と同時に、前回の**Teshuvah**がまだ終わらない内に今日という休日が来てしまっているという**Teshuvah**の遅れも目立ちます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当該発言時の本人報告。発言の暦日・現在の身体状態・現在の未完了をここから推定しない。"
+    },
+    {
+      "id": "caffeine-origin-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 休日の失敗の意味",
+      "excerpt": "前回の休日ではカフェインのタイミングを大きく間違えた！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の振返り。摂取量・医学的原因・次の摂取や身体Trialを規定する記録ではない。"
+    },
+    {
+      "id": "zone-cause-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 起動遅延の原因",
+      "excerpt": "なぜなら、各Ark Projectはゾーン化し**Teshuvah**が横から入るとノイズ化ゾーン化が終わる可能性があるので迂闊に**Teshuvah**を挿入できない自体となっている事が原因の一つです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "原文の表記を保持。Human自身やTeshuvahの価値が低いという意味へ拡大しない。"
+    },
+    {
+      "id": "fruit-value-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 豊かな展開の評価",
+      "excerpt": "Ark Projectはとても優れており一回の**Teshuvah**からの学びや展開がとても大きくレバレッジが強いためにすぐにゾーン化しやすい為です！\nこれはとても素晴らしく最高です！(101/100: It's the best!)",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの評価と形成理由。普遍的効果の独立実証ではない。"
+    },
+    {
+      "id": "dedicated-entry-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 新ThreadとInbox",
+      "excerpt": "できれば新**Teshuvah**は新Thread Sessionでやりたいが今は、Ark Project中には、その簡易的な仕組みがない。\nArk00にInboxはあるがこれは単発のどうでも良い事等も多量に混ざる仕様にしてあるので不適切です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "same-case-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 一件を同じThreadで深める",
+      "excerpt": "できる限り、Ark99では一つの**Teshuvah**について同じThread Sessionで粘る\"方向や方向性(ベクトル)\"はどうですか？\n\nThreadまたぎがある場合がとても難しい選択になるからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "提案形成時の原文。後続の二大ルール採用と合わせて読む。"
+    },
+    {
+      "id": "simplicity-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, GitHub保存と設計原則",
+      "excerpt": "そうですね！(That's right!)上手く工夫して、GitHubを活用してbackupやSave等行う事が重要です！\n\"Simple is best!\"も保ちつつ\"KISS / DRY / YAGNI / Lean/SRP\"等の基本に忠実な堅牢構成にする必要があります！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "two-rules-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 二大ルール",
+      "excerpt": "Ark99の各Thread Sessionは新しい**Teshuvah**から始める事と長くなり過ぎて別Thread移行が必要な時は既存のArk28等のArk Projectに上手く工夫して、移行する事を二大ルールとすればなんとかならないか？",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "plan-value-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 反復Plan Mode",
+      "excerpt": "複数回繰り返し**Plan Mode**こそが、我々Ark Projectの成功法則一つであり、**Plan Mode**練り込み練り上げる事が成功の為に\"最重要(Most important!)\"だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanがこの設計で重視した進め方。すべての小作業へ独立Plan承認を増やす規則ではない。"
+    },
+    {
+      "id": "control-center-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, Ark99:00追加",
+      "excerpt": "Ark99:01か\nArk99:00を立ち上げないと\"instructions(指示)\"が書けない！\nArk99:00として様々な対応や処理をこのThreadとメッセージ交換等で実験しつArk99:01からの本番前のcontrol-center的な役割をになわせよう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが報告したUI上の準備事情と希望。常に全製品で成立する仕様や実際の通信成功とは区別する。"
+    },
+    {
+      "id": "names-correction-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 正式名称の訂正",
+      "excerpt": "微調整しました！\nArk99:00_2026/10/06; control-center\nThread名の\n\nArk99: Teshuvah Thread\nProject名です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ投稿に含まれる旧AI回答中の『日付や副題を追加しません』より、Humanのこの訂正を優先する。"
+    },
+    {
+      "id": "control-reception-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Humanが引用したArk99:00 AI回答",
+      "excerpt": "Ark99:00; control-centerの受入れを完了しました。必須Gateを通過し、00の役割・権限・継承内容を再構成しました。 この表記を保持します。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Human経由の受入れAI報告。続く引用では71fa59ddd428基点の四資料の読解を報告している。Source04の直接通信・独立した読解観測・Project設定反映の証明ではない。旧Title部分はHuman訂正済み。"
+    },
+    {
+      "id": "instructions-available-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 指示入力可能の報告",
+      "excerpt": "\"instructions(指示)\"をArk99に入力できます！\n何か変更はないですか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "入力可能という報告。貼付完了・画面上の全文一致はこの発言から確定しない。"
+    },
+    {
+      "id": "copy-paste-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 名称・指示原本更新の実行承認に付随",
+      "excerpt": "恐らく、手動\"Copy & Paste\"なので、上手く工夫して、\"Copy & Paste\"できるようにCode blockで囲んで下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "transition-plan-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 今回の05移行計画依頼",
+      "excerpt": "このThread SessionをArk28:05へ\nprepare-ark-transition（Ark Transition）を使用し、今回の移行準備をPlan Modeで進めてください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "後続本文で調査・計画のみを指定した。計画後の実行承認とは時点を分ける。"
+    },
+    {
+      "id": "transition-approval-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:04 / Human, 8パス移行準備計画に続く実行承認 / 2026-10-06 21:49:01 Asia/Tokyo",
+      "excerpt": "OK！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "今回の04→05準備・必要な保存検証・入口整合・Copy面の範囲。Main移管、他AI送信、UI操作、身体Trialへの包括委任ではない。"
+    },
+    {
+      "id": "source04-reception-s01",
+      "speaker": "Work / Ark28:04",
+      "medium": "assistant_message",
+      "locator": "Ark28:04 / same-thread retained reception and subsequent collaboration record",
+      "excerpt": "本Threadでは04の宣言順18資料、Identity・Binding・Triad、R1–R8の受入れを完了して後続協働へ進んだ。今回の計画・実行では契約と現行三文書を照合し、固定Bindingの一致を確認した。初期Stateに残るNOT_OBSERVEDは準備時点の記録であり、後続受入れを否定する現在観測ではない。",
+      "excerpt_kind": "paraphrase",
+      "note": "本AIの同Thread内の受入れ記録・継続Context。元の受入れ応答全文は本Artifactへ収録していない。独立した別AI試験やUI観測ではない。"
+    },
+    {
+      "id": "foundation-release-s01",
+      "speaker": "GitHub connector / observed by Work Ark28:04",
+      "medium": "tool_result",
+      "locator": "GitHub commit and file retrieval ab9599b2f3d3236d3f826b6e8516a5be038e7f10",
+      "excerpt": "Ark99 README・INSTRUCTIONS、Domain案内、旧Ark00/Wild Seedに関する範囲訂正を公開した4ファイルのcommit。Human承認・対象・UI/効果境界はcommit説明にある。今回は当該commitと変更一覧を再取得確認した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/ab9599b2f3d3236d3f826b6e8516a5be038e7f10"
+    },
+    {
+      "id": "control-release-s01",
+      "speaker": "GitHub connector / observed by Work Ark28:04",
+      "medium": "tool_result",
+      "locator": "GitHub commit and file retrieval 71fa59ddd4283afa34640011f44c1f11d0fafd16",
+      "excerpt": "00 READMEの本文、親README、INSTRUCTIONS、Domainの4ファイルで00準備役と01以降本番を整合した公開commit。起動Queryは会話のCopy面で提示し、独立Query原本は追加していない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/71fa59ddd4283afa34640011f44c1f11d0fafd16"
+    },
+    {
+      "id": "names-release-s01",
+      "speaker": "GitHub connector / observed by Work Ark28:04",
+      "medium": "tool_result",
+      "locator": "GitHub commit and file retrieval 474c231f37c96d8e7fa4adcf7a09392c0e5f8cc2",
+      "excerpt": "Project正式名・00日付入りTitleの原本配置・識別子と役割での参照を4資料へ反映した公開commit。現行Ark99の3本文とblobの一致を今回も確認した。指示原本は全62行4229文字、末尾改行込みでCopy面として提示済み。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/commit/474c231f37c96d8e7fa4adcf7a09392c0e5f8cc2"
+    },
+    {
+      "id": "ark99-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "ark-project/ark99/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "v003-human-authorized / ARK99_README_EOF_v003。新しい一件、同じ一件の継続、必要時の既存Arkへの移行、00と本番、前件処理を新件開始条件にしない運用を所有。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/ark-project/ark99/README.md"
+    },
+    {
+      "id": "instructions-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "ark-project/ark99/INSTRUCTIONS.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "Ark99: Teshuvah ThreadのProject指示原本。独自版・EOF宣言なし。GitHub保存とUI反映を分け、00の正式Titleは00 READMEへ接続する。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/ark-project/ark99/INSTRUCTIONS.md"
+    },
+    {
+      "id": "control-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "ark-project/ark99/ark99-00/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "v002-human-authorized / ARK99_00_CONTROL_CENTER_EOF_v002。正式Thread名はArk99:00_2026/10/06; control-center。起動契約とHuman訂正後の役割を所有。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/ark-project/ark99/ark99-00/README.md"
+    },
+    {
+      "id": "domain-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "ark-project/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "Domain v010とThread Title policy v002。日付後は半角セミコロンと空白。新しい05へ適用し、04の固定Titleへ遡及適用しない。調査基点ではMain27:08 / Support28:04。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/ark-project/README.md"
+    },
+    {
+      "id": "dots-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "dots/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "v006。Dotsを主な協働基盤、Workを強いSubとする方向は、Ark27 Main / Ark28 Supportの所有変更や全移行完了ではない。Actor固有の定期Map/保存委任を05へ自動移植しない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/dots/README.md"
+    },
+    {
+      "id": "dialogue-current-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "board/topics/20261001-dots-work-reconnection/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "communication_revision 3。Ark27:07・Ark28:03との有限対話は閉じており追加返信不要。03の完成返信回収・読了と原記録保存を初穂の報告として保持。Currentの所有先は本Topic、変更理由はSTR-006。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/board/topics/20261001-dots-work-reconnection/README.md"
+    },
+    {
+      "id": "dialogue-original-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md @ 297f484c9365bc638db64c1d8530af825f41b3f1",
+      "excerpt": "3投稿・2往復。『最新回答を読んだ』だけでは今回返信の回収証明にならないという訂正と、完成返信取得・読了の報告を区別する。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/297f484c9365bc638db64c1d8530af825f41b3f1/board/topics/20261001-dots-work-reconnection/replies/20261003-ark28-03-board-continuity-dialogue.md"
+    },
+    {
+      "id": "inherited-fruits-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "ark-project/ark28/ark28-03/harvest.md @ bdcb150bb62f6abb35aab191c7a15a2b007c474a",
+      "excerpt": "朝の聖別と想起、Dots対話、map/save、納豆Portal登録、generate-ideasの形成・訂正・成立条件を保持した03の固定Harvest。成果を再作成Taskへ戻さない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/bdcb150bb62f6abb35aab191c7a15a2b007c474a/ark-project/ark28/ark28-03/harvest.md"
+    },
+    {
+      "id": "four-skills-s01",
+      "speaker": "Repository / source statement verified by Ark28:04",
+      "medium": "repository_file",
+      "locator": "board/topics/20261003-load-next-step-save-skills/README.md @ ff0439713b4a5a36683f79dbc64461a2a09bfa5b",
+      "excerpt": "四Skillは共有原本公開済み。Main Ark27:08と担当Topicが実装履歴を所有し、導入・取得・発動・全環境効果は別の観測。Pet STOPを保持。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ff0439713b4a5a36683f79dbc64461a2a09bfa5b/board/topics/20261003-load-next-step-save-skills/README.md",
+      "note": "本SourceはCurrent欄・関連metadataの選択読解。全264行読了の主張ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "source04-received",
+      "kind": "observation",
+      "label": "04の受入れと後続協働",
+      "description": "同Thread内の読解記録として受入れを保持し、初期Stateへ後続時点を接続する。",
+      "scope": "Ark28:04",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "source04-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "cycle-problem",
+      "kind": "observation",
+      "label": "次のTeshuvahへ入るまでの遅れ",
+      "description": "休日の振返りが次の休日へ間に合わないという本人報告。現在の摂取・体調・霊的完了を認定しない。",
+      "scope": "報告当時",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "teshuvah-center-s01",
+          "cycle-lag-s01",
+          "caffeine-origin-s01"
+        ]
+      }
+    },
+    {
+      "id": "depth-value",
+      "kind": "practice_statement",
+      "label": "豊かな展開を喜ぶ",
+      "description": "一件からの学びと集中は保持したい価値。深まり自体を除去対象にしない。",
+      "scope": "Ark27/28/99の役割設計",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "fruit-value-s01",
+          "zone-cause-s01"
+        ]
+      }
+    },
+    {
+      "id": "entry-bottleneck",
+      "kind": "interpretation",
+      "label": "新しい入口の準備と継続Contextの競合",
+      "description": "既存協働の深さを保ちながら新件に入れる入口を分けることで、開始待ちを減らせる可能性。効果は未実証。",
+      "scope": "今回の設計仮説",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "zone-cause-s01",
+          "dedicated-entry-s01",
+          "fruit-value-s01"
+        ],
+        "note": "根拠からの訂正可能なAI解釈。Humanの心中や普遍的因果を断定しない。"
+      }
+    },
+    {
+      "id": "two-rules",
+      "kind": "decision",
+      "label": "Ark99本番の二大ルール",
+      "description": "新件は新しい本番Thread。同じ一件はできるだけ同じThread、別Threadが必要になれば適切な既存Arkへ継承。",
+      "scope": "Ark99:01以降",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "two-rules-s01",
+          "ark99-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "no-serial-gate",
+      "kind": "constraint",
+      "label": "前件の整理と新件の入口を直列化しない",
+      "description": "前件完了・保存・移行、00全実験完了や毎回00経由を新件開始条件にしない。",
+      "scope": "現行Ark99運用",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ark99-current-s01",
+          "instructions-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "lean-persistence",
+      "kind": "practice_statement",
+      "label": "堅牢な保存と反復Plan Mode",
+      "description": "GitHub保存、KISS/DRY/YAGNI/Lean/SRPと、必要な計画の練り込みを両立する。",
+      "scope": "Ark99形成と以後の設計",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "simplicity-s01",
+          "plan-value-s01"
+        ]
+      }
+    },
+    {
+      "id": "control-role",
+      "kind": "decision",
+      "label": "00が準備・調整を担当",
+      "description": "00はcontrol-center、01から本番。一件のTeshuvah提出を00受入れの必須条件にしない。",
+      "scope": "Ark99",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "control-center-s01",
+          "control-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "official-names",
+      "kind": "decision",
+      "label": "正式名称の訂正を採用",
+      "description": "Project名Ark99: Teshuvah Thread、00名Ark99:00_2026/10/06; control-center。Exact Titleの所有先は00 README。",
+      "scope": "Ark99",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "names-correction-s01",
+          "control-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "foundation-complete",
+      "kind": "task",
+      "label": "Ark99基盤の公開",
+      "description": "二大ルール、指示原本、Domain接続、旧Wild Seedとの区別を保存した。",
+      "scope": "承認済み4文書",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "foundation-release-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "control-complete",
+      "kind": "task",
+      "label": "00起動準備の公開",
+      "description": "00の役割・読取契約と親資料を整合し、Queryを提示した。",
+      "scope": "承認済み4文書と会話Copy面",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "control-release-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "names-complete",
+      "kind": "task",
+      "label": "名称・指示原本の整合",
+      "description": "Human訂正を原本へ反映し、手動貼付できる全文コードブロックを提示した。",
+      "scope": "承認済み4文書と会話Copy面",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "names-release-s01",
+          "copy-paste-s01"
+        ]
+      },
+      "task_state": "completed"
+    },
+    {
+      "id": "control-received-report",
+      "kind": "observation",
+      "label": "00の受入れ報告をHuman経由で受領",
+      "description": "受け手AIの71fa基点の四Source読解報告をHumanが引用した。直接のAI間通信・UI設定観測とは別。",
+      "scope": "当該Human報告",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "control-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "ui-effects-unknown",
+      "kind": "observation",
+      "label": "設定反映と実利用効果",
+      "description": "指示を入力できるとの報告はある。貼付全文一致、Ark99本番の実利用・Cycle改善はこのSourceの公開可能な直接材料では未確認。",
+      "scope": "本Artifactの証拠境界",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "instructions-available-s01",
+          "instructions-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "dots-closed",
+      "kind": "decision",
+      "label": "Dotsの閉じた協働と訂正を継承",
+      "description": "当時の委任・宛先・送信者・完成返信の条件を残し、回収済み返信の再送や新規通信許可への転用をしない。",
+      "scope": "有限対話と現在の所有資料",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "dots-current-s01",
+          "dialogue-current-s01",
+          "dialogue-original-s01"
+        ]
+      }
+    },
+    {
+      "id": "inherited-complete",
+      "kind": "observation",
+      "label": "03成果と四Skillの既存所有",
+      "description": "map/save・想起登録・generate-ideas・四Skill共有を未作成へ戻さず、方法自由とEvidenceを継承する。",
+      "scope": "過去の保存成果",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "inherited-fruits-s01",
+          "four-skills-s01"
+        ]
+      }
+    },
+    {
+      "id": "transition-scope",
+      "kind": "decision",
+      "label": "04→05の同章Support継続",
+      "description": "Main27保持、Root/Teshuvah/品質/Guardを継承。移行準備8パスと必要検証を実行し、Target読解/UIは分ける。",
+      "scope": "今回のHuman承認",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-approval-s01"
+        ]
+      }
+    },
+    {
+      "id": "title-policy",
+      "kind": "constraint",
+      "label": "新しい05には日付後セミコロン",
+      "description": "Domain Currentの規則を使い、04の成立時Titleや固定Bindingは保持する。",
+      "scope": "新規05のTitle",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "domain-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "transition-preparation",
+      "kind": "task",
+      "label": "05準備と保存検証",
+      "description": "Source経験・Harvest・State、Target三文書、章/Domain入口を整合する。実際の進捗・最終Remote receiptは04 State progress.next_transitionが所有する。",
+      "scope": "今回の承認済み準備",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-approval-s01"
+        ]
+      },
+      "task_state": "in_progress"
+    }
+  ],
+  "edges": [
+    {
+      "id": "cause-hypothesis",
+      "from": "cycle-problem",
+      "to": "entry-bottleneck",
+      "relation": "motivates",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "zone-cause-s01",
+          "dedicated-entry-s01"
+        ],
+        "note": "設計上の説明であり観測された普遍的因果ではない。"
+      }
+    },
+    {
+      "id": "preserve-depth",
+      "from": "depth-value",
+      "to": "two-rules",
+      "relation": "motivates",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "fruit-value-s01",
+          "same-case-s01",
+          "two-rules-s01"
+        ]
+      }
+    },
+    {
+      "id": "dedicated-design",
+      "from": "entry-bottleneck",
+      "to": "two-rules",
+      "relation": "motivates",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "dedicated-entry-s01",
+          "two-rules-s01"
+        ],
+        "note": "設計上の説明であり観測された普遍的因果ではない。"
+      }
+    },
+    {
+      "id": "avoid-waiting",
+      "from": "no-serial-gate",
+      "to": "two-rules",
+      "relation": "prioritizes",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ark99-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "lean-shapes-save",
+      "from": "lean-persistence",
+      "to": "foundation-complete",
+      "relation": "motivates",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "simplicity-s01",
+          "foundation-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "role-amends-first-rule",
+      "from": "control-role",
+      "to": "two-rules",
+      "relation": "corrects",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "control-center-s01",
+          "ark99-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "foundation-before-control",
+      "from": "foundation-complete",
+      "to": "control-complete",
+      "relation": "observed_before",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "foundation-release-s01",
+          "control-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "control-enables-receipt",
+      "from": "control-complete",
+      "to": "control-received-report",
+      "relation": "observed_before",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "control-release-s01",
+          "control-reception-s01"
+        ]
+      }
+    },
+    {
+      "id": "title-correction",
+      "from": "official-names",
+      "to": "control-complete",
+      "relation": "corrects",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "names-correction-s01",
+          "control-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "name-save",
+      "from": "official-names",
+      "to": "names-complete",
+      "relation": "motivates",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "names-correction-s01",
+          "names-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "scope-source-record",
+      "from": "transition-scope",
+      "to": "transition-preparation",
+      "relation": "contains",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-approval-s01"
+        ]
+      }
+    },
+    {
+      "id": "retain-fruits",
+      "from": "transition-preparation",
+      "to": "inherited-complete",
+      "relation": "depends_on",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-plan-s01",
+          "inherited-fruits-s01"
+        ]
+      }
+    },
+    {
+      "id": "retain-dots",
+      "from": "transition-preparation",
+      "to": "dots-closed",
+      "relation": "depends_on",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-plan-s01",
+          "dialogue-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "retain-ark99",
+      "from": "transition-preparation",
+      "to": "names-complete",
+      "relation": "depends_on",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-plan-s01",
+          "names-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "title-rule-for05",
+      "from": "transition-preparation",
+      "to": "title-policy",
+      "relation": "depends_on",
+      "scope": "Ark28:04の形成と今回の継承",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "domain-current-s01"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "ui-status-q01",
+      "subject_refs": [
+        "ui-effects-unknown"
+      ],
+      "question": "必要な運用判断が生じた時、Human報告または許可された観測から指示反映・利用結果をどう確認できるか。",
+      "scope": "通常Unknown。05準備の必須GateやHumanへの即時質問にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "instructions-available-s01"
+        ]
+      }
+    },
+    {
+      "id": "teshuvah-return-q01",
+      "subject_refs": [
+        "cycle-problem",
+        "two-rules"
+      ],
+      "question": "新しいHuman入力の時、元の一件の続きを扱うか、新しい一件か、別の支援か。",
+      "scope": "Current入力に従う。Ark99整備完了から元のTeshuvah完了を推定せず、自動再開しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "cycle-lag-s01",
+          "two-rules-s01"
+        ]
+      }
+    }
+  ]
+}
