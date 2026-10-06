@@ -1,6 +1,6 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.14.0"
+version: "0.14.1"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
 status: "Human-authorized GitHub plan relocation; implementation evidence owned by STR-013"
@@ -8,11 +8,11 @@ repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-10-06"
-updated_reason: "STR-013: place the single GitHub plan under its domain; preserve historical meaning, IDs, fixed evidence and explicit required-source contracts."
+updated_reason: "STR-013 follow-up: route the physical living-space seed to house after the Human naming correction; historical diagnoses and contracts unchanged."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.0"
-current_observation_base: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.1"
+current_observation_base: "fd6b498be94276b993cc661e79c474a0fe3f20a0"
 change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 ---
 
@@ -30,7 +30,7 @@ change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 
 本PLANとARCHIVEの本文は`control-center/github/`の単一原本へ移す。旧住所は新原本と既存節への案内のみを持ち、計画・案件状態を別に更新しない。これにより共通親と専門領域を配置でも区別しながら、既存のHandoff・Skill・履歴からの到達経路を保つ。旧版の本文・SHA・EOFを要求する契約は案内で満たしたとせず、その契約が指定する版を読む。
 
-`home/README.md`はHumanが作った入口のSeedとして保持する。家の実際の状況、具体的な整理計画、生活上の成果は今回のGitHub整備から推定しない。既存の`changes/`と整理指針は、必須Sourceを含む現在の所有先を保つ。全資料の一斉移設や別領域の着手を、この二原本の整理の成立条件にしない。
+Humanが最初に作った`home/README.md`は、homepageとの紛らわしさを避ける後続訂正により[house/README.md](../house/README.md)へ改名した。内容は改行一つの入口Seedとして保持する。家の実際の状況、具体的な整理計画、生活上の成果は今回のGitHub整備から推定しない。既存の`changes/`と整理指針は、必須Sourceを含む現在の所有先を保つ。全資料の一斉移設や別領域の着手を、この二原本の整理の成立条件にしない。
 
 本欄は目的と接続を示し、最新の実施・保存確認はSTR-013と実体へ戻る。未確認の書込みを失敗として繰り返さない。承認対象を確認し終えたらHuman Reviewへ返し、残点を自動選択しない。
 
@@ -52,7 +52,7 @@ change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 - **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
 - **別Branchの未完了**：[STR-002](../changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
 - **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
-- **今回選んだ範囲と、別の判断**：PLAN・ARCHIVEの移設はSTR-013の対象へ進んだ。その他の記録の移設や`home/`の具体的な設計・生活上の実行は別の対象であり、この二原本の移設の未完了部分には数えない。HumanによるhomeのSeed作成と、実際の家の整理成果を区別する。
+- **今回選んだ範囲と、別の判断**：PLAN・ARCHIVEの移設はSTR-013の対象へ進んだ。その他の記録の移設や`house/`の具体的な設計・生活上の実行は別の対象であり、この二原本の移設の未完了部分には数えない。HumanによるhomeのSeed作成と、実際の家の整理成果を区別する。
 - **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
 
 ### 次の判断の仕方
@@ -534,4 +534,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.1

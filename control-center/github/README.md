@@ -1,6 +1,6 @@
 ---
 title: "GitHub整理 — ai-projectの構造を理解し、改善を継承する"
-version: "0.2.0"
+version: "0.2.1"
 canonical_path: "control-center/github/README.md"
 role: "GitHub organization entry / route to the single plan, case records and originals"
 status: "human-authorized domain entry and owner placement; actual reader and field effects separate"
@@ -10,7 +10,7 @@ primary_reader: "Current AI / other AI / Future AI"
 created: "2026-10-06"
 updated: "2026-10-06"
 change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
-expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.0"
+expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.1"
 ---
 
 # GitHub整理
@@ -30,7 +30,7 @@ expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.0"
 | 時点を比較して診断したい | → [Repository Reviews](../../repository-reviews/README.md) | 日付付き観測とCurrent実体を比較する。古い診断を最新状態としない |
 | 整理の方法を使いたい | → [Skills](../../skills/README.md)・[Prompts](../../prompts/README.md) | Plan Mode、Living Review、Graph等から必要な方法を選ぶ |
 
-この構成は、Humanによるhomeの入口Seed作成と、GitHub専用原本を専門領域へ収める訂正を受けたもの。今回の対象・理由・検証は[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)へ。`../home/`は家の中を整理する兄弟領域であり、GitHubに記録されることだけを理由に本領域の配下や案件へ取り込まない。
+この構成は、Humanによるhomeの入口Seed作成と、GitHub専用原本を専門領域へ収める訂正を受けたもの。今回の対象・理由・検証は[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)へ。後続のHuman訂正で名称を`house/`へ変更した。[house](../house/README.md)は家・居室など物理的な生活空間を整理する兄弟領域であり、GitHubに記録されることだけを理由に本領域の配下や案件へ取り込まない。
 
 本表は全件必読リストではない。指定されたHandoff・必須Sourceはその契約に従い、既知の案件へは直接進める。Root READMEはRepository入口、AGENTSは共通判断・権限、ARKはIdentity、Domain・Thread資料は各Currentを所有する。この専門入口へそれらを移管しない。
 
@@ -106,4 +106,4 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 Root・Teshuvah・Human Foreground One・HumanのCorrection／STOP／Final SealとGuardを保持する。AI・GitHub・この入口はKeliであり、Rootや王座ではない。
 
-EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.0
+EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.1

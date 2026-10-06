@@ -5,6 +5,7 @@ canonical_path: "control-center/changes/STR-013-github-plan-and-archive-relocati
 status: "scoped implementation published and remotely verified; independent reader and field effects unobserved"
 created: "2026-10-06"
 updated: "2026-10-06"
+latest_followup_status: "house rename prepared; remote verification pending"
 owner: "Ark27:08"
 repository: "yusukefujiijp/ai-project"
 branch: "main"
@@ -37,7 +38,7 @@ Humanの意図は、共通の整理目的と知恵への接続を保ちながら
 | [PLAN](../github/PLAN.md) | 現在の問い → 判断・証拠・残点 | GitHub計画の単一原本 |
 | [ARCHIVE](../github/ARCHIVE.md) | 退役案件 → 理由・承認・実施・復元 | GitHub案件の単一原本。保管実体は既存__archives |
 | [旧PLAN](../PLAN.md)・[旧ARCHIVE](../ARCHIVE.md) | 既存参照 → 新原本・既存節 | 案内だけ。本文読解・旧Bindingの代替ではない |
-| [homeのSeed](../home/README.md) | Humanの横展開意図 → 今後の具体化 | Human作成の改行一つを保持。今回、家の作業は開始しない |
+| [houseのSeed（当初名home）](../house/README.md) | Humanの横展開意図 → 今後の具体化 | Human作成の改行一つを保持。今回、家の作業は開始しない |
 | 既存changes・整理指針 | 専門入口 → 形成理由・時点付き根拠 | 現行Handoffの必須Sourceを含む住所を保持。本文を二重化しない |
 
 ## 3. 確認したRealityと調査境界
@@ -82,5 +83,17 @@ PLANのdiagnosis-history以下、ARCHIVEの§1以下を全長で比較し、相�
 復元が必要なら上記基点の旧二原本と、この変更の差分から判断する。単純に古いTree全体へ巻き戻してHumanや他AIの並行変更を消さない。新住所で後続編集があれば先に照合する。旧住所の案内を外す場合も、実際の参照元・契約・残す価値を確認する別判断であり、自動的な次Taskにはしない。
 
 今回の成功は、二原本の配置・必要な案内・意味保持・Remote確認という範囲で評価する。家の整理の効果、他AIの理解、長期の探索負担の減少は、実際に使った時の観測で判断する。
+
+## house-name
+
+### 2026-10-06の後続訂正：homeからhouseへ
+
+Humanは「homeにはhomepage的な意味合いもある」と指摘し、houseの方が良ければ修正するよう依頼した。これは名称と必要な案内の変更権限であり、家の整理計画・実作業の開始依頼ではない。今回の対象は物理的な家・居室などの生活空間なので、領域名を`house/`へ変更する判断を採用した。homeという英語が誤りという意味ではなく、このRepositoryの入口・分野名として対象を明確にする選択である。
+
+調査基点は`fd6b498be94276b993cc661e79c474a0fe3f20a0`。旧`control-center/home/README.md`は改行一つ、blob `8b137891791fe96927ad78e64b0aad7bded08bdc`のままで、house配下はまだ存在しなかった。この同一blobを`control-center/house/README.md`へ移し、旧配置は残さない。共通入口、GitHub入口、PLAN現在欄、本記録の現在へのリンクを整合する。上の§1–6にあるhome作成・保持・検証は当時の記録として残す。
+
+この訂正はSTR-013の領域分離に対する限定的な後続変更として本記録に集約する。新しい案件台帳、第二の家の入口、生活計画は作らない。PLANの診断履歴、Handoff・Skill・Root契約、他Threadやartifacts等の並行成果は保持する。
+
+移動先内容・旧配置の消失・参照・対象外保持を照合し、公開後のRemote再取得結果を追記する。
 
 EOF::STR_013_GITHUB_PLAN_ARCHIVE_RELOCATION::v001
