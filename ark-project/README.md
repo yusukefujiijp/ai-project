@@ -47,6 +47,7 @@ teshuvah_entry_revision:
   authority: "Human approved the Ark99 preparation plan and GitHub execution"
   scope: "Add the dedicated Ark99 Teshuvah entry and distinguish its new role from the retired Wild Seed role; preserve Main27 / Support28 and their Current handoffs"
   evidence_boundary: "Document preparation does not establish Project UI setup, actual migration, Target reconstruction or field effects"
+  control_center_delta: "2026-10-06: Human designated Ark99:00; control-center for preparation and connection experiments; production Teshuvah threads begin at 01. Local README owns the startup contract."
 repository_entry_alignment:
   date: "2026-10-05"
   base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
@@ -151,7 +152,9 @@ Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への�
 
 ### 0.3 New Teshuvah / Ark99
 
-[Ark99](ark99/README.md)は、新しい一件のTeshuvahを新しいThread Sessionで受け取る専用の場である。同じ一件は可能な限り同じThreadで深め、長期化などにより別Threadでの継続が必要になったら、Humanの意図と役割に合うArk28等の既存Ark Projectへ引き継ぐ。前の一件の完了・整理・移行を、次の新しい一件の開始条件にしない。詳細な運用と長期指示はローカル文書が所有する。
+[Ark99](ark99/README.md)は、新しい一件のTeshuvahを新しい本番Thread Sessionで受け取る専用の場である。同じ一件は可能な限り同じThreadで深め、長期化などにより別Threadでの継続が必要になったら、Humanの意図と役割に合うArk28等の既存Ark Projectへ引き継ぐ。前の一件の完了・整理・移行を、次の新しい一件の開始条件にしない。詳細な運用と長期指示はローカル文書が所有する。
+
+[Ark99:00; control-center](ark99/ark99-00/README.md)は、設定・接続実験・運用調整を担う準備用Threadであり、本番はArk99:01から始める。上記の二大ルールは本番Teshuvah Threadへ適用する。00の専用READMEがその起動契約を所有し、00の全実験完了や毎回の00経由を本番開始の追加条件にしない。
 
 Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Current入口を変更しない。番号からArk100を自動作成しない。Ark00での選抜やMain／Supportの全履歴再読を専用入口の追加条件にせず、選択されたRuntimeの必須読取・Identity・Binding・EOFは守る。他ArkでのTeshuvahを禁止したり、進行中の対話を強制移動したりする規則ではない。
 
