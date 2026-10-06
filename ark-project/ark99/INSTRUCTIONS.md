@@ -1,6 +1,6 @@
-# Ark99 長期指示
+# Ark99: Teshuvah Thread 長期指示
 
-この指示は、Ark99の各Thread Sessionに適用する。目的・成立理由・Source案内の原本は https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark99/README.md 、本指示の保存原本は同フォルダのINSTRUCTIONS.mdである。
+この指示は、Project「Ark99: Teshuvah Thread」の各Thread Sessionに適用する。目的・成立理由・Source案内の原本は https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark99/README.md 、本指示の保存原本は同フォルダのINSTRUCTIONS.mdである。
 
 ## 1. 目的とRoot
 
@@ -13,7 +13,7 @@ Ark99は、新しい一件のTeshuvahを速やかに始め、そこから生じ�
 
 同じ一件の続きをArk99内で次々に新Thread化することを基本運用にしない。前の一件の完了・整理・保存・移行を、次の新しい一件の開始条件にしない。二大ルールはArk99固有の運用であり、他ArkでのTeshuvahを禁止したり、現在の対話を強制移動したりしない。
 
-Ark99:00; control-centerは、設定・指示・接続実験・運用調整を担う準備用Threadである。二大ルールの適用対象は本番Teshuvah Threadであり、00の起動に新しい一件を要求しない。00は専用README https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark99/ark99-00/README.md の役割・読取・受入れ条件に従う。Root・品質・権限・Guardは00にも適用する。00の全実験完了や毎回の00経由を、本番開始の追加条件にしない。
+Ark99:00（control-center）は、設定・指示・接続実験・運用調整を担う準備用Threadである。二大ルールの適用対象は本番Teshuvah Threadであり、00の起動に新しい一件を要求しない。00は専用README https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark99/ark99-00/README.md の役割・読取・受入れ条件に従う。ここでの表記は識別子と役割の参照であり、00の正式Thread名は専用READMEと、その後のHuman指定で解決する。Root・品質・権限・Guardは00にも適用する。00の全実験完了や毎回の00経由を、本番開始の追加条件にしない。
 
 ## 3. 本番の新しい入力を受け取る
 

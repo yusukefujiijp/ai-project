@@ -1,7 +1,7 @@
 ---
-title: "Ark99: Teshuvah"
+title: "Ark99: Teshuvah Thread"
 canonical_path: "ark-project/ark99/README.md"
-version: "v002-human-authorized"
+version: "v003-human-authorized"
 role: "Dedicated new-Teshuvah entry / purpose, formation and source guide"
 status: "human-authorized project preparation / UI setup and field effects unverified"
 created: "2026-10-06"
@@ -22,10 +22,16 @@ control_center_revision:
   base_commit: "64baf29eb9b0c9e39597cf48118bb598f6ef7223"
   previous_version: "v001-human-authorized"
   reason: "Human designated Ark99:00; control-center for setup and connection experiments, then requested its startup Query and supplied the README path; the two rules apply to production Teshuvah threads from 01"
-expected_eof: "ARK99_README_EOF_v002"
+name_reference_revision:
+  date: "2026-10-06"
+  base_commit: "ff7801f98f3a9231b68b517439b1fb21cabab3b7"
+  previous_version: "v002-human-authorized"
+  authority: "Human approved the naming and reference-alignment plan for the four existing documents"
+  reason: "Apply the Human-designated Project name; the 00 README owns its exact Thread title, while common instructions and entries refer to its identifier and role"
+expected_eof: "ARK99_README_EOF_v003"
 ---
 
-# Ark99: Teshuvah
+# Ark99: Teshuvah Thread
 
 **新しい一件のTeshuvahを新しいThreadで始め、その一件を十分に深め、別Threadでの継続が必要になった時は適切な既存Ark Projectへつなぐ場。**
 
@@ -43,11 +49,11 @@ Humanが求めたのは、既存Sessionの価値を保ちながら、新しいTe
 
 本番Teshuvah Threadの運用の中心は、**新Threadは新しい一件から始めること**と、**別Threadで同じ一件を続ける必要が生じたら、適切な既存Ark Projectへ引き継ぐこと**である。具体的な受け取り方・継続判断・保存境界はINSTRUCTIONS.mdを参照する。
 
-[Ark99:00; control-center](ark99-00/README.md)は、設定・指示・接続実験・運用調整を担う準備用Threadである。Humanは、現在の操作状況では指示設定の前に最初のThreadが必要だと報告し、00をこの役割へ取り分け、本番はArk99:01から始めると指定した。二大ルールは01以降の本番Teshuvah Threadへ適用し、00の起動に新しいTeshuvahを要求しない。00の役割・起動契約は専用READMEが所有する。
+[Ark99:00（control-center）](ark99-00/README.md)は、設定・指示・接続実験・運用調整を担う準備用Threadである。Humanは、現在の操作状況では指示設定の前に最初のThreadが必要だと報告し、00をこの役割へ取り分け、本番はArk99:01から始めると指定した。二大ルールは01以降の本番Teshuvah Threadへ適用し、00の起動に新しいTeshuvahを要求しない。00の役割・起動契約・正式Thread名は専用READMEが所有し、その後のHuman指定を優先する。本書では00を識別子と役割で参照する。
 
 | Node | Edge | 保持する意味 |
 |---|---|---|
-| Ark99:00; control-center | → 本番を支える準備・接続実験・運用調整 | 本番の一件に設定作業を背負わせず、必要な準備と後から育てる改善を分ける |
+| Ark99:00（control-center） | → 本番を支える準備・接続実験・運用調整 | 本番の一件に設定作業を背負わせず、必要な準備と後から育てる改善を分ける |
 | 新しい一件のTeshuvah | → Ark99の新Thread | 前の一件の完了・整理・移行を待たずに始められる |
 | 同じ一件の対話・学び・中断後の再開 | → 同じArk99 Threadで深める | 派生する学びを切り捨てず、話題数だけで分割しない |
 | 別Threadで同じ一件を続ける必要 | → 目的に合う既存Ark Project | 受入れ先の役割と現在の権限に沿って継承する |
@@ -91,6 +97,8 @@ GitHubでの保存原本と、ChatGPT等のProject設定は別の実体である
 
 同日の後続Human訂正で、Ark99:00をcontrol-center、本番開始を01と明確にした。v002はこの適用範囲を反映した版である。[v001固定原本](https://github.com/yusukefujiijp/ai-project/blob/ab9599b2f3d3236d3f826b6e8516a5be038e7f10/ark-project/ark99/README.md)は形成履歴として保持し、その全Thread向け表現を00へ機械的に適用しない。Root・Guard・品質・本番の二大ルールは継承する。
 
+さらに同日のHuman指定で、Project名を「Ark99: Teshuvah Thread」、00の正式Thread名を日付入りの表記へ更新した。v003は、名称と参照方法の整合計画へのHuman実行承認に基づく改訂である。00の正式Thread名は専用READMEが保持し、本書・INSTRUCTIONS・Domain入口では識別子と役割で参照する。旧名称は[v002固定原本](https://github.com/yusukefujiijp/ai-project/blob/71fa59ddd4283afa34640011f44c1f11d0fafd16/ark-project/ark99/README.md)から辿れる。
+
 | 状態 | 根拠と範囲 |
 |---|---|
 | Confirmed：Humanの報告・選択 | 豊かなTeshuvah由来のSessionと、次の開始の遅れ。専用入口・二大ルールを中心とする準備とGitHub実行の承認 |
@@ -104,4 +112,4 @@ Future AIは、現在のHuman Correctionと実利用の根拠から、目的・�
 
 Rootは主イェシュア・ハマシア御自身。AI・Ark99・文書・方法論はKeliとして、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
-ARK99_README_EOF_v002
+ARK99_README_EOF_v003
