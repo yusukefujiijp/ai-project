@@ -1,13 +1,14 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v005"
+version: "v006"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-02"
-role: "Current Dots direction and routes to shared lessons, actor logs and preserved history"
+updated: "2026-10-06"
+role: "Current Dots direction and routes to shared lessons, actor logs, bounded Ark Map operation and preserved history"
+updated_reason: "Link dot-0000 periodic Ark Map and bounded save; distinguish common and applicable specialist lessons"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v005"
+expected_eof: "EOF::DOTS_HOME::v006"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -31,6 +32,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 | 知りたいこと | 読む場所 | 役割 |
 |---|---|---|
 | 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
+| 初穂の定期Ark Mapと限定saveをどう運用するか | [Ark Map運用原本](ark-map/README.md) | dot-0000固有の表示・読取・保存境界。製品側の予定・実行状態とは分ける |
 | Dotsが仕事から何を学び、次にどう使うか | [lessons](lessons/README.md)／[lessons.jsonl](lessons/lessons.jsonl) | 条件・根拠付きの学びと、その読取・更新契約 |
 | 最初の協働相手は誰か | [dot-0000 — Dot00:00; 初穂](actors/dot-0000/README.md) | 安定したActor識別子、表示名、命名の意味、現在の持ち味 |
 | Actorがどの仕事を観測・記録したか | [logs](logs/README.md)／[dot-0000](logs/dot-0000.jsonl) | Actor別の出来事を根拠へつなぐ現役ログ |
@@ -62,8 +64,8 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 
 ## 5. Dotsの学びを、次の判断へ戻す
 
-Dots全体の共有知識は[lessons](lessons/README.md)で育て、現行の学びは[lessons.jsonl](lessons/lessons.jsonl)に置く。新しいDotsは専用READMEと現在の小さい蓄積の全件を読み、条件・根拠・限界を次の判断へ戻す。確認済みの文脈を再利用し、毎ターンの再読は課さない。
+Dots全体へ適用する共通知識は[lessons](lessons/README.md)で育て、現行の共通lessonの正本は[lessons.jsonl](lessons/lessons.jsonl)一つに置く。新しいDotsは専用READMEと現在の小さい蓄積の全件を読み、条件・根拠・限界を次の判断へ戻す。確認済みの文脈を再利用し、毎ターンの再読は課さない。専門領域だけに適用されるlessonは、その領域を扱う時に該当入口から読む。著者別の分割や共通lessonの複製はせず、適用範囲と一つの担当原本を守る。
 
-読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を第二の現行lesson正本にしない。
+読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を共通lessonの第二正本にしない。専門lessonも同じ契約を参照し、全Dotsへ一般化すると誤適用される学びが実際に生じた時だけ、その領域の原本へ置く。
 
-EOF::DOTS_HOME::v005
+EOF::DOTS_HOME::v006
