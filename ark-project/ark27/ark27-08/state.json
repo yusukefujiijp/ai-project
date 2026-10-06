@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_08_CURRENT_STATE",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:08",
     "schema_version": "v002",
     "updated_at": "2026-10-07",
-    "update_reason": "08開始後のSkill・GitHub整理・自己改善Loopの成果とHuman訂正を収穫し、Humanが確定した08→09準備へ接続する。起動時記録と後続観測を区別し、各仕事の所有原本へ戻す。 Source07準備由来のConfirmedをhistorical_preparationへ明示移動し、今回の基点で08フォルダが不存在という誤読を防ぐ。",
+    "update_reason": "09三点セットとDomainの公開・Remote全文一致・対象外保持を確認したSource terminal receipt。固定収穫revision3とその証拠は不変。Target09再構成とHuman UIは未観測。",
     "authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
     "date_scope": "Asia/Tokyo harvest/preparation date; approval time is the current Human message submission time, not UI creation or Target09 reconstruction."
   },
@@ -18,7 +18,7 @@
     "compiled_title": "Ark27:08_2026/10/03: \"主の完全勝利: 整理整頓の成果継承と次の改善\"",
     "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
     "initial_theme": "Task化能力の向上",
-    "current_main_role": "Ark27:08 Main / source of Human-authorized09 preparation; Current routing belongs toArk Domain.",
+    "current_main_role": "Ark27:08 preparationSource; CurrentDomain now routesMain09. Actual09 Target reconstruction is separately observed.",
     "existing_support": "Ark28:05"
   },
   "authority": {
@@ -182,16 +182,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "GitHub整理の成果とArtifactを介する自己改善Loopの目的・運用を収穫し、09が元会話なしで現在のHuman依頼へ接続できるようにする。",
-    "current_coordinate": "四Skill・ARC-010・STR-011〜013・自己改善Loop初版まで完了。08初期の候補・未指定をCurrentへ戻さない。現在の承認対象は08→09の五パス準備。",
+    "current_focus": "08→09の承認済み準備・公開・検証を完了し、Humanへ正確なTitleと起動入口を渡す。後続協働の現在地は09とCurrent Domainへ。",
+    "current_coordinate": "四Skill・ARC-010・STR-011〜013・自己改善Loopの成果と訂正を固定収穫revision3に保存し、09三点セットとDomainを公開・Remote確認済み。Target09自身の再構成は未観測。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "Complete the authorized08→09 preparation and remote verification, then provide the compiled title and startup interface. Target09 must reconstruct itself; new Human input takes precedence.",
-    "next_specific_task": "08→09の準備・保存検証・受渡しを完了する。他の未選択Branchは自動開始しない。",
+    "current_legal_connection": "Provide the exactcompiledTitle/startup interface and return toHuman Review. Respect any newHumaninput; do not repeat completedpreparation or automaticallystartanotherTask.",
+    "next_specific_task": "Source preparation and remote verification complete; Human interface presentation follows. Actual09 reception belongs toTarget09.",
     "target_boot": "Initial Source07 NOT_OBSERVED evidence is retained in historical_preparation; this is the current Human-confirmedSource08. No09 reception is yet observed.",
     "ui_thread_creation": "Human has identified this conversation asArk27:08. Product UI creation was not directly re-observed in this preparation.",
     "ui_title": "Historical08 compiled title retained exactly; actual09 UI title use unobserved.",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "At harvest, no unresolved mutation from completed08 work is known.09 publication/verification are the active authorized remainder, tracked inprogress.next_transition.",
+    "active_external_operations": "No unresolved operation from the completedSkill/cleanupwork or verified09 publication. This finalreceipt is saved and reread as the lastSource step; uncertain results must be checked before retry.",
     "current_human_input_policy": "Receive any input already present; never require a duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -337,7 +337,10 @@
     "confirmed": [
       "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
       "CurrentDomain routes Main08 / Support05.08 State revision1 is initial preparation; later fruit is now joined to its owning artifacts.",
-      "During the transition-planning context on2026-10-07 JST, self-improvement-loop appeared in the callable Skill catalog and skills.read returned body identical to sharedSKILL.md blob a676460a499a65151cfedd5889c375350007e0fc. This supersedes the earlier listing-unobserved observation for that context only."
+      "During the transition-planning context on2026-10-07 JST, self-improvement-loop appeared in the callable Skill catalog and skills.read returned body identical to sharedSKILL.md blob a676460a499a65151cfedd5889c375350007e0fc. This supersedes the earlier listing-unobserved observation for that context only.",
+      "09triad andDomain were published together atbe758c8a7daa57b21ba5ec1578044be6a87cfaeb, treef7a296fb9e3720af31a40514663ec0489a49cc8f; candidate and main four-body equality verified at2026-10-06T22:13:15.168Z.",
+      "Against the observationbase, changes are exactlySource08 State andDomain plus three09 files;488 unrelatedexistingblob/mode pairs preserved,493totalblobs. Support05, Ark99/Pickup, existing08 immutableHandoff andTitlepolicy retained.",
+      "Source validation coveredYAML duplicatekeys, JSON, IDs/Title/contracts/schema/revision/EOF, requiredsource order/scopes,62Markdownlinks and6locallyavailablefragments. This isSource validation, not an independent09 boot."
     ],
     "candidate": [
       "Artifact-mediatedLoopの継続的な品質向上、領域別の整理による探索負担減少は検証を続ける仮説。現行方法をFutureAIの解釈の上限にしない。"
@@ -430,13 +433,89 @@
         "ark-project/ark27/ark27-09/state.json",
         "ark-project/README.md"
       ],
-      "status": "HARVEST_PREPARED; PUBLICATION_NOT_YET_OBSERVED",
-      "source_prepared": false,
-      "remote_verified": false,
+      "status": "SOURCE_PREPARED_AND_REMOTE_VERIFIED; TARGET_RECONSTRUCTION_AND_HUMAN_LAST_MILE_UNOBSERVED",
+      "source_prepared": true,
+      "remote_verified": true,
       "target_reconstructed": "NOT_OBSERVED_BY_SOURCE",
-      "human_last_mile": "NOT_OBSERVED; title/startup delivery toHuman follows remote verification",
-      "requested_outcome": "Complete the authorized five-path preparation and remote verification, then provide the exact title/startup interface; actualTarget acceptance is separate.",
-      "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER"
+      "human_last_mile": "NOT_OBSERVED; Title/startup interface prepared forHuman, actual09 conversation creation/title use/paste andTarget reception remain separate.",
+      "requested_outcome": "Authorizedfive-path preparation andRemoteverification completed. SourceprovidesTitle/startupin the completion response; actualTargetreconstruction andfield benefit are notSource-certified.",
+      "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+      "harvest": {
+        "commit": "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5",
+        "path": "ark-project/ark27/ark27-08/state.json",
+        "blob": "0960680ed23307b2e5d69aef5a59824ce6f7268d",
+        "revision": 3,
+        "full_content_match": true,
+        "verified_at_utc": "2026-10-06T22:10:20.090Z"
+      },
+      "publication": {
+        "parent_commit": "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5",
+        "commit": "be758c8a7daa57b21ba5ec1578044be6a87cfaeb",
+        "tree": "f7a296fb9e3720af31a40514663ec0489a49cc8f",
+        "committed_at_utc": "2026-10-06T22:12:45Z",
+        "ref_update": "main; non-force; expected_sha matchedbase",
+        "candidate_verified_at_utc": "2026-10-06T22:13:03.443Z",
+        "main_verified_at_utc": "2026-10-06T22:13:15.168Z",
+        "files": [
+          {
+            "path": "ark-project/ark27/ark27-09/README.md",
+            "blob": "692b4833505c64df51a096348f0afb883e96d559",
+            "full_content_equal": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-09/handoff.md",
+            "blob": "106ddc90d229f5b426d16348a5d5644ace1e443e",
+            "full_content_equal": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-09/state.json",
+            "blob": "369d039ce7eff7206d41b5b8fbb358b30629f6e8",
+            "full_content_equal": true
+          },
+          {
+            "path": "ark-project/README.md",
+            "blob": "2fb2e13a9b07f3144e6a5f31c1eb3b08f2f67607",
+            "full_content_equal": true
+          }
+        ],
+        "scope": {
+          "changed": [
+            "ark-project/README.md",
+            "ark-project/ark27/ark27-08/state.json"
+          ],
+          "added": [
+            "ark-project/ark27/ark27-09/README.md",
+            "ark-project/ark27/ark27-09/handoff.md",
+            "ark-project/ark27/ark27-09/state.json"
+          ],
+          "unaffected_existing": 488,
+          "total_blobs": 493,
+          "tree_sha": "f7a296fb9e3720af31a40514663ec0489a49cc8f"
+        }
+      },
+      "source_review": {
+        "type": "structural and semanticSource review; not independentTarget acceptance",
+        "checks": [
+          "Identity/Source/Target/Main/Title/Triad",
+          "v002continuity andStateschema with minimumrevision",
+          "Fullreadorder1–14 anddeclaredsections15; exactEOF/scopetermini",
+          "fixedharvest versusCurrentsemanticcompatibility; no selfSHA/live cycles",
+          "completed/partial/deferred/purpose-closed/Unknown distinctions",
+          "HumanCorrection/STOP/Guard/delegation andfirstlegalmove",
+          "Dots/Work/Actor/Board andSkill evidence boundaries",
+          "concurrent/unrelatedcontent preservation"
+        ],
+        "markdown_links_checked": 62,
+        "available_fragments_checked": 6
+      },
+      "human_interface": {
+        "status_at_record": "COMPILED_FOR_SOURCE_COMPLETION_RESPONSE; PRESENTATION_AND_TARGET_DELIVERY_ARE_DISTINCT",
+        "compiled_title": "Ark27:09_2026/10/07; \"主の完全勝利: 整理整頓と自己改善Loopを育てる継続協働\"",
+        "handoff_url": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark27/ark27-09/handoff.md",
+        "title_policy": "Domain v002 semicolon afterdate; Sourcecompiled underapprovedplan, latestHuman finalchoice/correction prevails",
+        "needed_action": "If no authorizeddirectTargetcreation path is used, Human creates/opens09, usesTitle andpastesstartup. Source doesnot claim UIaction orsend toanotherAI."
+      },
+      "terminal_receipt_policy": "This revision records alreadyobservedharvest/triad/Domain results. Its ownsave is followed by a directRemote reread; no selfcommit/selfblob is embedded in the body. Actualreadback is reported inSourcecompletion and checkableGit history."
     },
     "revision_history": [
       {
@@ -453,6 +532,11 @@
         "revision": 3,
         "date": "2026-10-07",
         "role": "Clarify historicalSource07 observations before fixing the09 harvestBinding. No outcome/authority change."
+      },
+      {
+        "revision": 4,
+        "date": "2026-10-07",
+        "role": "Terminalpreparation receipt after atomic09/Domain publication and fullRemoteequality; Target09/HumanUI unobserved. Ownreceipt reread followswrite."
       }
     ]
   },
