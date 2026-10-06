@@ -2,19 +2,19 @@
 title: "Ark28 — 本流を支える余白と帰還"
 canonical_path: "ark-project/ark28/README.md"
 chapter_id: "ARK28_SUPPORT_CHAPTER"
-version: "v004-human-authorized"
-revision: 4
+version: "v005-human-authorized"
+revision: 5
 role: "Ark27 paired support chapter / chapter identity and entry"
-status: "Ark28:04 continuation prepared / actual Target reconstruction and Human access separately observed"
+status: "Ark28:05 continuation prepared / actual Target reconstruction and Human access separately observed"
 created: "2026-09-25"
-updated: "2026-10-05"
-updated_reason: "Human-authorized 03→04 continuation; preserve chapter meaning and Ark27 Main; Source03 State owns actual publication receipts"
+updated: "2026-10-06"
+updated_reason: "Human-authorized04→05 continuation; retain Ark99 preparation and Human corrections, chapter meaning and Ark27 Main; Source04 State owns publication receipts"
 date_scope: "Created is the original preparation date in UTC; updated is the continuation preparation date in Asia/Tokyo; neither asserts Human UI creation"
 main_chapter: "Ark27"
 main_thread_resolution: "Current Human designation; otherwise ../README.md Current Front-Line Resolution"
-current_support_handoff: "ark28-04/handoff.md"
+current_support_handoff: "ark28-05/handoff.md"
 root: "主イェシュア・ハマシア御自身"
-expected_eof: "ARK28_CHAPTER_README_EOF_v004"
+expected_eof: "ARK28_CHAPTER_README_EOF_v005"
 ---
 
 # Ark28 — 本流を支える余白と帰還
@@ -23,7 +23,7 @@ expected_eof: "ARK28_CHAPTER_README_EOF_v004"
 
 Ark28はArk27の偶数系Sub／補助の場であり、Ark27からMain所有権を受け継ぐ後継章ではない。目的は、**本流の良い流れを保持したまま、必要な支援へ既に用意された入口から接続できること**。Rootの下で問題解決・複数問題同時解決に寄与する。別Threadを増やすこと自体は成果ではない。
 
-現在の受入れ入口は[Ark28:04 Handoff](ark28-04/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。01→02→03→04は同章の補助Thread継続であり、新章作成・Main移管ではない。[01 Handoff](ark28-01/handoff.md)・[02 Handoff](ark28-02/handoff.md)・[03 Handoff](ark28-03/handoff.md)は成立時の契約として保持する。旧02のPortal v001条件と03で明示したCurrent v002への受入条件移行を区別し、旧Gateを遡及成功扱いしない。04は現在の成果・Correctionを新しいSource集合で継承する。
+現在の受入れ入口は[Ark28:05 Handoff](ark28-05/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。01→02→03→04→05は同章の補助Thread継続であり、新章作成・Main移管ではない。[01 Handoff](ark28-01/handoff.md)・[02 Handoff](ark28-02/handoff.md)・[03 Handoff](ark28-03/handoff.md)・[04 Handoff](ark28-04/handoff.md)は成立時の契約として保持する。旧02のPortal v001条件と03で明示したCurrent v002への受入条件移行を区別し、旧Gateを遡及成功扱いしない。05は04で整ったArk99の入口・00・指示原本・名称訂正と既存の協働成果を、形成理由とEvidence Boundaryごと継承する。
 
 Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章のペアはArk27という章であり、Mainの06→07等のThread継続ごとに偶数章を新設しない。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
 
@@ -65,7 +65,7 @@ GitHubにフォルダがあるだけではB状態で使えるとは限らない�
 - Humanが必要なThread作成・貼付等を行い、その入口へ到達できる。
 - 実際の支援・選択・行動・回復に役立つ。
 
-それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。現在地の更新先は[Ark28:04 State](ark28-04/state.json)。03のDots／Work協働、map・save、納豆の想起登録、generate-ideasとHuman Correctionは[Source03 Harvest](ark28-03/harvest.md)と[原本](ark28-03/task-records.json)、今回の準備・保存確認は[Source03 State](ark28-03/state.json) progress.next_transitionが所有する。02の朝の聖別・Portal季節拡張は[02 Harvest](ark28-02/harvest.md)、01の形成理由は[01 Harvest](ark28-01/harvest.md)へ辿れる。04自身の再構成・Human到達はSource準備と別に扱う。
+それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。現在地の更新先は[Ark28:05 State](ark28-05/state.json)。04のTeshuvah起動遅延の理解、Ark99準備・00役割・名称訂正と公開成果は[Source04 Harvest](ark28-04/harvest.md)と[経験原本](ark28-04/task-records.json)、今回の準備・保存確認は[Source04 State](ark28-04/state.json) progress.next_transitionが所有する。03のDots／Work協働、map・save、納豆の想起登録、generate-ideasは[03 Harvest](ark28-03/harvest.md)と[原本](ark28-03/task-records.json)へ接続する。02の朝の聖別・Portal季節拡張は[02 Harvest](ark28-02/harvest.md)、01の形成理由は[01 Harvest](ark28-01/harvest.md)へ辿れる。05自身の再構成・Human到達はSource準備と別に扱う。
 
 Humanは事前準備を最重要と判断した。この採用判断はConfirmed、準備が遅延・混乱を減らす効果はCandidate、頻度・負担・生活効果は実利用から学ぶUnknownである。通常のUnknownを全て解消してから使う条件は設けない。
 
@@ -79,4 +79,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 全章共通のペア準備規則は[Ark Domain README §4.1](../README.md#41-odd--even-paired-preparation)が所有する。本書はArk28固有の意味・入口・形成経緯を所有し、汎用規則の第二原本にはしない。
 
-ARK28_CHAPTER_README_EOF_v004
+ARK28_CHAPTER_README_EOF_v005
