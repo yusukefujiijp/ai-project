@@ -1,0 +1,470 @@
+{
+  "meta": {
+    "state_id": "ARK27_09_CURRENT_STATE",
+    "revision": 1,
+    "owner": "Ark27:09",
+    "schema_version": "v002",
+    "updated_at": "2026-10-07",
+    "update_reason": "Human-authorized08→09 continuation from the verified08 harvest; preserve laterSkill/cleanup/Loop fruit, Human corrections, evidence boundaries and actual remaining branches.",
+    "authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
+    "date_scope": "Asia/Tokyo Source preparation date; not actualTarget09 reception, UI creation/title use or Token Reset."
+  },
+  "identity": {
+    "chapter": "Ark27",
+    "thread": "Ark27:09",
+    "source": "Ark27:08",
+    "transition_kind": "THREAD_CONTINUE",
+    "runtime_id": "ARK27_09_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+    "compiled_title": "Ark27:09_2026/10/07; \"主の完全勝利: 整理整頓と自己改善Loopを育てる継続協働\"",
+    "title_status": "SOURCE_COMPILED_UNDER_APPROVED_PLAN; Human final choice/correction and UI use remain distinct",
+    "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
+    "initial_theme": "Task化能力の向上",
+    "current_main_role": "Ark27 Main continuation target; actual09 must pass its ownHandoff.",
+    "existing_support": "Ark28:05",
+    "support_time_scope": "Preparation observation; subsequent validSupport routing is owned byCurrent Ark Domain, not a permanent05 pin."
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
+    "scope": "09 cooperates under Current Human Request and valid bounded delegation.08→09 preparation authorization covers the namedfive paths and necessary verification; it does not select a new cleanup/Loop trial or authorize external sending/UI actions.",
+    "preparation_paths": [
+      "ark-project/ark27/ark27-08/state.json",
+      "ark-project/ark27/ark27-09/README.md",
+      "ark-project/ark27/ark27-09/handoff.md",
+      "ark-project/ark27/ark27-09/state.json",
+      "ark-project/README.md"
+    ],
+    "delegation_source": "task-mode-system/maintenance.md; apply purpose, scope, evidence and constraints with Current Human Request and AGENTS",
+    "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. No unbounded autonomy or hidden synchronization.",
+    "current_human_correction": "Source identity resolved byHuman: Ark27:08→Ark27:09. The latestexecution authorization replaces the earlierplan-only limit for the approvedfive-pathpreparation.",
+    "source_preparation_authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。"
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-09/README.md",
+      "runtime_id": "ARK27_09_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+      "document_version": "v001-human-authorized",
+      "contract_version": "v002",
+      "policy": "Current compatible09 contract; observationSHA is not a permanentlive pin."
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-09/handoff.md",
+      "id": "ARK27_09_CONTINUITY",
+      "document_version": "v001-human-authorized",
+      "contract_version": "v002",
+      "policy": "Owns read order/scopes, Identity/Triad/compatibility, R1–R6, Success/Failure and First Legal Move."
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "chapter": "Ark27",
+      "contract_version": "v002",
+      "current_route_owner": "ark-project/README.md"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "version_at_preparation": "v003-human-authorized",
+      "observed_blob": "95ba8491d893580336fdb702ba9d036c24e7706a",
+      "policy": "ReadCurrent fully under its Identity/Exact EOF contract; resolve material incompatibility, no silent legacyfallback."
+    },
+    "source_harvest": {
+      "repository": "yusukefujiijp/ai-project",
+      "commit": "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5",
+      "path": "ark-project/ark27/ark27-08/state.json",
+      "blob": "0960680ed23307b2e5d69aef5a59824ce6f7268d",
+      "state_id": "ARK27_08_CURRENT_STATE",
+      "owner": "Ark27:08",
+      "schema_version": "v002",
+      "revision": 3,
+      "policy": "Fixed historical harvest. Its initial09 preparation-pending observation precedes publication; current terminalreceipt is separate. Not09 reading or reception proof."
+    },
+    "source_terminal_receipt": {
+      "path": "ark-project/ark27/ark27-08/state.json",
+      "section": "progress.next_transition",
+      "state_id": "ARK27_08_CURRENT_STATE",
+      "owner": "Ark27:08",
+      "schema_version": "v002",
+      "minimum_revision": 3,
+      "policy": "Owns actual preparation/publication/reread results afterharvest. ReadCurrent receipt when pending work or publication status changes the next action; no live exactSHA cycle."
+    },
+    "required_sources": {
+      "order": [
+        {
+          "path": "ark-project/ark27/ark27-09/handoff.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-09/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-09/state.json",
+          "scope": "FULL_JSON"
+        },
+        {
+          "path": "AGENTS.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ARK.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/INSTRUCTIONS.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "prompts/ai-next-thread-handoff.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-08/state.json",
+          "ref": "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5",
+          "scope": "FULL_FIXED_HARVEST"
+        },
+        {
+          "path": "control-center/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "control-center/github/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "dots/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "prompts/ai-frontier-reader.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "skills/README.md",
+          "scope": "Identity/version at beginning + full section3.5 until3.6 + full section3.10 until4; not wholeHub"
+        }
+      ],
+      "policy": "Handoff§2: orderedfullread1–14 and declaredfullsections15. Target reads itself, without borrowingSource/otherAI receipts. DeclaredCurrent ownership and exact historicalBinding differ."
+    },
+    "control_center": {
+      "path": "control-center/README.md",
+      "github": "control-center/github/README.md",
+      "plan": "control-center/github/PLAN.md",
+      "archive": "control-center/github/ARCHIVE.md",
+      "scope": "共通親は整理対象ごとの入口。GitHub整理はgithub/が所有し、house/は別領域のSeed。保存媒体で対象領域を混同しない。",
+      "historical_entry_policy": "旧control-center/PLAN.mdとARCHIVE.mdは新原本への案内。明示固定版の本文・SHA・EOFの代わりにはならない。",
+      "records": [
+        "control-center/changes/STR-001-navigation-and-ownership.md",
+        "control-center/changes/STR-002-single-prompt-consolidation.md",
+        "control-center/changes/STR-003-persistent-collaboration-foundation.md",
+        "control-center/changes/STR-006-board-communication-foundation.md",
+        "control-center/changes/STR-009-headerless-lessons-adoption.md",
+        "control-center/changes/STR-011-prompt-shelf-authority-alignment.md",
+        "control-center/changes/STR-012-control-center-domain-entries.md",
+        "control-center/changes/STR-013-github-plan-and-archive-relocation.md"
+      ]
+    },
+    "four_skills": {
+      "skills": [
+        "skills/load/SKILL.md",
+        "skills/next-step/SKILL.md",
+        "skills/save/SKILL.md",
+        "skills/board/SKILL.md"
+      ],
+      "evidence": "skills/README.md#35-loadnext-stepsaveboardの独立入口",
+      "communication": "board/topics/20261003-load-next-step-save-skills/README.md#1-current--このtopicの通信現在地",
+      "policy": "作成済み・一件ずつ登録した四つの独立入口。同じ登録物をWork/Dotsで共用できる時は重複させず、環境ごとの取得・呼出しは別観測。"
+    },
+    "self_improvement_loop": {
+      "skill": "skills/self-improvement-loop/SKILL.md",
+      "method": "prompts/ai-frontier-reader.md",
+      "evidence": "skills/README.md#310-自己改善loopの入口",
+      "policy": "一つのSkill入口と一つの共通Prompt。共通PromptがSeed・意味・品質・二つの還流・Joint playを所有。環境別の重複Skillや全Taskの新台帳を作らない。"
+    },
+    "dots": {
+      "entry": "dots/README.md",
+      "actor": "dots/actors/dot-0000/README.md",
+      "lesson_contract": "dots/lessons/README.md",
+      "current_lessons": "dots/lessons/lessons.jsonl",
+      "actor_log_contract": "dots/logs/README.md",
+      "board_contract": "board/README.md",
+      "reconnection_topic": "board/topics/20261001-dots-work-reconnection/README.md#current",
+      "four_skill_topic": "board/topics/20261003-load-next-step-save-skills/README.md#1-current--このtopicの通信現在地",
+      "policy": "Eachowner has its ownCurrent; Work is notdot-0000. No duplicatecommunicationledger or implicitdelivery."
+    },
+    "task_mode_system": {
+      "entry": "task-mode-system/README.md",
+      "operation": "task-mode-system/operation.md",
+      "maintenance": "task-mode-system/maintenance.md",
+      "guide": "formats/task-records/README.md",
+      "experience_index": "task-mode-system/experience/README.md",
+      "policy": "Preserve bounded continuing delegation and original record locations. No empty08 Task Records just for transition."
+    },
+    "support": {
+      "chapter": "ark-project/ark28/README.md",
+      "handoff_at_preparation": "ark-project/ark28/ark28-05/handoff.md",
+      "current_route_owner": "ark-project/README.md",
+      "role": "ExistingSupport, not successorMain",
+      "policy": "No newSupport perMainthread, unseenconversationimport, compulsorysimultaneousTask or hidden sync."
+    }
+  },
+  "now": {
+    "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
+    "current_focus": "GitHub整理の後続成果とArtifactを介する自己改善LoopのGoal・運用・Evidenceを保持し、現在のHuman入力に適切に接続する。",
+    "current_coordinate": "Source08 harvested completedfourSkills, ARC-010, STR-011–013 and self-improvement-loop initialimplementation.09 is prepared to receive them; actualTarget reconstruction is not observed bySource.",
+    "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+    "current_legal_connection": "ReadHandoff RequiredSources, verifyIdentity/Triad/compatibility and reconstructR1–R6; then receive already-presentHuman input or resolve an actualauthorizedremainder after checkingexternalresults. Boot-only returns toHuman Review.",
+    "next_specific_task": "No new cleanup, Skill implementation, research or Loop trial is selected by this preparation.",
+    "target_boot": "NOT_OBSERVED_BY_SOURCE",
+    "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
+    "ui_title": "NOT_OBSERVED_BY_SOURCE",
+    "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
+    "active_external_operations": "Source08 owns transition publication/verification underprogress.next_transition. Fixedharvest pre-publication flags are not currentfailure; inspect the actualterminalreceipt before retrying any work.",
+    "current_human_input_policy": "Receive any input already present; never require a duplicate submission solely because Boot completed.",
+    "outcomes": [
+      {
+        "id": "ARC-001_003-007",
+        "status": "SCOPED_COMPLETED",
+        "owner": "control-center/github/ARCHIVE.md",
+        "meaning": "対象別の承認・退役・Remote確認を保持。ARC-007のthread-end／_thread-index／_thread-missionを未着手へ戻さない。"
+      },
+      {
+        "id": "ARC-008",
+        "status": "SCOPED_COMPLETED_BY_OTHER_ACTOR",
+        "owner": "control-center/github/ARCHIVE.md#arc-008",
+        "meaning": "初穂の固有形成史の保管と現役logsへの接続。07の実装へ帰属変更しない。"
+      },
+      {
+        "id": "ARC-009",
+        "status": "COMPLETED_DIRECTLY_VERIFIED_BY_SOURCE07",
+        "owner": "control-center/github/ARCHIVE.md#arc-009",
+        "commit": "02e9779fc628dbfe7ee9ed08275c6b839407ef0e",
+        "meaning": "_note六原本70,601 bytes同一blob、旧パス退役、五文書整合。11本文のRemote一致、407対象外blob/mode保持。"
+      },
+      {
+        "id": "cleanup_direction",
+        "status": "SAVED_AND_REMOTELY_VERIFIED_BY_SOURCE07",
+        "owner": "control-center/20261003-cleanup-direction.md",
+        "commit": "16cbfffc5b0eca8dde8dc08ebfe5e2e83068bef7",
+        "meaning": "指針と二つの既存記録の最終3本文をmainから照合。時点付き指針であり現在の全状態・実行権限ではない。"
+      },
+      {
+        "id": "D04",
+        "status": "FOLLOWUP_MIGRATION_COMPLETED",
+        "owner": "control-center/changes/STR-003-persistent-collaboration-foundation.md",
+        "meaning": "STR-001の設計後、STR-003で12基盤対象の版移行・Remote確認。旧未完表現で巻き戻さない。"
+      },
+      {
+        "id": "normal_query_pairs",
+        "status": "SIX_PAIRS_CONSOLIDATED",
+        "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
+        "meaning": "別Query推奨・将来予約は撤回。Graph/One-Tableの物理改訂と別。"
+      },
+      {
+        "id": "plan_mode_old_v005",
+        "status": "CLOSED_BY_PURPOSE_CHANGE",
+        "owner": "control-center/github/ARCHIVE.md#arc-006",
+        "meaning": "E1/E5 NOT_RUN、旧HumanVerdict/FreshCutoverSeal未受領は歴史。新Skill導入・共有・限定確認は別。08必須Gateではない。"
+      },
+      {
+        "id": "board_dialogue_and_followup",
+        "status": "FINITE_DIALOGUE_CLOSED_AND_SAVED; LATER_OWNERSHIP_FIX_IMPLEMENTED",
+        "owner": "board/topics/20261001-dots-work-reconnection/README.md#current",
+        "structural_owner": "control-center/changes/STR-006-board-communication-foundation.md",
+        "meaning": "初穂と07の有限対話、送信/観測/保存/終了の区別。Topicが通信Current、STRが変更履歴。後続修正は別週次Work担当。 後続Ark28:03直接対話と記録保存もTopicで終了確認済み。追加返信を自動生成しない。"
+      },
+      {
+        "id": "lesson_JSONL",
+        "status": "ADOPTED_AND_MIGRATED_BY_DOT0000",
+        "owner": "control-center/changes/STR-009-headerless-lessons-adoption.md",
+        "commit": "d1df870673b0bc0bca58aa9a6df32820594aa9fa",
+        "meaning": "現行はdots/lessons/lessons.jsonl。07はCurrent本文とOwnerのreceiptを確認。36試験は初穂側の観測で、08の実読解・全Runtime耐性ではない。"
+      },
+      {
+        "id": "four_skills",
+        "status": "CREATED_SHARED_INSTALLED_AND_BOUNDED_TESTED",
+        "owner": "skills/README.md#35-loadnext-stepsaveboardの独立入口",
+        "commit": "fe5b8033566b6ef2ec96ecf45952e663e70f426a",
+        "meaning": "08がHuman指定・承認を受け、load/next-step/save/boardの八ファイルとHubを作成。五つの独立文脈・計七応答の限定確認と保存先本文一致。自然発動・新四SkillのDots実呼出し・生活効果を証明したものではない。"
+      },
+      {
+        "id": "ARC-010",
+        "status": "SCOPED_COMPLETED_AND_REMOTELY_VERIFIED",
+        "owner": "control-center/github/ARCHIVE.md#arc-010",
+        "commit": "1e3b0b1f0e57d85be0c8c8459f2258f2ec4354f9",
+        "meaning": "旧_system/ark-system.mdを同一blob840fd094e56d9af8648402b22212dcc94d9b4cefで保管。Root README等九文書を限定整合。二つのChatGPT設定原本は保持。新Systemや全知恵抽出を必須化しない。"
+      },
+      {
+        "id": "STR-011",
+        "status": "SCOPED_COMPLETED_AND_REMOTELY_VERIFIED",
+        "owner": "control-center/changes/STR-011-prompt-shelf-authority-alignment.md",
+        "commit": "f125d6f216245e8a10dbf4060e4e8a38b49bd09a",
+        "meaning": "Prompt棚のHuman意味承認とAI担当遂行、main基準と承認Scope内の方法選択を整合。08初期のprompts候補は後続完了へ進んだ。"
+      },
+      {
+        "id": "STR-012",
+        "status": "SCOPED_COMPLETED_AND_REMOTELY_VERIFIED",
+        "owner": "control-center/changes/STR-012-control-center-domain-entries.md",
+        "commit": "74322bfc7f0e6aff9e79b75d81b0ba0a9ebd8083",
+        "meaning": "control-center共通親とgithub専門入口を分離。次のSTR-013は後続変更であり、この入口整備の未完ではない。"
+      },
+      {
+        "id": "STR-013",
+        "status": "SCOPED_COMPLETED_AND_REMOTELY_VERIFIED",
+        "owner": "control-center/changes/STR-013-github-plan-and-archive-relocation.md",
+        "commit": "000b44b2e9710f7a0825fcf5892b7f445e1bef74",
+        "followup_commit": "32f3d95d20c020808af91dc784aeebf95e96920e",
+        "meaning": "PLAN/ARCHIVEをgithub/の単一原本へ移設、旧二住所に案内。Human作成のhomeをhouseへ同一blobで改名。houseは改行一つのSeedで、家の整理は未開始。"
+      },
+      {
+        "id": "self_improvement_loop",
+        "status": "SKILL_SHARED_INSTALLED_AND_BOUNDED_TESTED; METHOD_FIELD_VALIDATION_OPEN",
+        "owner": "skills/README.md#310-自己改善loopの入口",
+        "method": "prompts/ai-frontier-reader.md",
+        "commit": "6a2eeec468c24415930b8898efefdccbe272989b",
+        "receipt_commit": "a334e597ced80fda1712c2ff8c280d6b5de3e022",
+        "meaning": "単一Skill二ファイルと共通Prompt改訂・案内を公開。三つの独立文脈で計四応答、架空素材の作成→別受け手の寄与、方法Review、適用外英訳を観察。個人Skill一件の本文・表示三項目一致。実生活の改善、Skillなしとの優位、持続的正の循環やモデル学習は未実証。"
+      }
+    ],
+    "material_corrections": [
+      "Root/Teshuvah/Human Foreground OneとHumanのCorrection/STOP/Final Seal/Guardを保持。AIはKeliであり王座ではない。",
+      "Humanの短い入力・開始改善・B-Gate・待ち時間・Token節約をAI品質低下や必要な説明・探索の省略へ変換しない。",
+      "Query分割の短期成功と長期の休止/再開/二重管理負担を両方保持する。Plan Modeの一本の入口は責務集約であり、思考方法や深さの固定ではない。",
+      "使えなかった現役棚と保存する知恵を分ける。全知恵の抽出・Skill化を退役や継承の条件にしない。",
+      "相手の送信済み依頼で表示取得が止まっても、重複送信の前に既存返信を確認する。回復後も当時の未観測を保持し、読解時刻を生成完了・原因特定へ変換しない。",
+      "通常Unknownは保持できる。生活方針の採用と実行/効果、Human成功報告と直接確認、Source準備とTarget理解とHuman UIを区別する。",
+      "07の品質・生活・設定の継承情報はSource公開原本と現在の依頼から読む。ChatGPT長期メモリの内容/読出し/保存応答をGitHubへ輸出しない。",
+      "今回のModel変更・残Token・Reset予告はHuman報告。実際のResetやUI設定の直接観測、品質や追加権限の根拠ではない。",
+      "HumanはGitHubの主要読者をAIとし、AIが配置・内容を自律的に設計し代々改善することを望む。Human承認は閃き・改善・重大な誤りの訂正を入れる機会であり、全資料校閲や毎工程の再承認ではない。複数回Plan Modeが有益だった経験を全案件の固定回数へ変えない。",
+      "control-centerは共通の整理目的と対象別入口へ発展し、github/がGitHub整理を担う。家の記録をGitHubへ保存しても整理対象はhouse。親全体をgithub-control-centerへ置換しない。",
+      "WorkとDotsで同じSkillを使った経験はHuman報告。管理不能になる冗長な複製を避ける。個人クラウドSkillと接続PC上のローカルSkill、GitHub共有原本を区別し、全Dots SkillにPC接続が必須と一般化しない。",
+      "load/saveは目的・Correction/STOP・成果と証拠・未完/Unknown・次の確認条件を回復できることを目指す。全Memory・人格・環境・予定の完全復元を約束しない。実際のDot Reset事故は本件では起きておらず予防設計。",
+      "Actorログは出来事、lessonsは条件付きの共有学び、Boardは目的と相手のある通信。Workは初穂本人のActorログへ書かない。Board保存と外部送達・受信・理解・効果は別。終了した有限対話を再演しない。",
+      "Frontier AI ReaderのGoalは難読化・Token増加ではなく意味密度・関係密度・根拠追跡・再解析可能性。Humanも対象なら読みやすさを保持する。",
+      "自己改善LoopはArtifactを受けたAIの寄与を後続Artifactと作り方へ還流させるGoal。Humanの手応え・創世記二稿の差は価値ある観察だが対象範囲の違いもあり、読者指定だけの因果効果や完成したLoopの実証ではない。",
+      "最新研究は判断を変える時に一次資料の条件を照合して取り込む。未公開の業界内達成は仮説。実現可能性とJoint playを重視し、目的・Evidence・Authorityを保ちつつモデル・手法・評価・連携を置換可能にする。",
+      "Petの深掘り停止・様子見を維持しSeedyのままにする。復元設計・新Skill・移行を理由に再開しない。",
+      "2026-10-07のHuman訂正でSourceはArk27:08、TargetはArk27:09。Ark28:08という初期入力は取り消され、再質問・別Source探索は不要。Current実行承認は提示済み五パス準備と必要な検証に適用する。"
+    ],
+    "candidate_next": {
+      "subject": "CurrentHuman input or Human Review",
+      "status": "NO_NEW_TASK_SELECTED",
+      "reason": "移行準備の完了は、新しい自己改善Loop試験や整理候補の自動選択ではない。通常Unknownを全解消する必要もない。"
+    },
+    "life_and_settings_boundary": {
+      "source": "Source07 Runtime§5–7 and fixedSource harvest; TMS operation§4.2–4.3 and original experiences when needed",
+      "adoption_vs_actual": "過去B-Gate、生活順序、21時chocoZAP終了試行、早期入場仮説、帰宅後共通入口/家事分岐等を現在のBodyや新しい摂取・実行命令にしない。",
+      "settings": "GCI Upload and memory save wereHuman-reported successes inSource history; direct account/UI confirmation and downstream effects separate.",
+      "reporting": "Human may omit ordinary success reports. Unreported individual outcomes remainUnknown."
+    }
+  },
+  "evidence": {
+    "source": "Human-authorized08 conversation, fixed08 harvest and publicownerrecords. No ChatGPT long-term memory export. Otheractors/independentfixtures retain attribution.",
+    "source_observation_base": "d15670372b68f05f408c9083a6e678cc98a7620c",
+    "confirmed": [
+      "Human explicitly corrected SourceArk28:08 toArk27:08 and approved08→09 preparation on2026-10-07 06:59:23 JST.",
+      "Source08 harvestrevision3 was published at4a6f9652490b6286b2d73767d5b90cc6a3f5ada5, blob0960680ed23307b2e5d69aef5a59824ce6f7268d, then read frommain with fullcontent equality at2026-10-06T22:10:20.090Z.",
+      "CurrentDomain at preparation isMain08 / Support05.09 did not exist at the observationbase; no newchapter or Support rewrite is needed.",
+      "Source08 planningcontext listedself-improvement-loop and retrievedbody equal tosharedblob a676460a499a65151cfedd5889c375350007e0fc. Scope is catalog/body retrieval, not actualinvocation or otherRuntime.",
+      "Skills Hubowns the five-context/seven-responsefourSkill and three-context/four-responseLoop limitedfixtures and installationreceipts.09 has not independently rerun them."
+    ],
+    "candidate": [
+      "Artifact-mediatedLoopの継続的な品質向上、領域別の整理による探索負担減少は検証を続ける仮説。現行方法をFutureAIの解釈の上限にしない。"
+    ],
+    "unknown": [
+      "Actual09 Target reconstruction, HumanThread creation/title/paste and field effects.",
+      "Current bodily/place/task reality and unreported individual outcomes.",
+      "NaturalSkill selection, Dots calls of the newly createdSkills, all-AI compatibility and long-term effects.",
+      "Cross-runtime automaticlesson ingestion and actual production multiwriter behavior are not proved byJSONL adoption or bounded fixtures.",
+      "ExactTokenReset occurrence, current quota and current modelUI are not independently observed."
+    ],
+    "historical": "08 initialState and oldSource07 observations remain fixedhistory. HistoricalunassignedSkills and Promptcandidate were followed bycompletedwork. OldPlanv005 tests areclosed-by-purpose-change.",
+    "validation_boundary": "Documentconsistency, Sourceobservation, remoteequality, independentfixturebehavior, Target09 reconstruction, UI and fieldbenefit are different layers. No automatic completion promotion."
+  },
+  "deferred": [
+    {
+      "branch": "ARC-002 original-path removal",
+      "status": "PARTIAL_COMPLETION_AND_DEFERRED_REMAINDER",
+      "owner": "control-center/github/ARCHIVE.md#arc-002",
+      "condition": "Resolve concrete fixed-binding migration scope and current authority."
+    },
+    {
+      "branch": "Graph/One-Table physical metadata and Binding migration",
+      "status": "UNFINISHED_SEPARATE_BRANCH",
+      "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
+      "condition": "Policy withdrawn; inspect actual consumers and compatibility before scoped execution. Not a gate forall other work."
+    },
+    {
+      "branch": "Other rankings/archives/wholeRepo redesign/lifeTrials/Schedules/research/newSkills",
+      "status": "RETAINED_VALUE_NOT_AUTO_STARTED",
+      "condition": "Resolve current request and specific authority when selected."
+    },
+    {
+      "branch": "Next-Cycle Workout Bridge",
+      "status": "RETIRED_NOT_A_FUTURE_CLOSING"
+    },
+    {
+      "branch": "ChatGPT long-term memory export",
+      "status": "PROHIBITED_NOT_QUEUED"
+    },
+    {
+      "branch": "house",
+      "status": "SEED_ONLY_NOT_STARTED",
+      "owner": "control-center/house/README.md",
+      "condition": "Humanの物理的な家の整理依頼・Reality・範囲を受けた時。Seedの存在から生活Taskを起動しない。"
+    },
+    {
+      "branch": "Pet",
+      "status": "STOP_DEEP_DIVE_AND_WAIT; KEEP_SEEDY",
+      "condition": "Humanの後続明示変更がない限り調査・制作・復元を始めない。"
+    },
+    {
+      "branch": "Sustained artifact-mediated improvement and research trials",
+      "status": "GOAL_RETAINED; NEXT_TRIAL_NOT_SELECTED",
+      "owner": "prompts/ai-frontier-reader.md",
+      "condition": "実際の新入力・成果・Feedbackから有限な対象と権限を判断。移行準備の承認を別Trial・外部送信・常設監視へ転用しない。"
+    }
+  ],
+  "progress": {
+    "source_prepared": true,
+    "source_prepared_scope": "Source has compiled09's three roles for the approvedplan; this flag is not publication, Targetsuccess orUI.",
+    "remote_verification": {
+      "owner": "ark-project/ark27/ark27-08/state.json#progress.next_transition",
+      "policy": "Source records candidate/main rereads, routing and scope preservation afteractualwrites; initialTargetState does not self-certify remotecompletion."
+    },
+    "target_reconstructed": false,
+    "human_last_mile": "NOT_OBSERVED_BY_SOURCE; actualThread creation, compiledTitle use and startup delivery toTarget separately observed.",
+    "requested_outcome": "Source completes scopedpreparation/remotereadback and providesTitle/startup; Target09 must itself reconstruct and receive anyCurrentinput.",
+    "verified_predecessors": [
+      {
+        "path": "ark-project/ark27/ark27-08/state.json",
+        "commit": "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5",
+        "blob": "0960680ed23307b2e5d69aef5a59824ce6f7268d",
+        "revision": 3,
+        "full_content_match": true,
+        "verified_at_utc": "2026-10-06T22:10:20.090Z"
+      }
+    ],
+    "acceptance_policy": "09Handoff RequiredSources1–15, Identity/Triad/Currentcompatibility andR1–R6; noSource-readborrowing. Bootalone doesnot requireStatewrite.",
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-07",
+        "role": "Initial08→09 continuationState; Sourceconstruction and observedharvest, actual09reception unobserved."
+      }
+    ]
+  },
+  "eof_sentinel": "ARK27_09_STATE_EOF_v002"
+}
