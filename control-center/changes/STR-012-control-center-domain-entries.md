@@ -3,7 +3,7 @@ title: "STR-012 — control-centerの共通入口とGitHub専門入口"
 version: "v001-human-authorized"
 canonical_path: "control-center/changes/STR-012-control-center-domain-entries.md"
 role: "Scoped structure-change rationale, authority, implementation and verification record"
-status: "human-authorized / prepared for publication; remote results recorded below when observed"
+status: "scoped implementation published and remotely verified; independent reader and field effects unobserved"
 created: "2026-10-06"
 updated: "2026-10-06"
 repository: "yusukefujiijp/ai-project"
@@ -72,6 +72,12 @@ AIが自由に構成・方法を判断し、Humanが意味・優先順位・Corr
 
 ## 6. 実施・保存後確認
 
-この初回本文の構築時点では、GitHub公開と公開後のRemote確認は未記録。実際の保存結果を確認してから同節へ追記する。自己の最終SHAを本文へ埋め込む循環は作らず、Git履歴と再取得で最終記録版を照合する。
+1. **実装公開。** [commit 74322bfc7f0e6aff9e79b75d81b0ba0a9ebd8083](https://github.com/yusukefujiijp/ai-project/commit/74322bfc7f0e6aff9e79b75d81b0ba0a9ebd8083)で五パスを公開した。公開親は`ba72abc436fb4e7b9301ba01a78c111b059ad2e5`。調査基点fb5f1d2の後に追加された`torah-project/README.md`を検出し、対象との競合がないことを確認して最新基点へ保持した。force:falseとexpected_shaを指定してmainを更新した。
+2. **候補と公開後の直接再取得。** 候補Tree `bf43d31c6a2ba80a60524f61f04fe7a075db53fe`と五本文を公開前に再取得した。公開後は`2026-10-06T09:54:56Z`（2026-10-06 18:54:56 JST）までにmainの五本文を直接再取得し、意図した全文・blob・必要なEOFの一致を確認した。Toolの保存成功だけを完了証拠にしていない。
+3. **変更範囲。** 公開親の470既存ファイル中、変更したのはRoot README・control-center README・PLANの三つ。新設はGitHub専門入口と本STRの二つで、公開Treeは472ファイル。対象外467ファイルのblob／modeを保持した。ARCHIVE、STR-001–011、整理指針、保管原本、Handoff／State、AGENTS／ARK／Domain、Skills、Actorログ、並行成果を含む。
+4. **参照と保持。** 五本文の相対リンク157出現の行き先と、変更文書内の参照見出しを確認した。変更していない五Owner文書への19見出し参照もCurrent blobで確認した。再編前PLANの§0以降の履歴本文はそのまま保持し、旧見出しのアンカーも保持した。タイトル変更で失われる旧アンカー一件は互換アンカーで補った。Player由来の形成本文は、移した節の相対リンク階層調整以外を保持した。YAML・自己パス・版・EOFも照合した。これは全Repository・全外部サイトのリンク監査ではない。
+5. **意味の自己点検。** 共通目的から専門入口、GitHub依頼からPLAN、退役判断からARC、構造変更理由からSTR、過去の原本から固定証拠へ戻れることを執筆AIが確認した。旧D04の残点と後続STR-003、完了ARCと部分完了ARC-002、指針当時のJSONL候補とSTR-009採用、STR-011の後続結果、旧Planの目的変更終了を読み分けた。独立した別AIの読解試験とは称さない。
+
+ここまでで、承認された入口・判断盤面・必要な案内の整合とRemote検証を完了した。全原本の物理移設、他領域への実利用、長期効果、UI／個人Skillへの反映は成果に含めない。本追記は実際の確認を保存する記録更新であり、別Taskの開始ではない。追記自身の最終SHAは埋め込まず、記録commitと保存後再取得で最終本文を確認する。次の接続はHuman Reviewとし、新しい入力が既にあればその依頼へ戻る。
 
 EOF::STR_012_CONTROL_CENTER_DOMAIN_ENTRIES::v001
