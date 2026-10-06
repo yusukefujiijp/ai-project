@@ -5,7 +5,7 @@ canonical_path: "control-center/changes/STR-013-github-plan-and-archive-relocati
 status: "scoped implementation published and remotely verified; independent reader and field effects unobserved"
 created: "2026-10-06"
 updated: "2026-10-06"
-latest_followup_status: "house rename prepared; remote verification pending"
+latest_followup_status: "house rename published and remotely verified"
 owner: "Ark27:08"
 repository: "yusukefujiijp/ai-project"
 branch: "main"
@@ -94,6 +94,6 @@ Humanは「homeにはhomepage的な意味合いもある」と指摘し、house�
 
 この訂正はSTR-013の領域分離に対する限定的な後続変更として本記録に集約する。新しい案件台帳、第二の家の入口、生活計画は作らない。PLANの診断履歴、Handoff・Skill・Root契約、他Threadやartifacts等の並行成果は保持する。
 
-移動先内容・旧配置の消失・参照・対象外保持を照合し、公開後のRemote再取得結果を追記する。
+実装commit `32f3d95d20c020808af91dc784aeebf95e96920e`、Tree `3a5a33617f5a460ccd1db0f606eee669015df960`をmainへ公開した。新住所と更新した四文書をmainから全文再取得し、準備内容・blob・必要なEOFとの一致を確認した。公開commitが指すTreeで旧home配置の消失、houseへの同一blob移動、対象外474 blobとmodeの保持を確認した。現在の案内はhouseへ接続し、過去のhome作成という事実は履歴として保持した。家の整理計画や生活上の実行・効果は今回の成果に含めない。
 
 EOF::STR_013_GITHUB_PLAN_ARCHIVE_RELOCATION::v001
