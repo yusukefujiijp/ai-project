@@ -2,7 +2,7 @@
 title: "STR-013 — GitHubの計画・アーカイブ案件を専門領域へ置く"
 version: "v001-human-authorized"
 canonical_path: "control-center/changes/STR-013-github-plan-and-archive-relocation.md"
-status: "human-authorized implementation prepared; remote publication verification pending"
+status: "scoped implementation published and remotely verified; independent reader and field effects unobserved"
 created: "2026-10-06"
 updated: "2026-10-06"
 owner: "Ark27:08"
@@ -71,7 +71,11 @@ Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Fo
 
 PLANのdiagnosis-history以下、ARCHIVEの§1以下を全長で比較し、相対リンクの移設に伴う調整以外の本文保持を確認した。固定commitの証拠URLは変更していない。読み手が共通親・GitHub原本・homeのSeed・旧住所の案内を区別できるかを執筆上の自己点検として確認した。別AIによる独立読解の実証とはしない。
 
-公開時はcurrent mainと対象blobを照合し、競合がなければ同じTreeで9対象を反映する。調査基点の既存473 blob中、対象6以外の467 blobを保持する。Remote公開・再取得の結果は実施後に追記する。保存と別AIの実理解・実利用効果は分ける。
+実装commit [`000b44b2e9710f7a0825fcf5892b7f445e1bef74`](https://github.com/yusukefujiijp/ai-project/commit/000b44b2e9710f7a0825fcf5892b7f445e1bef74)、Tree `2dd63d1512751be21934b02ecb5e954444be74f7` をmainへ公開した。親commitは調査基点と同じ `7516f4c029b43df99633fbe1b38d4469f79a5a36`。公開直前にmainの一致を確認し、expected_shaを指定した非force更新を行った。
+
+2026-10-06T10:20:57Z（JST 19:20:57）までに、9対象をmainから全文再取得し、用意した内容・Git blob SHA・必要なEOFとの一致を確認した。Git commitが指すTreeも照合した。既存473 blobのうち、変更対象6以外の467 blobとmodeを保持し、追加3を含む公開Treeは476 blob。Human作成のhomeはmainから改めて読み、改行一つ・元blob一致を確認した。
+
+これは文書配置・内容・参照・保存の確認である。独立した別AIによる理解、実際の家の整理、長期の探索負担の減少、全Runtimeの利用効果は今回観測していない。検証結果は本記録への後続追記として残し、この記録自体も公開後にRemote再取得して確認する。
 
 ## 6. 復元・再検討
 
