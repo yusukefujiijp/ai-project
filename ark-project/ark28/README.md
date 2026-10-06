@@ -2,19 +2,20 @@
 title: "Ark28 — 本流を支える余白と帰還"
 canonical_path: "ark-project/ark28/README.md"
 chapter_id: "ARK28_SUPPORT_CHAPTER"
-version: "v005-human-authorized"
-revision: 5
+version: "v006-human-authorized"
+revision: 6
 role: "Ark27 paired support chapter / chapter identity and entry"
 status: "Ark28:05 continuation prepared / actual Target reconstruction and Human access separately observed"
 created: "2026-09-25"
 updated: "2026-10-06"
-updated_reason: "Human-authorized04→05 continuation; retain Ark99 preparation and Human corrections, chapter meaning and Ark27 Main; Source04 State owns publication receipts"
-date_scope: "Created is the original preparation date in UTC; updated is the continuation preparation date in Asia/Tokyo; neither asserts Human UI creation"
+updated_reason: "Human-authorized Ark28 Project instructions; separate stable collaboration guidance from chapter entry and Thread Runtime / Handoff / State; preserve04→05 preparation and Main ownership"
+date_scope: "Created is the original preparation date in UTC; updated is this document revision date in Asia/Tokyo; neither asserts Human UI creation or Project settings reflection"
 main_chapter: "Ark27"
 main_thread_resolution: "Current Human designation; otherwise ../README.md Current Front-Line Resolution"
 current_support_handoff: "ark28-05/handoff.md"
+project_instructions: "INSTRUCTIONS.md"
 root: "主イェシュア・ハマシア御自身"
-expected_eof: "ARK28_CHAPTER_README_EOF_v005"
+expected_eof: "ARK28_CHAPTER_README_EOF_v006"
 ---
 
 # Ark28 — 本流を支える余白と帰還
@@ -27,7 +28,9 @@ Ark28はArk27の偶数系Sub／補助の場であり、Ark27からMain所有権�
 
 Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章のペアはArk27という章であり、Mainの06→07等のThread継続ごとに偶数章を新設しない。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
 
-本書は章の役割・形成理由・現在の補助入口を所有する。各ThreadのREADMEは安定Runtime、Handoffは受入れ契約、Stateは可変の現在地を所有する。新しいThreadへ進む時だけ必要な入口を更新し、旧Handoffを現在のStateへ書き換えない。
+Project全体の長期指示の原本は[INSTRUCTIONS.md](INSTRUCTIONS.md)（初版v001-human-authorized、2026-10-06）。HumanがArk28に指示が未設定だったと報告し、Plan Modeで検討した章共通の指示作成を承認したため用意した。通常の入力を受け取る姿勢、柔軟なSupport、Main／Ark99との関係、AI品質、Source・権限・Guard・保存・Evidenceを所有する。全文をProjectの指示欄へ貼り付けられる構成であり、GitHub原本の保存と設定画面への反映は別に確認する。
+
+本書は章の役割・形成理由・現在の補助入口を所有する。各ThreadのREADMEは安定Runtime、Handoffは受入れ契約、Stateは可変の現在地を所有する。長期指示は個別Handoffの必須条件・固定Bindingを置き換えず、特定ThreadのSource件数・再構成条件を全Threadへ拡張しない。Ark99の二大ルールもArk28共通規則へ移植しない。新しいThreadへ進む時だけ必要な入口を更新し、旧Handoffを現在のStateへ書き換えない。現在入口が変わっても、既存のThreadのIdentityや完了済みBootを自動更新・再実行しない。
 
 ## 2. なぜ事前に用意するのか — Humanの発見と訂正
 
@@ -79,4 +82,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 全章共通のペア準備規則は[Ark Domain README §4.1](../README.md#41-odd--even-paired-preparation)が所有する。本書はArk28固有の意味・入口・形成経緯を所有し、汎用規則の第二原本にはしない。
 
-ARK28_CHAPTER_README_EOF_v005
+ARK28_CHAPTER_README_EOF_v006
