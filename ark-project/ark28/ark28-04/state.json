@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_04_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-05",
     "updated": "2026-10-06",
     "canonical_path": "ark-project/ark28/ark28-04/state.json",
     "date_scope": "Asia/Tokyo preparation; not Human UI creation, actual Target boot or bodily state",
-    "change_reason": "Record04 own reception, Ark99 formation/releases/material Human corrections and approved04→05 preparation; preserve origin identity and fixed bindings."
+    "change_reason": "Record completion of approved04→05 source preparation, coherent target publication and direct remote reread; preserve origin03→04 identity and historical bindings."
   },
   "identity": {
     "source": "Ark28:03",
@@ -194,9 +194,9 @@
     }
   },
   "now": {
-    "phase": "PREPARING_NEXT_THREAD",
+    "phase": "SOURCE_PREPARATION_COMPLETE_AWAITING_TARGET_RECEPTION",
     "support_purpose": "Teshuvahを中心に04の協働を05へ継続。Ark99の専用入口・00準備・正式名称・指示原本の完成成果を保持し、次のHuman入力を中心にする。",
-    "first_legal_move": "CONTINUE_APPROVED_04_TO_05_PREPARATION",
+    "first_legal_move": "DELIVER_COMPILED_HANDOFF_THEN_RECEIVE_CURRENT_HUMAN_INPUT",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "existing_input": "Receive already supplied new input after all gates; do not ask it to be repeated.",
     "boot_only": "Return evidence-backed reception, then Human Review; no automatic task dispatch.",
@@ -205,8 +205,9 @@
       "source": "Ark28:04",
       "target": "Ark28:05",
       "scope": "Human-approved eight-path plan",
-      "completion": "Publish and remotely verify Source experience/harvest/state,05 triad and entry alignment; record terminal receipt and deliver exact Title/Handoff copy surfaces.",
-      "boundary": "05 own reconstruction, Human last mile and field effects remain separate."
+      "status": "SOURCE_PREPARATION_AND_REMOTE_VERIFICATION_COMPLETE",
+      "completion": "Source originals preserved;05 triad and chapter/Domain entry published and remotely reread; this State owns the terminal observation; exact Title and Handoff are the Source reply copy surfaces.",
+      "boundary": "Actual05 reconstruction, Human Thread creation/title/paste and field effects are separate. No new work is dispatched by completion."
     },
     "preparation_observation": {
       "date_jst": "2026-10-05",
@@ -467,16 +468,109 @@
       "role": "SUPPORT",
       "compiled_title": "Ark28:05_2026/10/06; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
       "authorized_at": "2026-10-06T21:49:01+09:00",
-      "status": "SOURCE_MATERIAL_COMPILED",
-      "source_prepared": "IN_PROGRESS",
+      "status": "SOURCE_PREPARED_AND_REMOTE_VERIFIED",
+      "source_prepared": "COMPLETED",
+      "source_publication": {
+        "commit": "f162456de68400051027f92e516ec1d440c0cac8",
+        "tree": "f3fc0d54be99580608b26b3e2c802951d03ea34d",
+        "paths": [
+          {
+            "path": "ark-project/ark28/ark28-04/task-records.json",
+            "sha": "273b5b1183bea1ab743c9117ca99820a72401a32"
+          },
+          {
+            "path": "ark-project/ark28/ark28-04/harvest.md",
+            "sha": "d31723475824b136ec57e9915e1cc42904ae85f3"
+          },
+          {
+            "path": "ark-project/ark28/ark28-04/state.json",
+            "sha": "9acfb4f4893270fc60ac29d8c76da1f8611a6c86"
+          }
+        ],
+        "observation": "Candidate commit and published main files reread; full content and blob matched. State entry here is the historical revision2 snapshot, not this file's current self hash."
+      },
+      "target_publication": {
+        "commit": "0e71c1330ba07fe2899242d76fea1f0990673408",
+        "tree": "c6e72c349feaa28296f04f271b06a7f850ff4b81",
+        "paths": [
+          {
+            "path": "ark-project/ark28/ark28-05/README.md",
+            "sha": "b368b227e4870ccedbd5038082011e760f70c528"
+          },
+          {
+            "path": "ark-project/ark28/ark28-05/handoff.md",
+            "sha": "567ebaa411d8831ea30e4899a56b7f86cb117f11"
+          },
+          {
+            "path": "ark-project/ark28/ark28-05/state.json",
+            "sha": "db36c66a4974bcaa6d75648c0108cda4c196f327"
+          },
+          {
+            "path": "ark-project/ark28/README.md",
+            "sha": "cd79207e32f07c7076b7be5a9dc3d0c74ebb385c"
+          },
+          {
+            "path": "ark-project/README.md",
+            "sha": "1b950533e35bf884005d8ca7828b22cf86adbea8"
+          }
+        ],
+        "observation": "All five candidate files reread before CAS publication; all five reread from main afterward with full content and blob equality."
+      },
       "remote_verification": {
-        "status": "PENDING_PUBLICATION_AND_REREAD"
+        "status": "REMOTE_VERIFIED",
+        "observer": "Work / Ark28:04",
+        "observed_date_jst": "2026-10-06",
+        "repository": "yusukefujiijp/ai-project",
+        "ref": "main",
+        "source_commit": "f162456de68400051027f92e516ec1d440c0cac8",
+        "target_commit": "0e71c1330ba07fe2899242d76fea1f0990673408",
+        "checks": [
+          "Source experience validates against formats/task-records/v001.schema.json; unique IDs, source references and edge endpoints checked.",
+          "README/Handoff metadata and declared Exact EOF, JSON parse/state sentinel, role/identity/title and fixed bindings verified.",
+          "05 ordered16 Required Sources and R1–R8 have reachable evidence; Source self-review does not stand in for Target reading.",
+          "Candidate commits reread before publication; exact3 then exact5 changed paths checked; main CAS used expected parent and force=false.",
+          "Published main files reread and compared byte-for-byte with candidate content and blob.",
+          "Ark27:08 Main, Domain title policy v002,04 fixed README/Handoff and Ark99 owners preserved."
+        ],
+        "terminal_file_note": "This revision records already observed Source/Target publication evidence. Its own final persistence is reread after publication and reported in the Source reply, without embedding its own SHA."
+      },
+      "source_side_reconstruction_review": {
+        "status": "R1_R8_EVIDENCE_SUPPORTED",
+        "observer": "preparing Source04 AI",
+        "identity_binding_eof_triad": "PASS",
+        "record_schema_refs": "PASS",
+        "current_vs_historical_and_authority": "PASS",
+        "boundary": "Document self-review in the Source context; not independent cold-reader validation or actual Target05 reconstruction."
       },
       "target_reconstruction": "NOT_OBSERVED",
-      "human_last_mile": "NOT_OBSERVED",
-      "requested_outcome": "Prepare a source-backed05 continuation and deliver exact copy surfaces; actual Target boot remains distinct.",
+      "target_receipt_owner": "ark-project/ark28/ark28-05/state.json progress.target_reconstruction_receipt",
+      "human_last_mile": {
+        "thread_creation": "NOT_OBSERVED",
+        "title_application": "NOT_OBSERVED",
+        "handoff_submission": "NOT_OBSERVED",
+        "instruction": "Use the Source completion reply Title and Handoff copy surfaces in Ark28:05; actual05 AI performs its own required reception."
+      },
+      "human_interface": {
+        "compiled_title": "Ark28:05_2026/10/06; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+        "handoff_url": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-05/handoff.md",
+        "order": [
+          "TITLE_COPY_SURFACE",
+          "HANDOFF_COPY_SURFACE",
+          "MINIMUM_HUMAN_ACTIONS"
+        ],
+        "boundary": "Prepared interface is not observed UI application or Target success."
+      },
+      "requested_outcome": {
+        "preparation": "COMPLETED",
+        "remote_verification": "COMPLETED",
+        "actual_target_reception": "NOT_OBSERVED",
+        "field_effects": "NOT_OBSERVED",
+        "boundary": "The approved request is Source preparation and delivery; actualTarget/Human outcomes require their own evidence."
+      },
+      "task_records_time_boundary": "The fixed experience original records transition-preparation as in_progress at the earlier Source snapshot. This Current terminal receipt supplies the later completion; do not restart the completed preparation from the historical task_state.",
+      "after_preparation": "Receive current Human input or return Human Review. Boot alone launches no past task, Reset, body trial, AI message or external change.",
       "receipt_owner": "ark-project/ark28/ark28-04/state.json progress.next_transition",
-      "boundary": "No self hash or circular live binding. Final Source receipt follows actual publication and reread."
+      "boundary": "Current receipt remains mutable and has no self-hash. It does not rewrite historical04 identity, Target-owned reception, or Human reality."
     }
   },
   "eof_sentinel": "ARK28_04_STATE_EOF_v001"
