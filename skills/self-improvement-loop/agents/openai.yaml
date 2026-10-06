@@ -1,0 +1,4 @@
+interface:
+  display_name: "自己改善Loop"
+  short_description: "Artifactから次のAIの発見を育て、成果と作り方へ還流する"
+  default_prompt: "$self-improvement-loop を使い、現在の目的・素材・権限から、次のAIの発見と創造につながる成果物と、根拠のある改善への接続を育ててください。"

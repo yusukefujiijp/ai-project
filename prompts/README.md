@@ -286,9 +286,9 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 ```yaml
 runtime: "prompts/ai-frontier-reader.md"
-activation: "same runtime / current artifact or task"
-role: "Frontier-AI-readable knowledge quality / relation discovery / re-analysis value"
-status: "v001-candidate / active prompt / field validation ongoing"
+activation: "same runtime or self-improvement-loop skill / current artifact or task"
+role: "AI-readable artifacts / receiver discovery / feedback to artifacts and making"
+status: "v002-candidate / active prompt / field validation ongoing"
 origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
 ```
 
@@ -298,7 +298,9 @@ origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
 
 > **最高AI向けの深さは、難しさや情報量ではなく、意味密度・関係密度・根拠追跡可能性・再解析可能性によって作る。**
 
-研究、設計、レビュー、Handoff、記事、Book Page、Knowledge Asset等へ汎用適用できるが、単純変換やExact Output等でMaterialな利益がない場合は機械的に適用しない。別Launcher／Queryは作成せず、Single-Prompt Policyに従う。
+研究、設計、レビュー、Handoff、記事、Book Page、Knowledge Asset等へ汎用適用できるが、単純変換やExact Output等でMaterialな利益がない場合は機械的に適用しない。
+
+「自己改善Loop」のSeedと、受け手の発見・訂正を後続Artifactと作り方へ戻す二つの還流、評価の区別、Joint playは本体が所有する。[self-improvement-loop（自己改善Loop）](../skills/self-improvement-loop/SKILL.md)を短い呼出しの入口とし、現在の作成・受信・Reviewから必要な働きを選ぶ。Prompt全文をSkillへ複製せず、Work／Dots別の本文や独立Queryを増やさない。共有・導入・限定確認は[Skills Hub](../skills/README.md#310-自己改善loopの入口)へ接続する。
 
 ---
 
