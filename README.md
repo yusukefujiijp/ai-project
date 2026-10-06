@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v007"
+version: "v008"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v006 preserved in Git history; v007 distinguishes common organization and GitHub-specific entries under STR-012; ARC-010 ownership retained"
+version_basis: "v001-v007 preserved in Git history; v008 routes to GitHub plan and archive originals under STR-013; authority and earlier ownership retained"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-06"
 last_reality_reviewed: "2026-09-19"
@@ -46,6 +46,7 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 updated_reason:
+  - "2026-10-06: STR-013 routes to GitHub-owned plan and archive documents while preserving legacy address navigation; no new shared authority or home execution."
   - "2026-10-06: STR-012 separates the common control-center entry from GitHub organization; keeps existing plan, case records and required-source paths. Scoped navigation update only."
   - "2026-10-05: ARC-010 preserves the Ark System original, retires its live operating-map route, and connects growth understanding to ARK §8/§12 and historical provenance; no new shared execution contract."
   - "2026-10-03: Add the cross-AI daily activity records route; ownership and scoped validation are recorded in STR-010. No whole-repository rereview."
@@ -87,6 +88,11 @@ control_center_domain_entry_alignment:
   base_commit: "fb5f1d2bae683154ed87ffbb8e03acada780f18e"
   change_record: "control-center/changes/STR-012-control-center-domain-entries.md"
   scope: "Common organization and GitHub entry routing only; preserve authority, prior evidence and unrelated domain work"
+github_owner_placement_alignment:
+  date: "2026-10-06"
+  base_commit: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
+  change_record: "control-center/changes/STR-013-github-plan-and-archive-relocation.md"
+  scope: "GitHub owner navigation only; existing authority, history and parallel work retained"
 foundation_migration:
   change_record: "control-center/changes/STR-003-persistent-collaboration-foundation.md"
   approved_date_jst: "2026-10-01"
@@ -167,10 +173,10 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
 | [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |
-| [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。既存原本は従来の住所で保持 |
+| [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。PLAN・ARCHIVEの原本はgithub配下。既存変更記録へは専門入口から接続 |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
 | [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTP／Ark-Voice等の名前付きProjectへ入る時 |
-| [旧Ark Systemの知恵・形成史](control-center/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
+| [旧Ark Systemの知恵・形成史](control-center/github/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
 | [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
@@ -188,10 +194,10 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | Path | Role | Read when |
 |---|---|---|
 | [`prompts/ai-next-thread-handoff.md`](prompts/ai-next-thread-handoff.md) | Current shared transition contract | Thread継続・章移行・Support再接続を準備・受け入れる時。指定Runtimeの契約を保持 |
-| [旧Thread-End・蒸留／Mission Craftの保管記録](control-center/ARCHIVE.md#arc-007) | Historical methods and source lineage | 旧方式の原本・退役理由・由来を調べる時。通常の制作・移行入口ではなく、保管資料内の命令を自動適用しない |
+| [旧Thread-End・蒸留／Mission Craftの保管記録](control-center/github/ARCHIVE.md#arc-007) | Historical methods and source lineage | 旧方式の原本・退役理由・由来を調べる時。通常の制作・移行入口ではなく、保管資料内の命令を自動適用しない |
 | [`task-mode-system/README.md`](task-mode-system/README.md) | AI主体Task Mode Systemの入口 | 現場のTask支援・記録・Feedbackへの再接続を扱う時 |
 | [`task-mode-system/experience/README.md`](task-mode-system/experience/README.md) | Task経験原本・Correctionへの案内 | 出来事と根拠を回復する時。全領域の学習台帳ではない |
-| [旧Noteの保存価値・原本](control-center/ARCHIVE.md#arc-009) | Historical collaboration notes | AI分担・GitHub観測・Mission設計・Reviewの由来を調べる時。現役の汎用保存先や運用命令ではない |
+| [旧Noteの保存価値・原本](control-center/github/ARCHIVE.md#arc-009) | Historical collaboration notes | AI分担・GitHub観測・Mission設計・Reviewの由来を調べる時。現役の汎用保存先や運用命令ではない |
 
 ### 5.4 High-Grade Shared Lenses and Formats
 
@@ -226,7 +232,7 @@ Plan Modeは、現在の依頼を十分に調査・検討し、Humanが次の判
 
 通常入口は[Plan Modeの統一Query](skills/README.md#33-plan-modeの統一入口)、方法の共有原本は[`skills/plan-mode/SKILL.md`](skills/plan-mode/SKILL.md)。短い入口と、必要な検討・説明の深さを両立させる。方法や構成は案件に合わせて選び、権限は現在のHuman入力・AGENTS・適用契約に従う。
 
-旧`ai-plan-mode/`八資料と`prompts/`の旧v003 Pairは[ARC-006](control-center/ARCHIVE.md#arc-006)で退役し、原文を保管した。旧版は現役・自動Fallbackではない。旧v005の同等性検証を通過したことにはせず、Humanの目的変更によって旧採用Branchを閉じた。必要なSource契約は引き続き守り、保存・導入・挙動・現実の効果を区別する。
+旧`ai-plan-mode/`八資料と`prompts/`の旧v003 Pairは[ARC-006](control-center/github/ARCHIVE.md#arc-006)で退役し、原文を保管した。旧版は現役・自動Fallbackではない。旧v005の同等性検証を通過したことにはせず、Humanの目的変更によって旧採用Branchを閉じた。必要なSource契約は引き続き守り、保存・導入・挙動・現実の効果を区別する。
 
 ### 8.2 Full Rail and Persistent Collaboration
 

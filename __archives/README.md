@@ -1,22 +1,23 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.9.0"
+version: "0.10.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
-updated: "2026-10-05"
-updated_reason: "Add the unchanged Ark System original and ARC-010 provenance route; existing archives retained."
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.9.0"
+updated: "2026-10-06"
+updated_reason: "STR-013: route to GitHub-owned plan and archive cases; archive objects and case outcomes unchanged."
+change_record: "../control-center/changes/STR-013-github-plan-and-archive-relocation.md"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.10.0"
 ---
 
 # ai-project Archives
 
 **現在の運用から退役させた資料を、判断理由と再検討の経路を保って保存する場所。**
 
-ai-project全体の構造整理は[control-center](../control-center/README.md)、優先順位は[PLAN](../control-center/PLAN.md)、個別候補の提案・Human判断・実施記録は[ARCHIVE](../control-center/ARCHIVE.md)から辿る。ここは承認理由の第二原本を作る場所ではなく、保存実体からその案件と由来へ戻る入口である。
+ai-project全体の構造整理は[GitHub専門入口](../control-center/github/README.md)、優先順位は[PLAN](../control-center/github/PLAN.md)、個別候補の提案・Human判断・実施記録は[ARCHIVE](../control-center/github/ARCHIVE.md)から辿る。ここは承認理由の第二原本を作る場所ではなく、保存実体からその案件と由来へ戻る入口である。
 
 ## 1. 保管の意味
 
@@ -30,9 +31,9 @@ ai-project全体の構造整理は[control-center](../control-center/README.md)�
 
 基本案は `__archives/<案件ID>/<元の相対パス>`。案件IDからARCHIVEの同じ記録へ戻り、元の役割・移動理由・承認範囲・復元方法を確認できるようにする。案件の性質に合わない場合は、対応と理由を残して別の構成を選べる。
 
-ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_repo_reality.py](ARC-001/tools/check_repo_reality.py) に保存する。現在の実施・確認状態は[同じ案件](../control-center/ARCHIVE.md#arc-001)が所有する。
+ARC-001では、元の `tools/check_repo_reality.py` を [ARC-001/tools/check_repo_reality.py](ARC-001/tools/check_repo_reality.py) に保存する。現在の実施・確認状態は[同じ案件](../control-center/github/ARCHIVE.md#arc-001)が所有する。
 
-ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も互換用に保持する。アーカイブへの保存と、元パスからの完全な移動を区別する。詳細と残点は[ARC-002](../control-center/ARCHIVE.md#arc-002)を参照する。
+ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も互換用に保持する。アーカイブへの保存と、元パスからの完全な移動を区別する。詳細と残点は[ARC-002](../control-center/github/ARCHIVE.md#arc-002)を参照する。
 
 ## 3. 保存実体の索引
 
@@ -42,16 +43,16 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 
 | Node | Edge | 元の配置と保存する内容 |
 |---|---|---|
-| [ARC-001のchecker](ARC-001/tools/check_repo_reality.py) | [案件の理由・承認・実施・復元](../control-center/ARCHIVE.md#arc-001) → [実験の由来](../ark-project/ark21/Ark21-06/sandbox/README.md) | `tools/check_repo_reality.py`。撤回済み実験のコードを内容変更なしで保存。現在のRepository正常条件を定めるツールではない |
-| [ARC-002のBridge原本](ARC-002/ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md) | [廃止理由・固定参照・残点](../control-center/ARCHIVE.md#arc-002) → [現在の棚の案内](../ai-ark-seed/ai-ark-seed-cards/README.md) | 一原本を保存。元パスは同一blobの互換原本として保持し、物理移動完了とは数えない |
-| [ARC-003の旧Stage 02](ARC-003/prompts/x-deepquote/x-deepquote_02-quote-completion-gate_v001-8.md)・[監査Packet](ARC-003/prompts/fable5/fable5-x-deepquote-markdown-handoff-ai-output-polish-audit_packet_v001.md) | [旧方式の退役と保存価値](../control-center/ARCHIVE.md#arc-003) → [現在のPrompt入口](../prompts/README.md) | 二原本を移動。Stage 01・後続Stage 02・02Rは保持 |
-| [ARC-004の旧Compile](ARC-004/prompts/ai-compile-ark-seed.md)・[Compile Query](ARC-004/prompts/ai-compile-ark-seed_query.md)・[旧Pickup](ARC-004/prompts/ai-pickup-ark-seed.md)・[Pickup Query](ARC-004/prompts/ai-pickup-ark-seed_query.md) | [役割差と退役理由](../control-center/ARCHIVE.md#arc-004) → [文脈を保持する現在の案内](../ai-ark-seed/README.md#10-context-preservation) | 四原本を移動。軽量Seedとの完全同等やRuntimeの再設計を意味しない |
-| [ARC-005の旧chocoZAP案内](ARC-005/chocozap/README.md)・[日別記録](ARC-005/chocozap/records/2026/2026-09-24.md)・[旧移動案内](ARC-005/chocozap/records/undated/cz-visit-0001.md) | [退役理由・予期せぬ成功の評価・復帰条件](../control-center/ARCHIVE.md#arc-005) → [現行の記録入口](../chocozap/README.md) | 三資料を保管注記付きで保存。原文は注記を除いて保持。現役の正本はJSONへ移行し、旧日別方式は追記・集計対象外 |
-| [ARC-006の旧Plan Mode Subsystem](ARC-006/ai-plan-mode/README.md)・[旧v003本体](ARC-006/prompts/ai-plan-mode.md)・[旧Query](ARC-006/prompts/ai-plan-mode_query.md) | [目的変更・十原本・参照影響・復元](../control-center/ARCHIVE.md#arc-006) → [新Skillの統一入口](../skills/README.md#33-plan-modeの統一入口) | 専用フォルダ八資料と旧Pair二資料を同一blobで保管。元パスに互換Stubは置かない。本文中のActive・命令・旧試験Gateは歴史記述 |
-| [ARC-007の旧Thread-End](ARC-007/thread-end/README.md)・[旧Thread Index Craft](ARC-007/_thread-index/README.md)・[旧Mission Craft](ARC-007/_thread-mission/README.md) | [判断・27原本対応・出典・復元条件](../control-center/ARCHIVE.md#arc-007) → [保持するArk01分析](../ark-project/ark01/thread-index/README.md)・[Card](../ark-project/ark01/mission-card/README.md) | 三ディレクトリ27原本を同一blobで保管。通常実行入口は退役し、当時の命令・未完状態・元住所は歴史記述として保持。元パスにStubを置かず、旧Bootの互換動作は保証しない |
-| [ARC-008の初穂形成史](ARC-008/dots/records/2026/20261001-first-fruit.md) | [理由・同一blob・固定snapshot・復元対応](../control-center/ARCHIVE.md#arc-008) → [現役Actorログ](../dots/logs/README.md) | 固有の命名・Humanの意味・訂正を一原本のまま保管。元recordsにStubを置かず、保存本文の旧相対リンクは固定snapshotから辿る |
-| [ARC-009の旧Note六原本](ARC-009/_note/README.md) | [退役理由・六原本対応・保存価値・証拠・復元](../control-center/ARCHIVE.md#arc-009) | AI分担・GitHub運用観測・Mission設計・Reviewの原本を同一blobで保管。現役汎用棚を退役し、旧命令・metadata・相対リンクは当時の記述として読む。元パスにStubを置かない |
-| [ARC-010の旧Ark System原本](ARC-010/_system/ark-system.md) | [保存価値・役割分担・固定証拠・確認・復元](../control-center/ARCHIVE.md#arc-010) | Thread横断の成長・AIの長期的助言・保存後確認の形成史を、一原本のまま同一blobで保管。現役Operating Mapを退役し、旧命令・元住所・相対リンクは当時の記述として読む。元パスにStubを置かない |
+| [ARC-001のchecker](ARC-001/tools/check_repo_reality.py) | [案件の理由・承認・実施・復元](../control-center/github/ARCHIVE.md#arc-001) → [実験の由来](../ark-project/ark21/Ark21-06/sandbox/README.md) | `tools/check_repo_reality.py`。撤回済み実験のコードを内容変更なしで保存。現在のRepository正常条件を定めるツールではない |
+| [ARC-002のBridge原本](ARC-002/ai-ark-seed/ai-ark-seed-cards/next-cycle-workout-bridge.md) | [廃止理由・固定参照・残点](../control-center/github/ARCHIVE.md#arc-002) → [現在の棚の案内](../ai-ark-seed/ai-ark-seed-cards/README.md) | 一原本を保存。元パスは同一blobの互換原本として保持し、物理移動完了とは数えない |
+| [ARC-003の旧Stage 02](ARC-003/prompts/x-deepquote/x-deepquote_02-quote-completion-gate_v001-8.md)・[監査Packet](ARC-003/prompts/fable5/fable5-x-deepquote-markdown-handoff-ai-output-polish-audit_packet_v001.md) | [旧方式の退役と保存価値](../control-center/github/ARCHIVE.md#arc-003) → [現在のPrompt入口](../prompts/README.md) | 二原本を移動。Stage 01・後続Stage 02・02Rは保持 |
+| [ARC-004の旧Compile](ARC-004/prompts/ai-compile-ark-seed.md)・[Compile Query](ARC-004/prompts/ai-compile-ark-seed_query.md)・[旧Pickup](ARC-004/prompts/ai-pickup-ark-seed.md)・[Pickup Query](ARC-004/prompts/ai-pickup-ark-seed_query.md) | [役割差と退役理由](../control-center/github/ARCHIVE.md#arc-004) → [文脈を保持する現在の案内](../ai-ark-seed/README.md#10-context-preservation) | 四原本を移動。軽量Seedとの完全同等やRuntimeの再設計を意味しない |
+| [ARC-005の旧chocoZAP案内](ARC-005/chocozap/README.md)・[日別記録](ARC-005/chocozap/records/2026/2026-09-24.md)・[旧移動案内](ARC-005/chocozap/records/undated/cz-visit-0001.md) | [退役理由・予期せぬ成功の評価・復帰条件](../control-center/github/ARCHIVE.md#arc-005) → [現行の記録入口](../chocozap/README.md) | 三資料を保管注記付きで保存。原文は注記を除いて保持。現役の正本はJSONへ移行し、旧日別方式は追記・集計対象外 |
+| [ARC-006の旧Plan Mode Subsystem](ARC-006/ai-plan-mode/README.md)・[旧v003本体](ARC-006/prompts/ai-plan-mode.md)・[旧Query](ARC-006/prompts/ai-plan-mode_query.md) | [目的変更・十原本・参照影響・復元](../control-center/github/ARCHIVE.md#arc-006) → [新Skillの統一入口](../skills/README.md#33-plan-modeの統一入口) | 専用フォルダ八資料と旧Pair二資料を同一blobで保管。元パスに互換Stubは置かない。本文中のActive・命令・旧試験Gateは歴史記述 |
+| [ARC-007の旧Thread-End](ARC-007/thread-end/README.md)・[旧Thread Index Craft](ARC-007/_thread-index/README.md)・[旧Mission Craft](ARC-007/_thread-mission/README.md) | [判断・27原本対応・出典・復元条件](../control-center/github/ARCHIVE.md#arc-007) → [保持するArk01分析](../ark-project/ark01/thread-index/README.md)・[Card](../ark-project/ark01/mission-card/README.md) | 三ディレクトリ27原本を同一blobで保管。通常実行入口は退役し、当時の命令・未完状態・元住所は歴史記述として保持。元パスにStubを置かず、旧Bootの互換動作は保証しない |
+| [ARC-008の初穂形成史](ARC-008/dots/records/2026/20261001-first-fruit.md) | [理由・同一blob・固定snapshot・復元対応](../control-center/github/ARCHIVE.md#arc-008) → [現役Actorログ](../dots/logs/README.md) | 固有の命名・Humanの意味・訂正を一原本のまま保管。元recordsにStubを置かず、保存本文の旧相対リンクは固定snapshotから辿る |
+| [ARC-009の旧Note六原本](ARC-009/_note/README.md) | [退役理由・六原本対応・保存価値・証拠・復元](../control-center/github/ARCHIVE.md#arc-009) | AI分担・GitHub運用観測・Mission設計・Reviewの原本を同一blobで保管。現役汎用棚を退役し、旧命令・metadata・相対リンクは当時の記述として読む。元パスにStubを置かない |
+| [ARC-010の旧Ark System原本](ARC-010/_system/ark-system.md) | [保存価値・役割分担・固定証拠・確認・復元](../control-center/github/ARCHIVE.md#arc-010) | Thread横断の成長・AIの長期的助言・保存後確認の形成史を、一原本のまま同一blobで保管。現役Operating Mapを退役し、旧命令・元住所・相対リンクは当時の記述として読む。元パスにStubを置かない |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -61,4 +62,4 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.9.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.10.0
