@@ -19,7 +19,13 @@ human_foreground_one: "主の完全勝利"
 ark_home: "../ARK.md"
 repository_home: "../README.md"
 agent_runtime: "../AGENTS.md"
-thread_title_policy_version: "v001-candidate"
+thread_title_policy_version: "v002-human-authorized"
+thread_title_policy_revision:
+  date: "2026-10-06"
+  source_thread: "Ark99:00"
+  base_commit: "bddc588579b998f507961ca3ca2a6156db478e05"
+  authority: "Human corrected the date-following delimiter in Ark99:01 to a semicolon and requested correction of the originating colon rule"
+  scope: "Section 6 standard for newly generated titles; preserve identifier/payload colons, historical confirmed titles, explicit fixed bindings and Main/Support routes"
 language_policy: "Japanese-first / English-anchor"
 retrieval_policy: "progressive disclosure / relation-first / nearest-current-source"
 search_aliases:
@@ -38,7 +44,7 @@ updated: "2026-10-06"
 last_reality_reviewed: "2026-10-06"
 route_review_base_commit: "19b41044881686b89e981e923e726e273e0c3e3f"
 route_review_scope: "Human-authorized Ark27:07→08 continuation; verify candidate triad before Current ref publication, then reread main; Source07 terminal receipt owns actual preparation results; preserve Ark28:02 and unrelated work"
-updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence."
+updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence. 2026-10-06: Human corrected the date-following title delimiter to semicolon; title policy v002 owns the change while the Domain routing contract remains v010."
 teshuvah_entry_revision:
   date: "2026-10-06"
   source_thread: "Ark28:04"
@@ -377,10 +383,16 @@ Ark00は現在のPre-Project Zero-Gateである。旧Ark99のWild Seed受付機�
 Ark Dedicated Threadの標準Titleは次とする。
 
 ```text
-Ark{NN}:{Thread Sequence}_{YYYY/MM/DD}: "{Main Name}: {Sub Name}"
+Ark{NN}:{Thread Sequence}_{YYYY/MM/DD}; "{Main Name}: {Sub Name}"
 ```
 
-確定例：
+2026-10-06、Ark99:00でHumanがArk99:01のTitleを訂正し、その参照元である本標準の日付後の区切りもセミコロンへ変更するよう依頼した。現在の確定例：
+
+```text
+Ark99:01_2026/10/06; "Teshuvah: 新しい一件を迎える"
+```
+
+旧形式の確定例（2026-08-15の履歴。現在の生成Templateではなく、当時のTitleを保持する）：
 
 ```text
 Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝の刈り取り"
@@ -389,7 +401,8 @@ Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝�
 ### 6.1 Enclosure Rule
 
 - Meaning Payload全体を半角Double quotation（`"`）一組で囲む。
-- `Ark{NN}:{Thread Sequence}_{YYYY/MM/DD}: `はDouble quotationの外側に置く。
+- `Ark{NN}:{Thread Sequence}_{YYYY/MM/DD}; `はDouble quotationの外側に置く。
+- 日付とMeaning Payloadの区切りは半角Semicolon＋半角Space（`; `）。`Ark{NN}:{Thread Sequence}`の識別子内のColon（`:`）は保持する。
 - Main NameとSub Nameは半角Colon＋半角Space（`: `）で接続する。
 - Meaning Payloadの囲みに隅付き括弧（`【】`）を使用しない。
 - Curly quotation（`“”`）や全角引用符へ自動変換しない。
@@ -399,9 +412,10 @@ Ark21:01_2026/08/15: "主の勝利栄光: 主イェシュアRootと信仰的枝�
 - Ark番号、Thread連番、開始日、Main Name、Sub Name、最終TitleはHumanが確定する。
 - AIはTitleを提案・Compileできるが、ChatGPT UI上でRename済みと自己認証しない。
 - Humanの明示的な最新指定を、過去Templateより優先する。
-- 過去Threadへ遡及的な一括Renameを要求しない。
+- この標準で新しく生成するTitleには、現在のセミコロン形式を使う。過去Threadへ遡及的な一括Renameを要求しない。
+- 旧形式を含む明示的な固定Bindingは適用契約に従う。この訂正だけで既存HandoffのBindingを置換しない。
 - Local Arkは追加制約を持てるが、このDomain Policyと矛盾させない。
-- Ark21の既存Policyは、このDomain Policyの先行成功実装として扱う。
+- Ark21の既存Policyは、このDomain Policyの形成に先行した実装として保持する。旧資料の日付後のColonを、現在の標準Title生成へ再導入しない。
 
 ---
 
