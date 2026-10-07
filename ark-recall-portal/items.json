@@ -1,11 +1,11 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 5,
-  "updated": "2026-10-04",
+  "revision": 6,
+  "updated": "2026-10-08",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）",
     "complete_project_history": false,
     "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
@@ -126,6 +126,67 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "本人の明示追加希望から作った想起用の編集要約。activeは想起候補であり、Taskの未完了・購入実績・実行義務ではない。AIによる新しい買物案はまだ登録していない。"
+    },
+    {
+      "id": "holiday-wako-one-store",
+      "scene_ids": [
+        "pre-holiday-preparation"
+      ],
+      "label": "休日前はワコー・買い物は一日一店以内",
+      "recall": "休日前にスーパーマーケット（ワコー）へ行き、必要な買い物をまとめる方針を思い出す。買い物はできるだけ一日一店以内で閉じ、chocoZAP以外の追加の買い物寄り道を増やさず、帰宅が遅くなり過ぎないようにする。",
+      "status": "active",
+      "retrieval_hints": [
+        "休日前",
+        "休日前夜",
+        "明日は休み",
+        "休みに備える",
+        "買い物",
+        "買物",
+        "食材の準備",
+        "ワコー",
+        "スーパーマーケット",
+        "スーパー",
+        "寄り道",
+        "一日一店",
+        "帰りが遅い",
+        "帰宅",
+        "chocoZAP"
+      ],
+      "conditions": {
+        "applies_when": [
+          "休日前の買い物・準備で思い出したい内容を尋ねた時、または休日前の準備の場面から案内する時"
+        ],
+        "do_not_assume": [
+          "今回の登録依頼そのものが今まさに休日前の買い物を始める合図",
+          "買い物・運動の実行、習慣化、帰宅時刻の改善が確認済み",
+          "ワコーの支店・所在地・営業時間、具体的な曜日・休日・商品・量・在庫",
+          "chocoZAPへ毎回行く義務、行動順や時間配分の確定",
+          "買い物が不要でも一店へ行く義務、全外出・運動の禁止",
+          "追加の店へ寄れば常に全ての価値が失われるという普遍的ルール",
+          "固定時刻の自動起動・Schedule・通知設定"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-05/task-records.json",
+          "record_id": "ark28-05-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "holiday-wako-routine",
+            "holiday-shopping-one-store",
+            "holiday-detour-late-return",
+            "holiday-wako-gym-frame",
+            "holiday-wako-portal-capture"
+          ],
+          "source_ids": [
+            "holiday-wako-s01",
+            "holiday-wako-s02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "本人の気づき・Teshuvah・帰宅の遅さを避けたい理由・明示保存依頼から作った想起用の編集要約。『買い物をまとめる』『買い物枠と運動枠の区別』はAIの整理を含み、原文と解釈は原本で分離する。activeは想起候補であり、実行・成功・自動通知の証明ではない。原本と現在のHuman Correction・Body/Sleep等のGuardを優先する。"
     },
     {
       "id": "reset-early-transition",
