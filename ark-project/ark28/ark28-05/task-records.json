@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-05-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-10-08",
   "updated": "2026-10-08",
@@ -13,10 +13,10 @@
     "canonical_path": "ark-project/ark28/ark28-05/task-records.json",
     "reported_date": "2026-10-07",
     "timezone": "Asia/Tokyo",
-    "time_note": "ワコーの方針発言は2026-10-07、Portalへの保存依頼は2026-10-08（発言時の明示されたAsia/Tokyo）。記録作成日は2026-10-08。休日の具体日、買い物の実行日時、帰宅時刻は未報告。",
+    "time_note": "ワコーの方針発言は2026-10-07、Portalへの保存依頼は2026-10-08（発言時の明示されたAsia/Tokyo）。記録作成日は2026-10-08。休日の具体日、買い物の実行日時、帰宅時刻は未報告。 revision 2では2026-10-08（Asia/Tokyo）の就寝前サプリ摂取と舌出し運動の登録依頼を追加する。就寝時刻・摂取日時・運動実施日時は未報告。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Humanは意味・Correction・STOP・Final Sealと適用Guardを保持する。今回はこの会話の休日前ワコー方針をArk Recall Portalへ保存する依頼。実際の買い物・運動・Schedule・通知・他Thread移行の承認へ拡張しない。AIと記録はKeli。",
+    "authority_note": "Humanは意味・Correction・STOP・Final Sealと適用Guardを保持する。今回はこの会話の休日前ワコー方針をArk Recall Portalへ保存する依頼。実際の買い物・運動・Schedule・通知・他Thread移行の承認へ拡張しない。AIと記録はKeli。 revision 2は、サプリ摂取と舌出し運動をArk Recall Portalへ登録する現在の明示依頼に基づく。登録を今回の就寝合図・身体Trial・具体的摂取案内・通知の承認へ拡張しない。",
     "source_access": "Ark28:05の現在の会話で直接読める本人発言。外部の会話URLやメッセージIDは未提示であり作成しない。ChatGPT長期メモリの転記ではない。"
   },
   "coverage": {
@@ -25,14 +25,16 @@
     "includes": [
       "休日前にスーパーマーケット（ワコー）へ行くルーティンの気づきとTeshuvah",
       "帰りが遅くなるという本人の理由、一日一店以内、chocoZAPを除く追加の買い物寄り道を抑える方針",
-      "Ark Recall Portalの休日前への明示保存依頼"
+      "Ark Recall Portalの休日前への明示保存依頼",
+      "就寝前のサプリ摂取と舌出し運動をArk Recall Portalへ登録する本人の明示依頼"
     ],
     "excludes": [
       "Ark28:05の会話全文・他のTeshuvah・カフェイン運用",
       "買い物や運動の実行結果、習慣化・帰宅時刻改善の証明",
-      "通知設定、常時監視、店舗情報の調査、Main移管"
+      "通知設定、常時監視、店舗情報の調査、Main移管",
+      "サプリの品名・成分・量・用法・今回の摂取状況、舌出し運動の具体的方法・回数・時間と実施結果、医学的効果"
     ],
-    "note": "本人が新しく気づいた方針と保存希望の選択記録。方針発言・保存希望の確認を、実行・成功・再現性の確認と混同しない。"
+    "note": "本人が新しく気づいた方針と保存希望の選択記録。方針発言・保存希望の確認を、実行・成功・再現性の確認と混同しない。 revision 2の二件は想起希望の登録であり、実際の摂取・運動・就寝の開始や完了とは区別する。以前の就寝前サプリ希望はArk27:04の原本に保持し、今回の発言をこのThreadの新しいSourceとして追加する。"
   },
   "sources": [
     {
@@ -52,6 +54,15 @@
       "excerpt": "取り敢えず、休日前のArk Recall Portalに記録・記憶して下さい！",
       "excerpt_kind": "verbatim_contiguous",
       "note": "今回の方針について原本とPortal項目への保存を認める現在の明示依頼。前のAI回答の全推論の実証・習慣実行・自動通知への承認ではない。"
+    },
+    {
+      "id": "bedtime-recall-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 2026-10-08（Asia/Tokyo）/ Ark Recall Portalへの就寝前項目の追加登録依頼。メッセージ固有URL・IDは未提示。",
+      "excerpt": "就寝前のサプリ摂取と舌出し運動もArk Recall Portal登録して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "二件の想起項目を保存する現在の明示依頼。現在就寝前・今回実施済み・具体的用法の確定とは扱わない。"
     }
   ],
   "nodes": [
@@ -128,6 +139,51 @@
           "holiday-wako-s02"
         ]
       }
+    },
+    {
+      "id": "bedtime-supplement-recall",
+      "kind": "practice_statement",
+      "label": "就寝前のサプリ摂取を思い出したい",
+      "description": "Humanは就寝前のサプリ摂取をArk Recall Portalに登録するよう依頼した。サプリの品名・成分・量・用法・今回の摂取状況は未提示。想起希望の保存を具体的な摂取・再摂取の案内へ変換しない。",
+      "scope": "就寝前の想起項目。Ark27:04の就寝前サプリ希望とつながる今回の明示登録依頼であり、過去の出来事の複製・医学的推奨・実施確認ではない。",
+      "time_text": "2026-10-08の登録依頼時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-tongue-exercise-recall",
+      "kind": "practice_statement",
+      "label": "就寝前の舌出し運動を思い出したい",
+      "description": "Humanは就寝前の舌出し運動をArk Recall Portalに登録するよう依頼した。運動の方法・回数・時間・強さ・目的・今回の実施状況は未提示で補完しない。",
+      "scope": "就寝前の想起希望の保持。身体Trialの開始・毎晩の義務・医学的効果の確認ではない。",
+      "time_text": "2026-10-08の登録依頼時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-portal-capture",
+      "kind": "decision",
+      "label": "サプリ摂取と舌出し運動を就寝前のPortalへ登録する",
+      "description": "Humanはサプリ摂取と舌出し運動の二件をArk Recall Portalへ追加登録するよう依頼した。既存のbedtime-care Sceneに接続し、原発言と未指定の条件を保持する。",
+      "scope": "このThreadの経験原本・既存Portal・経験索引の必要な接続更新。新しい自動通知・身体行動・他Taskを開始する権限へ拡張しない。",
+      "time_text": "2026-10-08の依頼時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
     }
   ],
   "edges": [
@@ -172,6 +228,34 @@
           "holiday-wako-s02"
         ]
       }
+    },
+    {
+      "id": "bedtime-capture-selects-supplement",
+      "from": "bedtime-portal-capture",
+      "to": "bedtime-supplement-recall",
+      "relation": "prioritizes",
+      "scope": "本人が今回の登録対象として選んだ想起項目。摂取・運動の実行順序や実施義務ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-capture-selects-tongue",
+      "from": "bedtime-portal-capture",
+      "to": "bedtime-tongue-exercise-recall",
+      "relation": "prioritizes",
+      "scope": "本人が今回の登録対象として選んだ想起項目。摂取・運動の実行順序や実施義務ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -191,6 +275,36 @@
           "holiday-wako-s02"
         ]
       }
+    },
+    {
+      "id": "bedtime-supplement-details-unknown",
+      "subject_refs": [
+        "bedtime-supplement-recall"
+      ],
+      "question": "対象サプリの品名・成分・量・用法・今回の摂取状況は未報告。",
+      "scope": "具体的な摂取案内が必要な時に扱うUnknown。今回の想起登録を止めたり、Humanへ今の再入力を要求したりしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-tongue-details-unknown",
+      "subject_refs": [
+        "bedtime-tongue-exercise-recall"
+      ],
+      "question": "舌出し運動の具体的方法・回数・時間・目的・今回の実施状況は未報告。",
+      "scope": "本人の方法や実施結果を必要な時に区別するためのUnknown。今回の登録から新しい身体Trial・課題・質問を始めない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "bedtime-recall-s01"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -202,6 +316,14 @@
         "source_refs": [
           "holiday-wako-s01",
           "holiday-wako-s02"
+        ]
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-08",
+        "change": "本人の明示依頼により、就寝前のサプリ摂取・舌出し運動の想起希望を追加。既存のワコー記録を保持し、原発言と未指定の条件を分けた。",
+        "source_refs": [
+          "bedtime-recall-s01"
         ]
       }
     ]
