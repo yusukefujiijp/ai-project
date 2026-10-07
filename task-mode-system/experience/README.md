@@ -1,14 +1,14 @@
 ---
 title: "Task Mode System — 経験とSourceの索引"
-version: "0.3.7"
+version: "0.3.8"
 status: "source-linked index / not an independent record store"
 role: "Experience discovery, coverage and provenance"
 primary_reader: "Current AI / other AI / Future AI"
-updated_reason: "Connect the later Ark28:01 bedtime foot-massage recall request and its product-label conditions to §3.9; preserve earlier sources and scopes."
+updated_reason: "Connect Ark28:05 supplement and tongue-exercise recall registrations to §3.9 and the existing Portal; preserve earlier wishes and distinguish registration from execution."
 canonical_path: "task-mode-system/experience/README.md"
 created: "2026-09-15"
-updated: "2026-10-01"
-expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.7"
+updated: "2026-10-08"
+expected_eof: "EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.8"
 ---
 
 # 経験とSourceの索引
@@ -120,6 +120,9 @@ R04の`bedtime-trigger-request`・`bedtime-braindump-correction`から、Human�
 
 2026-10-01の後続追加は、[Ark28:01経験原本](../../ark-project/ark28/ark28-01/task-records.json)（record_id `ark28-01-task-records`、確認版revision `5`）の `bedtime-foot-massage-recall`・`bedtime-foot-product-label`、Source `bedtime-foot-s01`–`bedtime-foot-s02`へ進む。就寝前のフットマッサージを思い出したい登録希望と、製品表示に合わせる条件を確認できる。[Portalの項目一覧](../../ark-recall-portal/items.json)の `bedtime-care` → `bedtime-foot-massage` からも到達できる。登録依頼と現在の就寝合図・実施・毎晩の義務・医学的効果を区別し、手元の製品の正確な名称と足の状態は未確認として扱う。
 
+
+2026-10-08の後続登録は、[Ark28:05経験原本](../../ark-project/ark28/ark28-05/task-records.json)（record_id `ark28-05-task-records`、確認版revision `2`）の `bedtime-supplement-recall`・`bedtime-tongue-exercise-recall`・`bedtime-portal-capture`、Source `bedtime-recall-s01`へ進む。[Portalの項目一覧](../../ark-recall-portal/items.json)の `bedtime-care` → `bedtime-supplement`・`bedtime-tongue-exercise` からも到達できる。サプリはR04の `bedtime-supplement`・Source `bedtime-s01` の以前の希望とつなぎ、今回の明示登録を別のSourceとして保持する。サプリの品名・成分・量・用法・今回の摂取状況、舌出し運動の方法・回数・時間・実施は未確認。登録を現在の就寝合図・摂取や再摂取の案内・身体Trial・毎晩の義務・医学的効果へ変換せず、就寝を遅らせない範囲の想起に戻す。
+
 ### 3.10 開始時の締切・選択報告・利用枠の関係を理解する
 
 R04の `start-without-closure`・`finish-deadline-working`・`start-focus-current` と `connect-s01`–`connect-s02` から、終了側のある程度の成立を背景に開始側へ重点を移し、開始時刻の設定だけでなくキリのよい完了待ちを外すCorrectionを読む。
@@ -192,4 +195,4 @@ R05の `support-before-physical-move`・`control-center-root-scope`・`support-r
 
 このフォルダ単体にはJSONと共有仕様の全実体を同梱していない。Repository内リンクやアクセス可能な原本が必要である。資料の持ち出しを設計する場合は[改訂ガイド](../maintenance.md)の配布境界を扱う。
 
-EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.7
+EOF::TASK_MODE_SYSTEM_EXPERIENCE_INDEX::v0.3.8
