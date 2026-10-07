@@ -1,11 +1,11 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 6,
+  "revision": 7,
   "updated": "2026-10-08",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼",
     "complete_project_history": false,
     "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
@@ -458,6 +458,114 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "本人の追加希望と公式製品情報から作った想起用の編集要約。activeは想起候補でありTaskの未完了・実施・義務ではない。具体的な製品使用は手元の表示とBody/Medical/Sleep Guardに合わせる。就寝前の他の希望は経験索引§3.9の原本経路も確認する。"
+    },
+    {
+      "id": "bedtime-supplement",
+      "scene_ids": [
+        "bedtime-care"
+      ],
+      "label": "就寝前のサプリ摂取",
+      "recall": "就寝前に思い出したい内容として、サプリ摂取の項目を取り出す。対象サプリの用法と今回の摂取状況が未確認のまま、具体的な摂取・再摂取を促さない。",
+      "status": "active",
+      "retrieval_hints": [
+        "就寝前",
+        "寝る前",
+        "そろそろ寝る",
+        "寝る前に何をする",
+        "寝る前に思い出すこと",
+        "サプリ",
+        "サプリ摂取",
+        "就寝前用サプリ"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Humanが就寝前に思い出したい内容を尋ねた時、または実際の就寝前の合図で想起項目として案内する時"
+        ],
+        "do_not_assume": [
+          "追加登録の依頼そのものが現在の就寝合図",
+          "サプリの品名・成分・量・用法・適否",
+          "今回の摂取済み・未摂取、他の製品や薬との併用状況",
+          "登録希望から摂取・再摂取を指示できること",
+          "毎晩の義務・医学的効果",
+          "固定時刻の自動通知・常時監視"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-05/task-records.json",
+          "record_id": "ark28-05-task-records",
+          "reviewed_revision": 2,
+          "node_ids": [
+            "bedtime-supplement-recall",
+            "bedtime-portal-capture"
+          ],
+          "source_ids": [
+            "bedtime-recall-s01"
+          ]
+        },
+        {
+          "path": "ark-project/ark27/ark27-04/task-records.json",
+          "record_id": "ark27-04:task-records",
+          "reviewed_revision": 4,
+          "node_ids": [
+            "bedtime-supplement"
+          ],
+          "source_ids": [
+            "bedtime-s01"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "今回の本人の明示登録希望と、以前の就寝前サプリ想起希望をつなぐ編集要約。activeは想起候補であり、Taskの未完了・実施確認・摂取の推奨ではない。現在のHuman Correction・Body/Medical/Sleep Guardを優先する。"
+    },
+    {
+      "id": "bedtime-tongue-exercise",
+      "scene_ids": [
+        "bedtime-care"
+      ],
+      "label": "就寝前の舌出し運動",
+      "recall": "就寝前に思い出したいケア候補として、舌出し運動を思い出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "就寝前",
+        "寝る前",
+        "そろそろ寝る",
+        "寝る前に何をする",
+        "寝る前に思い出すこと",
+        "舌出し運動",
+        "舌の運動"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Humanが就寝前に思い出したい内容を尋ねた時、または実際の就寝前の合図で案内する時"
+        ],
+        "do_not_assume": [
+          "追加登録の依頼そのものが現在の就寝合図",
+          "運動の方法・回数・時間・強さ・頻度・目的",
+          "今回の実施・習慣化・毎晩の義務",
+          "医学的効果や現在の身体に対する適否",
+          "登録から新しい身体Trialを開始する権限",
+          "固定時刻の自動通知・常時監視"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark28/ark28-05/task-records.json",
+          "record_id": "ark28-05-task-records",
+          "reviewed_revision": 2,
+          "node_ids": [
+            "bedtime-tongue-exercise-recall",
+            "bedtime-portal-capture"
+          ],
+          "source_ids": [
+            "bedtime-recall-s01"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "本人の追加登録希望から作った想起用の編集要約。activeは想起候補であり、Taskの未完了・実施・義務・医学的効果ではない。未指定の運動方法は補完せず、現在のHuman Correction・Body/Medical/Sleep Guardを優先する。"
     },
     {
       "id": "commute-neck-towel",
