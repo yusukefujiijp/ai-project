@@ -1,0 +1,209 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark28-05-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-08",
+  "updated": "2026-10-08",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark28:05",
+    "canonical_path": "ark-project/ark28/ark28-05/task-records.json",
+    "reported_date": "2026-10-07",
+    "timezone": "Asia/Tokyo",
+    "time_note": "ワコーの方針発言は2026-10-07、Portalへの保存依頼は2026-10-08（発言時の明示されたAsia/Tokyo）。記録作成日は2026-10-08。休日の具体日、買い物の実行日時、帰宅時刻は未報告。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Humanは意味・Correction・STOP・Final Sealと適用Guardを保持する。今回はこの会話の休日前ワコー方針をArk Recall Portalへ保存する依頼。実際の買い物・運動・Schedule・通知・他Thread移行の承認へ拡張しない。AIと記録はKeli。",
+    "source_access": "Ark28:05の現在の会話で直接読める本人発言。外部の会話URLやメッセージIDは未提示であり作成しない。ChatGPT長期メモリの転記ではない。"
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "休日前にスーパーマーケット（ワコー）へ行くルーティンの気づきとTeshuvah",
+      "帰りが遅くなるという本人の理由、一日一店以内、chocoZAPを除く追加の買い物寄り道を抑える方針",
+      "Ark Recall Portalの休日前への明示保存依頼"
+    ],
+    "excludes": [
+      "Ark28:05の会話全文・他のTeshuvah・カフェイン運用",
+      "買い物や運動の実行結果、習慣化・帰宅時刻改善の証明",
+      "通知設定、常時監視、店舗情報の調査、Main移管"
+    ],
+    "note": "本人が新しく気づいた方針と保存希望の選択記録。方針発言・保存希望の確認を、実行・成功・再現性の確認と混同しない。"
+  },
+  "sources": [
+    {
+      "id": "holiday-wako-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 2026-10-07（Asia/Tokyo）/ 休日前スーパーマーケット（ワコー）のルーティンの気づきとGraph Modeによる言語化依頼",
+      "excerpt": "休日前スーパーマーケット(ワコー)へ行くというルーティンを入れる良い事に気付いた！\n今迄、全く一切、気付かず主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！\nという事は、chocoZAP以外他の買い物寄り道はしない事が重要です！\nなぜなら、帰りが遅くなので、できるだけ一日一店以内に抑えるべきだからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "現在の会話からの連続した原文抜粋。誤字と思われる『帰りが遅くなので』も原文のまま保持する。本人のTeshuvahは信仰表現として記録し、AIによる信仰評価へ変換しない。"
+    },
+    {
+      "id": "holiday-wako-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 2026-10-08（Asia/Tokyo）/ 前の整理への応答とArk Recall Portalへの保存依頼",
+      "excerpt": "取り敢えず、休日前のArk Recall Portalに記録・記憶して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "今回の方針について原本とPortal項目への保存を認める現在の明示依頼。前のAI回答の全推論の実証・習慣実行・自動通知への承認ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "holiday-wako-routine",
+      "kind": "practice_statement",
+      "label": "休日前にワコーへ行くルーティン",
+      "description": "Humanは休日前にスーパーマーケット（ワコー）へ行くルーティンを入れる良さに気づき、主イェシュアへのTeshuvahとして述べた。これは今後の方針の気づきであり、実行済み・習慣化済みとの報告ではない。",
+      "scope": "休日前の買い物・準備。具体的な休日・曜日・店舗支店・買う品物は未指定。",
+      "time_text": "2026-10-07の発言時点",
+      "place_text": "スーパーマーケット（ワコー）。所在地・支店は未指定。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s01"
+        ]
+      }
+    },
+    {
+      "id": "holiday-shopping-one-store",
+      "kind": "constraint",
+      "label": "買い物はできるだけ一日一店以内",
+      "description": "Humanは帰りが遅くなるため、買い物をできるだけ一日一店以内に抑え、chocoZAP以外の追加の買い物寄り道をしないことを重視した。chocoZAPの立ち寄りは残す意味として扱い、ワコーを既存の買い物先すべてに上乗せする理解にしない。",
+      "scope": "本人が示した買い物の原則。全外出禁止・運動禁止・必ず毎日一店行く義務・chocoZAPの毎回必須化ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s01"
+        ]
+      }
+    },
+    {
+      "id": "holiday-detour-late-return",
+      "kind": "observation",
+      "label": "買い物寄り道による帰宅の遅れを避けたい",
+      "description": "Humanは買い物先を抑える理由として『帰りが遅くなので』と説明した。帰宅時刻・遅れの大きさ・頻度や、ルーティン導入後の変化は未報告。",
+      "scope": "本人の問題理解と理由。独立した時間測定や医学的影響の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s01"
+        ]
+      }
+    },
+    {
+      "id": "holiday-wako-gym-frame",
+      "kind": "interpretation",
+      "label": "一店は買い物枠、chocoZAPは運動枠という読み",
+      "description": "一日一店を買い物先の上限として読み、chocoZAPは運動として別枠に保持する。ただし運動時間も一日の時間を使うので、店数だけを守れば帰宅が早まるとは断定しない。",
+      "scope": "2026-10-07のHuman原文に対するAIの整理。全日程の行動順・時間配分の確定ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "holiday-wako-s01"
+        ],
+        "note": "『chocoZAP以外』『買い物寄り道』『一日一店以内』からの解釈。Humanの現在の訂正を優先し、本人の逐語表現とは区別する。"
+      }
+    },
+    {
+      "id": "holiday-wako-portal-capture",
+      "kind": "decision",
+      "label": "休日前のArk Recall Portalへ記録する",
+      "description": "Humanはこの方針を休日前のArk Recall Portalに記録・記憶するよう依頼した。保存対象は方針と想起項目であり、実際の行動や通知の自動開始ではない。",
+      "scope": "2026-10-08の保存依頼。経験原本と既存Portalの休日前Sceneへの接続。",
+      "time_text": "2026-10-08の依頼時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s02"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "late-return-motivates-one-store",
+      "from": "holiday-detour-late-return",
+      "to": "holiday-shopping-one-store",
+      "relation": "motivates",
+      "scope": "Humanが帰りの遅さを一日一店以内とする理由として説明した。方針の実効性の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s01"
+        ]
+      }
+    },
+    {
+      "id": "wako-routine-contains-shopping-bound",
+      "from": "holiday-wako-routine",
+      "to": "holiday-shopping-one-store",
+      "relation": "contains",
+      "scope": "休日前のワコーへのルーティンと、追加の買い物寄り道を抑える方針を一件として想起する。毎回の強制命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s01"
+        ]
+      }
+    },
+    {
+      "id": "portal-capture-prioritizes-wako-recall",
+      "from": "holiday-wako-portal-capture",
+      "to": "holiday-wako-routine",
+      "relation": "prioritizes",
+      "scope": "現在の保存依頼がこの方針を休日前の想起項目として選択した。購入の実行優先順位や完了を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "holiday-wako-s02"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "holiday-wako-actual-result",
+      "subject_refs": [
+        "holiday-wako-routine",
+        "holiday-shopping-one-store"
+      ],
+      "question": "この方針を実際に使った結果、必要な買い物と帰宅後の時間がどう変わったかは未報告。",
+      "scope": "保存時点の未確認事項。質問・記録・試行をHumanへ新しいTaskとして課さない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "holiday-wako-s01",
+          "holiday-wako-s02"
+        ]
+      }
+    }
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-08",
+        "change": "現在のHuman保存依頼により、休日前ワコー方針の原発言と想起の成立条件を初回選択収録。旧Thread原本を複製せず、このThreadの原本を新設。",
+        "source_refs": [
+          "holiday-wako-s01",
+          "holiday-wako-s02"
+        ]
+      }
+    ]
+  }
+}
