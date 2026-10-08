@@ -1,13 +1,14 @@
 ---
 title: "Ark00-01: Pickup Threads"
-version: "v001"
+version: "v002"
 created: "2026-10-03"
-updated: "2026-10-03"
+updated: "2026-10-08"
 canonical_path: "ark-project/ark00-01/README.md"
 role: "Pickup Threads Project entry / purpose and source guide"
 scope: "Ark00-01: Pickup Threads"
 instructions_file: "INSTRUCTIONS.md"
-authority: "Human approved the README, instructions backup, and one parent-router entry on 2026-10-03 JST"
+authority: "Human approved the initial Project backup on 2026-10-03 JST and the Ark00-01:02 to :03 continuation preparation on 2026-10-08 JST"
+updated_reason: "足部学習のSource Thread名訂正と継続先の入口を追加。Project指示本文は変更しない"
 ---
 
 # Ark00-01: Pickup Threads
@@ -63,8 +64,16 @@ GitHub上の参照原本とChatGPT側の添付ファイルは別の実体であ�
 
 指示本文の改訂が必要になった場合は、Humanの訂正・依頼と承認範囲に沿って`INSTRUCTIONS.md`を更新する。READMEには必要な変更理由と資料案内を残し、本文を二重管理しない。旧版と変更差分はGit履歴で辿れる。GitHub保存後はRemoteから再取得し、本文とリンクを確認する。
 
-## 5. Ark全体への接続
+## 5. 足部学習のThread継続
+
+- **Source / Ark00-01:02**：`Ark00-01:02_2026/10/03; 足底アーチ形成改善とモビライゼージョン学習`。Humanが2026-10-08に「形成」を加えて訂正した正式名。成果の本文は [足部・足関節の学習記録](../../chocozap/artifacts/foot-ankle-mobilization-learning.md)が所有する。
+- **継続先 / Ark00-01:03**：`Ark00-01:03_2026/10/08; "足底アーチ形成改善: モビライゼージョン学習の継続"`。移行準備計画への実行承認に基づく名称。[Handoff](ark00-01-03/handoff.md)を受入れ入口とし、[README](ark00-01-03/README.md)が協働条件、[State](ark00-01-03/state.json)が可変の現在地・準備と受入れの観測を所有する。
+
+`:02 → :03`は同じ足部学習の継続であり、新しいMain章や支援ペアの立ち上げではない。`:00`・`:01`の整備は後日扱い、今回の再開の前提にしない。資料準備・Remote確認・Target自身の再構成・HumanのUI操作・身体や学習の実際の結果を区別する。
+
+## 6. Ark全体への接続
 
 [Ark全体の入口](../README.md)、[AGENTS.md](../../AGENTS.md)、[ARK.md](../../ARK.md)へ接続する。参照先を列挙したことだけで、全件を毎回答の追加読込にしない。現在の依頼と適用される読取契約に従う。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・Project・文書はKeliとして、Humanの意味・Correction・STOP・Final Sealと適用Guardを保持する。
+

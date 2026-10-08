@@ -1,10 +1,10 @@
 ---
 title: 足部・足関節モビライゼーションの学習記録――骨のつながり・把持・相対運動・観察
-version: v001
+version: v002
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-08
 timezone: Asia/Tokyo
-canonical_path: chocozap/foot-ankle-mobilization-learning.md
+canonical_path: chocozap/artifacts/foot-ankle-mobilization-learning.md
 document_role: learning-and-discovery-record
 status: active
 human: YusukeJP
@@ -12,6 +12,10 @@ compiled_by: ChatGPT
 primary_readers: Current AI / Other AI / Future AI
 source_scope: この会話で確認できる本人発言・引用された過去回答・今回確認した公開資料
 source_thread_url: null
+source_thread_id: Ark00-01:02
+source_thread_title: "Ark00-01:02_2026/10/03; 足底アーチ形成改善とモビライゼージョン学習"
+source_thread_title_confirmed_on: 2026-10-08
+continuation_handoff: ../../ark-project/ark00-01/ark00-01-03/handoff.md
 experience_dates: 未特定。作成日を過去の体験日に転用しない
 medical_status: 学習記録。個別診断・治療効果の認定ではない
 ---
@@ -470,8 +474,10 @@ AIによる候補モデルは、**曖昧な対象を具体化する → 取り�
 
 ## 15. 更新履歴と再利用条件
 
+- **2026-10-08／v002／ChatGPT**：YusukeJPが「足底アーチ改善」を「足底アーチ形成改善」へ訂正し、Ark00-01:02から:03への移行準備計画を実行承認した。訂正後のSource Thread名と継続先を接続し、既に移動済みの現行パス・親READMEへのリンクを整えた。学習本文§1–14、本人の体験・訂正、解剖学と出典は変更していない。新たな身体実験や医学的再評価の実施記録ではない。
 - **2026-10-06／v001／ChatGPT**：YusukeJPのPlan Mode後のGitHub実行承認に基づき作成。本人報告・重要訂正・解剖学・把持と相対運動・遊びと観察・未回答だった距腿関節周辺の問いを一つの学習記録に整理。立方骨に関する解剖学的個体差を追加確認。過去のランキングや未確認の治療効果は補完していない。
 - 本文の本人報告はこの会話の出所に結び付く。後日の追加・訂正では出所と違いを残し、当時の体験を新たな実施報告へ変換しない。
-- 所属する記録の案内は [chocozap/README.md](README.md)。Sweet Spotの重量実データは同ディレクトリの別記録が所有し、この文書は学習・発見の記録を所有する。
+- 所属する記録の案内は [chocozap/README.md](../README.md)。Sweet Spotの重量実データは [sweet-spots.json](../sweet-spots.json)が所有し、この文書は学習・発見の記録を所有する。Thread継続は [Ark00-01:03 Handoff](../../ark-project/ark00-01/ark00-01-03/handoff.md)から再開する。
 
-EOF::FOOT_ANKLE_MOBILIZATION_LEARNING::v001
+EOF::FOOT_ANKLE_MOBILIZATION_LEARNING::v002
+

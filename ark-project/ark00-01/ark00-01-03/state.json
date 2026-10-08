@@ -1,0 +1,195 @@
+{
+  "version": "v001",
+  "revision": 1,
+  "role": "Ark00-01:03 thread-local current state and evidence",
+  "canonical_path": "ark-project/ark00-01/ark00-01-03/state.json",
+  "updated": "2026-10-08",
+  "timezone": "Asia/Tokyo",
+  "source": {
+    "id": "Ark00-01:02",
+    "title": "Ark00-01:02_2026/10/03; 足底アーチ形成改善とモビライゼージョン学習",
+    "title_authority": "2026-10-08 JSTのHuman明示訂正",
+    "thread_url": null
+  },
+  "target": {
+    "id": "Ark00-01:03",
+    "title": "Ark00-01:03_2026/10/08; \"足底アーチ形成改善: モビライゼージョン学習の継続\"",
+    "title_authority": "2026-10-08 JSTに提示した移行計画へのHuman実行承認の範囲で採用",
+    "thread_url": null,
+    "transition_kind": "THREAD_CONTINUE"
+  },
+  "mission": "足底アーチをどう形作り保持・調整するかを中心に、骨の位置・把持・基準側と操作側・相対運動・観察の理解を現在の問いから深める。",
+  "current_position": {
+    "phase": "source_preparation",
+    "source_learning_record": "chocozap/artifacts/foot-ankle-mobilization-learning.md",
+    "handoff": "ark-project/ark00-01/ark00-01-03/handoff.md",
+    "readme": "ark-project/ark00-01/ark00-01-03/README.md",
+    "latest_anatomy_topic": "距骨と脛骨・腓骨の関節関係、それぞれへのアプローチ、踵骨との関係",
+    "topic_status": "学習記録§10に保存時の追加説明あり。本人の実践・成功の報告ではない。未回答へ巻き戻さない。",
+    "next_learning_question": null,
+    "next_learning_question_status": "Targetへ届く最新のHuman入力から解決。既存の問いがあれば再入力を要求しない。",
+    "first_legal_move": "Handoffが宣言する必要読解と再構成を行い、最新のHumanの問い・報告があれば応答する。起動のみなら復元した目的・重要訂正・再開点を示す。",
+    "current_body_state": "Unknown。過去のchocoZAPマット上の報告から現在の症状・姿勢・場所を補わない。"
+  },
+  "authority": {
+    "source_authorization_date": "2026-10-08",
+    "scope": "承認された移行三資料、Project入口、足部学習記録の出所・所在・参照修正、保存と検証",
+    "source_authorization_evidence": "Source Threadで計画提示後、HumanがExecute GitHub OK・実行して下さいと明示",
+    "precedence": "最新のHuman入力・Correction・STOPと適用Host・Repository指示を優先。Sourceの承認を別対象へ自動拡張しない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光",
+    "human_authority": "Meaning・Priority・現在の身体Reality・Correction・STOP・Final Seal",
+    "guard": "Truth・Body・Sleep・Food・Shabbat・Safety・Medical・Others・Law・Responsibility"
+  },
+  "material_corrections": [
+    {
+      "id": "title-formation",
+      "meaning": "Source名には『形成』を含む。旧名へ戻さない。",
+      "source": "本Handoff§1 / 2026-10-08 Human訂正"
+    },
+    {
+      "id": "medial-cuneiform-key",
+      "meaning": "内側楔状骨は学習上のKey。慢性不調の主因と断定した発言ではない。",
+      "source": "学習記録§1.2"
+    },
+    {
+      "id": "foot-learning-focus",
+      "meaning": "信仰的な意味を尊重し、足底アーチ・足部構造の学習へ集中する。",
+      "source": "学習記録§1.2 / Source ThreadのHuman訂正"
+    },
+    {
+      "id": "no-prerequisite-00-01",
+      "meaning": ":00・:01整備は後日。:03開始の前提にしない。",
+      "source": "本Handoff§1"
+    },
+    {
+      "id": "evidence-and-completion",
+      "meaning": "本人報告、資料確認、AI解釈、Unknown、保存、Target読解、実生活の効果を区別する。",
+      "source": "学習記録§1・§12 / 共通移行契約"
+    }
+  ],
+  "retained_findings": [
+    {
+      "meaning": "舟状骨・内側楔状骨を甲側と足底側から捉える発想と、試した際の動きの変化の感覚",
+      "evidence": "Human-reported",
+      "source": "学習記録§2・§12"
+    },
+    {
+      "meaning": "第5中足骨と立方骨の取り違え、および窪みから甲側への探索方向の説明が役立った",
+      "evidence": "Human-reported",
+      "source": "学習記録§2・§5"
+    },
+    {
+      "meaning": "基準側・操作側・追随・相対運動という観察点の言語化が理解を進めた",
+      "evidence": "Human-reported / AI interpretation distinguished in record",
+      "source": "学習記録§6–8・§12"
+    },
+    {
+      "meaning": "〈読み・英語・平易な説明〉と具体例、必要時の学習優先順位を本人が評価した",
+      "evidence": "Human-reported",
+      "source": "本Handoff§3.5 / 学習記録§12"
+    }
+  ],
+  "open_questions": [
+    {
+      "subject": "個別の解剖・症状原因・どの骨がどれだけ動いたか・効果の持続",
+      "status": "Unknown",
+      "treatment": "医学的効果や原因を補完しない。必要な問いが来たときに適切な評価と根拠へ接続する。"
+    },
+    {
+      "subject": "横アーチの個別練習でなお不明な点、過去ランキング全文",
+      "status": "Unknown / source-limited",
+      "treatment": "本人の最新の問いを優先し、見えない過去回答や順位を再創作しない。"
+    }
+  ],
+  "deferred_branches": [
+    {
+      "subject": "Ark00-01:00・:01整備",
+      "reason": "Human明示の後日扱い",
+      "blocks_current_continuation": false
+    },
+    {
+      "subject": "独立したsuccess-cases作成",
+      "reason": "成功評価と形成理由は学習記録に保存。別記事への切出しは今回の範囲外",
+      "source": "学習記録§12.3",
+      "blocks_current_continuation": false
+    },
+    {
+      "subject": "markdown-to-htmlの追加改善",
+      "reason": "Sourceで派生した成果と方針をHandoff§4に保持。現在の主題は足部学習",
+      "blocks_current_continuation": false
+    },
+    {
+      "subject": "観察と量子力学、吸盤・芋虫・骨のしなりの比喩",
+      "reason": "着想と体感の表現として保持。医学的機序の実証へ転換しない",
+      "source": "学習記録§4・§12",
+      "blocks_current_continuation": false
+    }
+  ],
+  "evidence": {
+    "source_base_commit": "cea474eeefeba263a3ac1eb26c83e368d26771ec",
+    "historical_learning_record": {
+      "path": "chocozap/artifacts/foot-ankle-mobilization-learning.md",
+      "version": "v001",
+      "blob": "62bafd627b480ffa2e5919cdf457dc20d61605e5",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/cea474eeefeba263a3ac1eb26c83e368d26771ec/chocozap/artifacts/foot-ankle-mobilization-learning.md",
+      "current_update_scope": "v002は出所・所在・更新履歴のみ。§1–14の学習本文を保持。"
+    },
+    "shared_contract_receipt": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "observed_version": "v003-human-authorized",
+      "observed_blob": "95ba8491d893580336fdb702ba9d036c24e7706a",
+      "beginning_identity": "AI Next Thread Handoff / prompts/ai-next-thread-handoff.md / v003-human-authorized",
+      "exact_eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized",
+      "source_reader": "Source Thread AI",
+      "read_status": "Full read in Source context; current exact blob rechecked",
+      "target_reader_status": "Not observed; Target must meet its own reading contract"
+    },
+    "project_sources": [
+      {
+        "path": "ark-project/ark00-01/INSTRUCTIONS.md",
+        "observed_blob": "faf50401447a01f0cb90482c378c70437b25a026"
+      },
+      {
+        "path": "prompts/ai-living-graph-mode.md",
+        "observed_blob": "45b0d379990f5807d9eecb3a0b7a6ee2d0b342d1",
+        "attachment_identity": "exact blob match at source preparation"
+      },
+      {
+        "path": "prompts/ai-one-table-interface.md",
+        "observed_blob": "06be18a426b4611a324fea85f1161176c3e130d0",
+        "attachment_identity": "exact blob match at source preparation"
+      },
+      {
+        "path": "prompts/long-form-response-rhythm.md",
+        "observed_blob": "61e42b69c579904f7563a56a943ebb4e6ab1e01e",
+        "attachment_identity": "exact blob match at source preparation"
+      }
+    ]
+  },
+  "completion": {
+    "source_prepared": {
+      "status": "prepared",
+      "evidence": "Source AIが六ファイルを構築し、名称・Identity・EOF・JSON・Markdown YAMLを照合。内部リンク38件の参照先を確認。学習記録§1–14と出典24件の保持を確認。Target本人の読解ではない。"
+    },
+    "remote_verified": {
+      "status": "pending",
+      "publication_commit": null,
+      "verified_files": []
+    },
+    "target_reconstructed": {
+      "status": "not_observed",
+      "evidence": null
+    },
+    "human_last_mile": {
+      "status": "not_observed",
+      "remaining": "新Threadを作成・命名し、提示される起動文で接続する。UI操作を保存完了から推定しない。"
+    },
+    "requested_learning_outcome": {
+      "status": "ongoing / next-thread continuation not yet observed",
+      "evidence": "Sourceの好結果は本人報告として保存済み。Targetでの学習継続と身体の効果は別に観測する。"
+    }
+  }
+}
