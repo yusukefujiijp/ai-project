@@ -1,242 +1,481 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "timezone": "Asia/Tokyo",
-  "days": {
-    "2026-09-24": {
-      "visits": [
+  "migration": {
+    "from_schema_version": 1,
+    "on": "2026-10-08",
+    "source_commit": "fbb65d3eeabec389e635c97451f041f566848f5e",
+    "source_blob": "86bb4783021d7325c7c00999b308f4b7cb9a7818",
+    "note": "days/visitsをrecordsへ移行。全ID・原文・数値・系列・訂正を保持。legacy_dayは旧分類であり実施日の証明ではない。cz-visit-*は互換性のため保持した記録IDで、来館の認定ではない。"
+  },
+  "records": [
+    {
+      "id": "cz-visit-0001",
+      "reporter": "YusukeJP",
+      "created_at": "2026-09-24T12:03:25Z",
+      "recorded_by": "AI assistant",
+      "date_source": "S05",
+      "spots": [
         {
-          "id": "cz-visit-0001",
-          "reporter": "YusukeJP",
-          "created_at": "2026-09-24T12:03:25Z",
-          "recorded_by": "AI assistant",
-          "date_source": "S05",
-          "spots": [
-            {"id":"O001","machine":"レッグプレス","mode":"片足","kg":60,"source":"S01"},
-            {"id":"O002","machine":"ラットプルダウン","mode":"片手","kg":15,"source":"S02"},
-            {"id":"O003","machine":"ラットプルダウン","mode":"両手","kg":30,"source":"S02"},
-            {"id":"O004","machine":"チェストプレス","mode":"片手 縦","kg":25,"source":"S03"},
-            {"id":"O005","machine":"チェストプレス","mode":"片手 横","kg":25,"source":"S03"},
-            {"id":"O006","machine":"ショルダープレス","mode":"片手","kg":10,"source":"S06"}
-          ],
-          "corrections": [
-            {"id":"C01","target":"O006","field":"kg","from":5,"to":10,"previous_source":"S04","source":"S06"}
-          ],
-          "feedback": [
-            {"source":"S06","about":"C01"}
-          ],
-          "sources": {
-            "S01": {"text":"レッグプレス: 片足 60kg"},
-            "S02": {"text":"ラットプルダウン:\n片手 15kg\n両手 30kg"},
-            "S03": {"text":"チェストプレス\n片手 縦 25kg\n片手 横 25kg"},
-            "S04": {"text":"ショルダープレス\n片手 5kg"},
-            "S05": {"text":"日付合ってるので登録して下さい！","context":"AIが「この6条件は、今日2026/09/24に見つけたSweet Spotという理解で合っていますか？」と確認した返答。"},
-            "S06": {"text":"ショルダープレスは\n片手 10kgの間違いでした！\n\nしかし、これはとても良いtestです！\n間違えた場合の訂正としてとても良い実地Sampleです！"}
-          }
+          "id": "O001",
+          "machine": "レッグプレス",
+          "mode": "片足",
+          "kg": 60,
+          "source": "S01",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O002",
+          "machine": "ラットプルダウン",
+          "mode": "片手",
+          "kg": 15,
+          "source": "S02",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O003",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 30,
+          "source": "S02",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O004",
+          "machine": "チェストプレス",
+          "mode": "片手 縦",
+          "kg": 25,
+          "source": "S03",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O005",
+          "machine": "チェストプレス",
+          "mode": "片手 横",
+          "kg": 25,
+          "source": "S03",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O006",
+          "machine": "ショルダープレス",
+          "mode": "片手",
+          "kg": 10,
+          "source": "S06",
+          "report_kind": "observation"
         }
-      ]
+      ],
+      "corrections": [
+        {
+          "id": "C01",
+          "target": "O006",
+          "field": "kg",
+          "from": 5,
+          "to": 10,
+          "previous_source": "S04",
+          "source": "S06"
+        }
+      ],
+      "feedback": [
+        {
+          "source": "S06",
+          "about": "C01"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "レッグプレス: 片足 60kg"
+        },
+        "S02": {
+          "text": "ラットプルダウン:\n片手 15kg\n両手 30kg"
+        },
+        "S03": {
+          "text": "チェストプレス\n片手 縦 25kg\n片手 横 25kg"
+        },
+        "S04": {
+          "text": "ショルダープレス\n片手 5kg"
+        },
+        "S05": {
+          "text": "日付合ってるので登録して下さい！",
+          "context": "AIが「この6条件は、今日2026/09/24に見つけたSweet Spotという理解で合っていますか？」と確認した返答。",
+          "reported_date": "2026-09-24"
+        },
+        "S06": {
+          "text": "ショルダープレスは\n片手 10kgの間違いでした！\n\nしかし、これはとても良いtestです！\n間違えた場合の訂正としてとても良い実地Sampleです！"
+        }
+      },
+      "legacy_day": "2026-09-24",
+      "observed_date": "2026-09-24",
+      "reported_date": "2026-09-24",
+      "date_basis": "S05が2026-09-24を『今日見つけた』日として確認。created_atから実施日を推定していない。",
+      "reference_scope": "current"
     },
-    "2026-09-27": {
-      "visits": [
+    {
+      "id": "cz-visit-0002",
+      "reporter": "YusukeJP",
+      "created_at": "2026-09-27T10:55:11.532Z",
+      "recorded_by": "AI assistant",
+      "date_source": "S01",
+      "start_time": {
+        "time": "19:00",
+        "approximate": true,
+        "source": "S01"
+      },
+      "spots": [],
+      "sequences": [
         {
-          "id": "cz-visit-0002",
-          "reporter": "YusukeJP",
-          "created_at": "2026-09-27T10:55:11.532Z",
-          "recorded_by": "AI assistant",
-          "date_source": "S01",
-          "start_time": {"time":"19:00","approximate":true,"source":"S01"},
-          "spots": [],
-          "sequences": [
-            {"id":"O001","machine":"レッグプレス","kg_sequence":[60,55,50],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O002","machine":"ラットプルダウン","mode":"両手","kg_sequence":[30,25,20],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O003","machine":"ラットプルダウン","mode":"片手","kg_sequence":[15,10,5],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O004","machine":"チェストプレス","mode":"両手","kg_sequence":[50,45,40,35,30],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O005","machine":"チェストプレス","mode":"片手","kg_sequence":[25,20,15,10,5],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O006","machine":"ショルダープレス","mode":"両手","kg_sequence":[20,15],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O007","machine":"ショルダープレス","mode":"片手","kg_sequence":[10,5],"source":"S01","sweet_spot_source":"S02"},
-            {"id":"O008","label":"三頭筋","kg_sequence":[65,60,55,50],"source":"S01","sweet_spot_source":"S02","machine":"ディップス","machine_source":"S03"}
+          "id": "O001",
+          "machine": "レッグプレス",
+          "kg_sequence": [
+            60,
+            55,
+            50
           ],
-          "corrections": [
-            {"id":"C01","target":"O008","field":"machine","from":null,"to":"ディップス","previous_source":"S01","source":"S03"}
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation"
+        },
+        {
+          "id": "O002",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg_sequence": [
+            30,
+            25,
+            20
           ],
-          "sources": {
-            "S01": {"text":"2026/09/27 19:00頃から\n レッグプレス 60kg→55kg→50kg ドロップダウンで\n\nラットプルダウン \n両手30kg→25kg→20kgドロップダウン\n片手15→10→5kg\n\nチェストプレス 両手50kgを追加し\n両手50→45→40→35→30\n片手25 20 15 10 5\n\nショルダープレス \n両手20kg→15kg\n片手10kg→5kg\n\n三頭筋\n65kg→60 55 50kg"},
-            "S02": {"text":"そうですね！(That's right!)\nSweet Spot自体は変わらず\nSweet Spotからドロップダウンし\n両手→片手で\n片手のSweet Spotの重量になったら両手から片手に切り替えています！"},
-            "S03": {"text":"三頭筋のマシンは正確には、ディップスでした！","context":"2026-10-01（Asia/Tokyo）の訂正報告の冒頭部分。続く最新Sweet Spotの原文はcz-visit-0005/S01に保存。O008のmachineを特定し、元のlabel・重量系列・その出所は保持。machine_sourceは名称訂正の出所。過去の使い方は未報告のまま。"}
-          },
-          "feedback": [
-            {"source":"S02"}
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0001/O003"
+        },
+        {
+          "id": "O003",
+          "machine": "ラットプルダウン",
+          "mode": "片手",
+          "kg_sequence": [
+            15,
+            10,
+            5
           ],
-          "transitions": [
-            {"from":"O002","to":"O003","at":"to_sweet_spot","source":"S02"},
-            {"from":"O004","to":"O005","at":"to_sweet_spot","source":"S02"},
-            {"from":"O006","to":"O007","at":"to_sweet_spot","source":"S02"}
-          ]
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0001/O002"
+        },
+        {
+          "id": "O004",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg_sequence": [
+            50,
+            45,
+            40,
+            35,
+            30
+          ],
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation"
+        },
+        {
+          "id": "O005",
+          "machine": "チェストプレス",
+          "mode": "片手",
+          "kg_sequence": [
+            25,
+            20,
+            15,
+            10,
+            5
+          ],
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation"
+        },
+        {
+          "id": "O006",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg_sequence": [
+            20,
+            15
+          ],
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation"
+        },
+        {
+          "id": "O007",
+          "machine": "ショルダープレス",
+          "mode": "片手",
+          "kg_sequence": [
+            10,
+            5
+          ],
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0001/O006"
+        },
+        {
+          "id": "O008",
+          "label": "三頭筋",
+          "kg_sequence": [
+            65,
+            60,
+            55,
+            50
+          ],
+          "source": "S01",
+          "sweet_spot_source": "S02",
+          "machine": "ディップス",
+          "machine_source": "S03",
+          "report_kind": "reaffirmation"
         }
-      ]
+      ],
+      "corrections": [
+        {
+          "id": "C01",
+          "target": "O008",
+          "field": "machine",
+          "from": null,
+          "to": "ディップス",
+          "previous_source": "S01",
+          "source": "S03",
+          "reported_date": "2026-10-01"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "2026/09/27 19:00頃から\n レッグプレス 60kg→55kg→50kg ドロップダウンで\n\nラットプルダウン \n両手30kg→25kg→20kgドロップダウン\n片手15→10→5kg\n\nチェストプレス 両手50kgを追加し\n両手50→45→40→35→30\n片手25 20 15 10 5\n\nショルダープレス \n両手20kg→15kg\n片手10kg→5kg\n\n三頭筋\n65kg→60 55 50kg"
+        },
+        "S02": {
+          "text": "そうですね！(That's right!)\nSweet Spot自体は変わらず\nSweet Spotからドロップダウンし\n両手→片手で\n片手のSweet Spotの重量になったら両手から片手に切り替えています！"
+        },
+        "S03": {
+          "text": "三頭筋のマシンは正確には、ディップスでした！",
+          "context": "2026-10-01（Asia/Tokyo）の訂正報告の冒頭部分。続く最新Sweet Spotの原文はcz-visit-0005/S01に保存。O008のmachineを特定し、元のlabel・重量系列・その出所は保持。machine_sourceは名称訂正の出所。過去の使い方は未報告のまま。",
+          "reported_date": "2026-10-01"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S02"
+        }
+      ],
+      "transitions": [
+        {
+          "from": "O002",
+          "to": "O003",
+          "at": "to_sweet_spot",
+          "source": "S02"
+        },
+        {
+          "from": "O004",
+          "to": "O005",
+          "at": "to_sweet_spot",
+          "source": "S02"
+        },
+        {
+          "from": "O006",
+          "to": "O007",
+          "at": "to_sweet_spot",
+          "source": "S02"
+        }
+      ],
+      "legacy_day": "2026-09-27",
+      "observed_date": "2026-09-27",
+      "reported_date": null,
+      "date_basis": "S01が実施日を明記。元データには当初の発言日を独立に確定する情報がないためreported_dateは未確認。S03の名称訂正の報告日は2026-10-01。",
+      "reference_scope": "current"
     },
-    "2026-09-28": {
-      "visits": [
+    {
+      "id": "cz-visit-0003",
+      "reporter": "YusukeJP",
+      "created_at": "2026-09-28T11:05:27.116Z",
+      "recorded_by": "AI assistant",
+      "spots": [
         {
-          "id": "cz-visit-0003",
-          "reporter": "YusukeJP",
-          "created_at": "2026-09-28T11:05:27.116Z",
-          "recorded_by": "AI assistant",
-          "spots": [
-            {
-              "id": "O001",
-              "machine": "レッグプレス",
-              "mode": "片足",
-              "kg": 70,
-              "source": "S01"
-            }
-          ],
-          "sources": {
-            "S01": {
-              "text": "OK！Very Good! \nレッグプレス\n片足 70kgになった！\n修正して下さい！",
-              "context": "2026-09-28（Asia/Tokyo）の現在のSweet Spot更新報告として記録。「70kgになった」を新しい観察として扱い、過去日の60kgは保持。実施時刻・周回・下降系列は未報告。"
-            }
-          }
+          "id": "O001",
+          "machine": "レッグプレス",
+          "mode": "片足",
+          "kg": 70,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0001/O001"
         }
-      ]
+      ],
+      "sources": {
+        "S01": {
+          "text": "OK！Very Good! \nレッグプレス\n片足 70kgになった！\n修正して下さい！",
+          "context": "2026-09-28（Asia/Tokyo）の現在のSweet Spot更新報告として記録。「70kgになった」を新しい観察として扱い、過去日の60kgは保持。実施時刻・周回・下降系列は未報告。"
+        }
+      },
+      "legacy_day": "2026-09-28",
+      "observed_date": null,
+      "reported_date": "2026-09-28",
+      "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
+      "reference_scope": "current"
     },
-    "2026-09-30": {
-      "visits": [
+    {
+      "id": "cz-visit-0004",
+      "reporter": "YusukeJP",
+      "created_at": "2026-09-30T11:35:28.385Z",
+      "recorded_by": "AI assistant",
+      "spots": [
         {
-          "id": "cz-visit-0004",
-          "reporter": "YusukeJP",
-          "created_at": "2026-09-30T11:35:28.385Z",
-          "recorded_by": "AI assistant",
-          "spots": [
-            {
-              "id": "O001",
-              "machine": "ラットプルダウン",
-              "mode": "両手",
-              "kg": 40,
-              "source": "S01"
-            },
-            {
-              "id": "O002",
-              "machine": "ラットプルダウン",
-              "mode": "片手",
-              "kg": 20,
-              "source": "S01"
-            }
-          ],
-          "sources": {
-            "S01": {
-              "text": "OK！Very Good! \nラットプルダウン\nSweet Spotは\n両手: 40kg\n片手: 20kgになりました！\n\n保存して下さい！",
-              "context": "2026-09-30（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「になりました」を新しい観察として扱い、過去日の両手30kg・片手15kgと重量系列・切替記録は保持。実施時刻・周回・今回の下降系列・切替の実施は未報告。"
-            }
-          }
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 40,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0002/O002"
+        },
+        {
+          "id": "O002",
+          "machine": "ラットプルダウン",
+          "mode": "片手",
+          "kg": 20,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0002/O003"
         }
-      ]
+      ],
+      "sources": {
+        "S01": {
+          "text": "OK！Very Good! \nラットプルダウン\nSweet Spotは\n両手: 40kg\n片手: 20kgになりました！\n\n保存して下さい！",
+          "context": "2026-09-30（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「になりました」を新しい観察として扱い、過去日の両手30kg・片手15kgと重量系列・切替記録は保持。実施時刻・周回・今回の下降系列・切替の実施は未報告。"
+        }
+      },
+      "legacy_day": "2026-09-30",
+      "observed_date": null,
+      "reported_date": "2026-09-30",
+      "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
+      "reference_scope": "current"
     },
-    "2026-10-01": {
-      "visits": [
+    {
+      "id": "cz-visit-0005",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-01T13:14:22.283Z",
+      "recorded_by": "AI assistant",
+      "spots": [
         {
-          "id": "cz-visit-0005",
-          "reporter": "YusukeJP",
-          "created_at": "2026-10-01T13:14:22.283Z",
-          "recorded_by": "AI assistant",
-          "spots": [
-            {
-              "id": "O001",
-              "machine": "ディップス",
-              "mode": "両手",
-              "kg": 60,
-              "source": "S01"
-            },
-            {
-              "id": "O002",
-              "machine": "ディップス",
-              "mode": "片手",
-              "kg": 30,
-              "source": "S01"
-            }
-          ],
-          "sources": {
-            "S01": {
-              "text": "両手: 60kg\n片手: 30kgがSweet Spotです！\n上手く工夫して、上書きして下さい！",
-              "context": "2026-10-01（Asia/Tokyo）の報告の後半部分。冒頭のマシン名訂正はcz-visit-0002/S03に保存し、ディップスの最新Sweet Spotとして記録。日付は報告時点の会話日時から解決。過去の重量系列は保持。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。"
-            }
-          }
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "両手",
+          "kg": 60,
+          "source": "S01",
+          "report_kind": "observation"
+        },
+        {
+          "id": "O002",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 30,
+          "source": "S01",
+          "report_kind": "observation"
         }
-      ]
+      ],
+      "sources": {
+        "S01": {
+          "text": "両手: 60kg\n片手: 30kgがSweet Spotです！\n上手く工夫して、上書きして下さい！",
+          "context": "2026-10-01（Asia/Tokyo）の報告の後半部分。冒頭のマシン名訂正はcz-visit-0002/S03に保存し、ディップスの最新Sweet Spotとして記録。日付は報告時点の会話日時から解決。過去の重量系列は保持。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。"
+        }
+      },
+      "legacy_day": "2026-10-01",
+      "observed_date": null,
+      "reported_date": "2026-10-01",
+      "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
+      "reference_scope": "current"
     },
-    "2026-10-04": {
-      "visits": [
+    {
+      "id": "cz-visit-0006",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-04T12:59:50.582Z",
+      "recorded_by": "AI assistant",
+      "spots": [
         {
-          "id": "cz-visit-0006",
-          "reporter": "YusukeJP",
-          "created_at": "2026-10-04T12:59:50.582Z",
-          "recorded_by": "AI assistant",
-          "spots": [
-            {
-              "id": "O001",
-              "machine": "レッグプレス",
-              "mode": "片足",
-              "kg": 75,
-              "source": "S01"
-            }
-          ],
-          "sources": {
-            "S01": {
-              "text": "レッグプレス\nSweet Spot\n片足: 75kgに改善された\n\nもう一度、chocoZAP全体のSweet Spotを教えて下さい！",
-              "context": "2026-10-04（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「75kgに改善された」を新しい本人報告として扱い、過去日の片足70kg・60kgは保持。実施時刻・来館・周回・今回の下降系列は未報告。"
-            }
-          }
+          "id": "O001",
+          "machine": "レッグプレス",
+          "mode": "片足",
+          "kg": 75,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0003/O001"
         }
-      ]
+      ],
+      "sources": {
+        "S01": {
+          "text": "レッグプレス\nSweet Spot\n片足: 75kgに改善された\n\nもう一度、chocoZAP全体のSweet Spotを教えて下さい！",
+          "context": "2026-10-04（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。「75kgに改善された」を新しい本人報告として扱い、過去日の片足70kg・60kgは保持。実施時刻・来館・周回・今回の下降系列は未報告。"
+        }
+      },
+      "legacy_day": "2026-10-04",
+      "observed_date": null,
+      "reported_date": "2026-10-04",
+      "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
+      "reference_scope": "current"
     },
-    "2026-10-08": {
-      "visits": [
+    {
+      "id": "cz-visit-0007",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-08T10:15:56.643Z",
+      "recorded_by": "AI assistant",
+      "spots": [
         {
-          "id": "cz-visit-0007",
-          "reporter": "YusukeJP",
-          "created_at": "2026-10-08T10:15:56.643Z",
-          "recorded_by": "AI assistant",
-          "spots": [
-            {
-              "id": "O001",
-              "machine": "チェストプレス",
-              "mode": "両手",
-              "kg": 55,
-              "source": "S01"
-            },
-            {
-              "id": "O002",
-              "machine": "チェストプレス",
-              "mode": "片手",
-              "kg": 25,
-              "source": "S01"
-            },
-            {
-              "id": "O003",
-              "machine": "ショルダープレス",
-              "mode": "両手",
-              "kg": 25,
-              "source": "S02"
-            },
-            {
-              "id": "O004",
-              "machine": "ショルダープレス",
-              "mode": "片手",
-              "kg": 10,
-              "source": "S02"
-            }
-          ],
-          "sources": {
-            "S01": {
-              "text": "Chest Press\n両手: 55kg(更新)\n片手: 25kg(継続)\nに向上したのでUpdateして下さい！",
-              "context": "2026-10-08（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。両手55kgへの更新と片手25kgの継続確認を新しい本人報告として扱い、過去日の両手50kg・片手25kgの記録と重量系列は保持。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。縦／横は今回未指定。"
-            },
-            "S02": {
-              "text": "OK！Very Good! \nShoulder Press: Sweet Spot\n両手: 25kg(更新)\n片手: 10kg(継続)\nに向上しました！\nUpdateして下さい！",
-              "context": "2026-10-08（Asia/Tokyo）、同日のChest Press更新に続く現在のSweet Spot更新報告として記録。両手25kgへの更新と片手10kgの継続確認を新しい本人報告として扱い、過去日の両手20kg・片手10kgの記録と重量系列は保持。日付は報告時点の会話日時から解決。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。"
-            }
-          }
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 55,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0002/O004"
+        },
+        {
+          "id": "O002",
+          "machine": "チェストプレス",
+          "mode": "片手",
+          "kg": 25,
+          "source": "S01",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0002/O005"
+        },
+        {
+          "id": "O003",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg": 25,
+          "source": "S02",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0002/O006"
+        },
+        {
+          "id": "O004",
+          "machine": "ショルダープレス",
+          "mode": "片手",
+          "kg": 10,
+          "source": "S02",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0002/O007"
         }
-      ]
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\n両手: 55kg(更新)\n片手: 25kg(継続)\nに向上したのでUpdateして下さい！",
+          "context": "2026-10-08（Asia/Tokyo）の現在のSweet Spot更新報告として記録。日付は報告時点の会話日時から解決。両手55kgへの更新と片手25kgの継続確認を新しい本人報告として扱い、過去日の両手50kg・片手25kgの記録と重量系列は保持。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。縦／横は今回未指定。"
+        },
+        "S02": {
+          "text": "OK！Very Good! \nShoulder Press: Sweet Spot\n両手: 25kg(更新)\n片手: 10kg(継続)\nに向上しました！\nUpdateして下さい！",
+          "context": "2026-10-08（Asia/Tokyo）、同日のChest Press更新に続く現在のSweet Spot更新報告として記録。両手25kgへの更新と片手10kgの継続確認を新しい本人報告として扱い、過去日の両手20kg・片手10kgの記録と重量系列は保持。日付は報告時点の会話日時から解決。実施日時・来館・周回・今回の下降系列・切替の実施は未報告。"
+        }
+      },
+      "legacy_day": "2026-10-08",
+      "observed_date": null,
+      "reported_date": "2026-10-08",
+      "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
+      "reference_scope": "current"
     }
-  }
+  ]
 }
