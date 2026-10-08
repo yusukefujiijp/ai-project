@@ -1,6 +1,6 @@
 {
   "version": "v001",
-  "revision": 1,
+  "revision": 2,
   "role": "Ark00-01:03 thread-local current state and evidence",
   "canonical_path": "ark-project/ark00-01/ark00-01-03/state.json",
   "updated": "2026-10-08",
@@ -20,7 +20,7 @@
   },
   "mission": "足底アーチをどう形作り保持・調整するかを中心に、骨の位置・把持・基準側と操作側・相対運動・観察の理解を現在の問いから深める。",
   "current_position": {
-    "phase": "source_preparation",
+    "phase": "source_prepared_and_remote_verified",
     "source_learning_record": "chocozap/artifacts/foot-ankle-mobilization-learning.md",
     "handoff": "ark-project/ark00-01/ark00-01-03/handoff.md",
     "readme": "ark-project/ark00-01/ark00-01-03/README.md",
@@ -175,9 +175,38 @@
       "evidence": "Source AIが六ファイルを構築し、名称・Identity・EOF・JSON・Markdown YAMLを照合。内部リンク38件の参照先を確認。学習記録§1–14と出典24件の保持を確認。Target本人の読解ではない。"
     },
     "remote_verified": {
-      "status": "pending",
-      "publication_commit": null,
-      "verified_files": []
+      "status": "verified",
+      "publication_commit": "156c71ccf13b169355b9a70b8ae1b6ee32601c3b",
+      "verified_ref": "main",
+      "verified_on": "2026-10-08",
+      "verification_method": "公開前のcommit本文と公開後mainの六ファイルを再取得し、予定本文の完全一致と変更範囲を確認。",
+      "verified_files": [
+        {
+          "path": "ark-project/ark00-01/ark00-01-03/README.md",
+          "sha": "366fd86d7184d9c004e795b14695261cfd52485a"
+        },
+        {
+          "path": "ark-project/ark00-01/ark00-01-03/handoff.md",
+          "sha": "932f339d2dbac90725335b2ed662133bd3ea7948"
+        },
+        {
+          "path": "ark-project/ark00-01/ark00-01-03/state.json",
+          "sha": "974d0c6b8626ec0f7956e140a3cfe53987d809d1"
+        },
+        {
+          "path": "ark-project/ark00-01/README.md",
+          "sha": "516e264f73e090b3a839d434f1ddaa46eda99ee1"
+        },
+        {
+          "path": "chocozap/README.md",
+          "sha": "c0dc9bbb80b0634f74a93c6170432177ed332f70"
+        },
+        {
+          "path": "chocozap/artifacts/foot-ankle-mobilization-learning.md",
+          "sha": "4d28097ae5c8dd9d88a7a66c3ea1b7d313996d8f"
+        }
+      ],
+      "receipt_scope": "この欄は初回公開commitの六ファイルを検証した記録。State自身の以後の更新を未検証で認定する意味ではなく、自己SHA・相互live-blob固定を作らない。"
     },
     "target_reconstructed": {
       "status": "not_observed",
