@@ -56,6 +56,16 @@ def check_weight(value, where):
             where + ": expected finite, nonnegative numeric kg")
 
 
+def check_timestamp(value, where):
+    require(isinstance(value, str), where + ": expected a timestamp with timezone")
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise ValueError(where + ": invalid timestamp") from exc
+    require(parsed.tzinfo is not None, where + ": timezone is required")
+    return parsed
+
+
 def observations(record):
     return record.get("spots", []) + record.get("sequences", [])
 
@@ -76,6 +86,8 @@ def indices(data):
         records[rid] = record
         for item in observations(record):
             entities[rid + "/" + item["id"]] = ("observation", record, item)
+        for item in record.get("visits", []):
+            entities[rid + "/" + item["id"]] = ("visit", record, item)
         for sid, source in record["sources"].items():
             entities[rid + "/" + sid] = ("source", record, source)
         for item in record.get("corrections", []):
@@ -90,6 +102,7 @@ def validate_data(data):
             "timezone is required")
     require(isinstance(data.get("records"), list), "records must be an array")
     record_ids = set()
+    sessions, entries, snapshots = {}, {}, {}
     total = 0
     for record in data["records"]:
         require(isinstance(record, dict), "each record must be an object")
@@ -127,7 +140,7 @@ def validate_data(data):
         if record.get("date_source") is not None:
             source_ref(record["date_source"], rid + "/date_source")
         require(isinstance(record.get("spots"), list), rid + ": spots must be an array")
-        for key in ("sequences", "corrections", "feedback", "transitions"):
+        for key in ("sequences", "corrections", "feedback", "transitions", "visits"):
             require(isinstance(record.get(key, []), list), rid + ": " + key + " must be an array")
         obs_by_id = {}
         for origin in ("spots", "sequences"):
@@ -170,6 +183,66 @@ def validate_data(data):
                     for weight in weights:
                         check_weight(weight, loc)
                 total += 1
+        local_sessions = set()
+        for visit in record.get("visits", []):
+            require(isinstance(visit, dict), rid + ": visit must be an object")
+            vid = visit.get("id")
+            check_id(vid, rid + "/visit.id")
+            loc = rid + "/" + vid
+            require(vid not in local_ids, loc + ": duplicate local ID")
+            local_ids.add(vid)
+            session = visit.get("session_id")
+            check_id(session, loc + "/session_id")
+            require(session not in local_sessions, loc + ": repeated session within one report")
+            local_sessions.add(session)
+            require("visit_date" in visit and visit["visit_date"] is not None,
+                    loc + ": visit_date is required")
+            check_date(visit["visit_date"], loc + "/visit_date")
+            require("location" in visit and (visit["location"] is None or
+                    isinstance(visit["location"], str) and visit["location"].strip()),
+                    loc + ": location must be a name or null")
+            require("entered_at" in visit, loc + ": entered_at must be explicit (null allowed)")
+            entered = (check_timestamp(visit["entered_at"], loc + "/entered_at")
+                       if visit["entered_at"] is not None else None)
+            as_of = check_timestamp(visit.get("as_of"), loc + "/as_of")
+            require(visit["visit_date"] <= as_of.date().isoformat(), loc + ": visit follows snapshot")
+            require(entered is None or entered <= as_of, loc + ": entry follows snapshot")
+            require(entered is None or entered.date().isoformat() == visit["visit_date"],
+                    loc + ": entry date differs from visit_date")
+            require(not record["reported_date"] or as_of.date().isoformat() <= record["reported_date"],
+                    loc + ": snapshot follows report date")
+            require("exited_at" in visit, loc + ": exited_at must be explicit (null allowed)")
+            exited = (check_timestamp(visit["exited_at"], loc + "/exited_at")
+                      if visit["exited_at"] is not None else None)
+            status = visit.get("status")
+            require(status in {"exited", "ongoing", "exit_unknown"}, loc + ": invalid visit status")
+            require(exited is None or status == "exited",
+                    loc + ": status conflicts with exit timestamp")
+            require(exited is None or (exited <= as_of and
+                    (entered <= exited if entered else visit["visit_date"] <= exited.date().isoformat())),
+                    loc + ": exit outside entry/snapshot interval")
+            for key in ("source", "as_of_source"):
+                source_ref(visit.get(key), loc + "/" + key)
+            for key, value in visit.items():
+                if key.endswith("_source"):
+                    source_ref(value, loc + "/" + key)
+            if status == "ongoing":
+                source_ref(visit.get("status_source"), loc + "/status_source")
+            identity = (visit["visit_date"], visit["location"], entered)
+            prior = sessions.get(session, identity)
+            require(all(a is None or b is None or a == b for a, b in zip(prior, identity)),
+                    loc + ": session identity changed; reconcile the source record")
+            sessions[session] = tuple(a if a is not None else b for a, b in zip(prior, identity))
+            if visit["location"] is not None and entered is not None:
+                entry_key = (visit["location"], entered)
+                require(entry_key not in entries or entries[entry_key] == session,
+                        loc + ": same arrival has multiple session IDs")
+                entries[entry_key] = session
+            snapshot_key = (session, as_of)
+            state = (exited, status)
+            require(snapshot_key not in snapshots or snapshots[snapshot_key] == state,
+                    loc + ": conflicting states at the same snapshot time")
+            snapshots[snapshot_key] = state
         chains = defaultdict(list)
         correction_ids = set()
         for correction in record.get("corrections", []):
@@ -230,6 +303,13 @@ def validate_data(data):
             require("approximate" not in start or type(start["approximate"]) is bool,
                     rid + ": approximate must be boolean")
 
+    for session in sessions:
+        states = sorted((as_of, state) for (sid, as_of), state in snapshots.items() if sid == session)
+        has_exit = False
+        for _, (exited, status) in states:
+            require(not has_exit or status == "exited",
+                    session + ": later snapshot loses known exit; reconcile the source record")
+            has_exit = has_exit or status == "exited"
     _, entities = indices(data)
     links = {}
     for ref, (kind, record, obs) in entities.items():
@@ -255,7 +335,56 @@ def validate_data(data):
             require(ref not in seen, ref + ": cyclic previous_ref")
             seen.add(ref)
             ref = links[ref]
-    return {"records": len(data["records"]), "observations": total}
+    return {"records": len(data["records"]), "observations": total,
+            "visits": len(sessions)}
+
+
+def visit_rows(data):
+    """Latest reported snapshot per session; never count report or spot IDs as visits."""
+    groups = defaultdict(list)
+    for record in data["records"]:
+        for visit in record.get("visits", []):
+            groups[visit["session_id"]].append((record, visit))
+    rows = []
+    for session, candidates in groups.items():
+        last = max(check_timestamp(v["as_of"], "as_of") for _, v in candidates)
+        current = [(r, v) for r, v in candidates if check_timestamp(v["as_of"], "as_of") == last]
+        record, visit = sorted(current, key=lambda pair: (pair[0]["id"], pair[1]["id"]))[0]
+        merged = dict(visit)
+        for _, prior in sorted(candidates, key=lambda pair: check_timestamp(pair[1]["as_of"], "as_of"), reverse=True):
+            for field in ("entered_at", "exited_at", "location"):
+                if merged[field] is None and prior[field] is not None:
+                    merged[field] = prior[field]
+        entered = check_timestamp(merged["entered_at"], "entered_at") if merged["entered_at"] else None
+        exited = check_timestamp(merged["exited_at"], "exited_at") if merged["exited_at"] else None
+        refs = sorted(r["id"] + "/" + v["id"] for r, v in candidates)
+        rows.append({
+            "session_id": session, "visit_date": visit["visit_date"],
+            "location": merged["location"], "entered_at": merged["entered_at"],
+            "exited_at": merged["exited_at"], "status": visit["status"],
+            "as_of": visit["as_of"],
+            "duration_minutes": (exited - entered).total_seconds() / 60 if entered and exited else None,
+            "evidence_refs": refs,
+            "source_refs": sorted({r["id"] + "/" + value for r, v in candidates
+                                   for key, value in v.items()
+                                   if key == "source" or key.endswith("_source")}),
+        })
+    return sorted(rows, key=lambda r: (r["visit_date"], r["entered_at"] or "", r["session_id"]))
+
+
+def visit_summary(data, month=None):
+    rows = [r for r in visit_rows(data) if month is None or r["visit_date"].startswith(month + "-")]
+    durations = [r["duration_minutes"] for r in rows if r["duration_minutes"] is not None]
+    return {
+        "visit_count": len(rows), "exited_count": sum(r["status"] == "exited" for r in rows),
+        "timed_stay_count": len(durations),
+        "ongoing_at_report_count": sum(r["status"] == "ongoing" for r in rows),
+        "exit_unknown_count": sum(r["status"] == "exit_unknown" for r in rows),
+        "completed_stay_minutes": sum(durations) if durations else None,
+        "mean_completed_stay_minutes": sum(durations) / len(durations) if durations else None,
+        "visits": rows,
+        "note": "Reported visits only. Status is as of each source report; stay is not exercise time."
+    }
 
 
 def flatten(data, date_basis="reported"):
@@ -433,6 +562,100 @@ def fixture():
 
 
 class RegressionTests(unittest.TestCase):
+    def visit_fixture(self):
+        data = fixture()
+        data["records"][0]["visits"] = [
+            {"id": "v1", "session_id": "session1", "location": "test gym",
+             "visit_date": "2026-01-01",
+             "entered_at": "2026-01-01T18:00+09:00", "exited_at": "2026-01-01T19:10+09:00",
+             "status": "exited", "as_of": "2026-01-02T08:00+09:00",
+             "source": "s1", "as_of_source": "s1"},
+            {"id": "v2", "session_id": "session2", "location": "test gym",
+             "visit_date": "2026-01-02",
+             "entered_at": "2026-01-02T07:30+09:00", "exited_at": None,
+             "status": "ongoing", "as_of": "2026-01-02T08:00+09:00",
+             "source": "s1", "as_of_source": "s1", "status_source": "s1"},
+        ]
+        return data
+
+    def test_visits_do_not_create_weight_observations_or_complete_open_stays(self):
+        data = self.visit_fixture()
+        self.assertEqual(validate_data(data)["visits"], 2)
+        self.assertEqual(flatten(data), flatten(fixture()))
+        self.assertEqual(latest(data), latest(fixture()))
+        summary = visit_summary(data)
+        self.assertEqual(summary["visit_count"], 2)
+        self.assertEqual(summary["completed_stay_minutes"], 70)
+        self.assertEqual(summary["mean_completed_stay_minutes"], 70)
+        self.assertIsNone(summary["visits"][1]["duration_minutes"])
+        self.assertEqual(summary["ongoing_at_report_count"], 1)
+
+    def test_later_screenshot_updates_session_without_counting_again(self):
+        data = self.visit_fixture()
+        record = json.loads(json.dumps(data["records"][0]))
+        record.update(id="r2", spots=[], reported_date="2026-01-03")
+        for visit in record["visits"]:
+            visit["as_of"] = "2026-01-03T09:00+09:00"
+        record["visits"][1].update(exited_at="2026-01-02T08:10+09:00", status="exited")
+        data["records"].append(record)
+        self.assertEqual(validate_data(data)["visits"], 2)
+        summary = visit_summary(data)
+        self.assertEqual(summary["visit_count"], 2)
+        self.assertEqual(summary["completed_stay_minutes"], 110)
+        self.assertEqual(summary["ongoing_at_report_count"], 0)
+        self.assertEqual(len(flatten(data)), 1)
+
+    def test_duplicate_arrivals_conflicting_snapshots_and_regression_rejected(self):
+        for case in ("identity", "conflict", "regression"):
+            data = self.visit_fixture()
+            record = json.loads(json.dumps(data["records"][0]))
+            record.update(id="r2", spots=[])
+            if case == "identity":
+                record["visits"][0]["session_id"] = "duplicate"
+            elif case == "conflict":
+                record["visits"][0]["exited_at"] = "2026-01-01T19:20+09:00"
+            else:
+                record["visits"][0].update(as_of="2026-01-02T09:00+09:00",
+                                          exited_at=None, status="exit_unknown")
+            data["records"].append(record)
+            with self.assertRaises(ValueError):
+                validate_data(data)
+
+    def test_missing_exit_is_not_ongoing_without_human_source(self):
+        data = self.visit_fixture()
+        visit = data["records"][0]["visits"][1]
+        del visit["status_source"]
+        with self.assertRaises(ValueError):
+            validate_data(data)
+        visit["status"] = "exit_unknown"
+        validate_data(data)
+        self.assertEqual(visit_summary(data)["ongoing_at_report_count"], 0)
+        self.assertIsNone(visit_summary(data)["visits"][1]["duration_minutes"])
+
+    def test_short_visit_report_needs_no_clock_or_location(self):
+        data = self.visit_fixture()
+        visit = data["records"][0]["visits"][1]
+        visit.update(entered_at=None, exited_at=None, location=None, status="exited")
+        validate_data(data)
+        summary = visit_summary(data)
+        self.assertEqual(summary["visit_count"], 2)
+        self.assertEqual(summary["exited_count"], 2)
+        self.assertEqual(summary["timed_stay_count"], 1)
+        self.assertIsNone(summary["visits"][1]["duration_minutes"])
+
+    def test_invalid_visit_time_and_changed_evidence(self):
+        for field, value in (("entered_at", "2026-01-01T18:00"),
+                             ("exited_at", "2026-01-01T17:00+09:00"),
+                             ("as_of", "2026-01-03T08:00+09:00")):
+            data = self.visit_fixture()
+            data["records"][0]["visits"][0][field] = value
+            with self.assertRaises(ValueError):
+                validate_data(data)
+        data = self.visit_fixture()
+        original = fingerprint(data, ["r1/v1"])
+        data["records"][0]["visits"][0]["exited_at"] = "2026-01-01T19:20+09:00"
+        self.assertNotEqual(fingerprint(data, ["r1/v1"]), original)
+
     def test_fixture(self):
         self.assertEqual(validate_data(fixture())["observations"], 1)
 
@@ -634,6 +857,8 @@ def main(argv=None):
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("validate")
     commands.add_parser("latest")
+    visits_parser = commands.add_parser("visits")
+    visits_parser.add_argument("--month", help="YYYY-MM; filter by entry date")
     commands.add_parser("self-test")
     for name in ("history", "csv"):
         sub = commands.add_parser(name)
@@ -658,6 +883,10 @@ def main(argv=None):
                       "confirmed_sweet_spot_rows": len(flatten(data))}
         elif args.command == "latest":
             result = latest(data)
+        elif args.command == "visits":
+            if args.month is not None:
+                check_date(args.month + "-01", "month")
+            result = visit_summary(data, args.month)
         elif args.command == "fingerprint":
             result = {"evidence": args.refs, "evidence_fingerprint": fingerprint(data, args.refs)}
         else:
@@ -683,3 +912,4 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+
