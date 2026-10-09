@@ -476,6 +476,43 @@
       "reported_date": "2026-10-08",
       "date_basis": "S01の保存済みcontextにある報告日。現在のSweet Spotの申告であり、実施日・来館の同定ではない。",
       "reference_scope": "current"
+    },
+    {
+      "id": "cz-record-0008",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-09T10:23:57.496Z",
+      "recorded_by": "AI assistant",
+      "observed_date": null,
+      "reported_date": "2026-10-09",
+      "date_basis": "本人報告のメッセージ送信日時2026-10-09T19:20:57+09:00から報告日を特定。45kgになった日・実施日を意味しない。",
+      "reference_scope": "current",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 45,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0004/O001"
+        },
+        {
+          "id": "O002",
+          "machine": "ラットプルダウン",
+          "mode": "片手",
+          "kg": 20,
+          "source": "S01",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0004/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "ラットプルダウン Sweet Spot\n両手: 45kg\n片手: 20kg\n\nもうなってますか？確認して下さい！\nなってなければ更新とAIならではのデータやグラフを下さい！",
+          "reported_date": "2026-10-09",
+          "context": "現在のSweet Spotが両手45kg・片手20kgになっているか確認し、未反映なら更新する依頼。保存前の正本は両手40kg・片手20kgだったため、両手の新しい基準と片手の継続確認を追加。過去の40kgは誤記とされていないので訂正しない。45kgへ移行した実際の日付、実施日時・来館・周回・反復回数・今回の下降系列や切替の実施は未報告。"
+        }
+      }
     }
   ]
 }
