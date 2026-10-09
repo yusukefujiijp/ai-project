@@ -1,16 +1,16 @@
 ---
 title: "定期Ark Mapと限定save — dot-0000"
 canonical_path: "dots/ark-map/README.md"
-version: "v002"
+version: "v003"
 status: "human-authorized operating source / runtime verification separate"
 created: "2026-10-06"
 updated: "2026-10-09"
 actor_id: "dot-0000"
 role: "Single operating source for this Dot's periodic Ark Map and bounded save"
 approval_source: "conversation-message:Sentinel_ae3fc6bd63688191bc22305a15f4d420"
-revision_approval_source: "conversation-message:Sentinel_8f1199e1fa0481918c1f5d1e2a761bad"
-updated_reason: "Preserve the existing Map, align the news header, add one AI perspective section, and clarify bounded-save decisions and recovery"
-expected_eof: "EOF::DOTS_ARK_MAP::v002"
+revision_approval_source: "conversation-message:Sentinel_b31bd683526c81919cabb2532c7a15ad"
+updated_reason: "Refine news selection and bullet presentation through Human feedback while preserving flexible evolution and existing Map boundaries"
+expected_eof: "EOF::DOTS_ARK_MAP::v003"
 ---
 
 # 定期Ark Mapと限定save
@@ -87,11 +87,17 @@ GitHubに保存済みでもWork側で受け取ったとは限らず、Workの発
 
 ### 最新AIニュース — ヘッダーで外部の変化を見る
 
-最新のAIニュースをWebで確認し、公式発表等の一次情報を優先して3件程度を目安に選ぶ。件数はノルマにせず、有意義な新情報が少なければ減らすか、確認範囲では追加がないと簡潔に示す。各項目は「何が変わったか」を先に、意味・影響を短く添え、具体的な発表日または出来事の日付と情報元リンクを示す。
+最新のAIニュースをWebで確認し、公式発表等の一次情報を優先する。まず重要な新しい動きを選び、十分な候補がない場合は、現在のHumanの関心に合う未紹介のAIニュースや、意味のある変化が加わった続報も探す。新着が少ないことだけで探索を終えず、鮮度・重要性・関連性・新しい発見から、今知る価値を判断する。
 
-記事の更新日だけで古い出来事を最新と扱わず、元の発表日・出来事の日付と続報を確認する。前回と同じニュースを差分なく反復せず、続報なら変化した点を示す。前回の掲載内容を取得できなければ重複判定は未確認とする。発表、利用開始、Humanのアカウントでの利用可否は別に扱う。
+箇条書きで一トピックずつ掲載し、できれば3件程度を目安にする。件数はノルマでも上限でもなく、0件・1件・3件超も内容に応じて選べる。有益な候補がなければ水増ししない。「今回は1件です」「3件に絞ります」等の件数予告や、選定事情の弁明は添えず、ニュースそのものへ目を向けられる表示にする。紹介できる情報がない場合の短い説明は許容するが、定型文を必須にしない。取得失敗は新情報の不在と混同しない。
 
-Arkとの接続は役立つ場合だけ添える。ニュースから新Task、外部AIへの送信、購入、設定変更等を自動開始しない。選定・分量・配置は、このDotでのHuman Feedbackから改善する。
+各項目は「何が変わったか」を先に、意味・影響を短く添え、具体的な発表日または出来事の日付と情報元リンクを示す。文章量や内部の書式を一律に固定せず、判断に必要な内容を保つ。記事の更新日だけで古い出来事を最新と扱わず、元の日付と続報を確認する。少し前の未紹介情報も実際の日付を明示し、古めの参考情報ならその性質を示す。発表当時から提供・延期・変更等が進んでいないか、今回の紹介に必要な現在の状態を確かめる。
+
+前回と同じニュースを差分なく反復せず、続報なら変化した点を示す。重複は取得できる掲載履歴で照合し、履歴を取得できなければ重複判定は未確認とする。厳密な未紹介保証のためだけに専用の記事台帳を新設しない。Humanが表示実験として既報の再利用を求めた場合は、その実験と通常配信の新しい情報を区別する。発表、利用開始、Humanのアカウントでの利用可否も別に扱う。
+
+関心は現在のHumanの意味・対話から読み、継続的なAI協働、複数AIの連携、Graph、Skill、GitHubでの再現性などは選定の手掛かりとする。固定カテゴリや毎回埋める枠にせず、関心の変化を受け取る。好みに合う情報を探すことを、賛同しやすい話だけへの限定や称賛へ変えない。制約、意外な発見、考えを更新する材料も、関連性があれば選べる。補完はまずAI分野の関連情報から行い、一般ニュースへ無制限に広げない。
+
+Arkとの接続は役立つ場合だけ添える。ニュースから新Task、外部AIへの送信、購入、設定変更等を自動開始しない。今回のHumanが最重要としたのは、Feedbackで柔軟に深化・進化し、修正改善していく「Ark Project Style」の方向である。この節は現在の出発点であり、選定・分量・表現を唯一の完成形へ固定しない。実際の出力とHuman Feedbackから、必要な意味を保ちつつ追加・修正・削減を判断する。恒久的な原本・設定の変更は、その時の権限と最新Correction・STOPに従い、この柔軟性を将来の自動改訂承認へ読み替えない。
 
 ### AIの大局観 — 一つの場所で、広い発想を試す
 
@@ -198,4 +204,17 @@ Humanはニュースを高く評価し、ニュース本文までをヘッダー
 - 計画提示：`conversation-message:Sentinel_c18f1a6c321c81918146c4afbcc7509c`
 - 対象原本の確認と後続実行承認：`conversation-message:Sentinel_d93df21214648191861468b544a4bda8`、`conversation-message:Sentinel_8f1199e1fa0481918c1f5d1e2a761bad`
 
-EOF::DOTS_ARK_MAP::v002
+### 2026-10-09ニュース欄の後続改訂
+
+v002の実出力後、Humanはニュースの箇条書きを評価し、できれば3トピック程度を望んだ。0件・1件・3件超も許容し、件数の予告は不要と訂正した。関心に合わせた表示実験を経て、最新AIニュースを優先し、少ない場合は関心に合う未紹介情報で充実させる案を検討した。計画提示後、HumanはFeedbackで柔軟に深化・進化させる「Ark Project Style」の方向が最重要と明示し、ニュース節の局所改訂と必要な記録・検証を承認した。
+
+本改訂はニュースの選定・表示とその形成理由に限定する。先行する横断的なDotsの役割への評価は別の保存候補であり、今回それを根拠に大局観の全面改訂や全体方針の変更は行わない。配信頻度・保存権限・他のMap配置は保持する。形成と実際の確認結果は区別し、実験での好評価を全場面の有効性へ一般化しない。
+
+- 箇条書き・柔軟な件数：`conversation-message:Sentinel_d171ee16246081918914c3668927114f`
+- できれば3トピックという希望：`conversation-message:Sentinel_f8ac9c39b19c8191a1e6257458ea9e26`
+- 関心に合うニュースの表示実験：`conversation-message:Sentinel_470f04acdaa4819180adfe947ab1b704`
+- 最新優先と関連情報による補完案：`conversation-message:Sentinel_1f0627c1121c81919e19ffec02546bae`
+- 計画提示：`conversation-message:Sentinel_8465545d5a088191a8512e4450a5f8ec`
+- 柔軟な改善方向の明示と実行承認：`conversation-message:Sentinel_b31bd683526c81919cabb2532c7a15ad`
+
+EOF::DOTS_ARK_MAP::v003
