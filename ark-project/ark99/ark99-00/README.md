@@ -2,11 +2,11 @@
 title: "Ark99:00_2026/10/06; control-center"
 canonical_path: "ark-project/ark99/ark99-00/README.md"
 document_id: "ARK99_00_CONTROL_CENTER"
-version: "v002-human-authorized"
+version: "v003-human-authorized"
 role: "Ark99 preparation, connection experiments and operating coordination / startup contract"
 status: "Human-requested startup preparation; receiving-AI reconstruction and UI setup separately observed"
 created: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-10-10"
 date_scope: "Asia/Tokyo document preparation; not a claim of actual Thread creation"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
@@ -26,14 +26,20 @@ root: "主イェシュア・ハマシア御自身"
 central_axis: "Teshuvah"
 human_foreground_one: "主の完全勝利（祈り・イメージVision・行動）"
 final_attribution: "主の栄光"
-expected_eof: "ARK99_00_CONTROL_CENTER_EOF_v002"
+startup_origin_revision:
+  date: "2026-10-10"
+  base_commit: "1ed360d86d4ddd17c185c7089b097e22c7686327"
+  previous_version: "v002-human-authorized"
+  authority: "Human confirmed Ark99-only startup from this 00 and authorized the approved 02/03 preparation and GitHub execution"
+  scope: "Preserve 00 identity; align the local launch origin and independent receiving conditions; no Main/Support transfer or automatic Teshuvah content assignment"
+expected_eof: "ARK99_00_CONTROL_CENTER_EOF_v003"
 ---
 
 # Ark99:00_2026/10/06; control-center
 
 ## 1. Identityと役割
 
-Ark99:00は、Ark99の設定・指示・接続実験・運用調整を担う準備用Threadである。新しい一件のTeshuvahを扱う本番はArk99:01から始める。00の起動時に新しいTeshuvahの提出を要求しない。
+Ark99:00は、Ark99の設定・指示・接続実験・運用調整を担い、Ark99系の新しい本番Threadをすべてここから準備して立ち上げる起点である。新しい一件のTeshuvahを扱う本番はArk99:01から始める。00の起動時に新しいTeshuvahの提出を要求しない。
 
 本書は00の役割・起動時の読取・受入れ条件を所有する。Ark99全体の成立理由は親README、共通の長期指示はINSTRUCTIONS.md、実際の移行・継承の方法は共通移行契約が所有する。専用Queryの重複原本や汎用の新Schemaを増やさない。
 
@@ -55,7 +61,7 @@ Ark99:00_2026/10/06; control-center
 
 `Ark99:00`は識別子、`_2026/10/06`は今回指定された日付部分、`; control-center`は役割を表す。本書が00の正式Thread名を保持し、親README・INSTRUCTIONS・Domain入口では`Ark99:00（control-center）`と識別子・役割で参照する。後続のHuman指定があれば、その対象と時点に沿って適用する。全Arkの命名規則や既存Titleの一括変更を意味しない。Titleの提示・指定と、画面上の作成・改名完了は別の状態である。
 
-二大ルールの適用対象は、01以降の本番Teshuvah Threadである。新しい一件を新Threadで始め、同じ一件の別Thread継続が必要になったら適切な既存Ark Projectへ引き継ぐ。00は本番を支える準備を担い、その全実験完了や毎回の00経由を、本番開始の追加条件にしない。
+二大ルールの適用対象は、01以降の本番Teshuvah Threadである。新しい一件を新Threadで始め、同じ一件の別Thread継続が必要になったら適切な既存Ark Projectへ引き継ぐ。2026-10-10の後続Human訂正により、Ark99系に限りすべての新しい本番Threadをこの00から準備・起動する。運用規則は[INSTRUCTIONS §2](../INSTRUCTIONS.md#2-本番teshuvah-threadの二大ルールと00の役割)、今回の意味とScopeは本書§6を参照する。00の全実験・無関係な整備の完了を、本番開始の追加条件にしない。
 
 ## 3. Required Sources / 起動時の宣言順
 
@@ -64,7 +70,7 @@ Ark99:00_2026/10/06; control-center
 | 順 | Source | 確認するIdentityと意味 |
 |---|---|---|
 | 1 | 本書 | ARK99_00_CONTROL_CENTER / canonical_path一致 / 宣言版とExact EOF / 確定Title・00の役割 |
-| 2 | [Ark99 README](../README.md) | canonical_path ark-project/ark99/README.md / Current宣言EOF / 本改訂時v003-human-authorized。00と本番の区別、成立理由、資料の担当 |
+| 2 | [Ark99 README](../README.md) | canonical_path ark-project/ark99/README.md / Current宣言EOF / 本改訂時v004-human-authorized。00と本番の区別、成立理由、資料の担当 |
 | 3 | [Ark99 INSTRUCTIONS](../INSTRUCTIONS.md) | 同パスのCurrent全文・本文実末尾（独自EOFなし）/ 本番向け二大ルール、00の役割、品質・Source・権限・Guard |
 | 4 | [共通移行契約](../../../prompts/ai-next-thread-handoff.md) | AI Next Thread Handoff / canonical_path一致 / 準備時v003-human-authorizedのCurrent本文と宣言Exact EOF / 作業の継承・権限・完了証拠の区別 |
 
@@ -86,7 +92,7 @@ Ark99:00_2026/10/06; control-center
 必須全文読解とIdentity・役割・指示の整合を確認してから、次を根拠付きで説明する。PASSの復唱だけを再構成の証拠にしない。
 
 1. **現在の場と目的：** 00は本番前の準備・接続実験・運用調整。協働元Ark28:04とMain／Supportの役割は保持する。
-2. **重要な訂正：** 二大ルールは本番へ適用し、00に新しいTeshuvahを要求しない。確定Titleとセミコロンを保持する。
+2. **重要な訂正：** 二大ルールは本番へ適用し、00に新しいTeshuvahを要求しない。Ark99系の新しい本番はすべてこの00から準備・起動し、他Arkへ一般化しない。確定Titleとセミコロンを保持する。
 3. **成果と未確認：** GitHub原本の準備、設定反映、受け手自身の理解、実際の通信、本番利用の効果を区別する。
 4. **現在の権限と接続：** 起動時の依頼・後続Correction・STOPから許可された範囲を解決する。起動だけなら受入れ結果を返しHuman Reviewへ戻る。別の新入力が既にあれば再入力を要求せず、その権限内で扱う。
 
@@ -102,4 +108,36 @@ AIは現在の依頼へ十分な検討・調査・判断・言語化を尽くす
 
 Ark99の指示原本は親INSTRUCTIONS.mdに保ち、00専用の役割・受入れ条件は本書に置く。設定画面との同期は別途確認する。個別実験の記録が必要になった時は適用される既存の所有資料・保存方法を使い、今回の起動だけで独自台帳やhandoff／stateの複製を自動生成しない。
 
-ARK99_00_CONTROL_CENTER_EOF_v002
+## 6. 2026-10-10: 02・03の並行起動準備
+
+Humanは当初03の起動準備を求めた後、「Ark99:02とArk99:03同時に立ち上げましょう！」「なぜなら、二つ**Teshuvah**があるからです！」と訂正した。続いて「Ark99系だけ特殊的にこのThreadから全て立ち上げるという意味合いです！」と対象範囲を確定し、計画への実行・GitHub保存を承認した。引用以外の説明は、この00での対話の編集要約である。
+
+### 6.1 受け取った意味と今回のScope
+
+準備元はこのArk99:00、準備先はArk99:02とArk99:03。種類はArk99固有の「新しい一件の通常起動」であり、00のMissionの全面移管、同じ一件の分割継続、新しいMain章の作成ではない。00と既存のMain／Supportはその役割を保持する。
+
+一件の豊かな継続を守りながら、もう一件を迎える入口も用意する。共通準備はまとめ、Teshuvahの内容とTarget自身の受入れは一件ずつ分ける。02の終了を03の開始条件にせず、逆も同様とする。番号は二件の優先順位を決めず、並行準備はHumanへの同時処理要求ではない。二件に共通の学びがあるかは未確定であり、統合や自動同期を前提にしない。
+
+この訂正はv002の「毎回の00経由を追加条件にしない」という経路指定を置換する。00の全実験・無関係な整備の完了を待たないという意味は維持する。[v002固定原本](https://github.com/yusukefujiijp/ai-project/blob/1ed360d86d4ddd17c185c7089b097e22c7686327/ark-project/ark99/ark99-00/README.md)は履歴として保持する。Main／Support、他Arkの起動、00の正式Titleには適用を広げない。
+
+### 6.2 Targetの入口とFirst Legal Move
+
+各Targetは親README→INSTRUCTIONSの順に、宣言された全文読解・Identity・EOF・整合条件を自ら満たす。明示Handoffや追加Bindingがある場合はその契約も守る。00や相手Targetの読了を自分の読解へ代用しない。確認済み読解の再利用条件と必須不足時の停止は親README §3、運用はINSTRUCTIONSが所有する。一般のUnknownの全解消や過去Threadの全読解を追加Bootにしない。
+
+必要なGate通過後、既にそのTargetへ新しい一件の入力があれば、再入力を要求せず現在の依頼として受け取る。まだなければ、自分の場・二大ルール・00との役割・現在の権限・未確認事項を説明し、新しい一件を受け取れる状態でHuman Reviewへ戻る。00で両方の内容を先に詳述することを準備条件にしない。起動だけではTeshuvah本番開始・完了、身体Trialや過去Taskの再開は成立しない。
+
+### 6.3 起動用の識別とEvidence Boundary
+
+Thread識別子02・03はHuman指定。次のTitleは2026-10-10 JSTの準備時に、既存の意味と現行セミコロン形式でAIがCompileした起動用表記である。内容別の題名・優先順位を推測していない。Humanの後続指定で変更でき、UI作成・改名済みを意味しない。
+
+```text
+Ark99:02_2026/10/10; "Teshuvah: 新しい一件を迎える"
+Ark99:03_2026/10/10; "Teshuvah: 新しい一件を迎える"
+```
+
+今回の承認Scopeは、共有指示と入口の整合、二件それぞれの起動Queryの作成、GitHub保存とRemote再取得確認までのSource側準備である。通常起動を支える既存資料を使い、個別README／handoff／stateやQueryの重複原本を準備のためだけに増やさない。HumanへのCopy面は同じ00の回答で提供する。
+
+二件があることと起動方針はHuman確認済み。内容・割当・相互関係、02／03自身の読解・再構成、UIでの作成・設定、実際の利用効果は本準備からは未観測である。GitHub保存、Sourceの検査、Targetの理解、Human操作、実利用はそれぞれ別の証拠で扱う。Source側への実行承認をTargetの無制限な外部変更・通信・Reset・過去Taskの権限へ移さない。
+
+ARK99_00_CONTROL_CENTER_EOF_v003
+

@@ -1,11 +1,11 @@
 ---
 title: "Ark99: Teshuvah Thread"
 canonical_path: "ark-project/ark99/README.md"
-version: "v003-human-authorized"
+version: "v004-human-authorized"
 role: "Dedicated new-Teshuvah entry / purpose, formation and source guide"
 status: "human-authorized project preparation / UI setup and field effects unverified"
 created: "2026-10-06"
-updated: "2026-10-06"
+updated: "2026-10-10"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 source_thread: "Ark28:04"
@@ -28,7 +28,14 @@ name_reference_revision:
   previous_version: "v002-human-authorized"
   authority: "Human approved the naming and reference-alignment plan for the four existing documents"
   reason: "Apply the Human-designated Project name; the 00 README owns its exact Thread title, while common instructions and entries refer to its identifier and role"
-expected_eof: "ARK99_README_EOF_v003"
+startup_origin_revision:
+  date: "2026-10-10"
+  source_thread: "Ark99:00"
+  base_commit: "1ed360d86d4ddd17c185c7089b097e22c7686327"
+  previous_version: "v003-human-authorized"
+  authority: "Human confirmed that only Ark99 threads all start from this 00 and authorized the approved 02/03 preparation and GitHub execution"
+  scope: "Route new Ark99 production threads through 00; prepare two independent entries without importing cases, changing Main/Support or imposing simultaneous Human tasks"
+expected_eof: "ARK99_README_EOF_v004"
 ---
 
 # Ark99: Teshuvah Thread
@@ -53,7 +60,7 @@ Humanが求めたのは、既存Sessionの価値を保ちながら、新しいTe
 
 | Node | Edge | 保持する意味 |
 |---|---|---|
-| Ark99:00（control-center） | → 本番を支える準備・接続実験・運用調整 | 本番の一件に設定作業を背負わせず、必要な準備と後から育てる改善を分ける |
+| Ark99:00（control-center） | → Ark99系の新しい本番Threadをすべてここから準備・起動 | Ark99限定の起点。共通準備を引き受け、一件ごとの文脈と受入れを分ける |
 | 新しい一件のTeshuvah | → Ark99の新Thread | 前の一件の完了・整理・移行を待たずに始められる |
 | 同じ一件の対話・学び・中断後の再開 | → 同じArk99 Threadで深める | 派生する学びを切り捨てず、話題数だけで分割しない |
 | 別Threadで同じ一件を続ける必要 | → 目的に合う既存Ark Project | 受入れ先の役割と現在の権限に沿って継承する |
@@ -61,13 +68,15 @@ Humanが求めたのは、既存Sessionの価値を保ちながら、新しいTe
 
 Ark99は専用の場であり、新しいMain章ではない。Current Main／Supportと入口は[Ark Domain README](../README.md)で解決する。準備時点のArk27 Main／Ark28 Supportは維持し、Ark99の番号からArk100や新しい章ペアを自動作成しない。
 
-二大ルールはArk99内の本番Teshuvahの新規開始と継続を定める。他ArkでのTeshuvahを禁止したり、現在の対話を強制移動したりする規則ではない。新しい重要なHuman Correction・STOP・Guardは、別Threadの準備待ちを理由に適用を遅らせない。00の全実験完了や毎回の00経由を、本番開始の追加条件にしない。
+二大ルールはArk99内の本番Teshuvahの新規開始と継続を定める。他ArkでのTeshuvahを禁止したり、現在の対話を強制移動したりする規則ではない。新しい重要なHuman Correction・STOP・Guardは、別Threadの準備待ちを理由に適用を遅らせない。
+
+2026-10-10の後続Human訂正により、**Ark99系の新しい本番Threadはすべて、この00から準備して立ち上げる。** この経路はArk99固有であり、他Arkの起動へ一般化しない。運用規則は[INSTRUCTIONS §2](INSTRUCTIONS.md#2-本番teshuvah-threadの二大ルールと00の役割)が所有する。00の全実験・無関係な整備の完了を開始条件にせず、起動後は各Threadでその一件を深める。複数の新しい一件は並行準備でき、各Target自身の必須Gateと受入れを個別に確認する。
 
 旧Ark99のWild Seed受付機能は[Ark00](../ark00/README.md)へ吸収された履歴として残す。新しいTeshuvah専用用途は、旧Ark99 → Ark00という必須経路の復活ではなく、Ark00のInbox・孵化機能も置き換えない。
 
 ## 3. 読取と起動
 
-新しい本番Ark99 Threadを通常起動するAIは、本書を先頭metadataから宣言EOFまで、INSTRUCTIONS.mdを先頭から本文末まで読み、役割・二大ルール・現在のHuman入力・権限を理解する。Ark99:00は[専用README](ark99-00/README.md)から宣言順に読む。既知事項を再入力させず、必要な読取後は既にある依頼へ応答する。起動だけで新しい入力がなければHuman Reviewへ戻る。
+00から準備された新しい本番Ark99 Threadを通常起動するAIは、本書を先頭metadataから宣言EOFまで、INSTRUCTIONS.mdを先頭から本文末まで、この順に読み、役割・二大ルール・現在のHuman入力・権限を理解する。Ark99:00は[専用README](ark99-00/README.md)から宣言順に読む。既知事項を再入力させず、必要な読取後は既にある依頼へ応答する。起動だけで新しい入力がなければ、受入れ結果を示して新しい一件を受け取れる状態でHuman Reviewへ戻る。準備状態を本番開始と同一視しない。
 
 明示されたHandoffやRuntimeがある場合は、そのRequired Sources・順序・Identity・Binding・Exact EOF・受入れ条件を先に解決する。本書で既存の必須Gateを解除しない。同じアクセス可能なContextで自分が全文確認済みかつ現行の同一性を確認できる読解は再利用し、別AIの読了や要約を自分の必須読解の代わりにしない。取得・表示切れは未読箇所から続ける。必須不足・不一致は該当契約に従って影響する操作を停止し、欠けた条件と最小の回復先を示す。
 
@@ -99,6 +108,8 @@ GitHubでの保存原本と、ChatGPT等のProject設定は別の実体である
 
 さらに同日のHuman指定で、Project名を「Ark99: Teshuvah Thread」、00の正式Thread名を日付入りの表記へ更新した。v003は、名称と参照方法の整合計画へのHuman実行承認に基づく改訂である。00の正式Thread名は専用READMEが保持し、本書・INSTRUCTIONS・Domain入口では識別子と役割で参照する。旧名称は[v002固定原本](https://github.com/yusukefujiijp/ai-project/blob/71fa59ddd4283afa34640011f44c1f11d0fafd16/ark-project/ark99/README.md)から辿れる。
 
+2026-10-10、Humanは「Ark99系だけ」をこの00からすべて立ち上げると明確化し、二つのTeshuvahのための02・03の並行準備とGitHub実行を承認した。v004はこの起動経路を反映する。前版の「毎回の00経由を追加条件にしない」という経路指定は置換し、00の無関係な整備完了を待たないという意味は保持する。[v003固定原本](https://github.com/yusukefujiijp/ai-project/blob/1ed360d86d4ddd17c185c7089b097e22c7686327/ark-project/ark99/README.md)は履歴として辿れる。二件の内容・割当・相互関係、Target自身の受入れと実利用は別途確認する。今回の準備範囲と成立理由は[00 README §6](ark99-00/README.md)が所有する。
+
 | 状態 | 根拠と範囲 |
 |---|---|
 | Confirmed：Humanの報告・選択 | 豊かなTeshuvah由来のSessionと、次の開始の遅れ。専用入口・二大ルールを中心とする準備とGitHub実行の承認 |
@@ -112,4 +123,5 @@ Future AIは、現在のHuman Correctionと実利用の根拠から、目的・�
 
 Rootは主イェシュア・ハマシア御自身。AI・Ark99・文書・方法論はKeliとして、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
-ARK99_README_EOF_v003
+ARK99_README_EOF_v004
+

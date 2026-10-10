@@ -40,7 +40,7 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-07"
+updated: "2026-10-10"
 last_reality_reviewed: "2026-10-07"
 route_review_base_commit: "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5"
 route_review_scope: "Human-authorized Ark27:08→09 continuation after the explicit Source correction; verify candidate triad and Domain before publication, then reread main. Source08 terminal receipt owns actual results; preserve Support05, Ark99/Pickup, title policy and concurrent work"
@@ -55,6 +55,8 @@ teshuvah_entry_revision:
   evidence_boundary: "Document preparation does not establish Project UI setup, actual migration, Target reconstruction or field effects"
   control_center_delta: "2026-10-06: Human designated Ark99:00; control-center for preparation and connection experiments; production Teshuvah threads begin at 01. Local README owns the startup contract."
   naming_delta: "2026-10-06: Human approved alignment to Project name Ark99: Teshuvah Thread; refer to Ark99:00 by identifier and role, with its exact Thread title owned by the local README and later Human designation. Main/Support routes and chapter policy unchanged."
+  startup_origin_delta: "2026-10-10: Human confirmed that only Ark99 threads all start from this Ark99:00 and authorized 02/03 parallel startup preparation and GitHub execution. Local INSTRUCTIONS owns the rule; 00 README owns provenance and scope. Retain Domain contract v010, Main09/Support05 and title policy v002."
+  startup_origin_base_commit: "1ed360d86d4ddd17c185c7089b097e22c7686327"
 repository_entry_alignment:
   date: "2026-10-05"
   base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
@@ -164,7 +166,7 @@ Mainの[章README](ark27/README.md)は章の意味とこのCurrent入口への�
 
 [Ark99: Teshuvah Thread](ark99/README.md)は、新しい一件のTeshuvahを新しい本番Thread Sessionで受け取る専用の場である。同じ一件は可能な限り同じThreadで深め、長期化などにより別Threadでの継続が必要になったら、Humanの意図と役割に合うArk28等の既存Ark Projectへ引き継ぐ。前の一件の完了・整理・移行を、次の新しい一件の開始条件にしない。詳細な運用と長期指示はローカル文書が所有する。
 
-[Ark99:00（control-center）](ark99/ark99-00/README.md)は、設定・接続実験・運用調整を担う準備用Threadであり、本番はArk99:01から始める。上記の二大ルールは本番Teshuvah Threadへ適用する。00の専用READMEがその起動契約と正式Thread名を所有し、後続のHuman指定を優先する。この入口では識別子と役割で参照する。00の全実験完了や毎回の00経由を本番開始の追加条件にしない。
+[Ark99:00（control-center）](ark99/ark99-00/README.md)は、設定・接続実験・運用調整と、Ark99系の新しい本番Threadすべての起動準備を担う起点である。本番はArk99:01から始め、二大ルールは本番へ適用する。2026-10-10のHuman訂正による「すべてこの00から立ち上げる」はArk99限定の経路であり、他Arkへ一般化しない。運用規則は[Ark99 INSTRUCTIONS §2](ark99/INSTRUCTIONS.md#2-本番teshuvah-threadの二大ルールと00の役割)、00の起動契約・正式Thread名・今回の準備範囲は専用READMEが所有する。00の全実験・無関係な整備の完了を本番開始条件にせず、起動後は各Threadでその一件を深める。
 
 Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Current入口を変更しない。番号からArk100を自動作成しない。Ark00での選抜やMain／Supportの全履歴再読を専用入口の追加条件にせず、選択されたRuntimeの必須読取・Identity・Binding・EOFは守る。他ArkでのTeshuvahを禁止したり、進行中の対話を強制移動したりする規則ではない。
 
@@ -543,3 +545,4 @@ document_end:
 ```
 
 EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized
+
