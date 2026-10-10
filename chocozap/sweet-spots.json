@@ -2397,6 +2397,43 @@
         }
       },
       "context": "15画像119行を111個の入館記録へ照合。8行は画像間の重複。10月5件はcz-record-0010と同じsession_idを使用した新しい状態報告。session_idはアプリの入館記録の同一性であり、独立した運動セッションの認定ではない。短時間・同日・時刻連続の行を自動統合しない。普段の利用習慣はcz-record-0010/S03へ参照可能だが、各行を全台実施へ自動展開しない。"
+    },
+    {
+      "id": "cz-record-0012",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-10T21:27:36.116Z",
+      "recorded_by": "AI assistant",
+      "observed_date": null,
+      "reported_date": "2026-10-11",
+      "date_basis": "本人のメッセージ送信日時2026-10-11T06:23:59+09:00を報告日の根拠とする。到達日・実施日・来館日時は明示されていない。",
+      "reference_scope": "current",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "レッグプレス",
+          "mode": "片足",
+          "kg": 75,
+          "source": "S01",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-visit-0006/O001"
+        },
+        {
+          "id": "O002",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 60,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0007/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "chocoZAP \nSweet Spot 更新\nLeg press\n片足: 75kg\n\nChest Press\n両手: 60kg",
+          "reported_date": "2026-10-11",
+          "context": "本人のメッセージからSweet Spot報告部分を原文のまま抜粋。同じメッセージで、AIが内容を設計するiOS縦画面・タッチ操作のVisualize作成も依頼された。保存前の現在基準はレッグ片足75kg、チェスト両手55kg。『更新』という全体の見出しを保持しつつ、レッグは同値の明示的な再確認、チェストは新しい60kgへの更新として区別する。未言及のチェスト片手25kgと他条件はcz-record-0009/S01の方針に従い参照基準を継続し、今回の観察を複製しない。実施日・来館・左右両側の実施・回数・周回・中間重量・当日の下降や切替の実施は未報告。"
+        }
+      }
     }
   ]
 }
