@@ -1,8 +1,8 @@
 ---
 title: chocoZAP Sweet Spot — 記録・推移・分析
-version: v0.4.0
-updated: 2026-10-09
-updated_reason: 来館履歴画像の一括受付、来館と実施概要の関係、重複しない来館集計を追加
+version: v0.5.0
+updated: 2026-10-10
+updated_reason: 5〜10月の画像を統合し、入館件数と入館日数、月見出し照合、欠損・日跨ぎ、来館CSVを追加
 canonical_path: chocozap/README.md
 status: active
 ---
@@ -15,7 +15,7 @@ YusukeJPの短い報告から、条件ごとのSweet Spotの移行と、その�
 | --- | --- |
 | 本人の報告・重量・系列・来館・訂正 | [sweet-spots.json](sweet-spots.json) |
 | 根拠につながるAI分析・再検討条件 | [analyses.json](analyses.json) |
-| 検証・最新参照・来館集計・履歴・CSVの再生成 | [tools/sweet_spots.py](tools/sweet_spots.py) |
+| 検証・最新参照・入館／月別集計・重量／来館CSVの再生成 | [tools/sweet_spots.py](tools/sweet_spots.py) |
 | 継続する基本方法と会話支援 | [chocozap-sweet-spot](../skills/chocozap-sweet-spot/SKILL.md) |
 | 学習記録と実用チェックリスト | [artifacts/README.md](artifacts/README.md) |
 
@@ -66,7 +66,9 @@ JSONが正本。表・グラフ・最新一覧は必要時に生成し、別の�
 
 schema v2に任意の `visits` 配列を追加した。これは報告内の来館情報であり、重量観察とは別。既存記録に来館行を自動生成しない。
 
-- 一行は `id`（記録内のV系ID）、`session_id`（同一来館を通じた安定ID）、`visit_date`、`location`、`entered_at`、`exited_at`、`status`、`as_of`、`source`、`as_of_source` を持つ。店名・入退館時刻は不明なら明示的な `null`。日付だけの「今日行ってきた」も受け取れ、時刻・店名の追加入力を必須にしない。日付も不明な報告は原文を先に残し、日別来館行は日付確認後に作る。
+**入館件数・入館した日数・実際の運動セッション数を分ける。** 月別の `entry_count` はアプリの入館記録数、`unique_visit_days` は入館日を重複除去した数、`multi_entry_days` は同日に複数の入館がある日数。`visit_count` は後方互換のため残した `entry_count` の別名。既存の `session_id` も維持するが、同じ入館記録を追うIDであり、独立した運動セッションを認定するIDではない。日跨ぎや再入館の行から運動セッション数は自動確定しない。
+
+- 一行は `id`（記録内のV系ID）、`session_id`（同じ入館記録を追う安定ID）、`visit_date`、`location`、`entered_at`、`exited_at`、`status`、`as_of`、`source`、`as_of_source` を持つ。店名・入退館時刻は不明なら明示的な `null`。日付だけの「今日行ってきた」も受け取れ、時刻・店名の追加入力を必須にしない。日付も不明な報告は原文を先に残し、日別来館行は日付確認後に作る。
 - `entered_at`・`exited_at` は分かる精度のISO日時とUTCオフセット。`visit_date` は入館した日。画像の複数日を、一つの `observed_date` や報告日へ押し込まない。`as_of` はその来館状態を報告した時点であり、読み出す現在時刻ではない。
 - `status` は `exited`（退館した）、`ongoing`（報告時点で滞在中）、`exit_unknown`（退館状況不明）。「行ってきた」は退館時刻不明でもexitedとして受け取れる。退館欄の「-」だけでongoingにせず、本人の「今」等の出所を `status_source` に結ぶ。数日後に読んでも「現在も滞在中」と言い直さない。
 - 同じ画像・履歴の再送は既存の来館と照合する。後の画像で退館時刻などが分かった場合は、同じsession_idの新しい状態報告として出所を残せる。`visits` コマンドはsession_idごとに最新のas_ofを選び、先に確認済みの店名・時刻と全出所も保持する。新しい報告でのnullは、前に確認した時刻の撤回ではない。誤記の撤回・訂正は対象の出所記録と影響する分析を整合し、旧内容はGit履歴から辿れるようにする。
@@ -75,6 +77,17 @@ schema v2に任意の `visits` 配列を追加した。これは報告内の来�
 - 任意の `routine_source` は、本人の普段の実施パターンを説明する出所。来館に結びつく「ほぼ全てのマシン」の実施概要を支えるが、マシン別の測定行や全条件の完了行には展開しない。例外・中断・現在の途中経過を優先する。
 
 滞在時間は確認済みの入館から退館まで。運動時間・セット数・運動量ではない。入館回数には報告時点の滞在中の来館も数え、退館済み回数と、所要時間を計算できる回数を別に示す。終了時刻のない来館は所要時間の平均へ入れない。
+
+### 画像の一括取込みで保持する意味
+
+- 画像の重なりは `corroborating_source` で別画像の出所も保持し、一つの入館へ照合する。同じ日でも入館時刻が違う行は残す。1分の行や、前行の退館と次行の入館が続く行も、理由が確認できないまま削除・結合しない。
+- 年月の見出しが画面外の画像は `history_month` に対応する月を持ち、出所の `context` に前後の画像から対応づけた根拠を書く。実際に見えた年月・月合計だけを `displayed_month`・`displayed_visit_count` にする。画像の時計と報告時刻を区別する。
+- `exit_date_basis` は追加項目。`same_day_from_row` は同じ行の入退館を同日と解釈、`explicit_date` は明示日付、`next_day_inferred_from_clock_rollover` は時計の折返しから翌日と解釈、`unknown` は退館不明。例：7/22の23:26→0:18は翌日解釈で52分。原表示と解釈を保持し、出力でも根拠を落とさない。旧データに項目がない場合は出力上 `source_row` とし、新しい根拠を発明しない。
+- 月の表示件数を照合できる一括報告には任意の `visit_coverage` を持てる。各要素は `month`、`reported_entry_count`、見出しの `source`、`as_of`、`as_of_source`、`scope`（`full_month` / `month_to_date`）。見出しと同じ報告内の重複除去済み入館件数を検証する。これはアプリ表示との照合で、実際の全活動を独立に保証するものではない。不完全な画像は照合済みとして登録せず、確認できた行を先に保持する。
+
+2026-10-10に受け取った15画像は119行。画像間の重複8行を照合して111入館・95入館日となり、5〜10月の全6見出しの件数と一致した。8月の不足3件も補完できた。10月の5件は既存IDの後続報告とし、10/9の退館21:45を追加。過去の「報告時点では滞在中」の出所も残る。受領内容は `cz-record-0011`、分析は `CZ-A007`〜`CZ-A010`。
+
+9件の退館欠損を0分に置換しない。滞在集計には時刻が揃う102件を使い、翌日解釈の1件も識別する。過去の欠損を「今も滞在中」にしたり、同日次回の入館時刻で埋めたりしない。10月は月途中で、完成した5〜9月とは区別してグラフ化する。
 
 継続する基本方法は共通スキルが所有する。第一周で見つけたSweet Spotと条件を休憩後の集中した第二周へつなぐ。両手・片手で扱う種目では、両手のSweet Spotから下げ、片手のSweet Spot重量で片手へ切り替えてさらに下げる。日別に `transitions` がないことは方法の失効ではなく、その日の切替実施が未報告という意味。現在の基準を案内できても、未報告の実施・周回・中間重量を生成しない。
 
@@ -133,6 +146,9 @@ Python 3.9以降の標準ライブラリのみ。以下はリポジトリのル�
 python3 chocozap/tools/sweet_spots.py validate
 python3 chocozap/tools/sweet_spots.py latest
 python3 chocozap/tools/sweet_spots.py visits --month 2026-10
+python3 chocozap/tools/sweet_spots.py visits --group-by month
+python3 chocozap/tools/sweet_spots.py visits --format csv --output /tmp/chocozap-entries.csv
+python3 chocozap/tools/sweet_spots.py visits --group-by month --format csv --output /tmp/chocozap-monthly.csv
 python3 chocozap/tools/sweet_spots.py history --machine チェストプレス
 python3 chocozap/tools/sweet_spots.py csv --date-basis reported --output /tmp/chocozap-reported.csv
 python3 chocozap/tools/sweet_spots.py csv --date-basis observed --dated-only --output /tmp/chocozap-observed.csv
@@ -143,9 +159,13 @@ python3 chocozap/tools/sweet_spots.py self-test
 
 `history` と `csv` は条件を自動合流せず、選んだ日付軸で並べる。日付未確認は末尾に残し、`--dated-only` のときだけ除く。`--machine`・`--mode` で完全一致の条件を選べる。CSVの `graph_date` と `date_basis` は軸を明示し、観察日・報告日・原文参照・訂正参照も各行に残す。空欄は未確認。表計算ソフトで数式になり得る文字列は先頭にアポストロフィを添える。
 
-`visits` はJSONで来館一覧と集計を返す。`--month YYYY-MM` は入館日で絞る。重複する画像内の同じ来館は一回として扱う。来館数・退館済み数・滞在中と報告された数・時刻の揃う滞在数を区別し、滞在の合計・平均には時刻が揃う分だけを使う。自動監視で更新される現在の在館状態ではない。来館情報の追加だけでは `latest`・重量の履歴・CSVを増やさない。
+`visits` はJSONで来館一覧と集計を返す。`--month YYYY-MM` は入館日で絞る。重複する画像内の同じ来館は一回として扱う。来館数・退館済み数・滞在中と報告された数・時刻の揃う滞在数を区別し、滞在の合計・平均には時刻が揃う分だけを使う。自動監視で更新される現在の在館状態ではない。来館情報の追加だけでは `latest`・重量の履歴・重量CSVを増やさない。
 
 CSVは再生成可能な中間形式。無指定なら標準出力、`--output` は既存ファイルを上書きしない。既定データはスクリプト位置から解決し、`--data PATH`・`--analyses PATH` で読み出すファイルを明示できる。
+
+`visits --group-by month` は月別集計へ切り替える。入館件数・入館日数・同日複数入館の日数、画像の月合計との一致、照合時点と出所、月途中か、退館不明数、日跨ぎ解釈の件数を返す。後から新しい入館が加わって月見出しと不一致になった場合は、出所の時点を確認し、新画像があれば再照合する。欠けた月を0回で埋めない。
+
+`visits --format csv` は一入館一行、`--group-by month --format csv` は一月一行のCSVを生成する。入館別CSVには日付・店名・入退館・状態・滞在分・日付解釈・出所を含む。これも正本からの派生物であり、別の手入力台帳にしない。`inferred_exit_date_count` は退館日の解釈を含む件数。入館情報の追加で重量の観察・履歴・CSVは増やさない。
 
 分析作成時の指紋確認：
 
@@ -204,5 +224,8 @@ python3 chocozap/tools/sweet_spots.py fingerprint --ref cz-visit-0007/O001 --ref
 
 2026-10-09、来館履歴画像の5行を初めて来館データとして追加。本人の普段の実施概要、画像の一括入力、来館と重量観察を分けた集計を導入した。既存26件のSweet Spot観察と観察日未確認の状態は維持した。
 
-EOF::CHOCOZAP_RECORDS_GUIDE::v0.4.0
+2026-10-10、5〜10月の画像15枚を既存正本に統合。入館は106件を新規追加し、既存10月5件には同一IDで後続状態を追加した。schema v2の追加項目として月見出し照合と日跨ぎ解釈を保持し、入館別・月別CSVを再生成できるようにした。Sweet Spotの26観察と現在基準は変更していない。
+
+EOF::CHOCOZAP_RECORDS_GUIDE::v0.5.0
+
 

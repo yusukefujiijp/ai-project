@@ -22,6 +22,17 @@ CSV_FIELDS = [
     "condition", "kg", "report_kind", "reference_scope", "origin",
     "source_refs", "correction_refs", "previous_ref",
 ]
+VISIT_CSV_FIELDS = [
+    "session_id", "visit_date", "location", "entered_at", "exited_at", "status",
+    "as_of", "duration_minutes", "exit_date_basis", "evidence_refs", "source_refs",
+]
+MONTHLY_CSV_FIELDS = [
+    "month", "entry_count", "unique_visit_days", "multi_entry_days",
+    "reported_entry_count", "count_matches_header", "coverage_scope", "coverage_as_of",
+    "timed_stay_count", "exit_unknown_count", "ongoing_at_report_count",
+    "inferred_exit_date_count", "completed_stay_minutes", "mean_completed_stay_minutes",
+    "coverage_source_refs",
+]
 
 
 def require(ok, message):
@@ -140,7 +151,7 @@ def validate_data(data):
         if record.get("date_source") is not None:
             source_ref(record["date_source"], rid + "/date_source")
         require(isinstance(record.get("spots"), list), rid + ": spots must be an array")
-        for key in ("sequences", "corrections", "feedback", "transitions", "visits"):
+        for key in ("sequences", "corrections", "feedback", "transitions", "visits", "visit_coverage"):
             require(isinstance(record.get(key, []), list), rid + ": " + key + " must be an array")
         obs_by_id = {}
         for origin in ("spots", "sequences"):
@@ -216,6 +227,21 @@ def validate_data(data):
                       if visit["exited_at"] is not None else None)
             status = visit.get("status")
             require(status in {"exited", "ongoing", "exit_unknown"}, loc + ": invalid visit status")
+            basis = visit.get("exit_date_basis")
+            if basis is not None:
+                require(basis in {"unknown", "same_day_from_row", "explicit_date",
+                                  "next_day_inferred_from_clock_rollover"},
+                        loc + ": invalid exit_date_basis")
+                require((basis == "unknown") == (exited is None),
+                        loc + ": exit_date_basis conflicts with exit timestamp")
+                if basis == "same_day_from_row":
+                    require(exited.date().isoformat() == visit["visit_date"],
+                            loc + ": same-day exit is on a different date")
+                if basis == "next_day_inferred_from_clock_rollover":
+                    require(entered is not None and
+                            (exited.date() - entered.date()).days == 1 and
+                            exited.time() < entered.time(),
+                            loc + ": invalid next-day clock rollover")
             require(exited is None or status == "exited",
                     loc + ": status conflicts with exit timestamp")
             require(exited is None or (exited <= as_of and
@@ -243,6 +269,32 @@ def validate_data(data):
             require(snapshot_key not in snapshots or snapshots[snapshot_key] == state,
                     loc + ": conflicting states at the same snapshot time")
             snapshots[snapshot_key] = state
+        covered_months = set()
+        for coverage in record.get("visit_coverage", []):
+            require(isinstance(coverage, dict), rid + ": coverage must be an object")
+            month = coverage.get("month")
+            require(isinstance(month, str), rid + ": coverage month is required")
+            check_date(month + "-01", rid + "/coverage.month")
+            require(month not in covered_months, rid + ": repeated coverage month")
+            covered_months.add(month)
+            for key in ("source", "as_of_source"):
+                source_ref(coverage.get(key), rid + "/coverage." + key)
+            count = coverage.get("reported_entry_count")
+            require(type(count) is int and count >= 0, rid + ": invalid header entry count")
+            header = sources[coverage["source"]]
+            require(header.get("displayed_month") == month and
+                    header.get("displayed_visit_count") == count,
+                    rid + ": coverage differs from its image header")
+            members = [v for v in record.get("visits", []) if v["visit_date"].startswith(month + "-")]
+            require(len(members) == count, rid + ": coverage count differs from transcribed entries")
+            as_of = check_timestamp(coverage.get("as_of"), rid + "/coverage.as_of")
+            require(not record["reported_date"] or as_of.date().isoformat() <= record["reported_date"],
+                    rid + ": coverage follows report date")
+            require(all(check_timestamp(v["as_of"], "as_of") <= as_of for v in members),
+                    rid + ": coverage precedes its included reports")
+            expected_scope = "full_month" if month < as_of.strftime("%Y-%m") else "month_to_date"
+            require(month <= as_of.strftime("%Y-%m") and coverage.get("scope") == expected_scope,
+                    rid + ": coverage scope conflicts with snapshot month")
         chains = defaultdict(list)
         correction_ids = set()
         for correction in record.get("corrections", []):
@@ -340,7 +392,7 @@ def validate_data(data):
 
 
 def visit_rows(data):
-    """Latest reported snapshot per session; never count report or spot IDs as visits."""
+    """Latest snapshot per entry ID, not a claim about distinct workout sessions."""
     groups = defaultdict(list)
     for record in data["records"]:
         for visit in record.get("visits", []):
@@ -355,6 +407,8 @@ def visit_rows(data):
             for field in ("entered_at", "exited_at", "location"):
                 if merged[field] is None and prior[field] is not None:
                     merged[field] = prior[field]
+                    if field == "exited_at":
+                        merged["exit_date_basis"] = prior.get("exit_date_basis", "source_row")
         entered = check_timestamp(merged["entered_at"], "entered_at") if merged["entered_at"] else None
         exited = check_timestamp(merged["exited_at"], "exited_at") if merged["exited_at"] else None
         refs = sorted(r["id"] + "/" + v["id"] for r, v in candidates)
@@ -363,6 +417,8 @@ def visit_rows(data):
             "location": merged["location"], "entered_at": merged["entered_at"],
             "exited_at": merged["exited_at"], "status": visit["status"],
             "as_of": visit["as_of"],
+            "exit_date_basis": merged.get("exit_date_basis",
+                                          "source_row" if exited else "unknown"),
             "duration_minutes": (exited - entered).total_seconds() / 60 if entered and exited else None,
             "evidence_refs": refs,
             "source_refs": sorted({r["id"] + "/" + value for r, v in candidates
@@ -372,19 +428,70 @@ def visit_rows(data):
     return sorted(rows, key=lambda r: (r["visit_date"], r["entered_at"] or "", r["session_id"]))
 
 
-def visit_summary(data, month=None):
-    rows = [r for r in visit_rows(data) if month is None or r["visit_date"].startswith(month + "-")]
+def summarize_visit_rows(rows):
     durations = [r["duration_minutes"] for r in rows if r["duration_minutes"] is not None]
+    day_counts = defaultdict(int)
+    for row in rows:
+        day_counts[row["visit_date"]] += 1
     return {
-        "visit_count": len(rows), "exited_count": sum(r["status"] == "exited" for r in rows),
+        "visit_count": len(rows),  # legacy alias of entry_count
+        "entry_count": len(rows),
+        "unique_visit_days": len(day_counts),
+        "multi_entry_days": sum(count > 1 for count in day_counts.values()),
+        "exited_count": sum(r["status"] == "exited" for r in rows),
         "timed_stay_count": len(durations),
+        "inferred_exit_date_count": sum(
+            r["exit_date_basis"] == "next_day_inferred_from_clock_rollover" for r in rows),
         "ongoing_at_report_count": sum(r["status"] == "ongoing" for r in rows),
         "exit_unknown_count": sum(r["status"] == "exit_unknown" for r in rows),
         "completed_stay_minutes": sum(durations) if durations else None,
         "mean_completed_stay_minutes": sum(durations) / len(durations) if durations else None,
         "visits": rows,
-        "note": "Reported visits only. Status is as of each source report; stay is not exercise time."
+        "note": "Entry records and distinct entry dates, not workout sessions. "
+                "Status is as of source reports. Durations exclude unknown exits and include "
+                "explicitly labelled date normalization; stay is not exercise time."
     }
+
+
+def visit_summary(data, month=None):
+    rows = [r for r in visit_rows(data) if month is None or r["visit_date"].startswith(month + "-")]
+    return summarize_visit_rows(rows)
+
+
+def visit_monthly_summary(data, month=None):
+    groups = defaultdict(list)
+    for row in visit_rows(data):
+        key = row["visit_date"][:7]
+        if month is None or key == month:
+            groups[key].append(row)
+    coverage = defaultdict(list)
+    for record in data["records"]:
+        for item in record.get("visit_coverage", []):
+            if month is None or item["month"] == month:
+                coverage[item["month"]].append((record, item))
+    result = []
+    for key in sorted(set(groups) | set(coverage)):
+        summary = summarize_visit_rows(groups[key])
+        summary.pop("visits")
+        summary.pop("note")
+        value = dict(month=key, **summary, reported_entry_count=None,
+                     count_matches_header=None, coverage_scope=None,
+                     coverage_as_of=None, coverage_source_refs=[])
+        if coverage[key]:
+            last = max(check_timestamp(c["as_of"], "coverage.as_of") for _, c in coverage[key])
+            current = [(r, c) for r, c in coverage[key]
+                       if check_timestamp(c["as_of"], "coverage.as_of") == last]
+            require(len({(c["reported_entry_count"], c["scope"]) for _, c in current}) == 1,
+                    key + ": conflicting latest coverage")
+            _, c = current[0]
+            value.update(
+                reported_entry_count=c["reported_entry_count"],
+                count_matches_header=summary["entry_count"] == c["reported_entry_count"],
+                coverage_scope=c["scope"], coverage_as_of=c["as_of"],
+                coverage_source_refs=sorted({r["id"] + "/" + c[field]
+                                            for r, c in current for field in ("source", "as_of_source")}))
+        result.append(value)
+    return result
 
 
 def flatten(data, date_basis="reported"):
@@ -518,13 +625,13 @@ def validate_analyses(data, analyses):
             "note": "Fingerprints check cited inputs, not correctness or current applicability."}
 
 
-def csv_text(rows):
+def csv_text(rows, fields=CSV_FIELDS):
     out = io.StringIO(newline="")
-    writer = csv.DictWriter(out, CSV_FIELDS, lineterminator="\n")
+    writer = csv.DictWriter(out, fields, lineterminator="\n")
     writer.writeheader()
     for row in rows:
         values = {}
-        for field in CSV_FIELDS:
+        for field in fields:
             value = row.get(field)
             if isinstance(value, list):
                 value = ";".join(value)
@@ -642,6 +749,75 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual(summary["exited_count"], 2)
         self.assertEqual(summary["timed_stay_count"], 1)
         self.assertIsNone(summary["visits"][1]["duration_minutes"])
+
+    def coverage_fixture(self):
+        data = self.visit_fixture()
+        record = data["records"][0]
+        record["sources"]["header"] = {
+            "text": "2026年1月 入館回数3回",
+            "displayed_month": "2026-01", "displayed_visit_count": 3}
+        extra = dict(record["visits"][0], id="v3", session_id="session3",
+                     entered_at="2026-01-01T19:10+09:00",
+                     exited_at="2026-01-01T19:11+09:00",
+                     corroborating_source="header")
+        record["visits"].append(extra)
+        record["visit_coverage"] = [{
+            "month": "2026-01", "reported_entry_count": 3, "source": "header",
+            "as_of_source": "s1", "as_of": "2026-01-02T08:00+09:00",
+            "scope": "month_to_date"}]
+        return data
+
+    def test_entries_days_short_rows_and_monthly_reconciliation(self):
+        data = self.coverage_fixture()
+        validate_data(data)
+        summary = visit_summary(data)
+        self.assertEqual((summary["entry_count"], summary["unique_visit_days"],
+                          summary["multi_entry_days"]), (3, 2, 1))
+        self.assertEqual(summary["completed_stay_minutes"], 71)
+        month = visit_monthly_summary(data)[0]
+        self.assertTrue(month["count_matches_header"])
+        self.assertEqual(month["coverage_scope"], "month_to_date")
+        self.assertEqual(visit_monthly_summary(data, "2026-02"), [])
+        extra = next(r for r in summary["visits"] if r["session_id"] == "session3")
+        self.assertIn("r1/header", extra["source_refs"])
+
+    def test_header_count_and_full_month_claim_must_match_evidence(self):
+        for case in ("header", "rows", "scope"):
+            data = self.coverage_fixture()
+            record = data["records"][0]
+            if case == "header":
+                record["sources"]["header"]["displayed_visit_count"] = 4
+            elif case == "rows":
+                record["visits"].pop()
+            else:
+                record["visit_coverage"][0]["scope"] = "full_month"
+            with self.assertRaises(ValueError):
+                validate_data(data)
+        data = self.coverage_fixture()
+        record = data["records"][0]
+        record["reported_date"] = "2026-02-01"
+        record["visit_coverage"][0].update(scope="full_month", as_of="2026-02-01T08:00+09:00")
+        validate_data(data)
+        self.assertEqual(visit_monthly_summary(data)[0]["coverage_scope"], "full_month")
+
+    def test_overnight_inference_and_missing_exit_survive_csv(self):
+        data = self.visit_fixture()
+        first = data["records"][0]["visits"][0]
+        first.update(entered_at="2026-01-01T23:26+09:00",
+                     exited_at="2026-01-02T00:18+09:00",
+                     exit_date_basis="next_day_inferred_from_clock_rollover")
+        validate_data(data)
+        summary = visit_summary(data)
+        self.assertEqual(summary["completed_stay_minutes"], 52)
+        self.assertEqual(summary["inferred_exit_date_count"], 1)
+        rows = list(csv.DictReader(io.StringIO(csv_text(summary["visits"], VISIT_CSV_FIELDS))))
+        self.assertEqual(rows[0]["duration_minutes"], "52.0")
+        self.assertEqual(rows[0]["exit_date_basis"], "next_day_inferred_from_clock_rollover")
+        self.assertEqual(rows[1]["duration_minutes"], "")
+        self.assertEqual(rows[1]["exited_at"], "")
+        first["exit_date_basis"] = "same_day_from_row"
+        with self.assertRaises(ValueError):
+            validate_data(data)
 
     def test_invalid_visit_time_and_changed_evidence(self):
         for field, value in (("entered_at", "2026-01-01T18:00"),
@@ -859,6 +1035,9 @@ def main(argv=None):
     commands.add_parser("latest")
     visits_parser = commands.add_parser("visits")
     visits_parser.add_argument("--month", help="YYYY-MM; filter by entry date")
+    visits_parser.add_argument("--group-by", choices=("entry", "month"), default="entry")
+    visits_parser.add_argument("--format", choices=("json", "csv"), default="json")
+    visits_parser.add_argument("--output", type=Path, help="Create a new export file; never overwrite")
     commands.add_parser("self-test")
     for name in ("history", "csv"):
         sub = commands.add_parser(name)
@@ -886,7 +1065,18 @@ def main(argv=None):
         elif args.command == "visits":
             if args.month is not None:
                 check_date(args.month + "-01", "month")
-            result = visit_summary(data, args.month)
+            result = (visit_monthly_summary(data, args.month) if args.group_by == "month"
+                      else visit_summary(data, args.month))
+            output = (csv_text(result if args.group_by == "month" else result["visits"],
+                               MONTHLY_CSV_FIELDS if args.group_by == "month" else VISIT_CSV_FIELDS)
+                      if args.format == "csv" else
+                      json.dumps(result, ensure_ascii=False, indent=2, allow_nan=False) + "\n")
+            if args.output:
+                with args.output.open("x", encoding="utf-8", newline="") as stream:
+                    stream.write(output)
+            else:
+                sys.stdout.write(output)
+            return 0
         elif args.command == "fingerprint":
             result = {"evidence": args.refs, "evidence_fingerprint": fingerprint(data, args.refs)}
         else:
@@ -912,4 +1102,5 @@ def main(argv=None):
 
 if __name__ == "__main__":
     sys.exit(main())
+
 
