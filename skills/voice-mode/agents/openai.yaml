@@ -1,0 +1,4 @@
+interface:
+  display_name: "Voice Mode"
+  short_description: "突然の相談に備え、ChatGPT Voiceの準備と学びをつなぐ"
+  default_prompt: "$voice-mode で、これからの音声相談に必要な準備を手伝って。"
