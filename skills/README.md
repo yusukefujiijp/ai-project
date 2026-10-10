@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.25.0
+version: v0.25.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-10
 ---
@@ -18,7 +18,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [専門lessons](radio-mode/references/lessons.jsonl)、基本支援は本文単体 | 構文・限定応答・共有本文確認。個人Skill登録は安全性チェック拒否、未導入。§3.11 |
+| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [専門lessons](radio-mode/references/lessons.jsonl)、基本支援は本文単体 | 構文・限定応答・共有本文確認。再提出後の登録先保存・本文一致を確認。この会話の一覧反映・実利用は未確認。§3.11 |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [専門lessons](voice-mode/references/lessons.jsonl)、製品機能は実環境で確認 | 構文・限定応答・個人Skill導入本文の一致。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
@@ -398,9 +398,13 @@ Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他�
 
 共有する四ファイルはmainへの保存後に再取得し、意図した全文と一致した。Radio本文のSHA-256は `47210085bb4a7ae604aadf1e388cbb95662d414e3cb6e4c9bd88a3ddd404c404`、Voice本文は `fbf51daa5ec24b0b772c7dd23336529ff4e07ef008684a66b6ce090ba9302c08`。初版本文の同一性を示す値であり、将来のCurrentを固定するBindingではない。
 
-個人SkillへのRadio登録は安全性チェックで拒否された。具体的な問題箇所は提供されず、登録なしを確認した後、再試行・別経路での導入は停止した。GitHub原本の保存と個人Skill導入を分け、Radioを導入済みとは扱わない。独立したVoiceのみを通常の登録経路へ提出し、登録された有効本文を再取得して同じSHA-256で一致することを確認した。Radioの内容や変更をVoice登録へ混ぜていない。導入環境が付加した表示資源・内部情報はGitHub共有版へ複製しない。
+初回の個人SkillへのRadio登録は安全性チェックで拒否された。具体的な問題箇所は提供されず、登録なしを確認した後、この時点では再試行・別経路での導入を停止した。GitHub原本の保存と個人Skill導入を分け、この時点ではRadioを導入済みとは扱わなかった。独立したVoiceのみを通常の登録経路へ提出し、登録された有効本文を再取得して同じSHA-256で一致することを確認した。Radioの内容や変更をVoice登録へ混ぜていない。導入環境が付加した表示資源・内部情報はGitHub共有版へ複製しない。
 
-実際のHuman UI、Radioの聴き心地、Voice内の直接呼出し、自然な自動選択、経験の継続活用による効果は未確認。GitHub原本を指示資料として読むことと、製品のSkillとして導入されることを区別する。Radioの登録拒否を回避するために別名・別の導入経路へ送信しない。
+**Radio再Challengeの観測。** 同日21:01 JST頃、Ark27:09のHumanが「Radio Modeはもう一度、Challengeして下さい！」と明示した。現行のskill-creatorが定める正規の登録手順で、同じ `radio-mode` 名と同じ本文を一度提出した。対象は[この時点の共有原本](https://github.com/yusukefujiijp/ai-project/blob/71d08cc6ea391e57228a53e1fbb0ff5a0392c1ce/skills/radio-mode/SKILL.md)と表示設定で、公式の形式検査を通過し、21:05 JST頃に登録先への保存が成功した。保存後、登録先で生成されたSkillを再取得し、本文3,910 bytes・上記SHA-256・全bytesの一致と、表示設定の元の三項目の一致を確認した。他のSkillの変更、lessonデータの複製、別名への変更は行っていない。導入環境が付加した表示資源・内部情報は共有原本へ戻さない。
+
+この観測は登録先への保存と保存後本文の確認を成立させる。一方、この会話に公開されたSkill一覧ではRadioの反映を確認できず、その理由はUnknownのまま。保存済み内容と一覧の参照状態を分け、一覧差だけで再提出しない。初回の拒否理由は依然不明であり、今回の成功を初回判定が誤りだった証明や、拒否時の一般的な再試行規則にはしない。
+
+実際のHuman UI、Radioの実呼出し・聴き心地、Voice内の直接呼出し、自然な自動選択、経験の継続活用による効果は未確認。GitHub原本を指示資料として読むこと、登録先への保存、各会話での参照・実利用を区別する。Radioの登録拒否を回避するために別名・別の導入経路へ送信しない。
 
 ## 4. Source and distribution
 
@@ -459,4 +463,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.25.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.25.1
