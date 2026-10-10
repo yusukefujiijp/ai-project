@@ -1,0 +1,4 @@
+interface:
+  display_name: "Radio Mode"
+  short_description: "音声ボタンで聴くための、文脈に沿った一続きの応答を整える"
+  default_prompt: "$radio-mode で、今の話を耳で理解できる形にまとめて。"
