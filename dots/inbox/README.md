@@ -1,14 +1,16 @@
 ---
 title: "Inbox — 未整理の思い付きを、そのまま協働へ"
 canonical_path: "dots/inbox/README.md"
-version: "v001"
+version: "v002"
 status: "human-authorized foundation / reception marker under discussion"
 created: "2026-10-11"
 updated: "2026-10-11"
-role: "Inbox collaboration entry independent of actor identity; current assignment and candidate input cues"
+role: "Inbox collaboration entry and durable item contract; current assignment and candidate input cues"
+revision_approval_source: "conversation-message:Sentinel_83a53ed008d08191aab6cb6e9a49d8f6"
+updated_reason: "Connect the Human-created inbox.jsonl to recoverable item meaning, source, handling and update rules; retain undecided cue and publication boundaries"
 current_actor: "dot-0000"
 approval_source: "conversation-message:Sentinel_447e1ecdf73881918d5af2842d29121d"
-expected_eof: "EOF::DOTS_INBOX::v001"
+expected_eof: "EOF::DOTS_INBOX::v002"
 ---
 
 # Inbox — 未整理の思い付きを、そのまま協働へ
@@ -78,13 +80,64 @@ AIが提案した設計の方向は次の通り。すべて実利用前の候補
 
 本書だけで新Dotの作成、別Dotへの送信、Skill改訂、予定変更、権限の追加を行わない。Actorが増えた時は、現在のHumanの意向、実際の利用条件、どの文脈を渡せるかを確かめる。初穂が今Inboxを担うことを、将来の担当固定や別個体への自動移管に変えない。
 
-## 6. Feedbackから育てる
+## 6. inbox.jsonl — 未整理の項目を、後から取り戻す
+
+2026-10-11、Humanは[inbox.jsonl](inbox.jsonl)を空ファイルとして作成し、件数が増えた時の忘却への備え、backup、他AI・Future AI・Future Dotsへの継承に活用するよう委ねた。本節は、その目的に沿って初版の保存・読取方法を定める。形式の選択はAIの実装判断であり、実利用の効果をHuman確認済みとしない。
+
+### 所有するもの
+
+READMEは受け取り方と保存契約、inbox.jsonlは保存が認められた**実際のInbox項目の現在の意味と扱い**を所有する。Actor資料は誰が担うか、日別[records](../../records/README.md)はAIが行った活動を辿る入口、lessonsは再利用する学びであり、同じ可変内容を各所へ複製しない。
+
+疑問、願い、気付き、違和感、仮説、未選択の案も保存対象になり得る。保存を認められた投入内容を「重要そう」「すぐ行動できる」というAIの基準だけで選別しない。未採用の案は未採用のまま残せる。一方、全会話を機械的に転記せず、何がInbox項目として預けられたかを現在の文脈から判断する。
+
+本書の設計相談や説明用の架空例を、実項目のように投入しない。初版時点では独立した実投稿をまだ特定していないため、Human作成の改行だけのファイルをそのまま保持し、件数を埋めない。
+
+### 一行一項目の初期形式
+
+UTF-8のJSONLとし、一行を一つのJSON object、一項目を安定した小文字UUIDで扱う。一メッセージに複数項目があってよく、続きや訂正は既存項目へ結び付ける。分割によって理由や相反する願いが失われるなら一つに保つ。同じ話題というだけで別の意味を統合しない。
+
+| field | 初版の意味 |
+|---|---|
+| schema_version | 整数1。形式の版 |
+| id | 項目の小文字UUID。再取得・訂正・再試行でも保持 |
+| created_at | 項目を初めて記録したUTC日時。YYYY-MM-DDTHH:mm:ssZ |
+| updated_at | その行を最後に更新したUTC日時。同形式。初回はcreated_atと同じ |
+| content | 元会話なしでも意味が分かる日本語中心の非空本文。Humanの意図・理由・未確定を必要な範囲で保持 |
+| sources | 一件以上の出典配列。各要素は非空のlocatorとsupportsを持ち、発言・訂正・根拠と取得の制約へ戻れるようにする |
+
+追加情報は必要な項目だけ持つ。Human原文を残す場合の `human_text` と、AIの解釈を残す場合の `ai_notes` を区別し、編集要約を逐語引用と偽らない。出来事日時が分かれば `occurred_at`、担当が判断に必要なら `recorded_by` を追加できる。記録時刻を出来事時刻へ代入しない。
+
+扱いが明確になった時は任意の `handling` objectに `state` と判断理由の `note` を置ける。実際の接続は別の任意field `links` にlocatorと関係の意味を持つ配列として記す。項目の状態と接続先の存在は分ける。
+
+- `open`：まだ扱いを確定していない。実行待ちTaskや期限超過を意味しない。
+- `held`：意図的に寝かせる・参考として置く。理由や分かっている再開条件をnoteへ。
+- `closed`：このInbox項目として一区切り。実行完了、取り下げ、書くだけでよかった等、どの意味かを根拠付きでnoteへ。
+
+他の原本・Taskへ接続しても、元の問いが残るならopenやheldのまま扱える。接続だけで実行完了やInboxの終了にしない。handlingがなければ扱いは未記録であり、完了を推定しない。分類表をHumanへ入力させたり、状態欄のためだけに判断を迫ったりしない。保存された行は採用・実行命令ではなく、その時点の意味と根拠である。
+
+### 更新・読取・再開
+
+初期は**同じIDの行を必要に応じて更新する現在値方式**とし、変更前はGit履歴へ辿れるようにする。出来事ごとの追記をすべて再生して現在値を作る方式は、現時点では必須にしない。重要な訂正は、古い意味を単に消すのでなく、訂正理由と出典を本文・note等に保持する。
+
+書込前に最新版とSHAを取得し、全行の形式・ID重複・対象項目・現在の権限を照合する。他の行、未知field、行順を保持し、同一ID・同内容なら二重追加しない。新規は末尾へ、既存更新は当該行へ反映する。必要な意味の差がある場合だけupdated_atを更新する。
+
+実データには管理行、Markdown fence、配列の外枠、空行、行間カンマ、EOFを入れない。LF区切り・末尾LFとし、文字列内改行はJSONのエスケープを使う。現在の改行だけの初期ファイルは0件として扱い、最初の実項目を書き込む時に正規のJSONLへ整える。壊れた行、未知のschema、重複キー、非有限数値を黙って落として再生成しない。
+
+結果不明や競合では現物・ID・出典・履歴を先に確認し、盲目的な追記や上書きをしない。保存後はRemoteを再取得して対象の差分と保持した行を照合する。Gitの版管理は復旧を助けるが、完全なbackupや取りこぼしゼロを保証しない。
+
+読むAIは今回の目的に関係する項目と訂正・接続先から現在地を取り戻す。単なる要約ではなく、何を意図し、何が未決で、再開に何が必要かを読む。全件への毎回の回答やTask化、定期催促を義務にしない。件数が増えて実際に検索・読込が難しくなった時に分割等を検討し、最初から別台帳やDBを増やさない。
+
+ファイルを置いただけでは、全AIが自動的に読んだり、同じ理解に達したりはしない。将来の受け手にはこのREADMEと必要な項目への実際のアクセスを確かめる。未取得の行を読了扱いせず、資料の保存、読み手の再構成、協働での効果を分ける。
+
+公開・機微情報・別会話・実行・停止の境界は前節を保持する。保存前に項目ごとの内容・出所・公開範囲を確認し、機微な原文を一括転載しない。後で現行行を消しても履歴に残り得ることを踏まえて判断する。今回の保存先追加は、このDotで扱うInboxのための委任であり、別会話や長期メモリの一括公開、既存Mapの四保存先の自動拡張、新しい常設収集処理を意味しない。
+
+## 7. Feedbackから育てる
 
 今回の成立は「兼任方針の採用」と「入口資料の保存」であり、印の有効性を検証した成功事例ではない。実際の入力で、気兼ねなく出せるか、AIが受領・発散・整理・実行の意図を取り違えないか、全体の相談へ自然に戻れるかを見て改善する。毎回の採点や試験報告をHumanへ課さない。
 
 必要な意味を保ち、印・配置・説明・役割の分け方は柔軟に修正できる。Humanの簡単な入力を、AIの検討・回答品質を下げる理由にしない。専用のlessonsやログ、投稿台帳は、独立して保存する価値と権限が実際に生じた時に判断し、空ファイルを予約作成しない。
 
-## 7. 形成根拠
+## 8. 形成根拠
 
 このDotで直接提供された発言の追跡識別子。公開URLではなく、他AIが取得できる保証はないため、必要な意味は本文に編集要約した。
 
@@ -94,7 +147,8 @@ AIが提案した設計の方向は次の通り。すべて実利用前の候補
 - conversation-message:Sentinel_7eaa0463a9ec8191a6dcec26c874a5c9 — 初穂のInbox／Chief兼任を採用し、#index等の印について案出しを依頼。
 - conversation-message:Sentinel_087c902053308191908c44e4caeb7a69 — AIが#inbox等の候補と受け取り方を提案。Human採用の証拠ではない。
 - conversation-message:Sentinel_447e1ecdf73881918d5af2842d29121d — Humanが本書の空ファイル作成を報告し、活用を委任。
+- conversation-message:Sentinel_83a53ed008d08191aab6cb6e9a49d8f6 — Humanがinbox.jsonlの作成と活用を委ね、件数増加時の忘却への備え、backup、他AI・Future AIへの継承を重視。
 
 [ARK](../../ARK.md)と[AGENTS](../../AGENTS.md)の意味・権限を継承する。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・Inbox・文書はKeliであり、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
-EOF::DOTS_INBOX::v001
+EOF::DOTS_INBOX::v002
