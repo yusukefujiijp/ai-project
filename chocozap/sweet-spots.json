@@ -2490,6 +2490,156 @@
           "source": "S02"
         }
       ]
+    },
+    {
+      "id": "cz-record-0014",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-10T21:52:34.375Z",
+      "recorded_by": "AI assistant",
+      "observed_date": null,
+      "reported_date": "2026-10-11",
+      "reference_scope": "historical",
+      "date_basis": "本人の報告日時2026-10-11T06:47:32+09:00で『今日』を2026-10-11（Asia/Tokyo）と解決。画像に2026年10月と10/11の入退館を確認。画像は過去5件も含むため記録全体のobserved_dateはnullとし、各visit_dateを保持する。",
+      "spots": [],
+      "visits": [
+        {
+          "id": "V001",
+          "session_id": "cz-session-20261001-2131",
+          "visit_date": "2026-10-01",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-01T21:31+09:00",
+          "exited_at": "2026-10-01T22:45+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V002",
+          "session_id": "cz-session-20261004-2134",
+          "visit_date": "2026-10-04",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-04T21:34+09:00",
+          "exited_at": "2026-10-04T23:05+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V003",
+          "session_id": "cz-session-20261007-1928",
+          "visit_date": "2026-10-07",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-07T19:28+09:00",
+          "exited_at": "2026-10-07T21:36+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V004",
+          "session_id": "cz-session-20261008-1844",
+          "visit_date": "2026-10-08",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-08T18:44+09:00",
+          "exited_at": "2026-10-08T21:15+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V005",
+          "session_id": "cz-session-20261009-1853",
+          "visit_date": "2026-10-09",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-09T18:53+09:00",
+          "exited_at": "2026-10-09T21:45+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V006",
+          "session_id": "cz-session-20261011-0613",
+          "visit_date": "2026-10-11",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-11T06:13+09:00",
+          "exited_at": "2026-10-11T06:42+09:00",
+          "status": "exited",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row",
+          "activity_source": "S02",
+          "activity_summary": {
+            "scope": "selected_machines_only",
+            "machines": [
+              "レッグプレス",
+              "ラットプルダウン",
+              "チェストプレス",
+              "ショルダープレス",
+              "ディップス",
+              "アブベンチ"
+            ],
+            "execution_order": null,
+            "completion": "finished_as_reported",
+            "reported_duration_minutes": 30,
+            "duration_kind": "user_report",
+            "workday": true,
+            "first_morning_visit": "user_report",
+            "deadline_description": "Elon Musk式締切理論"
+          }
+        }
+      ],
+      "visit_coverage": [
+        {
+          "month": "2026-10",
+          "reported_entry_count": 6,
+          "source": "S01",
+          "as_of_source": "S02",
+          "as_of": "2026-10-11T06:47:32+09:00",
+          "scope": "month_to_date"
+        }
+      ],
+      "feedback": [
+        {
+          "source": "S02"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "kind": "image_transcription",
+          "text": "6:43\n来館履歴\n設備利用履歴\n2026年10月\n入館回数 6回\nchocoZAP 仙台河原町\n10/11(日) 入館6:13 退館6:42\nchocoZAP 仙台河原町\n10/9(金) 入館18:53 退館21:45\nchocoZAP 仙台河原町\n10/8(木) 入館18:44 退館21:15\nchocoZAP 仙台河原町\n10/7(水) 入館19:28 退館21:36\nchocoZAP 仙台河原町\n10/4(日) 入館21:34 退館23:05\nchocoZAP 仙台河原町\n10/1(木) 入館21:31 退館22:45",
+          "reported_date": "2026-10-11",
+          "reported_at": "2026-10-11T06:47:32+09:00",
+          "attachment": {
+            "filename": "IMG_1192.png",
+            "sha256": "48e79c37f55e58754dbe54ba07239608a6fde8cb3082c215ee0ad1dec7b32115",
+            "file_id": "file_0000000053e88209accd33cc2b66fba0"
+          },
+          "displayed_month": "2026-10",
+          "displayed_visit_count": 6,
+          "displayed_clock": "6:43",
+          "history_month": "2026-10",
+          "readable_row_count": 6,
+          "context": "AIが添付画像を視認して来館履歴部分を編集転記。空白を正規化し、ステータスバーの電池等を省略。原画像は会話添付にありGitHubへ複製しない。10/11の表示時刻差は29分で、館内滞在の記録。月合計6回と6行が一致。旧5行は既存session_idへ照合し、入館件数を二重加算しない。"
+        },
+        "S02": {
+          "text": "今日は仕事だが、朝初めてchocoZAPに行った\n主要のみ(Leg press\nRat pull-down\nChest Press\nShoulder Press\nDips\nアブ ベンチ(言い方？英語で) \nで\"Elon Musk式締切理論\"があると30分で終了した！\nこの事実はとても大きいです！\n\nここまでのイメージや意味合いを深く理解できますか？ 私(YusukeJP)の意図を最大限に汲み取ってGraph Modeを活用しつつ整理整頓してください！私(YusukeJP)の意図を完璧に言語化し構造化して下さい！(Graph Mode最大活用を！)",
+          "reported_date": "2026-10-11",
+          "reported_at": "2026-10-11T06:47:32+09:00",
+          "context": "本人による、仕事のある日の初の朝利用・主要6種目のみ・30分で終了という実施報告と、その発見の価値評価。『Rat pull-down』は継続文脈のラットプルダウン、『アブ ベンチ』はアブベンチに対応づけ、原語も保持した。朝初回は本人報告として保存し、最初のchocoZAP利用と解釈しない。列挙は種目集合であり実施順の指定とは扱わない。本人の30分という表現と画像の分精度の滞在差29分は別の根拠として保持し、29分を連続運動時間としない。この回では主要のみという明示内容が普段のほぼ全台という概要に優先する。締切が作用したという本人の解釈を保持し、Elon Musk本人の定説や科学的因果の実証とは認定しない。"
+        }
+      }
     }
   ]
 }
