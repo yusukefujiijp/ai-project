@@ -1,14 +1,14 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v006"
+version: "v007"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-06"
+updated: "2026-10-10"
 role: "Current Dots direction and routes to shared lessons, actor logs, bounded Ark Map operation and preserved history"
-updated_reason: "Link dot-0000 periodic Ark Map and bounded save; distinguish common and applicable specialist lessons"
+updated_reason: "Link the Human-named dot-0001 Inbox preparation draft; preserve existing direction, operation and permission boundaries"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v006"
+expected_eof: "EOF::DOTS_HOME::v007"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -35,6 +35,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 | 初穂の定期Ark Mapと限定saveをどう運用するか | [Ark Map運用原本](ark-map/README.md) | dot-0000固有の表示・読取・保存境界。製品側の予定・実行状態とは分ける |
 | Dotsが仕事から何を学び、次にどう使うか | [lessons](lessons/README.md)／[lessons.jsonl](lessons/lessons.jsonl) | 条件・根拠付きの学びと、その読取・更新契約 |
 | 最初の協働相手は誰か | [dot-0000 — Dot00:00; 初穂](actors/dot-0000/README.md) | 安定したActor識別子、表示名、命名の意味、現在の持ち味 |
+| 将来のInbox Dotをどう準備するか | [dot-0001: Inbox — 準備原本](actors/dot-0001/README.md) | ID・名前はHuman採用済み。製品上の個体は未作成。成立理由・役割・接続条件を育てる設計Draft |
 | Actorがどの仕事を観測・記録したか | [logs](logs/README.md)／[dot-0000](logs/dot-0000.jsonl) | Actor別の出来事を根拠へつなぐ現役ログ |
 | どんな経験と訂正から始まったか | [保管した初穂の形成記録](../__archives/ARC-008/dots/records/2026/20261001-first-fruit.md)／[ARC-008](../control-center/ARCHIVE.md#arc-008) | 命名・Humanの意味・訂正を原文のまま保存。現役への追記先ではない |
 | 初版の協働基盤をなぜ、どう作ったか | [STR-005](../control-center/changes/STR-005-dots-collaboration-foundation.md) | STR-005初版六パスの承認・変更・検証・公開証拠 |
@@ -68,4 +69,4 @@ Dots全体へ適用する共通知識は[lessons](lessons/README.md)で育て、
 
 読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を共通lessonの第二正本にしない。専門lessonも同じ契約を参照し、全Dotsへ一般化すると誤適用される学びが実際に生じた時だけ、その領域の原本へ置く。
 
-EOF::DOTS_HOME::v006
+EOF::DOTS_HOME::v007
