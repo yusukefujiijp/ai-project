@@ -1,8 +1,8 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.24.0
+version: v0.24.1
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-07
+updated: 2026-10-10
 ---
 # Ark Shared Skills Hub
 
@@ -131,12 +131,14 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 ### Copy & Paste — Transition Plan
 
 ```text
-prepare-ark-transition（Ark Transition）を使い、今回の移行準備をPlan Modeで進めてください。種類・Source・Target・目的は現在の文脈から解決し、確定事項を再利用してください。
+$prepare-ark-transition（Ark Transition）を使い、今回の移行準備をPlan Modeで進めてください。種類・Source・Target・目的・承認範囲は現在の文脈から解決し、確定事項を再利用してください。
 
-Skillが使えない場合は次の共有本文を指示資料として読み、そこからCurrent共通契約と適用Runtimeへ進んでください。
+現行Skill・共通契約・適用Runtimeに従い、元会話に依存せず協働を再開できる計画を、Living Review → Next stepとともに示してください。重要な未確定事項だけを確認してください。
+
+Skillが利用できない場合は、次の共有SKILL.mdを実際に読み、そこから現行共通契約へ進んでください。
 https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transition/SKILL.md
 
-宣言された全文読解・Identity・EOF・Binding・再構成条件を守り、重要な不足だけを確認してください。Source準備・保存確認・Target受入れ・Human操作を分け、必要な資料と依存関係を含む実行可能な計画を示してください。今回は調査と計画のみ。実装・保存・実際の移行は行わず、計画提示で停止してください。
+今回は調査と計画のみです。変更・保存・反映・実際の移行は行わず、計画提示で停止してください。
 ```
 
 共有Skillは[Current共通契約](../prompts/ai-next-thread-handoff.md)へ接続します。両資料が必要とする全文読解・同一性確認を省く入口ではありません。AIが参照を辿れない時は、必要なSourceと最小の回復方法を示します。Skill機構なしで読んだ場合は指示資料の利用であり、導入済みと称しません。
@@ -146,6 +148,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transit
 Arkの章作成では、Skillから[Domainのペア準備規則](../ark-project/README.md#41-odd--even-paired-preparation)へ進みます。既存章のThread継続では既存Subを再利用し、毎回のSub新設へ変換しません。番号・契約版・EOF文字列・固定ファイル数は、この定型入口に埋め込みません。
 
 **カプセル化の境界。** 必要な目的・対象・Mode・権限は入口と現在の会話から伝え、定型の読解・選別・検証をAI側で担います。Humanに全内部資料の理解や毎回の追加フォームを求めず、AIの方法・説明密度・創発性は開きます。内部の意味・責任・不確実性まで隠さず、必要時には根拠と変更理由を説明します。この入口文は本節だけで保守し、独立した_queryとの二重管理を新設しません。
+
+2026-10-10、Ark99:00のHuman Correctionにより、定型の資料選択・再構成計画・出力伝達・確認をSkillへ持たせ、呼出し文は現在の依頼とModeを伝える入口へ整理しました。Thread名のコピー面を準備元・受入れ先の両方に置く成立条件は[共通契約 §8](../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有し、Skillは受入れ先が実際に読む起動本文への伝達を担います。特定Arkの起動元や現在の番号を汎用Skillへ固定せず、短いHuman入力からも必要な検討品質を保持します。文書と導入内容の確認は、実際の受入れ先の応答・Copy UI・往復負担の改善と区別します。
 
 ### 3.1 Cross-AI entry for the added skills
 
@@ -425,4 +429,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.24.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.24.1

@@ -4,6 +4,10 @@ canonical_name: "AI Next Thread Handoff"
 version: "v003-human-authorized"
 date: "2026-10-01"
 date_scope: "Asia/Tokyo adoption date; corresponding UTC date 2026-09-30"
+updated: "2026-10-10"
+revision: "2026-10-10-human-copy-surfaces"
+revision_authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
+revision_scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
 filename: "ai-next-thread-handoff.md"
 canonical_path: "prompts/ai-next-thread-handoff.md"
 class: "reusable_prompt"
@@ -135,13 +139,26 @@ First Legal Moveは、READ_REQUIRED_SOURCE、CONTINUE_APPROVED_WORK、VERIFY_PEN
 
 一つのHuman窓口と内部の実行主体数を区別する。主担当は目的・成果・重要な判断・外部状態を統合し、利用できるAgentや作業環境へ承認Scope内を委任できる。委任により新しい権限は生まれない。権限・Correction・停止条件を相手へ渡し、結果を確認する。
 
-実際のThread移行を依頼された時は、確定しているTitleのCopy & Paste面、その後にHandoffのCopy & Paste面、必要なHuman操作を示す。Current platformに承認済みの直接作成・委任・添付機能があるなら使い、Humanを伝言係にしない。Toolの存在やTask作成だけで受入れ成功を認定しない。
+Humanが必要な操作をその場で完結できるよう、実際のThread起動・移行では、準備元と受入れ先の両方にTitleのCopy & Paste面を用意する。規則の原本は本節に置き、同じ確定値を必要な利用場所へ提示する。
 
-Title等の確定値はCompile Once, Echo Exactly。翻訳・日付・引用符・名前を無断で再生成しない。Exactnessを全文章へ広げず、Current Humanの訂正を尊重する。架空の日付・番号・UI成功を作らない。
+- **準備元:** 移行先ごとに、確定Titleのコピー面→対応する起動Query／Handoffのコピー面→必要なHuman操作の順で示す。複数TargetのTitleと起動本文を混在させない。
+- **受入れ先:** 初回の通常受入れ応答の冒頭で、自分自身の確定Titleをコピー可能な形で再掲する。準備元はこの受入れ側の出力要件を、Targetが実際に読む起動Query／Handoffへ含める。Sourceの計画だけに書いて伝達済みとしない。
+- **コピー形式:** ラベルと説明を外に置き、Titleだけを一行で収めた独立した `text` コードブロックを使う。他のTitle、説明、起動本文を同じブロックへ入れない。
+- **計画段階:** 確定Titleがあればコピー面を示し、実行段階における両側の提示と検証を計画する。計画だけの依頼から、完成した起動パッケージの発行、保存、Target起動へ進まない。未確定名は候補として区別し、Title確定の要否は適用Runtimeに従う。一律の追加Gateにしない。
+
+Title等の確定値はCompile Once, Echo Exactly。最新のHuman指定と適用Runtimeから確定し、識別子・日付・区切り記号・引用符・名前を、準備元・起動本文・受入れ先で一致させる。受入日等で独自に再生成しない。Exactnessを全文章へ広げず、Current Humanの訂正を尊重する。架空の日付・番号・UI成功を作らない。
+
+専用のSTOP・Failure・Exact Output等が適用される場合は、その応答条件を優先する。コピー面の不足だけを修正するために、成立済みのBoot・全文読解・再構成を再演しない。Title再掲を毎応答の義務や既入力の処理を待たせる追加承認にせず、必須Gate後は現在のHuman入力へ接続する。
+
+コードブロックの出力、実際のCopy UIの表示・操作、Thread作成・名称設定、受け手の理解を区別する。Current platformに承認済みの直接作成・委任・添付機能があるなら使い、Humanを不要な伝言係にしない。Toolの存在やTask作成だけで受入れ成功を認定しない。
 
 SkillはこのCurrent契約を発見・全文読解して適用する入口であり、第二の契約原本を持たない。Skill-freeでもこのURLと現在の依頼から使える。導入済みか、Toolが使えるか、書込権限があるか、実行できたかは別である。
 
 ## 9. Amendment and provenance
+
+2026-10-10、Ark99:00のHumanは、Thread名のコピー面が新しいThreadにないと準備元へ戻る負担が生じると報告し、「両方必要」「認知負荷軽減」と訂正した。続いて、定型処理をprepare-ark-transitionへ持たせ、移行準備Promptを比較的薄くする改訂を依頼した。本追補は、§8の両側の出力責任と伝達経路を明示し、Skillが手順、共有契約が成立条件、呼出し文が今回の意図・Modeを担う分担を具体化する。
+
+これはv003の互換追補であり、全文読解・Root・Human Authority・必須Binding・Plan-only・完了証拠の条件を緩めない。[追補前の固定原本](https://github.com/yusukefujiijp/ai-project/blob/2f88221d05c1bcbe631875be7791f2fe71d5e427/prompts/ai-next-thread-handoff.md)を履歴として保持する。本文blobは変わるため、旧読解Receiptのまま新本文を読了扱いにしない。明示的な旧固定Bindingは変更せず、その契約に従う。文書整合・保存・限定応答確認と、実際のCopy UI・往復負担の改善は別の証拠で扱う。
 
 v003は、2026-10-01 JSTのHumanによる基盤移行計画へのGitHub実行承認を受け、継続遂行・権限・来歴・並行作業・復旧を一体化した版である。実装・Remote確認・独立AI試験の結果は[STR-003](../control-center/changes/STR-003-persistent-collaboration-foundation.md)が所有し、本文の存在だけで効果を主張しない。
 
