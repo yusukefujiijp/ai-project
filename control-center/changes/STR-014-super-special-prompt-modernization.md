@@ -2,7 +2,7 @@
 title: "STR-014 — 旧選抜棚の四Promptを育て直し、promptsへ継承する"
 version: "v001-human-authorized"
 canonical_path: "control-center/changes/STR-014-super-special-prompt-modernization.md"
-status: "Human-authorized implementation prepared; publication and remote verification recorded below"
+status: "scoped implementation published and remotely verified; independent reader and field effects unobserved"
 created: "2026-10-10"
 updated: "2026-10-10"
 owner: "Ark27:09 / ChatGPT Work"
@@ -128,7 +128,13 @@ AGENTSの第2節以降、Prompt棚の第4節以降、PLANのdiagnosis-history以
 
 公開準備中にmainが`ac355e59505dccdfec3e7c94b77e29b33145bd5f`へ進んだため、書込前に差分を確認した。追加は`references/README.md`一つで、改行のみ・blob `8b137891791fe96927ad78e64b0aad7bded08bdc`。本案件の15Pathとは重ならない。この並行Seedを保持した新headを公開基点に使う。空の入口の作成を、参照原本の整理完了や実利用の証拠とはしない。
 
-ここまでの状態は準備・公開前確認。公開commitとRemote再取得の結果は、実施後に本節へ追記する。
+実装commit [`2bfff7424efe2944b2fb42415d6607f578afaeaf`](https://github.com/yusukefujiijp/ai-project/commit/2bfff7424efe2944b2fb42415d6607f578afaeaf)、Tree `b73eac29367030ac05467436821626f3d0f6d00d`をmainへ公開した。親commitは上記`ac355e59505dccdfec3e7c94b77e29b33145bd5f`。公開前に10本文のRemote blobと準備内容を照合し、Treeの対象15Path、対象外の保持、commitの親とTreeを確認した。mainの一致を再確認し、expected_shaを指定した非force更新を行った。
+
+2026-10-10T08:34:21Z（JST 17:34:21）までに、書込対象10ファイルをmainから全文再取得し、準備内容・Git blob SHA・必要なEOFとの一致を確認した。公開後のmain headは上記commitで、Treeから旧五ファイルおよびss_super-specialディレクトリの消失を確認した。公開基点の514 blobのうち、更新・削除対象10以外の504 blobとmodeを保持し、追加5と削除5後も514 blob。並行追加されたreferences/README.mdも元blobのまま保持した。
+
+新版四本文の公開時blobは、Covenant `e348e29c65b4efe78518bbee051acb878d6ed319`、主カード `6f802478bd4bdf4f247969acc06c99af34154276`、Programming-like版 `ad0421bc5b4cd354c299bad177abd81f639d7f98`、Torah Vision Lens `a37285b14a09c275f7a1b80a21c11a90dc255436`。将来のCurrentを固定するBindingではなく、この版の保存証拠である。
+
+この検証結果は実装後の追記として本記録へ保存し、本記録自身も保存後にRemoteから再取得して照合する。今回確認したのは意味の継承に関する執筆上の自己点検、文書・参照・配置の整合、Remote保存である。別AIの独立した理解、実機での全回復分岐、自然選択、Humanの使いやすさ、長期効果は未観測として残す。
 
 ## 8. 復元・Living Review・次の接続
 
