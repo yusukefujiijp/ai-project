@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.24.1
+version: v0.25.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-10
 ---
@@ -18,6 +18,8 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [専門lessons](radio-mode/references/lessons.jsonl)、基本支援は本文単体 | 構文・限定応答・共有本文確認。個人Skill登録は安全性チェック拒否、未導入。§3.11 |
+| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [専門lessons](voice-mode/references/lessons.jsonl)、製品機能は実環境で確認 | 構文・限定応答・個人Skill導入本文の一致。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
 | 問題解決 / solve-problems | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](solve-problems/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 形式・四つの独立文脈で計八応答を確認。導入・共有と検証境界は§3.8。自然な自動選択・品質優位・実生活効果は未実証 |
@@ -372,6 +374,34 @@ $self-improvement-loop を使い、現在の目的・素材・権限から、次
 
 これらは同じ実行環境で本文を明示して行った限定確認です。自然入力での自動選択、Dots側での取得・呼出し、Human UI、長期的な品質向上、モデル重みの学習、持続的な自己改善Loopの成立とは区別します。実利用の結果が得られたときに根拠に応じて改訂し、今回の作成から新Task・自動監視・無期限反復・外部送信を開始しません。
 
+### 3.11 Radio ModeとVoice Modeの二つの入口
+
+<a id="radio-voice-formation"></a>
+
+**形成とHuman Correction。** 2026-10-10（Asia/Tokyo）、dot-0000との現在の会話で、YusukeJPは旧projects/・mode/の整理から、現役として育てる価値をRadio ModeとVoice Modeへ絞った。Radioは、特別なAI-Promptで聴取向けの回答を作り、Humanが音声ボタンを押してRadio化する使い方が「とても重宝しました」と報告した。以前に提示したClock-Drivenの定義は、指定時刻のReality・Current ContextをThemeへ織り込み、耳だけで追える一つの番組Messageに編成し、聴いた後に持ち帰れる一文や一手を残すというものだった。今回の明確化では手動の聴取も含め、定刻配信を全利用の必須条件にはしない。
+
+Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他者から突然の要望があるとChatGPT Voiceを使う場面があり、問題・課題・学びを蓄積したいと説明した。これは低い個人利用頻度だけで価値を退役判定しない理由である。旧Ark-Voice資料のVoice→Text→Voiceという認知的往復を、新しい目的の実証済み運用として再採用したとは扱わない。具体的な他者の発言・個人情報・未報告の不具合を、この初版の経験へ補わない。
+
+その後Humanは二つのSkill名を明示し、既に使い慣れたlessons.jsonlによる改善の蓄積を提案した。AIが通常利用・保守し、Humanはまれな不具合確認時にも意味を追える日本語構成を希望した。references/の選択は条件付きの知識の役割を示すためであり、深い階層の普遍的優位や自動読込の保証ではない。2026-10-10 15:38 JST頃、Humanは全体用references/lessons.jsonlを新設したと報告し、「まずは混乱しない為に各スキルを作成」とGitHub実行を承認した。この実装は二Skillを先行させる範囲であり、全体のlesson移設、旧12原本のアーカイブ、他Skillの一括改訂は実施しない。
+
+上記は現在のDot会話の編集要約。追跡識別子は、Radio定義提示 `Sentinel_8e57c232f00c8191a328e494daed0f6d`、二用途の明確化 `Sentinel_ad96756cce4081918a34d98c1c3a9af7`、二Skill指定 `Sentinel_85a6ca6bd4808191b27df4b17869984c`、JSONL提案 `Sentinel_185a2b6382ec81919054b15141673e00`、AI-primary／日本語の希望 `Sentinel_8787c115ef6881919286d3a423a76568`、先行実行承認 `Sentinel_b1f91d7321a88191b9b3671f8c98bc2b`。私的対話の識別子であり公開URLではない。アクセスできない読み手は、この公開要約と保存された成果の範囲で根拠を扱い、会話原文を独立確認済みとしない。
+
+**二つの役割。** [radio-mode](radio-mode/SKILL.md)は耳で受け取る回答の編成、[voice-mode](voice-mode/SKILL.md)は突発的な音声対話の準備・報告された問題・経験の想起を担う。前者は音声再生やScheduleを自動操作せず、後者はChatGPT Voice内での直接Skill呼出し・会話取得を未確認のまま保証しない。通常チャットでの準備と事後支援を独立して成立させる。深さ・構成方法・質問数・長さを固定せず、現在のHumanの目的・Correction・Plan-only・STOPを優先する。
+
+**学びの所有先。** [Radio lessons](radio-mode/references/lessons.jsonl)と[Voice lessons](voice-mode/references/lessons.jsonl)は、各専門領域の変化する学びの正本。初版は上記Human報告から一件ずつの条件付きlessonを置く。Skill本体は必要時の読取へ接続し、導入先へ同期されないデータコピーを増やさない。関連原本を取得できない場合、通常の支援は現在の情報から続けられるが、履歴の確認自体が依頼の核心なら不足を示す。
+
+形式・更新・検証は[既存lesson契約の第3〜5節](../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。契約本文・Dots共通lesson・Dots固有の所有範囲を各Skillへ複製・移管しない。一行は一つの現行lessonで、訂正は同じIDの行を更新する。現在の保存権限、公開範囲、最新revision、並行変更、保存後照合を守る。気づきだけから第三者会話の自動公開やSkill自動改訂へ進まない。
+
+**構成と範囲。** 二つのSKILL.md、日本語の最小表示設定、二つの専門lessons、およびこのHubへの入口・形成記録を対象とする。Skill本体の更新元はGitHub共有原本、個人Skillへの導入内容は照合する。新しい常設同期・監視・Queryファイル・予定・外部AI通信は作らない。全体用references/lessons.jsonlはHumanが作成した改行のみのSeedを保持する。改行だけの内容をschema 2の有効なlessonデータや移行完了とは扱わない。
+
+**限定検証と保存状態。** 両Skillは形式検査を通過した。元会話を渡さない一つの新規AI文脈で四つの構成した相談への応答を確認した。深いRadio解説、突然の第三者相談の開始準備、Voice内直接呼出しの未確認扱い、既存の定時配信向けの本文作成を扱った。最後のケースでは修正後本文を再読し、予定操作をせず内容だけ作成した。これは四つの独立文脈・製品内での自然発動・実聴取試験ではない。Voiceの一応答には、友人の混乱を誰の経験か明示しない引用文があり、限定確認だけで話者帰属の安定性を保証しない。仮想相談は専門lessonの実経験へ登録していない。
+
+共有する四ファイルはmainへの保存後に再取得し、意図した全文と一致した。Radio本文のSHA-256は `47210085bb4a7ae604aadf1e388cbb95662d414e3cb6e4c9bd88a3ddd404c404`、Voice本文は `fbf51daa5ec24b0b772c7dd23336529ff4e07ef008684a66b6ce090ba9302c08`。初版本文の同一性を示す値であり、将来のCurrentを固定するBindingではない。
+
+個人SkillへのRadio登録は安全性チェックで拒否された。具体的な問題箇所は提供されず、登録なしを確認した後、再試行・別経路での導入は停止した。GitHub原本の保存と個人Skill導入を分け、Radioを導入済みとは扱わない。独立したVoiceのみを通常の登録経路へ提出し、登録された有効本文を再取得して同じSHA-256で一致することを確認した。Radioの内容や変更をVoice登録へ混ぜていない。導入環境が付加した表示資源・内部情報はGitHub共有版へ複製しない。
+
+実際のHuman UI、Radioの聴き心地、Voice内の直接呼出し、自然な自動選択、経験の継続活用による効果は未確認。GitHub原本を指示資料として読むことと、製品のSkillとして導入されることを区別する。Radioの登録拒否を回避するために別名・別の導入経路へ送信しない。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -429,4 +459,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.24.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.25.0
