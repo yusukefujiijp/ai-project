@@ -1,7 +1,7 @@
 ---
 title: "STR-001 — 現役資料の案内・所有先・相互参照の整合"
 record_id: "STR-001"
-version: "v001.3"
+version: "v001.4"
 canonical_path: "control-center/changes/STR-001-navigation-and-ownership.md"
 role: "Scoped structural change history / 5W1H / evidence and remaining decisions"
 status: "six repair groups and D04 design saved / remote full-content verified / fixed-chapter direct-entry constraint retained"
@@ -21,7 +21,11 @@ system_archive_navigation_patch:
   date: "2026-10-05"
   change_record: "../ARCHIVE.md#arc-010"
   scope: "Pin historical Ark System evidence to this record's implementation commit; preserve the earlier ARC-009 patch, original path, observed blobs and outcomes."
-expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.3"
+voice_mode_archive_navigation_patch:
+  date: "2026-10-10"
+  change_record: "../github/ARCHIVE.md#arc-011"
+  scope: "Pin three historical Voice/Mode evidence links to this record's implementation commit; original paths, blobs, outcomes and prior archive patches retained."
+expected_eof: "EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.4"
 ---
 
 # STR-001 — 現役資料の案内・所有先・相互参照の整合
@@ -140,9 +144,9 @@ Humanの「予期せぬ成功」「最高AIによる統一」という評価・�
 | [prompts/ark-open-knowledge-format.md](../../prompts/ark-open-knowledge-format.md) | D05：本体の現在住所・Pair | `20682aad7fc92f83a9863a2cd285f160dbe73ba6` | `aacfdc28e58c516f4f312b2ccca8c843550eb1f5` |
 | [prompts/ark-open-knowledge-format_query.md](../../prompts/ark-open-knowledge-format_query.md) | D05：Queryの現在住所・Pair | `c4a50e3205fa2f310f618f2abbc5478908f04b83` | `29932c4796a6742c47aa281eee60b392b01897d5` |
 | [README.md](../../README.md) | E01：司令塔への入口 | `65a3abf1ae41e57a1757a00e9dc3234128dcac51` | `db97b05360e8077a79877d1c1d21d125e32f6da0` |
-| [projects/ark-voice/README.md](../../projects/ark-voice/README.md) | D07：作成済み候補の存在・身分 | `c0753238863a3d2ab5178b615ce8a747cca47f4b` | `59e5d6225ef7eb0c39fd242f32a5550e402803c7` |
-| [mode/README.md](../../mode/README.md) | D08：Mode索引・Skill案内・命名例外 | `23878a74117978baa6cec4ad4300c87824dc6cb3` | `eb29b68d58944507198a7273fbfccfcfb635a775` |
-| [mode/ai-journaling_mode.md](../../mode/ai-journaling_mode.md) | D08：自己パス・関連Skillの時間境界 | `625e201220a5fee0032436c195d774ac7abb2d8b` | `20086fc0883f9ca4799f17c20a8ffad6a4441516` |
+| [projects/ark-voice/README.md](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/projects/ark-voice/README.md) | D07：作成済み候補の存在・身分 | `c0753238863a3d2ab5178b615ce8a747cca47f4b` | `59e5d6225ef7eb0c39fd242f32a5550e402803c7` |
+| [mode/README.md](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/mode/README.md) | D08：Mode索引・Skill案内・命名例外 | `23878a74117978baa6cec4ad4300c87824dc6cb3` | `eb29b68d58944507198a7273fbfccfcfb635a775` |
+| [mode/ai-journaling_mode.md](https://github.com/yusukefujiijp/ai-project/blob/9dd82cc37d9e95e03505949c18f66ffd26914a99/mode/ai-journaling_mode.md) | D08：自己パス・関連Skillの時間境界 | `625e201220a5fee0032436c195d774ac7abb2d8b` | `20086fc0883f9ca4799f17c20a8ffad6a4441516` |
 | [control-center/README.md](../../control-center/README.md) | 記録の責務と形成経緯 | `dff12a401d510280c8c73d1dc26ba2008c316d9b` | `2f6e83c0ce54d62375f28225c9bce0aa5919b4c4` |
 | [control-center/PLAN.md](../../control-center/PLAN.md) | 既存診断・優先順位とSTR-001の接続 | `68af185c7ae332c4c48725a79ffd15d3b718ee2d` | `4fc7a3a6d5992f9d60fd87f2eff3284e90630730` |
 | `control-center/changes/STR-001-navigation-and-ownership.md` | 5W1H、設計比較、変更前後・検証結果 | 新規作成 | `8a9a62b47cdabbc6938b5d79d3b4d324029244b1` |
@@ -178,4 +182,4 @@ Future AIは、必要な案件節→file-manifest→変更前commit／実装comm
 
 再発防止の判断は、資料を追加・移動・改訂したとき、必要な入口・自己パス・Pair・固定参照への影響を同じ変更範囲で扱うこと。これを全資料再読・恒久CI新設・巨大台帳の義務へ拡張しない。文書整合の確認、Remote保存、別AIの実理解、実利用の効果はそれぞれ別に観察する。
 
-EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.3
+EOF::AI_PROJECT_STRUCTURAL_CHANGE_STR_001::v001.4

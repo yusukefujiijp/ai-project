@@ -1,19 +1,19 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.15.0"
+version: "0.16.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Human-authorized four-prompt modernization; implementation evidence owned by STR-014"
+status: "Human-authorized five-original Voice/Mode retirement; verification owned by ARC-011; WTP retained"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-10-10"
-updated_reason: "STR-014: connect the current four-prompt modernization and old-folder retirement; preserve prior completed work, other branches and historical contracts."
+updated_reason: "ARC-011: connect scoped Voice/Mode retirement and WTP retention; preserve completed STR-014, prior results and historical contracts."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.15.0"
-current_observation_base: "0d21990a126948703eca517c65017f2038d4393c"
-change_record: "../changes/STR-014-super-special-prompt-modernization.md"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.16.0"
+current_observation_base: "c8c35957ef63d0fca7378a1cc98ea1099a4e30c1"
+change_record: "ARCHIVE.md#arc-011"
 ---
 
 <a id="ai-project構造整理--診断から改善へ"></a>
@@ -24,21 +24,23 @@ change_record: "../changes/STR-014-super-special-prompt-modernization.md"
 
 ## current
 
-### 今回の焦点：旧選抜棚の四Promptを、現在使える新版へ継承する
+### 今回の焦点：旧Voice／Modeの五原本を保管し、WTPの比較資産を保持する
 
-2026-10-10の現在の焦点は、この会話でのYusukeJPの明確化を受けた四Promptの改訂である。Humanは`ss_super-special/`を、旧Arkで優秀なAI-Promptを仕分けしてローカルからGitHubへ移した棚と説明した。続いて、フォルダ自体を廃止し、内部の四Promptを熟読・改善・Version upして`prompts/`へ移すと明確にした。計画提示後の明示実行承認により、四本文・必要な案内・旧配置の除去・記録と確認を今回の範囲とする。具体的な意味・由来・実施証拠は[STR-014](../changes/STR-014-super-special-prompt-modernization.md)へ。
+2026-10-10、Ark27:09は`projects/`・`mode/`の十二原本を全文読解し、後続Skill・現役案内・歴史証拠・保存条件を比較した。Plan Modeで「Voice／Mode五原本の先行退役、WTP六原本とProjects入口の保持」を提示し、その後のHumanによるGitHub実行・Human Seal・継続承認を受けた。五原本の同一保管、元配置の除去、六文書の限定整合、保存後確認を今回の範囲とする。理由・承認・原本対応・結果は[ARC-011](ARCHIVE.md#arc-011)が所有する。
 
-新版は[Prompt棚の四用途](../../prompts/README.md#316-旧選抜棚から育て直した四prompt)から選ぶ。協働Covenant、完成ArtifactのGitHub保存、その構造的理解の補助、Torah Vision Lensの創造的な往復を区別する。主カードが保存手順の意味を所有し、補助版が別の規則を育てない。RootとHumanの権限を保ち、共通契約を四本へ複製しない。
+Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lessons](../../skills/voice-mode/references/lessons.jsonl)へ接続済みである。Journalingの振り返り・閉じ方、Field Testの証拠区分は原本と案件から辿れる。全旧機能を新Skillへ移植済みとは扱わず、今回の整理からSkill再作成・lesson一括移設・追加試験を開始しない。Radio／Voiceの形成・共有・導入・検証のCurrentは[Skills Hub](../../skills/README.md#radio-voice-formation)へ戻る。
 
-現在の案内は新版へ接続し、当時の記録・固定Binding・旧版の意味はその時点の根拠として保つ。旧フォルダに互換Stubを残す計画は採らない。旧契約を新版で通過扱いにせず、履歴の参照方法はSTR-014へ。全履歴の書換え、別の固定Binding移行、旧Runtimeの再起動は今回に含まれない。
+[Ark-WTP](../../projects/ark-wtp/README.md)は`FROZEN_BENCHMARK_WAIT`として現配置で保持する。成果本文の`PROVISIONAL_PASS`をHuman Final Sealへ強めず、凍結を完了・失敗・目的変更終了へ読み替えない。前身`ark-wtp.md`にはLocal backupと退役のHuman確認条件があり、その確認を今回の実行承認だけから補わない。WTP一式の後続退役は別途この条件と現在のHuman判断を満たす時に検討する。
 
-本欄は現在の目的と担当原本への入口を持つ。保存・検証の状態はSTR-014と実体へ戻り、別々の完了台帳を作らない。今回が完了したらHuman Reviewへ返し、他の候補を自動選択しない。
+本欄は担当原本への入口であり、保存・検証の第二台帳ではない。五原本の範囲を確認後はHuman Reviewへ戻る。通常Unknownの全解消を完了条件にせず、別の候補を自動選択しない。
 
 ### 成果を現在へ接続する
 
 下記は所有記録への案内であり、今回すべてを再実装・再試験したという意味ではない。
 
-- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離、[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)の二原本移設とhouse改名は公開・Remote確認済みの先行成果である。今回の四Prompt移行を理由に未完了へ戻さない。
+- [STR-014](../changes/STR-014-super-special-prompt-modernization.md)の四Prompt改訂・Version up・`prompts/`移行と`ss_super-special/`退役は、実装と保存後確認を完了した成果である。Humanが旧Arkの選抜PromptをローカルからGitHubへ移したという由来、主カードと補助版の役割を保持する。新版は[四用途の入口](../../prompts/README.md#316-旧選抜棚から育て直した四prompt)から選ぶ。今回を四Promptの再作成や旧試験の再開にしない。
+
+- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離、[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)の二原本移設とhouse改名は公開・Remote確認済みの先行成果である。今回のVoice／Mode整理を理由に未完了へ戻さない。
 
 - [STR-001](../changes/STR-001-navigation-and-ownership.md)によるD01・D02・D05・D07・D08等の局所修正は後続の保存・確認を保持する。D03の旧04／05住所差の修復も履歴として保持し、現在のMain／Supportは[Ark Domain](../../ark-project/README.md)から解決する。
 - D04はSTR-001での分離設計を経て、[STR-003](../changes/STR-003-persistent-collaboration-foundation.md)の明示版移行・Remote確認へ進んだ。下の旧診断にある「固定参照が現在も残る」は、その記録時点で読む。別のGraph／One-Table移行とは区別する。
@@ -52,7 +54,8 @@ change_record: "../changes/STR-014-super-special-prompt-modernization.md"
 - **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
 - **別Branchの未完了**：[STR-002](../changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
 - **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
-- **今回選んだ範囲と、別の判断**：四Promptの改訂・移行と旧選抜棚の廃止はSTR-014へ接続する。PLAN・ARCHIVEの専門領域への移設とhouse改名はSTR-013の先行成果である。その他の記録移設、houseの具体化・生活上の実行、Skill再作成、固定Binding移行は今回の未完了部分に含めない。HumanのSeed作成と、現実の家の整理成果を区別する。
+- **今回選んだ範囲と、意図的保留**：Voice／Mode五原本の退役と限定整合はARC-011へ。WTP六原本は現配置に保持し、Projects入口はWTPの凍結状態と旧Voiceの保管理由を案内する。WTP後続退役の判断とLocal backup条件は、先行五原本の完了を妨げるGateにしない。
+- **別の判断**：PLAN・ARCHIVEの専門領域への移設とhouse改名はSTR-013の先行成果である。その他の記録移設、houseの具体化・生活上の実行、Skill再作成、固定Binding移行は今回の未完了部分に含めない。HumanのSeed作成と、現実の家の整理成果を区別する。
 - **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
 
 ### 次の判断の仕方
@@ -534,4 +537,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.15.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.16.0

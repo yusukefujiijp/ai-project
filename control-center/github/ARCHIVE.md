@@ -1,16 +1,16 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.10.0"
+version: "0.11.0"
 canonical_path: "control-center/github/ARCHIVE.md"
 role: "Single GitHub archive case record for proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-06"
+updated: "2026-10-10"
 relocation_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 relocation_base_commit: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.10.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
@@ -19,7 +19,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.10.0"
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)、旧Ark System原本の保管と入口役割の整合は[ARC-010](#arc-010)にある。GitHub整理の目的と形成史は[専門入口](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)、旧Ark System原本の保管と入口役割の整合は[ARC-010](#arc-010)にある。旧Voice／Mode五原本の保管とWTP保持の判断は[ARC-011](#arc-011)にある。GitHub整理の目的と形成史は[専門入口](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -712,4 +712,82 @@ Current08の核と新Support04 Handoffは、共有文書の準備時blobを恒�
 
 本節は確認済み結果の追記であり、記録自身の自己SHAを本文へ埋め込む循環は作らない。追記を含む最終本文も保存後に直接再取得する。今回の範囲をここで完了し、次の整理・新System・別Taskへ自動着手しない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.10.0
+## ARC-011
+
+**旧Voice／Mode五原本の同一保管・現役配置の退役と六文書の限定整合。Human実行承認済み。保存後確認の結果は§Gへ追記する。WTP六原本は現配置で保持し、十二原本すべての退役完了とは扱わない。**
+
+### A. 形成・Human判断・担当
+
+SourceはArk27:09の本案件のHuman入力、GitHubの十二原本、後続Skillと形成記録、参照関係である。以下は対話の編集要約であり、逐語録や未提示の会話URLを作らず、ChatGPT長期メモリを転記・輸出しない。
+
+HumanはGitHub全体の整理を進め、旧`ss_super-special/`を旧Arkで選抜したAI-Promptの棚と明確にした。四本文の改善・Version up・`prompts/`移行と棚の退役は[STR-014](../changes/STR-014-super-special-prompt-modernization.md)で保存・確認まで完了している。現在地の確認後、次の整理候補である`projects/`・`mode/`についてPlan Modeで調査・計画提示までと指定した。AIは十二本文を全文読解し、全資料を同じ型へ変換せず、用途・成果・保持条件から五原本先行とWTP一式保持を提案した。
+
+2026-10-10 JST、HumanはRadio Modeの完成状態を問い、直前計画に対して`Execute GitHub OK`・`Human Seal OK`・継続実行を明示した。今回の範囲はVoice二原本とMode三原本の同一保管、元パス除去、必要な六文書の整合、保存後の確認と結果記録である。この承認をWTPのLocal backup確認、WTP全体の退役、Skill登録拒否の回避、新試験への承認に拡張しない。
+
+意味承認はYusukeJP、調査・設計・実装・確認の担当はArk27:09 Mainの本会話のAI。Radio／Voice形成におけるdot-0000の協働と既存lesson保存を本AIの制作実績へ借用しない。GitHub author／committerと保存時刻は実際のcommitで別に確認する。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。AI・文書・方法はKeliであり、器の退役をRoot・Humanの経験や願いの処分にしない。
+
+### B. 現役配置を退役させる理由と比較
+
+[Skills Hubの形成記録](https://github.com/yusukefujiijp/ai-project/blob/c8c35957ef63d0fca7378a1cc98ea1099a4e30c1/skills/README.md#radio-voice-formation)には、Humanが旧projects／mode整理から、現役として育てる価値をRadio ModeとVoice Modeへ絞った経緯がある。Radioは耳で追える回答の編成、Voiceは他者からの突発的な音声対話の準備と学びの再利用を担う。この公開要約を根拠にし、記載された私的会話の原文を本AIが独立確認したとは扱わない。
+
+旧Ark-VoiceはVoice→Text→Voiceの共同研究、System候補、試験予定を一つのProjectとして運用する構成だった。旧Journalingは複数TurnのReflection、Field TestはRuntime試験の専用Modeである。現在の目的と異なる長期Runtimeを同時に現役案内へ置くと、旧Activation・固定手順・未実施試験を現在の必須仕事として読む経路が残る。これは文書と関係からの設計上の懸念であり、誤読の頻度や実害を測定した結果ではない。
+
+比較した案は、現状維持、全資料のPrompt／Skill化、十二原本の一括退役、五原本の先行退役とWTP保持。今回は、現在の用途と継承先が確認できた枝を整理し、比較可能な成果と明示保存条件を持つWTPを分ける案を選ぶ。古さ・低い個人利用頻度・ファイル数だけで価値を判定せず、旧Modeと現在Skillの完全同等も要求・認定しない。
+
+### C. 保存する価値と現在への接続
+
+| Node | Edge：意味・読み返す場面・確認境界 |
+|---|---|
+| 旧Ark-Voiceの意味保存 | [System原本](../../__archives/ARC-011/projects/ark-voice/ark-voice-system.md) → Voiceで生まれた原語・文脈・UnknownをTextへ渡し、使える形で戻す。[既存Voice lessons](../../skills/voice-mode/references/lessons.jsonl)の意味保存と二つの実りの二lessonは今回より前の保存成果。原本の設計から採った知恵であり、実地効果や新Voice用途全体の実証ではない |
+| 内容の実りと、対話方法の実り | [旧Voice入口](../../__archives/ARC-011/projects/ark-voice/README.md) → 発見した内容と、その発見を助けた問い・間合い・切替を区別する。主活動を方法評価へ取り替えず、毎利用後の追加試験・新ログ・新Skillを必須化しない |
+| Journalingの開始と閉じ方 | [原本](../../__archives/ARC-011/mode/ai-journaling_mode.md) → 未整理の思考を受け取り、証拠に沿って振り返り、行動・保留・休息・STOPへ接続する。[receive-braindump](../../skills/receive-braindump/SKILL.md)／[living-review](../../skills/living-review/SKILL.md)との用途上の接点はあるが、専用Mode全体を移植済みとはしない。旧質問数・推論制限を現在の品質条件へ機械的に課さない |
+| Field Testの証拠区分 | [原本](../../__archives/ARC-011/mode/ai-field-test-mode.md) → 静的点検と実運用、構成したケースと現実、自己点検と独立確認、PASSと効果を分ける。試験対象とHarness・文脈の影響を区別し、完了を避けるための反復をしない。今回の保存検証は同Modeの実地試験ではない |
+| Mode入口の役割 | [旧索引](../../__archives/ARC-011/mode/README.md) → 当時のSkillと複数Turn Runtimeの区別を辿る。現在の全Skillへこの分類を固定せず、通常の選択は現在の依頼と[Skills Hub](../../skills/README.md)へ戻る |
+
+全五原本を保持し、この表だけをFuture AIの解釈の上限にしない。旧Voice READMEの`active / human-sealed`、Systemの`pending Human content seal`・`not_started`、Journalingの`experimental`、Field Testの`static-reviewed / not runtime-field-tested / not final-sealed`は、それぞれ当時の対象・観測時点を保持する。退役の承認を旧Systemの採用、未実施試験のPASS、過去Mission全体の完了・失敗・中止へ変換しない。
+
+### D. 原本対応・変更範囲・証拠
+
+計画の読解基点は[1c053e8](https://github.com/yusukefujiijp/ai-project/tree/1c053e8985b75715bad6f1919b7c601a36f3f574)、実行基点は[c8c3595](https://github.com/yusukefujiijp/ai-project/tree/c8c35957ef63d0fca7378a1cc98ea1099a4e30c1)。後続差分はDots lessonと2026-10-10の日次記録であり、五原本・六更新文書・確認済みBootの必須Sourceは同一だった。既存の全文読解記録を同一性条件内で再利用し、Sourceの準備や他AIの確認をTarget自身のBoot成功へ借用していない。
+
+| 元パス | 保存先 | 保持するblob | bytes |
+|---|---|---|---|
+| `mode/README.md` | [同一原本](../../__archives/ARC-011/mode/README.md) | `eb29b68d58944507198a7273fbfccfcfb635a775` | 4,075 |
+| `mode/ai-field-test-mode.md` | [同一原本](../../__archives/ARC-011/mode/ai-field-test-mode.md) | `a76071504370c4b32797d924ddbc7c583d0be2b9` | 22,327 |
+| `mode/ai-journaling_mode.md` | [同一原本](../../__archives/ARC-011/mode/ai-journaling_mode.md) | `20086fc0883f9ca4799f17c20a8ffad6a4441516` | 15,638 |
+| `projects/ark-voice/README.md` | [同一原本](../../__archives/ARC-011/projects/ark-voice/README.md) | `59e5d6225ef7eb0c39fd242f32a5550e402803c7` | 17,472 |
+| `projects/ark-voice/ark-voice-system.md` | [同一原本](../../__archives/ARC-011/projects/ark-voice/ark-voice-system.md) | `275a9cac9b1128fe7d81a827dfe4658ac1f7271e` | 39,231 |
+
+全原本のmodeは100644、合計98,743 bytes。原文・改行・旧自己パス・状態・命令・相対リンクを変更せず同じblobを保管する。旧`mode/`・`projects/ark-voice/`にStub・互換原本を残さない。
+
+更新する六文書は、Root `README.md`、`projects/README.md`、`control-center/github/PLAN.md`、本`ARCHIVE.md`、`__archives/README.md`、`control-center/changes/STR-001-navigation-and-ownership.md`。RootとProjectsはWTPの凍結資産と旧Voiceの保管理由を案内し、Projectsから現行Radio／Voiceの所有原本へ接続する。PLANは現在の焦点を本件へ進め、完了済みSTR-014と従来の成果・保留・目的変更終了を保持する。別STR・新System・案件配下README・追加lessonは作らない。
+
+STR-001のVoice README・Mode README・Journalingの三証拠リンクは、[当時の実装commit](https://github.com/yusukefujiijp/ai-project/commit/9dd82cc37d9e95e03505949c18f66ffd26914a99)へ固定する。当時のTreeで三blobが同記録の実装後値と一致することを確認した。元パス表記・当時の値・D07／D08の成果と先行ARC-009／010の修正履歴を保持し、以前の修復を未修正へ戻さない。
+
+### E. WTP保持・Radio確認・対象外
+
+[WTP入口](../../projects/ark-wtp/README.md)と[Artifact README](../../projects/ark-wtp/artifact/README.md)は、Bereshit全Parasha × Hebrew Word Lens v0.3の本文と比較条件を`FROZEN_BENCHMARK_WAIT`として保持している。成果の`PROVISIONAL_PASS`はSourceの評価であり、今回の整理による再評価・Human Final Sealではない。欠けたPeshat本文を補完せず、研究再巡回・新Lens・再試験を開始しない。
+
+前身`ark-wtp.md`のDaily Teshuvah Gate-to-YeshuaというIdentityは、現在のWeekly Torah Portionとは別である。現行WTP契約は同ファイルの削除前にLocal backupと退役のHuman確認を要求する。今回その確認はUnknownのため、WTP六原本を現配置で維持する。Projects入口を残す理由はこの現用の保管・比較経路にあり、単なる空棚維持ではない。WTPの後続退役は現在のHuman判断と条件確認から再検討し、本件五原本の完了から自動開始しない。
+
+Radioについて、実行基点の[共有本文](https://github.com/yusukefujiijp/ai-project/blob/c8c35957ef63d0fca7378a1cc98ea1099a4e30c1/skills/radio-mode/SKILL.md)・表示設定・専門lessonは存在し、[Hubの形成記録](https://github.com/yusukefujiijp/ai-project/blob/c8c35957ef63d0fca7378a1cc98ea1099a4e30c1/skills/README.md#radio-voice-formation)は共有保存・限定応答確認と個人Skill登録の安全性チェック拒否を分けている。本実行時に取得した利用可能Skill一覧にもRadioはなくVoiceはある。登録拒否の具体的問題箇所は記録されておらず、未導入を完成扱いにせず、別名・別経路で回避する登録は行わない。GitHub共有、個人Skill導入、Voice内の直接呼出し、実生活の効果は別である。今回、Radio／Voiceの本文・表示設定・lessons・Hubを変更せず、新たな導入・実利用試験も行っていない。
+
+AGENTS・ARK・Ark Domain・Main09の三点セットと固定Source、Support側資料、Board・Actorログ、各Skill・共通知見、既存アーカイブ原本を保持する。ChatGPT長期メモリの内容は保存対象に含めない。
+
+### F. 参照・旧リンク・再検討
+
+参照調査は、十二原本の全文、関連する現役入口と後続Skill、対象パス・basenameのRepository検索、非切断Tree、STR-001の固定証拠と計画後の差分を照合した範囲である。全Git履歴・全外部consumer・実行環境の網羅監査ではない。
+
+Voice lessonsと日付付きRepository Reviewにある固定commit参照は保持する。ARC-007の旧Handoff・開始QueryにあるMode参照やArk21 sandboxの旧Projects案内は当時の記述として残し、旧Bootを現在mainで再現する保証や命令へ変えない。承認された五原本の退役に合わせて過去の原文を機械置換しない。
+
+保管原本の相対リンク・main指定は元配置と当時の構成に基づく。五原本の意味と元の参照関係は[移動前snapshot](https://github.com/yusukefujiijp/ai-project/tree/c8c35957ef63d0fca7378a1cc98ea1099a4e30c1)の`projects/ark-voice/`・`mode/`から辿る。保管原本の同一性と、古い全リンク・旧Bootの現行互換性は別であり、元から存在しなかった依存がこのsnapshotで復活するとは扱わない。
+
+具体的な現役consumer、旧資料固有の新しい用途、退役による実害が判明した時は、影響する枝の案内・配置・再設計を再検討できる。必要な原本を同一blobで元パスへ戻し、現在の目的と権限に従って差分を整合する。main全体を過去へresetせず、並行・後続変更を保持する。通常Unknownの全解消は本件の完了条件にしない。
+
+### G. 実施・保存後確認
+
+実装は五原本追加・五元パス除去・六文書更新の16パスに限定する。保存前に原本同一性、metadata・宣言EOF、変更参照、過去案件・診断履歴・STR-001の証拠の保持を確認する。公開後は11本文をRemoteから直接再取得し、Tree・main・対象外保持を照合して、実際のcommitと結果をここへ追記する。この段落は検証予定であり、未観測の保存結果を成功認定しない。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0
