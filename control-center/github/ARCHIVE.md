@@ -714,7 +714,7 @@ Current08の核と新Support04 Handoffは、共有文書の準備時blobを恒�
 
 ## ARC-011
 
-**旧Voice／Mode五原本の同一保管・現役配置の退役と六文書の限定整合。Human実行承認済み。保存後確認の結果は§Gへ追記する。WTP六原本は現配置で保持し、十二原本すべての退役完了とは扱わない。**
+**完了：旧Voice／Mode五原本の同一保管・現役配置の退役と六文書の限定整合をmainへ公開し、11本文のRemote全文一致・対象外505ファイル保持を確認した。証拠と確認境界は§G。WTP六原本は現配置で保持し、十二原本すべての退役完了とは扱わない。**
 
 ### A. 形成・Human判断・担当
 
@@ -788,6 +788,16 @@ Voice lessonsと日付付きRepository Reviewにある固定commit参照は保�
 
 ### G. 実施・保存後確認
 
-実装は五原本追加・五元パス除去・六文書更新の16パスに限定する。保存前に原本同一性、metadata・宣言EOF、変更参照、過去案件・診断履歴・STR-001の証拠の保持を確認する。公開後は11本文をRemoteから直接再取得し、Tree・main・対象外保持を照合して、実際のcommitと結果をここへ追記する。この段落は検証予定であり、未観測の保存結果を成功認定しない。
+2026-10-10 JST、実装commit [96571e6](https://github.com/yusukefujiijp/ai-project/commit/96571e679d01302bc609279187e31a97949299da)をmainへ公開した。親は `c8c35957ef63d0fca7378a1cc98ea1099a4e30c1`、Treeは `de1cd84352a5ef655749ea6d9fb71c4467900424`。GitHubが返したcommit作成時刻は **11:37:59 UTC／20:37:59 JST**、author／committerはともに `yusukefujiijp`。本件の意味承認者・AI担当は§Aの区別を保持する。
+
+公開直前にmainが親commitと一致することを確認し、expected SHAを指定したnon-force更新を使った。公開後の **2026-10-10T11:38:41.334Z（20:38:41.334 JST）** に、mainと実装commitの一致、非切断Tree、**五保管原本＋六更新文書の11本文の直接再取得・全文とblobの一致**を確認した。保存成功応答だけで完了にしていない。
+
+- **配置と同一性**：変更は追加5・除去5・更新6の16パス。元五パスと旧`mode/`・`projects/ark-voice/`の実体はなく、保管五原本は§Dのblob・98,743 bytesと一致した。ファイル総数は516のまま。
+- **対象外保持**：505ファイルのblob・modeが親commitと同一。WTP六原本、各Skill・lessons・Skills Hub、共有references、Main／Support・Board・Actor資料、既存保管物、計画後のDots lesson／日次記録の変更を保持した。これは505本文を今回全文再読したという意味ではない。
+- **構造と履歴**：六更新文書のYAML・重複key・自己パス・宣言EOF・Code Fence、318相対リンク出現を点検し、新規28出現の所在と新規見出し参照6出現を確認した。ARC-001〜010本文、PLANの診断履歴、Rootの共通権限本文を保持。STR-001本文は三証拠リンクと版末尾以外を保持し、当時のTreeと三blobを照合した。
+- **既存参照の境界**：STR-001に以前からある旧`ark-open-knowledge-format_query.md`への相対リンク一件は、今回の新規不整合ではなく、過去の実装証拠として対象外に保持した。同記録の固定実装commitから当時の原本へ戻れる。全既存リンクを修復済みと報告しない。保管五原本内の旧相対リンクには§Fの固定snapshotを使う。
+- **意味の点検**：現在のRadio／Voice選択、旧Voiceの形成史、Journaling／Field Testの方法参照、WTP比較資産の保持という読み方を執筆AI自身が確認した。独立した別AI試験、旧Modeの実行、Radioの導入、Human UI、全外部consumer、長期の探索負担や実生活効果を実証したとは扱わない。
+
+この結果追記は確認後の記録であり、記録自身の自己SHAを埋め込む循環は作らない。追記を含む最終本文も保存後に再取得する。今回の五原本の範囲を完了し、Human Reviewへ戻る。WTP後続退役・Skill改訂・次Trialを自動開始しない。
 
 EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0
