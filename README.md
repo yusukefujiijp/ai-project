@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v008"
+version: "v009"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v007 preserved in Git history; v008 routes to GitHub plan and archive originals under STR-013; authority and earlier ownership retained"
+version_basis: "v001-v008 preserved in Git history; v009 routes to the modernized collaboration Covenant under STR-014; authority and earlier ownership retained"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-06"
+updated: "2026-10-10"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -45,7 +45,9 @@ plan_mode_route_review:
   base_commit: "57d3d7f1f5d46cbcaefdc752608acb7021c06bae"
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
+prompt_migration_record: "control-center/changes/STR-014-super-special-prompt-modernization.md"
 updated_reason:
+  - "2026-10-10: STR-014 replaces the retired ss_super-special Covenant route with its revised prompts body and scoped role; no whole-repository rereview."
   - "2026-10-06: STR-013 routes to GitHub-owned plan and archive documents while preserving legacy address navigation; no new shared authority or home execution."
   - "2026-10-06: STR-012 separates the common control-center entry from GitHub organization; keeps existing plan, case records and required-source paths. Scoped navigation update only."
   - "2026-10-05: ARC-010 preserves the Ark System original, retires its live operating-map route, and connects growth understanding to ARK §8/§12 and historical provenance; no new shared execution contract."
@@ -206,7 +208,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`prompts/ark-open-knowledge-format.md`](prompts/ark-open-knowledge-format.md) | Ark-OKF / readable, reusable, rebootable output surface | Artifact形式・相互運用性が重要な時 |
 | [`prompts/topology-first.md`](prompts/topology-first.md) | Topology-First placement guard | 本文より先に住所・責務を決める時 |
 | [`prompts/kiss-yagni-dry-lean.md`](prompts/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
-| [`ss_super-special/CHATGPT.md`](ss_super-special/CHATGPT.md) | Highest-grade shared Covenant / behavior map | All-Project級のAI behaviorを確認する時 |
+| [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md) | Reusable collaboration orientation / judgment prompt | 協働の姿勢・Rootへの帰還・継続と停止の意味を整える時。共通権限はAGENTSへ |
 
 ### 5.5 Router Guard
 

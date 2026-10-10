@@ -4,12 +4,13 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-04"
+last_updated: "2026-10-10"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
 deadline_prompt_update: "control-center/changes/STR-004-elon-musk-deadline-revision.md"
 shelf_authority_alignment: "control-center/changes/STR-011-prompt-shelf-authority-alignment.md"
+prompt_modernization: "control-center/changes/STR-014-super-special-prompt-modernization.md"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -301,6 +302,23 @@ origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
 研究、設計、レビュー、Handoff、記事、Book Page、Knowledge Asset等へ汎用適用できるが、単純変換やExact Output等でMaterialな利益がない場合は機械的に適用しない。
 
 「自己改善Loop」のSeedと、受け手の発見・訂正を後続Artifactと作り方へ戻す二つの還流、評価の区別、Joint playは本体が所有する。[self-improvement-loop（自己改善Loop）](../skills/self-improvement-loop/SKILL.md)を短い呼出しの入口とし、現在の作成・受信・Reviewから必要な働きを選ぶ。Prompt全文をSkillへ複製せず、Work／Dots別の本文や独立Queryを増やさない。共有・導入・限定確認は[Skills Hub](../skills/README.md#310-自己改善loopの入口)へ接続する。
+
+---
+
+### 3.16 旧選抜棚から育て直した四Prompt
+
+旧`ss_super-special/`に置かれていた優秀な旧Ark Promptを、現在の協働・権限・保存方法へ整合し、本棚へ移した。Humanの訂正は、選抜棚そのものを廃止し、四本の価値を新版へ継承するというもの。旧READMEは本節の選択案内へ役割を渡す。各本文は現代化系列の最初の明示版`v001-human-authorized`であり、旧bootstrapの版番号と混同しない。
+
+| Prompt | 使う時 | 関係と境界 |
+|---|---|---|
+| [AI Collaboration Covenant](ai-collaboration-covenant.md) | 協働の姿勢、Rootへの帰還、意味・継続・停止・Captureを整える | IdentityはARK、共通権限はAGENTS。第二の上位契約ではない |
+| [Artifact → GitHub](artifact-to-github.md) | 完成Artifactを適切な原本へ配置し、Remoteで確認する | 制作と保存を分ける。現在の承認と保存先ガイドに従う |
+| [Artifact → GitHub / Programming-like](artifact-to-github-programming-like.md) | 状態・分岐・不変条件で保存手順を理解・検討する | 主カードが手順の意味を所有。疑似コードは非実行、学習とReviewの補助 |
+| [Torah Vision Lens](torah-vision-lens.md) | Sceneから構造・名前・新しい問い・創作方向を見分ける | 本文と類比を区別し、現在の判断へ戻す。No Forced Scene |
+
+四本を常にセットで起動する規則はない。利用目的から選び、各本文の読取・権限・Guardを守る。起動例は各本体に含み、別Queryや環境別の同等原本を作らない。主カードと補助版は、実際の保存と構造的理解という用途の違いを持つ。
+
+由来、旧新版対応、公開・確認の証拠は[STR-014](../control-center/changes/STR-014-super-special-prompt-modernization.md)。旧版は固定commitから辿る。改訂・保存の確認は、他AIの実理解、自然選択、長期効果とは別である。
 
 ---
 

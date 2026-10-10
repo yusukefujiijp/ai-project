@@ -1,6 +1,6 @@
 ---
 title: "GitHub整理 — ai-projectの構造を理解し、改善を継承する"
-version: "0.2.1"
+version: "0.2.2"
 canonical_path: "control-center/github/README.md"
 role: "GitHub organization entry / route to the single plan, case records and originals"
 status: "human-authorized domain entry and owner placement; actual reader and field effects separate"
@@ -8,9 +8,9 @@ repository: "yusukefujiijp/ai-project"
 scope: "ai-project全体。ark-project/内だけに限定せず、他Repositoryへ自動拡張しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-10-06"
-updated: "2026-10-06"
-change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
-expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.1"
+updated: "2026-10-10"
+change_record: "../changes/STR-014-super-special-prompt-modernization.md"
+expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.2"
 ---
 
 # GitHub整理
@@ -94,6 +94,8 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 - [STR-013: GitHub計画・アーカイブ台帳の専門領域への移設](../changes/STR-013-github-plan-and-archive-relocation.md)：homeのSeedを受けた領域分離、二原本と旧住所の案内、意味・参照・並行変更の保持。
 
+- [STR-014: 旧選抜棚の四Promptを改訂しpromptsへ継承](../changes/STR-014-super-special-prompt-modernization.md)：Humanによる棚の由来と廃止方針の明確化、四本文の役割・新版・参照・旧配置除去と確認。
+
 [ARCHIVE](ARCHIVE.md)はARC案件の提案・承認・実施・確認・復元を所有し、[__archives](../../__archives/README.md)は保管実体を案内する。両者の役割を通常変更記録へ重複させない。通信のCurrentは該当Board Topic、Actorの出来事はActorログ、再利用する学びは適用されるlesson契約など、実対象のOwnerを保つ。
 
 ## 3. 変更と確認を次のAIへ渡す
@@ -106,4 +108,4 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 Root・Teshuvah・Human Foreground One・HumanのCorrection／STOP／Final SealとGuardを保持する。AI・GitHub・この入口はKeliであり、Rootや王座ではない。
 
-EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.1
+EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.2

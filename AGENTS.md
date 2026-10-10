@@ -5,7 +5,7 @@ version: "v004-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-05"
+updated: "2026-10-10"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -48,7 +48,13 @@ foundation_migration:
   approved_date_utc: "2026-09-30"
   source_commit: "d574927dd1671e2acec20e1a6c17f569ae23322f"
   scope: "Bounded persistent completion, interruption recovery, independent delegation, and actual-runtime capability; prior quality, authority, evidence, and publication rules retained"
+prompt_migration_navigation_patch:
+  date: "2026-10-10"
+  base_commit: "0d21990a126948703eca517c65017f2038d4393c"
+  change_record: "control-center/changes/STR-014-super-special-prompt-modernization.md"
+  scope: "Role Map only; modernized Covenant path and single-prompt shelf description; v004 behavioral kernel unchanged"
 updated_reason:
+  - "2026-10-10: STR-014 routes to the modernized collaboration Covenant and describes prompts as self-contained bodies; authority, reading and recovery contracts retained."
   - "2026-10-05: ARC-010 aligns the README role with its AI-first declaration and removes the retired Ark System live route; common authority, reading and completion contracts unchanged."
   - "2026-10-01 JST / 2026-09-30 UTC: Add task-scoped persistence and result-aware recovery without promising always-on execution or expanding authority; distinguish independent delegation from one accountable integration surface."
   - "2026-09-21: Preserve Ark27:05 AI-quality correction and distinguish memory recall from mandatory instruction sources."
@@ -83,9 +89,9 @@ updated_reason:
 - [AGENTS.md](AGENTS.md): Repository共通のAgent判断・権限・読取・実行契約。
 - Nearest README / Handoff / Manifest: Current Domain、Thread Identity、Mission、Binding、Required Read。
 - Applicable Project INSTRUCTIONS.md: Project固有の協働・表示・運用指示。適用範囲を確認して読む。
-- [ss_super-special/CHATGPT.md](ss_super-special/CHATGPT.md): All-Project Covenant Map / Stone Tablet。
+- [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md): 再利用する協働姿勢・判断のPrompt。IdentityはARK、共通権限は本書が所有する。
 - [skills/README.md](skills/README.md): Shared Skill Source / Distribution Hub。
-- [prompts/](prompts/): 再利用するRuntimeとQuery。
+- [prompts/](prompts/): 用途に応じて選ぶ、起動・入力・本文をまとめた再利用Promptの棚。
 - [task-mode-system/experience/README.md](task-mode-system/experience/README.md): Task経験原本・Human Correctionへの入口。全領域の学習台帳ではない。
 - [success-cases/README.md](success-cases/README.md): 成功の形成・根拠・成立条件から学ぶ入口。
 

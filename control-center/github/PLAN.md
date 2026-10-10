@@ -1,19 +1,19 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.14.1"
+version: "0.15.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Human-authorized GitHub plan relocation; implementation evidence owned by STR-013"
+status: "Human-authorized four-prompt modernization; implementation evidence owned by STR-014"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-06"
-updated_reason: "STR-013 follow-up: route the physical living-space seed to house after the Human naming correction; historical diagnoses and contracts unchanged."
+updated: "2026-10-10"
+updated_reason: "STR-014: connect the current four-prompt modernization and old-folder retirement; preserve prior completed work, other branches and historical contracts."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.1"
-current_observation_base: "fd6b498be94276b993cc661e79c474a0fe3f20a0"
-change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.15.0"
+current_observation_base: "0d21990a126948703eca517c65017f2038d4393c"
+change_record: "../changes/STR-014-super-special-prompt-modernization.md"
 ---
 
 <a id="ai-project構造整理--診断から改善へ"></a>
@@ -24,21 +24,21 @@ change_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 
 ## current
 
-### 今回の焦点：GitHubの原本を、その専門領域へ置く
+### 今回の焦点：旧選抜棚の四Promptを、現在使える新版へ継承する
 
-2026-10-06、Humanは`home/README.md`を改行のみで作り、実際の家の整理へ横展開する方向を示した。同時に、GitHub側の構成・内容の改善を委任し、PLANとARCHIVEを`github/`へ収める案を示した。前段の入口分離は[STR-012](../changes/STR-012-control-center-domain-entries.md)、今回の訂正・承認・移設と検証は[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)が所有する。
+2026-10-10の現在の焦点は、この会話でのYusukeJPの明確化を受けた四Promptの改訂である。Humanは`ss_super-special/`を、旧Arkで優秀なAI-Promptを仕分けしてローカルからGitHubへ移した棚と説明した。続いて、フォルダ自体を廃止し、内部の四Promptを熟読・改善・Version upして`prompts/`へ移すと明確にした。計画提示後の明示実行承認により、四本文・必要な案内・旧配置の除去・記録と確認を今回の範囲とする。具体的な意味・由来・実施証拠は[STR-014](../changes/STR-014-super-special-prompt-modernization.md)へ。
 
-本PLANとARCHIVEの本文は`control-center/github/`の単一原本へ移す。旧住所は新原本と既存節への案内のみを持ち、計画・案件状態を別に更新しない。これにより共通親と専門領域を配置でも区別しながら、既存のHandoff・Skill・履歴からの到達経路を保つ。旧版の本文・SHA・EOFを要求する契約は案内で満たしたとせず、その契約が指定する版を読む。
+新版は[Prompt棚の四用途](../../prompts/README.md#316-旧選抜棚から育て直した四prompt)から選ぶ。協働Covenant、完成ArtifactのGitHub保存、その構造的理解の補助、Torah Vision Lensの創造的な往復を区別する。主カードが保存手順の意味を所有し、補助版が別の規則を育てない。RootとHumanの権限を保ち、共通契約を四本へ複製しない。
 
-Humanが最初に作った`home/README.md`は、homepageとの紛らわしさを避ける後続訂正により[house/README.md](../house/README.md)へ改名した。内容は改行一つの入口Seedとして保持する。家の実際の状況、具体的な整理計画、生活上の成果は今回のGitHub整備から推定しない。既存の`changes/`と整理指針は、必須Sourceを含む現在の所有先を保つ。全資料の一斉移設や別領域の着手を、この二原本の整理の成立条件にしない。
+現在の案内は新版へ接続し、当時の記録・固定Binding・旧版の意味はその時点の根拠として保つ。旧フォルダに互換Stubを残す計画は採らない。旧契約を新版で通過扱いにせず、履歴の参照方法はSTR-014へ。全履歴の書換え、別の固定Binding移行、旧Runtimeの再起動は今回に含まれない。
 
-本欄は目的と接続を示し、最新の実施・保存確認はSTR-013と実体へ戻る。未確認の書込みを失敗として繰り返さない。承認対象を確認し終えたらHuman Reviewへ返し、残点を自動選択しない。
+本欄は現在の目的と担当原本への入口を持つ。保存・検証の状態はSTR-014と実体へ戻り、別々の完了台帳を作らない。今回が完了したらHuman Reviewへ返し、他の候補を自動選択しない。
 
 ### 成果を現在へ接続する
 
 下記は所有記録への案内であり、今回すべてを再実装・再試験したという意味ではない。
 
-- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離は公開・Remote確認済み。今回の移設はその成果を踏まえた後続変更であり、入口整備を未完了へ戻さない。
+- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離、[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)の二原本移設とhouse改名は公開・Remote確認済みの先行成果である。今回の四Prompt移行を理由に未完了へ戻さない。
 
 - [STR-001](../changes/STR-001-navigation-and-ownership.md)によるD01・D02・D05・D07・D08等の局所修正は後続の保存・確認を保持する。D03の旧04／05住所差の修復も履歴として保持し、現在のMain／Supportは[Ark Domain](../../ark-project/README.md)から解決する。
 - D04はSTR-001での分離設計を経て、[STR-003](../changes/STR-003-persistent-collaboration-foundation.md)の明示版移行・Remote確認へ進んだ。下の旧診断にある「固定参照が現在も残る」は、その記録時点で読む。別のGraph／One-Table移行とは区別する。
@@ -52,7 +52,7 @@ Humanが最初に作った`home/README.md`は、homepageとの紛らわしさを
 - **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
 - **別Branchの未完了**：[STR-002](../changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
 - **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
-- **今回選んだ範囲と、別の判断**：PLAN・ARCHIVEの移設はSTR-013の対象へ進んだ。その他の記録の移設や`house/`の具体的な設計・生活上の実行は別の対象であり、この二原本の移設の未完了部分には数えない。HumanによるhomeのSeed作成と、実際の家の整理成果を区別する。
+- **今回選んだ範囲と、別の判断**：四Promptの改訂・移行と旧選抜棚の廃止はSTR-014へ接続する。PLAN・ARCHIVEの専門領域への移設とhouse改名はSTR-013の先行成果である。その他の記録移設、houseの具体化・生活上の実行、Skill再作成、固定Binding移行は今回の未完了部分に含めない。HumanのSeed作成と、現実の家の整理成果を区別する。
 - **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
 
 ### 次の判断の仕方
@@ -534,4 +534,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.14.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.15.0
