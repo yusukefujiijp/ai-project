@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v009"
+version: "v010"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v008 preserved in Git history; v009 routes to the modernized collaboration Covenant under STR-014; authority and earlier ownership retained"
+version_basis: "v001-v009 preserved in Git history; v010 adds shared references navigation while preserving the STR-014 Covenant route and prior ownership"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-10"
 last_reality_reviewed: "2026-09-19"
@@ -47,6 +47,7 @@ plan_mode_route_review:
   change_record: "control-center/ARCHIVE.md#arc-006"
 prompt_migration_record: "control-center/changes/STR-014-super-special-prompt-modernization.md"
 updated_reason:
+  - "2026-10-10: Add shared references and lessons routing; synchronize the displayed entry version. Preserve concurrent STR-014 navigation; no whole-repository review or authority expansion."
   - "2026-10-10: STR-014 replaces the retired ss_super-special Covenant route with its revised prompts body and scoped role; no whole-repository rereview."
   - "2026-10-06: STR-013 routes to GitHub-owned plan and archive documents while preserving legacy address navigation; no new shared authority or home execution."
   - "2026-10-06: STR-012 separates the common control-center entry from GitHub organization; keeps existing plan, case records and required-source paths. Scoped navigation update only."
@@ -126,7 +127,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v007 / Current-request Repository Front Door
+- Repository入口: README v010 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -171,6 +172,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 | Path | Role | Read when |
 |---|---|---|
+| [`references/README.md`](references/README.md) | 領域を越えて再利用する知見・共有lessonの入口 | 構成・保存先・繰り返す問題など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
