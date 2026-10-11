@@ -46,7 +46,7 @@ Skillsに関係する変化する学びの担当原本は、[`_references/lesson
 
 Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分を継承してskills内のlessonsを集約し、他AI・Future Dotsへ渡す計画を承認した。Radio 1件・Voice 3件を同一行のまま集約し、上記の読取・更新先を現在の案内とする。
 
-導入先の切替確認中は旧二ファイルを互換読取用の固定snapshotとして保持し、追記・二重更新しない。登録済みRadio／Voiceの実際の参照先を確認してから旧配置を除去する。共有原本、登録先、会話内の取得結果は別々に確認する。移設の根拠・保存・切替・退役の確認状態は[STR-015](../control-center/changes/STR-015-skills-lessons-consolidation.md)が所有する。
+2026-10-11、集約先・共有Skill・案内の保存後全文一致を確認した。登録先へのRadio／Voice更新はHTTP 422で完了せず、Remoteの版と会話内の取得本文はいずれも旧版のままだった。このため旧二ファイルは互換読取用の固定snapshotとして保持し、追記・二重更新しない。登録先の問題を解消し、同じ二Skillの新本文を正規手順で保存・再取得確認した後に旧配置の退役を再開する。別名・別経路への再登録は行っていない。共有原本の保存と導入先の更新を分け、根拠・確認結果・再開条件は[STR-015](../control-center/changes/STR-015-skills-lessons-consolidation.md)へ戻る。
 
 Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
 
@@ -54,8 +54,8 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のRadio条件、基本支援は本文単体 | 構文・限定応答・共有本文確認。再提出後の登録先保存・本文一致。2026-10-11に本協働のSkill参照でも取得。集約先への切替状態は§1.3、過去の確認は§3.11。実聴取効果は未確認 |
-| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 構文・限定応答・個人Skill導入本文の一致。Voice内直接呼出しと実生活効果は未検証。§3.11 |
+| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のRadio条件、基本支援は本文単体 | 初版の登録先保存・本文取得を確認。集約先へ更新した共有版の登録先反映はHTTP 422で保留（§1.3）。形成履歴は§3.11。実聴取効果は未確認 |
+| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答・導入本文一致。集約先へ更新した共有版の登録先反映はHTTP 422で保留（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
 | 問題解決 / solve-problems | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](solve-problems/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 形式・四つの独立文脈で計八応答を確認。導入・共有と検証境界は§3.8。自然な自動選択・品質優位・実生活効果は未実証 |

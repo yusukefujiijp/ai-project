@@ -5,7 +5,7 @@ version: "v001"
 created: "2026-10-11"
 updated: "2026-10-11"
 recorded_by: "Work / Ark28:05"
-status: "shared-source cutover prepared; installation and old-file retirement pending"
+status: "shared-source cutover saved and verified; installed update HTTP 422; legacy retirement held"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
 expected_eof: "EOF::STR_015_SKILLS_LESSONS::v001"
 ---
@@ -50,13 +50,23 @@ Ark28:05のHumanは、ai-projectへの限定集中とSkills分散の改善を検
 
 2026-10-11の開始時点で、登録済みRadio／VoiceのSkill本文をこの会話の参照経路から実際に取得し、GitHub共有版との一致を確認した。どちらも旧lesson URLを参照していた。Radioの初回拒否と、後続の承認済み通常登録の成功は歴史として保持し、今回を拒否回避の再登録として扱わない。
 
-現在は共有原本の切替準備段階。新本文の登録先保存・Remote照合、旧二ファイルの除去、完了時の検証結果はまだ未完了であり、以下へ観測後に追記・更新する。検証用の仮想相談をHumanの実経験やlessonへ追加しない。
+**GitHub共有原本：保存・照合済み。** [第一段階commit](https://github.com/yusukefujiijp/ai-project/commit/c9f58361bdc3d6c9a0ad1a92740e5db5392ade0b)で10ファイルをmainへ原子的に反映した。読取時のmainをexpected revisionとして非forceで更新し、変更範囲が指定10パスだけで削除なしであることをTreeで確認した。保存後は10ファイルすべてを固定commitから再取得し、意図した全文との一致を確認した。
+
+**形式・意味保持：確認済み。** 元のRadio／Voice全4行を厳密JSONとして検査し、UTF-8・LF・末尾LF、空行なし、重複key／IDなし、schema 2、型・UTC日時・sourcesを確認した。集約結果は旧二ファイルをRadio→Voiceの順につないだ全bytesと一致する。SHA-256は `94111c52c452e69c7c3db439ae6654436c4d4d5204807e1e1a1fab9ee805dc44`。10,023文字の形成記録本文を同一内容で第7節へ移し、radio-voice-formationアンカーを保持した。新しい相対参照23件の所在と、固定commit出典3原本への到達を確認した。出典本文を今回新たに全文再検証したという意味ではない。
+
+**限定読解：二つの独立文脈で確認。** 元会話・計画・期待回答を渡さず、候補Hub／Skill、集約lesson、既存形式契約と相談入力を渡した。一つはRadioの初回利用・混在するVoice lessonの適用・保存先相談で、条件付き読解、所有先、保存禁止を区別した。もう一つは未完成のVoiceの問いをTextへ移す設計相談で、元表現とUnknownを保持し、意味保存・二つの実りの二lessonを未実証の設計として扱った。構成した相談への限定応答であり、Humanの実経験としてlessonへ追加していない。
+
+**登録先更新：未完了。** 開始時の登録先Remoteは367d4faefabaa91365e0ecd4b05782e06d5667e6。無関係な未保存変更を保持するため同じSkills Repositoryの隔離worktreeで、既存Radio／VoiceのSKILL.mdだけを変更した。両方が公式quick_validateを通過し、Trigger frontmatter・表示設定を保持、GitHubへ保存した新本文との一致を確認した。作業commitはb22ca47227b4912b88f0c65d2216b7262f3e2c4a。
+
+通常の保存先へ一度pushしたところ、HTTP 422／RPC failed／remote disconnectを受けた。「Everything up-to-date」という末尾表示を成功とせず、Remote refを再取得して367d4faのままであることを確認した。さらにRadio／Voiceを会話内のSkill参照経路から再取得し、両方とも旧本文・旧lesson URLのままであることを確認した。422の具体的原因はUnknown。初回Radio登録時の拒否と同じ原因とは推定しない。同一要求の再送・別名・別経路での保存は行わず、ローカルの作業commitを保持した。
+
+**旧配置：退役保留。** 登録済み二Skillがまだ旧URLを利用するため、旧Radio／Voiceの二JSONLは除去しなかった。集約先の原本化・案内更新は保存済みだが、導入先を含む完全な切替・旧配置の整理は未完了である。
 
 GitHubの保存、登録先の保存、会話内取得、Human UI、自然な自動選択、Radioの聴き心地、Voice内直接呼出し、実生活効果はそれぞれ別のEvidenceである。今回の移設だけで全AI互換性や長期効果を実証しない。
 
 ## 5. 中断・復元・今後
 
-中断した場合は現在の集約先、共有SKILL.md、登録先、旧配置の有無を確認し、保存済み部分を繰り返さず残工程へ戻る。登録先の切替が確認できなければ旧ファイルの退役を保留し、別名のSkillや恒久的なMirrorを増やして不足を隠さない。
+中断した場合は現在の集約先、共有SKILL.md、登録先、旧配置の有無を確認し、保存済み部分を繰り返さず残工程へ戻る。登録先の切替が確認できなければ旧ファイルの退役を保留し、別名のSkillや恒久的なMirrorを増やして不足を隠さない。今回の最小回復は、正規Skill保存先のHTTP 422の原因を確認・解消し、最新の共有版と登録先の差分を照合して同じ二Skillへ反映すること。登録先・実際の参照本文を確認してから旧二ファイルを退役し、GitHubを再取得する。基準以降のHuman訂正・STOP・並行変更があれば保持する。同じ承認Scopeを再計画する必要はないが、権限・アクセス条件が原因なら解決前に再送しない。
 
 旧原本の正確な内容は第2節の固定commitとGit履歴で復元できる。後続のlesson更新があれば、旧snapshotで集約先を上書きしない。復元の必要・現在の権限・利用側の依存を確かめ、保存済み4件の同一性だけで後続の全状態を戻せるとは扱わない。
 
