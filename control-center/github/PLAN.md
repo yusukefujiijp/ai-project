@@ -1,20 +1,20 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.16.0"
+version: "0.17.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Voice/Mode retirement completed and remotely verified; Human Review; WTP retained"
+status: "Human-authorized projects archive; execution and remote verification owned by ARC-012"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-10-11"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "ARC-011: connect scoped Voice/Mode retirement and WTP retention; preserve completed STR-014, prior results and historical contracts."
+updated_reason: "ARC-012: archive all remaining projects including WTP under the later explicit Human request; preserve prior completion, unresolved conditions and Podcast planning scope."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.16.0"
-current_observation_base: "c8c35957ef63d0fca7378a1cc98ea1099a4e30c1"
-change_record: "ARCHIVE.md#arc-011"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.17.0"
+current_observation_base: "b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba"
+change_record: "ARCHIVE.md#arc-012"
 ---
 
 <a id="ai-project構造整理--診断から改善へ"></a>
@@ -25,15 +25,17 @@ change_record: "ARCHIVE.md#arc-011"
 
 ## current
 
-### 今回の焦点：旧Voice／Modeの五原本を保管し、WTPの比較資産を保持する
+### 今回の焦点：Projects全体を保管し、現役の入口を閉じる
 
-2026-10-10、Ark27:09は`projects/`・`mode/`の十二原本を全文読解し、後続Skill・現役案内・歴史証拠・保存条件を比較した。Plan Modeで「Voice／Mode五原本の先行退役、WTP六原本とProjects入口の保持」を提示し、その後のHumanによるGitHub実行・Human Seal・継続承認を受けた。五原本の同一保管、元配置の除去、六文書の限定整合、保存後確認を今回の範囲とする。理由・承認・原本対応・結果は[ARC-011](ARCHIVE.md#arc-011)が所有する。
+2026-10-11、Ark28:05でHumanは、Podcast Modeに関する計画検討より先に、`projects/`を`projects/ark-wtp/`と共にアーカイブ化するよう明示した。今回の範囲は、Projects入口とWTP六原本の同一保管、元配置の除去、必要な案内・記録の整合と保存後確認である。理由・承認・原本対応・実施結果は[ARC-012](ARCHIVE.md#arc-012)が所有する。
 
-Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lessons](../../skills/_references/lessons.jsonl)へ接続済みである。Journalingの振り返り・閉じ方、Field Testの証拠区分は原本と案件から辿れる。全旧機能を新Skillへ移植済みとは扱わず、今回の整理からSkill再作成・lesson一括移設・追加試験を開始しない。Radio／Voiceの形成・共有・導入・検証のCurrentは[Skills Hub](../../skills/README.md#radio-voice-formation)へ戻る。
+[旧Projects](../../__archives/ARC-012/projects/README.md)と[Ark-WTP](../../__archives/ARC-012/projects/ark-wtp/README.md)は歴史資料への接続であり、現役Projectの選択肢ではない。Bereshit全Parasha × Hebrew Word Lens v0.3の`PROVISIONAL_PASS`、Human Final Seal未確認、未取得Peshat基底、旧Daily Teshuvah設計を原文のまま保存する。退役承認を成果の最終承認・Missionの失敗／完了・研究再開へ読み替えない。
 
-[Ark-WTP](../../projects/ark-wtp/README.md)は`FROZEN_BENCHMARK_WAIT`として現配置で保持する。成果本文の`PROVISIONAL_PASS`をHuman Final Sealへ強めず、凍結を完了・失敗・目的変更終了へ読み替えない。前身`ark-wtp.md`にはLocal backupと退役のHuman確認条件があり、その確認を今回の実行承認だけから補わない。WTP一式の後続退役は別途この条件と現在のHuman判断を満たす時に検討する。
+[ARC-011](ARCHIVE.md#arc-011)でWTPを現配置に残した判断は当時の判断として保持する。その後の今回の明示承認が、WTPを含む全原本の可逆的な保管と現役配置の退役を指定した。Local backup確認は引き続きUnknownであり、今回の承認から確認済みを補わない。旧`ark-wtp.md`自体は同一blobで保管し、保存内容の永久削除は行わない。
 
-本欄は担当原本への入口であり、保存・検証の第二台帳ではない。五原本の範囲を確認後はHuman Reviewへ戻る。通常Unknownの全解消を完了条件にせず、別の候補を自動選択しない。
+先行Voice／Mode五原本の退役はARC-011で完了済み。現役Radio／Voiceの選択は[Skills Hub](../../skills/README.md#radio-voice-formation)、共有lessonと導入先の整合状況は[STR-015](../changes/STR-015-skills-lessons-consolidation.md)へ戻る。本欄は保存・検証やSkill Runtime状態の第二台帳にしない。
+
+今回のアーカイブを確認後はHuman Reviewへ戻る。直前のPodcast検討は計画提示までの依頼として保持し、本件の実行承認をPodcast作成・Radio削除・HTTP 422の別経路回避・旧二JSONLの退役へ拡張しない。通常Unknownの全解消を今回の完了条件にしない。
 
 ### 成果を現在へ接続する
 
@@ -41,7 +43,7 @@ Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lesso
 
 - [STR-014](../changes/STR-014-super-special-prompt-modernization.md)の四Prompt改訂・Version up・`prompts/`移行と`ss_super-special/`退役は、実装と保存後確認を完了した成果である。Humanが旧Arkの選抜PromptをローカルからGitHubへ移したという由来、主カードと補助版の役割を保持する。新版は[四用途の入口](../../prompts/README.md#316-旧選抜棚から育て直した四prompt)から選ぶ。今回を四Promptの再作成や旧試験の再開にしない。
 
-- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離、[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)の二原本移設とhouse改名は公開・Remote確認済みの先行成果である。今回のVoice／Mode整理を理由に未完了へ戻さない。
+- [STR-012](../changes/STR-012-control-center-domain-entries.md)の共通入口・GitHub専門入口・PLAN現在欄の分離、[STR-013](../changes/STR-013-github-plan-and-archive-relocation.md)の二原本移設とhouse改名は公開・Remote確認済みの先行成果である。今回のProjects整理を理由に未完了へ戻さない。
 
 - [STR-001](../changes/STR-001-navigation-and-ownership.md)によるD01・D02・D05・D07・D08等の局所修正は後続の保存・確認を保持する。D03の旧04／05住所差の修復も履歴として保持し、現在のMain／Supportは[Ark Domain](../../ark-project/README.md)から解決する。
 - D04はSTR-001での分離設計を経て、[STR-003](../changes/STR-003-persistent-collaboration-foundation.md)の明示版移行・Remote確認へ進んだ。下の旧診断にある「固定参照が現在も残る」は、その記録時点で読む。別のGraph／One-Table移行とは区別する。
@@ -55,7 +57,7 @@ Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lesso
 - **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
 - **別Branchの未完了**：[STR-002](../changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
 - **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
-- **今回選んだ範囲と、意図的保留**：Voice／Mode五原本の退役と限定整合はARC-011へ。WTP六原本は現配置に保持し、Projects入口はWTPの凍結状態と旧Voiceの保管理由を案内する。WTP後続退役の判断とLocal backup条件は、先行五原本の完了を妨げるGateにしない。
+- **今回選んだ範囲と、意図的保留**：Projects入口とWTP六原本の退役・同一保管・限定整合はARC-012へ。先行Voice／Mode五原本の退役はARC-011で完了済み。WTPの再設計・研究・再試験とPodcastの実装は自動開始しない。Local backupのUnknownと保存済み原本の同一性を分ける。
 - **別の判断**：PLAN・ARCHIVEの専門領域への移設とhouse改名はSTR-013の先行成果である。その他の記録移設、houseの具体化・生活上の実行、Skill再作成、固定Binding移行は今回の未完了部分に含めない。HumanのSeed作成と、現実の家の整理成果を区別する。
 - **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
 
@@ -538,4 +540,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.16.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.17.0

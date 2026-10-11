@@ -1,6 +1,6 @@
 ---
 title: "アーカイブ案件 — 提案・判断・実施・記憶"
-version: "0.11.0"
+version: "0.12.0"
 canonical_path: "control-center/github/ARCHIVE.md"
 role: "Single GitHub archive case record for proposals, Human decisions, execution and reconsideration"
 status: "human-authorized record structure / per-case approval and execution below"
@@ -11,7 +11,7 @@ updated: "2026-10-11"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
 relocation_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 relocation_base_commit: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.12.0"
 ---
 
 # アーカイブ案件 — 提案・判断・実施・記憶
@@ -20,7 +20,7 @@ expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0"
 
 **今後も使う資料を見通しやすくするため、役割を終えた現役配置を根拠から選び、YusukeJPの承認後に `__archives/` へ移す。提案から実施後の見直しまで、同じ案件で理由を辿れるようにする。**
 
-最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)、旧Ark System原本の保管と入口役割の整合は[ARC-010](#arc-010)にある。旧Voice／Mode五原本の保管とWTP保持の判断は[ARC-011](#arc-011)にある。GitHub整理の目的と形成史は[専門入口](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
+最初の退役案件は[ARC-001](#arc-001)。続く三群は[ARC-002](#arc-002)・[ARC-003](#arc-003)・[ARC-004](#arc-004)、今回の実施経緯は[三群の記録](#archive-batch-2026-09-22)にある。chocoZAPの記録再設計と旧日別資料の保管は[ARC-005](#arc-005)、旧Plan Mode資料の退役と新Skillへの接続は[ARC-006](#arc-006)、旧Thread-End・Thread Craft三ディレクトリの退役と出典保持は[ARC-007](#arc-007)にある。初穂の形成史の保管と現役Actorログへの整理は[ARC-008](#arc-008)、旧Note六原本の保管と現役棚の退役は[ARC-009](#arc-009)、旧Ark System原本の保管と入口役割の整合は[ARC-010](#arc-010)にある。旧Voice／Mode五原本の保管と当時のWTP保持の判断は[ARC-011](#arc-011)、その後の明示承認によるProjects入口とWTP六原本の保管は[ARC-012](#arc-012)にある。GitHub整理の目的と形成史は[専門入口](README.md)、診断と優先順位は[PLAN](PLAN.md)、保存実体への入口は[__archives](../../__archives/README.md)にある。本書は個別案件の判断・承認・結果を所有する。一般的な会話ログ、全ProjectのTask台帳、全作業の追加Boot条件にはしない。
 
 ## 1. なぜ記録するか
 
@@ -715,6 +715,8 @@ Current08の核と新Support04 Handoffは、共有文書の準備時blobを恒�
 
 ## ARC-011
 
+**後続差分（2026-10-11）**：以下は本件実施時点の判断・確認である。その後、Humanが`projects/`をWTPと共にアーカイブ化するよう明示した。WTPを含む七原本の保管・現役配置の退役は[ARC-012](#arc-012)で扱い、本件の過去の保持判断やLocal backupのUnknownを無言で書き換えない。
+
 **完了：旧Voice／Mode五原本の同一保管・現役配置の退役と六文書の限定整合をmainへ公開し、11本文のRemote全文一致・対象外505ファイル保持を確認した。証拠と確認境界は§G。WTP六原本は現配置で保持し、十二原本すべての退役完了とは扱わない。**
 
 ### A. 形成・Human判断・担当
@@ -769,7 +771,7 @@ STR-001のVoice README・Mode README・Journalingの三証拠リンクは、[当
 
 ### E. WTP保持・Radio確認・対象外
 
-[WTP入口](../../projects/ark-wtp/README.md)と[Artifact README](../../projects/ark-wtp/artifact/README.md)は、Bereshit全Parasha × Hebrew Word Lens v0.3の本文と比較条件を`FROZEN_BENCHMARK_WAIT`として保持している。成果の`PROVISIONAL_PASS`はSourceの評価であり、今回の整理による再評価・Human Final Sealではない。欠けたPeshat本文を補完せず、研究再巡回・新Lens・再試験を開始しない。
+[WTP入口](https://github.com/yusukefujiijp/ai-project/blob/b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba/projects/ark-wtp/README.md)と[Artifact README](https://github.com/yusukefujiijp/ai-project/blob/b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba/projects/ark-wtp/artifact/README.md)は、Bereshit全Parasha × Hebrew Word Lens v0.3の本文と比較条件を`FROZEN_BENCHMARK_WAIT`として保持している。成果の`PROVISIONAL_PASS`はSourceの評価であり、今回の整理による再評価・Human Final Sealではない。欠けたPeshat本文を補完せず、研究再巡回・新Lens・再試験を開始しない。
 
 前身`ark-wtp.md`のDaily Teshuvah Gate-to-YeshuaというIdentityは、現在のWeekly Torah Portionとは別である。現行WTP契約は同ファイルの削除前にLocal backupと退役のHuman確認を要求する。今回その確認はUnknownのため、WTP六原本を現配置で維持する。Projects入口を残す理由はこの現用の保管・比較経路にあり、単なる空棚維持ではない。WTPの後続退役は現在のHuman判断と条件確認から再検討し、本件五原本の完了から自動開始しない。
 
@@ -801,4 +803,70 @@ Voice lessonsと日付付きRepository Reviewにある固定commit参照は保�
 
 この結果追記は確認後の記録であり、記録自身の自己SHAを埋め込む循環は作らない。追記を含む最終本文も保存後に再取得する。今回の五原本の範囲を完了し、Human Reviewへ戻る。WTP後続退役・Skill改訂・次Trialを自動開始しない。
 
-EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0
+## ARC-012
+
+**承認済み：Projects入口とArk-WTP六原本を原文のまま保管し、現役の`projects/`全体を退役する。保存後の確認結果は§Gへ記録する。** 本件の承認は旧WTP成果のHuman Final Seal、Local backupの確認、Podcast実装の承認を意味しない。
+
+### A. 依頼・後続判断・担当
+
+2026-10-11、Ark28:05 Supportの本会話で、HumanはPodcast ModeについてのPlan-only依頼に続き、「その前に」として`projects/`と`projects/ark-wtp/`を指定し、「と諸共にarchive化して下さい！」と明示した。引用符内は原文抜粋、それ以外は編集要約である。公開された会話URLは提示されていないため作らない。
+
+今回の明示的な実行依頼に基づき、同一Repository内の既存保管方式`__archives/<案件ID>/<元の相対パス>`を使う。内容の永久削除、新Repository作成、Skill変更、Radio削除、Podcast作成・導入は対象外。直前のPodcast計画は保留して本件を先に完了し、その後Human Reviewへ接続する。
+
+意味と範囲の承認者はYusukeJP、調査・実装・保存確認の担当は本会話のWork / Ark28:05。Main Ark27:09の役割を保持し、他AIの制作・確認を本AIの実績へ借用しない。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。AIと資料をKeliとし、HumanのCorrection・STOP・Final Sealと適用Guardを保持する。
+
+### B. 保存する価値と状態
+
+- **形成と探索の入口**：Projects READMEとWTP READMEを保存し、旧Ark-Voiceの退役（ARC-011）、WTPの目的・凍結理由・比較経路を辿れるようにする。Projectsの現役配置を閉じる判断であり、全てのProjectという概念やParasha利用を廃止する意味ではない。
+- **比較可能な成果**：Bereshit（Genesis 1:1–6:8）全Parasha × Hebrew Word Lens v0.3の成果本文、8 lexical anchors、Artifact README、Lens workflowとSeed templateを保持する。Sourceの`FROZEN_BENCHMARK_WAIT`・`PROVISIONAL_PASS`・Human final seal falseを、そのまま当時の状態として読む。
+- **重要なCorrection**：一節Pilotをfull-Parasha合格としない。固定欄の充足を強制せずAllowed Absenceを使う。証拠がなければ主張を弱める。出典と推測、本文座標とArtifact名を区別する。未取得Peshat基底を補完せず、今回を再探索・再研究・別Lens・540 matrix生成へ接続しない。
+- **別Identityの前身**：`ark-wtp.md`のDaily Teshuvah Gate-to-Yeshua設計はWeekly Torah Portionとは別の形成段階として保存する。名称の一致から両者を統合したCurrent Root仕様を作らない。
+- **過去の保持条件**：原本にはLocal backupと退役のHuman確認まで前身を削除しないという条件がある。ARC-011はWTP退役の承認がなく現配置で保持した。今回は後続HumanがWTPを名指しして全体のアーカイブを承認したため、内容を失わない可逆的な移動を実施する。Local backupは引き続きUnknownであり、確認済みへ変換しない。前身も同一blob・固定snapshot・Git履歴に残る。
+
+この意味整理は原本を読む入口であり、旧資料の解釈を固定する上限ではない。凍結資産の退役を、Mission全体の成功・失敗・完了や成果最終承認と同一視しない。
+
+### C. 原本対応と実行基点
+
+読解・実行基点は[commit b3919a1](https://github.com/yusukefujiijp/ai-project/tree/b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba)、Root Treeは`863602d9c1b841d9176749958c9d1cbad8400f4c`。非切断Treeで`projects/`配下は七ファイルと確認した。元Projects subtreeは`b1d2a3e53c4eae1ccff9439a6dd4b3325817ef67`。本文を先頭metadataから自然EOF／宣言EOFまで読み、表示切れは未読位置から回収した。既読記録は同一blobの範囲でのみ再利用した。
+
+| 元パス | 保存先 | 保持するblob | bytes |
+|---|---|---|---|
+| `projects/README.md` | [同一原本](../../__archives/ARC-012/projects/README.md) | `af373446e0315e039877e9e9fd6d3dac56cddff8` | 2,588 |
+| `projects/ark-wtp/README.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/README.md) | `15685665c8e3ec3c647b1a7233bc005fa984069c` | 5,315 |
+| `projects/ark-wtp/ark-wtp.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/ark-wtp.md) | `e3b28a9ec5911c0e03ed10f85bb1dce14ef44ab8` | 10,907 |
+| `projects/ark-wtp/artifact/README.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/artifact/README.md) | `4f72a60ac6219c4e6fffd941f1a542e4c5a3a76e` | 11,806 |
+| `projects/ark-wtp/lens-dimensions_workflow.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/lens-dimensions_workflow.md) | `3f2c5c9b1e3848fe30fc40faa3c28a4dc8f5c773` | 19,272 |
+| `projects/ark-wtp/seed-units/_template.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/seed-units/_template.md) | `ab56780ad5bb53edc81c1d7d48749ea2883db389` | 2,686 |
+| `projects/ark-wtp/seed-units/bereshit.md` | [同一原本](../../__archives/ARC-012/projects/ark-wtp/seed-units/bereshit.md) | `4e0695f96832c28885913b8aa0dac0b02ddef7ea` | 16,041 |
+
+七原本は全てmode `100644`、合計 **68,615 bytes**。本文・改行・旧自己パス・状態・命令・相対リンクを変更しない。同じblobの追加と元七パスの除去、必要な案内更新を一つのGit Tree／commitとして公開する。旧`projects/`にStubや互換原本を残さない。
+
+### D. 現役の案内と履歴の整合
+
+原本移動に伴う更新は、Root `README.md`、`ark-project/README.md`、`__archives/README.md`、`control-center/github/PLAN.md`、本`ARCHIVE.md`、`prompts/ai-output-polish.md`の六文書に限定する。確認後の活動は`records/`の同日行へ短く接続する。
+
+Rootは旧Projectsの記録へ案内し、Ark Domainは現役named-project routerを歴史経路へ変える。Domain v010・タイトル規則・Main27:09・Support28:05・Boot／移行契約は保持する。Domainの今回差分は必要箇所の再確認対象であり、過去のBoot全文読解を別blobの読解済み証拠へ無条件に借用しない。
+
+PLANのCurrentを本件へ進め、診断履歴と完了済み成果・保留Branchを保持する。ARC-011には後続差分だけを明示し、二つのWTP証拠リンクを移動前の固定版へ接続する。過去の「現配置で保持」は当時の判断として残す。
+
+Output Polishは汎用整形Promptとして保持する。固定的な「Main Field＝Ark-WTP」「Ark-WTPへ戻る」を形成当時の文脈へ限定し、現在のHumanの目的へ戻る案内に整える。任意のWTP例・Variant、Source Safety・Practice Landing・意味保持の本文は保ち、旧WTPを自動再開するRuntimeにしない。新Skill・新System・案件配下の重複README・追加lessonは作らない。
+
+### E. 参照確認と証拠の境界
+
+七原本、変更対象と近接ガイド、`projects/`・`ark-wtp`のRepository検索、非切断Treeを照合した。これは全Git履歴・全外部consumer・他AIの実理解を網羅監査したという意味ではない。
+
+日付付きRepository Review、Ark21 sandbox、旧migration manifest、Fable5 sidecar、既存アーカイブや固定commit参照は歴史資料として保持する。過去の原文を移動先へ機械置換せず、必要な現在の入口と当時の証拠リンクを区別する。
+
+保存原本内の`current`・`active`・起動指示・元の`canonical_path`は当時の記述であり、現在の実行権限ではない。原本内部の旧相対リンク・main参照の全互換性は保証しない。元の参照関係は[移動前snapshot](https://github.com/yusukefujiijp/ai-project/tree/b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba/projects)から辿る。元から欠けているPeshat基底などがsnapshotで復活するとは扱わない。
+
+### F. 再検討と復元
+
+現在のHuman依頼、実際の現役consumer、旧資料固有の新用途が現れた場合は、その枝だけを再検討する。必要な保存blobを元のパスへ戻し、現在の依存と案内を整合する。main全体を過去へresetせず、並行・後続変更を保持する。復元の理由と結果は同じ案件へ追記する。
+
+今回の保存は知恵と比較可能性を残しながら、通常の入口から旧Projectの必須作業が再生される経路を減らす設計である。探索負担軽減や実生活効果はCandidateであり、未観測を成果へ補わない。通常Unknownを全解消することは本件の完了条件にしない。
+
+### G. 実施・保存後確認
+
+公開と保存後の照合を実施中。main、移動先七本文と六更新文書、Tree／blob、旧配置の除去、対象外保持、履歴・参照を確認した後、実測結果と固定commitをこの節へ追記する。現時点の作業記述だけをRemote検証完了の証拠にしない。
+
+EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.12.0

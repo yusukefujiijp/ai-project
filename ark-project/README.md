@@ -40,7 +40,7 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-10"
+updated: "2026-10-11"
 last_reality_reviewed: "2026-10-07"
 route_review_base_commit: "4a6f9652490b6286b2d73767d5b90cc6a3f5ada5"
 route_review_scope: "Human-authorized Ark27:08→09 continuation after the explicit Source correction; verify candidate triad and Domain before publication, then reread main. Source08 terminal receipt owns actual results; preserve Support05, Ark99/Pickup, title policy and concurrent work"
@@ -57,6 +57,11 @@ teshuvah_entry_revision:
   naming_delta: "2026-10-06: Human approved alignment to Project name Ark99: Teshuvah Thread; refer to Ark99:00 by identifier and role, with its exact Thread title owned by the local README and later Human designation. Main/Support routes and chapter policy unchanged."
   startup_origin_delta: "2026-10-10: Human confirmed that only Ark99 threads all start from this Ark99:00 and authorized 02/03 parallel startup preparation and GitHub execution. Local INSTRUCTIONS owns the rule; 00 README owns provenance and scope. Retain Domain contract v010, Main09/Support05 and title policy v002."
   startup_origin_base_commit: "1ed360d86d4ddd17c185c7089b097e22c7686327"
+projects_archive_navigation:
+  date: "2026-10-11"
+  base_commit: "b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba"
+  change_record: "../control-center/github/ARCHIVE.md#arc-012"
+  scope: "Current Address Rule and Current Topology Integrity replace retired named-project routes with archive provenance; preserve Domain v010, title policy, Main27:09, Support28:05 and all Boot/transition contracts"
 repository_entry_alignment:
   date: "2026-10-05"
   base_commit: "7efcd490f728c25d5572aae20483fe420454f222"
@@ -431,7 +436,7 @@ current_address_rule:
   canonical_domain: "ark-project/"
   domain_router: "ark-project/README.md"
   family_scope: "numbered Ark lifecycle only"
-  named_projects_router: "../projects/README.md"
+  historical_named_projects: "../control-center/github/ARCHIVE.md#arc-012"
 ```
 
 Current Bootでは、存在しない旧住所や移行前Containerを選択肢へ入れない。過去の系譜が必要な場合はGit Historyを調査し、Current RouterへMigration実況を蓄積しない。
@@ -493,7 +498,7 @@ Ark Project、AI、GitHub、効率、成果、Title PolicyはRootでも王座で
 ```yaml
 topology_integrity:
   numbered_ark_family: "ark-project/arkNN/"
-  named_project_family: "../projects/"
+  historical_named_project_archive: "../__archives/ARC-012/projects/"
   reusable_prompts: "../prompts/"
   temporal_handoff: "../prompts/ai-next-thread-handoff.md"
   historical_thread_end_assets: "../control-center/ARCHIVE.md#arc-007; retired methods and source provenance, not a normal execution entry"

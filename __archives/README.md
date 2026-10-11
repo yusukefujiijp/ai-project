@@ -1,17 +1,17 @@
 ---
 title: "ai-project Archives — 退役した資料と判断の由来への入口"
-version: "0.11.0"
+version: "0.12.0"
 canonical_path: "__archives/README.md"
 role: "Archive storage entry and provenance index"
 status: "human-authorized entry"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI / YusukeJP"
 created: "2026-09-22"
-updated: "2026-10-10"
-updated_reason: "ARC-011: index five preserved Voice/Mode originals; retain WTP and the existing archive cases."
-change_record: "../control-center/github/ARCHIVE.md#arc-011"
+updated: "2026-10-11"
+updated_reason: "ARC-012: preserve the entire remaining projects tree, including six WTP originals, and retire its live routing; preserve earlier cases."
+change_record: "../control-center/github/ARCHIVE.md#arc-012"
 relocation_record: "../control-center/changes/STR-013-github-plan-and-archive-relocation.md"
-expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.11.0"
+expected_eof: "EOF::AI_PROJECT_ARCHIVES_README::v0.12.0"
 ---
 
 # ai-project Archives
@@ -54,7 +54,8 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 | [ARC-008の初穂形成史](ARC-008/dots/records/2026/20261001-first-fruit.md) | [理由・同一blob・固定snapshot・復元対応](../control-center/github/ARCHIVE.md#arc-008) → [現役Actorログ](../dots/logs/README.md) | 固有の命名・Humanの意味・訂正を一原本のまま保管。元recordsにStubを置かず、保存本文の旧相対リンクは固定snapshotから辿る |
 | [ARC-009の旧Note六原本](ARC-009/_note/README.md) | [退役理由・六原本対応・保存価値・証拠・復元](../control-center/github/ARCHIVE.md#arc-009) | AI分担・GitHub運用観測・Mission設計・Reviewの原本を同一blobで保管。現役汎用棚を退役し、旧命令・metadata・相対リンクは当時の記述として読む。元パスにStubを置かない |
 | [ARC-010の旧Ark System原本](ARC-010/_system/ark-system.md) | [保存価値・役割分担・固定証拠・確認・復元](../control-center/github/ARCHIVE.md#arc-010) | Thread横断の成長・AIの長期的助言・保存後確認の形成史を、一原本のまま同一blobで保管。現役Operating Mapを退役し、旧命令・元住所・相対リンクは当時の記述として読む。元パスにStubを置かない |
-| [ARC-011の旧Ark-Voice](ARC-011/projects/ark-voice/README.md)・[旧Mode](ARC-011/mode/README.md) | [五原本の価値・元住所・参照・確認・復元](../control-center/github/ARCHIVE.md#arc-011) | Voice二原本とMode三原本を同一blobで保管。旧Systemの採用・実証や未実施試験の完了を意味しない。元パスにStubを置かず、WTP六原本は現配置で保持 |
+| [ARC-011の旧Ark-Voice](ARC-011/projects/ark-voice/README.md)・[旧Mode](ARC-011/mode/README.md) | [五原本の価値・元住所・参照・確認・復元](../control-center/github/ARCHIVE.md#arc-011) | Voice二原本とMode三原本を同一blobで保管。旧Systemの採用・実証や未実施試験の完了を意味しない。元パスにStubを置かず、当時WTP六原本は現配置で保持。その後のProjects全体の退役は[ARC-012](../control-center/github/ARCHIVE.md#arc-012)へ |
+| [ARC-012の旧Projects一式](ARC-012/projects/README.md)・[Ark-WTP](ARC-012/projects/ark-wtp/README.md) | [七原本の価値・後続Human判断・照合・復元](../control-center/github/ARCHIVE.md#arc-012) | Projects入口とWTP六原本を同一blobで保管し、現役の`projects/`を退役。凍結Benchmark・旧Daily Teshuvah設計・未確認条件を保持し、成果の最終承認やLocal backup確認へ読み替えない |
 
 既存のArk21:06 sandboxは、その場所に保存された実験の由来である。__archivesへ移設済みと数えず、必要な案件から参照する。全ての歴史資料をこの入口整備と同時に移す意味ではない。
 
@@ -64,4 +65,4 @@ ARC-002では、旧Bootの固定参照を保つため元パスの同一原本も
 
 本入口、案件ID、保存形式は改善できる。他AI・Future AIが、どの実体をどの判断で保存したかへ到達できることを保持する。
 
-EOF::AI_PROJECT_ARCHIVES_README::v0.11.0
+EOF::AI_PROJECT_ARCHIVES_README::v0.12.0

@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v011"
+version: "v012"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v010 preserved in Git history; v011 aligns the named-project route with ARC-011 while preserving shared references, STR-014 and existing ownership"
+version_basis: "v001-v011 preserved in Git history; v012 retires the live projects route under ARC-012 while preserving shared references, STR-014 and existing ownership"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-10"
+updated: "2026-10-11"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -46,7 +46,13 @@ plan_mode_route_review:
   scope: "Plan Mode route and description only; no whole-repository rereview"
   change_record: "control-center/ARCHIVE.md#arc-006"
 prompt_migration_record: "control-center/changes/STR-014-super-special-prompt-modernization.md"
+projects_archive_navigation:
+  date: "2026-10-11"
+  base_commit: "b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba"
+  change_record: "control-center/github/ARCHIVE.md#arc-012"
+  scope: "Section 5.1 projects route only; no whole-repository rereview or Main/Support change"
 updated_reason:
+  - "2026-10-11: ARC-012 archives the entire projects tree including Ark-WTP; route historical consultation to its case instead of a live named-project domain."
   - "2026-10-10: ARC-011 retires the old Voice/Mode entries and retains the WTP frozen benchmark route; current Skills and shared references remain with their owners. Scoped navigation only."
   - "2026-10-10: Add shared references and lessons routing; synchronize the displayed entry version. Preserve concurrent STR-014 navigation; no whole-repository review or authority expansion."
   - "2026-10-10: STR-014 replaces the retired ss_super-special Covenant route with its revised prompts body and scoped role; no whole-repository rereview."
@@ -133,7 +139,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v011 / Current-request Repository Front Door
+- Repository入口: README v012 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -185,7 +191,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |
 | [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。PLAN・ARCHIVEの原本はgithub配下。既存変更記録へは専門入口から接続 |
 | [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
-| [`projects/README.md`](projects/README.md) | Named Project domain front door | Ark-WTPの凍結Benchmark・成果本文・再開条件、旧Ark-Voiceの保管理由へ進む時 |
+| [旧Projects／Ark-WTPの保管記録](control-center/github/ARCHIVE.md#arc-012) | Historical project archive | 退役したProjects入口・Ark-WTPの凍結Benchmark・前身設計・保存理由を調べる時。通常運用のProject入口ではない |
 | [旧Ark Systemの知恵・形成史](control-center/github/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
 | [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |

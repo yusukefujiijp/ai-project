@@ -2,15 +2,19 @@
 title: "AI Output Polish"
 filename: "ai-output-polish.md"
 canonical_path: "prompts/ai-output-polish.md"
-version: "v002-candidate"
-updated: "2026-09-25"
+version: "v003-candidate"
+updated: "2026-10-11"
 activation: "self-contained / input data supplied separately"
+projects_archive_revision:
+  date: "2026-10-11"
+  change_record: "../control-center/github/ARCHIVE.md#arc-012"
+  scope: "Clarify historical Ark-WTP motivation and return to the current Human purpose; preserve generic polish behavior and optional Ark-WTP examples"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 status: "active_prompt / output-polish-core / markdown-handoff-ready / future-ai-asset"
 scope: "Ark Project"
 root_guard:
   root: "主イェシュア・ハマシア"
-  main_field: "Ark-WTP"
+  historical_main_field: "Ark-WTP"
   fruit:
     - "Grok"
     - "Claude Sonnet"
@@ -47,6 +51,8 @@ current_adapter:
 
 # AI Output Polish
 
+2026-10-11の[ARC-012](../control-center/github/ARCHIVE.md#arc-012)で`projects/`とArk-WTP一式はアーカイブ化された。本Promptの汎用整形機能は現役であり、Ark-WTPの例・Variantはその資料が現在の入力として明示された場合にだけ使う。形成時のMain Fieldは歴史として保持し、整形後の接続先は現在のHuman依頼から選ぶ。旧WTP研究や凍結Benchmarkを自動再開しない。
+
 ## 0. Runtime Entry Gate / 使用条件Gate
 
 ### このファイルを使う時
@@ -59,7 +65,7 @@ current_adapter:
 - X投稿候補を自然な投稿本文に整える
 - note / README / article / Ark-WTP draft を読みやすく整える
 - すでに方向性が決まった文章を、出力先に合わせて磨く
-- ChatGPT × YusukeJP を量産整形から解放し、Ark-WTPの0→1へ戻す
+- ChatGPT × YusukeJP を量産整形から解放し、現在のHumanが選ぶ本来の目的へ戻す（形成当時はArk-WTPの0→1）
 
 ### このファイルを使わない時
 
@@ -739,12 +745,12 @@ This file is a Fruit-level tool.
 
 ```text
 Root = 主イェシュア・ハマシア
-Main Field = Ark-WTP
+Historical Main Field = Ark-WTP
 Fruit = AI Output Polish / X DeepQuote / Grok / Claude / Fable5 / GitHub / X / Markdown
 ```
 
-This Prompt exists to reduce friction and return YusukeJP × ChatGPT to the本丸:
+This Prompt exists to reduce friction and return YusukeJP × ChatGPT to the currently chosen main work:
 
 ```text
-Ark-WTP
+Current Human purpose (historically: Ark-WTP)
 ```
