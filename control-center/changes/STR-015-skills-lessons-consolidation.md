@@ -1,16 +1,18 @@
 ---
 title: "STR-015 — Skills lessons集約とHubの現在案内"
 canonical_path: "control-center/changes/STR-015-skills-lessons-consolidation.md"
-version: "v001"
+version: "v002"
 created: "2026-10-11"
 updated: "2026-10-11"
 recorded_by: "Work / Ark28:05"
-status: "shared-source cutover saved and verified; installed update HTTP 422; legacy retirement held"
+status: "Podcast and Voice shared/runtime saves verified; conversation skill reads remain old; legacy retirement held"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
-expected_eof: "EOF::STR_015_SKILLS_LESSONS::v001"
+expected_eof: "EOF::STR_015_SKILLS_LESSONS::v002"
 ---
 
 # STR-015 — 学びを集め、適用条件と接続を保つ
+
+**現在状態は第6節。** 第1〜5節は初回の集約、HTTP 422観測と当時の復旧条件を保持する。後続のHuman承認・通常保存成功・会話内参照の未切替を、初回の未完了と区別する。
 
 ## 1. 目的・Humanの判断・範囲
 
@@ -40,13 +42,13 @@ Ark28:05のHumanは、ai-projectへの限定集中とSkills分散の改善を検
 - [Skills Hub](../../skills/README.md#skills-lessons)：現在の読取・更新先を冒頭へ置く。従来一覧直後の形成記録は同じREADMEの第7節へ内容を変えず移す。旧アンカーと各Skillの履歴を保持する。
 - [集約lesson](../../skills/_references/lessons.jsonl)：Skillsの学びの担当原本。保管場所の集約を、全行の全Skillへの一般化にしない。
 - [references案内](../../skills/_references/README.md)：Hubへ戻る短い案内のみ。契約・移行状態の第二原本にしない。
-- [Radio](../../skills/radio-mode/SKILL.md)／[Voice](../../skills/voice-mode/SKILL.md)：集約先とHubへ接続し、今回の目的・条件に合う行の本文・出典・留保を一緒に読む。Triggerや基本手順・表示設定は変更しない。
+- [当時のRadio共有版](https://github.com/yusukefujiijp/ai-project/blob/eab6d50d8271c5ef1eb50d2217e3291e47fe6eb2/skills/radio-mode/SKILL.md)／[Voice](../../skills/voice-mode/SKILL.md)：集約先とHubへ接続し、今回の目的・条件に合う行の本文・出典・留保を一緒に読む。Triggerや基本手順・表示設定は変更しない。
 - [全体references入口](../../references/README.md)、[整理PLAN](../github/PLAN.md)、[ARC-011](../github/ARCHIVE.md#arc-011)：現役のlesson導線だけを集約先へ合わせる。別領域の所有範囲・過去案件・凍結資料は変更しない。
 - JSONLの形式・更新は[既存契約§3〜5](../../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照する。schema 2を保持し、Dots固有のBootは移植しない。
 
 原本の集約先を先に公開し、登録済み利用側を切り替えてから旧ファイルを除去する。移行中の旧二ファイルは互換読取用snapshotであり、追記・二重更新しない。全Future AIの未知のcopyの消滅は証明できないため、既知の登録物・現役導線を確認する範囲と、未確認の取得経路を分けて記録する。
 
-## 4. 確認状態
+## 4. 初回集約時の確認状態
 
 2026-10-11の開始時点で、登録済みRadio／VoiceのSkill本文をこの会話の参照経路から実際に取得し、GitHub共有版との一致を確認した。どちらも旧lesson URLを参照していた。Radioの初回拒否と、後続の承認済み通常登録の成功は歴史として保持し、今回を拒否回避の再登録として扱わない。
 
@@ -64,7 +66,7 @@ Ark28:05のHumanは、ai-projectへの限定集中とSkills分散の改善を検
 
 GitHubの保存、登録先の保存、会話内取得、Human UI、自然な自動選択、Radioの聴き心地、Voice内直接呼出し、実生活効果はそれぞれ別のEvidenceである。今回の移設だけで全AI互換性や長期効果を実証しない。
 
-## 5. 中断・復元・今後
+## 5. 初回中断時の復元条件
 
 中断した場合は現在の集約先、共有SKILL.md、登録先、旧配置の有無を確認し、保存済み部分を繰り返さず残工程へ戻る。登録先の切替が確認できなければ旧ファイルの退役を保留し、別名のSkillや恒久的なMirrorを増やして不足を隠さない。今回の最小回復は、正規Skill保存先のHTTP 422の原因を確認・解消し、最新の共有版と登録先の差分を照合して同じ二Skillへ反映すること。登録先・実際の参照本文を確認してから旧二ファイルを退役し、GitHubを再取得する。基準以降のHuman訂正・STOP・並行変更があれば保持する。同じ承認Scopeを再計画する必要はないが、権限・アクセス条件が原因なら解決前に再送しない。
 
@@ -72,6 +74,38 @@ GitHubの保存、登録先の保存、会話内取得、Human UI、自然な自
 
 新しい経験やHuman Correctionがあれば、今回の適用範囲・参照・更新のどこで判断が変わるかを見て担当原本へ戻す。通常の支援ごとの新lesson登録、全履歴読込、追加Trialは義務にしない。
 
+<a id="podcast-cutover-current"></a>
+
+## 6. 2026-10-11の後続実行 — 現在の保存と参照状態
+
+### 意図・権限・比較基点
+
+Humanは、原因究明またはPodcast Modeを成立させてからRadioを退役する方向を提示した。Projects全体の先行アーカイブを完了した後、本線に戻って再度Plan Modeで検討し、その改訂計画へ「Execute GitHub OK」「Human Seal OK」と実行・継続を明示した。本Threadの編集要約であり、取得可能な会話URL・識別子は提示されていないため補わない。
+
+今回の計画は、Voiceの未反映参照を先に単独で通常更新し、Radioで重宝された聴取用応答をPodcastとして継承するもの。既存と同じ登録物の更新を優先し、後継確認後に旧配置を退役する。以前のHTTP 422または初回の安全性チェック拒否を、別名・別登録物・別経路で回避するための計画ではない。実装承認は既に有効なため、同じ確認の取り直しや全Bootの再演を行わない。
+
+GitHubの実行基点は[eab6d50](https://github.com/yusukefujiijp/ai-project/tree/eab6d50d8271c5ef1eb50d2217e3291e47fe6eb2)。直前のアーカイブ確認版ce6a302からの並行変更はDotsの入口・Actor二原本・Inbox入口の四ファイルであり保持した。Required SourceのDots READMEは更新されたv009・Exact EOFまで読み、他の同一性確認済みSource読解は再利用した。既存Main／Support、Root、Teshuvah、Human Foreground One、HumanのCorrection・STOP・Seal、適用Guardを保持する。
+
+### 保存したものと直接確認したこと
+
+- **Voiceの正規保存は成功。** 登録先367d4faからの隔離worktreeでVoiceの二つの参照段落だけを共有版へ合わせ、形式検査後に通常pushした。保存commitは74fa927943af37ae665d9b1d82ff3444435a4ac1。Remote refと再取得内容を確認し、本文blobは共有版と同じ `28072fb0b5fbe1bde116c7afe1d51b18033edee6`。前回の二Skill同時要求のHTTP 422は、このVoice単独更新では再現しなかった。以前の422の原因が確定・解消したとは主張しない。
+- **Podcastの共有原本は保存・全文照合済み。** [07ff0d8](https://github.com/yusukefujiijp/ai-project/commit/07ff0d8c8884ff072e3735cf8dc71b41192c0b01)で `skills/podcast-mode/SKILL.md` と `agents/openai.yaml` をmainへ追加し、固定commitから再取得して意図した全文と一致した。本文blobは `bfec204f4ab1489e1a5b0fcf50c71423b23a04bb`、表示原本は `4b854e21622ffc36ad28c2516b19bc81bcdcde6c`。
+- **既存Radioと同じ登録物を更新。** 新しいSkillを追加せず、元の登録フォルダの本文と表示三項目をPodcastへ更新した。通常保存commitは8fc36f73b5ff6cc4044b3447bd132aaf10e8244e。後続のRemote再取得は9231bfe77a6c5c9dbe4f53ebfb163727787c4567で、Podcast・Voice本文blobは上記と一致した。Remoteでの差は表示YAMLの引用符の正規化であり、表示三項目の値、既存icon資源・products・暗黙呼出しpolicyの保持を確認した。これらの環境固有情報はGitHub共有版へ複製しない。
+- **変更範囲。** 登録先の基点からの差分はVoice本文、既存Radio登録物の本文と表示設定の三ファイルのみ。他Skillと作業元の未保存変更を保持した。新Repository、別名の重複登録物、lessonの導入先コピー、予定・外部通信は作成していない。
+- **限定応答。** 形式検査に加え、元会話・計画・期待回答を渡さない二つの独立文脈で候補本文を明示した。一つはRepository集約の利点・巨大化リスクを、理由・例・成立条件をつないだ聴取用文章にした。もう一つはSkill改善依頼へ比較と計画だけを返した。いずれも外部変更なし。自然なSkill選択、Human UI、実聴取、Voice内直接呼出し、実生活効果の試験ではない。
+
+### 残っている依存と最小回復
+
+保存成功の後も、この会話のSkill参照経路ではVoiceが旧lesson URLを返し、旧Radio名の取得も旧本文を返した。新Podcast名の取得は `skill package is not available` だった。登録先Remoteの保存済み内容と、会話内で実際に得られる内容が異なることは確認済みであり、その理由・反映時期はUnknown。キャッシュや配布の遅延と断定せず、同じ保存を繰り返さない。
+
+この依存があるため、`skills/radio-mode/SKILL.md`、同 `agents/openai.yaml`、旧Radio／Voiceの `references/lessons.jsonl`、計四ファイルを保持する。旧二JSONLは互換読取用の固定snapshotであり、追記・二重更新しない。旧Radio共有版は継承完了待ちの参照先であり、新しい改訂の原本にはしない。現在の共有原本はPodcast／Voice、学びの更新先は `skills/_references/lessons.jsonl` 一つである。
+
+最小回復は、Skill一覧・読取が更新された環境で、既存の同じ登録物からPodcast／Voice本文を取得し、共有原本・集約lesson参照と照合すること。まず保存済み版を確かめ、追加登録や再pushを先行させない。Voiceの切替が確認できればVoice旧JSONLを単独で退役でき、Podcastの取得・旧依存解消が確認できれば旧Radio三原本を退役できる。両方を一律待ちにせず、確認できた単位で進む。旧 `$radio-mode` の機械的転送や全Runtimeの一斉更新は保証しない。
+
+この残点は本件の継続範囲であり、新たな原因調査・修正が必要なら観測した理由と現在の権限から判断する。権限・アクセス条件が原因の場合は解決前に再送せず、承認レビュー拒否を受けた場合は具体的な対象と理由を報告する。GitHubの共有原本は取得して使用できるため、通常の聴取用応答まで全面停止する必要はない。
+
+既存四lessonの全bytes・ID・日時・出典・留保、Hubの形成史と `radio-voice-formation` アンカー、過去の拒否・成功・未確認の時点は保持する。Podcastという新名称に合わせるためだけのlesson書換えは行わない。Projectsアーカイブは先行完了であり、WTPの研究や過去Taskを再開しない。新たな実利用結果があれば、その時の根拠とHuman Reviewから次の改善を選ぶ。
+
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。HumanのCorrection・STOP・Final Sealと適用Guardを保持し、AI・Skill・文書をKeliとして扱う。
 
-EOF::STR_015_SKILLS_LESSONS::v001
+EOF::STR_015_SKILLS_LESSONS::v002

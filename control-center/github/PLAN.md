@@ -1,20 +1,20 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.17.0"
+version: "0.18.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Projects archive completed and remotely verified; Human Review; Podcast remains plan-only"
+status: "Podcast and Voice saves verified; conversation lookup cutover pending; Projects archive remains completed"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-10-11"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "ARC-012: archive all remaining projects including WTP under the later explicit Human request; preserve prior completion, unresolved conditions and Podcast planning scope."
+updated_reason: "Route to the later Human-authorized Podcast/Voice cutover and its remaining lookup dependency; preserve completed ARC-012 and historical boundaries."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.17.0"
-current_observation_base: "b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba"
-change_record: "ARCHIVE.md#arc-012"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.18.0"
+current_observation_base: "eab6d50d8271c5ef1eb50d2217e3291e47fe6eb2"
+change_record: "../changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current"
 ---
 
 <a id="ai-project構造整理--診断から改善へ"></a>
@@ -25,7 +25,11 @@ change_record: "ARCHIVE.md#arc-012"
 
 ## current
 
-### 今回の焦点：Projects全体を保管し、現役の入口を閉じる
+### 今回の焦点：Podcast継承と参照切替の残点へ戻る
+
+Projectsアーカイブ完了後、Humanは本線へ戻って改訂計画を検討し、2026-10-11にPodcast継承・Voice参照更新の実行を明示した。現在の共有入口は[Skills Hub](../../skills/README.md#podcast-voice-current)、保存結果と会話内参照の未切替・旧配置退役条件は[STR-015の後続記録](../changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。旧配置の除去はその依存を確認した単位で進め、保存済みの実装や完了済みの計画を材料なく繰り返さない。
+
+### 先行完了：Projects全体の保管と現役入口の退役
 
 2026-10-11、Ark28:05でHumanは、Podcast Modeに関する計画検討より先に、`projects/`を`projects/ark-wtp/`と共にアーカイブ化するよう明示した。今回の範囲は、Projects入口とWTP六原本の同一保管、元配置の除去、必要な案内・記録の整合と保存後確認である。理由・承認・原本対応・実施結果は[ARC-012](ARCHIVE.md#arc-012)が所有する。
 
@@ -33,9 +37,9 @@ change_record: "ARCHIVE.md#arc-012"
 
 [ARC-011](ARCHIVE.md#arc-011)でWTPを現配置に残した判断は当時の判断として保持する。その後の今回の明示承認が、WTPを含む全原本の可逆的な保管と現役配置の退役を指定した。Local backup確認は引き続きUnknownであり、今回の承認から確認済みを補わない。旧`ark-wtp.md`自体は同一blobで保管し、保存内容の永久削除は行わない。
 
-先行Voice／Mode五原本の退役はARC-011で完了済み。現役Radio／Voiceの選択は[Skills Hub](../../skills/README.md#radio-voice-formation)、共有lessonと導入先の整合状況は[STR-015](../changes/STR-015-skills-lessons-consolidation.md)へ戻る。本欄は保存・検証やSkill Runtime状態の第二台帳にしない。
+先行Voice／Mode五原本の退役はARC-011で完了済み。現役Podcast（旧Radio）／Voiceの選択は[Skills Hub](../../skills/README.md#radio-voice-formation)、共有lessonと導入先の整合状況は[STR-015](../changes/STR-015-skills-lessons-consolidation.md)へ戻る。本欄は保存・検証やSkill Runtime状態の第二台帳にしない。
 
-今回のアーカイブは保存後確認まで完了し、Human Reviewへ戻る。直前のPodcast検討は計画提示までの依頼として保持し、本件の実行承認をPodcast作成・Radio削除・HTTP 422の別経路回避・旧二JSONLの退役へ拡張しない。通常Unknownの全解消を今回の完了条件にしない。
+アーカイブは保存後確認まで完了し、その時点ではPodcastのPlan-onlyを保持してHuman Reviewへ戻った。上記のPodcast継承は、その後の別の明示承認による進展である。ARC-012の承認範囲を後から拡張せず、HTTP 422の原因・会話内参照・保存先を区別する。通常Unknownの全解消を作業全体の進行条件にしない。
 
 ### 成果を現在へ接続する
 
@@ -57,7 +61,7 @@ change_record: "ARCHIVE.md#arc-012"
 - **部分完了と保留**：[ARC-002](ARCHIVE.md#arc-002)は原本保管と退役案内を実施し、固定参照のため元パスを保持している。元パス除去は別の判断・互換移行を要する残点。
 - **別Branchの未完了**：[STR-002](../changes/STR-002-single-prompt-consolidation.md)のGraph／One-Table本文metadata・固定Binding移行。別Query作成方針は撤回済みであり、方針の撤回と物理改訂の完了を混同しない。
 - **目的変更で終了した履歴**：[ARC-006](ARCHIVE.md#arc-006)の旧Plan Mode v005採用試験。NOT_RUN等は当時の記録であり、現在の必須Next Gateではない。
-- **今回選んだ範囲と、意図的保留**：Projects入口とWTP六原本の退役・同一保管・限定整合はARC-012へ。先行Voice／Mode五原本の退役はARC-011で完了済み。WTPの再設計・研究・再試験とPodcastの実装は自動開始しない。Local backupのUnknownと保存済み原本の同一性を分ける。
+- **今回選んだ範囲と、意図的保留**：Projects入口とWTP六原本の退役・同一保管・限定整合はARC-012へ。先行Voice／Mode五原本の退役はARC-011で完了済み。WTPの再設計・研究・再試験は自動開始しない。Podcast継承の後続成果と保留はSTR-015へ戻る。Local backupのUnknownと保存済み原本の同一性を分ける。
 - **別の判断**：PLAN・ARCHIVEの専門領域への移設とhouse改名はSTR-013の先行成果である。その他の記録移設、houseの具体化・生活上の実行、Skill再作成、固定Binding移行は今回の未完了部分に含めない。HumanのSeed作成と、現実の家の整理成果を区別する。
 - **通常Unknown**：他AIの実理解、長期の探索負担、外部consumer、全Runtimeでの利用効果。未観測を成功・失敗に補完せず、今回に影響しないUnknownを全解消待ちのGateにしない。
 
@@ -540,4 +544,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.17.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.18.0

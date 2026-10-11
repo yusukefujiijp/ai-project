@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.26.0
+version: v0.27.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-11
-updated_reason: Skills lessons集約と現在の読取・更新案内を整備し、形成記録を保持
+updated_reason: RadioからPodcastへの同一登録物での継承を案内し、保存済みと会話内参照の未切替を分離
 ---
 # Ark Shared Skills Hub
 
@@ -28,7 +28,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### 1.2 Skills lessons — 集約と適用範囲
 
-Skillsに関係する変化する学びの担当原本は、[`_references/lessons.jsonl`](_references/lessons.jsonl)。共通する設計・運用の学びと、Radio／Voiceなど特定Skillでだけ役立つ学びを、一つの蓄積で育てる。保管場所が共通であることは、全行が全Skill・全AIに適用できるという意味ではない。各lesson本文に対象・成立条件・次の判断を残し、sourcesと必要なcaveatから、Human報告・直接観測・設計候補・Unknownを分ける。
+Skillsに関係する変化する学びの担当原本は、[`_references/lessons.jsonl`](_references/lessons.jsonl)。共通する設計・運用の学びと、Podcast（旧Radio）／Voiceなど特定Skillでだけ役立つ学びを、一つの蓄積で育てる。保管場所が共通であることは、全行が全Skill・全AIに適用できるという意味ではない。各lesson本文に対象・成立条件・次の判断を残し、sourcesと必要なcaveatから、Human報告・直接観測・設計候補・Unknownを分ける。
 
 **読む時。** 改善相談、再発防止、過去の訂正や経験が今の判断を変える場合に参照する。Skill名だけでなく今回の目的・条件から選び、選んだ行はlesson・sources・caveatを一緒に読む。小さい蓄積は全件を比較できるが、毎回すべてのSkill・lesson・形成史を読む義務にはしない。同じ文脈で同一性確認済みの読解は再利用する。任意参照を取得できない場合は未確認の範囲を示して独立して可能な支援を続ける。履歴確認が依頼の核心、または必須Sourceの場合は、その不足が影響する操作を止め、適用契約に従う。
 
@@ -46,7 +46,9 @@ Skillsに関係する変化する学びの担当原本は、[`_references/lesson
 
 Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分を継承してskills内のlessonsを集約し、他AI・Future Dotsへ渡す計画を承認した。Radio 1件・Voice 3件を同一行のまま集約し、上記の読取・更新先を現在の案内とする。
 
-2026-10-11、集約先・共有Skill・案内の保存後全文一致を確認した。登録先へのRadio／Voice更新はHTTP 422で完了せず、Remoteの版と会話内の取得本文はいずれも旧版のままだった。このため旧二ファイルは互換読取用の固定snapshotとして保持し、追記・二重更新しない。登録先の問題を解消し、同じ二Skillの新本文を正規手順で保存・再取得確認した後に旧配置の退役を再開する。別名・別経路への再登録は行っていない。共有原本の保存と導入先の更新を分け、根拠・確認結果・再開条件は[STR-015](../control-center/changes/STR-015-skills-lessons-consolidation.md)へ戻る。
+同日の初回作業では、集約先・共有Skill・案内の保存後全文一致を確認した一方、登録先へのRadio／Voice同時更新はHTTP 422で完了しなかった。その時点の旧版確認と退役保留は履歴として保持する。
+
+**後続の現在状態。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。会話内のSkill読取経路はなお旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。このため旧二JSONLと旧Radio共有二原本は互換参照の受け皿として保持し、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
 
 Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
 
@@ -54,8 +56,8 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Radio Mode / radio-mode | 音声ボタンで聴く回答、既存定刻配信用の内容をAudio-Firstに編成 | [SKILL.md](radio-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のRadio条件、基本支援は本文単体 | 初版の登録先保存・本文取得を確認。集約先へ更新した共有版の登録先反映はHTTP 422で保留（§1.3）。形成履歴は§3.11。実聴取効果は未確認 |
-| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答・導入本文一致。集約先へ更新した共有版の登録先反映はHTTP 422で保留（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
+| Podcast Mode / podcast-mode | 音声ボタンで聴く一続きの回答、既存定刻配信用の内容をAudio-Firstに編成。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)の旧Radio条件を目的から選ぶ。基本支援は本文単体 | 共有保存・同一登録物への更新・Remote本文一致と二つの独立文脈での限定応答を確認。会話内の新名称取得は未成立（§1.3）。実聴取効果は未確認 |
+| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答を保持。集約参照への更新は登録先保存・Remote本文一致まで確認。会話内の読取は旧版（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
 | 問題解決 / solve-problems | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](solve-problems/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 形式・四つの独立文脈で計八応答を確認。導入・共有と検証境界は§3.8。自然な自動選択・品質優位・実生活効果は未実証 |
@@ -330,9 +332,14 @@ $self-improvement-loop を使い、現在の目的・素材・権限から、次
 
 これらは同じ実行環境で本文を明示して行った限定確認です。自然入力での自動選択、Dots側での取得・呼出し、Human UI、長期的な品質向上、モデル重みの学習、持続的な自己改善Loopの成立とは区別します。実利用の結果が得られたときに根拠に応じて改訂し、今回の作成から新Task・自動監視・無期限反復・外部送信を開始しません。
 
-### 3.11 Radio ModeとVoice Modeの二つの入口
+### 3.11 Podcast Mode・Voice Modeの入口とRadioからの形成
 
 <a id="radio-voice-formation"></a>
+<a id="podcast-voice-current"></a>
+
+現在の聴取用入口は `$podcast-mode` と[共有本文](podcast-mode/SKILL.md)。旧Radioの音声ボタン用途を継承する。旧名「Radio Mode」「ラジオモード」が聴取用の依頼を指す場合も内容として理解するが、旧 `$radio-mode` の機械的な転送・全環境での新名称発動は保証しない。会話の登録一覧が古い場合は共有本文を実際に読んで利用できるが、それを登録側の取得成功とは称さない。Voiceは引き続き[共有本文](voice-mode/SKILL.md)へ。
+
+以下の2026-10-10の形成・拒否・後続成功は、当時の対象と証拠を保持した履歴である。2026-10-11の継承結果は本節末尾と§1.3へ戻る。
 
 **形成とHuman Correction。** 2026-10-10（Asia/Tokyo）、dot-0000との現在の会話で、YusukeJPは旧projects/・mode/の整理から、現役として育てる価値をRadio ModeとVoice Modeへ絞った。Radioは、特別なAI-Promptで聴取向けの回答を作り、Humanが音声ボタンを押してRadio化する使い方が「とても重宝しました」と報告した。以前に提示したClock-Drivenの定義は、指定時刻のReality・Current ContextをThemeへ織り込み、耳だけで追える一つの番組Messageに編成し、聴いた後に持ち帰れる一文や一手を残すというものだった。今回の明確化では手動の聴取も含め、定刻配信を全利用の必須条件にはしない。
 
@@ -342,7 +349,7 @@ Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他�
 
 上記は現在のDot会話の編集要約。追跡識別子は、Radio定義提示 `Sentinel_8e57c232f00c8191a328e494daed0f6d`、二用途の明確化 `Sentinel_ad96756cce4081918a34d98c1c3a9af7`、二Skill指定 `Sentinel_85a6ca6bd4808191b27df4b17869984c`、JSONL提案 `Sentinel_185a2b6382ec81919054b15141673e00`、AI-primary／日本語の希望 `Sentinel_8787c115ef6881919286d3a423a76568`、先行実行承認 `Sentinel_b1f91d7321a88191b9b3671f8c98bc2b`。私的対話の識別子であり公開URLではない。アクセスできない読み手は、この公開要約と保存された成果の範囲で根拠を扱い、会話原文を独立確認済みとしない。
 
-**二つの役割。** [radio-mode](radio-mode/SKILL.md)は耳で受け取る回答の編成、[voice-mode](voice-mode/SKILL.md)は突発的な音声対話の準備・報告された問題・経験の想起を担う。前者は音声再生やScheduleを自動操作せず、後者はChatGPT Voice内での直接Skill呼出し・会話取得を未確認のまま保証しない。通常チャットでの準備と事後支援を独立して成立させる。深さ・構成方法・質問数・長さを固定せず、現在のHumanの目的・Correction・Plan-only・STOPを優先する。
+**二つの役割。** [podcast-mode](podcast-mode/SKILL.md)は旧Radioから継承した耳で受け取る回答の編成、[voice-mode](voice-mode/SKILL.md)は突発的な音声対話の準備・報告された問題・経験の想起を担う。前者は音声再生やScheduleを自動操作せず、後者はChatGPT Voice内での直接Skill呼出し・会話取得を未確認のまま保証しない。通常チャットでの準備と事後支援を独立して成立させる。深さ・構成方法・質問数・長さを固定せず、現在のHumanの目的・Correction・Plan-only・STOPを優先する。
 
 **学びの所有先（2026-10-10初版）。** 当時の[Radio lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/radio-mode/references/lessons.jsonl)と[Voice lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/voice-mode/references/lessons.jsonl)を各専門領域の正本として作成した。現在の所有先と参照切替は[§1.2〜1.3](#skills-lessons)へ。初版は上記Human報告から一件ずつの条件付きlessonを置く。Skill本体は必要時の読取へ接続し、導入先へ同期されないデータコピーを増やさない。関連原本を取得できない場合、通常の支援は現在の情報から続けられるが、履歴の確認自体が依頼の核心なら不足を示す。
 
@@ -361,6 +368,14 @@ Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他�
 この観測は登録先への保存と保存後本文の確認を成立させる。一方、この会話に公開されたSkill一覧ではRadioの反映を確認できず、その理由はUnknownのまま。保存済み内容と一覧の参照状態を分け、一覧差だけで再提出しない。初回の拒否理由は依然不明であり、今回の成功を初回判定が誤りだった証明や、拒否時の一般的な再試行規則にはしない。
 
 実際のHuman UI、Radioの実呼出し・聴き心地、Voice内の直接呼出し、自然な自動選択、経験の継続活用による効果は未確認。GitHub原本を指示資料として読むこと、登録先への保存、各会話での参照・実利用を区別する。Radioの登録拒否を回避するために別名・別の導入経路へ送信しない。
+
+**Podcastへの継承（2026-10-11）。** Ark28:05のHumanは、原因究明またはPodcast Modeを成立させてからRadioを退役する方向を提示し、Projectsの先行アーカイブ完了後もPlan Modeで計画を練り直した。その後「Execute GitHub OK」「Human Seal OK」と改訂計画の実行を明示した。これは本Threadの編集要約であり、未提示の会話URL・メッセージIDは作らない。Podcastの目的は聴取用応答の価値を分かりやすい入口へ継承すること。HTTP 422の原因解消や、初回Radio登録拒否の回避を改名の成果として主張しない。
+
+Radio共有版をもとに、名称・表示・選択条件をPodcastへ更新した。深さ、現在の文脈、音声ボタンによる手動聴取、固定しない長さと構成を保持し、Skill自体の設計相談を番組本文へすり替えない案内を補った。旧Radioのlesson一件は元のID・本文・出典・日時・留保のまま集約先で継承する。Voice三件と合わせて四行は変更せず、新しい重複lesson・常設同期・予定・音声ファイル生成を加えていない。
+
+共有二原本は[継承commit](https://github.com/yusukefujiijp/ai-project/commit/07ff0d8c8884ff072e3735cf8dc71b41192c0b01)から再取得して全文一致を確認した。既存Radioと同じ登録物を通常更新し、登録先RemoteのPodcast本文・表示三項目と共有版の一致も確認した。Voiceの集約参照更新は先に単独保存・確認した。一方、会話内のSkill経路は旧版のままで、新Podcast名の取得は成立していない。保存済みとこの未切替を分け、同じ保存の反復・別登録物の作成で埋めない。
+
+元会話や期待回答を渡さない二つの独立文脈で、同じ候補本文を明示して限定応答を確認した。一つはRepository集約の利点と巨大化の懸念を、例・理由・条件をつないで聴取用の連続した文章にした。もう一つはPodcast Skillの改善依頼へ比較と計画を返し、番組作成や変更を実行しなかった。構成した相談であり、自然発動・旧コマンド転送・Human UI・実聴取・長期効果を実証したとは扱わず、仮想相談をlessonへ登録しない。
 
 ## 4. Source and distribution
 
