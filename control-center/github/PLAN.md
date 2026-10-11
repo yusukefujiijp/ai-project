@@ -7,7 +7,8 @@ status: "Voice/Mode retirement completed and remotely verified; Human Review; WT
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-10"
+updated: "2026-10-11"
+lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
 updated_reason: "ARC-011: connect scoped Voice/Mode retirement and WTP retention; preserve completed STR-014, prior results and historical contracts."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
@@ -28,7 +29,7 @@ change_record: "ARCHIVE.md#arc-011"
 
 2026-10-10、Ark27:09は`projects/`・`mode/`の十二原本を全文読解し、後続Skill・現役案内・歴史証拠・保存条件を比較した。Plan Modeで「Voice／Mode五原本の先行退役、WTP六原本とProjects入口の保持」を提示し、その後のHumanによるGitHub実行・Human Seal・継続承認を受けた。五原本の同一保管、元配置の除去、六文書の限定整合、保存後確認を今回の範囲とする。理由・承認・原本対応・結果は[ARC-011](ARCHIVE.md#arc-011)が所有する。
 
-Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lessons](../../skills/voice-mode/references/lessons.jsonl)へ接続済みである。Journalingの振り返り・閉じ方、Field Testの証拠区分は原本と案件から辿れる。全旧機能を新Skillへ移植済みとは扱わず、今回の整理からSkill再作成・lesson一括移設・追加試験を開始しない。Radio／Voiceの形成・共有・導入・検証のCurrentは[Skills Hub](../../skills/README.md#radio-voice-formation)へ戻る。
+Voiceの意味保存と内容／方法の二つの実りは既存の[Voice lessons](../../skills/_references/lessons.jsonl)へ接続済みである。Journalingの振り返り・閉じ方、Field Testの証拠区分は原本と案件から辿れる。全旧機能を新Skillへ移植済みとは扱わず、今回の整理からSkill再作成・lesson一括移設・追加試験を開始しない。Radio／Voiceの形成・共有・導入・検証のCurrentは[Skills Hub](../../skills/README.md#radio-voice-formation)へ戻る。
 
 [Ark-WTP](../../projects/ark-wtp/README.md)は`FROZEN_BENCHMARK_WAIT`として現配置で保持する。成果本文の`PROVISIONAL_PASS`をHuman Final Sealへ強めず、凍結を完了・失敗・目的変更終了へ読み替えない。前身`ark-wtp.md`にはLocal backupと退役のHuman確認条件があり、その確認を今回の実行承認だけから補わない。WTP一式の後続退役は別途この条件と現在のHuman判断を満たす時に検討する。
 

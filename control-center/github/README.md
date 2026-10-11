@@ -8,7 +8,8 @@ repository: "yusukefujiijp/ai-project"
 scope: "ai-project全体。ark-project/内だけに限定せず、他Repositoryへ自動拡張しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-10-06"
-updated: "2026-10-10"
+updated: "2026-10-11"
+lesson_index_patch: "Link STR-015; existing domain ownership and prior cases retained"
 change_record: "../changes/STR-014-super-special-prompt-modernization.md"
 expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.2"
 ---
@@ -95,6 +96,8 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 - [STR-013: GitHub計画・アーカイブ台帳の専門領域への移設](../changes/STR-013-github-plan-and-archive-relocation.md)：homeのSeedを受けた領域分離、二原本と旧住所の案内、意味・参照・並行変更の保持。
 
 - [STR-014: 旧選抜棚の四Promptを改訂しpromptsへ継承](../changes/STR-014-super-special-prompt-modernization.md)：Humanによる棚の由来と廃止方針の明確化、四本文の役割・新版・参照・旧配置除去と確認。
+
+- [STR-015: Skills lessons集約とHubの現在案内](../changes/STR-015-skills-lessons-consolidation.md)：4件の同一性・適用範囲を保持した集約、参照切替、旧配置の退役条件と確認。
 
 [ARCHIVE](ARCHIVE.md)はARC案件の提案・承認・実施・確認・復元を所有し、[__archives](../../__archives/README.md)は保管実体を案内する。両者の役割を通常変更記録へ重複させない。通信のCurrentは該当Board Topic、Actorの出来事はActorログ、再利用する学びは適用されるlesson契約など、実対象のOwnerを保つ。
 

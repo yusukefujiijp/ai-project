@@ -1,12 +1,13 @@
 ---
 title: "References — 共有する知見への入口"
 canonical_path: "references/README.md"
-version: "v001"
+version: "v002"
 status: "human-authorized initial foundation / evolving through feedback"
 created: "2026-10-10"
-updated: "2026-10-10"
+updated: "2026-10-11"
+updated_reason: "Route Skills-specific lessons to the consolidated owner; cross-domain ownership and history retained"
 role: "Cross-domain reference entry and shared lesson ownership; not a repository inventory"
-expected_eof: "EOF::SHARED_REFERENCES::v001"
+expected_eof: "EOF::SHARED_REFERENCES::v002"
 ---
 
 # References — 共有する知見への入口
@@ -33,7 +34,7 @@ Humanの報告・評価、直接確認した結果、AIの解釈、未実証の�
 
 - 領域やActorを越えて再利用できる判断は、この[全体用lessons](lessons.jsonl)へ。
 - Dots固有の協働・運用に適用する学びは、[Dots lessons](../dots/lessons/README.md)へ。
-- Radio・Voiceなどの固有条件が中心なら、該当領域の入口が指す専門lessonへ。例：[Radio](../skills/radio-mode/references/lessons.jsonl)、[Voice](../skills/voice-mode/references/lessons.jsonl)。
+- Radio・VoiceなどSkills固有の条件が中心なら、[Skills Hub](../skills/README.md#skills-lessons)が案内する[集約lessons](../skills/_references/lessons.jsonl)へ。保存場所の集約を、各lessonの全Skillへの一般化と混同しない。その他の専門領域は、その入口が指定する原本へ。
 - 出来事の詳細・成果物・通信・日時記録は、それぞれの経験原本・成果原本・Board・[records](../records/README.md)へ。lessonは必要な根拠へ接続し、全文を集め直さない。
 
 同じ目的・意味の現行lessonを複数箇所へ同期コピーしない。専門から全体へ広げる場合は、何を一般化し、どの条件を専門側に残すかを確かめる。既存lessonの移設・統合が必要なら、現在の権限、重要な意味、旧参照、IDと履歴を保持できる方法を選ぶ。ここを設けたことだけで既存のDots・専門lessonを一括移設しない。
@@ -63,4 +64,4 @@ Humanはこの小さな工夫をai-project全体へ活かす方向を求め、�
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。AI・学び・文書はKeli。[ARK](../ARK.md)の意味と[AGENTS](../AGENTS.md)の権限を保持し、この入口を新しい権限者にしない。
 
-EOF::SHARED_REFERENCES::v001
+EOF::SHARED_REFERENCES::v002

@@ -25,10 +25,10 @@ Human が応答の音声ボタンを押して聴く、一続きの話を作る�
 
 ## 経験を必要なときに活かす
 
-改善の相談、過去の失敗の再発防止、好みに関する判断などで役立つ場合は、[Radio Mode の live lessons](https://github.com/yusukefujiijp/ai-project/blob/main/skills/radio-mode/references/lessons.jsonl) を参照する。これは変化する経験の正本であり、インストール先へ別の固定コピーを持ち込まない。
+改善の相談、過去の失敗の再発防止、好みに関する判断などで役立つ場合は、[Skills の集約lessons](https://github.com/yusukefujiijp/ai-project/blob/main/skills/_references/lessons.jsonl) を参照する。Radio Modeと今回の目的・条件に合う行を選び、lesson・sources・caveatを一緒に読む。集約は全行の一律適用を意味せず、インストール先へ固定コピーを作らない。
 
 関連する記録だけを読み、観察、解釈、適用条件を区別する。現在の依頼・修正を過去の経験より優先する。取得できなくても、必要な現在情報がそろっていれば応答を続ける。過去の記録の確認自体が依頼の核心なら、未確認の範囲を伝える。
 
 感想や訂正を受けたら、その場の応答に反映する。毎回の記録、公開、スキル本文の改訂を自動で行わない。保存依頼または有効な継続委任がある範囲で、対象、公開範囲、残す内容を確認し、具体的な経験と再利用できる学びを分けて適切な記録へつなぐ。
 
-lesson を読み書きする場合の形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。
+lesson の担当原本と読取・更新先は、[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#skills-lessons)へ。形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。

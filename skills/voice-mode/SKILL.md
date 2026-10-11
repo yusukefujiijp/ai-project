@@ -26,8 +26,8 @@ description: Support preparation, reported problems, and learning around ChatGPT
 
 - 問題の報告は、実際に起きたこと、期待していたこと、環境や条件を必要な範囲で分ける。原因を決めつけず、次に試せる小さな改善を選ぶ。製品仕様に依存する説明は現在の公式情報や接続状態で確かめる。
 - 振り返りでは、Human の報告から何が役立ったか、何が合わなかったかを受け止める。全文の再現、固定の質問票、毎回のログ作成を求めない。
-- 関連する過去の経験が判断に役立つ場合は、[Voice Mode の live lessons](https://github.com/yusukefujiijp/ai-project/blob/main/skills/voice-mode/references/lessons.jsonl) を参照する。正本の経験を必要なときに読み、インストール先に同期されない固定コピーを作らない。
+- 関連する過去の経験が判断に役立つ場合は、[Skills の集約lessons](https://github.com/yusukefujiijp/ai-project/blob/main/skills/_references/lessons.jsonl) を参照する。Voice Modeと今回の目的・条件に合う行を選び、lesson・sources・caveatを一緒に読む。集約は全行の一律適用を意味せず、インストール先へ固定コピーを作らない。
 - 記録の観察、解釈、適用条件を区別し、今回に合う学びだけを使う。現在の依頼や修正を優先する。取得できなくても通常の準備や相談を止めず、記録の確認が依頼の核心なら未確認の範囲を伝える。
 - 気づきを得ただけで公開記録やスキル本文を自動変更しない。保存依頼または有効な継続委任がある範囲で、対象と公開範囲を確認し、第三者情報を必要以上に残さず、今回の事実と次回に試す仮説を区別して記録へつなぐ。
 
-lesson を読み書きする場合の形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。
+lesson の担当原本と読取・更新先は、[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#skills-lessons)へ。形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。

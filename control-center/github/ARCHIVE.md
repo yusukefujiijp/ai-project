@@ -7,7 +7,8 @@ status: "human-authorized record structure / per-case approval and execution bel
 repository: "yusukefujiijp/ai-project"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-10"
+updated: "2026-10-11"
+lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
 relocation_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 relocation_base_commit: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
 expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.11.0"
@@ -740,7 +741,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | Node | Edge：意味・読み返す場面・確認境界 |
 |---|---|
-| 旧Ark-Voiceの意味保存 | [System原本](../../__archives/ARC-011/projects/ark-voice/ark-voice-system.md) → Voiceで生まれた原語・文脈・UnknownをTextへ渡し、使える形で戻す。[既存Voice lessons](../../skills/voice-mode/references/lessons.jsonl)の意味保存と二つの実りの二lessonは今回より前の保存成果。原本の設計から採った知恵であり、実地効果や新Voice用途全体の実証ではない |
+| 旧Ark-Voiceの意味保存 | [System原本](../../__archives/ARC-011/projects/ark-voice/ark-voice-system.md) → Voiceで生まれた原語・文脈・UnknownをTextへ渡し、使える形で戻す。[既存Voice lessons](../../skills/_references/lessons.jsonl)の意味保存と二つの実りの二lessonは今回より前の保存成果。原本の設計から採った知恵であり、実地効果や新Voice用途全体の実証ではない |
 | 内容の実りと、対話方法の実り | [旧Voice入口](../../__archives/ARC-011/projects/ark-voice/README.md) → 発見した内容と、その発見を助けた問い・間合い・切替を区別する。主活動を方法評価へ取り替えず、毎利用後の追加試験・新ログ・新Skillを必須化しない |
 | Journalingの開始と閉じ方 | [原本](../../__archives/ARC-011/mode/ai-journaling_mode.md) → 未整理の思考を受け取り、証拠に沿って振り返り、行動・保留・休息・STOPへ接続する。[receive-braindump](../../skills/receive-braindump/SKILL.md)／[living-review](../../skills/living-review/SKILL.md)との用途上の接点はあるが、専用Mode全体を移植済みとはしない。旧質問数・推論制限を現在の品質条件へ機械的に課さない |
 | Field Testの証拠区分 | [原本](../../__archives/ARC-011/mode/ai-field-test-mode.md) → 静的点検と実運用、構成したケースと現実、自己点検と独立確認、PASSと効果を分ける。試験対象とHarness・文脈の影響を区別し、完了を避けるための反復をしない。今回の保存検証は同Modeの実地試験ではない |
