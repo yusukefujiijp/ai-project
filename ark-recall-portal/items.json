@@ -1,11 +1,11 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 7,
-  "updated": "2026-10-08",
+  "revision": 8,
+  "updated": "2026-10-11",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼、2026-10-11 Ark99:02の乾燥後・買い物後の帰宅時即仕分けにおけるCaffeineの使い所の発見",
     "complete_project_history": false,
     "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
@@ -29,6 +29,10 @@
     {
       "id": "seasonal-recall",
       "label": "季節・時期の経験と事前情報"
+    },
+    {
+      "id": "return-home-sorting",
+      "label": "帰宅後の洗濯物・買い物袋の即仕分け"
     }
   ],
   "items": [
@@ -616,6 +620,146 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "本人の想起希望と場面追加依頼から作った編集要約。activeは想起候補であり、タオルを用意した・巻いた・携帯したという実施報告ではない。"
+    },
+    {
+      "id": "home-laundry-caffeine-use",
+      "scene_ids": [
+        "return-home-sorting"
+      ],
+      "label": "乾燥後の洗濯物を即仕分けする時のCaffeineの使い所",
+      "recall": "Coin Laundryの乾燥後、自宅で洗濯物を即仕分けする場面を、本人がCaffeineの重要な使い所・大きなモデルケースと見いだしたことを思い出す。支えたい行動は即仕分け。今回も飲むと決めず、現在の条件から適用を判断する。",
+      "status": "active",
+      "retrieval_hints": [
+        "帰宅",
+        "帰宅後",
+        "ただいま",
+        "家に帰った",
+        "コインランドリー",
+        "Coin Laundry",
+        "乾燥機",
+        "乾燥が終わった",
+        "洗濯物を持ち帰った",
+        "洗濯物",
+        "袋のまま",
+        "即仕分け",
+        "仕分け",
+        "片付け",
+        "コーヒー",
+        "Caffeine",
+        "カフェイン"
+      ],
+      "conditions": {
+        "applies_when": [
+          "Coin Laundryの乾燥後、自宅へ洗濯物を持ち帰る場面や、帰宅後の即仕分け・Caffeineの使い所について思い出したい時"
+        ],
+        "do_not_assume": [
+          "今回の問い合わせが帰宅・飲用・仕分けの実行報告であること",
+          "当該場面での効果・仕分け完了・習慣化が実証済みであること",
+          "『絶対的な使い所』から時刻・身体・睡眠・既摂取を問わず飲む義務が生じること",
+          "飲む量・時刻・製品・現在の適否、飲用または追加摂取を勧める権限",
+          "コーヒーの準備・飲み終わり・効くまでの待機が即仕分けの必須条件であること",
+          "洗濯と買い物の二場面が二回の摂取や一作業一杯を意味すること",
+          "固定時刻の自動通知・帰宅の常時検知・新しい身体Trialが設定されたこと"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark99/ark99-02/task-records.json",
+          "record_id": "ark99-02-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "laundry-immediate-sorting",
+            "caffeine-teshuvah-meaning",
+            "home-sorting-bridge",
+            "action-and-timing",
+            "shared-return-opportunity",
+            "human-authority-and-guard",
+            "caffeine-save-request",
+            "portal-home-sorting-recall"
+          ],
+          "source_ids": [
+            "caffeine-s02",
+            "caffeine-s04",
+            "caffeine-s05",
+            "caffeine-a01",
+            "caffeine-a02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "Humanによる用途の発見・重要性・Teshuvahと、AIの関係整理を原本で分けた想起用の編集要約。activeは想起候補であり、飲用の推奨・実施・効果・信仰上の義務を意味しない。現在のHuman Correctionと適用Guardを優先する。"
+    },
+    {
+      "id": "home-shopping-caffeine-use",
+      "scene_ids": [
+        "return-home-sorting"
+      ],
+      "label": "買い物袋を即仕分けする時のCaffeineの使い所",
+      "recall": "買い物から帰宅した直後に袋を仕分けする場面も、本人がコーヒー・Caffeine系の有効な使い所と捉えたことを思い出す。洗濯と共通するのは帰宅後の即仕分けへの接続。品目ごとの扱いを保持し、現在の条件から適用を判断する。",
+      "status": "active",
+      "retrieval_hints": [
+        "帰宅",
+        "帰宅後",
+        "ただいま",
+        "家に帰った",
+        "買い物から帰った",
+        "買物帰り",
+        "スーパーから帰った",
+        "買い物袋",
+        "食材をしまう",
+        "冷蔵",
+        "冷凍",
+        "常温",
+        "袋のまま",
+        "即仕分け",
+        "仕分け",
+        "片付け",
+        "コーヒー",
+        "Caffeine",
+        "カフェイン"
+      ],
+      "conditions": {
+        "applies_when": [
+          "買い物から帰宅し、買い物袋の即仕分けをする場面や、帰宅後の処理・Caffeineの使い所について思い出したい時"
+        ],
+        "do_not_assume": [
+          "今回の問い合わせが帰宅・飲用・仕分けの実行報告であること",
+          "当該場面での効果・仕分け完了・習慣化が実証済みであること",
+          "『絶対的な使い所』から時刻・身体・睡眠・既摂取を問わず飲む義務が生じること",
+          "飲む量・時刻・製品・現在の適否、飲用または追加摂取を勧める権限",
+          "コーヒーの準備・飲み終わり・効くまでの待機が即仕分けの必須条件であること",
+          "洗濯と買い物の二場面が二回の摂取や一作業一杯を意味すること",
+          "固定時刻の自動通知・帰宅の常時検知・新しい身体Trialが設定されたこと"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark99/ark99-02/task-records.json",
+          "record_id": "ark99-02-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "shopping-immediate-sorting",
+            "caffeine-teshuvah-meaning",
+            "home-sorting-bridge",
+            "action-and-timing",
+            "shared-return-opportunity",
+            "human-authority-and-guard",
+            "caffeine-save-request",
+            "portal-home-sorting-recall"
+          ],
+          "source_ids": [
+            "caffeine-s03",
+            "caffeine-s04",
+            "caffeine-s05",
+            "caffeine-a01",
+            "caffeine-a02"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "Humanによる用途の発見・重要性・Teshuvahと、AIの関係整理を原本で分けた想起用の編集要約。activeは想起候補であり、飲用の推奨・実施・効果・信仰上の義務を意味しない。現在のHuman Correctionと適用Guardを優先する。"
     }
   ]
 }
