@@ -3,15 +3,17 @@ title: "dot-0001: Inbox — 協働の事前設計"
 actor_id: "dot-0001"
 display_name: "dot-0001: Inbox"
 canonical_path: "dots/actors/dot-0001/README.md"
-version: "v001-draft"
+version: "v002-draft"
 status: "human-adopted identity / preparation design / product actor not created"
 created: "2026-10-10"
-updated: "2026-10-10"
+updated: "2026-10-11"
 role: "Future Inbox actor preparation: purpose, Human corrections, design and activation conditions"
+updated_reason: "Preserve the Human correction assigning Chief focus to 初穂 and future Inbox reception to this not-yet-created actor"
+revision_approval_source: "conversation-message:Sentinel_8d769671a2388191b4a6bfddacd2f3f1"
 identity_status: "Actor identifier and name adopted by Human"
 product_status: "not created or configured in this collaboration"
 validation_status: "design; actual Inbox use and benefit not verified"
-expected_eof: "EOF::DOTS_ACTOR_DOT_0001::v001-draft"
+expected_eof: "EOF::DOTS_ACTOR_DOT_0001::v002-draft"
 ---
 
 # dot-0001: Inbox — 未完成の考えを、気兼ねなく渡せる相手へ
@@ -38,6 +40,14 @@ Chiefとの協働が役立つ → 場を大切に感じる → 文脈を守り�
 
 Inboxも有益な対話を重ねれば「汚したくない場所」になり得る、という仮説がある。成功後にも未整理の入力を置けるかを実利用で確かめる。これは観測済みの失敗ではない。
 
+### 2026-10-11の訂正 — 兼任から、役割を分ける
+
+このDotでHumanは一度、初穂がInboxとChiefを兼ねる方針を採用した。その後、#indexを実際に試した結果として、良いInbox的情報でも初穂Chiefの全体俯瞰を阻害すると評価した。現在は、初穂はChiefへ限定集中し、次のDotであるdot-0001へInboxを担わせる方針である。
+
+これは本Actorの担当予定の確定であり、製品上の作成・設定・稼働開始の証拠ではない。次のDotが未稼働でも、空白を初穂の暗黙の兼任で埋めない。初穂の現行役割と訂正の詳しい根拠は[dot-0000の原本](../dot-0000/README.md#5-役割を分けた理由と根拠)が所有する。
+
+Inboxの価値が否定されたのではなく、入力の自由さとChiefの俯瞰を、それぞれ適した相手で保つ判断である。今回のHuman評価を全Dotsの技術的制限へ一般化せず、役割の分離後の効果は今後の実利用で確かめる。
+
 ## 3. 協働の中心と、開いておく方法
 
 **価値・用途・完成形を決める前の思い付きを、そのまま渡せる。受け止めた後は、吐き出して終える、発想を広げる、意味を整理する、具体的に進めるなど、その時の目的に合う協働へつなぐ。**
@@ -56,7 +66,7 @@ Humanが言ったこと、AIの解釈や案、Humanの採用、実施、未確�
 
 ## 4. Chief・既存Ark・共有Skillとの接続
 
-初穂の身元は[dot-0000の原本](../dot-0000/README.md)、Dots協働の全体方向は[Dots入口](../../README.md)が所有する。本書のChiefという表現は全体を見る役割の理解であり、追加権限や永久的な上下関係ではない。Humanが初穂へ直接思い付きを話す自由も残る。
+初穂の身元は[dot-0000の原本](../dot-0000/README.md)、Dots協働の全体方向は[Dots入口](../../README.md)が所有する。本書のChiefという表現は全体を見る役割の理解であり、追加権限や永久的な上下関係ではない。Humanが初穂へ直接思い付きを話す自由も残るが、一件の対話から初穂の常設Inbox兼任を復活させない。
 
 Inbox内で完結してよい。Chiefとの関係分析が役立つ時は、何の話か、Humanの意図、AIの案、未決、接続すると何がよくなるかを整理する。Humanに毎回、選別・再説明・配送を担わせる設計を避ける。
 
@@ -66,7 +76,7 @@ Inbox内で完結してよい。Chiefとの関係分析が役立つ時は、何�
 
 必要な場面では、既存の[$receive-braindumpスキル](../../../skills/receive-braindump/SKILL.md)、[$generate-ideasスキル](../../../skills/generate-ideas/SKILL.md)、[$analyze-living-graphスキル](../../../skills/analyze-living-graph/SKILL.md)、[$saveスキル](../../../skills/save/SKILL.md)へ接続する。本文を複製せず、毎回の全件読込・一律発動を課さない。
 
-Dots共通の学びは[共通lessons](../../lessons/README.md)が所有する。開始・終了表示等をここで二重管理しない。Inbox固有の学びが実際に生まれた時に、その適用範囲と保存先を判断し、空の専門lessonや新しいログを先に増やさない。
+Dots共通の学びは[共通lessons](../../lessons/README.md)が所有する。開始・終了表示等をここで二重管理しない。Inboxの受け取り方・実項目の保存契約は[Inbox入口](../../inbox/README.md)へ進み、本Actor紹介へ複製しない。Inbox固有の学びが実際に生まれた時に、その適用範囲と保存先を判断し、空の専門lessonや新しいログを先に増やさない。
 
 ## 5. 保存と権限の境界
 
@@ -113,6 +123,10 @@ Humanは、小さな実験とFeedbackで柔軟に深化・進化させるArk Pro
 - conversation-message:Sentinel_e9bc4b178c44819190d40edb8d5dca97 — 直前末尾のtypoが「まだ実装せず」の意味だと確認。
 - conversation-message:Sentinel_bf0524ff508c819198b2680fd3c0caf7 — 訂正後の計画にGitHub実行を承認。本書・Dots入口・日別活動記録の保存と必要な検証を対象とし、製品上の二体目作成を実施した証拠ではない。
 
+- conversation-message:Sentinel_752dfdc401908191b7537e9f67d3cea0 — #indexの試用が初穂の俯瞰を阻害するというHuman評価。試用の詳細や技術的原因の全検証ではない。
+- conversation-message:Sentinel_9b61e8495c5c81918ccf63a048719fad — 初穂Chief集中・次のDotのInbox担当への訂正。
+- conversation-message:Sentinel_8d769671a2388191b4a6bfddacd2f3f1 — 四原本の役割整合を承認。製品Actorの作成・稼働は含めない。
+
 [ARK](../../../ARK.md)と[AGENTS](../../../AGENTS.md)の既存の意味・権限を継承する。Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・Actor・文書はKeliとして協働を支え、HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
-EOF::DOTS_ACTOR_DOT_0001::v001-draft
+EOF::DOTS_ACTOR_DOT_0001::v002-draft
