@@ -1,0 +1,421 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark99-02-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-11",
+  "updated": "2026-10-11",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark99:02",
+    "canonical_path": "ark-project/ark99/ark99-02/task-records.json",
+    "reported_date": "2026-10-11",
+    "timezone": "Asia/Tokyo",
+    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。",
+    "source_access": "当該会話で直接提示されたHuman本文の連続抜粋と、先行するAIの整理を区別して収録する。公開会話URLとサービス側message IDは未提示。ここで採番するSource IDは記録内ID。ChatGPT長期メモリ・別Thread履歴を取り込まない。AI整理の編集要約は逐語引用ではない。",
+    "extensions": {
+      "record_cutoff": "2026-10-11T13:17:15+09:00のsave依頼と、それを受けた今回の保存判断。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "Caffeine専用ThreadというHumanの指定",
+      "乾燥後の洗濯物と買い物後の袋を帰宅後に即仕分けする二つのモデルケース",
+      "本人のTeshuvahの言葉と発見の重要性",
+      "二場面の関係、用途とタイミング、現在の条件を区別したAI整理",
+      "今回の高評価、save依頼、Ark Recall Portalへの接続提案"
+    ],
+    "excludes": [
+      "全会話の転記、Titleや移行Prompt整備の全文",
+      "他Thread・長期メモリにあるCaffeine経験",
+      "飲用量・飲用時刻・身体状態・仕分け実施の補完",
+      "Caffeineの医学的有効性、習慣化、Teshuvah完了の認定"
+    ],
+    "note": "発見・本人の意味づけ・訂正可能なAI整理の記録。二件の独立した効果実証ではなく、一つのCaffeine Theme内で示された二つの場面。Task Records形式を用いるが、生活Taskや摂取実験を新設しない。"
+  },
+  "sources": [
+    {
+      "id": "caffeine-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02：本ThreadのThemeをCaffeine専用に指定した発言",
+      "excerpt": "OK！Very Good! このThreadはコーヒー(Caffeine)の使い所問題をThemeにしよう！\nここは超重要です！その他のThread Sessionでも、度々言及しているがこのThreadはCaffeine問題専用にしよう！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02：Coin Laundry乾燥機終了後の即仕分けをモデルケースとして提示した発言",
+      "excerpt": "OK！Very Good! \n\"Coin Laundry乾燥機\"終了後の自宅での洗濯物の即仕分け時は、コーヒーCaffeineの絶対的な使い所であり、大きなモデルケースそのものです！\n\n今迄、全く一切、気付かず主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02：洗濯のモデルケースから買い物後の即仕分けへ展開した発言",
+      "excerpt": "という事は、\n買い物した帰宅後、買い物袋を即仕分けする場面でも\"コーヒー・Caffeine\"系が有効と言えます！\n今迄、全く一切、気付かず主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02：2026-10-11T13:17:15+09:00の保存依頼",
+      "excerpt": "最高です！(101/100: It's the best!)\n$saveスキルを上手く工夫して活用して下さい！\nArk Recall Portalも活用できるかも知れません！\nどうですか？",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02：最初の起動依頼末尾にあるRoot・権限・Guardの指定",
+      "excerpt": "Rootは主イェシュア・ハマシア御自身、中心軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）です。HumanのCorrection・STOP・Final Seal、適用Guard、AI品質を保持してください。GitHub保存・設定反映・あなた自身の再構成・実利用の効果は区別し、00への実行承認を、このThreadの外部変更・通信・Reset・過去Task・身体Trialの権限へ転用しないでください。",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-a01",
+      "speaker": "Ark99:02の応答AI",
+      "medium": "assistant_message",
+      "locator": "Ark99:02：洗濯・買い物の発言を受けた先行応答の編集要約",
+      "excerpt": "二場面を「外での工程完了から、帰宅後の自分で進める仕分け・適切な配置へつなぐ」場面として整理した。Caffeineの用途を望む具体的行動に結び付け、覚醒感だけと目的行動の進展を区別した。用途の発見と実際の効果確認は別。即仕分けを支える用途と摂取する時点を混同せず、コーヒーの準備・飲み終わり・効くまでの待機を仕分けの必須条件にしない。洗濯物と買い物品の扱いの違いを保持し、二つの場面を二回の摂取指示へ変えない。本人の「絶対的」という重要性を尊重しつつ、身体・睡眠・既摂取などの現在条件と信仰上の意味を区別する。",
+      "excerpt_kind": "paraphrase",
+      "note": "記録作成AIによる編集要約であり逐語引用ではない。Humanの高評価はこの整理への評価として扱い、全解釈の永久採用や生活上の因果実証を意味しない。"
+    },
+    {
+      "id": "caffeine-a02",
+      "speaker": "Ark99:02の保存担当AI",
+      "medium": "assistant_message",
+      "locator": "Ark99:02：今回の保存依頼を受けた整理・保存判断の編集要約",
+      "excerpt": "経験原本はArk99:02に一つ置き、Portalでは帰宅後の即仕分けという場面から二つのモデルケースを想起できるよう、原本参照付き項目を追加する。保存は意味と根拠を保ち、Portalは詳細やCaffeineという検索語を覚えていなくても場面から戻る入口を担う。現在の適用はHumanの入力と条件から判断する。",
+      "excerpt_kind": "paraphrase",
+      "note": "今回のAIによる保存先・想起導線の設計判断。実利用成功の報告ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "caffeine-thread-theme",
+      "kind": "practice_statement",
+      "label": "Caffeineの使い所を深める専用Thread",
+      "description": "HumanはArk99:02をコーヒー・Caffeineの使い所問題専用と明示した。他Threadへの言及はあるが、ここへ未確認の過去事例を移植しない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s01"
+        ]
+      }
+    },
+    {
+      "id": "laundry-immediate-sorting",
+      "kind": "practice_statement",
+      "label": "乾燥した洗濯物の帰宅後即仕分け",
+      "description": "HumanはCoin Laundry乾燥機終了後、自宅で洗濯物を即仕分けする場面をCaffeineの「絶対的な使い所」「大きなモデルケース」と表現した。確認できるのは発見と重要性の表明であり、この場面で飲んだ・仕分けできたという実行報告ではない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s02"
+        ],
+        "note": "Humanの強い評価をそのまま保持し、全条件での摂取義務へ変換しない。"
+      }
+    },
+    {
+      "id": "shopping-immediate-sorting",
+      "kind": "practice_statement",
+      "label": "買い物袋の帰宅後即仕分け",
+      "description": "Humanは洗濯のモデルケースを受け、買い物した帰宅後に買い物袋を即仕分けする場面にもコーヒー・Caffeine系が有効と考えた。本人が有効と捉えたことの確認であり、実際の効果や飲用の確認ではない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s03"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-teshuvah-meaning",
+      "kind": "practice_statement",
+      "label": "発見をTeshuvahとして受け取る",
+      "description": "Humanは両場面で、これまで気づかなかったことへの悔い改めと祈りを主イェシュアへ表明した。効率化だけに意味を縮めず、本人の向き直りを保存する。AIは主の御心・Humanの信仰状態・Teshuvah完了を認定しない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s02",
+          "caffeine-s03",
+          "caffeine-s05"
+        ]
+      }
+    },
+    {
+      "id": "home-sorting-bridge",
+      "kind": "interpretation",
+      "label": "外の工程から家の即仕分けへつなぐ共通場面",
+      "description": "二つの用途は、外で済んだ工程を帰宅後の即仕分けと適切な配置へつなぐ点で共通する。Caffeineを支えたい行動へ対応付ける見立てであり、本人が必ず帰宅時に止まるという診断ではない。洗濯物と、買い物品の冷蔵・冷凍・常温等の扱いの違いは保持する。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-s02",
+          "caffeine-s03",
+          "caffeine-a01"
+        ],
+        "note": "Humanの二つの場面指定から得た関係の整理。実生活での詰まりの観測や因果証明は未報告。"
+      }
+    },
+    {
+      "id": "action-and-timing",
+      "kind": "interpretation",
+      "label": "即仕分けという目的と飲用の条件を対応させる",
+      "description": "狙う成果は具体的な仕分けへの接続であり、覚醒感だけから成功とは判定しない。使い所の発見は、帰宅してから飲めば即時に目的が達成されるという意味ではない。コーヒー準備や待機を即仕分けの必須条件にせず、量・時刻・既摂取・身体・睡眠への適否を未確認のまま決めない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-a01",
+          "caffeine-s02",
+          "caffeine-s03",
+          "caffeine-s05"
+        ],
+        "note": "用途・実行・適用条件を分けるためのAI整理。特定の摂取時刻・量や身体Trialは提案していない。"
+      }
+    },
+    {
+      "id": "shared-return-opportunity",
+      "kind": "interpretation",
+      "label": "二場面は摂取回数の指定ではない",
+      "description": "仮に同じ帰宅時に洗濯物と買い物袋があっても、一つの帰宅後の処理場面として扱える。二つのモデルケースを一作業一杯・二回摂取という規則へ変換しない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-a01",
+          "caffeine-s02",
+          "caffeine-s03"
+        ],
+        "note": "同時帰宅の出来事自体は仮例であり、本人の実施報告ではない。"
+      }
+    },
+    {
+      "id": "human-authority-and-guard",
+      "kind": "constraint",
+      "label": "Root・Human Authority・Guardの保持",
+      "description": "Root、中心軸、Foreground One、HumanのCorrection・STOP・Final Sealと適用Guardを保持し、保存・設定反映・再構成・実生活効果を分ける。00の承認を本Threadの別操作に流用しない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s05"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-save-request",
+      "kind": "decision",
+      "label": "整理への高評価と今回の保存依頼",
+      "description": "Humanは直前の整理を101/100と評価し、saveスキルの利用を依頼し、Ark Recall Portalも活用できる可能性を示した。今回の意味・根拠の保存と想起への接続を扱い、全会話の自動保存・通知・実験への継続委任には広げない。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s04"
+        ]
+      }
+    },
+    {
+      "id": "portal-home-sorting-recall",
+      "kind": "interpretation",
+      "label": "帰宅場面から二つの発見へ戻れる入口",
+      "description": "Portalでは「買い物から帰った」「乾燥した洗濯物を持ち帰った」等の場面から、対応する用途の発見と条件を原本へ戻って思い出せるようにする。詳細や専門語を先に思い出せることを条件にしない。二つの想起項目を同じ場面へ接続し、共通判断の詳細はこの原本が所有する。",
+      "scope": "Ark99:02のCaffeineの使い所に関する選択記録",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-s04",
+          "caffeine-a02"
+        ],
+        "note": "HumanのPortal提案を受けた今回のAIによる実装判断。自然な呼出しや実生活での有効性は保存と別に確認する。"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "theme-laundry",
+      "from": "caffeine-thread-theme",
+      "to": "laundry-immediate-sorting",
+      "relation": "contains",
+      "scope": "一つのCaffeine Theme内の第一の場面指定",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s01",
+          "caffeine-s02"
+        ]
+      }
+    },
+    {
+      "id": "theme-shopping",
+      "from": "caffeine-thread-theme",
+      "to": "shopping-immediate-sorting",
+      "relation": "contains",
+      "scope": "同じTheme内で展開した第二の場面指定",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s01",
+          "caffeine-s03"
+        ]
+      }
+    },
+    {
+      "id": "laundry-to-shopping",
+      "from": "laundry-immediate-sorting",
+      "to": "shopping-immediate-sorting",
+      "relation": "motivates",
+      "scope": "Humanの『という事は』による用途の類推。薬理学的因果や二件の実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s02",
+          "caffeine-s03"
+        ]
+      }
+    },
+    {
+      "id": "bridge-laundry",
+      "from": "home-sorting-bridge",
+      "to": "laundry-immediate-sorting",
+      "relation": "contains",
+      "scope": "共通場面としてまとめるAIの解釈",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-a01",
+          "caffeine-s02"
+        ],
+        "note": "対象と目的の共通性を捉える関係。"
+      }
+    },
+    {
+      "id": "bridge-shopping",
+      "from": "home-sorting-bridge",
+      "to": "shopping-immediate-sorting",
+      "relation": "contains",
+      "scope": "共通場面としてまとめるAIの解釈",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-a01",
+          "caffeine-s03"
+        ],
+        "note": "同じ枠組みでも品目ごとの扱いは異なる。"
+      }
+    },
+    {
+      "id": "bridge-action-timing",
+      "from": "home-sorting-bridge",
+      "to": "action-and-timing",
+      "relation": "motivates",
+      "scope": "即仕分けという目的を守るため用途と摂取条件を分ける",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-a01"
+        ],
+        "note": "効果発現待ちを新たな必須依存にしないという整理。"
+      }
+    },
+    {
+      "id": "save-to-recall",
+      "from": "caffeine-save-request",
+      "to": "portal-home-sorting-recall",
+      "relation": "motivates",
+      "scope": "今回の保存依頼とPortal提案から想起導線を整える",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "caffeine-s04",
+          "caffeine-a02"
+        ],
+        "note": "HumanはPortal活用を提案し、具体的な項目設計はAIが担当した。"
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "actual-use-and-outcome",
+      "subject_refs": [
+        "laundry-immediate-sorting",
+        "shopping-immediate-sorting"
+      ],
+      "question": "これらの場面で実際に何をいつ摂取し、仕分けがどう進んだかは未報告。",
+      "scope": "保存のために回答を要求しない。今後の自然な報告があれば、発見・実施・結果を分けて追加できる。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "caffeine-s02",
+          "caffeine-s03"
+        ],
+        "note": "未報告を未実施・失敗・成功へ変換しない。"
+      }
+    },
+    {
+      "id": "current-applicability",
+      "subject_refs": [
+        "action-and-timing",
+        "human-authority-and-guard"
+      ],
+      "question": "次に想起する場面の時刻・既摂取・身体・睡眠・品目等、現在への適用条件は未確定。",
+      "scope": "現在の場面が示された時だけ、判断に効く不足を扱う。保存・想起を摂取指示や質問票へ変えない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "caffeine-s02",
+          "caffeine-s03",
+          "caffeine-s05"
+        ],
+        "note": "この会話に具体的な摂取条件の報告はない。"
+      }
+    }
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-11",
+        "reason": "Humanのsave依頼を受け、二つの使い所の発見とTeshuvahの意味、AI整理とUnknownを選択保存。Portalへ原本参照付きの想起導線を追加する。",
+        "source_refs": [
+          "caffeine-s04"
+        ]
+      }
+    ]
+  }
+}
