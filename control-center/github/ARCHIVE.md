@@ -805,7 +805,7 @@ Voice lessonsと日付付きRepository Reviewにある固定commit参照は保�
 
 ## ARC-012
 
-**承認済み：Projects入口とArk-WTP六原本を原文のまま保管し、現役の`projects/`全体を退役する。保存後の確認結果は§Gへ記録する。** 本件の承認は旧WTP成果のHuman Final Seal、Local backupの確認、Podcast実装の承認を意味しない。
+**完了：Projects入口とArk-WTP六原本を同一blobで保管し、現役の`projects/`全体を退役した。mainから七保管原本＋六更新文書の全文一致、元配置の除去、対象外509ファイル保持を確認した。証拠と確認境界は§G。** 本件の承認は旧WTP成果のHuman Final Seal、Local backupの確認、Podcast実装の承認を意味しない。
 
 ### A. 依頼・後続判断・担当
 
@@ -867,6 +867,16 @@ Output Polishは汎用整形Promptとして保持する。固定的な「Main Fi
 
 ### G. 実施・保存後確認
 
-公開と保存後の照合を実施中。main、移動先七本文と六更新文書、Tree／blob、旧配置の除去、対象外保持、履歴・参照を確認した後、実測結果と固定commitをこの節へ追記する。現時点の作業記述だけをRemote検証完了の証拠にしない。
+2026-10-11 JST、実装commit [4bba624](https://github.com/yusukefujiijp/ai-project/commit/4bba624408bbb142a1e047914fde95b1739b5eb6)をmainへ公開した。親は`b3919a12a7e6e4fa221bed9a3a18f35b366fd0ba`、Treeは`ac91f131bd566ae6f5afa50763dc7857ba89fc04`。GitHubが返した作成時刻は **10:12:58 UTC／19:12:58 JST**、author／committerはともに`yusukefujiijp`。Humanの意味承認とAI担当は§Aの区別を保持する。
+
+公開前にmainと親commitの一致を確認し、expected SHA付きのnon-force更新を使った。公開後の **2026-10-11T10:13:34.342Z（19:13:34.342 JST）** に、mainと実装commitの一致、commitが指す正確なTree SHAによる非切断Tree、**七保管原本＋六更新文書の13本文のmainからの直接再取得・全文とblobの一致**を確認した。
+
+- **同一性と配置**：保管後の`__archives/ARC-012/projects/` subtreeは移動前と同じ`b1d2a3e53c4eae1ccff9439a6dd4b3325817ef67`。七原本のmode・blob・合計68,615 bytesが一致し、元七パスとRootの`projects/`は存在しない。変更は追加7・除去7・更新6の20パス、ファイル総数は522のまま。
+- **対象外保持**：実装commitでは対象外509ファイルのblob・modeが親と同一。AGENTS・ARK、Main／Supportの三点セット、共通Handoff、Ark99、Skills Hub・各Skill・lessons、Board・Actor資料、既存保管物と並行する既存記録を保持した。509本文を今回全て再読したという意味ではない。
+- **構造・参照・履歴**：六更新文書のYAML・重複key・自己パス・日付・宣言EOF、Code Fence数の保持、追加した相対リンク19出現の所在を検査した。ARC-001〜010本文とPLAN診断履歴は同一。ARC-011は後続差分注記と二証拠リンクの固定化のみ。Root・Ark Domain・Output Polishの変更差分を直接確認し、DomainのMain／Support・タイトル・Boot契約を保持した。
+- **確認の境界**：執筆AI自身が旧WTPへの自動誘導を閉じる意味を点検した。独立した他AIの理解、Human UI、全外部consumer、Local backup、長期の探索負担・実生活効果は今回の保存検証から確定しない。保存原本内の歴史的なリンクは§Eの固定snapshotと併用する。
+- **後続記録**：この結果追記、PLANの完了案内、同日の活動一行を保存し、対象を再取得して照合する。実装commitの同一性結果と、この後続記録の差分を区別する。記録自身の自己SHAを埋め込む循環を作らず、確認のためだけの記録を増やさない。
+
+本件のアーカイブ範囲を完了し、Human Reviewへ戻る。現在有効な次の接続は、保留しているPodcast計画の検討である。その実装・Radio退役・旧JSONL削除・WTP再研究を自動開始しない。
 
 EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.12.0

@@ -3,7 +3,7 @@ title: "GitHub整理PLAN — 現在の判断と保存された診断"
 version: "0.17.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Human-authorized projects archive; execution and remote verification owned by ARC-012"
+status: "Projects archive completed and remotely verified; Human Review; Podcast remains plan-only"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
@@ -35,7 +35,7 @@ change_record: "ARCHIVE.md#arc-012"
 
 先行Voice／Mode五原本の退役はARC-011で完了済み。現役Radio／Voiceの選択は[Skills Hub](../../skills/README.md#radio-voice-formation)、共有lessonと導入先の整合状況は[STR-015](../changes/STR-015-skills-lessons-consolidation.md)へ戻る。本欄は保存・検証やSkill Runtime状態の第二台帳にしない。
 
-今回のアーカイブを確認後はHuman Reviewへ戻る。直前のPodcast検討は計画提示までの依頼として保持し、本件の実行承認をPodcast作成・Radio削除・HTTP 422の別経路回避・旧二JSONLの退役へ拡張しない。通常Unknownの全解消を今回の完了条件にしない。
+今回のアーカイブは保存後確認まで完了し、Human Reviewへ戻る。直前のPodcast検討は計画提示までの依頼として保持し、本件の実行承認をPodcast作成・Radio削除・HTTP 422の別経路回避・旧二JSONLの退役へ拡張しない。通常Unknownの全解消を今回の完了条件にしない。
 
 ### 成果を現在へ接続する
 
