@@ -35,7 +35,17 @@ When a linked social post supplies essential material and its full text is missi
 
 Resolve the narrator from the actual collaboration, then apply the shared source's public-facing naming policy and the user's latest correction. Do not substitute a technical runtime name for the familiar public name selected for the intended audience. The ChatGPT, Grok, and Claude examples are not a closed list or a choice of persona. Keep an AI mentioned in source material distinct from the current author, and describe the human collaboration according to what actually occurred. Do not guess a model generation or attribute human lived experience to the AI.
 
-Develop the article using the shared source and current request. Choose the angle, explanation, examples, and amount of research to fit the topic. Do not impose a fixed thinking sequence, require Graph Mode or Living Review on every post, or manufacture novelty, urgency, and certainty to make the article more engaging.
+Choose the angle, explanation, examples, and amount of research to fit the topic. Use relational analysis or Graph Mode when it helps; do not require a diagram or fixed reasoning template. Do not manufacture novelty, urgency, or certainty to make the article more engaging.
+
+## Review, then refine readability
+
+For a new post or a substantive revision, carry out distinct editorial passes rather than treating a one-shot draft as their completion:
+
+1. Establish a coherent draft with its claims, reasons, and evidence. Reuse the latest accepted or human-praised draft when it fits the current request, preserving what works instead of rebuilding it needlessly. Initial drafting may already use lists; human approval of a draft is not evidence of audience reach or engagement.
+2. Apply Living Review to that draft: assess its working value, problems, and useful possibilities against the current purpose, readers, evidence, and corrections, then make the warranted content changes. Use the living-review skill when available and applicable; the review purpose here remains usable without a particular skill system.
+3. Make a separate readability pass over the reviewed content. Improve the flow, sectioning, paragraphs, and selective use of lists. Actively consider bullets where readers can locate and understand points more accurately, following the shared prompt's detailed guidance. Compare the result with the reviewed draft for both readability and preservation of meaning, qualifications, attribution, and reasoning connections.
+
+Continue to the final checks and exact length measurement below. If shortening or reformatting changes a claim or its conditions, revisit the affected content before recounting. For a narrow correction, reuse completed work and check the affected scope instead of restarting every pass. Do not require intermediate files, reports, or approval at each pass; honor the user's requested checkpoints and STOP, and keep the default delivery post-only.
 
 ## Verify the final post length
 
