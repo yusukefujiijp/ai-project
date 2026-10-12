@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-10"
+last_updated: "2026-10-12"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
@@ -277,6 +277,8 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 ### 3.14 AI SNS Public Post
 
 [AI SNS Public Post](ai-sns-public-post.md)は、会話で育った内容を既定で完成稿全文X方式4,000カウント以内の一投稿へ整え、実際に協働したAI名とHuman–AI協働を記事内に明示する自己完結Prompt。ChatGPT／Grok／ClaudeのFew-shot例で公開上のAI名の置換を示し、タイトルと§0の名称を一致させる。一般読者向けの呼称と実行環境名を区別し、ChatGPT／Codexでの協働は原則ChatGPTと表記する。正確さ、出典、AIの語り手、読者に役立つ考察を保つ。
+
+新規作成・大きな改稿では、良い原稿を引き継ぐ内容のLiving Reviewと、段落・箇条書き等を整える可読性編集を分ける。箇条書きは読み取りやすさと意味の保持から選び、使用率や項目数を固定しない。
 
 本文作成とSNSへの投稿操作を区別し、レビュー・保存の依頼から本文生成を自動開始しない。今回の変更理由と確認範囲は本体§3へ。[write-social-post（SNS投稿）](../skills/write-social-post/SKILL.md)を短い呼出しの入口とし、詳しい執筆条件と上限・計測範囲はこのPromptが所有し、Skillが最終稿の計測と超過時の再調整へ接続する。起動文と共有・導入・限定確認の状態は[Skills Hub](../skills/README.md#36-ai協働sns投稿の入口)を参照する。
 
