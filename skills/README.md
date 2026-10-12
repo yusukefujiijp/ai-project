@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.27.0
+version: v0.28.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-11
-updated_reason: RadioからPodcastへの同一登録物での継承を案内し、保存済みと会話内参照の未切替を分離
+updated: 2026-10-12
+updated_reason: SNS投稿の内容Reviewと可読性編集を分離し、箇条書きの判断基準・限定応答・保存確認を接続
 ---
 # Ark Shared Skills Hub
 
@@ -73,7 +73,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
-| SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [SKILL.md](write-social-post/SKILL.md) | [公開文Prompt](../prompts/ai-sns-public-post.md)が詳しい執筆条件・Few-shotを所有 | 形式・四つの独立文脈で計五応答・導入・共有本文一致を確認。§3.6参照。自然な自動選択・別Vendorでの実機動作・読者への効果は未検証 |
+| SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [SKILL.md](write-social-post/SKILL.md) | [公開文Prompt](../prompts/ai-sns-public-post.md)が詳しい執筆条件・Few-shotを所有 | 段階的編集の改訂・四つの独立文脈で計六応答・共有と導入本文の一致を確認。§3.6参照。自然な自動選択・別Vendorでの実機動作・読者への効果は未検証 |
 | Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
@@ -217,6 +217,14 @@ Boardの架空素材では、保存時点の受け手未指定と現在のHuman�
 この履歴はSkillの形成・検証範囲を所有します。通信のCurrentは[当該Topic](../board/topics/20261003-load-next-step-save-skills/README.md)に置き、本節へ重複させません。2026-09-12のexport-manifestは当時の記録として保持します。
 
 ### 3.6 AI協働SNS投稿の入口
+
+**段階的編集の改訂（2026-10-12）。** Grok経由で提示された箇条書きへのHuman評価と、YusukeJPの「良い原稿をLiving Reviewし、その後に視認性・可読性を磨く工程を分ける」という訂正・実行承認を反映しました。公開文Prompt v006は箇条書きの具体的な判断基準と単独利用時の段階的仕上げを、Skillは良い原稿の継承・内容Review・可読性編集・最終計測への接続を担います。箇条書きの比率、毎工程の承認、中間稿の提示、Graph図を一律には要求せず、限定修正と途中STOPを保持します。
+
+**今回の限定応答。** 元会話・期待回答・診断を渡さない三つの独立したAI文脈で、架空の読書会の投稿、Grok由来の良い原稿の改稿、その後の一語だけの訂正、Review提示での停止、指示文の計画限定レビューの計五応答を確認しました。AI名と協働、二つの条件を両方満たす関係、選択肢と順序、架空例・未測定の効果の区別が保たれ、一語訂正では他の文字・改行が変わらないことを比較しました。初稿への後続Reviewでは「本人の許可」が誰についての条件か曖昧だと指摘され、箇条書きの案内へ条件の対象も明確にする一文を補いました。初稿を完全な正解と扱わず、Review-onlyの指示に従って原稿の再編集はしていません。対象の明確化を補った後、第四の独立文脈ではSkillを使わずPrompt全文から架空の工作展示会の投稿を作成しました。撮影者と写っている人の両方の許可、説明方法の二者択一、準備順序を区別し、二例を三例へ水増しせず、架空設定と未測定を明示しました。
+
+**形式・計測の確認。** AI名・協働とFew-shot、§構成、出力形式、字数条件・計測範囲、計測補助と表示設定が変更されていないことを照合しました。日本語・ASCIIの4,000境界と4,001超過、箇条書き記号・URL・改行、別の明示上限の計六入力で計測補助を再確認しました。返された稿は末尾改行込みで読書会2,289、既存稿の改稿1,622、一語訂正後1,618、Prompt単独の展示会稿1,535カウントでした。
+
+**今回の保存と検証境界。** [Prompt v006の改訂](https://github.com/yusukefujiijp/ai-project/commit/5b9abf5ea715a932304f00c04a47d7c31febb640)と[共有Skillの改訂](https://github.com/yusukefujiijp/ai-project/commit/418392455ff4bd475f42be085ac623e03f76ebcd)はmainへ保存し、全文再取得で一致を確認しました。同じ登録済みSkillを更新して保存先から再取得し、この会話のSkill読取経路でも新本文と共有版の一致を確認しました。四つの独立文脈・計六応答は同じ実行環境での明示読込による限定確認です。元の成功稿そのものの再評価、自然な自動選択、別Vendor実機、Xへの投稿、実際の読者の理解・反応改善は確認していません。架空の素材をHumanの実績へ登録せず、残る検証のために通常利用を自動投稿や自動改訂へ広げません。
 
 **分量の訂正（2026-10-04）。** Humanの「193文字超過」という報告と、完成稿を4,000以内に収める訂正・実行承認を反映しました。公開文Prompt v005が、貼り付ける全文のX加重カウント上限と計測範囲を所有します。Skillは出力直前の計測、超過時の調整、最後の編集後の再計測を担います。通常のAI回答や調査の長さへこの上限を転用せず、字数合わせの水増しもしません。計測できない場合の草稿表示も共通Promptで定義します。
 
