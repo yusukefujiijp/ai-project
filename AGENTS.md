@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004-candidate"
+version: "v004.1-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-10"
+updated: "2026-10-13"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -53,7 +53,13 @@ prompt_migration_navigation_patch:
   base_commit: "0d21990a126948703eca517c65017f2038d4393c"
   change_record: "control-center/changes/STR-014-super-special-prompt-modernization.md"
   scope: "Role Map only; modernized Covenant path and single-prompt shelf description; v004 behavioral kernel unchanged"
+visualization_binding_patch:
+  date: "2026-10-13"
+  source: "ark-project/ark99/ark99-02/task-records.json"
+  source_ref: "visualize-s08"
+  scope: "Conditional Ark visualization skill routing; existing authority and full-read contracts retained"
 updated_reason:
+  - "2026-10-13: Ark99:02 Human approved a bounded visualize-patch read route for interactive visualization work and capability alternatives; ordinary tables and simple diagrams are outside the trigger."
   - "2026-10-10: STR-014 routes to the modernized collaboration Covenant and describes prompts as self-contained bodies; authority, reading and recovery contracts retained."
   - "2026-10-05: ARC-010 aligns the README role with its AI-first declaration and removes the retired Ark System live route; common authority, reading and completion contracts unchanged."
   - "2026-10-01 JST / 2026-09-30 UTC: Add task-scoped persistence and result-aware recovery without promising always-on execution or expanding authority; distinguish independent delegation from one accountable integration surface."
@@ -161,6 +167,8 @@ Current Missionに必要なSkillだけを、その時点のRuntimeで発見し�
 Current callable skill / connector metadataとRepository内の配布Sourceを区別する。古いversioned cache pathを固定しない。公開Sourceが存在するだけで、現在の環境へインストール済みと扱わない。読めない同一パスを繰り返し探索せず、必要なら利用可能なresolve-github-runtime等で実行環境を解決する。
 
 Memory、待機、通知、並列Agent、外部Tool、実行環境の能力は、その時点のHostと実際に利用可能なRuntimeから確認する。製品名やモデル名、過去の成功だけで接続・常時稼働・無限の利用枠を仮定しない。能力の存在は、それを使う権限とは別である。
+
+Arkで対話型の可視化を作成・修正する時、および公式Visualize不在でその代替を選ぶ時は、[visualize-patch](skills/visualize-patch/SKILL.md)を実際に読み、共通方針・適用条件・現在の依頼へ接続する。普通のMarkdown表・単純な図・引用や言及だけには一律適用せず、Plan-onlyでは作成へ進まない。Skill登録がない環境も共有本文を指示資料として読めるが、登録・表示機能・自動発動の成立とは区別する。
 
 Skillの作成・更新は適用されるskill-creation workflowに従う。既存Skillの発見は、その作り直しや無関係な指示全体の監査を意味しない。参照しただけの未知Scriptを権限・内容確認なしで実行しない。
 
