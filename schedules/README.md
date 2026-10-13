@@ -64,6 +64,7 @@ Schedule Runtime
 | Schedule | Status | Runtime | GitHub Source |
 |---|---|---|---|
 | Parasha Kindle Compiler | active | Daily 18:00 Asia/Tokyo | [parasha-kindle-compiler/](parasha-kindle-compiler/) |
+| chocoZAP 継続サポート | active | Daily 17:00 Asia/Tokyo | [chocozap-support/](chocozap-support/) |
 
 他のScheduleは、GitHub-backed管理が実際に必要になった時だけ追加する。最初から全TaskをMirrorしない。
 
