@@ -1,14 +1,14 @@
 ---
 title: "Caffeine — コーヒー・ガム等の使い所を育てる"
-version: "v003"
+version: "v004"
 status: "active topical entry / Human-confirmed default gum reference / personal application remains contextual"
 canonical_path: "lifestyle/caffeine/README.md"
 created: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
 primary_reader: "Current AI / other AI / Future AI; readable and correctable by Human"
 role: "Long-term caffeine topic owner, shared product reference and navigation; original episodes remain in their source records"
 source_thread: "Ark99:02"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v003"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v004"
 ---
 
 # Caffeine — コーヒー・ガム等の使い所を育てる
@@ -65,6 +65,30 @@ AIはこれを、**1粒12mgという小さい単位で総含有量を選べる�
 
 今後のAIは、既定製品と1粒の量・この比較意図を復元してから、新しく示された場面や条件へ接続する。画面内の仮定変更・再計算、新しい分析、外部保存・更新、実際の摂取・身体Trialは別の操作として扱う。
 
+### 0.3 一口から分かる「含有量の同量点」と大小関係の逆転
+
+Humanは、1缶との比較から「コーヒー一口ならガム1粒より少ない可能性」へ問いを広げた。これを**分量による含有量の大小関係の逆転**と呼ぶ。等しくなる境界は**含有量の同量点**。比較するのは製品の優劣や身体への効き目ではなく、選んだ量に含まれるCaffeineのmgである。着眼点は[Source02](../../ark-project/ark99/ark99-02/task-records.json) `visualize-s02`、今回の受け渡しに使う証拠は[revision 6固定版](https://github.com/yusukefujiijp/ai-project/blob/5b6eab4013e9a49a39e859ff8c3b57a54514e90a/ark-project/ark99/ark99-02/task-records.json)の `visualize-t04 / visualize-t05`。
+
+ガム粒数を `n`、コーヒーの表示濃度を `C mg/100g`、選んだコーヒーの総質量を `M g` とする。表示値に基づく計算は以下で、コーヒー側の「約」を引き継ぐ。
+
+- ガムの総含有量：`G = 12 × n mg`
+- コーヒーの総含有量：`K = C × M / 100 mg`
+- 同量点：`M* = 1200 × n / C g`（`C > 0`）
+- `M < M*`ならコーヒーの方が少なく、`M = M*`なら計算上同量、`M > M*`ならコーヒーの方が多い。
+
+ガム1粒を基準に、第0.2節の確認済み製品値から計算する例：
+
+| コーヒーの比較条件 | 10gの含有量 | ガム1粒と同量になる総質量 |
+|---|---|---|
+| ボス 無糖ブラック：100gあたり約40mg | 約4mg | 約30g |
+| ボス 贅沢微糖／シルキーブラック：100gあたり約50mg | 約5mg | 約24g |
+
+**「一口」は固定単位ではない。** 一口を10gと置くのは表示上の仮定で、本人の一口の実測・一般的な標準値・摂取推奨量ではない。表示がg基準なので、密度の根拠なしに10mL等へ置き換えない。
+
+毎口が同じ質量 `s g` という仮定で `k口`を比べるなら、`M = s × k`、同量に達する口数は `k* = M* / s`。無糖ブラックでは、10gずつなら3口、15gずつなら2口で計算上12mgとなり、**一口の仮定を変えても同量になる総質量30gは変わらない**。口数が整数に一致しない時もある。50mg/100gの製品で10gずつなら同量点は2.4口であり、2口約10mgと3口約15mgの間にある。実際に毎口の量が違えば、それぞれの質量の合計で計算する。
+
+Source02では、総量を棒で比較する画面と、一口量・口数の累積から同量点を探る画面を作成・提示した。操作内容と限定検証28／33ケースは経験原本の `extensions.caffeine_visualizations` と上記Sourcesに残す。仮定の操作・計算確認、HumanのiOS実機での読みやすさ、実際の摂取・吸収・体感・行動・睡眠への影響は別の確認である。同量点を「同じ効果」「就寝前に適切な量」と読み替えない。
+
 ## 1. この場所の目的
 
 **コーヒー・カフェインガム等を、何のために、どの場面・条件で使うかという判断を、経験とFeedbackから長く育てる。**
@@ -97,7 +121,7 @@ Humanが「帰宅した」「Caffeineの使い所を見直したい」など自�
 
 このフォルダに**テーマとしての知識と案内を集約**する。経験の原文は既存の担当原本に保ち、同じ出来事の複製を第二の経験台帳にしない。原本、場面別の整理、Portalの同一経験への参照を、独立した複数の効果実証として数えない。
 
-この文書の作成はThread移行を意味しない。Ark99:02の対話はその場で続け、別Threadが必要になった時は[Ark99の現行指示](../../ark-project/ark99/INSTRUCTIONS.md)から接続を判断する。
+本フォルダはThreadを越えて使うテーマ原本であり、文書の作成・更新自体をThread移行と扱わない。対話の移行先と権限は、現在のHuman指定と[Ark99の現行指示](../../ark-project/ark99/INSTRUCTIONS.md)、明示されたHandoffから解決する。
 
 ## 4. 判断を育てる軸
 
@@ -137,4 +161,6 @@ HumanのMeaning・Correction・STOP・Final Seal、Truth・Body・Sleep・Food�
 
 - v003（2026-10-13）：Humanの補足に基づき、含有量・少なさ・缶コーヒー等との比較を第0.2節へ追加。一次資料の単位と容器当たりの計算を分け、少量単位の解釈と実生活の適否を区別した。
 
-EOF::LIFESTYLE_CAFFEINE_README::v003
+- v004（2026-10-14）：承認された02→03継続準備として、第0.3節へ一口の仮定・総量・同量点・大小関係の逆転を追加。メーカー表示の確認日は2026-10-13のまま、計算と身体効果を分け、表示の検証はSource経験原本へ接続した。
+
+EOF::LIFESTYLE_CAFFEINE_README::v004
