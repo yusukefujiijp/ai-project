@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.31.1
+version: v0.31.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-14
-updated_reason: chocoZAPの移設と配布入口の整合。v0.31.0のPodcast Theme Mode・SNS投稿入口統一・Visualize Patchを保持
+updated_reason: §3.12でVisualize Patchの初版直後の未取得と後続の取得成功を時点別に区別。v0.31.1のchocoZAP移設・配布入口と他Skillの記述を保持
 ---
 # Ark Shared Skills Hub
 
@@ -448,7 +448,7 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 元会話・期待回答を渡さない二つの独立AI文脈で、能力不足・取得失敗・配色指定・計画限定の読解二応答と、別題材の対話型可視化を確認しました。後者は明暗・狭幅・交点前後を含む40条件、キーボード・タッチ、実効色をブラウザで確認し、重要文字の最小コントラストは17.08:1でした。iOS/Safari実機、実会話内表示、他社AI、通常速度のアニメーション、ブラウザからのCDN直接読込は未確認です。文字色の過去の模擬原因を実際のiOS原因と断定しません。
 
-共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。保存後、この会話のSkill一覧では新名称をまだ取得できていないため、現時点では上記の共有本文を読んで接続できます。自然な自動選択・恒久記憶・全AI互換性・実生活の効果は未確認です。
+共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。初版保存直後は、この会話のSkill一覧から新名称をまだ取得できず、共有本文から接続しました。その後のSource02では登録済みSkillを取得でき、2026-10-14の移行準備でもCurrent共有本文との完全一致を再確認しています。前の未取得を現在の機能不在へ読み替えません。後続のCaffeine可視化二作品と28／33ケースの確認、登録済みSkill取得の根拠は[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-t04`–`visualize-t06` に分けて保存しました。自然な自動選択・恒久記憶・他社AIでの実利用・iOS実機での修正成功・生活上の効果は未確認です。
 
 ## 4. Source and distribution
 
