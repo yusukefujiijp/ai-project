@@ -1,0 +1,318 @@
+{
+  "document_id": "ARK99_03_STATE",
+  "format": "ark99-thread-state",
+  "format_version": "v001",
+  "format_note": "今回のArk99:03の可変状態。新しい全Ark共通Schemaではない。共有移行契約とlocal Handoffの責務を置換しない。",
+  "canonical_path": "ark-project/ark99/ark99-03/state.json",
+  "revision": 1,
+  "created": "2026-10-14",
+  "updated": "2026-10-14",
+  "repository": "yusukefujiijp/ai-project",
+  "canonical_branch": "main",
+  "thread_id": "Ark99:03",
+  "thread_title": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\"",
+  "publication_id": "ark99-02-to-03-caffeine-20261014",
+  "role": "Caffeine continuation in the existing Ark99:03 field",
+  "current_handoff": {
+    "path": "ark-project/ark99/ark99-03/handoff.md",
+    "document_id": "ARK99_02_TO_03_CAFFEINE_HANDOFF",
+    "version": "v001-human-authorized",
+    "title_match": "README.thread_title, handoff.target_title and this thread_title must agree; later explicit Human correction takes precedence"
+  },
+  "identity": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "ai_role": "Keli",
+    "human_authority": [
+      "Meaning",
+      "Correction",
+      "STOP",
+      "Final Seal"
+    ],
+    "guards": [
+      "Truth",
+      "Body",
+      "Sleep",
+      "Food",
+      "Shabbat",
+      "Safety",
+      "Medical",
+      "Others",
+      "Law",
+      "Responsibility"
+    ]
+  },
+  "current_position": {
+    "status": "source_prepared_awaiting_target_reception",
+    "mission": "Caffeineの使い所と選ぶ量の理解を、Ark99:02の成果・Humanの重要なCorrection・保留を失わず継続する。",
+    "transition_kind": "THREAD_CONTINUE",
+    "preparation_origin": "Ark99:00",
+    "continuation_source": "Ark99:02",
+    "exception": "Human指定による02→既存03だけの局所例外。通常のArk99二大ルール・00起点・Main/Support所有は改訂しない。",
+    "source_record": "ark-project/ark99/ark99-02/task-records.json",
+    "source_record_revision_at_preparation": 6,
+    "source_record_snapshot": "https://github.com/yusukefujiijp/ai-project/blob/5b6eab4013e9a49a39e859ff8c3b57a54514e90a/ark-project/ark99/ark99-02/task-records.json",
+    "source_refs": [
+      "transition-s01",
+      "transition-a01",
+      "transition-s02"
+    ]
+  },
+  "authority": {
+    "source_preparation": {
+      "status": "human_authorized",
+      "at": "2026-10-14T01:20:54+09:00",
+      "scope": "直前の計画に基づくSource記録・Caffeine原本・Skill入口の限定更新、03 README/Handoff/State作成、GitHub再取得確認、Titleと起動Queryの提供。"
+    },
+    "receiving_scope": "Target自身の必要読解・再構成・現在のCaffeine入力への応答。既存Goを新しい外部変更や生活行動へ転用しない。",
+    "retained_hold": {
+      "subject": "就寝前・昼寝前の歯磨きへのCaffeine利用案",
+      "status": "not_implemented_by_this_handoff",
+      "source_refs": [
+        "caffeine-s10",
+        "caffeine-s11"
+      ],
+      "meaning": "希望・本人報告・検討案は継承する。保存・製品確認・比較・可視化の承認は実装解除ではない。"
+    },
+    "exclusions": [
+      "外部通信",
+      "無関係なGitHub変更や設定反映",
+      "Reset",
+      "過去Taskの自動再開",
+      "摂取・身体Trial",
+      "新しいTeshuvahの補完",
+      "Main/Support移管"
+    ],
+    "amendment": "Current Humanの明確な後続指示と承認をそのScopeで用いる。STOPは継続に優先。"
+  },
+  "fruit": [
+    {
+      "id": "caffeine-product-and-amount",
+      "status": "confirmed_source_and_calculation",
+      "owner": "lifestyle/caffeine/README.md",
+      "meaning": "既定ガムと1粒公表量、缶全量から選択分量・一口・同量点へ広がった比較を復元できる。数値の現行値は担当原本から読む。"
+    },
+    {
+      "id": "home-sorting-model-cases",
+      "status": "confirmed_human_discoveries",
+      "owner": "lifestyle/caffeine/use-contexts.md",
+      "source_refs": [
+        "caffeine-s02",
+        "caffeine-s03"
+      ],
+      "meaning": "洗濯物と買い物袋の帰宅後即仕分けという二場面。実施や効果の補完はしない。"
+    },
+    {
+      "id": "recall-route",
+      "status": "source_saved_route",
+      "owner": "ark-recall-portal/items.json",
+      "item_ids": [
+        "home-laundry-caffeine-use",
+        "home-shopping-caffeine-use"
+      ],
+      "scene_id": "return-home-sorting",
+      "meaning": "必要場面で過去の発見へ戻る既存入口。自動通知・自動摂取・生活効果の確認ではない。"
+    },
+    {
+      "id": "visualize-patch",
+      "status": "shared_source_and_native_read_confirmed_in_source02",
+      "owner": "skills/visualize-patch/SKILL.md",
+      "source_refs": [
+        "visualize-t06"
+      ],
+      "meaning": "共通方針・環境判断・重大障害への局所補正。Source02では共有本文と登録版の取得・一致を確認済み。Targetでの能力は別に解決する。"
+    },
+    {
+      "id": "caffeine-interactive-views",
+      "status": "source_artifacts_and_limited_tests_confirmed",
+      "owner": "ark-project/ark99/ark99-02/task-records.json",
+      "source_refs": [
+        "visualize-t04",
+        "visualize-t05"
+      ],
+      "meaning": "二つの可視化と既存28／33ケースのpassを再確認。詳細はextensions.caffeine_visualizations。新しい作成要求なしに再生成しない。"
+    }
+  ],
+  "material_corrections": [
+    {
+      "source_refs": [
+        "caffeine-s08",
+        "caffeine-s09"
+      ],
+      "meaning": "既定製品と含有量の説明を何度もHumanへ求めず、その量の意味と比較の目的を継承する。"
+    },
+    {
+      "source_refs": [
+        "visualize-s01"
+      ],
+      "meaning": "白背景のタイトルだけでなく現在値・選択状態・結果も濃く読めること。親の色だけでなく実際の要素を確かめる。"
+    },
+    {
+      "source_refs": [
+        "visualize-s02",
+        "visualize-s03",
+        "visualize-s04",
+        "visualize-s07"
+      ],
+      "meaning": "創発性を保ち、短い入口と十分な品質を両立する。共通指針と重大不具合補正を区別する。"
+    },
+    {
+      "source_refs": [
+        "visualize-s05",
+        "visualize-s06"
+      ],
+      "meaning": "共有本文の読解・登録・実行・表示を分け、環境差へ柔軟に対応する。"
+    },
+    {
+      "source_refs": [
+        "transition-s01"
+      ],
+      "meaning": "今回は既存03で同じCaffeineを継続する。新規一件や無関係な別件へ戻さない。"
+    }
+  ],
+  "held_branches": [
+    {
+      "id": "bedtime-toothbrushing",
+      "status": "held_for_human_selected_discussion",
+      "owner": "lifestyle/caffeine/use-contexts.md#34-就寝前の歯磨き希望実際の詰まり保留を分ける",
+      "source_refs": [
+        "caffeine-s10",
+        "caffeine-s11"
+      ],
+      "resume_condition": "Humanがこの案の検討を再開した時。現在の目的・条件・必要なら一次資料から判断し、保存承認だけで生活運用へ変えない。"
+    },
+    {
+      "id": "visualize-ios-feedback",
+      "status": "unverified_not_a_boot_gate",
+      "owner": "skills/visualize-patch/SKILL.md",
+      "meaning": "実際のiOS表示原因・修正後の見え方、自然な利用の成功は未確認。届いたFeedbackで更新でき、毎回Humanへ検証票を要求しない。"
+    }
+  ],
+  "evidence_boundary": {
+    "confirmed": "Source原本・Humanの発言・計算・限定ブラウザ検証・登録済みSkillの本文取得を、その観測範囲で確認した。",
+    "assumptions": [
+      "一口10g等は比較画面での仮定",
+      "口数比較は各口が同じ質量というモデル",
+      "コーヒーmgはメーカーの約mg/100gと選択gからの計算"
+    ],
+    "unknown": [
+      "本人の一口の実量・口ごとの違い",
+      "当該洗濯・買い物場面での摂取と仕分け結果",
+      "吸収・体感・歯磨きや睡眠への影響",
+      "Targetの公式Visualize能力",
+      "iOS/Safari実機の修正成功",
+      "他社AIでの実利用・自然な自動発動"
+    ],
+    "historical_artifacts": "元のHTMLはSource側のローカル成果物。Targetから取得できると仮定しない。問い・操作・根拠はSource02原本へ保存済み。",
+    "tests": "既存試験結果の再読。今回の移行準備で可視化試験を再実行したとはしない。固定依存のローカル配信での検証とLive CDN直接配信を分ける。"
+  },
+  "completion": {
+    "source_prepared": {
+      "status": "confirmed",
+      "meaning": "受け手がSource会話に依存せず回復できる本文と参照を構築した。"
+    },
+    "remote_verified": {
+      "status": "predecessors_verified_state_reread_pending",
+      "meaning": "依存する六原本はGitHub mainから再取得し、意図した全文と一致した。この初回State本文は公開後の再取得を残す。",
+      "artifacts": [
+        {
+          "path": "ark-project/ark99/ark99-02/task-records.json",
+          "commit": "5b6eab4013e9a49a39e859ff8c3b57a54514e90a",
+          "blob": "519bc2f124b09f54f98660f90b7ec4dde5396a23"
+        },
+        {
+          "path": "lifestyle/caffeine/README.md",
+          "commit": "cdfc9daac9ae91bd5486d12b93a118dfbf2b1006",
+          "blob": "16bcdda25405eca7ebabe0bd854509c6dac22bf8"
+        },
+        {
+          "path": "lifestyle/caffeine/use-contexts.md",
+          "commit": "7aca469626152171451e109f941e983471529b7c",
+          "blob": "dbdd0dd8a9227f3a7c729ace8090e782764412a6"
+        },
+        {
+          "path": "skills/README.md",
+          "commit": "0072ea127645042977af78a2536f39f8d4deda2c",
+          "blob": "86867e602e6dc2c7f4b41ef5b2187bc9d7f27209"
+        },
+        {
+          "path": "ark-project/ark99/ark99-03/README.md",
+          "commit": "857ac3896d2692eb1dbda61f82216f22817914a1",
+          "blob": "2c89acef0597808dee2c7f4a1fc72f83c25cb4b4"
+        },
+        {
+          "path": "ark-project/ark99/ark99-03/handoff.md",
+          "commit": "30b6c3c067703b8e3f63b5897306a6991bfb6216",
+          "blob": "9c3f17886e496bc2b4fe22c4f99865c168cb07f9"
+        }
+      ],
+      "note": "これらは保存確認の観測値で、FutureのCurrent原本を永久固定するBindingではない。"
+    },
+    "target_reconstructed": {
+      "status": "unobserved",
+      "meaning": "Target自身の読解と再構成の応答をSourceはまだ観測していない。"
+    },
+    "human_last_mile": {
+      "existing_plain_03": "human_reported_prepared",
+      "startup_prompt_submission": "unobserved",
+      "title_ui_change": "unobserved",
+      "meaning": "必要な操作は既存03への起動Prompt貼付と、必要ならTitle設定。直接実行したと称さない。"
+    },
+    "requested_outcome": {
+      "preparation": "constructed; remote completion is tracked separately",
+      "continued_collaboration": "unobserved",
+      "life_effect": "unobserved"
+    }
+  },
+  "remaining_gates": [
+    {
+      "id": "target-own-reconstruction",
+      "status": "pending_target",
+      "action": "Handoffの必須原本・Identity・EOF・意味上の整合を、自分で確認し再構成する。Source読了を代用しない。"
+    },
+    {
+      "id": "human-submission",
+      "status": "unobserved",
+      "action": "Sourceの最終回答から対応する起動Promptを既存03へ貼る。AIが送達済みとはしない。"
+    }
+  ],
+  "first_legal_move": {
+    "sequence": [
+      "READ_REQUIRED_SOURCE",
+      "RECONSTRUCT_CURRENT_CONTEXT",
+      "RECEIVE_CURRENT_INPUT"
+    ],
+    "if_input_present": "新しいCaffeine相談やFeedbackが既にあれば再入力を求めず直接応答する。",
+    "if_boot_only": "Caffeine継続を受け取れる状態でHuman Reviewへ戻る。新しいTeshuvahや実装Taskを作らない。"
+  },
+  "human_interface": {
+    "first_normal_receiving_response": "冒頭に自分の確定Titleだけを一行の独立したtextコードブロックで再掲する。ラベル・説明・起動本文は外。",
+    "closing": "Living Review → Next stepを隣接させる。",
+    "failure_exception": "STOP・Failure・Exact Outputの専用条件を優先。コピー面不足だけで成立済みGateを再演しない。"
+  },
+  "provenance": {
+    "prior_00_preparation_snapshot": "https://github.com/yusukefujiijp/ai-project/blob/7a9371e94596de0c76c845136e117b47309a1b6e/ark-project/ark99/ark99-00/README.md",
+    "current_contract": "prompts/ai-next-thread-handoff.md",
+    "source_record_ownership": "経験原文は02に残す。03で新しく生じた経験は必要な権限の下で03へ。",
+    "snapshot_policy": "固定snapshotは履歴の証拠。Current所有資料はIdentity・役割・意味の互換性で照合する。自己SHAと相互live-blob循環を作らない。",
+    "source_full_read_receipts": [
+      {
+        "path": "prompts/ai-next-thread-handoff.md",
+        "blob": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+        "range": "Beginning IdentityからEOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorizedまで全文・Gapなし"
+      },
+      {
+        "path": "ark-project/ark99/README.md",
+        "blob": "1c3f62627ebb4a579c5c9fc563523190ab0c9b2c",
+        "range": "先頭metadataからARK99_README_EOF_v004まで全文・Gapなし"
+      },
+      {
+        "path": "ark-project/ark99/INSTRUCTIONS.md",
+        "blob": "5fe07ddb7737ec16cbe32ce125dbce43066f687e",
+        "range": "Ark99 READMEの後、先頭から本文実末尾まで全文・Gapなし"
+      }
+    ],
+    "receipt_boundary": "Source02の読解ReceiptはTarget自身の読了を代替しない。"
+  }
+}
