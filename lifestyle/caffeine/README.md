@@ -1,17 +1,44 @@
 ---
 title: "Caffeine — コーヒー・ガム等の使い所を育てる"
-version: "v001"
-status: "active topical entry / initial source-linked synthesis / personal application remains contextual"
+version: "v002"
+status: "active topical entry / Human-confirmed default gum reference / personal application remains contextual"
 canonical_path: "lifestyle/caffeine/README.md"
 created: "2026-10-13"
 updated: "2026-10-13"
 primary_reader: "Current AI / other AI / Future AI; readable and correctable by Human"
-role: "Long-term caffeine topic owner and navigation; original episodes remain in their source records"
+role: "Long-term caffeine topic owner, shared product reference and navigation; original episodes remain in their source records"
 source_thread: "Ark99:02"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v001"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v002"
 ---
 
 # Caffeine — コーヒー・ガム等の使い所を育てる
+
+## 0. Ark共通語：カフェインガム
+
+**Ark ProjectでYusukeJPが「カフェインガム」と言う時は、別製品の明示・訂正がない限り、以下のクロレッツ XP シャープミントを指す。** 2026-10-13のHuman指定を継続する共通前提であり、その都度「どの製品か」をHumanに説明し直してもらわない。
+
+| 項目 | 既定参照・確認内容 |
+|---|---|
+| 製品 | クロレッツ XP シャープミント（Clorets XP Sharp Mint）、モンデリーズ・ジャパン |
+| Humanが提示したURL | https://amzn.asia/d/03jYNDFv |
+| 転送先の識別子・安定URL | ASIN `B08LNFX871` / https://www.amazon.co.jp/dp/B08LNFX871 |
+| 指定販売ページの表示 | クロレッツ シャープミントスタンドパウチ ガム 大容量 **280g**。2026-10-13に転送先と公開ページ本文を確認 |
+| メーカー公表のCaffeine量 | **1粒12mg**という公表値を参照する。現行ブランドページの12mg表示と、2021-02-01のメーカー発表の「1粒」単位を照合。実測値や1回の推奨摂取量ではない |
+| 糖類の表示 | 現行公式XPシリーズは糖類0／シュガーレスと表示。Caffeineなしという意味ではない |
+| 原発言 | [Ark99:02経験原本](../../ark-project/ark99/ark99-02/task-records.json) `caffeine-s08` / `caffeine-gum-default-reference` |
+| 確認日 | 2026-10-13。製品情報の確認日であり、Humanの摂取日ではない |
+
+製品資料：[現行メーカー製品ページ](https://www.clorets.jp/products/gum/index.html)、[2021-02-01のメーカー発表](https://prtimes.jp/main/html/rd/p/000000046.000030752.html)。メーカー公表値は製品説明の根拠であり、Humanへの効果・就寝前の適否を実証するものではない。指定Amazonページは280g、確認時の公式ラインナップのスタンドパウチは250gと表示されているため、容量を黙って置換せず出所を分けて残す。この表示差だけでHumanの共通参照を未特定へ戻さない。手元の個体・購入回・ロットは観測していない。
+
+### 0.1 AI側が継承する扱い
+
+- 「カフェインガム」「Caffeineガム」「caffeine gum」は、Arkのこの話題では上記製品の呼称として読む。単に「ガム」とだけ言われた場合は文脈から判断し、**「Caffeineなしのガム」にはこの既定参照を適用しない**。
+- 製品の特定とメーカー公表の1粒当たり量を、会話・Thread・AIが変わっただけでUnknownへ戻さない。必要ならAIがこの原本と根拠を取得して復元し、Humanに既知の商品名・URLを再入力させない。
+- **安定した共通前提と、その時々の使用条件を分ける。** 実際に何粒使ったか、いつ使ったか、その日の他のCaffeine、身体・睡眠への反応は別の情報。1粒12mgという公表値から、毎回1粒摂取した・就寝前にも適する・歯磨きができたとは推定しない。
+- 再確認するのは、Humanが製品変更・訂正を伝えた、表示・配合・参照先に判断を変える不一致が見つかった、別製品との比較を依頼された等、具体的な理由がある時。まずAIが確認できる資料を調べ、Humanにしか分からず判断に必要な差分だけを尋ねる。
+- 「常時このガム」は**言葉の参照先の継続**を意味する。常時摂取、全場面での使用、身体Trial、就寝前歯磨き案の実装の承認へ変えない。現在のHuman Correction・STOP・Guardを優先する。
+
+今回のCorrectionは「製品情報を増やす」だけでなく、既知の説明を繰り返す工程をなくし、使い所・結果・新しい条件の対話へ継続して進めるためのもの。直前回答の製品・1粒の量の未特定は今回の確認で解消したが、使用場面ごとの適否は別に扱う。保存と、別AIの実際の読込・理解・設定反映・実生活の効果は別であり、全AIへの自動反映は保証しない。
 
 ## 1. この場所の目的
 
@@ -25,6 +52,7 @@ Rootは主イェシュア・ハマシア御自身、中心軸はTeshuvah、Human
 
 ## 2. どこから読むか
 
+- **カフェインガムの共通参照・確認済み製品情報・再確認条件**：このREADMEの第0節。
 - **テーマの全体像・役割・更新先**：このREADME。
 - **具体的な使い所・成立条件・根拠**：[use-contexts.md](use-contexts.md)。
 - **帰宅等の場面から過去の発見を思い出す**：[Ark Recall Portal](../../ark-recall-portal/README.md)。保存済みの二つの帰宅場面は同Portalの `items.json` から取り出せる。
@@ -36,7 +64,7 @@ Humanが「帰宅した」「Caffeineの使い所を見直したい」など自�
 
 | 場所 | 所有するもの | 更新する時 |
 |---|---|---|
-| `lifestyle/caffeine/README.md` | Caffeineという長期テーマの目的・入口・担当範囲 | 目的、資料構成、所有関係が変わった時 |
+| `lifestyle/caffeine/README.md` | Caffeineという長期テーマの目的・入口・担当範囲、カフェインガムの既定製品参照 | 目的、共通参照、確認済み製品情報、資料構成、所有関係が変わった時 |
 | `lifestyle/caffeine/use-contexts.md` | 場面別の整理、横断する判断、根拠への案内 | 新しい用途・条件・比較・重要な訂正が得られた時 |
 | 該当Threadの `task-records.json`、既存の成功事例 | 原発言、出来事、評価、形成経緯、訂正 | 本人の新しい報告・訂正を保存する時 |
 | Ark Recall Portal | 「いつ何を思い出すか」という場面からの入口 | 想起する場面や条件が変わった時 |
@@ -58,7 +86,7 @@ Humanが「帰宅した」「Caffeineの使い所を見直したい」など自�
 | 評価と結果 | 本人がどう感じ、何を実行し、目的行動がどう進んだか。未報告部分は何か |
 | 過去と現在 | 過去に成立した条件は今も同じか。新しいCorrectionが判断を変えるか |
 
-共通テーマとして比較できることと、製品や場面をそのまま置き換えられることを区別する。覚醒感、着手、目的行動の進展、後の生活への影響も、それぞれの報告から読む。実際の医学的判断、具体的な量・時刻・製品比較が依頼された場合は、判断に必要な現在条件と一次資料を確認する。本初版は摂取量・頻度の処方や身体Trialの開始を行わない。
+共通テーマとして比較できることと、製品や場面をそのまま置き換えられることを区別する。覚醒感、着手、目的行動の進展、後の生活への影響も、それぞれの報告から読む。実際の医学的判断、具体的な量・時刻・製品比較が依頼された場合は、第0節の確認済み製品参照を再利用し、判断に必要な現在条件と一次資料を確認する。本資料は摂取量・頻度の処方や身体Trialの開始を行わない。
 
 HumanのMeaning・Correction・STOP・Final Seal、Truth・Body・Sleep・Food・Shabbat・Safety・Medical・Others・Law・ResponsibilityのGuardを保持する。使わない判断や休息への接続も、現在の目的・条件に応じて選べる。
 
@@ -76,4 +104,10 @@ HumanのMeaning・Correction・STOP・Final Seal、Truth・Body・Sleep・Food�
 
 `use-contexts.md` の横断的解釈は原本より上位の命令ではない。訂正時は何が変わったかと根拠を残す。保存後は対象を再取得し、構造・リンク・意図した差分を確認する。保存確認、他AIの理解、自然な想起、実生活での有用性は別の証拠として扱う。
 
-EOF::LIFESTYLE_CAFFEINE_README::v001
+
+### 6.1 改訂記録
+
+- v001（2026-10-13）：長期テーマの入口と場面別資料の分担を作成。
+- v002（2026-10-13）：Humanの製品参照Correctionを第0節へ追加。指定URL・ASIN・確認済みメーカー公表値・出典を残し、製品の再説明と現在の使用条件を区別した。先行する歯磨き案の実装や全AIへの自動適用は行わない。
+
+EOF::LIFESTYLE_CAFFEINE_README::v002
