@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark99-02-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-10-11",
-  "updated": "2026-10-11",
+  "updated": "2026-10-13",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark99:02",
     "canonical_path": "ark-project/ark99/ark99-02/task-records.json",
     "reported_date": "2026-10-11",
     "timezone": "Asia/Tokyo",
-    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。",
+    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
     "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。",
     "source_access": "当該会話で直接提示されたHuman本文の連続抜粋と、先行するAIの整理を区別して収録する。公開会話URLとサービス側message IDは未提示。ここで採番するSource IDは記録内ID。ChatGPT長期メモリ・別Thread履歴を取り込まない。AI整理の編集要約は逐語引用ではない。",
     "extensions": {
-      "record_cutoff": "2026-10-11T13:17:15+09:00のsave依頼と、それを受けた今回の保存判断。"
+      "record_cutoff": "2026-10-13T14:17:53+09:00のCaffeine長期テーマ化とlifestyle/caffeineへの集約指定。"
     }
   },
   "coverage": {
@@ -30,7 +30,8 @@
       "乾燥後の洗濯物と買い物後の袋を帰宅後に即仕分けする二つのモデルケース",
       "本人のTeshuvahの言葉と発見の重要性",
       "二場面の関係、用途とタイミング、現在の条件を区別したAI整理",
-      "今回の高評価、save依頼、Ark Recall Portalへの接続提案"
+      "今回の高評価、save依頼、Ark Recall Portalへの接続提案",
+      "Caffeineを一生ものの重要テーマと位置づけ、lifestyle/caffeineへまとめる最新のHuman指定"
     ],
     "excludes": [
       "全会話の転記、Titleや移行Prompt整備の全文",
@@ -98,6 +99,24 @@
       "excerpt": "経験原本はArk99:02に一つ置き、Portalでは帰宅後の即仕分けという場面から二つのモデルケースを想起できるよう、原本参照付き項目を追加する。保存は意味と根拠を保ち、Portalは詳細やCaffeineという検索語を覚えていなくても場面から戻る入口を担う。現在の適用はHumanの入力と条件から判断する。",
       "excerpt_kind": "paraphrase",
       "note": "今回のAIによる保存先・想起導線の設計判断。実利用成功の報告ではない。"
+    },
+    {
+      "id": "caffeine-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-13T14:17:53+09:00 / Caffeineを長期テーマと位置づけた発言",
+      "excerpt": "この\"コーヒー・Caffeine\"系はある意味、一生ものの重要Themeであり、とても使いどころが難しいが重要なテクニックであると言う事がわかった！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "caffeine-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 同発言 / GitHub上のlifestyle/caffeineを提示し、空ファイルを作成したと報告した後の保存先指定",
+      "excerpt": "\"Caffeine(コーヒー・ガム等)\"系はこのフォルダ・ファイル構図構成にまとめよう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/caffeine",
+      "note": "Humanが指定したURL。今回のTool観測ではlifestyle/caffeineはフォルダで、そのREADME.mdが改行のみ。"
     }
   ],
   "nodes": [
@@ -255,6 +274,35 @@
         ],
         "note": "HumanのPortal提案を受けた今回のAIによる実装判断。自然な呼出しや実生活での有効性は保存と別に確認する。"
       }
+    },
+    {
+      "id": "caffeine-long-term-theme",
+      "kind": "practice_statement",
+      "label": "一生ものの重要テーマ・使い所を見極める技術",
+      "description": "Humanはコーヒー・Caffeine系を、使いどころが難しいが重要なテクニックであり、ある意味一生ものの重要Themeだと位置づけた。これは本人の意味づけの確認であり、長期使用の医学的な適否・有効性の認定ではない。",
+      "scope": "2026-10-13のArk99:02での長期テーマ化",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s06"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-domain-home",
+      "kind": "decision",
+      "label": "lifestyle/caffeineへCaffeine系の知識をまとめる",
+      "description": "Humanはコーヒー・ガム等を含むCaffeine系をlifestyle/caffeineへまとめるよう指定した。具体的なファイル分担をHumanが指定したという意味ではない。",
+      "scope": "今回指定されたテーマ・保存先。全会話の自動保存、摂取や身体Trialの承認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s07"
+        ],
+        "note": "保存先と対象はHuman指定。README/use-contextsの二ファイル構成、既存原本参照という実装上の分担はAIの編集判断。"
+      }
     }
   ],
   "edges": [
@@ -365,6 +413,21 @@
         ],
         "note": "HumanはPortal活用を提案し、具体的な項目設計はAIが担当した。"
       }
+    },
+    {
+      "id": "long-term-theme-to-home",
+      "from": "caffeine-long-term-theme",
+      "to": "caffeine-domain-home",
+      "relation": "motivates",
+      "scope": "一生ものの重要テーマという位置づけを受け、本人が同発言でCaffeine系の集約先を指定した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s06",
+          "caffeine-s07"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -415,7 +478,20 @@
         "source_refs": [
           "caffeine-s04"
         ]
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-13",
+        "reason": "Humanによる長期テーマ化とlifestyle/caffeineへの集約指定を追記。初版のSources/Nodes/Edges/Unknownを保持し、テーマの入口への参照を追加。",
+        "source_refs": [
+          "caffeine-s06",
+          "caffeine-s07"
+        ]
       }
-    ]
+    ],
+    "domain_entry": {
+      "path": "lifestyle/caffeine/README.md",
+      "role": "Caffeineの長期テーマの入口・横断的整理。本人の原発言・出来事の原本は本Task Records等が保持する。"
+    }
   }
 }
