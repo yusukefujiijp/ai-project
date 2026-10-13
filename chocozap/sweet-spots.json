@@ -2749,6 +2749,153 @@
           "context": "計画提示後の本人メッセージ冒頭を原文のまま抜粋。今回のSweet Spot更新、開始前メモ、Triangle解釈、関連原本と既存日次案内の接続を実行する承認。過去のPlan-only指定を今回の範囲で解除した経緯を保持し、別案件・別送信先への包括承認として流用しない。"
         }
       }
+    },
+    {
+      "id": "cz-record-0018",
+      "reporter": "YusukeJP",
+      "created_at": "2026-10-13T07:37:49.505Z",
+      "recorded_by": "AI assistant",
+      "observed_date": null,
+      "reported_date": "2026-10-13",
+      "reference_scope": "historical",
+      "date_basis": "本人の報告日時2026-10-13T16:33:04+09:00と添付画像の2026年10月・10/13の朝の入退館を対応づける。画像には複数日の履歴があるため記録全体のobserved_dateはnullとし、各visit_dateを保持する。ステータスバーの16:30を入館・運動・本人発言の時刻にしない。",
+      "spots": [],
+      "visits": [
+        {
+          "id": "V001",
+          "session_id": "cz-session-20261013-0907",
+          "visit_date": "2026-10-13",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-13T09:07+09:00",
+          "exited_at": "2026-10-13T10:04+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row",
+          "activity_source": "S02",
+          "activity_summary": {
+            "scope": "routine_as_reported",
+            "machines": null,
+            "execution_order": null,
+            "completion": "finished_as_reported",
+            "reported_duration_minutes": 60,
+            "duration_kind": "user_report",
+            "duration_scope": "一連の流れ(routine)。開始・終了の範囲、移動・準備の包含は未確認。",
+            "morning_visit": "user_report",
+            "user_evaluation": "思った以上に良かった。とても良い兆候であり計算しやすい。",
+            "workday": null
+          }
+        },
+        {
+          "id": "V002",
+          "session_id": "cz-session-20261012-1829",
+          "visit_date": "2026-10-12",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-12T18:29+09:00",
+          "exited_at": "2026-10-12T19:48+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V003",
+          "session_id": "cz-session-20261011-0613",
+          "visit_date": "2026-10-11",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-11T06:13+09:00",
+          "exited_at": "2026-10-11T06:42+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V004",
+          "session_id": "cz-session-20261009-1853",
+          "visit_date": "2026-10-09",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-09T18:53+09:00",
+          "exited_at": "2026-10-09T21:45+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V005",
+          "session_id": "cz-session-20261008-1844",
+          "visit_date": "2026-10-08",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-08T18:44+09:00",
+          "exited_at": "2026-10-08T21:15+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V006",
+          "session_id": "cz-session-20261007-1928",
+          "visit_date": "2026-10-07",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-07T19:28+09:00",
+          "exited_at": "2026-10-07T21:36+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        },
+        {
+          "id": "V007",
+          "session_id": "cz-session-20261004-2134",
+          "visit_date": "2026-10-04",
+          "location": "chocoZAP 仙台河原町",
+          "entered_at": "2026-10-04T21:34+09:00",
+          "exited_at": "2026-10-04T23:05+09:00",
+          "status": "exited",
+          "as_of": "2026-10-13T16:33:04+09:00",
+          "source": "S01",
+          "as_of_source": "S02",
+          "exit_date_basis": "same_day_from_row"
+        }
+      ],
+      "feedback": [
+        {
+          "source": "S02"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "kind": "image_transcription",
+          "text": "16:30\n来館履歴\n設備利用履歴\n2026年10月\n入館回数 8回\nchocoZAP 仙台河原町\n10/13(火) 入館9:07 退館10:04\nchocoZAP 仙台河原町\n10/12(月) 入館18:29 退館19:48\nchocoZAP 仙台河原町\n10/11(日) 入館6:13 退館6:42\nchocoZAP 仙台河原町\n10/9(金) 入館18:53 退館21:45\nchocoZAP 仙台河原町\n10/8(木) 入館18:44 退館21:15\nchocoZAP 仙台河原町\n10/7(水) 入館19:28 退館21:36\nchocoZAP 仙台河原町\n10/4(日) 入館21:34 退館23:05",
+          "reported_date": "2026-10-13",
+          "reported_at": "2026-10-13T16:33:04+09:00",
+          "attachment": {
+            "filename": "IMG_1203.png",
+            "sha256": "fc65b9280b090c9911968433cf3165e701866efd218d5169250f49f76a272e6c",
+            "file_id": "file_000000003c8481f5a12a5f7218d31d41"
+          },
+          "displayed_month": "2026-10",
+          "displayed_visit_count": 8,
+          "displayed_clock": "16:30",
+          "history_month": "2026-10",
+          "readable_row_count": 7,
+          "context": "AIが添付画像を視認して来館履歴を編集転記。空白を正規化し、電池・回線表示は省略。月合計8回と、日時まで読める7行を区別する。画像最下部には次の店名の一部が見えるが、8行目の日付・時刻は画像内で読めず、過去記録の10/1を今回の画像転記へ補わない。不完全な表示範囲なので、この報告へ全8行照合済みのvisit_coverageを追加しない。10/12と10/13は新規入館、他5行は既存session_idに照合して件数を二重加算しない。10/13の入退館時刻差は57分、10/12は79分。館内滞在であり、純粋な運動時間や移動込みの全拘束時間ではない。"
+        },
+        "S02": {
+          "text": "朝にchocoZAPを実験した！\n思った以上に、良かったし\n一連の流れ(routine)を通してちょうど1時間で終了した！\nとても良い兆候であり計算しやすいです！\n\nどう思いますか？ここまでのイメージや意味合いを深く理解できますか？ 私(YusukeJP)の意図を最大限に汲み取ってGraph Modeを活用しつつ整理整頓してください！私(YusukeJP)の意図を完璧に言語化し構造化して下さい！(Graph Mode最大活用を！)",
+          "reported_date": "2026-10-13",
+          "reported_at": "2026-10-13T16:33:04+09:00",
+          "context": "本人のメッセージ本文を保存。添付画像の直近10/13の朝利用へ対応づけ、『ちょうど1時間』を本人が報告したroutine所要時間60分、『思った以上に良かった』『計算しやすい』を本人の評価として保持する。画像の館内滞在57分と本人のroutine60分は異なる根拠であり、3分の差を移動・準備の所要時間と推定しない。routineの内容・開始終了境界、当日の仕事有無、種目・周回・Triangle全段階の完了は未報告。『計算しやすい』を予定に組み込む際の見通しの価値と読むのはAI解釈であり、今後必ず60分で終わる保証や毎朝の義務にはしない。新しいSweet Spot申告はなく既存基準を引き継ぐ。今回の朝利用を『初めて』とせず、10/11の先行する朝利用と区別して接続する。"
+        }
+      }
     }
   ]
 }
