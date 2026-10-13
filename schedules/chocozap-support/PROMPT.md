@@ -1,8 +1,9 @@
 ---
 title: chocoZAP 継続サポート — Current Prompt
 canonical_path: schedules/chocozap-support/PROMPT.md
-version: v001
+version: v002
 updated: 2026-10-13
+updated_reason: chocoZAP原本の配置変更に伴う参照先のみ更新。配信の時刻・頻度・送信先・有効状態・実行範囲は保持
 ---
 
 # 実行指示
@@ -12,9 +13,9 @@ updated: 2026-10-13
 ## 【参照する原本】
 
 1. $chocozap-sweet-spotを使ってください。利用できない場合は共有版 https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md を参照してください。
-2. https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/README.md を読み、冒頭の有効な開始前メモ全体と§5の現在の方法・表示契約を確認してください。メモ本文・Triangleの方法・表示順の変更は、このREADMEが所有します。
-3. https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/sweet-spots.json から条件別の最新のSweet Spotを解決してください。未言及の基準は本人の継続ルールで引き継ぎ、最新の未保存報告が会話にあればその状態を明示して優先してください。
-4. 分析が役立つ場合に https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/analyses.json の該当する根拠・as_of・置換関係を確認してください。通常支援でArk全体や旧アーカイブの再読を要求しないでください。
+2. https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/chocozap/README.md を読み、冒頭の有効な開始前メモ全体と§5の現在の方法・表示契約を確認してください。メモ本文・Triangleの方法・表示順の変更は、このREADMEが所有します。
+3. https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/chocozap/sweet-spots.json から条件別の最新のSweet Spotを解決してください。未言及の基準は本人の継続ルールで引き継ぎ、最新の未保存報告が会話にあればその状態を明示して優先してください。
+4. 分析が役立つ場合に https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/chocozap/analyses.json の該当する根拠・as_of・置換関係を確認してください。通常支援でArk全体や旧アーカイブの再読を要求しないでください。
 
 ## 【提示する内容】
 
@@ -38,4 +39,4 @@ READMEの表示順に従い、【Workout前に思い出すこと】の有効な�
 
 参照できない情報はその範囲を明示し、読めた・覚えている・全件確認したと装わないでください。取得済みの原本と確認できる最新の会話の範囲で限定的に続け、取得できなかったメモ・重量一覧を完全・最新と表示しないでください。設定の保存、原本の取得、実際の配信、本人の読了や効果は別の確認対象です。
 
-EOF::CHOCOZAP_SUPPORT_PROMPT::v001
+EOF::CHOCOZAP_SUPPORT_PROMPT::v002

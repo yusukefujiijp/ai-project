@@ -1,9 +1,9 @@
 {
   "version": "v001",
-  "revision": 2,
+  "revision": 3,
   "role": "Ark00-01:03 thread-local current state and evidence",
   "canonical_path": "ark-project/ark00-01/ark00-01-03/state.json",
-  "updated": "2026-10-08",
+  "updated": "2026-10-13",
   "timezone": "Asia/Tokyo",
   "source": {
     "id": "Ark00-01:02",
@@ -21,7 +21,7 @@
   "mission": "足底アーチをどう形作り保持・調整するかを中心に、骨の位置・把持・基準側と操作側・相対運動・観察の理解を現在の問いから深める。",
   "current_position": {
     "phase": "source_prepared_and_remote_verified",
-    "source_learning_record": "chocozap/artifacts/foot-ankle-mobilization-learning.md",
+    "source_learning_record": "lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md",
     "handoff": "ark-project/ark00-01/ark00-01-03/handoff.md",
     "readme": "ark-project/ark00-01/ark00-01-03/README.md",
     "latest_anatomy_topic": "距骨と脛骨・腓骨の関節関係、それぞれへのアプローチ、踵骨との関係",

@@ -1,9 +1,9 @@
 ---
 title: chocoZAP Sweet Spot — 記録・推移・分析
-version: v0.7.1
+version: v0.7.2
 updated: 2026-10-13
-updated_reason: 朝のroutineを1時間で終えた本人報告と画像の館内滞在57分を分け、予定を考える目安として前回の朝利用へ接続
-canonical_path: chocozap/README.md
+updated_reason: lifestyle/chocozapへの配置変更と現行参照の整合。記録・本人の方法・開始前メモ・朝のroutineの意味は保持
+canonical_path: lifestyle/chocozap/README.md
 status: active
 ---
 
@@ -26,10 +26,10 @@ Workout開始前に一通り目を通すための、未来の自分への一覧�
 | 本人の報告・重量・系列・来館・訂正 | [sweet-spots.json](sweet-spots.json) |
 | 根拠につながるAI分析・再検討条件 | [analyses.json](analyses.json) |
 | 検証・最新参照・入館／月別集計・重量／来館CSVの再生成 | [tools/sweet_spots.py](tools/sweet_spots.py) |
-| Sweet Spot・下降系列・切替を読む共通手順と会話支援 | [chocozap-sweet-spot](../skills/chocozap-sweet-spot/SKILL.md) |
+| Sweet Spot・下降系列・切替を読む共通手順と会話支援 | [chocozap-sweet-spot](../../skills/chocozap-sweet-spot/SKILL.md) |
 | 開始前に読む現在のメモ | 本書冒頭の【Workout前に思い出すこと】 |
 | 本人が採用する現在の運用とその出所 | 本書§5と、正本の本人報告 |
-| 既存の日次案内の実行指示 | [chocoZAP 継続サポート](../schedules/chocozap-support/README.md) |
+| 既存の日次案内の実行指示 | [chocoZAP 継続サポート](../../schedules/chocozap-support/README.md) |
 | 学習記録と実用チェックリスト | [artifacts/README.md](artifacts/README.md) |
 
 JSONが正本。表・グラフ・最新一覧は必要時に生成し、別の手入力台帳を増やさない。AI分析を本人の観察へ逆流させない。
@@ -158,16 +158,16 @@ Graphは項目数を増やすためではなく、数値・出所・解釈・再
 Python 3.9以降の標準ライブラリのみ。以下はリポジトリのルートから実行する。JSONを直接読めるAIにはスクリプト実行を必須にしない。
 
 ```bash
-python3 chocozap/tools/sweet_spots.py validate
-python3 chocozap/tools/sweet_spots.py latest
-python3 chocozap/tools/sweet_spots.py visits --month 2026-10
-python3 chocozap/tools/sweet_spots.py visits --group-by month
-python3 chocozap/tools/sweet_spots.py visits --format csv --output /tmp/chocozap-entries.csv
-python3 chocozap/tools/sweet_spots.py visits --group-by month --format csv --output /tmp/chocozap-monthly.csv
-python3 chocozap/tools/sweet_spots.py history --machine チェストプレス
-python3 chocozap/tools/sweet_spots.py csv --date-basis reported --output /tmp/chocozap-reported.csv
-python3 chocozap/tools/sweet_spots.py csv --date-basis observed --dated-only --output /tmp/chocozap-observed.csv
-python3 chocozap/tools/sweet_spots.py self-test
+python3 lifestyle/chocozap/tools/sweet_spots.py validate
+python3 lifestyle/chocozap/tools/sweet_spots.py latest
+python3 lifestyle/chocozap/tools/sweet_spots.py visits --month 2026-10
+python3 lifestyle/chocozap/tools/sweet_spots.py visits --group-by month
+python3 lifestyle/chocozap/tools/sweet_spots.py visits --format csv --output /tmp/chocozap-entries.csv
+python3 lifestyle/chocozap/tools/sweet_spots.py visits --group-by month --format csv --output /tmp/chocozap-monthly.csv
+python3 lifestyle/chocozap/tools/sweet_spots.py history --machine チェストプレス
+python3 lifestyle/chocozap/tools/sweet_spots.py csv --date-basis reported --output /tmp/chocozap-reported.csv
+python3 lifestyle/chocozap/tools/sweet_spots.py csv --date-basis observed --dated-only --output /tmp/chocozap-observed.csv
+python3 lifestyle/chocozap/tools/sweet_spots.py self-test
 ```
 
 `latest` はcurrent指定の報告を条件別に取り出す。報告日があればその日、なければ確認済み実施日を「参照順序」の基準にする。これは最新の**報告上の基準**を探す規則であり、実施日の混合グラフを作る規則ではない。日付が同じ候補を配列順で決着させず、日付不明の候補も捨てず、曖昧さを返す。後日訂正された古い観察を保存時刻で最新にしない。
@@ -185,7 +185,7 @@ CSVは再生成可能な中間形式。無指定なら標準出力、`--output` 
 分析作成時の指紋確認：
 
 ```bash
-python3 chocozap/tools/sweet_spots.py fingerprint --ref cz-visit-0007/O001 --ref cz-visit-0002/O004
+python3 lifestyle/chocozap/tools/sweet_spots.py fingerprint --ref cz-visit-0007/O001 --ref cz-visit-0002/O004
 ```
 
 検証はJSON形式、ID、数値、日付、出所、訂正、系列間の切替、同条件のprevious_ref、分析の参照と指紋を確認する。グラフでは点の意味・日付軸・条件を明示し、欠測を線の実測として見せない。現在のデータ量では回帰・予測・因果の断定を優先しない。
@@ -287,13 +287,13 @@ Sweet Spot・Triangle・開始前メモ・所要時間の経験は、重量・�
 
 ## 6. 履歴と配置
 
-2026-09-24に旧日別Markdown方式からJSONへ移行した。旧資料・保存価値・本人の「予期せぬ成功」という評価・復帰条件は [ARC-005](../control-center/github/ARCHIVE.md#arc-005) が所有する。旧資料は参照用で、現行の集計・追記先ではない。
+2026-09-24に旧日別Markdown方式からJSONへ移行した。旧資料・保存価値・本人の「予期せぬ成功」という評価・復帰条件は [ARC-005](../../control-center/github/ARCHIVE.md#arc-005) が所有する。旧資料は参照用で、現行の集計・追記先ではない。
 
 2026-10-08にv2へ移行。元の24観察（単一申告16件と確認済み系列起点8件）、全ID・出所原文・訂正・系列を保持した。これは来館24回の意味ではない。報告日・実施日・保存時刻を分離し、分析と再生成用の補助スクリプトを追加した。変更の記録はGit履歴から確認できる。
 
 日別Markdown、手編集CSV、常設の静的グラフ、バックアップ用コピーを定期生成しない。容量・読書き時間・競合・比較範囲に問題が現れたら分割を検討する。将来の自動週次分析や他の運用への応用は候補であり、今ある自動実行機能ではない。
 
-足部・足関節の学習記録は2026-10-06に追加し、10-08に現行パスへ参照を整えた。本移行では学習記録と実用チェックリストの内容・パスを変えていない。
+足部・足関節の学習記録は2026-10-06に追加し、10-08に現行パスへ参照を整えた。2026-10-08の移行では学習記録と実用チェックリストの内容・パスを変えていない。
 
 2026-10-09、本人の『未言及は現行基準の継続』という方針と、分析グラフを『予期せぬ成功』と評価したFeedbackを反映。実測履歴を増やさず、差分入力・参照状態・能動的な分析提案の役割を明確にした。
 
@@ -311,4 +311,6 @@ Sweet Spot・Triangle・開始前メモ・所要時間の経験は、重量・�
 
 2026-10-13、朝のroutine60分という本人の報告と館内滞在57分を保存。画像の10/12・10/13の2入館を追加し、既存5行を照合した。今回の画像で読める7行と月表示8回を区別し、10/1は既存の出所に保持した。開始前メモとSweet Spotの現在基準は継続し、朝の利用経験と予定の見通しをCZ-A019・CZ-A020へ接続した。
 
-EOF::CHOCOZAP_RECORDS_GUIDE::v0.7.1
+2026-10-13、YusukeJPの実行承認に基づき、Root直下のchocozap/をlifestyle/chocozap/へ配置変更。Rootの横への広がりを抑えながら、chocoZAPを重要な独立テーマとして育て続けるための移設である。README・二つのJSON・artifacts・toolsを一まとまりで継承し、共通Skillはskills/、日次案内の指示原本はschedules/に保つ。記録ID・本人原文・出所・日付・訂正・未知の追加項目、開始前メモ・Triangle・朝のroutineの経験を保持し、新たな運動・再測定・分析の実績を追加しない。現行参照だけを新配置へ接続し、固定commitの証拠と過去の配置を示す履歴は保持する。lifestyle/README.mdの入口設計は別の検討側が所有する。GitHub保存、導入Skill、Project設定、登録済みTask、実配信、本人の使いやすさはそれぞれ確認する。
+
+EOF::CHOCOZAP_RECORDS_GUIDE::v0.7.2

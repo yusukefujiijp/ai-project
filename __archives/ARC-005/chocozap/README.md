@@ -2,14 +2,14 @@
 archive_status: frozen-reference
 archive_case: ARC-005
 archive_source_commit: "4efbf44eb31c22c660d9c75f4be1917e3d3b716f"
-archive_current_entry: https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/README.md
+archive_current_entry: https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/chocozap/README.md
 title: chocoZAP Records and Experiment Guide
 version: v0.1.1
 updated: 2026-09-24
 status: active / Human-authorized experimental operation
 ---
 
-> **ARC-005の保管資料／通常の追記・集計対象外。** [現行の入口](https://github.com/yusukefujiijp/ai-project/blob/main/chocozap/README.md)から現在の正本を確認する。本資料を読んだだけで旧運用を再開しない。
+> **ARC-005の保管資料／通常の追記・集計対象外。** [現行の入口](https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/chocozap/README.md)から現在の正本を確認する。本資料を読んだだけで旧運用を再開しない。
 > 本文・旧メタデータの `active`、保存指示、自己パス、相対リンクは当時の記述である。[注記追加前の原本](https://github.com/yusukefujiijp/ai-project/blob/4efbf44eb31c22c660d9c75f4be1917e3d3b716f/chocozap/README.md)から当時のリンクを辿れる。本文は原本を保持し、この保管注記だけを追加した。[判断理由・復帰条件](https://github.com/yusukefujiijp/ai-project/blob/main/control-center/ARCHIVE.md#arc-005)を参照する。
 
 # chocoZAP — Sweet Spotの記録と実験場

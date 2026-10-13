@@ -1,9 +1,10 @@
 ---
 title: chocoZAP 継続サポート
 canonical_path: schedules/chocozap-support/README.md
-version: v001
+version: v002
 created: 2026-10-13
 updated: 2026-10-13
+updated_reason: chocoZAP原本の配置変更に伴う参照先のみ更新。配信の時刻・頻度・送信先・有効状態・実行範囲は保持
 status: active
 ---
 
@@ -17,9 +18,9 @@ status: active
 | 定期時刻 | 毎日17:00、Asia/Tokyo |
 | 配信先 | 既存タスクに結びついたchocoZAPの会話 |
 | 実行指示の原本 | [PROMPT.md](PROMPT.md) |
-| 開始前メモ・現在の方法・表示契約 | [chocozap/README.md](../../chocozap/README.md) |
-| 重量・本人原文の正本 | [sweet-spots.json](../../chocozap/sweet-spots.json) |
-| 分析・再検討条件 | [analyses.json](../../chocozap/analyses.json) |
+| 開始前メモ・現在の方法・表示契約 | [lifestyle/chocozap/README.md](../../lifestyle/chocozap/README.md) |
+| 重量・本人原文の正本 | [sweet-spots.json](../../lifestyle/chocozap/sweet-spots.json) |
+| 分析・再検討条件 | [analyses.json](../../lifestyle/chocozap/analyses.json) |
 
 ## 【接続と同期】
 
@@ -35,4 +36,4 @@ Runtimeには、yusukefujiijp/ai-projectのmain / schedules/chocozap-support/PRO
 
 2026-10-13の本人承認を受け、既存タスクの指示をGitHubの原本へ接続する構成を導入。タスク設定の確認と、次の実配信・本人が思い出せた結果は分けて観測する。
 
-EOF::CHOCOZAP_SUPPORT_SCHEDULE::v001
+EOF::CHOCOZAP_SUPPORT_SCHEDULE::v002

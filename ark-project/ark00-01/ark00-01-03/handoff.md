@@ -43,7 +43,7 @@ Root・Human Authority・Guardは[README](README.md)と適用共通契約に従�
 1. [共通移行契約](../../../prompts/ai-next-thread-handoff.md)：現行版の先頭Identityから宣言されたExact EOFまで全文。観測版はv003-human-authorized。取得・表示が切れたら未読位置から続ける。
 2. [AGENTS.md](../../../AGENTS.md)、[Ark00-01 README](../README.md)、[INSTRUCTIONS.md](../INSTRUCTIONS.md)：現在の適用範囲、権限、Project指示を確認する。新しいContextで未読なら全文を読む。
 3. [このThreadのREADME](README.md)と[state.json](state.json)：全文。Stateは完全なJSONとして解析し、Source／Target、現在地、Evidence、権限と観測の区別を照合する。
-4. [足部学習記録](../../../chocozap/artifacts/foot-ankle-mobilization-learning.md)：§1–15を含め全文。観測時の学習本文はv001、今回の出所・所在更新後はv002。宣言版と末尾EOFの一致を確認する。§10は保存時に追加された説明であり、本人が試して成功した内容とは扱わない。
+4. [足部学習記録](../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)：§1–15を含め全文。観測時の学習本文はv001、今回の出所・所在更新後はv002。宣言版と末尾EOFの一致を確認する。§10は保存時に追加された説明であり、本人が試して成功した内容とは扱わない。
 5. Project指示が適用する三資料：[AI Living Graph Mode](../../../prompts/ai-living-graph-mode.md)、[AI One-Table Interface](../../../prompts/ai-one-table-interface.md)、[Long-Form Response Rhythm](../../../prompts/long-form-response-rhythm.md)。現在の添付版・指示と照合し、各資料の読解契約を満たす。Sourceでは添付三資料とGitHub原本のblob一致を確認済み。別AIの読了報告だけでTarget自身の読解済みとはしない。
 
 三資料に含まれる古い章・実験・承認は今回の仕事へ移植しない。方法・説明密度・図表は、現在のHuman入力と適用指示の優先関係に従う。新しい通常回答ではNode・Edgeを先頭にした一つの表がProject指示として適用されるが、厳密形式・STOP等の例外を保持する。
@@ -54,7 +54,7 @@ Root・Human Authority・Guardは[README](README.md)と適用共通契約に従�
 
 Currentの所有資料は上記の現行パスへ進む。観測SHAを将来の全更新を拒む永久Bindingにしない。本HandoffとREADMEのIdentity・版・EOF、StateのThread識別と役割、学習記録のEvidenceと重要訂正を照合する。宣言版や意味に不整合があれば、変更点と現行権限を確認し、必要な版移行を行う。古い資料で黙って補完しない。
 
-足部記録を更新する場合は[chocoZAPの案内](../../../chocozap/README.md)も読む。新しい医学的助言には必要な原資料をその都度確認する。章番号・Main／Supportの変更を扱う依頼が来た場合に[Ark Domain](../../README.md)へ進む。Dots／Workの通信運用は、この足部学習の現在の受入れ条件ではない。別途その協働が必要になったときに、現行所有資料を調べる。
+足部記録を更新する場合は[chocoZAPの案内](../../../lifestyle/chocozap/README.md)も読む。新しい医学的助言には必要な原資料をその都度確認する。章番号・Main／Supportの変更を扱う依頼が来た場合に[Ark Domain](../../README.md)へ進む。Dots／Workの通信運用は、この足部学習の現在の受入れ条件ではない。別途その協働が必要になったときに、現行所有資料を調べる。
 
 必須Sourceの不在、未読、Identity・EOF・Bindingの不一致が解消できない場合は、`FULL_READ_NOT_VERIFIED`として影響する受入れを停止する。欠けた資料と読取位置・期待値・最小の回復方法を示す。通常の身体情報のUnknownまで全解消するGateにはしない。
 
