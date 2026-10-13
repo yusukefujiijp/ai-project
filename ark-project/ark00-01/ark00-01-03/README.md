@@ -30,7 +30,7 @@ YusukeJPは、:02で価値ある発見が続き、なお学びたいことが多
 | State | → 次の協働を変える現在地 | 進捗、現在の問い、未確認、保留、準備と受入れの観測 |
 | 足部学習記録 | → 内容と根拠の原本 | 骨・関節の理解、本人報告、訂正、出典、未確認事項 |
 
-[Project README](../README.md)と[INSTRUCTIONS](../INSTRUCTIONS.md)がArk00-01全体の目的・協働指示を所有する。[足部学習記録](../../../chocozap/artifacts/foot-ankle-mobilization-learning.md)の医学的内容をこの三資料へ重複管理しない。
+[Project README](../README.md)と[INSTRUCTIONS](../INSTRUCTIONS.md)がArk00-01全体の目的・協働指示を所有する。[足部学習記録](../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)の医学的内容をこの三資料へ重複管理しない。
 
 ## 2. このThreadで続けること
 

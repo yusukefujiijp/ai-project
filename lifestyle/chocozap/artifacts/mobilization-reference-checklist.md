@@ -4,7 +4,8 @@ version: v001
 created: 2026-10-07
 updated: 2026-10-07
 timezone: Asia/Tokyo
-canonical_path: chocozap/artifacts/mobilization-reference-checklist.md
+canonical_path: lifestyle/chocozap/artifacts/mobilization-reference-checklist.md
+navigation_patch: "2026-10-14: lifestyle配下への移設に伴う自己パスのみ更新。実用本文・出典・v001の版契約を保持"
 document_role: practical-reference
 status: trial
 ---

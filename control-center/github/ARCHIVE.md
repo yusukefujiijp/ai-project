@@ -296,7 +296,9 @@ SourceとPublication Voiceの分離、未根拠情報を除く判断、公開可
 | `chocozap/records/2026/2026-09-24.md` | [注記付き保管版](../../__archives/ARC-005/chocozap/records/2026/2026-09-24.md)へ接続 | `79f0d020d90dbe624076da201c4faa8226974a2d` |
 | `chocozap/records/undated/cz-visit-0001.md` | [注記付き保管版](../../__archives/ARC-005/chocozap/records/undated/cz-visit-0001.md)へ接続 | `e27f1b6e545b4b5a6bdda5cdc8ff87825f338306` |
 
-[現行のREADME](../../chocozap/README.md)は案内を簡素化して同じ入口に残し、実データの正本を [sweet-spots.json](../../chocozap/sweet-spots.json) とした。旧日別ファイルとundatedの移動案内は元パスから撤去した。旧mainの二つのファイルURLは存続しない。過去版は上記基点の同じパスから参照できる。
+2026-09-24当時はREADMEの案内を簡素化して同じ入口に残し、実データの正本をsweet-spots.jsonとした。旧日別ファイルとundatedの移動案内は元パスから撤去した。旧mainの二つのファイルURLは存続しない。過去版は上記基点の同じパスから参照できる。
+
+現行の入口は [README](../../lifestyle/chocozap/README.md) と [sweet-spots.json](../../lifestyle/chocozap/sweet-spots.json)。2026-10-14の配置変更の理由は [現行READMEの履歴と配置](../../lifestyle/chocozap/README.md#6-履歴と配置) を参照する。上記のARC-005実施時の元パス・blob・検証結果は当時の記録として保持する。
 
 保管版にはfrontmatterの `archive_*` 項目と冒頭注記を追加した。注記を除いた原文は移行前の内容と一致する。保存版のblobは注記追加により原blobと異なる。日別記録の数値・引用・来歴、旧案内の設計と限定検証記録を保持した。旧相対リンクは当時の元パスを基準とするため、保存版の冒頭から固定commitの原本へ戻って辿る。
 

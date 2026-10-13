@@ -11,7 +11,7 @@ GitHub上の状態が今回の判断を変えるときに使う。これは資�
 | GitHub整理・構造改善 | `control-center/PLAN.md`、`control-center/ARCHIVE.md`、`control-center/changes/`の該当記録 | 案件の到達点・検証・残点。Ark全体の万能Task一覧ではない |
 | 生活との協働方針・開始支援 | `task-mode-system/README.md`、`task-mode-system/operation.md` | 方針・Correction。現在の身体状態や個別Taskの実行証明ではない |
 | 経験と成功 | 現行Threadが指す経験原本、`success-cases/README.md`から必要な一件 | 当時の報告・評価・条件を読む。保存日と実施日、例と普遍性を分ける |
-| chocoZAPの記録 | `chocozap/README.md`が指定する正本 | 前回・当日・訂正を実施日から解決する。数値だけで実施完了や効果を推定しない |
+| chocoZAPの記録 | `lifestyle/README.md`のchocoZAP入口から、領域READMEが指定する正本へ | 前回・当日・訂正を実施日から解決する。数値だけで実施完了や効果を推定しない |
 | Skillの共有・導入 | `skills/README.md`、対象Skill、利用環境の確認結果 | GitHub共有、利用環境への導入、他AIの理解を分ける。backup専用資料を共通の現用原本へ昇格させない |
 
 1. まず今回の範囲を決め、必要な入口から当該内容の担当資料へ進む。指定HandoffのBootを行う依頼なら専用契約を優先し、この表で順序やRequired Sourcesを置き換えない。

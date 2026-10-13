@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.31.0
+version: v0.31.1
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-13
-updated_reason: Podcast Theme Modeを既存Skillへ統合し、コピー可能な生成依頼・入口と確認段階を追加。先行するSNS投稿入口統一とVisualize Patchを保持
+updated: 2026-10-14
+updated_reason: chocoZAPの移設と配布入口の整合。v0.31.0のPodcast Theme Mode・SNS投稿入口統一・Visualize Patchを保持
 ---
 # Ark Shared Skills Hub
 
@@ -83,7 +83,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 | アイデア出し / generate-ideas | 分野を横断して案・着想・別の切り口を生み出し、選んだ案やFeedbackから発展させる | [SKILL.md](generate-ideas/SKILL.md) | 本文単体で基本支援。発想方法・案数・順序・形式は現在の依頼へ適応 | 形式・導入・共有本文一致、三つの独立文脈で六応答を確認。通常回答一件との限定比較を含む。§3.7参照 |
 | 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
-| chocoZAP Sweet Spot / chocozap-sweet-spot | 当日のSweet Spot・重量系列・本人が選んだ切替を読み、二周目・履歴・訂正へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
+| chocoZAP Sweet Spot / chocozap-sweet-spot | 当日のSweet Spot・重量系列・本人が選んだ切替を読み、二周目・履歴・訂正へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../lifestyle/chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
 
 ## 3. Mobile / explicit entry
 
@@ -142,7 +142,9 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 一周目で記録した、その日のSweet Spotを二周目へつなぐ意味を共有して、今回の入力を受け取ってください。
 ~~~
 
-当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
+当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
+
+2026-10-14の配置変更では、配布されるchocoZAP Skillと現在地SkillのchocoZAP参照を[生活領域の入口](../lifestyle/README.md)から解決する形にした。生活領域の案内は所在を、本体のREADMEは方法・記録を所有する。Repository内の現行記録への直接参照は保持し、GitHub共有・登録先保存・Project設定・実際の応答を同一視しない。切替と確認の経緯は[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)を参照する。
 
 ### 3.3 Plan Modeの統一入口
 
@@ -581,11 +583,11 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査・導入確認済みの本文を変更せず収録し、導入環境が自動付与するアイコン・内部設定は含めません。初回共有時の本文はUTF-8で9,757 bytes、SHA-256は`99f6cff05a034bdf796c7e6d138f3fac7a9b9348ee800c097ab8f22082bfe396`です。この値は初回共有版の同一性確認用であり、将来改訂後のCurrent版を固定しません。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
 
-2026-09-24、YusukeJPの追加の実行承認を受け、AI assistantが[chocozap/README.md](../chocozap/README.md)と日付別記録への連携を追加しました。Skillは共通手順、chocozap側は保存規則と本人の観察を所有します。最初の4機械・6条件は実施日未確認の記録として保存する構成にし、変化は訂正を反映した観察から読み出す時に組み立てます。「同条件の再確認」と未報告を分け、通常の受付や二周目支援を遠隔保存の成否に従属させません。
+2026-09-24、YusukeJPの追加の実行承認を受け、AI assistantが[chocozap/README.md（当時の配置）](../__archives/ARC-005/chocozap/README.md)と日付別記録への連携を追加しました。Skillは共通手順、chocozap側は保存規則と本人の観察を所有します。最初の4機械・6条件は実施日未確認の記録として保存する構成にし、変化は訂正を反映した観察から読み出す時に組み立てます。「同条件の再確認」と未報告を分け、通常の受付や二周目支援を遠隔保存の成否に従属させません。
 
-改訂は、呼び出し対象の説明、変化比較の方針、保存・履歴参照時の入口に限定しました。表示設定は引き続き同じ用途を表します。元会話なしの二つの独立AIによる限定読解・応答確認の内容と、実証していない範囲は[保管済みの当時の記録入口](../__archives/ARC-005/chocozap/README.md#6-変更の来歴と確認範囲)で参照できます。現行の追記・読出し先は[chocoZAP記録入口](../chocozap/README.md)から解決します。初回共有時の本文ハッシュは当時の記録として保持し、改訂後の本文へ適用しません。
+改訂は、呼び出し対象の説明、変化比較の方針、保存・履歴参照時の入口に限定しました。表示設定は引き続き同じ用途を表します。元会話なしの二つの独立AIによる限定読解・応答確認の内容と、実証していない範囲は[保管済みの当時の記録入口](../__archives/ARC-005/chocozap/README.md#6-変更の来歴と確認範囲)で参照できます。現行の追記・読出し先は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から解決します。初回共有時の本文ハッシュは当時の記録として保持し、改訂後の本文へ適用しません。
 
-2026-09-27、YusukeJPの運用説明とスキルのLiving Review依頼を受け、AI assistantがSweet Spot・下降系列・両手から片手への切替を区別して結ぶ手順を改訂しました。Sweet Spotが起点と切替基準を兼ねる意味、後続確認による未確認状態の解消、系列の確認済み起点も含めた読出しを本文へ反映しています。本人が選んだ運用として扱い、固定の重量・日付・JSONの詳細仕様はスキルへ複製しません。実データと保存形式は[chocoZAP記録入口](../chocozap/README.md)が所有します。通常報告のたびの自動改訂ではなく、共通手順の不足が見つかり、改訂が依頼・承認された範囲で反映します。
+2026-09-27、YusukeJPの運用説明とスキルのLiving Review依頼を受け、AI assistantがSweet Spot・下降系列・両手から片手への切替を区別して結ぶ手順を改訂しました。Sweet Spotが起点と切替基準を兼ねる意味、後続確認による未確認状態の解消、系列の確認済み起点も含めた読出しを本文へ反映しています。本人が選んだ運用として扱い、固定の重量・日付・JSONの詳細仕様はスキルへ複製しません。実データと保存形式は[chocoZAP記録入口](../lifestyle/chocozap/README.md)が所有します。通常報告のたびの自動改訂ではなく、共通手順の不足が見つかり、改訂が依頼・承認された範囲で反映します。
 
 改訂本文を明示的に読ませた二つの独立AI文脈で、計三応答を確認しました。一つは仮想の重量列を未確認の起点・切替として受け取り、続く本人確認からSweet Spotと両手→片手の流れを復元し、未報告の中間重量を追加しませんでした。もう一つは保存済みの2026-09-27の記録と後続Feedbackから八条件のSweet Spotとチェストプレスの切替を読み出し、未報告の使い方を残しました。形式検査も通過し、表示設定は同じ用途を表すため維持しています。限定した読解・応答確認であり、自然な自動選択、全AI互換性、運動効果や時短の実証とは区別します。
 
@@ -593,4 +595,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.31.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.31.1
