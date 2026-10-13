@@ -1,13 +1,13 @@
 ---
 title: "Caffeineの使い所 — 場面・条件・経験をつなぐ"
-version: "v002"
+version: "v003"
 status: "source-linked initial synthesis / selective coverage"
 canonical_path: "lifestyle/caffeine/use-contexts.md"
 created: "2026-10-13"
-updated: "2026-10-13"
+updated: "2026-10-14"
 role: "Topic synthesis and source index; not an independent episode ledger or dosing guide"
 reviewed_source_snapshot: "ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v002"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v003"
 ---
 
 # Caffeineの使い所 — 場面・条件・経験をつなぐ
@@ -27,6 +27,7 @@ expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v002"
 | 起床時のガム | 事前の判断を思い出し、起床・AI活用等へつなぐ | 保存済みの成功事例は初回・後の複数回の本人成功報告を保持。Ark27:01にも起床→ガム→AI活用が好調との報告 | 成功全体を成分効果だけへ帰属させない。正確な回数、長期再現性、現在条件は別に扱う | S2、S3：`wake-ai-baseline / s4` |
 | 屋外Workout・AI活用時のコーヒー | 眠気と集中の問題を、その場の行動に結び付ける | 本人は微糖コーヒーを選び、好判断・好結果と評価した | 当時の未朝食等の条件を保持。糖・Caffeine・運動等の寄与は分離されていない | S3：`coffee-choice-01 / coffee-benefit-report / s24 / s25` |
 | 休日のタイミングの振返り | 使う時点と休日の過ごし方を見直す | 本人の「前回の休日ではカフェインのタイミングを大きく間違えた！」という反省が保存されている | 具体的な量、時刻、影響、原因はこの発言から確定しない | S4：`caffeine-origin-s01` |
+| 就寝前の歯磨き（昼寝を含む） | 眠る前に歯磨きを達成したいという希望 | 本人はまずCaffeineなしのガム、難しい時はCaffeineガムという案と、実際は寝落ちしてしまうという反省・Teshuvahを述べた | **まだ実装しない**指定を保持。実際のガム使用・量・効果は不明。歯磨き達成の願いを、就寝前Caffeineの推奨へ変えない | S1 revision 6：`caffeine-s10 / caffeine-s11`、第3.4節 |
 
 S2やS3の過去報告を、今回新しく起きた出来事へ変えない。日時が必要な時は原本の記述へ戻り、記録日から体験日時を作らない。
 
@@ -52,7 +53,7 @@ S2やS3の過去報告を、今回新しく起きた出来事へ変えない。�
 
 Portalは必要な場面で思い出す入口、本フォルダはCaffeineというテーマを深める入口、S1は原発言とその時点の解釈を保持する原本である。自然な想起や生活上の効果の確認は、この導線の保存と分ける。
 
-## 3. 起床・屋外・休日の記録から持ち帰るもの
+## 3. 起床・屋外・休日・就寝前の記録から持ち帰るもの
 
 ### 3.1 起床時：手段と、手段が置かれた構造
 
@@ -73,6 +74,18 @@ S3では、微糖コーヒーを選び、眠気を取り払いOutdoor Workoutと
 S4が直接支えるのは、本人が以前の休日のタイミングを大きく間違えたと振り返ったこと。この短い発言だけから、失敗の原因、最適な摂取時刻、休日の普遍的ルールを作らない。
 
 成功報告とタイミングへの反省を併せて読むと、長期テーマとして蓄積する価値が見える。成功時と反省時の条件を比較し、何が成立条件を変えるかを今後の報告から見分けていく整理が有用、とAIは考える。
+
+### 3.4 就寝前の歯磨き：希望・実際の詰まり・保留を分ける
+
+Humanの中心的な願いは、眠りに入る前に歯磨きを達成したいということ。昼寝も含め、まずCaffeineなしのガムを使ってChallengeし、難しい場合は少量Caffeineのガムを使ってでも達成したいという段階案を述べた。同時に、実際は理想論で終わり寝落ちしてしまうと振り返り、Teshuvahを表現した。これは本人の希望・提案と失敗の報告であり、AIが成分不足や信仰不足を原因として認定する材料ではない。
+
+同じ発言の末尾には**「まだ実装せず、コメント全部に対応して下さい！」**という指示がある。このBranchは、その意味を保ったまま検討・言語化の状態で引き継ぐ。後続の製品特定・量比較・可視化や記録保存を、就寝前の利用案の実装承認へ置き換えない。
+
+カフェインガムの製品と1粒のメーカー公表量は[共通参照](README.md#0-ark共通語カフェインガム)から回復できる。しかし、Caffeineなしのガムの製品、当時実際に何を使ったか、量・時刻・反応、歯磨きや睡眠への効果は別の情報であり、未報告分を埋めない。
+
+AIの今後の検討候補は、歯磨きへの着手・必要な覚醒・その後の睡眠という関係を保ち、目的達成に役立つ手段を現在の条件から考えること。HumanがこのBranchを再開した時に必要な差分を扱い、今回の保存から摂取・身体Trialや毎日の義務を始めない。これは保留の価値を失わない接続であり、具体的な健康上の適否を確認したものではない。
+
+根拠はS1の[revision 6固定版](https://github.com/yusukefujiijp/ai-project/blob/5b6eab4013e9a49a39e859ff8c3b57a54514e90a/ark-project/ark99/ark99-02/task-records.json)：Sources `caffeine-s10 / caffeine-s11`、Nodes `bedtime-toothbrushing-intent / bedtime-toothbrushing-sleep-report / bedtime-toothbrushing-held`。原発言はSource02が所有し、本節はその場面別の編集整理である。
 
 ## 4. コーヒー・ガム等を一つのテーマで扱う意味
 
@@ -100,4 +113,6 @@ S4が直接支えるのは、本人が以前の休日のタイミングを大き
 
 v002（2026-10-13）：Humanの製品参照Correctionを受け、共通定義への接続と再確認の境界を追記。初版の五場面・根拠・未報告条件は保持した。
 
-EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v002
+v003（2026-10-14）：Source02 revision 6の歯磨きBranchを第1節・第3.4節へ追加。初版の五場面・固定根拠を保持し、今回の追加根拠と確認時点を分けた。保存は就寝前の利用案の実装ではない。
+
+EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v003
