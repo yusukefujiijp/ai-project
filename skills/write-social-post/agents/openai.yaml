@@ -1,7 +1,7 @@
 interface:
   display_name: "SNS投稿"
   short_description: "対話と資料から、実際のAIとの協働が伝わる正確なX/SNS公開文を作成・修正する"
-  default_prompt: "$write-social-post を使い、現在の会話と資料をもとに、あなたとの協働が伝わるX/SNS公開文を作成してください。"
+  default_prompt: "$write-social-post（SNS投稿）を使い、現在参照できる会話・提示資料・最新の訂正をもとに、X向けの公開文を作成してください。今回は原稿作成のみです。\n\n登録済みスキルが利用できなければ、次の共有Skill原本を今回の手順書として読んでください。\nhttps://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md\n\nSkill本文と参照先の公開文Promptを全文確認し、執筆手順・条件に従ってください。語り手とAI名は実際の協働関係と原本の公開名ルールに合わせ、引用元のAI名と混同せず、Human–AI協働を明示してください。\n\n取得・計測は環境で許可された方法を使い、確認済みの全文は変更・不一致がなければ再利用できます。必要な原本が揃わない場合は不足を示し、本文の提示を求めてください。SNS投稿・スキルの導入や変更・GitHubへの書き込みは行わないでください。"
 
 policy:
   allow_implicit_invocation: true
