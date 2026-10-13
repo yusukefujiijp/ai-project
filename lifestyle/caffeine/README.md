@@ -1,6 +1,6 @@
 ---
 title: "Caffeine — コーヒー・ガム等の使い所を育てる"
-version: "v002"
+version: "v003"
 status: "active topical entry / Human-confirmed default gum reference / personal application remains contextual"
 canonical_path: "lifestyle/caffeine/README.md"
 created: "2026-10-13"
@@ -8,7 +8,7 @@ updated: "2026-10-13"
 primary_reader: "Current AI / other AI / Future AI; readable and correctable by Human"
 role: "Long-term caffeine topic owner, shared product reference and navigation; original episodes remain in their source records"
 source_thread: "Ark99:02"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v002"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v003"
 ---
 
 # Caffeine — コーヒー・ガム等の使い所を育てる
@@ -39,6 +39,31 @@ expected_eof: "EOF::LIFESTYLE_CAFFEINE_README::v002"
 - 「常時このガム」は**言葉の参照先の継続**を意味する。常時摂取、全場面での使用、身体Trial、就寝前歯磨き案の実装の承認へ変えない。現在のHuman Correction・STOP・Guardを優先する。
 
 今回のCorrectionは「製品情報を増やす」だけでなく、既知の説明を繰り返す工程をなくし、使い所・結果・新しい条件の対話へ継続して進めるためのもの。直前回答の製品・1粒の量の未特定は今回の確認で解消したが、使用場面ごとの適否は別に扱う。保存と、別AIの実際の読込・理解・設定反映・実生活の効果は別であり、全AIへの自動反映は保証しない。
+
+### 0.2 記憶の勘所：含有量、その少なさ、他の手段との比較
+
+**Humanが今回もっとも重視したのは、Caffeineの含有量とその少なさ、そして缶コーヒー等との含有量の比較。** 製品名・URLを記憶する共通参照に、この量の意味を接続して継承する。根拠は[Ark99:02経験原本](../../ark-project/ark99/ark99-02/task-records.json)の `caffeine-s09 / caffeine-small-amount-comparison`（2026-10-13）。会話やAIが変わっただけで、この着眼点をHumanに説明し直してもらわない。
+
+AIはこれを、**1粒12mgという小さい単位で総含有量を選べることを、目的行動を支える手段の検討に活かしたい**という意図と理解する。この言語化はAIの解釈であり、HumanのCorrectionに開く。小さいほど必ずよい、効果が出る、就寝前でも適するという認定ではない。
+
+#### 同じ単位で比較する
+
+2026-10-13に確認したメーカー公表値を基礎とする比較例。コーヒーの「約」は元の表示を継承し、容器当たり量は表示濃度と内容量からAIが計算した。缶コーヒー全製品の代表値、実測値、Humanの摂取実績ではない。
+
+| 製品と比較量 | メーカー公表の基準 | 比較量に含まれるCaffeine |
+|---|---|---|
+| クロレッツ XP シャープミント 1粒 | 1粒12mg（第0節の出典） | 12mg |
+| [ボス 無糖ブラック 185g缶](https://products.suntory.co.jp/d/4901777204980/) 1缶 | 100gあたり約40mg | 約74mg |
+| [ボス 贅沢微糖 185g缶](https://products.suntory.co.jp/d/4901777235335/) 1缶 | 100gあたり約50mg | 約92.5mg |
+| [ボス シルキーブラック 400gボトル缶](https://products.suntory.co.jp/d/4901777229266/) 1缶 | 100gあたり約50mg | 約200mg |
+
+- **1粒12mgは、上記無糖ブラック1缶約74mgの約16.2％。** 比較相手と飲む量を明記して初めて「少なさ」の意味を判断できる。
+- ガムは粒数に応じて総量が変わる。コーヒーも飲む量を分けられるため、常に1缶飲み切る前提に固定しない。たとえばガム3粒36mgと上記無糖ブラック1/2缶（92.5g）約37mgは、含有量として近い。これは計算例であり、摂取を勧める個数・量ではない。
+- 「1粒」「100g当たり」「1缶」を混ぜず、**選んだ量に含まれる総mg**へ揃える。商品名の「微糖」はCaffeineが少ないことを意味しない。公表値がg基準なら、根拠なしにmLへ置換しない。
+- 同じ総含有量でも、実際の吸収量、効き始め、体感、行動への効果、睡眠への影響が同じとは扱わない。その日の他の摂取や現在の条件は別に確認する。
+- 関係としては、**製品の同一性 → 1単位の量 → 選んだ数量による総量 → 場面・時刻・目的との照合 → 本人の結果とFeedback**を保持する。今回確認したのは製品情報と計算までであり、最後の生活上の結果を補完しない。
+
+今後のAIは、既定製品と1粒の量・この比較意図を復元してから、新しく示された場面や条件へ接続する。画面内の仮定変更・再計算、新しい分析、外部保存・更新、実際の摂取・身体Trialは別の操作として扱う。
 
 ## 1. この場所の目的
 
@@ -110,4 +135,6 @@ HumanのMeaning・Correction・STOP・Final Seal、Truth・Body・Sleep・Food�
 - v001（2026-10-13）：長期テーマの入口と場面別資料の分担を作成。
 - v002（2026-10-13）：Humanの製品参照Correctionを第0節へ追加。指定URL・ASIN・確認済みメーカー公表値・出典を残し、製品の再説明と現在の使用条件を区別した。先行する歯磨き案の実装や全AIへの自動適用は行わない。
 
-EOF::LIFESTYLE_CAFFEINE_README::v002
+- v003（2026-10-13）：Humanの補足に基づき、含有量・少なさ・缶コーヒー等との比較を第0.2節へ追加。一次資料の単位と容器当たりの計算を分け、少量単位の解釈と実生活の適否を区別した。
+
+EOF::LIFESTYLE_CAFFEINE_README::v003
