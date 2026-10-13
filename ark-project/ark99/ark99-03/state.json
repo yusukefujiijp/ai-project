@@ -4,7 +4,7 @@
   "format_version": "v001",
   "format_note": "今回のArk99:03の可変状態。新しい全Ark共通Schemaではない。共有移行契約とlocal Handoffの責務を置換しない。",
   "canonical_path": "ark-project/ark99/ark99-03/state.json",
-  "revision": 1,
+  "revision": 2,
   "created": "2026-10-14",
   "updated": "2026-10-14",
   "repository": "yusukefujiijp/ai-project",
@@ -213,8 +213,8 @@
       "meaning": "受け手がSource会話に依存せず回復できる本文と参照を構築した。"
     },
     "remote_verified": {
-      "status": "predecessors_verified_state_reread_pending",
-      "meaning": "依存する六原本はGitHub mainから再取得し、意図した全文と一致した。この初回State本文は公開後の再取得を残す。",
+      "status": "confirmed",
+      "meaning": "Source記録・Caffeine二資料・Skill Hub・03 README/Handoff・初回Stateの七原本を保存先から全文再取得し一致確認した。その確認後、この完了ReceiptだけをState revision 2へ反映した。",
       "artifacts": [
         {
           "path": "ark-project/ark99/ark99-02/task-records.json",
@@ -245,9 +245,15 @@
           "path": "ark-project/ark99/ark99-03/handoff.md",
           "commit": "30b6c3c067703b8e3f63b5897306a6991bfb6216",
           "blob": "9c3f17886e496bc2b4fe22c4f99865c168cb07f9"
+        },
+        {
+          "path": "ark-project/ark99/ark99-03/state.json",
+          "commit": "bb38a73992f2e30635553efa9cffb53a09a143ac",
+          "blob": "6e700876a1b7d044550cbb36b27d774b708685ef",
+          "scope": "revision 1全体のRemote Verify。revision 2の自己SHAではない。"
         }
       ],
-      "note": "これらは保存確認の観測値で、FutureのCurrent原本を永久固定するBindingではない。"
+      "note": "証拠は確認済みの過去payloadへ結び付け、自己SHA・相互live-blob循環を作らない。revision 2自身もSourceが公開後に再取得し、最終返却と日別活動記録で確認結果を報告する。"
     },
     "target_reconstructed": {
       "status": "unobserved",
@@ -260,7 +266,7 @@
       "meaning": "必要な操作は既存03への起動Prompt貼付と、必要ならTitle設定。直接実行したと称さない。"
     },
     "requested_outcome": {
-      "preparation": "constructed; remote completion is tracked separately",
+      "preparation": "source_artifacts_ready_for_human_submission",
       "continued_collaboration": "unobserved",
       "life_effect": "unobserved"
     }
@@ -313,6 +319,16 @@
         "range": "Ark99 READMEの後、先頭から本文実末尾まで全文・Gapなし"
       }
     ],
-    "receipt_boundary": "Source02の読解ReceiptはTarget自身の読了を代替しない。"
+    "receipt_boundary": "Source02の読解ReceiptはTarget自身の読了を代替しない。",
+    "state_revision_history": [
+      {
+        "revision": 1,
+        "reason": "承認された03継続資料の初回Stateを構築・公開。"
+      },
+      {
+        "revision": 2,
+        "reason": "七原本のRemote再取得後、初回Stateを含む確認証拠を反映。Target再構成・Human操作・実利用は未観測のまま保持。"
+      }
+    ]
   }
 }
