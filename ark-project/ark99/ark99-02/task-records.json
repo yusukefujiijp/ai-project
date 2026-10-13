@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark99-02-task-records",
-  "revision": 2,
+  "revision": 3,
   "role": "thread_experience_record",
   "created": "2026-10-11",
   "updated": "2026-10-13",
@@ -13,13 +13,13 @@
     "canonical_path": "ark-project/ark99/ark99-02/task-records.json",
     "reported_date": "2026-10-11",
     "timezone": "Asia/Tokyo",
-    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。",
+    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。 revision 3は2026-10-13T16:05:15+09:00のHumanによるカフェインガムの共通参照先と再確認反復を避ける指定を保存した。製品情報の確認日も同日であり、生活での摂取日時を示さない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。",
+    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。 revision 3の保存権限は今回の製品参照・理解継続の明示依頼に限る。先行する就寝前歯磨き案の実装・摂取・身体Trialの承認へ広げない。",
     "source_access": "当該会話で直接提示されたHuman本文の連続抜粋と、先行するAIの整理を区別して収録する。公開会話URLとサービス側message IDは未提示。ここで採番するSource IDは記録内ID。ChatGPT長期メモリ・別Thread履歴を取り込まない。AI整理の編集要約は逐語引用ではない。",
     "extensions": {
-      "record_cutoff": "2026-10-13T14:17:53+09:00のCaffeine長期テーマ化とlifestyle/caffeineへの集約指定。"
+      "record_cutoff": "2026-10-13T16:05:15+09:00のHumanによるカフェインガムのArk共通参照先と再説明反復を避ける保存指定。"
     }
   },
   "coverage": {
@@ -31,7 +31,8 @@
       "本人のTeshuvahの言葉と発見の重要性",
       "二場面の関係、用途とタイミング、現在の条件を区別したAI整理",
       "今回の高評価、save依頼、Ark Recall Portalへの接続提案",
-      "Caffeineを一生ものの重要テーマと位置づけ、lifestyle/caffeineへまとめる最新のHuman指定"
+      "Caffeineを一生ものの重要テーマと位置づけ、lifestyle/caffeineへまとめる最新のHuman指定",
+      "Arkでいうカフェインガムは常時提示製品を指すというHuman Correctionと、製品の説明を繰り返さず共有理解を継続する指定"
     ],
     "excludes": [
       "全会話の転記、Titleや移行Prompt整備の全文",
@@ -117,6 +118,25 @@
       "excerpt_kind": "verbatim_contiguous",
       "url": "https://github.com/yusukefujiijp/ai-project/blob/main/lifestyle/caffeine",
       "note": "Humanが指定したURL。今回のTool観測ではlifestyle/caffeineはフォルダで、そのREADME.mdが改行のみ。"
+    },
+    {
+      "id": "caffeine-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-13T16:05:15+09:00 / カフェインガムの共通参照先・GitHub記録依頼",
+      "excerpt": "基本的にGitHub等に記録・記憶して欲しいのは\n我々Ark Projectが指すカフェインガムは常時このガムの事を指しています！\n何度も繰り返さず理解する事が\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://amzn.asia/d/03jYNDFv",
+      "note": "同じHumanメッセージで提示された短縮URL。Toolで転送先ASIN B08LNFX871を確認した。現行の製品参照・確認値・出典・再確認条件はlifestyle/caffeine/README.mdが所有する。ChatGPT長期メモリからの転記ではない。"
+    },
+    {
+      "id": "caffeine-a03",
+      "speaker": "Ark99:02の応答AI",
+      "medium": "assistant_message",
+      "locator": "Ark99:02 / caffeine-s08直前 / 就寝前の歯磨き案についての応答、第3項",
+      "excerpt": "製品・1粒の含有量・それまでの摂取量・個人の反応が分からない現在",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当時のAI回答中の連続抜粋。今回のHuman Correctionと製品確認により製品・メーカー公表含有量の未特定を解消する。毎回の摂取量・時刻・反応まで確定したとは扱わない。先行対話全体や歯磨き案の実装を保存・承認する意図ではない。"
     }
   ],
   "nodes": [
@@ -303,6 +323,34 @@
         ],
         "note": "保存先と対象はHuman指定。README/use-contextsの二ファイル構成、既存原本参照という実装上の分担はAIの編集判断。"
       }
+    },
+    {
+      "id": "prior-gum-product-unresolved",
+      "kind": "observation",
+      "label": "直前AI回答が製品と1粒の量を未特定として扱った",
+      "description": "直前のAIは就寝前の歯磨き案の検討で、製品・1粒の含有量と、その時々の摂取量・個人の反応を併せて未確認として述べた。これは回答内容の記録であり、現在も製品不明という宣言ではない。",
+      "scope": "caffeine-s08直前の応答の一部分。今回の訂正の対象と、残る場面条件を区別するために収録。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "caffeine-a03"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-gum-default-reference",
+      "kind": "decision",
+      "label": "Arkのカフェインガムを特定製品へ継続して結び付ける",
+      "description": "HumanはArk Projectでいうカフェインガムが常時提示URLの製品を指すと明示し、GitHub等に記録・記憶して、何度も説明を繰り返さず理解することを最重要とした。Humanによる別製品指定・訂正がない限り、この共通参照を継承する。製品情報の担当原本はlifestyle/caffeine/README.md。常時という語は用語の参照先にかかり、常時摂取や全場面への適合を意味しない。",
+      "scope": "Ark ProjectのHuman–AI協働におけるカフェインガムの既定参照。Caffeineなしのガムや全Caffeine製品へ拡張しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s08"
+        ]
+      }
     }
   ],
   "edges": [
@@ -428,6 +476,36 @@
           "caffeine-s07"
         ]
       }
+    },
+    {
+      "id": "gum-reference-resolves-product-unknown",
+      "from": "caffeine-gum-default-reference",
+      "to": "prior-gum-product-unresolved",
+      "relation": "corrects",
+      "scope": "製品を毎回未特定へ戻す扱いを訂正する。製品特定と使用場面ごとの条件を分ける。個別摂取量・時刻・適否・実生活効果は自動確定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s08",
+          "caffeine-a03"
+        ]
+      }
+    },
+    {
+      "id": "gum-reference-in-caffeine-home",
+      "from": "caffeine-domain-home",
+      "to": "caffeine-gum-default-reference",
+      "relation": "contains",
+      "scope": "Human指定のCaffeine領域へ、今回の用語と製品の共通参照を接続する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s07",
+          "caffeine-s08"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -487,11 +565,20 @@
           "caffeine-s06",
           "caffeine-s07"
         ]
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-13",
+        "reason": "カフェインガムの共通参照と同じ説明を繰り返さないというHuman Correctionを追記。元のSources/Nodes/Edges/Unknownを保持し、製品の現行定義・出典・運用条件はCaffeine READMEへ一元化。",
+        "source_refs": [
+          "caffeine-s08",
+          "caffeine-a03"
+        ]
       }
     ],
     "domain_entry": {
       "path": "lifestyle/caffeine/README.md",
-      "role": "Caffeineの長期テーマの入口・横断的整理。本人の原発言・出来事の原本は本Task Records等が保持する。"
+      "role": "Caffeineの長期テーマと、Ark共通のカフェインガム参照の入口。本人の原発言・訂正・出来事の原本は本Task Records等が保持する。"
     }
   }
 }
