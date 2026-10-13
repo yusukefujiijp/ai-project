@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.28.0
+version: v0.29.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-12
-updated_reason: SNS投稿の内容Reviewと可読性編集を分離し、箇条書きの判断基準・限定応答・保存確認を接続
+updated: 2026-10-13
+updated_reason: visualize-patchの共通入口・限定した適用・環境差・共有と登録先の確認境界を追加
 ---
 # Ark Shared Skills Hub
 
@@ -56,6 +56,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
 | Podcast Mode / podcast-mode | 音声ボタンで聴く一続きの回答、既存定刻配信用の内容をAudio-Firstに編成。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)の旧Radio条件を目的から選ぶ。基本支援は本文単体 | 共有保存・同一登録物への更新・Remote本文一致と二つの独立文脈での限定応答を確認。会話内の新名称取得は未成立（§1.3）。実聴取効果は未確認 |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答を保持。集約参照への更新は登録先保存・Remote本文一致まで確認。会話内の読取は旧版（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
@@ -385,6 +386,27 @@ Radio共有版をもとに、名称・表示・選択条件をPodcastへ更新�
 
 元会話や期待回答を渡さない二つの独立文脈で、同じ候補本文を明示して限定応答を確認した。一つはRepository集約の利点と巨大化の懸念を、例・理由・条件をつないで聴取用の連続した文章にした。もう一つはPodcast Skillの改善依頼へ比較と計画を返し、番組作成や変更を実行しなかった。構成した相談であり、自然発動・旧コマンド転送・Human UI・実聴取・長期効果を実証したとは扱わず、仮想相談をlessonへ登録しない。
 
+### 3.12 Visualize Patchの共通入口
+
+長い指示を毎回貼らず、必要な意味を持つ短い入口から、共通方針・環境差・重大な表示不具合への条件付き補正へ接続します。
+
+```text
+$visualize-patch を使い、現在の依頼・会話・資料・Feedbackから、最も価値のある可視化を設計・作成・検証して提示してください。確認済みと未確認を区別してください。
+
+Skillを呼び出せない場合は、次の共有原本を読んで適用してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKILL.md
+```
+
+本文は[visualize-patch/SKILL.md](visualize-patch/SKILL.md)が所有します。iOS縦画面・タッチ、重要文字の可読性、根拠と未知の区別を基本にし、問い・図・構成・操作方法はAIが選びます。共通の基本設定と重大障害の補正を分け、公式Visualize本体の複製や変更、全要素への一括色指定を前提にしません。新しいFeedbackは、必要な追加だけでなく統合・簡素化・補正の撤去へもつなげます。
+
+公式Visualizeがある時は現行公式契約を読み、存在しない時は実際に利用できる方法を選びます。本文の読解、Skill登録、コード実行、会話内の対話型表示は別です。必須Sourceの取得失敗を機能不在へ読み替えず、静的代替を操作探索と同じ完成にしません。[AGENTSの環境接続](../AGENTS.md#41-runtime-and-skill-gate)の読取対象はArkの対話型可視化作成・修正と公式Visualize不在時の代替判断に絞り、普通の表・単純な図・引用や言及への一律適用を避けます。
+
+**形成と確認範囲。** 2026-10-13のArk99:02で、YusukeJPの文字色Correction、分量による比較の逆転という着眼、創発性を保つパッチ、短いQueryと必要最低限の意味、他AIでの利用、現在の実行承認から作成しました。[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-s01`–`visualize-s08` がHuman入力、`visualize-t01`–`visualize-t03` が限定検証と留保を保持します。再利用する学びは[集約lessons](_references/lessons.jsonl)へ置き、Caffeineの数値・使用経験は領域原本へ残します。
+
+元会話・期待回答を渡さない二つの独立AI文脈で、能力不足・取得失敗・配色指定・計画限定の読解二応答と、別題材の対話型可視化を確認しました。後者は明暗・狭幅・交点前後を含む40条件、キーボード・タッチ、実効色をブラウザで確認し、重要文字の最小コントラストは17.08:1でした。iOS/Safari実機、実会話内表示、他社AI、通常速度のアニメーション、ブラウザからのCDN直接読込は未確認です。文字色の過去の模擬原因を実際のiOS原因と断定しません。
+
+共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。保存後、この会話のSkill一覧では新名称をまだ取得できていないため、現時点では上記の共有本文を読んで接続できます。自然な自動選択・恒久記憶・全AI互換性・実生活の効果は未確認です。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -530,4 +552,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.26.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.29.0
