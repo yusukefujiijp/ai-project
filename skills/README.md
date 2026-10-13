@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.30.0
+version: v0.31.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-13
-updated_reason: SNS投稿の起動文を統一し、登録の有無に応じた原本読取と計測経路を接続。先行するVisualize Patchの案内を保持
+updated_reason: Podcast Theme Modeを既存Skillへ統合し、コピー可能な生成依頼・入口と確認段階を追加。先行するSNS投稿入口統一とVisualize Patchを保持
 ---
 # Ark Shared Skills Hub
 
@@ -48,7 +48,9 @@ Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分�
 
 同日の初回作業では、集約先・共有Skill・案内の保存後全文一致を確認した一方、登録先へのRadio／Voice同時更新はHTTP 422で完了しなかった。その時点の旧版確認と退役保留は履歴として保持する。
 
-**後続の現在状態。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。会話内のSkill読取経路はなお旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。このため旧二JSONLと旧Radio共有二原本は互換参照の受け皿として保持し、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
+**2026-10-11の後続保存。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。その時点の会話内Skill読取経路は旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。このため旧二JSONLと旧Radio共有二原本は互換参照の受け皿として保持し、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
+
+**後続の取得観測（2026-10-13）。** Ark28:05の会話でPodcast名の登録済みSkillを取得でき、改訂前本文が共有原本（blob `bfec204f4ab1489e1a5b0fcf50c71423b23a04bb`）と一致した。10月11日時点の未取得を現在のPodcastの阻害条件へ延長しない。今回のTheme機能追加と改訂後の確認範囲は[Podcast Theme Mode](#podcast-theme-mode)へ。Voiceの再確認や旧配置の退役を、この観測だけで完了へ変えない。
 
 Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
 
@@ -57,7 +59,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
 | Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
-| Podcast Mode / podcast-mode | 音声ボタンで聴く一続きの回答、既存定刻配信用の内容をAudio-Firstに編成。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)の旧Radio条件を目的から選ぶ。基本支援は本文単体 | 共有保存・同一登録物への更新・Remote本文一致と二つの独立文脈での限定応答を確認。会話内の新名称取得は未成立（§1.3）。実聴取効果は未確認 |
+| Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂の形式・四つの独立文脈での応答、共有保存・同一登録物のRemote本文一致を確認。会話内取得はPodcast名で成立するが今回改訂前の本文。UI・実聴取効果は未確認。入口・改訂・検証境界は[§3.11](#podcast-theme-mode) |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答を保持。集約参照への更新は登録先保存・Remote本文一致まで確認。会話内の読取は旧版（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
@@ -405,6 +407,26 @@ Radio共有版をもとに、名称・表示・選択条件をPodcastへ更新�
 
 元会話や期待回答を渡さない二つの独立文脈で、同じ候補本文を明示して限定応答を確認した。一つはRepository集約の利点と巨大化の懸念を、例・理由・条件をつないで聴取用の連続した文章にした。もう一つはPodcast Skillの改善依頼へ比較と計画を返し、番組作成や変更を実行しなかった。構成した相談であり、自然発動・旧コマンド転送・Human UI・実聴取・長期効果を実証したとは扱わず、仮想相談をlessonへ登録しない。
 
+<a id="podcast-theme-mode"></a>
+
+#### Podcast Theme Modeへの拡張（2026-10-13）
+
+Themeを選別・抽出・工夫する役割を、既存の `podcast-mode` 内に加えた。Theme提案には比較の説明と各案の独立したコピー用生成依頼を返し、本文生成には耳で理解できる一続きの話を返す。両者の手順は[共有Skill](podcast-mode/SKILL.md)が所有する。
+
+```text
+$podcast-mode でPodcast Theme Modeを使い、今の文脈から、今聴くと価値があるThemeを提案してください。各案に、聴くと何が見えてくるかと、その案だけで使えるコピー用の生成依頼を添えてください。
+```
+
+登録を使えない、または登録側が旧版を返す場合は、上の共有Skillを実際に読んで適用する。Podcast Theme Modeは機能の名称であり、別の `$podcast-theme-mode` の登録を意味しない。Themeが決まった本文生成や「Themeを任せて作って」は直接依頼でき、候補選択を必須工程にしない。コピーした一案は、同じThreadでも別Threadでも使える。生成場所の選択、実際のThread起動・Main移行、保存・公開・予定操作は別の権限と操作である。
+
+**形成と重要な訂正。** Ark28:05でHumanは、Theme段階の命名によって良いThemeの提案へ集中できると説明し、新鮮さ・AIならではの俯瞰・全体横断の切り口を歓迎した。Humanが共有した初穂の助言は、候補名だけでなく「そのThemeを今聴くと、何が見えてくるのか」を含める方向を示した。これはHuman経由で受領した助言であり、今回のAI間直接通信の観測ではない。その後Humanは、本線のThreadでThemeを練り、選んだ案を別のPodcast用Threadへコピーできる案を提示し、同一Threadの本文生成も残すと明示した。三案は例であり固定数ではない。
+
+Humanは2026-10-13のPlan Modeによる計画提示後、GitHubと既存Skillの改訂・確認・初回三案の提示を承認した。本節は本Threadで受領した入力と実装観測の編集要約である。Themeの数や全案のArk限定、別Threadの強制、Humanによる結果の伝言義務を追加せず、Topicに必要な文脈を渡す設計とした。全履歴の複製や別Threadの自動同期を想定せず、後続のHuman訂正・STOPと受け手に適用される必須読解契約を保持する。
+
+**確認範囲。** 改訂本文の形式検査を通過。元会話・期待回答を渡さない四つの独立したAI文脈で、Theme三案の提案、コピーした既出第三案だけからの本文生成、同じThreadでの直接生成を求める依頼、Skill見直しのPlan-only応答を確認した。提案では各案に中心の問い・聴く価値・背景付きの独立したコピー用依頼を返し、本文を生成しなかった。コピーした第三案からの応答は、Repository削除・一択化をHuman報告と方針として受け取り、可能性が広がるというAIの仮説と、集約による混雑・価値の抑圧の懸念を分けて語った。直接生成は候補選択を挟まず、Plan-onlyは比較と計画で止まった。これは限定した応答の観測であり、自然な自動選択、他社AIでの利用、Humanの実聴取・長期効果は未確認。構成した相談を実経験のlessonへ登録していない。
+
+**共有・登録・実利用。** 共有本文は[本文改訂commit](https://github.com/yusukefujiijp/ai-project/commit/2d3bcda7b0edcd39fbefcd2247171c3755179417)、表示三項目は[入口改訂commit](https://github.com/yusukefujiijp/ai-project/commit/647e660a725508e9a22a7d1110027e0ff7105176)でmainへ保存し、それぞれRemoteから再取得して全文一致を確認した。既存のPodcast登録物を通常更新し、登録先Remoteから再取得した本文と表示三項目も共有原本と一致した。登録先の先行する別Skill更新を保持し、公開先masterへ今回の二ファイル差分を保存した。本文は8,499 bytes、SHA-256 `03541cea3801f2f93f3f8cd7019fb4a9ddaa00749bcecbeb237b91e443804430`。この値は今回版の同一性確認であり、将来のCurrentを固定しない。保存後も、この会話内のSkill読取経路はPodcast名で改訂前本文を返した。登録先保存と会話内の最新版取得を分け、同じ保存を反復せず、上の共有本文を実際に読んで今回版へ接続する。Human UI反映・自然発動・実聴取は未確認。新しい別Skill、常設同期、予定、外部送信、旧Radioの退役は行っていない。
+
 ### 3.12 Visualize Patchの共通入口
 
 長い指示を毎回貼らず、必要な意味を持つ短い入口から、共通方針・環境差・重大な表示不具合への条件付き補正へ接続します。
@@ -571,4 +593,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.30.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.31.0
