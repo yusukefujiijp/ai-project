@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visualize Patch"
+  short_description: "Arkの可視化を環境に合わせ、読みやすさと創発性を両立する"
+  default_prompt: "$visualize-patch を使い、現在の依頼・会話・資料・Feedbackから、最も価値のある可視化を設計・作成・検証して提示してください。確認済みと未確認を区別してください。"

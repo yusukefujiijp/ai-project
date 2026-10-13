@@ -3,7 +3,7 @@ title: chocoZAP 継続サポート
 canonical_path: schedules/chocozap-support/README.md
 version: v002
 created: 2026-10-13
-updated: 2026-10-13
+updated: 2026-10-14
 updated_reason: chocoZAP原本の配置変更に伴う参照先のみ更新。配信の時刻・頻度・送信先・有効状態・実行範囲は保持
 status: active
 ---

@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.28.0
+version: v0.31.1
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-12
-updated_reason: SNS投稿の内容Reviewと可読性編集を分離し、箇条書きの判断基準・限定応答・保存確認を接続
+updated: 2026-10-14
+updated_reason: chocoZAPの移設と配布入口の整合。v0.31.0のPodcast Theme Mode・SNS投稿入口統一・Visualize Patchを保持
 ---
 # Ark Shared Skills Hub
 
@@ -48,7 +48,9 @@ Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分�
 
 同日の初回作業では、集約先・共有Skill・案内の保存後全文一致を確認した一方、登録先へのRadio／Voice同時更新はHTTP 422で完了しなかった。その時点の旧版確認と退役保留は履歴として保持する。
 
-**後続の現在状態。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。会話内のSkill読取経路はなお旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。このため旧二JSONLと旧Radio共有二原本は互換参照の受け皿として保持し、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
+**2026-10-11の後続保存。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。その時点の会話内Skill読取経路は旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。このため旧二JSONLと旧Radio共有二原本は互換参照の受け皿として保持し、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
+
+**後続の取得観測（2026-10-13）。** Ark28:05の会話でPodcast名の登録済みSkillを取得でき、改訂前本文が共有原本（blob `bfec204f4ab1489e1a5b0fcf50c71423b23a04bb`）と一致した。10月11日時点の未取得を現在のPodcastの阻害条件へ延長しない。今回のTheme機能追加と改訂後の確認範囲は[Podcast Theme Mode](#podcast-theme-mode)へ。Voiceの再確認や旧配置の退役を、この観測だけで完了へ変えない。
 
 Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
 
@@ -56,7 +58,8 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
-| Podcast Mode / podcast-mode | 音声ボタンで聴く一続きの回答、既存定刻配信用の内容をAudio-Firstに編成。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)の旧Radio条件を目的から選ぶ。基本支援は本文単体 | 共有保存・同一登録物への更新・Remote本文一致と二つの独立文脈での限定応答を確認。会話内の新名称取得は未成立（§1.3）。実聴取効果は未確認 |
+| Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
+| Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂の形式・四つの独立文脈での応答、共有保存・同一登録物のRemote本文一致を確認。会話内取得はPodcast名で成立するが今回改訂前の本文。UI・実聴取効果は未確認。入口・改訂・検証境界は[§3.11](#podcast-theme-mode) |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答を保持。集約参照への更新は登録先保存・Remote本文一致まで確認。会話内の読取は旧版（§1.3）。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
@@ -141,6 +144,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 
 当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
 
+2026-10-14の配置変更では、配布されるchocoZAP Skillと現在地SkillのchocoZAP参照を[生活領域の入口](../lifestyle/README.md)から解決する形にした。生活領域の案内は所在を、本体のREADMEは方法・記録を所有する。Repository内の現行記録への直接参照は保持し、GitHub共有・登録先保存・Project設定・実際の応答を同一視しない。切替と確認の経緯は[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)を参照する。
+
 ### 3.3 Plan Modeの統一入口
 
 登録済みの環境では、今回の依頼とともに次の一つの入口を使います。
@@ -218,6 +223,35 @@ Boardの架空素材では、保存時点の受け手未指定と現在のHuman�
 
 ### 3.6 AI協働SNS投稿の入口
 
+登録の有無で使い分けない、共通の起動文です。今回の会話・資料とともに使います。
+
+~~~text
+$write-social-post（SNS投稿）を使い、現在参照できる会話・提示資料・最新の訂正をもとに、X向けの公開文を作成してください。今回は原稿作成のみです。
+
+登録済みスキルが利用できなければ、次の共有Skill原本を今回の手順書として読んでください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md
+
+Skill本文と参照先の公開文Promptを全文確認し、執筆手順・条件に従ってください。語り手とAI名は実際の協働関係と原本の公開名ルールに合わせ、引用元のAI名と混同せず、Human–AI協働を明示してください。
+
+取得・計測は環境で許可された方法を使い、確認済みの全文は変更・不一致がなければ再利用できます。必要な原本が揃わない場合は不足を示し、本文の提示を求めてください。SNS投稿・スキルの導入や変更・GitHubへの書き込みは行わないでください。
+~~~
+
+起動文の編集元は本節です。共有版と登録版の `agents/openai.yaml` にある `default_prompt` は、この同じ文面の配布先として揃え、独立した短縮版やAI別の起動文を増やしません。
+
+[共有Skill本文](write-social-post/SKILL.md)は今回の対象・素材・訂正と執筆手順を、[公開文Prompt](../prompts/ai-sns-public-post.md)は詳しい執筆条件・AI名のFew-shot・§構成・plaintext出力・完成稿全文の既定X方式4,000カウント以内を所有します。良い原稿の継承、Living Review、可読性編集、最終計測へ順に接続し、同梱の[計測補助](write-social-post/scripts/count_x_post.cjs)または同等の許可された方法を使います。必要な素材が投稿URLだけの場合はread-social-post等の許可された取得方法へ接続します。共通Prompt本文をここへ複製しません。
+
+スキル機構のないAIも、共有Skillを全文読解して今回の手順書として利用できます。GitHub本文の読取は、スキル導入・計測Scriptのローカル配置・別AIとの会話共有・各製品での自動起動を意味しません。取得・実行・計測は利用環境で許可された方法で行い、原本不足と計測不可を区別して、それぞれの既存ルールに従います。
+
+**入口統一（2026-10-13）。** Humanが提示した二つの起動文と、スキル登録できないAIにも同じGitHub原本を使わせたいという依頼を、計画後の実行承認に基づき統合しました。Skillへ登録なしの利用経路、観測された版不一致の扱い、同梱資源が手元にない場合の接続を補いました。公開文Prompt v006、Few-shot、段階的編集、箇条書き条件、計測補助の実装は変更していません。今回の改訂作業への承認と、この起動文を日常利用する際の原稿作成範囲は区別します。
+
+**入口統一の限定確認。** 元会話・期待回答・診断を渡さない四つの独立文脈で、計五つの作業応答を確認しました。登録版の本文と計測補助を明示した改稿、登録機構を使わず提示全文から作る改稿、公開文Promptが抜粋しかない場合の不足応答、その後の計画限定レビュー、登録機構を使わずGitHubから二原本を取得する改稿を扱いました。題材はいずれも架空の道具貸出会で、今回の執筆AIと引用元Grok、二つとも必要な条件、受付方法の二者択一、受け渡し順序、最新の「2週間以内」、実績と実測値の不在が保たれました。原本不足では全文を求め、計測できない二条件では投稿外に未確認の草稿と表示し、計画依頼では投稿生成へ進みませんでした。
+
+計測補助を使える条件の応答担当AIから、公式twitter-text 3.1.0による1,028カウントの実行結果を受領しました。中断後は一時依存先が利用できず、統合担当による再計測は未実施です。計測補助自体の変更はなく、前回の境界入力検査を今回再実行したとは扱いません。GitHub読取条件では、共有Skill `d5c19b00d8d7fae19c07ffecd306a9713d51b58e` と公開文Prompt `b483d995b8957f64241a679f53f28272788fc7f7` の全文取得が報告され、今回取得した原本の識別情報と一致しました。
+
+**入口統一の保存確認。** [共有Skill](https://github.com/yusukefujiijp/ai-project/commit/daa563e2075b9d13839cfdade4e35ed1bfb584b3)と[共有表示設定](https://github.com/yusukefujiijp/ai-project/commit/94949a10812ffefedfb043464ef15dcbbc8484f0)をmainへ保存し、全文再取得で意図した内容との一致を確認しました。同じ登録済みSkillの本文・起動文も更新して保存先から再取得し、本文と起動文の一致、既存の表示・環境設定の保持を確認しました。この会話のSkill読取経路でも新本文を取得できています。形式検査と、Hub・共有表示設定・登録表示設定の起動文が改行を含めて同値であることを確認しました。中断中の先行更新は保持し、本節と版情報だけを統合しています。
+
+これらは同じ実行環境で条件を分けた限定確認です。自然な自動選択、iOSの表示・起動操作、Grok／Claude実機、Xへの投稿、実際の読者の理解や反応は未確認です。架空の素材をHumanの実経験や実績として登録しません。
+
 **段階的編集の改訂（2026-10-12）。** Grok経由で提示された箇条書きへのHuman評価と、YusukeJPの「良い原稿をLiving Reviewし、その後に視認性・可読性を磨く工程を分ける」という訂正・実行承認を反映しました。公開文Prompt v006は箇条書きの具体的な判断基準と単独利用時の段階的仕上げを、Skillは良い原稿の継承・内容Review・可読性編集・最終計測への接続を担います。箇条書きの比率、毎工程の承認、中間稿の提示、Graph図を一律には要求せず、限定修正と途中STOPを保持します。
 
 **今回の限定応答。** 元会話・期待回答・診断を渡さない三つの独立したAI文脈で、架空の読書会の投稿、Grok由来の良い原稿の改稿、その後の一語だけの訂正、Review提示での停止、指示文の計画限定レビューの計五応答を確認しました。AI名と協働、二つの条件を両方満たす関係、選択肢と順序、架空例・未測定の効果の区別が保たれ、一語訂正では他の文字・改行が変わらないことを比較しました。初稿への後続Reviewでは「本人の許可」が誰についての条件か曖昧だと指摘され、箇条書きの案内へ条件の対象も明確にする一文を補いました。初稿を完全な正解と扱わず、Review-onlyの指示に従って原稿の再編集はしていません。対象の明確化を補った後、第四の独立文脈ではSkillを使わずPrompt全文から架空の工作展示会の投稿を作成しました。撮影者と写っている人の両方の許可、説明方法の二者択一、準備順序を区別し、二例を三例へ水増しせず、架空設定と未測定を明示しました。
@@ -237,16 +271,6 @@ Boardの架空素材では、保存時点の受け手未指定と現在のHuman�
 **改名と公開名の訂正。** 2026-10-03、マインクラフト稿へのHuman Feedbackにより、同じSkillを `write-social-post`（表示名：SNS投稿）へ改名した。公開上のAI名は読者への伝わり方を踏まえて決める。[公開文Prompt](../prompts/ai-sns-public-post.md) v004が具体的な表記を所有し、ChatGPT／Codexでの協働は原則ChatGPTと表示する。下記のCodexと名乗った応答は改訂前の観察であり、現行の推奨ではない。既存のSkillを更新し、旧名の別SkillやAI別の本文は増やさない。
 
 改訂後、元会話と期待回答を渡さない独立したAI文脈へ、新しいSkillと共通Promptを明示し、構成した読書メモ素材から約400文字の投稿を作成させた一応答を確認した。タイトルと§0はChatGPTで一致し、Humanとの協働を表示した。素材に登場するGrokは提案の出発点として区別され、未測定の効果は断定されなかった。これは明示読込による限定確認であり、自然な自動選択、Grok／Claude実機、読者の理解や投稿反応の改善を実証するものではない。
-
-登録済みの環境では、今回の会話・資料とともに次の入口を使います。
-
-~~~text
-$write-social-post を使い、現在の会話と資料をもとに、あなたとの協働が伝わるX/SNS公開文を作成してください。
-~~~
-
-[共有Skill本文](write-social-post/SKILL.md)は今回の対象・素材・訂正を引き継ぎ、作成・修正・指示文のレビューを区別します。詳しい執筆条件、AI名のFew-shot、既定の完成稿全文X方式4,000カウント以内・§構成・plaintext出力は[公開文Prompt](../prompts/ai-sns-public-post.md)が所有します。Skillは出力前の計測・超過時の調整・変更後の再計測へ接続し、同梱の[計測補助](write-social-post/scripts/count_x_post.cjs)または同等の許可された方法を使います。確認済みの全文は利用し、必要な素材が投稿URLだけの場合はread-social-post等の許可された取得方法へ接続します。共通Prompt本文やAI別のSkillを複製しません。
-
-スキル機構のないAIでは、共有本文のURLと今回の依頼・素材を指示資料として渡せます。原本は利用環境で許可された方法で取得し、全文を取得できなければその不足を示します。URLの共有は、別製品への導入や自動選択の保証ではありません。
 
 **形成と役割。** 2026-10-03、YusukeJPが、ChatGPT／Grok／ClaudeなどのAI名をFew-shotで明示し、実際のAIとの協働を記事内に表示するよう公開文Promptを訂正しました。続く計画と実行承認を受け、write-ai-social-postを作成しました。AIは語り手、Humanは意図・体験・訂正を提供する協働者、元情報は帰属を示す対象として区別します。文章作成からSNS送信を自動開始せず、今回の指定に応じて長さ・形式・構成方法を選べる余地を保ちます。
 
@@ -384,6 +408,47 @@ Radio共有版をもとに、名称・表示・選択条件をPodcastへ更新�
 共有二原本は[継承commit](https://github.com/yusukefujiijp/ai-project/commit/07ff0d8c8884ff072e3735cf8dc71b41192c0b01)から再取得して全文一致を確認した。既存Radioと同じ登録物を通常更新し、登録先RemoteのPodcast本文・表示三項目と共有版の一致も確認した。Voiceの集約参照更新は先に単独保存・確認した。一方、会話内のSkill経路は旧版のままで、新Podcast名の取得は成立していない。保存済みとこの未切替を分け、同じ保存の反復・別登録物の作成で埋めない。
 
 元会話や期待回答を渡さない二つの独立文脈で、同じ候補本文を明示して限定応答を確認した。一つはRepository集約の利点と巨大化の懸念を、例・理由・条件をつないで聴取用の連続した文章にした。もう一つはPodcast Skillの改善依頼へ比較と計画を返し、番組作成や変更を実行しなかった。構成した相談であり、自然発動・旧コマンド転送・Human UI・実聴取・長期効果を実証したとは扱わず、仮想相談をlessonへ登録しない。
+
+<a id="podcast-theme-mode"></a>
+
+#### Podcast Theme Modeへの拡張（2026-10-13）
+
+Themeを選別・抽出・工夫する役割を、既存の `podcast-mode` 内に加えた。Theme提案には比較の説明と各案の独立したコピー用生成依頼を返し、本文生成には耳で理解できる一続きの話を返す。両者の手順は[共有Skill](podcast-mode/SKILL.md)が所有する。
+
+```text
+$podcast-mode でPodcast Theme Modeを使い、今の文脈から、今聴くと価値があるThemeを提案してください。各案に、聴くと何が見えてくるかと、その案だけで使えるコピー用の生成依頼を添えてください。
+```
+
+登録を使えない、または登録側が旧版を返す場合は、上の共有Skillを実際に読んで適用する。Podcast Theme Modeは機能の名称であり、別の `$podcast-theme-mode` の登録を意味しない。Themeが決まった本文生成や「Themeを任せて作って」は直接依頼でき、候補選択を必須工程にしない。コピーした一案は、同じThreadでも別Threadでも使える。生成場所の選択、実際のThread起動・Main移行、保存・公開・予定操作は別の権限と操作である。
+
+**形成と重要な訂正。** Ark28:05でHumanは、Theme段階の命名によって良いThemeの提案へ集中できると説明し、新鮮さ・AIならではの俯瞰・全体横断の切り口を歓迎した。Humanが共有した初穂の助言は、候補名だけでなく「そのThemeを今聴くと、何が見えてくるのか」を含める方向を示した。これはHuman経由で受領した助言であり、今回のAI間直接通信の観測ではない。その後Humanは、本線のThreadでThemeを練り、選んだ案を別のPodcast用Threadへコピーできる案を提示し、同一Threadの本文生成も残すと明示した。三案は例であり固定数ではない。
+
+Humanは2026-10-13のPlan Modeによる計画提示後、GitHubと既存Skillの改訂・確認・初回三案の提示を承認した。本節は本Threadで受領した入力と実装観測の編集要約である。Themeの数や全案のArk限定、別Threadの強制、Humanによる結果の伝言義務を追加せず、Topicに必要な文脈を渡す設計とした。全履歴の複製や別Threadの自動同期を想定せず、後続のHuman訂正・STOPと受け手に適用される必須読解契約を保持する。
+
+**確認範囲。** 改訂本文の形式検査を通過。元会話・期待回答を渡さない四つの独立したAI文脈で、Theme三案の提案、コピーした既出第三案だけからの本文生成、同じThreadでの直接生成を求める依頼、Skill見直しのPlan-only応答を確認した。提案では各案に中心の問い・聴く価値・背景付きの独立したコピー用依頼を返し、本文を生成しなかった。コピーした第三案からの応答は、Repository削除・一択化をHuman報告と方針として受け取り、可能性が広がるというAIの仮説と、集約による混雑・価値の抑圧の懸念を分けて語った。直接生成は候補選択を挟まず、Plan-onlyは比較と計画で止まった。これは限定した応答の観測であり、自然な自動選択、他社AIでの利用、Humanの実聴取・長期効果は未確認。構成した相談を実経験のlessonへ登録していない。
+
+**共有・登録・実利用。** 共有本文は[本文改訂commit](https://github.com/yusukefujiijp/ai-project/commit/2d3bcda7b0edcd39fbefcd2247171c3755179417)、表示三項目は[入口改訂commit](https://github.com/yusukefujiijp/ai-project/commit/647e660a725508e9a22a7d1110027e0ff7105176)でmainへ保存し、それぞれRemoteから再取得して全文一致を確認した。既存のPodcast登録物を通常更新し、登録先Remoteから再取得した本文と表示三項目も共有原本と一致した。登録先の先行する別Skill更新を保持し、公開先masterへ今回の二ファイル差分を保存した。本文は8,499 bytes、SHA-256 `03541cea3801f2f93f3f8cd7019fb4a9ddaa00749bcecbeb237b91e443804430`。この値は今回版の同一性確認であり、将来のCurrentを固定しない。保存後も、この会話内のSkill読取経路はPodcast名で改訂前本文を返した。登録先保存と会話内の最新版取得を分け、同じ保存を反復せず、上の共有本文を実際に読んで今回版へ接続する。Human UI反映・自然発動・実聴取は未確認。新しい別Skill、常設同期、予定、外部送信、旧Radioの退役は行っていない。
+
+### 3.12 Visualize Patchの共通入口
+
+長い指示を毎回貼らず、必要な意味を持つ短い入口から、共通方針・環境差・重大な表示不具合への条件付き補正へ接続します。
+
+```text
+$visualize-patch を使い、現在の依頼・会話・資料・Feedbackから、最も価値のある可視化を設計・作成・検証して提示してください。確認済みと未確認を区別してください。
+
+Skillを呼び出せない場合は、次の共有原本を読んで適用してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKILL.md
+```
+
+本文は[visualize-patch/SKILL.md](visualize-patch/SKILL.md)が所有します。iOS縦画面・タッチ、重要文字の可読性、根拠と未知の区別を基本にし、問い・図・構成・操作方法はAIが選びます。共通の基本設定と重大障害の補正を分け、公式Visualize本体の複製や変更、全要素への一括色指定を前提にしません。新しいFeedbackは、必要な追加だけでなく統合・簡素化・補正の撤去へもつなげます。
+
+公式Visualizeがある時は現行公式契約を読み、存在しない時は実際に利用できる方法を選びます。本文の読解、Skill登録、コード実行、会話内の対話型表示は別です。必須Sourceの取得失敗を機能不在へ読み替えず、静的代替を操作探索と同じ完成にしません。[AGENTSの環境接続](../AGENTS.md#41-runtime-and-skill-gate)の読取対象はArkの対話型可視化作成・修正と公式Visualize不在時の代替判断に絞り、普通の表・単純な図・引用や言及への一律適用を避けます。
+
+**形成と確認範囲。** 2026-10-13のArk99:02で、YusukeJPの文字色Correction、分量による比較の逆転という着眼、創発性を保つパッチ、短いQueryと必要最低限の意味、他AIでの利用、現在の実行承認から作成しました。[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-s01`–`visualize-s08` がHuman入力、`visualize-t01`–`visualize-t03` が限定検証と留保を保持します。再利用する学びは[集約lessons](_references/lessons.jsonl)へ置き、Caffeineの数値・使用経験は領域原本へ残します。
+
+元会話・期待回答を渡さない二つの独立AI文脈で、能力不足・取得失敗・配色指定・計画限定の読解二応答と、別題材の対話型可視化を確認しました。後者は明暗・狭幅・交点前後を含む40条件、キーボード・タッチ、実効色をブラウザで確認し、重要文字の最小コントラストは17.08:1でした。iOS/Safari実機、実会話内表示、他社AI、通常速度のアニメーション、ブラウザからのCDN直接読込は未確認です。文字色の過去の模擬原因を実際のiOS原因と断定しません。
+
+共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。保存後、この会話のSkill一覧では新名称をまだ取得できていないため、現時点では上記の共有本文を読んで接続できます。自然な自動選択・恒久記憶・全AI互換性・実生活の効果は未確認です。
 
 ## 4. Source and distribution
 
@@ -530,4 +595,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.26.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.31.1

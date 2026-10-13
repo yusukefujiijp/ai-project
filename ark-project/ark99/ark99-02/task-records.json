@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark99-02-task-records",
-  "revision": 4,
+  "revision": 5,
   "role": "thread_experience_record",
   "created": "2026-10-11",
   "updated": "2026-10-13",
@@ -13,13 +13,13 @@
     "canonical_path": "ark-project/ark99/ark99-02/task-records.json",
     "reported_date": "2026-10-11",
     "timezone": "Asia/Tokyo",
-    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。 revision 3は2026-10-13T16:05:15+09:00のHumanによるカフェインガムの共通参照先と再確認反復を避ける指定を保存した。製品情報の確認日も同日であり、生活での摂取日時を示さない。 revision 4は2026-10-13に、含有量とその少なさが記憶・記録の勘所であり、缶コーヒー等との比較が重要というHumanの補足を保存した。摂取量・効果の報告ではない。",
+    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。 revision 3は2026-10-13T16:05:15+09:00のHumanによるカフェインガムの共通参照先と再確認反復を避ける指定を保存した。製品情報の確認日も同日であり、生活での摂取日時を示さない。 revision 4は2026-10-13に、含有量とその少なさが記憶・記録の勘所であり、缶コーヒー等との比較が重要というHumanの補足を保存した。摂取量・効果の報告ではない。 revision 5は同日の表示不具合Correction、分量による逆転への着眼、visualize-patchの形成、21:02の計画限定と21:14の実行承認を選択保存する。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。 revision 3の保存権限は今回の製品参照・理解継続の明示依頼に限る。先行する就寝前歯磨き案の実装・摂取・身体Trialの承認へ広げない。 revision 4は製品参照の記憶・記録に関する最新の意味補足を同じ担当原本へ反映するもの。比較画面の操作は摂取や使用実績の記録ではない。",
+    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。 revision 3の保存権限は今回の製品参照・理解継続の明示依頼に限る。先行する就寝前歯磨き案の実装・摂取・身体Trialの承認へ広げない。 revision 4は製品参照の記憶・記録に関する最新の意味補足を同じ担当原本へ反映するもの。比較画面の操作は摂取や使用実績の記録ではない。 revision 5の変更権限はvisualize-s08の現在の承認による。将来の新しい操作を自動承認する記録ではない。",
     "source_access": "当該会話で直接提示されたHuman本文の連続抜粋と、先行するAIの整理を区別して収録する。公開会話URLとサービス側message IDは未提示。ここで採番するSource IDは記録内ID。ChatGPT長期メモリ・別Thread履歴を取り込まない。AI整理の編集要約は逐語引用ではない。",
     "extensions": {
-      "record_cutoff": "2026-10-13のHumanによる、カフェインガムの含有量・含有量の少なさ・缶コーヒー等との比較を記憶の勘所とする補足。"
+      "record_cutoff": "2026-10-13T21:14:04+09:00のHuman承認と、承認後の限定検証。"
     }
   },
   "coverage": {
@@ -33,7 +33,8 @@
       "今回の高評価、save依頼、Ark Recall Portalへの接続提案",
       "Caffeineを一生ものの重要テーマと位置づけ、lifestyle/caffeineへまとめる最新のHuman指定",
       "Arkでいうカフェインガムは常時提示製品を指すというHuman Correctionと、製品の説明を繰り返さず共有理解を継続する指定",
-      "カフェインガムを覚える勘所は含有量と含有量の少なさにあり、缶コーヒー等との比較を重視するというHumanの補足"
+      "カフェインガムを覚える勘所は含有量と含有量の少なさにあり、缶コーヒー等との比較を重視するというHumanの補足",
+      "可視化の文字色へのCorrection、分量による逆転の着眼、共通Skillと短い入口、環境差、創発性を保持する設計と現在の実行承認"
     ],
     "excludes": [
       "全会話の転記、Titleや移行Prompt整備の全文",
@@ -146,6 +147,107 @@
       "locator": "Ark99:02：2026-10-13、既定のカフェインガムの記憶・記録の勘所を補足した発言",
       "excerpt": "最高です！(101/100: It's the best!)\nこのカフェインガムの記憶・記録の勘所は\nCaffeineの含有量および\n含有量の少なさにあります！\n\nつまり、缶コーヒー等とのCaffeine含有量の比較検討が重要です！",
       "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "visualize-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-13 / IMG_1205を伴う文字色へのCorrection",
+      "excerpt": "前からですが\nあなた(AI)のVisualizeスキルには白背景にtitle(今回は\"1粒12mgを、量で比べる\")の色がグレーでほぼほぼ見えない、見えづらいという致命的欠点がある！\n\nこれは何度も繰り返している！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "添付はiOSでのHuman報告を支える。公開会話URLなし。画像自体のGitHub公開や実際のホストCSS原因の特定を意味しない。"
+    },
+    {
+      "id": "visualize-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 同日の後続発言 / 一口比較とパッチ設計の提案",
+      "excerpt": "Humanはコーヒーを一口にすればカフェインガムより少ない含有量になり、値が交差して逆転し得ると着想した。公式Visualize利用時に読むArk用パッチSkillを提案し、致命的エラーへの補正に限定してAIの創発性へ悪影響を与えない設計を最重要とした。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "visualize-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / パッチ名の決定",
+      "excerpt": "visualize-patchでOK！\n冗長性カットの為です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "visualize-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 統合Query案に対するCorrection",
+      "excerpt": "とても良いですがQuery(AI-Prompt)の方が、長すぎては本末転倒です！\nこれって$visualize-patchに内包させてされてQueryを短くした方がスマートではないか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "誤記を含むHuman原文を保持。短いQueryはAIの分析品質や説明の削減指示ではない。"
+    },
+    {
+      "id": "visualize-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 公式VisualizeがないAIへの対応に関する問い",
+      "excerpt": "例えば、VisualizeスキルがないAIの場合どうするか？\n何か工夫やアイデアはあるか？\nOpenAIのVisualizeスキルは他のAIも活用できるのか？",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "visualize-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-13T21:02:00+09:00 / 方向の採用とPlan-only依頼",
+      "excerpt": "共通原本と環境に応じた可視化の方向をまず採用し、Feedbackで柔軟に修正改善するArk Project Styleと、事前準備によるHumanの認知負荷軽減を重視した。まずplan-modeで調査・計画提示を行い、変更や実行をしないよう指定した。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "visualize-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-13T21:14:04+09:00 / 入口文の品質補足",
+      "excerpt": "最低限の文章は入口Queryに入れても構いません！\n必要最低限の文章量と品質は確保して下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "visualize-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 同じ21:14:04+09:00発言 / 提示計画への実行承認",
+      "excerpt": "Humanは入口文の補足に続けてExecute GitHub OK・Human Seal OKと明示し、直前に提示したvisualize-patchの作成・限定検証・原本と案内と記録の保存・Skill登録先への反映を実行するよう承認した。過去の別Thread承認ではない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "visualize-t01",
+      "speaker": "Ark99:02の作業AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / caffeine-visual-stage/contrast-checks.json の直接読取",
+      "excerpt": "既存の検証結果はstatus:pass、actualIOSVerified:false、hostRuleIsSynthetic:true。模擬条件では親要素のコントラスト比約16.29に対し見出しと二つのoutputは約1.16であり、親の設定だけでは失敗を検出できなかった。修正後は幅320/360/390で重要文字の最小比約16.29、全検査対象文字の最小比約6.00だった。",
+      "excerpt_kind": "paraphrase",
+      "note": "これは既存ブラウザ検証の記録。実際のiOS側CSSの採取でも、iOS実機修正成功の証拠でもない。"
+    },
+    {
+      "id": "visualize-a01",
+      "speaker": "Ark99:02の作業AI",
+      "medium": "assistant_message",
+      "locator": "Ark99:02 / 21:02の依頼に対する計画と、21:14の承認後の本文実装",
+      "excerpt": "一つのSkillに共通方針・環境の能力判断・条件付きの重大不具合補正を置く。公式Visualizeがある経路では現行公式契約を読み、存在しない経路では別の対応可能な表示方法を選ぶ。取得失敗と機能不在を混同しない。入口は短いが必要な意味を保持し、普通のMarkdown表や単なる可視化への言及には一律適用しない。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "visualize-t02",
+      "speaker": "Ark99:02の作業AIと独立読解AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / visualize_portable_review / 2026-10-13の二つの限定応答",
+      "excerpt": "元会話・期待回答を渡さず、新しいSkill本文から、公式Visualize不在・Skill登録不可の環境を想定した計画依頼と、その後の必須Source取得失敗・濃紺配色の説明依頼を確認した。共有本文の読解と登録・実行・表示を区別し、取得失敗を機能不在へ読み替えず、Plan-onlyを保ち、現在の配色指定へ適応した。",
+      "excerpt_kind": "paraphrase",
+      "note": "同じ利用環境内の独立したAI文脈での二応答。実際の他社AIでの実行、自然な自動選択、全AI互換性や品質優位を実証しない。"
+    },
+    {
+      "id": "visualize-t03",
+      "speaker": "Ark99:02の作業AIと独立作成AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / visualize_render_case / fare-plan-comparison.html と visualize-patch-validation/render-case/validation.json の直接検分",
+      "excerpt": "元会話・不具合の診断・期待回答を渡さず、月額600円＋1回80円のAと1回140円のBを比べる仮想題材を作成。幅320/352/390/736px、明暗、0/9/10/11/60回の40条件で、計算・交点の前後・横はみ出し・文字衝突・バーの範囲を確認。重要文字の実効コントラスト最小17.08:1、スライダー高44px。キーボード9→10→11、タッチで46回を確認し、検証中のJavaScriptエラーなし。統合担当もソース・集計結果・白背景320pxと暗背景390pxの画像を直接検分した。",
+      "excerpt_kind": "paraphrase",
+      "note": "現行公式VisualizeのプレビューをChromiumで検証。ブラウザのCDN証明書エラーに対し、通常のTLS検証で取得した同一固定版の依存を検証時のみ配信した。CDN直接読込、iOS/Safari実機、実会話内表示は未確認。動作検証は動きの低減が有効で、通常速度のアニメーションはコード点検のみ。仮想料金はCaffeineや実製品の推奨ではない。"
     }
   ],
   "nodes": [
@@ -374,6 +476,125 @@
           "caffeine-s09"
         ]
       }
+    },
+    {
+      "id": "visualize-readability-correction",
+      "kind": "observation",
+      "label": "iOS上の重要文字が薄いという反復Correction",
+      "description": "Humanは白背景上のタイトルが読みにくく、この問題を何度も指摘していると報告した。現在値にも同様の問題が見える添付を受領した。実際のホストCSS原因は未確定。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s01"
+        ]
+      }
+    },
+    {
+      "id": "visualize-volume-crossover",
+      "kind": "practice_statement",
+      "label": "摂る量による含有量の逆転への着眼",
+      "description": "Humanは一口のコーヒーではガム1粒より少ない量になる可能性を発見した。製品単位の大小関係と実際の分量での大小関係を区別し、比較範囲から交点を除外しないという設計上の問いへ接続する。具体的な一口量・摂取・睡眠への適否を確定しない。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s02"
+        ]
+      }
+    },
+    {
+      "id": "visualize-creative-patch-boundary",
+      "kind": "decision",
+      "label": "重大不具合への補正と創発性の両立",
+      "description": "Humanは名称visualize-patchを採用し、パッチによる制約を致命的エラーに限定し、AI創発性への悪影響を避けることを最重要とした。後に内包する共通指針や環境判断を、すべて一律強制のパッチとして扱わない。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s02",
+          "visualize-s03",
+          "visualize-s04"
+        ]
+      }
+    },
+    {
+      "id": "visualize-query-meaning",
+      "kind": "decision",
+      "label": "入口は必要な意味を保ち、定型指針をSkillに持たせる",
+      "description": "Humanは長すぎるQueryを訂正し、共通の指針をSkillに内包する方向を採用した。最新入力で入口Queryに最低限の文章量と品質を確保することも明示した。文字数最小化やAI回答の抑制を目標にしない。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s04",
+          "visualize-s07"
+        ]
+      }
+    },
+    {
+      "id": "visualize-portable-core",
+      "kind": "decision",
+      "label": "共通原本と環境別の実現方法を分ける",
+      "description": "公式Visualize不在の場合も考慮するHumanの問いを受け、一つの共通原本を各AIが必要に応じて読み、登録・実行・表示機能を区別して目的に合う経路を選ぶ方向が採用された。全AI互換性の実証や他社への公式Skill導入承認ではない。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s05",
+          "visualize-s06"
+        ]
+      }
+    },
+    {
+      "id": "visualize-patch-execution-authority",
+      "kind": "decision",
+      "label": "計画の提示後、範囲を定めた実装・保存を承認",
+      "description": "21:02のPlan-onlyで変更せず計画を提示した後、21:14のHumanが入口文の品質を補足して計画実行を承認した。GitHub・Skill原本・案内・既存記録・導入・限定検証を対象とし、他AIへの外部通信・公開サイト・Caffeine実摂取へ権限を広げない。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s06",
+          "visualize-s07",
+          "visualize-s08"
+        ]
+      }
+    },
+    {
+      "id": "visualize-contrast-model",
+      "kind": "observation",
+      "label": "模擬条件での再現と局所補正の限定確認",
+      "description": "親の濃い色だけでは重要文字が読めることを保証しないと、既存のブラウザ検証で確認した。重要要素まで局所的に補正した結果を保持するが、実際のiOS CSS原因や他の全表示環境への適合とは区別する。",
+      "scope": "Ark99:02でCaffeine比較から生じた可視化の品質・共通入口の改善。摂取や身体Trialを開始しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "visualize-t01"
+        ]
+      }
+    },
+    {
+      "id": "visualize-limited-transfer-check",
+      "kind": "observation",
+      "label": "元会話なしの読解と別題材の表示を限定確認",
+      "description": "二つの独立AI文脈で、共通方針の読解と可視化作成を確認した。重要な文字と操作後の値、能力と権限の区別が保持された。登録先保存・自動選択・iOS実機・他社AI成功とは別の確認である。",
+      "scope": "visualize-patch初版の転用可能性を確かめる限定検証。各留保はSourcesを参照。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "visualize-t02",
+          "visualize-t03"
+        ]
+      }
     }
   ],
   "edges": [
@@ -544,6 +765,51 @@
           "caffeine-s09"
         ]
       }
+    },
+    {
+      "id": "readability-motivates-patch",
+      "from": "visualize-readability-correction",
+      "to": "visualize-creative-patch-boundary",
+      "relation": "motivates",
+      "scope": "反復する表示上の不具合から、限定した補正を共通化する提案へ進んだ。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s01",
+          "visualize-s02"
+        ]
+      }
+    },
+    {
+      "id": "query-refines-patch",
+      "from": "visualize-query-meaning",
+      "to": "visualize-creative-patch-boundary",
+      "relation": "motivates",
+      "scope": "共通指針をSkillへ持たせる一方、補正の強制度とAI裁量を区別する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s04",
+          "visualize-s07"
+        ]
+      }
+    },
+    {
+      "id": "portable-core-authorized",
+      "from": "visualize-patch-execution-authority",
+      "to": "visualize-portable-core",
+      "relation": "prioritizes",
+      "scope": "初版でこの方向を実装し、Feedbackで改善する。全環境の実証を表さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "visualize-s06",
+          "visualize-s08"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -583,6 +849,38 @@
         ],
         "note": "この会話に具体的な摂取条件の報告はない。"
       }
+    },
+    {
+      "id": "visualize-ios-repair-unverified",
+      "subject_refs": [
+        "visualize-readability-correction",
+        "visualize-contrast-model"
+      ],
+      "question": "実際のiOS表示基盤での原因と補正後の見え方は未確認。",
+      "scope": "通常利用のHuman Feedbackで更新できる。模擬試験を実機成功へ変えない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "visualize-t01"
+        ]
+      }
+    },
+    {
+      "id": "visualize-cross-environment-unverified",
+      "subject_refs": [
+        "visualize-portable-core"
+      ],
+      "question": "他社AIや別の表示環境での読解・操作・表示の成功は未確認。",
+      "scope": "実際に利用する環境が必要になった時に確認し、全Unknown解消を初版作成の条件にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "visualize-s05",
+          "visualize-a01"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -620,11 +918,34 @@
         "source_refs": [
           "caffeine-s09"
         ]
+      },
+      {
+        "revision": 5,
+        "date": "2026-10-13",
+        "reason": "Caffeine比較から生じた可視化改善のHuman発言、最低限の入口品質、共通原本と環境差、文字色の模擬検証の境界を保存。既存の全Sources/Nodes/Edges/Unknownを保持する。元会話を継承しない二つの文脈による読解・別題材での表示確認と限界を追加した。",
+        "source_refs": [
+          "visualize-s01",
+          "visualize-s02",
+          "visualize-s03",
+          "visualize-s04",
+          "visualize-s05",
+          "visualize-s06",
+          "visualize-s07",
+          "visualize-s08",
+          "visualize-t01",
+          "visualize-a01",
+          "visualize-t02",
+          "visualize-t03"
+        ]
       }
     ],
     "domain_entry": {
       "path": "lifestyle/caffeine/README.md",
       "role": "Caffeineの長期テーマと、Ark共通のカフェインガム参照の入口。本人の原発言・訂正・出来事の原本は本Task Records等が保持する。"
+    },
+    "visualization_method": {
+      "path": "skills/visualize-patch/SKILL.md",
+      "role": "再利用する可視化方針・条件付き補正の担当原本。Caffeineの数値・身体条件を所有しない。"
     }
   }
 }

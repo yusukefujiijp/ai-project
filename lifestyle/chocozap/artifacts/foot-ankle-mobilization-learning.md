@@ -5,7 +5,7 @@ created: 2026-10-06
 updated: 2026-10-08
 timezone: Asia/Tokyo
 canonical_path: lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md
-navigation_patch: "2026-10-13: lifestyle配下への移設に伴う所在とリンクのみ更新。学習本文・出所・v002の読解契約を保持"
+navigation_patch: "2026-10-14: lifestyle配下への移設に伴う所在とリンクのみ更新。学習本文・出所・v002の読解契約を保持"
 document_role: learning-and-discovery-record
 status: active
 human: YusukeJP

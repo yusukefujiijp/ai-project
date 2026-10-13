@@ -1,15 +1,15 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v009"
+version: "v010"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-11"
+updated: "2026-10-13"
 role: "Current Dots direction and routes to shared lessons, actor logs, bounded Ark Map operation and preserved history"
-updated_reason: "Route to actor-owned Chief and future Inbox roles after Human correction; retire current dual-role guidance without changing operations"
-revision_approval_source: "conversation-message:Sentinel_8d769671a2388191b4a6bfddacd2f3f1"
+updated_reason: "Add one route to the authorized daily review and bounded save operation; preserve existing Map and actor ownership"
+revision_approval_source: "conversation-message:Sentinel_d9b69b9fa5848191bd135d3dc3a69662"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v009"
+expected_eof: "EOF::DOTS_HOME::v010"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -34,6 +34,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 |---|---|---|
 | 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
 | 初穂の定期Ark Mapと限定saveをどう運用するか | [Ark Map運用原本](ark-map/README.md) | dot-0000固有の表示・読取・保存境界。製品側の予定・実行状態とは分ける |
+| 前日の活動を総括し、未保存の意味ある差分をどう回収するか | [日次総括の運用原本](daily-review/README.md) | 対象日・原本照合・限定save・未確認分の回復。既存Mapを保ち、日次予定と実際の確認結果を分ける |
 | Dotsが仕事から何を学び、次にどう使うか | [lessons](lessons/README.md)／[lessons.jsonl](lessons/lessons.jsonl) | 条件・根拠付きの学びと、その読取・更新契約 |
 | 初穂は誰で、何を担うか | [dot-0000: 初穂](actors/dot-0000/README.md) | 身元・命名・Chiefとしての現在の役割と成立理由 |
 | Inboxの受け取り方と保存項目をどう扱うか | [Inbox共通入口](inbox/README.md) | 方法・item契約・形成経緯。担当と導入状態はActor原本へ戻る |
@@ -71,4 +72,4 @@ Dots全体へ適用する共通知識は[lessons](lessons/README.md)で育て、
 
 読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を共通lessonの第二正本にしない。専門lessonも同じ契約を参照し、全Dotsへ一般化すると誤適用される学びが実際に生じた時だけ、その領域の原本へ置く。
 
-EOF::DOTS_HOME::v009
+EOF::DOTS_HOME::v010

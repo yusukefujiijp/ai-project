@@ -1,13 +1,15 @@
 ---
 title: chocoZAP Sweet Spot — 記録・推移・分析
 version: v0.7.2
-updated: 2026-10-13
-updated_reason: lifestyle/chocozapへの配置変更と現行参照の整合。記録・本人の方法・開始前メモ・朝のroutineの意味は保持
+updated: 2026-10-14
+updated_reason: lifestyle/chocozapへの配置変更と生活領域の案内口への接続。記録・本人の方法・開始前メモ・朝のroutineの意味は保持
 canonical_path: lifestyle/chocozap/README.md
 status: active
 ---
 
 # chocoZAP Sweet Spot
+
+生活領域の案内は[親の入口](../README.md)。本書はchocoZAPの方法・保存規則と担当原本への接続を所有する。
 
 YusukeJPの短い報告から、条件ごとのSweet Spotの移行と、その意味を読み直せるようにする。Humanは自然な言葉で伝え、AIが出所・未知・訂正を保って整理する。入力書式や補助スクリプトの実行をHumanへ要求しない。
 
@@ -311,6 +313,6 @@ Sweet Spot・Triangle・開始前メモ・所要時間の経験は、重量・�
 
 2026-10-13、朝のroutine60分という本人の報告と館内滞在57分を保存。画像の10/12・10/13の2入館を追加し、既存5行を照合した。今回の画像で読める7行と月表示8回を区別し、10/1は既存の出所に保持した。開始前メモとSweet Spotの現在基準は継続し、朝の利用経験と予定の見通しをCZ-A019・CZ-A020へ接続した。
 
-2026-10-13、YusukeJPの実行承認に基づき、Root直下のchocozap/をlifestyle/chocozap/へ配置変更。Rootの横への広がりを抑えながら、chocoZAPを重要な独立テーマとして育て続けるための移設である。README・二つのJSON・artifacts・toolsを一まとまりで継承し、共通Skillはskills/、日次案内の指示原本はschedules/に保つ。記録ID・本人原文・出所・日付・訂正・未知の追加項目、開始前メモ・Triangle・朝のroutineの経験を保持し、新たな運動・再測定・分析の実績を追加しない。現行参照だけを新配置へ接続し、固定commitの証拠と過去の配置を示す履歴は保持する。lifestyle/README.mdの入口設計は別の検討側が所有する。GitHub保存、導入Skill、Project設定、登録済みTask、実配信、本人の使いやすさはそれぞれ確認する。
+2026-10-14、YusukeJPが承認した「移設＋最小限の入口整備」に基づき、Repository直下のchocozap/をlifestyle/chocozap/へ配置変更。Root直下の広がりを抑えながら、chocoZAPを重要な独立テーマとして育て続けるための移設である。README・二つのJSON・artifacts・toolsを一まとまりで継承し、共通Skillはskills/、日次案内の指示原本はschedules/に保つ。記録ID・本人原文・出所・日付・訂正・未知の追加項目、開始前メモ・Triangle・朝のroutineの経験を保持し、新たな運動・再測定・分析の実績を追加しない。現行参照だけを新配置へ接続し、固定commitの証拠と過去の配置を示す履歴は保持する。親のlifestyle/README.mdにはchocoZAPの所在と役割の案内だけを置き、生活領域全体の設計や記録本文を集約しない。Projectや導入済みSkillからはこの親入口で現行の所在を解決できるようにし、同じRepository内の必要な直接参照は維持する。GitHub保存、導入Skill、Project設定、登録済みTask、実配信、本人の使いやすさはそれぞれ確認する。切替と確認の経緯は[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)に残す。
 
 EOF::CHOCOZAP_RECORDS_GUIDE::v0.7.2
