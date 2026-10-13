@@ -3,23 +3,23 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark99-02-task-records",
-  "revision": 5,
+  "revision": 6,
   "role": "thread_experience_record",
   "created": "2026-10-11",
-  "updated": "2026-10-13",
+  "updated": "2026-10-14",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark99:02",
     "canonical_path": "ark-project/ark99/ark99-02/task-records.json",
     "reported_date": "2026-10-11",
     "timezone": "Asia/Tokyo",
-    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。 revision 3は2026-10-13T16:05:15+09:00のHumanによるカフェインガムの共通参照先と再確認反復を避ける指定を保存した。製品情報の確認日も同日であり、生活での摂取日時を示さない。 revision 4は2026-10-13に、含有量とその少なさが記憶・記録の勘所であり、缶コーヒー等との比較が重要というHumanの補足を保存した。摂取量・効果の報告ではない。 revision 5は同日の表示不具合Correction、分量による逆転への着眼、visualize-patchの形成、21:02の計画限定と21:14の実行承認を選択保存する。",
+    "time_note": "記録日は2026-10-11。今回の保存依頼の表示時刻は2026-10-11T13:17:15+09:00。先行するTheme指定・洗濯・買い物の発言は会話内の順序と文面で所在を示す。各生活行動の実施日時は未報告であり、記録日を実施日へ転用しない。 revision 2は2026-10-13に、同日14:17:53+09:00のHumanによる長期テーマ化と保存先指定を追記した。初版の出来事日時・未報告条件を変更しない。 revision 3は2026-10-13T16:05:15+09:00のHumanによるカフェインガムの共通参照先と再確認反復を避ける指定を保存した。製品情報の確認日も同日であり、生活での摂取日時を示さない。 revision 4は2026-10-13に、含有量とその少なさが記憶・記録の勘所であり、缶コーヒー等との比較が重要というHumanの補足を保存した。摂取量・効果の報告ではない。 revision 5は同日の表示不具合Correction、分量による逆転への着眼、visualize-patchの形成、21:02の計画限定と21:14の実行承認を選択保存する。 revision 6は2026-10-14に、先行する歯磨きの希望・寝落ちの報告・実装保留、後続の二つの可視化結果、登録済みSkillの取得、02→03の局所継続指定と01:20:54+09:00の実行承認を保存した。歯磨き等の実施日時を記録日から作らない。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。 revision 3の保存権限は今回の製品参照・理解継続の明示依頼に限る。先行する就寝前歯磨き案の実装・摂取・身体Trialの承認へ広げない。 revision 4は製品参照の記憶・記録に関する最新の意味補足を同じ担当原本へ反映するもの。比較画面の操作は摂取や使用実績の記録ではない。 revision 5の変更権限はvisualize-s08の現在の承認による。将来の新しい操作を自動承認する記録ではない。",
+    "authority_note": "中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Seal、Body/Sleep/Food/Medical等のGuardを保持する。現在のsave依頼に基づく選択保存であり、過去の00の承認を流用しない。摂取・身体Trial・外部通信・Reset・Thread移行を開始する権限ではない。AI・記録・Portal・CaffeineはKeliであり、Rootや信仰的判断の代替ではない。 revision 3の保存権限は今回の製品参照・理解継続の明示依頼に限る。先行する就寝前歯磨き案の実装・摂取・身体Trialの承認へ広げない。 revision 4は製品参照の記憶・記録に関する最新の意味補足を同じ担当原本へ反映するもの。比較画面の操作は摂取や使用実績の記録ではない。 revision 5の変更権限はvisualize-s08の現在の承認による。将来の新しい操作を自動承認する記録ではない。 revision 6はtransition-s02の移行準備計画への承認による保存。Source側の準備とTargetの権限・再構成、実際の生活行動を区別する。",
     "source_access": "当該会話で直接提示されたHuman本文の連続抜粋と、先行するAIの整理を区別して収録する。公開会話URLとサービス側message IDは未提示。ここで採番するSource IDは記録内ID。ChatGPT長期メモリ・別Thread履歴を取り込まない。AI整理の編集要約は逐語引用ではない。",
     "extensions": {
-      "record_cutoff": "2026-10-13T21:14:04+09:00のHuman承認と、承認後の限定検証。"
+      "record_cutoff": "2026-10-14T01:20:54+09:00のHumanによる移行準備実行承認と、その準備中の既存成果物・登録済みSkillの確認。全会話の完全収録ではない。"
     }
   },
   "coverage": {
@@ -34,7 +34,10 @@
       "Caffeineを一生ものの重要テーマと位置づけ、lifestyle/caffeineへまとめる最新のHuman指定",
       "Arkでいうカフェインガムは常時提示製品を指すというHuman Correctionと、製品の説明を繰り返さず共有理解を継続する指定",
       "カフェインガムを覚える勘所は含有量と含有量の少なさにあり、缶コーヒー等との比較を重視するというHumanの補足",
-      "可視化の文字色へのCorrection、分量による逆転の着眼、共通Skillと短い入口、環境差、創発性を保持する設計と現在の実行承認"
+      "可視化の文字色へのCorrection、分量による逆転の着眼、共通Skillと短い入口、環境差、創発性を保持する設計と現在の実行承認",
+      "就寝前（昼寝を含む）の歯磨きの希望・寝落ちの報告とまだ実装しない指定",
+      "コーヒー一口・口数を含む二つの可視化と計算・表示の限定検証、登録済みパッチ取得の確認",
+      "Ark99:02から既存Ark99:03へCaffeineを継続するHuman指定、計画限定後の実行承認"
     ],
     "excludes": [
       "全会話の転記、Titleや移行Prompt整備の全文",
@@ -248,6 +251,95 @@
       "excerpt": "元会話・不具合の診断・期待回答を渡さず、月額600円＋1回80円のAと1回140円のBを比べる仮想題材を作成。幅320/352/390/736px、明暗、0/9/10/11/60回の40条件で、計算・交点の前後・横はみ出し・文字衝突・バーの範囲を確認。重要文字の実効コントラスト最小17.08:1、スライダー高44px。キーボード9→10→11、タッチで46回を確認し、検証中のJavaScriptエラーなし。統合担当もソース・集計結果・白背景320pxと暗背景390pxの画像を直接検分した。",
       "excerpt_kind": "paraphrase",
       "note": "現行公式VisualizeのプレビューをChromiumで検証。ブラウザのCDN証明書エラーに対し、通常のTLS検証で取得した同一固定版の依存を検証時のみ配信した。CDN直接読込、iOS/Safari実機、実会話内表示は未確認。動作検証は動きの低減が有効で、通常速度のアニメーションはコード点検のみ。仮想料金はCaffeineや実製品の推奨ではない。"
+    },
+    {
+      "id": "caffeine-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 長期テーマ指定後・カフェインガムの製品指定前 / 就寝前歯磨きについてのTeshuvah",
+      "excerpt": "就寝前(昼寝等含む)の歯磨き時にCaffeine系のサポートが必要な場合が多々ある！この場合はまずは(First of all)、Caffeine無しのガムで代用し歯磨き系にChallengeする事、そして上手くいかない場合は少量Caffeineであるカフェインガムを使ってでも必ず歯磨きは達成させる事が重要だが、実際はできず、理想論で終わり寝落ちしてしまい主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の希望・提案と、歯磨きを達成できず寝落ちしたという報告を分ける。実際のガム使用・摂取量・具体的な実施日時はこの発言から確定しない。"
+    },
+    {
+      "id": "caffeine-s11",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / caffeine-s10と同じHumanメッセージの末尾",
+      "excerpt": "まだ実装せず、コメント全部に対応して下さい！できる限り極力深く考えましょう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "後続の製品指定・量比較・可視化・移行保存承認で、この生活上の案を実装済み・推奨・身体Trial承認へ変えない。今回の保存は保留の意味を残すもの。"
+    },
+    {
+      "id": "visualize-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / visualize-patch実装後 / コーヒー一口を含める作成依頼",
+      "excerpt": "最高です！(101/100: It's the best!)\nでは早速コーヒー一口も入れた分を",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じメッセージで$visualize-patchと共有原本URLを指定し、現在の依頼・資料・Feedbackに基づく作成・検証・提示を依頼した。高評価は受領した範囲のHuman評価であり、後続作品のiOS実機成功報告ではない。"
+    },
+    {
+      "id": "visualize-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / visualize-s09後 / 公式Visualizeの五指針を再提示した依頼",
+      "excerpt": "Humanは公式Visualizeによる作成・検証・会話内表示を依頼し、AI側へ問い・図・構成・操作設計を委ねた。iOS縦画面とタッチ、白背景と濃い重要文字、根拠と未知の区別、最初に試す操作の案内、AI確認とHuman実機確認の区別を維持した。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "visualize-t04",
+      "speaker": "Ark99:02の作業AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / caffeine-sip-checks.json と caffeine-sip-crossover.html / 2026-10-14の移行準備で現物を再確認",
+      "excerpt": "一口から比べるCaffeineのブラウザ検証結果はstatus=pass、28ケース、JavaScript errors=[]。初期値はブラック10g・4mg対ガム1粒12mg。製品・分量・同量点・交点前後・ゼロ・320/390px・明暗・模擬の薄色上書き・操作後・通常アニメーション終端を含む。重要文字の最小コントラスト16.2935:1、全検査対象文字は5.9977:1。",
+      "excerpt_kind": "paraphrase",
+      "note": "既存の試験ファイルを直接再読した確認であり、今回の試験再実行ではない。actualIOSVerified=false。公式プレビューiframeをChromiumで検査し、依存は通常TLSで確認済みの固定版をローカル配信したため、Live CDN直接読込は未検証。HTMLは16,546 bytes、SHA-256 d3425008f76be0d9a90c3c42c6d94aba646deb91134466761023a260a39c076d。ローカル成果物をTargetから取得可能とは仮定しない。"
+    },
+    {
+      "id": "visualize-t05",
+      "speaker": "Ark99:02の作業AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / caffeine-sip-size-checks.json と caffeine-sip-size.html / 2026-10-14の移行準備で現物を再確認",
+      "excerpt": "一口から探る逆転点のブラウザ検証結果はstatus=pass、33ケース、JavaScript errors=[]。1粒12mgを基準とし、一口量5–30g、1–6口、3製品を比較する。ブラック10g×3口=12mg、15g×2口=12mg、50mg/100g製品は総量24gで12mg。交点前後・320/390px・明暗・模擬の薄色上書き・キーボード・タッチ・通常アニメーション終端を含む。重要文字最小16.2935:1、全検査対象文字5.9977:1。",
+      "excerpt_kind": "paraphrase",
+      "note": "既存試験ファイルの直接再読であり、今回の再実行ではない。actualIOSVerified=false、同じ一口質量が続く計算上の仮定。公式プレビューiframeとローカル配信した固定依存での確認に限り、Live CDN直接読込・iOS/Safari実機・身体効果は未確認。HTMLは16,179 bytes、SHA-256 da43de6b8810abd65410c1118420ef451ac91948501b812d66b9db07322c4dcb。"
+    },
+    {
+      "id": "visualize-t06",
+      "speaker": "Ark99:02の作業AI",
+      "medium": "tool_result",
+      "locator": "Ark99:02 / 2026-10-14 / 登録済みvisualize-patchのskills.readとCurrent GitHub本文の文字列照合",
+      "excerpt": "現在のSkillカタログからvisualize-patchを呼び出して全文取得できた。登録版の本文とGitHub mainのskills/visualize-patch/SKILL.mdは文字列として一致した。共有blobは14bb2b77bed22896f0978c4b194d8a7afdfeeb09。",
+      "excerpt_kind": "paraphrase",
+      "note": "初版保存直後のカタログ未取得は当時の観測として残す。今回の取得成功を自然な自動発動、他AI互換性、iOS実機表示の保証へ拡張しない。"
+    },
+    {
+      "id": "transition-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-14 JST / Ark99:03への継続を指定した移行計画依頼",
+      "excerpt": "Ark99:03をこの99:02から引き継がせよう！思った以上に、長くなったからです！Themeは引き続きCaffeine系です！\n\n本来は、Ark99は**Teshuvah**単発Threadですが、今回は柔軟に対応して下さい！\nArk99としてプレーンな状態のArk99:03は既に準備されているので引き継ぎAI-Promptで移行しよう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じメッセージではprepare-ark-transitionによる調査と計画まで、変更・保存・完成起動パッケージ発行・実際の移行をしないよう指定。既存03の準備済み状態はHuman報告。"
+    },
+    {
+      "id": "transition-a01",
+      "speaker": "Ark99:02の応答AI",
+      "medium": "assistant_message",
+      "locator": "Ark99:02 / transition-s01への計画応答 / transition-s02直前",
+      "excerpt": "02→既存03のTHREAD_CONTINUEを一件限りの例外として提案。Source記録・Caffeine量比較・保留の歯磨き案・Skill取得の時点差を更新し、03 README→handoff→stateを作成・保存・再取得して、SourceとTarget双方のTitleコピー面を渡す計画を提示した。Title候補はArk99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\"。その時点では書込も完成Query発行も行わず停止した。",
+      "excerpt_kind": "paraphrase",
+      "note": "Titleの日付は00の既存準備表記を保持する選択。後続Humanがこの計画を実行承認したため、今回の起動用TitleとしてCompileする。UI改名を確認した証拠ではない。"
+    },
+    {
+      "id": "transition-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:02 / 2026-10-14T01:20:54+09:00 / 直前の移行準備計画への実行承認",
+      "excerpt": "最高です！(101/100: It's the best!)\n\nOK！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じメッセージで実行・継続を明示した。承認対象は直前の02→03移行準備計画。無制限の通信・Reset・別Task・身体TrialやTarget側外部変更への転用はしない。"
     }
   ],
   "nodes": [
@@ -595,6 +687,107 @@
           "visualize-t03"
         ]
       }
+    },
+    {
+      "id": "bedtime-toothbrushing-intent",
+      "kind": "practice_statement",
+      "label": "就寝前の歯磨きを達成したいという希望と段階案",
+      "description": "Humanは昼寝を含む就寝前の歯磨きで支援が必要なことが多いと述べ、まずCaffeineなしのガム、難しい時は少量Caffeineのガムを使ってでも歯磨きを達成したいという案を示した。",
+      "scope": "当時の希望・案。推奨摂取手順・毎回の義務・実装済み運用ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s10"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-toothbrushing-sleep-report",
+      "kind": "observation",
+      "label": "理想論で終わり寝落ちしたという本人報告とTeshuvah",
+      "description": "本人は実際には歯磨きを達成できず寝落ちしてしまうと報告し、主イェシュアへの謝罪とTeshuvahを表現した。AIが信仰状態や成分不足を原因として認定しない。",
+      "scope": "当該発言の本人報告。特定日時の実測、実際のガム使用・量・効果は未確定。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s10"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-toothbrushing-held",
+      "kind": "decision",
+      "label": "歯磨き案は検討・言語化に留める",
+      "description": "同じHumanメッセージでまだ実装せず全コメントへ対応するよう指定された。製品特定・量比較や移行記録の承認から、歯磨き案の実装・身体Trial承認を導かない。",
+      "scope": "保留Branchとして保持。現在のHumanが再開を選ぶまで生活上の運用へ昇格しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-s11"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-sip-visual-results",
+      "kind": "observation",
+      "label": "一口を含む二つの比較画面と限定検証",
+      "description": "量を直接比べる画面と、一口量・口数から逆転点を探る画面が作成された。既存ファイルと28/33ケースのpassを直接再確認した。画面上の仮定と計算を、実際の一口量・摂取量・効果へ変えない。",
+      "scope": "再取得したローカル成果物と検証記録。iOS実機・別Threadへの自動引継ぎは未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "visualize-s09",
+          "visualize-s10",
+          "visualize-t04",
+          "visualize-t05"
+        ]
+      }
+    },
+    {
+      "id": "visualize-native-read-confirmed",
+      "kind": "observation",
+      "label": "登録済みパッチの取得と共有本文一致を確認",
+      "description": "この環境でvisualize-patchをSkillとして取得し、Current共有原本との本文一致を確認した。初版保存直後のカタログ未取得を現在の機能不在と扱わない。",
+      "scope": "2026-10-14のSource02での直接確認。Targetでも同じ登録があるとは仮定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "visualize-t06"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-continuation-exception",
+      "kind": "decision",
+      "label": "既存Ark99:03を02のCaffeine継続へ使う局所例外",
+      "description": "Humanは02が長くなったため、既にプレーンな状態で準備された03へCaffeineテーマを引き継ぐと指定した。00は当初の準備元、02は今回の内容引継ぎ元。一般の新規Teshuvah運用やMain/Supportの所有を改訂しない。",
+      "scope": "今回の02→03 THREAD_CONTINUEだけ。03に別件が既にあったと推測しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s01"
+        ]
+      }
+    },
+    {
+      "id": "caffeine-continuation-preparation-authorized",
+      "kind": "decision",
+      "label": "移行準備計画への実行承認",
+      "description": "計画限定の応答後、HumanがGitHub実行・継続を承認した。既存記録の必要差分、03受入れ資料、保存確認、Titleと起動Queryの提供を行う範囲。",
+      "scope": "Source側準備の承認。Target自身の再構成、Humanの貼付・改名、生活上の効果は別の観測。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-s02"
+        ]
+      }
     }
   ],
   "edges": [
@@ -810,6 +1003,53 @@
           "visualize-s08"
         ]
       }
+    },
+    {
+      "id": "bedtime-first-hold",
+      "from": "bedtime-toothbrushing-held",
+      "to": "bedtime-toothbrushing-intent",
+      "relation": "defers",
+      "scope": "当時の実装保留。価値や検討の永久放棄ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "caffeine-s10",
+          "caffeine-s11"
+        ]
+      }
+    },
+    {
+      "id": "sip-view-from-human-question",
+      "from": "visualize-volume-crossover",
+      "to": "caffeine-sip-visual-results",
+      "relation": "motivates",
+      "scope": "一口比較の問いから二つの表示と計算へ。身体上の因果の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "visualize-s02",
+          "visualize-s09",
+          "visualize-t04",
+          "visualize-t05"
+        ]
+      }
+    },
+    {
+      "id": "continuation-from-local-exception",
+      "from": "caffeine-continuation-exception",
+      "to": "caffeine-continuation-preparation-authorized",
+      "relation": "motivates",
+      "scope": "03再利用を具体化する計画への現在の承認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "transition-s01",
+          "transition-s02"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -881,6 +1121,40 @@
           "visualize-a01"
         ]
       }
+    },
+    {
+      "id": "actual-sip-size",
+      "subject_refs": [
+        "caffeine-sip-visual-results"
+      ],
+      "question": "本人の一口の実際の質量・口ごとの差・実際の摂取は未報告。",
+      "scope": "10gなどを仮定と明示した比較は可能。全解消を移行条件にせず、身体計測やTrialを自動開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "visualize-s09",
+          "visualize-t04",
+          "visualize-t05"
+        ]
+      }
+    },
+    {
+      "id": "bedtime-use-applicability",
+      "subject_refs": [
+        "bedtime-toothbrushing-intent",
+        "bedtime-toothbrushing-held"
+      ],
+      "question": "保留案を現在の生活に適用するか、歯磨きと睡眠にどう影響するかは未確認。",
+      "scope": "新しいHuman入力でこのBranchが選ばれた時に判断を変える差分だけ扱う。移行保存は実装解除ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "caffeine-s10",
+          "caffeine-s11"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -937,6 +1211,23 @@
           "visualize-t02",
           "visualize-t03"
         ]
+      },
+      {
+        "revision": 6,
+        "date": "2026-10-14",
+        "reason": "承認された移行準備として、欠けていた歯磨きBranch、二つのCaffeine可視化と登録済みSkill取得、今回の局所例外・計画承認を追記。revision 5までの全Sources/Nodes/Edges/Unknownを保持する。",
+        "source_refs": [
+          "caffeine-s10",
+          "caffeine-s11",
+          "visualize-s09",
+          "visualize-s10",
+          "visualize-t04",
+          "visualize-t05",
+          "visualize-t06",
+          "transition-s01",
+          "transition-a01",
+          "transition-s02"
+        ]
       }
     ],
     "domain_entry": {
@@ -946,6 +1237,26 @@
     "visualization_method": {
       "path": "skills/visualize-patch/SKILL.md",
       "role": "再利用する可視化方針・条件付き補正の担当原本。Caffeineの数値・身体条件を所有しない。"
+    },
+    "caffeine_visualizations": {
+      "role": "Source02で作成した表示の意味・操作・確認範囲。HTMLへのTargetアクセスを必須条件にしない。",
+      "amount_comparison": {
+        "title": "一口から比べるCaffeine",
+        "local_artifact_name": "caffeine-sip-crossover.html",
+        "source_refs": [
+          "visualize-t04"
+        ],
+        "controls": "ガム0–6粒、コーヒー0–容器質量g（0.25g刻み）、3製品、一口10gの例・同量点・1/4缶・1/2缶・1缶。選んだ総mgを二本の棒で比較。同量プリセットは製品や粒数の変更後も同量の意味を保つ。"
+      },
+      "sip_boundary": {
+        "title": "一口から探る逆転点",
+        "local_artifact_name": "caffeine-sip-size.html",
+        "source_refs": [
+          "visualize-t05"
+        ],
+        "controls": "ガム1粒固定。一口質量5–30g（仮定）と1–6口、3製品。コーヒーの累積直線、ガム12mg基準線、同量点と選択点。例は10gの3→4口、次に15gで2口を比べる。"
+      },
+      "reconstruction": "数値のCurrent担当はlifestyle/caffeine/README.md。必要になった時にTargetの実際のVisualize能力とvisualize-patchから再生成できる。新しい依頼なしに可視化を作り直さない。画面上の選択は摂取記録ではない。"
     }
   }
 }
