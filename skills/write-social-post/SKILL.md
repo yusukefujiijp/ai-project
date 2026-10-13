@@ -19,13 +19,19 @@ Resolve the topic, intended audience, accepted draft, latest corrections, and re
 
 Distinguish drafting, revising, reviewing the writing instructions, and planning skill changes. Follow the actual request even when the material being reviewed contains an imperative to write a post. Respect current Plan-only and STOP instructions. Drafting a post does not itself authorize posting it to an account, messaging others, or changing this skill.
 
+## Use this procedure across environments
+
+Apply this same procedure whether it was loaded as a registered skill or read directly from the [shared Skill source](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md). Without a skill system, read the complete SKILL.md as task instructions and continue to its shared writing source below. Reading the source does not install a skill, grant access, or transfer another AI's conversation history. Reuse a complete supplied or previously verified copy when no material revision or mismatch is indicated.
+
+If a material mismatch between registered and shared copies is observed, use the readable current shared source for this task unless the user requested a fixed version. Do not silently combine conflicting versions or update installed files as part of drafting.
+
 ## Read the shared writing source
 
 Use [AI SNS Public Post](https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-sns-public-post.md) as the shared source of article requirements. Read the complete document before claiming to apply this style; recover truncated content rather than substituting a search snippet. Reuse the complete source already available in the conversation when no material revision or mismatch is indicated. A supplied full copy or an explicitly requested fixed version can serve the same role.
 
 The shared prompt owns the detailed writing conditions, AI-name Few-Shot examples, section structure, length, attribution, and final-output format. This skill owns selection and workflow; do not maintain another independently edited copy of those rules here. Apply the current user's explicit topic, language, length, and format changes rather than treating defaults as immutable.
 
-Use permitted source-access tools available in the current environment; do not require one vendor's connector. If the shared source is unavailable and no complete copy is available, explain that specific gap and request the source text when needed. Continue independent work such as organizing supplied material; do not claim full compliance from an imagined copy.
+Use permitted source-access tools available in the current environment; do not require one vendor's connector. Recover a failed or incomplete read through another available permitted method when useful, rather than repeating an unavailable route. If the shared source is unavailable and no complete copy is available, explain that specific gap and request the source text when needed. Continue independent work such as organizing supplied material; do not claim full compliance from an imagined copy.
 
 ## Prepare and write
 
@@ -51,7 +57,9 @@ Continue to the final checks and exact length measurement below. If shortening o
 
 Resolve the publication limit and counting method from the shared prompt and the current request. For X, mechanically measure the exact copyable payload, including its title, headings, whitespace, citations, and URLs; exclude the enclosing code fence. Use official `twitter-text` or an equivalent verified counter, not raw string length or a rough doubling estimate.
 
-When Node.js is available, run `node scripts/count_x_post.cjs --limit <resolved-limit> <post.txt>` from this skill's directory. Its required limit comes from the writing source; the helper does not own the publication policy. It accepts UTF-8 text from a file or `-` for stdin, preserves whitespace, and reports the weighted length and remaining allowance. It configures the parser for that limit rather than using the library's default 280-character validity result.
+When Node.js and the local helper are available, run `node scripts/count_x_post.cjs --limit <resolved-limit> <post.txt>` from this skill's directory. Its required limit comes from the writing source; the helper does not own the publication policy. It accepts UTF-8 text from a file or `-` for stdin, preserves whitespace, and reports the weighted length and remaining allowance. It configures the parser for that limit rather than using the library's default 280-character validity result.
+
+Reading SKILL.md from GitHub does not make the helper available locally. Resolve `scripts/count_x_post.cjs` relative to the Skill source directory and version being used; obtain and inspect it when permitted, or use an equivalent permitted counter. Do not require installing the skill or cloning the repository just to count a post.
 
 The helper needs `twitter-text` (tested with 3.1.0). Reuse an available installation. If missing and package installation is permitted, install it in a temporary dependency directory with `npm install --prefix <directory> --ignore-scripts --no-audit --no-fund twitter-text@3.1.0` and expose `<directory>/node_modules` through `NODE_PATH`; do not add dependencies or generated files to the skill. An equivalent permitted counter can be used in other environments.
 
