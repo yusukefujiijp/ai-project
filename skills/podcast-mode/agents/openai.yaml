@@ -1,4 +1,4 @@
 interface:
   display_name: "Podcast Mode"
-  short_description: "音声ボタンで聴くための、文脈に沿った一続きの応答を整える"
-  default_prompt: "$podcast-mode で、今の話を耳で理解できる一続きの解説にしてください。"
+  short_description: "今聴く価値のあるThemeを提案し、コピーできる依頼や聴取用本文を整える"
+  default_prompt: "$podcast-mode で、今の文脈からPodcast Theme Modeの案を、聴く価値とコピーできる生成依頼を添えて提案してください。"
