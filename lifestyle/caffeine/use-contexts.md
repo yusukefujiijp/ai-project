@@ -1,18 +1,20 @@
 ---
 title: "Caffeineの使い所 — 場面・条件・経験をつなぐ"
-version: "v001"
+version: "v002"
 status: "source-linked initial synthesis / selective coverage"
 canonical_path: "lifestyle/caffeine/use-contexts.md"
 created: "2026-10-13"
 updated: "2026-10-13"
 role: "Topic synthesis and source index; not an independent episode ledger or dosing guide"
 reviewed_source_snapshot: "ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v001"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v002"
 ---
 
 # Caffeineの使い所 — 場面・条件・経験をつなぐ
 
 [テーマの入口](README.md)へ戻る。
+
+**カフェインガムの既定参照は、[README 第0節](README.md#0-ark共通語カフェインガム)を継承する。** Human指定の製品と確認済み公表値を、場面やThreadが変わるたびに未特定へ戻さない。具体的な製品情報はREADMEだけが現行値を所有する。「Caffeineなしのガム」と、その時々の粒数・時刻・適否は別に扱う。
 
 **「何を使ったか」と「どの場面の、どの行動につながったか」を結び、成立条件を保って現在へ活かす。** 以下は本人の経験・発見・反省の選択整理である。保存済みの報告、AIによる解釈、現在への適用を区別する。
 
@@ -78,7 +80,7 @@ S4が直接支えるのは、本人が以前の休日のタイミングを大き
 
 - 同じ場面でも、準備や携帯、本人の希望、製品の表示情報等が判断に関わり得る。
 - 一つの形態の好結果を、別の形態・製品・使用時点へそのまま移植できるかは、別の問いである。
-- 具体的な製品比較・量・時間の検討が必要になった時は、現在の情報と一次資料を用い、ここに未調査の比較値や固定量を作らない。
+- 具体的な製品比較・量・時間の検討が必要になった時は、READMEの確認済み共通参照を使い、判断に必要な差分を現在の情報と一次資料から確認する。未調査の比較値や固定摂取量を作らない。
 
 これらは、今回の資料構成を導くAIの整理である。新しい身体Trial・毎日の記録義務・専用Skillの新設を必須条件にしない。Current Humanの目的と、自然な報告・Correctionに合わせて深める。
 
@@ -95,4 +97,7 @@ S4が直接支えるのは、本人が以前の休日のタイミングを大き
 
 本文の関係整理は、新しいHumanの報告・Correctionで更新できる。保存された成功を未確認へ戻さず、未報告の成功も補わず、変わった条件と判断を残す。新しい原発言の所有先は[テーマの入口](README.md)の分担に従う。
 
-EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v001
+
+v002（2026-10-13）：Humanの製品参照Correctionを受け、共通定義への接続と再確認の境界を追記。初版の五場面・根拠・未報告条件は保持した。
+
+EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v002
