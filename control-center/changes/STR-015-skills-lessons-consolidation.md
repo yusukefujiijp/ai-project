@@ -1,20 +1,20 @@
 ---
 title: "STR-015 — Skills lessons集約とHubの現在案内"
 canonical_path: "control-center/changes/STR-015-skills-lessons-consolidation.md"
-version: "v003"
+version: "v004"
 created: "2026-10-11"
-updated: "2026-10-14"
-updated_by: "Work / Ark27:09"
+updated: "2026-10-15"
+updated_by: "dot-0000: 初穂"
 followup_base_commit: "6375c44f93701b7e3495c128534352edc814fafd"
 recorded_by: "Work / Ark28:05"
-status: "Podcast current-body read and legacy Radio retirement remotely verified; Voice legacy snapshot retained outside this execution"
+status: "Voice legacy snapshot retirement implemented; post-write verification recorded in section 8"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
-expected_eof: "EOF::STR_015_SKILLS_LESSONS::v003"
+expected_eof: "EOF::STR_015_SKILLS_LESSONS::v004"
 ---
 
 # STR-015 — 学びを集め、適用条件と接続を保つ
 
-**現在状態は[第7節](#podcast-cutover-current)。** 第1〜6節は初回の集約、HTTP 422、後続保存と各時点の取得結果を保持する。現在の本文取得・旧Radio配置の退役と、過去の未切替・Voice側の別残点を区別する。
+**現在状態は[第8節](#voice-cutover-current)。** 第1〜7節は各時点の集約・取得・旧Radio退役の経緯を保持する。過去のVoice保留と、後続のVoice旧配置退役を区別する。
 
 ## 1. 目的・Humanの判断・範囲
 
@@ -159,4 +159,34 @@ VoiceはDotsの後続報告を認めつつ、この実行では登録本文の�
 
 残点はVoice旧JSONLの別判断と、全Runtime・UI・自然発動・実聴取・長期効果の未確認である。具体的な旧依存が後から見つかった場合は、上記復元条件または現行原本への参照修正から判断する。ARC-011／012、STR-014と既存の整理成果を未完了へ戻さず、新しい試験・別Branch・外部通信を自動開始しない。
 
-EOF::STR_015_SKILLS_LESSONS::v003
+<a id="voice-cutover-current"></a>
+
+## 8. 2026-10-15 — Voice旧JSONLの退役
+
+### 目的・承認・変更範囲
+
+dot-0000: 初穂の現在の会話で、Humanは初穂がVoice旧配置の整理を担当できるかを問い、Plan Modeで四パスの計画を検討した。その後、2026-10-15 JSTに「Execute GitHub OK」「Human Seal OK」と実行を承認した。これは当該会話の編集要約であり、Main／Supportの役割移管や別AIへの送信を含まない。
+
+学びの更新先を迷わず使えるように、旧Voice JSONL一つの除去、本記録・Skills Hub・GitHub PLANの整合を一件として扱う。集約lesson、Voice Skill本文、登録先、既存アーカイブ、他案件は変更しない。比較基点は[bcce675](https://github.com/yusukefujiijp/ai-project/tree/bcce675c55f90cc527e4050dacbe77c70cad8d4d)。
+
+### 確認した根拠と判断の境界
+
+- 旧Voice三行（第2節の三ID）は、集約先の全6行の中に同一の連続した行として保持されている。ID・日時・本文・出典・未知field・留保を変えず、集約先自体は更新しない。
+- 旧JSONLのblobは `b64aa13774ba11cb9886ecebeda538619cf19037`、集約先は `a6916a300ff62305a1acb2c0d653b9ed2aaffb21`。共有Voice本文は `28072fb0b5fbe1bde116c7afe1d51b18033edee6` で、集約先を参照する。
+- 事前調査の登録本文一致に加え、2026-10-14 22:14:38 UTC／10月15日07:14:38 JSTの読取確認で、登録済みVoice本文を全文取得した。取得本文2,103文字は現在のGitHub共有本文と文字列完全一致し、集約先参照を確認した。
+- 初穂の直接読取経路では同時期に `skill package is not available` となった。上記の取得成功は読取可能な環境での確認であり、すべての経路で利用できる保証ではない。取得不能を旧参照への逆戻りと推定せず、登録先の再保存・追加登録は行わない。
+- 既知の現役参照と旧パスの調査では、旧Voiceコピーを必要とする新しい現役依存は確認されなかった。固定commitの出典、過去記録、保管原本は歴史資料として保持する。未知の外部consumerすべての不存在を証明したものではない。
+
+第6節が定めたVoice単独の退役条件を、上記の同一性と確認済み利用経路に限定して満たすと判断した。Voice機能・学びの価値を退役させる判断ではない。
+
+### 変更と復元
+
+除去対象は `skills/voice-mode/references/lessons.jsonl` 一つ。現役の学びの所有先は引き続き[集約lesson](../../skills/_references/lessons.jsonl)、手順は[Voice本文](../../skills/voice-mode/SKILL.md)である。Hubは入口、PLANは現在の整理状態、本節は判断・証拠・復元を所有する。
+
+[固定復元元](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/voice-mode/references/lessons.jsonl)から、削除前と同じblobの全文を取得できることを確認した。具体的な旧依存が後で判明した場合は、現在の権限と依存を確認し、必要な旧ファイルだけを復元するか利用側を現行原本へ接続する。復元時は本節・Hub・PLANの現在説明も整合させる。Repository全体や集約先の後続lessonを過去へ巻き戻さない。
+
+### 保存後確認
+
+保存後の再取得結果はここへ追記する。実装操作の成功と、Remote本文・Tree・対象外保持の確認を区別する。全Runtime、自然発動、Voice内直接呼出し、実生活効果は本件の確認範囲外である。
+
+EOF::STR_015_SKILLS_LESSONS::v004

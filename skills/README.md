@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.33.0
+version: v0.33.1
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-14
-updated_reason: shop-deep-researchを追加。店舗固有の問い・根拠・公式実行経路、明示入口と共有原本参照を接続。保存と限定確認の境界を記録し、他Skillの既存記録を保持
+updated: 2026-10-15
+updated_reason: STR-015のVoice旧JSONL退役を現在案内へ反映。三lessonと共有Skillを保持し、旧取得差・Radio整理・他Skillの履歴を保持
 ---
 # Ark Shared Skills Hub
 
@@ -54,6 +54,8 @@ Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分�
 
 **後続確認と旧Radio退役（2026-10-14）。** Ark27:09は既存Podcast登録物からTheme拡張版の全文を直接取得し、共有本文（blob `6188c1e2db9e061bae7a8a2d476f0af27205e93d`）と完全一致を確認した。既知の現役依存・lesson保存・固定commitからの復元経路を確かめ、旧Radio共有二原本と旧Radio JSONLの三ファイルを現役配置から除去した。Voiceについては、10月12日のDotsによる新参照・本文一致の[後続報告](../records/2026/10/2026-10-12.jsonl)も保持するが、この実行ではVoice登録本文の再取得・旧JSONL除去を行わない。対象別の結果、保存後確認、復元条件は[STR-015の現在節](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)へ。過去の未取得を消さず、全Runtime・旧コマンド転送・UI・自然発動・長期効果は保証しない。
 
+**Voice旧配置の退役（2026-10-15）。** dot-0000: 初穂はHumanの四パス計画への実行承認を受け、旧Voice JSONLを現役配置から除去した。三lessonは集約先に同一行で保持し、Voice本文・登録先は変更していない。登録本文の新たな全文一致を確認し、別の読取経路での取得不能と区別する。現在の確認範囲・保存後検証・復元条件は[STR-015第8節](../control-center/changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current)へ。上の10月14日欄のVoice範囲外は当時のRadio実行範囲であり、現在の未完了項目へ戻さない。
+
 Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
 
 ## 2. Available skills
@@ -63,7 +65,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [SKILL.md](shop-deep-research/SKILL.md) | 本文単体で基本方法。公式Deep Researchの利用可否・起動・結果は実環境で別途確認 | 形式・三つの独立文脈・共有と登録先の本文一致を確認。入口と未検証範囲は[§3.14](#shop-deep-research-entry) |
 | Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
 | Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂時の形式・四つの独立文脈・共有保存・登録先Remote一致を保持。2026-10-14、Ark27:09でTheme拡張版の会話内取得と共有本文の一致を確認。旧Radio退役は§1.3。UI・自然発動・実聴取効果とは別。形成と改訂は[§3.11](#podcast-theme-mode) |
-| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答と参照更新の登録先保存を保持。10月11日の会話内旧版取得、10月12日のDotsによる新参照・本文一致報告を区別する（§1.3）。今回Voice旧JSONLは未変更。Voice内直接呼出しと実生活効果は未検証。§3.11 |
+| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答と参照更新の登録先保存を保持。10月11日の会話内旧版取得、10月12日のDotsによる新参照・本文一致報告を区別する（§1.3）。2026-10-15のVoice旧JSONL退役と確認範囲は§1.3。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
 | 問題解決 / solve-problems | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](solve-problems/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 形式・四つの独立文脈で計八応答を確認。導入・共有と検証境界は§3.8。自然な自動選択・品質優位・実生活効果は未実証 |
@@ -651,4 +653,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.33.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.33.1
