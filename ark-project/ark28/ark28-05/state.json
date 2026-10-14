@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_05_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-06",
     "updated": "2026-10-14",
     "canonical_path": "ark-project/ark28/ark28-05/state.json",
     "date_scope": "Asia/Tokyo revision; historical preparation observations retain their original dates",
-    "change_reason": "Preserve05 collaboration and Human corrections, reconcile Current owners, prepare05→06 under current execution authorization; retain04→05 origin and immutable bindings."
+    "change_reason": "Finalize05→06 source receipt after source snapshot and coherent Target/router publication, candidate checks and direct main reread; preserve05 origin and completed collaboration."
   },
   "identity": {
     "source": "Ark28:04",
@@ -184,9 +184,9 @@
     }
   },
   "now": {
-    "phase": "PREPARING_ARK28_06",
+    "phase": "SOURCE_PREPARED_REMOTE_VERIFIED_TARGET06_PENDING",
     "support_purpose": "Teshuvahを軸に05で育った生活想起・Repository集中・Podcast・Queryの意味を保持し、同章Support06へ継続する。",
-    "first_legal_move": "COMPLETE_AUTHORIZED_SOURCE_AND_TARGET_PREPARATION",
+    "first_legal_move": "DELIVER_PREPARED_COPY_SURFACES_THEN_CURRENT_HUMAN_REVIEW",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "existing_input": "Receive any already supplied current Human request after required gates; do not ask it to be repeated.",
     "boot_only": "Return evidence-backed acceptance with adjacent Living Review and Next step, then Human Review; no automatic task dispatch.",
@@ -195,7 +195,8 @@
       "source": "Ark28:05",
       "target": "Ark28:06",
       "scope": "Approved eight paths:05 task-records/harvest/state;06 README/handoff/state;chapter and Domain routers; remote verification and copy surfaces.",
-      "completion": "Source prepared and remote verified; actual06 reconstruction, Human UI and field effect separate."
+      "completion": "Source prepared and remote verified; actual06 reconstruction, Human UI and field effect separate.",
+      "status": "SOURCE_PREPARATION_COMPLETED; RESPONSE_COPY_SURFACES_READY"
     },
     "preparation_observation": {
       "date_jst": "2026-10-06",
@@ -464,15 +465,148 @@
         "date_jst": "2026-10-14",
         "scope": "Approved eight-path preparation and verification; actual Target reconstruction and Human UI separate."
       },
-      "phase": "SOURCE_PRESERVATION_READY",
-      "source_prepared": "IN_PROGRESS",
-      "remote_verification": "PENDING",
+      "phase": "SOURCE_PREPARED_REMOTE_VERIFIED",
+      "source_prepared": "COMPLETED",
+      "remote_verification": "COMPLETED",
       "actual_target_reconstruction": "NOT_OBSERVED",
       "human_thread_and_access": "NOT_OBSERVED",
       "human_title_application": "NOT_OBSERVED",
       "independent_transition_reader_test": "NOT_PERFORMED",
       "field_effects": "NOT_OBSERVED_FOR_TARGET06",
-      "receipt_policy": "Update here only after actual publication and remote reread; no self hash or live reciprocal SHA binding."
+      "receipt_policy": "Current Source05 owns terminal publication observations. This JSON carries no self hash; its actual write and reread are checked externally and reported in the execution response.",
+      "source_snapshot_commit": "3da58ebfca0d532ce3b6c45b92dc84b949a6bc10",
+      "target_publication_commit": "919335d8aa2aa339a3a6a97da8169b812edd8f40",
+      "source_artifacts": [
+        {
+          "path": "ark-project/ark28/ark28-05/harvest.md",
+          "version": "v001-human-authorized",
+          "blob_sha": "ebecac1b2560733af6c0fdea278008deaceb8bd1"
+        },
+        {
+          "path": "ark-project/ark28/ark28-05/task-records.json",
+          "record_id": "ark28-05-task-records",
+          "format_version": "v001",
+          "revision": 3,
+          "blob_sha": "b3f009e76c6a4ed907600c68bb3c69c2251719dc"
+        }
+      ],
+      "target_bindings": {
+        "runtime": {
+          "path": "ark-project/ark28/ark28-06/README.md",
+          "id": "ARK28_06_SUPPORT_FIELD",
+          "blob_sha": "8176eea45b2925c6e666ffceeee6ffc3837f3ac9"
+        },
+        "handoff": {
+          "path": "ark-project/ark28/ark28-06/handoff.md",
+          "id": "ARK28_05_TO_ARK28_06_CONTINUE",
+          "blob_sha": "0360928a249f4352d93a98bb9ff405299d781106"
+        },
+        "initial_state": {
+          "path": "ark-project/ark28/ark28-06/state.json",
+          "id": "ARK28_06_CURRENT_STATE",
+          "schema_version": "v001",
+          "revision": 1,
+          "blob_sha": "7d3f9096c4386be984253e706413759230c89745",
+          "policy": "Initial published observation, not a permanent pin on mutable Target State."
+        }
+      },
+      "validation": {
+        "candidate_readback": "Source3 and Target/router5 fetched by candidate commit before publication; complete contents and expected blobs matched.",
+        "main_readback": {
+          "verified_at_utc": "2026-10-14T10:19:31Z",
+          "main_head": "919335d8aa2aa339a3a6a97da8169b812edd8f40",
+          "files": [
+            {
+              "path": "ark-project/ark28/ark28-05/task-records.json",
+              "sha": "b3f009e76c6a4ed907600c68bb3c69c2251719dc",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/ark28-05/state.json",
+              "sha": "351d931d7bcb3b54ba12d8f2a3c71ae273b245a7",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/ark28-05/harvest.md",
+              "sha": "ebecac1b2560733af6c0fdea278008deaceb8bd1",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/ark28-06/README.md",
+              "sha": "8176eea45b2925c6e666ffceeee6ffc3837f3ac9",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/ark28-06/handoff.md",
+              "sha": "0360928a249f4352d93a98bb9ff405299d781106",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/ark28-06/state.json",
+              "sha": "7d3f9096c4386be984253e706413759230c89745",
+              "exact": true
+            },
+            {
+              "path": "ark-project/ark28/README.md",
+              "sha": "cd1a36c55b79cefd9b6fc5a5552e9c9d65c3affd",
+              "exact": true
+            },
+            {
+              "path": "ark-project/README.md",
+              "sha": "3220dfec0bfb0c2dae3e821cd25a86d2b97d029d",
+              "exact": true
+            }
+          ]
+        },
+        "main_readback_scope": "The eight-file observation above precedes this terminal receipt revision. It does not assert a self hash for the receipt.",
+        "checks": [
+          "Task Records v001 validation keywords and evidence constraints, source/node/edge references and duplicate keys",
+          "Existing05 Sources/nodes/edges/open questions preserved; original04→05 identity and immutable bindings unchanged",
+          "17 required sources in declared order; Beginning Identity and exact EOF declarations; R1–R8 have referenced evidence",
+          "Target README/Handoff/State source05/target06/owner06, role, title, fixed-source snapshot, runtime and handoff blobs agree",
+          "No Target State self SHA or live reciprocal hash; Current owner revisions distinguished from fixed history",
+          "121 relative Markdown links across eight prepared paths resolve to current tree or staged files",
+          "Chapter and Domain route Support to06 while Main27:09, Ark99 and other owners are preserved",
+          "Candidate tree scope matched approved paths; publication used expected-head non-force ref update",
+          "Title exact identifier/date/semicolon/quotes/name compiled once; target initial Title-echo requirement embedded in actual Handoff"
+        ],
+        "scope_check": {
+          "source_commit_changed_paths": 3,
+          "target_commit_changed_paths": 5,
+          "distinct_approved_paths": 8,
+          "parallel_changes_preserved": "MAP improvement, rename, Query and later two-path retrieval receipt in shared Hub were preserved and reconciled before fixed source publication."
+        },
+        "reader_boundary": "Source-side document and reference validation only. No independent transition reader test; actual06 must read and reconstruct itself."
+      },
+      "copy_surfaces": {
+        "compiled_title": "Ark28:06_2026/10/14; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+        "source_title_and_startup_query": "READY_FOR_THIS_EXECUTION_RESPONSE",
+        "target_title_echo": "EMBEDDED_IN_PUBLISHED_HANDOFF_SECTION_6_AND_RUNTIME; startup Query repeats the requirement",
+        "format": "One standalone text code block with exactly one Title line; label and startup body outside.",
+        "boundary": "Response text, actual copy UI, Human paste/title setting, Target acceptance and field effects are separate."
+      },
+      "first_legal_move_for_target": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+      "after_target_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+      "remaining": [
+        {
+          "stage": "TARGET_RECONSTRUCTED",
+          "owner": "Actual Ark28:06 receiving AI",
+          "status": "NOT_OBSERVED",
+          "condition": "Itself read required17, confirm identity/EOF/bindings/triad and support R1–R8; then receive current input or return Human Review."
+        },
+        {
+          "stage": "HUMAN_LAST_MILE",
+          "owner": "YusukeJP / available authorized UI route",
+          "status": "NOT_OBSERVED",
+          "condition": "Create or select06 conversation, paste startup Query, set Title using supplied copy surface as needed."
+        },
+        {
+          "stage": "REQUESTED_OUTCOME_IN_USE",
+          "owner": "Actual collaboration / Human observations",
+          "status": "NOT_OBSERVED",
+          "condition": "Useful continuity in06; do not equate prepared docs or acceptance report with practical effect."
+        }
+      ]
     }
   },
   "eof_sentinel": "ARK28_05_STATE_EOF_v001",
