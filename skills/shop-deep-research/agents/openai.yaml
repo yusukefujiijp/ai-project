@@ -1,0 +1,4 @@
+interface:
+  display_name: "Shop Deep Research"
+  short_description: "店舗固有の問いと根拠を深め、公式Deep Researchへ接続する"
+  default_prompt: "現在指定している店舗を、$shop-deep-researchスキルの本文を全文読んで適用し、OpenAI公式Deep Researchで調査してください。\nスキルを参照できない場合は共有原本 https://github.com/yusukefujiijp/ai-project/blob/main/skills/shop-deep-research/SKILL.md を全文読んで適用し、本文参照または公式機能起動ができない箇所は明示して、通常検索による無断代替はせず、実行可能な環境へ渡す依頼文を準備してください。"
