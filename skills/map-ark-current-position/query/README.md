@@ -1,1 +1,49 @@
+# Ark現在地マップ: Query backup
 
+保存日: 2026-10-14（Asia/Tokyo）  
+状態: 実験的backup — Human承認済みの入口文を保存。実利用効果は未確認。
+
+## 1. このREADMEの役割
+
+`map-ark-current-position` を呼び出すAI-Promptを、会話履歴から探し直さず取り出せるように保存する。Humanがコピーして使い、他AI・Future AIが用途と由来を理解できる入口とする。
+
+このREADMEは呼出し文の保存先であり、Skill本体の手順やCurrent Runtimeを置き換える文書ではない。レビュー・調査のために開いた場合、下のQueryを自動実行しない。Humanが現在の依頼として使った場合に、その依頼と適用される権限・Source契約へ結び付ける。
+
+HumanはSkill本体を別Threadで改良中と報告し、その完了を待たず先にQueryをbackupする方針を指定した。本書はその時点の保存文であり、本体改良後の仕様との整合を確認済みという意味ではない。後続の採用済み改訂を確認した際、現在の依頼・承認範囲で必要な差分を更新できる。自動同期や更新監視は開始しない。
+
+## 2. Copy & Paste — 現在地を整理する
+
+以下のブロックがコピー対象。説明・保存記録はブロックの外に置く。
+
+```text
+$map-ark-current-position スキルを使い、現行Skillの仕様に沿って、Ark Project上の現在地を整理してください。
+
+現在の依頼・文脈・最新のHuman入力や訂正から、何を中心に、どこまで進み、何が未接続なのかを、根拠と状態の区別を保って示してください。このThreadの進捗とArk全体の現在地は、今回求められている範囲に合わせて扱ってください。
+
+Tree・Node & Edge表を軸に、必要に応じてArk Graph Navigatorを活用し、中心・全体とのつながり・今は扱わないBranchが分かる形にしてください。
+
+回答末尾は Living Review → Next step の二節を隣接させてください。Living Reviewでは、復元した盤面の現在の意味と、今判断すべき焦点を根拠から読み解いてください。Next stepでは、その見立てと重要な選択条件を受け、現在有効な接続先と理由を示してください。現在地の把握で依頼が満たされる場合は、今回の完了を選べます。
+
+適用されるRoot・Guard・Source契約と、HumanのCorrection・STOP・Sealを保持してください。確認済みの読解や成果は契約上の同一性条件を満たす範囲で再利用し、既知事項の再入力を求めないでください。
+
+Skillを直接利用できない場合は、次の共有版SKILL.mdを実際に読んで適用してください。取得できなければ、適用未確認の範囲と最小の回復方法を示してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-ark-current-position/SKILL.md
+
+現在地を整理する依頼だけで、保存・外部変更・実際の移行・過去Taskの再開を始めないでください。別途明示された実行承認がある場合は、その現在有効な範囲に従ってください。
+```
+
+## 3. 対応するSkillと更新時の扱い
+
+- 使用条件・詳しい手順の共有原本: [map-ark-current-position / SKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-ark-current-position/SKILL.md)。
+- このQueryは現行Skillへ接続する入口。保存時のSkill識別情報を、今後の実行で旧版を固定利用する指示にしない。
+- Skill本体の改訂後は、目的・対象・停止点・出力の意味が食い違わないか確認し、必要な箇所だけ更新する。詳しい共通手順をQueryへ丸ごと複製しない。
+- 過去の文面はGitの変更履歴から辿れる。同じ目的の版違いファイルや、別の保守原本を自動で増やさない。
+- GitHub上の文面保存、登録先への反映、Humanのコピー操作、別AIの理解、実利用の効果を区別する。この保存だけでは、Skillの導入・自動読込・設定反映・実利用成功を確認したことにならない。
+
+## 4. 由来と保存範囲
+
+- 由来: Ark28:05でのQuery backup相談とPlan Modeで提示した、既存のHuman要件を基にしたAI編集案。過去の特定Humanメッセージの逐語コピーではない。
+- 保存承認: 2026-10-14、Humanが計画を承認し、Skill本体の改良完了より先にQueryを保存することを指定した。上のQuery本文は承認された計画内の候補文と同文。
+- 保存準備時に照合した共有Skillのblob SHA: `5e97a8caffa9a0ade90b00d094e1670f54cce7f6`。これは確認時点の識別情報であり、将来の本体更新を制限しない。
+- 今回の保存対象はこのREADME一件。Skill本体、登録設定、Skills Hub、他SkillのQueryは変更範囲に含めない。会話全履歴やChatGPT長期メモリの転記も行わない。
+- 文面の保存確認と、今後の使いやすさ・応答品質の確認は別。自然な実利用とHuman Feedbackから必要な改善を判断する。
