@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.32.1
+version: v0.32.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-14
-updated_reason: MAPの残作業とGoal・方法と完了条件・継続遂行を改訂しmap-current-positionへ改名。旧読取契約の互換入口、Queryと現役参照を整合。既存の他Skill記録を保持
+updated_reason: MAPの残作業とGoal・方法と完了条件・継続遂行を改訂しmap-current-positionへ改名。旧読取契約の互換入口、Queryと現役参照を整合。既存の他Skill記録を保持。新名での会話内取得と共有本文の一致を後続確認
 ---
 # Ark Shared Skills Hub
 
@@ -474,7 +474,9 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 登録先の自動生成変更による一度の非fast-forwardと、保存通知後にも関連二Skillの旧参照が返った事実を、最新Remoteの再取得で検知した。現物を基準に未反映の一行ずつを保存し直し、上記の全文一致まで確認した。通知・push成功と実保存を同一視しない。原因を全Runtimeの一般的障害やSkill改名の失敗と断定しない。
 
-**会話内の取得境界。** 同じ会話のSkill一覧は旧名を示し、executor系Skill読取は旧本文を返した。cloud系では旧名の取得が失敗し、新名のpackageは利用不可と返った。登録先Remoteとローカル現物の新本文確認とは別の観測であり、新名による会話内呼出し・Human UIの反映はこの時点では未確認。取得経路が更新された文脈で名称・本文を照合すれば確認できる。新名を取得できない環境では共有原本を実際に読んで適用できるが、登録Skillの新名呼出し成功と偽らない。旧コマンドの自動転送も保証しない。
+**保存直後の会話内取得（Historical）。** 保存直後の同じ会話のSkill一覧は旧名を示し、executor系Skill読取は旧本文を返した。cloud系では旧名の取得が失敗し、新名のpackageは利用不可と返った。登録先Remoteとローカル現物の新本文確認とは別の観測であり、新名による会話内呼出し・Human UIの反映はこの時点では未確認。取得経路が更新された文脈で名称・本文を照合すれば確認できる。新名を取得できない環境では共有原本を実際に読んで適用できるが、登録Skillの新名呼出し成功と偽らない。旧コマンドの自動転送も保証しない。
+
+**後続の取得確認（2026-10-14）。** Humanの続行依頼を受けた現在の文脈では、Skill一覧に新名 `map-current-position` が表示された。cloud系の新名packageから本文を取得でき、executor系の既存登録IDからも改訂後本文を取得できた。両経路とも続きの取得は不要で、取得した全文がGitHub mainの現行共有本文（blob `f1b41b7d74b5018717a477b42369f3e8a4e8003d`、25,176 bytes）と末尾まで完全一致した。上記の保存直後の未確認は、この二つの読取経路について解消した。共有保存・登録先保存に加えて、会話内で新名の本文を取得できることまで確認済みであり、今回承認されたMAP改訂・改名の残る取得確認は完了。Human UIでの操作、旧コマンドの自動転送、自然発動、全Runtimeへの反映や実利用効果の確認とは区別する。
 
 自然な自動選択、全AI互換性、継続的な効率向上・実生活効果は今回の限定確認とは分ける。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQuery、Goal専用Skillの作成、別件の残作業へ実行範囲を広げない。
 
@@ -623,4 +625,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.32.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.32.2
