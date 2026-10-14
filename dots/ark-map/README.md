@@ -11,6 +11,10 @@ approval_source: "conversation-message:Sentinel_ae3fc6bd63688191bc22305a15f4d420
 revision_approval_source: "conversation-message:Sentinel_b31bd683526c81919cabb2532c7a15ad"
 updated_reason: "Refine news selection and bullet presentation through Human feedback while preserving flexible evolution and existing Map boundaries"
 expected_eof: "EOF::DOTS_ARK_MAP::v003"
+navigation_patch:
+  date: "2026-10-14"
+  scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
+  source: "skills/README.md#map-current-position-revision"
 ---
 
 # 定期Ark Mapと限定save
@@ -25,7 +29,7 @@ expected_eof: "EOF::DOTS_ARK_MAP::v003"
 
 ## 2. 共通の判断は既存の所有先を使う
 
-- 現在地の復元、Tree、Node & Edge、Evidenceの区別は [$map-ark-current-positionスキル](../../skills/map-ark-current-position/SKILL.md)
+- 現在地の復元、Tree、Node & Edge、Evidenceの区別は [$map-current-positionスキル](../../skills/map-current-position/SKILL.md)
 - 理由と成立条件を持つ次の接続は [$next-stepスキル](../../skills/next-step/SKILL.md)
 - 保存先の選択、NO_CHANGE、競合・結果不明の扱いは [$saveスキル](../../skills/save/SKILL.md)
 - 共通権限・品質・停止は [AGENTS](../../AGENTS.md)、IdentityとRootは [ARK](../../ARK.md)

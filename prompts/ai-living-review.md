@@ -14,6 +14,10 @@ legacy_source:
   declared_origin: "2026-08-22 Thread / SF-KV review"
   sha256: "bf18916ad3fb11cbcf3e7321c6a900a5d88ac87454afdb3350e8bdd16dda19a1"
 validation: "See section 10; authoring, observed responses, persistence, and real-world effects are separate"
+navigation_patch:
+  date: "2026-10-14"
+  scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
+  source: "skills/README.md#map-current-position-revision"
 ---
 
 # AI Living Review
@@ -177,7 +181,7 @@ Humanの開始・待ち時間・推定認知負担・Token節約を理由に、�
 |---|---|
 | 本書 | Living Reviewの根本の意味、判断原理、適用条件と具体例を説明する。 |
 | [AI Living Review / living-review](../skills/living-review/SKILL.md) | 「xxをLiving Reviewして」という日常の入口から、対象・目的・権限を解決し、根拠を伴う見立てと今有効な接続を返す。基本運用はSkill単体で使い、意味や具体例を深める必要時に本書へ進む。 |
-| [map-ark-current-position](../skills/map-ark-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigator、末尾のLiving Review → Next stepへ適用する。 |
+| [map-current-position](../skills/map-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigator、末尾のLiving Review → Next stepへ適用する。 |
 | [AI Living Graph Mode](ai-living-graph-mode.md) | 関係からの発見や、Actual Traceによる関係評価の更新を深める。表の生成だけをLiving updateとしない。 |
 | [Ark-OKF](ark-open-knowledge-format.md) | 判断・根拠・意味をHumanとFuture AIが再読・再利用できる回答の形へ整える。 |
 | [Plan Mode](../skills/plan-mode/SKILL.md) | 調査・理解・比較・計画を、変更を行わない範囲で組み立てる。 |

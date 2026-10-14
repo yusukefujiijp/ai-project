@@ -6,6 +6,10 @@ updated: "2026-10-03"
 canonical_path: "ark-recall-portal/README.md"
 expected_eof: "ARK_RECALL_PORTAL_EOF_v002"
 updated_reason: "Human approved seasonal experience capture, advance recall and correction within the existing single Portal"
+navigation_patch:
+  date: "2026-10-14"
+  scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
+  source: "skills/README.md#map-current-position-revision"
 ---
 
 # Ark Recall Portal
@@ -55,7 +59,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### 3.3 現在地が必要
 
-`map-ark-current-position`が利用可能なら、そのSkillで目的・枝・到達点・未接続・Next stepを整理する。Portalは想起の入口、mapはProject上の位置づけを担当する。両者を同一化せず、毎回の同時起動や互いを呼び続ける構成にしない。
+`map-current-position`が利用可能なら、そのSkillで目的・枝・到達点・未接続・Next stepを整理する。Portalは想起の入口、mapはProject上の位置づけを担当する。両者を同一化せず、毎回の同時起動や互いを呼び続ける構成にしない。
 
 別環境でmapが未提供なら、呼び出したと偽らない。現在見える根拠から位置づけを説明し、利用可能な共有Sourceが必要な場合だけ探す。mapの新設・改訂・Main移管はこの連携の自動処理に含めない。
 

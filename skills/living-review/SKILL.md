@@ -56,7 +56,7 @@ Graphは関係から判断に効く発見を得るために使う。Node & Edge�
 
 共通説明は方法の意味と詳しい適用を、本Skillは呼出しから日常の判断へ進む運用を担う。改訂時には影響する意味・適用境界・参照を照合し、全文の二重管理や相互の必須読解ループを作らない。
 
-必要な専門的方法を今回の対象に合わせて選ぶ。非地理的なArk現在地は `map-ark-current-position`、関係やActual Feedbackの分析を深めるなら `analyze-living-graph`、指示の過剰制約等の監査なら `audit-agent-instructions`、計画限定なら `plan-mode`、永続するArk Markdownなら `write-ark-markdown` が接続先になる。名称への言及だけで全件起動せず、今回の固有契約と現在の依頼を優先する。
+必要な専門的方法を今回の対象に合わせて選ぶ。非地理的なArk現在地は `map-current-position`、関係やActual Feedbackの分析を深めるなら `analyze-living-graph`、指示の過剰制約等の監査なら `audit-agent-instructions`、計画限定なら `plan-mode`、永続するArk Markdownなら `write-ark-markdown` が接続先になる。名称への言及だけで全件起動せず、今回の固有契約と現在の依頼を優先する。
 
 ## 権限・Root・品質を保持する
 

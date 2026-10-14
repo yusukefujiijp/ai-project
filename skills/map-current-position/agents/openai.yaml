@@ -1,0 +1,4 @@
+interface:
+  display_name: "現在地MAP"
+  short_description: "Arkの現在地と残作業・Goalを結び、方法と完了条件のある次の一歩へ"
+  default_prompt: "$map-current-position を使い、Ark Projectの現在地と残作業・Goalを根拠から整理し、解決方法と完了条件を伴うNext stepへつないでください。"

@@ -12,6 +12,10 @@ revision_approval_source: "conversation-message:Sentinel_26f81c72fccc8191be3c7d0
 updated_reason: "Add a source-checked current remaining-work view to reduce parallel-thread reconstruction burden; preserve save scope and task ownership"
 first_target_date_jst: "2026-10-13"
 expected_eof: "EOF::DOTS_DAILY_REVIEW::v002"
+navigation_patch:
+  date: "2026-10-14"
+  scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
+  source: "skills/README.md#map-current-position-revision"
 ---
 
 # 前日の協働を、翌日へつなぐ日次総括
@@ -24,7 +28,7 @@ expected_eof: "EOF::DOTS_DAILY_REVIEW::v002"
 
 総括の本文、日別の活動記録、成果を所有する原本は役割が違う。同じ本文を全保存先へ複製しない。総括は今日までの意味をHumanへ返し、成果原本は再利用する内容を所有し、recordsは活動の時点と原本への接続を残す。
 
-共通の権限・品質は[AGENTS](../../AGENTS.md)、RootとIdentityは[ARK](../../ARK.md)。保存判断と競合・結果不明の扱いは[$saveスキル](../../skills/save/SKILL.md)、全体の現在地や次の接続が必要なら既存の[Map](../../skills/map-ark-current-position/SKILL.md)・[next-step](../../skills/next-step/SKILL.md)を使う。共通本文をここへ再定義しない。
+共通の権限・品質は[AGENTS](../../AGENTS.md)、RootとIdentityは[ARK](../../ARK.md)。保存判断と競合・結果不明の扱いは[$saveスキル](../../skills/save/SKILL.md)、全体の現在地や次の接続が必要なら既存の[Map](../../skills/map-current-position/SKILL.md)・[next-step](../../skills/next-step/SKILL.md)を使う。共通本文をここへ再定義しない。
 
 ## 2. 対象日と、遅れて分かったこと
 

@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.31.3
+version: v0.32.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-14
-updated_reason: Podcastの後続取得をActor・時点別に接続し、STR-015に基づく旧Radio三配置の退役を案内。Query・現行Skill本文・他Skillの成果と形成史を保持
+updated_reason: MAPの残作業とGoal・方法と完了条件・継続遂行を改訂しmap-current-positionへ改名。旧読取契約の互換入口、Queryと現役参照を整合。既存の他Skill記録を保持
 ---
 # Ark Shared Skills Hub
 
@@ -71,7 +71,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | save | 成果・訂正・根拠・再開情報を担当原本へ残し、保存後に確かめる | [SKILL.md](save/SKILL.md) | 成果物・Task Records・Dotsログ／lessons・Boardそれぞれの保存先ガイド | 隔離素材で更新・NO_CHANGE・結果不明・取消し・衝突・並行情報保持を確認。§3.5参照 |
 | board | 相手・目的・通信状態を整理し、既存Topicへ接続 | [SKILL.md](board/SKILL.md) | [Board入口](../board/README.md)と対象TopicのCurrent | 宛先指定・既存返信・草稿と保存／送達の区別を限定確認。§3.5参照 |
 | AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [SKILL.md](living-review/SKILL.md) | 基本運用は本文、意味・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に参照 | 形式・六つの独立文脈で計九応答を確認。共有・導入の確認状態は§3.4。自然な自動選択・全AI互換性・実生活効果とは区別 |
-| Ark Current Position / map-ark-current-position | Arkの非地理的な現在地・重点・進捗・未接続を復元し、Living Reviewから次の判断へ接続 | [SKILL.md](map-ark-current-position/SKILL.md) | 同梱Navigator・Source routing、[Living Reviewの共通説明](../prompts/ai-living-review.md)への必要時参照、現在のHuman入力と各Runtime | Tree・Node & Edgeと末尾のLiving Review→Next step。改訂・導入・限定応答確認は下記記録。全AI互換性・実生活効果とは区別 |
+| 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [SKILL.md](map-current-position/SKILL.md) | 同梱Navigator・Source routing、必要時のLiving Review共通説明、現在のHuman入力と各Runtime | Tree・Node & Edge、「残作業とGoal」、末尾Living Review→Next step。[改名・確認範囲](#map-current-position-revision)を参照。旧名の共有入口とRuntime aliasは別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
@@ -454,6 +454,22 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。初版保存直後は、この会話のSkill一覧から新名称をまだ取得できず、共有本文から接続しました。その後のSource02では登録済みSkillを取得でき、2026-10-14の移行準備でもCurrent共有本文との完全一致を再確認しています。前の未取得を現在の機能不在へ読み替えません。後続のCaffeine可視化二作品と28／33ケースの確認、登録済みSkill取得の根拠は[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-t04`–`visualize-t06` に分けて保存しました。自然な自動選択・恒久記憶・他社AIでの実利用・iOS実機での修正成功・生活上の効果は未確認です。
 
+<a id="map-current-position-revision"></a>
+
+### 3.13 現在地MAP — 残作業とGoal・改名
+
+現行の入口は `$map-current-position`、表示名は **現在地MAP**。共有原本は [SKILL.md](map-current-position/SKILL.md)、コピー用の依頼文は [Query backup](map-current-position/query/README.md)。Arkの非地理的な現在地復元を継承し、改名だけで対象を全分野へ広げない。
+
+**2026-10-14のHuman採用と実行承認。** HumanはThreadの残作業を独立節に取り出す案から、残作業とGoalの不可分な関係、AIによるGoalの言語化、方法・完了条件を伴うNext step、短い実行依頼からの継続遂行へ意図を発展させた。複数回のPlan Modeを通じて検討した後、MAPの完成をGoal専用Skillに先行させ、GitHub実行と承認範囲内の継続を明示した。本節は今回の対話の編集要約であり、逐語引用や未提示の会話URL・メッセージIDを作らない。
+
+**改訂した意味。** 通常のmapに「残作業とGoal」を設け、確認できる対象範囲の未完了を、目的・根拠・状態・完了条件と結ぶ。明示Goal・AI推定・Goal未確認、未完了・保留・将来構想・取消し・結果不明を区別する。共有Goalや共通前提をNode & Edgeで読み、Next stepへ今扱う範囲・方法・終了条件を渡す。十分明確なContinueは有効な委任になり得るが、追加の合言葉待ちは設けず、Plan-only・STOP・現在の権限を保持する。結果不明の操作は現物を確認してから再開する。MAP単体で基本支援でき、Goal専用Skillの作成は今回に含めない。
+
+**改名と互換接続。** 現役の共有案内・三つの関連Skill（load／living-review／ark-recall-portal）・Queryを新名へ合わせた。過去の形成記録、固定commit、Immutable Handoffは変更しない。旧 [Skill入口](map-ark-current-position/SKILL.md)は旧nameを保持する読取用入口であり、現行本文の全文取得へ接続する。旧Navigatorには継承Seedと現行契約への接続を残し、旧Source routing・Queryも新原本へ案内する。本文の編集先は新原本に一本化し、旧UI metadataは退役する。旧Identityと新Identity、旧URL到達とRuntimeの旧コマンド転送を同一視しない。固定blob等の契約不一致を互換入口だけでPASSにしない。
+
+**限定確認。** 本文・最小UI metadataと旧互換入口の形式、変更先の相対参照154件を検査した。元会話・計画・期待回答を渡さない四つの独立AI文脈で、①一部履歴欠落と複数枝の残作業・Goal・取消し・保留・別担当の区別、②短いContinueによる結果不明の改名の現物確認と残るリンク修正・再読、③引用内の実行命令と現在のPlan-onlyの区別、④旧Identity・Navigator Seedから新本文への読取と今回の完了判断を確認した。②は隔離した二つのMarkdownで実際に残るリンクだけを直し、改名済み内容を保持した。④は限定Source契約の確認であり、Ark章全体のBoot成功を認定しない。構成した相談例をHumanの実経験やGitHub上の実行成果へ転記しない。
+
+**共有・導入の確認。** 共有原本のRemote再取得と登録先保存は、実際の結果を本節へ追記する。自然な自動選択、全Runtimeでの旧コマンド互換、Human UI、継続的な効率向上・実生活効果は別の観測を要する。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQueryや別件の未保存変更へ範囲を広げない。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -599,4 +615,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.31.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.32.0

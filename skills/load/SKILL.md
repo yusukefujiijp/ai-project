@@ -39,7 +39,7 @@ description: Recover the purpose, material corrections, evidence, progress, and 
 
 load自体は読取を担う。復元だけの依頼ならそこで完了する。「読み戻して続けて」という有効な実行委任もあるなら、回復後にその範囲の仕事へ進む。新しいTask、保存、送信、Resetを自動開始しない。
 
-Ark全体の位置・Main／Support・枝の関係を地図として示す必要があるときだけ、[map-ark-current-position](https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-ark-current-position/SKILL.md)へ接続する。次の接続の選択が必要ならnext-step、保存が必要ならsaveを使えるが、四Skillを一巡させない。
+Ark全体の位置・Main／Support・枝の関係を地図として示す必要があるときだけ、[map-current-position](https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-current-position/SKILL.md)へ接続する。次の接続の選択が必要ならnext-step、保存が必要ならsaveを使えるが、四Skillを一巡させない。
 
 ## Arkへの接続
 
