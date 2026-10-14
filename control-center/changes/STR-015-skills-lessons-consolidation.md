@@ -7,7 +7,7 @@ updated: "2026-10-15"
 updated_by: "dot-0000: 初穂"
 followup_base_commit: "6375c44f93701b7e3495c128534352edc814fafd"
 recorded_by: "Work / Ark28:05"
-status: "Voice legacy snapshot retirement implemented; post-write verification recorded in section 8"
+status: "Legacy Radio and Voice snapshots retired; Voice remote verification complete in section 8"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
 expected_eof: "EOF::STR_015_SKILLS_LESSONS::v004"
 ---
@@ -187,6 +187,12 @@ dot-0000: 初穂の現在の会話で、Humanは初穂がVoice旧配置の整理
 
 ### 保存後確認
 
-保存後の再取得結果はここへ追記する。実装操作の成功と、Remote本文・Tree・対象外保持の確認を区別する。全Runtime、自然発動、Voice内直接呼出し、実生活効果は本件の確認範囲外である。
+**保存後確認：完了（2026-10-14T22:16:15Z／2026-10-15 07:16 JST）。** [実装commit f424a7e](https://github.com/yusukefujiijp/ai-project/commit/f424a7ea6ba4ec1a60cb5f28211e7d8bb007d0a6)で、基点bcce675をexpected revisionとして非forceでmainを更新した。三文書の更新と旧Voice JSONLの除去を一つのcommitにまとめた。
+
+Remoteから三文書の全文を再取得し、意図した本文・blobと完全一致を確認した。mainのcommitと省略なしの再帰Treeを照合し、変更が承認四パスだけであること、旧Voice JSONLが存在しないこと、対象外544ファイルが同一blobであることを確認した。集約lesson全6行と共有Voice本文は上記blobのまま保持されている。事前の三行完全一致と、この保存後blob不変を合わせて三lessonの保持を確認する。
+
+文書検査では、版・EOFの対応、既存アンカーと今回の所有節への参照、STR-015第1〜7節本文、PLAN診断履歴、Hubのコピー用コードブロックの保持を確認した。旧履歴に残る保留・範囲外は当時の記録であり、冒頭の現在案内から本節へ接続する。
+
+この段落は実装後の確認記録である。追加のSkill登録・実利用試験は行っていない。全Runtime、自然発動、Voice内直接呼出し、実生活効果は本件の確認範囲外である。
 
 EOF::STR_015_SKILLS_LESSONS::v004
