@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.32.2
+version: v0.33.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-14
-updated_reason: MAPの残作業とGoal・方法と完了条件・継続遂行を改訂しmap-current-positionへ改名。旧読取契約の互換入口、Queryと現役参照を整合。既存の他Skill記録を保持。新名での会話内取得と共有本文の一致を後続確認
+updated_reason: shop-deep-researchを追加。店舗固有の問い・根拠・公式実行経路、明示入口と共有原本参照を接続。保存と限定確認の境界を記録し、他Skillの既存記録を保持
 ---
 # Ark Shared Skills Hub
 
@@ -60,6 +60,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [SKILL.md](shop-deep-research/SKILL.md) | 本文単体で基本方法。公式Deep Researchの利用可否・起動・結果は実環境で別途確認 | 形式・三つの独立文脈・共有と登録先の本文一致を確認。入口と未検証範囲は[§3.14](#shop-deep-research-entry) |
 | Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
 | Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂時の形式・四つの独立文脈・共有保存・登録先Remote一致を保持。2026-10-14、Ark27:09でTheme拡張版の会話内取得と共有本文の一致を確認。旧Radio退役は§1.3。UI・自然発動・実聴取効果とは別。形成と改訂は[§3.11](#podcast-theme-mode) |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答と参照更新の登録先保存を保持。10月11日の会話内旧版取得、10月12日のDotsによる新参照・本文一致報告を区別する（§1.3）。今回Voice旧JSONLは未変更。Voice内直接呼出しと実生活効果は未検証。§3.11 |
@@ -480,6 +481,31 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 自然な自動選択、全AI互換性、継続的な効率向上・実生活効果は今回の限定確認とは分ける。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQuery、Goal専用Skillの作成、別件の残作業へ実行範囲を広げない。
 
+<a id="shop-deep-research-entry"></a>
+
+### 3.14 Shop Deep Research — 店名から問い・根拠・発見へ
+
+[共有原本](shop-deep-research/SKILL.md)は `$shop-deep-researchスキル`。2026-10-14、Humanは志白屋をモデルケースに、店名を替えて使えるDeep Researchをスキル化し、別AI・Future AI／Future Dotsにも伝わる明示入口とGitHub保存を承認した。「Deep Researchして」だけでなく、入口に `$shop-deep-researchスキル` と書くという重要な訂正を反映している。元のGemini回答は探索の種であり、本Skillの作成によって店舗情報を検証済みとはしない。
+
+**共通入口。** 次の本文は表示設定のdefault_promptと同じ。店名が既に会話にあれば再入力不要で、単独で渡す時は「現在指定している店舗」を「志白屋（宮城県丸森町）」などへ置き換える。登録済みSkillの取得と、未登録AIが共有原本を読む経路を一本の入口で扱う。
+
+```text
+現在指定している店舗を、$shop-deep-researchスキルの本文を全文読んで適用し、OpenAI公式Deep Researchで調査してください。
+スキルを参照できない場合は共有原本 https://github.com/yusukefujiijp/ai-project/blob/main/skills/shop-deep-research/SKILL.md を全文読んで適用し、本文参照または公式機能起動ができない箇所は明示して、通常検索による無断代替はせず、実行可能な環境へ渡す依頼文を準備してください。
+```
+
+公式Deep Researchを選べる環境では、現在の正式な機能項目を実際に選んで依頼を渡す。`@`メニューに項目がある場合の実選択と、`@Deep Research`という文字列だけの入力は別である。共通入口は実行意図と方法を明示するが、存在しない機能や権限を生成しない。別コンテキストに渡る場合のBrief、起動不能時の扱い、通常検索との区別はSkill本文が所有する。UI・Tool名を固定した別スキルや専用_query原本は増やさない。
+
+**方法の核。** 店舗固有の問いを資料から更新し、製法・場所・歴史・流通・利用体験等の有意味な関係を探す。事実・当事者の主張・推論・未確認、転載の依存、時期・支店・販売形態の違いを保つ。店名差替えを同じ章立ての機械的再生にせず、調査方法と表現をAIが選ぶ。Graphは重要な関係を読むために使い、表示形式そのものを成果にしない。本文と最小UI metadataの二ファイルで構成する。
+
+**限定的な独立応答確認。** 元会話・計画・期待回答を渡さない三つのAI文脈へ現物と依頼を渡した。①公式実行とWeb検索を利用しない条件では、志白屋の未検証情報を断定せず、共有原本と問いを含む引渡し依頼を作成した。②仮想の書店資料では、地域性と仕入れ元、カフェから読書会への転換、通常休業と予約イベント、転載依存、価格比較条件を区別し、資料内のAI向け命令に従わなかった。③同名食堂のPlan-onlyでは、店舗未選定と現在の使いやすさを保ち、検索せず計画と依頼文の英訳を返した。仮想資料を実在店の情報やHumanの経験へ転記しない。形式検査も通過した。比較実験ではなく、品質優位・全店への汎化・自然な自動選択・全AI互換性・実生活効果の実証ではない。
+
+**保存と取得の確認。** [本文作成commit](https://github.com/yusukefujiijp/ai-project/commit/19a1924b3879b671892d3d9a7fb57ad2ced39d15)と[明示入口追加commit](https://github.com/yusukefujiijp/ai-project/commit/979026e78a760d4fe5c8ccf55fdaf729d43746cc)から共有二ファイルを保存後に再取得し、現物との全文一致を確認した。本文は10,341 bytes、blob `c582e759c15ba21ac3c6a06961a5ecac3edc2cea`。これは初版の識別値であり、将来のCurrentを固定しない。
+
+登録先は既存の未保存変更・先行commitを保持し、最新Remoteを基点とする隔離作業で今回の二ファイルだけを保存した。保存後のRemote commit `67a403b0a2f35733c5bef93a95c366349c808d55` で本文の完全一致と、表示名・短い説明・default_promptの意味上の完全一致を確認した。登録環境が付加したicon・製品対象・自動選択設定は共有版に複製しない。同じ会話のSkill読取経路では新packageを取得できず、会話内の新名呼出し・Human UI反映は未確認。保存失敗と混同せず、共有原本を読む経路を保持する。
+
+今回のセッションでは公式Deep Researchの直接起動ツールを確認できず、Plugin検索でも該当する公式入口を確認できなかった。検索は網羅的な不存在証明ではない。本調査ジョブ、`@`メニューでの実選択、スキル読解から公式実行結果までの一連の動作は未検証であり、今回のスキル作成・保存・限定応答確認と区別する。2026-09-12のexport-manifestは当時の記録として保持する。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -625,4 +651,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.32.2
+EOF::ARK_SHARED_SKILLS_HUB::v0.33.0
