@@ -7,7 +7,7 @@ updated: "2026-10-14"
 updated_by: "Work / Ark27:09"
 followup_base_commit: "6375c44f93701b7e3495c128534352edc814fafd"
 recorded_by: "Work / Ark28:05"
-status: "Podcast current-body read verified; legacy Radio retired; post-write verification pending; Voice legacy snapshot unchanged"
+status: "Podcast current-body read and legacy Radio retirement remotely verified; Voice legacy snapshot retained outside this execution"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
 expected_eof: "EOF::STR_015_SKILLS_LESSONS::v003"
 ---
@@ -151,7 +151,11 @@ VoiceはDotsの後続報告を認めつつ、この実行では登録本文の�
 
 今回の差分は、本記録・GitHub PLAN・Skills Hubの三文書と、上記三ファイルの除去に限定する。詳細な移行・復元判断は本記録、PLANは現在の選択と案内、Hubは共有原本への入口と確認範囲を所有する。Hubのコピー用Query・他Skillの記述、過去の失敗・承認・保存証拠を保持し、Query側の変更とは最新差分で統合する。
 
-**保存後確認：待ち。** 実行前の本文照合・既知参照の分類・lesson同一性は確認した。GitHub保存後に三文書の全文・metadata・anchor・EOF、三パスの除去、対象外blobの保持を直接再取得して確認し、この欄へ実装commitと結果を追記する。保存前の検査をRemote検証済みへ読み替えない。
+**保存後確認：完了（2026-10-14T04:07:22Z）。** [実装commit a4eceb7](https://github.com/yusukefujiijp/ai-project/commit/a4eceb791c6c6eeb239ed7f59f1de16a797b87bc)で三文書更新と旧Radio三ファイル除去をまとめ、基点6375c44をexpected revisionとして非forceでmainへ反映した。保存後にmainのcommit、全Tree、三文書の全文を直接取得し、意図した全文・blobと一致すること、旧Radio三パスおよびディレクトリが残っていないこと、対象外534ファイルのblobが保持されていることを確認した。
+
+事前検査では、三文書のmetadata・必要なEOF・新規参照12件、PLANの診断履歴、STR-015の第1〜6節の本文（時点表示・現在アンカーの分離を除く）、Hubのコピー用ブロック11個と他Skillの記述の保持を確認した。保存した本文が同じであることを上記再取得で照合した。Queryのblob `da1ffd2f114ea2de7b3f1bc7654116675542aea5`、現行Podcast二原本、集約lesson全6行、Voice旧JSONL、既存アーカイブ原本は変更していない。除去後も、復元表の固定commitから旧三ファイルを再取得し、元の全文・blobの一致を確認した。
+
+この結果の追記は実装後の記録更新であり、新しいSkill保存・独立応答試験・他AIの実理解・実生活効果の確認ではない。初回のHTTP 422や取得差の原因を今回確定したとも扱わない。
 
 残点はVoice旧JSONLの別判断と、全Runtime・UI・自然発動・実聴取・長期効果の未確認である。具体的な旧依存が後から見つかった場合は、上記復元条件または現行原本への参照修正から判断する。ARC-011／012、STR-014と既存の整理成果を未完了へ戻さず、新しい試験・別Branch・外部通信を自動開始しない。
 
