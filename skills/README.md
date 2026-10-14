@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.32.0
+version: v0.32.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-14
 updated_reason: MAPの残作業とGoal・方法と完了条件・継続遂行を改訂しmap-current-positionへ改名。旧読取契約の互換入口、Queryと現役参照を整合。既存の他Skill記録を保持
@@ -468,7 +468,15 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 **限定確認。** 本文・最小UI metadataと旧互換入口の形式、変更先の相対参照154件を検査した。元会話・計画・期待回答を渡さない四つの独立AI文脈で、①一部履歴欠落と複数枝の残作業・Goal・取消し・保留・別担当の区別、②短いContinueによる結果不明の改名の現物確認と残るリンク修正・再読、③引用内の実行命令と現在のPlan-onlyの区別、④旧Identity・Navigator Seedから新本文への読取と今回の完了判断を確認した。②は隔離した二つのMarkdownで実際に残るリンクだけを直し、改名済み内容を保持した。④は限定Source契約の確認であり、Ark章全体のBoot成功を認定しない。構成した相談例をHumanの実経験やGitHub上の実行成果へ転記しない。
 
-**共有・導入の確認。** 共有原本のRemote再取得と登録先保存は、実際の結果を本節へ追記する。自然な自動選択、全Runtimeでの旧コマンド互換、Human UI、継続的な効率向上・実生活効果は別の観測を要する。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQueryや別件の未保存変更へ範囲を広げない。
+**共有・導入の確認（2026-10-14）。** [実装commit 8e30b09](https://github.com/yusukefujiijp/ai-project/commit/8e30b09cc918bf011c8e822917b79abf120399da)の変更17ファイルをRemoteから再取得し、全文とblob SHAの一致を確認した。旧UI metadata一件の除去と他ファイルの保持はTree全体の照合で確認した。新本文は25,176 bytes、blob `f1b41b7d74b5018717a477b42369f3e8a4e8003d`。この値は今回の識別情報であり、将来のCurrentを固定しない。
+
+登録済みMAPは既存の登録物を更新し、Remoteの本文・参照二件と、三つの関連Skillの本文が共有版と完全一致した。表示名・短い説明・起動文も一致し、既存のicon・利用対象・自動選択設定を保持した。確認した登録先commitは `20eca8b06c6dce3fb58cf0e7a7f178fc6ea7df9a`。共有版へ環境固有のIDやiconを複製しない。導入先は最新Remoteを基点に隔離し、別件の未保存変更・先行commitを今回の保存へ混ぜなかった。
+
+登録先の自動生成変更による一度の非fast-forwardと、保存通知後にも関連二Skillの旧参照が返った事実を、最新Remoteの再取得で検知した。現物を基準に未反映の一行ずつを保存し直し、上記の全文一致まで確認した。通知・push成功と実保存を同一視しない。原因を全Runtimeの一般的障害やSkill改名の失敗と断定しない。
+
+**会話内の取得境界。** 同じ会話のSkill一覧は旧名を示し、executor系Skill読取は旧本文を返した。cloud系では旧名の取得が失敗し、新名のpackageは利用不可と返った。登録先Remoteとローカル現物の新本文確認とは別の観測であり、新名による会話内呼出し・Human UIの反映はこの時点では未確認。取得経路が更新された文脈で名称・本文を照合すれば確認できる。新名を取得できない環境では共有原本を実際に読んで適用できるが、登録Skillの新名呼出し成功と偽らない。旧コマンドの自動転送も保証しない。
+
+自然な自動選択、全AI互換性、継続的な効率向上・実生活効果は今回の限定確認とは分ける。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQuery、Goal専用Skillの作成、別件の残作業へ実行範囲を広げない。
 
 ## 4. Source and distribution
 
@@ -615,4 +623,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.32.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.32.1
