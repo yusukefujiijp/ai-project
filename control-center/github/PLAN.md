@@ -1,19 +1,19 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.18.0"
+version: "0.19.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Podcast and Voice saves verified; conversation lookup cutover pending; Projects archive remains completed"
+status: "Podcast current-body read verified and legacy Radio retired; Voice legacy snapshot remains outside this execution"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-11"
+updated: "2026-10-14"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "Route to the later Human-authorized Podcast/Voice cutover and its remaining lookup dependency; preserve completed ARC-012 and historical boundaries."
+updated_reason: "STR-015 follow-up: connect later observed reads to the current decision, retire three legacy Radio files, and preserve Query, Voice and historical evidence."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.18.0"
-current_observation_base: "eab6d50d8271c5ef1eb50d2217e3291e47fe6eb2"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.19.0"
+current_observation_base: "6375c44f93701b7e3495c128534352edc814fafd"
 change_record: "../changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current"
 ---
 
@@ -25,9 +25,11 @@ change_record: "../changes/STR-015-skills-lessons-consolidation.md#podcast-cutov
 
 ## current
 
-### 今回の焦点：Podcast継承と参照切替の残点へ戻る
+### 直近の整理：Podcastの後続確認と旧Radio配置の退役
 
-Projectsアーカイブ完了後、Humanは本線へ戻って改訂計画を検討し、2026-10-11にPodcast継承・Voice参照更新の実行を明示した。現在の共有入口は[Skills Hub](../../skills/README.md#podcast-voice-current)、保存結果と会話内参照の未切替・旧配置退役条件は[STR-015の後続記録](../changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。旧配置の除去はその依存を確認した単位で進め、保存済みの実装や完了済みの計画を材料なく繰り返さない。
+2026-10-14、Ark27:09のHumanは、QueryをArk28へ分担した上で、既存三文書の整合と条件付き旧Radio三ファイル退役の計画へ実行・継続を明示した。本環境でTheme拡張版Podcastの取得と共有本文の一致、旧Radio lessonの集約先での保存、既知の現役依存と復元経路を確認し、旧Radio三ファイルを現役配置から除去した。後続観測・実装と保存後検証・復元条件は[STR-015の現在節](../changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)、現在の共有入口は[Skills Hub](../../skills/README.md#podcast-voice-current)が所有する。
+
+10月11日の取得未切替、10月12日のDots報告、10月13日のTheme改訂と当時の取得範囲、今回の直接確認を分ける。Voice旧JSONLの除去は今回の範囲外であり、全Runtimeの切替・自然発動・長期効果は別の未確認事項である。Queryの保存・入口整備、Skill再作成、別Branchを自動開始しない。今回の保存後検証が済んだら、現在のHuman入力またはHuman Reviewへ戻る。
 
 ### 先行完了：Projects全体の保管と現役入口の退役
 
@@ -544,4 +546,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.18.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.19.0

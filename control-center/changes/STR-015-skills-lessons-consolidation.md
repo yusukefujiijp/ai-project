@@ -1,18 +1,20 @@
 ---
 title: "STR-015 — Skills lessons集約とHubの現在案内"
 canonical_path: "control-center/changes/STR-015-skills-lessons-consolidation.md"
-version: "v002"
+version: "v003"
 created: "2026-10-11"
-updated: "2026-10-11"
+updated: "2026-10-14"
+updated_by: "Work / Ark27:09"
+followup_base_commit: "6375c44f93701b7e3495c128534352edc814fafd"
 recorded_by: "Work / Ark28:05"
-status: "Podcast and Voice shared/runtime saves verified; conversation skill reads remain old; legacy retirement held"
+status: "Podcast current-body read verified; legacy Radio retired; post-write verification pending; Voice legacy snapshot unchanged"
 base_commit: "96dbc5413b3ef32a4f9496819ff15930b9519678"
-expected_eof: "EOF::STR_015_SKILLS_LESSONS::v002"
+expected_eof: "EOF::STR_015_SKILLS_LESSONS::v003"
 ---
 
 # STR-015 — 学びを集め、適用条件と接続を保つ
 
-**現在状態は第6節。** 第1〜5節は初回の集約、HTTP 422観測と当時の復旧条件を保持する。後続のHuman承認・通常保存成功・会話内参照の未切替を、初回の未完了と区別する。
+**現在状態は[第7節](#podcast-cutover-current)。** 第1〜6節は初回の集約、HTTP 422、後続保存と各時点の取得結果を保持する。現在の本文取得・旧Radio配置の退役と、過去の未切替・Voice側の別残点を区別する。
 
 ## 1. 目的・Humanの判断・範囲
 
@@ -74,9 +76,9 @@ GitHubの保存、登録先の保存、会話内取得、Human UI、自然な自
 
 新しい経験やHuman Correctionがあれば、今回の適用範囲・参照・更新のどこで判断が変わるかを見て担当原本へ戻す。通常の支援ごとの新lesson登録、全履歴読込、追加Trialは義務にしない。
 
-<a id="podcast-cutover-current"></a>
+<a id="podcast-cutover-2026-10-11"></a>
 
-## 6. 2026-10-11の後続実行 — 現在の保存と参照状態
+## 6. 2026-10-11の後続実行 — 当時の保存と参照状態
 
 ### 意図・権限・比較基点
 
@@ -108,4 +110,49 @@ GitHubの実行基点は[eab6d50](https://github.com/yusukefujiijp/ai-project/tr
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。HumanのCorrection・STOP・Final Sealと適用Guardを保持し、AI・Skill・文書をKeliとして扱う。
 
-EOF::STR_015_SKILLS_LESSONS::v002
+<a id="podcast-cutover-current"></a>
+
+## 7. 2026-10-14の後続確認と旧Radio配置の退役
+
+### Humanの指定・範囲・比較基点
+
+Ark27:09でHumanは、Query側をArk28へ分担し、それ以外の途中成果の修正改善へ集中するよう指定した。Plan Modeで既存三文書の整合と条件付きの旧Radio三ファイル退役を提示した後、「他ThreadでのPodcast Mode修正改善は終了した」と報告し、GitHub実行・Human Seal・範囲内の継続を明示した。これは本Threadの入力の編集要約であり、他Threadの全作業を独立検証済みとは扱わず、未提示の会話URL・識別子は作らない。
+
+実行前mainは[6375c44](https://github.com/yusukefujiijp/ai-project/tree/6375c44f93701b7e3495c128534352edc814fafd)。計画基点3201b46以降の一変更は、Ark28側の `skills/map-ark-current-position/query/README.md` のバックアップ本文であり、保持した。AGENTS、三対象文書、Podcastと旧Radio各原本の同一性を確認し、既存の全文読解を再利用した。Query設計・本文、現行Podcastの本文・表示・登録先、Voice旧JSONL、集約lesson、過去アーカイブ原本、Main／Support、Board・予定・生活Taskは変更対象にしない。ChatGPT長期メモリは保存Sourceに含めない。
+
+### 取得・保存・実利用を時点とActorごとに分ける
+
+| 観測時点・Actor | 確認した内容と根拠 | 判断の範囲 |
+|---|---|---|
+| 2026-10-11 / Work・Ark28:05 | [第6節](#podcast-cutover-2026-10-11)の通常保存成功と、当時の会話内取得の未切替 | 当時の正しい観測。現在の全環境の未切替へ延長しない |
+| 2026-10-12 JST / dot-0000 | [日別記録](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/records/2026/10/2026-10-12.jsonl)の `d90e5409-bbaf-4771-9544-b12baaebd02e` が、そのDotでPodcast・Voice本文と当時の共有原本の完全一致・集約lesson参照を報告 | 既存のSource報告として受領。本実行者の試験でも、後日のTheme拡張版の確認でもない |
+| 2026-10-13 / Work・Ark28:05 | [Theme改訂記録](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/README.md#podcast-theme-mode)は、新Podcast名での改訂前本文取得、Theme版の共有・登録先保存、その会話での旧本文取得を区別 | Theme版の保存とその会話での最新取得は別。限定応答確認を本実行で再試験したとはしない |
+| 2026-10-14 / Work・Ark27:09 | 既存Podcast登録物から全文を直接取得し、[現行共有本文](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/podcast-mode/SKILL.md)と文字列完全一致。共有blob `6188c1e2db9e061bae7a8a2d476f0af27205e93d`、8,499 bytes。Theme機能と集約lesson URLを含む | この実行環境の本文取得を確認。登録の再保存・再作成、Human UI操作、自然発動、実聴取・長期効果の検証ではない |
+
+VoiceはDotsの後続報告を認めつつ、この実行では登録本文の新たな取得試験・旧JSONL除去を行わない。既にある確認をUnknownへ戻さず、Source報告、本実行者の確認、別対象の未実施を区別する。
+
+### 既知の依存と価値保存からの退役判断
+
+現行のPodcast本文は集約lessonを参照し、旧Radio三パスを必要としない。公開された利用可能SkillにはPodcastがあり、旧Radioの独立登録は示されていない。検索基点3201b46で得た旧名参照と、実行前6375c44との差分一ファイルを照合し、そのQuery本文に旧 `radio-mode` 参照がないことも確認した。既知の参照は、除去対象自身、固定commitの形成・保存証拠、日別の過去記録、ARC-012の同一保管原本に分類できる。保管原本の当時の相対案内を現役導線へ戻さず、その原本は変更しない。検索結果を全外部consumerの網羅証明とは扱わない。
+
+旧Radio lesson一行（ID `73e44fc7-1abe-4192-aff6-fdf54f5c2004`）が、[実行前の集約原本](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/_references/lessons.jsonl)内に同一行で存在することを確認した。集約全6行は変更しない。手動音声ボタンによる利用価値、固定しない長さ・構成、Human報告と未実証の効果を分ける留保、元のID・日時・出典を保持する。
+
+以上から、既知の利用側について新Podcast取得・旧依存解消・学びの保存・復元経路が揃ったと判断し、次の三ファイルを現役配置から除去した。未知の全Runtime、旧コマンドの機械的転送、Voiceの全残件、Queryの完成を一律の待ち条件にはしない。旧名称の歴史を消す判断でもない。
+
+| 除去する元パス | 実行前blob / 復元する内容 |
+|---|---|
+| [skills/radio-mode/SKILL.md](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/radio-mode/SKILL.md) | `8bef4b74fd133294cc3e7a4569551c57b1b9016f` |
+| [skills/radio-mode/agents/openai.yaml](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/radio-mode/agents/openai.yaml) | `5caa30c816510efc2e48f42dd92fe0a1ff7e1ff5` |
+| [skills/radio-mode/references/lessons.jsonl](https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/radio-mode/references/lessons.jsonl) | `42d2d143a9111bb8a9f8b53a990f2b33e391c32c` |
+
+復元が必要なら、具体的な旧依存と現在の権限を確かめ、上記固定commitから必要な元パスの全内容を取得し、blobを照合して戻す。履歴を消去せず、新しい保管棚・重複Skill・同期コピーは作らない。Repository全体を過去commitへ戻したり、旧snapshotで現行Podcast・集約lesson・Queryを上書きしたりしない。
+
+### 変更・検証・残点
+
+今回の差分は、本記録・GitHub PLAN・Skills Hubの三文書と、上記三ファイルの除去に限定する。詳細な移行・復元判断は本記録、PLANは現在の選択と案内、Hubは共有原本への入口と確認範囲を所有する。Hubのコピー用Query・他Skillの記述、過去の失敗・承認・保存証拠を保持し、Query側の変更とは最新差分で統合する。
+
+**保存後確認：待ち。** 実行前の本文照合・既知参照の分類・lesson同一性は確認した。GitHub保存後に三文書の全文・metadata・anchor・EOF、三パスの除去、対象外blobの保持を直接再取得して確認し、この欄へ実装commitと結果を追記する。保存前の検査をRemote検証済みへ読み替えない。
+
+残点はVoice旧JSONLの別判断と、全Runtime・UI・自然発動・実聴取・長期効果の未確認である。具体的な旧依存が後から見つかった場合は、上記復元条件または現行原本への参照修正から判断する。ARC-011／012、STR-014と既存の整理成果を未完了へ戻さず、新しい試験・別Branch・外部通信を自動開始しない。
+
+EOF::STR_015_SKILLS_LESSONS::v003
