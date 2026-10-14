@@ -3,20 +3,20 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark28-05-task-records",
-  "revision": 2,
+  "revision": 3,
   "role": "thread_experience_record",
   "created": "2026-10-08",
-  "updated": "2026-10-08",
+  "updated": "2026-10-14",
   "source_context": {
     "repository": "yusukefujiijp/ai-project",
     "thread": "Ark28:05",
     "canonical_path": "ark-project/ark28/ark28-05/task-records.json",
     "reported_date": "2026-10-07",
     "timezone": "Asia/Tokyo",
-    "time_note": "ワコーの方針発言は2026-10-07、Portalへの保存依頼は2026-10-08（発言時の明示されたAsia/Tokyo）。記録作成日は2026-10-08。休日の具体日、買い物の実行日時、帰宅時刻は未報告。 revision 2では2026-10-08（Asia/Tokyo）の就寝前サプリ摂取と舌出し運動の登録依頼を追加する。就寝時刻・摂取日時・運動実施日時は未報告。",
+    "time_note": "ワコーの方針発言は2026-10-07、Portalへの保存依頼は2026-10-08（発言時の明示されたAsia/Tokyo）。記録作成日は2026-10-08。休日の具体日、買い物の実行日時、帰宅時刻は未報告。 revision 2では2026-10-08（Asia/Tokyo）の就寝前サプリ摂取と舌出し運動の登録依頼を追加する。就寝時刻・摂取日時・運動実施日時は未報告。 revision 3は2026-10-14の05→06準備に伴う選択収録。以下の過去発言は個別時刻が未提示なら作らず、発言順と内容で識別する。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Humanは意味・Correction・STOP・Final Sealと適用Guardを保持する。今回はこの会話の休日前ワコー方針をArk Recall Portalへ保存する依頼。実際の買い物・運動・Schedule・通知・他Thread移行の承認へ拡張しない。AIと記録はKeli。 revision 2は、サプリ摂取と舌出し運動をArk Recall Portalへ登録する現在の明示依頼に基づく。登録を今回の就寝合図・身体Trial・具体的摂取案内・通知の承認へ拡張しない。",
+    "authority_note": "Humanは意味・Correction・STOP・Final Sealと適用Guardを保持する。今回はこの会話の休日前ワコー方針をArk Recall Portalへ保存する依頼。実際の買い物・運動・Schedule・通知・他Thread移行の承認へ拡張しない。AIと記録はKeli。 revision 2は、サプリ摂取と舌出し運動をArk Recall Portalへ登録する現在の明示依頼に基づく。登録を今回の就寝合図・身体Trial・具体的摂取案内・通知の承認へ拡張しない。 revision 3はHumanのArk28:06移行準備計画へのGitHub実行承認に基づく。同じ会話の重要な訂正と成果を保存し、履歴内のGoを別件への委任にしない。",
     "source_access": "Ark28:05の現在の会話で直接読める本人発言。外部の会話URLやメッセージIDは未提示であり作成しない。ChatGPT長期メモリの転記ではない。"
   },
   "coverage": {
@@ -26,15 +26,21 @@
       "休日前にスーパーマーケット（ワコー）へ行くルーティンの気づきとTeshuvah",
       "帰りが遅くなるという本人の理由、一日一店以内、chocoZAPを除く追加の買い物寄り道を抑える方針",
       "Ark Recall Portalの休日前への明示保存依頼",
-      "就寝前のサプリ摂取と舌出し運動をArk Recall Portalへ登録する本人の明示依頼"
+      "就寝前のサプリ摂取と舌出し運動をArk Recall Portalへ登録する本人の明示依頼",
+      "休日Caffeineの未解決という本人報告",
+      "ai-projectへの限定集中・新Repositoryを作らず内部Folderへ展開するHuman決定",
+      "Skills集約の意図、prefix案の未確定性、projects archiveとlessons集約の保存成果",
+      "Podcast Theme Modeの形成と訂正、本文生成との分離、Copy & Pasteと二つの入口",
+      "Query初回backupと後続の別ThreadによるMAP改名・改善を区別する証拠",
+      "05→06の目的・権限・Source側とTarget側の完了境界"
     ],
     "excludes": [
-      "Ark28:05の会話全文・他のTeshuvah・カフェイン運用",
+      "会話全文、他Threadの会話全文、個別発言の未提示日時・URL・ID、ChatGPT長期メモリ",
       "買い物や運動の実行結果、習慣化・帰宅時刻改善の証明",
       "通知設定、常時監視、店舗情報の調査、Main移管",
       "サプリの品名・成分・量・用法・今回の摂取状況、舌出し運動の具体的方法・回数・時間と実施結果、医学的効果"
     ],
-    "note": "本人が新しく気づいた方針と保存希望の選択記録。方針発言・保存希望の確認を、実行・成功・再現性の確認と混同しない。 revision 2の二件は想起希望の登録であり、実際の摂取・運動・就寝の開始や完了とは区別する。以前の就寝前サプリ希望はArk27:04の原本に保持し、今回の発言をこのThreadの新しいSourceとして追加する。"
+    "note": "本人が新しく気づいた方針と保存希望の選択記録。方針発言・保存希望の確認を、実行・成功・再現性の確認と混同しない。 revision 2の二件は想起希望の登録であり、実際の摂取・運動・就寝の開始や完了とは区別する。以前の就寝前サプリ希望はArk27:04の原本に保持し、今回の発言をこのThreadの新しいSourceとして追加する。 revision 3は全Taskの棚卸しや新しい実行列ではない。Repository所有資料の主張、今回の現物確認、Human報告、AI提案を分ける。"
   },
   "sources": [
     {
@@ -63,6 +69,195 @@
       "excerpt": "就寝前のサプリ摂取と舌出し運動もArk Recall Portal登録して下さい！",
       "excerpt_kind": "verbatim_contiguous",
       "note": "二件の想起項目を保存する現在の明示依頼。現在就寝前・今回実施済み・具体的用法の確定とは扱わない。"
+    },
+    {
+      "id": "caffeine-current-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "Caffeine問題はまだ本当の解決に至らず特に休日のCaffeineの活用方法はまだ\"自家薬籠中化(受肉化)\"していませんから主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の未解決感と信仰表現。現在の摂取量・疾病・信仰状態をAIが診断しない。"
+    },
+    {
+      "id": "single-repository-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "それはai-project以外のRepositoryを私YusukeJPにより全て削除した！ある程度ローカルにbackupはあるもののAI側はないと考えてOK！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "削除・backupはHuman報告。全アカウントやローカルをAIが独立確認した事実ではない。"
+    },
+    {
+      "id": "single-repository-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "どういう意味かと言うと、今後は新しいRepositoryを決して作らずai-projectに\"限定集中・全集中・超集中\"し新たなものでもai-project内の1フォルダとして展開するという意味合いです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "organization-prefix-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "Humanは整理整頓をOrganizationと訳す案を受け取り、skills/README.mdを最重要と指定。skills/_grokやroot grok内への分散を避け、grok-、将来claude-等のprefixを検討した。ただし絶対的に正しい方式ではなく最善を模索中と明示した。",
+      "excerpt_kind": "paraphrase",
+      "note": "複数発言の編集要約。prefixの全面採用・既存Skillの一括移動への承認とは扱わない。"
+    },
+    {
+      "id": "podcast-theme-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "Theme選別や抽出や工夫段階の事を\nPodcast Theme Modeと名付けよう！\nPodcast Theme Mode命名により、Podcast Theme Modeでどのように良いThemeを提案するかという部分に集中できるようになった！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "podcast-lenses-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "今最もホットな話題が新鮮さという意味合いでは良い。\n全体俯瞰のAIならではの俯瞰視点もとても良いです！\n全体横断的な総合的なThemeも良いです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "podcast-chief-s01",
+      "speaker": "YusukeJP relaying ChatGPT Dots: 初穂; Chief AI",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "初穂は、候補名を増やす以上に「そのThemeを今聴くと、何が見えてくるのか」を提案へ含める価値を述べた。同じ題材を新鮮さ・俯瞰・横断で比べ、Support/Ark28:05の既存擦り合わせへ接続する。",
+      "excerpt_kind": "paraphrase",
+      "note": "Human経由の引用を読んだ。初穂へこちらから連絡した事実・新送信許可ではない。"
+    },
+    {
+      "id": "podcast-copy-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "Threadの流れを保ち、Theme ModeをそのThreadで使い、候補のCopy & PasteからPodcast専用Threadで生成する案。同じThreadでのPodcast生成も排除しない。三案は例であり、この発言はまだ実装せず全コメントへ対応する依頼だった。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "podcast-entry-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "Podcast Theme Modeを発動させるためのAI-Promptが\"最重要(Most important!)\"です！\nつまり、この段階ではPodcast Modeは発動させません！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "podcast-direct-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "ThemeがPodcast Theme Modeから以外の場合でUser(YusukeJP)側からの指定の場合UserがThemeを指定した後の入口AI-Promptも別に必要です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "plan-iterations-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "複数回繰り返し**Plan Mode**こそが、我々Ark Projectの成功法則一つであり、**Plan Mode**練り込み練り上げる事が成功の為に\"最重要(Most important!)\"だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanが繰り返す検討を価値として採用。すべての実行に追加Planや再承認を強制する規則にはしない。"
+    },
+    {
+      "id": "query-backup-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 現在アクセス可能な会話の該当Human発言（個別時刻・URL未提示）",
+      "excerpt": "今現在、map-ark-current-positionを少し別Threadで改良中心だが、その前にQuery系のbackupとして書き出して下さい！あとでメイン修正改善後に更新すれば良いからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同発言のExecute GitHub承認は当該Query backupへの委任。MAP本体改訂の権限へ流用しない。"
+    },
+    {
+      "id": "query-initial-release-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "skills/map-ark-current-position/query/README.md @ 6375c44f93701b7e3495c128534352edc814fafd",
+      "excerpt": "空READMEをQuery本文と役割・由来のbackupへ更新。初回の一ファイル保存をRemoteから再取得して一致確認した。後続のMAP改訂とは別の公開成果。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/6375c44f93701b7e3495c128534352edc814fafd/skills/map-ark-current-position/query/README.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "skills-outcomes-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "control-center/changes/STR-015-skills-lessons-consolidation.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "四つの元lessonsを集約し、Voice・Podcastの共有/導入成果を保存。登録更新のHTTP422を失敗として記録した後に導入成功を確認し、普遍的原因解決とは断定しない。Main27:09の2026-10-14追補は旧Radio三パスの退役と保存確認を記録する。Voiceの旧lessons整理は別判断。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/control-center/changes/STR-015-skills-lessons-consolidation.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "projects-archive-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "control-center/github/ARCHIVE.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "ARC-012はprojects/とark-wtpの原本七件を同blobでarchiveへ移し、六案内を更新した成果を記録。公開commit 4bba624408bbb142a1e047914fde95b1739b5eb6。WTP最終Seal・研究再開・ローカルbackupの実証ではない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/control-center/github/ARCHIVE.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "podcast-release-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "skills/README.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "PodcastのTheme提案、コピー可能な生成依頼、Human指定Themeからの本文生成、plan-onlyを分ける共有・登録改訂と限定応答確認が保存されている。導入・本文取得・自然発動・実際に聴いた効果は別。Theme版本文commit 2d3bcda7b0edcd39fbefcd2247171c3755179417。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/skills/README.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "map-current-release-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "skills/README.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "§3.13は2026-10-14のMAP改善・改名を記録。現行はmap-current-position、残作業とGoal・方法・完了条件・Continueの扱いを追加。実装8e30b09cc918bf011c8e822917b79abf120399daと登録先20eca8b06c6dce3fb58cf0e7a7f178fc6ea7df9aの確認後、所有Threadのcloud新名・executor既存IDの両経路で改訂本文の全文一致も確認され、取得残点は完了。Human UI・旧コマンドalias・自然発動・全Runtime・実効果とは区別する。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/skills/README.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "map-query-current-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "skills/map-current-position/query/README.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "Queryは新名へ移動し、残作業とGoal等の後続改善を反映したCurrent。05の初回backupの由来を保持し、他Threadの後続改訂と区別している。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/skills/map-current-position/query/README.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "ark99-current-correction-s01",
+      "speaker": "Repository owner record",
+      "medium": "repository_file",
+      "locator": "ark-project/ark99/ark99-00/README.md @ dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
+      "excerpt": "2026-10-10の後続Human訂正により、Ark99本番の起動準備はすべて00から行う。Ark99だけの経路であり、00の無関係な全実験完了を本番開始条件にしない。旧05初期Stateのno mandatory00 transitは当時の履歴であって現行運用ではない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/ark-project/ark99/ark99-00/README.md",
+      "note": "所有資料の記述を今回読んだ編集要約。別Actorの実行・観測を自分の独立実証へ変えない。"
+    },
+    {
+      "id": "transition-plan-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 2026-10-14 / Ark28:06移行準備のHuman依頼",
+      "excerpt": "Ark28:06へ同章Supportとして移行する準備をprepare-ark-transitionのPlan Modeで調査・計画。Sourceの成果・訂正・残点・根拠・First Legal MoveをTargetが会話履歴なしで復元できること、両側のTitleコピー面、実際の起動本文への再掲指示を要求した。",
+      "excerpt_kind": "paraphrase"
+    },
+    {
+      "id": "transition-approval-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark28:05 / 2026-10-14 / 8パスの05→06計画提示に続く最新Human実行承認",
+      "excerpt": "OK！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "この計画のGitHub準備・保存・検証・コピー面提示を承認。実際のTarget読解やUI操作の成功を先取りしない。"
     }
   ],
   "nodes": [
@@ -184,6 +379,198 @@
           "bedtime-recall-s01"
         ]
       }
+    },
+    {
+      "id": "caffeine-unresolved",
+      "kind": "observation",
+      "label": "休日Caffeineは本人の未解決課題",
+      "description": "Best Practiceを探しているが未受肉化という本人報告。Repository整理・Skill完成を身体運用の解決と同一視しない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "caffeine-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "repository-concentration",
+      "kind": "decision",
+      "label": "ai-project内へ限定集中",
+      "description": "旧Repositoryの復元を前提にせず、新しいものもai-project内のFolderへ展開する。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "single-repository-s01",
+          "single-repository-s02"
+        ]
+      }
+    },
+    {
+      "id": "organization-candidate",
+      "kind": "interpretation",
+      "label": "Skill分散を防ぐOrganization",
+      "description": "Hubを中心に、共有Skillと専用Skillの所在を整理する。prefixは検討候補であり全面採用を確定しない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "organization-prefix-s01"
+        ],
+        "note": "意図を構造化したAI解釈。現行所有資料とHumanの後続判断で訂正可能。"
+      }
+    },
+    {
+      "id": "podcast-theme-mode",
+      "kind": "decision",
+      "label": "Theme Modeの独立した価値",
+      "description": "新鮮さ・俯瞰・横断などから、そのThemeを今聴いて何が見えるかを提案する。候補名や数だけを増やす機能ではない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "podcast-theme-s01",
+          "podcast-lenses-s01",
+          "podcast-chief-s01"
+        ]
+      }
+    },
+    {
+      "id": "podcast-two-entries",
+      "kind": "decision",
+      "label": "選定と生成の入口を分ける",
+      "description": "Theme Mode起動では本文を生成しない。Human指定Themeなら再選別を挟まず本文生成入口を使う。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "podcast-entry-s01",
+          "podcast-direct-s01"
+        ]
+      }
+    },
+    {
+      "id": "podcast-portability",
+      "kind": "decision",
+      "label": "Thread間を選べるコピー面",
+      "description": "Theme提案を現在Threadに置き、自己完結する生成依頼を同じThread/別Threadで使える。専用Threadを必須にしない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "podcast-copy-s01"
+        ]
+      }
+    },
+    {
+      "id": "plan-value",
+      "kind": "decision",
+      "label": "Plan Modeを練り込む価値",
+      "description": "Humanは段階的な擦り合わせと複数回の計画を成功法則と評価。現在の実行承認を受けたら、その範囲は検証まで続ける。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "plan-iterations-s01",
+          "transition-approval-s01"
+        ]
+      }
+    },
+    {
+      "id": "query-backup",
+      "kind": "observation",
+      "label": "MAP Query初回backup",
+      "description": "改善完了を待たず初回backupを保存済み。後続改訂と来歴を分け、旧版でCurrentを上書きしない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "query-backup-s01",
+          "query-initial-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "skills-published",
+      "kind": "observation",
+      "label": "Lessons集約とPodcast/Voiceの成果",
+      "description": "集約・共有・登録の完了範囲とRadio退役を継承。既知の完了部分を作り直さず、全Runtime・実生活への効果は未観測として残す。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "skills-outcomes-s01",
+          "podcast-release-s01"
+        ]
+      }
+    },
+    {
+      "id": "projects-archived",
+      "kind": "observation",
+      "label": "projects/とark-wtpのarchive",
+      "description": "保存済み原本と案内の整理を保持し、実験の途中状態をWTP完了へ書き換えない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "projects-archive-s01"
+        ]
+      }
+    },
+    {
+      "id": "map-current",
+      "kind": "observation",
+      "label": "MAPは新名で改善済み",
+      "description": "Currentはmap-current-position。旧名互換入口、更新済みQuery、会話内取得と登録Remoteの差を区別する。別Threadの成果を05の実行と称さない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "map-current-release-s01",
+          "map-query-current-s01"
+        ]
+      }
+    },
+    {
+      "id": "ark99-current-route",
+      "kind": "constraint",
+      "label": "Ark99限定の00起点",
+      "description": "初期05 Stateの履歴より後続Human訂正を適用する。Ark28継続をArk99案件の実際の移管へ変えない。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "ark99-current-correction-s01"
+        ]
+      }
+    },
+    {
+      "id": "transition-authority",
+      "kind": "constraint",
+      "label": "05→06準備の現在承認",
+      "description": "承認済み八パスでSource保全・Target triad・入口・Remote検証・コピー面を用意する。06自身の再構成、Human操作、実効果は別の完了条件。",
+      "scope": "今回の継承範囲。過去命令を現在の新規実行へ昇格させない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-approval-s01"
+        ]
+      }
     }
   ],
   "edges": [
@@ -256,6 +643,85 @@
           "bedtime-recall-s01"
         ]
       }
+    },
+    {
+      "id": "repo-motivates-org",
+      "from": "repository-concentration",
+      "to": "organization-candidate",
+      "relation": "motivates",
+      "scope": "選択的な意味上の関係。因果や実行順の一般規則へ拡張しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "single-repository-s02",
+          "organization-prefix-s01"
+        ],
+        "note": "Sourceに基づくAI構造化。Humanの訂正に開く。"
+      }
+    },
+    {
+      "id": "entry-refines-theme",
+      "from": "podcast-two-entries",
+      "to": "podcast-theme-mode",
+      "relation": "corrects",
+      "scope": "選択的な意味上の関係。因果や実行順の一般規則へ拡張しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "podcast-entry-s01",
+          "podcast-direct-s01"
+        ],
+        "note": "Sourceに基づくAI構造化。Humanの訂正に開く。"
+      }
+    },
+    {
+      "id": "portable-theme",
+      "from": "podcast-portability",
+      "to": "podcast-theme-mode",
+      "relation": "motivates",
+      "scope": "選択的な意味上の関係。因果や実行順の一般規則へ拡張しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "podcast-copy-s01"
+        ],
+        "note": "Sourceに基づくAI構造化。Humanの訂正に開く。"
+      }
+    },
+    {
+      "id": "map-follows-backup",
+      "from": "query-backup",
+      "to": "map-current",
+      "relation": "observed_before",
+      "scope": "選択的な意味上の関係。因果や実行順の一般規則へ拡張しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "query-initial-release-s01",
+          "map-current-release-s01"
+        ],
+        "note": "Sourceに基づくAI構造化。Humanの訂正に開く。"
+      }
+    },
+    {
+      "id": "transition-preserves-fruit",
+      "from": "skills-published",
+      "to": "transition-authority",
+      "relation": "motivates",
+      "scope": "選択的な意味上の関係。因果や実行順の一般規則へ拡張しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "skills-outcomes-s01",
+          "transition-plan-s01"
+        ],
+        "note": "Sourceに基づくAI構造化。Humanの訂正に開く。"
+      }
     }
   ],
   "open_questions": [
@@ -305,6 +771,25 @@
           "bedtime-recall-s01"
         ]
       }
+    },
+    {
+      "id": "field-effects-unknown",
+      "subject_refs": [
+        "caffeine-unresolved",
+        "podcast-theme-mode",
+        "map-current"
+      ],
+      "question": "休日Caffeineの現在の運用、実際のPodcast聴取やMAP改訂後の継続的効果はこの準備では未確認。",
+      "scope": "通常のUnknown。全解消を06受入れや継続の条件にせず、自然な入力を待つ。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "caffeine-current-s01",
+          "map-current-release-s01",
+          "podcast-release-s01"
+        ]
+      }
     }
   ],
   "extensions": {
@@ -324,6 +809,15 @@
         "change": "本人の明示依頼により、就寝前のサプリ摂取・舌出し運動の想起希望を追加。既存のワコー記録を保持し、原発言と未指定の条件を分けた。",
         "source_refs": [
           "bedtime-recall-s01"
+        ]
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-14",
+        "change": "05→06の承認済み準備として判断を変えるHuman訂正・公開成果・後続Current差分を選択収録。既存8 nodesと生活原文を保持。",
+        "source_refs": [
+          "transition-plan-s01",
+          "transition-approval-s01"
         ]
       }
     ]

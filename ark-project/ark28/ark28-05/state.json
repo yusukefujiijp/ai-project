@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_05_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-06",
-    "updated": "2026-10-06",
+    "updated": "2026-10-14",
     "canonical_path": "ark-project/ark28/ark28-05/state.json",
-    "date_scope": "Asia/Tokyo preparation; not actual Target reception or Human UI",
-    "change_reason": "Initialize Human-authorized04→05 Support continuation from preserved Ark99 formation, material corrections, completed outcomes and current owners."
+    "date_scope": "Asia/Tokyo revision; historical preparation observations retain their original dates",
+    "change_reason": "Preserve05 collaboration and Human corrections, reconcile Current owners, prepare05→06 under current execution authorization; retain04→05 origin and immutable bindings."
   },
   "identity": {
     "source": "Ark28:04",
@@ -184,16 +184,18 @@
     }
   },
   "now": {
-    "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
-    "support_purpose": "Teshuvahを軸に、04で整ったArk99の入口・00・名称訂正・指示原本と既存協働成果を保持し、05の現在のHuman入力へ応じる。",
-    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+    "phase": "PREPARING_ARK28_06",
+    "support_purpose": "Teshuvahを軸に05で育った生活想起・Repository集中・Podcast・Queryの意味を保持し、同章Support06へ継続する。",
+    "first_legal_move": "COMPLETE_AUTHORIZED_SOURCE_AND_TARGET_PREPARATION",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "existing_input": "Receive any already supplied current Human request after required gates; do not ask it to be repeated.",
     "boot_only": "Return evidence-backed acceptance with adjacent Living Review and Next step, then Human Review; no automatic task dispatch.",
     "current_request": {
-      "kind": "RECEIVE_THREAD_CONTINUATION",
-      "completion": "Target itself fully reads ordered16 sources, verifies identity/binding/triad and supports R1–R8 with evidence.",
-      "boundary": "Source validation and remote persistence cannot satisfy this Target-owned gate."
+      "kind": "PREPARE_THREAD_CONTINUATION",
+      "source": "Ark28:05",
+      "target": "Ark28:06",
+      "scope": "Approved eight paths:05 task-records/harvest/state;06 README/handoff/state;chapter and Domain routers; remote verification and copy surfaces.",
+      "completion": "Source prepared and remote verified; actual06 reconstruction, Human UI and field effect separate."
     },
     "preparation_observation": {
       "date_jst": "2026-10-06",
@@ -294,7 +296,8 @@
         "commit": "71fa59ddd4283afa34640011f44c1f11d0fafd16",
         "owner": "ark-project/ark99/ark99-00/README.md",
         "source_id": "control-release-s01",
-        "boundary": "00 handles setup and experiments;01+ production rules. No mandatory00 transit or all-experiments gate."
+        "boundary": "Historical00 preparation release. Current Ark99-only startup route is00 per2026-10-10 Human correction; unrelated experiments are not a production-start gate.",
+        "historical_boundary": "00 handles setup and experiments;01+ production rules. No mandatory00 transit or all-experiments gate."
       },
       {
         "outcome": "Ark99 names and paste-ready instructions",
@@ -346,6 +349,11 @@
         "correction": "新しいTitleの日付後は半角セミコロン。04の固定Titleを遡及変更しない。",
         "owner": "ark-project/README.md",
         "policy": "thread_title_policy_version v002-human-authorized"
+      },
+      {
+        "correction": "Ark99の本番起動準備は00起点（2026-10-10 Human訂正）。旧初期State内no mandatory00 transitをCurrentとして適用しない。",
+        "owner": "ark-project/ark99/INSTRUCTIONS.md",
+        "boundary": "Ark99のみ。00の無関係な全実験を本番開始Gateにしない。"
       }
     ],
     "source04_reception": {
@@ -365,12 +373,17 @@
       "boundary": "Not direct04→00 communication observation, independent reader test, UI matching or production effect."
     },
     "unknown": [
-      "05自身のRequired Sources読解・再構成と、Humanの05作成・貼付・Title適用。",
+      "05 Human UIの正確な作成・貼付・Title適用。自身の読解記録と区別する。06自身の受入れとUIは別途未観測。",
       "Ark99のProject指示貼付全文一致、本番の実利用とTeshuvah Cycleへの効果。このSourceの確認境界であり未実行・失敗の認定ではない。",
       "元の休日Teshuvahの現在の完了状態、4:00案の結果、Walking、現在のBody・睡眠・予定・熱傷の回復。",
       "共有Skillの全環境での取得・自然発動・継続効果、Portalの季節実体験や翌年想起の効果、別AIの独立復元。"
     ],
-    "boundary": "Source statements, Human reports, own direct observation, fixed historical originals, Current owners, AI inference, remote persistence, Target reconstruction, UI and field effects remain distinct."
+    "boundary": "Source statements, Human reports, own direct observation, fixed historical originals, Current owners, AI inference, remote persistence, Target reconstruction, UI and field effects remain distinct.",
+    "selected05_material": {
+      "path": "ark-project/ark28/ark28-05/task-records.json",
+      "revision": 3,
+      "meaning": "Human corrections and outcomes; historical statements do not issue new commands."
+    }
   },
   "deferred": [
     {
@@ -407,13 +420,120 @@
       "minimum_revision": 2,
       "note": "No Target State self hash. Source records actual publication/reread separately."
     },
-    "actual_target_reconstruction": "NOT_OBSERVED",
-    "target_reconstruction_receipt": null,
+    "actual_target_reconstruction": "OWN_SAME_CONTEXT_RECEPTION_CONFIRMED_FOR_05",
+    "target_reconstruction_receipt": {
+      "observer": "Work / Ark28:05 itself",
+      "recorded_date_jst": "2026-10-14",
+      "scope": "This05 context completed its ordered16-source contract and reconstruction before subsequent collaboration; verified full-read receipts are reused only for matching blobs.",
+      "boundary": "Own same-context receipt; not an independent reader test, Human UI observation or06 acceptance."
+    },
     "human_thread_and_access": "NOT_OBSERVED",
     "human_title_application": "NOT_OBSERVED",
     "independent_transition_reader_test": "NOT_PERFORMED",
     "field_effects": "NOT_OBSERVED_FOR_TARGET05",
-    "boundary": "Source-side self-review is not actual05 reception or a context-free reader test. Update on actual evidence within current authority."
+    "boundary": "05 own reception and later collaboration are recorded separately from initial04 preparation.06 has not yet reconstructed itself; source checks do not satisfy that gate.",
+    "subsequent_collaboration": {
+      "source": "ark-project/ark28/ark28-05/task-records.json",
+      "revision": 3,
+      "harvest": "ark-project/ark28/ark28-05/harvest.md",
+      "completed": [
+        "Wako and bedtime Portal capture",
+        "Lessons and Podcast shared/registered outcomes as recorded by their owners",
+        "projects archive",
+        "MAP Query initial backup"
+      ],
+      "later_owner_delta": "MAP改名・残作業とGoal・Query更新は別Thread成果。MainのRadio退役もCurrent ownerの完了成果として継承。",
+      "evidence_boundary": "Human report, own observation, repository owner report, UI and field outcomes remain distinct."
+    },
+    "next_transition": {
+      "transition_id": "ARK28_05_TO_ARK28_06_CONTINUE",
+      "kind": "THREAD_CONTINUE",
+      "source": "Ark28:05",
+      "target": "Ark28:06",
+      "owner": "Ark28:06",
+      "role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "compiled_title": "Ark28:06_2026/10/14; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "authorization": {
+        "source": "ark-project/ark28/ark28-05/task-records.json",
+        "source_ids": [
+          "transition-plan-s01",
+          "transition-approval-s01"
+        ],
+        "date_jst": "2026-10-14",
+        "scope": "Approved eight-path preparation and verification; actual Target reconstruction and Human UI separate."
+      },
+      "phase": "SOURCE_PRESERVATION_READY",
+      "source_prepared": "IN_PROGRESS",
+      "remote_verification": "PENDING",
+      "actual_target_reconstruction": "NOT_OBSERVED",
+      "human_thread_and_access": "NOT_OBSERVED",
+      "human_title_application": "NOT_OBSERVED",
+      "independent_transition_reader_test": "NOT_PERFORMED",
+      "field_effects": "NOT_OBSERVED_FOR_TARGET06",
+      "receipt_policy": "Update here only after actual publication and remote reread; no self hash or live reciprocal SHA binding."
+    }
   },
-  "eof_sentinel": "ARK28_05_STATE_EOF_v001"
+  "eof_sentinel": "ARK28_05_STATE_EOF_v001",
+  "history": {
+    "initial_preparation_2026_10_06": {
+      "now": {
+        "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
+        "support_purpose": "Teshuvahを軸に、04で整ったArk99の入口・00・名称訂正・指示原本と既存協働成果を保持し、05の現在のHuman入力へ応じる。",
+        "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+        "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+        "existing_input": "Receive any already supplied current Human request after required gates; do not ask it to be repeated.",
+        "boot_only": "Return evidence-backed acceptance with adjacent Living Review and Next step, then Human Review; no automatic task dispatch.",
+        "current_request": {
+          "kind": "RECEIVE_THREAD_CONTINUATION",
+          "completion": "Target itself fully reads ordered16 sources, verifies identity/binding/triad and supports R1–R8 with evidence.",
+          "boundary": "Source validation and remote persistence cannot satisfy this Target-owned gate."
+        },
+        "preparation_observation": {
+          "date_jst": "2026-10-06",
+          "main_entry_observed": "Ark27:08",
+          "previous_support": "Ark28:04",
+          "prepared_support": "Ark28:05",
+          "ark99_project_name": "Ark99: Teshuvah Thread",
+          "ark99_control_center_title": "Ark99:00_2026/10/06; control-center",
+          "ark99_readme_version": "v003-human-authorized",
+          "ark99_control_version": "v002-human-authorized",
+          "boundary": "Preparation observations; Current owners and later valid Human input govern use. No production or UI effect is inferred."
+        },
+        "live_b_gate": "NOT_REPORTED_FOR_TARGET05",
+        "local_options": [
+          "continue in Support",
+          "complete in Support",
+          "defer with meaning retained",
+          "selectively reconnect decision-changing deltas to Current Main"
+        ],
+        "no_inherited_execution_queue": "Completed preparation and closed dialogue remain completed. Unknowns and deferred branches are not mandatory tasks."
+      },
+      "progress": {
+        "source_prepared": "CONTENT_COMPILED",
+        "remote_verification": {
+          "status": "SOURCE04_TERMINAL_RECEIPT_OWNS_FINAL_OBSERVATION",
+          "path": "ark-project/ark28/ark28-04/state.json",
+          "section": "progress.next_transition",
+          "minimum_revision": 2,
+          "note": "No Target State self hash. Source records actual publication/reread separately."
+        },
+        "actual_target_reconstruction": "NOT_OBSERVED",
+        "target_reconstruction_receipt": null,
+        "human_thread_and_access": "NOT_OBSERVED",
+        "human_title_application": "NOT_OBSERVED",
+        "independent_transition_reader_test": "NOT_PERFORMED",
+        "field_effects": "NOT_OBSERVED_FOR_TARGET05",
+        "boundary": "Source-side self-review is not actual05 reception or a context-free reader test. Update on actual evidence within current authority."
+      },
+      "unknown": [
+        "05自身のRequired Sources読解・再構成と、Humanの05作成・貼付・Title適用。",
+        "Ark99のProject指示貼付全文一致、本番の実利用とTeshuvah Cycleへの効果。このSourceの確認境界であり未実行・失敗の認定ではない。",
+        "元の休日Teshuvahの現在の完了状態、4:00案の結果、Walking、現在のBody・睡眠・予定・熱傷の回復。",
+        "共有Skillの全環境での取得・自然発動・継続効果、Portalの季節実体験や翌年想起の効果、別AIの独立復元。"
+      ],
+      "note": "Initial preparation observation, not a present denial of subsequent05 collaboration. Original04→05 identity/bindings remain unchanged."
+    }
+  }
 }
