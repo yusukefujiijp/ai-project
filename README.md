@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v013"
+version: "v014"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v012 preserved in Git history; v013 adds the lifestyle discovery entry while preserving ARC-012, shared references, STR-014 and existing ownership"
+version_basis: "v001-v013 preserved in Git history; v014 adds the problem-solving entry while preserving lifestyle, ARC-012, shared references and existing ownership"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-14"
+updated: "2026-10-17"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -55,7 +55,12 @@ lifestyle_entry_alignment:
   date: "2026-10-14"
   change_record: "https://github.com/yusukefujiijp/ai-project/pull/8"
   scope: "Lifestyle discovery entry and chocoZAP routing only; no whole-repository rereview or domain authority change"
+problem_solving_entry_alignment:
+  date: "2026-10-17"
+  change_record: "control-center/changes/STR-016-problem-solving-foundation.md"
+  scope: "Problem discovery route and displayed entry version only; no whole-repository rereview or domain authority change"
 updated_reason:
+  - "2026-10-17: Add problem-solving as a problem-oriented discovery entry; keep case, experience, specialist knowledge and method ownership distinct. Align displayed entry version."
   - "2026-10-14: Add lifestyle/README.md as a scoped discovery entry; chocoZAP records and methods remain with their domain owner."
   - "2026-10-11: ARC-012 archives the entire projects tree including Ark-WTP; route historical consultation to its case instead of a live named-project domain."
   - "2026-10-10: ARC-011 retires the old Voice/Mode entries and retains the WTP frozen benchmark route; current Skills and shared references remain with their owners. Scoped navigation only."
@@ -144,7 +149,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v012 / Current-request Repository Front Door
+- Repository入口: README v014 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
 - 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -189,6 +194,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 | Path | Role | Read when |
 |---|---|---|
+| [`problem-solving/README.md`](problem-solving/README.md) | 困りごとからGoal・判断・根拠へ戻る入口 | 問題全体の現在判断や次に解く接続を扱う時。既存の経験原本・専門知識・方法へつなぎ、全案件の進捗を重ねて持たない |
 | [`references/README.md`](references/README.md) | 領域を越えて再利用する知見・共有lessonの入口 | 構成・保存先・繰り返す問題など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |

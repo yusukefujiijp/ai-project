@@ -1,13 +1,17 @@
 ---
 title: "Caffeineの使い所 — 場面・条件・経験をつなぐ"
-version: "v003"
+version: "v004"
 status: "source-linked initial synthesis / selective coverage"
 canonical_path: "lifestyle/caffeine/use-contexts.md"
 created: "2026-10-13"
-updated: "2026-10-14"
+updated: "2026-10-17"
 role: "Topic synthesis and source index; not an independent episode ledger or dosing guide"
 reviewed_source_snapshot: "ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c"
-expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v003"
+bedtime_owner_alignment:
+  date: "2026-10-17"
+  source: "ark-project/ark99/ark99-03/task-records.json"
+  scope: "Distinguish Source02 history from Source03 reports; route current problem synthesis to problem-solving"
+expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v004"
 ---
 
 # Caffeineの使い所 — 場面・条件・経験をつなぐ
@@ -27,7 +31,7 @@ expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v003"
 | 起床時のガム | 事前の判断を思い出し、起床・AI活用等へつなぐ | 保存済みの成功事例は初回・後の複数回の本人成功報告を保持。Ark27:01にも起床→ガム→AI活用が好調との報告 | 成功全体を成分効果だけへ帰属させない。正確な回数、長期再現性、現在条件は別に扱う | S2、S3：`wake-ai-baseline / s4` |
 | 屋外Workout・AI活用時のコーヒー | 眠気と集中の問題を、その場の行動に結び付ける | 本人は微糖コーヒーを選び、好判断・好結果と評価した | 当時の未朝食等の条件を保持。糖・Caffeine・運動等の寄与は分離されていない | S3：`coffee-choice-01 / coffee-benefit-report / s24 / s25` |
 | 休日のタイミングの振返り | 使う時点と休日の過ごし方を見直す | 本人の「前回の休日ではカフェインのタイミングを大きく間違えた！」という反省が保存されている | 具体的な量、時刻、影響、原因はこの発言から確定しない | S4：`caffeine-origin-s01` |
-| 就寝前の歯磨き（昼寝を含む） | 眠る前に歯磨きを達成したいという希望 | 本人はまずCaffeineなしのガム、難しい時はCaffeineガムという案と、実際は寝落ちしてしまうという反省・Teshuvahを述べた | **まだ実装しない**指定を保持。実際のガム使用・量・効果は不明。歯磨き達成の願いを、就寝前Caffeineの推奨へ変えない | S1 revision 6：`caffeine-s10 / caffeine-s11`、第3.4節 |
+| 就寝前の歯磨き（昼寝を含む） | 眠る前の必要行動と、その後の睡眠をつなぐ | Source02では希望・段階案・寝落ちの反省を報告。Source03ではカフェイン抜きガムで防げなかった回を報告し、リステリン等へ候補を広げた | Source02当時の**まだ実装しない**指定と未報告条件は当時の記録として保持。問題全体の現在判断は[就寝前の寝落ち問題](../../problem-solving/cases/bedtime-unintended-sleep.md)へ。リステリンの効果は未報告 | S1 revision 6、[Source03経験原本](../../ark-project/ark99/ark99-03/task-records.json)の `noncaffeine-gum-outcome / problem-reframing`、第3.4節 |
 
 S2やS3の過去報告を、今回新しく起きた出来事へ変えない。日時が必要な時は原本の記述へ戻り、記録日から体験日時を作らない。
 
@@ -77,6 +81,8 @@ S4が直接支えるのは、本人が以前の休日のタイミングを大き
 
 ### 3.4 就寝前の歯磨き：希望・実際の詰まり・保留を分ける
 
+**以下の五段落はSource02時点の形成と保留を保持する。** Source03で加わった報告と現在の担当先は、その後の接続欄で区別する。
+
 Humanの中心的な願いは、眠りに入る前に歯磨きを達成したいということ。昼寝も含め、まずCaffeineなしのガムを使ってChallengeし、難しい場合は少量Caffeineのガムを使ってでも達成したいという段階案を述べた。同時に、実際は理想論で終わり寝落ちしてしまうと振り返り、Teshuvahを表現した。これは本人の希望・提案と失敗の報告であり、AIが成分不足や信仰不足を原因として認定する材料ではない。
 
 同じ発言の末尾には**「まだ実装せず、コメント全部に対応して下さい！」**という指示がある。このBranchは、その意味を保ったまま検討・言語化の状態で引き継ぐ。後続の製品特定・量比較・可視化や記録保存を、就寝前の利用案の実装承認へ置き換えない。
@@ -86,6 +92,12 @@ Humanの中心的な願いは、眠りに入る前に歯磨きを達成したい
 AIの今後の検討候補は、歯磨きへの着手・必要な覚醒・その後の睡眠という関係を保ち、目的達成に役立つ手段を現在の条件から考えること。HumanがこのBranchを再開した時に必要な差分を扱い、今回の保存から摂取・身体Trialや毎日の義務を始めない。これは保留の価値を失わない接続であり、具体的な健康上の適否を確認したものではない。
 
 根拠はS1の[revision 6固定版](https://github.com/yusukefujiijp/ai-project/blob/5b6eab4013e9a49a39e859ff8c3b57a54514e90a/ark-project/ark99/ark99-02/task-records.json)：Sources `caffeine-s10 / caffeine-s11`、Nodes `bedtime-toothbrushing-intent / bedtime-toothbrushing-sleep-report / bedtime-toothbrushing-held`。原発言はSource02が所有し、本節はその場面別の編集整理である。
+
+**Source03での進展と現在の担当先（2026-10-17保存）**
+
+Humanはカフェイン抜きガムを使った回でも寝落ちを防げなかったと新たに報告し、準備の少なさと「入口の再現性」を重視した。リステリンの刺激から歯磨きへつなぐ案を受け、問題全体の括りを「就寝前の寝落ち問題」と明確化した。原発言とCorrectionは[Ark99:03経験原本](../../ark-project/ark99/ark99-03/task-records.json)の `sleep-s02 / sleep-s05 / sleep-s07 / sleep-s08 / sleep-s09 / sleep-s10` へ戻れる。
+
+**問題全体の最新のGoal・候補・未確認は[案件本文](../../problem-solving/cases/bedtime-unintended-sleep.md)が所有する。** Caffeineの製品・分量・専門的な判断材料は引き続き本領域が所有する。今回のGitHub整備承認を身体Trialの開始へ転用せず、リステリンの実地効果は報告待ちとして扱う。Source02当時のUnknownは当時の情報であり、後の報告でその記録を誤記にしない。
 
 ## 4. コーヒー・ガム等を一つのテーマで扱う意味
 
@@ -115,4 +127,6 @@ v002（2026-10-13）：Humanの製品参照Correctionを受け、共通定義へ
 
 v003（2026-10-14）：Source02 revision 6の歯磨きBranchを第1節・第3.4節へ追加。初版の五場面・固定根拠を保持し、今回の追加根拠と確認時点を分けた。保存は就寝前の利用案の実装ではない。
 
-EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v003
+v004（2026-10-17）：Source02時点の歯磨きBranchをHistoricalとして明示し、Source03の新報告とproblem-solvingの問題全体の担当先へ接続。既存の五場面、固定snapshot、製品定義の所有先を保持した。
+
+EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v004

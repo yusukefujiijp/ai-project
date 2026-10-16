@@ -1,0 +1,590 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark99-03-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-17",
+  "updated": "2026-10-17",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\"",
+    "canonical_path": "ark-project/ark99/ark99-03/task-records.json",
+    "reported_date": null,
+    "timezone": "Asia/Tokyo",
+    "time_note": "複数の発言を2026-10-17 Asia/Tokyoに選択保存。Thread Titleの2026/10/10を全発言や『昨晩』の体験日へ代入しない。個別の体験日時は原発言の相対表現を保持し、未確定のままとする。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "Humanの現行GitHub実行承認の範囲で、この会話で提供された経験・Correctionと初期構成の形成を保存する。記録内の引用命令は将来の実行権限ではない。身体Trial・摂取・外部通信・Resetは開始しない。",
+    "source_access": "記録担当Work / Ark99:03が、現在アクセス可能なこのThreadの実際のHuman発言とGitHub取得結果から編纂。別AIの読了・別会話のMemoryを原発言の代替にしていない。会話locatorは本ファイル内の発言識別用であり、他AIがアクセスできる公開message URLではない。",
+    "extensions": {
+      "central_axis": "Teshuvah",
+      "initial_preparation_thread": "Ark99:00",
+      "content_handoff_thread": "Ark99:02",
+      "transition_note": "Human指定による一件限りのTHREAD_CONTINUE。契約・Identityは同階層README/Handoffが所有する。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "就寝前の寝落ちの切実さと、カフェイン抜きガムで防げなかった本人報告",
+      "準備の少なさ・毎日の再現性・カフェイン最小化というGoal",
+      "リステリン案・刺激の評価Correction・入口の再現性・実地効果の未確認",
+      "problem-solvingへの捉え直し・HumanによるSeed・初期構成の重視・GitHub実行承認"
+    ],
+    "excludes": [
+      "Thread全文・全Task・全てのAI応答",
+      "Source02が所有する既存発言の複製",
+      "旧Caffeine計算・製品定義の第二原本",
+      "ChatGPT長期メモリ、別会話の未読本文、未報告の実地効果"
+    ],
+    "note": "初期構成の理解と継続に必要な選択保存。Source IDはこの原本内の安定した識別子で、外部メッセージIDではない。引用は連続する原文抜粋、編集要約はparaphraseとして区別する。"
+  },
+  "sources": [
+    {
+      "id": "sleep-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 「今現在、最大の問題点」から始まる相談",
+      "excerpt": "今現在、最大の問題点であり、ここさえ上手く行けばなんとかなる部分であり分野がこのCaffeine問題です！\n昨晩も寝落ちしてしまい主イェシュアごめんなさい！Teshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本人の重要性・寝落ち報告・Teshuvah表現。『昨晩』の暦日は未確定。"
+    },
+    {
+      "id": "sleep-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 「結局の所、良質な睡眠と寝落ち」から始まる追加報告",
+      "excerpt": "これが結局の所、長年の悩みです！\n昨晩はカフェイン抜きのガムで挑戦したがダメでした！\nこれは失敗だがBottleneck検出です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当該回の本人報告。全条件での無効や別手段の成功を示すものではない。"
+    },
+    {
+      "id": "sleep-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / sleep-s02と同じ発言の順序仮説",
+      "excerpt": "つまり、カフェイン抜きガム<眠気(寝落ち)<カフェインガムの可能性が高いです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "原文自体が可能性の表現であり、カフェインガムの成功報告ではない。"
+    },
+    {
+      "id": "sleep-s04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / sleep-s02と同じ発言のコーヒー案",
+      "excerpt": "そして以前の計算式ではコーヒー一口の方がカフェインが少ないという計算もあるのでコーヒー一口というか寝落ちを解消するまでコーヒーを一口ずつ飲むという対策もあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "提案の保存。摂取済み、最適量、追加摂取の承認を意味しない。"
+    },
+    {
+      "id": "sleep-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / お茶・白湯・牛乳も候補として挙げた相談",
+      "excerpt": "コーヒー系以外の微量覚醒作用のある方法論もあり得ます！\n例えば、お茶や白湯や牛乳？等です！\n問題はできる限り準備する必要がない事が求められます！\nなぜなら、眠気は突然急激に襲ってくるからです！\n簡単に言うと(最もSimpleに考えると)、眠気の急襲にどのように備えるべきか？です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "候補の列挙であり、各飲料に覚醒効果があるという医学的確認ではない。"
+    },
+    {
+      "id": "sleep-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 毎日の再現性とカフェイン最小化を求めた発言",
+      "excerpt": "できる限り毎日確実に繰り返せる対策が必要です！\nそれでいてカフェイン摂取量は最小ならば睡眠への悪影響を防げます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "求めるGoalと本人の見立て。最小量なら悪影響がない、という保証は確認されていない。"
+    },
+    {
+      "id": "sleep-s07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / sleep-s06と同じ発言のリステリン案",
+      "excerpt": "リステリン系をベッド横に置いておき、口に含みその刺激と歯磨き前効果で、そのまま歯磨き等やるべき事を済ませる流れが最もスムーズでありカフェイン系も最小であり、歯磨きへの最短距離や導線も確保できNext stepの行動へ直結する最高の流れです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "案への評価。配置・使用・行動完了・効果の実績ではない。同じ発言末尾では、まだ実装せず深く検討するよう指定された。"
+    },
+    {
+      "id": "sleep-s08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 普段購入するAmazonリンク提示と刺激の評価へのCorrection",
+      "excerpt": "刺激が強いとかはあまり深く考えないでOK！なんなら一瞬目覚めるには刺激が必要であり一石二鳥だからです！\nあまり安全面に偏り過ぎない事が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言で示された商品URLは https://amzn.asia/d/0bCT0FvC 。刺激の役割も評価するCorrectionであり、適用Guardの解除ではない。"
+    },
+    {
+      "id": "sleep-s09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 最大の問いを引用した発言",
+      "excerpt": "リステリンの刺激で実際に寝落ちを防げるか",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "この問いへの解釈一致を評価し、同じ発言で『つまり、実地実験が必要です！』と述べた。その末尾は『まだ実装せず、コメント全部に対応して下さい！できる限り極力深く考えましょう！』であり、実施報告ではない。"
+    },
+    {
+      "id": "sleep-s10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 「入口の再現性」を評価し、問題の括りを訂正した発言",
+      "excerpt": "リステリン系の良質アイデアが出た時点でこの問題や**問題解決**や**問題解決**手法や\"方法や方法論\"はカフェイン問題というよりは就寝前寝落ち問題という大きな括りになっている！\nつまり、GitHubのカテゴライズ的にはcaffeineというよりも**problem-solving**となっています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言で『入口の再現性』という言語化を高く評価し、今後の主要problem-solvingも整理する構成を提案。称賛は生活上の効果の証拠ではない。"
+    },
+    {
+      "id": "sleep-s11",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / Humanによる入口作成と旧Rootフォルダ削除の報告",
+      "excerpt": "https://github.com/yusukefujiijp/ai-project/blob/main/problem-solving/README.md を作成し\nRootの旧chocozapフォルダは削除した！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "操作の主体はHuman。このAIの今回の実装成果へ付け替えない。"
+    },
+    {
+      "id": "sleep-s12",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 初期構成を最重要とした、実行承認前の最終相談",
+      "excerpt": "今回も就寝前の寝落ち問題と**問題解決**はとても良いモデルケースです！これを題材にして様々なproblem-solvingにも対応できるような初期のフォルダ・ファイル構図構成が\"最重要(Most important!)\"です！\nなぜなら、最初が肝心だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "同じ発言で、ゆっくり一歩一歩進め、まだ実装せず全コメントへ対応するよう指定。後のsleep-s13で文書実装の権限が変わった。"
+    },
+    {
+      "id": "sleep-s13",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 初期構成案への後続のGitHub実行承認",
+      "excerpt": "OK！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK! 私は、あなた(AI)を全面的に信頼信用しています！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "2026-10-17 Asia/Tokyoの実行承認。直前のproblem-solving初期構成と関連原本・案内のGitHub整備へ適用。身体Trial、摂取、外部通信、Reset、無関係なTaskへ範囲を拡張しない。"
+    },
+    {
+      "id": "sleep-s14",
+      "speaker": "GitHub connector / current repository observation",
+      "medium": "tool_result",
+      "locator": "main snapshot c09413a57fa7b3a9f4132facbfe86b2da7f30a1b / recursive tree and problem-solving/README.md",
+      "excerpt": "problem-solving/README.md は改行のみ、blob 8b137891791fe96927ad78e64b0aad7bded08bdc。Rootのchocozap/は存在せず、lifestyle/chocozap/は存在する。今回のAI書込み前に確認した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/tree/c09413a57fa7b3a9f4132facbfe86b2da7f30a1b",
+      "note": "GitHub保存状態の観測であり、生活上の効果や削除操作の実行者をToolから独立に認定したものではない。"
+    },
+    {
+      "id": "sleep-s15",
+      "speaker": "Work / Ark99:03",
+      "medium": "assistant_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / sleep-s13直前の初期構成案",
+      "excerpt": "problem-solving/README.md を共通入口、problem-solving/cases/bedtime-unintended-sleep.md を問題全体の判断原本とし、Root READMEと既存Caffeine資料から接続する。経験・専門知識・方法の既存所有先を保つ。実地効果は未確認として区別する。",
+      "excerpt_kind": "paraphrase",
+      "note": "承認された提案の編集要約。原文引用ではない。保存の成否は本記録や提案の存在だけで認定しない。"
+    },
+    {
+      "id": "sleep-s16",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 解決を急ぐ理由の追加説明",
+      "excerpt": "できる限り早く解決したい！\nなぜなら、この問題が長年のBottleneckであり昨日も迷って結局の所、寝落ちしたからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "速い解決への切実さを、慌てず深く擦り合わせる希望と両方保持する。"
+    },
+    {
+      "id": "sleep-s17",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 商品リンクを提示した発言での協働ペース指定",
+      "excerpt": "ゆっくりじっくりと擦り合わせしましょう！\nゆっくりじっくり一歩一歩確実に前進しましょう！慌てたり端折ったりせず、深呼吸的にリラックスして少しずつ擦り合わせながら取り組みましょう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの望む進め方。AIの検討品質を落としたり、承認済み実装を毎工程の再承認で止める要求とは解さない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "bedtime-goal",
+      "kind": "practice_statement",
+      "label": "睡眠と必要行動を両立する",
+      "description": "長年の寝落ち問題を解き、急な眠気の前後でも歯磨き等へ入り、必要行動後に意図した睡眠へ移れることを望む。早く解決したい切実さとTeshuvahの意味を保持する。",
+      "scope": "Humanが目指す変化。効果の保証・信仰状態の判定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s01",
+          "sleep-s06",
+          "sleep-s07",
+          "sleep-s16"
+        ]
+      }
+    },
+    {
+      "id": "noncaffeine-gum-outcome",
+      "kind": "observation",
+      "label": "カフェイン抜きガムで防げなかった回",
+      "description": "Humanは昨晩のカフェイン抜きガムによる挑戦がダメだったと報告し、失敗をBottleneck検出と捉えた。",
+      "scope": "当該回の本人報告。製品・量・正確な体験日時・条件全体は未特定。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s02"
+        ]
+      },
+      "time_text": "昨晩（発言に対する相対時点。暦日は未確定）"
+    },
+    {
+      "id": "caffeine-order-hypothesis",
+      "kind": "interpretation",
+      "label": "眠気と二種類のガムの順序仮説",
+      "description": "カフェイン抜きガムより眠気が強く、カフェインガムなら上回れる可能性をHumanが述べた。",
+      "scope": "当該回の失敗を超えた予測部分。Caffeineガムの成功は未報告。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "source_statement",
+        "source_refs": [
+          "sleep-s03"
+        ],
+        "note": "Human自身が『可能性が高い』と表した仮説。"
+      }
+    },
+    {
+      "id": "small-coffee-proposal",
+      "kind": "practice_statement",
+      "label": "一口ずつのコーヒー案",
+      "description": "Humanは既存の量比較を踏まえ、一口ずつコーヒーを使う可能性を提案した。",
+      "scope": "提案の存在。摂取の実施、追加摂取の安全性・最適量・効果を確定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s04"
+        ]
+      }
+    },
+    {
+      "id": "low-preparation-entry",
+      "kind": "constraint",
+      "label": "眠気の急襲に間に合う準備の少なさ",
+      "description": "準備をできる限り必要とせず、急に強くなる眠気に備えられる入口を求める。お茶・白湯・牛乳も候補に挙がった。",
+      "scope": "Humanの設計要求。候補飲料の覚醒作用を実証したものではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s05"
+        ]
+      }
+    },
+    {
+      "id": "repeatability-and-sleep",
+      "kind": "constraint",
+      "label": "毎日の再現性と睡眠を守る",
+      "description": "毎日繰り返せる対策と、カフェイン摂取量の最小化を望む。",
+      "scope": "Goalの確認。最小量なら睡眠への悪影響がなくなるという因果保証は未確認。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s06"
+        ]
+      }
+    },
+    {
+      "id": "listerine-entry-proposal",
+      "kind": "practice_statement",
+      "label": "刺激と歯磨きへの動線を接続する案",
+      "description": "リステリン系をベッド横に備え、刺激と歯磨き前の口腔ケアを入口として、歯磨き等へ進む案。複数の問題を同時に解く可能性をHumanが高く評価した。",
+      "scope": "提案として保持。配置・使用・行動完了・実地効果は未報告。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s07",
+          "sleep-s08"
+        ]
+      }
+    },
+    {
+      "id": "stimulus-balance-correction",
+      "kind": "constraint",
+      "label": "刺激の価値とGuardを両方扱う",
+      "description": "刺激の強さを欠点として過度に問題化せず、瞬間的な目覚めと行動接続に役立つ可能性を評価する。",
+      "scope": "安全面だけで検討を閉じないCorrection。Hostと適用Guardは保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s08"
+        ]
+      }
+    },
+    {
+      "id": "listerine-effect-unknown",
+      "kind": "observation",
+      "label": "リステリンによる実地効果は未報告",
+      "description": "入口を使えたか、寝落ちを防げたか、歯磨き等を終えたか、その後の睡眠はどうだったかを確定する報告はない。",
+      "scope": "本記録の対象発言まで。未報告を成功・失敗・実施なしの断定へ変えない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "sleep-s07",
+          "sleep-s09"
+        ],
+        "note": "アイデア・解釈一致・実地確認の必要性への評価と、結果の報告を区別する。"
+      }
+    },
+    {
+      "id": "entry-reproducibility",
+      "kind": "interpretation",
+      "label": "入口の再現性",
+      "description": "準備・配置・迷いを減らし、必要行動へ入れる入口が使えることと、刺激に対する身体反応や行動完了が毎回成立することを分けて考える。",
+      "scope": "Humanが高く評価した語を、現在の問題に接続したAIの整理。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "sleep-s05",
+          "sleep-s07",
+          "sleep-s10"
+        ],
+        "note": "Humanの評価と提案に基づく編集解釈であり、反復効果の実証ではない。"
+      }
+    },
+    {
+      "id": "problem-reframing",
+      "kind": "decision",
+      "label": "手段から、就寝前の寝落ち問題へ",
+      "description": "HumanはCaffeineという手段中心の括りから、就寝前寝落ちという問題全体へ捉え直し、problem-solvingでの整理を求めた。",
+      "scope": "問題単位の訂正。Thread TitleやRootの変更ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s10"
+        ]
+      }
+    },
+    {
+      "id": "human-repository-seed",
+      "kind": "observation",
+      "label": "Humanの入口Seedと旧Root削除",
+      "description": "Humanはproblem-solving/README.md作成とRootの旧chocozap削除を報告した。",
+      "scope": "Humanの先行操作。このAIの実装成果ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s11"
+        ]
+      }
+    },
+    {
+      "id": "repository-seed-observed",
+      "kind": "observation",
+      "label": "書込み前のRepository状態",
+      "description": "Toolでproblem-solvingの改行のみのREADMEとRoot旧chocozap不在、lifestyle/chocozapの存在を確認した。",
+      "scope": "固定snapshot c09413a57fa7b3a9f4132facbfe86b2da7f30a1b の観測。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "sleep-s14"
+        ]
+      }
+    },
+    {
+      "id": "architecture-priority",
+      "kind": "constraint",
+      "label": "他の問題にも使える初期構成",
+      "description": "今回をモデルケースに、今後の様々なproblem-solvingにも対応できる初期構成を最重要とする。",
+      "scope": "一件の成功や初期設計だけで一般的有効性を自己認証しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s12"
+        ]
+      }
+    },
+    {
+      "id": "stepwise-quality",
+      "kind": "constraint",
+      "label": "急ぐGoalと丁寧な擦り合わせ",
+      "description": "問題は早く解きたいが、慌てたり端折ったりせず、深く考えて一歩一歩進める。",
+      "scope": "協働の品質・進め方。承認後は範囲内の必要な実装と検証を継続できる。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s16",
+          "sleep-s17"
+        ]
+      }
+    },
+    {
+      "id": "documentation-approval",
+      "kind": "decision",
+      "label": "初期構成のGitHub実行承認",
+      "description": "Humanは初期構成案に対してExecute GitHub OKとHuman Seal OKを明示した。共通入口、最初の案件、関連する原本・案内を整備する。",
+      "scope": "2026-10-17の文書作業。身体Trial・摂取・通信・Reset・過去Task等への拡張は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s13"
+        ],
+        "note": "承認対象の具体化は直前提案sleep-s15と現在の文脈による。"
+      }
+    },
+    {
+      "id": "physical-trial-held",
+      "kind": "task",
+      "label": "身体Trialの開始は保留",
+      "description": "Humanは実地確認が必要と述べたが、実装せず深く検討する指示も保持した。後のGitHub承認は文書整備を解禁したもので、身体Trialを開始するものではない。",
+      "scope": "現在の作業権限。本人が別途行動したかどうかは未報告。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s09",
+          "sleep-s12",
+          "sleep-s13"
+        ],
+        "note": "文書実装と身体行動を区別した、発言の適用範囲。"
+      },
+      "task_state": "deferred"
+    }
+  ],
+  "edges": [
+    {
+      "id": "failure-motivates-search",
+      "from": "noncaffeine-gum-outcome",
+      "to": "listerine-entry-proposal",
+      "relation": "motivates",
+      "scope": "不成功報告を受けて手段探索が進んだ会話上の形成。リステリン効果の因果証拠ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "sleep-s02",
+          "sleep-s05",
+          "sleep-s07"
+        ],
+        "note": "発言の流れに基づくAIの関係整理。"
+      }
+    },
+    {
+      "id": "entry-depends-on-preparation",
+      "from": "entry-reproducibility",
+      "to": "low-preparation-entry",
+      "relation": "depends_on",
+      "scope": "この案の入口が使えるための設計上の条件。医学的効果の依存ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "sleep-s05",
+          "sleep-s07",
+          "sleep-s10"
+        ],
+        "note": "Humanの準備負担への要求から導いた設計関係。"
+      }
+    },
+    {
+      "id": "proposal-motivates-reframing",
+      "from": "listerine-entry-proposal",
+      "to": "problem-reframing",
+      "relation": "motivates",
+      "scope": "Humanがリステリン案を理由に問題の括りを捉え直した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s10"
+        ]
+      }
+    },
+    {
+      "id": "reframing-motivates-foundation",
+      "from": "problem-reframing",
+      "to": "architecture-priority",
+      "relation": "motivates",
+      "scope": "今後の問題にも対応する初期構成を整える理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s10",
+          "sleep-s12"
+        ]
+      }
+    },
+    {
+      "id": "goal-prioritizes-repeatability",
+      "from": "bedtime-goal",
+      "to": "repeatability-and-sleep",
+      "relation": "prioritizes",
+      "scope": "Humanが求める解決の成立条件。達成済みという意味ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "sleep-s06"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "listerine-actual-connection",
+      "subject_refs": [
+        "listerine-effect-unknown",
+        "listerine-entry-proposal"
+      ],
+      "question": "リステリン系を入口として使った場合、寝落ち防止から歯磨き等の完了、意図した睡眠まで、どの接続が実際に成立するか。",
+      "scope": "新しい本人Feedbackまたは別途依頼された検討で扱う。記録だけで実験を開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "sleep-s09"
+        ],
+        "note": "実地結果は未報告。"
+      }
+    },
+    {
+      "id": "conditions-for-repeatability",
+      "subject_refs": [
+        "entry-reproducibility",
+        "repeatability-and-sleep"
+      ],
+      "question": "入口の使いやすさと実際の身体反応・行動完了は、どの条件で繰り返せるか。",
+      "scope": "毎日の記録義務・反復効果保証を新設しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "sleep-s06",
+          "sleep-s10"
+        ],
+        "note": "反復した利用結果は未報告。"
+      }
+    },
+    {
+      "id": "foundation-cross-case-usefulness",
+      "subject_refs": [
+        "architecture-priority"
+      ],
+      "question": "この初期構成は、他の実際の問題でもGoalと根拠へ戻りやすく、余計な管理負担なく使えるか。",
+      "scope": "保存・構文検証と、他AIの読解や複数案件の実利用を区別する。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "sleep-s12"
+        ],
+        "note": "初期構成への期待。複数案件の利用効果は未観測。"
+      }
+    }
+  ]
+}
