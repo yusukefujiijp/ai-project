@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.36.0
+version: v0.36.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: map-remaining-workをDots主経路・Work補助経路・他AIへの分岐を持つ独立入口として追加
+updated_reason: map-remaining-workの会話内全文取得と共有本文一致を後続確認
 ---
 # Ark Shared Skills Hub
 
@@ -596,6 +596,9 @@ $map-remaining-work を使い、現在の残作業とGoalを整理してくだ�
 
 **保存と導入。** [本文保存](https://github.com/yusukefujiijp/ai-project/commit/7d9c545b238566cddd1e921db4762337c58e53f1)と[表示設定保存](https://github.com/yusukefujiijp/ai-project/commit/eb90bfcf8aa866aaa63d4a6274a3a45ed6ab50ce)の後、mainから全文再取得し一致を確認した。本文blobは `a250da9e775a0d6f1f0d8e694fce252866a4930c`、表示設定blobは `c11c8d965614844c8d5ddb822c186f7d7c01a448`。個人Skillも作成・導入し、保存先に同名一件、本文一致、表示名・短い説明・呼出し文の一致を確認した。環境が付与する設定は共有版へ複製しない。この時点では会話内Skill取得経路が利用不可で、会話内からの全文取得は未確認。保存成功と参照経路の状態を混同せず、再作成しない。
 
+
+**後続の取得確認（同日）。** 取得経路が利用可能になった後、登録済みmap-remaining-workの本文を会話内で末尾まで取得し、上記の共有本文と完全一致を確認した。先の取得不可は保存直後の観測として保持し、現在の阻害条件へ戻さない。再登録は行っていない。自然な自動選択・実利用の有用性・全環境での動作は別の確認である。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -741,4 +744,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.36.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.36.1
