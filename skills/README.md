@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.36.2
+version: v0.36.3
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: chocoZAPの現行routine・Triangle・基準継続を読む入口へ更新し、旧二周目前提を現行案内から除いた
+updated_reason: chocoZAP共有更新の保存と導入先の本文・表示設定、会話内の全文取得一致を確認
 ---
 # Ark Shared Skills Hub
 
@@ -156,6 +156,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 2026-10-17の改訂では、来館全体の二周目を現在行わないという本人訂正を受け、共有Skillの二周目を前提にした支援を更新した。現在の基準の継続、各重量のTriangle、コース定義とその回の実施、主運動の終点と後続補助を区別する。3コースの具体的な順序・店舗・時間目安は領域READMEに置き、Skillへ個人の現在値を複製しない。初期の二周構想と当時の確認記録は本書の履歴として保持する。
 
 形式検査と、元会話・診断・期待回答を渡さない二つの独立AI文脈での限定応答確認を行った。長時間コースの開始前相談では12項目の順序とExercise Bike後の補助を復元し、今日の終了時刻未定を保持した。報告方法の設計相談では、30分コースの一時的な省略・基準継続とTriangleを区別し、引用を当日の実績にせず保存も行わなかった。提供した本文・原本に対する確認であり、自然な自動選択、全環境の反映、実生活の効果の実証ではない。
+
+同日の[共有更新](https://github.com/yusukefujiijp/ai-project/commit/1cfdd435707cb1549b4dce1b3c9a4c449a39fd07)をmainから再取得し、本文・表示設定の一致を確認した。既存の登録済みSkillへ本文と表示説明・起動文を反映し、利用対象・自動選択設定・アイコン指定を保持した。導入先の永続保存後、スキル取得機能から本文を全文取得して共有版と完全一致した。本文blob SHAは `ad2ad460c28ded512a765a8f281e279950418be4`。導入先がYAMLの引用符・字下げを正規化したため表示設定は値の一致で確認し、本文は全文一致で確認した。Project設定画面や今後の実配信まで完了したという意味ではない。
 
 ### 3.3 Plan Modeの統一入口
 
@@ -748,4 +750,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.36.2
+EOF::ARK_SHARED_SKILLS_HUB::v0.36.3

@@ -1,8 +1,8 @@
 ---
 title: chocoZAP Sweet Spot — 記録・推移・分析
-version: v0.8.0
+version: v0.8.1
 updated: 2026-10-17
-updated_reason: 現在の3コース・主運動と補助の役割・全体二周目を行わない訂正を保存。店舗参照と協働方針を接続し、Project指示v004の原本を追加
+updated_reason: 3コース・Project指示・共有スキルの保存と導入確認結果を追記。Project設定画面への反映を未実施として区別
 canonical_path: lifestyle/chocozap/README.md
 status: active
 ---
@@ -392,4 +392,6 @@ Sweet Spot・Triangle・開始前メモ・所要時間の経験は、重量・�
 
 2026-10-17、実行承認を受け、現在の3コースと来館全体の二周目を行わない訂正をcz-record-0022へ保存。§5に順序・主運動の終点・長時間の補助・時間の目安・未使用の試用候補・店舗参照・柔軟な協働方針を整理し、CZ-A023・CZ-A024へ関係と限界を接続した。Project指示v004をINSTRUCTIONS.mdとして保存する構成を追加。既存の34重量観察・114入館と、開始前メモの有効な一覧を保持した。GitHubの文案保存と実際のProject設定への反映を区別する。
 
-EOF::CHOCOZAP_RECORDS_GUIDE::v0.8.0
+同日の[統合更新commit](https://github.com/yusukefujiijp/ai-project/commit/1cfdd435707cb1549b4dce1b3c9a4c449a39fd07)はmainから7ファイルを再取得し、意図した本文・blob SHAとの一致を確認した。データ検証は22報告・34重量観察・114入館・24分析を確認し、既存の全記録・現在値・来館出力は保持した。導入スキルの保存と会話内全文取得も共有本文との一致を確認し、詳細は[共有スキルの入口](../../skills/README.md#32-chocozap-sweet-spotを他aiへ渡す入口)に残す。既存の日次案内は有効・毎日17:00 Asia/Tokyoで、mainの現行PROMPTを読むLoaderを確認したため設定変更は不要。今回更新後の実配信と実生活の効果は未観測。**Project指示v004の原本保存は完了し、ChatGPTのProject設定画面への反映は今回未実施**として残す。
+
+EOF::CHOCOZAP_RECORDS_GUIDE::v0.8.1
