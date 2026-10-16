@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.35.0
+version: v0.35.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-16
-updated_reason: Human承認に基づき、気軽な明示呼出しでAIの判断と工夫をGoalへ向けるgoalスキルと入口を追加
+updated_reason: Goal形成の重要Correction・保存結果・会話内取得の後続確認と再開条件を記録し、版とEOFを整合
 ---
 # Ark Shared Skills Hub
 
@@ -551,6 +551,18 @@ $goal 今のGoalに向けて、あなたの判断と工夫を活かして進め�
 
 形式検査と、元会話・計画・期待回答を渡さない三つの独立文脈で計六応答を確認しました。明確なGoalから完成稿へ進むこと、再呼出しと部分訂正で内容を引き継ぐこと、見えてきたGoalを具体化すること、二回の計画限定で対象ファイルを変更しないこと、その後の明示的承認で一ファイルを編集・保存・再読することを観察しました。同じ案内文課題をスキルなしでも一回確認し、両方が必要な事実を保持した完成稿を返しました。この限定比較から品質優位は主張しません。構成した相談例の観察であり、Humanの実体験、自動選択、Human UI、他Vendor・全AI互換性、継続利用の効果とは区別します。共有原本と登録先の版・本文照合は第4節に従います。
 
+<a id="goal-formation-and-confirmation"></a>
+
+**形成理由と保存時点の確認（2026-10-16）。** このThreadでHumanは、目標定義を中心とする話題から、「goalに向かってAIが正しく動く事」へ焦点を訂正した。明示的な`$goal`を使いたいというVisionを維持しつつ、「スナック感覚」「大きく既存AIの挙動を変更せず返って既存AIの良い面を引き出す」「あまりにも重たいgoalスキルだと気軽に呼び出せないので良くない」と述べた。これらはHuman原文の抜粋であり、以下はその設計上の意味の要約である。Goalが明確なら成果へ速やかに進み、まだ見えてきた段階なら文脈から感度よく捉える。方法が未指定であることをGoal不明と扱わず、方法の選択は実行AIが引き受ける。
+
+Humanが重視した「関節の遊び〈Joint play〉」は、他AI・Future AIの判断と創発性を残すための余地として受け取った。小さく確かな成果を積み上げられる単純な方向性を共有し、長い擦り合わせを毎回の長い必須手順へ変換しない。繰り返しのPlan ModeはHumanが求めた時の練り込みとして尊重し、実行委任後の一律な小刻み停止にはしない。「全能力を活かす」は目的に必要な判断・仕事の充実を意味し、無制限の作業や権限拡張の根拠にはしない。これらは採用した設計理由であり、効果の一般的実証ではない。
+
+[初版の共有保存](https://github.com/yusukefujiijp/ai-project/commit/add9fe1fc31c820668748f869da29aa935cdd490)では、本文・表示設定・本入口を保存し、Remoteから再取得して照合した。個人Skillsへの保存後も、登録先`6ad1e81a2efc81918772b352609b3f96`の本文と、三つのinterface設定・`allow_implicit_invocation: false`が共有原本と一致することを確認した。製品が付与したアイコン等を含むmetadata全体のバイト一致を意味しない。初版完了報告の時点では会話のSkill一覧に現れておらず、会話内取得は未確認だった。
+
+今回の`$save`時には、現在のSkill一覧に`goal`が現れ、`skill://user/6ad1e81a2efc81918772b352609b3f96/goal/SKILL.md`から全文を取得できた。取得本文は[初版の共有本文](https://github.com/yusukefujiijp/ai-project/blob/add9fe1fc31c820668748f869da29aa935cdd490/skills/goal/SKILL.md)および当時のmain本文（blob `4da0c41d073c4ecfba296ac9118e50f4166c5491`）と一致した。この会話内取得の成立は、前回の未確認に加わった後続結果である。Humanは初版報告を「最高です！」と評価してThread保存を依頼したが、この評価と限定応答確認から、Human UIでの表示、継続利用の効果、他Vendor・全AIへの互換性を実証済みとはしない。
+
+初版の作成・共有保存・登録先保存・今回の会話内取得は確認済み。再開時は、現在の依頼と実際の利用Feedbackから、軽さ・成果への集中・実行AIの自由度のどこに具体的な不足があるかを選ぶ。必要な改訂は既存本文またはこの入口へ戻し、解決済みの設計議論・登録を一律にやり直したり、この保存を新Taskの開始承認にしたりしない。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -696,4 +708,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.34.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.35.1
