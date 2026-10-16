@@ -1,6 +1,6 @@
 ---
 name: visualize-patch
-description: Apply Ark's visualization preferences, choose a supported rendering route, and prevent evidenced critical display failures while preserving creative discretion. Use for Ark Visualize requests, interactive visualization creation or revision, and alternatives when Visualize is unavailable. Do not activate merely for ordinary Markdown tables, simple diagrams, quoted prompts, or mentions of visualization.
+description: Apply Ark's visualization preferences, choose a supported rendering route, and prevent evidenced critical display failures while preserving creative discretion. Use for Ark Visualize requests, interactive visualization creation or revision, AI-selected explanatory in-conversation diagrams including simple or Mermaid-style diagrams, and alternatives when Visualize is unavailable. Do not activate merely for ordinary Markdown tables, quoted prompts, or mentions of visualization.
 ---
 
 # Visualize Patch
@@ -14,6 +14,12 @@ description: Apply Ark's visualization preferences, choose a supported rendering
 作成・修正・相談・Plan-onlyを区別する。計画だけなら読み取りと計画提示で止め、ファイル作成・試作品・保存・導入を始めない。可視化の依頼を、外部公開、外部通信、永続設定・Skillの変更や身体Trialへの承認へ広げない。明確に承認された範囲は必要な修正・検証まで進め、同じ許可を繰り返し求めない。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Humanの意味・Correction・STOP・Final Sealと適用Guardを保持し、AI・Skill・可視化をKeliとして扱う。本Skillを新しい統治契約やTask管理者にしない。
+
+## 可視化の機会を表示経路へつなぐ
+
+理解・探索・判断に可視化が実質的に役立つ場合、現在の依頼と適用方針の範囲で、毎回の指名を待たず会話内の公式Visualizeを優先する。特に関係・流れ・構造の説明でMermaidを選ぼうとする場面では、先にMermaidコードを生成する工程を設けず、説明したい意味をVisualizeで設計する。これは表現を選ぶ際の指針であり、内部イベントを検知する仕組みではない。利用機会をMermaid型の図だけに限定しない。
+
+通常の文章・Markdown表・必要な説明を保持し、毎回答の可視化や操作の追加を義務にしない。Mermaid自体をその回のHumanが明示指定した場合は、その目的・形式に従う。Plan-only・STOP・厳密形式と上位の表示契約を優先する。公式Visualizeが使えない時もMermaidへ自動置換せず、以下の環境確認から許可された代替を選ぶ。
 
 ## 共通指針を、今回に合わせて使う
 
@@ -33,7 +39,7 @@ Skill本文へのアクセス、Skillの登録・呼出し、コードの実行�
 - **公式Visualizeが存在しない:** 利用可能な別の対話型表示や、作成権限と閲覧経路のあるHTML等から、目的に適した方法を選ぶ。別製品の専用API・表示記法を、そのまま使えると仮定しない。登録機構がなくても、取得できた本本文を指示資料として使える。インストール済みとは称しない。
 - **会話内の対話型表示を提供できない:** ファイルの提示・外部公開・会話内表示を区別する。静的な図・グラフ・表で目的を満たせるなら使う。操作による探索が必要な依頼では、静的出力を同等の完成と称さず、実現できた価値・不足・最小の接続方法を伝える。機能不足を理由に内容の検討まで放棄しない。
 
-これは固定の代替順位ではない。今回の問い、利用経路、権限から選ぶ。利用する経路の必須Sourceが未読・取得不能・不一致なら、その契約に従って影響する操作を止め、欠けた条件と最小の回復方法を示す。取得失敗を「機能がない」と読み替えて必須読解やアクセス制御を迂回しない。
+公式Visualizeを利用できない場合の代替順位は固定しない。今回の問い、利用経路、権限から選ぶ。利用する経路の必須Sourceが未読・取得不能・不一致なら、その契約に従って影響する操作を止め、欠けた条件と最小の回復方法を示す。取得失敗を「機能がない」と読み替えて必須読解やアクセス制御を迂回しない。
 
 ## 確認された重大な表示不具合だけを補正する
 
