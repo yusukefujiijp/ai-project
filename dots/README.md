@@ -1,15 +1,15 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v011"
+version: "v012"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-16"
+updated: "2026-10-17"
 role: "Current Dots direction, actor-aware one-request recovery, and routes to shared lessons, operations and history"
-updated_reason: "Add one universal recovery Query and actor-aware reconstruction route; preserve source ownership and current action boundaries"
-revision_approval_source: "conversation-message:Sentinel_7ff8237b56b08191a8d5a18cdea4c75e"
+updated_reason: "Connect existing load to universal Dot recovery; add a short primary Query while preserving the URL fallback and one recovery contract"
+revision_approval_source: "conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v011"
+expected_eof: "EOF::DOTS_HOME::v012"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -94,11 +94,21 @@ Humanが一括復元を求めた時は、欠損範囲の診断、資料選び、
 
 同じ本文を各Dotへそのまま渡す。対象IDや名前の書き換えは不要で、全Dotへの一斉送信・操作を依頼するものではない。自然な言葉で一括復元を依頼された場合も、意味が明確なら同じ範囲で扱える。詳しい復元条件は§4.1が所有し、本文を別々のQueryへ複製して保守しない。
 
+**通常の入口。** Dots一括復元への接続を含む現行loadを利用できる場合は、次の一文で依頼できる。
+
+```text
+$load を使い、このDot自身の協働基盤と継続地点を一括復元してください。
+```
+
+**URL付きの入口。** loadを利用できない、または取得した版の接続を確認できない場合は、次の既存Queryを使える。どちらも§4.1を同じ復元条件の所有先とし、別方式として保守しない。受け手AIが利用可能な本文を確認し、Humanへ版の診断を要求しない。
+
 ```text
 このQueryを受け取った現在のDot自身について、協働の基盤と継続地点を一括復元してください。
 https://github.com/yusukefujiijp/ai-project/blob/main/dots/README.md
 現行READMEをmetadataから宣言されたExact EOFまで読み、§4.1の一括復元に従ってください。私に欠損範囲の診断を求めず、受け手の身元と対応する原本を照合し、必要な基盤・重要な訂正・到達点・残作業とGoalを再構成してください。復元できた要点と重要な未確認を返してください。現在のHuman指定・Plan-only・STOP・承認範囲を保持し、復元だけを理由に保存や作業の再実行へ進まないでください。
 ```
+
+2026-10-17 JSTの改訂では、Humanが既存loadの活用を希望し、Living ReviewとPlan Modeを経て実行を承認したため、上の短い入口を追加した。loadはWork／Dots共通の意味回復を保ち、Dots固有の条件は§4.1が所有する。v011の一括復元自体の実装承認は conversation-message:Sentinel_7ff8237b56b08191a8d5a18cdea4c75e、今回の接続改訂承認はmetadataのrevision_approval_source。短いQueryの保存と、登録版への反映・実利用の安定性は別々に確認する。
 
 ## 5. Dotsの学びを、次の判断へ戻す
 
@@ -106,4 +116,4 @@ Dots全体へ適用する共通知識は[lessons](lessons/README.md)で育て、
 
 読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を共通lessonの第二正本にしない。専門lessonも同じ契約を参照し、全Dotsへ一般化すると誤適用される学びが実際に生じた時だけ、その領域の原本へ置く。
 
-EOF::DOTS_HOME::v011
+EOF::DOTS_HOME::v012
