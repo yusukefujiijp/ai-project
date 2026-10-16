@@ -1,0 +1,4 @@
+interface:
+  display_name: "残作業とGoal"
+  short_description: "現在の協働から残作業とGoalを復元し、根拠と関係を次の判断へつなぐ"
+  default_prompt: "$map-remaining-work を使い、現在の残作業とGoalを整理してください。"
