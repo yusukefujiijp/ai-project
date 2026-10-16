@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.36.1
+version: v0.36.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: map-remaining-workの会話内全文取得と共有本文一致を後続確認
+updated_reason: chocoZAPの現行routine・Triangle・基準継続を読む入口へ更新し、旧二周目前提を現行案内から除いた
 ---
 # Ark Shared Skills Hub
 
@@ -90,7 +90,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
 | アイデア出し / generate-ideas | 分野を横断して案・着想・別の切り口を生み出し、選んだ案やFeedbackから発展させる | [SKILL.md](generate-ideas/SKILL.md) | 本文単体で基本支援。発想方法・案数・順序・形式は現在の依頼へ適応 | 形式・導入・共有本文一致、三つの独立文脈で六応答を確認。通常回答一件との限定比較を含む。§3.7参照 |
 | 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
-| chocoZAP Sweet Spot / chocozap-sweet-spot | 当日のSweet Spot・重量系列・本人が選んだ切替を読み、二周目・履歴・訂正へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../lifestyle/chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
+| chocoZAP Sweet Spot / chocozap-sweet-spot | 現在のSweet Spot・Triangle・コースを読み、自然な報告・訂正・Feedbackを次の実践へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../lifestyle/chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
 
 ## 3. Mobile / explicit entry
 
@@ -146,12 +146,16 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instruc
 ~~~text
 次のchocozap-sweet-spotのSKILL.mdを読み、今回の依頼に適用してください。
 https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md
-一周目で記録した、その日のSweet Spotを二周目へつなぐ意味を共有して、今回の入力を受け取ってください。
+現在のSweet Spot・方法・コースの役割を復元し、今回の報告・訂正・Feedbackを受け取ってください。
 ~~~
 
 当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
 
 2026-10-14の配置変更では、配布されるchocoZAP Skillと現在地SkillのchocoZAP参照を[生活領域の入口](../lifestyle/README.md)から解決する形にした。生活領域の案内は所在を、本体のREADMEは方法・記録を所有する。Repository内の現行記録への直接参照は保持し、GitHub共有・登録先保存・Project設定・実際の応答を同一視しない。切替と確認の経緯は[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)を参照する。
+
+2026-10-17の改訂では、来館全体の二周目を現在行わないという本人訂正を受け、共有Skillの二周目を前提にした支援を更新した。現在の基準の継続、各重量のTriangle、コース定義とその回の実施、主運動の終点と後続補助を区別する。3コースの具体的な順序・店舗・時間目安は領域READMEに置き、Skillへ個人の現在値を複製しない。初期の二周構想と当時の確認記録は本書の履歴として保持する。
+
+形式検査と、元会話・診断・期待回答を渡さない二つの独立AI文脈での限定応答確認を行った。長時間コースの開始前相談では12項目の順序とExercise Bike後の補助を復元し、今日の終了時刻未定を保持した。報告方法の設計相談では、30分コースの一時的な省略・基準継続とTriangleを区別し、引用を当日の実績にせず保存も行わなかった。提供した本文・原本に対する確認であり、自然な自動選択、全環境の反映、実生活の効果の実証ではない。
 
 ### 3.3 Plan Modeの統一入口
 
@@ -744,4 +748,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.36.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.36.2
