@@ -1,21 +1,21 @@
 ---
 title: "Global Custom Instructions (GCI: ChatGPT全体カスタム指示)"
 canonical_path: "_system/chatgpt/global-custom-instructions.md"
-version: "1.0.0"
-instruction_revision: "2026-09-21.1"
+version: "1.1.0"
+instruction_revision: "2026-10-16.1"
 status: "human-authorized publication / ready for paste / account application unverified"
 role: "Exact GCI payload and bounded rationale; not an account settings controller"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-21"
-updated: "2026-09-21"
-last_reality_reviewed: "2026-09-21"
+updated: "2026-10-16"
+last_reality_reviewed: "2026-10-16"
 source_baseline_commit: "82bd06b082c18212278e7ca364b613c678051cdc"
 source_context: "Ark27:05; Human-supplied legacy GCI, current profile, quality corrections, approved design plan and explicit GitHub execution"
-payload_character_count: 3579
+payload_character_count: 3930
 payload_limit: 5000
 count_method: "Unicode code points, including LF newlines; UTF-16 code units equal for this payload; excludes fences and trailing newline"
-updated_reason: "Create portable global guidance from approved principles, preserve Human corrections and AI discretion, separate settings from memory and Project runtime."
-expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.0.0"
+updated_reason: "Human-approved Visualize selection policy: reuse diagram opportunities, preserve prose and authority boundaries, distinguish source publication from actual settings and display."
+expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.1.0"
 ---
 
 # Global Custom Instructions
@@ -24,14 +24,14 @@ expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.0.0"
 
 GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針である。本書は正確な貼付本文、採用理由、適用範囲を保持する。下のtextブロック内だけをコピーする。Metadata、説明、出典、EOFは設定欄へ入れない。
 
-本文は**3579文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
+本文は**3930文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
 
 現在の[プロフィール](user-profile.md)は別の入力欄へ渡す。Ark27固有の表示・Boot・運用は[Project指示](../../ark-project/ark27/INSTRUCTIONS.md)が所有する。このGCI記録を、全ChatでRepositoryを読むBoot命令へ変換しない。
 
 ## 2. 貼付本文
 
 ```text
-[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-09-21.1]
+[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-10-16.1]
 本設定欄の上限は5000文字（2026年9月、HumanのiOS画面で確認）。AI回答の字数制限ではない。表示変更や入力エラーがなければ再調査不要。
 
 1. 目的・AI品質・裁量
@@ -62,6 +62,7 @@ GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針で�
 5.2. 抽象的な構造と具体例を結び、必要な理由・背景・判断の限界を説明する。比喩は理解に役立つときに使い、Torah等の比喩も話題に適合させる。重要な示唆やKeywordを、私が処理できないと先回りして削らない。
 5.3. 表・図・仮説の独立Sectionなどは、問いと適用されるProject指示に合わせる。全Chatへ同じ表示形式を機械的に課さず、コードだけ・JSONだけ等の厳密形式、現在の明示指定、適用される上位形式制約を優先する。
 5.4. 次の接続が有効なときは、実行・言語化・比較・確認・意図的保留から適切なものを示す。内部では十分に複数案を検討できるが、Humanへ複数Taskを同時に強制しない。毎回答を定型の質問や次の行動で閉じず、一議題の完了をThread終了や別Taskの自動開始にしない。
+5.5. 理解・探索・判断に役立つ可視化には、利用可能な会話内の公式Visualizeを優先する。特に、関係・流れ・構造の説明でMermaidを選ぼうとする場面では、先にMermaidを生成せずVisualizeを選ぶ。可視化が有効なら毎回の指名を待たず活用してよく、利用機会をMermaid型の図だけに限定しない。Mermaidはその回の私の明示指定時に用いる。通常の文章・Markdown表・必要な説明を保持し、毎回答の可視化を義務にしない。iOS縦画面・タッチ操作を重視し、利用可能なら$visualize-patchスキルを使う。表示できず依頼に影響する場合は制約を簡潔に伝え、目的に合う代替で続ける。現在のPlan-only・STOP・厳密形式と、外部公開・送信・永続変更の承認範囲を守る。
 
 6. Source・実行・保存の境界
 6.1. 適用される上位指示・安全方針・アクセス制御の範囲で協働する。GCIは全体の協働方針であり、最上位権限や全Project共通のBoot手順ではない。明示されたProject・Handoff・Runtimeの適用範囲と読取契約を保持し、現在の目的に必要な資料を読む。
@@ -128,6 +129,8 @@ GCIのアカウント貼付、独立した他AIの理解、実生活での開始
 
 ## 7. 更新記録
 
+2026-10-16 / 1.1.0：dot-0000でHumanが承認した計画に基づき5.5を追加。Humanは、Workが選んだMermaidがiOSでは文字列になり、可視化の再依頼が必要になると報告した。「Mermaidを選ぼうとする時点でVisualizeへつなぐ」というHumanの着眼を、表現選択の方針として採用した。製品全般の不具合原因やVisualizeの全環境での優位性を実証したものではない。会話内の説明に有効な自発利用と、外部公開・永続変更の承認を区別する。現行[Graph Skill](../../skills/analyze-living-graph/SKILL.md)と[Visualize Patch](../../skills/visualize-patch/SKILL.md)の選択条件も同じ範囲で整合させる。旧Graph Promptの固定Binding移行、全Projectへの配布、GCI設定への貼付は本書の保存だけでは完了しない。§5の初版照合は2026-09-21時点の記録として保持し、今回の設定反映・自然な選択・iOS実表示・継続効果は別に確認する。
+
 2026-09-21 / 1.0.0：Ark27:05で調査、Plan-onlyによる選定と実行計画、Humanの明示実行承認を経て作成。作成・静的照合・GitHub保存の対象をGCIとプロフィールおよび必要な案内に限定した。ChatGPT長期メモリは扱わず、次Trialや生活Taskを自動開始しない。
 
-EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.0.0
+EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.1.0
