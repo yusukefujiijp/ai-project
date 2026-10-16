@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.34.0
+version: v0.34.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-16
-updated_reason: Human承認のVisualize選択方針に合わせ、現行GraphとPatchの改訂・配布確認を案内。旧固定Bindingと過去の検証記録は保持
+updated_reason: Human承認に基づき、過去の図を再掲せず同じThreadの次の適切な機会からVisualizeへ切り替えるQueryを既存入口へ追加
 ---
 # Ark Shared Skills Hub
 
@@ -457,6 +457,22 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。初版保存直後は、この会話のSkill一覧から新名称をまだ取得できず、共有本文から接続しました。その後のSource02では登録済みSkillを取得でき、2026-10-14の移行準備でもCurrent共有本文との完全一致を再確認しています。前の未取得を現在の機能不在へ読み替えません。後続のCaffeine可視化二作品と28／33ケースの確認、登録済みSkill取得の根拠は[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-t04`–`visualize-t06` に分けて保存しました。自然な自動選択・恒久記憶・他社AIでの実利用・iOS実機での修正成功・生活上の効果は未確認です。
 
+<a id="visualize-forward-query"></a>
+
+#### 3.12.1 本題の流れを保ち、次からVisualizeへ切り替えるQuery
+
+Mermaidが文字列として表示された後など、過去の図を作り直さず、同じThreadの今後の選択を訂正したい時に使う。上の共通入口は現在の可視化を作る依頼、本Queryは今後の適切な機会への切替であり、二つを一緒に貼る必要はない。貼付先は今回のThreadに限り、全Threadへの配布・恒久設定変更を含まない。
+
+```text
+前のMermaid図は再掲・作り直しをしないでください。このThreadでは今後、可視化が役立ちMermaidを選ぼうとする場面で、利用可能な公式Visualizeを会話内で使ってください。利用可能なら $visualize-patch スキルに従ってください。次の返答で無理に図を作る必要はありません。現在の目的・文脈・検討の深さ・対話の流れを保ち、この指定への長い了承や確認で中断せず、本題へ自然につなげてください。Visualizeを利用できない場合も、Mermaidへ自動的に戻さず、目的に合う文章・表などで説明を続けてください。私がその回にMermaid自体を明示指定した場合は、その指定を尊重してください。現在のPlan-only・STOP・依頼範囲は引き続き守ってください。
+```
+
+**形成と境界（2026-10-16）。** dot-0000との対話で、YusukeJPはMermaidを使った時の保険となる直接Queryを提案し、可視化の変更以上に既存Threadの流れと集中を守ること、今後も選択を改めること、前の図の再掲が流れを止め得るため次から適用することを明確にした。Plan Modeの計画・候補提示後、正式Queryの完成とGitHub実行を承認した。本節はその会話の編集要約であり、実利用効果の実証ではない。
+
+「次から」は適用開始であり、次の返答での図作成義務ではない。短い了承だけで本題を止めず、必要な説明・分析は保持する。後からHumanが以前の図の再作成を明示依頼すれば、その現在の依頼を扱う。表示方法の訂正を、Plan-only・STOPの解除や実装承認へ変えない。
+
+本文の意味・境界を点検した段階であり、Workの自然な選択、会話内の描画、iOS実機での表示・操作、訂正負担の軽減は未検証。Query本文は本節で保守し、独立したQueryファイル、新Skill、登録済みSkillの起動文の置換を追加しない。品質・環境適応の詳細は既存の[Visualize Patch本文](visualize-patch/SKILL.md)が所有する。
+
 <a id="map-current-position-revision"></a>
 
 ### 3.13 現在地MAP — 残作業とGoal・改名
@@ -663,4 +679,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.34.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.34.1
