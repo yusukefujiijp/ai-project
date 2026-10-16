@@ -5,7 +5,9 @@ version: "v001"
 created: "2026-10-17"
 updated: "2026-10-17"
 role: "Scoped structure-change rationale, authority and verification record"
-status: "authorized implementation; remote verification follows publication"
+status: "implemented and remote-verified; real-world and cross-case effects remain unverified"
+implementation_commit: "7ecdbf5f85cd50896c8c98301b17bae7d8adcfc1"
+verified_at: "2026-10-16T23:08:06Z"
 source_context: "Work / Ark99:03"
 base_commit: "a34becedcbfca35a9165dda6c61f5ab610232bce"
 expected_eof: "EOF::STR_016_PROBLEM_SOLVING_FOUNDATION::v001"
@@ -55,9 +57,15 @@ problem-solving内はREADMEと実案件を置くcases/から始める。既存�
 
 ## 5. 検証と実利用の境界
 
-書込み前に、Task Recordsの構文・Schema・ID参照、資料のcanonical_path・版・EOF、今回追加するリンクと所有関係、既存本文の保持を確認する。公開は最新mainの内容と競合を照合し、他者の変更を保持した上で行う。
+2026-10-17 Asia/Tokyoに実装を完了し、[実装commit 7ecdbf5](https://github.com/yusukefujiijp/ai-project/commit/7ecdbf5f85cd50896c8c98301b17bae7d8adcfc1)をmainへ反映した。直前に加わった別領域のREADMEを含む `a34becedcbfca35a9165dda6c61f5ab610232bce` を親とし、他者の変更を保持した。公開対象は第3節の七文書だけで、予期しない変更・削除がないことをGit treeで確認した。
 
-公開後は変更した対象をRemoteから直接再取得し、意図した本文・SHA・関連リンクを照合する。実際の結果はこの節へ追記し、日付別活動記録から接続する。
+確認結果：
+
+- Task Records v001のJSON Schema検証、重複キー排除、17 Sources・17 Nodes・5 Edges・3 Open QuestionsのIDと参照整合を通過。
+- 今回追加・変更した内部リンク37件と、検査対象本文へ向く見出しanchorの存在、canonical_path・版・宣言EOFの一致を確認。
+- Caffeine資料のSource02当時の五段落と、既存の関連しない本文を保持。Root READMEの追加は担当先案内と関連metadataの整合に限定。
+- 変更した七文書すべてをmainから直接再取得し、意図した全文との一致と各blob SHAを確認（UTC 2026-10-16T23:08:06Zまでに完了）。Tool successだけで保存済みと判定していない。
+- 本節は実際の再取得後に結果を追記した。日付からは[2026-10-17の活動記録](../../records/2026/10/2026-10-17.jsonl)へ接続する。
 
 今回の検証で確認できるのは、文書構成と保存結果まで。他AIの独立した再構成、Project設定反映、リステリンによる寝落ち防止、毎日の行動達成、複数案件での有用性は、別の実利用・Feedbackを必要とする。
 
