@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.33.1
+version: v0.34.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-15
-updated_reason: STR-015のVoice旧JSONL退役を現在案内へ反映。三lessonと共有Skillを保持し、旧取得差・Radio整理・他Skillの履歴を保持
+updated: 2026-10-16
+updated_reason: Human承認のVisualize選択方針に合わせ、現行GraphとPatchの改訂・配布確認を案内。旧固定Bindingと過去の検証記録は保持
 ---
 # Ark Shared Skills Hub
 
@@ -508,6 +508,16 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKI
 
 今回のセッションでは公式Deep Researchの直接起動ツールを確認できず、Plugin検索でも該当する公式入口を確認できなかった。検索は網羅的な不存在証明ではない。本調査ジョブ、`@`メニューでの実選択、スキル読解から公式実行結果までの一連の動作は未検証であり、今回のスキル作成・保存・限定応答確認と区別する。2026-09-12のexport-manifestは当時の記録として保持する。
 
+### 3.13 2026-10-16：図の選択機会からVisualizeへ
+
+YusukeJPはdot-0000との会話で、Workが選んだMermaidがiOSでは文字列になり、再依頼が必要になると報告し、「Mermaidを選ぼうとした機会をVisualizeへつなぐ」方針の計画と実行を承認しました。これはHumanの表示観測と採用判断であり、アプリ全般の原因特定や全環境の優位性の実証ではありません。
+
+共通の選択方針は[GCI 5.5](../_system/chatgpt/global-custom-instructions.md#2-貼付本文)、関係分析からの説明用可視化への接続は[現行Graph Skill](analyze-living-graph/SKILL.md)、起動対象・表示品質・能力差は[Visualize Patch](visualize-patch/SKILL.md)が所有します。PatchのdescriptionはAIが選ぶ単純な説明図も対象に含め、普通のMarkdown表・引用・言及だけの一律起動は避けます。規則全文をHubへ複製しません。
+
+[共有版改訂commit](https://github.com/yusukefujiijp/ai-project/commit/22771fcf61766c533a368cf90538380ac6af431a)時点のGraph blobは `3164e7c25c57bab72179f9737352bf09bc6d6e28`、Patch blobは `a3acbba383ad0a5c4b6c316034ef6ac60eadd885`。両共有本文を保存後に再取得し、既存の登録済み二Skillも更新して登録先Remote本文との完全一致を確認しました。新しいSkill複製・他Skillの変更はありません。Graphの既存の明示呼出し設定とPatchの自動選択許可設定は保持しています。Graph分析の自動起動を広げる変更ではありません。
+
+形式検査と、元会話・期待回答を渡さない独立した読解で六つの入力条件（関係説明、Markdown表のみ、Plan-only、Mermaid明示指定、描画機能なし、STOP）の出力形式・許可範囲を確認しました。これは本文を読ませた限定的な判断確認であり、自然な自動選択、実際の会話内描画、iOS実機・継続効果の試験ではありません。GCI設定欄への貼付は未確認です。旧Graph Promptと固定Binding、One-Table、Project指示、全Threadへの配布は今回変更していません。旧版Bindingを使う場では、その現行契約との整合を別に判断します。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -653,4 +663,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.33.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.34.0
