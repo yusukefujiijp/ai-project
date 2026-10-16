@@ -1,0 +1,7 @@
+interface:
+  display_name: "Goal"
+  short_description: "今のGoalへ、AIの判断と工夫を活かして自然に進める"
+  default_prompt: "$goal 今のGoalに向けて、あなたの判断と工夫を活かして進めてください。"
+
+policy:
+  allow_implicit_invocation: false

@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.34.1
+version: v0.35.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-16
-updated_reason: Human承認に基づき、過去の図を再掲せず同じThreadの次の適切な機会からVisualizeへ切り替えるQueryを既存入口へ追加
+updated_reason: Human承認に基づき、気軽な明示呼出しでAIの判断と工夫をGoalへ向けるgoalスキルと入口を追加
 ---
 # Ark Shared Skills Hub
 
@@ -62,6 +62,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Goal / goal | 今のGoalへAIの判断と工夫を向けたい時の、気軽な明示呼出し。Goalが見えてきた時や仕上げにも使える | [SKILL.md](goal/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約を保持 | 形式・三つの独立文脈で六応答と通常応答一件の限定比較を確認。入口・確認範囲は[§3.15](#goal-entry) |
 | Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [SKILL.md](shop-deep-research/SKILL.md) | 本文単体で基本方法。公式Deep Researchの利用可否・起動・結果は実環境で別途確認 | 形式・三つの独立文脈・共有と登録先の本文一致を確認。入口と未検証範囲は[§3.14](#shop-deep-research-entry) |
 | Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
 | Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂時の形式・四つの独立文脈・共有保存・登録先Remote一致を保持。2026-10-14、Ark27:09でTheme拡張版の会話内取得と共有本文の一致を確認。旧Radio退役は§1.3。UI・自然発動・実聴取効果とは別。形成と改訂は[§3.11](#podcast-theme-mode) |
@@ -533,6 +534,22 @@ YusukeJPはdot-0000との会話で、Workが選んだMermaidがiOSでは文字�
 [共有版改訂commit](https://github.com/yusukefujiijp/ai-project/commit/22771fcf61766c533a368cf90538380ac6af431a)時点のGraph blobは `3164e7c25c57bab72179f9737352bf09bc6d6e28`、Patch blobは `a3acbba383ad0a5c4b6c316034ef6ac60eadd885`。両共有本文を保存後に再取得し、既存の登録済み二Skillも更新して登録先Remote本文との完全一致を確認しました。新しいSkill複製・他Skillの変更はありません。Graphの既存の明示呼出し設定とPatchの自動選択許可設定は保持しています。Graph分析の自動起動を広げる変更ではありません。
 
 形式検査と、元会話・期待回答を渡さない独立した読解で六つの入力条件（関係説明、Markdown表のみ、Plan-only、Mermaid明示指定、描画機能なし、STOP）の出力形式・許可範囲を確認しました。これは本文を読ませた限定的な判断確認であり、自然な自動選択、実際の会話内描画、iOS実機・継続効果の試験ではありません。GCI設定欄への貼付は未確認です。旧Graph Promptと固定Binding、One-Table、Project指示、全Threadへの配布は今回変更していません。旧版Bindingを使う場では、その現行契約との整合を別に判断します。
+
+<a id="goal-entry"></a>
+
+### 3.15 Goal — 気軽にGoalへ向かう入口
+
+`$goal`は、今のGoalへ実行AIの判断と能力を自然に向けるための明示入口です。Goalが明確な時、見えてきた時、完成が近い時にも、共有済みの文脈と有効な流れを引き継いで使います。Humanが呼び出しのための詳細仕様を準備する必要はなく、軽さをAIの検討・説明・確認の省略へ変換しません。
+
+```text
+$goal 今のGoalに向けて、あなたの判断と工夫を活かして進めてください。
+```
+
+[共有本文](goal/SKILL.md)は、Goalの理解と成果への接続を支え、方法・順序・深さ・粒度・表現を実行AIへ委ねます。再呼出しでも積み上げを活かし、発動宣言、毎回のGoal再定義、固定手順や出力形式を必須にしません。計画の練り込みを求められたら計画を深め、実行を委任されたら承認範囲の仕事と確認を進めます。他AI・Future AIの有効な方法を固定せず、現在のCorrection・STOP・権限・適用Guardを保持します。
+
+2026-10-16、Humanが繰り返しのPlan Modeで明確にした「気軽な呼び出し」「既存AIの良さをGoalへ向ける方向性」と実行承認に基づく初版です。通常のgoalという語、引用、スキルの設計相談を利用依頼と区別し、[登録用metadata](goal/agents/openai.yaml)では暗黙起動を無効にしています。本文単体で基本支援ができ、他スキルの一律呼出しや追加の状態管理を前提にしません。
+
+形式検査と、元会話・計画・期待回答を渡さない三つの独立文脈で計六応答を確認しました。明確なGoalから完成稿へ進むこと、再呼出しと部分訂正で内容を引き継ぐこと、見えてきたGoalを具体化すること、二回の計画限定で対象ファイルを変更しないこと、その後の明示的承認で一ファイルを編集・保存・再読することを観察しました。同じ案内文課題をスキルなしでも一回確認し、両方が必要な事実を保持した完成稿を返しました。この限定比較から品質優位は主張しません。構成した相談例の観察であり、Humanの実体験、自動選択、Human UI、他Vendor・全AI互換性、継続利用の効果とは区別します。共有原本と登録先の版・本文照合は第4節に従います。
 
 ## 4. Source and distribution
 
