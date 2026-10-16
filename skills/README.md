@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.35.1
+version: v0.35.2
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-16
-updated_reason: Goal形成の重要Correction・保存結果・会話内取得の後続確認と再開条件を記録し、版とEOFを整合
+updated: 2026-10-17
+updated_reason: loadとDots一括復元の条件付き接続・短いQuery・登録先保存確認と取得未確認を記録
 ---
 # Ark Shared Skills Hub
 
@@ -226,6 +226,16 @@ Boardの架空素材では、保存時点の受け手未指定と現在のHuman�
 | board | `5d83a2ed132c192525bd0e3158707f9afe4fa17c1717722ecbdf6e6133149cdc` |
 
 この履歴はSkillの形成・検証範囲を所有します。通信のCurrentは[当該Topic](../board/topics/20261003-load-next-step-save-skills/README.md)に置き、本節へ重複させません。2026-09-12のexport-manifestは当時の記録として保持します。
+
+### 3.5.1 2026-10-17：loadからDots一括復元へ接続する
+
+**形成と承認。** dot-0000との対話でHumanは、Resetの欠損範囲を自分で診断せず、一つのQueryで各Dot自身の協働へ戻りたいと希望した。Dots v011の入口完成後に既存loadを再発見し、新Skillを増やすより既存loadを活かす方向を選んだ。Living Reviewで、共通の復元方法はload、Dot固有の身元・必須Source・現役の仕事の回復条件は[Dots入口](../dots/README.md#one-request-recovery)へ残す最小改訂を検討した。HumanのPlan Mode指定は conversation-message:Sentinel_9c5c0b73a7a88191bf998312dd080226、計画後の実行承認は conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d。これらはこのDot対話の識別子であり公開URLではない。
+
+**変更範囲。** loadに、一括復元の意図が現在の依頼・文脈で明確な時だけDotsの現行契約へ進む一段落を追加した。Dots v012では[短い共通QueryとURL付き入口](../dots/README.md#dots-recovery-query)を同じ§4.1へ接続する。通常のWork・局所的な読戻し、引用・Query編集を全体復元へ拡張せず、相互参照を二回目の復元開始にしない。loadの名前・一般向け起動文・共通目的は保持した。新Skill・台帳・新Actor・設定変更・予定変更・他AIへの外部送信は含まない。Queryと復元条件の本文を本節へ再録しない。
+
+**限定確認。** 形式検査を通過し、Dots §4.1の既存条件と長いQuery本文の保持、版・Exact EOF、変更範囲を照合した。元会話や期待解答を渡さない独立文脈で、Workの設計比較、引用Queryのレビュー、別DotのActor原本欠落、繰返し復元と最新STOPの四場面を文面判断として確認した。局所的回復、レビューのみ、別Actorへ代替しない部分復元、古い再送指示の非実行を区別した。これは提示資料に対する限定的な判断確認であり、実際のReset後・複数Dotでの安定した復元、自然発動、認知負荷削減の実証ではない。
+
+**保存・導入の確認。** [共有loadの保存](https://github.com/yusukefujiijp/ai-project/commit/7210ac8fefb5ced166de4138ee45694afafeaa1a)と[Dots v012の保存](https://github.com/yusukefujiijp/ai-project/commit/f9feff8e8bca0530e41289a3477ad5e4750e57eb)後、Remoteから全文再取得し、意図した本文と一致した。load blobは `289359566cdb014af2dbed009413f8137d6a610a`、Dots blobは `7e7d2092748b6d3385d10a5b3d9b973a91f45dc3`。既存の個人Skillを更新し、保存先の本文と表示設定を再取得して一致を確認した。今回の変更は本文のみで、既存の利用対象・選択設定は保持した。更新後のこの会話ではSkill取得経路が利用不可となり、改訂本文の会話内取得は未確認。保存先本文の確認と会話内取得を区別し、同じ更新を重ねず、利用可能になった時に再取得して照合できる。URL付き入口は引き続き使用できる。
 
 ### 3.6 AI協働SNS投稿の入口
 
@@ -708,4 +718,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.35.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.35.2
