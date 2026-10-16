@@ -15,6 +15,8 @@ description: Recover the purpose, material corrections, evidence, progress, and 
 
 指定がなければ現在の成果物・担当原本・近接ガイドから必要な資料を選ぶ。全履歴や全Skillを読み込む手順にはしない。Current契約は現行URLから確認し、過去の証拠は固定版から読む。判断に使った版・取得範囲を区別する。
 
+現在のHumanが、このDot自身の協働基盤と継続地点の一括復元を明示した、または現在の文脈からその意図が明確な場合は、[Dots入口](https://github.com/yusukefujiijp/ai-project/blob/main/dots/README.md#one-request-recovery)の現行本文をmetadataから宣言されたExact EOFまで読み、§4.1の受け手照合・基盤読解・役割と現在の仕事の再構成に従う。通常のWork文脈のload、局所的な読戻し、引用、Queryの設計・編集だけではこの経路を起動しない。READMEからloadへ戻る参照は現在のload適用として扱い、同じ復元を再起動しない。同一性と現在の文脈で利用できる理解を満たす確認済み読解は再利用する。現在のHuman指定・Plan-only・STOP・承認範囲を保持する。
+
 ## 意味と根拠を回復する
 
 元の会話を持たない読み手に、次を理由付きで説明できる理解を作る。
