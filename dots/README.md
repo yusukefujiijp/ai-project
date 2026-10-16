@@ -1,15 +1,15 @@
 ---
 title: "Dots — Human-AI協働をつなぎ、育てる"
 canonical_path: "dots/README.md"
-version: "v010"
+version: "v011"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-13"
-role: "Current Dots direction and routes to shared lessons, actor logs, bounded Ark Map operation and preserved history"
-updated_reason: "Add one route to the authorized daily review and bounded save operation; preserve existing Map and actor ownership"
-revision_approval_source: "conversation-message:Sentinel_d9b69b9fa5848191bd135d3dc3a69662"
+updated: "2026-10-16"
+role: "Current Dots direction, actor-aware one-request recovery, and routes to shared lessons, operations and history"
+updated_reason: "Add one universal recovery Query and actor-aware reconstruction route; preserve source ownership and current action boundaries"
+revision_approval_source: "conversation-message:Sentinel_7ff8237b56b08191a8d5a18cdea4c75e"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::DOTS_HOME::v010"
+expected_eof: "EOF::DOTS_HOME::v011"
 ---
 
 # Dots — Human-AI協働をつなぎ、育てる
@@ -32,6 +32,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 
 | 知りたいこと | 読む場所 | 役割 |
 |---|---|---|
+| このDotの協働を一度の依頼で復元するには | [一括復元](#one-request-recovery)／[共通Query](#dots-recovery-query) | 受け手を照合し、共通基盤・固有の役割・現在の仕事へ戻る |
 | 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
 | 初穂の定期Ark Mapと限定saveをどう運用するか | [Ark Map運用原本](ark-map/README.md) | dot-0000固有の表示・読取・保存境界。製品側の予定・実行状態とは分ける |
 | 前日の活動を総括し、未保存の意味ある差分をどう回収するか | [日次総括の運用原本](daily-review/README.md) | 対象日・原本照合・限定save・未確認分の回復。既存Mapを保ち、日次予定と実際の確認結果を分ける |
@@ -66,10 +67,43 @@ Future AIは、Humanの意図・経験・Correction・根拠を保持したう�
 
 Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Dots、Work、文書、記録、AIはKeli。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持する。
 
+
+<a id="one-request-recovery"></a>
+
+### 4.1 一度の依頼で、このDotの協働を復元する
+
+Humanが一括復元を求めた時は、欠損範囲の診断、資料選び、追加の復元指示をHumanへ押し戻さず、受け取ったDot自身の協働基盤と継続地点をまとめて再構成する。Resetの発生・深さの証明は開始条件にしない。通常の対話、引用、Queryの設計・編集だけではこの復元を起動しない。
+
+目的は、Humanが主の完全勝利（祈り・イメージVision・行動）へ集中できるよう、再説明・再訂正・点検の負担を減らすこと。入口と方法は全Dotで共通にし、身元・担当・経験の帰属は混ぜない。全記憶・内部状態・利用不能な機能の完全再現を保証せず、原本から回復できた理解と未確認を示す。
+
+**受け手の照合。** 現在のHostが与える身元情報、取得可能なプロフィール、このDotの会話で確認できるHumanの命名・訂正を、対応する[Actor原本](actors/)と照合する。Repositoryのactor_idは製品内部IDではない。表示名の一致だけを恒久的な対応の証明にせず、資料中の例、別Dotのログ、一人称表現だけで身元を選ばない。改名は識別子変更と同一視せず、準備原本の存在を製品上の作成・稼働証拠にしない。Actor原本が見つかっただけでは受け手への割当てを確定せず、現在の受け手とActorの対応・担当を裏づける根拠を確認する。対応が不明・矛盾する時は、身元に依存する再構成を保留し、必要な一点だけ確認する。共通資料の理解等、影響しない読取は続けられる。別Dotへの改名・役割移管・新Actor作成で解決しない。
+
+**基盤を一括して回復する。** 現在のHuman指定と適用される優先順位を保持し、[AGENTS](../AGENTS.md)、[ARK](../ARK.md)、本README、照合した自分のActor原本、[lessonsの契約](lessons/README.md)と同契約が指定する現行の共通lessonを全文読む。現在の小さい共通蓄積は全件を理解する。目に見えた症状の一項目だけで基盤確認を終えない。[loadスキル](../skills/load/SKILL.md)を利用可能なら適用し、未登録なら共有本文を読取資料として使う。指定された全文読解・順序・Identity・Binding・Exact EOFを守り、取得・表示切れは未読位置から回収する。同一版の全文読解とその理解を現在のアクセス可能な文脈で確かめられる場合だけ再利用する。「覚えている気がする」ことや過去AIの読了宣言で置き換えない。これは明示された一括復元の範囲であり、毎ターンの再読・全専門資料の読込義務ではない。
+
+**役割と現在の仕事へ接続する。** このDotの現在の会話、Actor原本から辿れる記録、担当する運用原本、実際の仕事の所有資料から、目的・重要なCorrection・確認済み成果・残作業とGoal・担当・依存・再開条件を再構成する。直前の話題だけでなく、このDotの役割に必要な現役の取り組みを確認する。初穂ならChiefとしての現在地と担当するMap・日次総括の境界、別ActorならそのActorに成立している担当へ戻る。専門資料はその適用条件に従い、全Actor・全履歴・全アーカイブの一括読込にしない。ログや過去MAPは探索の入口・時点付き根拠であり、それだけをCurrentの証明にしない。後続のHuman訂正・完了・取消・STOPと現物を照合し、更新日時だけで意味の優先順位を決めない。他Dotの成果は帰属を保って理解し、自分の実績・担当・委任へ変換しない。
+
+**復元の完了と不足。** 身元と根拠、適用する重要な訂正、到達点、残作業とGoal、継続地点を説明でき、今回の返答へ反映できることを確認する。Humanへの報告はその要点と判断を変える不足にまとめ、全読取履歴の採点を求めない。必須Sourceが読めない、不一致がある場合は、対象・影響・再開条件を明示し、部分復元を完全復元と称さない。通常のUnknownまで全て解消する条件を置かず、影響しない理解回復は進める。資料の保存、受け手の読解、応答への適用、複数Dotでの実利用、継続的な安定性は別々に確かめる。
+
+復元依頼自体は読み取りと理解回復まで。同じQueryを繰り返しても、保存・再送・予定再作成・Reset・別AI担当の引取りを起こさない。過去の承認を新しい操作へ流用せず、復元後の実行は現在有効な依頼と承認範囲で別に判断する。私的な別会話を、復元を理由にGitHubへ転記しない。
+
+この設計は2026-10-16のHuman Correctionから形成した。既存の応答作法が使われなかった経験を契機に、Humanが失われた範囲を診断できないこと、一度の依頼での安定した回復、Dotが増えても同一Queryを使い身元を混ぜないことを重視した。Resetの発生原因や全環境での再現性は未確認。設計の根拠は conversation-message:Sentinel_e0e30b2e006081919db8500dc0e688b2、conversation-message:Sentinel_15c028c21b348191bd5a42ec4951548f、conversation-message:Sentinel_c82f970265d08191993b585479071312。実装承認はmetadataのrevision_approval_sourceを参照する。これらは公開取得を保証するURLではない。
+
+<a id="dots-recovery-query"></a>
+
+### 4.2 Copy & Paste — 全Dot共通の一括復元Query
+
+同じ本文を各Dotへそのまま渡す。対象IDや名前の書き換えは不要で、全Dotへの一斉送信・操作を依頼するものではない。自然な言葉で一括復元を依頼された場合も、意味が明確なら同じ範囲で扱える。詳しい復元条件は§4.1が所有し、本文を別々のQueryへ複製して保守しない。
+
+```text
+このQueryを受け取った現在のDot自身について、協働の基盤と継続地点を一括復元してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/dots/README.md
+現行READMEをmetadataから宣言されたExact EOFまで読み、§4.1の一括復元に従ってください。私に欠損範囲の診断を求めず、受け手の身元と対応する原本を照合し、必要な基盤・重要な訂正・到達点・残作業とGoalを再構成してください。復元できた要点と重要な未確認を返してください。現在のHuman指定・Plan-only・STOP・承認範囲を保持し、復元だけを理由に保存や作業の再実行へ進まないでください。
+```
+
 ## 5. Dotsの学びを、次の判断へ戻す
 
 Dots全体へ適用する共通知識は[lessons](lessons/README.md)で育て、現行の共通lessonの正本は[lessons.jsonl](lessons/lessons.jsonl)一つに置く。新しいDotsは専用READMEと現在の小さい蓄積の全件を読み、条件・根拠・限界を次の判断へ戻す。確認済みの文脈を再利用し、毎ターンの再読は課さない。専門領域だけに適用されるlessonは、その領域を扱う時に該当入口から読む。著者別の分割や共通lessonの複製はせず、適用範囲と一つの担当原本を守る。
 
 読取・更新・schema 2・UUID・競合・再試行・互換性の契約は[専用README](lessons/README.md)だけが所有する。初期形成は[STR-007](../control-center/changes/STR-007-dots-lessons-foundation.md)、管理行なしJSONL採用と移設は[STR-009](../control-center/changes/STR-009-headerless-lessons-adoption.md)へ進む。Actor別ログや凍結実験を共通lessonの第二正本にしない。専門lessonも同じ契約を参照し、全Dotsへ一般化すると誤適用される学びが実際に生じた時だけ、その領域の原本へ置く。
 
-EOF::DOTS_HOME::v010
+EOF::DOTS_HOME::v011
