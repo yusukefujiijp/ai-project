@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.38.1
+version: v0.38.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: markdown-to-htmlの共有保存・同一登録物への反映・新しい文脈での本文取得と一致を確認
+updated_reason: markdown-to-htmlの起動Queryを、原文保持・AIの設計裁量・モバイル閲覧・検証と提供が伝わる形へ更新
 ---
 # Ark Shared Skills Hub
 
@@ -643,7 +643,17 @@ GitHubの接続・手順・環境の不整合を確認し、現在の依頼で�
 
 既存Markdownの内容・出典・関係を保ち、辿りやすいHTML閲覧版を作る個人Skillです。呼出し名は `$markdown-to-html`、表示名は「Markdown to HTML」を維持します。Markdownを編集原本、HTMLを派生した閲覧版として扱い、本文の要約・意味変更やWeb公開を自動的に含めません。
 
-> $markdown-to-html を使い、このMarkdownの内容と出典を保ちながら、スマートフォンでも読みやすいHTMLを作成してください。
+**起動Query（Copy & Paste）**
+
+```text
+$markdown-to-html スキルを使い、現在の依頼・会話・添付資料で指定されたMarkdownを、内容と出典・関係を保った、読みやすく辿りやすいHTML閲覧版にしてください。
+
+現行SKILL.mdに従い、対象のMarkdown全文を確認してください。Markdownを編集原本、HTMLを閲覧用の派生版として扱い、本文・引用・数値・不確実性、表・図・脚注・リンクの意味と対応を保持してください。
+
+文書の用途と私のFeedbackを踏まえ、構成・文字組み・余白・目次・表や図の見せ方などは、あなたの判断と工夫に委ねます。スマートフォンの縦画面を重視し、内容を十分に読めて、必要な箇所へ自然に移動できる形にしてください。必要な工夫を選び、操作や装飾は本文を読む目的に合わせてください。
+
+原文との対応、表示、主要な操作を確認し、実際に確認できた範囲と未確認の点を区別してください。完成したHTMLを現在の依頼に沿う保存先へ保存し、開けるリンクを提示してください。通常の設計判断はAI側で進め、対象の特定や内容の意味に関わる重要な不足だけを確認してください。
+```
 
 登録済みSkillを利用できない環境では、[共有SKILL.md](markdown-to-html/SKILL.md)を実際に読み、選んだ実行経路に必要な同梱資源を取得できます。本文だけで実行用ファイルまで取得済み、登録済み、Python・Pandocが利用可能とは扱いません。標準経路は同梱の変換script・CSS・JavaScriptを使い、ヘブライ文字を含む原文にはフォントと完全なOFLライセンスも使います。Mermaid描画には、別途確認した版固定の公式配布bundleとライセンスが必要です。
 
@@ -808,4 +818,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.38.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.38.2
