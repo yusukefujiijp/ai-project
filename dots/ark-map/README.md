@@ -1,16 +1,16 @@
 ---
 title: "定期Ark Mapと限定save — dot-0000"
 canonical_path: "dots/ark-map/README.md"
-version: "v003"
+version: "v004"
 status: "human-authorized operating source / runtime verification separate"
 created: "2026-10-06"
-updated: "2026-10-09"
+updated: "2026-10-17"
 actor_id: "dot-0000"
 role: "Single operating source for this Dot's periodic Ark Map and bounded save"
 approval_source: "conversation-message:Sentinel_ae3fc6bd63688191bc22305a15f4d420"
-revision_approval_source: "conversation-message:Sentinel_b31bd683526c81919cabb2532c7a15ad"
-updated_reason: "Refine news selection and bullet presentation through Human feedback while preserving flexible evolution and existing Map boundaries"
-expected_eof: "EOF::DOTS_ARK_MAP::v003"
+revision_approval_source: "conversation-message:Sentinel_b160b38c12c4819182588f826426833d"
+updated_reason: "Add bounded read-only remaining-work delta checks between normal Maps; preserve regular Map, daily review and save boundaries"
+expected_eof: "EOF::DOTS_ARK_MAP::v004"
 navigation_patch:
   date: "2026-10-14"
   scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
@@ -36,7 +36,7 @@ navigation_patch:
 
 各本文をここへ複製せず、現行の原本を使う。本書は定期実行固有の表示・読取・保存境界を所有する。RuntimeにSkillがあること、共有原本を読んだこと、実際に適用・実行できたことを分ける。
 
-## 3. 一回の実行で行うこと
+## 3. 通常Map一回の実行で行うこと
 
 1. 本書の現行版と、このDotの最新のHuman指定・Correction・Plan-only・STOPを確認する。開始時の意図だけで続行せず、書込直前にも影響する新しい指定がないか確かめる。
 2. 今回の範囲に必要なSourceを取得する。[Dots入口](../README.md)、[共通lessonsの契約](../lessons/README.md)と関連lesson、存在して適用される専門lesson、選択したArk原本・実際の会話を読む。指定された全文・順序・Identity・Binding・EOFは守る。
@@ -221,4 +221,44 @@ v002の実出力後、Humanはニュースの箇条書きを評価し、でき�
 - 計画提示：`conversation-message:Sentinel_8465545d5a088191a8512e4450a5f8ec`
 - 柔軟な改善方向の明示と実行承認：`conversation-message:Sentinel_b31bd683526c81919cabb2532c7a15ad`
 
-EOF::DOTS_ARK_MAP::v003
+
+## 9. 残作業とGoalの補助確認 — 意味のある変化だけ届ける
+
+### 目的と試行範囲
+
+Humanが各Threadを巡回せず、現在も必要な仕事、そのGoal、担当・再開条件の重要な変化へ戻れるようにする。2026-10-17、Humanは自発的な差分報告を評価し、毎時確認・変化がなければ無通知・既存Mapとの重複回避を提案した。計画への実行承認を受けた初期試行であり、好評価一件を長期の有効性の証明にはしない。
+
+初期の時間帯は既存Mapの04:00–20:00 JSTに合わせる。通常Mapの04／08／12／16／20時は保持し、その間の **05／06／07／09／10／11／13／14／15／17／18／19時 JST（Asia/Tokyo）** を補助確認の対象とする。夜間へ自動拡張しない。製品設定・実行・送信は別に確認し、本文の保存だけで稼働済みとしない。予定上は毎時を補完するが、毎回の実行成功・全Threadの網羅・常時監視を保証しない。
+
+この補助モードは **読み取りと、このDotのHumanへの条件付き報告のみ**。§3の通常Map全工程・§4の天気やニュース・§5の継続saveを起動しない。通常Mapと日次総括の役割・予定・保存権限は保持する。通常Map内の【残作業とGoal】も保持し、補助投稿を設けることを理由に削除しない。
+
+### 復元と通知の判断
+
+[$map-remaining-work](../../skills/map-remaining-work/SKILL.md)を方法の原本として使い、このDotの役割・最新Human指定・Correction・Plan-only・STOPに沿って、現在の会話、関係する担当Thread、公開成果原本を必要な範囲で照合する。指定された必須読解・同一性条件を守る。古い未完了は後続の完了・取消し・目的変更と照合し、未採用案・観察事項を必須Taskへ変えない。承認・実装・保存・受入れ・実利用効果を混同せず、他AIの担当を保持する。
+
+通知するのは、仕事の完了・取消し、依存解除、重要な障害、Goalや担当・進行順序・再開条件の訂正など、Humanの理解・優先順位・判断を実質的に変える差分がある時。時刻更新、言い換え、会話件数の増加だけでは通知しない。比較できた範囲に意味のある変化がなければ、開始挨拶・「変化なし」・定型完了報告も送らない。
+
+調べる深さ、重要な関係の発見、複数件のまとめ方、説明量はAIが目的に合わせて判断する。固定採点・毎時の全件再調査・必須の新提案にはしない。複数の変化は原則一通にまとめ、「何が変わったか」「Goalや残作業にどう効くか」「今Humanの判断が必要か」を、根拠・確認時点とともに示す。必要な説明を保ち、Map全体や天気・ニュースを再掲しない。
+
+### Mapと通知の重複を避ける
+
+比較基準は、取得できた最新のMap・直接回答・補助投稿を通して、**同じ対象について既に伝えた内容**。前回Mapだけ、直前の一メッセージだけ、前回確認時刻だけを基準にしない。送信直前にも新しい回答や遅延Mapを照合する。送信受理とHumanの既読は区別し、既読を推測しない。
+
+Map時刻には追加投稿を重ねず、通常Mapへ現在の残作業とGoalを統合する。予定時刻が来たことだけで確認・報告済みとはしない。Mapが遅延・未実行・送信不明なら、その状態を踏まえて次の補助確認で未報告の重要差分を再照合する。抑制した投稿を報告済みにせず、前回確認より古いという理由で未報告差分を落とさない。後からMapが届けば、その実際の内容を新たな比較根拠にする。
+
+初回・復元後も直近の報告履歴を取得し、既報の全件を新着として再送しない。比較履歴が不足する場合は差分保証を作らず、独立に確認できた重大な訂正・判断事項だけを、その限界とともに扱える。
+
+### 未確認・権限・改善
+
+取得失敗・比較不能・操作結果不明は「変化なし」と別に扱う。局所的な一時失敗は無用な通知へせず、重要な期限や判断に影響する、または必要な確認を継続して失っている場合は、その範囲・理由・必要条件を簡潔に一度知らせる。同じ障害の反復だけで毎時通知しない。送信結果不明では履歴を先に確認し、盲目的に再送しない。
+
+私的Work・別会話・長期メモリを、この補助運用でGitHubへ転記・要約公開・同期しない。比較のために専用の外部台帳や残作業の第二原本を新設しない。原本自身・共有Skill・Board・Topic・予定の自動改訂、新しい仕事、他AIへの送信や担当引取り、Resetは開始しない。最新のHuman制限は補助確認にも適用し、停止対象外の独立した読取まで一律に止めない。
+
+Feedbackで通知の有用性、見落とし、重複、量や時間帯を見直せる。改善案と永続変更の承認を分け、今回の試行承認を将来の無制限な予定変更・自動保存へ変えない。源泉となる私的Workの案件内容はここへ集めず、方法と形成理由だけを保持する。
+
+形成根拠（このDotの私的会話識別子。公開URLではない）：
+- 毎時・変化時のみ・Mapとの重複回避の提案：`conversation-message:Sentinel_49dd89bf4fc481918b31a53f1a3adb84`
+- 計画提示：`conversation-message:Sentinel_4d9a8c0140bc81918710be1620d41a69`
+- Feedbackで育てる試行と実行承認：`conversation-message:Sentinel_b160b38c12c4819182588f826426833d`
+
+EOF::DOTS_ARK_MAP::v004
