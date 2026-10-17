@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.37.2
+version: v0.38.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: visualize-patchの標準Queryを目的・AIの裁量・表示と検証が伝わる形へ更新
+updated_reason: markdown-to-htmlの既存資産を共有し、出力先衝突・文書内リンクを修正、来歴と確認範囲を記録
 ---
 # Ark Shared Skills Hub
 
@@ -62,6 +62,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [SKILL.md](markdown-to-html/SKILL.md) | 本文と必要な同梱資源。Python・Pandoc等の実行環境と保存権限は別途確認 | 形式・回帰13件・独立変換・Chromium表示を限定確認。来歴と保存・取得の区別は[§3.18](#markdown-to-html-entry) |
 | GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [SKILL.md](resolve-github-runtime/SKILL.md) | 環境判断は本文。Ark変更は[AGENTS](../AGENTS.md)、成果物保存は[Artifact → GitHub](../prompts/artifact-to-github.md) | 形式・二つの独立文脈で七条件への回答を確認。共有・登録先・実利用の区別は[§3.17](#resolve-github-runtime-entry) |
 | 残作業とGoal / map-remaining-work | 現在の協働から有効な残作業とGoalを直接取り出す。Dots主経路・Work補助経路・他AIへの分岐。前回Map不要 | [SKILL.md](map-remaining-work/SKILL.md) | 本文単体で基本支援。環境・役割・能力と現在のSource契約を区別 | 形式・四つの独立文脈で計六応答を限定確認。入口・形成と確認境界は[§3.16](#map-remaining-work-entry) |
 | Goal / goal | 今のGoalへAIの判断と工夫を向けたい時の、気軽な明示呼出し。Goalが見えてきた時や仕上げにも使える | [SKILL.md](goal/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約を保持 | 形式・三つの独立文脈で六応答と通常応答一件の限定比較を確認。入口・確認範囲は[§3.15](#goal-entry) |
@@ -622,7 +623,7 @@ GitHubの接続・手順・環境の不整合を確認し、現在の依頼で�
 
 登録済みSkillが利用できない環境では、[共有SKILL.md](resolve-github-runtime/SKILL.md)を実際に読み、指示資料として利用できます。登録・自然発動・操作権限が成立したとは扱いません。適用される必読資料が欠ける場合は、その契約が止める操作を停止します。本入口は、見えないSkillの本文だけに代替先の案内が閉じ込められないようにする経路です。
 
-**形成と今回の判断。** 2026-10-17の対話でYusukeJPは、GitHubへの未共有は意図的ではなく、作成当時に保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は成立経緯の仮説です。頻繁に利用されているというHuman報告と、実物の設計評価を分けました。[STR-014の固定版](https://github.com/yusukefujiijp/ai-project/blob/9cd05b2d32d4ab03027885a91aaa3d26e163be15/control-center/changes/STR-014-super-special-prompt-modernization.md)にも登録物と共有原本の不一致が記録されています。今回の承認は、このSkillの改訂・共有入口整備・同じ登録物への反映・確認を対象とします。`markdown-to-html` は別の未共有対象として残り、今回の改訂には含みません。
+**形成と今回の判断。** 2026-10-17の対話でYusukeJPは、GitHubへの未共有は意図的ではなく、作成当時に保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は成立経緯の仮説です。頻繁に利用されているというHuman報告と、実物の設計評価を分けました。[STR-014の固定版](https://github.com/yusukefujiijp/ai-project/blob/9cd05b2d32d4ab03027885a91aaa3d26e163be15/control-center/changes/STR-014-super-special-prompt-modernization.md)にも登録物と共有原本の不一致が記録されています。今回の承認は、このSkillの改訂・共有入口整備・同じ登録物への反映・確認を対象とします。`markdown-to-html` はこの時点の対象外で、後続の改訂・共有は[§3.18](#markdown-to-html-entry)で扱います。
 
 改訂前に取得した登録物の三ファイルは[確認時点の保存版](https://github.com/yusukefujiijp/ai-project/tree/1b1b7e8f96352c2e2dcaaca3b3beec6567dbe5d8/skills/resolve-github-runtime)へ残します。これは2026-10-17に観測した版であり、作成当初の本文と同一とする証拠ではありません。共有ファイルはSKILL.md、agents/openai.yaml、assets/icon.svg。内部Skill ID・認証情報は含めません。
 
@@ -635,6 +636,30 @@ GitHubの接続・手順・環境の不整合を確認し、現在の依頼で�
 **保存と取得の確認（2026-10-17）。** [共有更新 commit `f41e340`](https://github.com/yusukefujiijp/ai-project/commit/f41e3404efb358c9dc5c9eb589e2d410e0392a00)で、三ファイルと本入口をmainへ保存し、Remote再取得による全文一致を確認しました。改訂前の三ファイルも、上記の固定保存版から再取得して一致を確認しました。既存の同じ登録物へ反映し、登録先RemoteでSKILL.mdとアイコンはバイト一致、表示設定はYAMLとして全値の一致を確認しました。表示設定には保存先による引用符・インデントの整形差があり、バイト一致とは区別します。
 
 継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を全文取得できました。その取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（4,084文字、blob `ea24db4b740630b1b7a913380e2f0ac9d8cfac69`、SHA-256 `a4e10d3534afff288dfb3bab612da949b1133955dbbbff801e2db06ae23a15ca`）。本文・表示設定の保存と新しい文脈での取得を確認した結果であり、旧本文が返った原因・全会話への反映時点・実際のUI描画・自然発動・全環境の挙動まで確認したものではありません。
+
+<a id="markdown-to-html-entry"></a>
+
+### 3.18 Markdown to HTML：原文を保つHTML閲覧版
+
+既存Markdownの内容・出典・関係を保ち、辿りやすいHTML閲覧版を作る個人Skillです。呼出し名は `$markdown-to-html`、表示名は「Markdown to HTML」を維持します。Markdownを編集原本、HTMLを派生した閲覧版として扱い、本文の要約・意味変更やWeb公開を自動的に含めません。
+
+> $markdown-to-html を使い、このMarkdownの内容と出典を保ちながら、スマートフォンでも読みやすいHTMLを作成してください。
+
+登録済みSkillを利用できない環境では、[共有SKILL.md](markdown-to-html/SKILL.md)を実際に読み、選んだ実行経路に必要な同梱資源を取得できます。本文だけで実行用ファイルまで取得済み、登録済み、Python・Pandocが利用可能とは扱いません。標準経路は同梱の変換script・CSS・JavaScriptを使い、ヘブライ文字を含む原文にはフォントと完全なOFLライセンスも使います。Mermaid描画には、別途確認した版固定の公式配布bundleとライセンスが必要です。
+
+**形成と判断の訂正。** 2026-10-17の対話で、YusukeJPは初期の二つのSkillがGitHubへ未共有だったことは意図的ではなく、当時の保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は経緯の仮説です。今回、登録側の履歴で2026-10-07 01:22 JSTの改訂「Simplify Markdown reading editions and preserve Hebrew rendering」を確認しました。既定の余分な操作を減らす方針、条件付きのヘブライ語フォント・RTL、文書別CSSの入口が既にあり、「初期から未更新」とは扱いません。作成当初の日付・本文は未確定です。[Ark00:01:03の固定Handoff](https://github.com/yusukefujiijp/ai-project/blob/d523f016305b5cc8893ab24277a503ba016ca36c/ark-project/ark00-01/ark00-01-03/handoff.md)にも、Markdownを原本としてHTML閲覧版へつなぐ方向が記録されています。方向の記録があったことと、Skill一式が共有されていたことは別です。
+
+今回のAI評価では、内容を保ちながら読みやすくする中核と最近の簡素な設計は継承する価値があります。頻繁に使われているというHuman報告だけで品質を実証済みにせず、実物と挙動を確認しました。改訂前の八ファイルは[確認時点の保存版](https://github.com/yusukefujiijp/ai-project/tree/fd8186dff992681bc5d23cc57fa83d5b5aad34a0/skills/markdown-to-html)へ残します。これは2026-10-17に観測した版であり、作成時の原本とは称しません。
+
+**今回の改訂。** 隔離した入力で、診断レポートの保存先にMarkdown原本またはHTML出力を指定すると上書きされること、予約prefixのある見出しのID変更後に原文のリンクが切れることを再現しました。HTML・診断レポート・入力資源の衝突を、シンボリックリンク／ハードリンクを含めて書込前に拒否し、見出し変更後のリンクを前方参照・衝突・URLエンコードされたfragmentも含めて再接続しました。生成時の診断と、内容比較・ブラウザ確認が別であることも本文へ明示しました。表示用CSS・JavaScript・フォント・アイコン・表示設定は保持しています。
+
+共有対象は、SKILL.md、agents/openai.yaml、scripts/render.py、scripts/test_render.py、assets/reader.css、assets/reader.js、assets/icon.svg、assets/fonts/NotoSerifHebrew.ttf、assets/fonts/OFL.txtの九ファイルです。検証用ブラウザ、Mermaid配布物、日本語の検証用フォント、生成した例示HTMLはSkillへ追加していません。旧配置の一括整理、別Skillの改訂、Web公開は対象外です。
+
+**確認範囲。** 形式検査と、Pandocを使う隔離回帰テスト13件が通過しました。期待回答・元会話を渡さない独立文脈でも、実際に日本語ノートを変換し、内容照合25項目、ブラウザ31項目、コードのキーボード横スクロール、配色5組を確認しました。表の全セル、同じ脚注の二往復、Unicode結合文字、数式、コード、原文の「未測定」を保持しています。その独立生成後に入力資源保護を追加したため、最終helperによる再生成が検証済みHTMLとバイト一致することも別途確認しました。
+
+主作業では、画像、数式、正常なMermaid図と意図的な構文不正を含む別文書を確認しました。Chromium 153.0.8010.0、幅320・390・1280pxで、ページ全体の横はみ出し、文書内リンク、目次、脚注、図の失敗表示、実際のヘブライ語フォント使用、キーボード、印刷用表示、JavaScript無効時の本文保持を確認し、代表画面を目視しました。ネットワークを切った生成HTMLの確認では外部リソース要求はありませんでした。実スマートフォン、Safari・Firefox、スクリーンリーダー、全Markdown方言、全入力の印刷、主観的な読みやすさの改善効果は未検証です。
+
+**保存・取得。** 共有保存、既存の同じ登録物への反映、新しい文脈での本文取得を別々に確認し、後続の確認結果をここへ記録します。共有本文・登録設定の存在だけで、実際のUI表示、自然な自動選択、全環境での動作まで成立したとは扱いません。
 
 ## 4. Source and distribution
 
@@ -781,4 +806,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.37.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.38.0
