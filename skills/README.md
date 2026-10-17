@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.36.3
+version: v0.37.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: chocoZAP共有更新の保存と導入先の本文・表示設定、会話内の全文取得一致を確認
+updated_reason: resolve-github-runtimeの共有原本・登録不在時の入口と改訂根拠を追加
 ---
 # Ark Shared Skills Hub
 
@@ -62,6 +62,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [SKILL.md](resolve-github-runtime/SKILL.md) | 環境判断は本文。Ark変更は[AGENTS](../AGENTS.md)、成果物保存は[Artifact → GitHub](../prompts/artifact-to-github.md) | 形式・二つの独立文脈で七条件への回答を確認。共有・登録先・実利用の区別は[§3.17](#resolve-github-runtime-entry) |
 | 残作業とGoal / map-remaining-work | 現在の協働から有効な残作業とGoalを直接取り出す。Dots主経路・Work補助経路・他AIへの分岐。前回Map不要 | [SKILL.md](map-remaining-work/SKILL.md) | 本文単体で基本支援。環境・役割・能力と現在のSource契約を区別 | 形式・四つの独立文脈で計六応答を限定確認。入口・形成と確認境界は[§3.16](#map-remaining-work-entry) |
 | Goal / goal | 今のGoalへAIの判断と工夫を向けたい時の、気軽な明示呼出し。Goalが見えてきた時や仕上げにも使える | [SKILL.md](goal/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約を保持 | 形式・三つの独立文脈で六応答と通常応答一件の限定比較を確認。入口・確認範囲は[§3.15](#goal-entry) |
 | Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [SKILL.md](shop-deep-research/SKILL.md) | 本文単体で基本方法。公式Deep Researchの利用可否・起動・結果は実環境で別途確認 | 形式・三つの独立文脈・共有と登録先の本文一致を確認。入口と未検証範囲は[§3.14](#shop-deep-research-entry) |
@@ -605,6 +606,28 @@ $map-remaining-work を使い、現在の残作業とGoalを整理してくだ�
 
 **後続の取得確認（同日）。** 取得経路が利用可能になった後、登録済みmap-remaining-workの本文を会話内で末尾まで取得し、上記の共有本文と完全一致を確認した。先の取得不可は保存直後の観測として保持し、現在の阻害条件へ戻さない。再登録は行っていない。自然な自動選択・実利用の有用性・全環境での動作は別の確認である。
 
+<a id="resolve-github-runtime-entry"></a>
+
+### 3.17 GitHub操作の事前確認：resolve-github-runtime
+
+GitHubの接続・手順・環境の不整合を確認し、現在の依頼で取れる行動を判断する個人Skill。公式GitHub Pluginの同梱Skillではありません。呼出し名は `$resolve-github-runtime`、表示名は「GitHub操作の事前確認」です。
+
+> $resolve-github-runtimeを使い、現在の依頼で利用できるGitHubの接続・手順・権限を確認して、次に取れる行動を判断してください。
+
+登録済みSkillが利用できない環境では、[共有SKILL.md](resolve-github-runtime/SKILL.md)を実際に読み、指示資料として利用できます。登録・自然発動・操作権限が成立したとは扱いません。適用される必読資料が欠ける場合は、その契約が止める操作を停止します。本入口は、見えないSkillの本文だけに代替先の案内が閉じ込められないようにする経路です。
+
+**形成と今回の判断。** 2026-10-17の対話でYusukeJPは、GitHubへの未共有は意図的ではなく、作成当時に保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は成立経緯の仮説です。頻繁に利用されているというHuman報告と、実物の設計評価を分けました。[STR-014の固定版](https://github.com/yusukefujiijp/ai-project/blob/9cd05b2d32d4ab03027885a91aaa3d26e163be15/control-center/changes/STR-014-super-special-prompt-modernization.md)にも登録物と共有原本の不一致が記録されています。今回の承認は、このSkillの改訂・共有入口整備・同じ登録物への反映・確認を対象とします。`markdown-to-html` は別の未共有対象として残り、今回の改訂には含みません。
+
+改訂前に取得した登録物の三ファイルは[確認時点の保存版](https://github.com/yusukefujiijp/ai-project/tree/1b1b7e8f96352c2e2dcaaca3b3beec6567dbe5d8/skills/resolve-github-runtime)へ残します。これは2026-10-17に観測した版であり、作成当初の本文と同一とする証拠ではありません。共有ファイルはSKILL.md、agents/openai.yaml、assets/icon.svg。内部Skill ID・認証情報は含めません。
+
+改訂では、手順書・操作能力・権限・不整合を分離し、metadataの非公開を「Skillなし」へ変換しない判断へ改めました。有限のpath再確認、対象識別、確認結果の再利用という中核を保持し、GitHub変更の詳細は[AGENTS](../AGENTS.md)と[Artifact → GitHub](../prompts/artifact-to-github.md)へ接続します。一律のMode強制・固定再試行回数・依存ファイルの逐次公開を共通契約へ重ねません。本文は日本語を主とし、識別子と技術用語を保持しました。
+
+[Ark23の固定記録](https://github.com/yusukefujiijp/ai-project/blob/51cb57189c95c53a0ca97282abf8cd3c100507b6/ark-project/ark23/ark23-03/github-plugin-runtime-best-practice.md)は、当時の代替経路と操作報告を示すHistorical Sourceです。Ark23での代替・来歴調査に適用し、通常の全GitHub作業へ追加必読を課しません。記録内の成功は当時の報告であり、今回の再現試験とは区別します。
+
+**確認範囲。** 形式検査を通過し、元会話・期待回答を渡さない二つの独立文脈で、計七つの仮想条件への回答を確認しました。metadata不足、手順書だけが存在する環境、Plan-only、欠落した必読手順、404の対象誤り、結果不明、登録機構のない非Ark環境を扱いました。実際の外部操作を行わない限定確認であり、自然な自動選択、全AI互換性、実生活効果を実証していません。
+
+共有原本の三ファイルとこの入口を同じ更新で公開します。登録先への反映と、共有・登録先の再取得照合は後続確認です。保存確認後にこの段落へ実際の結果を追記します。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -750,4 +773,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.36.3
+EOF::ARK_SHARED_SKILLS_HUB::v0.37.0

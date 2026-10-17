@@ -1,14 +1,13 @@
 interface:
-  display_name: Resolve GitHub Runtime
-  short_description: Classify GitHub plugin, skill, and connector state
-  default_prompt: Use $resolve-github-runtime to resolve the current GitHub runtime
-    and choose the safe legal execution mode.
-  icon_small: assets/icon.svg
-  icon_large: assets/icon.svg
+  display_name: "GitHub操作の事前確認"
+  short_description: "GitHubを使う前に接続や手順の現状を確認し、利用する方法を選びます。"
+  default_prompt: "$resolve-github-runtimeを使い、現在の依頼で利用できるGitHubの接続・手順・権限を確認して、次に取れる行動を判断してください。"
+  icon_small: "assets/icon.svg"
+  icon_large: "assets/icon.svg"
 policy:
   products:
-  - chatgpt
-  - codex
-  - api
-  - atlas
+    - "chatgpt"
+    - "codex"
+    - "api"
+    - "atlas"
   allow_implicit_invocation: true
