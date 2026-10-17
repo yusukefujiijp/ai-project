@@ -1,11 +1,11 @@
 ---
 title: "残作業とGoal — 理解と次の判断を支えるスライド"
 canonical_path: "artifacts/slides/remaining-work-and-goal/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-17"
 updated: "2026-10-17"
-role: "Public-source production companion for a five-slide pilot"
-expected_eof: "EOF::REMAINING_WORK_GOAL_SLIDES::v001"
+role: "Five-slide image edition and public-source production companion"
+expected_eof: "EOF::REMAINING_WORK_GOAL_SLIDES::v002"
 ---
 
 # 残作業とGoal
@@ -13,6 +13,32 @@ expected_eof: "EOF::REMAINING_WORK_GOAL_SLIDES::v001"
 **残作業をGoal・状態・担当・再開条件と結ぶ意味を、五枚の流れで読み直すための制作資料。**
 
 [Slides入口](../README.md)の保存・公開・検証境界に従う。本書は公開原本から再制作できる説明を所有し、個々の案件の現在状態や会話全文を保管する台帳にはしない。
+
+## スライドを読む
+
+2026-10-17、Humanの明示承認により、制作済み五枚の表示をPNG画像として公開した。下へスクロールすると順に読める。各画像は1280×720で、画像を開いて拡大できる。
+
+### 1枚目
+
+![残作業とGoalがArkの中心になった理由](slide-01.png)
+
+### 2枚目
+
+![Humanの気づきと残作業への入口](slide-02.png)
+
+### 3枚目
+
+![Goal・残作業・担当・再開条件の関係](slide-03.png)
+
+### 4枚目
+
+![準備完了と受け手の再構成を分ける](slide-04.png)
+
+### 5枚目
+
+![手応えとこれから確かめること](slide-05.png)
+
+静的な閲覧版のため、元サービス上の編集・操作機能は含まない。以下の制作資料は公開原本に基づく説明であり、画像内の本文と逐語的に同一ではない。
 
 ## 目的と表現
 
@@ -71,8 +97,10 @@ expected_eof: "EOF::REMAINING_WORK_GOAL_SLIDES::v001"
 
 ## 実物と確認範囲
 
-本書の公開範囲は、上記の公開原本に基づく再制作用の説明である。個人用のスライド実物、その所在、個別の検証状況は本書の記録対象に含めない。
+本書は、公開原本に基づく再制作資料と、Humanが公開を承認した静的なスライド画像を案内する。五枚のPNGは、今回明示的に公開承認された表示内容である。元サービスのアクセス限定URL、私的Workの会話、編集可能な内部データは含めない。
 
-再制作時には実際の生成・保存・表示をそれぞれ確認し、利用端末での閲覧・操作や理解への効果を別に評価する。本書の存在をスライド実物の保存・表示成功の証拠にはしない。
+五枚のPNGは制作済みスライドから同じ版で取得し、画像の順序・寸法・内容を確認した。GitHub保存は画像バイトと参照先を照合する。HumanのiOSでの表示と理解への効果は、実際の利用Feedbackで確かめる。PNGの保存を編集可能なスライドの完全バックアップや自動同期とは扱わない。
 
-EOF::REMAINING_WORK_GOAL_SLIDES::v001
+v002では、Humanが元のリンクを開けなかったとの報告を受け、承認された五枚の画像と閲覧入口を追加した。原因を特定した、または全端末での表示を実証したという意味ではない。
+
+EOF::REMAINING_WORK_GOAL_SLIDES::v002
