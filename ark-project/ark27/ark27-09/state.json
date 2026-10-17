@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_09_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:09",
     "schema_version": "v002",
     "updated_at": "2026-10-17",
-    "update_reason": "09の後続成果・Human Material Corrections・Dotsの完了と公開差分を収穫し、承認された09→10準備へ接続する。初期Stateの未観測を現在へ延長せず、次の限定比較は移行後に行う。",
+    "update_reason": "09→10の三点セットとDomainを公開し、candidate/mainの全文一致・Identity・Binding・Scopeを確認した終端Receipt。固定Source09収穫はrevision2のまま、Target10自身の受入れ・Human UI・次の比較とは分離する。",
     "authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。",
     "date_scope": "Source09収穫の保存準備日（Asia/Tokyo）。各成果の発生日、Target10の受入れ、Human UI操作、Token Resetとは別。"
   },
@@ -230,16 +230,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "完了したGitHub整理、Podcast Theme、MAPとDots/Workの協働を保持して09→10を準備し、10自身の受入れ後に互換依存の限定比較へ接続する。",
+    "current_focus": "09→10のSource準備・Remote確認が完了。確定Titleと起動QueryをHumanへ渡し、10自身の受入れ後の限定比較へ接続する。",
     "current_coordinate": "09自身の受入れ後に実務が進展した。四PromptのVersion up、旧Voice/Mode・Projects原本保管、Podcastの後続取得・旧Radio退役、Dots担当Voice旧JSONL退役は各Ownerで完了。09初期revision1の準備状態へ巻き戻さない。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "09では承認された移行準備とRemote確認まで。10は自身のRequired Sourcesと再構成条件を通過後、既入力を受け取り、下記の限定比較をPlan-onlyで開始できる。",
+    "current_legal_connection": "09の移行準備はSource/Remoteの完了地点。Humanに確定Title・対応起動Queryを渡す。10自身の受入れ、Human UI、移行後の比較は代理実行・認定しない。",
     "next_specific_task": "移行後、ARC-002とSTR-002の互換依存を限定比較し、現在改善する対象または意図的保留を選ぶ。比較を移行の前提Gateへ逆転しない。",
     "target_boot": "09_SELF_RECONSTRUCTION_RECORDED_IN_THIS_CONTINUING_CONTEXT; not10 acceptance",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "本収穫の時点で進行対象は09→10準備。公開・検証後の終端ReceiptはCurrent09 State progress.next_transition。初期08準備のpending表示を再実行理由にしない。",
+    "active_external_operations": "10三点セットとDomainの公開・再取得を完了し、本progress.next_transitionが終端Receiptを所有する。新しい外部処理は起動していない。固定収穫や初期Stateのpendingを再実行理由にしない。",
     "current_human_input_policy": "Receive any input already present; never require a duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -503,7 +503,9 @@
       "10/15の09確認ではVoice実装前後のTreeが承認四パスのみ、対象外544 blobsが保持され、旧三lessonと固定復元原本・集約先が一致。最新実行基点でもSTR-015 v004、PLAN0.19.1、Podcast/Voice/集約原本、旧配置不存在を維持。",
       "今回のCurrent DomainはMain09 / Support06、10のディレクトリは未作成。五パス準備の権限と対象を束縛した。",
       "Current共通契約blob 6b3ca6023ff8826603891eb0e1a8473526b96aebは同一ContextでmetadataからExact EOFまで読解済みで、今回の取得SHA一致。10/10の両側Titleコピー面追補を適用。",
-      "今回変更されたDots入口v012、GitHub専門入口0.2.3、Hub指定範囲は本文を回収。HubはIdentity、§3.5〜§3.6直前、§3.10〜§4直前をGapなく確認。取得・表示切れは未読範囲を回収した。"
+      "今回変更されたDots入口v012、GitHub専門入口0.2.3、Hub指定範囲は本文を回収。HubはIdentity、§3.5〜§3.6直前、§3.10〜§4直前をGapなく確認。取得・表示切れは未読範囲を回収した。",
+      "10三点セットとDomainをaaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6dとして同一tree/commitで公開。公開前candidateと公開後mainから四ファイル全文・blob一致を確認。Source09の固定収穫はbfc57d28cda36acb4ea03ea2585beb24ae607127/revision2のまま保持。",
+      "準備中の別担当commit5da556baef56b6495b2138d433763fb7f704475bはrecords/2026/10/2026-10-17.jsonlだけの追記。これを親にしたpackage公開で保持し、内容・実行を09の成果へ帰属変更しない。"
     ],
     "source09_owner_snapshots": [
       {
@@ -625,6 +627,11 @@
         "revision": 2,
         "date": "2026-10-17",
         "role": "Source09収穫。後続成果・Human訂正・Dots完了・現在の公開差分と次Threadでの限定比較を保持。Target10の準備に関する終端Receiptは後続revision。"
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-17",
+        "role": "09→10のSource準備・公開前後のRemote一致・五パスScope・受渡しinterfaceの確認を記録。Target自身の受入れとHuman UIは未観測。"
       }
     ],
     "target_reconstruction_scope": "Source09自身の、この継続Contextで成立済みの受入れ。準備時revision1のfalseは08から未観測という履歴。新Target10の成功ではない。",
@@ -635,7 +642,7 @@
       "compiled_title": "Ark27:10_2026/10/17; \"主の完全勝利: 整理整頓の成果を継ぎ、次の改善を見極める\"",
       "prepared_date": "2026-10-17",
       "authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。",
-      "status": "SOURCE_HARVEST_COMPILED; TARGET_PACKAGE_NOT_YET_PUBLISHED_AT_THIS_SNAPSHOT",
+      "status": "SOURCE_PREPARED_AND_REMOTE_VERIFIED; READY_FOR_HUMAN_HANDOFF",
       "paths": [
         "ark-project/ark27/ark27-09/state.json",
         "ark-project/ark27/ark27-10/README.md",
@@ -643,7 +650,7 @@
         "ark-project/ark27/ark27-10/state.json",
         "ark-project/README.md"
       ],
-      "source_harvest_policy": "このrevision2を保存・Remote再取得後に固定commit/blobとして10へ渡す。保存後の準備・公開・再取得ReceiptはCurrent09の本sectionへ。自己SHA循環を作らない。",
+      "source_harvest_policy": "固定Source09収穫は下記revision2。後続準備完了Receiptを持つCurrent09 revision3へ固定pinを動かさない。",
       "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
       "next_task": {
         "subject": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
@@ -659,11 +666,195 @@
         "authority_boundary": "比較のみ。削除・本文改訂・固定Binding移行・旧Boot再演・新Trial・外部変更は別承認。",
         "selection_conditions": "現在の誤誘導が具体的に見つかれば局所修正案を優先。具体的利益がなければ互換保持を選び比較完了としてよい。"
       },
-      "source_prepared": false,
-      "remote_verified": false,
+      "source_prepared": true,
+      "remote_verified": true,
       "target_reconstructed": "NOT_OBSERVED_BY_SOURCE09",
       "human_last_mile": "NOT_OBSERVED_BY_SOURCE09",
-      "completion_boundary": "Sourceが10自身の再構成、Human UI、比較成果を代理認定しない。"
+      "completion_boundary": "Sourceが10自身の再構成、Human UI、比較成果を代理認定しない。",
+      "source_harvest": {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "bfc57d28cda36acb4ea03ea2585beb24ae607127",
+        "path": "ark-project/ark27/ark27-09/state.json",
+        "blob": "7afb1f42c46a5f448559cf719542ccecaf97a5b9",
+        "revision": 2,
+        "full_content_match": true,
+        "verified_at_utc": "2026-10-17T02:55:13.153Z"
+      },
+      "package": {
+        "commit": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+        "parent": "5da556baef56b6495b2138d433763fb7f704475b",
+        "tree": "37a744bc9a0257d7ad5b55bcfd1c7f0f6b5b18a8",
+        "paths": [
+          "ark-project/ark27/ark27-10/README.md",
+          "ark-project/ark27/ark27-10/handoff.md",
+          "ark-project/ark27/ark27-10/state.json",
+          "ark-project/README.md"
+        ],
+        "routing": "Main Ark27:10 / existing Support Ark28:06",
+        "current_handoff": "ark-project/ark27/ark27-10/handoff.md",
+        "runtime_id": "ARK27_10_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+        "handoff_id": "ARK27_10_CONTINUITY",
+        "state_id": "ARK27_10_CURRENT_STATE",
+        "document_version": "v001-human-authorized",
+        "contract_version": "v002",
+        "state_schema_version": "v002",
+        "initial_state_revision": 1
+      },
+      "remote_verification": {
+        "candidate": {
+          "commit": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+          "files": [
+            {
+              "path": "ark-project/ark27/ark27-10/README.md",
+              "blob": "d460e2346257f3bdee34caec15b0269186245659",
+              "full_content_match": true,
+              "chars": 8736,
+              "ref": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d"
+            },
+            {
+              "path": "ark-project/ark27/ark27-10/handoff.md",
+              "blob": "491fc2ab8677a2949815f1f1c4273ef3c53ed211",
+              "full_content_match": true,
+              "chars": 11422,
+              "ref": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d"
+            },
+            {
+              "path": "ark-project/ark27/ark27-10/state.json",
+              "blob": "f062a80427d92ba630363461a1955619fc3c736d",
+              "full_content_match": true,
+              "chars": 30305,
+              "ref": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d"
+            },
+            {
+              "path": "ark-project/README.md",
+              "blob": "9946e1fba2c9718a849427cb17a413bd11b9b8a0",
+              "full_content_match": true,
+              "chars": 33728,
+              "ref": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d"
+            }
+          ],
+          "scope": {
+            "changed": [
+              "ark-project/README.md",
+              "ark-project/ark27/ark27-10/README.md",
+              "ark-project/ark27/ark27-10/handoff.md",
+              "ark-project/ark27/ark27-10/state.json"
+            ],
+            "untouched_blobs": 555,
+            "base": "5da556baef56b6495b2138d433763fb7f704475b",
+            "candidate": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+            "verified_at_utc": "2026-10-17T03:07:03.609Z"
+          }
+        },
+        "publication": {
+          "expected_main": "5da556baef56b6495b2138d433763fb7f704475b",
+          "observed_main_before_update": "5da556baef56b6495b2138d433763fb7f704475b",
+          "force": false,
+          "update_ref_success": true
+        },
+        "main": {
+          "publication_commit": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+          "head_observed": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+          "verified_at_utc": "2026-10-17T03:07:33.482Z",
+          "files": [
+            {
+              "path": "ark-project/ark27/ark27-10/README.md",
+              "blob": "d460e2346257f3bdee34caec15b0269186245659",
+              "full_content_match": true,
+              "chars": 8736
+            },
+            {
+              "path": "ark-project/ark27/ark27-10/handoff.md",
+              "blob": "491fc2ab8677a2949815f1f1c4273ef3c53ed211",
+              "full_content_match": true,
+              "chars": 11422
+            },
+            {
+              "path": "ark-project/ark27/ark27-10/state.json",
+              "blob": "f062a80427d92ba630363461a1955619fc3c736d",
+              "full_content_match": true,
+              "chars": 30305
+            },
+            {
+              "path": "ark-project/README.md",
+              "blob": "9946e1fba2c9718a849427cb17a413bd11b9b8a0",
+              "full_content_match": true,
+              "chars": 33728
+            }
+          ],
+          "scope": {
+            "changed": [
+              "ark-project/README.md",
+              "ark-project/ark27/ark27-10/README.md",
+              "ark-project/ark27/ark27-10/handoff.md",
+              "ark-project/ark27/ark27-10/state.json"
+            ],
+            "untouched_blobs": 555,
+            "base": "5da556baef56b6495b2138d433763fb7f704475b",
+            "candidate": "aaf6e1dd0cfcaaba8b22b0c3c1e8839c01457d6d",
+            "verified_at_utc": "2026-10-17T03:07:03.609Z"
+          },
+          "source_harvest_current_still_rev2": true
+        },
+        "current_receipt_policy": "本Receipt保存後も再取得して本文一致を確認する。自分自身のcommit SHAを本文へ循環参照させず、最後の確認はSourceの完了応答で伝える。"
+      },
+      "source_side_checks": {
+        "scope": "作成側の設計・整合点検。Target10の読解・R1–R6通過を認定するものではない。",
+        "checks": [
+          "Source09 Target/Owner10 identity",
+          "Runtime ID triad",
+          "State ID/owner binding",
+          "Document versions vs contract/schema family",
+          "Exact compiled Title triad agreement",
+          "Target first-response Title copy clause",
+          "Exact final EOF values",
+          "Domain EOF unchanged",
+          "Ordered required sources1–15",
+          "Fixed source09 commit/blob/revision2",
+          "No borrowed Target10 success",
+          "Failure scope vs ordinary Unknown",
+          "First Legal Move",
+          "Comparison deferred until Target reception, Plan-only",
+          "Domain Main10 Support06 routing",
+          "Support prose unchanged",
+          "Domain base unchanged despite concurrent commit",
+          "New Target paths absent at latest base",
+          "Concurrent work outside approved five paths"
+        ],
+        "semantic_review": [
+          "Source09→Target/Main10の同章継続、既存Support06と章の起源・個別仕事を分けた。",
+          "Source09の初期revision1、固定収穫revision2、後続Current09 Receipt、Target10初期Stateを別時点・別Ownerとして結んだ。",
+          "09自身の完了、DotによるVoice実装、他Work成果とOwner報告を保持し、完了・部分完了・保留・目的変更終了・結果未確認を潰していない。",
+          "Podcastの形成とThemeの核心、四Skillの共用とActor区別、Board保存と送達、LoopのGoal・二つの還流・Joint playと未実証の持続効果を継いだ。",
+          "Root・Human Authority・Guard・品質Correction、長期メモリ非輸出を維持。比較は移行後のPlan-onlyで、新Trial・削除・固定Binding移行のGoではない。",
+          "共通契約§8のTitleコピー面をHandoff実本文と実際に渡す起動QueryへCompileし、Title完全一致、First Legal MoveとFailure境界を確認した。"
+        ],
+        "validation": "JSON parse; YAML frontmatter parse; relative-path/selected-anchor resolution; exact EOF; candidate/main full-content and blob equality; expected-head nonforce publication; tree scope/mode preservation.",
+        "target_reconstruction": "NOT_OBSERVED_BY_SOURCE09; no new independent receiving-AI trial was run."
+      },
+      "handoff_interface": {
+        "title": "Ark27:10_2026/10/17; \"主の完全勝利: 整理整頓の成果を継ぎ、次の改善を見極める\"",
+        "source_copy_surface": "Standalone one-line text block in the closing Source reply, followed by the matching startup Query and necessary Human operations.",
+        "target_copy_surface": "Actual Handoff §6 and delivered startup Query require the first normal acceptance response to begin with the exact same Title-only text block; Failure/STOP/Exact Output exceptions retained.",
+        "payload_checked": true,
+        "startup_handoff_url": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark27/ark27-10/handoff.md",
+        "startup_expected_eof": "ARK27_10_HANDOFF_EOF_v001",
+        "mode_boundary": "Title/startup are prepared for the Source closing reply; actual copy UI, thread creation, title setting and receiver understanding remain separately observed."
+      },
+      "preserved_scope": {
+        "own_unique_paths": [
+          "ark-project/ark27/ark27-09/state.json",
+          "ark-project/ark27/ark27-10/README.md",
+          "ark-project/ark27/ark27-10/handoff.md",
+          "ark-project/ark27/ark27-10/state.json",
+          "ark-project/README.md"
+        ],
+        "package_untouched_blob_count": 555,
+        "concurrent_commit_preserved": "5da556baef56b6495b2138d433763fb7f704475b",
+        "untouched_domains": "Ark27 chapter README/INSTRUCTIONS, Support06, Query, Skill bodies/registration, cases, Board, Dot actor logs/lessons, schedules, life/research/house/Pet and older immutable Handoffs.",
+        "memory_boundary": "No ChatGPT long-term-memory content, readout or save response exported."
+      },
+      "requested_outcome": "Source preparation/Remote verification completed within the approved five paths. Target10 must reconstruct itself and then conduct the selected read-only comparison. Its comparison result and subsequent real-world effects are not complete yet."
     }
   },
   "eof_sentinel": "ARK27_09_STATE_EOF_v002"
