@@ -1,0 +1,14 @@
+interface:
+  display_name: Resolve GitHub Runtime
+  short_description: Classify GitHub plugin, skill, and connector state
+  default_prompt: Use $resolve-github-runtime to resolve the current GitHub runtime
+    and choose the safe legal execution mode.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
