@@ -1,0 +1,75 @@
+:root{--paper:#fffefa;--page:#f0f3ef;--ink:#243b36;--muted:#60726b;--line:#d5e0d9;--accent:#246451;--wash:#eaf3ec;--code:#f1f4f2;--size:17px;color-scheme:light}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--page);color:var(--ink);font-family:"Reading Hebrew",-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;font-size:var(--size);line-height:1.95;overflow-wrap:anywhere}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:.2em}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid #b86b20;outline-offset:4px}
+button,summary,a{touch-action:manipulation}
+button{font:inherit;font-size:.82rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:.35rem .65rem;cursor:pointer;min-height:40px}
+button:hover{background:var(--wash)}
+.layout{max-width:1280px;margin:auto;display:grid;grid-template-columns:245px minmax(0,1fr);gap:32px;padding:34px 28px 80px}
+.layout.no-toc{display:block;max-width:1000px}
+.rail{min-width:0}
+.toc{position:sticky;top:1rem;max-height:calc(100vh - 2rem);overflow:auto;font-size:.8rem;padding:4px 10px 14px 0}
+.toc summary{font-weight:750;color:var(--accent);cursor:pointer;padding:.35rem 0}
+.toc ol{list-style:none;padding:0;margin:.75rem 0}
+.toc li{margin:.15rem 0;line-height:1.65}
+.toc a{display:block;text-decoration:none;padding:.38rem .6rem;border-left:2px solid transparent;border-radius:0 5px 5px 0}
+.toc a:hover,.toc a[aria-current]{background:var(--wash);border-left-color:var(--accent)}
+.paper{background:var(--paper);border:1px solid var(--line);border-radius:16px;min-width:0;padding:clamp(22px,4vw,55px);box-shadow:0 8px 34px #25483407}
+article{min-width:0}
+article>*:first-child{margin-top:0}
+h1,h2,h3,h4,h5,h6{line-height:1.5;overflow-wrap:anywhere;scroll-margin-top:1rem}
+h1{font-size:clamp(1.6rem,2.8vw,2.3rem);letter-spacing:.015em;margin:0 0 1.5rem;line-height:1.5}
+h2{font-size:1.35rem;margin:2.7rem 0 1.2rem}
+h3{font-size:1.12rem;margin:2.1rem 0 .9rem;color:var(--accent)}
+h4,h5,h6{font-size:1rem;margin:1.6rem 0 .7rem}
+p{margin:1.1em 0}
+strong{font-weight:750}
+li{margin:.45rem 0}
+li p{margin:.5rem 0}
+ul,ol{padding-left:1.6rem}
+blockquote{margin:1.5rem 0;padding:.4rem 1.3rem;border-left:4px solid #51836c;background:var(--wash);border-radius:0 9px 9px 0}
+blockquote p{margin:.6rem 0}
+pre,code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.88em}
+code{background:var(--code);padding:.12em .32em;border-radius:4px}
+pre{max-width:100%;overflow:auto;background:var(--code);padding:1.15rem;border:1px solid var(--line);border-radius:10px;line-height:1.7;tab-size:4}
+pre code{background:none;padding:0;font-size:1em;white-space:pre;overflow-wrap:normal}
+.table-scroll{max-width:100%;overflow:auto;margin:1.7rem 0;border:1px solid var(--line);border-radius:10px;overscroll-behavior-x:contain}
+table{border-collapse:collapse;width:100%;min-width:32rem;font-size:.88em;line-height:1.8}
+th,td{border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:.85rem 1rem;vertical-align:top;text-align:left;min-width:7rem}
+th{background:var(--wash);font-weight:750}
+th:last-child,td:last-child{border-right:0}
+tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:#f8faf6}
+td p{margin:.2rem 0}
+img{max-width:100%;height:auto}
+.diagram{border:1px solid var(--line);border-radius:12px;padding:1.1rem;margin:1.75rem 0;background:#fff}
+.diagram-view{overflow:auto;text-align:center;max-width:100%}
+.diagram-view svg{display:block;margin:auto;max-width:100%;height:auto}
+.diagram summary{font-size:.8rem;cursor:pointer;color:var(--muted)}
+.diagram details pre{font-size:.75rem;text-align:left}
+.diagram-status{font-size:.8rem;color:var(--muted);margin:.4rem 0}
+.diagram-fit{font-size:.75rem;margin:.25rem 0 .7rem}
+.footnote-ref{font-size:.72em;padding:.05rem .1rem;white-space:nowrap}
+.footnotes{font-size:.88em;color:var(--muted)}
+.footnotes li{padding:.4rem 0 .9rem;scroll-margin-top:1rem;border-bottom:1px solid var(--line)}
+.footnote-back{display:inline-flex;flex-wrap:wrap;max-width:100%;gap:.55rem;font-size:.78rem}
+.source-metadata{font-size:.8rem;margin-top:2.5rem;border-top:1px solid var(--line);padding-top:1rem;color:var(--muted)}
+.source-metadata summary{cursor:pointer;font-weight:650}
+.source-metadata pre{white-space:pre-wrap}
+.skip{position:absolute;left:12px;top:-80px;background:var(--paper);padding:.6rem;z-index:30}
+.skip:focus{top:12px}
+@media(max-width:800px){.layout{display:block;padding:15px 12px 48px}.toc{position:static;max-height:48vh;padding:8px 12px;margin-bottom:12px;background:var(--paper);border:1px solid var(--line);border-radius:10px}.paper{padding:25px 20px;border-radius:12px}button{padding:.25rem .5rem}h1{font-size:1.65rem}h2{font-size:1.23rem;margin-top:2.5rem}h3{font-size:1.08rem}table{font-size:.82em}.diagram{padding:.65rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{.diagram-fit{display:none!important}.diagram-view svg{max-width:100%!important}}
+@media print{html{scroll-behavior:auto}body{background:white;font-size:10.5pt;color:#111}.rail,.skip,.diagram[data-rendered="true"] details,.footnote-back{display:none!important}.layout{display:block;padding:0;margin:0;max-width:none}.paper{border:0;padding:0;box-shadow:none}h1,h2,h3{break-after:avoid}blockquote,.diagram,pre{break-inside:avoid}.table-scroll{overflow:visible;border:0}table{min-width:0;font-size:8pt}th,td{min-width:0;padding:5pt}thead{display:table-header-group}a{color:inherit}.diagram-view{overflow:visible}pre{white-space:pre-wrap}pre code{white-space:pre-wrap}}
+
+hr{border:0;border-top:1px solid var(--line);margin:2.2rem 0}
+hr+h2{margin-top:0}
+.hebrew-block{direction:rtl;text-align:right;font-family:"Reading Hebrew","SBL Hebrew","Noto Serif Hebrew","Times New Roman",serif;font-size:1.35em;line-height:2;overflow-wrap:normal}
+.hebrew-block p{margin:.5rem 0}
+td .hebrew-block{font-size:1.25em;line-height:1.8}
+.wide-table table{min-width:72rem}
+@media print{.wide-table table{min-width:0}.wide-table th,.wide-table td{min-width:0!important}.hebrew-block{font-size:1.25em}}

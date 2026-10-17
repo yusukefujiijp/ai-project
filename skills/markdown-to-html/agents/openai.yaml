@@ -1,0 +1,13 @@
+interface:
+  display_name: Markdown to HTML
+  short_description: Markdownの本文・出典・関係を保ち、辿りやすいHTMLに変換
+  default_prompt: $markdown-to-html を使い、このMarkdownの内容と出典を保ちながら、スマートフォンでも読みやすいHTMLを作成してください。
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
