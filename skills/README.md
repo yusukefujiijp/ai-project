@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.37.0
+version: v0.37.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: resolve-github-runtimeの共有原本・登録不在時の入口と改訂根拠を追加
+updated_reason: resolve-github-runtimeの共有・登録先保存と新しい独立文脈での登録本文一致を確認
 ---
 # Ark Shared Skills Hub
 
@@ -626,7 +626,9 @@ GitHubの接続・手順・環境の不整合を確認し、現在の依頼で�
 
 **確認範囲。** 形式検査を通過し、元会話・期待回答を渡さない二つの独立文脈で、計七つの仮想条件への回答を確認しました。metadata不足、手順書だけが存在する環境、Plan-only、欠落した必読手順、404の対象誤り、結果不明、登録機構のない非Ark環境を扱いました。実際の外部操作を行わない限定確認であり、自然な自動選択、全AI互換性、実生活効果を実証していません。
 
-共有原本の三ファイルとこの入口を同じ更新で公開します。登録先への反映と、共有・登録先の再取得照合は後続確認です。保存確認後にこの段落へ実際の結果を追記します。
+**保存と取得の確認（2026-10-17）。** [共有更新 commit `f41e340`](https://github.com/yusukefujiijp/ai-project/commit/f41e3404efb358c9dc5c9eb589e2d410e0392a00)で、三ファイルと本入口をmainへ保存し、Remote再取得による全文一致を確認しました。改訂前の三ファイルも、上記の固定保存版から再取得して一致を確認しました。既存の同じ登録物へ反映し、登録先RemoteでSKILL.mdとアイコンはバイト一致、表示設定はYAMLとして全値の一致を確認しました。表示設定には保存先による引用符・インデントの整形差があり、バイト一致とは区別します。
+
+継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を全文取得できました。その取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（4,084文字、blob `ea24db4b740630b1b7a913380e2f0ac9d8cfac69`、SHA-256 `a4e10d3534afff288dfb3bab612da949b1133955dbbbff801e2db06ae23a15ca`）。本文・表示設定の保存と新しい文脈での取得を確認した結果であり、旧本文が返った原因・全会話への反映時点・実際のUI描画・自然発動・全環境の挙動まで確認したものではありません。
 
 ## 4. Source and distribution
 
@@ -773,4 +775,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.37.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.37.1
