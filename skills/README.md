@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.37.1
+version: v0.37.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: resolve-github-runtimeの共有・登録先保存と新しい独立文脈での登録本文一致を確認
+updated_reason: visualize-patchの標準Queryを目的・AIの裁量・表示と検証が伝わる形へ更新
 ---
 # Ark Shared Skills Hub
 
@@ -455,18 +455,24 @@ Humanは2026-10-13のPlan Modeによる計画提示後、GitHubと既存Skillの
 
 **2026-10-14の後続接続。** 上記の改訂前本文取得は10月13日の当該会話の観測である。Ark27:09で確認したTheme拡張版の取得と、旧Radio配置の退役・復元条件は[§1.3](#skills-lessons-migration)へ接続する。今回この節のコピー用Query・Skill本文・過去の試験記録は変更していない。
 
+<a id="visualize-patch-query"></a>
+
 ### 3.12 Visualize Patchの共通入口
 
-長い指示を毎回貼らず、必要な意味を持つ短い入口から、共通方針・環境差・重大な表示不具合への条件付き補正へ接続します。
+現在の依頼・文脈を入口に、AIへ設計から提示まで委ねる標準Queryです。可視化の共通方針・環境差・表示基準は現行のSkill本文へ接続します。
 
 ```text
-$visualize-patch を使い、現在の依頼・会話・資料・Feedbackから、最も価値のある可視化を設計・作成・検証して提示してください。確認済みと未確認を区別してください。
+$visualize-patch スキルを使い、現在の依頼・会話・資料・私のFeedbackを踏まえ、今この文脈で最も価値のある可視化を設計・作成・検証し、会話内で利用可能な形で提示してください。
+
+何を可視化し、どの問いや関係を深めるか、図の種類・構成・情報の階層・必要な操作はAI側で判断してください。有望な新しい見方も探索し、重要な意味を保ちながら、理解・比較・発見・判断につながる表現を完成させてください。通常の設計判断は進め、重要で解決できない未確定事項だけ確認してください。
+
+日本語とiOS縦画面での読みやすさを重視し、表示経路・環境別の条件は現行SKILL.mdに従ってください。図から何が分かるか、必要ならどこを操作すると理解が深まるかを添え、確認済みと未確認を区別してください。
 
 Skillを呼び出せない場合は、次の共有原本を読んで適用してください。
 https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKILL.md
 ```
 
-本文は[visualize-patch/SKILL.md](visualize-patch/SKILL.md)が所有します。iOS縦画面・タッチ、重要文字の可読性、根拠と未知の区別を基本にし、問い・図・構成・操作方法はAIが選びます。共通の基本設定と重大障害の補正を分け、公式Visualize本体の複製や変更、全要素への一括色指定を前提にしません。新しいFeedbackは、必要な追加だけでなく統合・簡素化・補正の撤去へもつなげます。
+共通方針・環境別の実行経路・文字サイズ等の具体的な表示基準は[visualize-patch/SKILL.md](visualize-patch/SKILL.md)が所有します。Queryへ数値や環境分岐を複製せず、本文の改訂を継承する構成です。iOS縦画面・タッチ、重要文字の可読性、根拠と未知の区別を基本にし、問い・図・構成・操作方法はAIが選びます。共通の基本設定と重大障害の補正を分け、公式Visualize本体の複製や変更、全要素への一括色指定を前提にしません。新しいFeedbackは、必要な追加だけでなく統合・簡素化・補正の撤去へもつなげます。
 
 公式Visualizeがある時は現行公式契約を読み、存在しない時は実際に利用できる方法を選びます。本文の読解、Skill登録、コード実行、会話内の対話型表示は別です。必須Sourceの取得失敗を機能不在へ読み替えず、静的代替を操作探索と同じ完成にしません。[AGENTSの環境接続](../AGENTS.md#41-runtime-and-skill-gate)の読取対象はArkの対話型可視化作成・修正と公式Visualize不在時の代替判断に絞り、普通の表・単純な図・引用や言及への一律適用を避けます。
 
