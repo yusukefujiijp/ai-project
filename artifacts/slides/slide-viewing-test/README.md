@@ -42,6 +42,8 @@ expected_eof: "EOF::SLIDE_VIEWING_TEST::v001"
 | 内容の保持 | PPTX再読み込み後の全文、改行、形状の位置・大きさ、背景、文字のフォント名・サイズ・太字・色が取得原本と一致 |
 | 表示 | 元と同じNoto Sans CJK JPのRegular/Boldを検査環境へ読み込み、再読み込みしたPPTXの全三枚をPNG化して目視確認。日本語の欠落・はみ出しなし |
 | フォントの注意 | 最初は検査環境の日本語フォント不足で本文が見えなかった。元フォントの読み込みで解消し、PPTX自体は変更していない。PPTXにフォントは埋め込んでいないため、他端末での置換や差異は残り得る |
+| GitHub保存 | [初回保存commit](https://github.com/yusukefujiijp/ai-project/commit/2f47b6391c41e63e487e0beeb6effd92bdccb86a)の全六ファイルをGitHubから再取得し、ローカルとバイト一致を確認。既存作品フォルダのtree SHAも不変 |
+| 公開ダウンロード | Cookie・認証情報を指定しないHTTP取得で、上のPPTXリンクがHTTP 200、25,896 bytesを返すことを確認。ダウンロードしたPPTXのSHA-256も一致。ChatGPTログインを経由していない |
 | 未確認 | YusukeJPのiPhoneでの取得、表示、ページ送り。PowerPoint／Keynote等での実行確認。Web版公式ダウンロードとのバイト一致 |
 
 次の実地確認は、上のPPTXリンクをiPhoneで開き、**日本語を含む三枚が、編集操作なしで順番に見られるか**を試すこと。保存成功と、このHuman側の閲覧成功は分けて扱う。
