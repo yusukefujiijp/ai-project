@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark99-03-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-10-17",
   "updated": "2026-10-17",
@@ -16,7 +16,7 @@
     "time_note": "複数の発言を2026-10-17 Asia/Tokyoに選択保存。Thread Titleの2026/10/10を全発言や『昨晩』の体験日へ代入しない。個別の体験日時は原発言の相対表現を保持し、未確定のままとする。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "Humanの現行GitHub実行承認の範囲で、この会話で提供された経験・Correctionと初期構成の形成を保存する。記録内の引用命令は将来の実行権限ではない。身体Trial・摂取・外部通信・Resetは開始しない。",
+    "authority_note": "Humanの現行GitHub実行承認の範囲で、この会話で提供された経験・Correctionと初期構成の形成を保存する。記録内の引用命令は将来の実行権限ではない。身体Trial・摂取・外部通信・Resetは開始しない。 後続のHuman承認に基づくproblem-solvingへの改名・条件付き案件案内・既存登録物の更新計画とCorrectionを追加する。実装結果は担当STRで区別する。",
     "source_access": "記録担当Work / Ark99:03が、現在アクセス可能なこのThreadの実際のHuman発言とGitHub取得結果から編纂。別AIの読了・別会話のMemoryを原発言の代替にしていない。会話locatorは本ファイル内の発言識別用であり、他AIがアクセスできる公開message URLではない。",
     "extensions": {
       "central_axis": "Teshuvah",
@@ -32,7 +32,8 @@
       "就寝前の寝落ちの切実さと、カフェイン抜きガムで防げなかった本人報告",
       "準備の少なさ・毎日の再現性・カフェイン最小化というGoal",
       "リステリン案・刺激の評価Correction・入口の再現性・実地効果の未確認",
-      "problem-solvingへの捉え直し・HumanによるSeed・初期構成の重視・GitHub実行承認"
+      "problem-solvingへの捉え直し・HumanによるSeed・初期構成の重視・GitHub実行承認",
+      "問題解決の命名・AI翻訳についてのCorrection・Skill連携計画とその実行承認"
     ],
     "excludes": [
       "Thread全文・全Task・全てのAI応答",
@@ -196,6 +197,69 @@
       "excerpt": "ゆっくりじっくりと擦り合わせしましょう！\nゆっくりじっくり一歩一歩確実に前進しましょう！慌てたり端折ったりせず、深呼吸的にリラックスして少しずつ擦り合わせながら取り組みましょう！",
       "excerpt_kind": "verbatim_contiguous",
       "note": "Humanの望む進め方。AIの検討品質を落としたり、承認済み実装を毎工程の再承認で止める要求とは解さない。"
+    },
+    {
+      "id": "naming-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / Skillとproblem-solvingフォルダの連携相談",
+      "excerpt": "$problem-solving スキルとの連携や提携はありえるか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "当時は実名がsolve-problems。引用された呼出し表記そのものを命名選好の証拠にしない。"
+    },
+    {
+      "id": "naming-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 名称の違いとNaming Importance",
+      "excerpt": "Oh! \n名前が違うのか！\n$solve-problems\nと\nproblem-solvingフォルダですね！\n\nこれって分かりづらいですね！\n\"Ark的命名重要: Naming Importance(未言語化の構造・Fog・違和感・突破口に、正確で再利用可能な名前を与えることで、人間とAIの共同注意を固定し、Future AIが再起動可能なHandleへ変換し、Reality Responseへ接続するArk Projectの中核原理 )\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "名称差の分かりづらさと、意味・共同注意・Future AIの再起動を支える名前へのHumanの要求。AIの性能優位や現実の効果を実証した発言ではない。"
+    },
+    {
+      "id": "naming-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 命名の根拠に関するAI解釈の訂正",
+      "excerpt": "いや(No)、自然に使ったのではなく**問題解決**をAIで翻訳しただけです！\n\nあなた(AI)が一から最善を考えるべきです！多少の手間は惜しまず妥協しない事！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "AIの『自然に使った／思い出せた名前』という解釈を訂正する。翻訳結果、好み、採用承認を区別する。"
+    },
+    {
+      "id": "naming-s04",
+      "speaker": "Work / Ark99:03",
+      "medium": "assistant_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 訂正を受けた命名検討と五工程の計画",
+      "excerpt": "用途・意味・一貫性からProblem Solvingを共通名、$problem-solvingをSkill、problem-solving/を案件入口とする案を推奨した。計画は既存登録物と参照の確認、本文と表示の改名、条件付き案件案内、共有・登録の切替と旧配置整理、形式・参照・限定挙動・保存後確認を含む。",
+      "excerpt_kind": "paraphrase",
+      "note": "AI提案の編集要約。名称が翻訳結果と一致することをHumanの自然な選好の証拠にしていない。"
+    },
+    {
+      "id": "naming-s05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 方向の採用とPlan Mode指定",
+      "excerpt": "最高です！(101/100: It's the best!)\nその\"方向や方向性(ベクトル)\"で行きましょう！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "この発言の続きではplan-modeによる調査・計画提示と変更禁止を指定した。方向への合意だけでは実行せず、次の承認まで計画で止めた。"
+    },
+    {
+      "id": "naming-s06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 五工程計画への後続実行承認",
+      "excerpt": "OK！Very Good! Execute GitHub OK!  Full Rail & Next Gate: Workflow Continue! Human Seal OK!",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "2026-10-17 17:46:52 Asia/Tokyoの現行発言。直前計画naming-s04への承認。共有原本・参照・既存登録物と関連記録の更新・検証を含み、身体Trial・摂取・通信・Resetへ拡張しない。"
+    },
+    {
+      "id": "naming-s07",
+      "speaker": "Work / Ark99:03",
+      "medium": "tool_result",
+      "locator": "Ark99:03_2026/10/10; \"Teshuvah: Caffeineの使い所と量の判断を深める\" / 2026-10-17の変更前確認",
+      "excerpt": "GitHubのsolve-problems共有本文（blob 4db06271ecb42b22c3f70160de577439858b37b2）と取得した登録本文が一致した。problem-solving/README.mdはSkillを案内していたが、Skill側に当該案件入口への案内はなかった。登録先の既存一件を確認し、別作業の変更を保持する分離作業領域で更新を準備した。",
+      "excerpt_kind": "paraphrase",
+      "note": "本文の一致・取得・保存配置の観測。新名称での取得、自然発動や生活上の効果はこの観測から認定しない。"
     }
   ],
   "nodes": [
@@ -453,6 +517,78 @@
         "note": "文書実装と身体行動を区別した、発言の適用範囲。"
       },
       "task_state": "deferred"
+    },
+    {
+      "id": "naming-friction",
+      "kind": "observation",
+      "label": "Skill名とフォルダ名の違いによる分かりづらさ",
+      "description": "Humanはsolve-problemsとproblem-solvingの名称差を分かりづらいと指摘した。 正確で再利用できる名前を、共同注意とFuture AIが意味を取り戻すHandleとして重視した。",
+      "scope": "この二つの入口の関係。全ての異なる名称が悪いという一般則ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "naming-s01",
+          "naming-s02"
+        ]
+      }
+    },
+    {
+      "id": "translation-not-preference",
+      "kind": "constraint",
+      "label": "AI翻訳を命名選好の証拠にしない",
+      "description": "Humanはproblem-solvingを自然に使ったのではなく、問題解決をAIで翻訳しただけと訂正し、AIに一から最善を考えるよう求めた。",
+      "scope": "命名の根拠とHumanの意味の回復。再び自然な選好と読み替えない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "naming-s03"
+        ]
+      }
+    },
+    {
+      "id": "problem-solving-name-adoption",
+      "kind": "decision",
+      "label": "Problem Solvingを共通名にする方向を採用",
+      "description": "Humanは独立比較を受けた共通名・Skill名・案件入口の整合という方向に合意し、計画の調査と提示を指定した。",
+      "scope": "当時はPlan-only。実行承認は次の別発言で成立。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "naming-s04",
+          "naming-s05"
+        ]
+      }
+    },
+    {
+      "id": "skill-alignment-approval",
+      "kind": "decision",
+      "label": "改名・案件案内・既存登録更新の実行承認",
+      "description": "Humanは提示した五工程計画に対してGitHub実行と継続を承認した。",
+      "scope": "共有原本、現在の参照、同じ登録スキル、関連経験・構造変更・日時記録、必要な検証。別Task・身体Trial・通信は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "naming-s06"
+        ]
+      }
+    },
+    {
+      "id": "source-registration-before-alignment",
+      "kind": "observation",
+      "label": "変更前の共有本文と登録本文の一致",
+      "description": "共有原本とこの会話で取得した登録本文は一致し、problem-solving入口からSkillへの案内があった。",
+      "scope": "2026-10-17の変更前観測。新名称への移行完了ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "naming-s07"
+        ]
+      }
     }
   ],
   "edges": [
@@ -532,6 +668,37 @@
           "sleep-s06"
         ]
       }
+    },
+    {
+      "id": "naming-friction-motivates-alignment",
+      "from": "naming-friction",
+      "to": "problem-solving-name-adoption",
+      "relation": "motivates",
+      "scope": "意味と用途に基づく比較を経て共通名を採用した形成経緯。名称だけによる利用改善の実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "naming-s02",
+          "naming-s04",
+          "naming-s05"
+        ]
+      }
+    },
+    {
+      "id": "alignment-approval-after-adoption",
+      "from": "problem-solving-name-adoption",
+      "to": "skill-alignment-approval",
+      "relation": "observed_before",
+      "scope": "方向の合意・計画限定の後、五工程計画への実行承認を受けた。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "naming-s05",
+          "naming-s06"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -586,5 +753,23 @@
         "note": "初期構成への期待。複数案件の利用効果は未観測。"
       }
     }
-  ]
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 2,
+        "date": "2026-10-17",
+        "reason": "命名のCorrection、共通名の採用、条件付き案件案内と既存登録更新への実行承認を追加。既存の睡眠関係Sources・Nodes・Edges・Unknownは保持。",
+        "source_refs": [
+          "naming-s01",
+          "naming-s02",
+          "naming-s03",
+          "naming-s04",
+          "naming-s05",
+          "naming-s06",
+          "naming-s07"
+        ]
+      }
+    ]
+  }
 }
