@@ -1,12 +1,12 @@
 ---
 title: "Slides — スライド作品の制作・再利用"
 canonical_path: "artifacts/slides/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-17"
 updated: "2026-10-17"
 role: "Slide production and reuse guide"
 primary_reader: "Current AI / Future AI / Human"
-expected_eof: "EOF::ARTIFACTS_SLIDES::v001"
+expected_eof: "EOF::ARTIFACTS_SLIDES::v002"
 ---
 
 # Slides
@@ -51,10 +51,12 @@ ChatGPT Slidesなど、利用する環境の現行の公式手順・実際の機
 
 Feedbackでは、見栄えだけでなく「何が理解しやすくなったか」「何が邪魔だったか」を制作判断へ戻す。文章の方がよいという結果も有効な学びであり、毎回の改訂や新作品を義務にしない。
 
-## 初版の範囲
+## 制作資料への入口
 
-本書は制作・保存の案内であり、個別のスライド作品や、その完成・表示成功を示すものではない。作品が実際に保存された時に、その入口を追加する。
+- [残作業とGoal](remaining-work-and-goal/README.md)：公開Ark原本から構成した五枚の説明と根拠。個人用実物の公開や、その保存・表示成功を示すものではない。
+
+v002では上記の制作資料への入口を追加した。作品の現在状態と確認範囲は各作品の説明を確認する。
 
 この案内の存在を、スライド実物の作成・外部共有・定期生成の承認と扱わない。制作に進む場合は、その時点のHuman指定・現行資料・公開範囲に従う。
 
-EOF::ARTIFACTS_SLIDES::v001
+EOF::ARTIFACTS_SLIDES::v002
