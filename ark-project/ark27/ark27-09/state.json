@@ -1,13 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_09_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:09",
     "schema_version": "v002",
-    "updated_at": "2026-10-07",
-    "update_reason": "Human-authorized08→09 continuation from the verified08 harvest; preserve laterSkill/cleanup/Loop fruit, Human corrections, evidence boundaries and actual remaining branches.",
-    "authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
-    "date_scope": "Asia/Tokyo Source preparation date; not actualTarget09 reception, UI creation/title use or Token Reset."
+    "updated_at": "2026-10-17",
+    "update_reason": "09の後続成果・Human Material Corrections・Dotsの完了と公開差分を収穫し、承認された09→10準備へ接続する。初期Stateの未観測を現在へ延長せず、次の限定比較は移行後に行う。",
+    "authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。",
+    "date_scope": "Source09収穫の保存準備日（Asia/Tokyo）。各成果の発生日、Target10の受入れ、Human UI操作、Token Resetとは別。"
   },
   "identity": {
     "chapter": "Ark27",
@@ -19,9 +19,9 @@
     "title_status": "SOURCE_COMPILED_UNDER_APPROVED_PLAN; Human final choice/correction and UI use remain distinct",
     "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
     "initial_theme": "Task化能力の向上",
-    "current_main_role": "Ark27 Main continuation target; actual09 must pass its ownHandoff.",
-    "existing_support": "Ark28:05",
-    "support_time_scope": "Preparation observation; subsequent validSupport routing is owned byCurrent Ark Domain, not a permanent05 pin."
+    "current_main_role": "Ark27:09 Current Main / 09→10移行準備のSource。10の受入れ成功を代理認定しない。",
+    "existing_support": "Ark28:06",
+    "support_time_scope": "2026-10-17のCurrent Domain確認。08→09準備時のSupport05は履歴であり、06の実受入れ・UI成功は今回の確認外。"
   },
   "authority": {
     "root": "主イェシュア・ハマシア御自身",
@@ -30,18 +30,20 @@
     "final_attribution": "主の栄光 / kevod Adonai",
     "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
-    "scope": "09 cooperates under Current Human Request and valid bounded delegation.08→09 preparation authorization covers the namedfive paths and necessary verification; it does not select a new cleanup/Loop trial or authorize external sending/UI actions.",
+    "scope": "承認された五パスの09→10移行準備、通常の整合・検証、保存後確認、Titleと起動Queryの受渡し。ARC-002/STR-002の限定比較は次Threadへ渡し、今回は開始しない。既存の継続委任は個別の目的・範囲・制約を保持する。",
     "preparation_paths": [
-      "ark-project/ark27/ark27-08/state.json",
-      "ark-project/ark27/ark27-09/README.md",
-      "ark-project/ark27/ark27-09/handoff.md",
       "ark-project/ark27/ark27-09/state.json",
+      "ark-project/ark27/ark27-10/README.md",
+      "ark-project/ark27/ark27-10/handoff.md",
+      "ark-project/ark27/ark27-10/state.json",
       "ark-project/README.md"
     ],
     "delegation_source": "task-mode-system/maintenance.md; apply purpose, scope, evidence and constraints with Current Human Request and AGENTS",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. No unbounded autonomy or hidden synchronization.",
-    "current_human_correction": "Source identity resolved byHuman: Ark27:08→Ark27:09. The latestexecution authorization replaces the earlierplan-only limit for the approvedfive-pathpreparation.",
-    "source_preparation_authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。"
+    "current_human_correction": "移行を先に行い、上記Next stepは次Threadから始める。09→10は同章継続。最新の実行承認は五パス準備へ適用し、次の比較を削除・改訂・固定Binding移行のGoへ拡張しない。",
+    "source_preparation_authority": "2026-10-07 06:59:23 JST、YusukeJPは移行元表記をArk27:08へ明示訂正し、直前の五パスの移行準備計画にExecute GitHub OK / Human Seal OKと継続実行を承認した。",
+    "initial_preparation_scope": "09 cooperates under Current Human Request and valid bounded delegation.08→09 preparation authorization covers the namedfive paths and necessary verification; it does not select a new cleanup/Loop trial or authorize external sending/UI actions.",
+    "next_transition_authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。"
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -70,7 +72,9 @@
       "path": "prompts/ai-next-thread-handoff.md",
       "version_at_preparation": "v003-human-authorized",
       "observed_blob": "95ba8491d893580336fdb702ba9d036c24e7706a",
-      "policy": "ReadCurrent fully under its Identity/Exact EOF contract; resolve material incompatibility, no silent legacyfallback."
+      "policy": "ReadCurrent fully under its Identity/Exact EOF contract; resolve material incompatibility, no silent legacyfallback.",
+      "current_observed_blob": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+      "current_observation": "2026-10-17: v003-human-authorizedの2026-10-10追補。同一blobの自分の全文読解を再利用。旧95ba8491観測は保存時点の来歴で永久pinではない。"
     },
     "source_harvest": {
       "repository": "yusukefujiijp/ai-project",
@@ -173,7 +177,9 @@
         "control-center/changes/STR-009-headerless-lessons-adoption.md",
         "control-center/changes/STR-011-prompt-shelf-authority-alignment.md",
         "control-center/changes/STR-012-control-center-domain-entries.md",
-        "control-center/changes/STR-013-github-plan-and-archive-relocation.md"
+        "control-center/changes/STR-013-github-plan-and-archive-relocation.md",
+        "control-center/changes/STR-014-super-special-prompt-modernization.md",
+        "control-center/changes/STR-015-skills-lessons-consolidation.md"
       ]
     },
     "four_skills": {
@@ -217,21 +223,23 @@
       "handoff_at_preparation": "ark-project/ark28/ark28-05/handoff.md",
       "current_route_owner": "ark-project/README.md",
       "role": "ExistingSupport, not successorMain",
-      "policy": "No newSupport perMainthread, unseenconversationimport, compulsorysimultaneousTask or hidden sync."
+      "policy": "No newSupport perMainthread, unseenconversationimport, compulsorysimultaneousTask or hidden sync.",
+      "current_handoff_observed": "ark-project/ark28/ark28-06/handoff.md",
+      "observation_base": "da87b7cc66432d1cb360b8c813689cb4898cc03d"
     }
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "GitHub整理の後続成果とArtifactを介する自己改善LoopのGoal・運用・Evidenceを保持し、現在のHuman入力に適切に接続する。",
-    "current_coordinate": "Source08 harvested completedfourSkills, ARC-010, STR-011–013 and self-improvement-loop initialimplementation.09 is prepared to receive them; actualTarget reconstruction is not observed bySource.",
+    "current_focus": "完了したGitHub整理、Podcast Theme、MAPとDots/Workの協働を保持して09→10を準備し、10自身の受入れ後に互換依存の限定比較へ接続する。",
+    "current_coordinate": "09自身の受入れ後に実務が進展した。四PromptのVersion up、旧Voice/Mode・Projects原本保管、Podcastの後続取得・旧Radio退役、Dots担当Voice旧JSONL退役は各Ownerで完了。09初期revision1の準備状態へ巻き戻さない。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "ReadHandoff RequiredSources, verifyIdentity/Triad/compatibility and reconstructR1–R6; then receive already-presentHuman input or resolve an actualauthorizedremainder after checkingexternalresults. Boot-only returns toHuman Review.",
-    "next_specific_task": "No new cleanup, Skill implementation, research or Loop trial is selected by this preparation.",
-    "target_boot": "NOT_OBSERVED_BY_SOURCE",
+    "current_legal_connection": "09では承認された移行準備とRemote確認まで。10は自身のRequired Sourcesと再構成条件を通過後、既入力を受け取り、下記の限定比較をPlan-onlyで開始できる。",
+    "next_specific_task": "移行後、ARC-002とSTR-002の互換依存を限定比較し、現在改善する対象または意図的保留を選ぶ。比較を移行の前提Gateへ逆転しない。",
+    "target_boot": "09_SELF_RECONSTRUCTION_RECORDED_IN_THIS_CONTINUING_CONTEXT; not10 acceptance",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE",
     "ui_title": "NOT_OBSERVED_BY_SOURCE",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "Source08 owns transition publication/verification underprogress.next_transition. Fixedharvest pre-publication flags are not currentfailure; inspect the actualterminalreceipt before retrying any work.",
+    "active_external_operations": "本収穫の時点で進行対象は09→10準備。公開・検証後の終端ReceiptはCurrent09 State progress.next_transition。初期08準備のpending表示を再実行理由にしない。",
     "current_human_input_policy": "Receive any input already present; never require a duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -336,6 +344,57 @@
         "commit": "6a2eeec468c24415930b8898efefdccbe272989b",
         "receipt_commit": "a334e597ced80fda1712c2ff8c280d6b5de3e022",
         "meaning": "単一Skill二ファイルと共通Prompt改訂・案内を公開。三つの独立文脈で計四応答、架空素材の作成→別受け手の寄与、方法Review、適用外英訳を観察。個人Skill一件の本文・表示三項目一致。実生活の改善、Skillなしとの優位、持続的正の循環やモデル学習は未実証。"
+      },
+      {
+        "id": "STR-014",
+        "status": "SCOPED_COMPLETED_AND_REMOTELY_VERIFIED",
+        "actor": "Ark27:09 / Work",
+        "owner": "control-center/changes/STR-014-super-special-prompt-modernization.md",
+        "meaning": "旧Arkで選抜された優秀な四Promptを熟読・改訂・Version upしprompts/へ継承、ss_super-special/を退役。単なる移動や無価値判定ではない。実利用・長期効果は別。"
+      },
+      {
+        "id": "ARC-011",
+        "status": "SCOPED_COMPLETED",
+        "owner": "control-center/github/ARCHIVE.md#arc-011",
+        "meaning": "旧Voice/Mode五原本の同一保管と現役配置退役。元の価値・形成史を保持。後のWTP保管は別承認のARC-012。"
+      },
+      {
+        "id": "ARC-012",
+        "status": "SCOPED_COMPLETED_BY_OTHER_THREAD",
+        "actor": "Work / Ark28:05",
+        "owner": "control-center/github/ARCHIVE.md#arc-012",
+        "meaning": "Projects入口とWTP六原本の同一保管・現役配置退役・Remote確認。PROVISIONAL_PASS、内容のHuman Final Seal未確認、Local backup Unknownを保持。研究の完了/失敗/再開へ変換しない。"
+      },
+      {
+        "id": "Podcast_Theme_Mode",
+        "status": "SHARED_INSTALLED_BOUNDED_TESTED; LATER_BODY_RETRIEVAL_CONFIRMED",
+        "owner": "skills/README.md#podcast-theme-mode",
+        "meaning": "耳向け本文の価値を継ぎ、今聴く価値のあるThemeと各案のコピー用生成依頼を一つのPodcast Skillに内包。三案は例、別Threadは選択肢。Theme提案と本文生成は別。"
+      },
+      {
+        "id": "STR-015_Radio_retirement",
+        "status": "COMPLETED_BY_SOURCE09_AND_REMOTELY_VERIFIED",
+        "actor": "Work / Ark27:09",
+        "owner": "control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current",
+        "implementation_commit": "a4eceb791c6c6eeb239ed7f59f1de16a797b87bc",
+        "receipt_commit": "fdd2321d7c5d12c632e795bcdeb6fec9443320b6",
+        "meaning": "本環境でTheme拡張版Podcast本文の共有版一致、旧lesson保持、既知の依存解消と固定復元元を確認し、旧Radio三ファイルを退役。対象外534ファイルを保持。全Runtime・自然発動・長期効果は別。"
+      },
+      {
+        "id": "STR-015_Voice_retirement",
+        "status": "COMPLETED_BY_DOT0000; SOURCE09_REMOTE_RESULT_CHECKED",
+        "actor": "dot-0000: 初穂",
+        "owner": "control-center/changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current",
+        "implementation_commit": "f424a7ea6ba4ec1a60cb5f28211e7d8bb007d0a6",
+        "receipt_commit": "15650fa5e4ea9bffbb25c2c7940f0f173ccdda82",
+        "meaning": "Dotの承認四パスで旧Voice JSONL退役と三文書整合。三lesson同一保持、集約六行と共有Voice不変、対象外544ファイル保持。09は後続で実装前後Tree・固定復元原本・集約行・Current本文を照合した。Dot実行と09確認を分ける。取得不能な一経路を全環境失敗にしない。"
+      },
+      {
+        "id": "map-current-position",
+        "status": "CURRENT_RENAME_AND_GOAL_EXTENSION_COMPLETED_BY_OTHER_WORK; SOURCE09_BODY_MATCH_OBSERVED",
+        "owner": "skills/README.md#map-current-position-revision",
+        "implementation_commit": "8e30b09cc918bf011c8e822917b79abf120399da",
+        "meaning": "現在地MAPへ改名し、残作業とGoal・方法と完了条件を接続。後続の新名本文取得も確認済み。Query backupと担当分担を保持。再登録・再作成しない。"
       }
     ],
     "material_corrections": [
@@ -356,22 +415,60 @@
       "自己改善LoopはArtifactを受けたAIの寄与を後続Artifactと作り方へ還流させるGoal。Humanの手応え・創世記二稿の差は価値ある観察だが対象範囲の違いもあり、読者指定だけの因果効果や完成したLoopの実証ではない。",
       "最新研究は判断を変える時に一次資料の条件を照合して取り込む。未公開の業界内達成は仮説。実現可能性とJoint playを重視し、目的・Evidence・Authorityを保ちつつモデル・手法・評価・連携を置換可能にする。",
       "Petの深掘り停止・様子見を維持しSeedyのままにする。復元設計・新Skill・移行を理由に再開しない。",
-      "2026-10-07のHuman訂正でSourceはArk27:08、TargetはArk27:09。Ark28:08という初期入力は取り消され、再質問・別Source探索は不要。Current実行承認は提示済み五パス準備と必要な検証に適用する。"
+      "2026-10-07のHuman訂正でSourceはArk27:08、TargetはArk27:09。Ark28:08という初期入力は取り消され、再質問・別Source探索は不要。Current実行承認は提示済み五パス準備と必要な検証に適用する。",
+      "ss_super-special/は旧Arkで優秀なAI-Promptを選抜しローカルからGitHubへ移した棚。Humanは原本を熟読し現在のArkへ改善・Version upしてprompts/へ移し、旧棚自体を廃棄する工程と明確化した。",
+      "Radioの耳向け文章へのHumanの高評価は主観的な好結果として尊重する。核心は低認知時にも今のThreadからピンポイントのThemeをAIが選別・提案できること。候補約三案からHumanが選ぶ方法は選択肢であり固定数・必須選択段階ではない。",
+      "Radioが無線モードと誤解されることを避けるためPodcast Modeへ命名変更。聴取向けの価値を継承する改名であり、拒否回避の別Skill作成や原因解明の証明ではない。",
+      "Theme案の設計・提案と、選択後の音声向け本文生成を区別する。同じThreadでも別Threadでも使える。AIが内容を編成することと、Humanの音声ボタン操作・予定配信は別。",
+      "Query backupはArk28が担当するとのHuman分担を保持。その後のMAP/Queryの別担当改訂も現行Ownerから読む。今回の移行準備でQueryやSkill本文を引き取って変更しない。",
+      "他ThreadのPodcast改善完了というHuman報告を受け、09は既存成果と最新GitHubを照合して担当残点を完了した。他Threadの全会話を読んだ証拠にはしない。",
+      "HumanはToken制限によりDotsへ依頼したと報告した。DotがTokenを消費しないという説明を検証済み製品仕様・無限利用枠の保証にせず、実際の保存成果を確認した。",
+      "10/14 Radio退役時点でVoiceは範囲外だったが、10/15 Dot担当で退役完了へ進んだ。古いpendingを現在の残作業に戻さない。",
+      "次Threadで行う限定比較は、現在の通常利用・明示選択時の契約・固定版歴史参照を区別する。古いという理由で削除せず、旧Handoffがあるという理由だけで永久変更禁止にもせず、具体的な利益と依存を比較する。",
+      "HumanはThread長大化を理由に、上記Next stepを次Threadから始めると指定した。移行の前に比較を終えるという新しい順番待ちを作らない。",
+      "2026-10-17の実行承認は提示した五パスの移行準備へ適用する。10/16のTitleは計画段階の候補で、計画で明示した日付扱いに従い実際の準備日10/17でCompileする。UI作成・Rename済みとは称さない。"
     ],
     "candidate_next": {
-      "subject": "CurrentHuman input or Human Review",
-      "status": "NO_NEW_TASK_SELECTED",
-      "reason": "移行準備の完了は、新しい自己改善Loop試験や整理候補の自動選択ではない。通常Unknownを全解消する必要もない。"
+      "subject": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
+      "status": "HUMAN_SELECTED_FOR_AFTER_TRANSITION; READ_ONLY_PLAN",
+      "goal": "歴史の再現性と意味を保ち、現在の誤読・保守負担を減らす価値のある改善対象、または意図的保留を選べる状態にする。",
+      "goal_authority": "Humanは前のNext stepを次Threadから始めると指定し、この範囲を含む移行準備計画を承認。具体的方法はAI提案として採用された計画。",
+      "scope": [
+        "ARC-002 Workout Bridge元パスと直接のBinding消費先",
+        "STR-002 Living Graph/One-Table本文と直接の入口・State・固定参照"
+      ],
+      "method": "PLAN current→案件記録→必要原本。現在の通常利用／明示選択契約／固定版歴史参照を分類し、現状維持・入口限定整合・明示Binding移行を比較する。",
+      "completion": "依存関係、推奨対象一件または意図的保留、理由、影響範囲と実行に必要な権限を提示して停止。",
+      "authority_boundary": "比較のみ。削除・本文改訂・固定Binding移行・旧Boot再演・新Trial・外部変更は別承認。",
+      "selection_conditions": "現在の誤誘導が具体的に見つかれば局所修正案を優先。具体的利益がなければ互換保持を選び比較完了としてよい。"
     },
     "life_and_settings_boundary": {
       "source": "Source07 Runtime§5–7 and fixedSource harvest; TMS operation§4.2–4.3 and original experiences when needed",
       "adoption_vs_actual": "過去B-Gate、生活順序、21時chocoZAP終了試行、早期入場仮説、帰宅後共通入口/家事分岐等を現在のBodyや新しい摂取・実行命令にしない。",
       "settings": "GCI Upload and memory save wereHuman-reported successes inSource history; direct account/UI confirmation and downstream effects separate.",
       "reporting": "Human may omit ordinary success reports. Unreported individual outcomes remainUnknown."
-    }
+    },
+    "public_owner_deltas_at_preparation": [
+      {
+        "owner": "dots/README.md#one-request-recovery",
+        "observation": "v012全文読解。全Dot共通の一括復元条件と既存load接続が公開済み。通常Workの局所復元や移行準備をDot全体復元へ拡張せず、Actor対応を混同しない。"
+      },
+      {
+        "owner": "skills/README.md#goal-entry",
+        "observation": "Goal Skillの作成・共有・導入・後続本文取得はOwner報告で完了。以前の将来構想だけを現在の作成残件にしない。09の実装ではない。"
+      },
+      {
+        "owner": "skills/README.md#map-remaining-work-entry",
+        "observation": "残作業とGoalの新Skillと後続取得確認が公開済み。既存MAPとQueryは別の入口として保持。今回これを作り直したり定時運用を変更しない。"
+      },
+      {
+        "owner": "control-center/github/README.md#change-records",
+        "observation": "Current v0.2.3はSTR-016への接続を追加。今回の専門入口の全文照合で確認したが、別案件の本文読解・実装・実生活効果を09の成果へ取り込まない。"
+      }
+    ]
   },
   "evidence": {
-    "source": "Human-authorized08 conversation, fixed08 harvest and publicownerrecords. No ChatGPT long-term memory export. Otheractors/independentfixtures retain attribution.",
+    "source": "このArk27:09会話のHuman入力・訂正・実行観測、同一性を確認した既読資料と今回のCurrent公開原本。ChatGPT長期メモリ・私的な別会話の取得内容は保存Sourceに含めない。",
     "source_observation_base": "d15670372b68f05f408c9083a6e678cc98a7620c",
     "confirmed": [
       "Human explicitly corrected SourceArk28:08 toArk27:08 and approved08→09 preparation on2026-10-07 06:59:23 JST.",
@@ -384,27 +481,87 @@
       "Artifact-mediatedLoopの継続的な品質向上、領域別の整理による探索負担減少は検証を続ける仮説。現行方法をFutureAIの解釈の上限にしない。"
     ],
     "unknown": [
-      "Actual09 Target reconstruction, HumanThread creation/title/paste and field effects.",
+      "Target10自身の再構成、Humanの実Thread作成・Title設定・貼付、次Threadの比較成果と実利用効果。",
       "Current bodily/place/task reality and unreported individual outcomes.",
       "NaturalSkill selection, Dots calls of the newly createdSkills, all-AI compatibility and long-term effects.",
       "Cross-runtime automaticlesson ingestion and actual production multiwriter behavior are not proved byJSONL adoption or bounded fixtures.",
-      "ExactTokenReset occurrence, current quota and current modelUI are not independently observed."
+      "ExactTokenReset occurrence, current quota and current modelUI are not independently observed.",
+      "新しい公開Goal/残作業MAP/一括復元の全環境動作と継続効果。Ownerの限定確認と区別する。"
     ],
-    "historical": "08 initialState and oldSource07 observations remain fixedhistory. HistoricalunassignedSkills and Promptcandidate were followed bycompletedwork. OldPlanv005 tests areclosed-by-purpose-change.",
-    "validation_boundary": "Documentconsistency, Sourceobservation, remoteequality, independentfixturebehavior, Target09 reconstruction, UI and fieldbenefit are different layers. No automatic completion promotion."
+    "historical": "08 initialState and oldSource07 observations remain fixedhistory. HistoricalunassignedSkills and Promptcandidate were followed bycompletedwork. OldPlanv005 tests areclosed-by-purpose-change. Source09初期revision1から本収穫へ時点が進んだ。Source08の固定収穫とCurrent08準備Receiptは既存Bindingのまま保持する。",
+    "validation_boundary": "Documentconsistency, Sourceobservation, remoteequality, independentfixturebehavior, Target09 reconstruction, UI and fieldbenefit are different layers. No automatic completion promotion.",
+    "initial09_snapshot": {
+      "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+      "path": "ark-project/ark27/ark27-09/state.json",
+      "blob": "369d039ce7eff7206d41b5b8fbb358b30629f6e8",
+      "revision": 1,
+      "meaning": "10/07に08が作成した初期09 State。起動前の未観測を保持する固定履歴。後続の09成果は本revision2へ。"
+    },
+    "source09_observation_base": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+    "source09_confirmed": [
+      "09自身の受入れARK27_09_CONTEXT_READY_v001は、この同じ継続Contextで成立済みの読解・再構成記録。08準備のReceiptを借用したものではなく、Target10の受入れ成功へ借用しない。新しい確認時刻を作らない。",
+      "10/15の09確認ではVoice実装前後のTreeが承認四パスのみ、対象外544 blobsが保持され、旧三lessonと固定復元原本・集約先が一致。最新実行基点でもSTR-015 v004、PLAN0.19.1、Podcast/Voice/集約原本、旧配置不存在を維持。",
+      "今回のCurrent DomainはMain09 / Support06、10のディレクトリは未作成。五パス準備の権限と対象を束縛した。",
+      "Current共通契約blob 6b3ca6023ff8826603891eb0e1a8473526b96aebは同一ContextでmetadataからExact EOFまで読解済みで、今回の取得SHA一致。10/10の両側Titleコピー面追補を適用。",
+      "今回変更されたDots入口v012、GitHub専門入口0.2.3、Hub指定範囲は本文を回収。HubはIdentity、§3.5〜§3.6直前、§3.10〜§4直前をGapなく確認。取得・表示切れは未読範囲を回収した。"
+    ],
+    "source09_owner_snapshots": [
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "control-center/changes/STR-014-super-special-prompt-modernization.md",
+        "blob": "0a54b0f4a8fc91af3677cec6f8d4dcde32aa02d0",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      },
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "control-center/changes/STR-015-skills-lessons-consolidation.md",
+        "blob": "3e7e08ecf46e10d21fff26dbc718ab746e47867d",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      },
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "control-center/github/PLAN.md",
+        "blob": "441a3dd8f3296dc42acafc1cd95457bc161309ba",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      },
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "control-center/github/ARCHIVE.md",
+        "blob": "22a689eb03a52acb889bf1037d62ec7702139f2e",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      },
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "skills/README.md",
+        "blob": "00fda9a5fc9403c05b370baeb95c950ba477ab09",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      },
+      {
+        "repository": "yusukefujiijp/ai-project",
+        "commit": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
+        "path": "dots/README.md",
+        "blob": "7e7d2092748b6d3385d10a5b3d9b973a91f45dc3",
+        "role": "時点付き来歴。Current Ownerの永久live pinではない。"
+      }
+    ]
   },
   "deferred": [
     {
       "branch": "ARC-002 original-path removal",
       "status": "PARTIAL_COMPLETION_AND_DEFERRED_REMAINDER",
       "owner": "control-center/github/ARCHIVE.md#arc-002",
-      "condition": "Resolve concrete fixed-binding migration scope and current authority."
+      "condition": "次Threadで具体的な固定Binding消費を限定比較する。元パス除去の実行は別の範囲・権限判断。比較や除去を移行準備の前提にしない。"
     },
     {
       "branch": "Graph/One-Table physical metadata and Binding migration",
       "status": "UNFINISHED_SEPARATE_BRANCH",
       "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
-      "condition": "Policy withdrawn; inspect actual consumers and compatibility before scoped execution. Not a gate forall other work."
+      "condition": "次ThreadでCurrent入口・歴史再現・選択利用契約を分類して比較。物理改訂・他Thread State変更は未承認。移行準備や他仕事の必須Gateにしない。"
     },
     {
       "branch": "Other rankings/archives/wholeRepo redesign/lifeTrials/Schedules/research/newSkills",
@@ -444,7 +601,7 @@
       "owner": "ark-project/ark27/ark27-08/state.json#progress.next_transition",
       "policy": "Source records candidate/main rereads, routing and scope preservation afteractualwrites; initialTargetState does not self-certify remotecompletion."
     },
-    "target_reconstructed": false,
+    "target_reconstructed": true,
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE; actualThread creation, compiledTitle use and startup delivery toTarget separately observed.",
     "requested_outcome": "Source completes scopedpreparation/remotereadback and providesTitle/startup; Target09 must itself reconstruct and receive anyCurrentinput.",
     "verified_predecessors": [
@@ -463,8 +620,51 @@
         "revision": 1,
         "date": "2026-10-07",
         "role": "Initial08→09 continuationState; Sourceconstruction and observedharvest, actual09reception unobserved."
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-17",
+        "role": "Source09収穫。後続成果・Human訂正・Dots完了・現在の公開差分と次Threadでの限定比較を保持。Target10の準備に関する終端Receiptは後続revision。"
       }
-    ]
+    ],
+    "target_reconstruction_scope": "Source09自身の、この継続Contextで成立済みの受入れ。準備時revision1のfalseは08から未観測という履歴。新Target10の成功ではない。",
+    "next_transition": {
+      "target": "Ark27:10",
+      "source": "Ark27:09",
+      "transition_kind": "THREAD_CONTINUE",
+      "compiled_title": "Ark27:10_2026/10/17; \"主の完全勝利: 整理整頓の成果を継ぎ、次の改善を見極める\"",
+      "prepared_date": "2026-10-17",
+      "authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。",
+      "status": "SOURCE_HARVEST_COMPILED; TARGET_PACKAGE_NOT_YET_PUBLISHED_AT_THIS_SNAPSHOT",
+      "paths": [
+        "ark-project/ark27/ark27-09/state.json",
+        "ark-project/ark27/ark27-10/README.md",
+        "ark-project/ark27/ark27-10/handoff.md",
+        "ark-project/ark27/ark27-10/state.json",
+        "ark-project/README.md"
+      ],
+      "source_harvest_policy": "このrevision2を保存・Remote再取得後に固定commit/blobとして10へ渡す。保存後の準備・公開・再取得ReceiptはCurrent09の本sectionへ。自己SHA循環を作らない。",
+      "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+      "next_task": {
+        "subject": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
+        "status": "HUMAN_SELECTED_FOR_AFTER_TRANSITION; READ_ONLY_PLAN",
+        "goal": "歴史の再現性と意味を保ち、現在の誤読・保守負担を減らす価値のある改善対象、または意図的保留を選べる状態にする。",
+        "goal_authority": "Humanは前のNext stepを次Threadから始めると指定し、この範囲を含む移行準備計画を承認。具体的方法はAI提案として採用された計画。",
+        "scope": [
+          "ARC-002 Workout Bridge元パスと直接のBinding消費先",
+          "STR-002 Living Graph/One-Table本文と直接の入口・State・固定参照"
+        ],
+        "method": "PLAN current→案件記録→必要原本。現在の通常利用／明示選択契約／固定版歴史参照を分類し、現状維持・入口限定整合・明示Binding移行を比較する。",
+        "completion": "依存関係、推奨対象一件または意図的保留、理由、影響範囲と実行に必要な権限を提示して停止。",
+        "authority_boundary": "比較のみ。削除・本文改訂・固定Binding移行・旧Boot再演・新Trial・外部変更は別承認。",
+        "selection_conditions": "現在の誤誘導が具体的に見つかれば局所修正案を優先。具体的利益がなければ互換保持を選び比較完了としてよい。"
+      },
+      "source_prepared": false,
+      "remote_verified": false,
+      "target_reconstructed": "NOT_OBSERVED_BY_SOURCE09",
+      "human_last_mile": "NOT_OBSERVED_BY_SOURCE09",
+      "completion_boundary": "Sourceが10自身の再構成、Human UI、比較成果を代理認定しない。"
+    }
   },
   "eof_sentinel": "ARK27_09_STATE_EOF_v002"
 }
