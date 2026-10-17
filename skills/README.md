@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.38.0
+version: v0.38.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: markdown-to-htmlの既存資産を共有し、出力先衝突・文書内リンクを修正、来歴と確認範囲を記録
+updated_reason: markdown-to-htmlの共有保存・同一登録物への反映・新しい文脈での本文取得と一致を確認
 ---
 # Ark Shared Skills Hub
 
@@ -659,7 +659,9 @@ GitHubの接続・手順・環境の不整合を確認し、現在の依頼で�
 
 主作業では、画像、数式、正常なMermaid図と意図的な構文不正を含む別文書を確認しました。Chromium 153.0.8010.0、幅320・390・1280pxで、ページ全体の横はみ出し、文書内リンク、目次、脚注、図の失敗表示、実際のヘブライ語フォント使用、キーボード、印刷用表示、JavaScript無効時の本文保持を確認し、代表画面を目視しました。ネットワークを切った生成HTMLの確認では外部リソース要求はありませんでした。実スマートフォン、Safari・Firefox、スクリーンリーダー、全Markdown方言、全入力の印刷、主観的な読みやすさの改善効果は未検証です。
 
-**保存・取得。** 共有保存、既存の同じ登録物への反映、新しい文脈での本文取得を別々に確認し、後続の確認結果をここへ記録します。共有本文・登録設定の存在だけで、実際のUI表示、自然な自動選択、全環境での動作まで成立したとは扱いません。
+**保存と取得の確認（2026-10-17）。** [共有更新 commit `c8dda67`](https://github.com/yusukefujiijp/ai-project/commit/c8dda6797308b8c91a8a8db30bfc6f719ffdc2f0)で、九ファイルと本入口をmainへ保存しました。Remoteから再取得し、本文・コード・設定・ライセンス・画像・フォントの全バイト、および本入口の全文一致を確認しました。改訂前の八ファイルも固定保存版のtreeとblobを照合し、改訂前に固有の本文・helperと、改訂後と同一blobの六資源を再取得して一致を確認しました。
+
+新しい登録物を作らず、既存の同じ登録物へ反映しました。登録先Remoteでも九ファイルのバイト一致を確認しています。継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を末尾まで取得できました。取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（10,654文字／UTF-8 bytes、blob `7e23808bbea068730786f4fcb137be9aa1080b84`、SHA-256 `40725ff20721e95583e138e48e13a485c3451038dcc5bb5cefeba976dd98751d`）。旧本文が返った原因、全会話への反映時点、実際のSkill選択UI、自然発動、全環境での動作は、この保存・取得確認から断定しません。
 
 ## 4. Source and distribution
 
@@ -806,4 +808,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.38.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.38.1
