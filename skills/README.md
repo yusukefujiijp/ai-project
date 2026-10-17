@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.39.1
+version: v0.39.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-17
-updated_reason: problem-solvingの共有・既存登録保存を確認し、この会話の取得機構の不一致と旧配置退役保留を区別
+updated_reason: problem-solvingの新名取得を確認し、Human指定の起動Query READMEを追加、旧共有配置を退役
 ---
 # Ark Shared Skills Hub
 
@@ -72,7 +72,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答と参照更新の登録先保存を保持。10月11日の会話内旧版取得、10月12日のDotsによる新参照・本文一致報告を区別する（§1.3）。2026-10-15のVoice旧JSONL退役と確認範囲は§1.3。Voice内直接呼出しと実生活効果は未検証。§3.11 |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
-| 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](problem-solving/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 初版の限定確認を保持。改名・案件案内の限定応答と共有・登録保存を確認。会話内取得と旧配置退役の保留は§3.8／STR-017。自然選択・実生活効果は未実証 |
+| 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](problem-solving/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 初版の限定確認を保持。改名・案件案内の限定応答と共有・登録保存を確認。新名での会話内取得と旧配置退役、起動Query保存は§3.8／STR-017。自然選択・実生活効果は未実証 |
 | load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [SKILL.md](load/SKILL.md) | 現在指定されたSource契約。現在地の地図が必要なときだけmapへ接続 | 五観点の回復・必須不足・SourceとTargetの区別を限定確認。§3.5参照 |
 | next-step | 目的・制約・依存関係から理由ある接続を選び、実行・比較・保留・完了へつなぐ | [SKILL.md](next-step/SKILL.md) | 現在の権限。必要時だけLiving Review／Plan Mode | STOP・旧Gate・通常Unknown・後続実行承認を限定確認。§3.5参照 |
 | save | 成果・訂正・根拠・再開情報を担当原本へ残し、保存後に確かめる | [SKILL.md](save/SKILL.md) | 成果物・Task Records・Dotsログ／lessons・Boardそれぞれの保存先ガイド | 隔離素材で更新・NO_CHANGE・結果不明・取消し・衝突・並行情報保持を確認。§3.5参照 |
@@ -331,13 +331,9 @@ $generate-ideas を使い、現在のテーマ・目的・文脈に合うアイ�
 
 ### 3.8 問題解決の共通入口
 
-登録済みの環境では、今回の困りごととともに次の入口を使います。
+登録済みの環境では、[起動Queryと使い方](problem-solving/README.md)を使います。現在の困りごとが会話内にあれば再入力は不要です。
 
-~~~text
-$problem-solving スキルを使い、現在の困りごとを文脈から理解して、依頼の範囲で解決を進めてください。
-~~~
-
-[共有本文](problem-solving/SKILL.md)と[表示設定](problem-solving/agents/openai.yaml)の二ファイルで構成します。Humanに問題分類や方法論の事前選択を求めず、未整理の入力からAIが必要な調査・比較・計画・実行等を選びます。基本支援は本文だけで行い、Graph・Plan・Review・領域別Skillは必要な場合だけ併用します。内部の方法選択はAIが担い、目的の理解、判断の理由、重要な不確実性、実際の変更・結果はHumanが訂正できる形で返します。
+[共有本文](problem-solving/SKILL.md)、[表示設定](problem-solving/agents/openai.yaml)、Human指定の[起動案内](problem-solving/README.md)を保持します。Humanに問題分類や方法論の事前選択を求めず、未整理の入力からAIが必要な調査・比較・計画・実行等を選びます。基本支援は本文だけで行い、Graph・Plan・Review・領域別Skillは必要な場合だけ併用します。内部の方法選択はAIが担い、目的の理解、判断の理由、重要な不確実性、実際の変更・結果はHumanが訂正できる形で返します。
 
 **形成と採用理由。** 2026-10-03、YusukeJPが、Arkで培った方法を一つの広い入口から使い、問題解決・複数問題同時解決へつなぐSkillの作成・検証・登録・GitHub共有を承認しました。Humanが方法名や製品ごとの入口選択で迷わないための共通の呼出し口を作ることが今回の狙いです。§5.1に残した2026-09-19の `solve-with-human` 保留判断は当時の履歴として保持します。今回の承認は、一般的な推論能力の向上や既存Skillに対する性能優位を実証したという意味ではありません。
 
@@ -355,7 +351,7 @@ Work用とCodex用の別Skillは作らず、一つの名前と本文を共有し
 
 共通名を「問題解決 / Problem Solving」とし、共有原本を `skills/problem-solving/` へ移した。旧名 `solve-problems` は当時の記録として保持する。既存の登録名を `$problem-solving` へ変更した。名前の選択は用途・意味・入口の一貫性によるもので、HumanがAI翻訳で得た語を自然な選好の証拠とはしない。
 
-Skillは方法選択と協働、[problem-solving](../problem-solving/README.md)は案件・担当原本への入口を所有する。既存の成果やCorrectionが今回の判断に必要な時だけ接続し、所在が分かれば原本へ直接進む。新規相談に案件作成やArk全件読込を要求しない。登録保存先から新名・本文・表示設定の一致を確認した。一方、この会話のSkill一覧は旧名を返し、新名での本文取得は未成立のため、旧共有二ファイルの退役は保留した。形成・切替・検証と再開条件は[STR-017](../control-center/changes/STR-017-problem-solving-skill-alignment.md)へ。上の限定確認・導入記録は改名前の初版に関する観測であり、今回の登録切替や新名での取得を証明しない。
+Skillは方法選択と協働、[problem-solving](../problem-solving/README.md)は案件・担当原本への入口を所有する。既存の成果やCorrectionが今回の判断に必要な時だけ接続し、所在が分かれば原本へ直接進む。新規相談に案件作成やArk全件読込を要求しない。登録保存先から新名・本文・表示設定の一致を確認した。当初は会話のSkill一覧と取得機構が旧名のままで、旧共有二ファイルの退役を保留した。その後、同日のHumanによる起動Queryの出力・Skill内READMEへの保存依頼時に、新名で本文を全文取得し、共有原本との一致を確認した。既承認の条件が満たされたため旧共有二ファイルを退役し、標準起動文と使い方をREADMEへまとめた。形成・切替・検証と確認境界は[STR-017](../control-center/changes/STR-017-problem-solving-skill-alignment.md)へ。上の限定確認・導入記録は改名前の初版に関する観測であり、今回の登録切替や新名での取得を証明しない。
 
 ### 3.9 利用枠Reset券の入口
 
@@ -824,4 +820,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.38.2
+EOF::ARK_SHARED_SKILLS_HUB::v0.39.2

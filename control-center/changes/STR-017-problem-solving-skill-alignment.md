@@ -1,14 +1,14 @@
 ---
 title: "STR-017: Problem Solvingの命名とSkill・案件入口の接続"
 id: "STR-017"
-version: "v001"
+version: "v002"
 canonical_path: "control-center/changes/STR-017-problem-solving-skill-alignment.md"
 created: "2026-10-17"
 updated: "2026-10-17"
-status: "shared source and existing registration verified; current-session skill read and legacy-path retirement pending"
+status: "new-name skill read and registered README verified; shared README and legacy retirement awaiting remote verification"
 source_thread: "Ark99:03"
 base_commit: "4ef585733ffeb698357eb56ac586e1b581d86db2"
-expected_eof: "EOF::STR_017_PROBLEM_SOLVING_SKILL_ALIGNMENT::v001"
+expected_eof: "EOF::STR_017_PROBLEM_SOLVING_SKILL_ALIGNMENT::v002"
 ---
 
 # STR-017: Problem Solvingの命名とSkill・案件入口の接続
@@ -55,17 +55,31 @@ GitHub検索で見つかったArk28:03のState・Harvest、GitHub ARCHIVE等の�
 
 ## 5. 保存・登録・退役の確認
 
+### 5.1 初回保存時の確認と保留（Historical）
+
 [共有版の初回保存](https://github.com/yusukefujiijp/ai-project/commit/14e47d7a12e01b441536598a974bcdb64d1fc203)で7ファイルをmainへ反映し、全対象をRemoteから再取得して意図した全文と一致した。新SKILL.mdのblobは `69dc2fc5a3a443be040f566cc3b87fb93ab4f72a`、SHA-256は `ea971c22f8f299613b2126c1998cec5939e9dc33111bdf63db54257ff8523abb`。本文・表示設定・Hub・Problem Solving入口・経験原本・本記録・GitHub整理入口が対象だった。
 
 同じ既存登録物への通常保存が成功した。保存先を再取得して、名称 `problem-solving`、共有SKILL.mdとの全文一致、表示名・短い説明・起動文の値の一致を確認した。登録先の対象名は一件で、旧名の別登録は増やしていない。既存の利用対象、自動選択設定、アイコンを保持し、他の登録済みSkillを変更していない。これは登録保存先の確認であり、会話での取得確認とは別である。
 
-**残る取得Gate。** この会話へ提示されるSkill一覧は、再取得しても旧名 `solve-problems` を返した。旧packageからの読取は `failed to read skill resource`、新名packageは `skill package is not available` となり、同じ登録対象の新resourceを指定した読取も成立しなかった。登録先の新本文の一致と、この会話の取得機構の不一致を区別する。原因・反映時期は未確定であり、保存失敗と決めつけて再作成・再登録はしない。
+**初回保存時に残った取得Gate。** この会話へ提示されるSkill一覧は、再取得しても旧名 `solve-problems` を返した。旧packageからの読取は `failed to read skill resource`、新名packageは `skill package is not available` となり、同じ登録対象の新resourceを指定した読取も成立しなかった。登録先の新本文の一致と、この会話の取得機構の不一致を区別する。原因・反映時期は未確定であり、保存失敗と決めつけて再作成・再登録はしない。
 
 したがって、旧共有 `skills/solve-problems/SKILL.md` と `agents/openai.yaml` の二ファイルは今回退役せず、切替中の参照用に保持した。新しい更新元は `skills/problem-solving/` のみ。旧パスは基点の内容を保ち、新しい原本との同期更新を行わない。既知の現役案内は新パスへ更新済みだが、取得Gateの未成立を「改名移行の全完了」としない。
 
 再開時は、更新されたSkill一覧から同じ登録物を解決し、新名の本文を実際に取得して共有版と比較する。成功したら、最新head・既知の参照・旧二ファイルの同一性を確認し、今回の承認範囲で旧配置退役と結果記録まで進める。同じ承認の再取得は不要。Humanの新しいCorrection・STOPや対象変更があれば、その現在条件に従う。
 
 この確認結果と保留をHubと当日recordsへ反映する最終保存は、保存先の再取得で確認する。確認記録のためだけの自己参照commit追記を反復しない。
+
+### 5.2 後続確認と起動Queryの保存（2026-10-17）
+
+Humanは「起動Queryを書き出して下さい！ $problem-solving スキル内のREADME.mdにもsaveして下さい！」と依頼した。同じ既存登録物の新名でSKILL.mdを全文取得でき、共有本文のblob `69dc2fc5a3a443be040f566cc3b87fb93ab4f72a` と全文一致した。前節の取得不一致は過去時点の観測となり、旧共有配置退役の再開条件を満たした。mainは `28d79b8cffe0b008e18cc00d2bcab71c10491773`、旧二ファイルのblobは第3節の基点と同一だった。検索と既知の現役案内を照合し、残る旧名は形成履歴・復元先として保持する。
+
+Human指定により、[Skill内README](../../skills/problem-solving/README.md)へ標準起動Queryと使い方を追加する。標準文は既存の表示設定の `default_prompt` と一致させ、SKILL.mdの手順は変更しない。HubはQuery本文の重複を避けてREADMEへ案内し、同時にmetadata版と末尾の版表記を揃える。旧共有のSKILL.md・agents/openai.yamlだけを退役対象とし、新しいcaseや別Skillは作らない。
+
+登録先へREADMEを保存し、Remoteから同じ全文を取得した。READMEのSHA-256は `00f02c0ca98a2a6674db92010c55bbefda4cf7d15b257f9c801efb8718976722`。自身の登録用commitはREADME一件だけを追加し、RemoteでもSkill本文・表示設定の不変を確認した。登録先の再取得には同じSkillのicon.svg差分も現れたが、自身のcommitには含まれず、発生理由は未確認。別Skillの変更はなかった。
+
+新名SKILL.mdの会話内取得成功と、追加READMEの取得機構は区別する。READMEを会話のSkill resourceとして直接読む試行は `failed to read skill resource` となった一方、登録保存先の現物は上記の通り一致した。READMEの保存失敗とは扱わず、本文の取得Gateを再び未成立へ戻さない。Human向けの共有READMEと、今回の回答内のコピー用Queryから利用できるようにする。
+
+共有README・Hub・本記録と旧二ファイル退役を一つの保存単位にし、公開後に対象を再取得して結果を確認する。確認済みの結果と日時記録は、当初の保留記録を消さず追記する。
 
 ## 6. 復元と残る境界
 
@@ -75,4 +89,4 @@ GitHub検索で見つかったArk28:03のState・Harvest、GitHub ARCHIVE等の�
 
 Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのCorrection・STOP・Final SealとGuardを保持し、Skill・文書・AIはKeliとして協働を支える。
 
-EOF::STR_017_PROBLEM_SOLVING_SKILL_ALIGNMENT::v001
+EOF::STR_017_PROBLEM_SOLVING_SKILL_ALIGNMENT::v002
