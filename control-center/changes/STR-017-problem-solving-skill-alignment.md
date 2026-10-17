@@ -5,7 +5,7 @@ version: "v002"
 canonical_path: "control-center/changes/STR-017-problem-solving-skill-alignment.md"
 created: "2026-10-17"
 updated: "2026-10-17"
-status: "new-name skill read and registered README verified; shared README and legacy retirement awaiting remote verification"
+status: "shared and registered README verified; new-name skill read and legacy retirement complete"
 source_thread: "Ark99:03"
 base_commit: "4ef585733ffeb698357eb56ac586e1b581d86db2"
 expected_eof: "EOF::STR_017_PROBLEM_SOLVING_SKILL_ALIGNMENT::v002"
@@ -79,7 +79,9 @@ Human指定により、[Skill内README](../../skills/problem-solving/README.md)�
 
 新名SKILL.mdの会話内取得成功と、追加READMEの取得機構は区別する。READMEを会話のSkill resourceとして直接読む試行は `failed to read skill resource` となった一方、登録保存先の現物は上記の通り一致した。READMEの保存失敗とは扱わず、本文の取得Gateを再び未成立へ戻さない。Human向けの共有READMEと、今回の回答内のコピー用Queryから利用できるようにする。
 
-共有README・Hub・本記録と旧二ファイル退役を一つの保存単位にし、公開後に対象を再取得して結果を確認する。確認済みの結果と日時記録は、当初の保留記録を消さず追記する。
+[共有保存と退役のcommit](https://github.com/yusukefujiijp/ai-project/commit/aa0d4f85f75fc593f473a0f98cb547dd2a8ce766)をmainへ反映した。README・Hub・本記録をRemoteから再取得し、三ファイルの全文一致を確認した。完全なTreeで旧共有二ファイルの消失を確認し、変更はこの五パスだけで対象外のblobは保持された。READMEのblobは `14f3e2f62d29e0940165fbd232d1a5f14c0abc7b`。共有・登録README、表示設定の標準起動文、metadataとExact EOFを照合済み。これにより前節で保留した旧配置退役は完了した。
+
+この後続結果を当日recordsへ追記し、本記録の現行状態へ反映する。当初の保留記録は履歴として残す。READMEの会話内resource取得、各UIの表示、実利用の効果は保存・本文取得の確認とは区別する。
 
 ## 6. 復元と残る境界
 
