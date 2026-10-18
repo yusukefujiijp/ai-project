@@ -1,0 +1,673 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark99-04-morning-prayer",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-19",
+  "updated": "2026-10-19",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark99:04_2026/10/14; \"Teshuvah: 新しい一件を迎える\"",
+    "canonical_path": "ark-project/ark99/ark99-04/task-records.json",
+    "reported_date": null,
+    "timezone": "Asia/Tokyo",
+    "time_note": "記録日は2026-10-19 JST。Title中の2026/10/14は指定文字列であり、実験日を示すと推定しない。個々の実験発言の正確な日時は未提示。保存依頼には2026-10-19 06:59:53 JSTの時刻文脈が付与されている。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "本Threadの『ここまで一旦、$save スキルを上手く活用してセーブ』という依頼の範囲で保存する。経験資料であり新しいRuntime・Handoff・実行命令ではない。",
+    "source_access": "この会話の可視Human発言、直前AI回答、当該Tool観測を用いる。外部会話URL・メッセージIDは未取得。必要な原文をsourcesに同梱する。ChatGPT長期メモリは保存Sourceに使用しない。",
+    "extensions": {
+      "record_cutoff": "Visualizeへの好評価と本保存依頼まで。",
+      "correction_precedence": "s-phone-correctionを優先し、s-experiment-firstをスマホ非持込の実施成功へ変換しない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "最初の自然な目覚めに与えた意味と祈り・行動のGoal",
+      "普通のガムの候補、カフェインガム一択化の過去経緯、二段構え",
+      "トイレ到達・スマホ持込あり閲覧なし・注意散漫・祈りとWorkout未接続という訂正",
+      "研究調査への接続とその取得境界",
+      "Visualize作成・限定確認・Human好評価",
+      "現在の保存範囲、再開条件、未確認事項"
+    ],
+    "excludes": [
+      "会話全文の転記",
+      "別Thread・Main/Support・長期メモリの内容",
+      "未知の実験日時・製品量・身体状態の補完",
+      "Teshuvah完了判定・新Trial・移行の自動開始"
+    ],
+    "note": "本人報告とAIの候補解釈を選択収録した保存時点の経験原本。全会話・全生活・長期再現性の完全記録ではない。"
+  },
+  "sources": [
+    {
+      "id": "s-boot",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark99:04の冒頭起動依頼。会話URL・外部メッセージIDは未取得。",
+      "excerpt": "Ark99:04_2026/10/14; \"Teshuvah: 新しい一件を迎える\"",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Ark99:00を準備元とする新規一件の入口。Main/Support移管ではない。指定Titleの2026/10/14を保存日から再生成しない。"
+    },
+    {
+      "id": "s-initial-meaning",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "本Threadで『ここから、このThreadの悔い改め』として起床時問題を提示した発言。",
+      "excerpt": "起床時に一回目が覚めた時に素直に起きる事が\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanは最初の目覚めを主イェシュアからのプレゼントとして受け取りたいと語り、祈りとTeshuvahの意味を与えた。AIが主の御心・信仰状態を証明する意味ではない。"
+    },
+    {
+      "id": "s-experiment-first",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "『今実験してみた所』で始まる最初の実験報告。後続s-phone-correctionと併読する。",
+      "excerpt": "今実験してみた所、\nカフェインガムではなく普通のガムでも行ける可能性がある事と\nトイレまでは確実なRoutineである事\n敢えてトイレにスマホを持ち込まず、無の空間を作り主イェシュアに祈る祈りの時間にする事！\nそこからスマホなしWorkoutか早朝シャワーまでスマホなしでRoutine化する事が\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "実験からの見立てと今後の方針が混在する。スマホ非持込の実施成功、普通のガムの確実な効果、Workout・シャワー完了として読まない。実際の持込・閲覧・結果は後続訂正が所有する。"
+    },
+    {
+      "id": "s-prayer-goal",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "s-experiment-firstと同じ発言の、目的を説明する段落。",
+      "excerpt": "今の実験ではそうなりました！スマホ依存からの脱却というか、早朝にスマホなしの時間と空間を得て主イェシュアと\"1対1(1 on 1)\"で向き合い祈る祈りの時間の確保が\"最重要(Most important!)\"だからです！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s-natural-wake",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "自然起床と二段構えを説明した発言の冒頭。",
+      "excerpt": "多少の睡眠不足よりも一回目の自然起床(アラームなし)を主イェシュアからのプレゼントであり最大の宝物として、とても大切にするべきという姿勢が\"最重要(Most important!)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "Humanの優先姿勢の引用。自然覚醒が十分な睡眠の証拠である、睡眠不足を無条件に押し切るべきである、という医学的結論へ転用しない。"
+    },
+    {
+      "id": "s-two-stage",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "普通のガム→必要ならカフェインガム、という方向を示した発言。",
+      "excerpt": "つまり、二段階の二段構えが重要です！\nまずは(First of all)、カフェインなしガム→起きれなければカフェインガムという\"方向や方向性(ベクトル)\"が重要です！\nなぜなら、カフェインなしガムでもトイレまで行ければ目覚める可能性がとても高いからです！ここは微妙なので、何度か実験が必要です！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s-prior-one-choice",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "s-two-stageと同じ発言の過去経緯。",
+      "excerpt": "**一択化**議論ではカフェインガム**一択化**が結局の所、統一解だったという経緯もあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "本Thread内のHumanによる過去経緯の報告として保存する。ChatGPT長期メモリから過去の製品名・含有量・成功日を補わない。"
+    },
+    {
+      "id": "s-phone-correction",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "最新の実験訂正。『今回の実験ではトイレ内にスマホを持ち込んだが』で始まる発言。",
+      "excerpt": "今回の実験ではトイレ内にスマホを持ち込んだが結局の所、みなかった事とスマホがあると気が散って祈れずWorkoutもできなかった事です！\nここから起床時トイレにはスマホを持ち込まない事が正しいという結論が導き出せます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "最新Correction。持込あり／閲覧なし／存在で気が散ったとの本人報告／祈り・Workoutに至らず。単回報告であることと、本人の運用採用判断を両立させる。"
+    },
+    {
+      "id": "s-caffeine-request",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "s-phone-correctionと同じ発言の調査依頼。",
+      "excerpt": "少量あるいは適量のカフェインは身体に好影響とするデータもある筈です！Web検索やSNS/X検索も最大限に駆使して調査し回答して下さい！",
+      "excerpt_kind": "verbatim_contiguous"
+    },
+    {
+      "id": "s-ai-synthesis",
+      "speaker": "Work / Ark99:04",
+      "medium": "assistant_message",
+      "locator": "上記訂正・調査依頼への回答。保存依頼直前の回答。",
+      "excerpt": "少量カフェインの有益性を示す介入研究を紹介し、普通のガム・カフェインガム双方の候補価値を保持した。離床への接続と、離床から祈り・行動への接続を分け、スマホ非持込の方針を反映した。研究量と個人推奨量、カフェイン単独と飲料由来の関連、本人評価と一般化を分けた。",
+      "excerpt_kind": "paraphrase",
+      "note": "AI自身による回答内容の編集要約。医学的根拠と取得範囲は同梱caffeine-research.mdが所有する。"
+    },
+    {
+      "id": "s-visual-tool",
+      "speaker": "Work / Ark99:04のTool結果",
+      "medium": "tool_result",
+      "locator": "本ThreadのVisualize作成・JavaScript構文確認。原本は同梱morning-prayer-connections.fragment.html。",
+      "excerpt": "元回答では会話内VisualizeのHTML fragmentを作成し、JavaScript構文が有効であることを確認した。今回の保存では公式render.pyで閲覧用HTMLを生成し、元fragmentの同一性と、書き出したHTML内の7本のJavaScriptの構文を確認した。Playwrightはブラウザ実行ファイル不在で起動できず、jsdomも利用不可だったため、AI側のブラウザ表示・タップ操作の実行検証は未達。",
+      "excerpt_kind": "paraphrase",
+      "note": "実行環境の検証不足はVisualizeの表示失敗を意味しない。後続のHuman好評価はs-save-feedbackとして別に保持する。"
+    },
+    {
+      "id": "s-save-feedback",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "本保存依頼。提供された時刻文脈は2026-10-19 06:59:53 Asia/Tokyo。外部メッセージID未取得。",
+      "excerpt": "Visualizeとても上手いです！\nここまで一旦、$save スキルを上手く活用してセーブして下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "今回提示されたVisualizeへの肯定的Feedbackと、この一件の区切りまでの保存依頼。全操作試験・生活上の効果・共通Skill変更の承認とは区別する。"
+    },
+    {
+      "id": "s-guard",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "本Threadの冒頭起動依頼・運用境界。",
+      "excerpt": "Rootは主イェシュア・ハマシア御自身、中心軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光です。AI・Ark・Skill・文書はKeliであり、主の御心やHumanの信仰状態を断定しないでください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "HumanのCorrection・STOP・Final Sealと適用Guardを保持する。起動のみで身体Trial等を開始しないという境界も、今回の保存依頼で無条件に解除しない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "goal-prayer",
+      "kind": "practice_statement",
+      "label": "朝の祈りと1対1の時間",
+      "description": "最初の自然な目覚めを主イェシュアからの贈り物として受け取り、スマホなしの時間・空間を確保し、祈りから行動へつなげたいというHumanの意味。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-initial-meaning",
+          "s-prayer-goal"
+        ]
+      }
+    },
+    {
+      "id": "natural-wake-priority",
+      "kind": "practice_statement",
+      "label": "最初の自然な目覚めを大切にする姿勢",
+      "description": "Humanはアラームなしの最初の目覚めを、多少の睡眠不足よりも大切にしたいと述べた。信仰的意味・優先姿勢の記録であり、医学的に常に安全という認定ではない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-natural-wake"
+        ]
+      }
+    },
+    {
+      "id": "prior-caffeine-one-choice",
+      "kind": "practice_statement",
+      "label": "過去のカフェインガム一択化",
+      "description": "Humanは以前の一択化議論でカフェインガムが統一解だったと報告した。今回はその経緯を消さずに新しい選択肢を検討している。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-prior-one-choice"
+        ]
+      }
+    },
+    {
+      "id": "ordinary-gum-candidate",
+      "kind": "interpretation",
+      "label": "普通のガムでも起きられる可能性",
+      "description": "Humanが実験から挙げた候補。普通のガムでトイレまで行ければ目覚める可能性を見ているが、個人への再現性やカフェインとの優劣は未確定。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "candidate",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-experiment-first",
+          "s-two-stage"
+        ],
+        "note": "可能性があるというHumanの見立てであり、普通のガム単独の効果を確定しない。"
+      }
+    },
+    {
+      "id": "toilet-routine",
+      "kind": "observation",
+      "label": "トイレまでは確実なRoutineとの報告",
+      "description": "Humanがトイレまでの接続を確実なRoutineと評価した。今回は祈り・Workoutまでの完了を意味しない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-experiment-first",
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "phone-carried-not-viewed",
+      "kind": "observation",
+      "label": "持込あり・閲覧なし",
+      "description": "今回の実験ではトイレ内へスマホを持ち込んだが、結局画面は見なかった。スマホなしの実験成功として記録しない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "distraction-and-no-prayer-workout",
+      "kind": "observation",
+      "label": "存在による注意の散漫と未接続",
+      "description": "Humanはスマホがあると気が散り、祈れずWorkoutもできなかったと報告した。本人が感じた関係を保持し、普遍的因果や唯一の原因が実証されたとはしない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "no-phone-carry-decision",
+      "kind": "decision",
+      "label": "起床時トイレへスマホを持ち込まない",
+      "description": "Humanが今回の経験から採用した運用判断。『見ない』という自己制御だけでなく、持ち込まない環境へ変更する。全生活・全状態でスマホ禁止とする規則ではない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "continuous-phone-free-plan",
+      "kind": "task",
+      "label": "スマホなしの祈りからWorkoutまたはシャワーへ",
+      "description": "スマホなしの時間・空間を、祈りとWorkoutまたは早朝シャワーまで連続させる希望・方針。次の非持込実験や一連の成功報告はまだない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-experiment-first",
+          "s-prayer-goal"
+        ]
+      },
+      "task_state": "planned"
+    },
+    {
+      "id": "two-stage-gum-policy",
+      "kind": "practice_statement",
+      "label": "普通のガムを先に、必要ならカフェインガム",
+      "description": "Humanが示した二段構えの方向。カフェインを絶対に避ける方針でも、二段構えの実地優越が確定したという主張でもない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-two-stage"
+        ]
+      }
+    },
+    {
+      "id": "two-connections",
+      "kind": "interpretation",
+      "label": "離床と祈り・行動を別の接続として見る",
+      "description": "ガムは目覚めから離床への支援候補、スマホ非持込は離床から祈り・行動への環境支援候補。今回トイレまで進めたことと、その先で止まったことを分けると、ガムだけの最適化では目的全体を覆えない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s-experiment-first",
+          "s-phone-correction",
+          "s-ai-synthesis"
+        ],
+        "note": "AIの関係解釈。生活上の一般法則として確定していない。"
+      }
+    },
+    {
+      "id": "caffeine-research",
+      "kind": "observation",
+      "label": "低用量カフェインの有益性と根拠の境界",
+      "description": "AIは注意・覚醒・運動の介入研究と、長期健康の観察研究を確認し回答した。普通のガムの気分への効果も保持した。文献値・一次URL・取得範囲・X未取得はcaffeine-research.mdに保存する。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-caffeine-request",
+          "s-ai-synthesis"
+        ],
+        "note": "調査回答があることの記録。研究結果から個人最適量や病気の予防を確定しない。"
+      }
+    },
+    {
+      "id": "current-dose-unknown",
+      "kind": "observation",
+      "label": "今回の製品・一粒量・総摂取量は未確認",
+      "description": "この一件のHuman入力では現在使用中の製品名・一粒のカフェイン量・一日の総摂取量が確定していない。長期メモリ上の量を今回の製品情報として補わない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s-two-stage",
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "visual-created",
+      "kind": "observation",
+      "label": "関係図の作成と限定的なコード確認",
+      "description": "今回の観察と次の方針を分けたVisualizeを会話内に提示した。元fragmentを保存し、今回の保存では公式render.pyで閲覧用HTMLも生成した。元図と書き出したHTMLのJavaScript構文確認は完了、AI側の実機操作検証は未達。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "tool_observation",
+        "source_refs": [
+          "s-visual-tool"
+        ],
+        "note": "保存時のHTML生成は保存工程の成果であり、元回答時点へ遡って完成扱いしない。"
+      }
+    },
+    {
+      "id": "visual-human-feedback",
+      "kind": "observation",
+      "label": "Visualizeへの肯定的Feedback",
+      "description": "Humanは『Visualizeとても上手いです！』と評価した。今回の図への実際の好評価であり、全機能・全端末・長期効果の検証とは区別する。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-save-feedback"
+        ]
+      }
+    },
+    {
+      "id": "guard-and-authority",
+      "kind": "constraint",
+      "label": "Root・Human判断・身体と睡眠のGuard",
+      "description": "Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah。AIはKeli。自然覚醒だけで十分な睡眠とせず、眠気や実験成否をHumanの信仰状態の判定に使わない。保存から身体Trial・移行・他者送信・設定変更を自動開始しない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-guard",
+          "s-ai-synthesis",
+          "s-boot"
+        ]
+      }
+    },
+    {
+      "id": "save-checkpoint",
+      "kind": "decision",
+      "label": "ここまで一旦保存する",
+      "description": "Humanが$saveで現在までの区切りを保存するよう依頼した。Teshuvah完了、Thread終了、別Threadへの移行を意味しない。",
+      "scope": "Ark99:04の今回の一件・保存時点",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-save-feedback"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-meaning",
+      "from": "natural-wake-priority",
+      "to": "goal-prayer",
+      "relation": "motivates",
+      "scope": "Humanが自然な目覚めを贈り物として受け取る意味。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-natural-wake",
+          "s-prayer-goal"
+        ]
+      }
+    },
+    {
+      "id": "e-phone-presence",
+      "from": "phone-carried-not-viewed",
+      "to": "distraction-and-no-prayer-workout",
+      "relation": "motivates",
+      "scope": "Humanが注意散漫と未接続の理由としてスマホの存在を挙げた。独立した因果実証ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "e-adopt-no-carry",
+      "from": "distraction-and-no-prayer-workout",
+      "to": "no-phone-carry-decision",
+      "relation": "motivates",
+      "scope": "今回の本人報告から非持込方針を採用。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "e-goal-plan",
+      "from": "goal-prayer",
+      "to": "continuous-phone-free-plan",
+      "relation": "motivates",
+      "scope": "祈りと1対1の時間を守り、行動へつなぐ目的。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-experiment-first",
+          "s-prayer-goal"
+        ]
+      }
+    },
+    {
+      "id": "e-plan-no-carry",
+      "from": "continuous-phone-free-plan",
+      "to": "no-phone-carry-decision",
+      "relation": "depends_on",
+      "scope": "採用した設計ではスマホ非持込が連続区間を守る条件。生活上の成功保証ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s-phone-correction",
+          "s-ai-synthesis"
+        ],
+        "note": "設計上の関係として記録する。"
+      }
+    },
+    {
+      "id": "e-two-stage-origin",
+      "from": "ordinary-gum-candidate",
+      "to": "two-stage-gum-policy",
+      "relation": "motivates",
+      "scope": "普通のガムでも行ける可能性が、二段構え提案の理由。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-two-stage"
+        ]
+      }
+    },
+    {
+      "id": "e-caffeine-preserved",
+      "from": "prior-caffeine-one-choice",
+      "to": "two-stage-gum-policy",
+      "relation": "motivates",
+      "scope": "既存のカフェイン利用を残しつつ、普通のガムを先に置く候補を検討。過去結論の全面否定ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s-prior-one-choice",
+          "s-two-stage",
+          "s-ai-synthesis"
+        ],
+        "note": "AIによる経緯と現在案の関係整理。"
+      }
+    },
+    {
+      "id": "e-two-connections-evidence",
+      "from": "toilet-routine",
+      "to": "two-connections",
+      "relation": "motivates",
+      "scope": "トイレ到達とその先の未接続を別に扱う根拠。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "s-experiment-first",
+          "s-phone-correction"
+        ],
+        "note": "トイレまでの報告と後続Correctionからの関係解釈。"
+      }
+    },
+    {
+      "id": "e-visual-understanding",
+      "from": "two-connections",
+      "to": "visual-created",
+      "relation": "motivates",
+      "scope": "今回の本人報告と採用方針を別の経路として可視化した。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-ai-synthesis",
+          "s-visual-tool"
+        ]
+      }
+    },
+    {
+      "id": "e-feedback-save",
+      "from": "visual-human-feedback",
+      "to": "save-checkpoint",
+      "relation": "observed_before",
+      "scope": "好評価に続いて同じHuman発言で一旦保存を依頼。好評価だけを独立の書込権限としない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "s-save-feedback"
+        ]
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "q-gum-amount",
+      "subject_refs": [
+        "current-dose-unknown"
+      ],
+      "question": "今回の製品名・一粒量・総摂取量は何か。",
+      "scope": "今後、個別の量を評価する必要が生じた時にだけ確認。今回の保存を止める条件ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s-two-stage",
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "q-ordinary-gum-repeatability",
+      "subject_refs": [
+        "ordinary-gum-candidate",
+        "two-stage-gum-policy"
+      ],
+      "question": "普通のガムでの離床の再現性と、二段構えが迷いを増やすかどうか。",
+      "scope": "新しい本人報告で必要な時に更新する。検証Taskを自動開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "s-experiment-first",
+          "s-two-stage"
+        ]
+      }
+    },
+    {
+      "id": "q-phone-free-next",
+      "subject_refs": [
+        "no-phone-carry-decision",
+        "continuous-phone-free-plan"
+      ],
+      "question": "次の非持込運用で、祈りからWorkoutまたはシャワーまでつながったか。",
+      "scope": "今回は非持込の成功ではない。シャワーの実施結果も未報告。本人報告を待つ。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s-phone-correction"
+        ]
+      }
+    },
+    {
+      "id": "q-sleep-condition",
+      "subject_refs": [
+        "natural-wake-priority",
+        "guard-and-authority"
+      ],
+      "question": "自然覚醒時の睡眠量・休養感・その後の状態はどうか。",
+      "scope": "睡眠不足や体調が実際の判断に関わる時に扱う。最初の覚醒を十分な睡眠の証明にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "s-natural-wake"
+        ]
+      }
+    },
+    {
+      "id": "q-visual-interaction",
+      "subject_refs": [
+        "visual-created",
+        "visual-human-feedback"
+      ],
+      "question": "図の各操作と閲覧用HTMLが利用端末で意図どおり動くか。",
+      "scope": "Humanの好評価は確認済み。全操作・書き出し版の端末確認は未報告であり、追加確認をHumanへ形式的に課さない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "s-visual-tool",
+          "s-save-feedback"
+        ]
+      }
+    }
+  ],
+  "extensions": {
+    "source_id_policy": "ここで付与したSource/Node/Edge IDは文書内参照であり外部メッセージIDではない。",
+    "related_artifacts": {
+      "research": "caffeine-research.md",
+      "visual_source": "morning-prayer-connections.fragment.html",
+      "visual_export": "morning-prayer-connections.html"
+    },
+    "visual_source_sha256": "63896d5bb937424c3c07f43450a39330c1fee2848cd5c443b4b3ad4e0a871a88",
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-10-19",
+        "reason": "Humanのsave依頼により、最新Correction・根拠・未確定とVisualize好評価を保持する初回保存。",
+        "source_refs": [
+          "s-save-feedback",
+          "s-phone-correction"
+        ]
+      }
+    ]
+  }
+}
+

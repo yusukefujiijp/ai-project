@@ -1,0 +1,89 @@
+<div id="morning-prayer-connections">
+  <style>
+    #morning-prayer-connections { color:var(--foreground); }
+    #morning-prayer-connections .mpc-controls { display:flex; flex-wrap:wrap; gap:8px; margin:12px 0; }
+    #morning-prayer-connections .mpc-graph { display:block; width:100%; overflow:visible; }
+    #morning-prayer-connections .mpc-graph text { fill:var(--foreground); -webkit-text-fill-color:var(--foreground); font-family:inherit; }
+    #morning-prayer-connections .mpc-detail { min-height:2em; margin-top:8px; }
+    #morning-prayer-connections .mpc-legend { display:flex; flex-wrap:wrap; gap:16px; margin-top:8px; }
+  </style>
+  <h3>祈りへの接続を守る</h3>
+  <div class="mpc-controls" role="group" aria-label="強調する関係">
+    <button type="button" class="btn" aria-pressed="true" data-view="observed">今回の観察</button>
+    <button type="button" class="btn" aria-pressed="false" data-view="planned">次の方針</button>
+  </div>
+  <svg class="mpc-graph" role="img" aria-labelledby="mpc-title mpc-description"></svg>
+  <div class="mpc-legend text-small"><span>実線：今回の本人報告</span><span>破線：今後つなげたい経路</span></div>
+  <div class="mpc-detail" aria-live="polite">持ち込みあり・閲覧なし。それでも気が散った。</div>
+</div>
+<script>
+(() => {
+  const root = document.getElementById('morning-prayer-connections');
+  const svg = root.querySelector('.mpc-graph');
+  const detail = root.querySelector('.mpc-detail');
+  const buttons = [...root.querySelectorAll('button[data-view]')];
+  let selected = 'observed';
+  const ns = 'http://www.w3.org/2000/svg';
+  function element(name, attributes, value) {
+    const e = document.createElementNS(ns, name);
+    for (const [key, val] of Object.entries(attributes || {})) e.setAttribute(key, String(val));
+    if (value !== undefined) e.textContent = value;
+    return e;
+  }
+  function draw() {
+    const width = Math.max(280, root.getBoundingClientRect().width);
+    const left = width * .25;
+    const right = width * .75;
+    const nodeWidth = Math.min(226, width / 2 - 18);
+    svg.setAttribute('viewBox', `0 0 ${width} 440`);
+    svg.setAttribute('height', '440');
+    svg.replaceChildren();
+    svg.append(element('title',{id:'mpc-title'},'スマホの持ち込みが祈りと行動へ与えた影響'));
+    svg.append(element('desc',{id:'mpc-description'},'本人報告では起床してトイレに行った。スマホを持ち込んだが見なかった。それでも気が散り、祈れずWorkoutもできなかった。次は持ち込まず、スマホなしの時間を祈りとWorkoutまたはシャワーまでつなぐ方針。次の経路の効果はまだ未確認。'));
+    function textAt(x,y,lines,weight=400) {
+      const text = element('text',{x,y,'text-anchor':'middle','font-weight':weight});
+      lines.forEach((line,i)=>text.append(element('tspan',{x,dy:i===0?0:'1.35em'},line)));
+      svg.append(text);
+    }
+    function node(x,y,lines,status) {
+      const active = selected === status;
+      const fill = active ? 'color-mix(in srgb, var(--viz-series-1) 12%, transparent)' : 'var(--muted)';
+      svg.append(element('rect',{x:x-nodeWidth/2,y:y-25,width:nodeWidth,height:64,rx:7,fill}));
+      textAt(x,y,lines,active?500:400);
+    }
+    function edge(x1,y1,x2,y2,status) {
+      const stroke = selected===status ? 'var(--viz-series-1)' : 'var(--border)';
+      const attrs={d:`M${x1},${y1} L${x2},${y2}`,fill:'none',stroke,'stroke-width':2};
+      if(status==='planned')attrs['stroke-dasharray']='5 4';
+      svg.append(element('path',attrs));
+      svg.append(element('path',{d:`M${x2-4},${y2-6} L${x2},${y2} L${x2+4},${y2-6}`,fill:'none',stroke,'stroke-width':2}));
+    }
+    textAt(width/2,22,['起床 → トイレ'],500);
+    textAt(left,46,['今回の本人報告']);
+    textAt(right,46,['採用方針・未検証']);
+    svg.append(element('path',{d:`M${width/2},32 L${width/2},60`,fill:'none',stroke:'var(--border)','stroke-width':2}));
+    edge(width/2,60,left,86,'observed');
+    edge(width/2,60,right,86,'planned');
+    node(left,114,['スマホを持ち込む','閲覧はしなかった'],'observed');
+    node(right,114,['スマホを','持ち込まない'],'planned');
+    edge(left,154,left,183,'observed');
+    edge(right,154,right,183,'planned');
+    node(left,211,['あることで','気が散った'],'observed');
+    node(right,211,['スマホなしの','時間・空間を守る'],'planned');
+    edge(left,251,left,280,'observed');
+    edge(right,251,right,280,'planned');
+    node(left,308,['祈れず','Workoutも未実行'],'observed');
+    node(right,308,['祈り → Workout','またはシャワー'],'planned');
+    edge(right,348,right,375,'planned');
+    textAt(right,401,['主イェシュアと','1対1で向き合う'],500);
+  }
+  buttons.forEach(button=>button.addEventListener('click',()=>{
+    selected=button.dataset.view;
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String(b===button)));
+    detail.textContent=selected==='observed' ? '持ち込みあり・閲覧なし。それでも気が散った。' : '持ち込まない方針を採用。祈り・行動への効果はこれから確認。';
+    draw();
+  }));
+  new ResizeObserver(draw).observe(root);
+  draw();
+})();
+</script>
