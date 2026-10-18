@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_10_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:10",
     "schema_version": "v002",
     "updated_at": "2026-10-18",
-    "update_reason": "Ark27:10自身の受入れ・限定比較の到達点、GitHub整理主担当のHuman指定、二原本限定整合の実行承認とsuccess-cases移行検討のPlan-onlyを接続。Source09準備観測・固定収穫・先行成果は保持。",
+    "update_reason": "二原本限定整合の実装とmain再取得一致を記録。Target自身の受入れ/比較、GitHub整理主担当、AI推奨とHuman決定の区別を保存し、次のsuccess-cases移行案はPlan-onlyで保持。",
     "authority": "2026-10-18 JSTのCurrent Humanは、提示済みのStateとGitHub PLANの二原本限定整合を引用して実行承認。完了後のsuccess-cases/→references/案は調査・計画までと明示。09→10準備の先行承認はrevision1の履歴とSource09 Receiptに保持。",
     "date_scope": "Asia/Tokyo current-alignment record date; not a regenerated Title/preparation date or newly inferred reception/UI date."
   },
@@ -242,16 +242,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "ai-project全体のGitHub整理を主担当として継続する。二原本の現在地を承認範囲で整合し、その後success-cases/→references/案の役割・依存・保存価値をPlan-onlyで検討する。",
-    "current_coordinate": "10自身の受入れとARC-002/STR-002限定比較を終え、2026-10-18のHuman指定・二原本更新承認へ進んだ地点。準備時の未観測、09初期State、Voice旧pendingへ戻さない。",
+    "current_focus": "ai-project全体のGitHub整理を主担当として継続。二原本の現在地整合と保存後確認を完了し、次はsuccess-cases/→references/案の役割・依存・保存価値をPlan-onlyで検討する。",
+    "current_coordinate": "10自身の受入れとARC-002/STR-002限定比較に続き、2026-10-18のHuman承認二原本整合を実装・main再取得確認した地点。準備時の未観測、09初期State、Voice旧pendingへ戻さない。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "承認された二原本更新を必要な検証まで行う。完了後は既入力のsuccess-cases移行案を調査・計画して停止する。入力の再要求やBoot再演をしない。",
+    "current_legal_connection": "承認二原本の実装・main再取得一致を確認済み。後続のsuccess-cases移行案を調査・計画し、実装せずHuman Reviewへ戻る。入力の再要求やBoot再演をしない。",
     "next_specific_task": "二原本限定整合の検証後、success-cases/をreferences/配下へ移す案を調査・計画する（移行は未承認）。",
     "target_boot": "COMPLETED_BY_TARGET10_IN_THIS_THREAD; source preparation/publication and Human UI are separate.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE09",
     "ui_title": "NOT_OBSERVED_BY_SOURCE09",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "現在の実行承認はauthority.current_executionの二パスのみ。実施・保存後確認はprogress.current_alignmentへ。Source09準備の最終Receiptは従来どおりSource09 progress.next_transitionが所有する。",
+    "active_external_operations": "二原本限定整合の実装・main再取得はprogress.current_alignmentに記録。次のsuccess-cases移行はPlan-onlyで、外部変更は未承認。Source09準備の最終Receiptは従来どおりSource09 progress.next_transitionが所有する。",
     "current_human_input_policy": "Receive any Human input already present; never require duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -620,7 +620,7 @@
     "target_reconstructed": true,
     "target_reconstruction_scope": "Target10自身が、先行する本Threadの受入れでIdentity・Binding・Triad Consistency・R1–R6を満たした。Source09準備時は未観測だった事実と区別し、今回の保存でBootを再演しない。",
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE09; actual thread creation, compiled Title use and startup delivery are separate.",
-    "requested_outcome": "二原本の現在地整合を保存・再取得まで完了し、その後、既入力のsuccess-cases移行案をPlan-onlyで検討してHuman Reviewへ戻る。",
+    "requested_outcome": "二原本の現在地整合は実装・main再取得確認済み。後続の既入力success-cases移行案をPlan-onlyで検討してHuman Reviewへ戻る。",
     "verified_predecessors": [
       {
         "repository": "yusukefujiijp/ai-project",
@@ -643,6 +643,11 @@
         "revision": 2,
         "date": "2026-10-18",
         "role": "Human-authorized two-original alignment: own reception/comparison, GitHub main-owner designation, separated execution and relocation planning authority; inherited evidence retained."
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-18",
+        "role": "Record actual two-original implementation and main readback, preserving source/target/Actor distinctions; proceed to the already requested relocation planning only."
       }
     ],
     "target_reconstruction": {
@@ -653,7 +658,7 @@
       "evidence_boundary": "This is Target10's own completed reception, not Source09 preparation/Remote receipt, other AI work, account UI confirmation or future reuse of a stale read record."
     },
     "current_alignment": {
-      "status": "CONTENT_PREPARED; REMOTE_READBACK_PENDING",
+      "status": "IMPLEMENTED_AND_REMOTE_VERIFIED",
       "paths": [
         "ark-project/ark27/ark27-10/state.json",
         "control-center/github/PLAN.md"
@@ -664,7 +669,46 @@
         "control-center/github/PLAN.md": "441a3dd8f3296dc42acafc1cd95457bc161309ba"
       },
       "source": "2026-10-18 Human authorization in current conversation",
-      "verification_boundary": "Prepared content is not Remote success. After actual publication, reread both files and add the observed implementation receipt here; do not self-pin this mutable State."
+      "verification_boundary": "Receipt records the actual two-file implementation and subsequent main rereads. Receipt revision3 is a later State-only update, not a self-SHA pin. Its own final main reread is reported in the current conversation. Document/JSON/remote equality does not prove Future AI understanding, UI changes or field effects.",
+      "implementation_commit": "ec4f7b97dc9e2379725a36ad43a8600205c97368",
+      "verified_at_utc": "2026-10-18T09:39:17.858Z",
+      "remote_readback": [
+        {
+          "path": "ark-project/ark27/ark27-10/state.json",
+          "ref": "main",
+          "blob": "dd665a28cb1d671ad40270eb89c13efedac4b678",
+          "full_content_match": true
+        },
+        {
+          "path": "control-center/github/PLAN.md",
+          "ref": "main",
+          "blob": "53e4d857e44aa80718f2fde62ff568f29d7207c9",
+          "full_content_match": true
+        }
+      ],
+      "scope_verification": {
+        "changed_paths": [
+          "ark-project/ark27/ark27-10/state.json",
+          "control-center/github/PLAN.md"
+        ],
+        "unchanged_blob_and_mode_count": 586,
+        "base_commit": "4a7c8df40ea8a66a85a3111256b74a3d71e3a839",
+        "candidate_tree": "88eba21e3e7870433c091bd505d9254e28ade9ff",
+        "checks": {
+          "bindingsPreserved": true,
+          "priorOutcomesPreserved": true,
+          "sourceReceiptPreserved": true,
+          "predecessorEvidencePreserved": true,
+          "priorConfirmedEvidencePreserved": true,
+          "sourceObservationPreserved": true,
+          "sourcePreparationPathsPreserved": true,
+          "guardsPreserved": true,
+          "titlePreserved": true,
+          "eofPreserved": true,
+          "onlyApprovedExecutionPaths": true,
+          "relocationStillPlanOnly": true
+        }
+      }
     }
   },
   "eof_sentinel": "ARK27_10_STATE_EOF_v002"
