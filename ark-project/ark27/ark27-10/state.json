@@ -1,13 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_10_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:10",
     "schema_version": "v002",
-    "updated_at": "2026-10-17",
-    "update_reason": "Human承認の09→10準備。09の固定収穫から現在の成果・訂正・残点を継ぎ、10自身の受入れと移行後の限定比較を未観測として分ける。",
-    "authority": "Ark27:09のHumanは五パスのPlan Mode計画提示後、2026-10-17 JSTにExecute GitHub OK / Human Seal OK / Workflow Continueを明示し、移行準備と必要な検証・保存後確認を承認した。",
-    "date_scope": "Asia/Tokyo Source preparation date; not Target reception, Human UI or Token Reset."
+    "updated_at": "2026-10-18",
+    "update_reason": "Ark27:10自身の受入れ・限定比較の到達点、GitHub整理主担当のHuman指定、二原本限定整合の実行承認とsuccess-cases移行検討のPlan-onlyを接続。Source09準備観測・固定収穫・先行成果は保持。",
+    "authority": "2026-10-18 JSTのCurrent Humanは、提示済みのStateとGitHub PLANの二原本限定整合を引用して実行承認。完了後のsuccess-cases/→references/案は調査・計画までと明示。09→10準備の先行承認はrevision1の履歴とSource09 Receiptに保持。",
+    "date_scope": "Asia/Tokyo current-alignment record date; not a regenerated Title/preparation date or newly inferred reception/UI date."
   },
   "identity": {
     "chapter": "Ark27",
@@ -19,7 +19,7 @@
     "title_status": "Compiled under the approved plan on the actual Source preparation date; Human correction and UI use remain separate.",
     "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
     "initial_theme": "Task化能力の向上",
-    "current_main_role": "Human–AI問題解決のMain同章継続。個別整理案件へ固定せずCurrent入力を受け取る。",
+    "current_main_role": "Human–AI問題解決のMain同章継続。2026-10-18のHuman指定により、本Threadはai-project全体のGitHub整理を主担当として継続し、全体状況・優先順位・次の改善を判断する。各Domain・案件・Actorの意味と原本所有を移管せず、Current入力を受け取る。",
     "existing_support": "Ark28:06",
     "support_time_scope": "準備時のCurrent Domain観測。以後の住所変更はCurrent DomainとHuman指定から解決し、Supportを新設しない。"
   },
@@ -30,7 +30,7 @@
     "final_attribution": "主の栄光 / kevod Adonai",
     "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
-    "scope": "Source09の五パス移行準備は実行承認済み。10は自身の受入れGate後、既に選ばれたARC-002/STR-002の限定比較をread-only/Plan-onlyで行える。別の既入力・Correctionがあればその対象と権限を解決する。",
+    "scope": "Current HumanはStateとGitHub PLANの二原本限定整合、そのGitHub保存・必要な検証・再取得を実行承認。success-cases/をreferences/へ移す案は、限定整合後に調査・比較・計画を提示して停止。先行のARC-002/STR-002限定比較は完了済みで、物理移行は未承認。",
     "source_preparation_paths": [
       "ark-project/ark27/ark27-09/state.json",
       "ark-project/ark27/ark27-10/README.md",
@@ -38,10 +38,20 @@
       "ark-project/ark27/ark27-10/state.json",
       "ark-project/README.md"
     ],
-    "target_next_task_boundary": "比較・推奨・計画まで。削除、本文改訂、他Thread State変更、固定Binding移行、旧Boot再演、新Trial、外部変更の承認ではない。",
+    "target_next_task_boundary": "二原本限定整合だけは実行可能。success-cases移行はPlan-only。削除・移動・Skill改訂/登録反映・固定Binding移行・他Thread State変更・旧Boot再演・新Trial・外部通信は本承認に含まれない。",
     "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
-    "source_transition_order": "移行準備を先に完了し、限定比較は次Thread10の受入れ後。比較を移行の前提Gateへ逆転しない。"
+    "source_transition_order": "移行準備を先に完了し、限定比較は次Thread10の受入れ後。比較を移行の前提Gateへ逆転しない。",
+    "current_execution": {
+      "date_jst": "2026-10-18",
+      "source": "Current Ark27:10 conversation: Human quoted and approved the two-original alignment plan; explicitly withheld success-cases relocation implementation.",
+      "paths": [
+        "ark-project/ark27/ark27-10/state.json",
+        "control-center/github/PLAN.md"
+      ],
+      "scope": "限定的な現在地更新と必要な検証・GitHub保存・Remote再取得",
+      "completion": "二原本から主担当/Goal・完了した比較・AI推奨とHuman決定の区別・次の範囲と権限が分かり、保存した実体を照合できる。"
+    }
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -232,16 +242,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "09の完了成果を保ち、10自身が受入れた後、互換依存の限定比較で次の改善対象または意図的保留を選ぶ。",
-    "current_coordinate": "Source09の移行準備から10の自己再構成へ接続する地点。Source09の初期revision1やVoice旧pendingへ巻き戻さない。",
+    "current_focus": "ai-project全体のGitHub整理を主担当として継続する。二原本の現在地を承認範囲で整合し、その後success-cases/→references/案の役割・依存・保存価値をPlan-onlyで検討する。",
+    "current_coordinate": "10自身の受入れとARC-002/STR-002限定比較を終え、2026-10-18のHuman指定・二原本更新承認へ進んだ地点。準備時の未観測、09初期State、Voice旧pendingへ戻さない。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "Handoff Gateを10自身が満たしてから既入力を解決する。今回選択済みの仕事は下記比較・計画。BootだけならHuman Reviewへ戻る。",
-    "next_specific_task": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
-    "target_boot": "NOT_OBSERVED_BY_SOURCE09",
+    "current_legal_connection": "承認された二原本更新を必要な検証まで行う。完了後は既入力のsuccess-cases移行案を調査・計画して停止する。入力の再要求やBoot再演をしない。",
+    "next_specific_task": "二原本限定整合の検証後、success-cases/をreferences/配下へ移す案を調査・計画する（移行は未承認）。",
+    "target_boot": "COMPLETED_BY_TARGET10_IN_THIS_THREAD; source preparation/publication and Human UI are separate.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE09",
     "ui_title": "NOT_OBSERVED_BY_SOURCE09",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "Source09の準備・公開・再取得はSource09 State progress.next_transitionで確認。10初期StateだけをRemote完了証拠にせず、既存の完了操作を重複しない。",
+    "active_external_operations": "現在の実行承認はauthority.current_executionの二パスのみ。実施・保存後確認はprogress.current_alignmentへ。Source09準備の最終Receiptは従来どおりSource09 progress.next_transitionが所有する。",
     "current_human_input_policy": "Receive any Human input already present; never require duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -420,21 +430,24 @@
       "10/14 Radio退役時点でVoiceは範囲外だったが、10/15 Dot担当で退役完了へ進んだ。古いpendingを現在の残作業に戻さない。",
       "次Threadで行う限定比較は、現在の通常利用・明示選択時の契約・固定版歴史参照を区別する。古いという理由で削除せず、旧Handoffがあるという理由だけで永久変更禁止にもせず、具体的な利益と依存を比較する。",
       "HumanはThread長大化を理由に、上記Next stepを次Threadから始めると指定した。移行の前に比較を終えるという新しい順番待ちを作らない。",
-      "2026-10-17の実行承認は提示した五パスの移行準備へ適用する。10/16のTitleは計画段階の候補で、計画で明示した日付扱いに従い実際の準備日10/17でCompileする。UI作成・Rename済みとは称さない。"
+      "2026-10-17の実行承認は提示した五パスの移行準備へ適用する。10/16のTitleは計画段階の候補で、計画で明示した日付扱いに従い実際の準備日10/17でCompileする。UI作成・Rename済みとは称さない。",
+      "2026-10-18: このThreadはai-project全体のGitHub整理の主担当。二案件の限定比較だけに主担当範囲を固定しない。各Ownerと他Actorの成果の帰属は保持する。",
+      "2026-10-18: 二原本の現在地整合は実行承認へ進んだ。引用中の旧Plan-onlyをこの更新の禁止へ戻さず、新しく指定されたsuccess-cases移行にはPlan-onlyを適用する。"
     ],
     "candidate_next": {
-      "subject": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
-      "status": "HUMAN_SELECTED_FOR_AFTER_RECEPTION; NOT_STARTED; READ_ONLY_PLAN",
-      "goal": "歴史の再現性と意味を保ち、現在の誤読・保守負担を減らす価値のある改善対象、または意図的保留を選べる状態にする。",
-      "goal_authority": "Humanは前のNext stepを次Threadから始めると指定し、この範囲を含む移行準備計画を承認。具体的方法はAI提案として採用された計画。",
+      "subject": "success-cases/をreferences/へ移す案の検討",
+      "status": "HUMAN_REQUESTED; PLAN_ONLY; IMPLEMENTATION_NOT_AUTHORIZED",
+      "goal": "成功事例の形成・根拠・成立条件を保持し、共有知識への入口と配置を改善できるか判断する。",
+      "source": "Current Ark27:10 Human request on 2026-10-18 JST.",
       "scope": [
-        "ARC-002 Workout Bridge元パスと直接のBinding消費先",
-        "STR-002 Living Graph/One-Table本文と直接の入口・State・固定参照"
+        "success-cases/現行本文",
+        "references/の役割と既存構成",
+        "現在の入口・直接参照・固定履歴・導入済みSkill等の影響"
       ],
-      "method": "PLAN current→案件記録→必要原本。現在の通常利用／明示選択契約／固定版歴史参照を分類し、現状維持・入口限定整合・明示Binding移行を比較する。",
-      "completion": "依存関係、推奨対象一件または意図的保留、理由、影響範囲と実行に必要な権限を提示して停止。",
-      "authority_boundary": "比較のみ。削除・本文改訂・固定Binding移行・旧Boot再演・新Trial・外部変更は別承認。",
-      "selection_conditions": "現在の誤誘導が具体的に見つかれば局所修正案を優先。具体的利益がなければ互換保持を選び比較完了としてよい。"
+      "method": "現物と参照を読み、現状維持・配下への移設・内容統合の意味の違いを比較する。採用する場合の具体的な配置・更新対象・保持対象・検証・権限を提示する。",
+      "completion": "移行の推奨または保留、その理由・影響範囲・計画をHumanへ返して停止。",
+      "authority_boundary": "調査・比較・計画まで。移動・削除・本文改訂・登録Skill反映・新しい記録ファイルの作成は未承認。",
+      "ordering": "Humanは二原本限定整合の完成後に検討する順序を指定。これを他のGitHub作業すべての共通Gateにはしない。"
     },
     "life_and_settings_boundary": {
       "source": "Source07 Runtime§5–7 and fixedSource harvest; TMS operation§4.2–4.3 and original experiences when needed",
@@ -459,10 +472,39 @@
         "owner": "control-center/github/README.md#change-records",
         "observation": "Current v0.2.3はSTR-016への接続を追加。今回の専門入口の全文照合で確認したが、別案件の本文読解・実装・実生活効果を09の成果へ取り込まない。"
       }
-    ]
+    ],
+    "completed_comparison": {
+      "subject": "Ark27:10でのARC-002/STR-002互換依存の限定比較",
+      "status": "COMPARISON_COMPLETED_BY_TARGET10; AI_HOLD_RECOMMENDATION_NOT_HUMAN_ADOPTED",
+      "actor": "Work / Ark27:10",
+      "goal": "歴史の再現性と意味を保ち、現在の誤読・保守負担を減らす価値のある改善対象、または意図的保留を選べる状態にする。",
+      "scope": [
+        "ARC-002 Workout Bridge元パスと直接のBinding消費先",
+        "STR-002 Living Graph/One-Table本文と直接の入口・State・固定参照"
+      ],
+      "method": "PLAN current→案件記録→必要原本。現在の通常利用／明示選択契約／固定版歴史参照を分類し、現状維持・入口限定整合・明示Binding移行を比較する。",
+      "result": "現在通常利用・明示選択契約・固定版歴史参照を分け、現状維持・入口限定整合・明示Binding移行を比較。既存入口の退役/方針撤回案内を確認し、今回の読取範囲では即時の本文/Binding移行の追加利益を確認できず、互換保持による意図的保留を推奨した。",
+      "dependency_findings": [
+        "ARC-002元パスと保管原本は同一blob。Ark23:08–12のQueryがRequired Source15として元パス/SHA/EOFを固定し、先行QueryのSHAにも依存する。保管済みであることだけでは元パス削除を許可しない。",
+        "STR-002のLiving Graph/One-Tableは通常入口で別Query方針を撤回済みだが、本文metadataと明示固定消費は別。Ark23:14/15のState・初期15 Handoff等の固定参照と、Current15のruntime-upgrade経路を区別した。",
+        "Ark00-01:03等のCurrent利用での観測SHAを永久pinへ一般化せず、固定歴史参照と独立した通常利用を分けた。既存の旧control-center住所も案内として機能し、機械的に破損と判定しない。"
+      ],
+      "evidence_scope": "本Thread自身の先行読解・比較応答。Source09や他AIの準備成功を比較実施の証拠にしない。対象の完全な外部consumer一覧・全実利用・旧Boot再現は未確認。",
+      "recommendation": "AI_RECOMMENDS_INTENTIONAL_HOLD_OF_PHYSICAL_MIGRATIONS",
+      "human_decision": "今回のHuman承認は二原本限定整合。二案件の保留推奨をHuman採用済みの決定へ格上げしない。",
+      "revisit": "具体的な現行誤誘導・重複更新負担・役割変更の証拠、または対象を定めた新しいHuman依頼がある時に再検討する。整理全体の停止や他作業の前提Gateにしない。"
+    },
+    "github_organization": {
+      "main_owner": "Ark27:10",
+      "designation": "2026-10-18 Current Human explicitly designated this thread as the main GitHub organization thread.",
+      "scope": "yusukefujiijp/ai-project全体",
+      "goal": "資料の目的・現在の入口・更新する原本・変更の影響・保存すべき来歴が分かり、成果を巻き戻さず次の有益な改善を選べる構造へ育てる。",
+      "role_boundary": "全体判断は本Thread、全体の現在欄はGitHub PLAN、個別案件の承認/実装/復元はARCHIVE/STR、内容の意味は各原本。別Thread/Dotsの実績・通信・生活Taskを引き取らない。",
+      "selection": "実際の誤誘導・重複更新・役割終了・保守負担と保存価値から対象を選ぶ。二原本整合や通常Unknownの全解消を他の許可済み作業の必須Gateにしない。"
+    }
   },
   "evidence": {
-    "source": "Fixed Source09 harvest and its cited current owners; source conversation/public repository evidence only. No ChatGPT long-term-memory export.",
+    "source": "Fixed Source09 harvest and cited public owners, plus this Target10's own reception/comparison/read records and current Human conversation. No ChatGPT long-term-memory export.",
     "source_observation_base": "da87b7cc66432d1cb360b8c813689cb4898cc03d",
     "confirmed": [
       {
@@ -492,6 +534,16 @@
         "claim": "The shared contract includes both Source and Target Title copy surfaces.",
         "basis": "v003-human-authorized, blob6b3ca6023ff8826603891eb0e1a8473526b96aeb; Source full-read exact-identity receipt.",
         "boundary": "Target must meet its own read/reconstruction contract; printed text is not observed Copy UI."
+      },
+      {
+        "claim": "Target10 completed its own reception and bounded ARC-002/STR-002 comparison before this alignment.",
+        "basis": "Own earlier reading/reconstruction record and acceptance/comparison responses in this same Ark27:10 conversation; now.completed_comparison.",
+        "boundary": "No borrowed Source success; no claim of independent Future AI understanding, Human UI verification or physical migration."
+      },
+      {
+        "claim": "Human designated this thread as main for GitHub organization and approved the two-original alignment.",
+        "basis": "2026-10-18 Current Ark27:10 conversation; quoted plan and explicit execution authorization.",
+        "boundary": "The success-cases relocation is explicitly planning-only; AI hold recommendation is not recorded as Human adoption."
       }
     ],
     "candidate": [
@@ -499,8 +551,9 @@
       "的確なPodcast Theme提案とArtifact-mediated Loopの持続的な学び・品質改善は価値あるGoalだが、今回の継承だけでは実証されない。"
     ],
     "unknown": [
-      "Target10自身の全文読解・再構成とHumanの実Thread作成・Title設定・起動本文貼付。",
-      "次の限定比較の結論、現行誤誘導の有無、将来の変更による具体的利益。",
+      "Human UI上のThread作成操作・Title設定・起動本文貼付の独立確認。Source09当時の未観測と、Target10自身の成立済み受入れを分ける。",
+      "ARC-002/STR-002の全外部consumer・将来変更の具体的効果、前回AI保留推奨のHuman採用。",
+      "success-cases移行の採否・実行承認・実施結果。",
       "現在の身体・場所・Task Realityと未報告の個別結果。",
       "Skillの自然選択・全Runtime互換性・実呼出し・持続的効果。共有/導入/本文取得/限定確認から自動推定しない。",
       "実際のToken Reset・残枠・モデルUI。Human報告は報告のまま保持する。"
@@ -508,7 +561,8 @@
     "historical": [
       "08→09はArk27:08からの同章継続。Humanが訂正したArk28:08表記は取り消し済み。",
       "08固定収穫revision3とCurrent08の終端Receipt、09初期revision1と09固定収穫revision2は異なる時点。",
-      "旧Plan v005の未実施試験は目的変更終了の履歴。10の必須Next Gateではない。"
+      "旧Plan v005の未実施試験は目的変更終了の履歴。10の必須Next Gateではない。",
+      "Source09準備時はTarget10受入れと限定比較が未観測だった。revision1のfalse/NOT_STARTEDは当時の観測であり、本Threadでの後続成立を否定しない。"
     ],
     "validation_boundary": "作成AIの整合点検・Remote本文一致、10自身の理解、Human UI、次の比較成果、実生活効果は別。通常Unknownの全解消を継承条件にしない。"
   },
@@ -517,13 +571,13 @@
       "branch": "ARC-002 original-path removal",
       "status": "PARTIAL_COMPLETION_AND_DEFERRED_REMAINDER",
       "owner": "control-center/github/ARCHIVE.md#arc-002",
-      "condition": "次Threadで具体的な固定Binding消費を限定比較する。元パス除去の実行は別の範囲・権限判断。比較や除去を移行準備の前提にしない。"
+      "condition": "Target10の限定比較は完了し、AIは互換保持・物理移行保留を推奨。Human採用とは区別する。元パス除去は具体的利益・依存・保存範囲と新しい実行権限から判断し、他作業の前提にしない。"
     },
     {
       "branch": "Graph/One-Table physical metadata and Binding migration",
       "status": "UNFINISHED_SEPARATE_BRANCH",
       "owner": "control-center/changes/STR-002-single-prompt-consolidation.md",
-      "condition": "次ThreadでCurrent入口・歴史再現・選択利用契約を分類して比較。物理改訂・他Thread State変更は未承認。移行準備や他仕事の必須Gateにしない。"
+      "condition": "Target10でCurrent入口・明示選択契約・固定歴史参照の比較は完了。物理改訂・他Thread State変更・Binding移行は未承認。AI保留推奨をHuman決定へ格上げせず、他仕事の必須Gateにしない。"
     },
     {
       "branch": "Other rankings/archives/wholeRepo redesign/lifeTrials/Schedules/research/newSkills",
@@ -563,10 +617,10 @@
       "owner": "ark-project/ark27/ark27-09/state.json#progress.next_transition",
       "policy": "Source09 records candidate/main rereads, routing and scope preservation after actual writes. Initial Target State does not self-certify its publication."
     },
-    "target_reconstructed": false,
-    "target_reconstruction_scope": "NOT_OBSERVED_BY_SOURCE09. Only10 can meet its own Handoff conditions; false is not a failed Boot.",
+    "target_reconstructed": true,
+    "target_reconstruction_scope": "Target10自身が、先行する本Threadの受入れでIdentity・Binding・Triad Consistency・R1–R6を満たした。Source09準備時は未観測だった事実と区別し、今回の保存でBootを再演しない。",
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE09; actual thread creation, compiled Title use and startup delivery are separate.",
-    "requested_outcome": "Source completes scoped preparation and remote readback and supplies Title/startup. Target10 reconstructs itself, then performs the selected read-only comparison and returns a grounded recommendation or hold.",
+    "requested_outcome": "二原本の現在地整合を保存・再取得まで完了し、その後、既入力のsuccess-cases移行案をPlan-onlyで検討してHuman Reviewへ戻る。",
     "verified_predecessors": [
       {
         "repository": "yusukefujiijp/ai-project",
@@ -584,8 +638,34 @@
         "revision": 1,
         "date": "2026-10-17",
         "role": "Initial09→10 continuation State. Source compilation and fixed harvest observed; Target reconstruction, Human UI and next comparison unobserved."
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-18",
+        "role": "Human-authorized two-original alignment: own reception/comparison, GitHub main-owner designation, separated execution and relocation planning authority; inherited evidence retained."
       }
-    ]
+    ],
+    "target_reconstruction": {
+      "actor": "Work / Ark27:10",
+      "status": "COMPLETED_IN_THIS_THREAD",
+      "evidence": "Own earlier full-read and reconstruction record, with initial ARK27_10_CONTEXT_READY_v001 response in this conversation.",
+      "read_scope": "Handoff beginning metadata/Identity through ARK27_10_HANDOFF_EOF_v001; Required Sources1–14 full in order, Source15 Identity/version and four declared ranges; truncation gaps recovered.",
+      "evidence_boundary": "This is Target10's own completed reception, not Source09 preparation/Remote receipt, other AI work, account UI confirmation or future reuse of a stale read record."
+    },
+    "current_alignment": {
+      "status": "CONTENT_PREPARED; REMOTE_READBACK_PENDING",
+      "paths": [
+        "ark-project/ark27/ark27-10/state.json",
+        "control-center/github/PLAN.md"
+      ],
+      "base_commit": "4a7c8df40ea8a66a85a3111256b74a3d71e3a839",
+      "base_blobs": {
+        "ark-project/ark27/ark27-10/state.json": "f062a80427d92ba630363461a1955619fc3c736d",
+        "control-center/github/PLAN.md": "441a3dd8f3296dc42acafc1cd95457bc161309ba"
+      },
+      "source": "2026-10-18 Human authorization in current conversation",
+      "verification_boundary": "Prepared content is not Remote success. After actual publication, reread both files and add the observed implementation receipt here; do not self-pin this mutable State."
+    }
   },
   "eof_sentinel": "ARK27_10_STATE_EOF_v002"
 }

@@ -1,20 +1,21 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.19.1"
+version: "0.20.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Legacy Radio and Voice snapshots retired; verification scope and recovery owned by STR-015"
+status: "Ark27:10 current position aligned; success-cases relocation remains planning-only"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-15"
+updated: "2026-10-18"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "STR-015 Voice legacy snapshot retirement; preserve lesson data, prior Radio evidence and unrelated diagnoses."
+updated_reason: "Human-authorized two-original alignment: GitHub main owner, completed comparison, recommendation versus Human decision, and success-cases planning boundary."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.19.1"
-current_observation_base: "bcce675c55f90cc527e4050dacbe77c70cad8d4d"
-change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.20.0"
+current_observation_base: "4a7c8df40ea8a66a85a3111256b74a3d71e3a839"
+change_record: "../../ark-project/ark27/ark27-10/state.json"
+prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
 ---
 
 <a id="ai-project構造整理--診断から改善へ"></a>
@@ -24,6 +25,22 @@ change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover
 本書は**ai-projectのGitHub整理計画**である。共通の整理目的は[親入口](../README.md)、GitHub領域の使い方・形成史は[専門入口](README.md)へ。個別案件の承認・実施・検証は[ARCHIVE](ARCHIVE.md)／[changes](README.md#change-records)が所有する。本書に第二の承認台帳や、各Thread・生活TaskのCurrentを作らない。
 
 ## current
+
+### 現在の主担当と次の判断 — Ark27:10
+
+<a id="ark27-10-current-alignment"></a>
+
+2026-10-18 JST、HumanはArk27:10を、引き続き**ai-project全体のGitHub整理の主担当**と明示した。Goalは、資料の目的・現在の利用入口・更新する原本・変更の影響・保存すべき来歴を、Current AI・他AI・Future AIが根拠から理解し、既存成果を巻き戻さず次の有益な改善を選べる構造へ育てること。本Threadが全体の優先順位を判断し、各Domainの意味、各案件の承認・実装・復元、Dots／他Workの成果は各所有先に保つ。GitHubという媒体だけでhouse・生活・研究の仕事を引き取らない。
+
+本改訂は、Humanが引用して実行承認した、[Ark27:10 State](../../ark-project/ark27/ark27-10/state.json)と本PLANの二原本限定整合である。StateはThread自身の受入れ・比較の到達点と現在の権限を所有し、本欄は全体の次の判断へ接続する。Source09準備時の未観測をTarget10の失敗にせず、Source09の固定収穫・最終ReceiptとTarget自身の成果を分ける。今回の実施・保存後確認はStateの `progress.current_alignment` へ戻る。
+
+**限定比較は完了、物理移行は未実施。** Ark27:10は[ARC-002](ARCHIVE.md#arc-002)のWorkout Bridge元パスと、[STR-002](../changes/STR-002-single-prompt-consolidation.md)のLiving Graph／One-Table本文・直接のBinding消費先について、現在通常利用・明示選択契約・固定版歴史参照を区別し、現状維持・入口限定整合・明示Binding移行を比較した。元パスの厳密参照と先行Queryへの依存、通常入口での既存の退役／方針撤回案内を踏まえ、今回の確認範囲で即時移行の追加利益は確認できず、AIは互換保持による意図的保留を推奨した。この推奨をHuman採用済みの決定にはせず、二原本更新の承認もBinding移行へ拡張しない。比較結果と再検討条件はStateの `now.completed_comparison` が所有する。
+
+**次の既入力はsuccess-casesの配置検討。** Humanは二原本整合の完了後、[success-cases](../../success-cases/README.md)を[references](../../references/README.md)へ移す案を検討するよう依頼し、移行実装は明確に留保した。現行本文の価値・役割、入口・直接参照・固定履歴・Skillへの影響を調べ、配置案、理由、影響範囲、検証と必要な権限を提示して止める。現在の承認から移動・削除・Skill反映を開始しない。
+
+直近の別担当成果として、[STR-016](../changes/STR-016-problem-solving-foundation.md)はproblem-solving基盤、[STR-017](../changes/STR-017-problem-solving-skill-alignment.md)は名称・Skill接続と旧共有配置の退役を所有する。10は所有記録を読んで現在の判断へ接続しており、他Threadの実装を自身の実績へ変更しない。保存、登録本文取得、README resource取得、自然発動、実生活の効果を一つの完了へ潰さない。個別の状態・検証・残るUnknownは各STRへ戻る。
+
+二原本整合、ARC-002／STR-002の移行、通常Unknownの全解消を、今後の調査や別の承認済み作業の必須Gateにしない。物理的な整理は、実際の誤誘導・重複更新・役割終了・保守負担と、保存価値・依存・現在のHuman依頼から選ぶ。候補の存在や過去の順位は実行承認ではない。
 
 ### 直近の整理：Voice旧JSONLの退役
 
@@ -552,4 +569,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.19.1
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.20.0
