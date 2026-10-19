@@ -1,15 +1,15 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.8.0"
+version: "0.9.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "success-cases/README.md"
 role: "Success discovery and reading entry"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
-updated: "2026-10-03"
-last_reality_reviewed: "2026-10-03"
-updated_reason: "Add the Human-recognized naming success; preserve the distinction between existing skills, new concept names and unmeasured effects."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.8.0"
+updated: "2026-10-19"
+last_reality_reviewed: "2026-10-19"
+updated_reason: "Add the Human-valued leading response status marker case; preserve historical success and separate current rules from observed reception."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.9.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -32,6 +32,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | [一つのスキル入口で、複数の問題を同時に解く — 場面に適応する成功法則](one-skill-entry-multiple-benefits.md) | Humanが移行・Plan Mode・思い出しハブ構想を三回の成功として結び、続いて現在地mapにも共通する、入口の一択化とAIによる方法選択を見出した | 共通スキルのハブ化、想起支援、テーマが変わっても使える現在地map、複数問題同時解決を設計する時 |
 | [現役ログを一つに決め、固有な形成史を残した判断](decisive-choice-single-log-preserved-history.md) | 冗長性と耐性の問いに、資料の役割と根拠を分け、一案へ決めて返したことをHumanが好評価した | AIが根拠ある推奨を引き受ける時、現役更新先の単純さと歴史保存を両立させる時 |
 | [スキル名を再利用できる入口へ育てる](skill-naming-as-reusable-handles.md) | HumanがPlan Mode・Living Review・load・save等に、意味の深化と簡潔な命名が両立する流れを見出した | Naming Importance、共同注意を支える名前、短い入口と明確な責務の関係を考える時 |
+| [先頭の一記号で応答状態を伝える](leading-response-status-markers.md) | Humanが自然な先頭💭を評価し、単発回答にも✅を対応させる訂正を経て、表示の簡素化を成功と認めた | 応答状態の判別、表示の簡素化、Human Feedbackによる改善を考える時 |
 
 起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
 
@@ -76,4 +77,4 @@ Current Human Request、[AGENTS.md](../AGENTS.md)、対象Runtimeに従う。Hum
 
 事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
 
-EOF::SUCCESS_CASES_README::v0.8.0
+EOF::SUCCESS_CASES_README::v0.9.0
