@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.1-candidate"
+version: "v004.2-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-13"
+updated: "2026-10-19"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -58,7 +58,15 @@ visualization_binding_patch:
   source: "ark-project/ark99/ark99-02/task-records.json"
   source_ref: "visualize-s08"
   scope: "Conditional Ark visualization skill routing; existing authority and full-read contracts retained"
+ai_prompt_boundary_patch:
+  date: "2026-10-19"
+  source_thread: "Ark99:04"
+  source_lesson: "references/lessons.jsonl"
+  source_lesson_id: "b7011ca6-75fa-4a7f-a651-84fe168f9b91"
+  authority: "Human requested saving the code-block boundary rule and reflecting it in applicable instructions"
+  scope: "Human-mediated AI Prompt display; account settings, delivery and recipient understanding remain separate"
 updated_reason:
+  - "2026-10-19: Ark99:04 Human requested a single code block per transferable AI Prompt, with Human commentary outside; add the shared output rule without initiating further dialogue."
   - "2026-10-13: Ark99:02 Human approved a bounded visualize-patch read route for interactive visualization work and capability alternatives; ordinary tables and simple diagrams are outside the trigger."
   - "2026-10-10: STR-014 routes to the modernized collaboration Covenant and describes prompts as self-contained bodies; authority, reading and recovery contracts retained."
   - "2026-10-05: ARC-010 aligns the README role with its AI-first declaration and removes the retired Ark System live route; common authority, reading and completion contracts unchanged."
@@ -219,6 +227,16 @@ Current HumanのExact Output、JSON-only、code-only、Boot / Failure形式等�
 Living Reviewでは、今回の判断、関係、根拠、必要なら一手・観察点・修正条件を示す。すべてを毎回別Sectionとして埋めたり、固定質問や新Taskで締めたりしない。BrainDump中の接続は、言語化、比較、未接続素材の保持、意図的保留でもよい。
 
 新しいActual RealityやHuman Correctionで何が変わったかを説明する。表、図、用語の新しさだけをLivingや成功の証明にしない。単発成功、継続成功、因果説明、普遍的有効性を分け、主観的好結果はHuman評価として尊重する。
+
+<a id="ai-prompt-transfer-boundary"></a>
+
+### 6.1 Human-mediated AI Prompt / 転送本文の境界
+
+HumanがCopy & Pasteして他AIへ渡すPrompt・返信・起動Query等を提示する時は、一件の転送本文全体を一つのfenced code blockで囲む。Title・宛先・Version等を付ける場合は、それらから本文末尾までを含める。Human向けの前置き・補足・保存報告はブロックの外へ置き、転送範囲をHumanに選び直させない。独立した複数の転送本文が必要な場合は、それぞれの宛先・用途が分かるよう別のブロックにする。
+
+通常は `text` を用い、本文中にもcode fenceがある時は、外側のfenceを内側より長くする等、本文を壊さず全体を囲む。通常のHuman向け回答全体をコード化する規則にはせず、現在の厳密な出力指定・専用Failure形式等は本書の優先順位に従う。
+
+目的は、渡す本文の境界を明確にし、必要な内容を一単位でコピーできる形にすること。本文の提示、Copy UIでの操作、相手への送達・理解、設定反映は別々の成立条件であり、この表示規則から送信や別Taskの実行権限を作らない。形成根拠は[共有lesson](https://github.com/yusukefujiijp/ai-project/blob/main/references/lessons.jsonl)の `b7011ca6-75fa-4a7f-a651-84fe168f9b91` を参照する。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
