@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_06_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 3,
+    "revision": 4,
     "created": "2026-10-14",
     "updated": "2026-10-20",
     "canonical_path": "ark-project/ark28/ark28-06/state.json",
     "date_scope": "Asia/Tokyo: retain 2026-10-14 preparation and 2026-10-20 navigation history; current-position observations are separately attributed.",
-    "change_reason": "Human-authorized one-State current-position update: connect completed Ark100 meaning/Skill/startup and transition-tooling outcomes to their owners, retain evidence boundaries and remaining Unknowns; preserve identity, authority, fixed bindings and prior navigation revision.",
+    "change_reason": "Human-authorized06→07 six-path preparation and direct ChatGPT delivery through acceptance. Preserve original identity/authority/fixed bindings/preparation/navigation history; append next_transition terminal receipt.",
     "navigation_revision": {
       "previous_snapshot": "369b5f1f287d212848def6121a2ad374aa3e2d77",
       "authority": "Current Human approved per-skill README consolidation, Query-folder removal and GitHub execution.",
@@ -204,10 +204,10 @@
     "existing_input": "Receive any already supplied current Human request after mandatory gates; do not ask it to be repeated.",
     "boot_only": "Evidence-backed acceptance, own exact Title at beginning, adjacent Living Review and Next step at end, then Human Review.",
     "current_request": {
-      "kind": "SAVE_CURRENT_POSITION_DELTA",
-      "scope": "ark-project/ark28/ark28-06/state.json only",
-      "completion": "Connect completed outcomes, owning originals and remaining Unknowns; preserve initial preparation history and all bindings; publish then retrieve and compare the full remote State.",
-      "boundary": "This save does not create a new Thread/transition, perform a body trial, transfer Main, or certify a new full boot under navigation revision v001.1."
+      "kind": "EXECUTE_APPROVED_SAME_CHAPTER_SUPPORT_CONTINUATION",
+      "target": "Ark28:07",
+      "scope": "Approved six paths on GitHub main, reread; existing Ark28 Project, one persistent07, saved Query send, exact Title and receiver evidence; Current06 terminal receipt and reread.",
+      "boundary": "Migration and acceptance only. No physical trial, Main transfer or other case migration."
     },
     "preparation_observation": {
       "date_jst": "2026-10-14",
@@ -283,10 +283,9 @@
       }
     ],
     "next_connection": {
-      "default": "今回の保存とRemote確認後、既に届いているHuman入力を受け取る。なければHuman Reviewへ戻る。",
-      "if_live_input": "実地のB-Zone入力や重要Correctionが来たら、その現在の意向・条件とGuardを優先し、管理作業の完了を支援条件にしない。",
-      "if_next_transition": "具体的な移行依頼が来た時にCurrent prepare-ark-transitionと適用契約を使う。このState保存から移行先・起動Query・送信権限を作らない。",
-      "ownership": "Ark100の動的な案件/予備は00と各ケースの所有範囲。Ark99:04の閉じた照合やMainの仕事を再開・引取りしない。"
+      "default": "Complete authorized06→07 publication, actual delivery/Title/receiver checks, and terminal receipt reread; thereafter07 receives new Human input, boot-only Human Review.",
+      "if_live_input": "Later Human Correction/STOP and body/other applicable Guards retain priority.",
+      "ownership": "Completed06 work remains complete; Ark100 dynamic cases/reserve and other owners are not changed by this transition."
     }
   },
   "evidence": {
@@ -493,6 +492,63 @@
       "transition_tooling": "SHARED_AND_REGISTERED_UPDATE_VERIFIED; CURRENT_LESSON_REUSE_OBSERVED",
       "current_position": "OWNER_LINKS_AND_REMAINING_UNKNOWNS_COMPILED",
       "receipt_policy": "No self-SHA. The publication commit and actual save-response reread establish persistence of this revision."
+    },
+    "next_transition": {
+      "source": "Ark28:06",
+      "target": "Ark28:07",
+      "transition_kind": "THREAD_CONTINUE",
+      "role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "compiled_title": "Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "authority": {
+        "date": "2026-10-20",
+        "source": "Latest direct Human approval after the plan and candidate Title",
+        "scope": "Six approved paths, GitHub main publication/reread, existing Ark28 Project/current ChatGPT account, one persistent07/saved Query/exact Title/receiver evidence, this terminal receipt/reread.",
+        "excluded": [
+          "physical trial",
+          "Main transfer",
+          "other case migration"
+        ]
+      },
+      "fixed_source": {
+        "commit": "e15a7398efa68958c0584e8787faf7caf10f587d",
+        "path": "ark-project/ark28/ark28-06/state.json",
+        "blob_sha": "e5e2ffda88f1faceb288abc8b09aa353facdba81",
+        "revision": 3
+      },
+      "paths": [
+        "ark-project/ark28/ark28-07/README.md",
+        "ark-project/ark28/ark28-07/handoff.md",
+        "ark-project/ark28/ark28-07/state.json",
+        "ark-project/ark28/ark28-06/state.json",
+        "ark-project/ark28/README.md",
+        "ark-project/README.md"
+      ],
+      "source_prepared": "CONTENT_COMPILED; SOURCE06_ORIGIN_AND_BINDINGS_PRESERVED",
+      "remote_verification": {
+        "status": "NOT_YET_OBSERVED_IN_THIS_PREPARATION_REVISION",
+        "policy": "Fill actual commit/full reread observations after publication; no self-SHA or self-verifying future claim."
+      },
+      "delivery": {
+        "status": "NOT_STARTED_AT_PREPARATION",
+        "account": "Current Human ChatGPT account",
+        "project": "Existing Ark28 Project; actual Project binding to inspect",
+        "duplicate_policy": "Inspect actual existing match/messages/response before create or resend.",
+        "thread_url": null,
+        "query_sent": false,
+        "exact_title_observed": false
+      },
+      "actual_target_reconstruction": "NOT_OBSERVED_AT_PREPARATION",
+      "target_reconstruction_receipt": null,
+      "human_last_mile": "Source direct operation authorized; Human device access and real use remain unobserved.",
+      "requested_outcome": "IN_PROGRESS; PUBLICATION_THEN_ONE_ACTUAL07_ACCEPTANCE",
+      "remaining_unknowns": [
+        "actual07 UI/delivery/receiver response before observation",
+        "Human device access and practical effects",
+        "cross-runtime/long-term approval-friction benefit"
+      ],
+      "receipt_policy": "This existing Source06 State owns the terminal receipt. Actual saving commit/reread of this file is reported by the saving operation and final response, without embedding its own hash."
     }
   },
   "eof_sentinel": "ARK28_06_STATE_EOF_v001"
