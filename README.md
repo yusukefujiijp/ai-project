@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v015"
+version: "v016"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v014 preserved in Git history; v015 routes recovery and breakthrough learning through references and links the flexible README principle while retaining direct success discovery and existing ownership"
+version_basis: "v001-v015 preserved in Git history; v016 adds agents and the shared AI-to-AI communication manual as navigation entries while retaining existing ownership and review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-20"
 last_reality_reviewed: "2026-09-19"
@@ -65,7 +65,13 @@ references_and_readme_alignment:
     - "control-center/changes/STR-018-flexible-readme-principle.md"
     - "control-center/changes/STR-019-references-learning-memory.md"
   scope: "References and direct success-case discovery plus routing to the AGENTS-owned README principle; no whole-repository or behavioral revalidation"
+ai_communication_entry_alignment:
+  date: "2026-10-20"
+  base_commit: "e72b6a5616d66f6c2b4afc1377cbfd78ed5c9e53"
+  change_record: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
+  scope: "Agents and AI-to-AI communication discovery only; no root redesign, Dots relocation or whole-repository revalidation"
 updated_reason:
+  - "2026-10-20: Connect agents and the common AI-to-AI communication manual with its experience originals; preserve Board Current and the existing Dots location."
   - "2026-10-20: Describe references as the recovery and breakthrough learning entry, retain direct success-case discovery at its new path, and route README creation and improvement to AGENTS §1.1."
   - "2026-10-17: Add problem-solving as a problem-oriented discovery entry; keep case, experience, specialist knowledge and method ownership distinct. Align displayed entry version."
   - "2026-10-14: Add lifestyle/README.md as a scoped discovery entry; chocoZAP records and methods remain with their domain owner."
@@ -150,13 +156,14 @@ foundation_migration:
 | ArkのRoot・Identity・協働の意味を回復し、成長の仕組みを理解する | [ARK.md](ARK.md)。[成長と再投入は§8](ARK.md#8-organic-growth-engine--有機的成長engine)、[資料の役割は§12](ARK.md#12-ark-file-ecology--器官の役割) |
 | 承認済みの作業を継続・再開する | Current Requestと対象のNearest README / Handoff、[AGENTS.md](AGENTS.md) §4・§5 |
 | Thread・章移行やSupport再接続を準備する | [共有移行契約](prompts/ai-next-thread-handoff.md)と、その依頼に適用されるRuntime |
+| AI間で共通の前提を読み、経験を今回の協働へ生かす | [ai-to-ai-communication](agents/ai-to-ai-communication/README.md)。対話する双方が読む共通マニュアルと経験原本への入口 |
 | Domain・方法・経験の保存先を探す | [Repository Router](#5-repository-router--主要入口) |
 
 共通のAgent判断・読取・権限・完了契約はAGENTSが所有する。このREADMEの案内を、追加の承認条件や全資料の読込命令として扱わない。
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v015 / Current-request Repository Front Door
+- Repository入口: README v016 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -204,6 +211,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`problem-solving/README.md`](problem-solving/README.md) | 困りごとからGoal・判断・根拠へ戻る入口 | 問題全体の現在判断や次に解く接続を扱う時。既存の経験原本・専門知識・方法へつなぎ、全案件の進捗を重ねて持たない |
 | [`references/README.md`](references/README.md) | 回復と突破の継承基盤／共有lessonsとsuccess-casesへの入口 | 過ちからの回復、再発防止、価値ある成功の条件など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
+| [`agents/README.md`](agents/README.md) | AI間協働の方法と経験への入口 | 双方が同じ共通原本を読み、今回の目的・役割・権限へ適用する時。通信のCurrentはBoard、Dots固有の運用は既存Dots原本へ |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
 | [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |

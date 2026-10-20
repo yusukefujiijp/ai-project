@@ -4,9 +4,15 @@ canonical_path: "dots/README.md"
 version: "v012"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-17"
+updated: "2026-10-20"
 role: "Current Dots direction, actor-aware one-request recovery, and routes to shared lessons, operations and history"
-updated_reason: "Connect existing load to universal Dot recovery; add a short primary Query while preserving the URL fallback and one recovery contract"
+updated_reason:
+  - "2026-10-20: Add common AI-to-AI communication and experience navigation only; Dots paths, one-request recovery and operational save contracts remain unchanged."
+  - "2026-10-17: Connect existing load to universal Dot recovery; add a short primary Query while preserving the URL fallback and one recovery contract."
+communication_navigation_patch:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
+  scope: "Communication navigation only; v012 recovery identity, EOF and existing operation paths retained"
 revision_approval_source: "conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d"
 repository: "yusukefujiijp/ai-project"
 expected_eof: "EOF::DOTS_HOME::v012"
@@ -26,6 +32,8 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 
 現在は、dotsをHuman-AI協働を育てる軸、control-centerをRepository全体の構造改善を育てる軸として接続する。この二軸の間や既存Workとの報告・質問・返信には[Board](../board/README.md)を使い、まず実際の一件を試してFeedbackから柔軟に修正する。Boardは通信の所有先であり、第三のMission Authorityではない。v002での接続変更の理由と証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)が所有する。
 
+AI間で対話する双方は[ai-to-ai-communicationの共通マニュアル](../agents/ai-to-ai-communication/README.md)から、今回の目的・役割・権限と必要な経験へ接続する。共通方法と[過去対話の経験原本](../agents/ai-to-ai-communication/experiences/README.md)は同領域、宛先・通知・通信CurrentはBoard、Dots固有の運用と保存先は引き続き本領域が所有する。2026-10-20のこの案内追加は、`dots/`の移設や製品側の予定・登録Skillの切替を含まない。
+
 現在の全体方向を更新する場所はこのREADME。個別Actorの身元・持ち味、時点を区切った経験、実装変更の記録は別の所有資料へ委ね、同じCurrent方針を複数箇所で更新しない。
 
 ## 2. 入口と所有先
@@ -33,6 +41,7 @@ Humanは、急いで体系を一気に確定するより、意図を一つずつ
 | 知りたいこと | 読む場所 | 役割 |
 |---|---|---|
 | このDotの協働を一度の依頼で復元するには | [一括復元](#one-request-recovery)／[共通Query](#dots-recovery-query) | 受け手を照合し、共通基盤・固有の役割・現在の仕事へ戻る |
+| AI間で共通の前提を読み、過去の対話経験を生かすには | [ai-to-ai-communication](../agents/ai-to-ai-communication/README.md) | 双方が読む共通方法と経験への入口。役割・能力・権限の違いを保持して今回へ適用する |
 | 協働相手へ何を伝え、どんな返答があったか | [Board](../board/README.md) | 宛先・通知版・実際の受信と返答。初回はMain27:07／Support28:02への紹介・変更報告 |
 | 初穂の定期Ark Mapと限定saveをどう運用するか | [Ark Map運用原本](ark-map/README.md) | dot-0000固有の表示・読取・保存境界。製品側の予定・実行状態とは分ける |
 | 前日の活動を総括し、未保存の意味ある差分をどう回収するか | [日次総括の運用原本](daily-review/README.md) | 対象日・原本照合・限定save・未確認分の回復。既存Mapを保ち、日次予定と実際の確認結果を分ける |

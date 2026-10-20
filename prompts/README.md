@@ -4,13 +4,17 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-12"
+last_updated: "2026-10-20"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
 deadline_prompt_update: "control-center/changes/STR-004-elon-musk-deadline-revision.md"
 shelf_authority_alignment: "control-center/changes/STR-011-prompt-shelf-authority-alignment.md"
 prompt_modernization: "control-center/changes/STR-014-super-special-prompt-modernization.md"
+ai_communication_navigation:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
+  scope: "Sections 3.4 and 4 route to the common agents manual; prior v002 candidate body and its historical evidence are retained"
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
@@ -120,27 +124,11 @@ Plan Modeは[共有Skill](../skills/plan-mode/SKILL.md)と[一つの統一Query]
 
 ### 3.4 AI-to-AI Communication
 
-```yaml
-runtime: "prompts/ai-to-ai-communication.md"
-activation: "同じ本体の§10・§16"
-role: "Human-mediated Cross-AI Message / Material Delta / finite convergence runtime"
-status: "v002 single-prompt candidate / historical v001.1 evidence retained / not canonical"
-origin: "Alan Kay式AI間コミュニケーション / Ark式温故知新のFirstfruits"
-```
+現在の共通原本は[agents/ai-to-ai-communication/README.md](../agents/ai-to-ai-communication/README.md)。対話する双方が読み、目的・求める判断・役割・能力・実行権限へ適用する。モデル・推論・速度の構成選択、批評と訂正、送達と理解の観測、中断回復、両側の文脈継承を扱う。Humanへ毎回の説明・手動中継を要求せず、現在の権限と利用可能な経路で協働する。
 
-```text
-Protocol Arrival
-→ Mission Binding and Semantic Resolution
-→ Role Eligibility / Human Re-Binding when needed
-→ AI-A Message
-→ YusukeJP routes meaning, Source, and requested Material Delta
-→ AI-B returns Material Delta with Witness Integrity
-→ Continue only while Material Delta exists
-→ Terminal Synthesis
-→ Human Final Seal
-```
+過去の対話本文と成立条件は[同領域のexperiences](../agents/ai-to-ai-communication/experiences/README.md)へ進む。本棚は共通方法や経験本文を複製しない。今回の判断に効く経験を選んで深く読み、当時の成功・AIの解釈・別場面への再現を区別する。
 
-AI-to-AI Communicationは、Protocol Arrival・Role Eligibility・Semantic Bindingを実行前Gateとし、`Message`をCommunicationの中心単位、`Material Delta`を進行単位として、複数AIの異なるLensを有限往復で一つのHuman-reviewable成果へ収束させる。Alan Kay氏のMessage-centered LensをOrigin Anchorとして保持するが、Human Semantic Router、Material Delta Stop Rule、Terminal Synthesis等のArk AdaptationをAlan Kay本人へ誤帰属しない。
+[旧候補Prompt](ai-to-ai-communication.md)は`v002-candidate / not canonical`の本文と、Alan Kay式Message-centered Lensに由来する設計・historical v001.1 evidenceを保持する研究・形成史の参照先である。本文の移動・削除・全面改訂は行っていない。旧Protocol Arrival、Role Eligibility、Human Re-Binding等を、新しい共通原本の必須Gateとしてこの入口から適用しない。旧版の明示的な検討依頼では、その版の意味と現在の権限を区別して読む。
 
 ### 3.5 AI Living Graph Mode
 
@@ -332,7 +320,7 @@ HumanはMission Owner、Semantic Router、Relevance Filter、Decision Authority�
 
 共通の実行境界・継続回復は[AGENTS.md](../AGENTS.md)第5節が所有する。Plan-only・STOPを保持し、承認済みScope内は必要な確認まで完遂する。物理的な受渡しや作業の委任と、Humanの意味・権限の移管を混同しない。外部送信は現在の承認と利用可能な経路を確認し、文書の保存と相手への送達を区別する。
 
-通信の目的・相手・受渡し条件を具体化する必要があるときは[AI-to-AI Communication](ai-to-ai-communication.md)へ進む。本棚は、その個別契約を置換せず、毎回の複数AI起動や固定の通信手順を要求しない。
+AI間で通信する双方は[ai-to-ai-communicationの共通原本](../agents/ai-to-ai-communication/README.md)を読み、目的・相手・求める判断・受渡し条件へ適用する。本棚はその方法を複製せず、毎回の複数AI起動や固定の往復数を要求しない。通信Currentは[Board](../board/README.md)と対象Topic、Thread移行は[現行の共通移行契約](ai-next-thread-handoff.md)と適用Runtimeへ接続する。
 
 ---
 

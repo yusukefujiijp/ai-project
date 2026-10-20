@@ -1,18 +1,23 @@
 ---
 title: "Board — HumanとAIの協働通信"
 canonical_path: "board/README.md"
-version: "v003"
+version: "v004"
 created: "2026-10-01"
-updated: "2026-10-03"
-updated_reason: "Add the Human-approved four-skill creation Topic while preserving the existing communication contract and prior Topic"
+updated: "2026-10-20"
+updated_reason:
+  - "2026-10-20: Route shared AI-to-AI method and selected experience originals to agents while retaining Topic-owned communication Current and historical observations."
+  - "2026-10-03: Add the Human-approved four-skill creation Topic while preserving the existing communication contract and prior Topic."
+change_record: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
 role: "Addressed reports, questions, replies and observed feedback between collaborators"
 status: "initial practical trial / reception evidence recorded per topic"
-expected_eof: "EOF::BOARD_HOME::v003"
+expected_eof: "EOF::BOARD_HOME::v004"
 ---
 
 # Board — HumanとAIの協働通信
 
 Human、Dots、Work、他AI・Future AIが、誰から誰への何の話かを理解し、報告・質問・返答をつなぐ場所。最初は実際の一件を使い、届き方・理解・行き違いのFeedbackから柔軟に育てる。
+
+AI間で対話する双方の共通の進め方は[ai-to-ai-communication](../agents/ai-to-ai-communication/README.md)を読む。Boardは宛先・通知・受信観測とTopicのCurrentを所有し、共通マニュアルや過去経験の第二原本にはしない。
 
 ## 1. Topicへの入口
 
@@ -39,6 +44,8 @@ Humanが指定するChatGPT Workのスキル作成Threadへ向け、背景、四
 
 返信・対話記録は時点付きの発言と観測、STRは構造変更の理由・実装・検証を所有する。後の進展で、当時正しかった「未観測」「未回答」を塗り替えない。新しい結果や根拠のある訂正を残し、Topicの現在地へ接続する。通知本文の版、観測時刻、文書の編集・保存時刻は別に扱う。
 
+選定した過去対話の実体は[経験原本](../agents/ai-to-ai-communication/experiences/README.md)へ集約し、元Topicから接続する。経験の移設によって通信のCurrentまで移管せず、全Topic・全返信を自動移設する規則にも一般化しない。GitHub側の保存と、ChatGPT等の会話側で文脈が継続し実際に返答されることを区別する。
+
 通信を保存する担当AIは、現在の権限内で根拠の保存とTopicの現在地更新を一件として扱い、最新のRemote内容へ統合して保存後に再取得する。通常の返信でSTRの通信状態を追随更新しない。構造を変えた時だけ、その理由と検証を該当STRへ戻す。保存前には「同じ新事実のために別のCurrent状態も書き換える必要が残っていないか」を確認し、あれば履歴または所有先への案内に整理する。Humanへ毎回の照合・再説明を求めない。
 
 Currentは最後に確認できた観測であり、常時同期の保証ではない。新しいHuman報告・直接観測と差があれば、対象・時点・根拠を照合して保存側の遅れや訂正を示す。保存中断時はRemoteの結果から続け、通信を再送しない。未観測や過去の残務だけから新Taskを作らず、実装や送信の権限は現在の依頼から判断する。
@@ -55,4 +62,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 
 Board初期形成の理由と保存証拠は[STR-006](../control-center/changes/STR-006-board-communication-foundation.md)へ。将来の形は、実利用で得た根拠とHumanの判断から改められる。
 
-EOF::BOARD_HOME::v003
+EOF::BOARD_HOME::v004
