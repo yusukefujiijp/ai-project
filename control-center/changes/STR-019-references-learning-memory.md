@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 ref: "main"
 base_commit: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
 actor: "Work / Ark27:10"
-status: "Human-authorized staged implementation; runtime cutover and retirement observations recorded below"
+status: "Consolidated, known registered routes updated, old paths retired and remote content verified; field effects unverified"
 expected_eof: "EOF::STR_019_REFERENCES_MEMORY::v001"
 ---
 
@@ -75,5 +75,34 @@ ARKはv003 Identity・EOF・Core・last_reality_reviewedを保持するnavigatio
 4. 各公開前にmainを再確認し、非forceのexpected SHAで更新する。変更本文・新旧住所・対象外blob/mode・JSONL同一性をRemoteで確認し、有限の観測追記で閉じる。
 
 構造・保存・登録・本文取得・別AIの読解・実利用の効果は別々の成果である。登録先の確認が阻害される場合は該当旧互換元を残し、独立に完了したREADME原則等を巻き戻さない。今回を全Runtime切替や自然発動の証明にしない。具体的な公開・検証結果は後続の観測欄へ記す。
+
+## 6. 実装後の観測 — 2026-10-20
+
+### 新配置と現用参照
+
+[実装commit 66daf53e](https://github.com/yusukefujiijp/ai-project/commit/66daf53e23d54be6bf52341bc7cb3cdcdd7f2170)（parentは本記録のbase_commit）で28パスを更新・追加した。16既存更新・12新規で、旧互換元はこの段階では保持した。公開した28本文をmainから全文再取得し、候補と全件一致を確認した。対象外581ファイルのblob/modeは基点と同じだった。
+
+公開前の機械確認では25 Markdownのmetadata／宣言されたEOF、新規または変更した56相対リンクとローカルに本文がある4fragment、共有lessonの4行のJSON構文とbyte完全一致を確認した。7成功事例は配置metadataと必要な相対リンクを逆変換すると元全文と一致した。referencesの初版形成§5、PLANの診断履歴、StateのIdentity・Binding・固定証拠・既存outcomes・先行Receiptを保持した。限定した別AIレビューでStateの古いCurrent権限欄を発見し、当時の内容をexecution_historyへ保存して現権限へ整合した。
+
+### 登録済みSkillの保存と取得
+
+既存WriterとMAPを再作成せず、前者の2 URL、後者のpackaged source-routingの1入口だけ変更した。Skills保存先の基点は `c9b55e8217b62bb7c4dd68b286cc011f4cf52a58`。二件をまとめた最初のpushはHTTP 422を返し、Remote headと旧本文から未反映を確認した。原因を断定せず、一件ごとの保存に分けたところ次の二pushが成功した。
+
+| 登録物 | 保存commit | 確認した実体 |
+|---|---|---|
+| write-ark-markdown | `1601ba301b0b3988b3a5ae5b61dbb34a52243b56` | 登録保存先をfetchしSKILL.md全文がGitHub候補と一致。別Agentのcloud skills.readでも3,124文字・終端まで一致 |
+| map-current-position | `2e24943cc0f74cdb8078908be2ed6de08aacb20c` | 登録保存先をfetchしreferences/source-routing.md全文がGitHub候補と一致。本環境のexecutor skills.readでも同resourceの全文一致 |
+
+両Skillのquick_validateは通過した。保存先全体の差分は上記2ファイルだけで、他Skill・表示metadataは変更していない。元の作業領域の既存未保存変更を保持し、今回の2ファイルへ限定した参照差分だけも反映した。
+
+統合Agentのcloud Writer取得には旧本文が返り、別Agentのcloud取得には新本文が返るという経路差が残った。また統合Agentのcloud MAP reference取得は失敗した。これを全保存の失敗とも全取得経路の即時切替完了とも扱わず、成功した保存先再取得・独立cloud取得・executor resource取得を区別する。未取得経路を迂回して権限を増やしたものではなく、同じ承認Scopeの既存登録物を正規保存手順で更新した。自然発動・全Runtime・実利用効果は未確認である。
+
+### 旧配置の退役と保持
+
+上記の保存・取得・現用案内切替を確認後、[退役commit 906623a3](https://github.com/yusukefujiijp/ai-project/commit/906623a326ce88157de07da0d973953390581ad2)で旧success-casesの8ファイルと旧references/lessons.jsonlを除去した。mainを非forceで更新し、非省略Treeで旧9パスとRoot success-casesディレクトリの不在を確認した。退役以外の600ファイルは直前commitと同じblob/modeだった。
+
+退役後も新references全11本文、GitHub共有Skillの2本文、AGENTS・Root READMEの計15本文をmainから再取得し、全件の全文一致を確認した。共有lessonのblobは引き続き `b91b88fcc5111be9fd5a270571495b649cddc853`。この直接確認時刻は `2026-10-20T01:37:16Z` であり、過去のHuman発言・事例発生時刻を意味しない。旧住所へ戻る必要がある歴史読解は§4の固定snapshotと対応表を使う。
+
+今回の構造変更・保存・既知参照切替・旧配置退役は完了した。後続は既入力のCurrent Human依頼があれば受け取り、なければHuman Reviewへ戻る。新たな全件監査・追加アーカイブ・lesson採録・Skill改訂・固定Binding移行を自動開始しない。本追記とPLAN／Stateの最終整合後、保存先を再取得して現在の完了報告で閉じる。
 
 EOF::STR_019_REFERENCES_MEMORY::v001

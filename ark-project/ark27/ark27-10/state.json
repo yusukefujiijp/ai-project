@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_10_CURRENT_STATE",
-    "revision": 4,
+    "revision": 5,
     "owner": "Ark27:10",
     "schema_version": "v002",
     "updated_at": "2026-10-20",
-    "update_reason": "Plan Modeを繰り返したHumanのCorrectionと最終実行承認を受け、README原則とreferences集約を段階実装。先行完了・観測帰属と固定Bindingを保持。",
+    "update_reason": "README原則・references集約の公開と28本文一致、既存登録Skill二件の保存と経路別取得、旧9パス退役・保持と15本文再取得一致を記録。",
     "authority": "2026-10-20のCurrent Humanは提示済みのREADME原則・references集約計画へExecute GitHub OK / Human Seal OK / 継続実行を承認。通常入口・既存登録Skillの限定参照更新、条件確認後の旧配置除去と保存後確認を含む。",
     "date_scope": "UTC implementation record date; prior preparation/Title/current-alignment dates retained."
   },
@@ -261,16 +261,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "GitHub整理の主担当として、承認済みREADME原則とreferences集約を実装し、既知の登録参照切替・旧配置退役・保存後確認まで進める。",
-    "current_coordinate": "Target10自身の受入れ・限定比較・二原本整合に続き、複数回のPlan ModeとHuman Correctionを経て、二件の承認済み実装へ進んだ地点。",
+    "current_focus": "GitHub整理主担当として、README原則とreferences集約を実装・保存後確認まで完了。現在のHuman入力またはHuman Reviewへ接続する。",
+    "current_coordinate": "Target10自身の受入れ・限定比較・二原本整合・反復Plan Modeに続くSTR-018/019実装と限定検証を完了した地点。Source/他Actorの成果、旧準備時点、通常Unknownを区別して保持。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "承認済み二件を必要な検証まで継続する。新住所と現用案内を公開し、既知の登録Skill参照を確認して旧配置を退役する。未観測を完了へせず、既存のPlan-onlyへ巻き戻さない。",
-    "next_specific_task": "STR-018/019の実装、既存登録Skillの限定参照更新、旧配置除去、Remote本文・保持対象確認。完了後は新しいCurrent Human入力があれば受け取り、なければHuman Reviewへ戻る。",
+    "current_legal_connection": "STR-018/019の承認済み実装は検証まで完了。新しいCurrent Human入力があれば受け取り、なければHuman Reviewへ戻る。別案件を自動開始しない。",
+    "next_specific_task": "Current HumanのFeedbackまたは次の依頼から、Goal・実際の価値・依存・既存の有効な権限を踏まえて次の有益な整理対象を選ぶ。",
     "target_boot": "COMPLETED_BY_TARGET10_IN_THIS_THREAD; source preparation/publication and Human UI are separate.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE09",
     "ui_title": "NOT_OBSERVED_BY_SOURCE09",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "STR-018/019に限定したGitHub main更新と既存登録Skill二件の参照切替。Source09準備Receipt、先行二原本整合のReceipt、各Actorの成果は元の所有先に保持。",
+    "active_external_operations": "今回のGitHub公開・既存登録Skillの参照保存・旧配置退役・Remote本文確認は完了。最終Receipt保存後の再取得で閉じ、Source09準備Receiptや先行二原本Receiptを再作成しない。",
     "current_human_input_policy": "Receive any Human input already present; never require duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -458,7 +458,7 @@
     ],
     "candidate_next": {
       "subject": "README原則とreferences集約",
-      "status": "HUMAN_AUTHORIZED_IMPLEMENTATION_IN_PROGRESS",
+      "status": "IMPLEMENTED_AND_REMOTE_VERIFIED_WITH_BOUNDED_RUNTIME_RETRIEVAL",
       "goal": "繰り返したくない過ちを減らし、繰り返したい価値を育てる資料構造を、AIが必要な入口を作れる指示と共に実装する。",
       "source": "Current Ark27:10 conversation: repeated Plan Mode, complementary lessons/success meaning, flexible README correction, followed by explicit execution authorization.",
       "owners": [
@@ -466,7 +466,7 @@
         "control-center/changes/STR-019-references-learning-memory.md"
       ],
       "authority_boundary": "承認済み二件の実装・参照更新・既存登録反映・旧配置除去・検証。固定Binding移行、全フォルダ一括整備、別Skill作成、その他の自動再開を含めない。",
-      "completion": "原本とHumanの意味保持、現用入口と登録参照切替、旧配置退役、Remote一致。保存・導入・取得・利用効果を区別してHumanへ返す。"
+      "completion": "承認範囲の実装・既知参照切替・旧配置退役・Remote一致を確認済み。全取得経路の即時切替、全AIの理解・自然発動・実利用効果は未確認。"
     },
     "life_and_settings_boundary": {
       "source": "Source07 Runtime§5–7 and fixedSource harvest; TMS operation§4.2–4.3 and original experiences when needed",
@@ -639,7 +639,7 @@
     "target_reconstructed": true,
     "target_reconstruction_scope": "Target10自身が、先行する本Threadの受入れでIdentity・Binding・Triad Consistency・R1–R6を満たした。Source09準備時は未観測だった事実と区別し、今回の保存でBootを再演しない。",
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE09; actual thread creation, compiled Title use and startup delivery are separate.",
-    "requested_outcome": "README原則とreferences集約を承認範囲で実装し、既知の登録参照切替・旧配置退役・Remote一致まで確認する。新しいCurrent入力があれば受け取り、なければHuman Reviewへ戻る。",
+    "requested_outcome": "README原則とreferences集約の承認成果を実装・検証済み。保存・登録・取得・利用効果を区別した結果を返し、Current入力またはHuman Reviewへ戻る。",
     "verified_predecessors": [
       {
         "repository": "yusukefujiijp/ai-project",
@@ -672,6 +672,11 @@
         "revision": 4,
         "date": "2026-10-20",
         "role": "Record the later Human-approved README and references implementation; preserve preceding plan-only history and prior receipts. Publication/runtime cutover/final verification stay distinct."
+      },
+      {
+        "revision": 5,
+        "date": "2026-10-20",
+        "role": "Record actual publication, known registered-reference cutover, retired old paths and remote equality; keep per-route retrieval limits and all predecessor receipts."
       }
     ],
     "target_reconstruction": {
@@ -735,7 +740,7 @@
       }
     },
     "references_consolidation": {
-      "status": "AUTHORIZED_IMPLEMENTATION_IN_PROGRESS",
+      "status": "IMPLEMENTED_AND_REMOTE_VERIFIED",
       "actor": "Work / Ark27:10",
       "base_commit": "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8",
       "owners": [
@@ -748,7 +753,34 @@
         "Old success-cases and references/lessons.jsonl retired",
         "Remote content, paths and retained scope verified"
       ],
-      "evidence_boundary": "No forward claim of completed publication, runtime retrieval, Future AI understanding or field effects. Final observations belong to STR-018/019 and a bounded receipt."
+      "evidence_boundary": "Actual scoped structure, persistence, known routes and retirement verified. Other AI review is attributed separately; no claim of all runtime refresh, natural activation, universal understanding or field effects. This receipt's own final reread is reported in the conversation, without a self-SHA or recursive receipt.",
+      "implementation_commit": "66daf53e23d54be6bf52341bc7cb3cdcdd7f2170",
+      "retirement_commit": "906623a326ce88157de07da0d973953390581ad2",
+      "verified_at_utc": "2026-10-20T01:37:16Z",
+      "implementation_readback_count": 28,
+      "retirement_readback_count": 15,
+      "retired_paths": [
+        "references/lessons.jsonl",
+        "success-cases/README.md",
+        "success-cases/ark27-03-to-04-transition.md",
+        "success-cases/decisive-choice-single-log-preserved-history.md",
+        "success-cases/leading-response-status-markers.md",
+        "success-cases/one-skill-entry-multiple-benefits.md",
+        "success-cases/one-transition-entry.md",
+        "success-cases/skill-naming-as-reusable-handles.md",
+        "success-cases/wake-up-one-choice.md"
+      ],
+      "shared_lesson": {
+        "rows": 4,
+        "blob": "b91b88fcc5111be9fd5a270571495b649cddc853",
+        "bytes_preserved": true
+      },
+      "case_content_preserved": 7,
+      "registered_skill_commits": {
+        "writer": "1601ba301b0b3988b3a5ae5b61dbb34a52243b56",
+        "map": "2e24943cc0f74cdb8078908be2ed6de08aacb20c"
+      },
+      "registered_verification": "Both stored files fetched after push and matched GitHub candidates. Independent Agent cloud Writer full-text match; root executor MAP resource full-text match. Parent cloud Writer still returned old text, cloud MAP resource failed; these retrieval routes remain distinct."
     }
   },
   "eof_sentinel": "ARK27_10_STATE_EOF_v002"

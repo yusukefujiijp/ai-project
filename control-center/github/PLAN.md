@@ -3,7 +3,7 @@ title: "GitHub整理PLAN — 現在の判断と保存された診断"
 version: "0.21.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Human-authorized flexible README and references consolidation; staged runtime cutover"
+status: "Flexible README and references consolidation implemented and remotely verified; runtime retrieval limits recorded"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
@@ -38,9 +38,9 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 
 **README原則とreferences集約は、計画から実行承認へ進んだ。** HumanはPlan Modeを繰り返して構成を練り、lessonsを失敗・訂正・回復と再発防止、success-casesを予期せぬ成功・突破と価値の再現性へ向く対として明確化した。[references](../../references/README.md)を共通入口とし、[lessons](../../references/lessons/README.md)と[success-cases](../../references/success-cases/README.md)の役割・原本は分ける。成功事例はRootから直接辿れる価値を保持する。HumanがREADME作成を思い出す負担を減らすため、意味ある活動フォルダではAIが必要なREADMEを育てる柔軟な原則を採用し、全フォルダ100%の義務・一括空ファイル作成にはしない。
 
-2026-10-20のCurrent Humanは、提示済み計画に対し「Execute GitHub OK!」「Human Seal OK!」と実行・継続を承認した。[STR-018](../changes/STR-018-flexible-readme-principle.md)がREADME原則、[STR-019](../changes/STR-019-references-learning-memory.md)が原本移設・参照切替・登録済みSkill・旧配置退役の実施と検証を所有する。新住所と現用案内を先に公開し、既知の登録参照の切替を確認後、旧Rootのsuccess-cases/と旧共有lessonを除去する。途中の公開を全工程の完了とせず、最終到達点は両STRとStateの `progress.references_consolidation` へ戻る。過去のPlan-onlyを今回の承認済み作業の禁止へ戻さない。
+2026-10-20のCurrent Humanは、提示済み計画に対し「Execute GitHub OK!」「Human Seal OK!」と実行・継続を承認した。[STR-018](../changes/STR-018-flexible-readme-principle.md)がREADME原則、[STR-019](../changes/STR-019-references-learning-memory.md)が原本移設・参照切替・登録済みSkill・旧配置退役の実施と検証を所有する。新住所・現用案内の公開と28本文のmain一致、既存登録Skill二件の保存と取得、旧Rootのsuccess-cases/と旧共有lessonの除去、退役後15本文の再取得一致まで完了した。一部の取得経路では旧本文または取得失敗が残り、保存先・別Agent cloud・executorで確認した新本文と区別してSTR-019へ記録した。最終到達点は両STRとStateの `progress.references_consolidation` へ戻る。過去のPlan-onlyを今回の承認済み作業の禁止へ戻さない。
 
-この二件は同じGoalを支える独立した変更単位であり、README全体点検を集約や他の承認済み作業の前提Gateにしない。固定Binding、歴史本文、Dots／Skills固有のlessonsは今回の移行対象外。保存と参照整合を、全AIの理解・自然発動・生活上の効果へ読み替えない。
+この二件は同じGoalを支える独立した変更単位であり、README全体点検を集約や他の承認済み作業の前提Gateにしない。固定Binding、歴史本文、Dots／Skills固有のlessonsは今回の移行対象外。保存と参照整合を、全AIの理解・自然発動・生活上の効果へ読み替えない。今回の承認成果を閉じた後は、既入力のCurrent Human依頼があれば受け取り、なければHuman Reviewへ戻る。
 
 直近の別担当成果として、[STR-016](../changes/STR-016-problem-solving-foundation.md)はproblem-solving基盤、[STR-017](../changes/STR-017-problem-solving-skill-alignment.md)は名称・Skill接続と旧共有配置の退役を所有する。10は所有記録を読んで現在の判断へ接続しており、他Threadの実装を自身の実績へ変更しない。保存、登録本文取得、README resource取得、自然発動、実生活の効果を一つの完了へ潰さない。個別の状態・検証・残るUnknownは各STRへ戻る。
 

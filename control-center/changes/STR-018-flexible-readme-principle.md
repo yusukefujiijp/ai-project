@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 ref: "main"
 base_commit: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
 actor: "Work / Ark27:10"
-status: "Human-authorized implementation; observed completion recorded separately below"
+status: "Implemented and remotely verified; behavioral and field effects unverified"
 expected_eof: "EOF::STR_018_FLEXIBLE_README::v001"
 ---
 
@@ -35,5 +35,13 @@ Current Ark27:10対話でHumanは、READMEがあればAIとHumanが最低限の�
 ## 確認と残る観測
 
 公開前に差分・リンク・metadataを確認し、公開後はAGENTSとRoot READMEをRemoteから全文再取得して照合する。具体的なcommitと確認は後続の観測欄へ記す。Git履歴は差分・保存時刻、ここは理由・Human Correction・検証範囲を所有する。保存確認を全AIの遵守、自然な作成行動、復元成功や保守負担減少へ格上げしない。
+
+## 公開後の直接確認
+
+2026-10-20、Work / Ark27:10が[実装commit 66daf53e](https://github.com/yusukefujiijp/ai-project/commit/66daf53e23d54be6bf52341bc7cb3cdcdd7f2170)をmainへ非forceで公開した。AGENTS v004.3-candidateとRoot README v015を含む変更28本文をmainから再取得し、公開候補との全文一致を直接確認した。同時公開のreferences移行はSTR-019が所有する。
+
+AGENTSの変更は§1.1の原則・対応metadata・現用参照、Rootは保守節への接続・references案内・直接成功入口・限定metadataであり、Identity・Human Authority・Guardの意味を維持した。対象外581ファイルのblob/modeが実装基点と同じことをTreeで確認した。文書レビューはAIの限定確認であり、Future AIの実利用試験ではない。
+
+本追記は上記観測の保存である。追記自身の保存後再取得は現在の完了報告で扱い、自己SHAや検証追記の無限循環を作らない。HumanにREADME指定を忘れないよう求める設計から、AIが承認範囲で入口を育てる設計へ進めたが、長期の負担減少や全AIの遵守は未観測である。
 
 EOF::STR_018_FLEXIBLE_README::v001
