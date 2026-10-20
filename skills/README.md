@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.40.1
+version: v0.41.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-20
-updated_reason: B-Zone Rescueの後続会話内取得・共有本文一致の確認を追記し、初回の未取得観測を履歴として保持
+updated_reason: Ark Transitionの承認範囲内の受渡し・受入れ確認と条件付き学習経路を更新し、計画用Queryを専用READMEへ移管
 ---
 # Ark Shared Skills Hub
 
@@ -82,7 +82,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 | 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [SKILL.md](map-current-position/SKILL.md) | 同梱Navigator・Source routing、必要時のLiving Review共通説明、現在のHuman入力と各Runtime | Tree・Node & Edge、「残作業とGoal」、末尾Living Review→Next step。[改名・確認範囲](#map-current-position-revision)を参照。旧名の共有入口とRuntime aliasは別 |
 | Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
-| Ark Transition / prepare-ark-transition | Thread継続・章移行・ArkのMain/Subペア準備・補助Thread再接続 | [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 汎用入口と資料選択を改訂。GitHub共有・導入・読解挙動・実移行成功を別々に確認 |
+| Ark Transition / prepare-ark-transition | Thread継続・章移行・ペア準備・再接続の計画、承認範囲内の受渡しと受入れ確認 | [README](prepare-ark-transition/README.md) / [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 条件付きlessonと中断回復へ接続。共有保存・導入・受入れ・実利用は別々に確認 |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
@@ -103,24 +103,9 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 ### Copy & Paste — Transition Plan
 
-```text
-$prepare-ark-transition（Ark Transition）を使い、今回の移行準備をPlan Modeで進めてください。種類・Source・Target・目的・承認範囲は現在の文脈から解決し、確定事項を再利用してください。
+計画用Queryの担当原本は、[Ark Transition README §2](prepare-ark-transition/README.md#2-copy--paste--transition-plan)へ移しました。Skillの目的・Source・学びの保存先・更新経路も同READMEから辿れます。既存の本節入口は残し、Query本文を二重管理しません。
 
-現行Skill・共通契約・適用Runtimeに従い、元会話に依存せず協働を再開できる計画を、Living Review → Next stepとともに示してください。重要な未確定事項だけを確認してください。
-
-Skillが利用できない場合は、次の共有SKILL.mdを実際に読み、そこから現行共通契約へ進んでください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transition/SKILL.md
-
-今回は調査と計画のみです。変更・保存・反映・実際の移行は行わず、計画提示で停止してください。
-```
-
-共有Skillは[Current共通契約](../prompts/ai-next-thread-handoff.md)へ接続します。両資料が必要とする全文読解・同一性確認を省く入口ではありません。AIが参照を辿れない時は、必要なSourceと最小の回復方法を示します。Skill機構なしで読んだ場合は指示資料の利用であり、導入済みと称しません。
-
-この文は計画用です。続いて実行承認を受けたら、その承認Scopeで計画を再利用して作成・更新・検証まで進めます。実際のTargetを起動する時は、準備結果として渡された対象Handoffを使います。計画用の文、Target受入れ、日常のB-Gate入力を同じTriggerにしません。
-
-Arkの章作成では、Skillから[Domainのペア準備規則](../ark-project/README.md#41-odd--even-paired-preparation)へ進みます。既存章のThread継続では既存Subを再利用し、毎回のSub新設へ変換しません。番号・契約版・EOF文字列・固定ファイル数は、この定型入口に埋め込みません。
-
-**カプセル化の境界。** 必要な目的・対象・Mode・権限は入口と現在の会話から伝え、定型の読解・選別・検証をAI側で担います。Humanに全内部資料の理解や毎回の追加フォームを求めず、AIの方法・説明密度・創発性は開きます。内部の意味・責任・不確実性まで隠さず、必要時には根拠と変更理由を説明します。この入口文は本節だけで保守し、独立した_queryとの二重管理を新設しません。
+2026-10-20のHuman承認による改訂では、[SKILL.md](prepare-ark-transition/SKILL.md)に現在の経路発見、承認範囲内の送信、Target自身の受入れ確認、中断・審査拒否からの回復、該当する[Skills lessons](_references/lessons.jsonl)の参照・更新を組み込みました。Source準備だけで依頼を終えず、今回の到達点まで進めるための手順です。実際の送信権限はその都度の依頼・継続委任から判断し、Plan-onlyやSTOPを保持します。出来事の詳細は[Ark100:00の固定記録](https://github.com/yusukefujiijp/ai-project/blob/173f099fd4b2c960b3e16122b261b31ffc0645de/ark-project/ark100-199/ark100_b-zone/ark100-00/README.md)を再利用し、同じログをSkill内へ複製しません。
 
 2026-10-10、Ark99:00のHuman Correctionにより、定型の資料選択・再構成計画・出力伝達・確認をSkillへ持たせ、呼出し文は現在の依頼とModeを伝える入口へ整理しました。Thread名のコピー面を準備元・受入れ先の両方に置く成立条件は[共通契約 §8](../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有し、Skillは受入れ先が実際に読む起動本文への伝達を担います。特定Arkの起動元や現在の番号を汎用Skillへ固定せず、短いHuman入力からも必要な検討品質を保持します。文書と導入内容の確認は、実際の受入れ先の応答・Copy UI・往復負担の改善と区別します。
 
