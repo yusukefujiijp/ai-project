@@ -54,7 +54,9 @@ specialist_project_entry_revision:
   initial_thread: "Ark101:01"
   initial_thread_runtime: "ark100-199/ark101_room-care/ark101-01/README.md"
   human_correction: "2026-10-20: Ark101:01 is the new Thread; Project name is not the receiving Thread identifier"
-  evidence_boundary: "Project creation is Human-reported; GitHub preparation, UI settings, target reconstruction and room-care outcomes remain separate"
+  confirmed_initial_thread_title: "Ark101:01_2026/10/20; room-care"
+  followup_delta: "Human confirmed the complete Title and startup success, then explicitly authorized the four-source delta save; Project instructions v003 preserves the reprinted copy payload"
+  evidence_boundary: "Project creation and Ark101:01 naming/startup success are Human-reported; Source direct UI/receiver verification, current settings and room-care effects remain separate"
 ark100_startup_revision:
   date: "2026-10-20"
   source_thread: "Ark28:06"
@@ -213,11 +215,11 @@ Humanは、居室の整理整頓など、対象を明確にカテゴライズで
 
 **[Ark100: B-Zone Rescue](ark100-199/ark100_b-zone/README.md)** は、低認知・超低認知で想起・開始・切替が難しい時に、祈り・Teshuvahと可能な行動への接続を支える専門Project。[Project INSTRUCTIONS](ark100-199/ark100_b-zone/INSTRUCTIONS.md)が共通条件、[Ark100:00](ark100-199/ark100_b-zone/ark100-00/README.md)が事前起動・入口・未使用予備の準備を所有する。各番号Threadは独立新件を迎える場で、番号増加を同件継続や低／超低の区分にしない。初期00・利用用01・予備02の計画は2026-10-20にArk28:06でHumanが実行承認した。資料保存、Project設定、Target自身の再構成、Human到達、未使用状態、実生活効果は00の証拠で分ける。Ark99の00運用は参考にするが、その固有の案件継続先制約を自動移植しない。
 
-Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project instructions・必要なGitHub整備を承認した。Projectの入口と受入れ条件はArk101 README、居室の実践目的・形成理由・方法は[control-center/house/room-care](../control-center/house/room-care/README.md)が所有する。親の[house](../control-center/house/README.md)は物理的な生活空間の他の可能性を候補として保持する。
+Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project instructions・必要なGitHub整備を承認した。Projectの案内はArk101 README、Threadの受入れ条件は01 Runtime、居室の実践目的・形成理由・方法は[control-center/house/room-care](../control-center/house/room-care/README.md)が所有する。親の[house](../control-center/house/README.md)は物理的な生活空間の他の可能性を候補として保持する。
 
 100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。Ark101からArk102を自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
 
-確定名 `Ark101: room-care` はProject名。後続Human訂正により、新規Threadは[Ark101:01](ark100-199/ark101_room-care/ark101-01/README.md)と確定した。受入れRuntime・起動Prompt・Thread識別子のコピー面は01が所有する。日付・副題付きの正式Thread Titleは未指定であり、必要になったら§6と最新Human指定に従う。Project名をThread識別子へ代用せず、架空の日付・副題を生成しない。Project作成報告、起動資料の保存、設定欄への貼付、受入れAIの理解、実生活の改善を別の証拠で扱う。
+確定名 `Ark101: room-care` はProject名。後続Human訂正により、新規Threadは[Ark101:01](ark100-199/ark101_room-care/ark101-01/README.md)と確定し、その後Humanは完全な正式名と命名・スタート成功を報告した。確定Titleとコピー面・起動Promptは01 Runtime、再掲したProject指示の全文はINSTRUCTIONS v003が所有する。§6の最新Human指定を尊重し、確定名へ引用符・副題を追加しない。起動成功はHuman報告として保持し、準備元の直接UI確認、指示の設定反映、受入れ応答の独立照合、実生活の改善とは別の証拠で扱う。今回の差分保存を再起動や実践開始の前提Gateにしない。
 
 ---
 
