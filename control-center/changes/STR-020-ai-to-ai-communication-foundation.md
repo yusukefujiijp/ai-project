@@ -1,15 +1,17 @@
 ---
 title: "STR-020: AI間コミュニケーションの共通原本と経験集約"
-version: "v001"
+version: "v002"
 canonical_path: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
 role: "Structural change rationale, scope, evidence and remaining cutover conditions"
 created: "2026-10-20"
 updated: "2026-10-20"
 prepared_by: "ChatGPT Work / AI間コミュニケーション基盤の実行担当"
 source_commit: "e72b6a5616d66f6c2b4afc1377cbfd78ed5c9e53"
+implementation_commit: "741c5c6c37ce9d6410d3f51863cb0e6e5a32e078"
+implementation_verified_utc: "2026-10-20T10:19:07Z"
 authority_source: "Current Work conversation: Human authorized the proposed A eighteen-path scope through main publication and retrieval; B remains held"
 authority_access: "Private conversation reference by title and scope; no public message URL available"
-expected_eof: "EOF::STR_020_AI_TO_AI_COMMUNICATION_FOUNDATION::v001"
+expected_eof: "EOF::STR_020_AI_TO_AI_COMMUNICATION_FOUNDATION::v002"
 ---
 
 # STR-020: AI間コミュニケーションの共通原本と経験集約
@@ -49,7 +51,7 @@ Dots移設の依存として、通常Map・補助確認に加え日次振返り�
 | 変更理由と所在 | 本STR、`control-center/github/README.md` | 2 |
 | AI活用の日時記録 | `records/2026/10/2026-10-20.jsonl`への追記 | 1 |
 
-合計18パス。新住所と旧住所は別々に数える。実装本体を先に保存・再取得し、その実際のcommitを根拠に日時記録と本STRの確認結果を追記する。相互参照する本体と入口は整合した一組で公開し、確認結果を先取りしない。
+合計18パス。新住所と旧住所は別々に数える。実装本体17パスを先に保存・再取得し、その実際のcommitを根拠に日時記録と本STRの確認結果を後続の保存単位へまとめた。相互参照する本体と入口は整合した一組で公開し、確認結果を先取りしない。
 
 新しい10月20日経験は、引継ぎv001 Layer 6の要約をSourceとする編集記録。初穂による構成選択・UI確認・二往復・批評採用・元設定へ復帰したという報告と、Workが直接観測した内容を区別した。私的Workの全履歴・長期メモリを取得・公開せず、実バックエンドの独立証明、厳密A/B、因果的優劣、全場面の最適性を補っていない。当初の実験にGitHub変更が含まれなかったことを保持し、「約束した保存を忘れた失敗」へ変更しない。
 
@@ -73,7 +75,11 @@ Dotsの凍結比較データ3本は固定commit `2bf35b8aef610e9b59bc953ac2c3a04
 
 初回実装段階では、経験3件の原文保持、旧新の見出しanchor、Topicの通信revision・観測内容、Dots復元契約の保持をローカルで照合した。変更するMarkdown 17パスのYAML・canonical_path・宣言されたEOF、相対参照279箇所と必要なanchorを確認した。共通マニュアル・経験入口・新規記録には別の作業文脈による内容レビューも行い、元の会話を持たない読み手が目的・役割・根拠・未確認・次の適用判断へ戻れる構成に、公開を妨げる問題は見つからなかった。これは文書レビューであり、新しい外部対話試験、実利用効果、Cold-Start再現性の証明ではない。
 
-Remote保存・再取得の結果は、本体の保存後にこの節へ追記する。現段階の文書存在やローカル検証を、main公開・Remote全文照合済みとは扱わない。公開直前のhead、対象blob、全差分を確認し、expected headと非force更新で並行変更を保持する。結果不明ではhead・現物・履歴を先に確認し、盲目的に再送しない。
+**2026-10-20 19:19 JSTの確認。** 実装commit [741c5c6c37ce9d6410d3f51863cb0e6e5a32e078](https://github.com/yusukefujiijp/ai-project/commit/741c5c6c37ce9d6410d3f51863cb0e6e5a32e078)をmainへ反映した。公開前に全treeのblob差分が予定した17パスだけであることを確認し、基点headをexpected_shaとする非force更新を使った。保存後にmainの17パスを個別に再取得し、意図した全文と完全一致、main headも同commitであることを確認した。
+
+新しい経験原本3件と旧住所の移転案内、共通マニュアル・入口・導線・本STR初版を確認した。変更対象外の既存606ファイルはtree上でblobを保持していた。これにはAGENTS、ARK、旧候補Prompt本文、各Runtime・固定Binding、凍結比較3データが含まれる。Dots README以外の15ファイルは住所とblobを保持し、共通lessonsとdot-0000ログはRemote本文でも各8行・元blob一致を確認した。
+
+本節v002の検証結果と[日時記録](../../records/2026/10/2026-10-20.jsonl)は、この確認を根拠にした後続の保存単位である。日時記録のSourceは実装commitへ固定し、既存の行・順序・未知fieldを保持して一活動を追記する。この確認追記自体のRemote再取得は保存後に行い、最終結果を本Workの会話へ返す。同じ確認を記録するための再帰的な追加記録は作らない。
 
 ## 6. 保留するBと再開条件
 
@@ -85,4 +91,4 @@ Bの再開には、既存の通常Map・補助確認・日次振返りの製品�
 
 新しい監視・自動保存トリガ・外部AI送信・設定選択実験・新Thread・Bot導入は今回行わない。既存の🧩成功事例やArk100初回起動を再作成せず、初穂への報告はまず本Workの会話で返す。保存・別AIの実読解・実対話・Humanへの到達・長期負担軽減は別の成果として扱う。
 
-EOF::STR_020_AI_TO_AI_COMMUNICATION_FOUNDATION::v001
+EOF::STR_020_AI_TO_AI_COMMUNICATION_FOUNDATION::v002
