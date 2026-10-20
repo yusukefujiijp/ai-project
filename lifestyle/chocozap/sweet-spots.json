@@ -3098,6 +3098,37 @@
           "source": "S01"
         }
       ]
+    },
+    {
+      "id": "cz-record-0024",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-21",
+      "reference_scope": "current",
+      "date_basis": "現在の本人入力の報告日2026-10-21（Asia/Tokyo）。片手Sweet Spotの更新とChest Pressの表示条件の統合を明示。実施日・来館・左右両側や反復の実施は報告されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 40,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0020/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Dips Sweet Spot 片手: 40kgに更新\n\nChest Pressの縦横は誤差なのでカットしよう！\n表等が縦に長くなると冗長だからです！\n\nここまでのイメージや意味合いや到達するべき**Goal**を深く理解し強く意識付けできますか？ 私(YusukeJP)の意図を最大限に汲み取ってGraph Modeを活用しつつ整理整頓してください！私(YusukeJP)の意図を完璧に言語化し構造化して下さい！(Graph Mode最大活用を！)",
+          "reported_date": "2026-10-21",
+          "context": "現在の本人メッセージ全文。Dips片手のSweet Spotを35kgから40kgへ更新する明示報告。両手60kgは未言及の継続ルールで保持する。Chest Pressの縦横差を本人は『誤差』と評価し、表等が縦に長く冗長になるため区分をカットすると指定。現在の片手表示は縦・横・縦横未指定を一つの片手へまとめ、既存25kgを継続する。これはChest Pressの新しい25kg測定・再確認や、他マシンの条件統合ではない。過去の縦・横という原申告は当時の出所として保持する。表示を短くする目的を、意味・根拠・説明品質の削減へ拡張しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
     }
   ]
 }
