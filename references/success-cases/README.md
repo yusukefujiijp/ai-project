@@ -1,6 +1,6 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.10.0"
+version: "0.11.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "references/success-cases/README.md"
 location_patch:
@@ -11,11 +11,12 @@ role: "Success discovery and reading entry"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
 updated: "2026-10-20"
-last_reality_reviewed: "2026-10-19"
+last_reality_reviewed: "2026-10-20"
 updated_reason:
+  - "2026-10-20: Add the Human-adopted puzzle metaphor case, preserving active direction or vector as its core and distinguishing appraisal from unmeasured effects."
   - "2026-10-20: Move the collection into References and connect the complementary lessons entry; preserve the seven cases and their evidence boundaries."
   - "2026-10-19: Add the Human-valued leading response status marker case; preserve historical success and separate current rules from observed reception."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.10.0"
+expected_eof: "EOF::SUCCESS_CASES_README::v0.11.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -41,6 +42,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | [現役ログを一つに決め、固有な形成史を残した判断](decisive-choice-single-log-preserved-history.md) | 冗長性と耐性の問いに、資料の役割と根拠を分け、一案へ決めて返したことをHumanが好評価した | AIが根拠ある推奨を引き受ける時、現役更新先の単純さと歴史保存を両立させる時 |
 | [スキル名を再利用できる入口へ育てる](skill-naming-as-reusable-handles.md) | HumanがPlan Mode・Living Review・load・save等に、意味の深化と簡潔な命名が両立する流れを見出した | Naming Importance、共同注意を支える名前、短い入口と明確な責務の関係を考える時 |
 | [先頭の一記号で応答状態を伝える](leading-response-status-markers.md) | Humanが自然な先頭💭を評価し、単発回答にも✅を対応させる訂正を経て、表示の簡素化を成功と認めた | 応答状態の判別、表示の簡素化、Human Feedbackによる改善を考える時 |
+| [🧩 残作業とGoal — 状態の認識から、能動的な方向へ](puzzle-emoji-and-agency.md) | Humanが、パズルを嵌める能動性と、自分の能動的な方向や方向性（ベクトル）を支える意味を評価して採用した | 記号・見出しを、状態の認識だけでなくHuman自身の能動的な関わりへつなぐ時 |
 
 起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
 
@@ -87,4 +89,4 @@ Current Human Request、[AGENTS.md](../../AGENTS.md)、対象Runtimeに従う。
 
 今回の配置変更、旧パスからの対応と歴史参照の扱いは[STR-019](../../control-center/changes/STR-019-references-learning-memory.md)が所有する。
 
-EOF::SUCCESS_CASES_README::v0.10.0
+EOF::SUCCESS_CASES_README::v0.11.0
