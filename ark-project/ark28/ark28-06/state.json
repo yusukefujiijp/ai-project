@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_06_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 5,
+    "revision": 6,
     "created": "2026-10-14",
     "updated": "2026-10-20",
     "canonical_path": "ark-project/ark28/ark28-06/state.json",
     "date_scope": "Asia/Tokyo: retain 2026-10-14 preparation and 2026-10-20 navigation history; current-position observations are separately attributed.",
-    "change_reason": "Complete authorized06→07 publication, direct persistent startup, exact Title and visible receiver reconstruction. Preserve all origin/fixed bindings; record receiver-found Domain tail correction and separately verified persistence.",
+    "change_reason": "Close06→07 terminal receipt after actual receiver reconstruction and receiver-confirmed Current receipt/Domain repair. Retain original provenance/bindings, exact initial Title setting and later observed heart-prefix UI change; final save/reread remains externally observed.",
     "navigation_revision": {
       "previous_snapshot": "369b5f1f287d212848def6121a2ad374aa3e2d77",
       "authority": "Current Human approved per-skill README consolidation, Query-folder removal and GitHub execution.",
@@ -208,7 +208,7 @@
       "target": "Ark28:07",
       "scope": "Approved six paths on GitHub main, reread; existing Ark28 Project, one persistent07, saved Query send, exact Title and receiver evidence; Current06 terminal receipt and reread.",
       "boundary": "Migration and acceptance only. No physical trial, Main transfer or other case migration.",
-      "status": "REQUESTED_MIGRATION_AND_ACCEPTANCE_COMPLETED; TERMINAL_RECEIPT_TO_BE_REREAD_AFTER_THIS_SAVE"
+      "status": "MIGRATION_DELIVERY_ACCEPTANCE_AND_RESULT_NOTICE_COMPLETE"
     },
     "preparation_observation": {
       "date_jst": "2026-10-14",
@@ -278,13 +278,13 @@
         "id": "G4",
         "goal": "次のAIが、完了済み成果・所有原本・本当に残るUnknownを取り違えず再開できる。",
         "source": "AI concrete interpretation of Human continuity intent, explicitly selected by the current one-State save request.",
-        "status": "FIXED06_BASELINE_AND07_TRIAD_REMOTE_VERIFIED; ACTUAL07_RECONSTRUCTION_OBSERVED",
-        "remaining": "この終端Receiptの保存後再取得を確認する。完了後は07の現在入力/Human Reviewへ接続する。",
+        "status": "FIXED06_AND07_TRIAD_VERIFIED; ACTUAL07_RECONSTRUCTION_AND_PUBLISHED_REV5_REREAD_COMPLETE",
+        "remaining": "本revision6は実際の完了連絡の応答を追加する終端記録。自身の保存後再取得は当該保存応答から確認し、Humanへ追加準備Taskを課さない。",
         "completion": "来歴と固定Bindingを保ったStateから、現在の重点・完了・保留・根拠・合法な接続を辿れること。"
       }
     ],
     "next_connection": {
-      "default": "The authorized06→07 transition has reached actual receiver acceptance. Finish this terminal receipt reread, then Human may continue in existing07 without repeating startup, approvals or known context.",
+      "default": "Continue in existing accepted07, or remain in Human Review. No repeated startup, new thread, manual paste or extra approval is required by this completed migration. Final revision6 save/reread is reported by the saving operation.",
       "if_live_input": "Later Human Correction/STOP and body/other applicable Guards retain priority.",
       "ownership": "Completed06 work remains complete; Ark100 dynamic cases/reserve and other owners are not changed by this transition."
     }
@@ -575,6 +575,14 @@
           "verified_blob": "345ae6f120df95f1c779ed9657331a2e8b074c37",
           "full_content_reread_match": true,
           "interpretation": "Within the already-approved Domain route path and necessary consistency repair; receiver feedback changed source artifact before final completion. No new project or task."
+        },
+        "terminal_revision5": {
+          "commit": "4f68716475188b31072ea7e34da18a3edc99f2bd",
+          "blob_sha": "225babbafbbdfa7cfd69c9450c176c616a4a9879",
+          "revision": 5,
+          "full_content_reread_match": true,
+          "receiver_also_retrieved_revision5": true,
+          "boundary": "Prior published receipt; not this revision6 self hash. Final revision6 save/reread is observed by the saving operation."
         }
       },
       "delivery": {
@@ -600,7 +608,21 @@
         "approval_review": "Initial authorized create/send succeeded without a new refusal or extra Human approval during this transition.",
         "title_save_observation": "Header update was delayed; reopening the editor showed exact confirmed Title, so no duplicate rename/send/create was performed.",
         "sent_query_body_compared_from_visible_message_copy": true,
-        "sent_query_characters": 1863
+        "sent_query_characters": 1863,
+        "title_display_history": [
+          {
+            "stage": "SOURCE_TITLE_SETTING",
+            "observed_value": "Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+            "exact_confirmed_title_match": true
+          },
+          {
+            "stage": "LATER_UI_OBSERVATION_DURING_CLOSING_REPLY",
+            "observed_value": "❤️Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+            "change": "Heart prefix appeared after exact initial setting; the full compiled base Title remains.",
+            "attribution": "No Source operation added this prefix; changing actor/intent not independently identified.",
+            "treatment": "Retain the later observed concurrent UI change; do not silently overwrite it or rewrite the fixed compiled Title/receiver opening block."
+          }
+        ]
       },
       "actual_target_reconstruction": "TARGET_RECONSTRUCTED_FROM_VISIBLE_EVIDENCE_BACKED_RESPONSE",
       "target_reconstruction_receipt": {
@@ -646,14 +668,15 @@
         "boundary": "Evidence is the receiver's observable report, source-specific hash table and substantive application, not independent access to hidden reasoning or backend proof. Its UI/receipt unobserved statement describes what it could verify at first acceptance, before this source receipt."
       },
       "human_last_mile": "Direct source operation completed Project/thread/send/Title; no manual copy/paste or extra approval requested for this transition. Human device access and practical use are not observed and are not unfinished setup tasks.",
-      "requested_outcome": "MIGRATION_AND_EVIDENCE_BACKED_ACCEPTANCE_COMPLETE; TERMINAL_SAVE_REREAD_PENDING",
+      "requested_outcome": "COMPLETED: SIX_PATH_PUBLICATION, ONE_PERSISTENT07, PREPARED_QUERY, EXACT_INITIAL_TITLE_SET, EVIDENCE_BACKED_RECEPTION_AND_CLOSING_NOTICE",
       "remaining_unknowns": [
         "Human device access and practical effects",
         "cross-runtime and long-term approval-friction benefit",
-        "Ark100 dictionary/recall/Rescue/unused-reserve Unknowns remain with their owners"
+        "Ark100 dictionary/recall/Rescue/unused-reserve Unknowns remain with their owners",
+        "Actor/intent of later heart prefix in UI; exact initial source setting and fixed compiled Title are separately confirmed."
       ],
-      "receipt_policy": "This existing Source06 State owns the terminal receipt. Actual saving commit/reread of this file is reported by the saving operation and final response, without embedding its own hash.",
-      "observed_at": "2026-10-20T12:33:39Z",
+      "receipt_policy": "Existing Source06 terminal owner only. Actual initial publication and rev5 full reread are recorded above. This revision6 adds the observed closing reply and later UI prefix; its own commit/blob and reread outcome are reported externally by the saving tool/final response, with no self-SHA or claim of hidden cognition.",
+      "observed_at": "2026-10-20T12:37:32Z",
       "applied_experience": {
         "lesson_owner": "skills/_references/lessons.jsonl",
         "lesson_id": "43a2d499-fc33-4b56-ba0c-93d44fe3f044",
@@ -661,8 +684,19 @@
         "limit": "One real application in this Work/account/project context. No universal approval phrase, cross-runtime guarantee, permanent model learning or measured long-term burden reduction. Six-path scope did not authorize changing the Skill/lesson ledger."
       },
       "result_notice": {
-        "status": "NOT_YET_SENT_AFTER_RECEIPT_SAVE",
-        "scope": "If delivered, AI-identified closing notice of actual UI/receipt and bounded Domain correction only; no new Human case, task, or full boot replay."
+        "status": "SENT_AND_RECEIVER_CURRENT_DELTA_CONFIRMATION_OBSERVED",
+        "observed_at": "2026-10-20T12:37:32Z",
+        "sender": "Ark28:06 AI identified in actual message",
+        "target_thread_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ad75dc4-0cd4-83ee-8c3f-a71b601cec4c",
+        "scope": "Actual startup/Title/source receipt and bounded Domain closing-route correction only; no new Human case or production task.",
+        "source_receipt_at_send": {
+          "revision": 5,
+          "commit": "4f68716475188b31072ea7e34da18a3edc99f2bd",
+          "blob_sha": "225babbafbbdfa7cfd69c9450c176c616a4a9879"
+        },
+        "receiver_response_markdown": "**Current差分を確認し、完了連絡を受領しました。**\n\n1. [Source06 State](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-06/state.json)は**revision 5**、取得blobは通知の`225babbafbbd…`と一致しました。`progress.next_transition`で、永続07・Project所属・Query本文・確定Title・受入れ応答の確認記録を読みました。UI確認は**Source06 AIの直接観測として継承**し、私自身のUI観測とは区別します。固定Source06 revision 3との分離も保持されています。\n\n2. [Domain](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/README.md)は取得blobが`345ae6f120df…`と一致し、末尾が**Support28:07とCurrent06 Receiptへの案内**へ修正されたことを確認しました。前回答で指摘した残存箇所は解消しています。\n\n既存の受入れは保持しています。Human本人の端末到達・実生活効果は引き続き未確認です。今回の通知を受領した事実は、この応答で確認できます。\n\n**Living Review**\n\nSource側の実操作・保存記録と、07自身の受入れ結果が接続しました。準備時点の未観測値を、現在の未完了として扱う必要はなくなりました。\n\n**Next step**\n\nHuman Reviewへ戻ります。07側の書込・身体Trial・Main移管・別案件移行・新Taskは開始していません。\n\n**Next Query**\n\n追加依頼は不要です。",
+        "meaning": "Receiver independently retrieved Current06 rev5 and matching Domain blob345ae6..., confirmed stale tail resolved, retained own prior acceptance and Human Review, and kept Source UI observation distinct from its own observation. No14-source boot replay.",
+        "boundary": "This closes the authorized result-delivery observation; no acknowledgement-only extra round is needed."
       }
     }
   },
