@@ -12,6 +12,9 @@ record_id: "ark28-05-task-records"
 record_revision: 3
 coverage: "Selected judgment-changing material; not a full transcript, live state owner or new task queue"
 current_owner_snapshot_observed: "dda8ecf86a3f794568d5c9a18d9ed6778d708b37"
+navigation_patch:
+  date: "2026-10-20"
+  scope: "Pin the historical Query link to its observed commit and add the current per-skill README route; historical formation and fixed-source binding unchanged"
 expected_eof: "ARK28_05_HARVEST_EOF_v001"
 ---
 
@@ -70,7 +73,9 @@ Radio Modeの良い経験を背景に、HumanはPodcastのThemeを練る部分�
 
 HumanはMAP本体を別Threadで改良している間にも、先にQueryをbackupし、後で更新すればよいと指定した。05が初回に保存したのは旧パス `skills/map-ark-current-position/query/README.md` の一件。commit [6375c44](https://github.com/yusukefujiijp/ai-project/commit/6375c44f93701b7e3495c128534352edc814fafd)、blob `da1ffd2f114ea2de7b3f1bc7654116675542aea5` の全文・Remote一致を確認済み。MAP本体や自動同期を変更した承認ではない。
 
-05→06実行前のCurrent確認で、別ThreadのMAP改善が公開済みと判明した。**現行は `$map-current-position`／現在地MAP**、共有原本は [SKILL.md](../../../skills/map-current-position/SKILL.md)、Queryは [query/README.md](../../../skills/map-current-position/query/README.md)。旧Skill・Queryは新原本へ案内する互換読取入口。旧Identityを新Identityと同一視せず、固定Bindingの失敗を互換リンクだけでPASSにしない。旧コマンドが自動転送する保証もない。
+05→06実行前のCurrent確認で、別ThreadのMAP改善が公開済みと判明した。**現行は `$map-current-position`／現在地MAP**、共有原本は [SKILL.md](../../../skills/map-current-position/SKILL.md)、Queryは [query/README.md（当時の固定版）](https://github.com/yusukefujiijp/ai-project/blob/dda8ecf86a3f794568d5c9a18d9ed6778d708b37/skills/map-current-position/query/README.md)。旧Skill・Queryは新原本へ案内する互換読取入口。旧Identityを新Identityと同一視せず、固定Bindingの失敗を互換リンクだけでPASSにしない。旧コマンドが自動転送する保証もない。
+
+2026-10-20の参照追補：上段は05→06準備時点の観測である。現在のQuery原本は[map-current-position直下のREADME](../../../skills/map-current-position/README.md)へ統合し、新旧のQuery専用フォルダを削除した。旧Skillの互換読取入口と、固定commitでの当時のQuery本文は保持する。この追補は06が指定する固定Harvestの本文や、当時の保存Receiptを置き換えない。
 
 後続改善は「残作業とGoal」を独立して読み、目的・現状・差分・方法・完了条件を結ぶ。未完了・保留・将来構想・取消し・結果不明・別担当を区別し、十分明確なContinueでは現在のScopeを進める。Goal専用Skillの完成を前提にしない。
 

@@ -14,4 +14,4 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-current-positio
 
 現行本文が、Tree・Node & Edge、残作業とGoal、Living Review → Next step、権限・Root・Guardを所有する。現在地の整理だけで保存・過去Taskの再開を始めない。旧参照を読む行為はBoot・新しい実行承認ではない。
 
-旧[Navigator参照](references/ark-graph-navigator.md)・[Source routing](references/source-routing.md)・[Query入口](query/README.md)も必要な現行資料へ接続する。GitHubで旧URLを保持したことは、利用環境で `$map-ark-current-position` が新Skillへ自動転送される証明ではない。新しい呼出しは `$map-current-position` を使い、登録・会話内取得・UI・旧コマンド互換は実際に確認した範囲を区別する。
+旧[Navigator参照](references/ark-graph-navigator.md)・[Source routing](references/source-routing.md)・[Query入口](../map-current-position/README.md)も必要な現行資料へ接続する。GitHubで旧URLを保持したことは、利用環境で `$map-ark-current-position` が新Skillへ自動転送される証明ではない。新しい呼出しは `$map-current-position` を使い、登録・会話内取得・UI・旧コマンド互換は実際に確認した範囲を区別する。

@@ -2,12 +2,17 @@
   "meta": {
     "state_id": "ARK28_06_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-14",
-    "updated": "2026-10-14",
+    "updated": "2026-10-20",
     "canonical_path": "ark-project/ark28/ark28-06/state.json",
     "date_scope": "Asia/Tokyo preparation; not actual06 reception or Human UI",
-    "change_reason": "Initialize Human-authorized05→06 Support continuation from fixed05 harvest and selected originals, preserving current owners and material corrections."
+    "change_reason": "Navigation-only v001.1 migration for Human-approved per-skill README Query ownership; current MAP Query route and runtime/handoff blobs updated, prior identities, required sources, receipts and progress retained.",
+    "navigation_revision": {
+      "previous_snapshot": "369b5f1f287d212848def6121a2ad374aa3e2d77",
+      "authority": "Current Human approved per-skill README consolidation, Query-folder removal and GitHub execution.",
+      "scope": "Current MAP Query route, README/Handoff version and blob bindings only; no new boot, changed progress, or historical receipt rewrite."
+    }
   },
   "identity": {
     "source": "Ark28:05",
@@ -88,14 +93,14 @@
     "runtime": {
       "path": "ark-project/ark28/ark28-06/README.md",
       "id": "ARK28_06_SUPPORT_FIELD",
-      "version": "v001-human-authorized",
-      "blob_sha": "8176eea45b2925c6e666ffceeee6ffc3837f3ac9"
+      "version": "v001.1-human-authorized",
+      "blob_sha": "ab38a25f9b029eafa3e539b433e7bf6bfbb9a22f"
     },
     "handoff": {
       "path": "ark-project/ark28/ark28-06/handoff.md",
       "id": "ARK28_05_TO_ARK28_06_CONTINUE",
-      "version": "v001-human-authorized",
-      "blob_sha": "0360928a249f4352d93a98bb9ff405299d781106"
+      "version": "v001.1-human-authorized",
+      "blob_sha": "5dc5ccaa9766fb6a25b9532838fc791685f4de9a"
     },
     "source_harvest": {
       "path": "ark-project/ark28/ark28-05/harvest.md",
@@ -178,7 +183,7 @@
     },
     "map": {
       "path": "skills/map-current-position/SKILL.md",
-      "query": "skills/map-current-position/query/README.md",
+      "query": "skills/map-current-position/README.md",
       "reading": "Conditional Current full Skill for map work. Old map-ark entry is read compatibility, not an automatic runtime alias."
     }
   },
@@ -253,7 +258,7 @@
       },
       {
         "outcome": "Current MAP improvement and rename",
-        "owner": "skills/README.md §3.13",
+        "owner": "skills/map-current-position/README.md#map-current-position-revision",
         "shared_commit": "8e30b09cc918bf011c8e822917b79abf120399da",
         "retrieval_receipt_commit": "dda8ecf86a3f794568d5c9a18d9ed6778d708b37",
         "boundary": "Owner reports shared/registered and two current retrieval routes verified. Not all runtimes, UI, alias, natural trigger or field outcomes."

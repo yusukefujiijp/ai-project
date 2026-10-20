@@ -59,7 +59,7 @@ For revisions, regenerate from current Markdown and assets. Do not independently
 
 ## Shared source and maintenance
 
-This is a personal skill. Its maintained shared source is [skills/markdown-to-html](https://github.com/yusukefujiijp/ai-project/tree/main/skills/markdown-to-html); the [Skills Hub entry](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#markdown-to-html-entry) owns provenance, the explicit invocation, and the observed verification scope. Read that history when it affects the current judgment, not as a prerequisite for every conversion.
+This is a personal skill. Its maintained shared source is [skills/markdown-to-html](https://github.com/yusukefujiijp/ai-project/tree/main/skills/markdown-to-html); the [skill README](https://github.com/yusukefujiijp/ai-project/blob/main/skills/markdown-to-html/README.md) owns provenance, the explicit invocation, and the observed verification scope. Read that history when it affects the current judgment, not as a prerequisite for every conversion.
 
 In another environment, obtain the resources the chosen route actually needs, not just SKILL.md. The bundled route needs `scripts/render.py`, `assets/reader.css`, and `assets/reader.js`; Hebrew-script sources also need `assets/fonts/NotoSerifHebrew.ttf` and its complete `OFL.txt`. Python, Pandoc, and any chosen Mermaid distribution are environment dependencies, not bundled capabilities. Verify their availability and preserve applicable licenses. Reading the shared instructions is not skill registration or proof that rendering tools are present.
 

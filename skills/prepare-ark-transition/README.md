@@ -1,10 +1,10 @@
 ---
 title: "Ark Transition — 準備から受入れまでを、現在の権限でつなぐ"
-version: "v001"
+version: "v002"
 status: "active / Human-authorized"
 updated: "2026-10-20"
 canonical_path: "skills/prepare-ark-transition/README.md"
-expected_eof: "EOF::PREPARE_ARK_TRANSITION_README::v001"
+expected_eof: "EOF::PREPARE_ARK_TRANSITION_README::v002"
 ---
 
 # Ark Transition
@@ -58,4 +58,28 @@ Skillを登録できないAIも共有本文を実際に読めます。Skill機�
 
 保存済みSource、送信とUI実在、Target自身の根拠付き再構成、Humanの到達・実利用、実生活効果は別です。今回の改訂が後の承認審査を必ず通す、全AIが自動で思い出す、負担が確実に減ったとは扱いません。次の実際に依頼された移行で得られたFeedbackを、その条件とともに担当原本へ戻します。確認のためだけに新Threadを作成する必要はありません。
 
-EOF::PREPARE_ARK_TRANSITION_README::v001
+## 5. 共有・改訂の来歴
+
+以下は[移管前Hubの固定版](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)のArk Transition固有記録を、2026-10-20に本READMEへ移したものです。各時点の変更範囲・限定試験・未観測事項を保持しています。「今回」や過去の未確認状態を、後続の作業が未完了であるという判断へ流用しません。
+
+初回のArk Transition本文は既存インストール版から内容を変えず共有しました。共有版と導入版の更新は自動同期ではなく、それぞれの保存と再取得で確認します。2026-09-12のexport-manifestは当時の別二Skillの輸出記録であり、Ark Transitionの後続改訂を収録済みとは扱いません。
+
+### 2026-09-14・09-20・09-25の形成と限定確認
+
+2026-09-14のArk Transition改訂は、ツール改善と実移行の入口を分け、Current Runtimeから重要な運用Systemの資料へ必要時に接続する案内を補いました。共通移行契約の本文・名前・既存Handoffは変更せず、汎用の計画用Promptを当時のSkills Hub第3節へ集約しています。検証で使う説明用ケースを実際のTask実績や全AI互換性の証明にしません。
+
+2026-09-20、Ark27:04でのHuman承認により、当時のSkills Hub第3節の計画用Promptを改訂しました。共通契約にある全文読解記録の再利用条件、資料ごとの宣言条件、Human確認済み・AI提案・Unknown、未完了Gateと保留Branch、停止範囲と最小回復方法を入口でも明確にしています。構造化を固定Templateにせず、Source準備・保存確認・Target再構成・Human操作を分ける方針を保持しました。変更は当時のHubの呼出しPrompt・版情報・改訂理由に限定し、共通契約とSkill本文の改訂、Skillの再導入、実際の移行やTarget Bootを含みません。
+
+2026-09-25、Ark27:05のHumanが承認した改訂計画に基づき、Ark TransitionのArk章ペアへの条件付きRoutingと当時の入口を更新しました。「Promptは必要な意味を無理に削らない」というCorrectionを受け、定型処理をSkill・共通契約・Ark Domainへ委ねています。共通契約と既存の移行Handoffは改訂せず、章固有の意味は新しいArk28資料へ置きました。共有原本の保存、導入先の更新、限定応答確認、実際のArk28起動は別です。検証は次の範囲で完了しています。2026-09-12のexport-manifestは対象外の歴史記録として変更しません。
+
+改訂後、元会話や期待回答を渡さない二つの独立Contextで、計四回の読み取り専用応答を確認しました。一つはArk28 Handoffから宣言8資料を全文読み、固定Runtime／HandoffとStateのBinding、T1–T10を確認した上で、既入力の「B-Gateではない・軽いTeshuvahや補足を話したい・新Task不要」を受領しました。その後、仮想の自宅・片付け終了・眠気という入力には短い休止への一手を返し、次の明示的な設計相談には再Bootせず十分な比較と根拠／仮説の区別へ戻りました。もう一つは将来Ark29の計画とArk27のThread継続を読み分け、Mission未確定を起動時のGateとして残しながら計画を成立させ、Ark28の無断付替えやThreadごとのSub新設を行いませんでした。
+
+形式検査、参照先・Identity・EOF・Title・Triad Binding・変更範囲の検査、GitHub再取得での本文一致、導入済みArk Transition本文と共有本文の一致を確認しました。変更したSkillは既存の一件で、表示設定は同じ用途を表すため保持しています。これらは明示的に本文を読ませた限定確認です。仮想入力をHumanの実経験へ記録せず、実際のArk28用Thread作成・貼付・到達、自然な自動選択、全AI互換性、支援の生活効果は未観測のままです。
+
+### 2026-10-10の入口整理と10-20の到達点拡張
+
+2026-10-20のHuman承認による改訂では、[SKILL.md](SKILL.md)に現在の経路発見、承認範囲内の送信、Target自身の受入れ確認、中断・審査拒否からの回復、該当する[Skills lessons](../_references/lessons.jsonl)の参照・更新を組み込みました。Source準備だけで依頼を終えず、今回の到達点まで進めるための手順です。実際の送信権限はその都度の依頼・継続委任から判断し、Plan-onlyやSTOPを保持します。出来事の詳細は[Ark100:00の固定記録](https://github.com/yusukefujiijp/ai-project/blob/173f099fd4b2c960b3e16122b261b31ffc0645de/ark-project/ark100-199/ark100_b-zone/ark100-00/README.md)を再利用し、同じログをSkill内へ複製しません。
+
+2026-10-10、Ark99:00のHuman Correctionにより、定型の資料選択・再構成計画・出力伝達・確認をSkillへ持たせ、呼出し文は現在の依頼とModeを伝える入口へ整理しました。Thread名のコピー面を準備元・受入れ先の両方に置く成立条件は[共通契約 §8](../../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有し、Skillは受入れ先が実際に読む起動本文への伝達を担います。特定Arkの起動元や現在の番号を汎用Skillへ固定せず、短いHuman入力からも必要な検討品質を保持します。文書と導入内容の確認は、実際の受入れ先の応答・Copy UI・往復負担の改善と区別します。
+
+EOF::PREPARE_ARK_TRANSITION_README::v002

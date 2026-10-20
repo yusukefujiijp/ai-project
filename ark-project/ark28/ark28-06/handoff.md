@@ -1,7 +1,7 @@
 ---
 title: "Ark28:05 → Ark28:06 — Teshuvahを軸に継続する受入れ契約"
 handoff_id: "ARK28_05_TO_ARK28_06_CONTINUE"
-version: "v001-human-authorized"
+version: "v001.1-human-authorized"
 canonical_path: "ark-project/ark28/ark28-06/handoff.md"
 source_thread: "Ark28:05"
 target_thread: "Ark28:06"
@@ -12,22 +12,27 @@ chapter: "Ark28"
 main_chapter: "Ark27"
 main_ownership_transferred: false
 created: "2026-10-14"
+updated: "2026-10-20"
+navigation_revision:
+  authority: "Human approved per-skill README ownership, Query-folder removal and GitHub execution"
+  scope: "MAP Query link and corresponding version/blob bindings only; required sources, R1–R8, identities and authority retained"
+  previous_snapshot: "369b5f1f287d212848def6121a2ad374aa3e2d77"
 date_scope: "Asia/Tokyo preparation; not actual06 reception or Human UI creation"
 authority: "Human approved the05→06 eight-path plan and GitHub execution on2026-10-14"
 compiled_title: 'Ark28:06_2026/10/14; "主の完全勝利: Teshuvahを軸に育てる継続協働"'
 runtime_path: "ark-project/ark28/ark28-06/README.md"
 runtime_id: "ARK28_06_SUPPORT_FIELD"
-runtime_version: "v001-human-authorized"
-runtime_blob_sha: "8176eea45b2925c6e666ffceeee6ffc3837f3ac9"
+runtime_version: "v001.1-human-authorized"
+runtime_blob_sha: "ab38a25f9b029eafa3e539b433e7bf6bfbb9a22f"
 state_path: "ark-project/ark28/ark28-06/state.json"
 state_id: "ARK28_06_CURRENT_STATE"
 state_schema_version: "v001"
-state_minimum_revision: 1
+state_minimum_revision: 2
 source_snapshot_commit: "3da58ebfca0d532ce3b6c45b92dc84b949a6bc10"
 source_harvest_blob_sha: "ebecac1b2560733af6c0fdea278008deaceb8bd1"
 source_experience_blob_sha: "b3f009e76c6a4ed907600c68bb3c69c2251719dc"
 shared_contract_adopted_version: "v003-human-authorized"
-expected_eof: "ARK28_06_HANDOFF_EOF_v001"
+expected_eof: "ARK28_06_HANDOFF_EOF_v001_1"
 ---
 
 # Ark28:06の受入れ
@@ -38,6 +43,12 @@ Ark27 Mainを保持し、Ark28:05から同章Supportとして協働を続ける�
 
 05の生活想起、ai-projectへの限定集中、Podcast Themeと本文入口、Query backupと後続MAP改善、Ark99形成・訂正とDots／Workの成立条件を継ぐ。06をPodcastやMAP専用に固定せず、今のHuman入力を中心にする。Sourceの実行承認は05→06準備の範囲であり、Targetの別件GitHub変更・送信・UI・身体Trialへの包括委任ではない。
 
+### 2026-10-20の参照移行と旧契約
+
+Humanが承認した各Skill READMEへのQuery統合に合わせ、本Handoffと06 READMEをv001.1へ移し、State revision2に最終本文のblobをBindingします。変更はMAP QueryのCurrent参照先と、この改訂を成立させる版・Bindingの整合です。17件のSource順序・固定履歴9/11・R1–R8・Root・権限・停止条件・Title・未観測の進捗は保持します。旧Query専用フォルダの存続を読取条件にせず、Current Query原本へ進みます。
+
+旧v001三点セットは[移行前の固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/369b5f1f287d212848def6121a2ad374aa3e2d77/ark-project/ark28/ark28-06/)で再現できます。旧固定README blobを要求するCurrent-main Bootは本改訂後のmainでは成立せず、旧契約のPASSへ読み替えません。旧版を明示された場合は固定snapshotとその契約で履歴を読み、本版への移行は現在の指定・権限と本契約から判断します。05 Stateの公開Receiptは2026-10-14時点の証拠として保持し、今回の参照改訂を当時の公開結果へ混ぜません。本改訂は新たなTarget起動・再Boot・Human UI操作・実利用成果の証拠ではありません。
+
 ## 2. Required Sources — 宣言順の全文読解
 
 以下17件をこの順で、先頭metadata／Beginning Identityから実末尾まで読む。宣言EOFがある資料はExact EOFまで、JSONは最終閉じ括弧まで、独自EOFがない資料は実際の最終行まで確認する。取得成功、行数、末尾検出だけでは全文読了にならない。共通契約を実際に読み、Skillの有無で条件を変えない。
@@ -46,9 +57,9 @@ Ark27 Mainを保持し、Ark28:05から同章Supportとして協働を続ける�
 
 | 順 | Source | Identity・版・読解／Binding条件 |
 |---|---|---|
-| 1 | [本Handoff](handoff.md) | `ARK28_05_TO_ARK28_06_CONTINUE`／v001／EOF `ARK28_06_HANDOFF_EOF_v001` |
-| 2 | [06 README](README.md) | `ARK28_06_SUPPORT_FIELD`／v001／blob `8176eea45b2925c6e666ffceeee6ffc3837f3ac9`／EOF `ARK28_06_README_EOF_v001` |
-| 3 | [06 State](state.json) | `ARK28_06_CURRENT_STATE`／schema v001／revision ≥1／EOF field `ARK28_06_STATE_EOF_v001`。Current可変 |
+| 1 | [本Handoff](handoff.md) | `ARK28_05_TO_ARK28_06_CONTINUE`／v001.1／EOF `ARK28_06_HANDOFF_EOF_v001_1` |
+| 2 | [06 README](README.md) | `ARK28_06_SUPPORT_FIELD`／v001.1／blob `ab38a25f9b029eafa3e539b433e7bf6bfbb9a22f`／EOF `ARK28_06_README_EOF_v001_1` |
+| 3 | [06 State](state.json) | `ARK28_06_CURRENT_STATE`／schema v001／revision ≥2／EOF field `ARK28_06_STATE_EOF_v001`。Current可変 |
 | 4 | [共通契約](../../../prompts/ai-next-thread-handoff.md) | Current Beginning Identity・宣言版・Exact EOF。採用v003との実質的互換と後続Human権限 |
 | 5 | [AGENTS](../../../AGENTS.md) | Current canonical path・権限・本文実末尾。独自EOFなし |
 | 6 | [Ark Domain](../../README.md) | Current Topology Router／宣言版・Exact EOF／Main・Support入口・Title規則 |
@@ -71,7 +82,7 @@ Ark27 Mainを保持し、Ark28:05から同章Supportとして協働を続ける�
 ### 条件付きで読む所有資料
 
 - Podcast Theme提案・本文生成・入口改訂: [Current Podcast Skill](../../../skills/podcast-mode/SKILL.md)と[Skills Hub](../../../skills/README.md)の該当節。現在の依頼がThemeだけか本文かPlan-onlyかを解決する。
-- 現在地MAP・Query利用: [Current MAP全文](../../../skills/map-current-position/SKILL.md)、必要なら[Query](../../../skills/map-current-position/query/README.md)とSkillが指定する参照。旧入口は互換読取であって旧Identityの自動置換ではない。
+- 現在地MAP・Query利用: [Current MAP全文](../../../skills/map-current-position/SKILL.md)、必要なら[READMEのQuery](../../../skills/map-current-position/README.md)とSkillが指定する参照。旧入口は互換読取であって旧Identityの自動置換ではない。
 - Lessons集約・Voice/Radioの残点・登録障害の再評価: [STR-015](../../../control-center/changes/STR-015-skills-lessons-consolidation.md)とCurrent対象。archiveの再評価は[ARC-012](../../../control-center/github/ARCHIVE.md#arc-012)と対象原本。完了した整理をやり直さない。
 - Portal想起・記録更新: [ガイド](../../../ark-recall-portal/README.md)、[items](../../../ark-recall-portal/items.json)、対象の原本と現在の委任。移行を就寝・服用・運動合図にしない。
 - 経験データの構造変更: [v001 schema](../../../formats/task-records/v001.schema.json)とCurrent原本。Sourceの全履歴や長期メモリは取り込まない。
@@ -121,4 +132,4 @@ Ark28:06_2026/10/14; "主の完全勝利: Teshuvahを軸に育てる継続協働
 
 受入れ結果は根拠と現在地、Completed／Pending／Deferred／Unknownを必要な密度で示す。末尾の **Living Review → Next step** は隣接させ、復元した盤面の今の意味と現在有効な接続を自分の判断で説明する。Reset・過去Task・終了対話・身体Trial・送信・外部変更・実案件移行を自動開始しない。
 
-ARK28_06_HANDOFF_EOF_v001
+ARK28_06_HANDOFF_EOF_v001_1

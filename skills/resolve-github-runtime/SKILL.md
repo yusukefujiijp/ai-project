@@ -70,6 +70,6 @@ Versionやpathが公開されている場合だけ添える。古いversion付�
 
 ## 共有原本・代替経路・来歴
 
-現行の共有原本は[このSKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/resolve-github-runtime/SKILL.md)。登録機構がない環境でも、取得した本文を指示資料として使えるが、導入済み・自然発動済みとは称しない。[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#resolve-github-runtime-entry)は、登録済みSkillが利用できない場合も共有原本へ辿れる入口を所有する。原本の保存、登録先反映、会話での取得、実際の挙動を別々に確認する。
+現行の共有原本は[このSKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/resolve-github-runtime/SKILL.md)。登録機構がない環境でも、取得した本文を指示資料として使えるが、導入済み・自然発動済みとは称しない。[このSkillのREADME](https://github.com/yusukefujiijp/ai-project/blob/main/skills/resolve-github-runtime/README.md)は、起動Query・来歴と、登録済みSkillが利用できない場合も共有原本へ辿れる入口を所有する。原本の保存、登録先反映、会話での取得、実際の挙動を別々に確認する。
 
 [Ark23の代替記録](https://github.com/yusukefujiijp/ai-project/blob/51cb57189c95c53a0ca97282abf8cd3c100507b6/ark-project/ark23/ark23-03/github-plugin-runtime-best-practice.md)は、2026-08-22の判断・操作報告と成立経緯を示すHistorical Sourceである。Ark23で本Skillが利用できず代替記録が必要な場合、または当時の経緯を調べる場合に読む。適用されるArk23の読取契約があればそれに従う。全場面の追加必読資料にせず、当時のVersion・Mode・成功報告を現在の能力の証拠へ変えない。

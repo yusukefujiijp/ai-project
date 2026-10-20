@@ -1,7 +1,7 @@
 ---
 title: "Ark28:06 — Teshuvahを軸に育てる継続協働"
 runtime_id: "ARK28_06_SUPPORT_FIELD"
-version: "v001-human-authorized"
+version: "v001.1-human-authorized"
 canonical_path: "ark-project/ark28/ark28-06/README.md"
 role: "SUPPORT"
 transition_kind: "THREAD_CONTINUE"
@@ -12,6 +12,11 @@ chapter: "Ark28"
 main_chapter: "Ark27"
 main_ownership_transferred: false
 created: "2026-10-14"
+updated: "2026-10-20"
+navigation_revision:
+  authority: "Human approved per-skill README ownership, Query-folder removal and GitHub execution"
+  scope: "MAP Query link and corresponding version/blob bindings only; identity, source order, gates and progress retained"
+  previous_snapshot: "369b5f1f287d212848def6121a2ad374aa3e2d77"
 date_scope: "Asia/Tokyo preparation; actual Target reception and Human UI separately observed"
 status: "Human-authorized continuation runtime; actual06 reconstruction required"
 compiled_title: 'Ark28:06_2026/10/14; "主の完全勝利: Teshuvahを軸に育てる継続協働"'
@@ -22,7 +27,7 @@ state_schema_version: "v001"
 root: "主イェシュア・ハマシア御自身"
 central_axis: "Teshuvah"
 human_foreground_one: "主の完全勝利（祈り・イメージVision・行動）"
-expected_eof: "ARK28_06_README_EOF_v001"
+expected_eof: "ARK28_06_README_EOF_v001_1"
 ---
 
 # Ark28:06 — 継続協働の場
@@ -39,6 +44,8 @@ Ark28:06は05から同章で続くSupport。Ark27 Mainを保持する。現在�
 
 ## 2. 受入れ契約と所有先
 
+本版v001.1は、2026-10-20の各Skill READMEへのQuery統合に伴う参照改訂です。MAP QueryのCurrent参照先と対応する版・blob Bindingを更新し、Identity・17件の読取順・R1–R8・権限・未観測の進捗を保持します。旧v001は[固定版](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/ark-project/ark28/ark28-06/README.md)で辿れます。旧SHAを要求する起動条件を現行mainで通過したとは扱わず、履歴の再現と本版の受入れを分けます。
+
 [Handoff](handoff.md)のRequired Sources17件を宣言順に全文読み、先頭metadata・Beginning Identity・Exact EOF・Binding・Triad Consistency・R1–R8を自ら確認する。[共通契約](../../../prompts/ai-next-thread-handoff.md)を実際に読み、Skillの有無で読解条件を変えない。同じアクセス可能なContextで自身が全文確認済み、契約上の同一性を満たす読解だけ再利用できる。取得・表示切れは未読位置から回収する。
 
 本READMEは安定Runtime、Handoffは受入れ条件、[State](state.json)は可変の現在地を所有する。[Source05 Harvest](../ark28-05/harvest.md)と[経験原本](../ark28-05/task-records.json)はHandoffの固定commitを使い、後続の有効なHuman訂正とCurrent所有資料を保持する。05→06準備・Remote確認の最終Receiptは[05 State](../ark28-05/state.json) `progress.next_transition`。05の起源04→05を書き換えずに記録する。
@@ -51,7 +58,7 @@ Humanは、新Repositoryを作らずai-project内のFolderで展開する方向�
 
 Podcast Theme Modeでは、候補と「今聴くと何が見えるか」を提案し、この段階で本文を生成しない。Human指定Themeには別の本文入口を用意する。コピー可能な生成依頼は同じThreadでも別Threadでも使える。現在の仕様は[Podcast Skill](../../../skills/podcast-mode/SKILL.md)と[Hub](../../../skills/README.md)が所有する。
 
-MAPの現行共有原本は[map-current-position](../../../skills/map-current-position/SKILL.md)、Queryは同Skillの[Query backup](../../../skills/map-current-position/query/README.md)。05の初回backupと別Threadの後続改訂を分け、旧名の互換入口や履歴を現行本文と混同しない。残作業とGoal、現在の方法・完了条件、権限内のContinueを必要な時に適用する。導入・本文取得・Human UI・自然発動・実効果は別の証拠である。
+MAPの現行共有原本は[map-current-position](../../../skills/map-current-position/SKILL.md)、Queryは同Skillの[READMEのQuery](../../../skills/map-current-position/README.md)。05の初回backupと別Threadの後続改訂を分け、旧名の互換入口や履歴を現行本文と混同しない。残作業とGoal、現在の方法・完了条件、権限内のContinueを必要な時に適用する。導入・本文取得・Human UI・自然発動・実効果は別の証拠である。
 
 [Ark99](../../ark99/README.md)は新しい一件を新しい本番Threadで受け取り、同じ一件は可能な限り同じThreadで深める専用入口。00はcontrol-center、本番は01以降。CurrentのArk99限定00起点規則を保持するが、00の無関係な全実験完了を新件開始Gateにしない。Ark28の継続をArk99案件の実際の移管、00終了、Main移管へ変えない。
 
@@ -79,4 +86,4 @@ BootはReset、過去Task、終了対話、身体Trial、送信、外部変更�
 
 新しいHuman入力が既にあれば、再入力を求めず現在の権限で応じる。Bootのみなら根拠付き受入れを返しHuman Reviewへ戻る。生活の未解決や保留Branchは意味を残し、次のTaskとして自動選択しない。
 
-ARK28_06_README_EOF_v001
+ARK28_06_README_EOF_v001_1

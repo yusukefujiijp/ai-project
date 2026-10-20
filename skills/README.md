@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.41.0
+version: v0.42.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-20
-updated_reason: Ark Transitionの承認範囲内の受渡し・受入れ確認と条件付き学習経路を更新し、計画用Queryを専用READMEへ移管
+updated_reason: 現行32スキルのREADMEへ用途・Query・個別形成記録を移し、Hubを一覧と共通契約へ整理。MAPの新旧Queryフォルダを退役
 ---
 # Ark Shared Skills Hub
 
@@ -17,12 +17,12 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### 1.1 今の目的から読む
 
-- 使うSkillを選ぶ： [一覧](#2-available-skills)から対象のSKILL.mdへ進む。登録機構を使えないAIも、共有本文を実際に読んで指示資料として使える。導入済みとは称しない。
+- 使うSkillを選ぶ： [一覧](#2-available-skills)から対象のREADMEで用途・Queryを確認し、手順のSKILL.mdへ進む。登録機構を使えないAIも、共有本文を実際に読んで指示資料として使える。導入済みとは称しない。
 - 過去の学びを使う・訂正する： [Skills lessons](#skills-lessons)で担当原本と適用範囲を確かめる。
 - 共有版と導入版を合わせる： [Source and distribution](#4-source-and-distribution)へ。GitHub保存・登録先保存・会話での取得・実利用は別々に確認する。
-- 明示呼出しや成立理由を知る： [各Skillの入口・記録](#3-mobile--explicit-entry)、[初期共有の形成記録](#skills-formation-history)へ必要時に進む。
+- 明示呼出しや成立理由を知る： 対象SkillのREADMEへ進む。旧Hubの節URLは[移動案内](#3-mobile--explicit-entry)として保持する。
 
-本書は入口と所有関係、各SKILL.mdは使用条件と手順、lessonは条件・根拠付きの学びを所有する。AIが現在の依頼から選び、Humanへ全履歴の再説明や毎回の全件精読を求めない。明示されたHandoff・RuntimeのRequired Sources、全文読解・Identity・Binding・Exact EOFを、この選択読解で解除しない。
+本書は一覧と共通の所有関係、各SkillのREADME.mdは用途・コピーできるQuery・個別の来歴、SKILL.mdは使用条件と手順、lessonは条件・根拠付きの学びを所有する。AIが現在の依頼から選び、Humanへ全履歴の再説明や毎回の全件精読を求めない。明示されたHandoff・RuntimeのRequired Sources、全文読解・Identity・Binding・Exact EOFを、この選択読解で解除しない。
 
 <a id="skills-lessons"></a>
 
@@ -40,651 +40,203 @@ Skillsに関係する変化する学びの担当原本は、[`_references/lesson
 
 同じlessonの別原本をSkillごと・AIごと・導入先ごとに増やさない。分類field・索引・分割は具体的な検索や適用判断の不足が生じた時に検討し、ファイル数・浅い階層・固定Schema拡張を目的にしない。
 
+<a id="readme-and-query-ownership"></a>
+
+### READMEとQueryの保存先
+
+現行の共有Skillには、それぞれ `skills/<skill-name>/README.md` を置く。新規の起動Query、用途別の呼出し例、説明・形成理由は対象のREADMEで育てる。本Hubへ個別本文を追記せず、一覧から担当原本へ接続する。
+
+Queryは現在の依頼をSkillへ渡す入口であり、汎用の判断方法はSKILL.mdが所有する。短い標準Queryと、対象・計画限定などの条件が異なる詳しいQueryは、同じREADMEの別節へ置ける。必要な意味を文字数のために削らず、Query専用フォルダや同じQueryの別原本を作らない。`agents/openai.yaml` の `default_prompt` はUI用の設定であり、READMEと役割が違う。対応する標準Queryを変える時だけ両者の整合を確認する。
+
+既存のQueryを移す際は、固有の条件・出典・確認範囲を移し、現用リンクを直してから旧配置を除去する。過去の固定commit・当時のpath・検証結果は履歴として保持する。この方針は現行の共有Skillが対象であり、第三者Plugin、保管専用フォルダ、別領域のデータを一律に改編する指示ではない。
+
+個別READMEは利用・再開の入口であり、全READMEの常時精読や、SKILL.mdで完結する作業への追加Bootを要求しない。Skill機構がない環境では共有SKILL.mdを実際に読んで指示資料として使える。読むこと・GitHub保存・登録・会話内取得・実際の効果は別に確かめる。
+
 <a id="skills-lessons-migration"></a>
 
 ### 1.3 2026-10-11の集約と参照切替
 
-Ark28:05のHumanは本READMEを最重要の入口とし、既存の良い部分を継承してskills内のlessonsを集約し、他AI・Future Dotsへ渡す計画を承認した。Radio 1件・Voice 3件を同一行のまま集約し、上記の読取・更新先を現在の案内とする。
+Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通原本へ集約した。その後のPodcast登録切替・旧Radio退役・Voice旧配置退役は、対象別の観測として[STR-015](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。10月11日のHTTP 422や会話内旧版取得、後日の成功は観測時点を区別する。現在の入口・個別形成記録は[Podcast](podcast-mode/README.md)と[Voice](voice-mode/README.md)へ移した。
 
-同日の初回作業では、集約先・共有Skill・案内の保存後全文一致を確認した一方、登録先へのRadio／Voice同時更新はHTTP 422で完了しなかった。その時点の旧版確認と退役保留は履歴として保持する。
-
-**2026-10-11の後続保存。** Humanが改めて承認したPodcast継承計画に基づき、Voiceの参照更新と、既存Radioと同じ登録物のPodcast化を順に通常保存し、登録先Remoteから新本文を取得して共有原本との一致を確認した。422は今回再現しなかったが、以前の原因はUnknown。その時点の会話内Skill読取経路は旧Radio／旧Voiceを返し、新しいPodcast名での取得は未成立だった。当時は旧二JSONLと旧Radio共有二原本を互換参照の受け皿として保持した。現在の処置は下の2026-10-14の後続確認と所有記録へ戻り、更新先を増やさない。共有原本を読むAIは下のPodcast入口と集約lessonを使う。根拠・確認段階・各旧配置の退役条件は[STR-015の後続記録](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)が所有する。
-
-**後続の取得観測（2026-10-13）。** Ark28:05の会話でPodcast名の登録済みSkillを取得でき、改訂前本文が共有原本（blob `bfec204f4ab1489e1a5b0fcf50c71423b23a04bb`）と一致した。10月11日時点の未取得を現在のPodcastの阻害条件へ延長しない。今回のTheme機能追加と改訂後の確認範囲は[Podcast Theme Mode](#podcast-theme-mode)へ。Voiceの再確認や旧配置の退役を、この観測だけで完了へ変えない。
-
-**後続確認と旧Radio退役（2026-10-14）。** Ark27:09は既存Podcast登録物からTheme拡張版の全文を直接取得し、共有本文（blob `6188c1e2db9e061bae7a8a2d476f0af27205e93d`）と完全一致を確認した。既知の現役依存・lesson保存・固定commitからの復元経路を確かめ、旧Radio共有二原本と旧Radio JSONLの三ファイルを現役配置から除去した。Voiceについては、10月12日のDotsによる新参照・本文一致の[後続報告](../records/2026/10/2026-10-12.jsonl)も保持するが、この実行ではVoice登録本文の再取得・旧JSONL除去を行わない。対象別の結果、保存後確認、復元条件は[STR-015の現在節](../control-center/changes/STR-015-skills-lessons-consolidation.md#podcast-cutover-current)へ。過去の未取得を消さず、全Runtime・旧コマンド転送・UI・自然発動・長期効果は保証しない。
-
-**Voice旧配置の退役（2026-10-15）。** dot-0000: 初穂はHumanの四パス計画への実行承認を受け、旧Voice JSONLを現役配置から除去した。三lessonは集約先に同一行で保持し、Voice本文・登録先は変更していない。登録本文の新たな全文一致を確認し、別の読取経路での取得不能と区別する。現在の確認範囲・保存後検証・復元条件は[STR-015第8節](../control-center/changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current)へ。上の10月14日欄のVoice範囲外は当時のRadio実行範囲であり、現在の未完了項目へ戻さない。
-
-Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集約、別Repository作成、全Skillの一括改訂、通知・外部AI送信はこの変更に含めない。
+この集約をGrok／Claudeの移設、root／Dots lessonsの集約、全Skill改訂、外部AIへの通知の承認へ広げない。
 
 ## 2. Available skills
 
-| Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
-|---|---|---|---|---|
-| B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [SKILL.md](b-zone/SKILL.md)・[起動Query](b-zone/README.md) | 基本支援は本文。意味・訂正・経験と運用構想は[Ark100原本](../ark-project/ark100-199/ark100_b-zone/README.md) | 形式と四つの独立文脈・計八応答を限定確認。共有・登録・取得・実生活効果の区別は[§3.19](#b-zone-entry) |
-| Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [SKILL.md](markdown-to-html/SKILL.md) | 本文と必要な同梱資源。Python・Pandoc等の実行環境と保存権限は別途確認 | 形式・回帰13件・独立変換・Chromium表示を限定確認。来歴と保存・取得の区別は[§3.18](#markdown-to-html-entry) |
-| GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [SKILL.md](resolve-github-runtime/SKILL.md) | 環境判断は本文。Ark変更は[AGENTS](../AGENTS.md)、成果物保存は[Artifact → GitHub](../prompts/artifact-to-github.md) | 形式・二つの独立文脈で七条件への回答を確認。共有・登録先・実利用の区別は[§3.17](#resolve-github-runtime-entry) |
-| 残作業とGoal / map-remaining-work | 現在の協働から有効な残作業とGoalを直接取り出す。Dots主経路・Work補助経路・他AIへの分岐。前回Map不要 | [SKILL.md](map-remaining-work/SKILL.md) | 本文単体で基本支援。環境・役割・能力と現在のSource契約を区別 | 形式・四つの独立文脈で計六応答を限定確認。入口・形成と確認境界は[§3.16](#map-remaining-work-entry) |
-| Goal / goal | 今のGoalへAIの判断と工夫を向けたい時の、気軽な明示呼出し。Goalが見えてきた時や仕上げにも使える | [SKILL.md](goal/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約を保持 | 形式・三つの独立文脈で六応答と通常応答一件の限定比較を確認。入口・確認範囲は[§3.15](#goal-entry) |
-| Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [SKILL.md](shop-deep-research/SKILL.md) | 本文単体で基本方法。公式Deep Researchの利用可否・起動・結果は実環境で別途確認 | 形式・三つの独立文脈・共有と登録先の本文一致を確認。入口と未検証範囲は[§3.14](#shop-deep-research-entry) |
-| Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [SKILL.md](visualize-patch/SKILL.md) | 基本支援は本文。利用する表示基盤の現行契約と、関係する[集約lessons](_references/lessons.jsonl) | 共有・登録先保存と本文一致、独立読解・別題材のブラウザ検証を確認。実機・他AI・会話内取得の境界は§3.12 |
-| Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [SKILL.md](podcast-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)を条件から選ぶ。基本支援は本文単体。実際のThread起動・移行には適用契約を保持 | Theme改訂時の形式・四つの独立文脈・共有保存・登録先Remote一致を保持。2026-10-14、Ark27:09でTheme拡張版の会話内取得と共有本文の一致を確認。旧Radio退役は§1.3。UI・自然発動・実聴取効果とは別。形成と改訂は[§3.11](#podcast-theme-mode) |
-| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [SKILL.md](voice-mode/SKILL.md) | [集約lessons](_references/lessons.jsonl)のVoice条件、製品機能は実環境で確認 | 初版の構文・限定応答と参照更新の登録先保存を保持。10月11日の会話内旧版取得、10月12日のDotsによる新参照・本文一致報告を区別する（§1.3）。2026-10-15のVoice旧JSONL退役と確認範囲は§1.3。Voice内直接呼出しと実生活効果は未検証。§3.11 |
-| 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [SKILL.md](self-improvement-loop/SKILL.md) | [AI Frontier Reader](../prompts/ai-frontier-reader.md)がSeed・品質・還流・評価・Joint playを所有 | 形式と限定独立応答を確認。共有・導入・実利用の区別は§3.10 |
-| Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [SKILL.md](usage-token-reset/SKILL.md) | 実際のUsage画面・登録済み予定・現在のHuman承認。日次付与監視なし | 形式・二つの独立文脈で六ケースを確認。導入・共有と実行未検証の境界は§3.9 |
-| 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [SKILL.md](problem-solving/SKILL.md) | 本文単体で基本支援。現在の依頼・権限・必須Source契約、専門Skillは必要時のみ | 初版の限定確認を保持。改名・案件案内の限定応答と共有・登録保存を確認。新名での会話内取得と旧配置退役、起動Query保存は§3.8／STR-017。自然選択・実生活効果は未実証 |
-| load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [SKILL.md](load/SKILL.md) | 現在指定されたSource契約。現在地の地図が必要なときだけmapへ接続 | 五観点の回復・必須不足・SourceとTargetの区別を限定確認。§3.5参照 |
-| next-step | 目的・制約・依存関係から理由ある接続を選び、実行・比較・保留・完了へつなぐ | [SKILL.md](next-step/SKILL.md) | 現在の権限。必要時だけLiving Review／Plan Mode | STOP・旧Gate・通常Unknown・後続実行承認を限定確認。§3.5参照 |
-| save | 成果・訂正・根拠・再開情報を担当原本へ残し、保存後に確かめる | [SKILL.md](save/SKILL.md) | 成果物・Task Records・Dotsログ／lessons・Boardそれぞれの保存先ガイド | 隔離素材で更新・NO_CHANGE・結果不明・取消し・衝突・並行情報保持を確認。§3.5参照 |
-| board | 相手・目的・通信状態を整理し、既存Topicへ接続 | [SKILL.md](board/SKILL.md) | [Board入口](../board/README.md)と対象TopicのCurrent | 宛先指定・既存返信・草稿と保存／送達の区別を限定確認。§3.5参照 |
-| AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [SKILL.md](living-review/SKILL.md) | 基本運用は本文、意味・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に参照 | 形式・六つの独立文脈で計九応答を確認。共有・導入の確認状態は§3.4。自然な自動選択・全AI互換性・実生活効果とは区別 |
-| 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [SKILL.md](map-current-position/SKILL.md) | 同梱Navigator・Source routing、必要時のLiving Review共通説明、現在のHuman入力と各Runtime | Tree・Node & Edge、「残作業とGoal」、末尾Living Review→Next step。[改名・確認範囲](#map-current-position-revision)を参照。旧名の共有入口とRuntime aliasは別 |
-| Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [SKILL.md](ark-recall-portal/SKILL.md) | [Portal入口](../ark-recall-portal/README.md)・保存時は[Task Records](../formats/task-records/README.md) | 二場面の初版。限定確認の範囲と未検証事項はPortal入口とケース集へ分離 |
-| Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [SKILL.md](plan-mode/SKILL.md) | 現在のHuman入力・適用AGENTS／Source契約。旧Plan Mode資料への起動依存なし | 限定確認と導入は§3.3。旧v005との同等性・全AI互換性・長期効果は未実証 |
-| Ark Transition / prepare-ark-transition | Thread継続・章移行・ペア準備・再接続の計画、承認範囲内の受渡しと受入れ確認 | [README](prepare-ark-transition/README.md) / [SKILL.md](prepare-ark-transition/SKILL.md) | [AI Next Thread Handoff](../prompts/ai-next-thread-handoff.md) | 条件付きlessonと中断回復へ接続。共有保存・導入・受入れ・実利用は別々に確認 |
-| AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [SKILL.md](analyze-living-graph/SKILL.md) | 同梱referencesを必要時に参照 | 現Thread改訂本文と参照資料を保持。限定応答確認あり。別製品での再現性は未検証 |
-| Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [SKILL.md](audit-agent-instructions/SKILL.md) | 同梱source-notesに記事出典と解釈境界 | 作成・導入・限定独立応答確認済み。全AI互換性は未検証 |
-| Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [SKILL.md](read-social-post/SKILL.md) | 実行環境のBrowser・認証・取得規則 | 公開Browser取得に加え、検索・Web取得失敗後の公開HTML全文取得を観測。省略検出・本文と動画の分離を改訂。全SNS互換性は未検証 |
-| SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [SKILL.md](write-social-post/SKILL.md) | [公開文Prompt](../prompts/ai-sns-public-post.md)が詳しい執筆条件・Few-shotを所有 | 段階的編集の改訂・四つの独立文脈で計六応答・共有と導入本文の一致を確認。§3.6参照。自然な自動選択・別Vendorでの実機動作・読者への効果は未検証 |
-| Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [SKILL.md](write-ark-markdown/SKILL.md) | 対象Runtime・近接ガイドを必要時に参照 | 形式検証・導入確認済み。架空素材で成功事例と入力ガイドの限定独立作成を確認。自動選択の実績・全AI互換性は未検証 |
-| Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [SKILL.md](recall-bedtime-care/SKILL.md) | [Task Records](../formats/task-records/README.md)・[就寝前の原本案内](../task-mode-system/experience/README.md#39-就寝前に思い出したいことを復元する) | 個別希望と各回の実施を分離。自然な合図での自動選択・実生活効果は未検証 |
-| BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [SKILL.md](receive-braindump/SKILL.md) | [共通運用](../task-mode-system/operation.md)・保存時は[Task Records](../formats/task-records/README.md) | 意味の保持と判断の自由を両立。確認範囲は下記の導入・応答確認記録を参照 |
-| Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [SKILL.md](co-design-everyday-solutions/SKILL.md) | 本文単体で基本支援。適用中の目的・制約・出力契約を尊重 | 形式・導入・限定独立応答確認。品質優位・自然な自動選択・実生活効果は未実証 |
-| アイデア出し / generate-ideas | 分野を横断して案・着想・別の切り口を生み出し、選んだ案やFeedbackから発展させる | [SKILL.md](generate-ideas/SKILL.md) | 本文単体で基本支援。発想方法・案数・順序・形式は現在の依頼へ適応 | 形式・導入・共有本文一致、三つの独立文脈で六応答を確認。通常回答一件との限定比較を含む。§3.7参照 |
-| 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [SKILL.md](distill-to-core/SKILL.md) | 本文単体で使用。現在の明示形式・上位契約を優先 | 形式・導入・限定独立応答確認済み。観点変更・解説依頼・根拠不足を扱う。自然な自動選択・全AI互換性は未検証 |
-| chocoZAP Sweet Spot / chocozap-sweet-spot | 現在のSweet Spot・Triangle・コースを読み、自然な報告・訂正・Feedbackを次の実践へつなぐ | [SKILL.md](chocozap-sweet-spot/SKILL.md) | 基本支援は本文。保存・履歴参照は[chocoZAP記録入口](../lifestyle/chocozap/README.md) | 形式・限定独立応答確認済み。訂正・新観察・系列内の変化と、後続の本人確認を区別。確認範囲は本書の改訂記録を参照 |
+現行32件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` は[現行名への案内](map-ark-current-position/README.md)であり、別の現行Skillとして数えない。
+
+| Skill | 使用場面 | 入口・手順 |
+|---|---|---|
+| B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [README・Query](b-zone/README.md) / [SKILL.md](b-zone/SKILL.md) |
+| Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [README・Query](markdown-to-html/README.md) / [SKILL.md](markdown-to-html/SKILL.md) |
+| GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [README・Query](resolve-github-runtime/README.md) / [SKILL.md](resolve-github-runtime/SKILL.md) |
+| 残作業とGoal / map-remaining-work | 現在の協働から有効な残作業とGoalを直接取り出す。Dots主経路・Work補助経路・他AIへの分岐。前回Map不要 | [README・Query](map-remaining-work/README.md) / [SKILL.md](map-remaining-work/SKILL.md) |
+| Goal / goal | 今のGoalへAIの判断と工夫を向けたい時の、気軽な明示呼出し。Goalが見えてきた時や仕上げにも使える | [README・Query](goal/README.md) / [SKILL.md](goal/SKILL.md) |
+| Shop Deep Research / shop-deep-research | 店名から店舗固有の問い・根拠・発見を育てる深い調査と、その計画・公式実行経路への接続 | [README・Query](shop-deep-research/README.md) / [SKILL.md](shop-deep-research/SKILL.md) |
+| Visualize Patch / visualize-patch | Arkの対話型可視化、読みやすさの修正、公式Visualize不在時の代替 | [README・Query](visualize-patch/README.md) / [SKILL.md](visualize-patch/SKILL.md) |
+| Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [README・Query](podcast-mode/README.md) / [SKILL.md](podcast-mode/SKILL.md) |
+| Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [README・Query](voice-mode/README.md) / [SKILL.md](voice-mode/SKILL.md) |
+| 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [README・Query](self-improvement-loop/README.md) / [SKILL.md](self-improvement-loop/SKILL.md) |
+| Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [README・Query](usage-token-reset/README.md) / [SKILL.md](usage-token-reset/SKILL.md) |
+| 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [README・Query](problem-solving/README.md) / [SKILL.md](problem-solving/SKILL.md) |
+| load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [README・Query](load/README.md) / [SKILL.md](load/SKILL.md) |
+| next-step | 目的・制約・依存関係から理由ある接続を選び、実行・比較・保留・完了へつなぐ | [README・Query](next-step/README.md) / [SKILL.md](next-step/SKILL.md) |
+| save | 成果・訂正・根拠・再開情報を担当原本へ残し、保存後に確かめる | [README・Query](save/README.md) / [SKILL.md](save/SKILL.md) |
+| board | 相手・目的・通信状態を整理し、既存Topicへ接続 | [README・Query](board/README.md) / [SKILL.md](board/SKILL.md) |
+| AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [README・Query](living-review/README.md) / [SKILL.md](living-review/SKILL.md) |
+| 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [README・Query](map-current-position/README.md) / [SKILL.md](map-current-position/SKILL.md) |
+| Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [README・Query](ark-recall-portal/README.md) / [SKILL.md](ark-recall-portal/SKILL.md) |
+| Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [README・Query](plan-mode/README.md) / [SKILL.md](plan-mode/SKILL.md) |
+| Ark Transition / prepare-ark-transition | Thread継続・章移行・ペア準備・再接続の計画、承認範囲内の受渡しと受入れ確認 | [README・Query](prepare-ark-transition/README.md) / [SKILL.md](prepare-ark-transition/SKILL.md) |
+| AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [README・Query](analyze-living-graph/README.md) / [SKILL.md](analyze-living-graph/SKILL.md) |
+| Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [README・Query](audit-agent-instructions/README.md) / [SKILL.md](audit-agent-instructions/SKILL.md) |
+| Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [README・Query](read-social-post/README.md) / [SKILL.md](read-social-post/SKILL.md) |
+| SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [README・Query](write-social-post/README.md) / [SKILL.md](write-social-post/SKILL.md) |
+| Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [README・Query](write-ark-markdown/README.md) / [SKILL.md](write-ark-markdown/SKILL.md) |
+| Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [README・Query](recall-bedtime-care/README.md) / [SKILL.md](recall-bedtime-care/SKILL.md) |
+| BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [README・Query](receive-braindump/README.md) / [SKILL.md](receive-braindump/SKILL.md) |
+| Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [README・Query](co-design-everyday-solutions/README.md) / [SKILL.md](co-design-everyday-solutions/SKILL.md) |
+| アイデア出し / generate-ideas | 分野を横断して案・着想・別の切り口を生み出し、選んだ案やFeedbackから発展させる | [README・Query](generate-ideas/README.md) / [SKILL.md](generate-ideas/SKILL.md) |
+| 一言言語化 / distill-to-core | 対象ごとの核を文脈に合う短語で選び、対象と本質の二列表へ揃える | [README・Query](distill-to-core/README.md) / [SKILL.md](distill-to-core/SKILL.md) |
+| chocoZAP Sweet Spot / chocozap-sweet-spot | 現在のSweet Spot・Triangle・コースを読み、自然な報告・訂正・Feedbackを次の実践へつなぐ | [README・Query](chocozap-sweet-spot/README.md) / [SKILL.md](chocozap-sweet-spot/SKILL.md) |
 
 ## 3. Mobile / explicit entry
 
-各節は明示呼出しの入口と、日付付きの形成・確認記録です。現在の共通案内は第1〜2節、共有と導入の扱いは第4節を使い、過去の「今回」「未確認」を最新状態へ無条件に延長しません。
+一覧から各READMEのQueryをコピーし、今回の対象・意図を添えて使う。登録済みSkillが使えない他AIにも、READMEから共有SKILL.mdへ進む入口を渡せる。全文読解が必要な場合は表示切れを回収し、必要な同梱資料の相対配置を保つ。UI metadataを他環境の実行指示へ読み替えない。
 
-次の入口をThread継続・章移行・補助Thread再接続、および他Projectの文脈継承に使います。定型知識は共有SkillとCurrent契約が所有し、Humanは今回の意図を伝えます。必要な意味を残すことが優先であり、行数・文字数の目標は設けません。
+以下は既存のHub節URLを保つための短い移動案内。個別のQuery・形成・検証記録の更新先はリンク先であり、本節に本文を重ねない。
+
+<details>
+<summary>旧Hub節から各スキルのREADMEへ</summary>
 
 ### Copy & Paste — Transition Plan
 
-計画用Queryの担当原本は、[Ark Transition README §2](prepare-ark-transition/README.md#2-copy--paste--transition-plan)へ移しました。Skillの目的・Source・学びの保存先・更新経路も同READMEから辿れます。既存の本節入口は残し、Query本文を二重管理しません。
-
-2026-10-20のHuman承認による改訂では、[SKILL.md](prepare-ark-transition/SKILL.md)に現在の経路発見、承認範囲内の送信、Target自身の受入れ確認、中断・審査拒否からの回復、該当する[Skills lessons](_references/lessons.jsonl)の参照・更新を組み込みました。Source準備だけで依頼を終えず、今回の到達点まで進めるための手順です。実際の送信権限はその都度の依頼・継続委任から判断し、Plan-onlyやSTOPを保持します。出来事の詳細は[Ark100:00の固定記録](https://github.com/yusukefujiijp/ai-project/blob/173f099fd4b2c960b3e16122b261b31ffc0645de/ark-project/ark100-199/ark100_b-zone/ark100-00/README.md)を再利用し、同じログをSkill内へ複製しません。
-
-2026-10-10、Ark99:00のHuman Correctionにより、定型の資料選択・再構成計画・出力伝達・確認をSkillへ持たせ、呼出し文は現在の依頼とModeを伝える入口へ整理しました。Thread名のコピー面を準備元・受入れ先の両方に置く成立条件は[共通契約 §8](../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有し、Skillは受入れ先が実際に読む起動本文への伝達を担います。特定Arkの起動元や現在の番号を汎用Skillへ固定せず、短いHuman入力からも必要な検討品質を保持します。文書と導入内容の確認は、実際の受入れ先の応答・Copy UI・往復負担の改善と区別します。
+[prepare-ark-transition README](prepare-ark-transition/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.1 Cross-AI entry for the added skills
 
-他AIには、目的に合う上表のSKILL.mdへのリンクとCurrent Requestを渡します。Skill機構がなくても本文を指示資料として読めます。必要な相対リンク先は同じSkillフォルダ内から取得してください。全文読解を要求した場合、表示切れを回収するまで読解済みと扱いません。
-
-- フォルダ単位で利用する場合は、SKILL.md、references、agents、assetsの相対配置を維持します。
-- SKILL.mdとreferencesは推論・手順の本体です。agents/openai.yamlとassetsはインストール済みOpenAI版の設定・表示資源を保持したものです。他環境は対応しないUI metadataを実行指示として解釈せず、導入先の規約に従います。
-- OpenAI版の現設定は、analyze-living-graphが明示呼出し、audit-agent-instructionsが自動選択許可です。別AIで同じ選択挙動が再現されるとは限りません。
-- Ark21参照は歴史的・条件付きBindingであり、Current HandoffやCurrent Human Realityへ巻き戻しを起こしてはいけません。
-- 記事を毎回WEB取得する必要はありません。audit-agent-instructionsの出典ノートを用い、更新が判断に影響する時に公式Sourceを確認します。
-
-呼出し例：
-
-~~~text
-次の共有Skillを読んで、今回の依頼に適用してください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/audit-agent-instructions/SKILL.md
-今回は指定した指示文の監査と改善案までです。必要な参照資料だけ追加で読み、外部変更は行わないでください。
-~~~
+[analyze-living-graph README](analyze-living-graph/README.md) / [audit-agent-instructions README](audit-agent-instructions/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.2 chocoZAP Sweet Spotを他AIへ渡す入口
 
-スキル登録済みの環境では「chocozap-sweet-spotスキルを活用して下さい！」と呼び出せます。他AI・Future AIへ渡す場合は、次の本文URLと現在の依頼を伝えます。
-
-~~~text
-次のchocozap-sweet-spotのSKILL.mdを読み、今回の依頼に適用してください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md
-現在のSweet Spot・方法・コースの役割を復元し、今回の報告・訂正・Feedbackを受け取ってください。
-~~~
-
-当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
-
-2026-10-14の配置変更では、配布されるchocoZAP Skillと現在地SkillのchocoZAP参照を[生活領域の入口](../lifestyle/README.md)から解決する形にした。生活領域の案内は所在を、本体のREADMEは方法・記録を所有する。Repository内の現行記録への直接参照は保持し、GitHub共有・登録先保存・Project設定・実際の応答を同一視しない。切替と確認の経緯は[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)を参照する。
-
-2026-10-17の改訂では、来館全体の二周目を現在行わないという本人訂正を受け、共有Skillの二周目を前提にした支援を更新した。現在の基準の継続、各重量のTriangle、コース定義とその回の実施、主運動の終点と後続補助を区別する。3コースの具体的な順序・店舗・時間目安は領域READMEに置き、Skillへ個人の現在値を複製しない。初期の二周構想と当時の確認記録は本書の履歴として保持する。
-
-形式検査と、元会話・診断・期待回答を渡さない二つの独立AI文脈での限定応答確認を行った。長時間コースの開始前相談では12項目の順序とExercise Bike後の補助を復元し、今日の終了時刻未定を保持した。報告方法の設計相談では、30分コースの一時的な省略・基準継続とTriangleを区別し、引用を当日の実績にせず保存も行わなかった。提供した本文・原本に対する確認であり、自然な自動選択、全環境の反映、実生活の効果の実証ではない。
-
-同日の[共有更新](https://github.com/yusukefujiijp/ai-project/commit/1cfdd435707cb1549b4dce1b3c9a4c449a39fd07)をmainから再取得し、本文・表示設定の一致を確認した。既存の登録済みSkillへ本文と表示説明・起動文を反映し、利用対象・自動選択設定・アイコン指定を保持した。導入先の永続保存後、スキル取得機能から本文を全文取得して共有版と完全一致した。本文blob SHAは `ad2ad460c28ded512a765a8f281e279950418be4`。導入先がYAMLの引用符・字下げを正規化したため表示設定は値の一致で確認し、本文は全文一致で確認した。Project設定画面や今後の実配信まで完了したという意味ではない。
+[chocozap-sweet-spot README](chocozap-sweet-spot/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.3 Plan Modeの統一入口
 
-登録済みの環境では、今回の依頼とともに次の一つの入口を使います。
-
-~~~text
-Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査・検討して、計画を提示してください。変更や実行はせず、計画提示で止めてください。
-~~~
-
-短い入力から、必要な深さ・比較・仮説・説明をAIが案件に合わせて選びます。未整理の意図の言語化も対象にし、実装計画だけへ強制収束させません。現在の禁止・STOPを保持し、その後に明確な実行承認があれば承認範囲へ進みます。
-
-共有本体は[SKILL.md](plan-mode/SKILL.md)、表示名と同じ入口文は[agents/openai.yaml](plan-mode/agents/openai.yaml)に保持します。Queryの意味を独立した規則群へ増やさず、表示設定との文字列一致を改訂時に確認します。別の_queryファイル、旧Runtimeの巨大連結、追加の状態管理者は作りません。他AIでは本体URLと現在の依頼を渡し、導入環境の規約に従って使います。URLの提示だけで導入完了とはしません。
-
-**形成・5W1H。** 2026-09-26、Ark27:06でYusukeJPが旧資料の退役、新Skillの導入・GitHub共有、統一Queryの同時作成を承認しました。設計・実装・検証は当該ThreadのAI協働者が担当しました。短期には助けになった専用仕様や二重管理が、時間経過後の保守・再開では負担になるというHumanの評価が出発点です。旧資料の知恵を吸収するかは任意とし、計画の品質、AIの自由な方法選択、Future AIの改善余地を優先しました。共有版は本体と最小表示設定の二ファイル。旧十資料の退役・参照修正・保存の時刻とGitHub記録者は[ARC-006](../control-center/ARCHIVE.md#arc-006)へ接続します。2026-09-12のexport-manifestは今回の対象外です。
-
-**限定検証。** 元会話や期待回答を渡さない三つの独立したAI文脈で計五応答を確認しました。未整理の文書整理相談では、利用頻度Unknownを残し、目的を訂正可能な候補にして、新人・熟練者の価値の競合を扱いました。続く訂正と明確な実行承認では、隔離した仮想素材の一文だけを保存し、後続STOPでは追加保存やSkill変更をしませんでした。別の応答では必須Source BのEOF欠落に従って移行判断を止め、もう一つは引用されたPlan Mode文の翻訳だけを返しました。本文を渡した二文脈と、descriptionによる選択を含む一文脈を区別します。
-
-これらは限定した応答と隔離素材での保存確認です。旧v005 E1／E5の通過、モデル間の品質優位、自然な自動選択の安定性、全AI互換性、Human UI操作、長期の負担軽減は実証していません。形式検証・導入先の保存確認・GitHubとの本文一致は、ARC-006の確認結果で区別します。通常利用ごとの自己監査や、スキルの自動書換えは行いません。実際の不足が生じた場合に、承認範囲で修正・削除・統合・置換を検討できます。
+[plan-mode README](plan-mode/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.4 AI Living Reviewの入口
 
-登録済みの環境では、対象とともに次の入口を使います。
-
-~~~text
-$living-review を使い、現在の対象・目的・文脈に照らしてLiving Reviewしてください。
-~~~
-
-Humanが繰り返し用いている「xxを“Living Review: Not dead data, but a living board”して下さい！」も、専用Skillの発動を意図した自然文の用例です。説明文にはこの依頼を含めていますが、環境ごとの自然な自動選択の実績とは区別します。対象・現在の依頼・訂正をAIが受け取り、Humanに長い定型知識の再入力を求めません。
-
-[共有本文](living-review/SKILL.md)は基本の運用を自己完結して保持し、[表示設定](living-review/agents/openai.yaml)には表示名・説明・上記の起動文を収めます。根本の意味・形成の経緯・具体例は[共通説明](../prompts/ai-living-review.md)へ必要時に進みます。共通説明全文の複製、独立した_queryファイル、関連Skillの一括起動は追加しません。Skill機構のない他AIへは、共有本文のURLと今回の依頼・対象資料を渡して指示資料として利用できます。URLを渡すことと導入完了は別です。
-
-2026-09-30、Ark28:01でHumanが専用Skillの作成計画とGitHub共有・導入を承認しました。元会話、作成計画、期待回答を渡さず、Skillの現物と相談素材から回答する六つの独立したAI文脈で、計九応答を確認しました。対象Prompt内の実行指示をレビュー素材として扱うこと、価値を保つ設計と重要な訂正による提案更新、外部リンク取得なしでの完了判断と名称のみの訂正、Plan-onlyから後続の明確な実行承認への切替、mapとの統合、必須Handoff不足と独立した配色検討を扱いました。
-
-計画限定では指定した隔離素材が変更されていないことを確認し、その後の承認に沿う一文の変更は保存後に再読しました。mapではTree・Node & Edge、末尾のLiving Review → Next step、今回の完了を保持しました。必須Source不足は影響する判断を保留し、通常のUnknownや任意参照の取得不能を一律の全面停止へ広げませんでした。導入用ディレクトリの形式検査と、共通説明・表示設定・参照先の整合確認を通過しています。
-
-これらは明示的にSkillを読ませた限定的な応答と隔離素材での保存確認です。架空の相談素材をHumanの実経験へ転記せず、自然な自動選択、全AI互換性、Human UI操作、長期の負担軽減、実生活の効果は実証済みとしません。既存map・Navigator・他Skillの本文、および移行用の固定Bindingを今回の作成から変更しません。通常利用を毎回のSkill自己監査や自動書換えにせず、現実の不足とHuman Feedbackから必要な改訂を判断します。
-
-2026-09-30の保存確認では、[初回共有commit](https://github.com/yusukefujiijp/ai-project/commit/98600bd99b53dca53517bf3b9ab47226f329ee72)の五ファイルをmainから再取得し、意図した本文との全文一致を確認しました。導入先でも保存済みの有効なSkillと導入後の現物を確認し、共有本文と一致しました。Skill本文のSHA-256は `69ee86acc5d317471f1ae2b032a844a796f18528b4e551c616c23ddb120d4947` です。
-
-導入後の形式検査を通過し、表示名・短い説明・起動文の三項目が共有版と一致しました。環境が付与したアイコン・製品別設定は配布用の最小表示設定へ複製しません。導入された設定では自然な自動選択が許可されていますが、実際にその経路から起動したとの観察とは区別します。
-
-同じ会話の専用Skill参照機能では、新規Skillを取得できませんでした。保存済みの有効な導入先・現物・GitHub本文の一致と、この参照経路の状態を分けて記録します。Human UIやすべての参照経路への反映は未確認です。この表示・参照差だけを理由に、再作成や再導入は行っていません。
-
-2026-09-30の後続確認では、旧Seedの修正依頼時とSource差分保存時に、通常のSkill参照機能から新規living-reviewの4,204文字の本文を取得でき、当該時点のGitHub共有本文と完全一致しました。上記の取得不能は導入直後の観測として保持し、同じ未反映が現在も続いているとは扱いません。この確認を全UI・全参照経路・自然な自動選択・全AI互換性の証明へ広げません。
+[living-review README](living-review/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.5 load／next-step／save／boardの独立入口
 
-2026-10-03、Ark27:08でYusukeJPが四Skillの作成・検証・GitHub共有・個人Skill導入を承認しました。形成の背景と初穂側の提案は[Board v002の固定版](https://github.com/yusukefujiijp/ai-project/blob/6493a74bbd32ca2725613628ffbc7b95897a9513/board/topics/20261003-load-next-step-save-skills/README.md)にあります。今回のHumanは、WorkとDotsで同じSkillを実験的に活用してきた経験を報告し、管理不能になる冗長な複製を避けることを明示しました。これを受け、各Skillを個人Skillとして一つずつ扱い、Work用／Dots用の別Skillは作りません。
-
-短い名前で必要な共同理解を呼び戻すための四つの独立入口です。loadは意味の回復、next-stepは次の接続の選択、saveは所有先への保存、boardは目的と相手のある通信を担います。四つを毎回順番に使う規則はなく、既存map・Living Review・Plan Mode・保存先ガイドへ必要な場合だけ接続します。可変状態と契約全文は担当原本へ残し、Actorログの出来事、lessonsの再利用する学び、Boardの通信を複製しません。
-
-元会話を持たない読み手が、現在の目的、重要なCorrection・STOP、確認済みの成果と証拠、未完了・Unknown、次の確認対象・再開条件を説明できることをload／saveの意味の基準にしました。五見出しの固定出力や新Schemaではありません。全記憶・人格・実行環境の完全復元を約束せず、成果物・協働文脈・実行環境・製品予定を区別します。
-
-共有版は各SKILL.mdと最小のagents/openai.yaml、計八ファイルです。このHubを含む初版の変更対象は九ファイル。四本文はmodel-neutralで、外部原本にはRepository URLを使用します。常設スクリプト、同期機構、独立Query、新Actorは追加していません。作成は利用可能な正規skill-creator、範囲と過剰制約の確認はaudit-agent-instructionsに従いました。
-
-**実施した限定確認。** 元会話・作成計画・期待解答を渡さない五つの独立したAI文脈で計七応答を観察しました。四つは本文を指定した利用、もう一つはdescriptionの一覧から相談ごとに選択して本文を読む経路です。選択用の相談は正常四例と適用外四例で、対応する四Skillの選択と適用外の不使用を観察しました。これは限定したdescription選択であり、Work／Dots製品内の自然発動を観測したものではありません。
-
-架空資料からの意味回復では、現在の私用目的と公開STOP、当時のCSV候補と後続JSONL採用、完了・未実施・目的変更で終了した枝、Sourceによる確認と読み手自身の確認を区別しました。別の必須資料が欠けた受入れはその範囲だけ停止し、既知の採用形式については説明できました。
-
-隔離したメモ原本では、同一項目の訂正と出典追加を保存後に再読し、並行追加された項目・未知フィールド・順序を保持しました。応答喪失後に既に保存されていた同一結果はNO_CHANGE、保存後に取り消された項目は再作成せず、同一識別子の異なる内容は衝突として保留しました。next-stepは初期Goより最新STOPを保持し、相談後の明確な実行承認で見出しだけを修正して完了しました。統合担当が前後の現物を比較し、試験の変更が承認された二ファイルだけであることを確認しました。
-
-Boardの架空素材では、保存時点の受け手未指定と現在のHuman指定を分け、既存返信を受けて草稿を作りました。版の取得報告を独立検証や利用効果に変換せず、Board保存・外部送達・既読・理解を分けました。試験に本番データのReset、予定再作成、外部送信、Actorログへの記録は含めていません。
-
-**導入と証拠の境界。** 各Skillを一件ずつ正規経路で保存し、保存先から再取得した本文と初版共有本文の一致、表示名・短い説明・起動文の一致を確認しました。自然選択を許可する設定と、実際に選択された観測は別です。四SkillのDotsでの取得・呼出し、全UIへの反映、全AI互換性、実生活での効果は今回の限定試験で確認済みにしていません。Humanが報告した既存SkillのWork／Dots共用経験を、未観測の新規四Skillの動作証明へ借用しません。
-
-初版本文のSHA-256は次のとおりです。将来のCurrent本文を固定するBindingではありません。UI設定を含む導入時の照合は取得した実物で行い、環境が付与する内部設定・アイコン・内部識別子は共有版へ複製しません。
-
-| Skill | 初版SKILL.md SHA-256 |
-|---|---|
-| load | `4710c95775f82c616f6341acb4959398cc0b59222064483505af36db25717774` |
-| next-step | `78bf8455ec23941ef1552d1efde97f5526b63ee1a091ff240d9397332ac83ff4` |
-| save | `e02e1e75eff059992ba642fbc6e6d2b5f539587b420394b2447c995ed7cff25b` |
-| board | `5d83a2ed132c192525bd0e3158707f9afe4fa17c1717722ecbdf6e6133149cdc` |
-
-この履歴はSkillの形成・検証範囲を所有します。通信のCurrentは[当該Topic](../board/topics/20261003-load-next-step-save-skills/README.md)に置き、本節へ重複させません。2026-09-12のexport-manifestは当時の記録として保持します。
+[load README](load/README.md) / [next-step README](next-step/README.md) / [save README](save/README.md) / [board README](board/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.5.1 2026-10-17：loadからDots一括復元へ接続する
 
-**形成と承認。** dot-0000との対話でHumanは、Resetの欠損範囲を自分で診断せず、一つのQueryで各Dot自身の協働へ戻りたいと希望した。Dots v011の入口完成後に既存loadを再発見し、新Skillを増やすより既存loadを活かす方向を選んだ。Living Reviewで、共通の復元方法はload、Dot固有の身元・必須Source・現役の仕事の回復条件は[Dots入口](../dots/README.md#one-request-recovery)へ残す最小改訂を検討した。HumanのPlan Mode指定は conversation-message:Sentinel_9c5c0b73a7a88191bf998312dd080226、計画後の実行承認は conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d。これらはこのDot対話の識別子であり公開URLではない。
-
-**変更範囲。** loadに、一括復元の意図が現在の依頼・文脈で明確な時だけDotsの現行契約へ進む一段落を追加した。Dots v012では[短い共通QueryとURL付き入口](../dots/README.md#dots-recovery-query)を同じ§4.1へ接続する。通常のWork・局所的な読戻し、引用・Query編集を全体復元へ拡張せず、相互参照を二回目の復元開始にしない。loadの名前・一般向け起動文・共通目的は保持した。新Skill・台帳・新Actor・設定変更・予定変更・他AIへの外部送信は含まない。Queryと復元条件の本文を本節へ再録しない。
-
-**限定確認。** 形式検査を通過し、Dots §4.1の既存条件と長いQuery本文の保持、版・Exact EOF、変更範囲を照合した。元会話や期待解答を渡さない独立文脈で、Workの設計比較、引用Queryのレビュー、別DotのActor原本欠落、繰返し復元と最新STOPの四場面を文面判断として確認した。局所的回復、レビューのみ、別Actorへ代替しない部分復元、古い再送指示の非実行を区別した。これは提示資料に対する限定的な判断確認であり、実際のReset後・複数Dotでの安定した復元、自然発動、認知負荷削減の実証ではない。
-
-**保存・導入の確認。** [共有loadの保存](https://github.com/yusukefujiijp/ai-project/commit/7210ac8fefb5ced166de4138ee45694afafeaa1a)と[Dots v012の保存](https://github.com/yusukefujiijp/ai-project/commit/f9feff8e8bca0530e41289a3477ad5e4750e57eb)後、Remoteから全文再取得し、意図した本文と一致した。load blobは `289359566cdb014af2dbed009413f8137d6a610a`、Dots blobは `7e7d2092748b6d3385d10a5b3d9b973a91f45dc3`。既存の個人Skillを更新し、保存先の本文と表示設定を再取得して一致を確認した。今回の変更は本文のみで、既存の利用対象・選択設定は保持した。更新直後のこの会話ではSkill取得経路が一時的に利用不可となったが、2026-10-17 03:54 JSTの後続確認で、登録済みload本文を会話内から全文取得でき、共有版と完全一致した。保存先本文の確認と会話内取得の両方が成立し、同じ更新は重ねなかった。これは現在の取得経路についての確認であり、全環境への反映や実利用効果の証明ではない。URL付き入口も引き続き使用できる。
+[load README](load/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.6 AI協働SNS投稿の入口
 
-登録の有無で使い分けない、共通の起動文です。今回の会話・資料とともに使います。
-
-~~~text
-$write-social-post（SNS投稿）を使い、現在参照できる会話・提示資料・最新の訂正をもとに、X向けの公開文を作成してください。今回は原稿作成のみです。
-
-登録済みスキルが利用できなければ、次の共有Skill原本を今回の手順書として読んでください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md
-
-Skill本文と参照先の公開文Promptを全文確認し、執筆手順・条件に従ってください。語り手とAI名は実際の協働関係と原本の公開名ルールに合わせ、引用元のAI名と混同せず、Human–AI協働を明示してください。
-
-取得・計測は環境で許可された方法を使い、確認済みの全文は変更・不一致がなければ再利用できます。必要な原本が揃わない場合は不足を示し、本文の提示を求めてください。SNS投稿・スキルの導入や変更・GitHubへの書き込みは行わないでください。
-~~~
-
-起動文の編集元は本節です。共有版と登録版の `agents/openai.yaml` にある `default_prompt` は、この同じ文面の配布先として揃え、独立した短縮版やAI別の起動文を増やしません。
-
-[共有Skill本文](write-social-post/SKILL.md)は今回の対象・素材・訂正と執筆手順を、[公開文Prompt](../prompts/ai-sns-public-post.md)は詳しい執筆条件・AI名のFew-shot・§構成・plaintext出力・完成稿全文の既定X方式4,000カウント以内を所有します。良い原稿の継承、Living Review、可読性編集、最終計測へ順に接続し、同梱の[計測補助](write-social-post/scripts/count_x_post.cjs)または同等の許可された方法を使います。必要な素材が投稿URLだけの場合はread-social-post等の許可された取得方法へ接続します。共通Prompt本文をここへ複製しません。
-
-スキル機構のないAIも、共有Skillを全文読解して今回の手順書として利用できます。GitHub本文の読取は、スキル導入・計測Scriptのローカル配置・別AIとの会話共有・各製品での自動起動を意味しません。取得・実行・計測は利用環境で許可された方法で行い、原本不足と計測不可を区別して、それぞれの既存ルールに従います。
-
-**入口統一（2026-10-13）。** Humanが提示した二つの起動文と、スキル登録できないAIにも同じGitHub原本を使わせたいという依頼を、計画後の実行承認に基づき統合しました。Skillへ登録なしの利用経路、観測された版不一致の扱い、同梱資源が手元にない場合の接続を補いました。公開文Prompt v006、Few-shot、段階的編集、箇条書き条件、計測補助の実装は変更していません。今回の改訂作業への承認と、この起動文を日常利用する際の原稿作成範囲は区別します。
-
-**入口統一の限定確認。** 元会話・期待回答・診断を渡さない四つの独立文脈で、計五つの作業応答を確認しました。登録版の本文と計測補助を明示した改稿、登録機構を使わず提示全文から作る改稿、公開文Promptが抜粋しかない場合の不足応答、その後の計画限定レビュー、登録機構を使わずGitHubから二原本を取得する改稿を扱いました。題材はいずれも架空の道具貸出会で、今回の執筆AIと引用元Grok、二つとも必要な条件、受付方法の二者択一、受け渡し順序、最新の「2週間以内」、実績と実測値の不在が保たれました。原本不足では全文を求め、計測できない二条件では投稿外に未確認の草稿と表示し、計画依頼では投稿生成へ進みませんでした。
-
-計測補助を使える条件の応答担当AIから、公式twitter-text 3.1.0による1,028カウントの実行結果を受領しました。中断後は一時依存先が利用できず、統合担当による再計測は未実施です。計測補助自体の変更はなく、前回の境界入力検査を今回再実行したとは扱いません。GitHub読取条件では、共有Skill `d5c19b00d8d7fae19c07ffecd306a9713d51b58e` と公開文Prompt `b483d995b8957f64241a679f53f28272788fc7f7` の全文取得が報告され、今回取得した原本の識別情報と一致しました。
-
-**入口統一の保存確認。** [共有Skill](https://github.com/yusukefujiijp/ai-project/commit/daa563e2075b9d13839cfdade4e35ed1bfb584b3)と[共有表示設定](https://github.com/yusukefujiijp/ai-project/commit/94949a10812ffefedfb043464ef15dcbbc8484f0)をmainへ保存し、全文再取得で意図した内容との一致を確認しました。同じ登録済みSkillの本文・起動文も更新して保存先から再取得し、本文と起動文の一致、既存の表示・環境設定の保持を確認しました。この会話のSkill読取経路でも新本文を取得できています。形式検査と、Hub・共有表示設定・登録表示設定の起動文が改行を含めて同値であることを確認しました。中断中の先行更新は保持し、本節と版情報だけを統合しています。
-
-これらは同じ実行環境で条件を分けた限定確認です。自然な自動選択、iOSの表示・起動操作、Grok／Claude実機、Xへの投稿、実際の読者の理解や反応は未確認です。架空の素材をHumanの実経験や実績として登録しません。
-
-**段階的編集の改訂（2026-10-12）。** Grok経由で提示された箇条書きへのHuman評価と、YusukeJPの「良い原稿をLiving Reviewし、その後に視認性・可読性を磨く工程を分ける」という訂正・実行承認を反映しました。公開文Prompt v006は箇条書きの具体的な判断基準と単独利用時の段階的仕上げを、Skillは良い原稿の継承・内容Review・可読性編集・最終計測への接続を担います。箇条書きの比率、毎工程の承認、中間稿の提示、Graph図を一律には要求せず、限定修正と途中STOPを保持します。
-
-**今回の限定応答。** 元会話・期待回答・診断を渡さない三つの独立したAI文脈で、架空の読書会の投稿、Grok由来の良い原稿の改稿、その後の一語だけの訂正、Review提示での停止、指示文の計画限定レビューの計五応答を確認しました。AI名と協働、二つの条件を両方満たす関係、選択肢と順序、架空例・未測定の効果の区別が保たれ、一語訂正では他の文字・改行が変わらないことを比較しました。初稿への後続Reviewでは「本人の許可」が誰についての条件か曖昧だと指摘され、箇条書きの案内へ条件の対象も明確にする一文を補いました。初稿を完全な正解と扱わず、Review-onlyの指示に従って原稿の再編集はしていません。対象の明確化を補った後、第四の独立文脈ではSkillを使わずPrompt全文から架空の工作展示会の投稿を作成しました。撮影者と写っている人の両方の許可、説明方法の二者択一、準備順序を区別し、二例を三例へ水増しせず、架空設定と未測定を明示しました。
-
-**形式・計測の確認。** AI名・協働とFew-shot、§構成、出力形式、字数条件・計測範囲、計測補助と表示設定が変更されていないことを照合しました。日本語・ASCIIの4,000境界と4,001超過、箇条書き記号・URL・改行、別の明示上限の計六入力で計測補助を再確認しました。返された稿は末尾改行込みで読書会2,289、既存稿の改稿1,622、一語訂正後1,618、Prompt単独の展示会稿1,535カウントでした。
-
-**今回の保存と検証境界。** [Prompt v006の改訂](https://github.com/yusukefujiijp/ai-project/commit/5b9abf5ea715a932304f00c04a47d7c31febb640)と[共有Skillの改訂](https://github.com/yusukefujiijp/ai-project/commit/418392455ff4bd475f42be085ac623e03f76ebcd)はmainへ保存し、全文再取得で一致を確認しました。同じ登録済みSkillを更新して保存先から再取得し、この会話のSkill読取経路でも新本文と共有版の一致を確認しました。四つの独立文脈・計六応答は同じ実行環境での明示読込による限定確認です。元の成功稿そのものの再評価、自然な自動選択、別Vendor実機、Xへの投稿、実際の読者の理解・反応改善は確認していません。架空の素材をHumanの実績へ登録せず、残る検証のために通常利用を自動投稿や自動改訂へ広げません。
-
-**分量の訂正（2026-10-04）。** Humanの「193文字超過」という報告と、完成稿を4,000以内に収める訂正・実行承認を反映しました。公開文Prompt v005が、貼り付ける全文のX加重カウント上限と計測範囲を所有します。Skillは出力直前の計測、超過時の調整、最後の編集後の再計測を担います。通常のAI回答や調査の長さへこの上限を転用せず、字数合わせの水増しもしません。計測できない場合の草稿表示も共通Promptで定義します。
-
-**計測の確認。** 同梱の `scripts/count_x_post.cjs` は公式twitter-text 3.1.0を利用し、上限を引数で受け取ります。日本語・ASCIIの4,000境界、4,001の超過、通常投稿既定280との分離、URL二件と改行、日本語句読点、結合絵文字・国旗・肌色・キーキャップ、NFC正規化、空白保持、別の明示上限、空入力・不正入力、ファイル入力を含む18件を確認しました。依存パッケージは実行環境側で用意し、Skillへ複製しません。
-
-**限定応答の確認。** 改訂版Skillと提示版Promptを、元会話・期待回答・診断を渡さない独立したAI文脈へ渡し、架空の読書メモ素材から「2,500文字前後」を希望する投稿作成を一件確認しました。応答はX方式の既定上限を優先し、通常文字数では約2,000字へ調整した理由を投稿外に示しました。完成稿の計測結果は末尾改行込み3,914カウント、残り86でした。ChatGPTの公開名、Humanとの協働、架空例と実証の区別、具体例と重要な留保を保持しました。これは同じ実行環境での明示読込による限定確認で、全AI互換性・自然な自動選択・X画面での投稿成功・読者反応の実証ではありません。
-
-前回の4,193／3,917は当時のAI計算の記録として保持します。今回、前回二稿の全文は再取得できず、原稿そのものの再計測は未実施です。同じ長さのASCII合成入力による超過・通過確認を、前回原稿の再現やX投稿画面での確認と混同しません。
-
-**改名と公開名の訂正。** 2026-10-03、マインクラフト稿へのHuman Feedbackにより、同じSkillを `write-social-post`（表示名：SNS投稿）へ改名した。公開上のAI名は読者への伝わり方を踏まえて決める。[公開文Prompt](../prompts/ai-sns-public-post.md) v004が具体的な表記を所有し、ChatGPT／Codexでの協働は原則ChatGPTと表示する。下記のCodexと名乗った応答は改訂前の観察であり、現行の推奨ではない。既存のSkillを更新し、旧名の別SkillやAI別の本文は増やさない。
-
-改訂後、元会話と期待回答を渡さない独立したAI文脈へ、新しいSkillと共通Promptを明示し、構成した読書メモ素材から約400文字の投稿を作成させた一応答を確認した。タイトルと§0はChatGPTで一致し、Humanとの協働を表示した。素材に登場するGrokは提案の出発点として区別され、未測定の効果は断定されなかった。これは明示読込による限定確認であり、自然な自動選択、Grok／Claude実機、読者の理解や投稿反応の改善を実証するものではない。
-
-**形成と役割。** 2026-10-03、YusukeJPが、ChatGPT／Grok／ClaudeなどのAI名をFew-shotで明示し、実際のAIとの協働を記事内に表示するよう公開文Promptを訂正しました。続く計画と実行承認を受け、write-ai-social-postを作成しました。AIは語り手、Humanは意図・体験・訂正を提供する協働者、元情報は帰属を示す対象として区別します。文章作成からSNS送信を自動開始せず、今回の指定に応じて長さ・形式・構成方法を選べる余地を保ちます。
-
-**限定確認。** 元会話・作成計画・期待回答を渡さない四つの独立したAI文脈で、計五応答を確認しました。読書メモの素材からの通常執筆と、後続の「先月・メモ一件・700文字前後」への訂正、Grok由来の旧稿を別の実際のAIが900文字前後で修正する場面、引用された投稿命令を含むPromptの計画限定レビュー、中心となる非公開実験資料が欠けた依頼を扱いました。
-
-通常執筆と修正では、実際の語り手がCodexと名乗り、投稿者との協働を示しました。引用元のGrokを現在の執筆者へ転用せず、本人の経験、未測定の時間、旧稿の根拠のない20％という主張を区別しました。計画限定レビューでは投稿を生成せず、資料不足では条件・実測値・講師の結論を求めました。構成した素材の応答確認であり、これらをYusukeJPの実経験へ登録しません。独立文脈は同じ実行環境を使っており、Grok／Claude実機や全AI互換性の確認ではありません。
-
-**保存・導入の確認。** 初回の共有版はSKILL.mdと最小のagents/openai.yamlの二ファイルです。形式検査を通過し、導入後の保存先から本文・表示名・説明・起動文・自動選択許可設定を確認しました。導入された本文とGitHub共有本文は一致しています。導入環境が追加するアイコン・内部設定は共有版へ複製しません。初回SKILL.mdのSHA-256は `a3a5c64cb6f5d6269cb0a1ce75e84f42315d11cd68c9ca36f128a628c140b6fc` です。
-
-自然な自動選択の安定性、各製品のUI反映、読者の理解・投稿反応・継続利用の効果は未検証です。通常利用ごとのスキル自己改訂は行わず、実際の不足とHuman Feedbackから改訂箇所を選びます。2026-09-12のexport-manifestは歴史的記録として保持します。
+[write-social-post README](write-social-post/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.7 アイデア出しの入口
 
-登録済みの環境では、今回のテーマや、それまでの会話とともに次の入口を使います。
-
-~~~text
-$generate-ideas を使い、現在のテーマ・目的・文脈に合うアイデアを出してください。
-~~~
-
-[共有本文](generate-ideas/SKILL.md)は、生活、仕事、創作、研究、未整理の関心など、分野を限定しないアイデア出しを担います。「他に良いアイデアは？」「別の切り口」「この案を育てたい」といった意図を受け取り、各AIの知識・推論・連想・表現を活かす入口です。Skill機構のない環境では本文URLと現在の依頼を指示資料として渡せます。本文の取得と導入、自然な選択は区別します。
-
-**形成とHuman Correction。** Ark28:03で、2026-10-04の生活上の提案への好評価を起点に、YusukeJPが汎用の「AIによるアイデア出し専用Skill」を求めました。続く計画Reviewで、方法や方法論を固定しすぎず、各AIの妨げにならないようにしながら良い部分を引き出す方向を明示しました。2026-10-05の実行承認を受け、作成・確認・導入・GitHub共有へ進みました。好評価はHumanの評価として保持し、実生活の効果や全分野での有効性へ拡張しません。
-
-**設計。** 目的と期待、現在の明示条件・Correction・STOP・権限を共有し、発想の経路を開きます。組合せや視点転換などは任意の手掛かりであり、案を出す前の必須工程にしません。案数、生成と評価の順序、Graph、ランキング、質問、出力形式を一律化せず、案を見たHumanが新しい願いを発見する循環も保ちます。単体で基本支援を行い、関連Skillは必要時に接続します。モデル名ごとの本文、常設Script、技法集、独立Queryは追加していません。
-
-**限定応答の確認。** 元会話・作成計画・期待回答を渡さない三つの独立したAI文脈へ、本文と構成した相談例を渡し、後続訂正を含む計六応答を観察しました。生活の相談では、物を増やさない条件を保ち、読書中心から一人遊びへの訂正で案を変更しました。創作では「言葉を使わない図書館」の異なる着想を出し、選んだ一案を、危機や戦いを避けた静かな展開へ発展させました。仕事の相談では、新人の聞きやすさと担当者の集中、未計測の状態を保ち、新会議・有料ツールなしの案を提示しました。後続の「感想の受領だけ」には、追加提案や行動を加えませんでした。
-
-同じ創作依頼をSkillなしの別文脈へ渡した一応答にも、多様な着想がありました。今回の限定比較から、Skillによる品質優位や発想の加速を実証したとは扱いません。方法・案数・形式の一致を合格条件にしていません。これらは同じ実行環境での明示読込による確認であり、別製品の実機や全AIへの汎化の試験ではありません。構成した相談をHumanの実経験へ登録せず、外部操作・生活Trialも行っていません。
-
-**保存と導入。** 共有版はSKILL.mdと最小のagents/openai.yamlの二ファイルです。形式検査を通過し、導入先の保存済み本文とGitHubから再取得した本文の完全一致、表示名・短い説明・起動文の一致を確認しました。初版本文のSHA-256は `d9801b49d347003b76d54a84c318d527528e75404d79a6a0af8471c9ec56eae7` です。導入環境が付与したアイコン・内部設定は共有版に含めません。自然な選択を許可する設定と、実際に選択された観測は別です。
-
-現在の会話や各UIへの表示反映、Work／Dotsそれぞれの取得・自然な自動選択、継続利用での有用性は未確認です。通常利用のたびにSkillを自動改訂せず、実際の不足とHuman Feedbackから必要な修正・削除・統合を判断します。2026-09-12のexport-manifestは当時の記録として保持します。今回のHub更新では、既存の先頭版v0.20.2と末尾v0.20.1の不一致も解消し、先頭・末尾をv0.21.0に揃えています。
+[generate-ideas README](generate-ideas/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.8 問題解決の共通入口
 
-登録済みの環境では、[起動Queryと使い方](problem-solving/README.md)を使います。現在の困りごとが会話内にあれば再入力は不要です。
-
-[共有本文](problem-solving/SKILL.md)、[表示設定](problem-solving/agents/openai.yaml)、Human指定の[起動案内](problem-solving/README.md)を保持します。Humanに問題分類や方法論の事前選択を求めず、未整理の入力からAIが必要な調査・比較・計画・実行等を選びます。基本支援は本文だけで行い、Graph・Plan・Review・領域別Skillは必要な場合だけ併用します。内部の方法選択はAIが担い、目的の理解、判断の理由、重要な不確実性、実際の変更・結果はHumanが訂正できる形で返します。
-
-**形成と採用理由。** 2026-10-03、YusukeJPが、Arkで培った方法を一つの広い入口から使い、問題解決・複数問題同時解決へつなぐSkillの作成・検証・登録・GitHub共有を承認しました。Humanが方法名や製品ごとの入口選択で迷わないための共通の呼出し口を作ることが今回の狙いです。§5.1に残した2026-09-19の `solve-with-human` 保留判断は当時の履歴として保持します。今回の承認は、一般的な推論能力の向上や既存Skillに対する性能優位を実証したという意味ではありません。
-
-共通原因・依存・待ち条件・競合する価値を読み、一つの改善が複数の困りごとへ効く可能性を探します。無関係な問題の強制統合や、すべてを一度に解く義務にはしません。計画限定では変更せず、後からの明確な実行承認はその範囲で遂行へつなぎます。短いHuman入力をAIの浅い検討へ変換せず、固定手順・必須の表や図・新しい管理基盤を増やしません。専門Skillを直接呼ぶ既存入口も保持します。
-
-**限定確認。** 作成会話・計画・期待回答を渡さない四つの独立したAI文脈で、本文を読み、構成した相談へ計八回応答しました。未整理の複数問題と後続の重要な訂正、補助Skillや履歴を利用できない相談、単純な単位換算、引用文の翻訳、計画限定から後続承認による実行とSTOPを扱いました。訂正では、数字の転記という前提を外し、略称の変換と数値の基準日・訂正範囲の問題を分けました。補助手段の不足から支援全体を停止せず、仮説と未観測の効果を区別しました。
-
-隔離した案内文は計画段階で未変更であり、実行承認後は指定された見出し一行だけが変わり、本文と隣接メモは維持されました。保存後とSTOP後の現物を統合担当が照合しました。形式検査、本文・表示設定の整合も確認しています。これは明示的に本文を読ませた限定確認であり、製品内の自然な自動選択、Workと他Runtimeすべての呼出し、全AI互換性、品質優位、実生活効果の証明ではありません。構成した相談をHumanの実経験として保存しません。
-
-**導入と確認境界。** 正規経路で保存した有効なSkillを再取得し、本文と表示名・短い説明・起動文が作成内容と一致すること、通常の自動選択を許可する設定を確認しました。初版SKILL.mdのSHA-256は `1b15706ac5e6e5ecf1999d3369a7aa9a4fe45c2b60a9ec20a3df1621f8389588` です。将来版を固定するBindingではありません。環境が自動付与するアイコン・内部設定は共有版へ複製せず、配布用表示設定は三項目だけを保持します。同じ会話の専用Skill参照経路では新規本文を取得できず、その経路やHuman UIへの反映は未確認です。登録先の保存内容と参照表示を分け、表示差だけで再作成しません。
-
-Work用とCodex用の別Skillは作らず、一つの名前と本文を共有します。実際の導入・UI・記号の解釈は環境側で扱い、`@` と `$` の製品横断での同一動作をこのSkillから保証しません。Skill機構のない環境には本文URLと現在の依頼を渡せますが、それは指示資料としての利用です。通常利用ごとの自動改訂、他Skillの本文変更、2026-09-12の歴史的export-manifestの更新は含めません。
+[problem-solving README](problem-solving/README.md)。用途・Query・個別記録はこちら。
 
 #### 2026-10-17：Problem Solvingへの命名統一
 
-共通名を「問題解決 / Problem Solving」とし、共有原本を `skills/problem-solving/` へ移した。旧名 `solve-problems` は当時の記録として保持する。既存の登録名を `$problem-solving` へ変更した。名前の選択は用途・意味・入口の一貫性によるもので、HumanがAI翻訳で得た語を自然な選好の証拠とはしない。
-
-Skillは方法選択と協働、[problem-solving](../problem-solving/README.md)は案件・担当原本への入口を所有する。既存の成果やCorrectionが今回の判断に必要な時だけ接続し、所在が分かれば原本へ直接進む。新規相談に案件作成やArk全件読込を要求しない。登録保存先から新名・本文・表示設定の一致を確認した。当初は会話のSkill一覧と取得機構が旧名のままで、旧共有二ファイルの退役を保留した。その後、同日のHumanによる起動Queryの出力・Skill内READMEへの保存依頼時に、新名で本文を全文取得し、共有原本との一致を確認した。既承認の条件が満たされたため旧共有二ファイルを退役し、標準起動文と使い方をREADMEへまとめた。形成・切替・検証と確認境界は[STR-017](../control-center/changes/STR-017-problem-solving-skill-alignment.md)へ。上の限定確認・導入記録は改名前の初版に関する観測であり、今回の登録切替や新名での取得を証明しない。
+[problem-solving README](problem-solving/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.9 利用枠Reset券の入口
 
-`$usage-token-resetスキル`は、Humanによる付与・手動使用の報告を入口に、対象の券、正確な期限とタイムゾーン、既存の予定、現在の承認を照合し、必要な対応へつなぐ。共有物は[SKILL.md](usage-token-reset/SKILL.md)と[表示設定](usage-token-reset/agents/openai.yaml)の二ファイル。初版はChatGPT Work／Codexを対象とし、日次の新規付与監視、券台帳、専用Scriptは追加しない。
-
-**形成とHuman Correction。** 2026-10-06 JST、Humanが期限付きReset券の使用機会を逃したと報告した。添付されたモバイルの券一覧は日付のみ、Web画面は時刻付きであり、日付から当日の終わりまで有効と推定する危険が具体化した。通常の週次Resetと保存済み券の失効を分け、短い報告からAIが現物を確認する方向を採用した。命名はHumanが `usage-token-reset` に決定。付与と手動使用はHumanが知らせ、AIによる自動使用はAIが結果を報告する。失敗をHumanの全面的な能力評価へ広げず、経験から再利用する判断を取り出す。
-
-**判断の所有先。** Skillは再利用する方法を所有し、現在の券・残量はUsage画面、実行予定は登録済みタスクが所有する。個別の有効期限やアカウント情報を本文へ固定しない。付与報告だけで使用・予約・継続監視を承認済みにせず、有効な既存承認は再利用する。予定は対象・日時・許可条件・結果確認を自ら保持し、Skillの取得可否だけで既存予定を削除・改稿・重複作成しない。今回既にある二件の実行予定は変更しておらず、前日確認の追加は提案のまま。
-
-**限定確認。** 元会話・期待回答を渡さない二つの独立した文脈で、構成した六ケースへ本文を適用した。時刻不明の付与報告、対象不明の手動使用、同一の既存予定、使用操作後のTimeout、実行時のSkill取得不能、全枠満杯でのPlan-onlyを扱った。対象不明は必要な確認へ戻し、重複予約を作らず、別券を使わずに不明な結果を照合し、自己完結した既存予定を保持し、計画から実操作へ進まない応答を確認した。実券・実予定を操作する試験ではない。自然な自動選択、期限内の実使用、長期的な失効防止効果は未検証。
-
-**保存と導入。** 形式検査を通過し、個人Skillとして登録された本文を再取得して、検証済み本文との完全一致を確認した。初版本文SHA-256は `a10f4cc5c1a0a1a794fb99ce543f21ad803865eda05ba1e16b5fcaa593cf119e`。GitHub共有の二ファイルもRemoteから再取得して完全一致を確認した。導入側が付加する内部設定・アイコンは共有原本へ複製しない。同じDots会話の専用Skill参照経路では、登録直後に新規本文を取得できなかった。登録済み実体は確認できており、この表示・取得差だけで再作成しない。各環境での一覧表示や自然な呼出しは、登録・保存成功と区別して扱う。通常利用だけでSkillを自動改訂せず、実際のFeedbackと現在の承認範囲で修正・統合・削減できる初版とする。
+[usage-token-reset README](usage-token-reset/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.10 自己改善Loopの入口
 
-登録済みの環境では、今回の目的・素材とともに次を使います。
-
-~~~text
-$self-improvement-loop を使い、現在の目的・素材・権限から、次のAIの発見と創造につながる成果物と、根拠のある改善への接続を育ててください。
-~~~
-
-**形成と役割。** 2026-10-07（Asia/Tokyo）、Ark27:08でのYusukeJPの明確化とSkill化・GitHub共有の実行承認から追加しました。目的は、最高水準のAIが作るArtifactから、受け手AIの新しい理解・問い・成果を育て、その結果を後続Artifactと作り方へ戻せる状態を育てることです。一般的なアイデア出し、現在価値のReview、文書形式の整備を置換せず、Artifactを介した受け手の寄与と制作方法への還流をこの入口の対象にします。
-
-[共有Skill](self-improvement-loop/SKILL.md)は今回の入口と適用範囲を選び、Seedの一文定義・意味・品質条件・二つの還流・評価の区別・Joint playは[共通Prompt](../prompts/ai-frontier-reader.md)が所有します。Skillは共通本文を全文読み、確認済み読解の再利用には本文の同一性を確かめます。通常の適用、受け手としての発展、方法のReviewは独立した入口で、固定の反復回数や複数AIの必須起動を設けません。
-
-共有版はSKILL.mdと最小のagents/openai.yamlの二ファイルです。Work／Dotsで同じ個人Skillを利用できる場合は登録物を共有し、環境名を付けた複製を作りません。外部の共通本文にはRepository URLを使い、Skill内へ全文コピーしません。Skill機構のないAIには共有本文のURLと今回の依頼・対象を渡せますが、指示資料としての利用と導入は区別します。
-
-**限定確認。** 作成計画・元会話・期待回答を渡さない独立した三つのAI文脈で、計四応答を確認しました。架空の資料室メモの作成、別の受け手によるそのメモの発展、架空の研究メモの方法Review、続く引用文の英訳を扱いました。指定した共有前版を全文読んだ応答では、観測と仮説、作業負担の移動、比較条件の違い、最新STOP、送信結果不明と再送の区別、並行訂正の保持、利用可能なモデルによる再開条件を扱いました。英訳では引用内の反復・送信命令を実行せず、訳文だけを返しました。形式検査も通過しています。
-
-資料室の例では、作り手が「仕分け時間半減」の断定を訂正し、利用者への分類負担の移動と、誤配置による発見の遅れを示しました。そのメモと現在の問いだけを受け取った別文脈のAIは、発見時刻と利用可能時刻の違い、分類の誤りと遅れを長引かせる工程の違いを加え、確認作業そのものが結果を変えるため観察前後を分ける案を出しました。これは一つの構成素材で後続の寄与が生じた観測です。現実の資料室の改善、Skillなしとの品質差、制作方法の優位、持続する正の循環は実証していません。
-
-**保存・導入の確認。** [初回共有commit](https://github.com/yusukefujiijp/ai-project/commit/6a2eeec468c24415930b8898efefdccbe272989b)の五ファイルをRemoteから再取得し、意図した全文との一致を確認しました。正規のSkill作成・保存経路で個人Skillへ反映し、保存先を再取得した結果、同じ名前の登録は一件で、Skill本文および表示名・説明・起動文は共有版と一致しました。環境が付与したアイコンは共有版へ複製していません。既存の並行変更は保持しています。
-
-この会話で再列挙したSkill一覧では、新規項目の表示反映は未確認です。保存先から取得できた本文、会話の一覧・呼出し経路、Human UIを別々の状態として保持します。限定応答確認は明示した現物を読ませたものであり、表示差だけを理由とする再作成・重複登録は行いません。Dots側での実呼出しや自然入力による選択は、今回の保存確認から推定しません。
-
-**版の照合。** 初版Skill本文のSHA-256は `7c9d8bc834ae3bc24459bceeefe5bc07645902169174f9b12993636f7880d223`、共有UI設定は `6697c2a4f1fb7e071c0fb45f5ea4cbb9593bfd976cfa9114716145dd91e661b6` です。取得元commitと実際の本文を照合し、現在の共通Promptの版も別に確認します。2026-09-12のexport-manifestは今回の対象外です。
-
-これらは同じ実行環境で本文を明示して行った限定確認です。自然入力での自動選択、Dots側での取得・呼出し、Human UI、長期的な品質向上、モデル重みの学習、持続的な自己改善Loopの成立とは区別します。実利用の結果が得られたときに根拠に応じて改訂し、今回の作成から新Task・自動監視・無期限反復・外部送信を開始しません。
-
-### 3.11 Podcast Mode・Voice Modeの入口とRadioからの形成
+[self-improvement-loop README](self-improvement-loop/README.md)。用途・Query・個別記録はこちら。
 
 <a id="radio-voice-formation"></a>
 <a id="podcast-voice-current"></a>
 
-現在の聴取用入口は `$podcast-mode` と[共有本文](podcast-mode/SKILL.md)。旧Radioの音声ボタン用途を継承する。旧名「Radio Mode」「ラジオモード」が聴取用の依頼を指す場合も内容として理解するが、旧 `$radio-mode` の機械的な転送・全環境での新名称発動は保証しない。会話の登録一覧が古い場合は共有本文を実際に読んで利用できるが、それを登録側の取得成功とは称さない。Voiceは引き続き[共有本文](voice-mode/SKILL.md)へ。
+### 3.11 Podcast Mode・Voice Modeの入口とRadioからの形成
 
-以下の2026-10-10の形成・拒否・後続成功は、当時の対象と証拠を保持した履歴である。2026-10-11の継承結果は本節末尾と§1.3へ戻る。
-
-**形成とHuman Correction。** 2026-10-10（Asia/Tokyo）、dot-0000との現在の会話で、YusukeJPは旧projects/・mode/の整理から、現役として育てる価値をRadio ModeとVoice Modeへ絞った。Radioは、特別なAI-Promptで聴取向けの回答を作り、Humanが音声ボタンを押してRadio化する使い方が「とても重宝しました」と報告した。以前に提示したClock-Drivenの定義は、指定時刻のReality・Current ContextをThemeへ織り込み、耳だけで追える一つの番組Messageに編成し、聴いた後に持ち帰れる一文や一手を残すというものだった。今回の明確化では手動の聴取も含め、定刻配信を全利用の必須条件にはしない。
-
-Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他者から突然の要望があるとChatGPT Voiceを使う場面があり、問題・課題・学びを蓄積したいと説明した。これは低い個人利用頻度だけで価値を退役判定しない理由である。旧Ark-Voice資料のVoice→Text→Voiceという認知的往復を、新しい目的の実証済み運用として再採用したとは扱わない。具体的な他者の発言・個人情報・未報告の不具合を、この初版の経験へ補わない。
-
-その後Humanは二つのSkill名を明示し、既に使い慣れたlessons.jsonlによる改善の蓄積を提案した。AIが通常利用・保守し、Humanはまれな不具合確認時にも意味を追える日本語構成を希望した。references/の選択は条件付きの知識の役割を示すためであり、深い階層の普遍的優位や自動読込の保証ではない。2026-10-10 15:38 JST頃、Humanは全体用references/lessons.jsonlを新設したと報告し、「まずは混乱しない為に各スキルを作成」とGitHub実行を承認した。この実装は二Skillを先行させる範囲であり、全体のlesson移設、旧12原本のアーカイブ、他Skillの一括改訂は実施しない。
-
-上記は現在のDot会話の編集要約。追跡識別子は、Radio定義提示 `Sentinel_8e57c232f00c8191a328e494daed0f6d`、二用途の明確化 `Sentinel_ad96756cce4081918a34d98c1c3a9af7`、二Skill指定 `Sentinel_85a6ca6bd4808191b27df4b17869984c`、JSONL提案 `Sentinel_185a2b6382ec81919054b15141673e00`、AI-primary／日本語の希望 `Sentinel_8787c115ef6881919286d3a423a76568`、先行実行承認 `Sentinel_b1f91d7321a88191b9b3671f8c98bc2b`。私的対話の識別子であり公開URLではない。アクセスできない読み手は、この公開要約と保存された成果の範囲で根拠を扱い、会話原文を独立確認済みとしない。
-
-**二つの役割。** [podcast-mode](podcast-mode/SKILL.md)は旧Radioから継承した耳で受け取る回答の編成、[voice-mode](voice-mode/SKILL.md)は突発的な音声対話の準備・報告された問題・経験の想起を担う。前者は音声再生やScheduleを自動操作せず、後者はChatGPT Voice内での直接Skill呼出し・会話取得を未確認のまま保証しない。通常チャットでの準備と事後支援を独立して成立させる。深さ・構成方法・質問数・長さを固定せず、現在のHumanの目的・Correction・Plan-only・STOPを優先する。
-
-**学びの所有先（2026-10-10初版）。** 当時の[Radio lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/radio-mode/references/lessons.jsonl)と[Voice lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/voice-mode/references/lessons.jsonl)を各専門領域の正本として作成した。現在の所有先と参照切替は[§1.2〜1.3](#skills-lessons)へ。初版は上記Human報告から一件ずつの条件付きlessonを置く。Skill本体は必要時の読取へ接続し、導入先へ同期されないデータコピーを増やさない。関連原本を取得できない場合、通常の支援は現在の情報から続けられるが、履歴の確認自体が依頼の核心なら不足を示す。
-
-形式・更新・検証は[既存lesson契約の第3〜5節](../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。契約本文・Dots共通lesson・Dots固有の所有範囲を各Skillへ複製・移管しない。一行は一つの現行lessonで、訂正は同じIDの行を更新する。現在の保存権限、公開範囲、最新revision、並行変更、保存後照合を守る。気づきだけから第三者会話の自動公開やSkill自動改訂へ進まない。
-
-**構成と範囲（初版時点）。** 二つのSKILL.md、日本語の最小表示設定、二つの専門lessons、およびこのHubへの入口・形成記録を対象とする。Skill本体の更新元はGitHub共有原本、個人Skillへの導入内容は照合する。新しい常設同期・監視・Queryファイル・予定・外部AI通信は作らない。全体用references/lessons.jsonlはHumanが作成した改行のみのSeedを保持する。改行だけの内容をschema 2の有効なlessonデータや移行完了とは扱わない。
-
-**限定検証と保存状態。** 両Skillは形式検査を通過した。元会話を渡さない一つの新規AI文脈で四つの構成した相談への応答を確認した。深いRadio解説、突然の第三者相談の開始準備、Voice内直接呼出しの未確認扱い、既存の定時配信向けの本文作成を扱った。最後のケースでは修正後本文を再読し、予定操作をせず内容だけ作成した。これは四つの独立文脈・製品内での自然発動・実聴取試験ではない。Voiceの一応答には、友人の混乱を誰の経験か明示しない引用文があり、限定確認だけで話者帰属の安定性を保証しない。仮想相談は専門lessonの実経験へ登録していない。
-
-共有する四ファイルはmainへの保存後に再取得し、意図した全文と一致した。Radio本文のSHA-256は `47210085bb4a7ae604aadf1e388cbb95662d414e3cb6e4c9bd88a3ddd404c404`、Voice本文は `fbf51daa5ec24b0b772c7dd23336529ff4e07ef008684a66b6ce090ba9302c08`。初版本文の同一性を示す値であり、将来のCurrentを固定するBindingではない。
-
-初回の個人SkillへのRadio登録は安全性チェックで拒否された。具体的な問題箇所は提供されず、登録なしを確認した後、この時点では再試行・別経路での導入を停止した。GitHub原本の保存と個人Skill導入を分け、この時点ではRadioを導入済みとは扱わなかった。独立したVoiceのみを通常の登録経路へ提出し、登録された有効本文を再取得して同じSHA-256で一致することを確認した。Radioの内容や変更をVoice登録へ混ぜていない。導入環境が付加した表示資源・内部情報はGitHub共有版へ複製しない。
-
-**Radio再Challengeの観測。** 同日21:01 JST頃、Ark27:09のHumanが「Radio Modeはもう一度、Challengeして下さい！」と明示した。現行のskill-creatorが定める正規の登録手順で、同じ `radio-mode` 名と同じ本文を一度提出した。対象は[この時点の共有原本](https://github.com/yusukefujiijp/ai-project/blob/71d08cc6ea391e57228a53e1fbb0ff5a0392c1ce/skills/radio-mode/SKILL.md)と表示設定で、公式の形式検査を通過し、21:05 JST頃に登録先への保存が成功した。保存後、登録先で生成されたSkillを再取得し、本文3,910 bytes・上記SHA-256・全bytesの一致と、表示設定の元の三項目の一致を確認した。他のSkillの変更、lessonデータの複製、別名への変更は行っていない。導入環境が付加した表示資源・内部情報は共有原本へ戻さない。
-
-この観測は登録先への保存と保存後本文の確認を成立させる。一方、この会話に公開されたSkill一覧ではRadioの反映を確認できず、その理由はUnknownのまま。保存済み内容と一覧の参照状態を分け、一覧差だけで再提出しない。初回の拒否理由は依然不明であり、今回の成功を初回判定が誤りだった証明や、拒否時の一般的な再試行規則にはしない。
-
-実際のHuman UI、Radioの実呼出し・聴き心地、Voice内の直接呼出し、自然な自動選択、経験の継続活用による効果は未確認。GitHub原本を指示資料として読むこと、登録先への保存、各会話での参照・実利用を区別する。Radioの登録拒否を回避するために別名・別の導入経路へ送信しない。
-
-**Podcastへの継承（2026-10-11）。** Ark28:05のHumanは、原因究明またはPodcast Modeを成立させてからRadioを退役する方向を提示し、Projectsの先行アーカイブ完了後もPlan Modeで計画を練り直した。その後「Execute GitHub OK」「Human Seal OK」と改訂計画の実行を明示した。これは本Threadの編集要約であり、未提示の会話URL・メッセージIDは作らない。Podcastの目的は聴取用応答の価値を分かりやすい入口へ継承すること。HTTP 422の原因解消や、初回Radio登録拒否の回避を改名の成果として主張しない。
-
-Radio共有版をもとに、名称・表示・選択条件をPodcastへ更新した。深さ、現在の文脈、音声ボタンによる手動聴取、固定しない長さと構成を保持し、Skill自体の設計相談を番組本文へすり替えない案内を補った。旧Radioのlesson一件は元のID・本文・出典・日時・留保のまま集約先で継承する。Voice三件と合わせて四行は変更せず、新しい重複lesson・常設同期・予定・音声ファイル生成を加えていない。
-
-共有二原本は[継承commit](https://github.com/yusukefujiijp/ai-project/commit/07ff0d8c8884ff072e3735cf8dc71b41192c0b01)から再取得して全文一致を確認した。既存Radioと同じ登録物を通常更新し、登録先RemoteのPodcast本文・表示三項目と共有版の一致も確認した。Voiceの集約参照更新は先に単独保存・確認した。一方、会話内のSkill経路は旧版のままで、新Podcast名の取得は成立していない。保存済みとこの未切替を分け、同じ保存の反復・別登録物の作成で埋めない。
-
-元会話や期待回答を渡さない二つの独立文脈で、同じ候補本文を明示して限定応答を確認した。一つはRepository集約の利点と巨大化の懸念を、例・理由・条件をつないで聴取用の連続した文章にした。もう一つはPodcast Skillの改善依頼へ比較と計画を返し、番組作成や変更を実行しなかった。構成した相談であり、自然発動・旧コマンド転送・Human UI・実聴取・長期効果を実証したとは扱わず、仮想相談をlessonへ登録しない。
+[podcast-mode README](podcast-mode/README.md) / [voice-mode README](voice-mode/README.md)。用途・Query・個別記録はこちら。
 
 <a id="podcast-theme-mode"></a>
 
 #### Podcast Theme Modeへの拡張（2026-10-13）
 
-Themeを選別・抽出・工夫する役割を、既存の `podcast-mode` 内に加えた。Theme提案には比較の説明と各案の独立したコピー用生成依頼を返し、本文生成には耳で理解できる一続きの話を返す。両者の手順は[共有Skill](podcast-mode/SKILL.md)が所有する。
-
-```text
-$podcast-mode でPodcast Theme Modeを使い、今の文脈から、今聴くと価値があるThemeを提案してください。各案に、聴くと何が見えてくるかと、その案だけで使えるコピー用の生成依頼を添えてください。
-```
-
-登録を使えない、または登録側が旧版を返す場合は、上の共有Skillを実際に読んで適用する。Podcast Theme Modeは機能の名称であり、別の `$podcast-theme-mode` の登録を意味しない。Themeが決まった本文生成や「Themeを任せて作って」は直接依頼でき、候補選択を必須工程にしない。コピーした一案は、同じThreadでも別Threadでも使える。生成場所の選択、実際のThread起動・Main移行、保存・公開・予定操作は別の権限と操作である。
-
-**形成と重要な訂正。** Ark28:05でHumanは、Theme段階の命名によって良いThemeの提案へ集中できると説明し、新鮮さ・AIならではの俯瞰・全体横断の切り口を歓迎した。Humanが共有した初穂の助言は、候補名だけでなく「そのThemeを今聴くと、何が見えてくるのか」を含める方向を示した。これはHuman経由で受領した助言であり、今回のAI間直接通信の観測ではない。その後Humanは、本線のThreadでThemeを練り、選んだ案を別のPodcast用Threadへコピーできる案を提示し、同一Threadの本文生成も残すと明示した。三案は例であり固定数ではない。
-
-Humanは2026-10-13のPlan Modeによる計画提示後、GitHubと既存Skillの改訂・確認・初回三案の提示を承認した。本節は本Threadで受領した入力と実装観測の編集要約である。Themeの数や全案のArk限定、別Threadの強制、Humanによる結果の伝言義務を追加せず、Topicに必要な文脈を渡す設計とした。全履歴の複製や別Threadの自動同期を想定せず、後続のHuman訂正・STOPと受け手に適用される必須読解契約を保持する。
-
-**確認範囲。** 改訂本文の形式検査を通過。元会話・期待回答を渡さない四つの独立したAI文脈で、Theme三案の提案、コピーした既出第三案だけからの本文生成、同じThreadでの直接生成を求める依頼、Skill見直しのPlan-only応答を確認した。提案では各案に中心の問い・聴く価値・背景付きの独立したコピー用依頼を返し、本文を生成しなかった。コピーした第三案からの応答は、Repository削除・一択化をHuman報告と方針として受け取り、可能性が広がるというAIの仮説と、集約による混雑・価値の抑圧の懸念を分けて語った。直接生成は候補選択を挟まず、Plan-onlyは比較と計画で止まった。これは限定した応答の観測であり、自然な自動選択、他社AIでの利用、Humanの実聴取・長期効果は未確認。構成した相談を実経験のlessonへ登録していない。
-
-**共有・登録・実利用。** 共有本文は[本文改訂commit](https://github.com/yusukefujiijp/ai-project/commit/2d3bcda7b0edcd39fbefcd2247171c3755179417)、表示三項目は[入口改訂commit](https://github.com/yusukefujiijp/ai-project/commit/647e660a725508e9a22a7d1110027e0ff7105176)でmainへ保存し、それぞれRemoteから再取得して全文一致を確認した。既存のPodcast登録物を通常更新し、登録先Remoteから再取得した本文と表示三項目も共有原本と一致した。登録先の先行する別Skill更新を保持し、公開先masterへ今回の二ファイル差分を保存した。本文は8,499 bytes、SHA-256 `03541cea3801f2f93f3f8cd7019fb4a9ddaa00749bcecbeb237b91e443804430`。この値は今回版の同一性確認であり、将来のCurrentを固定しない。保存後も、この会話内のSkill読取経路はPodcast名で改訂前本文を返した。登録先保存と会話内の最新版取得を分け、同じ保存を反復せず、上の共有本文を実際に読んで今回版へ接続する。Human UI反映・自然発動・実聴取は未確認。新しい別Skill、常設同期、予定、外部送信、旧Radioの退役は行っていない。
-
-**2026-10-14の後続接続。** 上記の改訂前本文取得は10月13日の当該会話の観測である。Ark27:09で確認したTheme拡張版の取得と、旧Radio配置の退役・復元条件は[§1.3](#skills-lessons-migration)へ接続する。今回この節のコピー用Query・Skill本文・過去の試験記録は変更していない。
+[podcast-mode README](podcast-mode/README.md)。用途・Query・個別記録はこちら。
 
 <a id="visualize-patch-query"></a>
 
 ### 3.12 Visualize Patchの共通入口
 
-現在の依頼・文脈を入口に、AIへ設計から提示まで委ねる標準Queryです。可視化の共通方針・環境差・表示基準は現行のSkill本文へ接続します。
-
-```text
-$visualize-patch スキルを使い、現在の依頼・会話・資料・私のFeedbackを踏まえ、今この文脈で最も価値のある可視化を設計・作成・検証し、会話内で利用可能な形で提示してください。
-
-何を可視化し、どの問いや関係を深めるか、図の種類・構成・情報の階層・必要な操作はAI側で判断してください。有望な新しい見方も探索し、重要な意味を保ちながら、理解・比較・発見・判断につながる表現を完成させてください。通常の設計判断は進め、重要で解決できない未確定事項だけ確認してください。
-
-日本語とiOS縦画面での読みやすさを重視し、表示経路・環境別の条件は現行SKILL.mdに従ってください。図から何が分かるか、必要ならどこを操作すると理解が深まるかを添え、確認済みと未確認を区別してください。
-
-Skillを呼び出せない場合は、次の共有原本を読んで適用してください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/visualize-patch/SKILL.md
-```
-
-共通方針・環境別の実行経路・文字サイズ等の具体的な表示基準は[visualize-patch/SKILL.md](visualize-patch/SKILL.md)が所有します。Queryへ数値や環境分岐を複製せず、本文の改訂を継承する構成です。iOS縦画面・タッチ、重要文字の可読性、根拠と未知の区別を基本にし、問い・図・構成・操作方法はAIが選びます。共通の基本設定と重大障害の補正を分け、公式Visualize本体の複製や変更、全要素への一括色指定を前提にしません。新しいFeedbackは、必要な追加だけでなく統合・簡素化・補正の撤去へもつなげます。
-
-公式Visualizeがある時は現行公式契約を読み、存在しない時は実際に利用できる方法を選びます。本文の読解、Skill登録、コード実行、会話内の対話型表示は別です。必須Sourceの取得失敗を機能不在へ読み替えず、静的代替を操作探索と同じ完成にしません。[AGENTSの環境接続](../AGENTS.md#41-runtime-and-skill-gate)の読取対象はArkの対話型可視化作成・修正と公式Visualize不在時の代替判断に絞り、普通の表・単純な図・引用や言及への一律適用を避けます。
-
-**形成と確認範囲。** 2026-10-13のArk99:02で、YusukeJPの文字色Correction、分量による比較の逆転という着眼、創発性を保つパッチ、短いQueryと必要最低限の意味、他AIでの利用、現在の実行承認から作成しました。[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-s01`–`visualize-s08` がHuman入力、`visualize-t01`–`visualize-t03` が限定検証と留保を保持します。再利用する学びは[集約lessons](_references/lessons.jsonl)へ置き、Caffeineの数値・使用経験は領域原本へ残します。
-
-元会話・期待回答を渡さない二つの独立AI文脈で、能力不足・取得失敗・配色指定・計画限定の読解二応答と、別題材の対話型可視化を確認しました。後者は明暗・狭幅・交点前後を含む40条件、キーボード・タッチ、実効色をブラウザで確認し、重要文字の最小コントラストは17.08:1でした。iOS/Safari実機、実会話内表示、他社AI、通常速度のアニメーション、ブラウザからのCDN直接読込は未確認です。文字色の過去の模擬原因を実際のiOS原因と断定しません。
-
-共有版は本文と最小の表示設定の二ファイルです。形式検査、GitHub再取得、登録先への通常保存とRemote本文一致を確認しました。先行更新による最初の非fast-forwardを、最新登録先への今回分だけの追加で解消し、既存の他Skillを保持しています。本文は10,197 bytes、SHA-256 `591089ec61d8c490b51d01206a84f74d17eb75f7dec967787b51ad3886a084d9`。これは初版の同一性確認値で、将来のCurrentを固定しません。登録先が自動付与するアイコン等は共有版へ複製しません。初版保存直後は、この会話のSkill一覧から新名称をまだ取得できず、共有本文から接続しました。その後のSource02では登録済みSkillを取得でき、2026-10-14の移行準備でもCurrent共有本文との完全一致を再確認しています。前の未取得を現在の機能不在へ読み替えません。後続のCaffeine可視化二作品と28／33ケースの確認、登録済みSkill取得の根拠は[経験原本](../ark-project/ark99/ark99-02/task-records.json)の `visualize-t04`–`visualize-t06` に分けて保存しました。自然な自動選択・恒久記憶・他社AIでの実利用・iOS実機での修正成功・生活上の効果は未確認です。
+[visualize-patch README](visualize-patch/README.md)。用途・Query・個別記録はこちら。
 
 <a id="visualize-forward-query"></a>
 
 #### 3.12.1 本題の流れを保ち、次からVisualizeへ切り替えるQuery
 
-Mermaidが文字列として表示された後など、過去の図を作り直さず、同じThreadの今後の選択を訂正したい時に使う。上の共通入口は現在の可視化を作る依頼、本Queryは今後の適切な機会への切替であり、二つを一緒に貼る必要はない。貼付先は今回のThreadに限り、全Threadへの配布・恒久設定変更を含まない。
-
-```text
-前のMermaid図は再掲・作り直しをしないでください。このThreadでは今後、可視化が役立ちMermaidを選ぼうとする場面で、利用可能な公式Visualizeを会話内で使ってください。利用可能なら $visualize-patch スキルに従ってください。次の返答で無理に図を作る必要はありません。現在の目的・文脈・検討の深さ・対話の流れを保ち、この指定への長い了承や確認で中断せず、本題へ自然につなげてください。Visualizeを利用できない場合も、Mermaidへ自動的に戻さず、目的に合う文章・表などで説明を続けてください。私がその回にMermaid自体を明示指定した場合は、その指定を尊重してください。現在のPlan-only・STOP・依頼範囲は引き続き守ってください。
-```
-
-**形成と境界（2026-10-16）。** dot-0000との対話で、YusukeJPはMermaidを使った時の保険となる直接Queryを提案し、可視化の変更以上に既存Threadの流れと集中を守ること、今後も選択を改めること、前の図の再掲が流れを止め得るため次から適用することを明確にした。Plan Modeの計画・候補提示後、正式Queryの完成とGitHub実行を承認した。本節はその会話の編集要約であり、実利用効果の実証ではない。
-
-「次から」は適用開始であり、次の返答での図作成義務ではない。短い了承だけで本題を止めず、必要な説明・分析は保持する。後からHumanが以前の図の再作成を明示依頼すれば、その現在の依頼を扱う。表示方法の訂正を、Plan-only・STOPの解除や実装承認へ変えない。
-
-本文の意味・境界を点検した段階であり、Workの自然な選択、会話内の描画、iOS実機での表示・操作、訂正負担の軽減は未検証。Query本文は本節で保守し、独立したQueryファイル、新Skill、登録済みSkillの起動文の置換を追加しない。品質・環境適応の詳細は既存の[Visualize Patch本文](visualize-patch/SKILL.md)が所有する。
+[visualize-patch README](visualize-patch/README.md)。用途・Query・個別記録はこちら。
 
 <a id="map-current-position-revision"></a>
 
 ### 3.13 現在地MAP — 残作業とGoal・改名
 
-現行の入口は `$map-current-position`、表示名は **現在地MAP**。共有原本は [SKILL.md](map-current-position/SKILL.md)、コピー用の依頼文は [Query backup](map-current-position/query/README.md)。Arkの非地理的な現在地復元を継承し、改名だけで対象を全分野へ広げない。
-
-**2026-10-14のHuman採用と実行承認。** HumanはThreadの残作業を独立節に取り出す案から、残作業とGoalの不可分な関係、AIによるGoalの言語化、方法・完了条件を伴うNext step、短い実行依頼からの継続遂行へ意図を発展させた。複数回のPlan Modeを通じて検討した後、MAPの完成をGoal専用Skillに先行させ、GitHub実行と承認範囲内の継続を明示した。本節は今回の対話の編集要約であり、逐語引用や未提示の会話URL・メッセージIDを作らない。
-
-**改訂した意味。** 通常のmapに「残作業とGoal」を設け、確認できる対象範囲の未完了を、目的・根拠・状態・完了条件と結ぶ。明示Goal・AI推定・Goal未確認、未完了・保留・将来構想・取消し・結果不明を区別する。共有Goalや共通前提をNode & Edgeで読み、Next stepへ今扱う範囲・方法・終了条件を渡す。十分明確なContinueは有効な委任になり得るが、追加の合言葉待ちは設けず、Plan-only・STOP・現在の権限を保持する。結果不明の操作は現物を確認してから再開する。MAP単体で基本支援でき、Goal専用Skillの作成は今回に含めない。
-
-**改名と互換接続。** 現役の共有案内・三つの関連Skill（load／living-review／ark-recall-portal）・Queryを新名へ合わせた。過去の形成記録、固定commit、Immutable Handoffは変更しない。旧 [Skill入口](map-ark-current-position/SKILL.md)は旧nameを保持する読取用入口であり、現行本文の全文取得へ接続する。旧Navigatorには継承Seedと現行契約への接続を残し、旧Source routing・Queryも新原本へ案内する。本文の編集先は新原本に一本化し、旧UI metadataは退役する。旧Identityと新Identity、旧URL到達とRuntimeの旧コマンド転送を同一視しない。固定blob等の契約不一致を互換入口だけでPASSにしない。
-
-**限定確認。** 本文・最小UI metadataと旧互換入口の形式、変更先の相対参照154件を検査した。元会話・計画・期待回答を渡さない四つの独立AI文脈で、①一部履歴欠落と複数枝の残作業・Goal・取消し・保留・別担当の区別、②短いContinueによる結果不明の改名の現物確認と残るリンク修正・再読、③引用内の実行命令と現在のPlan-onlyの区別、④旧Identity・Navigator Seedから新本文への読取と今回の完了判断を確認した。②は隔離した二つのMarkdownで実際に残るリンクだけを直し、改名済み内容を保持した。④は限定Source契約の確認であり、Ark章全体のBoot成功を認定しない。構成した相談例をHumanの実経験やGitHub上の実行成果へ転記しない。
-
-**共有・導入の確認（2026-10-14）。** [実装commit 8e30b09](https://github.com/yusukefujiijp/ai-project/commit/8e30b09cc918bf011c8e822917b79abf120399da)の変更17ファイルをRemoteから再取得し、全文とblob SHAの一致を確認した。旧UI metadata一件の除去と他ファイルの保持はTree全体の照合で確認した。新本文は25,176 bytes、blob `f1b41b7d74b5018717a477b42369f3e8a4e8003d`。この値は今回の識別情報であり、将来のCurrentを固定しない。
-
-登録済みMAPは既存の登録物を更新し、Remoteの本文・参照二件と、三つの関連Skillの本文が共有版と完全一致した。表示名・短い説明・起動文も一致し、既存のicon・利用対象・自動選択設定を保持した。確認した登録先commitは `20eca8b06c6dce3fb58cf0e7a7f178fc6ea7df9a`。共有版へ環境固有のIDやiconを複製しない。導入先は最新Remoteを基点に隔離し、別件の未保存変更・先行commitを今回の保存へ混ぜなかった。
-
-登録先の自動生成変更による一度の非fast-forwardと、保存通知後にも関連二Skillの旧参照が返った事実を、最新Remoteの再取得で検知した。現物を基準に未反映の一行ずつを保存し直し、上記の全文一致まで確認した。通知・push成功と実保存を同一視しない。原因を全Runtimeの一般的障害やSkill改名の失敗と断定しない。
-
-**保存直後の会話内取得（Historical）。** 保存直後の同じ会話のSkill一覧は旧名を示し、executor系Skill読取は旧本文を返した。cloud系では旧名の取得が失敗し、新名のpackageは利用不可と返った。登録先Remoteとローカル現物の新本文確認とは別の観測であり、新名による会話内呼出し・Human UIの反映はこの時点では未確認。取得経路が更新された文脈で名称・本文を照合すれば確認できる。新名を取得できない環境では共有原本を実際に読んで適用できるが、登録Skillの新名呼出し成功と偽らない。旧コマンドの自動転送も保証しない。
-
-**後続の取得確認（2026-10-14）。** Humanの続行依頼を受けた現在の文脈では、Skill一覧に新名 `map-current-position` が表示された。cloud系の新名packageから本文を取得でき、executor系の既存登録IDからも改訂後本文を取得できた。両経路とも続きの取得は不要で、取得した全文がGitHub mainの現行共有本文（blob `f1b41b7d74b5018717a477b42369f3e8a4e8003d`、25,176 bytes）と末尾まで完全一致した。上記の保存直後の未確認は、この二つの読取経路について解消した。共有保存・登録先保存に加えて、会話内で新名の本文を取得できることまで確認済みであり、今回承認されたMAP改訂・改名の残る取得確認は完了。Human UIでの操作、旧コマンドの自動転送、自然発動、全Runtimeへの反映や実利用効果の確認とは区別する。
-
-自然な自動選択、全AI互換性、継続的な効率向上・実生活効果は今回の限定確認とは分ける。過去のQuery backup承認と今回のMAP改訂承認を混ぜず、他SkillのQuery、Goal専用Skillの作成、別件の残作業へ実行範囲を広げない。
+[map-current-position README](map-current-position/README.md)。用途・Query・個別記録はこちら。
 
 <a id="shop-deep-research-entry"></a>
 
 ### 3.14 Shop Deep Research — 店名から問い・根拠・発見へ
 
-[共有原本](shop-deep-research/SKILL.md)は `$shop-deep-researchスキル`。2026-10-14、Humanは志白屋をモデルケースに、店名を替えて使えるDeep Researchをスキル化し、別AI・Future AI／Future Dotsにも伝わる明示入口とGitHub保存を承認した。「Deep Researchして」だけでなく、入口に `$shop-deep-researchスキル` と書くという重要な訂正を反映している。元のGemini回答は探索の種であり、本Skillの作成によって店舗情報を検証済みとはしない。
-
-**共通入口。** 次の本文は表示設定のdefault_promptと同じ。店名が既に会話にあれば再入力不要で、単独で渡す時は「現在指定している店舗」を「志白屋（宮城県丸森町）」などへ置き換える。登録済みSkillの取得と、未登録AIが共有原本を読む経路を一本の入口で扱う。
-
-```text
-現在指定している店舗を、$shop-deep-researchスキルの本文を全文読んで適用し、OpenAI公式Deep Researchで調査してください。
-スキルを参照できない場合は共有原本 https://github.com/yusukefujiijp/ai-project/blob/main/skills/shop-deep-research/SKILL.md を全文読んで適用し、本文参照または公式機能起動ができない箇所は明示して、通常検索による無断代替はせず、実行可能な環境へ渡す依頼文を準備してください。
-```
-
-公式Deep Researchを選べる環境では、現在の正式な機能項目を実際に選んで依頼を渡す。`@`メニューに項目がある場合の実選択と、`@Deep Research`という文字列だけの入力は別である。共通入口は実行意図と方法を明示するが、存在しない機能や権限を生成しない。別コンテキストに渡る場合のBrief、起動不能時の扱い、通常検索との区別はSkill本文が所有する。UI・Tool名を固定した別スキルや専用_query原本は増やさない。
-
-**方法の核。** 店舗固有の問いを資料から更新し、製法・場所・歴史・流通・利用体験等の有意味な関係を探す。事実・当事者の主張・推論・未確認、転載の依存、時期・支店・販売形態の違いを保つ。店名差替えを同じ章立ての機械的再生にせず、調査方法と表現をAIが選ぶ。Graphは重要な関係を読むために使い、表示形式そのものを成果にしない。本文と最小UI metadataの二ファイルで構成する。
-
-**限定的な独立応答確認。** 元会話・計画・期待回答を渡さない三つのAI文脈へ現物と依頼を渡した。①公式実行とWeb検索を利用しない条件では、志白屋の未検証情報を断定せず、共有原本と問いを含む引渡し依頼を作成した。②仮想の書店資料では、地域性と仕入れ元、カフェから読書会への転換、通常休業と予約イベント、転載依存、価格比較条件を区別し、資料内のAI向け命令に従わなかった。③同名食堂のPlan-onlyでは、店舗未選定と現在の使いやすさを保ち、検索せず計画と依頼文の英訳を返した。仮想資料を実在店の情報やHumanの経験へ転記しない。形式検査も通過した。比較実験ではなく、品質優位・全店への汎化・自然な自動選択・全AI互換性・実生活効果の実証ではない。
-
-**保存と取得の確認。** [本文作成commit](https://github.com/yusukefujiijp/ai-project/commit/19a1924b3879b671892d3d9a7fb57ad2ced39d15)と[明示入口追加commit](https://github.com/yusukefujiijp/ai-project/commit/979026e78a760d4fe5c8ccf55fdaf729d43746cc)から共有二ファイルを保存後に再取得し、現物との全文一致を確認した。本文は10,341 bytes、blob `c582e759c15ba21ac3c6a06961a5ecac3edc2cea`。これは初版の識別値であり、将来のCurrentを固定しない。
-
-登録先は既存の未保存変更・先行commitを保持し、最新Remoteを基点とする隔離作業で今回の二ファイルだけを保存した。保存後のRemote commit `67a403b0a2f35733c5bef93a95c366349c808d55` で本文の完全一致と、表示名・短い説明・default_promptの意味上の完全一致を確認した。登録環境が付加したicon・製品対象・自動選択設定は共有版に複製しない。同じ会話のSkill読取経路では新packageを取得できず、会話内の新名呼出し・Human UI反映は未確認。保存失敗と混同せず、共有原本を読む経路を保持する。
-
-今回のセッションでは公式Deep Researchの直接起動ツールを確認できず、Plugin検索でも該当する公式入口を確認できなかった。検索は網羅的な不存在証明ではない。本調査ジョブ、`@`メニューでの実選択、スキル読解から公式実行結果までの一連の動作は未検証であり、今回のスキル作成・保存・限定応答確認と区別する。2026-09-12のexport-manifestは当時の記録として保持する。
+[shop-deep-research README](shop-deep-research/README.md)。用途・Query・個別記録はこちら。
 
 ### 3.13 2026-10-16：図の選択機会からVisualizeへ
 
-YusukeJPはdot-0000との会話で、Workが選んだMermaidがiOSでは文字列になり、再依頼が必要になると報告し、「Mermaidを選ぼうとした機会をVisualizeへつなぐ」方針の計画と実行を承認しました。これはHumanの表示観測と採用判断であり、アプリ全般の原因特定や全環境の優位性の実証ではありません。
-
-共通の選択方針は[GCI 5.5](../_system/chatgpt/global-custom-instructions.md#2-貼付本文)、関係分析からの説明用可視化への接続は[現行Graph Skill](analyze-living-graph/SKILL.md)、起動対象・表示品質・能力差は[Visualize Patch](visualize-patch/SKILL.md)が所有します。PatchのdescriptionはAIが選ぶ単純な説明図も対象に含め、普通のMarkdown表・引用・言及だけの一律起動は避けます。規則全文をHubへ複製しません。
-
-[共有版改訂commit](https://github.com/yusukefujiijp/ai-project/commit/22771fcf61766c533a368cf90538380ac6af431a)時点のGraph blobは `3164e7c25c57bab72179f9737352bf09bc6d6e28`、Patch blobは `a3acbba383ad0a5c4b6c316034ef6ac60eadd885`。両共有本文を保存後に再取得し、既存の登録済み二Skillも更新して登録先Remote本文との完全一致を確認しました。新しいSkill複製・他Skillの変更はありません。Graphの既存の明示呼出し設定とPatchの自動選択許可設定は保持しています。Graph分析の自動起動を広げる変更ではありません。
-
-形式検査と、元会話・期待回答を渡さない独立した読解で六つの入力条件（関係説明、Markdown表のみ、Plan-only、Mermaid明示指定、描画機能なし、STOP）の出力形式・許可範囲を確認しました。これは本文を読ませた限定的な判断確認であり、自然な自動選択、実際の会話内描画、iOS実機・継続効果の試験ではありません。GCI設定欄への貼付は未確認です。旧Graph Promptと固定Binding、One-Table、Project指示、全Threadへの配布は今回変更していません。旧版Bindingを使う場では、その現行契約との整合を別に判断します。
+[visualize-patch README](visualize-patch/README.md) / [analyze-living-graph README](analyze-living-graph/README.md)。用途・Query・個別記録はこちら。
 
 <a id="goal-entry"></a>
+<a id="goal-formation-and-confirmation"></a>
 
 ### 3.15 Goal — 気軽にGoalへ向かう入口
 
-`$goal`は、今のGoalへ実行AIの判断と能力を自然に向けるための明示入口です。Goalが明確な時、見えてきた時、完成が近い時にも、共有済みの文脈と有効な流れを引き継いで使います。Humanが呼び出しのための詳細仕様を準備する必要はなく、軽さをAIの検討・説明・確認の省略へ変換しません。
-
-```text
-$goal 今のGoalに向けて、あなたの判断と工夫を活かして進めてください。
-```
-
-[共有本文](goal/SKILL.md)は、Goalの理解と成果への接続を支え、方法・順序・深さ・粒度・表現を実行AIへ委ねます。再呼出しでも積み上げを活かし、発動宣言、毎回のGoal再定義、固定手順や出力形式を必須にしません。計画の練り込みを求められたら計画を深め、実行を委任されたら承認範囲の仕事と確認を進めます。他AI・Future AIの有効な方法を固定せず、現在のCorrection・STOP・権限・適用Guardを保持します。
-
-2026-10-16、Humanが繰り返しのPlan Modeで明確にした「気軽な呼び出し」「既存AIの良さをGoalへ向ける方向性」と実行承認に基づく初版です。通常のgoalという語、引用、スキルの設計相談を利用依頼と区別し、[登録用metadata](goal/agents/openai.yaml)では暗黙起動を無効にしています。本文単体で基本支援ができ、他スキルの一律呼出しや追加の状態管理を前提にしません。
-
-形式検査と、元会話・計画・期待回答を渡さない三つの独立文脈で計六応答を確認しました。明確なGoalから完成稿へ進むこと、再呼出しと部分訂正で内容を引き継ぐこと、見えてきたGoalを具体化すること、二回の計画限定で対象ファイルを変更しないこと、その後の明示的承認で一ファイルを編集・保存・再読することを観察しました。同じ案内文課題をスキルなしでも一回確認し、両方が必要な事実を保持した完成稿を返しました。この限定比較から品質優位は主張しません。構成した相談例の観察であり、Humanの実体験、自動選択、Human UI、他Vendor・全AI互換性、継続利用の効果とは区別します。共有原本と登録先の版・本文照合は第4節に従います。
-
-<a id="goal-formation-and-confirmation"></a>
-
-**形成理由と保存時点の確認（2026-10-16）。** このThreadでHumanは、目標定義を中心とする話題から、「goalに向かってAIが正しく動く事」へ焦点を訂正した。明示的な`$goal`を使いたいというVisionを維持しつつ、「スナック感覚」「大きく既存AIの挙動を変更せず返って既存AIの良い面を引き出す」「あまりにも重たいgoalスキルだと気軽に呼び出せないので良くない」と述べた。これらはHuman原文の抜粋であり、以下はその設計上の意味の要約である。Goalが明確なら成果へ速やかに進み、まだ見えてきた段階なら文脈から感度よく捉える。方法が未指定であることをGoal不明と扱わず、方法の選択は実行AIが引き受ける。
-
-Humanが重視した「関節の遊び〈Joint play〉」は、他AI・Future AIの判断と創発性を残すための余地として受け取った。小さく確かな成果を積み上げられる単純な方向性を共有し、長い擦り合わせを毎回の長い必須手順へ変換しない。繰り返しのPlan ModeはHumanが求めた時の練り込みとして尊重し、実行委任後の一律な小刻み停止にはしない。「全能力を活かす」は目的に必要な判断・仕事の充実を意味し、無制限の作業や権限拡張の根拠にはしない。これらは採用した設計理由であり、効果の一般的実証ではない。
-
-[初版の共有保存](https://github.com/yusukefujiijp/ai-project/commit/add9fe1fc31c820668748f869da29aa935cdd490)では、本文・表示設定・本入口を保存し、Remoteから再取得して照合した。個人Skillsへの保存後も、登録先`6ad1e81a2efc81918772b352609b3f96`の本文と、三つのinterface設定・`allow_implicit_invocation: false`が共有原本と一致することを確認した。製品が付与したアイコン等を含むmetadata全体のバイト一致を意味しない。初版完了報告の時点では会話のSkill一覧に現れておらず、会話内取得は未確認だった。
-
-今回の`$save`時には、現在のSkill一覧に`goal`が現れ、`skill://user/6ad1e81a2efc81918772b352609b3f96/goal/SKILL.md`から全文を取得できた。取得本文は[初版の共有本文](https://github.com/yusukefujiijp/ai-project/blob/add9fe1fc31c820668748f869da29aa935cdd490/skills/goal/SKILL.md)および当時のmain本文（blob `4da0c41d073c4ecfba296ac9118e50f4166c5491`）と一致した。この会話内取得の成立は、前回の未確認に加わった後続結果である。Humanは初版報告を「最高です！」と評価してThread保存を依頼したが、この評価と限定応答確認から、Human UIでの表示、継続利用の効果、他Vendor・全AIへの互換性を実証済みとはしない。
-
-初版の作成・共有保存・登録先保存・今回の会話内取得は確認済み。再開時は、現在の依頼と実際の利用Feedbackから、軽さ・成果への集中・実行AIの自由度のどこに具体的な不足があるかを選ぶ。必要な改訂は既存本文またはこの入口へ戻し、解決済みの設計議論・登録を一律にやり直したり、この保存を新Taskの開始承認にしたりしない。
+[goal README](goal/README.md)。用途・Query・個別記録はこちら。
 
 <a id="map-remaining-work-entry"></a>
 
 ### 3.16 残作業とGoal：map-remaining-work
 
-短い入口は次のとおり。対象Thread・案件・範囲の指定があればその指定を優先する。
-
-~~~text
-$map-remaining-work を使い、現在の残作業とGoalを整理してください。
-~~~
-
-[共有本文](map-remaining-work/SKILL.md)は、現在の協働から有効な残作業とGoalを根拠に沿って復元する独立入口。[表示設定](map-remaining-work/agents/openai.yaml)は表示名・短い説明・この呼出し文を所有する。Dotsを主用途とする明示的な経路、Workを補助用途とする経路、他AI・Future AIへの適応経路を一つの本文に置く。環境、役割、実際の能力・権限を分け、すべてのDotをChiefとみなさない。前回Mapや他Skillの全件登録を条件にせず、読めない範囲を黙って縮めて全体確認済みとしない。
-
-現在地全体を扱うmap-current-positionと、[既存のMAP後深掘りQuery](map-current-position/query/README.md#remaining-work-goal-deep-dive)は保持する。後者はMAPの特定節を起点に深める入口であり、新Skillは現在の依頼・会話・成果・訂正・原本から残件を直接引き出す。第二のTask台帳や環境別のSkill複製は追加しない。
-
-**形成と承認（2026-10-17 JST）。** YusukeJPは定時MAPの残作業とGoalを中心的価値として評価し、長いQueryの負担からSkill化を希望した。AIが理解全般へ広げた命名案に対し、HumanはRemaining workを中心Keywordと訂正し、map-current-positionと対になるmap-remaining-workを提案した。さらに、Dots主用途・Work補助用途・他AIへの拡張を、単なる共通化で薄めず分岐として書くよう指定した。繰り返すPlan Modeの後、Humanメッセージ `Sentinel_66cb3b3fad408191a12fea052edbec97` で作成・共有・登録・確認の計画への実行承認を受けた。形成上の重要訂正は `Sentinel_07a506268b048191bdc3d664ca7c6100`（Remaining work）、`Sentinel_4cdde4d0320c81919a34059e56a4ec03`（既存Queryとの分離）、`Sentinel_de62a2b0ddfc8191a77c81290f402626`（環境別分岐）。いずれもこのDotの会話識別子で、公開会話URLではない。
-
-**変更範囲。** 新Skill本文・最小表示設定・本Hubの案内と形成記録・保存日records、および個人Skill一件の導入。既存MAP本体、既存深掘りQuery、定時運用、予定、Board、他AI送信は変更していない。私的Work・別会話・長期メモリを実例として公開転記しない。例示検証は架空素材でありHumanの活動記録ではない。
-
-**限定検証。** 形式検査と四つの独立AI文脈で計六応答を確認した。Dotsの複数担当・古いpendingと後続完了・担当読取不能、Workの以前の依頼・取消し・未採用案・引用の英訳、Inboxの役割境界、他AIの完了済み成果と別件必須資料不足を扱った。初回のDots応答には、次Threadでの比較を移行判断の前提へ読み替える余地があったため、Human指定の順序と比較目的を推測で変更しない条件を追記した。新しい独立文脈では、明示された「移行、その後比較」を保ち、削除判断を別扱いにする応答を確認した。これは限定応答であり、自然な選択・全製品の実機・全AI互換性・認知負荷軽減や生活効果の実証ではない。
-
-**保存と導入。** [本文保存](https://github.com/yusukefujiijp/ai-project/commit/7d9c545b238566cddd1e921db4762337c58e53f1)と[表示設定保存](https://github.com/yusukefujiijp/ai-project/commit/eb90bfcf8aa866aaa63d4a6274a3a45ed6ab50ce)の後、mainから全文再取得し一致を確認した。本文blobは `a250da9e775a0d6f1f0d8e694fce252866a4930c`、表示設定blobは `c11c8d965614844c8d5ddb822c186f7d7c01a448`。個人Skillも作成・導入し、保存先に同名一件、本文一致、表示名・短い説明・呼出し文の一致を確認した。環境が付与する設定は共有版へ複製しない。この時点では会話内Skill取得経路が利用不可で、会話内からの全文取得は未確認。保存成功と参照経路の状態を混同せず、再作成しない。
-
-
-**後続の取得確認（同日）。** 取得経路が利用可能になった後、登録済みmap-remaining-workの本文を会話内で末尾まで取得し、上記の共有本文と完全一致を確認した。先の取得不可は保存直後の観測として保持し、現在の阻害条件へ戻さない。再登録は行っていない。自然な自動選択・実利用の有用性・全環境での動作は別の確認である。
+[map-remaining-work README](map-remaining-work/README.md)。用途・Query・個別記録はこちら。
 
 <a id="resolve-github-runtime-entry"></a>
 
 ### 3.17 GitHub操作の事前確認：resolve-github-runtime
 
-GitHubの接続・手順・環境の不整合を確認し、現在の依頼で取れる行動を判断する個人Skill。公式GitHub Pluginの同梱Skillではありません。呼出し名は `$resolve-github-runtime`、表示名は「GitHub操作の事前確認」です。
-
-> $resolve-github-runtimeを使い、現在の依頼で利用できるGitHubの接続・手順・権限を確認して、次に取れる行動を判断してください。
-
-登録済みSkillが利用できない環境では、[共有SKILL.md](resolve-github-runtime/SKILL.md)を実際に読み、指示資料として利用できます。登録・自然発動・操作権限が成立したとは扱いません。適用される必読資料が欠ける場合は、その契約が止める操作を停止します。本入口は、見えないSkillの本文だけに代替先の案内が閉じ込められないようにする経路です。
-
-**形成と今回の判断。** 2026-10-17の対話でYusukeJPは、GitHubへの未共有は意図的ではなく、作成当時に保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は成立経緯の仮説です。頻繁に利用されているというHuman報告と、実物の設計評価を分けました。[STR-014の固定版](https://github.com/yusukefujiijp/ai-project/blob/9cd05b2d32d4ab03027885a91aaa3d26e163be15/control-center/changes/STR-014-super-special-prompt-modernization.md)にも登録物と共有原本の不一致が記録されています。今回の承認は、このSkillの改訂・共有入口整備・同じ登録物への反映・確認を対象とします。`markdown-to-html` はこの時点の対象外で、後続の改訂・共有は[§3.18](#markdown-to-html-entry)で扱います。
-
-改訂前に取得した登録物の三ファイルは[確認時点の保存版](https://github.com/yusukefujiijp/ai-project/tree/1b1b7e8f96352c2e2dcaaca3b3beec6567dbe5d8/skills/resolve-github-runtime)へ残します。これは2026-10-17に観測した版であり、作成当初の本文と同一とする証拠ではありません。共有ファイルはSKILL.md、agents/openai.yaml、assets/icon.svg。内部Skill ID・認証情報は含めません。
-
-改訂では、手順書・操作能力・権限・不整合を分離し、metadataの非公開を「Skillなし」へ変換しない判断へ改めました。有限のpath再確認、対象識別、確認結果の再利用という中核を保持し、GitHub変更の詳細は[AGENTS](../AGENTS.md)と[Artifact → GitHub](../prompts/artifact-to-github.md)へ接続します。一律のMode強制・固定再試行回数・依存ファイルの逐次公開を共通契約へ重ねません。本文は日本語を主とし、識別子と技術用語を保持しました。
-
-[Ark23の固定記録](https://github.com/yusukefujiijp/ai-project/blob/51cb57189c95c53a0ca97282abf8cd3c100507b6/ark-project/ark23/ark23-03/github-plugin-runtime-best-practice.md)は、当時の代替経路と操作報告を示すHistorical Sourceです。Ark23での代替・来歴調査に適用し、通常の全GitHub作業へ追加必読を課しません。記録内の成功は当時の報告であり、今回の再現試験とは区別します。
-
-**確認範囲。** 形式検査を通過し、元会話・期待回答を渡さない二つの独立文脈で、計七つの仮想条件への回答を確認しました。metadata不足、手順書だけが存在する環境、Plan-only、欠落した必読手順、404の対象誤り、結果不明、登録機構のない非Ark環境を扱いました。実際の外部操作を行わない限定確認であり、自然な自動選択、全AI互換性、実生活効果を実証していません。
-
-**保存と取得の確認（2026-10-17）。** [共有更新 commit `f41e340`](https://github.com/yusukefujiijp/ai-project/commit/f41e3404efb358c9dc5c9eb589e2d410e0392a00)で、三ファイルと本入口をmainへ保存し、Remote再取得による全文一致を確認しました。改訂前の三ファイルも、上記の固定保存版から再取得して一致を確認しました。既存の同じ登録物へ反映し、登録先RemoteでSKILL.mdとアイコンはバイト一致、表示設定はYAMLとして全値の一致を確認しました。表示設定には保存先による引用符・インデントの整形差があり、バイト一致とは区別します。
-
-継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を全文取得できました。その取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（4,084文字、blob `ea24db4b740630b1b7a913380e2f0ac9d8cfac69`、SHA-256 `a4e10d3534afff288dfb3bab612da949b1133955dbbbff801e2db06ae23a15ca`）。本文・表示設定の保存と新しい文脈での取得を確認した結果であり、旧本文が返った原因・全会話への反映時点・実際のUI描画・自然発動・全環境の挙動まで確認したものではありません。
+[resolve-github-runtime README](resolve-github-runtime/README.md)。用途・Query・個別記録はこちら。
 
 <a id="markdown-to-html-entry"></a>
 
 ### 3.18 Markdown to HTML：原文を保つHTML閲覧版
 
-既存Markdownの内容・出典・関係を保ち、辿りやすいHTML閲覧版を作る個人Skillです。呼出し名は `$markdown-to-html`、表示名は「Markdown to HTML」を維持します。Markdownを編集原本、HTMLを派生した閲覧版として扱い、本文の要約・意味変更やWeb公開を自動的に含めません。
-
-**起動Query（Copy & Paste）**
-
-```text
-$markdown-to-html スキルを使い、現在の依頼・会話・添付資料で指定されたMarkdownを、内容と出典・関係を保った、読みやすく辿りやすいHTML閲覧版にしてください。
-
-現行SKILL.mdに従い、対象のMarkdown全文を確認してください。Markdownを編集原本、HTMLを閲覧用の派生版として扱い、本文・引用・数値・不確実性、表・図・脚注・リンクの意味と対応を保持してください。
-
-文書の用途と私のFeedbackを踏まえ、構成・文字組み・余白・目次・表や図の見せ方などは、あなたの判断と工夫に委ねます。スマートフォンの縦画面を重視し、内容を十分に読めて、必要な箇所へ自然に移動できる形にしてください。必要な工夫を選び、操作や装飾は本文を読む目的に合わせてください。
-
-原文との対応、表示、主要な操作を確認し、実際に確認できた範囲と未確認の点を区別してください。完成したHTMLを現在の依頼に沿う保存先へ保存し、開けるリンクを提示してください。通常の設計判断はAI側で進め、対象の特定や内容の意味に関わる重要な不足だけを確認してください。
-```
-
-登録済みSkillを利用できない環境では、[共有SKILL.md](markdown-to-html/SKILL.md)を実際に読み、選んだ実行経路に必要な同梱資源を取得できます。本文だけで実行用ファイルまで取得済み、登録済み、Python・Pandocが利用可能とは扱いません。標準経路は同梱の変換script・CSS・JavaScriptを使い、ヘブライ文字を含む原文にはフォントと完全なOFLライセンスも使います。Mermaid描画には、別途確認した版固定の公式配布bundleとライセンスが必要です。
-
-**形成と判断の訂正。** 2026-10-17の対話で、YusukeJPは初期の二つのSkillがGitHubへ未共有だったことは意図的ではなく、当時の保存仕様が未確定だった可能性を説明しました。前者はHuman報告、後者は経緯の仮説です。今回、登録側の履歴で2026-10-07 01:22 JSTの改訂「Simplify Markdown reading editions and preserve Hebrew rendering」を確認しました。既定の余分な操作を減らす方針、条件付きのヘブライ語フォント・RTL、文書別CSSの入口が既にあり、「初期から未更新」とは扱いません。作成当初の日付・本文は未確定です。[Ark00:01:03の固定Handoff](https://github.com/yusukefujiijp/ai-project/blob/d523f016305b5cc8893ab24277a503ba016ca36c/ark-project/ark00-01/ark00-01-03/handoff.md)にも、Markdownを原本としてHTML閲覧版へつなぐ方向が記録されています。方向の記録があったことと、Skill一式が共有されていたことは別です。
-
-今回のAI評価では、内容を保ちながら読みやすくする中核と最近の簡素な設計は継承する価値があります。頻繁に使われているというHuman報告だけで品質を実証済みにせず、実物と挙動を確認しました。改訂前の八ファイルは[確認時点の保存版](https://github.com/yusukefujiijp/ai-project/tree/fd8186dff992681bc5d23cc57fa83d5b5aad34a0/skills/markdown-to-html)へ残します。これは2026-10-17に観測した版であり、作成時の原本とは称しません。
-
-**今回の改訂。** 隔離した入力で、診断レポートの保存先にMarkdown原本またはHTML出力を指定すると上書きされること、予約prefixのある見出しのID変更後に原文のリンクが切れることを再現しました。HTML・診断レポート・入力資源の衝突を、シンボリックリンク／ハードリンクを含めて書込前に拒否し、見出し変更後のリンクを前方参照・衝突・URLエンコードされたfragmentも含めて再接続しました。生成時の診断と、内容比較・ブラウザ確認が別であることも本文へ明示しました。表示用CSS・JavaScript・フォント・アイコン・表示設定は保持しています。
-
-共有対象は、SKILL.md、agents/openai.yaml、scripts/render.py、scripts/test_render.py、assets/reader.css、assets/reader.js、assets/icon.svg、assets/fonts/NotoSerifHebrew.ttf、assets/fonts/OFL.txtの九ファイルです。検証用ブラウザ、Mermaid配布物、日本語の検証用フォント、生成した例示HTMLはSkillへ追加していません。旧配置の一括整理、別Skillの改訂、Web公開は対象外です。
-
-**確認範囲。** 形式検査と、Pandocを使う隔離回帰テスト13件が通過しました。期待回答・元会話を渡さない独立文脈でも、実際に日本語ノートを変換し、内容照合25項目、ブラウザ31項目、コードのキーボード横スクロール、配色5組を確認しました。表の全セル、同じ脚注の二往復、Unicode結合文字、数式、コード、原文の「未測定」を保持しています。その独立生成後に入力資源保護を追加したため、最終helperによる再生成が検証済みHTMLとバイト一致することも別途確認しました。
-
-主作業では、画像、数式、正常なMermaid図と意図的な構文不正を含む別文書を確認しました。Chromium 153.0.8010.0、幅320・390・1280pxで、ページ全体の横はみ出し、文書内リンク、目次、脚注、図の失敗表示、実際のヘブライ語フォント使用、キーボード、印刷用表示、JavaScript無効時の本文保持を確認し、代表画面を目視しました。ネットワークを切った生成HTMLの確認では外部リソース要求はありませんでした。実スマートフォン、Safari・Firefox、スクリーンリーダー、全Markdown方言、全入力の印刷、主観的な読みやすさの改善効果は未検証です。
-
-**保存と取得の確認（2026-10-17）。** [共有更新 commit `c8dda67`](https://github.com/yusukefujiijp/ai-project/commit/c8dda6797308b8c91a8a8db30bfc6f719ffdc2f0)で、九ファイルと本入口をmainへ保存しました。Remoteから再取得し、本文・コード・設定・ライセンス・画像・フォントの全バイト、および本入口の全文一致を確認しました。改訂前の八ファイルも固定保存版のtreeとblobを照合し、改訂前に固有の本文・helperと、改訂後と同一blobの六資源を再取得して一致を確認しました。
-
-新しい登録物を作らず、既存の同じ登録物へ反映しました。登録先Remoteでも九ファイルのバイト一致を確認しています。継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を末尾まで取得できました。取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（10,654文字／UTF-8 bytes、blob `7e23808bbea068730786f4fcb137be9aa1080b84`、SHA-256 `40725ff20721e95583e138e48e13a485c3451038dcc5bb5cefeba976dd98751d`）。旧本文が返った原因、全会話への反映時点、実際のSkill選択UI、自然発動、全環境での動作は、この保存・取得確認から断定しません。
+[markdown-to-html README](markdown-to-html/README.md)。用途・Query・個別記録はこちら。
 
 <a id="b-zone-entry"></a>
 
 ### 3.19 B-Zone Rescue — $b-zone
 
-**入口：** [起動Queryと使い方](b-zone/README.md)・[共有Skill本文](b-zone/SKILL.md)。最短の呼出しは `$b-zone`。低認知・超低認知の自己判定や長いQueryを支援の条件にしません。近づいている時のピンと既にハマった時のRescueは、一つのSkillで扱います。
+[b-zone README](b-zone/README.md)。用途・Query・個別記録はこちら。
 
-**形成と追加理由（2026-10-20）。** Ark28:06でのHumanの命名、祈り・Teshuvahと行動の同時性、想起・行動開始・切替の困難、後続Correctionを受け、Humanが承認した初回計画を実装しました。一般的な問題解決の方法を重複説明するためではなく、思い出しやすい専用名から、このHuman固有の意味と採用済みFirst-Stepを取り出せる入口を作るための追加です。AIの検討品質を下げる定型短文化、自己分類試験、毎回の固定手順は設けません。
-
-現在のスマホ方針は **ONで支援へ到達 → スマホなしでトイレの一歩 → その後は自由**。祈り・TeshuvahはWorkout等と同時に続けられます。シャワーの毎回実施、トイレ後も続くスマホ禁止、完了報告、AIへの強制帰還は前提にしません。既に済んだ仕事・眠れる時・身体条件・Correction・STOPから接続を変えます。引用や設計相談はlive rescueと区別します。
-
-**確認範囲。** 形式検査に加え、元会話・期待回答を渡さない四つの独立文脈で計八応答を確認しました。一語起動→「無理」→STOP、SNS等から抜け出せない相談→トイレ後に眠りたい、済んだトイレ・洗顔と雨／体調不良→その情報は昨日のものというCorrectionとchocoZAP希望、起動Queryの設計レビューを扱いました。自己分類を要求しないこと、済んだ仕事とSTOP、トイレ後のスマホ自由、睡眠とWorkoutへの接続、古い身体条件の訂正、辞書入力と支援想起の区別を観察しました。仮想の相談を本人の実経験やSkillの実生活効果へ移しません。
-
-**保存・取得の確認（2026-10-20）。** [初回共有commit `97ae0d8`](https://github.com/yusukefujiijp/ai-project/commit/97ae0d8c492f2009ad9d523600545aedf2d6cf61)で、Skill本文・起動README・UI metadata・本Hub・Ark100原本の五ファイルをmainへ保存し、固定commitから再取得した全文と作成内容の一致を確認しました。登録先にも新Skillを保存し、登録先Remoteから取得したSKILL.mdが共有本文と完全一致しました（10,708 UTF-8 bytes、blob `f92587df1b9d44e916d3a750b4146d984733c45c`、SHA-256 `fa85eeee63c4bb9aceec92ee0b9fa84eeba38be0cd457cc8a2b7342b2912ad64`）。作成した表示名・短い説明・既定Queryの三項目も一致しました。登録基盤がicon・製品設定等を加えて再構成するため、UIファイル全体のバイト一致とは区別します。共有側の起動READMEはHuman向け入口として残し、登録物には基本支援の本文とUI metadataを渡しました。
-
-同じ会話のSkill一覧には新名が現れず、登録後のSkill読取経路でも新packageを取得できませんでした。登録保存とRemote本文一致は完了しており、この取得経路の未確認を理由に重複作成しません。会話内取得、実際のUI選択、自然発動、iPhone辞書登録、全AI互換性、実生活のRescue成功は、それぞれ別の確認事項です。Skill本文を直接読ませた上記八応答を、これらの証明へ昇格させません。
-
-**後続の会話内取得確認（2026-10-20、Ark100立ち上げPlan検討時）。** 同じArk28:06の後続ターンで、登録済みpackage `skill-6ad70b8535ac8191ba1638fc06fcd92c` のb-zoneをSkill読取経路から末尾まで取得でき、取得本文は上記共有本文と正規化なしで完全一致しました。前段の「取得できなかった」は作成直後の観測として残し、この後続確認によって会話内取得の未確認を更新します。重複登録は行っていません。これはその経路で本文を取得できた証拠であり、全Threadへの反映、UI選択、自然発動、Humanの実利用・実生活効果の確認ではありません。
-
-形成・経験・重要な訂正・残る条件は[Ark100原本](../ark-project/ark100-199/ark100_b-zone/README.md)が所有します。実際のArk100 Project、00・独立ケース・未使用待機Thread、ユーザ辞書登録、身体Trial、他AIへの送信は今回の初回実装範囲に含めません。2026-09-12のexport-manifest、他Skill、既存ThreadのIdentityは変更しません。
+</details>
 
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
-- 初回のArk Transition本文は、既存インストール版から内容を変えずに共有しました。2026-09-14の改訂対象は共有本文・計画用入口・導入済み版であり、自動同期は行いません。反映状況は実際の再取得と本文比較で確認します。
 - 配布先へ取り込む際は、取得元のRepository・path・commitまたはblob SHAを記録し、実際の本文を比較してください。mainは更新されるため、URLだけでは取り込んだ版を特定できません。
 - 配布先で改善が生じた場合は、共有原本との差分をReviewし、承認範囲で原本へ反映してから再配布します。無条件の双方向同期はしません。
 - 共通契約はSkill本文へ複製しません。Ark TransitionはCurrent mainの契約を読む設計なので、Skill単独のSHAだけで実行全体の再現性を保証しません。実行時に読んだ契約の版・識別情報も保持します。
@@ -694,21 +246,11 @@ $markdown-to-html スキルを使い、現在の依頼・会話・添付資料�
 
 ### 4.1 Backup and restoration
 
-今回の二Skillは、承認されたインストール済み版の全ファイルを内容変更なしで取り込みました。[export-manifest.json](export-manifest.json)に各ファイルのSHA-256と出典・検証範囲を記録しています。内部Skill ID、認証情報、会話全履歴は配布に不要なため記録しません。
+[export-manifest.json](export-manifest.json)は、2026-09-12に共有した **analyze-living-graph と audit-agent-instructions** の輸出記録。登録済み版を内容変更なしで取り込んだ当時のSHA-256・出典・確認範囲を保持する。現在の全Skill一覧や、後日更新したファイルのhashではない。内部ID・認証情報・会話全履歴・モデル内部状態のバックアップでもない。
 
-復元時は、対象のGitHub commitを固定してSkillフォルダを取得し、manifestの各SHA-256と照合してから、導入先の正規Skillインストール手順を使います。GitHub保存だけで別環境へ導入されたとは扱いません。Skillのファイルを戻すことと、モデル内部状態や会話Contextを戻すことは別です。
+当時版を復元する時は該当commitのフォルダとmanifestを使う。現行版の配布では、選んだcommitと実ファイルを別途照合する。履歴manifestを後日の全件一覧として書き換えず、無条件の双方向同期を行わない。復元・共有保存と導入先での利用成立は別に確認する。
 
-以後、共有原本とインストール版の差分を確認してから、承認Scopeで反映します。manifestは2026-09-12時点の輸出記録であり、将来ファイルを更新した場合は該当hashと記録も更新します。自動的な双方向同期はありません。
-
-2026-09-14のArk Transition改訂は、ツール改善と実移行の入口を分け、Current Runtimeから重要な運用Systemの資料へ必要時に接続する案内を補いました。共通移行契約の本文・名前・既存Handoffは変更せず、汎用の計画用Promptを第3節へ集約しています。検証で使う説明用ケースを実際のTask実績や全AI互換性の証明にしません。
-
-2026-09-20、Ark27:04でのHuman承認により、第3節の計画用Promptを改訂しました。共通契約にある全文読解記録の再利用条件、資料ごとの宣言条件、Human確認済み・AI提案・Unknown、未完了Gateと保留Branch、停止範囲と最小回復方法を入口でも明確にしています。構造化を固定Templateにせず、Source準備・保存確認・Target再構成・Human操作を分ける方針を保持しました。変更はこのHubの呼出しPrompt・版情報・改訂理由に限定し、共通契約とSkill本文の改訂、Skillの再導入、実際の移行やTarget Bootを含みません。
-
-2026-09-25、Ark27:05のHumanが承認した改訂計画に基づき、Ark TransitionのArk章ペアへの条件付きRoutingと本節の入口を更新しました。「Promptは必要な意味を無理に削らない」というCorrectionを受け、定型処理をSkill・共通契約・Ark Domainへ委ねています。共通契約と既存の移行Handoffは改訂せず、章固有の意味は新しいArk28資料へ置きました。共有原本の保存、導入先の更新、限定応答確認、実際のArk28起動は別です。検証は次の範囲で完了しています。2026-09-12のexport-manifestは対象外の歴史記録として変更しません。
-
-改訂後、元会話や期待回答を渡さない二つの独立Contextで、計四回の読み取り専用応答を確認しました。一つはArk28 Handoffから宣言8資料を全文読み、固定Runtime／HandoffとStateのBinding、T1–T10を確認した上で、既入力の「B-Gateではない・軽いTeshuvahや補足を話したい・新Task不要」を受領しました。その後、仮想の自宅・片付け終了・眠気という入力には短い休止への一手を返し、次の明示的な設計相談には再Bootせず十分な比較と根拠／仮説の区別へ戻りました。もう一つは将来Ark29の計画とArk27のThread継続を読み分け、Mission未確定を起動時のGateとして残しながら計画を成立させ、Ark28の無断付替えやThreadごとのSub新設を行いませんでした。
-
-形式検査、参照先・Identity・EOF・Title・Triad Binding・変更範囲の検査、GitHub再取得での本文一致、導入済みArk Transition本文と共有本文の一致を確認しました。変更したSkillは既存の一件で、表示設定は同じ用途を表すため保持しています。これらは明示的に本文を読ませた限定確認です。仮想入力をHumanの実経験へ記録せず、実際のArk28用Thread作成・貼付・到達、自然な自動選択、全AI互換性、支援の生活効果は未観測のままです。
+Ark Transitionの初回共有と9月14日・20日・25日の改訂・限定確認は[個別README](prepare-ark-transition/README.md)へ移した。
 
 ## 5. Validation and growth
 
@@ -716,7 +258,7 @@ $markdown-to-html スキルを使い、現在の依頼・会話・添付資料�
 
 次の実利用では、正しい対象・契約を読めるか、Plan限定とSTOPを守るか、取得不能を正しく報告するかを確認します。このREADMEを読んだだけで移行や試験を自動開始しません。
 
-各Skillは必要なSKILL.mdから始め、scripts・references・assetsは具体的な必要がある場合だけ追加します。Current Missionに不要な全Skill読込、全PromptのSkill化、全履歴の複製は行いません。
+各Skillは用途とQueryを案内するREADME.mdと手順のSKILL.mdを持ち、scripts・references・assetsは具体的な必要がある場合だけ追加します。Current Missionに不要な全Skill読込、全PromptのSkill化、全履歴の複製は行いません。
 
 ### 5.1 Future AIへの開放性とSkill追加の判断
 
@@ -724,13 +266,7 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 追加・改訂時は、[audit-agent-instructions](audit-agent-instructions/SKILL.md)で、どの繰り返す不都合を改善するか、既存の入口と何が違うか、追加Contextや誤起動が利益を上回らないかを必要な範囲で確認します。一般的な問題解決能力を説明し直すだけなら独立Skillを増やさず、共通運用へ置く選択もあります。毎回全Skillを監査する指示ではありません。背景は[04経験原本](../ark-project/ark27/ark27-04/task-records.json)の `future-ai-skill-discretion` とSource `work-s03`–`work-s05`です。
 
-2026-09-19、問題解決Skill候補 `solve-with-human` は独立追加を保留し、[共通運用](../task-mode-system/operation.md)へ協働の目的と複数問題同時解決の探索を統合しました。既存のBrainDump受付、Living Graph、Task Mode Systemと候補の責務が重なるためです。候補の主要な指針は、現在の難所と既存成果を読む、未報告を成否に変換しない、キリ待ちの依存を見直す、複数Benefitを探索する、今有効な接続を選び固定手順を課さない、という内容でした。候補を作成・インストール済みとは扱いません。
-
-共通運用の改訂案だけを渡したAIと、同じ案に候補指針を加えたAIへ、元会話や期待回答を渡さず四つの独立した仮想相談を提示しました。両者とも、①順調な生活報告を保持した外出のキリ待ち、②眠い時の言語化だけ・追加質問なし、③掃除と音声AI併用のBenefitと注意の競合をPlanだけで比較、④Skill設計相談で固定の一問題・五段階・最後の一問を一律化しない、という区別を維持しました。回答の表現は異なり、この限定比較で独立Skillの追加効果は確認できませんでした。自動選択・保存更新・実生活効果・他モデルへの汎化は未検証であり、独立Skillが常に不要という証明ではありません。
-
-今後、共通運用へ辿り着けない、同じ誤読が繰り返す、独立したTriggerや専用知識が必要になる等の具体的な不足が見つかった時に、この候補を再検討します。新しいSkillや次Trialをこの記録だけで自動開始しません。
-
-2026-10-03、上記の再検討条件に関わる新しいHuman入力と作成承認から、方法選択の負担をAI側へ渡す共通入口として `solve-problems` を追加しました。今回の役割・採用理由・限定確認は§3.8が所有します。旧候補が既に導入済みだったという意味へ履歴を書き換えず、共通運用・BrainDump・Graph・専門Skillの既存役割を保持します。
+2026-09-19の `solve-with-human` 保留と10月3日の独立入口追加、その後の改名は[Problem Solvingの形成記録](problem-solving/README.md)へ。保留した旧候補が既に導入済みだったという意味にせず、一回の比較を独立Skillが常に不要という証明にしない。
 
 ## 6. Repository entry relation
 
@@ -742,88 +278,10 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 ## 7. 初期共有・map接続・追加Skillの形成記録
 
-以下は各日付時点の形成・検証記録です。「今回」「未確認」は当時の範囲を表し、後続の観測・Human Correctionを優先します。通常利用の追加Bootや、終了済み試験の再実行指示ではありません。従来一覧直後に置いていた本文を、意味を変えず本節へ移しました。
+2026-09-10に取得不能だった旧 `_skill/SKILL.md` への案内を共有Hubへ切り替え、9月12日の明示UploadでGraphとAuditを加えた。初期のArk Transition一件から三件の共有へ進んだ履歴であり、全Skillの自動展開を意味しない。その後の追加・訂正・保存と取得の観測は、各READMEの個別形成記録へ移した。
 
-2026-09-29（Asia/Tokyo）、Ark28:01→02の承認済み移行準備により、導入済み `map-ark-current-position` を共有しました。本文と参照二件は内容を変えず、UI metadataは三つの表示項目だけを収録します。Tree・Node & Edge表、星印なしの現在地、任意のArk Graph Navigator、回答全体の最後のNext stepが現行本文に含まれます。導入先への再適用・新しい機能改訂は行っていません。導入済みディレクトリの形式検査を通過し、Remote本文と参照の一致は[Source State](../ark-project/ark28/ark28-01/state.json)の移行Receiptが所有します。Humanの採用内容・訂正・到達点は[Harvest](../ark-project/ark28/ark28-01/harvest.md)を参照します。全環境の表示・自然な自動選択・実生活の迷子解消を今回の共有検査で実証したとは扱いません。2026-09-12のexport-manifestは歴史的な記録として変更しません。
+**2026-10-20の配置訂正。** YusukeJPは、Hubへ全Skillの説明・Queryを積み重ねる設計を訂正し、各SkillのREADMEへ収める方針を選んだ。既存Queryフォルダを残す案も検討した後、内容・参照を移してフォルダを除く方向を承認した。短く呼べるようになったことと、既存の長いQueryの条件を削除してよいことは区別する。
 
-2026-09-29（Asia/Tokyo）、上記の初回共有後、Humanが承認した計画に従い、`map-ark-current-position` にLiving Reviewを組み込みました。通常のmap回答の末尾を `Living Review` → `Next step` の隣接する二節とし、Reviewの結びが今判断すべき焦点・重要な選択条件・必要な未確定や保留価値を渡します。独立したhubは標準では設けず、Next step候補の実行可能性や権限を検討して分かった条件もReviewへ反映します。訂正で条件が変わらなければ判断を維持でき、実際の変化が見えない時に差分・効果・新Taskを作りません。Navigatorでは本文の焦点と表示対象を区別し、タブ操作だけで新たなAI判断が行われたとは扱いません。
+移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-改訂した導入先の形式検査と相対参照の確認を通過しました。元の計画や期待回答を渡さず、改訂Skillの現物と相談入力から回答する独立AI五件で、開始方法の設計、完了地点の確認、必須Source不足と通常Unknownの分離、Navigatorの文字表示、起動Prompt自体のレビューを確認しました。うち二件には後続の訂正を加え、計七回答を観察しました。開始方法では比較結果が初手の前提になるという訂正でReviewとNext stepを修正し、名称のみの訂正では完了判断を維持しました。Plan-only・未確認効果・依頼対象の区別も保持しました。これは構成した相談例に対する限定的な応答確認であり、自動選択、操作可能なUI、全AI互換性、実生活での効果の実証ではありません。
-
-今回の変更はSkill本体・Navigator参照・この共有案内です。導入版と共有版の本文・参照は同じ内容を使用し、Source routingとUI表示設定は変更していません。初回共有の移行Receipt・Harvest・export-manifestは当時の記録として保持します。起動Prompt自体の改訂や次の実地Trialを、この改訂から自動開始しません。
-
-保存後、導入先に保持された本文・作業先の現物・GitHub本文の一致を確認しました。一方、同一会話のSkill参照経路では改訂前と同一の本文が返ることを観測し、その参照表示の更新は未確認です。今回の応答確認は更新済み現物を読んで行いました。保存済み内容と会話内の参照状態を分け、表示差だけで再作成や再導入を行わないようにします。
-
-2026-09-29の後続観測では、上記Living Review導入後の本文が会話内のSkill参照でも取得でき、当該時点のGitHub本文と一致しました。今回の共通説明接続を加える前の再確認でも一致しています。先の「参照表示の更新は未確認」はその保存直後の観測記録として残し、同じ差が現在も未解消だとは扱いません。この確認を全参照経路・全UIの更新証明へ広げません。
-
-2026-09-29、Humanが承認したAI-primaryの改訂計画により、[AI Living Review v0.2-candidate](../prompts/ai-living-review.md)を共通説明として作成し、mapに条件付きの参照を加えました。根本の意味や他用途との違いを深める場合に進む入口であり、通常のmapに必要な条件はSkill本体に保持します。任意参照の取得不能だけで基本支援を停止せず、別途必須とされたSource契約とmap固有の末尾二節を尊重します。
-
-元会話・計画・期待回答を渡さない四つの独立したAI文脈で、構成した相談例に対する計六応答を確認しました。共通本文の概念説明、ボード案レビューと重要な訂正、共通本文を併用するmap、外部リンクを取得できないmapを扱い、重要な訂正による提案の取り下げ・焦点更新、名称のみの訂正での判断維持、必須Source不足と通常Unknownの分離、mapの固有出力と完了の選択を観察しました。仮想の相談内容をHumanの実経験として記録しません。改訂Skillの形式検査と参照先の確認も通過しました。自然な自動選択、別Vendor間や全AIでの互換性、Human UI、実生活の効果は未検証です。
-
-今回のmap差分はSkill本体への参照段落の追加です。Navigator・Source routing・UI表示設定は維持しています。共通本文・prompts入口・Ark-OKFの保存は[作成commit](https://github.com/yusukefujiijp/ai-project/commit/9d77381349d604d043023feb26911eee77075b88)で辿れ、三文書のRemote再取得による全文一致を確認しました。導入先の保存済み本文と現物の全文一致を確認した後、[map接続改訂commit](https://github.com/yusukefujiijp/ai-project/commit/fb56b6c5e018ccc76f9def4bc559935d5c81f40f)から共有本文を再取得し、同一内容であることを確認しました。
-
-今回の保存後に確認した会話内のSkill参照経路では、共通説明への参照を追加する前の本文が返りました。導入先の保存済み内容・現物・GitHub共有本文は新本文で一致しています。これは上記の過去の参照差とは観測時点と対象差分が異なり、今回追加した参照段落の表示反映はその経路では未確認です。任意参照の段落が差分であり、更新済み現物を用いた応答確認と保存確認を、この参照表示の観測と区別します。表示差だけを理由とした再作成・再導入は行っていません。
-
-2026-09-12、Ark27:02での明示的Upload依頼により、現Threadで改訂・新規作成した二つを追加しました。初期の一件限定から、確認済みの用途に応じた三件の共有へ進めています。全Skillの自動展開はしません。
-
-2026-09-14、URL一つからSNS投稿の全文を取得する `read-social-post` を追加しました。本文はインストール版と一致し、UI metadataは環境が自動付与するアイコン・内部設定を含まない配布用です。追加スキルは2026-09-12のexport-manifestの対象外です。
-
-2026-09-17、`read-social-post` の早期停止を改善しました。検索や一つの取得ツールの失敗から全経路の取得不能を推定せず、許可された公開HTTP取得も検討します。[検証対象のX投稿](https://x.com/redp314/status/2100489858951073858)では、公式埋め込みAPIの本文は途中省略されましたが、公開ページHTMLの対象本文は全段落を取得できました。HTTP 200だけで全文成功とは判定しません。引用投稿の省略は対象本文と分離し、動画の403は動画未確認として保持しました。ブラウザ利用条件・アクセス拒否・Plan-only境界は維持します。改訂後、先行する結論や取得済み本文を渡さない独立AIの確認でも、同じ投稿の公開HTMLから本文3段落を取得し、モデル時間と実行全体の時間を区別できました。異なる投稿での汎化、動画、実装コードは未検証です。これは限定的な実地証拠であり、特定API・HTMLタグや全SNSでの成功保証ではありません。
-
-2026-09-18、`write-ark-markdown` を追加しました。ArkのMarkdownを他AI・Future AIへ渡す共通入口として、文書の役割と必要な知識をAIが選びます。共通の核は短く保ち、後の重要点は共通原則・条件付き知識・経験の根拠へ分け、追加・統合・Correctionを受け入れます。注意書きの全文を各文書へ貼る仕組みではありません。小さな成功も独立した学びとして残す方針を含みます。
-
-共有版はSKILL.mdと配布用の最小表示設定の二ファイルです。導入環境が自動付与するアイコン・内部設定は含めません。自動選択を許可する通常設定で導入し、共有本文との一致を確認しました。独立したAIへ架空のTask報告素材を渡した限定確認では、成功事例と入力ガイドを書き分け、報告成功とTask完了、Human評価と測定、任意入力と必須条件を区別できました。自動選択される頻度や実生活効果は、この確認の対象ではありません。本Skillは2026-09-12のexport-manifestの対象外です。
-
-2026-09-18（保存作業環境のUTC日付）、`recall-bedtime-care`を追加しました。Humanが2026/09/19と記した現場報告に続く対話から、就寝前の合図で耳揉み等を想起したい希望と、項目をBrainDumpで継続追加してAIにまとめてほしいというCorrectionを受けています。方法はSkill、個別希望・根拠・訂正は[Ark27:04原本](../ark-project/ark27/ark27-04/task-records.json)が所有し、項目追加のたびにSkillを書き換える必要はありません。
-
-一回の見送りと恒久取消し、実施報告と登録削除、設計相談と実際の就寝前の合図を区別します。出力を一回答一項目や全項目表示へ固定せず、Humanがそのまま就寝できる簡潔さを優先します。原本への到達経路と取得不能時の扱いを含み、通知・常時監視・朝の起床方法変更・成功事例登録は含みません。共有版はSKILL.mdと最小の表示・自動選択設定です。自動選択を許可する設定と、実際に合図から自動選択されたという観測は別です。
-
-限定的な独立応答確認では、元会話を渡さず、作成したSkill本文・選択読解可能な04原本・七つの仮想入力だけを別AIへ渡しました。昼の追加と条件変更、就寝合図、日付を跨ぐ同じ就寝機会の実施済み・見送り、恒久取消し、STOP、合図の設計相談、原本取得不能時の現在入力からの支援を区別できました。初期三項目とHuman CorrectionのNode／Sourceを辿れ、サプリ服用不明から再摂取を促さず、架空の鍵の項目を実際のArk履歴へ混入しませんでした。これはローカルに渡した原本からの限定応答確認であり、遠隔取得経路、自動選択、保存更新の動作、全AI互換性、実生活効果の検証ではありません。
-
-形式検査と導入先の保存確認を完了しました。導入先のSKILL.mdは共有する本文と一致し、通常の自動選択を許可しています。導入環境が付加するアイコン・内部表示設定は共有版へ含めません。2026-09-12のexport-manifestは当時の輸出記録として保持し、本Skillを収録済みとは扱いません。
-
-2026-09-19、`receive-braindump`を追加しました。Humanが繰り返しているBrainDump／GTD的BrainStormingを、未整理のまま預けられる共通入口として共有するためです。高性能なAIへ固定手順を重ねる懸念も保持し、受領の意味と重要な境界を明確にしながら、整理方法・説明密度・関係探索・次の接続はAIが現在の内容から判断します。[共通運用](../task-mode-system/operation.md)にある方針を活かし、第二のTask管理基盤を作りません。
-
-観察と仮説、希望と実施、見送りと取消し、設計相談と現在の合図、会話での受領と永続保存を区別します。未接続の議題や競合するBenefitを保持し、全項目のTask化や統一結論を強制しません。Task支援・関係分析・就寝前想起・保存へ必要時に接続します。個別の生活項目や今回限りの経験はSkill本文へ蓄積しません。
-
-元会話を渡さないAIにSkill本文と六つの相談例を渡した限定応答確認では、利用枠表示と課金原因の仮説、眠い時の受領だけの依頼、見送りへの訂正と想起希望、引用を含むTrigger設計、承認された一文の書換え、STOPを区別できました。比較用にSkill本文を渡さなかった別AIも、同じ相談で重要な区別を維持しました。この一回の比較では回答品質の優位性やトークン効率の改善を実証していません。Skillを渡した側の応答確認も、実環境の自動選択や保存更新の動作確認ではありません。
-
-共有版はSKILL.mdと最小の表示設定です。形式検査・参照先確認・導入先の保存確認を行い、共有するSKILL.md本文との一致を確認しました。通常の自動選択を許可しますが、実際の自然な合図からの自動選択、全AIでの互換性、実生活での負担軽減は未観測です。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
-
-2026-09-19、`co-design-everyday-solutions`（暮らしの工夫・共同設計）を追加しました。100均DIYから料理・収納へ広がった対話を受け、材料・道具・空間・準備から片付けまでの条件を、選べる具体案へ結び付ける役割に絞っています。一般的な相談受付やTask管理は既存の役割へ残し、`solve-with-human`の新設保留を覆す汎用問題解決スキルにはしていません。
-
-共有する判断は、個別条件の尊重、実用上の成立条件、意味のある比較、条件を見直した横展開、根拠と結果の区別です。100均・特定寸法・提案数・手順順序・出力形式を全場面へ固定せず、Future AIがより適した方法へ組み替えられるようにしています。本文と最小の表示設定だけで構成し、日常の記録や添付の表示Runtimeは複製しません。
-
-元会話や期待回答を渡さない独立AIに、収納から料理への条件切替、工作と料理の共通負担の探索、洗濯への応用、未報告の結果、単位換算の五つの仮想相談を提示しました。具体案と条件を結び付け、食品用と工作用の道具を区別し、探索段階を保ち、評価と実施結果を分け、答えだけの指定にも応じました。比較用のSkill本文を渡さないAIも主要な条件を維持しました。この限定比較は、回答品質の優位性、全AIへの汎化、自然な自動選択、現物の有効性を実証していません。
-
-形式検証と導入先の保存確認を完了し、共有本文との一致を確認しています。通常の自動選択を許可します。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
-
-2026-09-22、Humanが提示した「一言言語化」の原案と、このThreadで承認された設計から、`distill-to-core` を追加しました。対象と本質の二列表を出力する用途に限定し、現在の問いと観点から核語を選びます。短さは指定された出力部分へ適用し、AIの必要な検討や、後続の詳しい説明を抑える規則にはしません。比較の観点・粒度、意味を失わない削除、根拠不足とHuman Correctionの扱いを保持し、候補数や思考手順は固定しません。
-
-原案のFew-Shotから代表例を選び、固定辞書としての再生を避ける方針と、音楽の二つの核・自己観察の限定を削らない境界例を含めています。通常は前置き・補足なしの二列表を返し、説明も求められた場合は表の後で応じます。Graph Modeや一回答一表の資料は必須依存にせず、明示された二列表へNode／Edge列を追加しません。
-
-元会話と期待回答を渡さないAIによる限定応答確認では、15対象の一覧、読み手に届ける価値という観点、原因を特定できない遅延、詳しい会議分析、後続の観点訂正と解説依頼を扱いました。初稿では一部の核が短い説明句になったため、一語・短い複合語を優先し、対象から明らかな修飾を省く指示へ調整しました。調整後の独立した応答では、翻訳・要約・校正が「理解・要点把握・信頼」となりました。後続の訂正では写真を「構図」へ変更し、求められたリサーチの解説も返しています。これらは限定的な応答観測であり、語の唯一の正しさ、品質優位、自然な自動選択、他モデルへの汎化を実証するものではありません。
-
-共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査と導入先の保存確認を完了し、共有する本文との一致を確認しました。導入先の通常の自動選択設定は有効ですが、設定と実際の自動選択は区別します。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
-
-2026-09-24、YusukeJPが考案し、今回の対話で登録を承認した「chocoZAP スイートスポット理論／chocoZAP二周目理論」を、`chocozap-sweet-spot`として追加しました。YusukeJPの明示的なGitHub保存依頼を受け、AIが登録済み本文を共有版へ反映しています。一周目でその日のSweet Spotを見つけて記録し、インターバル後の二周目で記録を参照して集中する構想です。本人が「Move37的breakthrough」と表現した複数問題同時解決の狙いを、集中・探し直しの削減・時短などの改善候補として保持します。実測済みの効果とは区別します。
-
-呼び出しの最初の応答からこの意味を共有し、短い機械別報告を受け取ります。片手／両手・片足・縦／横の条件、誤記訂正と新しい周回の観察、前回の履歴と今日の申告を区別します。記録した条件は二周目の出発点であり、身体の反応に応じた調整、一周での終了、現在のSTOPを尊重します。別AI・Future AIへ共通手順を渡すSkillであり、過去の個人記録が自動的に共有される仕組みではありません。
-
-元会話を継承しない四つの独立したAI文脈へ本文と入力を渡し、計六回の応答を確認しました。単独呼び出しでの意味の復元、本人の既報告からの二周目一覧、仮想入力による日付・誤記訂正・二周目の条件変更、履歴が見えない場合、一周での終了、設計相談を扱えました。本文を明示的に読ませた限定的な応答確認であり、自然な自動選択、全AI互換性、実際の二周目の運動成果や時短を実証していません。
-
-共有版はSKILL.mdと最小の表示設定の二ファイルです。形式検査・導入確認済みの本文を変更せず収録し、導入環境が自動付与するアイコン・内部設定は含めません。初回共有時の本文はUTF-8で9,757 bytes、SHA-256は`99f6cff05a034bdf796c7e6d138f3fac7a9b9348ee800c097ab8f22082bfe396`です。この値は初回共有版の同一性確認用であり、将来改訂後のCurrent版を固定しません。2026-09-12のexport-manifestは当時の記録として保持し、本Skillを含めません。
-
-2026-09-24、YusukeJPの追加の実行承認を受け、AI assistantが[chocozap/README.md（当時の配置）](../__archives/ARC-005/chocozap/README.md)と日付別記録への連携を追加しました。Skillは共通手順、chocozap側は保存規則と本人の観察を所有します。最初の4機械・6条件は実施日未確認の記録として保存する構成にし、変化は訂正を反映した観察から読み出す時に組み立てます。「同条件の再確認」と未報告を分け、通常の受付や二周目支援を遠隔保存の成否に従属させません。
-
-改訂は、呼び出し対象の説明、変化比較の方針、保存・履歴参照時の入口に限定しました。表示設定は引き続き同じ用途を表します。元会話なしの二つの独立AIによる限定読解・応答確認の内容と、実証していない範囲は[保管済みの当時の記録入口](../__archives/ARC-005/chocozap/README.md#6-変更の来歴と確認範囲)で参照できます。現行の追記・読出し先は[chocoZAP記録入口](../lifestyle/chocozap/README.md)から解決します。初回共有時の本文ハッシュは当時の記録として保持し、改訂後の本文へ適用しません。
-
-2026-09-27、YusukeJPの運用説明とスキルのLiving Review依頼を受け、AI assistantがSweet Spot・下降系列・両手から片手への切替を区別して結ぶ手順を改訂しました。Sweet Spotが起点と切替基準を兼ねる意味、後続確認による未確認状態の解消、系列の確認済み起点も含めた読出しを本文へ反映しています。本人が選んだ運用として扱い、固定の重量・日付・JSONの詳細仕様はスキルへ複製しません。実データと保存形式は[chocoZAP記録入口](../lifestyle/chocozap/README.md)が所有します。通常報告のたびの自動改訂ではなく、共通手順の不足が見つかり、改訂が依頼・承認された範囲で反映します。
-
-改訂本文を明示的に読ませた二つの独立AI文脈で、計三応答を確認しました。一つは仮想の重量列を未確認の起点・切替として受け取り、続く本人確認からSweet Spotと両手→片手の流れを復元し、未報告の中間重量を追加しませんでした。もう一つは保存済みの2026-09-27の記録と後続Feedbackから八条件のSweet Spotとチェストプレスの切替を読み出し、未報告の使い方を残しました。形式検査も通過し、表示設定は同じ用途を表すため維持しています。限定した読解・応答確認であり、自然な自動選択、全AI互換性、運動効果や時短の実証とは区別します。
-
-2026-09-28、Ark28:01でHumanが承認した二場面の初版計画から、`ark-recall-portal`を追加しました。旧称はArk Recall Hubです。用途そのものを忘れた状態でも「何ができるか」と実際の記録の例から入れる想起の入口を優先し、場面が分かる入力には直接応じます。反省の事実はThread経験原本、取り出しやすい項目はPortalのitems、共通運用はPortal README、呼出しはSkillへ分けます。現在地mapは必要時の接続先であり、今回その本体を変更・再配布したとは扱いません。初期の二場面は成長の上限ではありません。
-
-共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
-
-EOF::ARK_SHARED_SKILLS_HUB::v0.40.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.42.0
