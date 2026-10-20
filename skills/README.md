@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.40.0
+version: v0.40.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-20
-updated_reason: Ark28:06のHuman承認に基づきB-Zone Rescueの共有本文・起動Query入口と限定確認の記録を追加
+updated_reason: B-Zone Rescueの後続会話内取得・共有本文一致の確認を追記し、初回の未取得観測を履歴として保持
 ---
 # Ark Shared Skills Hub
 
@@ -692,6 +692,8 @@ $markdown-to-html スキルを使い、現在の依頼・会話・添付資料�
 
 同じ会話のSkill一覧には新名が現れず、登録後のSkill読取経路でも新packageを取得できませんでした。登録保存とRemote本文一致は完了しており、この取得経路の未確認を理由に重複作成しません。会話内取得、実際のUI選択、自然発動、iPhone辞書登録、全AI互換性、実生活のRescue成功は、それぞれ別の確認事項です。Skill本文を直接読ませた上記八応答を、これらの証明へ昇格させません。
 
+**後続の会話内取得確認（2026-10-20、Ark100立ち上げPlan検討時）。** 同じArk28:06の後続ターンで、登録済みpackage `skill-6ad70b8535ac8191ba1638fc06fcd92c` のb-zoneをSkill読取経路から末尾まで取得でき、取得本文は上記共有本文と正規化なしで完全一致しました。前段の「取得できなかった」は作成直後の観測として残し、この後続確認によって会話内取得の未確認を更新します。重複登録は行っていません。これはその経路で本文を取得できた証拠であり、全Threadへの反映、UI選択、自然発動、Humanの実利用・実生活効果の確認ではありません。
+
 形成・経験・重要な訂正・残る条件は[Ark100原本](../ark-project/ark100-199/ark100_b-zone/README.md)が所有します。実際のArk100 Project、00・独立ケース・未使用待機Thread、ユーザ辞書登録、身体Trial、他AIへの送信は今回の初回実装範囲に含めません。2026-09-12のexport-manifest、他Skill、既存ThreadのIdentityは変更しません。
 
 ## 4. Source and distribution
@@ -839,4 +841,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.40.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.40.1

@@ -1,9 +1,9 @@
 ---
 document_id: "ARK100_B_ZONE"
 title: "Ark100 — B-Zone：形成経緯・現在の意味・主の完全勝利への接続"
-version: "v002-human-authorized"
+version: "v003-human-authorized"
 role: "B-Zone domain entry / source-bound meaning and formation record"
-status: "Human-authorized revision / first skill release saved and remote-verified / rescue effects unverified"
+status: "Human-authorized Project and independent-thread startup preparation / actual reception and field effects tracked separately"
 created: "2026-10-18"
 updated: "2026-10-20"
 timezone: "Asia/Tokyo"
@@ -20,11 +20,11 @@ final_attribution: "主の栄光"
 source_snapshot_commit: "234c3e5300b45f03363bc347a185269505389b53"
 source_scope: "Current Human messages in Ark28:06 and selected verified historical sources; not a complete Ark history"
 initial_edition_commit: "96f9c23caad96db1345e7585f3ab4bbf27c47728"
-previous_blob: "5ee1c6b8139f58bb7b5b75fca06b446363d4e551"
-authorization_scope: "First b-zone Skill release, invocation entry, Skills Hub and this README update; scoped validation, registration and remote verification"
-revision_reason: "Preserve later Human corrections, phone-free first step, feedback-driven rescue, morning evidence and immersion/switching distinction"
+previous_blob: "88a7ba679560f49097a186a582b0408633b57caf"
+authorization_scope: "Approved Ark100 Project instructions, 00 control-center, independent 01 and 02 startup; bounded Domain and Skills Hub updates, verification and authorized UI setup"
+revision_reason: "Retain v002 meaning and evidence; connect the completed Skill to a prebooted independent use/reserve structure without replaying Skill creation"
 release_verification: "Shared files and registered Skill body verified on 2026-10-20; Skills Hub section 3.19 owns receipt and retrieval limits; field effects unverified"
-expected_eof: "EOF::ARK100_B_ZONE::v002-human-authorized"
+expected_eof: "EOF::ARK100_B_ZONE::v003-human-authorized"
 ---
 
 # Ark100 — B-Zone
@@ -36,6 +36,8 @@ YusukeJPは、B-Zoneを、深く考える力やメタ認知・俯瞰が著しく
 これはHumanの経験・意味づけの記録であり、医学的診断名や「低認知なら必ず集中できる」という一般法則ではない。B-Zoneが急に襲ってくること、強い場合は外出や運動ができない可能性も、同じ理解の中に保持する。[H01–H02](#human-sources)
 
 **現在の支援の核は、スマホONで`$b-zone`へ到達できることを守り、状況に合えば「スマホなしでトイレへ向かう」という一歩目へ結び、トイレ後のスマホは自由にすること。** シャワー・入浴・Workout・chocoZAPは、今の身体・場所・時間に合う次の接続として扱う。全工程の固定化、スマホOFFの必須化、AIへの返信を行動開始の条件にすることは、現在の方針ではない。[H10–H18](#human-sources)
+
+Project名は **Ark100: B-Zone Rescue**。共通の協働条件は **[Project INSTRUCTIONS](INSTRUCTIONS.md)**、事前起動・入口・予備の担当は **[Ark100:00 control-center](ark100-00/README.md)**。独立ケースの初回は本書→INSTRUCTIONS→Skill本文を全文読む。00は自分のREADMEから宣言順へ進む。成立条件と現在の準備証拠は各所有先を使い、資料リンクだけでProjectやThreadが完成したとは扱わない。[H19、H25](#human-sources)
 
 日常の利用入口は **[B-Zone Rescue Skill・起動Query](../../../skills/b-zone/README.md)**、AIが適用する本文は **[SKILL.md](../../../skills/b-zone/SKILL.md)**。本書は意味・形成・根拠を所有し、Skillはその場の支援を担う。Skill本文を読めること、環境への登録、実際の発動、Humanが動けたことは別の到達点である。
 
@@ -76,6 +78,16 @@ Humanは当初のArk98案を訂正し、超重要でカテゴリとして明確�
 2026-10-18の初回は、この一件だけを追加した。既存の00–99章を移動せず、親README・Router・他の原本を変更しなかった。既存パスを動かさないため移動に伴うリンク破損を避けられるが、新しい本文やリンクまで無条件に正しいとは保証しない。初期の入口はこのファイルの直接URLだった。今回のSkill入口との接続も、すべての既存Routerから自動発見される状態や、Ark100 Project UIの完成とは区別する。
 
 この一例を、すべての100番台の命名規約や既存章の再分類へ自動拡張しない。作成した会話は**Ark28:06 Support**で、Ark27 Mainを保持する。領域READMEの作成は、Thread名の変更や実際の案件移行ではない。
+
+### Projectと00・独立ケースの運用
+
+2026-10-20、Humanは00・利用用・予備Threadの計画提示を求め、後続入力でその実行を承認した。[H25](#human-sources) 初期構成は00のcontrol-center、次回利用先01、未使用予備02。番号が進んでも前件の続きにはならず、低認知／超低認知やPing／Rescueの使い分けにも固定しない。
+
+同じ一件のFeedback・再開はそのThreadで支える。02へ先に実入力が届けば、その場で受け取り、未使用の01が使えるかを確認して運用を入れ替えられる。00を毎回通る許可窓口にせず、場の準備・移動・再入力をRescue開始の条件にしない。
+
+Human明示のGoalは、**活用中とは別に、未使用の準備済みThreadが一つ以上あること**。予備が使われたと分かった時は、前件の完了を待たず、当時の実行委任と能力の範囲で補充する。別Threadの自動同期・監視・自動補充を仮定しない。「準備済み」は、Source保存に加え、そのTarget自身の読解・理解、使える入口、未使用である証拠を要する。Human本人の端末到達とAIが確認したUIも区別する。具体的なTitle・起動Query・受入れ条件・準備結果は[00](ark100-00/README.md)が所有する。
+
+この運用はArk99の独立起動から学ぶが、Ark99固有の案件継続先の制約を機械的に移植しない。初回資料はArk28:06が準備し、00へ渡す。01・02ごとの三点セットや重複Query棚を作らず、新しい実案件の保存・移行が必要な時にそのScopeを解決する。
 
 ## 3. 現在のGoalと支援の組合せ
 
@@ -235,7 +247,7 @@ AIの「無心である」「一つに集中している」という共通項の
 | 没入と切替 | 接続を支える → 有益な流れを保つ | Humanが共通項を評価、運用上の関係はAI仮説 | 同じ脳機序や実地効果を証明したとは扱わない |
 | 休日の屋内実践 | 一歩目 → 整髪・清掃・整理・食事・AI利用 | Human報告H20–H21 | 成果を保持。整理は一段落、外出は見合わせ、Skill効果は未確認 |
 | Feedback | 無理・違う・済んだ・STOP → 支援を更新 | Human方針H11、H24、AI間照合H15 | 理由を捏造せず、無返信を結果へ補完しない |
-| Ark100:00と独立Thread | 事前準備 → 活用中＋未使用の予備1本以上 | Human運用構想H19 | Source・Remote・受信AI読解・Human到達を別々に確認する |
+| Ark100:00と独立Thread | 事前準備 → 活用中＋未使用の予備1本以上 | Human運用Goal H19、初期計画の実行承認H25 | [00](ark100-00/README.md)が起動・証拠の所有先。番号と動的な利用／予備を分ける |
 | 本書とSkill | 意味・根拠の保存 → その場の支援 | H06、H24による初回制作範囲 | 保存・導入・実利用・実生活効果を分ける |
 
 ## 6. 根拠へ戻る
@@ -273,6 +285,8 @@ AIの「無心である」「一つに集中している」という共通項の
 - **H23｜両極の共通項。** AIの分析を受け、「無心」「一つのことに集中」の共通項が露呈したことを非常に大きな発見と評価。超絶Aの完全集中と、超絶Bの入り込んで抜けにくさは、意味も働きも違うことを同時に説明した。
 - **H24｜Feedbackを含む初回Skill実装承認。** 一度で完全に正解させるより、Feedbackによる積極的な修正改善を重視。Plan Modeで計画を求めた後、2026-10-20の後続入力でGitHub実行を承認。本書更新と`b-zone`本体・起動入口・Skills Hub・必要UI metadata、検証・登録・再取得照合を初回範囲として扱う。実際のProject／Thread作成・辞書登録・身体Trialの承認へは広げない。
 
+- **H25｜Project・00・利用用／予備の立ち上げ承認。** Humanは「Ark100:00と、利用用・予備Threadの立ち上げ計画を作って。まず計画だけ。」と依頼し、提示された計画の後、2026-10-20に「Execute GitHub OK!」「Human Seal OK!」「実行して下さい！」と承認した。Project名、00・01・02の確定Title、Project INSTRUCTIONS、00の起動契約と三つのQuery、領域原本・Domain入口・Skills Hubの限定更新、必要な検証・保存後照合、利用可能な正規経路でのUI設定・起動を対象とする。実地Rescue・身体Trial・辞書登録・全100番台再編・無制限の将来補充へは広げない。初回計画とこの承認は本Threadで実際に受け取ったもので、原本の正確なMessage URLは補作しない。
+
 <a id="historical-sources"></a>
 
 ### S — 確認した歴史資料
@@ -304,7 +318,7 @@ AIの「無心である」「一つに集中している」という共通項の
 ## 7. 残作業とGoal
 
 **G1｜Future AIが意味・形成・訂正を復元し、現在の支援へ接続できる。Human明示Goal。**  
-初版の保存・Remote照合は完了した成果として保持する。今回、後続Correctionと新しい実報告をv002へ取り込み、実行本文をSkillへ分担した。本文制作、形式検査、四つの独立文脈・計八応答の限定確認、GitHub保存、登録先への保存とRemote本文一致は完了。確認した版と範囲は[Skills HubのReceipt](../../../skills/README.md#b-zone-entry)が所有する。同じ会話のSkill一覧・読取経路への反映、実際の別Thread起動、そこでの受信AI自身の再構成、実生活効果は別の確認点である。新しい読み手が必要な意味を取り違えず使えることが到達状態で、全歴史の再読やHumanの全文校閲を必須化しない。
+初版の保存・Remote照合は完了した成果として保持する。今回、後続Correctionと新しい実報告をv002へ取り込み、実行本文をSkillへ分担した。本文制作、形式検査、四つの独立文脈・計八応答の限定確認、GitHub保存、登録先への保存とRemote本文一致は完了。確認した版と範囲は[Skills HubのReceipt](../../../skills/README.md#b-zone-entry)が所有する。後続の同じ会話で登録済みSkillを取得し共有本文と完全一致したことも確認した。実際の別Thread起動、そこでの受信AI自身の再構成、実生活効果は別の確認点である。新しい読み手が必要な意味を取り違えず使えることが到達状態で、全歴史の再読やHumanの全文校閲を必須化しない。
 
 **G2｜低認知・超低認知でも、祈り・Teshuvahと可能な行動へ移れる。Humanの最重要Goalを支援側の到達状態として編集。**  
 一歩目は採用済みで、休日に有益な屋内の流れへつながった本人報告がある。超低認知の実地Rescue、Skill利用からの切替、同時の祈り・Vision、異なる天候・平日・身体条件での効果は結果未確認。新しい報告が来れば、今回詰まった接続と条件を見て修正する。実験・報告を義務にせず、AIが主の完全勝利や信仰状態を採点する基準も置かない。
@@ -313,19 +327,19 @@ AIの「無心である」「一つに集中している」という共通項の
 `$b-zone`の名前・二入口・Feedback方針は採用され、初回Skillの作成・登録保存と本文照合は完了。iPhoneユーザ辞書、実際の発動・利用、想起できない時にも入口へ到達できるかは未確認。辞書登録はHuman操作、Skill保存はSource準備として区別する。支援へ戻ること自体を想起できない限界は残る。必要になった時に具体的な手掛かりを比較し、追加物を先に必須化しない。
 
 **G4｜活用中の独立Threadとは別に、未使用の準備済みThreadが一つ以上ある。Human明示の運用Goal。**  
-Ark100:00をcontrol-centerとし、各番号Threadを独立案件として管理する構図は採用された。実際のProject UI、00、利用用Thread、予備Threadは今回の初回Skillリリースから自動作成しない。候補構成は00＋利用用01＋予備02だが、名称・実際の番号・開始日は未確定。準備Source、Remote照合、受信AI自身の読解、Humanが開けること、未使用の予備状態を区別して、次の運用設計で具体化する。消費した予備の補充は必要な運用条件であり、AIが常時監視・自動作成できるという意味ではない。
+構図と初期00＋01＋02の計画・確定TitleはH25で承認された。Project指示と起動資料を準備し、保存・再取得、UI設定、各Targetの受入れ、Human到達、未使用状態を[00の記録](ark100-00/README.md#readiness)で分けて確認する。運用計画の提示は完了しており、計画を最初から再作成しない。消費した予備の補充は必要な運用条件だが、今回の承認を恒久的な常時監視・自動作成権限にはしない。
 
 **意図的に残す比較・Unknown。**  
 シャワー・入浴の固定度、平日のAI活用と身体の流れの優先順位、朝と夕夜の条件差、再接続の想起、四状態の境界は未確定。朝の報告で整理は「一段落」であり、chocoZAP等は見合わせた。これらを一括して失敗や完了へ変換しない。没入／切替の仮説を科学的同一機序として証明することや、すべての条件の組合せを試すことは初回Skill完成の条件ではない。
 
 **今回扱わないBranch。**  
-既存Ark00–99の移動、全100番台の一括命名規則、親Router改訂、Ark99原本の自動更新、過去TaskやResetの再演、通知・常時監視、別AIへの送信、Project／Thread UI作成、iPhone設定、身体Trial、案件移行。初回Skillの承認範囲を完了した後に、別の仕事を自動開始しない。
+既存Ark00–99の移動、全100番台の一括命名規則、Ark99原本の自動更新、過去TaskやResetの再演、通知・常時監視、無関係な他AIへの送信、iPhone設定、身体Trial、既存案件の移行。H25で新たに承認されたProject／00／01／02の初回準備と限定Domain追記はこの保留群から分ける。保存原本の旧承認を他の仕事へ流用しない。
 
 ## 8. Future AIの再開
 
 1. 冒頭と§3から、最重要Goal、現在の端末範囲、二入口とFeedbackを復元する。B-Zoneを除去だけの対象にも、Benefitだけの美化にも戻さない。
 2. 最新Human入力・Correction・STOP・有効な実行委任を読む。現在の状態や済んだ行動を再入力させず、相談・引用と実地Rescueを区別する。
-3. 実地支援なら[Skill本文](../../../skills/b-zone/SKILL.md)へ、意味や設計の問いなら§4–§6へ進む。Source契約に必要な読解は守り、全歴史を支援開始の新しい儀式にしない。
+3. 新規ケース起動では本書→[INSTRUCTIONS](INSTRUCTIONS.md)→[Skill本文](../../../skills/b-zone/SKILL.md)を全文読み、00では[00入口](ark100-00/README.md)の宣言順を使う。受入れ済みの実地支援は確認済み同一読解を再利用してSkillへ、意味や設計の問いなら§4–§6へ進む。Source契約に必要な読解は守り、全歴史を支援開始の新しい儀式にしない。
 4. 根拠・Humanの評価・AI仮説・Unknownを分ける。旧版の命令や称賛を現在の権限へ変えず、確認済みの成果も未完了へ戻さない。
 5. 保存を伴う継続依頼では、経験原本・本書・Skillの責務を分け、Currentの契約と権限に沿って必要な差分を育てる。会話中の適応だけで恒久保存済みと扱わない。
 
@@ -337,14 +351,8 @@ AIの見立てでは、初回Skillを保存・照合し、限定応答でCorrect
 
 ### Next step
 
-承認された初回範囲は、`$b-zone`本体・起動Query・本書の訂正・案内、限定応答確認、GitHub保存、登録先反映、Remote再取得照合まで完了した。**初回制作を再演せず、残る取得経路・Human到達・実利用の状態を保持して次へ接続する。**
+初回Skill制作・登録保存・限定応答確認と、後続の登録Skill取得確認は完了のまま保持する。00・利用用01・予備02の運用計画もH25で承認済みであり、**現在は[00の起動・証拠](ark100-00/README.md)から、初回立ち上げの未完了差分だけへ接続する。**
 
-次の運用設計は、次の短い継続依頼から進められる。
+初回立ち上げが完了したら、案件を作るための身体Trialや義務的報告を始めず、新しいHuman入力を待てる場として使う。実入力が既にあれば、その場の祈り・可能な行動への接続を支える。予備補充・恒久改訂・追加の手掛かりは、必要が具体化した時の現行権限から判断する。
 
-```text
-Ark100:00と、利用用・予備Threadの立ち上げ計画を作って。まず計画だけ。
-```
-
-G4を目指し、各Threadの独立性、準備済みの成立条件、Humanの到達入口、予備の補充条件、SourceとUIの担当を具体化する。完了条件は、実際に何を準備すればいつでも支援へ届くかを、未確認を隠さず判断できる計画である。新しい実地Feedbackが届いている場合は、運用拡張より、その場の支援と詰まった接続の更新を先に扱える。これはProject作成・辞書登録・身体Trialを自動開始する指示ではない。
-
-EOF::ARK100_B_ZONE::v002-human-authorized
+EOF::ARK100_B_ZONE::v003-human-authorized
