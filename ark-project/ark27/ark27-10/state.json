@@ -1,11 +1,11 @@
 {
   "meta": {
     "state_id": "ARK27_10_CURRENT_STATE",
-    "revision": 6,
+    "revision": 7,
     "owner": "Ark27:10",
     "schema_version": "v002",
     "updated_at": "2026-10-20",
-    "update_reason": "STR-018/019完了を保持し、Humanが渡した初穂のMain Theme v1.0と後続AI対話・Title確定の伝達をSource10収穫へ統合。11準備の最終Receiptは後続Current Stateに分離。",
+    "update_reason": "固定Source10 revision6を保持し、11三点セット・Domain Main案内・PLAN currentの候補検証、main公開、六本文の再取得一致と対象外598ファイル保持を終端Receiptへ記録。",
     "authority": "Main10で直接受けたHumanのArk27:11への移行・実行依頼が準備Scopeの根拠。Titleは初穂AIが12:21 JSTの返信で明示確認へのHumanのOKを原文付きで伝達。AI合意だけを新権限にしない。",
     "date_scope": "Asia/Tokyo transition preparation date; prior UTC implementation receipts retain their own dates."
   },
@@ -282,16 +282,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "GitHub整理主担当としてSTR-018/019を完了し、Ark27:11への継続準備へ移る。次のMain ThemeはArk全体の根本説明・入口・文書役割の再設計検討。",
-    "current_coordinate": "Main10自身の受入れ・限定比較・二原本整合・README/references実装検証を終え、初穂のv1.0とHuman訂正を受領したSource収穫地点。",
+    "current_focus": "Ark27:11への六パス継続準備と公開後確認を完了。根本説明・入口・文書役割の比較は11自身の受入れ後へ継ぐ。",
+    "current_coordinate": "Main10の完了成果・Human訂正・初穂のMain ThemeとTitle応答を固定収穫へ保存し、11の受入れ原本とCurrent案内をmainで確認済みのSource地点。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "既存のHuman移行準備委任で六パスを構築・検証・保存する。初穂の直前の回答のみ指定はその確認ターンの境界で、準備全体の恒久STOPではない。",
+    "current_legal_connection": "確定Titleと起動Queryを独立したコピー面で渡す。既入力の新しいHuman指示があれば受け取り、11の起動・受入れ・比較をSource側の完了へ借用しない。",
     "next_specific_task": "11の受入れ後、四文書を横断して意味と規則の所有・依存を比較し、同じ三利用場面と入口文例による推奨案・代案・移行影響をHumanへ提示する。比較完了を移行前Gateにしない。",
     "target_boot": "COMPLETED_BY_TARGET10_IN_THIS_THREAD; source preparation/publication and Human UI are separate.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE09",
     "ui_title": "NOT_OBSERVED_BY_SOURCE09",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "Source10収穫と11準備を構築中。STR-018/019の公開・旧配置退役は完了済み。Target起動・UI操作・根本再設計は実行していない。",
+    "active_external_operations": "11三点セット・Domain案内・PLAN currentをmain公開し全文再取得済み。Current10へ本終端Receiptを保存する。Target起動・UI操作・根本文書再設計は実行していない。",
     "current_human_input_policy": "Receive any Human input already present; never require duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -713,6 +713,16 @@
         "claim": "Main11主題をHumanから受領し、初穂の追加差分なし・Title応答の帰属付き伝達を照合した。",
         "basis": "本Main10会話のHuman提示v1.0と2026-10-20の宛先付き初穂AI返信。",
         "boundary": "Main10で直接見たのは提示本文と着信。Dot側の全履歴/ブラウザ操作/Human返信画面は初穂報告。Target11理解・UI成功・根本再設計完了ではない。"
+      },
+      {
+        "claim": "Ark27:11 Source preparation and publication/readback completed within six authorized paths.",
+        "basis": {
+          "fixed_harvest_commit": "8293137088ca9645a3592a75d9e7d6404d2680ae",
+          "package_commit": "ef2b2ddb9ed1b8262b996dd6b9de5892469defba",
+          "main_full_content_matches": 6,
+          "outside_scope_files_preserved": 598
+        },
+        "boundary": "Sourceの準備・保存・整合だけ。Target11の起動・再構成・UI・最初の比較は未観測。"
       }
     ],
     "candidate": [
@@ -790,7 +800,7 @@
     "target_reconstructed": true,
     "target_reconstruction_scope": "Target10自身が、先行する本Threadの受入れでIdentity・Binding・Triad Consistency・R1–R6を満たした。Source09準備時は未観測だった事実と区別し、今回の保存でBootを再演しない。",
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE09; actual thread creation, compiled Title use and startup delivery are separate.",
-    "requested_outcome": "STR-018/019完了後のHuman移行依頼を受け、11へ主題・意味・権限を渡す六パス準備を進める。固定収穫後の終端Receiptはprogress.next_transitionが所有する。",
+    "requested_outcome": "SOURCE10_TRANSITION_PREPARATION_AND_REMOTE_VERIFICATION_COMPLETE; Target11 reception and selected comparison remain separate.",
     "verified_predecessors": [
       {
         "repository": "yusukefujiijp/ai-project",
@@ -834,6 +844,12 @@
         "date": "2026-10-20",
         "actor": "Work / Ark27:10",
         "scope": "10→11固定Source収穫。Main Theme形成・Seed原文・完了成果・初穂との対話・Title伝達・承認境界を統合。準備Receiptは後続。"
+      },
+      {
+        "revision": 7,
+        "date": "2026-10-20",
+        "actor": "Work / Ark27:10",
+        "scope": "10→11準備の終端Receipt。固定収穫A、三点セット/案内B、候補/main再取得、六パス境界を記録。Source自身の成功とTarget11の未観測を分ける。"
       }
     ],
     "target_reconstruction": {
@@ -945,7 +961,7 @@
       "main_owner": "Ark27:11",
       "compiled_title": "Ark27:11_2026/10/20; \"主の完全勝利: Arkの根本説明・入口・文書の役割を整える\"",
       "title_evidence": "now.transition_dialogue.title",
-      "status": "SOURCE_HARVEST_CAPTURED_PACKAGE_PREPARING",
+      "status": "SOURCE_PREPARED_AND_REMOTE_VERIFIED",
       "scope_paths": [
         "ark-project/ark27/ark27-10/state.json",
         "ark-project/ark27/ark27-11/README.md",
@@ -954,13 +970,97 @@
         "ark-project/README.md",
         "control-center/github/PLAN.md"
       ],
-      "source_prepared": false,
-      "remote_verified": false,
+      "source_prepared": true,
+      "remote_verified": true,
       "target_reconstructed": "NOT_OBSERVED_BY_SOURCE10",
       "human_last_mile": "Target11 thread creation/title setting/startup delivery not observed. Printed copy surfaces are separate.",
       "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
       "requested_target_outcome": "now.next_main_theme.first_outcome",
-      "receipt_policy": "このrevision6を固定Source収穫にする。以後の公開・候補/main再取得結果はCurrent10の同欄へ保存する。自己SHAや相互live-blob循環を作らず、固定収穫の準備中flagsを後続未完と誤読しない。"
+      "receipt_policy": "このrevision6を固定Source収穫にする。以後の公開・候補/main再取得結果はCurrent10の同欄へ保存する。自己SHAや相互live-blob循環を作らず、固定収穫の準備中flagsを後続未完と誤読しない。",
+      "fixed_source_harvest": {
+        "repository": "yusukefujiijp/ai-project",
+        "path": "ark-project/ark27/ark27-10/state.json",
+        "commit": "8293137088ca9645a3592a75d9e7d6404d2680ae",
+        "blob": "89846e29cbdc46f9d7ac2ad34c6dec4f72e752a8",
+        "state_id": "ARK27_10_CURRENT_STATE",
+        "owner": "Ark27:10",
+        "schema_version": "v002",
+        "revision": 6,
+        "full_content_match": true,
+        "verified_at_utc": "2026-10-20T03:28:14.383Z"
+      },
+      "package": {
+        "commit": "ef2b2ddb9ed1b8262b996dd6b9de5892469defba",
+        "tree": "5360b6fe885b9a67c7c75aa25770aef536806f2a",
+        "published_at_utc": "2026-10-20T03:39:27.707Z",
+        "main_verified_at_utc": "2026-10-20T03:39:34.514Z",
+        "observed_files": [
+          {
+            "path": "ark-project/ark27/ark27-10/state.json",
+            "blob": "89846e29cbdc46f9d7ac2ad34c6dec4f72e752a8",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-11/README.md",
+            "blob": "47745887081f84a20bd0859e1d2eb86a808f39c6",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-11/handoff.md",
+            "blob": "1357cb3a0379d42bf84760a2147ab08572c05684",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark27/ark27-11/state.json",
+            "blob": "db7755d4a955dc3ed6e6d861200b20779fade51e",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/README.md",
+            "blob": "63fd97971e05df7b5bd1a4268874f3e162a45824",
+            "full_content_match": true
+          },
+          {
+            "path": "control-center/github/PLAN.md",
+            "blob": "7f6dc70db8987fca5e762049e6ec3642bf210755",
+            "full_content_match": true
+          }
+        ]
+      },
+      "validation": {
+        "candidate_commit": "ef2b2ddb9ed1b8262b996dd6b9de5892469defba",
+        "candidate_full_files": 5,
+        "candidate_verified_at_utc": "2026-10-20T03:39:20.154Z",
+        "main_full_files": 6,
+        "title_and_triad_identity": true,
+        "fixed_harvest_binding": true,
+        "required_order_and_scopes": "1–13 full;14 metadata/Identity and entire PLAN current before diagnosis-history",
+        "new_relative_links_resolved": 57,
+        "source10_prior_outcomes_and_receipts_preserved": true,
+        "support06_and_domain_stable_body_preserved": true,
+        "plan_diagnosis_history_preserved_except_version_eof": true,
+        "outside_scope_files_preserved": 598,
+        "scope_base": "33ba14a92acb230416da25d39ed4df94534981ba",
+        "changed_paths": [
+          "ark-project/README.md",
+          "ark-project/ark27/ark27-10/state.json",
+          "ark-project/ark27/ark27-11/README.md",
+          "ark-project/ark27/ark27-11/handoff.md",
+          "ark-project/ark27/ark27-11/state.json",
+          "control-center/github/PLAN.md"
+        ],
+        "boundary": "Source10の構築・自己点検・候補/main本文一致。独立したTarget11読解試験や実利用結果ではない。"
+      },
+      "copy_surfaces": {
+        "title": "Ark27:11_2026/10/20; \"主の完全勝利: Arkの根本説明・入口・文書の役割を整える\"",
+        "title_status": "HUMAN_CONFIRMATION_RELAYED_BY_DOT0000",
+        "startup_handoff": "ark-project/ark27/ark27-11/handoff.md",
+        "source_delivery": "Source最終応答でTitle一行text blockと起動Query blockを別々に提示。",
+        "target_echo": "初回通常受入れ応答の冒頭で同じTitleだけを独立したtext blockに再掲。専用Failure/STOP優先。",
+        "delivery_and_ui": "コピー面の準備・提示と、Human/Dot側取得・UI設定・Target起動は別観測。"
+      },
+      "completion_boundary": "Fixed revision6 owns the harvest. This Current revision7 owns actual Source package publication and readback. Its own final save/readback is reported in the Source conversation without embedding a self-SHA or creating an endless receipt chain. Target11 reconstruction, Human UI and comparison results remain unobserved by Source10.",
+      "next_action": "Titleと起動Queryを渡す。11自身は必須読解・R1–R6の後、既入力を解決し、三利用場面と入口文例を含む比較・推奨を提示して停止。根本文書実装の承認は追加していない。"
     }
   },
   "eof_sentinel": "ARK27_10_STATE_EOF_v002"
