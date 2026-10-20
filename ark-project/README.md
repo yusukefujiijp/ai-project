@@ -51,6 +51,9 @@ specialist_project_entry_revision:
   authority: "Human assigned clearly categorized specialist Projects to the 100 series, reported Ark101: room-care Project creation and authorized its startup instructions, prompt and GitHub setup"
   scope: "Add section 0.4 and the categorized-project address; preserve Main27:11, Support28:06, all existing handoffs and title policy"
   entry: "ark100-199/ark101_room-care/README.md"
+  initial_thread: "Ark101:01"
+  initial_thread_runtime: "ark100-199/ark101_room-care/ark101-01/README.md"
+  human_correction: "2026-10-20: Ark101:01 is the new Thread; Project name is not the receiving Thread identifier"
   evidence_boundary: "Project creation is Human-reported; GitHub preparation, UI settings, target reconstruction and room-care outcomes remain separate"
 teshuvah_entry_revision:
   date: "2026-10-06"
@@ -206,7 +209,7 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 
 100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。Ark101からArk102を自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
 
-確定名 `Ark101: room-care` はProject名であり、正式Threadの連番・開始日・副題は今回未指定。正式Thread Titleが必要になったら§6に従い、Project名から架空の番号・日付を生成しない。Project作成報告、起動資料の保存、設定欄への貼付、受入れAIの理解、実生活の改善を別の証拠で扱う。
+確定名 `Ark101: room-care` はProject名。後続Human訂正により、新規Threadは[Ark101:01](ark100-199/ark101_room-care/ark101-01/README.md)と確定した。受入れRuntime・起動Prompt・Thread識別子のコピー面は01が所有する。日付・副題付きの正式Thread Titleは未指定であり、必要になったら§6と最新Human指定に従う。Project名をThread識別子へ代用せず、架空の日付・副題を生成しない。Project作成報告、起動資料の保存、設定欄への貼付、受入れAIの理解、実生活の改善を別の証拠で扱う。
 
 ---
 
