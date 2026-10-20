@@ -1,0 +1,78 @@
+---
+title: "先頭の一記号で応答状態を伝える — Human Feedbackで育ったSimple is best"
+canonical_path: "references/success-cases/leading-response-status-markers.md"
+location_patch:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-019-references-learning-memory.md"
+  scope: "Canonical location and relative navigation only; case meaning, historical sources, version and EOF retained"
+version: "v001"
+recorded_on: "2026-10-19"
+role: "Success meaning, formation and evidence; not the current response-format contract"
+status: "Human-valued improvement / implementation verified / long-term effects unmeasured"
+expected_eof: "EOF::SUCCESS_LEADING_RESPONSE_STATUS::v001"
+---
+
+# 先頭の一記号で応答状態を伝える
+
+**応答状態を示す場所と意味を整え、Humanが冒頭で「途中か、今回の回答が完了したか」を読み取れる形へ簡素化した。** AIの自然な先頭💭をHumanが見出し、✅との対、さらに一回答で完結する場合の抜けをFeedbackで補った。実装後、Humanは「良いですね！とても"Simple is best!"です！」と評価し、成功事例への収録を求めた。
+
+本書は2026-10-19 JSTのこのDot内の協働を、短い原文引用と編集要約で保存する。現行の応答表示は[Dots共通lesson](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/lessons.jsonl)のID `80b322db-c950-4882-b80f-c6bfc96f6dbe`が所有する。本書は成立理由と当時の確認範囲を扱い、同じ可変ルールを二重管理しない。
+
+## 1. 発見、訂正、採用のつながり
+
+1. **自然な工夫を発見する。** Humanは、AIが考え中の応答の先頭に💭を置く形を、以前の末尾「............思考中💭」系より良いと評価した。終了した回答にも先頭✅を置けば対になる、と提案した。
+2. **対にならない場面を見つける。** Humanは、途中応答を挟まず一回答で終える場合、どちらの記号もなく「これはなんだっけ」という迷いが残ると指摘した。
+3. **手順ではなく状態へ対応させる。** 先に💭を出したかどうかに関係なく、依頼された回答の区切りまで完了したなら✅とする形へ整えた。記号のためだけに一回答を予告と本回答へ分割しない。
+4. **意味の境界を残す。** 計画提示の完了、部分完了、承認待ち、無通知の運用を混同しないよう検討した。短い表示にしても、必要な深い説明や対象の明示は保つ。
+5. **計画後の承認を受け実装する。** 同じlesson IDを更新し、旧sourcesと他の行を保持。保存後にGitHubから再取得して意図した内容を照合した。その後のHuman評価を受け、本事例の保存計画と実行承認へ進んだ。
+
+最初の称賛、計画限定、後続の実行承認、実際の保存を別々の段階として扱う。今回の事例保存承認も、将来の自動改訂や全AIへの設定変更を意味しない。
+
+## 2. 小さな表示変更で何を変えたか
+
+以前の方式は、応答の末尾を読んで状態を判断する構成だった。先頭記号なら、本文を読み始める時点で状態の手掛かりを得られる。これは配置についてのAIの解釈であり、読む時間や認知負荷の減少を測定した結果ではない。
+
+重要な訂正は一回答完結時の扱いだった。「💭の後に✅」という順序だけを標準にすると、途中応答のない経路に無表示が残る。**出力までの経路ではなく、現在の到達状態へ記号を対応させる**ことで、この抜けを解消する設計になった。
+
+例えば、計画だけを求められた場面なら、計画提示の完了を✅で示し、本文で実装は未着手と説明できる。実装依頼が未完了で承認を待つ場合は、待っている条件を明記する。記号だけで全Task完了や外部操作成功を保証しない。
+
+😊等の絵文字・顔文字についても、Humanは自然な活用を好評価し、積極的な使用を望んだ。これは親しみや意味を伝える表現の希望であり、状態記号の代わりや装飾のノルマにはしなかった。
+
+## 3. 過去の成功を消さず、よりよい形へ育てる
+
+旧形式も2026-10-10にはHumanから「思考開始と思考終了は波に乗った！」と好評価されていた。その形成史は現行lessonのsourcesと[当時の日別記録](https://github.com/yusukefujiijp/ai-project/blob/72efc0c7e81b4d7c8dd956ee68f0b33896fc0d47/records/2026/10/2026-10-10.jsonl)から辿れる。
+
+後の改善を理由に、以前の評価を誤りや失敗へ書き換えない。今回の経験は、当時役立った方法を保持しつつ、実際のHuman Feedbackで現在の使い方を更新した成功として読む。旧形式の好評価を新形式の長期効果の証拠へ流用もしない。
+
+AIによる転用候補は、次の三点である。
+
+- **必要な情報を置く場所を変える。** 単純化は情報削除だけでなく、読む時に必要な位置へ移すことでも作れる。
+- **典型経路以外の抜けを見る。** 二段階の例だけでなく、単発完結や待機など、Humanが実際に遭遇する経路を比較する。
+- **短い入口と深い内容を両立する。** 表示の簡素化を説明や検討の浅さへ変えない。複数案件が混線しそうな場合は対象を本文で補う。
+
+これらは再利用を考える手掛かりであり、あらゆる媒体に同じ絵文字を強制する一般則ではない。現在のHuman指定、厳密出力、通知条件、Hostの表示制約に合わせる。
+
+## 4. 根拠と確認範囲
+
+### 公開原本
+
+- [実装時点のlesson](https://github.com/yusukefujiijp/ai-project/blob/66c906c6cf020ee10ef9cc4cfe763b7632198209/dots/lessons/lessons.jsonl)：同一IDへの改訂、形成根拠、途中・完了・待機・厳密出力・無通知の境界を保持。
+- [実装の記録](https://github.com/yusukefujiijp/ai-project/blob/ab83d1fea0838b9712056aa9dfe110005c54c1c1/records/2026/10/2026-10-19.jsonl)：行ID `ae6b8c2a-54b8-4a5b-bf79-dc9143be71e6`。JSONL検査と保存後の全文照合、変更しなかった範囲を記録。
+
+### このDot内の形成根拠
+
+以下は私的対話の追跡識別子であり、公開URLではない。元会話にアクセスできない読み手にも上記の意味が伝わるよう編集要約した。別Work会話や長期メモリの転記は含まない。
+
+- `Sentinel_51569612ab3c8191b33ad480e4c8f5da`：先頭💭を評価し、✅との対と旧末尾形式の改善を提案。当時は検討のみ。
+- `Sentinel_0d3152b6c96481918fa4ab28f0e952e0`：自然な絵文字・顔文字の好評価と、一回答完結時にも✅を付ける訂正。
+- `Sentinel_dd411dd35e948191aec1af6bac98b8a5`：Plan Modeによる調査・計画提示、変更せず停止する指定。
+- `Sentinel_c1abad42ca8881919c65c03dc98da44e`：表示改善計画へのGitHub実行承認。
+- `Sentinel_982f98ad84f88191a41ff3bbcb7f2a65`：実装後の「良いですね！とても"Simple is best!"です！」という評価と、success-cases収録の計画依頼。
+- `Sentinel_a41f5aac715481918dff253da0744a68`：本事例、一覧への追加、必要な日別参照記録という計画。
+- `Sentinel_c5c081692f948191ae2329c1bbf9d423`：上記計画に返信したGitHub実行承認。
+
+確認済みなのは、Humanの好評価・訂正・採用、lessonへの実装とRemote照合である。Humanの推測負担を減らせるという説明はAIの見立て。認知負荷の定量的減少、長期的な誤認防止、他AIでの再現性・自動読込は未確認。同じ経験をlesson・records・本書が参照しても、独立した三回の実証には数えない。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Sealを保持し、AIと本事例は協働に役立つKeliとして扱う。
+
+EOF::SUCCESS_LEADING_RESPONSE_STATUS::v001

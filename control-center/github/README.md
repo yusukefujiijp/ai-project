@@ -1,6 +1,6 @@
 ---
 title: "GitHub整理 — ai-projectの構造を理解し、改善を継承する"
-version: "0.2.4"
+version: "0.2.5"
 canonical_path: "control-center/github/README.md"
 role: "GitHub organization entry / route to the single plan, case records and originals"
 status: "human-authorized domain entry and owner placement; actual reader and field effects separate"
@@ -8,11 +8,12 @@ repository: "yusukefujiijp/ai-project"
 scope: "ai-project全体。ark-project/内だけに限定せず、他Repositoryへ自動拡張しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-10-06"
-updated: "2026-10-17"
+updated: "2026-10-20"
 lesson_index_patch: "Link STR-015; existing domain ownership and prior cases retained"
 problem_solving_index_patch: "Link STR-016 foundation and STR-017 naming and skill connection; problem-level judgment remains with problem-solving"
+references_index_patch: "STR-018/019: flexible README principle and complementary learning memory; implementation evidence remains with each record"
 change_record: "../changes/STR-014-super-special-prompt-modernization.md"
-expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.4"
+expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.5"
 ---
 
 # GitHub整理
@@ -104,6 +105,10 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 - [STR-017: Problem Solvingの命名とSkill・案件入口の接続](../changes/STR-017-problem-solving-skill-alignment.md)：翻訳と命名選好を区別したCorrection、共通名・条件付き原本案内、既存登録物の切替と確認。
 
+- [STR-018: AIが育てる柔軟なREADME原則](../changes/STR-018-flexible-readme-principle.md)：Humanが個別指定を忘れても入口を育てる指示、編集裁量、意味と権限の保持、目的に沿う例外。
+
+- [STR-019: Referencesへ回復と突破の記憶を集約](../changes/STR-019-references-learning-memory.md)：lessonsと成功事例の対、原本移設、現用参照・登録Skill切替、旧配置退役と歴史の復元。
+
 [ARCHIVE](ARCHIVE.md)はARC案件の提案・承認・実施・確認・復元を所有し、[__archives](../../__archives/README.md)は保管実体を案内する。両者の役割を通常変更記録へ重複させない。通信のCurrentは該当Board Topic、Actorの出来事はActorログ、再利用する学びは適用されるlesson契約など、実対象のOwnerを保つ。
 
 ## 3. 変更と確認を次のAIへ渡す
@@ -116,4 +121,4 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 Root・Teshuvah・Human Foreground One・HumanのCorrection／STOP／Final SealとGuardを保持する。AI・GitHub・この入口はKeliであり、Rootや王座ではない。
 
-EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.4
+EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.5

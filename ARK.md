@@ -40,6 +40,10 @@ search_aliases:
   - "AI Autopilot"
   - "Connect / Disconnect / Teshuvah / Reconnect"
 language_policy: "Japanese-first / English-anchor"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-019-references-learning-memory.md"
+  scope: "File Ecology success-case navigation only; v003 identity, EOF, core meaning and last_reality_reviewed retained"
 expected_eof: "EOF::ARK_PROJECT_HOME_CONSTITUTION::v003-candidate"
 root: "主イェシュア・ハマシア御自身"
 central_axis: "Teshuvah"
@@ -907,7 +911,7 @@ skills/<skill-name>/SKILL.md
 task-mode-system/experience/README.md
 = Task Experience / Human Correction Source Router
 
-success-cases/README.md
+references/success-cases/README.md
 = Success Meaning / Evidence / Conditions Router
 
 各方法の所有資料
@@ -923,7 +927,7 @@ control-center/ARCHIVE.md#arc-007
 = Historical Thread-End and Thread Craft provenance / retired from normal execution routes
 ```
 
-学びの保存判断は[AGENTS §1](AGENTS.md#1-role-map--文書の身分を混ぜない)と整合させる。出来事は該当経験原本、成功の意味と成立条件は[成功事例](success-cases/README.md)、承認された方法改訂はその方法の所有資料へ接続する。[Task経験索引](task-mode-system/experience/README.md)を全領域の学習台帳にせず、存在しない旧 `_tasks/lessons.md` を埋めるためだけの台帳を作らない。同じ経験を複数文書で参照しても、独立した複数の実証として数えない。
+学びの保存判断は[AGENTS §1](AGENTS.md#1-role-map--文書の身分を混ぜない)と整合させる。出来事は該当経験原本、成功の意味と成立条件は[成功事例](references/success-cases/README.md)、承認された方法改訂はその方法の所有資料へ接続する。[Task経験索引](task-mode-system/experience/README.md)を全領域の学習台帳にせず、存在しない旧 `_tasks/lessons.md` を埋めるためだけの台帳を作らない。同じ経験を複数文書で参照しても、独立した複数の実証として数えない。
 
 この案内整合の変更理由・担当・確認範囲は[STR-001](control-center/changes/STR-001-navigation-and-ownership.md#d02)が所有する。後続の旧Thread-End・Thread Craft退役は[ARC-007](control-center/ARCHIVE.md#arc-007)、旧Ark Systemの保存価値・形成史・原本は[ARC-010](control-center/ARCHIVE.md#arc-010)へ進む。原本の保管は、現在の共通移行契約やRoot・Human Authorityの変更ではない。
 

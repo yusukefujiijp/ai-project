@@ -11,6 +11,10 @@ created: "2026-09-22"
 updated: "2026-10-06"
 updated_reason: "STR-013 follow-up: rename the physical living-space seed from home to house, preserving its content and formation history."
 change_record: "changes/STR-013-github-plan-and-archive-relocation.md"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "changes/STR-019-references-learning-memory.md"
+  scope: "Live success-case route only; existing role and content retained"
 expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.5.1"
 ---
 
@@ -50,7 +54,7 @@ Player系三Repositoryの整理を経て、Humanは継承先を`ark-project/cont
 | [GitHub専門入口](github/README.md) | GitHub整理の依頼 → 計画・案件・原本 | 当面の対象はai-project全体。別Repositoryへ自動拡張しない |
 | [houseの入口Seed](house/README.md) | 家の中の整理というHumanの方向 → 今後の具体化 | 2026-10-06にHumanが作成した改行のみのREADME。GitHub整理の子案件にはせず、今回本文は変更しない |
 | [Skills](../skills/README.md)・[Prompts](../prompts/README.md) | 必要な方法 → 方法の所有資料 | 本書に方法本文を複製せず、今回必要なものを選ぶ |
-| [経験索引](../task-mode-system/experience/README.md)・[成功事例](../success-cases/README.md) | 出来事・学び → 根拠と成立条件 | 領域間の再利用は条件を確かめる。原本を集め直さない |
+| [経験索引](../task-mode-system/experience/README.md)・[成功事例](../references/success-cases/README.md) | 出来事・学び → 根拠と成立条件 | 領域間の再利用は条件を確かめる。原本を集め直さない |
 | その他の領域 | 実際の依頼・必要性 → 適切な専門入口 | 必要になった対象から判断する。空の領域や計画を先回りして増やさない |
 
 Repository全体の入口は[Root README](../README.md)、ArkのCurrent Main／Supportは[Ark Domain](../ark-project/README.md)が所有する。本書はそれらを置換せず、各Threadの現在地や生活Taskを二重管理しない。

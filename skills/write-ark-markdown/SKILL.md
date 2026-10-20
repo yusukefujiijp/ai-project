@@ -56,4 +56,4 @@ success-casesでは「一つの独立して役立つ成功」を一件の候補�
 
 追加だけでなく、重複の統合・Correction・不要になった規則の除去も行う。毎回すべての知識を発動させず、実際の依頼に必要なものを選ぶ。文書種類が増えるたびに別Skillやqueryを作らない。この成長方針自体は将来の変更を自動承認しない。
 
-具体的な分担や粒度の根拠を知る必要がある時だけ、[成功事例の入口](https://github.com/yusukefujiijp/ai-project/blob/main/success-cases/README.md)や[移行入口を統合した事例](https://github.com/yusukefujiijp/ai-project/blob/main/success-cases/one-transition-entry.md)へ進む。通常のMarkdown作成に、事例全件や形成史の再読を課さない。
+具体的な分担や粒度の根拠を知る必要がある時だけ、[成功事例の入口](https://github.com/yusukefujiijp/ai-project/blob/main/references/success-cases/README.md)や[移行入口を統合した事例](https://github.com/yusukefujiijp/ai-project/blob/main/references/success-cases/one-transition-entry.md)へ進む。通常のMarkdown作成に、事例全件や形成史の再読を課さない。

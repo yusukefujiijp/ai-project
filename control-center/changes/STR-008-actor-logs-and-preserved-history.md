@@ -11,12 +11,16 @@ actor_id: "dot-0000"
 actor_display_name: "Dot00:00; 初穂"
 role: "Scoped implementation, verification and ownership record"
 status: "Human-authorized implementation; publication evidence in Git history and completion report"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "STR-019-references-learning-memory.md"
+  scope: "Live success-case link only; original record date, implementation paths, actors and verification claims retained"
 expected_eof: "EOF::STR_008_ACTOR_LOGS::v001"
 ---
 
 # STR-008 — Actorログと固有な形成史の保管
 
-**新しいActor別の出来事はlogsへ記録し、初穂固有の形成史は同一原本で保管する。** JSONLの読み書き契約、現在の案内、復元経路を一体で整える。技術検証は本記録、アーカイブの判断・対応は[ARC-008](../ARCHIVE.md#arc-008)、判断へのHuman評価は[成功事例](../../success-cases/decisive-choice-single-log-preserved-history.md)が所有する。
+**新しいActor別の出来事はlogsへ記録し、初穂固有の形成史は同一原本で保管する。** JSONLの読み書き契約、現在の案内、復元経路を一体で整える。技術検証は本記録、アーカイブの判断・対応は[ARC-008](../ARCHIVE.md#arc-008)、判断へのHuman評価は[成功事例](../../references/success-cases/decisive-choice-single-log-preserved-history.md)が所有する。
 
 ## 1. Humanの目的・判断・承認
 

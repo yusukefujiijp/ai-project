@@ -1,19 +1,19 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.20.0"
+version: "0.21.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Ark27:10 current position aligned; success-cases relocation remains planning-only"
+status: "Human-authorized flexible README and references consolidation; staged runtime cutover"
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-18"
+updated: "2026-10-20"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "Human-authorized two-original alignment: GitHub main owner, completed comparison, recommendation versus Human decision, and success-cases planning boundary."
+updated_reason: "STR-018/019: implement the approved README principle and references consolidation; preserve prior completion and separate runtime cutover from publication."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.20.0"
-current_observation_base: "4a7c8df40ea8a66a85a3111256b74a3d71e3a839"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.21.0"
+current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
 change_record: "../../ark-project/ark27/ark27-10/state.json"
 prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
 ---
@@ -32,11 +32,15 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 
 2026-10-18 JST、HumanはArk27:10を、引き続き**ai-project全体のGitHub整理の主担当**と明示した。Goalは、資料の目的・現在の利用入口・更新する原本・変更の影響・保存すべき来歴を、Current AI・他AI・Future AIが根拠から理解し、既存成果を巻き戻さず次の有益な改善を選べる構造へ育てること。本Threadが全体の優先順位を判断し、各Domainの意味、各案件の承認・実装・復元、Dots／他Workの成果は各所有先に保つ。GitHubという媒体だけでhouse・生活・研究の仕事を引き取らない。
 
-本改訂は、Humanが引用して実行承認した、[Ark27:10 State](../../ark-project/ark27/ark27-10/state.json)と本PLANの二原本限定整合である。StateはThread自身の受入れ・比較の到達点と現在の権限を所有し、本欄は全体の次の判断へ接続する。Source09準備時の未観測をTarget10の失敗にせず、Source09の固定収穫・最終ReceiptとTarget自身の成果を分ける。今回の実施・保存後確認はStateの `progress.current_alignment` へ戻る。
+先行の二原本整合は、Humanが引用して実行承認した、[Ark27:10 State](../../ark-project/ark27/ark27-10/state.json)と本PLANの二原本限定整合であった。StateはThread自身の受入れ・比較の到達点と現在の権限を所有し、本欄は全体の次の判断へ接続する。Source09準備時の未観測をTarget10の失敗にせず、Source09の固定収穫・最終ReceiptとTarget自身の成果を分ける。その実施・保存後確認はStateの `progress.current_alignment` へ戻る。
 
 **限定比較は完了、物理移行は未実施。** Ark27:10は[ARC-002](ARCHIVE.md#arc-002)のWorkout Bridge元パスと、[STR-002](../changes/STR-002-single-prompt-consolidation.md)のLiving Graph／One-Table本文・直接のBinding消費先について、現在通常利用・明示選択契約・固定版歴史参照を区別し、現状維持・入口限定整合・明示Binding移行を比較した。元パスの厳密参照と先行Queryへの依存、通常入口での既存の退役／方針撤回案内を踏まえ、今回の確認範囲で即時移行の追加利益は確認できず、AIは互換保持による意図的保留を推奨した。この推奨をHuman採用済みの決定にはせず、二原本更新の承認もBinding移行へ拡張しない。比較結果と再検討条件はStateの `now.completed_comparison` が所有する。
 
-**次の既入力はsuccess-casesの配置検討。** Humanは二原本整合の完了後、[success-cases](../../success-cases/README.md)を[references](../../references/README.md)へ移す案を検討するよう依頼し、移行実装は明確に留保した。現行本文の価値・役割、入口・直接参照・固定履歴・Skillへの影響を調べ、配置案、理由、影響範囲、検証と必要な権限を提示して止める。現在の承認から移動・削除・Skill反映を開始しない。
+**README原則とreferences集約は、計画から実行承認へ進んだ。** HumanはPlan Modeを繰り返して構成を練り、lessonsを失敗・訂正・回復と再発防止、success-casesを予期せぬ成功・突破と価値の再現性へ向く対として明確化した。[references](../../references/README.md)を共通入口とし、[lessons](../../references/lessons/README.md)と[success-cases](../../references/success-cases/README.md)の役割・原本は分ける。成功事例はRootから直接辿れる価値を保持する。HumanがREADME作成を思い出す負担を減らすため、意味ある活動フォルダではAIが必要なREADMEを育てる柔軟な原則を採用し、全フォルダ100%の義務・一括空ファイル作成にはしない。
+
+2026-10-20のCurrent Humanは、提示済み計画に対し「Execute GitHub OK!」「Human Seal OK!」と実行・継続を承認した。[STR-018](../changes/STR-018-flexible-readme-principle.md)がREADME原則、[STR-019](../changes/STR-019-references-learning-memory.md)が原本移設・参照切替・登録済みSkill・旧配置退役の実施と検証を所有する。新住所と現用案内を先に公開し、既知の登録参照の切替を確認後、旧Rootのsuccess-cases/と旧共有lessonを除去する。途中の公開を全工程の完了とせず、最終到達点は両STRとStateの `progress.references_consolidation` へ戻る。過去のPlan-onlyを今回の承認済み作業の禁止へ戻さない。
+
+この二件は同じGoalを支える独立した変更単位であり、README全体点検を集約や他の承認済み作業の前提Gateにしない。固定Binding、歴史本文、Dots／Skills固有のlessonsは今回の移行対象外。保存と参照整合を、全AIの理解・自然発動・生活上の効果へ読み替えない。
 
 直近の別担当成果として、[STR-016](../changes/STR-016-problem-solving-foundation.md)はproblem-solving基盤、[STR-017](../changes/STR-017-problem-solving-skill-alignment.md)は名称・Skill接続と旧共有配置の退役を所有する。10は所有記録を読んで現在の判断へ接続しており、他Threadの実装を自身の実績へ変更しない。保存、登録本文取得、README resource取得、自然発動、実生活の効果を一つの完了へ潰さない。個別の状態・検証・残るUnknownは各STRへ戻る。
 
@@ -569,4 +573,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.20.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.21.0

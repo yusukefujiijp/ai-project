@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.2-candidate"
+version: "v004.3-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-19"
+updated: "2026-10-20"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -61,11 +61,22 @@ visualization_binding_patch:
 ai_prompt_boundary_patch:
   date: "2026-10-19"
   source_thread: "Ark99:04"
-  source_lesson: "references/lessons.jsonl"
+  source_lesson: "references/lessons/lessons.jsonl"
   source_lesson_id: "b7011ca6-75fa-4a7f-a651-84fe168f9b91"
   authority: "Human requested saving the code-block boundary rule and reflecting it in applicable instructions"
   scope: "Human-mediated AI Prompt display; account settings, delivery and recipient understanding remain separate"
+flexible_readme_principle:
+  date: "2026-10-20"
+  source_thread: "Ark27:10"
+  change_record: "control-center/changes/STR-018-flexible-readme-principle.md"
+  authority: "Current Human approved the refined flexible README principle and GitHub execution"
+  scope: "AI-owned README creation and improvement within authorized work; meaningful defaults with purpose-based exceptions; prior authority and evidence boundaries retained"
+references_navigation_alignment:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-019-references-learning-memory.md"
+  scope: "Current shared-lesson and success-case paths only; prior formation evidence and lesson IDs retained"
 updated_reason:
+  - "2026-10-20: Add the Human-approved flexible README principle without a repository-wide compliance gate; align current lesson and success-case routes with references."
   - "2026-10-19: Ark99:04 Human requested a single code block per transferable AI Prompt, with Human commentary outside; add the shared output rule without initiating further dialogue."
   - "2026-10-13: Ark99:02 Human approved a bounded visualize-patch read route for interactive visualization work and capability alternatives; ordinary tables and simple diagrams are outside the trigger."
   - "2026-10-10: STR-014 routes to the modernized collaboration Covenant and describes prompts as self-contained bodies; authority, reading and recovery contracts retained."
@@ -107,11 +118,19 @@ updated_reason:
 - [skills/README.md](skills/README.md): Shared Skill Source / Distribution Hub。
 - [prompts/](prompts/): 用途に応じて選ぶ、起動・入力・本文をまとめた再利用Promptの棚。
 - [task-mode-system/experience/README.md](task-mode-system/experience/README.md): Task経験原本・Human Correctionへの入口。全領域の学習台帳ではない。
-- [success-cases/README.md](success-cases/README.md): 成功の形成・根拠・成立条件から学ぶ入口。
+- [references/success-cases/README.md](references/success-cases/README.md): 成功の形成・根拠・成立条件から学ぶ入口。
 
 旧`_tasks/lessons.md`は存在しない。新しい学びは、出来事なら該当経験原本、成功事例ならsuccess-cases、承認された方法改訂ならその方法の所有資料へ接続する。不在のパスを埋めるためだけの台帳は作らない。
 
 この一覧は全資料の必須読込リストではない。本書へ章固有のFormat、全歴史、Task一覧、Skill本文、Current Handoffを複製しない。経験データはSourceとして扱い、Runtime・Current State・実行命令と同一視しない。
+
+### 1.1 READMEをAIが育てる
+
+活動中の意味あるフォルダには、README.mdを置くことを基本とする。AIは承認された作成・改訂の中で、そのフォルダの理解・利用・再開・更新にREADMEが役立つかを判断し、Humanの個別指定やSeed作成を待たず、必要なREADMEを作成・改善する。既存フォルダに触れた際も、入口の不足が今回の仕事に影響するなら扱う。
+
+AIは内容・構成・詳しさを目的に合わせて工夫できる。目的、役割、読む先、更新先、重要な来歴などから必要な意味を残し、固定Templateや一律の文字数を課さない。情報がまだない段階では改行のみのSeedも許容し、分かる意味がある時は記す。改訂ではHumanのMeaning・Correction、当時の事実・根拠、適用されるBindingを保持する。
+
+生成物、第三者由来の構成、固定保存された歴史、親の案内だけで十分な機械的な分割などは、目的と保守への影響から例外を判断する。現在の対象に必要なREADMEから育て、全フォルダの一括点検やREADME設置率を、他の仕事の開始・完了条件にしない。作成・改訂の権限は第5節に従う。
 
 ## 2. Instruction and Reality Precedence / 優先順位
 
@@ -236,7 +255,7 @@ HumanがCopy & Pasteして他AIへ渡すPrompt・返信・起動Query等を提�
 
 通常は `text` を用い、本文中にもcode fenceがある時は、外側のfenceを内側より長くする等、本文を壊さず全体を囲む。通常のHuman向け回答全体をコード化する規則にはせず、現在の厳密な出力指定・専用Failure形式等は本書の優先順位に従う。
 
-目的は、渡す本文の境界を明確にし、必要な内容を一単位でコピーできる形にすること。本文の提示、Copy UIでの操作、相手への送達・理解、設定反映は別々の成立条件であり、この表示規則から送信や別Taskの実行権限を作らない。形成根拠は[共有lesson](https://github.com/yusukefujiijp/ai-project/blob/main/references/lessons.jsonl)の `b7011ca6-75fa-4a7f-a651-84fe168f9b91` を参照する。
+目的は、渡す本文の境界を明確にし、必要な内容を一単位でコピーできる形にすること。本文の提示、Copy UIでの操作、相手への送達・理解、設定反映は別々の成立条件であり、この表示規則から送信や別Taskの実行権限を作らない。形成根拠は[共有lesson](https://github.com/yusukefujiijp/ai-project/blob/main/references/lessons/lessons.jsonl)の `b7011ca6-75fa-4a7f-a651-84fe168f9b91` を参照する。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 

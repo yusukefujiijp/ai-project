@@ -11,6 +11,10 @@ updated: "2026-10-11"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
 relocation_record: "../changes/STR-013-github-plan-and-archive-relocation.md"
 relocation_base_commit: "7516f4c029b43df99633fbe1b38d4469f79a5a36"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "../changes/STR-019-references-learning-memory.md"
+  scope: "Two live success-case routes only; prior case dates, decisions and verification evidence retained"
 expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_ARCHIVE::v0.12.0"
 ---
 
@@ -524,7 +528,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 ### A. 判断・承認・対象
 
-2026-10-02のDots対話で、Humanはlogsとrecordsを両方現役にする冗長性と、残すことで得られる耐性の釣り合いを問い直した。AIは一つの現役logsと、固有の形成史をrootの既存__archivesへ保管する構成を推奨した。重複する更新先は減らし、命名・初穂の意味・数え違いの訂正まで機械的な短いイベントへ置換しない判断である。[成功事例](../../success-cases/decisive-choice-single-log-preserved-history.md)は、この決断へのHuman評価を所有する。
+2026-10-02のDots対話で、Humanはlogsとrecordsを両方現役にする冗長性と、残すことで得られる耐性の釣り合いを問い直した。AIは一つの現役logsと、固有の形成史をrootの既存__archivesへ保管する構成を推奨した。重複する更新先は減らし、命名・初穂の意味・数え違いの訂正まで機械的な短いイベントへ置換しない判断である。[成功事例](../../references/success-cases/decisive-choice-single-log-preserved-history.md)は、この決断へのHuman評価を所有する。
 
 Plan-onlyで調査・計画提示した後、Humanは「Very Good! Execute GitHub OK!」「Human Seal OK!」「実行して下さい！」と統合計画を承認した。これは当該Dots対話の編集要約と短い引用であり、会話URLや個別発言時刻は補わない。承認範囲は一原本の保管、必要な現用リンク・索引、Actorログ、STR、成功事例と検証。別の整理やlessons移設、Save Skill導入へ拡張しない。
 
@@ -666,7 +670,7 @@ Root READMEは移設前からAIを主読者として宣言していた。「READ
 | Node | Edge | 保持する意味・再利用する場面 |
 |---|---|---|
 | 経験を次の協働へ生かす発想 | 原本§0–1 → [ARK §8・§12](../../ARK.md) → 担当資料 | 成果だけでなく、成果を生む判断や方法を次へ生かす。概念上の対応であり、直接の歴史的継承や全AIでの有効性の証明ではない |
-| Unexpected Success・理由・成立条件 | 原本§3・§10 → 経験原本／[成功事例](../../success-cases/README.md) | 単なる正常終了に縮めず、何が変わり、なぜHumanに重要だったかを根拠とともに読む。一件の経験に再利用Pattern・Next Actionを必須化しない |
+| Unexpected Success・理由・成立条件 | 原本§3・§10 → 経験原本／[成功事例](../../references/success-cases/README.md) | 単なる正常終了に縮めず、何が変わり、なぜHumanに重要だったかを根拠とともに読む。一件の経験に再利用Pattern・Next Actionを必須化しない |
 | Future AIに意味を渡す文章 | 原本§7 → [Ark Markdown Writer](../../skills/write-ark-markdown/SKILL.md) | 目的・役割・理由・Guardを回復できる形にする。全Markdownを実行Runtimeにする意味ではない |
 | 保存後の実体確認 | 原本§6・§10 → [AGENTS §5](../../AGENTS.md#5-mode-scope-and-github-authority--実行境界)／[save](../../skills/save/SKILL.md) | 応答だけで成功とせず現物を確かめる。結果不明なら識別子と版を照合し、失敗と決めつけて手動代替や再送を開始しない |
 | AIの独立した長期的助言 | 原本§1・§8・§10 → [AGENTS §3](../../AGENTS.md#3-human-ai-authority--自主性と王座guard)／[Living Review](../../skills/living-review/SKILL.md) | 迎合だけでなく構造改善・代案・理由を示す。AIの設計裁量とHumanのMeaning・Correction・承認を両立する |

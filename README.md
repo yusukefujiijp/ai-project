@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v014"
+version: "v015"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v013 preserved in Git history; v014 adds the problem-solving entry while preserving lifestyle, ARC-012, shared references and existing ownership"
+version_basis: "v001-v014 preserved in Git history; v015 routes recovery and breakthrough learning through references and links the flexible README principle while retaining direct success discovery and existing ownership"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-17"
+updated: "2026-10-20"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -59,7 +59,14 @@ problem_solving_entry_alignment:
   date: "2026-10-17"
   change_record: "control-center/changes/STR-016-problem-solving-foundation.md"
   scope: "Problem discovery route and displayed entry version only; no whole-repository rereview or domain authority change"
+references_and_readme_alignment:
+  date: "2026-10-20"
+  change_records:
+    - "control-center/changes/STR-018-flexible-readme-principle.md"
+    - "control-center/changes/STR-019-references-learning-memory.md"
+  scope: "References and direct success-case discovery plus routing to the AGENTS-owned README principle; no whole-repository or behavioral revalidation"
 updated_reason:
+  - "2026-10-20: Describe references as the recovery and breakthrough learning entry, retain direct success-case discovery at its new path, and route README creation and improvement to AGENTS §1.1."
   - "2026-10-17: Add problem-solving as a problem-oriented discovery entry; keep case, experience, specialist knowledge and method ownership distinct. Align displayed entry version."
   - "2026-10-14: Add lifestyle/README.md as a scoped discovery entry; chocoZAP records and methods remain with their domain owner."
   - "2026-10-11: ARC-012 archives the entire projects tree including Ark-WTP; route historical consultation to its case instead of a live named-project domain."
@@ -149,10 +156,10 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v014 / Current-request Repository Front Door
+- Repository入口: README v015 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
-- 今回の移行承認: 2026-10-01 JST / 2026-09-30 UTC
-- 移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
+- dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
+- dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
 - 過去のReality Review日・根拠・対象範囲は冒頭Metadataに保持
 
 `updated`は本文の更新日であり、全子Pathや全Runtimeの最新保証ではない。DomainのActive状態、Current Runtime、Thread MissionはNearest README / Handoffと現在の証拠から確認する。今回の文書整合、Remote保存、実際のAI挙動、生活上の効果はそれぞれ別の確認である。
@@ -195,7 +202,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | Path | Role | Read when |
 |---|---|---|
 | [`problem-solving/README.md`](problem-solving/README.md) | 困りごとからGoal・判断・根拠へ戻る入口 | 問題全体の現在判断や次に解く接続を扱う時。既存の経験原本・専門知識・方法へつなぎ、全案件の進捗を重ねて持たない |
-| [`references/README.md`](references/README.md) | 領域を越えて再利用する知見・共有lessonの入口 | 構成・保存先・繰り返す問題など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
+| [`references/README.md`](references/README.md) | 回復と突破の継承基盤／共有lessonsとsuccess-casesへの入口 | 過ちからの回復、再発防止、価値ある成功の条件など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
@@ -206,7 +213,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [旧Projects／Ark-WTPの保管記録](control-center/github/ARCHIVE.md#arc-012) | Historical project archive | 退役したProjects入口・Ark-WTPの凍結Benchmark・前身設計・保存理由を調べる時。通常運用のProject入口ではない |
 | [旧Ark Systemの知恵・形成史](control-center/github/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
 | [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
-| [`success-cases/README.md`](success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
+| [`references/success-cases/README.md`](references/success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
 
 ### 5.2 Prompt and Skill Layer
@@ -275,6 +282,8 @@ Full Railは、Humanが承認した成果へ向けて、実装・確認・修正
 ## 9. README and Repository Maintenance / 更新運用
 
 ### 9.1 README Delta Check
+
+READMEの新設・改善には[AGENTSのREADME原則](AGENTS.md#11-readmeをaiが育てる)を適用する。AIは今回の作成・改訂に必要な入口を判断し、Humanによる個別のREADME指定を前提にしない。
 
 Path・Role・Status・Read Route・Topologyが変わった時、または既存入口が誤案内している時に、影響するREADMEを確認する。Threadが終わったという理由だけで、全入口の点検や更新を必須にしない。
 

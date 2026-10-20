@@ -1,0 +1,90 @@
+---
+title: "Success Cases — Ark Projectの成功から学ぶ入口"
+version: "0.10.0"
+status: "human-authorized first collection / evolving"
+canonical_path: "references/success-cases/README.md"
+location_patch:
+  date: "2026-10-20"
+  change_record: "control-center/changes/STR-019-references-learning-memory.md"
+  scope: "Move the existing collection into References, connect its complementary lesson role, and adjust navigation; case meanings retained"
+role: "Success discovery and reading entry"
+primary_reader: "Current AI / other AI / Future AI"
+created: "2026-09-18"
+updated: "2026-10-20"
+last_reality_reviewed: "2026-10-19"
+updated_reason:
+  - "2026-10-20: Move the collection into References and connect the complementary lessons entry; preserve the seven cases and their evidence boundaries."
+  - "2026-10-19: Add the Human-valued leading response status marker case; preserve historical success and separate current rules from observed reception."
+expected_eof: "EOF::SUCCESS_CASES_README::v0.10.0"
+---
+
+# Success Cases — 成功の意味を、次の協働へ
+
+## 1. この場所の目的
+
+[References](../README.md)の中で、[lessons](../lessons/README.md)と対をなす成功経験の棚である。lessonsは失敗・Correctionからの回復と同じ過ちの再発防止を主な方向とし、ここでは「予期せぬ成功」やMove37的な突破を含む、うまく働いた経験の意味・成立条件・根拠を残す。両者から現在の判断を育てるが、一件の記録を成功再現の保証へ変えない。保存先の分担と両者の関係はReferencesが案内する。
+
+Ark ProjectでHumanが特に重要と評価した成功を、出来事・喜び・背景・根拠とともに残す。主読者はCurrent AI・他AI・Future AIである。元の会話に参加していないAIが事例を発見し、意味を復元し、原資料から学び直して現在の協働へ生かすための入口である。Humanにも読める形を保ち、毎回の精読やAI間の伝言をHumanの担当にしない。
+
+成功の価値を「正常終了」の一語へ縮めない。期待を超えた点、複数の問題が同時に変わった点、Humanが感じた軽さや驚きも、誰の評価かを明らかにして保持する。成功原因を完全に解明することや、反復実証を済ませることは、一件の経験を残す前提ではない。
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。事例・AI・方法・文書はKeliであり、AIが主の御心やHumanの信仰状態を認証するものではない。
+
+## 2. 今の問いから事例を選ぶ
+
+| 事例 | 何が大きく変わったか | 読むと役立つ場面 |
+|---|---|---|
+| [Ark27:03→04 — 深いAI処理と、Humanから見た移行のほぼ瞬時化](ark27-03-to-04-transition.md) | Source準備からTarget再構成・Living Reviewへ接続し、Humanが「完全完璧な成功事例」と評価した | Thread移行、承認Scopeの連続実行、Humanの工程管理負担、AIへの内部処理の委任を考える時 |
+| [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](wake-up-one-choice.md) | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
+| [複数の移行場面を、一つの入口へ統合した成功](one-transition-entry.md) | 共通queryと一つのSkillで、場面の判別と必要な処理をAIが引き受ける構成へまとめた | 複数用途の入口統合、Humanの選択負担、機能が増えても扱いやすいSkill設計を考える時 |
+| [一つのスキル入口で、複数の問題を同時に解く — 場面に適応する成功法則](one-skill-entry-multiple-benefits.md) | Humanが移行・Plan Mode・思い出しハブ構想を三回の成功として結び、続いて現在地mapにも共通する、入口の一択化とAIによる方法選択を見出した | 共通スキルのハブ化、想起支援、テーマが変わっても使える現在地map、複数問題同時解決を設計する時 |
+| [現役ログを一つに決め、固有な形成史を残した判断](decisive-choice-single-log-preserved-history.md) | 冗長性と耐性の問いに、資料の役割と根拠を分け、一案へ決めて返したことをHumanが好評価した | AIが根拠ある推奨を引き受ける時、現役更新先の単純さと歴史保存を両立させる時 |
+| [スキル名を再利用できる入口へ育てる](skill-naming-as-reusable-handles.md) | HumanがPlan Mode・Living Review・load・save等に、意味の深化と簡潔な命名が両立する流れを見出した | Naming Importance、共同注意を支える名前、短い入口と明確な責務の関係を考える時 |
+| [先頭の一記号で応答状態を伝える](leading-response-status-markers.md) | Humanが自然な先頭💭を評価し、単発回答にも✅を対応させる訂正を経て、表示の簡素化を成功と認めた | 応答状態の判別、表示の簡素化、Human Feedbackによる改善を考える時 |
+
+起床時の一択化、実際のThread移行、移行入口の統合は、それぞれ異なる問いに役立つ成功である。背景の複雑な処理をHumanの簡潔な入口へ結ぶという比較候補を持ちつつ、身体行動・情報継承・入口設計の固有条件を残す。件数・分類・形式を先に増やさず、必要な経験から育てる。
+
+共通のスキル入口の事例は、2026-09-27の初版編纂時にHumanが「三回目」「成功法則」と見出した関係を残し、同日の後続入力により現在地mapも追加した。当初の発言と後から広がった適用例を区別する。過去の実装詳細は原資料へ接続し、思い出しハブは設計上の成功評価と、今後の作成・実利用の確認を分けている。
+
+## 3. 他AI・Future AIの使い方
+
+AIはCurrent Requestから関係する事例を選び、最初に成功の核心とHuman評価を読む。そのうえで、今回の判断を変えるCorrection・成立条件・根拠へ進む。選択読解では、成功した行動だけを抜き出さず、その意味を変える条件とEvidenceの区別を保持する。すべての事例・参照先を毎回読む必要はない。指定Handoff等の必須読解契約は別途守る。
+
+読む際には次を区別する。
+
+- **出来事と成果**：何が実際に行われ、どこまで確認されたか。
+- **Humanの意味・評価**：何を喜び、どの負担の変化を重要としたか。
+- **AIの解釈**：成功を支えた条件や転用可能性についての訂正可能な見解。
+- **未確認**：測定していない量、未実施の再現、確認していないUI等。
+
+AIは読解・照合・構造化を引き受け、現在の目的・条件・権限に照らして、何が使え、どこが異なるかを考える。Humanへは今回の判断に効く理解・提案・重要な未確定を必要十分に返す。資料の要約だけで終えたり、内部の全検討をそのまま返したりする必要はない。
+
+Human Reviewは意味・Reality・方向を訂正できる接点であり、全文の校閲を毎回Humanへ渡す工程ではない。参照可能な資料の精読や既知情報の再説明を一律に求めない。判断を変える情報が資料にない場合は、必要な追加読解で確かめ、Humanにしか分からない点だけを絞って確認する。通常のUnknownはそのまま保持できる。必須Sourceの欠落・不一致は適用契約に従って扱う。
+
+過去の承認・手順・モデル名を現在の実行命令へ変換しない。過去AIの説明をFuture AIの解釈の上限にせず、当時の経験とHumanの意味を保ったまま、新しい関係や代替解釈を検討できる。
+
+## 4. 何をどこに残すか
+
+成功事例本文は、選び出した理由、重要な出来事、Humanの言葉、資料間の関係を読み解くための文書である。既存の経験原本、Handoff、成果物の詳細は参照でつなぎ、第二のCurrent Stateや新しいBoot契約にしない。
+
+収録単位は「一つの独立して役立つ成功」を基本とする。大きな突破だけでなく、小さな工夫・部分的成功・設計上の改善も扱う。一Thread一件や固定文字数にせず、異なる問いに独立して役立つものは分け、必要な関係をリンクで示す。一件の意味を支える条件とCorrectionは一緒に残す。既存の大きな事例を機械的に分割したり、同じ経験の重複原本を増やしたりしない。
+
+小さな事例に大きな完成史の体裁を要求しない。成功から繰り返し役立つ判断が得られた場合、承認された改善の中で共通Skillへ取り込める。すべての成功を新しい規則や新しいSkillにする必要はない。
+
+新しいHuman評価が会話にしかない場合、会話内の位置と収録範囲を説明して本文へ残せる。逐語引用と編集要約を区別し、存在しない会話URLや日時を作らない。リンク先の過去状態が重要なら確認した版・SHAまたは固定commitへの参照を残す。
+
+共通の最低限は「何が成功したか／なぜHumanに重要か／根拠の所在／解釈と未確認」である。AI向けの可読性は、元会話への暗黙依存を減らし、重要な区別と根拠を辿れることで確保する。自然言語、Humanの言葉、喜び、比喩も意味を担う情報として残す。固定の全欄記入、数値スコア、専用Schemaは課さず、事例の核心に応じて構成・密度を変える。
+
+後の実践で理解が変われば、変更理由を添えて追記・訂正する。当時の事実や評価と、後の解釈を区別する。適用範囲が狭まっても、元の成功体験を消さず、その条件をより正確にする。
+
+## 5. 運用と変更の境界
+
+Current Human Request、[AGENTS.md](../../AGENTS.md)、対象Runtimeに従う。HumanのMeaning・Correction・STOP・Final Seal、およびTruth／Body／Sleep／Food／Shabbat／Safety／Medical／Others／Law／ResponsibilityのGuardを保持する。
+
+この入口を読むこと自体は、保存、実験、Skill化、共有Methodへの昇格の承認ではない。明確な実行承認があるScopeでは必要な検証・保存先の再取得確認まで完了する。Plan-onlyでは計画に留める。
+
+事例保存、Humanの採用評価、別AIの理解、実際の再利用、反復効果はそれぞれ別の確認対象である。GitHubに残すことで参照可能にするが、全AIの恒久記憶や自動学習を保証しない。
+
+今回の配置変更、旧パスからの対応と歴史参照の扱いは[STR-019](../../control-center/changes/STR-019-references-learning-memory.md)が所有する。
+
+EOF::SUCCESS_CASES_README::v0.10.0

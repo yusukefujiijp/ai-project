@@ -10,6 +10,10 @@ formation_source: "ark-project/ark99/ark99-03/task-records.json"
 change_record: "control-center/changes/STR-016-problem-solving-foundation.md"
 skill_alignment_record: "control-center/changes/STR-017-problem-solving-skill-alignment.md"
 updated_reason: "Skillと共通名を揃え、方法と案件原本の役割を接続"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "../control-center/changes/STR-019-references-learning-memory.md"
+  scope: "Live success-case route only; existing role and content retained"
 expected_eof: "EOF::PROBLEM_SOLVING::v002"
 ---
 
@@ -45,7 +49,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 | 製品・分量・専門知識 | [Caffeine](../lifestyle/caffeine/README.md)等の専門資料。複数案件で同じ定義を作り直さない |
 | 再利用する解決の方法 | [problem-solving](../skills/problem-solving/SKILL.md)等の既存Skill・方法の所有先。caseでの適用経験と共通手順を分ける |
 | 領域を越える知見 | [references](../references/README.md)を入口に、既存所有先との関係を確かめて残す。全caseから自動でlessonを量産しない |
-| 成功の形成・成立条件 | 根拠に見合う[success-cases](../success-cases/README.md)。有望な案や良い言語化を実生活の成功へ昇格させない |
+| 成功の形成・成立条件 | 根拠に見合う[success-cases](../references/success-cases/README.md)。有望な案や良い言語化を実生活の成功へ昇格させない |
 | 構成変更の理由・検証 | [GitHub整理](../control-center/github/README.md)から該当STRへ。生活上の問題全体の所有先にはしない |
 
 共通名は「問題解決 / Problem Solving」。`$problem-solving` Skillは現在の困りごとに合う方法を選び、このフォルダは案件とその担当原本へ案内する。既知の原本へは直接進め、Skillの利用と案件ファイルの作成を互いの必須条件にしない。

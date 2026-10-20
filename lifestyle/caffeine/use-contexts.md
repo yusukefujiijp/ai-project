@@ -11,6 +11,10 @@ bedtime_owner_alignment:
   date: "2026-10-17"
   source: "ark-project/ark99/ark99-03/task-records.json"
   scope: "Distinguish Source02 history from Source03 reports; route current problem synthesis to problem-solving"
+references_navigation_patch:
+  date: "2026-10-20"
+  change_record: "../../control-center/changes/STR-019-references-learning-memory.md"
+  scope: "S2 current success-case route only; fixed snapshot and v004 synthesis retained"
 expected_eof: "EOF::LIFESTYLE_CAFFEINE_USE_CONTEXTS::v004"
 ---
 
@@ -114,7 +118,7 @@ Humanはカフェイン抜きガムを使った回でも寝落ちを防げなか
 | ID | 確認した資料 | この整理で読んだ範囲・版 |
 |---|---|---|
 | S1 | [Ark99:02経験原本・現行](../../ark-project/ark99/ark99-02/task-records.json) / [初版確認snapshot](https://github.com/yusukefujiijp/ai-project/blob/ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c/ark-project/ark99/ark99-02/task-records.json) | revision 1の全文は本Threadで作成・検証・Remote再取得済み。今回もblob一致確認。二つの発見と解釈の境界を利用。今回の長期テーマ指定はrevision 2で追記 |
-| S2 | [起床時一択化の成功事例・現行](../../success-cases/wake-up-one-choice.md) / [確認snapshot](https://github.com/yusukefujiijp/ai-project/blob/ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c/success-cases/wake-up-one-choice.md) | v0.2.0をmetadataから宣言EOFまで全文読解。編纂された事例の根拠・留保を利用し、その参照先全件や元会話の独立監査を行ったとはしない |
+| S2 | [起床時一択化の成功事例・現行](../../references/success-cases/wake-up-one-choice.md) / [確認snapshot](https://github.com/yusukefujiijp/ai-project/blob/ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c/success-cases/wake-up-one-choice.md) | v0.2.0をmetadataから宣言EOFまで全文読解。編纂された事例の根拠・留保を利用し、その参照先全件や元会話の独立監査を行ったとはしない |
 | S3 | [Ark27:01経験原本・現行](../../ark-project/ark27/ark27-01/task-records.json) / [確認snapshot](https://github.com/yusukefujiijp/ai-project/blob/ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c/ark-project/ark27/ark27-01/task-records.json) | revision 2の関連Node全文、Sources `s4 / s24 / s25 / s30 / s31` 全文、関連Edgeを選択読解。原本全体の再読・全Task復元ではない |
 | S4 | [Ark28:04経験原本・現行](../../ark-project/ark28/ark28-04/task-records.json) / [確認snapshot](https://github.com/yusukefujiijp/ai-project/blob/ebe1cffa83a21b9f0e14566e6e7cc670f68b7e2c/ark-project/ark28/ark28-04/task-records.json) | revision 1の `caffeine-origin-s01` 全文と対応Node、出自・収録範囲を確認。過去の移行承認や別のTeshuvahを実行しない |
 

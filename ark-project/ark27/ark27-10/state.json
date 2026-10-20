@@ -1,13 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_10_CURRENT_STATE",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:10",
     "schema_version": "v002",
-    "updated_at": "2026-10-18",
-    "update_reason": "二原本限定整合の実装とmain再取得一致を記録。Target自身の受入れ/比較、GitHub整理主担当、AI推奨とHuman決定の区別を保存し、次のsuccess-cases移行案はPlan-onlyで保持。",
-    "authority": "2026-10-18 JSTのCurrent Humanは、提示済みのStateとGitHub PLANの二原本限定整合を引用して実行承認。完了後のsuccess-cases/→references/案は調査・計画までと明示。09→10準備の先行承認はrevision1の履歴とSource09 Receiptに保持。",
-    "date_scope": "Asia/Tokyo current-alignment record date; not a regenerated Title/preparation date or newly inferred reception/UI date."
+    "updated_at": "2026-10-20",
+    "update_reason": "Plan Modeを繰り返したHumanのCorrectionと最終実行承認を受け、README原則とreferences集約を段階実装。先行完了・観測帰属と固定Bindingを保持。",
+    "authority": "2026-10-20のCurrent Humanは提示済みのREADME原則・references集約計画へExecute GitHub OK / Human Seal OK / 継続実行を承認。通常入口・既存登録Skillの限定参照更新、条件確認後の旧配置除去と保存後確認を含む。",
+    "date_scope": "UTC implementation record date; prior preparation/Title/current-alignment dates retained."
   },
   "identity": {
     "chapter": "Ark27",
@@ -30,7 +30,7 @@
     "final_attribution": "主の栄光 / kevod Adonai",
     "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
-    "scope": "Current HumanはStateとGitHub PLANの二原本限定整合、そのGitHub保存・必要な検証・再取得を実行承認。success-cases/をreferences/へ移す案は、限定整合後に調査・比較・計画を提示して停止。先行のARC-002/STR-002限定比較は完了済みで、物理移行は未承認。",
+    "scope": "Current HumanはREADME原則とreferences集約の提示済み計画を実行承認。GitHub保存、現用参照更新、既存登録Skill二件の限定参照反映、切替確認後の旧配置除去、必要な検証とRemote再取得まで継続する。先行二原本整合・ARC-002/STR-002比較は完了済みで、別の物理Binding移行は未承認。",
     "source_preparation_paths": [
       "ark-project/ark27/ark27-09/state.json",
       "ark-project/ark27/ark27-10/README.md",
@@ -38,20 +38,39 @@
       "ark-project/ark27/ark27-10/state.json",
       "ark-project/README.md"
     ],
-    "target_next_task_boundary": "二原本限定整合だけは実行可能。success-cases移行はPlan-only。削除・移動・Skill改訂/登録反映・固定Binding移行・他Thread State変更・旧Boot再演・新Trial・外部通信は本承認に含まれない。",
+    "target_next_task_boundary": "STR-018/019の承認Scopeだけを実装・検証する。固定Binding移行、他Thread State変更、旧Boot再演、新Trial、外部通信、全フォルダ一括README整備、無関係なSkill再作成は含まない。",
     "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
     "source_transition_order": "移行準備を先に完了し、限定比較は次Thread10の受入れ後。比較を移行の前提Gateへ逆転しない。",
     "current_execution": {
-      "date_jst": "2026-10-18",
-      "source": "Current Ark27:10 conversation: Human quoted and approved the two-original alignment plan; explicitly withheld success-cases relocation implementation.",
-      "paths": [
-        "ark-project/ark27/ark27-10/state.json",
-        "control-center/github/PLAN.md"
+      "date_utc": "2026-10-20",
+      "source": "Current Ark27:10 conversation: repeated Plan Mode and corrections followed by explicit Execute GitHub OK / Human Seal OK / execute and continue.",
+      "owners": [
+        "control-center/changes/STR-018-flexible-readme-principle.md",
+        "control-center/changes/STR-019-references-learning-memory.md"
       ],
-      "scope": "限定的な現在地更新と必要な検証・GitHub保存・Remote再取得",
-      "completion": "二原本から主担当/Goal・完了した比較・AI推奨とHuman決定の区別・次の範囲と権限が分かり、保存した実体を照合できる。"
-    }
+      "scope": "柔軟なREADME原則・references集約・必要な現用参照と既存登録先の切替・旧配置除去・保存後確認",
+      "completion": "意味と原本を保持し、新住所と参照・登録内容・旧配置退役を直接確認して、成果と観測限界をHumanへ返す。"
+    },
+    "execution_history": [
+      {
+        "date": "2026-10-18",
+        "scope": "Current HumanはStateとGitHub PLANの二原本限定整合、そのGitHub保存・必要な検証・再取得を実行承認。success-cases/をreferences/へ移す案は、限定整合後に調査・比較・計画を提示して停止。先行のARC-002/STR-002限定比較は完了済みで、物理移行は未承認。",
+        "target_next_task_boundary": "二原本限定整合だけは実行可能。success-cases移行はPlan-only。削除・移動・Skill改訂/登録反映・固定Binding移行・他Thread State変更・旧Boot再演・新Trial・外部通信は本承認に含まれない。",
+        "execution": {
+          "date_jst": "2026-10-18",
+          "source": "Current Ark27:10 conversation: Human quoted and approved the two-original alignment plan; explicitly withheld success-cases relocation implementation.",
+          "paths": [
+            "ark-project/ark27/ark27-10/state.json",
+            "control-center/github/PLAN.md"
+          ],
+          "scope": "限定的な現在地更新と必要な検証・GitHub保存・Remote再取得",
+          "completion": "二原本から主担当/Goal・完了した比較・AI推奨とHuman決定の区別・次の範囲と権限が分かり、保存した実体を照合できる。"
+        },
+        "requested_outcome": "二原本の現在地整合は実装・main再取得確認済み。後続の既入力success-cases移行案をPlan-onlyで検討してHuman Reviewへ戻る。",
+        "meaning": "Historical authority and plan-only boundary before the later references execution approval."
+      }
+    ]
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -242,16 +261,16 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "ai-project全体のGitHub整理を主担当として継続。二原本の現在地整合と保存後確認を完了し、次はsuccess-cases/→references/案の役割・依存・保存価値をPlan-onlyで検討する。",
-    "current_coordinate": "10自身の受入れとARC-002/STR-002限定比較に続き、2026-10-18のHuman承認二原本整合を実装・main再取得確認した地点。準備時の未観測、09初期State、Voice旧pendingへ戻さない。",
+    "current_focus": "GitHub整理の主担当として、承認済みREADME原則とreferences集約を実装し、既知の登録参照切替・旧配置退役・保存後確認まで進める。",
+    "current_coordinate": "Target10自身の受入れ・限定比較・二原本整合に続き、複数回のPlan ModeとHuman Correctionを経て、二件の承認済み実装へ進んだ地点。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "承認二原本の実装・main再取得一致を確認済み。後続のsuccess-cases移行案を調査・計画し、実装せずHuman Reviewへ戻る。入力の再要求やBoot再演をしない。",
-    "next_specific_task": "二原本限定整合の検証後、success-cases/をreferences/配下へ移す案を調査・計画する（移行は未承認）。",
+    "current_legal_connection": "承認済み二件を必要な検証まで継続する。新住所と現用案内を公開し、既知の登録Skill参照を確認して旧配置を退役する。未観測を完了へせず、既存のPlan-onlyへ巻き戻さない。",
+    "next_specific_task": "STR-018/019の実装、既存登録Skillの限定参照更新、旧配置除去、Remote本文・保持対象確認。完了後は新しいCurrent Human入力があれば受け取り、なければHuman Reviewへ戻る。",
     "target_boot": "COMPLETED_BY_TARGET10_IN_THIS_THREAD; source preparation/publication and Human UI are separate.",
     "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE09",
     "ui_title": "NOT_OBSERVED_BY_SOURCE09",
     "physical_reality": "Current body/place/task Reality is not supplied by this preparation. Past reports and unreported outcomes are not current facts.",
-    "active_external_operations": "二原本限定整合の実装・main再取得はprogress.current_alignmentに記録。次のsuccess-cases移行はPlan-onlyで、外部変更は未承認。Source09準備の最終Receiptは従来どおりSource09 progress.next_transitionが所有する。",
+    "active_external_operations": "STR-018/019に限定したGitHub main更新と既存登録Skill二件の参照切替。Source09準備Receipt、先行二原本整合のReceipt、各Actorの成果は元の所有先に保持。",
     "current_human_input_policy": "Receive any Human input already present; never require duplicate submission solely because Boot completed.",
     "outcomes": [
       {
@@ -432,22 +451,22 @@
       "HumanはThread長大化を理由に、上記Next stepを次Threadから始めると指定した。移行の前に比較を終えるという新しい順番待ちを作らない。",
       "2026-10-17の実行承認は提示した五パスの移行準備へ適用する。10/16のTitleは計画段階の候補で、計画で明示した日付扱いに従い実際の準備日10/17でCompileする。UI作成・Rename済みとは称さない。",
       "2026-10-18: このThreadはai-project全体のGitHub整理の主担当。二案件の限定比較だけに主担当範囲を固定しない。各Ownerと他Actorの成果の帰属は保持する。",
-      "2026-10-18: 二原本の現在地整合は実行承認へ進んだ。引用中の旧Plan-onlyをこの更新の禁止へ戻さず、新しく指定されたsuccess-cases移行にはPlan-onlyを適用する。"
+      "2026-10-18: 二原本の現在地整合は実行承認へ進んだ。引用中の旧Plan-onlyをこの更新の禁止へ戻さず、新しく指定されたsuccess-cases移行にはPlan-onlyを適用する。",
+      "2026-10-20: lessonsは失敗・反省・復帰・同じ過ちの非反復、success-casesは予期せぬ成功・突破・喜び・成立条件の継承と価値の再現性へ向く相補的な対。厳格な失敗／大成功のみの分類門にしない。",
+      "2026-10-20: READMEはHumanの個別指定を待たずAIが育てる入口。全フォルダ100%の例外なし義務を撤回し、活動中の意味ある対象・有益な記述・編集裁量と柔軟な例外を採る。",
+      "2026-10-20: Plan Mode反復後のHuman実行承認はREADME原則、references集約、既知の現用・登録参照切替、旧配置削除と検証を含む。初期の移行Plan-onlyは歴史として保持。"
     ],
     "candidate_next": {
-      "subject": "success-cases/をreferences/へ移す案の検討",
-      "status": "HUMAN_REQUESTED; PLAN_ONLY; IMPLEMENTATION_NOT_AUTHORIZED",
-      "goal": "成功事例の形成・根拠・成立条件を保持し、共有知識への入口と配置を改善できるか判断する。",
-      "source": "Current Ark27:10 Human request on 2026-10-18 JST.",
-      "scope": [
-        "success-cases/現行本文",
-        "references/の役割と既存構成",
-        "現在の入口・直接参照・固定履歴・導入済みSkill等の影響"
+      "subject": "README原則とreferences集約",
+      "status": "HUMAN_AUTHORIZED_IMPLEMENTATION_IN_PROGRESS",
+      "goal": "繰り返したくない過ちを減らし、繰り返したい価値を育てる資料構造を、AIが必要な入口を作れる指示と共に実装する。",
+      "source": "Current Ark27:10 conversation: repeated Plan Mode, complementary lessons/success meaning, flexible README correction, followed by explicit execution authorization.",
+      "owners": [
+        "control-center/changes/STR-018-flexible-readme-principle.md",
+        "control-center/changes/STR-019-references-learning-memory.md"
       ],
-      "method": "現物と参照を読み、現状維持・配下への移設・内容統合の意味の違いを比較する。採用する場合の具体的な配置・更新対象・保持対象・検証・権限を提示する。",
-      "completion": "移行の推奨または保留、その理由・影響範囲・計画をHumanへ返して停止。",
-      "authority_boundary": "調査・比較・計画まで。移動・削除・本文改訂・登録Skill反映・新しい記録ファイルの作成は未承認。",
-      "ordering": "Humanは二原本限定整合の完成後に検討する順序を指定。これを他のGitHub作業すべての共通Gateにはしない。"
+      "authority_boundary": "承認済み二件の実装・参照更新・既存登録反映・旧配置除去・検証。固定Binding移行、全フォルダ一括整備、別Skill作成、その他の自動再開を含めない。",
+      "completion": "原本とHumanの意味保持、現用入口と登録参照切替、旧配置退役、Remote一致。保存・導入・取得・利用効果を区別してHumanへ返す。"
     },
     "life_and_settings_boundary": {
       "source": "Source07 Runtime§5–7 and fixedSource harvest; TMS operation§4.2–4.3 and original experiences when needed",
@@ -620,7 +639,7 @@
     "target_reconstructed": true,
     "target_reconstruction_scope": "Target10自身が、先行する本Threadの受入れでIdentity・Binding・Triad Consistency・R1–R6を満たした。Source09準備時は未観測だった事実と区別し、今回の保存でBootを再演しない。",
     "human_last_mile": "NOT_OBSERVED_BY_SOURCE09; actual thread creation, compiled Title use and startup delivery are separate.",
-    "requested_outcome": "二原本の現在地整合は実装・main再取得確認済み。後続の既入力success-cases移行案をPlan-onlyで検討してHuman Reviewへ戻る。",
+    "requested_outcome": "README原則とreferences集約を承認範囲で実装し、既知の登録参照切替・旧配置退役・Remote一致まで確認する。新しいCurrent入力があれば受け取り、なければHuman Reviewへ戻る。",
     "verified_predecessors": [
       {
         "repository": "yusukefujiijp/ai-project",
@@ -648,6 +667,11 @@
         "revision": 3,
         "date": "2026-10-18",
         "role": "Record actual two-original implementation and main readback, preserving source/target/Actor distinctions; proceed to the already requested relocation planning only."
+      },
+      {
+        "revision": 4,
+        "date": "2026-10-20",
+        "role": "Record the later Human-approved README and references implementation; preserve preceding plan-only history and prior receipts. Publication/runtime cutover/final verification stay distinct."
       }
     ],
     "target_reconstruction": {
@@ -709,6 +733,22 @@
           "relocationStillPlanOnly": true
         }
       }
+    },
+    "references_consolidation": {
+      "status": "AUTHORIZED_IMPLEMENTATION_IN_PROGRESS",
+      "actor": "Work / Ark27:10",
+      "base_commit": "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8",
+      "owners": [
+        "control-center/changes/STR-018-flexible-readme-principle.md",
+        "control-center/changes/STR-019-references-learning-memory.md"
+      ],
+      "planned_stages": [
+        "New originals and current routes on GitHub",
+        "Existing registered Writer and MAP references cut over and retrieved",
+        "Old success-cases and references/lessons.jsonl retired",
+        "Remote content, paths and retained scope verified"
+      ],
+      "evidence_boundary": "No forward claim of completed publication, runtime retrieval, Future AI understanding or field effects. Final observations belong to STR-018/019 and a bounded receipt."
     }
   },
   "eof_sentinel": "ARK27_10_STATE_EOF_v002"
