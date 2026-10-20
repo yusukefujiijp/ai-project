@@ -83,6 +83,16 @@ Source Prepared、Remote Verified、Target Reconstructed、UI設定・名称・�
 
 **初回準備の記録（2026-10-20、Ark28:06）：** Humanは00・利用用・予備Threadの計画を求め、提示後にGitHub実行を含め承認した。Project名・三つのTitle・起動Query、Project指示、本00入口、既存領域・Domain案内の限定更新を準備する。Skillは再制作しない。Remote照合・UI設定・各Target受入れ・Human到達の観測結果は、実際に得た後に本節へ追記する。この段階の文面だけで01／02を準備済みと宣言しない。
 
+### 5.1 初回の保存・UI設定・停止点（2026-10-20）
+
+- **Source Prepared / Remote Verified：完了。** [初回起動準備 commit `d60b8e1`](https://github.com/yusukefujiijp/ai-project/commit/d60b8e1f4a952ce880fa640ba158404baf7305c0)で、領域README、INSTRUCTIONS、本00入口、Ark Domainの限定追記、Skills Hubの取得確認を保存した。公開前の固定commitと公開後mainから五ファイルを全文再取得し、作成本文との一致を確認した。三組のTitle／Query一致、YAML・宣言EOF・新設リンクを確認し、並行したArk101の後続訂正も保持した。既完了のSkill八応答は再演していない。
+- **Project UI：直接確認済み。** 同名Projectがないことを一覧で確認し、[Ark100: B-Zone Rescue](https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/project)を作成した。INSTRUCTIONSの全文4,440文字を設定し、保存後に設定欄を開き直して入力本文との完全一致を確認した。これはAIによるUI観測であり、Human本人のiPhone到達の報告ではない。共有・公開設定やメモリ設定は変更していない。
+- **00の送信：自動承認審査により停止。** 公開済み§6.1のQueryをProjectの新しいWork入力欄へ入れた後、「送信」の操作が拒否された。理由は、永続するProjectチャットを作り本文処理を開始する送信について、審査側が現在の明示的承認を確認できないというもの。別ボタン・別手段で迂回せず、送信後のチャットがないこと、Queryが入力欄に残っていることを確認した。Humanによる計画後の実行承認というSourceはH25に保持し、それとツール側でこの操作が許可されたかを分ける。
+- **Target Reconstructed：未成立。** 00・01・02の受入れ応答はまだない。01・02への送信も行っていない。この時点のUIは「チャットはまだありません」と表示した。Sourceの完成やProject作成を「三Thread起動済み」「未使用予備が確保済み」へ昇格させない。
+- **Human到達・実利用・実生活効果：未確認。** Projectへの入口URLは上記の実表示から取得した。Humanの端末で開けること、辞書登録、支援の想起・利用・行動・回復は未観測であり、今回の準備から補完しない。
+
+再開に必要なのは、**このProject内で、保存済みの三つの起動Queryを00・01・02へ送信し、各受入れ結果を確認する操作**についての明示的承認である。これは当該ツール審査で止まった操作の回復点であり、一般のArk起動へ追加する恒久Gateではない。後続承認で再開する時は、実在・未送信／送信済み・応答状態を確認し、すでに済んだProject作成・設定・GitHub準備を重複させない。Source本文の再制作、Skill再登録、実地Rescueの模擬入力は不要。恒久的な予備補充・身体Trial・辞書設定の権限をこの回復から作らない。
+
 ## 6. 確定Titleと起動Query
 
 以下は2026-10-20にHumanが承認した初回計画の確定値。将来の別番号・日付はその準備時の依頼から確定する。本書を読むだけで下のQueryを他Threadへ送信しない。
