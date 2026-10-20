@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 ref: "main"
 base_commit: "369b5f1f287d212848def6121a2ad374aa3e2d77"
 actor: "Codex / YusukeJPとの本対話"
-status: "Implementation prepared; remote verification recorded below after publication"
+status: "GitHub migration and two registered-skill navigation saves verified; conversation retrieval differs by route"
 expected_eof: "EOF::STR_021_SKILL_README_QUERY::v001"
 ---
 
@@ -57,6 +57,24 @@ GitHubの保存後はmainのcommitと変更ファイルの実体を再取得し�
 
 ## 公開後の確認
 
-公開後の実測結果をここへ追記する。
+2026-10-20、Codexが[実装commit 91d859d](https://github.com/yusukefujiijp/ai-project/commit/91d859d466b6fc5071ede9ddb39035e58ccf5fff)をmainへ公開した。公開前の基点一致を確認し、期待する旧headを指定してRefを更新した。GitHub上のtree `8c6fa6462f34eab87ec919da1f5158fa7a5702ee` は検証した候補treeと完全一致した。
+
+変更後の43本文をmainから再取得し、候補の全文と一致することを確認した。削除対象2件を含むQuery専用フォルダはtree上に残っていない。対象外609ファイルは基点とblob・modeが同じであり、並行更新や別の成果を巻き戻していない。保存後のmain先端も実装commitと一致した。
+
+旧Hubの14 QueryとMAPの2 Query、現行32件のREADME、内部リンク・anchor、コードフェンス、SKILLの3箇所の案内差分、Ark28:06の17 SourceとREADME/Handoff/StateのBindingを確認した。独立した文書レビューでも公開を妨げる不整合は検出されなかった。これらは移行整合と保存の確認であり、全Skillの実行試験・全Runtimeでの取得・利用効果の証明ではない。
+
+### 登録済み二Skillの案内整合
+
+GitHub公開後、`resolve-github-runtime` と `markdown-to-html` の既存登録物でも、共有SKILLと同じREADME案内の一行へ更新した。元の作業木には他の未commit変更と旧版が残っていたため、最新Remoteの本文と旧共有版の一致を確認して隔離作業先を使用した。README本体の複製や、新しい登録物の作成は行っていない。
+
+二件を同時にpushする試行はHTTP 422となり、Remote未反映を確認した。同じ正規経路で一件ずつ保存し、runtimeは登録commit `6b12139a5316a037815ae2120737eca5a699e724`、Markdownは `ab410f4dc59e22a68445d45d68ad35c19877073a` で成功した。422の原因は未特定であり、保存成功だけで原因を解決済みとは扱わない。
+
+保存後Remoteの2本文は共有版と全バイト一致した。runtimeは8,956 bytes／blob `0bf35e2e30bb26777002869a4bb67d7eecccda72`、Markdownは10,644 bytes／blob `a7d4e62e896ec39744876c651803a9ae8a0e2d24`。本対話のCloud Skill読取経路でもruntime本文を末尾まで取得し、新しいREADME URLを含む共有本文との完全一致を確認した。
+
+その後、環境の公開Skill一覧が更新され、Cloud Skill経路は利用できなくなった。現在宣言されたexecutor経路でMarkdown Skillを読むと8,585文字の旧本文が返り、新しいREADME案内は含まれなかった。登録先の新本文保存と、この会話の読取結果を分ける。差が生じた原因・会話側の更新時点は未確定であり、保存失敗と断定したり、旧作業木を根拠に登録本文を戻したり、同名Skillを再作成したりしない。UIの自然な選択や各処理の実行結果も別の確認である。
+
+担当AIによる上記二commitでは、対象外109エントリのblob・modeと全pathを保持した。保存後の登録Remoteには別の後続commit `58c161c453c6ecf41deb1b4be62252ec390e8a1c`（表示メッセージ `Materialized from stored content`）があり、Markdownの `assets/icon.svg` だけが変更された。二SKILL本文と他108エントリは同一。このアイコン差分は本作業の二commitに含まれず、主体・原因は未確定のため巻き戻していない。GitHub共有資源の変更として報告せず、登録先の後続観測として区別する。
+
+この追記自体の保存後照合は本対話の完了報告で扱い、自己SHAを更新し続ける記録の連鎖を作らない。
 
 EOF::STR_021_SKILL_README_QUERY::v001
