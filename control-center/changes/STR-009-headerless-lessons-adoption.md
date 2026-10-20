@@ -19,7 +19,7 @@ Dotsの共有する現行lessonを、管理行なしJSONLへ採用・移設す�
 
 ## 1. 形成順序とHumanの採用判断
 
-最初の[STR-007](STR-007-dots-lessons-foundation.md)は単一JSON、schema 1、next_idを用いた。次の[凍結比較](../../dots/lessons/experiments/json-vs-jsonl/README.md)では、元JSONとheader付きJSONLの全metadataを含む往復を確認し、当初はJSON維持を推奨した。その後Humanが「増えても1行1lessonで統一する」「読者はAI」「運用しながら学ぶ」を重視したため、問いを全documentの可逆変換から、全行をlessonへ揃えた共有蓄積へ変えた。
+最初の[STR-007](STR-007-dots-lessons-foundation.md)は単一JSON、schema 1、next_idを用いた。次の[凍結比較](../../agents/dots/lessons/experiments/json-vs-jsonl/README.md)では、元JSONとheader付きJSONLの全metadataを含む往復を確認し、当初はJSON維持を推奨した。その後Humanが「増えても1行1lessonで統一する」「読者はAI」「運用しながら学ぶ」を重視したため、問いを全documentの可逆変換から、全行をlessonへ揃えた共有蓄積へ変えた。
 
 後続のheaderless試作では、既存二件の意味・未知field・LF境界・UUIDと再試行の模擬試験を確認した。試作完了と本番未採用を明確にした後、2026-10-02 16:43 UTC（2026-10-03 01:43 JST）にYusukeJPが「管理行なしでOK！」と述べ、GitHub実行とこの採用・移設の継続を承認した。これは採用理由の会話に基づく記録であり、他の未知の作業への無制限承認ではない。
 
@@ -50,11 +50,11 @@ YusukeJPが採用と実行を承認し、dot-0000が設計・執筆・統合・�
 
 公開候補は3,430 bytes、LF物理行2、各行が直接lesson objectでschema 2。Git blob計算値は `e1df104c2e306990f30ffced03ea3775425208be` で、後続試験の凍結headerless候補と一致する。追加したschema_versionだけを除けば、旧lessons配列の全値・配列順・ID・created_at・updated_at・本文・sources・caveatは一致する。移設先での既存locatorはすべて固定commitの絶対URLであり、意味変更も相対パス補正も不要だった。
 
-旧global schemaとcounterを明示的に退役し、[凍結元JSON](../../dots/lessons/experiments/json-vs-jsonl/lessons.json)に保持する。これはlesson-levelの意味一致であり、元documentの全metadataを行群だけから復元できるという主張ではない。新規lessonはUUID v4、既存legacy IDは安定して保持する。今回UUID例示や作業完了のためだけの新lessonを本番へ入れない。
+旧global schemaとcounterを明示的に退役し、[凍結元JSON](../../agents/dots/lessons/experiments/json-vs-jsonl/lessons.json)に保持する。これはlesson-levelの意味一致であり、元documentの全metadataを行群だけから復元できるという主張ではない。新規lessonはUUID v4、既存legacy IDは安定して保持する。今回UUID例示や作業完了のためだけの新lessonを本番へ入れない。
 
 ## 4. 読取・保守の判断をどこへ渡すか
 
-現行契約の唯一の所有先は[専用README](../../dots/lessons/README.md)。新しいDotsが契約と現在の小さい全件を読み、同じ文脈では確認済み内容を再利用する。文脈喪失・領域変更・失敗／Correction・更新を契機に必要な箇所へ戻り、書く前には最新版を読む。毎ターンpollingや全件再読を追加しない。
+現行契約の唯一の所有先は[専用README](../../agents/dots/lessons/README.md)。新しいDotsが契約と現在の小さい全件を読み、同じ文脈では確認済み内容を再利用する。文脈喪失・領域変更・失敗／Correction・更新を契機に必要な箇所へ戻り、書く前には最新版を読む。毎ターンpollingや全件再読を追加しない。
 
 現行lessonは同IDの行を更新し、Actor logのように訂正履歴を重複行で積まない。未知field、Source、日時、Humanの意味を守り、壊れた入力を空に戻さない。結果不明の新規操作はUUIDを保持してRemoteのID・内容・revision・履歴を照合する。IDの不在だけで削除済みlessonを復活させず、操作同一性や履歴が足りなければ該当retryを止める。契約整備と、全Runtimeでの永続writer／再起動回復実装は別である。
 

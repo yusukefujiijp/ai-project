@@ -28,7 +28,7 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 
 ## 2. 誰が、何を変更したか
 
-Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; 初穂](../../dots/actors/dot-0000/README.md)が設計・執筆・統合・検証を担当する。GitHub上のauthor／committerは保存経路のIdentityであり、経験の観測者や本文の執筆担当と自動的に同一視しない。
+Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; 初穂](../../agents/dots/actors/dot-0000/README.md)が設計・執筆・統合・検証を担当する。GitHub上のauthor／committerは保存経路のIdentityであり、経験の観測者や本文の執筆担当と自動的に同一視しない。
 
 変更対象は次の四パス。
 
@@ -66,6 +66,6 @@ Human YusukeJPが目的・意味と実行を承認し、[dot-0000 / Dot00:00; �
 
 ## 6. 後続の採用・移設（2026-10-02 UTC／2026-10-03 JST）
 
-後続Human承認により、現役の正本は管理行なしの[dots/lessons/lessons.jsonl](../../dots/lessons/lessons.jsonl)へ、現行仕様の所有先は[専用README](../../dots/lessons/README.md)へ移った。[STR-009](STR-009-headerless-lessons-adoption.md)が変更理由と検証を所有する。本記録の四パス・schema 1・counterの説明は初版のHistoricalな事実として残す。旧JSONとv003契約へのリンクは当時の実装commitへ固定した。
+後続Human承認により、現役の正本は管理行なしの[dots/lessons/lessons.jsonl](../../agents/dots/lessons/lessons.jsonl)へ、現行仕様の所有先は[専用README](../../agents/dots/lessons/README.md)へ移った。[STR-009](STR-009-headerless-lessons-adoption.md)が変更理由と検証を所有する。本記録の四パス・schema 1・counterの説明は初版のHistoricalな事実として残す。旧JSONとv003契約へのリンクは当時の実装commitへ固定した。
 
 EOF::STR_007_DOTS_LESSONS_FOUNDATION::v001

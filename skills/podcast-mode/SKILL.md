@@ -53,4 +53,4 @@ Human が今聴きたいThemeを見つける支援と、応答の音声ボタン
 
 感想や訂正を受けたら、その場の応答に反映する。毎回の記録、公開、スキル本文の改訂を自動で行わない。保存依頼または有効な継続委任がある範囲で、対象、公開範囲、残す内容を確認し、具体的な経験と再利用できる学びを分けて適切な記録へつなぐ。
 
-lesson の担当原本と読取・更新先は、[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#skills-lessons)へ。形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。
+lesson の担当原本と読取・更新先は、[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md#skills-lessons)へ。形式・更新・検証には、[共有契約の第3〜5節](https://github.com/yusukefujiijp/ai-project/blob/main/agents/dots/lessons/README.md#3-全行がlesson--row-schema-2)を再利用する。契約の参照を、Dots 固有の読込義務・所有範囲・書込権限の全体移植と解釈しない。

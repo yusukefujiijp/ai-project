@@ -153,8 +153,8 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 - [STR-002](changes/STR-002-single-prompt-consolidation.md)：通常六組統合、旧Planの目的変更、Graph／One-Tableの残点。
 - [STR-003](changes/STR-003-persistent-collaboration-foundation.md)：基盤の明示版移行と12対象の公開・検証。現在のTarget理解・UI・実効果は別。
 - [STR-006](changes/STR-006-board-communication-foundation.md)・[Board Topic](../board/topics/20261001-dots-work-reconnection/README.md)：通信の現在Ownerと、別Workによる後続修正。
-- [STR-007](changes/STR-007-dots-lessons-foundation.md)・[STR-008](changes/STR-008-actor-logs-and-preserved-history.md)・[Dots入口](../dots/README.md)：学び・出来事・形成史の所有先。
-- [JSON／JSONL実験](../dots/lessons/experiments/json-vs-jsonl/README.md)：候補と限定検証の記録。現在の正本変更とは別。
+- [STR-007](changes/STR-007-dots-lessons-foundation.md)・[STR-008](changes/STR-008-actor-logs-and-preserved-history.md)・[Dots入口](../agents/dots/README.md)：学び・出来事・形成史の所有先。
+- [JSON／JSONL実験](../agents/dots/lessons/experiments/json-vs-jsonl/README.md)：候補と限定検証の記録。現在の正本変更とは別。
 - [AGENTS](../AGENTS.md)・[prompts入口](../prompts/README.md)：次に照合する現役の指示。
 
 六Noteは今回のTargetが全文確認した。指針のためにはprompts入口全文、STR-003全文、STR-002の残点と検証節、関係するCurrent原本・metadataを確認し、変更のない既読Ownerを再利用した。読取専用の独立担当も次候補・状態区別を調べ、主担当が原文と照合して統合した。全Repositoryの全文監査や、全候補の実装・実利用試験を行ったという意味ではない。

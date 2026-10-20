@@ -89,8 +89,8 @@ recordsは全AIの活動を日付から探す入口です。詳細な成果と�
 
 - 成果物の本文はその原本へ。recordsには活動の要点と参照を残します
 - [Board](../board/README.md)の通信Currentは各Topicが所有します。ここに担当・未返信・進行中などの第二のCurrent表を作りません
-- [Dotsログ](../dots/logs/README.md)はActor別の経緯を扱います。同じ本文を両方へ毎回複製せず、既存Actor行がある場合は日別記録を短い参照付き要点にします。Actor固有の経緯が不要な新規活動は、recordsだけで足ります。今回、既存Actorログを移設・削除しません
-- [lessons](../dots/lessons/README.md)は再利用する学び、[success-cases](../references/success-cases/README.md)は成功の意味と成立条件、[control-center](../control-center/README.md)は構造変更の理由と検証を所有します
+- [Dotsログ](../agents/dots/logs/README.md)はActor別の経緯を扱います。同じ本文を両方へ毎回複製せず、既存Actor行がある場合は日別記録を短い参照付き要点にします。Actor固有の経緯が不要な新規活動は、recordsだけで足ります。今回、既存Actorログを移設・削除しません
+- [lessons](../agents/dots/lessons/README.md)は再利用する学び、[success-cases](../references/success-cases/README.md)は成功の意味と成立条件、[control-center](../control-center/README.md)は構造変更の理由と検証を所有します
 - Humanの生活Task経験の詳細は[Task Records](../formats/task-records/README.md)へ。AI活用の記録を口実に、全生活・別会話・長期メモリ・秘密情報を取り込みません。公開と保存の権限は[AGENTS](../AGENTS.md)に従います
 
 旧dots/recordsの形成史は[ARC-008](../control-center/ARCHIVE.md#arc-008)に保管されています。今回のrecordsは全AI横断の活動記録であり、旧領域の復活ではありません。

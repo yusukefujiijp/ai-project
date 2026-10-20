@@ -1,13 +1,21 @@
 {
   "meta": {
     "state_id": "ARK27_11_CURRENT_STATE",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:11",
     "schema_version": "v002",
     "updated_at": "2026-10-20",
     "date_scope": "Asia/Tokyo Source preparation date; initial Target state, not receiver observation.",
     "update_reason": "Humanが指定した同章継続とMain ThemeをSource10収穫から準備。",
-    "authority": "元のMain10 Humanの移行準備依頼。Titleは初穂の帰属付きHuman応答伝達を照合。Targetの根本再設計実装は未承認。"
+    "authority": "元のMain10 Humanの移行準備依頼。Titleは初穂の帰属付きHuman応答伝達を照合。Targetの根本再設計実装は未承認。",
+    "navigation_revision": {
+      "date": "2026-10-20",
+      "actor": "ChatGPT Work / Dots relocation execution",
+      "authority": "Current Human approval of B in the Dots relocation Work conversation; not authority for Main11 root redesign.",
+      "scope": "Five current bindings.dots paths only. Initial preparation metadata, mission, fixed evidence and reception state retained.",
+      "change_record": "control-center/changes/STR-022-dots-agent-location.md",
+      "base_commit": "2dc05496b555638a47a3de2f058c7f632aca773f"
+    }
   },
   "identity": {
     "chapter": "Ark27",
@@ -185,11 +193,11 @@
       "policy": "No new Support per Main thread, unseen conversation import, compulsory simultaneous task or hidden synchronization."
     },
     "dots": {
-      "entry": "dots/README.md",
-      "actor": "dots/actors/dot-0000/README.md",
-      "lesson_contract": "dots/lessons/README.md",
-      "current_lessons": "dots/lessons/lessons.jsonl",
-      "actor_log_contract": "dots/logs/README.md",
+      "entry": "agents/dots/README.md",
+      "actor": "agents/dots/actors/dot-0000/README.md",
+      "lesson_contract": "agents/dots/lessons/README.md",
+      "current_lessons": "agents/dots/lessons/lessons.jsonl",
+      "actor_log_contract": "agents/dots/logs/README.md",
       "board_contract": "board/README.md",
       "reconnection_topic": "board/topics/20261001-dots-work-reconnection/README.md#current",
       "four_skill_topic": "board/topics/20261003-load-next-step-save-skills/README.md#1-current--このtopicの通信現在地",
@@ -429,6 +437,12 @@
         "date": "2026-10-20",
         "actor": "Source10",
         "scope": "Initial11 preparation, not Target acceptance."
+      },
+      {
+        "revision": 2,
+        "date": "2026-10-20",
+        "actor": "ChatGPT Work / Dots relocation execution",
+        "scope": "Five current Dots routes and navigation revision metadata only; no Target reception or mission change."
       }
     ]
   },

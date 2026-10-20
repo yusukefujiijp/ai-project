@@ -49,7 +49,7 @@ Humanの「AI-New Era: From Probability to Certainty」は、貴重な成功の�
 
 - 領域やActorを越えて再利用できる判断は、この[全体用lessons](lessons/README.md)へ。
 - Humanが価値を認めた独立して役立つ成功は、[success-cases](success-cases/README.md)へ。選び出した成功の意味を残し、経験原本や成果物の詳細は参照でつなぐ。
-- Dots固有の協働・運用に適用する学びは、[Dots lessons](../dots/lessons/README.md)へ。
+- Dots固有の協働・運用に適用する学びは、[Dots lessons](../agents/dots/lessons/README.md)へ。
 - Radio・VoiceなどSkills固有の条件が中心なら、[Skills Hub](../skills/README.md#skills-lessons)が案内する[集約lessons](../skills/_references/lessons.jsonl)へ。保存場所の集約を、各lessonの全Skillへの一般化と混同しない。その他の専門領域は、その入口が指定する原本へ。
 - 出来事の詳細・成果物・通信・日時記録は、それぞれの経験原本・成果原本・Board・[records](../records/README.md)へ。lessonは必要な根拠へ接続し、全文を集め直さない。
 

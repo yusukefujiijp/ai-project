@@ -540,7 +540,7 @@ Plan-onlyで調査・計画提示した後、Humanは「Very Good! Execute GitHu
 
 調査基点は[main snapshot 1eab746](https://github.com/yusukefujiijp/ai-project/tree/1eab74651f254ec32099c107e0ad90fef9a5de16)。[移動前の元パス全文](https://github.com/yusukefujiijp/ai-project/blob/1eab74651f254ec32099c107e0ad90fef9a5de16/dots/records/2026/20261001-first-fruit.md)から当時の相対リンクを辿れる。原文・改行・旧canonical_path・Exact EOF・相対リンクを含めて同じblobを新住所へ参照する。本文内に保管注記を挿入せず、元パスには互換原本・Stubを残さない。
 
-保管した本文中の `../../actors/dot-0000/README.md`、`../../README.md`、`../../../control-center/...` は元配置基準であり、**保管先からはそのまま解決しない**。これらを現在も有効なリンクとは報告しない。元の関係を調べる時は上記固定snapshotの元パスを使う。現在のActor・Dots・STRへ進む時は[dots入口](../../dots/README.md)と本案件を使う。
+保管した本文中の `../../actors/dot-0000/README.md`、`../../README.md`、`../../../control-center/...` は元配置基準であり、**保管先からはそのまま解決しない**。これらを現在も有効なリンクとは報告しない。元の関係を調べる時は上記固定snapshotの元パスを使う。現在のActor・Dots・STRへ進む時は[dots入口](../../agents/dots/README.md)と本案件を使う。
 
 [STR-005](../changes/STR-005-dots-collaboration-foundation.md)の元パス表と実装blob表は、当時の証拠として一切変更しない。保管を、STR-005が当時から新住所へ作成したという歴史に書き換えない。
 
@@ -578,7 +578,7 @@ Humanの「うまくいかなかった」という評価と、上記の文書上
 
 維持するなら索引の補完、観測と現行指示の分離、読取条件・更新担当、AGENTS／Skill／Project原本との責務整理が必要になる。現時点では、その保守を必要とする独立した具体用途を確認していない。既存の所有先と並行する総合棚を再建するより、原本と再発見の入口を保存する判断を採用した。古さ、六件という数、検索結果の少なさだけを退役理由にはしない。
 
-Dotsの[lessons契約](../../dots/README.md#5-dotsの学びを次の判断へ戻す)はDots自身の仕事から得た条件付き学びを所有する。旧Noteを一括輸入すると、異なる経験の観測者や適用条件を混同し得るため、今回は移植しない。必要になった知恵を出典付きで使う余地は保持する。
+Dotsの[lessons契約](../../agents/dots/README.md#5-dotsの学びを次の判断へ戻す)はDots自身の仕事から得た条件付き学びを所有する。旧Noteを一括輸入すると、異なる経験の観測者や適用条件を混同し得るため、今回は移植しない。必要になった知恵を出典付きで使う余地は保持する。
 
 ### C. 保存する知恵と再利用の入口
 

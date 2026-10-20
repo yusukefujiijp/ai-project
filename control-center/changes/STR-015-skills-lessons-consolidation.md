@@ -46,7 +46,7 @@ Ark28:05のHumanは、ai-projectへの限定集中とSkills分散の改善を検
 - [references案内](../../skills/_references/README.md)：Hubへ戻る短い案内のみ。契約・移行状態の第二原本にしない。
 - [当時のRadio共有版](https://github.com/yusukefujiijp/ai-project/blob/eab6d50d8271c5ef1eb50d2217e3291e47fe6eb2/skills/radio-mode/SKILL.md)／[Voice](../../skills/voice-mode/SKILL.md)：集約先とHubへ接続し、今回の目的・条件に合う行の本文・出典・留保を一緒に読む。Triggerや基本手順・表示設定は変更しない。
 - [全体references入口](../../references/README.md)、[整理PLAN](../github/PLAN.md)、[ARC-011](../github/ARCHIVE.md#arc-011)：現役のlesson導線だけを集約先へ合わせる。別領域の所有範囲・過去案件・凍結資料は変更しない。
-- JSONLの形式・更新は[既存契約§3〜5](../../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照する。schema 2を保持し、Dots固有のBootは移植しない。
+- JSONLの形式・更新は[既存契約§3〜5](../../agents/dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照する。schema 2を保持し、Dots固有のBootは移植しない。
 
 原本の集約先を先に公開し、登録済み利用側を切り替えてから旧ファイルを除去する。移行中の旧二ファイルは互換読取用snapshotであり、追記・二重更新しない。全Future AIの未知のcopyの消滅は証明できないため、既知の登録物・現役導線を確認する範囲と、未確認の取得経路を分けて記録する。
 

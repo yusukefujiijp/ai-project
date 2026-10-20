@@ -13,7 +13,8 @@ lesson_index_patch: "Link STR-015; existing domain ownership and prior cases ret
 problem_solving_index_patch: "Link STR-016 foundation and STR-017 naming and skill connection; problem-level judgment remains with problem-solving"
 references_index_patch: "STR-018/019: flexible README principle and complementary learning memory; implementation evidence remains with each record"
 skill_readme_index_patch: "STR-021: per-skill README ownership for Query and formation history; old MAP Query folders retired"
-communication_index_patch: "STR-020: common AI-to-AI communication manual and experience bodies; Dots relocation remains held"
+communication_index_patch: "STR-020: common AI-to-AI communication manual and experience bodies; its Dots relocation hold is continued by STR-022"
+dots_location_index_patch: "STR-022: relocation candidate, preserved data and explicit product cutover dependency; main cutover held"
 change_record: "../changes/STR-014-super-special-prompt-modernization.md"
 expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.7"
 ---
@@ -114,6 +115,8 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 - [STR-020: AI間コミュニケーションの共通原本と経験集約](../changes/STR-020-ai-to-ai-communication-foundation.md)：双方が読むマニュアル、公開経験3件の実体移設と旧入口、報告由来の構成選択経験、18パスの範囲とDots切替の保留条件。
 
 - [STR-021: 各SkillのREADMEへQueryと個別記録を移す](../changes/STR-021-per-skill-readme-query-migration.md)：32件の個別入口、Hubの簡素化、新旧MAP Queryフォルダの退役、意味・現用参照・固定履歴の保持。
+
+- [STR-022: Dots原本をagents配下へ移す候補](../changes/STR-022-dots-agent-location.md)：16原本・9旧入口・現役参照の整合、データ保持、登録Skill経路、実際の予定を確認するまでのmain切替保留。
 
 [ARCHIVE](ARCHIVE.md)はARC案件の提案・承認・実施・確認・復元を所有し、[__archives](../../__archives/README.md)は保管実体を案内する。両者の役割を通常変更記録へ重複させない。通信のCurrentは該当Board Topic、Actorの出来事はActorログ、再利用する学びは適用されるlesson契約など、実対象のOwnerを保つ。
 
