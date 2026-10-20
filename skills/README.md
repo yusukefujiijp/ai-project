@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.39.2
+version: v0.40.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-17
-updated_reason: problem-solvingの新名取得を確認し、Human指定の起動Query READMEを追加、旧共有配置を退役
+updated: 2026-10-20
+updated_reason: Ark28:06のHuman承認に基づきB-Zone Rescueの共有本文・起動Query入口と限定確認の記録を追加
 ---
 # Ark Shared Skills Hub
 
@@ -62,6 +62,7 @@ Grok／Claudeのprefix方式・既存_grokの移設、root／Dots lessonの集�
 
 | Skill | 使用場面 | 共有原本 | 共通契約 | 検証境界 |
 |---|---|---|---|---|
+| B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [SKILL.md](b-zone/SKILL.md)・[起動Query](b-zone/README.md) | 基本支援は本文。意味・訂正・経験と運用構想は[Ark100原本](../ark-project/ark100-199/ark100_b-zone/README.md) | 形式と四つの独立文脈・計八応答を限定確認。共有・登録・取得・実生活効果の区別は[§3.19](#b-zone-entry) |
 | Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [SKILL.md](markdown-to-html/SKILL.md) | 本文と必要な同梱資源。Python・Pandoc等の実行環境と保存権限は別途確認 | 形式・回帰13件・独立変換・Chromium表示を限定確認。来歴と保存・取得の区別は[§3.18](#markdown-to-html-entry) |
 | GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [SKILL.md](resolve-github-runtime/SKILL.md) | 環境判断は本文。Ark変更は[AGENTS](../AGENTS.md)、成果物保存は[Artifact → GitHub](../prompts/artifact-to-github.md) | 形式・二つの独立文脈で七条件への回答を確認。共有・登録先・実利用の区別は[§3.17](#resolve-github-runtime-entry) |
 | 残作業とGoal / map-remaining-work | 現在の協働から有効な残作業とGoalを直接取り出す。Dots主経路・Work補助経路・他AIへの分岐。前回Map不要 | [SKILL.md](map-remaining-work/SKILL.md) | 本文単体で基本支援。環境・役割・能力と現在のSource契約を区別 | 形式・四つの独立文脈で計六応答を限定確認。入口・形成と確認境界は[§3.16](#map-remaining-work-entry) |
@@ -675,6 +676,22 @@ $markdown-to-html スキルを使い、現在の依頼・会話・添付資料�
 
 新しい登録物を作らず、既存の同じ登録物へ反映しました。登録先Remoteでも九ファイルのバイト一致を確認しています。継続中の会話のSkill読取経路では旧本文が返る一方、新しい独立文脈では登録済みSkillから改訂本文を末尾まで取得できました。取得本文と共有固定版は、正規化・空白除去なしで全文一致しました（10,654文字／UTF-8 bytes、blob `7e23808bbea068730786f4fcb137be9aa1080b84`、SHA-256 `40725ff20721e95583e138e48e13a485c3451038dcc5bb5cefeba976dd98751d`）。旧本文が返った原因、全会話への反映時点、実際のSkill選択UI、自然発動、全環境での動作は、この保存・取得確認から断定しません。
 
+<a id="b-zone-entry"></a>
+
+### 3.19 B-Zone Rescue — $b-zone
+
+**入口：** [起動Queryと使い方](b-zone/README.md)・[共有Skill本文](b-zone/SKILL.md)。最短の呼出しは `$b-zone`。低認知・超低認知の自己判定や長いQueryを支援の条件にしません。近づいている時のピンと既にハマった時のRescueは、一つのSkillで扱います。
+
+**形成と追加理由（2026-10-20）。** Ark28:06でのHumanの命名、祈り・Teshuvahと行動の同時性、想起・行動開始・切替の困難、後続Correctionを受け、Humanが承認した初回計画を実装しました。一般的な問題解決の方法を重複説明するためではなく、思い出しやすい専用名から、このHuman固有の意味と採用済みFirst-Stepを取り出せる入口を作るための追加です。AIの検討品質を下げる定型短文化、自己分類試験、毎回の固定手順は設けません。
+
+現在のスマホ方針は **ONで支援へ到達 → スマホなしでトイレの一歩 → その後は自由**。祈り・TeshuvahはWorkout等と同時に続けられます。シャワーの毎回実施、トイレ後も続くスマホ禁止、完了報告、AIへの強制帰還は前提にしません。既に済んだ仕事・眠れる時・身体条件・Correction・STOPから接続を変えます。引用や設計相談はlive rescueと区別します。
+
+**確認範囲。** 形式検査に加え、元会話・期待回答を渡さない四つの独立文脈で計八応答を確認しました。一語起動→「無理」→STOP、SNS等から抜け出せない相談→トイレ後に眠りたい、済んだトイレ・洗顔と雨／体調不良→その情報は昨日のものというCorrectionとchocoZAP希望、起動Queryの設計レビューを扱いました。自己分類を要求しないこと、済んだ仕事とSTOP、トイレ後のスマホ自由、睡眠とWorkoutへの接続、古い身体条件の訂正、辞書入力と支援想起の区別を観察しました。仮想の相談を本人の実経験やSkillの実生活効果へ移しません。
+
+**保存・取得の確認。** 本欄の初回作成時点では共有と登録先の保存後確認を実施前です。保存先での本文一致と会話内取得を確認した場合は、この欄へ確認範囲を追記します。Skill本文の読解に基づく応答確認は、UIでの選択、自然発動、iPhone辞書登録、全AI互換性、実生活のRescue成功の証明ではありません。
+
+形成・経験・重要な訂正・残る条件は[Ark100原本](../ark-project/ark100-199/ark100_b-zone/README.md)が所有します。実際のArk100 Project、00・独立ケース・未使用待機Thread、ユーザ辞書登録、身体Trial、他AIへの送信は今回の初回実装範囲に含めません。2026-09-12のexport-manifest、他Skill、既存ThreadのIdentityは変更しません。
+
 ## 4. Source and distribution
 
 - 共有Skillの更新元は、このRepositoryのmainにある各SKILL.mdです。
@@ -820,4 +837,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 共有版は本文と最小の表示設定です。自然な自動選択、全AI互換性、実生活での想起効果は、設定・保存・限定応答確認とは別です。[Portal入口](../ark-recall-portal/README.md)と[検証ケース](../ark-recall-portal/tests/recall-cases.json)で確認範囲を示します。専用のQueryファイル、全履歴の移植、通知・常時監視、Main移管は含めません。2026-09-12のexport-manifestは当時の記録として変更しません。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.39.2
+EOF::ARK_SHARED_SKILLS_HUB::v0.40.0

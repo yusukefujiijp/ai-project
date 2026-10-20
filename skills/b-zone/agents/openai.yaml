@@ -1,0 +1,4 @@
+interface:
+  display_name: "B-Zone Rescue"
+  short_description: "想起や切替が難しい時、祈り・Teshuvahと現実の一歩を支える"
+  default_prompt: "$b-zone 今の状況から、祈り・Teshuvahと可能な行動へつながる一歩を一緒に見つけてください。"
