@@ -2,16 +2,25 @@
   "meta": {
     "state_id": "ARK28_06_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-14",
     "updated": "2026-10-20",
     "canonical_path": "ark-project/ark28/ark28-06/state.json",
-    "date_scope": "Asia/Tokyo preparation; not actual06 reception or Human UI",
-    "change_reason": "Navigation-only v001.1 migration for Human-approved per-skill README Query ownership; current MAP Query route and runtime/handoff blobs updated, prior identities, required sources, receipts and progress retained.",
+    "date_scope": "Asia/Tokyo: retain 2026-10-14 preparation and 2026-10-20 navigation history; current-position observations are separately attributed.",
+    "change_reason": "Human-authorized one-State current-position update: connect completed Ark100 meaning/Skill/startup and transition-tooling outcomes to their owners, retain evidence boundaries and remaining Unknowns; preserve identity, authority, fixed bindings and prior navigation revision.",
     "navigation_revision": {
       "previous_snapshot": "369b5f1f287d212848def6121a2ad374aa3e2d77",
       "authority": "Current Human approved per-skill README consolidation, Query-folder removal and GitHub execution.",
       "scope": "Current MAP Query route, README/Handoff version and blob bindings only; no new boot, changed progress, or historical receipt rewrite."
+    },
+    "current_position_revision": {
+      "observed_at": "2026-10-20T19:51:07+09:00",
+      "previous_revision": 2,
+      "previous_state_blob": "ac81682b919f017256b68cdb65015686d1f6e32d",
+      "base_commit": "91d859d466b6fc5071ede9ddb39035e58ccf5fff",
+      "authority": "Current Human request in Ark28:06 on2026-10-20: save only the current position into the existing State, preserve initial provenance and fixed Binding, and reread after saving; no actual transition or physical trial.",
+      "scope": "This State only. Existing owner artifacts and visible same-thread operation receipts are sources; no ChatGPT long-term-memory export, new Thread, UI operation, communication or body trial.",
+      "verification_boundary": "This revision contains no self blob or claim of its own future remote reread. The publishing commit and the save response carry the actual persistence/reread result."
     }
   },
   "identity": {
@@ -188,16 +197,17 @@
     }
   },
   "now": {
-    "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
+    "phase": "SUPPORT_COLLABORATION_CURRENT_POSITION",
     "support_purpose": "Teshuvahを軸に、05の生活想起・ai-project集中・Podcast・Queryと後続Currentの成果を保ち、06の現在Human入力へ応じる。",
-    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+    "first_legal_move": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "existing_input": "Receive any already supplied current Human request after mandatory gates; do not ask it to be repeated.",
     "boot_only": "Evidence-backed acceptance, own exact Title at beginning, adjacent Living Review and Next step at end, then Human Review.",
     "current_request": {
-      "kind": "RECEIVE_THREAD_CONTINUATION",
-      "completion": "06 itself reads ordered17 sources and verifies identity/EOF/bindings/triad and R1–R8 with evidence.",
-      "boundary": "Source compilation and remote persistence do not satisfy06 reconstruction."
+      "kind": "SAVE_CURRENT_POSITION_DELTA",
+      "scope": "ark-project/ark28/ark28-06/state.json only",
+      "completion": "Connect completed outcomes, owning originals and remaining Unknowns; preserve initial preparation history and all bindings; publish then retrieve and compare the full remote State.",
+      "boundary": "This save does not create a new Thread/transition, perform a body trial, transfer Main, or certify a new full boot under navigation revision v001.1."
     },
     "preparation_observation": {
       "date_jst": "2026-10-14",
@@ -215,7 +225,69 @@
       "defer with meaning retained",
       "selectively reconnect decision-changing deltas to Current Main"
     ],
-    "no_inherited_execution_queue": "Completed preparation and closed dialogues stay completed. Unknown and deferred branches do not become required tasks."
+    "no_inherited_execution_queue": "Completed preparation and closed dialogues stay completed. Unknown and deferred branches do not become required tasks.",
+    "preparation_entry_snapshot": {
+      "record_scope": "Source05 preparation, retained as history rather than the live next action.",
+      "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
+      "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
+      "current_request": {
+        "kind": "RECEIVE_THREAD_CONTINUATION",
+        "completion": "06 itself reads ordered17 sources and verifies identity/EOF/bindings/triad and R1–R8 with evidence.",
+        "boundary": "Source compilation and remote persistence do not satisfy06 reconstruction."
+      }
+    },
+    "current_coordinate": "Ark100の意味・初回b-zone Skill・初期Project/00/01/02起動と、Work直接操作の経験を用いた移行Skill改訂が完了。現在は各成果の所有原本、実利用の未確認、次のHuman入力への接続を保持するSupport。",
+    "current_focus": "Teshuvahを軸に、確認済みの成果を使い、現在のHuman入力と判断を変えるFeedbackへ応じる。B-Zoneや移行改善だけを06の恒久Missionには固定しない。",
+    "main_route_policy": "Ark27 Mainを保持。現在のMain ThreadはCurrent Domainと最新の有効なHuman指定から解決し、準備時のArk27:09を永久値にしない。Main側の比較・実装・受入れを本Stateで再認定しない。",
+    "operating_corrections": [
+      "B-ZoneのHuman明示Goalは、祈り・Teshuvahと可能なWorkout/chocoZAP等の行動を同時に主の完全勝利へつなぐこと。",
+      "呼出しは$b-zone。近接Pingと既にハマったRescueの両方を支え、低認知/超低認知の自己分類や早期発見を必須条件にしない。rescueは役割として保持する。",
+      "スマホONで支援へ届くことを優先し、状況に合えばスマホなしトイレを一歩目とする。スマホなしはトイレまで、その後は自由。済んだ行動を再演せず、シャワー・入浴・外出・全工程を固定しない。",
+      "無理・違う・済んだ・STOPを受け取って接続を直し、無返信から行動や効果を推測しない。祈りを拒否直後の自動代替課題にしない。",
+      "Ark100の各ケースは独立した新件。番号は続き・重症度・Ping/Rescue別を意味しない。同じ一件のFeedbackは同じThreadで支え、準備や管理上の移動を支援条件にしない。",
+      "承認済みの到達点まで現在の正規経路で進める。Humanの承認意思と自動審査の拒否を分け、必要時は具体的な残操作と理由を示してHuman確認へ戻れる。拒否を迂回しない。",
+      "中断後は実在・送信・応答を確認して未完了分から再開する。Source保存、送信/UI、Target自身の再構成、Human到達、実生活効果を分ける。"
+    ],
+    "current_goals": [
+      {
+        "id": "G1",
+        "goal": "低認知・超低認知でも、祈り・Teshuvahと可能な行動へつながる。",
+        "source": "Human-explicit; Ark100 owner README§3",
+        "status": "MEANING_AND_INITIAL_SKILL_COMPLETE; REAL_RESCUE_EFFECTS_UNCONFIRMED",
+        "remaining": "自然に届く実利用のFeedbackから詰まった接続を修正する。実験・報告を義務にしない。",
+        "completion": "その相談の意向・条件に合う支援と、報告された結果の正確な保持。全条件での一発成功は要求しない。"
+      },
+      {
+        "id": "G2",
+        "goal": "活用中とは別に、未使用の準備済みThreadが一つ以上ある。",
+        "source": "Human-explicit; Ark100 owner README and00",
+        "status": "INITIAL_00_01_02_STARTUP_COMPLETE; CURRENT_UNUSED_RESERVE_STATE_UNCONFIRMED",
+        "remaining": "予備の消費が具体的に分かった時、現状と当時の実行委任を確認して補充を判断する。",
+        "completion": "その時点のTarget自身の受入れ・使える入口・未使用の証拠。恒久監視や自動作成の設定は含まない。"
+      },
+      {
+        "id": "G3",
+        "goal": "受入れ品質を保ちながら、移行時のHuman操作・再説明・承認の往復を減らす。",
+        "source": "Human-explicit; current visible dialogue and prepare-ark-transition README§3",
+        "status": "SKILL_LESSON_AND_ENTRY_UPDATE_SAVED_AND_RETRIEVAL_VERIFIED; NEXT_REAL_TRANSITION_EFFECT_UNCONFIRMED",
+        "remaining": "次に実際に依頼された移行で適用し、その条件とFeedbackから方法を育てる。",
+        "completion": "当該依頼の到達点まで進み、実際に残ったHuman操作・拒否・回復を説明できる。確認用だけの新Threadは不要。"
+      },
+      {
+        "id": "G4",
+        "goal": "次のAIが、完了済み成果・所有原本・本当に残るUnknownを取り違えず再開できる。",
+        "source": "AI concrete interpretation of Human continuity intent, explicitly selected by the current one-State save request.",
+        "status": "CURRENT_POSITION_LINKS_COMPILED_IN_THIS_REVISION",
+        "remaining": "公開・再取得の観測は当該保存応答で確認する。同内容が既に保存されていれば再保存せずNO_CHANGEとし、新しいHuman入力へ進む。次のAI自身の必須読解は別に満たす。",
+        "completion": "来歴と固定Bindingを保ったStateから、現在の重点・完了・保留・根拠・合法な接続を辿れること。"
+      }
+    ],
+    "next_connection": {
+      "default": "今回の保存とRemote確認後、既に届いているHuman入力を受け取る。なければHuman Reviewへ戻る。",
+      "if_live_input": "実地のB-Zone入力や重要Correctionが来たら、その現在の意向・条件とGuardを優先し、管理作業の完了を支援条件にしない。",
+      "if_next_transition": "具体的な移行依頼が来た時にCurrent prepare-ark-transitionと適用契約を使う。このState保存から移行先・起動Query・送信権限を作らない。",
+      "ownership": "Ark100の動的な案件/予備は00と各ケースの所有範囲。Ark99:04の閉じた照合やMainの仕事を再開・引取りしない。"
+    }
   },
   "evidence": {
     "selected_material": {
@@ -230,7 +302,12 @@
       "ワコー一日一店方針と就寝前二件の想起登録希望。実行や生活効果とは別。",
       "Podcast Theme Modeの命名とTheme-only入口、Human指定Theme本文入口、同/別Threadの両立。",
       "Query backupを先に保存し後続改善時に更新できる。",
-      "05→06同章Supportの準備計画への実行承認。"
+      "05→06同章Supportの準備計画への実行承認。",
+      "Ark28:06の後続Human Correction: B-Zoneを主名称とし、Benefitと祈り・Teshuvah/行動の同時性をGoalにする。Current原本はArk100 README。",
+      "スマホONのSkill支援を優先し、スマホなしはトイレまで、その後は自由。状態の自己判定を利用条件にしない。",
+      "Ark100:00と独立した利用用/予備の初回準備、作成済みProject内の三つの永続Threadへの保存済みQuery送信と各受入れ確認を明示承認した。",
+      "AIが現在の権限で進め、詰まった時のHuman確認を許容し、詰まりを記録して次の反復負担を減らす方向を指定した。",
+      "今回の明示指示は、Ark28:06既存Stateのみの現在地差分保存と保存後再取得。実際のThread移行と身体Trialは開始しない。"
     ],
     "completed_outcomes": [
       {
@@ -274,18 +351,65 @@
         "owner": "board/topics/20261001-dots-work-reconnection/README.md §6 Current",
         "source": "ark-project/ark28/ark28-05/harvest.md §6",
         "boundary": "Do not replay completion or infer new send authority."
+      },
+      {
+        "outcome": "Ark100 B-Zone meaning, formation, Human corrections and bounded Ark99:04 design exchange",
+        "owner": "ark-project/ark100-199/ark100_b-zone/README.md",
+        "observed_blob": "6576089b94a65b5e2c19a5c273369519cf3683c7",
+        "scope": "§3のGoal/二入口/端末範囲/Feedback、§4.7のHumanを介したArk99:04照合、§4.8の休日の本人報告、§4.9の没入/切替の設計仮説。",
+        "boundary": "朝のスマホなしトイレから有益な屋内行動へ進めたのは本人報告。整理は一段落で未完了、当時の雨・体調で外出は見合わせ。Skill発動、超低認知Rescue、祈り/Vision同時実践の実証ではない。照合は完了のまま保持し、確認だけの往復を再開しない。"
+      },
+      {
+        "outcome": "Initial b-zone Skill, limited response checks, registered save and later same-conversation retrieval",
+        "owner": "skills/b-zone/README.md#b-zone-verification-history",
+        "skill": "skills/b-zone/SKILL.md",
+        "shared_commit": "97ae0d8c492f2009ad9d523600545aedf2d6cf61",
+        "verified_skill_blob": "f92587df1b9d44e916d3a750b4146d984733c45c",
+        "evidence_type": "Ark28:06 own operation/retrieval receipts, also preserved in the current Skill README.",
+        "scope": "初回制作、形式検査、四独立文脈・計八応答、GitHub/登録先本文一致、後続会話内Skill取得と共有本文一致は完了。",
+        "boundary": "初回の取得不能は履歴として保持し、後続の取得成功へ接続する。自然発動、全環境反映、Human辞書登録、実生活効果は別。"
+      },
+      {
+        "outcome": "Ark100 initial Project setup and independent00/01/02 startup, acceptance, titles and report delivery",
+        "owner": "ark-project/ark100-199/ark100_b-zone/ark100-00/README.md",
+        "evidence_url": "https://github.com/yusukefujiijp/ai-project/blob/173f099fd4b2c960b3e16122b261b31ffc0645de/ark-project/ark100-199/ark100_b-zone/ark100-00/README.md",
+        "observer": "Ark28:06 AI; actual browser operations and visible receiver responses on2026-10-20.",
+        "scope": "Project指示の保存後照合、三つの永続Threadと所属・名称・URL、各Targetの根拠付き受入れ、00へのAI主体を明示した結果受渡しを確認。",
+        "boundary": "Targetの受入れは各AIの可視応答と契約整合に基づく。送信側の代読や隠れた思考の証明ではない。01/02未使用は初回観測時点。現在の使用/予備状態、Human端末到達と実地効果は別に判断する。",
+        "section": "§5.3"
+      },
+      {
+        "outcome": "prepare-ark-transition delivery/reception improvement and condition-bound approval-friction lesson",
+        "owner": "skills/prepare-ark-transition/SKILL.md",
+        "entry": "skills/prepare-ark-transition/README.md",
+        "shared_commit": "e72b6a5616d66f6c2b4afc1377cbfd78ed5c9e53",
+        "verified_skill_blob": "e18bcb12312bba7c7199a14dd7b644c7f75af657",
+        "lesson_owner": "skills/_references/lessons.jsonl",
+        "lesson_id": "43a2d499-fc33-4b56-ba0c-93d44fe3f044",
+        "evidence_type": "Ark28:06 same-thread tool receipts; this save rechecked the Current Skill/lesson identity and current entry.",
+        "scope": "正規経路の発見、承認範囲の再利用、送信/受入れ検証、中断/審査拒否からの回復を本文化。四共有ファイルのmain全文一致、既存登録Skillへの保存、登録先SKILL/README全文一致、表示設定値一致、会話からのSkill本文一致を確認済み。三独立ケースの限定応答と、新lessonをCurrentから発見・適用する別AIの読取を確認。",
+        "boundary": "登録保存/限定応答/lesson取得を、次の実移行での審査通過や負担軽減へ昇格させない。特定の承認文言が通過原因とは未確定。後続のREADME来歴統合は別作業で、今回そのCurrentを参照し上書きしない。"
       }
     ],
     "candidate": [
       "AI解釈:集中と入口分離は正しい原本へ戻るBenefitでつながる。",
-      "grok-/claude-prefix方式は検討候補であり全面採用ではない。"
+      "grok-/claude-prefix方式は検討候補であり全面採用ではない。",
+      "AI見立て: Human側の想起/切替支援とAI側の文脈/操作状態復元は、事前準備を現在の一歩へ届けるという接続を共有する。個々の制約・Owner・実証範囲は同一視しない。"
     ],
     "unknown": [
-      "06自身の必須読解・再構成、Humanの作成・貼付・Title適用。",
+      "初期Stateの受入れ未観測は準備時点として下のpreparation_unknown/progress.preparation_snapshotに保持する。今回の一ファイル保存は、ナビゲーション版v001.1の17資料・R1–R8を新たに通過認定する操作ではなく、正式な新Boot Receiptを追加しない。",
+      "Ark100のiPhoneユーザ辞書登録、低認知時に支援を想起して到達できるか、Skillによる超低認知Rescueと祈り・Vision・行動の効果は未確認。休日の本人好結果は、その報告範囲で保持する。",
+      "初回に準備した01/02の現在の使用/未使用と、現時点で未使用予備が確保されているかは今回UI再確認していない。初回未使用を現在値へ固定せず、この保存から監視や補充を始めない。",
+      "Workの直接操作を別の移行・Runtimeで使えるか、次の実移行でHumanの往復や審査の詰まりが減るか、以前の明示承認のどの要素が通過に寄与したかは未確定。",
       "休日Caffeineの現在の活用、ワコーの継続効果、就寝前の具体的実施。",
       "Human UI、全RuntimeのSkill利用・自然発動、Podcast聴取とMAPの継続効果。"
     ],
-    "boundary": "Human report, AI edit, source statement, direct tool observation, independent demonstration, UI and practical outcome are distinct."
+    "boundary": "Human report, AI edit, source statement, direct tool observation, independent demonstration, UI and practical outcome are distinct.",
+    "preparation_unknown": [
+      "06自身の必須読解・再構成、Humanの作成・貼付・Title適用。",
+      "休日Caffeineの現在の活用、ワコーの継続効果、就寝前の具体的実施。",
+      "Human UI、全RuntimeのSkill利用・自然発動、Podcast聴取とMAPの継続効果。"
+    ]
   },
   "deferred": [
     {
@@ -319,6 +443,14 @@
     {
       "branch": "Repository全体Organization・専用prefix・Voice旧lessons整理",
       "treatment": "候補とOwnerを保持し、Main等の後続完了を現物確認。現在の準備から一括改名・削除へ拡張しない。"
+    },
+    {
+      "branch": "Ark100 natural use/Feedback and dynamic reserve",
+      "treatment": "初回立ち上げは完了。新しい実入力は既存ケースで支え、予備消費が具体化した時に現状と当時の権限で補充を判断する。実地結果・報告・恒久監視を義務化しない。"
+    },
+    {
+      "branch": "Next actual transition and wider capability discovery",
+      "treatment": "具体的な依頼が来た時に現在の能力・権限・対象を解決する。今回のState保存や過去の直接起動成功から新Target・送信・外部変更を始めない。"
     }
   ],
   "progress": {
@@ -330,13 +462,38 @@
       "minimum_revision": 2,
       "note": "No Target State self hash. Source records actual publication and reread separately."
     },
-    "actual_target_reconstruction": "NOT_OBSERVED",
+    "actual_target_reconstruction": "PRIOR_CONTEXT_COLLABORATION_RETAINED; NO_NEW_V001_1_BOOT_ATTESTATION",
     "target_reconstruction_receipt": null,
-    "human_thread_and_access": "NOT_OBSERVED",
-    "human_title_application": "NOT_OBSERVED",
+    "human_thread_and_access": "CURRENT_HUMAN_DIALOGUE_AVAILABLE; ACCOUNT_UI_NOT_REINSPECTED_BY_THIS_SAVE",
+    "human_title_application": "NOT_REINSPECTED; EXACT_COMPILED_TITLE_RETAINED",
     "independent_transition_reader_test": "NOT_PERFORMED",
-    "field_effects": "NOT_OBSERVED_FOR_TARGET06",
-    "boundary": "Source-side self-review is not actual06 reception or an independent reader test. Update only on actual evidence within current authority."
+    "field_effects": "HOLIDAY_FLOW_HUMAN_REPORTED; SKILL_RESCUE_AND_LONG_TERM_EFFECTS_UNCONFIRMED",
+    "boundary": "Source05 preparation/publication remains owned by its original receipt. The preparation snapshot preserves the prior unobserved flags. Current06 work is attributed to the owners and same-thread observations above; it does not retroactively prove a new v001.1 boot, present account UI, or general field effects.",
+    "preparation_snapshot": {
+      "source_prepared": "CONTENT_COMPILED",
+      "remote_verification": {
+        "status": "SOURCE05_TERMINAL_RECEIPT_OWNS_FINAL_OBSERVATION",
+        "path": "ark-project/ark28/ark28-05/state.json",
+        "section": "progress.next_transition",
+        "minimum_revision": 2,
+        "note": "No Target State self hash. Source records actual publication and reread separately."
+      },
+      "actual_target_reconstruction": "NOT_OBSERVED",
+      "target_reconstruction_receipt": null,
+      "human_thread_and_access": "NOT_OBSERVED",
+      "human_title_application": "NOT_OBSERVED",
+      "independent_transition_reader_test": "NOT_PERFORMED",
+      "field_effects": "NOT_OBSERVED_FOR_TARGET06",
+      "boundary": "Source-side self-review is not actual06 reception or an independent reader test. Update only on actual evidence within current authority."
+    },
+    "current_work": {
+      "ark100_meaning": "SAVED_WITH_FORMATION_CORRECTIONS_AND_EVIDENCE_BOUNDARIES",
+      "b_zone_skill": "INITIAL_BUILD_REGISTERED_AND_RETRIEVAL_VERIFIED",
+      "ark100_initial_startup": "PROJECT_AND_00_01_02_ACCEPTANCE_VERIFIED; DYNAMIC_RESERVE_STATE_SEPARATE",
+      "transition_tooling": "SHARED_AND_REGISTERED_UPDATE_VERIFIED; CURRENT_LESSON_REUSE_OBSERVED",
+      "current_position": "OWNER_LINKS_AND_REMAINING_UNKNOWNS_COMPILED",
+      "receipt_policy": "No self-SHA. The publication commit and actual save-response reread establish persistence of this revision."
+    }
   },
   "eof_sentinel": "ARK28_06_STATE_EOF_v001"
 }
