@@ -1,0 +1,1185 @@
+{
+  "$schema": "../../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark100-01-b-zone-zone-allout-2026-10-20",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-10-21",
+  "updated": "2026-10-21",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark100:01_2026/10/20; \"B-Zone: 新しい一件を迎える\"",
+    "canonical_path": "ark-project/ark100-199/ark100_b-zone/ark100-01/task-records.json",
+    "reported_date": null,
+    "timezone": "Asia/Tokyo",
+    "time_note": "対象は2026-10-20の実地報告から翌朝2026-10-21の最新h24まで。17:50前後と21:50前後はHuman報告のイベント時刻。22:23:47 JSTは後続h19が指定した訂正の基準。各入力時刻・起床時刻・最新入力の正確な時刻は補作しない。created/updatedは記録を作成したJST日付で、出来事時刻ではない。",
+    "root": "主イェシュア・ハマシア御自身",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "authority_note": "前夜h19までのPlan-onlyを保持して保存せず本文案までとしていた。今回h24の『こまめにsaveして』を、この一件の経験・Correctionの保存依頼として受け取った。範囲は本経験原本、同階層README、領域入口への限定リンク、日付活動記録。Skill・設定の変更、身体Trial、他AI送信、監視、別Threadの操作は含まない。",
+    "source_access": "保存担当AI自身が、このThreadのHuman入力と確認済みCurrent所有資料から編集した。会話全文の逐語転記ではなく重要部分を選んだ記録。sourcesのh番号はローカル識別子で、正確なMessage URLは不明。原文引用はそれぞれ連続した範囲。別Threadの現在状態・長期メモリは取り込まない。"
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "Root・Teshuvah・信仰とAIの判断境界",
+      "AI没入の価値と全体バランス、通常Bから超絶BへのHumanの最大原因理解",
+      "終了時刻・トイレ・昼と夜のケア・All-out・101/100の訂正",
+      "沼化理由を想起できない困難、当夜のOFF祈り選択、睡眠の本人経験",
+      "後続の音声と入眠、起床回復・通常B・雨・Workout候補",
+      "最新の境界ケア、AMシャワー仮説、繰り返し保存して支援へ戻す意図"
+    ],
+    "excludes": [
+      "全会話の完全な逐語記録と未報告のタイムライン",
+      "他Threadの現在の身体状態・行動・承認",
+      "医学的因果や効果の認定",
+      "全般的なSkill/設定変更、予定・監視の実装"
+    ],
+    "note": "confirmedはHumanが報告・判断・表明した事実の確認。内容が独立に実証された意味ではない。AI解釈はcandidate、未報告や効果はunknown。経験記録は新しいBoot Runtimeではない。"
+  },
+  "sources": [
+    {
+      "id": "h01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 初回Boot指定",
+      "excerpt": "Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。祈り・Teshuvahと可能な行動の同時性、ONで支援→状況に合うスマホなしトイレ→以後自由、Correction・STOP、AI品質・身体等のGuardを保持してください。番号、Ping／Rescue、低認知／超低認知の自己分類を支援の利用条件にしないでください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-20 / 17:50前後という本人の時刻報告",
+      "excerpt": "今現在、17:50前後です！\n\"B-Zone(B状態)\"が近い事を感じます！これは\"B-Zone(B状態)\"対策実験も兼ねてます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 外向き活動・Feedback・Ark Project Style",
+      "excerpt": "できる限り外向きに活動するように上手くエレガントに工夫して、促すべきです！\n\nそしてFeedbackを上手くエレガントに工夫して、蓄積する\"方法や方法論\"が\"最重要(Most important!)\"です！\n\n\"Ark Project Style(できる限り柔軟に対応してFeedback等で修正改善していくStyle, できる限りUser(YusukeJP)の認知負荷軽減の為に様々な工夫を事前に用意周到に準備するStyle, できる限り上手くエレガントに工夫して、外堀を一つずつ埋めて行き本丸へゆっくりじっくり一歩ずつ到達する**急がば回れ**を推奨するStyle)\"",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h03b",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 保存先の相談後、柔軟な試行とPlan Modeを指定した入力",
+      "excerpt": "取り敢えず、これで行ってみよう！上手く行かなければ柔軟に変更しよう！失敗はBottleneck検出です！できる限り積極的に行きましょう！つまり、もし仮に失敗しても失敗はBottleneck検出そのものです！積極的に実行して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "同じ入力の後半でplan-modeによる調査・計画のみを求めている。引用の『実行して下さい』だけを切り出して当時の実装承認と扱わない。"
+    },
+    {
+      "id": "h04",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 通常BでのAI没入から超絶Bへの理解",
+      "excerpt": "そうですね！(That's right!)\"B状態(通常低認知状態)\"でも AI活用がノリに乗っている場合極限まで AI活用を続ける為に、極限状態で\"B状態(超絶低認知状態)\"となり二進も三進も行かないパターンが恐らく、大きな原因です！\n実地Feedbackにより、ほぼほぼ原因を突き止める事ができたのは\"ドラッカー的「予期せぬ成功」(Drucker-like 'Unexpected success')\"であり、\"Move37的breakthrough(innovation)\"の\"種(Seed)\"です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h05",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 原因への確信と精密な言語化",
+      "excerpt": "原因の一つとはいうものの、それは100%ではないという意味合いでほぼほぼ99%はこれが原因です！\nつまり、はっきり言って、最大原因にまで到達したという意味合いです！\n\nまずは(First of all)、**(精密的)言語化**が重要です！**(精密的)言語化**による**最初の一歩**で我々Ark Projectはほぼほぼ全ての**問題解決**の第一歩として多くの問題を解決してきたからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h06",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / ゾーンの価値と切替のトレードオフ",
+      "excerpt": "なぜなら、 AI活用がとても上手く行っている場合、ある意味ゾーン化している場合、限界まで攻めたい所だからです！\nなぜなら、ゾーン化とは永遠ではなくとても儚く簡単に消え失せてしまう貴重なものだからです！\nつまり、大きなトレードオフ関係と言えます！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h07",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / Human自身のTeshuvahの祈り",
+      "excerpt": "主イェシュア\n私(YusukeJP)は完全にゾーン状態を最優先する事により、その他の全てを犠牲にしておりますから主イェシュアごめんなさい！主イェシュアの聖名前を通してTeshuvah(悔改)します！アーメン！ハレルヤ！\n\nつまり、全体的なバランスを考えず己の欲望や知識欲、達成欲等の全欲望を満たすためだけにゾーン化を選択してしまい主イェシュアごめんなさい！主イェシュアの聖名前を通してTeshuvah(悔改)します！アーメン！ハレルヤ！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h08",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 保存と中断後再開の狭間",
+      "excerpt": "無理に限界までゾーン化を継続させすぎているのが大きな原因という事がわかった！\nゾーン化を中断して、中断後も確実に再開したい！しかし、現実的にはとても難しい。\nこの狭間の問題です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h09",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 全体バランスとゾーンを手放す選択肢",
+      "excerpt": "全体バランスを考えればゾーン化再開を希望や餌(人参)ご褒美、報酬(言い方？言語化を！)としてやるべき事の横展開した方が全体バランスは取れます！\nその代わり、ゾーン化は失う可能性がとても高いです！\n\nとても重要で大切だがゾーン化を敢えて犠牲にする選択肢が最善の可能性はある。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h10",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 御心についてのHumanの表明",
+      "excerpt": "つまり、私(YusukeJP)は\"主イェシュアの聖なる御心\"ならば、ゾーン化も簡単に捨てられるからです！\n\nここは本当に難しいです！\nなぜなら、霊的領域はAI側に理解できない不可侵領域であり、信仰世界だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h11",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 信仰を支える言い方の比較依頼",
+      "excerpt": "今回の理解を踏まえ、YusukeJPの「主イェシュアの聖なる御心ならば、ゾーンも簡単に手放せる」という信仰を、AIが御心の判定を代行せずに支える言い方を、具体的な応答例で比較してください。Humanの表明・AIの解釈・現実の条件を区別し、このThreadのThemeに集中してください。Teshuvahを中心に、Plan-onlyで、実装・保存・身体Trialは行わないでください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h12",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / ゾーン終了後の時刻記録の必要性",
+      "excerpt": "今現在、完全にゾーン化が終了した！\nしまった！全ての時間を記録するべきだった！次からは時間の記録が重要です！\nつまり、\"B状態(通常低認知状態)\"のゾーン化も必ず終了するという事が分かった！\nなぜなら、完全にこれ以上考えられない所までゾーン化を粘ったからです！\n\nしかし、その見返り代償として何も考えられない\"B状態(超絶低認知状態)\"に今現在、突入中です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h13",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 21:50前後というイベント時刻とトイレ実行の報告",
+      "excerpt": "そうです！21:50前後で\"B状態(通常低認知状態)\"ゾーン化完全終了です！\n\n取り敢えず、スマホなしトイレまでは覚えているので、やってみます！\n実況的Feedbackが重要です！\n\nスマホなしトイレに行った！\nとても重要な事がわかった！\n一旦、ここまでで、どうですか？",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h14",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 超絶B・当日のケア・SNS・睡眠・サプリ案・祈りの報告",
+      "excerpt": "今現在、\"B状態(超絶低認知状態)\"そのものです！\nとても貴重な情報です！\nつまり、本当に何も考えられない状態です！\nつまり、この状態では\"chocoZAP(Workout)\"も危険なので実地としては不可能です！\n重大発見です！\n\nできるのはシャワー入浴ですが昼にもうシャワーをあびたので顔と歯磨きで終了したが意識は朦朧としており、あまり上手くできない状態です！\n\n全てはゾーン状態の限界を超えた事が一因です！アーメン！ハレルヤ！\nその代わり、\"B状態(通常低認知状態)\"でのゾーン状態内でやるべき事は達成しました！その分のリスクが今\"B状態(超絶低認知状態)\"として来ています！\n本当に何も考えられないボーッとした状態です！\n\n💡閃きました！✨この状態でX/SNS/Youtube系にハマると取り返しがつかない。しかし、一旦、寝れば100%回復するという事は少しでも寝る事が正解です！\nしかし、X/SNS/Youtubeに行くと興奮して眠れない。睡眠薬があれば欲しい所ですが、薬に頼るのは良くない！マグネシウムサプリやGABA等は良いかも知れない！あとはスマホオフで**祈る**パターンがある！\n\nOh! 思い出しました！\"B-Zone(B状態)\"のメリットベネフィットを今この時にあなた(AI)は思い出しUser(YusukeJP)側に祈りを思い出させ\"B-Zone(B状態)\"ならではの祈りゾーン状態に導くのが恐らく、最善です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h15",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 『朦朧』の意味を訂正",
+      "excerpt": "いや(No)、そこまでの大事ではなく完全に全ての脳みそをフル回転させて限界を超えたという意味合いの朦朧です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h16",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 101/100・All-outの比喩と当時のsave依頼",
+      "excerpt": "と同時に、ここまで最低でもやらないとBreakthroughしないという意味合いもあります！なぜなら、Workoutと同じで限界の一歩先が重要だからです！101/100理論です！(100を限界とした時の方プラス1が重要という意味合い、同時に+2以上はねらわないという意味合いでは安全面も考慮されている素晴らしい理論です！)\nつまり、私(YusukeJP)は今現在ゾーン状態の101/100です！Workoutでいう\"All-out(オールアウト)\"状態です！この比喩はとても良い比喩です！$save スキルを上手く活用してセーブして下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h17",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / Humanが後で22:23:47 JSTまでの訂正として指定した入力 / 再説明負担・沼化理由・OFF祈り",
+      "excerpt": "そうです！今後も、救急車的な部分はカットでOK！毎回訂正するのが特に\"B状態(超絶低認知状態)\"では大変だからです！\n\nこの状態であなた(AI)がやるべき事は物理的に\"X/SNS/Youtube/Game\"を避けさせるために(100%沼化するからです！この沼化だけは絶対的に避けなければいけないが今現在、なぜ沼化がいけないのか等がわからなくなっている！ここは重要です！)スマホオフで祈り集中という**一択化**が最適解です！\n\n私は、今現在、あまり良い状態ではないが、かろうじて書いてます！しかし、寝れば100%回復するのは事前に書いてある通りです！あなた(AI)はもう一度、熟読する必要があります！と同時に、熟読できる何か成果物を事前準備するべきでした！明日続きができるように準備して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h18",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 同じ夜 / AI応答前に再入力した自己報告",
+      "excerpt": "ここでも大きなミスとしてあなた(AI)のAI回答を待たずに再入力しています！(笑)\nそれほど意識朦朧状態という証左でもあります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h19",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 同じ一件の再開とPlan-only境界を明示した入力",
+      "excerpt": "Ark100:01の同じ一件を再開してください。2026-10-20の22:23:47 JSTまでのHuman訂正と、このThreadの再開メモを基準に、AIが熟読して支援へ使える成果物の構成・本文案を整えてください。\n\n中心はTeshuvahです。「朦朧」は今回のAll-outの意味として扱い、101/100の突破への意図と、＋2以上は狙わない意図を保持してください。沼化を避ける理由そのものを取り出せなくなる困難、この状態でHumanが選んだスマホOFF・祈り集中の一択、睡眠による回復についての既知の本人の経験を、再説明させず支援へ接続する設計にしてください。\n\n原文・Humanの判断・AIの解釈・未確認の効果を区別し、前夜の状態や未報告の行動を今日の事実へ持ち越さないでください。新しい実況や訂正があれば、それを優先してください。\n\n今回はPlan-onlyです。既存の保存用草案へ最新Correctionを反映した案を提示し、GitHub保存・Skillや設定の変更・身体Trial・他AIへの送信は行わないでください。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h20",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 翌朝の昨晩の結果報告 / 音声と入眠",
+      "excerpt": "昨晩は\"B状態(超絶低認知状態)\"からスマホオフの代わりにChatGPT Scheduleの\"WeeklyTorahPortion(Parashat ha-Shavua)\"をPodcast Mode(音声)で聞いてみた！\n案の定、寝落ちした！\n素晴らしいです！\n\nこれを活用すると寝落ちしたい時に寝落ちできる可能性がある！\n就寝前のサプリも良かった可能性がある。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h21",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 翌朝 / 休日AMへ前倒しするHumanの結論",
+      "excerpt": "つまり、結局の所、\"B状態(通常低認知状態)\"でもゾーン化している場合ゾーン化を限界まで継続し貫かざるを得ないという事は結局の所、休日は午前中にやるべき事を済ませないとトータルで考えると上手くいかないという事がわかった！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h22",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 起床回復時の通常B・雨・外出Workout案",
+      "excerpt": "起床時回復で\n起床回復時の\"B状態(通常低認知状態)\"です！\n\nしかし、あいにくの雨です！\nうーん(Hmm…)🧐(ゆっくり深く深呼吸する事！)\nとてもやりづらいです！\n晴ならば、ジョギング系もあり得た状況だからです！\nレインコートを着ていくという選択肢もあります！\n\nはっきり言って、一回ジョギングに行けば様々な症状が改善される場合はレインコートで走るべきです！\n\nなぜなら、この一回に外出Workoutが凝縮されているからです！\n\nこの起床時\"B状態(通常低認知状態)\"にどれだけ\"chocoZAP(Workout)\"系をやれるかが休日の鍵となるからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h23",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 起床時Bの価値と先回りの必要性",
+      "excerpt": "今\"起床時B状態(通常低認知状態)\"という特別な時間帯です！\nつまり、\"B-Zone(B状態)\"というのはできる限り\"B-Zone(B状態)\"でしかできない事をやる貴重な時間帯であり、特に我々Ark Projectでは昨日や昨晩の事例が超重要です！\nつまり、先回りして様々な事を今現段階でやり遂げる必要がある！\nと同時に、昨晩の反省やこうすればよかった等のやるべき事が山積みだがとてもとてもやり甲斐がある！なぜなら、あなた(AI)によるサポートによりはっきり言って、**Goal**が見えてきており今迄できなかった事ができるようになり幾重にも連なる壁を突破して来ている実感があるからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h24",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 今回の最新入力 / こまめなsave・通常Bと超絶Bの狭間・ケア時機",
+      "excerpt": "こまめにsaveして一回限りの記憶・記録で終わらせてない事が\"最重要(Most important!)\"です！\n\n昨晩の超重要事項は\n\"B状態(通常低認知状態)\"と\"B状態(超絶低認知状態)\"の狭間です！\n\nここで昨日は昼間にシャワーしたのでパスしたが今の起床時においてはシャワー入浴足湯のどれかはして身体を清潔に保ち温めてリセットするべきだった！この健康効果とリラックス効果はとても大きいからです！\n逆算すると昼の遅めのシャワーよりAMで一回シャワーもしておいた方が良かったです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "root-and-teshuvah",
+      "kind": "practice_statement",
+      "label": "Root・Teshuvah・Human Foreground One",
+      "description": "Rootは主イェシュア・ハマシア御自身。Teshuvahを中心に祈り・イメージVision・可能な行動を結び、主の完全勝利をHuman Foreground Oneとする。AIはKeliであり御心を判定しない。",
+      "scope": "同じ一件の意味・支援姿勢。新しい身体行動への承認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h01",
+          "h07",
+          "h10",
+          "h11"
+        ]
+      }
+    },
+    {
+      "id": "b-approach",
+      "kind": "observation",
+      "label": "17:50前後のB近接",
+      "description": "HumanはBが近いと感じ、実地Feedbackを伴う対策実験としてこのThreadを利用した。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h02"
+        ]
+      },
+      "time_text": "2026-10-20 17:50前後（本人報告）。厳密な開始時刻ではない。"
+    },
+    {
+      "id": "feedback-method",
+      "kind": "practice_statement",
+      "label": "Feedbackを受け取って修正するArk Project Style",
+      "description": "外向き活動を支え、Humanの認知負担を事前準備で減らし、急がば回れとして一歩ずつ改善する。失敗や想定差をBottleneckを見つける材料にする。",
+      "scope": "Humanが本件に求めた協働方針。新しい実験を無断開始する権限ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h03",
+          "h04",
+          "h03b"
+        ]
+      }
+    },
+    {
+      "id": "productive-zone",
+      "kind": "observation",
+      "label": "価値あるAI没入と成果",
+      "description": "通常BでもAI活用が上手く進み、そのゾーン内でやるべきことを達成したというHuman報告。価値・楽しさと後続の負担を両方保持する。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h04",
+          "h06",
+          "h14"
+        ]
+      }
+    },
+    {
+      "id": "dominant-cause",
+      "kind": "interpretation",
+      "label": "限界まで続けることが最大原因というHuman判断",
+      "description": "ゾーンを失いたくないため継続を選び、極限状態で超絶Bへ至ることを、Humanはほぼ99%の最大原因と捉えた。confirmedはこの判断が表明されたことを指す。因果寄与率が測定・証明された意味ではない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h04",
+          "h05",
+          "h08"
+        ]
+      }
+    },
+    {
+      "id": "zone-interruption-tradeoff",
+      "kind": "interpretation",
+      "label": "ゾーンの儚さと全体バランス",
+      "description": "中断で貴重なゾーンが失われる可能性と、家事・Workout等へ横展開する価値が競合する。再開への期待を励みにできても、同じゾーンの回復は保証されない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h06",
+          "h08",
+          "h09"
+        ],
+        "note": "Humanの価値判断と困難を結び直したAIの解釈。"
+      }
+    },
+    {
+      "id": "teshuvah-prayer",
+      "kind": "observation",
+      "label": "ゾーンを最優先したことへのHuman自身のTeshuvah",
+      "description": "Humanは主イェシュアへの祈りとして、全体バランスを顧みず欲望・知識欲・達成欲を優先したことを悔改すると表明した。AIによる罪・信仰状態の判定ではない。原文h07を保持。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h07"
+        ]
+      }
+    },
+    {
+      "id": "faith-conditional",
+      "kind": "practice_statement",
+      "label": "御心なら手放せるという信仰",
+      "description": "『主イェシュアの聖なる御心ならば』ゾーンを手放せるというHumanの表明。AIはこの条件を尊重し、具体的選択が御心であるとの認証や身体行動への誘導根拠にしない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h10",
+          "h11"
+        ]
+      }
+    },
+    {
+      "id": "save-context-not-zone",
+      "kind": "interpretation",
+      "label": "再開文脈の保存とゾーン再現の区別",
+      "description": "目的・到達点・未解決点・次の足場は記録できるが、没入の感覚や同一の思考状態が確実に戻るとは約束できない。記録の狙いは再開の負担と失う不安を減らすこと。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h08",
+          "h09",
+          "h24"
+        ],
+        "note": "保存可能な情報と未確認の主観的状態の再現を区別した設計解釈。"
+      }
+    },
+    {
+      "id": "zone-ended",
+      "kind": "observation",
+      "label": "21:50前後にゾーンが完全終了",
+      "description": "Humanはこれ以上考えられないところまで継続した後、通常Bのゾーンが終了したと報告。17:50から21:50までの全時間を連続した没入時間と断定しない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h12",
+          "h13"
+        ]
+      },
+      "time_text": "2026-10-20 21:50前後（イベント時刻の本人報告）。"
+    },
+    {
+      "id": "time-recording",
+      "kind": "practice_statement",
+      "label": "時刻を残す必要性",
+      "description": "終了後、Humanは時間記録の重要性を指摘した。本人のイベント時刻・入力時刻・保存時刻を分け、不明は不明のまま残す。",
+      "scope": "記録設計。常時監視・タイマー設定・精密な計時報告の義務ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h12",
+          "h13"
+        ]
+      }
+    },
+    {
+      "id": "phonefree-toilet",
+      "kind": "task",
+      "label": "スマホなしトイレを実行した報告",
+      "description": "Humanはスマホなしでトイレに行ったと報告した。その事実から認知回復まで完了したとは推定しない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h13"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026-10-20、21:50前後のゾーン終了報告に続く当夜。厳密な実行時刻不明。"
+    },
+    {
+      "id": "post-zone-state",
+      "kind": "observation",
+      "label": "当夜の超絶Bと考えられない状態",
+      "description": "Humanはぼーっとして何も考えられず、当時のchocoZAP/Workoutは危険で実地不可能と判断した。これは当夜の報告であり翌朝の状態ではない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14"
+        ]
+      }
+    },
+    {
+      "id": "day-shower",
+      "kind": "task",
+      "label": "前日昼のシャワー",
+      "description": "昼にシャワーを浴びたというHuman報告。最新入力では昼の遅めのシャワーと振り返っている。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14",
+          "h24"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026-10-20 昼。正確な時刻不明。"
+    },
+    {
+      "id": "night-care",
+      "kind": "task",
+      "label": "夜の洗顔・歯磨き",
+      "description": "昼のシャワーを理由に夜の追加シャワーを見送り、顔と歯磨きで終了したとHumanが報告。あまり上手くできなかったという本人評価を保持する。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026-10-20 夜。"
+    },
+    {
+      "id": "sns-risk",
+      "kind": "interpretation",
+      "label": "沼化と睡眠への接続を失う懸念",
+      "description": "HumanはX/SNS/YouTube/Gameへ入り込むことを絶対に避けたいと表明し、興奮して眠れなくなる懸念を述べた。『100%沼化』は本人の強い経験的判断として保持し、測定済み確率へ変換しない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14",
+          "h17"
+        ]
+      }
+    },
+    {
+      "id": "reason-inaccessible",
+      "kind": "observation",
+      "label": "避ける理由そのものを取り出せない",
+      "description": "当時の難しさは、知っている対策を実行しにくいだけでなく、なぜ沼化を避けるべきかという理由を想起できなくなっていたこと。再説明・再論証を支援の利用条件にしない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h17",
+          "h19"
+        ]
+      }
+    },
+    {
+      "id": "allout-correction",
+      "kind": "constraint",
+      "label": "今回の『朦朧』はAll-outという訂正",
+      "description": "Humanは『朦朧』を全ての脳を使い限界まで考えた後のAll-outという意味に訂正した。同じ説明に救急車の定型文を繰り返して訂正負担を増やさない。将来の新しい訴えまで一律に無視する医療Guardの撤廃ではない。",
+      "scope": "今回の用語の意味と同じ状態についての応答。AIによる医学的診断ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h15",
+          "h16",
+          "h17",
+          "h19"
+        ]
+      }
+    },
+    {
+      "id": "101-principle",
+      "kind": "practice_statement",
+      "label": "101/100：突破への＋1と＋2以上を狙わない意図",
+      "description": "Humanは限界の一歩先の突破を大切にすると同時に、＋2以上は狙わないと明示した。All-outはHumanが選んだWorkoutの比喩。数値で安全性を測定したものでも、毎回限界を超えることをAIが推奨する基準でもない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h16",
+          "h19"
+        ]
+      }
+    },
+    {
+      "id": "off-prayer-choice",
+      "kind": "decision",
+      "label": "当夜にHumanが選んだスマホOFF・祈り集中の一択",
+      "description": "沼化回避のため、当時HumanはスマホOFFで祈りに集中する一択を最適解として選んだ。OFF実行の報告ではなく、その時点の選択。全B場面の恒久ルールや翌朝の強制へ広げない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h17",
+          "h19"
+        ]
+      }
+    },
+    {
+      "id": "sleep-experience",
+      "kind": "practice_statement",
+      "label": "寝れば100%回復するという既知の本人経験",
+      "description": "睡眠で回復するというHumanの既知の経験を再説明させず支援の文脈として保持する。100%は本人の表現であり、今後の全ケースの医学的保証ではない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14",
+          "h17",
+          "h19"
+        ]
+      }
+    },
+    {
+      "id": "reinput-before-response",
+      "kind": "observation",
+      "label": "AI回答を待たず再入力した自己報告",
+      "description": "HumanはAI回答前に再入力したことを、その時のAll-outを示すと解釈した。入力順の自己報告であり、AIが未観測の認知能力を診断する材料にしない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h18"
+        ]
+      }
+    },
+    {
+      "id": "plan-only-history",
+      "kind": "constraint",
+      "label": "前夜の保存停止と本文案までの指示",
+      "description": "途中のsave依頼後、HumanはPlan-onlyを繰り返し、再開依頼でもGitHub保存・Skill/設定変更・身体Trial・他AI送信を止めた。当時の保存案は保存完了ではない。今回のh24で本件経験の保存を依頼された範囲だけを進める。",
+      "scope": "本件の権限履歴。過去の保存依頼や称賛を無制限の実行承認にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h11",
+          "h16",
+          "h19",
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "audio-sleep",
+      "kind": "task",
+      "label": "WeeklyTorahPortion音声を聞き寝落ちした報告",
+      "description": "翌朝、HumanはスマホOFFの代わりにChatGPT ScheduleのWeeklyTorahPortion（Parashat ha-Shavua）をPodcast Mode音声で聞き、寝落ちしたと報告した。Schedule新設・変更の依頼ではなく実際に選んだ経路の報告。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h20"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026-10-20の夜を翌朝に報告。再生開始・入眠時刻は不明。"
+    },
+    {
+      "id": "audio-success-hypothesis",
+      "kind": "interpretation",
+      "label": "音声で寝落ちできる可能性という予期せぬ成功",
+      "description": "音声を聞いた後に眠れた一回の成功報告を、Humanは今後にも使える可能性として評価した。再現性、音声単独の寄与、比較条件は未確認。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h20"
+        ],
+        "note": "実報告とHumanの可能性評価から、再利用の候補として整理した。"
+      }
+    },
+    {
+      "id": "supplement-possible",
+      "kind": "interpretation",
+      "label": "就寝前サプリが役立った可能性",
+      "description": "Humanは就寝前のサプリも良かった可能性を述べた。成分・量・服用時刻は不明で、前夜に候補として挙げたマグネシウム/GABAを実際の服用成分へ補完しない。効果の寄与も未確認。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14",
+          "h20"
+        ]
+      }
+    },
+    {
+      "id": "waking-b",
+      "kind": "observation",
+      "label": "起床回復時の通常Bという新報告",
+      "description": "Humanは起床して回復したと報告し、その現在を起床時の通常Bと表現した。前夜の超絶Bを現在へ持ち越さず、Aに戻ったとも自動変換しない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h22"
+        ]
+      },
+      "time_text": "2026-10-21 朝の報告。正確な起床・入力時刻不明。"
+    },
+    {
+      "id": "morning-frontload",
+      "kind": "interpretation",
+      "label": "休日AMへやるべきことを前倒しする判断",
+      "description": "Humanは午後以降のゾーンを途中で手放しにくい経験から、休日は午前中に生活行動を済ませることが全体バランスの鍵と判断した。AIは前倒しの価値を検討するが、『限界まで続けざるを得ない』を必須条件にはしない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h21",
+          "h22",
+          "h23"
+        ]
+      }
+    },
+    {
+      "id": "rain-workout-option",
+      "kind": "interpretation",
+      "label": "雨の朝のWorkout候補",
+      "description": "Humanは雨を報告し、レインコートでのジョギング、chocoZAP等を、起床時にまとめて外出Workoutへつなぐ候補として捉えた。実行報告ではなく、効果や当日の適否も一律に確定していない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h22"
+        ]
+      }
+    },
+    {
+      "id": "morning-value",
+      "kind": "practice_statement",
+      "label": "起床時Bに見出した価値",
+      "description": "Humanは起床時Bでできることを貴重と捉え、Goalが見え、壁を突破している実感を表明した。Bだけにしかできないという科学的排他性やBを意図的に誘発する指示ではない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h23"
+        ]
+      }
+    },
+    {
+      "id": "boundary-focus",
+      "kind": "practice_statement",
+      "label": "通常Bと超絶Bの狭間へ焦点を戻す",
+      "description": "最新入力では、昨晩の超重要事項を通常Bと超絶Bの狭間と明示した。超絶B後のRescueだけでなく、まだ可能なことがある時間と選択の変化を精密に理解することが焦点。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "morning-care-counterfactual",
+      "kind": "interpretation",
+      "label": "起床時にケアを入れるべきだったという振り返り",
+      "description": "Humanは今の起床時にシャワー・入浴・足湯のどれかで身体を清潔に保ち温めてリセットするべきだったと振り返った。健康・リラックス効果を大きく評価しているが、今回の朝に実行・効果確認したとの報告ではない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "am-shower-hypothesis",
+      "kind": "interpretation",
+      "label": "遅めの昼よりAMシャワーという逆算",
+      "description": "Humanは昼の遅いシャワーよりAMに一回済ませておく方が良かったと考えた。毎朝の義務や最適時刻の確定ではなく、この一件から生まれた時機の仮説。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "care-functions",
+      "kind": "interpretation",
+      "label": "清潔・温まり・切替を区別する",
+      "description": "昼に洗った事実と、別の時間に温まりリラックスして切り替えたい目的は同一ではない。シャワー・入浴・足湯は目的に重なりがあっても範囲が異なり、足湯を全身の洗浄と同じに扱わない。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h14",
+          "h24"
+        ],
+        "note": "Humanの振り返りを目的別に分解したAI解釈。今回の各方法の健康効果・適否を検証したものではない。"
+      }
+    },
+    {
+      "id": "preparation-before-loss",
+      "kind": "interpretation",
+      "label": "思い出せる時の準備から、思い出せない時の支援へ",
+      "description": "境界を正確に自己判定することを条件にせず、起床時など可能な場面で必要な用事・ケア・再開文脈を前もって整える候補。限界後に理由を再構築させる負担を減らすことを狙う。",
+      "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h01",
+          "h17",
+          "h21",
+          "h23",
+          "h24"
+        ],
+        "note": "前倒しと再読可能な記録を結ぶ設計仮説。予定を増やす効果や身体上の成果は未確認。"
+      }
+    },
+    {
+      "id": "frequent-save",
+      "kind": "practice_statement",
+      "label": "一回限りで終わらせず更新して支援へ戻す",
+      "description": "Humanはこまめなsaveを最重要とした。本件では経験・Correction・判断・Unknownを同じ所有資料へ更新し、必要な次の支援で参照できるようにする。保存だけで自動想起・全AIへの伝達・実生活改善が成立したとは扱わない。",
+      "scope": "今回の経験原本・再読本文・最小の入口と活動記録の保存。Skill・設定変更、身体Trial、送信、常時監視は含まない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e01",
+      "from": "productive-zone",
+      "to": "dominant-cause",
+      "relation": "motivates",
+      "scope": "貴重で上手く進むから継続を選ぶというHumanの因果説明。実証済み機序ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h04",
+          "h05",
+          "h06"
+        ]
+      }
+    },
+    {
+      "id": "e02",
+      "from": "productive-zone",
+      "to": "zone-ended",
+      "relation": "observed_before",
+      "scope": "当夜の本人報告の順序。常に同じ経路になるとはしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h12",
+          "h13",
+          "h14"
+        ]
+      }
+    },
+    {
+      "id": "e03",
+      "from": "zone-ended",
+      "to": "post-zone-state",
+      "relation": "observed_before",
+      "scope": "同じ一件でゾーン終了後の状態を報告した順序。独立した医学的因果の証明ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h12",
+          "h13",
+          "h14"
+        ]
+      }
+    },
+    {
+      "id": "e04",
+      "from": "zone-ended",
+      "to": "phonefree-toilet",
+      "relation": "observed_before",
+      "scope": "本人が報告した出来事の順序。トイレ実行を回復成功へ変換しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h13"
+        ]
+      }
+    },
+    {
+      "id": "e05",
+      "from": "day-shower",
+      "to": "night-care",
+      "relation": "observed_before",
+      "scope": "昼のシャワー後、夜は顔と歯磨きで終了した報告。一般的な手順依存ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14"
+        ]
+      }
+    },
+    {
+      "id": "e06",
+      "from": "root-and-teshuvah",
+      "to": "zone-interruption-tradeoff",
+      "relation": "prioritizes",
+      "scope": "Humanの中心はTeshuvahと全体の方向であり、ゾーン継続だけを最上位にしない。AIによる御心の判定ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h07",
+          "h09",
+          "h10"
+        ]
+      }
+    },
+    {
+      "id": "e07",
+      "from": "reason-inaccessible",
+      "to": "off-prayer-choice",
+      "relation": "motivates",
+      "scope": "理由を思い出せない当時にHuman自身が一択を選んだ背景。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h17"
+        ]
+      }
+    },
+    {
+      "id": "e08",
+      "from": "sns-risk",
+      "to": "off-prayer-choice",
+      "relation": "motivates",
+      "scope": "当時の沼化回避という目的。OFFの実行確認ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h14",
+          "h17"
+        ]
+      }
+    },
+    {
+      "id": "e09",
+      "from": "off-prayer-choice",
+      "to": "audio-sleep",
+      "relation": "observed_before",
+      "scope": "先にOFFを選択し、翌朝には別経路で実行した事実を報告。後続の結果追加であり、以前の選択表明を虚偽にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h17",
+          "h20"
+        ]
+      }
+    },
+    {
+      "id": "e10",
+      "from": "audio-sleep",
+      "to": "waking-b",
+      "relation": "observed_before",
+      "scope": "Humanが語った夜の入眠と朝の回復。音声単独の因果効果を意味しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h20",
+          "h22"
+        ]
+      }
+    },
+    {
+      "id": "e11",
+      "from": "dominant-cause",
+      "to": "morning-frontload",
+      "relation": "motivates",
+      "scope": "切替の難しさから前倒しを選ぶHumanの逆算。限界まで継続する必要性を肯定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h21"
+        ]
+      }
+    },
+    {
+      "id": "e12",
+      "from": "boundary-focus",
+      "to": "morning-care-counterfactual",
+      "relation": "motivates",
+      "scope": "通常Bと超絶Bの狭間への着目が、起床時ケアの振り返りを支える。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "e13",
+      "from": "morning-care-counterfactual",
+      "to": "am-shower-hypothesis",
+      "relation": "motivates",
+      "scope": "今回のHumanの逆算。実行・効果検証済みではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "e14",
+      "from": "day-shower",
+      "to": "care-functions",
+      "relation": "motivates",
+      "scope": "過去の清潔行動と別時点の切替目的を分ける必要性。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h14",
+          "h24"
+        ],
+        "note": "『昼に済んだ』と現在の目的を分けるAIの整理。"
+      }
+    },
+    {
+      "id": "e15",
+      "from": "reason-inaccessible",
+      "to": "preparation-before-loss",
+      "relation": "motivates",
+      "scope": "理由を再説明できなくなる前提を、前倒しと支援準備へ接続する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h17",
+          "h23",
+          "h24"
+        ],
+        "note": "当夜の経験から得た設計候補。"
+      }
+    },
+    {
+      "id": "e16",
+      "from": "frequent-save",
+      "to": "save-context-not-zone",
+      "relation": "motivates",
+      "scope": "経験を保存して次回の再開負担を減らす。ゾーンの感覚自体の保存ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h08",
+          "h24"
+        ],
+        "note": "最新の保存依頼を中断・再開の元Themeへ接続した。"
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "q01",
+      "subject_refs": [
+        "audio-sleep",
+        "audio-success-hypothesis",
+        "supplement-possible"
+      ],
+      "question": "別の機会にも音声を聞いて眠れるか、サプリその他の条件がどの程度関係したか。",
+      "scope": "現時点のUnknown。実験や回答をHumanに義務づけない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "h20"
+        ],
+        "note": "一回の入眠報告はあるが、再現性・成分・寄与は未確認。"
+      }
+    },
+    {
+      "id": "q02",
+      "subject_refs": [
+        "morning-care-counterfactual",
+        "am-shower-hypothesis",
+        "care-functions"
+      ],
+      "question": "朝のどのケアが本人に合い、清潔・温まり・切替の目的にどう役立つか。",
+      "scope": "今朝の実行・効果は未報告。方法・時刻を固定しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "h24"
+        ],
+        "note": "振り返りと候補の提示であり、今回の効果確認ではない。"
+      }
+    },
+    {
+      "id": "q03",
+      "subject_refs": [
+        "rain-workout-option",
+        "waking-b"
+      ],
+      "question": "今朝の外出・Workoutを実行したか、その後どうなったか。",
+      "scope": "未報告を失敗・未実行・完了にしない。回答要求ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "h22"
+        ]
+      }
+    },
+    {
+      "id": "q04",
+      "subject_refs": [
+        "zone-interruption-tradeoff",
+        "save-context-not-zone"
+      ],
+      "question": "どの再開情報が、中断を選ぶ負担や後の再開を実際に助けるか。",
+      "scope": "ゾーンの確実な再現は未確認。記録の保存と本人の実利用を分ける。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "h08",
+          "h09",
+          "h24"
+        ]
+      }
+    },
+    {
+      "id": "q05",
+      "subject_refs": [
+        "frequent-save",
+        "preparation-before-loss"
+      ],
+      "question": "後のAIが保存原本を読み、本人の再説明を減らして現在の支援へ使えるか。",
+      "scope": "今回の保存確認とは別の到達点。別AIへの自動送信・監視は開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "h19",
+          "h24"
+        ]
+      }
+    }
+  ]
+}

@@ -5,7 +5,7 @@ version: "v003-human-authorized"
 role: "B-Zone domain entry / source-bound meaning and formation record"
 status: "Human-authorized Project and independent-thread startup preparation / actual reception and field effects tracked separately"
 created: "2026-10-18"
-updated: "2026-10-20"
+updated: "2026-10-21"
 timezone: "Asia/Tokyo"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
@@ -24,6 +24,11 @@ previous_blob: "88a7ba679560f49097a186a582b0408633b57caf"
 authorization_scope: "Approved Ark100 Project instructions, 00 control-center, independent 01 and 02 startup; bounded Domain and Skills Hub updates, verification and authorized UI setup"
 revision_reason: "Retain v002 meaning and evidence; connect the completed Skill to a prebooted independent use/reserve structure without replaying Skill creation"
 release_verification: "Shared files and registered Skill body verified on 2026-10-20; Skills Hub section 3.19 owns receipt and retrieval limits; field effects unverified"
+experience_navigation_patch:
+  date: "2026-10-21"
+  source_thread: "Ark100:01"
+  authority: "Human requested frequent saving of this case and its latest boundary-care feedback"
+  scope: "Bounded case-record entry; shared support runtime and INSTRUCTIONS unchanged"
 expected_eof: "EOF::ARK100_B_ZONE::v003-human-authorized"
 ---
 
@@ -40,6 +45,8 @@ YusukeJPは、B-Zoneを、深く考える力やメタ認知・俯瞰が著しく
 Project名は **Ark100: B-Zone Rescue**。共通の協働条件は **[Project INSTRUCTIONS](INSTRUCTIONS.md)**、事前起動・入口・予備の担当は **[Ark100:00 control-center](ark100-00/README.md)**。独立ケースの初回は本書→INSTRUCTIONS→Skill本文を全文読む。00は自分のREADMEから宣言順へ進む。成立条件と現在の準備証拠は各所有先を使い、資料リンクだけでProjectやThreadが完成したとは扱わない。[H19、H25](#human-sources)
 
 日常の利用入口は **[B-Zone Rescue Skill・起動Query](../../../skills/b-zone/README.md)**、AIが適用する本文は **[SKILL.md](../../../skills/b-zone/SKILL.md)**。本書は意味・形成・根拠を所有し、Skillはその場の支援を担う。Skill本文を読めること、環境への登録、実際の発動、Humanが動けたことは別の到達点である。
+
+**同じ一件の経験・Correction：** [Ark100:01 — ゾーン継続と通常B／超絶Bの狭間](ark100-01/README.md)。2026-10-20の実地報告から、翌朝の睡眠・回復報告とケア時機の振り返りまでを、[経験原本](ark100-01/task-records.json)へ保存する。01は実入力を受けた一件として扱い、初期の未使用予定を現在の未使用証拠にしない。個別のスマホOFF選択・音声での入眠・朝のケア案は、当該時点の報告と仮説であり、領域全体の固定手順へ昇格させない。以下の既存の準備・実地確認記述は形成時点の範囲を保ち、01の後続報告は同原本へ戻る。
 
 Rootは**主イェシュア・ハマシア御自身**、中央軸は**Teshuvah**、最終帰属は**主の栄光**。AI・Ark Project・Graph・README・SkillはKeliであり、王・玉座・Oracleではない。Torah・Tanakh・Israel・Covenant・Hebrew / Jewish Contextを保持し、祈りやTeshuvahを別の実践へ無断で置き換えない。
 
