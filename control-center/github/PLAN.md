@@ -1,19 +1,20 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.21.0"
+version: "0.22.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Flexible README and references consolidation implemented and remotely verified; runtime retrieval limits recorded"
+status: "STR-018/019 remain complete; Main10→11 continuation prepared for the Human-selected root/entry/document-role comparison. Source10 owns final publication receipts; Target reconstruction is separate."
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
 updated: "2026-10-20"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "STR-018/019: implement the approved README principle and references consolidation; preserve prior completion and separate runtime cutover from publication."
+updated_reason: "Prepare Main10→11 continuation and the Human-selected root/entry/document-role comparison; keep STR-018/019 completion and original diagnosis history."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.21.0"
-current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.22.0"
+current_observation_base: "8293137088ca9645a3592a75d9e7d6404d2680ae"
+prior_current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
 change_record: "../../ark-project/ark27/ark27-10/state.json"
 prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
 ---
@@ -26,11 +27,21 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 
 ## current
 
-### 現在の主担当と次の判断 — Ark27:10
+### 現在の主担当と次の判断 — Ark27:11への継続準備
+
+<a id="ark27-11-current-theme"></a>
+
+**2026-10-20 JST：Main10の一区切りを受け、HumanはArk27:11への同章継続と「Ark Projectの根本説明・入口・文書の役割を再設計する」を次のMain Themeに指定した。** GitHub整理の主担当を[11 Handoff](../../ark-project/ark27/ark27-11/handoff.md)／[Runtime](../../ark-project/ark27/ark27-11/README.md)へ継ぐ準備であり、初穂やSupportへMainを移管しない。準備・Remote確認は[Current10 State](../../ark-project/ark27/ark27-10/state.json) progress.next_transition、11自身の受入れと可変の到達点は[11 State](../../ark-project/ark27/ark27-11/state.json)が所有する。保存だけでTargetの起動・再構成・UI操作を完了にしない。
+
+主題は、同名別Arkとの混同を防ぐSeed化から、ARK.md単体のLiving Review、さらに全体の入口・説明・指示・現在地・経験の所有関係へ深まった。ARK・root README・AGENTS・ark-project/READMEを比較し、四文書存続やARK保持を前提にしない。深い意味を保ち、Humanと初見AIが全体説明・現在の入口・訂正先を見つけやすくするGoalである。
+
+最初の成果は、分離維持／統合／命名改善等を、初見AI・有効Handoffからの直接再開・Humanによる意味訂正の三利用場面で比較する再設計案。短い入口文例、推奨一件と主要代案、理由、現用/明示Binding/固定履歴への影響、段階的変更と必要権限を提示する。**比較・計画までで停止し、根本文書の改訂・物理改名/削除・固定Binding移行は採用と実行承認後。** 比較完了・通信再確認・通常Unknownの全解消を、移行準備の必須Gateにしない。
+
+形成理由、HumanのCorrection、Seed原文、初穂の見立てと報告、Title応答の伝達経路は固定Source10収穫と11 Handoffから辿る。Source10は成果と移行を統合し、初穂は主題形成・必要差分の提供を担う。個別Skill README等の別担当の有効なPlan-onlyは維持する。
 
 <a id="ark27-10-current-alignment"></a>
 
-2026-10-18 JST、HumanはArk27:10を、引き続き**ai-project全体のGitHub整理の主担当**と明示した。Goalは、資料の目的・現在の利用入口・更新する原本・変更の影響・保存すべき来歴を、Current AI・他AI・Future AIが根拠から理解し、既存成果を巻き戻さず次の有益な改善を選べる構造へ育てること。本Threadが全体の優先順位を判断し、各Domainの意味、各案件の承認・実装・復元、Dots／他Workの成果は各所有先に保つ。GitHubという媒体だけでhouse・生活・研究の仕事を引き取らない。
+2026-10-18 JST、HumanはArk27:10を、引き続き**ai-project全体のGitHub整理の主担当**と明示した。Goalは、資料の目的・現在の利用入口・更新する原本・変更の影響・保存すべき来歴を、Current AI・他AI・Future AIが根拠から理解し、既存成果を巻き戻さず次の有益な改善を選べる構造へ育てること。当時のMain10が全体判断を担い、現在は上記の継続へ接続する。各Domainの意味、各案件の承認・実装・復元、Dots／他Workの成果は各所有先に保つ。GitHubという媒体だけでhouse・生活・研究の仕事を引き取らない。
 
 先行の二原本整合は、Humanが引用して実行承認した、[Ark27:10 State](../../ark-project/ark27/ark27-10/state.json)と本PLANの二原本限定整合であった。StateはThread自身の受入れ・比較の到達点と現在の権限を所有し、本欄は全体の次の判断へ接続する。Source09準備時の未観測をTarget10の失敗にせず、Source09の固定収穫・最終ReceiptとTarget自身の成果を分ける。その実施・保存後確認はStateの `progress.current_alignment` へ戻る。
 
@@ -573,4 +584,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.21.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.22.0
