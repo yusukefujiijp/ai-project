@@ -1,7 +1,7 @@
 ---
 title: "STR-022 — Dots原本をagents配下へ移す候補と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
-version: "v001-candidate"
+version: "v002-candidate"
 status: "prepared candidate; main cutover held pending actual Dots schedule access"
 created: "2026-10-20"
 updated: "2026-10-20"
@@ -11,7 +11,7 @@ base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
 publication_parent: "43cdadf6ff3244edff69098237fce639fd237064"
 candidate_branch: "work/dots-agent-location-20261020"
 role: "Bounded structural change, provenance, validation and operational cutover conditions"
-expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v001"
+expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v002"
 ---
 
 # STR-022 — Dotsの所在と実運用を揃える
@@ -112,4 +112,14 @@ Ark28:06のRuntime・Handoff・Stateは変更しない。同HandoffのDotsはCur
 
 今回の一区切りは候補の保存と再取得確認まで。main切替・製品側反映・実運用は未完了のまま明示する。候補の保存結果はGit commit / Draft PRと本Workの結果報告へ接続し、次の実施時には本記録の観測を更新する。確認の記録を無限に追加せず、日時の要点は[records](../../records/README.md)へ一活動として残す。
 
-EOF::STR_022_DOTS_AGENT_LOCATION::v001
+## 7. 候補のGitHub保存と再取得（2026-10-20 JST）
+
+[実装候補commit 9f7e67bf](https://github.com/yusukefujiijp/ai-project/commit/9f7e67bf48a6fc392296464d6127d4d152aa7eeb)を `work/dots-agent-location-20261020` へ保存し、[Draft PR #9](https://github.com/yusukefujiijp/ai-project/pull/9)を作成した。共有基準mainへは反映していない。
+
+2026-10-20T12:32:29Zまでに、固定候補commitから全55対象本文とSHAを再取得し、意図した全文と一致した。候補treeでは旧データ7パスが不在で、対象外611 blob/modeを保持していた。GitHubのrename表示では55 changed files、新旧住所を別々に数える本記録では62変更パスであり、数え方の差である。
+
+PR作成時にmainがさらに `429ee61290a8531edc6c59596697f8c96d642f65` へ進んだことを検出した。43cdからの増分は `ark-project/README.md` の1行整合で、Bの変更対象との重複はない。この追加も候補へ統合して保持する。元の移設比較基準、固定証拠、最初の保存結果を新しい時点へ塗り替えない。
+
+この節は候補の保存確認の追記。製品予定・登録Skillの実更新、main切替、外部AIの受入れ・運用成功を意味しない。Bの既承認範囲は保持され、次の不足は対象予定を正規の製品設定画面で特定する接続である。
+
+EOF::STR_022_DOTS_AGENT_LOCATION::v002
