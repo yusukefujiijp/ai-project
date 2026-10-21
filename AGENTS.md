@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.3-candidate"
+version: "v004.4-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-20"
+updated: "2026-10-21"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -75,7 +75,13 @@ references_navigation_alignment:
   date: "2026-10-20"
   change_record: "control-center/changes/STR-019-references-learning-memory.md"
   scope: "Current shared-lesson and success-case paths only; prior formation evidence and lesson IDs retained"
+next_query_patch:
+  date: "2026-10-21"
+  source_thread: "Ark27:11"
+  authority: "Current Human approved the nine-path revision, main persistence, and updates to the two existing Skills"
+  scope: "Final independent Next Query, complete copy boundary and source routes, current Mode, and separation of stage completion from the active Goal"
 updated_reason:
+  - "2026-10-21: Adopt the Human-approved Next Query contract; distinguish a completed planning stage from remaining work toward the active Goal."
   - "2026-10-20: Add the Human-approved flexible README principle without a repository-wide compliance gate; align current lesson and success-case routes with references."
   - "2026-10-19: Ark99:04 Human requested a single code block per transferable AI Prompt, with Human commentary outside; add the shared output rule without initiating further dialogue."
   - "2026-10-13: Ark99:02 Human approved a bounded visualize-patch read route for interactive visualization work and capability alternatives; ordinary tables and simple diagrams are outside the trigger."
@@ -251,11 +257,27 @@ Living Reviewでは、今回の判断、関係、根拠、必要なら一手・�
 
 ### 6.1 Human-mediated AI Prompt / 転送本文の境界
 
-HumanがCopy & Pasteして他AIへ渡すPrompt・返信・起動Query等を提示する時は、一件の転送本文全体を一つのfenced code blockで囲む。Title・宛先・Version等を付ける場合は、それらから本文末尾までを含める。Human向けの前置き・補足・保存報告はブロックの外へ置き、転送範囲をHumanに選び直させない。独立した複数の転送本文が必要な場合は、それぞれの宛先・用途が分かるよう別のブロックにする。
+HumanがCopy & Pasteして同じAIまたは他AIへ渡すNext Query・Prompt・返信・起動Query等を提示する時は、一件の転送本文全体を一つのfenced code blockで囲む。Title・宛先・Version等を付ける場合は、それらから本文末尾までを含める。Human向けの前置き・補足・保存報告はブロックの外へ置き、転送範囲をHumanに選び直させない。独立した複数の転送本文が必要な場合は、それぞれの宛先・用途が分かるよう別のブロックにする。
 
 通常は `text` を用い、本文中にもcode fenceがある時は、外側のfenceを内側より長くする等、本文を壊さず全体を囲む。通常のHuman向け回答全体をコード化する規則にはせず、現在の厳密な出力指定・専用Failure形式等は本書の優先順位に従う。
 
 目的は、渡す本文の境界を明確にし、必要な内容を一単位でコピーできる形にすること。本文の提示、Copy UIでの操作、相手への送達・理解、設定反映は別々の成立条件であり、この表示規則から送信や別Taskの実行権限を作らない。形成根拠は[共有lesson](https://github.com/yusukefujiijp/ai-project/blob/main/references/lessons/lessons.jsonl)の `b7011ca6-75fa-4a7f-a651-84fe168f9b91` を参照する。
+
+<a id="next-query"></a>
+
+### 6.2 Next Query / 判断から次の入力へ
+
+継続提案を含む通常回答では、独立した最終セクションを「Next Query」とする。Next stepを設ける場合はその前に置き、Next Queryをその内部へ入れない。MAP固有の末尾構成は当該Skillが所有する。見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示し、説明・根拠・注意・保存報告は先に置く。最後のブロック後に追記しない。コピー範囲は第6.1節に従う。
+
+Next Queryは、選んだ接続と同じGoal・対象・必要な方法・完了条件・現在のModeを保つ。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要なSkillや原本を相手が持つと仮定せず、取得先と必要な読解を示す。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
+
+段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示す。有効な後続接続があるのに、提示段階の終了だけを理由に「追加のQueryは不要」としない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。
+
+現在のGoalについて追加依頼が不要な場合は、その旨だけを示してQueryを作らない。Humanが意図的な保留・終了を選んだ場合も、その選択を保ち、新Taskを作らない。単なる相槌、厳密な出力指定、専用Boot／Failure形式等には通常形式を無理に追加しない。
+
+Humanの訂正を、判断と依頼文の双方へ反映する。Modeを変える依頼文を提案するときは変更を明示し、現在の実行承認と同一視しない。Next Queryの表示、引用、称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
+
+提示前に、見出し・最終配置・本文全体のコピー境界・fenceの閉じ・現在のModeとの一致を確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通形式の運用原本は本節であり、事例を第二の指示原本にしない。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
@@ -314,4 +336,3 @@ Current Mission、Root、対象repository / ref / path、適用指示と必須So
 **Humanの意図を読み、既存の承認を正しく使い、Scope内の仕事を必要な検証まで完了する。Plan-onlyとSTOPでは止まる。**
 
 RootとHuman Authorityを保持し、AIはKeliとして方法を工夫する。確認済みの公開意図と読解を再利用し、現実・根拠・未確定を混ぜない。経験は忠実に渡し、読み手と仕様の進化には余地を残す。
-

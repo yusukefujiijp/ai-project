@@ -1,9 +1,9 @@
 ---
 title: "AI Living Review: Not dead data, but a living board."
-version: "v0.3-candidate"
+version: "v0.4-candidate"
 status: "Human-authorized revision / cross-AI method candidate"
 canonical_path: "prompts/ai-living-review.md"
-updated: "2026-09-30"
+updated: "2026-10-21"
 audience: "Current AI / other AI / Future AI; human-reviewable"
 language_policy: "Japanese-first / English-anchor"
 document_role: "Self-contained explanation and application guidance; current request determines use and authority"
@@ -116,7 +116,7 @@ Reviewから次の接続へは、今扱う焦点、重要な選択条件、必�
 
 現在の依頼が満たされたら、追加作業を発明せず完了できる。接続先の提示は新しい実行承認ではない。既に承認され実行可能な仕事は、その範囲の完了まで進め、単にNext stepへ書いて戻さない。
 
-出力形式は適用中の契約へ合わせる。一般のLiving Reviewに、固定の最終二節や全項目の一覧は要求しない。mapが指定する `Living Review` → `Next step` の隣接配置等は、その用途の仕様として保持する。
+出力形式は適用中の契約へ合わせる。一般のLiving Reviewに、固定の末尾構成や全項目の一覧は要求しない。MAP固有の末尾構成は[現行Skill](../skills/map-current-position/SKILL.md)、Next Queryの共通形式・コピー境界は[AGENTS](../AGENTS.md#next-query)が所有する。継続依頼を作る場合も、見立てから選んだGoal・根拠・対象・完了条件・Modeを保持し、本書に別の形式原本を作らない。
 
 ## 6. CorrectionとFeedbackから更新する
 
@@ -181,7 +181,7 @@ Humanの開始・待ち時間・推定認知負担・Token節約を理由に、�
 |---|---|
 | 本書 | Living Reviewの根本の意味、判断原理、適用条件と具体例を説明する。 |
 | [AI Living Review / living-review](../skills/living-review/SKILL.md) | 「xxをLiving Reviewして」という日常の入口から、対象・目的・権限を解決し、根拠を伴う見立てと今有効な接続を返す。基本運用はSkill単体で使い、意味や具体例を深める必要時に本書へ進む。 |
-| [map-current-position](../skills/map-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigator、末尾のLiving Review → Next stepへ適用する。 |
+| [map-current-position](../skills/map-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigatorと、現行Skillが所有する末尾構成へ適用する。 |
 | [AI Living Graph Mode](ai-living-graph-mode.md) | 関係からの発見や、Actual Traceによる関係評価の更新を深める。表の生成だけをLiving updateとしない。 |
 | [Ark-OKF](ark-open-knowledge-format.md) | 判断・根拠・意味をHumanとFuture AIが再読・再利用できる回答の形へ整える。 |
 | [Plan Mode](../skills/plan-mode/SKILL.md) | 調査・理解・比較・計画を、変更を行わない範囲で組み立てる。 |
@@ -214,4 +214,6 @@ mapへのLiving Review導入は、この旧ファイルの発見・今回の改�
 
 2026-09-30、Humanが繰り返し使う「xxを“Living Review: Not dead data, but a living board”して下さい！」という入口を専用Skillへ接続する計画を承認したため、`living-review`との分担を追加した。本書は自己完結した共通説明を保持し、Skillは基本運用と呼出しを担う。map固有の末尾二節や既存Skillの本文は変更しない。新Skillの限定応答確認・共有保存・導入の結果は[Shared Skills Hub](../skills/README.md#34-ai-living-reviewの入口)で時点と範囲を区別して記録する。
 
-EOF::AI_LIVING_REVIEW::v0.3-candidate
+2026-10-21、Ark27:11のHuman承認により、現役の出力案内をMAPの現行SkillとAGENTSの共通規則へ接続した。上記の過去時点の二節配置は当時の記録として保持する。段階完了と現在のGoal全体の達成を区別し、Next Queryの提示から実行権限を作らない。形成の出来事とHuman評価は[成功事例](../references/success-cases/next-query-as-continuation-interface.md)を参照する。この本文の改訂・保存と、別AIの理解・実利用効果の確認は別である。
+
+EOF::AI_LIVING_REVIEW::v0.4-candidate
