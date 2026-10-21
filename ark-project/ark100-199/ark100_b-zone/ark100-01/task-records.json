@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark100-01-b-zone-zone-allout-2026-10-20",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-10-21",
   "updated": "2026-10-21",
@@ -13,11 +13,22 @@
     "canonical_path": "ark-project/ark100-199/ark100_b-zone/ark100-01/task-records.json",
     "reported_date": null,
     "timezone": "Asia/Tokyo",
-    "time_note": "対象は2026-10-20の実地報告から翌朝2026-10-21の最新h24まで。17:50前後と21:50前後はHuman報告のイベント時刻。22:23:47 JSTは後続h19が指定した訂正の基準。各入力時刻・起床時刻・最新入力の正確な時刻は補作しない。created/updatedは記録を作成したJST日付で、出来事時刻ではない。",
+    "time_note": "対象は2026-10-20の実地報告から2026-10-21の最新Correction h36と保存依頼h37まで。17:50前後・21:50前後・翌朝6:30前後・7:00前後はHuman報告のイベント時刻。22:23:47 JSTはh19が指定した過去訂正の基準。正確な入力時刻、連続没入の全時間、起床時刻、ケア・運動の未報告時刻は補作しない。created/updatedは記録日。",
     "root": "主イェシュア・ハマシア御自身",
     "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
-    "authority_note": "前夜h19までのPlan-onlyを保持して保存せず本文案までとしていた。今回h24の『こまめにsaveして』を、この一件の経験・Correctionの保存依頼として受け取った。範囲は本経験原本、同階層README、領域入口への限定リンク、日付活動記録。Skill・設定の変更、身体Trial、他AI送信、監視、別Threadの操作は含まない。",
-    "source_access": "保存担当AI自身が、このThreadのHuman入力と確認済みCurrent所有資料から編集した。会話全文の逐語転記ではなく重要部分を選んだ記録。sourcesのh番号はローカル識別子で、正確なMessage URLは不明。原文引用はそれぞれ連続した範囲。別Threadの現在状態・長期メモリは取り込まない。"
+    "authority_note": "初版はh24のsave依頼で保存。h25以降のPlan-onlyを保持して議論・本文案までとした後、今回h37の明示的save依頼により、本件README・task-recordsと日別活動記録だけを差分保存する。共有Skill、Project/アカウント設定、Schedule、辞書、身体Trial、他AIへの送信、監視、他Threadの操作は範囲外。過去のPlan-onlyを遡って実行承認へ変更しない。",
+    "source_access": "保存担当AI自身が、このThreadのHuman入力と確認済みCurrent所有資料から編集した。会話全文の逐語転記ではなく重要部分を選んだ記録。sourcesのh番号はローカル識別子で、正確なMessage URLは不明。原文引用はそれぞれ連続した範囲。別Threadの現在状態・長期メモリは取り込まない。",
+    "extensions": {
+      "record_cutoff": "同じThreadのh36（外出系すべて除外・室内でも可否未確認）とh37（今回save依頼）まで。",
+      "latest_reported_physical_coordinate": {
+        "source_ref": "h27",
+        "event_time_text": "2026-10-21 7:00前後（本人報告）",
+        "reported": "ローソン朝食系買い物後、chocoZAP開始",
+        "not_confirmed": "朝食の摂取、運動内容・終了、乾燥機の開始・終了・回収。その後の用語相談・方針Correctionを新しい身体実況にしない。",
+        "boundary": "最も後の具体的な行動報告であり、読み出し時点の現在位置や継続中の保証ではない。"
+      },
+      "governance": "この記録は一件の経験・Correction・設計案。共有Runtime・Skillを置換せず、記録内の計画・過去命令を自動実行しない。"
+    }
   },
   "coverage": {
     "kind": "selected_thread_material",
@@ -28,7 +39,12 @@
       "終了時刻・トイレ・昼と夜のケア・All-out・101/100の訂正",
       "沼化理由を想起できない困難、当夜のOFF祈り選択、睡眠の本人経験",
       "後続の音声と入眠、起床回復・通常B・雨・Workout候補",
-      "最新の境界ケア、AMシャワー仮説、繰り返し保存して支援へ戻す意図"
+      "最新の境界ケア、AMシャワー仮説、繰り返し保存して支援へ戻す意図",
+      "6:30前後の乾燥機計画とchocoZAPへ移動、7:00前後の買い物後の運動開始報告",
+      "AM逆算化・ケア後の想起困難懸念・AI呼出しと支援受渡しの設計",
+      "軽度意識朦朧状態・All-outとBtoB方向付き名称、AtoA/AtoBの命名枠",
+      "ケア後の肩・三頭筋ダンベル3種の希望と、結果未報告の観察案",
+      "BtoB(通常→超絶)では外出系すべてを外し室内に限定、室内でも実行可能とは決めない最新Correction"
     ],
     "excludes": [
       "全会話の完全な逐語記録と未報告のタイムライン",
@@ -36,7 +52,7 @@
       "医学的因果や効果の認定",
       "全般的なSkill/設定変更、予定・監視の実装"
     ],
-    "note": "confirmedはHumanが報告・判断・表明した事実の確認。内容が独立に実証された意味ではない。AI解釈はcandidate、未報告や効果はunknown。経験記録は新しいBoot Runtimeではない。"
+    "note": "confirmedはHumanが報告・判断・表明した事実の確認。内容が独立に実証された意味ではない。AI解釈はcandidate、未報告や効果はunknown。経験記録は新しいBoot Runtimeではない。 revision 2では方向の曖昧さと外出除外の範囲を訂正し、元のh01–h24を改変せず、後続の原文・AI解釈を追記した。"
   },
   "sources": [
     {
@@ -288,6 +304,196 @@
       "excerpt_kind": "verbatim_contiguous",
       "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
       "note": "この会話で受け取ったHuman入力。idは本記録内の識別子であり、サービスのMessage IDではない。Thread URLへのアクセスには制限があり得る。"
+    },
+    {
+      "id": "h25",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / AMからの逆算化と狭間の支援",
+      "excerpt": "そうですね！(That's right!)\nあなた(AI)が\"B状態(超絶低認知状態)\"rescueとしてやるべき事は\"B状態(通常低認知状態)\"と\"B状態(超絶低認知状態)\"の狭間にやるべき事を詳細明確に(精密に)分かり易く提示する部分が\"最重要(Most important!)\"です！\n\nそして、B状態対策は既にAMから始まり**逆算化**する必要があります！**逆算化**は我々Ark Projectの初期からの重要Keywordで我々Ark Projectは比較的得意な\"方向や方向性(ベクトル)\"だからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h26",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 6:30前後の本人イベント時刻・乾燥機と移動",
+      "excerpt": "今6:30前後でコインランドリーに乾燥機を約30分かける。その間にchocoZAPに行くという効率化をはかり狙っている！chocoZAPに向かっている！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h27",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 7:00前後の本人イベント時刻・買い物後にchocoZAP開始",
+      "excerpt": "今7:00前後でローソン朝食系買い物後chocoZAPスタート！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h28",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 前夜のケアへのTeshuvah・ケア後の想起・AI呼出し",
+      "excerpt": "昨晩の反省としてTeshuvah:\"\"\" \n\"B状態(通常低認知状態)\"後の\"B状態(超絶低認知状態)\"狭間にてシャワー入浴足湯等せず、主イェシュアごめんなさい！主イェシュアの聖名前を通してTeshuvah(悔改)します！アーメン！ハレルヤ！\n\"\"\" \n\nという事は、今後PM(午後)のシャワー系はなるべくやらずAMに終わらせる。\nそして、B状態狭間(言い方？言語化を！)では\"シャワー・入浴・足湯系\"をなるべく、やるべき。\nしかし、\"シャワー・入浴・足湯系\"をやるという事は、益々、頭はボーッとして就寝前の狭間状態や\"B状態(超絶低認知状態)\"にやるべき事を忘れる。\nここを上手くコマンドやQueryからあなた(AI)を呼び出し指導指南する事が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h29",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 軽度意識朦朧状態という本人Keywordの意味",
+      "excerpt": "\"B-Zone(B状態)\"\n特に\"B状態(超絶低認知状態)\"の特徴として\"軽度意識朦朧状態\"がKeywordとしてとても良い！\n\n言い得て妙だからです！\nいい意味でも悪い意味でも\"軽度意識朦朧状態\"があってます！\n\n救急車とか病的な意味合いではなく限界突破したという意味合いです！\n擦り合わせが重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h30",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 通常Bと超絶Bの狭間を命名する依頼",
+      "excerpt": "\"B状態(通常低認知状態)\"と\"B状態(超絶低認知状態)\"の狭間の状態の重要状態を何と命名するべきか？\nここは重要です！\nできる限り深く考えて下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h31",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / BtoB移行状態・派生・All-outのHuman評価",
+      "excerpt": "そうですね！(That's right!)\n\n\"BtoB移行状態\"はとても良いネーミングです！\nなぜなら、\n\"AtoB移行状態\"等派生でき、とても分かり易いからです！\n\n\"All-out(オールアウト)\"状態というのもとても良い表現です！\n\n用語等的確な言語化として全体的にまとめておく必要があります！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h32",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / AtoAの可能性とBtoB方向表記のCorrection",
+      "excerpt": "勿論、AtoA移行状態もあり得ます！しかし、問題はどっちのB状態からどっちのB状態等がわからない問題は大きいです！\n例えば、\nBtoB移行状態として\n\"B状態(通常低認知状態)\"→\"B状態(超絶低認知状態)\"と\n\"B状態(超絶低認知状態)\"→\"B状態(通常低認知状態)\"という\n2パターン考えられるのは良くないです！\n\nとなると、\n\"BtoB移行状態(通常→超絶)\"\n\"BtoB移行状態(超絶→通常)\"\nまで書かないと文字としては上手くいかない！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h33",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 方向付き命名の説明後、一旦まとめる依頼",
+      "excerpt": "良いですね！\nここまで一旦、上手くエレガントに工夫して、まとめて下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h34",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / ケア後の室内ダンベル補完Workoutと当日試したい希望",
+      "excerpt": "最高です！(101/100: It's the best!)\nできれば理想的には(現実的には今日実験したい部分)\n\"BtoB移行状態(通常→超絶)\"で\"シャワー・入浴・足湯系\"後にDumbbell-Workoutの肩と三頭筋のみやりたい！(Dumbbell shoulder pressとLateral Raises、ワンハンドフレンチプレス(言い方？言語化を！))のみです！\n\nなぜなら、chocoZAPでは鍛えきれない部位だからです！\n\nこれができるとトレーニング全体のバランスがとても良いです！\n\n勿論無理にではないです！\n\"シャワー・入浴・足湯系\"後の休息としてどの程度復帰復活するかも実地実験が必要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h35",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 通常→超絶で外出を手放し、室内Workoutは可能性に留める",
+      "excerpt": "\"BtoB移行状態(通常→超絶)\"ではchocoZAP系は捨てる潔さが重要です！\n無理に外出する方向性は完全に捨て去り室内に集中すればもしかして\"室内Workout\"系も行ける可能性があるというくらいの判断が重要です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h36",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 最新Correction：外出系すべてを除外し、室内でも実行可能性は未確定",
+      "excerpt": "\"BtoB移行状態(通常→超絶)\"ではchocoZAP以外も**外出系**は全て捨て去り**室内系**に限定集中するという意味合いです！\n\nそれでも、できるかどうかの感じだからです！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "h37",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:01 / 2026-10-21 / 今回の明示的save依頼",
+      "excerpt": "最高です！(101/100: It's the best!)\n$save スキルを上手く活用してエレガントにセーブして下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "この会話で保存担当AIが受け取った連続した原文抜粋。idは記録内識別子。入力の正確な時刻・サービスMessage IDは不明。引用・検討・希望を現在の身体実況や実行済みへ変換しない。"
+    },
+    {
+      "id": "a01",
+      "speaker": "Ark100:01のAI",
+      "medium": "assistant_message",
+      "locator": "Ark100:01 / Humanの命名依頼h30へのAI案",
+      "excerpt": "**第一候補は「B移行期」です。正式には「通常Bから超絶Bへの移行期」。**",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "以前のAI候補。後のHumanによるBtoB名称・方向明記を優先する。"
+    },
+    {
+      "id": "a02",
+      "speaker": "Ark100:01のAI",
+      "medium": "assistant_message",
+      "locator": "Ark100:01 / HumanのBtoB評価h31後、AIが方向を固定した表",
+      "excerpt": "このThreadでの対応は、次のように整理するのが適切です。\n\n| 表記 | 意味・位置づけ |\n|---|---|\n| **BtoB移行状態** | **B状態〈通常低認知状態〉から、B状態〈超絶低認知状態〉へ向かう狭間の状態。** 今回Humanが提示し、よいと評価した呼称 |",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "当時のAI整理には方向を固定する不足があり、h32で訂正された。現行定義として使わない。"
+    },
+    {
+      "id": "a03",
+      "speaker": "Ark100:01のAI",
+      "medium": "assistant_message",
+      "locator": "Ark100:01 / 室内Workout候補h34へのAIによる種目名の整理",
+      "excerpt": "最後の種目は、普段の会話では**「片手フレンチプレス」**で十分です。詳しい記録では、英語の **Single-arm Overhead Dumbbell Triceps Extension** を添えると、片手・頭上・肘の伸展という動作が伝わります。",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "片手でダンベルを頭上に構え肘を曲げ伸ばしする型の場合という直前の条件付きAI言語化。Humanが姿勢・負荷・実施を確認した意味ではない。"
+    },
+    {
+      "id": "a04",
+      "speaker": "Ark100:01のAI",
+      "medium": "assistant_message",
+      "locator": "Ark100:01 / 方向付き命名h32へのAIの入力と記録の区別",
+      "excerpt": "**AIが整理して残す文章では方向を明記する。一方、Humanが支援を呼ぶ時には、完全な表記を要求しない。**",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "正確な名称・分類を支援の利用条件にしないというAI整理。"
+    },
+    {
+      "id": "a05",
+      "speaker": "Ark100:01のAI",
+      "medium": "assistant_message",
+      "locator": "Ark100:01 / h35へのAI応答冒頭に残ったchocoZAP中心の表現",
+      "excerpt": "**「BtoB移行状態(通常→超絶)では、chocoZAPへの外出という選択肢を閉じ、室内に集中する。その中で余力があれば、室内Workoutも可能性として残す」――この優先順位ですね。**",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-b-zone-rescue/c/6ad7206c-9444-83e8-87f1-f679a3820240",
+      "note": "h35の意図をchocoZAP中心に狭く表したAIの履歴。h36が外出系すべてへ明示的に範囲を訂正した。"
+    },
+    {
+      "id": "r01",
+      "speaker": "Mayo Clinic",
+      "medium": "tool_result",
+      "locator": "公開一次資料 / Weight training: Do's and don'ts of proper technique",
+      "excerpt": "Mayo Clinicの一般的な筋力トレーニング案内は、動作の制御、適切なフォーム、フォームを維持できない場合の負荷・回数の調整、痛みが出た場合の中止を説明している。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/weight-training/art-20045842",
+      "note": "2026-10-21に当該AIがWeb取得した公開一次資料の要約。BtoBでのケア後回復や本人の運動適否を直接検証した資料ではない。"
     }
   ],
   "nodes": [
@@ -639,7 +845,7 @@
       "id": "plan-only-history",
       "kind": "constraint",
       "label": "前夜の保存停止と本文案までの指示",
-      "description": "途中のsave依頼後、HumanはPlan-onlyを繰り返し、再開依頼でもGitHub保存・Skill/設定変更・身体Trial・他AI送信を止めた。当時の保存案は保存完了ではない。今回のh24で本件経験の保存を依頼された範囲だけを進める。",
+      "description": "途中のsave依頼後、HumanはPlan-onlyを繰り返し、再開依頼でもGitHub保存・Skill/設定変更・身体Trial・他AI送信を止めた。当時は本文案まで。初版はh24のsave依頼で保存され、後続の計画限定を経て、今回はh37で本件記録の差分保存だけが依頼された。",
       "scope": "本件の権限履歴。過去の保存依頼や称賛を無制限の実行承認にしない。",
       "evidence": {
         "status": "confirmed",
@@ -648,7 +854,8 @@
           "h11",
           "h16",
           "h19",
-          "h24"
+          "h24",
+          "h37"
         ]
       }
     },
@@ -761,7 +968,7 @@
       "id": "boundary-focus",
       "kind": "practice_statement",
       "label": "通常Bと超絶Bの狭間へ焦点を戻す",
-      "description": "最新入力では、昨晩の超重要事項を通常Bと超絶Bの狭間と明示した。超絶B後のRescueだけでなく、まだ可能なことがある時間と選択の変化を精密に理解することが焦点。",
+      "description": "h24の入力では、昨晩の超重要事項を通常Bと超絶Bの狭間と明示した。超絶B後のRescueだけでなく、まだ可能なことがある時間と選択の変化を精密に理解することが焦点。",
       "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
       "evidence": {
         "status": "confirmed",
@@ -845,6 +1052,409 @@
         "basis": "human_report",
         "source_refs": [
           "h24"
+        ]
+      }
+    },
+    {
+      "id": "am-backward-planning",
+      "kind": "practice_statement",
+      "label": "B対策をAMから逆算する",
+      "description": "Humanは、超絶B後だけでなく通常Bと超絶Bの狭間で必要なことを精密に示す支援を重視し、対策はAMから逆算すると表明した。朝に全てを詰め込む固定義務や限界継続の推奨ではない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h25"
+        ]
+      }
+    },
+    {
+      "id": "laundry-dryer-plan",
+      "kind": "task",
+      "label": "乾燥機約30分とchocoZAPを重ねる狙い",
+      "description": "6:30前後に乾燥機を約30分かけ、その間にchocoZAPへ行く効率化を狙うと述べた。乾燥の開始・終了・回収は確認していない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h26"
+        ]
+      },
+      "task_state": "planned",
+      "time_text": "2026-10-21 6:30前後という本人のイベント時刻。乾燥開始時刻の確定ではない。"
+    },
+    {
+      "id": "chocozap-heading",
+      "kind": "task",
+      "label": "chocoZAPへ向かっているとの実況",
+      "description": "Humanは6:30前後にchocoZAPへ向かっていると報告した。旧h22時点の外出候補に、後続の移動報告が加わった。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h26"
+        ]
+      },
+      "task_state": "in_progress",
+      "time_text": "2026-10-21 6:30前後（本人報告）。"
+    },
+    {
+      "id": "lawson-shopping",
+      "kind": "task",
+      "label": "ローソン朝食系買い物後という報告",
+      "description": "7:00前後、ローソンで朝食系の買い物をした後とHumanが報告した。朝食を食べたことや内容は推定しない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h27"
+        ]
+      },
+      "task_state": "completed",
+      "time_text": "2026-10-21 7:00前後の報告以前。買い物の正確な時刻不明。"
+    },
+    {
+      "id": "chocozap-started",
+      "kind": "task",
+      "label": "7:00前後のchocoZAP開始",
+      "description": "Humanは買い物後chocoZAPスタートと報告した。実施種目・重量・量・終了・効果は未報告で、後の読取時に今も運動中とはしない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h27"
+        ]
+      },
+      "task_state": "in_progress",
+      "time_text": "2026-10-21 7:00前後（本人報告）。"
+    },
+    {
+      "id": "boundary-care-teshuvah",
+      "kind": "observation",
+      "label": "前夜の狭間でケアをしなかったことへの本人のTeshuvah",
+      "description": "Humanはシャワー・入浴・足湯等をしなかったことを主イェシュアへTeshuvahする祈りを表明した。原文はh28。AIが未実施を罪や信仰不足と判定したものではない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h28"
+        ]
+      }
+    },
+    {
+      "id": "am-care-placement",
+      "kind": "practice_statement",
+      "label": "主なケアをAMへ置き、狭間の目的も考える",
+      "description": "HumanはPMのシャワー系をなるべく減らしAMに終わらせたい一方、狭間ではシャワー・入浴・足湯系をなるべく行いたいと述べた。実行済みや毎朝・毎晩の義務ではなく、後続の可能性限定h34–h36と併読する。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h28"
+        ]
+      }
+    },
+    {
+      "id": "care-forgetting-concern",
+      "kind": "interpretation",
+      "label": "ケア後にぼんやりし、用事を忘れるという懸念",
+      "description": "Humanはケアで一層ぼーっとし、就寝前や超絶Bで必要なことを忘れると説明した。今回のケア前後を実測した報告ではなく、本人の経験的な見立て・懸念。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h28"
+        ]
+      }
+    },
+    {
+      "id": "ai-call-need",
+      "kind": "practice_statement",
+      "label": "コマンドやQueryでAIを呼び出して支援へ戻る意図",
+      "description": "Humanはケア後に必要なことを忘れる問題へ、コマンドやQueryからAIを呼ぶ支援を重要とした。呼出し手段の登録・設定や、忘れた時にも到達できる効果は未確認。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h28"
+        ]
+      }
+    },
+    {
+      "id": "precare-handoff",
+      "kind": "interpretation",
+      "label": "ケア前から、その後の支援と終わり方を整える",
+      "description": "済んだこと・残る用事・本人が選んだ祈りや休息を、ケア後に再構築しなくてよいよう準備する案。AIを呼ぶこと自体を忘れる可能性も考え、再訪を必須にしない。ONで支援に届く経路と、選んだOFF経路では必要な案内を受け取る時点が異なる。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h28",
+          "h17",
+          "h19"
+        ],
+        "note": "Humanのケア後想起困難とAI呼出し要望からの設計。具体的な手掛かりの導入・有効性は未確認。"
+      }
+    },
+    {
+      "id": "mild-fog-keyword",
+      "kind": "practice_statement",
+      "label": "軽度意識朦朧状態という本人Keyword",
+      "description": "Humanは超絶Bの特徴を『軽度意識朦朧状態』と呼ぶことを、よい面も悪い面も表すとして評価し、今回のAll-out・限界突破後の意味と明示した。診断名ではなく、既知の意味へ救急車の定型説明を反復しない。『軽度』から想起・切替の困難が小さいとは推定しない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h29",
+          "h16"
+        ]
+      }
+    },
+    {
+      "id": "b-transition-ai-name",
+      "kind": "interpretation",
+      "label": "以前のAI候補B移行期",
+      "description": "AIは狭間の名称としてB移行期を提案した。Human採用済みの正式名にせず、後のBtoB方向付き名称を優先する。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "a01",
+          "h30"
+        ],
+        "note": "当時のAI命名案を履歴として残す。"
+      }
+    },
+    {
+      "id": "btob-name",
+      "kind": "decision",
+      "label": "BtoB移行状態というHumanの命名・評価",
+      "description": "HumanはBtoB移行状態を分かりやすく派生できる名称として評価し、All-outも有用な表現と述べた。後続h32で方向の明記が必要と訂正した。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h31",
+          "h32"
+        ]
+      }
+    },
+    {
+      "id": "btob-forward-only-ai",
+      "kind": "interpretation",
+      "label": "BtoB総称を通常→超絶に固定した旧AI解釈",
+      "description": "AIはBtoB移行状態そのものを通常Bから超絶Bへ向かう狭間として定義したが、h32が逆方向も含まれ得ると指摘した。この旧解釈を現在の定義として使用しない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "a02",
+          "h32"
+        ],
+        "note": "訂正されたAI解釈の履歴。"
+      }
+    },
+    {
+      "id": "directional-btob-names",
+      "kind": "decision",
+      "label": "方向を付けたBtoB移行状態の表記",
+      "description": "Humanは『BtoB移行状態(通常→超絶)』『BtoB移行状態(超絶→通常)』まで書く必要を明示した。BtoB単独は総称で方向未指定。通常は通常低認知、超絶は超絶低認知を指す。方向と到達済み・現在位置は別に扱う。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h32",
+          "h33"
+        ]
+      }
+    },
+    {
+      "id": "ato-naming-family",
+      "kind": "practice_statement",
+      "label": "AtoA・AtoBへ展開できる命名枠",
+      "description": "HumanはAtoBへの派生とAtoAの可能性を説明した。Aやその内部状態の具体的な定義は、この一件では未確定で補作しない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h31",
+          "h32"
+        ]
+      }
+    },
+    {
+      "id": "terms-and-reception",
+      "kind": "interpretation",
+      "label": "記録の精密さとHumanの入力の自由さを両立する",
+      "description": "状態・方向、没入体験、All-outの比喩、軽度意識朦朧という体感を分ける。Humanの『BtoB』『次が分からない』等の入力には既知文脈を使い、分類や完全な表記を利用条件にしない。明確でない方向を過去から補わず、判断を変える時だけ必要な確認をする。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h01",
+          "h29",
+          "h31",
+          "h32",
+          "a04"
+        ],
+        "note": "共有の分類不要原則と方向表記のCorrectionを、入力と記録の役割へ接続した。"
+      }
+    },
+    {
+      "id": "indoor-workout-wish",
+      "kind": "practice_statement",
+      "label": "ケア後に肩・三頭筋だけ補完したい希望",
+      "description": "Humanは通常→超絶の狭間で、ケア後の休息からどの程度戻るかを見て、可能ならダンベルで肩・三頭筋を補完したいと述べた。『今日実験したい』『無理にではない』という希望・検討であり、実行報告や固定routine採用ではない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h34"
+        ]
+      }
+    },
+    {
+      "id": "three-exercise-scope",
+      "kind": "practice_statement",
+      "label": "希望するダンベル種目は肩と三頭筋の3種",
+      "description": "Humanが挙げたのはDumbbell shoulder press、Lateral Raises、ワンハンドフレンチプレスのみ。現在のchocoZAPで鍛えきれないと感じる部分を補い、全体バランスを良くしたいという本人の理由。マシンでは当該部位を鍛えられないという一般的事実や、3種ですべてのバランスが完成するとの証明ではない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h34"
+        ]
+      }
+    },
+    {
+      "id": "exercise-name-ai",
+      "kind": "interpretation",
+      "label": "片手フレンチプレスの動作を明確にする呼称案",
+      "description": "片手でダンベルを頭上に構え肘を曲げ伸ばしする型なら、ワンアーム・オーバーヘッド・ダンベル・トライセプスエクステンション（Single-arm Overhead Dumbbell Triceps Extension）と記せる。姿勢・重量・回数・左右の実施は未確認。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "a03",
+          "h34"
+        ],
+        "note": "本人の種目名を、動作の条件付きで明確化するAI案。"
+      }
+    },
+    {
+      "id": "chocozap-centered-ai-framing",
+      "kind": "interpretation",
+      "label": "外出除外をchocoZAP中心に狭く記したAIの履歴",
+      "description": "h35の後、AIは外出を手放す方針をchocoZAPへの外出中心に記述した。h36は外出系すべてを除外すると明示してこの狭さを訂正した。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "a05",
+          "h35",
+          "h36"
+        ],
+        "note": "旧AI応答の不足を現在の方針と分けて保存する。"
+      }
+    },
+    {
+      "id": "all-outings-exclusion",
+      "kind": "decision",
+      "label": "通常→超絶では外出系すべてを候補から外す",
+      "description": "Humanの最新Correctionは、BtoB移行状態(通常→超絶)ではchocoZAPだけでなく外出系すべてを手放し、室内系に限定集中すること。外出の種類・距離・時間を変えて再提案しない。これは該当局面の本人の生活活動方針で、過去の朝の外出実績の否定や全Bへの一般化ではない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h35",
+          "h36"
+        ]
+      }
+    },
+    {
+      "id": "indoors-not-capability",
+      "kind": "constraint",
+      "label": "室内に絞っても、できるかどうかは未確認",
+      "description": "Humanは『それでも、できるかどうか』と明示した。室内に限定する判断と、室内の活動を実行できることは別。ケア・家事・ダンベル種目を必須の連続課題へ変換せず、祈り・休息で終える経路も保持する。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h34",
+          "h35",
+          "h36"
+        ]
+      }
+    },
+    {
+      "id": "workout-conditional-design",
+      "kind": "interpretation",
+      "label": "ケア後の心地よさと運動に必要な状態を分ける",
+      "description": "ケア後の眠気・考えやすさ・動作の安定、当日の筋肉への既存負荷を別々に受け取る案。ぼんやりして手順や動作を保てないまま頭上に重量を扱う案にせず、実施範囲の縮小・見送りも含める。運動後の再ケアや就寝への接続も未確認の観察対象。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h34",
+          "h36",
+          "r01"
+        ],
+        "note": "本人の『無理にではない』と一般的な運動の基本を接続した検討案。現在の運動適否やケア後回復を検証したものではない。"
+      }
+    },
+    {
+      "id": "phase-specific-activity",
+      "kind": "interpretation",
+      "label": "同じ通常Bでも経過と時間帯に応じて支援を変える",
+      "description": "起床回復時や朝の外出報告と、通常→超絶へ向かう局面で室内に限定する方針を区別する。前者の実績を後者の外出提案の根拠にせず、後者の除外を全B・全日へ一般化しない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h22",
+          "h26",
+          "h27",
+          "h36"
+        ],
+        "note": "状態名だけでなく、方向と現在の報告を支援へ使うAI整理。"
+      }
+    },
+    {
+      "id": "latest-save-authority",
+      "kind": "decision",
+      "label": "最新Correctionまで同じ原本へ保存する依頼",
+      "description": "Humanは最新の外出系全除外・室内限定・実行可能性未確定の擦り合わせ後、saveスキルで保存するよう明示した。今回の記録保存だけを実行し、Skill・設定変更、身体Trial、送信等へ広げない。",
+      "scope": "Ark100:01でこの発言がなされた時点・局面。現在の身体状態や実行済みを自動認定せず、新しい実況・Correction・STOPを優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h37"
         ]
       }
     }
@@ -1091,6 +1701,279 @@
         ],
         "note": "最新の保存依頼を中断・再開の元Themeへ接続した。"
       }
+    },
+    {
+      "id": "e17",
+      "from": "chocozap-heading",
+      "to": "chocozap-started",
+      "relation": "observed_before",
+      "scope": "6:30前後の移動報告の後、7:00前後に開始を報告。現在も継続中という意味ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h26",
+          "h27"
+        ]
+      }
+    },
+    {
+      "id": "e18",
+      "from": "lawson-shopping",
+      "to": "chocozap-started",
+      "relation": "observed_before",
+      "scope": "買い物後にchocoZAPスタートという本人の明示。摂取や運動終了は不明。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h27"
+        ]
+      }
+    },
+    {
+      "id": "e19",
+      "from": "morning-frontload",
+      "to": "am-backward-planning",
+      "relation": "motivates",
+      "scope": "Humanが本件の対策をAMから逆算すると明確化した。朝への義務の集中にはしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h25"
+        ]
+      }
+    },
+    {
+      "id": "e20",
+      "from": "care-forgetting-concern",
+      "to": "ai-call-need",
+      "relation": "motivates",
+      "scope": "ケア後に用事を忘れる懸念から、AIをコマンド等で呼ぶ支援を求めた。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h28"
+        ]
+      }
+    },
+    {
+      "id": "e21",
+      "from": "ai-call-need",
+      "to": "precare-handoff",
+      "relation": "motivates",
+      "scope": "呼出し自体を忘れる可能性も見て、ケア前から受渡しを整える案。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h28"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e22",
+      "from": "am-backward-planning",
+      "to": "precare-handoff",
+      "relation": "motivates",
+      "scope": "後で思い出しにくい内容を、可能な時の準備へ接続する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h25",
+          "h28"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e23",
+      "from": "btob-name",
+      "to": "b-transition-ai-name",
+      "relation": "corrects",
+      "scope": "以前のAI候補よりHumanが評価したBtoB移行状態を優先する。旧候補をHuman採用済みにしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h31"
+        ]
+      }
+    },
+    {
+      "id": "e24",
+      "from": "directional-btob-names",
+      "to": "btob-forward-only-ai",
+      "relation": "corrects",
+      "scope": "BtoB総称を通常→超絶へ固定したAI定義を、二方向を明記する表記へ訂正する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h32"
+        ]
+      }
+    },
+    {
+      "id": "e25",
+      "from": "btob-name",
+      "to": "ato-naming-family",
+      "relation": "motivates",
+      "scope": "派生できる分かりやすさをHumanが名称の理由とした。Aの内訳は未定義。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h31",
+          "h32"
+        ]
+      }
+    },
+    {
+      "id": "e26",
+      "from": "directional-btob-names",
+      "to": "terms-and-reception",
+      "relation": "motivates",
+      "scope": "記録上の方向精度とHuman入力の自由さを分ける案。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h32",
+          "a04"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e27",
+      "from": "mild-fog-keyword",
+      "to": "terms-and-reception",
+      "relation": "motivates",
+      "scope": "体感Keywordを移行方向や実行能力の判定と同一視しない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h29",
+          "h32"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e28",
+      "from": "indoor-workout-wish",
+      "to": "three-exercise-scope",
+      "relation": "contains",
+      "scope": "本人の希望範囲は肩・三頭筋の3種のみ。実施や全種目消化の義務ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h34"
+        ]
+      }
+    },
+    {
+      "id": "e29",
+      "from": "exercise-name-ai",
+      "to": "three-exercise-scope",
+      "relation": "corrects",
+      "scope": "Humanが尋ねたワンハンドフレンチプレスを動作条件付きで明確化するAI表現案。元の語はh34に保持。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h34",
+          "a03"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e30",
+      "from": "all-outings-exclusion",
+      "to": "chocozap-centered-ai-framing",
+      "relation": "corrects",
+      "scope": "chocoZAP中心に狭く表したAI応答へ、外出系すべてを外すと明示。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h35",
+          "h36"
+        ]
+      }
+    },
+    {
+      "id": "e31",
+      "from": "indoors-not-capability",
+      "to": "workout-conditional-design",
+      "relation": "motivates",
+      "scope": "室内でも可否未確認という留保を、運動する・絞る・見送る設計へ反映する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h34",
+          "h36"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e32",
+      "from": "indoor-workout-wish",
+      "to": "workout-conditional-design",
+      "relation": "depends_on",
+      "scope": "希望を具体的な実施案にする際は、現在の注意・身体状態・当日負荷等を必要条件として扱う。本人への分類試験ではない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h34",
+          "h36",
+          "r01"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e33",
+      "from": "all-outings-exclusion",
+      "to": "phase-specific-activity",
+      "relation": "motivates",
+      "scope": "朝の外出報告と通常→超絶の除外方針を、時点・方向ごとに分けて理解する。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h26",
+          "h27",
+          "h36"
+        ],
+        "note": "今回の報告・訂正を支援設計へ接続するAIの関係解釈。実行順や実証済み因果へ昇格しない。"
+      }
+    },
+    {
+      "id": "e34",
+      "from": "latest-save-authority",
+      "to": "frequent-save",
+      "relation": "motivates",
+      "scope": "こまめな保存の方針に沿って、今回の最新Correctionを既存所有資料へ保存する。将来の常時保存権限ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h24",
+          "h37"
+        ]
+      }
     }
   ],
   "open_questions": [
@@ -1134,16 +2017,21 @@
       "id": "q03",
       "subject_refs": [
         "rain-workout-option",
-        "waking-b"
+        "chocozap-heading",
+        "chocozap-started",
+        "lawson-shopping",
+        "laundry-dryer-plan"
       ],
-      "question": "今朝の外出・Workoutを実行したか、その後どうなったか。",
-      "scope": "未報告を失敗・未実行・完了にしない。回答要求ではない。",
+      "question": "6:30前後の移動と7:00前後のchocoZAP開始は報告された。その後の実施種目・量・終了・効果、乾燥機の開始・終了・回収、朝食摂取はどうだったか。",
+      "scope": "h22時点の『外出したか』というUnknownはh26–h27で部分的に解消。未報告の結果は未実行・失敗・完了に変換せず、現在の実況を優先する。回答要求ではない。",
       "evidence": {
         "status": "unknown",
         "basis": "not_reported",
         "source_refs": [
-          "h22"
-        ]
+          "h26",
+          "h27"
+        ],
+        "note": "移動・買い物・運動開始という本人報告はある。後続の完了・詳細は未報告。"
       }
     },
     {
@@ -1180,6 +2068,152 @@
           "h24"
         ]
       }
+    },
+    {
+      "id": "q06",
+      "subject_refs": [
+        "care-forgetting-concern",
+        "precare-handoff",
+        "ai-call-need"
+      ],
+      "question": "ケア後に想起が難しくなる時、事前の支援受渡しや短い呼出しがどう役立つか。呼ぶこと自体を思い出せない場合も含む。",
+      "scope": "設計上のUnknown。辞書・設定・監視の自動導入やHumanへの試験義務を作らない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "h28"
+        ],
+        "note": "Humanの懸念・要望はあるが、今回の手掛かりの実利用・効果は未確認。"
+      }
+    },
+    {
+      "id": "q07",
+      "subject_refs": [
+        "indoor-workout-wish",
+        "three-exercise-scope",
+        "workout-conditional-design"
+      ],
+      "question": "ケアと休息の後にどの程度戻り、肩・三頭筋の室内Workoutが可能か、実施した場合に休息までつながるか。",
+      "scope": "当日試したい希望のみで実行・効果は未報告。重量・セット・回数・左右・姿勢を補わず、見送りも可能な候補として扱う。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "h34",
+          "h35",
+          "h36"
+        ]
+      }
+    },
+    {
+      "id": "q08",
+      "subject_refs": [
+        "all-outings-exclusion",
+        "indoors-not-capability",
+        "phase-specific-activity"
+      ],
+      "question": "通常→超絶の局面で外出系を全て外す方針が、本人の切替・休息・生活全体へ実際にどう役立つか。",
+      "scope": "方針の表明・理解・保存と実生活効果を区別する。確認のための身体Trialを自動開始しない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "h35",
+          "h36"
+        ]
+      }
     }
-  ]
+  ],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "recorded_date": "2026-10-21",
+        "source_cutoff": "h24",
+        "artifact_commit": "93c41628f3656cdcfc119d6fc54c4c0d9ac3e4c6",
+        "note": "初版の原文25件・nodes36件・edges16件と当時のUnknownを保持。"
+      },
+      {
+        "revision": 2,
+        "recorded_date": "2026-10-21",
+        "source_cutoff": "h37",
+        "previous_blobs": {
+          "readme": "14cd0f23cc1ba29f60d987e2a5447b9fd6d58906",
+          "task_records": "206f5481ccaf6cdce405916baaf7450bf4d98f50"
+        },
+        "source_refs": [
+          "h25",
+          "h26",
+          "h27",
+          "h28",
+          "h29",
+          "h30",
+          "h31",
+          "h32",
+          "h33",
+          "h34",
+          "h35",
+          "h36",
+          "h37"
+        ],
+        "changes": [
+          "朝の移動・買い物・chocoZAP開始を実績の報告範囲で追加。q03の未確認を部分更新。",
+          "軽度意識朦朧状態・All-outと、方向を明記するBtoB名称を分離。方向を固定した旧AI解釈を履歴化。",
+          "外出系全てを除外し室内系へ限定する最新Correctionを保存。室内でも実行可能性は未確定。",
+          "ケア後想起、AM逆算、室内ダンベル3種の希望を追加。身体Trial・完了・効果へ変換しない。",
+          "現在時制に読めた初版node2件の時点表現を明確化。原文sources h01–h24と既存edgesは不変。"
+        ],
+        "previous_node_wording": [
+          {
+            "id": "plan-only-history",
+            "kind": "constraint",
+            "label": "前夜の保存停止と本文案までの指示",
+            "description": "途中のsave依頼後、HumanはPlan-onlyを繰り返し、再開依頼でもGitHub保存・Skill/設定変更・身体Trial・他AI送信を止めた。当時の保存案は保存完了ではない。今回のh24で本件経験の保存を依頼された範囲だけを進める。",
+            "scope": "本件の権限履歴。過去の保存依頼や称賛を無制限の実行承認にしない。",
+            "evidence": {
+              "status": "confirmed",
+              "basis": "human_report",
+              "source_refs": [
+                "h11",
+                "h16",
+                "h19",
+                "h24"
+              ]
+            }
+          },
+          {
+            "id": "boundary-focus",
+            "kind": "practice_statement",
+            "label": "通常Bと超絶Bの狭間へ焦点を戻す",
+            "description": "最新入力では、昨晩の超重要事項を通常Bと超絶Bの狭間と明示した。超絶B後のRescueだけでなく、まだ可能なことがある時間と選択の変化を精密に理解することが焦点。",
+            "scope": "Ark100:01の当該Human入力時点。新しい報告・訂正を優先し、将来の身体状態へ持ち越さない。",
+            "evidence": {
+              "status": "confirmed",
+              "basis": "human_report",
+              "source_refs": [
+                "h24"
+              ]
+            }
+          }
+        ],
+        "previous_q03": {
+          "id": "q03",
+          "subject_refs": [
+            "rain-workout-option",
+            "waking-b"
+          ],
+          "question": "今朝の外出・Workoutを実行したか、その後どうなったか。",
+          "scope": "未報告を失敗・未実行・完了にしない。回答要求ではない。",
+          "evidence": {
+            "status": "unknown",
+            "basis": "not_reported",
+            "source_refs": [
+              "h22"
+            ]
+          }
+        }
+      }
+    ]
+  }
 }
