@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.7-candidate"
+version: "v004.8-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -99,7 +99,15 @@ writer_query_portability_patch:
   base_blob: "9be71422fe5b9e6f53d15f950b5ce9b36cd920f6"
   authority: "Current Human adopted write-text and authorized Writer/Query-only persistence, existing-registration updates, compatibility routing and remote verification"
   scope: "Shared Skill URLs and full-read fallback in copyable queries; common conditions in AGENTS, composition in Text Writer, connection choice and map consistency retained by their owners"
+next_step_bullet_patch:
+  date: "2026-10-24"
+  source_thread: "Ark28:07"
+  base_commit: "05d17b31521df26f2c295103b30b298acd7c96b2"
+  base_blob: "4296134e77bd811c8f2d4f884e6fedc48d7eeb98"
+  authority: "Current Human approved the third-round two-source plan and scoped GitHub execution"
+  scope: "Present ordinary Next Step content as meaning-preserving bullet points without fixed item or line limits; retain Step-to-Query judgment, Human choice, valid delegation and output exceptions"
 updated_reason:
+  - "2026-10-24: Structure ordinary Next Step content as meaningful bullet points without reducing necessary explanations or turning bullet count into Task count; AGENTS and GCI only."
   - "2026-10-24: Add verified shared-Skill routes and full-read fallback for copyable queries; retain the current Next Step/Next Query and None display contract."
   - "2026-10-24: Unify conversational section markers and explicitly distinguish no presented Next Query from a missing section or no-notification state; AGENTS and GCI only."
   - "2026-10-23: Connect reasoned Next Step selection to the complete Next Query; preserve Human freedom and current authority without adding automatic execution."
@@ -304,6 +312,8 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 ### 6.2 Next Step → Next Query / 判断から次の入力へ
 
 継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断からNext Queryの依頼全文を導き、二節をこの順で隣接させ、Next Queryを独立した最終セクションとする。Living Reviewを置く場合は、その直後にこの二節を続ける。依頼の具体化で不足・矛盾が見つかれば判断へ戻り、双方を修正する。固定の記入欄、内部思考の逐語開示、二節間の承認待ちは要求しない。
+
+通常回答で【Next Step】を設ける場合、内容は意味のまとまりごとの箇条書きにする。一項目でもよく、一項目に複数文を含めてよい。項目数・行数に上限を設けず、一文一項目・一項目一行や固定ラベルを強制しない。判断に必要な理由・成立条件・依存関係・進め方・完了条件・留保・実行範囲を保つ。複数項目で一つの接続を説明してよく、項目数をTask数と同一視しない。過度な省略・説明の断片化・水増しや新Task追加を求めない。適用対象を回答全体・Next Query・引用やコードへ広げず、本節の意味の対応・選択権・権限・例外を保持する。
 
 提示する継続依頼文がある場合は、【Next Query】の見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示す。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。コピー範囲は第6.1節に従う。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
 
