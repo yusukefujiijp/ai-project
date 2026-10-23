@@ -1,8 +1,8 @@
 ---
-title: "STR-022 — Dots原本をagents配下へ移す候補と実運用切替"
+title: "STR-022 — Dots原本のagents配下への移設と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
-version: "v003-candidate"
-status: "current-main integration prepared; existing Dots schedules identified; cutover pending"
+version: "v004"
+status: "main and existing schedules aligned; five registered skills verified; conversation skill-reader still returns prior bodies"
 created: "2026-10-20"
 updated: "2026-10-24"
 recorded_by: "ChatGPT Work / Dots移設実行担当"
@@ -11,12 +11,12 @@ base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
 publication_parent: "43cdadf6ff3244edff69098237fce639fd237064"
 candidate_branch: "work/dots-agent-location-20261020"
 role: "Bounded structural change, provenance, validation and operational cutover conditions"
-expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v003"
+expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v004"
 ---
 
 # STR-022 — Dotsの所在と実運用を揃える
 
-**2026-10-24 JST、Browserで対象の既存3予定を特定し、最新mainを保持した切替候補へ更新した。** 現在の状態は第8節を参照する。第1〜7節は2026-10-20時点の準備・保留理由・確認結果を保持する履歴であり、そのファイル数・行数・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
+**2026-10-24 JST、Dotsの17原本をmainで移設し、既存3予定・5登録Skillの住所更新と保存後確認まで完了した。** 現在の状態は第8節を参照する。第1〜7節は2026-10-20時点の準備・保留理由・確認結果を保持する履歴であり、そのファイル数・行数・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
 
 ## 1. 目的・承認・今回の境界
 
@@ -142,6 +142,44 @@ Humanは本WorkでBrowserへの切替を明示許可し、初穂の既存通常M
 
 登録管理原本の最新head `aee5f38dcf2521956bddf16cb37654f23505d3b0` を取り込み、対象5件が共有原本と一致することを確認した。既存登録IDを保ち、計7 URLだけを新住所へ変える候補を作成した。無関係な登録物12パスの後続変更も保持する。
 
-この版では切替前の調査・統合までを記録する。main、実予定、登録Skillの反映と保存後確認は、実施結果に基づき本節を更新する。実予定を手動実行しての試験や外部AIへの通知は行わない。
+### main反映とデータの再取得
 
-EOF::STR_022_DOTS_AGENT_LOCATION::v003
+[PR #9](https://github.com/yusukefujiijp/ai-project/pull/9)を最新mainに合わせたcommit `5eb881c743296a127fee0d0c25e27c0eb1fea7db` へ更新し、公開直前のmainが上記b2768b60のままであることを確認した。期待headを指定してmergeし、[main反映commit 1610115e](https://github.com/yusukefujiijp/ai-project/commit/1610115e2ca9146edeaaadc9b5c3d3ce9e10c2cb)を取得した。PRはmerged・closed。force更新や古いtreeへの巻戻しは行っていない。
+
+移設差分は64物理パス（新規18・更新39・削除7）。GitHubのrename表示では57 files。固定main commitから存在する57対象を全文再取得し、意図した本文・SHAと完全一致した。recursive treeは995 entries・truncated=false。削除対象7パスの不在と、対象外625 blob/modeが切替前mainのままであることを確認した。旧 `dots/` 配下に可変JSON/JSONL原本は残っていない。
+
+共通lessonは最新9行をbyte単位で保持。Actorログ8行は4相対locator以外を保持し、元の到達先へ解決する。凍結比較データ3本とLF Seed二つは元blobのまま。相対リンク805本・手元の全文に対するlocal anchor185件を検査し、到達エラーはなかった。固定版の証拠、Actor ID、日時、順序、未知fieldを保持した。切替後のhead・tree確認では旧JSONLの再出現や新旧への追記分岐は観測していない。すべての外部consumerや将来の実行を網羅した保証ではない。
+
+### 既存3予定の保存後確認
+
+上表の3予定を同じ設定画面で更新し、保存後に一件ずつ開き直した。通常Map4か所・補助確認1か所・日次総括3か所、計8か所の `dots/` → `agents/dots/` だけを変更した。再取得した指示全文は、変更前本文にこの住所差分を適用した文字列と完全一致した。段落・改行も一致し、補助確認へ保存権限を追加していない。
+
+通常MapのRRULEは保存前後で完全一致。日次総括と補助確認は、詳細設定を含む画面本文も住所差分以外一致した。3予定の有効状態、繰返し、表示された時刻・timezone・終了条件、同じチャットを使う実行先を維持し、通知先の設定には触れていない。補助確認の詳細時刻ルールがUIに出ない点と、日次総括の一覧・編集画面の表示差は上表の通りであり、未観測値を補完しない。削除・再作成、手動実行、停止・再開、外部AI送信は行っていない。
+
+### 5登録Skillの保存と取得経路の違い
+
+既存5件の同時pushはHTTP 422となった。Remote refが `aee5f38d` のまま、会話内読取でも旧URLであることを確認し、末尾の `Everything up-to-date` を成功と扱わなかった。失敗commit `0212bf82c4cbe90876bdc8bb7f863bffb92cd220` は手元で保持した。
+
+正規のSkill保存手順に沿い、同じ既存登録物・同じRemoteへ一件ずつ限定して保存した。保存の都度Remoteの後続変更を取り込み、次の通常pushはいずれも成功した。422の原因を多件同時要求と断定せず、権限や保存先を変更して回避したものとも扱わない。
+
+| 既存Skill | URL数 | 通常保存commit |
+|---|---:|---|
+| load | 1 | `507731a8d77046314ae7471882ae59a34bb7026f` |
+| save | 3 | `6f19019a5ec583e74f4d18cfef88c3f4e6395643` |
+| prepare-ark-transition | 1 | `4892bca8ba54769fa214622ff0b048f2495cded2` |
+| voice-mode | 1 | `c938dbc3f83b62dec222a853d54dcd34d0173938` |
+| podcast-mode | 1 | `526e35048a4a000c2bee916de4d5b51816ec4b27` |
+
+登録Remote head `526e35048a4a000c2bee916de4d5b51816ec4b27` を再取得し、5本文すべてがmainの共有SKILL.mdとbyte単位で一致した。変更前からの意味差分は計7 URLだけで、登録ID・frontmatter・表示設定の変更を要求していない。登録先で別途生じた `Materialized from stored content` commit `89b78ab4b1fe7000ac7befb8c5a44ffaccc81668` はloadのicon.svgを変更していた。その発生原因・Actorは今回独立確認できないため、自分のURL編集の成果とせず、勝手に旧iconへ戻さず保持した。対象外のSkillと作業元の未保存変更を上書きしていない。
+
+Browserの既存Skills画面でも5件を開き、同じ登録物に計7本の新URLが表示されることを確認した。一方、この会話の `skills.read` 経路を再取得すると、5件とも旧URLを含む以前の本文を返した。登録Remote・製品UIの新本文と、会話内取得の旧本文を別の観測として残す。キャッシュ原因や反映時期はUnknownであり、更新失敗・全Runtime更新済みのどちらとも同一視しない。
+
+旧READMEの短い移転案内を維持して、新原本へ辿れるようにした。ただし旧JSONLへの書込は自動転送しない。実予定の保存先は新住所に照合済み。今後、旧本文を受け取った実行者も現行の所有原本を確認し、旧住所への追記を再作成しない。会話内取得の差だけを理由に、登録の再作成・同じ本文の再push・全履歴同期は開始しない。
+
+### 一区切りと残る観測
+
+本Bの移設・既存設定の住所整合・保存後再取得は一区切りとする。この最終結果を本STRに更新し、[2026-10-24の日別記録](../../records/2026/10/2026-10-24.jsonl)へ一活動として残すため、初回準備からの累積差分は65物理パス（新規19・更新39・削除7）となる。実際の次回予定実行、別AIの理解、自然なSkill選択、Humanの負担軽減・長期効果は今回の保存検証に含めない。新しい監視・通知・対話試験は作成しない。
+
+再開が必要なのは、実際の取得経路で旧参照のまま新原本へ到達できない、旧JSONLが再出現する、または次回の通常実行で参照不整合が観測された場合。その時点の現物・版・既存設定から不足範囲だけを調べ、完了した移設・予定編集を再演しない。
+
+EOF::STR_022_DOTS_AGENT_LOCATION::v004
