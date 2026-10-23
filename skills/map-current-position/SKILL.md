@@ -111,7 +111,7 @@ Next stepやNext Queryの提示自体を、新しい実行承認や自動開始�
 
 通常のmap回答の最終セクションは「Next Query」とし、Next stepの内部へ入れない。継続依頼が有効なら、見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示す。説明・根拠・注意はその前までに置き、最後のブロック後に追記しない。コピー境界の詳細と厳密形式等の例外は[AGENTSの共通規則](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)へ接続する。
 
-Next QueryはNext stepで選んだ接続と同じGoal・対象・必要な方法・完了条件・現在のModeを保つ。Tree・Node & Edge表・残作業とGoalから、判断と依頼文まで意味を一致させる。別AIへ渡す場合は必要な前提・資料・権限境界を含める。必要なSkillを相手が持つと仮定せず、共有原本の取得先と必要な読解を本文内に含める。短さのために必要な意味を削らず、同じThreadの既知事項をHumanへ再入力させない。
+Next QueryはNext stepで選んだ接続と同じGoal・対象・必要な方法・完了条件・現在のModeを保つ。Tree・Node & Edge表・残作業とGoalから、判断と依頼文まで意味を一致させる。別AIへ渡す場合は必要な前提・資料・権限境界を含める。Skillを使うQueryの共有原本URLと全文読解は[AGENTSの共通条件](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#skill-query-portability)に従う。受け手へ渡す本文の作成判断が必要なら[Text Writer](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md)へ接続し、本Skillは現在地・判断・依頼文の意味の一致を担う。短さのために必要な意味を削らず、同じThreadの既知事項をHumanへ再入力させない。
 
 段階の完了と現在のGoal全体の達成を分ける。計画・差分案の提示が終わっても、同じGoalに必要な保存・導入・確認等が残るなら、完了範囲と残る工程を示し、有効な次の依頼へつなぐ。Modeを変える依頼文の提案は、その変更を明示し、現在の実行承認と区別する。既に委任された工程へ追加のContinue待ちを作らない。
 

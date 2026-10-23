@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.6-candidate"
+version: "v004.7-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -92,7 +92,15 @@ continuation_display_patch:
   base_blob: "88af154ef8efa2c09f310e1d0340116ba08f1fa1"
   authority: "Current Human approved the second-round two-source plan and scoped GitHub execution in Ark28:07"
   scope: "Bracket ordinary conversational section headings and retain Next Query with a literal None body when no request is presented; preserve reasoning, Human choice, valid delegation and output exceptions"
+writer_query_portability_patch:
+  date: "2026-10-24"
+  source_thread: "Ark27:11"
+  base_commit: "47d0d3ce2550de8f3e0f401b5af82af3b3a5f4f1"
+  base_blob: "9be71422fe5b9e6f53d15f950b5ce9b36cd920f6"
+  authority: "Current Human adopted write-text and authorized Writer/Query-only persistence, existing-registration updates, compatibility routing and remote verification"
+  scope: "Shared Skill URLs and full-read fallback in copyable queries; common conditions in AGENTS, composition in Text Writer, connection choice and map consistency retained by their owners"
 updated_reason:
+  - "2026-10-24: Add verified shared-Skill routes and full-read fallback for copyable queries; retain the current Next Step/Next Query and None display contract."
   - "2026-10-24: Unify conversational section markers and explicitly distinguish no presented Next Query from a missing section or no-notification state; AGENTS and GCI only."
   - "2026-10-23: Connect reasoned Next Step selection to the complete Next Query; preserve Human freedom and current authority without adding automatic execution."
   - "2026-10-21: Adopt the Human-approved Next Query contract; distinguish a completed planning stage from remaining work toward the active Goal."
@@ -279,6 +287,18 @@ HumanがCopy & Pasteして同じAIまたは他AIへ渡すNext Query・Prompt・�
 
 目的は、渡す本文の境界を明確にし、必要な内容を一単位でコピーできる形にすること。本文の提示、Copy UIでの操作、相手への送達・理解、設定反映は別々の成立条件であり、この表示規則から送信や別Taskの実行権限を作らない。形成根拠は[共有lesson](https://github.com/yusukefujiijp/ai-project/blob/main/references/lessons/lessons.jsonl)の `b7011ca6-75fa-4a7f-a651-84fe168f9b91` を参照する。
 
+<a id="skill-query-portability"></a>
+
+#### Skillを使うコピー用Query
+
+Skillの利用を求めるコピー用Queryには、受け手への導入状況にかかわらず、そのSkillに対応する確認済みGitHub共有原本URLを本文内に含める。生成側AIが実在・対象Skill・必要な版を確認し、同一性を満たす自身の確認記録は再利用できる。名前からURLを推測したり、未公開の改名先を確認済みとして示したりしない。
+
+同じ本文に、Skillを直接利用できない場合は共有SKILL.mdを全文読んで適用することを含める。取得・表示切れは未読箇所から回収し、宣言された必須依存・読取順・Identity・Binding・EOFを保持する。参照された全資料を無条件の追加必読にはしない。必須Sourceを取得できない場合は該当Failure契約に従い、未確認範囲・影響・最小の回復方法を示す。
+
+他AI・Future AI・Dots・Bots・Agents等へ渡す場合も、Humanへ導入状況別のQuery選択やリンクの後付けを戻さない。受け手の仕事に必要なSkillと資料を含め、生成側が内部で使った全Skillを列挙しない。
+
+本節は共通条件を所有する。本文を組み立てる判断は[Text Writer](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md)、接続選択はnext-step、現在地との整合はmap-current-positionが担う。本文提示、原本の取得・読解、導入、受け手の理解・実利用、実行承認を区別する。
+
 <a id="next-query"></a>
 
 ### 6.2 Next Step → Next Query / 判断から次の入力へ
@@ -287,7 +307,7 @@ HumanがCopy & Pasteして同じAIまたは他AIへ渡すNext Query・Prompt・�
 
 提示する継続依頼文がある場合は、【Next Query】の見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示す。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。コピー範囲は第6.1節に従う。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
 
-二節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要なSkillや原本を相手が持つと仮定せず、取得先と必要な読解を示す。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
+二節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要な原本の取得先と読解を示し、Skillを使うQueryの共有原本URLと全文読解は[第6.1節の共通条件](#skill-query-portability)に従う。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
 
 段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示し、有効な後続接続を消さない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。提示する継続依頼文がない場合も【Next Query】を残し、その節の本文は半角のNoneだけとする。コードブロック、句点、説明、誘い文句は付けず、後にも追記しない。必要な理由・保留条件・再開条件はNext Stepまでに示す。Humanが選んだ意図的保留・終了を保持し、節のために新Taskを作らない。相槌、厳密な出力指定、専用Boot／Failureには通常形式を強制しない。無通知条件では、見出しもNoneも送らない。
 

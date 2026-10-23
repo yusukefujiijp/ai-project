@@ -671,7 +671,7 @@ Root READMEは移設前からAIを主読者として宣言していた。「READ
 |---|---|---|
 | 経験を次の協働へ生かす発想 | 原本§0–1 → [ARK §8・§12](../../ARK.md) → 担当資料 | 成果だけでなく、成果を生む判断や方法を次へ生かす。概念上の対応であり、直接の歴史的継承や全AIでの有効性の証明ではない |
 | Unexpected Success・理由・成立条件 | 原本§3・§10 → 経験原本／[成功事例](../../references/success-cases/README.md) | 単なる正常終了に縮めず、何が変わり、なぜHumanに重要だったかを根拠とともに読む。一件の経験に再利用Pattern・Next Actionを必須化しない |
-| Future AIに意味を渡す文章 | 原本§7 → [Ark Markdown Writer](../../skills/write-ark-markdown/SKILL.md) | 目的・役割・理由・Guardを回復できる形にする。全Markdownを実行Runtimeにする意味ではない |
+| Future AIに意味を渡す文章 | 原本§7 → [Text Writer](../../skills/write-text/SKILL.md) | 目的・役割・理由・Guardを回復できる形にする。全Markdownを実行Runtimeにする意味ではない |
 | 保存後の実体確認 | 原本§6・§10 → [AGENTS §5](../../AGENTS.md#5-mode-scope-and-github-authority--実行境界)／[save](../../skills/save/SKILL.md) | 応答だけで成功とせず現物を確かめる。結果不明なら識別子と版を照合し、失敗と決めつけて手動代替や再送を開始しない |
 | AIの独立した長期的助言 | 原本§1・§8・§10 → [AGENTS §3](../../AGENTS.md#3-human-ai-authority--自主性と王座guard)／[Living Review](../../skills/living-review/SKILL.md) | 迎合だけでなく構造改善・代案・理由を示す。AIの設計裁量とHumanのMeaning・Correction・承認を両立する |
 | 6月30日の固有な形成史 | 原本§10 `GROWTH-20260630-001` → 当時のpath・commit・blob | 直接GitHub保存、再取得確認、長期的助言が当時の協働をどう変えたかを調べる。Developer Modeとの相関を原因断定へ強めず、当時の環境を現在の保証にしない |

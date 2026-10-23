@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.43.0
+version: v0.44.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-21
-updated_reason: Ark100:01で承認したThread総括を追加。意味・訂正・根拠を保持し、AIの方法裁量とFeedbackによる改善を開く
+updated: 2026-10-24
+updated_reason: Ark27:11で承認したwrite-textへの名称・適用範囲の改訂と旧共有URL案内を反映。現行件数と既存成果を保持
 ---
 # Ark Shared Skills Hub
 
@@ -62,7 +62,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行33件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` は[現行名への案内](map-ark-current-position/README.md)であり、別の現行Skillとして数えない。
+現行33件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` と `write-ark-markdown` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -92,7 +92,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [README・Query](audit-agent-instructions/README.md) / [SKILL.md](audit-agent-instructions/SKILL.md) |
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [README・Query](read-social-post/README.md) / [SKILL.md](read-social-post/SKILL.md) |
 | SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [README・Query](write-social-post/README.md) / [SKILL.md](write-social-post/SKILL.md) |
-| Ark Markdown Writer / write-ark-markdown | Ark Markdownの作成・改訂・計画。AI読者への意味の継承と、文書の役割に応じた構成 | [README・Query](write-ark-markdown/README.md) / [SKILL.md](write-ark-markdown/SKILL.md) |
+| Text Writer / write-text | 文書・メッセージ・Prompt・コピー用Queryの作成・改訂・レビュー・計画。目的・受け手・根拠と専門契約に合う文章へ | [README・Query](write-text/README.md) / [SKILL.md](write-text/SKILL.md) |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [README・Query](recall-bedtime-care/README.md) / [SKILL.md](recall-bedtime-care/SKILL.md) |
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [README・Query](receive-braindump/README.md) / [SKILL.md](receive-braindump/SKILL.md) |
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [README・Query](co-design-everyday-solutions/README.md) / [SKILL.md](co-design-everyday-solutions/SKILL.md) |
@@ -285,4 +285,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.43.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.44.0

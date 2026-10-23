@@ -88,7 +88,7 @@ Threadの継続・移行を扱う時は、現行の[prepare-ark-transition](../.
 
 保存された成功、AIによる因果解釈、異なる場面での再現は別の証拠である。経験の意味を当時のAIの結論だけへ閉じず、Future AIが条件を読んで新しい説明や改善を検討できるようにする。実践で方法の不足が見えたら、採用された訂正を承認範囲で本書・担当方法へ戻し、経験本文の歴史は保つ。
 
-保存先は[save](../../skills/save/SKILL.md)、執筆は[write-ark-markdown](../../skills/write-ark-markdown/SKILL.md)、GitHubへの配置と再取得は[Artifact → GitHub](../../prompts/artifact-to-github.md)へ接続する。経験の実体をここへ収めることは、全lesson・Actorログ・日時記録を移すことではない。同じ可変原本を二重運用しない。
+保存先は[save](../../skills/save/SKILL.md)、執筆は[write-text](../../skills/write-text/SKILL.md)、GitHubへの配置と再取得は[Artifact → GitHub](../../prompts/artifact-to-github.md)へ接続する。経験の実体をここへ収めることは、全lesson・Actorログ・日時記録を移すことではない。同じ可変原本を二重運用しない。
 
 ## 8. 形成と確認の境界
 

@@ -52,7 +52,7 @@ $synthesize-thread を使い、ここまでの目的・大切な意味・訂正�
 | 足りない文脈を原本から回復する | [load](https://github.com/yusukefujiijp/ai-project/blob/main/skills/load/SKILL.md)。回復した内容を総括へ使える |
 | Arkの現在地や有効な残作業を整理する | [map-current-position](https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-current-position/SKILL.md) / [map-remaining-work](https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-remaining-work/SKILL.md) |
 | 関係・依存・競合から判断を深める | [analyze-living-graph](https://github.com/yusukefujiijp/ai-project/blob/main/skills/analyze-living-graph/SKILL.md)。全総括への必須依存にはしない |
-| 耐久的なArk文書へ整える・担当原本へ保存する | [write-ark-markdown](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-ark-markdown/SKILL.md) / [save](https://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.md)。総括だけの依頼から保存を自動開始しない |
+| 耐久的なArk文書へ整える・担当原本へ保存する | [write-text](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md) / [save](https://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.md)。総括だけの依頼から保存を自動開始しない |
 | 特定領域の経験を使って、その時の支援を行う | 当該領域の経験原本と支援Skill。本Skillへ身体行動や固有の支援規則を複製しない |
 
 これは責務の比較であり、全Skillの起動順ではない。複合依頼では主な目的を見失わず、必要な機能だけ組み合わせる。

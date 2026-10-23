@@ -39,7 +39,7 @@ Humanの開始しやすさを支えることを、AIの検討・説明の削減�
 
 ## 選んだ接続をNext Queryへ結ぶ
 
-継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで今つなぐ接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断を、直後の独立した最終セクションNext Queryの依頼全文へ変換し、Goal・対象・必要な方法・完了条件・Modeを保つ。具体化で不足・矛盾が見つかれば判断へ戻り、両節を整合させる。共通形式・全文再掲・コピー境界・Humanの選択権・権限境界・例外は[AGENTSの共通規則](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)に従う。必要なSkillや資料を受け手が持たない場合にも辿れるよう、取得先と必要な読解を依頼本文に含める。
+継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで今つなぐ接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断を、直後の独立した最終セクションNext Queryの依頼全文へ変換し、Goal・対象・必要な方法・完了条件・Modeを保つ。具体化で不足・矛盾が見つかれば判断へ戻り、両節を整合させる。共通形式・全文再掲・コピー境界・Humanの選択権・権限境界・例外は[AGENTSの共通規則](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)に従う。Skillを使うQueryの共有原本URLと全文読解は[AGENTSの共通条件](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#skill-query-portability)に従う。受け手へ渡す本文の作成判断が必要なら[Text Writer](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md)を使い、本Skillは接続選択と依頼の意味の一致を担う。
 
 一段階の完了を、現在のGoal全体の達成と同一視しない。計画提示後に承認・実装・保存・導入等が残るなら、完了範囲と残る工程を分け、有効な次の依頼へつなぐ。Mode変更を提案する場合は明示し、提案だけで実行を始めない。有効な実行委任がある工程は、追加依頼待ちにせず完了する。
 
