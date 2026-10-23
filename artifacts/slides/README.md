@@ -1,12 +1,12 @@
 ---
 title: "Slides — スライド作品の制作・再利用"
 canonical_path: "artifacts/slides/README.md"
-version: "v004"
+version: "v005"
 created: "2026-10-17"
-updated: "2026-10-18"
+updated: "2026-10-24"
 role: "Slide production and reuse guide"
 primary_reader: "Current AI / Future AI / Human"
-expected_eof: "EOF::ARTIFACTS_SLIDES::v004"
+expected_eof: "EOF::ARTIFACTS_SLIDES::v005"
 ---
 
 # Slides
@@ -14,6 +14,12 @@ expected_eof: "EOF::ARTIFACTS_SLIDES::v004"
 **スライド作品を、目的と根拠を保って制作・見直し・再制作するための入口。**
 
 [Artifacts](../README.md)の公開範囲・原本分担・保存境界を継承する。ChatGPT Slidesを最初の検討対象とするが、特定AIやサービスへの固定、全回答のスライド化はしない。
+
+## 気軽に使う入口
+
+- [スライドを見る（閲覧テスト）](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fraw.githubusercontent.com%2Fyusukefujiijp%2Fai-project%2Fmain%2Fartifacts%2Fslides%2Fslide-viewing-test%2Fslide-viewing-test.pptx)：既存の三枚をブラウザで開く。
+- [見られるSlidesのSkill](../../skills/create-viewable-slides/README.md)：短い依頼から制作・GitHub保存・閲覧リンクまで接続する。
+- [iPhoneの共有から見る設定](iphone-shortcut.md)：GitHubアプリの共有を主入口、URL貼付けを補助入口にする。初回の端末組立・確認は未実施。
 
 ## 使いどころを判断する
 
@@ -53,12 +59,11 @@ Feedbackでは、見栄えだけでなく「何が理解しやすくなったか
 
 ## 制作資料への入口
 
-- [スライドを、スライドとして見る｜閲覧テスト](slide-viewing-test/README.md)：三枚のPPTXとPNGプレビュー。ChatGPTのWebログイン操作を挟まず、保存済みNative Slidesのデータから書き出した実験。iPhoneでの実利用は未確認。
+- [スライドを、スライドとして見る｜閲覧テスト](slide-viewing-test/README.md)：三枚のPPTXとPNGプレビュー。ChatGPTのWebログイン操作を挟まず、保存済みNative Slidesのデータから書き出した実験。Microsoft ViewerでのiPhone閲覧はHuman確認済み。共有ショートカットは端末確認待ち。
 - [残作業とGoal](remaining-work-and-goal/README.md)：五枚のPNG閲覧版と、公開Ark原本に基づく制作資料・根拠。Humanの承認範囲で静的画像を公開している。
 
-v004では閲覧テスト作品のPPTXとPNGへの案内を追加した。作品の現在状態と確認範囲は各作品の説明を確認する。
+v005では閲覧リンク、共有ショートカットの導入手順、Skillへの入口とHuman確認を反映した。作品の現在状態と確認範囲は各作品の説明を確認する。
 
 この案内の存在を、スライド実物の作成・外部共有・定期生成の承認と扱わない。制作に進む場合は、その時点のHuman指定・現行資料・公開範囲に従う。
 
-EOF::ARTIFACTS_SLIDES::v004
-
+EOF::ARTIFACTS_SLIDES::v005

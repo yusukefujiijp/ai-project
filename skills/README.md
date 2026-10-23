@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.44.0
+version: v0.45.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-24
-updated_reason: Ark27:11で承認したwrite-textへの名称・適用範囲の改訂と旧共有URL案内を反映。現行件数と既存成果を保持
+updated_reason: Humanが承認した見られるSlidesのSkillを追加。GitHub保存・閲覧とiPhone導入の状態を区別し、既存33件とWriter改訂を保持
 ---
 # Ark Shared Skills Hub
 
@@ -62,10 +62,11 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行33件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` と `write-ark-markdown` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行34件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` と `write-ark-markdown` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
+| 見られるSlides / create-viewable-slides | ChatGPT Slides化の依頼からGitHub保存・iPhone閲覧へ接続。既存PPTXの閲覧リンク・共有ショートカット導入にも対応 | [README・Query](create-viewable-slides/README.md) / [SKILL.md](create-viewable-slides/SKILL.md) |
 | Thread総括 / synthesize-thread | 対話の重要な意味・訂正・発見を用途に合わせて総括。方法・構成はAIへ開き、Feedbackの適用範囲を保持 | [README・Query](synthesize-thread/README.md) / [SKILL.md](synthesize-thread/SKILL.md) |
 | B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [README・Query](b-zone/README.md) / [SKILL.md](b-zone/SKILL.md) |
 | Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [README・Query](markdown-to-html/README.md) / [SKILL.md](markdown-to-html/SKILL.md) |
@@ -285,4 +286,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.44.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.45.0

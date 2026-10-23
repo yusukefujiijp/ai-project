@@ -1,0 +1,4 @@
+interface:
+  display_name: "見られるSlides"
+  short_description: "Slidesの生成とGitHub保存をつなぎ、iPhoneですぐ見られるリンクを渡す"
+  default_prompt: "$create-viewable-slides を使い、この部分を分かりやすいSlidesにして、編集不要で閲覧できる形で届けてください。"
