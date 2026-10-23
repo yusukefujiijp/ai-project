@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.4-candidate"
+version: "v004.5-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-21"
+updated: "2026-10-23"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -80,7 +80,14 @@ next_query_patch:
   source_thread: "Ark27:11"
   authority: "Current Human approved the nine-path revision, main persistence, and updates to the two existing Skills"
   scope: "Final independent Next Query, complete copy boundary and source routes, current Mode, and separation of stage completion from the active Goal"
+next_step_query_patch:
+  date: "2026-10-23"
+  base_commit: "030183a20b32a688406b2cc0f7ae01ef5302fc67"
+  base_blob: "7370263b36808b8ebc3a9927030334c990867104"
+  authority: "Current Human approved the five-source integrated revision, main persistence, and updates to the two existing Skills"
+  scope: "Derive Next Query from Next Step judgment; preserve Human choice, valid delegation, exact-output and no-notification exceptions"
 updated_reason:
+  - "2026-10-23: Connect reasoned Next Step selection to the complete Next Query; preserve Human freedom and current authority without adding automatic execution."
   - "2026-10-21: Adopt the Human-approved Next Query contract; distinguish a completed planning stage from remaining work toward the active Goal."
   - "2026-10-20: Add the Human-approved flexible README principle without a repository-wide compliance gate; align current lesson and success-case routes with references."
   - "2026-10-19: Ark99:04 Human requested a single code block per transferable AI Prompt, with Human commentary outside; add the shared output rule without initiating further dialogue."
@@ -265,19 +272,21 @@ HumanがCopy & Pasteして同じAIまたは他AIへ渡すNext Query・Prompt・�
 
 <a id="next-query"></a>
 
-### 6.2 Next Query / 判断から次の入力へ
+### 6.2 Next Step → Next Query / 判断から次の入力へ
 
-継続提案を含む通常回答では、独立した最終セクションを「Next Query」とする。Next stepを設ける場合はその前に置き、Next Queryをその内部へ入れない。MAP固有の末尾構成は当該Skillが所有する。見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示し、説明・根拠・注意・保存報告は先に置く。最後のブロック後に追記しない。コピー範囲は第6.1節に従う。
+継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断からNext Queryの依頼全文を導き、二節をこの順で隣接させ、Next Queryを独立した最終セクションとする。MAPでLiving Reviewを置く場合は、その直後にこの二節を続ける。依頼の具体化で不足・矛盾が見つかれば判断へ戻り、双方を修正する。固定の記入欄、内部思考の逐語開示、二節間の承認待ちは要求しない。
 
-Next Queryは、選んだ接続と同じGoal・対象・必要な方法・完了条件・現在のModeを保つ。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要なSkillや原本を相手が持つと仮定せず、取得先と必要な読解を示す。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
+Next Queryの見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示す。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。コピー範囲は第6.1節に従う。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
 
-段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示す。有効な後続接続があるのに、提示段階の終了だけを理由に「追加のQueryは不要」としない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。
+二節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要なSkillや原本を相手が持つと仮定せず、取得先と必要な読解を示す。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
 
-現在のGoalについて追加依頼が不要な場合は、その旨だけを示してQueryを作らない。Humanが意図的な保留・終了を選んだ場合も、その選択を保ち、新Taskを作らない。単なる相槌、厳密な出力指定、専用Boot／Failure形式等には通常形式を無理に追加しない。
+段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示し、有効な後続接続を消さない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。追加依頼が不要ならその旨を示し、Queryを作らない。Humanが選んだ意図的保留・終了を保持し、節のために新Taskを作らない。相槌、厳密な出力指定、専用Boot／Failure、無通知条件には通常形式を強制しない。
 
-Humanの訂正を、判断と依頼文の双方へ反映する。Modeを変える依頼文を提案するときは変更を明示し、現在の実行承認と同一視しない。Next Queryの表示、引用、称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
+HumanはNext Queryを使う・修正する・保留する・使わないことを選べる。未使用だけを理由に新しい未完了Taskや追催を作らず、有効な依頼・承認の取消しとも推定しない。Humanの訂正を判断と依頼文の双方へ反映する。Modeを変える接続を提案する場合は、その変更を両節で明示し、現在の実行承認と同一視しない。表示・引用・称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
 
-提示前に、見出し・最終配置・本文全体のコピー境界・fenceの閉じ・現在のModeとの一致を確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通形式の運用原本は本節であり、事例を第二の指示原本にしない。
+将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
+
+提示前に、二節が同じ接続を扱い、Goal・対象・必要な方法・完了条件・Modeが対応しているかを、見出し・最終配置・本文全体のコピー境界・fenceの閉じとともに確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 

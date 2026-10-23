@@ -1,16 +1,21 @@
 ---
 title: "定期Ark Mapと限定save — dot-0000"
 canonical_path: "dots/ark-map/README.md"
-version: "v004"
+version: "v005"
 status: "human-authorized operating source / runtime verification separate"
 created: "2026-10-06"
-updated: "2026-10-17"
+updated: "2026-10-23"
 actor_id: "dot-0000"
 role: "Single operating source for this Dot's periodic Ark Map and bounded save"
 approval_source: "conversation-message:Sentinel_ae3fc6bd63688191bc22305a15f4d420"
 revision_approval_source: "conversation-message:Sentinel_b160b38c12c4819182588f826426833d"
-updated_reason: "Add bounded read-only remaining-work delta checks between normal Maps; preserve regular Map, daily review and save boundaries"
-expected_eof: "EOF::DOTS_ARK_MAP::v004"
+updated_reason: "Align the Map closing with reasoned Next Step to Next Query; preserve weather, news, save, schedule and no-notification boundaries"
+expected_eof: "EOF::DOTS_ARK_MAP::v005"
+next_step_query_patch:
+  date: "2026-10-23"
+  base_blob: "28b99d2ca5148e2b78bbe5956d69c511237f5e67"
+  authority: "Current Human approved the five-source integrated revision and scoped GitHub execution"
+  scope: "Section 4 closing arrangement only; prior operating authorities and section 9 remain unchanged"
 navigation_patch:
   date: "2026-10-14"
   scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
@@ -82,13 +87,14 @@ navigation_patch:
 - **【AIの大局観】**：確認した盤面を別の立場・範囲・時間軸から読み、見えにくい関係や可能性、コーチング的な見立て・提案を返す。追加する実験の場はこの一節とする
 - **【残作業とGoal】**：現在も必要な仕事とそのGoal・担当・状態・再開条件を示す。完了済み・不要化・任意候補・観察事項を混同せず、補助投稿で伝えた差分も現在の全体像へ統合する
 - **【Living Review】**：二つのMapの関係、Bottleneck、残る価値・Unknownを読み、今回の判断と理由を示す。大局観の有用な見立ても根拠・条件と照合して取り込めるが、毎回の採用は義務にしない
-- **【Next step】**：直前のLiving Reviewから、今つなぐ先・理由・成立条件を示す最終節
+- **【Next Step】**：直前のLiving Reviewから、今つなぐ先・理由・成立条件を示す
+- **【Next Query】**：Next Stepの判断から導いた、同じ接続の依頼全文を渡す独立した最終節
 
 Tree（枝＋状態＋現在地）とNode & Edgeを使い、どちらのMap・どの範囲・時点を表すか明示する。Node名・状態・根拠を対応させ、Edgeには接続先と関係の意味を書く。GitHubとWorkを一つの未分化な一覧に混ぜず、両者間の接続は出所を保って説明する。
 
 GitHubに保存済みでもWork側で受け取ったとは限らず、Workの発言があってもGitHub更新済みとは限らない。取得できた会話だけを根拠とし、現在の会話一覧・Thread名・検索snippetだけから全会話の内容を把握したとしない。
 
-末尾は **【Living Review】→【Next step】** を隣接させ、その後に別のまとめ・参考資料節を置かない。Sourceリンクは関係する本文へ置く。実行・確認・比較・維持・意図的保留・今回完了はいずれもNext stepになり、Mapのために新Taskや無根拠の発見を作らない。
+末尾は **【Living Review】→【Next Step】→【Next Query】** を隣接させ、その後に別のまとめ・参考資料節を置かない。Sourceリンクと説明は関係する本文へ置く。Next Queryの共通形式・全文再掲・コピー境界・選択権・権限・例外は[AGENTS §6.2](../../AGENTS.md#next-query)に従う。実行・確認・比較・維持・意図的保留・今回完了はいずれも有効な接続であり、追加依頼不要・意図的保留ではその状態を示してQueryを作らない。Mapのために新Taskや無根拠の発見を作らない。
 
 ### 最新AIニュース — ヘッダーで外部の変化を見る
 
@@ -262,4 +268,4 @@ Feedbackで通知の有用性、見落とし、重複、量や時間帯を見直
 - 計画提示：`conversation-message:Sentinel_4d9a8c0140bc81918710be1620d41a69`
 - Feedbackで育てる試行と実行承認：`conversation-message:Sentinel_b160b38c12c4819182588f826426833d`
 
-EOF::DOTS_ARK_MAP::v004
+EOF::DOTS_ARK_MAP::v005
