@@ -1,7 +1,7 @@
 ---
 title: "chocoZAP Sweet Spot / chocozap-sweet-spot"
-version: v001
-updated: 2026-10-20
+version: v002
+updated: 2026-10-21
 status: skill usage and invocation guide
 ---
 
@@ -40,6 +40,8 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 形式検査と、元会話・診断・期待回答を渡さない二つの独立AI文脈での限定応答確認を行った。長時間コースの開始前相談では12項目の順序とExercise Bike後の補助を復元し、今日の終了時刻未定を保持した。報告方法の設計相談では、30分コースの一時的な省略・基準継続とTriangleを区別し、引用を当日の実績にせず保存も行わなかった。提供した本文・原本に対する確認であり、自然な自動選択、全環境の反映、実生活の効果の実証ではない。
 
 同日の[共有更新](https://github.com/yusukefujiijp/ai-project/commit/1cfdd435707cb1549b4dce1b3c9a4c449a39fd07)をmainから再取得し、本文・表示設定の一致を確認した。既存の登録済みSkillへ本文と表示説明・起動文を反映し、利用対象・自動選択設定・アイコン指定を保持した。導入先の永続保存後、スキル取得機能から本文を全文取得して共有版と完全一致した。本文blob SHAは `ad2ad460c28ded512a765a8f281e279950418be4`。導入先がYAMLの引用符・字下げを正規化したため表示設定は値の一致で確認し、本文は全文一致で確認した。Project設定画面や今後の実配信まで完了したという意味ではない。
+
+2026-10-21、本人が通常の現在値一覧に添えていた使い方未指定の古い系列起点を不要と訂正した。共有本文と登録済み本文で、系列起点を無条件に一覧へ含める指示を改め、現在採用中で使い方が解決された基準を通常表示する。履歴は比較・振り返りの依頼時に取り出す。原文・現在の表示契約・根拠は[chocoZAP記録入口](../../lifestyle/chocozap/README.md)と `cz-record-0027`・`CZ-A029` が所有する。過去の系列や重量観察の削除ではない。
 
 ## 初期形成の記録
 

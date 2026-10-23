@@ -74,7 +74,7 @@ dots_location_entry_alignment:
   date: "2026-10-20"
   base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
   change_record: "control-center/changes/STR-022-dots-agent-location.md"
-  scope: "Dots navigation in the relocation candidate only; main cutover and product schedule alignment remain pending; no root redesign or whole-repository revalidation"
+  scope: "Dots current navigation only; operational cutover evidence is owned by STR-022; no root redesign or whole-repository revalidation"
 updated_reason:
   - "2026-10-20: Route the Dots entry to agents/dots in the relocation candidate; retain current ownership, historical review metadata and product cutover boundaries."
   - "2026-10-20: Connect agents and the common AI-to-AI communication manual with its experience originals; preserve Board Current and the existing Dots location."

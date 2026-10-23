@@ -1,0 +1,4 @@
+interface:
+  display_name: "Thread総括"
+  short_description: "Threadの意味・訂正・発見を、目的に合う形で柔軟に総括する"
+  default_prompt: "$synthesize-thread を使い、このThreadの重要な意味・訂正・発見を、現在の目的に合う形でまとめてください。方法や構成は文脈に合わせて選んでください。"

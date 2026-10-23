@@ -3,7 +3,7 @@ title: "Dots — 原本移設先への案内"
 canonical_path: "dots/ark-map/README.md"
 version: "v001"
 status: "navigation-only; operational cutover status is owned by STR-022"
-updated: "2026-10-20"
+updated: "2026-10-24"
 canonical_target: "agents/dots/ark-map/README.md"
 change_record: "../../control-center/changes/STR-022-dots-agent-location.md"
 expected_eof: "EOF::DOTS_RELOCATION_DOTS_ARK_MAP::v001"
@@ -15,7 +15,7 @@ expected_eof: "EOF::DOTS_RELOCATION_DOTS_ARK_MAP::v001"
 
 通常のCurrent読取ではリンク先の原本をmetadataから宣言されたExact EOFまで読む。この案内の読了を元本文の全文読解や旧Bindingの成功へ置き換えない。これは自動転送ではなく、旧JSONLへの書込みも転送しない。可変原本の並行追記先を作らない。
 
-移設前の本文は[固定版](https://github.com/yusukefujiijp/ai-project/blob/2dc05496b555638a47a3de2f058c7f632aca773f/dots/ark-map/README.md)、blob `28b99d2ca5148e2b78bbe5956d69c511237f5e67`。固定commit、明示canonical_path、Identity、版、Exact EOFを要求する契約はその条件に従う。旧住所を明示固定する契約は案内だけで互換と認定せず、必要な版移行を解決する。
+移設前の本文は[固定版](https://github.com/yusukefujiijp/ai-project/blob/b2768b60d1b334ab25e49f5aae65d53038fc510a/dots/ark-map/README.md)、blob `9a3fc9a5d292460c7223bfb4688f65469e7977a1`。固定commit、明示canonical_path、Identity、版、Exact EOFを要求する契約はその条件に従う。旧住所を明示固定する契約は案内だけで互換と認定せず、必要な版移行を解決する。
 
 ## 既存の節への接続
 

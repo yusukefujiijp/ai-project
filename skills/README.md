@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.42.0
+version: v0.43.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-20
-updated_reason: 現行32スキルのREADMEへ用途・Query・個別形成記録を移し、Hubを一覧と共通契約へ整理。MAPの新旧Queryフォルダを退役
+updated: 2026-10-21
+updated_reason: Ark100:01で承認したThread総括を追加。意味・訂正・根拠を保持し、AIの方法裁量とFeedbackによる改善を開く
 ---
 # Ark Shared Skills Hub
 
@@ -62,10 +62,11 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行32件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` は[現行名への案内](map-ark-current-position/README.md)であり、別の現行Skillとして数えない。
+現行33件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` は[現行名への案内](map-ark-current-position/README.md)であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
+| Thread総括 / synthesize-thread | 対話の重要な意味・訂正・発見を用途に合わせて総括。方法・構成はAIへ開き、Feedbackの適用範囲を保持 | [README・Query](synthesize-thread/README.md) / [SKILL.md](synthesize-thread/SKILL.md) |
 | B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [README・Query](b-zone/README.md) / [SKILL.md](b-zone/SKILL.md) |
 | Markdown to HTML / markdown-to-html | 原文の内容・出典・関係を保つHTML閲覧版、スマートフォンでの読書 | [README・Query](markdown-to-html/README.md) / [SKILL.md](markdown-to-html/SKILL.md) |
 | GitHub操作の事前確認 / resolve-github-runtime | Plugin更新・欠落path・手順と道具の不一致、現在の操作経路が不明な時 | [README・Query](resolve-github-runtime/README.md) / [SKILL.md](resolve-github-runtime/SKILL.md) |
@@ -284,4 +285,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.42.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.43.0

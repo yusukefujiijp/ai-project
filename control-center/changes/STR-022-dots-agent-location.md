@@ -1,22 +1,22 @@
 ---
 title: "STR-022 — Dots原本をagents配下へ移す候補と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
-version: "v002-candidate"
-status: "prepared candidate; main cutover held pending actual Dots schedule access"
+version: "v003-candidate"
+status: "current-main integration prepared; existing Dots schedules identified; cutover pending"
 created: "2026-10-20"
-updated: "2026-10-20"
+updated: "2026-10-24"
 recorded_by: "ChatGPT Work / Dots移設実行担当"
 repository: "yusukefujiijp/ai-project"
 base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
 publication_parent: "43cdadf6ff3244edff69098237fce639fd237064"
 candidate_branch: "work/dots-agent-location-20261020"
 role: "Bounded structural change, provenance, validation and operational cutover conditions"
-expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v002"
+expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v003"
 ---
 
 # STR-022 — Dotsの所在と実運用を揃える
 
-**Bの移設候補を作成した。共有基準mainへの切替は保留している。** 実際のDots予定を特定して読取URL・限定保存先を揃えられていないため、候補Refを運用の追記先にしない。保存した候補、main反映、登録Skill反映、製品予定の更新、次の実利用は別々の成果として確認する。
+**2026-10-24 JST、Browserで対象の既存3予定を特定し、最新mainを保持した切替候補へ更新した。** 現在の状態は第8節を参照する。第1〜7節は2026-10-20時点の準備・保留理由・確認結果を保持する履歴であり、そのファイル数・行数・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
 
 ## 1. 目的・承認・今回の境界
 
@@ -122,4 +122,26 @@ PR作成時にmainがさらに `429ee61290a8531edc6c59596697f8c96d642f65` へ進
 
 この節は候補の保存確認の追記。製品予定・登録Skillの実更新、main切替、外部AIの受入れ・運用成功を意味しない。Bの既承認範囲は保持され、次の不足は対象予定を正規の製品設定画面で特定する接続である。
 
-EOF::STR_022_DOTS_AGENT_LOCATION::v002
+## 8. 2026-10-24の再開と最新mainの統合
+
+Humanは本WorkでBrowserへの切替を明示許可し、初穂の既存通常Map・補助確認・日次総括と5登録Skillの住所を揃え、並行変更を保持して移設・再取得確認まで進めるよう指定した。頻度・時刻・有効状態・通知先・保存内容の範囲を維持し、予定の削除・再作成、外部AI送信をしない境界を引き継ぐ。
+
+再開時mainは `b2768b60d1b334ab25e49f5aae65d53038fc510a`、treeは973 entries・truncated=false。先行候補が統合した `429ee61290a8531edc6c59596697f8c96d642f65` 以後の並行変更36パスを保持する。変更対象の重なりでは、Map v005のNext Step→Next Query改訂、共通lessonの同一行への訂正と追加1行（現在9行）、Skills Hub v0.43の新Skill入口を最新本文から統合した。AGENTS v004.6等の対象外改訂はそのまま保持し、旧版へ戻さない。
+
+新たに公開済みの `dots/bot-to-dot-experiments.md` も `agents/dots/bot-to-dot-experiments.md` へ移す。本文の候補・未採用状態を保持し、二つの相対リンクだけを新位置から到達する形へ直す。旧住所には固定元版と新原本への案内を置く。Grok Botの導入・新実験を開始する変更ではない。これにより原本17件、旧案内10件、旧実体削除7件となる。既存ログ8行・4相対locator補正、凍結データ3本、二つのLF Seedを保持する。
+
+製品設定は承認済みのBrowser経路から実物を確認した。無関係な会話本文や予定IDは公開しない。
+
+| 既存予定 | UIで確認した設定 | 限定した住所差分 |
+|---|---|---|
+| Ark現在地と次の一手 | 有効。カスタムRRULE `FREQ=DAILY;BYHOUR=4,8,12,16,20;BYMINUTE=0`。日本標準時、終了なし、毎回同じチャット | Map原本URL1件、ログ・共通lesson・条件付き専門lessonの保存先3件 |
+| Ark残作業とGoalの変化 | 有効。「カスタム」、日本標準時、毎回同じチャット。詳細な時刻ルールはこの編集UIに表示されないため独立確認は未了 | Map原本URL1件のみ。読取・条件付き報告だけという境界を保持 |
+| Ark前日総括と保存確認 | 有効。編集画面の選択は「毎日」、01:00 JST、日本標準時、終了なし、毎回同じチャット | 日次原本URL1件、共通lesson・Actorログの保存先2件 |
+
+日次総括はプロフィール一覧に「毎週 1:00」と表示される一方、編集画面では「毎日」が選択されていた。この表示差から予定を変更せず、編集前後の選択を保持する。通常Map・補助確認の指示に残る旧見出し配置等は住所変更の範囲外としてそのまま保持する。現行運用原本の後続改訂を巻き戻したり、今回の予定編集へ形式改訂を混ぜたりしない。
+
+登録管理原本の最新head `aee5f38dcf2521956bddf16cb37654f23505d3b0` を取り込み、対象5件が共有原本と一致することを確認した。既存登録IDを保ち、計7 URLだけを新住所へ変える候補を作成した。無関係な登録物12パスの後続変更も保持する。
+
+この版では切替前の調査・統合までを記録する。main、実予定、登録Skillの反映と保存後確認は、実施結果に基づき本節を更新する。実予定を手動実行しての試験や外部AIへの通知は行わない。
+
+EOF::STR_022_DOTS_AGENT_LOCATION::v003

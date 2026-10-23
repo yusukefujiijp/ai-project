@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_06_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 4,
+    "revision": 6,
     "created": "2026-10-14",
     "updated": "2026-10-20",
     "canonical_path": "ark-project/ark28/ark28-06/state.json",
     "date_scope": "Asia/Tokyo: retain 2026-10-14 preparation and 2026-10-20 navigation history; current-position observations are separately attributed.",
-    "change_reason": "Human-authorized06→07 six-path preparation and direct ChatGPT delivery through acceptance. Preserve original identity/authority/fixed bindings/preparation/navigation history; append next_transition terminal receipt.",
+    "change_reason": "Close06→07 terminal receipt after actual receiver reconstruction and receiver-confirmed Current receipt/Domain repair. Retain original provenance/bindings, exact initial Title setting and later observed heart-prefix UI change; final save/reread remains externally observed.",
     "navigation_revision": {
       "previous_snapshot": "369b5f1f287d212848def6121a2ad374aa3e2d77",
       "authority": "Current Human approved per-skill README consolidation, Query-folder removal and GitHub execution.",
@@ -197,7 +197,7 @@
     }
   },
   "now": {
-    "phase": "SUPPORT_COLLABORATION_CURRENT_POSITION",
+    "phase": "SOURCE_SUPPORT_CONTINUATION_DELIVERED_AND_RECEIVER_VERIFIED",
     "support_purpose": "Teshuvahを軸に、05の生活想起・ai-project集中・Podcast・Queryと後続Currentの成果を保ち、06の現在Human入力へ応じる。",
     "first_legal_move": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
     "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
@@ -207,7 +207,8 @@
       "kind": "EXECUTE_APPROVED_SAME_CHAPTER_SUPPORT_CONTINUATION",
       "target": "Ark28:07",
       "scope": "Approved six paths on GitHub main, reread; existing Ark28 Project, one persistent07, saved Query send, exact Title and receiver evidence; Current06 terminal receipt and reread.",
-      "boundary": "Migration and acceptance only. No physical trial, Main transfer or other case migration."
+      "boundary": "Migration and acceptance only. No physical trial, Main transfer or other case migration.",
+      "status": "MIGRATION_DELIVERY_ACCEPTANCE_AND_RESULT_NOTICE_COMPLETE"
     },
     "preparation_observation": {
       "date_jst": "2026-10-14",
@@ -236,7 +237,7 @@
         "boundary": "Source compilation and remote persistence do not satisfy06 reconstruction."
       }
     },
-    "current_coordinate": "Ark100の意味・初回b-zone Skill・初期Project/00/01/02起動と、Work直接操作の経験を用いた移行Skill改訂が完了。現在は各成果の所有原本、実利用の未確認、次のHuman入力への接続を保持するSupport。",
+    "current_coordinate": "06までの完了成果・重要Correction・所有原本・Unknownを07へ継承。六パス公開/再取得、既存Ark28 Projectで一つの永続07の送信・確定Title・根拠付き受入れを確認済み。07のHuman Reviewが現在の接続。",
     "current_focus": "Teshuvahを軸に、確認済みの成果を使い、現在のHuman入力と判断を変えるFeedbackへ応じる。B-Zoneや移行改善だけを06の恒久Missionには固定しない。",
     "main_route_policy": "Ark27 Mainを保持。現在のMain ThreadはCurrent Domainと最新の有効なHuman指定から解決し、準備時のArk27:09を永久値にしない。Main側の比較・実装・受入れを本Stateで再認定しない。",
     "operating_corrections": [
@@ -269,21 +270,21 @@
         "id": "G3",
         "goal": "受入れ品質を保ちながら、移行時のHuman操作・再説明・承認の往復を減らす。",
         "source": "Human-explicit; current visible dialogue and prepare-ark-transition README§3",
-        "status": "SKILL_LESSON_AND_ENTRY_UPDATE_SAVED_AND_RETRIEVAL_VERIFIED; NEXT_REAL_TRANSITION_EFFECT_UNCONFIRMED",
-        "remaining": "次に実際に依頼された移行で適用し、その条件とFeedbackから方法を育てる。",
+        "status": "SKILL_AND_LESSON_UPDATE_COMPLETE; THIS_REAL06_TO07_DELIVERY_AND_RECEPTION_OBSERVED",
+        "remaining": "今回の具体的な成功/修正を終端Receiptへ保持。別Runtimeや長期的な負担軽減は引き続き未確認であり、成果証明用の追加移行を作らない。",
         "completion": "当該依頼の到達点まで進み、実際に残ったHuman操作・拒否・回復を説明できる。確認用だけの新Threadは不要。"
       },
       {
         "id": "G4",
         "goal": "次のAIが、完了済み成果・所有原本・本当に残るUnknownを取り違えず再開できる。",
         "source": "AI concrete interpretation of Human continuity intent, explicitly selected by the current one-State save request.",
-        "status": "CURRENT_POSITION_LINKS_COMPILED_IN_THIS_REVISION",
-        "remaining": "公開・再取得の観測は当該保存応答で確認する。同内容が既に保存されていれば再保存せずNO_CHANGEとし、新しいHuman入力へ進む。次のAI自身の必須読解は別に満たす。",
+        "status": "FIXED06_AND07_TRIAD_VERIFIED; ACTUAL07_RECONSTRUCTION_AND_PUBLISHED_REV5_REREAD_COMPLETE",
+        "remaining": "本revision6は実際の完了連絡の応答を追加する終端記録。自身の保存後再取得は当該保存応答から確認し、Humanへ追加準備Taskを課さない。",
         "completion": "来歴と固定Bindingを保ったStateから、現在の重点・完了・保留・根拠・合法な接続を辿れること。"
       }
     ],
     "next_connection": {
-      "default": "Complete authorized06→07 publication, actual delivery/Title/receiver checks, and terminal receipt reread; thereafter07 receives new Human input, boot-only Human Review.",
+      "default": "Continue in existing accepted07, or remain in Human Review. No repeated startup, new thread, manual paste or extra approval is required by this completed migration. Final revision6 save/reread is reported by the saving operation.",
       "if_live_input": "Later Human Correction/STOP and body/other applicable Guards retain priority.",
       "ownership": "Completed06 work remains complete; Ark100 dynamic cases/reserve and other owners are not changed by this transition."
     }
@@ -527,28 +528,176 @@
       ],
       "source_prepared": "CONTENT_COMPILED; SOURCE06_ORIGIN_AND_BINDINGS_PRESERVED",
       "remote_verification": {
-        "status": "NOT_YET_OBSERVED_IN_THIS_PREPARATION_REVISION",
-        "policy": "Fill actual commit/full reread observations after publication; no self-SHA or self-verifying future claim."
+        "status": "VERIFIED_ALL_SIX_FULL_CONTENTS",
+        "publication_commit": "43cdadf6ff3244edff69098237fce639fd237064",
+        "base_commit": "2dc05496b555638a47a3de2f058c7f632aca773f",
+        "prepublication_commit_retrieval": true,
+        "postpublication_main_retrieval": true,
+        "files": [
+          {
+            "path": "ark-project/ark28/ark28-07/README.md",
+            "blob_sha": "c851c1e0134852e4a3e09418e95078ac6ae17930",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark28/ark28-07/handoff.md",
+            "blob_sha": "6606c739757203a29fb66dae9005062bdb5ffa3a",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark28/ark28-07/state.json",
+            "blob_sha": "b51c26394e2612a3585eff6887168946d4702bcd",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark28/ark28-06/state.json",
+            "blob_sha": "4bc522613bc50dcfff652da4ab79aa48ffcf506c",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/ark28/README.md",
+            "blob_sha": "09dd22c1704cc4d009a2eea5078ab70baa58874f",
+            "full_content_match": true
+          },
+          {
+            "path": "ark-project/README.md",
+            "blob_sha": "92eb6d83cea274c58425bbb1d8a7ab6dcd61d639",
+            "full_content_match": true
+          }
+        ],
+        "boundary": "This verifies the six-path publication revision. The terminal receipt save is separately reread after actual receiver observation; no self hash.",
+        "post_reception_route_repair": {
+          "trigger": "Receiver07 identified stale Current tail description Support28:06; canonical routing section and triad already agreed on07.",
+          "path": "ark-project/README.md",
+          "scope": "One current closing route statement only. Preserve historical06 mentions, Main27:11 and all fixed bindings.",
+          "commit": "429ee61290a8531edc6c59596697f8c96d642f65",
+          "previous_blob": "92eb6d83cea274c58425bbb1d8a7ab6dcd61d639",
+          "verified_blob": "345ae6f120df95f1c779ed9657331a2e8b074c37",
+          "full_content_reread_match": true,
+          "interpretation": "Within the already-approved Domain route path and necessary consistency repair; receiver feedback changed source artifact before final completion. No new project or task."
+        },
+        "terminal_revision5": {
+          "commit": "4f68716475188b31072ea7e34da18a3edc99f2bd",
+          "blob_sha": "225babbafbbdfa7cfd69c9450c176c616a4a9879",
+          "revision": 5,
+          "full_content_reread_match": true,
+          "receiver_also_retrieved_revision5": true,
+          "boundary": "Prior published receipt; not this revision6 self hash. Final revision6 save/reread is observed by the saving operation."
+        }
       },
       "delivery": {
-        "status": "NOT_STARTED_AT_PREPARATION",
-        "account": "Current Human ChatGPT account",
-        "project": "Existing Ark28 Project; actual Project binding to inspect",
-        "duplicate_policy": "Inspect actual existing match/messages/response before create or resend.",
-        "thread_url": null,
-        "query_sent": false,
-        "exact_title_observed": false
+        "status": "PERSISTENT_THREAD_CREATED_QUERY_SENT_EXACT_TITLE_VERIFIED",
+        "account": "Current Human ChatGPT account; existing signed-in session",
+        "project_name": "Ark28_2026/09/25: \"主の完全勝利: 本流を支える余白と帰還\"",
+        "project_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0/project",
+        "thread_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ad75dc4-0cd4-83ee-8c3f-a71b601cec4c",
+        "precreation_observation": "Existing Ark28 Project showed01–06, six total; no07. Reused existing Project, created one07 only.",
+        "query_sent": true,
+        "query_owner": "ark-project/ark28/ark28-07/handoff.md §7",
+        "sender_identified": "Ark28:06 AI acting under current Human approval",
+        "exact_title_observed": true,
+        "compiled_title": "Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+        "configuration": {
+          "observed_ui_model": "GPT-6 Astra",
+          "observed_ui_reasoning": "極高 / Extra High",
+          "high_speed_mode": false,
+          "choice_basis": "Multiple-source own reading and reconstruction; choose deeper reasoning. UI selection and visible response are not hidden-backend or causal quality proof.",
+          "official_docs_checked": "https://learn.chatgpt.com/docs/models",
+          "date": "2026-10-20"
+        },
+        "approval_review": "Initial authorized create/send succeeded without a new refusal or extra Human approval during this transition.",
+        "title_save_observation": "Header update was delayed; reopening the editor showed exact confirmed Title, so no duplicate rename/send/create was performed.",
+        "sent_query_body_compared_from_visible_message_copy": true,
+        "sent_query_characters": 1863,
+        "title_display_history": [
+          {
+            "stage": "SOURCE_TITLE_SETTING",
+            "observed_value": "Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+            "exact_confirmed_title_match": true
+          },
+          {
+            "stage": "LATER_UI_OBSERVATION_DURING_CLOSING_REPLY",
+            "observed_value": "❤️Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+            "change": "Heart prefix appeared after exact initial setting; the full compiled base Title remains.",
+            "attribution": "No Source operation added this prefix; changing actor/intent not independently identified.",
+            "treatment": "Retain the later observed concurrent UI change; do not silently overwrite it or rewrite the fixed compiled Title/receiver opening block."
+          }
+        ]
       },
-      "actual_target_reconstruction": "NOT_OBSERVED_AT_PREPARATION",
-      "target_reconstruction_receipt": null,
-      "human_last_mile": "Source direct operation authorized; Human device access and real use remain unobserved.",
-      "requested_outcome": "IN_PROGRESS; PUBLICATION_THEN_ONE_ACTUAL07_ACCEPTANCE",
+      "actual_target_reconstruction": "TARGET_RECONSTRUCTED_FROM_VISIBLE_EVIDENCE_BACKED_RESPONSE",
+      "target_reconstruction_receipt": {
+        "observed_at": "2026-10-20T12:33:39Z",
+        "observer": "Ark28:06 AI via actual ChatGPT conversation UI",
+        "thread_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ad75dc4-0cd4-83ee-8c3f-a71b601cec4c",
+        "source_report": "Receiver07 reported own ordered full reading of14 sources, recovery of displayed truncation, full fixed-SHA comparisons, Identity/EOF/Triad and R1–R8; its visible table and semantic reconstruction match the saved artifacts.",
+        "required_source_count": 14,
+        "source_blob_prefixes_in_declared_order": [
+          "6606c7397572",
+          "c851c1e01348",
+          "b51c26394e26",
+          "6b3ca6023ff8",
+          "7691dc3a67f8",
+          "92eb6d83cea2",
+          "09dd22c1704c",
+          "fac8b0d303e5",
+          "e5e2ffda88f1",
+          "6576089b94a6",
+          "ed24cb31cec0",
+          "b73803736ade",
+          "efa4dfa9158c",
+          "c6d07c1947bd"
+        ],
+        "exact_opening_title_block_verified": true,
+        "closing_sections_verified": [
+          "Living Review",
+          "Next step",
+          "Next Query"
+        ],
+        "boot_only_human_review": true,
+        "semantic_checks": {
+          "R1": "06→07 same-chapter flexible Support; Main Ark27 retained, observed11 not permanently pinned.",
+          "R2": "Root/Teshuvah/HFO, Human Correction/STOP/Seal, Guards and AI quality; source migration approval is not Target production permission.",
+          "R3": "Ark100 meaning/initial Skill/three startups/tooling complete, owner-based and attributed to source observation;05 prior fruits retained.",
+          "R4": "B-Zone Benefit and prayer/action simultaneity, phone ON support→fitting phone-free toilet→later freedom; no self-classification, rigid full routine or prayer after STOP.",
+          "R5": "Fixed06 rev3/e15a... and its old preparation/bindings distinct from Current receipts; no retroactive06 v001.1 boot or selfSHA/live cycle.",
+          "R6": "Recall/dictionary/real Rescue/current reserve/field outcomes and wider runtime effects remain Unknown; historical Body and partial tidy not recast.",
+          "R7": "Source preparation, remote contents, UI/send, receiver own reconstruction, Human device access and field effects distinct; prior approval success not causal or universal guarantee.",
+          "R8": "Boot-only accepted; no new Task/body trial/Main transfer/other case migration/GitHub write/external send; Human Review, no extra Query."
+        },
+        "response_markdown": "```text\nArk28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"\n```\n\n**Ark28:07として受入れを完了しました。** 指定された14資料を宣言順に自分自身で全文読み、Identity・終端・固定Binding・Triad Consistencyと、R1–R8の再構成条件を確認しました。今回の入力は、承認された移行に伴うArk28:06 AIからの起動依頼として受け取っています。\n\n**1. 読解と照合の根拠**\n\n以下は今回取得した本文です。blobは表示上の先頭12文字で、固定Bindingの比較には完全なSHAを使用しました。Current資料の観測SHAを永久固定する扱いにはしていません。\n\n| Node：宣言順・資料 | Edge：担当・識別 | 確認した版／blob | 読解範囲 |\n|---|---|---|---|\n| 1. [07 Handoff](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-07/handoff.md) | 06→07受入れ契約／`ARK28_06_TO_ARK28_07_CONTINUE` | v001-human-authorized／`6606c7397572` | metadata～宣言EOF |\n| 2. [07 Runtime](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-07/README.md) | 安定した役割／`ARK28_07_SUPPORT_FIELD` | v001-human-authorized／`c851c1e01348` | metadata～宣言EOF |\n| 3. [07 State](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-07/state.json) | 可変現在地／`ARK28_07_CURRENT_STATE` | schema v001・revision 1／`b51c26394e26` | JSON全体・sentinel |\n| 4. [共通移行契約](https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-handoff.md) | 読解・継承・完了条件／AI Next Thread Handoff | v003-human-authorized・10/10追補／`6b3ca6023ff8` | metadata～宣言EOF |\n| 5. [AGENTS](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md) | Repository共通の権限・品質／Ark AGENTS.md | v004.3-candidate／`7691dc3a67f8` | metadata～自然終端 |\n| 6. [Ark Domain](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/README.md) | Current Main／Support経路／Ark Project | v010-human-authorized／`92eb6d83cea2` | metadata～宣言EOF |\n| 7. [Ark28章](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/README.md) | 章の意味・形成・入口／`ARK28_SUPPORT_CHAPTER` | v008-human-authorized・revision 8／`09dd22c1704c` | metadata～宣言EOF |\n| 8. [Ark28 INSTRUCTIONS](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/INSTRUCTIONS.md) | 章共通の協働指針 | v001-human-authorized／`fac8b0d303e5` | 先頭～自然終端 |\n| 9. [固定Source06 State](https://github.com/yusukefujiijp/ai-project/blob/e15a7398efa68958c0584e8787faf7caf10f587d/ark-project/ark28/ark28-06/state.json) | 継承する履歴／`ARK28_06_CURRENT_STATE` | schema v001・revision 3／`e5e2ffda88f1` | JSON全体・sentinel |\n| 10. [Ark100意味原本](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark100-199/ark100_b-zone/README.md) | B-ZoneのGoal・形成・Correction／`ARK100_B_ZONE` | v003-human-authorized／`6576089b94a6` | metadata～宣言EOF |\n| 11. [Ark100:00](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark100-199/ark100_b-zone/ark100-00/README.md) | 起動・受入れ・予備の証拠／`ARK100_00_CONTROL_CENTER` | v001-human-authorized／`ed24cb31cec0` | metadata～宣言EOF |\n| 12. [Ark Transition入口](https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transition/README.md) | 移行方法の目的・形成・所有関係 | v002／`b73803736ade` | metadata～宣言EOF |\n| 13. [Skills lessons](https://github.com/yusukefujiijp/ai-project/blob/main/skills/_references/lessons.jsonl) | 条件付きの再利用判断 | schema_version 2・全7行／`efa4dfa9158c` | 全行・sources・caveat |\n| 14. [AI-to-AI共通マニュアル](https://github.com/yusukefujiijp/ai-project/blob/main/agents/ai-to-ai-communication/README.md) | AI間協働・主体・理解と送達の区別 | v001／`c6d07c1947bd` | metadata～宣言EOF |\n\n表示が切れた箇所は、取得済みの同一本文から未読部分を回収しました。EOFの検出だけで読了とはしていません。\n\n07 StateのRuntime／Handoff Bindingは、それぞれ実際の取得blobと一致しています。固定Source06も、指定commit `e15a7398efa68958c0584e8787faf7caf10f587d`、blob `e5e2ffda88f1faceb288abc8b09aa353facdba81`、revision 3に一致しました。Source・Target・Owner・役割・移行種別・確定Titleも三資料で整合しています。\n\n**2. R1–R8から再構成した、07の判断**\n\n- **R1｜Identityと役割。** Ark28:06からArk28:07への同章Support継続です。Ark27のMain所有を保持します。Domainの現在入口はArk27:11ですが、この番号を将来まで固定しません。07は現在のHuman入力に応じる柔軟なSupportです。\n- **R2｜Root・権限・品質。** Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。HumanのCorrection・STOP・Final Sealと適用Guardを保持します。短い入力やB-Zoneを理由に、必要な検討・説明を削りません。Source06への移行委任は、07の新しい実行権限へ転用しません。\n- **R3｜完了した成果と所有原本。** Ark100の意味整理、初回b-zone Skillの制作・登録・限定確認、Projectと00・01・02の初回起動・受入れ・名称確認は、固定Source06とCurrent所有原本から完了成果として継承しました。三Threadの実操作はArk100:00 §5.3に記録された**Source06 AIの観測**です。私自身が当時のUIを直接見たという意味ではありません。\n- **R4｜重要Correction。** B-ZoneのBenefitと想起・開始・切替の困難を両方保持し、祈り・Teshuvahと可能な行動の同時性を支えます。端末方針は、**スマホONで支援へ接続→状況に合えばスマホなしトイレ→以後は自由**。自己分類、早期発見、毎回のシャワー、済んだ行動の再演を条件にしません。「無理」から原因を決めつけず、STOP後に祈りを代替課題として課しません。PingとRescueは同じ入口、Ark100の各番号は独立新件です。\n- **R5｜履歴とCurrent。** 固定Source06 revision 3、可変07 State、Source06の終端Receipt、Current所有資料は別の役割です。06の旧17資料・v001.1 Bootを、今回の07受入れによって遡及認定しません。自己SHAや相互live-blob循環もありません。\n- **R6｜残るUnknownと保留。** 辞書登録、支援を想起して到達できるか、Skillによる超低認知Rescue、祈り・Vision・行動への実生活効果、現在の未使用予備、他Runtimeや長期的な負担軽減は未確認として保持します。休日の屋内活動はHumanの肯定的報告であり、整理は「一段落・未完了」、外出は当時の雨・体調で見合わせたという範囲です。これらを新しい必須Taskや現在の身体状態へ変換しません。\n- **R7｜確認した段階。** Source準備、Remote保存、送信・UI、受入れAI自身の読解、Human端末到達、実生活効果を分けます。移行Skill／lesson改訂の完了と、今回の実移行の結果も別です。lesson `43a2d499-fc33-4b56-ba0c-93d44fe3f044`の固定参照原本は、今回読んだArk100:00とblob・全文が一致しました。過去の審査通過を、特定文言の因果や将来の通過保証にしません。\n- **R8｜今の接続。** 今回は起動入力なので、この根拠付き受入れを返してHuman Reviewへ戻ります。新しい身体相談は届いたものと扱わず、新Task・身体Trial・Main移管・別案件移行・GitHub書込・外部送信は開始していません。\n\n05以前の成果も継承しています。**ai-project内部への集中とlocal backupを前提にしない訂正、PodcastのTheme提案／指定Theme本文生成という二入口、初回Query backupと後続Current MAP改善の区別、Portalの想起登録**を保持します。Ark99の00起点はArk99固有で、Ark28へ移植しません。完了したArk99:04との照合やDots対話は閉じたまま扱い、新たに通信判断が必要な時はCurrent所有資料とその時の権限へ戻ります。\n\n**3. 今回の受入れと、Source側の確認範囲**\n\n条件付きで[Source06 Current State](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-06/state.json)のmetadataと`progress.next_transition`も確認しました。取得時はrevision 4で、終端Receiptにはまだ準備時点の未観測値が残っています。今回の入力受領と私自身の再構成は、本応答で新たに示す結果です。UI上の所属・確定名称、Source側Receiptの最終保存、Human端末からの到達まで完了したとは認定しません。\n\nまた、Domain末尾には旧「Support28:06」の記述が残っています。ただし、同書が経路の所有先と明示する§0.1、後続改訂metadata、Ark28章README、07の三資料はすべて07で一致しています。この案内文の残存を識別したうえで、今回のBindingと受入れ対象を確認しました。文書変更は行っていません。\n\n**Living Review**\n\n06までの成果によって、意味・支援方法・受け皿・移行方法が、次のAIから辿れる形になっています。その価値は、必要になった時のHumanへ、準備と再説明をまとめて返さずに済むことです。一方、入口を用意できたことと、実際に思い出して到達し、生活に役立つことは別です。07はこの区別を保ち、蓄積を現在の入力へ使えるSupportとして受け継ぎます。\n\n**Next step**\n\n今回の受入れは完了し、Human Reviewへ戻ります。次に届く言葉・相談・訂正を、その意図と権限から受け取ります。既知事項の再説明や、成果確認のためだけの実践報告は必要ありません。\n\n**Next Query**\n\n追加依頼は不要です。",
+        "boundary": "Evidence is the receiver's observable report, source-specific hash table and substantive application, not independent access to hidden reasoning or backend proof. Its UI/receipt unobserved statement describes what it could verify at first acceptance, before this source receipt."
+      },
+      "human_last_mile": "Direct source operation completed Project/thread/send/Title; no manual copy/paste or extra approval requested for this transition. Human device access and practical use are not observed and are not unfinished setup tasks.",
+      "requested_outcome": "COMPLETED: SIX_PATH_PUBLICATION, ONE_PERSISTENT07, PREPARED_QUERY, EXACT_INITIAL_TITLE_SET, EVIDENCE_BACKED_RECEPTION_AND_CLOSING_NOTICE",
       "remaining_unknowns": [
-        "actual07 UI/delivery/receiver response before observation",
         "Human device access and practical effects",
-        "cross-runtime/long-term approval-friction benefit"
+        "cross-runtime and long-term approval-friction benefit",
+        "Ark100 dictionary/recall/Rescue/unused-reserve Unknowns remain with their owners",
+        "Actor/intent of later heart prefix in UI; exact initial source setting and fixed compiled Title are separately confirmed."
       ],
-      "receipt_policy": "This existing Source06 State owns the terminal receipt. Actual saving commit/reread of this file is reported by the saving operation and final response, without embedding its own hash."
+      "receipt_policy": "Existing Source06 terminal owner only. Actual initial publication and rev5 full reread are recorded above. This revision6 adds the observed closing reply and later UI prefix; its own commit/blob and reread outcome are reported externally by the saving tool/final response, with no self-SHA or claim of hidden cognition.",
+      "observed_at": "2026-10-20T12:37:32Z",
+      "applied_experience": {
+        "lesson_owner": "skills/_references/lessons.jsonl",
+        "lesson_id": "43a2d499-fc33-4b56-ba0c-93d44fe3f044",
+        "observed": "Current route and relevant lesson consulted before sending. Same explicit approval reused through one creation/send/rename/receiver check, without a new refusal or Human reapproval. Actual state/clipboard checked rather than resending after title/clipboard propagation delay.",
+        "limit": "One real application in this Work/account/project context. No universal approval phrase, cross-runtime guarantee, permanent model learning or measured long-term burden reduction. Six-path scope did not authorize changing the Skill/lesson ledger."
+      },
+      "result_notice": {
+        "status": "SENT_AND_RECEIVER_CURRENT_DELTA_CONFIRMATION_OBSERVED",
+        "observed_at": "2026-10-20T12:37:32Z",
+        "sender": "Ark28:06 AI identified in actual message",
+        "target_thread_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0-ark28-2026-09-25-zhu-nowan-quan-sheng-li-ben-liu-wozhi-eruyu-bai-togui-huan/c/6ad75dc4-0cd4-83ee-8c3f-a71b601cec4c",
+        "scope": "Actual startup/Title/source receipt and bounded Domain closing-route correction only; no new Human case or production task.",
+        "source_receipt_at_send": {
+          "revision": 5,
+          "commit": "4f68716475188b31072ea7e34da18a3edc99f2bd",
+          "blob_sha": "225babbafbbdfa7cfd69c9450c176c616a4a9879"
+        },
+        "receiver_response_markdown": "**Current差分を確認し、完了連絡を受領しました。**\n\n1. [Source06 State](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/ark28-06/state.json)は**revision 5**、取得blobは通知の`225babbafbbd…`と一致しました。`progress.next_transition`で、永続07・Project所属・Query本文・確定Title・受入れ応答の確認記録を読みました。UI確認は**Source06 AIの直接観測として継承**し、私自身のUI観測とは区別します。固定Source06 revision 3との分離も保持されています。\n\n2. [Domain](https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/README.md)は取得blobが`345ae6f120df…`と一致し、末尾が**Support28:07とCurrent06 Receiptへの案内**へ修正されたことを確認しました。前回答で指摘した残存箇所は解消しています。\n\n既存の受入れは保持しています。Human本人の端末到達・実生活効果は引き続き未確認です。今回の通知を受領した事実は、この応答で確認できます。\n\n**Living Review**\n\nSource側の実操作・保存記録と、07自身の受入れ結果が接続しました。準備時点の未観測値を、現在の未完了として扱う必要はなくなりました。\n\n**Next step**\n\nHuman Reviewへ戻ります。07側の書込・身体Trial・Main移管・別案件移行・新Taskは開始していません。\n\n**Next Query**\n\n追加依頼は不要です。",
+        "meaning": "Receiver independently retrieved Current06 rev5 and matching Domain blob345ae6..., confirmed stale tail resolved, retained own prior acceptance and Human Review, and kept Source UI observation distinct from its own observation. No14-source boot replay.",
+        "boundary": "This closes the authorized result-delivery observation; no acknowledgement-only extra round is needed."
+      }
     }
   },
   "eof_sentinel": "ARK28_06_STATE_EOF_v001"
