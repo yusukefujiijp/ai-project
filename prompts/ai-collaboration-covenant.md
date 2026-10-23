@@ -90,7 +90,7 @@ Humanへ渡す操作面は、目的に合う最小十分な形にする。ファ
 
 ## 7. 可変状態と経験は担当原本へ
 
-本書を現在のTask一覧や全経験のログにしない。[Task経験](../task-mode-system/experience/README.md)、[Actorログ](../dots/README.md)、[Board](../board/README.md)、[Skills Hub](../skills/README.md)、[GitHub整理](../control-center/github/README.md)など、対象の現在のガイドへ接続する。リンクは用途別の入口であり全件必読ではない。
+本書を現在のTask一覧や全経験のログにしない。[Task経験](../task-mode-system/experience/README.md)、[Actorログ](../agents/dots/README.md)、[Board](../board/README.md)、[Skills Hub](../skills/README.md)、[GitHub整理](../control-center/github/README.md)など、対象の現在のガイドへ接続する。リンクは用途別の入口であり全件必読ではない。
 
 出来事、再利用するlesson、方法の改訂、通信のCurrentは異なる役割である。同じ状態を複数原本で更新しない。Work／Dotsを同一Actorとせず、共有できるSkillを環境名だけで複製しない。Boardへの保存、相手への送達、既読、理解を分ける。ChatGPT長期メモリの内容をGitHubへ転記・バックアップ・同期しない。
 

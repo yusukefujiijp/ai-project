@@ -21,7 +21,7 @@ expected_eof: "EOF::SHARED_LESSONS_README::v001"
 
 ## 2. 形式・更新・確認
 
-JSONLの形式と更新・検証には、[既存lessons契約の第3〜5節](../../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。各行はschema 2のlessonとし、管理行やMarkdownを入れない。形式契約の所在から、Dots固有の読込義務・所有範囲・書込権限を全体へ移植しない。
+JSONLの形式と更新・検証には、[既存lessons契約の第3〜5節](../../agents/dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。各行はschema 2のlessonとし、管理行やMarkdownを入れない。形式契約の所在から、Dots固有の読込義務・所有範囲・書込権限を全体へ移植しない。
 
 意味の訂正は同じlesson IDの現行行へ反映し、同じIDを重複追記して最新版とする方式にはしない。既存内容で十分ならNO_CHANGEを選べる。更新前の最新版・版条件、未知field、他AIの変更、重要な根拠と履歴を保持する。保存後は担当原本を再取得し、意図した内容を確認する。
 

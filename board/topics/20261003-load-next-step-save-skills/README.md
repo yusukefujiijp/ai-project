@@ -59,7 +59,7 @@ Ark27:07／Ark28:02は[先行Topic](../20261001-dots-work-reconnection/README.md
 
 Humanの方向は、Dotsを主な協働の場へ徐々に育て、Workを強力な支援役として使い分けることです。これは全DomainのMain所有権をDotsへ移す命令や、永久的な上下関係の確定ではありません。各Projectの仕事・Runtime・正式なMain／Supportは、それぞれの所有先と現在のHuman判断から確認します。
 
-Dotsで願い・違和感・設計の種を継続して受け取り、Workの推論・作成・検証資源を必要な仕事に活かし、成果を再び日常の協働へ戻したい。その時、Humanが毎回全背景を説明し直す負担を減らしつつ、AI間で権限や意味を勝手に変えない接続が必要です。[Dotsの現在方向](../../../dots/README.md)と[Actor紹介](../../../dots/actors/dot-0000/README.md)がそれぞれの原本です。
+Dotsで願い・違和感・設計の種を継続して受け取り、Workの推論・作成・検証資源を必要な仕事に活かし、成果を再び日常の協働へ戻したい。その時、Humanが毎回全背景を説明し直す負担を減らしつつ、AI間で権限や意味を勝手に変えない接続が必要です。[Dotsの現在方向](../../../agents/dots/README.md)と[Actor紹介](../../../agents/dots/actors/dot-0000/README.md)がそれぞれの原本です。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・スキル・Board・文書はKeliであり、王・玉座ではありません。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持します。これはHumanの意味とArkの協働秩序であり、AIが神的承認や将来の成功を認証することではありません。
 
@@ -168,8 +168,8 @@ boardはsaveの安全な保存原則を使えますが、通信の意味・Curre
 
 2026-10-02に確認した基準はcommit `1e2f3d34c5800a8eccb3be60850a77ae5bf54c8e`。受け手が作業する時はCurrent mainも照合してください。以下の件数・配置はその観測時点の事実で、永続的な固定値ではありません。
 
-- **共有学び:** [専用ガイド](../../../dots/lessons/README.md)と[現行lessons.jsonl](../../../dots/lessons/lessons.jsonl)。管理行なし、各行がlessonそのもの、row schema 2。基準snapshotでは3件。既存D-L001・D-L002を保持し、新規はUUID。各lessonは条件付きの現行判断として更新・統合でき、同じIDの訂正イベントを末尾へ重ねる形式ではない
-- **Actorログ:** [logsガイド](../../../dots/logs/README.md)と[dot-0000.jsonl](../../../dots/logs/dot-0000.jsonl)。schema 1のActor別出来事ログ。通常は追記し、実際の誤りには別IDのcorrectsで訂正を残す。学びの現行行更新と混同しない
+- **共有学び:** [専用ガイド](../../../agents/dots/lessons/README.md)と[現行lessons.jsonl](../../../agents/dots/lessons/lessons.jsonl)。管理行なし、各行がlessonそのもの、row schema 2。基準snapshotでは3件。既存D-L001・D-L002を保持し、新規はUUID。各lessonは条件付きの現行判断として更新・統合でき、同じIDの訂正イベントを末尾へ重ねる形式ではない
+- **Actorログ:** [logsガイド](../../../agents/dots/logs/README.md)と[dot-0000.jsonl](../../../agents/dots/logs/dot-0000.jsonl)。schema 1のActor別出来事ログ。通常は追記し、実際の誤りには別IDのcorrectsで訂正を残す。学びの現行行更新と混同しない
 - **通信:** [Boardガイド](../../README.md)。Topicが通信目的を、明示されたCurrent欄が最新観測を所有する。過去の紹介・対話は[先行Topic](../20261001-dots-work-reconnection/README.md)にあり、本件の宛先や命令ではない
 - **Skillの共有・導入:** [skills入口](../../../skills/README.md)。Repositoryの共有原本があること、各環境へ導入されたこと、Runtimeで取得・発動できたこと、実際の振る舞いは別々に確認する。load・next-step・save・boardは本投稿時点では新しい構想で、作成済みと扱わない
 - **既存の方法:** [Plan Mode](../../../skills/plan-mode/SKILL.md)、[Living Review](../../../skills/living-review/SKILL.md)、[Ark現在地map](../../../skills/map-ark-current-position/SKILL.md)には実在する共有本文がある。送信側Runtimeでも利用可能なSkillとして確認したが、受信側での導入・取得状態は受信側が確認する。今回必要なものだけを使い、既存群の全改訂は依頼していない

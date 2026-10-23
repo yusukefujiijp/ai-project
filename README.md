@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v016"
+version: "v017"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v015 preserved in Git history; v016 adds agents and the shared AI-to-AI communication manual as navigation entries while retaining existing ownership and review history"
+version_basis: "v001-v016 preserved in Git history; v017 aligns only the Dots entry with the agents/dots relocation candidate while retaining existing ownership and review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-20"
 last_reality_reviewed: "2026-09-19"
@@ -70,7 +70,13 @@ ai_communication_entry_alignment:
   base_commit: "e72b6a5616d66f6c2b4afc1377cbfd78ed5c9e53"
   change_record: "control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
   scope: "Agents and AI-to-AI communication discovery only; no root redesign, Dots relocation or whole-repository revalidation"
+dots_location_entry_alignment:
+  date: "2026-10-20"
+  base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
+  change_record: "control-center/changes/STR-022-dots-agent-location.md"
+  scope: "Dots current navigation only; operational cutover evidence is owned by STR-022; no root redesign or whole-repository revalidation"
 updated_reason:
+  - "2026-10-20: Route the Dots entry to agents/dots in the relocation candidate; retain current ownership, historical review metadata and product cutover boundaries."
   - "2026-10-20: Connect agents and the common AI-to-AI communication manual with its experience originals; preserve Board Current and the existing Dots location."
   - "2026-10-20: Describe references as the recovery and breakthrough learning entry, retain direct success-case discovery at its new path, and route README creation and improvement to AGENTS §1.1."
   - "2026-10-17: Add problem-solving as a problem-oriented discovery entry; keep case, experience, specialist knowledge and method ownership distinct. Align displayed entry version."
@@ -163,7 +169,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v016 / Current-request Repository Front Door
+- Repository入口: README v017 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -212,7 +218,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`references/README.md`](references/README.md) | 回復と突破の継承基盤／共有lessonsとsuccess-casesへの入口 | 過ちからの回復、再発防止、価値ある成功の条件など、過去の学びが今回の判断を変える時。専門lessonの複製先や全件必読の追加Bootではない |
 | [`records/README.md`](records/README.md) | 全AI横断のAI活用日時記録 | 相談・調査・制作・試験などを日付から辿り、根拠と成果原本へ戻る時 |
 | [`agents/README.md`](agents/README.md) | AI間協働の方法と経験への入口 | 双方が同じ共通原本を読み、今回の目的・役割・権限へ適用する時。通信のCurrentはBoard、Dots固有の運用は既存Dots原本へ |
-| [`dots/README.md`](dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
+| [`agents/dots/README.md`](agents/dots/README.md) | Dots協働の現在方向・Actor・形成記録への入口 | DotsとWorkの関係、誰が何を形成したか、Future AIへの継承を扱う時。全作業の追加Bootではない |
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
 | [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |
 | [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。PLAN・ARCHIVEの原本はgithub配下。既存変更記録へは専門入口から接続 |

@@ -16,7 +16,7 @@ expected_eof: "EOF::SUCCESS_LEADING_RESPONSE_STATUS::v001"
 
 **応答状態を示す場所と意味を整え、Humanが冒頭で「途中か、今回の回答が完了したか」を読み取れる形へ簡素化した。** AIの自然な先頭💭をHumanが見出し、✅との対、さらに一回答で完結する場合の抜けをFeedbackで補った。実装後、Humanは「良いですね！とても"Simple is best!"です！」と評価し、成功事例への収録を求めた。
 
-本書は2026-10-19 JSTのこのDot内の協働を、短い原文引用と編集要約で保存する。現行の応答表示は[Dots共通lesson](https://github.com/yusukefujiijp/ai-project/blob/main/dots/lessons/lessons.jsonl)のID `80b322db-c950-4882-b80f-c6bfc96f6dbe`が所有する。本書は成立理由と当時の確認範囲を扱い、同じ可変ルールを二重管理しない。
+本書は2026-10-19 JSTのこのDot内の協働を、短い原文引用と編集要約で保存する。現行の応答表示は[Dots共通lesson](https://github.com/yusukefujiijp/ai-project/blob/main/agents/dots/lessons/lessons.jsonl)のID `80b322db-c950-4882-b80f-c6bfc96f6dbe`が所有する。本書は成立理由と当時の確認範囲を扱い、同じ可変ルールを二重管理しない。
 
 ## 1. 発見、訂正、採用のつながり
 

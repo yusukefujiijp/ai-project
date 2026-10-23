@@ -12,7 +12,7 @@
 $load を使い、現在の目的・重要な訂正・成果・未完了と再開条件を根拠から取り戻してください。
 ```
 
-現在指定されたSource契約を保持し、Arkの現在地を地図として示す必要がある時だけ[現在地MAP](../map-current-position/README.md)へつなぎます。復元だけの依頼なら読取で完了します。「読み戻して続けて」という有効な委任もある場合は、その範囲の仕事へ接続します。現在の依頼がこのDot自身の協働基盤の一括復元を明示する場合は、[Dotsの専用入口](../../dots/README.md#dots-recovery-query)へ接続します。通常のWork文脈や局所的な読戻しを、Dots全体の復元へ拡張しません。
+現在指定されたSource契約を保持し、Arkの現在地を地図として示す必要がある時だけ[現在地MAP](../map-current-position/README.md)へつなぎます。復元だけの依頼なら読取で完了します。「読み戻して続けて」という有効な委任もある場合は、その範囲の仕事へ接続します。現在の依頼がこのDot自身の協働基盤の一括復元を明示する場合は、[Dotsの専用入口](../../agents/dots/README.md#dots-recovery-query)へ接続します。通常のWork文脈や局所的な読戻しを、Dots全体の復元へ拡張しません。
 
 [load](../load/README.md)は意味の回復、[next-step](../next-step/README.md)は次の接続の選択、[save](../save/README.md)は担当原本への保存、[board](../board/README.md)は目的と相手のある通信を担います。四つを毎回順番に使う規則はなく、必要な入口だけを使います。
 
@@ -46,9 +46,9 @@ UI設定を含む導入時の照合は取得した実物で行い、環境が付
 
 ## 2026-10-17：Dots一括復元への接続
 
-**形成と承認。** dot-0000との対話でHumanは、Resetの欠損範囲を自分で診断せず、一つのQueryで各Dot自身の協働へ戻りたいと希望した。Dots v011の入口完成後に既存loadを再発見し、新Skillを増やすより既存loadを活かす方向を選んだ。Living Reviewで、共通の復元方法はload、Dot固有の身元・必須Source・現役の仕事の回復条件は[Dots入口](../../dots/README.md#one-request-recovery)へ残す最小改訂を検討した。HumanのPlan Mode指定は conversation-message:Sentinel_9c5c0b73a7a88191bf998312dd080226、計画後の実行承認は conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d。これらはこのDot対話の識別子であり公開URLではない。
+**形成と承認。** dot-0000との対話でHumanは、Resetの欠損範囲を自分で診断せず、一つのQueryで各Dot自身の協働へ戻りたいと希望した。Dots v011の入口完成後に既存loadを再発見し、新Skillを増やすより既存loadを活かす方向を選んだ。Living Reviewで、共通の復元方法はload、Dot固有の身元・必須Source・現役の仕事の回復条件は[Dots入口](../../agents/dots/README.md#one-request-recovery)へ残す最小改訂を検討した。HumanのPlan Mode指定は conversation-message:Sentinel_9c5c0b73a7a88191bf998312dd080226、計画後の実行承認は conversation-message:Sentinel_2dc042e58b408191a2758d08c4415c9d。これらはこのDot対話の識別子であり公開URLではない。
 
-**変更範囲。** loadに、一括復元の意図が現在の依頼・文脈で明確な時だけDotsの現行契約へ進む一段落を追加した。Dots v012では[短い共通QueryとURL付き入口](../../dots/README.md#dots-recovery-query)を同じ§4.1へ接続する。通常のWork・局所的な読戻し、引用・Query編集を全体復元へ拡張せず、相互参照を二回目の復元開始にしない。loadの名前・一般向け起動文・共通目的は保持した。新Skill・台帳・新Actor・設定変更・予定変更・他AIへの外部送信は含まない。Queryと復元条件の本文を本節へ再録しない。
+**変更範囲。** loadに、一括復元の意図が現在の依頼・文脈で明確な時だけDotsの現行契約へ進む一段落を追加した。Dots v012では[短い共通QueryとURL付き入口](../../agents/dots/README.md#dots-recovery-query)を同じ§4.1へ接続する。通常のWork・局所的な読戻し、引用・Query編集を全体復元へ拡張せず、相互参照を二回目の復元開始にしない。loadの名前・一般向け起動文・共通目的は保持した。新Skill・台帳・新Actor・設定変更・予定変更・他AIへの外部送信は含まない。Queryと復元条件の本文を本節へ再録しない。
 
 **限定確認。** 形式検査を通過し、Dots §4.1の既存条件と長いQuery本文の保持、版・Exact EOF、変更範囲を照合した。元会話や期待解答を渡さない独立文脈で、Workの設計比較、引用Queryのレビュー、別DotのActor原本欠落、繰返し復元と最新STOPの四場面を文面判断として確認した。局所的回復、レビューのみ、別Actorへ代替しない部分復元、古い再送指示の非実行を区別した。これは提示資料に対する限定的な判断確認であり、実際のReset後・複数Dotでの安定した復元、自然発動、認知負荷削減の実証ではない。
 

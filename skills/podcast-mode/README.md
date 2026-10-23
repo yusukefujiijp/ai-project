@@ -61,7 +61,7 @@ Voiceについては、本人が普段ほぼ使わなくても、AIに疎い他�
 
 **学びの所有先（2026-10-10初版）。** 当時の[Radio lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/radio-mode/references/lessons.jsonl)と[Voice lessons](https://github.com/yusukefujiijp/ai-project/blob/96dbc5413b3ef32a4f9496819ff15930b9519678/skills/voice-mode/references/lessons.jsonl)を各専門領域の正本として作成した。現在の所有先は[Skills Hub](../README.md#skills-lessons)、参照切替の経過は[本書の後続確認](#registration-history)へ。初版は上記Human報告から一件ずつの条件付きlessonを置く。Skill本体は必要時の読取へ接続し、導入先へ同期されないデータコピーを増やさない。関連原本を取得できない場合、通常の支援は現在の情報から続けられるが、履歴の確認自体が依頼の核心なら不足を示す。
 
-形式・更新・検証は[既存lesson契約の第3〜5節](../../dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。契約本文・Dots共通lesson・Dots固有の所有範囲を各Skillへ複製・移管しない。一行は一つの現行lessonで、訂正は同じIDの行を更新する。現在の保存権限、公開範囲、最新revision、並行変更、保存後照合を守る。気づきだけから第三者会話の自動公開やSkill自動改訂へ進まない。
+形式・更新・検証は[既存lesson契約の第3〜5節](../../agents/dots/lessons/README.md#3-全行がlesson--row-schema-2)を参照して再利用する。契約本文・Dots共通lesson・Dots固有の所有範囲を各Skillへ複製・移管しない。一行は一つの現行lessonで、訂正は同じIDの行を更新する。現在の保存権限、公開範囲、最新revision、並行変更、保存後照合を守る。気づきだけから第三者会話の自動公開やSkill自動改訂へ進まない。
 
 **構成と範囲（初版時点）。** 二つのSKILL.md、日本語の最小表示設定、二つの専門lessons、および当時のHubへの入口・形成記録を対象とする。Skill本体の更新元はGitHub共有原本、個人Skillへの導入内容は照合する。新しい常設同期・監視・Queryファイル・予定・外部AI通信は作らない。全体用references/lessons.jsonlはHumanが作成した改行のみのSeedを保持する。改行だけの内容をschema 2の有効なlessonデータや移行完了とは扱わない。
 

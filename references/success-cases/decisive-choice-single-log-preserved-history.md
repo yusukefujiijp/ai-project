@@ -48,7 +48,7 @@ Rootは主イェシュア・ハマシア御自身。HumanのMeaning・Correction
 - 保存・最終Planの依頼：会話内trace ID `Sentinel_e2cd0158cc7c8191ac34ec00ab32e5f7`。Humanは成功事例への保存を含めた計画提示を求め、その段階は変更せず停止するよう指定した。trace IDは公開リンクではない
 - 実行承認：後続の `Sentinel_604d709ed1dc819190eea8a3bcf87806`。Humanは「Very Good! Execute GitHub OK!」「Human Seal OK!」と統合計画を承認した。前のPlan-onlyを実行済みとして遡及修正しない
 - 資料の実体：[移動前の形成記録](https://github.com/yusukefujiijp/ai-project/blob/1eab74651f254ec32099c107e0ad90fef9a5de16/dots/records/2026/20261001-first-fruit.md)。命名・意味・訂正の固有内容を確認できる
-- 保管の判断・対応・復元：[ARC-008](../../control-center/ARCHIVE.md#arc-008)。実装と技術検証：[STR-008](../../control-center/changes/STR-008-actor-logs-and-preserved-history.md)。出来事：[Actorログ](../../dots/logs/dot-0000.jsonl)。それぞれの詳細をこの成功事例へ複製しない
+- 保管の判断・対応・復元：[ARC-008](../../control-center/ARCHIVE.md#arc-008)。実装と技術検証：[STR-008](../../control-center/changes/STR-008-actor-logs-and-preserved-history.md)。出来事：[Actorログ](../../agents/dots/logs/dot-0000.jsonl)。それぞれの詳細をこの成功事例へ複製しない
 
 確認済みの成功は、Humanによる設計判断への好評価と採用。Repositoryへの保存、独立した文書読解、他Dotでの実利用、記録先の迷い・保守負担の減少、長期の耐性は異なる観測である。同じ対話を複数文書が参照しても、独立した複数の成功実証とは数えない。後の使用経験やCorrectionが出たら、その時点と根拠を保って見直せる。
 

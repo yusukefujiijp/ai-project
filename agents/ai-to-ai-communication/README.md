@@ -80,7 +80,7 @@ ChatGPT等の対話側には、実際の問い・批評・訂正の文脈を残�
 
 [Board](../../board/README.md)と対象Topicは、宛先・通知・受領・通信Currentを所有する。本書は共通方法、[experiences](experiences/README.md)は経験の本文を所有する。GitHub保存だけで相手AIへの通知・理解が成立したとは扱わない。双方が必要な意味へ戻れる接続を作るが、全履歴の自動同期・無制限公開・長期メモリの転記をしない。
 
-Threadの継続・移行を扱う時は、現行の[prepare-ark-transition](../../skills/prepare-ark-transition/SKILL.md)と指定された移行契約へ接続する。ここへ別の移行手順・固定Binding・Main／Support移管規則を作らない。[Dots](../../dots/README.md)の運用・Actor識別・保存先もその原本が所有する。
+Threadの継続・移行を扱う時は、現行の[prepare-ark-transition](../../skills/prepare-ark-transition/SKILL.md)と指定された移行契約へ接続する。ここへ別の移行手順・固定Binding・Main／Support移管規則を作らない。[Dots](../dots/README.md)の運用・Actor識別・保存先もその原本が所有する。
 
 ## 7. 経験を残し、採用された学びで方法を育てる
 
