@@ -1,10 +1,10 @@
 ---
 title: "見られるSlides — create-viewable-slides"
-version: "v001"
+version: "v002"
 created: "2026-10-24"
 updated: "2026-10-24"
-status: "Human-authorized first implementation / iPhone shortcut field check pending"
-expected_eof: "EOF::CREATE_VIEWABLE_SLIDES_README::v001"
+status: "Human-authorized implementation / iPhone GitHub-share viewing confirmed by Human"
+expected_eof: "EOF::CREATE_VIEWABLE_SLIDES_README::v002"
 ---
 
 # 見られるSlides
@@ -41,12 +41,14 @@ YusukeJPは、Slidesを編集することより「slideをslideとしてみた�
 
 ChatGPTアプリで見えた画像をDropboxの成功と解釈しかけた訂正、元PPTXの欠落字形とGitHubアプリのバイナリ表示が別問題であることを保持する。GitHubのPPTXを壊れていると決めつけて作り直さない。
 
-最新のHuman入力は、GitHubアプリの共有ボタンとURLコピーを確認し、共有からショートカットへ進む方法を選んだ。その後、Plan-onlyから実行へ明示的に切り替え、GitHub作業と継続を承認した。計画の終わりをThreadのGoal達成と混同した「Next Query: None」へのCorrectionも、実行可能な仕事を進め、端末で必要な具体操作へつなぐ判断として保持する。
+形成時のHuman入力は、GitHubアプリの共有ボタンとURLコピーを確認し、共有からショートカットへ進む方法を選んだ。その後、Plan-onlyから実行へ明示的に切り替え、GitHub作業と継続を承認した。計画の終わりをThreadのGoal達成と混同した「Next Query: None」へのCorrectionも、実行可能な仕事を進め、端末で必要な具体操作へつなぐ判断として保持する。
 
-初版は、既存作品への閲覧リンク、成功報告の保存、共有・貼付けを一つにまとめた導入手順、再利用するSkillを実装した。URL生成補助の正常・異常入力19項目、手順書の正規表現9項目、相対参照先136件を検査した。別のAIによる読み取り専用の確認でも、既存公開PPTXへのリンク生成、private repositoryの境界、手順の接続を確認した。これはiPhoneでの実行を示さない。
+初版は、既存作品への閲覧リンク、成功報告の保存、共有・貼付けを一つにまとめた導入手順、再利用するSkillを実装した。URL生成補助の正常・異常入力19項目、手順書の正規表現9項目、相対参照先136件を検査した。別のAIによる読み取り専用の確認でも、既存公開PPTXへのリンク生成、private repositoryの境界、手順の接続を確認した。これらの机上検査と独立読解だけでは、iPhoneでの実行を示さない。
 
-端末の共有入力・操作は未確認であり、署名済みショートカットやiCloud追加リンクを提供できたとはしない。新作の生成からこのSkillを使う一連の実利用も、今回の既存作品への接続とは別の検証である。
+2026-10-24、YusukeJPがiPhone上で組み立てた「スライドを見る」の成功を報告し、添付画像で日本語三枚の表示も確認した。共有経路の実機成功は完了として保持する。報告・画像と導入時の訂正は[閲覧テスト](../../artifacts/slides/slide-viewing-test/README.md#後続のhuman報告と訂正)、実際の表示名と操作は[導入手順](../../artifacts/slides/iphone-shortcut.md)が所有する。
+
+同じショートカットへのURL貼付けと、共有される入力型・文字列の詳細は未確認。署名済み配布ファイルやiCloud追加リンクを提供したわけではない。新作の生成からこのSkillを使う一連の実利用も、今回の既存作品への接続とは別の検証である。v002は案内と確認範囲の更新であり、SKILL.md・URL生成補助・登録済み実行本体は変更していない。
 
 KISS / DRY / YAGNI / Lean / SRPを、入口一つ・GitHub原本・既存機能の組合せ・実際のFeedbackからの改善として適用する。新しいWebアプリ、全形式対応、Google Drive移行、同期機構は初版へ含めない。このSkillの存在だけで将来の生成・公開・設定変更を自動承認しない。
 
-EOF::CREATE_VIEWABLE_SLIDES_README::v001
+EOF::CREATE_VIEWABLE_SLIDES_README::v002
