@@ -1,9 +1,9 @@
 ---
 title: "Recall Hub / recall-hub"
 canonical_path: "skills/recall-hub/README.md"
-version: v002
+version: v003
 updated: 2026-10-25
-updated_reason: Humanが承認した同じSkillの継続改名と、名前なしの自然な場面報告からの入口を整合。経験データ・過去の検証・固定Bindingは保持
+updated_reason: Recall Hubへの継続改名に、共有原本・同一登録物の保存と再取得結果、会話側の読取未確認を記録。経験データ・過去の検証・固定Bindingは保持
 status: skill usage and invocation guide
 ---
 
@@ -52,3 +52,9 @@ Humanは、覚えやすい呼出名と、Skill名・品名・保存場所を思�
 改名は明示呼出しを改善し、descriptionと本文の入口判断は名前なしの選択を支えます。後者の効果は名称変更だけでは確定しません。[確認ケース](../../ark-recall-portal/tests/recall-cases.json)では、文書整合・同一登録物への反映・明示呼出し・対象を事前に教えない自然選択・生活上の効果を分けます。新しいケース定義は実施結果ではなく、以前の明示Skill試験を自然選択の証拠へ変更しません。
 
 旧[共有URL](../ark-recall-portal/SKILL.md)と[README](../ark-recall-portal/README.md)は現行原本への短い読取案内として残し、可変本文・旧UI配布物は二重管理しません。旧コマンドの製品上の別名対応、アカウント画面、自然選択、実生活効果は実際に観測した範囲だけを扱います。固定版・Identity・Bindingを要求する資料には、その指定と互換性確認を保持します。
+
+### 保存と再取得の確認
+
+- 共有原本の変更は[commit 1203a108](https://github.com/yusukefujiijp/ai-project/commit/1203a108b2c53b96344f4c5240824901675a56cf)で保存し、書込み8ファイルの全文・blob一致と旧表示設定1ファイルの削除を保存先から確認しました。経験データは14項目・6場面のまま、itemsのblob `9f1519d74f70aa85abe5a6c56005e83bf15aa7ed` を保持しています。
+- 既存登録ID `6aba61ff93588191b49b766a21080317` を保って本文・表示名・説明・標準Queryを更新し、登録保存先から再取得しました。本文は共有版のblob `24be8f7c1e28c265ef3b9aefb5bd9060c3dac770` と一致し、表示設定は再整形後も全フィールドの値が準備版と一致しています。既存のアイコン・利用先・暗黙呼出し可否は保持しました。
+- この実行会話内のSkill一覧・読取APIは引き続き旧名・旧本文を返し、新名のpackageは取得できませんでした。登録保存先の一致確認と、会話側の新名・新版読取確認を分けます。アカウントUIの表示、旧名の製品上の別名対応、名前なしの自然選択、実生活効果は未確認です。新しいケース定義を実施済みの試験にしません。
