@@ -1,4 +1,0 @@
-interface:
-  display_name: "Ark Recall Portal"
-  short_description: "使い道を忘れていても入れる想起の入口。場面や季節の経験を記録し、今と次の準備へつなぐ。"
-  default_prompt: "$ark-recall-portal を使って、今の場面やこれからの季節に役立つ経験を思い出せるようにしてください。新しい気付きは記録の意図を受け取り、用途が曖昧ならできることと記録に基づく例から案内してください。"

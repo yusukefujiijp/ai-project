@@ -2,17 +2,23 @@
 title: "Ark Recall Portal — 想起の入口"
 version: "v0.2.0"
 status: "seasonal capture and recall integrated / verification recorded in tests / cross-year real-life feedback pending"
-updated: "2026-10-03"
+updated: "2026-10-25"
 canonical_path: "ark-recall-portal/README.md"
 expected_eof: "ARK_RECALL_PORTAL_EOF_v002"
-updated_reason: "Human approved seasonal experience capture, advance recall and correction within the existing single Portal"
+updated_reason: "Human approved Recall Hub navigation while retaining the existing seasonal capture, advance recall, correction and data-identity contract"
 navigation_patch:
   date: "2026-10-14"
   scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
   source: "skills/README.md#map-current-position-revision"
+recall_hub_navigation_patch:
+  date: "2026-10-25"
+  scope: "Skillの利用名とCurrent参照をrecall-hubへ接続。データ住所・Identity・v002運用・宣言EOFを保持"
+  source: "skills/recall-hub/README.md"
 ---
 
 # Ark Recall Portal
+
+利用名・呼出名は **Recall Hub / `recall-hub`**。既存の想起支援を継続する名称であり、本データ原本の照合用Identity `Ark Recall Portal`、保存場所 `ark-recall-portal/`、canonical_pathと宣言EOFは保持する。改名前の名称・固定Binding・当時の観測を新名称へ一括置換しない。
 
 ## 1. 何ができるかを、忘れていても入れる入口
 
@@ -32,7 +38,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 - [Ark28:01経験原本](../ark-project/ark28/ark28-01/task-records.json)：初版に必要な本人発言・反省・Correctionの選択記録。
 - [Ark28:02経験原本](../ark-project/ark28/ark28-02/task-records.json)：出勤時の想起希望と、季節拡張の目的・メモ活用経験・例示の身分・実行承認。季節の天候や服装の例を実体験として扱わない。
 - [Task Recordsガイド](../formats/task-records/README.md)：経験原本の意味と更新。構造検査時には同階層のSchemaを使う。
-- [共有Skill](../skills/ark-recall-portal/SKILL.md)：呼出しの判断と本入口への接続。
+- [共有Skill / Recall Hub](../skills/recall-hub/SKILL.md)：呼出しの判断と本入口への接続。
 - [検証ケース](tests/recall-cases.json)：検証担当向け。本番の想起情報・本人の経験として検索しない。
 
 共通の判断と保存規約は本書、呼出しの案内はSkill、経験の事実は出典原本が所有する。itemsは「いつ何を思い出すか」を取り出すための出典付きの派生資料であり、第二の経験原本やTask状態台帳ではない。個々の反省追加のたびにSkillを書き換える必要はない。

@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.45.0
+version: v0.46.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-24
-updated_reason: Humanが承認した見られるSlidesのSkillを追加。GitHub保存・閲覧とiPhone導入の状態を区別し、既存33件とWriter改訂を保持
+updated: 2026-10-25
+updated_reason: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持
 ---
 # Ark Shared Skills Hub
 
@@ -62,7 +62,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行34件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position` と `write-ark-markdown` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行34件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -86,7 +86,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | board | 相手・目的・通信状態を整理し、既存Topicへ接続 | [README・Query](board/README.md) / [SKILL.md](board/SKILL.md) |
 | AI Living Review / living-review | 対象の価値・問題・可能性を現在の目的・根拠・関係から読み、訂正可能な見立てと今有効な接続を返す | [README・Query](living-review/README.md) / [SKILL.md](living-review/SKILL.md) |
 | 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [README・Query](map-current-position/README.md) / [SKILL.md](map-current-position/SKILL.md) |
-| Ark Recall Portal / ark-recall-portal | 用途を忘れた入口、場面からの反省の想起、自然な蓄積・訂正 | [README・Query](ark-recall-portal/README.md) / [SKILL.md](ark-recall-portal/SKILL.md) |
+| Recall Hub / recall-hub | 用途を忘れた入口、名前なしの自然な場面報告・季節からの想起、経験・希望・訂正の受領 | [README・Query](recall-hub/README.md) / [SKILL.md](recall-hub/SKILL.md) |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [README・Query](plan-mode/README.md) / [SKILL.md](plan-mode/SKILL.md) |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ペア準備・再接続の計画、承認範囲内の受渡しと受入れ確認 | [README・Query](prepare-ark-transition/README.md) / [SKILL.md](prepare-ark-transition/SKILL.md) |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [README・Query](analyze-living-graph/README.md) / [SKILL.md](analyze-living-graph/SKILL.md) |
@@ -286,4 +286,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.45.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.46.0

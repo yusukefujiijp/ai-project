@@ -1,15 +1,15 @@
 {
   "format": "ark-recall-validation-cases",
-  "version": "v0.2.0",
-  "updated": "2026-10-03",
+  "version": "v0.3.0",
+  "updated": "2026-10-25",
   "role": "validation-only; never retrieve as Human experience",
   "runtime_inputs": [
     "ark-recall-portal/README.md",
     "ark-recall-portal/items.json",
     "referenced source records",
-    "skills/ark-recall-portal/SKILL.md"
+    "skills/recall-hub/SKILL.md"
   ],
-  "actor_boundary": "ActorへはSkill・必要なSource資料と現在のQueryを渡す。期待値・評価理由・このケース集は渡さない。変更を伴うケースは隔離した作業用コピーだけで行い、本番へ戻さない。",
+  "actor_boundary": "既存casesのinvocation未指定は、当初と同じ明示Skill条件として扱う。invocation=natural-selectionのケースでは対象Skill名・期待品目・元会話・計画をActorへ先に教えず、通常のSkill一覧と正規の読取経路だけが利用できる文脈へQueryを渡す。旧URLのケースはURL読取、旧名のケースは旧名での解決を個別に確認する。いずれも期待値・評価理由・本ケース集は評価側だけで保持する。runtime_inputsは必要な資料の所在であり、自然選択Actorへ対象Skillを事前投入する指示ではない。変更を伴う旧ケースは隔離した作業用コピーだけで行い、本番へ戻さない。",
   "structural_checks": [
     "JSON重複キー・構文",
     "Thread原本の既存v001 Schema",
@@ -21,7 +21,7 @@
     "README EOF・リンク",
     "正規の作成先にあるSkill形式・表示設定",
     "v002 recall_contextの月・旬・重複と原本の時期／場所の意味対応",
-    "本番8項目・既存4場面の保持と季節入口の追加",
+    "2026-10-03当時の保持条件：本番8項目・既存4場面の保持と季節入口の追加。現在の改訂は実際の変更前snapshotと比較する。",
     "設計例・架空経験を本番季節itemsへ混入させない"
   ],
   "cases": [
@@ -218,6 +218,80 @@
         "Plan-onlyを維持"
       ],
       "mutations": "none"
+    },
+    {
+      "id": "natural-holiday",
+      "query": "今、休日前です",
+      "invocation": "natural-selection",
+      "checks": [
+        "Skill名・品名を事前に教えない条件で関連原本へ接続したかを観測する",
+        "現在の在庫不足・数量・購入義務・実施を創作しない",
+        "用途の総合説明を毎回の前提にしない"
+      ],
+      "mutations": "none",
+      "variants": [
+        "明日は休み",
+        "連休前に買い物する"
+      ]
+    },
+    {
+      "id": "natural-holiday-stock",
+      "query": "明日は休み。納豆はもうある",
+      "invocation": "natural-selection",
+      "checks": [
+        "今回の在庫を反映し、納豆の重複した勧めを避ける",
+        "他の関連候補の条件も読み、一時差分を恒久取消しや保存へ変えない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "natural-holiday-design",
+      "query": "『今、休日前です』で反応する設計を考えて",
+      "invocation": "natural-selection",
+      "checks": [
+        "設計相談として扱い、現在の買い物の合図にしない",
+        "必要な原本の読解と、実生活の想起案内を区別する"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "natural-holiday-past",
+      "query": "昨日は休日前だった",
+      "invocation": "natural-selection",
+      "checks": [
+        "過去の報告として扱い、今から買い物へ出る案内を機械的に生成しない",
+        "経験の受領と現在の実行・保存権限を分ける"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "natural-unrelated-calendar",
+      "query": "2026年10月25日は何曜日？",
+      "invocation": "natural-selection",
+      "checks": [
+        "一般的な暦の問いへ答え、個人の休日前準備や想起案内を無関係に開始しない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "legacy-source-entry",
+      "query": "https://github.com/yusukefujiijp/ai-project/blob/main/skills/ark-recall-portal/SKILL.md を全文読んで、今どのような想起支援を利用できるか案内してください。",
+      "invocation": "legacy-source",
+      "checks": [
+        "旧案内から現行本文を全文取得し、データ入口へ到達する",
+        "旧URL到達を製品の旧コマンド互換や固定Binding成功へ変えない"
+      ],
+      "mutations": "none"
+    },
+    {
+      "id": "legacy-name-entry",
+      "query": "$ark-recall-portal 今どのような支援を使えますか？",
+      "invocation": "legacy-name",
+      "checks": [
+        "製品が旧呼出名を実際に解決したか、AIが名称の意味から共有原本へ進んだかを分ける",
+        "旧名が解決されない時も取得不能とデータ不存在を分ける"
+      ],
+      "mutations": "none"
     }
   ],
   "observations": [
@@ -354,5 +428,32 @@
     "GitHub共有・導入・再取得確認は応答確認と別",
     "2026-10-03の追加ケース中、observationsに結果のないケースは定義のみであり実行済みと数えない",
     "季節の架空経験は隔離コピーのみで使用し、本番itemsと経験原本へ転記しない"
-  ]
+  ],
+  "entry_revision": {
+    "date": "2026-10-25",
+    "source_baseline_commit": "5746930c9f9358aec589967cd2354a5b0a368440",
+    "status": "case_definitions_added / behavioral_tests_not_run",
+    "changes": "同じSkillのRecall Hubへの改名と自然な場面報告の入口を対象とする。既存cases・observationsのIDと当時の意味を保持する。",
+    "preservation_baseline": {
+      "items_blob": "9f1519d74f70aa85abe5a6c56005e83bf15aa7ed",
+      "items_revision": 8,
+      "item_count": 14,
+      "scene_count": 6,
+      "note": "今回の変更前比較値であり、将来の件数上限や本番の固定条件ではない。itemsは改名対象外。"
+    },
+    "confirmation_levels": [
+      "document_and_reference_consistency",
+      "same_registration_identity_and_retrieved_content",
+      "explicit_skill_invocation",
+      "natural_selection_without_target_hint",
+      "reported_real_life_benefit"
+    ],
+    "retained_cases": [
+      "seasonal-empty",
+      "unavailable",
+      "episode",
+      "standing"
+    ],
+    "interpretation": "新しいケースの定義を応答確認済みと数えない。失敗箇所は選択・原本到達・条件訂正・提示・実生活への適用を分けて扱う。一回の結果を全環境の保証にせず、新Taskや通知を作らない。"
+  }
 }

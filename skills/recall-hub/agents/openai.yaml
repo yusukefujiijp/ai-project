@@ -1,0 +1,4 @@
+interface:
+  display_name: "Recall Hub"
+  short_description: "名前や保存場所を覚えていなくても、今の場面や季節から経験・希望・教訓を取り出す。"
+  default_prompt: "- $recall-hub を使い、今の場面やこれからの季節に役立つ経験・希望・教訓を、現在の条件に合わせて取り出してください。用途が曖昧なら、できることと記録に基づく例から案内してください。\n- 共有原本：https://github.com/yusukefujiijp/ai-project/blob/main/skills/recall-hub/SKILL.md\n- Skillを直接利用できない場合は、この共有原本を全文読み、必要なSourceの読解条件を守って適用してください。新しい気付きや訂正の保存は、現在の依頼・委任の範囲で扱ってください。"
