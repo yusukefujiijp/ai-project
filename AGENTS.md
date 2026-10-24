@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.8-candidate"
+version: "v004.9-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -106,7 +106,15 @@ next_step_bullet_patch:
   base_blob: "4296134e77bd811c8f2d4f884e6fedc48d7eeb98"
   authority: "Current Human approved the third-round two-source plan and scoped GitHub execution"
   scope: "Present ordinary Next Step content as meaning-preserving bullet points without fixed item or line limits; retain Step-to-Query judgment, Human choice, valid delegation and output exceptions"
+continuation_triad_patch:
+  date: "2026-10-24"
+  source_thread: "Ark28:07"
+  base_commit: "1d95d8ebe8e9f5add9efc8ff30dbcccbe3cea704"
+  base_blob: "d8f6418112e1c7c2eed36b1936aa598d481ed754"
+  authority: "Current Human approved the three-source shared-interface plan and confirmed that actual Next Query requests, not only the empty state, use meaningful bullet points"
+  scope: "Shared Living Review to Next Step to Next Query relationship and bullet presentation, full request in one text block, and - None empty state; preserve Human choice, valid delegation, strict-output and no-notification exceptions"
 updated_reason:
+  - "2026-10-24: Generalize the three-section continuation interface beyond Dots; structure actual Query text inside one copy block and display the empty state as - None; preserve prior rounds and output exceptions."
   - "2026-10-24: Structure ordinary Next Step content as meaningful bullet points without reducing necessary explanations or turning bullet count into Task count; AGENTS and GCI only."
   - "2026-10-24: Add verified shared-Skill routes and full-read fallback for copyable queries; retain the current Next Step/Next Query and None display contract."
   - "2026-10-24: Unify conversational section markers and explicitly distinguish no presented Next Query from a missing section or no-notification state; AGENTS and GCI only."
@@ -309,25 +317,25 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 
 <a id="next-query"></a>
 
-### 6.2 Next Step → Next Query / 判断から次の入力へ
+### 6.2 Living Review → Next Step → Next Query / 見立てと判断から次の入力へ
 
-継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断からNext Queryの依頼全文を導き、二節をこの順で隣接させ、Next Queryを独立した最終セクションとする。Living Reviewを置く場合は、その直後にこの二節を続ける。依頼の具体化で不足・矛盾が見つかれば判断へ戻り、双方を修正する。固定の記入欄、内部思考の逐語開示、二節間の承認待ちは要求しない。
+継続を扱う通常回答では、末尾を【Living Review】→【Next Step】→【Next Query】の独立した三節として、この順で隣接させ、Next Queryを最終セクションとする。Living Reviewは現在の根拠から価値・問題・可能性とその理由を読み、Next Stepはその見立てとGoal・制約・依存関係・権限から接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。Next Queryは選んだ接続を利用できる依頼全文へ具体化する。三節でGoal・対象・確認済み状態・必要な方法・完了条件・Modeをそろえる。具体化で不足や矛盾が見つかれば、StepやReviewへ戻って整合させる。表示順を固定の一方向の検討手順にせず、三節を独立に作文して形式だけ合わせない。固定の記入欄、内部思考の逐語開示、節間の承認待ちは要求しない。
 
-通常回答で【Next Step】を設ける場合、内容は意味のまとまりごとの箇条書きにする。一項目でもよく、一項目に複数文を含めてよい。項目数・行数に上限を設けず、一文一項目・一項目一行や固定ラベルを強制しない。判断に必要な理由・成立条件・依存関係・進め方・完了条件・留保・実行範囲を保つ。複数項目で一つの接続を説明してよく、項目数をTask数と同一視しない。過度な省略・説明の断片化・水増しや新Task追加を求めない。適用対象を回答全体・Next Query・引用やコードへ広げず、本節の意味の対応・選択権・権限・例外を保持する。
+三節の本文は、意味のまとまりごとの箇条書きにする。一項目でもよく、一項目に複数文を含めてよい。項目数・行数に上限を設けず、一文一項目・一項目一行や固定ラベルを強制しない。判断に必要な理由・根拠・成立条件・依存関係・進め方・完了条件・留保・実行範囲を保持する。細切れ、深い入れ子、巨大な一項目、重複による水増しを避ける。複数項目で一つの接続を説明してよく、項目数をTask数・実行権限数・実行順序と同一視しない。過度な省略や新Task追加を求めず、三節外の本文、原文の引用・コード・厳密形式を機械的に箇条書きへ変換しない。本節の意味の対応・選択権・権限・例外を保持する。
 
-提示する継続依頼文がある場合は、【Next Query】の見出し直下に、そのまま送れる推奨依頼全文を一つのtextコードブロックで示す。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。コピー範囲は第6.1節に従う。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
+提示する継続依頼文がある場合は、【Next Query】の見出し直下に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
 
-二節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要な原本の取得先と読解を示し、Skillを使うQueryの共有原本URLと全文読解は[第6.1節の共通条件](#skill-query-portability)に従う。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
+三節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要な原本の取得先と読解を示し、Skillを使うQueryの共有原本URLと全文読解は[第6.1節の共通条件](#skill-query-portability)に従う。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
 
-段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示し、有効な後続接続を消さない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。提示する継続依頼文がない場合も【Next Query】を残し、その節の本文は半角のNoneだけとする。コードブロック、句点、説明、誘い文句は付けず、後にも追記しない。必要な理由・保留条件・再開条件はNext Stepまでに示す。Humanが選んだ意図的保留・終了を保持し、節のために新Taskを作らない。相槌、厳密な出力指定、専用Boot／Failureには通常形式を強制しない。無通知条件では、見出しもNoneも送らない。
+段階の完了と、現在のGoal全体の達成を区別する。計画・差分案の提示が済んでも、そのGoalに必要な保存・導入・確認等が残る場合は、完了した範囲と残る工程を示し、有効な後続接続を消さない。全Backlogや将来構想を現在のGoalへ取り込まず、保存・導入・他AIの理解・実利用効果も別々に判定する。提示する継続依頼文がない場合も【Next Query】を残し、その節の本文は「- None」の一行だけとする。半角ハイフン、半角空白、Noneを用いる。コードブロック、句点、説明、誘い文句は付けず、後にも追記しない。必要な理由・保留条件・再開条件はNext Stepまでに示す。Humanが選んだ意図的保留・終了を保持し、節のために新Taskを作らない。相槌、厳密な出力指定、専用Boot／Failureには通常形式を強制しない。無通知条件では、見出しもNoneも送らない。
 
 Noneは今回提示するNext Queryの不在だけを表す。全体の残作業ゼロ・全Goal達成、未確認・取得失敗・判断不能、既存委任の取消し、他AIへの停止命令、Humanの発言制限、新しい実行許可を意味しない。判断に効く確認をNoneで隠さず、通常のUnknownだけで確認依頼を増やさない。
 
-HumanはNext Queryを使う・修正する・保留する・使わないことを選べる。未使用だけを理由に新しい未完了Taskや追催を作らず、有効な依頼・承認の取消しとも推定しない。Humanの訂正を判断と依頼文の双方へ反映する。Modeを変える接続を提案する場合は、その変更を両節で明示し、現在の実行承認と同一視しない。表示・引用・称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
+HumanはNext Queryを使う・修正する・保留する・使わないことを選べる。未使用だけを理由に新しい未完了Taskや追催を作らず、有効な依頼・承認の取消しとも推定しない。Humanの訂正を三節の見立て・判断・依頼文へ反映する。Modeを変える接続を提案する場合は、その変更を三節へ反映して明示し、現在の実行承認と同一視しない。表示・引用・称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
 
 将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
 
-提示前に、二節が同じ接続を扱い、Goal・対象・必要な方法・完了条件・Modeが対応しているかを、見出し・最終配置・本文全体のコピー境界・fenceの閉じとともに確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
+提示前に、三節の見立て・選んだ接続・依頼文が対応し、Goal・対象・必要な方法・完了条件・Modeが対応しているかを、見出し・最終配置・本文全体のコピー境界・fenceの閉じとともに確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
