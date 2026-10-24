@@ -3302,6 +3302,32 @@
           "source": "S01"
         }
       ]
+    },
+    {
+      "id": "cz-record-0031",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-25",
+      "reference_scope": "current",
+      "date_basis": "現在の本人入力を2026-10-25（Asia/Tokyo、client time context）に受領。Sweet Spotの更新報告であり、実施日・来館・左右両側・反復の実施は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "片手",
+          "kg": 30,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0007/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Sweet Spot\nChest Press 片手: 30kgに更新しました！",
+          "reported_date": "2026-10-25",
+          "context": "現在の本人メッセージ全文。Chest Press片手のSweet Spotを25kgから30kgへ更新する明示報告。過去の誤記訂正や一時的例外ではなく新しい参照基準として追加する。縦横を分けない現在表示を継承し、過去の縦横の原申告は履歴に保持する。Chest Press両手60kgと他の条件は未言及の継続ルールで保持し、当日の再測定・来館・全段階の実施を補わない。"
+        }
+      }
     }
   ]
 }
