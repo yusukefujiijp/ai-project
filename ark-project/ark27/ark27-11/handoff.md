@@ -89,7 +89,7 @@ Receiptはrepository／refまたは固定来歴、blob、版、Beginning Identit
 **最初の比較に着手する時**は[STR-018](../../../control-center/changes/STR-018-flexible-readme-principle.md)と[STR-019](../../../control-center/changes/STR-019-references-learning-memory.md)を各全文読み、現行四文書と接続する。既に実装したREADME原則・references配置と、これから選ぶ根本構成を分ける。必要な直接参照・Binding消費先を追う際は、現在通常利用・明示選択契約・固定版歴史参照を分類する。全歴史や全資料の監査は前提にしない。
 
 - **整理対象の選択・親Domainの役割**：[control-center](../../../control-center/README.md)、案件ARCHIVE／STR、実対象へ。保存媒体がGitHubでも生活・研究・houseをGitHub整理へ混ぜない。ARC-002／STR-002の再検討は10の完了した比較と新しい根拠・権限から扱い、準備の必須残務にしない。
-- **Dots／Work通信**：[Dots](../../../dots/README.md)→[Board](../../../board/README.md)→該当Topic／返信。Actor対応・発話・伝達されたHuman承認を照合する。今回の限定通信経験から新Thread・予定・外部連携・恒常同期を開始せず、Workがdot-0000としてログを書かない。
+- **Dots／Work通信**：[Dots](../../../agents/dots/README.md)→[Board](../../../board/README.md)→該当Topic／返信。Actor対応・発話・伝達されたHuman承認を照合する。今回の限定通信経験から新Thread・予定・外部連携・恒常同期を開始せず、Workがdot-0000としてログを書かない。
 - **Skillや自己改善Loopを実際に使う時**：[Hub](../../../skills/README.md)からCurrent SKILLと所有Promptへ。LoopのSeed・二つの還流・Joint playは[共通Prompt](../../../prompts/ai-frontier-reader.md)が所有。読取を新試験・登録・再導入の依頼にしない。
 - **Task支援・継続委任・経験**：[TMS](../../../task-mode-system/README.md)、[operation](../../../task-mode-system/operation.md)、[maintenance](../../../task-mode-system/maintenance.md)。経験の読取・編集は[Guide](../../../formats/task-records/README.md)、構造検証はSchemaへ。過去Bodyや生活Trialは現在命令ではない。
 - **Support／他担当**：Current Domainと対象局所契約へ。個別Skill README整備等の有効なPlan-only・未完了を保持し、主題のために担当全体を引き取らない。

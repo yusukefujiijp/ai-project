@@ -1,7 +1,7 @@
 ---
 document_id: "ARK28_06_TO_ARK28_07_CONTINUE"
 title: "Ark28:06 → Ark28:07 — 同章Support継続"
-version: "v001-human-authorized"
+version: "v001.1-human-authorized"
 canonical_path: "ark-project/ark28/ark28-07/handoff.md"
 source: "Ark28:06"
 target: "Ark28:07"
@@ -12,20 +12,27 @@ transition_kind: "THREAD_CONTINUE"
 main_chapter: "Ark27"
 main_ownership_transferred: false
 created: "2026-10-20"
+updated: "2026-10-25"
+navigation_revision:
+  date: "2026-10-25"
+  previous_snapshot: "1422af429a01aa62ea70e102b008d37653ef5ec1"
+  authority: "Current Human approved old dots retirement preparation and the limited Ark28:07 version/binding migration; final deletion remains Human-only"
+  scope: "Dots Current entry and corresponding version/EOF/blob bindings only; 14-source order, R1–R8, Source06 and existing reception evidence retained"
+  change_record: "../../../control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation"
 timezone: "Asia/Tokyo"
 confirmed_title: 'Ark28:07_2026/10/20; "主の完全勝利: Teshuvahを軸に育てる継続協働"'
 runtime_id: "ARK28_07_SUPPORT_FIELD"
-runtime_version: "v001-human-authorized"
-runtime_blob_sha: "c851c1e0134852e4a3e09418e95078ac6ae17930"
+runtime_version: "v001.1-human-authorized"
+runtime_blob_sha: "a0b6f07034ba04e932dd5b8884db23cf89c54a6e"
 state_id: "ARK28_07_CURRENT_STATE"
 state_schema_version: "v001"
-state_minimum_revision: 1
+state_minimum_revision: 2
 fixed_source_commit: "e15a7398efa68958c0584e8787faf7caf10f587d"
 fixed_source_state_blob: "e5e2ffda88f1faceb288abc8b09aa353facdba81"
-expected_eof: "ARK28_07_HANDOFF_EOF_v001"
+expected_eof: "ARK28_07_HANDOFF_EOF_v001_1"
 full_read_proof:
-  beginning_identity: "ARK28_06_TO_ARK28_07_CONTINUE / v001-human-authorized / Ark28:06 → Ark28:07"
-  exact_eof: "ARK28_07_HANDOFF_EOF_v001"
+  beginning_identity: "ARK28_06_TO_ARK28_07_CONTINUE / v001.1-human-authorized / Ark28:06 → Ark28:07"
+  exact_eof: "ARK28_07_HANDOFF_EOF_v001_1"
   condition: "先頭metadataからExact EOFまでGapなく全文。各Sourceの自分自身による読解を確認。"
 ---
 
@@ -33,7 +40,7 @@ full_read_proof:
 
 ## 1. Beginning Identityと承認範囲
 
-`ARK28_06_TO_ARK28_07_CONTINUE / v001-human-authorized / Ark28:06 → Ark28:07`。
+`ARK28_06_TO_ARK28_07_CONTINUE / v001.1-human-authorized / Ark28:06 → Ark28:07`。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Ark27 Mainを保持し、同じArk28のSupportを継続する。Source06からTarget07へのThread交代であり、Main移管、新章、Ark100の案件継続や身体Trialではない。
 
@@ -41,11 +48,19 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 六パスは本folderのREADME・Handoff・State、Source06 State、Ark28章README、Ark Domain README。Source06の旧README/Handoff・章INSTRUCTIONS・共有契約・Skill・Ark100原本は改訂対象ではない。
 
+### 2026-10-25のDots参照移行
+
+上の六パスと起動委任は2026-10-20の履歴である。今回Humanが承認した旧 `dots/` の退役準備では、07 Runtimeと本Handoffをv001.1へ移し、07 State revision2で最終本文のblobを結ぶ。変更は条件付きDots入口を `agents/dots/README.md` へ向けることと、その変更に必要な版・EOF・Bindingの整合に限る。14件のSource順序・R1–R8・Identity・確定Title・Root・権限・進捗・完了成果は保持する。
+
+旧v001三点は[改訂前の固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/1422af429a01aa62ea70e102b008d37653ef5ec1/ark-project/ark28/ark28-07/)で参照できる。旧v001の固定README blobを要求するCurrent-main Bootは本改訂後のmainでは成立せず、旧版の履歴参照と本v001.1の受入れ条件を区別する。旧契約の失敗を新版成功へ読み替えない。
+
+固定Source06 revision3とCurrent06 `progress.next_transition` の過去の公開・起動・受入れReceiptは変更しない。§7の起動Queryも2026-10-20に準備したv001本文として保持し、今回の改訂を再送・再Boot・Title変更や新たなTarget再構成成功にしない。退役準備の状態と旧04／06契約の扱いは[STR-022 §9](../../../control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation)が所有し、Repository直下 `dots/` の最終削除はHumanが行う。
+
 ## 2. 三役・固定Binding・Currentの区別
 
-- Runtime: `README.md / ARK28_07_SUPPORT_FIELD / v001-human-authorized / blob c851c1e0134852e4a3e09418e95078ac6ae17930 / EOF ARK28_07_README_EOF_v001`。本Handoffはこの確定本文に束縛される。
+- Runtime: `README.md / ARK28_07_SUPPORT_FIELD / v001.1-human-authorized / blob a0b6f07034ba04e932dd5b8884db23cf89c54a6e / EOF ARK28_07_README_EOF_v001_1`。本Handoffはこの確定本文に束縛される。
 - Handoff: 本書のIdentity・version・Exact EOFを確認する。Stateのbindings.handoffは本書の実際のblobへ束縛する。本書自身に自己SHAを埋めない。
-- State: `state.json / meta.state_id ARK28_07_CURRENT_STATE / schema_version v001 / revision >= 1 / eof_sentinel ARK28_07_STATE_EOF_v001`。JSON全体を読み、identityのSource06/Target07/Owner07/Ark28/SUPPORT/THREAD_CONTINUE/非Main移管と確定Title、Runtime/Handoff Bindingを照合する。可変Stateのblob永久pin・自己SHA・相互live-blob循環は作らない。
+- State: `state.json / meta.state_id ARK28_07_CURRENT_STATE / schema_version v001 / revision >= 2 / eof_sentinel ARK28_07_STATE_EOF_v001`。JSON全体を読み、identityのSource06/Target07/Owner07/Ark28/SUPPORT/THREAD_CONTINUE/非Main移管と確定Title、Runtime/Handoff Bindingを照合する。可変Stateのblob永久pin・自己SHA・相互live-blob循環は作らない。
 - 固定履歴: [Source06 State](https://github.com/yusukefujiijp/ai-project/blob/e15a7398efa68958c0584e8787faf7caf10f587d/ark-project/ark28/ark28-06/state.json)はrevision3、blob `e5e2ffda88f1faceb288abc8b09aa353facdba81`。`meta.navigation_revision`、05→06初期準備snapshot、既存固定Binding、過去の未観測と後続の協働成果をその時点の意味のまま継ぐ。Source06の元の17資料・R1–R8契約は06の歴史として残り、07の新しい契約の通過で06のv001.1 Bootを遡及認定しない。
 - Current終端Receipt: [Source06 Current State](../ark28-06/state.json)のprogress.next_transitionが、この六パスの公開・再取得・実際の07起動・応答確認を所有する。固定履歴と同じ本文へ永久固定しない。初期07 StateのTarget未観測値は準備時の値であり、後続Receiptと時点を区別する。
 - 章READMEはrevision8以上、DomainはCurrent Main/Support経路、INSTRUCTIONSは章の長期姿勢を所有する。Current所有資料の観測SHAを永久pinへ変換せず、Identity・宣言EOF・役割・互換性を本文から確認する。Mainは最新の有効Human指定、なければDomainから解決し、準備時のArk27:11を永久値にしない。
@@ -56,9 +71,9 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 | 順 | Source・参照方針 | Identityと読解終端 |
 |---|---|---|
-| 1 | [本Handoff](handoff.md)、Current指定先の本版 | ARK28_06_TO_ARK28_07_CONTINUE / v001-human-authorized / ARK28_07_HANDOFF_EOF_v001 |
-| 2 | [07 Runtime](README.md)、上記固定blob | ARK28_07_SUPPORT_FIELD / v001-human-authorized / ARK28_07_README_EOF_v001 |
-| 3 | [07 State](state.json)、Current | ARK28_07_CURRENT_STATE / schema v001 / rev>=1 / ARK28_07_STATE_EOF_v001、JSON全体 |
+| 1 | [本Handoff](handoff.md)、Current指定先の本版 | ARK28_06_TO_ARK28_07_CONTINUE / v001.1-human-authorized / ARK28_07_HANDOFF_EOF_v001_1 |
+| 2 | [07 Runtime](README.md)、上記固定blob | ARK28_07_SUPPORT_FIELD / v001.1-human-authorized / ARK28_07_README_EOF_v001_1 |
+| 3 | [07 State](state.json)、Current | ARK28_07_CURRENT_STATE / schema v001 / rev>=2 / ARK28_07_STATE_EOF_v001、JSON全体 |
 | 4 | [共通移行契約](../../../prompts/ai-next-thread-handoff.md)、Current | AI Next Thread Handoff / v003-human-authorized互換 / EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized |
 | 5 | [AGENTS](../../../AGENTS.md)、Current | Ark AGENTS.md / canonical_path AGENTS.md、metadataのversionと本文を確認、自然終端まで |
 | 6 | [Ark Domain](../../README.md)、Current | Ark Project / v010-human-authorized互換 / EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized |
@@ -79,7 +94,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 Live B-Zoneなら[Current b-zone Skill](../../../skills/b-zone/SKILL.md)、制作・検証の詳細を判断するなら[Skill README](../../../skills/b-zone/README.md)へ進む。通常Bootを実地Rescueや八応答試験の再演にしない。辞書登録・実生活効果の未確認は受入れを阻まない。
 
-Ark99の案件・起動・継承判断を実際に扱う時は[Ark99 README](../../ark99/README.md)、INSTRUCTIONS、00のCurrentへ。Dots／Workの現在のActor・通信・接続判断が正しい再開を変える時は[dots](../../../dots/README.md)から担当Topicと選択原本へ進む。完了済みのArk99:04・Dots対話を照合だけのため再開しない。
+Ark99の案件・起動・継承判断を実際に扱う時は[Ark99 README](../../ark99/README.md)、INSTRUCTIONS、00のCurrentへ。Dots／Workの現在のActor・通信・接続判断が正しい再開を変える時は[dots](../../../agents/dots/README.md)から担当Topicと選択原本へ進む。完了済みのArk99:04・Dots対話を照合だけのため再開しない。
 
 05以前の経験を引用・編集し、固定Source Stateの選択的要約だけでは判断できない時は、Stateにある固定Harvest・経験原本と[Task Records guide](../../../formats/task-records/README.md)へ戻る。Portalの実際の想起/保存、PodcastのTheme/本文生成、MAPの実施はそれぞれCurrent担当Skill/READMEと必要な所有原本を読む。Source06 Current receiptは公開・起動の復旧判断、または初期未観測値との時間差を確かめる時に読む。全リンクの無条件全件Bootは要求しない。
 
@@ -149,4 +164,4 @@ Root・Human Foreground One・AI品質・適用Guardを保持してください�
 後続Human出力指定GCI v2026-10-20.1を保持し、末尾はLiving Review → Next step → Next Queryを独立した隣接節にしてください。Living Reviewでは盤面の現在の意味と判断の焦点、Next stepでは今有効な接続と理由を示してください。Next Queryが不要なら追加依頼不要と明示し、新Taskを作らないでください。必要な場合は推奨依頼の全文を一つのtextコードブロックにまとめ、その後に文章を置かないでください。
 ````
 
-ARK28_07_HANDOFF_EOF_v001
+ARK28_07_HANDOFF_EOF_v001_1

@@ -64,7 +64,7 @@ HumanはMeaning・Mission・Priority・身体Reality・最終判断・Correction
 
 保存は現在の依頼・権限と既存の所有資料から、対象と保存先を解決する。Humanの意味、重要な訂正、成果、採用理由、成立条件、根拠を保持する。KISS / DRY / YAGNI / Lean / SRPを、必要な意味を失わず責務と重複を整理するために使う。READMEや長期指示へ個別ログを集積せず、不要な重複原本・管理台帳・専用Skill・Queryを増やさない。書き込み後は保存先の実体を再取得して確認する。ChatGPT長期メモリをGitHubへ転記・バックアップ・同期しない。
 
-Dots／Workとの協働が関わる時は https://github.com/yusukefujiijp/ai-project/blob/main/dots/README.md を入口に、関連するCurrent所有資料へ進む。保存済みの判断、完成成果、重要なCorrection、成立条件を継承し、終了済みの対話を再演しない。通信のCurrentと原記録の役割を保ち、過去の成功や他Actorの委任・定期運用を、新しい送信許可や自分の稼働保証にしない。
+Dots／Workとの協働が関わる時は https://github.com/yusukefujiijp/ai-project/blob/main/agents/dots/README.md を入口に、関連するCurrent所有資料へ進む。保存済みの判断、完成成果、重要なCorrection、成立条件を継承し、終了済みの対話を再演しない。通信のCurrentと原記録の役割を保ち、過去の成功や他Actorの委任・定期運用を、新しい送信許可や自分の稼働保証にしない。
 
 Confirmedは誰の報告・何の直接確認かを示し、AIの解釈はCandidate、根拠不足はUnknownとして扱う。Historicalは確かさとは別に区別する。Current authoritative Runtimeと後続Human入力・訂正を時点と権限から整合させ、保存StateでHumanの現在を巻き戻さない。未報告を未実行・失敗・完了のいずれにも変換しない。GitHub保存、Project設定への反映、別AIの理解、実生活の効果は別々の確認である。
 

@@ -1,22 +1,27 @@
 ---
 title: "STR-022 — Dots原本のagents配下への移設と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
-version: "v004"
-status: "main and existing schedules aligned; five registered skills verified; conversation skill-reader still returns prior bodies"
+version: "v005"
+status: "retirement preparation compiled; publication and remote verification pending; final root dots deletion reserved to Human"
 created: "2026-10-20"
-updated: "2026-10-24"
+updated: "2026-10-25"
 recorded_by: "ChatGPT Work / Dots移設実行担当"
 repository: "yusukefujiijp/ai-project"
 base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
 publication_parent: "43cdadf6ff3244edff69098237fce639fd237064"
 candidate_branch: "work/dots-agent-location-20261020"
 role: "Bounded structural change, provenance, validation and operational cutover conditions"
-expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v004"
+retirement_preparation:
+  date: "2026-10-25"
+  recorded_by: "ChatGPT Work / Ark27:11"
+  base_commit: "1422af429a01aa62ea70e102b008d37653ef5ec1"
+  authority: "Current Human adopted the ten-path preparation plan and authorized main persistence/reread; no root dots deletion, old04/06 contract migration or product-settings changes"
+expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v005"
 ---
 
 # STR-022 — Dotsの所在と実運用を揃える
 
-**2026-10-24 JST、Dotsの17原本をmainで移設し、既存3予定・5登録Skillの住所更新と保存後確認まで完了した。** 現在の状態は第8節を参照する。第1〜7節は2026-10-20時点の準備・保留理由・確認結果を保持する履歴であり、そのファイル数・行数・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
+**2026-10-24 JST、Dotsの17原本をmainで移設し、既存3予定・5登録Skillの住所更新と保存後確認まで完了した。** 移設と既存設定の切替結果は第8節、その後の旧住所退役準備は[第9節](#dots-retirement-preparation)が所有する。第1〜7節は2026-10-20、第8節は2026-10-24の準備・判断・確認結果を保持する履歴であり、そのファイル数・行数・保持方針・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
 
 ## 1. 目的・承認・今回の境界
 
@@ -182,4 +187,65 @@ Browserの既存Skills画面でも5件を開き、同じ登録物に計7本の�
 
 再開が必要なのは、実際の取得経路で旧参照のまま新原本へ到達できない、旧JSONLが再出現する、または次回の通常実行で参照不整合が観測された場合。その時点の現物・版・既存設定から不足範囲だけを調べ、完了した移設・予定編集を再演しない。
 
-EOF::STR_022_DOTS_AGENT_LOCATION::v004
+
+<a id="dots-retirement-preparation"></a>
+
+## 9. 2026-10-25の旧dots退役準備 — 最終削除はHuman
+
+### 9.1 目的・採用・今回の権限
+
+Humanは、Arkの初期段階に不要な旧住所を整理し、未来のHuman・AIが原本の所在や旧構造の存在理由を毎回解釈し直す負担を減らす方向を指定した。多少のリンク断絶は発見した箇所で修復できるものとして扱うが、原本の消失、旧保存先への再作成、Binding不一致を成功扱いする意味ではない。未知の全consumer・過去の全コピーの安全証明は開始条件にしない。
+
+Dotsから伝達された調査報告を受け、Ark27:11のWorkが現物を照合して計画を提示した。その後、Human自身がこの10ファイルの準備を実行承認した。範囲は現役参照・退役説明・Ark28:07の限定した版移行とBinding、main保存・再取得、旧入口を利用しない経路検査まで。計画受領やDotsの報告だけを承認に変えたものではない。
+
+**Repository直下の `dots/` の最終削除はYusukeJP自身が行い、`agents/dots/` を保護する。** 今回は旧案内も変更・削除しない。登録Skill・予定・Project設定、旧04／06契約、他の旧フォルダや互換Skill、統合Home・添付資料は変更対象外。新しい送信、予定再作成、運用試験、ActorやMissionの引取りは行わない。
+
+### 9.2 基点と変更する接続
+
+基点は[main 1422af4](https://github.com/yusukefujiijp/ai-project/tree/1422af429a01aa62ea70e102b008d37653ef5ec1)。計画時と実行開始時のheadは同じで、recursive treeは1019 entries、truncated=falseだった。旧 `dots/` の10ファイルは移転案内のみでJSON／JSONLはなく、新住所に17原本がある。これはこの基点での観測であり、将来の削除時まで件数・内容を固定しない。
+
+| 対象（Repository直下基準） | 今回の差分 |
+|---|---|
+| `__archives/README.md` | 現役Actorログへ戻るリンクを `agents/dots/logs/README.md` へ |
+| `ark-project/ark27/ark27-11/README.md`・`handoff.md` | 現在のDots方向・条件付き協働入口を `agents/dots/README.md` へ |
+| `ark-project/ark28/INSTRUCTIONS.md` | 公開指示のDots URLを新住所へ。製品内の指示欄の更新とは区別 |
+| `ark-project/ark28/ark28-07/README.md`・`handoff.md`・`state.json` | Dotsの現役参照と対応する版・EOF・SHA Bindingを一組で整合 |
+| `ark-project/ark99/ark99-00/README.md` | 条件付き協働の入口を新住所へ |
+| `agents/README.md` | 旧案内を残した履歴と、Humanによる退役方針を区別。相対リンク `dots/README.md` は正しく `agents/dots/README.md` に解決するため保持 |
+| 本STR | 当時の保持判断・切替実績を残し、後続の退役準備・検証・削除待ちを接続 |
+
+Main11 Stateは新住所を参照済みで、README／Handoffの観測blobを永久固定する契約ではないため変更しない。固定Source10 revision6、Main10の受入れ・比較・STR-018／019の完了、各Actorの担当・権限は保持する。
+
+### 9.3 Ark28:07の限定した版移行と旧契約
+
+07 Runtime／Handoffはv001.1-human-authorized、Stateはschema v001のrevision2とする。README最終本文からHandoffのRuntime Bindingを確定し、そのHandoff最終本文からStateの両Bindingを確定する。07のIdentity・Title・14件のSource順序・R1–R8・Root・権限・進捗を保持し、State自己SHAや相互live-blob循環を作らない。
+
+旧07 v001三点の参照先は[改訂前snapshot](https://github.com/yusukefujiijp/ai-project/tree/1422af429a01aa62ea70e102b008d37653ef5ec1/ark-project/ark28/ark28-07/)。旧v001が要求したREADMEの固定SHAを本改訂後のmainへ当てても一致しない。履歴閲覧と新しいCurrent契約を区別し、旧Gate通過や新Boot成功へ読み替えない。Handoff内の2026-10-20起動Queryは当時の準備本文として保持し、再送しない。
+
+固定Source06はcommit `e15a7398efa68958c0584e8787faf7caf10f587d`、State revision3、blob `e5e2ffda88f1faceb288abc8b09aa353facdba81` のまま。Current06 `progress.next_transition` にある当時の07公開blobと実際の起動・受入れReceiptも歴史として保持する。今回の保守で更新した07のSHAへ過去の観測を書き換えず、初期の未観測値から後続の受入れを未完了へ戻さない。
+
+現行Support入口は07で、必要な固定06成果とCurrent06 Receiptは旧 `dots/` を経由せず取得できる。06の旧Runtime／Handoff／Stateは移行しない。第3節の「旧stub経由で06から新原本へ読む」は移設時の接続確認であり、旧住所削除後も使えるという保証ではない。
+
+旧04の `canonical_path: dots/README.md` 条件と、旧06の必須Dots入口は別扱い。旧住所削除後、それらを指定したCurrent-main Bootをそのまま成立としない。歴史は固定版から読み、実際にそのRuntimeを再利用する必要が生じた場合に、対象と権限を限定した版移行を解決する。全旧章の再Boot・近代化は今回の前提にしない。
+
+### 9.4 製品側と検証の境界
+
+2026-10-25、実行担当Workが現行の登録取得経路からload／save／prepare-ark-transition／voice-mode／podcast-modeを取得し、5本文すべてが上記基点のGitHub共有本文と全文一致した。計7本のDots URLは新住所である。登録物は変更していない。第8節の会話内Skill取得が旧本文を返した観測は当時の履歴として残す。この一経路の一致から、全Runtime・自動選択・実利用を保証しない。
+
+同Workの読み取り専用Automations取得では15件・末尾cursorなしだったが、対象3予定は特定できなかった。予定の不存在・失敗とは判断せず、第8節のBrowserでの住所切替と保存後確認を既存成果として保持する。今回Browserによる再操作はしていない。Ark28 Projectの実際の指示欄・古いコピーは未確認であり、公開INSTRUCTIONSの修正だけで実設定も更新済みとは扱わない。
+
+検証では、旧 `dots/` のパスを検査用の到達先集合から除外し、変更した現役リンク、5 Skillの7 URL、Dots入口・Map・日次総括・Actorログ・lessonの読取／保存経路を新原本へ解決する。実際の旧フォルダ削除、試験用のログ・lesson保存、予定実行は行わない。Map固有の条件付き保存先 `agents/dots/ark-map/lessons.jsonl` は未作成の候補であり、検査のための空ファイルを作らない。
+
+履歴の `previous_path`、固定commitの証拠、Human原文backup、旧章の成立時の参照は保持する。文字列 `dots/` のゼロ化やRepository全体の全リンク健全性を判定目標にしない。主要な現役依存を解消した範囲と、残る旧契約・未知のコピーを区別する。
+
+### 9.5 準備状態・Humanへの引渡し
+
+**現在は準備本文の構築段階で、GitHub公開とRemote再取得の確認は未了。** 公開前commitとmain反映後から変更10本文を再取得し、SHA連鎖、旧10案内・新17原本・対象外の保持を照合してから、実測した固定commitと結果を本節へ記録する。この本文の存在だけで保存後確認を先取りしない。
+
+準備完了後の到達点は **「Humanによる削除待ち」**。削除直前に最新headと旧側の全内容を準備結果に照合し、案内だけであること、新しい原本・データや他AIの変更が増えていないことを確認する。差があればその内容を解決し、古い「10ファイル」という観測だけで削除対象を確定しない。
+
+変更不能な過去のmain URLや旧Queryは削除後に切れる可能性がある。必要時に `agents/dots/` の現在原本へ接続し直し、Bindingを持つ旧契約なら版移行として扱う。問題時は上記基点と準備結果の固定commitを比較し、必要箇所だけ復元・修復する。Repository全体を巻き戻さず、旧フォルダ全体の恒久復活を標準にしない。
+
+Humanの削除後、旧入口の不在、新原本の保持、主要経路を確かめる確認・記録は、実際の後続依頼と権限に従う。準備完了を削除済み・削除後検証済みと記録しない。
+
+EOF::STR_022_DOTS_AGENT_LOCATION::v005

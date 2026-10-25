@@ -82,7 +82,7 @@ Ark99:00_2026/10/06; control-center
 
 - Repository操作や権限判断を行う時：[AGENTS.md](../../../AGENTS.md)と対象の局所指示を読む。RootのIdentity回復が必要なら[ARK.md](../../../ARK.md)へ進む。
 - 現在のMain／Support、接続先、全体のTitle規則を扱う時：[Ark Domain README](../../README.md)を読む。
-- メッセージ交換を具体的に準備・実行する時：[Board入口](../../../board/README.md)、必要な[Dots入口](../../../dots/README.md)、[既存reconnection Topic](../../../board/topics/20261001-dots-work-reconnection/README.md)のCurrentと必要な原本を読む。終了済みの擦り合わせを再演せず、今回の宛先・Scope・通信経路・実受信を確認する。
+- メッセージ交換を具体的に準備・実行する時：[Board入口](../../../board/README.md)、必要な[Dots入口](../../../agents/dots/README.md)、[既存reconnection Topic](../../../board/topics/20261001-dots-work-reconnection/README.md)のCurrentと必要な原本を読む。終了済みの擦り合わせを再演せず、今回の宛先・Scope・通信経路・実受信を確認する。
 - 実際のThread移行や継承準備を扱う時：[prepare-ark-transition](../../../skills/prepare-ark-transition/SKILL.md)が利用できれば使い、共有契約と選んだ受入れ先のCurrent Runtimeを適用する。Skillが使えなくても共有契約を直接読んで適用できる。
 
 この一覧は条件外の追加Bootではない。協働元Ark28:04の全Required Sourcesや全履歴を、00へ一律に転写しない。今回必要になった所有資料は実際に読み、隠れた記憶や他Threadの自動同期を仮定しない。

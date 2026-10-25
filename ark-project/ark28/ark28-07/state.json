@@ -2,13 +2,23 @@
   "meta": {
     "state_id": "ARK28_07_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-20",
-    "updated": "2026-10-20",
+    "updated": "2026-10-25",
     "canonical_path": "ark-project/ark28/ark28-07/state.json",
     "date_scope": "Asia/Tokyo preparation date; UI/reception observations are separately attributed.",
     "change_reason": "Human-authorized06→07 same-chapter Support continuation. Fixed06 rev3 carries existing fruit, source provenance and Unknowns; mutable07 position and Current06 terminal receipt remain separate.",
-    "output_revision": "Later Human GCI v2026-10-20.1: Living Review → Next step → independent Next Query. No fabricated new task at boot."
+    "output_revision": "Later Human GCI v2026-10-20.1: Living Review → Next step → independent Next Query. No fabricated new task at boot.",
+    "navigation_revision": {
+      "date": "2026-10-25",
+      "previous_snapshot": "1422af429a01aa62ea70e102b008d37653ef5ec1",
+      "previous_revision": 1,
+      "previous_state_blob": "b51c26394e2612a3585eff6887168946d4702bcd",
+      "authority": "Current Human approved old dots retirement preparation and the limited Ark28:07 version/binding migration; final deletion remains Human-only.",
+      "scope": "Current Dots direction plus07 Runtime/Handoff versions and blob bindings only. Preserve source snapshots, inherited provenance, roles, authority, progress and reception observations.",
+      "change_record": "control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation",
+      "evidence_boundary": "Document maintenance is not a new boot, delivery, Target reconstruction, product-settings change or observed deletion. Source06 progress.next_transition retains the historical reception receipt; this State contains no self SHA or claim of its own future reread."
+    }
   },
   "identity": {
     "source": "Ark28:06",
@@ -75,14 +85,14 @@
     "runtime": {
       "path": "ark-project/ark28/ark28-07/README.md",
       "id": "ARK28_07_SUPPORT_FIELD",
-      "version": "v001-human-authorized",
-      "blob_sha": "c851c1e0134852e4a3e09418e95078ac6ae17930"
+      "version": "v001.1-human-authorized",
+      "blob_sha": "a0b6f07034ba04e932dd5b8884db23cf89c54a6e"
     },
     "handoff": {
       "path": "ark-project/ark28/ark28-07/handoff.md",
       "id": "ARK28_06_TO_ARK28_07_CONTINUE",
-      "version": "v001-human-authorized",
-      "blob_sha": "6606c739757203a29fb66dae9005062bdb5ffa3a"
+      "version": "v001.1-human-authorized",
+      "blob_sha": "4f9c62c1d4437091c3b35771075c8d80081d60cb"
     },
     "source_snapshot": {
       "path": "ark-project/ark28/ark28-06/state.json",
@@ -136,7 +146,7 @@
     },
     "communication": {
       "manual": "agents/ai-to-ai-communication/README.md",
-      "direction": "dots/README.md",
+      "direction": "agents/dots/README.md",
       "current_owner": "board/topics/20261001-dots-work-reconnection/README.md",
       "section": "6 Current",
       "policy": "Closed dialogue remains closed; Current owners and actual actor authority required for new operation. No high-speed AI dialogue."
