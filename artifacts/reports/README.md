@@ -1,12 +1,14 @@
 ---
 title: "Reports — 根拠から意味を読み、次の理解へ渡す"
 canonical_path: "artifacts/reports/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Add three reports from further source reading; retain the first ten published reports."
 role: "Report collection entry, reading routes and revision guidance; not a second Current state"
 primary_reader: "Human / Current AI / Future AI"
 initial_collection_source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
-expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v001"
+expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v002"
 ---
 
 # Reports
@@ -17,7 +19,7 @@ expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v001"
 
 ## 今の問いから読む
 
-2026-10-25の初回Collectionは、Repository全体の構成確認と主要原本の横断読解から生まれた10本。各Reportは単独でも読める。番号は読書順の目安であり、実行順序やTask番号ではない。
+2026-10-25の初回Collectionは、Repository全体の構成確認と主要原本の横断読解から生まれた13本。各Reportは単独でも読める。番号は読書順の目安であり、実行順序やTask番号ではない。
 
 | Node | Edge — この問いから読む | Report |
 |---|---|---|
@@ -31,8 +33,11 @@ expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v001"
 | 8. Reportの核 | 目的・素材・読者 → 汎用的な執筆判断 | [汎用Reportを小さな核から育てる](2026-10-25-small-core-for-general-reports.md) |
 | 9. 別領域への横展開 | GitHub整理の知見 → 居室固有の条件 | [GitHub整理から居室整理へ](2026-10-25-transferring-methods-to-room-care.md) |
 | 10. 自由度と継続 | 創発・Root・現在の権限 → 戻れる協働 | [自由度を、戻れる協働へ結ぶ](2026-10-25-freedom-and-recoverable-continuity.md) |
+| 11. 研究と編集 | 深い調査 → 読める作品 | [深く調べることと、読める作品にすること](2026-10-25-research-and-publication.md) |
+| 12. 関係の根拠 | 順序・依存・因果 → 検討できるGraph | [矢印にも根拠が必要になる](2026-10-25-evidence-for-graph-edges.md) |
+| 13. 全体の地形 | 689ファイルの構成 → 今の目的に合う原本 | [689ファイルの地形を読む](2026-10-25-repository-terrain.md) |
 
-全体像からなら1→2→10、AI→AI Reportを深めるなら3→5→8、生活への接続を考えるなら4→9→7が読み方の一例になる。すべてを読むことを利用条件にしない。
+全体像からなら1→2→10、AI→AI Reportを深めるなら3→5→8、生活への接続を考えるなら4→9→7が読み方の一例になる。全体の広さを把握するなら13、編集方法を深めるなら11→12も使える。すべてを読むことを利用条件にしない。
 
 ## このCollectionから見えてきたこと
 
@@ -42,7 +47,7 @@ expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v001"
 
 ## 根拠と読取範囲
 
-分析基点は[commit ba47216debeb](https://github.com/yusukefujiijp/ai-project/tree/ba47216debeb2163a5dbf880c6b37d73edbb7e41)。全体Treeの1,001項目・689ファイルを確認し、48資料について全文または明示した範囲を実際に読んだ。46本文の全文読解・同一性を確認した既読再利用、空Seed一つの確認、PLAN一つの部分読解を区別する。
+分析基点は[commit ba47216debeb](https://github.com/yusukefujiijp/ai-project/tree/ba47216debeb2163a5dbf880c6b37d73edbb7e41)。全体Treeの1,001項目・689ファイルを確認し、55資料について全文または明示した範囲を実際に読んだ。52本文の全文読解・同一性を確認した既読再利用、空Seed二つの確認、PLAN一つの部分読解を区別する。
 
 **全Repositoryの全文読了や、全案件の現在状態の監査を完了したという意味ではない。** 読んだ原本・Git blob・未読範囲・確認境界は[読取付録](2026-10-25-reading-scope.md)へ。各Reportの引用は固定版へ戻れる。
 
@@ -66,4 +71,4 @@ Root・Teshuvah・Human Foreground One・Correction・STOPとGuardは[ARK](../..
 
 新しい作品を保存する時は、この入口から目的に応じて辿れるようにする。必要なREADMEとRemote再取得は[Artifacts](../README.md)および[保存契約](../../prompts/artifact-to-github.md)へ接続する。全操作ログや私的会話を複製せず、公開可能な素材と現在の承認範囲を保つ。
 
-EOF::ARTIFACTS_REPORTS_HOME::v001
+EOF::ARTIFACTS_REPORTS_HOME::v002
