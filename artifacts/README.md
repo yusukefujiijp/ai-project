@@ -1,23 +1,25 @@
 ---
 title: "Artifacts — 成果物と再制作資料の入口"
 canonical_path: "artifacts/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-17"
-updated: "2026-10-17"
+updated: "2026-10-25"
+updated_reason: "Connect the authorized Reports collection; preserve Slides and source ownership."
 role: "Cross-format artifact navigation"
 primary_reader: "Current AI / Future AI / Human"
-expected_eof: "EOF::ARTIFACTS_HOME::v001"
+expected_eof: "EOF::ARTIFACTS_HOME::v002"
 ---
 
 # Artifacts
 
-**Humanが閲覧・利用する成果物と、その理解・修正・再制作に必要な公開可能な資料を、形式別に見つける入口。**
+**HumanやAIが閲覧・利用する成果物と、その理解・修正・再制作に必要な公開可能な資料を、形式別に見つける入口。**
 
 Rootに成果物の形式ごとのフォルダを増やし続けず、必要なものから育てる。ChatGPT Dotsを含む各AI・各Threadで利用でき、特定サービスの専用保存領域にはしない。
 
 ## 入口
 
 - [Slides](slides/README.md)：スライド作品の制作資料、根拠、実物との接続、確認結果。
+- [Reports](reports/README.md)：調査・比較・考察等から、根拠と意味を伝えるReport。Human／AIの読者と、後からの再利用を扱う。
 
 一覧は実在する入口だけを案内する。将来用の空フォルダや全成果物の第二台帳を先回りして作らない。
 
@@ -45,4 +47,5 @@ GitHubは公開可能な制作資料の正準保存先。外部サービス上�
 
 本書は成果物の入口を定める。個別作品の制作完了や、長期的な運用効果の確認を示すものではない。
 
-EOF::ARTIFACTS_HOME::v001
+EOF::ARTIFACTS_HOME::v002
+
