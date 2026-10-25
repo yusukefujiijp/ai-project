@@ -3349,6 +3349,32 @@
           "source": "S01"
         }
       ]
+    },
+    {
+      "id": "cz-record-0033",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-25",
+      "reference_scope": "current",
+      "date_basis": "2026-10-25（Asia/Tokyo、client time context）に現在の本人入力を受領。Leg Press片足Sweet Spotの更新報告であり、実施日・来館・左右両側・回数は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "レッグプレス",
+          "mode": "片足",
+          "kg": 80,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0012/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Leg press\nSweet Spot\n片足: 80kgに更新しました！",
+          "reported_date": "2026-10-25",
+          "context": "現在の本人メッセージ全文。Leg Press片足のSweet Spotを75kgから80kgへ更新する明示報告。新しい参照基準の報告として追加し、過去の75kgの更新・同値確認は履歴に保持する。未言及の他条件は本人の継続ルールに従う。片足から左右両側の実施・両足重量・Triangleの手の切替を補わず、実施日・来館・下降系列・回数・セット数・身体効果は認定しない。"
+        }
+      }
     }
   ]
 }
