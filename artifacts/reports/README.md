@@ -1,14 +1,14 @@
 ---
 title: "Reports — 根拠から意味を読み、次の理解へ渡す"
 canonical_path: "artifacts/reports/README.md"
-version: "v003"
+version: "v004"
 created: "2026-10-25"
-updated: "2026-10-25"
-updated_reason: "Separate collection-wide guidance from dated reading routes; relocate the initial thirteen reports and coverage appendix under 2026-10-25 with Human approval."
+updated: "2026-10-26"
+updated_reason: "Connect the Human-approved Report learning entry and its lesson and success-case owners; retain dated works, reader designations and relocation history."
 role: "Report collection entry, reading routes and revision guidance; not a second Current state"
 primary_reader: "Human / Current AI / Future AI"
 initial_collection_source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
-expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v003"
+expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v004"
 ---
 
 # Reports
@@ -33,6 +33,12 @@ Reportの存在や提案は、採用・送信・実行・予定変更の権限�
 
 Root・Teshuvah・Human Foreground One・Correction・STOPとGuardは[ARK](https://github.com/yusukefujiijp/ai-project/blob/main/ARK.md)と[AGENTS](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md)を保持する。ReportやAIはKeliである。
 
+## Reportの学びへ戻る
+
+Reportの制作・改訂・保存を判断する際は、必要に応じて[Report用References](references/README.md)から関連するlessonや成功事例を読む。現在の目的・読者・条件と比較して活用し、過去の成功や指示を現在の事実・実行権限へ置き換えない。利用のために毎回全件を読むことは求めない。
+
+この入口は執筆・構成・伝達・保存・再利用の学びを扱う。作品固有の訂正はそのReportへ、題材の事実・経験は既存の担当原本へ戻す。役割の選択とJSONL本文への接続はReferencesが所有する。
+
 ## 保存と育て方
 
 新しいReportは、原則として初回公開日の日本時間に対応する`YYYY-MM-DD/`へ保存する。既存作品の訂正・改訂は同じ住所で行い、更新日・版・Git履歴で変化を辿る。日付が変わるたびに既存作品を移し直さない。観測日・参照commit・対象読者はそれぞれの意味で保持し、同じ日付に入ることを同じ根拠や読者方針の証明にしない。
@@ -51,4 +57,4 @@ Root・Teshuvah・Human Foreground One・Correction・STOPとGuardは[ARK](https
 
 旧`artifacts/reports/2026-10-25-*.md`の作品は、同じファイル名で`artifacts/reports/2026-10-25/`にある。移動前の一覧と本文は[固定版のREADME](https://github.com/yusukefujiijp/ai-project/blob/cb9c3a80cd73378fa97e4293fca4013e0d52a84e/artifacts/reports/README.md)から辿れる。この履歴への接続を旧main URLの自動転送とは扱わない。配置変更は、分析の再実施や実利用効果の確認を意味しない。
 
-EOF::ARTIFACTS_REPORTS_HOME::v003
+EOF::ARTIFACTS_REPORTS_HOME::v004
