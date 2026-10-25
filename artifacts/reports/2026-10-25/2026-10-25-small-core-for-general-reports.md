@@ -1,13 +1,15 @@
 ---
 title: "汎用Reportを小さな核から育てる — 章立てより、問いと根拠の関係"
-canonical_path: "artifacts/reports/2026-10-25-small-core-for-general-reports.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-small-core-for-general-reports.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Design analysis based on public sources and this report collection; no Skill created or registered"
-expected_eof: "EOF::REPORT_SMALL_CORE_FOR_GENERAL_REPORTS::v001"
+expected_eof: "EOF::REPORT_SMALL_CORE_FOR_GENERAL_REPORTS::v002"
 ---
 
 # 汎用Reportを小さな核から育てる
@@ -92,4 +94,4 @@ Human向けでは、重要な意味を早く掴める順序、具体例、比較
 [s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/self-improvement-loop/SKILL.md
 [s6]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/README.md
 
-EOF::REPORT_SMALL_CORE_FOR_GENERAL_REPORTS::v001
+EOF::REPORT_SMALL_CORE_FOR_GENERAL_REPORTS::v002

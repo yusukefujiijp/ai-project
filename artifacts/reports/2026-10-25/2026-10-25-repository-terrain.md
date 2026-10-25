@@ -1,13 +1,15 @@
 ---
 title: "689ファイルの地形を読む — 広さと現在の入口を混同しない"
-canonical_path: "artifacts/reports/2026-10-25-repository-terrain.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-repository-terrain.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Inventory and selected-entry analysis; not a whole-corpus content audit"
-expected_eof: "EOF::REPORT_REPOSITORY_TERRAIN::v001"
+expected_eof: "EOF::REPORT_REPOSITORY_TERRAIN::v002"
 ---
 
 # 689ファイルの地形を読む
@@ -89,4 +91,4 @@ Repositoryの全体Mapを作る時、このような保留を「未完了の実�
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/ark-project/README.md
 [s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/agents/README.md
 
-EOF::REPORT_REPOSITORY_TERRAIN::v001
+EOF::REPORT_REPOSITORY_TERRAIN::v002

@@ -1,13 +1,15 @@
 ---
 title: "深く調べることと、読める作品にすること — ResearchとPublicationの分担"
-canonical_path: "artifacts/reports/2026-10-25-research-and-publication.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-research-and-publication.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Editorial design analysis; no Torah interpretation, publication or schedule execution"
-expected_eof: "EOF::REPORT_RESEARCH_AND_PUBLICATION::v001"
+expected_eof: "EOF::REPORT_RESEARCH_AND_PUBLICATION::v002"
 ---
 
 # 深く調べることと、読める作品にすること
@@ -87,4 +89,4 @@ Compiler本文は、本文、古典的な読み、AIの考察を分け、AIの�
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/schedules/README.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/prompts/ai-frontier-reader.md
 
-EOF::REPORT_RESEARCH_AND_PUBLICATION::v001
+EOF::REPORT_RESEARCH_AND_PUBLICATION::v002

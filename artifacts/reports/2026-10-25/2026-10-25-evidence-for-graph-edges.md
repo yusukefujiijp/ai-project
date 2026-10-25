@@ -1,13 +1,15 @@
 ---
 title: "矢印にも根拠が必要になる — Graphで順序・依存・因果を混ぜない"
-canonical_path: "artifacts/reports/2026-10-25-evidence-for-graph-edges.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-evidence-for-graph-edges.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded analysis of relationship evidence; no schema or runtime changes"
-expected_eof: "EOF::REPORT_EVIDENCE_FOR_GRAPH_EDGES::v001"
+expected_eof: "EOF::REPORT_EVIDENCE_FOR_GRAPH_EDGES::v002"
 ---
 
 # 矢印にも根拠が必要になる
@@ -86,4 +88,4 @@ JSON構文、Schema、IDの一意性、参照先の存在は、データを扱�
 [s2]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/self-improvement-loop/SKILL.md
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/prompts/README.md
 
-EOF::REPORT_EVIDENCE_FOR_GRAPH_EDGES::v001
+EOF::REPORT_EVIDENCE_FOR_GRAPH_EDGES::v002

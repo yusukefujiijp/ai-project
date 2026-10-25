@@ -1,13 +1,15 @@
 ---
 title: "一つの入口の背後に、複数の責任を残す — Arkの認知負荷設計"
-canonical_path: "artifacts/reports/2026-10-25-one-entry-many-responsibilities.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-one-entry-many-responsibilities.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded analysis; proposals are not adopted operating rules"
-expected_eof: "EOF::REPORT_ONE_ENTRY_MANY_RESPONSIBILITIES::v001"
+expected_eof: "EOF::REPORT_ONE_ENTRY_MANY_RESPONSIBILITIES::v002"
 ---
 
 # 一つの入口の背後に、複数の責任を残す
@@ -87,4 +89,4 @@ Reportの読者がHumanなら、意味と判断の焦点へ自然に到達でき
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/references/success-cases/one-skill-entry-multiple-benefits.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/control-center/README.md
 
-EOF::REPORT_ONE_ENTRY_MANY_RESPONSIBILITIES::v001
+EOF::REPORT_ONE_ENTRY_MANY_RESPONSIBILITIES::v002

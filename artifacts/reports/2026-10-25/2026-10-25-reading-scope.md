@@ -1,13 +1,13 @@
 ---
 title: "2026-10-25 Report集 — 読取範囲と証拠の境界"
-canonical_path: "artifacts/reports/2026-10-25-reading-scope.md"
-version: "v002"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-reading-scope.md"
+version: "v003"
 created: "2026-10-25"
 updated: "2026-10-25"
-updated_reason: "Extend the observed source coverage by seven retrieved entries; keep the same analysis snapshot."
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 role: "Evidence and coverage appendix for this report collection; not an all-repository audit"
-expected_eof: "EOF::REPORTS_READING_SCOPE_20261025::v002"
+expected_eof: "EOF::REPORTS_READING_SCOPE_20261025::v003"
 ---
 
 # 読取範囲と証拠の境界
@@ -106,5 +106,5 @@ Root README・ARK・AGENTSから全体の意味と責務を回復し、領域入
 
 この読取付録は原本の第二台帳ではない。後続mainが変わっても、今回何を根拠に書いたかを保持する。分析に誤りが見つかった場合は理由と根拠を添えて同じ作品を改訂し、Git履歴から前版を辿れるようにする。
 
-EOF::REPORTS_READING_SCOPE_20261025::v002
+EOF::REPORTS_READING_SCOPE_20261025::v003
 

@@ -1,13 +1,15 @@
 ---
 title: "Currentと歴史を同時に読む — 古い未完了を再生しないために"
-canonical_path: "artifacts/reports/2026-10-25-current-and-history.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-current-and-history.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded analysis; no historical sources or live routes modified"
-expected_eof: "EOF::REPORT_CURRENT_AND_HISTORY::v001"
+expected_eof: "EOF::REPORT_CURRENT_AND_HISTORY::v002"
 ---
 
 # Currentと歴史を同時に読む
@@ -89,4 +91,4 @@ Reportも旅の記録に近い側面を持つ。ある時点の観察と解釈�
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/__archives/README.md
 [s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/ai-ark-seed/README.md
 
-EOF::REPORT_CURRENT_AND_HISTORY::v001
+EOF::REPORT_CURRENT_AND_HISTORY::v002

@@ -1,13 +1,15 @@
 ---
 title: "自由度を、戻れる協働へ結ぶ — Arkにおける創発と継続性"
-canonical_path: "artifacts/reports/2026-10-25-freedom-and-recoverable-continuity.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-freedom-and-recoverable-continuity.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Interpretive analysis grounded in Ark sources; not a new authority or doctrine"
-expected_eof: "EOF::REPORT_FREEDOM_AND_RECOVERABLE_CONTINUITY::v001"
+expected_eof: "EOF::REPORT_FREEDOM_AND_RECOVERABLE_CONTINUITY::v002"
 ---
 
 # 自由度を、戻れる協働へ結ぶ
@@ -85,4 +87,4 @@ ArkにおけるAIの創発性も、自由に道具を工夫しながら、Human�
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/AGENTS.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/self-improvement-loop/SKILL.md
 
-EOF::REPORT_FREEDOM_AND_RECOVERABLE_CONTINUITY::v001
+EOF::REPORT_FREEDOM_AND_RECOVERABLE_CONTINUITY::v002

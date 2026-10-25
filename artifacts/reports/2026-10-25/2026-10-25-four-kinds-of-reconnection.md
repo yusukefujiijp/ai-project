@@ -1,13 +1,15 @@
 ---
 title: "戻る支援には、異なる切れ目がある — 想起・開始・移行・文脈復元"
-canonical_path: "artifacts/reports/2026-10-25-four-kinds-of-reconnection.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-four-kinds-of-reconnection.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Comparative analysis of support methods; no live bodily support or trial"
-expected_eof: "EOF::REPORT_FOUR_KINDS_OF_RECONNECTION::v001"
+expected_eof: "EOF::REPORT_FOUR_KINDS_OF_RECONNECTION::v002"
 ---
 
 # 戻る支援には、異なる切れ目がある
@@ -88,4 +90,4 @@ AIが現在のGoalを失っている時、Humanへ「まず全体を説明して
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/load/SKILL.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/map-remaining-work/SKILL.md
 
-EOF::REPORT_FOUR_KINDS_OF_RECONNECTION::v001
+EOF::REPORT_FOUR_KINDS_OF_RECONNECTION::v002

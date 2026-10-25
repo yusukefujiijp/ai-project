@@ -1,13 +1,15 @@
 ---
 title: "GitHub整理から居室整理へ — 横展開するのは構造か、手順か"
-canonical_path: "artifacts/reports/2026-10-25-transferring-methods-to-room-care.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-transferring-methods-to-room-care.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded cross-domain analysis; no physical task or trial initiated"
-expected_eof: "EOF::REPORT_TRANSFERRING_METHODS_TO_ROOM_CARE::v001"
+expected_eof: "EOF::REPORT_TRANSFERRING_METHODS_TO_ROOM_CARE::v002"
 ---
 
 # GitHub整理から居室整理へ
@@ -84,4 +86,4 @@ room-care原本も、物・場所・用途を、使用頻度・動線・取り�
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/control-center/house/README.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/problem-solving/cases/bedtime-unintended-sleep.md
 
-EOF::REPORT_TRANSFERRING_METHODS_TO_ROOM_CARE::v001
+EOF::REPORT_TRANSFERRING_METHODS_TO_ROOM_CARE::v002

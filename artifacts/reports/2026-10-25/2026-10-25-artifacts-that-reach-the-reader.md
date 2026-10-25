@@ -1,13 +1,15 @@
 ---
 title: "成果物が届くとは何か — 内容・媒体・入口を結び直す"
-canonical_path: "artifacts/reports/2026-10-25-artifacts-that-reach-the-reader.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-artifacts-that-reach-the-reader.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded analysis; no new slides, audio or schedules created"
-expected_eof: "EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v001"
+expected_eof: "EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v002"
 ---
 
 # 成果物が届くとは何か
@@ -83,4 +85,4 @@ Reportには、今読むHumanへの入口と、後から利用するAIへの入�
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/artifacts/README.md
 [s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/schedules/README.md
 
-EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v001
+EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v002

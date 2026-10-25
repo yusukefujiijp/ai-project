@@ -1,13 +1,15 @@
 ---
 title: "成功は何を再現し、訂正は何を守るのか — 経験から方法を育てる"
-canonical_path: "artifacts/reports/2026-10-25-learning-from-success-and-correction.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-learning-from-success-and-correction.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Cross-source analysis; no lesson or Skill changes made"
-expected_eof: "EOF::REPORT_LEARNING_FROM_SUCCESS_AND_CORRECTION::v001"
+expected_eof: "EOF::REPORT_LEARNING_FROM_SUCCESS_AND_CORRECTION::v002"
 ---
 
 # 成功は何を再現し、訂正は何を守るのか
@@ -87,4 +89,4 @@ Humanが「成功法則」と評価した意味は大切に保持する。それ
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/ARK.md
 [s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/AGENTS.md
 
-EOF::REPORT_LEARNING_FROM_SUCCESS_AND_CORRECTION::v001
+EOF::REPORT_LEARNING_FROM_SUCCESS_AND_CORRECTION::v002

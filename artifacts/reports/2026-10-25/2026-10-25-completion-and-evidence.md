@@ -1,13 +1,15 @@
 ---
 title: "完成状態を平らにしない — 保存・接続・理解・実利用を分ける理由"
-canonical_path: "artifacts/reports/2026-10-25-completion-and-evidence.md"
-version: "v001"
+canonical_path: "artifacts/reports/2026-10-25/2026-10-25-completion-and-evidence.md"
+version: "v002"
 created: "2026-10-25"
+updated: "2026-10-25"
+updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
 author_role: "Ark28:07 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
 status: "Source-grounded analysis; not a new mandatory completion gate"
-expected_eof: "EOF::REPORT_COMPLETION_AND_EVIDENCE::v001"
+expected_eof: "EOF::REPORT_COMPLETION_AND_EVIDENCE::v002"
 ---
 
 # 完成状態を平らにしない
@@ -87,4 +89,4 @@ Reportの末尾に必要なのは、常に大量のチェックリストでは�
 [s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/agents/ai-to-ai-communication/README.md
 [s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/repository-reviews/README.md
 
-EOF::REPORT_COMPLETION_AND_EVIDENCE::v001
+EOF::REPORT_COMPLETION_AND_EVIDENCE::v002
