@@ -2,7 +2,7 @@
 title: "STR-022 — Dots原本のagents配下への移設と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
 version: "v005"
-status: "retirement preparation compiled; publication and remote verification pending; final root dots deletion reserved to Human"
+status: "retirement preparation remotely verified; awaiting Human deletion of root dots; protected agents/dots and product settings unchanged"
 created: "2026-10-20"
 updated: "2026-10-25"
 recorded_by: "ChatGPT Work / Dots移設実行担当"
@@ -240,9 +240,23 @@ Main11 Stateは新住所を参照済みで、README／Handoffの観測blobを永
 
 ### 9.5 準備状態・Humanへの引渡し
 
-**現在は準備本文の構築段階で、GitHub公開とRemote再取得の確認は未了。** 公開前commitとmain反映後から変更10本文を再取得し、SHA連鎖、旧10案内・新17原本・対象外の保持を照合してから、実測した固定commitと結果を本節へ記録する。この本文の存在だけで保存後確認を先取りしない。
+**2026-10-25 JST、準備のmain反映とRemote再取得を確認し、Humanによる削除待ちとなった。旧 `dots/` は存在し、削除・削除後検証は行っていない。**
 
-準備完了後の到達点は **「Humanによる削除待ち」**。削除直前に最新headと旧側の全内容を準備結果に照合し、案内だけであること、新しい原本・データや他AIの変更が増えていないことを確認する。差があればその内容を解決し、古い「10ファイル」という観測だけで削除対象を確定しない。
+実装の固定commitは[d5232a91](https://github.com/yusukefujiijp/ai-project/commit/d5232a91b1925d9560e44df2eefa3994122d86df)。基点 `1422af429a01aa62ea70e102b008d37653ef5ec1` を親として10ファイルだけを変更した。公開前の固定commitから10本文・SHAを全文再取得して一致を確認し、公開直前のmainが基点のままであることを確認して、期待head付き・non-forceでmainへ反映した。反映後もmainから10本文・SHAを全文再取得し、意図した内容との完全一致を確認した。
+
+公開後treeは1019 entries・truncated=false、697 blobのうち変更10・対象外687のblob／modeを保持。旧案内10件、新原本17件、Main11 State、旧04／06契約とCurrent06 Receipt、共有Skillの本文は不変だった。固定Source・過去の受入れ観測、07 StateのIdentity・authority・now・evidence・deferred・progressは変更していない。
+
+| 07の改訂物 | 確認した版・SHA |
+|---|---|
+| README | v001.1-human-authorized / `a0b6f07034ba04e932dd5b8884db23cf89c54a6e` |
+| Handoff | v001.1-human-authorized / `4f9c62c1d4437091c3b35771075c8d80081d60cb` |
+| State | schema v001・revision2 / `cf0821c59be4c21437040f1e5e17a9dd78c39516` |
+
+旧 `dots/` を到達先集合から除いた静的検査では、対象文書・新Dots原本・5共有Skillから新Dots領域へ向かう64参照について、実際の相対位置・path・必要なanchorを解決し、到達エラーはなかった。通常Map・日次総括のActorログ／共通lesson保存先も新住所に存在し、条件付きMap専門lessonは新住所の未作成候補として確認した。試験用の書込や運用起動をせず、検査済み本文と公開後本文の一致を確認した結果である。全外部consumerや実際の削除後動作の保証ではない。
+
+本追記は上記実装commitの確認後に既存STRへ記録するもの。本追記自身の保存結果・最終commit・再取得は、実行担当の結果報告とGit履歴へ接続し、自己SHAや未観測の自己再取得を本文へ埋めない。
+
+現在の到達点は **「Humanによる削除待ち」**。削除直前に最新headと旧側の全内容を準備結果に照合し、案内だけであること、新しい原本・データや他AIの変更が増えていないことを確認する。差があればその内容を解決し、古い「10ファイル」という観測だけで削除対象を確定しない。
 
 変更不能な過去のmain URLや旧Queryは削除後に切れる可能性がある。必要時に `agents/dots/` の現在原本へ接続し直し、Bindingを持つ旧契約なら版移行として扱う。問題時は上記基点と準備結果の固定commitを比較し、必要箇所だけ復元・修復する。Repository全体を巻き戻さず、旧フォルダ全体の恒久復活を標準にしない。
 
