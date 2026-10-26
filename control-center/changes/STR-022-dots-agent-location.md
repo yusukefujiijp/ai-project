@@ -1,10 +1,10 @@
 ---
 title: "STR-022 — Dots原本のagents配下への移設と実運用切替"
 canonical_path: "control-center/changes/STR-022-dots-agent-location.md"
-version: "v005"
-status: "retirement preparation remotely verified; awaiting Human deletion of root dots; protected agents/dots and product settings unchanged"
+version: "v006"
+status: "root dots deleted; bounded post-deletion repository verification complete; protected agents/dots retained; product and runtime effects separately unverified"
 created: "2026-10-20"
-updated: "2026-10-25"
+updated: "2026-10-27"
 recorded_by: "ChatGPT Work / Dots移設実行担当"
 repository: "yusukefujiijp/ai-project"
 base_commit: "2dc05496b555638a47a3de2f058c7f632aca773f"
@@ -16,12 +16,23 @@ retirement_preparation:
   recorded_by: "ChatGPT Work / Ark27:11"
   base_commit: "1422af429a01aa62ea70e102b008d37653ef5ec1"
   authority: "Current Human adopted the ten-path preparation plan and authorized main persistence/reread; no root dots deletion, old04/06 contract migration or product-settings changes"
-expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v005"
+retirement_verification:
+  recorded_date_jst: "2026-10-27"
+  observed_at_utc: "2026-10-26T21:32:21Z"
+  recorded_by: "ChatGPT Dots / STR-022記録整合担当"
+  authority: "Current Human authorized reconciliation of this existing STR with the deleted root dots state, main persistence and remote reread; no other file or product-setting changes"
+  deletion_commit: "3e590a5cf2a46d1fc1c7a743ece83c8e8c17ad1c"
+  verified_main_commit: "f4516e3ca19a6cf9cd09782ab2b662f0d2315b16"
+  previous_version: "v005"
+  scope: "Root dots absence, ten navigation-only deletions, protected agents/dots data and bounded current source routes; supplied Work report kept separate from direct verification"
+expected_eof: "EOF::STR_022_DOTS_AGENT_LOCATION::v006"
 ---
 
 # STR-022 — Dotsの所在と実運用を揃える
 
-**2026-10-24 JST、Dotsの17原本をmainで移設し、既存3予定・5登録Skillの住所更新と保存後確認まで完了した。** 移設と既存設定の切替結果は第8節、その後の旧住所退役準備は[第9節](#dots-retirement-preparation)が所有する。第1〜7節は2026-10-20、第8節は2026-10-24の準備・判断・確認結果を保持する履歴であり、そのファイル数・行数・保持方針・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
+**現在の状態：旧root `dots/` は2026-10-25のcommitで削除済み。** 削除commitと、2026-10-27 JSTに記録した新原本保持・主要経路の限定照合は[第10節](#dots-retirement-verification)へ。第9節の「削除待ち」は当時の準備完了時点の履歴であり、現在の未完了項目ではない。
+
+**2026-10-24 JST、Dotsの17原本をmainで移設し、既存3予定・5登録Skillの住所更新と保存後確認まで完了した。** 移設と既存設定の切替結果は第8節、その後の旧住所退役準備は[第9節](#dots-retirement-preparation)が所有する。第1〜7節は2026-10-20、第8節は2026-10-24、第9節は2026-10-25の準備・判断・確認結果を保持する履歴であり、そのファイル数・行数・保持方針・未確認状態を現在へ固定しない。保存、main反映、登録Skill、製品予定、実利用をそれぞれ確認する。
 
 ## 1. 目的・承認・今回の境界
 
@@ -238,7 +249,9 @@ Main11 Stateは新住所を参照済みで、README／Handoffの観測blobを永
 
 履歴の `previous_path`、固定commitの証拠、Human原文backup、旧章の成立時の参照は保持する。文字列 `dots/` のゼロ化やRepository全体の全リンク健全性を判定目標にしない。主要な現役依存を解消した範囲と、残る旧契約・未知のコピーを区別する。
 
-### 9.5 準備状態・Humanへの引渡し
+### 9.5 準備状態・Humanへの引渡し（当時の履歴）
+
+以下は準備完了時点の観測と引渡し条件。後の削除と現在の確認結果は[第10節](#dots-retirement-verification)で区別する。
 
 **2026-10-25 JST、準備のmain反映とRemote再取得を確認し、Humanによる削除待ちとなった。旧 `dots/` は存在し、削除・削除後検証は行っていない。**
 
@@ -256,10 +269,49 @@ Main11 Stateは新住所を参照済みで、README／Handoffの観測blobを永
 
 本追記は上記実装commitの確認後に既存STRへ記録するもの。本追記自身の保存結果・最終commit・再取得は、実行担当の結果報告とGit履歴へ接続し、自己SHAや未観測の自己再取得を本文へ埋めない。
 
-現在の到達点は **「Humanによる削除待ち」**。削除直前に最新headと旧側の全内容を準備結果に照合し、案内だけであること、新しい原本・データや他AIの変更が増えていないことを確認する。差があればその内容を解決し、古い「10ファイル」という観測だけで削除対象を確定しない。
+準備完了時の到達点は **「Humanによる削除待ち」** だった。削除直前に最新headと旧側の全内容を準備結果に照合し、案内だけであること、新しい原本・データや他AIの変更が増えていないことを確認する。差があればその内容を解決し、古い「10ファイル」という観測だけで削除対象を確定しない。
 
 変更不能な過去のmain URLや旧Queryは削除後に切れる可能性がある。必要時に `agents/dots/` の現在原本へ接続し直し、Bindingを持つ旧契約なら版移行として扱う。問題時は上記基点と準備結果の固定commitを比較し、必要箇所だけ復元・修復する。Repository全体を巻き戻さず、旧フォルダ全体の恒久復活を標準にしない。
 
 Humanの削除後、旧入口の不在、新原本の保持、主要経路を確かめる確認・記録は、実際の後続依頼と権限に従う。準備完了を削除済み・削除後検証済みと記録しない。
 
-EOF::STR_022_DOTS_AGENT_LOCATION::v005
+
+<a id="dots-retirement-verification"></a>
+
+## 10. 旧dots削除後の現物照合 — 2026-10-27 JST記録
+
+### 10.1 削除済みの現在状態と、今回の権限
+
+**Repository直下の旧 `dots/` は削除済みであり、現在は「Humanによる削除待ち」ではない。** 削除は[commit 3e590a5c](https://github.com/yusukefujiijp/ai-project/commit/3e590a5cf2a46d1fc1c7a743ece83c8e8c17ad1c)（`Delete dots directory`、2026-10-25T01:57:27Z／同日10:57:27 JST）に記録されている。GitHub上のauthorは `yusukefujiijp`、committerは `web-flow`。この公開履歴と、今回の記録整合担当による削除後の読取確認を区別する。今回のAIが削除を実行したとは記録しない。
+
+Humanは、準備・削除待ちの履歴を残し、削除commit、削除後の確認範囲、残る未確認を区別して、既存の本STRを最新の現物へ整合し、main保存・再取得確認まで行うよう依頼した。今回の変更は本ファイルの現在状態・追記・版・日付・metadata・EOFだけ。旧フォルダの削除・復活、再移設、登録Skill・予定・Project設定・旧Runtimeの改訂、外部AI送信、新しい運用試験は含めない。
+
+### 10.2 公開GitHubから直接確認した範囲
+
+確認時刻は2026-10-26T21:32:21Z（2026-10-27 06:32:21 JST）。確認対象の固定mainは[f4516e3c](https://github.com/yusukefujiijp/ai-project/tree/f4516e3ca19a6cf9cd09782ab2b662f0d2315b16)。以下は、今回の担当が正規GitHub Connectorから取得したcommit差分、非省略tree、該当本文を照合した結果であり、別Workの報告だけから補ったものではない。
+
+| 対象 | 直接確認した結果と境界 |
+|---|---|
+| 削除commitの範囲 | 親は `d6b94b921e6fda75d9b3cd47056a6ee7d87f8870`。変更は旧 `dots/` 内の10案内だけで、全件 `removed`、追加0行・削除647行。各削除本文に `navigation-only` と新原本への案内があり、JSON／JSONL原本の削除ではない |
+| 削除時の保護対象 | 削除commitのtreeは998 entries・truncated=false。旧 `dots/` はなく、`agents/dots/` の17原本は削除直前の親commitとblob／modeがすべて一致する |
+| 確認時mainの所在 | treeは1059 entries・truncated=false。root `dots` およびその配下は存在せず、`agents/dots/` の17原本が存在する。削除commitはこのmainの祖先である |
+| 準備時からのデータ保持 | 第9節の準備基点 `1422af429a01aa62ea70e102b008d37653ef5ec1` と比べ、17原本中16件のblob／modeは同一。差があるのは共通 `lessons/lessons.jsonl` のみで、全文比較により旧9行と末尾LFをそのまま保ち、後続1行が追加されている。後続の学びを旧版へ戻さない |
+| 主要な現役経路 | Dots入口、通常Map、日次総括から新Dots領域へ向かう現役リンクのpathを現在treeへ解決し、Actorログ `agents/dots/logs/dot-0000.jsonl` と共通lesson `agents/dots/lessons/lessons.jsonl` の所在も確認した。5共有SKILL.mdの計7本のDots URLは新住所であり、対象pathと指定されたanchorへ到達する。これは静的な原本・参照照合で、実際の予定実行や保存動作の試験ではない |
+
+Map固有の条件付き `agents/dots/ark-map/lessons.jsonl` は、この確認時点でも未作成の候補である。検査のために空ファイルを作らず、旧住所へ可変原本を再作成しない。第9.5節の64参照検査は削除前の準備検査として保持し、今回それを同じ件数の全再試験へ読み替えない。
+
+### 10.3 Human提示の別Work報告と、残る未確認
+
+Humanが提示した別Workの削除後報告には、16 blob不変、lessonの旧9行保持と1行追加、既存5登録Skillの本文一致と計7本の新URL確認が含まれていた。Repository側の保持は第10.2節で今回も独立照合できた。一方、**既存5登録Skillの一致は、そのWorkが確認した取得経路・時点での報告**として扱う。今回のGitHub共有原本の7 URL確認を、登録Remote・製品UI・全Runtimeの新たな独立確認へ拡張しない。提示された報告を超えて私的Work会話や長期メモリを転記していない。
+
+第8節の既存3予定の住所切替・保存後確認と、第9.4節の後続観測は、それぞれ当時の成果として保持する。今回、製品側の現設定、削除後の実際の予定実行・保存、Ark28 Projectの実指示欄、古いコピー、全外部consumer、Skillの自然選択や他AIの理解、長期の利用効果は確認していない。未確認を不存在・失敗・完了のいずれにも変換しない。
+
+旧04／06等の固定住所・Identity・Bindingを要求する契約は、第9.3節の境界を維持する。旧main URLが切れる場合は、新原本または当時の固定版へ接続し、実際に旧Runtimeの再利用が必要になった時だけ、その対象と権限で版移行を判断する。今回の旧住所削除確認を、旧契約のBoot成功・全旧章の近代化完了と扱わない。
+
+### 10.4 到達点と再開条件
+
+現在の到達点は **「旧root dots削除済み／新原本保持と主要な現役経路の限定照合済み」**。第9節の準備と削除待ちは当時の正しい履歴として残し、Current状態だけを本節へ接続した。
+
+本追記自身の保存commitとRemote再取得結果はGit履歴・今回の結果報告が所有する。未観測の自己再取得や自己SHAを本文へ埋め込まない。以後は、通常利用で旧参照への到達不能、旧JSONLの再出現、保存先の分岐、具体的なBinding不一致が観測された場合に、その現物と有効な権限から不足箇所だけを調べる。削除・移設・予定編集を再演したり、全フォルダを恒久復活させたりすることを標準の次工程にはしない。
+
+EOF::STR_022_DOTS_AGENT_LOCATION::v006
