@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK30_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-26",
     "updated": "2026-10-26",
     "canonical_path": "ark-project/ark30/ark30-01/state.json",
     "date_scope": "Asia/Tokyo; preparation and subsequent actual observations separated",
-    "change_reason": "Record verified original publication and partial Work setup; browser-operation timeouts prevent further UI/delivery verification. Preserve current authorization and avoid duplicate creation on recovery."
+    "change_reason": "Resume under existing Human authorization; record directly observed Work setup/delivery and evidence exposed by each receiver, separately from long-term four-line continuity."
   },
   "identity": {
     "source": "Ark27:11 / Human-authorized preparation",
@@ -91,10 +91,10 @@
     "progress_owner": "ark-project/ark30/ark30-01/state.json"
   },
   "now": {
-    "phase": "REMOTE_VERIFIED_UI_ROUTE_BLOCKED",
+    "phase": "INITIAL_WORK_PRESENTED_RECEPTION_VERIFIED",
     "goal": "Support28がReportの内容の価値・表現の適合・読む入口を別々の根拠から検討できる、具体的な一件の比較材料を得る状態。",
     "current_assignment": "既存Report一件の内容・表現・読む経路の補助比較",
-    "first_legal_move": "RECOVER_BROWSER_ROUTE_THEN_INSPECT_EXISTING_PROJECT_THREAD_AND_PENDING_RESULT",
+    "first_legal_move": "RECEIVE_CURRENT_HUMAN_REVIEW_OR_CONTINUE_VALID_SCOPED_DELEGATION",
     "task_scope": "既存Report「成果物が届くとは何か — 内容・媒体・入口を結び直す」を一件の対象とする。Report／Feedback設計の所有はSupport28。Report制作・改訂・改名・保存、Feedback原本やSkillの変更は行わない。",
     "completion_condition": "一件の内容・表現・読取経路の対応、良い点と不足・理由、少数の改善候補と判断が変わる条件を会話内で提示し、Support28の採否に供せる。新しい作品を制作しない。"
   },
@@ -113,30 +113,116 @@
       "boundary": "This receipt revision's own publication and reread are reported after saving, not self-certified here."
     },
     "delivery": {
-      "status": "not_started_ui_route_blocked",
+      "status": "project_instructions_and_thread_delivery_verified",
       "project_name": "Ark30: 継続協働ライン4",
       "project_url": null,
-      "thread_url": null,
+      "thread_url": "https://chatgpt.com/g/g-p-6aded23b1a3c819188e98f3029d8faeb-ark30-ji-sok-xie-dong-rain4/c/6aded2b6-7738-83ec-9348-073b8782c4e3",
       "project_existence": {
-        "status": "not_found_in_initial_Project_list_not_rechecked_after_timeout",
-        "evidence": "Initial visible current-account Project list contained no Ark29/30. This is not a timeless absence guarantee."
+        "status": "directly_observed",
+        "evidence": "No matching Ark30 Project in current Project picker/search; created the authorized Project once and observed its selected name."
       },
-      "project_instructions_verified": false,
-      "title_verified": false,
-      "startup_sent": false,
-      "thread_existence": "No30 Project or01 creation/send was attempted by this actor; inspect current live state before creating.",
-      "remaining": "Create or reuse matching Project/01, set/reread chapter README instructions, send exact saved Handoff payload, set exact Title, check target reconstruction and assigned analysis."
+      "project_instructions_verified": true,
+      "project_instructions_source": "ark-project/ark30/README.md",
+      "project_instructions_blob": "1a0ced352b8f790ddb621daa124a8a20a921906e",
+      "project_instructions_verification": "Saved, reopened settings, and compared the complete field exactly with the chapter-owned instruction text.",
+      "project_instructions_characters": 1632,
+      "title_verified": true,
+      "compiled_title": "Ark30:01_2026/10/26; \"主の完全勝利: 第四ラインの継続協働を始める\"",
+      "startup_sent": true,
+      "startup_source": "ark-project/ark30/ark30-01/handoff.md",
+      "startup_handoff_blob": "42f3314e0878eb9537e8e5a201ac8746e7a0a16c",
+      "sending_actor": "Ark27:11 AI, explicitly identified as AI relay rather than a new Human utterance",
+      "thread_existence": "One persistent01 URL observed after sending; exact Title saved and observed in browser header.",
+      "project_entry_boundary": "The verified Thread URL opens the corresponding named Project context; no separate Project-home URL is asserted.",
+      "remaining": "No remaining source-side Project setup or startup send. Human opening from their own device and long-term continuity/effect remain separately unobserved.",
+      "project_instructions_section": "4. Work Project指示 — 設定する本文",
+      "startup_section": "7. 確定Titleと送信本文"
     },
     "target_reconstruction": {
-      "status": "not_established_no_startup_sent",
+      "status": "evidenced_by_visible_receiver_response",
       "actor": "Ark30:01 AI",
-      "proof": null
+      "proof": {
+        "thread_url": "https://chatgpt.com/g/g-p-6aded23b1a3c819188e98f3029d8faeb-ark30-ji-sok-xie-dong-rain4/c/6aded2b6-7738-83ec-9348-073b8782c4e3",
+        "source_observer": "Ark27:11 AI",
+        "boundary": "Receiver's visible full-read receipt and substantive response are evidence; the sender does not claim access to hidden reasoning or substitute its own reading.",
+        "required_source_observations": [
+          {
+            "order": 1,
+            "path": "ark-project/ark30/ark30-01/handoff.md",
+            "blob": "42f3314e0878eb9537e8e5a201ac8746e7a0a16c",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 2,
+            "path": "ark-project/ark30/ark30-01/README.md",
+            "blob": "52e4c2debbde99c11e400ceb4a6c852dc75ab57f",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 3,
+            "path": "ark-project/ark30/ark30-01/state.json",
+            "blob": "6ed5cde2e4747bc60cd427a893d04fc9b5ebb1e4",
+            "receiver_claimed_range": "whole JSON"
+          },
+          {
+            "order": 4,
+            "path": "ark-project/ark30/README.md",
+            "blob": "1a0ced352b8f790ddb621daa124a8a20a921906e",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 5,
+            "path": "prompts/ai-next-thread-handoff.md",
+            "blob": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 6,
+            "path": "AGENTS.md",
+            "blob": "465e7452515ff1b587c6d1e8f08e5dedde53b32b",
+            "receiver_claimed_range": "metadata through natural end"
+          },
+          {
+            "order": 7,
+            "path": "ark-project/README.md",
+            "blob": "54816497cd79f82a90eae4029ee83da8d4375e25",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 8,
+            "path": "ARK.md",
+            "blob": "ed7f816ecd80bf0ae82a7cbe1a18c552ed1e2826",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          },
+          {
+            "order": 9,
+            "path": "agents/ai-to-ai-communication/README.md",
+            "blob": "52ccbe37d81fa58775c14963eec95b6f248555f8",
+            "receiver_claimed_range": "metadata/Beginning Identity through declared Exact EOF"
+          }
+        ],
+        "receiver_reported_snapshot": "1f402239b22b774026480a8667770feee8c6300f",
+        "identity_and_meaning": "Visible R1–R6 distinguishes parallel addition and continuing-line Goal, line/Thread/Actor, Main27/Support28 ownership and completed Report/Feedback work, Root/Human authority/Guard, sender preparation versus receiver read-only analysis, historical unsent State versus actual receipt, and initial work connection versus ongoing effect.",
+        "title_copy_surface": "First normal final response begins with exact confirmed Title alone in a text code block.",
+        "additional_source_reading": "Receiver reports full target Report, Reports parent, dated README and Report References; relevant public feedback/lessons/success records and fixed cited originals. Partial Support28 State reading is explicitly bounded, not claimed as full.",
+        "display_link_correction": {
+          "status": "corrected_in_same_thread_followup",
+          "scope": "One dated README link in §2.3 of the visible answer had a repository-owner typo. The receiving AI supplied the correct clickable URL in a scoped follow-up after the sender verified its current source.",
+          "correct_url": "https://github.com/yusukefujiijp/ai-project/blob/main/artifacts/reports/2026-10-25/README.md",
+          "verified_source_blob": "a0fb5241b08b1204230f622dbd97379fc1433638",
+          "boundary": "Correction does not edit historical messages or repeat the accepted reading/analysis; no new execution authority."
+        }
+      }
     },
     "work_connection": {
-      "status": "assigned_by_Human_not_yet_delivered_to_receiver",
+      "status": "initial_assigned_conversation_analysis_presented",
       "assignment": "既存Report一件の内容・表現・読む経路の補助比較",
       "mode": "conversation-only",
-      "boundary": "Assignment in originals is not evidence of receiver execution. Four-line work connection not yet established."
+      "actor": "Ark30:01 AI",
+      "proof_thread_url": "https://chatgpt.com/g/g-p-6aded23b1a3c819188e98f3029d8faeb-ark30-ji-sok-xie-dong-rain4/c/6aded2b6-7738-83ec-9348-073b8782c4e3",
+      "completion_observed": "The visible final reply separately compares content value, expression and reading route, preserves existing Feedback/Report work, presents a few reasoned improvement candidates and conditions, and distinguishes group feedback from a verdict on this one work.",
+      "ownership_boundary": "Support28 retains Report/Feedback design and implementation. No Report production, renaming, persistence or cross-thread sending delegated to receiver.",
+      "boundary": "Initial comparison completion is distinct from Support28 adoption, implementation, device reading experience and sustained four-line operation."
     },
     "continuity_and_burden_reduction": {
       "status": "unobserved",
@@ -161,6 +247,15 @@
         "kind": "ui_route_interruption",
         "meaning": "No30 creation or sending attempted before the browser route became unavailable.",
         "boundary": "Observed technical timeouts, not an observed automatic-approval rejection, absence of Human consent, or site authentication failure."
+      },
+      {
+        "recorded_at": "2026-10-26T04:18:53.442Z",
+        "actor": "Ark27:11 AI",
+        "kind": "authorized_resume_and_receiver_verification",
+        "previous_receipt_commit": "1f402239b22b774026480a8667770feee8c6300f",
+        "thread_url": "https://chatgpt.com/g/g-p-6aded23b1a3c819188e98f3029d8faeb-ark30-ji-sok-xie-dong-rain4/c/6aded2b6-7738-83ec-9348-073b8782c4e3",
+        "meaning": "Created the matching Ark30 Project only after current absence check, saved/reopened exact chapter instructions, created one persistent01, sent one compiled AI relay, set exact Title, and observed receiver's final evidence-backed reconstruction and assigned conversation-only comparison.",
+        "boundary": "UI settings/delivery and visible receiver proof are separate observations. No private conversation body or memory exported; no claim of unseen reasoning, Human-device access, four uninterrupted actors or long-term benefit."
       }
     ],
     "boundaries": [
@@ -184,7 +279,9 @@
         "Already created matching Project",
         "Any sent startup message found during recovery"
       ],
-      "remaining_boundary": "Do not use another route to evade an approval/access refusal; no such refusal was observed in this interruption."
+      "remaining_boundary": "Do not use another route to evade an approval/access refusal; no such refusal was observed in this interruption.",
+      "current_status": "Recovered; resume completed through observed receiver reconstruction and initial conversation-only work.",
+      "resume_policy": "Reuse the recorded matching Project/Thread and completed setup. Consult actual latest inputs/results before any future retry; do not resend startup or replay completed Boot without a material reason."
     }
   },
   "deferred": [
