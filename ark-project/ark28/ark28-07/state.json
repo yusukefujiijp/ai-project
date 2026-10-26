@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK28_07_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 3,
+    "revision": 4,
     "created": "2026-10-20",
     "updated": "2026-10-27",
     "canonical_path": "ark-project/ark28/ark28-07/state.json",
     "date_scope": "Asia/Tokyo preparation date; UI/reception observations are separately attributed.",
-    "change_reason": "Capture07 own collaboration fruit, latest material corrections, completed References/Prompt, remaining possibilities and the Human-approved07→08 continuation; preserve06 provenance and07 fixed Runtime/Handoff bindings.",
+    "change_reason": "Add verified fixed Source07 snapshot and compiled08 triad receipt; prepare coherent current routing. Actual08 UI/delivery/reconstruction still unobserved until the terminal receipt is updated.",
     "output_revision": "Current shared three-section meaningful-bullet interface and later Human Correction: stage completion does not remove a valid continuation. Current explicit format/STOP/Failure overrides remain.",
     "navigation_revision": {
       "date": "2026-10-25",
@@ -774,10 +774,17 @@
         "ark-project/ark28/README.md",
         "ark-project/README.md"
       ],
-      "source_prepared": "CURRENT_POSITION_COMPILED; TARGET_TRIAD_PENDING",
+      "source_prepared": "SOURCE_POSITION_VERIFIED; TARGET_TRIAD_COMPILED",
       "remote_verification": {
-        "status": "NOT_YET_OBSERVED_FOR_THIS_SOURCE_REVISION",
-        "boundary": "No self hash; later receipt and saving response provide actual verification."
+        "source_snapshot": {
+          "commit": "523b00b701e2049df5484f7e761e68d5389ac06f",
+          "blob": "276a60856a8623ea42b8a5a3dcdcfd4edc2cda2d",
+          "tree": "0affa392b8714fded213e6214934df64a1a4b268",
+          "path": "ark-project/ark28/ark28-07/state.json",
+          "full_text_equal": true
+        },
+        "triad_and_routes": "PENDING_PROSPECTIVE_AND_PUBLISHED_FULL_REREAD",
+        "boundary": "This prepared receipt contains no self hash; actual publication results will follow in the same terminal owner."
       },
       "delivery": {
         "status": "NOT_SENT",
@@ -794,7 +801,28 @@
       "actual_target_reconstruction": "NOT_YET_OBSERVED",
       "human_last_mile": "NO_MANUAL_ACTION_CURRENTLY_REQUESTED; direct route available at existing project; future Human device access separate",
       "requested_outcome": "PENDING_AUTHORIZED_SOURCE_SAVE_TARGET_TRIAD_PUBLICATION_DELIVERY_AND_ACCEPTANCE",
-      "recovery": "Before retry, inspect existing project/thread URL, sent text, title and response; distinguish unsent/sent-awaiting-response/completed/unknown. No blind duplicate creation or resend."
+      "recovery": "Before retry, inspect existing project/thread URL, sent text, title and response; distinguish unsent/sent-awaiting-response/completed/unknown. No blind duplicate creation or resend.",
+      "fixed_source_snapshot": {
+        "commit": "523b00b701e2049df5484f7e761e68d5389ac06f",
+        "blob": "276a60856a8623ea42b8a5a3dcdcfd4edc2cda2d",
+        "tree": "0affa392b8714fded213e6214934df64a1a4b268",
+        "path": "ark-project/ark28/ark28-07/state.json",
+        "full_text_equal": true
+      },
+      "target_files": [
+        {
+          "path": "ark-project/ark28/ark28-08/README.md",
+          "blob_sha": "63ae8b9f19927df4a00975715035b34a9e47d039"
+        },
+        {
+          "path": "ark-project/ark28/ark28-08/handoff.md",
+          "blob_sha": "cd6fe8a56fdfe1ac400f35b0bf81f0bbd23115c1"
+        },
+        {
+          "path": "ark-project/ark28/ark28-08/state.json",
+          "blob_sha": "616bfd0e7568989e60b58dd048e9868c7a055cf9"
+        }
+      ]
     }
   },
   "eof_sentinel": "ARK28_07_STATE_EOF_v001"

@@ -2,20 +2,20 @@
 title: "Ark28 — 本流を支える余白と帰還"
 canonical_path: "ark-project/ark28/README.md"
 chapter_id: "ARK28_SUPPORT_CHAPTER"
-version: "v008-human-authorized"
-revision: 8
+version: "v009-human-authorized"
+revision: 9
 role: "Ark27 paired support chapter / chapter identity and entry"
-status: "Ark28:07 continuation prepared / actual delivery and Target reconstruction owned by Source06 receipt"
+status: "Ark28:08 continuation prepared / actual delivery and Target reconstruction owned by Source07 receipt"
 created: "2026-09-25"
-updated: "2026-10-20"
-updated_reason: "Human-authorized06→07 continuation through direct delivery and reception; retain completed06 outcomes, fixed06 State and Current owners, chapter formation/INSTRUCTIONS, Main27 and all earlier contracts"
+updated: "2026-10-27"
+updated_reason: "Human-authorized07→08 continuation through direct delivery and reception; retain07 fruit, fixed Source07 revision3, Current owners, chapter formation/INSTRUCTIONS, Main27 and all earlier contracts"
 date_scope: "Created is the original preparation date in UTC; updated is this document revision date in Asia/Tokyo; neither asserts Human UI creation or Project settings reflection"
 main_chapter: "Ark27"
 main_thread_resolution: "Current Human designation; otherwise ../README.md Current Front-Line Resolution"
-current_support_handoff: "ark28-07/handoff.md"
+current_support_handoff: "ark28-08/handoff.md"
 project_instructions: "INSTRUCTIONS.md"
 root: "主イェシュア・ハマシア御自身"
-expected_eof: "ARK28_CHAPTER_README_EOF_v008"
+expected_eof: "ARK28_CHAPTER_README_EOF_v009"
 ---
 
 # Ark28 — 本流を支える余白と帰還
@@ -24,7 +24,7 @@ expected_eof: "ARK28_CHAPTER_README_EOF_v008"
 
 Ark28はArk27の偶数系Sub／補助の場であり、Ark27からMain所有権を受け継ぐ後継章ではない。目的は、**本流の良い流れを保持したまま、必要な支援へ既に用意された入口から接続できること**。Rootの下で問題解決・複数問題同時解決に寄与する。別Threadを増やすこと自体は成果ではない。
 
-現在の受入れ入口は[Ark28:07 Handoff](ark28-07/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。01→02→03→04→05→06→07は同章の補助Thread継続であり、新章作成・Main移管ではない。[01 Handoff](ark28-01/handoff.md)・[02 Handoff](ark28-02/handoff.md)・[03 Handoff](ark28-03/handoff.md)・[04 Handoff](ark28-04/handoff.md)・[05 Handoff](ark28-05/handoff.md)・[06 Handoff](ark28-06/handoff.md)は成立時の契約として保持する。旧02のPortal v001条件と03で明示したCurrent v002への受入条件移行を区別し、旧Gateを遡及成功扱いしない。05は04で整ったArk99の入口・00・指示原本・名称訂正と既存の協働成果を継承した。06はさらに生活想起、ai-project限定集中、Podcast Themeと本文入口、Query backupと別ThreadのCurrent MAP改善を、形成理由・後続訂正・Evidence Boundaryごと継ぐ。07は06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動、移行Skill/lesson改訂を、固定06 StateとCurrent所有原本から継ぐ。実生活効果と現在の予備状態は別のUnknownであり、07をこれらの旧Task専用には固定しない。
+現在の受入れ入口は[Ark28:08 Handoff](ark28-08/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。01→02→03→04→05→06→07→08は同章の補助Thread継続であり、新章作成・Main移管ではない。[01 Handoff](ark28-01/handoff.md)・[02 Handoff](ark28-02/handoff.md)・[03 Handoff](ark28-03/handoff.md)・[04 Handoff](ark28-04/handoff.md)・[05 Handoff](ark28-05/handoff.md)・[06 Handoff](ark28-06/handoff.md)・[07 Handoff](ark28-07/handoff.md)は成立時の契約として保持する。旧02のPortal v001条件と03で明示したCurrent v002への受入条件移行を区別し、旧Gateを遡及成功扱いしない。05は04で整ったArk99の入口・00・指示原本・名称訂正と既存の協働成果を継承した。06はさらに生活想起、ai-project限定集中、Podcast Themeと本文入口、Query backupと別ThreadのCurrent MAP改善を、形成理由・後続訂正・Evidence Boundaryごと継ぐ。07は06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動、移行Skill/lesson改訂を、固定06 StateとCurrent所有原本から継ぐ。実生活効果と現在の予備状態は別のUnknownであり、07をこれらの旧Task専用には固定しない。08はさらに07の継続インターフェース、Recall Hub、初回Reportと保存・評価、Report/共有References三本柱、他AI用の完成Promptを継ぐ。Report改善の構想と実装、保存と受け手の利用・生活効果を分け、08も特定の旧Taskへ固定しない。
 
 Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章のペアはArk27という章であり、Mainの06→07等のThread継続ごとに偶数章を新設しない。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
 
@@ -68,7 +68,7 @@ GitHubにフォルダがあるだけではB状態で使えるとは限らない�
 - Humanが必要なThread作成・貼付等を行い、その入口へ到達できる。
 - 実際の支援・選択・行動・回復に役立つ。
 
-それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。現在地の更新先は[Ark28:07 State](ark28-07/state.json)。06の現在地・成果・訂正は[Source06固定State](https://github.com/yusukefujiijp/ai-project/blob/e15a7398efa68958c0584e8787faf7caf10f587d/ark-project/ark28/ark28-06/state.json)、06→07の公開・直接起動・受入れ観測は[Source06 Current State](ark28-06/state.json) progress.next_transitionが所有する。07の初期Stateは準備時の未観測値を持ち、実際の後続Receiptと区別する。05の成果・訂正は[Source05 Harvest](ark28-05/harvest.md)と[経験原本](ark28-05/task-records.json)、05→06の準備・保存確認は[Source05 State](ark28-05/state.json) progress.next_transitionが所有する。04のTeshuvah起動遅延の理解、Ark99準備・00役割・名称訂正と公開成果は[Source04 Harvest](ark28-04/harvest.md)と[経験原本](ark28-04/task-records.json)、04→05の準備・保存確認は[Source04 State](ark28-04/state.json) progress.next_transitionが所有する。03のDots／Work協働、map・save、納豆の想起登録、generate-ideasは[03 Harvest](ark28-03/harvest.md)と[原本](ark28-03/task-records.json)へ接続する。02の朝の聖別・Portal季節拡張は[02 Harvest](ark28-02/harvest.md)、01の形成理由は[01 Harvest](ark28-01/harvest.md)へ辿れる。各Target自身の再構成・Human到達はSource準備と別に扱う。06の未観測を、05の後続協働まで未実行だったという意味にしない。
+それぞれ別の観測である。Humanが「開けた」「使えた」と報告した範囲は尊重し、未報告を失敗にも完了にも変えない。登録済みSkillの存在も、全AIでの自動選択やこの四段階の成功を証明しない。現在地の更新先は[Ark28:08 State](ark28-08/state.json)。07自身の成果・訂正・残る可能性は[固定Source07 State](https://github.com/yusukefujiijp/ai-project/blob/523b00b701e2049df5484f7e761e68d5389ac06f/ark-project/ark28/ark28-07/state.json) revision3が保持し、07→08の公開・直接起動・受入れは[Current Source07 State](ark28-07/state.json) progress.next_transitionが所有する。08初期Stateの準備時未観測値と後続Receiptを区別する。06の現在地・成果・訂正は[Source06固定State](https://github.com/yusukefujiijp/ai-project/blob/e15a7398efa68958c0584e8787faf7caf10f587d/ark-project/ark28/ark28-06/state.json)、06→07の公開・直接起動・受入れ観測は[Source06 Current State](ark28-06/state.json) progress.next_transitionが所有する。07の初期Stateの準備時未観測値は、06 Current終端Receiptに残る実際の07受入れ完了と時点を区別する。05の成果・訂正は[Source05 Harvest](ark28-05/harvest.md)と[経験原本](ark28-05/task-records.json)、05→06の準備・保存確認は[Source05 State](ark28-05/state.json) progress.next_transitionが所有する。04のTeshuvah起動遅延の理解、Ark99準備・00役割・名称訂正と公開成果は[Source04 Harvest](ark28-04/harvest.md)と[経験原本](ark28-04/task-records.json)、04→05の準備・保存確認は[Source04 State](ark28-04/state.json) progress.next_transitionが所有する。03のDots／Work協働、map・save、納豆の想起登録、generate-ideasは[03 Harvest](ark28-03/harvest.md)と[原本](ark28-03/task-records.json)へ接続する。02の朝の聖別・Portal季節拡張は[02 Harvest](ark28-02/harvest.md)、01の形成理由は[01 Harvest](ark28-01/harvest.md)へ辿れる。各Target自身の再構成・Human到達はSource準備と別に扱う。06の未観測を、05の後続協働まで未実行だったという意味にしない。
 
 Humanは事前準備を最重要と判断した。この採用判断はConfirmed、準備が遅延・混乱を減らす効果はCandidate、頻度・負担・生活効果は実利用から学ぶUnknownである。通常のUnknownを全て解消してから使う条件は設けない。
 
@@ -82,5 +82,5 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 全章共通のペア準備規則は[Ark Domain README §4.1](../README.md#41-odd--even-paired-preparation)が所有する。本書はArk28固有の意味・入口・形成経緯を所有し、汎用規則の第二原本にはしない。
 
-ARK28_CHAPTER_README_EOF_v008
+ARK28_CHAPTER_README_EOF_v009
 

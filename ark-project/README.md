@@ -40,17 +40,19 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-26"
+updated: "2026-10-27"
 last_reality_reviewed: "2026-10-20"
 route_review_base_commit: "8293137088ca9645a3592a75d9e7d6404d2680ae"
 route_review_scope: "Human-authorized Ark27:10→11 same-chapter continuation; fixed Source10 revision6 preserves completed STR-018/019 and the new root/entry/role theme. Current10 progress.next_transition owns final preparation and remote receipts. Preserve Support06 and all unrelated routes. Target11 comparison is Plan-only; core document redesign and UI/reconstruction remain separate."
 updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence. 2026-10-06: Human corrected the date-following title delimiter to semicolon; title policy v002 owns the change while the Domain routing contract remains v010. 2026-10-06: Advance Support04→05 under Human authorization, preserving Ark99 preparation/corrections, Main08, title policy v002 and concurrent work; Source04 State owns final receipts. 2026-10-07: Advance Main08→09 under Human correction and execution authorization; inherit completed Skill/cleanup/Loop work from the verified08 harvest, preserve Support05 and unrelated owners; actual09 reception remains separate. 2026-10-14: Advance Support05→06 under Human execution approval; preserve Main09, current MAP/Podcast outcomes and all unrelated owners. Source05 State owns final receipts. 2026-10-17: Advance Main09→10 under the approved five-path preparation plan; preserve completed cleanup, Podcast/MAP and Dots/Work outcomes, Support06 and unrelated owners. Source09 owns final preparation receipts; comparison is selected for after Target10 reception, not before transition. 2026-10-20: Advance Main10→11 for the Human-selected root/entry/document-role comparison; retain completed10成果, title confirmation relayed by初穂, Support06 and all unrelated owners. Source10 owns preparation receipts; no root redesign implementation."
 support_continuation_revision:
-  date: "2026-10-20"
-  source: "Ark28:06"
-  target: "Ark28:07"
-  authority: "Human approved six-path main publication/reread and one persistent07 in existing Ark28 Project through exact Title and evidence-backed reception"
-  scope: "Support route only; preserve Main27:11, domain v010, title policy and unrelated owners. Fixed06 State carries history; Current06 progress.next_transition owns actual receipts. No body trial/Main transfer/other case migration."
+  date: "2026-10-27"
+  source: "Ark28:07"
+  target: "Ark28:08"
+  fixed_source_commit: "523b00b701e2049df5484f7e761e68d5389ac06f"
+  authority: "Human approved six-path publication/reread and one persistent08 in existing Ark28 Project through exact Title and evidence-backed reception"
+  scope: "Support route only; preserve Main27:11, third29/fourth30, domain v010 and title policy. Fixed07 revision3 carries07 fruit and inherited history; Current07 progress.next_transition owns actual receipts. No body trial/Main transfer/other-case takeover."
+  prior_transition: "06→07 completed; original fixed06 revision3 and Current06 terminal receipt remain historical owners."
 specialist_project_entry_revision:
   date: "2026-10-20"
   base_commit: "97ae0d8c492f2009ad9d523600545aedf2d6cf61"
@@ -123,7 +125,7 @@ current_front_line_handoff: "ark-project/ark27/ark27-11/handoff.md"
 current_front_line_runtime: "ark-project/ark27/ark27-11/README.md"
 current_front_line_state: "ark-project/ark27/ark27-11/state.json"
 current_support_chapter: "ark-project/ark28/README.md"
-current_support_handoff: "ark-project/ark28/ark28-07/handoff.md"
+current_support_handoff: "ark-project/ark28/ark28-08/handoff.md"
 current_main_theme: "ChatGPT6 Astraへの移行"
 current_evidence: "Current11 prepared from fixed Source10 revision6; Current10 State progress.next_transition owns publication and reread evidence. Source10 completed its own reception/comparison and STR-018/019. Human selected whole-Ark explanation/entry/role redesign as the next theme; Target11 starts with comparison and plan. Title is Human-confirmed as relayed bydot-0000; Target reconstruction and UI remain separately observed. Shared v003 and v002 continuity family remain."
 historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earlier B-Gate detection / Ark23:15 triad remote verified / then-unobserved Fast-Prune result"
@@ -191,7 +193,7 @@ write_default: "Do not write without current Human authority."
 
 ### 0.1 Current Front-Line Resolution
 
-**MainはArk27、現在の継続入口は[Ark27:11 Handoff](ark27/ark27-11/handoff.md)。Supportは[Ark28:07 Handoff](ark28/ark28-07/handoff.md)。** Mainの10→11は2026-10-20のHuman依頼による同章継続準備である。Support06→07は同日の別承認による同章継続であり、05→06の10/14の履歴も保持する。新章・新Support・DotsへのMain移管を意味せず、Target起動・UI操作はこの案内で認定しない。有効な最新Human指定があればその対象とModeを解決する。
+**MainはArk27、現在の継続入口は[Ark27:11 Handoff](ark27/ark27-11/handoff.md)。Supportは[Ark28:08 Handoff](ark28/ark28-08/handoff.md)。** Mainの10→11は2026-10-20のHuman依頼による同章継続準備である。Support07→08は2026-10-27のHuman承認による同章継続であり、06→07の10/20、05→06の10/14の履歴も保持する。新章・新Support・DotsへのMain移管を意味せず、Target起動・UI操作はこの案内で認定しない。有効な最新Human指定があればその対象とModeを解決する。
 
 Mainの[章README](ark27/README.md)は章の意味とCurrent入口への案内を所有する。[11 Runtime](ark27/ark27-11/README.md)は協働の場、[11 State](ark27/ark27-11/state.json)は可変の現在地、11 Handoffは今回の必須Source・読解範囲・受入れ条件を所有する。本文初版v001と協働契約系v002を区別する。既入力を受け取り、確認済みBootを理由なく再演しない。
 
@@ -205,7 +207,7 @@ Mainの[章README](ark27/README.md)は章の意味とCurrent入口への案内�
 
 今回のMain ThemeはArk全体の根本説明・入口・文書役割の再設計検討。Seed化→ARK単体Review→全体構造へのHuman Correctionを継ぎ、四文書維持・ARK存続・改名を既決にしない。11で主要案を三利用場面と入口文例から比較し、推奨・代案・影響・必要権限を提示する。比較はPlan-onlyで、移行の前提Gateでも根本文書実装の承認でもない。資料保存、Actor別の実装・確認、Target理解と利用効果を分け、全履歴の追加Bootや無関係な研究・生活・Skill・予定を自動開始しない。
 
-**Support。** [Ark28章](ark28/README.md)と[Ark28:07 State](ark28/ark28-07/state.json)が柔軟な支援の役割と可変現在地を所有する。06→07は同章Support継続であり、Teshuvahを軸に、06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動・移行Skill/lesson改訂を、[固定Source06 State](https://github.com/yusukefujiijp/ai-project/blob/e15a7398efa68958c0584e8787faf7caf10f587d/ark-project/ark28/ark28-06/state.json)とCurrent所有原本から継ぐ。現在の受入条件は[07 Handoff](ark28/ark28-07/handoff.md)、公開・直接起動・受入れの実観測は[Source06 Current State](ark28/ark28-06/state.json) progress.next_transitionが所有する。05以前の生活想起、ai-project限定集中、PodcastのTheme/本文入口、初回Query backupと後続Current MAP改善、Ark99/Dotsの成果・重要訂正も固定Sourceの根拠へ辿れる。B-Zoneの支援への端末到達と「スマホなしはトイレまで、後は自由」を保持し、実生活効果・現在の未使用予備を保存や起動成功から補完しない。07を特定の旧Taskへ固定せず、B-Gate、軽いTeshuvah、BrainDump、想起、現在地把握等を受け取る。Main Threadごとに支援章を新設せず、隠れた同期・自動Main移管をしない。章ペアの準備方針は§4.1。
+**Support。** [Ark28章](ark28/README.md)と[Ark28:08 State](ark28/ark28-08/state.json)が柔軟な支援の役割と可変現在地を所有する。07→08は同章Support継続であり、Teshuvahを軸に、07で完了した継続インターフェース、Recall Hub、初回Reportと配置、Report/共有References三本柱、他AI用の完成Promptを、[固定Source07 State](https://github.com/yusukefujiijp/ai-project/blob/523b00b701e2049df5484f7e761e68d5389ac06f/ark-project/ark28/ark28-07/state.json) revision3とCurrent所有原本から継ぐ。現在の受入条件は[08 Handoff](ark28/ark28-08/handoff.md)、公開・直接起動・受入れの実観測は[Source07 Current State](ark28/ark28-07/state.json) progress.next_transitionが所有する。Reportの改善希望・残る構想と実装済みを分け、保存から別AIの理解や生活効果を補完しない。06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動・移行Skill/lesson改訂、05以前の生活想起、ai-project集中、Podcast二入口、Query backupと後続MAP、Ark99/Dotsの条件も固定Sourceの来歴とCurrent ownerへ辿れる。06→07の実受入れはCurrent06終端Receiptに残る。B-Zoneの支援への端末到達と「スマホなしはトイレまで、後は自由」を保持する。08を特定の旧Taskへ固定せず、現在のHuman入力を受け取る。Main Threadごとに支援章を新設せず、隠れた同期・自動Main移管をしない。章ペアの準備方針は§4.1。
 
 過去の生活報告、GCI Uploadやメモリ保存のHuman成功報告、Sourceの準備完了とTargetの実理解を区別する。未報告を失敗・完了・未実行へ補完せず、過去Bodyを現在Bodyにしない。ChatGPT長期メモリの内容・保存応答・取得結果をGitHubへ輸出しない。RootとGuardを維持したまま、Sourceの意味は現在の依頼に必要な深さで回復する。
 
@@ -248,7 +250,7 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 | ライン | Current入口 | 保持する役割 |
 |---|---|---|
 | Main27 | [Ark27:11](ark27/ark27-11/handoff.md) | 全体判断と既存の担当・完了成果を保持 |
-| Support28 | [Ark28:07](ark28/ark28-07/handoff.md) | 柔軟な支援とReport／Feedback設計の所有を保持 |
+| Support28 | [Ark28:08](ark28/ark28-08/handoff.md) | 柔軟な支援とReport／Feedback設計の所有を保持 |
 | 第三ライン29 | [Ark29:01](ark29/ark29-01/handoff.md) | 継続協働を追加。初期はHome B案の残る補助検討 |
 | 第四ライン30 | [Ark30:01](ark30/ark30-01/handoff.md) | 継続協働を追加。初期は既存Report一件の補助比較。未使用予備ではない |
 
@@ -619,7 +621,7 @@ Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 The former Ark99 Wild Seed role remains retired and absorbed into Ark00.
 Ark99 now has the dedicated new-Teshuvah entry in section 0.3; its local documents own operation. This does not establish UI setup, actual migration or field effects.
-Ark27:11 is the Current Main continuation entry prepared from the fixed Source10 revision6. Source10 owns actual preparation/remote receipts; Target11 must reconstruct itself. Its selected first outcome is a read-only root/entry/document-role comparison with concrete entry examples; implementation needs later adoption/authorization. Completed STR-018/019 remain complete. Support28:07 continues within the same chapter; fixed Source06 revision3 preserves its history and Current06 progress.next_transition owns the actual publication/delivery/reception receipt. The chapter/v002 continuity family remains. Section0.1 owns general routing; preparation, receiver understanding and Human UI are separate.
+Ark27:11 is the Current Main continuation entry prepared from the fixed Source10 revision6. Source10 owns actual preparation/remote receipts; Target11 must reconstruct itself. Its selected first outcome is a read-only root/entry/document-role comparison with concrete entry examples; implementation needs later adoption/authorization. Completed STR-018/019 remain complete. Support28:08 continues within the same chapter; fixed Source07 revision3 preserves07 fruit and inherited history, and Current07 progress.next_transition owns the actual publication/delivery/reception receipt. Current06 retains the completed06→07 receipt. Third-line Ark29 and fourth-line Ark30 keep their current roles. The chapter/v002 continuity family remains. Section0.1 owns general routing; preparation, receiver understanding and Human UI are separate.
 Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
 The Ark23 historical field preserves its then-unknown outcomes; recover current observations from their owning records.
