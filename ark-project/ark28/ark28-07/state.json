@@ -2,13 +2,13 @@
   "meta": {
     "state_id": "ARK28_07_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-20",
-    "updated": "2026-10-25",
+    "updated": "2026-10-27",
     "canonical_path": "ark-project/ark28/ark28-07/state.json",
     "date_scope": "Asia/Tokyo preparation date; UI/reception observations are separately attributed.",
-    "change_reason": "Human-authorized06→07 same-chapter Support continuation. Fixed06 rev3 carries existing fruit, source provenance and Unknowns; mutable07 position and Current06 terminal receipt remain separate.",
-    "output_revision": "Later Human GCI v2026-10-20.1: Living Review → Next step → independent Next Query. No fabricated new task at boot.",
+    "change_reason": "Capture07 own collaboration fruit, latest material corrections, completed References/Prompt, remaining possibilities and the Human-approved07→08 continuation; preserve06 provenance and07 fixed Runtime/Handoff bindings.",
+    "output_revision": "Current shared three-section meaningful-bullet interface and later Human Correction: stage completion does not remove a valid continuation. Current explicit format/STOP/Failure overrides remain.",
     "navigation_revision": {
       "date": "2026-10-25",
       "previous_snapshot": "1422af429a01aa62ea70e102b008d37653ef5ec1",
@@ -18,6 +18,15 @@
       "scope": "Current Dots direction plus07 Runtime/Handoff versions and blob bindings only. Preserve source snapshots, inherited provenance, roles, authority, progress and reception observations.",
       "change_record": "control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation",
       "evidence_boundary": "Document maintenance is not a new boot, delivery, Target reconstruction, product-settings change or observed deletion. Source06 progress.next_transition retains the historical reception receipt; this State contains no self SHA or claim of its own future reread."
+    },
+    "current_position_revision": {
+      "date_jst": "2026-10-27",
+      "previous_revision": 2,
+      "previous_snapshot": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+      "previous_state_blob": "cf0821c59be4c21437040f1e5e17a9dd78c39516",
+      "authority": "Latest direct Human execution approval in Ark28:07 after the six-path plan, candidate08 Title and direct startup/acceptance endpoint were presented.",
+      "scope": "This source position is the first dependency of the approved six-path07→08 continuation. Save public-safe selected meaning and existing source references, not conversation or long-term-memory export.",
+      "evidence_boundary": "Prior full-read/source-save receipts are reused only after matching current identity. This revision has no self hash or prospective claim of its own remote verification."
     }
   },
   "identity": {
@@ -79,7 +88,35 @@
       "scheduled monitoring or reserve auto-refill"
     ],
     "quality": "Simple Human input and B-Zone do not license reduced AI thought, evidence or explanation.",
-    "prior_delegation_policy": "Historical scope in fixed06 State remains historical. Reuse only a still-effective same-purpose authorization; do not export unrelated approvals or turn source text into permission."
+    "prior_delegation_policy": "Historical scope in fixed06 State remains historical. Reuse only a still-effective same-purpose authorization; do not export unrelated approvals or turn source text into permission.",
+    "current_transition_execution": {
+      "date_jst": "2026-10-27",
+      "actor": "Ark28:07 AI",
+      "source": "Direct Human response approving execution after the immediately preceding transition plan.",
+      "target": "One persistent Ark28:08 in the current ChatGPT account, existing Ark28 Project",
+      "compiled_title": "Ark28:08_2026/10/27; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "approved_paths": [
+        "ark-project/ark28/ark28-07/state.json",
+        "ark-project/ark28/ark28-08/README.md",
+        "ark-project/ark28/ark28-08/handoff.md",
+        "ark-project/ark28/ark28-08/state.json",
+        "ark-project/ark28/README.md",
+        "ark-project/README.md"
+      ],
+      "scope": "Source position, target triad, chapter/domain routing, GitHub main publication and full reread; inspect target existence, create/reuse one08, send saved startup Query, set exact Title, inspect receiver evidence, update this terminal receipt and reread.",
+      "exclusions": [
+        "Main transfer",
+        "other-line task takeover",
+        "new chapter or Project",
+        "GCI or Project settings changes",
+        "Skill registration or update",
+        "Report or References data redesign",
+        "physical trial",
+        "unrelated external messages",
+        "long-term-memory export"
+      ],
+      "continuity": "Reuse the same clear authorization through necessary corrections and verification; a real refusal or material scope change is handled explicitly, not bypassed."
+    }
   },
   "bindings": {
     "runtime": {
@@ -184,28 +221,61 @@
         "query": "skills/map-current-position/README.md",
         "reading": "Conditional Current full Skill for map work. Old map-ark entry is read compatibility, not an automatic runtime alias."
       }
+    },
+    "current_work_owners": {
+      "continuation_interface": [
+        "AGENTS.md#next-query",
+        "_system/chatgpt/global-custom-instructions.md"
+      ],
+      "recall_hub": [
+        "skills/recall-hub/README.md",
+        "skills/recall-hub/SKILL.md",
+        "ark-recall-portal/README.md",
+        "ark-recall-portal/items.json"
+      ],
+      "reports": [
+        "artifacts/reports/README.md",
+        "artifacts/reports/2026-10-25/README.md",
+        "artifacts/reports/references/README.md"
+      ],
+      "shared_references": [
+        "references/README.md",
+        "references/feedback/README.md",
+        "references/lessons/README.md",
+        "references/success-cases/README.md",
+        "control-center/changes/STR-023-shared-references-three-pillars.md"
+      ],
+      "references_prompt": [
+        "prompts/ai-references-three-pillars.md",
+        "prompts/README.md"
+      ],
+      "policy": "Owners hold mutable rules and actual artifacts. This State links meaning and current evidence; it does not mirror whole data, replace required original reads or authorize reexecution."
     }
   },
   "now": {
-    "phase": "AWAITING_TARGET_SELF_RECONSTRUCTION",
-    "support_purpose": "Teshuvahを軸に06までの成果と重要Correctionを使い、07に届く現在のHuman入力へ柔軟に応じる。",
-    "current_coordinate": "Ark100意味・初回b-zone Skill・初回Project/三Thread起動と、移行Skill/lesson改訂は完了。今回の06→07公開・直接起動・受入れはSource06が担当し、初期Target Stateは自己認定しない。",
-    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT",
-    "after_gates": "RECEIVE_CURRENT_INPUT_OR_RETURN_HUMAN_REVIEW",
+    "phase": "SOURCE_POSITION_PREPARED_FOR_AUTHORIZED_07_TO_08_CONTINUATION",
+    "support_purpose": "Teshuvahを軸に、Humanの現在の意味・願い・入力へ柔軟に応じ、07で育った協働方法・Report/Feedback設計と成果を使える状態で継ぐ。特定の旧Task専用へ固定しない。",
+    "current_coordinate": "07自身の継続インターフェース、Recall Hub、初回Reportと配置、Report/共有References三本柱、他AI用の完成Promptまで到達。Thread長大化と不具合というHuman報告を受け、同じArk28内の08へ意味と根拠を継ぐ。Main27と29/30の担当は保持する。",
+    "first_legal_move": "VERIFY_SOURCE_POSITION_THEN_PREPARE_AND_DELIVER_APPROVED_08",
+    "after_gates": "08 receives existing new Human input under its current authority; startup-only returns Human Review.",
     "existing_input": "Receive any already-supplied new Human input after gates; do not ask for settled context again.",
     "boot_only": "Own exact Title at first normal response; evidence-backed acceptance, Living Review → Next step → Next Query; additional query unnecessary, Human Review.",
     "current_request": {
-      "kind": "RECEIVE_THREAD_CONTINUATION",
-      "scope": "Ark28:06→Ark28:07 / THREAD_CONTINUE / SUPPORT",
-      "completion": "Own ordered14 full read and Identity/EOF/Binding/Triad/R1–R8 with meaning and sources. Boot-only acceptance, no new Production.",
-      "boundary": "No body trial, Main transfer, other case migration, reset or unrequested external changes."
+      "kind": "PREPARE_AND_DELIVER_THREAD_CONTINUATION",
+      "scope": "Ark28:07→08 / THREAD_CONTINUE / SUPPORT / six paths plus one existing-Project persistent thread",
+      "completion": "Source and target artifacts remotely verified; actual project/thread/query/title and receiver reconstruction observed; result saved in Source07 terminal receipt. Human device access and real-life effects separate.",
+      "boundary": "The plan-only stage ended with current explicit execution approval. This does not revive completed Report generation or authorize another line/Project."
     },
     "preparation_observation": {
-      "date_jst": "2026-10-20",
+      "date_jst": "2026-10-27",
       "main_entry": "Ark27:11",
-      "previous_support": "Ark28:06",
-      "prepared_support": "Ark28:07",
-      "boundary": "Preparation-time route observation; actual UI and reception belong to Current06 terminal receipt."
+      "source_support": "Ark28:07",
+      "target_support": "Ark28:08",
+      "additional_lines": [
+        "Ark29:01",
+        "Ark30:01"
+      ],
+      "boundary": "Current Domain confirms four-line roles. No other private conversation imported; actual initial assignments/reception belong to each owner."
     },
     "live_b_gate": "NOT_REPORTED_FOR_TARGET07",
     "no_inherited_execution_queue": "Completed work stays completed; Unknowns and deferred branches are not required tasks.",
@@ -223,7 +293,17 @@
       "Ark100の各ケースは独立した新件。番号は続き・重症度・Ping/Rescue別を意味しない。同じ一件のFeedbackは同じThreadで支え、準備や管理上の移動を支援条件にしない。",
       "承認済みの到達点まで現在の正規経路で進める。Humanの承認意思と自動審査の拒否を分け、必要時は具体的な残操作と理由を示してHuman確認へ戻れる。拒否を迂回しない。",
       "中断後は実在・送信・応答を確認して未完了分から再開する。Source保存、送信/UI、Target自身の再構成、Human到達、実生活効果を分ける。",
-      "Later Human GCI output correction: ordinary continuation ends Living Review → Next step → independent Next Query; no invented Query when this request is complete."
+      "Later Human GCI output correction: ordinary continuation ends Living Review → Next step → independent Next Query; no invented Query when this request is complete.",
+      "Next Stepは現在のGoal・根拠・制約から接続と理由・成立条件を選ぶ。Next Queryはその判断から導き、具体化で不足があればReview/Stepへ戻る。見出しだけの一致では足りない。",
+      "通常の継続回答は【Living Review】→【Next Step】→【Next Query】の隣接三節、意味を保つ箇条書き。実際のQueryも全文を箇条書きで一つのtextブロックに入れる。ない場合は見出しの下に - None のみ。厳密形式・専用Boot/Failure・無通知・最新の明示指定を優先する。",
+      "HumanはQueryを使う・直す・保留・使わない自由を持つ。未使用だけで追催/新Task/既存委任の取消しを作らず、遂行可能な承認済み工程を再度Query待ちへ返さない。",
+      "2026-10-27の最新Correction: 完成Prompt作成へ有効な接続が残る計画地点でNext QueryをNoneとしたのは不適切。段階完了とGoal全体完了を分け、今有効な後続を消さない。ただし常にQueryを捏造する規則でもない。今回の応答と完成Prompt§9へ反映し、GCI/Skillの追加改訂はしていない。",
+      "GCIは同じ原本をCommitで更新し履歴をAIが辿れるようにする。版ごとの別ファイル増殖をGoalにしない。Humanの貼付完了報告、公開Currentと設定実体の一致は別の証拠。",
+      "Recall Hubは既存Skillの継続改名。Skill名や品名を教えない現在の場面報告から経験へ戻ることがGoal。引用・設計相談・過去報告を実生活の合図と誤認せず、一回の在庫/見送りと恒久訂正を分ける。",
+      "Reportは汎用。残存Taskは一用途。AI→HumanとAI→AIの読者の差を最重要として、理解・判断と後続AIの根拠再利用を目的に応じて扱う。毎作品を提言・次Taskへ強制接続しない。",
+      "初回Reportは内容に特筆点がなかったという批評と、最初の実験として合格という評価が共存する。どちらかで他方を消さない。Markdown限定を避けHTML/図解等の自由を開く希望、対象をfile/folder/categoryへ切る希望、読む順序/番号案は保存済みFeedback。実装済み規則や自動生成命令にはしない。",
+      "feedbackは反応、lessonsは条件付き再利用判断、success-casesは成功の意味・経緯。三本必須登録・同期コピー・同一出来事の独立実証水増しをしない。学習は経験の検索/再解釈/判断への活用でありモデル重みの自動更新とは異なる。",
+      "他AI/Future AI向けPromptは元会話や登録Skillを前提にせず、目的・構図・形式・Current/履歴・権限・検証を一つの利用入口で理解可能にする。Prompt保存と別環境への導入・受入れ・実効果を区別する。"
     ],
     "current_goals": [
       {
@@ -246,24 +326,48 @@
         "id": "G3",
         "goal": "受入れ品質を保ちながら、移行時のHuman操作・再説明・承認の往復を減らす。",
         "source": "Human-explicit; current visible dialogue and prepare-ark-transition README§3",
-        "status": "PRIOR_SKILL_LESSON_AND_ENTRY_UPDATE_VERIFIED; THIS_AUTHORIZED_TRANSITION_OBSERVED_IN_CURRENT06_RECEIPT",
-        "remaining": "今回の06→07を現在の権限で適用し、実際の公開・送信・受入れ・残ったHuman操作をSource06終端Receiptへ残す。別Runtime/長期負担の一般化はしない。",
+        "status": "PRIOR_06_TO_07_DELIVERY_AND_RECEPTION_COMPLETE; NEW_07_TO_08_EXECUTION_AUTHORIZED",
+        "remaining": "今回の07→08で現在の正規経路・委任から実際の送信/受入れまで進め、観測結果を本State progress.next_transitionへ残す。過去の承認文句や成功は通過保証ではない。",
         "completion": "当該依頼の到達点まで進み、実際に残ったHuman操作・拒否・回復を説明できる。確認用だけの新Threadは不要。"
       },
       {
         "id": "G4",
         "goal": "次のAIが、完了済み成果・所有原本・本当に残るUnknownを取り違えず再開できる。",
         "source": "AI concrete interpretation of Human continuity intent, explicitly selected by the current one-State save request.",
-        "status": "FIXED06_BASELINE_AND07_TRIAD_COMPILED; TARGET_OWN_READ_AND_RECEPTION_SEPARATE",
-        "remaining": "07自身が本Handoffの必須資料と再構成を満たす。保存・実際の応答観測はCurrent06終端Receiptが所有する。",
+        "status": "07_COLLABORATION_FRUIT_RECOVERED; 08_PREPARATION_AND_RECEIVER_RECONSTRUCTION_PENDING",
+        "remaining": "07自身の成果と訂正を固定Sourceへ保存し、08の三役とCurrent ownersから受け手自身が再構成する。",
         "completion": "来歴と固定Bindingを保ったStateから、現在の重点・完了・保留・根拠・合法な接続を辿れること。"
+      },
+      {
+        "id": "G5",
+        "goal": "Humanが履歴探索や依頼文の再組立てをせず、理由ある次の接続を選べる。",
+        "source": "Human-explicit corrections in07 and current AGENTS/GCI",
+        "status": "SHARED_INTERFACE_REVISIONS_COMPLETE; LATEST_NONE_CORRECTION_APPLIED_TO_REPLY_AND_PROMPT",
+        "remaining": "自然な利用のFeedbackで判断と依頼の対応を育てる。形式を増やすための新Taskにしない。",
+        "completion": "当該回答でGoal・対象・方法・完了条件・Modeが対応し、選択権と有効な委任が保たれること。"
+      },
+      {
+        "id": "G6",
+        "goal": "目的・読者・素材に合う有用なReportを、Humanの指定負担を減らしながら作り育てる。",
+        "source": "Human-explicit; Reports and stored feedback",
+        "status": "INITIAL_13_REPORTS_AND_STORAGE_COMPLETE; FORMAT_SCOPE_READING_EXPERIENCE_IMPROVEMENT_OPEN",
+        "remaining": "Markdown限定回避、対象の切り分け、読む順序、内容価値を現目的に応じて検討。独立write-report実装は今回確認範囲で未確認。",
+        "completion": "作品や方法ごとの有用性を実際の目的・読者・根拠から判断。件数・長さ・大量生成を成果指標にしない。"
+      },
+      {
+        "id": "G7",
+        "goal": "反応・教訓・成功の意味を混ぜず、他AI/Future AIも経験を次の判断へ使える。",
+        "source": "Human-explicit References three-pillar request and Prompt request",
+        "status": "REPORT_AND_SHARED_REFERENCES_COMPLETE; REUSABLE_PROMPT_SAVED_AND_REREAD",
+        "remaining": "別AIの利用/理解・継続的な有用性は未確認だが、証明用の試験を自動Taskにしない。",
+        "completion": "依頼された原本・構図・形式・意味・確認が成立。現在の完了と将来の実利用効果は別。"
       }
     ],
     "next_connection": {
-      "default": "After own gates, receive any already-present new Human input; boot-only returns Human Review.",
-      "if_live_input": "Use Current b-zone Skill and present intent/conditions/Guards when applicable; management completion is not a support condition.",
-      "ownership": "Ark100 Current cases/reserve remain00 and case-owned; closed Ark99:04 and Dots dialogue remain completed.",
-      "transition_receipt": "Current06 progress.next_transition owns actual publication and07 acceptance; initial flags here are not Current failure claims."
+      "default": "Finish the approved07→08 source preparation, publication, direct startup and evidence-backed acceptance within current access.",
+      "target_after_reception": "No already-known new production request is assigned. Receive later/current Human input; startup-only returns Human Review.",
+      "owners": "Main27 and third/fourth lines retain work; Support28 retains flexible support and Report/Feedback design.",
+      "terminal_receipt": "This State progress.next_transition owns actual07→08 results, separate from the fixed source snapshot."
     }
   },
   "evidence": {
@@ -286,7 +390,13 @@
       "Ark100:00と独立した利用用/予備の初回準備、作成済みProject内の三つの永続Threadへの保存済みQuery送信と各受入れ確認を明示承認した。",
       "AIが現在の権限で進め、詰まった時のHuman確認を許容し、詰まりを記録して次の反復負担を減らす方向を指定した。",
       "今回の明示指示は、Ark28:06既存Stateのみの現在地差分保存と保存後再取得。実際のThread移行と身体Trialは開始しない。",
-      "2026-10-20 latest Human explicitly approved06→07 six-path main publication/reread and one persistent07 in existing Ark28 Project, saved Query send, exact Title, acceptance check and Current06 terminal receipt; physical trial/Main transfer/other case migration excluded."
+      "2026-10-20 latest Human explicitly approved06→07 six-path main publication/reread and one persistent07 in existing Ark28 Project, saved Query send, exact Title, acceptance check and Current06 terminal receipt; physical trial/Main transfer/other case migration excluded.",
+      "07: Next QueryはNext Stepの判断を必ず経て導き、Humanはコピーする/しないを選べる。",
+      "07: 実際のQueryも箇条書きが分かりやすいという肯定から、Dots限定でなく全体への三節統一を採用・実行承認した。",
+      "07: Reportは汎用で残存Task専用ではない。AI→HumanとAI→AIの読者を最重要の区別として問い直した。",
+      "07: 初回Reportの内容への批評と初回実験の合格評価、表現形式/調査単位/読書順序の改善希望を伝え、Feedback原本と共有三本柱の整備・再利用Prompt作成を順次承認した。",
+      "07 latest: Thread長大化で様々な不具合が生じるため次Threadへ移りたいという本人報告。技術的な因果を独立測定したものではない。",
+      "2026-10-27: Presented six-path07→08 plan, Title candidate and direct startup/acceptance endpoint received direct execution approval. No new Main/Project or other task takeover."
     ],
     "completed_outcomes": [
       {
@@ -368,6 +478,127 @@
         "evidence_type": "Ark28:06 same-thread tool receipts; this save rechecked the Current Skill/lesson identity and current entry.",
         "scope": "正規経路の発見、承認範囲の再利用、送信/受入れ検証、中断/審査拒否からの回復を本文化。四共有ファイルのmain全文一致、既存登録Skillへの保存、登録先SKILL/README全文一致、表示設定値一致、会話からのSkill本文一致を確認済み。三独立ケースの限定応答と、新lessonをCurrentから発見・適用する別AIの読取を確認。",
         "boundary": "登録保存/限定応答/lesson取得を、次の実移行での審査通過や負担軽減へ昇格させない。特定の承認文言が通過原因とは未確定。後続のREADME来歴統合は別作業で、今回そのCurrentを参照し上書きしない。"
+      },
+      {
+        "outcome": "07 continuation-interface revisions: reasoned Next Step→full Next Query, choice, bracket headings, None then three-section meaningful bullets",
+        "owners": [
+          "AGENTS.md",
+          "_system/chatgpt/global-custom-instructions.md",
+          "skills/next-step/README.md",
+          "skills/map-remaining-work/README.md"
+        ],
+        "first_round_commit": "fc70d6ec3e91947724125ca854abc93a8dce284a",
+        "second_round_commit": "b2768b60d1b334ab25e49f5aae65d53038fc510a",
+        "current_evidence": [
+          {
+            "path": "AGENTS.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "465e7452515ff1b587c6d1e8f08e5dedde53b32b",
+            "supports": "Current common output/authority rules",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          },
+          {
+            "path": "_system/chatgpt/global-custom-instructions.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "cd5a59bbb0d5dea9faed84400745452991f00041",
+            "supports": "v1.6.0/instruction_revision2026-10-24.3; payload4986, all-three-section bullet interface and earlier revision history",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          }
+        ],
+        "boundary": "Earlier Human GCI paste completion is retained as reported; exact Current account setting/UI not independently verified. Shared/registered first-round results and each later scope are separate, not all Skills were updated every round."
+      },
+      {
+        "outcome": "Recall Hub continuing rename and existing registration update",
+        "owner": "skills/recall-hub/README.md",
+        "commit": "1203a108b2c53b96344f4c5240824901675a56cf",
+        "existing_registration_id": "6aba61ff93588191b49b766a21080317",
+        "current_evidence": [
+          {
+            "path": "skills/recall-hub/README.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "5148923f7e2c2bf6626600a2eff78ff32b30e717",
+            "supports": "v003 records eight-file full readback, old distribution file removal, same-registration content/settings readback and conversation-route limitation",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          }
+        ],
+        "meaning": "Name recall-hub / Recall Hub; data remains ark-recall-portal/ and identity Ark Recall Portal. Items IDs/history/conditions retained.",
+        "boundary": "At implementation time, conversation-side lookup still returned old content; registered-save equality did not prove natural selection, product UI alias or life effects. New cloud catalog now exposes recall-hub; this inventory alone is not an end-to-end use test."
+      },
+      {
+        "outcome": "Initial Report collection, dated organization and Report References three pillars",
+        "owners": [
+          "artifacts/reports/README.md",
+          "artifacts/reports/2026-10-25/README.md",
+          "artifacts/reports/references/README.md"
+        ],
+        "current_evidence": [
+          {
+            "path": "artifacts/reports/README.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "70415904858fc6a59b838d04ed965a23b2f454b5",
+            "supports": "v005, initial13 plus reading appendix, date-based storage and reader/owner distinctions",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          },
+          {
+            "path": "artifacts/reports/references/README.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "bdfac6c2cf808744e557feb7416f0fe6a3b760cb",
+            "supports": "v003, formation and three-pillar completion; scoped read/write contracts",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          },
+          {
+            "path": "artifacts/reports/references/feedback/feedback.jsonl",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "802d8f8fa167f32efed8fb0b360ebc2d04533fe2",
+            "supports": "Two attributed original Human feedback records with caveats",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          }
+        ],
+        "counts_at_observation": {
+          "feedback": 2,
+          "lessons": 1,
+          "success_cases": 1
+        },
+        "boundary": "Initial experiment passed per Human, content novelty was criticized. HTML/diagram expansion, target slicing and filename numbering remain design possibilities; no new generation/autonomous system or exhaustive repo reading is certified."
+      },
+      {
+        "outcome": "Shared References three pillars and lossless nine-case migration",
+        "owner": "control-center/changes/STR-023-shared-references-three-pillars.md",
+        "implementation_commit": "836e814088e444e51f52ac540a872cd7620ad23e",
+        "verified_receipt_commit": "8a5152c7820c7fabfd391cc4812381de22381a10",
+        "current_evidence": [
+          {
+            "path": "references/README.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "c3631c2d6a40f47c19690c22f6b41d4c98424236",
+            "supports": "v004 routes shared three pillars and conditions",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          },
+          {
+            "path": "control-center/changes/STR-023-shared-references-three-pillars.md",
+            "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+            "observed_blob": "39580fa6446a313ae0e1c31e90b11365fd0d9f2f",
+            "supports": "v002 final receipt:21 files,9 exact document reconstructions, old aliases/IDs retained, Report data unchanged",
+            "policy": "Current owner; observed blob is evidence, not a permanent pin."
+          }
+        ],
+        "counts_at_observation": {
+          "shared_feedback": 1,
+          "shared_lessons": 5,
+          "shared_success_cases": 9
+        },
+        "boundary": "Preparation/publication/readback complete. Retrieval, later AI interpretation and life effects separate. No mandatory threefold record creation or model-weight learning."
+      },
+      {
+        "outcome": "Cold-reader self-contained References three-pillar AI Prompt",
+        "owner": "prompts/ai-references-three-pillars.md",
+        "index": "prompts/README.md",
+        "commit": "0a91204a8982c2a32385b9bee3533654c70a1c1c",
+        "version": "v001",
+        "blob_sha": "03d8243cd0b1a696484248ac5697ccd9c8599ebe",
+        "verification": "Both changed files reread exactly; prompt10563 Unicode characters/24284 UTF-8 bytes; one added/one modified/no deletions,724 existing blobs unchanged. Current tree still same prompt blob.",
+        "meaning": "Seven-file new environment structure, roles, exact row conditions, ownership/current/history/corrections, finite authority and readback without source conversation or assumed Skill runtime. Existing owners preserved; no automatic deployment.",
+        "boundary": "Finished Prompt and source save, not receiver use/understanding/deployment/real-world effects. Latest None correction is in its§9; no GCI/Skill rewrite for that correction."
       }
     ],
     "candidate": [
@@ -376,13 +607,48 @@
       "AI見立て: Human側の想起/切替支援とAI側の文脈/操作状態復元は、事前準備を現在の一歩へ届けるという接続を共有する。個々の制約・Owner・実証範囲は同一視しない。"
     ],
     "unknown": [
-      "07自身の必須読解・再構成、永続Thread作成/送信/名称設定はこの初期State作成時点で未観測。後続の実結果はCurrent06 progress.next_transitionを読む。Source保存だけで成功認定しない。",
       "Ark100のiPhoneユーザ辞書登録、低認知時に支援を想起して到達できるか、Skillによる超低認知Rescueと祈り・Vision・行動の実生活効果は未確認。休日の本人好結果はその報告範囲で保持する。",
       "Ark100初回01/02の現在の使用/未使用と未使用予備は今回の移行の検査対象ではない。初回未使用を現在値へ固定せず、監視や補充を始めない。",
-      "今回の直接移行の実結果はSource06 Receiptで確かめる。他Runtimeの能力、長期的なHuman往復や審査負担軽減、過去の特定承認文言の因果は未確定。",
       "Human端末での07到達・日常利用、全RuntimeのSkill自然発動、Podcast聴取とMAPの継続効果、休日Caffeine/ワコー/就寝前実施は未確認。"
     ],
-    "boundary": "Human report, historical source statement, AI interpretation, direct tool/UI observation, receiver visible reconstruction and practical effect are distinct; same event repeated in owners is not independent evidence."
+    "boundary": "Human report, historical source statement, AI interpretation, direct tool/UI observation, receiver visible reconstruction and practical effect are distinct; same event repeated in owners is not independent evidence.",
+    "source_attribution_policy": "Existing06 inherited arrays remain historical/source-attributed. New07 entries below derive from this current conversation, current public owners and own operation receipts; not long-term memory or other private threads.",
+    "current_material_unknowns": [
+      {
+        "item": "write-report implementation",
+        "state": "NOT_CONFIRMED_IN_CURRENT_PUBLIC_TREE_OR_AVAILABLE_CATALOG",
+        "impact": "Keep general-purpose design and its Report use separately. No duplicate creation, and no pre-migration implementation requirement."
+      },
+      {
+        "item": "Report next improvements",
+        "state": "SAVED_FEEDBACK_AND_DESIGN_POSSIBILITIES",
+        "impact": "HTML/diagrams, scoped source selection and reading-order/file naming can be resumed under an actual request. They are not completed changes or a compulsory queue."
+      },
+      {
+        "item": "GCI settings",
+        "state": "PRIOR_PASTE_COMPLETION_HUMAN_REPORTED; CURRENT_PUBLIC_PAYLOAD_ACCOUNT_EQUALITY_NOT_INDEPENDENTLY_OBSERVED",
+        "impact": "Do not undo reported completion or require repaste for transition. Latest current output instructions remain applicable."
+      },
+      {
+        "item": "08 direct operation/reconstruction",
+        "state": "NOT_YET_PERFORMED_AT_SOURCE_POSITION_SNAPSHOT",
+        "impact": "Inspect actual state and complete the authorized endpoint; terminal receipt is mutable. Existing07 own boot remains complete."
+      },
+      {
+        "item": "Human device access and broad effects",
+        "state": "NOT_OBSERVED",
+        "impact": "Not incomplete source preparation or mandatory effectiveness trial."
+      }
+    ],
+    "initial07_reception_reconciled": {
+      "owner": "ark-project/ark28/ark28-06/state.json",
+      "observed_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+      "observed_blob": "3bafadafbf034dde2de452c417921677ec0dfbce",
+      "observed_revision": 6,
+      "section": "progress.next_transition",
+      "finding": "Source06 recorded actual one07 creation, project/query/title checks, receiver own14-source/R1–R8 response, receipt/Domain delta notice and actual07 confirmation. Those results complete the old boot; initial07 State NOT_OBSERVED fields described preparation time.",
+      "boundary": "Inherited Source06 observable receipt, not fresh hidden-backend proof or new execution. Current07 project presence and heart-prefix title were also directly observed by this source during the authorized08 preparation."
+    }
   },
   "deferred": [
     {
@@ -424,6 +690,18 @@
     {
       "branch": "Next actual transition and wider capability discovery",
       "treatment": "具体的な依頼が来た時に現在の能力・権限・対象を解決する。今回のState保存や過去の直接起動成功から新Target・送信・外部変更を始めない。"
+    },
+    {
+      "branch": "Report表現・調査単位・読む順序/番号、汎用write-report育成",
+      "treatment": "残る可能性として担当原本と保存Feedbackへ接続。移行を新Report大量生成、Skill作成、定期配信や自動実行の承認にしない。"
+    },
+    {
+      "branch": "References三本柱Promptの別環境での利用",
+      "treatment": "完成済みPromptを再利用できる。未利用を未完了Taskへ変えず、実際の依頼と利用条件が届いた時に扱う。"
+    },
+    {
+      "branch": "Main27 / Ark29 / Ark30 / Harness and other branches",
+      "treatment": "Current Domainの担当を維持。共有原本の照合はできるが、私的別会話やMemoryを輸出せず、仕事の移管・通信を自動開始しない。"
     }
   ],
   "progress": {
@@ -435,13 +713,89 @@
       "minimum_revision": 4,
       "note": "No Target State self hash. Actual publication and reread are separate observations."
     },
-    "actual_target_reconstruction": "NOT_OBSERVED_AT_PREPARATION",
-    "target_reconstruction_receipt": null,
-    "human_thread_and_access": "NOT_OBSERVED_AT_PREPARATION",
-    "human_title_application": "NOT_OBSERVED_AT_PREPARATION",
+    "actual_target_reconstruction": "07_RECEPTION_COMPLETE_AS_RECORDED_IN_SOURCE06_REVISION6; NOT_A_NEW_BOOT",
+    "target_reconstruction_receipt": {
+      "path": "ark-project/ark28/ark28-06/state.json",
+      "section": "progress.next_transition.target_reconstruction_receipt",
+      "observation_type": "Source06 recorded07 visible evidence-backed response and later delta acknowledgement"
+    },
+    "human_thread_and_access": "07_EXISTING_PROJECT_THREAD_OBSERVED; HUMAN_DEVICE_ACCESS_SEPARATE",
+    "human_title_application": "SOURCE06_EXACT_INITIAL_TITLE_VERIFIED; LATER_HEART_PREFIX_RETAINED; CURRENT_UI_SEEN_DURING08_PREPARATION",
     "independent_transition_reader_test": "NOT_PERFORMED; ACTUAL_AUTHORIZED_TARGET_RECEPTION_IS_SEPARATE",
     "field_effects": "NOT_OBSERVED_FOR_TARGET07",
-    "boundary": "Source-side compilation is not07 reception. Later actual observations belong to Current06 terminal receipt. Historical06 collaboration and current07 preparation are not unfinished field tasks."
+    "boundary": "Source-side compilation is not07 reception. Later actual observations belong to Current06 terminal receipt. Historical06 collaboration and current07 preparation are not unfinished field tasks.",
+    "initial_preparation_provenance": {
+      "snapshot_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+      "state_blob": "cf0821c59be4c21437040f1e5e17a9dd78c39516",
+      "meaning": "Original preparation-time flags and inherited facts remain in the fixed revision2 snapshot. The following current fields reconcile actual completed07 reception."
+    },
+    "next_transition": {
+      "source": "Ark28:07",
+      "target": "Ark28:08",
+      "transition_kind": "THREAD_CONTINUE",
+      "role": "SUPPORT",
+      "main_chapter": "Ark27",
+      "main_ownership_transferred": false,
+      "compiled_title": "Ark28:08_2026/10/27; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+      "date_jst": "2026-10-27",
+      "authority": {
+        "date_jst": "2026-10-27",
+        "actor": "Ark28:07 AI",
+        "source": "Direct Human response approving execution after the immediately preceding transition plan.",
+        "target": "One persistent Ark28:08 in the current ChatGPT account, existing Ark28 Project",
+        "compiled_title": "Ark28:08_2026/10/27; \"主の完全勝利: Teshuvahを軸に育てる継続協働\"",
+        "approved_paths": [
+          "ark-project/ark28/ark28-07/state.json",
+          "ark-project/ark28/ark28-08/README.md",
+          "ark-project/ark28/ark28-08/handoff.md",
+          "ark-project/ark28/ark28-08/state.json",
+          "ark-project/ark28/README.md",
+          "ark-project/README.md"
+        ],
+        "scope": "Source position, target triad, chapter/domain routing, GitHub main publication and full reread; inspect target existence, create/reuse one08, send saved startup Query, set exact Title, inspect receiver evidence, update this terminal receipt and reread.",
+        "exclusions": [
+          "Main transfer",
+          "other-line task takeover",
+          "new chapter or Project",
+          "GCI or Project settings changes",
+          "Skill registration or update",
+          "Report or References data redesign",
+          "physical trial",
+          "unrelated external messages",
+          "long-term-memory export"
+        ],
+        "continuity": "Reuse the same clear authorization through necessary corrections and verification; a real refusal or material scope change is handled explicitly, not bypassed."
+      },
+      "paths": [
+        "ark-project/ark28/ark28-07/state.json",
+        "ark-project/ark28/ark28-08/README.md",
+        "ark-project/ark28/ark28-08/handoff.md",
+        "ark-project/ark28/ark28-08/state.json",
+        "ark-project/ark28/README.md",
+        "ark-project/README.md"
+      ],
+      "source_prepared": "CURRENT_POSITION_COMPILED; TARGET_TRIAD_PENDING",
+      "remote_verification": {
+        "status": "NOT_YET_OBSERVED_FOR_THIS_SOURCE_REVISION",
+        "boundary": "No self hash; later receipt and saving response provide actual verification."
+      },
+      "delivery": {
+        "status": "NOT_SENT",
+        "project_observation": {
+          "url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0/project",
+          "name": "Ark28_2026/09/25: \"主の完全勝利: 本流を支える余白と帰還\"",
+          "existing_threads": "01–07; seven visible; no08",
+          "source_url": "https://chatgpt.com/g/g-p-6ab5ef96984c8191a2a4d11c00d3a3f0/c/6ad75dc4-0cd4-83ee-8c3f-a71b601cec4c",
+          "source_title": "❤️Ark28:07_2026/10/20; \"主の完全勝利: Teshuvahを軸に育てる継続協働\""
+        },
+        "route": "Supported ChatGPT browser UI; dedicated persistent-thread connector not exposed",
+        "source_role": "Ark28:07 AI acting under the latest direct Human-approved plan"
+      },
+      "actual_target_reconstruction": "NOT_YET_OBSERVED",
+      "human_last_mile": "NO_MANUAL_ACTION_CURRENTLY_REQUESTED; direct route available at existing project; future Human device access separate",
+      "requested_outcome": "PENDING_AUTHORIZED_SOURCE_SAVE_TARGET_TRIAD_PUBLICATION_DELIVERY_AND_ACCEPTANCE",
+      "recovery": "Before retry, inspect existing project/thread URL, sent text, title and response; distinguish unsent/sent-awaiting-response/completed/unknown. No blind duplicate creation or resend."
+    }
   },
   "eof_sentinel": "ARK28_07_STATE_EOF_v001"
 }
