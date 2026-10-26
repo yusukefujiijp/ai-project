@@ -1,14 +1,14 @@
 ---
 title: "Reports — 根拠から意味を読み、次の理解へ渡す"
 canonical_path: "artifacts/reports/README.md"
-version: "v004"
+version: "v005"
 created: "2026-10-25"
 updated: "2026-10-26"
-updated_reason: "Connect the Human-approved Report learning entry and its lesson and success-case owners; retain dated works, reader designations and relocation history."
+updated_reason: "Connect the approved Report feedback source alongside lessons and success cases; preserve dated works, readership and existing storage guidance."
 role: "Report collection entry, reading routes and revision guidance; not a second Current state"
 primary_reader: "Human / Current AI / Future AI"
 initial_collection_source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
-expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v004"
+expected_eof: "EOF::ARTIFACTS_REPORTS_HOME::v005"
 ---
 
 # Reports
@@ -35,7 +35,7 @@ Root・Teshuvah・Human Foreground One・Correction・STOPとGuardは[ARK](https
 
 ## Reportの学びへ戻る
 
-Reportの制作・改訂・保存を判断する際は、必要に応じて[Report用References](references/README.md)から関連するlessonや成功事例を読む。現在の目的・読者・条件と比較して活用し、過去の成功や指示を現在の事実・実行権限へ置き換えない。利用のために毎回全件を読むことは求めない。
+Reportの制作・改訂・保存を判断する際は、必要に応じて[Report用References](references/README.md)から関連するFeedback・lesson・成功事例と後続の訂正を読む。現在の目的・読者・条件と比較して活用し、過去の成功や指示を現在の事実・実行権限へ置き換えない。利用のために毎回全件を読むことは求めない。
 
 この入口は執筆・構成・伝達・保存・再利用の学びを扱う。作品固有の訂正はそのReportへ、題材の事実・経験は既存の担当原本へ戻す。役割の選択とJSONL本文への接続はReferencesが所有する。
 
@@ -57,4 +57,4 @@ Reportの制作・改訂・保存を判断する際は、必要に応じて[Repo
 
 旧`artifacts/reports/2026-10-25-*.md`の作品は、同じファイル名で`artifacts/reports/2026-10-25/`にある。移動前の一覧と本文は[固定版のREADME](https://github.com/yusukefujiijp/ai-project/blob/cb9c3a80cd73378fa97e4293fca4013e0d52a84e/artifacts/reports/README.md)から辿れる。この履歴への接続を旧main URLの自動転送とは扱わない。配置変更は、分析の再実施や実利用効果の確認を意味しない。
 
-EOF::ARTIFACTS_REPORTS_HOME::v004
+EOF::ARTIFACTS_REPORTS_HOME::v005
