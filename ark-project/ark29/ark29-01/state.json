@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "state_id": "ARK29_01_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-10-26",
+    "updated": "2026-10-26",
+    "canonical_path": "ark-project/ark29/ark29-01/state.json",
+    "date_scope": "Asia/Tokyo; preparation and subsequent actual observations separated",
+    "change_reason": "Human-authorized parallel chapter addition. Local State uses the existing Ark meta/identity/authority/bindings/now/progress/evidence pattern; not a new repository-wide schema."
+  },
+  "identity": {
+    "source": "Ark27:11 / Human-authorized preparation",
+    "target": "Ark29:01",
+    "owner": "Ark29:01",
+    "chapter": "Ark29",
+    "role": "CONTINUING_LINE_3",
+    "transition_kind": "CHAPTER_TRANSITION",
+    "main_ownership_transferred": false,
+    "compiled_title": "Ark29:01_2026/10/26; \"主の完全勝利: 第三ラインの継続協働を始める\"",
+    "project_name": "Ark29: 継続協働ライン3"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "human_retains": [
+      "Meaning",
+      "Correction",
+      "STOP",
+      "Final Seal"
+    ],
+    "source_execution": {
+      "actor": "Ark27:11 AI",
+      "date": "2026-10-26",
+      "scope": "Approved nine GitHub paths/main/reread; two current-account Work Projects and one persistent01 each; instructions/save/reread, startup send, exact title, receiving-AI reconstruction and actual entries. Necessary reception record only."
+    },
+    "target_mode": "Read-only investigation and conversation-only analysis/presentation",
+    "target_work": "統合Home B案の残る検討",
+    "not_authorized": [
+      "Root/Home implementation",
+      "Report production/rename/persistence",
+      "fixed Binding migration",
+      "Harness takeover",
+      "Ark00 whole inventory",
+      "Skill registration",
+      "existing schedules or other Project settings",
+      "Reset",
+      "private conversations or long-term memory export"
+    ],
+    "after_gates": "Continue already assigned analysis; receive later valid Human correction/input; no invented new task."
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark29/ark29-01/README.md",
+      "id": "ARK29_01_CONTINUING_FIELD",
+      "version": "v001-human-authorized",
+      "policy": "Current identity and substantive compatibility; observed blob is not a permanent pin."
+    },
+    "handoff": {
+      "path": "ark-project/ark29/ark29-01/handoff.md",
+      "id": "ARK29_01_PARALLEL_CHAPTER_START",
+      "version": "v001-human-authorized",
+      "policy": "Own ordered Required Sources, triad, reconstruction and initial relay; material amendment needs current scoped authority."
+    },
+    "chapter": {
+      "path": "ark-project/ark29/README.md",
+      "id": "ARK29_CONTINUING_LINE",
+      "version": "v001-human-authorized"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "version": "v010-human-authorized",
+      "eof": "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized",
+      "policy": "Additive four-line routing; Main27/Support28 and existing fixed bindings retained."
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "version": "v003-human-authorized"
+    },
+    "source_review": {
+      "commit": "5a394b02f8ba8cdd0af1172834e9189d4617c629",
+      "policy": "Historical pre-addition tree; not the new chapter Current entry."
+    },
+    "initial_work_sources": [
+      "ARK.md",
+      "README.md",
+      "AGENTS.md",
+      "ark-project/README.md",
+      "control-center/changes/STR-018-flexible-readme-principle.md",
+      "control-center/changes/STR-019-references-learning-memory.md",
+      "ark-project/ark27/ark27-11/README.md"
+    ],
+    "progress_owner": "ark-project/ark29/ark29-01/state.json"
+  },
+  "now": {
+    "phase": "SOURCE_PREPARED_DELIVERY_NOT_YET_OBSERVED",
+    "goal": "Main27が、統合Home B案の意味移管・三利用場面・直接参照と固定Bindingへの影響を、既存成果と残る差分から判断できる状態。",
+    "current_assignment": "統合Home B案の残る検討",
+    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT_THEN_CONTINUE_ASSIGNED_ANALYSIS",
+    "task_scope": "B案はroot READMEへArk全体の意味と入口を統合し、AGENTSが共通契約、ark-project/README.mdが番号付き領域の案内を所有する方向。採用されたのは今回の補助検討であり、根本文書統合・ARK削除・物理改名・Binding移行の実装ではない。",
+    "completion_condition": "根拠付きの移管対応・三利用場面の照合・主要な参照影響・未確認と最小回復方法が示され、Main27の判断へ戻せる。既完了の比較全体をやり直さない。"
+  },
+  "progress": {
+    "source_prepared": {
+      "status": "compiled",
+      "actor": "Ark27:11 AI"
+    },
+    "remote_verified": {
+      "status": "not_yet_observed_at_preparation"
+    },
+    "delivery": {
+      "status": "not_yet_observed_at_preparation",
+      "project_url": null,
+      "thread_url": null,
+      "project_instructions_verified": false,
+      "title_verified": false,
+      "startup_sent": false
+    },
+    "target_reconstruction": {
+      "status": "not_yet_observed_at_preparation",
+      "actor": "Ark29:01 AI",
+      "proof": null
+    },
+    "work_connection": {
+      "status": "assigned_by_Human_receiver_execution_not_yet_observed",
+      "assignment": "統合Home B案の残る検討",
+      "mode": "conversation-only"
+    },
+    "continuity_and_burden_reduction": {
+      "status": "unobserved",
+      "policy": "No standing monitor or unnecessary work; observe actual later collaboration under valid requests."
+    }
+  },
+  "evidence": {
+    "basis": "Current Human adopted four-line plan, confirmed exact Project names/titles and authorized the specified preparation/delivery and two conversation-only assignments.",
+    "preparation_commit_base": "5a394b02f8ba8cdd0af1172834e9189d4617c629",
+    "observations": [],
+    "boundaries": [
+      "Source reading is not Target reading.",
+      "Prepared originals, remote reread, UI/delivery, target understanding, work connection and long-term effect are separate.",
+      "Existing27/28 tasks and completed work remain with their owners.",
+      "Only adopted design, startup contract and necessary reception records are public; no private dialogue or memory export."
+    ]
+  },
+  "deferred": [
+    "Global Home implementation",
+    "Report creation, rename and saving",
+    "other-owner Harness",
+    "all-Ark00 sorting",
+    "standing monitoring and automatic task generation"
+  ],
+  "eof_sentinel": "ARK29_01_STATE_EOF_v001"
+}

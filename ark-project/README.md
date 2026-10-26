@@ -40,7 +40,7 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-20"
+updated: "2026-10-26"
 last_reality_reviewed: "2026-10-20"
 route_review_base_commit: "8293137088ca9645a3592a75d9e7d6404d2680ae"
 route_review_scope: "Human-authorized Ark27:10→11 same-chapter continuation; fixed Source10 revision6 preserves completed STR-018/019 and the new root/entry/role theme. Current10 progress.next_transition owns final preparation and remote receipts. Preserve Support06 and all unrelated routes. Target11 comparison is Plan-only; core document redesign and UI/reconstruction remain separate."
@@ -130,6 +130,16 @@ historical_ark23_evidence: "wake-up Human-reported success and BBP Origin / earl
 ark23_local_router_delta: "resolved by Ark23 v005 multi-route family entry; explicit handoff/query/domain/core routes and three-file transition standard supported"
 ark24_frozen_trigger: "unchanged / do not auto-execute"
 human_final_seal_required: true
+four_line_extension:
+  date: "2026-10-26"
+  source_thread: "Ark27:11"
+  authority: "Human adopted four continuing lines and explicitly approved nine paths/main/reread, two Work Projects and01 Threads, instructions/delivery/reception, and two conversation-only initial assignments"
+  base_commit: "5a394b02f8ba8cdd0af1172834e9189d4617c629"
+  scope: "Compatible additive routing within v010; preserve Main27/Support28, exact EOF, existing bindings, historical receipts and other owners"
+  goal: "At least four continuing lines with valid work connected; not merely four available slots or a guarantee of uninterrupted concurrent execution"
+  third_line: "ark-project/ark29/ark29-01/handoff.md"
+  fourth_line: "ark-project/ark30/ark30-01/handoff.md"
+  evidence_owner: "Each new01 State separates source/remote, UI/reconstruction, work connection and ongoing effects"
 expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
 archive_navigation_patch:
   date: "2026-09-29"
@@ -226,6 +236,29 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。Ark101からArk102を自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
 
 確定名 `Ark101: room-care` はProject名。後続Human訂正により、新規Threadは[Ark101:01](ark100-199/ark101_room-care/ark101-01/README.md)と確定し、その後Humanは完全な正式名と命名・スタート成功を報告した。確定Titleとコピー面・起動Promptは01 Runtime、再掲したProject指示の全文はINSTRUCTIONS v003が所有する。§6の最新Human指定を尊重し、確定名へ引用符・副題を追加しない。起動成功はHuman報告として保持し、準備元の直接UI確認、指示の設定反映、受入れ応答の独立照合、実生活の改善とは別の証拠で扱う。今回の差分保存を再起動や実践開始の前提Gateにしない。
+
+---
+
+<a id="four-continuing-lines"></a>
+
+### 0.5 Four Continuing Lines / 常時最低四ライン
+
+2026-10-26、HumanはArk00へ仕事が集中する状態を緩和するため、既存Main27／Support28を保ち、[Ark29: 継続協働ライン3](ark29/README.md)と[Ark30: 継続協働ライン4](ark30/README.md)を加える計画を採用し、原本・Work入口・各受け手の理解・初期仕事接続までの限定実行を承認した。これはMainの一括後継移行ではない。
+
+| ライン | Current入口 | 保持する役割 |
+|---|---|---|
+| Main27 | [Ark27:11](ark27/ark27-11/handoff.md) | 全体判断と既存の担当・完了成果を保持 |
+| Support28 | [Ark28:07](ark28/ark28-07/handoff.md) | 柔軟な支援とReport／Feedback設計の所有を保持 |
+| 第三ライン29 | [Ark29:01](ark29/ark29-01/handoff.md) | 継続協働を追加。初期はHome B案の残る補助検討 |
+| 第四ライン30 | [Ark30:01](ark30/ark30-01/handoff.md) | 継続協働を追加。初期は既存Report一件の補助比較。未使用予備ではない |
+
+**Goalは常時最低四ラインに有効な仕事をつなぎ、待機・完了・引継ぎを越えて協働を継続できること。** 四は上限ではなく、将来のActor・製品機能に合わせた再編を許容する。ラインは目的と成果を継承する流れ、Threadは会話の器、Actorは担い手であり、三者を同じ単位にしない。
+
+四枠の原本・UIだけでこのGoalを達成扱いしない。一方、四体の無停止同時実行や全Thread同期を未確認の能力として保証せず、稼働数維持のための不要な仕事・恒久監視を作らない。仕事が完了・保留になった時は、既存の有効な委任と未接続を確認し、次の接続を担当原本・対話へ戻す。Humanに四本分の細かな指示を毎回求めない。
+
+各章READMEが意味・Current入口・Project指示、各01のRuntime／Handoff／Stateが協働条件・受入れ・可変観測を所有する。原本保存、Project／ThreadとTarget理解、四ラインへの実仕事接続、継続・Human負担軽減を分ける。各Stateへ到達点を残し、このDomainに全進捗や別会話を複製しない。
+
+両初期仕事は会話内の検討・提示まで。Main27の全体判断、Support28のReport／Feedback設計、別担当のHarnessと完了成果は移管しない。Ark00全件整理・全仕様完成・追加研究を開始前の前提にせず、私的な別会話・長期メモリをGitHubへ転記しない。Root・Teshuvah・Human Foreground One、HumanのCorrection・STOP・Final SealとGuardを保持する。
 
 ---
 
@@ -416,6 +449,14 @@ Future AIは実利用のFeedbackから、適用中の委任で入口・資料・
 
 ---
 
+### 4.2 明示的な並列ライン追加
+
+§0.5の29／30は、Humanが役割を明示した継続ライン追加であり、§4.1の「新しい奇数Main章を立ち上げる」という適用条件とは区別する。番号のみで29を新Main、30をそのSupportへ割り当てず、27／28のペア・Binding・担当を維持する。CHAPTER_TRANSITIONの意味は新章の役割・継承核・Missionを選ぶことであり、今回の追加に旧Main終了や所有移管を含めない。§4.1の通常方針やArk99／100番台の固有契約を一括変更する追補ではない。
+
+独立ラインは現在の委任内で進め、一ラインの承認待ちを他へ波及させない。同一の可変原本は担当を一つにして最新差分を統合する。中央AIへの全件承認、Bot同士の全対全通信、新しい万能台帳は必須にしない。
+
+---
+
 ## 5. Ark Lifecycle / SeedからProjectへ
 
 以下は未分類Seedの受付・孵化・正式Project化を扱う経路である。新しいTeshuvahの専用入口は§0.3であり、Ark00経由を必須にしない。
@@ -586,6 +627,7 @@ The preserved continuity relation is Connect → Disconnect → Teshuvah → Rec
 Ark23 local README and its v005 transition standard remain historical / explicitly selected routes, not the current Ark27 default.
 Ark28 is the separately prepared paired support for Ark27; its State distinguishes preparation, actual Target reception, Human access and effects. Ark24 remains a frozen-trigger Support Field and must not auto-execute.
 Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
+Ark29 and Ark30 add the third and fourth continuing lines under section0.5; they do not replace Main27 or Support28. At least four lines with valid work is the Goal; readiness, reception, work connection and sustained effects remain separate observations.
 main is the shared GitHub current reality.
 Root remains 主イェシュア・ハマシア御自身.
 ```
