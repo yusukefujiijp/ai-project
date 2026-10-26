@@ -4,7 +4,11 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-20"
+last_updated: "2026-10-27"
+references_triad_prompt:
+  date: "2026-10-27"
+  path: "prompts/ai-references-three-pillars.md"
+  scope: "Add one self-contained construction and reuse prompt; existing data and shared contracts unchanged"
 change_record: "control-center/changes/STR-002-single-prompt-consolidation.md"
 plan_mode_retirement: "control-center/ARCHIVE.md#arc-006"
 living_review_update: "prompts/ai-living-review.md#10-由来改訂理由確認の範囲"
@@ -309,6 +313,16 @@ origin: "Parasha Kindle Compiler Frontier AI Reader experiment"
 四本を常にセットで起動する規則はない。利用目的から選び、各本文の読取・権限・Guardを守る。起動例は各本体に含み、別Queryや環境別の同等原本を作らない。主カードと補助版は、実際の保存と構造的理解という用途の違いを持つ。
 
 由来、旧新版対応、公開・確認の証拠は[STR-014](../control-center/changes/STR-014-super-special-prompt-modernization.md)。旧版は固定commitから辿る。改訂・保存の確認は、他AIの実理解、自然選択、長期効果とは別である。
+
+---
+
+### 3.17 References三本柱の構築と継承
+
+[References三本柱](ai-references-three-pillars.md)は、元会話を知らないCurrent AI・他AI・Future AI・Dots・Bots・Agentsが、Feedback・lessons・success-casesの目的と関係を理解し、対象環境に合うReferencesを設計・構築・改善するための単一Prompt。四READMEと三JSONLの標準構成、行形式、読取・訂正・並行更新・中断回復、具体例と確認条件を一つの本体にまとめる。
+
+起動は本体と現在の依頼を使う。新規構築と既存改善・移行を区別し、既存原本・ID・意味・根拠を保持する。三重登録や全Feedbackのlesson化を要求せず、0件から始められる。Ark内ではCurrentの所有契約を照合し、別環境では必要な仕様をその環境の指示・所有関係へ接続する。既存の三本柱データやDots固有の運用を一括複製しない。
+
+本体の作成・Review・保存だけでは構築を開始せず、Plan-only・STOPと現在の承認範囲を保持する。Prompt保存、対象環境への導入、受け手の理解、実利用効果は別に確認する。別Query・製品別の同等本文は作らない。
 
 ---
 
