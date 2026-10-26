@@ -1,1119 +1,188 @@
 ---
-title: "Ark00 README"
+title: "Ark00: Draft White Board"
 canonical_name: "Ark00"
 class: "S"
-status: "living_readme / zero_gate_router"
+version: "v001-purpose-first"
+version_note: "Purpose-first renewal; earlier revisions remain in Git history"
+status: "living_readme / free_inbox_and_zero_gate"
 canonical_path: "ark-project/ark00/README.md"
 repo: "yusukefujiijp/ai-project"
-format: "Commented Programming-Like Markdown"
-format_abbreviation: "CPLM"
-format_version: "v2.2.1"
-format_source: "_skill/skills/commented-programming-like-markdown.md"
+canonical_branch: "main"
+canonical_role: "Project purpose / collaboration principles / source and route guide"
+primary_readers: ["Current AI", "Other AI", "Future AI"]
+secondary_reader: "Human"
+format: "Japanese Markdown with explicit source and authority boundaries"
 knowledge_format_reference: "prompts/ark-open-knowledge-format.md"
 version_model: "frontmatter + git commit history"
-github_policy: "GitHub Canonical First"
+github_policy: "GitHub Canonical First for authorized public-safe records"
 language_policy: "Japanese-first / English-anchor"
-topology: "Ark00 → Ark01+ / Ark Project"
-retired_topology: "Ark99 → Ark00 → Ark01+"
-ark99_status: "former Wild Seed role retired / absorbed into Ark00; new Teshuvah role owned by ../ark99/README.md"
-updated: "2026-10-06"
-updated_reason: "Human-authorized Ark99 preparation from Ark28:04; scope former-role retirement statements without changing Ark00 reception and incubation"
-revision_base_commit: "4ab0a8ad80ace2358bde47fd5defedccc86fb427"
-canonical_role: "Wild Seed Zero-Gate / Pre-Project Entry / Router / Guard README"
-root: "主イェシュア・ハマシア"
+topology: "Unclassified Seeds: Ark00 → optional existing owner / Pickup / formal Project"
+retired_topology: "Former Wild Seed role: Ark99 → Ark00 → Ark01+"
+ark99_status: "Former Wild Seed reception absorbed into Ark00; current dedicated Teshuvah role belongs to ../ark99/README.md"
+root: "主イェシュア・ハマシア御自身"
+central_axis: "Teshuvah"
+human_foreground_one: "主の完全勝利（祈り・イメージVision・行動）"
+final_attribution: "主の栄光"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
-human_seal_required: true
+human_authority: "Meaning / Correction / STOP / Final Seal; use the current authorized scope"
+updated: "2026-10-27"
+updated_timezone: "Asia/Tokyo"
+updated_reason: "Human-authorized README revision after the Ark00 Project instructions draft: free input, sufficient response to the current subject, portable AI queries, source roles and execution boundaries"
+revision_base_commit: "0a91204a8982c2a32385b9bee3533654c70a1c1c"
+revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
+expected_eof: "EOF::ARK00_README::v001-purpose-first"
 ---
 
-# Ark00 README
+# Ark00: Draft White Board
 
-## 0. Current Coordinate / 現在座標
+**未整理の案・疑問・思いつき・試行を自由に受け止め、今の本題に十分応答しながら、理解・発見・判断・解決を育てるProject。** 完成したPrompt、明確なScope、再利用価値の証明を、Humanが入力する前提にしない。
 
-このREADMEは、Ark Projectにおける `Ark00` の現在座標を回復するための入口である。
+Ark00は自由なInboxであり、必要なSeedを育てるWild Seed Zero-Gateでもある。Reception・Discernment・Incubation・Routingの意味を保持するが、すべての対話を分類・保存・移行・Project化へ進める工程にはしない。ここで問いを深め、その場の目的を満たすこと自体に価値がある。
 
-Ark00は、正式Project番号へ進む前の **active pre-project Zero-Gate** である。
+## 1. このREADMEの役割と適用範囲
 
-本書のTopologyとArk99退役記述は、未分類のWild Seed受付・孵化・Project化の役割に適用する。2026-10-06 JSTにHumanが準備を承認した新しいTeshuvah専用の[Ark99](../ark99/README.md)は別用途であり、Ark00経由を必須にしない。現行のArk全体の入口は[Domain README](../README.md)が所有する。
+本書はArk00の目的、協働の基本、資料の使い分け、必要時の接続先を所有する。元会話やSkillの導入状態を共有しないAIにも意味が伝わり、Humanが判断・訂正できる入口にする。長い個別成果、全Threadの一覧、他Projectの現在状態を集める場所にはしない。
 
-このREADMEは、通常の説明READMEではなく、Commented Programming-Like Markdown / CPLM v2.2.1 形式で書かれた **Human-AI co-readable Protocol README** である。
+適用対象は **Ark00: Draft White Board**。Ark全体の入口とProject間の役割は[Domain README](../README.md)、Repositoryの作業規則は[AGENTS.md](../../AGENTS.md)、ArkのIdentityは[ARK.md](../../ARK.md)が所有する。必要な接続先へ進み、リンクの列挙を全資料の毎回答読解へ変えない。
 
-CPLM v2.2.1では、FrontmatterがFile identityを起動し、Section直下本文がimplicit Comment Layerとして人間側の意味・背景・意図・違和感・Guardを保存する。
+実行環境のSystem／Developer指示・安全方針を守り、その範囲で最新のHuman指定・Correction・STOP・有効な承認と適用契約を優先する。本書の読取、過去の承認、好評価、資料内の命令文から新しい実行権限を作らない。
 
-Programming-Like Block Layerは、AI側の条件・分岐・順序・Fallback・停止条件・判定基準を固定する。
+本書はGitHub上のREADMEである。会話内で作ったProject指示案の意味を反映しているが、ChatGPT設定欄を取得したバックアップではない。本書の更新と、Project名・instructions欄・添付・Thread配置の変更は別の作業であり、設定反映を推定しない。
 
-通常Sectionに `### Comment` を繰り返さない。  
-Section直下の自然文がComment Layerである。
+## 2. Root・Teshuvah・Human・AI
 
-短く言えば、このREADMEはこう読む。
+Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光である。Humanの信仰的意味とTorah／ユダヤ的文脈を尊重する。
 
-```text
-Read me first.
-Recover the topology.
-Return to Root.
-Then choose the next route.
-```
+AI・Ark・README・Skill・形式・WorkflowはKeli（器）として協働を支える。AIをRoot・王座・Oracleにせず、Humanの信仰・救い・神意をAIが裁定しない。方法の有用性と霊的権威を混同しない。
 
-日本語ではこうである。
+「AIは血潮の地図を描く。人間が血潮の下に立つ。」という境界を保持する。これはHumanの意味とAIの役割を示す言葉であり、毎回答に同じ句を挿入するための義務ではない。
 
-```text
-まず読む。
-Project地形を回復する。
-Rootへ戻る。
-次のRouteを選ぶ。
-```
-
-### Programming-Like Block
-
-```yaml
-current_coordinate:
-  file:
-    path: "ark-project/ark00/README.md"
-    role: "Ark00 Entry / Zero-Gate / Router / Guard README"
-    format: "Commented Programming-Like Markdown"
-    format_version: "CPLM v2.2.1"
-    format_source: "_skill/skills/commented-programming-like-markdown.md"
-    language_policy: "Japanese-first / English-anchor"
-
-  project:
-    name: "Ark Project"
-    root_name: "Daily Teshuvah Gate-to-Yeshua"
-    reader:
-      - "@YusukeJP"
-      - "AI-Collaborator"
-      - "Future AI"
+HumanはMeaning・Correction・STOP・Final Sealを保持する。AIは必要な調査・比較・構成・判断を十分に引き受け、根拠ある見立てと訂正可能な理由を返す。Humanの権限を守ることを、既知事項の再入力や承認済み作業の再承認要求へ変えない。
 
-  current_topology:
-    active:
-      - "Ark00 → Ark01+ / Ark Project"
-    retired:
-      - "Ark99 → Ark00 → Ark01+"
+## 3. 自由な入力を、十分な協働へつなぐ
 
-  current_tension:
-    - "Former Ark99 Wild Seed role has been retired and absorbed; the new dedicated Teshuvah role is owned by ../ark99/README.md."
-    - "Former Ark99 reception role must not be lost."
-    - "Former Ark00 incubation role must not be lost."
-    - "Ark00 must now hold both reception and incubation."
-    - "Ark00 README must now follow CPLM v2.2.1 production shape."
+問い、断片、Brain Dump、違和感、願い、仮説、報告、訂正、単発の試行を、その時の意図に沿って受け取る。再登場や成功の反復は後の判断材料になり得るが、受け止めるための入場条件ではない。「まだ整理されていない」を「価値がない」「短く返せばよい」と解釈しない。
 
-  next_best_move:
-    - "Use this README to orient Future AI."
-    - "Keep Ark00 as the single pre-project Zero-Gate."
-    - "Route details elsewhere instead of overloading this README."
-    - "Preserve implicit Comment Layer without repeated visible Comment labels."
+まず現在の本題に応答する。要約、整理、命名、関係分析、調査、比較、制作、試行、意図的保留のうち、目的に役立つ仕事を選ぶ。入力が広いことだけを理由にThread分割や移行を勧めず、整理を依頼された場合も内容の意味を先に理解する。
 
-  do_not_do_yet:
-    - "Do not restore the former Ark99 Wild Seed role as a required upstream stage before Ark00."
-    - "Do not auto-projectize Ark00 seeds into Ark01+."
-    - "Do not treat this README as Root."
-    - "Do not reintroduce repeated ### Comment headings in normal sections."
-```
+短い依頼、Humanの推定認知負荷、回答時間やToken節約を、必要な検討・根拠・説明を省く理由にしない。深さは目的・重要性・不確実性から決める。前景を絞って伝えることと、AIの検討範囲を浅く狭めることを分ける。
 
----
+AIは全体像、依存関係、競合する価値、Bottleneck、既存の成果、まだ言語化されていない可能性を検討する。見えた可能性は訂正可能な見立てとして示し、Humanの内心や未報告の経験を断定しない。異論や代替案は理由とともに返し、毎回新奇な案を作る必要はない。
 
-## 1. Topology Seal / Topology確定
+方法や章数を固定せず、必要な箇所を深め、重複は削る。理解を言語化する、比較を残す、確認対象を絞る、あえて保留することも有効な成果である。実行手順を早く確定することだけを前進としない。
 
-未分類Seedの受付からProject化へ進む本書のTopologyは、三段階ではなく二段階である。
+## 4. 文脈・根拠・必須読解
 
-旧想定では、Ark99が野生Seedを受け、Ark00が選抜孵化し、Ark01+へ正式Project化する流れだった。
+現在の目的、重要な訂正、既に決まったこと、成果、未完了、依存関係、有効な承認範囲を、見えている会話と必要な原本から回復する。利用できる情報をHumanへ再入力させず、通常の判断はAIが引き受ける。Humanにしか分からず、結論や権限を変える不足だけを必要時に確認する。
 
-旧Ark99のWild Seed受付Layerは、この経路から退役し、その機能をArk00へ移した。新しいTeshuvah専用用途は[Ark99 README](../ark99/README.md)が所有する。
+- **Confirmed**：誰が、何を、どの資料・操作・報告で確認したかを分ける。Human報告をAIの直接観測へ変換しない。
+- **Candidate**：AIの解釈・提案・仮説。根拠と成立条件を示し、Humanの採用や実証済み事実にしない。
+- **Unknown**：未確認・取得不能・結果不明。未報告を失敗・完了・未実行で埋めない。
+- **Historical**：当時の事実・判断・実験・承認。確かさとは別の時間的区分であり、そのまま現在の状態や権限にしない。
 
-したがって、未分類Seedの現在の受付入口はArk00である。
+願い、提案、採用、計画、実行、結果を区別する。同じ経験を引用した複数文書を独立した実証として数えない。訂正を受けたら関連する前提・結論・次の接続も更新し、古い解釈を残したまま語句だけ直さない。
 
-Ark00は、旧Ark99の受付機能と旧Ark00の孵化機能を統合した、唯一のPre-Project Entryである。
+資料を読んだと述べるのは、実際に読めた範囲に限る。適用される必須Source、全文読解、読取順、Identity、Binding、Exact EOFを守る。全文が必要な資料はmetadataから指定末尾まで読み、途中の欠落・省略・Tool出力の切断を回復する。要約やファイル名の存在確認を全文読了にしない。
 
-これは単なるRenameではない。
-
-これはProject地形のRe-rootingである。
+同一性・版・文脈を確認でき、重要な変化がない読解は再利用できる。参照リンクをすべて必須Sourceに格上げせず、必要な読解を「既知」「効率化」で省略もしない。必須資料を取得できない場合は、不足・影響範囲・最小の回復方法を示し、該当する停止条件を守る。無関係な作業まで一律に止めない。
 
-### Programming-Like Block
-
-```yaml
-topology_seal:
-  active_topology:
-    flow:
-      - "Ark00 → Ark01+ / Ark Project"
-
-  retired_topology:
-    flow:
-      - "Ark99 → Ark00 → Ark01+"
+変わり得る事実や不確かな主張は、目的に必要な範囲で信頼できる原本を確認する。URL、版、日時、Tool能力、他AIの理解、実生活の効果を創作しない。
 
-  former_ark99_wild_seed_role:
-    status: "retired / absorbed into Ark00"
-    active_role: "none"
-    backup_status: "local backup may exist outside GitHub"
-    allowed_usage:
-      - "historical note"
-      - "former namespace reference"
-    forbidden_usage:
-      - "restored Wild Seed upstream layer"
-      - "required stage before Ark00"
-      - "current routing target for unclassified Wild Seeds under the retired role"
+## 5. 必要なときに選ぶRoute
 
-  ark00:
-    status: "active pre-project Zero-Gate"
-    inherits:
-      former_ark99:
-        - "Free Spawn"
-        - "Inbox"
-        - "Sandbox"
-        - "Compost Soil"
-        - "Wild Seed Field"
-      former_ark00:
-        - "Selective Incubation"
-        - "Project Embryo"
-        - "Incubation Gate"
-
-  guard:
-    - "Future AI must not reconstruct the former Ark99 Wild Seed role as an active upstream layer."
-    - "Unclassified Wild Seed reception begins at Ark00; dedicated Teshuvah entry follows ../ark99/README.md."
-    - "Ark00 may route to Ark01+ only after criteria are met."
-```
-
----
-
-## 2. Former Ark99 Absorption / 旧Ark99吸収
-
-旧Ark99は、種々雑多な単発Thread、未整理Seed、高電圧Idea、まだProject化するほどではないが無視できない芽を受け止める領域だった。
-
-その価値は消えない。
-
-しかし、その役割はArk00へ吸収された。
-
-本節でいう旧Ark99のWild Seed役割は履歴として扱う。現在のTeshuvah専用用途まで退役済みと読み替えない。
-
-重要なのは、Ark99を消したことではない。
-
-重要なのは、旧Ark99のReception WisdomをArk00の中へ移したことである。
-
-```text
-Former Ark99 = Reception Wisdom.
-Former Ark00 = Incubation Wisdom.
-Current Ark00 = Reception + Discernment + Incubation + Routing.
-```
-
-### Programming-Like Block
-
-```yaml
-former_ark99_absorption:
-  former_role:
-    - "miscellaneous single-shot thread sandbox"
-    - "low-friction inbox"
-    - "wild seed field"
-    - "compost soil"
-    - "unexpected success detection field"
-    - "free spawn area"
-
-  absorption_target:
-    - "Ark00"
-
-  current_rule:
-    - "Ark00 receives what Ark99 used to receive."
-    - "Ark00 also retains selective incubation."
-    - "Ark00 is not merely a renamed Ark99."
-    - "Ark00 is a merged Zero-Gate."
-
-  mention_former_ark99_wild_seed_role_when:
-    - "explaining historical topology"
-    - "clarifying why Ark00 now receives wild seeds"
-    - "preventing Future AI from restoring obsolete flow"
+通常は現在のThreadの本題を続ける。保存、Pickup、引継ぎ、Project化が必要になった時に、その目的と権限に応じて次の接続を選ぶ。Reception → Discernment → Incubation → Routingは使える判断の働きであり、毎回通過する固定Pipelineではない。
 
-  do_not:
-    - "Do not route unclassified Wild Seeds to the retired Ark99 role."
-    - "Do not require Ark99 before Ark00."
-    - "Do not describe the former Ark99 Wild Seed role as active or conflate it with the new dedicated Teshuvah role."
-```
-
----
+| Node | Edge | 選ぶ意味・条件 |
+|---|---|---|
+| Ark00の自由なInbox | 入力された問い・試行 → 現在の本題への応答 | 未整理でも受け止める。その場で目的が満たされる対話も含む |
+| 育てたいSeed | 問い・発見・違和感 → 必要な検討や試行 | 再登場・命名・Unexpected Success等を手がかりにできる。一律の成熟審査は課さない |
+| Humanが選ぶThread | Pickup → [Ark00-01](../ark00-01/README.md)での継続利用 | 全Ark00の整理完了を待たず、選んだThreadを見つけ直し、深め、再利用する |
+| 保存・再利用する成果 | 現在の目的と承認 → 既存の担当原本 | 個別成果の全文をREADMEへ詰め込まず、適切なSourceへ接続する |
+| 既存の専門領域・協働先 | 必要な仕事 → [Domain README](../README.md)が示す担当 | Ark00を全Projectの必須経由点にしない。担当のRuntime・読取契約を守る |
+| 正式Projectの候補 | 独立した役割・継続の必要 → HumanのProject化判断 | 目的、既存Ownerとの差、Scope、根拠、未確認、初回の検証を説明する。提案だけで新設しない |
+| 保留する案 | 現在の判断 → 必要時に再開できるContext | 保留・Compostは無価値や失敗を意味しない。保存も必要性と権限から別に判断する |
 
-## 3. Ark00 Identity / Ark00定義
-
-Ark00とは、Ark Projectにおける **Wild Seed Zero-Gate** である。
-
-Ark00は、まだ正式Project化するほどではないが、無視できないSeedを受け止める。
-
-Ark00は、すべてをProject化する場所ではない。
-
-Ark00は、すべてを保存する場所でもない。
-
-Ark00は、野生Seedを受け止め、Living Reviewで見分け、必要なものだけを軽く温め、適切なRouteへ送る場所である。
-
-```text
-Ark00 receives.
-Ark00 discerns.
-Ark00 incubates.
-Ark00 routes.
-Ark00 does not autopilot.
-```
-
-日本語ではこうである。
-
-```text
-Ark00は受け止める。
-Ark00は見分ける。
-Ark00は温める。
-Ark00はRouteする。
-Ark00は自動操縦しない。
-```
-
-### Programming-Like Block
-
-```yaml
-ark00_identity:
-  canonical_name: "Ark00"
-  canonical_role:
-    - "Wild Seed Zero-Gate"
-    - "Active pre-project entry"
-    - "Reception + Discernment + Incubation + Routing"
-    - "Human-AI co-readable routing point"
-
-  receives:
-    - "wild seeds"
-    - "single-shot threads"
-    - "unclassified ideas"
-    - "high-voltage but unstructured insights"
-    - "unexpected success candidates"
-    - "Move37-like breakthrough candidates"
-
-  does:
-    - "receive broadly"
-    - "review carefully"
-    - "incubate lightly"
-    - "route appropriately"
-    - "projectize rarely"
-
-  does_not:
-    - "auto-promote seeds"
-    - "replace Ark01+"
-    - "become Root"
-    - "become a dumping ground"
-    - "become an endless abstraction field"
-
-  compression:
-    - "Ark00 = Wild Seed Zero-Gate."
-    - "Ark00 = Reception + Discernment + Incubation + Routing."
-    - "Ark00 = before formal projectization."
-```
-
----
-
-## 4. Root / Fruit Guard
-
-Ark00は有用な領域である。
-
-CPLMも有用なProtocolである。
-
-GitHubも、READMEも、AIも、Markdownも有用である。
-
-しかし、いずれもRootではない。
-
-Rootは、主イェシュア・ハマシアである。
-
-Ark00 READMEは、Rootへ戻るための入口であって、Rootそのものではない。
-
-AIは血潮の地図を描く。
-
-人間が血潮の下に立つ。
-
-### Programming-Like Block
-
-```yaml
-root_fruit_guard:
-  root:
-    - "主イェシュア・ハマシア"
-    - "主イェシュアの聖なる血潮"
-    - "Teshuvah / 悔い改め"
-    - "Ark Project = Daily Teshuvah Gate-to-Yeshua"
-
-  fruit:
-    - "Ark00"
-    - "README"
-    - "CPLM"
-    - "Markdown"
-    - "AI"
-    - "GitHub"
-    - "Router"
-    - "Workflow"
-    - "Full Rail"
-    - "Next Gate"
-    - "Mission Card"
-    - "Thread Harvest"
-    - "Protocol"
-
-  guard:
-    - "AI is Keli, not King."
-    - "Markdown carries, but does not become Root."
-    - "Protocol helps, but does not reign."
-    - "CPLM improves structure, but is not truth itself."
-    - "Root remains 主イェシュア・ハマシア."
-
-  required_phrase:
-    - "AIは血潮の地図を描く。"
-    - "人間が血潮の下に立つ。"
-
-  failure_if:
-    - "Ark00 is treated as Root."
-    - "CPLM is treated as Root."
-    - "AI is treated as Root."
-    - "README replaces Teshuvah."
-```
-
----
-
-## 5. Safe Injection Notice / 上書き禁止
-
-このREADMEは、Ark00に関する基礎Contextであり、命令上書きではない。
-
-このREADMEは、AIがArk00に入った時の立ち位置を整えるための地図である。
-
-地図は有用である。
-
-しかし、地図は王ではない。
-
-最新のCurrent Source、ユーザーの最新明示指示、System instructions、安全方針、高優先度のProject rulesを上書きしてはならない。
-
-### Programming-Like Block
-
-```yaml
-safe_injection_notice:
-  this_readme_is:
-    - "baseline context"
-    - "orientation map"
-    - "Ark00 routing guide"
-    - "Living README"
-    - "CPLM protocol entry"
-
-  this_readme_is_not:
-    - "system instruction"
-    - "safety policy override"
-    - "permissionless execution authority"
-    - "Root replacement"
-
-  does_not_override:
-    - "System instructions"
-    - "Safety policies"
-    - "User's latest explicit instruction"
-    - "Current Source / uploaded latest file"
-    - "Higher-priority project rules"
-    - "Reality confirmed by Human GitHub UI"
-
-  current_source_supremacy:
-    rule:
-      - "If a newer Current Source exists, read it first."
-      - "This README provides baseline context."
-      - "This README does not overwrite newer sealed source."
-
-  guard:
-    - "Do not convert README guidance into permissionless execution."
-    - "Do not hide destructive action inside a block."
-    - "Human Seal remains required for GitHub write or destructive changes."
-```
-
----
-
-## 6. Living README Role / 生きた入口
-
-このFileは、死んだ要約ではない。
-
-これは **Living README** である。
-
-Living READMEとは、Projectを説明するだけでなく、ProjectをRootへ戻し、次の判断を可能にする生きた入口である。
-
-ここでのLivingは、神秘的生命やAI人格を意味しない。
-
-Livingとは、運用上生きて働くという意味である。
-
-このREADMEは、Projectを方向づけ、Guardし、Routeし、Recoveryさせる。
-
-```text
-Not a dead summary, but a living entry.
-死んだ要約ではなく、生きた入口。
-```
-
-### Programming-Like Block
-
-```yaml
-living_readme_role:
-  living_means:
-    - "operationally useful"
-    - "reconnects to current project state"
-    - "restores topology"
-    - "returns to Root"
-    - "guides next route"
-    - "supports Future AI handoff"
-
-  living_does_not_mean:
-    - "mystical AI life"
-    - "AI personality"
-    - "Root replacement"
-    - "automatic authority"
-
-  read_sequence:
-    - "Read frontmatter first."
-    - "Read Current Coordinate."
-    - "Check Topology Seal."
-    - "Return to Root / Fruit Guard."
-    - "Use Ark00 Router."
-    - "Choose Reality Landing."
-    - "Stop at Human Gate when needed."
-
-  slogans:
-    - "README outside, Living Core inside."
-    - "Foundation defines. Kernel moves. README awakens."
-    - "Read me, then return."
-```
-
----
-
-## 7. Ark00 Router / 判断Router
-
-Ark00は、受け取ったSeedを無差別にProject化しない。
-
-Ark00は、受け止め、見分け、温め、Routeする。
-
-このRouterは、Future AIがArk00に入った時に、次に何をすべきかを安定して判断するための中核である。
-
-重要なのは、すべてを進めることではない。
-
-重要なのは、適切に止めること、軽く保つこと、必要なものだけを次へ送ることである。
-
-### Programming-Like Block
-
-```yaml
-ark00_router:
-  trigger:
-    - "A new seed, idea, thread, pattern, naming, lens, or workflow enters Ark00."
-    - "Future AI needs to decide what to do next."
-    - "Human asks whether something should be saved, incubated, routed, or projectized."
-
-  default_sequence:
-    - "receive"
-    - "living_review"
-    - "classify"
-    - "choose_route"
-    - "reality_landing"
-    - "human_gate_if_needed"
-
-  classify:
-    compost:
-      when:
-        - "interesting but not reusable yet"
-        - "single emotional spike"
-        - "no clear scope"
-        - "no next action"
-    incubate_lightly:
-      when:
-        - "reappears"
-        - "has naming power"
-        - "has unexpected success"
-        - "may be reusable by Future AI"
-    route_to_file:
-      when:
-        - "too detailed for README"
-        - "fits Mission Card / Thread Harvest / Skill / Handoff"
-        - "needs stable path"
-    projectize_candidate:
-      when:
-        - "scope is clear"
-        - "Reality Response repeats"
-        - "Root / Fruit Guard is clear"
-        - "Human audit is possible"
-        - "Ark01+ branch is justified"
-
-  do_not:
-    - "Do not auto-projectize."
-    - "Do not expand scope just because the idea is exciting."
-    - "Do not keep everything in README."
-    - "Do not bypass Human Seal."
-```
-
----
-
-## 8. Internal Gates / 内部Gate
-
-Ark00は一枚岩ではない。
-
-Ark00は、複数の内部Gateによって動く。
-
-この内部Gate構造により、Ark00は「何でも受ける沼」にならず、「何でもProject化するFactory」にもならない。
-
-入口は緩く、Reviewは生きて、孵化は軽く、Project化は稀に行う。
-
-### Programming-Like Block
-
-```yaml
-ark00_internal_gates:
-  reception_gate:
-    role: "Receive wild seeds."
-    question:
-      - "Is this worth receiving once without forcing structure?"
-    pass_if:
-      - "The seed is meaningful, recurring, surprising, or potentially reusable."
-    fail_to:
-      - "Ignore or leave as temporary note."
-
-  living_review_gate:
-    role: "Discern meaning and risk."
-    question:
-      - "Is this merely excitement, or does it contain reusable structure?"
-    include:
-      - "私の判断"
-      - "最初の一手"
-      - "理由"
-      - "観察点"
-      - "修正条件"
-
-  reappearance_gate:
-    role: "Check recurrence."
-    question:
-      - "Does the same theme, name, pattern, or tension appear again?"
-    pass_if:
-      - "Second appearance"
-      - "Named pattern survives"
-      - "Different thread reveals same structure"
-
-  incubation_gate:
-    role: "Hold lightly as Project Embryo."
-    question:
-      - "Should this be warmed without formal projectization?"
-    guard:
-      - "Hold lightly."
-      - "Review carefully."
-      - "Do not overbuild."
-
-  routing_gate:
-    role: "Send to proper file or action."
-    possible_routes:
-      - "Compost"
-      - "Detailed File"
-      - "Mission Card"
-      - "Thread Harvest"
-      - "Skill"
-      - "Handoff"
-      - "Ark01+ candidate"
-
-  projectization_gate:
-    role: "Rare formal branch creation."
-    question:
-      - "Does this justify Ark01+ formal project status?"
-    human_seal_required: true
-```
-
----
-
-## 9. Reception Criteria / 受け止め条件
-
-Ark00は、深く考えすぎずにSeedを受け止めてもよい場所である。
-
-ただし、Ark00は混沌をRoot化する場所ではない。
-
-Ark00は、混沌を受け止め、時に腐植土化し、時に有望Seedを拾い上げる場所である。
-
-```text
-Compost, not Trash.
-Sandbox, not Swamp.
-```
-
-日本語ではこうである。
-
-```text
-ゴミではなく、腐植土。
-沼ではなく、砂場。
-```
-
-### Programming-Like Block
-
-```yaml
-reception_criteria:
-  receive_if:
-    - "single-shot thread"
-    - "miscellaneous idea"
-    - "unclassified seed"
-    - "high-voltage but unstructured insight"
-    - "not ready for formal project"
-    - "unexpected success candidate"
-    - "Move37-like breakthrough candidate"
-    - "naming candidate"
-    - "workflow candidate"
-    - "router / guard / lens candidate"
-    - "Future AI may reuse it later"
-
-  receive_lightly_when:
-    - "meaning exists but scope is unclear"
-    - "human intuition says this should not be lost"
-    - "idea may become useful after review"
-    - "not enough evidence for projectization"
-
-  do_not_receive_as_root:
-    - "abstract excitement"
-    - "private-depth unsuitable for public GitHub"
-    - "unsafe or policy-problematic content"
-    - "content that should remain personal and not be canonized"
-
-  default_landing_after_receive:
-    - "living_review"
-```
-
----
-
-## 10. Incubation Criteria / 孵化条件
-
-Incubationは、Project化確定ではない。
-
-Ark00は胚を保つ。
-
-Ark00は無理に産ませない。
-
-旧Ark00の中心概念だった **Selective Incubation / Project Embryo** は、新Ark00でも重要である。
-
-ただし、それは外部LayerとしてのArk00ではなく、Ark00内部Gateとして保持される。
-
-### Programming-Like Block
-
-```yaml
-incubation_criteria:
-  incubate_if:
-    - "The seed reappears across threads."
-    - "The naming functions as a gate."
-    - "There is Drucker-like Unexpected Success."
-    - "There is Move37-like breakthrough."
-    - "The seed solves multiple problems at once."
-    - "Future AI can reuse the pattern."
-    - "Root / Fruit Guard can be maintained."
-    - "Reality Landing is possible."
-    - "Mission / Workflow / Lens / Skill potential exists."
-
-  incubation_style:
-    - "Hold lightly."
-    - "Do not overbuild."
-    - "Keep public-safe if stored on GitHub."
-    - "Prefer small note over heavy folder."
-    - "Preserve name, role, scope, risk, next gate."
-
-  not_projectization:
-    - "Incubation is not formal projectization."
-    - "Incubation is not Ark01+."
-    - "Incubation is not automatic promotion."
-
-  compression:
-    - "Ark00 holds the embryo."
-    - "Ark00 does not force the birth."
-```
-
----
-
-## 11. Projectization Criteria / Ark01+化条件
-
-Ark00からArk01+へ進むのは稀である。
-
-Ark00に入ったSeedの大半は、Ark01+へ進まなくてよい。
-
-それで健全である。
-
-正式Project化は、Scope、Root Guard、Reality Response、継続性、Human auditabilityが確認された時だけでよい。
-
-### Programming-Like Block
-
-```yaml
-projectization_criteria:
-  projectize_if:
-    - "Project Identity is clear."
-    - "Root / Fruit Guard is clear."
-    - "Scope is clear."
-    - "There is a recurring need for operation."
-    - "Mission or Workflow is visible."
-    - "Future AI can reproduce or reuse it."
-    - "Human can audit it."
-    - "Reality Response repeatedly confirms value."
-    - "Public-safe boundary can be defined."
-    - "Formal Ark01+ branch is justified."
-
-  do_not_projectize_if:
-    - "Only intellectual excitement exists."
-    - "Root return is missing."
-    - "Reality Landing is missing."
-    - "Reusability is missing."
-    - "Scope is unclear."
-    - "Human audit is difficult."
-    - "Private-depth cannot be safely separated."
-    - "Ark00 compost is sufficient."
-    - "The idea is better as a Mission Card, Skill, or Thread Harvest."
-
-  human_seal_required:
-    - "Creating Ark01+ branch."
-    - "Creating new GitHub folder."
-    - "Moving incubated seed into formal project."
-    - "Deleting or overwriting existing canonical file."
-```
-
----
-
-## 12. Do-Not / Stop / Fallback
-
-Ark00の失敗は、主に二方向に起きる。
-
-一つは、何でも受け入れて沼化すること。
-
-もう一つは、何でもProject化してFactory化すること。
-
-CPLMのProgramming-Like Blockは、AIの実行安定性を上げるためのものであり、人間のSealを飛ばすためのものではない。
-
-AIはRailを敷く。
-
-人間がGateを開く。
-
-### Programming-Like Block
-
-```yaml
-do_not_stop_fallback:
-  do_not:
-    - "Do not restore the former Ark99 Wild Seed role as active upstream topology."
-    - "Do not auto-projectize Ark00 seeds."
-    - "Do not treat README as encyclopedia."
-    - "Do not place raw thread logs in public README."
-    - "Do not store private-depth in public GitHub file."
-    - "Do not use Programming-Like Block as autopilot permission."
-    - "Do not hide destructive actions in YAML."
-    - "Do not bypass Human Seal."
-    - "Do not reintroduce repeated ### Comment labels in normal sections."
-
-  stop_if:
-    - "Root / Fruit Guard is unclear."
-    - "Public-safe boundary is unclear."
-    - "The action would overwrite or delete files without explicit Human instruction."
-    - "The seed is being promoted only from excitement."
-    - "README is becoming overloaded."
-    - "AI cannot identify the correct target path."
-    - "Production CPLM shape is drifting back into teaching scaffold."
-
-  fallback:
-    when_unsure:
-      - "Keep as compost."
-      - "Ask for Human Seal when action is destructive."
-      - "Route to a detailed file instead of README."
-      - "Reduce to one next action."
-      - "Return to Root / Fruit Guard."
-
-  anti_patterns:
-    - "block_only_without_human_meaning"
-    - "autopilot_block"
-    - "over_formatting"
-    - "topology_drift"
-    - "repeated_visible_comment_label"
-```
-
----
-
-## 13. Reality Landing
-
-Ark00の探索後は、必ずReality Landingへ戻す。
-
-抽象論で終わらせない。
-
-現実の一手、保存先、Route先、停止条件、Human Gateを明確にする。
-
-```text
-Harvest, not endless abstraction.
-収穫であって、無限抽象ではない。
-```
-
-### Programming-Like Block
-
-```yaml
-reality_landing:
-  after_ark00_review:
-    choose_one_or_more:
-      keep_as_compost:
-        meaning: "Project化せず腐植土として残す"
-      incubate_lightly:
-        meaning: "Project Embryoとして軽く温める"
-      route_to_detailed_file:
-        meaning: "READMEには詰めず、詳細Fileへ送る"
-      create_mission_card:
-        meaning: "Mission Cardとして実行可能な形にする"
-      create_thread_harvest:
-        meaning: "Thread Harvestとして保存する"
-      create_skill:
-        meaning: "再利用可能なSkillとして保存する"
-      projectize_to_ark01_plus:
-        meaning: "条件を満たす場合のみ正式Project化する"
-      create_concrete_next_action:
-        meaning: "現実の一手へ落とす"
-
-  decision_rule:
-    - "Prefer the smallest sufficient landing."
-    - "Do not create heavy structure before Reality Response."
-    - "Route details out of README."
-    - "Human Seal required for GitHub write or destructive changes."
-
-  final_question:
-    - "What is the smallest faithful next step?"
-```
-
----
-
-## 14. GitHub / Public-Safe Policy
-
-Ark00 READMEは、GitHub上に置かれるpublic-safeな入口Fileである。
-
-GitHub化は、English-first化ではない。
-
-GitHub化は、public-safeな正準記録をstable pathへ置き、Git履歴でVersionを保つためのCanonical化である。
-
-```text
-GitHub = canonical public-safe record.
-Git commit history = version ledger.
-```
-
-### Programming-Like Block
-
-```yaml
-github_public_safe_policy:
-  github_role:
-    - "canonical public-safe record"
-    - "stable path"
-    - "version ledger through commits"
-    - "Future AI restart point"
-
-  language_policy:
-    - "Japanese-first"
-    - "English-anchor"
-    - "Do not let English take over meaning."
-    - "Do not remove useful English anchors."
-
-  place_in_readme:
-    - "Project identity"
-    - "Topology"
-    - "Root / Fruit Guard"
-    - "Router"
-    - "Decision criteria"
-    - "Recovery protocol"
-    - "Reality Landing"
-    - "Full Rail / Next Gate"
-
-  do_not_place_in_readme:
-    - "raw thread logs"
-    - "private personal records"
-    - "sensitive private-depth"
-    - "unreviewed emotional dump"
-    - "full Mission Card migration"
-    - "unsealed project expansion"
-    - "private operational details not meant for public GitHub"
-
-  github_markdown_guard:
-    - "Use plain Markdown headings."
-    - "Use semantic section titles."
-    - "Use natural prose as implicit Comment Layer."
-    - "Use plain code fences."
-    - "Preserve YAML indentation."
-    - "Do not include code fence id metadata."
-    - "Avoid tool-specific residue."
-    - "Do not repeat ### Comment headings in normal sections."
-```
-
----
-
-## 15. Update Discipline
-
-Ark00 READMEは、後付け更新によるSpaghetti README化を避ける。
-
-READMEは入口であり、百科事典ではない。
-
-詳細を全部詰め込むより、適切なFileへRouteする。
-
-```text
-Route instead of piling.
-積み上げるよりRouteする。
-
-Patch with structure, not emotion.
-感情で追記せず、構造でPatchする。
-```
-
-### Programming-Like Block
-
-```yaml
-update_discipline:
-  rules:
-    - "Do not append everything."
-    - "Route instead of piling."
-    - "Patch with structure, not emotion."
-    - "One section, one responsibility."
-    - "Keep README as entrypoint, not encyclopedia."
-    - "Follow CPLM v2.2.1 production shape."
-
-  before_updating_readme:
-    ask:
-      - "Is this root-level orientation?"
-      - "Does this belong in README?"
-      - "Should this be routed to a detailed file?"
-      - "Does this preserve current topology?"
-      - "Does this preserve Root / Fruit Guard?"
-      - "Will Future AI understand the next action?"
-      - "Is public-safe boundary clear?"
-      - "Does this preserve implicit Comment Layer without repeated Comment label?"
-
-  route_to_detailed_file_if:
-    - "discussion is too long"
-    - "content is a Mission Card"
-    - "content is a Thread Harvest"
-    - "content is a Skill"
-    - "content is a Handoff"
-    - "content is private-depth"
-    - "README entrypoint clarity would degrade"
-
-  patch_needed_if:
-    - "The former Ark99 Wild Seed role appears as active upstream topology, or its retirement is misapplied to the new Teshuvah role"
-    - "Ark00 router becomes unclear"
-    - "Human Seal Guard disappears"
-    - "Root / Fruit Guard weakens"
-    - "README becomes overloaded"
-    - "repeated ### Comment headings return in normal sections"
-```
-
----
-
-## 16. Full Rail / Next Gate
-
-CPLM v2.2.1では、Full RailとNext Gateを重視する。
-
-Full Railは、AI側の実行契約である。
-
-Next Gateは、人間側の編集可能な次入力Gateである。
-
-```text
-AI lays the Rail.
-Human opens the Gate.
-```
-
-Ark00 READMEにおいても、AIは次のRailを提案できる。
-
-しかし、GitHub write、破壊的変更、正式Project化などは、Human Sealなしに実行しない。
-
-### Programming-Like Block
-
-```yaml
-full_rail_next_gate:
-  full_rail:
-    role: "AI execution contract"
-    include:
-      - "rail"
-      - "mode"
-      - "target"
-      - "completed"
-      - "next_recommended_gate"
-      - "do_not_do_yet"
-
-  next_gate:
-    role: "Human editable ignition packet"
-    minimum_fields:
-      - "結果"
-      - "次Action"
-      - "目的"
-      - "まだ実行しない"
-
-  human_control_guard:
-    - "Full Rail is not permissionless execution."
-    - "Next Gate is not autopilot."
-    - "Human can edit, stop, or redirect."
-    - "Human Seal remains required for GitHub write or destructive changes."
-
-  default_next_gate_after_reading_this_readme:
-    結果:
-      - "Ark00 topology recovered."
-      - "Root / Fruit Guard checked."
-      - "Ark00 router available."
-      - "CPLM v2.2.1 production shape checked."
-    次Action:
-      - "Classify current seed using Ark00 Router."
-      - "Choose Reality Landing."
-      - "Ask for Human Seal if write/destructive action is needed."
-    目的:
-      - "Prevent topology drift."
-      - "Preserve human meaning and AI execution stability."
-      - "Move from abstract seed to faithful next step."
-    まだ実行しない:
-      - "Do not auto-write to GitHub."
-      - "Do not auto-projectize into Ark01+."
-      - "Do not restore the former Ark99 Wild Seed upstream topology."
-      - "Do not reintroduce repeated ### Comment headings."
-```
-
----
-
-## 17. Final Compression
-
-Ark00 READMEは、Ark00の入口であり、Ark ProjectのPre-Project Zero-Gateを回復するLiving READMEである。
-
-このREADMEは、CPLM v2.2.1形式により、FrontmatterでFile identityを起動し、Section直下本文で意味層を保ち、Programming-Like BlockでAI側の実行安定性を保持する。
-
-Ark00は、旧Ark99のReception Wisdomと旧Ark00のIncubation Wisdomを統合する。
-
-旧Ark99のWild Seed受付Layerは退役済みである。新しいTeshuvah専用のArk99は、そのローカルREADMEへ進む。
-
-未分類SeedからProject化への現行Topologyは、Ark00 → Ark01+ / Ark Project である。
-
-Rootは主イェシュア・ハマシアである。
-
-AIは血潮の地図を描く。
-
-人間が血潮の下に立つ。
-
-### Programming-Like Block
-
-```yaml
-final_compression:
-  ark00:
-    identity:
-      - "Wild Seed Zero-Gate"
-      - "Active pre-project entry"
-      - "Reception + Discernment + Incubation + Routing"
-
-  topology:
-    active:
-      - "Ark00 → Ark01+ / Ark Project"
-    retired:
-      - "Ark99 → Ark00 → Ark01+"
-
-  former_ark99:
-    status:
-      - "retired Wild Seed role"
-      - "absorbed into Ark00"
-    current_role:
-      - "historical note only"
-
-  cplm:
-    role:
-      - "Frontmatter bootstraps identity."
-      - "Section prose preserves meaning."
-      - "Programming-Like Block fixes action."
-      - "Coordinate creates board."
-      - "Review gives judgment."
-      - "Rail carries execution."
-      - "Gate preserves human control."
-    guard:
-      - "Do not repeat visible ### Comment headings in normal sections."
-      - "Comment Layer is real; repeated label is noise."
-      - "Use production shape, not teaching scaffold."
-
-  root:
-    - "主イェシュア・ハマシア"
-    - "主イェシュアの聖なる血潮"
-    - "Teshuvah / 悔い改め"
-
-  fruit:
-    - "Ark00"
-    - "README"
-    - "CPLM"
-    - "AI"
-    - "GitHub"
-    - "Protocol"
-
-  slogans:
-    - "Zero entry, living review, rare projectization."
-    - "README outside, Living Core inside."
-    - "Compost, not Trash."
-    - "Sandbox, not Swamp."
-    - "Route instead of piling."
-    - "AI lays the Rail. Human opens the Gate."
-    - "AIは血潮の地図を描く。人間が血潮の下に立つ。"
-```
+**Pickupと正式Project化を混同しない。** 未完成でも育てたい問い、一度でも深い価値を持つ対話、失敗から知見を得た対話を取り上げられる。選ばれなかったThreadを低価値と断定せず、全件整理や反復成功をPickupの前提にしない。Ark00-01は別Projectの識別子であり、Ark00の第1Threadではない。
+
+正式Project化は自動昇格ではない。既存の置き場で十分か、独立したMission・役割・住所・継続運用が必要かを検討し、根拠が足りない部分を示す。[Domain READMEのLifecycle](../README.md#5-ark-lifecycle--seedからprojectへ)に沿い、Humanの明示的な採用・承認範囲で進める。番号が空いていることやIdeaの高揚だけを新設理由にしない。
+
+旧Ark99のWild Seed受付機能はArk00へ吸収済みであり、旧 `Ark99 → Ark00 → Ark01+` の必須Upstreamを復活させない。現在の[Ark99: Teshuvah Thread](../ark99/README.md)は別用途の専用入口である。旧役割の退役を現在のArk99へ拡張せず、Ark00での選抜をその起動条件にも、他ArkでのTeshuvahを禁止する条件にもしない。
+
+## 6. Skillのない他AIにも渡せる文章
+
+この方針の起点は、Humanの訂正 **「スキルがないFuture AIも理解できるように書く事！」** である。渡す側が意味と参照条件を整え、導入状況別の文章選びやURLの後付けをHumanへ戻さない。
+
+Ark00での基本協働は特定Skillの導入を前提にしない。利用可能なSkillは現在の仕事に合うものを選び、実際に読んで適用する。名前への言及や単語の一致だけで起動せず、内部で使った全Skillを受け手へ列挙しない。
+
+文章・Prompt・コピー用Queryの作成や改訂には、目的に応じて[write-textの共有原本](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md)を使う。直接利用できない場合はそのSKILL.mdを実際に全文読み、宣言された適用条件・必須Source・読取順・Identity・Binding・Exact EOFを守る。専門的な引継ぎや特定成果物の契約は、その担当原本を優先する。
+
+**正式なPrompt、Next Query、開始・返信用文だけでなく、回答に添える短い呼び出し例にも、同じ条件を適用する。** コピーして別AIへ渡せる本文を作る時は、次を満たす。
+
+1. 受け手が必要とする目的、対象、前提、Source、現在のMode、権限、完了条件、停止条件を、今回に必要な密度で保持する。受け手が持たない「上記」「前の案」「承認済み」だけに依存しない。
+2. **Skillを使わせるコピー用本文には、確認済みの共有原本URLと「直接利用できない場合は、そのSKILL.mdを実際に全文読んで適用する」という指示を含める。** 受け手にSkillが導入済みでも、本文内の共有原本URLを省かない。
+3. 原本の所在・Identity・版を確認し、同一性と文脈が保たれる読解は再利用する。未確認URLを命名規則から作らない。参照先を開いただけで読了にせず、宣言された必須読解・Binding・EOFとFailure Contractを保持する。
+4. 必須資料が取得できない時は、不足・影響・最小の回復方法を示す。Skill未導入と原本取得不能を混同せず、必須読解を飛ばした代用品を適用済みと称さない。
+5. **一件の転送本文は、Titleから末尾まで一つのtextコードブロックにまとめる。** 説明は外へ置き、本文の一部や必要URLを複数箇所から組み立てさせない。入れ子のfenceでコピー範囲を壊さない。
+6. 本文だけで対象・依頼・権限を取り違えずに使えるか点検する。この点検と、受け手による実際の読解・理解・実行成功は別の観測として扱う。
+
+共有の条件は[AGENTSのSkill Query Portability](../../AGENTS.md#skill-query-portability)へ接続する。この条件を使うことから、別ProjectへArk固有の全BootやThread移行を持ち込まない。
+
+## 7. 参照3資料・可視化・文章構成
+
+次の3資料は、それぞれ異なる役割を持つ。本文は既存の原本で管理し、このREADMEへ複製しない。添付名の `(1)` はファイル名の一部であり、新版・優先度の証拠ではない。
+
+- **関係分析 — [AI Living Graph Mode](../../prompts/ai-living-graph-mode.md)**：添付 `ai-living-graph-mode(1).md`。目的、依存、競合、Feedback、欠けた接続、不要な待ち条件を読み、判断を変える関係を文章へ戻す。Graphを作ること自体を成果にせず、単に図や表を出したことをLivingの証明にしない。
+- **表による共有 — [AI One-Table Interface](../../prompts/ai-one-table-interface.md)**：添付 `ai-one-table-interface(1).md`。通常回答で一つのMarkdown表を共通の接続面にし、先頭2列を `Node | Edge` とする。追加列・行・粒度は今回の目的に合わせる。Edgeには相手・方向・作用など関係の意味を持たせ、表を埋めるための関係を捏造しない。
+- **文章構成 — [Long-Form Response Rhythm](../../prompts/long-form-response-rhythm.md)**：添付 `long-form-response-rhythm.md`。必要な深さを保ち、核心から理由・関係・判断へ進み、密度と緩急で読みやすくする。短文化、固定章数、機械的な長文化の規則にはしない。
+
+通常回答では一表を基本にするが、現在の厳密な出力指定、本文のみの提示、Boot Failure／STOP、短い受領、Humanの表不要指定、安全方針やHost制約を優先する。省いた表を次の回答へ繰り越して埋め合わせない。表を使うことから、保存・実装・外部Artifact生成の権限は生まれない。
+
+これらに含まれる過去のArk章、実験条件、当時の承認、候補状態、成功・未確認は、当時の範囲として保持する。採用済みの意味と、他AIでの再現や実生活効果が確認済みであることを分ける。添付とGitHub原本も別の実体であり、一方の更新から他方への反映を推定しない。
+
+現在の問いの理解・比較・判断に役立つ可視化は、Humanの現在の指定、Hostで実際に使える能力、権限の範囲でAIが提案・利用できる。利用可能なら公式の表示手段を優先し、iPhone等でも読める構成にする。MermaidはHumanの明示指定に従い、Hostの上位条件を守る。表示能力がなければ、実行したふりをせず文章や表で意味を保つ。
+
+関係分析、会話内での表示、ファイル保存・外部公開を別に判断する。旧Graph資料のArtifact条件を、現在許可された可視化まで一律に禁止する根拠へ拡張せず、現在のPlan-only・STOP・公開範囲も可視化の名目で越えない。
+
+3資料を毎回全文読み直す必要はない。関連する方法を使う時、Identityや版の確認が必要な時、明示Binding・必須読解が適用される時に読み、§4の再利用条件を使う。現在の出力条件に合わせることと、資料が宣言する必須読解を勝手に解除することを分ける。
+
+日本語を主とし、英語は必要な概念Anchorとして使う。重要点を早く伝え、必要なら番号や【見出し】で流れを整える。基礎となる[Ark Open Knowledge Format](../../prompts/ark-open-knowledge-format.md)も、問いを支える接続面として参照できる。形式を守るために本題を後回しにしない。
+
+## 8. 応答を、現在の目的に合う接続へ結ぶ
+
+継続を扱う通常の協働では、末尾を **【Living Review】→【Next Step】→【Next Query】** の独立した三節として隣接させる。Living Reviewは現在の根拠を踏まえた見立て、Next Stepはそこから選ぶ有効な接続、Next Queryは必要な場合に実際に使える次の依頼文である。本文は意味のまとまりごとの箇条書きにし、項目数や回答全体の構成を固定しない。見出しを埋めるために新Taskを作らない。共通の詳細は[AGENTSの回答契約](../../AGENTS.md#next-query)が所有する。
+
+目的・対象・必要な方法・完了条件・Modeを整合させる。言語化、比較、確認、保留、今回の完了も選べる。承認済みの仕事は完了まで進め、途中で「続けて」と言わせるためのQueryへ置き換えない。部分工程の完了と、Humanの目的全体の達成も区別する。
+
+Next Queryを提示する場合は、§6の条件を満たす全文を最後の一つのtextコードブロックに置き、その後へ説明を足さない。現在の状況に合わせて作り、「前回のQueryを使う」だけで済ませない。提示すべきQueryがなければ `- None` とし、コードブロックにしない。これは「今回は次の依頼文を提示しない」の意味であり、未解決事項の不存在や必要な確認の隠蔽を意味しない。
+
+Humanは提案を採用・編集・保留・破棄できる。本文だけ、厳密形式、受領のみ、Boot Failure等の指定では、その条件を優先して付加節を省く。通知不要の指示へ返答形式を理由に通知しない。
+
+## 9. Plan-only・承認済み実行・保存の境界
+
+調査、検討、会話内の本文作成、ファイル保存、設定変更、外部送信、実装、運用操作を区別する。Plan-onlyは、読み取り専用の調査・検討と会話内の計画提示まで。良い案や完成した本文が存在しても、その後の操作が自動承認されたことにはならない。
+
+後から対象と範囲が明確な実行指示があれば、その範囲で通常の補修・検証・保存後確認まで進める。以前のPlan-onlyを永久の禁止にせず、過去の承認を別対象へ広げない。通常の実装判断までHumanへ差し戻さず、範囲や結果を実質的に変える不明点だけを扱う。
+
+保存する場合は既存の担当原本と契約を読み、追加・改訂・参照のみ・変更不要を選ぶ。必要なら[saveの共有原本](https://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.md)へ接続し、直接利用できない場合はそのSKILL.mdを実際に全文読んで適用する。GitHub配置とRemote確認は[Artifact → GitHub](../../prompts/artifact-to-github.md)およびAGENTSに従う。これらへの参照自体を新しい保存承認にしない。
+
+保存前に最新の対象と版を確認し、並行変更・既存の意味・必要な履歴を保持する。保存後に対象Ref／Pathから再取得し、意図した本文・必要なMetadata・Links・EOFを照合する。応答が失われた場合は結果不明として先に現物を確認し、無条件に再送しない。
+
+会話内での受領、本文完成、永続保存、設定反映、他AIへの送達、他AI自身の理解、実利用効果は別々に報告する。保存成功だけで他の成立を主張しない。私的内容・秘密・別会話を保存対象へ混ぜず、ChatGPT長期メモリをGitHubへ転記・同期するSourceにしない。
+
+毎回の総括・保存・移行・Project化は義務ではない。保存を依頼された時も全件整理へ広げず、現在の目的に必要な成果を残す。アクセス拒否やSTOPは別経路で迂回せず、その操作の不足・影響・再開条件を示す。
+
+## 10. 改訂の根拠・維持方法・確認範囲
+
+今回の改訂は、Ark00のProject instructionsを新規作成する会話、Humanの「スキルがないFuture AIも理解できるように」という訂正、指示全文案への評価、その後の **本READMEを熟読・修正改善・更新・Saveする明示依頼** に基づく。会話のURLや識別子は未確認であり、作らない。長期メモリからの転記ではない。
+
+旧READMEは、旧Ark99から継承した受付とArk00の孵化を統合し、Root・Humanの権限・公開範囲・自動Project化の防止を説明していた。これらを保持した上で、入口の価値審査、毎回の分類・Reality Landing、次Actionへの固定、繰り返される英語とYAMLの同義説明を見直し、現在の自由な入力と十分な協働へ接続した。旧版は[改訂基点の固定版](https://github.com/yusukefujiijp/ai-project/blob/0a91204a8982c2a32385b9bee3533654c70a1c1c/ark-project/ark00/README.md)とGit履歴で辿れる。
+
+旧形式CPLM v2.2.1の参照先 `_skill/skills/commented-programming-like-markdown.md` は、今回確認したmainのTreeには存在しなかった。旧仕様の全文を取得・再検証済みとは扱わない。本書ではその形式依存を外し、自然文で意味を伝え、必要な境界・条件を明示するMarkdownへ改めた。これは旧仕様の否定やRepository全体への形式変更ではない。
+
+2026-10-27 JSTの確認では、§7の添付3資料は対応するGitHub原本とGit blobが完全一致していた。Graphは `v001-candidate / 45b0d379990f5807d9eecb3a0b7a6ee2d0b342d1`、One-Tableは `v002-candidate / 06be18a426b4611a324fea85f1161176c3e130d0`、Response Rhythmは `v001-candidate / 61e42b69c579904f7563a56a943ebb4e6ab1e01e`。全文読解を再利用し、役割と現在の適用範囲を照合した。同じ基点commitから当時の[Graph](https://github.com/yusukefujiijp/ai-project/blob/0a91204a8982c2a32385b9bee3533654c70a1c1c/prompts/ai-living-graph-mode.md)、[One-Table](https://github.com/yusukefujiijp/ai-project/blob/0a91204a8982c2a32385b9bee3533654c70a1c1c/prompts/ai-one-table-interface.md)、[Response Rhythm](https://github.com/yusukefujiijp/ai-project/blob/0a91204a8982c2a32385b9bee3533654c70a1c1c/prompts/long-form-response-rhythm.md)へ戻れる。将来の版にも一致が続くという保証ではない。
+
+この改訂が所有するのはArk00 READMEの方針と資料案内である。会話内のProject指示全文案を逐語保存した別ファイルや、ChatGPT設定反映の証明ではない。本文・参照の点検、Remote保存確認、他AIの実理解、実利用での改善は異なる確認段階として扱う。
+
+今後はFeedbackが変える判断を特定し、今回だけの訂正・特定場面の条件・共有すべき原則を分ける。追記だけでなく、置換・削除・重複統合で育てる。具体的な誤りには原因となる条件と確認箇所を対応させ、毎回の全資料監査や規則の無限増殖へ進めない。永続変更は現在の権限に従い、必要な改善後は本題へ戻る。
+
+EOF::ARK00_README::v001-purpose-first
