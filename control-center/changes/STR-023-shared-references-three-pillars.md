@@ -1,13 +1,14 @@
 ---
 title: "STR-023 — 共有Referencesの三本柱と、成功の本文を保持するJSONL移行"
 canonical_path: "control-center/changes/STR-023-shared-references-three-pillars.md"
-version: "v001"
+version: "v002"
 created: "2026-10-26"
 updated: "2026-10-26"
-status: "Implementation prepared; remote publication and readback are recorded after observation"
+status: "Implementation published; all 21 changed files fully reread and matched; downstream effects unverified"
+change_reason: "実装commitと全変更対象の全文・blob再取得一致を観測し、同じ記録へ完了証拠を追記する"
 base_commit: "4869052151a33ce3b2f66b450686d462214ad0b7"
 owner_thread: "Ark28:07"
-expected_eof: "EOF::STR_023_SHARED_REFERENCES::v001"
+expected_eof: "EOF::STR_023_SHARED_REFERENCES::v002"
 ---
 
 # STR-023 — 共有Referencesの三本柱
@@ -54,11 +55,21 @@ HumanはReport側で成立したfeedback・lessons・success-casesの三本柱�
 
 Feedbackとcaseの汎用行形式・読取・更新契約は共有子READMEが所有し、Report固有の対象・初期収録・Artifact配置接続はReport側に残す。lessonの既存契約は移さない。行schemaはfeedback 1 / lesson 2 / case 1であり、同じ番号へ揃える必要はない。
 
-## 5. 検証と結果の更新
+## 5. 保存と再取得の確認結果
 
-保存前にJSONL全行、重複key/ID、型・日時・出典、改行規則を検査する。九行の復元本文と元blob、既存五case_id、相対参照、旧URL→行ID→固定原文、版・EOF、許可した変更対象と保護対象を照合する。今回の意味検査は移行時の内容保持と参照に限り、別AIへの送信試験や生活上の試行ではない。
+[実装commit `836e814088e444e51f52ac540a872cd7620ad23e`](https://github.com/yusukefujiijp/ai-project/commit/836e814088e444e51f52ac540a872cd7620ad23e)をmainへ保存した。親commitは`4869052151a33ce3b2f66b450686d462214ad0b7`、実装treeは`a053512f60a869b7c5a9cacd52b93de263f1b24b`。期待する親SHAを指定し、forceを使わず更新した。実装後のmain再確認時刻は`2026-10-26T11:51:44Z`で、同じ実装commitを指していた。
 
-Remoteへの公開・全文再取得は、この版の時点ではまだ観測として記録していない。実装commitを保存し、変更対象のRemote本文・blobと対象外の保持を確認した後、この同じ記録を更新する。Tool成功だけで保存完了とはしない。
+- 変更範囲は既存十七ファイルの更新・四ファイルの追加・削除ゼロ。Recursive treeを比較し、対象外の既存七百四blobがすべて同一であることを確認した。
+- 変更対象二十一ファイルを実装commitからそれぞれ全文再取得し、保存予定本文との完全一致とblob SHA一致を全件確認した。Toolの保存成功だけを完了根拠にしていない。
+- 共有Feedbackは一件、共有lessonは既存五件のまま、共有成功は九件となった。Report側のFeedback二件・lesson一件・成功一件、Skills lesson七件のデータ本文は変更していない。
+- 九件すべてについて`legacy_document.front_matter + case + legacy_document.suffix`から元の全文を復元し、§3の移行元blobと一致した。既存case_id五件、元の日付・出典・評価・Correction・当時の未確認を保持した。
+- JSONL全行の重複key/ID、型・日時・空でない出典、UTF-8/LF、空行・独立したEOF行の不存在を検査した。READMEと本文内の版・canonical_path・宣言EOF、旧URL→行ID→固定原文の対応も確認した。
+- 対象本文と復元した原文に含まれる相対Markdown参照二百八十件の参照先が存在することを確認した。これは外部URL全件のHTTP応答や全anchor、全環境の厳密読取契約を試験したという意味ではない。
+- 共有Referencesの歴史説明、Report Feedbackの初期収録説明は保存前後で一致する。AGENTS・ARK・GCI・登録Skill・設定・予定・他ThreadのState・wikiは変更していない。
+
+主要な保存済みblobは、共有Feedback JSONLが`2ef142a2c3a33adf7ce7fe1b75df5f32512a7539`、共有成功JSONLが`cfe467b17a832e0b24dd8f9842eeabd30d2096ef`、共有References入口が`c3631c2d6a40f47c19690c22f6b41d4c98424236`である。すべて上記実装commitから取得できる。
+
+本v002は、実装commitと二十一ファイルの再取得で既に観測した結果を記録する。実装commit内の本記録はv001であり、本v002の保存commitはGit履歴で別に識別する。記録更新を実装の再実行にせず、本記録だけの保存・再取得確認へ進む。文書・データと参照の整合が確認済みであることと、全AIによる自然な読込・理解・再利用や実生活上の効果が実証されたことは分ける。
 
 ## 6. 復元と次の接続
 
@@ -66,4 +77,4 @@ Remoteへの公開・全文再取得は、この版の時点ではまだ観測�
 
 承認範囲の保存・確認が終わればHuman Reviewへ戻る。全AIの自然な読込・理解・再利用・長期効果は別の観測であり、未確認を新しい必須Taskにしない。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human Foreground One、Correction・STOP・Final Sealと適用Guardを保持し、AI・記録をKeliとして扱う。
 
-EOF::STR_023_SHARED_REFERENCES::v001
+EOF::STR_023_SHARED_REFERENCES::v002
