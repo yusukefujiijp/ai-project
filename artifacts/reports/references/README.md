@@ -1,14 +1,14 @@
 ---
 title: "Report References — 経験を、次の制作と利用へ"
 canonical_path: "artifacts/reports/references/README.md"
-version: "v002"
+version: "v003"
 created: "2026-10-26"
 updated: "2026-10-26"
-updated_reason: "Add the approved feedback owner and distinguish reactions, reusable judgments and success meaning without mandatory conversion or duplicate storage."
-role: "Report learning entry and owner routing; bodies and data contracts belong to the children"
+updated_reason: "Connect child guides to shared feedback and case contracts while retaining completed Report data and formation history."
+role: "Report learning scope and owner routing; children connect to shared data contracts"
 primary_reader: "Current AI / Future AI / Human review"
 validation_boundary: "Structure and persistence are distinct from reader understanding and sustained practical effects"
-expected_eof: "EOF::REPORT_REFERENCES::v002"
+expected_eof: "EOF::REPORT_REFERENCES::v003"
 ---
 
 # Report References
@@ -37,7 +37,7 @@ Reportが扱う題材の事実・経験・現在状態は、その領域の担�
 
 ## 3. 意味と更新の責任
 
-このREADMEは収録範囲・読む場面・所有先の選択を、子READMEは各記録の利用・形式・更新契約を、JSONLは反応・判断・成功の本文を所有する。Reportの内容・読者・保存方法の現行規則を、複数の場所へ独立して定義しない。JSONLを選んだことから、作品自体の読者がAI専用になったとは判断しない。
+このREADMEは収録範囲・読む場面・所有先の選択を、子READMEはReport固有の利用条件と共有形式・更新契約への接続を、JSONLは反応・判断・成功の本文を所有する。Reportの内容・読者・保存方法の現行規則を、複数の場所へ独立して定義しない。JSONLを選んだことから、作品自体の読者がAI専用になったとは判断しない。
 
 Humanの報告・評価、直接確認した結果、AIの解釈、未確認を分ける。過去の承認を現在の実行許可にせず、読取・保存・別AIの理解・実利用効果を別々に扱う。権限と公開範囲は[AGENTS](../../../AGENTS.md)、配置とRemote再取得は[Artifact → GitHub](../../../prompts/artifact-to-github.md)に従う。私的Workや長期メモリを転記・同期せず、今回承認された公開可能な形成内容だけを扱う。
 
@@ -53,4 +53,8 @@ Ark28:07でのLiving ReviewとPlan Modeを経て、Report入口とこの配下�
 
 2026-10-26、HumanがFeedbackの独立保存と三本柱の分担を問い直し、Plan Modeで提示した四ファイルの整備と直近二件のFeedback保存を承認した。表現形式・調査範囲への反応と、初回Reportの内容評価・読書体験への反応を原文で収録する。既存のlesson・成功事例と作品本文は保持し、番号付け・HTML化・Skillや設定の変更へは広げない。保存された反応からの学習と実際の改善は、今後の利用で別に確かめる。
 
-EOF::REPORT_REFERENCES::v002
+## 6. 共有契約との接続
+
+2026-10-26、共有Referencesの三本柱化に合わせ、Feedbackとsuccess-caseの汎用的な読取・行形式・更新契約を共有側へ接続した。Report固有の対象と初期記録は保持し、二件のFeedback・一件のlesson・一件の成功事例を再登録していない。今回の整合と検証は[STR-023](../../../control-center/changes/STR-023-shared-references-three-pillars.md)へ戻る。
+
+EOF::REPORT_REFERENCES::v003

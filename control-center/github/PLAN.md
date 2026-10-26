@@ -1,18 +1,18 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.22.0"
+version: "0.23.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
 status: "STR-018/019 remain complete; Main10→11 continuation prepared for the Human-selected root/entry/document-role comparison. Source10 owns final publication receipts; Target reconstruction is separate."
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-20"
+updated: "2026-10-26"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "Prepare Main10→11 continuation and the Human-selected root/entry/document-role comparison; keep STR-018/019 completion and original diagnosis history."
+updated_reason: "Add a scoped STR-023 References continuation route; preserve Main11 ownership, prior transition facts and all diagnosis history."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.22.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.23.0"
 current_observation_base: "8293137088ca9645a3592a75d9e7d6404d2680ae"
 prior_current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
 change_record: "../../ark-project/ark27/ark27-10/state.json"
@@ -26,6 +26,8 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 本書は**ai-projectのGitHub整理計画**である。共通の整理目的は[親入口](../README.md)、GitHub領域の使い方・形成史は[専門入口](README.md)へ。個別案件の承認・実施・検証は[ARCHIVE](ARCHIVE.md)／[changes](README.md#change-records)が所有する。本書に第二の承認台帳や、各Thread・生活TaskのCurrentを作らない。
 
 ## current
+
+**2026-10-26：共有References三本柱化の限定継続。** Ark28:07の現在のHuman続行指示に基づく、共有Feedback・既存九事例のJSONL化・専門側契約の接続・旧参照保持は[STR-023](../changes/STR-023-shared-references-three-pillars.md)が所有する。本PLANはその実装結果を二重管理せず、同記録へ戻る。既存Report三本柱・STR-018/019の完了を再実行せず、Mainの根本再設計・他Thread State・Skill/設定変更を引き取らない。以下の過去時点の形成・承認・観測は保持する。
 
 ### 現在の主担当と次の判断 — Ark27:11への継続準備
 
@@ -584,4 +586,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.22.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.23.0
