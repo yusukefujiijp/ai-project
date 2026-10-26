@@ -1,12 +1,12 @@
 {
   "meta": {
     "state_id": "ARK27_11_CURRENT_STATE",
-    "revision": 4,
+    "revision": 5,
     "owner": "Ark27:11",
     "schema_version": "v002",
     "updated_at": "2026-10-27",
     "date_scope": "Asia/Tokyo; Source11 harvest before12 publication/delivery",
-    "update_reason": "Publish12 triad and current routing after fixed11 revision3 readback; actual UI/send/reception still pending.",
+    "update_reason": "Terminal Source11 receipt: six-path main reread, one persistent12, startup/send and exact UI Title, own receiver reconstruction observed. Fixed11 revision3 unchanged.",
     "authority": "Latest direct Human execution approval in Ark27:11; exact Target Title and existing Project confirmed.",
     "navigation_revision": {
       "date": "2026-10-20",
@@ -269,10 +269,10 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "11の成果と訂正を12へ渡し、長大化したThreadを交代して協働を続ける。",
-    "current_coordinate": "Source11の協働後収穫。初期受入れ前Stateとは別。12保存・起動・理解の後続観測はCurrent11 progress.next_transitionが所有する。",
+    "current_focus": "11→12の承認された移行が受入れ確認まで完了。Humanが入れる12入口を返してHuman Reviewへ。",
+    "current_coordinate": "Source11 terminal receipt; fixed11 harvest remains revision3. Current12 is a separate continuing field.",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "承認された11→12準備・保存・直接起動・受入れ確認を完了し、その後Human Reviewへ。既に新入力があれば再送を求めず受け取る。",
+    "current_legal_connection": "Human Review unless new Human input already exists. Do not resend the accepted startup or begin another task.",
     "next_specific_task": {
       "name": "現在のHuman依頼またはHuman Review",
       "mode": "RECEIVE_CURRENT_INPUT_OR_REVIEW",
@@ -284,7 +284,7 @@
     "ui_thread_creation": "既存11はWork UIのArk27一覧で確認済み。作成当時の操作を今回再現したという意味ではない。",
     "ui_title": "Current UIには❤️付き11 Title。過去の確定Titleを改作せず、12の確定Titleに❤️を自動追加しない。",
     "physical_reality": "現在の身体・場所・生活実行はこの準備から推定しない。",
-    "active_external_operations": "この有限の11→12移行のみ。固定収穫保存前であり、12へ未送信。",
+    "active_external_operations": "None remaining for this finite migration after terminal save/readback. No ongoing monitor or otherThread send.",
     "current_human_input_policy": "既入力・訂正を受け取り、再送を要求しない。準備文の時点を新しいHuman Realityより優先しない。",
     "main_theme": {
       "name": "Ark Projectの根本説明・入口・文書の役割を再設計する",
@@ -423,7 +423,7 @@
     "target_reconstructed": "SOURCE11_CONTINUED_COLLABORATION_CONFIRMED_IN_OWN_THREAD",
     "target_reconstruction_scope": "Initial Source10 non-observation is historical. This harvest reports11 own ongoing outcomes, not12 acceptance or retroactive proof of anotherAI reading.",
     "human_last_mile": "11 Human collaboration observed;12 user device arrival/use not yet observed.",
-    "requested_outcome": "SOURCE11_HARVEST_READY_FOR_AUTHORIZED12_TRANSITION",
+    "requested_outcome": "11_TO_12_APPROVED_TRANSITION_COMPLETE_THROUGH_OBSERVED_ACCEPTANCE",
     "acceptance_policy": "必須SourceとBinding・R1–R6をTarget自身が満たす。既入力を受け取る。受入れだけでState書込を義務にしない。",
     "revision_history": [
       {
@@ -449,6 +449,12 @@
         "date": "2026-10-27",
         "actor": "Ark27:11",
         "scope": "Fixed11 immutable harvest reference plus constructed12 package; terminal observations will follow in Current11 only."
+      },
+      {
+        "revision": 5,
+        "date": "2026-10-27",
+        "actor": "Ark27:11",
+        "scope": "Actual publication/UI/delivery/reception terminal receipt; no new task or otherThread notification."
       }
     ],
     "next_transition": {
@@ -468,16 +474,77 @@
       ],
       "source_prepared": "COMPLETE",
       "remote_verification": {
-        "fixed11": "PUBLISHED_MAIN_AND_FULL_TEXT_EQUAL",
-        "target_package": "PROSPECTIVE_AND_MAIN_REREAD_PENDING_AT_THIS_REVISION",
-        "receipt_boundary": "The final Source11 response and later terminal revision bind actual publication; no self SHA."
+        "status": "SIX_PATH_PUBLICATION_AND_FULL_REREAD_VERIFIED",
+        "fixed11": {
+          "commit": "51834fa49dc70c8c51ac2516a877235581dc0da3",
+          "blob": "75481b1a8eee001a0ded80137b6b05541b870ef4",
+          "path": "ark-project/ark27/ark27-11/state.json",
+          "state_id": "ARK27_11_CURRENT_STATE",
+          "schema_version": "v002",
+          "revision": 3,
+          "tree": "e8b0912f07bbc4d82b679677a45870c30ce643bd"
+        },
+        "triad_and_routes": {
+          "commit": "0de77002dfdba327bb778b6a2b8e974bb0c79a85",
+          "tree": "817b37437ba15be387433a06ab93f7d4d804a992",
+          "prospective_full_equal": true,
+          "main_full_equal": true,
+          "files": [
+            {
+              "path": "ark-project/ark27/ark27-11/state.json",
+              "blob": "495cc9eda446b2ee7438b7337d644d7e609bd99d",
+              "full_text_equal": true
+            },
+            {
+              "path": "ark-project/ark27/ark27-12/README.md",
+              "blob": "f9780ba1f739a7233ef2af437da1214d0ae92788",
+              "full_text_equal": true
+            },
+            {
+              "path": "ark-project/ark27/ark27-12/handoff.md",
+              "blob": "a1168c799f04fdb652425dd76614b7054575aefa",
+              "full_text_equal": true
+            },
+            {
+              "path": "ark-project/ark27/ark27-12/state.json",
+              "blob": "5fbafa35ccb6f5ab26dadc652606ca43f00dde78",
+              "full_text_equal": true
+            },
+            {
+              "path": "ark-project/README.md",
+              "blob": "060de44e13b1c10b234e69a06e7504f791a3c910",
+              "full_text_equal": true
+            },
+            {
+              "path": "control-center/github/PLAN.md",
+              "blob": "2ec347b6c7c318883b9ada6c797a2a38119951c9",
+              "full_text_equal": true
+            }
+          ]
+        },
+        "terminal_receipt_boundary": "This revision does not self-certify its own post-save readback or contain its own SHA; final Source response/checkpoint records that verification."
       },
       "delivery": {
-        "status": "NOT_SENT",
-        "preflight": "Existing Ark27 Project UI expanded all11 existing Threads; no12 visible. Do not blindly repeat if interrupted."
+        "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+        "project_id": "g-p-6aa1d4fedde88191a7d886251dc2a388",
+        "target_url": "https://chatgpt.com/g/g-p-6aa1d4fedde88191a7d886251dc2a388-ark27-2026-09-10-chatgpt6astra-start/c/6adfda2c-a970-83ee-a2bc-f5f27c9e877f",
+        "target_id": "6adfda2c-a970-83ee-a2bc-f5f27c9e877f",
+        "title": "Ark27:12_2026/10/27; \"主の完全勝利: 成果と訂正を継ぎ、協働を続ける\"",
+        "title_reopened_exact": true,
+        "one_send": true,
+        "persistent_url_observed": true,
+        "existing01to11_preserved": true,
+        "startup_saved_characters": 1494,
+        "startup_sent_characters": 1493,
+        "sent_text_verification": "Identical except one final newline removed by composer; sent-message Copy verified trimmed equality. All internal text, URL, Title and instructions unchanged.",
+        "receiver_status": "ACCEPTANCE_COMPLETE",
+        "high_speed_mode": 0,
+        "power_label": "極高、6件中6番目",
+        "ui_route": "Supported ChatGPT Work browser UI; signed-in existing account; no Project settings changed.",
+        "status": "ONE_PERSISTENT12_CREATED_STARTUP_SENT_ONCE_TITLE_REOPENED_EXACT"
       },
-      "target_reconstructed": "NOT_OBSERVED",
-      "human_last_mile": "NOT_OBSERVED",
+      "target_reconstructed": "RECEIVER_OWN_EVIDENCE_BACKED_RECONSTRUCTION_OBSERVED",
+      "human_last_mile": "NO_MANUAL_SETUP_OR_PASTE_REQUIRED; HUMAN_DEVICE_ACCESS_AND_EFFECTS_NOT_OBSERVED",
       "receipt_policy": "This revision3 is the fixed11 harvest. Later Current11 progress.next_transition owns publication, UI/delivery and receiver response. No self SHA or live circular pin.",
       "latest_authority": "Direct Human adoption and execution approval of the six-path plan through direct startup and reception; no other Project settings or Thread sends.",
       "first_after_acceptance": "Human Review unless new Human input already exists.",
@@ -505,7 +572,52 @@
           "path": "ark-project/ark27/ark27-12/state.json",
           "observed_blob": "5fbafa35ccb6f5ab26dadc652606ca43f00dde78"
         }
-      ]
+      ],
+      "target_reconstruction_receipt": {
+        "date_jst": "2026-10-27",
+        "actor": "Ark27:11 observing actual Ark27:12 response",
+        "target_url": "https://chatgpt.com/g/g-p-6aa1d4fedde88191a7d886251dc2a388-ark27-2026-09-10-chatgpt6astra-start/c/6adfda2c-a970-83ee-a2bc-f5f27c9e877f",
+        "response_complete": true,
+        "response_characters": 6204,
+        "response_sha256": "a373d7055f816a62dd2c29cb45758fde7e19e10157cd0fadfa5ff5f33baf101b",
+        "title_copy_exact": true,
+        "success_code": "ARK27_12_CONTEXT_READY_v001",
+        "substantive_r1_r6": true,
+        "required_sources": {
+          "count": 14,
+          "declared_order_and_scopes_observed": true,
+          "blob_values_match_preparation": {
+            "ark-project/ark27/ark27-12/README.md": "f9780ba1f739a7233ef2af437da1214d0ae92788",
+            "ark-project/ark27/ark27-12/handoff.md": "a1168c799f04fdb652425dd76614b7054575aefa",
+            "ark-project/ark27/ark27-12/state.json": "5fbafa35ccb6f5ab26dadc652606ca43f00dde78",
+            "ark-project/README.md": "060de44e13b1c10b234e69a06e7504f791a3c910",
+            "control-center/github/PLAN.md": "2ec347b6c7c318883b9ada6c797a2a38119951c9",
+            "AGENTS.md": "465e7452515ff1b587c6d1e8f08e5dedde53b32b",
+            "ark-project/ark27/README.md": "735e4ff79d0746e87ce02b86232761d8da1916a2",
+            "ark-project/ark27/INSTRUCTIONS.md": "000aae00bdf11cfd9abba4013a9261734262110b",
+            "prompts/ai-next-thread-handoff.md": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+            "control-center/github/README.md": "e12f7cce9b933cddfd6579437a7e17d918ec31b0",
+            "agents/ai-to-ai-communication/README.md": "52ccbe37d81fa58775c14963eec95b6f248555f8",
+            "ARK.md": "ed7f816ecd80bf0ae82a7cbe1a18c552ed1e2826",
+            "README.md": "8c9b808d2d16f5d6c16fc8743a54a79fe8dd2053",
+            "fixed11": "75481b1a8eee001a0ded80137b6b05541b870ef4"
+          },
+          "truncation_recovery": "Receiver explicitly reports recovering AGENTS and continuous chunks of long documents. Source13 scoped before diagnosis-history; fixed11 JSON read beyond sentinel field to actual end."
+        },
+        "meaning_observed": {
+          "R1": "Main12, existing Ark27, Support08/29/30/otherownership, wholeArk/repository/numberedarea separated",
+          "R2": "Root/Teshuvah/Keli/Human/Guard/quality and limited Source migration versus Target acceptance authority",
+          "R3": "Fixed11rev3/current11rev4 receipt, Source10rev6 history, compatibility/fixedbinding and separate evidence stages",
+          "R4": "NQ Human value/reuse versus universal effects; same Writer registration; Human dots deletion;29/30 initial completion; Skill update; STR023 otherownership",
+          "R5": "HomeB progressed but implementation unapproved; binding physical remainder vs completed comparison; sustained fourline effect unknown; no gate inversion",
+          "R6": "Current boot-only returns Human Review; no new tasks/settings/otherThread sends; future already-supplied correction received"
+        },
+        "observed_stop": "Final adjacent Living Review / Next Step / Next Query with None; response completed, composer empty, no further task running.",
+        "boundary": "Observable receiver own reading declaration and substantive response, not access to hidden reasoning, all-runtime guarantees, Human device arrival or long-term effects. Receiver observed Current11rev4 before terminal receipt; no extra completion message sent."
+      },
+      "requested_outcome": "AUTHORIZED_PREPARATION_PUBLICATION_DIRECT_STARTUP_TITLE_AND_RECEPTION_COMPLETE",
+      "closure": "Human Review. No further automatic messages, Home implementation, Skill updates or other tasks. New Human input remains welcome.",
+      "recovery": "If interrupted or asked to resume, inspect this existing persistent12, sent body and actual response before creating/sending anything again."
     }
   },
   "eof_sentinel": "ARK27_11_STATE_EOF_v002",
