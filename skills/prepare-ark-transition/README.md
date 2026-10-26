@@ -1,10 +1,10 @@
 ---
 title: "Ark Transition — 準備から受入れまでを、現在の権限でつなぐ"
-version: "v002"
+version: "v003"
 status: "active / Human-authorized"
-updated: "2026-10-20"
+updated: "2026-10-27"
 canonical_path: "skills/prepare-ark-transition/README.md"
-expected_eof: "EOF::PREPARE_ARK_TRANSITION_README::v002"
+expected_eof: "EOF::PREPARE_ARK_TRANSITION_README::v003"
 ---
 
 # Ark Transition
@@ -28,14 +28,12 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 次の計画用Queryは本節を担当原本とし、Skills Hubから参照します。Current Contextが確定事項を供給し、Humanは現在の目的・変更点・Modeを伝えます。
 
 ```text
-$prepare-ark-transition（Ark Transition）を使い、今回の移行準備をPlan Modeで進めてください。種類・Source・Target・目的・承認範囲は現在の文脈から解決し、確定事項を再利用してください。
+- $prepare-ark-transition を使い、現在の文脈と最新のHuman指定・訂正に基づいて、今回の移行をPlan Modeで計画してください。現行Skill・共通契約・適用Runtimeに従い、確定事項・完了成果を活かして、今回求める到達点まで見通してください。
 
-現行Skill・共通契約・適用Runtimeに従い、元会話に依存せず協働を再開できる計画を、Living Review → Next stepとともに示してください。重要な未確定事項だけを確認してください。
-
-Skillが利用できない場合は、次の共有SKILL.mdを実際に読み、そこから現行共通契約へ進んでください。
+- Skillを直接利用できない場合は、次の共有原本を全文読んで適用し、宣言された依存・読取契約に従ってください。必須資料の不足・不一致は該当契約に沿って、影響と最小の回復方法を示してください。
 https://github.com/yusukefujiijp/ai-project/blob/main/skills/prepare-ark-transition/SKILL.md
 
-今回は調査と計画のみです。変更・保存・反映・実際の移行は行わず、計画提示で停止してください。
+- 今回は読み取り専用の調査・計画提示までです。変更・保存・設定変更・送信・実際の移行はせず、【Living Review】→【Next Step】→【Next Query】で閉じて停止してください。専用Failure・STOP・厳密形式は優先してください。
 ```
 
 これは計画用の入口です。実行承認が続けば、承認された計画と範囲を再利用します。保存準備までか、起動Queryの送信と受入れまでかを文脈から解決し、有効な委任の途中で不要な再承認へ戻しません。実際のTargetへは、そのTargetに束縛された準備済み起動本文を渡します。この計画文や、引用されたB-Gateの例を実案件の開始へ変換しません。
@@ -82,4 +80,4 @@ Skillを登録できないAIも共有本文を実際に読めます。Skill機�
 
 2026-10-10、Ark99:00のHuman Correctionにより、定型の資料選択・再構成計画・出力伝達・確認をSkillへ持たせ、呼出し文は現在の依頼とModeを伝える入口へ整理しました。Thread名のコピー面を準備元・受入れ先の両方に置く成立条件は[共通契約 §8](../../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有し、Skillは受入れ先が実際に読む起動本文への伝達を担います。特定Arkの起動元や現在の番号を汎用Skillへ固定せず、短いHuman入力からも必要な検討品質を保持します。文書と導入内容の確認は、実際の受入れ先の応答・Copy UI・往復負担の改善と区別します。
 
-EOF::PREPARE_ARK_TRANSITION_README::v002
+EOF::PREPARE_ARK_TRANSITION_README::v003
