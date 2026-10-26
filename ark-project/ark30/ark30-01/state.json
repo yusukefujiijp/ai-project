@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK30_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-26",
     "updated": "2026-10-26",
     "canonical_path": "ark-project/ark30/ark30-01/state.json",
     "date_scope": "Asia/Tokyo; preparation and subsequent actual observations separated",
-    "change_reason": "Human-authorized parallel chapter addition. Local State uses the existing Ark meta/identity/authority/bindings/now/progress/evidence pattern; not a new repository-wide schema."
+    "change_reason": "Record verified original publication and partial Work setup; browser-operation timeouts prevent further UI/delivery verification. Preserve current authorization and avoid duplicate creation on recovery."
   },
   "identity": {
     "source": "Ark27:11 / Human-authorized preparation",
@@ -91,38 +91,52 @@
     "progress_owner": "ark-project/ark30/ark30-01/state.json"
   },
   "now": {
-    "phase": "SOURCE_PREPARED_DELIVERY_NOT_YET_OBSERVED",
+    "phase": "REMOTE_VERIFIED_UI_ROUTE_BLOCKED",
     "goal": "Support28がReportの内容の価値・表現の適合・読む入口を別々の根拠から検討できる、具体的な一件の比較材料を得る状態。",
     "current_assignment": "既存Report一件の内容・表現・読む経路の補助比較",
-    "first_legal_move": "READ_REQUIRED_SOURCES_AND_RECONSTRUCT_THEN_CONTINUE_ASSIGNED_ANALYSIS",
+    "first_legal_move": "RECOVER_BROWSER_ROUTE_THEN_INSPECT_EXISTING_PROJECT_THREAD_AND_PENDING_RESULT",
     "task_scope": "既存Report「成果物が届くとは何か — 内容・媒体・入口を結び直す」を一件の対象とする。Report／Feedback設計の所有はSupport28。Report制作・改訂・改名・保存、Feedback原本やSkillの変更は行わない。",
     "completion_condition": "一件の内容・表現・読取経路の対応、良い点と不足・理由、少数の改善候補と判断が変わる条件を会話内で提示し、Support28の採否に供せる。新しい作品を制作しない。"
   },
   "progress": {
     "source_prepared": {
-      "status": "compiled",
-      "actor": "Ark27:11 AI"
+      "status": "completed",
+      "actor": "Ark27:11 AI",
+      "commit": "117d32a7a80364c774572d595d6c0f0ada239f35",
+      "scope": "Eight new chapter/triad files and compatible Domain v010 extension; exact Titles and per-target payloads compiled."
     },
     "remote_verified": {
-      "status": "not_yet_observed_at_preparation"
+      "status": "completed",
+      "actor": "Ark27:11 AI",
+      "commit": "117d32a7a80364c774572d595d6c0f0ada239f35",
+      "scope": "All nine complete bodies reread at unpublished commit and published main; exact content match.112 relative links checked; Domain v010/EOF and unchanged27/28 bindings checked.",
+      "boundary": "This receipt revision's own publication and reread are reported after saving, not self-certified here."
     },
     "delivery": {
-      "status": "not_yet_observed_at_preparation",
+      "status": "not_started_ui_route_blocked",
+      "project_name": "Ark30: 継続協働ライン4",
       "project_url": null,
       "thread_url": null,
+      "project_existence": {
+        "status": "not_found_in_initial_Project_list_not_rechecked_after_timeout",
+        "evidence": "Initial visible current-account Project list contained no Ark29/30. This is not a timeless absence guarantee."
+      },
       "project_instructions_verified": false,
       "title_verified": false,
-      "startup_sent": false
+      "startup_sent": false,
+      "thread_existence": "No30 Project or01 creation/send was attempted by this actor; inspect current live state before creating.",
+      "remaining": "Create or reuse matching Project/01, set/reread chapter README instructions, send exact saved Handoff payload, set exact Title, check target reconstruction and assigned analysis."
     },
     "target_reconstruction": {
-      "status": "not_yet_observed_at_preparation",
+      "status": "not_established_no_startup_sent",
       "actor": "Ark30:01 AI",
       "proof": null
     },
     "work_connection": {
-      "status": "assigned_by_Human_receiver_execution_not_yet_observed",
+      "status": "assigned_by_Human_not_yet_delivered_to_receiver",
       "assignment": "既存Report一件の内容・表現・読む経路の補助比較",
-      "mode": "conversation-only"
+      "mode": "conversation-only",
+      "boundary": "Assignment in originals is not evidence of receiver execution. Four-line work connection not yet established."
     },
     "continuity_and_burden_reduction": {
       "status": "unobserved",
@@ -132,13 +146,46 @@
   "evidence": {
     "basis": "Current Human adopted four-line plan, confirmed exact Project names/titles and authorized the specified preparation/delivery and two conversation-only assignments.",
     "preparation_commit_base": "5a394b02f8ba8cdd0af1172834e9189d4617c629",
-    "observations": [],
+    "observations": [
+      {
+        "recorded_at": "2026-10-26T01:50:15Z",
+        "actor": "Ark27:11 AI",
+        "kind": "remote_verification",
+        "commit": "117d32a7a80364c774572d595d6c0f0ada239f35",
+        "base_after_concurrent_change": "fde8d4241ec96608889d3c0f4933bab0bc6ddf05",
+        "meaning": "Preserved concurrent Support28 Report-feedback publication; changed only the approved nine paths."
+      },
+      {
+        "recorded_at": "2026-10-26T01:50:15Z",
+        "actor": "Ark27:11 AI",
+        "kind": "ui_route_interruption",
+        "meaning": "No30 creation or sending attempted before the browser route became unavailable.",
+        "boundary": "Observed technical timeouts, not an observed automatic-approval rejection, absence of Human consent, or site authentication failure."
+      }
+    ],
     "boundaries": [
       "Source reading is not Target reading.",
       "Prepared originals, remote reread, UI/delivery, target understanding, work connection and long-term effect are separate.",
       "Existing27/28 tasks and completed work remain with their owners.",
       "Only adopted design, startup contract and necessary reception records are public; no private dialogue or memory export."
-    ]
+    ],
+    "recovery": {
+      "authorization": "The same Human-approved scope remains valid; no per-click or per-target reapproval is inherently required.",
+      "source_resume": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark30/README.md",
+      "inspect_before_action": [
+        "Existing matching Project",
+        "Current Project instructions",
+        "Matching permanent01 Thread",
+        "Draft/sent startup payload",
+        "Actual response and exact Title"
+      ],
+      "do_not_repeat": [
+        "Verified source preparation without material change",
+        "Already created matching Project",
+        "Any sent startup message found during recovery"
+      ],
+      "remaining_boundary": "Do not use another route to evade an approval/access refusal; no such refusal was observed in this interruption."
+    }
   },
   "deferred": [
     "Global Home implementation",
