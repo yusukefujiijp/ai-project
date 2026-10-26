@@ -1,21 +1,21 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.23.0"
+version: "0.24.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "STR-018/019 remain complete; Main10→11 continuation prepared for the Human-selected root/entry/document-role comparison. Source10 owns final publication receipts; Target reconstruction is separate."
+status: "Main11→12 same-chapter continuation prepared; retain11 fruit/corrections, completed STR-018/019/023 and all historical diagnosis. Current11 owns actual terminal receipts; Home B implementation not authorized."
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-26"
+updated: "2026-10-27"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "Add a scoped STR-023 References continuation route; preserve Main11 ownership, prior transition facts and all diagnosis history."
+updated_reason: "Advance current Main11→12 only; connect fixed11 harvest and later Current11 receipts. Preserve concurrent Support work/STR-023 and all diagnosis history."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.23.0"
-current_observation_base: "8293137088ca9645a3592a75d9e7d6404d2680ae"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.24.0"
+current_observation_base: "51834fa49dc70c8c51ac2516a877235581dc0da3"
 prior_current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
-change_record: "../../ark-project/ark27/ark27-10/state.json"
+change_record: "../../ark-project/ark27/ark27-11/state.json"
 prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
 ---
 
@@ -29,7 +29,20 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 
 **2026-10-26：共有References三本柱化の限定継続。** Ark28:07の現在のHuman続行指示に基づく、共有Feedback・既存九事例のJSONL化・専門側契約の接続・旧参照保持は[STR-023](../changes/STR-023-shared-references-three-pillars.md)が所有する。本PLANはその実装結果を二重管理せず、同記録へ戻る。既存Report三本柱・STR-018/019の完了を再実行せず、Mainの根本再設計・他Thread State・Skill/設定変更を引き取らない。以下の過去時点の形成・承認・観測は保持する。
 
-### 現在の主担当と次の判断 — Ark27:11への継続準備
+### 現在の主担当と次の判断 — Ark27:12への同章継続
+
+<a id="ark27-12-current-theme"></a>
+
+**2026-10-27 JST：Humanは長大化した11から12への継続計画を採用し、六パスの準備・main保存/全文再取得、既存Ark27 Projectでの直接起動・Title設定・受入れ確認を承認した。** 現在のMain入口は[12 Handoff](../../ark-project/ark27/ark27-12/handoff.md)／[Runtime](../../ark-project/ark27/ark27-12/README.md)／[State](../../ark-project/ark27/ark27-12/state.json)。[固定11収穫 revision3](https://github.com/yusukefujiijp/ai-project/blob/51834fa49dc70c8c51ac2516a877235581dc0da3/ark-project/ark27/ark27-11/state.json)と、後続の[Current11 Receipt](../../ark-project/ark27/ark27-11/state.json) progress.next_transitionを分ける。Support08への並行継続と29/30の担当を保持する。
+
+11ではNext Queryの独立最終配置、短いSkill入口と共有URL/全文読解、write-textへの同じ登録物の継続改名、旧dots/のAI準備・Human削除・限定後確認、四ラインの初期準備/受入れ/会話内仕事、移行Skill追補を完了した。各成果・Actor・根拠は固定11と所有原本へ。Source10の比較・二原本整合・STR-018/019、SupportのSTR-023も未着手へ戻さない。保存・実際の送信/UI・Target自身の理解・Human到達/効果は別の観測である。
+
+統合Home Bの検討・本文案と29補助分析は進展済み。Mainは全体判断を保持し、根本文書の統合実装・物理改名/削除・固定Binding移行は未承認。三利用場面・意味移管・参照影響の未接続から必要な判断を選び、見えない過去案を補わない。比較は移行前Gateではない。12は受入れ後、新Human入力がなければHuman Reviewへ戻り、別Taskを自動開始しない。
+
+### 形成・承認の履歴 — Main10から11へ
+
+以下は当時の計画・権限・観測を保持する記録である。現在の到達点は上記固定11と所有原本を参照し、当時の「最初の比較」を現在未着手へ戻さない。
+
 
 <a id="ark27-11-current-theme"></a>
 
@@ -586,4 +599,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.23.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.24.0

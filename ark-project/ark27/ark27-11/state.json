@@ -1,12 +1,12 @@
 {
   "meta": {
     "state_id": "ARK27_11_CURRENT_STATE",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:11",
     "schema_version": "v002",
     "updated_at": "2026-10-27",
     "date_scope": "Asia/Tokyo; Source11 harvest before12 publication/delivery",
-    "update_reason": "Human adopted the same-chapter11→12 plan and authorized six paths, existing Ark27 Work direct startup and evidence-backed reception.",
+    "update_reason": "Publish12 triad and current routing after fixed11 revision3 readback; actual UI/send/reception still pending.",
     "authority": "Latest direct Human execution approval in Ark27:11; exact Target Title and existing Project confirmed.",
     "navigation_revision": {
       "date": "2026-10-20",
@@ -443,6 +443,12 @@
         "date": "2026-10-27",
         "actor": "Ark27:11",
         "scope": "Fixed11 harvest before12 publication; preserve initial projection and source10 fixed bindings."
+      },
+      {
+        "revision": 4,
+        "date": "2026-10-27",
+        "actor": "Ark27:11",
+        "scope": "Fixed11 immutable harvest reference plus constructed12 package; terminal observations will follow in Current11 only."
       }
     ],
     "next_transition": {
@@ -460,14 +466,46 @@
         "ark-project/README.md",
         "control-center/github/PLAN.md"
       ],
-      "source_prepared": "HARVEST_CONSTRUCTED; TARGET_PACKAGE_IN_PREPARATION",
-      "remote_verification": "PENDING_AFTER_THIS_SNAPSHOT",
-      "delivery": "NOT_SENT",
+      "source_prepared": "COMPLETE",
+      "remote_verification": {
+        "fixed11": "PUBLISHED_MAIN_AND_FULL_TEXT_EQUAL",
+        "target_package": "PROSPECTIVE_AND_MAIN_REREAD_PENDING_AT_THIS_REVISION",
+        "receipt_boundary": "The final Source11 response and later terminal revision bind actual publication; no self SHA."
+      },
+      "delivery": {
+        "status": "NOT_SENT",
+        "preflight": "Existing Ark27 Project UI expanded all11 existing Threads; no12 visible. Do not blindly repeat if interrupted."
+      },
       "target_reconstructed": "NOT_OBSERVED",
       "human_last_mile": "NOT_OBSERVED",
       "receipt_policy": "This revision3 is the fixed11 harvest. Later Current11 progress.next_transition owns publication, UI/delivery and receiver response. No self SHA or live circular pin.",
       "latest_authority": "Direct Human adoption and execution approval of the six-path plan through direct startup and reception; no other Project settings or Thread sends.",
-      "first_after_acceptance": "Human Review unless new Human input already exists."
+      "first_after_acceptance": "Human Review unless new Human input already exists.",
+      "fixed_source_snapshot": {
+        "commit": "51834fa49dc70c8c51ac2516a877235581dc0da3",
+        "blob": "75481b1a8eee001a0ded80137b6b05541b870ef4",
+        "path": "ark-project/ark27/ark27-11/state.json",
+        "state_id": "ARK27_11_CURRENT_STATE",
+        "schema_version": "v002",
+        "revision": 3,
+        "tree": "e8b0912f07bbc4d82b679677a45870c30ce643bd",
+        "full_text_equal": true,
+        "main_readback": true
+      },
+      "target_files": [
+        {
+          "path": "ark-project/ark27/ark27-12/README.md",
+          "observed_blob": "f9780ba1f739a7233ef2af437da1214d0ae92788"
+        },
+        {
+          "path": "ark-project/ark27/ark27-12/handoff.md",
+          "observed_blob": "a1168c799f04fdb652425dd76614b7054575aefa"
+        },
+        {
+          "path": "ark-project/ark27/ark27-12/state.json",
+          "observed_blob": "5fbafa35ccb6f5ab26dadc652606ca43f00dde78"
+        }
+      ]
     }
   },
   "eof_sentinel": "ARK27_11_STATE_EOF_v002",
