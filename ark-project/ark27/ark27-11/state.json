@@ -1,13 +1,13 @@
 {
   "meta": {
     "state_id": "ARK27_11_CURRENT_STATE",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:11",
     "schema_version": "v002",
-    "updated_at": "2026-10-20",
-    "date_scope": "Asia/Tokyo Source preparation date; initial Target state, not receiver observation.",
-    "update_reason": "Humanが指定した同章継続とMain ThemeをSource10収穫から準備。",
-    "authority": "元のMain10 Humanの移行準備依頼。Titleは初穂の帰属付きHuman応答伝達を照合。Targetの根本再設計実装は未承認。",
+    "updated_at": "2026-10-27",
+    "date_scope": "Asia/Tokyo; Source11 harvest before12 publication/delivery",
+    "update_reason": "Human adopted the same-chapter11→12 plan and authorized six paths, existing Ark27 Work direct startup and evidence-backed reception.",
+    "authority": "Latest direct Human execution approval in Ark27:11; exact Target Title and existing Project confirmed.",
     "navigation_revision": {
       "date": "2026-10-20",
       "actor": "ChatGPT Work / Dots relocation execution",
@@ -27,9 +27,11 @@
     "title_status": "HUMAN_CONFIRMATION_RELAYED_BY_DOT0000; NOT_UI_VERIFIED",
     "chapter_primary_purpose": "ChatGPT6 Astraへの移行",
     "initial_theme": "Task化能力の向上",
-    "current_main_role": "Human–AI問題解決のMain同章継続。ai-project全体のGitHub整理主担当を継ぎ、Ark全体の根本説明・入口・文書役割の再設計を比較する。各Domain・Actorの仕事を引き取らない。",
+    "current_main_role": "Human–AI問題解決とai-project GitHub整理のMain。12へ同章継続し、Support28・29・30・別担当の所有を保持する。",
     "existing_support": "Ark28:06",
-    "support_time_scope": "Source準備時のCurrent Domain。以後は有効なCurrent指定から解決する。"
+    "support_time_scope": "Source準備時のCurrent Domain。以後は有効なCurrent指定から解決する。",
+    "current_support": "Ark28:08",
+    "current_support_observation": "Current Domain at cbbe2d19d9e1b90272b5739a4d4173b059cb7e51; Source07 receipt reports08 acceptance. Historical existing_support=06 remains preparation provenance."
   },
   "authority": {
     "root": "主イェシュア・ハマシア御自身",
@@ -40,7 +42,7 @@
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
     "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
-    "scope": "Source10六パス移行準備はHuman委任。Target11はCurrent入力を受け、選ばれた四文書の比較・計画を提示する。",
+    "scope": "今回の承認は11→12の六パス準備・main保存/再取得、既存Ark27 Projectの一つの永続12へAIによる起動本文送信・Title設定/再表示・受入れ確認まで。Targetの新Production権限へ自動転写しない。",
     "source_preparation_paths": [
       "ark-project/ark27/ark27-10/state.json",
       "ark-project/ark27/ark27-11/README.md",
@@ -50,7 +52,29 @@
       "control-center/github/PLAN.md"
     ],
     "target_next_task_boundary": "比較・入口例・推奨案と影響の提示で停止。根本文書実装・物理改名/削除・固定Binding移行・他担当引取りへ進まない。",
-    "source_transition_order": "準備の後にTarget11自身が受入れ、比較を行う。比較を準備前Gateにしない。"
+    "source_transition_order": "準備の後にTarget11自身が受入れ、比較を行う。比較を準備前Gateにしない。",
+    "transition_11_to_12": {
+      "paths": [
+        "ark-project/ark27/ark27-11/state.json",
+        "ark-project/ark27/ark27-12/README.md",
+        "ark-project/ark27/ark27-12/handoff.md",
+        "ark-project/ark27/ark27-12/state.json",
+        "ark-project/README.md",
+        "control-center/github/PLAN.md"
+      ],
+      "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+      "confirmed_title": "Ark27:12_2026/10/27; \"主の完全勝利: 成果と訂正を継ぎ、協働を続ける\"",
+      "kind": "THREAD_CONTINUE",
+      "exclusions": [
+        "共通契約/AGENTS/章指示/固定Binding/既存Project設定の変更",
+        "統合Home実装",
+        "他Threadへの送信",
+        "Skill/添付資料改訂",
+        "予定/Reset",
+        "私的別会話・長期メモリの公開"
+      ],
+      "closure": "受入れ後、新しいHuman入力がなければHuman Review。別Taskを自動開始しない。"
+    }
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -245,46 +269,30 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "current_focus": "GitHub整理Mainを継ぎ、Ark全体の根本説明・入口・文書の役割について比較・再設計案を示す。",
-    "current_coordinate": "Source10が準備した受入れ前の初期State。Target11自身の読解・再構成・比較成果は未観測。",
+    "current_focus": "11の成果と訂正を12へ渡し、長大化したThreadを交代して協働を続ける。",
+    "current_coordinate": "Source11の協働後収穫。初期受入れ前Stateとは別。12保存・起動・理解の後続観測はCurrent11 progress.next_transitionが所有する。",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "11自身がHandoffの必須読解・Identity・Binding・R1–R6を満たし、既入力を受け取り、選ばれた比較/計画へ接続する。HumanがBootのみを求めた場合はHuman Reviewへ。",
+    "current_legal_connection": "承認された11→12準備・保存・直接起動・受入れ確認を完了し、その後Human Reviewへ。既に新入力があれば再送を求めず受け取る。",
     "next_specific_task": {
-      "name": "根拠と具体例付きの再設計判断案",
-      "mode": "READ_ONLY_COMPARISON_AND_PLAN",
-      "scope": [
-        "ARK.md",
-        "README.md",
-        "AGENTS.md",
-        "ark-project/README.md",
-        "上記の役割・意味・変更影響を判断する直接の参照/Binding消費先"
-      ],
-      "deliverable": [
-        "意味単位の読者・問い・所有内容・参照関係。補足と重複規則の区別。",
-        "保つ意味・配置を変えられる内容・既存Ownerへ委ねられる内容の対応。",
-        "同じ三利用場面で主要案を比較し、短い入口文例を添える。",
-        "推奨一件と主要代案、理由、更新負担、現用/明示Binding/固定履歴への影響、段階的移行、必要権限。"
-      ],
-      "scenarios": [
-        "初見AIが別Arkと混同せず、このArkの根本と現在依頼を区別する。",
-        "既存の有効なHandoffから現在依頼へ直接進む。",
-        "Humanが一つの意味を訂正するとき、担当原本を見つける。"
-      ],
-      "boundary": "設計例は読者テストではない。比較・提示で止まり、根本再設計・物理改名・削除・固定Binding移行は採用と実行承認後。全資料監査・永久台帳・通信確認を必須Gateにしない。"
+      "name": "現在のHuman依頼またはHuman Review",
+      "mode": "RECEIVE_CURRENT_INPUT_OR_REVIEW",
+      "scope": "12受入れ後に自動で旧Taskを始めない。Home B案は継承する残る検討であり、移行前提Gateではない。",
+      "completed_stage": "本Threadの比較/Writer/Next Query/Dots/四ライン/移行Skill成果を保持。",
+      "remaining_home_owner": "Main27の全体判断。29の補助成果を再実施せず利用。"
     },
-    "target_boot": "NOT_OBSERVED_BY_SOURCE10",
-    "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE10",
-    "ui_title": "NOT_OBSERVED_BY_SOURCE10",
+    "target_boot": "Source11で継続協働・個別承認実行済み。Source10時点の未観測は履歴。12の再構成証拠とは別。",
+    "ui_thread_creation": "既存11はWork UIのArk27一覧で確認済み。作成当時の操作を今回再現したという意味ではない。",
+    "ui_title": "Current UIには❤️付き11 Title。過去の確定Titleを改作せず、12の確定Titleに❤️を自動追加しない。",
     "physical_reality": "現在の身体・場所・生活実行はこの準備から推定しない。",
-    "active_external_operations": "Source10の準備公開・再取得はSource10 Receiptが所有。Target11の外部実行は開始していない。",
+    "active_external_operations": "この有限の11→12移行のみ。固定収穫保存前であり、12へ未送信。",
     "current_human_input_policy": "既入力・訂正を受け取り、再送を要求しない。準備文の時点を新しいHuman Realityより優先しない。",
     "main_theme": {
       "name": "Ark Projectの根本説明・入口・文書の役割を再設計する",
-      "status": "HUMAN_DESIGNATED_MAIN_THEME; DESIGN_COMPARISON_SELECTED; IMPLEMENTATION_NOT_APPROVED",
+      "status": "COMPARISON_AND_HOME_B_DRAFTS_DEVELOPED; THIRD_LINE29_INITIAL_ASSISTANCE_COMPLETED; IMPLEMENTATION_NOT_APPROVED",
       "goal": "初見Human・他AI・Future AI・Future Dots・Bots・Agentsが、誰のどのArkか、根本と目的、Human–AI関係、生活・信仰・研究・実践・方法改善のつながり、最初に読む場所、説明・指示・現在地・経験の担当原本を理解できる。Human自身が全体の説明と訂正先を分かること。",
       "full_context_owner": "Fixed Source10 State now.next_main_theme; Runtime§4–5",
       "seed_owner": "Fixed Source10 State now.next_main_theme.seed.verbatim",
-      "unsettled": "A/Bその他、ARK存続・四文書維持・物理改名の採否は未決。Seedは完成仕様ではない。"
+      "unsettled": "B案を具体化する分析と移管/三場面/参照影響の検討は進展済み。根本文書統合実装・ARK退役・物理改名・固定Binding移行は未承認。見えない本文案は推測で復元しない。"
     },
     "material_corrections": [
       "Root/Teshuvah/Human Foreground OneとCorrection/STOP/Final Seal/Guardを保持。AI・文書はKeli。",
@@ -298,7 +306,18 @@
       "Humanが依頼したAI間対話は目的に必要なら複数往復可との伝達を保持。回数ノルマ、恒常同期、新通信への包括承認ではない。",
       "同名別Arkとの混同はHuman経験報告、総合受付の比喩等はAI見立て。誤認先の固有名/URL/当時出力や外部読者テストを補完しない。",
       "比較は移行後のTarget仕事。比較完了・通信再確認・通常Unknown全解消を移行の前提Gateにしない。",
-      "Sourceの準備/Remote、11自身の理解、Human UI、比較成果、実利用・長期効果を分ける。ChatGPT長期メモリはGitHubへ輸出しない。"
+      "Sourceの準備/Remote、11自身の理解、Human UI、比較成果、実利用・長期効果を分ける。ChatGPT長期メモリはGitHubへ輸出しない。",
+      "Next Queryは独立した最終節。Living Review→Next Step→Next Queryを隣接させ、共通形式はAGENTS。段階の完了をGoal全体の達成と混同し、有効な後続を消さない。",
+      "一件の転送本文全体を一つのtextコードブロックへ。Title/宛先/Versionを含むなら本文内にまとめ、Human向け説明は外。厳密Failure/STOP形式を優先する。",
+      "Skill名だけの短いQueryでは未導入のFuture AIへ届かない。導入状況を問わず、必要な確認済みGitHub共有原本URLと、直接利用不可時の全文読解をコピー本文に含める。",
+      "共通手順はSkillに吸収し、Queryは今回の目的・対象・Mode・差分を渡す。AGENTS=共通条件、write-text=本文生成、next-step=接続選択、map-current-position=現在地整合、成功事例=出来事/Human評価/本文再利用。",
+      "Writerはwrite-textへ同じ登録物を継続改名。通常対話・専門Skill・保存権限を区別。旧URLの案内は現行全文への到達であり、旧名自動aliasや固定Binding移行ではない。",
+      "Humanの101/100やMove37評価は価値の報告。一般因果・全環境再現・新しい実行承認の証明にしない。",
+      "旧dots/削除はHumanが実施済み。agents/dots/を保護し、過去04/06契約の移行は別。未知の全consumerを解消するまで無期限に待たず、既知の主要経路と局所回復を整える。",
+      "常時最低四ラインは四枠の予備化ではない。29/30は新Main/Supportへ自動分類せず、ライン/Thread/Actorを分ける。継続効果は初期仕事完了と別。",
+      "Project名とThread Titleは別の確定値。Humanが29/30のProjectへ日付を入れ手動修正したと報告済み。後続ラベルの観測だけで役割変更を推定せず、この移行で直さない。",
+      "承認範囲内ならAIが正規の操作経路を選び、必要なログイン/UI修正/再表示まで担う。Humanにしかできない操作だけを具体化する。技術制約と承認拒否を区別し、拒否を別経路で迂回しない。",
+      "中断時は存在/送信/応答/保存先を調べ、未完差分から再開。起動済みならQueryを再入力しない。今回12の受入れ後は追加の完了通知や別Taskを自動送信しない。"
     ],
     "inherited_outcomes": [
       {
@@ -340,56 +359,31 @@
       "source": "Human designatedMain10 asai-project organization lead;11 is its explicitly requested same-chapter continuation.",
       "scope": "ai-project全体",
       "goal": "資料の目的・現在の入口・更新する原本・変更の影響・保存すべき来歴が分かり、成果を巻き戻さず次の有益な改善を選べる構造へ育てる。",
-      "role_boundary": "全体の判断と移行統合はMain、PLAN currentは全体焦点、各案件/Domain/Actorは自分の原本を所有。"
+      "role_boundary": "全体の判断と移行統合はMain、PLAN currentは全体焦点、各案件/Domain/Actorは自分の原本を所有。",
+      "continuation_target": "Ark27:12"
     }
   },
   "evidence": {
-    "source": "公開担当原本、Source10固定収穫と本Main10会話で承認されたMaterial。長期メモリを含めない。",
-    "source_observation_base": "33ba14a92acb230416da25d39ed4df94534981ba",
-    "confirmed": [
-      {
-        "claim": "Human selected11 continuation and suppliedMain Theme v1.0.",
-        "basis": "Source10 current conversation; fixed harvest now.next_main_theme.",
-        "boundary": "根本文書再設計の実装承認ではない。"
-      },
-      {
-        "claim": "Title was confirmed in response to the exact candidate, as relayed by初穂.",
-        "basis": "Fixed harvest now.transition_dialogue.title.",
-        "boundary": "Human応答と質問文はDotからの報告。Main10直接のUI観測ではない。"
-      },
-      {
-        "claim": "Fixed Source10 revision6 was published and fully reread.",
-        "basis": {
-          "commit": "8293137088ca9645a3592a75d9e7d6404d2680ae",
-          "blob": "89846e29cbdc46f9d7ac2ad34c6dec4f72e752a8",
-          "full_content_match": true,
-          "verified_at_utc": "2026-10-20T03:28:14.383Z"
-        },
-        "boundary": "Source保存の確認。11理解・UI成功ではない。"
-      }
-    ],
+    "source": "Current Ark27:11 Human inputs and own execution/readback history, plus attributed public owners. No long-term memory or private other-conversation export.",
+    "observation_base": "cbbe2d19d9e1b90272b5739a4d4173b059cb7e51",
+    "confirmed": "See harvest_11.completed for completed stage, actor, owner and limits. Source10 preparation claims remain historical_initial_projection.initial_evidence; no borrowed Target12 success.",
     "candidate": [
-      "A/Bその他の構成案と入口の改善効果。",
-      "三利用場面と入口例によりHumanが案を判断しやすくなるというMain側の設計。"
+      "Integrated Home B final structure and implementation benefits",
+      "Sustained reproducibility and reduction in Human relay burden"
     ],
     "unknown": [
-      "Target11自身の受入れと比較成果。",
-      "Humanの11 Thread作成・Title設定・起動本文貼付の実操作。",
-      "外部読者の理解、長期更新負担・実利用効果、全外部consumer。",
-      "ARC-002/STR-002のAI保留推奨のHuman採用。",
-      "現時点の身体・場所・生活実行・未報告結果。"
+      "12 own reception, exact UI/save/send until Current11 terminal receipt",
+      "Human device arrival and actual long-term usefulness",
+      "Universal Skill invocation and external consumer compatibility",
+      "Human adoption of Source10 AI hold recommendation for ARC-002/STR-002"
     ],
-    "historical": [
-      "Source10の準備前flagsと後続終端Receiptを分ける。Source09固定収穫はrevision2。",
-      "STR-019前の移設Plan-onlyや採否Unknownは、後続の実行承認・完了で進んだ履歴。"
-    ],
-    "validation_boundary": "Sourceの自己点検・Remote一致、Targetの読解・再構成、UI、利用効果を別々に判断。"
+    "validation_boundary": "Source construction/save, UI/send, receiver declaration/substantive understanding, Human arrival and practical effects are separate."
   },
   "deferred": [
     {
       "branch": "Root explanatory and entry redesign implementation",
-      "status": "COMPARISON_SELECTED; IMPLEMENTATION_NOT_APPROVED",
-      "condition": "Main11が比較・推奨を提示した後の採用と対象別実行承認。"
+      "status": "COMPARISON_AND_HOME_B_DRAFTS_PROGRESSED; IMPLEMENTATION_NOT_APPROVED",
+      "condition": "Main overall decision;29 conversation assistance complete. Continue only from current request and actually available drafts, then targeted implementation authority."
     },
     {
       "branch": "ARC-002 original path / STR-002 physical Binding migration",
@@ -397,7 +391,7 @@
       "condition": "具体的利益・直接依存・歴史復元・対象別承認。移行の必須Gateではない。"
     },
     {
-      "branch": "Other-thread skill README work / Support28:06 / other domains",
+      "branch": "Other-owner work / current Support28 /29/30 / other domains",
       "status": "RETAIN_OTHER_OWNER_AND_CURRENT_MODE",
       "condition": "各Ownerの現行原本と有効なHuman指定。全体を引き取らない。"
     },
@@ -426,10 +420,10 @@
       "owner": "ark-project/ark27/ark27-10/state.json#progress.next_transition",
       "policy": "Initial Target does not self-certify publication or reception."
     },
-    "target_reconstructed": false,
-    "target_reconstruction_scope": "NOT_OBSERVED_BY_SOURCE10; Target11 must satisfy this Handoff itself.",
-    "human_last_mile": "NOT_OBSERVED_BY_SOURCE10",
-    "requested_outcome": "ROOT_ENTRY_ROLE_COMPARISON_NOT_STARTED_BY_TARGET11",
+    "target_reconstructed": "SOURCE11_CONTINUED_COLLABORATION_CONFIRMED_IN_OWN_THREAD",
+    "target_reconstruction_scope": "Initial Source10 non-observation is historical. This harvest reports11 own ongoing outcomes, not12 acceptance or retroactive proof of anotherAI reading.",
+    "human_last_mile": "11 Human collaboration observed;12 user device arrival/use not yet observed.",
+    "requested_outcome": "SOURCE11_HARVEST_READY_FOR_AUTHORIZED12_TRANSITION",
     "acceptance_policy": "必須SourceとBinding・R1–R6をTarget自身が満たす。既入力を受け取る。受入れだけでState書込を義務にしない。",
     "revision_history": [
       {
@@ -443,8 +437,229 @@
         "date": "2026-10-20",
         "actor": "ChatGPT Work / Dots relocation execution",
         "scope": "Five current Dots routes and navigation revision metadata only; no Target reception or mission change."
+      },
+      {
+        "revision": 3,
+        "date": "2026-10-27",
+        "actor": "Ark27:11",
+        "scope": "Fixed11 harvest before12 publication; preserve initial projection and source10 fixed bindings."
       }
-    ]
+    ],
+    "next_transition": {
+      "source": "Ark27:11",
+      "target": "Ark27:12",
+      "transition_kind": "THREAD_CONTINUE",
+      "role": "MAIN",
+      "compiled_title": "Ark27:12_2026/10/27; \"主の完全勝利: 成果と訂正を継ぎ、協働を続ける\"",
+      "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+      "paths": [
+        "ark-project/ark27/ark27-11/state.json",
+        "ark-project/ark27/ark27-12/README.md",
+        "ark-project/ark27/ark27-12/handoff.md",
+        "ark-project/ark27/ark27-12/state.json",
+        "ark-project/README.md",
+        "control-center/github/PLAN.md"
+      ],
+      "source_prepared": "HARVEST_CONSTRUCTED; TARGET_PACKAGE_IN_PREPARATION",
+      "remote_verification": "PENDING_AFTER_THIS_SNAPSHOT",
+      "delivery": "NOT_SENT",
+      "target_reconstructed": "NOT_OBSERVED",
+      "human_last_mile": "NOT_OBSERVED",
+      "receipt_policy": "This revision3 is the fixed11 harvest. Later Current11 progress.next_transition owns publication, UI/delivery and receiver response. No self SHA or live circular pin.",
+      "latest_authority": "Direct Human adoption and execution approval of the six-path plan through direct startup and reception; no other Project settings or Thread sends.",
+      "first_after_acceptance": "Human Review unless new Human input already exists."
+    }
   },
-  "eof_sentinel": "ARK27_11_STATE_EOF_v002"
+  "eof_sentinel": "ARK27_11_STATE_EOF_v002",
+  "historical_initial_projection": {
+    "date": "2026-10-20",
+    "revision": 2,
+    "commit": "cbbe2d19d9e1b90272b5739a4d4173b059cb7e51",
+    "path": "ark-project/ark27/ark27-11/state.json",
+    "blob": "8edd6684917a54a2f95abbe284af13a0def40390",
+    "scope": "The complete unchanged pre-harvest State is recoverable at this fixed reference. Source10 NOT_OBSERVED flags describe preparation time, not current failure or incomplete11 work. Original bindings and inherited evidence remain.",
+    "initial_flags": {
+      "current_coordinate": "Source10が準備した受入れ前の初期State。Target11自身の読解・再構成・比較成果は未観測。",
+      "target_boot": "NOT_OBSERVED_BY_SOURCE10",
+      "ui_thread_creation": "NOT_OBSERVED_BY_SOURCE10",
+      "ui_title": "NOT_OBSERVED_BY_SOURCE10",
+      "active_external_operations": "Source10の準備公開・再取得はSource10 Receiptが所有。Target11の外部実行は開始していない。"
+    },
+    "initial_progress": {
+      "target_reconstructed": false,
+      "target_reconstruction_scope": "NOT_OBSERVED_BY_SOURCE10; Target11 must satisfy this Handoff itself.",
+      "human_last_mile": "NOT_OBSERVED_BY_SOURCE10",
+      "requested_outcome": "ROOT_ENTRY_ROLE_COMPARISON_NOT_STARTED_BY_TARGET11"
+    },
+    "initial_evidence": {
+      "source": "公開担当原本、Source10固定収穫と本Main10会話で承認されたMaterial。長期メモリを含めない。",
+      "source_observation_base": "33ba14a92acb230416da25d39ed4df94534981ba",
+      "confirmed": [
+        {
+          "claim": "Human selected11 continuation and suppliedMain Theme v1.0.",
+          "basis": "Source10 current conversation; fixed harvest now.next_main_theme.",
+          "boundary": "根本文書再設計の実装承認ではない。"
+        },
+        {
+          "claim": "Title was confirmed in response to the exact candidate, as relayed by初穂.",
+          "basis": "Fixed harvest now.transition_dialogue.title.",
+          "boundary": "Human応答と質問文はDotからの報告。Main10直接のUI観測ではない。"
+        },
+        {
+          "claim": "Fixed Source10 revision6 was published and fully reread.",
+          "basis": {
+            "commit": "8293137088ca9645a3592a75d9e7d6404d2680ae",
+            "blob": "89846e29cbdc46f9d7ac2ad34c6dec4f72e752a8",
+            "full_content_match": true,
+            "verified_at_utc": "2026-10-20T03:28:14.383Z"
+          },
+          "boundary": "Source保存の確認。11理解・UI成功ではない。"
+        }
+      ],
+      "candidate": [
+        "A/Bその他の構成案と入口の改善効果。",
+        "三利用場面と入口例によりHumanが案を判断しやすくなるというMain側の設計。"
+      ],
+      "unknown": [
+        "Target11自身の受入れと比較成果。",
+        "Humanの11 Thread作成・Title設定・起動本文貼付の実操作。",
+        "外部読者の理解、長期更新負担・実利用効果、全外部consumer。",
+        "ARC-002/STR-002のAI保留推奨のHuman採用。",
+        "現時点の身体・場所・生活実行・未報告結果。"
+      ],
+      "historical": [
+        "Source10の準備前flagsと後続終端Receiptを分ける。Source09固定収穫はrevision2。",
+        "STR-019前の移設Plan-onlyや採否Unknownは、後続の実行承認・完了で進んだ履歴。"
+      ],
+      "validation_boundary": "Sourceの自己点検・Remote一致、Targetの読解・再構成、UI、利用効果を別々に判断。"
+    }
+  },
+  "harvest_11": {
+    "identity": "Ark27:11 own collaboration harvest / revision3 / 2026-10-27",
+    "provenance": "Current thread Human inputs/corrections, own prior execution/readback records, and individually attributed public owners. Not private other conversations or long-term memory. This fixed harvest is not12 reception evidence.",
+    "human_reason_for_transition": "Human reported thread length and various malfunctions; requested Plan Mode, then adopted11→12 and authorized preparation/save/direct startup/reception. Technical causes are not independently diagnosed.",
+    "completed": [
+      {
+        "work": "Next Query and short Skill invocation",
+        "status": "SCOPED_PUBLIC_AND_EXISTING_REGISTRATION_ALIGNMENT_COMPLETED",
+        "meaning": "Human valued immediately usable next-input text as認知負荷軽減の究極策, Drucker-like Unexpected success / Move37 Seed, seeking自家薬籠中化. The next judgment became usable input without Human rewriting. Several proposed texts were reused as actual subsequent Human input.",
+        "owners": [
+          "AGENTS.md#next-query",
+          "AGENTS.md#skill-query-portability",
+          "skills/next-step/",
+          "skills/map-current-position/",
+          "references/success-cases/success-cases.jsonl"
+        ],
+        "case_id": "9fe92b09-027d-4043-9bd6-33c47f794d2d",
+        "historical_case_commit": "4869052151a33ce3b2f66b450686d462214ad0b7",
+        "observation": "Own scoped implementation/readback and same-thread reuse. Current case row fully read; STR-023 later migrated the narrative to JSONL under Support ownership. Old Markdown URL is now compatibility navigation.",
+        "not_proven": "Copy UI gestures, quantified cognitive-load reduction, universal recurrence and all runtimes."
+      },
+      {
+        "work": "Text Writer / Query portability",
+        "status": "IMPLEMENTED_AND_VERIFIED_WITH_SAME_EXISTING_REGISTRATION",
+        "owners": [
+          "skills/write-text/SKILL.md",
+          "skills/write-text/README.md",
+          "skills/write-text/agents/openai.yaml",
+          "skills/write-ark-markdown/SKILL.md",
+          "AGENTS.md"
+        ],
+        "registration_identity": "skill-6aad02ab67648191b4126e9db6bcafac",
+        "observation": "Own Writer execution verified remote registration files and matching UI semantics; registration repository head191d8888bf1ee43038582b3bd6f23b9452295329. Current shared README v002 confirms name/scope/old-route responsibilities.",
+        "boundary": "Completed rename/shared publication and registered-content verification do not prove every future auto-selection. No Home implementation or attachment revision."
+      },
+      {
+        "work": "Root dots retirement",
+        "status": "AI_PREPARATION_AND_HUMAN_DELETION_AND_SCOPED_POSTCHECK_COMPLETED",
+        "owner": "control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation",
+        "preparation_commit": "d6b94b921e6fda75d9b3cd47056a6ee7d87f8870",
+        "human_deletion_commit": "3e590a5cf2a46d1fc1c7a743ece83c8e8c17ad1c",
+        "postcheck_record_commit": "60cfdff26fd835e34a5e8f9617e79f63f034d53f",
+        "meaning": "Reduce future interpretation of obsolete addresses while keeping actual originals and meaningful history.",
+        "observation": "Root dots absent; protected agents/dots originals/data and major known read/save routes preserved; bounded07 navigation/Binding adjustment. Later record reports17 originals:16 unchanged and lesson file retained prior9rows plus1.",
+        "boundary": "Human owns deletion. Do not return to deletion-wait or redo deletion; old04/06 fixed contracts and immutable historical URLs remain historical paths. Unknown old copies are locally recoverable, not a universal compatibility guarantee."
+      },
+      {
+        "work": "Third and fourth continuing lines",
+        "status": "INITIAL_SOURCE_UI_RECEPTION_AND_ASSIGNED_CONVERSATION_ANALYSES_COMPLETED",
+        "owners": [
+          "ark-project/ark29/ark29-01/state.json",
+          "ark-project/ark30/ark30-01/state.json"
+        ],
+        "preparation_commit": "117d32a7a80364c774572d595d6c0f0ada239f35",
+        "reception_commit": "4869052151a33ce3b2f66b450686d462214ad0b7",
+        "observation": "Own existing execution receipts: both Projects and01 Threads created, instructions reopened, startup sent, exact Titles, receivers own9-source R1–R6 evidence and assigned conversation work observed. Both State revision3 verified.",
+        "line29": "Home B meaning transfer / three usage scenarios / reference and Binding impact assistance completed in conversation; Main retains overall decision.",
+        "line30": "Existing Report content/expression/reading-route comparison completed in conversation; Support retains Report/Feedback ownership. A source link typo corrected locally, not a reboot.",
+        "human_name_correction": [
+          "Ark29_2026/10/26: 継続協働ライン3",
+          "Ark30_2026/10/26: 継続協働ライン4"
+        ],
+        "name_evidence": "Human reported manual correction. A later Ark29 UI label includes Wiki: Lauren Tan; label alone is not an ownership transfer and is not overwritten here.",
+        "boundary": "No permanent4-way execution or reduced relay burden claimed. No resending initial Queries, new tasks just to fill slots, or later private dialogue export."
+      },
+      {
+        "work": "prepare-ark-transition operation route and exact UI verification guidance",
+        "status": "TWO_PUBLIC_FILES_AND_SAME_REGISTRATION_UPDATED_AND_REREAD",
+        "commit": "f4516e3ca19a6cf9cd09782ab2b662f0d2315b16",
+        "skill_blob": "3e478822ab76e2f3052c618e117e534292c94691",
+        "readme_blob": "31133c7dc5ed6eeae4e4a326a25ac8dc31959615",
+        "owners": [
+          "skills/prepare-ark-transition/SKILL.md",
+          "skills/prepare-ark-transition/README.md"
+        ],
+        "observation": "Own execution completed shared+registered body match, READMEv003, standard Query, two paragraphs. Current registered Skill read fully again for11→12.",
+        "boundary": "UI-route choice remains within actual authority and access controls. No new Skill amendment due to this transition."
+      }
+    ],
+    "other_owner_current": {
+      "support": "Ark28:08 via current Domain; preserve Support ownership and fixedSource06/history.",
+      "support08_evidence": "At cbbe2d19d9e1b90272b5739a4d4173b059cb7e51, Current07 State revision6 progress.next_transition records08 created/startup sent/title reopened/receiver substantive acceptance. This is Source07 public receipt, not Main11 own receiver observation. FixedSource07=523b00b701e2049df5484f7e761e68d5389ac06f revision3. Keep concurrent route.",
+      "references": "STR-023 completed by Support07, commit836e814088e444e51f52ac540a872cd7620ad23e. Feedback/lessons/success-cases own different meanings; success9 narratives moved with original identity and provenance. Not Main11 implementation. Current owner records authoritative details.",
+      "no_takeover": "Support Report/Feedback,29/30 current work, Harness, Dots and other domains remain with their owners."
+    },
+    "remaining": [
+      {
+        "work": "Integrated Home B",
+        "state": "ANALYSIS_PROGRESSED_IMPLEMENTATION_UNAUTHORIZED",
+        "goal": "A first reader can understand this Ark, current task, and the owner of a meaning correction.",
+        "current": "Main comparisons/drafts and29 initial assistance completed. Candidate B integrates Ark meaning/entry into root README; AGENTS owns common contract; numbered Domain owns routes.",
+        "next_condition": "Current Human request for further comparison/adoption with source drafts that are actually available. Implementation needs explicit scope; no invented unavailable final prose.",
+        "preserve": [
+          "Seed→ARK-alone review→whole structure Human correction",
+          "whole Ark / repository / numbered area",
+          "supplement / duplicated independent rules",
+          "explanation model / instruction",
+          "display name / physical rename",
+          "first AI / direct valid Handoff / Human meaning correction"
+        ]
+      },
+      {
+        "work": "ARC-002 / STR-002 physical Binding migration",
+        "state": "SOURCE10_COMPARISON_COMPLETE; PHYSICAL_CHANGE_UNEXECUTED; AI_HOLD_RECOMMENDATION_NOT_HUMAN_ADOPTION",
+        "goal": "Preserve meaning/evidence while reducing demonstrated current misrouting or maintenance cost.",
+        "owner": "Source10 fixed harvest and PLAN current; specific consumer contracts",
+        "next_condition": "Material benefit/dependency and targeted authority; not12 boot gate."
+      },
+      {
+        "work": "Four-line continuity and reduced Human relay burden",
+        "state": "INITIAL_CONNECTION_COMPLETE; SUSTAINED_EFFECT_UNOBSERVED",
+        "goal": "At least four meaningful continuing work lines across completion/wait/handoff, without unnecessary work.",
+        "next_condition": "Natural actual use/Feedback; no permanent monitoring or automatic tests."
+      }
+    ],
+    "out_of_scope": [
+      "Integrated Home implementation",
+      "root document redesign or fixed Binding modernization",
+      "otherThread sends",
+      "Skill recreation/reinstallation",
+      "attachments or GCI account settings",
+      "all Ark00 / folder README cleanup",
+      "research tours, extra archives, house/Pet/life tasks",
+      "schedules, Token Reset",
+      "private conversation or long-term-memory export"
+    ],
+    "evidence_rule": "Preserve Confirmed with observer, Candidate design, Unknown effects, and historical time separately. Source preparation, remote saved content, actual UI/send, receiver own understanding, Human device access and practical effects are separate."
+  }
 }
