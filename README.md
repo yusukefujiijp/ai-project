@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v019"
+version: "v020"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v018 preserved in Git history; v019 adds the shared Wiki discovery row only, retaining prior ownership and review history"
+version_basis: "v001-v019 preserved in Git history; v020 adds the shared keybindings source and read-route navigation, retaining prior ownership and review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-27"
 last_reality_reviewed: "2026-09-19"
@@ -79,7 +79,14 @@ wiki_entry_addition:
   date: "2026-10-27"
   base_commit: "f7c2bfbe400ce895b6a89a0812b3d2d40b053a36"
   scope: "Shared Wiki discovery row only; no Home redesign, authority change or whole-repository revalidation"
+keybindings_entry_addition:
+  date: "2026-10-27"
+  design_base_commit: "c175566d61f126cfaf6c2c6ceab7c81fbfdc083e"
+  base_commit: "9d2f49ae68a70d84fa08e56ddf93e8b0623f831a"
+  authority: "Current Human adopted the four-file keybindings plan and authorized main persistence and remote verification"
+  scope: "Shared keybindings source discovery and AGENTS-owned read-route navigation; no existing Runtime, fixed Binding, account setting or cross-AI rollout change"
 updated_reason:
+  - "2026-10-27: Connect the Human-adopted keybindings source before shorthand input through the AGENTS read contract; preserve prior review scope and distinguish persistence from recipient understanding and behavior."
   - "2026-10-27: Connect the shared Wiki first experiment through its own entry; preserve the shared References route and all prior review scopes."
   - "2026-10-26: STR-023 connects feedback, lessons and success cases through the existing References entry; no whole-repository or behavioral revalidation."
   - "2026-10-20: Route the Dots entry to agents/dots in the relocation candidate; retain current ownership, historical review metadata and product cutover boundaries."
@@ -162,6 +169,8 @@ foundation_migration:
 
 このREADMEは**どこへ進めばよいかを判断する入口**である。毎回のBoot儀式や、実行を提案へ戻すGateではない。現在の依頼・有効な承認・読取契約・作業状態から進路を選ぶ。
 
+Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取条件](AGENTS.md#ark-keybindings)に従い、未確認の[キーバインディング原本](keybindings/README.md)へ進む。短縮入力が届く前に共通の意味を読める経路とし、確認済みの読解は適用条件に従って再利用する。
+
 | 今回の目的 | 入口・所有資料 |
 |---|---|
 | 相談・Review・Plan-only・実行の境界を決める | [AGENTS.md](AGENTS.md) §0・§2・§5 |
@@ -175,7 +184,7 @@ foundation_migration:
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v019 / Current-request Repository Front Door
+- Repository入口: README v020 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -243,6 +252,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 |---|---|---|
 | [`prompts/README.md`](prompts/README.md) | Cross-AI Prompt Runtime and Query Shelf | Prompt / Queryを選ぶ時 |
 | [`skills/README.md`](skills/README.md) | Shared Skill Source and Distribution Hub | Skillの手順・共有原本・導入との違いを確認する時 |
+| [`keybindings/README.md`](keybindings/README.md) | Ark共通キーバインディングの意味・対象・適用条件の原本 | Ark協働の初回・文脈復元など、AGENTSの読取条件に該当する時。改訂・理解確認では補助のexamples.mdへ |
 | [`schedules/README.md`](schedules/README.md) | Schedule PromptのDurable / Versioned SourceとRuntime同期入口 | Schedule Taskを再現・修正・監査し、Future AIへ変遷を継承する時 |
 
 ### 5.3 Thread Lifecycle Layer

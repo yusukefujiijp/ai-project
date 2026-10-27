@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.10-candidate"
+version: "v004.11-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -120,7 +120,14 @@ continuation_selection_patch:
   base_blob: "465e7452515ff1b587c6d1e8f08e5dedde53b32b"
   authority: "Current Human adopted the fourteen-file plan and updates to three existing Skills; account and Project settings remain outside this execution"
   scope: "Make viable active-Goal continuation explicit before selecting None; connect current progress to the next outcome while preserving bounded completion and output exceptions"
+keybindings_read_route_patch:
+  date: "2026-10-27"
+  design_base_commit: "c175566d61f126cfaf6c2c6ceab7c81fbfdc083e"
+  base_commit: "9d2f49ae68a70d84fa08e56ddf93e8b0623f831a"
+  authority: "Current Human adopted the four-file keybindings plan and authorized main persistence and remote verification"
+  scope: "Read the shared keybindings source on Ark startup or context recovery before shorthand recognition; retain existing required reads, bindings, authority and full-query presentation"
 updated_reason:
+  - "2026-10-27: Route Ark startup and recovery to keybindings/README.md without depending on q recognition; preserve full-query adoption, Human choice and prior quality, authority and evidence boundaries."
   - "2026-10-27: Clarify when to produce a usable Next Query, show the current attainment and next outcome, and retain valid resumption after a correction; do not defer already-authorized work or invent tasks."
   - "2026-10-24: Generalize the three-section continuation interface beyond Dots; structure actual Query text inside one copy block and display the empty state as - None; preserve prior rounds and output exceptions."
   - "2026-10-24: Structure ordinary Next Step content as meaningful bullet points without reducing necessary explanations or turning bullet count into Task count; AGENTS and GCI only."
@@ -159,11 +166,18 @@ updated_reason:
 
 「まず提案し、必ず新しいHuman Sealを待つ」という一律の工程は設けない。承認済みならその権限を使い、計画で止める依頼ならそこで止める。詳細な実行境界は第5節に集約する。
 
+<a id="ark-keybindings"></a>
+
+Ark協働を開始・文脈復元する時は、[共通キーバインディング原本](keybindings/README.md)の適用と読解状況を確認する。未確認なら、短縮入力の有無や意味の認識を待たず、先頭Metadataから本文末尾まで読む。既存の必須Source・読取順・Identity・Binding・Exact EOFを保持し、通常の協働へ入るまでに共通入力の解釈を成立させる。同一性と適用条件を確認できる自身の読解は第4節に従って再利用する。
+
+原本が取得できない、または適用関係が解決できない場合は、第2.1節に従い、影響する短縮入力の解釈・実行と最小の回復方法を示す。影響しない明確な依頼まで一律に停止しない。補助のexamples.mdは理解確認・改訂時に用い、毎回の必須読込にはしない。
+
 ## 1. Role Map / 文書の身分を混ぜない
 
 - [README.md](README.md): AIを主読者とするRepository入口／Current Requestと担当資料への案内。Humanも確認・訂正できる形を保つ。局所READMEはDomain入口やRuntimeも担うため、本文の宣言を確認する。
 - [ARK.md](ARK.md): Ark Project Home Constitution / Identity and Return-Home Kernel。
 - [AGENTS.md](AGENTS.md): Repository共通のAgent判断・権限・読取・実行契約。
+- [keybindings/README.md](keybindings/README.md): Ark共通の短縮入力の意味・対象・Mode継承・不足時の扱い。各Threadの具体的な対象Queryや作業状態は、そのThreadと担当記録が所有する。
 - Nearest README / Handoff / Manifest: Current Domain、Thread Identity、Mission、Binding、Required Read。
 - Applicable Project INSTRUCTIONS.md: Project固有の協働・表示・運用指示。適用範囲を確認して読む。
 - [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md): 再利用する協働姿勢・判断のPrompt。IdentityはARK、共通権限は本書が所有する。
@@ -342,6 +356,8 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 Noneは今回提示するNext Queryの不在だけを表す。全体の残作業ゼロ・全Goal達成、未確認・取得失敗・判断不能、既存委任の取消し、他AIへの停止命令、Humanの発言制限、新しい実行許可を意味しない。判断に効く確認をNoneで隠さず、通常のUnknownだけで確認依頼を増やさない。
 
 HumanはNext Queryを使う・修正する・保留する・使わないことを選べる。未使用だけを理由に新しい未完了Taskや追催を作らず、有効な依頼・承認の取消しとも推定しない。Humanの訂正を三節の見立て・判断・依頼文へ反映する。最新Correctionで議題を切り替えた場合は、有効な再開先を保持し、保留した議題や別のGoalを自動開始しない。Modeを変える接続を提案する場合は、その変更を三節へ反映して明示し、現在の実行承認と同一視しない。表示・引用・称賛から権限を作らず、実際の現在の依頼から解決する。有効な委任で遂行可能な工程は完了まで進め、追加のContinue待ちとしてHumanへ送り返さない。
+
+Next Queryを短縮入力で採用する場合は、[キーバインディング原本](keybindings/README.md)を適用する。本節が所有する依頼全文の提示・コピー境界・Humanの選択権を保持し、キーの意味をここへ重複定義しない。原本への初回・復元時の読取経路は[第0節](#ark-keybindings)に従う。
 
 将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
 
