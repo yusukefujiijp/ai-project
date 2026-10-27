@@ -40,7 +40,7 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-27"
+updated: "2026-10-28"
 last_reality_reviewed: "2026-10-27"
 route_review_base_commit: "51834fa49dc70c8c51ac2516a877235581dc0da3"
 route_review_scope: "Human-authorized Ark27:11→12 THREAD_CONTINUE; fixed Source11 revision3 preserves own fruit/corrections and inherited results. Current11 progress.next_transition owns final publication/UI/reception receipts. Preserve concurrent Support08,29/30, existing chapter instructions and fixed bindings. No Home implementation."
@@ -173,6 +173,12 @@ inbox_consolidation_revision:
   entry: "ark100-199/ark101_inbox-save-thread/README.md"
   scope: "Saved-Thread Project consolidation and navigation only; preserve Ark00 Draft White Board, concurrent Ark109 room-care and all Main/Support/29/30 routes"
   concurrent_room_care_commit: "a6f4797aca3ef7a0418169b06f7f45af06ae7a36"
+pstack_project_entry_revision:
+  date: "2026-10-28"
+  base_commit: "18dcea61849d337c37e733ee18debe6887a4d9ef"
+  authority: "Human requested save, then explicitly designated Project Ark111, Thread Ark111:01, and the exact Project Title"
+  entry: "ark100-199/ark111_lauren-tan-pstack/README.md"
+  scope: "Add the specialist Project discovery route and preserve its conceptual discussion; no Main/Support routing, Runtime, Skill, UI or behavioral change"
 ---
 # Ark Project
 
@@ -267,6 +273,9 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。room-careの番号から対のProjectを自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
 
 現在のProject名は `Ark109: room-care`、本Threadは[Ark109:01](ark100-199/ark109_room-care/ark109-01/README.md)。同じ対話の改番であり、他Threadの識別子・Title・Runtime・担当は変更しない。既存のHuman確定Titleへ識別子変更だけを適用した `Ark109:01_2026/10/20; room-care` を使い、開始日・記号・名称を保持する。Currentのコピー面と文脈復元条件は01 Runtime、Project指示の全文は現行INSTRUCTIONSが所有する。旧Ark101三URLは新住所への案内のみを残し、原本を二重化しない。初回準備・命名・起動成功の報告と固定履歴はProject READMEへ。改番の保存、UI反映、受入れAIの理解、実生活の改善を別の証拠で扱い、この修正を再起動や実践開始の前提Gateにしない。
+
+
+**[Ark111: "Lauren Tan(@poteto): pstack"](ark100-199/ark111_lauren-tan-pstack/README.md)** は、pstackの実物検証とHuman–AIの役割分担を検討する専門Project。Humanが2026-10-28の保存作業中にProject名と本Thread **Ark111:01** を明示した。[01の総括原本](ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md)が重要な意味・訂正・根拠・未確認・再開条件を所有する。今回は概念整理の保存であり、pstack導入、Skill作成、UI設定変更、他AIへの送信・起動は含まない。既存Main／Supportと他Projectの役割・固定Bindingを保持する。
 
 ---
 
