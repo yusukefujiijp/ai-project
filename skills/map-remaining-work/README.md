@@ -1,6 +1,6 @@
 # 残作業とGoal — map-remaining-work
 
-README版: v001 / 2026-10-20（Asia/Tokyo）
+README版: v002 / 2026-10-27（Asia/Tokyo）
 
 今も必要な仕事と、その仕事が目指す状態・根拠・担当・再開条件を復元するスキルです。現在の依頼・会話・成果・訂正・原本から直接整理でき、前回のMAPを準備する必要はありません。ChatGPT Dotsを主経路、Workを補助経路とし、他AI・Future AIでは実際の役割と能力に合わせます。
 
@@ -9,7 +9,8 @@ README版: v001 / 2026-10-20（Asia/Tokyo）
 短い入口は次のとおり。対象Thread・案件・範囲の指定があればその指定を優先する。
 
 ~~~text
-$map-remaining-work を使い、現在の残作業とGoalを整理してください。
+$map-remaining-work を使い、現在の残作業とGoalを整理してください。Skillを直接利用できない場合は、次の共有原本を全文読んで適用してください。取得できなければ、未確認範囲・影響・最小の回復方法を示してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/map-remaining-work/SKILL.md
 ~~~
 
 [共有本文](SKILL.md)は、現在の協働から有効な残作業とGoalを根拠に沿って復元する独立入口。[表示設定](agents/openai.yaml)は表示名・短い説明・この呼出し文を所有する。Dotsを主用途とする明示的な経路、Workを補助用途とする経路、他AI・Future AIへの適応経路を一つの本文に置く。環境、役割、実際の能力・権限を分け、すべてのDotをChiefとみなさない。前回Mapや他Skillの全件登録を条件にせず、読めない範囲を黙って縮めて全体確認済みとしない。
@@ -38,3 +39,7 @@ $map-remaining-work を使い、現在の残作業とGoalを整理してくだ�
 ## 3. 更新先
 
 判断と手順は[SKILL.md](SKILL.md)、コピー用Queryと利用案内・形成記録は本README、UIの短い表示・起動文は[agents/openai.yaml](agents/openai.yaml)へ置きます。Queryの配置変更を理由に、既存MAPの深掘りQueryや現在地MAP本体を再設計しません。共通の配布と照合は[Skills Hub](../README.md#4-source-and-distribution)を参照し、本READMEの履歴を通常利用の必須読込にはしません。
+
+## 2026-10-27：継続先の保持と共有原本への入口
+
+Humanは、現在のGoalに有効な接続がある場合のNext Query提示、到達範囲と次の成果、Noneの選択条件を整合する改訂を採用し、14共有原本と既存3 Skillへの反映を承認した。共通判断は[AGENTS §6.2](../../AGENTS.md#next-query)、本Skill固有の判断は[SKILL.md](SKILL.md)が所有する。コピー用起動文とUI起動文に共有原本URL・全文読解の代替経路を含め、導入状況別の本文組立をHumanへ戻さない。共有保存・登録先反映・会話での取得・設定欄・独立読者の理解・実利用効果は別々に確認する。

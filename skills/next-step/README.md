@@ -9,7 +9,8 @@
 現在の会話や対象資料とともに、次の文を使えます。
 
 ```text
-$next-step を使い、現在の目的・制約・根拠から、今有効な次の接続を選んでください。
+$next-step を使い、現在の目的・制約・根拠から、今有効な次の接続を選んでください。Skillを直接利用できない場合は、次の共有原本を全文読んで適用してください。取得できなければ、未確認範囲・影響・最小の回復方法を示してください。
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/next-step/SKILL.md
 ```
 
 現在の権限を保持し、必要時だけ[Living Review](../living-review/README.md)や[Plan Mode](../plan-mode/README.md)へつなぎます。実行、言語化、比較、確認、意図的保留、維持、今回完了のいずれも有効な結果になり得ます。新しいTaskを増やすことを目的にせず、有効な実行委任があればその範囲の必要な仕事へ進みます。
@@ -33,3 +34,7 @@ $next-step を使い、現在の目的・制約・根拠から、今有効な次
 ## 2026-10-21：Next Queryへの接続
 
 Ark27:11のHuman承認に基づき、共通形式は[AGENTS](../../AGENTS.md#next-query)、接続の選択とGoal・Modeとの一致は[SKILL.md](SKILL.md)が所有する構成へ改訂しました。段階完了とGoal全体の達成を区別し、現在有効な継続先を失わないようにします。出来事・Human評価・同じThreadでの本文再利用は[成功事例](../../references/success-cases/next-query-as-continuation-interface.md)を参照します。文面の改訂・共有保存・導入・他AIの理解・実利用効果は別々に確認します。
+
+## 2026-10-27：継続先の保持と共有原本への入口
+
+Humanは、現在のGoalに有効な接続がある場合のNext Query提示、到達範囲と次の成果、Noneの選択条件を整合する改訂を採用し、14共有原本と既存3 Skillへの反映を承認した。共通判断は[AGENTS §6.2](../../AGENTS.md#next-query)、本Skill固有の判断は[SKILL.md](SKILL.md)が所有する。コピー用起動文とUI起動文に共有原本URL・全文読解の代替経路を含め、導入状況別の本文組立をHumanへ戻さない。共有保存・登録先反映・会話での取得・設定欄・独立読者の理解・実利用効果は別々に確認する。

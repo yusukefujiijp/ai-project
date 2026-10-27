@@ -2,8 +2,8 @@
 title: "Ark00: Draft White Board"
 canonical_name: "Ark00"
 class: "S"
-version: "v001-purpose-first"
-version_note: "Purpose-first renewal; earlier revisions remain in Git history"
+version: "v002-purpose-first"
+version_note: "Continuation selection aligned; purpose-first renewal and its history retained"
 status: "living_readme / free_inbox_and_zero_gate"
 canonical_path: "ark-project/ark00/README.md"
 repo: "yusukefujiijp/ai-project"
@@ -27,10 +27,12 @@ covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ
 human_authority: "Meaning / Correction / STOP / Final Seal; use the current authorized scope"
 updated: "2026-10-27"
 updated_timezone: "Asia/Tokyo"
-updated_reason: "Human-authorized README revision after the Ark00 Project instructions draft: free input, sufficient response to the current subject, portable AI queries, source roles and execution boundaries"
-revision_base_commit: "0a91204a8982c2a32385b9bee3533654c70a1c1c"
-revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
-expected_eof: "EOF::ARK00_README::v001-purpose-first"
+updated_reason: "Human-authorized continuation correction: distinguish the current attainment from remaining active-Goal connections and follow the shared Next Query selection conditions"
+purpose_first_revision_base_commit: "0a91204a8982c2a32385b9bee3533654c70a1c1c"
+purpose_first_revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
+revision_base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
+revision_base_blob: "39a5b97b0027224f775b3fbc7fb759458dcee7bb"
+expected_eof: "EOF::ARK00_README::v002-purpose-first"
 ---
 
 # Ark00: Draft White Board
@@ -149,11 +151,11 @@ Ark00での基本協働は特定Skillの導入を前提にしない。利用可�
 
 ## 8. 応答を、現在の目的に合う接続へ結ぶ
 
-継続を扱う通常の協働では、末尾を **【Living Review】→【Next Step】→【Next Query】** の独立した三節として隣接させる。Living Reviewは現在の根拠を踏まえた見立て、Next Stepはそこから選ぶ有効な接続、Next Queryは必要な場合に実際に使える次の依頼文である。本文は意味のまとまりごとの箇条書きにし、項目数や回答全体の構成を固定しない。見出しを埋めるために新Taskを作らない。共通の詳細は[AGENTSの回答契約](../../AGENTS.md#next-query)が所有する。
+継続を扱う通常の協働では、末尾を **【Living Review】→【Next Step】→【Next Query】** の独立した三節として隣接させる。Living Reviewは現在の根拠を踏まえた見立て、Next Stepはそこから選ぶ有効な接続、Next Queryは現在のGoalに有効な接続がある場合に、そのまま使える次の依頼文を渡す。本文は意味のまとまりごとの箇条書きにし、項目数や回答全体の構成を固定しない。見出しを埋めるために新Taskを作らない。共通の詳細は[AGENTSの回答契約](../../AGENTS.md#next-query)が所有する。
 
-目的・対象・必要な方法・完了条件・Modeを整合させる。言語化、比較、確認、保留、今回の完了も選べる。承認済みの仕事は完了まで進め、途中で「続けて」と言わせるためのQueryへ置き換えない。部分工程の完了と、Humanの目的全体の達成も区別する。
+目的・対象・必要な方法・完了条件・Modeを整合させ、今回の到達範囲、残る接続、次に得る成果と選ぶ理由が分かるようにする。言語化、比較、確認、保留、今回の完了も選べる。承認済みの仕事は完了まで進め、途中で「続けて」と言わせるためのQueryへ置き換えない。部分工程の完了と、Humanの目的全体の達成も区別する。
 
-Next Queryを提示する場合は、§6の条件を満たす全文を最後の一つのtextコードブロックに置き、その後へ説明を足さない。現在の状況に合わせて作り、「前回のQueryを使う」だけで済ませない。提示すべきQueryがなければ `- None` とし、コードブロックにしない。これは「今回は次の依頼文を提示しない」の意味であり、未解決事項の不存在や必要な確認の隠蔽を意味しない。
+Next Queryを提示する場合は、§6の条件を満たす全文を最後の一つのtextコードブロックに置き、その後へ説明を足さない。現在の状況に合わせて作り、「前回のQueryを使う」だけで済ませない。Queryを提示しない判断はAGENTS §6.2の使用条件に従い、理由・到達範囲・必要な再開条件をNext Stepまでに示す。その場合は `- None` とし、コードブロックにしない。これは「今回は次の依頼文を提示しない」の意味であり、未解決事項の不存在や必要な確認の隠蔽を意味しない。
 
 Humanは提案を採用・編集・保留・破棄できる。本文だけ、厳密形式、受領のみ、Boot Failure等の指定では、その条件を優先して付加節を省く。通知不要の指示へ返答形式を理由に通知しない。
 
@@ -185,4 +187,4 @@ Humanは提案を採用・編集・保留・破棄できる。本文だけ、厳
 
 今後はFeedbackが変える判断を特定し、今回だけの訂正・特定場面の条件・共有すべき原則を分ける。追記だけでなく、置換・削除・重複統合で育てる。具体的な誤りには原因となる条件と確認箇所を対応させ、毎回の全資料監査や規則の無限増殖へ進めない。永続変更は現在の権限に従い、必要な改善後は本題へ戻る。
 
-EOF::ARK00_README::v001-purpose-first
+EOF::ARK00_README::v002-purpose-first

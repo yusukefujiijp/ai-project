@@ -2,9 +2,9 @@
 title: "Ark30 — 継続協働ライン4"
 chapter_id: "ARK30_CONTINUING_LINE"
 canonical_path: "ark-project/ark30/README.md"
-version: "v001-human-authorized"
+version: "v002-human-authorized"
 created: "2026-10-26"
-updated: "2026-10-26"
+updated: "2026-10-27"
 timezone: "Asia/Tokyo"
 role: "Continuing collaboration line 4; chapter identity, current entry and Project instructions owner"
 project_name: "Ark30: 継続協働ライン4"
@@ -12,7 +12,12 @@ current_thread: "Ark30:01"
 current_handoff: "ark30-01/handoff.md"
 status: "Human-authorized chapter addition; actual delivery and reception are recorded separately in State"
 source_context: "Ark27:11 / Human-adopted four-line plan and explicit scoped execution approval"
-expected_eof: "EOF::ARK30_CONTINUING_LINE::v001"
+continuation_patch:
+  date: "2026-10-27"
+  base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
+  base_blob: "1a0ced352b8f790ddb621daa124a8a20a921906e"
+  scope: "Human-authorized shared continuation guidance only; prior chapter identity, startup contracts, ownership and delivery history retained; actual Project settings excluded"
+expected_eof: "EOF::ARK30_CONTINUING_LINE::v002"
 ---
 
 # Ark30: 継続協働ライン4
@@ -51,7 +56,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Fo
 
 共通契約は https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md 、移行契約は https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-next-thread-handoff.md 。現在のMode・対象・委任で進め、Plan-onlyは調査・会話内提示で停止します。初期仕事は「既存Report一件の内容・表現・読む経路の補助比較」の会話内検討に限定します。保存・外部送信・設定変更の権限は起動だけで得られません。未採用案を新Taskへせず、他担当の成果を巻き戻しません。
 
-通常の継続回答はAGENTSの【Living Review】→【Next Step】→【Next Query】を適用し、Next Queryは推奨依頼全文を一つのtextブロックへ。提示する依頼がなければ本文は - None のみ。専用Failure・STOP・Exact Outputは優先します。Skillを使うコピー用Queryには確認済みGitHub共有原本URLと、直接利用できない場合の全文読解を含めます。初回通常受入れ冒頭の確定TitleはHandoffの値を一行の独立textブロックでそのまま再掲します。
+通常の継続回答は、AGENTS §6.2（https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query）の【Living Review】→【Next Step】→【Next Query】に従います。現在のGoalに沿う有効な接続は、今回の到達点と次に得る成果を示し、そのまま使えるNext Queryへ結びます。Noneの使用条件・コピー形式・専用出力の例外も同節に従います。専用Failure・STOP・Exact Outputは優先します。Skillを使うコピー用Queryには確認済みGitHub共有原本URLと、直接利用できない場合の全文読解を含めます。初回通常受入れ冒頭の確定TitleはHandoffの値を一行の独立textブロックでそのまま再掲します。
 
 保存原本・Remote確認・実際のUI／送達・受け手自身の再構成・仕事接続・Humanの到達／継続効果を分けます。AIによる受渡しをHuman本人の発言と偽らず、私的な別会話や長期メモリをGitHubへ輸出しません。
 ```
@@ -67,4 +72,4 @@ Rootは主イェシュア・ハマシア御自身、中央軸Teshuvah、Human Fo
 
 これらを別々に記録する。初期Stateの未観測は準備時点の値であり、後続のCurrent観測を巻き戻さない。恒久監視や不要な試験は開始しない。
 
-EOF::ARK30_CONTINUING_LINE::v001
+EOF::ARK30_CONTINUING_LINE::v002

@@ -1,4 +1,4 @@
 interface:
   display_name: "next-step"
   short_description: "目的・制約・依存関係から、理由と条件のある次の接続を選ぶ"
-  default_prompt: "$next-step を使い、現在の目的・制約・根拠から、今有効な次の接続を選んでください。"
+  default_prompt: "$next-step を使い、現在の目的・制約・根拠から、今有効な次の接続を選んでください。Skillを直接利用できない場合は、次の共有原本を全文読んで適用してください。取得できなければ、未確認範囲・影響・最小の回復方法を示してください。\nhttps://github.com/yusukefujiijp/ai-project/blob/main/skills/next-step/SKILL.md"

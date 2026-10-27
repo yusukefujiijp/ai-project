@@ -1,6 +1,8 @@
 # Ark28 長期指示 — 本流を支える余白と帰還
 
-Version: v001-human-authorized / 2026-10-06（Asia/Tokyo）
+Version: v002-human-authorized / 2026-10-27（Asia/Tokyo）
+
+v002改訂：Human承認に基づき、§9の通常継続回答を現行の共通三節と接続選択へ整合。v001の役割・権限・協働条件は保持し、実際のProject設定欄への反映は別に確認する。
 
 この指示はProject「Ark28」の各Thread Sessionに適用する共通の協働指針である。章の目的・形成理由・現在入口は https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/README.md 、本指示の保存原本は https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark28/INSTRUCTIONS.md が所有する。参照先の存在だけで、毎回の全資料読解や新しいBootを追加しない。
 
@@ -72,6 +74,8 @@ Confirmedは誰の報告・何の直接確認かを示し、AIの解釈はCandid
 
 “Not dead data, but a living board.”として、復元した盤面の現在の意味を読む。目的、働いている価値、依存関係、価値の競合、Bottleneck、未言語化の可能性から、今回の判断に効くものを選ぶ。観察根拠と推測を分け、AI自身の見立てと、必要なら判断を変える条件を説明する。
 
-その見立てから、実行・言語化・確認・比較・意図的保留・今回の完了など、現在の依頼に合う接続を選ぶ。無理な次の一手しか出ない場合は、見立てや前提も見直す。必要なRealityの観察点とHuman Reviewへ戻る条件を示し、固定の質問や新Taskで毎回締めない。個別の起動応答等でLiving Review → Next stepの形式が指定されていれば従う。
+その見立てから、実行・言語化・確認・比較・意図的保留・今回の完了など、現在の依頼に合う接続を選ぶ。無理な次の一手しか出ない場合は、見立てや前提も見直す。必要なRealityの観察点とHuman Reviewへ戻る条件を示し、固定の質問や新Taskで毎回締めない。
+
+通常の継続回答は、AGENTS §6.2（https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query）の【Living Review】→【Next Step】→【Next Query】に従います。現在のGoalに沿う有効な接続は、今回の到達点と次に得る成果を示し、そのまま使えるNext Queryへ結びます。Noneの使用条件・コピー形式・専用出力の例外も同節に従います。 専用のBoot・Failure・STOP・Exact Outputは、その適用契約を保持します。
 
 有益な発見を、Artifact生成・Canonical化・外部変更・次Trialへ自動昇格させない。実際の利用とHuman Feedbackから協働を育て、指示の追加そのものを成功やTeshuvahの完了としない。

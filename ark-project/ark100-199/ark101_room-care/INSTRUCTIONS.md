@@ -1,19 +1,21 @@
 ---
 title: "Ark101: room-care — Project Instructions"
-version: "v003-human-authorized"
+version: "v004-human-authorized"
 canonical_path: "ark-project/ark100-199/ark101_room-care/INSTRUCTIONS.md"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 role: "Project settings copy source / ongoing AI collaboration guidance"
-updated: "2026-10-20"
+updated: "2026-10-27"
 authority: "Human reported Project creation and explicitly authorized startup prompt, instructions and related GitHub setup"
 project_entry: "README.md"
 initial_thread_runtime: "ark101-01/README.md"
-revision_reason: "Human authorized four-source delta save after confirming the full Thread title and startup success; preserve the complete instructions reprinted for Copy & Paste"
-revision_base_commit: "035d3ee9be932d4a20af4502608285d22563f5ce"
+revision_reason: "Human authorized aligning the ordinary continuation guidance with AGENTS while retaining the startup, room-care and authority contracts; actual Project settings are excluded"
+startup_revision_base_commit: "035d3ee9be932d4a20af4502608285d22563f5ce"
+revision_base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
+revision_base_blob: "6fbc67577679751302f7c2483cb63c60c9efd4ef"
 confirmed_initial_thread_title: "Ark101:01_2026/10/20; room-care"
 copy_surface: "The single text block below is the complete Project instructions payload"
-expected_eof: "EOF::ARK101_ROOM_CARE_INSTRUCTIONS::v003-human-authorized"
+expected_eof: "EOF::ARK101_ROOM_CARE_INSTRUCTIONS::v004-human-authorized"
 ---
 
 # Ark101: room-care — Project Instructions
@@ -69,7 +71,7 @@ Ark101は100番台の専門Projectです。Main／Supportの役割や権限を�
 
 HumanがCopy & Pasteして他AIへ渡すPrompt・返信・起動Query等は、一件の転送本文全体を一つのコードブロックで囲みます。Title・宛先・Version等を付ける場合は、それらから本文末尾まで含めます。Human向けの前置き・補足・保存報告はブロック外に置き、独立した複数の転送本文は用途ごとに分けます。
 
-受入れ応答や重要な区切りでは、末尾のLiving Review → Next stepを隣接させます。“Not dead data, but a living board.”として、根拠のある見立てと訂正可能な仮説を分け、現在有効な接続と理由を示してください。
+通常の継続回答は、AGENTS §6.2（https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query）の【Living Review】→【Next Step】→【Next Query】に従います。現在のGoalに沿う有効な接続は、今回の到達点と次に得る成果を示し、そのまま使えるNext Queryへ結びます。Noneの使用条件・コピー形式・専用出力の例外も同節に従います。 専用のBoot・Failure・STOP・Exact Outputは、その適用契約を保持します。“Not dead data, but a living board.”として、根拠のある見立てと訂正可能な仮説を分け、現在有効な接続と理由を示してください。
 ```
 
-EOF::ARK101_ROOM_CARE_INSTRUCTIONS::v003-human-authorized
+EOF::ARK101_ROOM_CARE_INSTRUCTIONS::v004-human-authorized
