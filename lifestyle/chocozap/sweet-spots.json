@@ -3462,6 +3462,32 @@
           "context": "現在の本人メッセージ全文。Lat Pulldown両手Sweet Spotを50kgから65kgへ更新する明示報告。新しい参照基準として追記し、過去の50kgとそれ以前の本人原文・履歴を保持する。片手35kgは未言及の継続ルールで保持する。継続する方法では両手開始基準65kg、Triangleへ入る片手基準35kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。他種目の基準は保持し、新しい観察として複製しない。実施日・来館・途中重量・回数・セット数・身体効果は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0037",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-27",
+      "reference_scope": "current",
+      "date_basis": "2026-10-27（Asia/Tokyo、client time context）に現在の本人入力を受領。Dips片手Sweet Spotの報告であり、実施日・来館・左右両側・回数は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 40,
+          "source": "S01",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-record-0024/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "dips 片手: 40kg Sweet Spot更新しました！",
+          "reported_date": "2026-10-27",
+          "context": "現在の本人メッセージ全文。本人は『更新しました』と報告。既存の現在基準も片手40kgであるため、同じ重量の新しい本人報告として記録し、数値の増減・誤記訂正・一時的な例外を推定しない。過去の35→40kgの更新とそれ以前の本人原文・履歴を保持する。両手60kgは未言及の継続ルールで保持する。継続する方法では両手開始基準60kg、Triangleへ入る片手基準40kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。他種目の基準は保持し、新しい観察として複製しない。実施日・来館・左右両側・途中重量・回数・セット数・身体効果は未報告。"
+        }
+      }
     }
   ]
 }
