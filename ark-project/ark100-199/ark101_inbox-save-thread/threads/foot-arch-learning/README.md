@@ -1,16 +1,21 @@
 ---
 title: 'Ark00-01:03_2026/10/08; "足底アーチ形成改善: モビライゼージョン学習の継続"'
-version: "v001"
+version: "v002-project-consolidation"
 created: "2026-10-08"
 timezone: "Asia/Tokyo"
-canonical_path: "ark-project/ark00-01/ark00-01-03/README.md"
+canonical_path: "ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/README.md"
 role: "Thread identity and stable collaboration conditions"
 transition_kind: "THREAD_CONTINUE"
 source_thread: "Ark00-01:02"
 target_thread: "Ark00-01:03"
 handoff: "handoff.md"
 state: "state.json"
-expected_eof: "EOF::ARK00_01_03_README::v001"
+expected_eof: "EOF::ARK00_01_03_README::v002-project-consolidation"
+project: 'Ark101: "Inbox: Save Thread"'
+relocation_date: "2026-10-27"
+previous_path: "ark-project/ark00-01/ark00-01-03/README.md"
+previous_snapshot: "https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/ark00-01-03/README.md"
+revision_scope: "Human-authorized Project consolidation and Current paths; retain historical Thread names, learning, corrections, evidence and required reading"
 ---
 
 # Ark00-01:03 — 足底アーチ形成改善とモビライゼージョン学習の継続
@@ -18,6 +23,8 @@ expected_eof: "EOF::ARK00_01_03_README::v001"
 **足底アーチをどう形作り、保持・調整するかを中心に、骨の位置、接触と把持、基準側と操作側、相対運動、観察の理解を深めるThreadである。**
 
 YusukeJPは、:02で価値ある発見が続き、なお学びたいことが多い一方、Threadが長くなったため、同じ学習を:03へ継ぐことを望んだ。会話の器を替え、理解の到達点と発見を生んだ説明を持ち越す。学習完了・治療体系完成の宣言ではない。
+
+**2026-10-27のProject統合。** 所属入口と資料のCurrent住所をArk101へ移した。元のThread識別子・正式Titleは来歴として保持し、Ark101の新しい連番へ自動変換しない。[統合前の固定版](https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/ark00-01-03/README.md)に当時の全文を保持する。本改訂は住所・Project指示・版／Identity／EOFの明示移行であり、学習本文・医学的意味・元の受入れに必要なSourceとGuardを維持する。旧Project用の保留整備を自動再開せず、新しいAIの起動・UI移動・学習完了を認定せず、既に成立している対話の再Bootを要求しない。旧住所をCurrent mainに要求する旧版起動は現行経路に置き換わったため、旧版の条件を通過したとは扱わない。
 
 ## 1. 入口と責務
 
@@ -30,7 +37,7 @@ YusukeJPは、:02で価値ある発見が続き、なお学びたいことが多
 | State | → 次の協働を変える現在地 | 進捗、現在の問い、未確認、保留、準備と受入れの観測 |
 | 足部学習記録 | → 内容と根拠の原本 | 骨・関節の理解、本人報告、訂正、出典、未確認事項 |
 
-[Project README](../README.md)と[INSTRUCTIONS](../INSTRUCTIONS.md)がArk00-01全体の目的・協働指示を所有する。[足部学習記録](../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)の医学的内容をこの三資料へ重複管理しない。
+[Project README](../../README.md)と[INSTRUCTIONS](../../INSTRUCTIONS.md)が統合後のArk101全体の目的・協働指示を所有する。[足部学習記録](../../../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)の医学的内容をこの三資料へ重複管理しない。
 
 ## 2. このThreadで続けること
 
@@ -69,4 +76,4 @@ HumanのMeaning・Correction・STOP・Final Seal、現在の身体Realityと適�
 
 参照リンクの列挙は全履歴の読込命令ではない。受入れ後は、本題へ戻り、毎回答でBootや管理報告を再演しない。
 
-EOF::ARK00_01_03_README::v001
+EOF::ARK00_01_03_README::v002-project-consolidation

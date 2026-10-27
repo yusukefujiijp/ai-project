@@ -21,6 +21,7 @@ relocation_patch:
   source_blob: "5fb6d7d011bc3bac39677bc52f2a49c9c61d603f"
   change_record: "../../../../control-center/changes/STR-022-dots-agent-location.md"
   scope: "Address and current navigation only; identity, roles, historical evidence and data contracts retained. Operational cutover status belongs to the change record."
+pickup_reference_revision: "2026-10-27: Pin original Pickup provenance and route current use to Ark101; Actor identity and activation conditions unchanged"
 ---
 
 # dot-0001: Inbox — 未完成の考えを、気兼ねなく渡せる相手へ
@@ -79,7 +80,7 @@ Inbox内で完結してよい。Chiefとの関係分析が役立つ時は、何�
 
 接続は一方向の「価値あるものの昇格」に限定しない。Chief側の問いが生まれた時、以前の断片が関係することもある。ただし、実際の記憶・検索・共有・通信経路は導入時に確認する。全件転送、常時同期、別Dotの会話への自動アクセスを仮定しない。
 
-[Ark00-01の原本](../../../../ark-project/ark00-01/README.md)には、自由なInboxと任意のHuman Pickupを両立する先例がある。参照して学べるが、今回の構想でArk00を置換したり、全入力をPickupへ送る必須経路にしたりしない。
+[旧Ark00-01の固定原本](https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/README.md)には、自由なInboxと任意のHuman Pickupを両立する先例がある。参照して学べるが、今回の構想でArk00を置換したり、全入力をPickupへ送る必須経路にしたりしない。2026-10-27の統合後のCurrent入口は[Ark101](../../../../ark-project/ark100-199/ark101_inbox-save-thread/README.md)。これは参照先の更新であり、本Actorの作成・運用を開始する変更ではない。
 
 必要な場面では、既存の[$receive-braindumpスキル](../../../../skills/receive-braindump/SKILL.md)、[$generate-ideasスキル](../../../../skills/generate-ideas/SKILL.md)、[$analyze-living-graphスキル](../../../../skills/analyze-living-graph/SKILL.md)、[$saveスキル](../../../../skills/save/SKILL.md)へ接続する。本文を複製せず、毎回の全件読込・一律発動を課さない。
 

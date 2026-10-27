@@ -166,6 +166,13 @@ archive_navigation_patch:
   base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
   change_record: "control-center/ARCHIVE.md#arc-007"
   scope: "Historical Thread-End route only; Ark27:07 Main, Ark28:02 support routes and their evidence retained"
+inbox_consolidation_revision:
+  date: "2026-10-27"
+  base_commit: "a6f4797aca3ef7a0418169b06f7f45af06ae7a36"
+  authority: "Current Human designated this Project and Thread Ark101 and requested Ark00-00/Ark00-01 consolidation and GitHub improvements"
+  entry: "ark100-199/ark101_inbox-save-thread/README.md"
+  scope: "Saved-Thread Project consolidation and navigation only; preserve Ark00 Draft White Board, concurrent Ark109 room-care and all Main/Support/29/30 routes"
+  concurrent_room_care_commit: "a6f4797aca3ef7a0418169b06f7f45af06ae7a36"
 ---
 # Ark Project
 
@@ -229,9 +236,11 @@ write_default: "Do not write without current Human authority."
 
 過去の生活報告、GCI Uploadやメモリ保存のHuman成功報告、Sourceの準備完了とTargetの実理解を区別する。未報告を失敗・完了・未実行へ補完せず、過去Bodyを現在Bodyにしない。ChatGPT長期メモリの内容・保存応答・取得結果をGitHubへ輸出しない。RootとGuardを維持したまま、Sourceの意味は現在の依頼に必要な深さで回復する。
 
-### 0.2 Pickup Threads / Ark00-01
+### 0.2 Inbox: Save Thread / Ark101
 
-[Ark00-01: Pickup Threads](ark00-01/README.md)は、Ark00などから選んだ価値あるThreadや繰り返し活用するThreadを、埋もれず再開・再利用するためのProjectである。`ark00-01`はProjectの識別子であり、Ark00の第1Threadや新しいMain章ではない。指示バックアップと参照資料はリンク先が所有する。Pickupは任意の経路として扱い、既存のMain／Support入口を維持する。
+[Ark101: "Inbox: Save Thread"](ark100-199/ark101_inbox-save-thread/README.md)は、残しておきたいThreadや育てたい対話を一つの入口で受け止め、見つけ直し、継続・再利用するProject。2026-10-27のHuman指定によりArk00-00／Ark00-01を統合した。Projectと現在のThreadの指定はArk101であり、未指定の連番を生成しない。旧Pickupの形成理由と既存足部学習の継承資料はLocal入口から辿れる。
+
+GitHub上の[Ark00: Draft White Board](ark00/README.md)は別の自由なInboxとして保持する。Ark00-00との同一性は確認しておらず、名称の類似だけで廃止しない。Ark101への保存・取り分けは任意であり、Main／Supportや専門Projectの必須経由点にしない。GitHub統合、ChatGPTのProject削除・Thread移動・settings反映は別の証拠で扱う。
 
 ### 0.3 New Teshuvah / Ark99
 
@@ -246,6 +255,8 @@ Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Cur
 ---
 
 ### 0.4 Categorized Specialist Projects / 100番台
+
+**[Ark101: "Inbox: Save Thread"](ark100-199/ark101_inbox-save-thread/README.md)** は、旧Ark00-00／Ark00-01を統合したThread保存・継続・再利用の入口。目的と統合範囲は§0.2、詳細と既存資料の継承はLocal READMEが所有する。room-careのCurrent番号は下記Ark109であり、同じArk101へ二つの用途を割り当てない。
 
 Humanは、居室の整理整頓など、対象を明確にカテゴライズできる専門Projectを100番台に置く方針を示した。既存の配置は `ark100-199/ark100_b-zone/`。現在の[Ark109: room-care](ark100-199/ark109_room-care/README.md)は、その並びに置く居室の片付け・清掃・整理整頓・維持改善の専門Projectである。
 

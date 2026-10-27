@@ -1,9 +1,9 @@
 {
   "version": "v001",
-  "revision": 3,
+  "revision": 4,
   "role": "Ark00-01:03 thread-local current state and evidence",
-  "canonical_path": "ark-project/ark00-01/ark00-01-03/state.json",
-  "updated": "2026-10-14",
+  "canonical_path": "ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/state.json",
+  "updated": "2026-10-27",
   "timezone": "Asia/Tokyo",
   "source": {
     "id": "Ark00-01:02",
@@ -22,8 +22,8 @@
   "current_position": {
     "phase": "source_prepared_and_remote_verified",
     "source_learning_record": "lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md",
-    "handoff": "ark-project/ark00-01/ark00-01-03/handoff.md",
-    "readme": "ark-project/ark00-01/ark00-01-03/README.md",
+    "handoff": "ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/handoff.md",
+    "readme": "ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/README.md",
     "latest_anatomy_topic": "距骨と脛骨・腓骨の関節関係、それぞれへのアプローチ、踵骨との関係",
     "topic_status": "学習記録§10に保存時の追加説明あり。本人の実践・成功の報告ではない。未回答へ巻き戻さない。",
     "next_learning_question": null,
@@ -220,5 +220,18 @@
       "status": "ongoing / next-thread continuation not yet observed",
       "evidence": "Sourceの好結果は本人報告として保存済み。Targetでの学習継続と身体の効果は別に観測する。"
     }
+  },
+  "project": "Ark101: \"Inbox: Save Thread\"",
+  "project_consolidation": {
+    "date": "2026-10-27",
+    "source_base_commit": "20dcf05b315bc32449e402a36c3a3f6755527dec",
+    "previous_path": "ark-project/ark00-01/ark00-01-03/state.json",
+    "previous_snapshot": "https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/ark00-01-03/state.json",
+    "authority": "Current Human requested consolidation of Ark00-00 and Ark00-01 into Ark101 and GitHub improvements",
+    "scope": "Current Project and paths only; original Source/Target titles, learning state, evidence and previous completion receipts retained",
+    "historical_receipts": "evidence.project_sources and completion refer to the recorded dates/commits. Resolve old paths at their recorded commits; do not use them as Current navigation.",
+    "current_project_entry": "ark-project/ark100-199/ark101_inbox-save-thread/README.md",
+    "current_project_instructions": "ark-project/ark100-199/ark101_inbox-save-thread/INSTRUCTIONS.md",
+    "ui_and_receiver": "Not observed in this consolidation; no new Thread ID, startup, learning result or UI move is inferred."
   }
 }

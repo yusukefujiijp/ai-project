@@ -33,6 +33,7 @@ purpose_first_revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
 revision_base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
 revision_base_blob: "39a5b97b0027224f775b3fbc7fb759458dcee7bb"
 expected_eof: "EOF::ARK00_README::v002-purpose-first"
+saved_thread_route_revision: "2026-10-27: Route optional saved/Pickup Threads to Ark101; preserve Ark00 Draft White Board identity and distinguish former Ark00-00"
 ---
 
 # Ark00: Draft White Board
@@ -98,13 +99,13 @@ AIは全体像、依存関係、競合する価値、Bottleneck、既存の成�
 |---|---|---|
 | Ark00の自由なInbox | 入力された問い・試行 → 現在の本題への応答 | 未整理でも受け止める。その場で目的が満たされる対話も含む |
 | 育てたいSeed | 問い・発見・違和感 → 必要な検討や試行 | 再登場・命名・Unexpected Success等を手がかりにできる。一律の成熟審査は課さない |
-| Humanが選ぶThread | Pickup → [Ark00-01](../ark00-01/README.md)での継続利用 | 全Ark00の整理完了を待たず、選んだThreadを見つけ直し、深め、再利用する |
+| Humanが選ぶThread | 保存・Pickup → [Ark101](../ark100-199/ark101_inbox-save-thread/README.md)での継続利用 | 全Ark00の整理完了を待たず、選んだThreadを見つけ直し、深め、再利用する |
 | 保存・再利用する成果 | 現在の目的と承認 → 既存の担当原本 | 個別成果の全文をREADMEへ詰め込まず、適切なSourceへ接続する |
 | 既存の専門領域・協働先 | 必要な仕事 → [Domain README](../README.md)が示す担当 | Ark00を全Projectの必須経由点にしない。担当のRuntime・読取契約を守る |
 | 正式Projectの候補 | 独立した役割・継続の必要 → HumanのProject化判断 | 目的、既存Ownerとの差、Scope、根拠、未確認、初回の検証を説明する。提案だけで新設しない |
 | 保留する案 | 現在の判断 → 必要時に再開できるContext | 保留・Compostは無価値や失敗を意味しない。保存も必要性と権限から別に判断する |
 
-**Pickupと正式Project化を混同しない。** 未完成でも育てたい問い、一度でも深い価値を持つ対話、失敗から知見を得た対話を取り上げられる。選ばれなかったThreadを低価値と断定せず、全件整理や反復成功をPickupの前提にしない。Ark00-01は別Projectの識別子であり、Ark00の第1Threadではない。
+**Pickupと正式Project化を混同しない。** 未完成でも育てたい問い、一度でも深い価値を持つ対話、失敗から知見を得た対話を取り上げられる。選ばれなかったThreadを低価値と断定せず、全件整理や反復成功をPickupの前提にしない。旧Ark00-01はPickup Projectの識別子であり、Ark00の第1Threadではなかった。2026-10-27、HumanはArk00-00／Ark00-01をArk101「Inbox: Save Thread」へ統合した。本Ark00: Draft White Boardとの同一性は確認しておらず、この自由なInboxの役割は保持する。
 
 正式Project化は自動昇格ではない。既存の置き場で十分か、独立したMission・役割・住所・継続運用が必要かを検討し、根拠が足りない部分を示す。[Domain READMEのLifecycle](../README.md#5-ark-lifecycle--seedからprojectへ)に沿い、Humanの明示的な採用・承認範囲で進める。番号が空いていることやIdeaの高揚だけを新設理由にしない。
 

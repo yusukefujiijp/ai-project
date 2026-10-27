@@ -1,9 +1,9 @@
 ---
 title: "Ark00-01:02 → Ark00-01:03 / 足底アーチ形成改善の学習継承"
-version: "v001"
+version: "v002-project-consolidation"
 created: "2026-10-08"
 timezone: "Asia/Tokyo"
-canonical_path: "ark-project/ark00-01/ark00-01-03/handoff.md"
+canonical_path: "ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/handoff.md"
 role: "Source provenance and Target reconstruction contract"
 transition_kind: "THREAD_CONTINUE"
 source_title: "Ark00-01:02_2026/10/03; 足底アーチ形成改善とモビライゼージョン学習"
@@ -14,13 +14,20 @@ source_base_commit: "cea474eeefeba263a3ac1eb26c83e368d26771ec"
 shared_contract: "prompts/ai-next-thread-handoff.md"
 shared_contract_observed_version: "v003-human-authorized"
 shared_contract_observed_blob: "95ba8491d893580336fdb702ba9d036c24e7706a"
-beginning_identity: "Ark00-01:03 Handoff / ark-project/ark00-01/ark00-01-03/handoff.md / v001"
-expected_eof: "EOF::ARK00_01_03_HANDOFF::v001"
+beginning_identity: "Ark00-01:03 Handoff / ark-project/ark100-199/ark101_inbox-save-thread/threads/foot-arch-learning/handoff.md / v002-project-consolidation"
+expected_eof: "EOF::ARK00_01_03_HANDOFF::v002-project-consolidation"
+project: 'Ark101: "Inbox: Save Thread"'
+relocation_date: "2026-10-27"
+previous_path: "ark-project/ark00-01/ark00-01-03/handoff.md"
+previous_snapshot: "https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/ark00-01-03/handoff.md"
+revision_scope: "Human-authorized Project consolidation and Current paths; retain historical Thread names, learning, corrections, evidence and required reading"
 ---
 
 # Ark00-01:03 Handoff
 
 **Ark00-01:02で進んだ足底アーチ形成改善とモビライゼージョン学習を、その到達点・Human Correction・発見が成立した説明ごと継ぐ。Source Threadの全会話や作成AIのMemoryを前提にしない。**
+
+**2026-10-27のProject統合。** 所属入口と資料のCurrent住所をArk101へ移した。元のThread識別子・正式Titleは来歴として保持し、Ark101の新しい連番へ自動変換しない。[統合前の固定版](https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark00-01/ark00-01-03/handoff.md)に当時の全文を保持する。本改訂は住所・Project指示・版／Identity／EOFの明示移行であり、学習本文・医学的意味・元の受入れに必要なSourceとGuardを維持する。旧Project用の保留整備を自動再開せず、新しいAIの起動・UI移動・学習完了を認定せず、既に成立している対話の再Bootを要求しない。旧住所をCurrent mainに要求する旧版起動は現行経路に置き換わったため、旧版の条件を通過したとは扱わない。
 
 ## 1. 今回のIdentity・権限・訂正
 
@@ -28,7 +35,7 @@ Sourceの確定名は `Ark00-01:02_2026/10/03; 足底アーチ形成改善とモ
 
 Targetは `Ark00-01:03_2026/10/08; "足底アーチ形成改善: モビライゼージョン学習の継続"`。AIが移行計画で提案した名称を、同日のHumanによる計画実行承認の範囲で採用した。ChatGPT UIで命名・作成済みという証拠ではない。
 
-Humanは、価値ある学びがあり、さらに学びたいことが多い一方、Threadが長くなったため、同じ学習の継続を望んだ。種類はTHREAD_CONTINUE。Ark00-01はPickup ThreadsのProjectであり、新Main章・章ペア作成ではない。:00・:01の整備は後日でよいという指示を保持する。
+Humanは、価値ある学びがあり、さらに学びたいことが多い一方、Threadが長くなったため、同じ学習の継続を望んだ。種類はTHREAD_CONTINUE。当時のArk00-01はPickup ThreadsのProjectであり、新Main章・章ペア作成ではない。Currentの所属入口はArk101へ統合した。:00・:01の整備は後日でよいという指示を保持する。
 
 2026-10-08 JST、HumanはPlan Modeの計画後に「Execute GitHub OK」「実行して下さい」と明示した。承認範囲は、この継承の三資料作成、Project入口更新、既存足部学習記録の所在・出所・参照修正、保存と必要な検証である。新しい身体実験、治療効果認定、全GitHub整理、独立したsuccess-cases量産、他Threadの引継ぎへ権限を広げない。準備後の現在の権限は最新のHuman入力から読む。
 
@@ -40,11 +47,11 @@ Root・Human Authority・Guardは[README](README.md)と適用共通契約に従�
 
 本HandoffはBeginning Identityから宣言したExact EOFまで全文を読む。その後、次を受入れに必要な核として扱う。すでに同一Contextで全文読解済みなら、共通契約の同一性条件を満たす読解記録を再利用できる。
 
-1. [共通移行契約](../../../prompts/ai-next-thread-handoff.md)：現行版の先頭Identityから宣言されたExact EOFまで全文。観測版はv003-human-authorized。取得・表示が切れたら未読位置から続ける。
-2. [AGENTS.md](../../../AGENTS.md)、[Ark00-01 README](../README.md)、[INSTRUCTIONS.md](../INSTRUCTIONS.md)：現在の適用範囲、権限、Project指示を確認する。新しいContextで未読なら全文を読む。
+1. [共通移行契約](../../../../../prompts/ai-next-thread-handoff.md)：現行版の先頭Identityから宣言されたExact EOFまで全文。観測版はv003-human-authorized。取得・表示が切れたら未読位置から続ける。
+2. [AGENTS.md](../../../../../AGENTS.md)、[Ark101 README](../../README.md)、[INSTRUCTIONS.md](../../INSTRUCTIONS.md)：現在の適用範囲、権限、Project指示を確認する。新しいContextで未読なら全文を読む。
 3. [このThreadのREADME](README.md)と[state.json](state.json)：全文。Stateは完全なJSONとして解析し、Source／Target、現在地、Evidence、権限と観測の区別を照合する。
-4. [足部学習記録](../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)：§1–15を含め全文。観測時の学習本文はv001、今回の出所・所在更新後はv002。宣言版と末尾EOFの一致を確認する。§10は保存時に追加された説明であり、本人が試して成功した内容とは扱わない。
-5. Project指示が適用する三資料：[AI Living Graph Mode](../../../prompts/ai-living-graph-mode.md)、[AI One-Table Interface](../../../prompts/ai-one-table-interface.md)、[Long-Form Response Rhythm](../../../prompts/long-form-response-rhythm.md)。現在の添付版・指示と照合し、各資料の読解契約を満たす。Sourceでは添付三資料とGitHub原本のblob一致を確認済み。別AIの読了報告だけでTarget自身の読解済みとはしない。
+4. [足部学習記録](../../../../../lifestyle/chocozap/artifacts/foot-ankle-mobilization-learning.md)：§1–15を含め全文。観測時の学習本文はv001、今回の出所・所在更新後はv002。宣言版と末尾EOFの一致を確認する。§10は保存時に追加された説明であり、本人が試して成功した内容とは扱わない。
+5. Project指示が適用する三資料：[AI Living Graph Mode](../../../../../prompts/ai-living-graph-mode.md)、[AI One-Table Interface](../../../../../prompts/ai-one-table-interface.md)、[Long-Form Response Rhythm](../../../../../prompts/long-form-response-rhythm.md)。現在の添付版・指示と照合し、各資料の読解契約を満たす。Sourceでは添付三資料とGitHub原本のblob一致を確認済み。別AIの読了報告だけでTarget自身の読解済みとはしない。
 
 三資料に含まれる古い章・実験・承認は今回の仕事へ移植しない。方法・説明密度・図表は、現在のHuman入力と適用指示の優先関係に従う。新しい通常回答ではNode・Edgeを先頭にした一つの表がProject指示として適用されるが、厳密形式・STOP等の例外を保持する。
 
@@ -54,7 +61,7 @@ Root・Human Authority・Guardは[README](README.md)と適用共通契約に従�
 
 Currentの所有資料は上記の現行パスへ進む。観測SHAを将来の全更新を拒む永久Bindingにしない。本HandoffとREADMEのIdentity・版・EOF、StateのThread識別と役割、学習記録のEvidenceと重要訂正を照合する。宣言版や意味に不整合があれば、変更点と現行権限を確認し、必要な版移行を行う。古い資料で黙って補完しない。
 
-足部記録を更新する場合は[chocoZAPの案内](../../../lifestyle/chocozap/README.md)も読む。新しい医学的助言には必要な原資料をその都度確認する。章番号・Main／Supportの変更を扱う依頼が来た場合に[Ark Domain](../../README.md)へ進む。Dots／Workの通信運用は、この足部学習の現在の受入れ条件ではない。別途その協働が必要になったときに、現行所有資料を調べる。
+足部記録を更新する場合は[chocoZAPの案内](../../../../../lifestyle/chocozap/README.md)も読む。新しい医学的助言には必要な原資料をその都度確認する。章番号・Main／Supportの変更を扱う依頼が来た場合に[Ark Domain](../../../../README.md)へ進む。Dots／Workの通信運用は、この足部学習の現在の受入れ条件ではない。別途その協働が必要になったときに、現行所有資料を調べる。
 
 必須Sourceの不在、未読、Identity・EOF・Bindingの不一致が解消できない場合は、`FULL_READ_NOT_VERIFIED`として影響する受入れを停止する。欠けた資料と読取位置・期待値・最小の回復方法を示す。通常の身体情報のUnknownまで全解消するGateにはしない。
 
@@ -129,4 +136,4 @@ Source準備、GitHubからの保存再確認、Target自身の再構成、Human
 
 固定した来歴・受入れ条件を変更する場合は、現在の権限に基づき理由と版を残す。通常の進捗や新しいHuman入力はStateとその内容を所有する記録へ反映し、古いHandoffを毎回書き換えない。
 
-EOF::ARK00_01_03_HANDOFF::v001
+EOF::ARK00_01_03_HANDOFF::v002-project-consolidation
