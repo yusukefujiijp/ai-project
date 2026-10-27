@@ -3436,6 +3436,32 @@
           "context": "現在の本人メッセージ全文。Lat Pulldown片手Sweet Spotを25kgから35kgへ更新する明示報告。過去の誤記訂正や一時的例外ではなく、新しい参照基準として追記し、過去の25kgとそれ以前の原文・履歴を保持する。両手50kgは未言及の継続ルールで保持する。継続する方法では両手開始基準50kg、Triangleへ入る片手基準35kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。Leg Press片足80kg、Shoulder Press片手20kg・両手35kg、Chest Press片手30kgなど他条件は保持し、新しい観察として複製しない。実施日・来館・左右両側・回数・セット数・身体効果は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0036",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-27",
+      "reference_scope": "current",
+      "date_basis": "2026-10-27（Asia/Tokyo、client time context）に現在の本人入力を受領。Lat Pulldown両手Sweet Spotの更新報告であり、実施日・来館・回数は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 65,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0013/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Lat Pulldown\nSweet Spot\n両手: 65kgに更新しました！",
+          "reported_date": "2026-10-27",
+          "context": "現在の本人メッセージ全文。Lat Pulldown両手Sweet Spotを50kgから65kgへ更新する明示報告。新しい参照基準として追記し、過去の50kgとそれ以前の本人原文・履歴を保持する。片手35kgは未言及の継続ルールで保持する。継続する方法では両手開始基準65kg、Triangleへ入る片手基準35kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。他種目の基準は保持し、新しい観察として複製しない。実施日・来館・途中重量・回数・セット数・身体効果は未報告。"
+        }
+      }
     }
   ]
 }
