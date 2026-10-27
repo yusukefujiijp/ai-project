@@ -60,7 +60,7 @@ support_continuation_revision:
   authority: "Human approved six-path publication/reread and one persistent08 in existing Ark28 Project through exact Title and evidence-backed reception"
   scope: "Support route only; preserve Main27:11, third29/fourth30, domain v010 and title policy. Fixed07 revision3 carries07 fruit and inherited history; Current07 progress.next_transition owns actual receipts. No body trial/Main transfer/other-case takeover."
   prior_transition: "06→07 completed; original fixed06 revision3 and Current06 terminal receipt remain historical owners."
-specialist_project_entry_revision:
+historical_specialist_project_entry_revision_2026_10_20:
   date: "2026-10-20"
   base_commit: "97ae0d8c492f2009ad9d523600545aedf2d6cf61"
   authority: "Human assigned clearly categorized specialist Projects to the 100 series, reported Ark101: room-care Project creation and authorized its startup instructions, prompt and GitHub setup"
@@ -72,6 +72,17 @@ specialist_project_entry_revision:
   confirmed_initial_thread_title: "Ark101:01_2026/10/20; room-care"
   followup_delta: "Human confirmed the complete Title and startup success, then explicitly authorized the four-source delta save; Project instructions v003 preserves the reprinted copy payload"
   evidence_boundary: "Project creation and Ark101:01 naming/startup success are Human-reported; Source direct UI/receiver verification, current settings and room-care effects remain separate"
+specialist_project_entry_revision:
+  date: "2026-10-27"
+  base_commit: "20dcf05b315bc32449e402a36c3a3f6755527dec"
+  authority: "Human renamed room-care Ark101→Ark109 and this same Thread Ark101:01→Ark109:01; other Threads remain unchanged; GitHub corrections authorized"
+  scope: "Room-care identity and navigation only; preserve Domain v010, all other Threads, Main/Support routes, confirmed start date and historical bindings"
+  entry: "ark100-199/ark109_room-care/README.md"
+  initial_thread: "Ark109:01"
+  initial_thread_runtime: "ark100-199/ark109_room-care/ark109-01/README.md"
+  current_thread_title: "Ark109:01_2026/10/20; room-care"
+  title_basis: "Only the identifier changes in the previously Human-confirmed title; no new date or subtitle"
+  evidence_boundary: "Human-reported Project renaming and explicit Thread designation; GitHub verification, UI settings and practical effects remain separate"
 ark100_startup_revision:
   date: "2026-10-20"
   source_thread: "Ark28:06"
@@ -236,15 +247,15 @@ Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Cur
 
 ### 0.4 Categorized Specialist Projects / 100番台
 
-Humanは、居室の整理整頓など、対象を明確にカテゴライズできる専門Projectを100番台に置く方針を示した。既存の配置は `ark100-199/ark100_b-zone/`。今回の[Ark101: room-care](ark100-199/ark101_room-care/README.md)は、その並びに置く居室の片付け・清掃・整理整頓・維持改善の専門Projectである。
+Humanは、居室の整理整頓など、対象を明確にカテゴライズできる専門Projectを100番台に置く方針を示した。既存の配置は `ark100-199/ark100_b-zone/`。現在の[Ark109: room-care](ark100-199/ark109_room-care/README.md)は、その並びに置く居室の片付け・清掃・整理整頓・維持改善の専門Projectである。
 
 **[Ark100: B-Zone Rescue](ark100-199/ark100_b-zone/README.md)** は、低認知・超低認知で想起・開始・切替が難しい時に、祈り・Teshuvahと可能な行動への接続を支える専門Project。[Project INSTRUCTIONS](ark100-199/ark100_b-zone/INSTRUCTIONS.md)が共通条件、[Ark100:00](ark100-199/ark100_b-zone/ark100-00/README.md)が事前起動・入口・未使用予備の準備を所有する。各番号Threadは独立新件を迎える場で、番号増加を同件継続や低／超低の区分にしない。初期00・利用用01・予備02の計画は2026-10-20にArk28:06でHumanが実行承認した。資料保存、Project設定、Target自身の再構成、Human到達、未使用状態、実生活効果は00の証拠で分ける。Ark99の00運用は参考にするが、その固有の案件継続先制約を自動移植しない。
 
-Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project instructions・必要なGitHub整備を承認した。Projectの案内はArk101 README、Threadの受入れ条件は01 Runtime、居室の実践目的・形成理由・方法は[control-center/house/room-care](../control-center/house/room-care/README.md)が所有する。親の[house](../control-center/house/README.md)は物理的な生活空間の他の可能性を候補として保持する。
+Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project instructions・必要なGitHub整備を承認した。2026-10-27には同じProjectをArk109、本ThreadをArk109:01へ改番するHuman指定とGitHub修正依頼を受けた。Projectの案内はArk109 README、Threadの受入れ条件は01 Runtime、居室の実践目的・形成理由・方法は[control-center/house/room-care](../control-center/house/room-care/README.md)が所有する。親の[house](../control-center/house/README.md)は物理的な生活空間の他の可能性を候補として保持する。
 
-100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。Ark101からArk102を自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
+100番台は明確な専門領域の住所であり、Main章の奇数／偶数ペア規則を番号だけで適用しない。room-careの番号から対のProjectを自動準備せず、Main／Supportの現在の役割・住所・Boot契約を変更しない。既存Ark100の内容や運用をroom-careへ移植する指示でもない。新しい番号・領域の採用はHumanの意図と必要性から判断し、新Repositoryは作らない。
 
-確定名 `Ark101: room-care` はProject名。後続Human訂正により、新規Threadは[Ark101:01](ark100-199/ark101_room-care/ark101-01/README.md)と確定し、その後Humanは完全な正式名と命名・スタート成功を報告した。確定Titleとコピー面・起動Promptは01 Runtime、再掲したProject指示の全文はINSTRUCTIONS v003が所有する。§6の最新Human指定を尊重し、確定名へ引用符・副題を追加しない。起動成功はHuman報告として保持し、準備元の直接UI確認、指示の設定反映、受入れ応答の独立照合、実生活の改善とは別の証拠で扱う。今回の差分保存を再起動や実践開始の前提Gateにしない。
+現在のProject名は `Ark109: room-care`、本Threadは[Ark109:01](ark100-199/ark109_room-care/ark109-01/README.md)。同じ対話の改番であり、他Threadの識別子・Title・Runtime・担当は変更しない。既存のHuman確定Titleへ識別子変更だけを適用した `Ark109:01_2026/10/20; room-care` を使い、開始日・記号・名称を保持する。Currentのコピー面と文脈復元条件は01 Runtime、Project指示の全文は現行INSTRUCTIONSが所有する。旧Ark101三URLは新住所への案内のみを残し、原本を二重化しない。初回準備・命名・起動成功の報告と固定履歴はProject READMEへ。改番の保存、UI反映、受入れAIの理解、実生活の改善を別の証拠で扱い、この修正を再起動や実践開始の前提Gateにしない。
 
 ---
 

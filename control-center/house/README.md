@@ -1,13 +1,15 @@
 ---
 title: "House — 家・生活空間の整理とCare"
-version: "v001-human-authorized"
+version: "v002-human-authorized"
 canonical_path: "control-center/house/README.md"
 repository: "yusukefujiijp/ai-project"
 role: "Physical living-space domain entry / route to adopted areas and retain deferred possibilities"
 created: "2026-10-20"
+updated: "2026-10-27"
+revision_reason: "Human renamed room-care Ark101→Ark109; update the current Project link and preserve the house scope"
 origin: "Human-created blank seed in 2026-10-06; home renamed house to avoid homepage ambiguity"
 status: "room-care entry prepared; other areas remain candidates"
-expected_eof: "EOF::HOUSE_DOMAIN_ENTRY::v001-human-authorized"
+expected_eof: "EOF::HOUSE_DOMAIN_ENTRY::v002-human-authorized"
 ---
 
 # House — 家・生活空間の整理とCare
@@ -27,7 +29,7 @@ Humanは家・生活空間の課題に多くの共通項があると見ている
 | Node | Edge | 役割・状態 |
 |---|---|---|
 | [room-care](room-care/README.md) | 居室の困りごと → 片付け・清掃・整理整頓・維持改善 | 現在採用した最初の領域。目的・形成理由・実践上の判断を所有 |
-| [Ark101: room-care](../../ark-project/ark100-199/ark101_room-care/README.md) | 専門Projectでの協働 → room-careの現実 | Projectの入口・instructions・起動Promptを所有。居室の実践資料はroom-careへ |
+| [Ark109: room-care](../../ark-project/ark100-199/ark109_room-care/README.md) | 専門Projectでの協働 → room-careの現実 | Projectの入口・instructions・起動Promptを所有。居室の実践資料はroom-careへ |
 | [Control Center](../README.md) | 整理する対象 → 専門領域 | 共通の整理目的と対象別の案内。houseをGitHub整理の子案件にしない |
 
 ## 保留する派生案
@@ -40,4 +42,4 @@ Humanは家・生活空間の課題に多くの共通項があると見ている
 
 ここにあるのは入口整備と採用方針であり、居室の改善・継続利用・一般化の実証ではない。後続Human入力、写真・説明、実行報告から現在を更新する。新規Repositoryは作らず、必要な成果はai-project内の担当資料へ接続する。Root・Human Authority・品質・Guardは[AGENTS](../../AGENTS.md)と[ARK](../../ARK.md)を保持する。
 
-EOF::HOUSE_DOMAIN_ENTRY::v001-human-authorized
+EOF::HOUSE_DOMAIN_ENTRY::v002-human-authorized

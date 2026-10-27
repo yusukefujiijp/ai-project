@@ -1,22 +1,22 @@
 ---
 title: "Room Care — 居室の片付け・清掃・整理整頓"
-version: "v001-human-authorized"
+version: "v002-human-authorized"
 canonical_path: "control-center/house/room-care/README.md"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 role: "Room-care purpose, material Human corrections and practical collaboration owner"
-project_entry: "../../../ark-project/ark100-199/ark101_room-care/README.md"
-updated: "2026-10-20"
+project_entry: "../../../ark-project/ark100-199/ark109_room-care/README.md"
+updated: "2026-10-27"
 status: "Human-authorized initial foundation / practical methods are candidates until observed"
 source_basis: "Human dialogue leading to Ark101: room-care creation and explicit GitHub setup authorization"
-expected_eof: "EOF::ROOM_CARE_DOMAIN::v001-human-authorized"
+expected_eof: "EOF::ROOM_CARE_DOMAIN::v002-human-authorized"
 ---
 
 # Room Care — 居室の片付け・清掃・整理整頓
 
 **YusukeJPが大切にしているAI活用を、居室の現実改善へ接続する。** 写真と対話を入口に、Humanが実際に片付け・清掃・整理整頓を行い、結果から方法を育てる。整えた状態の維持と、使いやすさの改善も含む。
 
-ここは実践の目的・形成理由・判断・方法の所有資料。[Ark101: room-care](../../../ark-project/ark100-199/ark101_room-care/README.md)はその協働を続ける専門Projectの入口であり、Project指示と起動条件を所有する。保存先がGitHubでも、対象は物理的な居室である。
+ここは実践の目的・形成理由・判断・方法の所有資料。[Ark109: room-care](../../../ark-project/ark100-199/ark109_room-care/README.md)はその協働を続ける専門Projectの入口であり、Project指示と起動条件を所有する。保存先がGitHubでも、対象は物理的な居室である。
 
 ## 1. Humanが変えようとしていること
 
@@ -33,8 +33,10 @@ AI側の役割は、写真や説明から状況・関係・選択肢を読み解
 - 居室専用Project名としての `house` は広すぎる、というHuman訂正を保持する。
 - `room-care` は、対象を居室に絞り、片付け・清掃・整理整頓に加えて維持・改善を扱える名前として採用された。Humanは「Simple is best!」と、Arkの重要Keywordである `care` を評価した。
 - `control-center/house/room-care/` はHumanが選んだ配置。houseの広さを親に活かし、専門領域を子で具体化する。house全体の改名や他領域の実装は今回の採用内容ではない。
-- 明確にカテゴライズできる専門Projectを100番台に置く新しいHuman方針から、Ark101へ接続する。既存Ark100の役割・方法を居室へ移植する指示ではない。
+- 明確にカテゴライズできる専門Projectを100番台に置くHuman方針から、現在はArk109へ接続する（初回はArk101）。既存Ark100の役割・方法を居室へ移植する指示ではない。
 - 2026-10-20、Humanは `Ark101: room-care` Projectを立ち上げたと報告し、起動Prompt・instructionsと必要なGitHub整備を承認した。Project UI作成はHuman報告であり、AIの直接観測ではない。
+
+- 2026-10-27、Humanはroom-careをArk101からArk109へ変更したと報告し、本ThreadをArk109:01と指定した。他Threadはそのままという範囲を保持する。実践の所有先はこの `control-center/house/room-care/` のまま。改番のCurrent入口と固定履歴は[Project README](../../../ark-project/ark100-199/ark109_room-care/README.md#room-care-renumbering)が所有する。
 
 命名はFuture AIが同じ目的へ戻るHandleである。名前が決まったことを、片付け手法や効果まで確定した証拠にしない。
 
@@ -77,12 +79,12 @@ Root・Teshuvah・Human Foreground One・Human Authority・AI品質は[AGENTS](.
 
 ## 6. 何を確認済みと扱うか
 
-**Confirmed — Human報告／採用。** AI優先による片付けの後回し、一人での試行の難しさ、画像を使った協働の希望、room-careの命名、house配下の配置、100番台の専門Project方針、Ark101 Project作成報告、今回のGitHub整備承認。
+**Confirmed — Human報告／採用。** AI優先による片付けの後回し、一人での試行の難しさ、画像を使った協働の希望、room-careの命名、house配下の配置、100番台の専門Project方針、旧Ark101 Project作成報告、2026-10-27のArk109への改番と本ThreadのArk109:01指定、対応するGitHub整備承認。
 
 **Candidate。** 画像対話を入口にすると着手・配置判断・維持が改善する、AI活用と居室改善が互いを強める、他の生活領域にも方法を再利用できる、という可能性と本書§4の方法。
 
 **Unknown — 準備時点では未観測。** 実際の室内写真、具体的な配置・物量・最初の対象、Project指示のUI反映、受入れAIの再構成、実作業、使いやすさや維持の効果。これらを全て確定することは文書準備の前提ではない。後続の報告・観測があれば、その時点と根拠を付けて扱う。
 
-準備成果はArk101入口が案内する。新しい実践記録が必要になったら、この領域からその所有原本へ接続し、Project指示とhouseの親入口へ同じ進捗を複製しない。次の協働では、現在の依頼を中心に、保持すべき意味と判断を変える差分を使う。
+準備成果とCurrentの案内はArk109入口が所有する。新しい実践記録が必要になったら、この領域からその所有原本へ接続し、Project指示とhouseの親入口へ同じ進捗を複製しない。次の協働では、現在の依頼を中心に、保持すべき意味と判断を変える差分を使う。
 
-EOF::ROOM_CARE_DOMAIN::v001-human-authorized
+EOF::ROOM_CARE_DOMAIN::v002-human-authorized

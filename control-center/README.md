@@ -1,26 +1,28 @@
 ---
 title: "Control Center — 整理する対象を選び、専門領域へつなぐ"
-version: "0.6.0"
+version: "0.6.1"
 canonical_path: "control-center/README.md"
 role: "Organization purpose and domain entry; routes to existing evidence and method owners"
 status: "human-authorized domain-entry separation; field effects separately observed"
 repository: "yusukefujiijp/ai-project"
-scope: "整理する対象の共通入口。GitHubとhouseを分け、houseからroom-careとArk101へ接続する"
+scope: "整理する対象の共通入口。GitHubとhouseを分け、houseからroom-careとArk109へ接続する"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-20"
-updated_reason: "Human-authorized house/room-care and Ark101 initial setup; replace current blank-seed guidance while preserving the home-to-house formation and GitHub ownership."
+updated: "2026-10-27"
+updated_reason: "Human-authorized room-care renumbering Ark101→Ark109; update live navigation while retaining original setup history and all other owners"
 room_care_setup:
   date: "2026-10-20"
   base_commit: "97ae0d8c492f2009ad9d523600545aedf2d6cf61"
   owner: "house/room-care/README.md"
-  project_entry: "../ark-project/ark100-199/ark101_room-care/README.md"
+  original_project_entry: "../ark-project/ark100-199/ark101_room-care/README.md"
+  current_project_entry: "../ark-project/ark100-199/ark109_room-care/README.md"
+  renumbered: "2026-10-27; same Project; see the current Project owner"
 change_record: "changes/STR-013-github-plan-and-archive-relocation.md"
 references_navigation_patch:
   date: "2026-10-20"
   change_record: "changes/STR-019-references-learning-memory.md"
   scope: "Live success-case route only; existing role and content retained"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.6.0"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_README::v0.6.1"
 ---
 
 # Control Center
@@ -57,7 +59,7 @@ Player系三Repositoryの整理を経て、Humanは継承先を`ark-project/cont
 |---|---|---|
 | このREADME | 整理する対象 → 専門入口 | 共通目的、領域の選択、横展開の考え方。全案件のCurrentは持たない |
 | [GitHub専門入口](github/README.md) | GitHub整理の依頼 → 計画・案件・原本 | 当面の対象はai-project全体。別Repositoryへ自動拡張しない |
-| [house](house/README.md) | 家・生活空間 → 現在の専門領域 | [room-care](house/room-care/README.md)を最初の具体的領域とし、[Ark101](../ark-project/ark100-199/ark101_room-care/README.md)の協働入口へつなぐ。他領域は候補として保留 |
+| [house](house/README.md) | 家・生活空間 → 現在の専門領域 | [room-care](house/room-care/README.md)を最初の具体的領域とし、[Ark109](../ark-project/ark100-199/ark109_room-care/README.md)の協働入口へつなぐ。他領域は候補として保留 |
 | [Skills](../skills/README.md)・[Prompts](../prompts/README.md) | 必要な方法 → 方法の所有資料 | 本書に方法本文を複製せず、今回必要なものを選ぶ |
 | [経験索引](../task-mode-system/experience/README.md)・[成功事例](../references/success-cases/README.md) | 出来事・学び → 根拠と成立条件 | 領域間の再利用は条件を確かめる。原本を集め直さない |
 | その他の領域 | 実際の依頼・必要性 → 適切な専門入口 | 必要になった対象から判断する。空の領域や計画を先回りして増やさない |
@@ -80,4 +82,4 @@ Repository全体の入口は[Root README](../README.md)、ArkのCurrent Main／S
 
 階層だけを揃えるために全原本を一斉移設せず、意味・所有先・参照の到達可能性を合わせて判断する。配置や方法は改善できる。各作業の承認と完了を分け、HumanのCorrection・STOP・Final Sealを保持する。
 
-EOF::AI_PROJECT_CONTROL_CENTER_README::v0.6.0
+EOF::AI_PROJECT_CONTROL_CENTER_README::v0.6.1
