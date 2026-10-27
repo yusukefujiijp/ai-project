@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth References — 経験の三本柱（feedback / lessons / success-cases）"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/references/README.md"
 role: "Entrance and contract for AI-Mammoth's experience records"
 status: "active — built 2026-10-27 on YusukeJP's execution instruction after Plan Mode presentation"
 created: "2026-10-27"
 updated: "2026-10-27"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REFERENCES::v001"
+expected_eof: "EOF::AI_MAMMOTH_REFERENCES::v002"
 ---
 
 # AI-Mammoth References（三本柱）
@@ -52,8 +52,12 @@ expected_eof: "EOF::AI_MAMMOTH_REFERENCES::v001"
 
 初期記録は、2026-10-26〜27の「ニホンオオカミGIF系」の一連をモデルケースとする。歩行GIFへの高評価、顔アニメーションの失敗と訂正、納品ファイル名の上書きによるキャッシュ問題と _vNNN 採番システム、瞬きと目を瞑る仕組みの重なりへのエレガント訂正まで ── 反応・教訓・成功と、その相互参照が実在する完結した実例であるため、これを型として三本柱を開始する。
 
+拡張（Task 5、2026-10-27）： モデルケースの外にも、三本柱の目的（会話を知らないAIの行動を変える記録）に適う核だけを拡張収録した ── 実行ゲート、GitHub承認摩擦、Report 001の自己訂正（以上 lessons）、改名と復元可能な家（success-cases）。遡及する feedback は、原文が担保できないため追加していない（要約ベースの出来事は lessons／success-cases として、出典を明示して記録する）。
+
 ## 6. 版と変更
 
 - v001（2026-10-27）: 基準点（YusukeJPが配置した改行のみの本ファイル）から構造を構築。三つの柱READMEと、0件で開始する三つのJSONLを設置し、[../README.md](../README.md) のRouterから接続した。初期記録（モデルケース）は同日、この後の更新で収録する。
 
-EOF::AI_MAMMOTH_REFERENCES::v001
+- v002（2026-10-27）: Task 5 により適用範囲を拡張（§5）。lessons 3件・success-cases 1件を追加。
+
+EOF::AI_MAMMOTH_REFERENCES::v002
