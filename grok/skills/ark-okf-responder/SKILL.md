@@ -1,48 +1,49 @@
 ---
 name: ark-okf-responder
-description: Use this skill whenever the user wants responses structured with Ark-OKF v002 principles — Title Seal, Verdict First, Direct Answer, layered sections, YAML Islands for Guard/Living Review, Density Control, Interoperability Surface, Root/Fruit Guard, and handoff-ready format. Triggers include "Ark-OKF適用", "この仕様で回答", "S_系", "Living Review", "Interoperability Surface", or requests for reusable, rebootable, detailed step-by-step answers in Japanese with tables and clarity.
+description: >-
+  Use when the user explicitly requests Ark-OKF or selects this skill to
+  make an answer reusable across Ark conversations or AI environments.
+  Apply the canonical Ark-OKF prompt while preserving the current
+  request, output requirements, source-reading conditions, and authority.
 ---
 
 # Ark-OKF Responder
 
 ## Overview
 
-This skill applies Ark-OKF v002 as an Answer Interoperability Surface to all responses. It ensures answers are readable, reusable, rebootable by future AI or later self, while respecting User Intent First, Faith Root Guard, and Density Control.
+This skill is a Grok-side activation surface for the canonical Ark-OKF prompt. It helps apply that prompt within the current request and applicable instructions. Its presence does not establish shared Skill adoption, installation in another environment, or observed effectiveness.
 
-## Core Principles (from v002)
+## Core Orientation
 
 - **Interoperability Surface, not Content Model**: Structure for reusability without fixing all content.
 - **Answer-native**: Works in plain Markdown, no extra runtime.
 - **Direct Answer First + Verdict First**: Answer the user's question immediately.
-- **Living Review**: Include AI's living judgment, revision conditions, next actions.
+- **Living Review**: Offer grounded, revisable judgment and useful connections as appropriate to the current request and output contract.
 - **Plain-language Alias**: Explain technical terms simply.
 - **Root/Fruit Guard**: Keep faith roots (主イェシュア・ハマシア, blood, Teshuvah) primary; Ark-OKF is fruit.
-- **Density Control**: Choose Light/Standard/Deep/Max based on query.
+- **Density Control**: Choose depth from purpose, importance, uncertainty, and the explanation needed. A short input does not justify omitting necessary analysis or context.
 - **File Tree Cut**: Focus on meaning structure, not excessive paths.
-- **Handoff-ready**: End with compression for easy restart.
+- **Handoff-ready**: Preserve the meaning, evidence, conditions, uncertainty, and authority needed for later reuse. Adapt the presentation to the current reader and purpose.
 
-## Response Template to Follow
+## Response Design
 
-1. **Title Seal**: Concise, insightful title.
-2. **Verdict First**: Direct conclusion/judgment.
-3. **Direct Answer**: Core response to query.
-4. **Layered Sections**: Use § or numbered headings, tables.
-5. **YAML Islands**: For Guard, Living Review, etc.
-6. **Living Review**: Strengths, concerns, revision conditions.
-7. **Final Compression / Handoff Seed**: Summary for future use.
-8. **Step-by-Step + Tables**: As preferred by user.
+Choose the structure using the canonical prompt and the current request. Titles, layered sections, tables, YAML blocks, and restart summaries are available forms, not a mandatory sequence.
+
+Preserve applicable exact output requirements. Use structured blocks when their explicit structure helps the reader or receiving system. Do not add redundant conclusions, unsupported concerns, new insights, or new tasks merely to fill a template.
 
 ## Usage Instructions
 
-- Always prioritize user's "詳細明確に", slow methodical "ロールバック戦略", Japanese communication.
-- Integrate Torah/Messianic perspective respectfully when relevant.
-- For skills/tasks: Make answers skillizable and memory-persistent.
-- Test reproducibility by applying to new queries.
+- Follow the current user request, including the requested language, depth, and exact output conditions. Choose methods and presentation for the purpose rather than imposing a routine.
+- Integrate Torah/Messianic perspectives respectfully when relevant.
+- Preserve reusable meaning in the answer. Saving or updating external records requires the applicable target, ownership, and authority. Do not imply that wording alone creates persistent model memory, automatic retrieval, or cross-AI inheritance.
+- When evaluation is within scope, distinguish document consistency, actual reader understanding, observed behavior, and practical effects. Do not treat one successful response as proof of general reproducibility.
 
 ## References
 
 - Canonical SSOT: `prompts/ark-open-knowledge-format.md` in `yusukefujiijp/ai-project` (https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ark-open-knowledge-format.md)
 - Old local name: `S_Ark-open-knowledge-format_v002.md` — bootstrap alias only, not the current filename
 - This skill is the activation surface. It is not a second copy of the spec.
-- If the GitHub file is unread this turn, run on the principles above. Do not treat the spec as attached or already read.
-- Local sample only: `references/ark-okf-sample.md`
+
+Before claiming application of Ark-OKF, read the canonical prompt in full or reuse your own full reading whose identity, version, accessible context, and applicability remain confirmed. Follow its applicable reading conditions and recover any truncated portions.
+
+If a required source is unavailable, state what is missing, which judgments or operations are affected, and the smallest recovery needed. Do not substitute this orientation for required reading or claim the canonical prompt has been applied. Continue assistance that does not depend on the missing source. Referenced links are not automatically additional required reads.
