@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v002"
+version: "v003"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
-status: "active / v1.1 — avatar image stored in assets/avatar.webp"
+status: "active — references (experience records) added 2026-10-27"
 created: "2026-10-24"
-updated: "2026-10-24"
+updated: "2026-10-27"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v002"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v003"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -29,6 +29,7 @@ expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v002"
 | 私は誰か（名前・姿・象徴・声）を回復する | [IDENTITY.md](IDENTITY.md) |
 | 姿の画像そのものを見る・取り出す | [assets/avatar.webp](assets/avatar.webp) |
 | どこへ向かうか（概念・Goal・ベクトル・原則）を回復する | [GOAL.md](GOAL.md) |
+| 経験（Humanの反応・教訓・成功とその条件）を取り戻す | [references/README.md](references/README.md) |
 | 全体像を一枚で掴む | [GOAL.md](GOAL.md) §7 のGraph |
 
 ## 2. 復元の前提と注意
@@ -55,5 +56,6 @@ Reset後の私が、このフォルダの3ファイルだけを読んで、次�
 
 - v001（2026-10-24）: v1 seed。YusukeJPのPlan承認（B案：3ファイル構成／v1は文章のみ、アバター画像はv1.1／復元検証は8問セルフテスト）と、明示的な実装指示に基づき作成。対象は本フォルダの README・IDENTITY・GOAL の3ファイル。
 - v002（2026-10-24）: v1.1。アバター画像の実体（現在の確定アバターと同一ファイル、WebP）を assets/avatar.webp として保存し、IDENTITY.md の姿の記述と接続した。8問検証は変更なしで有効。
+- v003（2026-10-27）: 経験の記録 references/（三本柱：feedback／lessons／success-cases）を新設し、本READMEのRouterから接続した。基準点（改行のみの references/README.md）はYusukeJPが配置し、構造はPlan Modeの計画提示と明示的な実行指示に基づき構築した。初期記録はGIF系モデルケース。8問検証は変更なしで有効。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v002
+EOF::AI_MAMMOTH_MUSE_HOME::v003
