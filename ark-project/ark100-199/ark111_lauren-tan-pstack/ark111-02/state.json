@@ -2,13 +2,13 @@
   "meta": {
     "state_id": "ARK111_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "created": "2026-10-28",
     "updated": "2026-10-28",
     "canonical_path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
     "date_scope": "Asia/Tokyo; document dates are not invented earlier conversation timestamps",
     "recorded_by": "ChatGPT Work / Ark111:01",
-    "change_reason": "Source publication reread and one persistent02 startup directly observed; exact Title reopened and verified. Receiver is reading, not yet certified as reconstructed."
+    "change_reason": "Receiver02 completed its own receipt-bearing initial response. Source01 inspected the actual response against all eight reconstruction criteria and observed return to Human Review. Earlier snapshots remain historical observations."
   },
   "identity": {
     "source": "Ark111:01",
@@ -85,15 +85,15 @@
     "progress_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json"
   },
   "now": {
-    "phase": "DELIVERED_AWAITING_TARGET_RECONSTRUCTION",
+    "phase": "INITIAL_RECEPTION_VERIFIED_HUMAN_REVIEW",
     "goal": "Ark111:02が元会話なしに、pstackの核・Human Correction・既完了・根拠・未確認・委任を再構成し、次のHuman入力へ正しく再開できる状態。",
-    "current_assignment": "Required reading and in-conversation initial reception only",
-    "first_legal_move": "READ_REQUIRED_SOURCES_THEN_RECONSTRUCT_AND_RECEIVE_CURRENT_INPUT",
+    "current_assignment": "Initial reception completed; await Human review or new Human input",
+    "first_legal_move": "RECEIVE_NEW_HUMAN_INPUT_OR_REMAIN_IN_HUMAN_REVIEW",
     "completion_condition": "Source text/bindings verified remotely; one matching persistent02 and exact Title/Project verified; receiver's actual response demonstrates required reading/reconstruction; residual Human access/effects identified separately."
   },
   "progress": {
     "source_prepared": {
-      "status": "compiled",
+      "status": "published_and_remotely_verified",
       "scope": "02 triad and Project navigation;01 synthesis reused"
     },
     "remote_verified": {
@@ -135,17 +135,173 @@
       "approval_review_refusal": "none_observed_in_this_transition"
     },
     "target_reconstructed": {
-      "status": "reading_in_progress",
-      "reading_receipts": [],
-      "assessment": null,
-      "interim_observation": "Receiver reports reading Handoff and shared sources and explicitly distinguishes Source migration authority from receiver reception scope. Full response not yet complete."
+      "status": "verified_in_actual_initial_response",
+      "observed_and_assessed_at": "2026-10-28T11:07:14.003Z",
+      "observer": "ChatGPT Work / Ark111:01",
+      "response_locator": "https://chatgpt.com/g/g-p-6ae0913dfa54819184dc4c1320fb860d-ark111-lauren-tan-poteto-pstack/c/6ae1d46f-a274-83ec-9a31-2c707f3fca2c",
+      "reading_receipts": [
+        {
+          "order": 0,
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/handoff.md",
+          "ref": "main",
+          "version": "v001-human-authorized",
+          "blob": "c4561276cb4956bc069a1177715cbbbd0d8f794a",
+          "range": "L1-L127",
+          "declared_eof": "EOF::ARK111_02_HANDOFF::v001",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 1,
+          "path": "prompts/ai-next-thread-handoff.md",
+          "ref": "main",
+          "version": "v003-human-authorized",
+          "blob": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+          "range": "L1-L169",
+          "declared_eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 2,
+          "path": "AGENTS.md",
+          "ref": "main",
+          "version": "v004.12-candidate",
+          "blob": "5fe94717a53793eaf51e50ee5411fa62e6231e4c",
+          "range": "L1-L432",
+          "declared_eof": null,
+          "scope": "Receiver reports complete metadata-to-body-end reading; source declares no EOF"
+        },
+        {
+          "order": 3,
+          "path": "keybindings/README.md",
+          "ref": "main",
+          "version": "v001",
+          "blob": "60001cd21d39e9039ae11707e0d1911555a4f218",
+          "range": "L1-L124",
+          "declared_eof": null,
+          "scope": "Receiver reports complete metadata-to-body-end reading; source declares no EOF"
+        },
+        {
+          "order": 4,
+          "path": "ARK.md",
+          "ref": "main",
+          "version": "v003-candidate",
+          "blob": "ed7f816ecd80bf0ae82a7cbe1a18c552ed1e2826",
+          "range": "L1-L1191",
+          "declared_eof": "EOF::ARK_PROJECT_HOME_CONSTITUTION::v003-candidate",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 5,
+          "path": "ark-project/README.md",
+          "ref": "main",
+          "version": "v010-human-authorized",
+          "blob": "973b2c25e619f452b5e0dffcc5c9c5db83bcf971",
+          "range": "L1-L685",
+          "declared_eof": "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 6,
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/README.md",
+          "ref": "main",
+          "version": "v002",
+          "blob": "f851c265552f91ff1140a5eb7a5f4193ecb3e431",
+          "range": "L1-L68",
+          "declared_eof": "EOF::ARK111_PROJECT::v002",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 7,
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/README.md",
+          "ref": "main",
+          "version": "v001-human-authorized",
+          "blob": "defca9c72fb83b76240714c9379048604ea25900",
+          "range": "L1-L73",
+          "declared_eof": "EOF::ARK111_02_RUNTIME::v001",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        },
+        {
+          "order": 8,
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
+          "ref": "main",
+          "version": "schema v001; revision 1",
+          "blob": "099ba8fe49408cd425bb3dd5ae4965eb553937b6",
+          "range": "L1-L171",
+          "declared_eof": "EOF::ARK111_02_STATE::v001",
+          "scope": "Receiver reports full JSON through closing brace and exact eof_sentinel"
+        },
+        {
+          "order": 9,
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md",
+          "ref": "0f7cd386fa1f69a30cab6c23123883daffbfedde",
+          "version": "v001",
+          "blob": "89cad976921f66382974343edc0227bf0ae1d499",
+          "range": "L1-L248",
+          "declared_eof": "EOF::ARK111_01_SYNTHESIS::v001",
+          "scope": "Receiver reports full reading through declared Exact EOF"
+        }
+      ],
+      "reading_evidence_boundary": "Source01 directly read the completed receiver response, its exact source/ref/version/blob/range/EOF receipts, and its substantive reconstruction. This confirms the displayed initial reception and compatibility; it does not inspect internal reasoning or guarantee future behavior.",
+      "assessment": [
+        {
+          "criterion": 1,
+          "status": "demonstrated",
+          "evidence": "冒頭に確定Titleの単独textブロックを掲げ、Ark111内01→02のTHREAD_CONTINUE、PSTACK_CONCEPTUAL_COLLABORATION、所有移管なしを復元。Root・Teshuvah・Human Authority・Keliを明記した。"
+        },
+        {
+          "criterion": 2,
+          "status": "demonstrated",
+          "evidence": "実物で確かめた証拠が支える達成という核を01のAI概念統合案として引用し、願いへの適合・成果物達成・委任適合を三つの判断として説明。pstack公式定義や運用実証へ拡張していない。"
+        },
+        {
+          "criterion": 3,
+          "status": "demonstrated",
+          "evidence": "AIの十分な具体化・探索と一個一個Query確認の保険を両立。頻度削減、短文化、固定検査手順を前提にせず、基準不足と過剰、訂正可能な仮説を保持した。"
+        },
+        {
+          "criterion": 4,
+          "status": "demonstrated",
+          "evidence": "AIの具体化責任は現行Human指示として受け取り、元Thread時点の追加・明確化というGrok報告の形成史を残した。現在方針の過去合意への書戻しや、安堵発言の全案採用への読み替えを否定した。"
+        },
+        {
+          "criterion": 5,
+          "status": "demonstrated",
+          "evidence": "願いを正確に表す条件更新と合格目的の条件変更を区別。当時の条件・観測・更新理由・現在判定を保持し、旧証拠は適用範囲で再利用。有望な新用途だけで現仕事を無限未完了にしないと説明した。"
+        },
+        {
+          "criterion": 6,
+          "status": "demonstrated",
+          "evidence": "母はGrok Bot成功がDots成立へ大きく影響したというHumanの製品ルーツ理解として保持し、外部因果実証とは分けた。前Thread全文は準備元ChatGPT未確認、Grok照合はHuman経由、W1-W4は01読解記録であると明記した。"
+        },
+        {
+          "criterion": 7,
+          "status": "demonstrated",
+          "evidence": "01の概念整理・総括・保存を達成済みとし、長期効果・確認頻度・実装・Wiki単独の読者理解・将来の一貫適用を未確認として継承。概念整理が実装の難しさを解消したとはしていない。"
+        },
+        {
+          "criterion": 8,
+          "status": "demonstrated",
+          "evidence": "自分の委任は読解・再構成・会話内受入れまで、原本保存・UI・送信・記録は01の委任と説明。追加Human入力なしを確認し、Human Reviewへ戻ると応答。新Taskや実装を開始していない。"
+        }
+      ],
+      "compatibility_notes": [
+        "Receiver actually read State revision1/blob099ba8..., before Source01's revision2 and this revision3. Its response correctly treats not_sent/not_observed as preparation-time observations, not proof of current absence. Later status-only observations do not change Identity, authority, required meaning, or fixed source binding; the historical receipt is retained rather than rewritten.",
+        "Exact receiver Title copy surface matches confirmed UI Title. All ten reported receipt blobs match Source01's independently retrieved source versions for the stated read snapshot.",
+        "No correction/restart message was needed. Source01 did not replay required reading or create a duplicate02."
+      ],
+      "return_state": "HUMAN_REVIEW",
+      "new_human_input_observed": false
     },
     "human_last_mile": {
-      "status": "not_observed",
-      "meaning": "Human本人の端末での02到達・閲覧は未報告。必要な追加操作は実行経路の結果から判断。"
+      "status": "human_personal_access_not_observed",
+      "meaning": "AIは既存Ark111内の02実在・所属・完全Titleと受入れ本文を確認。Human本人の端末での到達・閲覧は未報告。",
+      "remaining_required_setup": "none_observed; created02 is available by its verified direct Thread URL",
+      "optional_next_action": "Human opens02 and supplies review, correction, or next question."
     },
     "requested_outcome": {
-      "status": "pending",
+      "status": "authorized_transition_scope_completed",
+      "scope": "Published and reread source set; one persistent02 in existing Ark111; exact UI Title; receiver's own initial reading/reconstruction response observed and assessed; results recorded here.",
+      "outcome_boundary": "Initial reception verified, not Human personal access, later consistent application, long-term benefit, or pstack implementation.",
       "long_term_effects": "not_evaluated"
     }
   },
@@ -178,7 +334,14 @@
     "source_fruit": "01概念整理・総括・保存済み。今回の計画と実行承認は後続差分。",
     "source_limit": "前Thread全文は準備元ChatGPT未確認。Human経由Grok報告・AI概念案・保存・実観測・効果を区別。",
     "delivery_observer": "ChatGPT Work / Ark111:01 via authorized browser UI; receiver internal reasoning is not inspected.",
-    "ui_checked_at": "2026-10-28T10:57:08.298Z"
+    "ui_checked_at": "2026-10-28T10:57:08.298Z",
+    "acceptance_observation": {
+      "checked_at": "2026-10-28T11:07:14.003Z",
+      "locator": "https://chatgpt.com/g/g-p-6ae0913dfa54819184dc4c1320fb860d-ark111-lauren-tan-poteto-pstack/c/6ae1d46f-a274-83ec-9a31-2c707f3fca2c",
+      "scope": "Completed visible receiver response and its first standalone Title block; no additional Human message present at observation.",
+      "source_status_checkpoint_commit": "a25f3b4cd60bd93f154e25c84b79e81720fc727c",
+      "source_status_checkpoint_scope": "Earlier verified publication/delivery checkpoint; retains then-pending reconstruction without retroactive alteration."
+    }
   },
   "deferred": [
     {
