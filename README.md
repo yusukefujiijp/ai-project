@@ -1,11 +1,11 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v020"
+version: "v021"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v019 preserved in Git history; v020 adds the shared keybindings source and read-route navigation, retaining prior ownership and review history"
+version_basis: "v001-v020 preserved in Git history; v021 routes Ark-OKF to its unified shared skill, retaining prior keybindings navigation, ownership and review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-27"
+updated: "2026-10-29"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -86,6 +86,7 @@ keybindings_entry_addition:
   authority: "Current Human adopted the four-file keybindings plan and authorized main persistence and remote verification"
   scope: "Shared keybindings source discovery and AGENTS-owned read-route navigation; no existing Runtime, fixed Binding, account setting or cross-AI rollout change"
 updated_reason:
+  - "2026-10-29: Route the Human-adopted Ark-OKF unified source to skills/ark-okf-responder; navigation only, without environment registration or whole-repository revalidation."
   - "2026-10-27: Connect the Human-adopted keybindings source before shorthand input through the AGENTS read contract; preserve prior review scope and distinguish persistence from recipient understanding and behavior."
   - "2026-10-27: Connect the shared Wiki first experiment through its own entry; preserve the shared References route and all prior review scopes."
   - "2026-10-26: STR-023 connects feedback, lessons and success cases through the existing References entry; no whole-repository or behavioral revalidation."
@@ -159,6 +160,11 @@ foundation_migration:
   scope: "Entry and ownership alignment for model-neutral persistent collaboration; no whole-repository or behavioral revalidation"
   validation_boundary: "Document consistency, remote persistence, observed agent behavior, and real-world outcomes are distinct"
 
+ark_okf_navigation:
+  date: "2026-10-29"
+  base_commit: "79770085364871cd026cb12ff669593fbf6cf6f4"
+  source: "skills/ark-okf-responder/README.md"
+  scope: "Ark-OKF discovery row and displayed entry version only; prior review metadata and authority retained"
 ---
 
 # ai-project
@@ -184,7 +190,7 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v020 / Current-request Repository Front Door
+- Repository入口: README v021 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -269,7 +275,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 | Path | Role | Read when |
 |---|---|---|
-| [`prompts/ark-open-knowledge-format.md`](prompts/ark-open-knowledge-format.md) | Ark-OKF / readable, reusable, rebootable output surface | Artifact形式・相互運用性が重要な時 |
+| [`skills/ark-okf-responder/SKILL.md`](skills/ark-okf-responder/SKILL.md) | Ark-OKF / 共通の回答方法・再読・再利用・再判断を支えるSkill | Ark-OKFの明示的な適用依頼、またはその原本・意味を確認する時 |
 | [`prompts/topology-first.md`](prompts/topology-first.md) | Topology-First placement guard | 本文より先に住所・責務を決める時 |
 | [`prompts/kiss-yagni-dry-lean.md`](prompts/kiss-yagni-dry-lean.md) | Structure restraint lens | 過剰設計を防ぐ時 |
 | [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md) | Reusable collaboration orientation / judgment prompt | 協働の姿勢・Rootへの帰還・継続と停止の意味を整える時。共通権限はAGENTSへ |

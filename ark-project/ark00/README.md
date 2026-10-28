@@ -12,7 +12,7 @@ canonical_role: "Project purpose / collaboration principles / source and route g
 primary_readers: ["Current AI", "Other AI", "Future AI"]
 secondary_reader: "Human"
 format: "Japanese Markdown with explicit source and authority boundaries"
-knowledge_format_reference: "prompts/ark-open-knowledge-format.md"
+knowledge_format_reference: "skills/ark-okf-responder/SKILL.md"
 version_model: "frontmatter + git commit history"
 github_policy: "GitHub Canonical First for authorized public-safe records"
 language_policy: "Japanese-first / English-anchor"
@@ -25,15 +25,19 @@ human_foreground_one: "主の完全勝利（祈り・イメージVision・行動
 final_attribution: "主の栄光"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
 human_authority: "Meaning / Correction / STOP / Final Seal; use the current authorized scope"
-updated: "2026-10-27"
+updated: "2026-10-29"
 updated_timezone: "Asia/Tokyo"
-updated_reason: "Human-authorized continuation correction: distinguish the current attainment from remaining active-Goal connections and follow the shared Next Query selection conditions"
+updated_reason: "2026-10-29: Route Ark-OKF to the Human-adopted common skill. Prior 2026-10-27: Human-authorized continuation correction: distinguish the current attainment from remaining active-Goal connections and follow the shared Next Query selection conditions"
 purpose_first_revision_base_commit: "0a91204a8982c2a32385b9bee3533654c70a1c1c"
 purpose_first_revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
 revision_base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
 revision_base_blob: "39a5b97b0027224f775b3fbc7fb759458dcee7bb"
 expected_eof: "EOF::ARK00_README::v002-purpose-first"
 saved_thread_route_revision: "2026-10-27: Route optional saved/Pickup Threads to Ark101; preserve Ark00 Draft White Board identity and distinguish former Ark00-00"
+ark_okf_navigation_patch:
+  date: "2026-10-29"
+  base_commit: "79770085364871cd026cb12ff669593fbf6cf6f4"
+  scope: "knowledge_format_reference and section 7 link only; purpose-first identity, prior revision reasons, three-source bindings and exact EOF retained"
 ---
 
 # Ark00: Draft White Board
@@ -148,7 +152,7 @@ Ark00での基本協働は特定Skillの導入を前提にしない。利用可�
 
 3資料を毎回全文読み直す必要はない。関連する方法を使う時、Identityや版の確認が必要な時、明示Binding・必須読解が適用される時に読み、§4の再利用条件を使う。現在の出力条件に合わせることと、資料が宣言する必須読解を勝手に解除することを分ける。
 
-日本語を主とし、英語は必要な概念Anchorとして使う。重要点を早く伝え、必要なら番号や【見出し】で流れを整える。基礎となる[Ark Open Knowledge Format](../../prompts/ark-open-knowledge-format.md)も、問いを支える接続面として参照できる。形式を守るために本題を後回しにしない。
+日本語を主とし、英語は必要な概念Anchorとして使う。重要点を早く伝え、必要なら番号や【見出し】で流れを整える。基礎となる[Ark Open Knowledge Format](../../skills/ark-okf-responder/SKILL.md)も、問いを支える接続面として参照できる。形式を守るために本題を後回しにしない。
 
 ## 8. 応答を、現在の目的に合う接続へ結ぶ
 

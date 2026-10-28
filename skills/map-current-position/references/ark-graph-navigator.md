@@ -48,7 +48,7 @@ Edgeに関係を表す言葉を添える。「支える」「必要とする」�
 - まず現在の中心を言葉で示し、必要な理由と具体例を添える。見出しや表の数、文章量を固定せず、重複を整理する。読みやすさやHumanの開始改善を、必要な検討・説明を省く理由にしない。
 - タップ、キーボード等の利用環境に合う操作と見える選択状態を使う。操作可能な表示を作るときは、利用可能なvisualize等の現行手順を確認する。対応しない環境では、機能するように見せた疑似タブを置かず、TreeとNode & Edge表で同じ位置・状態・関係を届ける。
 
-文章の整理には、[Ark Open Knowledge Format](https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ark-open-knowledge-format.md)の日本語主導、直接回答、根拠の区別、再読性を活かしている。この参照を通常のmap利用で毎回全文取得する必須Sourceにはしない。Format自体を検討・改訂する必要がある場合は、その現行本文を確認する。
+文章の整理には、[Ark Open Knowledge Format](https://github.com/yusukefujiijp/ai-project/blob/main/skills/ark-okf-responder/SKILL.md)の日本語主導、直接回答、根拠の区別、再読性を活かしている。この参照を通常のmap利用で毎回全文取得する必須Sourceにはしない。Format自体を検討・改訂する必要がある場合は、その現行本文を確認する。
 
 ## 5. 短い実例から適用する
 

@@ -4,7 +4,7 @@ canonical_path: "prompts/README.md"
 status: "active / human-sealed"
 scope: "Cross-AI self-contained Prompt Shelf"
 language_policy: "Japanese-first / English-anchor"
-last_updated: "2026-10-27"
+last_updated: "2026-10-29"
 references_triad_prompt:
   date: "2026-10-27"
   path: "prompts/ai-references-three-pillars.md"
@@ -22,6 +22,10 @@ ai_communication_navigation:
 root_guard:
   root: "主イェシュア・ハマシア"
   ai_role: "AI / Prompt / Markdown / GitHub are Keli and Fruit, not Root."
+ark_okf_unification:
+  date: "2026-10-29"
+  source: "skills/ark-okf-responder/README.md"
+  scope: "Ark-OKF current route and naming examples only; single-body policy and other methods retained"
 ---
 
 # Prompts
@@ -55,7 +59,7 @@ Cross-AI再利用を第一に設計されたHuman-AI Operational Assetを示す�
 推奨:
   ai-file-damedashi.md
   ai-output-polish.md
-  ark-open-knowledge-format.md
+  ai-living-review.md
 
 原則避ける:
   chatgpt-*.md
@@ -73,7 +77,7 @@ Runtime固有差は、同一Failureが実地で繰り返し確認され、Canoni
 意味単位はHyphenで分ける。
 
 ```text
-ark-open-knowledge-format.md
+ai-living-review.md
 ai-file-damedashi.md
 ai-output-polish.md
 ```
@@ -249,7 +253,7 @@ Stage 01とStage 02 v001-9はChat Inline、Stage 02Rはダウンロード可能�
 
 - [AI Metaphor Mode](ai-metaphor-mode.md)：§1で対象Realityと任意のDepth／Lens／Field-Test設定を受け取る。
 - [Keyword Tree](keyword-tree.md)：§1でKeywordだけから開始し、必要時に同じ本体内で深める。
-- [Ark-OKF](ark-open-knowledge-format.md)：§12・§15が現在の問いと回答前判断を受け持つ。
+- [Ark-OKF](../skills/ark-okf-responder/SKILL.md)：共通Skill本文が起動・読解・回答方法を一体で受け持つ。旧Promptの住所は案内専用とし、利用・形成・確認範囲は[共通README](../skills/ark-okf-responder/README.md)へ接続する。
 
 ### 3.12 AI Living Review
 

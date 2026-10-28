@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.46.0
+version: v0.47.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-25
-updated_reason: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持
+updated: 2026-10-29
+updated_reason: "2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -62,10 +62,11 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行34件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行35件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
+| Ark-OKF / ark-okf-responder | Ark-OKFの明示的な適用依頼。意味・根拠・成立条件・訂正可能性を保ち、現在の問いに合う回答へ整える | [README・Query](ark-okf-responder/README.md) / [SKILL.md](ark-okf-responder/SKILL.md) |
 | 見られるSlides / create-viewable-slides | ChatGPT Slides化の依頼からGitHub保存・iPhone閲覧へ接続。既存PPTXの閲覧リンク・共有ショートカット導入にも対応 | [README・Query](create-viewable-slides/README.md) / [SKILL.md](create-viewable-slides/SKILL.md) |
 | Thread総括 / synthesize-thread | 対話の重要な意味・訂正・発見を用途に合わせて総括。方法・構成はAIへ開き、Feedbackの適用範囲を保持 | [README・Query](synthesize-thread/README.md) / [SKILL.md](synthesize-thread/SKILL.md) |
 | B-Zone Rescue / b-zone | 低認知・超低認知で方向の想起・行動開始・切替が難しい時。近接のピンと既にハマった時の支援 | [README・Query](b-zone/README.md) / [SKILL.md](b-zone/SKILL.md) |

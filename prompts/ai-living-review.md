@@ -3,7 +3,7 @@ title: "AI Living Review: Not dead data, but a living board."
 version: "v0.4-candidate"
 status: "Human-authorized revision / cross-AI method candidate"
 canonical_path: "prompts/ai-living-review.md"
-updated: "2026-10-21"
+updated: "2026-10-29"
 audience: "Current AI / other AI / Future AI; human-reviewable"
 language_policy: "Japanese-first / English-anchor"
 document_role: "Self-contained explanation and application guidance; current request determines use and authority"
@@ -18,6 +18,10 @@ navigation_patch:
   date: "2026-10-14"
   scope: "MAP改名に合わせ現行参照のみをmap-current-positionへ更新。既存の役割・権限・運用契約を保持"
   source: "skills/README.md#map-current-position-revision"
+ark_okf_navigation_patch:
+  date: "2026-10-29"
+  scope: "Section 9 Ark-OKF URL only; Living Review method, authority, formation and prior navigation patch retained"
+  source: "skills/ark-okf-responder/README.md"
 ---
 
 # AI Living Review
@@ -183,7 +187,7 @@ Humanの開始・待ち時間・推定認知負担・Token節約を理由に、�
 | [AI Living Review / living-review](../skills/living-review/SKILL.md) | 「xxをLiving Reviewして」という日常の入口から、対象・目的・権限を解決し、根拠を伴う見立てと今有効な接続を返す。基本運用はSkill単体で使い、意味や具体例を深める必要時に本書へ進む。 |
 | [map-current-position](../skills/map-current-position/SKILL.md) | 非地理的な現在地を復元し、Tree・Node & Edge、必要時のNavigatorと、現行Skillが所有する末尾構成へ適用する。 |
 | [AI Living Graph Mode](ai-living-graph-mode.md) | 関係からの発見や、Actual Traceによる関係評価の更新を深める。表の生成だけをLiving updateとしない。 |
-| [Ark-OKF](ark-open-knowledge-format.md) | 判断・根拠・意味をHumanとFuture AIが再読・再利用できる回答の形へ整える。 |
+| [Ark-OKF](../skills/ark-okf-responder/SKILL.md) | 判断・根拠・意味をHumanとFuture AIが再読・再利用できる回答の形へ整える。 |
 | [Plan Mode](../skills/plan-mode/SKILL.md) | 調査・理解・比較・計画を、変更を行わない範囲で組み立てる。 |
 
 これらの名称が登場するだけで全てを起動しない。必要な用途の契約へ接続し、関連方法の全文コピーや相互の必須読解ループを作らない。リンク先を取得できなければ読了を装わず、今回その資料が必須か任意かを区別する。
