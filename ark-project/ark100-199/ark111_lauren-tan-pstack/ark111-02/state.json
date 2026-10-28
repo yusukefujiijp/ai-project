@@ -1,0 +1,171 @@
+{
+  "meta": {
+    "state_id": "ARK111_02_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-10-28",
+    "updated": "2026-10-28",
+    "canonical_path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
+    "date_scope": "Asia/Tokyo; document dates are not invented earlier conversation timestamps",
+    "recorded_by": "ChatGPT Work / Ark111:01",
+    "change_reason": "Human-authorized01→02 preparation; source compilation and observed pre-launch UI separated from pending persistence and reception."
+  },
+  "identity": {
+    "source": "Ark111:01",
+    "target": "Ark111:02",
+    "owner": "Ark111:02",
+    "project_id": "Ark111",
+    "project_title": "Ark111: \"Lauren Tan(@poteto): pstack\"",
+    "role": "PSTACK_CONCEPTUAL_COLLABORATION",
+    "transition_kind": "THREAD_CONTINUE",
+    "compiled_title": "Ark111:02_2026/10/28; \"Lauren Tan(@poteto): pstack\"",
+    "project_context_id": "g-p-6ae0913dfa54819184dc4c1320fb860d",
+    "main_ownership_transferred": false
+  },
+  "authority": {
+    "human_authority_date_jst": "2026-10-28",
+    "basis": "Current Human adopted the displayed plan, explicitly lifted Plan Mode for01→02, confirmed exact Project/Thread Titles, and authorized GitHub preparation/reread, startup sending to create persistent02 in existing Ark111, naming, receiver reconstruction checks, and recording.",
+    "source_scope": [
+      "Create02 README/handoff/state and update Ark111 Project entry",
+      "Re-fetch and verify published source content and bindings",
+      "Inspect and reuse an existing matching02 if present; otherwise create one by sending the bound startup payload",
+      "Verify exact Title, Project membership, receiver reading/reconstruction, and record results"
+    ],
+    "receiver_scope": [
+      "Read declared required sources",
+      "Reconstruct material meaning/corrections/evidence/current authority",
+      "Respond in conversation, then receive already-present Human input or return to Human Review"
+    ],
+    "excluded": [
+      "pstack implementation",
+      "Skill creation",
+      "Expansion into other Projects",
+      "Unrequested Project/account setting changes",
+      "Automatic transfer of Source write/send authority to02"
+    ]
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/README.md",
+      "id": "ARK111_02_PSTACK_CONTINUATION",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK111_02_RUNTIME::v001",
+      "policy": "Current identity and substantive compatibility; observed blobs are receipts, not permanent pins."
+    },
+    "handoff": {
+      "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/handoff.md",
+      "id": "ARK111_02_HANDOFF",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK111_02_HANDOFF::v001"
+    },
+    "project": {
+      "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/README.md",
+      "project_id": "Ark111",
+      "version": "v002",
+      "eof": "EOF::ARK111_PROJECT::v002"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "version": "v003-human-authorized",
+      "eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "version": "v010-human-authorized",
+      "eof": "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
+    },
+    "fixed_source": {
+      "commit": "0f7cd386fa1f69a30cab6c23123883daffbfedde",
+      "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md",
+      "blob": "89cad976921f66382974343edc0227bf0ae1d499",
+      "version": "v001",
+      "eof": "EOF::ARK111_01_SYNTHESIS::v001",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/0f7cd386fa1f69a30cab6c23123883daffbfedde/ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md"
+    },
+    "progress_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json"
+  },
+  "now": {
+    "phase": "SOURCE_COMPILED_AWAITING_PUBLICATION_AND_RECEPTION",
+    "goal": "Ark111:02が元会話なしに、pstackの核・Human Correction・既完了・根拠・未確認・委任を再構成し、次のHuman入力へ正しく再開できる状態。",
+    "current_assignment": "Required reading and in-conversation initial reception only",
+    "first_legal_move": "READ_REQUIRED_SOURCES_THEN_RECONSTRUCT_AND_RECEIVE_CURRENT_INPUT",
+    "completion_condition": "Source text/bindings verified remotely; one matching persistent02 and exact Title/Project verified; receiver's actual response demonstrates required reading/reconstruction; residual Human access/effects identified separately."
+  },
+  "progress": {
+    "source_prepared": {
+      "status": "compiled",
+      "scope": "02 triad and Project navigation;01 synthesis reused"
+    },
+    "remote_verified": {
+      "status": "pending",
+      "reason": "Initial prepared state; publication reread is recorded only after actual observation"
+    },
+    "delivery": {
+      "status": "not_sent",
+      "target_url": null,
+      "project_name_ui_verified": true,
+      "project_id_match": "Source01 sidebar URL matches current Project context ID",
+      "existing_target_check": "Expanded Ark111 chat list showed Source01 and no02 at pre-launch observation",
+      "project_instructions_ui": "Field observed empty; no setting changed"
+    },
+    "target_reconstructed": {
+      "status": "not_observed",
+      "reading_receipts": [],
+      "assessment": null
+    },
+    "human_last_mile": {
+      "status": "not_observed",
+      "meaning": "Human本人の端末での02到達・閲覧は未報告。必要な追加操作は実行経路の結果から判断。"
+    },
+    "requested_outcome": {
+      "status": "pending",
+      "long_term_effects": "not_evaluated"
+    }
+  },
+  "evidence": {
+    "preparation_reference": {
+      "main_commit": "333ebfcbfb2bd54216525f9c97bf90e76461d658",
+      "source_fixed_blob_verified": true,
+      "source_current_blob_identical": true,
+      "registered_skill_matches_shared_source": true,
+      "read_receipt_policy": "Same-context own full reads from planning reused only after current exact blob checks; no sender receipt is transferred as receiver reading.",
+      "source_receipts": {
+        "prompts/ai-next-thread-handoff.md": "6b3ca6023ff8826603891eb0e1a8473526b96aeb",
+        "AGENTS.md": "5fe94717a53793eaf51e50ee5411fa62e6231e4c",
+        "ARK.md": "ed7f816ecd80bf0ae82a7cbe1a18c552ed1e2826",
+        "ark-project/README.md": "973b2c25e619f452b5e0dffcc5c9c5db83bcf971",
+        "keybindings/README.md": "60001cd21d39e9039ae11707e0d1911555a4f218",
+        "skills/prepare-ark-transition/SKILL.md": "3e478822ab76e2f3052c618e117e534292c94691",
+        "skills/_references/lessons.jsonl": "efa4dfa9158c403ff3affff4a9e69bf65c7332c1",
+        "ark-project/ark100-199/ark111_lauren-tan-pstack/README.md": "f0ad43d8fed367762a7a8b4757cbea8ff3a03567",
+        "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md": "89cad976921f66382974343edc0227bf0ae1d499"
+      }
+    },
+    "pre_launch_ui": {
+      "observer": "Ark111:01 AI",
+      "observed_date_jst": "2026-10-28",
+      "project_title": "Ark111: \"Lauren Tan(@poteto): pstack\"",
+      "source_sidebar_title": "❤️Ark111:01_2026/10/27; 役割分担の深掘り",
+      "source_title_boundary": "New sidebar observation only; does not retroactively change the saved01 synthesis's earlier unknown start date/full UI Title."
+    },
+    "source_fruit": "01概念整理・総括・保存済み。今回の計画と実行承認は後続差分。",
+    "source_limit": "前Thread全文は準備元ChatGPT未確認。Human経由Grok報告・AI概念案・保存・実観測・効果を区別。"
+  },
+  "deferred": [
+    {
+      "topic": "Operational implementation / pstack adoption",
+      "status": "not_authorized_by_transition"
+    },
+    {
+      "topic": "External causal relation of Grok Bot success and Dots formation",
+      "status": "unconfirmed",
+      "meaning": "Preserve Human's mother metaphor without claiming independent external causality."
+    },
+    {
+      "topic": "Long-term effects, optimal Human review frequency, consistent later application",
+      "status": "unobserved",
+      "meaning": "Do not convert all unknowns into initial tasks or reduce Query review frequency by assumption."
+    }
+  ],
+  "eof_sentinel": "EOF::ARK111_02_STATE::v001"
+}
