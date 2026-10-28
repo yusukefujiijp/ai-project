@@ -40,7 +40,7 @@ Skillを使うコピー用Queryの共有原本URLと全文読解条件は、[共
 
 生成側AIが、受け手の仕事に必要なSkillと原本を選ぶ。作成側が内部で使った全Skillを列挙せず、導入状況別のQuery選択やURLの後付けをHumanへ戻さない。受け手が共有していない文脈だけを必要な範囲で補い、参照できない過去案・承認・読解を推測しない。
 
-一件の転送本文を一単位でコピーできる形にする。Next Queryとして提示する場合は、適用される最終配置・コピー境界・厳密形式の例外を守る。Arkでの共通形式は[AGENTS第6節](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)へ接続する。
+一件の転送本文を一単位でコピーできる形にする。選ばれた宛先から、Human向け表示とコピー本文内の宛先を組み立て、一致を確認する。本文を受け取る相手と、本文内で言及・操作対象となる別AIを混同しない。Next Queryの宛先確認・不足時の扱い・表示位置・コピー境界・例外は、[AGENTS第6節](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)へ従う。
 
 提示前に、本文だけで対象と依頼を取り違えず、参照先へ到達でき、現在のModeと停止条件を保持できるか確認する。これは執筆上の確認であり、他AIの実理解や長期的な再現性の証明ではない。
 

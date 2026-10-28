@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.11-candidate"
+version: "v004.12-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-27"
+updated: "2026-10-28"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -126,7 +126,15 @@ keybindings_read_route_patch:
   base_commit: "9d2f49ae68a70d84fa08e56ddf93e8b0623f831a"
   authority: "Current Human adopted the four-file keybindings plan and authorized main persistence and remote verification"
   scope: "Read the shared keybindings source on Ark startup or context recovery before shorthand recognition; retain existing required reads, bindings, authority and full-query presentation"
+next_query_recipient_patch:
+  date: "2026-10-28"
+  design_base_commit: "18dcea61849d337c37e733ee18debe6887a4d9ef"
+  base_commit: "c23109db8fb82b2c848498f984345751a27beaf0"
+  base_blob: "6475adb858eaddeae94e8c6bdd2adb4ecc9a1014"
+  authority: "Current Human adopted the recipient-display base proposal and authorized changes to exactly four shared originals; registered Skills and account/Project settings are excluded"
+  scope: "Show the confirmed external Thread/AI recipient between Next Query heading and copy block, match the recipient inside, and handle unresolved or inconsistent destinations without changing q or output exceptions; mandatory same-Thread display remains a candidate"
 updated_reason:
+  - "2026-10-28: Show the formal recipient before copying a Next Query addressed to another Thread or AI; preserve one complete copy unit, recipient consistency, q meaning, valid delegation, and dedicated-output exceptions."
   - "2026-10-27: Route Ark startup and recovery to keybindings/README.md without depending on q recognition; preserve full-query adoption, Human choice and prior quality, authority and evidence boundaries."
   - "2026-10-27: Clarify when to produce a usable Next Query, show the current attainment and next outcome, and retain valid resumption after a correction; do not defer already-authorized work or invent tasks."
   - "2026-10-24: Generalize the three-section continuation interface beyond Dots; structure actual Query text inside one copy block and display the empty state as - None; preserve prior rounds and output exceptions."
@@ -347,7 +355,9 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 
 現在のGoalに沿う有効な次の接続がある通常の継続回答では、そのまま使えるNext Queryの提示を原則とする。回答を書き終えたこと、質問がないこと、保存が未承認であることだけを理由にNoneにしない。現在の委任内で遂行できる工程は先に完了し、Humanの判断、意味の擦り合わせ、Mode変更、別の機会への再接続が必要なら、その次の到達点までを依頼全文にする。Next Stepで進行を勧めた接続を、Next Queryで消さない。
 
-継続依頼文を提示する場合は、【Next Query】の見出し直下に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
+継続依頼文は、【Next Query】に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。別Thread・別AI宛てでは、見出しとコードブロックの間に、コード化しない独立行で「宛先：」に続けて正式な宛先を記す。コピー本文内にも同じ宛先を含め、内外の対象を一致させる。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
+
+既存の宛先は、取得済み原本や現在の会話で確認できたサービス・Project・Thread・AI等の正式名から、場所と受け手を一意に特定するために必要なものを使う。確認済みURLがあれば添え、名称・URLを推測しない。新規Threadは作る場所・受け手の役割・必要な条件を示し、未作成と作成状態未確認を区別する。宛先が特定できなければ、不足と最小の回復方法をNext Stepまでに示し、必要なら宛先を解決する同Thread向けの依頼へつなぐ。未確定の転送本文は草案として保留し、そのまま送れるNext Queryにはしない。表示の有無だけで既存の委任や短縮入力の意味を変えず、権限と採用条件は各所有原本に従う。
 
 三節でGoal・対象・必要な方法・完了条件・Modeを一致させる。同じThreadの既知文脈は活かし、別AI・Future AIへ渡す場合は必要な前提・資料・権限境界を本文内に含める。必要な原本の取得先と読解を示し、Skillを使うQueryの共有原本URLと全文読解は[第6.1節の共通条件](#skill-query-portability)に従う。短さのために意味を削ったり、省略記号や未記入欄で組立をHumanへ戻したりしない。通常は一件とし、必要な選択肢だけ用途を明示して分ける。
 
@@ -361,7 +371,7 @@ Next Queryを短縮入力で採用する場合は、[キーバインディング
 
 将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
 
-提示前に、三節の見立て・選んだ接続・依頼文が対応し、Goal・対象・必要な方法・完了条件・Modeが対応しているかを、見出し・最終配置・本文全体のコピー境界・fenceの閉じとともに確認する。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
+提示前に、三節の見立て・選んだ接続・依頼文のGoal・対象・宛先・必要な方法・完了条件・Mode、見出し・最終配置・本文全体のコピー境界・fenceの閉じを確認する。宛先の内外表示に不一致があれば、現在の指示と確認済み資料から解決し、解決できない時は第2.1節に従い、片方を勝手に選ばない。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
