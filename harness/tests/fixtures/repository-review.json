@@ -1,0 +1,11 @@
+{
+  "repository": "example/repository",
+  "commit": "1111111111111111111111111111111111111111",
+  "tree_sha": "2222222222222222222222222222222222222222",
+  "files": {
+    "README.md": "First line\nMeaning in the middle\nEOF\n",
+    "AGENTS.md": "Synthetic instruction fixture; not an Ark instruction.\n",
+    "repository-reviews/README.md": "Synthetic review entry.\n",
+    "repository-reviews/review-prompt.md": "Synthetic method fixture.\n"
+  }
+}

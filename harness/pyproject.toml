@@ -1,0 +1,9 @@
+[project]
+name = "ark-harness"
+version = "0.1.0"
+description = "Evidence-aware local checks for host-orchestrated Ark repository reviews"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv]
+package = false

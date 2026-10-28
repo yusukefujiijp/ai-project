@@ -1,0 +1,11 @@
+schema_version = 1
+profile_id = "repository-review"
+repository = "yusukefujiijp/ai-project"
+default_ref = "main"
+review_entry = "repository-reviews/README.md"
+review_method = "repository-reviews/review-prompt.md"
+adapter = "chatgpt-work"
+repository_writes = false
+execute_target_code = false
+# The host chooses scope from the current request and the method original.
+# These declarations constrain this job; they do not remove host capabilities.
