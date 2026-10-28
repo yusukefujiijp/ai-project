@@ -2,13 +2,13 @@
   "meta": {
     "state_id": "ARK111_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-28",
     "updated": "2026-10-28",
     "canonical_path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
     "date_scope": "Asia/Tokyo; document dates are not invented earlier conversation timestamps",
     "recorded_by": "ChatGPT Work / Ark111:01",
-    "change_reason": "Human-authorized01→02 preparation; source compilation and observed pre-launch UI separated from pending persistence and reception."
+    "change_reason": "Source publication reread and one persistent02 startup directly observed; exact Title reopened and verified. Receiver is reading, not yet certified as reconstructed."
   },
   "identity": {
     "source": "Ark111:01",
@@ -85,7 +85,7 @@
     "progress_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json"
   },
   "now": {
-    "phase": "SOURCE_COMPILED_AWAITING_PUBLICATION_AND_RECEPTION",
+    "phase": "DELIVERED_AWAITING_TARGET_RECONSTRUCTION",
     "goal": "Ark111:02が元会話なしに、pstackの核・Human Correction・既完了・根拠・未確認・委任を再構成し、次のHuman入力へ正しく再開できる状態。",
     "current_assignment": "Required reading and in-conversation initial reception only",
     "first_legal_move": "READ_REQUIRED_SOURCES_THEN_RECONSTRUCT_AND_RECEIVE_CURRENT_INPUT",
@@ -97,21 +97,48 @@
       "scope": "02 triad and Project navigation;01 synthesis reused"
     },
     "remote_verified": {
-      "status": "pending",
-      "reason": "Initial prepared state; publication reread is recorded only after actual observation"
+      "status": "verified",
+      "commit": "0ba6287453603576aede7bee9d52f8ac766746b3",
+      "verified_at": "2026-10-28T10:53:50.331Z",
+      "scope": "All four published files re-fetched before publication and from main; exact prepared text, identity/EOF/title/payload, and changed paths verified.",
+      "files": [
+        {
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/README.md",
+          "blob": "f851c265552f91ff1140a5eb7a5f4193ecb3e431"
+        },
+        {
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/README.md",
+          "blob": "defca9c72fb83b76240714c9379048604ea25900"
+        },
+        {
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/handoff.md",
+          "blob": "c4561276cb4956bc069a1177715cbbbd0d8f794a"
+        },
+        {
+          "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
+          "blob": "099ba8fe49408cd425bb3dd5ae4965eb553937b6"
+        }
+      ]
     },
     "delivery": {
-      "status": "not_sent",
-      "target_url": null,
+      "status": "sent_and_thread_observed",
+      "target_url": "https://chatgpt.com/g/g-p-6ae0913dfa54819184dc4c1320fb860d-ark111-lauren-tan-poteto-pstack/c/6ae1d46f-a274-83ec-9a31-2c707f3fca2c",
       "project_name_ui_verified": true,
       "project_id_match": "Source01 sidebar URL matches current Project context ID",
       "existing_target_check": "Expanded Ark111 chat list showed Source01 and no02 at pre-launch observation",
-      "project_instructions_ui": "Field observed empty; no setting changed"
+      "project_instructions_ui": "Field observed empty; no setting changed",
+      "thread_title": "Ark111:02_2026/10/28; \"Lauren Tan(@poteto): pstack\"",
+      "exact_title_ui_verified": true,
+      "title_verification": "After renaming, reopened Title field and confirmed exact value; browser header and Project identity also observed.",
+      "payload_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/handoff.md#6-実際に渡す起動本文",
+      "payload_review": "Full submitted text observed in conversation; exact confirmed Title and complete bound source/instructions preserved.",
+      "approval_review_refusal": "none_observed_in_this_transition"
     },
     "target_reconstructed": {
-      "status": "not_observed",
+      "status": "reading_in_progress",
       "reading_receipts": [],
-      "assessment": null
+      "assessment": null,
+      "interim_observation": "Receiver reports reading Handoff and shared sources and explicitly distinguishes Source migration authority from receiver reception scope. Full response not yet complete."
     },
     "human_last_mile": {
       "status": "not_observed",
@@ -149,7 +176,9 @@
       "source_title_boundary": "New sidebar observation only; does not retroactively change the saved01 synthesis's earlier unknown start date/full UI Title."
     },
     "source_fruit": "01概念整理・総括・保存済み。今回の計画と実行承認は後続差分。",
-    "source_limit": "前Thread全文は準備元ChatGPT未確認。Human経由Grok報告・AI概念案・保存・実観測・効果を区別。"
+    "source_limit": "前Thread全文は準備元ChatGPT未確認。Human経由Grok報告・AI概念案・保存・実観測・効果を区別。",
+    "delivery_observer": "ChatGPT Work / Ark111:01 via authorized browser UI; receiver internal reasoning is not inspected.",
+    "ui_checked_at": "2026-10-28T10:57:08.298Z"
   },
   "deferred": [
     {
