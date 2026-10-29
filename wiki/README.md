@@ -1,8 +1,8 @@
 ---
 title: "Ark共有Wiki"
-version: "v001"
-updated: "2026-10-27"
-status: "初回実験 / 独立読者による理解・実利用の効果は未確認"
+version: "v002"
+updated: "2026-10-30"
+status: "初回実験 / ノイマン二経路の別読者報告一件あり / 実利用効果は未確認"
 ---
 
 # Ark共有Wiki
@@ -18,6 +18,7 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 | Lauren TanはなぜArkにとって重要なのか | [Laurenの統合理解](people/lauren-tan/README.md) |
 | 人物名を知らなくても、AIへ仕事を任せる条件を考えたい | [エージェントへの委任と信頼](concepts/agent-trust/README.md) |
 | 誰の資料が、どの問いに役立つか | [人物索引](people/README.md) |
+| 次の人物追加・訂正・読解確認に、制作経験を生かしたい | [Wiki References](references/README.md) |
 | 主張の原典・取得経路・証明しない範囲を調べたい | [Laurenの根拠と読み方](people/lauren-tan/README.md#evidence-guide) |
 | Grok BotとDotsの関係で、事実・本人の評価・Humanの意味を分けたい | [製品史と未確認](people/lauren-tan/README.md#lt-timeline) |
 
@@ -28,10 +29,11 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 | 原本 | 所有する内容・Wikiとの接続 |
 |---|---|
 | このWiki | 対象についての現在の統合理解、問いに役立つ関係、重要なUnknown。主張から根拠へ戻す |
-| [共有References](../references/README.md) | 学び全体の入口。Wikiで得た理解を経験・判断へ結ぶ時に参照する |
-| [共有Feedback](../references/feedback/README.md) | 反応・訂正。Wikiの対象理解を直す時は該当箇所と根拠を更新し、必要なFeedback原本へリンクする |
-| [Lessons](../references/lessons/README.md) | 条件付きで再利用する判断。Wikiの仮説を実証済みのLessonへ自動昇格させない |
-| [Success Cases](../references/success-cases/README.md) | 何が価値ある成功で、何が成立条件だったか。掲載・保存だけを成功の証拠にしない |
+| [Wiki References](references/README.md) | Wiki固有の制作・読解・訂正・保存・再利用の経験。Feedback・Lessons・Success Casesへ案内する |
+| [共有References](../references/README.md) | 領域横断の学びと専門原本への入口。Wiki固有の記録を重複登録しない |
+| [共有Feedback](../references/feedback/README.md) | 領域横断の反応・訂正と共通形式。Wiki固有の反応はWiki Referencesへ |
+| [共有Lessons](../references/lessons/README.md) | 領域横断の条件付き判断。工程委任・保存・再開などは既存原本を参照する |
+| [共有Success Cases](../references/success-cases/README.md) | 領域横断の成功の意味・成立条件。Wiki固有の成功はWiki Referencesへ |
 | [Report References](../artifacts/reports/references/README.md) | Report領域の専門的な学び。共通の入口と専門原本をつなぎ、本文を二重管理しない |
 | [Grok Actorのホーム](../grok/README.md) | Grok固有の実験と理解。そのwiki・meta・rawは所有先を保持する。Ark共有Wikiへ自動統合・移設しない |
 
@@ -55,5 +57,7 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 - 根拠が訂正された時、影響する理解と、まだ変えなくてよい理解。
 
 執筆AIの自己点検、保存先からの再取得、元会話を知るAIの確認、元会話を渡さない読者の理解確認、実利用、長期的な効果は別の観測です。この初版の存在自体から後者の成立を推定しません。
+
+上記はLaurenを起点とした初版の実験説明です。後に受領したノイマン二経路の別読者報告一件と、その対象版・事前文脈・限界は[Wiki References](references/README.md)から辿れます。完全なブラインド確認や全Wikiの理解・実利用効果を確認したものではありません。
 
 WikiはHome全体や共有References全体の完成を待たず、必要な接続から育てられます。Main27のHome・全体判断、Support28のReport／Feedback設計、各ラインの原本と固定Bindingはその所有先に残ります。常時最低四ラインは継続協働のGoalであり、四枠の上限や30の未使用予備化、無停止同時実行の保証を意味しません。

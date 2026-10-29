@@ -1,7 +1,7 @@
 ---
 title: "エージェントへの委任と信頼"
-version: "v003"
-updated: "2026-10-27"
+version: "v004"
+updated: "2026-10-30"
 status: "公開資料からのAI統合案 / Arkでの効果は未確認"
 ---
 
@@ -46,7 +46,7 @@ OpenAIのDots発表は、接続アプリの権限、行動の許可・承認・�
 
 例えば公式発表日が訂正された場合、Laurenページの公開順と日数を見直します。それだけでpstackの検証方法やHumanの「母」という意味を削除する必要はありません。因果を示す新しい一次資料が得られた場合は、製品史のUnknownと関係する説明を再評価します。
 
-反応・訂正の記録は[共有Feedback](../../../references/feedback/README.md)、条件付きの再利用判断は[Lessons](../../../references/lessons/README.md)、成功の意味と成立条件は[Success Cases](../../../references/success-cases/README.md)が所有します。この概念ページは、対象についての理解と比較を持ち、同じ経験本文を重複保管しません。
+このWikiの制作・読解・訂正・再利用に固有の反応、条件付きの判断、成功の意味と成立条件は[Wiki References](../../references/README.md)が案内します。領域横断の学びと共通形式は[共有References](../../../references/README.md)へ戻ります。この概念ページは、対象についての理解と比較を持ち、同じ経験本文を重複保管しません。
 
 <a id="at-application"></a>
 ## この概念を最初に試す問い

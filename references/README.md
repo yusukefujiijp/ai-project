@@ -1,18 +1,18 @@
 ---
 title: "References — 回復と突破の継承基盤"
 canonical_path: "references/README.md"
-version: "v004"
+version: "v005"
 status: "human-authorized references consolidation / evolving through feedback"
 created: "2026-10-10"
-updated: "2026-10-26"
-updated_reason: "Add attributed feedback, consolidate nine full success narratives in JSONL, and connect domain records through single-owner format contracts; preserve lessons and historical formation."
+updated: "2026-10-30"
+updated_reason: "Add attributed feedback, consolidate nine full success narratives in JSONL, and connect domain records through single-owner format contracts; preserve lessons and historical formation. Add Wiki-specific learning owner routing without duplicating shared records."
 role: "Cross-domain learning entry, complementary directions and owner routing; bodies and update guidance remain with their owners"
 change_records:
   - "control-center/changes/STR-018-flexible-readme-principle.md"
   - "control-center/changes/STR-019-references-learning-memory.md"
   - "control-center/changes/STR-023-shared-references-three-pillars.md"
 validation_boundary: "Organization and persistence do not establish other AI understanding, reproducibility or real-world outcomes"
-expected_eof: "EOF::SHARED_REFERENCES::v004"
+expected_eof: "EOF::SHARED_REFERENCES::v005"
 ---
 
 # References — 回復と突破の継承基盤
@@ -53,6 +53,7 @@ Humanの「AI-New Era: From Probability to Certainty」は、貴重な成功の�
 
 - 領域横断の協働や共有基盤への反応・訂正は、[共有Feedback](feedback/README.md)へ。専門固有の反応はその担当原本に保ち、必要な時に参照で結ぶ。
 - Reportの制作・内容・表現・閲覧・保存・再利用への反応と学びは、[Report References](../artifacts/reports/references/README.md)へ。完成済みの記録を本棚へ再登録しない。
+- Wiki固有の制作・読解・訂正・再利用の経験と判断は、[Wiki References](../wiki/references/README.md)へ。人物本文・Evidenceはその所有先に保ち、領域横断の共有記録は参照で結ぶ。
 - 領域やActorを越えて再利用できる判断は、この[全体用lessons](lessons/README.md)へ。
 - Humanが価値を認めた独立して役立つ成功は、[success-cases](success-cases/README.md)へ。選び出した成功の意味を残し、経験原本や成果物の詳細は参照でつなぐ。
 - Dots固有の協働・運用に適用する学びは、[Dots lessons](../agents/dots/lessons/README.md)へ。
@@ -100,4 +101,4 @@ Humanはこの対のエレガントさを評価し、AIが構成を考える時�
 
 初期の共有Feedbackは今回の適用拡大の希望一件に限定する。既存lesson五件と専門側データを保持し、成功事例九件は本文・識別情報を保ってJSONLへ継ぐ。原本対応・旧URL・確認範囲は[STR-023](../control-center/changes/STR-023-shared-references-three-pillars.md)が所有する。保存を他AIの理解・自動学習・実利用効果へ読み替えず、RootとHumanのCorrection・STOPを保持する。
 
-EOF::SHARED_REFERENCES::v004
+EOF::SHARED_REFERENCES::v005
