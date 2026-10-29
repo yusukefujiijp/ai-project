@@ -2,13 +2,13 @@
   "meta": {
     "state_id": "ARK111_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 3,
+    "revision": 4,
     "created": "2026-10-28",
-    "updated": "2026-10-28",
+    "updated": "2026-10-29",
     "canonical_path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
     "date_scope": "Asia/Tokyo; document dates are not invented earlier conversation timestamps",
-    "recorded_by": "ChatGPT Work / Ark111:01",
-    "change_reason": "Receiver02 completed its own receipt-bearing initial response. Source01 inspected the actual response against all eight reconstruction criteria and observed return to Human Review. Earlier snapshots remain historical observations."
+    "recorded_by": "ChatGPT Work / Ark111:02",
+    "change_reason": "Human focused the research on poteto-mode as the first step toward ark-mode/ark-stack, explicitly retained no implementation, positively evaluated the direction, and requested save. Preserve research findings, evidence and resumption while retaining all initial-transition observations."
   },
   "identity": {
     "source": "Ark111:01",
@@ -42,7 +42,27 @@
       "Expansion into other Projects",
       "Unrequested Project/account setting changes",
       "Automatic transfer of Source write/send authority to02"
-    ]
+    ],
+    "scope_policy": "The existing source_scope/receiver_scope describe the 2026-10-28 transition. The later current_human_scope below governs the 2026-10-29 research preservation; no sender write/send grant is inherited.",
+    "current_human_scope": {
+      "date_jst": "2026-10-29",
+      "basis": "Current Ark111:02 Human messages requesting deep public-source understanding, first priority poteto-mode, Graph Mode articulation, no implementation, followed by an explicit save request.",
+      "allowed": [
+        "Read/search/compare/analyze public Lauren and official pstack sources within Ark111",
+        "Explain detailed original poteto-mode behavior and conditions in Japanese",
+        "Preserve this conversation's research/corrections/evidence/resumption in the existing Ark111 owner and daily activity record; re-fetch and verify"
+      ],
+      "excluded": [
+        "pstack installation or execution",
+        "Drafting/implementing ark-mode or ark-stack at this stage",
+        "Skill creation or modification",
+        "Unrelated repository changes or Ark-wide work inventory",
+        "Other Project expansion",
+        "Schedule/account/Project setting changes",
+        "External posting or sending to another AI"
+      ],
+      "human_query_confirmation": "Preserve the Human's individual Query confirmation as insurance; do not make reducing its frequency an optimization goal."
+    }
   },
   "bindings": {
     "runtime": {
@@ -82,14 +102,27 @@
       "eof": "EOF::ARK111_01_SYNTHESIS::v001",
       "url": "https://github.com/yusukefujiijp/ai-project/blob/0f7cd386fa1f69a30cab6c23123883daffbfedde/ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md"
     },
-    "progress_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json"
+    "progress_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json",
+    "research_findings": {
+      "path": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/poteto-mode-understanding.md",
+      "version": "v001",
+      "snapshot_id": "ark111-02-poteto-entry-20261029-01",
+      "eof": "EOF::ARK111_02_POTETO_MODE_UNDERSTANDING::v001",
+      "role": "Detailed findings and evidence; not executable instructions or an Ark-mode specification"
+    }
   },
   "now": {
-    "phase": "INITIAL_RECEPTION_VERIFIED_HUMAN_REVIEW",
-    "goal": "Ark111:02が元会話なしに、pstackの核・Human Correction・既完了・根拠・未確認・委任を再構成し、次のHuman入力へ正しく再開できる状態。",
-    "current_assignment": "Initial reception completed; await Human review or new Human input",
-    "first_legal_move": "RECEIVE_NEW_HUMAN_INPUT_OR_REMAIN_IN_HUMAN_REVIEW",
-    "completion_condition": "Source text/bindings verified remotely; one matching persistent02 and exact Title/Project verified; receiver's actual response demonstrates required reading/reconstruction; residual Human access/effects identified separately."
+    "phase": "POTETO_MODE_ORIGINAL_UNDERSTANDING_CHECKPOINT",
+    "goal": "将来のark-mode／ark-stackの方向を保ち、第一歩として原型poteto-modeの設計理由・成立条件・失敗条件を詳しく理解し、自家薬籠中化／受肉化的再現性へつなぐ。",
+    "current_assignment": "Human requested this checkpoint after a positive assessment. Preserve the reached understanding and return to Human; do not automatically start the proposed next research segment.",
+    "first_legal_move": "RECEIVE_HUMAN_INPUT_OR_REMAIN_AT_RESEARCH_CHECKPOINT",
+    "completion_condition": "Research note, existing navigation and current State agree; intended content is remotely verified; one date-based activity record points to the fixed saved evidence. Research completion, implementation and future-AI uptake remain separate.",
+    "research_resumption": {
+      "next_subject": "Non-negotiablesとPrinciplesの関係。Trigger、必要なleaf原則の全文、原則が変える具体的選択、例外・失敗条件を原本から辿る。",
+      "scope": "Original-source reading and explanation only; Ark-specific ideas stay separate candidates.",
+      "trigger": "A subsequent Human request or other clearly applicable authorization; the prior displayed Next Query and this save request alone do not auto-start it.",
+      "source": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/poteto-mode-understanding.md#resumption"
+    }
   },
   "progress": {
     "source_prepared": {
@@ -303,7 +336,29 @@
       "scope": "Published and reread source set; one persistent02 in existing Ark111; exact UI Title; receiver's own initial reading/reconstruction response observed and assessed; results recorded here.",
       "outcome_boundary": "Initial reception verified, not Human personal access, later consistent application, long-term benefit, or pstack implementation.",
       "long_term_effects": "not_evaluated"
-    }
+    },
+    "poteto_mode_understanding": {
+      "status": "partial_static_reading",
+      "observed_date_jst": "2026-10-29",
+      "recorded_at": "2026-10-29T12:01:54Z",
+      "observer": "ChatGPT Work / Ark111:02",
+      "findings_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/poteto-mode-understanding.md",
+      "attained": [
+        "Human's entrance-first correction and future ark-mode/ark-stack direction articulated",
+        "Official 0.15.36 entry structure traced",
+        "First three Non-negotiables read with how/explainer, Prototype and Investigation",
+        "Customization source and Ark interpretation distinguished"
+      ],
+      "not_established": [
+        "Detailed analysis of all 24 principle leaves",
+        "Runtime execution or independent reproduction",
+        "Ark-mode/ark-stack design adoption or implementation",
+        "Cross-AI uptake and long-term effects"
+      ],
+      "human_evaluation": "とても良い線に入ってきた",
+      "human_evaluation_boundary": "Positive assessment of the current direction, not blanket adoption of AI hypotheses or evidence of runtime effectiveness."
+    },
+    "transition_observation_scope": "The pre-existing transition/preparation/delivery/reception entries retain their 2026-10-28 observation scope. poteto_mode_understanding records the later research; earlier unknowns are not asserted as fresh observations."
   },
   "evidence": {
     "preparation_reference": {
@@ -341,6 +396,28 @@
       "scope": "Completed visible receiver response and its first standalone Title block; no additional Human message present at observation.",
       "source_status_checkpoint_commit": "a25f3b4cd60bd93f154e25c84b79e81720fc727c",
       "source_status_checkpoint_scope": "Earlier verified publication/delivery checkpoint; retains then-pending reconstruction without retroactive alteration."
+    },
+    "initial_reception_now_snapshot": {
+      "preserved_from_revision": 3,
+      "source_commit": "88a833b5d866841041c2247c2df0963e0d98fb01",
+      "historical_now": {
+        "phase": "INITIAL_RECEPTION_VERIFIED_HUMAN_REVIEW",
+        "goal": "Ark111:02が元会話なしに、pstackの核・Human Correction・既完了・根拠・未確認・委任を再構成し、次のHuman入力へ正しく再開できる状態。",
+        "current_assignment": "Initial reception completed; await Human review or new Human input",
+        "first_legal_move": "RECEIVE_NEW_HUMAN_INPUT_OR_REMAIN_IN_HUMAN_REVIEW",
+        "completion_condition": "Source text/bindings verified remotely; one matching persistent02 and exact Title/Project verified; receiver's actual response demonstrates required reading/reconstruction; residual Human access/effects identified separately."
+      },
+      "meaning": "Initial-reception state retained without retroactive reinterpretation; the later Human research and save requests establish the current phase."
+    },
+    "research_checkpoint": {
+      "source_thread": "https://chatgpt.com/g/g-p-6ae0913dfa54819184dc4c1320fb860d-ark111-lauren-tan-poteto-pstack/c/6ae1d46f-a274-83ec-9a31-2c707f3fca2c",
+      "access_boundary": "The conversation requires account access; its public accessibility and another AI's independent reading are not assumed.",
+      "upstream_commit": "1ba91fc25c0977741dd0e267849e6234b037ed0a",
+      "upstream_version": "0.15.36",
+      "poteto_mode_blob": "2dd5e76fde228141d3fe78b0b09ca68456b49531",
+      "comparison_boundary": "Previously reported snapshot, not a new claim about latest repository head.",
+      "evidence_owner": "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/poteto-mode-understanding.md#evidence",
+      "record_source": "Current conversation and fetched public originals; no ChatGPT long-term-memory export."
     }
   },
   "deferred": [
@@ -357,6 +434,11 @@
       "topic": "Long-term effects, optimal Human review frequency, consistent later application",
       "status": "unobserved",
       "meaning": "Do not convert all unknowns into initial tasks or reduce Query review frequency by assumption."
+    },
+    {
+      "topic": "ark-mode / ark-stack",
+      "status": "future_direction_explicitly_not_for_implementation",
+      "meaning": "Human wants an Ark-specific reinterpretation and embodied reproducibility; first understand original poteto-mode in detail. Naming the direction is not present implementation authorization."
     }
   ],
   "eof_sentinel": "EOF::ARK111_02_STATE::v001"

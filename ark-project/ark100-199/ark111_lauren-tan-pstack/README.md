@@ -4,7 +4,7 @@ canonical_path: "ark-project/ark100-199/ark111_lauren-tan-pstack/README.md"
 project_id: "Ark111"
 version: "v002"
 created: "2026-10-28"
-updated: "2026-10-28"
+updated: "2026-10-29"
 role: "Projectの目的・所有関係・Current Threadへの入口"
 status: "Human-authorized 01→02 continuation; actual delivery and reception are owned by 02 State"
 primary_reader: "Current AI / Other AI / Future AI"
@@ -14,7 +14,7 @@ current_handoff: "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/hand
 current_state: "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/state.json"
 identity_basis: "HumanがProject名・Source01・Target02と完全Titleを明示。UIの実観測はStateへ分ける。"
 transition_authority: "2026-10-28: Human adopted the plan, lifted Plan Mode for this scope, and authorized GitHub preparation/reread, persistent02 creation by startup sending in the existing Ark111 Project, exact naming, receiver reconstruction, and result recording."
-updated_reason: "保存済み01総括を保持し、02の継続入口と三役へ接続する。"
+updated_reason: "01→02の継続入口・三役・形成史を保持し、02で進んだpoteto-mode入口理解の原本へ接続する。"
 previous_version_source: "https://github.com/yusukefujiijp/ai-project/blob/0f7cd386fa1f69a30cab6c23123883daffbfedde/ark-project/ark100-199/ark111_lauren-tan-pstack/README.md"
 expected_eof: "EOF::ARK111_PROJECT::v002"
 ---
@@ -44,6 +44,7 @@ Ark111:02_2026/10/28; "Lauren Tan(@poteto): pstack"
 | pstackの核、Human–AIの役割分担、訂正と発見の形成 | [Ark111:01総括](ark111-01/README.md) |
 | 誰の表明・観測・提案か、どこが未確認か | [01の根拠と確認範囲](ark111-01/README.md#sources) |
 | 01の到達点と、再検討する条件 | [01の到達点と再開](ark111-01/README.md#resumption) |
+| poteto-modeの入口、冒頭三判断、ark-modeへ向かう意味と未実装の境界 | [02の入口理解](ark111-02/poteto-mode-understanding.md) |
 | 今回の継承・受入れ契約 | [02 Handoff](ark111-02/handoff.md) |
 | 保存・実在・名称・受入れ・Human到達の観測 | [02 State](ark111-02/state.json) |
 | Lauren本人の公開資料とHumanの「母」という意味 | [Lauren Tan Wiki](https://github.com/yusukefujiijp/ai-project/blob/main/wiki/people/lauren-tan/README.md) |

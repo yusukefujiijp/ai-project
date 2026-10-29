@@ -4,6 +4,10 @@ runtime_id: "ARK111_02_PSTACK_CONTINUATION"
 canonical_path: "ark-project/ark100-199/ark111_lauren-tan-pstack/ark111-02/README.md"
 version: "v001-human-authorized"
 created: "2026-10-28"
+updated: "2026-10-29"
+research_navigation_patch:
+  date: "2026-10-29"
+  scope: "Link the Human-authorized poteto-mode research checkpoint; initial reception contract and runtime identity retained"
 project_id: "Ark111"
 project_title: 'Ark111: "Lauren Tan(@poteto): pstack"'
 thread_id: "Ark111:02"
@@ -23,6 +27,12 @@ expected_eof: "EOF::ARK111_02_RUNTIME::v001"
 本Threadは[Ark111](../README.md)で、01の成果と訂正を継いでLauren Tan・pstackとArkの協働を考える場です。[Handoff](handoff.md)が今回の来歴・必須読解・受入れ・起動本文を、[State](state.json)が現在地・権限・観測・未確認を所有します。Main／Supportの所有を引き取る新章ではありません。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。HumanのMeaning・Priority・Correction・STOP・Final Sealと適用Guardを保持します。AI・pstack・Skill・文書はKeliです。[AGENTS](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md)と[ARK](https://github.com/yusukefujiijp/ai-project/blob/main/ARK.md)に従い、AIは十分な読解・具体化・探索・根拠ある異論・検証を担います。
+
+### 02で進んだ読解の原本
+
+[poteto-modeの入口理解](poteto-mode-understanding.md)に、2026-10-29のHumanの方向づけ、原型の入口構成、冒頭三判断の読解、一次資料、解釈と未確認、条件付き再開位置を保存しています。将来のark-mode／ark-stackへ向かうために、まずpoteto-mode自体を深く理解する段階です。
+
+現在の委任・進捗は[State](state.json)へ。本読解の保存承認は、pstack導入・コード実行・Skill作成や他AIへの送信を含みません。初回受入れとその読解ReceiptはHistoricalとして保持します。
 
 ## 2. 継承する中心と成立条件
 
