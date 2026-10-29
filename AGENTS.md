@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.12-candidate"
+version: "v004.13-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-28"
+updated: "2026-10-29"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -133,7 +133,15 @@ next_query_recipient_patch:
   base_blob: "6475adb858eaddeae94e8c6bdd2adb4ecc9a1014"
   authority: "Current Human adopted the recipient-display base proposal and authorized changes to exactly four shared originals; registered Skills and account/Project settings are excluded"
   scope: "Show the confirmed external Thread/AI recipient between Next Query heading and copy block, match the recipient inside, and handle unresolved or inconsistent destinations without changing q or output exceptions; mandatory same-Thread display remains a candidate"
+next_query_direct_recipient_patch:
+  date: "2026-10-29"
+  source_thread: "Ark27:12"
+  base_commit: "17f9416c83c5658290b1e28d6c44e775d6cecdba"
+  base_blob: "5fe94717a53793eaf51e50ee5411fa62e6231e4c"
+  authority: "Current Human adopted the concrete recipient-rule revision and authorized changes to exactly four shared originals on main; registered Skills, account settings and other-AI delivery are excluded"
+  scope: "Extend ordinary Next Query recipient display to the same Thread, distinguish the direct recipient from a generated Prompt's future recipient, and check both labels and the work requested; preserve q, output exceptions, prior completion and authority boundaries"
 updated_reason:
+  - "2026-10-29: Require matching formal recipients outside and inside ordinary Next Queries, including the same Thread; distinguish the current request from a generated Prompt and resolve missing or inconsistent destinations before presentation."
   - "2026-10-28: Show the formal recipient before copying a Next Query addressed to another Thread or AI; preserve one complete copy unit, recipient consistency, q meaning, valid delegation, and dedicated-output exceptions."
   - "2026-10-27: Route Ark startup and recovery to keybindings/README.md without depending on q recognition; preserve full-query adoption, Human choice and prior quality, authority and evidence boundaries."
   - "2026-10-27: Clarify when to produce a usable Next Query, show the current attainment and next outcome, and retain valid resumption after a correction; do not defer already-authorized work or invent tasks."
@@ -355,7 +363,9 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 
 現在のGoalに沿う有効な次の接続がある通常の継続回答では、そのまま使えるNext Queryの提示を原則とする。回答を書き終えたこと、質問がないこと、保存が未承認であることだけを理由にNoneにしない。現在の委任内で遂行できる工程は先に完了し、Humanの判断、意味の擦り合わせ、Mode変更、別の機会への再接続が必要なら、その次の到達点までを依頼全文にする。Next Stepで進行を勧めた接続を、Next Queryで消さない。
 
-継続依頼文は、【Next Query】に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。別Thread・別AI宛てでは、見出しとコードブロックの間に、コード化しない独立行で「宛先：」に続けて正式な宛先を記す。コピー本文内にも同じ宛先を含め、内外の対象を一致させる。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
+継続依頼文は、【Next Query】に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。同Thread宛てを含め、通常のNext Queryで依頼本文を提示する時は、見出しとコードブロックの間に、コード化しない独立行で「宛先：」に続けて正式な宛先を記す。コピー本文内にも同じ宛先を含め、内外の対象を一致させる。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
+
+ここでいう宛先は、提示した依頼を直接受け取り、その仕事を担う相手である。本文中で言及する別AI、作成するPromptの想定受信者、操作・調査の対象とは区別する。別AI向け本文の作成を依頼する場合、現在のQueryは作成担当へ宛て、成果物の受け手は本文中で別に明示する。同Threadでも、確認できるThread名等を添え、コピー後にも直接の受取人を判別できるようにする。
 
 既存の宛先は、取得済み原本や現在の会話で確認できたサービス・Project・Thread・AI等の正式名から、場所と受け手を一意に特定するために必要なものを使う。確認済みURLがあれば添え、名称・URLを推測しない。新規Threadは作る場所・受け手の役割・必要な条件を示し、未作成と作成状態未確認を区別する。宛先が特定できなければ、不足と最小の回復方法をNext Stepまでに示し、必要なら宛先を解決する同Thread向けの依頼へつなぐ。未確定の転送本文は草案として保留し、そのまま送れるNext Queryにはしない。表示の有無だけで既存の委任や短縮入力の意味を変えず、権限と採用条件は各所有原本に従う。
 
@@ -371,7 +381,7 @@ Next Queryを短縮入力で採用する場合は、[キーバインディング
 
 将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
 
-提示前に、三節の見立て・選んだ接続・依頼文のGoal・対象・宛先・必要な方法・完了条件・Mode、見出し・最終配置・本文全体のコピー境界・fenceの閉じを確認する。宛先の内外表示に不一致があれば、現在の指示と確認済み資料から解決し、解決できない時は第2.1節に従い、片方を勝手に選ばない。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
+提示前に、三節の見立て・選んだ接続・依頼文のGoal・対象・宛先・必要な方法・完了条件・Mode、見出し・最終配置・本文全体のコピー境界・fenceの閉じを確認する。依頼本文を提示する場合は、宛先の内外表示と、本文が仕事を依頼している相手の一致も確かめる。必要な表示の欠落や不一致があれば、現在の指示と確認済み資料から解決し、解決できない時は第2.1節に従い、片方を勝手に選んだり、未確定の転送本文をそのまま送れるNext Queryにしたりしない。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 

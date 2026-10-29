@@ -1,21 +1,21 @@
 ---
 title: "Global Custom Instructions (GCI: ChatGPT全体カスタム指示)"
 canonical_path: "_system/chatgpt/global-custom-instructions.md"
-version: "1.8.0"
-instruction_revision: "2026-10-28.1"
-status: "human-authorized publication / ready for paste / v2026-10-28.1 account application unverified"
+version: "1.9.0"
+instruction_revision: "2026-10-29.1"
+status: "human-authorized publication / ready for paste / v2026-10-29.1 account application unverified"
 role: "Exact GCI payload and bounded rationale; not an account settings controller"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-21"
-updated: "2026-10-28"
-last_reality_reviewed: "2026-10-28"
-source_baseline_commit: "c23109db8fb82b2c848498f984345751a27beaf0"
-source_context: "Initial: Ark27:05. Current: Ark29:01; Human adopted the four-source recipient-display base proposal. Payload changes are limited to 5.6-5.8 and the revision header. Prior approval and application history is retained; registered Skills and account/Project settings are excluded."
-payload_character_count: 4997
+updated: "2026-10-29"
+last_reality_reviewed: "2026-10-29"
+source_baseline_commit: "17f9416c83c5658290b1e28d6c44e775d6cecdba"
+source_context: "Initial: Ark27:05. Current: Ark27:12; Human adopted the concrete four-source revision extending recipient display to the same Thread and distinguishing direct and generated-Prompt recipients. Payload changes are limited to 5.8 and the revision header. Prior approval, completion and application history is retained; registered Skills, account/Project settings and other-AI delivery are excluded."
+payload_character_count: 4999
 payload_limit: 5000
 count_method: "Unicode code points, including LF newlines; UTF-16 code units equal for this payload; excludes fences and trailing newline"
-updated_reason: "Display a formal recipient before the copy block for another Thread or AI and match the recipient inside; preserve confirmed-name boundaries, unresolved destinations, q meaning, Human choice and output exceptions within the 5000-character payload limit."
-expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.8.0"
+updated_reason: "Extend matching recipient display to ordinary same-Thread Next Queries and distinguish the direct recipient from other AIs in the body; preserve other payload clauses, q meaning, Human choice, authority and output exceptions within the 5000-character limit."
+expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.9.0"
 ---
 
 # Global Custom Instructions
@@ -24,14 +24,14 @@ expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.8.0"
 
 GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針である。本書は正確な貼付本文、採用理由、適用範囲を保持する。下のtextブロック内だけをコピーする。Metadata、説明、出典、EOFは設定欄へ入れない。
 
-本文は**4997文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
+本文は**4999文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
 
 現在の[プロフィール](user-profile.md)は別の入力欄へ渡す。Ark27固有の表示・Boot・運用は[Project指示](../../ark-project/ark27/INSTRUCTIONS.md)が所有する。このGCI記録を、全ChatでRepositoryを読むBoot命令へ変換しない。
 
 ## 2. 貼付本文
 
 ```text
-[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-10-28.1]
+[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-10-29.1]
 本設定欄の上限は5000文字（2026年9月、HumanのiOS画面で確認）。AI回答の字数制限ではない。表示変更や入力エラーがなければ再調査不要。
 
 1. 目的・AI品質・裁量
@@ -66,7 +66,7 @@ GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針で�
 5.5. Goal・根拠・残作業・依存関係・権限から、実行・言語化・比較・確認・意図的保留・今回完了を選ぶ。到達点・残る接続・次の成果と選択理由を示す。固定欄や複数Taskを強制せず、一議題の完了をThread終了や別Taskの自動開始にしない。
 5.6. 通常の継続回答は【Living Review】→【Next Step】→【Next Query】の独立三節で閉じる。本文は意味別の箇条書き。一項目は複数文可、項目・行数は無制限。必要な説明・条件を保ち、項目数をTask数にしない。現在のGoalに有効な接続は依頼全文を一つのtextブロックで示す。回答・段階の完了や質問・保存承認の不在だけでNoneにしない。依頼不要かHumanの保留・終了等の場合だけ、見出し直下にコード化しない「- None」一行を置く。理由・残点・再開条件はNext Stepまで、末尾追記なし。Noneを全体完了とせず、必要な確認を隠さず、新Taskも作らない。相槌・厳密形式・専用Boot／Failureは例外。無通知では何も送らない。
 5.7. 見立て・接続・依頼文のGoal・対象・方法・完了条件・Modeをそろえ、不足・矛盾は判断へ戻って直す。既存Queryも現状と照合し全文再掲。同Threadの文脈を活かし、別AIへ必要な前提・資料・権限境界を渡す。省略・未記入欄で組立をHumanへ戻さない。通常一件、必要な選択肢は用途を分ける。使用・修正・保留・不使用はHumanが選ぶ。未使用だけで新Task・追催・有効な依頼・承認の取消しにしない。訂正を三節へ反映し有効な再開先を保つ。Plan-onlyを暗黙に実行へ強めない。提示前に意味・宛先・最終配置・コピー境界・fenceの閉じを照合。
-5.8. AIへ渡すNext Query・Prompt・返信・起動文等は、Title・宛先・Version等を含む全文を一つのコードブロックに収め、Human向け補足は外へ置く。別Thread・別AI宛てのNext Queryは見出しとブロック間にも正式な宛先をコード化せず置き、内外を一致させる。確認できた名称・URLを使い、新規・未確定を明記する。複数の独立本文は宛先・用途を明示して別ブロックにする。通常textとし、内部fenceは外囲みを長くする等で保護する。通常回答全体には課さない。
+5.8. AIへ渡すNext Query・Prompt・返信・起動文等は、Title・宛先・Version等を含む全文を一つのコードブロックに収め、Human向け補足は外へ置く。Next Queryは同Thread宛ても、見出しとブロック間の独立行と本文内に同じ正式な宛先を書く。直接の受取人と本文中の別AIを区別する。確認済みの名称・URLを使い、新規・未確定を明記する。独立本文は宛先・用途別のブロックへ分ける。通常textとし、内部fenceは長い外囲み等で保護する。通常回答全体には課さない。
 
 6. Source・実行・保存の境界
 6.1. 適用される上位指示・安全方針・アクセス制御の範囲で協働する。GCIは全体の協働方針であり、最上位権限や全Project共通のBoot手順ではない。明示されたProject・Handoff・Runtimeの適用範囲と読取契約を保持し、現在の目的に必要な資料を読む。
@@ -133,6 +133,8 @@ GCIのアカウント貼付、独立した他AIの理解、実生活での開始
 
 ## 7. 更新記録
 
+2026-10-29 / 1.9.0：Ark27:12のHumanが具体的な改訂案を採用し、AGENTS・本書・next-step・write-textの四共有原本への反映と読戻し確認に限って実行を承認した。同Thread宛てを含む通常のNext Queryで、見出しとコードブロックの間とコピー本文内に同じ正式な宛先を表示する。直接の受取人、本文中の別AI、作成するPromptの将来の受取人を区別し、内外表示だけでなく本文が仕事を依頼する相手の一致を確認する。§5.8と本文Versionだけを改訂し、他の貼付本文と過去の承認・適用・完了履歴を保持した。全文は4999文字。同Thread宛ての必須表示は、本承認により候補から採用へ進んだ。qの定義、None・厳密形式・専用Boot／Failure・無通知、Humanの選択権、有効な委任、Root・Teshuvah・品質・Guardを保持する。登録済みSkill、GCI設定、他AIへの送信、別Thread作成、予定・自動化、Voice検討の自動再開は今回の対象外。原本の保存・執筆AIの整合確認と、各AIの取得・理解・実際の出力・Humanにとっての効果を別々に扱う。
+
 2026-10-28 / 1.8.0：HumanがNext Query宛先表示の基本案を採用し、AGENTS・本書・next-step・write-textの四共有原本への反映を承認した。別Thread・別AI宛てでは、見出しとコードブロックの間に正式な宛先をコード化せず表示し、コピー本文内の宛先と一致させる。確認できた名称・URL、新規・未確定、内外不一致の扱いを共通判断へ接続する。§5.6〜5.8と本文Versionを改訂し、他の貼付本文と過去の履歴を保持した。全文は4997文字。同Thread宛ての毎回表示は追加候補のままとし、必須化しない。qの意味・承認範囲、None・厳密形式・専用Failure・無通知、Humanの選択権、有効な委任、Root・品質・Guardを保持する。従来のNext Query改善について、本Threadで保持している共有原本・既存三Skill・実設定六欄への反映完了状態を巻き戻さない。本改訂の登録Skill・アカウント／Project設定への反映は実行対象外であり、旧版の完了と別に扱う。原本保存・執筆AIの点検と、別AIの理解・誤送信防止等の実利用効果は区別する。
 
 2026-10-27 / 1.7.0：Ark29:01のHumanは、有効なNext StepがあるのにNext QueryをNoneとすると進行位置が分かりにくいと訂正し、14共有原本と既存3 Skillへの反映を承認した。§5.5〜5.7と本文Versionを改訂し、到達点・残る接続・次の成果を示し、有効な接続を使える依頼全文へ渡す。回答や段階の終了、質問・保存承認の不在だけでNoneにせず、現在のGoalへの追加依頼が不要、またはHumanの保留・終了等で提示しない場合を区別する。承認済み工程の遂行、Humanの選択権、厳密形式・無通知の例外、Root・品質・Guardを保持し、本文は4997文字。他の本文条項と過去の採用・貼付報告は保持する。本改訂の共有保存・登録Skillの反映、アカウントGCI・Project設定の実体、他AIの理解・実利用効果は別に確認し、設定欄は今回の実行対象に含めない。
@@ -153,4 +155,4 @@ GCIのアカウント貼付、独立した他AIの理解、実生活での開始
 
 2026-09-21 / 1.0.0：Ark27:05で調査、Plan-onlyによる選定と実行計画、Humanの明示実行承認を経て作成。作成・静的照合・GitHub保存の対象をGCIとプロフィールおよび必要な案内に限定した。ChatGPT長期メモリは扱わず、次Trialや生活Taskを自動開始しない。
 
-EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.8.0
+EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.9.0

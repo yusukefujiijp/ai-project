@@ -39,7 +39,7 @@ Humanの開始しやすさを支えることを、AIの検討・説明の削減�
 
 ## 選んだ接続をNext Queryへ結ぶ
 
-接続先の仕事を誰がどのThreadで受け取るかも選ぶ。同Threadの現在のAI、既存の別Thread・別AI、新規Threadを区別し、受け手の役割や共有していない文脈が成果の成立条件に影響する場合は、その理由を保持する。宛先の不足は接続判断へ戻して扱う。正式な宛先の確かめ方と表示は、下記AGENTSの共通規則へ従う。
+接続先の仕事を誰がどのThreadで受け取るかも選ぶ。同Threadの現在のAI、既存の別Thread・別AI、新規Threadを区別する。選ぶ宛先は、今回の依頼を直接受け取り、その仕事を担う相手であり、本文中の別AIや、作成するPromptの想定受信者とは区別する。受け手の役割や共有していない文脈が成果の成立条件に影響する場合は、その理由を保持する。宛先の不足・矛盾は接続判断へ戻して扱う。同Threadを含む正式な宛先の確認・表示・例外は、下記AGENTSの共通規則へ従う。
 
 継続提案を含む通常回答では、現在のGoal・根拠・制約からNext Stepで今つなぐ接続を選び、理由と成立条件をHumanが理解・訂正できる形で示す。その判断を、直後の独立した最終セクションNext Queryの依頼全文へ変換し、Goal・対象・宛先・必要な方法・完了条件・Modeを保つ。具体化で不足・矛盾が見つかれば判断へ戻り、両節を整合させる。共通形式・全文再掲・コピー境界・Humanの選択権・権限境界・例外は[AGENTSの共通規則](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)に従う。Skillを使うQueryの共有原本URLと全文読解は[AGENTSの共通条件](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#skill-query-portability)に従う。受け手へ渡す本文の作成判断が必要なら[Text Writer](https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-text/SKILL.md)を使い、本Skillは接続選択と依頼の意味の一致を担う。
 
