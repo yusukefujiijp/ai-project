@@ -1,6 +1,6 @@
 ---
 title: "GitHub整理 — ai-projectの構造を理解し、改善を継承する"
-version: "0.2.8"
+version: "0.2.9"
 canonical_path: "control-center/github/README.md"
 role: "GitHub organization entry / route to the single plan, case records and originals"
 status: "human-authorized domain entry and owner placement; actual reader and field effects separate"
@@ -8,7 +8,7 @@ repository: "yusukefujiijp/ai-project"
 scope: "ai-project全体。ark-project/内だけに限定せず、他Repositoryへ自動拡張しない"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-10-06"
-updated: "2026-10-26"
+updated: "2026-10-29"
 lesson_index_patch: "Link STR-015; existing domain ownership and prior cases retained"
 problem_solving_index_patch: "Link STR-016 foundation and STR-017 naming and skill connection; problem-level judgment remains with problem-solving"
 references_index_patch: "STR-018/019: flexible README principle and complementary learning memory; implementation evidence remains with each record"
@@ -16,8 +16,9 @@ skill_readme_index_patch: "STR-021: per-skill README ownership for Query and for
 communication_index_patch: "STR-020: common AI-to-AI communication manual and experience bodies; its Dots relocation hold is continued by STR-022"
 dots_location_index_patch: "STR-022: Dots relocation, preserved data and product cutover evidence"
 change_record: "../changes/STR-014-super-special-prompt-modernization.md"
+harness_index_patch: "STR-024: seventeen-file Harness foundation, fixed-version focused trial and bounded entry adoption; no Root consolidation or Actor takeover"
 shared_references_triad_patch: "STR-023: shared Feedback, nine complete case narratives in JSONL, domain contract links and legacy routes"
-expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.8"
+expected_eof: "EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.9"
 ---
 
 # GitHub整理
@@ -121,6 +122,8 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 - [STR-023: 共有Referencesの三本柱と成功事例JSONL](../changes/STR-023-shared-references-three-pillars.md)：原反応の保持、九事例の無要約移行、旧URL・識別情報・専門側データの保持と確認。
 
+- [STR-024: Harness初版と読み取り専用Repositoryレビュー](../changes/STR-024-harness-repository-review.md)：17原本の所有、WorkとPythonの接続、固定版の実地試験、成果保存、未修正の入力例と確認範囲。
+
 [ARCHIVE](ARCHIVE.md)はARC案件の提案・承認・実施・確認・復元を所有し、[__archives](../../__archives/README.md)は保管実体を案内する。両者の役割を通常変更記録へ重複させない。通信のCurrentは該当Board Topic、Actorの出来事はActorログ、再利用する学びは適用されるlesson契約など、実対象のOwnerを保つ。
 
 ## 3. 変更と確認を次のAIへ渡す
@@ -133,4 +136,4 @@ Player系で育った[control-centerの保存時点](https://github.com/yusukefu
 
 Root・Teshuvah・Human Foreground One・HumanのCorrection／STOP／Final SealとGuardを保持する。AI・GitHub・この入口はKeliであり、Rootや王座ではない。
 
-EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.8
+EOF::AI_PROJECT_GITHUB_CONTROL_CENTER::v0.2.9

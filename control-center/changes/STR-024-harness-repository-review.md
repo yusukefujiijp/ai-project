@@ -1,10 +1,10 @@
 ---
 id: STR-024
 title: Harness初版 — 読み取り専用Repositoryレビューの実行補助
-version: 0.1.0
+version: 0.2.0
 created: 2026-10-29
 updated: 2026-10-29
-status: foundation-implemented / remote-and-live-trial-follow
+status: initial-implementation-and-focused-trial-recorded
 scope: root harness 17 files; additive adoption record and narrow entry links after trial
 ---
 
@@ -41,7 +41,7 @@ Home Bは既存Mainの根本再設計に属し、その比較・本文案の進�
 3. 公開した固定コードを使い、Root・入口・文書役割、Main／Support／29／30との責務、Report／Feedback、Harnessの原本と成果の境界を重点として、一件の読み取り専用レビューを行う。
 4. Reportと最小証跡を保存・確認した結果に応じ、Root README・Repository Review入口・変更記録索引を限定更新する。改善提案は記録に留める。
 
-この初回commit時点では、2–4は未確認。実際のrun、対象commit、保存確認、入口掲載の成立は後続の本記録で追記し、予定を成功として先取りしない。
+初版公開commit時点では、2–4は未確認だった。後続の実際の到達点を以下へ追記する。初版時点の予定を遡及して成功へ書き換えない。
 
 ## 能力の境界と復元
 
@@ -50,3 +50,54 @@ Home Bは既存Mainの根本再設計に属し、その比較・本文案の進�
 原本取得と読解申告、機械合格と意味判断、ローカルZIPと永続保存、ReportとHuman Feedbackを別に扱う。証跡ZIPは原本cacheを含まないため、完全なRepository backupや単独で再開できるrun backupとは呼ばない。
 
 復元は、利用案内の限定差分を外して従来のReview Prompt直接利用へ戻せる。コードとrunは固定版の証拠として保持できる。既存ファイルの移動・削除がないため転送Stubや原本移設の逆操作は不要。後続mainに他担当変更がある場合は本件の差分だけを戻し、main全体を過去へresetしない。固定履歴リンクは書き換えない。
+
+<a id="live-trial"></a>
+
+## 2026-10-29 — 公開した固定版による実地試験
+
+初版commitは `a038ab0676cbe307d75f9866b1e838397608b404`、treeは `496c82db02b66bbe724e9da7d2d5179a5af99997`。17ファイル・本記録・限定ignoreの**19対象**をRemoteから全文再取得し、意図した内容との一致を確認した。対象以外のblobは公開基点から保持し、削除は0。取得し直した固定コードを別の作業コピーへ置いて利用した。
+
+- run ID：`9e01bae3-93ac-4439-9357-d5f0fcd5439a`
+- 対象とtool commit：上記初版commit
+- tool code SHA256：`b84993146512b8db5ecb546ed83a8f854c19075777b95b4ae1a8ca0fafaff45c`
+- 方法：`repository-reviews/review-prompt.md` v002、blob `913814722c8eccbbda2b579b3ddab4f126fa081d`
+- 重点範囲：Root・入口・文書役割、Home Bの到達点、Main27／Support28／Ark29／Ark30の所有、Report／Feedback、Harnessの原本・実行状態・成果の境界。
+- 原本39資料を固定版でbyte照合。全文読解申告22、関連範囲8、取得のみ9。同一作業で全文を読んだ契約はblob同一性で再利用し、Root READMEの並行Ark-OKF差分を確認した。全文取得と全文読解を混同していない。
+- 比較資料：`repository-reviews/reports/2026-09-19-02.md`。当時の全体レビュー七論点を全面再検査したわけではなく、全体基点と重点観測、現用経路と固定Bindingの分離を比較した。
+
+### 実際に成立した経路
+
+WorkのGitHub読取Connector → HostによるJSON受渡し → Pythonのtree/blob/byte照合 → 実読解範囲の記録 → 意味と所有関係の比較 → 計画pause → 別processでresume → HTML Reportとresult → 結果検証 → 最小証跡ZIP → 成果物保存、を一件として実施した。レビュー中のGitHub操作はGETのみ。実装公開と後続の入口掲載は観測期間の外で扱う。
+
+大きなtreeの受渡しはShell引数長の上限に当たり、内容を分割保存して回復した。取得処理中に別CLI読取がWriterと競合した際は後続ingestが拒否され、既に照合済みの26資料を確認して残10件を逐次取得した。追加依存3資料も照合した。これらを無かったことにせず最小eventへ残した。
+
+計画pauseはHuman STOPではない。別processのresumeは、有効な依頼・同じコード・固定入力・原本cacheを再確認して成立した。その後のHumanの「続きから実行」では、runがactiveで結果未保存であることを実体確認し、未完だったReportと保存から継続した。
+
+終了時mainは `6a3724475ac9e2f48ccff9463818110680b57a71` へ進んだ。差分は他担当による共有 `references/feedback/feedback.jsonl` と `references/lessons/lessons.jsonl` の二ファイル。取得済み39原本のblobは変わっていない。追加データ本文を開始Snapshotへ混ぜず、固定時点の重点報告とした。入口公開はこの並行成果を含む最新treeへ重ねる。
+
+### 意味の確認と保持する所有
+
+1. **H1 — 入力例の不整合を発見。** [固定Adapterの例](https://github.com/yusukefujiijp/ai-project/blob/a038ab0676cbe307d75f9866b1e838397608b404/harness/adapters/chatgpt-work/README.md#L13-L28)の `harness/`・`repository-reviews/` は、[入力規則](https://github.com/yusukefujiijp/ai-project/blob/a038ab0676cbe307d75f9866b1e838397608b404/harness/src/ark_harness/contracts.py#L21-L26)と一致せずstart前に拒否された。run未作成を確認し、試験用入力だけを `harness`・`repository-reviews` へ正規化して続行した。公開例・コード・テストの修正は、試験で見つけた改善を実装しないという今回の境界に従い行っていない。再利用時に注意する既知の制約であり、改訂するなら例と規則の整合が優先候補となる。
+2. **H2／H3 — 原本と担当を保持。** 現行のARK／AGENTS／Root README／Domain READMEの分担と、Home Bの検討進展・統合実装未承認を分けた。Main27の全体判断、Support28のReport／Feedback、29のHome B補助、30の既存Report補助比較という公開記録の担当をHarnessへ移管しない。これらは観測Snapshotの記録であり、後の各Threadの新しい依頼や役割を凍結しない。
+3. **H4 — 準備時Stateを現在の失敗にしない。** 12／08の初期Stateには当時の未観測表記が残る一方、Current11／07の `progress.next_transition` に後続の受入れ完了記録がある。今回直接読んだのは公開記録で、当時の観察者への帰属を保持した。現在のWork UIや受け手の内部理解を再検査したとは報告しない。
+4. **H5 — ReportとFeedbackの所有を保持。** Human向けHTMLをprimaryとし、機械交換用resultを分けた。ReportはCurrentや方法の第二原本ではない。Report固有の二件のFeedback、共有Referencesの契約と専門側データを同期コピーせず、期待・批評・初回実験の合格評価・実利用効果を分けた。
+5. **H6／H7 — 機械的な成立と意味・権限を分ける。** 原本byte、読解申告、根拠行、出力hash、状態遷移を検証した。Host全体から書込能力を除去する強制sandbox、別AIの独立利用、Humanの利益は別の未確認能力として残した。
+
+### 結果検証と保存
+
+結果検証は**43 pass・1 warning・3 not-checked**で受理され、runは `complete`。warningは上記main更新、not-checkedは意味の機械的証明、Host全体のread-only強制、外部リンク等の自動網羅である。completeは依頼された重点レビューを閉じたという意味で、H1の修正や全Unknownの解消ではない。
+
+指定した7経路のPath存在を確認した。過去報告の固定リンクは `47509f5c3e37f6307ff518edd499ede860b90843` のtreeで評価し、anchorの意味は未検査のまま保持した。Root→Harnessは掲載候補のPath存在検査であり、この観測時点で既にRootへ掲載済みとは記録していない。
+
+Humanへ提供する成果は次の二つ。成果物保存先から各ファイルの成功と識別情報が返り、ローカルファイルとの対応も保存された。これらのHuman向け保存を、GitHubから全AIが自動取得できる原本へ昇格したとは扱わない。本STRは公開可能な導入・観測・制約を所有し、原本cacheや私的会話全体を複製しない。
+
+- `ark-harness-review-2026-10-29.html`：28,240 bytes。SHA256 `5a4385ec27d9fe04f194bbfc067d7825647e8a3e517fd2af4291642ff5d43961`。
+- `ark-harness-review-evidence-2026-10-29.zip`：86,953 bytes。SHA256 `ebc34503557327f4607ea7a2ba47bdbab08edff0535d560b4904e51a028665e9`。14 memberを読み戻して実体一致。request・Profile・二時点のtree・run・sources・最小events・result・validation・HTML・機械テスト記録・参照検査・HTML構造検査・main差分を含む。原本cacheは含まない。
+
+HTMLは構造・内部リンクを検査した。描画用ブラウザ実体がなく、ブラウザ画像renderとHuman端末での実表示は未確認。Markdownだけを許す出力制約は設けていない。
+
+### 限定入口と切戻し
+
+通し試験と保存の成立を受け、Root READMEにHarnessの一行、Repository Review入口に実行補助と試験への案内、GitHub整理入口に本STRの索引を加える。既存Review Prompt・全体比較基点を保ち、原本の移動・削除、Root文書統合、Actor State更新、製品設定、予定実行、発見した改善の実装はしない。
+
+この入口commitは初版コードとは別に保存し、公開後に三入口と本記録をRemote全文再取得して差分一致を確認する。commit自身のSHAや保存後検査を本文内で先取りせず、実際の確認Receiptは最終応答へ示す。切戻しは本件の案内差分だけを対象にし、Home Bや他担当の並行成果を巻き戻さない。

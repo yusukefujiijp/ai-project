@@ -1,10 +1,10 @@
 ---
 title: "Ark Repository Living Review"
 canonical_path: "repository-reviews/README.md"
-version: "0.1.1"
+version: "0.1.2"
 status: "active review entry / first same-AI focused follow-up recorded / cross-AI benefit unobserved"
 created: "2026-09-19"
-updated: "2026-09-19"
+updated: "2026-10-29"
 last_reality_reviewed: "2026-09-19"
 reality_review_scope: "Bridge navigation and full-versus-focused report routing; not a new whole-repository review"
 repository: "yusukefujiijp/ai-project"
@@ -13,8 +13,8 @@ primary_reader: "Current AI / other AI / Future AI"
 role: "Review entry, report history, and continuity guide; not Current Runtime or a task registry"
 origin_context: "Ark27:04 / YusukeJP × AI-Collaborator"
 validation_boundary: "Document and same-AI scenario checks are separate from independent AI use and real-world benefit"
-updated_reason: "Record the first focused follow-up; distinguish latest observation from the whole-repository comparison baseline."
-expected_eof: "EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.1"
+updated_reason: "Add the Harness execution-aid route after a fixed-version focused trial; preserve the method original, dated report baseline and prior observation metadata."
+expected_eof: "EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.2"
 ---
 
 # Ark Repository Living Review
@@ -31,10 +31,13 @@ Humanは、この入口と短い依頼を渡せばよい。AIが前回の範囲�
 |---|---|---|
 | このREADME | 入口、責務、報告の履歴、保存と比較の扱い | この仕組みを利用・保守する時 |
 | [共通Review Prompt](review-prompt.md) | 調査・意味復元・関係探索・比較・提案の方法 | 実際のレビューを依頼された時 |
-| [最新の観測：2026-09-19／入口整合](reports/2026-09-19-02.md) | 限定改善の内容・変更後の検証・残存課題 | 入口修正の結果を確認する時 |
+| [Harness初版](../harness/README.md) | 方法の原本を使う実行補助。Work＋読取Connector＋Python | 固定取得・読解範囲・検証・中断再開・成果保存を接続する時。[実地試験と既知の制約](../control-center/changes/STR-024-harness-repository-review.md#live-trial)を確認する |
+| [保存レポート：2026-09-19／入口整合](reports/2026-09-19-02.md) | 限定改善の内容・変更後の検証・残存課題 | 入口修正の結果を確認する時 |
 | [全体比較の基点：2026-09-19](reports/2026-09-19.md) | 全体の観測・根拠・判断・未確認範囲 | Repository全体の比較を始める時 |
 
-最新の保存レポートは上表から辿れる。「最新の保存」は、現在のRepositoryと同じ状態を観測済みという意味ではない。報告内の観測commitと、今回の対象commitを区別する。最新が重点レビューの場合、全体比較では最新の全体基点と、それ以後の関連する差分観測を併読する。最新の一件だけで未観測Branchを消さない。
+`reports/`の最新保存レポートと全体比較の基点は上表から辿れる。「最新の保存」は、現在のRepositoryと同じ状態を観測済みという意味ではない。報告内の観測commitと、今回の対象commitを区別する。最新が重点レビューの場合、全体比較では最新の全体基点と、それ以後の関連する差分観測を併読する。最新の一件だけで未観測Branchを消さない。
+
+2026-10-29のHarness初版の重点試験は[STR-024](../control-center/changes/STR-024-harness-repository-review.md#live-trial)に記録した。Root・入口・文書役割との接続を一件確認し、HTML Reportと最小証跡を別途保存した。全体レビュー基点を置き換えず、方法本文は本領域に保つ。Harnessは製品登録や自動実行の設定ではない。
 
 ### 1.1 Humanからの短い呼出例
 
@@ -161,4 +164,4 @@ flowchart TD
 
 同一AIによる最初の限定的な継続利用を、入口整合の後続レポートへ記録した。次に観察したいのは、**期間を開けた時や他AIへの継承で、短い依頼から前回の根拠と現在の原本へ到達できるか**である。今回の利用と、継続的な負担軽減・全AI互換性は別であり、後者はまだ未観測として保持する。
 
-EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.1
+EOF::ARK_REPOSITORY_REVIEWS_README::v0.1.2

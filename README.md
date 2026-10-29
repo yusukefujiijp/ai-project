@@ -1,9 +1,9 @@
 ---
 title: "ai-project"
 canonical_path: "README.md"
-version: "v021"
+version: "v022"
 edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v020 preserved in Git history; v021 routes Ark-OKF to its unified shared skill, retaining prior keybindings navigation, ownership and review history"
+version_basis: "v001-v021 preserved in Git history; v022 adds the scoped Harness entry after its fixed-version trial, preserving Ark-OKF, keybindings, ownership and prior review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
 updated: "2026-10-29"
 last_reality_reviewed: "2026-09-19"
@@ -86,6 +86,7 @@ keybindings_entry_addition:
   authority: "Current Human adopted the four-file keybindings plan and authorized main persistence and remote verification"
   scope: "Shared keybindings source discovery and AGENTS-owned read-route navigation; no existing Runtime, fixed Binding, account setting or cross-AI rollout change"
 updated_reason:
+  - "2026-10-29: Add the Harness 0.1.0 execution-aid entry after one fixed-version focused review and artifact saving; retain the Review Prompt original, known trial limits and all other owners."
   - "2026-10-29: Route the Human-adopted Ark-OKF unified source to skills/ark-okf-responder; navigation only, without environment registration or whole-repository revalidation."
   - "2026-10-27: Connect the Human-adopted keybindings source before shorthand input through the AGENTS read contract; preserve prior review scope and distinguish persistence from recipient understanding and behavior."
   - "2026-10-27: Connect the shared Wiki first experiment through its own entry; preserve the shared References route and all prior review scopes."
@@ -190,7 +191,7 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v021 / Current-request Repository Front Door
+- Repository入口: README v022 / Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -251,6 +252,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`references/success-cases/README.md`](references/success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
+| [`harness/README.md`](harness/README.md) | 読み取り専用Repositoryレビューの実行補助・初版 | Work＋GitHub読取Connector＋Pythonで固定原本・読解範囲・結果検証・中断再開・成果保存を接続する時。方法は既存Review Prompt、通し試験と制約は[STR-024](control-center/changes/STR-024-harness-repository-review.md#live-trial)へ |
 
 ### 5.2 Prompt and Skill Layer
 
