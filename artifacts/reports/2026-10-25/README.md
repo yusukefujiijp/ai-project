@@ -1,14 +1,14 @@
 ---
 title: "2026-10-25 Reports — 初回の13本と読取付録"
 canonical_path: "artifacts/reports/2026-10-25/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-25"
-updated: "2026-10-25"
-updated_reason: "Develop the Human-created newline seed into the dated collection entry; retain the initial reading routes and evidence boundaries from the parent README."
+updated: "2026-10-30"
+updated_reason: "Human採用済みReport v003に合わせ、7番の案内を改善判断への入口へ更新する。他作品・既存読書経路・初回分析の根拠を保持する。"
 role: "Dated report collection entry and reading routes; shared storage guidance belongs to the parent README"
 primary_reader: "Human / Current AI / Future AI"
 initial_collection_source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
-expected_eof: "EOF::ARTIFACTS_REPORTS_20261025_HOME::v001"
+expected_eof: "EOF::ARTIFACTS_REPORTS_20261025_HOME::v002"
 ---
 
 # 2026-10-25 Reports
@@ -29,7 +29,7 @@ expected_eof: "EOF::ARTIFACTS_REPORTS_20261025_HOME::v001"
 | 4. 戻る支援 | 想起・開始・移行・文脈欠損 → 適した支援 | [戻る支援には、異なる切れ目がある](2026-10-25-four-kinds-of-reconnection.md) |
 | 5. Currentと歴史 | 当時の記録と現在の原本 → 巻き戻さない理解 | [Currentと歴史を同時に読む](2026-10-25-current-and-history.md) |
 | 6. 経験から学ぶ | 成功と訂正 → 条件を保つ再利用 | [成功は何を再現し、訂正は何を守るのか](2026-10-25-learning-from-success-and-correction.md) |
-| 7. 成果物の到達 | 内容・媒体・入口 → 読む／見る／聴く場面 | [成果物が届くとは何か](2026-10-25-artifacts-that-reach-the-reader.md) |
+| 7. 成果物の到達 | 届かない理由 → 内容・表現・入口の改善判断 | [成果物が届くとは何か](2026-10-25-artifacts-that-reach-the-reader.md) |
 | 8. Reportの核 | 目的・素材・読者 → 汎用的な執筆判断 | [汎用Reportを小さな核から育てる](2026-10-25-small-core-for-general-reports.md) |
 | 9. 別領域への横展開 | GitHub整理の知見 → 居室固有の条件 | [GitHub整理から居室整理へ](2026-10-25-transferring-methods-to-room-care.md) |
 | 10. 自由度と継続 | 創発・Root・現在の権限 → 戻れる協働 | [自由度を、戻れる協働へ結ぶ](2026-10-25-freedom-and-recoverable-continuity.md) |
@@ -59,4 +59,4 @@ expected_eof: "EOF::ARTIFACTS_REPORTS_20261025_HOME::v001"
 
 初回公開日の住所を維持し、後日の訂正は各作品の版・更新理由とGit履歴で辿る。日付別保存への移動では、ファイル名・本文の分析・根拠・対象読者を保持した。これは保存配置と案内の変更であり、分析の再実施、別AIの受入れ、実生活の効果の確認ではない。
 
-EOF::ARTIFACTS_REPORTS_20261025_HOME::v001
+EOF::ARTIFACTS_REPORTS_20261025_HOME::v002

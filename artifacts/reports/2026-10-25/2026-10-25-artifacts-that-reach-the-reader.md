@@ -1,88 +1,152 @@
 ---
 title: "成果物が届くとは何か — 内容・媒体・入口を結び直す"
 canonical_path: "artifacts/reports/2026-10-25/2026-10-25-artifacts-that-reach-the-reader.md"
-version: "v002"
+version: "v003"
 created: "2026-10-25"
-updated: "2026-10-25"
-updated_reason: "Move to the first-publication date directory; preserve analysis, source evidence and reader designation."
+updated: "2026-10-30"
+updated_reason: "Humanが採用した改訂本文を反映。受け手・場面・用途との関係から改善箇所を判断できる構成へ深め、初回分析基点と未確認の実利用効果を保持する。"
 author_role: "Ark28:07 collaborative AI"
+revision_author_role: "Ark28:08 collaborative AI"
 primary_reader: "Human / Current AI / Future AI"
 source_commit: "ba47216debeb2163a5dbf880c6b37d73edbb7e41"
-status: "Source-grounded analysis; no new slides, audio or schedules created"
-expected_eof: "EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v002"
+source_commit_scope: "Initial report analysis baseline; not the revision publication commit"
+revision_drafted: "2026-10-29"
+revision_adopted: "2026-10-30"
+revision_authority: "Current Human adopted the displayed report and dated README item 7, authorizing only these two files and their verification."
+revision_base_commit: "f4a1ccb51aa1ffda12bc6ec6420379ccfdc37581"
+previous_version_blob: "30d031465db2b97745a42549c5353c77c0137bba"
+revision_sources:
+  - path: "artifacts/reports/references/feedback/feedback.jsonl"
+    ref: "f4a1ccb51aa1ffda12bc6ec6420379ccfdc37581"
+    blob: "802d8f8fa167f32efed8fb0b360ebc2d04533fe2"
+    scope: "Two Human feedback records; collection-level criticism and first-experiment acceptance remain distinct."
+  - path: "artifacts/reports/README.md"
+    ref: "f4a1ccb51aa1ffda12bc6ec6420379ccfdc37581"
+    blob: "70415904858fc6a59b838d04ed965a23b2f454b5"
+    scope: "Report roles, Human/AI readership, stable revision address and source ownership."
+  - path: "artifacts/reports/2026-10-25/README.md"
+    ref: "f4a1ccb51aa1ffda12bc6ec6420379ccfdc37581"
+    blob: "a0fb5241b08b1204230f622dbd97379fc1433638"
+    scope: "Existing numbered reading routes before the paired item-7 update."
+revision_source_check: "Own 2026-10-29 full reads reused after 2026-10-30 exact blob checks; the four historical sources remain at source_commit."
+status: "Human-adopted source-grounded analysis; practical effects unverified"
+expected_eof: "EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v003"
 ---
 
-# 成果物が届くとは何か
+# 成果物が届くとは何か — 内容・媒体・入口を結び直す
 
-## 完成ファイルの向こう側に、利用の場面がある
+## §1【同じ成果物でも、届き方は違う】
 
-Report、Slides、Podcast、Scheduleは異なる形式だが、共通する問いがある。**どんな内容を作ったかに加え、誰が、どの場面で、どう使えるようになったか。**
+一つのReportが、今読むHumanには新しい理解を与え、後から読むAIには判断の根拠を渡す。その一方で、本文は完成しているのに、必要な人が存在を知らないこともある。開けても、何を読み取ればよいか分からないこともある。
 
-内容がよくても入口が分からなければ利用は始まらない。入口が便利でも、その場面に合わない構成なら理解しにくい。したがって、内容・媒体・入口は別々に設計できる一方、目的に向けて接続する必要がある。
+ここから考えると、「届く」は成果物だけに備わる性質ではない。**成果物・受け手・利用場面・目的の関係として捉える必要がある。**
 
-本Reportは公開原本に記された設計と観測を比較する。特定製品の現在の機能や料金、全端末の互換性を調査・保証するものではない。
+たとえば、あるReportを読み、二つの説明の違いが分かったなら、それは理解への到達である。判断を保留すべき理由が分かった場合にも価値がある。読後に行動しなかったことだけでは、届かなかったとは言えない。
 
-## Slidesで見える、制作から閲覧への距離
+Future AIが同じReportを読む場合には、結論を理解するだけでなく、その結論がどの資料・時点・条件に基づくかを辿れることが重要になる。Humanにとって分かりやすい説明と、AIが別の場面へ適用できる説明は、重なる部分を持ちながら、求めるものが完全には一致しない。
 
-[Slides入口][s1]は、制作資料、サービス上の実物、書き出しファイルを分ける。三者は自動同期されず、Markdownだけでレイアウトや操作性を完全に復元できるともされていない。
+したがって、制作の問いは「何を作るか」に加え、**「誰が、どの場面で、何を理解・判断できるようになるか」**まで含む。
 
-さらにv006には、共有ショートカットから三枚を見るiPhone経路についてHuman確認が記録されている。この形成は、よい本文を作ることに加えて、**閲覧へ至る操作そのものを作品の使いやすさとして扱う**価値を示している。ただし、作品側の詳細確認をこのReportで再実施したわけではなく、入口に保存された観測を根拠としている。
+## §2【作品・表現・届け方を組み合わせる】
 
-「見られるSlides」のSkillも、目的と利用条件に適した経路を扱い、すべてをスライド化するものではない。[s2] ここには、形式の導入を成果にするのでなく、必要な意味が届くかを見る視点がある。
+Report、Slides、Podcast、Scheduleは、異なる切り口から成果物を支える。
 
-## Podcastで見える、読む構造と聴く構造の違い
+Reportは、調査・比較・考察などを通して、何が分かり、どんな意味があるかを伝える作品として扱える。SlidesやPodcastは、視覚的な順序や音声の流れによって、その内容を受け取れる形にする。HTMLやMarkdownは、本文を記述・表示する形式になる。Scheduleは、適切な時機に生成・配信する実行経路に関わる。
 
-[podcast-mode][s3]は、Themeを選ぶ入口と、一つのまとまった本文を生成する入口を扱う。テーマを選びたい依頼と、本文を直接求める依頼は異なる。入力が短いからといって、常に同じ前工程へ戻す必要はない。
+これらは、一つの成果物で組み合わせられる。たとえば、ある調査ReportをHTMLで読み、重要な比較をSlidesで眺め、考察をPodcastとして聴く構成も考えられる。ただし、形式の数だけ価値が増すとは限らない。
 
-聴取を前提とする本文では、見出しや表を視線で戻って確認する読み方に頼り過ぎない構成が必要になる。言い換え、節間の接続、具体例が重要になる一方、同じ説明の反復を増やせばよいわけでもない。この差は、元の文章をそのまま音声へ変換するだけで目的を満たせるとは限らないことを示す。
+選択の出発点は、受け手に必要な理解の仕方である。
 
-なお、本文を生成したこと、音声として再生されたこと、Humanが聴取できたこと、理解に役立ったことは別の観測である。今回音声生成や聴取試験は行っていない。
+- 複数案の条件差を同時に見たいなら、比較表や図が候補になる。
+- 一つの考えが成立するまでの理由を追いたいなら、つながりのある文章が役立つ。
+- 画面を見ずに聴く場面なら、対比や話題の移り変わりを言葉で復元できる構成が必要になる。
+- 後から特定の論点へ戻りたいなら、目次・節へのリンク・問い別の入口が役立つ。
 
-## Reportの二つの入口
+表現は、完成した内容を包む働きに加え、内容を深める働きも持ち得る。比較表を作る過程で、二つの事例の前提が揃っていないことに気づく場合がある。その発見は、調査や論旨の修正へ戻す価値がある。
 
-Reportには、今読むHumanへの入口と、後から利用するAIへの入口がある。前者には「何が分かったか」「自分にどんな意味があるか」が重要で、後者には「何を根拠に、どの時点・範囲で書かれたか」が重要になる。
+この意味で、内容と表現は往復して育てられる。
 
-この違いは、本文を二重化しなくても扱える。冒頭の主張、意味のまとまりに沿う本文、具体例、根拠への参照、重要な限界があれば、読む深さを選べる。READMEも、単に日付順で並べるだけでなく、問いから作品を選べる入口にできる。
+## §3【どの接続を改善するか】
 
-| Node | Edge | 利用場面が求めるもの | 避けたい短絡 |
-|---|---|---|---|
-| Report | 論旨と根拠 → 理解・判断 | 主張のつながりと、再確認の経路 | 長文なら深いとみなす |
-| Slides | 順序と視覚 → 要点・関係の理解 | 見える文字、配置、開ける経路 | ファイル生成だけで閲覧済みとする |
-| Podcast | 音声に適した流れ → 聴取による理解 | 耳で追える説明と接続 | 文章の読み上げだけで適合を認定する |
-| Schedule | 原本とLoader → 適切な時点の出力 | 参照先、時刻、実Runの確認 | 原本保存から自動同期を仮定する |
+「活用につながらない」という状態から、何を直すべきかをどう選ぶか。
 
-## 同じ素材を、別の形式で使う時に保つもの
+次の表は、その判断を助ける分析案である。各行は確認の順番ではなく、改善箇所を見分けるための関係を示す。
 
-形式を変える時、同じ文章を完全に再現することより、何を理解してほしいか、どの根拠が支えるか、何が未確認かを保持する方が重要な場合がある。Reportの比較表をSlidesの一枚へ、Podcastの対比説明へ変えることはできる。しかし、図が分かりやすいからといって、仮説を確定事項に変えてはいけない。
+| Node | Edge | 改善を選ぶ判断 |
+|---|---|---|
+| 論旨・根拠 | 読者の問い → 新しい理解・判断 | 既知事項の列挙で止まるなら、重要な対比、理由、反例、成立条件を深める。 |
+| 構成・表現 | 複数の説明 → 比較・関係の把握 | 条件を覚えて往復しないと比較できないなら、表・図・並べ方を工夫する。 |
+| 読書入口 | 今の関心 → 適切な作品・節 | 何を得られる作品か見えないなら、問いに答える案内文と読む経路を整える。 |
+| 出典・版・条件 | 本文の主張 → 原典の確認・別場面への再利用 | 結論だけが独り歩きするなら、根拠の所在、確認時点、適用範囲を結び直す。 |
 
-また、形式ごとに可変の事実を独立管理すると、更新時に食い違いやすくなる。[Artifacts][s4]は、テーマの事実原本と成果物固有の制作資料を分ける。作品は根拠を編集・表現できるが、元資料への参照と確認時点を持つ。
+たとえば、内容の新しさが不足している作品について、色や余白を整えることには可読性の価値がある。しかし、新しい論点や根拠が必要な部分は、それだけでは埋まらない。
 
-この責任分離があれば、作品を保存した後に現実が変わっても、当時の表現が何を前提にしていたかを辿れる。現在の用途に合わせて再制作することと、過去作品を無言で現在化することを分けられる。
+逆に、十分な内容があっても、読むべき作品を選べない場合には、さらに本文を増やすより、入口を整える方が目的に近づくことがある。
 
-## 例え：料理と、食べられる場所までの段取り
+複数の問題が重なる場合もある。その時は、現在の用途を妨げている接続から扱う。すべての作品に同じ改修一式を課す必要はない。
 
-料理ができたことと、適した温度で席へ届き、食べる人が利用できることは違う。器や配膳の都合を理由に味を損ねてはいけないし、味だけを考えて届く経路を無視しても利用は成立しない。
+## §4【既存の事例は、何を教えているか】
 
-成果物でも同じように、内容の品質と到達経路は互いを支える。入口は付属物に見えるが、最後の接続が欠けると、良い内容が使われない。ただし、全成果物へ配送Systemを新設する必要はない。今回なら、読めるGitHub本文と目的別のREADMEだけで十分な入口になり得る。
+**Slidesの事例は、閲覧経路そのものが作品の利用条件になることを示している。**
 
-## 今回のReport集への判断
+[Slides入口 v006](https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/artifacts/slides/README.md)には、共有ショートカットから三枚を見る経路を、HumanのiPhoneで確認した記録がある。
 
-今回の依頼はGitHubへReportを書き出すことであるため、Markdown本文、根拠、READMEからの到達性、Remote保存確認を制作範囲とする。HTML化、Slides化、Podcast化、定期配信を同時に始めることを、この分析から導かない。
+ここで確認されたのは、その条件で閲覧できたことだ。これを全端末での互換性や、理解の改善まで広げることはできない。一方、この閲覧の成立自体は具体的な成果として保持できる。本文の品質と、実際に開ける経路は、それぞれの貢献を持つ。
 
-将来、特定のReportが「耳で聴きたい」「iPhoneで視覚的に眺めたい」という具体的な用途へつながれば、その作品の意味と現在の権限から形式を選べる。全作品を全媒体へ展開することより、その場面で届くことに価値がある。
+**Podcastの原本は、受け取り方が編集判断を変えることを示している。**
 
-## 根拠
+[Podcast Modeの固定版](https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/podcast-mode/SKILL.md)は、Themeを選ぶ入口と本文を生成する入口を区別し、聴く本文を表・視覚配置・URLの読み上げに依存させない方針を持つ。
 
-- [s1: Slides v006][s1] — 制作資料・実物・書出し、記録された閲覧経路。
-- [s2: create-viewable-slides][s2] — 目的に応じた制作と閲覧の扱い。
-- [s3: podcast-mode][s3] — Themeと本文の入口、音声向けの構成。
-- [s4: Artifacts v001][s4] — 事実原本と制作資料の分担。
-- [s5: Schedules][s5] — 原本とRuntimeの接続。設定実体は今回未取得。
+たとえば、画面上では左右に置ける二案を音声で説明するなら、何を比較しているかを聴き手が追える接続が必要になる。これは文章の短縮とは別の編集判断であり、考察の深さや重要な留保も保持する。
 
-[s1]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/artifacts/slides/README.md
-[s2]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/create-viewable-slides/SKILL.md
-[s3]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/skills/podcast-mode/SKILL.md
-[s4]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/artifacts/README.md
-[s5]: https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/schedules/README.md
+ただし、この方針の存在は、個々の作品で音声再生や聴取効果が確認された証拠ではない。
 
-EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v002
+**Scheduleの原本は、保存と実行を結ぶ接続を明確にしている。**
+
+[Schedulesの固定版](https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/schedules/README.md)では、GitHubの原本と、実行するRuntimeを区別している。原本が保存されていても、実行側がその原本へ接続しているとは限らない。
+
+この区別は、成果物の改善にも役立つ。内容の改訂、実行経路への反映、実際の出力、Humanの利用は、それぞれに確認できる対象がある。ある段階で得た証拠を、その先の成立へ繰り上げずに読む必要がある。
+
+これら三つの資料から得られるのは、万能の配送手順ではない。**成果物と利用の間には異なる接続があり、修正すべき対象も異なる**という見方である。
+
+## §5【HumanとFuture AIへ、一つの作品から渡す】
+
+Humanへの入口では、「この作品を読むと何が見えるか」を早く示す。理由と具体例をつなぎ、必要な深さまで読み進められるようにする。
+
+Future AIへの入口では、その説明を支える原典・版・観測者・成立条件へ戻れるようにする。さらに、何が変わった時に判断を更新すべきかが分かれば、過去の結論をそのまま適用する誤りを減らせる。
+
+たとえば、先ほどのSlidesの記録を使う場合、Humanは「共有から閲覧する経路が役立ち得る」と理解できる。Future AIは、どの作品・経路・端末について、誰が確認した記録なのかを保持したうえで、現在の用途へ使えるか判断する。
+
+この二つの読み方は、結論と根拠を往復できる一つの本文でも支えられる。読者別の別版が有効な場合にも、共通する事実や現在状態の所有先を明確にする。
+
+[Artifactsの原本 v001](https://github.com/yusukefujiijp/ai-project/blob/ba47216debeb2163a5dbf880c6b37d73edbb7e41/artifacts/README.md)が区別するように、作品固有の表現と、その題材の事実原本は異なる責務を持つ。表現を自由に育てるためにも、どこを訂正すれば意味が直るかを辿れることが大切になる。
+
+## §6【調べる単位・保存する単位・読む順序を分ける】
+
+Reportを増やしていく時、この三つを分けると設計しやすくなる。
+
+- **調べる単位**は、何を明らかにするかから選ぶ。ファイル・フォルダ・カテゴリは対象を絞る入口になるが、一つの問いに必要なら複数領域を横断できる。
+- **保存する単位**は、作品の所在と改訂の継続性を支える。既存のReportでは初回公開日を収納の軸とし、改訂は同じ住所で育てる。
+- **読む順序**は、受け手の問いから選ぶ。制作順やファイル名の並びと一致する必要はない。
+
+この分離によって、調査範囲を絞りながら、必要な深さを確保できる。たとえば「成果物が届く条件」という一つの問いなら、Repository全体を一作品へ詰め込む必要はなく、Slides・Podcast・Scheduleの必要な原本を比較できる。
+
+[初回Report集の入口](https://github.com/yusukefujiijp/ai-project/blob/main/artifacts/reports/2026-10-25/README.md)には、既に番号付きの案内と問い別の読み方がある。ただし、READMEに番号があることと、ファイル一覧から読む体験が改善したことは別である。
+
+番号を付けるなら、何の順序を示すかを明らかにする。一作品内の論旨を追う節番号、複数作品を読む推薦順、保存名の連番は、それぞれ用途が異なる。今回の用途に役立つ位置へ置けばよい。
+
+## §7【完成を認め、利用から育てる】
+
+成果物の完成は、依頼された範囲と確認できた結果から判断する。
+
+会話内の改訂案を求められたなら、本文・根拠・変更理由が揃い、採用判断できる状態が今回の到達点になる。保存まで依頼された場合には、その保存確認も必要になる。Humanの理解や実生活への効果は、実際に得られた反応・観測として扱う。
+
+この区別は、完了した仕事を正しく認めながら、次の学びを受け取るためにある。
+
+[保存済みFeedback](https://github.com/yusukefujiijp/ai-project/blob/main/artifacts/reports/references/feedback/feedback.jsonl)では、初回Report群に対する「内容に特筆するものはなかった」という批評と、「最初の実験としては合格」という評価が共存している。前者は内容の改善へ、後者は初回実験の到達点へ、それぞれ接続できる。
+
+同じFeedbackには、表現の自由度、調査範囲、読書順序への希望も含まれる。本稿の分析は、それらを具体的な制作判断へつなぐための案である。今回の改訂によって理解や利用が改善したかは、今後得られるFeedbackによって更新される。
+
+*根拠の範囲：初回分析に用いられた固定commit `ba47216debeb2163a5dbf880c6b37d73edbb7e41` の上記四原本を今回読解した。Report・Feedback・読書入口は2026-10-29取得時のCurrentを確認した。Human評価の二つの短い表現は原文の要約であり、逐語原文はリンク先のFeedbackへ戻る。本文の診断表と編集上の提案はAIの分析であり、比較実験の結果ではない。*
+
+EOF::REPORT_ARTIFACTS_THAT_REACH_THE_READER::v003
