@@ -3488,6 +3488,93 @@
           "context": "現在の本人メッセージ全文。本人は『更新しました』と報告。既存の現在基準も片手40kgであるため、同じ重量の新しい本人報告として記録し、数値の増減・誤記訂正・一時的な例外を推定しない。過去の35→40kgの更新とそれ以前の本人原文・履歴を保持する。両手60kgは未言及の継続ルールで保持する。継続する方法では両手開始基準60kg、Triangleへ入る片手基準40kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。他種目の基準は保持し、新しい観察として複製しない。実施日・来館・左右両側・途中重量・回数・セット数・身体効果は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0038",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-29",
+      "reference_scope": "current",
+      "date_basis": "2026-10-29に現在の会話へ渡された外部会話の本人報告。直後の案内が『10月29日に取得した原本』と明記する会話文脈を報告日の根拠とし、独立した発言timestamp・実施日は未確認。observed_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 45,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0037/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Dips\nSweet Spot\n片手: 45kgに更新しました！",
+          "reported_date": "2026-10-29",
+          "context": "現在の会話へ外部会話として引き継がれた本人メッセージ全文。Dips片手Sweet Spotを40kgから45kgへ更新する報告。直後の定期案内は原本未反映・書込範囲外としていたため、通常会話の継続保存で今回追記する。過去の40kgと本人原文・履歴を保持する。この報告自体に両手の変更・実施日・来館・左右両側・回数・セット数・Triangle全段階の実施・身体効果は示されていない。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0039",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-29",
+      "reference_scope": "current",
+      "date_basis": "2026-10-29（Asia/Tokyo、client time context）に現在の本人入力を受領。Shoulder Press両手Sweet Spotの更新報告であり、実施日・来館・回数は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg": 40,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0034/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Shoulder Press\nSweet Spot\n両手: 40kgに更新しました！",
+          "reported_date": "2026-10-29",
+          "context": "現在の本人メッセージ全文。Shoulder Press両手Sweet Spotを35kgから40kgへ更新する明示報告。片手20kgは未言及の継続ルールで保持する。継続する方法では両手開始基準40kg、Triangleへ入る片手基準20kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。過去の35kgと本人原文・履歴を保持し、他種目の未言及条件を新しい観察として複製しない。実施日・来館・回数・セット数・身体効果は未報告。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0040",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-10-29",
+      "reference_scope": "current",
+      "date_basis": "2026-10-29（Asia/Tokyo、client time context）に現在の本人入力を受領。Dips片手・両手Sweet Spotの報告であり、実施日・来館・左右両側・回数は指定されていないためobserved_dateはnull。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 45,
+          "source": "S01",
+          "report_kind": "reaffirmation",
+          "previous_ref": "cz-record-0038/O001"
+        },
+        {
+          "id": "O002",
+          "machine": "ディップス",
+          "mode": "両手",
+          "kg": 65,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-visit-0005/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "dips Sweet Spot\n片手: 45kg\n両手: 65kg\nに更新しました！",
+          "reported_date": "2026-10-29",
+          "context": "現在の本人メッセージ全文。Dips両手Sweet Spotを60kgから65kgへ更新し、片手45kgも明示した報告。片手は直前の45kg報告と同値の新しい本人報告として保存し、原文の『更新しました』を保持する。直前の片手45kg報告はcz-record-0038、途中のShoulder Press両手40kg報告はcz-record-0039へ別に保存する。各報告の来館・実施が同一かは未確認。継続する方法では両手開始基準65kg、Triangleへ入る片手基準45kgに対応するが、今回の下降・Triangle全段階の実施を認定しない。過去の両手60kg・片手40kgと本人原文・履歴を保持し、実施日・来館・左右両側・途中重量・回数・セット数・身体効果は補わない。"
+        }
+      }
     }
   ]
 }
