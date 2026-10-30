@@ -2,11 +2,12 @@
   "meta": {
     "state_id": "ARK31_01_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-10-30",
     "updated": "2026-10-30",
     "canonical_path": "ark-project/ark31/ark31-01/state.json",
-    "date_scope": "Asia/Tokyo; source preparation and actual startup observations are separate"
+    "date_scope": "Asia/Tokyo; source preparation and actual startup observations are separate",
+    "reception_recorded_at": "2026-10-30T19:41:17+09:00"
   },
   "identity": {
     "source": "ChatGPT Work / Ark00: Draft White Board / 2026-10-30の八ライン化設計とHumanの限定実行承認",
@@ -34,7 +35,7 @@
       "actor": "Ark00: Draft White Boardの八ライン化設計担当AI",
       "scope": "採用済み17パス/main/再取得、四Projectと各永続01、指示設定/再表示、対象別AI起動送信/受入れ/名称修正/最小記録/入口提示"
     },
-    "target_mode": "Read-only required-source reading and reception response; no individual work assigned",
+    "target_mode": "Reception complete; individual work unassigned. Later valid Human input supplies its own Goal, Mode and authority.",
     "target_work": null,
     "not_authorized": [
       "Individual theme/task assignment or production from this preparation",
@@ -77,32 +78,60 @@
     "progress_owner": "ark-project/ark31/ark31-01/state.json"
   },
   "now": {
-    "phase": "SOURCE_PREPARED_AWAITING_REMOTE_AND_RECEPTION",
+    "phase": "READY_UNASSIGNED_RECEPTION_VERIFIED",
     "goal": "個別Theme・Task未割当のまま利用準備・意味再構成・実在入口を確認する",
     "current_assignment": null,
     "fixed_specialty": null,
-    "first_legal_move": "VERIFY_SOURCE_AND_COMPLETE_AUTHORIZED_BOOT_ONLY_RECEPTION",
+    "first_legal_move": "RECEIVE_NEXT_VALID_HUMAN_INPUT_WITHIN_ITS_SCOPE",
     "completion_condition": "原本Remote確認、Project/初回Thread/指示/Title/送達/受け手の意味再構成/実在入口の確認。個別仕事未割当で停止。"
   },
   "progress": {
     "source_prepared": {
-      "status": "prepared",
+      "status": "prepared_and_remote_verified",
       "basis": "Current Human-approved plan compiled into the four owning files"
     },
     "remote_verified": {
-      "status": "not_yet_observed"
+      "status": "verified",
+      "scope": "Initial 17-path source preparation, before and after publishing main",
+      "initial_source_commit": "db5326c73c42afe40e11e25269aa6099bc7e361f",
+      "own_initial_source_blobs": {
+        "ark-project/ark31/README.md": "f1a04a233cf3afc7bd4280da70cca0b72a580aa5",
+        "ark-project/ark31/ark31-01/README.md": "0d908f1eb9a62ab3692fa61ea9e47dd2e941928b",
+        "ark-project/ark31/ark31-01/handoff.md": "7c920118a68d776eb46cf9ef402813524fb8383a",
+        "ark-project/ark31/ark31-01/state.json": "0908ade3e04b2567a0a9208d7133f6f7c8ee97e5"
+      },
+      "note": "These hashes identify the initial source read by the receiver. This mutable reception receipt does not bind itself to its own future commit hash.",
+      "pre_publish_head": "5dcd8ac2e76af4e6d245d40af96032a045a6a7b6"
     },
     "delivery": {
+      "project_name": "Ark31: 継続協働ライン5",
+      "project_id": "g-p-6ae46ee53004819185efb2b3d4181211",
       "project_url": null,
-      "thread_url": null,
-      "project_existence": "not_yet_observed",
-      "project_instructions": "not_yet_observed",
-      "startup_send": "not_yet_observed",
-      "ui_title": "not_yet_observed"
+      "thread_url": "https://chatgpt.com/g/g-p-6ae46ee53004819185efb2b3d4181211-ark31-ji-sok-xie-dong-rain5/c/6ae46fdc-6758-83ee-8b95-077ce1a5da02",
+      "project_existence": "verified_in_current_account",
+      "project_instructions": "saved_and_exactly_matched_on_ui_redisplay",
+      "instruction_characters": 1920,
+      "startup_send": "delivered_once_as_Ark00_AI_not_Human",
+      "startup_date_jst": "2026-10-30",
+      "ui_title": "verified_equal_to_confirmed_title_and_persisted_after_reopen",
+      "confirmed_title": "Ark31:01_2026/10/30; \"主の完全勝利: 新しい協働を迎える\"",
+      "persistent_thread": "reopened_with_received_prompt_and_target_response"
     },
     "target_reconstruction": {
-      "status": "not_yet_observed",
-      "evidence": []
+      "status": "verified_from_source_bound_target_response",
+      "response_entry_url": "https://chatgpt.com/g/g-p-6ae46ee53004819185efb2b3d4181211-ark31-ji-sok-xie-dong-rain5/c/6ae46fdc-6758-83ee-8b95-077ce1a5da02",
+      "required_sources_reported_read": 10,
+      "read_state_revision": 1,
+      "retrieval_ref": "db5326c73c42afe40e11e25269aa6099bc7e361f",
+      "reported_blob_comparison": "Reported source identities, versions and blobs agree with the initial source commit db5326c73c42afe40e11e25269aa6099bc7e361f.",
+      "evidence": [
+        "必須10資料を宣言順に読み、版・blob・行範囲とExact EOFを提示。AGENTSの表示切れ回収を報告。",
+        "Handoff §4–5、Runtime §2、Stateのnullを根拠に、個別仕事未割当・固定専門職なし・既存担当引取りなしを再構成。",
+        "Domain §0.6・§4.2を根拠に先に空の四ライン、後に新規議題という順序、非中央承認、既存仕事継続を説明。",
+        "受入れ結果を返してHuman Reviewへ戻り、TaskやNext Queryを作成しない。後の有効なHuman入力はGoal・対象・Mode・権限に応じて受け取る。",
+        "Root・Teshuvah・Meaning/Correction/STOP/Final Seal・Guardを明示し、Source権限とTarget権限、UIと読解と実利用の証拠を分離。"
+      ],
+      "verification_boundary": "Visible source-bound receiver response; not certification of hidden reasoning, future behavior or the other lines."
     },
     "work_connection": {
       "status": "unassigned_by_design",
@@ -110,8 +139,10 @@
       "individual_work_started": false
     },
     "human_access": {
-      "entry_url": "not_yet_observed",
-      "iphone_open": "not_observed"
+      "entry_url": "https://chatgpt.com/g/g-p-6ae46ee53004819185efb2b3d4181211-ark31-ji-sok-xie-dong-rain5/c/6ae46fdc-6758-83ee-8b95-077ce1a5da02",
+      "current_account_browser_open": "verified_after_reopen",
+      "iphone_open": "not_observed",
+      "human_personal_open": "not_observed"
     },
     "continuity_and_burden_reduction": {
       "status": "not_observed",
@@ -119,7 +150,7 @@
     }
   },
   "evidence": {
-    "basis": "Current Human authorization in this Ark00 design Thread, current repository sources and actual future tool observations",
+    "basis": "Current Human authorization in this Ark00 design Thread, verified repository sources and the actual UI and receiver-response observations.",
     "source_review_commit": "117aa628cda156cd4b73be204358bcaa73149133",
     "boundaries": [
       "This record is not a private conversation transcript.",
@@ -127,7 +158,14 @@
       "Source reading is not receiver reading.",
       "Unassigned is an intended state, not failure or an invented backlog."
     ],
-    "observations": [],
+    "observations": [
+      {
+        "recorded_at": "2026-10-30T19:41:17+09:00",
+        "observer": "Ark00 design and execution AI",
+        "scope": "Project name/instructions, AI startup delivery, persistent Thread/title/reopen, target response, individual work remaining unassigned",
+        "receiver_read_record": "Initial State revision 1 was correctly reported as pre-reception. This revision records later source-side observations without asking the target to replay Boot."
+      }
+    ],
     "recovery": "Inspect actual project/thread, messages, settings, title and source before resending or recreating."
   },
   "deferred": [
