@@ -1,4 +1,4 @@
 interface:
   display_name: "save"
   short_description: "成果・訂正・根拠・再開情報を担当する原本へ残し、保存結果を確かめる"
-  default_prompt: "$save を使い、今回残す価値のある成果・訂正・根拠と再開情報を、適切な所有先へ保存してください。"
+  default_prompt: "対象・保存先の現在の指定を優先し、実際に参照できる今回の会話・資料から成果・訂正・根拠・再開情報を、$saveで担当原本へ保存し、再取得して確認してください。直接利用できなければhttps://github.com/yusukefujiijp/ai-project/blob/main/skills/save/SKILL.mdを全文読み、適用されるAGENTS・保存先契約・必須読取条件を守って適用してください。現在も有効なPlan-only・STOP・承認範囲を保持し、文脈・必須資料・操作手段・権限の不足は影響と再開条件を示し、必要な内容が既に保存済みなら現物を確認してNO_CHANGEとしてください。"
