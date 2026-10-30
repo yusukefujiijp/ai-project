@@ -1,8 +1,10 @@
 ---
 title: Ark Harness — Repository Review
-version: 0.1.0
+version: 0.1.1
+implementation_version: 0.1.0
 status: initial-implementation
 updated: 2026-10-31
+updated_reason: 公開例・データ受渡し・状態別の利用説明と回帰検査を改訂。実行実装とHome Bの所有案内を保持。
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -11,6 +13,8 @@ home_b_alignment:
 ---
 
 # Ark Harness
+
+本書とWork Adapterの文書版はv0.1.1、実行実装はv0.1.0、交換schemaは1。文書・回帰検査の改訂を、実行コードの版や新しい能力の導入と混同しない。
 
 依頼、固定した原本、読解範囲、検証、成果物を一件の仕事として接続する実行補助。初版は **ChatGPT Work + GitHub読取Connector + Python 3.12以降のPOSIX環境**を対象にする。レビュー方法の原本は[Repository Review Prompt](../repository-reviews/review-prompt.md)。Harnessはその方法を複製・移動せず、実行時に固定commitから取得する。
 
@@ -79,7 +83,7 @@ runディレクトリはソースRepositoryの**外**に新規作成する。名
 | `deliverables/*` | Human向けReport等 | Hostが用途に応じて作成。Markdown、HTML、PDF等を選べる |
 | `result.json` / `validation.json` | 結論・根拠・残点と機械検査結果 | `finish`。失敗ならrunはactiveのまま |
 
-`bundle`は上記の必要記録と申告済み成果物をZIPへ保存し、全memberを読み戻して照合する。原本cacheは含めない。**証跡ZIPはRepositoryの完全backupや、展開だけで再開できるrunのbackupではない。**再開には同じコードと照合済み原本cacheが必要。cacheが失われた場合は、元commitから再取得・照合するか、新runとして関係を記録する。固定commitが将来も取得可能とは保証しない。
+`bundle`は検査に受理された`complete`／`partial`の必要記録と申告済み成果物をZIPへ保存し、全memberを読み戻して照合する。原本cacheは含めない。**証跡ZIPはRepositoryの完全backupや、展開だけで再開できるrunのbackupではない。**通常の再開には記録と一致する実装コード、不変入力、登録済み原本cacheが必要。登録済みcacheが欠けると`status`や通常の`ingest`も失敗し得る。原本の再取得可能性と旧runの修復能力を分ける。現行CLIに完全復元・cache修復の専用操作はない。状態別の続行判断と新runへの接続は[Work Adapter](adapters/chatgpt-work/README.md)を参照する。固定commitが将来も取得可能とは保証しない。
 
 ローカルZIPの成立と永続保存は別。Hostは利用可能な成果物保存先へReportとZIPを保存し、返却ID・保存状態を確認してHumanへリンクを渡す。初版のPythonにLibraryやGitHubへの書込APIはない。成果物保存用の認証情報をrunへ書かない。
 
@@ -87,11 +91,13 @@ runディレクトリはソースRepositoryの**外**に新規作成する。名
 
 JSONは未知の版・欄・重複キー・型変換を拒否する。原本はtreeのblob SHAとGit blob計算、byte数を照合する。EOFがあるだけでは全文一致と判定しない。取得済みsourceへの読解申告を範囲で記録し、結果の根拠行がその範囲内にあることを検査する。必読原本の全文申告が不足したまま`complete`にはできない。
 
-`pause`で中断理由を記録する。`resume`は現在も有効な依頼・STOP・権限をHostが確認して理由を渡し、同じコード・不変入力・cacheを再照合してから進む。mainが進んでも途中で対象版を変えず、終了時commitとの差分評価を結果へ書く。
+`paused`は`resume`できる中断状態、`complete`／`partial`は終了状態である。`active`では現物を確認して未完の工程から続け、`resume`は使わない。`partial`の残点を続ける判断と、`paused`を再開する操作を混同しない。終了したrunでも、証跡化やHostによる永続保存が残っている場合は、現在の委任内でその工程を進められる。
 
-CLIはPOSIXのadvisory lockで一runの同時更新を拒否する。ファイル単位はatomic replaceだが、全ファイルを一括commitするdatabaseではない。操作が中断したらまず`status`と実体を確認し、成功済み取得を重複実行しない。開始途中で`run.json`等が不足する場合は、その状態を保持して別runを開始する。hash不一致・不明な状態を自動修復して完了扱いにしない。
+`pause`で中断理由を記録する。`resume`は現在も有効な依頼・STOP・権限をHostが確認して理由を渡し、同じ実装コード・不変入力・cacheを再照合してから進む。mainが進んでも途中で対象版を変えず、終了時commitとの差分評価を結果へ書く。終了状態を手で`active`へ戻さず、レビュー続行は現在の依頼と新runの必要性から判断する。
 
-取得失敗等で依頼範囲を閉じられない時は、`partial`と残点を保存できる。`finish`の終了code 0は検査に受理されたという意味で、`partial`を`complete`に昇格しない。code 1は結果検査失敗、code 2は入力・実行エラー。schemaは`python -m ark_harness schema result`等でコードから生成できるが、行範囲や複数欄の関係などの意味的条件は実際のCLIでも検証する。
+CLIはPOSIXのadvisory lockで`status`・`show`を含む同じrunの操作を排他的に扱う。逐次進め、中断や応答欠落後は現物を確認して成功済み操作を重複実行しない。lock取得はローカルの`.writer-lock`を作成し得る。ファイル単位のatomic replaceは、全操作を一括して戻せるtransactionではない。整合性不足で`status`が失敗する場合もある。開始途中で`run.json`等が不足する場合は旧状態を保持し、新runの必要性を判断する。hash不一致や不明な状態を自動修復し、状態名だけを手で変更して完了・復旧扱いにしない。
+
+取得失敗等で依頼範囲を閉じられない時は、必要な整合性検査を通した`partial`と残点を保存できる。未取得の資料と登録済みcacheの破損は別であり、後者を`partial`の指定だけで回避できない。`finish`の終了code 0は検査に受理されたという意味で、`partial`を`complete`に昇格しない。code 1は結果検査不合格で、result・validationが保存されrunは`active`に残る。code 2は入力・実行エラーだが、処理中断や応答欠落と同様に操作が一切行われなかった保証にはしない。`status`成功だけで結果・成果物・永続保存まで確認済みとは扱わない。schemaは`python -m ark_harness schema result`等でコードから生成できるが、行範囲や複数欄の関係などの意味的条件は実際のCLIでも検証する。
 
 ## 初版が証明しないこと
 

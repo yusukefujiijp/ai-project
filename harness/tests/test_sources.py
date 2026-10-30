@@ -1,4 +1,5 @@
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -9,6 +10,23 @@ from ark_harness.sources import (build_source, check_mark, covers, git_blob_sha,
                                  local_path, read_coverage)
 
 FIXTURE = json.loads((Path(__file__).parent / "fixtures/repository-review.json").read_text())
+ADAPTER = Path(__file__).resolve().parents[1] / "adapters/chatgpt-work/README.md"
+EXAMPLE_START = "<!-- ark-harness:request-example:start -->"
+EXAMPLE_END = "<!-- ark-harness:request-example:end -->"
+
+
+def published_request(text):
+    """Read the public example itself, refusing ambiguous or absent boundaries."""
+    if text.count(EXAMPLE_START) != 1 or text.count(EXAMPLE_END) != 1:
+        raise ValueError("request example needs exactly one start/end marker")
+    start = text.index(EXAMPLE_START) + len(EXAMPLE_START)
+    end = text.index(EXAMPLE_END)
+    if end < start:
+        raise ValueError("request example markers are reversed")
+    match = re.fullmatch(r"\s*\x60{3}json\n(.*?)\n\x60{3}\s*", text[start:end], re.DOTALL)
+    if match is None:
+        raise ValueError("request example must contain one JSON fence")
+    return Request.from_dict(json_loads(match.group(1)))
 
 
 def snapshot(commit=None, files=None):
@@ -27,6 +45,29 @@ def source(path="README.md", content=None, commit=None):
 
 
 class SourceTests(unittest.TestCase):
+    def test_published_request_example_matches_parser_and_detects_h1(self):
+        text = ADAPTER.read_text(encoding="utf-8")
+        request = published_request(text)
+        self.assertFalse(request.repository_writes)
+        self.assertFalse(request.execute_target_code)
+        self.assertEqual(request.ref, "main")
+        for path in ("harness", "repository-reviews"):
+            with self.subTest(path=path):
+                legacy = text.replace(f'"{path}"', f'"{path}/"', 1)
+                self.assertNotEqual(legacy, text)
+                with self.assertRaisesRegex(ValueError, "Request.paths"):
+                    published_request(legacy)
+
+    def test_published_request_example_rejects_missing_or_ambiguous_markers(self):
+        text = ADAPTER.read_text(encoding="utf-8")
+        reversed_markers = (text.replace(EXAMPLE_START, "MARKER_SWAP", 1)
+                           .replace(EXAMPLE_END, EXAMPLE_START, 1)
+                           .replace("MARKER_SWAP", EXAMPLE_END, 1))
+        for malformed in (text.replace(EXAMPLE_START, "", 1), text.replace(EXAMPLE_END, "", 1),
+                          text + EXAMPLE_START, text + EXAMPLE_END, reversed_markers):
+            with self.subTest(markers=malformed.count(EXAMPLE_START)), self.assertRaises(ValueError):
+                published_request(malformed)
+
     def test_exact_bytes_and_reading_are_separate(self):
         record, data = build_source(snapshot(), source())
         self.assertEqual(data, FIXTURE["files"]["README.md"].encode())
@@ -72,7 +113,10 @@ class SourceTests(unittest.TestCase):
             Snapshot.from_dict(data)
 
     def test_paths_and_symlinks(self):
-        for path in ("../escape", "/absolute", "a/../b", "a//b", "a\\b", "a\nb", "./a"):
+        for path in ("harness", "repository-reviews"):
+            self.assertEqual(repo_path(path), path)
+        for path in ("../escape", "/absolute", "a/../b", "a//b", "a\\b", "a\nb", "./a",
+                     "harness/", "repository-reviews/"):
             with self.subTest(path=path), self.assertRaises(ValueError):
                 repo_path(path)
         with tempfile.TemporaryDirectory() as tmp:
