@@ -1,9 +1,9 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.47.0
+version: v0.48.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-10-29
-updated_reason: "2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
+updated: 2026-10-31
+updated_reason: "2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -62,7 +62,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行35件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行36件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -79,6 +79,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | Podcast Mode / podcast-mode | Podcast Theme Modeによる切り口の提案とコピーできる生成依頼、音声ボタンで聴く本文、既存定刻配信用の内容。旧Radio用途を継承 | [README・Query](podcast-mode/README.md) / [SKILL.md](podcast-mode/SKILL.md) |
 | Voice Mode / voice-mode | 突発的な他者対応でのChatGPT Voice準備・問題相談・学びの再利用 | [README・Query](voice-mode/README.md) / [SKILL.md](voice-mode/SKILL.md) |
 | 自己改善Loop / self-improvement-loop | 次のAIの発見・創造につながるArtifactの作成・受信・方法Review | [README・Query](self-improvement-loop/README.md) / [SKILL.md](self-improvement-loop/SKILL.md) |
+| Token Burning Mode / token-burning-mode | 承認済みの価値ある仕事へ利用枠を集中配分し、品質と権限を保って残量を近ゼロへ。期限からの逆算と、別途委任されたResetへの接続 | [README・Query](token-burning-mode/README.md) / [SKILL.md](token-burning-mode/SKILL.md) |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [README・Query](usage-token-reset/README.md) / [SKILL.md](usage-token-reset/SKILL.md) |
 | 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [README・Query](problem-solving/README.md) / [SKILL.md](problem-solving/SKILL.md) |
 | load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [README・Query](load/README.md) / [SKILL.md](load/SKILL.md) |

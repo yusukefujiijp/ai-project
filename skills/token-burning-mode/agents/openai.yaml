@@ -1,0 +1,4 @@
+interface:
+  display_name: "Token Burning Mode"
+  short_description: "承認済みの仕事へ利用枠を集中配分し、品質を保って残量を近ゼロへ"
+  default_prompt: "$token-burning-modeを使い、現在のModeと承認範囲を保持して、指定利用枠を価値ある仕事へ配分し、残量を限りなくゼロへ近づけてください。Resetは別途委任された対象と条件に限って接続してください。"
