@@ -160,6 +160,14 @@ four_line_extension:
   third_line: "ark-project/ark29/ark29-01/handoff.md"
   fourth_line: "ark-project/ark30/ark30-01/handoff.md"
   evidence_owner: "Each new01 State separates source/remote, UI/reconstruction, work connection and ongoing effects"
+eight_line_readiness_extension:
+  date: "2026-10-30"
+  source_context: "Ark00: Draft White Board / current eight-line design and explicit Human execution request"
+  base_commit: "117aa628cda156cd4b73be204358bcaa73149133"
+  authority: "Human adopted 17 paths/main/remote verification, four Projects and persistent01 Threads, instructions/delivery/reconstruction/title correction/minimal receipts/entries; individual work remains unassigned"
+  scope: "Add independent lines31–34 and readiness-first routing; preserve existing27–30 work, ownership, history and fixed bindings"
+  goal: "First prepare four empty usable receiving lines; then route new topics under later valid input"
+  evidence_owner: "Each new01 State; no new global registry"
 expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
 archive_navigation_patch:
   date: "2026-09-29"
@@ -299,6 +307,33 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 各章READMEが意味・Current入口・Project指示、各01のRuntime／Handoff／Stateが協働条件・受入れ・可変観測を所有する。原本保存、Project／ThreadとTarget理解、四ラインへの実仕事接続、継続・Human負担軽減を分ける。各Stateへ到達点を残し、このDomainに全進捗や別会話を複製しない。
 
 両初期仕事は会話内の検討・提示まで。Main27の全体判断、Support28のReport／Feedback設計、別担当のHarnessと完了成果は移管しない。Ark00全件整理・全仕様完成・追加研究を開始前の前提にせず、私的な別会話・長期メモリをGitHubへ転記しない。Root・Teshuvah・Human Foreground One、HumanのCorrection・STOP・Final SealとGuardを保持する。
+
+---
+
+<a id="eight-line-readiness"></a>
+
+### 0.6 Eight-Line Readiness / 空の四ラインを先に整える
+
+2026-10-30、Humanは既存27〜30を保持し、次の四ラインを最初は空のまま準備し、その後に新規Theme・Taskを適切な継続先へ順次振り分ける計画を採用し、原本・Project／各01・設定・送達・各受け手の意味再構成・入口確認まで承認した。これは今回の準備承認であり、新規議題の割当や実仕事開始は含まない。
+
+| 追加ライン | 章／Project | 初回Current入口 |
+|---|---|---|
+| 第5ライン | [Ark31: 継続協働ライン5](ark31/README.md) | [Ark31:01](ark31/ark31-01/handoff.md) |
+| 第6ライン | [Ark32: 継続協働ライン6](ark32/README.md) | [Ark32:01](ark32/ark32-01/handoff.md) |
+| 第7ライン | [Ark33: 継続協働ライン7](ark33/README.md) | [Ark33:01](ark33/ark33-01/handoff.md) |
+| 第8ライン | [Ark34: 継続協働ライン8](ark34/README.md) | [Ark34:01](ark34/ark34-01/handoff.md) |
+
+**順序は、空の四ライン準備 → 新規議題の振分け。** Dots内に異なるGoal・承認・訂正・再開位置が重なる問題に対し、継続先を先に用意する。技術的に独立な別枝があることを準備後回しの理由にせず、この順序を既存の有効な仕事の全面停止へ広げない。
+
+空とは個別Theme・Task未割当であり、固定専門職も他ラインからの仕事の引取りもない。Root・Identity・Guard・Human Correction・権限境界を理解し、初回受入れ後に仕事を自作しない。これは初期状態であり、後から届く有効なHuman入力はその目的・対象・Mode・権限で受け取る。
+
+**既存四ラインとの境界。** §0.5の四ライン成立時の初期仕事と「30を未使用予備にしない」は当時の対象範囲に保持し、新31〜34へ移植しない。27〜30の担当・成果・Bindingを維持する。Ark27のMainは主として第一ラインの意味で、既存の全体検討等の担当を保持する一方、新規議題すべての司令塔・必須経由地・中央承認者とはしない。旧章終了・Main移管・新Main／Supportペアの形成は伴わない。
+
+各章READMEがProject指示とCurrent入口、各01のRuntime／Handoff／Stateが協働条件・受入れ・可変証拠を所有する。Domainは入口を示し、全進捗や私的会話を複製しない。準備と仕事割当、実仕事、Human端末到達、混線軽減の効果を分け、八ライン利用可能・八件割当・八件稼働・利用枠増加を同一視しない。実在URLと到達範囲は各Stateへ戻る。
+
+準備担当はArk31で経路を確認してから残りへ展開し、同じ範囲の再承認や成功済み操作の重複を避ける。四つの受入れと入口を確認し、未割当のまま報告したところで今回の準備を閉じる。新規議題の割当・Dotsへの外部送信・恒久監視は自動開始しない。
+
+準備後の振分けでは、同じGoalの補足は既存担当、独立した新Goalは適切な空き先、まだ閃きなら無理にTask化しないという判断を使える。一発言一Thread、固定専門職、全件Ark27経由、全対全通信、新台帳を必須にしない。必要な成果・訂正・関係の共有は現在の送信権限と所有先へ従う。これは自動割当や既存議題の一括移管の承認ではない。
 
 ---
 
@@ -493,6 +528,8 @@ Future AIは実利用のFeedbackから、適用中の委任で入口・資料・
 
 §0.5の29／30は、Humanが役割を明示した継続ライン追加であり、§4.1の「新しい奇数Main章を立ち上げる」という適用条件とは区別する。番号のみで29を新Main、30をそのSupportへ割り当てず、27／28のペア・Binding・担当を維持する。CHAPTER_TRANSITIONの意味は新章の役割・継承核・Missionを選ぶことであり、今回の追加に旧Main終了や所有移管を含めない。§4.1の通常方針やArk99／100番台の固有契約を一括変更する追補ではない。
 
+2026-10-30の31〜34追加も、Humanが明示した独立並列ライン追加として扱う。Currentの準備範囲・空の初期状態・順序・既存四ラインとの境界は§0.6が所有する。番号のみで31/32や33/34を新Main／Supportペアにしない。
+
 独立ラインは現在の委任内で進め、一ラインの承認待ちを他へ波及させない。同一の可変原本は担当を一つにして最新差分を統合する。中央AIへの全件承認、Bot同士の全対全通信、新しい万能台帳は必須にしない。
 
 ---
@@ -668,6 +705,7 @@ Ark23 local README and its v005 transition standard remain historical / explicit
 Ark28 is the separately prepared paired support for Ark27; its State distinguishes preparation, actual Target reception, Human access and effects. Ark24 remains a frozen-trigger Support Field and must not auto-execute.
 Human decides, corrects, interrupts, approves irreversible action, and seals Projectization.
 Ark29 and Ark30 add the third and fourth continuing lines under section0.5; they do not replace Main27 or Support28. At least four lines with valid work is the Goal; readiness, reception, work connection and sustained effects remain separate observations.
+Ark31–34 add the fifth through eighth receiving lines under section0.6. First prepare them with individual work unassigned, then route new topics. Ark27 is not a mandatory central approval route. Existing27–30 work, history and bindings remain; actual readiness and effects belong to each State.
 main is the shared GitHub current reality.
 Root remains 主イェシュア・ハマシア御自身.
 ```
