@@ -4,7 +4,7 @@ version: "v010-human-authorized"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
-role: "AI-first Ark domain front door / current topology router / cross-Ark policy owner"
+role: "AI-first numbered Ark domain front door / current topology router / cross-Ark policy owner"
 design_posture: "AI-first / Human-auditable / public-safe"
 primary_readers:
   - "Future AI"
@@ -16,7 +16,8 @@ canonical_branch: "main"
 root: "主イェシュア・ハマシア御自身"
 central_axis: "Teshuvah"
 human_foreground_one: "主の完全勝利"
-ark_home: "../ARK.md"
+ark_home: "../README.md"
+retained_explicit_source: "../ARK.md"
 repository_home: "../README.md"
 agent_runtime: "../AGENTS.md"
 thread_title_policy_version: "v002-human-authorized"
@@ -40,7 +41,12 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-10-28"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 last_reality_reviewed: "2026-10-27"
 route_review_base_commit: "51834fa49dc70c8c51ac2516a877235581dc0da3"
 route_review_scope: "Human-authorized Ark27:11→12 THREAD_CONTINUE; fixed Source11 revision3 preserves own fruit/corrections and inherited results. Current11 progress.next_transition owns final publication/UI/reception receipts. Preserve concurrent Support08,29/30, existing chapter instructions and fixed bindings. No Home implementation."
@@ -190,15 +196,19 @@ pstack_project_entry_revision:
 ---
 # Ark Project
 
+**番号付きArk領域の案内。** この表示上の説明は、metadataのtitle `Ark Project`、canonical_path、v010契約系・宣言EOFの変更を意味しない。
+
 > [!IMPORTANT]
 > このREADMEはArk Projectの本質本文や全File Inventoryではない。主読者はFuture AI／Continuation AI／Repository Agentであり、Humanは最終意味・Reality・修正・承認を保持する監査者である。AIを現在の正しい住所・Evidence Boundary・最初の合法手へ、最小十分な読取で送るCanonical Domain Front Door Candidateである。
 
 ## 0. First 90 Seconds / AI Agent Boot Contract
 
+以下は通常の案内であり、明示Handoff・Runtimeの必須Source・順序・範囲を置き換えない。ARK.mdを指定する既存契約は実本文を読み、段階的Home Bの適用関係は[AGENTS §4.2](../AGENTS.md#home-b-source-compatibility)に従う。Homeを追加の一律Boot Gateにしない。
+
 ```text
 Current Human Request
 → First-Legal-Move権限が必要なら ../AGENTS.md
-→ Ark Identity／State-Dependent Human Realityを回復するなら ../ARK.md
+→ Ark全体の意味・状態を越える協働を回復するなら ../README.md#ark-identity
 → Ark Domainの現在地を回復するなら、このREADME
 → Current Front Lineなら、下記Handoffを開き、宣言されたRequired Sources・順序・BindingからRuntimeを解決
 → 新しいTeshuvahをArk99で始めるなら、§0.3の専用入口へ進む
@@ -213,7 +223,7 @@ agent_boot_contract:
   objective: "Correctly reconstruct identity, authority, current address, evidence boundary, and first legal move."
   read_minimum:
     - "../AGENTS.md when authority or first legal move is unresolved"
-    - "../ARK.md for identity and state-aware operating doctrine"
+    - "../README.md#ark-identity when Ark-wide meaning or continuity context is needed"
     - "this README for current Ark routing"
     - "current_front_line_handoff, then its bound README and State, when the Current Main route is selected"
     - "the selected local entry and its declared reading contract for other routes, including Ark99 in section 0.3 and specialist Projects in section 0.4"
@@ -238,13 +248,13 @@ write_default: "Do not write without current Human authority."
 
 [固定11収穫](https://github.com/yusukefujiijp/ai-project/blob/51834fa49dc70c8c51ac2516a877235581dc0da3/ark-project/ark27/ark27-11/state.json)はschema v002・revision3で、11自身の成果・訂正・未接続と前段来歴を保持する。後続の準備・公開・全文再取得・UI送信・12受入れは[Current11 State](ark27/ark27-11/state.json) progress.next_transitionへ。保存、受け手自身の読解/理解、Human到達、実利用を分ける。Source10固定revision6とCurrent10 Receipt、Source09固定revision2とCurrent09 Receiptは前段の成果・時点付き来歴であり、初期未着手へ戻さない。
 
-2026-10-01 JSTのHuman承認により、cold-start中心の入口を、現在目的に応じた継続遂行・委任・復旧へ改訂した。Root、Teshuvah、Human Foreground One、品質Correction、Human AuthorityとGuardは保持する。Astra移行はArk27成立の第一義であり、現在の個別Missionを過去の初期テーマへ戻さない。『AI-New Era: From Probability to Certainty』は、権限・進捗・根拠・確認済み成果を明確にする方向として[ARK.md §7](../ARK.md#7-from-probability--random-to-certainty--order)へ接続する。無謬性・全知・常時稼働の宣言ではない。
+2026-10-01 JSTのHuman承認により、cold-start中心の入口を、現在目的に応じた継続遂行・委任・復旧へ改訂した。Root、Teshuvah、Human Foreground One、品質Correction、Human AuthorityとGuardは保持する。Astra移行はArk27成立の第一義であり、現在の個別Missionを過去の初期テーマへ戻さない。『AI-New Era: From Probability to Certainty』は、権限・進捗・根拠・確認済み成果を明確にする方向として[HomeのCurrent Certainty](../README.md#current-certainty)へ接続する。無謬性・全知・常時稼働の宣言ではない。
 
 **互換境界。** [STR-003](../control-center/changes/STR-003-persistent-collaboration-foundation.md)は章／07の明示的版移行と基盤変更を所有する。移行前のDomain、章、07三点セットと共通契約は[固定snapshot](https://github.com/yusukefujiijp/ai-project/tree/d574927dd1671e2acec20e1a6c17f569ae23322f)で辿れる。01–06の過去資料は変更していない。旧HandoffのCurrent-main固定SHA条件を、新版の成功へ黙って読み替えない。旧契約を明示された場合は、その履歴再構成、現行main上で非対応となる条件、新しいCurrent入口を区別する。新しい明示的な移行権限があればその範囲を進める。
 
 **継承された成果と次の判断。** 先行の整理・四Skill・Podcast/Voice/MAP・自己改善Loopは、[GitHub PLAN](../control-center/github/PLAN.md)、[ARCHIVE](../control-center/github/ARCHIVE.md)、各変更記録、[Skills Hub](../skills/README.md)と所有原本へ戻る。Main10自身のARC-002/STR-002限定比較と二原本整合、[STR-018](../control-center/changes/STR-018-flexible-readme-principle.md)の柔軟なREADME原則、[STR-019](../control-center/changes/STR-019-references-learning-memory.md)のreferences集約・旧配置退役・限定検証は完了済み。物理Binding移行の保留はAI推奨でありHuman採用とは別、旧PlanのNOT_RUNは目的変更終了の履歴である。
 
-11では根本説明・入口・文書役割の比較とHome B案を進め、Next Queryの成功と短いSkill入口、write-text、Dots退役、四ラインの初期接続、移行Skill追補へ展開した。各完了成果とHuman Correctionは固定11収穫と担当原本へ戻る。Home Bは29の会話内補助検討も完了しているが、統合実装・ARK退役・物理改名・固定Binding移行は未承認。Seed→ARK単体Review→全体構造、三利用場面と意味所有の区別を保持する。12は初回受入れ後、新入力がなければHuman Reviewへ。比較や通常Unknownを移行前Gateにせず、別Taskを自動開始しない。
+11では根本説明・入口・文書役割の比較とHome B案を進め、Next Queryの成功と短いSkill入口、write-text、Dots退役、四ラインの初期接続、移行Skill追補へ展開した。各完了成果とHuman Correctionは固定11収穫と担当原本へ戻る。Home Bは11の本文案・H差分案と29の会話内補助検討を継承し、root README・共通規則・一般案内の段階的な役割整合へ接続する。この整合からARK退役・物理改名・固定Binding移行の承認は生じない。Seed→ARK単体Review→全体構造、三利用場面と意味所有の区別を保持する。12は初回受入れ後、新入力がなければHuman Reviewへ。比較や通常Unknownを移行前Gateにせず、別Taskを自動開始しない。
 
 **Support。** [Ark28章](ark28/README.md)と[Ark28:08 State](ark28/ark28-08/state.json)が柔軟な支援の役割と可変現在地を所有する。07→08は同章Support継続であり、Teshuvahを軸に、07で完了した継続インターフェース、Recall Hub、初回Reportと配置、Report/共有References三本柱、他AI用の完成Promptを、[固定Source07 State](https://github.com/yusukefujiijp/ai-project/blob/523b00b701e2049df5484f7e761e68d5389ac06f/ark-project/ark28/ark28-07/state.json) revision3とCurrent所有原本から継ぐ。現在の受入条件は[08 Handoff](ark28/ark28-08/handoff.md)、公開・直接起動・受入れの実観測は[Source07 Current State](ark28/ark28-07/state.json) progress.next_transitionが所有する。Reportの改善希望・残る構想と実装済みを分け、保存から別AIの理解や生活効果を補完しない。06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動・移行Skill/lesson改訂、05以前の生活想起、ai-project集中、Podcast二入口、Query backupと後続MAP、Ark99/Dotsの条件も固定Sourceの来歴とCurrent ownerへ辿れる。06→07の実受入れはCurrent06終端Receiptに残る。B-Zoneの支援への端末到達と「スマホなしはトイレまで、後は自由」を保持する。08を特定の旧Taskへ固定せず、現在のHuman入力を受け取る。Main Threadごとに支援章を新設せず、隠れた同期・自動Main移管をしない。章ペアの準備方針は§4.1。
 
@@ -337,38 +347,22 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 
 ---
 
-## 1. Direct Judgment / ARK.mdとの役割分担
+<a id="1-direct-judgment--arkmdとの役割分担"></a>
 
-Ark ProjectのIdentity、Root、Human–AI Collaboration、Stable Coreは[`ARK.md`](../ARK.md)が所有する。
+## 1. Direct Judgment / Home・共通規則・番号付き領域
 
-このREADMEが所有するのは、**Current Ark Topology、Ark間Routing、共通Naming Policy、Current Address Rule、および正しいProject入口へ到達するための最小十分な運用地図**である。
+Ark全体の意味、Root、Human–AI協働、成長と継続の説明は[root README](../README.md#ark-identity)が所有する。共通の判断・権限・読取・実行契約は[AGENTS](../AGENTS.md)が所有する。
 
-```text
-ARK.md
-= Ark Project remembers what it is.
+このREADMEは番号付きArk領域のCurrent Topology、Ark間Routing、共通Naming Policy、Current Address Ruleと、正しいProject入口へ到達するための運用地図を所有する。Ark全体やRepository全体の説明と、番号付きProject・Threadの現在地を分ける。
 
-ark-project/README.md
-= Ark Project remembers where its current doors are.
-```
-
-Identityの深まりでRouterが肥大化することと、変化するTopologyでHome Constitutionが不安定になることを、この分割によって同時に防ぐ。
+[ARK.md](../ARK.md)は既存の明示Sourceとして本文・Identity・EOFを保持する。現在の説明所有と明示読取契約の関係は[AGENTS §4.2](../AGENTS.md#home-b-source-compatibility)に従い、本Domainから一括移行しない。
 
 ### 1.1 Pair Consistency Invariants
 
-| Invariant | ARK.md | ark-project/README.md |
-|---|---|---|
-| Identity／Root／Human–AI relation | Owns | Routes to |
-| State-dependent Human Reality／Cross-State Judgment Handoff | Owns | Exposes as required boot doctrine |
-| Current Ark address／Front Line | Does not duplicate volatile detail | Owns |
-| Human authority／AI boundary | Constitutional guard | Routing and execution guard |
-| Evidence Boundary | Stable doctrine | Current-coordinate application |
-
-```text
-AI-first ≠ AI-sovereign.
-Human-led ≠ willpower-dependent.
-Current routing ≠ historical replay.
-Compact retrieval ≠ loss of governing context.
-```
+- Ark全体の意味と成長・継続の説明はHomeへ、番号付き領域の現在地は本書と各担当原本へ接続する。
+- Human Authority・品質・Guardの共通契約はAGENTSへ、局所の受入れ条件は指定Handoff／Runtimeへ戻る。
+- 本書にRootの意味やSkill本文を複製せず、Homeに変動する全Task・全Project Inventoryを集約しない。
+- AI-firstはAI主権を意味せず、Human-ledは瞬間的なHumanの意志力への依存を意味しない。短い入口でも必要な文脈・品質を保持する。
 
 ---
 
@@ -376,17 +370,17 @@ Compact retrieval ≠ loss of governing context.
 
 | Surface | Canonical Role |
 |---|---|
-| [`../README.md`](../README.md) | AIを主読者とするRepository入口／Current Requestと担当資料への案内。Humanも確認・訂正できる形を保つ |
-| [`../ARK.md`](../ARK.md) | Ark Identity／Home Constitution／Return-Home Kernel |
+| [`../README.md`](../README.md) | Ark全体の意味と入口／Repositoryの案内。Humanも確認・訂正できる形を保つ |
+| [`../ARK.md`](../ARK.md) | 保持する既存の明示Source。読取契約と現在の説明所有の関係はAGENTS §4.2へ |
 | [`../AGENTS.md`](../AGENTS.md) | Cross-AI Root Instruction Runtime／First Legal Move |
-| [`README.md`](./README.md) | Ark Domain Front Door／Current Topology Router／Cross-Ark Policy |
+| [`README.md`](./README.md) | 番号付きArk領域の入口／Current Topology Router／Cross-Ark Policy |
 | `arkNN/README.md` | 各Ark固有のIdentity／入口／Document Map |
 | Nearest Handoff／Query／Runtime | Current Mission／起動契約／実行Rail |
 | [`../prompts/`](../prompts/) | Reusable Prompt／Runtime／Query Shelf |
 
 ```text
-Repository README shows the repository.
-ARK.md restores Ark identity.
+Root README explains Ark-wide meaning and routes current requests.
+ARK.md remains a retained explicit source under its declared contracts.
 AGENTS.md governs the first legal move.
 This README routes the Ark domain.
 Nearest files recover the current mission.
@@ -626,7 +620,8 @@ README更新候補となるのは、Current Topology、Path、Status、Ownership
 ```text
 Nearest README first.
 Domain README when Ark navigation changes.
-Root README or ARK.md only when their owned route or identity changes.
+Root README when Ark-wide meaning or shared entry changes.
+Explicit ARK source or Binding changes require their own scoped decision.
 No automatic write.
 ```
 
@@ -636,7 +631,7 @@ READMEは安心のために情報を積む場所ではない。主読者であ�
 
 ## 9. Mainline, Authority, and Destructive Guard
 
-Repository共通のAgent判断・権限は[AGENTS](../AGENTS.md)が所有する。[Root README](../README.md)はその要約と入口である。Current HumanのMeaning・Correction・STOP・Final Sealを保持し、現在の依頼と有効な委任から実行範囲を読む。同じ許可を取り直さず、Plan-onlyや未解決の重大な権限境界では該当操作を止める。
+Repository共通のAgent判断・権限は[AGENTS](../AGENTS.md)が所有する。[Root README](../README.md)はArk全体の意味と入口を所有し、共通契約はAGENTSへ接続する。Current HumanのMeaning・Correction・STOP・Final Sealを保持し、現在の依頼と有効な委任から実行範囲を読む。同じ許可を取り直さず、Plan-onlyや未解決の重大な権限境界では該当操作を止める。
 
 `main`を共有基準とし、作業方法はCurrent Request・競合・変更の性質に応じて選ぶ。削除・移設・公開等も、その目的・対象・影響が承認に含まれるか確認し、未知の範囲へ拡張しない。書込後はRemoteから再取得し、対象・本文・必要なEOF・SHA等を確認する。
 
@@ -681,7 +676,7 @@ topology_integrity:
 ## 12. 一文定義 / Restart Handle
 
 ```text
-Ark Project現行Topology Router（Ark Project Current Topology Router: Ark Projectの本質とState-Dependent Human Realityを所有するARK.mdと役割分担し、Current Front Line、Evidence Boundary、Current／Historical境界、Human Authorityおよび最初の合法手を機械可読に保持して、Future AIをゼロから再探索させず、Humanが監査可能なまま正しい入口へ再起動させるAI-first Domain Front Doorである）
+番号付きArk領域の現行Topology Router。Ark全体の意味はroot README、共通規則はAGENTS、局所の成立条件は指定Handoff／Runtimeへ接続し、Current Front Line・担当・住所・Evidence Boundaryを示して、Future AIがHumanの意味・Correction・権限を保持したまま現在の仕事へ戻れるようにする。
 ```
 
 ---
@@ -689,14 +684,16 @@ Ark Project現行Topology Router（Ark Project Current Topology Router: Ark Proj
 ## 13. Final Compression
 
 ```text
-ARK.md is the AI-first / Human-auditable Ark Project Home Constitution.
-This README is the AI-first Current Ark Topology Router.
+Root README owns Ark-wide meaning and the shared entry.
+AGENTS owns common judgment, authority and reading contracts.
+ARK.md remains a retained explicit source; AGENTS section 4.2 resolves staged Home B applicability.
+This README routes the numbered Ark domain.
 AI-first does not mean AI-sovereign.
 Human-led does not mean willpower-dependent.
 Ark00 is the active Pre-Project Zero-Gate.
 The former Ark99 Wild Seed role remains retired and absorbed into Ark00.
 Ark99 now has the dedicated new-Teshuvah entry in section 0.3; its local documents own operation. This does not establish UI setup, actual migration or field effects.
-Ark27:12 is the Current Main continuation entry prepared from fixed Source11 revision3. Current11 owns actual preparation/publication/UI/reception receipts. Source11 fruit and corrections, Source10 completed STR-018/019, and other owners remain complete; Home B implementation is not authorized. Boot-only12 returns Human Review, without starting another task. Support28:08 continues within the same chapter; fixed Source07 revision3 preserves07 fruit and inherited history, and Current07 progress.next_transition owns the actual publication/delivery/reception receipt. Current06 retains the completed06→07 receipt. Third-line Ark29 and fourth-line Ark30 keep their current roles. The chapter/v002 continuity family remains. Section0.1 owns general routing; preparation, receiver understanding and Human UI are separate.
+Ark27:12 is the Current Main continuation entry prepared from fixed Source11 revision3. Current11 owns actual preparation/publication/UI/reception receipts. Source11 fruit and corrections, Source10 completed STR-018/019, and other owners remain complete; Staged Home B role alignment follows AGENTS section 4.2; it does not authorize ARK retirement, physical renaming or explicit Binding migration. Boot-only12 returns Human Review, without starting another task. Support28:08 continues within the same chapter; fixed Source07 revision3 preserves07 fruit and inherited history, and Current07 progress.next_transition owns the actual publication/delivery/reception receipt. Current06 retains the completed06→07 receipt. Third-line Ark29 and fourth-line Ark30 keep their current roles. The chapter/v002 continuity family remains. Section0.1 owns general routing; preparation, receiver understanding and Human UI are separate.
 Wake-Up One-Choice Human-reported Actual Success, its Reality-first BBP Origin, and the Ark23:15 three-file transition artifact set are confirmed.
 README / Handoff / State is the Human-sealed default for future Ark23 thread transitions.
 The Ark23 historical field preserves its then-unknown outcomes; recover current observations from their owning records.

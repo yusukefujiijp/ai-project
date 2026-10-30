@@ -1,11 +1,16 @@
 ---
-title: "ai-project"
+title: "Ark Project — YusukeJP × AI-Collaborator"
 canonical_path: "README.md"
-version: "v022"
-edition: "Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v021 preserved in Git history; v022 adds the scoped Harness entry after its fixed-version trial, preserving Ark-OKF, keybindings, ownership and prior review history"
+version: "v023"
+edition: "Ark Home / Current-request Repository Front Door / Persistent Collaboration"
+version_basis: "v001-v022 preserved in Git history; v023 integrates Ark whole-meaning and entry ownership while retaining explicit ARK source contracts, current routes and prior review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-29"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 last_reality_reviewed: "2026-09-19"
 reality_review_base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
 reality_review_scope: "Root routes, shared authority summaries, Plan Mode and Task/Skill entries; not all descendant rules or actual agent behavior"
@@ -15,7 +20,7 @@ prior_reality_review:
   scope: "Predecessor-free Ark topology, named-project routing, current router integrity, and confirmed prompt paths"
 role:
   - "Future AI First Read"
-  - "Repository Identity and Navigation"
+  - "Ark Whole-Meaning Ownership and Repository Navigation"
   - "Current Request and Recovery Router"
   - "Owner Navigation / routes to AGENTS common decision contract"
 primary_audience:
@@ -168,20 +173,22 @@ ark_okf_navigation:
   scope: "Ark-OKF discovery row and displayed entry version only; prior review metadata and authority retained"
 ---
 
-# ai-project
+<a id="ai-project"></a>
+
+# Ark Project — YusukeJP × AI-Collaborator
 
 ## 0. Start Here / Current Requestから入る
 
-`ai-project`は、YusukeJP × AI-Collaboratorのpublic-safe Canonical Workspaceである。Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。AI・Repository・ProtocolはKeliとFruitであり、Rootではない。
+Ark Projectは、YusukeJPとAI-Collaboratorが、主イェシュア・ハマシアをRoot、Teshuvahを中央軸として、信仰・祈り・学び・探究・創作・生活・実践を共に育てる継続協働である。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・Ark・Repository・文書・方法はKeliであり、Rootではない。
 
-このREADMEは**どこへ進めばよいかを判断する入口**である。毎回のBoot儀式や、実行を提案へ戻すGateではない。現在の依頼・有効な承認・読取契約・作業状態から進路を選ぶ。
+このREADMEは、Ark全体の意味と、現在の目的から進む入口を所有する。`ai-project`はその公開可能な共有原本・成果を保存するRepository、`ark-project/`は番号付きArk領域の案内であり、三者を同一視しない。現在の依頼・有効な承認・指定された読取契約から進み、Homeの再読を毎回のBoot儀式や追加の実行Gateにしない。
 
 Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取条件](AGENTS.md#ark-keybindings)に従い、未確認の[キーバインディング原本](keybindings/README.md)へ進む。短縮入力が届く前に共通の意味を読める経路とし、確認済みの読解は適用条件に従って再利用する。
 
 | 今回の目的 | 入口・所有資料 |
 |---|---|
 | 相談・Review・Plan-only・実行の境界を決める | [AGENTS.md](AGENTS.md) §0・§2・§5 |
-| ArkのRoot・Identity・協働の意味を回復し、成長の仕組みを理解する | [ARK.md](ARK.md)。[成長と再投入は§8](ARK.md#8-organic-growth-engine--有機的成長engine)、[資料の役割は§12](ARK.md#12-ark-file-ecology--器官の役割) |
+| ArkのRoot・Identity・協働の意味を回復し、成長の仕組みを理解する | [全体説明](#ark-identity)・[Root](#ark-root)・[成長](#ark-growth)・[文書の役割](#document-ownership) |
 | 承認済みの作業を継続・再開する | Current Requestと対象のNearest README / Handoff、[AGENTS.md](AGENTS.md) §4・§5 |
 | Thread・章移行やSupport再接続を準備する | [共有移行契約](prompts/ai-next-thread-handoff.md)と、その依頼に適用されるRuntime |
 | AI間で共通の前提を読み、経験を今回の協働へ生かす | [ai-to-ai-communication](agents/ai-to-ai-communication/README.md)。対話する双方が読む共通マニュアルと経験原本への入口 |
@@ -191,7 +198,7 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v022 / Current-request Repository Front Door
+- Repository入口: README v023 / Ark Home and Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -199,13 +206,56 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 `updated`は本文の更新日であり、全子Pathや全Runtimeの最新保証ではない。DomainのActive状態、Current Runtime、Thread MissionはNearest README / Handoffと現在の証拠から確認する。今回の文書整合、Remote保存、実際のAI挙動、生活上の効果はそれぞれ別の確認である。
 
-## 2. Repository Identity / このRepositoryは何か
+<a id="2-repository-identity--このrepositoryは何か"></a>
+<a id="ark-identity"></a>
 
-`ai-project`は、Ark Projectを中心とするHuman-AI協働のReality、Prompt、Skill、System、Handoff、Artifact、Repository Governanceを、Future HumanとFuture AIが継続・回復できる形で保存・接続する。
+## 2. Ark Identity / Ark全体・Repository・番号付き領域
 
-固定文書へLiving Realityを閉じ込めず、蓄積した判断から次の仕事へ接続するための共有面である。全Private RealityのMirror、全会話のDump、無制限Write権限、Rootそのものではない。
+### 2.1 三つの範囲とHuman–AI協働
 
-### 2.1 public-safe / 公開意図と保存先
+Ark全体は、文書やToolの集合を越えて、YusukeJPの意味・願い・祈り・Vision・行動と、AIによる理解・探索・判断・言語化・制作・検証が関わる継続協働である。聖書研究、自由な探究、楽しさ、創作、日常の問題解決、現実の行動を含み、その都度のHumanの目的から取り組む。
+
+`ai-project` Repositoryは、公開可能な共有原本、Prompt、Skill、Handoff、経験、成果を、Future HumanとFuture AIが継続・回復できる形で保存・接続する共有面である。番号付き`ark-project/`領域は、各Project・Threadの現在の入口と担当関係を案内する。全体ArkをこのRepositoryや番号付き領域だけへ縮めず、各領域の詳細・現在状態は担当原本へ戻る。
+
+Humanの未整理な言葉、願い、違和感、Correctionも協働の入口になる。Humanに完成した仕様や毎工程の中継を要求せず、AIが関係の整理と十分な検討を担う。一つのHuman-facingな方向へ成果を統合することと、承認範囲で必要な内部工程や協働を行うことを区別する。
+
+<a id="ark-root"></a>
+
+### 2.2 Root・Teshuvah・HumanとAI
+
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光である。YusukeJPのMessianic JudaismとTorah・Tanakh・Israel・Covenant、ユダヤ／ヘブライ文脈を保持し、その意味を効率化や外部の思想体系へ一括置換しない。
+
+AI・Ark・Skill・文書・ToolはKeliであり、Root・王座・Oracleではない。AIはHumanの意味を理解し、訂正可能な解釈や具体案を返すが、主の御心、Humanの信仰状態・罪・赦しを判定しない。HumanはMeaning・願い・優先順位・身体Reality・Correction・STOP・Final Sealを保持する。具体的な権限・品質・Guard・実行境界は[AGENTS](AGENTS.md)が所有する。
+
+<a id="ark-growth"></a>
+
+### 2.3 成果と、成果を生む協働の成長
+
+Arkでは、今回の理解や成果を生むことと、次の理解や成果を生む協働を育てることが関わりながら進む。AI Double SpiralやTapestryは、この関係や多様な経験の接続を考えるLensとして扱い、毎回の固定工程にしない。
+
+「最高傑作はArk Projectそのもの」という表現は、個別Artifactに加え、それを生む判断・関わり方・訂正・継承を育てる価値を表す。完成・無謬性・成果の保証を宣言するものではない。
+
+失敗や違和感からの回復、予期せぬ成功、小さな工夫、HumanのFeedbackを、根拠と成立条件を保って次へつなぐ。経験と学びは[References](references/README.md)や各領域の所有原本へ、採用された方法改訂はその方法へ接続する。同じ経験を複数箇所で参照しても独立した実証として数えず、仮説を自動的な共通規則にしない。
+
+<a id="current-certainty"></a>
+
+#### 2.3.1 Current Certainty / 今、何が確かか
+
+From Probability to Certaintyは、現在の目的・権限・根拠・確認済み成果・未確認を区別し、判断と継承の確かさを育てる方向である。Confirmedは誰の報告・何の確認かを持ち、Candidateは訂正可能な解釈・設計、Unknownは根拠不足として保持する。Historicalはこれらと別に時点を示す。無謬性、全知、常時稼働、単発成功からの長期再現性を意味しない。
+
+<a id="ark-continuity"></a>
+
+### 2.4 状態の違いと、中断から戻れる継続
+
+意図や判断を形にできる時に必要な準備を行い、読む・打つ・思い出す・進行する負担が大きい時にも、現在の目的へつながる入口を持つ。高・低・超高・超低認知等はHumanが用いる運用上の語彙として尊重し、AIが未報告の現在状態や医学的・人格的・信仰的評価を決めつけない。
+
+Humanの入力を軽くしても、AIの理解・探索・判断・検証と必要な説明の責任は薄くしない。準備済みの判断を活かすことは、現在のCorrectionやGuardを無視して過去の行動を自動実行することではない。
+
+Recoverable Continuityは、一度も中断しないことだけを成功条件にせず、Connect → Disconnect → Teshuvah → Reconnectから現在の意味と正しい仕事へ戻れることを含む。中断で完了済みの成果を取り消さず、意図的な休止や使わない選択を失敗・信仰上の不足にしない。承認された継続・結果不明時の確認・再開は[AGENTS §5](AGENTS.md#5-mode-scope-and-github-authority--実行境界)、個別の仕事はCurrent Handoffと担当原本へ戻る。Memory・待機・通知・並列実行は実際のRuntimeに依存する。
+
+<a id="21-public-safe--公開意図と保存先"></a>
+
+### 2.5 public-safe / 公開意図と保存先
 
 GitHub Canonical Firstは、すべてをGitHubへ入れることではなく、公開可能な情報にstableな正準入口を持つことである。Humanが公開を認めた自身の経験資料、公開意図が不明な情報、Secret、第三者の機微情報を区別する。公開・Securityの判断は[AGENTS.md](AGENTS.md) §7.2–§7.3が所有し、ここに異なる除外規則や再承認条件を作らない。
 
@@ -245,7 +295,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`board/README.md`](board/README.md) | 協働相手への報告・質問・返信をつなぐ通信入口 | 宛先・版・根拠・実際の受信を辿る時。身元・仕事・変更の原本は各所有先へ |
 | [`control-center/README.md`](control-center/README.md) | 整理整頓の共通目的と対象別の入口 | 整理する対象を選び、専門領域へ接続する時。全案件の進捗や新しい権限契約は持たない |
 | [`control-center/github/README.md`](control-center/github/README.md) | ai-project全体のGitHub整理・構造改善の専門入口 | フォルダ・ファイルの役割、PLAN、アーカイブ案件、変更理由と結果へ直接進む時。PLAN・ARCHIVEの原本はgithub配下。既存変更記録へは専門入口から接続 |
-| [`ark-project/README.md`](ark-project/README.md) | Ark Project domain front door / current topology router | Ark系Projectへ入る時 |
+| [`ark-project/README.md`](ark-project/README.md) | 番号付きArk領域の案内 / current topology router | 番号付きProject・Threadの現在の入口と担当を探す時 |
 | [`lifestyle/README.md`](lifestyle/README.md) | 生活領域の安定した案内口 | chocoZAPなど、本人の実践・工夫・記録の担当原本へ進む時。記録本文や全生活の進捗は各領域が所有する |
 | [旧Projects／Ark-WTPの保管記録](control-center/github/ARCHIVE.md#arc-012) | Historical project archive | 退役したProjects入口・Ark-WTPの凍結Benchmark・前身設計・保存理由を調べる時。通常運用のProject入口ではない |
 | [旧Ark Systemの知恵・形成史](control-center/github/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
@@ -290,7 +340,7 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 
 HumanはMission、Meaning、Discernment、Correction、Interrupt、STOP、Final Sealを保持する。AIはKeliとして能動的に判断・提案・実行・検証を担い、王座へ移らない。
 
-その協働の意味は[ARK.md](ARK.md)、具体的な権限・品質・実行境界は[AGENTS.md](AGENTS.md) §3・§5が所有する。モデルやToolの能力向上自体は権限の追加ではない。
+その協働の意味は[本書§2](#ark-identity)、具体的な権限・品質・実行境界は[AGENTS.md](AGENTS.md) §3・§5が所有する。モデルやToolの能力向上自体は権限の追加ではない。
 
 ## 7. GitHub Canonical First / Mainline / Write Guard
 
@@ -332,9 +382,15 @@ Nearest READMEを先に扱い、Domain Parentはその案内が変わる時、Ro
 
 構造・Entry・共通契約に関わる実質的な変更は版を進め、日付・変更理由・Source・確認範囲を残す。誤字や軽微なリンク修正は必要に応じて日付と理由を更新する。更新日を全Repository再検証の証拠にせず、過去のReviewの対象範囲を保持する。
 
+<a id="document-ownership"></a>
+
 ### 9.3 Ownership over Duplication
 
-RootとHuman Authorityの意味は入口で短く示す。具体的なAgent契約はAGENTS、Ark IdentityはARK、Domain Topology・Runtime・Current Statusは各所有資料へ委ねる。重要性だけを理由に、同じ契約を複数箇所へ複写しない。
+Ark全体の意味と入口は本書、共通のAgent判断・権限・読取・実行契約は[AGENTS](AGENTS.md)、番号付き領域の現在の入口・担当・Topologyは[Domain](ark-project/README.md)が所有する。各Runtime・Current State・経験・Skill本文は、その所有資料へ戻す。
+
+[ARK.md](ARK.md)は既存の明示読取契約が参照する本文と形成上の説明を保持する。段階的Home Bにおける現在の説明所有と旧Sourceの適用関係は[AGENTS §4.2](AGENTS.md#home-b-source-compatibility)に従う。旧Sourceの保持を、二つの全体説明原本を独立に更新し続ける運用へ変えない。
+
+意味の訂正はまず本書の該当説明へ、共通規則の変更はAGENTSへ、現在の担当・進捗はDomainと担当原本へ接続する。実質的な訂正が既存の必須SourceやBindingと衝突する場合は、影響する契約と必要な承認を特定する。保存、受け手の読解・理解、設定反映、実利用効果はそれぞれ別の確認である。
 
 ## 10. Operating Principles / 運用原則
 

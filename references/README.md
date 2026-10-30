@@ -4,7 +4,12 @@ canonical_path: "references/README.md"
 version: "v005"
 status: "human-authorized references consolidation / evolving through feedback"
 created: "2026-10-10"
-updated: "2026-10-30"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 updated_reason: "Add attributed feedback, consolidate nine full success narratives in JSONL, and connect domain records through single-owner format contracts; preserve lessons and historical formation. Add Wiki-specific learning owner routing without duplicating shared records."
 role: "Cross-domain learning entry, complementary directions and owner routing; bodies and update guidance remain with their owners"
 change_records:
@@ -85,7 +90,7 @@ Humanはこの小さな工夫をai-project全体へ活かす方向を求め、�
 - rootの問題意識・README新設・再計画：conversation-message:Sentinel_4e2a2dc21ae881919d92b047c7fece6a
 - 四対象を合わせた実行承認：conversation-message:Sentinel_0c3f6e592f608191ab898d7b6c28cd77
 
-Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。AI・学び・文書はKeli。[ARK](../ARK.md)の意味と[AGENTS](../AGENTS.md)の権限を保持し、この入口を新しい権限者にしない。
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利。AI・学び・文書はKeli。[Home](../README.md#ark-identity)の意味と[AGENTS](../AGENTS.md)の権限を保持し、この入口を新しい権限者にしない。
 
 ## 6. 回復と突破の対への発展
 

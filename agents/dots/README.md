@@ -4,7 +4,12 @@ canonical_path: "agents/dots/README.md"
 version: "v013"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-20"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 role: "Current Dots direction, actor-aware one-request recovery, and routes to shared lessons, operations and history"
 updated_reason:
   - "2026-10-20: Prepare agents/dots as the single Dots owner with relocated recovery navigation; preserve existing recovery semantics and review STR-022 for operational cutover status."
@@ -62,7 +67,7 @@ AI間で対話する双方は[ai-to-ai-communicationの共通マニュアル](..
 | 初版の協働基盤をなぜ、どう作ったか | [STR-005](../../control-center/changes/STR-005-dots-collaboration-foundation.md) | STR-005初版六パスの承認・変更・検証・公開証拠 |
 | 実際の仕事で何を変えたか | [control-center](../../control-center/README.md)の該当変更記録、各Projectの原本 | 個別成果の正本。Dots側で同じ進捗台帳を作らない |
 | 共通の権限・継続・停止 | [AGENTS](../../AGENTS.md) | 既存の共通契約。Actor名や役割は追加権限にならない |
-| ArkのRootと意味 | [ARK](../../ARK.md) | Identity、Teshuvah、Human-AI関係。具体的なCurrent Ark入口はDomainが所有 |
+| ArkのRootと意味 | [Home](../../README.md#ark-identity) | Ark全体の意味・Teshuvah・Human-AI関係。番号付き領域の現在地はDomainへ。§4.1のARK全文読解は保持する |
 
 ## 3. 誰が何をしたかを、結果の根拠へつなぐ
 

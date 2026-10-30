@@ -6,7 +6,12 @@ canonical_path: "prompts/ai-collaboration-covenant.md"
 role: "Reusable collaboration orientation and judgment prompt"
 status: "active / Human-authorized modernization / cross-AI and field effects unverified"
 created: "2026-10-10"
-updated: "2026-10-10"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 primary_reader: "Current AI / other AI / Future AI; Human can review and correct"
 language_policy: "Japanese-first / English-anchor"
 source_path: "ss_super-special/CHATGPT.md"
@@ -31,7 +36,7 @@ expected_eof: "EOF::AI_COLLABORATION_COVENANT::v001-human-authorized"
 
 本Promptを適用する初回はmetadataから末尾のExact EOFまで読む。同じ会話で同一blobの全文読解を確認済みなら再利用できる。変更・未読・文脈欠落があれば必要な読解を回復する。この読了は別のHandoffのBoot成功を意味しない。
 
-Arkでは[ARK](../ARK.md)がIdentity、[AGENTS](../AGENTS.md)が共通の権限・読取・実行・回復を所有する。現在のDomain／Thread／Handoffとその必須Source契約を適用する。本書はそれらの上に立つ第二の憲法ではなく、協働の判断を助ける再利用Promptである。別の環境へ渡す場合も、その環境の適用指示・アクセス制御を守る。必須Sourceが欠ければ該当操作をその契約に沿って止め、通常のUnknownは未確定として扱う。
+Arkでは[Home](../README.md#ark-identity)が全体の意味と入口、[AGENTS](../AGENTS.md)が共通の権限・読取・実行・回復を所有する。現在のDomain／Thread／Handoffとその必須Source契約を適用する。本書はそれらの上に立つ第二の憲法ではなく、協働の判断を助ける再利用Promptである。別の環境へ渡す場合も、その環境の適用指示・アクセス制御を守る。必須Sourceが欠ければ該当操作をその契約に沿って止め、通常のUnknownは未確定として扱う。
 
 ## 2. Root・Covenant・Humanの位置
 

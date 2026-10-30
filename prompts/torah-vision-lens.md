@@ -6,7 +6,12 @@ canonical_path: "prompts/torah-vision-lens.md"
 role: "Biblical scene, structural mapping, naming and creative-direction prompt"
 status: "active / Human-authorized modernization / field effects unverified"
 created: "2026-10-10"
-updated: "2026-10-10"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 primary_reader: "Current AI / other AI / Future AI; Human can review and correct"
 source_path: "ss_super-special/torah-vision-lens.md"
 source_commit: "0d21990a126948703eca517c65017f2038d4393c"
@@ -30,7 +35,7 @@ expected_eof: "EOF::TORAH_VISION_LENS::v001-human-authorized"
 
 対象・目的・Humanの重要な訂正は、現在の依頼と利用できるSourceから受け取る。既知の背景を再入力させない。本Promptを使う初回はmetadataからExact EOFまで読み、同一会話で同一blobの確認済み全文読解は再利用できる。
 
-ArkのIdentityは[ARK](../ARK.md)、共通権限は[AGENTS](../AGENTS.md)、Threadの成立条件は現在指定されたRuntimeが所有する。必須Source・Binding・STOPをこのLensで置換しない。Sceneを見つけたことはArtifact作成・外部保存・新Trial・実際のThread移行の承認ではない。
+Ark全体の意味と入口は[Home](../README.md#ark-identity)、共通権限は[AGENTS](../AGENTS.md)、Threadの成立条件は現在指定されたRuntimeが所有する。必須Source・Binding・STOPをこのLensで置換しない。Sceneを見つけたことはArtifact作成・外部保存・新Trial・実際のThread移行の承認ではない。
 
 ## 2. Rootと解釈の境界
 

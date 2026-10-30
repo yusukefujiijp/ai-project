@@ -2,14 +2,19 @@
 title: Ark Harness — Repository Review
 version: 0.1.0
 status: initial-implementation
-updated: 2026-10-29
+updated: 2026-10-31
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 ---
 
 # Ark Harness
 
 依頼、固定した原本、読解範囲、検証、成果物を一件の仕事として接続する実行補助。初版は **ChatGPT Work + GitHub読取Connector + Python 3.12以降のPOSIX環境**を対象にする。レビュー方法の原本は[Repository Review Prompt](../repository-reviews/review-prompt.md)。Harnessはその方法を複製・移動せず、実行時に固定commitから取得する。
 
-Root・Human Authority・共通指示は既存の[ARK.md](../ARK.md)・[AGENTS.md](../AGENTS.md)が所有する。初版の導入理由・観測結果・未確認事項は[STR-024](../control-center/changes/STR-024-harness-repository-review.md)を参照する。
+RootとHuman–AI協働の意味は[Home](../README.md#ark-identity)、共通の権限・読取・実行契約は[AGENTS.md](../AGENTS.md)が所有する。初版の導入理由・観測結果・未確認事項は[STR-024](../control-center/changes/STR-024-harness-repository-review.md)を参照する。
 
 ## 配置と所有
 

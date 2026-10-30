@@ -1,11 +1,16 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.13-candidate"
+version: "v004.14-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-29"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 navigation_patch:
   date: "2026-09-19"
   base_commit: "b727fcd96cd8c4a0e7cb617dba462d44593230e0"
@@ -190,13 +195,14 @@ Ark協働を開始・文脈復元する時は、[共通キーバインディン�
 
 ## 1. Role Map / 文書の身分を混ぜない
 
-- [README.md](README.md): AIを主読者とするRepository入口／Current Requestと担当資料への案内。Humanも確認・訂正できる形を保つ。局所READMEはDomain入口やRuntimeも担うため、本文の宣言を確認する。
-- [ARK.md](ARK.md): Ark Project Home Constitution / Identity and Return-Home Kernel。
+- [README.md](README.md): Ark全体の意味と入口、Repositoryの案内を所有する。AIを主読者とし、Humanが理解・訂正できる形を保つ。局所READMEはDomain入口やRuntimeも担うため、その宣言を確認する。
+- [ARK.md](ARK.md): 既存の明示Sourceとして本文・Identity・EOFを保持する。現在の説明所有と旧Sourceの適用関係は[§4.2](#home-b-source-compatibility)へ。
 - [AGENTS.md](AGENTS.md): Repository共通のAgent判断・権限・読取・実行契約。
 - [keybindings/README.md](keybindings/README.md): Ark共通の短縮入力の意味・対象・Mode継承・不足時の扱い。各Threadの具体的な対象Queryや作業状態は、そのThreadと担当記録が所有する。
+- [ark-project/README.md](ark-project/README.md): 番号付きArk領域の現在の入口・担当・Topologyを所有する。Ark全体やRepository全体と同一視しない。
 - Nearest README / Handoff / Manifest: Current Domain、Thread Identity、Mission、Binding、Required Read。
 - Applicable Project INSTRUCTIONS.md: Project固有の協働・表示・運用指示。適用範囲を確認して読む。
-- [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md): 再利用する協働姿勢・判断のPrompt。IdentityはARK、共通権限は本書が所有する。
+- [AI Collaboration Covenant](prompts/ai-collaboration-covenant.md): 再利用する協働姿勢・判断のPrompt。Ark全体の意味はroot README、共通権限は本書が所有する。
 - [skills/README.md](skills/README.md): Shared Skill Source / Distribution Hub。
 - [prompts/](prompts/): 用途に応じて選ぶ、起動・入力・本文をまとめた再利用Promptの棚。
 - [task-mode-system/experience/README.md](task-mode-system/experience/README.md): Task経験原本・Human Correctionへの入口。全領域の学習台帳ではない。
@@ -261,13 +267,13 @@ AI・Ark Project・文書・Graph・SkillはKeliであり、Root・King・Throne
 
 ## 4. Read Route and Progressive Context / 最小十分読込
 
-新しいContextではCurrent Requestと指定読取契約から入口を選ぶ。指定がなければ、本書、Ark関連のIdentityを回復するARK.md、対象へ適用される局所指示、Nearest README / Handoff、必要なSourceへ進む。散在する歴史からCurrent Missionを逆算しない。
+新しいContextではCurrent Requestと指定読取契約から入口を選ぶ。指定がなければ、本書を確認し、Ark全体の意味の回復が必要なら[root READMEの全体説明](README.md#ark-identity)、対象へ適用される局所指示、Nearest README / Handoff、必要なSourceへ進む。明示契約がある時はそのSource・順序を優先し、Homeを追加の必須Bootにしない。散在する歴史からCurrent Missionを逆算しない。
 
 明示されたSource・読取順・Full Read・Identity・Exact EOF・Bindingは守る。途中取得や表示切れは未読箇所を回収し、Gapを残して全文確認と称さない。MemoryやSnippetをRequired Full Readへ代用しない。
 
 継続作業では、同じアクセス可能なContextで全文確認済みのSourceとそのIdentity / Version / Bindingを再利用できる。Current mainの同一性が必要なら、取得した現行内容・Blob等で判断する。Humanから再読指定がある、Source変更・不一致・新Binding・文脈欠落がある場合は必要範囲を再読する。古い記憶だけを再利用の証拠にしない。
 
-ARK.mdを含む確認済みの長文を、小さな作業ごとに反復して読まない。必要なIdentityは保持し、Current Taskに無関係な全File・全Skill・全Protocolの読込を避ける。Sourceに参照先が並ぶこと自体を、全参照先の必須読込と解釈しない。
+HomeやARK.mdを含む確認済みの長文を、小さな作業ごとに反復して読まない。必要なIdentityは保持し、Current Taskに無関係な全File・全Skill・全Protocolの読込を避ける。Sourceに参照先が並ぶこと自体を、全参照先の必須読込と解釈しない。
 
 ### 4.1 Runtime and Skill Gate
 
@@ -280,6 +286,16 @@ Memory、待機、通知、並列Agent、外部Tool、実行環境の能力は�
 Arkで対話型の可視化を作成・修正する時、および公式Visualize不在でその代替を選ぶ時は、[visualize-patch](skills/visualize-patch/SKILL.md)を実際に読み、共通方針・適用条件・現在の依頼へ接続する。普通のMarkdown表・単純な図・引用や言及だけには一律適用せず、Plan-onlyでは作成へ進まない。Skill登録がない環境も共有本文を指示資料として読めるが、登録・表示機能・自動発動の成立とは区別する。
 
 Skillの作成・更新は適用されるskill-creation workflowに従う。既存Skillの発見は、その作り直しや無関係な指示全体の監査を意味しない。参照しただけの未知Scriptを権限・内容確認なしで実行しない。
+
+<a id="home-b-source-compatibility"></a>
+
+### 4.2 段階的Home B — 説明の所有先と明示Source
+
+1. 現在のArk全体説明と通常のHome案内はroot READMEが所有する。共通の判断・権限・読取・実行契約は本書、番号付き領域の現在地はDomainが所有する。これは文書の責務の整理であり、Root、Teshuvah、HumanのMeaning・Correction・STOP・Final Seal、品質、Guard、既存担当を変更しない。
+2. ARK.mdの本文、文書Identity、版、Exact EOFと既存の明示参照を保持する。Handoff・RuntimeがARK.mdを必須Sourceに指定した場合、そのref・path・範囲・順序・Identity・EOF・Bindingに従って実本文を読む。README、案内文、要約で代用せず、指定順の途中へHome読解を追加しない。確認済み読解の再利用は第4節に従う。
+3. 本追補が調整するのは、ARK.md内の文書役割・一般的なHome案内と、本書・README・Domainの現在の分担との差である。この共通契約が適用され、別の明示指定がない通常の案内では本追補の分担を使う。ARK.mdのRoot・Human Authority・Guard等の意味や、局所の受入れ条件を無効にするものではない。
+4. 固定snapshotを読む時は、その時点の本文・役割・Bindingとして理解する。新しい分担を過去へ遡及させない。版名やEOFの一致だけで互換性を認定せず、指定された実体と意味・受入れ条件を照合する。明示契約が旧所有関係そのものを成立条件とする場合や、役割案内を越える実質的な意味の衝突は、本追補で解消済みとせず、第2.1節に従って影響する操作と必要な移行条件を示す。
+5. Ark全体の新しい説明・意味訂正はroot READMEへ接続する。ARK.mdを第二の独立した現行説明原本として並行更新せず、保持中のSourceへ影響する訂正は対象契約と必要な変更範囲を示す。ARKの削除・リダイレクト化、物理改名、明示Bindingの移行は、この役割整合から自動的に承認されない。全消費先・全AIの切替や実理解を、文書整合だけで完了扱いしない。
 
 ## 5. Mode, Scope, and GitHub Authority / 実行境界
 

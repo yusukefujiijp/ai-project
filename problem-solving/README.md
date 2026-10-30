@@ -3,7 +3,12 @@ title: "Problem Solving — 困りごとから、使える解決へ"
 canonical_path: "problem-solving/README.md"
 version: "v002"
 created: "2026-10-17"
-updated: "2026-10-17"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 role: "Problem discovery and ownership entry; case synthesis lives with the case owner"
 status: "human-authorized initial foundation; cross-case usefulness remains open"
 formation_source: "ark-project/ark99/ark99-03/task-records.json"
@@ -21,7 +26,7 @@ expected_eof: "EOF::PROBLEM_SOLVING::v002"
 
 **困りごとの名前から、今のGoal・判断・根拠・次に解く接続へ戻る入口。** 就寝前の寝落ち問題を最初のモデルケースとして、手段が変わっても問題の意味と学びを引き継げる構成を育てる。
 
-Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。問題解決はその目的に仕える営みであり、このフォルダ・方法・AIはKeliである。共通の権限・品質・Guardは[AGENTS](../AGENTS.md)、Identityは[ARK](../ARK.md)が所有する。
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。問題解決はその目的に仕える営みであり、このフォルダ・方法・AIはKeliである。共通の権限・品質・Guardは[AGENTS](../AGENTS.md)、Ark全体の意味は[Home](../README.md#ark-identity)が所有する。
 
 ## 1. 今扱う問題へ進む
 

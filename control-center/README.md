@@ -8,7 +8,12 @@ repository: "yusukefujiijp/ai-project"
 scope: "整理する対象の共通入口。GitHubとhouseを分け、houseからroom-careとArk109へ接続する"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-27"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 updated_reason: "Human-authorized room-care renumbering Ark101→Ark109; update live navigation while retaining original setup history and all other owners"
 room_care_setup:
   date: "2026-10-20"
@@ -45,7 +50,7 @@ YusukeJPは、AIが十分に調査・判断・言語化・構造化を担い、�
 
 分類軸は**記録する媒体ではなく、整理する対象**である。居室の記録をGitHubに置いても、居室整理の判断をGitHub整理の案件へ移管しない。同じ出来事を扱う経験原本・方法・事例も、その役割に応じた所有先を保つ。
 
-Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・司令塔・文書はKeliである。共通の権限・品質・Guardは[AGENTS](../AGENTS.md)、Identityは[ARK](../ARK.md)に従う。簡潔なHuman入力を、AIの必要な検討や説明を省く理由にしない。
+Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・司令塔・文書はKeliである。共通の権限・品質・Guardは[AGENTS](../AGENTS.md)、Ark全体の意味は[Home](../README.md#ark-identity)へ接続する。簡潔なHuman入力を、AIの必要な検討や説明を省く理由にしない。
 
 ## 2. なぜrootに作ったか — Player系からのSeed
 

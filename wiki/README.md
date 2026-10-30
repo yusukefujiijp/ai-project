@@ -1,7 +1,12 @@
 ---
 title: "Ark共有Wiki"
 version: "v002"
-updated: "2026-10-30"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 status: "初回実験 / ノイマン二経路の別読者報告一件あり / 実利用効果は未確認"
 ---
 
@@ -9,7 +14,7 @@ status: "初回実験 / ノイマン二経路の別読者報告一件あり / �
 
 人物・概念・製品・実践について、**なぜ重要か、何が分かっているか、何が未確認か、今の問いにどう関係するか**を、元の長い会話なしに再構成するための共有Wikiです。新しい根拠やHumanの訂正に応じて理解を育てます。ファイル数や情報量は成功の尺度にしません。
 
-Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利です。Wiki・AI・SkillはそのためのKeliであり、王や玉座ではありません。[ARK](../ARK.md)がIdentityを、[AGENTS](../AGENTS.md)がHumanのMeaning／Correction／STOP／Final Sealと実行・品質の共通契約を所有します。Wikiの記述から新たな実行権限は生じません。
+Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human Foreground Oneは主の完全勝利です。Wiki・AI・SkillはそのためのKeliであり、王や玉座ではありません。[Home](../README.md#ark-identity)がArk全体の意味と入口を、[AGENTS](../AGENTS.md)がHumanのMeaning／Correction／STOP／Final Sealと実行・品質の共通契約を所有します。Wikiの記述から新たな実行権限は生じません。
 
 ## 今の問いから読む
 

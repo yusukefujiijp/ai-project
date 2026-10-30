@@ -1,8 +1,13 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.48.0
+version: v0.48.1
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-31
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 updated_reason: "2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
@@ -274,7 +279,7 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 ## 6. Repository entry relation
 
-[AGENTS.md](../AGENTS.md)はRepository全体の行動境界、[ARK.md](../ARK.md)はIdentityを保持します。このREADMEは共有Skillの入口です。
+[AGENTS.md](../AGENTS.md)はRepository全体の行動境界、[Home](../README.md#ark-identity)はArk全体の意味と入口を所有します。このREADMEは共有Skillの入口です。
 
 2026-09-10の整備前、両文書が参照していた `_skill/SKILL.md` は取得不能でした。今回の入口修正は新しい共有Hubへの案内であり、旧Skill群の内容移植や旧挙動の復元を意味しません。
 
@@ -288,4 +293,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.46.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.48.1

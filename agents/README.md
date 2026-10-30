@@ -4,7 +4,12 @@ version: "v003"
 canonical_path: "agents/README.md"
 role: "Entry for AI collaboration methods and their experience originals"
 created: "2026-10-20"
-updated: "2026-10-25"
+updated: "2026-10-31"
+home_b_alignment:
+  design_date: "2026-10-31"
+  design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
+  source_thread: "Ark27:12"
+  scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 change_record: "../control-center/changes/STR-020-ai-to-ai-communication-foundation.md"
 dots_location_candidate:
   date: "2026-10-20"
@@ -27,6 +32,6 @@ expected_eof: "EOF::ARK_AGENTS_HOME::v003"
 
 [Dots](dots/README.md)の固有原本と更新先は`agents/dots/`。旧住所の移転案内は2026-10-24の移設時に残したもので、可変データの並行原本ではない。Humanは現役接続を新住所へ揃え、最後にRepository直下の`dots/`を自身で削除する方針を採用した。[退役準備・検証状態](../control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation)を確認し、`agents/dots/`は保護する。実際の予定・登録Skillの切替と確認結果は[STR-022](../control-center/changes/STR-022-dots-agent-location.md#8-2026-10-24の再開と最新mainの統合)が所有する。GitHubの配置だけで製品設定・実利用まで確認済みとは扱わない。Actor IDと各Missionの所有を保持し、新Actorの作成、他Missionの移管、空の将来分類やBot導入の予約は行わない。
 
-[AGENTS](../AGENTS.md)は共通判断・権限、[ARK](../ARK.md)はArkのIdentityを所有する。本入口はそれらを置換しない。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Humanは意味・方針・Correction・STOP・最終判断を保持し、AI・この領域・方法はKeliとして働く。
+[AGENTS](../AGENTS.md)は共通判断・権限、[Home](../README.md#ark-identity)はArk全体の意味と入口を所有する。本入口はそれらを置換しない。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Humanは意味・方針・Correction・STOP・最終判断を保持し、AI・この領域・方法はKeliとして働く。
 
 EOF::ARK_AGENTS_HOME::v003
