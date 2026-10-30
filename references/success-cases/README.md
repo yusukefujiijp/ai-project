@@ -1,6 +1,6 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.13.0"
+version: "0.14.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "references/success-cases/README.md"
 location_patch:
@@ -12,15 +12,16 @@ row_schema_version: 1
 format_change_record: "control-center/changes/STR-023-shared-references-three-pillars.md"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
-updated: "2026-10-26"
+updated: "2026-10-30"
 last_reality_reviewed: "2026-10-21"
 updated_reason:
+  - "2026-10-30: Extend the existing leading-marker case with Human-valued understanding of necessity; retain historical success and unverified persistence boundaries."
   - "2026-10-26: Preserve nine complete narratives and original identities in case JSONL; retain legacy URL routes and own the shared case format. No change to their historical evidence or outcomes."
   - "2026-10-21: Add the Human-valued Next Query continuation interface, subsequent wording reuse, and corrections about source access and stage completion."
   - "2026-10-20: Add the Human-adopted puzzle metaphor case, preserving active direction or vector as its core and distinguishing appraisal from unmeasured effects."
   - "2026-10-20: Move the collection into References and connect the complementary lessons entry; preserve the seven cases and their evidence boundaries."
   - "2026-10-19: Add the Human-valued leading response status marker case; preserve historical success and separate current rules from observed reception."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.13.0"
+expected_eof: "EOF::SUCCESS_CASES_README::v0.14.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -45,7 +46,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 | [一つのスキル入口で、複数の問題を同時に解く — 場面に適応する成功法則](success-cases.jsonl)（ID `6fc3fb1c-2858-4ecc-92f3-012d816c319b`） | Humanが移行・Plan Mode・思い出しハブ構想を三回の成功として結び、続いて現在地mapにも共通する、入口の一択化とAIによる方法選択を見出した | 共通スキルのハブ化、想起支援、テーマが変わっても使える現在地map、複数問題同時解決を設計する時 |
 | [現役ログを一つに決め、固有な形成史を残した判断](success-cases.jsonl)（ID `af7d65da-b84c-4444-905f-430ea4ba7c3b`） | 冗長性と耐性の問いに、資料の役割と根拠を分け、一案へ決めて返したことをHumanが好評価した | AIが根拠ある推奨を引き受ける時、現役更新先の単純さと歴史保存を両立させる時 |
 | [スキル名を再利用できる入口へ育てる](success-cases.jsonl)（ID `8dbee71a-5270-42d6-b022-c89d3bb5dd05`） | HumanがPlan Mode・Living Review・load・save等に、意味の深化と簡潔な命名が両立する流れを見出した | Naming Importance、共同注意を支える名前、短い入口と明確な責務の関係を考える時 |
-| [先頭の一記号で応答状態を伝える](success-cases.jsonl)（ID `96f52571-27ed-47bb-8861-89404e009a84`） | Humanが自然な先頭💭を評価し、単発回答にも✅を対応させる訂正を経て、表示の簡素化を成功と認めた | 応答状態の判別、表示の簡素化、Human Feedbackによる改善を考える時 |
+| [先頭の一記号で応答状態を伝える](success-cases.jsonl)（ID `96f52571-27ed-47bb-8861-89404e009a84`） | 先頭記号の簡素化に続き、2026-10-30には命令の遵守から必要性の理解へ進んだ説明をHumanが予期せぬ成功と評価した | 応答状態の判別、表示の簡素化、Human Feedbackによる改善を考える時 |
 | [🧩 残作業とGoal — 状態の認識から、能動的な方向へ](success-cases.jsonl)（ID `5b70cf11-24d4-48f5-b4e9-24df0d13f860`） | Humanが、パズルを嵌める能動性と、自分の能動的な方向や方向性（ベクトル）を支える意味を評価して採用した | 記号・見出しを、状態の認識だけでなくHuman自身の能動的な関わりへつなぐ時 |
 | [Next Query — 判断を、そのまま次の入力へつなぐ](success-cases.jsonl)（ID `9fe92b09-027d-4043-9bd6-33c47f794d2d`） | 回答末尾のコピー可能な依頼文をHumanが高く評価し、同じThreadで後続依頼として再利用した | 次の依頼の組立負担、コピー境界、短いSkill入口、段階完了とGoal全体の区別を考える時 |
 
@@ -134,4 +135,4 @@ UTF-8のJSON Linesとし、一つの物理行に一つのcase objectを置く。
 
 今回の対応表・参照確認・保存後検証は[STR-023](../../control-center/changes/STR-023-shared-references-three-pillars.md)が所有する。STR-019の移設完了は保持し、今回の形式移行を当時に実施したことにはしない。
 
-EOF::SUCCESS_CASES_README::v0.13.0
+EOF::SUCCESS_CASES_README::v0.14.0
