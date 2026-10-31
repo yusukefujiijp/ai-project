@@ -1,10 +1,10 @@
 ---
 title: ChatGPT接続 — connect-chatgpt
-version: v0.1.0
-status: shared-source / saved-profile reuse verified / distribution verification in progress
+version: v0.1.1
+status: shared-source / local Codex discovery verified / cloud personal registration unverified
 created: 2026-10-31
 updated: 2026-10-31
-expected_eof: EOF::CONNECT_CHATGPT_README::v0.1.0
+expected_eof: EOF::CONNECT_CHATGPT_README::v0.1.1
 ---
 
 # ChatGPT接続
@@ -40,7 +40,10 @@ expected_eof: EOF::CONNECT_CHATGPT_README::v0.1.0
 - **初回成功：** [TinyFish実行 3db96189](https://agent.tinyfish.ai/runs/3db96189-5485-4ca3-8227-fcb3a0176cb6)で、本人アカウントとの一致を確認した。
 - **2026-10-31の再接続：** [TinyFish実行 ec0cd818](https://agent.tinyfish.ai/runs/ec0cd818-9a96-4295-aa78-5fd92e343fc6)は、同じプロフィールから36秒・7ステップで完了。結果は`logged_in=true`、`expected_account_match=true`、`conversation_list_available=true`、`human_auth_required=false`、`mutation_performed=false`。Humanの再ログインなしで再利用が成立した。実行報告には、一時的なCloudflare表示の後にページが表示されたことも含まれる。
 - **観測の限界：** 以上はTinyFishのブラウザ観測結果。36秒を今後の応答時間として保証しない。別Threadでの自然なSkill選択、別Runtimeからの同じプロフィール利用、長期間・定期実行での安定性、失効後の完全無人復帰は未確認。
-- **登録・導入：** 共有原本の制作と実行環境への導入確認を進めている段階。実際の導入先・読み込み確認は、観測後にこの節を更新する。
+- **GitHubとローカル導入：** [共有原本の初回commit](https://github.com/yusukefujiijp/ai-project/commit/df4817662a15684c9838eb6890bd309fc5f789ae)をRemote再取得で照合した後、標準のskill-installerで`/home/agent/.codex/skills/connect-chatgpt`へ導入し、3ファイルのSHA-256一致を確認した。SKILL.mdのSHA-256は`fb605159f9103f29798bcf249be9699f8b0f93d47a058c64d4a2a28c48309f50`。
+- **Codexによる発見：** 新しく起動したローカルCodex app-serverの、公開schemaで確認した`skills/list`を`cwds=["/workspace"]`・`forceReload=true`で呼び、`name=connect-chatgpt`・`scope=user`・`enabled=true`と上記のSKILL.md pathを確認した。新しいプロセスによる発見の証拠であり、ChatGPTの新規Threadで自然発動した証拠ではない。
+- **独立した読解確認：** 前の会話を渡していない別AIが、提示されたSkillから通常接続・計画限定・別アカウント時の判断を具体化した。ブラウザ実行や外部変更は伴わない。Skillの自動選択試験とは区別する。
+- **クラウドへの登録：** この会話の`skills.list(authority=executor)`は導入後も空であり、ローカル配置を会話側カタログへの反映と同一視しない。Web画面の限定調査では登録ボタンを確認できず、そこで観測した`https://chatgpt.com/skills`へ直接進んだ[追加確認](https://agent.tinyfish.ai/runs/8efd9a31-54cf-421a-815c-dbf271a893d9)はCloudflareの確認画面で止まった。個人Skillの作成・取込機能が存在しないという証明ではなく、今回その経路を確認できなかったという範囲に留める。
 
 ## この入口を作った理由
 
@@ -50,4 +53,4 @@ YusukeJPは、複雑になったアーカイブ作業を停止し、ログイン
 
 標準のskill-creator／skill-installerと、共有Skills Hubのaudit-agent-instructionsによる設計基準を適用する。Skill原本、配布先への保存、会話での取得、実際の動作、Humanの負担軽減を別々の証拠として扱う。
 
-EOF::CONNECT_CHATGPT_README::v0.1.0
+EOF::CONNECT_CHATGPT_README::v0.1.1
