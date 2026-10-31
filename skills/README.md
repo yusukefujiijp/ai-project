@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.48.2
+version: v0.49.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-31
 home_b_alignment:
@@ -8,7 +8,7 @@ home_b_alignment:
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
-updated_reason: "2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
+updated_reason: "2026-10-31: References三本柱の組込みSkillを追加し現行38件へ更新。対象領域の仕事から局所referencesの入口・所有先・利用・更新を設計する手順と、登録の有無を問わず渡せる呼出しQueryを接続。対象領域への適用・各環境への登録・実利用の確認とは分離。2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -67,7 +67,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行37件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行38件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -96,6 +96,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | 現在地MAP / map-current-position | Arkの非地理的な現在地と残作業・Goalを復元し、方法と完了条件のある次の接続へ | [README・Query](map-current-position/README.md) / [SKILL.md](map-current-position/SKILL.md) |
 | Recall Hub / recall-hub | 用途を忘れた入口、名前なしの自然な場面報告・季節からの想起、経験・希望・訂正の受領 | [README・Query](recall-hub/README.md) / [SKILL.md](recall-hub/SKILL.md) |
 | Plan Mode / plan-mode | 現在の依頼を調査・言語化・比較し、変更せず計画提示で止める | [README・Query](plan-mode/README.md) / [SKILL.md](plan-mode/SKILL.md) |
+| References三本柱の組込み / embed-reference-pillars | 新規・既存領域の構成へfeedback・lessons・success-casesを組み込み、仕事に合う発見・利用・更新の経路を設計 | [README・Query](embed-reference-pillars/README.md) / [SKILL.md](embed-reference-pillars/SKILL.md) |
 | Ark Transition / prepare-ark-transition | Thread継続・章移行・ペア準備・再接続の計画、承認範囲内の受渡しと受入れ確認 | [README・Query](prepare-ark-transition/README.md) / [SKILL.md](prepare-ark-transition/SKILL.md) |
 | AI Living Graph Mode / analyze-living-graph | 関係・競合Benefit・Feedbackが判断を変える分析 | [README・Query](analyze-living-graph/README.md) / [SKILL.md](analyze-living-graph/SKILL.md) |
 | Agent Instruction Audit / audit-agent-instructions | Skill・AGENTS.md・Task Promptのモデル移行／過剰制約監査 | [README・Query](audit-agent-instructions/README.md) / [SKILL.md](audit-agent-instructions/SKILL.md) |
@@ -294,4 +295,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.48.2
+EOF::ARK_SHARED_SKILLS_HUB::v0.49.0
