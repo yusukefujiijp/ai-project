@@ -1,11 +1,13 @@
 ---
 title: "References三本柱の組込み"
 version: "v0.1.0"
-status: "Human採用済み / 共有原本の保存後確認待ち / 登録・試験・実利用は未確認"
+status: "Human採用済み / 共有原本の取得確認済み / 登録・試験・実利用は未確認"
 design_date: "2026-10-31"
 updated: "2026-10-31"
 design_base_commit: "716fe899a716b7d531b1307b5107428ac9546d51"
 canonical_path: "skills/embed-reference-pillars/README.md"
+source_verification_commit: "8ffed385ae6a7966a1e633da0d42bbc5126b1522"
+source_skill_blob_sha: "5e7a08fbf081e5367e8fcd08230751daf8330fc2"
 ---
 
 # References三本柱の組込み
@@ -18,15 +20,12 @@ canonical_path: "skills/embed-reference-pillars/README.md"
 
 ## 1. 公開状態と読む先
 
-2026-10-31、会話内で提示した設計・本文草案の後、HumanからGitHub実行の承認を受けた。この初回配置では保存後の再取得確認を進め、次の入口が実際に読めることを確認してから公開用表示へ仕上げる。
+2026-10-31、Humanが採用した設計・本文をmainへ反映し、共有Skill本文・利用README・Hubを公開URLから再取得して、意図した全文との一致を確認した。確認した版と範囲は第6節に記す。
 
-共有Skill本文の配置先（保存後の取得確認待ち）：
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/embed-reference-pillars/SKILL.md
+- [共有Skill本文](https://github.com/yusukefujiijp/ai-project/blob/main/skills/embed-reference-pillars/SKILL.md)
+- [利用入口・呼出しPrompt](https://github.com/yusukefujiijp/ai-project/blob/main/skills/embed-reference-pillars/README.md)
 
-利用入口の配置先（保存後の取得確認待ち）：
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/embed-reference-pillars/README.md
-
-第6節に従って実体を確認し、この節と呼出しPrompt内の公開前表示を更新する。保存予定や成功応答を取得確認済みの証拠にしない。
+この取得確認は、現在の作成担当AIが確認した時点・経路の証拠である。各受け手の読取可否、登録・自動発動、理解・実利用効果を保証しない。利用時には必要な本文・適用条件を自身で確認する。
 
 現在の共通契約は[共有References](https://github.com/yusukefujiijp/ai-project/blob/main/references/README.md)、Skill配布の分担は[Skills Hub](https://github.com/yusukefujiijp/ai-project/blob/main/skills/README.md)を参照する。
 
@@ -81,7 +80,7 @@ Humanが三本柱を取り入れると指定した場合は、その採用を前
 
 通常の構成依頼と一緒に渡すか、同じThreadで対象領域が明確になった後に使う。登録済みAIと未登録AIでPromptを選び分ける必要はない。本文にSkill名と共有本文への直接経路を含めている。
 
-以下は取得確認前の候補本文である。新Skillの共有URLが確認できるまでは、利用可能な公開Promptとして扱わない。
+以下は共有本文への経路を確認した呼出しPromptである。利用するAIの登録状況にかかわらず、同じ本文を渡せる。取得不能の場合の扱いと、現在の依頼に従う実行範囲も本文に含めている。
 
 ```text
 【対象領域へReferences三本柱を組み込む】
@@ -90,7 +89,7 @@ Humanが三本柱を取り入れると指定した場合は、その採用を前
 - Human：YusukeJP
 - 対象Repository：yusukefujiijp/ai-project
 - Ref：main
-- 配布状態：公開前草案。下記の新Skill URLは保存後の取得確認待ちです。実在確認に基づく状態へ更新してから利用してください。
+- 配布状態：共有原本は2026-10-31に実在・全文取得を確認しています。現在の読取可否・本文・適用条件は受け手自身が確認してください。登録・自動発動の成立とは別です。
 
 - 今回構成を設計・作成・改訂する専門領域、プロジェクト、または成果物群へ、references三本柱を組み込んでください。対象は、このPromptと一緒に示した依頼、または同じThreadで一意に確認できる現在の構成対象から受け取ってください。対象が分からない場合は、利用可能な資料を確認し、それでも残る必要最小限の不足だけを尋ねてください。
 
@@ -137,7 +136,7 @@ Humanが三本柱を取り入れると指定した場合は、その採用を前
 
 共有原本の初期変更対象はSKILL.md、README.md、Hubの局所改訂である。更新時は最新mainと対象への並行変更を確認し、採用された本文と必要な参照差分を反映する。
 
-保存後は二つのURLから実体を再取得し、対象Skill、本文、参照先、版・commitまたはblob SHAを確認する。READMEとPromptの公開前表示は実際の確認状態へ更新し、更新後の本文も再取得する。共有本文へ到達できることと、すべての受け手環境から取得できることは区別する。
+保存後は二つのURLから実体を再取得し、対象Skill、本文、参照先、版・commitまたはblob SHAを確認する。初回の公開前表示は、実際の取得確認を根拠に更新した。今後の更新でも、確認状態を実体に合わせ、更新後の本文を再取得する。共有本文へ到達できることと、すべての受け手環境から取得できることは区別する。
 
 登録機構がないAIは、共有本文を読んで指示資料として利用できる。各環境への登録を行う場合は、その時点で利用可能なskill-creator等の契約に従い、共有版と登録版の本文・取得元・版を照合する。
 
@@ -149,7 +148,10 @@ Humanが三本柱を取り入れると指定した場合は、その採用を前
 
 ### 今回の確認記録
 
-- 2026-10-31：Human採用とGitHub実行承認を確認。保存後の本文・参照・版の照合は、この初回配置後に記録する。
+- 2026-10-31：Human採用とGitHub実行承認を確認。実行前のmainは`1a01fffb1dc3f8ca20d5b80db9babc13d25c460c`。共通契約とHubは設計時の読解と同じblobであり、対象外の並行変更を保持した。
+- [初回保存commit](https://github.com/yusukefujiijp/ai-project/commit/8ffed385ae6a7966a1e633da0d42bbc5126b1522)で、SKILL.md・README.md・Hubの三パスを反映した。三ファイルをそれぞれmainの公開URLから再取得し、保存予定の全文との一致を確認した。
+- SKILL.mdの確認blob：`5e7a08fbf081e5367e8fcd08230751daf8330fc2`。初回READMEの確認blob：`b2a68b7fc7fb7061d8c2c8d32a04d2e3f4db5b75`。Hubの確認blob：`6232544ef43a3b2c87f64fc24773521f1735fb1f`。初回READMEには取得確認前の表示が残るため、この更新で本節・公開状態・Promptの表示を仕上げる。初回版の確認を、更新版READMEの同一性や未来のmainの保証へ広げない。
+- 新規二ファイルから参照する既存原本13 URLを確認した。Skillのname・description、Promptが一つであること、Skill名と直接URLの同居、Hubの38件・版とEOFの一致、Hubの局所差分以外の保持を確認した。これは文書と到達経路の確認である。
 - 各環境への登録、独立した受け手による読解・発動確認、対象領域での実利用効果は未確認。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。HumanのMeaning・Correction・STOP・Final Sealと適用Guardを保持し、Skill・AI・ReferencesをKeliとして扱う。
