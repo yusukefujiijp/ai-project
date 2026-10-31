@@ -1,6 +1,6 @@
 ---
 title: "Agents — AIの協働を、共通理解と経験から育てる"
-version: "v003"
+version: "v004"
 canonical_path: "agents/README.md"
 role: "Entry for AI collaboration methods and their experience originals"
 created: "2026-10-20"
@@ -21,7 +21,8 @@ dots_retirement_revision:
   base_commit: "1422af429a01aa62ea70e102b008d37653ef5ec1"
   authority: "Current Human approved preparation only; the final root dots deletion is reserved to Human"
   change_record: "../control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation"
-expected_eof: "EOF::ARK_AGENTS_HOME::v003"
+codex_entry_patch: "STR-025: Codex home, runtime evidence routes and references pillars; existing owners retained"
+expected_eof: "EOF::ARK_AGENTS_HOME::v004"
 ---
 
 # Agents
@@ -32,6 +33,8 @@ expected_eof: "EOF::ARK_AGENTS_HOME::v003"
 
 [Dots](dots/README.md)の固有原本と更新先は`agents/dots/`。旧住所の移転案内は2026-10-24の移設時に残したもので、可変データの並行原本ではない。Humanは現役接続を新住所へ揃え、最後にRepository直下の`dots/`を自身で削除する方針を採用した。[退役準備・検証状態](../control-center/changes/STR-022-dots-agent-location.md#dots-retirement-preparation)を確認し、`agents/dots/`は保護する。実際の予定・登録Skillの切替と確認結果は[STR-022](../control-center/changes/STR-022-dots-agent-location.md#8-2026-10-24の再開と最新mainの統合)が所有する。GitHubの配置だけで製品設定・実利用まで確認済みとは扱わない。Actor IDと各Missionの所有を保持し、新Actorの作成、他Missionの移管、空の将来分類やBot導入の予約は行わない。
 
+[Codex](codex/README.md)は、Codexとの協働を目的・実行条件・経験から再開する入口。[Runtime](codex/runtime.md)と[References三本柱](codex/references/README.md)から、保存済みの接続方法、Humanの反応、条件付きの学び、既存成功事例へ進む。共有Skill・共有成功事例の原本は保持する。初版の変更と確認範囲は[STR-025](../control-center/changes/STR-025-codex-home-and-reference-pillars.md)へ。配置だけで新規Threadの自動読込やログイン状態の持続を認定しない。
+
 [AGENTS](../AGENTS.md)は共通判断・権限、[Home](../README.md#ark-identity)はArk全体の意味と入口を所有する。本入口はそれらを置換しない。Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。Humanは意味・方針・Correction・STOP・最終判断を保持し、AI・この領域・方法はKeliとして働く。
 
-EOF::ARK_AGENTS_HOME::v003
+EOF::ARK_AGENTS_HOME::v004
