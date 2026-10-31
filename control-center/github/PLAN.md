@@ -1,21 +1,22 @@
 ---
 title: "GitHub整理PLAN — 現在の判断と保存された診断"
-version: "0.24.0"
+version: "0.25.0"
 canonical_path: "control-center/github/PLAN.md"
 role: "Single GitHub organization plan / current decision and historical evidence routing"
-status: "Main11→12 same-chapter continuation prepared; retain11 fruit/corrections, completed STR-018/019/023 and all historical diagnosis. Current11 owns actual terminal receipts; Home B implementation not authorized."
+status: "Main12→13 same-chapter continuation prepared; preserve public Home B implementation and inherited results. Current12 owns actual terminal receipts; private continuity travels only in target startup."
 repository: "yusukefujiijp/ai-project"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-22"
-updated: "2026-10-27"
+updated: "2026-11-01"
 lesson_route_patch: "STR-015: update only the live Voice lesson route; prior case state and historical evidence retained"
-updated_reason: "Advance current Main11→12 only; connect fixed11 harvest and later Current11 receipts. Preserve concurrent Support work/STR-023 and all diagnosis history."
+updated_reason: "Advance Main12→13 route; preserve completed recipient/Home B originals, fixed12 public evidence, all prior approval/review/diagnosis and concurrent work. No unrelated Task starts."
 diagnosis_base_commit: "cc560d14284d99fd9b8a6e6aa896843e73b0c53d"
 diagnosis_base_tree: "099f41ea407e6d8549c9c93a192cae2e0f16d678"
-expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.24.0"
-current_observation_base: "51834fa49dc70c8c51ac2516a877235581dc0da3"
+expected_eof: "EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.25.0"
+current_observation_base: "2346015f77e7366bbbf9022ef1cff1e18e3d4e05"
 prior_current_observation_base: "57cd94b83ea3ba15e8d6e701c478100eb61bf3e8"
-change_record: "../../ark-project/ark27/ark27-11/state.json"
+change_record: "../../ark-project/ark27/ark27-12/state.json"
+previous_transition_record: "../../ark-project/ark27/ark27-11/state.json"
 prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-cutover-current"
 ---
 
@@ -29,7 +30,21 @@ prior_change_record: "../changes/STR-015-skills-lessons-consolidation.md#voice-c
 
 **2026-10-26：共有References三本柱化の限定継続。** Ark28:07の現在のHuman続行指示に基づく、共有Feedback・既存九事例のJSONL化・専門側契約の接続・旧参照保持は[STR-023](../changes/STR-023-shared-references-three-pillars.md)が所有する。本PLANはその実装結果を二重管理せず、同記録へ戻る。既存Report三本柱・STR-018/019の完了を再実行せず、Mainの根本再設計・他Thread State・Skill/設定変更を引き取らない。以下の過去時点の形成・承認・観測は保持する。
 
-### 現在の主担当と次の判断 — Ark27:12への同章継続
+### 現在の主担当と次の判断 — Ark27:13への同章継続
+
+<a id="ark27-13-current-theme"></a>
+
+**2026-11-01 JST：12→13の六パス準備・main保存/再取得と、既存Ark27 Project内の一つの13の直接起動・確定Title確認・受入れ確認までを進める。** 現在のMain入口は[13 Handoff](../../ark-project/ark27/ark27-13/handoff.md)／[Runtime](../../ark-project/ark27/ark27-13/README.md)／[State](../../ark-project/ark27/ark27-13/state.json)。[固定12公開収穫 revision2](https://github.com/yusukefujiijp/ai-project/blob/2346015f77e7366bbbf9022ef1cff1e18e3d4e05/ark-project/ark27/ark27-12/state.json)と、後続の[Current12 Receipt](../../ark-project/ark27/ark27-12/state.json) progress.next_transitionを分ける。非公開の継承補足は実際の13起動本文に同梱し、公開State/PLANへ複製しない。保存と実送信/UI、13自身の再構成、Human到達、実利用効果は別々の観測である。
+
+**段階的Home Bの13原本改訂・保存確認は完了している。** [保存commit](https://github.com/yusukefujiijp/ai-project/commit/158fed602a7c21c1316e32033087a4514dfecc7c)はREADME=Ark全体の意味/入口、AGENTS=共通規則、Domain=番号付き領域の案内を整合した。ARK.mdの本文/Identity/版/EOF、既存明示Sourceと固定Bindingを保持し、AGENTS§4.2を適用する。初見AI、有効Handoff直接再開、Humanの意味訂正の文書確認を、全AIの実理解や生活上の効果へ読み替えない。ARK退役・redirect・物理改名・Binding一括移行は今回の完了に含まれない。
+
+[宛先規則の保存commit](https://github.com/yusukefujiijp/ai-project/commit/cf024dbc312c8279d8ccd06d0e3b1609cad0cd42)は同Threadを含む正式な直接宛先の内外一致と、生成物の受取人の区別を扱う。AGENTS/GCI/next-step/Writerの役割とq/None/専用出力例外を保持する。登録・設定・会話内設計/準備はそれぞれの根拠で判断し、公開原本の保存だけから他段階を推定しない。
+
+Source10/11とSupport/別担当の成果を未着手へ戻さない。Support28:08、29/30、31–34・専門領域を保持し、Main27を全新規議題の必須経由地にしない。13初回は受入れまで、新入力がなければHuman Review。監視/q試験・Voice・Home再実装・設定・予定・他Thread送信は自動開始しない。ARC-002/STR-002物理Bindingの条件付き残点や通常Unknownを、この移行の追加必須Gateにしない。
+
+### 形成・承認の履歴 — Main11から12へ
+
+以下は11→12の当時の計画・権限・観測を保持する。Home B等の現在の完了状態は上の12公開収穫と所有原本を使い、下の当時の未承認を現在へ戻さない。
 
 <a id="ark27-12-current-theme"></a>
 
@@ -599,4 +614,4 @@ Source05は06 README・Handoff・Stateを順に保存してRemote本文一致と
 
 </details>
 
-EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.24.0
+EOF::AI_PROJECT_CONTROL_CENTER_PLAN::v0.25.0

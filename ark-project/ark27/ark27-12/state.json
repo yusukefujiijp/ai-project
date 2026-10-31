@@ -2,11 +2,11 @@
   "meta": {
     "state_id": "ARK27_12_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:12",
     "updated_at": "2026-11-01",
-    "date_scope": "Asia/Tokyo; public artifact harvest before13 launch",
-    "update_reason": "12→13 same-chapter continuation; public original evidence and current route. Private conversation text/URLs excluded from GitHub."
+    "date_scope": "Asia/Tokyo; after fixed public harvest verified, before13 actual launch",
+    "update_reason": "Record fixed public harvest readback and publish compatible13 triad/routes; actual UI/reception remains pending."
   },
   "identity": {
     "source": "Ark27:11",
@@ -237,8 +237,8 @@
     "Private third-party data or long-term-memory export"
   ],
   "progress": {
-    "source_prepared": "PUBLIC_HARVEST_CONSTRUCTED",
-    "remote_verification": "Pending revision2 publication/readback; later next_transition receipt owns verification",
+    "source_prepared": "13_PUBLIC_TRIAD_AND_PRIVATE_STARTUP_CONSTRUCTED",
+    "remote_verification": "Fixed12 revision2 main full readback verified;13 public triad/routes pending publication",
     "target_reconstructed": "Historical12 reception retained in Current11;13 not observed",
     "delivery": "13_NOT_SENT",
     "human_last_mile": "NOT_OBSERVED",
@@ -252,9 +252,9 @@
       "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
       "project_id": "g-p-6aa1d4fedde88191a7d886251dc2a388",
       "authorization": "Current Human adopted the preceding six-path plan and Title, Execute GitHub OK / Human Seal OK / Workflow Continue. No new production task after boot.",
-      "status": "PUBLIC_HARVEST_CONSTRUCTED_BEFORE_SAVE",
+      "status": "SOURCE_PREPARED_BEFORE_TARGET_PUBLICATION",
       "source_prepared": true,
-      "remote_verified": false,
+      "remote_verified": "FIXED_HARVEST_ONLY; TARGET_PUBLICATION_PENDING",
       "delivery": "NOT_SENT",
       "target_reconstructed": "NOT_OBSERVED",
       "human_last_mile": "NOT_YET_OBSERVED",
@@ -272,7 +272,24 @@
         "public": "Existing public originals, technical contracts and publication evidence only",
         "private": "ARK27_13_PRIVATE_CONTINUITY_v001 delivered as part of the same-account startup; not a public Source12 history export",
         "reason": "Automatic review refused the larger private-conversation GitHub payload. It was not published. This version excludes that content and private chat URLs."
-      }
+      },
+      "fixed_harvest": {
+        "commit": "2346015f77e7366bbbf9022ef1cff1e18e3d4e05",
+        "blob": "27942f3b62ecc6174a693cc69fcc1e83e02c9c42",
+        "path": "ark-project/ark27/ark27-12/state.json",
+        "revision": 2,
+        "main_full_readback_equal": true
+      },
+      "public_paths": [
+        "ark-project/ark27/ark27-12/state.json",
+        "ark-project/ark27/ark27-13/README.md",
+        "ark-project/ark27/ark27-13/handoff.md",
+        "ark-project/ark27/ark27-13/state.json",
+        "ark-project/README.md",
+        "control-center/github/PLAN.md"
+      ],
+      "private_delivery": "Prepared within Source conversation; not yet sent; no private content/URLs in GitHub.",
+      "base_before_harvest": "b57a43216688245edbf790b575d872b46dd34418"
     }
   },
   "harvest_12": {

@@ -1,0 +1,226 @@
+{
+  "meta": {
+    "state_id": "ARK27_13_CURRENT_STATE",
+    "schema_version": "v002",
+    "revision": 1,
+    "owner": "Ark27:13",
+    "updated_at": "2026-11-01",
+    "date_scope": "Initial13 constructed by Source12 before actual delivery/reception",
+    "update_reason": "Human-authorized12→13 continuation; fixed public harvest, private supplied context and later receipts separated."
+  },
+  "identity": {
+    "source": "Ark27:12",
+    "target": "Ark27:13",
+    "owner": "Ark27:13",
+    "chapter": "Ark27",
+    "role": "MAIN",
+    "transition_kind": "THREAD_CONTINUE",
+    "runtime_id": "ARK27_13_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+    "compiled_title": "Ark27:13_2026/11/01; \"主の完全勝利: 整えた入口と成果を継ぎ、協働を続ける\"",
+    "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+    "existing_support_at_preparation": "Ark28:08",
+    "third_line": "Ark29",
+    "fourth_line": "Ark30",
+    "current_routes": "ark-project/README.md",
+    "thread": "Ark27:13"
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "final_attribution": "主の栄光 / kevod Adonai",
+    "human_authority": "Meaning / Mission / priority / body Reality / Discernment / Correction / Interrupt / STOP / Final Seal",
+    "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
+    "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
+    "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
+    "scope": "Initial13 own reading/reconstruction and acceptance only. Source12 owns finite publication/direct-start/reception operations.",
+    "target_next_task_boundary": "Target13 boot-only returns Human Review after own Required Sources and R1–R6; receive already-present current Human input without re-entry. No proxy monitoring/trial, Voice restart, Home redo, otherThread sends, Skill/settings/schedules/Reset or takeover."
+  },
+  "bindings": {
+    "repository": "yusukefujiijp/ai-project",
+    "ref": "main",
+    "readme": {
+      "path": "ark-project/ark27/ark27-13/README.md",
+      "runtime_id": "ARK27_13_HUMAN_AI_PROBLEM_SOLVING_FIELD",
+      "document_version": "v001-human-authorized",
+      "contract_version": "v002",
+      "expected_eof": "ARK27_13_README_EOF_v001"
+    },
+    "handoff": {
+      "path": "ark-project/ark27/ark27-13/handoff.md",
+      "document_id": "ARK27_12_TO_ARK27_13_CONTINUE",
+      "document_version": "v001-human-authorized",
+      "contract_version": "v002",
+      "expected_eof": "ARK27_13_HANDOFF_EOF_v001"
+    },
+    "source_harvest": {
+      "commit": "2346015f77e7366bbbf9022ef1cff1e18e3d4e05",
+      "blob": "27942f3b62ecc6174a693cc69fcc1e83e02c9c42",
+      "path": "ark-project/ark27/ark27-12/state.json",
+      "state_id": "ARK27_12_CURRENT_STATE",
+      "schema_version": "v002",
+      "revision": 2,
+      "expected_eof": "ARK27_12_STATE_EOF_v002",
+      "full_text_equal": true,
+      "main_readback": true,
+      "scope": "Public artifact harvest; not private conversation export"
+    },
+    "source_terminal_receipt": {
+      "path": "ark-project/ark27/ark27-12/state.json",
+      "section": "progress.next_transition",
+      "owner": "Ark27:12",
+      "schema_version": "v002",
+      "minimum_revision": 2,
+      "target": "Ark27:13",
+      "policy": "Current may advance after fixed public harvest; no private chat URLs/response body in public receipt"
+    },
+    "required_sources": {
+      "order": [
+        {
+          "path": "ark-project/ark27/ark27-13/handoff.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-13/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-13/state.json",
+          "scope": "FULL_JSON"
+        },
+        {
+          "path": "AGENTS.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "keybindings/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ARK.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/INSTRUCTIONS.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "prompts/ai-next-thread-handoff.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "ark-project/ark27/ark27-12/state.json",
+          "scope": "FULL_FIXED_PUBLIC_HARVEST",
+          "ref": "2346015f77e7366bbbf9022ef1cff1e18e3d4e05"
+        },
+        {
+          "path": "control-center/github/README.md",
+          "scope": "FULL"
+        },
+        {
+          "path": "control-center/github/PLAN.md",
+          "scope": "Beginning metadata/Identity and entire ## current until immediately before ## diagnosis-history"
+        },
+        {
+          "path": "agents/ai-to-ai-communication/README.md",
+          "scope": "FULL"
+        }
+      ],
+      "owner": "handoff.md#2",
+      "historical_source_rule": "Old12/11/10 boot requirements inside fixed harvest are provenance, not recursive reboot"
+    },
+    "supplied_context": {
+      "id": "ARK27_13_PRIVATE_CONTINUITY_v001",
+      "expected_eof": "ARK27_13_PRIVATE_CONTINUITY_EOF_v001",
+      "source": "Ark27:12",
+      "carrier": "Actual startup message in13; read fully after Required Source15",
+      "policy": "Mandatory for reconstruction; never publish its private content/chat URLs toGitHub; recover missing text from delivered message, not hidden memory"
+    },
+    "chapter": {
+      "path": "ark-project/ark27/README.md",
+      "version": "v002-human-authorized",
+      "instructions": "ark-project/ark27/INSTRUCTIONS.md",
+      "revision": "2026-10-01.1"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "compatible_version": "v010-human-authorized"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "version": "v003-human-authorized"
+    }
+  },
+  "now": {
+    "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
+    "coordinate": "13 prepared from fixed12 public harvest plus actual startup-supplied context. Delivery and receiver reconstruction not yet observed at revision1.",
+    "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+    "current_legal_connection": "Own Required Sources and supplied-context reading/reconstruction; boot-only Human Review. New Human input already supplied is received without resubmission.",
+    "completed_outcomes_owner": "Fixed12 harvest_12, supplied private continuity, inherited fixed11/Source10 and current owner originals; evidence boundaries retained.",
+    "material_corrections": [
+      "Root/Teshuvah/Human Foreground One, quality, Human Meaning/Correction/STOP/Final Seal and Guard retained; AI isKeli.",
+      "Public originals, private continuity, saved result, registration/account report, target own reading/UI and actual effects are distinct.",
+      "Home B13-original implementation is complete; ARK body/Identity/EOF and explicitSource binding retained. No rollback to old unapproved implementation.",
+      "SameThread recipient outside/inside NextQuery; distinguish direct recipient and generated Prompt's recipient. q,None,strictBoot/Failure/no-notification unchanged.",
+      "Do not restart completed designs/preparations, turn ordinaryUnknown into compulsory tasks, import other owner work or private long-term memory.",
+      "Current Human input wins; no automatic proxy/Voice/Home/oldTask continuation after acceptance."
+    ],
+    "remaining": [
+      {
+        "work": "Own13 acceptance",
+        "state": "NOT_OBSERVED_AT_PREPARATION",
+        "condition": "Own required reading plus supplied context, Identity/Binding/Triad/R1–R6; then Human Review"
+      },
+      {
+        "work": "Future work selection",
+        "state": "HUMAN_REVIEW_AFTER_ACCEPTANCE",
+        "condition": "Use already supplied current input or later bounded request; candidates/observations in supplied context are not an automatic queue."
+      }
+    ],
+    "ownership": "Main27 retains whole-repository organization/judgment within current request; not universal central approval. Support28:08,29/30,31–34 and specialists retain own work/roles. Current Domain resolves addresses.",
+    "physical_reality": "No current body/location/life action inferred from this handoff."
+  },
+  "evidence": {
+    "fixed_source": "Source12 public harvest exact commit/blob and main readback; not receiver proof",
+    "supplied_context": "Actual startup must contain id and exact EOF; preparation does not establish delivery",
+    "unknown": [
+      "13 receiver reading/reconstruction until actual response",
+      "Human device access and practical effects",
+      "Actual future use/actor capabilities beyond observed scope"
+    ],
+    "policy": "Current12 later receipt may supersede initial non-observation; fixed evidence remains immutable."
+  },
+  "deferred": [
+    "Proxy monitoring and operating trial",
+    "Automatic Voice restart or new VoiceThread",
+    "ARK retirement/redirection/physical rename and bulk explicitBinding migration",
+    "OtherThread messages / takeover of other owners",
+    "Skill recreation/reinstallation or shared-contract revision",
+    "GCI/account/Project setting changes or attachments",
+    "Schedules, automation, Token Reset",
+    "Unrelated life/research/cleanup tasks",
+    "Private third-party data or long-term-memory export"
+  ],
+  "progress": {
+    "source_prepared": "CONSTRUCTED_BY_SOURCE12",
+    "remote_verification": "Owned by Current12 progress.next_transition after publication",
+    "delivery": "NOT_SENT_AT_INITIAL_PREPARATION",
+    "target_reconstructed": "NOT_OBSERVED_AT_INITIAL_PREPARATION",
+    "human_last_mile": "NOT_OBSERVED",
+    "requested_outcome": "OWN13_ACCEPTANCE_THEN_HUMAN_REVIEW",
+    "receipt_policy": "Source12 may record visible receiver evidence after actual observation; no unobserved success or unnecessary state writes."
+  },
+  "eof_sentinel": "ARK27_13_STATE_EOF_v002"
+}
