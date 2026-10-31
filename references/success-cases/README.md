@@ -1,6 +1,6 @@
 ---
 title: "Success Cases — Ark Projectの成功から学ぶ入口"
-version: "0.14.0"
+version: "0.15.0"
 status: "human-authorized first collection / evolving"
 canonical_path: "references/success-cases/README.md"
 location_patch:
@@ -12,16 +12,17 @@ row_schema_version: 1
 format_change_record: "control-center/changes/STR-023-shared-references-three-pillars.md"
 primary_reader: "Current AI / other AI / Future AI"
 created: "2026-09-18"
-updated: "2026-10-30"
+updated: "2026-10-31"
 last_reality_reviewed: "2026-10-21"
 updated_reason:
+  - "2026-10-31: Add the Human-valued Codex-to-ChatGPT authenticated access case and reusable connection proposal; preserve archive STOP and unverified deployment boundaries."
   - "2026-10-30: Extend the existing leading-marker case with Human-valued understanding of necessity; retain historical success and unverified persistence boundaries."
   - "2026-10-26: Preserve nine complete narratives and original identities in case JSONL; retain legacy URL routes and own the shared case format. No change to their historical evidence or outcomes."
   - "2026-10-21: Add the Human-valued Next Query continuation interface, subsequent wording reuse, and corrections about source access and stage completion."
   - "2026-10-20: Add the Human-adopted puzzle metaphor case, preserving active direction or vector as its core and distinguishing appraisal from unmeasured effects."
   - "2026-10-20: Move the collection into References and connect the complementary lessons entry; preserve the seven cases and their evidence boundaries."
   - "2026-10-19: Add the Human-valued leading response status marker case; preserve historical success and separate current rules from observed reception."
-expected_eof: "EOF::SUCCESS_CASES_README::v0.14.0"
+expected_eof: "EOF::SUCCESS_CASES_README::v0.15.0"
 ---
 
 # Success Cases — 成功の意味を、次の協働へ
@@ -40,6 +41,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 
 | 事例 | 何が大きく変わったか | 読むと役立つ場面 |
 |---|---|---|
+| [Codexからログイン済みChatGPTへ — 成功経路の再利用](success-cases.jsonl)（ID `16ce6cbe-9b5e-48b5-9e76-8c57e86ab1c4`） | HumanがiPhoneで認証・保存したTinyFishプロフィールをCodexから利用し、本人アカウントとの一致を確認した | 毎回の認証・再説明を減らす時。状態の再利用と方法の継承、記録とSkill導入を分けて考える時 |
 | [Ark27:03→04 — 深いAI処理と、Humanから見た移行のほぼ瞬時化](success-cases.jsonl)（ID `32f01804-5fba-4589-98f0-96dd61a15ccd`） | Source準備からTarget再構成・Living Reviewへ接続し、Humanが「完全完璧な成功事例」と評価した | Thread移行、承認Scopeの連続実行、Humanの工程管理負担、AIへの内部処理の委任を考える時 |
 | [起床時の一択化 — 長年の複合問題が、一つの行動へ結実した成功](success-cases.jsonl)（ID `04d636c0-c86a-489e-b121-8199e5d51da5`） | 双方に利益がある判断を事前に整え、小さな身体行動へ接続し、Humanが実生活で大成功と報告した | 判断と実行の分離、低認知時の入口、Human Correction、BBPの形成過程を考える時 |
 | [複数の移行場面を、一つの入口へ統合した成功](success-cases.jsonl)（ID `502586fb-490c-4f2b-bfc2-67c2e62461bf`） | 共通queryと一つのSkillで、場面の判別と必要な処理をAIが引き受ける構成へまとめた | 複数用途の入口統合、Humanの選択負担、機能が増えても扱いやすいSkill設計を考える時 |
@@ -135,4 +137,4 @@ UTF-8のJSON Linesとし、一つの物理行に一つのcase objectを置く。
 
 今回の対応表・参照確認・保存後検証は[STR-023](../../control-center/changes/STR-023-shared-references-three-pillars.md)が所有する。STR-019の移設完了は保持し、今回の形式移行を当時に実施したことにはしない。
 
-EOF::SUCCESS_CASES_README::v0.14.0
+EOF::SUCCESS_CASES_README::v0.15.0
