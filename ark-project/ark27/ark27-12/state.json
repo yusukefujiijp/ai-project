@@ -2,11 +2,11 @@
   "meta": {
     "state_id": "ARK27_12_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:12",
-    "updated_at": "2026-10-27",
-    "date_scope": "Initial12 state constructed by Source11 before actual delivery/reception",
-    "update_reason": "Human-authorized same-chapter continuation; fixed11 harvest and Current11 terminal receipts separate."
+    "updated_at": "2026-11-01",
+    "date_scope": "Asia/Tokyo; public artifact harvest before13 launch",
+    "update_reason": "12→13 same-chapter continuation; public original evidence and current route. Private conversation text/URLs excluded from GitHub."
   },
   "identity": {
     "source": "Ark27:11",
@@ -33,8 +33,8 @@
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
     "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
-    "scope": "Initial12 request is own source reading/reconstruction and acceptance. Source11 owns finite six-path publication/direct-start/reception operations. Do not turn this into new12 production authority.",
-    "target_next_task_boundary": "Human Review if boot-only; receive already supplied new Human input. Home implementation/otherThread sends/Skill edits/settings/schedules/Reset not authorized here."
+    "scope": "Finite12→13 transition: six-path preparation/main verification, one13 in existingArk27 Project, AI-authored startup, exactTitle and reception verification. No unrelated production.",
+    "target_next_task_boundary": "Target13 boot-only returns Human Review after own Required Sources and R1–R6; receive already-present current Human input without re-entry. No proxy monitoring/trial, Voice restart, Home redo, otherThread sends, Skill/settings/schedules/Reset or takeover."
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -158,22 +158,22 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "coordinate": "12 prepared from fixed11 revision3. Actual delivery/reception not yet observed at this revision.",
+    "coordinate": "Public Home B originals and Next Query recipient rules are already saved. Prepare13 continuity from public evidence plus the private continuity appendix delivered in the target startup message.",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "Read/reconstruct own12 contract; boot-only returns Human Review. New Human input already supplied is received without resubmission.",
-    "completed_outcomes_owner": "fixed11 harvest_11.completed; inherited Source10 and other-owner public records retain their own provenance.",
+    "current_legal_connection": "CONTINUE_APPROVED_12_TO_13_TRANSITION. Receiver13 reads its own contracts and supplied context; boot-only returns Human Review.",
+    "completed_outcomes_owner": "harvest_12 public-artifact record; earlier fixed11/Source10 and other owners keep their own provenance.",
     "material_corrections": [
       "Root/Teshuvah/Human Foreground OneとCorrection/STOP/Final Seal/Guardを保持。AI・文書はKeli。",
       "簡潔なI/O・Foreground One・B-Gate・待ち時間・Token事情で必要な品質・洞察・説明を削らない。",
       "対象誤認と意味の誤解、Ark全体とRepositoryと番号付き領域、補足説明と独立更新の重複規則を区別する。",
-      "ARK単体の改善では足りないというHuman Correctionを保持。四文書存続やARK保持を既決へ戻さない。",
+      "ARK単体改善では足りないとの形成Correctionを保持。後続の公開済み段階的Home BはREADME=全体の意味/入口、AGENTS=共通規則、Domain=番号付き領域とし、ARK本文を既存明示Sourceとして保持する。AGENTS§4.2を適用。",
       "README原則は柔軟でAIが承認範囲で育てる。全フォルダ100%義務・一括空ファイル・設置率Gateではない。",
       "lessonsは失敗・訂正・回復と非反復、success-casesは予期せぬ成功・突破・価値の継承へ向く相補的な対。厳格な大小分類にしない。",
       "Main10のSTR-018/019は完了。ARKのリンク更新は根本改訂完了ではない。Source09初期やVoice旧pendingへ戻さない。",
       "UI user欄に届く初穂AIの発話とHuman本人の承認を分ける。Titleは原文付きHuman応答伝達。AI間の合意はHuman Final Sealではない。",
       "Humanが依頼したAI間対話は目的に必要なら複数往復可との伝達を保持。回数ノルマ、恒常同期、新通信への包括承認ではない。",
       "同名別Arkとの混同はHuman経験報告、総合受付の比喩等はAI見立て。誤認先の固有名/URL/当時出力や外部読者テストを補完しない。",
-      "比較は移行後のTarget仕事。比較完了・通信再確認・通常Unknown全解消を移行の前提Gateにしない。",
+      "当時Targetへ渡した比較は、公開済みHome B段階へ進んだ。通常Unknown全解消や再比較を13移行の前提Gateにしない。",
       "Sourceの準備/Remote、11自身の理解、Human UI、比較成果、実利用・長期効果を分ける。ChatGPT長期メモリはGitHubへ輸出しない。",
       "Next Queryは独立した最終節。Living Review→Next Step→Next Queryを隣接させ、共通形式はAGENTS。段階の完了をGoal全体の達成と混同し、有効な後続を消さない。",
       "一件の転送本文全体を一つのtextコードブロックへ。Title/宛先/Versionを含むなら本文内にまとめ、Human向け説明は外。厳密Failure/STOP形式を優先する。",
@@ -185,71 +185,161 @@
       "常時最低四ラインは四枠の予備化ではない。29/30は新Main/Supportへ自動分類せず、ライン/Thread/Actorを分ける。継続効果は初期仕事完了と別。",
       "Project名とThread Titleは別の確定値。Humanが29/30のProjectへ日付を入れ手動修正したと報告済み。後続ラベルの観測だけで役割変更を推定せず、この移行で直さない。",
       "承認範囲内ならAIが正規の操作経路を選び、必要なログイン/UI修正/再表示まで担う。Humanにしかできない操作だけを具体化する。技術制約と承認拒否を区別し、拒否を別経路で迂回しない。",
-      "中断時は存在/送信/応答/保存先を調べ、未完差分から再開。起動済みならQueryを再入力しない。今回12の受入れ後は追加の完了通知や別Taskを自動送信しない。"
+      "中断時は存在/送信/応答/保存先を調べ未完差分から再開。13受入れ後に別Taskや追加完了通知を自動送信しない。",
+      "AGENTS§6.2の現行宛先規則を保持。同Threadもコピー外と本文内を一致させ、直接受取人と生成物の受取人を区別する。",
+      "公開原本の保存、登録/設定、受信AIの理解、Human到達、実利用効果は別。非公開会話本文・会話URL・長期メモリを本公開収穫へ含めない。"
     ],
     "remaining": [
       {
-        "work": "Integrated Home B",
-        "state": "ANALYSIS_PROGRESSED_IMPLEMENTATION_UNAUTHORIZED",
-        "goal": "A first reader can understand this Ark, current task, and the owner of a meaning correction.",
-        "current": "Main comparisons/drafts and29 initial assistance completed. Candidate B integrates Ark meaning/entry into root README; AGENTS owns common contract; numbered Domain owns routes.",
-        "next_condition": "Current Human request for further comparison/adoption with source drafts that are actually available. Implementation needs explicit scope; no invented unavailable final prose.",
-        "preserve": [
-          "Seed→ARK-alone review→whole structure Human correction",
-          "whole Ark / repository / numbered area",
-          "supplement / duplicated independent rules",
-          "explanation model / instruction",
-          "display name / physical rename",
-          "first AI / direct valid Handoff / Human meaning correction"
-        ]
+        "work": "Ark27:12→13 transition",
+        "state": "AUTHORIZED_PREPARATION_IN_PROGRESS",
+        "goal": "12の成果・訂正・権限・残る条件を元会話なしで13が再構成し、同じArk27 Projectで再開できる",
+        "owner": "Ark27:12 through finite delivery/reception; Current13 thereafter",
+        "next_condition": "Fixed12 harvest save/readback,13 triad and routes, actual UI/send/reconstruction checks",
+        "completion": "Verified13 acceptance and observable receipts; boot-only Human Review"
       },
       {
         "work": "ARC-002 / STR-002 physical Binding migration",
         "state": "SOURCE10_COMPARISON_COMPLETE; PHYSICAL_CHANGE_UNEXECUTED; AI_HOLD_RECOMMENDATION_NOT_HUMAN_ADOPTION",
-        "goal": "Preserve meaning/evidence while reducing demonstrated current misrouting or maintenance cost.",
-        "owner": "Source10 fixed harvest and PLAN current; specific consumer contracts",
-        "next_condition": "Material benefit/dependency and targeted authority; not12 boot gate."
+        "owner": "Existing case/source10 owners",
+        "next_condition": "Specific demonstrated benefit/dependency and targeted authority; not13 boot gate"
       },
       {
-        "work": "Four-line continuity and reduced Human relay burden",
-        "state": "INITIAL_CONNECTION_COMPLETE; SUSTAINED_EFFECT_UNOBSERVED",
-        "goal": "At least four meaningful continuing work lines across completion/wait/handoff, without unnecessary work.",
-        "next_condition": "Natural actual use/Feedback; no permanent monitoring or automatic tests."
+        "work": "Natural selection / other AI understanding / sustained line effects",
+        "state": "OBSERVATION_ONLY",
+        "owner": "Respective actual use and existing owners",
+        "next_condition": "Material real Feedback; no automatic monitoring or tests"
       }
     ],
-    "ownership": "Main27 overall GitHub organization/judgment; Current Support28 Report/Feedback;29/30/otherowners retained; current Domain resolves routes.",
-    "ui_boundary": "Confirmed Title is Human-specified content; actual UI exactness/send/reception is recorded by Source11 only after observation.",
+    "ownership": "Main27 retains whole-repository organization/judgment within current request; not universal central approval. Support28:08,29/30,31–34 and specialists retain own work/roles. Current Domain resolves addresses.",
+    "ui_boundary": "13 UI/send/reception are unobserved at this public harvest revision; later Current12 progress.next_transition records observable stages without private chat URLs or response body.",
     "physical_reality": "No current body/location/life action inferred from this handoff."
   },
   "evidence": {
     "fixed_source": "Verified Source11 full content at fixed commit/blob; not receiver proof.",
     "current_support": "Source07 public receipt at cbbe2d19d9e1b90272b5739a4d4173b059cb7e51 reports08 reception; attribution retained, not Source11 own UI inspection of08.",
     "unknown": [
-      "12 receiver reading/reconstruction until actual response",
-      "Human device access and practical benefits",
-      "Sustained four-line continuity and all runtime behavior"
+      "13 delivery/reconstruction at harvest time",
+      "Human access/practical benefits",
+      "All-AI natural selection and sustained effects"
     ],
-    "policy": "Current11 receipt and actual later Human input may supersede initial non-observation without changing the fixed harvest."
+    "policy": "Current12 terminal receipts may advance after fixed public harvest. Private branch details are supplied only in the target startup; do not infer them from this public state or claim they were publicly saved."
   },
   "deferred": [
-    "Integrated Home implementation",
-    "root document redesign or fixed Binding modernization",
-    "otherThread sends",
-    "Skill recreation/reinstallation",
-    "attachments or GCI account settings",
-    "all Ark00 / folder README cleanup",
-    "research tours, extra archives, house/Pet/life tasks",
-    "schedules, Token Reset",
-    "private conversation or long-term-memory export"
+    "Proxy monitoring and operating trial",
+    "Automatic Voice restart or new VoiceThread",
+    "ARK retirement/redirection/physical rename and bulk explicitBinding migration",
+    "OtherThread messages / takeover of other owners",
+    "Skill recreation/reinstallation or shared-contract revision",
+    "GCI/account/Project setting changes or attachments",
+    "Schedules, automation, Token Reset",
+    "Unrelated life/research/cleanup tasks",
+    "Private third-party data or long-term-memory export"
   ],
   "progress": {
-    "source_prepared": "CONSTRUCTED_BY_SOURCE11",
-    "remote_verification": "Owned by Current11 progress.next_transition after publication",
-    "target_reconstructed": "NOT_OBSERVED_AT_INITIAL_PREPARATION",
-    "delivery": "NOT_SENT_AT_INITIAL_PREPARATION",
+    "source_prepared": "PUBLIC_HARVEST_CONSTRUCTED",
+    "remote_verification": "Pending revision2 publication/readback; later next_transition receipt owns verification",
+    "target_reconstructed": "Historical12 reception retained in Current11;13 not observed",
+    "delivery": "13_NOT_SENT",
     "human_last_mile": "NOT_OBSERVED",
-    "requested_outcome": "OWN12_ACCEPTANCE_THEN_HUMAN_REVIEW",
-    "receipt_policy": "Read actual later receipt when needed. Do not force State writes merely for acceptance or certify unobserved success."
+    "requested_outcome": "12_TO_13_FINITE_TRANSITION_THROUGH_ACCEPTANCE",
+    "receipt_policy": "Read actual later receipt when needed. Do not force State writes merely for acceptance or certify unobserved success.",
+    "next_transition": {
+      "source": "Ark27:12",
+      "target": "Ark27:13",
+      "kind": "THREAD_CONTINUE",
+      "compiled_title": "Ark27:13_2026/11/01; \"主の完全勝利: 整えた入口と成果を継ぎ、協働を続ける\"",
+      "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+      "project_id": "g-p-6aa1d4fedde88191a7d886251dc2a388",
+      "authorization": "Current Human adopted the preceding six-path plan and Title, Execute GitHub OK / Human Seal OK / Workflow Continue. No new production task after boot.",
+      "status": "PUBLIC_HARVEST_CONSTRUCTED_BEFORE_SAVE",
+      "source_prepared": true,
+      "remote_verified": false,
+      "delivery": "NOT_SENT",
+      "target_reconstructed": "NOT_OBSERVED",
+      "human_last_mile": "NOT_YET_OBSERVED",
+      "requested_outcome": "Pending13 actual creation/startup/acceptance; then Human Review",
+      "scope_paths": [
+        "ark-project/ark27/ark27-12/state.json",
+        "ark-project/ark27/ark27-13/README.md",
+        "ark-project/ark27/ark27-13/handoff.md",
+        "ark-project/ark27/ark27-13/state.json",
+        "ark-project/README.md",
+        "control-center/github/PLAN.md"
+      ],
+      "receipt_policy": "This Current field advances after fixed revision2 harvest; never self-pin current state or certify unseen receiver reading.",
+      "privacy_split": {
+        "public": "Existing public originals, technical contracts and publication evidence only",
+        "private": "ARK27_13_PRIVATE_CONTINUITY_v001 delivered as part of the same-account startup; not a public Source12 history export",
+        "reason": "Automatic review refused the larger private-conversation GitHub payload. It was not published. This version excludes that content and private chat URLs."
+      }
+    }
+  },
+  "harvest_12": {
+    "kind": "PUBLIC_ARTIFACT_HARVEST",
+    "basis": {
+      "repository": "yusukefujiijp/ai-project",
+      "observed_ref": "9003b3420e79c262c18bff66bb0527c7e74c0a8c",
+      "source_policy": "Public repository originals and saved commits; private conversation details are not exported here"
+    },
+    "next_query": {
+      "commit": "cf024dbc312c8279d8ccd06d0e3b1609cad0cd42",
+      "paths": [
+        "AGENTS.md",
+        "_system/chatgpt/global-custom-instructions.md",
+        "skills/next-step/SKILL.md",
+        "skills/write-text/SKILL.md"
+      ],
+      "meaning": "SameThread included; matching formal recipient outside/inside, direct recipient versus generated Prompt recipient, job/Mode consistency; retain q,None,strictBoot/Failure and no-notification.",
+      "owners": "AGENTS common rules; GCI center; next-step connection selection; write-text composition.",
+      "boundary": "Repository evidence is not registration/account/UI/all-AI-use evidence."
+    },
+    "home_b": {
+      "base_commit": "358c1c2b4f20f2de1f97cd33bec8a13278e0df33",
+      "saved_commit": "158fed602a7c21c1316e32033087a4514dfecc7c",
+      "paths": [
+        "README.md",
+        "AGENTS.md",
+        "ark-project/README.md",
+        "skills/README.md",
+        "prompts/ai-collaboration-covenant.md",
+        "agents/README.md",
+        "problem-solving/README.md",
+        "control-center/README.md",
+        "prompts/torah-vision-lens.md",
+        "harness/README.md",
+        "wiki/README.md",
+        "references/README.md",
+        "agents/dots/README.md"
+      ],
+      "meaning": "Root README owns Ark全体の意味/入口、AGENTS共通規則と§4.2の適用関係、Domain番号付き領域の案内。意味訂正先を明確化。通常案内と明示Sourceは別。",
+      "preserved": [
+        "ARK.md本文/Identity/版/EOF同一",
+        "Handoff/Runtime/State/固定Source/歴史記録対象外",
+        "AGENTS§0/§6,q,None,専用Boot/Failure,無通知",
+        "Dots§4.1以降全文復元",
+        "Domain歴史/担当/八ライン/専門領域",
+        "Skills36件/TokenBurning（保存時点）,既存Review/承認記録,root§11"
+      ],
+      "verification": "Source12 original execution verified exactly13changedpaths, all13fullmainreadbacks,805otherblob/modes unchanged,40changedlinks/anchors andmetadata/version/EOF; three document scenarios checked: firstAI/directvalidHandoff/Humanmeaningcorrection.",
+      "current_boundary": "段階完了。ARK削除/redirect/物理改名/明示Binding一括移行は未実施・未承認。保持だけで契約整合を推測せず§4.2とactual explicitreadを適用。現実の他AI理解/自然選択/使いやすさは別の未観測成果。",
+      "parallel_changes": "Later main changes inclSTR-025Codex home are retained; old13-file snapshot is evidence, not a rollback template."
+    },
+    "inherited": "Fixed11 revision3 retains prior fruit; Current11 terminal receipt remains separate. Source10 STR-018/019 and other-owner outcomes are not reset.",
+    "nonpublic_continuity": {
+      "id": "ARK27_13_PRIVATE_CONTINUITY_v001",
+      "carrier": "Actual13 startup message, supplied by Source12 AI under the bounded transition authorization",
+      "covers": "Completed proxy-continuation design and receiver study; Voice preparation and reusable entry; relevant corrections, adoption versus operation, and resumption conditions",
+      "boundary": "Mandatory supplied context for13, not a GitHub file. Old source conversation is unnecessary after delivery. If absent, stop affected reconstruction and recover the existing startup message rather than invent or resend blindly."
+    }
+  },
+  "formation": {
+    "initial_public_state": {
+      "commit": "9003b3420e79c262c18bff66bb0527c7e74c0a8c",
+      "blob": "5fbafa35ccb6f5ab26dadc652606ca43f00dde78",
+      "revision": 1
+    },
+    "meaning": "Initial12 before-delivery and pre-Home-B statuses are historical; original12 README/Handoff and older fixed Sources remain unchanged."
   },
   "eof_sentinel": "ARK27_12_STATE_EOF_v002"
 }
