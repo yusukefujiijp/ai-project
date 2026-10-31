@@ -1,10 +1,10 @@
 ---
 title: Ark Harness — Repository Review
-version: 0.1.1
+version: 0.1.2
 implementation_version: 0.1.0
 status: initial-implementation
-updated: 2026-10-31
-updated_reason: 公開例・データ受渡し・状態別の利用説明と回帰検査を改訂。実行実装とHome Bの所有案内を保持。
+updated: 2026-11-01
+updated_reason: Harness内を起点とする読者別の利用経路、一件の仕事と既存ファイルの関係、外部原本を参照する段階を明確化。実行実装と既存の所有関係を保持。
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -14,11 +14,25 @@ home_b_alignment:
 
 # Ark Harness
 
-本書とWork Adapterの文書版はv0.1.1、実行実装はv0.1.0、交換schemaは1。文書・回帰検査の改訂を、実行コードの版や新しい能力の導入と混同しない。
+本書の文書版はv0.1.2、Work Adapterの文書版はv0.1.1、実行実装はv0.1.0、交換schemaは1。本書の利用案内の改訂を、実行コードの更新、新しい能力の導入、検査・試験結果の追加と混同しない。
 
 依頼、固定した原本、読解範囲、検証、成果物を一件の仕事として接続する実行補助。初版は **ChatGPT Work + GitHub読取Connector + Python 3.12以降のPOSIX環境**を対象にする。レビュー方法の原本は[Repository Review Prompt](../repository-reviews/review-prompt.md)。Harnessはその方法を複製・移動せず、実行時に固定commitから取得する。
 
-RootとHuman–AI協働の意味は[Home](../README.md#ark-identity)、共通の権限・読取・実行契約は[AGENTS.md](../AGENTS.md)が所有する。初版の導入理由・観測結果・未確認事項は[STR-024](../control-center/changes/STR-024-harness-repository-review.md)を参照する。
+## このフォルダから辿る
+
+Harness固有の説明・実装・確認方法は、`harness/`を起点に辿る。Humanや元会話を知らないAIが、Repository全域の配置や形成Threadを覚えていることを前提にしない。外部に所有される原本は、必要な段階で参照する。
+
+- **全体像を知るHuman・AI**：本書の「配置と所有」で各ファイルの役割を、「原本・実行状態・成果を分ける」で保存先の違いを、「初版が証明しないこと」で能力の限界を確認する。
+- **一件のレビューを担当するAI**：現在の依頼と適用契約を確認し、[Work Adapter](adapters/chatgpt-work/README.md)と[Profile](profiles/repository-review.toml)から、利用環境、対象、必要な原本、実行手順へ進む。現在の実行経路はChatGPT Workを対象とし、別Hostでの接続成立は未確認である。
+- **保守・確認を担当するAI**：構成表から対象の[src/ark_harness/](src/ark_harness/)と対応する[tests/](tests/)へ進む。意味判断の挙動を観察する場合は[evalsの案内](evals/README.md)を読む。機械検査と意味判断の観察は、確認できる内容が異なる。
+
+外部原本は、次の役割と段階で参照する。
+
+- **現在の依頼と実行範囲を解決するとき**：共通の権限・読取・実行契約は[AGENTS.md](../AGENTS.md)が所有する。RootとHuman–AI協働の意味は[Home](../README.md#ark-identity)が所有し、意味の回復や適用されるSource契約に応じて読む。
+- **実際のレビューに着手するとき**：[Repository Review入口](../repository-reviews/README.md)と[Review Prompt](../repository-reviews/review-prompt.md)の原本へ進む。Profileが指定する両原本の全文読解を含む読取条件は、Work Adapterと適用契約に従う。方法本文はHarnessへ複製しない。
+- **導入・改訂の理由や過去の確認結果を調べるとき**：[STR-024](../control-center/changes/STR-024-harness-repository-review.md)へ進む。過去の検査・試験結果を、現在の実行や別AIの利用成功へ読み替えない。
+
+この案内は、明示された必須Source・読取順・Identity・Binding・全文読解条件を置き換えない。参照先をすべて毎回の追加必読にはせず、同一性と適用条件を確認できる自身の読解は共通契約に従って再利用する。
 
 ## 配置と所有
 
@@ -51,6 +65,15 @@ RootとHuman–AI協働の意味は[Home](../README.md#ark-identity)、共通の
 ## 実行の入口
 
 実際のTool接続は[Work Adapter](adapters/chatgpt-work/README.md)へ。初版はPython標準ライブラリのみを使う。ConnectorはWorkのHostから呼び、Pythonが認証情報やTool関数を取得する仕組みにはしない。対象Repositoryのコードは実行しない。
+
+一件の仕事と既存ファイルは、次のようにつながる。これは役割の見取り図であり、実際の操作はWork Adapterの手順に従う。
+
+1. **依頼と条件を定める**：Host AIが現在の依頼から目的・範囲・必読原本を解決し、[Profile](profiles/repository-review.toml)で対象と方法原本の接続を確認する。[contracts.py](src/ark_harness/contracts.py)は、受け渡す依頼・原本・結果の型と条件を扱う。
+2. **原本を取得して読む**：HostがConnectorから固定版を取得し、[sources.py](src/ark_harness/sources.py)がbyte照合や読解範囲の処理を支える。取得できたことと実際に読んだことを分け、Host AIが目的に必要な資料・依存先を読み、方法原本に沿って意味を判断する。
+3. **結論を根拠へ結びつける**：Host AIが根拠・反証・適用条件に応じて判断を更新し、結論、引用、限界、残点を結果へまとめる。[checks.py](src/ark_harness/checks.py)は、その結果・引用範囲・成果物等の機械的な整合性を検査する。意味判断の正しさは、そのpassだけでは証明されない。
+4. **状態と成果を確認する**：[review.py](src/ark_harness/review.py)が開始・中断・再開・終了・証跡束を支える。HostはAdapterの状態別手順に従い、成果物と証跡の保存が委任に含まれる場合は、保存先の契約に沿って実体を確認する。runや成果物は、下記「原本・実行状態・成果を分ける」の所有に従う。
+
+目的と読解範囲をつなぐこと、根拠に応じて判断を更新すること、元会話を知らないAIも入口から利用できることは、この一件の仕事を支える能力である。それぞれに別の管理体系を設ける前提にはしない。意味判断の観察方法と証拠の区分は[evalsの案内](evals/README.md)へ進む。
 
 Repositoryのcheckoutルートから、既に利用可能なPythonで実行できる。
 
