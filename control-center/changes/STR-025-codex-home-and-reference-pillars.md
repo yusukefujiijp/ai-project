@@ -52,7 +52,14 @@ ChatGPT操作、アーカイブ・復元、Skill登録、設定変更、別AIへ
 ## 検証
 
 <!-- publication-verification:start -->
-公開前の準備段階。文書・リンク・形式・ID・原本保持を検査した後、基準headを条件に保存し、Remoteの全文とblobを再取得する。保存後の照合結果は同じ本記録へ更新する。この段階の文章をRemote検証完了の証拠にはしない。
+UTC 2026-10-31T21:07:20Z、[初版commit](https://github.com/yusukefujiijp/ai-project/commit/9003b3420e79c262c18bff66bb0527c7e74c0a8c)の12ファイルをRemoteから全文再取得し、準備したUTF-8本文とblob SHAの一致を確認した。同時にmainがこのcommitを指すことを確認した。
+
+- 公開前に68か所の新規参照の所在・必要な節、metadata／Exact EOF、JSONLの形式・型・時刻・ID一意性・sourcesを検査した。Feedback 3件・lesson 2件、局所成功事例0件を確認した。
+- 公開前のtree照合では、基準版の全834ファイルを比較し、対象外の本文・modeの保持と、意図した12パスだけの作成・更新を確認した。既存共有成功事例のID・本文、共有Skill、共有References、他Actor原本を変更していない。
+- GitHub Pluginの公開Git tree／commit／ref機能を使用し、期待head付き・非forceでmainを更新した。既存の別作業の更新を含む基準版から作成した。
+- 元会話なしの読解を想定して、目的→実行条件／経験→根拠・後続訂正→所有原本という経路と、初版／未確認／現在の権限の区別を執筆上確認した。別AIへの送信や新規Threadでの実読解試験は行っていない。
+
+この検証結果と[活動記録](../../records/2026/11/2026-11-01.jsonl)は、初版のRemote照合後に記録した。最終の記録保存自体も再取得して確認し、完了応答でそのcommitを報告する。確認のためだけの記録を反復追加しない。
 <!-- publication-verification:end -->
 
 ## 残る確認と戻し方
