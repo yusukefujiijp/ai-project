@@ -2,11 +2,11 @@
   "meta": {
     "state_id": "ARK27_13_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark27:13",
     "updated_at": "2026-11-01",
-    "date_scope": "Initial13 constructed by Source12 before actual delivery/reception",
-    "update_reason": "Human-authorized12→13 continuation; fixed public harvest, private supplied context and later receipts separated."
+    "date_scope": "Source12 observation of13 receiver acceptance after initial revision1 preparation",
+    "update_reason": "Source12 records the receiver own visible acceptance and preserves fixed harvest and initial evidence stages; no new task authorization."
   },
   "identity": {
     "source": "Ark27:12",
@@ -165,9 +165,9 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "coordinate": "13 prepared from fixed12 public harvest plus actual startup-supplied context. Delivery and receiver reconstruction not yet observed at revision1.",
+    "coordinate": "Source12 observed own13 acceptance after initial revision1; historical preparation status is not a cancellation of actual reception.",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "Own Required Sources and supplied-context reading/reconstruction; boot-only Human Review. New Human input already supplied is received without resubmission.",
+    "current_legal_connection": "HUMAN_REVIEW_AFTER_ACCEPTANCE; receive current new input without resubmission, under its actual authority.",
     "completed_outcomes_owner": "Fixed12 harvest_12, supplied private continuity, inherited fixed11/Source10 and current owner originals; evidence boundaries retained.",
     "material_corrections": [
       "Root/Teshuvah/Human Foreground One, quality, Human Meaning/Correction/STOP/Final Seal and Guard retained; AI isKeli.",
@@ -179,11 +179,6 @@
     ],
     "remaining": [
       {
-        "work": "Own13 acceptance",
-        "state": "NOT_OBSERVED_AT_PREPARATION",
-        "condition": "Own required reading plus supplied context, Identity/Binding/Triad/R1–R6; then Human Review"
-      },
-      {
         "work": "Future work selection",
         "state": "HUMAN_REVIEW_AFTER_ACCEPTANCE",
         "condition": "Use already supplied current input or later bounded request; candidates/observations in supplied context are not an automatic queue."
@@ -194,13 +189,28 @@
   },
   "evidence": {
     "fixed_source": "Source12 public harvest exact commit/blob and main readback; not receiver proof",
-    "supplied_context": "Actual startup must contain id and exact EOF; preparation does not establish delivery",
+    "supplied_context": "Source12 verified single sent startup against retrieved received body;13 reported actual appendix full read through exact EOF. Content and private URLs remain outside GitHub.",
     "unknown": [
-      "13 receiver reading/reconstruction until actual response",
       "Human device access and practical effects",
-      "Actual future use/actor capabilities beyond observed scope"
+      "Other AI actual understanding and sustained effects",
+      "Future use/actor capabilities beyond observed scope"
     ],
-    "policy": "Current12 later receipt may supersede initial non-observation; fixed evidence remains immutable."
+    "policy": "Current12 later receipt may supersede initial non-observation; fixed evidence remains immutable.",
+    "own_acceptance": {
+      "observer": "Source12",
+      "receiver": "Ark27:13",
+      "status": "OWN13_RESPONSE_OBSERVED",
+      "basis": "Actual receiver final response, not Source-prepared success",
+      "success_code": "ARK27_13_CONTEXT_READY_v001",
+      "scope": "Required Sources plus actual supplied context, Identity/Binding/Triad, substantive R1–R6 and Human Review",
+      "read_commit": "b50a3fe2437916938767e3e5f43ece39d96ef98e",
+      "read_state_revision": 1,
+      "current_receipt": {
+        "path": "ark-project/ark27/ark27-12/state.json",
+        "field": "progress.next_transition"
+      },
+      "local_link_correction": "One Runtime URL typo in response corrected by receiver; correct stored blob and completed reconstruction preserved."
+    }
   },
   "deferred": [
     "Proxy monitoring and operating trial",
@@ -214,12 +224,12 @@
     "Private third-party data or long-term-memory export"
   ],
   "progress": {
-    "source_prepared": "CONSTRUCTED_BY_SOURCE12",
-    "remote_verification": "Owned by Current12 progress.next_transition after publication",
-    "delivery": "NOT_SENT_AT_INITIAL_PREPARATION",
-    "target_reconstructed": "NOT_OBSERVED_AT_INITIAL_PREPARATION",
-    "human_last_mile": "NOT_OBSERVED",
-    "requested_outcome": "OWN13_ACCEPTANCE_THEN_HUMAN_REVIEW",
+    "source_prepared": "COMPLETE",
+    "remote_verification": "Initial triad and routes verified from main at b50a3fe2437916938767e3e5f43ece39d96ef98e; Current12 owns later receipt",
+    "delivery": "ONE_STARTUP_RECEIVED_EXACT_BODY_MATCH_VERIFIED_BY_SOURCE12",
+    "target_reconstructed": "OWN13_ACCEPTANCE_OBSERVED_BY_SOURCE12",
+    "human_last_mile": "NO_MANUAL_PASTE_OR_RENAME_REQUIRED; HUMAN_DEVICE_ACCESS_NOT_OBSERVED",
+    "requested_outcome": "OWN13_ACCEPTANCE_COMPLETE; HUMAN_REVIEW",
     "receipt_policy": "Source12 may record visible receiver evidence after actual observation; no unobserved success or unnecessary state writes."
   },
   "eof_sentinel": "ARK27_13_STATE_EOF_v002"

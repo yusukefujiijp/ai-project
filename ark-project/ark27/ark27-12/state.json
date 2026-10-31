@@ -2,11 +2,11 @@
   "meta": {
     "state_id": "ARK27_12_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:12",
     "updated_at": "2026-11-01",
-    "date_scope": "Asia/Tokyo; after fixed public harvest verified, before13 actual launch",
-    "update_reason": "Record fixed public harvest readback and publish compatible13 triad/routes; actual UI/reception remains pending."
+    "date_scope": "Asia/Tokyo; terminal Source12 receipt after13 actual delivery/reconstruction observation",
+    "update_reason": "Record finite12→13 publication, exact startup delivery, persisted Title and observed receiver reconstruction; no private conversation export."
   },
   "identity": {
     "source": "Ark27:11",
@@ -158,9 +158,9 @@
   },
   "now": {
     "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "coordinate": "Public Home B originals and Next Query recipient rules are already saved. Prepare13 continuity from public evidence plus the private continuity appendix delivered in the target startup message.",
+    "coordinate": "13 is currentMain: six-path public preparation published/read back, private supplied context delivered, exactTitle persisted and own13 acceptance observed.",
     "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "CONTINUE_APPROVED_12_TO_13_TRANSITION. Receiver13 reads its own contracts and supplied context; boot-only returns Human Review.",
+    "current_legal_connection": "FINITE_TRANSITION_COMPLETE; HUMAN_REVIEW_IN_13. No automatic old-task continuation or additional completion notification.",
     "completed_outcomes_owner": "harvest_12 public-artifact record; earlier fixed11/Source10 and other owners keep their own provenance.",
     "material_corrections": [
       "Root/Teshuvah/Human Foreground OneとCorrection/STOP/Final Seal/Guardを保持。AI・文書はKeli。",
@@ -191,14 +191,6 @@
     ],
     "remaining": [
       {
-        "work": "Ark27:12→13 transition",
-        "state": "AUTHORIZED_PREPARATION_IN_PROGRESS",
-        "goal": "12の成果・訂正・権限・残る条件を元会話なしで13が再構成し、同じArk27 Projectで再開できる",
-        "owner": "Ark27:12 through finite delivery/reception; Current13 thereafter",
-        "next_condition": "Fixed12 harvest save/readback,13 triad and routes, actual UI/send/reconstruction checks",
-        "completion": "Verified13 acceptance and observable receipts; boot-only Human Review"
-      },
-      {
         "work": "ARC-002 / STR-002 physical Binding migration",
         "state": "SOURCE10_COMPARISON_COMPLETE; PHYSICAL_CHANGE_UNEXECUTED; AI_HOLD_RECOMMENDATION_NOT_HUMAN_ADOPTION",
         "owner": "Existing case/source10 owners",
@@ -212,15 +204,14 @@
       }
     ],
     "ownership": "Main27 retains whole-repository organization/judgment within current request; not universal central approval. Support28:08,29/30,31–34 and specialists retain own work/roles. Current Domain resolves addresses.",
-    "ui_boundary": "13 UI/send/reception are unobserved at this public harvest revision; later Current12 progress.next_transition records observable stages without private chat URLs or response body.",
+    "ui_boundary": "Source12 observed exact persisted Title after reload, full sent body match and own13 reception. Human device access and practical effects are not observed. No private chat URL or response body is exported.",
     "physical_reality": "No current body/location/life action inferred from this handoff."
   },
   "evidence": {
     "fixed_source": "Verified Source11 full content at fixed commit/blob; not receiver proof.",
     "current_support": "Source07 public receipt at cbbe2d19d9e1b90272b5739a4d4173b059cb7e51 reports08 reception; attribution retained, not Source11 own UI inspection of08.",
     "unknown": [
-      "13 delivery/reconstruction at harvest time",
-      "Human access/practical benefits",
+      "Human device access and practical benefits",
       "All-AI natural selection and sustained effects"
     ],
     "policy": "Current12 terminal receipts may advance after fixed public harvest. Private branch details are supplied only in the target startup; do not infer them from this public state or claim they were publicly saved."
@@ -237,12 +228,12 @@
     "Private third-party data or long-term-memory export"
   ],
   "progress": {
-    "source_prepared": "13_PUBLIC_TRIAD_AND_PRIVATE_STARTUP_CONSTRUCTED",
-    "remote_verification": "Fixed12 revision2 main full readback verified;13 public triad/routes pending publication",
-    "target_reconstructed": "Historical12 reception retained in Current11;13 not observed",
-    "delivery": "13_NOT_SENT",
-    "human_last_mile": "NOT_OBSERVED",
-    "requested_outcome": "12_TO_13_FINITE_TRANSITION_THROUGH_ACCEPTANCE",
+    "source_prepared": "COMPLETE_PUBLIC_ARTIFACTS_AND_PRIVATE_STARTUP",
+    "remote_verification": "SIX_PUBLIC_PATHS_MAIN_FULL_READBACK_VERIFIED",
+    "target_reconstructed": "OWN13_RESPONSE_OBSERVED_R1_R6",
+    "delivery": "ONE_STARTUP_DELIVERED_AND_EXACT_BODY_VERIFIED",
+    "human_last_mile": "NO_MANUAL_PASTE_OR_RENAME_REQUIRED; HUMAN_DEVICE_ACCESS_NOT_OBSERVED",
+    "requested_outcome": "12_TO_13_FINITE_TRANSITION_THROUGH_ACCEPTANCE_COMPLETE",
     "receipt_policy": "Read actual later receipt when needed. Do not force State writes merely for acceptance or certify unobserved success.",
     "next_transition": {
       "source": "Ark27:12",
@@ -252,13 +243,13 @@
       "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
       "project_id": "g-p-6aa1d4fedde88191a7d886251dc2a388",
       "authorization": "Current Human adopted the preceding six-path plan and Title, Execute GitHub OK / Human Seal OK / Workflow Continue. No new production task after boot.",
-      "status": "SOURCE_PREPARED_BEFORE_TARGET_PUBLICATION",
+      "status": "REQUESTED_TRANSITION_COMPLETED",
       "source_prepared": true,
-      "remote_verified": "FIXED_HARVEST_ONLY; TARGET_PUBLICATION_PENDING",
-      "delivery": "NOT_SENT",
-      "target_reconstructed": "NOT_OBSERVED",
-      "human_last_mile": "NOT_YET_OBSERVED",
-      "requested_outcome": "Pending13 actual creation/startup/acceptance; then Human Review",
+      "remote_verified": "Fixed12 harvest and all six public paths fetched from main with exact body matches",
+      "delivery": "ONE_STARTUP_MESSAGE_SENT_AND_RECEIVED_BODY_MATCH_VERIFIED",
+      "target_reconstructed": "OBSERVED_OWN13_REQUIRED_READ_AND_R1_R6_RESPONSE",
+      "human_last_mile": "NO_MANUAL_PASTE_OR_RENAME_REQUIRED; HUMAN_DEVICE_ACCESS_NOT_OBSERVED",
+      "requested_outcome": "Actual13 created in existingProject, startup accepted with own reconstruction, persistedTitle verified and local link corrected; Human Review.",
       "scope_paths": [
         "ark-project/ark27/ark27-12/state.json",
         "ark-project/ark27/ark27-13/README.md",
@@ -288,8 +279,57 @@
         "ark-project/README.md",
         "control-center/github/PLAN.md"
       ],
-      "private_delivery": "Prepared within Source conversation; not yet sent; no private content/URLs in GitHub.",
-      "base_before_harvest": "b57a43216688245edbf790b575d872b46dd34418"
+      "private_delivery": "Full supplied-context appendix delivered in the single same-account startup; retrieved message matches original after trim. Not published on GitHub.",
+      "base_before_harvest": "b57a43216688245edbf790b575d872b46dd34418",
+      "publication": {
+        "fixed_harvest_commit": "2346015f77e7366bbbf9022ef1cff1e18e3d4e05",
+        "triad_routes_commit": "b50a3fe2437916938767e3e5f43ece39d96ef98e",
+        "all_six_main_readbacks_equal": true,
+        "unaffected_blobs_preserved": 840,
+        "concurrent_commits_retained": [
+          "9003b3420e79c262c18bff66bb0527c7e74c0a8c",
+          "b57a43216688245edbf790b575d872b46dd34418"
+        ]
+      },
+      "ui_verification": {
+        "actor": "Source12 AI using authorized ChatGPT UI",
+        "project_name": "Ark27_2026/09/10: ChatGPT6Astra_Start",
+        "project_id": "g-p-6aa1d4fedde88191a7d886251dc2a388",
+        "existing_target_check": "ExistingProject inspected before creation; no13 present",
+        "persistent_target_created": true,
+        "startup_send_count": 1,
+        "received_startup_full_body_equal_after_trim": true,
+        "compiled_title": "Ark27:13_2026/11/01; \"主の完全勝利: 整えた入口と成果を継ぎ、協働を続ける\"",
+        "title_exact_after_reload": true,
+        "ui_url": "Kept only in same-account conversation, not this public receipt",
+        "model_observation": "GPT-6 Astra / xhigh; fast mode unchecked; no model or account setting changed"
+      },
+      "receiver_receipt": {
+        "actor": "Ark27:13",
+        "observer": "Source12",
+        "basis": "Actual complete receiver response read in UI; hidden reasoning and other AI understanding are not asserted",
+        "success_code": "ARK27_13_CONTEXT_READY_v001",
+        "first_normal_response_title_exact": true,
+        "required_sources": "1–15 in declared order;1–13 and15 full,14 metadata/Identity and current before diagnosis-history",
+        "supplied_context": "Actual received appendix id through exact EOF; receiver reports full read without gap",
+        "identity_binding_triad": "Receiver named all three IDs, EOFs, fixed12 revision2 commit/blob and role/Project/Title agreement",
+        "reconstruction": {
+          "R1": "Same-chapter Main continuation; roles and wholeArk/repository/domain distinguished",
+          "R2": "Root/Teshuvah/Human authority/Guard and finite transition/new-task boundary retained",
+          "R3": "Fixed harvest, Current receipt and supplied context; storage, sending, own reading and unobserved Human access separated",
+          "R4": "Completed public outcomes, adoption/registration/report distinctions and important corrections retained",
+          "R5": "Completed preparation/design versus unoperated conditions; existing owners and observations not promoted into new tasks",
+          "R6": "Boot acceptance complete; Human Review; no automatic old task, monitoring or cross-thread sending"
+        },
+        "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
+        "end_state": "HUMAN_REVIEW; NEXT_QUERY_NONE",
+        "local_correction": {
+          "issue": "Runtime hyperlink owner typo in receiver response only; cited blob and stored originals correct",
+          "repair": "One Source12 AI-labelled local correction sent; no boot or full-reading replay",
+          "status": "CORRECT_LINK_OBSERVED_IN_RECEIVER_REPLY; NO_BOOT_REPLAY",
+          "correct_url": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark27/ark27-13/README.md"
+        }
+      }
     }
   },
   "harvest_12": {
