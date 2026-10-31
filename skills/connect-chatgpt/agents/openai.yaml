@@ -1,0 +1,4 @@
+interface:
+  display_name: "ChatGPT接続"
+  short_description: "保存済みプロフィールを再利用し、本人のChatGPTへの接続を確認"
+  default_prompt: "$connect-chatgpt を使って、保存済みプロフィールから私のChatGPTに接続して。"

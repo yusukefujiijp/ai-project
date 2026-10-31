@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.48.1
+version: v0.48.2
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-10-31
 home_b_alignment:
@@ -8,7 +8,7 @@ home_b_alignment:
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
-updated_reason: "2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
+updated_reason: "2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -67,10 +67,11 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行36件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行37件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
+| ChatGPT接続 / connect-chatgpt | 保存済みプロフィールを使う本人のChatGPTへの接続・再接続、必要時の再認証への案内 | [README・Query](connect-chatgpt/README.md) / [SKILL.md](connect-chatgpt/SKILL.md) |
 | Ark-OKF / ark-okf-responder | Ark-OKFの明示的な適用依頼。意味・根拠・成立条件・訂正可能性を保ち、現在の問いに合う回答へ整える | [README・Query](ark-okf-responder/README.md) / [SKILL.md](ark-okf-responder/SKILL.md) |
 | 見られるSlides / create-viewable-slides | ChatGPT Slides化の依頼からGitHub保存・iPhone閲覧へ接続。既存PPTXの閲覧リンク・共有ショートカット導入にも対応 | [README・Query](create-viewable-slides/README.md) / [SKILL.md](create-viewable-slides/SKILL.md) |
 | Thread総括 / synthesize-thread | 対話の重要な意味・訂正・発見を用途に合わせて総括。方法・構成はAIへ開き、Feedbackの適用範囲を保持 | [README・Query](synthesize-thread/README.md) / [SKILL.md](synthesize-thread/SKILL.md) |
@@ -293,4 +294,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.48.1
+EOF::ARK_SHARED_SKILLS_HUB::v0.48.2
