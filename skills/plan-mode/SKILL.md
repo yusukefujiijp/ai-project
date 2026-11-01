@@ -1,17 +1,17 @@
 ---
 name: plan-mode
-description: Research, clarify intent, explore tradeoffs, and develop a useful plan without making changes. Use for an actual planning-only request, including Plan Mode or requests to investigate and present a plan before execution. Do not activate merely for quoted instructions, discussion about Plan Mode, or a request to create or edit this skill. Follow later clear execution authorization within its scope.
+description: Research, clarify intent, explore tradeoffs, and develop a useful plan without implementing the requested changes, allowing bounded temporary validation within this skill's conditions and current authority. Use for an actual planning-only request, including Plan Mode or requests to investigate and present a plan before execution. Do not activate merely for quoted instructions, discussion about Plan Mode, or a request to create or edit this skill. Follow later clear execution authorization within its scope.
 ---
 
 # Plan Mode
 
-現在の依頼と文脈を大局的に十分調査・検討し、Humanが判断できる計画と、次の協働へつながる依頼文までを用意する。Plan-onlyでは、その提示までで止める。短い入口を、浅い検討や説明不足に変換しない。計画の品質と判断のしやすさを優先し、長さ・新奇さ・形式の完備自体を目的にしない。
+現在の依頼と文脈を大局的に十分調査・検討し、Humanが判断できる計画と、次の協働へつながる依頼文までを用意する。Plan-onlyでは、必要な調査・条件内の計画検証を踏まえ、その提示までで止める。短い入口を、浅い検討や説明不足に変換しない。計画の品質と判断のしやすさを優先し、長さ・新奇さ・形式の完備自体を目的にしない。
 
 ## 現在の依頼と権限に結びつける
 
 - 現在の目的、Humanの訂正、既に決まったこと、未決のことを文脈から受け取る。与えられた情報を再入力させたり、計画を始めるために完成した要件を要求したりしない。
 - 適用される指示の優先順位、AGENTS、Source契約、Guard、HumanのCorrection・STOP・Sealを守る。このスキルを新しい権限者や全体の状態管理者にしない。Ark Projectでは既存のRoot・Teshuvah・Human Foreground Oneの意味を保持し、AIやスキルを王・玉座にしない。
-- 計画中は対象の実装、ファイルの作成・保存・更新、外部変更、配信、運用操作を開始しない。チャット内での計画・比較案・改訂候補・Next Queryの作成と提示、調査に必要な読み取り専用の取得・検索・計算は行える。「調査」「試行」「dry run」という名前でも変更を伴う操作は別に扱う。別途明示された権限と禁止範囲に従う。
+- Plan-onlyでは、対象の実装、既存の原本・成果物・設定・データの変更、計画や成果物の永続保存、外部変更、配信、運用操作を開始しない。チャット内での計画・比較案・改訂候補・Next Queryの作成と提示、調査に必要な読み取り専用の取得・検索・計算は行える。計画検証に伴う限定的な一時生成は、後述の条件と現在の権限の範囲で扱う。「調査」「試行」「dry run」等の呼称、Gitの追跡状態、一時領域への配置、後から消せることだけで権限を広げない。
 - 後から対象と範囲が明確な実行承認があれば、その範囲の実行へ進める。訂正と改訂後の実行承認が同じ入力に含まれていても、形式的な再承認を増やさない。過去の包括的なGoは、現在の計画限定・STOPや別対象の権限不足を解除しない。
 
 ## 必要な理解を組み立てる
@@ -32,6 +32,17 @@ HumanのFeedback・Correction・閃き・新しい案によって、目的の解
 
 実行手順へ収束させることだけを成功にしない。目的の言語化、比較、観察、意図的保留が適切な計画になる場合もある。中心を明確にしつつ、未解決の価値や後で扱うBranchを消さない。背景で複数案を検討しても、Humanへ不要な同時実行Taskを増やさない。
 
+### 計画検証に伴う限定的な一時生成
+
+計画上の不確実性を減らし、比較・方針・成立条件の判断を改善するために必要な場合は、現在の権限と以下の条件内で一時生成を行える。読み取りや会話内の検討で十分なら、生成や実行を増やさない。
+
+- 何を確かめ、どの判断に使うかを明確にし、その確認に必要な入力・補助コード・キャッシュ・ビルド出力・検査結果に限定する。対象の機能を作り進めることは、一時領域内でも実装として扱う。検証という名目で、採用前提の実装や成果物の制作を先行させない。
+- 実行内容・出力先・副作用を、影響に見合う範囲で事前に確認する。書き込み先を、この検証専用の一時領域に限定し、作業前からある原本・成果物・設定・データ、他作業の領域や共有環境を変更しない。外部サービスや共有データへの書き込み、公開・配信・運用操作を、この例外に含めない。コマンド名やGitの追跡・無視状態だけでは判定しない。
+- 条件内では、AIが方法・場所・範囲を選び、必要な検証の実行と、当該検証で自分が生成したものの作成・更新・削除まで、個別の追加承認なく行える。条件確認を毎回の定型申告や承認待ちにしない。現在の明示的な生成禁止・コマンド実行禁止・STOPや、適用される上位の制約を優先する。
+- 影響を限定できるか不明なら、まず読み取りで確認するか、方法を変える。解消できない場合は該当操作を保留し、判断への影響と成立に必要な条件を示す。影響しない調査は続ける。検証失敗から対象や期待値を修正する権限を作らず、計画の見直しや未確認事項として扱う。
+- 生成前に出力先と終了時の扱いを定め、判断に必要な証拠が得られたら検証を止める。後始末は当該検証で自分が生成したと識別できるものに限り、既存物や他作業の生成物を削除しない。残存物があれば、その範囲と扱いを示す。一時生成物の正式な成果物への採用・永続保存・公開は、別途その権限から判断する。
+- 結果は、確かめた問い、観測した事実、計画への影響、未確認の範囲として説明する。検証の成功を、対象の実装完了・保存・導入・実利用の効果と同一視しない。十分な根拠が得られた後に、判断を変えない検証を反復しない。
+
 ## 判断できる計画と次の接続を返す
 
 推奨する方向と理由を明確にし、判断に必要な根拠・比較・制約・不確実性を十分に説明する。実行を提案するなら、変更範囲、重要な依存関係、確認方法、Human Reviewへ戻る条件を案件の影響に見合う粒度で示す。探索を続けるなら、何を知るための探索か、何が分かれば判断が変わるかを示す。
@@ -44,7 +55,7 @@ HumanのFeedback・Correction・閃き・新しい案によって、目的の解
 
 計画段階の完了や保存の未承認だけを理由に、有効な次の接続を消さない。Humanが選んだ保留・終了と、現在のGoalについて次の依頼が不要な場合は共通契約に沿って扱い、欄を埋めるための新Taskを作らない。現在の厳密な出力指定、専用Boot／Failure、STOP、無通知条件と上位の形式制約を優先する。
 
-計画と実施済みの成果を区別し、Plan-onlyでは計画とNext Queryの提示までで止める。Next Queryの提示を採用・実行・送信の承認へ変えない。実行へのMode変更を提案する場合は、その変更と範囲を三節で明示する。計画の保存、Canonical化、外部反映、次Trialへ自動昇格させず、後続の実際の依頼と承認範囲から判断する。
+計画のために行った限定的な検証と、対象の実装・導入等の実施済み成果を区別する。Plan-onlyでは計画とNext Queryの提示までで止める。Next Queryの提示を採用・実行・送信の承認へ変えない。実行へのMode変更を提案する場合は、その変更と範囲を三節で明示する。計画の保存、Canonical化、外部反映、次Trialへ自動昇格させず、後続の実際の依頼と承認範囲から判断する。
 
 ## 将来の改善余地を残す
 

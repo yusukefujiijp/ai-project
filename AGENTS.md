@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.14-candidate"
+version: "v004.15-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-10-31"
+updated: "2026-11-01"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -145,7 +145,16 @@ next_query_direct_recipient_patch:
   base_blob: "5fe94717a53793eaf51e50ee5411fa62e6231e4c"
   authority: "Current Human adopted the concrete recipient-rule revision and authorized changes to exactly four shared originals on main; registered Skills, account settings and other-AI delivery are excluded"
   scope: "Extend ordinary Next Query recipient display to the same Thread, distinguish the direct recipient from a generated Prompt's future recipient, and check both labels and the work requested; preserve q, output exceptions, prior completion and authority boundaries"
+plan_validation_patch:
+  design_date: "2026-11-01"
+  source_thread: "Ark00: Draft White Board"
+  design_base_commit: "ec460e9649f258207169bcce961406fee936e07f"
+  base_blob: "789ff0be1a7d33675508cf24e17543f14dc30ffb"
+  design_authority: "Current Human adopted the bounded temporary validation design and requested conversation-only complete drafts; this design turn did not authorize command-based validation, temporary file generation, persistence, registration updates or settings changes"
+  scope: "Connect the Plan-only summary and execution boundary to the applicable plan-mode conditions; preserve explicit prohibitions, STOP, target implementation and persistence boundaries, other Skills and prior formation records"
+  validation_boundary: "Source reading and editorial consistency review only at the design stage; behavioral, command-based, persistence, registration and real-world validation of this revision remain separate"
 updated_reason:
+  - "2026-11-01: Define the bounded temporary-validation exception for applicable Plan Mode work, keep detailed conditions in plan-mode, and preserve explicit generation or command prohibitions, STOP and existing authority boundaries."
   - "2026-10-29: Require matching formal recipients outside and inside ordinary Next Queries, including the same Thread; distinguish the current request from a generated Prompt and resolve missing or inconsistent destinations before presentation."
   - "2026-10-28: Show the formal recipient before copying a Next Query addressed to another Thread or AI; preserve one complete copy unit, recipient consistency, q meaning, valid delegation, and dedicated-output exceptions."
   - "2026-10-27: Route Ark startup and recovery to keybindings/README.md without depending on q recognition; preserve full-query adoption, Human choice and prior quality, authority and evidence boundaries."
@@ -180,7 +189,7 @@ updated_reason:
 最初に、依頼の目的・対象・期待する成果・権限・停止条件を読む。既に文脈内で明確な情報は再質問しない。
 
 - **Discussion / Review:** 必要な読取・分析・比較・提案を行う。依頼されていない外部変更へ進まない。
-- **Plan-only:** 調査と計画提示で止める。実装、ファイル変更、GitHub Writeを行わない。
+- **Plan-only:** 調査・計画検証と計画提示で止める。対象の実装、成果物の永続保存、外部変更、GitHub Writeを行わない。ファイル生成・変更は原則行わず、第5節に定める限定的な一時検証だけを例外として扱う。
 - **Authorized execution:** 承認Scope内の作成・修正・必要な検証まで完遂する。実行できる残作業を提案だけにしてHumanへ返さない。
 - **Continuation / Recovery:** 有効な承認と確認済みContextを再利用する。中断後は実行結果と残作業を照合し、Threadの終端や途中報告をTask完了と同一視しない。
 - **STOP / unresolved boundary:** Human STOPを優先する。不足がある場合は第2.1節に従い、止める範囲と再開条件を明示する。
@@ -308,6 +317,8 @@ Skillの作成・更新は適用されるskill-creation workflowに従う。既�
 - Toolが使えること、ファイルが存在すること、計画を作ったこと、BrainDumpや称賛だけでは新しい外部変更の権限にならない。
 - ファイル名や方法などの通常の選択は、委任Scope内でAIが具体化できる。Humanへ全Pathの手入力を要求しない。
 - rename・move・delete等も、操作名だけで一律に判定せず、現在の承認に含まれる目的・対象・影響を確認する。未承認の破壊的操作、公開、外部送信、購入、権限変更を自己承認しない。
+
+Plan-onlyの一時生成は、現在の依頼に[Plan Mode](skills/plan-mode/SKILL.md)が適用され、その「計画検証に伴う限定的な一時生成」の条件を満たす場合に限る。この例外は計画の根拠を得るための検証に限定し、対象の実装・永続変更・外部変更の権限を含まない。現在の明示的な生成禁止・コマンド実行禁止・STOPや、より狭い制約を優先する。
 
 計画機能は必要だが、独立したPlan Phaseや毎工程のHuman待ちを常に要求しない。完了できる依頼は完了させる。本当の阻害要因がある場合は、達成部分、残作業、原因、再開条件を示して価値を残す。部分成果を、可能な完遂を省く理由にしない。
 
