@@ -1,4 +1,4 @@
 interface:
   display_name: "Plan Mode"
-  short_description: "未整理の意図と現在の文脈から十分に検討し、変更せず計画提示で止まる"
-  default_prompt: "Plan Modeスキル（$plan-mode）を使い、現在の依頼と文脈を調査・検討して、計画を提示してください。変更や実行はせず、計画提示で止めてください。"
+  short_description: "未整理の意図を大局的に検討し、変更せず計画と次の依頼へつなぐ"
+  default_prompt: "【Plan Mode】\n\n- 宛先：この依頼を受け取ったAI。\n\n- $plan-modeを使い、現在の依頼と文脈を大局的に十分検討し、Humanの判断・閃きと次の協働につながる計画を提示してください。Plan-onlyとし、Skillの出力契約に従ってNext Queryまで用意し、保存・実装・外部変更は行わないでください。\n\n- Skillを直接利用できない場合は、共有原本を実際に全文読んで適用してください。\n  https://github.com/yusukefujiijp/ai-project/blob/main/skills/plan-mode/SKILL.md\n\n- 必須Source・読取順・Identity・Binding・Exact EOFを守り、同一性と適用文脈を確認できる読解は再利用してください。取得・表示切れは回収し、必須資料が不足する場合は、未確認範囲・影響・最小の回復方法を示してください。"
