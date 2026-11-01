@@ -1,0 +1,97 @@
+{
+  "$schema": "../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark00-recall-hub-2026-11-01-task-records",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-11-01",
+  "updated": "2026-11-01",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark00: Draft White Board／Recall Hubへの季節メモ（Thread正式Title・URL未確認）",
+    "canonical_path": "ark-project/ark00/recall-hub-2026-11-01/task-records.json",
+    "reported_date": "2026-11-01",
+    "timezone": "Asia/Tokyo",
+    "time_note": "報告受付日は現在のクライアント日時（Asia/Tokyo）に基づく。体験時期は本人の「10月下旬」のみ。体験年・個別日・時刻・地域を受付日やプロフィールから補わない。",
+    "authority_note": "現在のHumanは、この一件を公開GitHubのyusukefujiijp/ai-projectのRecall Hubへ保存してよいかという確認に「保存して下さい！」と明示承認した。mainの経験原本・局所入口・対応itemsの保存と再取得確認を対象とする。Skill・設定・通知・他Taskの変更承認へ拡張しない。季節メモの通常運用はark-recall-portal/README.md §4.4に従う。",
+    "source_access": "現在のHumanメッセージの原文を下記Sourceへ同梱。外部会話として同文の引用も提示されているが、別経験には数えない。Thread URL・外部メッセージIDは未確認。",
+    "extensions": {
+      "storage_identity_note": "recall-hub-2026-11-01は今回AIが付けた保存用識別子であり、ChatGPTのThread Title・番号・外部IDではない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "10月下旬の帰宅時にはTシャツを替えなくてよくなるという本人の季節メモ",
+      "今回の本文と公開GitHub保存先に対する本人の明示保存承認"
+    ],
+    "excludes": [
+      "他のThread内容",
+      "ChatGPT長期メモリ",
+      "体験年・地域の推定",
+      "発汗・気温等の原因推定",
+      "毎年の再現性や着替え不要の一般則"
+    ],
+    "note": "今回の一件を選択収録。先行して提示された同文は一つの報告の再掲として扱い、独立した経験を増やさない。"
+  },
+  "sources": [
+    {
+      "id": "october-late-tshirt-s01",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark00: Draft White Boardの本Threadで2026-11-01に受け取った@recall-hub宛てのHumanメッセージ。正式Thread Title・URL・外部メッセージIDは未確認。",
+      "excerpt": "@recall-hub \n10月下旬: 帰宅時 Tシャツ替えなくて良くなる",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "季節の実体験・所感として受領。年・地域・気温・理由の記載はない。"
+    },
+    {
+      "id": "october-late-tshirt-save-s02",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "本Threadで、今回の一件を公開GitHubのRecall Hubへ保存する確認を受けた後の2026-11-01のHuman返信。",
+      "excerpt": "保存して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "今回の本文と保存先への明示承認。別の個人情報や別Taskへの一般承認ではない。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "october-late-return-home-tshirt",
+      "kind": "observation",
+      "label": "10月下旬は帰宅時にTシャツを替えなくてよくなる",
+      "description": "本人は「10月下旬: 帰宅時 Tシャツ替えなくて良くなる」と報告した。表題は読みやすく整えた編集要約であり、原文はSourceに保持する。",
+      "scope": "本人が報告した10月下旬・帰宅時の季節の気付き。現在の帰宅・着替えの実施報告や、着替えの恒久禁止にはしない。",
+      "time_text": "10月下旬（体験年・個別日未指定）",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "october-late-tshirt-s01"
+        ],
+        "note": "本人がこの所感を報告したことの確認。毎年の再現性や気温との因果の実証ではない。"
+      },
+      "extensions": {
+        "experience_year": null,
+        "region": null,
+        "unknown_note": "体験年・地域・気温・発汗の程度・着替え不要になる理由は未報告。保存や想起のための追加質問は必要ない。"
+      }
+    }
+  ],
+  "edges": [],
+  "open_questions": [],
+  "extensions": {
+    "revision_history": [
+      {
+        "revision": 1,
+        "date": "2026-11-01",
+        "reason": "現在の@recall-hubへの季節メモを、原文・時期・場面と未指定事項を保って選択保存。公開GitHubへの明示保存承認も原文で保持する。",
+        "source_refs": [
+          "october-late-tshirt-s01",
+          "october-late-tshirt-save-s02"
+        ]
+      }
+    ]
+  }
+}

@@ -1,13 +1,13 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 8,
-  "updated": "2026-10-11",
+  "revision": 9,
+  "updated": "2026-11-01",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼、2026-10-11 Ark99:02の乾燥後・買い物後の帰宅時即仕分けにおけるCaffeineの使い所の発見",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼、2026-10-11 Ark99:02の乾燥後・買い物後の帰宅時即仕分けにおけるCaffeineの使い所の発見、および2026-11-01 Ark00で受け取った10月下旬の帰宅時Tシャツの季節メモ（体験年・地域未指定）",
     "complete_project_history": false,
-    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の入口を追加したが、季節の実体験項目はまだ未収録。仙台の天候や衣類の設計例は本番候補に含めない。"
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の実体験として、10月下旬の帰宅時Tシャツの本人報告を収録（体験年・地域未指定）。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
   "scenes": [
     {
@@ -760,6 +760,72 @@
       "episode_overrides": [],
       "corrections": [],
       "evidence_note": "Humanによる用途の発見・重要性・Teshuvahと、AIの関係整理を原本で分けた想起用の編集要約。activeは想起候補であり、飲用の推奨・実施・効果・信仰上の義務を意味しない。現在のHuman Correctionと適用Guardを優先する。"
+    },
+    {
+      "id": "october-late-return-home-tshirt",
+      "scene_ids": [
+        "seasonal-recall"
+      ],
+      "label": "10月下旬は帰宅時にTシャツを替えなくてよくなる",
+      "recall": "10月下旬になると、帰宅時にTシャツを替えなくてよくなるという本人の季節の気付きを思い出す。",
+      "status": "active",
+      "retrieval_hints": [
+        "10月",
+        "10月下旬",
+        "秋",
+        "季節",
+        "服装",
+        "帰宅時",
+        "帰宅",
+        "着替え",
+        "Tシャツ",
+        "Tシャツ交換",
+        "Tシャツを替える"
+      ],
+      "conditions": {
+        "applies_when": [
+          "10月・10月下旬の季節の経験や、帰宅時の服装・着替えについて本人の過去の記録を思い出したい時"
+        ],
+        "do_not_assume": [
+          "体験年・地域・個別日・気温",
+          "発汗量や着替え不要になる原因",
+          "今回の帰宅・着替えの実施や現在の衣類の状態",
+          "毎年・毎日・あらゆる条件で着替えが不要という一般則",
+          "Tシャツを替えてはいけないという指示や恒久的な取消し",
+          "通知・Schedule・常時検知の設定"
+        ]
+      },
+      "source_refs": [
+        {
+          "path": "ark-project/ark00/recall-hub-2026-11-01/task-records.json",
+          "record_id": "ark00-recall-hub-2026-11-01-task-records",
+          "reviewed_revision": 1,
+          "node_ids": [
+            "october-late-return-home-tshirt"
+          ],
+          "source_ids": [
+            "october-late-tshirt-s01"
+          ]
+        }
+      ],
+      "episode_overrides": [],
+      "corrections": [],
+      "evidence_note": "現在のHumanの原文を保存した経験原本に基づく想起用の編集要約。体験年・地域は未指定のまま保持。activeは想起候補を示し、Task状態や現在の行動命令ではない。",
+      "recall_context": {
+        "period_text": "10月下旬",
+        "periods": [
+          {
+            "month": 10,
+            "part": "late"
+          }
+        ],
+        "topics": [
+          "帰宅時",
+          "服装",
+          "Tシャツ",
+          "着替え"
+        ]
+      }
     }
   ]
 }
