@@ -1,13 +1,13 @@
 {
   "format": "ark-recall-items",
   "format_version": "v002",
-  "revision": 9,
+  "revision": 10,
   "updated": "2026-11-01",
   "role": "source-linked recall view; not an independent event ledger",
   "coverage": {
-    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼、2026-10-11 Ark99:02の乾燥後・買い物後の帰宅時即仕分けにおけるCaffeineの使い所の発見、および2026-11-01 Ark00で受け取った10月下旬の帰宅時Tシャツの季節メモ（体験年・地域未指定）",
+    "scope": "初版の休日前準備・Token Reset、2026-10-01 Ark28:01の就寝前フットマッサージ、および2026-10-02 Ark28:02の出勤時タオル想起希望、2026-10-04 Ark28:03の休日前の納豆想起希望、2026-10-07 Ark28:05の休日前ワコー・一日一店以内の方針（2026-10-08明示保存依頼）、2026-10-08 Ark28:05の就寝前サプリ摂取・舌出し運動の想起登録依頼、2026-10-11 Ark99:02の乾燥後・買い物後の帰宅時即仕分けにおけるCaffeineの使い所の発見、および2026-11-01 Ark00で受け取った帰宅時Tシャツの季節メモ（本人が「10月下旬」から「11月から」へ訂正。基点2026/11/01、地域・終期未指定）",
     "complete_project_history": false,
-    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の実体験として、10月下旬の帰宅時Tシャツの本人報告を収録（体験年・地域未指定）。仙台の天候や衣類の設計例は本番候補に含めない。"
+    "note": "ここに無いことと、Ark全履歴に存在しないことは異なる。就寝前の初期希望全件を移植した一覧ではない。その他の就寝前希望はTask Mode Systemの経験索引§3.9から原本へ辿れる。 出勤時は首に巻くタオルの選択登録であり、持ち物全件の網羅ではない。 季節・時期の実体験として、11月からの帰宅時Tシャツの本人報告を収録（2026/11/01の本人訂正を反映、地域・終期未指定）。仙台の天候や衣類の設計例は本番候補に含めない。"
   },
   "scenes": [
     {
@@ -766,12 +766,13 @@
       "scene_ids": [
         "seasonal-recall"
       ],
-      "label": "10月下旬は帰宅時にTシャツを替えなくてよくなる",
-      "recall": "10月下旬になると、帰宅時にTシャツを替えなくてよくなるという本人の季節の気付きを思い出す。",
+      "label": "11月からは帰宅時にTシャツを替えなくてよくなる",
+      "recall": "11月からは、帰宅時にTシャツを替えなくてよくなるという本人の季節の気付きを思い出す。初回の「10月下旬」は2026/11/01の本人発言で「11月から」へ訂正済み。",
       "status": "active",
       "retrieval_hints": [
-        "10月",
-        "10月下旬",
+        "11月",
+        "11月から",
+        "11月以降",
         "秋",
         "季節",
         "服装",
@@ -784,39 +785,61 @@
       ],
       "conditions": {
         "applies_when": [
-          "10月・10月下旬の季節の経験や、帰宅時の服装・着替えについて本人の過去の記録を思い出したい時"
+          "11月からの季節の経験や、帰宅時の服装・着替えについて本人の記録を思い出したい時"
         ],
         "do_not_assume": [
-          "体験年・地域・個別日・気温",
+          "地域・気温・終期、期間全日の観察実績",
           "発汗量や着替え不要になる原因",
           "今回の帰宅・着替えの実施や現在の衣類の状態",
           "毎年・毎日・あらゆる条件で着替えが不要という一般則",
           "Tシャツを替えてはいけないという指示や恒久的な取消し",
-          "通知・Schedule・常時検知の設定"
+          "通知・Schedule・常時検知の設定",
+          "『11月から』を11月末までに限定すること、または以降の全月・毎年に自動適用すること",
+          "初回の『10月下旬』を訂正後も現在の適用時期として扱うこと"
         ]
       },
       "source_refs": [
         {
           "path": "ark-project/ark00/recall-hub-2026-11-01/task-records.json",
           "record_id": "ark00-recall-hub-2026-11-01-task-records",
-          "reviewed_revision": 1,
+          "reviewed_revision": 2,
           "node_ids": [
-            "october-late-return-home-tshirt"
+            "november-onward-return-home-tshirt-correction"
           ],
           "source_ids": [
-            "october-late-tshirt-s01"
+            "october-late-tshirt-s01",
+            "tshirt-period-correction-s03"
           ]
         }
       ],
       "episode_overrides": [],
-      "corrections": [],
-      "evidence_note": "現在のHumanの原文を保存した経験原本に基づく想起用の編集要約。体験年・地域は未指定のまま保持。activeは想起候補を示し、Task状態や現在の行動命令ではない。",
+      "corrections": [
+        {
+          "scope": "同一の季節メモの開始時期。2026/11/01の本人訂正を現在の意味として適用する。",
+          "change": "「10月下旬」から「11月から」へ変更。原文・安定ID・旧観測を保持し、経験原本のcorrectsで訂正を接続。経験年の基点2026は今回の本人の明示発言に基づく。",
+          "source_refs": [
+            {
+              "path": "ark-project/ark00/recall-hub-2026-11-01/task-records.json",
+              "record_id": "ark00-recall-hub-2026-11-01-task-records",
+              "reviewed_revision": 2,
+              "node_ids": [
+                "november-onward-return-home-tshirt-correction"
+              ],
+              "source_ids": [
+                "october-late-tshirt-s01",
+                "tshirt-period-correction-s03"
+              ]
+            }
+          ]
+        }
+      ],
+      "evidence_note": "初回報告と2026/11/01の本人Correctionに基づく想起用の編集要約。現在の時期は『11月から』。IDは参照の安定性のため初回のまま保持する。地域・終期は未指定。activeは想起候補を示し、Task状態や現在の行動命令ではない。",
       "recall_context": {
-        "period_text": "10月下旬",
+        "period_text": "11月から",
         "periods": [
           {
-            "month": 10,
-            "part": "late"
+            "month": 11,
+            "part": "whole"
           }
         ],
         "topics": [

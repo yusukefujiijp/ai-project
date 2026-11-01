@@ -3,7 +3,7 @@
   "format": "ark-task-records",
   "format_version": "v001",
   "record_id": "ark00-recall-hub-2026-11-01-task-records",
-  "revision": 1,
+  "revision": 2,
   "role": "thread_experience_record",
   "created": "2026-11-01",
   "updated": "2026-11-01",
@@ -13,9 +13,9 @@
     "canonical_path": "ark-project/ark00/recall-hub-2026-11-01/task-records.json",
     "reported_date": "2026-11-01",
     "timezone": "Asia/Tokyo",
-    "time_note": "報告受付日は現在のクライアント日時（Asia/Tokyo）に基づく。体験時期は本人の「10月下旬」のみ。体験年・個別日・時刻・地域を受付日やプロフィールから補わない。",
-    "authority_note": "現在のHumanは、この一件を公開GitHubのyusukefujiijp/ai-projectのRecall Hubへ保存してよいかという確認に「保存して下さい！」と明示承認した。mainの経験原本・局所入口・対応itemsの保存と再取得確認を対象とする。Skill・設定・通知・他Taskの変更承認へ拡張しない。季節メモの通常運用はark-recall-portal/README.md §4.4に従う。",
-    "source_access": "現在のHumanメッセージの原文を下記Sourceへ同梱。外部会話として同文の引用も提示されているが、別経験には数えない。Thread URL・外部メッセージIDは未確認。",
+    "time_note": "初回は「10月下旬」と報告されたが、本人が「今日は2026/11/01なので、11月からに変更」と明示訂正した。現在の季節表現は「11月から」。2026年という基点は今回の本人発言に基づく。終期・地域・気温・観察頻度を推定せず、受付日・訂正日と全期間の観測実績を分ける。",
+    "authority_note": "現在のHumanは、この一件を公開GitHubのyusukefujiijp/ai-projectのRecall Hubへ保存してよいかという確認に「保存して下さい！」と明示承認した。mainの経験原本・局所入口・対応itemsの保存と再取得確認を対象とする。Skill・設定・通知・他Taskの変更承認へ拡張しない。季節メモの通常運用はark-recall-portal/README.md §4.4に従う。 その後、本人は本Threadで保存済みの時期を「11月から」へ変更するよう明示指示した。この同一記録と対応索引・局所入口の訂正、保存後確認を実行する。",
+    "source_access": "本人の原発言・保存承認・今回の訂正を下記Sourceへ同梱。外部会話として提示された同文の引用は別経験には数えない。Thread URL・外部メッセージIDは未確認。",
     "extensions": {
       "storage_identity_note": "recall-hub-2026-11-01は今回AIが付けた保存用識別子であり、ChatGPTのThread Title・番号・外部IDではない。"
     }
@@ -24,8 +24,9 @@
     "kind": "selected_thread_material",
     "thread_complete": false,
     "includes": [
-      "10月下旬の帰宅時にはTシャツを替えなくてよくなるという本人の季節メモ",
-      "今回の本文と公開GitHub保存先に対する本人の明示保存承認"
+      "11月からは帰宅時にTシャツを替えなくてよくなるという本人の季節メモ（当初の「10月下旬」から本人が訂正）",
+      "今回の本文と公開GitHub保存先に対する本人の明示保存承認",
+      "2026/11/01を基点に時期を「11月から」へ変更する本人の訂正"
     ],
     "excludes": [
       "他のThread内容",
@@ -34,7 +35,7 @@
       "発汗・気温等の原因推定",
       "毎年の再現性や着替え不要の一般則"
     ],
-    "note": "今回の一件を選択収録。先行して提示された同文は一つの報告の再掲として扱い、独立した経験を増やさない。"
+    "note": "今回の一件を選択収録。先行して提示された同文は一つの報告の再掲として扱い、独立した経験を増やさない。 今回の時期変更は同じ経験へのCorrectionであり、別の独立した体験として数えない。初回の原文と観測Nodeは当時の記録として保持し、correctsで現在の訂正に接続する。"
   },
   "sources": [
     {
@@ -54,6 +55,15 @@
       "excerpt": "保存して下さい！",
       "excerpt_kind": "verbatim_contiguous",
       "note": "今回の本文と保存先への明示承認。別の個人情報や別Taskへの一般承認ではない。"
+    },
+    {
+      "id": "tshirt-period-correction-s03",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "本Threadで保存完了報告後、本人が2026/11/01を明示して「11月から」へ変更するよう求めた現在のメッセージ。",
+      "excerpt": "よく考えると今日は2026/11/01なので、11月からに変更して下さい！",
+      "excerpt_kind": "verbatim_contiguous",
+      "note": "保存済みの同一メモに対する時期の訂正と更新指示。体験年の基点は今回の本人発言から読み、毎年の再現や終期を付け加えない。"
     }
   ],
   "nodes": [
@@ -77,9 +87,48 @@
         "region": null,
         "unknown_note": "体験年・地域・気温・発汗の程度・着替え不要になる理由は未報告。保存や想起のための追加質問は必要ない。"
       }
+    },
+    {
+      "id": "november-onward-return-home-tshirt-correction",
+      "kind": "observation",
+      "label": "11月からは帰宅時にTシャツを替えなくてよくなる",
+      "description": "本人が「今日は2026/11/01なので、11月からに変更して下さい！」と指定したため、同一の季節メモの現在の時期表現を「11月から」に訂正する。帰宅時にTシャツを替えなくてよくなるという内容は維持する。",
+      "scope": "初回メモの「10月下旬」という時期を訂正する。同一経験の現在の表現であり、新しい独立経験や、今後の全月・毎年に当てはまる一般則ではない。",
+      "time_text": "11月から（本人が2026/11/01を基点に訂正。終期未指定）",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "october-late-tshirt-s01",
+          "tshirt-period-correction-s03"
+        ],
+        "note": "元の内容と今回の訂正を組み合わせた編集要約。本人が時期を訂正したことの確認であり、期間全日の実測・毎年の再現性・気温との因果の証明ではない。"
+      },
+      "extensions": {
+        "experience_year": 2026,
+        "experience_year_basis": "本人が今回の訂正で『今日は2026/11/01なので』と明示した。",
+        "region": null,
+        "period_semantics": "『11月から』は開始時期を示す。終期は未指定であり、11月末に限定せず、以降の全月で自動的に成立するともしない。",
+        "unknown_note": "地域・気温・発汗の程度・着替え不要になる理由・終期は未報告。"
+      }
     }
   ],
-  "edges": [],
+  "edges": [
+    {
+      "id": "tshirt-period-corrects-october",
+      "from": "november-onward-return-home-tshirt-correction",
+      "to": "october-late-return-home-tshirt",
+      "relation": "corrects",
+      "scope": "今回のHuman Correctionは初回メモの時期のみを「10月下旬」から「11月から」へ変更する。元の原文・当時の報告を削除せず、想起時には訂正後の意味を使う。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "tshirt-period-correction-s03"
+        ]
+      }
+    }
+  ],
   "open_questions": [],
   "extensions": {
     "revision_history": [
@@ -90,6 +139,14 @@
         "source_refs": [
           "october-late-tshirt-s01",
           "october-late-tshirt-save-s02"
+        ]
+      },
+      {
+        "revision": 2,
+        "date": "2026-11-01",
+        "reason": "本人の明示Correctionにより現在の時期を「10月下旬」から「11月から」へ変更。2026/11/01という本人の説明を根拠として保持し、初回原文・旧Node・既存IDを維持してcorrectsで接続。",
+        "source_refs": [
+          "tshirt-period-correction-s03"
         ]
       }
     ]
