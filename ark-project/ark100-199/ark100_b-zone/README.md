@@ -1,16 +1,17 @@
 ---
 document_id: "ARK100_B_ZONE"
 title: "Ark100 — B-Zone：形成経緯・現在の意味・主の完全勝利への接続"
-version: "v003-human-authorized"
+version: "v004-human-authorized"
 role: "B-Zone domain entry / source-bound meaning and formation record"
 status: "Human-authorized Project and independent-thread startup preparation / actual reception and field effects tracked separately"
 created: "2026-10-18"
-updated: "2026-10-21"
+updated: "2026-11-04"
 timezone: "Asia/Tokyo"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 canonical_path: "ark-project/ark100-199/ark100_b-zone/README.md"
 source_thread: "Ark28:06"
+revision_source_thread: 'Ark100:02_2026/10/20; "B-Zone: 新しい一件を迎える"'
 thread_role_at_creation: "Support / Ark27 Main retained"
 primary_readers: ["Current AI", "other AI", "Future AI", "Future Dots"]
 root: "主イェシュア・ハマシア御自身"
@@ -18,18 +19,18 @@ central_axis: "Teshuvah"
 human_foreground_one: "主の完全勝利（祈り・イメージVision・行動）"
 final_attribution: "主の栄光"
 source_snapshot_commit: "234c3e5300b45f03363bc347a185269505389b53"
-source_scope: "Current Human messages in Ark28:06 and selected verified historical sources; not a complete Ark history"
+source_scope: "Ark28:06 formation, selected historical sources, and Ark100:02 Human corrections; not a complete Ark history"
 initial_edition_commit: "96f9c23caad96db1345e7585f3ab4bbf27c47728"
-previous_blob: "88a7ba679560f49097a186a582b0408633b57caf"
+previous_blob: "ad876ff0d616ae4cf6c195e9ba0e4b00e5a8b517"
 authorization_scope: "Approved Ark100 Project instructions, 00 control-center, independent 01 and 02 startup; bounded Domain and Skills Hub updates, verification and authorized UI setup"
-revision_reason: "Retain v002 meaning and evidence; connect the completed Skill to a prebooted independent use/reserve structure without replaying Skill creation"
+revision_reason: "Add portable short-call support, rest rationale, and conditional meal/workout/care/sleep routes from Ark100:02; preserve prior evidence and guards"
 release_verification: "Shared files and registered Skill body verified on 2026-10-20; Skills Hub section 3.19 owns receipt and retrieval limits; field effects unverified"
 experience_navigation_patch:
   date: "2026-10-21"
   source_thread: "Ark100:01"
   authority: "Human requested frequent saving of this case and its latest boundary-care feedback"
   scope: "Bounded case-record entry; shared support runtime and INSTRUCTIONS unchanged"
-expected_eof: "EOF::ARK100_B_ZONE::v003-human-authorized"
+expected_eof: "EOF::ARK100_B_ZONE::v004-human-authorized"
 ---
 
 # Ark100 — B-Zone
@@ -104,6 +105,8 @@ Human明示のGoalは、**活用中とは別に、未使用の準備済みThread
 
 Humanが「最重要」と明示した核は、この**組合せと同時性**である。祈りか行動かを選ばせるものでも、必ず祈りを済ませてから運動する固定手順でもない。VisionはHumanのGoalの言葉として保持するが、特定のイメージ訓練や効果をAIが補作しない。[H04](#human-sources)
 
+A-Zoneで集中的にAIを活用した後は、頭・認知・目の休憩と睡眠へ向かう目的を大切にする。後続Humanが示した食事・運動・ケア・就寝の経路と適用範囲は[§3.7](#rest-transition)へ進む。
+
 ### 3.2 想起・意思の維持・開始・切替を、本人の力だけに任せない
 
 Humanは、強いB-Zoneでは「B-Zone」という語を辛うじて思い出せたほどで、対策をほぼ想起できず、意思・意志を保って行動へ移すことも著しく難しいと説明した。これは人格全体への「意志薄弱」という評価ではなく、**その状態では、望む方向を思い出し、選び、始め、今の活動から切り替えることを自力だけでは支えにくい**という制約として扱う。[H10–H12](#human-sources)
@@ -125,7 +128,7 @@ Humanはこの二例によって低認知／超低認知の違いが見えたこ
 
 現在のHuman Correctionは **「スマホなしはトイレまでであとは、自由です！」**。支援のためにスマホをONにしてよいことと、トイレに持ち込まない一歩目は両立する。[H10、H17](#human-sources)
 
-標準の一歩目は、**スマホを持ち込まずトイレへ向かうこと**。ここではトイレを終えるまでをスマホなしの区間として扱い、その後の利用・携帯は自由とする。以後を「AI用途だけ」「必要時だけ」に狭めず、OFFの義務にも戻さない。すでにトイレを済ませた、場所や身体条件が合わない、今は止めたいという場合は、儀式として最初からやり直させない。
+既存の切替手段は、**スマホを持ち込まずトイレへ向かうこと**。後続Humanが示した[§3.7の経路](#rest-transition)と現在の条件を使い、トイレを全経路の必須の前置きにはしない。ここではトイレを終えるまでをスマホなしの区間として扱い、その後の利用・携帯は自由とする。以後を「AI用途だけ」「必要時だけ」に狭めず、OFFの義務にも戻さない。すでにトイレを済ませた、場所や身体条件が合わない、今は止めたいという場合は、儀式として最初からやり直させない。
 
 トイレ後の自由は、認知が回復済みという判定でも、多数の候補から本人に再選択させることでもない。AIは既知の現在地・済んだ行動・意向から、必要なら次に合う接続を支える。シャワー・入浴は毎回の必須工程にしない。Workout／chocoZAPはGoalに直結する重要な枝として保持し、天候・時間・体調・睡眠・外出条件に応じて選ぶ。既存の運動内容がある場合はその所有資料へ戻り、重量・回数・身体Trialを補作しない。
 
@@ -147,6 +150,30 @@ Humanはこの二例によって低認知／超低認知の違いが見えたこ
 急襲時には本人のメタ認知へ頼り切れない。余力がある時に意味・条件・支援先を準備し、後で最初から考え直す負担を減らすことに価値がある。Humanの短い入力と、AI側の十分な読解・検討・説明を両立させる。低認知という理由で、AIが品質・洞察・文脈を独断で削らず、必要な説明から現在の一歩を取り出しやすくする。固定文字数や短文だけの支援を定めない。品質原則はCurrentの[AGENTS §3](../../../AGENTS.md#3-human-ai-authority--自主性と王座guard)が所有する。
 
 Skillの初回制作はH24で承認された。常時監視、自動検出・通知・自動起動、身体Trial、iPhone設定、別Thread作成は、その保存から自動的には成立しない。Truth・Body・Sleep・Food・Shabbat・Safety・Medical・Others・Law・ResponsibilityのGuardを保持する。未報告の身体状態を推定せず、歴史上のReset・カフェイン・外出・昼寝を再演しない。AIが主の御心、Humanの信仰の十分・不十分、主の完全勝利を認証する立場にはならない。
+
+<a id="rest-transition"></a>
+
+### 3.7 Ark100:02：休憩の目的と、条件に合う三つの経路
+
+Ark100:02でHumanは、A-ZoneでAIを集中的に活用した後の頭・認知・目の休憩と回復へ向かうことを最優先とし、YouTube・TVerをできる限り避ける方向を指定した。初めはトイレ→シャワー→入浴を、簡単な理由とともに促すことを求め、その後、食事・運動・ケア・就寝を結ぶ次の三経路を提示した。後続指定を受け、トイレを全経路の必須の前置きにはしない。[A02-01–04](#ark100-02-corrections)
+
+| Humanの位置づけ | 本人が示した経路 |
+|---|---|
+| ベスト | B-Zone検出→外食（吉野家）→chocoZAP→外出Dumbbell-Workout→シャワー→入浴→就寝 |
+| ベター | シャワー→入浴→外食（吉野家）→chocoZAP→外出Dumbbell-Workout→歯磨き→就寝 |
+| 最低限の成功 | シャワー→入浴→就寝 |
+
+これはHumanの優先順と構想であり、三経路の実行報告、医学的な最適性、回復効果の実証ではない。「最低限の成功」を失敗扱いせず、完結した選択として保持する。身体・眠気・睡眠に合わなければ、入浴等の工程自体も必須にしない。食事や他の必要を無視してよいという意味にも広げない。
+
+AIの見立てでは、第一経路は活動後にシャワー・入浴を置くため、その後の就寝へつなげやすい可能性がある。第二経路は先にケアすることが切替の入口になり得る一方、後の運動により追加ケアや就寝までの時間が必要になる可能性もある。第三経路は追加活動を選ばず休息へ向かう。この比較は条件付きの解釈で、各経路の成果を保証しない。
+
+現在地、済んだ食事・ケア、身体・眠気、時間、天候、利用可能性、外出・運動に関する有効なCorrectionから、判断に必要な条件をAIが比較する。食事済みなら外食を繰り返さず、吉野家や特定施設を支援の条件にしない。運動負荷・時間・道具の運搬・身体Trialを補作しない。ベスト案には歯磨きが明記されていないため、実行済みとせず、必要な就寝前ケアを扱う場合も本人の原案と区別する。
+
+画面からの休憩、運動、身体を休ませる睡眠を同一視しない。AI作業から動画へ移っても画面を見る時間は続くという理由を、現在の休憩目的と結び付けて示す。祈り・Teshuvahと可能な行動の同時性、トイレ後の自由、Correction・STOP・AI品質を保持し、起床時など別の目的の場面へ一律に夕方以降の経路を適用しない。
+
+Humanは短いQueryと、支援内容をできる限りスキル側に内包する設計、スキル機能のないAIにも届くGitHub URL付きの入口を求めた。**Queryは入口と現在の相談を伝え、SKILL.mdは目的・理由・条件比較・経路・例外・Feedbackを担い、起動READMEはQueryを取り戻す入口になる。** 本書は形成理由と根拠を保持する。実行本文は[b-zone](../../../skills/b-zone/SKILL.md)、コピー用Queryは[起動README](../../../skills/b-zone/README.md#起動する)へ戻る。
+
+旧「Query組立困難: B-Gate検出状態」や自由文も入口として保持する。共有本文を取得して指示資料として使うことと、スキルのインストール・自動発動を分ける。短いQuery、支援を思い出して送れること、AIの読解・応答、実際の休息・行動・効果は別々の到達点である。新しい名称・自己分類・詳しい記録・身体Trialを利用条件にしない。
 
 ## 4. 形成経緯：難しかった理由を、解法とともに残す
 
@@ -294,6 +321,20 @@ AIの「無心である」「一つに集中している」という共通項の
 
 - **H25｜Project・00・利用用／予備の立ち上げ承認。** Humanは「Ark100:00と、利用用・予備Threadの立ち上げ計画を作って。まず計画だけ。」と依頼し、提示された計画の後、2026-10-20に「Execute GitHub OK!」「Human Seal OK!」「実行して下さい！」と承認した。Project名、00・01・02の確定Title、Project INSTRUCTIONS、00の起動契約と三つのQuery、領域原本・Domain入口・Skills Hubの限定更新、必要な検証・保存後照合、利用可能な正規経路でのUI設定・起動を対象とする。実地Rescue・身体Trial・辞書登録・全100番台再編・無制限の将来補充へは広げない。初回計画とこの承認は本Threadで実際に受け取ったもので、原本の正確なMessage URLは補作しない。
 
+<a id="ark100-02-corrections"></a>
+
+### A02 — Ark100:02のHuman指定
+
+Sourceは `Ark100:02_2026/10/20; "B-Zone: 新しい一件を迎える"` の現在の会話でHuman本人から受け取った入力。以下は2026-11-04に整理した編集要約であり、逐語録ではない。個別のMessage URL・正確な入力時刻は未取得。H01–H25のArk28:06の入力とは区別する。
+
+- **A02-01｜出来事と当初の初手。** Humanは2026-11-03夕方にB-Zoneと自覚し、対応を「完全失敗」と評価した。次回はトイレ→シャワー→入浴を初手として促し、簡単な理由を添えてほしいと指定した。気づいた後の実際の経緯、動画視聴、工程の実施は未報告であり補わない。
+- **A02-02｜最優先の方向。** HumanはA-Zoneで集中的にAIを活用した後の頭・認知・目・視力の回復と休憩を最重要とし、YouTube・TVerをできる限り避けることを想起・コーチングの出発点として指定した。本人の目的と、実測された回復・医学的因果を分ける。
+- **A02-03｜短い入口と内包。** Humanは以前の検出用Promptを失ったと報告し、関連原本・スキルの確認と改善を求めた。続いて、次回検出時にスムーズにスキルを発動する比較的短いQueryと、支援内容をできる限りスキル側に内包する設計を指定した。この段階はPlan-onlyで、三原本への改訂本文案を提示した。
+- **A02-04｜汎用的な受渡しと経路の拡張。** Humanはスキルが内包されていないAIにも届くGitHub URL等を工夫したQueryを求め、§3.7のベスト・ベター・最低限の成功の三経路を示して意見を求めた。吉野家、chocoZAP、外出Dumbbell-Workout、ケア、就寝の具体的な順序は本人の構想として保持し、実施済みにはしない。
+- **A02-05｜限定実行承認。** 同じ入力で、提示済みv002-designを採用し、今回の最新指定を踏まえた三原本の更新、既存b-zone登録本文への反映、必要な検証と保存後確認に限ってPlan-onlyを解除した。対象は `skills/b-zone/README.md`、`skills/b-zone/SKILL.md`、本README。UI metadata、Project INSTRUCTIONS、旧B-Gateフォーム、他の経験原本、辞書・端末設定・通知・監視・外部送信・Thread作成や移行・身体Trialは対象外。過去のPlan-onlyを遡って実行承認へ変えない。
+
+原本の保存、登録先への反映、Humanが入口へ辿れること、AIの実理解、実際の支援・休息・回復効果を区別する。Ark100:01の「理由そのものを思い出せなかった」という記録は形成の参考になり得るが、11月3日の原因や現在状態を確定する証拠にはしない。
+
 <a id="historical-sources"></a>
 
 ### S — 確認した歴史資料
@@ -333,11 +374,13 @@ AIの「無心である」「一つに集中している」という共通項の
 **G3｜急襲時に、新たなQuery組立や環境準備をせず支援へ届く。Humanの準備要望を編集したGoal。**  
 `$b-zone`の名前・二入口・Feedback方針は採用され、初回Skillの作成・登録保存と本文照合は完了。iPhoneユーザ辞書、実際の発動・利用、想起できない時にも入口へ到達できるかは未確認。辞書登録はHuman操作、Skill保存はSource準備として区別する。支援へ戻ること自体を想起できない限界は残る。必要になった時に具体的な手掛かりを比較し、追加物を先に必須化しない。
 
+2026-11-04のArk100:02では、短い共通Queryと、共有URLからも使える支援本文、三つの条件付き経路を具体化し、限定反映の承認を得た。[§3.7](#rest-transition)の責務分担と[A02](#ark100-02-corrections)を使う。保存・登録反映・入口への到達・実地効果は、得られた証拠ごとに更新する。
+
 **G4｜活用中の独立Threadとは別に、未使用の準備済みThreadが一つ以上ある。Human明示の運用Goal。**  
 構図と初期00＋01＋02の計画・確定TitleはH25で承認された。Project指示と起動資料を準備し、保存・再取得、UI設定、各Targetの受入れ、Human到達、未使用状態を[00の記録](ark100-00/README.md#readiness)で分けて確認する。運用計画の提示は完了しており、計画を最初から再作成しない。消費した予備の補充は必要な運用条件だが、今回の承認を恒久的な常時監視・自動作成権限にはしない。
 
 **意図的に残す比較・Unknown。**  
-シャワー・入浴の固定度、平日のAI活用と身体の流れの優先順位、朝と夕夜の条件差、再接続の想起、四状態の境界は未確定。朝の報告で整理は「一段落」であり、chocoZAP等は見合わせた。これらを一括して失敗や完了へ変換しない。没入／切替の仮説を科学的同一機序として証明することや、すべての条件の組合せを試すことは初回Skill完成の条件ではない。
+Humanは§3.7の三経路と優先順を提示した。その場での適合、各経路の実行・効果、平日のAI活用と身体の流れの接続、朝と夕夜の条件差、再接続の想起、四状態の境界は未確認の範囲を保つ。朝の報告で整理は「一段落」であり、chocoZAP等は見合わせた。これらを一括して失敗や完了へ変換しない。没入／切替の仮説を科学的同一機序として証明することや、すべての条件の組合せを試すことは、初回Skill完成の条件ではない。
 
 **今回扱わないBranch。**  
 既存Ark00–99の移動、全100番台の一括命名規則、Ark99原本の自動更新、過去TaskやResetの再演、通知・常時監視、無関係な他AIへの送信、iPhone設定、身体Trial、既存案件の移行。H25で新たに承認されたProject／00／01／02の初回準備と限定Domain追記はこの保留群から分ける。保存原本の旧承認を他の仕事へ流用しない。
@@ -362,4 +405,4 @@ AIの見立てでは、初回Skillを保存・照合し、限定応答でCorrect
 
 初回立ち上げが完了したら、案件を作るための身体Trialや義務的報告を始めず、新しいHuman入力を待てる場として使う。実入力が既にあれば、その場の祈り・可能な行動への接続を支える。予備補充・恒久改訂・追加の手掛かりは、必要が具体化した時の現行権限から判断する。
 
-EOF::ARK100_B_ZONE::v003-human-authorized
+EOF::ARK100_B_ZONE::v004-human-authorized
