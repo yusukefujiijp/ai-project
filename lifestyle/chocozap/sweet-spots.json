@@ -3672,6 +3672,60 @@
           "source": "S06"
         }
       ]
+    },
+    {
+      "id": "cz-record-0043",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-05",
+      "created_at": "2026-11-05T12:05:00Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-05（Asia/Tokyo、client time context）に現在の本人入力を受領。Chest Press両手Sweet Spotの更新報告であり、実施日・来館・回数・セット数は指定されていないためobserved_dateはnull。created_atは記録作成時刻で、発言・実施時刻ではない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 65,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0012/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\nSweet Spot\n両手: 65kgに更新しました！",
+          "reported_date": "2026-11-05",
+          "context": "本人メッセージ全文。Chest Press両手Sweet Spotを60kgから65kgへ更新する明示報告。過去の60kgを訂正するのではなく、新しい参照基準として追記する。継続する方法では両手の開始基準65kgに対応する。後続の片手35kgへの更新は別の本人メッセージとしてcz-record-0044へ保持する。実施日・来館・下降系列・回数・セット数・身体効果は未報告。二つの報告を公開原本へ保存する本人の明示承認を2026-11-05に受領した。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0044",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-05",
+      "created_at": "2026-11-05T12:14:47Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-05（Asia/Tokyo、client time context）に現在の本人入力を受領。Chest Press片手Sweet Spotの更新報告。実施日・来館は指定されていないためobserved_dateはnull。created_atは記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "片手",
+          "kg": 35,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0031/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\nSweet Spot\n片手: 35kgに更新しました！",
+          "reported_date": "2026-11-05",
+          "context": "本人メッセージ全文。Chest Press片手Sweet Spotを30kgから35kgへ更新する明示報告。先行の両手65kgへの更新（cz-record-0043）とは別の報告として追記する。二つの報告から現在の基準は両手65kg・片手35kgとなり、継続する方法では両手の開始点とTriangleへ入る片手の境界に対応する。過去の原文・重量履歴を保持し、他条件は本人の継続ルールで引き継ぐ。左右両側・下降系列・Triangle全段階・回数・セット数・運動完了・身体効果は未報告。二つの報告を公開原本へ保存する本人の明示承認を2026-11-05に受領した。"
+        }
+      }
     }
   ]
 }
