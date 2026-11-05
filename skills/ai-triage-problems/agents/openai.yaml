@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Problem Triage / AI問題切り分け"
+  short_description: "問題をTask化し、AI遂行とHuman介入を切り分け、実行順を生成・更新する"
+  default_prompt: "$ai-triage-problemsを使い、現在のGoalに必要な仕事をできる限りTask化し、AI独力遂行とHuman介入を切り分け、依存関係に沿う実行順を作り、現在の委任とModeの範囲で進め、結果やCorrectionから更新してください。"
