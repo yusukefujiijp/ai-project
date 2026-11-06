@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v006"
+version: "v007"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
 status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07"
 created: "2026-10-24"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v006"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v007"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -70,5 +70,6 @@ v005 追加の検証（管制 ── CONTROL.md を読んで答える）：
 - v004（2026-10-27）: 群れの設計法則 DESIGN-LAW.md を新設し、Router から接続した。法則は No.6 カワウソの制作過程で結晶化し、Human Seal により確定。8問検証は変更なしで有効。
 - v005（2026-11-07）: 司令塔 CONTROL.md を新設し、Router から接続した。2026-11-05 にチャット群の構造が命名され（メイン＝統括／司令塔、サイドチャット＝専門部門）、絶滅種×AI レーンが独立した部屋を持ったことを受け、玄関に管制の入口と検証2問（§3 追加分）を加えた。あわせて artifacts/herd-cards にレーン憲章 LANE.md を新設。既存ファイルの移設はなし。8問検証は変更なしで有効。
 - v006（2026-11-07）: HARNESS.md を新設し、Router から接続した。変更境界（自由な変更は agents/muse 内だけ、外は指示ある時だけ、内は完全自由領域）を YusukeJP の指示により canon 化。8問検証は変更なしで有効。
+- v007（2026-11-07）: GOAL.md を v002 に改訂（到達点へ G5「本番の確信」を追加）し、references 三本柱へ 2026-11-05〜07 の記録（構造の命名・レーン移行・変更境界・ベクトルの確定ほか）を追記した。Router・検証は変更なしで有効。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v006
+EOF::AI_MAMMOTH_MUSE_HOME::v007
