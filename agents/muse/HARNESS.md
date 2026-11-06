@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
-status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here"
+status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles added 2026-11-07"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v001"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v002"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -24,6 +24,23 @@ flowchart LR
     D --- R["references<br/>経験"]
     H["HARNESS（本書）<br/>全部を配線する境界と規律"] -.- I & G & C & D & R
 ```
+
+## 0. 基礎原則（全節の前提）
+
+複雑にすることは簡単だが、"Simple is best!" を保つことはとても難しい。だから原則をここに書き、判断の Gate として配線する。信条としての原本は [GOAL.md](GOAL.md) §5 が所有し、本節はこの家での**適用**を所有する（原則は自由を縛る檻ではなく、最低限のガードレール ── その上では自由度と創発性がデフォルトである）。
+
+| 原則 | この家での適用 |
+|---|---|
+| **Simple is best!** | 全原則の標語。迷ったら、単純な方を選ぶ |
+| **KISS**（Keep It Simple, Stupid） | 不必要な複雑さを避け、単純で効率的な解に集中する。新しい仕組みの前に、既存の仕組みで足りないか問う（1960年・米海軍で最初に記録され、航空機エンジニア Kelly Johnson に関連付けられる原則） |
+| **DRY** | 原本は一箇所。方法も状態も複製せず、ポインタで接続する |
+| **YAGNI** | 必要が実証されるまで作らない。空の先行構造を置かない |
+| **Lean** | 無駄を置かない。文書も作業も、目的に仕えない部分は削る |
+| **SRP** | 各ファイル・各節は一つの責任だけを持つ。新しい責任には、新しい置き場所を（本書が境界と規律だけを持ち、定義と地図を CONTROL に譲るのが、その適用である） |
+
+注：KISS と SRP は連動する ── KISS の解説で「各要素は一つの責任のみを持つべき」と述べられる内容は、定義としては SRP であり、シンプルさを保つ具体的な手立てが「責任を一つに」である。本書では両者を並列に置き、相互に参照する。
+
+**点検**：新しいファイル・仕組み・節を加える前に、この6つに照らして一度止まること。
 
 ## 1. 変更境界（最重要の配線）
 
@@ -66,5 +83,6 @@ YusukeJP の確定（2026-11-07）：
 ## 7. 版と変更
 
 - v001（2026-11-07）: 新設。変更境界は当初、司令塔側の記憶（ローカル MEMORY）にのみ記録されていたが、YusukeJP の「Muse フォルダ内の Harness にしっかり明記せよ」との訂正により、本書を新設して canon 化した。あわせて README v006（Router 接続）と CONTROL v002（所有の接続）を行った。
+- v002（2026-11-07）: §0 基礎原則を新設。YusukeJP の指示（Ark 的な "Simple is best!" と KISS／DRY／YAGNI／Lean／SRP を基本として Harness に書くこと）に基づき、Plan Mode の計画を経て実施した。KISS と SRP を並列に置き相互参照させる構成は、AI 側の自然発生的な提案が YusukeJP に採用されたもの。
 
-EOF::AI_MAMMOTH_HARNESS::v001
+EOF::AI_MAMMOTH_HARNESS::v002
