@@ -2,16 +2,16 @@
   "meta": {
     "state_id": "ARK27_13_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark27:13",
     "updated_at": "2026-11-07",
     "date_scope": "Asia/Tokyo execution date; confirmed Target Title retains Human-adopted 2026/11/06 independently.",
-    "update_reason": "Human adopted Chief succession plan and authorized nine-path preparation, existing29 setup, one02 startup and acceptance; current Main27 and Support28 retained.",
+    "update_reason": "Publish coherent Chief successor triad and Current preparation entries; retain Main27 and Support28, keep UI/delivery/acceptance as unobserved until verified.",
     "previous_state": {
-      "commit": "2beaee144ba457c9862a9790bbbc97efc0350b8a",
-      "blob": "966911e58967021da93fa2cd7a5b1c6ef79fbe9f",
+      "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+      "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
       "path": "ark-project/ark27/ark27-13/state.json",
-      "scope": "Initial13 acceptance/revision2 retained as history; currentHuman authority is the later Chief preparation request."
+      "scope": "Fixed public harvest revision3; subsequentCurrent receipts must not replace its binding."
     }
   },
   "identity": {
@@ -281,18 +281,24 @@
       "transition_kind": "CHAPTER_TRANSITION",
       "project_name": "Ark29: Chief Thread",
       "compiled_title": "Ark29:02_2026/11/06; \"主の完全勝利: 全体を見渡し、意味と成果をつなぐ\"",
-      "phase": "FIXED_PUBLIC_HARVEST_PREPARATION",
+      "phase": "SOURCE_PREPARED",
       "current_main": "Ark27:13",
       "current_support": "Ark28:08",
       "successor_active": false,
-      "preparation": "IN_PROGRESS",
-      "remote_verification": "NOT_YET_OBSERVED_AT_HARVEST",
+      "preparation": "NINE_PATH_PREPARATION_BUNDLE",
+      "remote_verification": "FIXED_HARVEST_FULL_READBACK_CONFIRMED; PREPARATION_BUNDLE_READBACK_PENDING",
       "delivery": "NOT_SENT",
       "target_reconstructed": "NOT_YET_OBSERVED",
       "human_last_mile": "HUMAN_DEVICE_ARRIVAL_AND_USE_NOT_OBSERVED",
       "current_switch": "NOT_AUTHORIZED",
       "source_retirement": "NOT_AUTHORIZED",
-      "policy": "SubsequentCurrent receipt may advance; fixed harvest remains evidence of this stage. Private URLs and received body are not public receipt content."
+      "policy": "SubsequentCurrent receipt may advance; fixed harvest remains evidence of this stage. Private URLs and received body are not public receipt content.",
+      "fixed_source_harvest": {
+        "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+        "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+        "revision": 3
+      },
+      "project_settings": "NOT_YET_CHANGED"
     }
   },
   "harvest_13": {

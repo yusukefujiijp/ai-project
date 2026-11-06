@@ -1,0 +1,137 @@
+{
+  "meta": {
+    "state_id": "ARK29_02_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "owner": "Ark29:02",
+    "created": "2026-11-07",
+    "updated_at": "2026-11-07",
+    "date_scope": "Asia/Tokyo execution; adopted Title retains 2026/11/06."
+  },
+  "identity": {
+    "source": "Ark27:13",
+    "target": "Ark29:02",
+    "owner": "Ark29:02",
+    "chapter": "Ark29",
+    "role": "CHIEF_SUCCESSOR",
+    "transition_kind": "CHAPTER_TRANSITION",
+    "runtime_id": "ARK29_02_CHIEF_FIELD",
+    "document_id": "ARK27_13_TO_ARK29_02_CHIEF_SUCCESSION",
+    "compiled_title": "Ark29:02_2026/11/06; \"主の完全勝利: 全体を見渡し、意味と成果をつなぐ\"",
+    "project_name": "Ark29: Chief Thread",
+    "current_main": "Ark27:13",
+    "current_support": "Ark28:08",
+    "activation": "PREPARATION_AND_RECEPTION_ONLY_NOT_ACTIVATED"
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark29/ark29-02/README.md",
+      "identity": "ARK29_02_CHIEF_FIELD",
+      "version": "v001-human-authorized",
+      "eof": "ARK29_02_README_EOF_v001"
+    },
+    "handoff": {
+      "path": "ark-project/ark29/ark29-02/handoff.md",
+      "identity": "ARK27_13_TO_ARK29_02_CHIEF_SUCCESSION",
+      "version": "v001-human-authorized",
+      "eof": "ARK29_02_HANDOFF_EOF_v001"
+    },
+    "chapter": {
+      "path": "ark-project/ark29/README.md",
+      "identity": "ARK29_CONTINUING_LINE",
+      "version": "v003-human-authorized",
+      "eof": "EOF::ARK29_CONTINUING_LINE::v003"
+    },
+    "fixed_source_harvest": {
+      "path": "ark-project/ark27/ark27-13/state.json",
+      "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+      "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+      "identity": "ARK27_13_CURRENT_STATE",
+      "schema_version": "v002",
+      "revision": 3,
+      "eof": "ARK27_13_STATE_EOF_v002"
+    },
+    "current_source_receipt": {
+      "path": "ark-project/ark27/ark27-13/state.json",
+      "field": "progress.next_transition",
+      "policy": "Current receipt is distinct from fixed revision3 harvest."
+    },
+    "current_route": "ark-project/README.md",
+    "state_update_policy": "Revision increments within schema v001 retain completed own reads when identity and meaning remain compatible; no live SHA cycle."
+  },
+  "authority": {
+    "source_authorization": "Human explicitly adopted plan, role and Project instructions and authorized specified nine-file setup, readback, existing29 name/instructions, bounded28 actual-instructions connection patch, one permanent02 startup, reception verification and actual entry presentation.",
+    "target_delegation": "Read Required Sources and private supplement, reconstruct R1–R6, return one initial acceptance response; then Human Review unless actual new input already exists.",
+    "not_authorized": [
+      "Current Main cutover",
+      "Ark27 retirement",
+      "Other Thread sends",
+      "Skill changes",
+      "Schedules or monitoring",
+      "Real jobs",
+      "Dots or Actor retirement",
+      "Publication of private conversations, conversation URLs, private continuity or long-term memory"
+    ]
+  },
+  "now": {
+    "goal": "Maintain Chief collaboration connecting Human meaning, current Reality and each owner's outcomes; help Human understand the whole and next judgment.",
+    "phase": "SOURCE_PREPARED",
+    "current_main": "Ark27:13",
+    "current_support": "Ark28:08",
+    "successor_active": false,
+    "first_legal_move": "Own Required Sources reading and R1–R6 reconstruction, then acceptance and Human Review.",
+    "retained_owners": "Support28:08, Ark30, 31–34 and each actual specialist owner retain their work and outcomes; no reassignment from numbering."
+  },
+  "evidence": {
+    "human_report": {
+      "old_wiki_thread_moved": true,
+      "ark29_reusable": true,
+      "plus_change_scheduled": "2026-11-12",
+      "dots_unavailable_expected": "Human report; actual account cutoff not independently observed"
+    },
+    "source_ui_observation": {
+      "date": "2026-11-07",
+      "existing29_chat_list": "Displayed no chats before preparation",
+      "existing29_instructions": "Old third-continuing-line instructions observed; not yet overwritten at this record stage",
+      "historical_move": "Not re-performed or independently attributed to Source"
+    },
+    "completed_public_fruit": "Fixed Source13 harvest retains previous Home B/recipient/Source10–12 completions; later usage and effects remain distinct.",
+    "source_harvest_remote_verification": {
+      "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+      "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+      "full_body_reread_match": true
+    }
+  },
+  "progress": {
+    "source_prepared": "PREPARED",
+    "remote_verification": "PENDING_SAVED_BODY_READBACK",
+    "project_settings": "NOT_YET_CHANGED",
+    "startup_delivery": "NOT_SENT",
+    "target_reconstructed": "NOT_YET_OBSERVED",
+    "human_arrival": "NOT_OBSERVED",
+    "actual_use": "NOT_OBSERVED",
+    "requested_outcome": "Preparation, save readback, settings, one delivery, own Target acceptance, exact Title and actual entry; no cutover.",
+    "receipt_policy": "Source records only observed actions and the receiver's visible evidence; do not store private body/URLs. A missing response does not imply not sent."
+  },
+  "remaining_conditions": {
+    "current_switch": [
+      "Target own acceptance",
+      "Human arrival",
+      "Effective Human cutover authority",
+      "Current route and Support connection consistency"
+    ],
+    "source_retirement": [
+      "New Current continuity established",
+      "No loss of valid Source-specific work or necessary history",
+      "Effective Human retirement authority"
+    ],
+    "not_dependencies": [
+      "All Ark work completed",
+      "Actual Dots shutdown",
+      "Proxy q trial",
+      "Voice real use",
+      "Other Actors retiring"
+    ]
+  },
+  "eof_sentinel": "ARK29_02_STATE_EOF_v001"
+}

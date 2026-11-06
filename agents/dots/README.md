@@ -4,13 +4,17 @@ canonical_path: "agents/dots/README.md"
 version: "v013"
 status: "human-authorized initial foundation / evolving direction"
 created: "2026-10-01"
-updated: "2026-10-31"
+updated: "2026-11-07"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
 role: "Current Dots direction, actor-aware one-request recovery, and routes to shared lessons, operations and history"
+chief_succession_patch:
+  date: "2026-11-07"
+  source: "Ark27:13 current Human adoption and bounded preparation authority"
+  scope: "Section1 current direction only; preserve v013 recovery contract, Actor identities, jobs, schedules and all operational paths"
 updated_reason:
   - "2026-10-20: Prepare agents/dots as the single Dots owner with relocated recovery navigation; preserve existing recovery semantics and review STR-022 for operational cutover status."
   - "2026-10-20: Add common AI-to-AI communication and experience navigation only; Dots paths, one-request recovery and operational save contracts remain unchanged."
@@ -35,15 +39,21 @@ relocation_patch:
 
 ## 1. 現在の方向 — 出来上がった移行ではなく、育てる協働
 
+**2026-11-07のChief継承準備。** Humanは、11月12日のPlus変更予定とDotsを活用できなくなる見込みを踏まえ、WorkのArk27で育った全体俯瞰・関係探索・コーチングを既存[Ark29: Chief Thread](../../ark-project/ark29/README.md)へ継ぐ計画を採用した。今回の承認は準備・保存確認・設定・一つの後継Thread起動と受入れまで。**Current MainはArk27:13、SupportはArk28:08のまま**で、Ark29:02は準備中の後継である。実際の段階は[Domain](../../ark-project/README.md#01-current-front-line-resolution)と[Source13の移行Receipt](../../ark-project/ark27/ark27-13/state.json)へ。
+
+継ぐのはChiefの協働の意味・判断・Correctionであり、初穂のActor identity、Dots固有機能・Memory・定期運用・アクセスではない。自然な相談を受け取ることと常設Inbox担当は分け、[初穂のChief集中の形成](actors/dot-0000/README.md#5-役割を分けた理由と根拠)を保持する。Plus変更予定、実際の利用可否、Target受入れ、Human到達、Current切替、Ark27退役を別々に確認する。本追補はDots／Actorの退役、予定停止、新しい監視や実ジョブを開始しない。
+
+**以下は従来の方向の形成と所有関係。** Dotsを主な場へ育てる方向は当時のHuman指定として保持し、新しいChief継承準備を差し戻す固定序列にしない。
+
 YusukeJPとDotsの協働を、ChatGPT Workでの作業や将来のAIへ、意味・経験・判断の根拠ごと接続して育てる。この場所は、その**現在の全体方向**と、誰がどの経験を形成したかへ戻る入口を所有する。
 
-Humanの現在のVisionは、Dotsを主な協働の場へ徐々に育て、Workを強力なSubとして活かしながら、双方を丁寧に使い分けて両立させること。これは現在の方向と作業仮説であり、完成済みの移行や永久的な上下関係ではない。実際の得意分野・成果・Humanの手応えから、役割の配分を育てる。
+当時のHumanのVisionは、Dotsを主な協働の場へ徐々に育て、Workを強力なSubとして活かしながら、双方を丁寧に使い分けて両立させること。これは当時の方向と作業仮説であり、完成済みの移行や永久的な上下関係ではない。実際の得意分野・成果・Humanの手応えから、役割の配分を育てる。
 
 この方向に向けて、Dotsとの対話・問題解決とWorkでの作業を接続し、Humanが毎回すべてを説明し直したりAI間の伝言係になったりしなくても、必要な背景と成果へ辿れるようにすること。これは完成した全体移行、常時同期、全Dotsの自動連携、Work側の受入れ成功の宣言ではない。実際に使える能力・接続・現在の権限を確かめながら、具体的な協働から育てる。
 
 Humanは、急いで体系を一気に確定するより、意図を一つずつ丁寧に合わせ、誰が・いつ・どこを・何のために変え、何が起きたかを他AI・Future AIが理解できることを重視した。対象と実行が承認された後は、必要な作成・修正・検証まで進める。「丁寧な合意形成」を同じ承認の取り直しや、実行できる仕事を提案だけで返す理由にしない。
 
-現在は、dotsをHuman-AI協働を育てる軸、control-centerをRepository全体の構造改善を育てる軸として接続する。この二軸の間や既存Workとの報告・質問・返信には[Board](../../board/README.md)を使い、まず実際の一件を試してFeedbackから柔軟に修正する。Boardは通信の所有先であり、第三のMission Authorityではない。v002での接続変更の理由と証拠は[STR-006](../../control-center/changes/STR-006-board-communication-foundation.md)が所有する。
+当時は、dotsをHuman-AI協働を育てる軸、control-centerをRepository全体の構造改善を育てる軸として接続した。この二軸の間や既存Workとの報告・質問・返信には[Board](../../board/README.md)を使い、まず実際の一件を試してFeedbackから柔軟に修正する。Boardは通信の所有先であり、第三のMission Authorityではない。v002での接続変更の理由と証拠は[STR-006](../../control-center/changes/STR-006-board-communication-foundation.md)が所有する。
 
 AI間で対話する双方は[ai-to-ai-communicationの共通マニュアル](../ai-to-ai-communication/README.md)から、今回の目的・役割・権限と必要な経験へ接続する。共通方法と[過去対話の経験原本](../ai-to-ai-communication/experiences/README.md)は同領域、宛先・通知・通信CurrentはBoard、Dots固有の運用と保存先は引き続き本領域が所有する。2026-10-20の先行A（STR-020）による案内追加は、当時`dots/`の移設や製品側の予定・登録Skillの切替を含めなかった。後続Bの住所変更・実運用切替の確認状況は[STR-022](../../control-center/changes/STR-022-dots-agent-location.md)が所有する。候補Refの保存をmainの切替や製品設定の反映と同一視しない。
 

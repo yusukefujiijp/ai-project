@@ -3,14 +3,19 @@ title: "Ark28 — 本流を支える余白と帰還"
 canonical_path: "ark-project/ark28/README.md"
 chapter_id: "ARK28_SUPPORT_CHAPTER"
 version: "v009-human-authorized"
-revision: 9
-role: "Ark27 paired support chapter / chapter identity and entry"
+revision: 10
+role: "Current Main paired support chapter / chapter identity and entry"
 status: "Ark28:08 continuation prepared / actual delivery and Target reconstruction owned by Source07 receipt"
 created: "2026-09-25"
-updated: "2026-10-27"
+updated: "2026-11-07"
 updated_reason: "Human-authorized07→08 continuation through direct delivery and reception; retain07 fruit, fixed Source07 revision3, Current owners, chapter formation/INSTRUCTIONS, Main27 and all earlier contracts"
 date_scope: "Created is the original preparation date in UTC; updated is this document revision date in Asia/Tokyo; neither asserts Human UI creation or Project settings reflection"
 main_chapter: "Ark27"
+chief_succession_patch:
+  date: "2026-11-07"
+  source: "Ark27:13 current Human-authorized nine-path preparation"
+  scope: "Resolve support relationship through Current Main; keep Main27 at this stage, existing08 and all jobs;29 is only a prepared successor"
+  status_owner: "../ark27/ark27-13/state.json"
 main_thread_resolution: "Current Human designation; otherwise ../README.md Current Front-Line Resolution"
 current_support_handoff: "ark28-08/handoff.md"
 project_instructions: "INSTRUCTIONS.md"
@@ -22,11 +27,11 @@ expected_eof: "ARK28_CHAPTER_README_EOF_v009"
 
 ## 1. 役割と入口
 
-Ark28はArk27の偶数系Sub／補助の場であり、Ark27からMain所有権を受け継ぐ後継章ではない。目的は、**本流の良い流れを保持したまま、必要な支援へ既に用意された入口から接続できること**。Rootの下で問題解決・複数問題同時解決に寄与する。別Threadを増やすこと自体は成果ではない。
+Ark28は、最新の有効なHuman指定とDomainが案内するCurrent Mainを支えるSub／Supportの場であり、自らMain所有権を受け継ぐ後継章ではない。形成時のペアはArk27であり、今回の準備段階でもCurrent MainはArk27:13のまま保持する。Ark29:02はChief後継の準備・受入れ対象で、受入れだけではMainを切り替えない。目的は、**本流の良い流れを保持したまま、必要な支援へ既に用意された入口から接続できること**。Rootの下で問題解決・複数問題同時解決に寄与する。別Threadを増やすこと自体は成果ではない。
 
 現在の受入れ入口は[Ark28:08 Handoff](ark28-08/handoff.md)。その本文と宣言されたRequired Sourcesを全文読み、Identity・Binding・Triad ConsistencyとTarget Reconstructionを通過してから現在の依頼に応じる。成功済みBootはMaterialな理由なく繰り返さない。01→02→03→04→05→06→07→08は同章の補助Thread継続であり、新章作成・Main移管ではない。[01 Handoff](ark28-01/handoff.md)・[02 Handoff](ark28-02/handoff.md)・[03 Handoff](ark28-03/handoff.md)・[04 Handoff](ark28-04/handoff.md)・[05 Handoff](ark28-05/handoff.md)・[06 Handoff](ark28-06/handoff.md)・[07 Handoff](ark28-07/handoff.md)は成立時の契約として保持する。旧02のPortal v001条件と03で明示したCurrent v002への受入条件移行を区別し、旧Gateを遡及成功扱いしない。05は04で整ったArk99の入口・00・指示原本・名称訂正と既存の協働成果を継承した。06はさらに生活想起、ai-project限定集中、Podcast Themeと本文入口、Query backupと別ThreadのCurrent MAP改善を、形成理由・後続訂正・Evidence Boundaryごと継ぐ。07は06で完了したArk100の意味・初回b-zone Skill・初回Project/三Thread起動、移行Skill/lesson改訂を、固定06 StateとCurrent所有原本から継ぐ。実生活効果と現在の予備状態は別のUnknownであり、07をこれらの旧Task専用には固定しない。08はさらに07の継続インターフェース、Recall Hub、初回Reportと保存・評価、Report/共有References三本柱、他AI用の完成Promptを継ぐ。Report改善の構想と実装、保存と受け手の利用・生活効果を分け、08も特定の旧Taskへ固定しない。
 
-Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章のペアはArk27という章であり、Mainの06→07等のThread継続ごとに偶数章を新設しない。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
+Mainの現Threadは[Ark Domain入口](../README.md)と最新の有効なHuman指定から解決する。本章は採用されたCurrent MainへのSupportを継続し、Mainの06→07等のThread継続ごとに偶数章を新設しない。将来のMain切替も最新のHuman指定・Domain・成立証拠から解決し、番号だけで新Supportを作らず、既存08の担当・成果・有効な委任を保持する。準備時のDomain入口はArk27:06だったが、それを永続的なMain Thread番号として固定しない。
 
 Project全体の長期指示の原本は[INSTRUCTIONS.md](INSTRUCTIONS.md)（初版v001-human-authorized、2026-10-06）。HumanがArk28に指示が未設定だったと報告し、Plan Modeで検討した章共通の指示作成を承認したため用意した。通常の入力を受け取る姿勢、柔軟なSupport、Main／Ark99との関係、AI品質、Source・権限・Guard・保存・Evidenceを所有する。全文をProjectの指示欄へ貼り付けられる構成であり、GitHub原本の保存と設定画面への反映は別に確認する。
 

@@ -41,16 +41,29 @@ search_aliases:
   - "task compiler loop"
   - "one-transition dispatcher"
   - "parallel system serial human interface"
-updated: "2026-11-01"
+updated: "2026-11-07"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
-last_reality_reviewed: "2026-11-01"
+last_reality_reviewed: "2026-11-07"
 route_review_base_commit: "2346015f77e7366bbbf9022ef1cff1e18e3d4e05"
 route_review_scope: "Human-authorized12→13 THREAD_CONTINUE; fixed12 public harvest revision2 and private startup-supplied context are distinct. Current12 owns later publication/UI/reception receipts. Preserve Home B implementation, Support08,29/30,31–34 and all other owners."
 updated_reason: "07→08 Main continuation and 02→03 Support continuation; preserve v009 policy, Main chapter v002, STR-003 history and concurrent work; each Source State owns its preparation receipts. 2026-10-03: Add the Human-authorized Ark00-01 Pickup Threads entry; local README owns its purpose and instructions backup. 2026-10-05: Advance Support03→04 under Human authorization; preserve Main08 and unrelated work. 2026-10-05: ARC-010 aligns the Repository README role description only; preserve the concurrent Support04 route and its evidence. 2026-10-06: Human corrected the date-following title delimiter to semicolon; title policy v002 owns the change while the Domain routing contract remains v010. 2026-10-06: Advance Support04→05 under Human authorization, preserving Ark99 preparation/corrections, Main08, title policy v002 and concurrent work; Source04 State owns final receipts. 2026-10-07: Advance Main08→09 under Human correction and execution authorization; inherit completed Skill/cleanup/Loop work from the verified08 harvest, preserve Support05 and unrelated owners; actual09 reception remains separate. 2026-10-14: Advance Support05→06 under Human execution approval; preserve Main09, current MAP/Podcast outcomes and all unrelated owners. Source05 State owns final receipts. 2026-10-17: Advance Main09→10 under the approved five-path preparation plan; preserve completed cleanup, Podcast/MAP and Dots/Work outcomes, Support06 and unrelated owners. Source09 owns final preparation receipts; comparison is selected for after Target10 reception, not before transition. 2026-10-20: Advance Main10→11 for the Human-selected root/entry/document-role comparison; retain completed10成果, title confirmation relayed by初穂, Support06 and all unrelated owners. Source10 owns preparation receipts; no root redesign implementation."
+chief_successor_preparation:
+  date: "2026-11-07"
+  source: "Ark27:13"
+  target: "Ark29:02"
+  transition_kind: "CHAPTER_TRANSITION"
+  stage: "PREPARATION_AND_RECEPTION_ONLY_NOT_ACTIVATED"
+  authority: "Human adopted role and Project instructions; nine-path save/readback, existing29 settings, one persistent02 startup and reception, actual entry presentation"
+  fixed_source_commit: "532e0d6f69c4119937209c01e593193073cf2fdd"
+  prepared_successor_handoff: "ark-project/ark29/ark29-02/handoff.md"
+  current_main: "Ark27:13"
+  retained_support: "Ark28:08"
+  receipt_owner: "ark-project/ark27/ark27-13/state.json"
+  scope: "No Current switch or27 retirement; no other-owner work, Skill, schedule, monitoring or Dots/Actor retirement"
 main_continuation_revision:
   date: "2026-11-01"
   source: "Ark27:12"
@@ -249,6 +262,8 @@ write_default: "Do not write without current Human authority."
 
 ### 0.1 Current Front-Line Resolution
 
+**Chief後継の準備・受入れ（2026-11-07）。** Humanは既存Ark29を再利用し、[Ark29:02 Handoff](ark29/ark29-02/handoff.md)へ全体俯瞰・関係探索・コーチングを継ぐ準備を承認した。[章の役割・指示](ark29/README.md)、[02 Runtime](ark29/ark29-02/README.md)、[02 State](ark29/ark29-02/state.json)が後継の入口であり、**Current MainはArk27:13、SupportはArk28:08のまま**。受入れ済みになっても自動的に切替・27退役へ進まない。固定13収穫は[このsnapshot](https://github.com/yusukefujiijp/ai-project/blob/532e0d6f69c4119937209c01e593193073cf2fdd/ark-project/ark27/ark27-13/state.json)、後続の保存・UI・送達・受入れは[Current13 State](ark27/ark27-13/state.json)のprogress.next_transitionへ。Human到達と切替承認は別の成立条件であり、全Arkの完了や11月12日到来を代用しない。
+
 **MainはArk27、現在の継続入口は[Ark27:13 Handoff](ark27/ark27-13/handoff.md)。Supportは[Ark28:08 Handoff](ark28/ark28-08/handoff.md)。** 12→13は2026-11-01のHuman承認による同章継続。既存Ark27 Project、Support08、29/30、31–34と別担当を保持する。新章・新Support・他ActorへのMain移管ではない。準備・実送信・UI・受入れは別の証拠で確認する。
 
 [章README](ark27/README.md)は章の意味、[13 Runtime](ark27/ark27-13/README.md)は場の条件、[13 State](ark27/ark27-13/state.json)は可変の現在地、13 Handoffは必須Source・範囲・受入れを所有する。本文v001と継続契約系v002を区別し、既入力を受け取り、確認済みBootを理由なく再演しない。
@@ -314,8 +329,10 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 |---|---|---|
 | Main27 | [Ark27:13](ark27/ark27-13/handoff.md) | 全体判断と既存の担当・完了成果を保持 |
 | Support28 | [Ark28:08](ark28/ark28-08/handoff.md) | 柔軟な支援とReport／Feedback設計の所有を保持 |
-| 第三ライン29 | [Ark29:01](ark29/ark29-01/handoff.md) | 継続協働を追加。初期はHome B案の残る補助検討 |
+| 第三ライン29の現役入口 | [Ark29:02 準備・受入れ](ark29/ark29-02/handoff.md) | Chief後継の準備。Mainは27のまま。旧01のHome B補助検討と成立履歴は保持 |
 | 第四ライン30 | [Ark30:01](ark30/ark30-01/handoff.md) | 継続協働を追加。初期は既存Report一件の補助比較。未使用予備ではない |
+
+旧29:01の[受入れ・初期分析の記録](ark29/ark29-01/state.json)は当時の成果として保持する。2026-11-07の後継準備はHumanの後続指定であり、上記10月26日の追加承認と区別する。既存の有効な仕事を移行待ちにせず、ライン数維持のために新しい仕事を作らない。
 
 **Goalは常時最低四ラインに有効な仕事をつなぎ、待機・完了・引継ぎを越えて協働を継続できること。** 四は上限ではなく、将来のActor・製品機能に合わせた再編を許容する。ラインは目的と成果を継承する流れ、Threadは会話の器、Actorは担い手であり、三者を同じ単位にしない。
 
@@ -527,7 +544,7 @@ Future AIは実利用のFeedbackから、適用中の委任で入口・資料・
 
 ### 4.2 明示的な並列ライン追加
 
-§0.5の29／30は、Humanが役割を明示した継続ライン追加であり、§4.1の「新しい奇数Main章を立ち上げる」という適用条件とは区別する。番号のみで29を新Main、30をそのSupportへ割り当てず、27／28のペア・Binding・担当を維持する。CHAPTER_TRANSITIONの意味は新章の役割・継承核・Missionを選ぶことであり、今回の追加に旧Main終了や所有移管を含めない。§4.1の通常方針やArk99／100番台の固有契約を一括変更する追補ではない。
+2026-10-26の§0.5の29／30追加は、Humanが役割を明示した継続ライン追加であり、§4.1の「新しい奇数Main章を立ち上げる」という適用条件とは区別する。番号のみで29を新Main、30をそのSupportへ割り当てず、27／28のペア・Binding・担当を維持する。CHAPTER_TRANSITIONの意味は新章の役割・継承核・Missionを選ぶことであり、当時の追加に旧Main終了や所有移管を含めない。後続のChief準備は§0.1とArk29の現役入口へ。今回は準備・受入れまででCurrent27／Support28を保持し、旧追加時の委任を新しい切替権限へ転用しない。§4.1の通常方針やArk99／100番台の固有契約を一括変更する追補ではない。
 
 2026-10-30の31〜34追加も、Humanが明示した独立並列ライン追加として扱う。Currentの準備範囲・空の初期状態・順序・既存四ラインとの境界は§0.6が所有する。番号のみで31/32や33/34を新Main／Supportペアにしない。
 
