@@ -1,6 +1,6 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.51.0
+version: v0.52.0
 status: experimental / Human-authorized shared skill expansion
 updated: 2026-11-06
 home_b_alignment:
@@ -8,7 +8,7 @@ home_b_alignment:
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
-updated_reason: "2026-11-06: AI Problem Triage／AI問題切り分けの共有原本と利用READMEへの入口を追加し現行40件へ更新。AI自身によるTask化・切り分け・実行順の生成と更新へ接続。保存・登録・挙動確認の範囲は個別READMEで区別する。2026-11-06: Human採用のHow共有原本と利用READMEへの入口を追加し現行39件へ更新。日常・現実世界の働き・条件・つながりの理解を主軸とし、共有保存と登録・挙動・Humanへの効果を区別。2026-10-31: References三本柱の組込みSkillを追加し現行38件へ更新。対象領域の仕事から局所referencesの入口・所有先・利用・更新を設計する手順と、登録の有無を問わず渡せる呼出しQueryを接続。対象領域への適用・各環境への登録・実利用の確認とは分離。2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
+updated_reason: "2026-11-06: Human採用のWhy共有原本と利用READMEへの入口を追加し現行41件へ更新。日常・現実世界の理由・背景・経緯の理解と必要に応じた現在の妥当性の検討へ接続。共有保存・利用Queryと登録・挙動・Humanへの効果を区別。2026-11-06: AI Problem Triage／AI問題切り分けの共有原本と利用READMEへの入口を追加し現行40件へ更新。AI自身によるTask化・切り分け・実行順の生成と更新へ接続。保存・登録・挙動確認の範囲は個別READMEで区別する。2026-11-06: Human採用のHow共有原本と利用READMEへの入口を追加し現行39件へ更新。日常・現実世界の働き・条件・つながりの理解を主軸とし、共有保存と登録・挙動・Humanへの効果を区別。2026-10-31: References三本柱の組込みSkillを追加し現行38件へ更新。対象領域の仕事から局所referencesの入口・所有先・利用・更新を設計する手順と、登録の有無を問わず渡せる呼出しQueryを接続。対象領域への適用・各環境への登録・実利用の確認とは分離。2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -67,7 +67,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行40件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+現行41件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -88,6 +88,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | Token Burning Mode / token-burning-mode | 承認済みの価値ある仕事へ利用枠を集中配分し、品質と権限を保って残量を近ゼロへ。期限からの逆算と、別途委任されたResetへの接続 | [README・Query](token-burning-mode/README.md) / [SKILL.md](token-burning-mode/SKILL.md) |
 | Usage Token Reset / usage-token-reset | Work/CodexのReset券の付与・手動使用報告、期限確認、承認済み使用と予定の整合 | [README・Query](usage-token-reset/README.md) / [SKILL.md](usage-token-reset/SKILL.md) |
 | How / how | 日常・現実世界の働き・条件・つながりを根拠から理解し、依頼に応じた比較・提案へ接続 | [README・Query](how/README.md) / [SKILL.md](how/SKILL.md) |
+| Why / why | 日常・現実世界の理由・背景・経緯を根拠から理解し、必要に応じて現在の妥当性を考える | [README・Query](why/README.md) / [SKILL.md](why/SKILL.md) |
 | 問題解決 / problem-solving | 未整理・停滞・複数の困りごとから方法を選び、共通の改善と必要な遂行へつなぐ | [README・Query](problem-solving/README.md) / [SKILL.md](problem-solving/SKILL.md) |
 | AI Problem Triage / AI問題切り分け / ai-triage-problems | Goalに必要な仕事をAI自身がTask化し、AI遂行とHuman介入を切り分け、依存関係に沿う実行順を生成・更新する | [README・Query](ai-triage-problems/README.md) / [SKILL.md](ai-triage-problems/SKILL.md) |
 | load | 目的・重要な訂正・成果と根拠・未完了・再開条件を原本から回復 | [README・Query](load/README.md) / [SKILL.md](load/SKILL.md) |
@@ -297,4 +298,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.51.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.52.0
