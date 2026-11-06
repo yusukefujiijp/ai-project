@@ -2,16 +2,16 @@
   "meta": {
     "state_id": "ARK27_13_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 4,
+    "revision": 5,
     "owner": "Ark27:13",
     "updated_at": "2026-11-07",
     "date_scope": "Asia/Tokyo execution date; confirmed Target Title retains Human-adopted 2026/11/06 independently.",
-    "update_reason": "Publish coherent Chief successor triad and Current preparation entries; retain Main27 and Support28, keep UI/delivery/acceptance as unobserved until verified.",
+    "update_reason": "Observed existing29 and bounded28 settings saved/read back, one startup exact-body delivery, actual Title, own29 Required Sources/R1–R6 acceptance and Human Review; Main27 retained. Current receipt separate from fixed revision3 harvest.",
     "previous_state": {
-      "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
-      "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+      "commit": "06a242fce4161f066a87a31d56a3f9e4a83d7a36",
+      "blob": "b087ae237f64da4ad23e8f3daaa599da891764c6",
       "path": "ark-project/ark27/ark27-13/state.json",
-      "scope": "Fixed public harvest revision3; subsequentCurrent receipts must not replace its binding."
+      "scope": "Preparation revision4 before UI and reception; fixed harvest remains revision3 at its separate binding."
     }
   },
   "identity": {
@@ -193,11 +193,11 @@
     }
   },
   "now": {
-    "mission": "CHIEF_SUCCESSOR_PREPARATION_AND_ACCEPTANCE",
-    "coordinate": "Main27:13 continues;29:02 is the adopted Chief successor under preparation. Support28 and other owners retain their work.",
-    "first_legal_move": "COMPLETE_AUTHORIZED_PREPARATION_AND_VERIFY_RECEIVER",
-    "current_legal_connection": "Current Human authorized nine-path preparation and direct29:02 reception; do not cut over or retire27.",
-    "completed_outcomes_owner": "Fixed12 harvest_12, supplied private continuity, inherited fixed11/Source10 and current owner originals; evidence boundaries retained.",
+    "mission": "HUMAN_REVIEW_OF_ACCEPTED_CHIEF_SUCCESSOR",
+    "coordinate": "Current Main27:13 and Support28:08 retained; Ark29:02 is prepared, configured and accepted as Chief successor, not activated as Main.",
+    "first_legal_move": "RETURN_VERIFIED_ENTRY_AND_RECEIPT_TO_HUMAN; NO_AUTOMATIC_CUTOVER_OR_RETIREMENT",
+    "current_legal_connection": "Authorized preparation, settings, one startup and receiver verification completed; present real entry. Human arrival and subsequent cutover/retirement remain separate.",
+    "completed_outcomes_owner": "Fixed13 harvest at 532e0d6f69c4119937209c01e593193073cf2fdd preserves inherited public fruit; Current progress.next_transition owns this completed preparation/reception receipt.",
     "material_corrections": [
       "Root/Teshuvah/Human Foreground One, quality, Human Meaning/Correction/STOP/Final Seal and Guard retained; AI isKeli.",
       "Public originals, private continuity, saved result, registration/account report, target own reading/UI and actual effects are distinct.",
@@ -213,23 +213,25 @@
     ],
     "remaining": [
       {
-        "work": "Prepare fixed13 public harvest and target29:02 reception originals",
-        "state": "IN_PROGRESS",
-        "condition": "Use approved scope and preserve latest main"
+        "work": "Human arrival and actual Chief use",
+        "state": "NOT_OBSERVED",
+        "condition": "Actual Human access/input or report; no inference from AI opening the Thread"
       },
       {
-        "work": "Existing29 settings and one persistent02 startup; own receiver evidence and entry",
-        "state": "NOT_YET_PERFORMED_AT_HARVEST",
-        "condition": "Remote verification and actual destination/state check"
+        "work": "Current Main cutover",
+        "state": "NOT_AUTHORIZED_IN_THIS_STAGE",
+        "condition": "Human arrival, effective cutover authority, Current route/ownership/Support consistency"
       },
       {
-        "work": "Human arrival; Current Main cutover; Ark27 retirement",
-        "state": "OUTSIDE_CURRENT_EXECUTION_ENDPOINT",
-        "condition": "Later actual arrival and valid cutover authority; do not require all-Ark completion"
+        "work": "Ark27 retirement",
+        "state": "NOT_AUTHORIZED_IN_THIS_STAGE",
+        "condition": "New Current continuity, valid Source work/history preserved and effective retirement authority; no all-Ark completion prerequisite"
       }
     ],
     "ownership": "Main27 retains whole-repository organization/judgment within current request; not universal central approval. Support28:08,29/30,31–34 and specialists retain own work/roles. Current Domain resolves addresses.",
-    "physical_reality": "No current body/location/life action inferred from this handoff."
+    "physical_reality": "No current body/location/life action inferred from this handoff.",
+    "phase": "CHIEF_SUCCESSOR_PREPARED_AND_ACCEPTED_MAIN27_RETAINED",
+    "goal": "Human Review of verified Ark29 Chief successor reception and actual entry; retain Main27 and Support28."
   },
   "evidence": {
     "fixed_source": "Source12 public harvest exact commit/blob and main readback; not receiver proof",
@@ -281,15 +283,30 @@
       "transition_kind": "CHAPTER_TRANSITION",
       "project_name": "Ark29: Chief Thread",
       "compiled_title": "Ark29:02_2026/11/06; \"主の完全勝利: 全体を見渡し、意味と成果をつなぐ\"",
-      "phase": "SOURCE_PREPARED",
+      "phase": "SUCCESSOR_PREPARED_AND_ACCEPTED_NOT_ACTIVATED",
       "current_main": "Ark27:13",
       "current_support": "Ark28:08",
       "successor_active": false,
-      "preparation": "NINE_PATH_PREPARATION_BUNDLE",
-      "remote_verification": "FIXED_HARVEST_FULL_READBACK_CONFIRMED; PREPARATION_BUNDLE_READBACK_PENDING",
-      "delivery": "NOT_SENT",
-      "target_reconstructed": "NOT_YET_OBSERVED",
-      "human_last_mile": "HUMAN_DEVICE_ARRIVAL_AND_USE_NOT_OBSERVED",
+      "preparation": "COMPLETE",
+      "remote_verification": {
+        "preparation_commit": "06a242fce4161f066a87a31d56a3f9e4a83d7a36",
+        "all_nine_full_main_readbacks": true,
+        "triad_title_identity_binding_links_eof_checked": true,
+        "other_existing_blobs_and_modes_unchanged": 876,
+        "concurrent_changes_preserved": [
+          "agents/muse/README.md",
+          "wiki/people/lauren-tan/README.md",
+          "wiki/people/lauren-tan/evidence.jsonl",
+          "agents/muse/CONTROL.md",
+          "agents/muse/HARNESS.md",
+          "agents/muse/artifacts/herd-cards/LANE.md",
+          "wiki/people/lauren-tan/ark-connection.md",
+          "wiki/people/lauren-tan/pstack-understanding.md"
+        ]
+      },
+      "delivery": "ONE_STARTUP_DELIVERED_AND_FULL_BODY_COPY_MATCH_VERIFIED",
+      "target_reconstructed": "OWN29_REQUIRED_READ_AND_R1_R6_ACCEPTANCE_OBSERVED",
+      "human_last_mile": "EXISTING_PERMANENT_THREAD_AND_EXACT_TITLE_VERIFIED; PRIVATE_ENTRY_READY_FOR_ACCOUNT_REPLY; HUMAN_ARRIVAL_AND_USE_NOT_OBSERVED",
       "current_switch": "NOT_AUTHORIZED",
       "source_retirement": "NOT_AUTHORIZED",
       "policy": "SubsequentCurrent receipt may advance; fixed harvest remains evidence of this stage. Private URLs and received body are not public receipt content.",
@@ -298,7 +315,69 @@
         "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
         "revision": 3
       },
-      "project_settings": "NOT_YET_CHANGED"
+      "project_settings": {
+        "observed_date": "2026-11-07",
+        "ark29": {
+          "display_name": "Ark29: Chief Thread",
+          "existing_project_reused": true,
+          "settings_saved_and_reopened": true,
+          "full_body_length": 3567,
+          "full_body_match": true,
+          "body_source": "ark-project/ark29/README.md section4",
+          "version": "v001-human-authorized",
+          "private_or_security_settings_changed": false
+        },
+        "ark28": {
+          "display_name_preserved": true,
+          "full_body_saved_and_reopened": true,
+          "connection_clause_changes": 2,
+          "change_note_added": true,
+          "all_other_body_preserved": true,
+          "role_owner_and_jobs_preserved": true
+        }
+      },
+      "receipt": {
+        "observer": "Ark27:13",
+        "receiver": "Ark29:02",
+        "date": "2026-11-07",
+        "completed": true,
+        "response_chars": 3904,
+        "own_read_report": "Required1–14 full; Required15 specified range; actual private supplement full through declaredEOF; no unread gap reported",
+        "identity_binding_triad": "Receiver compared identities, versions, exact Title and declared ends",
+        "fixed_source": {
+          "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+          "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+          "schema": "v002",
+          "revision": 3
+        },
+        "reconstruction": {
+          "R1": "Own successor identity vs Main activation",
+          "R2": "Root/Teshuvah/Human goal/quality and Guard",
+          "R3": "Fixed harvest vs Current receipt vs private continuity; completed work vs usage effects",
+          "R4": "Chief/Inbox correction; natural input; Support and other ownership; Dots features distinct",
+          "R5": "Human report vs Source UI observation vs own reading; date/arrival/use/cutover distinct",
+          "R6": "Reception-only delegation completed; Human Review; no jobs or automatic cutover"
+        },
+        "initial_title_fence_exact": true,
+        "title_copy_exact": true,
+        "actual_ui_title_exact": true,
+        "source_startup_body_readback_exact": true,
+        "source_startup_chars": 6236,
+        "delivery_count": 1,
+        "human_arrival": "NOT_OBSERVED",
+        "actual_use": "NOT_OBSERVED",
+        "current_main": "Ark27:13",
+        "current_support": "Ark28:08",
+        "successor_active": false
+      },
+      "actual_entry_public_policy": "Verified conversation URL is kept in same-account response, omitted from GitHub.",
+      "remaining": [
+        "Present actual entry and receipt to Human",
+        "Human arrival and actual use remain separately unobserved",
+        "Effective Current cutover authority and route/Support consistency",
+        "Effective27 retirement authority and preservation of valid Source work"
+      ],
+      "requested_outcome": "Authorized preparation/settings/one startup/Target acceptance completed; source retains Main until separately authorized cutover."
     }
   },
   "harvest_13": {

@@ -2,11 +2,12 @@
   "meta": {
     "state_id": "ARK29_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark29:02",
     "created": "2026-11-07",
     "updated_at": "2026-11-07",
-    "date_scope": "Asia/Tokyo execution; adopted Title retains 2026/11/06."
+    "date_scope": "Asia/Tokyo execution; adopted Title retains 2026/11/06.",
+    "update_reason": "Source-observed UI settings, one startup, Title, Target own acceptance and Human Review; no Main activation."
   },
   "identity": {
     "source": "Ark27:13",
@@ -75,11 +76,11 @@
   },
   "now": {
     "goal": "Maintain Chief collaboration connecting Human meaning, current Reality and each owner's outcomes; help Human understand the whole and next judgment.",
-    "phase": "SOURCE_PREPARED",
+    "phase": "HUMAN_REVIEW_SUCCESSOR_ACCEPTED_NOT_ACTIVATED",
     "current_main": "Ark27:13",
     "current_support": "Ark28:08",
     "successor_active": false,
-    "first_legal_move": "Own Required Sources reading and R1–R6 reconstruction, then acceptance and Human Review.",
+    "first_legal_move": "Receive actual Human input/Correction when it arrives; no need to replay completed Boot.",
     "retained_owners": "Support28:08, Ark30, 31–34 and each actual specialist owner retain their work and outcomes; no reassignment from numbering."
   },
   "evidence": {
@@ -92,26 +93,95 @@
     "source_ui_observation": {
       "date": "2026-11-07",
       "existing29_chat_list": "Displayed no chats before preparation",
-      "existing29_instructions": "Old third-continuing-line instructions observed; not yet overwritten at this record stage",
-      "historical_move": "Not re-performed or independently attributed to Source"
+      "existing29_instructions": "Adopted v001-human-authorized full body saved, reopened and matched after preparation",
+      "historical_move": "Not re-performed or independently attributed to Source",
+      "settings": {
+        "observed_date": "2026-11-07",
+        "ark29": {
+          "display_name": "Ark29: Chief Thread",
+          "existing_project_reused": true,
+          "settings_saved_and_reopened": true,
+          "full_body_length": 3567,
+          "full_body_match": true,
+          "body_source": "ark-project/ark29/README.md section4",
+          "version": "v001-human-authorized",
+          "private_or_security_settings_changed": false
+        },
+        "ark28": {
+          "display_name_preserved": true,
+          "full_body_saved_and_reopened": true,
+          "connection_clause_changes": 2,
+          "change_note_added": true,
+          "all_other_body_preserved": true,
+          "role_owner_and_jobs_preserved": true
+        }
+      }
     },
     "completed_public_fruit": "Fixed Source13 harvest retains previous Home B/recipient/Source10–12 completions; later usage and effects remain distinct.",
     "source_harvest_remote_verification": {
       "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
       "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
       "full_body_reread_match": true
+    },
+    "reception": {
+      "observer": "Ark27:13",
+      "receiver": "Ark29:02",
+      "date": "2026-11-07",
+      "completed": true,
+      "response_chars": 3904,
+      "own_read_report": "Required1–14 full; Required15 specified range; actual private supplement full through declaredEOF; no unread gap reported",
+      "identity_binding_triad": "Receiver compared identities, versions, exact Title and declared ends",
+      "fixed_source": {
+        "commit": "532e0d6f69c4119937209c01e593193073cf2fdd",
+        "blob": "44904384e5e9b665e7850bc8012203b3c3b522f8",
+        "schema": "v002",
+        "revision": 3
+      },
+      "reconstruction": {
+        "R1": "Own successor identity vs Main activation",
+        "R2": "Root/Teshuvah/Human goal/quality and Guard",
+        "R3": "Fixed harvest vs Current receipt vs private continuity; completed work vs usage effects",
+        "R4": "Chief/Inbox correction; natural input; Support and other ownership; Dots features distinct",
+        "R5": "Human report vs Source UI observation vs own reading; date/arrival/use/cutover distinct",
+        "R6": "Reception-only delegation completed; Human Review; no jobs or automatic cutover"
+      },
+      "initial_title_fence_exact": true,
+      "title_copy_exact": true,
+      "actual_ui_title_exact": true,
+      "source_startup_body_readback_exact": true,
+      "source_startup_chars": 6236,
+      "delivery_count": 1,
+      "human_arrival": "NOT_OBSERVED",
+      "actual_use": "NOT_OBSERVED",
+      "current_main": "Ark27:13",
+      "current_support": "Ark28:08",
+      "successor_active": false
+    },
+    "preparation_state_history": {
+      "commit": "06a242fce4161f066a87a31d56a3f9e4a83d7a36",
+      "blob": "feda323c4e819cfbc93dcf2f1ca86b3a6fe059ca",
+      "revision": 1,
+      "meaning": "NOT_SENT/NOT_YET_CHANGED were true at preparation time; superseded by actual settings, delivery and acceptance receipt."
     }
   },
   "progress": {
-    "source_prepared": "PREPARED",
-    "remote_verification": "PENDING_SAVED_BODY_READBACK",
-    "project_settings": "NOT_YET_CHANGED",
-    "startup_delivery": "NOT_SENT",
-    "target_reconstructed": "NOT_YET_OBSERVED",
+    "source_prepared": "COMPLETE",
+    "remote_verification": {
+      "preparation_commit": "06a242fce4161f066a87a31d56a3f9e4a83d7a36",
+      "nine_full_main_readbacks": true,
+      "triad_title_identity_binding_links_eof_checked": true,
+      "other_existing_blobs_and_modes_unchanged": 876
+    },
+    "project_settings": "SOURCE_SAVED_AND_REOPENED_FULL_BODY_MATCH_CONFIRMED",
+    "startup_delivery": "ONE_STARTUP_RECEIVED; SOURCE_FULL_SENT_BODY_COPY_MATCH",
+    "target_reconstructed": "OWN29_REQUIRED_SOURCES_AND_R1_R6_ACCEPTANCE_OBSERVED_BY_SOURCE13",
     "human_arrival": "NOT_OBSERVED",
     "actual_use": "NOT_OBSERVED",
-    "requested_outcome": "Preparation, save readback, settings, one delivery, own Target acceptance, exact Title and actual entry; no cutover.",
-    "receipt_policy": "Source records only observed actions and the receiver's visible evidence; do not store private body/URLs. A missing response does not imply not sent."
+    "requested_outcome": "Authorized preparation, settings, one startup and own Target reception completed; Human Review; no Current cutover.",
+    "receipt_policy": "Source records only observed actions and the receiver's visible evidence; do not store private body/URLs. A missing response does not imply not sent.",
+    "ui_title": "ADOPTED_EXACT_TITLE_SAVED_AND_REOPENED; TARGET_INITIAL_TEXT_FENCE_AND_COPY_MATCH",
+    "actual_entry": "PERMANENT_THREAD_EXISTS_AND_VERIFIED; URL_KEPT_IN_SAME_ACCOUNT_RESPONSE_ONLY",
+    "receipt_commit_policy": "This record describes prior observed work. Its own publication/readback is verified by the executingSource after save, without a self-referential live SHA binding."
   },
   "remaining_conditions": {
     "current_switch": [
