@@ -6,7 +6,13 @@ repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
 role: "Room-care purpose, material Human corrections and practical collaboration owner"
 project_entry: "../../../ark-project/ark100-199/ark109_room-care/README.md"
-updated: "2026-10-27"
+updated: "2026-11-07"
+supplement:
+  id: "2026-11-07-how-why-reconnection"
+  reason: "Record the adopted How/Why use policy, its formation, verified source routes, and evidence boundaries."
+  authority: "On 2026-11-07, Human adopted both README additions and authorized only their publication, necessary document consistency changes, and remote verification."
+  base_commit: "5bb8e5d23a5a1716306c01473ebc4c90db46086b"
+  compatibility: "Document version and Exact EOF retained; roles, required reading, runtime acceptance conditions, and instructions/settings are unchanged."
 status: "Human-authorized initial foundation / practical methods are candidates until observed"
 source_basis: "Human dialogue leading to Ark101: room-care creation and explicit GitHub setup authorization"
 expected_eof: "EOF::ROOM_CARE_DOMAIN::v002-human-authorized"
@@ -68,6 +74,25 @@ AI側の役割は、写真や説明から状況・関係・選択肢を読み解
 **育てる。** 役に立った理由・成立条件・残る困りごとを次へ戻す。記録する場合は、現在の依頼と権限に沿って必要なものを保存する。初回から専用台帳、全物品Database、Skill、全室Planを作ることをGoalにしない。
 
 片付けは物を収める判断、清掃は汚れ等への対処、整理整頓は必要性・置き場所・取り出しやすさ・戻しやすさの関係、維持は普段の流れとの接続として、今回必要な部分を扱う。全てを一度に完成させる必要はない。
+
+### 4.1 How／Whyを使って、居室の実課題から理解を育てる
+
+2026-11-07、HumanはArk111でのHow／Whyの検討を居室整理へ接続し、暮らしの改善を主な成果に置きながら、同じ経験から方法の理解と学びを得る方針を採用した。Humanはこの発見を、複数問題同時解決、ドラッカー的「予期せぬ成功」と受け止めている。これは発見の意味であり、居室改善の効果が実証されたという記録ではない。
+
+現在の依頼と継続文脈から、How、Why、両方のどれが役立つかをAIが選ぶ。Howは物・場所・行動・時間などの働きと条件、Whyは理由・目的・経緯・制約を理解するために使う。Humanへ厳密な使い分け、毎回の併用、固定順序を要求しない。経験の共有だけで原因調査を始めず、暮らしの相談に別の学習課題や検証記録を自動追加しない。
+
+- How共有原本：
+  https://github.com/yusukefujiijp/ai-project/blob/main/skills/how/SKILL.md
+- Why共有原本：
+  https://github.com/yusukefujiijp/ai-project/blob/main/skills/why/SKILL.md
+
+必要なArk版Skillを直接利用できなければ、対応する共有SKILL.mdを全文読み、指示資料として適用する。同一性と適用文脈を確認できる自身の読解は再利用し、宣言された必須依存・読取順・Identity・Binding・Exact EOFを保持する。取得・表示切れは回収し、必須不足は該当契約に従って扱う。参照リンクすべてを追加必読にせず、登録状況だけで利用できないと決めつけない。
+
+原因、本人が表明した理由、目的、制約、現在の評価を必要に応じて分ける。当時の採用理由、現在の継続事情、今後の妥当性を混同しない。確認できた状態、Human報告、推論、不明を区別し、Correctionを依存する説明・比較・提案へ反映する。
+
+理由や働きの理解で今回の依頼を完了できる場合も保持する。比較・推奨を求められた場合は、根拠に合う条件付きの結論まで返す。過去の理由が不明でも、現在の比較が可能なら進める。
+
+利用方針の採用と、方法の実利用・使いやすさ・維持への効果は別に扱う。実際の室内状況を説明用の仮例で補わず、現在のHuman入力から理解を更新する。説明・提案から、購入・処分・保存・実生活の試行の承認を作らない。
 
 ## 5. Guardと権限
 

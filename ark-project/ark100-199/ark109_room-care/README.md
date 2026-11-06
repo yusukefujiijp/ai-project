@@ -17,7 +17,13 @@ initial_thread_runtime: "ark109-01/README.md"
 instructions: "INSTRUCTIONS.md"
 practice_owner: "../../../control-center/house/room-care/README.md"
 domain_router: "../../README.md"
-updated: "2026-10-27"
+updated: "2026-11-07"
+supplement:
+  id: "2026-11-07-how-why-reconnection"
+  reason: "Record the adopted reconnection and Human-reported delivery to existing Ark109:01, without claiming receiver understanding or field effects."
+  authority: "On 2026-11-07, Human adopted both README additions and authorized only their publication, necessary document consistency changes, and remote verification."
+  base_commit: "5bb8e5d23a5a1716306c01473ebc4c90db46086b"
+  compatibility: "Document version and Exact EOF retained; roles, required reading, runtime acceptance conditions, and instructions/settings are unchanged."
 revision_authority: "Current Human renamed room-care from Ark101 to Ark109, designated this same Thread Ark109:01, kept other Threads unchanged, and requested GitHub corrections"
 revision_base_commit: "20dcf05b315bc32449e402a36c3a3f6755527dec"
 previous_version_snapshot: "https://github.com/yusukefujiijp/ai-project/blob/20dcf05b315bc32449e402a36c3a3f6755527dec/ark-project/ark100-199/ark101_room-care/README.md"
@@ -84,5 +90,17 @@ Humanの明示的な名称をそのまま保持する。Domain §6の一般Templ
 2026-10-27の改番は今回のHuman報告・指定としてConfirmed。既存Threadの継続として受け取った。Project／ThreadのUI表示や最新版instructionsの設定反映は独立に確認した事実ではなく、GitHubの更新から自動反映を仮定しない。
 
 Root・権限・品質は[ARK](../../../ARK.md)と[AGENTS](../../../AGENTS.md)を保持する。実際の受入れは01 Runtimeの条件で行い、起動のみならHuman Review、新しい入力があればその依頼へ接続する。
+
+### 4.1 2026-11-07 — How／Whyの追加文脈を既存Ark109:01へ接続
+
+Ark111での検討を経て、Humanは居室整理の実課題を通してHow／Whyの理解も育てる方針と、既存Ark109:01への接続を採用した。形成理由と利用方法は[room-care原本](../../../control-center/house/room-care/README.md)が所有する。
+
+Humanは対象Threadを確認し、取り組みがほぼ未着手の状態だと報告した。その後、Ark111で作成した「居室整理 × How／Why：Ark109:01への追加文脈」本文候補v0.1を、Ark109:01へ渡したと報告した。送達はHuman報告済みとして扱い、未送達の状態へ戻さない。
+
+これは既存対話への追加文脈であり、新規Threadの作成、Ark109の再起動、Ark111の研究全体の移管ではない。受け手は既存の有効な文脈・読解・訂正を保持し、現在の入力へ接続する。
+
+作成元AIによる受け手の応答の直接照合、Project instructions欄の現状、今回の方法による居室改善・使いやすさ・維持への効果は、この報告では未確認である。取り組みの着手状況を、部屋の物理的な状態の確認へ置き換えない。
+
+今回の受渡しはPlan-onlyであり、読み取り・対話・説明・比較・提案までを扱う。保存・設定変更・追加送信・実生活の試行の承認は含まない。後続の有効なHuman指定があれば、その対象と範囲で現在地を更新する。
 
 EOF::ARK109_ROOM_CARE_PROJECT::v004-human-authorized
