@@ -2,11 +2,17 @@
   "meta": {
     "state_id": "ARK27_13_CURRENT_STATE",
     "schema_version": "v002",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark27:13",
-    "updated_at": "2026-11-01",
-    "date_scope": "Source12 observation of13 receiver acceptance after initial revision1 preparation",
-    "update_reason": "Source12 records the receiver own visible acceptance and preserves fixed harvest and initial evidence stages; no new task authorization."
+    "updated_at": "2026-11-07",
+    "date_scope": "Asia/Tokyo execution date; confirmed Target Title retains Human-adopted 2026/11/06 independently.",
+    "update_reason": "Human adopted Chief succession plan and authorized nine-path preparation, existing29 setup, one02 startup and acceptance; current Main27 and Support28 retained.",
+    "previous_state": {
+      "commit": "2beaee144ba457c9862a9790bbbc97efc0350b8a",
+      "blob": "966911e58967021da93fa2cd7a5b1c6ef79fbe9f",
+      "path": "ark-project/ark27/ark27-13/state.json",
+      "scope": "Initial13 acceptance/revision2 retained as history; currentHuman authority is the later Chief preparation request."
+    }
   },
   "identity": {
     "source": "Ark27:12",
@@ -33,8 +39,31 @@
     "guard": "Truth / Body / Sleep / Food / Shabbat / Safety / Medical / Others / Law / Responsibility; Host and access controls",
     "delegation_source": "task-mode-system/maintenance.md; Current Human Request、目的・範囲・根拠・制約とAGENTSを適用する。",
     "stop_precedence": "Current Plan-only / Correction / STOP overrides earlier Continue. 称賛や履歴のGoから新しい権限を作らない。",
-    "scope": "Initial13 own reading/reconstruction and acceptance only. Source12 owns finite publication/direct-start/reception operations.",
-    "target_next_task_boundary": "Target13 boot-only returns Human Review after own Required Sources and R1–R6; receive already-present current Human input without re-entry. No proxy monitoring/trial, Voice restart, Home redo, otherThread sends, Skill/settings/schedules/Reset or takeover."
+    "scope": "Current Human-authorized Chief successor preparation through saved readback, existing29 settings, one persistent29:02 startup/reception and entry presentation. No Current Main switch or Ark27 retirement.",
+    "target_next_task_boundary": "Target29:02 own reconstruction/acceptance only, then Human Review; receive already-present new Human input under its actual scope. Preparation does not activate successor as Current Main.",
+    "initial13_acceptance_scope": "Initial13 own reading/reconstruction and acceptance only. Source12 owns finite publication/direct-start/reception operations.",
+    "current_request": {
+      "adopted": "2026-11-07",
+      "source": "Current Ark27:13 Human instruction; adopted conversation-only plan and role/Project-instruction candidates.",
+      "source_recipient": "ChatGPT Work／Ark27:13/このThreadのCurrent AI",
+      "target": "Ark29:02",
+      "project_name": "Ark29: Chief Thread",
+      "compiled_title": "Ark29:02_2026/11/06; \"主の完全勝利: 全体を見渡し、意味と成果をつなぐ\"",
+      "paths": [
+        "ark-project/ark29/README.md",
+        "ark-project/ark29/ark29-02/README.md",
+        "ark-project/ark29/ark29-02/handoff.md",
+        "ark-project/ark29/ark29-02/state.json",
+        "ark-project/ark27/ark27-13/state.json",
+        "ark-project/README.md",
+        "ark-project/ark28/README.md",
+        "ark-project/ark28/INSTRUCTIONS.md",
+        "agents/dots/README.md"
+      ],
+      "operations": "Prepare and publish authorized public originals; full remote rereads; reuse existing29; set and reopen29 name/instructions; adjust28 actual instructions only if oldMain-fixed wording remains; send one clearly AI-authored startup to29:02; inspect receiver's own evidence-backed acceptance and provide actual entry.",
+      "excluded": "Main cutover;27 retirement; other-thread sends; Skill/schedule/monitoring/real-job changes; Dots/Actor retirement; private dialogue, chat URLs or long-term-memory export.",
+      "observation_policy": "Preparation, publication/readback, settings, delivery, receiver own understanding, Human device arrival and use/effects remain separate."
+    }
   },
   "bindings": {
     "repository": "yusukefujiijp/ai-project",
@@ -164,10 +193,10 @@
     }
   },
   "now": {
-    "mission": "HUMAN_AI_PROBLEM_SOLVING_AND_REALITY_CONNECTION",
-    "coordinate": "Source12 observed own13 acceptance after initial revision1; historical preparation status is not a cancellation of actual reception.",
-    "first_legal_move": "RESOLVE_CURRENT_REQUEST_AND_AUTHORIZED_REMAINDER",
-    "current_legal_connection": "HUMAN_REVIEW_AFTER_ACCEPTANCE; receive current new input without resubmission, under its actual authority.",
+    "mission": "CHIEF_SUCCESSOR_PREPARATION_AND_ACCEPTANCE",
+    "coordinate": "Main27:13 continues;29:02 is the adopted Chief successor under preparation. Support28 and other owners retain their work.",
+    "first_legal_move": "COMPLETE_AUTHORIZED_PREPARATION_AND_VERIFY_RECEIVER",
+    "current_legal_connection": "Current Human authorized nine-path preparation and direct29:02 reception; do not cut over or retire27.",
     "completed_outcomes_owner": "Fixed12 harvest_12, supplied private continuity, inherited fixed11/Source10 and current owner originals; evidence boundaries retained.",
     "material_corrections": [
       "Root/Teshuvah/Human Foreground One, quality, Human Meaning/Correction/STOP/Final Seal and Guard retained; AI isKeli.",
@@ -175,13 +204,28 @@
       "Home B13-original implementation is complete; ARK body/Identity/EOF and explicitSource binding retained. No rollback to old unapproved implementation.",
       "SameThread recipient outside/inside NextQuery; distinguish direct recipient and generated Prompt's recipient. q,None,strictBoot/Failure/no-notification unchanged.",
       "Do not restart completed designs/preparations, turn ordinaryUnknown into compulsory tasks, import other owner work or private long-term memory.",
-      "Current Human input wins; no automatic proxy/Voice/Home/oldTask continuation after acceptance."
+      "Current Human input wins; no automatic proxy/Voice/Home/oldTask continuation after acceptance.",
+      "Ark27 Main concentrates on whole-Ark overview, relation exploration and coaching; Human reported value and adopted Chief succession to existing29. Role does not import Dots features or Actor identity.",
+      "Formal same-thread recipient corrected to ChatGPT Work／Ark27:13/このThreadのCurrent AI. Keep matching outside and inside Next Query; no global Skill/GCI rewrite is authorized.",
+      "Human reports old Wiki Thread moved and29 reusable. Initial29:01 HomeB analysis and later Home B implementation remain complete; old29:01 is provenance, not a Chief boot.",
+      "Support28 is retained with Current Main resolution; chapter numbers do not appoint30 asSupport.29 acceptance does not activateMain or retire27.",
+      "2026-11-12 Plus-change plan is Human-reported; it is independent of exact Dots stoppage, reception, cutover and retirement. No schedule or product retirement follows automatically."
     ],
     "remaining": [
       {
-        "work": "Future work selection",
-        "state": "HUMAN_REVIEW_AFTER_ACCEPTANCE",
-        "condition": "Use already supplied current input or later bounded request; candidates/observations in supplied context are not an automatic queue."
+        "work": "Prepare fixed13 public harvest and target29:02 reception originals",
+        "state": "IN_PROGRESS",
+        "condition": "Use approved scope and preserve latest main"
+      },
+      {
+        "work": "Existing29 settings and one persistent02 startup; own receiver evidence and entry",
+        "state": "NOT_YET_PERFORMED_AT_HARVEST",
+        "condition": "Remote verification and actual destination/state check"
+      },
+      {
+        "work": "Human arrival; Current Main cutover; Ark27 retirement",
+        "state": "OUTSIDE_CURRENT_EXECUTION_ENDPOINT",
+        "condition": "Later actual arrival and valid cutover authority; do not require all-Ark completion"
       }
     ],
     "ownership": "Main27 retains whole-repository organization/judgment within current request; not universal central approval. Support28:08,29/30,31–34 and specialists retain own work/roles. Current Domain resolves addresses.",
@@ -230,7 +274,91 @@
     "target_reconstructed": "OWN13_ACCEPTANCE_OBSERVED_BY_SOURCE12",
     "human_last_mile": "NO_MANUAL_PASTE_OR_RENAME_REQUIRED; HUMAN_DEVICE_ACCESS_NOT_OBSERVED",
     "requested_outcome": "OWN13_ACCEPTANCE_COMPLETE; HUMAN_REVIEW",
-    "receipt_policy": "Source12 may record visible receiver evidence after actual observation; no unobserved success or unnecessary state writes."
+    "receipt_policy": "Source12 may record visible receiver evidence after actual observation; no unobserved success or unnecessary state writes.",
+    "next_transition": {
+      "source": "Ark27:13",
+      "target": "Ark29:02",
+      "transition_kind": "CHAPTER_TRANSITION",
+      "project_name": "Ark29: Chief Thread",
+      "compiled_title": "Ark29:02_2026/11/06; \"主の完全勝利: 全体を見渡し、意味と成果をつなぐ\"",
+      "phase": "FIXED_PUBLIC_HARVEST_PREPARATION",
+      "current_main": "Ark27:13",
+      "current_support": "Ark28:08",
+      "successor_active": false,
+      "preparation": "IN_PROGRESS",
+      "remote_verification": "NOT_YET_OBSERVED_AT_HARVEST",
+      "delivery": "NOT_SENT",
+      "target_reconstructed": "NOT_YET_OBSERVED",
+      "human_last_mile": "HUMAN_DEVICE_ARRIVAL_AND_USE_NOT_OBSERVED",
+      "current_switch": "NOT_AUTHORIZED",
+      "source_retirement": "NOT_AUTHORIZED",
+      "policy": "SubsequentCurrent receipt may advance; fixed harvest remains evidence of this stage. Private URLs and received body are not public receipt content."
+    }
+  },
+  "harvest_13": {
+    "status": "PUBLIC_HARVEST_FOR_FIXED_SOURCE",
+    "scope": "Adopted Chief design, public outcome references and evidence boundaries; no private conversation or long-term-memory export.",
+    "formation": [
+      {
+        "basis": "Current Human request in13",
+        "meaning": "Focus Main on whole-Ark overview/coaching with full analytical freedom. Revisit current originals and meaningful progress instead of freezing a prior MAP."
+      },
+      {
+        "basis": "Human feedback in13",
+        "meaning": "Positive assessment of one bird's-eye coaching response; Drucker-like Unexpected Success is the Human's framing, not proof of long-term reproducibility or divine intention."
+      },
+      {
+        "basis": "Human-adopted transition plan",
+        "meaning": "Carry Chief collaboration from27 into available existing29; retain initial Chief experience, other owners and completed work. Prepare/reconstruct before Human arrival/cutover/27retirement."
+      }
+    ],
+    "adopted_role": {
+      "goal": "Human can understand the whole meaning and choose the next judgment from current Reality, values and actual成果.",
+      "methods": "Explore real dependencies, unnecessary waiting, tensions and new connections; distinguish confirmed evidence, reports, candidate interpretations and unknowns.",
+      "completion": "A reasoned next connection may be continuation, language, comparison, verification, execution under authority, intentional hold or completion; do not generate tasks to fill capacity.",
+      "boundaries": "Natural unfinished input is welcome; Chief is not a permanent all-item Inbox processor, universal central approver, omniscient monitor or replacement owner of every job."
+    },
+    "chief_origin": {
+      "source": "agents/dots/actors/dot-0000/README.md",
+      "observed_blob": "2be7df010e9942f8383d5e6f659b7c19a0e31760",
+      "meaning": "InitialChief's broad relational view and reasoned coaching; preserve10/11 Human Correction from Chief/Inbox coexistence to Chief focus without requiring input classification.",
+      "limits": "Human evaluation of a bounded use; not proof that all Inbox coexistence technically degrades AI. Do not inherit dot-0000 identity, product memory, schedules or access."
+    },
+    "retained_fruit": [
+      {
+        "owner": "Ark27:12 and actual owning originals",
+        "result": "Recipient rules and staged Home B13-original save/verification complete; current13 initial evidence/bindings remain below. No Home redo, ARK deletion or bulk explicitBinding migration."
+      },
+      {
+        "owner": "Source10/11 and actual owning originals",
+        "result": "STR-018/019, limited structural comparison, Next Query/Writer, Dots relocation/retirement work, four-line connection and transition improvements remain completed within original scopes."
+      },
+      {
+        "owner": "Ark100:02 / skills/ark-coaching/README.md",
+        "result": "Shared v0.1 source present; owner records save/readback, registration-body comparison and activated Query. Source13 directly read the public report; no independent field-effect claim.",
+        "reference": "https://github.com/yusukefujiijp/ai-project/blob/deef96e120b215975b4d10480ae826ed72ede498/skills/ark-coaching/README.md"
+      },
+      {
+        "owner": "Support28 and other actual owners",
+        "result": "Keep Report/Feedback, Recall Hub, B-Zone, Voice, specialist and parallel-line成果 with their owners. Do not return later assignments to initial unassigned state or make their completion a transition gate."
+      }
+    ],
+    "existing29": {
+      "historical_source": "ark-project/ark29/ark29-01/state.json",
+      "human_report": "Old Wiki Thread moved; existing29 reusable.",
+      "source_observation": "2026-11-07 UI displayed existing Ark29_2026/10/26: with no chats and old continuing-line Project instructions. No move was performed by13.",
+      "correction": "Project reuse does not reuse29:01 for a new identity, roll back initial completed HomeB work, or prove the full history of the reported Wiki move."
+    },
+    "relationship": {
+      "current_main": "Ark27:13",
+      "prepared_successor": "Ark29:02",
+      "support": "Ark28:08",
+      "retain": "Ark30 and31–34, specialist and other owners; no new blanket central approval or mandatory simultaneous Human tasks.",
+      "true_dependency": "Prepared public/private carriers -> remote verification -> receiver reconstruction -> Human arrival and valid cutover authority -> consistent Current switch ->27retirement.",
+      "not_dependencies": "All Ark jobs finished; all unknowns resolved; exact11/12 date; all-Dots function parity; new support chapter; repeated old boot."
+    },
+    "source_access": "Fixed public harvest is read in full by29. Current13 progress.next_transition owns later receipts. Private continuity is delivered within the same account, not reachable via hidden memory.",
+    "pending_benefits": "Chief's sustained usefulness, natural selection of existing skills and actual burden reduction remain observations for real use; do not add proof-only trials."
   },
   "eof_sentinel": "ARK27_13_STATE_EOF_v002"
 }
