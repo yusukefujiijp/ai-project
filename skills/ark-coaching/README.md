@@ -1,8 +1,10 @@
 ---
 title: "Ark-Coaching"
-version: "v0.1-candidate"
-status: "Human Review candidate / not published or installed"
+version: "v0.1"
+status: "active / Human-authorized / shared source and registration verified / behavior and field effects unverified"
 prepared: "2026-11-06"
+updated: "2026-11-06"
+updated_reason: "Human adopted v0.1; publish shared source, register one skill, activate the verified common Query, and separate observed checks from untested behavior and field effects."
 canonical_path: "skills/ark-coaching/README.md"
 source_thread: 'Ark100:02_2026/10/20; "B-Zone: 新しい一件を迎える"'
 ---
@@ -15,7 +17,7 @@ Ark-Coachingは、YusukeJPが今ある言葉を未整理のまま預けられる
 
 Humanが相談内容、状態分類、想起対象、使用するSkillを先に選ぶことを前提にしない。AIが現在の意味・願い・条件を理解し、経験との比較と理由付きの提案を担う。
 
-本版は会話内の本文候補v0.1であり、作成時点では未保存・未登録である。以下の呼出し文案、予定URL、確認計画を、導入済み・利用確認済みの証拠にしない。
+本版はHumanが採用した運用版v0.1である。共有原本の保存・再取得と、Ark-Coaching一件の登録本文・表示情報の照合を確認した。利用Queryを以下に示す。確認できた範囲と、AI応答・Humanの実利用・実生活効果等の未確認は第5節で分ける。候補作成時点の状態は形成記録として保持する。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Humanの意味・選択・Correction・STOP・Final Sealと適用Guardを保持し、SkillとAIはKeliとして扱う。
 
@@ -42,7 +44,7 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 
 ### 3.1 登録確認後の短い呼出し
 
-次は登録・取得確認後に使う短縮呼出し案であり、現時点の登録完了を示さない。
+次は登録確認済みの短い呼出しである。呼出し名の受付・自動選択・実際のAI応答は、登録本文の照合とは別に扱う。
 
 ```text
 $ark-coaching
@@ -52,24 +54,18 @@ $ark-coaching
 
 方法を共有済みの会話では、「Ark-Coachingで相談したい」という自然文からも始められる。受け手が本文を持たない場合、名前だけで同じ方法が伝わるとは仮定しない。
 
-本文候補を公開前に別AIへ渡す場合は、SKILL.mdの全文と、現在の相談・Modeを一緒に渡す。未提供の元会話や仮本文を、そのAIが回復できることを前提にしない。
+本文を別AIへ渡す場合は、次の共通Queryから共有原本へ接続できる。原本を取得できない環境へ本文を直接渡す場合は、確認したSKILL.mdの全文と、現在の相談・Modeを一緒に渡す。未提供の元会話や仮本文を、そのAIが回復できることを前提にしない。
 
-### 3.2 登録の有無を問わず渡す共通Queryの文案
+### 3.2 登録の有無を問わず渡す共通Query
 
-予定する共有住所：
+共有原本：[Ark-Coaching SKILL.md](https://github.com/yusukefujiijp/ai-project/blob/main/skills/ark-coaching/SKILL.md)
 
-`https://github.com/yusukefujiijp/ai-project/blob/main/skills/ark-coaching/SKILL.md`
-
-この住所は本版作成時点では未作成であり、利用可能な原本URLとして確認したものではない。
-
-以下は保存・再取得・本文照合後に有効化するQuery案である。確認を行うAIが、実際の公開先と本文を確認し、必要な修正を含めた完成Queryを全文提示する。URLの後付けや導入状況別の組立をHumanへ戻さない。
+2026-11-06、初回保存後にこの公開URLから全文を再取得し、採用本文との一致を確認した。以下はその確認後に有効化した共通Queryである。登録機構の有無に応じた原本への接続を一つの本文に含み、URLの後付けや導入状況別の組立をHumanへ戻さない。
 
 ```text
 【Ark-Coaching：今ある言葉から相談を始める】
 
 宛先：このQueryをHumanが直接入力するThreadのCurrent AI
-
-文案の状態：共有原本の保存・再取得確認後に有効化する候補。現時点では未有効化。この行は公開先と本文の確認後に除く。
 
 - Ark-Coachingを使い、私の言葉・願い・未整理の入力から、今に役立つArk-Recallや候補へつないでください。既知の文脈とCorrectionを活かし、判断を変える不足だけを確認してください。
 
@@ -85,7 +81,7 @@ $ark-coaching
 - 現在の相談・Mode・権限に従ってください。この呼出しだけで保存、登録変更、外部送信、通知・監視、Thread移行、身体Trialを開始しないでください。
 ```
 
-この共通Queryは、受け手に登録があれば利用し、なければ原本を読む一つの入口を目指す。公開後も、読解、登録、自動選択、実際の効果を同一視しない。
+この共通Queryは、受け手に登録があれば利用し、なければ原本を読む一つの入口である。受け手の取得能力と適用条件はその時点で確かめる。読解、登録、自動選択、実際の効果を同一視しない。
 
 ### 3.3 対話と再開
 
@@ -116,7 +112,9 @@ B-Zone固有の詳しい経路は担当原本へ接続し、汎用Skillに並行
 
 ## 5. 確認済みと未確認
 
-本版作成時点の確認範囲：
+### 5.1 候補作成時点の記録
+
+以下はv0.1候補の作成時点、初回保存・登録前の確認範囲である。現在の状態は第5.2節で更新する。
 
 | 対象 | 確認状態 |
 |---|---|
@@ -138,6 +136,27 @@ B-Zone固有の詳しい経路は担当原本へ接続し、汎用Skillに並行
 - Ark100領域README：`3a6bfa323d3a0d60aa33e8e3e2501639d6e4dfe1`
 
 過去のb-zoneの限定確認を、この運用版候補の検証結果へ流用しない。本文整合、AI応答、保存、登録、取得、Humanの実利用、実生活の効果を別々に追記する。
+
+### 5.2 2026-11-06：初版の保存・登録確認
+
+Humanは本文候補v0.1、共有一覧への最小追記案、登録情報案を採用し、三つの共有原本とArk-Coaching一件の登録・必要な検証・保存後確認に限ってPlan-onlyを解除した。これは先行する設計依頼とは別の実行承認である。既存recall-hub、b-zone、経験原本、Project INSTRUCTIONS、別AIの起動・送信、身体Trial等は変更・実行範囲に含めていない。
+
+| 対象 | 今回確認したこと |
+|---|---|
+| 共有原本 | [初回保存commit](https://github.com/yusukefujiijp/ai-project/commit/fe1f452382aba57dd65c93368e25a18242ac80fe)でSKILL.md・README.mdを作成し、一覧を更新。三ファイルをmainから再取得し、意図した全文と一致 |
+| SKILL.md | 採用本文と同じ。共有blob `bb2bd5e7c61f5ca62a454a97cfe0047c28639fac`。公開URLからの全文取得も一致 |
+| 共有一覧 | v0.53.0・現行42件。新規行一件と版・件数・更新理由・末尾EOFを更新し、既存履歴を保持。blob `cc82550dcd475ea4ab337911972bb1fef8a14546` |
+| 形式 | SKILL frontmatter、名称、README metadata、コード囲み、一覧件数・EOF、参照先、表示情報を確認。登録対象で所定の形式検証を実行し成功 |
+| 個人登録 | 登録先のRemote実体からfrontmatter nameがark-coachingの有効な一件を確認。SKILL.mdを再取得し、共有原本と全文・blobが一致 |
+| 表示情報 | display_name、short_description、default_prompt、allow_implicit_invocationの採用値が一致。登録処理による表記の正規化と既定アイコン・対応製品情報の追加を確認 |
+| この会話のSkill取得 | 確認時点のCloud一覧には未掲載で、Cloudの直接読出しではpackage unavailable。登録先のRemote実体とローカル取得の確認とは区別する。これだけを理由に重複登録しない |
+| 共通Query | 共有URLの到達・本文一致を確認した後、未有効化の文案表示を外して第3.2節を完成稿へ更新 |
+| AI応答 | この運用版の限定的な応答確認は未実施。別AIの起動・送信は今回の承認範囲外であり実施していない |
+| Humanの実利用・実生活効果 | 未確認。呼出しの自然選択、入口の想起、継続対話の有用性、長期的な効果を保存・登録成功から認定しない |
+
+登録処理によるmetadataの追加は、各製品での利用・表示・挙動を確認したことを意味しない。この会話の一覧・読出しと登録先の実体には上記の差があるため、登録機構から利用できない場合も第3.2節の共有原本読解へ接続できるようにしている。
+
+本節の初回保存の証拠は、本文候補をそのまま保存した時点を指す。その後の本README更新は、確認結果とQuery有効化を反映するものであり、SKILL.mdの運用本文は変更していない。README自身の最終更新後の照合結果は、このThreadの完了報告でも区別する。
 
 ## 6. B-Zone側に残る接続
 
@@ -166,7 +185,7 @@ B-Zone固有の詳しい経路は担当原本へ接続し、汎用Skillに並行
 
 登録先の本文も再取得して共有原本と照合する。UI表示、会話での取得、自動選択、実際の応答は、それぞれ観測した範囲で報告する。
 
-本READMEの候補状態は、実際の採用・保存・登録の結果に基づいて更新する。未確認欄を一括して完了へ変えず、形成時点の記録を残す。
+本READMEの状態は、実際の採用・保存・登録と確認結果に基づいて更新する。未確認欄を一括して完了へ変えず、形成時点の記録を残す。
 
 ## 8. 原本と保守
 
