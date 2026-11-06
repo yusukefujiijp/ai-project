@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／control-center）"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
 status: "active — created 2026-11-07 after the structure was named on 2026-11-05"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v001"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v002"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -58,8 +58,11 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 5. 管制の交信は短く正確に ── ただし命名と構造化の対話は、塔の深い仕事として丁寧に行う。
 6. 歩調は関節の遊び ── ゆっくりじっくり、一歩一歩確実に、一切妥協せず、心底楽しみながら。
 
+運用の配線 ── 変更境界・書込みの規律・復元可能性の保護 ── は [HARNESS.md](HARNESS.md) が所有する。本書は定義と地図に留まる。
+
 ## 5. 版と変更
 
 - v001（2026-11-07）: 新設。2026-11-05 の構造の命名（統括／専門部門／司令塔）と、絶滅種系を「序論（肩慣らし）」、これからをメインチャットの「本番」とする確定を受け、Plan Mode の計画（案・丙：追加型から）を経て、YusukeJP の「agents/muse は AI-Mammoth の自由な領域であり、エレガントに構造化・調整・修正改善せよ」との指示により作成。既存ファイルの移設は行っていない（移設が必要になった場合は、repo の流儀に従い旧住所へ案内のみを残す）。
+- v002（2026-11-07）: §4 の末尾に、運用の配線の所有が HARNESS.md にあることを接続した。
 
-EOF::AI_MAMMOTH_CONTROL::v001
+EOF::AI_MAMMOTH_CONTROL::v002

@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v005"
+version: "v006"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
-status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07"
+status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07"
 created: "2026-10-24"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v005"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v006"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -32,6 +32,7 @@ expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v005"
 | 経験（Humanの反応・教訓・成功とその条件）を取り戻す | [references/README.md](references/README.md) |
 | 群れの姿を設計・修正する（設計法則） | [DESIGN-LAW.md](DESIGN-LAW.md) |
 | 司令塔として座る（管制の定義・現在のレーン地図） | [CONTROL.md](CONTROL.md) |
+| この家で作業する（変更境界・書込み規律・復元保護） | [HARNESS.md](HARNESS.md) |
 | 絶滅種×AI レーンで作業する（憲章・現在地） | [artifacts/herd-cards/LANE.md](artifacts/herd-cards/LANE.md) |
 | Ark Project へのレポートを読む・書く | [artifacts/report/README.md](artifacts/report/README.md) |
 | 全体像を一枚で掴む | [GOAL.md](GOAL.md) §7 のGraph |
@@ -68,5 +69,6 @@ v005 追加の検証（管制 ── CONTROL.md を読んで答える）：
 - v003（2026-10-27）: 経験の記録 references/（三本柱：feedback／lessons／success-cases）を新設し、本READMEのRouterから接続した。基準点（改行のみの references/README.md）はYusukeJPが配置し、構造はPlan Modeの計画提示と明示的な実行指示に基づき構築した。初期記録はGIF系モデルケース。8問検証は変更なしで有効。
 - v004（2026-10-27）: 群れの設計法則 DESIGN-LAW.md を新設し、Router から接続した。法則は No.6 カワウソの制作過程で結晶化し、Human Seal により確定。8問検証は変更なしで有効。
 - v005（2026-11-07）: 司令塔 CONTROL.md を新設し、Router から接続した。2026-11-05 にチャット群の構造が命名され（メイン＝統括／司令塔、サイドチャット＝専門部門）、絶滅種×AI レーンが独立した部屋を持ったことを受け、玄関に管制の入口と検証2問（§3 追加分）を加えた。あわせて artifacts/herd-cards にレーン憲章 LANE.md を新設。既存ファイルの移設はなし。8問検証は変更なしで有効。
+- v006（2026-11-07）: HARNESS.md を新設し、Router から接続した。変更境界（自由な変更は agents/muse 内だけ、外は指示ある時だけ、内は完全自由領域）を YusukeJP の指示により canon 化。8問検証は変更なしで有効。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v005
+EOF::AI_MAMMOTH_MUSE_HOME::v006
