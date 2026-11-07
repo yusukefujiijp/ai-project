@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 008 — 実装の精読：方法がコードで守るもの</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:.92em; background:#f2f5f9; padding:1px 6px; border-radius:6px;}
+  .items{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .item{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 17px;}
+  .item .t{font-weight:800;}
+  .item .t .k{color:var(--blue); margin-right:.5em;}
+  .item p{margin:3px 0 0; font-size:14.5px; color:#39434f;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 008 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>実装の精読<br>── 方法がコードで守るもの</h1>
+  <p class="lede">規律は、心得として書かれ、制度になり、やがてコードになる。層が降りるほど、規律は「守る意志」から「破れない構造」へ変わる。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP<br>
+    日時：2026-11-07 17:06 JST　／　読みの基盤：repo main @ acd509d2<br>
+    原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── 心得→制度→コードの三層を、一枚の層の図に描くこと。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>規律が降りていく三層</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 400" width="100%" role="img" aria-label="心得・制度・コードの三層">
+      <!-- Layer 1: kokoroe -->
+      <rect x="70" y="36" width="540" height="86" rx="14" fill="#eef4ea"></rect>
+      <text x="94" y="70" font-size="15" font-weight="800" fill="#41603a">第1層 ── 心得（言葉）</text>
+      <text x="94" y="96" font-size="12.5" fill="#39434f">review-prompt の規律 ── 「読んだ範囲を区切り、装わない」</text>
+      <text x="94" y="114" font-size="12" fill="#5a6572">破れば、良心が痛む。検出は人の目に頼る</text>
+      <!-- arrow -->
+      <path d="M340,124 L340,142" stroke="#0e7fd6" stroke-width="3"></path>
+      <path d="M332,140 L348,140 L340,152 Z" fill="#0e7fd6"></path>
+      <!-- Layer 2: seido -->
+      <rect x="70" y="156" width="540" height="86" rx="14" fill="#e8f3fc"></rect>
+      <text x="94" y="190" font-size="15" font-weight="800" fill="#0e7fd6">第2層 ── 制度（作法）</text>
+      <text x="94" y="216" font-size="12.5" fill="#39434f">STR の封印と検証、Report の作法、HARNESS.md</text>
+      <text x="94" y="234" font-size="12" fill="#5a6572">破れば、手順が止める。検出は照合の作業に宿る</text>
+      <!-- arrow -->
+      <path d="M340,244 L340,262" stroke="#0e7fd6" stroke-width="3"></path>
+      <path d="M332,260 L348,260 L340,272 Z" fill="#0e7fd6"></path>
+      <!-- Layer 3: code -->
+      <rect x="70" y="276" width="540" height="86" rx="14" fill="#dcebfb" stroke="#0e7fd6" stroke-width="1.6"></rect>
+      <text x="94" y="310" font-size="15" font-weight="800" fill="#0b5fa5">第3層 ── コード（構造）</text>
+      <text x="94" y="336" font-size="12.5" fill="#39434f">harness の実装 ── 読解範囲の計算、型と相互条件、単一 Writer</text>
+      <text x="94" y="354" font-size="12" fill="#5a6572">破ろうとすれば、例外が上がる。検出は計算が担う</text>
+    </svg>
+    </div>
+    <figcaption>図：規律の三層。言葉で書かれた心得が、作法として制度になり、コードとして構造になるほど、破れにくくなる。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">核</span>コード化された規律 ── 5つの実例</h2>
+  <div class="items">
+    <div class="item"><div class="t"><span class="k">1</span>「装わない」は計算式</div>
+      <p>読んだと宣言した行範囲を統合し、覆えたときだけ <code>full-declared</code> と名乗れる。部分は <code>partial-declared</code>、無宣言は <code>not-declared</code>。</p></div>
+    <div class="item"><div class="t"><span class="k">2</span>検証できないものは「未検証」</div>
+      <p>外部 URL などは pass にせず <code>not-checked</code> と返す。結果は、この run と snapshot を名指ししなければ落ちる。</p></div>
+    <div class="item"><div class="t"><span class="k">3</span>条件の漏れは型で弾く</div>
+      <p>focused なのに paths が無い依頼、重複した path や必須原本は、実行の前に例外になる。</p></div>
+    <div class="item"><div class="t"><span class="k">4</span>境界は宣言で固定</div>
+      <p>Profile が <code>repository_writes = false</code> を先に固定する。判断の都度ではなく、仕事の形として。</p></div>
+    <div class="item"><div class="t"><span class="k">5</span>書く者は一人</div>
+      <p><code>.writer-lock</code> の flock が同時書込みを防ぐ。複数 AI の事故を、注意ではなく構造で防ぐ。</p></div>
+  </div>
+  <p>群れの gate.py は、私の側の小さな第3層だった ── 2MiB の上限を「守るつもり」から「作る時点で作れない」へ変えたもの。008 は、その実り具合を Ark 全体の実装で確かめた。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、外部参照なし）までを確認済み。端末での実感はコード検査とは別の真実であり、YusukeJP の目と指が判定する（群れの規律のまま）。読みの限界：tests の中身、evals の実物、コードの全行精読は本稿の範囲外（原本 §4）。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_008::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>
