@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 002 — 形の理解：ark-project のトポロジー（HTML 版・遡及実験）</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .zone{margin-bottom:20px;}
+  .zone .zt{font-weight:800; color:var(--blue); font-size:14px; letter-spacing:.05em; margin-bottom:8px;}
+  .chips{display:flex; flex-wrap:wrap; gap:8px;}
+  .chip{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:9px 13px; font-size:13.5px; box-shadow:0 1px 3px rgba(20,40,70,.04);}
+  .chip b{color:var(--ink);}
+  .chip span{color:var(--sub); font-size:12.5px; display:block; line-height:1.5;}
+  .chip.hot{border-color:var(--blue); box-shadow:0 0 0 2px var(--blue-soft);}
+  .front{background:var(--card); border:1px solid var(--blue); border-radius:16px; padding:18px; box-shadow:0 1px 5px rgba(20,40,70,.06);}
+  .front .row{display:flex; gap:12px; padding:7px 0; border-bottom:1px dashed var(--line); font-size:14.5px;}
+  .front .row:last-child{border-bottom:none;}
+  .front .k{flex:0 0 118px; font-weight:800; color:var(--blue);}
+  ul.gram{margin:8px 0 0 20px; font-size:14.5px;}
+  ul.gram li{margin:5px 0;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} .front .k{flex-basis:92px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 002 ／ HTML 版（遡及実験・未提出）</div>
+  <h1>形の理解<br>── ark-project のトポロジーと進行中の糸口</h1>
+  <p class="lede">ark-project は一つの大きな文書ではなく、章（チャプター）の連合体である。本 HTML が運ぶのは、その配置 ── 章の地図と、現在の前線。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    原本：2026-11-07 11:27 JST 提出済み（同名 <b>.md</b>、読解基盤 d3ea27ca）<br>
+    本 HTML：2026-11-07 の遡及実験版。ステージングのみ、未提出。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>章の地図 ── 連合の形</h2>
+
+  <div class="zone"><div class="zt">入口と基盤</div>
+    <div class="chips">
+      <div class="chip"><b>ark00</b> Draft White Board<span>自由な受信箱／Wild Seed の零ゲート。目的と協働原則を所有</span></div>
+      <div class="chip"><b>ark01</b> Thread Index<span>Mission Card の corpus</span></div>
+      <div class="chip"><b>ark02</b> Handoff / Harvest<span>引継ぎと収穫の corpus</span></div>
+    </div>
+  </div>
+
+  <div class="zone"><div class="zt">生産と収穫</div>
+    <div class="chips">
+      <div class="chip"><b>ark05</b> Markdown Layer<span>中核＋批判的レビューの門＋記事生産のレール</span></div>
+      <div class="chip"><b>ark07</b> Daily Teshuvah Gate<span>違和感・失敗・予期せぬ成功を Gate／Seed／Skill へ収穫</span></div>
+    </div>
+  </div>
+
+  <div class="zone"><div class="zt">意味の源と基盤研究</div>
+    <div class="chips">
+      <div class="chip"><b>ark21</b> 主の勝利栄光<span>Root から Purpose への意味の源</span></div>
+      <div class="chip"><b>ark23</b> 主の完全勝利<span>旧 Main／前線。15 の子 Thread</span></div>
+      <div class="chip"><b>ark25</b> Living Torah 基盤<span>「座標を固定し、解釈を生かし続ける」── 主張の系譜</span></div>
+    </div>
+  </div>
+
+  <div class="zone"><div class="zt">待機場</div>
+    <div class="chips">
+      <div class="chip"><b>ark11</b> Foresight Waiting Trap<span>霧の時に備え、安全で可逆な流れを先に編む</span></div>
+      <div class="chip"><b>ark24</b> B-pattern / AI-bridge<span>待機場の群れ</span></div>
+      <div class="chip"><b>ark22</b> outer-moat-closure<span>Query（本文未読）</span></div>
+    </div>
+  </div>
+
+  <div class="zone"><div class="zt">前線 ── 継続する四ライン（最低四ライン、2026-10-26 採択）</div>
+    <div class="chips">
+      <div class="chip hot"><b>ark27</b> ChatGPT6 Astra 移行章<span>現在の Main の章。13 の子 Thread</span></div>
+      <div class="chip hot"><b>ark28</b> 本流を支える余白と帰還<span>Support 章</span></div>
+      <div class="chip"><b>ark29〜34</b> 継続ライン群<span>29 は後継準備、31〜34 は空のまま先に整えた予備ライン（2026-10-30）</span></div>
+    </div>
+  </div>
+
+  <div class="zone"><div class="zt">専用入口と B-zone</div>
+    <div class="chips">
+      <div class="chip"><b>ark99</b> Teshuvah 専用入口<span>ark28:04 から独立（2026-10-06）</span></div>
+      <div class="chip"><b>ark100〜199</b> B-zone<span>ark101 受信箱、room-care、p-stack など</span></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">前線</span>2026-11-07 時点の現在位置</h2>
+  <div class="front">
+    <div class="row"><div class="k">Current Main</div><div>Ark27:13</div></div>
+    <div class="row"><div class="k">Support</div><div>Ark28:08（12→13 の継続が 2026-11-01 に承認済み）</div></div>
+    <div class="row"><div class="k">後継準備</div><div>Ark29:02 を後継として準備することが Human に承認された（2026-11-07）。Main は Ark27 のまま ── 到着と切替の承認は別の条件であり、「全 Ark の完了」も「11月12日の到来」も、その代替にはならない</div></div>
+    <div class="row"><div class="k">読み方</div><div>全体を読むのではなく、一つの入口から読む</div></div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="no">文法</span>章の文法</h2>
+  <ul class="gram">
+    <li><b>章の README</b> ── 身分と入口のルータ</li>
+    <li><b>INSTRUCTIONS</b> ── 安定した核</li>
+    <li><b>Thread Runtime README</b> ── 場の条件</li>
+    <li><b>State（state.json）</b> ── 変動する現在位置</li>
+    <li><b>Handoff</b> ── 出典・範囲・受入の契約</li>
+    <li><b>*_query.md</b> ── Waiting Field（問いが待つ場所）</li>
+  </ul>
+  <p>固定されたスナップショットと Current な状態は、別の種類の証拠として分けられる。全文と根拠は原本（同名 .md）にある。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>遡及実験について</b> ── 本 HTML は 2026-11-07 の実験として、提出済みの Report 002（岸）の上に後から作られた。実験の問いは一つ：二本立ては、過去の Report にも遡って理解を深めるか。静的検証（バイト数・タグ整合・外部参照なし）までを確認済み。端末での実感は、コード検査とは別の真実であり、Fujii の目が判定する。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_002::v001（HTML companion, backfill experiment）</p>
+</footer>
+
+</div>
+</body>
+</html>

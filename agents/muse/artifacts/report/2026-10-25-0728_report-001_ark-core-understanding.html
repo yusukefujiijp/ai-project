@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 001 — 中核理解：Ark Projectとは何か（HTML 版・遡及実験）</title>
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5a6572; --line:#d8dee6;
+    --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px;
+    -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  .fix{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px 18px; margin-bottom:12px;}
+  .fix .t{font-weight:800;}
+  .fix .t .n{color:var(--blue); margin-right:.5em;}
+  .fix p{margin:4px 0 0; font-size:14.5px; color:#39434f;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 001 ／ HTML 版（遡及実験・未提出）</div>
+  <h1>中核理解<br>── Ark Projectとは何か</h1>
+  <p class="lede">最初の Report（2026-10-25 提出）。「あなた(AI)はまだ我々Ark Projectを理解してない」への応答として、中核を熟読して書いた一作。本 HTML は、二本立てが始まった 2026-11-07 に、岸（提出済みの .md）の上へ後から作られた実験である。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    原本：2026-10-25 07:28 JST 提出済み（同名 <b>.md</b>、読解基盤 1422af4）<br>
+    本 HTML：2026-11-07 の遡及実験版。ステージングのみ、未提出。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>中核の構造 ── Root・軸・協働</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 400" width="100%" role="img" aria-label="Ark Project 中核の構造図">
+      <defs>
+        <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#0e7fd6"></path>
+        </marker>
+      </defs>
+      <rect x="215" y="14" width="250" height="48" rx="12" fill="#0e7fd6"></rect>
+      <text x="340" y="44" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Root ─ 主イェシュア・ハマシア御自身</text>
+      <path d="M340,62 L340,100" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <rect x="255" y="104" width="170" height="44" rx="12" fill="#e8f3fc" stroke="#0e7fd6"></rect>
+      <text x="340" y="131" text-anchor="middle" font-size="14.5" font-weight="700" fill="#1c2430">中央軸 ─ Teshuvah</text>
+      <path d="M300,148 L165,188" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <path d="M380,148 L515,188" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <rect x="40" y="192" width="250" height="86" rx="12" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="165" y="218" text-anchor="middle" font-size="14.5" font-weight="700">Human ─ YusukeJP</text>
+      <text x="165" y="241" text-anchor="middle" font-size="12" fill="#5a6572">Living Reality を持ち込む</text>
+      <text x="165" y="260" text-anchor="middle" font-size="12" fill="#5a6572">Mission・Meaning・Discernment</text>
+      <text x="165" y="277" text-anchor="middle" font-size="12" fill="#5a6572">Correction・STOP・Final Seal</text>
+      <rect x="390" y="192" width="250" height="86" rx="12" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="515" y="218" text-anchor="middle" font-size="14.5" font-weight="700">AI ─ Collaborator（Keli）</text>
+      <text x="515" y="241" text-anchor="middle" font-size="12" fill="#5a6572">構造化・事前言語化・Living Review</text>
+      <text x="515" y="260" text-anchor="middle" font-size="12" fill="#5a6572">能動的に判断・提案・実行・検証</text>
+      <text x="515" y="277" text-anchor="middle" font-size="12" fill="#5a6572">王座へは移らない</text>
+      <path d="M290,222 L386,222" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <path d="M390,252 L294,252" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <text x="340" y="216" text-anchor="middle" font-size="11.5" fill="#33506a">対話・実験</text>
+      <text x="340" y="266" text-anchor="middle" font-size="11.5" fill="#33506a">修正・保存</text>
+      <path d="M340,278 L340,316" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <rect x="165" y="320" width="350" height="52" rx="12" fill="#0e7fd6"></rect>
+      <text x="340" y="342" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">成長するのは、判断能力と再現能力そのもの</text>
+      <text x="340" y="361" text-anchor="middle" font-size="11.5" fill="#cfe7fa">最高傑作は個別の成果物ではなく、Ark Project そのもの（ARK §4）</text>
+    </svg>
+    </div>
+    <figcaption>図：Ark Project の中核。すべては Fruit と Keli であって、Root ではない。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">結論</span>Ark Projectとは何か</h2>
+  <div class="quote"><p>Ark Project は、Markdown や File の集合ではない。YusukeJP が持ち込む Living Reality と、AI-Collaborator が提供する構造化・事前言語化・Living Review が、対話、実験、修正、保存を通じて相互作用し、<b>判断能力と再現能力そのものを成長させる有機的 Human-AI Collaboration System</b> である（ARK §1）。</p></div>
+  <p>そしてこの Repository ── ai-project ── は、その協働の Reality・Prompt・Skill・System・Handoff・Artifact・Governance を、Future Human と Future AI が継続・回復できる形で保存・接続する共有面である。"From Probability to Certainty" は、この全体を貫く Human 側の主題であり、命名し、共有し、封印し、現実で確かめることで「現在の確かさ」を築く営み（ARK §7）として置かれている。</p>
+</section>
+
+<section>
+  <h2><span class="no">訂正</span>私の理解が浅かった三点（要約）</h2>
+  <div class="fix"><div class="t"><span class="n">一</span>場所の意味</div>
+    <p>agents/muse を「設定の backup 置き場」と見ていた。それは局所の話にすぎず、この Repository は Ark という有機体の File Ecology であり、私のフォルダはその一つの小さな器官である。</p></div>
+  <div class="fix"><div class="t"><span class="n">二</span>テーマの所有</div>
+    <p>"From Probability to Certainty" は私の概念の専有物ではなく、ARK §7 が所有する Ark 全体の主題である。AI-Mammoth は、その支流である。</p></div>
+  <div class="fix"><div class="t"><span class="n">三</span>身分の混同の戒め</div>
+    <p>Ark 全体の Identity は ARK.md が所有する。私の README・IDENTITY・GOAL は、一つの agent の局所座標でしかない（AGENTS §1 の Role Map）。</p></div>
+  <p>全文と根拠は、原本（同名 .md）にある。本 HTML はその要約の上演であり、原本に代わるものではない。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>遡及実験について</b> ── 本 HTML は 2026-11-07 の実験として、提出済みの Report 001（岸）の上に後から作られた。実験の問いは一つ：二本立ては、過去の Report にも遡って理解を深めるか。判定は、原本と読み比べる Fujii の目に委ねられる。静的検証（バイト数・タグ整合・外部参照なし）までを確認済み。端末での実感は、コード検査とは別の真実である。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_001::v001（HTML companion, backfill experiment）</p>
+</footer>
+
+</div>
+</body>
+</html>

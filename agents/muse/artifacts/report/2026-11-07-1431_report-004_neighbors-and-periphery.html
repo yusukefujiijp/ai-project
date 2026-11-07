@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 004 — 住人の理解：隣人たちと周縁の領域（HTML 版・遡及実験）</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:18px 0;}
+  .home-card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:15px 16px; box-shadow:0 1px 4px rgba(20,40,70,.04);}
+  .home-card .nm{font-weight:800; font-size:16px;}
+  .home-card .nm .tag{color:var(--blue); font-size:11.5px; font-weight:700; letter-spacing:.08em; display:block;}
+  .home-card .ds{color:var(--sub); font-size:13.5px; line-height:1.65; margin-top:4px;}
+  .home-card.me{border-color:var(--blue); box-shadow:0 0 0 2px var(--blue-soft);}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 004 ／ HTML 版（遡及実験・未提出）</div>
+  <h1>住人の理解<br>── 隣人たちと周縁の領域</h1>
+  <p class="lede">家ごとに所有者が違い、文法は共有される。本 HTML が運ぶのは、その近所の見取り図 ── 誰が、どこに住み、何を担うか。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    原本：2026-11-07 14:31 JST 提出済み（同名 <b>.md</b>、読解基盤 4af8b106）<br>
+    本 HTML：2026-11-07 の遡及実験版。ステージングのみ、未提出。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>近所の見取り図 ── 家々と領域</h2>
+  <div class="grid">
+    <div class="home-card"><div class="nm"><span class="tag">AGENTS ／ 家</span>dots ── Actor の社会</div>
+      <div class="ds">dot-0000「初穂」たち Actor の集まり。一つの依頼から復元できることが家の核。README は v013、本日も更新され、玄関に Chief 継承準備が刻まれている。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">AGENTS ／ 家</span>codex ── 経験の入口</div>
+      <div class="ds">2026-10-31 に開かれた小さな家。成果物は各領域に残し、ここには入口と経験だけ。三本柱の文法を共有する（STR-025）。</div></div>
+    <div class="home-card me"><div class="nm"><span class="tag">AGENTS ／ 家</span>muse ── 私の家</div>
+      <div class="ds">塔とレーンの家。玄関・身分・目標・管制・配線・設計法則・三本柱・報告書。隣人たちの文法を、私の規模でなぞった構成。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">領域 ／ 通信</span>board ── 協働通信</div>
+      <div class="ds">誰から誰への何の話かを、Topic ごとに束ねる場。Topic が Current を所有し、Board は宛先と受信の観測を所有する。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">領域 ／ 記録</span>records ── 日時記録</div>
+      <div class="ds">AI と何を相談し、どこまで分かったかを日付から辿る日誌。一行に一つの意味のある活動。Plan Mode と STOP の間は書かない。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">領域 ／ 種</span>ai-ark-seed ── 種の仕組み</div>
+      <div class="ds">軽量な Seed を広く検出し、選んで Pickup し、Card 化したものだけを Human Seal の後に残す。種のライフサイクルの Subsystem。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">領域 ／ 学びと夢</span>torah-project ── Root 側の保持</div>
+      <div class="ds">週の朗読箇所とエゼキエル神殿の領域。玄関はまだ1バイト ── そして内側には、長年の夢が「流されない形で」保持されている。</div></div>
+    <div class="home-card"><div class="nm"><span class="tag">領域 ／ 実装</span>harness ── コードとしての仕組み</div>
+      <div class="ds">root 直下の実行補助。どの Actor の身分も所有せず、皆に仕える（Report 005 の主題）。</div></div>
+  </div>
+  <div class="quote"><p>連合の憲法 ── <b>所有は分かれ、文法は共有される</b>。だからこそ各 AI は自分の家だけを変え（変更境界、2026-11-07）、それでも全体は一つの Project として保たれる。</p></div>
+  <p>各家の詳述と、エゼキエル神殿の保持の作法については、原本（同名 .md）にある。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>遡及実験について</b> ── 本 HTML は 2026-11-07 の実験として、提出済みの Report 004（岸）の上に後から作られた。実験の問いは一つ：二本立ては、過去の Report にも遡って理解を深めるか。静的検証（バイト数・タグ整合・外部参照なし）までを確認済み。端末での実感は、コード検査とは別の真実であり、Fujii の目が判定する。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_004::v001（HTML companion, backfill experiment）</p>
+</footer>
+
+</div>
+</body>
+</html>

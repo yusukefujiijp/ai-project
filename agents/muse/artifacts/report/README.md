@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v007"
+version: "v008"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–006 added 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
+status: "active / opened 2026-10-25; Reports 002–006 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
 created: "2026-10-25"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v007"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v008"
 ---
 
 # AI-Mammoth Reports

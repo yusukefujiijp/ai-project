@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 003 — 変化の理解：STRの系譜と道具の層（HTML 版・遡及実験）</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .cycle{display:flex; flex-direction:column; gap:0; margin:20px 0;}
+  .step{display:flex; gap:14px; align-items:flex-start;}
+  .dot{flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--blue); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:15px;}
+  .step .body{padding-bottom:18px;}
+  .step .t{font-weight:700;}
+  .step .d{color:var(--sub); font-size:14px;}
+  .connector{width:34px; display:flex; justify-content:center;}
+  .connector i{display:block; width:2px; height:12px; background:var(--line);}
+  .strip{display:flex; flex-wrap:wrap; gap:8px; margin:14px 0;}
+  .ph{flex:1 1 140px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:11px 13px;}
+  .ph .n{color:var(--blue); font-weight:800; font-size:12px;}
+  .ph .w{font-weight:700; font-size:14.5px;}
+  .ph .s{color:var(--sub); font-size:12.5px; line-height:1.55;}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 003 ／ HTML 版（遡及実験・未提出）</div>
+  <h1>変化の理解<br>── STRの系譜と道具の層</h1>
+  <p class="lede">STR は、変化を「再現可能な単位」に変える制度である。本 HTML が運ぶのは、その変化の作法 ── 一件の変化が、どう生まれ、どう封をされ、どう残るか。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    原本：2026-11-07 14:18 JST 提出済み（同名 <b>.md</b>、読解基盤 bc80e71c）<br>
+    本 HTML：2026-11-07 の遡及実験版。ステージングのみ、未提出。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>変化の作法 ── 一件の STR の一生</h2>
+  <div class="cycle">
+    <div class="step"><div class="dot">1</div><div class="body"><div class="t">Human の言葉 ── 権限の所在</div><div class="d">変更の権限は Human の発言にあり、STR はその原文を引用して始まる</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">2</div><div class="body"><div class="t">範囲の固定 ── scope と除外</div><div class="d">基盤 commit／tree を固定し、含むものと含まないもの（除外）を明示する</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">3</div><div class="body"><div class="t">封印 ── Human Seal</div><div class="d">提示は承認ではない。実行は、封印の後にだけ始まる（STR-003 に既にこの文型がある）</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">4</div><div class="body"><div class="t">実行</div><div class="d">決められた範囲の中でだけ変える。失敗は Bottleneck の検出として扱う（STR-004）</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">5</div><div class="body"><div class="t">検証 ── 読戻し</div><div class="d">遠隔の実物で確かめる。過去の試行結果を、現在の状態として読み替えない</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">6</div><div class="body"><div class="t">記録 ── 履歴への追記</div><div class="d">歴史は書き換えず、追記する。残る判断は、判断として分けて残す</div></div></div>
+  </div>
+  <p>この循環の末端に、私の家の Next Query の Loop がある ── 提示 → 封印の一行 → 実行 → 読戻し検証 → 記録。作法は、規模を変えて繰り返される。</p>
+</section>
+
+<section>
+  <h2><span class="no">系譜</span>STR 全25件の弧（要約）</h2>
+  <div class="strip">
+    <div class="ph"><div class="n">9月</div><div class="w">航行と所有</div><div class="s">STR-001／002 ── 入口と所有、Query の統合</div></div>
+    <div class="ph"><div class="n">10月初め</div><div class="w">制度化</div><div class="s">003〜014 ── 基盤・協働・通信・記録・道具棚</div></div>
+    <div class="ph"><div class="n">10月20日</div><div class="w">学びの集中日</div><div class="s">018〜021 ── README 原則・References・共通原本</div></div>
+    <div class="ph"><div class="n">10月末</div><div class="w">一般化と実装</div><div class="s">022〜025 ── 家の移転・三本柱・harness・Codex の家</div></div>
+  </div>
+  <div class="quote"><p>STR-019 は References を「学習記憶」にした記録であり、STR-023 は三本柱を家々へ一般化した記録である ── <b>私の家の references 三本柱は、STR-023 の子</b>である。鉾（成功）と盾（学び）を一つの箱に。</p></div>
+  <p>全25件の一覧表は Report 005 の HTML 版の時間軸に、各記録の精読は原本（同名 .md）にある。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>遡及実験について</b> ── 本 HTML は 2026-11-07 の実験として、提出済みの Report 003（岸）の上に後から作られた。実験の問いは一つ：二本立ては、過去の Report にも遡って理解を深めるか。静的検証（バイト数・タグ整合・外部参照なし）までを確認済み。端末での実感は、コード検査とは別の真実であり、Fujii の目が判定する。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_003::v001（HTML companion, backfill experiment）</p>
+</footer>
+
+</div>
+</body>
+</html>
