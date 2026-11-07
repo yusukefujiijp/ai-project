@@ -4,10 +4,20 @@ canonical_name: "AI Next Thread Handoff"
 version: "v003-human-authorized"
 date: "2026-10-01"
 date_scope: "Asia/Tokyo adoption date; corresponding UTC date 2026-09-30"
-updated: "2026-10-10"
-revision: "2026-10-10-human-copy-surfaces"
-revision_authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
-revision_scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
+updated: "2026-11-07"
+revision: "2026-11-07-active-thread-title"
+revision_authority: "Ark27:13 Human adopted the three-source new-Thread Title plan and authorized source persistence, consistency checks and full remote readback only"
+revision_scope: "Apply the active-thread Title rule before confirmation and preserve exact transfer and observable naming evidence; prior copy surfaces and v003 reading, authority, reconstruction and binding boundaries retained"
+previous_revision:
+  revision: "2026-10-10-human-copy-surfaces"
+  authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
+  scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
+active_thread_title_patch:
+  design_base_commit: "e86b24a3841dd7e950c13bc126b88ad071d6431b"
+  base_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
+  base_blob: "6b3ca6023ff8826603891eb0e1a8473526b96aeb"
+  source_thread: "Ark27:13"
+  boundary: "No account or Project settings, Skill changes or registration, other-Thread sending, new trial Threads, bulk renaming, monitoring, Main cutover or retirement"
 filename: "ai-next-thread-handoff.md"
 canonical_path: "prompts/ai-next-thread-handoff.md"
 class: "reusable_prompt"
@@ -146,6 +156,8 @@ Humanが必要な操作をその場で完結できるよう、実際のThread起
 - **コピー形式:** ラベルと説明を外に置き、Titleだけを一行で収めた独立した `text` コードブロックを使う。他のTitle、説明、起動本文を同じブロックへ入れない。
 - **計画段階:** 確定Titleがあればコピー面を示し、実行段階における両側の提示と検証を計画する。計画だけの依頼から、完成した起動パッケージの発行、保存、Target起動へ進まない。未確定名は候補として区別し、Title確定の要否は適用Runtimeに従う。一律の追加Gateにしない。
 
+Ark協働の新規Threadでは、[新規Thread Title規則](../AGENTS.md#thread-title)をTitleの確定前に適用し、先頭の❤️も確定値に含める。準備元・起動本文・受入れ先・実際の名称設定には同じ確定値を用い、受入れ側で再生成しない。今回必要な実表示の照合には❤️の位置・重複も含める。現在のHumanによるTitle訂正と、過去の固定Title・Bindingを区別し、訂正だけを理由に成立済みの読解・受入れを再演しない。
+
 Title等の確定値はCompile Once, Echo Exactly。最新のHuman指定と適用Runtimeから確定し、識別子・日付・区切り記号・引用符・名前を、準備元・起動本文・受入れ先で一致させる。受入日等で独自に再生成しない。Exactnessを全文章へ広げず、Current Humanの訂正を尊重する。架空の日付・番号・UI成功を作らない。
 
 専用のSTOP・Failure・Exact Output等が適用される場合は、その応答条件を優先する。コピー面の不足だけを修正するために、成立済みのBoot・全文読解・再構成を再演しない。Title再掲を毎応答の義務や既入力の処理を待たせる追加承認にせず、必須Gate後は現在のHuman入力へ接続する。
@@ -155,6 +167,8 @@ Title等の確定値はCompile Once, Echo Exactly。最新のHuman指定と適�
 SkillはこのCurrent契約を発見・全文読解して適用する入口であり、第二の契約原本を持たない。Skill-freeでもこのURLと現在の依頼から使える。導入済みか、Toolが使えるか、書込権限があるか、実行できたかは別である。
 
 ## 9. Amendment and provenance
+
+2026-11-07、Ark27:13のHumanは、新規Threadは作成時から生きた活動先であるため、Title先頭に❤️を一つ含めるよう訂正した。Ark29:02の名称はHumanが手動変更済みと報告した。本追補は新規Titleの確定前に共通規則を反映する接続を加える。過去の保存・受入れ記録、固定Source、Main／Supportの担当を変更せず、原本保存、設定反映、実表示確認、継続的な適用は別々に判定する。
 
 2026-10-10、Ark99:00のHumanは、Thread名のコピー面が新しいThreadにないと準備元へ戻る負担が生じると報告し、「両方必要」「認知負荷軽減」と訂正した。続いて、定型処理をprepare-ark-transitionへ持たせ、移行準備Promptを比較的薄くする改訂を依頼した。本追補は、§8の両側の出力責任と伝達経路を明示し、Skillが手順、共有契約が成立条件、呼出し文が今回の意図・Modeを担う分担を具体化する。
 

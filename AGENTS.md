@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.16-candidate"
+version: "v004.17-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-11-04"
+updated: "2026-11-07"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -162,7 +162,17 @@ recall_coaching_patch:
   source_lesson_id: "bc17ca3f-3ed2-4062-bc46-129572199731"
   authority: "Current Human adopted the exact Recall and Coaching addendum and authorized only AGENTS section 3, one shared lesson and a save-date activity record on main"
   scope: "Make context-grounded Recall and Coaching an ongoing AI collaboration responsibility; preserve Human correction, quality, authority and guards; distinguish connection cues from post-connection support and persistence from delivery, settings and real-world effects"
+active_thread_title_patch:
+  date: "2026-11-07"
+  source_thread: "Ark27:13"
+  design_base_commit: "e86b24a3841dd7e950c13bc126b88ad071d6431b"
+  base_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
+  base_blob: "570c22332653f28184d0981842a57d0ac159e18d"
+  authority: "Current Human adopted the three-source active-thread Title plan and authorized only main persistence, source consistency checks and full remote readback"
+  scope: "Add a single leading heart before confirming new Thread Titles; preserve current Human corrections, exact-value transfer, actual-UI verification, historical bindings, existing reception and Main/Support ownership"
+  validation_boundary: "Account and Project settings, Skill changes or registration, other-Thread delivery, trial Thread creation, bulk renaming and monitoring remain outside this execution"
 updated_reason:
+  - "2026-11-07: Add section 6.3 for active new Thread Titles and connect the shared handoff interface; distinguish source persistence, settings and observed naming behavior without replaying completed reception."
   - "2026-11-04: Add the Human-adopted Recall and Coaching responsibility in section 3, connect its formation lesson and recall entry, and preserve all existing authority, quality and evidence boundaries."
   - "2026-11-01: Define the bounded temporary-validation exception for applicable Plan Mode work, keep detailed conditions in plan-mode, and preserve explicit generation or command prohibitions, STOP and existing authority boundaries."
   - "2026-10-29: Require matching formal recipients outside and inside ordinary Next Queries, including the same Thread; distinguish the current request from a generated Prompt and resolve missing or inconsistent destinations before presentation."
@@ -425,6 +435,18 @@ Next Queryを短縮入力で採用する場合は、[キーバインディング
 将来AI間の受渡しへ利用する場合も、依頼文そのものから送信・実行・再委任の権限を作らず、その時点で有効な対象・相手・情報・操作の承認範囲に従う。この可能性の記載を、自動実行の採用や開始にしない。
 
 提示前に、三節の見立て・選んだ接続・依頼文のGoal・対象・宛先・必要な方法・完了条件・Mode、見出し・最終配置・本文全体のコピー境界・fenceの閉じを確認する。依頼本文を提示する場合は、宛先の内外表示と、本文が仕事を依頼している相手の一致も確かめる。必要な表示の欠落や不一致があれば、現在の指示と確認済み資料から解決し、解決できない時は第2.1節に従い、片方を勝手に選んだり、未確定の転送本文をそのまま送れるNext Queryにしたりしない。形成の出来事とHuman評価は[成功事例](references/success-cases/next-query-as-continuation-interface.md)を参照する。共通規定の運用原本は本節であり、事例を第二の指示原本にしない。
+
+<a id="thread-title"></a>
+
+### 6.3 New Thread Title / 生きた活動先の表示
+
+新規ThreadのTitleは、確定前に先頭へ❤️を一つ含める。既に付いていれば重複させず、最新のHumanによる明示指定・Correctionを優先する。対象はThreadのTitleであり、Project表示名や宛先へ一律に付加しない。
+
+❤️は今動いている生きたThreadを見つけ、活動先を毎回調べ直す負担を減らす目印である。無印だけで終了とせず、進捗は最新対話で照合する。Threadの活動状態を、Mainの切替、成果の完了、Humanの到達・実利用、実行承認と混同しない。
+
+❤️を含めた確定Titleを、今回必要な提示・受渡し・名称設定・照合で共通に用いる。名称設定は現在の権限と実際の操作経路に従い、Titleの提示、設定操作、保存後の実表示確認を分ける。直接設定できない場合はコピー可能なTitleと必要な残操作を示し、設定済みとは報告しない。
+
+この規則だけで、既存Titleの一括変更、固定Source・履歴・Bindingの変更、完了済み起動の再演、❤️の自動除去を開始しない。起動・移行時のコピー面と受入れ条件は[共通移行契約§8](prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)に従う。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
