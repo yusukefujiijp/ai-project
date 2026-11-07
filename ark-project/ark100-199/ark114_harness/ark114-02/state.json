@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "state_id": "ARK114_02_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "created": "2026-11-07",
+    "updated": "2026-11-07",
+    "canonical_path": "ark-project/ark100-199/ark114_harness/ark114-02/state.json",
+    "date_scope": "Asia/Tokyo; Title date11/03 is the Human-confirmed value",
+    "change_reason": "Initial bounded reception state; no pre-certification of target reading."
+  },
+  "identity": {
+    "source": "Ark114:01",
+    "target": "Ark114:02",
+    "owner": "Ark114:02",
+    "chapter": "Ark114",
+    "role": "WIKI_PEOPLE_CONTINUATION",
+    "transition_kind": "THREAD_CONTINUE",
+    "compiled_title": "Ark114:02_2026/11/03; \"Wiki: People構築\"",
+    "project_name": "Ark114_2026/11/03: Ark-Wiki系",
+    "main_ownership_transferred": false
+  },
+  "authority": {
+    "root": "主イェシュア・ハマシア御自身",
+    "central_axis": "Teshuvah",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）",
+    "human_retains": [
+      "Meaning",
+      "Correction",
+      "STOP",
+      "Final Seal"
+    ],
+    "human_authority_date_jst": "2026-11-07",
+    "basis": "Human adopted01→02 execution through persistent startup/reception and added Project instructions.",
+    "source_scope": [
+      "Specified eight paths plus Project INSTRUCTIONS.md",
+      "main publication and full remote readback",
+      "Existing Ark114 Wiki Project instructions setup/readback",
+      "One persistent02 startup, exact title, receiver reconstruction, same-scope repair and result recording"
+    ],
+    "receiver_scope": [
+      "Required-source reading",
+      "Conversation-only meaning reconstruction and reception",
+      "Human Review or already-present valid Human input"
+    ],
+    "excluded": [
+      "Other Project/account/security/memory/sharing settings",
+      "Automatic transfer of Source write/send authority to02",
+      "New people/audio research/Harness implementation",
+      "Other-owner experiments or Skill/schedule changes",
+      "Additional recipient startup",
+      "Long-term memory export"
+    ]
+  },
+  "bindings": {
+    "project": {
+      "path": "ark-project/ark100-199/ark114_harness/README.md",
+      "id": "Ark114",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK114_PROJECT::v001"
+    },
+    "instructions": {
+      "path": "ark-project/ark100-199/ark114_harness/INSTRUCTIONS.md",
+      "id": "ARK114_PROJECT_INSTRUCTIONS",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK114_PROJECT_INSTRUCTIONS::v001"
+    },
+    "runtime": {
+      "path": "ark-project/ark100-199/ark114_harness/ark114-02/README.md",
+      "id": "ARK114_02_WIKI_CONTINUATION",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK114_02_RUNTIME::v001"
+    },
+    "handoff": {
+      "path": "ark-project/ark100-199/ark114_harness/ark114-02/handoff.md",
+      "id": "ARK114_02_HANDOFF",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK114_02_HANDOFF::v001"
+    },
+    "fixed_source": {
+      "commit": "c55d136ab7f7b0b82bdc68ecea16919f621784c2",
+      "path": "ark-project/ark100-199/ark114_harness/ark114-01/README.md",
+      "blob": "4da93b881c26245e9f6c92e2086b043fb03faa72",
+      "id": "ARK114_01_WIKI_HARVEST",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK114_01_HARVEST::v001"
+    },
+    "shared_contract": {
+      "path": "prompts/ai-next-thread-handoff.md",
+      "version": "v003-human-authorized",
+      "observed_blob": "71f543b350ee92c8d34920557672ed563cf48a7c",
+      "eof": "EOF::AI_NEXT_THREAD_HANDOFF::v003-human-authorized"
+    },
+    "domain": {
+      "path": "ark-project/README.md",
+      "version": "v011-human-authorized",
+      "eof": "EOF::ARK_PROJECT_DOMAIN_ROUTER::v011-human-authorized"
+    },
+    "current_policy": "Current identity, role and substantive compatibility; observed blobs are receipts, not permanent pins. Existing historical fixed bindings retained."
+  },
+  "now": {
+    "phase": "PREPARED_NOT_DELIVERED",
+    "goal": "Reconstruct the current People Wiki understanding, production experience, evidence boundaries and authority without the source conversation.",
+    "first_legal_move": "READ_REQUIRED_SOURCES_THEN_RECONSTRUCT",
+    "after_reception": "Human Review or receive already-present valid Human input; no new research or writes automatically."
+  },
+  "progress": {
+    "source_prepared": true,
+    "remote_verified": false,
+    "project_instructions_applied": false,
+    "delivered": false,
+    "title_verified": false,
+    "target_reconstructed": false,
+    "human_entry_presented": false,
+    "human_arrival": "NOT_OBSERVED",
+    "real_use_effect": "NOT_OBSERVED"
+  },
+  "evidence": {
+    "source_snapshot": {
+      "commit": "c55d136ab7f7b0b82bdc68ecea16919f621784c2",
+      "blob": "4da93b881c26245e9f6c92e2086b043fb03faa72"
+    },
+    "transition_receipt_owner": "ark-project/ark100-199/ark114_harness/ark114-01/state.json",
+    "research_snapshot": {
+      "base_commit": "b622b8db608f7ecdb05f7459bf5fdc7a5e771fd4",
+      "lauren": {
+        "version": "v004",
+        "evidence_rows": 27,
+        "related_texts": [
+          "pstack-understanding.md v001",
+          "ark-connection.md v001"
+        ]
+      },
+      "neumann": {
+        "version": "v002",
+        "evidence_rows": 8
+      },
+      "drucker": {
+        "version": "v001",
+        "evidence_rows": 5
+      },
+      "wiki_references": {
+        "feedback": 2,
+        "lessons": 4,
+        "success_cases": 1
+      }
+    },
+    "existing_reader_report": {
+      "id": "c47a4e18-4b0d-48d2-9e2b-46235c0fed06",
+      "owner": "wiki/references/feedback/feedback.jsonl",
+      "scope": "One reported reader/two Neumann routes; short prior context, not fully blind"
+    },
+    "limits": [
+      "Current source reading is not independent original-source re-verification",
+      "Stored pre-reception flags are time-bound; later receipts must be read before resuming"
+    ]
+  },
+  "deferred": [
+    "Person-specific research under a new applicable request",
+    "Original audio comparison for14:39–16:20 when source available",
+    "Other-owner Lauren reader experiment/ark-mode research",
+    "Main/Support or Chief changes"
+  ],
+  "eof_sentinel": "EOF::ARK114_02_STATE::v001"
+}

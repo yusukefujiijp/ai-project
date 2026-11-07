@@ -327,6 +327,10 @@ Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project i
 
 **[Ark111: "Lauren Tan(@poteto): pstack"](ark100-199/ark111_lauren-tan-pstack/README.md)** は、pstackの実物検証とHuman–AIの役割分担を検討する専門Project。Humanが2026-10-28の保存作業中にProject名と本Thread **Ark111:01** を明示した。[01の総括原本](ark100-199/ark111_lauren-tan-pstack/ark111-01/README.md)が重要な意味・訂正・根拠・未確認・再開条件を所有する。今回は概念整理の保存であり、pstack導入、Skill作成、UI設定変更、他AIへの送信・起動は含まない。既存Main／Supportと他Projectの役割・固定Bindingを保持する。
 
+**[Ark114 — Ark-Wiki系](ark100-199/ark114_harness/README.md)** は、人物・概念の重要性、Humanの意味、根拠、適用条件と訂正の影響を、元会話なしに再構成できるWikiを育てる専門Project。Humanが旧Ark29:01のWiki ThreadをArk114:01へ改名・移動したと報告し、実行時にも既存Project `Ark114_2026/11/03: Ark-Wiki系` への所属を確認した。指定保存住所の `ark114_harness` は保持し、Harness担当へ戻す意味にはしない。
+
+[Project指示](ark100-199/ark114_harness/INSTRUCTIONS.md)、[01収穫](ark100-199/ark114_harness/ark114-01/README.md)、[02 Handoff](ark100-199/ark114_harness/ark114-02/handoff.md)へ接続する。01→02は同ProjectのTHREAD_CONTINUEであり、旧Ark29の履歴とCurrent Chief準備、Main27／Support28、Ark111・31等の担当・固定Bindingを保持する。原本・設定・送達・受入れの実観測は[01 State](ark100-199/ark114_harness/ark114-01/state.json)へ。Wiki研究を新規起動や移行のたびに最初からやり直さず、人物追加・原音調査・他担当の実験を自動開始しない。
+
 ---
 
 <a id="four-continuing-lines"></a>

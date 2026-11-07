@@ -49,6 +49,8 @@ Chiefの役割と、Dots等の製品機能・Actor identity・記憶・通知・
 
 本章と既存Projectを再利用し、chapter_idは保持する。2026-10-26に第三の継続ラインとして追加され、旧01でHome B補助検討を実施した[履歴](ark29-01/state.json)は保持する。Humanは旧Wiki Threadの移動による本Project再利用を報告した。Source13は準備時にUI上の空のチャット一覧と旧指示を確認したが、過去の移動操作を自身の実績にしない。
 
+**Wiki協働の現行住所。** 旧01で育った人物Wikiの協働は、Humanによる改名・Project移動の報告を受け、[Ark114の入口](../ark100-199/ark114_harness/README.md)へ接続する。[Ark114:01収穫](../ark100-199/ark114_harness/ark114-01/README.md)と[02受入れ契約](../ark100-199/ark114_harness/ark114-02/handoff.md)が人物Wikiと制作経験の継承を所有する。本Ark29のChief後継02とは別Thread・別委任であり、旧01三資料のIdentity・Binding・当時の観測を変更しない。
+
 旧章v002は[固定snapshot](https://github.com/yusukefujiijp/ai-project/blob/2beaee144ba457c9862a9790bbbc97efc0350b8a/ark-project/ark29/README.md)に保持する。旧01のREADME／Handoff／Stateは変更しない。旧01のCurrent-main固定・版条件を本v003で通過したと扱わず、当時の受入れと現在のChief受入れを分ける。置き換えるのは章の現役の役割・入口・Project指示であり、既存の成立履歴・固定Bindingではない。
 
 初穂の[役割とChief／Inbox Correction](../../agents/dots/actors/dot-0000/README.md)、[Dots全体方向](../../agents/dots/README.md)、[Source13 Current receipt](../ark27/ark27-13/state.json)へ接続する。Actor本人のIdentity・出来事・製品機能は引き取らない。Ark30、31–34、専門領域と各担当の成果は保持し、番号から新Supportや再割当を作らない。
