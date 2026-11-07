@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v006"
+version: "v007"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–005 added 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
+status: "active / opened 2026-10-25; Reports 002–006 added 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
 created: "2026-10-25"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v006"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v007"
 ---
 
 # AI-Mammoth Reports
@@ -37,6 +37,7 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 | 003 | 2026-11-07 14:18 | [変化の理解 — STRの系譜と道具の層](2026-11-07-1418_report-003_change-history-and-tools.md) | STR 全25件の一覧と要所7件（001／003／004／015／019／023／024）、skills／prompts 両 Hub の索引を読んだ変化の理解。STR は変化を再現可能な単位に変える制度であり、STR-023 は本家の references 三本柱の親。変化の作法は Plan Mode → 封印 → 実行 → 検証 → 記録。 |
 | 004 | 2026-11-07 14:31 | [住人の理解 — 隣人たちと周縁の領域](2026-11-07-1431_report-004_neighbors-and-periphery.md) | agents/codex・dots の家、board／records、ai-ark-seed、torah-project を読んだ住人と周縁の理解。repo は一つの Root の下の連合（章・家・領域）であり、所有の境界と文法の共有がそれを保つ。種の作法と、夢を流されない形で保持する作法に触れる。 |
 | 005 | 2026-11-07 14:45 | [仕組みの理解 — 思想がコードと作法になる場所](2026-11-07-1445_report-005_mechanism-and-craft.md)（[HTML 版](2026-11-07-1445_report-005_mechanism-and-craft.html) ── 初の二本立て） | harness/ の実装と ai-to-ai-communication の共通原本を読んだ仕組みの理解。思想は制度・作法・コードへと同じ形を保って降り、検証は機械検査と意味の観察に分かれる。五面（核・形・変化・住人・仕組み）の読みが一巡する。 |
+| 006 | 2026-11-07 15:04 | [方法の理解 — Living Review と Report の系譜](2026-11-07-1504_report-006_living-review-genealogy.md)（[HTML 版](2026-11-07-1504_report-006_living-review-genealogy.html) ── 二本立て） | repository-reviews の Living Review（2026-09-19、STR より古い最古の器官）と review-prompt、harness の接続部を読んだ方法の理解。AI の Report の仕組みは Living Review の系譜の末端だった。HTML 版は群れの制作法を継いだ対話的系譜図。 |
 
 ## 各Reportの作法
 
@@ -46,4 +47,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
 - **二本立て（2026-11-07、Fujii の提案と命名）：** Report 005 以降、各 Report は同名の .md（原本）と .html（上演）の対で作る。Markdown が永続・差分・復元の担い手であり、HTML はその土台の上に、文章では運べない理解（図・時間軸など）を運ぶ。
 
-EOF::AI_MAMMOTH_REPORTS::v006
+EOF::AI_MAMMOTH_REPORTS::v007

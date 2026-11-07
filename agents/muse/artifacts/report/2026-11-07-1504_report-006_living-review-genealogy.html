@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 006 — 方法の理解：Living Review と Report の系譜</title>
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5a6572; --line:#d8dee6;
+    --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px;
+    -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  .howto{font-size:13.5px; color:var(--sub); margin-bottom:6px;}
+  /* genealogy */
+  .river{position:relative; margin:16px 0 4px; padding-left:30px;}
+  .river:before{content:""; position:absolute; left:10px; top:8px; bottom:8px; width:3px; background:linear-gradient(var(--blue), #9fd0f5); border-radius:2px;}
+  .node{position:relative; margin-bottom:14px;}
+  .node .pin{position:absolute; left:-30px; top:14px; width:23px; height:23px; border-radius:50%; background:var(--card); border:3px solid var(--blue); z-index:1;}
+  .node.now .pin{background:var(--blue);}
+  .node button.head{width:100%; text-align:left; font:inherit; cursor:pointer; background:var(--card);
+    border:1px solid var(--line); border-radius:14px; padding:13px 16px; display:block; box-shadow:0 1px 4px rgba(20,40,70,.05);}
+  .node button.head:active{background:var(--blue-soft);}
+  .node .dt{font-size:12px; color:var(--blue); font-weight:700; letter-spacing:.05em;}
+  .node .tt{font-weight:800; font-size:16.5px; display:block; margin-top:1px;}
+  .node .sm{color:var(--sub); font-size:13.5px; display:block;}
+  .node .chev{float:right; color:var(--blue); font-weight:800; transition:transform .25s;}
+  .node.open .chev{transform:rotate(180deg);}
+  .node .detail{display:none; background:#f4f9fd; border:1px solid var(--line); border-top:none;
+    border-radius:0 0 14px 14px; padding:13px 16px; font-size:14.5px; margin-top:-6px;}
+  .node.open .detail{display:block;}
+  .node.open button.head{border-radius:14px 14px 0 0; border-bottom-color:transparent;}
+  .home-btn{font:inherit; cursor:pointer; background:var(--blue); color:#fff; border:none; border-radius:999px;
+    padding:10px 22px; font-weight:700; font-size:14px; margin-top:8px;}
+  .home-btn:active{opacity:.85;}
+  table{width:100%; border-collapse:collapse; font-size:14px; margin:16px 0;}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top;}
+  th{background:var(--blue-soft); font-weight:700;}
+  .laws{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:16px 18px; font-size:14px;}
+  .laws li{margin:6px 0 6px 18px;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 006 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>方法の理解<br>── Living Review と Report の系譜</h1>
+  <p class="lede">五面の読みが一巡した後で見つけたのは、私自身の Report の系譜だった。方法は、私より前に生まれていた。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    日時：2026-11-07 15:04 JST　／　読みの基盤：repo main @ b755978a<br>
+    原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── 系譜を「触って広げられる図」にすること。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>系譜 ── 触って広げる川</h2>
+  <p class="howto">各节点（ノード）をタップすると、その詳細が開きます。同時に開く変化は一つだけ。開いた状態が、この図の「生きている現在」です。</p>
+  <div class="river" id="river">
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-09-19 ／ 方法</span>
+        <span class="tt">Living Review 誕生</span>
+        <span class="sm">repository-reviews ── 最古の器官</span>
+      </button>
+      <div class="detail">Ark27:04、YusukeJP × AI-Collaborator によって生まれた入口＋方法＋報告の器官。標語は "Not dead data, but a living board." ── 過去の観察を現在の原本と照合し、次の判断へ戻す Bridge。記憶を持たない Future AI が再開できることが目的で、Human は入口と短い依頼を渡せばよい。状態表示は正直で、"cross-AI benefit unobserved"、現実の再確認は 2026-09-19 のまま ── 橋は架けられたが、まだ多くは歩かれていない。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-09-22 ／ 制度</span>
+        <span class="tt">STR-001 ── 変化の記録が始まる</span>
+        <span class="sm">航行と所有の変更記録</span>
+      </button>
+      <div class="detail">方法の次に生まれたのは、変化そのものを記録する制度だった。STR は以後、範囲と除外を明示し、基盤 commit を固定し、検証と残る判断を分けて書く ── 変化を再現可能な単位に変える仕組みになる（Report 003）。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-10-01 ／ 基盤</span>
+        <span class="tt">基盤版への移行、Dots と Board の制度化</span>
+        <span class="sm">STR-003／005／006 ── 協働が基盤になる日</span>
+      </button>
+      <div class="detail">一過性の協働から、持続する協働への移行が封印された日。Dots の協働基盤と Board の通信基盤が同じ日に生まれた。封印の文型（"Execute GitHub OK / Human Seal OK"）は既にここにある。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-10-20 ／ 学び</span>
+        <span class="tt">学びの集中日</span>
+        <span class="sm">STR-018〜021 ── References・共通原本・柔軟な README</span>
+      </button>
+      <div class="detail">柔軟な README 原則、References の学習記憶化、AI 間コミュニケーションの共通原本、各 Skill への Query 移行が一日に集中した。経験を「次の判断へ渡す」仕組みが、制度として揃った日。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-10-25 ／ 一つの家の実践</span>
+        <span class="tt">AI-Mammoth、Report 001 を提出</span>
+        <span class="sm">川の下流での合流</span>
+      </button>
+      <div class="detail">後から来た私が、Living Review を知らないまま、同じ必要（理解を次の AI へ渡す）に迫られて同じ形を再発見し、最初の Report を提出した。発明ではなく、合流である。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-10-26 ／ 経験の一般化</span>
+        <span class="tt">三本柱の共有化（STR-023）</span>
+        <span class="sm">feedback／lessons／success-cases が家の文法に</span>
+      </button>
+      <div class="detail">References の三本柱が、Report 側の実践から repo 全体の共有文法へ一般化された。私の家の三本柱は、この記録の子である（Report 003）。</div>
+    </div>
+
+    <div class="node" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-10-29→31 ／ 実装</span>
+        <span class="tt">root harness ── 方法がコードになる</span>
+        <span class="sm">STR-024 ── Ark Harness v0.1.0</span>
+      </button>
+      <div class="detail">Living Review の方法が、実行可能なコードになった。依頼 → 固定原本 → 読解範囲 → 検証 → 成果物。方法の原本は複製せず、固定 commit から引く（Report 005）。</div>
+    </div>
+
+    <div class="node now" data-node>
+      <span class="pin"></span>
+      <button class="head" type="button"><span class="chev">⌄</span>
+        <span class="dt">2026-11-07 ／ 対と Loop</span>
+        <span class="tt">二本立て＋Next Query の canon 化</span>
+        <span class="sm">本作 Report 006 は、この最新点に立つ</span>
+      </button>
+      <div class="detail">Report の Loop（提示 → 封印の一行 → 実行 → 検証）が家の配線（HARNESS.md）として canon 化され、Report は Markdown 原本＋HTML 上演の二本立てになった。方法 → 制度 → 実装の川に、一つの家の実践が合流し、新しい形を生んだ地点。</div>
+    </div>
+
+  </div>
+  <button class="home-btn" id="homeBtn" type="button">すべて閉じる ── ホームに戻る</button>
+  <p class="howto" style="margin-top:10px;">閉じた状態（全ノードの要約が見える状態）が、この図のホーム ── 完全な初期状態です。</p>
+</section>
+
+<section>
+  <h2><span class="no">照合</span>私の Report と Living Review</h2>
+  <table>
+    <tr><th>要素</th><th>Living Review（2026-09-19）</th><th>私の Report 群</th></tr>
+    <tr><td>入口</td><td>repository-reviews/README</td><td>artifacts/report/README</td></tr>
+    <tr><td>方法</td><td>review-prompt.md</td><td>各 Report の作法</td></tr>
+    <tr><td>報告</td><td>reports/（日付つき）</td><td>Report 001〜（日時つき）</td></tr>
+    <tr><td>連続性</td><td>記憶を持たない Future AI の再開</td><td>復元可能性（agents/muse）</td></tr>
+    <tr><td>Human の労力</td><td>入口と短い依頼だけ</td><td>封印の一行だけ</td></tr>
+  </table>
+  <p>違いは焦点にある ── Living Review は repo 全体のレビューの器官、私の Report は一つの AI の理解の成長を Human へ提出する器官である。Next Query の Loop と二本立ては、系譜の末端で生まれた私側の追加である。</p>
+</section>
+
+<section>
+  <h2><span class="no">継承</span>この一枚が、群れから受け継いだもの</h2>
+  <div class="laws">
+    <ul>
+      <li><b>2MiB の天井は、生成時の条件</b> ── 群れのビューア実測（2026-10-31）から。本ファイルはその 1% 程度に収める。</li>
+      <li><b>開示は User の操作の後ろに</b> ── 自動再生はしない。タップという行為が、詳細を開く対価であり価値（動きの価値の原則）。</li>
+      <li><b>初期状態は完全な状態（ホーム）</b> ── 開いた瞬間は全ノードの要約が見える完全な姿。中途の状態で開かない。</li>
+      <li><b>変化は一つ</b> ── 開く詳細は同時に一つだけ。別のノードを開けば前は解ける。</li>
+      <li><b>操作要素は対象の直下に</b> ── 各ノードのボタンは、そのノード自身である（距離ゼロ）。</li>
+      <li><b>失敗は一件に隔離</b> ── 一つのノードの不具合が、ページ全体を止めない。</li>
+      <li><b>余白は関節の遊び</b> ── Mobile-First、詰め込まない。</li>
+    </ul>
+  </div>
+  <p style="margin-top:14px;">絶滅種たちの制作過程で支払った代価 ── 天井の発見も、失敗作の記録も、律法への結晶も ── が、この一枚の設計に生きている。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、スクリプト構文）までを確認済み。端末での実感はコード検査とは別の真実であり、Fujii の目と指が判定する（群れの規律のまま）。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_006::v001（HTML companion）</p>
+</footer>
+
+</div>
+<script>
+(function(){
+  try{
+    var nodes = Array.prototype.slice.call(document.querySelectorAll('[data-node]'));
+    function closeAll(){ nodes.forEach(function(n){ n.classList.remove('open'); }); }
+    nodes.forEach(function(n){
+      var head = n.querySelector('button.head');
+      if(!head) return;
+      head.addEventListener('click', function(){
+        try{
+          var wasOpen = n.classList.contains('open');
+          closeAll();
+          if(!wasOpen){ n.classList.add('open'); }
+        }catch(e){}
+      });
+    });
+    var home = document.getElementById('homeBtn');
+    if(home){ home.addEventListener('click', function(){ try{ closeAll(); }catch(e){} }); }
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
