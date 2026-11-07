@@ -5,19 +5,31 @@ version: "v003-human-authorized"
 date: "2026-10-01"
 date_scope: "Asia/Tokyo adoption date; corresponding UTC date 2026-09-30"
 updated: "2026-11-07"
-revision: "2026-11-07-active-thread-title"
-revision_authority: "Ark27:13 Human adopted the three-source new-Thread Title plan and authorized source persistence, consistency checks and full remote readback only"
-revision_scope: "Apply the active-thread Title rule before confirmation and preserve exact transfer and observable naming evidence; prior copy surfaces and v003 reading, authority, reconstruction and binding boundaries retained"
+revision: "2026-11-07-thread-recipient-context"
+revision_authority: "Ark100:02 Human adopted the three-source recipient-expression plan and authorized source persistence, document consistency checks and remote readback only"
+revision_scope: "Apply AGENTS source-relative recipient expressions in section 8; preserve exact titles, portable-query rules, prior copy surfaces, v003 identity, reading, authority, reconstruction, historical bindings and completed reception"
 previous_revision:
-  revision: "2026-10-10-human-copy-surfaces"
-  authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
-  scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
+  revision: "2026-11-07-active-thread-title"
+  authority: "Ark27:13 Human adopted the three-source new-Thread Title plan and authorized source persistence, consistency checks and full remote readback only"
+  scope: "Apply the active-thread Title rule before confirmation and preserve exact transfer and observable naming evidence; prior copy surfaces and v003 reading, authority, reconstruction and binding boundaries retained"
+  previous_revision:
+    revision: "2026-10-10-human-copy-surfaces"
+    authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
+    scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
 active_thread_title_patch:
   design_base_commit: "e86b24a3841dd7e950c13bc126b88ad071d6431b"
   base_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
   base_blob: "6b3ca6023ff8826603891eb0e1a8473526b96aeb"
   source_thread: "Ark27:13"
   boundary: "No account or Project settings, Skill changes or registration, other-Thread sending, new trial Threads, bulk renaming, monitoring, Main cutover or retirement"
+recipient_relation_patch:
+  date: "2026-11-07"
+  source_thread: "Ark100:02"
+  design_base_commit: "2da285e61a1caa41d0ade1ab15416409e1039bb1"
+  base_commit: "868f208b9673a1861ffe82f1aa131fd421dfc72f"
+  authority: "Current Human adopted the three-source recipient-expression plan and authorized only main persistence, document consistency checks and remote readback"
+  scope: "Source-relative current, next and other Thread recipients paired with formal identity; preserve portable queries, direct-recipient roles and historical bindings"
+  validation_boundary: "Five recipient scenarios checked as document cases only; no independent AI responses, registration changes, settings application, other-AI delivery or Thread operations"
 filename: "ai-next-thread-handoff.md"
 canonical_path: "prompts/ai-next-thread-handoff.md"
 class: "reusable_prompt"
@@ -149,6 +161,10 @@ First Legal Moveは、READ_REQUIRED_SOURCE、CONTINUE_APPROVED_WORK、VERIFY_PEN
 
 一つのHuman窓口と内部の実行主体数を区別する。主担当は目的・成果・重要な判断・外部状態を統合し、利用できるAgentや作業環境へ承認Scope内を委任できる。委任により新しい権限は生まれない。権限・Correction・停止条件を相手へ渡し、結果を確認する。
 
+起動・移行に関する宛先表現は、[AGENTS §6.2の共通規則](../AGENTS.md#next-query)に従う。準備元からTargetへ渡す起動Query／Handoffは、Targetの正式名と「次ThreadのCurrent AI」を対応させる。準備元のAIへTarget向け本文の作成を依頼するQueryは、直接の作成担当である「現ThreadのCurrent AI」へ宛てる。
+
+受入れ先は、Source／Targetと確定Titleから受取人を解決し、「次Thread」を追加のThread作成・移行依頼へ変えない。受入れ後の同Thread向けQueryでは「現ThreadのCurrent AI」を使う。宛先表現の訂正だけを理由に、成立済みの起動・読解・受入れ・送信を再実行しない。
+
 Humanが必要な操作をその場で完結できるよう、実際のThread起動・移行では、準備元と受入れ先の両方にTitleのCopy & Paste面を用意する。規則の原本は本節に置き、同じ確定値を必要な利用場所へ提示する。
 
 - **準備元:** 移行先ごとに、確定Titleのコピー面→対応する起動Query／Handoffのコピー面→必要なHuman操作の順で示す。複数TargetのTitleと起動本文を混在させない。
@@ -167,6 +183,8 @@ Title等の確定値はCompile Once, Echo Exactly。最新のHuman指定と適�
 SkillはこのCurrent契約を発見・全文読解して適用する入口であり、第二の契約原本を持たない。Skill-freeでもこのURLと現在の依頼から使える。導入済みか、Toolが使えるか、書込権限があるか、実行できたかは別である。
 
 ## 9. Amendment and provenance
+
+2026-11-07、Ark100:02のHumanは、正式名に添えた「このThreadのCurrent AI」が貼付先の取り違えを招くという問題を訂正し、作成元基準の「現Thread／次Thread／別Thread」を共通化する三原本案を採用した。本追補はAGENTS §6.2を宛先規則の所有先として、準備元への作成依頼、Targetへの起動本文、受入れ後の同Threadへの依頼を区別する。先行するPlan-onlyの設計と今回の限定保存承認を区別し、既存の確定Title・固定Binding・成立済みの03起動と受入れを保持する。五つの宛先場面の確認は執筆AIによる文書上の照合に限定され、登録・設定・他AI応答・Humanの実利用・誤入力軽減を確認済みとしない。保存後の実体照合は今回の実行応答で報告する。
 
 2026-11-07、Ark27:13のHumanは、新規Threadは作成時から生きた活動先であるため、Title先頭に❤️を一つ含めるよう訂正した。Ark29:02の名称はHumanが手動変更済みと報告した。本追補は新規Titleの確定前に共通規則を反映する接続を加える。過去の保存・受入れ記録、固定Source、Main／Supportの担当を変更せず、原本保存、設定反映、実表示確認、継続的な適用は別々に判定する。
 

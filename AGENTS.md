@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.17-candidate"
+version: "v004.18-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -171,7 +171,16 @@ active_thread_title_patch:
   authority: "Current Human adopted the three-source active-thread Title plan and authorized only main persistence, source consistency checks and full remote readback"
   scope: "Add a single leading heart before confirming new Thread Titles; preserve current Human corrections, exact-value transfer, actual-UI verification, historical bindings, existing reception and Main/Support ownership"
   validation_boundary: "Account and Project settings, Skill changes or registration, other-Thread delivery, trial Thread creation, bulk renaming and monitoring remain outside this execution"
+recipient_relation_patch:
+  date: "2026-11-07"
+  source_thread: "Ark100:02"
+  design_base_commit: "2da285e61a1caa41d0ade1ab15416409e1039bb1"
+  base_commit: "868f208b9673a1861ffe82f1aa131fd421dfc72f"
+  authority: "Current Human adopted the three-source recipient-expression plan and authorized only main persistence, document consistency checks and remote readback"
+  scope: "Source-relative current, next and other Thread recipients paired with formal identity; preserve portable queries, direct-recipient roles and historical bindings"
+  validation_boundary: "Five recipient scenarios checked as document cases only; no independent AI responses, registration changes, settings application, other-AI delivery or Thread operations"
 updated_reason:
+  - "2026-11-07: Add source-relative recipient expressions in section 6.2 and preserve direct-recipient, portable-query, copying, history and authority boundaries; connect GCI and the shared handoff contract without changing registrations or settings."
   - "2026-11-07: Add section 6.3 for active new Thread Titles and connect the shared handoff interface; distinguish source persistence, settings and observed naming behavior without replaying completed reception."
   - "2026-11-04: Add the Human-adopted Recall and Coaching responsibility in section 3, connect its formation lesson and recall entry, and preserve all existing authority, quality and evidence boundaries."
   - "2026-11-01: Define the bounded temporary-validation exception for applicable Plan Mode work, keep detailed conditions in plan-mode, and preserve explicit generation or command prohibitions, STOP and existing authority boundaries."
@@ -419,6 +428,14 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 継続依頼文は、【Next Query】に、そのまま送れる一件の推奨依頼全文を一つのtextコードブロックで示す。同Thread宛てを含め、通常のNext Queryで依頼本文を提示する時は、見出しとコードブロックの間に、コード化しない独立行で「宛先：」に続けて正式な宛先を記す。コピー本文内にも同じ宛先を含め、内外の対象を一致させる。依頼本文そのものを意味のまとまりで箇条書きにし、本文に属するTitle・宛先・Version等も同じコピー単位に含める。外側のラベルだけを箇条書きにしたり、本文を複数のコピー領域へ分割したりしない。コード・引用・厳密な構文は保持し、必要な囲み方とコピー範囲は第6.1節に従う。説明・根拠・注意・保存報告は先に置き、最後のブロック後に追記しない。既存Queryを再利用する場合も現在のGoal・対象・Modeへ照合し、依頼全文を今回のNext Queryへ再掲する。「前のQueryを使う」等の履歴参照だけで代替しない。
 
 ここでいう宛先は、提示した依頼を直接受け取り、その仕事を担う相手である。本文中で言及する別AI、作成するPromptの想定受信者、操作・調査の対象とは区別する。別AI向け本文の作成を依頼する場合、現在のQueryは作成担当へ宛て、成果物の受け手は本文中で別に明示する。同Threadでも、確認できるThread名等を添え、コピー後にも直接の受取人を判別できるようにする。
+
+Thread宛てのQuery・Prompt・返信・起動文では、確認済みの正式な宛先に、作成・提示元との関係を添える。同じThreadのAIへの依頼は「現ThreadのCurrent AI」、今回継続する移行先への依頼は「次ThreadのCurrent AI」、移行先ではない別Threadへの依頼は「別ThreadのCurrent AI」とする。新しく生成する宛先では、貼付先の解釈が揺れる「このThreadのCurrent AI」を用いない。
+
+「現／次／別」は、そのQueryを作成・提示したThreadを基準とする。受け手は併記された正式名・確認済みURL・Source／Targetから自分宛てかを判断し、「次Thread」をさらに先への移行指示へ読み替えない。受入れ後に自分のThread向けの新しいQueryを作る場合は、その新しい作成元を基準に「現ThreadのCurrent AI」とする。
+
+入力先をあらかじめ限定しない汎用Queryでは、その用途を明示して「このQueryをHumanが直接入力するThreadのCurrent AI」等と書ける。特定の移行先へ渡すQueryの宛先不足を、この汎用表現で隠さない。
+
+通常のNext Queryでは、本文外の宛先、コピー本文内の宛先、本文が仕事を依頼する相手、Next Stepが示す入力先を照合する。引用・過去に送達した本文・固定Bindingを一括置換せず、再利用して新しく提示するQueryには現在の宛先関係を適用する。
 
 既存の宛先は、取得済み原本や現在の会話で確認できたサービス・Project・Thread・AI等の正式名から、場所と受け手を一意に特定するために必要なものを使う。確認済みURLがあれば添え、名称・URLを推測しない。新規Threadは作る場所・受け手の役割・必要な条件を示し、未作成と作成状態未確認を区別する。宛先が特定できなければ、不足と最小の回復方法をNext Stepまでに示し、必要なら宛先を解決する同Thread向けの依頼へつなぐ。未確定の転送本文は草案として保留し、そのまま送れるNext Queryにはしない。表示の有無だけで既存の委任や短縮入力の意味を変えず、権限と採用条件は各所有原本に従う。
 
