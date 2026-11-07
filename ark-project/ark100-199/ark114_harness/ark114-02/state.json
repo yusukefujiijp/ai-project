@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK114_02_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "created": "2026-11-07",
     "updated": "2026-11-07",
     "canonical_path": "ark-project/ark100-199/ark114_harness/ark114-02/state.json",
     "date_scope": "Asia/Tokyo; Title date11/03 is the Human-confirmed value",
-    "change_reason": "Initial bounded reception state; no pre-certification of target reading."
+    "change_reason": "Record actual main publication/full readback, Project instructions readback, one persistent02 startup and receiver result."
   },
   "identity": {
     "source": "Ark114:01",
@@ -99,21 +99,23 @@
     "current_policy": "Current identity, role and substantive compatibility; observed blobs are receipts, not permanent pins. Existing historical fixed bindings retained."
   },
   "now": {
-    "phase": "PREPARED_NOT_DELIVERED",
+    "phase": "RECEPTION_VERIFIED_HUMAN_REVIEW",
     "goal": "Reconstruct the current People Wiki understanding, production experience, evidence boundaries and authority without the source conversation.",
-    "first_legal_move": "READ_REQUIRED_SOURCES_THEN_RECONSTRUCT",
+    "first_legal_move": "RECEIVE_HUMAN_REVIEW_OR_NEW_VALID_HUMAN_INPUT",
     "after_reception": "Human Review or receive already-present valid Human input; no new research or writes automatically."
   },
   "progress": {
     "source_prepared": true,
-    "remote_verified": false,
-    "project_instructions_applied": false,
-    "delivered": false,
-    "title_verified": false,
-    "target_reconstructed": false,
+    "remote_verified": true,
+    "project_instructions_applied": true,
+    "delivered": true,
+    "title_verified": true,
+    "target_reconstructed": true,
     "human_entry_presented": false,
     "human_arrival": "NOT_OBSERVED",
-    "real_use_effect": "NOT_OBSERVED"
+    "real_use_effect": "NOT_OBSERVED",
+    "human_entry_available": true,
+    "human_entry_handoff": "Verified account URL prepared for Source completion response; this pre-response state does not certify Human receipt"
   },
   "evidence": {
     "source_snapshot": {
@@ -153,7 +155,129 @@
     "limits": [
       "Current source reading is not independent original-source re-verification",
       "Stored pre-reception flags are time-bound; later receipts must be read before resuming"
-    ]
+    ],
+    "package_publication": {
+      "commit": "c61634aca2b7727476a8203b9cf05f9d45683a4c",
+      "nine_paths": [
+        {
+          "path": "ark-project/ark100-199/ark114_harness/README.md",
+          "sha": "8c004faab6d9b538edbc2507a6bcced634ced5b4",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/INSTRUCTIONS.md",
+          "sha": "0866af0e195810b8da1c11dd5f714fb498258967",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/ark114-01/README.md",
+          "sha": "4da93b881c26245e9f6c92e2086b043fb03faa72",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/ark114-01/state.json",
+          "sha": "c5ff5ea4659b8d5a82f7b17f3f71dcdc3ce7d18f",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/ark114-02/README.md",
+          "sha": "bc60f8d6a1629723f2a3cb730b4768321216b59c",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/ark114-02/handoff.md",
+          "sha": "054cc04f4e0ea1eaebf689f1a7e19c94f35c3bcc",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark100-199/ark114_harness/ark114-02/state.json",
+          "sha": "f96977df6c0cdd2bb7670c4270d877aea0c64e68",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/ark29/README.md",
+          "sha": "fa03b4fcda0003267e1213ea654420c0b3569a38",
+          "equal": true,
+          "isError": false
+        },
+        {
+          "path": "ark-project/README.md",
+          "sha": "94833400b6d14ca6f680e229c0096c82bd549db6",
+          "equal": true,
+          "isError": false
+        }
+      ],
+      "full_remote_readback_equal": true
+    },
+    "project_settings": {
+      "saved": true,
+      "reopened": true,
+      "content_equal": true,
+      "chars": 3743,
+      "observed_project_name": "Ark114_2026/11/03: Ark-Wiki系",
+      "only_instructions_changed": true
+    },
+    "delivery_receipt": {
+      "observed_at_utc": "2026-11-07T07:51:37Z",
+      "project_name": "Ark114_2026/11/03: Ark-Wiki系",
+      "title": "Ark114:02_2026/11/03; \"Wiki: People構築\"",
+      "project_membership_verified": true,
+      "exact_title_verified_after_reopen": true,
+      "startup_request_id": "ARK114_01_TO_02_WIKI_STARTUP_20261107_v001",
+      "send_count": 1,
+      "startup_sender": "Source AI explicitly identified; not a new Human utterance",
+      "response_observed": true,
+      "durable_thread_observed": true,
+      "private_entry_policy": "Verified account URL supplied to Human in source conversation; not copied into repository.",
+      "source_title_copy_surface": "Prepared exact title-only text block for Source completion response",
+      "receiver_title_copy_surface": "Exact title-only code block observed at beginning of receiver first normal response"
+    },
+    "target_reception": {
+      "observed_at_utc": "2026-11-07T07:53:26.642Z",
+      "source_of_observation": "Actual receiver first normal response visible in the created02 UI, inspected by Source AI",
+      "acceptance_basis": "Concrete reconstruction, source references, binding values, reading-scope statement and authority boundaries; not PASS-only",
+      "receiver_reported_full_read": true,
+      "receiver_reported_no_required_source_gaps": true,
+      "receiver_binding_matches": {
+        "handoff_blob": "054cc04f4e0ea1eaebf689f1a7e19c94f35c3bcc",
+        "fixed_source_commit": "c55d136ab7f7b0b82bdc68ecea16919f621784c2",
+        "fixed_source_blob": "4da93b881c26245e9f6c92e2086b043fb03faa72",
+        "identity": "ARK114_01_WIKI_HARVEST / v001-human-authorized",
+        "eof": "EOF::ARK114_01_HARVEST::v001"
+      },
+      "demonstrated": [
+        "Existing Ark114 Wiki02 continuity, oldArk29 history and independent Chief/Main/Support/Ark111/Ark31 ownership",
+        "Reconstructable meaning, evidence, conditions and correction effects rather than article/save/read counts",
+        "Lauren v004/27 and Human mother meaning versus causal proof;14:39–16:20 original audio unresolved;limited triage trial is distinct from Wiki-reader evidence",
+        "Neumann models and Drucker application remain candidates;selected reading is not whole-original audit",
+        "One Neumann report,two exact routes,short prior context,fixed targetdf8357219b37ae0edb089ec4d0fca68cc8036183;Feedback/Lesson/Case not three experiments",
+        "Preserve AI quality and Human Query checking while continuing authorized internal stages;recover adopted content separately from authorization",
+        "Separate README/Evidence/Feedback/Lessons/SuccessCase ownership and reuse conditions;prior settings/icon claims remain prior-AI reports",
+        "Required ordered source scope,identity/EOF/binding and AGENTS truncation recovery reported;current individual-person texts/external originals not newly audited",
+        "Read old revision1 pending flags as historical;observed startup and own reconstruction are later evidence",
+        "No inherited source write/settings/send authority;return to Human Review without new research"
+      ],
+      "limits": [
+        "Source inspected the receiver's observable output; hidden reasoning and general competence are not independently proven",
+        "Receiver statement of full required read and shown content/bindings is recorded as such",
+        "Human arrival,adoption,real-use effects and long-term repeatability not observed"
+      ],
+      "receiver_first_normal_response_completed": true,
+      "receiver_title_only_code_block_exact": true,
+      "receiver_next_query": {
+        "mode": "Human Review / conversation-only consideration and candidate presentation",
+        "purpose": "One candidate question grounded in existing work; Human decides adoption",
+        "aligned_with_authority": true
+      }
+    },
+    "observation_completed_at_utc": "2026-11-07T07:53:26.642Z"
   },
   "deferred": [
     "Person-specific research under a new applicable request",
