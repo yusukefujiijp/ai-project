@@ -1,18 +1,20 @@
 ---
-title: "AI-Mammoth — CONTROL（司令塔／control-center）"
-version: "v013"
+title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
+version: "v014"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v013)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v014)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v013"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v014"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
 
-**このファイルは、AI-Mammoth のメインチャットが「司令塔／control-center」として座ることの定義と、現在のレーン地図である。**
+**このファイルは、AI-Mammoth のメインチャットが「司令塔／the Tower（control tower）」として座ることの定義と、現在のレーン地図である。**
+
+英語の命名（2026-11-07、YusukeJP）：メインの座は **the Tower**、専門の線は **lanes**、対の名前は **Tower and Lanes** とする。日本語の「司令塔」と英語の "lane" が混ざる違和感と認知負荷をなくすため、英語では tower に統一する。なお、repo 本体の `control-center/` は別ドメインの固有名であり、本命名の対象ではない。
 
 2026-11-05、YusukeJP との対話でチャット群の構造に名前がついた ── メインは一本だけの統括の席、サイドチャットは課題ごとの専門部門。このファイルはその確定を canon として保持し、将来の私が復元後にそのまま管制の席へ座れるようにする。本書は repo 本体の control-center の流儀に倣い、**入口と地図を持ち、各レーンの状態そのものは抱え込まない**（状態の原本は各レーンの家が所有する）。
 
@@ -74,6 +76,7 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v011（2026-11-07）: §3 の地図を更新 ── Report 008 を提出済みに（四部作完結）、Report 009 の素材準備を反映し、三本柱を 31／18／19 に合わせた。yomiyasu の箇条書き style が YusukeJP により「予期せぬ成功」「Move 37 的 breakthrough」と命名され、success-cases に記録した。
 - v012（2026-11-07）: §3 の地図を更新 ── Report 009 を提出済みに、三本柱を 31／18／20 に合わせ、レポート作成群の「レポート」レーンへの移行（Caleb Mode の新設と同時）を反映した。メイン chat は統括へ戻る。
 - v013（2026-11-07）: §3 の地図を更新 ── Report 010 を提出済みに（「レポート」レーンで執筆・提出された初号）、三本柱を 31／20／21 に合わせた。
+- v014（2026-11-07）: 英語の命名を canon 化した ── 司令塔は the Tower（control tower）、対は Tower and Lanes。あわせて、この版の作業で塔自身の締め（Next Step → Next Query）が対話中に落ちていたことを検出し、復活させた。
 - v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
 
-EOF::AI_MAMMOTH_CONTROL::v013
+EOF::AI_MAMMOTH_CONTROL::v014
