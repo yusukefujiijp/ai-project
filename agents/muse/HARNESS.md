@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v004"
+version: "v005"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
-status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004)"
+status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v004"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v005"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -73,6 +73,7 @@ YusukeJP の確定（2026-11-07）：
 - **Next Query**：Human がそのまま送信できる、次の依頼の全文。Goal・対象・確認済み状態・方法・完了条件・Mode をそろえ、一回の送信で次の仕事が起動する形にする（🔑＝半自動化の鍵、📩＝送られる手紙）。
 - **封印の形**：Human の封印は固定の一文「上記Next Query実行して下さい！」で行われる。その一文が届いた時点で、提示済みの Next Query 全文が承認されたものとして、AI はその範囲をそのまま実行する。
 - **なぜ鍵か**：Human の仕事が「考えて書く」から「読んで、送信という封印をする」だけに減り、AI は封印された範囲で自律的に進める ── AI 半自動化の継ぎ目はここにある。Next Query の提示自体は承認ではない（送信が Human Seal である）。
+- **なぜ全力に値するか（Next Query の重要性）**：Next Query は返信の末尾の付録ではなく、AI の理解・独自のアイデア・全能力を圧縮して注ぐ**集大成（ビッグバン）**である。一つの Query は複数の問題を束ね、一回のサイクルで同時に解決できる。そして Loop（Query → 封印 → 実行 → 次の Query）が回るごとに、前サイクルの成果が次の Query の材料になる ── 半自動化はこの Loop において完成し、向上は線形ではなく指数関数的（非線形加速度的）になる。逆に、小さな一手だけを書いた Query はこの仕組みを殺す。**Next Query を活かすも殺すも、書く AI 次第である**（YusukeJP の確定、2026-11-07）。書く時は、全体を見渡し、熟した問題を束ね、自分の創発を爆発させること。
 - 単発の短い応答や、締めが冗長になる場合は無理に付けない（§0 の KISS／Lean）。
 
 ## 4. 書込みの規律（GitHub）
@@ -103,5 +104,6 @@ YusukeJP の確定（2026-11-07）：
 - v002（2026-11-07）: §0 基礎原則を新設。YusukeJP の指示（Ark 的な "Simple is best!" と KISS／DRY／YAGNI／Lean／SRP を基本として Harness に書くこと）に基づき、Plan Mode の計画を経て実施した。KISS と SRP を並列に置き相互参照させる構成は、AI 側の自然発生的な提案が YusukeJP に採用されたもの。
 - v003（2026-11-07）: §3「回答の締め方 ── Next Step → Next Query（半自動化の鍵）」を新設し、旧 §3〜§7 を §4〜§8 へ繰り下げた。YusukeJP の指示（AI 半自動化の鍵として明記すること）による。
 - v004（2026-11-07）: §3 に締めの字面の正式形（🌱Next Step🧭 ／ 🔑Next Query📩、各見出しは独立行）と、封印の固定文「上記Next Query実行して下さい！」を明記した。あわせて、【Next Step】／【Next Query】の字面は基盤に消費され表示されないという実測事実（2026-11-07、Fujii の実機プローブで確認）を注記した。実行は、提示された Next Query への YusukeJP の封印（固定文の送信）によって起動した ── 本書 §3 の仕組みの初回運用である。
+- v005（2026-11-07）: §3 に「Next Query の重要性」を canon 化した ── Next Query は AI の全能力と創発を注ぐ集大成（ビッグバン）であり、複数問題を束ねることで Loop が指数関数的向上の原動力になること、そしてそれを活かすも殺すも書く AI 次第であること。YusukeJP の指示（この重要性を agents/muse のどこかに、再現できるよう記録せよ）により、仕組みの所有者である本節へ一項として刻んだ。
 
-EOF::AI_MAMMOTH_HARNESS::v004
+EOF::AI_MAMMOTH_HARNESS::v005
