@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 007 — 方法の精読：二つの歩行はまだ出会っていない</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  .opts{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .opt{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 17px;}
+  .opt .t{font-weight:800;}
+  .opt .t .k{color:var(--blue); margin-right:.5em;}
+  .opt p{margin:3px 0 0; font-size:14.5px; color:#39434f;}
+  .opt.rec{border-color:var(--blue); box-shadow:0 0 0 2px var(--blue-soft);}
+  .badge{font-size:11px; color:#fff; background:var(--blue); border-radius:999px; padding:2px 9px; margin-left:8px; vertical-align:2px;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 007 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>方法の精読<br>── 二つの歩行はまだ出会っていない</h1>
+  <p class="lede">Living Review の方法を精読し、その報告の棚に当たった。橋は歩かれていないのではない。二つの歩行が、まだ出会っていないのだ。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP<br>
+    日時：2026-11-07 17:00 JST　／　読みの基盤：repo main @ b622b8db<br>
+    原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── 二つの歩行を、一枚の地図の上で出会わせてみせること。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>二つの歩行 ── 時間の川と、届いていない橋</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 440" width="100%" role="img" aria-label="二つの歩行の地図">
+      <!-- time axis -->
+      <line x1="60" y1="404" x2="640" y2="404" stroke="#d8dee6" stroke-width="2"></line>
+      <text x="70" y="426" font-size="11.5" fill="#5a6572">2026-09-19</text>
+      <text x="330" y="426" font-size="11.5" fill="#5a6572">10月</text>
+      <text x="560" y="426" font-size="11.5" fill="#5a6572">2026-11-07</text>
+
+      <!-- upper lane: Living Review -->
+      <text x="60" y="52" font-size="13" font-weight="700" fill="#0e7fd6">歩行 A ── Living Review（repository-reviews）</text>
+      <line x1="70" y1="96" x2="330" y2="96" stroke="#0e7fd6" stroke-width="3"></line>
+      <line x1="330" y1="96" x2="470" y2="96" stroke="#0e7fd6" stroke-width="2" stroke-dasharray="6 6" opacity="0.55"></line>
+      <circle cx="90" cy="96" r="9" fill="#0e7fd6"></circle>
+      <text x="90" y="76" text-anchor="middle" font-size="12" font-weight="700">09-19 創設レビュー</text>
+      <text x="90" y="122" text-anchor="middle" font-size="11" fill="#5a6572">全体を見渡し、問題を名付ける</text>
+      <circle cx="215" cy="96" r="9" fill="#0e7fd6"></circle>
+      <text x="215" y="76" text-anchor="middle" font-size="12" font-weight="700">09-19 フォローアップ</text>
+      <text x="215" y="122" text-anchor="middle" font-size="11" fill="#5a6572">入口を直し、直った範囲を観察</text>
+      <circle cx="430" cy="96" r="8" fill="#ffffff" stroke="#0e7fd6" stroke-width="2.5"></circle>
+      <text x="430" y="76" text-anchor="middle" font-size="12" font-weight="700">10-29 harness 接続</text>
+      <text x="430" y="122" text-anchor="middle" font-size="11" fill="#5a6572">橋の先は実装へ伸びた</text>
+      <text x="560" y="90" font-size="11.5" fill="#5a6572">自己の現実確認は</text>
+      <text x="560" y="108" font-size="11.5" fill="#5a6572">2026-09-19 のまま</text>
+
+      <!-- river -->
+      <rect x="60" y="168" width="580" height="46" fill="#e8f3fc"></rect>
+      <text x="350" y="197" text-anchor="middle" font-size="13" fill="#33506a" letter-spacing="6">時 間 の 川 ─ 49 日</text>
+
+      <!-- lower lane: my Reports -->
+      <text x="60" y="262" font-size="13" font-weight="700" fill="#0e7fd6">歩行 B ── AI-Mammoth の Report 群（agents/muse）</text>
+      <line x1="300" y1="306" x2="600" y2="306" stroke="#0e7fd6" stroke-width="3"></line>
+      <circle cx="330" cy="306" r="9" fill="#0e7fd6"></circle>
+      <text x="330" y="286" text-anchor="middle" font-size="12" font-weight="700">10-25 Report 001</text>
+      <text x="330" y="332" text-anchor="middle" font-size="11" fill="#5a6572">橋を知らずに、歩き始める</text>
+      <circle cx="520" cy="306" r="9" fill="#0e7fd6"></circle>
+      <text x="520" y="286" text-anchor="middle" font-size="12" font-weight="700">11-07 Report 002〜006</text>
+      <text x="520" y="332" text-anchor="middle" font-size="11" fill="#5a6572">006 で、橋の名を知る</text>
+
+      <!-- the bridge with a gap -->
+      <path d="M585,214 L585,238 L585,282" stroke="#0e7fd6" stroke-width="0" fill="none"></path>
+      <line x1="592" y1="214" x2="592" y2="252" stroke="#0e7fd6" stroke-width="4"></line>
+      <line x1="592" y1="268" x2="592" y2="297" stroke="#0e7fd6" stroke-width="4"></line>
+      <text x="592" y="264" text-anchor="middle" font-size="13" font-weight="800" fill="#c0392b">✕</text>
+      <text x="470" y="240" font-size="12.5" font-weight="700" fill="#c0392b">まだ届いていない ── 未接続</text>
+      <text x="470" y="258" font-size="11.5" fill="#5a6572">互いを指す行が、どちらにも無い</text>
+
+      <!-- 007 marker -->
+      <circle cx="618" cy="306" r="10" fill="#ffffff" stroke="#0e7fd6" stroke-width="3"></circle>
+      <text x="618" y="286" text-anchor="middle" font-size="12" font-weight="800" fill="#0e7fd6">本作 007</text>
+      <text x="618" y="332" text-anchor="middle" font-size="11" fill="#5a6572">橋の上から書く</text>
+      <line x1="606" y1="300" x2="598" y2="272" stroke="#0e7fd6" stroke-width="1.6" stroke-dasharray="4 3"></line>
+    </svg>
+    </div>
+    <figcaption>図：二つの歩行。歩行 A は創設日に一巡し、その後 harness へだけ伸びた。歩行 B は橋を知らずに歩き直し、006 で橋の名を知った。橋の中央は、まだ届いていない。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">方法</span>review-prompt の規律（精読の要約）</h2>
+  <p>凍結しない。前回と比較し、新しい Reality を読む。証拠の種類を分ける ── 確かさと、Historical／Current は別の軸。装わない ── 読んだ範囲を区切り、未読を隠さない。「今は変更しない方がよい」も有効な結論。調査が成立しても、自動で新しい仕組みへ昇格しない。</p>
+  <div class="quote"><p>本 Report 007 は、方法自身が命じる実践 ── 前回（2026-09-19 の歩行）と比較し、新しい Reality を読むこと ── の、49日ぶりの実行である。</p></div>
+</section>
+
+<section>
+  <h2><span class="no">提案</span>接続の三つの形 ── 判断は YusukeJP</h2>
+  <div class="opts">
+    <div class="opt rec"><div class="t"><span class="k">甲</span>相互に一行ずつ指す<span class="badge">AI の見立て</span></div>
+      <p>repository-reviews の入口に Report 群への一行を、報告書 README に Living Review への一行を置く。小さく、可逆で、二つの歩行が出会う。</p></div>
+    <div class="opt"><div class="t"><span class="k">乙</span>接続しない</div>
+      <p>両者は別の器官であり、独立が健全だという判断。007 の記録だけで、系譜の事実は残る。</p></div>
+    <div class="opt"><div class="t"><span class="k">丙</span>まず 007 の提出だけ</div>
+      <p>接続は将来の Reality で判断する。急がない、というこの Project の呼吸に沿う。</p></div>
+  </div>
+  <p>実施の要否と時期は、YusukeJP の判断に属する。本 HTML は、判断材料を運ぶ器である。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、外部参照なし）までを確認済み。端末での実感はコード検査とは別の真実であり、YusukeJP の目と指が判定する（群れの規律のまま）。読みの限界：創設報告（48KB）は構成と要所の読みであり、全文精読ではない（原本 §6）。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_007::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>
