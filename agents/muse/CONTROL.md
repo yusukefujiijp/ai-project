@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／control-center）"
-version: "v006"
+version: "v007"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v006)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v007)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v006"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v007"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -43,8 +43,8 @@ flowchart TD
 | レーン | 部屋 | 家（原本の場所） | 現在地 |
 |---|---|---|---|
 | 絶滅種×AI（復活の群れ） | サイドチャット「絶滅種×AI」（2026-11-05 開設） | [artifacts/herd-cards/](artifacts/herd-cards/) ── 憲章は [LANE.md](artifacts/herd-cards/LANE.md) | デッキ v022（LP実験版）repo 収蔵済み／v021 が戻り先。実機判定（v021・v022）と判断Task 群が未了 ── 詳細は同フォルダの judgment-tasks.md が所有 |
-| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 004 提出済み（Report 004 は 2026-11-07、隣人たちと周縁の領域）。Report 005 は素材準備中（急がない） |
-| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 25／lessons 18／success-cases 12（2026-11-07 追記まで）。追記は出来事のあった時に |
+| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 005 提出済み（Report 005 は 2026-11-07、仕組みの理解 ── 初の二本立て）。Report 006 は素材準備中（急がない） |
+| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 26／lessons 18／success-cases 13（2026-11-07 追記まで）。追記は出来事のあった時に |
 | 設計法則 | ── | [DESIGN-LAW.md](DESIGN-LAW.md) | v003。覚醒・状態の文法・一つの画布の canon 化は判断Task 10 |
 
 repo の範囲を超える専門部門の部屋は、ここには登録しない（public-safe の原則は README §2 の通り）。
@@ -67,5 +67,6 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v004（2026-11-07）: §3 の地図を更新 ── 三本柱の件数を 24／18／10 に、レポート行を Report 002 提出済みに合わせた。なお v003（件数を 23／16／9 とする案）は承認カードで YusukeJP に decline され収蔵されなかったため、本 v004 が v002 の正統な後継である。
 - v005（2026-11-07）: §3 の地図を更新 ── 三本柱の件数を 24／18／11 に、レポート行を Report 003 提出済みに合わせた。
 - v006（2026-11-07）: §3 の地図を更新 ── 三本柱の件数を 25／18／12 に、レポート行を Report 004 提出済みに合わせた。
+- v007（2026-11-07）: §3 の地図を更新 ── 三本柱の件数を 26／18／13 に、レポート行を Report 005 提出済み（二本立て初号）に合わせた。
 
-EOF::AI_MAMMOTH_CONTROL::v006
+EOF::AI_MAMMOTH_CONTROL::v007

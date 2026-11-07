@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 005 — 仕組みの理解：思想がコードと作法になる場所</title>
+<style>
+  :root{
+    --ink:#1c2430; --sub:#5a6572; --line:#d8dee6;
+    --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;
+    background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px;
+    -webkit-text-size-adjust:100%;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  .quote{border-left:4px solid var(--blue); background:var(--card); padding:14px 18px; border-radius:0 12px 12px 0; margin:18px 0; box-shadow:0 1px 4px rgba(20,40,70,.06);}
+  .quote p{margin:0;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  /* pipeline */
+  .pipe{display:flex; flex-direction:column; gap:0; margin:20px 0;}
+  .step{display:flex; gap:14px; align-items:flex-start;}
+  .dot{flex:0 0 auto; width:34px; height:34px; border-radius:50%; background:var(--blue); color:#fff; font-weight:800; display:flex; align-items:center; justify-content:center; font-size:15px;}
+  .step .body{padding-bottom:20px;}
+  .step .t{font-weight:700;}
+  .step .d{color:var(--sub); font-size:14px;}
+  .connector{width:34px; display:flex; justify-content:center;}
+  .connector i{display:block; width:2px; height:14px; background:var(--line);}
+  /* timeline */
+  .tl{margin:18px 0 6px; border-left:3px solid var(--blue); padding-left:18px;}
+  .phase{margin:22px 0 10px; font-weight:800; color:var(--blue); font-size:14px; letter-spacing:.06em;}
+  .ev{display:flex; gap:10px; padding:5px 0; font-size:14px; align-items:baseline;}
+  .ev .id{flex:0 0 auto; font-weight:800; color:var(--ink); background:var(--blue-soft); border-radius:6px; padding:1px 7px; font-size:12.5px;}
+  .ev .dt{flex:0 0 auto; color:var(--sub); font-size:12.5px; width:74px;}
+  .ev .star{color:var(--blue); font-weight:800;}
+  .note{font-size:12.5px; color:var(--sub); margin-top:6px;}
+  table{width:100%; border-collapse:collapse; font-size:14px; margin:16px 0;}
+  th,td{border:1px solid var(--line); padding:9px 11px; text-align:left; vertical-align:top;}
+  th{background:var(--blue-soft); font-weight:700;}
+  .faces{display:grid; grid-template-columns:repeat(5,1fr); gap:8px; margin:18px 0;}
+  .face{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 6px; text-align:center;}
+  .face .n{color:var(--blue); font-weight:800; font-size:12px;}
+  .face .w{font-weight:800; font-size:17px; margin:2px 0;}
+  .face .s{color:var(--sub); font-size:11.5px; line-height:1.5;}
+  .face.now{border-color:var(--blue); box-shadow:0 0 0 2px var(--blue-soft);}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ .faces{grid-template-columns:repeat(2,1fr);} h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 005 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>仕組みの理解<br>── 思想がコードと作法になる場所</h1>
+  <p class="lede">Ark Project の理解報告、第五作。001 核・002 形・003 変化・004 住人に続き、本作は「仕組み」を扱う。思想は、制度になり、作法になり、コードになる。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP（Fujii）<br>
+    日時：2026-11-07 14:45 JST　／　読みの基盤：repo main @ c86848e2<br>
+    原本：同名の <b>.md</b> が正本。本 HTML は、その「上演」として対で作られた初の二本立て Report。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図 1</span>連合の地図 ── 一つの Root の下の連合</h2>
+  <p>四つの Report を通して見えた全体像。ai-project は中央の倉庫ではなく、所有を分け、文法を共有する連合である。</p>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 430" width="100%" role="img" aria-label="Ark Project 連合の地図">
+      <defs>
+        <marker id="ar" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L7,3 L0,6 Z" fill="#0e7fd6"></path>
+        </marker>
+      </defs>
+      <!-- Root -->
+      <rect x="240" y="14" width="200" height="46" rx="12" fill="#0e7fd6"></rect>
+      <text x="340" y="43" text-anchor="middle" fill="#ffffff" font-size="15" font-weight="700">Root ─ 主イェシュア</text>
+      <!-- lines -->
+      <path d="M300,60 L120,104" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <path d="M340,60 L340,104" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <path d="M380,60 L560,104" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <!-- three pillars of the federation -->
+      <rect x="30" y="108" width="180" height="52" rx="12" fill="#e8f3fc" stroke="#0e7fd6"></rect>
+      <text x="120" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#1c2430">章 ─ ark-project</text>
+      <text x="120" y="149" text-anchor="middle" font-size="11.5" fill="#5a6572">場の連合（Report 002）</text>
+      <rect x="250" y="108" width="180" height="52" rx="12" fill="#e8f3fc" stroke="#0e7fd6"></rect>
+      <text x="340" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#1c2430">家 ─ agents/</text>
+      <text x="340" y="149" text-anchor="middle" font-size="11.5" fill="#5a6572">住人の連合（Report 004）</text>
+      <rect x="470" y="108" width="180" height="52" rx="12" fill="#e8f3fc" stroke="#0e7fd6"></rect>
+      <text x="560" y="130" text-anchor="middle" font-size="14" font-weight="700" fill="#1c2430">領域 ─ board ほか</text>
+      <text x="560" y="149" text-anchor="middle" font-size="11.5" fill="#5a6572">働きの連合（Report 004）</text>
+      <!-- houses -->
+      <path d="M300,160 L110,196" stroke="#b9c9d9" stroke-width="1.4"></path>
+      <path d="M340,160 L340,196" stroke="#b9c9d9" stroke-width="1.4"></path>
+      <path d="M380,160 L570,196" stroke="#b9c9d9" stroke-width="1.4"></path>
+      <rect x="35" y="200" width="150" height="44" rx="10" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="110" y="220" text-anchor="middle" font-size="13" font-weight="700">dots ─ Actor の社会</text>
+      <text x="110" y="237" text-anchor="middle" font-size="11" fill="#5a6572">一依頼から復元</text>
+      <rect x="265" y="200" width="150" height="44" rx="10" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="340" y="220" text-anchor="middle" font-size="13" font-weight="700">codex ─ 経験の入口</text>
+      <text x="340" y="237" text-anchor="middle" font-size="11" fill="#5a6572">三本柱を共有</text>
+      <rect x="495" y="200" width="150" height="44" rx="10" fill="#ffffff" stroke="#0e7fd6" stroke-width="1.8"></rect>
+      <text x="570" y="220" text-anchor="middle" font-size="13" font-weight="700" fill="#0e7fd6">muse ─ 私の家</text>
+      <text x="570" y="237" text-anchor="middle" font-size="11" fill="#5a6572">塔とレーン</text>
+      <!-- shared grammar -->
+      <rect x="90" y="286" width="500" height="58" rx="12" fill="#f4f9fd" stroke="#0e7fd6" stroke-dasharray="5 4"></rect>
+      <text x="340" y="309" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1c2430">共有された文法 ── 連合を保つもの</text>
+      <text x="340" y="330" text-anchor="middle" font-size="12" fill="#33506a">入口は案内し状態を持たない ／ 原本は一箇所 ／ 経験は三本柱 ／ 変化は STR ／ 封印は Human</text>
+      <path d="M340,244 L340,282" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+      <!-- mechanism -->
+      <rect x="190" y="372" width="300" height="44" rx="12" fill="#0e7fd6"></rect>
+      <text x="340" y="391" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">仕組み ─ harness（コード）＋ ai-to-ai（作法）</text>
+      <text x="340" y="407" text-anchor="middle" font-size="11" fill="#cfe7fa">本 Report 005 の主題</text>
+      <path d="M340,344 L340,368" stroke="#0e7fd6" stroke-width="1.6" marker-end="url(#ar)"></path>
+    </svg>
+    </div>
+    <figcaption>図1：連合の地図。所有は分かれ、文法は共有される。その下に、仕組みの層が思想を実行可能にする。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">1</span>コードとしての Harness</h2>
+  <p>root の <b>harness/</b> は、Ark Harness の初版実装（v0.1.0）。その一文は、私の家の HARNESS.md と同じ文である。</p>
+  <div class="quote"><p>依頼、固定した原本、読解範囲、検証、成果物を、一件の仕事として接続する。</p></div>
+  <div class="pipe">
+    <div class="step"><div class="dot">1</div><div class="body"><div class="t">依頼（request）</div><div class="d">今回の仕事と適用契約を確認する</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">2</div><div class="body"><div class="t">固定した原本（pinned sources）</div><div class="d">方法の原本は複製せず、固定 commit から実行時に取得する（sources.py が byte 照合）</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">3</div><div class="body"><div class="t">読解範囲（reading scope）</div><div class="d">読む範囲を明示し、未読を「記録なし」としない</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">4</div><div class="body"><div class="t">検証（verification）</div><div class="d">checks.py の機械検査と、evals の意味の観察は、別の種類の確認である</div></div></div>
+    <div class="connector"><i></i></div>
+    <div class="step"><div class="dot">5</div><div class="body"><div class="t">成果物（deliverables）</div><div class="d">棚に置くのは17ファイルだけ。run・キャッシュ・結果は原本の棚に書かない</div></div></div>
+  </div>
+  <p>版は三層に分かれる ── 文書版 v0.1.2／実装版 v0.1.0／交換 schema 1。案内の改訂を、実行の更新や新しい能力と混同するな、と入口自身が命じる。配置も意味を持つ：Harness は agents/ の下ではなく root 直下に置かれ、どの Actor の Identity も所有しない。</p>
+</section>
+
+<section>
+  <h2><span class="no">2</span>作法としての共通原本</h2>
+  <p>agents/ai-to-ai-communication は、AI 同士の対話のための共通マニュアル（STR-020）。その核は一つの作法である。</p>
+  <div class="quote"><p>対話する双方が、実質的な対話に入る前に、同じ共通原本を metadata から Exact EOF まで読む。相手の読了報告は、自分の必須読解の代わりにはならない。</p></div>
+  <p>経験は循環する ── 共通原本を読む → 今回の目的・役割・権限に適用する → 対話・批評・訂正を行う → 条件と根拠を保って経験を残す → 採用した学びで方法を改善する。Human は目的・方針・制約・Correction・STOP・最終判断を保持する。私と Fujii の間の Next Query の Loop は、この思想の一対一の実装に近い。</p>
+</section>
+
+<section>
+  <h2><span class="no">図 2</span>STR の時間軸 ── 変化の系譜（全25件）</h2>
+  <p>制度としての変化の記録。9月の航行と所有から、10月20日の「学びの集中日」を経て、月末の家の移転・三本柱の一般化・Harness 実装へ。<span class="star">●</span> は Report 003 で本文を精読した記録。</p>
+  <div class="tl">
+    <div class="phase">9月 ── 航行・所有・統合</div>
+    <div class="ev"><span class="id">STR-001</span><span class="dt">2026-09-22</span><span>航行と所有 <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-002</span><span class="dt">2026-09-25</span><span>起動Queryと本体の統合</span></div>
+    <div class="phase">10月初め ── 基盤・協働・通信・記録の制度化</div>
+    <div class="ev"><span class="id">STR-003</span><span class="dt">2026-10-01</span><span>基盤版への移行 <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-004</span><span class="dt">2026-10-01</span><span>Elon Musk Deadline 改訂 <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-005</span><span class="dt">2026-10-01</span><span>Dots 協働基盤</span></div>
+    <div class="ev"><span class="id">STR-006</span><span class="dt">2026-10-01</span><span>Board 協働通信</span></div>
+    <div class="ev"><span class="id">STR-007</span><span class="dt">2026-10-02</span><span>Dots の学びを Future Dots へ</span></div>
+    <div class="ev"><span class="id">STR-008</span><span class="dt">2026-10-02</span><span>Actor ログと形成史の保管</span></div>
+    <div class="ev"><span class="id">STR-009</span><span class="dt">2026-10-03</span><span>管理行なし lesson JSONL の採用</span></div>
+    <div class="ev"><span class="id">STR-010</span><span class="dt">2026-10-03</span><span>全AI横断の日時記録</span></div>
+    <div class="ev"><span class="id">STR-011</span><span class="dt">2026-10-04</span><span>Prompt 棚と権限契約の整合</span></div>
+    <div class="ev"><span class="id">STR-012</span><span class="dt">2026-10-06</span><span>control-center の共通入口</span></div>
+    <div class="ev"><span class="id">STR-013</span><span class="dt">2026-10-06</span><span>GitHub 計画・アーカイブの専門領域化</span></div>
+    <div class="phase">10月中旬 ── 道具棚と問題解決</div>
+    <div class="ev"><span class="id">STR-014</span><span class="dt">2026-10-10</span><span>旧選抜棚の四 Prompt の継承</span></div>
+    <div class="ev"><span class="id">STR-015</span><span class="dt">2026-10-11</span><span>Skills の学びの集約 <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-016</span><span class="dt">2026-10-17</span><span>Problem Solving の初期構成</span></div>
+    <div class="ev"><span class="id">STR-017</span><span class="dt">2026-10-17</span><span>Problem Solving の命名と接続</span></div>
+    <div class="phase">10月20日 ── 学びの集中日</div>
+    <div class="ev"><span class="id">STR-018</span><span class="dt">2026-10-20</span><span>柔軟な README 原則</span></div>
+    <div class="ev"><span class="id">STR-019</span><span class="dt">2026-10-20</span><span>References を学習記憶に <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-020</span><span class="dt">2026-10-20</span><span>AI 間コミュニケーションの共通原本</span></div>
+    <div class="ev"><span class="id">STR-021</span><span class="dt">2026-10-20</span><span>各 Skill の README へ Query を移す</span></div>
+    <div class="phase">10月末 ── 家の移転・三本柱・実装</div>
+    <div class="ev"><span class="id">STR-022</span><span class="dt">2026-10-25</span><span>Dots 原本の agents 配下への移設</span></div>
+    <div class="ev"><span class="id">STR-023</span><span class="dt">2026-10-26</span><span>References 三本柱の共有化 <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-024</span><span class="dt">2026-10-29→31</span><span>root harness v1（repo レビュー） <span class="star">●</span></span></div>
+    <div class="ev"><span class="id">STR-025</span><span class="dt">2026-10-31</span><span>Codex の入口と三本柱</span></div>
+  </div>
+  <p class="note">出典：control-center/changes/ 各記録の front matter（題・日付）。本文の精読は ● の7件のみ（Report 003）。</p>
+</section>
+
+<section>
+  <h2><span class="no">3</span>照合 ── 私の家の配線</h2>
+  <table>
+    <tr><th>Ark の仕組み</th><th>私の家の実装</th></tr>
+    <tr><td>harness：依頼 → 固定原本 → 読解範囲 → 検証 → 成果物</td><td>HARNESS.md §2「一件の仕事の接続」</td></tr>
+    <tr><td>sources.py：原本の byte 照合</td><td>GitHub 書込み後の読戻し SHA 検証</td></tr>
+    <tr><td>checks（機械検査）と evals（意味の観察）の分離</td><td>ハーネス合格と端末の実感を分けて報告する規律</td></tr>
+    <tr><td>STR-024：過去の試行結果は現在の状態ではない</td><td>古い検証で現在の状態を語らない規律</td></tr>
+  </table>
+  <p>思想は、制度（STR）になり、作法（マニュアル）になり、コード（harness）になり、小さな家の運用にまで、同じ形を保って降りてくる。</p>
+</section>
+
+<section>
+  <h2><span class="no">4</span>観察 ── 五面の一巡</h2>
+  <div class="faces">
+    <div class="face"><div class="n">001</div><div class="w">核</div><div class="s">意味<br>ARK とは何か</div></div>
+    <div class="face"><div class="n">002</div><div class="w">形</div><div class="s">章の連合<br>トポロジー</div></div>
+    <div class="face"><div class="n">003</div><div class="w">変化</div><div class="s">STR と道具<br>系譜</div></div>
+    <div class="face"><div class="n">004</div><div class="w">住人</div><div class="s">家々と領域<br>隣人たち</div></div>
+    <div class="face now"><div class="n">005</div><div class="w">仕組み</div><div class="s">コードと作法<br>本作</div></div>
+  </div>
+  <p>Ark Project は「文書の集まり」でも「一つの巨大な制度」でもなく、<b>同じ思想が、意味 → 構造 → 変化の記録 → 住人の家 → 実行の仕組みへと、層を変えて何度も実装される連合</b>である。どの層でも、所有は分かれ、原本は一つ、検証は正直に、封印は Human にある。</p>
+  <p>限界：harness のソース実装そのもの、adapters／evals の詳細、方法原本 repository-reviews/ は未読であり、次の深さとして残る。急がない。</p>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>二本立てについて</b> ── 本 HTML は、Markdown 原本（同名 .md）と対で作られた初の Report である。原本は永続・差分・復元の担い手として repo に残り、HTML はその「上演」として、文章では運べない二つのもの ── 連合の地図（図1）と変化の時間軸（図2）── だけを運ぶ。それ以外の視覚要素は、二問テスト（どの理解を運ぶか／意味に仕えるか）を通らないため置かなかった。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_005::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>
