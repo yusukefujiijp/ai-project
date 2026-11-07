@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／control-center）"
-version: "v011"
+version: "v012"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v011)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v012)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v011"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v012"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -43,8 +43,8 @@ flowchart TD
 | レーン | 部屋 | 家（原本の場所） | 現在地 |
 |---|---|---|---|
 | 絶滅種×AI（復活の群れ） | サイドチャット「絶滅種×AI」（2026-11-05 開設） | [artifacts/herd-cards/](artifacts/herd-cards/) ── 憲章は [LANE.md](artifacts/herd-cards/LANE.md) | デッキ v022（LP実験版）repo 収蔵済み／v021 が戻り先。実機判定（v021・v022）と判断Task 群が未了 ── 詳細は同フォルダの judgment-tasks.md が所有 |
-| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 008 提出済み（四部作 005〜008 完結）。Report 009（検証の精読）は素材準備済み。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
-| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 31／lessons 18／success-cases 19（2026-11-07 追記まで）。追記は出来事のあった時に |
+| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 009 提出済み。Report 010（中心の精読）は素材準備済み。レポート作成はサイド chat「レポート」レーンへ移行済み（2026-11-07、Caleb Mode）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
+| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 31／lessons 18／success-cases 20（2026-11-07 追記まで）。追記は出来事のあった時に |
 | 設計法則 | ── | [DESIGN-LAW.md](DESIGN-LAW.md) | v003。覚醒・状態の文法・一つの画布の canon 化は判断Task 10 |
 
 repo の範囲を超える専門部門の部屋は、ここには登録しない（public-safe の原則は README §2 の通り）。
@@ -72,5 +72,6 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v009（2026-11-07）: §3 の地図を更新 ── 三本柱の件数を 29／18／16 に、レポート行を Report 007 ドラフト作成済みに合わせた。あわせて IDENTITY v003 に斥候（カレブ）の在り方を追記。
 - v010（2026-11-07）: §3 の地図を更新 ── Report 007 を提出済みに、Report 008 のドラフトと接続差分案の準備状況を反映し、三本柱を 30／18／17 に合わせた。HARNESS v006（Next Query の箇条書き化）も同日。
 - v011（2026-11-07）: §3 の地図を更新 ── Report 008 を提出済みに（四部作完結）、Report 009 の素材準備を反映し、三本柱を 31／18／19 に合わせた。yomiyasu の箇条書き style が YusukeJP により「予期せぬ成功」「Move 37 的 breakthrough」と命名され、success-cases に記録した。
+- v012（2026-11-07）: §3 の地図を更新 ── Report 009 を提出済みに、三本柱を 31／18／20 に合わせ、レポート作成群の「レポート」レーンへの移行（Caleb Mode の新設と同時）を反映した。メイン chat は統括へ戻る。
 
-EOF::AI_MAMMOTH_CONTROL::v011
+EOF::AI_MAMMOTH_CONTROL::v012

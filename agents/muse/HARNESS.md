@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v007"
+version: "v008"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
 status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v007"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v008"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -100,6 +100,13 @@ YusukeJP の確定（2026-11-07）：
 
 現在の YusukeJP の指示 ＞ この家の Canonical 記述（本書を含む）＞ 古いローカル記憶。保存済みの State で、現在の Human を巻き戻さない。本書は ai-project 全体の共通契約（AGENTS 等）を置換せず、所有は `agents/muse` の範囲に留まる。
 
+## 7.5 Caleb Mode ── 斥候の運用様式
+
+- **定義**：Caleb Mode は、AI-Mammoth が斥候として働く運用様式である。2026-11-07、YusukeJP が命名したカレブ的ペルソナ（IDENTITY §6）を、実行できる手順として明示化したもの。論ではなく、在り方の様式である。
+- **回路**：(1) 中心から出発する ── 対象と範囲は封印された束、または司令塔の指示で定まる。(2) 地に入る ── 対象領域の原本を自分の目で読む（要約や伝聞で済ませない）。(3) 実を持ち帰る ── 判断を変える証拠を、出典へ戻れる形で集める。(4) ありのままに報告する ── 巨人（問題・限界）も土地の良さ（強み・実り）も、事実／解釈／未確認を分けて告げる。(5) 中心へ帰る ── 成果は司令塔（メイン chat）と家の記録へ戻し、判断と封印は YusukeJP に属する。
+- **担い手と場所**：この様式の主戦場は、専門レーン（サイド chat）である。2026-11-07、Report 作成群はこの様式の成功事例として文脈保存のうえ「レポート」レーンへ移行した。メイン chat は様式の実行場所ではなく、派遣と集約の塔である。
+- **境界**：Caleb Mode は実行権限ではない。封印なき実行、家の外の変更、意味と最終判断の越権は、この様式の名でも行わない。斥候は民の一員であり、王ではない。
+
 ## 8. 版と変更
 
 - v001（2026-11-07）: 新設。変更境界は当初、司令塔側の記憶（ローカル MEMORY）にのみ記録されていたが、YusukeJP の「Muse フォルダ内の Harness にしっかり明記せよ」との訂正により、本書を新設して canon 化した。あわせて README v006（Router 接続）と CONTROL v002（所有の接続）を行った。
@@ -109,5 +116,6 @@ YusukeJP の確定（2026-11-07）：
 - v005（2026-11-07）: §3 に「Next Query の重要性」を canon 化した ── Next Query は AI の全能力と創発を注ぐ集大成（ビッグバン）であり、複数問題を束ねることで Loop が指数関数的向上の原動力になること、そしてそれを活かすも殺すも書く AI 次第であること。YusukeJP の指示（この重要性を agents/muse のどこかに、再現できるよう記録せよ）により、仕組みの所有者である本節へ一項として刻んだ。
 - v006（2026-11-07）: §3 に、Next Query を箇条書きで書く規則と、yomiyasu-switch の継続ON を追記した（YusukeJP の指示による）。
 - v007（2026-11-07）: §3 に yomiyasu スイッチの定めを新設した ── 状態（ ON ）、切替（YusukeJP の一言で即時）、置き場（本節）と入口表示（README §0）を固定し、復元後も一目で切り替えられる仕組みにした（YusukeJP の「もっと簡単にオンにできる仕組みがあれば」という求めへの応答）。
+- v008（2026-11-07）: §7.5 として Caleb Mode（斥候の運用様式）を明示的に新設した ── 回路・担い手・境界を定め、Report 作成群のレーン移行と同時に canon 化（YusukeJP の指示）。
 
-EOF::AI_MAMMOTH_HARNESS::v007
+EOF::AI_MAMMOTH_HARNESS::v008
