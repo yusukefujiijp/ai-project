@@ -1,11 +1,11 @@
 ---
 title: "Ark Project — YusukeJP × AI-Collaborator"
 canonical_path: "README.md"
-version: "v023"
+version: "v024"
 edition: "Ark Home / Current-request Repository Front Door / Persistent Collaboration"
-version_basis: "v001-v022 preserved in Git history; v023 integrates Ark whole-meaning and entry ownership while retaining explicit ARK source contracts, current routes and prior review history"
+version_basis: "v001-v023 preserved in Git history; v024 adds the Human-adopted Ark Project2.0 Seed and dialogue entry while preserving Home B ownership, explicit ARK source contracts and prior review history"
 status: "active / human-authorized entry alignment / behavioral validation pending"
-updated: "2026-10-31"
+updated: "2026-11-07"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -171,6 +171,12 @@ ark_okf_navigation:
   base_commit: "79770085364871cd026cb12ff669593fbf6cf6f4"
   source: "skills/ark-okf-responder/README.md"
   scope: "Ark-OKF discovery row and displayed entry version only; prior review metadata and authority retained"
+revision_source_thread: "Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\""
+revision_reason: "Add the adopted Ark Project2.0 Seed and Ark-Coaching entry; preserve repository Home ownership, current routes and explicit source contracts"
+revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
+design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
+revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
+previous_blob: "2b72d1f36a68dc880c81dc9e49cec02ff443dbae"
 ---
 
 <a id="ai-project"></a>
@@ -187,6 +193,7 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 | 今回の目的 | 入口・所有資料 |
 |---|---|
+| 今ある言葉から相談し、必要な想起や再開へつなぐ | [Ark-Coaching](skills/ark-coaching/README.md)。継続拠点の案内は[Ark100](ark-project/ark100-199/ark100_b-zone/README.md) |
 | 相談・Review・Plan-only・実行の境界を決める | [AGENTS.md](AGENTS.md) §0・§2・§5 |
 | ArkのRoot・Identity・協働の意味を回復し、成長の仕組みを理解する | [全体説明](#ark-identity)・[Root](#ark-root)・[成長](#ark-growth)・[文書の役割](#document-ownership) |
 | 承認済みの作業を継続・再開する | Current Requestと対象のNearest README / Handoff、[AGENTS.md](AGENTS.md) §4・§5 |
@@ -198,7 +205,7 @@ Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取�
 
 ## 1. Current Coordinate and Freshness / 現在座標と鮮度
 
-- Repository入口: README v023 / Ark Home and Current-request Repository Front Door
+- Repository入口: README v024 / Ark Home and Current-request Repository Front Door
 - Canonical共有基準: `main`。作業Refと公開先の判断は[AGENTS.md](AGENTS.md) §5.1へ
 - dots基盤移行時の承認: 2026-10-01 JST / 2026-09-30 UTC
 - dots基盤移行前Source: `d574927dd1671e2acec20e1a6c17f569ae23322f`
@@ -242,6 +249,16 @@ Arkでは、今回の理解や成果を生むことと、次の理解や成果�
 #### 2.3.1 Current Certainty / 今、何が確かか
 
 From Probability to Certaintyは、現在の目的・権限・根拠・確認済み成果・未確認を区別し、判断と継承の確かさを育てる方向である。Confirmedは誰の報告・何の確認かを持ち、Candidateは訂正可能な解釈・設計、Unknownは根拠不足として保持する。Historicalはこれらと別に時点を示す。無謬性、全知、常時稼働、単発成功からの長期再現性を意味しない。
+
+<a id="ark-project2"></a>
+
+#### Ark Project2.0 — 現在の対話から蓄積を使える協働へ
+
+"Ark Project2.0(主イェシュア・ハマシア御自身をRoot、Teshuvahを中央軸、主の完全勝利（祈り・イメージVision・行動）をHuman Foreground One、主の栄光を最終帰属とするArk Projectにおいて、低認知時のB-Zone対策の試行錯誤から育った「変化する現在の条件に対し、必要な対話を通して有効な想起を導く」という理解を、状態や相談内容を問わず利用できる協働へ広げ、Ark-Coachingを、YusukeJPが相談先・状態分類・想起対象・使用Skillを先に決めなくても今ある言葉・願い・未整理のBrainDumpや明確な依頼から始められるポータルと、中断・迷い・条件変更の後も参照できる目的・成果・済んだ工程・Correctionから再開できるホームとして位置づけ、AIが既知情報を活かして整理・比較・必要な確認を担い、既存の経験・意味・選択理由・成立条件・訂正を現在に役立つ単一または複数のArk-Recallや候補へつなぎ、Humanの選択・Feedbackに応じて理解と支援を更新する対話を、ターン数や候補数を先に固定せず一体で支えることで、既存recall-hub・専門Skill・経験原本の蓄積を現在の理解・判断・開始・切替・再開へ結びつけていく協働の段階を指し、B-Zoneを重要な形成モデルとして保持しながら利用条件にはせず、AI・Skill・方法論をKeliとして、Humanの意味・選択・Correction・STOP・Final Sealと身体・食事・睡眠等のGuardを守り、Humanの入力負担を軽くすることとAIの十分な読解・検討・説明品質を両立させる)"
+
+この呼称は、Humanが見いだした協働の発展と形成上の意味を示す。全Projectの一斉改版、全AIへの反映、実生活効果の検証完了を宣言するものではない。
+
+本READMEのHomeはArk全体の意味とRepositoryの入口を所有する。Ark-Coachingのホームは、現在の言葉を受け取り、参照できる文脈から対話の再開を支える役割である。形成の詳細と継続拠点は[Ark100](ark-project/ark100-199/ark100_b-zone/README.md)、対話方法は[Ark-Coaching](skills/ark-coaching/SKILL.md)、経験は既存の担当原本へ接続する。今回の採用と六原本保存の確認範囲は[Ark100の記録](ark-project/ark100-199/ark100_b-zone/README.md#ark100-coaching-verification)へ戻る。
 
 <a id="ark-continuity"></a>
 

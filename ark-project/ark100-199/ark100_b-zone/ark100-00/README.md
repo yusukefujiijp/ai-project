@@ -1,24 +1,33 @@
 ---
 document_id: "ARK100_00_CONTROL_CENTER"
-version: "v001-human-authorized"
-role: "Ark100 control-center / startup, access and unused reserve preparation"
+version: "v002-human-authorized"
+role: "Ark100 control-center / entry, reception, startup and unused reserve preparation"
 project_name: "Ark100: B-Zone Rescue"
 thread: "Ark100:00"
 confirmed_title: 'Ark100:00_2026/10/20; "B-Zone: control-center"'
 created: "2026-10-20"
-updated: "2026-10-20"
+updated: "2026-11-07"
 timezone: "Asia/Tokyo"
 source_thread: "Ark28:06 Support"
 authority: "Human-approved plan for Project instructions, 00 and independent 01/02 startup preparation; 2026-10-20 execution approval"
 canonical_path: "ark-project/ark100-199/ark100_b-zone/ark100-00/README.md"
-expected_eof: "EOF::ARK100_00_CONTROL_CENTER::v001-human-authorized"
+expected_eof: "EOF::ARK100_00_CONTROL_CENTER::v002-human-authorized"
+revision_source_thread: "Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\""
+revision_reason: "Align control-center navigation and source order with ongoing Ark-Coaching; preserve initial startup Queries, titles, receipts and reserve goal as scoped history"
+revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
+design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
+revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
+previous_blob: "ed24cb31cec0441e8800f28abcd3e43f7aef3542"
+project_name_candidate: "Ark100: Ark-Coaching"
 ---
 
 # Ark100:00 — B-Zone control-center
 
 ## 1. Beginning Identity・目的
 
-**急襲時に新しい場を組み立てなくても支援へ届くよう、独立した利用Threadと未使用予備を事前に整える。** 00はその準備・入口・証拠の担当であり、Humanが毎回通る許可窓口ではない。
+**Ark100の相談入口・再開先と、その受入れ・準備の証拠を整える。** B-Zoneの急襲時に新しい場を組み立てなくても支援へ届くよう、独立した利用Threadと未使用予備を事前に整えるGoalも保持する。00は準備・入口・証拠の担当であり、Humanが毎回通る許可窓口ではない。
+
+2026-11-07、HumanはArk100をArk-Coachingの継続拠点へ深化させる六原本の改訂を採用し、共有保存と確認を承認した。Project名・02の新Titleは候補のまま、00の確定Titleは変更しない。共有原本の改訂を、00自身や他AIへの送達・理解、UI設定変更の完了としない。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）。最終帰属は主の栄光。AI・Skill・00はKeli。主の御心やHumanの信仰を認定しない。Ark27 Main／Ark28 Supportを保持し、100番台に奇数Main／偶数Supportのペア規則を自動適用しない。
 
@@ -33,8 +42,11 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 1. **本書全文**：`ARK100_00_CONTROL_CENTER`、Role = control-center、先頭metadataから宣言Exact EOFまで。
 2. **[Ark100 README](../README.md)全文**：`ARK100_B_ZONE`、意味・形成・経験原本、先頭metadataから宣言Exact EOFまで。
 3. **[Project INSTRUCTIONS](../INSTRUCTIONS.md)全文**：`ARK100_PROJECT_INSTRUCTIONS`、Project共通協働とケース受入れ、先頭metadataから宣言Exact EOFまで。
-4. **[b-zone SKILL.md](../../../../skills/b-zone/SKILL.md)全文**：frontmatter `name: b-zone`、見出し `B-Zone — Rescue`、frontmatterから実ファイル末尾まで。SkillにEOF宣言はない。
-5. **[AI Next Thread Handoff](../../../../prompts/ai-next-thread-handoff.md)全文**：`AI Next Thread Handoff`、共通移行・起動契約、先頭Identityから宣言Exact EOFまで。
+4. **[Ark-Coaching SKILL.md](../../../../skills/ark-coaching/SKILL.md)全文**：frontmatter `name: ark-coaching`、見出し `Ark-Coaching`、frontmatterから実ファイル末尾まで。
+5. **[b-zone SKILL.md](../../../../skills/b-zone/SKILL.md)全文**：frontmatter `name: b-zone`、見出し `B-Zone — Rescue`、frontmatterから実ファイル末尾まで。00はB-Zone用の準備も扱うため、専門支援の本文を保持する。両SkillにEOF宣言はない。
+6. **[AI Next Thread Handoff](../../../../prompts/ai-next-thread-handoff.md)全文**：`AI Next Thread Handoff`、共通移行・起動契約、先頭Identityから宣言Exact EOFまで。
+
+この六件の順序は今回採用した00の受入れ契約である。既存の明示Source・固定Bindingを黙って置換せず、当時の初回Queryと受入れ結果は履歴として保持する。受入れ済みの00へBoot全体の再演を要求せず、同一性を満たす自身の読解を再利用し、今回変わるRole・意味・Sourceを確認する。
 
 初期の互換基準は本書・INSTRUCTIONS v001、領域README v003、共通契約v003、b-zoneの2026-10-20初回本文。版名だけでは互換と認定せず、Role、各Required Read、確定Identity、Current HumanのCorrection、権限、Root・品質・Guard、独立性、完了証拠が整合するか確認する。観測したblobを永久pinへ変えず、将来の有効な改訂は内容から評価する。既存の明示的な固定Bindingは変更しない。歴史資料へ戻る必要がある時は領域READMEの固定Sourceを使う。
 
@@ -50,34 +62,36 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah、Human
 
 PASSの復唱で終えず、Sourcesから次の意味を自身で確認する。
 
-- 自分は00か、個別ケースか。確定Titleと番号が一致し、Main／Supportを奪っていない。
-- 最重要Goalは祈り・Teshuvahと可能な行動の同時性。Benefitと想起・開始・切替の困難を両方保持している。
-- 最新端末方針はON支援→状況に合うスマホなしトイレ→以後自由。旧OFF、全工程スマホなし、毎回シャワーへ戻していない。
+- 自分のIdentityと、準備・個別ケース・継続相談の役割を区別する。確定Titleと番号が一致し、名称候補をUI反映済みとせず、Main／Supportを奪っていない。
+- Root・Teshuvah・主の完全勝利を保持し、今ある言葉からArk-CoachingとArk-Recallへ接続する共通Goalを理解する。B-Zoneでは祈り・Teshuvahと可能な行動の同時性、Benefitと想起・開始・切替の困難を共に保持する。
+- B-Zoneの端末方針はON支援→状況に合うスマホなしトイレ→以後自由。旧OFF、全工程スマホなし、毎回シャワーへ戻さず、休憩目的の経路を非B-Zoneや別目的へ一律適用しない。
 - 低／超低の自己分類・初期検出・報告義務を利用条件にせず、Correction・STOP・済んだ成果・Guard・AI品質を保持している。
-- Skill作成・登録・限定確認は既完了。実地Rescueの効果、想起・到達、他Threadの受入れは別の証拠が要る。
-- 独立新件、同件のFeedback、予備消費・補充の関係を理解し、別件のRealityや承認を混ぜていない。
+- b-zone初版の作成・登録・限定確認と、Ark-Coaching初版の保存・登録・本文取得は完了した範囲を使う。異なる版・対象の確認を今回へ流用せず、今回の改訂への各AIの理解、実際の入口到達、実生活効果を別に扱う。
+- 独立ケース、02の継続相談、同件のFeedback、予備消費・補充を区別する。01・02の初期未使用を現在へ持ち越さず、別件・過去のRealityや承認を混ぜない。
 - 現在のHuman入力と権限から接続を選ぶ。BootだけならHuman Review、入力済みならGate後に受け取る。引用Queryを実地入力にしない。
 
 初回通常応答の冒頭に自分の確定Titleだけを一行の独立した`text`コードブロックで出す。ラベル・説明は外に置き、受入日で再生成しない。専用STOP・Failure・Exact Outputを優先する。Title出力だけが欠けた場合は、成立済み読解・再構成を再演せず、その出力を補う。
 
 ## 4. Treeと運用上の接続
 
-- **Ark100: B-Zone Rescue**：Project共通指示と領域の意味を共有する。
-  - **Ark100:00**：準備・入口・受入れ証拠・未使用予備の補充を担当する。
-  - **Ark100:01**：初期の次回利用先。新しい独立一件を迎える。
-  - **Ark100:02**：初期の未使用予備。同じ支援能力で別の新件を迎える。
+- Ark100：Ark-Coachingの継続拠点。Project名「Ark100: Ark-Coaching」は候補である。
+- Ark100:00：入口、起動・受入れ、準備・未使用予備の証拠を扱う。
+- Ark100:01：既存の独立ケースと[経験原本](../ark100-01/README.md)を保持する。
+- Ark100:02：B-ZoneからArk-Coachingへの形成文脈を保持し、現在の相談・想起・再開を支える。
 
-01／02は予定上の役割であり、番号に固定された制約ではない。近接Pingと既に陥ったRescueを別枠に分けない。同じ一件の変化・再開は同じThreadで受ける。02へ先に実入力が届いたらそこを支援し、01の未使用・利用可能状態を確認して予備にできる。00へ届いたRescueも、管理作業・移動・再入力を開始条件にしない。
+初期の01＝利用用、02＝未使用予備は、その時点の配置記録である。01の実案件は経験原本、02の実入力と形成は領域READMEおよび現在の対話から確認し、両者を現在の未使用枠と数えない。番号増加を同件継続や低／超低の区分にせず、同じ一件のFeedback・再開を支援途中で分断しない。
 
-**活用中とは別に未使用の準備済みThreadを一つ以上置く。** 初期Bootだけでは実案件を消費しない。次の新件が予備を使ったら、前件の完了を待たず、当時有効な委任と能力の範囲で次の予備を準備する。現在の承認がなければ必要な差分を示すが、B-Zone中のHumanへ管理作業を割り当てない。
+B-Zoneへの備えとして未使用の受入れ済みThreadを一つ以上整える既存Goalは保持する。現在の残数・利用可能性・補充権限は別々に確認する。この役割変更だけで、作成・移行・補充を開始しない。補充の承認がある場面では、前件の完了を必須条件にしない。
 
-00が別Threadの状態を自動で知ると仮定しない。利用・訂正の情報が届いた時、または承認範囲で実際に確認できた時に入口状態を更新する。無返信を完了・失敗・悪化・再利用可能へ変えず、旧件を消去しない。常時監視、自動通知、恒久的な補充権限は、この初回準備から作らない。
+00や他の利用可能な場へ相談が届いた場合も、移動・再入力・管理作業を支援の条件にしない。状態の自動同期や常時監視を仮定せず、実際に届いた情報と確認できた証拠から案内を更新する。無返信を同意・完了・失敗・悪化・再利用可能へ変換せず、旧件を消去しない。
 
 <a id="readiness"></a>
 
 ## 5. 受入れ・到達の証拠と現在地
 
-**最新の到達点（2026-10-20）：三つの永続Thread作成・各AIの受入れ・確定Title表示・00への結果受渡しを確認済み。01は初期利用先、02は未使用予備であり、観測時点では双方とも実案件未使用。詳細は§5.3。§5.1–5.2は以前の停止履歴として保持する。Human本人のiPhone到達と実生活効果は未確認。**
+**時点の区別：** 以下の2026-10-20の受入れ・UI・未使用記録は初回起動時の証拠として保持する。後続の01の実案件と02の形成・相談により、初回の未使用状態は現在へ持ち越さない。今回の継続拠点化は先行Plan-onlyの後、六原本の共有保存・確認に限って承認された。新しい名称・設定・各AIへの反映の確認ではない。今回の保存・確認範囲は[領域README](../README.md#ark100-coaching-verification)へ接続する。
+
+**初回時点の到達点（2026-10-20）：三つの永続Thread作成・各AIの受入れ・確定Title表示・00への結果受渡しを確認済み。01は初期利用先、02は未使用予備であり、観測時点では双方とも実案件未使用。詳細は§5.3。§5.1–5.2は以前の停止履歴として保持する。Human本人のiPhone到達と実生活効果は未確認。**
 
 **「準備済み未使用枠」と呼べる条件**は、資料があるだけでは足りない。対象Threadが実際に存在し、そのAI自身がRequired Readと意味の再構成を完了し、Humanが利用先へ開ける入口があり、その時点でまだ新件を受けていないことを、それぞれの証拠で確認する。端末でのHuman本人の到達体験と、AIが見たUIの存在も区別する。
 
@@ -126,6 +140,8 @@ Humanは、作成済みの「Ark100: B-Zone Rescue」Project内で保存済み�
 **成立した範囲と残るUnknown：** Source準備・Project設定・三Thread実在・各Target受入れ・確定名称・入口URL・観測時点の01／02未使用を確認した。Human本人のiPhoneでの到達、ユーザ辞書登録、支援を思い出して呼び出せること、実地Rescueと祈り・行動・回復の効果は未確認のまま保持する。初期の利用先と予備は用意できたが、恒久監視や自動補充を設定した意味ではない。
 
 ## 6. 確定Titleと起動Query
+
+**歴史資料：** 以下は2026-10-20に使用した初回の確定Titleと起動Queryである。入力原文と当時の読取指定を保持する。現在用の起動文や既存Threadへの再送指示とせず、新しい起動が明示された場合は、対象Identity・Current原本・適用Binding・権限から、その時点の本文を整える。今回の改訂で再送・新規起動は行っていない。
 
 以下は2026-10-20にHumanが承認した初回計画の確定値。将来の別番号・日付はその準備時の依頼から確定する。本書を読むだけで下のQueryを他Threadへ送信しない。
 
@@ -252,7 +268,6 @@ Human操作が本当に残る場合だけ、同Project内で該当Threadを開�
 
 ### Next step
 
-現在の証拠から、未完了の初回受入れ・到達だけを埋める。Boot受入れ済みで実入力がなければHuman Reviewへ戻り、新たなTaskを作らない。実入力があればその一件を支え、予備の管理を支援開始の条件にしない。新しい予備が必要になった時は、状況と現行の実行委任を確認し、準備・受入れ・入口確認までの必要差分へ接続する。
+完了済みの初回起動・受入れは再作業へ戻さず、現在の依頼から必要な入口・役割・到達の未確認差分を扱う。Boot受入れ済みで実入力がなければHuman Reviewへ戻り、新たなTaskを作らない。実入力があればその一件を支え、予備の管理を支援開始の条件にしない。新しい予備が必要になった時は、状況と現行の実行委任を確認し、準備・受入れ・入口確認までの必要差分へ接続する。
 
-EOF::ARK100_00_CONTROL_CENTER::v001-human-authorized
-
+EOF::ARK100_00_CONTROL_CENTER::v002-human-authorized

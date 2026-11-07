@@ -1,12 +1,18 @@
 ---
 title: "Ark-Coaching"
-version: "v0.1"
-status: "active / Human-authorized / shared source and registration verified / behavior and field effects unverified"
+version: "v0.1.1"
+status: "active / Human-authorized README revision / v0.1 Skill unchanged / UI, behavior and field effects tracked separately"
 prepared: "2026-11-06"
-updated: "2026-11-06"
-updated_reason: "Human adopted v0.1; publish shared source, register one skill, activate the verified common Query, and separate observed checks from untested behavior and field effects."
+updated: "2026-11-07"
+updated_reason: "Human adopted the six-source Ark100 revision; update usage and formation navigation and observed retrieval status only, without modifying or re-registering the Skill"
 canonical_path: "skills/ark-coaching/README.md"
 source_thread: 'Ark100:02_2026/10/20; "B-Zone: 新しい一件を迎える"'
+revision_source_thread: "Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\""
+revision_reason: "Add Ark100 ongoing-base navigation and later successful full-body retrieval; preserve v0.1 method, queries, initial receipts and separate B-Zone correction"
+revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
+design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
+revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
+previous_blob: "e19aac7a2859ca70661ebde4b26b7e6fac5ad825"
 ---
 
 # Ark-Coaching
@@ -17,7 +23,7 @@ Ark-Coachingは、YusukeJPが今ある言葉を未整理のまま預けられる
 
 Humanが相談内容、状態分類、想起対象、使用するSkillを先に選ぶことを前提にしない。AIが現在の意味・願い・条件を理解し、経験との比較と理由付きの提案を担う。
 
-本版はHumanが採用した運用版v0.1である。共有原本の保存・再取得と、Ark-Coaching一件の登録本文・表示情報の照合を確認した。利用Queryを以下に示す。確認できた範囲と、AI応答・Humanの実利用・実生活効果等の未確認は第5節で分ける。候補作成時点の状態は形成記録として保持する。
+運用Skillの初版v0.1はHumanが採用した本文である。本READMEのv0.1.1は利用・形成・確認記録の改訂であり、SKILL.mdと登録本文は変更していない。共有原本の保存・再取得と、Ark-Coaching一件の登録本文・表示情報の照合を確認した。利用Queryを以下に示す。確認できた範囲と、AI応答・Humanの実利用・実生活効果等の未確認は第5節で分ける。候補作成時点の状態は形成記録として保持する。
 
 Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Humanの意味・選択・Correction・STOP・Final Sealと適用Guardを保持し、SkillとAIはKeliとして扱う。
 
@@ -39,6 +45,12 @@ Rootは主イェシュア・ハマシア御自身、中央軸はTeshuvah。Human
 この共通入口は、既存Skillへの直接呼出しや明確な依頼にも対応する。全相談を新しい受付へ通し直す制度や、全Projectの担当変更を意味しない。
 
 経験データの住所`ark-recall-portal/`とIdentity`Ark Recall Portal`を維持する。新しい経験保管庫、Ark-Recall専用Skill、環境別の同内容Skillは追加しない。
+
+Ark100を、Ark-Coachingの継続拠点として使う改訂が、このSkillの形成元であるArk100:02で採用された。Projectの役割・既存Thread・受入れ契約・確認状態は[Ark100 README](../../ark-project/ark100-199/ark100_b-zone/README.md)が所有する。Project名と02の新Titleは候補であり、今回の共有原本保存にUI名称・Project設定欄への反映は含まれない。
+
+Ark100は利用できる継続拠点であり、本Skillの必須実行場所ではない。他のThreadでも、現在の依頼と適用契約に従って利用できる。専門Skillへの直接呼出しを保持する。
+
+Ark-CoachingがB-Zone支援を内包するとは、その必要を現在の文脈から受け取り、専門原本と有効なCorrectionへ接続して支援を担うことを指す。B-Zoneの詳しい生活手順や経験を本Skillへ重複保存する意味ではない。
 
 ## 3. 利用の入口
 
@@ -110,6 +122,8 @@ Humanは短い言葉からでも、複数の話題からでも始められる。
 
 B-Zone固有の詳しい経路は担当原本へ接続し、汎用Skillに並行する生活手順集を作らない。
 
+後続のHumanは、この形成をArk Project2.0としてSeed化し、Ark100を継続拠点へ深化させる改訂案を求めた。Plan-onlyでの設計の後、2026-11-07に既存六原本の共有保存と必要な確認に限って承認した。Ark全体の意味とSeedは[Repository README](../../README.md#ark-project2)、Project固有の形成と役割はArk100が所有する。今回の承認はSkill本文・登録の変更を含まない。
+
 ## 5. 確認済みと未確認
 
 ### 5.1 候補作成時点の記録
@@ -154,9 +168,17 @@ Humanは本文候補v0.1、共有一覧への最小追記案、登録情報案�
 | AI応答 | この運用版の限定的な応答確認は未実施。別AIの起動・送信は今回の承認範囲外であり実施していない |
 | Humanの実利用・実生活効果 | 未確認。呼出しの自然選択、入口の想起、継続対話の有用性、長期的な効果を保存・登録成功から認定しない |
 
-登録処理によるmetadataの追加は、各製品での利用・表示・挙動を確認したことを意味しない。この会話の一覧・読出しと登録先の実体には上記の差があるため、登録機構から利用できない場合も第3.2節の共有原本読解へ接続できるようにしている。
+登録処理によるmetadataの追加は、各製品での利用・表示・挙動を確認したことを意味しない。初回確認時には、この会話の一覧・読出しと登録先の実体に上記の差があった。後続の取得成功は§5.3へ区別して記録する。登録機構の利用可否は環境と時点によるため、登録機構から利用できない場合も第3.2節の共有原本読解へ接続できるようにしている。
 
 本節の初回保存の証拠は、本文候補をそのまま保存した時点を指す。その後の本README更新は、確認結果とQuery有効化を反映するものであり、SKILL.mdの運用本文は変更していない。README自身の最終更新後の照合結果は、このThreadの完了報告でも区別する。
+
+### 5.3 後続の会話内取得確認
+
+初回保存時にはCloudの直接読出しでpackage unavailableだったが、その後、このThreadで登録済みArk-Coachingの全文取得に成功した。2026-11-07の今回の確認でも、frontmatterから本文末尾まで取得できた。
+
+初回の取得不能は当時の観測として保持し、現在の取得成功と区別する。共有SKILL.mdのblobは `bb2bd5e7c61f5ca62a454a97cfe0047c28639fac` のままであり、今回取得した登録本文も共有本文と全文一致した。今回のProject役割改訂のためのSkill再登録は行っていない。
+
+これは本文を取得できた確認であり、すべてのAI・製品での自然選択、Humanの入口の想起、実生活効果を確認した意味ではない。本READMEを含む今回の六原本保存・照合は[Ark100の確認記録](../../ark-project/ark100-199/ark100_b-zone/README.md#ark100-coaching-verification)へ接続する。
 
 ## 6. B-Zone側に残る接続
 

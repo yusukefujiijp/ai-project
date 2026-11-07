@@ -1,6 +1,6 @@
 ---
 title: "Ark Project"
-version: "v010-human-authorized"
+version: "v011-human-authorized"
 status: "active-candidate / human-sealed for field validation"
 canonicality: "human-sealed-candidate"
 canonical_path: "ark-project/README.md"
@@ -194,7 +194,7 @@ eight_line_readiness_extension:
   scope: "Add independent lines31–34 and readiness-first routing; preserve existing27–30 work, ownership, history and fixed bindings"
   goal: "First prepare four empty usable receiving lines; then route new topics under later valid input"
   evidence_owner: "Each new01 State; no new global registry"
-expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
+expected_eof: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v011-human-authorized"
 archive_navigation_patch:
   date: "2026-09-29"
   base_commit: "04055cba7279a6da95e0105c819729624c23b3aa"
@@ -213,6 +213,12 @@ pstack_project_entry_revision:
   authority: "Human requested save, then explicitly designated Project Ark111, Thread Ark111:01, and the exact Project Title"
   entry: "ark100-199/ark111_lauren-tan-pstack/README.md"
   scope: "Add the specialist Project discovery route and preserve its conceptual discussion; no Main/Support routing, Runtime, Skill, UI or behavioral change"
+revision_source_thread: "Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\""
+revision_reason: "Update only the Ark100 navigation to the adopted ongoing Ark-Coaching base; preserve all other current topology, fixed bindings and historical startup records"
+revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
+design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
+revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
+previous_blob: "f88653d3004d6ad72c314fb2f05414d98f3d2861"
 ---
 # Ark Project
 
@@ -306,7 +312,11 @@ Ark99は新しいMain章ではなく、Ark27 Main／Ark28 Supportの所有・Cur
 
 Humanは、居室の整理整頓など、対象を明確にカテゴライズできる専門Projectを100番台に置く方針を示した。既存の配置は `ark100-199/ark100_b-zone/`。現在の[Ark109: room-care](ark100-199/ark109_room-care/README.md)は、その並びに置く居室の片付け・清掃・整理整頓・維持改善の専門Projectである。
 
-**[Ark100: B-Zone Rescue](ark100-199/ark100_b-zone/README.md)** は、低認知・超低認知で想起・開始・切替が難しい時に、祈り・Teshuvahと可能な行動への接続を支える専門Project。[Project INSTRUCTIONS](ark100-199/ark100_b-zone/INSTRUCTIONS.md)が共通条件、[Ark100:00](ark100-199/ark100_b-zone/ark100-00/README.md)が事前起動・入口・未使用予備の準備を所有する。各番号Threadは独立新件を迎える場で、番号増加を同件継続や低／超低の区分にしない。初期00・利用用01・予備02の計画は2026-10-20にArk28:06でHumanが実行承認した。資料保存、Project設定、Target自身の再構成、Human到達、未使用状態、実生活効果は00の証拠で分ける。Ark99の00運用は参考にするが、その固有の案件継続先制約を自動移植しない。
+**[Ark100](ark100-199/ark100_b-zone/README.md)** は、B-Zone対策から育ったArk-Coachingを、現在の言葉から想起・判断・再開へつなぐ継続拠点として扱うProjectである。Project名「Ark100: Ark-Coaching」は候補。B-Zoneは重要な形成モデルかつ専門的な支援対象として保持する。
+
+[Project INSTRUCTIONS](ark100-199/ark100_b-zone/INSTRUCTIONS.md)が共通条件と受入れ契約、[Ark100:00](ark100-199/ark100_b-zone/ark100-00/README.md)が入口・起動・予備の証拠を所有する。01は既存の独立ケース、02は形成文脈を活かした継続相談・想起・再開を支える。初期00・利用用01・予備02の計画と受入れ記録は、その時点の履歴として保持する。初期計画は2026-10-20にArk28:06で承認され、今回の共有原本改訂は2026-11-07にArk100:02で別に承認された。
+
+既存住所とIdentityを維持し、Ark100以外でのArk-Coaching利用、専門Threadやb-zoneへの直接相談、Main／Support等の既存担当を保持する。保存・設定・名称・受け手の理解・未使用状態・実生活効果を別々に扱う。Ark99の00運用から学んだ形成を保持し、その固有の案件継続先制約を機械的に移植しない。
 
 Humanは2026-10-20にArk101 Project作成を報告し、起動Prompt・Project instructions・必要なGitHub整備を承認した。2026-10-27には同じProjectをArk109、本ThreadをArk109:01へ改番するHuman指定とGitHub修正依頼を受けた。Projectの案内はArk109 README、Threadの受入れ条件は01 Runtime、居室の実践目的・形成理由・方法は[control-center/house/room-care](../control-center/house/room-care/README.md)が所有する。親の[house](../control-center/house/README.md)は物理的な生活空間の他の可能性を候補として保持する。
 
@@ -737,9 +747,8 @@ Root remains 主イェシュア・ハマシア御自身.
 ```yaml
 document_end:
   filename: "ark-project/README.md"
-  version: "v010-human-authorized"
-  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized"
+  version: "v011-human-authorized"
+  eof_sentinel: "EOF::ARK_PROJECT_DOMAIN_ROUTER::v011-human-authorized"
 ```
 
-EOF::ARK_PROJECT_DOMAIN_ROUTER::v010-human-authorized
-
+EOF::ARK_PROJECT_DOMAIN_ROUTER::v011-human-authorized
