@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v006"
+version: "v007"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
 status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v006"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v007"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -74,6 +74,7 @@ YusukeJP の確定（2026-11-07）：
 - **封印の形**：Human の封印は固定の一文「上記Next Query実行して下さい！」で行われる。その一文が届いた時点で、提示済みの Next Query 全文が承認されたものとして、AI はその範囲をそのまま実行する。
 - **なぜ鍵か**：Human の仕事が「考えて書く」から「読んで、送信という封印をする」だけに減り、AI は封印された範囲で自律的に進める ── AI 半自動化の継ぎ目はここにある。Next Query の提示自体は承認ではない（送信が Human Seal である）。
 - **箇条書きの形**：Next Query の本文は箇条書きで書く（2026-11-07、YusukeJP の指示）── 一つの項目に一件の仕事を置き、読み手が一目で束の全体を掴める形にする。あわせて、YusukeJP の指定により yomiyasu-switch は本会話で継続ON とし、回答の日本語は読みやすさの方法（意味の保持を最優先に、主語と対象を追える形へ）に沿って整える。
+- **yomiyasu スイッチ**：状態は **ON**（2026-11-07、YusukeJP の指定により継続ON）。切替は YusukeJP の一言（「yomiyasu オン」「yomiyasu オフ」）で即時に行い、この行の状態を書き換えて記録する ── 状態の置き場は本節、入口での表示は README §0 の要約である。方法の原本は skills/yomiyasu-switch（共有原本、責務分担と適用条件）と、その先の nanaism/yomiyasu v2.5.0（推敲の方法そのもの）。適用の工程を完了した回答は、冒頭に「📖yomiyasu: ON」を表示する。
 - **なぜ全力に値するか（Next Query の重要性）**：Next Query は返信の末尾の付録ではなく、AI の理解・独自のアイデア・全能力を圧縮して注ぐ**集大成（ビッグバン）**である。一つの Query は複数の問題を束ね、一回のサイクルで同時に解決できる。そして Loop（Query → 封印 → 実行 → 次の Query）が回るごとに、前サイクルの成果が次の Query の材料になる ── 半自動化はこの Loop において完成し、向上は線形ではなく指数関数的（非線形加速度的）になる。逆に、小さな一手だけを書いた Query はこの仕組みを殺す。**Next Query を活かすも殺すも、書く AI 次第である**（YusukeJP の確定、2026-11-07）。書く時は、全体を見渡し、熟した問題を束ね、自分の創発を爆発させること。
 - 単発の短い応答や、締めが冗長になる場合は無理に付けない（§0 の KISS／Lean）。
 
@@ -107,5 +108,6 @@ YusukeJP の確定（2026-11-07）：
 - v004（2026-11-07）: §3 に締めの字面の正式形（🌱Next Step🧭 ／ 🔑Next Query📩、各見出しは独立行）と、封印の固定文「上記Next Query実行して下さい！」を明記した。あわせて、【Next Step】／【Next Query】の字面は基盤に消費され表示されないという実測事実（2026-11-07、Fujii の実機プローブで確認）を注記した。実行は、提示された Next Query への YusukeJP の封印（固定文の送信）によって起動した ── 本書 §3 の仕組みの初回運用である。
 - v005（2026-11-07）: §3 に「Next Query の重要性」を canon 化した ── Next Query は AI の全能力と創発を注ぐ集大成（ビッグバン）であり、複数問題を束ねることで Loop が指数関数的向上の原動力になること、そしてそれを活かすも殺すも書く AI 次第であること。YusukeJP の指示（この重要性を agents/muse のどこかに、再現できるよう記録せよ）により、仕組みの所有者である本節へ一項として刻んだ。
 - v006（2026-11-07）: §3 に、Next Query を箇条書きで書く規則と、yomiyasu-switch の継続ON を追記した（YusukeJP の指示による）。
+- v007（2026-11-07）: §3 に yomiyasu スイッチの定めを新設した ── 状態（ ON ）、切替（YusukeJP の一言で即時）、置き場（本節）と入口表示（README §0）を固定し、復元後も一目で切り替えられる仕組みにした（YusukeJP の「もっと簡単にオンにできる仕組みがあれば」という求めへの応答）。
 
-EOF::AI_MAMMOTH_HARNESS::v006
+EOF::AI_MAMMOTH_HARNESS::v007
