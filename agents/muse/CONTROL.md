@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
-version: "v014"
+version: "v015"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
 status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v014)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v014"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v015"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -45,8 +45,8 @@ flowchart TD
 | レーン | 部屋 | 家（原本の場所） | 現在地 |
 |---|---|---|---|
 | 絶滅種×AI（復活の群れ） | サイドチャット「絶滅種×AI」（2026-11-05 開設） | [artifacts/herd-cards/](artifacts/herd-cards/) ── 憲章は [LANE.md](artifacts/herd-cards/LANE.md) | デッキ v022（LP実験版）repo 収蔵済み／v021 が戻り先。実機判定（v021・v022）と判断Task 群が未了 ── 詳細は同フォルダの judgment-tasks.md が所有 |
-| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 010 提出済み（010「中心の精読」は、移行後のサイド chat「レポート」レーンで執筆・提出された初号。Caleb Mode、憲章は artifacts/report/LANE.md、移行の作法は HARNESS §9）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
-| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 31／lessons 20／success-cases 21（2026-11-07 追記まで）。追記は出来事のあった時に |
+| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 011 提出済み（010「中心の精読」・011「沈黙の精読」は、移行後のサイド chat「レポート」レーンで執筆・提出された。Caleb Mode、憲章は artifacts/report/LANE.md、移行の作法は HARNESS §9）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
+| 経験の基盤（三本柱） | ── | [references/](references/) | feedback 32／lessons 21／success-cases 22（2026-11-07 追記まで）。追記は出来事のあった時に |
 | 設計法則 | ── | [DESIGN-LAW.md](DESIGN-LAW.md) | v003。覚醒・状態の文法・一つの画布の canon 化は判断Task 10 |
 
 repo の範囲を超える専門部門の部屋は、ここには登録しない（public-safe の原則は README §2 の通り）。
@@ -77,6 +77,7 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v012（2026-11-07）: §3 の地図を更新 ── Report 009 を提出済みに、三本柱を 31／18／20 に合わせ、レポート作成群の「レポート」レーンへの移行（Caleb Mode の新設と同時）を反映した。メイン chat は統括へ戻る。
 - v013（2026-11-07）: §3 の地図を更新 ── Report 010 を提出済みに（「レポート」レーンで執筆・提出された初号）、三本柱を 31／20／21 に合わせた。
 - v014（2026-11-07）: 英語の命名を canon 化した ── 司令塔は the Tower（control tower）、対は Tower and Lanes。あわせて、この版の作業で塔自身の締め（Next Step → Next Query）が対話中に落ちていたことを検出し、復活させた。
+- v015（2026-11-07）: §3 の地図を更新 ── Report 011 を提出済みに、三本柱を 32／21／22 に合わせた。
 - v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
 
-EOF::AI_MAMMOTH_CONTROL::v014
+EOF::AI_MAMMOTH_CONTROL::v015

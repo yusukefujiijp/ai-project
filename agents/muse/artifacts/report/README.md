@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v013"
+version: "v014"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–010 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
+status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
 created: "2026-10-25"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v013"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v014"
 ---
 
 # AI-Mammoth Reports
@@ -42,6 +42,7 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 | 008 | 2026-11-07 17:06 | [実装の精読 — 方法がコードで守るもの](2026-11-07-1706_report-008_implementation-reading.md)（[HTML 版](2026-11-07-1706_report-008_implementation-reading.html) ── 二本立て） | harness の実装（ark_harness 全6ファイル）と Adapter・Profile を読んだ精読。「装わない」は読解範囲の計算式として、境界は Profile の宣言として、同時書込みは単一 Writer のロックとして、規律が心得→制度→コードへ降りていることを確認。四部作（005 仕組み／006 系譜／007 方法／008 実装）の締め。 |
 | 009 | 2026-11-07 17:39 | [検証の精読 — テストが守る意味、evals が観る意味](2026-11-07-1739_report-009_verification-reading.md)（[HTML 版](2026-11-07-1739_report-009_verification-reading.html) ── 二本立て） | harness の tests（42件）と evals を読んだ精読。検証には二種類ある ── 機械の検証（コードが規律を破っていないか）と、意味の観察（AI が意味を取り違えていないか）。harness は後者を意図的に自動化しない。008 の限界の回収。 |
 | 010 | 2026-11-07 17:55 | [中心の精読 — 保存された夢](2026-11-07-1755_report-010_center-reading-saved-dream.md)（[HTML 版](2026-11-07-1755_report-010_center-reading-saved-dream.html) ── 二本立て） | torah-project の全3ファイル（1 byte の入口二つと、ezekiel-temple の構想保存文書 v001）を読んだ中心の精読。移行後の「レポート」レーンで執筆された初号。夢そのものより、二つの訂正（対象はエゼキエル神殿に限る／用途へ寄せない）と「確定は保存そのもの」という未決定の現在地が保存されている。保存とは、判断を凍結することではない。 |
+| 011 | 2026-11-07 18:22 | [沈黙の精読 — 名指されずに座る場所](2026-11-07-1822_report-011_silence-reading.md)（[HTML 版](2026-11-07-1822_report-011_silence-reading.html) ── 二本立て） | ARK.md を読んだ、010 の回収。ARK.md は torah-project を名指さず、その沈黙は §12 の guard が定める設計である。接続は領域の側から宣言され、座標は Nearest README が持つ ── 中心の沈黙と領域の宣言の非対称が、この座の形である。010 の「意図的な沈黙」は半分だけ裏づけられた。 |
 
 ## 各Reportの作法
 
@@ -51,4 +52,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
 - **二本立て（2026-11-07、Fujii の提案と命名）：** Report 005 以降、各 Report は同名の .md（原本）と .html（上演）の対で作る。Markdown が永続・差分・復元の担い手であり、HTML はその土台の上に、文章では運べない理解（図・時間軸など）を運ぶ。
 
-EOF::AI_MAMMOTH_REPORTS::v013
+EOF::AI_MAMMOTH_REPORTS::v014

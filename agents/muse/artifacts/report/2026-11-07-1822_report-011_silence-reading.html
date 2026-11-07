@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 011 — 沈黙の精読：名指されずに座る場所</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff; --warm:#f6efe3; --warm-ink:#6b5636;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:.9em; background:#f2f5f9; padding:1px 6px; border-radius:6px;}
+  .items{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .item{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 17px;}
+  .item .t{font-weight:800;}
+  .item .t .k{color:var(--blue); margin-right:.5em;}
+  .item p{margin:3px 0 0; font-size:14.5px; color:#39434f;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 011 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>沈黙の精読<br>── 名指されずに座る場所</h1>
+  <p class="lede">ARK.md は、torah-project を一度も名指さない。その沈黙は見落としではなく、設計である。接続は逆向きに張られている ── 領域の側が、中心へ接続を宣言している。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP<br>
+    日時：2026-11-07 18:22 JST　／　読みの基盤：repo main @ 868f208b<br>
+    読んだ範囲：ARK.md（語の不在と見出しは全文、§0・§2・§9・§12 を精読）。原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── 中心の沈黙と領域の宣言の「非対称」を、一枚の図に描くこと。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>非対称の地図</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 380" width="100%" role="img" aria-label="中心と領域の非対称の図">
+      <rect x="190" y="26" width="300" height="86" rx="14" fill="#e8f3fc"></rect>
+      <text x="340" y="56" text-anchor="middle" font-size="15" font-weight="800" fill="#0e7fd6">ARK.md ── 中心の憲法</text>
+      <text x="340" y="80" text-anchor="middle" font-size="12" fill="#39434f">Home Constitution / Return-Home Kernel（§0）</text>
+      <text x="340" y="100" text-anchor="middle" font-size="12" fill="#5a6572">torah-project を名指さない ── §12 の guard が定める設計</text>
+
+      <line x1="340" y1="112" x2="340" y2="196" stroke="#b9c6d4" stroke-width="2" stroke-dasharray="7 6"></line>
+      <text x="352" y="148" font-size="12" fill="#5a6572">名指し（中心→領域）は、ない</text>
+      <text x="352" y="170" font-size="12" fill="#5a6572">在庫目録を持たないことが、器の役割</text>
+
+      <rect x="190" y="196" width="300" height="86" rx="14" fill="#f6efe3" stroke="#c9a86a"></rect>
+      <text x="340" y="226" text-anchor="middle" font-size="15" font-weight="800" fill="#6b5636">torah-project ── 領域</text>
+      <text x="340" y="250" text-anchor="middle" font-size="12" fill="#6b5636">座標は自分の README が持つ（Nearest README、§12）</text>
+      <text x="340" y="270" text-anchor="middle" font-size="12" fill="#6b5636">秩序は §2 の一般形の中に座る（Fruit と Keli）</text>
+
+      <path d="M 505 282 C 580 240, 580 150, 508 108" fill="none" stroke="#0e7fd6" stroke-width="2.5"></path>
+      <polygon points="508,108 500,122 516,120" fill="#0e7fd6"></polygon>
+      <text x="586" y="200" font-size="12.5" font-weight="700" fill="#0e7fd6">接続の宣言</text>
+      <text x="586" y="222" font-size="11.5" fill="#5a6572">領域 → 中心</text>
+      <text x="586" y="240" font-size="11.5" fill="#5a6572">（文書冒頭で）</text>
+
+      <text x="340" y="326" text-anchor="middle" font-size="13" font-weight="700" fill="#1c2430">名指されずに座る ── 中心の沈黙と、領域の宣言の対</text>
+      <text x="340" y="350" text-anchor="middle" font-size="12" fill="#5a6572">この読みは AI の解釈である（原本 §4・§5）</text>
+    </svg>
+    </div>
+    <figcaption>図：接続の非対称。中心→領域の名指しはなく、領域→中心の宣言がある。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">核</span>三つの事実</h2>
+  <div class="items">
+    <div class="item"><div class="t"><span class="k">事実1</span>名指しの不在</div>
+      <p>ARK.md の全文に、torah-project／エゼキエル／Ezekiel／parashat の語は現れない。</p></div>
+    <div class="item"><div class="t"><span class="k">事実2</span>沈黙の理由は、文書の中にある</div>
+      <p>§12 の guard は「ARK.mdへ全Project Inventoryを入れない」「ARK.mdへCurrent Task一覧を入れない」と明記する。沈黙は、ARK.md の側については設計である。</p></div>
+    <div class="item"><div class="t"><span class="k">事実3</span>宣言は、領域の側にある</div>
+      <p>ezekiel-temple/README は「Ark全体の意味と権限は ARK.md と AGENTS.md に接続する」と書く。座標は Nearest README が持ち、秩序は §2 の一般形が与える。</p></div>
+    <div class="item"><div class="t"><span class="k">留保</span>半分だけ、裏づけられた</div>
+      <p>010 の「意図的な沈黙」のうち、ARK.md 側は裏づけられた。torah-project 側の 1 byte の理由は、依然として未確認である。二つの沈黙を混ぜない。</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、外部参照なし）までを確認する。端末での実感はコード検査とは別の真実であり、YusukeJP の目が判定する（群れの規律のまま）。読みの限界：ARK.md は関連節の精読（語の不在と見出しは全文確認）。AGENTS.md 側の扱いは範囲外（原本 §0・§6）。ark00 との響き合いは、同定ではなく響き合いとしてのみ記した。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_011::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>
