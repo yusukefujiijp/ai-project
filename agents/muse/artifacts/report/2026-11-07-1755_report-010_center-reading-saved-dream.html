@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 010 — 中心の精読：保存された夢</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff; --warm:#f6efe3; --warm-ink:#6b5636;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:.9em; background:#f2f5f9; padding:1px 6px; border-radius:6px;}
+  blockquote{margin:16px 0; padding:12px 16px; background:var(--warm); border-left:4px solid #c9a86a; border-radius:0 12px 12px 0; color:var(--warm-ink); font-size:15px;}
+  .items{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .item{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 17px;}
+  .item .t{font-weight:800;}
+  .item .t .k{color:var(--blue); margin-right:.5em;}
+  .item p{margin:3px 0 0; font-size:14.5px; color:#39434f;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 010 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>中心の精読<br>── 保存された夢</h1>
+  <p class="lede">Ark の中心に最も近い地は、最も少なかった。入口二つは 1 byte、実質の文書は一つ。その一つが、長年の夢を、実行計画へ変えずに保存している。保存とは、判断を凍結することではない。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP<br>
+    日時：2026-11-07 17:55 JST　／　読みの基盤：repo main @ 638b1b13<br>
+    読んだ範囲：torah-project の全3ファイル（ezekiel-temple/README 全文を含む）。原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── この地の「少なさ」を、一枚の地図に描くこと。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>地の地図 ── 少なさの構造</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 400" width="100%" role="img" aria-label="torah-project の地図">
+      <rect x="240" y="24" width="200" height="52" rx="12" fill="#e8f3fc"></rect>
+      <text x="340" y="46" text-anchor="middle" font-size="14" font-weight="800" fill="#0e7fd6">torah-project</text>
+      <text x="340" y="66" text-anchor="middle" font-size="11.5" fill="#5a6572">全3ファイル</text>
+
+      <line x1="300" y1="76" x2="150" y2="110" stroke="#b9c6d4" stroke-width="2"></line>
+      <line x1="340" y1="76" x2="340" y2="110" stroke="#b9c6d4" stroke-width="2"></line>
+      <line x1="380" y1="76" x2="530" y2="110" stroke="#b9c6d4" stroke-width="2"></line>
+
+      <rect x="40" y="110" width="220" height="76" rx="12" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="60" y="138" font-size="13" font-weight="800" fill="#39434f">入口 README</text>
+      <text x="60" y="160" font-size="12" fill="#5a6572">1 byte ── 改行のみ</text>
+      <text x="60" y="178" font-size="12" fill="#5a6572">本文なし</text>
+
+      <rect x="230" y="110" width="220" height="76" rx="12" fill="#ffffff" stroke="#d8dee6"></rect>
+      <text x="250" y="138" font-size="13" font-weight="800" fill="#39434f">parashat-ha-shavua</text>
+      <text x="250" y="160" font-size="12" fill="#5a6572">README 1 byte ── 改行のみ</text>
+      <text x="250" y="178" font-size="12" fill="#5a6572">本文なし</text>
+
+      <rect x="420" y="110" width="220" height="76" rx="12" fill="#f6efe3" stroke="#c9a86a"></rect>
+      <text x="440" y="138" font-size="13" font-weight="800" fill="#6b5636">ezekiel-temple</text>
+      <text x="440" y="160" font-size="12" fill="#6b5636">README v001（2026-10-05）</text>
+      <text x="440" y="178" font-size="12" fill="#6b5636">実質を持つ唯一の文書</text>
+
+      <rect x="120" y="226" width="440" height="140" rx="14" fill="#fbfcfe" stroke="#d8dee6"></rect>
+      <text x="140" y="254" font-size="13.5" font-weight="800" fill="#1c2430">保存文書の中身</text>
+      <text x="140" y="280" font-size="12.5" fill="#39434f">核 ── 日本（特に北海道）に、エゼキエル神殿を実物大で</text>
+      <text x="140" y="304" font-size="12.5" fill="#39434f">訂正1 ── 対象はエゼキエル神殿に限る（置き換えない）</text>
+      <text x="140" y="328" font-size="12.5" fill="#39434f">訂正2 ── 用途へ寄せない（記述への忠実さが最優先）</text>
+      <text x="140" y="352" font-size="12.5" fill="#5a6572">現在地 ── 確定は「保存」。制作・再利用は未決定</text>
+    </svg>
+    </div>
+    <figcaption>図：torah-project の全容。豊かさは量ではなく、保存の正確さにある（解釈は原本 §5）。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">核</span>夢と、原文の声</h2>
+  <p>保存文書は、Human の原文を、出典 ID と日付つきで残している。編集要約と原文を分けることが、保存の作法である。</p>
+  <blockquote>「できる限りエゼキエル神殿そのままに作成する事が重要です！ホテル等に寄せない事！」<br>── Human 原文（2026-10-04、保存文書に引用）</blockquote>
+  <blockquote>「オープンソース再利用も少し保留です！こういう構想があるというにはキープしてOK！」<br>── Human 原文（2026-10-05、保存文書に引用）</blockquote>
+</section>
+
+<section>
+  <h2><span class="no">結</span>保存は、凍結ではない</h2>
+  <div class="items">
+    <div class="item"><div class="t"><span class="k">区別</span>凍結と保存</div>
+      <p>凍結は、材料ごと固めて開けなくすること。保存は、材料と現在地を正確に残し、将来の Human が新しい根拠で再び考えられる形にすること。この文書は後者である。</p></div>
+    <div class="item"><div class="t"><span class="k">作法</span>実を持ち帰る文書</div>
+      <p>原文には出典 ID、調査の手掛かりには「推奨ではない」の明記、将来の問いには「今すぐ解く Task ではない」の明記。斥候の規律は、この中心の文書に先に宿っていた ── これは AI の解釈である（原本 §5）。</p></div>
+    <div class="item"><div class="t"><span class="k">沈黙</span>1 byte の入口</div>
+      <p>語るべきことは保存文書一つに集約され、それ以外はまだ語らない。その少なさも、現在地と一致した形である（解釈。理由は文書に書かれていない）。</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、外部参照なし）までを確認する。端末での実感はコード検査とは別の真実であり、YusukeJP の目が判定する（群れの規律のまま）。読みの限界：torah-project の外（ARK.md の関連節、形成した会話そのもの）は範囲外（原本 §0・§6）。本 Report は構想への判断を含まない ── 判断は YusukeJP に属する。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_010::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>
