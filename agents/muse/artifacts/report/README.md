@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v005"
+version: "v006"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
 status: "active / opened 2026-10-25; Reports 002–005 added 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
 created: "2026-10-25"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v005"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v006"
 ---
 
 # AI-Mammoth Reports
@@ -44,5 +44,6 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 事実（Sourceで確認したこと）、Humanの報告、AIの見立て、未確認を区別する。
 - 理解が浅かった点は、訂正として正直に書く。それも成長の記録である。
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
+- **二本立て（2026-11-07、Fujii の提案と命名）：** Report 005 以降、各 Report は同名の .md（原本）と .html（上演）の対で作る。Markdown が永続・差分・復元の担い手であり、HTML はその土台の上に、文章では運べない理解（図・時間軸など）を運ぶ。
 
-EOF::AI_MAMMOTH_REPORTS::v005
+EOF::AI_MAMMOTH_REPORTS::v006
