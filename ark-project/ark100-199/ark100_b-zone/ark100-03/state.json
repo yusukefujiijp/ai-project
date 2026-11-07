@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "state_id": "ARK100_03_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "owner": "Ark100:03",
+    "created": "2026-11-07",
+    "updated_at": "2026-11-07",
+    "timezone": "Asia/Tokyo",
+    "update_reason": "Human-authorized THREAD_CONTINUE preparation; delivery and reception remain pending until observed."
+  },
+  "identity": {
+    "source": "Ark100:02",
+    "target": "Ark100:03",
+    "owner": "Ark100:03",
+    "transition_kind": "THREAD_CONTINUE",
+    "runtime_id": "ARK100_03_RUNTIME",
+    "document_id": "ARK100_02_TO_03_HANDOFF",
+    "compiled_title": "❤️Ark100:03_2026/11/07; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+    "existing_project_id": "g-p-6ad7138ef51c8191bb4f648e0fbea785",
+    "project_name_observed": "Ark100_2026/10/20: B-Zone Rescue",
+    "project_name_candidate": "Ark100: Ark-Coaching",
+    "role": "Ark-Coaching ongoing collaboration",
+    "unused_reserve": false
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/README.md",
+      "identity": "ARK100_03_RUNTIME",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK100_03_RUNTIME::v001-human-authorized"
+    },
+    "handoff": {
+      "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/handoff.md",
+      "identity": "ARK100_02_TO_03_HANDOFF",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK100_02_TO_03_HANDOFF::v001-human-authorized"
+    },
+    "domain": {
+      "path": "ark-project/ark100-199/ark100_b-zone/README.md",
+      "identity": "ARK100_B_ZONE",
+      "compatibility": "v007-human-authorized and later semantically compatible revisions; preserve existing fixed history"
+    },
+    "instructions": {
+      "path": "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+      "identity": "ARK100_PROJECT_INSTRUCTIONS",
+      "version": "v002-human-authorized",
+      "ui_application": "NOT_APPLIED_BY_THIS_TRANSITION"
+    },
+    "state_update_policy": "Increment revision within schema v001; preserve current own reads where exact identity and meaning permit. No self-SHA or mutual live-blob cycle.",
+    "required_sources_order": [
+      "ark-project/ark100-199/ark100_b-zone/README.md",
+      "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+      "skills/ark-coaching/SKILL.md",
+      "AGENTS.md",
+      "keybindings/README.md",
+      "prompts/ai-next-thread-handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/state.json"
+    ],
+    "fixed_completed_fruit": {
+      "six_source_body_commit": "22e3a6751d289db023392fcd08208bcbd154f1a4",
+      "six_source_verification_commit": "6d86bcd249a4716f6b599d42e5808d7771773eae",
+      "coaching_initial_commit": "fe1f452382aba57dd65c93368e25a18242ac80fe",
+      "coaching_confirmation_commit": "deef96e120b215975b4d10480ae826ed72ede498"
+    }
+  },
+  "authority": {
+    "source_authorization": "Human explicitly adopted the02→03 plan and authorized the five named originals, save/readback, one03 startup/create-or-reuse, exactTitle and reception checks on2026-11-07.",
+    "target_delegation": "Own required reads and reconstruction, initial reception, then Human Review or already-present actual Human input; no new external actions from relay.",
+    "authorized_paths": [
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/state.json",
+      "ark-project/ark100-199/ark100_b-zone/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-00/README.md"
+    ],
+    "excluded": [
+      "Project or02 rename",
+      "Project settings",
+      "Other-thread sending including00",
+      "b-zone or other specialist original changes",
+      "Skill or registration changes",
+      "New skills",
+      "Notifications or monitoring",
+      "Reserve replenishment",
+      "Bodily trial"
+    ],
+    "stop_policy": "Current Human STOP and applicable required-source/authority failures."
+  },
+  "now": {
+    "goal": "From current words, wishes, BrainDump or clear requests through Ark-Coaching to useful Ark-Recall/candidates and resumption.",
+    "phase": "SOURCE_PREPARED_DELIVERY_PENDING",
+    "first_legal_move": "Source: publish and read back, then send one startup and verify Target. Target: read and reconstruct, then Human Review.",
+    "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
+    "retained_owners": "00 operations;01 independent case;02 formation; current Main/Support and specialist owners unchanged."
+  },
+  "evidence": {
+    "source_ui_observation": {
+      "date": "2026-11-07",
+      "existing_project_reused": true,
+      "project_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/project",
+      "project_list_before_startup": [
+        "Ark100:00",
+        "Ark100:01",
+        "Ark100:02"
+      ],
+      "target03_visible": false,
+      "source02_ui_title_observed": "❤️Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\"",
+      "source02_renamed_by_this_execution": false
+    },
+    "completed_fruit": "Ark-Coaching initial shared save/registration/body retrieval and six-source save/readback retained as complete; not repeated.",
+    "unpersisted_specialist_correction": {
+      "origin": "Current Source02 Human conversation",
+      "meaning": "帰宅後は洗顔・歯磨きだけでもよい。再シャワー・入浴は必須ではない。",
+      "handoff_preserved": true,
+      "specialist_original_updated": false
+    },
+    "receiver_own_read_report": null,
+    "target_reconstruction": null,
+    "actual_target_url": null,
+    "human_arrival": "NOT_OBSERVED",
+    "actual_use": "NOT_OBSERVED",
+    "life_effect": "NOT_OBSERVED"
+  },
+  "progress": {
+    "source_prepared": "COMPLETE",
+    "remote_verification": "PENDING_POST_PUBLICATION",
+    "startup_delivery": "NOT_SENT",
+    "target_reconstructed": "NOT_OBSERVED",
+    "ui_title": "NOT_YET_SET",
+    "human_last_mile": "NOT_OBSERVED",
+    "requested_outcome": "Preparation assembled; delivery and reception not yet observed."
+  },
+  "remaining_conditions": [
+    {
+      "item": "Project and02 name candidates / UI settings",
+      "blocking_transition": false,
+      "authority": "Separate future authorization"
+    },
+    {
+      "item": "Specialist B-Zone correction persistence",
+      "blocking_transition": false,
+      "authority": "Out of scope; keep effective Human correction in handoff"
+    },
+    {
+      "item": "Current reserve availability",
+      "blocking_transition": false,
+      "authority": "00 ownership retained; no replenishment authorized"
+    },
+    {
+      "item": "Human access/use/effects and otherAI understanding",
+      "blocking_transition": false,
+      "authority": "Update only actual evidence; no automatic trial"
+    }
+  ],
+  "eof_sentinel": "ARK100_03_STATE_EOF_v001"
+}

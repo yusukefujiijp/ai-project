@@ -1,7 +1,7 @@
 ---
 document_id: "ARK100_B_ZONE"
 title: "Ark100 — Ark-Coaching：継続拠点とB-Zoneからの形成"
-version: "v006-human-authorized"
+version: "v007-human-authorized"
 role: "Ark100 ongoing coaching entry / B-Zone meaning and source-bound formation record"
 status: "Human-adopted shared-source revision / UI naming, settings, receiver understanding and field effects tracked separately"
 created: "2026-10-18"
@@ -30,13 +30,22 @@ experience_navigation_patch:
   source_thread: "Ark100:01"
   authority: "Human requested frequent saving of this case and its latest boundary-care feedback"
   scope: "Bounded case-record entry; shared support runtime and INSTRUCTIONS unchanged"
-expected_eof: "EOF::ARK100_B_ZONE::v006-human-authorized"
+expected_eof: "EOF::ARK100_B_ZONE::v007-human-authorized"
 revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
 design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
 revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
 project_name_candidate: "Ark100: Ark-Coaching"
 thread_title_candidate: "Ark100:02_2026/10/20; \"Ark-Coaching: 今ある言葉から、想起と再開へ\""
 initial_startup_authorization_scope: "Approved Ark100 Project instructions, 00 control-center, independent 01 and 02 startup; bounded Domain and Skills Hub updates, verification and authorized UI setup"
+transition_patch:
+  date: "2026-11-07"
+  source: "Ark100:02"
+  target: "Ark100:03"
+  kind: "THREAD_CONTINUE"
+  base_commit: "df8f8020e77fbdbfe3b852bf7367b3db154e0eee"
+  previous_blob: "55a6aa42df9ef906743467401147b4221674a07f"
+  authority: "Human authorized five-source preparation/readback and one03 startup/title/reception; previous six-source authorization fields remain historical"
+  reason: "Add ongoing03 route and actual evidence owner without revising specialist support, existing identities or initial startup history"
 ---
 
 <a id="ark100--b-zone"></a>
@@ -491,6 +500,21 @@ Humanが当初示した三経路は形成履歴として保持し、後続Correc
 **今回扱わないBranch。**  
 既存Ark00–99の移動、全100番台の一括命名規則、Ark99原本の自動更新、過去TaskやResetの再演、通知・常時監視、無関係な他AIへの送信、iPhone設定、身体Trial、既存案件の移行。H25で新たに承認されたProject／00／01／02の初回準備と限定Domain追記はこの保留群から分ける。保存原本の旧承認を他の仕事へ流用しない。
 
+
+<a id="ark100-03-continuation"></a>
+
+### 2026-11-07：02 → 03のArk-Coaching継続
+
+Humanは移行案を採用し、`THREAD_CONTINUE` として既存Ark100 Project内の02→03継続を明示承認した。確定したのは03のTitle `❤️Ark100:03_2026/11/07; "Ark-Coaching: 今ある言葉から、想起と再開へ"` である。Project名・02の新Titleの候補を確定した承認ではない。
+
+新しい[03のREADME](ark100-03/README.md)が役割と安定条件、[handoff](ark100-03/handoff.md)が形成・有効なCorrection・成果・残件・受入れ契約、[state](ark100-03/state.json)が可変の進捗と受入れ証拠を所有する。03は02の協働を継続する場であり、初期の独立ケースや未使用予備補充には数えない。00の運用担当、01の独立ケース、02の形成、Main／Supportと各専門所有を保持する。
+
+今回の承認は、03三原本、本書と00READMEの必要な接続・確認記録、保存後再取得、03一件への起動送信・永続Thread作成または一致する既存Thread再利用・確定Title反映・受入れ確認まで。Project／02改名、Project設定欄、専門原本・Skill・登録、他Thread送信、通知・監視、予備補充、身体Trialは対象外である。先行六原本改訂の承認・完了とは時点とScopeを分ける。
+
+準備時のUIでは既存Projectに00・01・02が表示され、03は表示されていなかった。02は❤️付き旧B-Zone名であり、今回変更していない。ここはSource準備の記録であり、03の送信・受入れ完了ではない。実行後の確認は03 stateと00の[受入れ記録](ark100-00/README.md#ark100-03-reception)へ結ぶ。
+
+帰宅後は洗顔・歯磨きのみでもよい等の会話由来Correctionは、専門原本へ未反映のまま03handoffへ保持する。本接続追記でB-Zoneの専門本文を改訂したとは扱わない。六原本の保存・照合とArk-Coaching初版の完了成果は再作業に戻さない。
+
 ## 8. Future AIの再開
 
 1. 現在のHuman入力・目的・Correction・STOP・権限を受け取る。過去や別Threadの身体・場所・行動を現在へ移さない。
@@ -507,6 +531,6 @@ B-Zoneで育った、想起・開始・切替を支える具体性を保持し�
 
 現在の相談があれば、その相談へ応答する。改訂依頼なら採用内容・差分・権限に沿って進める。共有原本、設定、名称、受け手の理解、実生活効果の未確認を混同せず、初回立ち上げや完了済みのSkill制作を再作業へ戻さない。
 
-この改訂で残る名称・UI設定、予備状況の確認、別管理のB-Zone側Correction、次Thread移行の準備は、現在の依頼と個別の承認から扱う。共有原本の保存だけで移行や新しい身体Trialを開始しない。
+この改訂で残る名称・UI設定、予備状況の確認、別管理のB-Zone側Correctionは、現在の依頼と個別の承認から扱う。02→03継続は上記の限定承認と専用記録に従う。共有原本の保存だけを未観測の移行完了や新しい身体Trialの承認にしない。
 
-EOF::ARK100_B_ZONE::v006-human-authorized
+EOF::ARK100_B_ZONE::v007-human-authorized

@@ -1,6 +1,6 @@
 ---
 document_id: "ARK100_00_CONTROL_CENTER"
-version: "v002-human-authorized"
+version: "v003-human-authorized"
 role: "Ark100 control-center / entry, reception, startup and unused reserve preparation"
 project_name: "Ark100: B-Zone Rescue"
 thread: "Ark100:00"
@@ -11,7 +11,7 @@ timezone: "Asia/Tokyo"
 source_thread: "Ark28:06 Support"
 authority: "Human-approved plan for Project instructions, 00 and independent 01/02 startup preparation; 2026-10-20 execution approval"
 canonical_path: "ark-project/ark100-199/ark100_b-zone/ark100-00/README.md"
-expected_eof: "EOF::ARK100_00_CONTROL_CENTER::v002-human-authorized"
+expected_eof: "EOF::ARK100_00_CONTROL_CENTER::v003-human-authorized"
 revision_source_thread: "Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\""
 revision_reason: "Align control-center navigation and source order with ongoing Ark-Coaching; preserve initial startup Queries, titles, receipts and reserve goal as scoped history"
 revision_authority: "Human adopted the six-source design and authorized shared-source updates and verification only on 2026-11-07; names, UI, registration, sending and thread migration excluded"
@@ -19,6 +19,15 @@ design_base_commit: "87f5f17d2f093dd5313964b4205d53b7791918cf"
 revision_base_commit: "77da336ce3d248766a083861f8c510dbaa2a43f1"
 previous_blob: "ed24cb31cec0441e8800f28abcd3e43f7aef3542"
 project_name_candidate: "Ark100: Ark-Coaching"
+transition_patch:
+  date: "2026-11-07"
+  source: "Ark100:02"
+  target: "Ark100:03"
+  kind: "THREAD_CONTINUE"
+  base_commit: "df8f8020e77fbdbfe3b852bf7367b3db154e0eee"
+  previous_blob: "3cad4e690f9719086c3762d1c729149971a9f821"
+  authority: "Human authorized the five-source03 continuation and one03 startup/reception; prior revision_authority remains the six-source history"
+  reason: "Add03 entry and reception owner; preserve00 read order, initial00/01/02 queries and historical reserve evidence"
 ---
 
 # Ark100:00 — B-Zone control-center
@@ -78,6 +87,7 @@ PASSの復唱で終えず、Sourcesから次の意味を自身で確認する。
 - Ark100:00：入口、起動・受入れ、準備・未使用予備の証拠を扱う。
 - Ark100:01：既存の独立ケースと[経験原本](../ark100-01/README.md)を保持する。
 - Ark100:02：B-ZoneからArk-Coachingへの形成文脈を保持し、現在の相談・想起・再開を支える。
+- [Ark100:03](../ark100-03/README.md)：Humanが採用した02→03のTHREAD_CONTINUE。実送信・受入れの状態は[§5.4](#ark100-03-reception)と03 stateで確認し、未使用予備には数えない。
 
 初期の01＝利用用、02＝未使用予備は、その時点の配置記録である。01の実案件は経験原本、02の実入力と形成は領域READMEおよび現在の対話から確認し、両者を現在の未使用枠と数えない。番号増加を同件継続や低／超低の区分にせず、同じ一件のFeedback・再開を支援途中で分断しない。
 
@@ -138,6 +148,23 @@ Humanは、作成済みの「Ark100: B-Zone Rescue」Project内で保存済み�
 **00への結果受渡し：完了。** Ark28:06が三つの実在URL、受入れ・名称確認、01／02の未使用状態、未確認事項を明示して00へ渡した。00は「Ark28:06 AIによる実操作・ブラウザ確認の報告」として会話上の現在地へ受領し、自身による他Thread直接確認とは区別した。再Bootや追加操作を行わずHuman Reviewへ戻った。この受領は本節のGitHub保存に先行しており、00が保存後のRemoteを再取得した証拠とは分ける。
 
 **成立した範囲と残るUnknown：** Source準備・Project設定・三Thread実在・各Target受入れ・確定名称・入口URL・観測時点の01／02未使用を確認した。Human本人のiPhoneでの到達、ユーザ辞書登録、支援を思い出して呼び出せること、実地Rescueと祈り・行動・回復の効果は未確認のまま保持する。初期の利用先と予備は用意できたが、恒久監視や自動補充を設定した意味ではない。
+
+
+<a id="ark100-03-reception"></a>
+
+### 5.4 02 → 03：Ark-Coaching協働の継続（2026-11-07）
+
+Humanは `THREAD_CONTINUE` として、既存Project内の03一件の準備・共有保存・保存後照合・起動送信・永続Thread作成または一致する既存Thread再利用・確定Title・受入れ確認を承認した。
+
+確定Title：`❤️Ark100:03_2026/11/07; "Ark-Coaching: 今ある言葉から、想起と再開へ"`
+
+入口は[03 README](../ark100-03/README.md)、意味と受入れ契約は[handoff](../ark100-03/handoff.md)、可変の送信・UI・受入れ証拠は[state](../ark100-03/state.json)が所有する。03の宣言順は領域README→INSTRUCTIONS→Ark-Coaching SKILL→AGENTS→keybindings→共通移行契約→03README→03handoff→03state。00自身の§2の宣言順と、§6の初期00・01・02起動Queryは変更しない。
+
+03は02から継続する協働先であり、独立新件や未使用予備の補充には数えない。00の運用担当、01の独立ケースと経験、02の形成、既存Main／Supportを保持する。03準備時のProject一覧には00・01・02があり、03は表示されなかった。Source02の❤️付き旧B-Zone名は観測値であり、改名操作ではない。
+
+本段落の初回保存時点は準備状態であり、送信・Target自身の読解・再構成・Human到達は未確認。実際の結果を後続の確認記録として追記する。00AIへの送信や00のBoot再演は今回行わない。
+
+Project名・02新Titleの候補、Project指示欄、専門原本の未反映Correction、現在の予備残数・利用可能性、Human実利用・実生活効果は別の残点として保持する。これらをすべて解消することを03受入れの条件にしない。
 
 ## 6. 確定Titleと起動Query
 
@@ -270,4 +297,4 @@ Human操作が本当に残る場合だけ、同Project内で該当Threadを開�
 
 完了済みの初回起動・受入れは再作業へ戻さず、現在の依頼から必要な入口・役割・到達の未確認差分を扱う。Boot受入れ済みで実入力がなければHuman Reviewへ戻り、新たなTaskを作らない。実入力があればその一件を支え、予備の管理を支援開始の条件にしない。新しい予備が必要になった時は、状況と現行の実行委任を確認し、準備・受入れ・入口確認までの必要差分へ接続する。
 
-EOF::ARK100_00_CONTROL_CENTER::v002-human-authorized
+EOF::ARK100_00_CONTROL_CENTER::v003-human-authorized
