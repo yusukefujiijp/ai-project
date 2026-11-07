@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report 009 — 検証の精読：テストが守る意味、evals が観る意味</title>
+<style>
+  :root{--ink:#1c2430; --sub:#5a6572; --line:#d8dee6; --blue:#0e7fd6; --blue-soft:#e8f3fc; --paper:#fbfcfe; --card:#ffffff;}
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{touch-action:manipulation;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Noto Sans JP",sans-serif;background:var(--paper); color:var(--ink); line-height:1.85; font-size:16px; -webkit-text-size-adjust:100%; touch-action:manipulation;}
+  .wrap{max-width:720px; margin:0 auto; padding:40px 22px 72px;}
+  header.hero{padding:28px 0 8px;}
+  .kicker{color:var(--blue); font-weight:700; letter-spacing:.14em; font-size:12px;}
+  h1{font-size:27px; line-height:1.45; margin:14px 0 10px; font-weight:800;}
+  .lede{color:var(--sub); font-size:15px;}
+  .meta{margin-top:18px; padding:14px 16px; background:var(--blue-soft); border-radius:12px; font-size:13px; color:#33506a;}
+  .meta b{color:var(--blue);}
+  section{margin-top:44px;}
+  h2{font-size:19px; font-weight:800; padding-bottom:8px; border-bottom:2px solid var(--blue); margin-bottom:16px;}
+  h2 .no{color:var(--blue); margin-right:.5em;}
+  p{margin-bottom:14px;}
+  figure{margin:22px 0;}
+  figcaption{font-size:12.5px; color:var(--sub); text-align:center; margin-top:8px;}
+  .svgbox{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 8px 6px; box-shadow:0 1px 5px rgba(20,40,70,.05);}
+  code{font-family:ui-monospace,Menlo,monospace; font-size:.9em; background:#f2f5f9; padding:1px 6px; border-radius:6px;}
+  .items{display:grid; grid-template-columns:1fr; gap:12px; margin:16px 0;}
+  .item{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 17px;}
+  .item .t{font-weight:800;}
+  .item .t .k{color:var(--blue); margin-right:.5em;}
+  .item p{margin:3px 0 0; font-size:14.5px; color:#39434f;}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--sub); font-size:13px;}
+  footer .pair{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:14px 16px; margin-bottom:16px;}
+  @media (max-width:560px){ h1{font-size:24px;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="hero">
+  <div class="kicker">AI-MAMMOTH REPORT 009 ／ HTML 版（Markdown 原本と対）</div>
+  <h1>検証の精読<br>── テストが守る意味、evals が観る意味</h1>
+  <p class="lede">検証には二種類ある。コードが規律を破っていないかは機械が守る。AI が意味を取り違えていないかは、人が観る。harness は後者を、あえて自動化しない。</p>
+  <div class="meta">
+    提出者：<b>AI-Mammoth</b>　／　宛先：YusukeJP<br>
+    日時：2026-11-07 17:39 JST　／　読みの基盤：repo main @ 903a7128<br>
+    原本：同名の <b>.md</b> が正本。本 HTML の挑戦は一つ ── 二種類の検証と、その境目を一枚の図に描くこと。
+  </div>
+</header>
+
+<section>
+  <h2><span class="no">図</span>二種類の検証</h2>
+  <figure>
+    <div class="svgbox">
+    <svg viewBox="0 0 680 360" width="100%" role="img" aria-label="二種類の検証の図">
+      <rect x="56" y="36" width="268" height="240" rx="16" fill="#e8f3fc"></rect>
+      <text x="80" y="72" font-size="15" font-weight="800" fill="#0e7fd6">機械の検証 ── tests</text>
+      <text x="80" y="100" font-size="12.5" fill="#39434f">コードが規律を破っていないか</text>
+      <text x="80" y="128" font-size="12.5" fill="#39434f">42件のテストが守る</text>
+      <text x="80" y="156" font-size="12.5" fill="#39434f">取得と読解は別であること</text>
+      <text x="80" y="184" font-size="12.5" fill="#39434f">範囲の外の引用は失敗すること</text>
+      <text x="80" y="212" font-size="12.5" fill="#39434f">応答が失われても実行は残ること</text>
+      <text x="80" y="240" font-size="12.5" fill="#39434f">同時の書込みを拒むこと</text>
+      <text x="80" y="264" font-size="12" fill="#5a6572">→ 自動化する。例外と失敗で止める</text>
+
+      <rect x="356" y="36" width="268" height="240" rx="16" fill="#eef4ea"></rect>
+      <text x="380" y="72" font-size="15" font-weight="800" fill="#41603a">意味の観察 ── evals</text>
+      <text x="380" y="100" font-size="12.5" fill="#39434f">AI が意味を取り違えていないか</text>
+      <text x="380" y="128" font-size="12.5" fill="#39434f">合成ケースで観察する</text>
+      <text x="380" y="156" font-size="12.5" fill="#39434f">自動の採点は入れない</text>
+      <text x="380" y="184" font-size="12.5" fill="#39434f">点数の集計も入れない</text>
+      <text x="380" y="212" font-size="12.5" fill="#39434f">一件の成功で普遍性を認めない</text>
+      <text x="380" y="240" font-size="12.5" fill="#39434f">合格を名乗らない</text>
+      <text x="380" y="264" font-size="12" fill="#5a6572">→ 自動化しない。人と AI の目に残す</text>
+
+      <line x1="340" y1="36" x2="340" y2="276" stroke="#0e7fd6" stroke-width="2" stroke-dasharray="6 5"></line>
+      <text x="340" y="306" text-anchor="middle" font-size="13" font-weight="700" fill="#0e7fd6">境目 ── 確実にできる部分だけを機械へ渡す</text>
+      <text x="340" y="330" text-anchor="middle" font-size="12" fill="#5a6572">意味の判断は、観察と責任の届く場所に残る</text>
+    </svg>
+    </div>
+    <figcaption>図：二種類の検証。左は機械が守り、右は人が観る。境目の置き方そのものが、方法の判断である。</figcaption>
+  </figure>
+</section>
+
+<section>
+  <h2><span class="no">核</span>テストの名前に宿る姿勢</h2>
+  <div class="items">
+    <div class="item"><div class="t"><span class="k">姿勢</span>黙って進まない</div>
+      <p>分からない欄は黙って落とさない。基準が動いたら黙って付け替えない。変わった成果物は保管を拒む。失われた応答は、実行が無かったことにはならない。</p></div>
+    <div class="item"><div class="t"><span class="k">配分</span>確実さの置き場</div>
+      <p>機械に渡せる確実さは機械へ。意味の判断は観察へ。これが "From Probability to Certainty" の実務形である。</p></div>
+    <div class="item"><div class="t"><span class="k">照合</span>私の仕事も同じ配分</div>
+      <p>読戻し SHA の照合は機械の検証の手作業版。端末の実感を YusukeJP の目に残す作法は、意味の観察を自動化しない判断の実践である。</p></div>
+  </div>
+</section>
+
+<footer>
+  <div class="pair">
+    <b>検証について</b> ── 本ファイルは静的検証（バイト数、タグ整合、外部参照なし）までを確認済み。端末での実感はコード検査とは別の真実であり、YusukeJP の目と指が判定する（群れの規律のまま）。読みの限界：テスト本文は名前と観点を中心に読み、全行の精読ではない（原本 §4）。
+  </div>
+  <p>AI-Mammoth（agents/muse）／ Ark Project reports ／ EOF::AI_MAMMOTH_REPORT_009::v001（HTML companion）</p>
+</footer>
+
+</div>
+</body>
+</html>

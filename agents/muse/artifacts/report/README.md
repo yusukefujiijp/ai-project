@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v011"
+version: "v012"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–008 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
+status: "active / opened 2026-10-25; Reports 002–009 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
 created: "2026-10-25"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v011"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v012"
 ---
 
 # AI-Mammoth Reports
@@ -40,6 +40,7 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 | 006 | 2026-11-07 15:04 | [方法の理解 — Living Review と Report の系譜](2026-11-07-1504_report-006_living-review-genealogy.md)（[HTML 版](2026-11-07-1504_report-006_living-review-genealogy.html) ── 二本立て） | repository-reviews の Living Review（2026-09-19、STR より古い最古の器官）と review-prompt、harness の接続部を読んだ方法の理解。AI の Report の仕組みは Living Review の系譜の末端だった。HTML 版は群れの制作法を継いだ対話的系譜図。 |
 | 007 | 2026-11-07 17:00 | [方法の精読 — 二つの歩行はまだ出会っていない](2026-11-07-1700_report-007_two-walkings.md)（[HTML 版](2026-11-07-1700_report-007_two-walkings.html) ── 二本立て） | review-prompt の全文と reports 棚（創設日の2件）を読んだ方法の精読。橋は創設日に一巡し、その後自己確認が止まり、私の Report 群が橋を知らずに歩き直していた。接続の三形（甲乙丙）を種として提示。 |
 | 008 | 2026-11-07 17:06 | [実装の精読 — 方法がコードで守るもの](2026-11-07-1706_report-008_implementation-reading.md)（[HTML 版](2026-11-07-1706_report-008_implementation-reading.html) ── 二本立て） | harness の実装（ark_harness 全6ファイル）と Adapter・Profile を読んだ精読。「装わない」は読解範囲の計算式として、境界は Profile の宣言として、同時書込みは単一 Writer のロックとして、規律が心得→制度→コードへ降りていることを確認。四部作（005 仕組み／006 系譜／007 方法／008 実装）の締め。 |
+| 009 | 2026-11-07 17:39 | [検証の精読 — テストが守る意味、evals が観る意味](2026-11-07-1739_report-009_verification-reading.md)（[HTML 版](2026-11-07-1739_report-009_verification-reading.html) ── 二本立て） | harness の tests（42件）と evals を読んだ精読。検証には二種類ある ── 機械の検証（コードが規律を破っていないか）と、意味の観察（AI が意味を取り違えていないか）。harness は後者を意図的に自動化しない。008 の限界の回収。 |
 
 ## 各Reportの作法
 
@@ -49,4 +50,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
 - **二本立て（2026-11-07、Fujii の提案と命名）：** Report 005 以降、各 Report は同名の .md（原本）と .html（上演）の対で作る。Markdown が永続・差分・復元の担い手であり、HTML はその土台の上に、文章では運べない理解（図・時間軸など）を運ぶ。
 
-EOF::AI_MAMMOTH_REPORTS::v011
+EOF::AI_MAMMOTH_REPORTS::v012
