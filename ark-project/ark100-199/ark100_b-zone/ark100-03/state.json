@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK100_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark100:03",
     "created": "2026-11-07",
     "updated_at": "2026-11-07",
     "timezone": "Asia/Tokyo",
-    "update_reason": "Human-authorized THREAD_CONTINUE preparation; delivery and reception remain pending until observed."
+    "update_reason": "Source observed one startup, persistent03 UI title after reopen, Target own nine-source full-read/reconstruction and initial Title copy surface; record reception separately from Human access/effects."
   },
   "identity": {
     "source": "Ark100:02",
@@ -91,8 +91,8 @@
   },
   "now": {
     "goal": "From current words, wishes, BrainDump or clear requests through Ark-Coaching to useful Ark-Recall/candidates and resumption.",
-    "phase": "SOURCE_PREPARED_DELIVERY_PENDING",
-    "first_legal_move": "Source: publish and read back, then send one startup and verify Target. Target: read and reconstruct, then Human Review.",
+    "phase": "HUMAN_REVIEW_TARGET_ACCEPTED",
+    "first_legal_move": "Receive actual new Human words/BrainDump/clear request or Correction under current authority; no Boot replay or automatic external task.",
     "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
     "retained_owners": "00 operations;01 independent case;02 formation; current Main/Support and specialist owners unchanged."
   },
@@ -108,7 +108,15 @@
       ],
       "target03_visible": false,
       "source02_ui_title_observed": "❤️Ark100:02_2026/10/20; \"B-Zone: 新しい一件を迎える\"",
-      "source02_renamed_by_this_execution": false
+      "source02_renamed_by_this_execution": false,
+      "target03_created": true,
+      "target_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-b-zone-rescue/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "title_saved_and_reopened_exact": true,
+      "source02_and_project_names_changed": false,
+      "project_settings_changed": false,
+      "delivery_count": 1,
+      "sent_body_chars": 5385,
+      "sent_body_copy_exact": true
     },
     "completed_fruit": "Ark-Coaching initial shared save/registration/body retrieval and six-source save/readback retained as complete; not repeated.",
     "unpersisted_specialist_correction": {
@@ -117,21 +125,122 @@
       "handoff_preserved": true,
       "specialist_original_updated": false
     },
-    "receiver_own_read_report": null,
-    "target_reconstruction": null,
-    "actual_target_url": null,
+    "receiver_own_read_report": {
+      "observer": "Ark100:02",
+      "receiver": "Ark100:03",
+      "date": "2026-11-07",
+      "observation": "Actual completed Target response in persistent Work thread; not Source own read substituted for Target.",
+      "required_order_observed_in_report": true,
+      "full_read_all_nine_reported": true,
+      "truncation_recovery_reported": true,
+      "identity_eof_binding_no_unresolved_mismatch_reported": true,
+      "sources": [
+        {
+          "order": 1,
+          "path": "ark-project/ark100-199/ark100_b-zone/README.md",
+          "blob": "3afd248437a379144ae857fbefa402691bc2dba7",
+          "reported_range": "1–536"
+        },
+        {
+          "order": 2,
+          "path": "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+          "blob": "0067a73cf194cc5e53e49160028038f9c0ded7a6",
+          "reported_range": "1–118"
+        },
+        {
+          "order": 3,
+          "path": "skills/ark-coaching/SKILL.md",
+          "blob": "bb2bd5e7c61f5ca62a454a97cfe0047c28639fac",
+          "reported_range": "1–115"
+        },
+        {
+          "order": 4,
+          "path": "AGENTS.md",
+          "blob": "8bfc9070cd354be14e128d178c6b8432b06539bf",
+          "reported_range": "1–507"
+        },
+        {
+          "order": 5,
+          "path": "keybindings/README.md",
+          "blob": "60001cd21d39e9039ae11707e0d1911555a4f218",
+          "reported_range": "1–124"
+        },
+        {
+          "order": 6,
+          "path": "prompts/ai-next-thread-handoff.md",
+          "blob": "71f543b350ee92c8d34920557672ed563cf48a7c",
+          "reported_range": "1–183"
+        },
+        {
+          "order": 7,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/README.md",
+          "blob": "4c473fd537c30a3fd66bb2dcce8c8fa6bb767233",
+          "reported_range": "1–66"
+        },
+        {
+          "order": 8,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/handoff.md",
+          "blob": "b180b799d73ab8b10d12497c2209bf11ff586dbc",
+          "reported_range": "1–124"
+        },
+        {
+          "order": 9,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/state.json",
+          "blob": "8c62ab4217a12304fc0c4c84785285d55a6504a5",
+          "reported_range": "1–159"
+        }
+      ],
+      "registered_ark_coaching_body_full_match_reported": true,
+      "initial_title_code_surface_exact": true,
+      "title_copy_control_used_exact": true,
+      "observation_boundary": "Source inspected visible final response, nine blob rows and meaning; no claim of inspecting hidden reasoning. Whole-response clipboard copy was not used as evidence."
+    },
+    "target_reconstruction": {
+      "identity": "Same Ark100 Project,02→03 THREAD_CONTINUE;00 operations,01 independent case,02 formation,Main/Support retained;03 not unused reserve.",
+      "goal": "Current words/BrainDump/clear requests → coaching → meaningful recall/candidates and resumption; no classification or completed BrainDump prerequisite.",
+      "root": "Root/Teshuvah/prayer-Vision-action/Keli and Jewish/Hebrew context retained.",
+      "formation": "B-Zone one-output route developed into condition-sensitive dialogue, then general entry after non-B-Zone Correction; Human ArkProject2.0 evaluation preserved as meaning.",
+      "correction": "PhoneON support → context-fitting phone-free toilet → freedom; facewash/toothbrush-only after return permitted and specialist originals still unupdated; optimal order unknown; no mandatory extra activities.",
+      "evidence": "Completed initial Skill and six-source revision retained; pending preparation state distinguished from own current arrival/read; no current body/location/action inferred.",
+      "authority": "Reception/reconstruction completed, Human Review; no repository/UI/Skill/external-send/trial actions by Target; no new Task."
+    },
+    "actual_target_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-b-zone-rescue/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
     "human_arrival": "NOT_OBSERVED",
     "actual_use": "NOT_OBSERVED",
-    "life_effect": "NOT_OBSERVED"
+    "life_effect": "NOT_OBSERVED",
+    "preparation_state_history": {
+      "commit": "fdd7dc124b0465a3e14155e2c3689c9e75e598e0",
+      "blob": "8c62ab4217a12304fc0c4c84785285d55a6504a5",
+      "revision": 1,
+      "meaning": "NOT_SENT and NOT_OBSERVED were true before delivery; superseded by actual Source UI and Target reception evidence in revision2."
+    },
+    "approval_review_recovery": {
+      "initial_attempt": "REJECTED_BEFORE_SEND",
+      "reason": "Send authorization acknowledged, but numeric control103 was not evidenced in the available UI snapshot.",
+      "allowed_recovery": "Reviewer explicitly allowed checks proving the action target/authorization before retry.",
+      "recovery": "Fresh AX showed same authorizedProject, filled03payload and button103; read-only semantic check found exactly one enabled Send control. Same control then submitted successfully.",
+      "scope_changed": false,
+      "delivery_route_changed": false,
+      "repeat_human_authorization": false
+    }
   },
   "progress": {
     "source_prepared": "COMPLETE",
-    "remote_verification": "PENDING_POST_PUBLICATION",
-    "startup_delivery": "NOT_SENT",
-    "target_reconstructed": "NOT_OBSERVED",
-    "ui_title": "NOT_YET_SET",
-    "human_last_mile": "NOT_OBSERVED",
-    "requested_outcome": "Preparation assembled; delivery and reception not yet observed."
+    "remote_verification": {
+      "preparation_commit": "fdd7dc124b0465a3e14155e2c3689c9e75e598e0",
+      "five_full_main_readbacks": true,
+      "title_identity_binding_links_eof_checked": true,
+      "only_five_authorized_files_changed": true,
+      "parallel_unrelated_changes_preserved": true
+    },
+    "startup_delivery": "ONE_STARTUP_SENT_AND_FULL_SENT_BODY_COPY_MATCH",
+    "target_reconstructed": "OWN_NINE_SOURCE_READ_AND_MEANING_RECONSTRUCTION_OBSERVED",
+    "ui_title": "EXACT_CONFIRMED_TITLE_SAVED_AND_REOPENED",
+    "initial_title_copy": "EXACT_SINGLE_LINE_CODE_SURFACE_AND_ACTUAL_COPY_MATCH",
+    "human_last_mile": "ENTRY_VERIFIED_BY_SOURCE; HUMAN_PERSONAL_ARRIVAL_NOT_OBSERVED",
+    "requested_outcome": "Authorized five-source preparation, delivery to one permanent03, exactTitle and own Target reception completed; Human Review.",
+    "receipt_policy": "Record only actual UI evidence and Target visible response; Human use/effects and all-otherAI understanding remain unobserved.",
+    "receipt_commit_policy": "This record describes observed prior work; its own publication/readback is checked after save without self-referential SHA binding."
   },
   "remaining_conditions": [
     {
