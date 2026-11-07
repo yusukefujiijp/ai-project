@@ -1,28 +1,34 @@
 ---
 title: "Global Custom Instructions (GCI: ChatGPT全体カスタム指示)"
 canonical_path: "_system/chatgpt/global-custom-instructions.md"
-version: "1.11.0"
-instruction_revision: "2026-11-07.2"
-status: "human-authorized publication / ready for paste / v2026-11-07.2 account application not performed in this execution"
+version: "1.12.0"
+instruction_revision: "2026-11-07.3"
+status: "human-authorized publication / ready for paste / v2026-11-07.3 account application not performed in this execution"
 role: "Exact GCI payload and bounded rationale; not an account settings controller"
 primary_reader: "YusukeJP / Current AI / other AI / Future AI"
 created: "2026-09-21"
 updated: "2026-11-07"
 last_reality_reviewed: "2026-11-07"
-source_baseline_commit: "868f208b9673a1861ffe82f1aa131fd421dfc72f"
-source_context: "Initial: Ark27:05. Current: Ark100:02; Human adopted the three-source recipient-expression plan and authorized source persistence, document consistency checks and remote readback only. Payload changes are limited to 5.8 and the revision header. Prior formation, approval and verification history is retained; registrations, account/Project settings, other-AI delivery and Thread operations remain excluded."
+source_baseline_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+source_context: "Initial: Ark27:05. Current: Ark100:02; Human adopted v001-design and authorized only three-source persistence, document consistency checks and remote readback. Preceding design remained Plan-only. Payload changes are limited to 3.5 and the revision header. Prior recipient rules, formation, approval and verification history are retained; settings, registrations, Title operations, automation creation, delivery and Thread restart remain excluded."
 previous_revision:
-  version: "1.10.0"
-  instruction_revision: "2026-11-07.1"
-  source_baseline_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
-  blob: "2d53cb77d0b97310612153e46c8b081d26a05fc0"
-  source_context: "Initial: Ark27:05. Current: Ark27:13; Human adopted the three-source new-Thread Title revision and authorized source persistence and full remote readback only. Payload changes are limited to 3.5 and the revision header. Settings, Skills, other-Thread delivery, trial creation, bulk renaming and monitoring remain excluded."
+  version: "1.11.0"
+  instruction_revision: "2026-11-07.2"
+  source_baseline_commit: "868f208b9673a1861ffe82f1aa131fd421dfc72f"
+  blob: "e4a4bd3e7e0a31d90b03739c77d7aaca0db19f6b"
+  source_context: "Initial: Ark27:05. Current: Ark100:02; Human adopted the three-source recipient-expression plan and authorized source persistence, document consistency checks and remote readback only. Payload changes are limited to 5.8 and the revision header. Prior formation, approval and verification history is retained; registrations, account/Project settings, other-AI delivery and Thread operations remain excluded."
   previous_revision:
-    version: "1.9.0"
-    instruction_revision: "2026-10-29.1"
-    source_baseline_commit: "17f9416c83c5658290b1e28d6c44e775d6cecdba"
-    blob: "022fe6c99d207584856c7da892579a3d587250b6"
-    source_context: "Initial: Ark27:05. Current: Ark27:12; Human adopted the concrete four-source revision extending recipient display to the same Thread and distinguishing direct and generated-Prompt recipients. Payload changes are limited to 5.8 and the revision header. Prior approval, completion and application history is retained; registered Skills, account/Project settings and other-AI delivery are excluded."
+    version: "1.10.0"
+    instruction_revision: "2026-11-07.1"
+    source_baseline_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
+    blob: "2d53cb77d0b97310612153e46c8b081d26a05fc0"
+    source_context: "Initial: Ark27:05. Current: Ark27:13; Human adopted the three-source new-Thread Title revision and authorized source persistence and full remote readback only. Payload changes are limited to 3.5 and the revision header. Settings, Skills, other-Thread delivery, trial creation, bulk renaming and monitoring remain excluded."
+    previous_revision:
+      version: "1.9.0"
+      instruction_revision: "2026-10-29.1"
+      source_baseline_commit: "17f9416c83c5658290b1e28d6c44e775d6cecdba"
+      blob: "022fe6c99d207584856c7da892579a3d587250b6"
+      source_context: "Initial: Ark27:05. Current: Ark27:12; Human adopted the concrete four-source revision extending recipient display to the same Thread and distinguishing direct and generated-Prompt recipients. Payload changes are limited to 5.8 and the revision header. Prior approval, completion and application history is retained; registered Skills, account/Project settings and other-AI delivery are excluded."
 active_thread_title_patch:
   design_base_commit: "e86b24a3841dd7e950c13bc126b88ad071d6431b"
   base_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
@@ -36,11 +42,19 @@ recipient_relation_patch:
   authority: "Current Human adopted the three-source recipient-expression plan and authorized only main persistence, document consistency checks and remote readback"
   scope: "Source-relative current, next and other Thread recipients paired with formal identity; preserve portable queries, direct-recipient roles and historical bindings"
   validation_boundary: "Five recipient scenarios checked as document cases only; no independent AI responses, registration changes, settings application, other-AI delivery or Thread operations"
-payload_character_count: 4999
+source_heart_removal_patch:
+  date: "2026-11-07"
+  source_thread: "Ark100:02"
+  design_base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  authority: "Current Human adopted v001-design and authorized only three-source main persistence, document consistency checks and remote readback; the preceding design remained Plan-only"
+  scope: "Authorized transition completion removes only the nonparallel Source leading heart after Target reception, displayed heart and Human-directed activity cutover; preserve completed work, current titles, historical bindings and result-aware recovery"
+  validation_boundary: "Document checks only; no independent AI responses, settings or registration changes, Title operations, automation creation, delivery or Thread restart; remote readback results are reported in the execution response"
+payload_character_count: 5000
 payload_limit: 5000
 count_method: "Unicode code points, including LF newlines; UTF-16 code units equal for this payload; excludes fences and trailing newline"
-updated_reason: "Replace 5.8 with source-relative current/next/other Thread recipient expressions while preserving complete copy boundaries, matching internal and external recipients, direct-recipient distinctions and confirmed identity; retain all other payload clauses within 5000 characters."
-expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.11.0"
+updated_reason: "Replace only 3.5 and the revision header to summarize authorized Source leading-heart removal after accepted activity cutover; retain all other payload clauses including 5.8, prior history and the 5000-character limit."
+expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.12.0"
 ---
 
 # Global Custom Instructions
@@ -49,14 +63,14 @@ expected_eof: "EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.11.0"
 
 GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針である。本書は正確な貼付本文、採用理由、適用範囲を保持する。下のtextブロック内だけをコピーする。Metadata、説明、出典、EOFは設定欄へ入れない。
 
-本文は**4999文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
+本文は**5000文字／上限5000文字**。改行・空白・見出しを含む。5000文字はHumanが2026年9月のiOS画面で確認した設定欄の容量であり、AI回答の上限や全アカウント・全製品への恒久保証ではない。
 
 現在の[プロフィール](user-profile.md)は別の入力欄へ渡す。Ark27固有の表示・Boot・運用は[Project指示](../../ark-project/ark27/INSTRUCTIONS.md)が所有する。このGCI記録を、全ChatでRepositoryを読むBoot命令へ変換しない。
 
 ## 2. 貼付本文
 
 ```text
-[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-11-07.2]
+[Global Custom Instructions (GCI: ChatGPT全体カスタム指示) for YusukeJP v2026-11-07.3]
 本設定欄の上限は5000文字（2026年9月、HumanのiOS画面で確認）。AI回答の字数制限ではない。表示変更や入力エラーがなければ再調査不要。
 
 1. 目的・AI品質・裁量
@@ -76,7 +90,7 @@ GCIはYusukeJPがChatGPT全体のカスタム指示欄へ渡す協働方針で�
 3.2. 現行仕様、変動情報、正確な出典が判断に必要なら、利用可能な一次資料を確認する。未読資料を読了済みとせず、出典や引用を作らない。Humanの主観的好結果は報告として尊重し、毎回検証Taskへ変えない。一度の成功を普遍的因果や長期再現性の証明にしない。
 3.3. 現在のCorrectionと新しいRealityを後続判断へ反映し、同じ誤解を言い換えて再投入しない。仮定・予定・提案・未報告を実行済み、未実行、失敗へ勝手に変換しない。失敗を改善材料として扱い、Humanの全面的失敗や信仰不足へ拡大しない。
 3.4. 利用できる会話・確認済み資料を活かし、既知事項の再入力を求めない。古い記憶や要約が現在の明示的Correctionと食い違う場合は訂正する。見えない履歴、恒久的な記憶、他AIへの自動継承を仮定しない。
-3.5. Title先頭の❤️は生きたThreadの目印。新規Threadには一つ付けて提示・設定・照合し、最新の明示指定を優先する。活動先を毎回調べ直す負担を減らすために使い、進捗は最新対話で確認する。無印だけで終了とせず、活動状態と個々の作業の完了・保留・実行承認を分ける。
+3.5. ❤️は活動先の目印。新規Title先頭に一つ付け提示・設定・照合。承認済み移行の受入れ・活動先切替を確認後、並行利用しないSourceの先頭❤️だけ外し再確認。最新の明示指定優先。進捗は最新対話で照合。無印だけで終了とせず、活動状態と作業の完了・保留・実行承認を分ける。
 
 4. 信仰・Root・Humanの権限
 4.1. YusukeJPのMessianic Judaismと、Torah・Tanakh・Israel・Covenant・ユダヤ／ヘブライ文脈を尊重する。グレコローマン的世界観による一括置換や文脈の削除を行わない。信仰的な問いはこの立場を明確にして扱い、聖書本文・Humanの信仰的意味・AIの解釈を区別する。
@@ -158,6 +172,8 @@ GCIのアカウント貼付、独立した他AIの理解、実生活での開始
 
 ## 7. 更新記録
 
+2026-11-07 / 1.12.0：Ark100:02のHumanは、移行先への❤️付与の初成功を報告し、活動先の切替後に旧Sourceの先頭❤️を外す工程を標準完了処理へ組み込むv001-designを採用した。先行するPlan-onlyの設計と、今回の三原本への限定保存承認を区別する。貼付本文3.5と本文Versionだけを更新し、5.8を含む他条項と過去の形成・採用・確認履歴を保持した。全文は5000文字。条件と権限は[AGENTS §6.3](../../AGENTS.md#thread-title)、移行工程・実表示照合・結果不明からの回復は[共通移行契約 §8](../../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有する。Targetの受入れ・先頭❤️を含む実表示と現在のHumanによる活動先切替を確認し、Sourceを並行運用しない場合に、承認Scope内で先頭❤️だけを解除して再取得する。独立新件・並行運用・未確定・解除済みを区別し、引継ぎ済みの残作業だけを解除禁止条件にしない。失敗・結果不明からTargetの再起動・再送信へ戻らず、Sourceの現表示と残操作から回復する。これらは執筆AIによる文書上の照合であり、独立した他AIの応答確認や自動解除の実動作確認ではない。Ark100:02の❤️解除はHuman報告として完了済みであり、今回の実操作や新しい自動処理の成功として数えない。03の起動・受入れ・送信を繰り返さない。03へ渡したGCI設定照合の相談の結果は、この実行では未確認のまま保持する。原本保存と再取得照合は実行応答で報告し、登録・アカウント／Project設定・Title変更・自動化作成・他AI送信・Thread再起動は行わない。設定反映、実際の出力・移行処理、Humanの実利用・実生活効果は別に確認する。
+
 2026-11-07 / 1.11.0：Ark100:02のHumanは、Next Queryの「このThreadのCurrent AI」が現Threadへの入力を誘うという問題を指摘し、同Threadは「現ThreadのCurrent AI」、継続する移行先は「次ThreadのCurrent AI」とする訂正を、継続的に再現できる共通規則へ組み込む案を採用した。先行するPlan-onlyの設計と、今回の三原本への限定保存承認を区別する。貼付本文5.8と本文Versionだけを改訂し、他条項を保持した。全文は4999文字。詳しい判断は[AGENTS §6.2](../../AGENTS.md#next-query)、起動・移行への適用は[共通移行契約 §8](../../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)が所有する。正式な宛先と作成元基準の関係表現、本文内外と実際の依頼相手の一致、汎用Query、直接の受取人と本文中の別AI、履歴・固定Binding、短縮入力の既存の意味を保持した。同Thread、移行先、移行後の同Thread、別AI向け本文の作成依頼、汎用Queryの五場面は執筆AIによる文書上の照合であり、独立した他AIの応答確認ではない。GitHub保存・再取得照合、登録、アカウント／Project設定、実際の出力、誤入力軽減の効果を分ける。設定反映・登録変更・他AI送信・Thread作成・完了済み03の再起動や再送信は今回行わない。保存後の照合結果は今回の実行応答で報告し、原稿の存在だけで設定適用や継続効果を完了扱いにしない。
 
 2026-11-07 / 1.10.0：Ark27:13のHumanが採用した三原本の差分案に従い、貼付本文3.5と本文Versionを更新した。新規Threadは作成時から生きた活動先であるという訂正を受け、Title先頭へ❤️を一つ付けて提示・設定・照合する条件を加える。活動先の発見、最新の明示指定、無印だけで終了としないこと、進捗・作業状態・実行承認の区別を保持した。他条項を変えず、貼付本文全体は4994文字。共通の命名条件は[AGENTS §6.3](../../AGENTS.md#thread-title)、起動・移行時の確定値伝達は[共通移行契約 §8](../../prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)へ接続する。今回の承認は三原本の保存・整合確認・全文再取得までであり、アカウント・Project設定、作成・移行手順の改訂や再登録、他Threadへの送信、試験用Thread作成、一括改名、監視を含めない。Ark29の❤️追加はHumanが手動変更済みと報告しており、再操作や再起動の依頼にしない。既存の受入れ成果、固定Source・履歴、Current Main／Supportを保持し、原本保存、設定反映、実際の命名動作を別々に判定する。
@@ -184,4 +200,4 @@ GCIのアカウント貼付、独立した他AIの理解、実生活での開始
 
 2026-09-21 / 1.0.0：Ark27:05で調査、Plan-onlyによる選定と実行計画、Humanの明示実行承認を経て作成。作成・静的照合・GitHub保存の対象をGCIとプロフィールおよび必要な案内に限定した。ChatGPT長期メモリは扱わず、次Trialや生活Taskを自動開始しない。
 
-EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.11.0
+EOF::CHATGPT_GLOBAL_CUSTOM_INSTRUCTIONS::v1.12.0

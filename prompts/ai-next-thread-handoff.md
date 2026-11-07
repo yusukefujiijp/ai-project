@@ -5,17 +5,21 @@ version: "v003-human-authorized"
 date: "2026-10-01"
 date_scope: "Asia/Tokyo adoption date; corresponding UTC date 2026-09-30"
 updated: "2026-11-07"
-revision: "2026-11-07-thread-recipient-context"
-revision_authority: "Ark100:02 Human adopted the three-source recipient-expression plan and authorized source persistence, document consistency checks and remote readback only"
-revision_scope: "Apply AGENTS source-relative recipient expressions in section 8; preserve exact titles, portable-query rules, prior copy surfaces, v003 identity, reading, authority, reconstruction, historical bindings and completed reception"
+revision: "2026-11-07-source-heart-removal"
+revision_authority: "Ark100:02 Human adopted v001-design and authorized only three-source persistence, document consistency checks and remote readback; preceding design remained Plan-only"
+revision_scope: "Add scoped Source leading-heart removal and result verification in section 8; preserve reception, recipient rules, v003 identity and EOF, exact historical bindings, completed work and result-aware recovery without restarting Target"
 previous_revision:
-  revision: "2026-11-07-active-thread-title"
-  authority: "Ark27:13 Human adopted the three-source new-Thread Title plan and authorized source persistence, consistency checks and full remote readback only"
-  scope: "Apply the active-thread Title rule before confirmation and preserve exact transfer and observable naming evidence; prior copy surfaces and v003 reading, authority, reconstruction and binding boundaries retained"
+  revision: "2026-11-07-thread-recipient-context"
+  authority: "Ark100:02 Human adopted the three-source recipient-expression plan and authorized source persistence, document consistency checks and remote readback only"
+  scope: "Apply AGENTS source-relative recipient expressions in section 8; preserve exact titles, portable-query rules, prior copy surfaces, v003 identity, reading, authority, reconstruction, historical bindings and completed reception"
   previous_revision:
-    revision: "2026-10-10-human-copy-surfaces"
-    authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
-    scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
+    revision: "2026-11-07-active-thread-title"
+    authority: "Ark27:13 Human adopted the three-source new-Thread Title plan and authorized source persistence, consistency checks and full remote readback only"
+    scope: "Apply the active-thread Title rule before confirmation and preserve exact transfer and observable naming evidence; prior copy surfaces and v003 reading, authority, reconstruction and binding boundaries retained"
+    previous_revision:
+      revision: "2026-10-10-human-copy-surfaces"
+      authority: "Ark99:00 Human requested thicker reusable Skill guidance and a thinner invocation after correcting source-and-target copy availability"
+      scope: "Additive Human interface clarification; v003 reading, authority, reconstruction and binding boundaries retained"
 active_thread_title_patch:
   design_base_commit: "e86b24a3841dd7e950c13bc126b88ad071d6431b"
   base_commit: "24bd1d26cce35a11c1da17ccd9f40e4a0514aaa7"
@@ -30,6 +34,14 @@ recipient_relation_patch:
   authority: "Current Human adopted the three-source recipient-expression plan and authorized only main persistence, document consistency checks and remote readback"
   scope: "Source-relative current, next and other Thread recipients paired with formal identity; preserve portable queries, direct-recipient roles and historical bindings"
   validation_boundary: "Five recipient scenarios checked as document cases only; no independent AI responses, registration changes, settings application, other-AI delivery or Thread operations"
+source_heart_removal_patch:
+  date: "2026-11-07"
+  source_thread: "Ark100:02"
+  design_base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  authority: "Current Human adopted v001-design and authorized only three-source main persistence, document consistency checks and remote readback; the preceding design remained Plan-only"
+  scope: "Authorized transition completion removes only the nonparallel Source leading heart after Target reception, displayed heart and Human-directed activity cutover; preserve completed work, current titles, historical bindings and result-aware recovery"
+  validation_boundary: "Document checks only; no independent AI responses, settings or registration changes, Title operations, automation creation, delivery or Thread restart; remote readback results are reported in the execution response"
 filename: "ai-next-thread-handoff.md"
 canonical_path: "prompts/ai-next-thread-handoff.md"
 class: "reusable_prompt"
@@ -175,6 +187,14 @@ Humanが必要な操作をその場で完結できるよう、実際のThread起
 Ark協働の新規Threadでは、[新規Thread Title規則](../AGENTS.md#thread-title)をTitleの確定前に適用し、先頭の❤️も確定値に含める。準備元・起動本文・受入れ先・実際の名称設定には同じ確定値を用い、受入れ側で再生成しない。今回必要な実表示の照合には❤️の位置・重複も含める。現在のHumanによるTitle訂正と、過去の固定Title・Bindingを区別し、訂正だけを理由に成立済みの読解・受入れを再演しない。
 
 Title等の確定値はCompile Once, Echo Exactly。最新のHuman指定と適用Runtimeから確定し、識別子・日付・区切り記号・引用符・名前を、準備元・起動本文・受入れ先で一致させる。受入日等で独自に再生成しない。Exactnessを全文章へ広げず、Current Humanの訂正を尊重する。架空の日付・番号・UI成功を作らない。
+
+活動先を切り替える移行の計画・実行依頼には、[AGENTS §6.3](../AGENTS.md#thread-title)に従うSourceの先頭❤️解除と実表示確認を含め、対象となるSource一件と現在の承認範囲を明確にする。新規Threadの作成だけを解除条件にせず、同節の受入れ・表示・切替・並行運用の条件を満たしてから行う。
+
+移行担当AIは、Source／Targetの識別情報と現表示を照合し、Sourceの先頭の活動目印❤️だけを除いたTitleを変更後の値として扱う。他の文字列を保持して更新し、Sourceの変更後表示を再取得して一致を確認する。Targetの❤️は保持する。既に解除済みの操作を繰り返さず、Human報告とAIによる直接確認を区別する。
+
+解除が未完了・失敗・結果不明の場合は、成立済みのTargetの起動・受入れを保持し、Sourceの現表示と残操作から回復する。操作経路や権限が不足する場合は、完了した範囲と必要な残操作を示す。この不足だけからTargetの再起動・再送信へ戻らない。
+
+Sourceの現在の表示名と起動時の確定Title・履歴・固定Bindingを区別し、過去の値を遡って書き換えない。以後のCurrent宛先には確認できた現表示を使う。Sourceの表示更新、Targetの受入れ、Humanの到達、実利用・実生活効果を別々に報告し、この処理を常時監視や全Threadの一括整理へ広げない。
 
 専用のSTOP・Failure・Exact Output等が適用される場合は、その応答条件を優先する。コピー面の不足だけを修正するために、成立済みのBoot・全文読解・再構成を再演しない。Title再掲を毎応答の義務や既入力の処理を待たせる追加承認にせず、必須Gate後は現在のHuman入力へ接続する。
 

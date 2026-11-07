@@ -1,7 +1,7 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.18-candidate"
+version: "v004.19-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
@@ -179,7 +179,16 @@ recipient_relation_patch:
   authority: "Current Human adopted the three-source recipient-expression plan and authorized only main persistence, document consistency checks and remote readback"
   scope: "Source-relative current, next and other Thread recipients paired with formal identity; preserve portable queries, direct-recipient roles and historical bindings"
   validation_boundary: "Five recipient scenarios checked as document cases only; no independent AI responses, registration changes, settings application, other-AI delivery or Thread operations"
+source_heart_removal_patch:
+  date: "2026-11-07"
+  source_thread: "Ark100:02"
+  design_base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  base_commit: "c6d968c98664d61036c31d1a7fa6724f6ef95080"
+  authority: "Current Human adopted v001-design and authorized only three-source main persistence, document consistency checks and remote readback; the preceding design remained Plan-only"
+  scope: "Authorized transition completion removes only the nonparallel Source leading heart after Target reception, displayed heart and Human-directed activity cutover; preserve completed work, current titles, historical bindings and result-aware recovery"
+  validation_boundary: "Document checks only; no independent AI responses, settings or registration changes, Title operations, automation creation, delivery or Thread restart; remote readback results are reported in the execution response"
 updated_reason:
+  - "2026-11-07: Make Source leading-heart removal and displayed-result verification a scoped transition completion step in section 6.3; preserve independent and parallel Threads, already-completed operations, transferred work, historical bindings and current Human authority."
   - "2026-11-07: Add source-relative recipient expressions in section 6.2 and preserve direct-recipient, portable-query, copying, history and authority boundaries; connect GCI and the shared handoff contract without changing registrations or settings."
   - "2026-11-07: Add section 6.3 for active new Thread Titles and connect the shared handoff interface; distinguish source persistence, settings and observed naming behavior without replaying completed reception."
   - "2026-11-04: Add the Human-adopted Recall and Coaching responsibility in section 3, connect its formation lesson and recall entry, and preserve all existing authority, quality and evidence boundaries."
@@ -463,7 +472,11 @@ Next Queryを短縮入力で採用する場合は、[キーバインディング
 
 ❤️を含めた確定Titleを、今回必要な提示・受渡し・名称設定・照合で共通に用いる。名称設定は現在の権限と実際の操作経路に従い、Titleの提示、設定操作、保存後の実表示確認を分ける。直接設定できない場合はコピー可能なTitleと必要な残操作を示し、設定済みとは報告しない。
 
-この規則だけで、既存Titleの一括変更、固定Source・履歴・Bindingの変更、完了済み起動の再演、❤️の自動除去を開始しない。起動・移行時のコピー面と受入れ条件は[共通移行契約§8](prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)に従う。
+活動先を切り替える移行では、Sourceの先頭❤️の解除と変更後確認を、Title更新を含む現在の承認Scope内の標準完了処理に含める。Targetの受入れ・先頭❤️を含む実表示と、活動先を切り替える現在のHuman指定が確認でき、Sourceを並行運用しない場合、移行担当AIがSourceの先頭の活動目印❤️だけを外す。他のTitle文字列を保持し、変更後の実表示を再取得して照合する。同じ承認範囲の工程ごとに再承認を要求せず、最新のHuman Correction・STOPを優先する。
+
+独立した新件の追加、Sourceの並行運用、Targetの受入れや活動先切替が未確定の場合は解除しない。既に解除済みなら重複操作しない。次Threadへ引継ぎ済みの残作業があることだけを解除の禁止条件にせず、目印の解除を成果の完了や所有責務の消失とも扱わない。
+
+この規則だけで、既存Titleの一括変更、固定Source・過去の確定Title・履歴・Bindingの変更、完了済み起動の再演を開始しない。起動・移行時のコピー面、受入れ、活動目印の更新と結果確認は[共通移行契約§8](prompts/ai-next-thread-handoff.md#8-human-interface-and-accountable-delegation)に従う。
 
 ## 7. Capture, Security, and Stop / 価値を失わず止める
 
