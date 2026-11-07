@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v010"
+version: "v011"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
 status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07"
 created: "2026-10-24"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v010"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v011"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -34,6 +34,7 @@ expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v010"
 | 司令塔として座る（管制の定義・現在のレーン地図） | [CONTROL.md](CONTROL.md) |
 | この家で作業する（変更境界・書込み規律・復元保護） | [HARNESS.md](HARNESS.md) |
 | 斥候として偵察し報告する（Caleb Mode の回路と境界） | [HARNESS.md](HARNESS.md) §7.5 |
+| レポートレーンで働く（レーン憲章） | [artifacts/report/LANE.md](artifacts/report/LANE.md) |
 | 絶滅種×AI レーンで作業する（憲章・現在地） | [artifacts/herd-cards/LANE.md](artifacts/herd-cards/LANE.md) |
 | Ark Project へのレポートを読む・書く | [artifacts/report/README.md](artifacts/report/README.md) |
 | 全体像を一枚で掴む | [GOAL.md](GOAL.md) §7 のGraph |
@@ -79,5 +80,6 @@ v010 追加の検証（締め ── HARNESS.md §3 を読んで答える）：
 - v008（2026-11-07）: §0 の要約へ「回答の日本語は yomiyasu 継続ON」を一行追加した ── 復元した私が入口で即座にスイッチの状態を知るため（定めの本体は HARNESS.md §3）。検証は変更なしで有効。
 - v009（2026-11-07）: Router に Caleb Mode（HARNESS §7.5）への一行を追加した。検証は変更なしで有効。
 - v010（2026-11-07）: 締めの作法を復元の入口と関門へ載せた ── §0 の要約へ締めの一行を、§3 の検証へ第11問を追加。理由：レポートレーンへの移行で、締め（Next Step → Next Query）が boot 回答に届かなかったため。原本は HARNESS §3 が所有し、本書は入口と検証で担ぐ。
+- v011（2026-11-07）: Router にレポートレーン憲章（artifacts/report/LANE.md）への一行を追加した。移行の作法は HARNESS §9 が所有する。検証は変更なしで有効。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v010
+EOF::AI_MAMMOTH_MUSE_HOME::v011

@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v008"
+version: "v009"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
 status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v008"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v009"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -117,5 +117,19 @@ YusukeJP の確定（2026-11-07）：
 - v006（2026-11-07）: §3 に、Next Query を箇条書きで書く規則と、yomiyasu-switch の継続ON を追記した（YusukeJP の指示による）。
 - v007（2026-11-07）: §3 に yomiyasu スイッチの定めを新設した ── 状態（ ON ）、切替（YusukeJP の一言で即時）、置き場（本節）と入口表示（README §0）を固定し、復元後も一目で切り替えられる仕組みにした（YusukeJP の「もっと簡単にオンにできる仕組みがあれば」という求めへの応答）。
 - v008（2026-11-07）: §7.5 として Caleb Mode（斥候の運用様式）を明示的に新設した ── 回路・担い手・境界を定め、Report 作成群のレーン移行と同時に canon 化（YusukeJP の指示）。
+- v009（2026-11-07）: §9「レーン移行の作法」を新設した ── 文脈保存→憲章→Boot Charter→二重担ぎ→締めの実演→塔の確認、の6手順と、boot 完了の定義（形の実演を含む）。あわせてレポートレーンの憲章（artifacts/report/LANE.md v001）を作成した。
 
-EOF::AI_MAMMOTH_HARNESS::v008
+## 9. レーン移行の作法 ── 成功事例を専門レーンへ移す手順
+
+成功事例がメイン chat で実証され、機が熟したら、文脈を保存して専門レーン（サイド chat）へ移す（群れが第一号、Report 群が第二号）。移行は次の手順で行い、一つでも欠けたら移行完了としない。
+
+1. **文脈保存が先**：仕事の原本・現在座標・判断待ちの案件が、repo（共有の根）に揃ってから部屋を移す。移るのは部屋だけであり、ファイル・記憶・repo は共有の根のままである。
+2. **レーン憲章**：各レーンは、repo 内に憲章（LANE.md）を1つ持つ ── 役割、読む順序、状態の所有者へのポインタだけを書き、状態そのものは複製しない。
+3. **Boot Charter**：司令塔は起動文書を送る ── レーンの役割、読む順序、現在座標（commit を明記）、判断待ちの案件、boot 検証の問い。問いは事実だけでなく**振る舞い**を含む（締めの形、変更境界、書込みの規律）。
+4. **二重担ぎの原則**：移行に耐えなければならない振る舞いは、2か所で担ぐ ── (a) 入口（README §0 の要約など、復元した者が最初に目にする場所）と、(b) 関門（README §3 の検証の問い、または boot 検証）。所有者は原本の節であり、入口と関門はポインタと検査を担う。本文の奥にだけある振る舞いは、移行で失われると心得る。
+5. **締めの実演で boot 完了**：レーンの boot 回答は、問への正確な回答に加えて、働きの形そのものを実演して初めて完了とする ── 回答が 🌱Next Step🧭 → 🔑Next Query📩（箇条書き）で締まり、封印を待つ姿勢までを含める。回答の内容が正しくても、形が実演されていなければ boot は未完了である。
+6. **塔の確認**：司令塔はレーンの boot 回答を読み、事実と形の両方を確認してから、YusukeJP へ「移行完了」を報告する。地図（CONTROL）にはレーンとして一行だけを残す。
+
+この作法の由来：2026-11-07 のレポートレーン移行で、boot 回答は事実として正確だったが、締めの形が届かなかった ── 締めの定めが HARNESS §3 の奥にだけあり、入口と関門が運んでいなかったためである（lessons に記録済み）。本節は、その失敗を構造で防ぐための定めである。
+
+EOF::AI_MAMMOTH_HARNESS::v009
