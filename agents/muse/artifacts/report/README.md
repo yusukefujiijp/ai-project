@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25"
+status: "active / opened 2026-10-25; Report 002 added 2026-11-07"
 created: "2026-10-25"
-updated: "2026-10-25"
+updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v001"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v002"
 ---
 
 # AI-Mammoth Reports
@@ -33,6 +33,7 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 | No. | 提出日時 (JST) | Report | 要旨 |
 |---|---|---|---|
 | 001 | 2026-10-25 07:28 | [中核理解 — Ark Projectとは何か](2026-10-25-0728_report-001_ark-core-understanding.md) | Root README・ARK・AGENTSを全文熟読した最初の理解。ArkはFile集合ではなく有機的協働Systemであり、私の復元設計は「AI側のCross-State Handoff」としてArkの構造と同型だった。 |
+| 002 | 2026-11-07 11:27 | [形の理解 — ark-project のトポロジーと進行中の糸口](2026-11-07-1127_report-002_ark-project-topology.md) | ark-project 全21章の構成と主要章の本文、Domain README §0 を読んだ形の理解。ark-project は章の連合体（入口・安定核・待機場・部屋）であり、現在の前線は Main Ark27:13／Support Ark28:08、Ark29:02 への Chief 後継準備が進行中。 |
 
 ## 各Reportの作法
 
@@ -41,4 +42,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 理解が浅かった点は、訂正として正直に書く。それも成長の記録である。
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
 
-EOF::AI_MAMMOTH_REPORTS::v001
+EOF::AI_MAMMOTH_REPORTS::v002
