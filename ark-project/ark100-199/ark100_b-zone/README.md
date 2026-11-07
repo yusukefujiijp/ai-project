@@ -462,7 +462,26 @@ B-Zoneの専門的な支援、既存ケース、未使用予備のGoalを保持�
 
 ### 2026-11-07：継続拠点への改訂・確認範囲
 
-六原本への採用・限定保存承認は確認済み。本文・形式と保存後の再取得照合は、この改訂の実際の結果に基づいて更新する。過去のSkill検証を今回の改訂版へ流用しない。
+六原本への採用・限定保存承認に基づき、[改訂commit 22e3a675](https://github.com/yusukefujiijp/ai-project/commit/22e3a6751d289db023392fcd08208bcbd154f1a4)をmainへ反映した。設計基点 `87f5f17d2f093dd5313964b4205d53b7791918cf` と実行直前のmain `77da336ce3d248766a083861f8c510dbaa2a43f1` を比較し、対象六原本に並行変更がないことを確認したうえで、後者のTreeと履歴を保持して保存した。
+
+保存後、六原本をmainから再取得し、採用案に実際の承認・更新理由・形式整合を反映した保存対象本文と、それぞれ全文一致することを確認した。
+
+| 対象 | 今回の版 | 確認 |
+|---|---|---|
+| Ark100 README | v006-human-authorized | 全文一致 |
+| Project INSTRUCTIONS | v002-human-authorized | 全文一致 |
+| 00 README | v002-human-authorized | 全文一致 |
+| Ark Domain README | v011-human-authorized | 全文一致 |
+| Ark-Coaching README | v0.1.1 | 全文一致 |
+| Repository README | v024 | 全文一致 |
+
+今回の文書確認では、六つの既存Pathだけが変更されていること、YAML・Identity・固定Source URL・宣言と末尾のEOF・版情報・追加リンク・一般相談と00の読取順を照合した。元からEOF宣言のない二READMEへEOFを追加していない。B-Zoneの§3.1–3.7と形成履歴、00の初回Title・起動Query、Ark-Coachingの既存利用Queryは保持した。
+
+これは今回の保存本文・文書形式・取得についての確認である。別AIを起動した応答確認、今回の改訂を使ったHumanの実利用、実生活効果の確認は行っていない。過去の限定応答確認を今回の検証結果へ流用しない。
+
+Ark-Coachingとb-zoneの登録本文は今回も全文取得でき、変更前からの共有SKILL.mdとの全文一致を確認した。登録の作成・更新は今回行っておらず、共有原本と既存登録の利用可能性を確認した範囲である。recall-hubを含むSKILL.md、Skills Hub、AGENTS、ARK.md、01の経験原本は今回の変更対象外として保持した。
+
+この段落は上記commitの保存後に観測した結果の追記であり、新しい支援方法や実行権限を追加するものではない。
 
 Project名・02のTitleは候補のまま、UI名称・Project指示欄・他AIへの反映は今回の実行対象外。既存Skill本文・登録、01の経験原本、別管理のB-Zone側Correctionは変更しない。現在の予備残数、実利用と実生活効果は未確認である。
 
