@@ -1,7 +1,7 @@
 ---
 title: "AI専用Graph Mode / ai-graph-mode"
 contract_version: "v003"
-status: "Human-adopted; shared publication and personal registration in progress"
+status: "Shared source verified; personal skill installed and read back; post-install Graph execution not tested"
 updated: "2026-11-07"
 ---
 
@@ -80,7 +80,18 @@ READMEと登録情報の標準Queryは意味を一致させる。READMEや形成
 
 共有原本の保存、保存後の全文再取得、個人Skillへの登録、登録本文の再取得、実際の呼出し、Humanの表示と実利用の効果を区別する。
 
-2026-11-07、Humanは本Skillの本文・利用README・登録情報とHub追加案を採用し、共有保存、個人登録、必要な再取得確認を承認した。現在はその実行中である。保存・登録・再取得の成立は、実際の結果を確認してから本節へ記録する。今回の範囲にはGraphの再実行、図の再生成、既存Graph系Skill変更、共有標準化、他AIへの送信・起動、自動監視を含まない。
+### 2026-11-07：共有保存・個人Skill登録の確認
+
+Humanは本Skillの本文・利用README・登録情報とHub追加案を採用し、共有保存、個人登録、必要な再取得確認を承認した。
+
+- 共有保存：[初回保存commit](https://github.com/yusukefujiijp/ai-project/commit/2166b2877655d094abd568ea88c7e615582d2c32)でSKILL.md・README.md・agents/openai.yamlを作成し、Skills Hubへ追加した。並行追加された既存43件を保持し、この時点のHubを44件・v0.55.0へ整合させた。四ファイルをmainから全文再取得し、保存予定本文との一致を確認した。
+- 個人登録：正式な作成手順で形式検証を通し、ai-graph-modeとして登録した。登録後の保存先から、有効な同名Skillが一件であること、本文・表示名・説明・標準Query・明示呼出し設定を再取得して確認した。実際のGraph処理は起動していない。
+- 本文の同一性：登録後のSKILL.mdは共有原本とバイト一致した。共有・登録共通のSHA-256は `3e011bf2cda7fe9d54583e3cd44f05d330afb8417173d2e4082eb607397f5b0e`。採用済みv003の意味とExact EOFを保持した。
+- 設定の同一性と差分：agents/openai.yamlの採用項目であるdisplay_name・short_description・default_prompt・allow_implicit_invocationは、共有版と登録版で値が一致した。allow_implicit_invocationはfalseである。登録基盤によるYAML表記の整形、icon_small／icon_large、productsの付加と表示用icon.svgの生成を確認したため、設定ファイル全体のバイト一致とは報告しない。これらの配布情報を共有原本へ逆同期せず、採用した実行契約・標準Queryとは分けて扱う。
+- 入口の確認：共有原本URLは実在し、全文を取得できた。READMEの標準Queryと登録設定のdefault_promptは一致する。現在の会話のSkill一覧への反映、HumanがSkills画面で選択したこと、短いQueryから実際に三点一組を実行したことは、この登録確認では観測していない。
+- 検証範囲：Graphの再実行、図の再生成、既存Graph系Skill変更、共有標準化、他AIへの送信・起動、自動監視は行っていない。Human端末表示、継続利用の効果、Visualizeの一般的な優越性は未確認のまま保持する。
+
+本記録は共有保存と個人登録の確認であり、採用済みの試行を再演した証拠ではない。保存された本文、登録された入口、実際の呼出し挙動、Humanの実利用を別々に扱う。
 
 Root・Teshuvah・Humanの権限・GuardはSKILL.mdと現在の適用契約に従う。Skillの採用や登録から、共有標準化、常時実行、外部送信の権限を作らない。
 
