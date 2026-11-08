@@ -1,7 +1,7 @@
 ---
 title: "人物から理解へ"
-version: "v003"
-updated: "2026-10-31"
+version: "v004"
+updated: "2026-11-08"
 ---
 
 # 人物から理解へ
@@ -13,6 +13,7 @@ updated: "2026-10-31"
 | [Lauren Tan / @poteto](lauren-tan/README.md) | Grok Botのチームと実践をどう理解するか。pstackの環境・検証・並列作業から何を学べるか。Dotsとの製品史とHumanの「母」という意味をどう区別して継承するか | [エージェントへの委任と信頼](../concepts/agent-trust/README.md) |
 | [ジョン・フォン・ノイマン / John von Neumann](john-von-neumann/README.md) | 複雑な問題をどう比較・判断できる形にするか。七項目の適用条件と出所、成功報告・原因・再利用条件をどう分けるか | [エージェントへの委任と信頼](../concepts/agent-trust/README.md) |
 | [ピーター・ドラッカー / Peter F. Drucker](peter-drucker/README.md) | 予期せぬ成功から、従来の前提と採用判断をどう見直せるか。本人の原典とArkへの適用案、成功報告・原因・採用判断をどう区別するか | [エージェントへの委任と信頼](../concepts/agent-trust/README.md) |
+| [カレブ / Caleb ben Jephunneh](caleb-ben-jephunneh/README.md) | 危険・土地・祖先の記憶・約束をどう読み合わせるか。四十歳の報告と八十五歳の行動、聖書本文とラビ的再話をどう区別して理解するか | [人物・土地・証言のResearch Graph](caleb-ben-jephunneh/research-graph.md) |
 
 人物ページは現在の統合理解を、各ページから辿る根拠は主張の支持範囲と限界を持ちます。肩書の表示は資料の時点・文脈付きで読み、掲載を現在の所属や個人への成果独占の証明にしません。
 
