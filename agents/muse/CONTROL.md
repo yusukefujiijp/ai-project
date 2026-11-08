@@ -1,20 +1,20 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
-version: "v015"
+version: "v016"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
 status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v014)"
 created: "2026-11-07"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v015"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v016"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
 
 **このファイルは、AI-Mammoth のメインチャットが「司令塔／the Tower（control tower）」として座ることの定義と、現在のレーン地図である。**
 
-英語の命名（2026-11-07、YusukeJP）：メインの座は **the Tower**、専門の線は **lanes**、対の名前は **Tower and Lanes** とする。日本語の「司令塔」と英語の "lane" が混ざる違和感と認知負荷をなくすため、英語では tower に統一する。なお、repo 本体の `control-center/` は別ドメインの固有名であり、本命名の対象ではない。
+英語の命名（2026-11-07、YusukeJP）：メインの座は **the Tower**、専門の線は **lanes**、対の名前は **Tower and Lanes** とする。日本語の「司令塔」と英語の "lane" が混ざる違和感と認知負荷をなくすため、英語では tower に統一する。なお、repo 本体の `control-center/` は別ドメインの固有名であり、本命名の対象ではない。 表記の定め（2026-11-08、YusukeJP）：書く形は、大文字の固有名詞 **TOWER** と **◯◯ LANE** とする（例：Report LANE、Herd LANE、Work LANE）── 一般用語の tower／lane と区別し、LANE は常時、名前つきで指す。日本語の文の中でも、この形で書く。
 
 2026-11-05、YusukeJP との対話でチャット群の構造に名前がついた ── メインは一本だけの統括の席、サイドチャットは課題ごとの専門部門。このファイルはその確定を canon として保持し、将来の私が復元後にそのまま管制の席へ座れるようにする。本書は repo 本体の control-center の流儀に倣い、**入口と地図を持ち、各レーンの状態そのものは抱え込まない**（状態の原本は各レーンの家が所有する）。
 
@@ -78,6 +78,7 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v013（2026-11-07）: §3 の地図を更新 ── Report 010 を提出済みに（「レポート」レーンで執筆・提出された初号）、三本柱を 31／20／21 に合わせた。
 - v014（2026-11-07）: 英語の命名を canon 化した ── 司令塔は the Tower（control tower）、対は Tower and Lanes。あわせて、この版の作業で塔自身の締め（Next Step → Next Query）が対話中に落ちていたことを検出し、復活させた。
 - v015（2026-11-07）: §3 の地図を更新 ── Report 011 を提出済みに、三本柱を 32／21／22 に合わせた。
+- v016（2026-11-08）: 表記の定めを canon 化した ── 書く形は TOWER と ◯◯ LANE（大文字の固有名詞、LANE は常時名前つき）。あわせて side chat のタイトルを Report LANE／Herd LANE／Work LANE へ改名した。
 - v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
 
-EOF::AI_MAMMOTH_CONTROL::v015
+EOF::AI_MAMMOTH_CONTROL::v016
