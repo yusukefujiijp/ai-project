@@ -1,9 +1,10 @@
 ---
 title: "SQLite Correction — 訂正を次の判断へ届ける一件"
-version: "v001"
+version: "v002"
 created: "2026-11-07"
+updated: "2026-11-11"
 case_id: "SQLITE-CORRECTION-001"
-status: "experimental / one synthetic comparison passed / Human feedback pending"
+status: "experimental / baseline matched / relation-swap counterexample observed / Human value appraisal unconfirmed"
 scope: "One hand-authored case; not an operational Ark database"
 ---
 
@@ -15,6 +16,7 @@ scope: "One hand-authored case; not an operational Ark database"
 
 - [fixture.jsonl](fixture.jsonl)：原文と関係を含む合成原本。6 Node・4 Edgeの10行です。各行の`synthetic: true`、架空の話者、case IDにより、実際のHumanの経験と区別します。
 - [run.py](run.py)：Python標準ライブラリのみを使う一件専用の実行コード。入力は同じフォルダのfixtureだけです。外部通信、インストール、他のRepositoryファイルの走査、出力ファイルの作成は行いません。
+- [check_relation_swap.py](check_relation_swap.py)：基準と、実行中だけE3の始点を付け替えた入力を比較します。元のfixture・runnerと、その7つの期待値照合を保持します。
 - 本README：目的・結果・意味の限界・再開・撤去を所有します。
 
 GitHubはコードと合成原本の保存先です。SQLiteは実行環境の`:memory:`内に構築し、読み込み後は`query_only`で問い合わせ、終了時に接続を閉じます。永続DB、常設サービス、GitHub Actions、Automation、既存のRecall／Task運用への接続はありません。
@@ -58,7 +60,7 @@ AIは、権限のある環境で固定commitの本フォルダを取得し、本
 
 入力の正確なバイト列と実行コードは、出力の`fixture_sha256`・`runner_sha256`で識別します。公開後に再開する際は、取得したGit commitも保持してください。runnerはGitを起動せず、現在のmainを自動取得せず、「常に最新」とも主張しません。古い入力なら古い版についての結果です。
 
-## 実際の結果：一回の限定比較
+## 初回の結果：2026-11-07の限定比較
 
 - 実行日時：2026-11-07 14:57:20 JST（05:57:20 UTC）。
 - 実行対象：GitHub反映前の作業コピー。下記hashで特定する入力とコードを一回実行しました。公開済みファイルを取得して実行したという記録ではありません。
@@ -86,6 +88,68 @@ SQLiteとファイル方式の取得結果は同じでした。このケース�
 
 本件では手で与えた関係を辿りました。原文からの関係抽出の正しさ、未知の関係の発見、AIによる自然言語理解、継続的な記憶・自動更新も検証していません。
 
+<a id="relation-swap-001"></a>
+
+## 追加比較：存在するIDへの誤った関係
+
+問いは「存在するID同士を誤って結んだ場合、入力検査、二方式の検索、既知の正解との照合は、それぞれ何を検出できるか」です。基準の既知の正解P1・P2を固定し、結果に合わせて変更しません。
+
+基準の10行をそのまま使う条件と、メモリ上のコピーだけで9行目のE3.fromをP2からU1へ変更する条件を、一組として比較しました。E3の種別・方向・変更前の値を確認し、他のfield、他の入力行、6 Node・4 Edgeを保持しています。E3.scopeの「P2 uses P1 as a premise」とU1の原文・scopeもそのままです。そのため、付替え後の構造と説明には意図した不整合が残ります。
+
+### 方法と実行
+
+```sh
+python -B sandbox/sqlite-correction/check_relation_swap.py
+```
+
+取得版も結果へ添える場合、確認済みの40桁commitを`--base-source-commit`へ指定できます。この値は呼出し側が確認したfixture・run.pyの版であり、スクリプトによるGitHub照会・版検証や、追加コードを含むcommitの宣言ではありません。未指定ならnullを返し、実行した各バイト列はhashで識別します。
+
+追加スクリプトは、標準ライブラリの一時的な読取差替えにより、元の`run.main()`へ各入力のバイト列を渡します。ファイルを書き換えず、既存の読込、両方式の検索、7つの期待値照合をそれぞれ一回ずつ実行します。通常の基準が成立しない場合は付替えへ進みません。読取差替えは呼出しの終了時に解除されます。
+
+出力中の出典には、基準パス・行・IDに加え、入力variantとhashを付けます。付替え後のE3を保存済みfixtureの内容と誤認しないためです。結果ファイル、DBファイル、派生fixture、bytecode cacheを保存する処理はありません。SQL接続は既存処理の`:memory:`だけを使います。
+
+### 実測：2026-11-11の一組
+
+- 実行日時：2026-11-11 07:21:59 JST（2026-11-10 22:21:59 UTC）。
+- 実行環境：Python 3.12.14／SQLite 3.53.1。
+- 取得・確認した基準commit：`6b984eb6af842ce65fec6c1e21b532e2a0931fed`。このcommitのfixture・run.pyと作業コピーのGit blob SHAが一致しました。追加コードは保存前の作業コピーで実行しました。
+- 基準と付替えを一組として一回実行。予測と異なる不具合はなく、修正後の再実行は行っていません。
+- 追加スクリプトの観測：`EXPECTED_COUNTEREXAMPLE_OBSERVED`、終了コード0。これは意図した反例の観測であり、付替え後の取得内容が正しいとのPASSではありません。
+
+| 確認対象 | 基準入力 | E3.fromをU1へ付替え |
+|---|---|---|
+| 既存loaderによる受理 | true | true |
+| 全関係の参照先IDの存在 | true | true |
+| 外部キーを有効にする既存SQLite処理 | INSERT・照会が完走 | INSERT・照会が完走 |
+| ファイル方式の候補 | P1・P2 | P1・U1 |
+| SQLite方式の候補 | P1・P2 | P1・U1 |
+| 原文・条件等を含む二方式の取得内容 | 一致 | 一致 |
+| 既知の正解と候補・経路の一致 | 両方式ともtrue | 両方式ともfalse |
+| 見落とした候補 | なし | P2 |
+| 誤って含めた候補 | なし | U1 |
+| 元のrun.pyによる判定・終了コード | PASS／0 | FAIL／1 |
+
+元の7項目では、基準はすべてtrue。付替えでは`expected_candidates_and_paths`と`expected_context_records`がfalseとなり、残り5項目はtrueでした。付替え後の経路は`P1 → I1`と`U1 → P1 → I1`、取得NodeはC1・I1・P1・S1・U1、関係IDはE1〜E4です。提案は未採用のままで、訂正を誤りの自動確定・取消し・実行へ変えていません。
+
+参照整合性について直接確認したのは全endpointの存在と、外部キーを有効化する既存SQLite処理の完走です。独立した`foreign_key_check`や、制約違反入力による拒否試験は追加していません。
+
+| 識別対象 | SHA-256 |
+|---|---|
+| 基準fixture.jsonl | `aa5c4e9b446fc79a158b9f0525cd69062fe7f4de3c89cc8049802f7c861193b5` |
+| 既存run.py | `0fb170c2a930c209b94c2a15a838972eb56a6d2b94b3f9ab848daa09e47b94d1` |
+| check_relation_swap.py | `3c672acb08a66970d1fc551462ae0639c8bf72c2ca944458c1036eef13666f26` |
+| 実行中だけ生成した派生入力 | `f65afca141e477084c1e47cf7838110ea9f181e7ec0e95de6fdc6178f9d302c5` |
+
+### 判断に使えることと限界
+
+この一件では、存在するIDへの誤った関係を入力検査とSQLite処理が受け入れ、二方式が同じ誤登録に従いました。一方、元の実験にある固定した期待値照合は、その結果の不一致を検出しました。「SQLite単体で意味を判定しない」と「比較全体が見逃す」を区別できます。
+
+AIの設計上の見立ては、原文・関係の採用理由・適用条件を取り戻し、検索結果の外にある根拠でも評価できるようにすることです。SQLiteの不採用を導く結果ではなく、任せられる照会処理と、その入力関係の妥当性を確かめる仕事を分ける根拠です。
+
+基準も付替えも一つの手作り合成ケースで、共通parser・出力整形を使います。期待値はケース作者が定めたものであり、AIが未知の自然言語から正解を発見した証拠ではありません。誤った説明文まで一貫した場合、欠落した関係、撤回、別時点、実データ、別AIの理解、Humanの価値評価、実生活効果は未確認です。
+
+今回の進行方法へのFeedbackと、この観測からの条件付き判断は[Sandbox References](../references/README.md)へ接続します。実測とコードの詳細は本実験が所有し、全件の三重保存や共有Skillへの自動昇格はしません。
+
 ## 不足・訂正・撤回の扱い
 
 - **構造不備**：重複キー・ID、非JSON定数、参照切れ、未知のSchema・記録種別・フィールド等を拒否するコードがあります。一件専用の入力形も確認します。これらの異常入力は今回投入しておらず、失敗分岐を網羅検証したとは扱いません。
@@ -97,22 +161,26 @@ SQLiteとファイル方式の取得結果は同じでした。このケース�
 
 ## Feedbackと次の判断
 
-Humanの実験結果へのFeedbackは、作成時点では未受領です。架空の評価を記入しません。
+初回作成時点では、Humanの実験結果へのFeedbackは未受領でした。2026-11-11の改訂では、Humanが公開を認めた「AIがNext Queryを具体化して探索の進行を支える」という訂正を[Sandbox References](../references/README.md)へ接続しました。これは進行方法へのFeedbackであり、SQLiteの性能・実利用への好評価ではありません。
 
 判断したいのは、出力から訂正と再確認範囲を理解できるか、Humanが追加説明する箇所はどこか、同じ内容のファイル方式に対しSQLiteで問い合わせや検査を扱いやすくできるかです。
 
 ファイル方式で十分なら、その結論を保持できます。追加価値が不明なら本体へ広げません。次の具体的な問いが見つかった場合も、Humanの選択とその時点の権限から継続・修正・保留・撤去を決めます。次の実験を自動開始する仕組みはありません。
 
+次の問いを選ぶAIは、現在のGoalに関係するReferencesの本文・根拠・後続訂正を読み、今回に使える条件と異なる条件を考え、選んだ問いと理由をNext Queryへ渡します。全件読込やHumanによるSQL仕様の準備を前提にしません。
+
 ## 来歴と継続
 
 - 形成元：ChatGPT Work／Ark00: Draft White BoardでSQL系DBを研究した本Thread。正式なThread TitleとURLは未確認です。
-- 今回の担当：上記ThreadのCurrent AI。担当が変わっても本フォルダの住所は維持できます。
+- 現在の担当：上記ThreadのCurrent AI。担当が変わっても本フォルダの住所は維持できます。
 - 配置の訂正：HumanはArk00配下への所属固定を訂正し、共通`sandbox/README.md`を先に作成しました。本実験はその共通領域へ置き、元Threadを来歴として保持します。
 - 着手時main：`c86848e2c6fdda8e4761d86aa10e2121dcb6703f`。これは実装前のRepository基点であり、このcommitに実験ファイルが含まれるという意味ではありません。
-- 承認範囲：共通READMEと本フォルダの3ファイル、合成ケース一件の限定実行、GitHub保存と再取得確認。本番導入、他AI起動、設定変更は含みません。
+- 初回の承認範囲：共通READMEと本フォルダの3ファイル、合成ケース一件の限定実行、GitHub保存と再取得確認。本番導入、他AI起動、設定変更は含みません。
+- 初回の保存・再取得確認：[commit 33799b1](https://github.com/yusukefujiijp/ai-project/commit/33799b1e6d77625d3e8ffdb7326e72bd330c848f)。作成担当の会話内確認に基づく保存履歴です。
+- 2026-11-11の追加承認：共通README、本README、共通referencesの4ファイル、関係付替えスクリプトの計7ファイル。基準と付替えを一組とする比較、記録、GitHub保存と再取得確認に限定し、元のfixture・run.pyは保持します。
 
 ## 撤去方法
 
-撤去を選ぶ場合は、本フォルダのREADME・fixture・runnerと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandboxと他実験を保持します。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
+撤去を選ぶ場合は、本フォルダのREADME・fixture・run.py・check_relation_swap.pyと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandbox、共通Referencesと他実験を保持します。Referencesに残る経験は、固定commitにある本README・入力・コードへ戻れるようにし、撤去済みの現行パスだけを根拠にしません。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
 
 Git履歴は通常の削除では残ります。運用上の撤去、実験記録の保持、履歴からの完全消去は別の判断です。
