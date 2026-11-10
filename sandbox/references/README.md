@@ -48,4 +48,6 @@ SQLite実験に対するHumanの成功評価は未確認です。success-cases.j
 
 個別実験の撤去は、ここに残す経験の自動削除を意味しません。経験の根拠を記録時点の固定commitへ結び、現在パスがなくても原文・コード・結果へ戻れるようにします。初期の技術lessonは、初回の固定版と今回の結果を記録した版へ接続します。履歴の完全消去や公開範囲の訂正が必要な場合は、その対象と影響を別に判断します。
 
+初期の関係付替え比較は、[実測記録の固定版](https://github.com/yusukefujiijp/ai-project/blob/48cdbacc300360f637bd8ae1789d7900d27124d3/sandbox/sqlite-correction/README.md#relation-swap-001)と[追加コードの固定版](https://github.com/yusukefujiijp/ai-project/blob/48cdbacc300360f637bd8ae1789d7900d27124d3/sandbox/sqlite-correction/check_relation_swap.py)へ戻れます。これは当時の証拠であり、現在の実験仕様は各入口から確認します。
+
 本領域は共通Sandboxの経験を所有し、個別実験の撤去時も保持します。今回、撤去は行っていません。HumanのMeaning・Correction・STOP・Final Sealを保持し、AI・Referencesは協働を支える器として扱います。
