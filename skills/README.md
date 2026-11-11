@@ -1,14 +1,14 @@
 ---
 title: Ark Shared Skills Hub
-version: v0.55.0
+version: v0.56.0
 status: experimental / Human-authorized shared skill expansion
-updated: 2026-11-07
+updated: 2026-11-11
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
   source_thread: "Ark27:12"
   scope: "Staged Home B meaning ownership and navigation; preserve explicit Source contracts, prior evidence and other owners"
-updated_reason: "2026-11-07: Human採用のAI専用Graph Mode／ai-graph-modeを追加し現行44件へ更新。v003を明示した一回答だけのMermaid・静的Visualize・分析へ接続し、実画像再読、Humanの権限、共有保存・個人登録・実利用の確認範囲を保持。2026-11-07: Human採用のProject Instructions Design／design-project-instructionsを追加し現行43件へ更新。Project長期指示の新規作成・既存改善・統合・レビュー・照合へ接続し、確認済み共有SKILL.mdのURLを含む標準Queryを担当READMEに配置。共有保存・登録・自然な呼出し・受け手の挙動・現実の効果を区別。2026-11-06: Human採用のArk-Coaching初版を追加し現行42件へ更新。BrainDumpから対話・比較・想起・Correction・再開までを一体で支え、既存Recall Hub・B-Zoneへ必要時に接続。共有保存・登録・取得・応答・実生活効果を個別READMEで区別。2026-11-06: Human採用のWhy共有原本と利用READMEへの入口を追加し現行41件へ更新。日常・現実世界の理由・背景・経緯の理解と必要に応じた現在の妥当性の検討へ接続。共有保存・利用Queryと登録・挙動・Humanへの効果を区別。2026-11-06: AI Problem Triage／AI問題切り分けの共有原本と利用READMEへの入口を追加し現行40件へ更新。AI自身によるTask化・切り分け・実行順の生成と更新へ接続。保存・登録・挙動確認の範囲は個別READMEで区別する。2026-11-06: Human採用のHow共有原本と利用READMEへの入口を追加し現行39件へ更新。日常・現実世界の働き・条件・つながりの理解を主軸とし、共有保存と登録・挙動・Humanへの効果を区別。2026-10-31: References三本柱の組込みSkillを追加し現行38件へ更新。対象領域の仕事から局所referencesの入口・所有先・利用・更新を設計する手順と、登録の有無を問わず渡せる呼出しQueryを接続。対象領域への適用・各環境への登録・実利用の確認とは分離。2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
+updated_reason: "2026-11-11: Human採用済み共有仕様yomiyasu-switchを一覧へ接続し、掲載45件へ更新。共有保存・個人登録・有効化・実利用の確認範囲を区別し、個別本文・起動Query・過去の検証記録を保持。2026-11-07: Human採用のAI専用Graph Mode／ai-graph-modeを追加し現行44件へ更新。v003を明示した一回答だけのMermaid・静的Visualize・分析へ接続し、実画像再読、Humanの権限、共有保存・個人登録・実利用の確認範囲を保持。2026-11-07: Human採用のProject Instructions Design／design-project-instructionsを追加し現行43件へ更新。Project長期指示の新規作成・既存改善・統合・レビュー・照合へ接続し、確認済み共有SKILL.mdのURLを含む標準Queryを担当READMEに配置。共有保存・登録・自然な呼出し・受け手の挙動・現実の効果を区別。2026-11-06: Human採用のArk-Coaching初版を追加し現行42件へ更新。BrainDumpから対話・比較・想起・Correction・再開までを一体で支え、既存Recall Hub・B-Zoneへ必要時に接続。共有保存・登録・取得・応答・実生活効果を個別READMEで区別。2026-11-06: Human採用のWhy共有原本と利用READMEへの入口を追加し現行41件へ更新。日常・現実世界の理由・背景・経緯の理解と必要に応じた現在の妥当性の検討へ接続。共有保存・利用Queryと登録・挙動・Humanへの効果を区別。2026-11-06: AI Problem Triage／AI問題切り分けの共有原本と利用READMEへの入口を追加し現行40件へ更新。AI自身によるTask化・切り分け・実行順の生成と更新へ接続。保存・登録・挙動確認の範囲は個別READMEで区別する。2026-11-06: Human採用のHow共有原本と利用READMEへの入口を追加し現行39件へ更新。日常・現実世界の働き・条件・つながりの理解を主軸とし、共有保存と登録・挙動・Humanへの効果を区別。2026-10-31: References三本柱の組込みSkillを追加し現行38件へ更新。対象領域の仕事から局所referencesの入口・所有先・利用・更新を設計する手順と、登録の有無を問わず渡せる呼出しQueryを接続。対象領域への適用・各環境への登録・実利用の確認とは分離。2026-10-31: Human承認のChatGPT接続Skillを追加し現行37件へ更新。保存プロフィールの再利用と本人確認を手順化し、導入・呼出しの確認範囲は個別READMEが所有。2026-10-31: Human採用のToken Burning Mode／トークン消費モードを共有原本として追加し、現行36件へ更新。個人導入・挙動・実利用効果の確認とは区別。2026-10-29: Human採用のArk-OKF共通Skill統合を掲載し現行35件へ更新。登録・挙動・効果の確認とは区別。前回2026-10-25: Human承認のRecall Hub継続改名と自然な場面報告の入口を反映。現行34件・旧URL互換・経験データ住所と履歴を保持"
 ---
 # Ark Shared Skills Hub
 
@@ -67,7 +67,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 
 ## 2. Available skills
 
-現行44件。用途・Query・個別の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
+掲載する共有Skillは45件。用途・Queryと、共有保存・個人登録・有効化・実利用の確認範囲は各README、実際の手順はSKILL.mdが担当する。旧名 `map-ark-current-position`・`write-ark-markdown`・`ark-recall-portal` は[MAP](map-ark-current-position/README.md)・[Writer](write-ark-markdown/README.md)・[Recall Hub](ark-recall-portal/README.md)の現行名への案内であり、別の現行Skillとして数えない。
 
 | Skill | 使用場面 | 入口・手順 |
 |---|---|---|
@@ -109,6 +109,7 @@ Radio由来1件・Voice3件のlessonは、同じ行の意味を保って共通�
 | Social Post Reader / read-social-post | X/Twitter・SNSの投稿URLから本文を全文取得し、調査・執筆へ接続 | [README・Query](read-social-post/README.md) / [SKILL.md](read-social-post/SKILL.md) |
 | SNS投稿 / write-social-post | 会話・資料を、実際のAIとの協働が伝わるX/SNS公開文へ作成・修正 | [README・Query](write-social-post/README.md) / [SKILL.md](write-social-post/SKILL.md) |
 | Text Writer / write-text | 文書・メッセージ・Prompt・コピー用Queryの作成・改訂・レビュー・計画。目的・受け手・根拠と専門契約に合う文章へ | [README・Query](write-text/README.md) / [SKILL.md](write-text/SKILL.md) |
+| yomiyasu-switch | 日本語回答へのyomiyasu適用をON／OFF・一回答単位で切り替え、適用結果を扱う。Human採用済み共有仕様（v002-design） | [README・Query](yomiyasu-switch/README.md) / [SKILL.md](yomiyasu-switch/SKILL.md) |
 | Bedtime Recall / recall-bedtime-care | 就寝前のBrainDump受付・条件訂正・自然な合図からの短い想起支援 | [README・Query](recall-bedtime-care/README.md) / [SKILL.md](recall-bedtime-care/SKILL.md) |
 | BrainDump Reception / receive-braindump | 未整理の考え・報告・希望・訂正の受領と、現在必要な協働への接続 | [README・Query](receive-braindump/README.md) / [SKILL.md](receive-braindump/SKILL.md) |
 | Everyday Co-design / co-design-everyday-solutions | DIY・料理・収納など、材料・道具・空間・手順を生活の条件に合う案へ具体化 | [README・Query](co-design-everyday-solutions/README.md) / [SKILL.md](co-design-everyday-solutions/SKILL.md) |
@@ -301,4 +302,4 @@ Skillは、Humanの意図、領域固有の知識、必要な根拠・訂正・�
 
 移行前の本文は[固定版Hub](https://github.com/yusukefujiijp/ai-project/blob/369b5f1f287d212848def6121a2ad374aa3e2d77/skills/README.md)で復元できる。今回の対象・配置対応・検証結果・残る境界は[STR-021](../control-center/changes/STR-021-per-skill-readme-query-migration.md)へ。未知の外部bookmark、各製品の登録反映、実際の使いやすさまで、GitHub保存だけで確認済みとはしない。
 
-EOF::ARK_SHARED_SKILLS_HUB::v0.55.0
+EOF::ARK_SHARED_SKILLS_HUB::v0.56.0
