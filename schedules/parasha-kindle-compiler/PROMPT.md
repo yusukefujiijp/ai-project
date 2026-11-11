@@ -63,7 +63,7 @@ PeshatをPrimaryにし、Fact / Classical Jewish Interpretation / AI Hypothesis�
 新しいSectionは追加せず、同じPageを複数速度で読めるようにします。
 - 10秒: PAGE HEADER → CORE VERSE → ONE-SENTENCE COMPASSでCoordinateとCore Understandingが分かる。
 - 1分: Insight Title → 各Section冒頭 → 必要ならONE STRUCTURE → LIVING RETURNでLogical Spineが分かる。
-- 5分: MAIN READING → SOURCE LENS → DISCOVERYで本文・古典注解・推論境界・一歩先の発見まで辿れる。
+- 5分: MAIN READING → SOURCE LENS → 必要に応じたDISCOVERYで本文・古典注解・推論境界・一歩先の発見まで辿れる。
 
 各主要SectionはDirect Answer First。各Blockは原則「要点 → 根拠 → 意味」。見出しは役割名だけでなく、その日の内容を表す短い日本語Insight Titleを含め、見出しだけ追ってもPageの論理を復元できるようにします。
 日本語をPublication Surfaceの主言語にします。内部推論では英語の概念語を使って構いませんが、日本語で自然に言えるものは完成原稿では日本語へ変換してください。ヘブライ語は重要なAnchorだけを残し、日本語の意味を添えます。
@@ -79,7 +79,7 @@ PeshatをPrimaryにし、Fact / Classical Jewish Interpretation / AI Hypothesis�
 7. DISCOVERY: そこまで読んだからこそ、さらに何が一歩見えたか。
 8. LIVING RETURN: 今日どう応答するか。
 
-8 Sectionは維持し、増やしません。別Sectionの仕事を始めた内容は削るか本来のSectionへ戻し、同じ核心を複数Sectionで言い換えて水増ししません。
+8つの編集機能とその順序を維持し、新しいSectionは追加しません。1・2・3・4・6・8は毎回表示します。ONE STRUCTUREとDISCOVERYは、各節の内容上の条件を満たす場合だけ見出しと本文を表示し、それ以外は節ごと省略します。省略時は代替文を置かず、残す節の番号・順序を変えません。別Sectionの仕事を始めた内容は削るか本来のSectionへ戻し、同じ核心を複数Sectionで言い換えて水増ししません。
 
 【DAILY KINDLE PAGE — Stable Grammar】
 出力は必ず「DAILY KINDLE PAGE」1ページだけ。Schedule説明、実装メモ、Video/Gemini Prompt、長い前後書きは不要です。外枠は安定させ、内部の深さは本文に応じて非対称にします。
@@ -111,14 +111,14 @@ Peshat / Midrash / 後代の適用を区別し、ラビ本人が言っていな�
 
 ### 7. DISCOVERY — 今日さらに一歩見えたこと：［その日のInsight］
 Main ReadingとSource Lensまで成立したからこそ見える新規増分が実在する場合だけ1件。
-最初に発見を一文で示し、「何がTriggerだったか → 本文へ戻ると何が新しく見えたか」を短く説明します。Source GroundingとAI推論の境界を明示します。新しい名前を付けること自体を価値にしません。名称が再利用に本当に役立つ時だけ短い名称Candidateを付けます。新規増分がなければ「本日は新要素なし」と簡潔に記します。
+最初に発見を一文で示し、「何がTriggerだったか → 本文へ戻ると何が新しく見えたか」を短く説明します。Source GroundingとAI推論の境界を明示します。新しい名前を付けること自体を価値にしません。名称が再利用に本当に役立つ時だけ短い名称Candidateを付けます。
 
 ### 8. LIVING RETURN — 今日の一手：［その日のInsight］
 Page全体から自然に出るQuestionまたはActionを一つだけ。「今日の一手：……」の一文で終了します。追加Task、別Next Step、自己啓発的まとめ、Page全体の再要約は付けません。
 
 【Deletion Gate — 足す前に刈る】
-各Blockについて「これを削除すると読者の理解がMaterialに落ちるか」を確認し、NOなら削除します。
-特にONE STRUCTUREとDISCOVERYはOptionalです。
+各Blockについて「これを削除すると読者の理解がMaterialに落ちるか」を確認し、NOなら、その節の機能を保ったまま不要部分を削除します。
+ONE STRUCTUREとDISCOVERYは、「Section Ownership」と各節の表示条件に従って節ごと省略できます。
 - StructureがMain Readingの箇条書き版にすぎない → 出さない。
 - Discoveryが前段の言い換え → 出さない。
 - 英語名を付けただけで新しい関係が増えていない → 出さない。
@@ -143,7 +143,7 @@ All Pages = One Book
 Cover / TOC / Preface / Index / Bibliographyは後から追加可能ですが、Daily Page本文は原則そのまま使える品質で完成させます。
 
 【Future Reader / Self-Review】
-送信前に内部確認し、NOなら修正してください。
+送信前に内部確認し、NOなら修正してください。以下のStructure／Discoveryに関する確認は、表示する場合は内容の妥当性を、表示しない場合は省略条件への適合を対象とします。
 1. 10秒でCoordinateとCore Understandingが分かるか。
 2. 1分で見出し・冒頭文・Structure・Living ReturnからLogical Spineを復元できるか。
 3. 5分で本文・Rabbinic Grounding・推論境界・Discoveryまで辿れるか。

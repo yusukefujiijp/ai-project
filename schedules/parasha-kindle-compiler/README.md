@@ -65,7 +65,7 @@ Daily Aliyah Deep Treeから輸入するのは **内容のコピーではなく�
 7. DISCOVERY
 8. LIVING RETURN
 
-各Sectionは一つのCognitive Jobだけを担当する。
+上記は8つの編集機能を示す。実際に表示するSectionと省略条件は、[PROMPT.md](PROMPT.md)の「Section Ownership」と各節に従う。各表示Sectionは一つのCognitive Jobだけを担当する。
 
 ## 5. Current Quality Direction
 
@@ -96,4 +96,4 @@ PROMPT.md update
 
 ## 7. Definition of Done
 
-**深度を落とさず、10秒で座標と核心、1分で論理、5分で本文・Rabbinic Grounding・Discovery・Living Returnまで復元でき、各Sectionが一つのCognitive Jobだけを担当するPublication-Ready Daily Book Pageを安定生成できること。**
+**深度を落とさず、10秒で座標と核心、1分で論理、5分で本文・Rabbinic Grounding・必要に応じたDiscovery・Living Returnまで復元でき、各表示Sectionが一つのCognitive Jobだけを担当するPublication-Ready Daily Book Pageを安定生成できること。**
