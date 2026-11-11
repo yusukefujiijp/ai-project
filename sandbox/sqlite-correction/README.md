@@ -1,10 +1,10 @@
 ---
 title: "SQLite Correction — 訂正を次の判断へ届ける一件"
-version: "v005"
+version: "v006"
 created: "2026-11-07"
-updated: "2026-11-11"
+updated: "2026-11-12"
 case_id: "SQLITE-CORRECTION-001"
-status: "experimental / baseline and bounded evidence recovery observed / relation, version, and output distinctions retained / Human value appraisal unconfirmed"
+status: "experimental / bounded recovery and multiple dependency paths observed / SQLite added value unconfirmed / Human value appraisal unconfirmed"
 scope: "One hand-authored case; not an operational Ark database"
 ---
 
@@ -20,6 +20,7 @@ scope: "One hand-authored case; not an operational Ark database"
 - [check_snapshot_version.py](check_snapshot_version.py)：C1.textだけが異なるV1・V2で、検索の成立と、検索前に固定した要求版V2への一致を別々に確かめます。派生入力はメモリ上だけに置きます。
 - [check_evidence_snapshot.py](check_evidence_snapshot.py)：V2を検索した正常出力と、訂正文だけを古くした出力コピーを比較します。入力版・出典表示の保持と、返す原文の一致を分けます。
 - [check_evidence_recovery.py](check_evidence_recovery.py)：訂正文の不一致を検出した根拠を保留し、固定V2から一度だけ再検索します。照合が成立した内容だけを後段の根拠欄へ返します。
+- [check_dependency_paths.py](check_dependency_paths.py)：V2へ合成関係E5を一つだけ加え、同じ提案の複数経路を返す二方式の取得内容と、問い合わせ拡張の実装負担を比較します。
 - 本README：目的・結果・意味の限界・再開・撤去を所有します。
 
 GitHubはコードと合成原本の保存先です。SQLiteは実行環境の`:memory:`内に構築し、読み込み後は`query_only`で問い合わせ、終了時に接続を閉じます。永続DB、常設サービス、GitHub Actions、Automation、既存のRecall／Task運用への接続はありません。
@@ -391,6 +392,122 @@ commit引数は呼出し側が確認したfixtureと既存4本のPythonコード
 
 この観測からの条件付き判断は、既存lessonと重複しない回復・返却の点を[lessons.jsonl](../references/lessons.jsonl)へ記録し、本節・コードの固定commitへ結びます。新しいFeedbackや成功評価は作りません。
 
+<a id="dependency-paths-001"></a>
+
+## 追加比較：複数の依存経路と問い合わせ拡張の負担
+
+問いは「同じ提案へ複数の依存経路がある場合に、原文・訂正・条件とともに全経路を返せるか。その問い合わせをファイル方式とSQLite方式で実装する負担はどう違うか」です。実験IDは`SQLITE-CORRECTION-DEPENDENCY-PATHS-001`。既存の合成ケースへ関係を一つ追加する限定比較であり、六つの独立した実生活の実証ではありません。
+
+### 検索前に固定した入力・期待値
+
+保存済みV1から従来の規則でV2を生成し、要求hashを照合しました。その3,295バイトをそのまま保持し、次のE5だけを末尾へ追加します。派生入力名は`V2_BRANCH_001`、6 Node・5 Edgeの11行、3,596バイトです。
+
+```json
+{"case_id":"SQLITE-CORRECTION-001","evidence":"synthetic_fixture_author_declaration; not independent validation","from":"P2","id":"E5","record_type":"edge","relation":"depends_on","schema_version":1,"scope":"P2 also uses I1 directly as a premise in this synthetic variant","synthetic":true,"to":"I1"}
+```
+
+追加行はUTF-8、ensure_ascii=False、sort_keys=True、compact separators、末尾LFです。既存10行・全fieldはV2とバイト単位で同一。E5はこの比較の作者による架空の設定であり、実際のHumanの関係でも、元ケースに存在していた未発見の関係でもありません。
+
+固定期待値は、候補P1・P2と次の三経路です。同一Nodeを繰り返さない経路を対象とし、順序に依存しない集合・重複数と、決定的な表示順を分けて扱います。
+
+| Node | Edge | 期待する経路 |
+|---|---|---|
+| P1 | E2 | P1 → I1 |
+| P2 | E5 | P2 → I1 |
+| P2 | E3、E2 | P2 → P1 → I1 |
+
+原文・訂正の文脈はS1・I1・P1・P2・C1とE1〜E5の計10レコード。U1は取得対象外で、P1・P2は未採用のままです。P2の二経路は同じI1に収束するため、独立した二根拠や確信度の上昇として数えません。
+
+派生bytes・hash、ID別の照合用原本、出典metadata、期待経路を検索前に固定しました。結果から正解を作り直しません。E5のsource_refはgenerated_relation、派生入力の11行目、定義コードのpath・hashを示し、baseline_path・baseline_lineはnullです。保存済みfixtureの実在行とは表示しません。他の10行も入力variant・hashを併記し、V1の保存パスだけで派生本文を表しません。
+
+### 実行方法と再利用の境界
+
+```sh
+python -B sandbox/sqlite-correction/check_dependency_paths.py --base-source-commit edafa3c287bdf70cdb99335d95e047a5384d20b5
+```
+
+commitは呼出し側が照合した基準入力・既存コードの取得版であり、新コードの保存版や最新mainを実行中に確認する機能ではありません。
+
+check_snapshot_version.pyのV2生成・モジュール読込と、run.pyの厳密な基準loader・JSON読込補助を再利用します。元のloaderにはV2の10行だけを渡し、6 Node・4 Edgeの制約を維持します。新コードがE5の全内容・ID非重複・参照先と「追加がその一行だけ」を検査して、同じ派生JSONLを両方式向けに読み込みます。既存の比較mainや旧7項目を、新しい入力形へ無理に適用・弱体化していません。
+
+各方式には共通の構造化入力を同値の独立コピーとして渡します。ファイル方式は逆向きの隣接リストと経路ごとの訪問済みNodeで探索し、SQLite方式はメモリ内テーブルと再帰CTEで探索します。両方式とも提案IDだけの辞書へ経路を縮約せず、Node列と対応Edge列を保持する一覧を返します。未採用proposalという同じ条件を、Pythonの条件判定とSQLのWHEREで扱います。
+
+原文・関係・scope・時点・状態の取得、共通の出力整形、固定期待値照合を分離します。SQLite内部では接続準備・投入・複数のSELECTを行いますが、検索回数はこれらを含む方式単位の呼出し回数です。SQL文が一つだけという意味ではありません。
+
+### 実測：2026-11-12の一組
+
+- 実行日時：2026-11-12 07:23:04 JST（2026-11-11 22:23:04 UTC）。実行環境の時計によります。
+- 環境：Python 3.12.14／SQLite 3.53.1／Linux x86_64。追加インストールなし。
+- 取得基準：`edafa3c287bdf70cdb99335d95e047a5384d20b5`。既存入力・コードのGit blobと作業コピーを照合し、新コードはGitHub保存前の作業コピーで実行しました。
+- 入力・照合用原本・期待値の固定時刻：`2026-11-11T22:23:04.834287+00:00`。この後に検索しました。
+- 派生入力一つに対しファイル方式1回、SQLite方式1回。既存五比較の再演、通常修正後の再実行、性能試験はありません。
+- 観測は`EXPECTED_ALL_PATHS_OBSERVED`、終了コード0。両方式それぞれの13確認項目がすべてtrueでした。
+
+| 確認対象 | ファイル方式 | SQLite方式 |
+|---|---|---|
+| 再確認候補 | P1・P2 | P1・P2 |
+| 経路 | 固定した三経路すべて | 固定した三経路すべて |
+| 欠落・余分な経路・重複 | なし | なし |
+| Node列と対応Edge・方向 | 一致 | 一致 |
+| 原本の全fieldとの照合 | 10件一致、差分なし | 10件一致、差分なし |
+| 出典metadata | 固定した内容と一致 | 固定した内容と一致 |
+| 訂正全文・当日限定scope・未採用状態 | 保持 | 保持 |
+| 二方式のbundle全体 | 同値 | 同値 |
+
+C1本文は「その日だけの希望だった。常に静かな作業を好むという意味ではない。次の相談では、その日の希望を確かめてください。」です。合成時点・適用条件も保持しました。この本文の取得は、現在のHumanの希望や実行命令を認定するものではありません。
+
+各方式への入力コピーは処理前後で同値、既存fixtureと5本のコードは終了時も同じバイト列でした。実験はメモリ・標準出力のみを使い、派生JSONL・DB・結果ファイル・bytecode cacheを残していません。
+
+| 識別対象 | SHA-256 |
+|---|---|
+| fixture.jsonl／V1 | `aa5c4e9b446fc79a158b9f0525cd69062fe7f4de3c89cc8049802f7c861193b5` |
+| V2 | `47f6663c6d19512ecec057add2ecbeee91b0e3d9ad8f93f7b3f84ce4f46de909` |
+| V2_BRANCH_001 | `3ac59a9372e1f61f9316ff0e5658fa786125723d2f087d416db729bfa3270194` |
+| run.py | `0fb170c2a930c209b94c2a15a838972eb56a6d2b94b3f9ab848daa09e47b94d1` |
+| check_relation_swap.py | `3c672acb08a66970d1fc551462ae0639c8bf72c2ca944458c1036eef13666f26` |
+| check_snapshot_version.py | `e0b7c54c28a29ca01d7285d54e7a048fa5698dea52e6d3eef9ba2f0408f3da05` |
+| check_evidence_snapshot.py | `470c736ca59b9505b9188db4c6035b657b0240f8723637a012f243022acffdf3` |
+| check_evidence_recovery.py | `afabd2af5383c95c3f0a0db572d7d49d7b9a7ddac303f2c7f01395c22c9925a0` |
+| check_dependency_paths.py | `433cb2aa8fe66d96b948257bd901322f283dc8878232959463bb5a88f2746b22` |
+| 照合用原本（ID別JSON） | `3942d2bacff69973dfde16af3740b26adbd7acfa671a736564838aaeea3815fb` |
+| 照合用出典metadata | `623282b8f63ab80981269965be7298a821b192330c09d53afc1ea3e7fc4552d3` |
+| 両方式の取得bundle（同値） | `cae38bfcf7323fa360bca7ccbe695c334ad8e7c9307efd3c71276151f9963106` |
+
+原本・metadata・bundleのhashはUTF-8 JSON、sort_keys=True、ensure_ascii=False、compact separators、末尾LFなしで計算します。派生JSONLは上記の別規則です。bundleには取得commit・新コードhashを含む出典があるため、別取得版の出力hashとの違いを原文の差だけと解釈しません。
+
+### 実装・保守の比較
+
+以下は実行したコードの静的集計です。関数定義から末尾までの非空物理行を数え、コメント・複数行SQLも含みます。速度・開発時間・将来の修正時間・Humanの負担の測定ではなく、短い方を自動的に高評価する尺度でもありません。
+
+| 所有する処理 | 今回の実装と非空行数 | 得失 |
+|---|---|---|
+| ファイル方式の検索・根拠取得 | file_query：30行 | 隣接リストで全経路を保持し、そのまま辞書の原文へ戻る。経路ごとの重複回避と条件判定をPythonで記述 |
+| SQLiteの準備・投入 | open_database：21行 | Node・Edgeの表、外部キー、投入と読取制限をまとめる。ファイル方式には不要なDB変換・接続処理がある |
+| SQLiteの検索・結果変換 | sqlite_query：41行 | 再帰CTEでNode・Edgeの経路列を保持し、WHEREで未採用案を選ぶ。SQL行からPythonの一覧への変換と文脈取得も必要 |
+| 共通の入力・出典準備 | prepare_input：46行 | V2再利用・E5限定検査・派生版の識別。両方式共通の実験負担 |
+| 共通の返却形式 | package_paths：12行 | 提案ID単位の一経路への縮約を避ける。方式の外にも問い合わせの契約がある |
+| 共通の照合 | assess：43行 | 各方式を固定期待値・原本へ照合。検索方式の優位性や意味理解を判定する処理ではない |
+| 共通の実行・記録 | main：55行 | 固定、各方式一回、識別情報・出力・既存ファイル保持の確認を担当 |
+
+新コード全体は317物理行です。上表以外にimports、定数、補助関数、空行、終了処理があります。追加された全コードをSQLiteだけの費用とは数えません。
+
+既存のfile_query・sqlite_queryは直接呼ばず、全経路を返す今回専用の関数を追加しました。SQL側は既存の再帰CTEという構成を継ぎ、Edge経路の保持・未採用条件・返却形式を拡張しています。ファイル側も通常の隣接リストを用い、一方だけへ非効率な全件走査を強制していません。共通loader・整形・照合があるため、完全独立した検証系ではありません。
+
+関数を再利用するモジュールはrun.pyとcheck_snapshot_version.pyです。ただし新スクリプトは、保持確認とhash記録のためにfixtureと既存5本すべてを読みます。この読取依存もあるため、関数呼出しのない旧比較コードを削除する場合でも実行への影響を確認する必要があります。再利用の利点と、単独撤去しにくくなる負担を分けます。
+
+### この結果で変わる判断と限界
+
+この限定入力では、両方式が三経路と根拠を欠落なく返せました。候補IDが同じでも確認すべき経路は複数になり得るため、全経路が必要な問いでは候補一致と経路一致を別に確認します。既存run.pyを11行で実行して欠落を観測した試験ではなく、全経路という新しい契約を満たす追加実装の比較です。
+
+SQLiteの再帰SQLで今回の拡張を表現できることは確認できました。一方、ファイル方式も30行の検索関数で成立し、今回のSQLiteには準備・投入21行と検索・変換41行が必要でした。行数だけで一般的な優劣は決めませんが、この一件で追加のDB層を引き受けるほどの保守上の利点は確認できていません。**現在の用途ではファイル方式を基本候補とし、SQLiteの追加価値を示す新しい必要条件が出るまで、追加探索をいったん保留するのがAIの暫定判断です。** 本体の方式変更やSQLiteの撤去を実行する決定ではありません。
+
+今後、同じ材料への異なる問い合わせを実際に繰り返し変更する必要が生じ、その変更がSQL側で局所的に済み、接続・投入・整形を含めた負担に見合う場合は判断を見直せます。件数の増加だけや、一件の短いコードだけではSQLiteの追加価値を認定しません。
+
+今回のE5は作者の設定で、関係の意味の正しさや自然言語からの発見は未検証です。二つのP2経路は同じI1を共有し、独立証拠を増やしません。未登録関係、一般的な循環・大規模経路、性能、長期保守、現在の相談への適切さ、別AIの独立理解、Humanの成功評価・実生活効果は確認していません。回復後も不一致が続く時の停止確認も未実行のままです。
+
+条件付きの学びだけを共通lessonsへ残し、詳細は本節とコードが所有します。新しいFeedback・成功評価・常設DB・AI接続は作りません。次の試験や本体導入は自動開始しません。
+
+
 ## 不足・訂正・撤回の扱い
 
 - **構造不備**：重複キー・ID、非JSON定数、参照切れ、未知のSchema・記録種別・フィールド等を拒否するコードがあります。一件専用の入力形も確認します。これらの異常入力は今回投入しておらず、失敗分岐を網羅検証したとは扱いません。
@@ -401,6 +518,7 @@ commit引数は呼出し側が確認したfixtureと既存4本のPythonコード
 - **指定版**：[版差比較](#snapshot-version-001)では、固定した要求V2に対してV1の不一致を識別しました。要求版情報がない場合は不明とし、hashの計算や検索の成立から最新・指定版一致を推定しません。
 - **出力と原本の対応**：[出力本文の比較](#evidence-snapshot-001)では、入力版と出典metadataを保ったまま古くしたC1本文を、原本V2とのレコード照合で検出しました。検索後の意図的な変更一件であり、全経路の完全性や本番の防止・回復機能を保証しません。
 - **不一致後の限定回復**：[回復比較](#evidence-recovery-001)では、根拠を保留し、一度の再検索で固定V2との一致を確認して返せました。回復が成立しない時の停止分岐と、実際のAI接続・運用修復は未検証です。
+- **複数の依存経路**：[全経路比較](#dependency-paths-001)では、E5を一つ加えた限定入力で三経路と10レコードを両方式が取得しました。候補IDだけで経路の完全性を判断せず、同じI1へ収束する経路数を独立した証拠数にしません。SQLiteの追加価値と一般的なGraphの網羅性は未確認です。
 - **その他の未確認**：永続化・復旧・同時更新・権限分離・悪意ある文書・大規模性能・24ケース全体・実データ利用は試していません。`query_only`は、この処理における読取制限であり、一般的な情報漏えい対策や完全な実行隔離ではありません。
 
 ## Feedbackと次の判断
@@ -426,16 +544,20 @@ commit引数は呼出し側が確認したfixtureと既存4本のPythonコード
 - 2026-11-11の出力本文比較承認：本README、共通lessons.jsonl、新規check_evidence_snapshot.pyの3ファイルに限定。取得基準は`62c8f289cebd55084515af127887781df9337d42`。V2への検索一組と出力コピーの比較、記録、GitHub保存・再取得確認を行い、既存4ファイルとその他の領域は保持します。
 - 2026-11-11の限定回復承認：本README、共通lessons.jsonl、新規check_evidence_recovery.pyの3ファイルに限定。前回保存commitは`eb2a9714c9264475ce8684efc0163f2f65b6e75f`、今回の取得基準は`0a0501b16d5efd2ca5f060bb96548db058264886`。各方式で初回一回・回復一回、記録、GitHub保存・再取得確認を行い、既存5ファイルと他領域を保持します。
 
+- 2026-11-12の複数経路比較承認：本README、共通lessons.jsonl、新規check_dependency_paths.pyの3ファイルに限定。前回保存commitは`e9fb03446908fae82cf9995e4479d6a470c27c32`、今回の取得基準は`edafa3c287bdf70cdb99335d95e047a5384d20b5`。V2へE5を一行だけ加えた派生入力を各方式一回取得し、全経路・原本の照合と実装負担の記録、GitHub保存・再取得確認を行います。既存入力・5本のコードと他領域は保持します。
+
 ## 撤去方法
 
-今回の限定回復だけを撤去する場合は、check_evidence_recovery.pyと、本README内の対応する案内・比較節・来歴を対象にします。既存の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
+今回の複数経路比較だけを撤去する場合は、check_dependency_paths.pyと、本README内の対応する案内・比較節・来歴を対象にします。他の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。本体設定や外部サービスへの解除はありません。今回は撤去を行いません。
+
+限定回復だけを撤去する場合は、check_evidence_recovery.pyと、本README内の対応する案内・比較節・来歴を対象とし、下記の読取依存も確認します。既存の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
 
 出力本文比較だけを撤去する場合は、check_evidence_snapshot.pyと、本README内の対応する案内・比較節・来歴を対象とし、下記の再利用関係も確認します。初回・関係付替え・版差の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
 
 版差比較だけを撤去する場合は、check_snapshot_version.pyと、本README内の対応する案内・比較節・来歴を対象とし、下記の再利用関係も確認します。初回・関係付替えの実験を保持し、得られたlessonは共通Referencesに残して、そのsourcesの固定commitから当時の原本・コード・実測へ戻ります。
 
-既存の比較コードを個別に撤去する場合は、他の実験が関数を再利用していないか確認してください。check_evidence_snapshot.pyはcheck_snapshot_version.py・check_relation_swap.py・run.pyを使い、check_evidence_recovery.pyはその既存4本の関数を使います。再利用元だけを削除して後続実験を壊さず、依存する実験の扱いをその時の権限と目的で判断します。
+既存の比較コードを個別に撤去する場合は、他の実験の関数再利用と読取依存を確認してください。check_evidence_snapshot.pyはcheck_snapshot_version.py・check_relation_swap.py・run.pyを使い、check_evidence_recovery.pyはその既存4本の関数を使います。check_dependency_paths.pyはrun.py・check_snapshot_version.pyの関数を使うほか、保持確認のためfixtureと既存5本すべてを読みます。再利用元・読取先だけを削除して後続実験を壊さず、依存する実験の扱いをその時の権限と目的で判断します。
 
-実験フォルダ全体の撤去を選ぶ場合は、本フォルダのREADME・fixture・run.py・check_relation_swap.py・check_snapshot_version.py・check_evidence_snapshot.py・check_evidence_recovery.pyと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandbox、共通Referencesと他実験を保持します。Referencesに残る経験は、固定commitにある本README・入力・コードへ戻れるようにし、撤去済みの現行パスだけを根拠にしません。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
+実験フォルダ全体の撤去を選ぶ場合は、本フォルダのREADME・fixture・run.py・check_relation_swap.py・check_snapshot_version.py・check_evidence_snapshot.py・check_evidence_recovery.py・check_dependency_paths.pyと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandbox、共通Referencesと他実験を保持します。Referencesに残る経験は、固定commitにある本README・入力・コード・実測へ戻れるようにし、撤去済みの現行パスだけを根拠にしません。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
 
 Git履歴は通常の削除では残ります。運用上の撤去、実験記録の保持、履歴からの完全消去は別の判断です。
