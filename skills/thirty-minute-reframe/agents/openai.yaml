@@ -1,0 +1,4 @@
+interface:
+  display_name: "30分化"
+  short_description: "30分を柔軟な目安に、目的を保って方法を組み直し、迷いを軽くする"
+  default_prompt: "$thirty-minute-reframeを使い、今の依頼と条件に合わせて30分化を検討し、必要な価値・準備・全行程を踏まえた理解や案と、その理由を示してください。"
