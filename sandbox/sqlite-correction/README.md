@@ -1,10 +1,10 @@
 ---
 title: "SQLite Correction — 訂正を次の判断へ届ける一件"
-version: "v004"
+version: "v005"
 created: "2026-11-07"
 updated: "2026-11-11"
 case_id: "SQLITE-CORRECTION-001"
-status: "experimental / baseline matched / relation, input-version, and output-evidence distinctions observed / Human value appraisal unconfirmed"
+status: "experimental / baseline and bounded evidence recovery observed / relation, version, and output distinctions retained / Human value appraisal unconfirmed"
 scope: "One hand-authored case; not an operational Ark database"
 ---
 
@@ -19,6 +19,7 @@ scope: "One hand-authored case; not an operational Ark database"
 - [check_relation_swap.py](check_relation_swap.py)：基準と、実行中だけE3の始点を付け替えた入力を比較します。元のfixture・runnerと、その7つの期待値照合を保持します。
 - [check_snapshot_version.py](check_snapshot_version.py)：C1.textだけが異なるV1・V2で、検索の成立と、検索前に固定した要求版V2への一致を別々に確かめます。派生入力はメモリ上だけに置きます。
 - [check_evidence_snapshot.py](check_evidence_snapshot.py)：V2を検索した正常出力と、訂正文だけを古くした出力コピーを比較します。入力版・出典表示の保持と、返す原文の一致を分けます。
+- [check_evidence_recovery.py](check_evidence_recovery.py)：訂正文の不一致を検出した根拠を保留し、固定V2から一度だけ再検索します。照合が成立した内容だけを後段の根拠欄へ返します。
 - 本README：目的・結果・意味の限界・再開・撤去を所有します。
 
 GitHubはコードと合成原本の保存先です。SQLiteは実行環境の`:memory:`内に構築し、読み込み後は`query_only`で問い合わせ、終了時に接続を閉じます。永続DB、常設サービス、GitHub Actions、Automation、既存のRecall／Task運用への接続はありません。
@@ -310,6 +311,86 @@ Arkで訂正を取り戻す設計では、入力の取得版を確かめるこ�
 
 観測から独立して使える「入力・出典表示と返す本文の一致を別々に確認する」という条件付き判断を[lessons.jsonl](../references/lessons.jsonl)へ追加し、本節と実行コードの固定commitへ結びます。既存のlesson、Feedback、成功事例は保持します。今回、新しいHuman Feedbackや成功評価は作っていません。
 
+<a id="evidence-recovery-001"></a>
+
+## 追加比較：訂正文の不一致から指定原本への限定回復
+
+問いは「取得したC1本文が指定原本と食い違う時、Humanへ経緯の再説明を求めず、その根拠を保留し、固定した原本から一度だけ取り直して戻れるか」です。実験IDは`SQLITE-CORRECTION-EVIDENCE-RECOVERY-001`。現在の希望の判断や、提案の採用・取消し・実行は行いません。
+
+### 固定期待値と処理の範囲
+
+要求原本は前回と同じ合成V2です。保存済みfixtureのV1からC1.textへの追記だけで生成する3,295バイト、要求hash、IDごとの原本文を検索前に固定します。V2の変換方法・元の合成時刻の扱いは[版差比較](#snapshot-version-001)を引き継ぎ、今回の結果へ合わせて変更しません。
+
+事前の期待は、初回取得が両方式で一致し、C1.textだけをV1へ戻した共通コピーが不一致として保留され、その後一度の再検索で9レコードが原本V2と一致して返せることです。P1・P2の経路と未採用状態、C1の全文、原文・時点・条件・出典情報を保持します。
+
+初回取得と回復取得を各方式一回ずつ行います。SQLiteはそれぞれ新しい`:memory:`接続を使い、固定V2から作り直します。回復はこの合成入力への再検索であり、GitHub最新原本の取得、真正性の検証、実運用キャッシュの修復ではありません。
+
+### 実行方法と後段への返却
+
+```sh
+python -B sandbox/sqlite-correction/check_evidence_recovery.py --base-source-commit 0a0501b16d5efd2ca5f060bb96548db058264886
+```
+
+commit引数は呼出し側が確認したfixtureと既存4本のPythonコードの取得版です。新コードの保存commitや最新mainを自己確認する機能ではありません。既存のV2生成・版照合・出典付与・レコード照合・取得観測を関数として再利用します。各取得は既存run.main()を通りますが、関係付替え・版差・出力本文の比較スクリプトのmainは呼ばず、過去のケース群を再演しません。
+
+後段へ渡す欄は`downstream.verified_evidence`です。候補を検査する処理と、この欄へ入れる処理を分け、入力版、二方式一致、元の7項目、候補・経路、原本とのレコード一致、出典metadata、訂正対象、未採用状態が成立する時だけ格納します。
+
+不一致時は`state: WITHHELD`、`verified_evidence: null`と理由を返します。不一致の期待値・実際値は診断用の記録に分け、このコピーを検証済みの根拠欄へは入れません。この問いへ返す一組の根拠を保留する処理であり、他の8レコードの一致や、全履歴を否定する処理ではありません。
+
+再検索は一回だけです。再検索・照合が成立しなければ根拠欄を空のまま理由を返し、別原本への切替や追加再試行を行わず終了する構成です。今回はその失敗分岐を追加実行していません。
+
+### 実測：2026-11-11の限定回復一件
+
+- 実行日時：2026-11-11 21:09:23 JST（12:09:23 UTC）。実行環境の時計によります。
+- 環境：Python 3.12.14／SQLite 3.53.1／Linux x86_64。追加インストールなし。
+- 取得基準：`0a0501b16d5efd2ca5f060bb96548db058264886`。既存5ファイルのGit blobと作業コピーを照合し、新コードはGitHub保存前の作業コピーで実行しました。
+- 要求bytes・hash・照合用原本の固定時刻：`2026-11-11T12:09:23.721376+00:00`。この後に初回検索を行いました。
+- 実行は一件一回。ファイル方式・SQLite方式とも初回一回、回復一回の計二回。回復の再試行は一回だけで、不具合修正による再実行はありません。
+- 観測は`EXPECTED_BOUNDED_RECOVERY_OBSERVED`、終了コード0。回復処理の6確認項目はすべてtrueでした。
+
+| 処理段階 | 実測 | 後段の根拠への影響 |
+|---|---|---|
+| 入力版の照合 | 要求V2と一致 | 固定した入力を使用 |
+| 初回取得 | 両方式一致、既存7項目true、9レコード一致 | 正常な比較基準を確認 |
+| 出力コピーの変更・検出 | C1.textだけ不一致、他8件は一致 | 問題のあるコピーを特定 |
+| 利用保留 | WITHHELD／verified_evidenceはnull | 未確認の訂正文を正常な根拠として渡さない |
+| 固定V2から再検索 | 両方式各一回。既存7項目true | 回復候補を新しく取得 |
+| 回復候補の照合 | 9件すべて一致、返却条件8項目true | READY／照合済みの一組を格納 |
+
+不一致時にfalseとなった返却条件は`records_match_fixed_V2`だけでした。入力hash、出典metadata、候補・経路、訂正対象、未採用状態は保持されていても、C1.textの不一致で根拠欄は空になりました。元の7項目は検索時の確認であり、変更後コピーの本文を再検査した結果ではありません。
+
+回復後に返した候補はP1 → I1、P2 → P1 → I1。C1本文は「その日だけの希望だった。常に静かな作業を好むという意味ではない。次の相談では、その日の希望を確かめてください。」へ戻りました。P1・P2は`proposed_not_adopted`のままです。返却bundle全体は、初回の正常なbundleと一致しました。
+
+| 識別対象 | SHA-256 |
+|---|---|
+| fixture.jsonl／V1 | `aa5c4e9b446fc79a158b9f0525cd69062fe7f4de3c89cc8049802f7c861193b5` |
+| 要求V2 | `47f6663c6d19512ecec057add2ecbeee91b0e3d9ad8f93f7b3f84ce4f46de909` |
+| run.py | `0fb170c2a930c209b94c2a15a838972eb56a6d2b94b3f9ab848daa09e47b94d1` |
+| check_relation_swap.py | `3c672acb08a66970d1fc551462ae0639c8bf72c2ca944458c1036eef13666f26` |
+| check_snapshot_version.py | `e0b7c54c28a29ca01d7285d54e7a048fa5698dea52e6d3eef9ba2f0408f3da05` |
+| check_evidence_snapshot.py | `470c736ca59b9505b9188db4c6035b657b0240f8723637a012f243022acffdf3` |
+| 今回のcheck_evidence_recovery.py | `afabd2af5383c95c3f0a0db572d7d49d7b9a7ddac303f2c7f01395c22c9925a0` |
+| 今回の正常・回復後bundle（同値） | `7753a2f85982057e46db924e2553fc58b5da0ba406457a20aba65d47323658fb` |
+| 利用保留したbundle | `9c66d41f9353e39c6b4ad4a86efba3e860b2504029e8ecee2bcdb9c466ce0ac0` |
+
+出力hashは前回と同じJSONの正規化規則で計算します。取得基準commitを含むmetadataもhashの対象なので、前回の出力hashとの違いを本文差だけと解釈しません。今回は同じ条件下で正常出力と回復後出力が一致することを確認しました。
+
+実験はメモリと標準出力のみを使い、既存5ファイルのバイト一致を終了時に確認しました。派生入力、DB、結果ファイル、bytecode cacheは残していません。
+
+### 判断に使えることと限界
+
+この合成一件では、検出後に根拠の利用を保留し、固定原本から取り直して照合が成立した時だけ返す流れが動きました。処理の入力にHumanからの経緯の再説明は含まれませんでした。これは機械的な回復手順の成立であり、実際のHumanの負担が減ったという測定ではありません。
+
+`READY`は、この実験で宣言した原本と取得内容が対応するという意味です。原本の真正性、AIによる意味理解、現在のHumanの希望、提案の採用・取消し・実行権限を認定しません。ファイル方式にも同じ回復が成立しており、SQLite固有の優位性を示していません。
+
+不一致は正常な検索後の共通コピーへ意図して入れたもので、SQLiteや実運用キャッシュの障害を観測したものではありません。回復後も不一致が続く場合・再検索が例外となる場合の停止分岐はコードにありますが、今回は未実行です。全破損・同時変更・権限・悪意ある入力に対する保証へ広げません。
+
+成立条件は、固定原本と検索処理が正常で、今回の混入を初回の出力コピーだけに入れ、回復取得では再注入しないことです。持続する障害の原因を修正した証拠ではなく、原本自体の誤りを再検索で直せるとも示していません。
+
+後段の根拠欄は本スクリプト内の契約です。実際のAI接続や、診断用テキストを隔離するセキュリティ境界を導入したわけではなく、別AIがこの区別に従うことも未確認です。Humanの成功評価と実生活効果は未確認のまま保持します。
+
+この観測からの条件付き判断は、既存lessonと重複しない回復・返却の点を[lessons.jsonl](../references/lessons.jsonl)へ記録し、本節・コードの固定commitへ結びます。新しいFeedbackや成功評価は作りません。
+
 ## 不足・訂正・撤回の扱い
 
 - **構造不備**：重複キー・ID、非JSON定数、参照切れ、未知のSchema・記録種別・フィールド等を拒否するコードがあります。一件専用の入力形も確認します。これらの異常入力は今回投入しておらず、失敗分岐を網羅検証したとは扱いません。
@@ -319,6 +400,7 @@ Arkで訂正を取り戻す設計では、入力の取得版を確かめるこ�
 - **古い索引**：常駐索引を残さず毎回再構築しますが、入力の鮮度は別問題です。更新後は原本の取得版とhashを確認して再実行します。
 - **指定版**：[版差比較](#snapshot-version-001)では、固定した要求V2に対してV1の不一致を識別しました。要求版情報がない場合は不明とし、hashの計算や検索の成立から最新・指定版一致を推定しません。
 - **出力と原本の対応**：[出力本文の比較](#evidence-snapshot-001)では、入力版と出典metadataを保ったまま古くしたC1本文を、原本V2とのレコード照合で検出しました。検索後の意図的な変更一件であり、全経路の完全性や本番の防止・回復機能を保証しません。
+- **不一致後の限定回復**：[回復比較](#evidence-recovery-001)では、根拠を保留し、一度の再検索で固定V2との一致を確認して返せました。回復が成立しない時の停止分岐と、実際のAI接続・運用修復は未検証です。
 - **その他の未確認**：永続化・復旧・同時更新・権限分離・悪意ある文書・大規模性能・24ケース全体・実データ利用は試していません。`query_only`は、この処理における読取制限であり、一般的な情報漏えい対策や完全な実行隔離ではありません。
 
 ## Feedbackと次の判断
@@ -342,15 +424,18 @@ Arkで訂正を取り戻す設計では、入力の取得版を確かめるこ�
 - 2026-11-11の追加承認：共通README、本README、共通referencesの4ファイル、関係付替えスクリプトの計7ファイル。基準と付替えを一組とする比較、記録、GitHub保存と再取得確認に限定し、元のfixture・run.pyは保持します。
 - 2026-11-11の版差比較承認：本README、共通lessons.jsonl、新規check_snapshot_version.pyの3ファイルだけを対象に、V1・V2の一組、記録、GitHub保存と再取得確認。前回保存commitは`b45bb32387473a71691b402c4c4ed65716e03d31`。fixture・run.py・check_relation_swap.py、Feedback・成功事例を含むその他のファイルは保持します。
 - 2026-11-11の出力本文比較承認：本README、共通lessons.jsonl、新規check_evidence_snapshot.pyの3ファイルに限定。取得基準は`62c8f289cebd55084515af127887781df9337d42`。V2への検索一組と出力コピーの比較、記録、GitHub保存・再取得確認を行い、既存4ファイルとその他の領域は保持します。
+- 2026-11-11の限定回復承認：本README、共通lessons.jsonl、新規check_evidence_recovery.pyの3ファイルに限定。前回保存commitは`eb2a9714c9264475ce8684efc0163f2f65b6e75f`、今回の取得基準は`0a0501b16d5efd2ca5f060bb96548db058264886`。各方式で初回一回・回復一回、記録、GitHub保存・再取得確認を行い、既存5ファイルと他領域を保持します。
 
 ## 撤去方法
 
-今回の出力本文比較だけを撤去する場合は、check_evidence_snapshot.pyと、本README内の対応する案内・比較節・来歴を対象にします。既存の三つの比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
+今回の限定回復だけを撤去する場合は、check_evidence_recovery.pyと、本README内の対応する案内・比較節・来歴を対象にします。既存の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
+
+出力本文比較だけを撤去する場合は、check_evidence_snapshot.pyと、本README内の対応する案内・比較節・来歴を対象とし、下記の再利用関係も確認します。初回・関係付替え・版差の比較と共通Referencesを保持し、lessonの根拠には固定commitから戻ります。
 
 版差比較だけを撤去する場合は、check_snapshot_version.pyと、本README内の対応する案内・比較節・来歴を対象とし、下記の再利用関係も確認します。初回・関係付替えの実験を保持し、得られたlessonは共通Referencesに残して、そのsourcesの固定commitから当時の原本・コード・実測へ戻ります。
 
-既存の比較コードを個別に撤去する場合は、他の実験が関数を再利用していないか確認してください。現在のcheck_evidence_snapshot.pyはcheck_snapshot_version.py・check_relation_swap.py・run.pyを使います。再利用元だけを削除して後続実験を壊さず、依存する実験の扱いをその時の権限と目的で判断します。
+既存の比較コードを個別に撤去する場合は、他の実験が関数を再利用していないか確認してください。check_evidence_snapshot.pyはcheck_snapshot_version.py・check_relation_swap.py・run.pyを使い、check_evidence_recovery.pyはその既存4本の関数を使います。再利用元だけを削除して後続実験を壊さず、依存する実験の扱いをその時の権限と目的で判断します。
 
-実験フォルダ全体の撤去を選ぶ場合は、本フォルダのREADME・fixture・run.py・check_relation_swap.py・check_snapshot_version.py・check_evidence_snapshot.pyと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandbox、共通Referencesと他実験を保持します。Referencesに残る経験は、固定commitにある本README・入力・コードへ戻れるようにし、撤去済みの現行パスだけを根拠にしません。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
+実験フォルダ全体の撤去を選ぶ場合は、本フォルダのREADME・fixture・run.py・check_relation_swap.py・check_snapshot_version.py・check_evidence_snapshot.py・check_evidence_recovery.pyと、[共通Sandbox](../README.md)内の該当案内を対象にします。別の成果が追加されていないか確認し、共通Sandbox、共通Referencesと他実験を保持します。Referencesに残る経験は、固定commitにある本README・入力・コードへ戻れるようにし、撤去済みの現行パスだけを根拠にしません。本体設定や外部サービスの解除は不要な構成です。今回は撤去を実行していません。
 
 Git履歴は通常の削除では残ります。運用上の撤去、実験記録の保持、履歴からの完全消去は別の判断です。
