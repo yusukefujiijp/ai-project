@@ -1,34 +1,72 @@
 ---
 name: read-social-post
-description: Retrieve the complete text of an X/Twitter or other social-media post from its URL with minimal user copying and tool overhead. Use when a linked post must be read, summarized, verified, or rewritten; skip when its complete text is already supplied.
+description: X/Twitterや他SNSの投稿URLから、依頼された本文、取得可能な投稿情報、メディア情報を取得・照合する。リンク先の投稿を読解・要約・検証・執筆の資料として使うときに利用する。対象・依頼範囲・鮮度を満たす確認済み情報は再利用する。
 ---
 
-# Read Social Post
+# SNS投稿を取得し、確認範囲を見極める
 
-Accept one post URL as sufficient input. Retrieve the target post's complete body before treating retrieval as successful. Reduce retrieval overhead, not source coverage.
+投稿URL一つを入力として受け付ける。完了を判断する前に、Humanが求める範囲を確認する。対象本文、取得可能な投稿情報、メディアURL、メディア内容の確認を別々の成果として扱う。
 
-## Choose a permitted route
+本文の全文取得を求められたら、その範囲を確認してから成功を報告する。対象の同一性・範囲・鮮度を満たす確認済み情報は再利用し、今回の依頼に不足するものを取得する。
 
-- Reuse complete source text already obtained in the current context unless a fresh version is required.
-- Prefer an applicable connector under the host's routing rules. Perform any required public web search first; reuse a lookup already made for this URL. One focused URL or post-ID lookup is normally enough. Do not keep rephrasing queries to assemble snippets.
-- If search or a retrieval tool fails or returns incomplete text, consider another promising, permitted route before asking the user to copy the post. Where allowed, ordinary HTTP retrieval of the public post page can expose the body in HTML or embedded structured data without a browser. Prefer extracting the target body from that page over probing many mirrors or embed endpoints.
-- Distinguish a tool-specific retrieval failure, a site access refusal, and successful retrieval of truncated content. A failed tool does not establish that every route is unavailable. Do not switch methods to evade access controls, an approval rejection, or an explicit non-retryable restriction; respect the affected boundary.
-- Use browser interaction when eligible and necessary, such as expanding the target's own collapsed body. Follow the host's browser eligibility rules; search failure alone does not authorize browser fallback. Read the current browser skill and required documentation once, then reuse valid guidance and the session. Never bypass a plugin fallback restriction.
+## 適用する取得手順を選ぶ
 
-Choose by available evidence and capabilities, not a fixed endpoint sequence. Do not hard-code runtime paths, selectors, credentials, or a promise that one API or HTML tag always contains the full post.
+Hostのconnector・検索・HTTP・ブラウザ・認証・アクセス制御の規則に従う。Toolや本Skillが利用可能であることから、現在の依頼の権限を広げない。
 
-## Extract and verify the target body
+FxTwitter統合プロトコルの適用範囲に入るX/Twitter公開投稿では、新たな取得や同プロトコルに基づく成功判定の前に、次の原本を取得して全文読む。
 
-Identify the author and post ID or canonical URL. Inspect the actual response or DOM before selecting the extraction method. Preserve paragraph order, links, and meaningful inline text; exclude navigation, replies, and recommendations. In HTML, isolate the target body or associated structured data rather than dumping the whole page into context. Use available parsing tools; do not make an optional parser dependency a prerequisite for retrieval.
+https://github.com/yusukefujiijp/ai-project/blob/main/skills/read-social-post/references/fxtwitter-protocol.md
 
-HTTP 200, a matching author, a preview, or a final sentence alone does not prove completeness. Metadata descriptions, oEmbed text, and syndication responses may truncate long posts even when the full body exists elsewhere on the public page. Check for unresolved collapse, truncated tool output, missing long-form fields, or a body ending mid-sentence. Treat ellipses in context: they may be the author's punctuation rather than truncation.
+同梱された [references/fxtwitter-protocol.md](references/fxtwitter-protocol.md) も、原本との同一性と適用する版を確認できれば利用できる。登録済みSkillと別に取得した参照原本が、同じ改訂に属すると推定しない。
 
-Verify coverage across the beginning, intervening paragraphs, and ending. Recover only missing portions; compare another representation when completeness remains uncertain, not as a mandatory duplicate fetch. Keep quoted posts, threads, images, and video separate. A quoted post's “Show more” does not make a complete target body incomplete. Inspect additional material only when the request needs it; never imply that reading the body verified attached media or independently proved the author's claims.
+統合本文0節に従い、現在のHuman指定と確認できる採用状態から適用版を判断する。新しい版番号やmain上のファイルの存在だけでは切り替えない。
 
-## Finish or state the blocker
+X/Twitterの経路選択、API版の互換利用、抽出先、対象照合、本文の取得範囲、メディアの確認状態、数値・日時、失敗時の扱い、完了条件は、統合プロトコルが所有する。詳しい規則を本Skillへ重複掲載しない。
 
-Stop retrieval once target-body coverage is established. Continue the requested analysis or writing within the current scope; preserve plan-only and STOP boundaries. If only retrieval was requested, report success briefly. Reproduce full text only when requested and allowed by applicable copyright rules.
+自身が全文確認済みで、同一性・適用条件・必要な鮮度を満たす読解は再利用する。記憶の要約や他AIの読了報告を、必須の原文読解の代わりにしない。取得・表示切れがあれば未読箇所を回収する。
 
-If coverage remains incomplete, continue only while a distinct permitted route has a concrete prospect of recovering the missing text. Avoid repeating unchanged failures or exploring endpoints indefinitely. When those routes are exhausted or unavailable, state “全文取得未達”, identify the missing scope and specific blocker, and offer the least burdensome viable next step. Do not fill gaps from memory or make user transcription the default first fallback. Use the host's secure authentication flow when login is necessary; never request passwords in chat.
+必須の統合プロトコルを取得できなければ、不足する原本、影響する作業、最小の回復方法を示す。旧Grok案へ黙って戻したり、改訂版を適用済みと称したりしない。
 
-Report body and media status separately: for example, a media access refusal does not undo verified body retrieval. Success through public HTML or a browser is an observed result, not a guarantee for every post, account, environment, or SNS.
+通信失敗、投稿の取得不能、原本の不足だけを理由に、X/Twitterの作業を以下の汎用経路へ自動的に移さない。別経路の利用には、統合プロトコル、現在の依頼、Hostの規則との整合が必要である。
+
+## 統合プロトコルの適用範囲外で経路を選ぶ
+
+以下の汎用的な取得・確認・報告手順は、統合プロトコルの適用範囲外で用いる。適用範囲内のX/Twitter投稿では、統合本文の基準に従う。
+
+他SNSへFxTwitterのURL変換や応答項目を適用する前に、そのSNSに対応する経路と応答形式を確認する。
+
+Hostの経路規則に従い、対応するconnectorを優先する。公開Web検索が必須なら先に行い、対象について有効な検索結果が既にあれば再利用する。検索語を繰り返し言い換えて断片をつなぎ合わせない。
+
+許可されたToolが不完全な本文を返したり失敗したりした場合は、回復が見込める別の経路を検討する。許可されていれば、公開ページへの通常のHTTP取得で、HTMLや埋め込まれた構造化データから対象本文を得られる場合がある。
+
+Tool固有の失敗、サイト側のアクセス拒否、途中までの本文取得を区別する。一つのToolの失敗から、全経路の利用不能を推定しない。アクセス制御、承認拒否、明示された再試行禁止を回避するために手段を変更しない。
+
+ブラウザ操作は、現在の依頼とHostの規則で許可され、必要な場合に限って用いる。適用されるブラウザの指示に従う。検索失敗だけではブラウザへの切替は許可されない。
+
+認証が今回の作業に必要で、かつ許可される場合は、Hostの安全な認証手順を使う。チャットでパスワードを要求せず、取得失敗への自動的な対応として認証を求めない。
+
+## 適用範囲外で対象本文を抽出・確認する
+
+実際の応答から、投稿者、投稿IDまたは正規URLを確認する。段落順、意味のある本文、リンクを保持し、ナビゲーション、無関係な返信、推薦情報を除く。
+
+抽出方法を選ぶ前に実際の応答を調べる。HTMLではページ全体を会話へ流し込まず、対象本文または関連する構造化データを切り出す。任意の解析ライブラリの導入を、取得の前提条件にしない。
+
+HTTP 200、投稿者の一致、プレビュー、自然な末尾だけでは全文性を証明できない。未展開の本文、欠けた長文情報、Toolの表示切れを確認する。省略記号は文脈から判断する。
+
+冒頭・途中の段落・末尾にわたる本文範囲を確認する。不足部分を回収し、不確実性が残る場合は別の表現との比較を検討する。十分に確認できた後の二重取得は必須にしない。
+
+対象本文、引用投稿、スレッド、記事、メディアを分ける。追加資料は依頼に必要な場合に確認する。本文を読めたことから、添付メディアの確認や投稿内の主張の独立した事実確認まで済んだと扱わない。
+
+## 依頼範囲を満たしたら終了し、不足は正確に示す
+
+必要な取得範囲を満たしたら取得を終え、依頼された分析・執筆へ進む。Plan-onlyとSTOPの境界を保持する。
+
+本文の確認範囲、投稿情報の提供状況、メディアURL、メディア内容の確認を分けて報告する。任意項目の欠落だけで確認済み本文まで未取得に戻さず、依頼に必要な項目の不足は未達として示す。
+
+不足部分を得られる具体的な見込みがある、別の許可された経路が残る間だけ回復を続ける。同じ失敗を変化なく繰り返さない。
+
+本文の全文取得に達しなければ「全文取得未達」とし、不足範囲、具体的な阻害要因、負担の少ない実行可能な回復方法を示す。記憶で空欄を埋めず、Humanによる投稿本文の手動コピーを最初の代替手段にしない。
+
+FxTwitter統合プロトコルを適用するX/Twitter投稿では、その詳しい失敗・報告基準に従う。汎用のブラウザ・認証手順を、その分岐からの自動的な代替経路として使わない。
+
+取得と回答への転載を分け、著作権に関する規則を守る。一度の成功を、すべての投稿・SNS・アカウント・実行環境での成功保証にしない。
