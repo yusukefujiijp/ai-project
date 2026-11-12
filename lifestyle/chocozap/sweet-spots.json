@@ -3726,6 +3726,538 @@
           "context": "本人メッセージ全文。Chest Press片手Sweet Spotを30kgから35kgへ更新する明示報告。先行の両手65kgへの更新（cz-record-0043）とは別の報告として追記する。二つの報告から現在の基準は両手65kg・片手35kgとなり、継続する方法では両手の開始点とTriangleへ入る片手の境界に対応する。過去の原文・重量履歴を保持し、他条件は本人の継続ルールで引き継ぐ。左右両側・下降系列・Triangle全段階・回数・セット数・運動完了・身体効果は未報告。二つの報告を公開原本へ保存する本人の明示承認を2026-11-05に受領した。"
         }
       }
+    },
+    {
+      "id": "cz-record-0045",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg": 50,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0041/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Shoulder Press: Sweet Spot\n両手: 50kgに更新しました！",
+          "reported_date": null,
+          "context": "本人の直接入力から重量報告部分を原文のまま保存。各条件の参照基準であり、実施日・来館・左右両側・下降段階・回数・セット数・運動完了は補わない。旧称Sweet Spotの原文を保持し、現在の表示名First Moveとの対応はREADMEの定義から読む。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0046",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "昨日はエアロバイクはNext step次第で流動的としたが間違いだった！\nなぜなら、Next stepこそが外出Workoutや外食やスーパーマーケットで買い物やコンビニ等で流動的でありNext stepがどう転ぶか確率的なので、chocoZAPにおいてExercise Bike(エアロバイク)は確定させた方が良い！\nなぜなら、ここは確定化できる部分かつ、オールアウト的にとても効果が高いので、もしも、外出Dumbbell-Workoutするとしても\"エアロバイク(Exercise Bike)\"はやっておいて損はなく外出Dumbbell-Workoutしようがするまいが\"エアロバイク(Exercise Bike)\"はやっておくべき課題であるという事がよくわかり、深くわかった！",
+          "reported_date": null,
+          "context": "本人のFeedback本文から原文のまま抜粋。当時の依頼はPlan-only。cz-record-0042の接続日Bike省略・Dips終了を後続の本人訂正で置き換える。オールアウトの高い価値は本人評価であり、普遍的効果・当日の実施の証明ではない。『昨日』の暦日は発言日時未確認のため解決しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0047",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "そしてカフェインガム一粒をできる限り活用する事が肝です！\nこれにより、その日の体調や天候に左右されず、ほぼほぼ完璧に近い安定性が出るからです！",
+          "reported_date": null,
+          "context": "本人メッセージから原文のまま抜粋。カフェインガム一粒の活用を重要と捉える本人の方針と主観評価。使用日時・含有量・普遍的な安定性や効果の保証へ補わない。開始前メモへの接続は今回採用された改訂候補v001の範囲。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0048",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 70,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0036/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Lat Pulldown\nSweet Spot\n両手: 70kgに更新しました！",
+          "reported_date": null,
+          "context": "本人の直接入力から重量報告部分を原文のまま保存。各条件の参照基準であり、実施日・来館・左右両側・下降段階・回数・セット数・運動完了は補わない。旧称Sweet Spotの原文を保持し、現在の表示名First Moveとの対応はREADMEの定義から読む。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0049",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 70,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0043/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\nSweet Spot\n両手: 70kgに更新しました！\n\n感覚的ですが1、2、3のリズムで繰り返していた所を\n1、2の3と\n**「の」**を入れる事により\n2と3の間にタメを作る事を心がけ始めました！\nとても良い感触です！アーメン！ハレルヤ！",
+          "reported_date": null,
+          "context": "本人メッセージ全文。70kgへの更新と、2と3の間の『の』でタメを作り始めた工夫・好感触を同じ報告のまま保持。秒数・可動域・運動日を追加せず、以前のLat Pulldownの4の戻しを撤回した報告とも扱わない。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0050",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "両手",
+          "kg": 75,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0048/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Lat Pulldown\nSweet Spot\n両手: 75kgに更新しました！",
+          "reported_date": null,
+          "context": "本人の直接入力から重量報告部分を原文のまま保存。各条件の参照基準であり、実施日・来館・左右両側・下降段階・回数・セット数・運動完了は補わない。旧称Sweet Spotの原文を保持し、現在の表示名First Moveとの対応はREADMEの定義から読む。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0051",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "勘違いしないで欲しいのは我々Ark Projectの\"chocoZAP(Workout)\"つまり、このThreadに於けるSweet Spotは持ち上がるギリギリの重量の事です！\nつまり、この時点ではFull ROMではないというHuman-AI間の認識が重要です！\n擦り合わせしましょう！アーメン！ハレルヤ！",
+          "reported_date": null,
+          "context": "本人メッセージの定義・Correction部分を原文のまま抜粋。同メッセージはPlan-only。『最大重量ではない』という旧AI説明に優先するこのThread固有の意味。従来記録の可動域を後から推定・変更する証拠にはしない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0052",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg": 55,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0045/O001"
+        },
+        {
+          "id": "O002",
+          "machine": "ショルダープレス",
+          "mode": "片手",
+          "kg": 30,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0041/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Shoulder Press\nSweet Spot\n両手: 55kg\n片手: 30kg\nに更新しました！",
+          "reported_date": null,
+          "context": "同じ本人メッセージから、重量報告（S01）と命名の比較相談（S02）をそれぞれ原文のまま抜粋。当時はPlan-onlyで採用・保存済みを認定しない。"
+        },
+        "S02": {
+          "text": "Sweet Spotの名称が分かり難いという意見もある！\nSweet Spotだと様々な意味合いにとれるからです！\n\nしかし、Ark ProjectのSweet Spotの中に複数の意味合いが内包されているので、このまま継続しつつ定義づけをしっかりすればそれで良いという案もある！\n\n双方\"メリットとデメリット\"がある！\nどう思いますか？",
+          "reported_date": null,
+          "context": "同じ本人メッセージから、重量報告（S01）と命名の比較相談（S02）をそれぞれ原文のまま抜粋。当時はPlan-onlyで採用・保存済みを認定しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        },
+        {
+          "source": "S02"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0053",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "片手",
+          "kg": 50,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0040/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Dips\nSweet Spot\n片手: 50kgに更新しました！",
+          "reported_date": null,
+          "context": "本人の直接入力から重量報告部分を原文のまま保存。各条件の参照基準であり、実施日・来館・左右両側・下降段階・回数・セット数・運動完了は補わない。旧称Sweet Spotの原文を保持し、現在の表示名First Moveとの対応はREADMEの定義から読む。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0054",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "Sweet Spotを最大加重とした場合、それはFull ROMではなくギリギリ少し上がり\"1、2の3\"が使える重量です！",
+          "reported_date": null,
+          "context": "本人の追加定義を原文のまま抜粋。非Full ROM・わずかな動き・1、2の3の使用可能性を同時に満たす上限側重量という意味。一般的なFull ROMの1RMや、まったく動かない重量とは同一視しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0055",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "そして、とても重要な要素として\n最重要要素としてFull ROMがあります！\nつまり、Sweet Spotから徐々に徐々に(5kgずつ(chocoZAPは全て5kg刻みのマシンだからです！))重量を下げて行きます！\n各重量でオールアウトします！\n\n重量を下げる段階で最重要要素のFull ROMに至る部分があります！そこもある意味、Sweet SpotなのですがそうするとSweet Spotに二つの全く違う意味合いが出てくるので良くない命名です！",
+          "reported_date": null,
+          "context": "本人の方法説明を原文のまま抜粋。この後続説明を5kg刻み・各重量でのオールアウト・下降途中のFull ROM到達の根拠とし、古い15→10kgの例だけから推定したことにはしない。到達重量、手の切替との前後、到達後のオールアウト終了条件は未報告。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0056",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "「Full ROM到達点」だと日英混交なので、英語にするとどうなるか？\n\n初値の名称はSweet SpotのままでOK！\nなぜなら、今から変えると色々面倒な割には命名変更のメリットが薄いからです！",
+          "reported_date": null,
+          "context": "本人メッセージの命名判断部分を原文のまま抜粋。当時のSweet Spot継続の理由を残す。後のFirst Moveへの改名方針が現在説明に優先するが、過去判断を誤記として削除しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0057",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "Sweet Spotと対になる事が重要なので、\nFull ROM Spot はどうですか？",
+          "reported_date": null,
+          "context": "本人の閃きから命名提案部分を原文のまま抜粋。上限側の旧称Sweet Spotと、下降中にFull ROMへ至るFull ROM Spotという対の意図。現在のFirst Moveへの改名でFRSは撤回されない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0058",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "この会話で直接確認できる先行の本人報告を報告順に追記。当初の発言日・実施日は独立に確認できないため両日付はnull。報告順と同条件previous_refを保持し、保存日から日付を補わない。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "良いですね！\nFull ROM Spotだと\"Full ROM Spot: FRS\"とも訳せます！\nSeed化(\"Seed名(一文定義)\": Double quotation(\")囲みは必須, \"他AIやFuture AI\"が、分かり易くブレずに\"Context(分脈)\"を完全理解にできるようになる事が最重要なので、多少長くなってもOK！)",
+          "reported_date": null,
+          "context": "本人メッセージ全文。FRSの略称と将来AIにも伝わる一文定義の要望。AI作成のSeed文を本人の原文へ混ぜない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0059",
+      "reporter": "YusukeJP",
+      "observed_date": "2026-11-11",
+      "reported_date": "2026-11-11",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-11（Asia/Tokyo）として確認できる本人報告。本人が経験日を原文に明記。created_atは今回の記録作成時刻。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "今日2026/11/11 18:30頃\nchocoZAPと吉野家どちらを先に行くか迷った！\nお腹が空いたので食べてからの方がchocoZAPにより筋力向上にも良いと思い吉野家を先にしたが結果的には間違っており\"予期せぬ失敗\"となった。\n\nなぜなら、18:30-19:30まで吉野家で食事したが(約1時間という時間見積りができたのは大きいです！)\n結局の所、ご飯おかわり無料なのでお腹いっぱい食べた所、お腹いっぱいになりすぎて運動できなくなったからです！\n\nとなると、18:30-19:30までchocoZAPを済ませてから19:30-20:30まで吉野家に行けば正解だった！\n今迄、全く一切、気付かず、主イェシュアごめんなさい！主イェシュアの聖名前を通してTeshuvah(悔改)します！アーメン！ハレルヤ！\n\nしかし、となると、chocoZAP→吉野家のあとには外出Dumbbell-Workoutはしづらい。\nなぜなら、身体が胃腸消化モードに入っているからです！",
+          "reported_date": "2026-11-11",
+          "context": "本人の経験・意味づけ部分を原文のまま抜粋。約1時間の食事と満腹でその時点の運動へ進めなかった経験。chocoZAP先行の時刻案は反実仮想で、来館・Workout実績にしない。胃腸消化モードは本人の説明であり独立した機序確認ではない。必要な空腹対処と満腹の食事を分け、外出Dumbbellはできれば食事前に接続する検討材料。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0060",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-12",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-12（Asia/Tokyo）として確認できる本人報告。運動の実施日・来館は未報告のためobserved_dateはnull。created_atは今回の記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 75,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0049/O001"
+        },
+        {
+          "id": "O002",
+          "machine": "ショルダープレス",
+          "mode": "両手",
+          "kg": 60,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0052/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\nSweet Spot\n両手: 75kgに更新しました！\n\nShoulder Press\n両手: 60kgに更新しました！",
+          "reported_date": "2026-11-12",
+          "context": "同じ本人メッセージ全文。直前の報告順と継続文脈から二つの条件の基準更新として受け取る。Shoulder PressではSweet Spotの語が省略されているが同じ更新文脈。報告日を実施日へ変換しない。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0061",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-12",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-12（Asia/Tokyo）として確認できる本人報告。運動の実施日・来館は未報告のためobserved_dateはnull。created_atは今回の記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ディップス",
+          "mode": "両手",
+          "kg": 70,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0040/O002"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Dips\nSweet Spot\n両手: 70kgに更新しました！",
+          "reported_date": "2026-11-12",
+          "context": "本人の直接入力から重量報告部分を原文のまま保存。各条件の参照基準であり、実施日・来館・左右両側・下降段階・回数・セット数・運動完了は補わない。旧称Sweet Spotの原文を保持し、現在の表示名First Moveとの対応はREADMEの定義から読む。"
+        }
+      }
+    },
+    {
+      "id": "cz-record-0062",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-12",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-12（Asia/Tokyo）として確認できる本人報告。運動の実施日・来館は未報告のためobserved_dateはnull。created_atは今回の記録作成時刻。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "OK！Very Good! \n💡閃きました！✨\n今の意味合いの\nSweet Spot → First Move\nへ命名変更したい！",
+          "reported_date": "2026-11-12",
+          "context": "本人メッセージ冒頭を原文のまま抜粋。このメッセージ時点はPlan-onlyで、改名方針と原本への実装承認を区別する。先行の名称継続判断cz-record-0056を現在の改名方針で更新する。対象はこのThreadで定義した意味で、Ark全体の同語へ拡大しない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0063",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-12",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-12（Asia/Tokyo）として確認できる本人報告。運動の実施日・来館は未報告のためobserved_dateはnull。created_atは今回の記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "バイセップスカール",
+          "mode": "両手",
+          "kg": 25,
+          "source": "S01",
+          "report_kind": "observation"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "バイセップスカール(Biceps curls？)\nFirst Move\n両手: 25kg",
+          "reported_date": "2026-11-12",
+          "context": "同じ本人メッセージの重量報告（S01）と改訂案依頼中の定義・方法の二項目（S02）を原文のまま抜粋。当時はPlan-only。英語表示は後続の本人表記Biceps Curlへ揃え、日本語機械名・原文・条件を保持する。新しいコース位置・片手基準・FRS・実施完了をこの報告から補わない。"
+        },
+        "S02": {
+          "text": "- First Moveは、各種目・手足の条件で、Full ROMではなくギリギリ少し上がり、2と3の間にタメを置く「1、2の3」が使える上限側の重量です。両手では下降開始基準、片手ではTriangleへの切替基準として使います。\n\n- 5kgずつ下降し、各重量でオールアウトし、その過程で最重要要素のFull ROMへ至るという方法を保持してください。Triangleは各重量で左手→右手→両手、その後に重量を下げる順序です。以前のLat Pulldownの「4の戻し」も保持してください。",
+          "reported_date": "2026-11-12",
+          "context": "同じ本人メッセージの重量報告（S01）と改訂案依頼中の定義・方法の二項目（S02）を原文のまま抜粋。当時はPlan-only。英語表示は後続の本人表記Biceps Curlへ揃え、日本語機械名・原文・条件を保持する。新しいコース位置・片手基準・FRS・実施完了をこの報告から補わない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        },
+        {
+          "source": "S02"
+        }
+      ]
+    },
+    {
+      "id": "cz-record-0064",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-12",
+      "created_at": "2026-11-12T11:36:01Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-12（Asia/Tokyo）として確認できる本人報告。運動の実施日・来館は未報告のためobserved_dateはnull。created_atは今回の記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "バイセップスカール",
+          "mode": "片手",
+          "kg": 15,
+          "source": "S01",
+          "report_kind": "observation"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Biceps Curl\nFirst Move \n片手: 15kg\n\n【First Move改訂候補v001：意味と履歴を保って共有原本へ限定反映する】\n\n宛先：このchocoZAPの会話／現ThreadのCurrent AI\n\n- 今回提示された改訂候補v001を採用します。この依頼をHumanが実行依頼として入力した場合に限り、以下の11ファイルへの限定反映、必要な検証、公開GitHub原本への保存、保存後の再取得・照合を承認します。\n\n- Repository：yusukefujiijp/ai-project\n  Ref：main\n\n- 対象：\n  lifestyle/README.md\n  lifestyle/chocozap/README.md\n  lifestyle/chocozap/INSTRUCTIONS.md\n  lifestyle/chocozap/sweet-spots.json\n  lifestyle/chocozap/analyses.json\n  skills/README.md\n  skills/chocozap-sweet-spot/SKILL.md\n  skills/chocozap-sweet-spot/README.md\n  skills/chocozap-sweet-spot/agents/openai.yaml\n  schedules/chocozap-support/README.md\n  schedules/chocozap-support/PROMPT.md\n\n- このThreadで説明したSweet SpotをFirst Moveへ改名し、Full ROM Spot（FRS）を維持してください。FMは略称候補のままにしてください。First Moveの非Full ROM・わずかな動き・「1、2の3」が使える上限側重量という定義と、両手の下降開始・片手のTriangle切替という役割を揃えてください。\n\n- 5kg刻み、各重量でのオールアウト、「の」のタメ、Lat Pulldownの「4の戻し」、Exercise Bikeを基本に含める最新の訂正を、関係する現在説明へ反映してください。Treadmill全面カット、帰宅後5kg、外出Dumbbellは「できれば」という条件を保持してください。\n\n- この会話で直接確認できる未保存の本人報告を、原文・条件・確認できる日付・報告順を保って反映してください。最新値だけで中間報告を消さず、今回のBiceps Curl両手25kgも加えてください。未報告の実施日・来館・片手基準・FRS・コース順・運動完了を生成しないでください。\n\n- 過去の本人原文と分析の形成履歴を保持し、旧称から現在のFirst Moveへ辿れるようにしてください。ファイル名、既存データキー、記録ID、スクリプト、スキル呼出し名は維持し、FRSをFirst Moveと同じ重量基準へ混ぜないでください。\n\n- 最新mainと並行変更を確認し、反映済みなら重複を避けてください。必要な構造・参照・意味の検証を行い、保存先から再取得して、値・出所・本文・差分を照合してください。日付未確認による集計上の曖昧さは、架空の日付や無断のコード変更で解消しないでください。\n\n- この承認は共有原本への限定反映です。登録済みSkill、Projectの実設定、配信時刻・配信先・有効状態、他タスク、Arkの他の文脈にあるSweet Spotの変更は含めません。\n\n- Goalは、短いFirst Move報告から条件・重量・方法上の役割を同じ意味で読み取れ、過去の報告との連続性を保つ原本を整え、保存後の確認まで完了することです。",
+          "reported_date": "2026-11-12",
+          "context": "今回の本人メッセージ全文。片手15kgは両手25kg（cz-record-0063/O001）と別条件で初めて明示された基準。2026-11-12（Asia/Tokyo、現在のclient time context）に受領。11ファイルの共有原本への限定反映・公開保存・再取得照合の実行承認を含む。登録済みSkill・実設定・配信の時刻や状態・他タスクは範囲外。"
+        }
+      }
     }
   ]
 }

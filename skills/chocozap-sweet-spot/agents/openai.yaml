@@ -1,4 +1,4 @@
 interface:
-  display_name: "chocoZAP Sweet Spot"
-  short_description: "現在のSweet Spot・Triangle・コースをつなぎ、自然な報告と訂正を支える"
-  default_prompt: "$chocozap-sweet-spot を使い、現在のSweet Spotとroutineを踏まえて、今回の報告・訂正・Feedbackを整理してください。"
+  display_name: "chocoZAP First Move"
+  short_description: "First Move・FRS・Triangleをつなぎ、自然な報告と訂正を支える"
+  default_prompt: "$chocozap-sweet-spot を使い、現在のFirst Move（旧称Sweet Spot）・Full ROM Spot（FRS）とroutineを踏まえて、今回の報告・訂正・Feedbackを整理してください。"

@@ -1,9 +1,9 @@
 ---
 title: "Lifestyle — 生活領域の入口"
 canonical_path: "lifestyle/README.md"
-version: "v001"
+version: "v002"
 created: "2026-10-14"
-updated: "2026-10-14"
+updated: "2026-11-13"
 role: "Stable domain discovery; not a second record store or current-state board"
 ---
 
@@ -15,7 +15,7 @@ role: "Stable domain discovery; not a second record store or current-state board
 
 | 領域 | 何を育てるか | 現行入口 |
 |---|---|---|
-| chocoZAP | Sweet Spot、来館、方法の工夫、学習・分析を、本人の経験と訂正から継続して育てる独立テーマ | [chocoZAPのREADME](chocozap/README.md) |
+| chocoZAP | First Move（旧称Sweet Spot）・Full ROM Spot（FRS）、来館、方法の工夫、学習・分析を、本人の経験と訂正から継続して育てる独立テーマ | [chocoZAPのREADME](chocozap/README.md) |
 
 ## 接続と役割
 
@@ -27,4 +27,4 @@ Current Humanの目的・Correction・STOPと、対象に適用される読取�
 
 この入口の初版は、承認されたchocoZAP移設に必要な案内を整える範囲。生活領域全体の分類・運用を確定するものではない。[PR #8](https://github.com/yusukefujiijp/ai-project/pull/8)で目的・切替・確認範囲を辿れる。配置や接続方法も、今後のHuman Feedbackと権限に応じて改善できる。
 
-EOF::LIFESTYLE_ENTRY::v001
+EOF::LIFESTYLE_ENTRY::v002

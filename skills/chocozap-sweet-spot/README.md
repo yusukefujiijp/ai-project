@@ -1,18 +1,20 @@
 ---
-title: "chocoZAP Sweet Spot / chocozap-sweet-spot"
-version: v002
-updated: 2026-10-21
+title: "chocoZAP First Move / chocozap-sweet-spot"
+version: v003
+updated: 2026-11-13
 status: skill usage and invocation guide
 ---
 
-# chocoZAP Sweet Spot / chocozap-sweet-spot
+# chocoZAP First Move / chocozap-sweet-spot
 
-本人が採用したSweet Spot・Triangle・コースを現在の記録から取り戻し、自然な報告・訂正・Feedbackを次の実践へつなぐスキルです。重量・順序・店舗などの現在値は領域原本が所有し、このREADMEへ重複保存しません。
+本人が採用したFirst Move（旧称Sweet Spot）・Full ROM Spot（FRS）・Triangle・コースを現在の記録から取り戻し、自然な報告・訂正・Feedbackを次の実践へつなぐスキルです。重量・順序・店舗などの現在値は領域原本が所有し、このREADMEへ重複保存しません。
 
 ## 起動Query
 
 ```text
-$chocozap-sweet-spot を使い、現在のSweet Spotとroutineを踏まえて、今回の報告・訂正・Feedbackを整理してください。
+$chocozap-sweet-spot を使い、現在のFirst Move（このchocoZAP文脈の旧称Sweet Spot）・Full ROM Spot（FRS）とroutineを踏まえて、今回の報告・訂正・Feedbackを整理してください。
+共有原本：https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md
+直接利用できない場合は、この共有SKILL.mdを全文読んで適用してください。取得・表示が切れたら未読箇所を回収し、必須の参照と現在の依頼範囲・Plan-only・STOPを保持してください。
 ```
 
 ### 他AIへ渡す入口
@@ -20,9 +22,9 @@ $chocozap-sweet-spot を使い、現在のSweet Spotとroutineを踏まえて、
 スキル登録済みの環境では「chocozap-sweet-spotスキルを活用して下さい！」と呼び出せます。他AI・Future AIへ渡す場合は、次の本文URLと現在の依頼を伝えます。
 
 ~~~text
-次のchocozap-sweet-spotのSKILL.mdを読み、今回の依頼に適用してください。
+次のchocozap-sweet-spotを利用してください。直接利用できない場合は共有SKILL.mdを全文読んで今回の依頼に適用してください。取得・表示が切れたら未読箇所を回収し、必須の参照と現在の依頼範囲・Plan-only・STOPを保持してください。
 https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot/SKILL.md
-現在のSweet Spot・方法・コースの役割を復元し、今回の報告・訂正・Feedbackを受け取ってください。
+現在のFirst Move（旧称Sweet Spot）・Full ROM Spot（FRS）・方法・コースの役割を復元し、今回の報告・訂正・Feedbackを受け取ってください。
 ~~~
 
 当日の報告が既に読める場合は再利用します。保存済みの履歴は[chocoZAP記録入口](../../lifestyle/chocozap/README.md)から対象日・来館へ進みます。保存先へアクセスできない環境には、必要な当日の記録を添えます。URLの提示だけで導入・自動選択・過去の記憶の引継ぎが完了したとは扱いません。復元する版を固定したい場合は、`main`ではなく確認済みコミットSHAのURLを使います。
@@ -42,6 +44,10 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/chocozap-sweet-spot
 同日の[共有更新](https://github.com/yusukefujiijp/ai-project/commit/1cfdd435707cb1549b4dce1b3c9a4c449a39fd07)をmainから再取得し、本文・表示設定の一致を確認した。既存の登録済みSkillへ本文と表示説明・起動文を反映し、利用対象・自動選択設定・アイコン指定を保持した。導入先の永続保存後、スキル取得機能から本文を全文取得して共有版と完全一致した。本文blob SHAは `ad2ad460c28ded512a765a8f281e279950418be4`。導入先がYAMLの引用符・字下げを正規化したため表示設定は値の一致で確認し、本文は全文一致で確認した。Project設定画面や今後の実配信まで完了したという意味ではない。
 
 2026-10-21、本人が通常の現在値一覧に添えていた使い方未指定の古い系列起点を不要と訂正した。共有本文と登録済み本文で、系列起点を無条件に一覧へ含める指示を改め、現在採用中で使い方が解決された基準を通常表示する。履歴は比較・振り返りの依頼時に取り出す。原文・現在の表示契約・根拠は[chocoZAP記録入口](../../lifestyle/chocozap/README.md)と `cz-record-0027`・`CZ-A029` が所有する。過去の系列や重量観察の削除ではない。
+
+2026-11-12、HumanがFirst Move改訂候補v001を採用し、GitHub共有原本への限定反映を承認した。このchocoZAP文脈のSweet SpotをFirst Moveへ改名し、非Full ROM・わずかな動き・「1、2の3」が使える上限側重量、両手の下降開始・片手のTriangle切替という役割を揃えた。FRSは下降中のFull ROM到達として分け、FMは略称候補に留める。5kg下降・各重量のオールアウト・タメと4の戻し・最新のExercise Bike方針を領域原本へ接続した。過去の原文・重量・下記の形成と確認履歴を保持し、パス・既存キー・スクリプト・呼出し名は変えていない。
+
+今回の範囲は共有SKILL.md・このREADME・共有表示設定と指定された関連原本。登録済みSkill、Projectの実設定、配信時刻・配信先・有効状態は変更対象に含まない。構造・意味の検証とGitHub保存後の照合は今回の実行で確認し、過去に行った独立AI確認を今回の改訂でも実施したとは扱わない。定義の根拠・本人原文は[chocoZAP記録入口](../../lifestyle/chocozap/README.md)の `cz-record-0051〜0064` と `CZ-A032` から辿る。
 
 ## 初期形成の記録
 

@@ -1,16 +1,16 @@
 ---
 title: chocoZAP 継続サポート
 canonical_path: schedules/chocozap-support/README.md
-version: v002
+version: v003
 created: 2026-10-13
-updated: 2026-10-14
-updated_reason: chocoZAP原本の配置変更に伴う参照先のみ更新。配信の時刻・頻度・送信先・有効状態・実行範囲は保持
+updated: 2026-11-13
+updated_reason: First Move改訂候補v001の採用により表示名・定義の参照を整合。旧称・履歴・既存パスを保持し、Runtime設定・配信時刻・配信先・有効状態・自動実行範囲は変更しない
 status: active
 ---
 
 # chocoZAP 継続サポート
 
-既存のchocoZAP会話へ、現在の本人の状況に合う支援を届ける日次タスク。開始前メモと現在のSweet Spotを毎回同じ入口から確認し、必要な補足を続ける。
+既存のchocoZAP会話へ、現在の本人の状況に合う支援を届ける日次タスク。開始前メモと現在のFirst Moveを毎回同じ入口から確認し、必要な補足を続ける。
 
 | 項目 | 現行の関係 |
 | --- | --- |
@@ -26,7 +26,7 @@ status: active
 
 Runtimeには、yusukefujiijp/ai-projectのmain / schedules/chocozap-support/PROMPT.mdを毎回全文取得して実行する短いLoaderを設定する。PROMPT本文やメモ・重量表をRuntimeへ複製しない。内部タスクID・会話IDはこの公開原本に保存しない。
 
-更新時はschedules/README.mdの同期契約に従い、原本のGitHub保存を再取得で確かめてからRuntimeのLoaderを設定・再取得する。タイトル・有効状態・配信先・毎日17:00・タイムゾーンは、本人が別途変更しない限り保持する。Runtimeの現在設定を観測せず、GitHub更新だけで接続済みと報告しない。
+更新時はschedules/README.mdの同期契約に従い、原本のGitHub保存を再取得で確かめてからRuntimeのLoaderを設定・再取得する。タイトル・有効状態・配信先・毎日17:00・タイムゾーンは、本人が別途変更しない限り保持する。Runtimeの現在設定を観測せず、GitHub更新だけで接続済みと報告しない。共有PROMPTの本文だけを更新する今回のような承認では、RuntimeのLoaderを再設定せず、既存の配信設定へ変更を広げない。
 
 原本取得に失敗した場合は、未取得・取得済み範囲を明示し、実行時に確認できる会話・本人の最新報告だけで限定的に続ける。未取得の一覧を完全・最新と装わない。別タスクの変更、GitHub書込み、旧アーカイブからの現行値の復元は、この自動実行へ含めない。
 
@@ -36,4 +36,4 @@ Runtimeには、yusukefujiijp/ai-projectのmain / schedules/chocozap-support/PRO
 
 2026-10-13の本人承認を受け、既存タスクの指示をGitHubの原本へ接続する構成を導入。タスク設定の確認と、次の実配信・本人が思い出せた結果は分けて観測する。
 
-EOF::CHOCOZAP_SUPPORT_SCHEDULE::v002
+EOF::CHOCOZAP_SUPPORT_SCHEDULE::v003
