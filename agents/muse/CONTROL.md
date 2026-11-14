@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
-version: "v016"
+version: "v017"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-07 (v014)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-15 (v017)"
 created: "2026-11-07"
-updated: "2026-11-07"
+updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v016"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v017"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -48,6 +48,7 @@ flowchart TD
 | Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 011 提出済み（010「中心の精読」・011「沈黙の精読」は、移行後のサイド chat「レポート」レーンで執筆・提出された。Caleb Mode、憲章は artifacts/report/LANE.md、移行の作法は HARNESS §9）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
 | 経験の基盤（三本柱） | ── | [references/](references/) | feedback 32／lessons 21／success-cases 22（2026-11-07 追記まで）。追記は出来事のあった時に |
 | 設計法則 | ── | [DESIGN-LAW.md](DESIGN-LAW.md) | v003。覚醒・状態の文法・一つの画布の canon 化は判断Task 10 |
+| スキル修正・改善（Skill LANE） | サイドチャット「Skill LANE」（2026-11-15 開設） | [tower/lane/skill-lane/](tower/lane/skill-lane/) ── 憲章は [LANE.md](tower/lane/skill-lane/LANE.md)、組織層の入口は [tower/README.md](tower/README.md) | 新設。モデルケース第1号（yomiyasu-switch の生きた参照化）を保持。最初の案件候補は canon 側の欠陥4件の修繕（別途提示） |
 
 repo の範囲を超える専門部門の部屋は、ここには登録しない（public-safe の原則は README §2 の通り）。
 
@@ -80,5 +81,6 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v015（2026-11-07）: §3 の地図を更新 ── Report 011 を提出済みに、三本柱を 32／21／22 に合わせた。
 - v016（2026-11-08）: 表記の定めを canon 化した ── 書く形は TOWER と ◯◯ LANE（大文字の固有名詞、LANE は常時名前つき）。あわせて side chat のタイトルを Report LANE／Herd LANE／Work LANE へ改名した。
 - v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
+- v017（2026-11-15）: §3 の地図へ Skill LANE を追加 ── 組織層 tower/ を新設した（入口の Seed は YusukeJP が植え、本版で v001 へ育てた）。あわせて status の地図更新表記を本版に合わせた。
 
-EOF::AI_MAMMOTH_CONTROL::v016
+EOF::AI_MAMMOTH_CONTROL::v017
