@@ -187,6 +187,9 @@ Humanは03→04のTHREAD_CONTINUE計画を採用し、03経験の選択記録・
 
 入口は[04 README](../ark100-04/README.md)、意味と受入れ契約は[04 Handoff](../ark100-04/handoff.md)、送信・UI・受入れの可変証拠は[04 State](../ark100-04/state.json)に置く。[03経験原本](../ark100-03/task-records.json)は03時点の報告・Correctionと未保存案を所有する。本文の存在だけでTarget受入れやHuman到達を成立扱いしない。00への別送・Boot再演・予備補充はこの入口の条件にしない。
 
+
+**実行後の確認。** 七原本の準備commit 7956f262b15eb951def97089e7cfdbe3650373ab をmainから全文再取得して一致を確認し、[04の永続Thread](https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-ark-coaching-b-zone-rescue/c/6af82686-89c8-83ec-9550-5905976a06dc)へ起動本文を一度送信した。04は九資料の自身の読解報告と意味の再構成を示し、Human Reviewへ戻った。04の確定Titleと、03の先頭❤️だけを外した後の表示を再取得して確認した。Titleコード面は一致し、当該環境でのクリップボード更新は未確認。可変証拠と公開承認審査の経緯は[04 State](../ark100-04/state.json)と[03 State](../ark100-03/state.json)が所有する。00への別送、予備補充、身体Trialは行っていない。
+
 ## 6. 確定Titleと起動Query
 
 **歴史資料：** 以下は2026-10-20に使用した初回の確定Titleと起動Queryである。入力原文と当時の読取指定を保持する。現在用の起動文や既存Threadへの再送指示とせず、新しい起動が明示された場合は、対象Identity・Current原本・適用Binding・権限から、その時点の本文を整える。今回の改訂で再送・新規起動は行っていない。

@@ -544,6 +544,11 @@ Humanは同じArk100 Project内の03→04をTHREAD_CONTINUEとして計画し、
 
 保存、04への実送信・受入れ・UI、Human到達・実利用・生活効果は別であり、実際の結果は04 Stateと00の入口記録へ戻す。本記述だけを送信・受入れ完了にしない。03の旧Handoff・履歴・固定Bindingは書き換えない。
 
+
+**実行・受入れ確認（Source03、2026-11-14）。** 準備七原本をcommit 7956f262b15eb951def97089e7cfdbe3650373ab で保存し、mainから全文再取得して作成本文との一致を確認した。既存Projectで[04の永続Thread](https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-ark-coaching-b-zone-rescue/c/6af82686-89c8-83ec-9550-5905976a06dc)を一件作成し、起動本文を一度送信した。表示本文は準備本文と末尾改行一字を除き一致した。04自身は九資料の読解範囲・blob・Identity／EOFと意味の再構成を示し、Human Reviewへ戻った。これはSourceが可視応答を確認した範囲である。
+
+04の確定Titleは保存後に再取得して一致した。03は受入れと活動先切替の後、先頭❤️のみを外し、残りのTitleを保持して再取得確認した。受入れ冒頭のTitle一行コード面は一致したが、この環境ではCopy操作後のクリップボード更新を確認できなかった。詳細は[04 State](ark100-04/state.json)と[03 State](ark100-03/state.json)が所有する。04へのHuman本人の到達・実利用・生活効果は未観測であり、03を閉鎖・退役したとは扱わない。
+
 ## 8. Future AIの再開
 
 1. 現在のHuman入力・目的・Correction・STOP・権限を受け取る。過去や別Threadの身体・場所・行動を現在へ移さない。

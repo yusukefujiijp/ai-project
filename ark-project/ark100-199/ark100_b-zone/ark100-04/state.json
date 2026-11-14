@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK100_04_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark100:04",
     "created": "2026-11-14",
     "updated_at": "2026-11-14",
     "timezone": "Asia/Tokyo",
-    "update_reason": "Source03 prepared a bounded04 continuation. This is a pre-delivery snapshot, not proof of publication, sending or reception."
+    "update_reason": "Source03 observed one04 startup, Target own nine-source read/reconstruction, exact UI title and conditional source-heart update. Prior preparation snapshot remains historical."
   },
   "identity": {
     "source": "Ark100:03",
@@ -79,27 +79,140 @@
   },
   "now": {
     "goal": "Current words/BrainDump/clear requests → coaching and meaningful recall → present judgment and resumption.",
-    "phase": "PREPARATION_SNAPSHOT_NOT_SENT",
-    "first_legal_move": "Receiver: read declared sources, reconstruct, then receive actual input or return to Human Review.",
+    "phase": "HUMAN_REVIEW_TARGET_ACCEPTED",
+    "first_legal_move": "Receive actual new Human words/BrainDump/clear request or Correction under current authority; no Boot replay or automatic external task.",
     "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
     "unconfirmed": "Waking first contact, natural recall, practical effect, other AI understanding and current reserve availability."
   },
   "evidence": {
     "source03_user_interaction": "Actual Human inputs and feedback in03 are visible in the source conversation; distinct from 2026-11-07 initial observation.",
     "source03_experience_path": "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
-    "target_url": null,
+    "target_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-ark-coaching-b-zone-rescue/c/6af82686-89c8-83ec-9550-5905976a06dc",
     "human_arrival": "NOT_OBSERVED",
     "actual_use": "NOT_OBSERVED",
-    "life_effect": "NOT_OBSERVED"
+    "life_effect": "NOT_OBSERVED",
+    "source_ui_observation": {
+      "date": "2026-11-14",
+      "existing_project_reused": true,
+      "project_id": "g-p-6ad7138ef51c8191bb4f648e0fbea785",
+      "project_name_observed": "Ark100_2026/10/20: \"Ark-Coaching: B-Zone Rescue\"",
+      "project_list_before_startup": "00–03 shown; no04 shown in visible list",
+      "target04_created": true,
+      "target_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-ark-coaching-b-zone-rescue/c/6af82686-89c8-83ec-9550-5905976a06dc",
+      "delivery_count": 1,
+      "title_saved_and_reopened_exact": true,
+      "target_title": "❤️Ark100:04_2026/11/14; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "source03_title_before": "❤️Ark100:03_2026/11/07; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "source03_title_after": "Ark100:03_2026/11/07; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "source03_reopened_after_change": true,
+      "source03_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "project_settings_changed": false
+    },
+    "sent_body_observation": {
+      "reviewed_payload_js_chars": 4394,
+      "displayed_message_js_chars": 4393,
+      "displayed_text_matches_except_one_trailing_newline": true,
+      "initial_payload_fnv1a32": "5ea5c1c5",
+      "ui_copy_clipboard_update": "NOT_VERIFIED: Copy buttons displayed Copied, but browser clipboard read remained the prior sentinel.",
+      "boundary": "The displayed message was compared to the reviewed payload; UI omitted the final newline. Do not claim an independently successful clipboard copy."
+    },
+    "receiver_own_read_report": {
+      "observer": "Ark100:03",
+      "receiver": "Ark100:04",
+      "date": "2026-11-14",
+      "observation": "Completed target response in the persistent Work thread; source inspected the visible response and did not inspect hidden reasoning.",
+      "required_order_reported": true,
+      "full_read_all_nine_reported": true,
+      "source_01_truncation_recovery_reported": true,
+      "identity_eof_binding_no_unresolved_mismatch_reported": true,
+      "sources": [
+        {
+          "order": 1,
+          "path": "ark-project/ark100-199/ark100_b-zone/README.md",
+          "blob": "34363631721164e5fb3e4ee8e6c8676d37c62409",
+          "reported_range": "1–565"
+        },
+        {
+          "order": 2,
+          "path": "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+          "blob": "0067a73cf194cc5e53e49160028038f9c0ded7a6",
+          "reported_range": "1–118"
+        },
+        {
+          "order": 3,
+          "path": "skills/ark-coaching/SKILL.md",
+          "blob": "bb2bd5e7c61f5ca62a454a97cfe0047c28639fac",
+          "reported_range": "1–115"
+        },
+        {
+          "order": 4,
+          "path": "AGENTS.md",
+          "blob": "cf949292f291fc62105b5b42a4729cad0911c0d2",
+          "reported_range": "1–537"
+        },
+        {
+          "order": 5,
+          "path": "keybindings/README.md",
+          "blob": "60001cd21d39e9039ae11707e0d1911555a4f218",
+          "reported_range": "1–124"
+        },
+        {
+          "order": 6,
+          "path": "prompts/ai-next-thread-handoff.md",
+          "blob": "74fc2e7c15e8cf27f55b77630386e6967c2afc17",
+          "reported_range": "1–221"
+        },
+        {
+          "order": 7,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
+          "blob": "821a94a2fca304e40f83fc76ea40f76bbc6225df",
+          "reported_range": "1–52"
+        },
+        {
+          "order": 8,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
+          "blob": "92c9359b564ad18efcfaa0af99cc102168aa76ca",
+          "reported_range": "1–92"
+        },
+        {
+          "order": 9,
+          "path": "ark-project/ark100-199/ark100_b-zone/ark100-04/state.json",
+          "blob": "88c63b5e868a03a7b1bdf38423ff34cf2569fd01",
+          "reported_range": "1–105"
+        }
+      ],
+      "initial_title_code_surface_exact": true,
+      "clipboard_copy_operation": "NOT_VERIFIED_IN_CURRENT_BROWSER",
+      "meaning_reconstructed": "Same Ark100 THREAD_CONTINUE; Root/Teshuvah/Keli; proactive recall, center/focus, recursion, will and Vision; separate dryer, preholiday fatigue, waking report and unknown contact; unsaved candidates vs shared 30-minute source; boundaries and Human Review.",
+      "source03_experience_original_full_read": "NOT_CLAIMED_BY_TARGET; 04 reconstructed required core from Handoff, experience detail remains conditional."
+    },
+    "approval_review_recovery": {
+      "operation": "GitHub create_tree with the seven proposed originals",
+      "initial_result": "AUTO_REVIEW_REJECTED_BEFORE_WRITE",
+      "stated_reason": "The reviewer could not confirm explicit public disclosure approval for conversation-derived health, religious and other private details in the public repository.",
+      "human_confirmation": "After a review ZIP and a question naming seven originals, categories and public repository/main, Human replied '承認でOK！'.",
+      "recovery": "The same seven reviewed bodies, target repository and create_tree route were compared with the review ZIP and submitted again; publication and readback succeeded.",
+      "boundary": "Human's prior execution intent and automatic review's determination are distinct; no claim that a phrase guarantees future approval."
+    },
+    "preparation_commit": "7956f262b15eb951def97089e7cfdbe3650373ab"
   },
   "progress": {
-    "source_prepared": "PREPARED_PENDING_PUBLICATION_AND_READBACK",
-    "remote_verification": "NOT_OBSERVED_IN_PREPARATION_SNAPSHOT",
-    "startup_delivery": "NOT_SENT_AT_PREPARATION_SNAPSHOT",
-    "target_reconstructed": "NOT_OBSERVED",
-    "ui_title": "NOT_OBSERVED",
-    "source_heart_removal": "NOT_ATTEMPTED",
-    "receipt_policy": "Later observations are recorded only after inspection; this snapshot is not proof of target delivery."
+    "source_prepared": "COMPLETE",
+    "remote_verification": {
+      "preparation_commit": "7956f262b15eb951def97089e7cfdbe3650373ab",
+      "all_seven_full_main_readbacks": true,
+      "title_identity_links_eof_checked": true,
+      "only_seven_authorized_paths_changed": true
+    },
+    "startup_delivery": "ONE_STARTUP_SENT_DISPLAY_MATCH_EXCEPT_FINAL_NEWLINE",
+    "target_reconstructed": "OWN_NINE_SOURCE_READ_REPORT_AND_MEANING_RECONSTRUCTION_OBSERVED",
+    "ui_title": "EXACT_CONFIRMED_TITLE_SAVED_AND_REOPENED",
+    "initial_title_copy": "EXACT_SINGLE_LINE_CODE_SURFACE_VISIBLE; ACTUAL_CLIPBOARD_COPY_NOT_VERIFIED",
+    "source_heart_removal": "ONLY_LEADING_HEART_REMOVED_AND_REOPENED_EXACT",
+    "human_last_mile": "04 ENTRY_VERIFIED_BY_SOURCE; HUMAN_PERSONAL_ARRIVAL_NOT_OBSERVED",
+    "requested_outcome": "Seven-source preparation/readback, one04 delivery, exact Title, receiver own reported read/reconstruction and source-heart update completed. Human Review.",
+    "receipt_policy": "Visible UI and receiver response only; no claim of reading hidden reasoning or observed Human use/effect.",
+    "receipt_commit_policy": "This receipt describes observed prior work; publication/readback of this receipt is verified after save without self-referential SHA."
   },
   "eof_sentinel": "ARK100_04_STATE_EOF_v001"
 }

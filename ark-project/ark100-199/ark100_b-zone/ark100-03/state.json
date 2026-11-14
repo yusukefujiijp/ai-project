@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK100_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 3,
+    "revision": 4,
     "owner": "Ark100:03",
     "created": "2026-11-07",
     "updated_at": "2026-11-14",
     "timezone": "Asia/Tokyo",
-    "update_reason": "Human continued in03; Source03 prepared the authorized04 continuation. Preserve 2026-11-07 reception observations as historical."
+    "update_reason": "Source03 observed prepared seven-source readback, one04 startup, receiver reconstruction, title and source-heart update; earlier evidence retained."
   },
   "identity": {
     "source": "Ark100:02",
@@ -92,8 +92,8 @@
   },
   "now": {
     "goal": "From current words, wishes, BrainDump or clear requests through Ark-Coaching to useful Ark-Recall/candidates and resumption.",
-    "phase": "SOURCE_03_TO_04_PREPARATION",
-    "first_legal_move": "Publish and verify the authorized preparation, then check actual04 and deliver/reconstruct within current authorization.",
+    "phase": "CONTINUED_IN_ARK100_04",
+    "first_legal_move": "04 is the continuing entry after observed reception. A new explicit request in03 remains governed by its own current scope; no automatic closure or additional task.",
     "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
     "retained_owners": "00 operations;01 independent case;02 formation; current Main/Support and specialist owners unchanged."
   },
@@ -252,10 +252,21 @@
       "target_runtime": "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
       "target_handoff": "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
       "target_state": "ark-project/ark100-199/ark100_b-zone/ark100-04/state.json",
-      "preparation": "PREPARED_PENDING_PUBLICATION_AND_READBACK",
-      "startup": "NOT_SENT_AT_PREPARATION_SNAPSHOT",
-      "source_heart_removal": "NOT_ATTEMPTED",
-      "receipt_policy": "Record actual evidence later without changing old immutable handoff or history."
+      "preparation": "COMPLETE",
+      "startup": "ONE_SENT_DISPLAY_MATCH_EXCEPT_FINAL_NEWLINE",
+      "source_heart_removal": "ONLY_LEADING_HEART_REMOVED_AND_REOPENED_EXACT",
+      "receipt_policy": "Record actual evidence later without changing old immutable handoff or history.",
+      "preparation_commit": "7956f262b15eb951def97089e7cfdbe3650373ab",
+      "remote_verification": "SEVEN_FULL_MAIN_READBACKS_MATCHED",
+      "target_url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-ark-coaching-b-zone-rescue/c/6af82686-89c8-83ec-9550-5905976a06dc",
+      "target_reconstruction": "OWN_NINE_SOURCE_READ_REPORT_AND_MEANING_OBSERVED",
+      "target_title_ui": "EXACT_SAVED_AND_REOPENED",
+      "receiver_title_code": "EXACT_VISIBLE_CLIPBOARD_NOT_VERIFIED",
+      "source_title_before": "❤️Ark100:03_2026/11/07; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "source_title_after": "Ark100:03_2026/11/07; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "human_arrival": "NOT_OBSERVED_IN_04",
+      "life_effect": "NOT_OBSERVED",
+      "approval_review_recovery": "Initial public GitHub create_tree rejected pending explicit disclosure approval; after review package and Human confirmation the same seven bodies were published without bypass."
     }
   },
   "remaining_conditions": [
