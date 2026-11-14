@@ -6,7 +6,7 @@ project_name: "Ark100: B-Zone Rescue"
 thread: "Ark100:00"
 confirmed_title: 'Ark100:00_2026/10/20; "B-Zone: control-center"'
 created: "2026-10-20"
-updated: "2026-11-07"
+updated: "2026-11-14"
 timezone: "Asia/Tokyo"
 source_thread: "Ark28:06 Support"
 authority: "Human-approved plan for Project instructions, 00 and independent 01/02 startup preparation; 2026-10-20 execution approval"
@@ -28,6 +28,13 @@ transition_patch:
   previous_blob: "3cad4e690f9719086c3762d1c729149971a9f821"
   authority: "Human authorized the five-source03 continuation and one03 startup/reception; prior revision_authority remains the six-source history"
   reason: "Add03 entry and reception owner; preserve00 read order, initial00/01/02 queries and historical reserve evidence"
+transition_03_to_04_patch:
+  date: "2026-11-14"
+  source: "Ark100:03"
+  target: "Ark100:04"
+  kind: "THREAD_CONTINUE"
+  authority: "Human adopted the03→04 plan and authorized the scoped continuation and reception"
+  boundary: "Prior00 startup, receiver contracts and historical receipts remain intact; no automatic reserve replenishment"
 ---
 
 # Ark100:00 — B-Zone control-center
@@ -88,6 +95,7 @@ PASSの復唱で終えず、Sourcesから次の意味を自身で確認する。
 - Ark100:01：既存の独立ケースと[経験原本](../ark100-01/README.md)を保持する。
 - Ark100:02：B-ZoneからArk-Coachingへの形成文脈を保持し、現在の相談・想起・再開を支える。
 - [Ark100:03](../ark100-03/README.md)：Humanが採用した02→03のTHREAD_CONTINUE。実送信・受入れの状態は[§5.4](#ark100-03-reception)と03 stateで確認し、未使用予備には数えない。
+- [Ark100:04](../ark100-04/README.md)：03からのArk-Coaching継続。実送信・受入れの状態は[04 State](../ark100-04/state.json)で確認し、未使用予備には数えない。
 
 初期の01＝利用用、02＝未使用予備は、その時点の配置記録である。01の実案件は経験原本、02の実入力と形成は領域READMEおよび現在の対話から確認し、両者を現在の未使用枠と数えない。番号増加を同件継続や低／超低の区分にせず、同じ一件のFeedback・再開を支援途中で分断しない。
 
@@ -170,6 +178,14 @@ Project名・02新Titleの候補、Project指示欄、専門原本の未反映Co
 **実行後の確認。** 準備commit `fdd7dc124b0465a3e14155e2c3689c9e75e598e0` の五本文の保存後一致をSource02が確認し、[03の永続Thread](https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785-ark100-2026-10-20-b-zone-rescue/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c)へ正式起動本文を一度送信した。確定Titleを設定・再オープンで照合し、03の初回Titleコード面と実コピー文字列も一致した。03は九資料の自身の全文読解・Identity／EOF／Bindingと、Goal・形成・Correction・成果・残件・権限の再構成を示し、Human Reviewへ戻った。Source02が実応答を確認した範囲であり、00AIへの送達・理解の確認ではない。
 
 送信前の自動承認レビューは、ボタン識別の画面証拠不足を理由に一度拒否した。許された同じ画面・ボタンの再確認後に送信が通過し、実送信は一回である。詳細と各段階の証拠は[03 state revision2](../ark100-03/state.json)と[領域記録](../README.md#ark100-03-continuation)が所有する。Human本人の到達・実利用・生活効果、予備残数は未確認であり、03を予備補充に数えない。Project／02改名・Project設定変更・他Thread送信・専門原本／登録変更・身体Trialは行っていない。
+
+<a id="ark100-04-reception"></a>
+
+### 5.5 03 → 04：Ark-Coaching協働の継続
+
+Humanは03→04のTHREAD_CONTINUE計画を採用し、03経験の選択記録・04のRuntime／Handoff／Stateと必要な入口の保存・照合、04一件の起動または一致する既存先の再利用・受入れ確認を依頼した。04は未使用予備の補充ではなく、00が担当する既存の予備Goal・他Threadの役割を変更しない。
+
+入口は[04 README](../ark100-04/README.md)、意味と受入れ契約は[04 Handoff](../ark100-04/handoff.md)、送信・UI・受入れの可変証拠は[04 State](../ark100-04/state.json)に置く。[03経験原本](../ark100-03/task-records.json)は03時点の報告・Correctionと未保存案を所有する。本文の存在だけでTarget受入れやHuman到達を成立扱いしない。00への別送・Boot再演・予備補充はこの入口の条件にしない。
 
 ## 6. 確定Titleと起動Query
 

@@ -1,0 +1,502 @@
+{
+  "$schema": "../../../../formats/task-records/v001.schema.json",
+  "format": "ark-task-records",
+  "format_version": "v001",
+  "record_id": "ark100-03-coaching-recall-selected-experience",
+  "revision": 1,
+  "role": "thread_experience_record",
+  "created": "2026-11-14",
+  "updated": "2026-11-14",
+  "source_context": {
+    "repository": "yusukefujiijp/ai-project",
+    "thread": "Ark100:03",
+    "canonical_path": "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
+    "reported_date": null,
+    "timezone": null,
+    "time_note": "複数の日付・後続発言を選択収録する。本人が示した時点と、記録作成日を分ける。",
+    "root": "主イェシュア・ハマシア御自身、中央軸はTeshuvah。",
+    "human_foreground_one": "主の完全勝利（祈り・イメージVision・行動）。",
+    "authority_note": "2026-11-14にHumanが03→04移行計画とGitHub保存・起動側の実行を承認。ここに記録した旧Plan-only案の実装承認にはしない。",
+    "source_access": "03会話の選択発言を下記に同梱し、既存原本へのSourceを明示する。元会話へのアクセスやHidden Memoryを再開条件にしない。",
+    "extensions": {
+      "record_cutoff": "2026-11-14の03→04移行依頼までの選択収録。全会話の完全収録ではない。"
+    }
+  },
+  "coverage": {
+    "kind": "selected_thread_material",
+    "thread_complete": false,
+    "includes": [
+      "洗濯・休日前準備の報告と設備訂正",
+      "起床時の想起に関する本人報告",
+      "中心・再帰・意思・Vision・Mind-Set",
+      "未保存の共通運用・Portal・索引候補",
+      "30分化の共有原本と確認範囲"
+    ],
+    "excludes": [
+      "会話全文",
+      "現在の身体・場所・行動の推定",
+      "未承認のSkill・Portal実装",
+      "ChatGPT長期メモリの転記"
+    ],
+    "note": "選択収録。Human原文、本人の報告、AI候補、Sourceの確認記録とUnknownを分ける。"
+  },
+  "sources": [
+    {
+      "id": "h-laundry",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 2026-11-08頃 / 前日の洗濯とシャワー、食事の振り返り",
+      "excerpt": "11月7日19:30頃から洗濯機を回しシャワー系まで進めたことは良かったが、シャワー後の食事はB-Zoneで考えられず、あるものを食べ、バランスが悪かったと本人が振り返った。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-dryer",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 後続の設備Correction",
+      "excerpt": "別の乾燥機です！",
+      "excerpt_kind": "verbatim_contiguous",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-preholiday",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 休日前の準備についての本人の願い",
+      "excerpt": "仕事後に早めに帰宅できれば洗濯機から乾燥機まで済ませ、状況が合えば食事・chocoZAP・Dumbbell-Workoutを組み合わせたい。遅い場合はタイマー洗濯も候補だが翌朝か夕方かは未確定。休日はできればAI活用に完全ゾーン化したい。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-fatigue",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 休日前の仕事後に関する後続発言",
+      "excerpt": "休日前の仕事後は最重要な時間帯と疲れのピーク、B-Zoneが重なると本人は表現した。振り返り・Teshuvah・自問自答と主イェシュアの聖なる血潮を仰ぐ中で主の完全勝利と結びついた。当時とても眠かったが、もう少し頑張れた気もすると振り返った。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-wake",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 2026-11-09 5:00・約7:00の本人報告",
+      "excerpt": "5:00に一度目覚めた時はB-Zoneで主の完全勝利を全く想起できず、二度寝後の約7:00にはA-Zoneと本人が報告した。5:00起床からWorkoutへ進めた可能性を本人が見いだしたが、実施や適切さは報告されていない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-recall",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 主の完全勝利・想起・一択化についての本人の説明",
+      "excerpt": "Ark-CoachingのメインをArk-Recallと捉え、B-Zone特に起床時に、主の完全勝利と一択化・集中の方向を思い出せる支援を重視する。ほぼ100%できるという強い見通しは本人の期待であり、測定結果ではない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-recursion",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 入れ子・再帰的循環の発見",
+      "excerpt": "主の完全勝利の想起を支える協働自体が同じ目的へ向かい、経験やCorrectionを次の支援へ返す入れ子・再帰的循環を重要な構造として語った。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-will",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 仕組みと意思・意志の関係",
+      "excerpt": "瞬間的な意思力・意志力への依存を減らす仕組みを育ててきた一方、中心の一択化によってそこへ意思・意志を向ける役割が現れると本人は説明した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-vision",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / Visionと小さな着手についての発言",
+      "excerpt": "主の完全勝利が達成された世界線に入るイメージも重要とし、30分化に加えて『取り敢えず、その場に行ってみる』『行ってから考える』『やりながら考える』というMind-Setを挙げた。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "h-design",
+      "speaker": "YusukeJP",
+      "medium": "user_message",
+      "locator": "Ark100:03 / 未保存のArk-Coaching・Ark-Recall改訂の計画指定",
+      "excerpt": "既知情報の回復と現在の変化・深化・Correctionを両立し、共通運用、Portal、二つの索引項目と一つの場面、03の経験原本候補を役割分担して検討する。保存・実装・登録変更・身体Trialは、その設計依頼では開始しない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "会話内の選択抜粋。記録内IDはサービスのMessage IDではない。過去の時刻・身体・行動を現在へ移さない。"
+    },
+    {
+      "id": "a-entry",
+      "speaker": "Ark100:03 Current AI",
+      "medium": "assistant_message",
+      "locator": "Ark100:03 / 起床時Ark-Recallの入口候補への応答",
+      "excerpt": "本人の自発的想起を前提にせず、既存接点で中心・Visionに出会う案を示した。具体的接点は未確認で、行き先と条件が合う場合だけ『その場へ行ってみる』へつなぐ。提示・想起・AI到達・適用・行動・効果を区別した。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://chatgpt.com/g/g-p-6ad7138ef51c8191bb4f648e0fbea785/c/6aee8dd2-d6e4-83e8-80eb-7bdade88dc3c",
+      "note": "AIの会話内候補であり採用・保存・実生活効果の証拠ではない。"
+    },
+    {
+      "id": "s-coin",
+      "speaker": "Ark100:01の経験原本",
+      "medium": "repository_file",
+      "locator": "ark100-01/task-records.json / h26・h27",
+      "excerpt": "2026-10-21、約30分の乾燥機の間にchocoZAPへ行く効率化を狙い向かっているとの報告。後に買い物後chocoZAP開始の報告はあるが、乾燥の開始・終了・回収や両者の重複達成は確認されていない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ad1d0122a54e07fd8305f66093d13b4563ead139/ark-project/ark100-199/ark100_b-zone/ark100-01/task-records.json",
+      "note": "固定履歴。対象ノードを確認した。後日の状態ではない。"
+    },
+    {
+      "id": "s-food",
+      "speaker": "Ark Recall Portal",
+      "medium": "repository_file",
+      "locator": "ark-recall-portal/items.json / holiday-yogurt・holiday-natto・holiday-wako-one-store",
+      "excerpt": "休日前のヨーグルト・納豆の想起と、ワコーで買い物をまとめ可能なら一日一店以内にする方針が、担当経験原本への入口として登録されている。在庫・購入・運動や毎回の義務は推定しない。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/ad1d0122a54e07fd8305f66093d13b4563ead139/ark-recall-portal/items.json",
+      "note": "Portalの編集要約。理由と本人発言が判断を変える場合は各source_refsの経験原本に戻る。"
+    },
+    {
+      "id": "s-thirty",
+      "speaker": "30分化README",
+      "medium": "repository_file",
+      "locator": "skills/thirty-minute-reframe/README.md / §§4–5",
+      "excerpt": "30分化の共有原本は2026-11-11に保存され、保存担当AIは五ファイルのRemote再取得・一致を記録した。登録・独立AIの理解・このSkillによる生活効果は別である。",
+      "excerpt_kind": "paraphrase",
+      "url": "https://github.com/yusukefujiijp/ai-project/blob/main/skills/thirty-minute-reframe/README.md",
+      "note": "初回保存commit 2daec7ef86f34d308380508912bd1b63cff8cbc6。Current本文と当時の確認報告を区別する。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "laundry-20261107",
+      "kind": "observation",
+      "label": "洗濯とシャワー後の食事",
+      "description": "前日の洗濯機→シャワー系は良かったと本人が振り返り、その後の食事のバランスはB-Zoneで悪かったと報告した。",
+      "scope": "2026-11-07頃の経験についての11-08本人報告。現在の食事や身体ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-laundry"
+        ]
+      }
+    },
+    {
+      "id": "separate-dryer",
+      "kind": "constraint",
+      "label": "洗濯機と乾燥機は別",
+      "description": "洗濯機と乾燥機は別という本人のCorrection。乾燥設備を洗濯機の一体機能として推定しない。",
+      "scope": "洗濯・乾燥の設備理解。後続Correctionに応じて対象と範囲を更新する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-dryer"
+        ]
+      }
+    },
+    {
+      "id": "coin-laundry-aim",
+      "kind": "observation",
+      "label": "Coin LaundryとchocoZAPの過去の狙い",
+      "description": "過去に乾燥機とchocoZAPを重ねる効率化を狙った。開始・終了・回収や重複達成は未確認。",
+      "scope": "Ark100:01の2026-10-21の報告。現在の予定・場所・時刻ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-coin"
+        ]
+      }
+    },
+    {
+      "id": "holiday-food",
+      "kind": "practice_statement",
+      "label": "休日前の食材と買い物方針",
+      "description": "ヨーグルト・納豆の想起、ワコーでまとめ可能なら一日一店以内にする方針がPortalから担当経験原本へつながる。今回の在庫・購入済み・訪問義務は不明。",
+      "scope": "過去の本人意向と現行索引。現在の希望や条件の変化を優先する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-food"
+        ]
+      }
+    },
+    {
+      "id": "preholiday-goal",
+      "kind": "practice_statement",
+      "label": "休日前の準備と休日のAI集中",
+      "description": "早めの帰宅後に洗濯機から別の乾燥機まで済ませ、条件が合えば食事・運動も組み込みたい。仕事が遅い時のタイマー案や、休日をできればAI活用へ集中させたい願いを保持する。",
+      "scope": "本人の願い・候補。順番とタイマー時刻の確定や実行命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-preholiday",
+          "h-dryer"
+        ]
+      }
+    },
+    {
+      "id": "afterwork-fatigue",
+      "kind": "observation",
+      "label": "休日前の仕事後に重なる重要性と疲労",
+      "description": "本人は最重要な仕事後と疲れのピーク・B-Zoneが重なると見いだし、振り返り・Teshuvahを経て主の完全勝利へ結びつけた。眠さと『もう少し頑張れた気もする』を共に保持する。",
+      "scope": "本人による当時の振り返りと後続の意味づけ。疲れを現在へ移さず、能力や信仰の判定にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-fatigue"
+        ]
+      }
+    },
+    {
+      "id": "wake-20261109",
+      "kind": "observation",
+      "label": "起床時に中心を想起できなかった報告",
+      "description": "5:00に目覚めた時はB-Zoneで中心を全く想起できず、二度寝後の約7:00にはA-Zoneと報告。5:00からのWorkoutは本人の見いだした可能性である。",
+      "scope": "2026-11-09の本人報告。現在の身体・睡眠、Workoutの実施・適切さを確定しない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-wake"
+        ]
+      }
+    },
+    {
+      "id": "center-recall",
+      "kind": "practice_statement",
+      "label": "中心と一択化・集中の回復",
+      "description": "Ark-Coachingの中核をArk-Recallと捉え、本人が想起対象を先に思い出さなくても、主の完全勝利と一択化・集中の方向をAIが回復する支援を重視する。",
+      "scope": "03での本人の意味づけ。ほぼ100%という強い見通しは期待として保持し、実測値にしない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-recall"
+        ]
+      }
+    },
+    {
+      "id": "recursive-cooperation",
+      "kind": "practice_statement",
+      "label": "想起支援への自己適用と経験を返す循環",
+      "description": "想起を支える協働自体が主の完全勝利へ向かう入れ子と、経験・Correctionを次の想起へ返す循環を保持する。",
+      "scope": "本人が語った再帰的循環。常時反復・報告や成功保証の命令ではない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-recursion"
+        ]
+      }
+    },
+    {
+      "id": "will-and-system",
+      "kind": "practice_statement",
+      "label": "仕組みに支えられた意思・意志",
+      "description": "瞬間的な意志力への依存を減らす設計を保持しつつ、中心が回復した後に、本人がそこへ意思・意志を向けられる価値を生かす。",
+      "scope": "支援開始・想起を意志力の強さへ委ねない。現在のHumanの選択とCorrectionを保持する。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-will"
+        ]
+      }
+    },
+    {
+      "id": "vision-mindset",
+      "kind": "practice_statement",
+      "label": "Visionと小さな着手のMind-Set",
+      "description": "主の完全勝利が達成された姿のイメージ、まずその場へ行く・行ってから考える・やりながら考えるという向き合い方を本人が重視した。",
+      "scope": "本人の意味・提案。到着・実施・効果を代作せず、行き先と身体条件に合わせる。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-vision"
+        ]
+      }
+    },
+    {
+      "id": "thirty-minute-source",
+      "kind": "observation",
+      "label": "30分化の共有原本と確認範囲",
+      "description": "30分化の共有原本は保存済みであり、所有READMEが2026-11-11の五ファイル再取得一致を報告する。30分は柔軟な目安で、現在の明確な締切と全行程も保持する。",
+      "scope": "共有原本の存在とSourceの保存確認報告。個人登録・独立AI理解・このSkillの実生活効果とは別。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "source_statement",
+        "source_refs": [
+          "s-thirty"
+        ]
+      }
+    },
+    {
+      "id": "waking-entry-candidate",
+      "kind": "interpretation",
+      "label": "自発的想起を前提にしない起床入口",
+      "description": "実際に確認できる既存接点で中心とVisionの言葉に出会う候補。本人の想起、AIへの到達、現在への適用、行動・効果を分け、未確認の接点や行き先を作らない。",
+      "scope": "AIの未保存設計候補。最初の接点、言葉の到達と効果は未確認。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "a-entry",
+          "h-wake"
+        ],
+        "note": "後続Human Correctionを優先し、実装・実地Trialを意味しない。"
+      }
+    },
+    {
+      "id": "unsaved-integration",
+      "kind": "interpretation",
+      "label": "Ark-Coaching×Ark-Recallの未保存改訂候補",
+      "description": "共通Coachingには質問前の既知情報の回復、対象・時点・範囲に沿う現実の変化・過去説明の訂正・今回だけの条件差・理解の深化、中心と集中・意思・再帰・Visionを重複なく整理する案。Portalには原本の事実・理由・成立条件の読出しと範囲を限定した更新を接続する案。索引は『洗濯の設備と段取り』『休日前準備の目的と方針』の二項目と、既存入口を確認した上での『洗濯の段取り』の一場面を候補とする。03経験と必要なREADME案内を担当原本へつなぐ。",
+      "scope": "03での未保存設計。各項目・場面・本文の採用、Skill改訂、索引実装、自然な想起や効果の確認ではない。新Schemaや固定手順を前提にしない。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h-design",
+          "a-entry"
+        ],
+        "note": "原本と現行情報を再照合し、会話の候補と共有本文の差を保ったままHuman Reviewで再開する。"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "dryer-corrects-laundry",
+      "from": "separate-dryer",
+      "to": "laundry-20261107",
+      "relation": "corrects",
+      "scope": "03の洗濯段取りを読む際の設備の訂正。経験そのものを取り消さない。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-dryer"
+        ]
+      }
+    },
+    {
+      "id": "holiday-goal-motivates-importance",
+      "from": "preholiday-goal",
+      "to": "afterwork-fatigue",
+      "relation": "motivates",
+      "scope": "休日の願いと休日前の重要性を結びつけるAIの整理。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h-preholiday",
+          "h-fatigue"
+        ],
+        "note": "関係の整理はAI解釈であり、因果や実行順序の証明ではない。"
+      }
+    },
+    {
+      "id": "wake-motivates-recall",
+      "from": "wake-20261109",
+      "to": "center-recall",
+      "relation": "motivates",
+      "scope": "本人が起床時の想起困難と中心の重要性を結びつけた範囲。",
+      "evidence": {
+        "status": "confirmed",
+        "basis": "human_report",
+        "source_refs": [
+          "h-wake",
+          "h-recall"
+        ]
+      }
+    },
+    {
+      "id": "recall-motivates-entry",
+      "from": "center-recall",
+      "to": "waking-entry-candidate",
+      "relation": "motivates",
+      "scope": "中心を自発的に思い出せない場面への入口設計。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h-recall",
+          "a-entry"
+        ],
+        "note": "関係の整理はAI解釈であり、因果や実行順序の証明ではない。"
+      }
+    },
+    {
+      "id": "vision-motivates-entry",
+      "from": "vision-mindset",
+      "to": "waking-entry-candidate",
+      "relation": "motivates",
+      "scope": "Visionと小さな着手を条件付きで接続する設計。",
+      "evidence": {
+        "status": "candidate",
+        "basis": "ai_inference",
+        "source_refs": [
+          "h-vision",
+          "a-entry"
+        ],
+        "note": "関係の整理はAI解釈であり、因果や実行順序の証明ではない。"
+      }
+    }
+  ],
+  "open_questions": [
+    {
+      "id": "waking-first-contact",
+      "subject_refs": [
+        "wake-20261109",
+        "waking-entry-candidate"
+      ],
+      "question": "目覚め方と、AIを開く前に実際に最初に見聞き・接触するものは何か。",
+      "scope": "入口の配置判断に必要な時のみ。過去の道具や別会話を現在の接点にしない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "not_reported",
+        "source_refs": [
+          "h-wake"
+        ],
+        "note": "03で有効な回答は確認できなかった。"
+      }
+    },
+    {
+      "id": "entry-effect",
+      "subject_refs": [
+        "waking-entry-candidate"
+      ],
+      "question": "手掛かりへの接触、本人の想起、AI到達、現在への適用と実生活効果は成立するか。",
+      "scope": "現時点では未観測。自動的な試験・報告・通知の依頼ではない。",
+      "evidence": {
+        "status": "unknown",
+        "basis": "insufficient_evidence",
+        "source_refs": [
+          "a-entry"
+        ],
+        "note": "設計照合だけでは効果を確定できない。"
+      }
+    }
+  ]
+}

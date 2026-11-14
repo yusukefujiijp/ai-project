@@ -5,7 +5,7 @@ version: "v007-human-authorized"
 role: "Ark100 ongoing coaching entry / B-Zone meaning and source-bound formation record"
 status: "Human-adopted shared-source revision / UI naming, settings, receiver understanding and field effects tracked separately"
 created: "2026-10-18"
-updated: "2026-11-07"
+updated: "2026-11-14"
 timezone: "Asia/Tokyo"
 repository: "yusukefujiijp/ai-project"
 canonical_branch: "main"
@@ -46,6 +46,14 @@ transition_patch:
   previous_blob: "55a6aa42df9ef906743467401147b4221674a07f"
   authority: "Human authorized five-source preparation/readback and one03 startup/title/reception; previous six-source authorization fields remain historical"
   reason: "Add ongoing03 route and actual evidence owner without revising specialist support, existing identities or initial startup history"
+transition_03_to_04_patch:
+  date: "2026-11-14"
+  source: "Ark100:03"
+  target: "Ark100:04"
+  kind: "THREAD_CONTINUE"
+  base_commit: "ad1d0122a54e07fd8305f66093d13b4563ead139"
+  authority: "Human adopted the03→04 plan and authorized scoped preparation, verification and04 delivery/reception"
+  boundary: "Keep prior revision authority and02→03 history; no specialist Skill, Project settings, other ownership or reserve change"
 ---
 
 <a id="ark100--b-zone"></a>
@@ -525,6 +533,16 @@ Humanは移行案を採用し、`THREAD_CONTINUE` として既存Ark100 Project�
 送信の初回操作は自動承認レビューに拒否された。理由は承認不在ではなく、指定した数値ボタンを利用可能な画面情報から確認できないことだった。レビューが許した再確認で、同じProject・入力本文・送信ボタン103と一意の有効な送信操作を示した後、同じボタンの送信が通過した。送信経路・宛先・本文・権限範囲を変えず、追加のHuman承認は求めていない。二つの試行を二回の送信と数えない。この一件を将来の審査通過保証にしない。
 
 Human本人の到達・実利用・実生活効果、他AI全体の理解は未確認。03を未使用予備には数えない。Project名・02名・Project設定、専門原本・Skill・登録、他Thread送信、通知・監視・予備補充・身体Trialは実施していない。
+
+<a id="ark100-04-continuation"></a>
+
+### 2026-11-14：03 → 04のArk-Coaching継続
+
+Humanは同じArk100 Project内の03→04をTHREAD_CONTINUEとして計画し、03経験の選択記録、04のRuntime・Handoff・State、必要な入口と検証、04一件の起動または一致する既存先の再利用・受入れ確認までの実行を依頼した。04は独立ケースや未使用予備ではなく、00・01・02、Main／Supportと専門所有を保持する。
+
+[03経験原本](ark100-03/task-records.json)は本人報告・Correction・AI候補・Unknownを区別し、[04 Runtime](ark100-04/README.md)、[Handoff](ark100-04/handoff.md)、[State](ark100-04/state.json)が新しい協働の成立条件と可変証拠を所有する。共有Coaching・Portal・索引の未保存案は未実装として保持し、30分化の共有保存は完了成果として再利用する。
+
+保存、04への実送信・受入れ・UI、Human到達・実利用・生活効果は別であり、実際の結果は04 Stateと00の入口記録へ戻す。本記述だけを送信・受入れ完了にしない。03の旧Handoff・履歴・固定Bindingは書き換えない。
 
 ## 8. Future AIの再開
 

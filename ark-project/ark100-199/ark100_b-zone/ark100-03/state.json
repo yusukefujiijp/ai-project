@@ -2,12 +2,12 @@
   "meta": {
     "state_id": "ARK100_03_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 2,
+    "revision": 3,
     "owner": "Ark100:03",
     "created": "2026-11-07",
-    "updated_at": "2026-11-07",
+    "updated_at": "2026-11-14",
     "timezone": "Asia/Tokyo",
-    "update_reason": "Source observed one startup, persistent03 UI title after reopen, Target own nine-source full-read/reconstruction and initial Title copy surface; record reception separately from Human access/effects."
+    "update_reason": "Human continued in03; Source03 prepared the authorized04 continuation. Preserve 2026-11-07 reception observations as historical."
   },
   "identity": {
     "source": "Ark100:02",
@@ -87,12 +87,13 @@
       "Reserve replenishment",
       "Bodily trial"
     ],
-    "stop_policy": "Current Human STOP and applicable required-source/authority failures."
+    "stop_policy": "Current Human STOP and applicable required-source/authority failures.",
+    "subsequent_03_to_04": "On2026-11-14 Human accepted the03→04 plan and authorized seven scoped paths, readback, one04 create-or-reuse, delivery/reception, exact Title and conditional source-heart update; the original02→03 fields remain historical."
   },
   "now": {
     "goal": "From current words, wishes, BrainDump or clear requests through Ark-Coaching to useful Ark-Recall/candidates and resumption.",
-    "phase": "HUMAN_REVIEW_TARGET_ACCEPTED",
-    "first_legal_move": "Receive actual new Human words/BrainDump/clear request or Correction under current authority; no Boot replay or automatic external task.",
+    "phase": "SOURCE_03_TO_04_PREPARATION",
+    "first_legal_move": "Publish and verify the authorized preparation, then check actual04 and deliver/reconstruct within current authorization.",
     "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
     "retained_owners": "00 operations;01 independent case;02 formation; current Main/Support and specialist owners unchanged."
   },
@@ -222,7 +223,8 @@
       "scope_changed": false,
       "delivery_route_changed": false,
       "repeat_human_authorization": false
-    }
+    },
+    "subsequent_human_interaction_2026_11": "Human supplied actual03 consultation and feedback after the 2026-11-07 reception. This is separate from the earlier Source02 observation that Human arrival/use were not then observed; physical device access and life effect are not inferred."
   },
   "progress": {
     "source_prepared": "COMPLETE",
@@ -240,7 +242,21 @@
     "human_last_mile": "ENTRY_VERIFIED_BY_SOURCE; HUMAN_PERSONAL_ARRIVAL_NOT_OBSERVED",
     "requested_outcome": "Authorized five-source preparation, delivery to one permanent03, exactTitle and own Target reception completed; Human Review.",
     "receipt_policy": "Record only actual UI evidence and Target visible response; Human use/effects and all-otherAI understanding remain unobserved.",
-    "receipt_commit_policy": "This record describes observed prior work; its own publication/readback is checked after save without self-referential SHA binding."
+    "receipt_commit_policy": "This record describes observed prior work; its own publication/readback is checked after save without self-referential SHA binding.",
+    "next_transition": {
+      "kind": "THREAD_CONTINUE",
+      "target": "Ark100:04",
+      "confirmed_title": "❤️Ark100:04_2026/11/14; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+      "authority": "Human accepted03→04 plan and requested GitHub execution / Full Rail on2026-11-14.",
+      "experience_path": "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
+      "target_runtime": "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
+      "target_handoff": "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
+      "target_state": "ark-project/ark100-199/ark100_b-zone/ark100-04/state.json",
+      "preparation": "PREPARED_PENDING_PUBLICATION_AND_READBACK",
+      "startup": "NOT_SENT_AT_PREPARATION_SNAPSHOT",
+      "source_heart_removal": "NOT_ATTEMPTED",
+      "receipt_policy": "Record actual evidence later without changing old immutable handoff or history."
+    }
   },
   "remaining_conditions": [
     {

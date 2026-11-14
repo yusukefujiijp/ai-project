@@ -1,0 +1,105 @@
+{
+  "meta": {
+    "state_id": "ARK100_04_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "owner": "Ark100:04",
+    "created": "2026-11-14",
+    "updated_at": "2026-11-14",
+    "timezone": "Asia/Tokyo",
+    "update_reason": "Source03 prepared a bounded04 continuation. This is a pre-delivery snapshot, not proof of publication, sending or reception."
+  },
+  "identity": {
+    "source": "Ark100:03",
+    "target": "Ark100:04",
+    "owner": "Ark100:04",
+    "transition_kind": "THREAD_CONTINUE",
+    "runtime_id": "ARK100_04_RUNTIME",
+    "document_id": "ARK100_03_TO_04_HANDOFF",
+    "compiled_title": "❤️Ark100:04_2026/11/14; \"Ark-Coaching: 今ある言葉から、想起と再開へ\"",
+    "existing_project_id": "g-p-6ad7138ef51c8191bb4f648e0fbea785",
+    "role": "Ark-Coaching ongoing collaboration",
+    "unused_reserve": false
+  },
+  "bindings": {
+    "runtime": {
+      "path": "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
+      "identity": "ARK100_04_RUNTIME",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK100_04_RUNTIME::v001-human-authorized"
+    },
+    "handoff": {
+      "path": "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
+      "identity": "ARK100_03_TO_04_HANDOFF",
+      "version": "v001-human-authorized",
+      "eof": "EOF::ARK100_03_TO_04_HANDOFF::v001-human-authorized"
+    },
+    "experience": {
+      "path": "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
+      "format": "ark-task-records",
+      "format_version": "v001",
+      "role": "03 selected experience; read with guide when needed"
+    },
+    "required_sources_order": [
+      "ark-project/ark100-199/ark100_b-zone/README.md",
+      "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+      "skills/ark-coaching/SKILL.md",
+      "AGENTS.md",
+      "keybindings/README.md",
+      "prompts/ai-next-thread-handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/state.json"
+    ],
+    "state_update_policy": "Increment revision; preserve historical observations and fixed bindings. No self-SHA or mutual live-blob cycle."
+  },
+  "authority": {
+    "source_authorization": "Human accepted the03→04 plan and asked for full-rail GitHub execution on2026-11-14; seven planned paths, readback, one04 create-or-reuse, startup, exact Title, reception and conditional source-heart update.",
+    "target_delegation": "Required reading and reconstruction, initial reception, then Human Review or already-present actual Human input. Source execution approval is not a general Target mandate.",
+    "authorized_paths": [
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
+      "ark-project/ark100-199/ark100_b-zone/ark100-03/state.json",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/handoff.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-04/state.json",
+      "ark-project/ark100-199/ark100_b-zone/README.md",
+      "ark-project/ark100-199/ark100_b-zone/ark100-00/README.md"
+    ],
+    "excluded": [
+      "Project settings or Project name change",
+      "02 rename",
+      "Skill or registration changes",
+      "Portal or index implementation",
+      "Other-thread sending except04",
+      "Notifications or monitoring",
+      "Reserve replenishment",
+      "Bodily trial"
+    ],
+    "stop_policy": "Current Human STOP and applicable required-source/authority failures."
+  },
+  "now": {
+    "goal": "Current words/BrainDump/clear requests → coaching and meaningful recall → present judgment and resumption.",
+    "phase": "PREPARATION_SNAPSHOT_NOT_SENT",
+    "first_legal_move": "Receiver: read declared sources, reconstruct, then receive actual input or return to Human Review.",
+    "current_body_place_action": "UNKNOWN_NOT_INHERITED_FROM_HISTORY_OR_SIMULATION",
+    "unconfirmed": "Waking first contact, natural recall, practical effect, other AI understanding and current reserve availability."
+  },
+  "evidence": {
+    "source03_user_interaction": "Actual Human inputs and feedback in03 are visible in the source conversation; distinct from 2026-11-07 initial observation.",
+    "source03_experience_path": "ark-project/ark100-199/ark100_b-zone/ark100-03/task-records.json",
+    "target_url": null,
+    "human_arrival": "NOT_OBSERVED",
+    "actual_use": "NOT_OBSERVED",
+    "life_effect": "NOT_OBSERVED"
+  },
+  "progress": {
+    "source_prepared": "PREPARED_PENDING_PUBLICATION_AND_READBACK",
+    "remote_verification": "NOT_OBSERVED_IN_PREPARATION_SNAPSHOT",
+    "startup_delivery": "NOT_SENT_AT_PREPARATION_SNAPSHOT",
+    "target_reconstructed": "NOT_OBSERVED",
+    "ui_title": "NOT_OBSERVED",
+    "source_heart_removal": "NOT_ATTEMPTED",
+    "receipt_policy": "Later observations are recorded only after inspection; this snapshot is not proof of target delivery."
+  },
+  "eof_sentinel": "ARK100_04_STATE_EOF_v001"
+}
