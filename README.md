@@ -187,6 +187,8 @@ previous_blob: "2b72d1f36a68dc880c81dc9e49cec02ff443dbae"
 
 Ark Projectは、YusukeJPとAI-Collaboratorが、主イェシュア・ハマシアをRoot、Teshuvahを中央軸として、信仰・祈り・学び・探究・創作・生活・実践を共に育てる継続協働である。Human Foreground Oneは主の完全勝利（祈り・イメージVision・行動）、最終帰属は主の栄光。AI・Ark・Repository・文書・方法はKeliであり、Rootではない。
 
+[Teshuvah — 主の御前に向き直る歩み](teshuvah/README.md)から、保存された一件と、新しい一件を始める案内を辿れます。
+
 このREADMEは、Ark全体の意味と、現在の目的から進む入口を所有する。`ai-project`はその公開可能な共有原本・成果を保存するRepository、`ark-project/`は番号付きArk領域の案内であり、三者を同一視しない。現在の依頼・有効な承認・指定された読取契約から進み、Homeの再読を毎回のBoot儀式や追加の実行Gateにしない。
 
 Ark協働の初回・文脈復元では、[AGENTSの共通入力規約の読取条件](AGENTS.md#ark-keybindings)に従い、未確認の[キーバインディング原本](keybindings/README.md)へ進む。短縮入力が届く前に共通の意味を読める経路とし、確認済みの読解は適用条件に従って再利用する。
