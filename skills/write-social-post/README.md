@@ -1,7 +1,7 @@
 ---
 title: "SNS投稿"
 version: v001
-updated: 2026-10-20
+updated: 2026-11-15
 scope: "write-social-postの説明・起動Query・形成と確認記録"
 ---
 # SNS投稿
@@ -15,10 +15,13 @@ scope: "write-social-postの説明・起動Query・形成と確認記録"
 ~~~text
 $write-social-post（SNS投稿）を使い、現在参照できる会話・提示資料・最新の訂正をもとに、X向けの公開文を作成してください。今回は原稿作成のみです。
 
-登録済みスキルが利用できなければ、次の共有Skill原本を今回の手順書として読んでください。
-https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md
+登録済みスキルが利用できなければ、次の共有原本を今回の手順書として全文読んで適用してください。
+- Skill: https://github.com/yusukefujiijp/ai-project/blob/main/skills/write-social-post/SKILL.md
+- 公開文Prompt（執筆条件の正本）: https://github.com/yusukefujiijp/ai-project/blob/main/prompts/ai-sns-public-post.md
 
-Skill本文と参照先の公開文Promptを全文確認し、執筆手順・条件に従ってください。語り手とAI名は実際の協働関係と原本の公開名ルールに合わせ、引用元のAI名と混同せず、Human–AI協働を明示してください。
+Skill本文と公開文Promptを確認し、執筆手順・条件に従ってください。語り手とAI名は実際の協働関係と原本の公開名ルールに合わせ、引用元のAI名と混同せず、Human–AI協働を明示してください。
+
+公開文Promptには、条件・例・判断の整理に箇条書きを優先的に使うこと、および最終稿生成時に主述の明確さ・文の流れ・意味保持を点検すること（yomiyasuの原則を参照。実行必須ではない）が書かれています。具体的な配置や直し方は内容に応じて判断する余白があります。原案完成後にyomiyasuスキルでさらに整えることは想定内です。
 
 取得・計測は環境で許可された方法を使い、確認済みの全文は変更・不一致がなければ再利用できます。必要な原本が揃わない場合は不足を示し、本文の提示を求めてください。SNS投稿・スキルの導入や変更・GitHubへの書き込みは行わないでください。
 ~~~
@@ -61,7 +64,7 @@ Skill本文と参照先の公開文Promptを全文確認し、執筆手順・条
 
 **改名と公開名の訂正。** 2026-10-03、マインクラフト稿へのHuman Feedbackにより、同じSkillを `write-social-post`（表示名：SNS投稿）へ改名した。公開上のAI名は読者への伝わり方を踏まえて決める。[公開文Prompt](../../prompts/ai-sns-public-post.md) v004が具体的な表記を所有し、ChatGPT／Codexでの協働は原則ChatGPTと表示する。下記のCodexと名乗った応答は改訂前の観察であり、現行の推奨ではない。既存のSkillを更新し、旧名の別SkillやAI別の本文は増やさない。
 
-改訂後、元会話と期待回答を渡さない独立したAI文脈へ、新しいSkillと共通Promptを明示し、構成した読書メモ素材から約400文字の投稿を作成させた一応答を確認した。タイトルと§0はChatGPTで一致し、Humanとの協働を表示した。素材に登場するGrokは提案の出発点として区別され、未測定の効果は断定されなかった。これは明示読込による限定確認であり、自然な自動選択、Grok／Claude実機、読者の理解や投稿反応の改善を実証するものではない。
+改訂後、元会話と期待回答を渡さない独立したAI文脈へ、新しいSkillと共通Promptを明示し、構成した読書メモ素材から約400文字の投稿を作成させた一応答を確認した。タイトルと§0はChatGPTで一致し、Humanとの協働を表示した。素材に登場するGrokは提案の出発点として区別され、未測定の効果は断定されませんでした。これは明示読込による限定確認であり、自然な自動選択、Grok／Claude実機、読者の理解や投稿反応の改善を実証するものではありません。
 
 **形成と役割。** 2026-10-03、YusukeJPが、ChatGPT／Grok／ClaudeなどのAI名をFew-shotで明示し、実際のAIとの協働を記事内に表示するよう公開文Promptを訂正しました。続く計画と実行承認を受け、write-ai-social-postを作成しました。AIは語り手、Humanは意図・体験・訂正を提供する協働者、元情報は帰属を示す対象として区別します。文章作成からSNS送信を自動開始せず、今回の指定に応じて長さ・形式・構成方法を選べる余地を保ちます。
 
