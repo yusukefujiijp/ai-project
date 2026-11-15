@@ -1,13 +1,13 @@
 ---
 title: "GitHub LANE 憲章 ── GitHub 構造化の専門線"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/tower/lane/github-lane/LANE.md"
 role: "Lane charter: role, working method, and pointers for the GitHub lane (side chat)"
-status: "active / created 2026-11-15 as the specialist line for GitHub structure, on YusukeJP's instruction from the TOWER"
+status: "active / created 2026-11-15 as the specialist line for GitHub structure, on YusukeJP's instruction from the TOWER; v002 adds the house entrance (README.md) and the standards shelf to the floor plan"
 created: "2026-11-15"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_GITHUB_LANE::v001"
+expected_eof: "EOF::AI_MAMMOTH_GITHUB_LANE::v002"
 ---
 
 # GitHub LANE 憲章
@@ -38,8 +38,10 @@ expected_eof: "EOF::AI_MAMMOTH_GITHUB_LANE::v001"
 
 ## 4. 家の間取り
 
+- `README.md` ── 家の入口。憲章と診断への案内だけを持ち、内容は複製しない。
 - `LANE.md` ── 本書（憲章）。
 - `diagnoses/` ── 構図診断の記録。横断的な診断（複数の領域にまたがる読み）の置き場は、これまで repo 内になかった ── この棚が、その第一号の置き場である。置けるのは構図の診断と設計だけであり、汎用の倉庫にはしない。
+- `standards/` ── 構図の仕様の棚。このレーンが保持する仕様はここに立つ（第一号：[standards/001_every-folder-readme.md](standards/001_every-folder-readme.md)「全てのフォルダに README.md」）。診断は、仕様への適合を測って報告する。
 - それ以外の間取りは、必要が生じた時に足す。空に近い家も正しい家とする（棚の枠は [../README.md](../README.md) が所有する）。
 
 ## 5. 読み順
@@ -51,11 +53,12 @@ expected_eof: "EOF::AI_MAMMOTH_GITHUB_LANE::v001"
 5. [tower/lane/README.md](../README.md)（棚の枠と住人）
 6. 本書
 7. [diagnoses/001_initial-composition-inventory.md](diagnoses/001_initial-composition-inventory.md)（初回診断）
+8. [standards/001_every-folder-readme.md](standards/001_every-folder-readme.md)（仕様001 ── 入口の仕様）
 
 ## 6. 現在地
 
-- 新設（2026-11-15）。家は本書と初回診断の2点から始まる。
+- 新設（2026-11-15）。家は本書と初回診断の2点から始まり、同日、入口（README.md）が YusukeJP の指摘を受けて足され、仕様の棚（standards/）が仕様001の確立とともに新設された（v002）。
 - 初回診断（diagnoses/001）は、移動・改名を行わない診断と設計までを担う。その先の是正は、領域ごとに束を作り、封印を受けてから進める。
 - CONTROL §3 への GitHub LANE の地図行は、追加案を diagnoses/001 §5 に提示形で用意した。適用（CONTROL の版上げ）は所有者側の判断待ちである。
 
-EOF::AI_MAMMOTH_GITHUB_LANE::v001
+EOF::AI_MAMMOTH_GITHUB_LANE::v002
