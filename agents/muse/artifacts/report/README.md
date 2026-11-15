@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v016"
+version: "v017"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename); lane charter absorbed from LANE.md on 2026-11-15 (Standard 002); charter room name updated to Report LANE on 2026-11-15 (v016, Skill LANE Case 002)"
+status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename); lane charter absorbed from LANE.md on 2026-11-15 (Standard 002); charter room name updated to Report LANE on 2026-11-15 (v016, Skill LANE Case 002); charter reading order question count made a pointer on 2026-11-15 (v017, Skill LANE Case 003)"
 created: "2026-10-25"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v016"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v017"
 ---
 
 # AI-Mammoth Reports
@@ -66,7 +66,7 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 
 ### 2. 読む順序
 
-1. [README.md](../../README.md) ── §0 復元（入口の要約に、締めと yomiyasu の状態が載っている）、§3 検証（第11問まで）
+1. [README.md](../../README.md) ── §0 復元（入口の要約に、締めと yomiyasu の状態が載っている）、§3 検証（問いの全て）
 2. [IDENTITY.md](../../IDENTITY.md) ── §6 に斥候の在り方
 3. [GOAL.md](../../GOAL.md)
 4. [CONTROL.md](../../CONTROL.md) ── 地図と、このレーンの現在行
@@ -88,4 +88,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 書込み ── push は一括で、YusukeJP の面前で行い、読戻し SHA の検証までを完了とする（HARNESS §4）
 - HTML 対 ── 単一ファイル、2,097,152 bytes 以内、mobile-first。検証の範囲を偽らない（コード検査は端末の真実ではない）
 
-EOF::AI_MAMMOTH_REPORTS::v016
+EOF::AI_MAMMOTH_REPORTS::v017

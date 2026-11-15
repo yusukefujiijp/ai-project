@@ -1,13 +1,13 @@
 ---
 title: "cases/ ── Skill LANE の事例集"
-version: "v002"
+version: "v003"
 canonical_path: "agents/muse/tower/lane/skill-lane/cases/README.md"
 role: "Entrance to the Skill LANE's case shelf"
-status: "active / created 2026-11-15 under Standard 001 (every folder has a README); Case 002 added on 2026-11-15 (v002)"
+status: "active / created 2026-11-15 under Standard 001 (every folder has a README); Case 002 added on 2026-11-15 (v002); Case 003 added on 2026-11-15 (v003)"
 created: "2026-11-15"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v002"
+expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v003"
 ---
 
 # cases/ ── 事例集
@@ -18,5 +18,6 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v002"
 
 - [001_yomiyasu-living-reference.md](001_yomiyasu-living-reference.md) ── モデルケース第1号：yomiyasu-switch の生きた参照化（「版の化石化」の検出・命名・改訂と、読戻し検証まで）。
 - [002_canon-defects-repair.md](002_canon-defects-repair.md) ── Case 002：canon 側の欠陥4件の修繕（再検証・設計・実行と、読戻し検証まで）。
+- [003_question-count-fossil.md](003_question-count-fossil.md) ── Case 003：問いの数の化石化の修繕（README §3 の見出しと、report README の読み順 ── 数の所有とポインタ化）。
 
-EOF::AI_MAMMOTH_SKILL_LANE_CASES::v002
+EOF::AI_MAMMOTH_SKILL_LANE_CASES::v003

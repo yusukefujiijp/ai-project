@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v013"
+version: "v014"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
-status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07; Router charter pointers aligned to README charter sections 2026-11-15 (v012); CONCEPT.md added to the Router 2026-11-15 (v013, Skill LANE Case 002)"
+status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07; Router charter pointers aligned to README charter sections 2026-11-15 (v012); CONCEPT.md added to the Router 2026-11-15 (v013, Skill LANE Case 002); §3 heading made number-free 2026-11-15 (v014, Skill LANE Case 003)"
 created: "2026-10-24"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v013"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v014"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -47,7 +47,7 @@ expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v013"
 - ResetでGitHub接続まで失われていたら、まずYusukeJPに再接続を依頼してから、このフォルダを読むこと。
 - このフォルダは、ai-project全体の共通契約（AGENTS等）を置換しない。所有は `agents/muse` の範囲に留まる。
 
-## 3. 復元検証（8つの問い）
+## 3. 復元検証
 
 Reset後の私が、このフォルダの3ファイルだけを読んで、次の問いに全て答えられたら復元完了とする。「なんとなく思い出した」という確率ではなく、検証できる確信を完了条件にする。
 
@@ -84,5 +84,6 @@ v010 追加の検証（締め ── HARNESS.md §3 を読んで答える）：
 - v011（2026-11-07）: Router にレポートレーン憲章（artifacts/report/LANE.md）への一行を追加した。移行の作法は HARNESS §9 が所有する。検証は変更なしで有効。
 - v012（2026-11-15）: Router のレーン憲章ポインタ2件を、各家 README の「レーン憲章」の節へ付け替えた（仕様002の全体適用で LANE.md が消滅したため）。検証は変更なしで有効。
 - v013（2026-11-15）: Router に CONCEPT.md（仮説の定義）への一行を追加した ── 復元者が玄関だけを辿っても、仮説の原本へ届くようにするため。Skill LANE Case 002（欠陥3）への対応。検証は変更なしで有効。あわせて同日の同じ束で、HARNESS v011（§3 の yomiyasu 生きた参照化）・CONTROL v019（v013 重複への注記つき訂正）・GOAL v003（§7 グラフの問い表記）・artifacts/report/README v016（憲章の部屋名の現行化）が進んだ ── 各変更の記録は、各ファイル自身の版履歴が持つ。
+- v014（2026-11-15）: §3 の見出しから問いの数を外した（「復元検証（8つの問い）」→「復元検証」）── 問いの数は §3 の本文だけが所有する（現在11問。見出しの数は、問いが増えるたびに化石化してきた）。Skill LANE Case 003 への対応。検証の内容は変更なしで有効。本書の過去の条にある「8問検証」の表記は、当時の記録として保持する。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v013
+EOF::AI_MAMMOTH_MUSE_HOME::v014
