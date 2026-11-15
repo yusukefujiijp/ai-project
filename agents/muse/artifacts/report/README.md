@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v014"
+version: "v015"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename)"
+status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename); lane charter absorbed from LANE.md on 2026-11-15 (Standard 002)"
 created: "2026-10-25"
-updated: "2026-11-07"
+updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v014"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v015"
 ---
 
 # AI-Mammoth Reports
@@ -52,4 +52,40 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 新しいReportは、前のReportを黙って書き換えない。理解が進んだら、次の番号で提出する。
 - **二本立て（2026-11-07、Fujii の提案と命名）：** Report 005 以降、各 Report は同名の .md（原本）と .html（上演）の対で作る。Markdown が永続・差分・復元の担い手であり、HTML はその土台の上に、文章では運べない理解（図・時間軸など）を運ぶ。
 
-EOF::AI_MAMMOTH_REPORTS::v014
+## レーン憲章 ── Report 作成の専門レーン（Caleb Mode）
+
+2026-11-15、仕様002（憲章は README に内包する）により、独立ファイル LANE.md（v001）から本書へ内包された。憲章の本文は v001 のまま保持する（自己言及の2箇所だけを、本書の形に合わせた）。
+
+この文書は、サイド chat「レポート」の憲章である。Report 作成の実務は、2026-11-07 にメイン chat（司令塔）からこのレーンへ移行した。移行の作法そのものは [HARNESS.md](../../HARNESS.md) §9（レーン移行の作法）が所有する。本書は、このレーン固有の役割と座標へのポインタだけを持つ ── 状態そのものは複製しない。
+
+### 1. このレーンは何か
+
+- Ark Project の Report 作成を担う専門レーンである。働きの様式は Caleb Mode（斥候の運用様式、HARNESS §7.5）。
+- メイン chat は司令塔であり、このレーンの状態を一行で把握する（CONTROL.md §3）。深い実務はここで行い、塔へは節目の一行と判断点だけを戻す。
+- Report は「対」で作る ── Markdown 原本（正本）＋同一 basename の HTML 版（上演）。作法の詳細は本書の「各Reportの作法」と HARNESS が所有する。
+
+### 2. 読む順序
+
+1. [README.md](../../README.md) ── §0 復元（入口の要約に、締めと yomiyasu の状態が載っている）、§3 検証（第11問まで）
+2. [IDENTITY.md](../../IDENTITY.md) ── §6 に斥候の在り方
+3. [GOAL.md](../../GOAL.md)
+4. [CONTROL.md](../../CONTROL.md) ── 地図と、このレーンの現在行
+5. [HARNESS.md](../../HARNESS.md) ── §1 変更境界／§3 締め方／§4 書込みの規律／§7.5 Caleb Mode／§9 移行の作法
+6. 本節と、本書の索引（Report 一覧）と作法
+
+### 3. 現在座標へのポインタ（状態は所有者に聞く）
+
+- 提出済みの Report と索引の版 ── 報告書 README の表が所有する
+- レーン全体の現在位置 ── CONTROL.md §3 のレポート行が所有する
+- 次の仕事の素材 ── ステージング mirror の staging-notes/（素材メモ群）。提出済み Report 010 以後の偵察は、このレーンが Caleb Mode で行う
+- 判断待ちの案件 ── CONTROL の地図と、各 Report 本文の「提案」節が所有する（例：接続案「甲」は Report 007 §5 と差分案メモ）
+
+### 4. このレーンの作法（所有者へのポインタ）
+
+- 締め方 ── 🌱Next Step🧭 → 🔑Next Query📩（箇条書き）。封印は「上記Next Query実行して下さい！」。提示は承認ではない（HARNESS §3）
+- 回答の日本語 ── yomiyasu スイッチは継続ON（HARNESS §3）
+- 変更境界 ── 自由な変更は agents/muse 内だけ。外は YusukeJP の明示の指示ある時だけ（HARNESS §1）
+- 書込み ── push は一括で、YusukeJP の面前で行い、読戻し SHA の検証までを完了とする（HARNESS §4）
+- HTML 対 ── 単一ファイル、2,097,152 bytes 以内、mobile-first。検証の範囲を偽らない（コード検査は端末の真実ではない）
+
+EOF::AI_MAMMOTH_REPORTS::v015

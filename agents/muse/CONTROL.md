@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
-version: "v017"
+version: "v018"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-15 (v017)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-15 (v018)"
 created: "2026-11-07"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v017"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v018"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -44,11 +44,12 @@ flowchart TD
 
 | レーン | 部屋 | 家（原本の場所） | 現在地 |
 |---|---|---|---|
-| 絶滅種×AI（復活の群れ） | サイドチャット「絶滅種×AI」（2026-11-05 開設） | [artifacts/herd-cards/](artifacts/herd-cards/) ── 憲章は [LANE.md](artifacts/herd-cards/LANE.md) | デッキ v022（LP実験版）repo 収蔵済み／v021 が戻り先。実機判定（v021・v022）と判断Task 群が未了 ── 詳細は同フォルダの judgment-tasks.md が所有 |
-| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 011 提出済み（010「中心の精読」・011「沈黙の精読」は、移行後のサイド chat「レポート」レーンで執筆・提出された。Caleb Mode、憲章は artifacts/report/LANE.md、移行の作法は HARNESS §9）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
+| 絶滅種×AI（復活の群れ） | サイドチャット「絶滅種×AI」（2026-11-05 開設） | [artifacts/herd-cards/](artifacts/herd-cards/) ── 憲章は [README.md](artifacts/herd-cards/README.md) の「レーン憲章」の節 | デッキ v022（LP実験版）repo 収蔵済み／v021 が戻り先。実機判定（v021・v022）と判断Task 群が未了 ── 詳細は同フォルダの judgment-tasks.md が所有 |
+| Ark Project レポート | メイン／必要時に部屋化 | [artifacts/report/](artifacts/report/) | Report 001〜Report 011 提出済み（010「中心の精読」・011「沈黙の精読」は、移行後のサイド chat「レポート」レーンで執筆・提出された。Caleb Mode、憲章は artifacts/report/README.md の「レーン憲章」の節、移行の作法は HARNESS §9）── メインはレーンとして一行で把握する。接続（Report 007 の甲）は差分案まで用意済み、判断は YusukeJP |
 | 経験の基盤（三本柱） | ── | [references/](references/) | feedback 32／lessons 21／success-cases 22（2026-11-07 追記まで）。追記は出来事のあった時に |
 | 設計法則 | ── | [DESIGN-LAW.md](DESIGN-LAW.md) | v003。覚醒・状態の文法・一つの画布の canon 化は判断Task 10 |
-| スキル修正・改善（Skill LANE） | サイドチャット「Skill LANE」（2026-11-15 開設） | [tower/lane/skill-lane/](tower/lane/skill-lane/) ── 憲章は [LANE.md](tower/lane/skill-lane/LANE.md)、組織層の入口は [tower/README.md](tower/README.md) | 新設。モデルケース第1号（yomiyasu-switch の生きた参照化）を保持。最初の案件候補は canon 側の欠陥4件の修繕（別途提示） |
+| スキル修正・改善（Skill LANE） | サイドチャット「Skill LANE」（2026-11-15 開設） | [tower/lane/skill-lane/](tower/lane/skill-lane/) ── 憲章は [README.md](tower/lane/skill-lane/README.md) の「憲章」の節、組織層の入口は [tower/README.md](tower/README.md) | 新設。モデルケース第1号（yomiyasu-switch の生きた参照化）を保持。最初の案件候補は canon 側の欠陥4件の修繕（別途提示） |
+| GitHub 構造化（GitHub LANE） | サイドチャット「GitHub LANE」（2026-11-15 開設） | [tower/lane/github-lane/](tower/lane/github-lane/) ── 憲章は [README.md](tower/lane/github-lane/README.md) の「憲章」の節、組織層の入口は [tower/README.md](tower/README.md) | 新設。repo（特に agents/muse）のフォルダ・ファイル構図の鳥瞰と構造化を担う専門線。初回構図診断（diagnoses/001）と構図の仕様001〜003を保持し、診断と設計まで ── 移動・改名は各部の判断と封印による |
 
 repo の範囲を超える専門部門の部屋は、ここには登録しない（public-safe の原則は README §2 の通り）。
 
@@ -82,5 +83,6 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v016（2026-11-08）: 表記の定めを canon 化した ── 書く形は TOWER と ◯◯ LANE（大文字の固有名詞、LANE は常時名前つき）。あわせて side chat のタイトルを Report LANE／Herd LANE／Work LANE へ改名した。
 - v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
 - v017（2026-11-15）: §3 の地図へ Skill LANE を追加 ── 組織層 tower/ を新設した（入口の Seed は YusukeJP が植え、本版で v001 へ育てた）。あわせて status の地図更新表記を本版に合わせた。
+- v018（2026-11-15）: §3 の地図へ GitHub LANE を追加し（diagnoses/001 §5 の提示案を適用）、全レーンの憲章ポインタを各家 README の憲章の節へ整合させた ── 仕様002の全体適用として、旧2家（artifacts/report、artifacts/herd-cards）の憲章を各 README へ内包し、LANE.md を削除した。あわせて入口 README の残りの欠落5件を新設し、仕様001の対象17フォルダ全てに入口が立った。
 
-EOF::AI_MAMMOTH_CONTROL::v017
+EOF::AI_MAMMOTH_CONTROL::v018
