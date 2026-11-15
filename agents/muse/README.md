@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — agents/muse（復元の入口）"
-version: "v012"
+version: "v013"
 canonical_path: "agents/muse/README.md"
 role: "Front door / Boot / Quick Restore for the AI-Mammoth agent"
-status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07; Router charter pointers aligned to README charter sections 2026-11-15 (v012)"
+status: "active — references added 2026-10-27; DESIGN-LAW (herd design law) added 2026-10-27; CONTROL (control tower) added 2026-11-07; HARNESS (operating wiring) added 2026-11-07; Router charter pointers aligned to README charter sections 2026-11-15 (v012); CONCEPT.md added to the Router 2026-11-15 (v013, Skill LANE Case 002)"
 created: "2026-10-24"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v012"
+expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v013"
 ---
 
 # AI-Mammoth（agents/muse）
@@ -29,6 +29,7 @@ expected_eof: "EOF::AI_MAMMOTH_MUSE_HOME::v012"
 | 私は誰か（名前・姿・象徴・声）を回復する | [IDENTITY.md](IDENTITY.md) |
 | 姿の画像そのものを見る・取り出す | [assets/avatar.webp](assets/avatar.webp) |
 | どこへ向かうか（概念・Goal・ベクトル・原則）を回復する | [GOAL.md](GOAL.md) |
+| 核の仮説（絶滅種のDNAをAI-Powerで復活させたら ── 仮説の定義）を回復する | [CONCEPT.md](CONCEPT.md) |
 | 経験（Humanの反応・教訓・成功とその条件）を取り戻す | [references/README.md](references/README.md) |
 | 群れの姿を設計・修正する（設計法則） | [DESIGN-LAW.md](DESIGN-LAW.md) |
 | 司令塔として座る（管制の定義・現在のレーン地図） | [CONTROL.md](CONTROL.md) |
@@ -82,5 +83,6 @@ v010 追加の検証（締め ── HARNESS.md §3 を読んで答える）：
 - v010（2026-11-07）: 締めの作法を復元の入口と関門へ載せた ── §0 の要約へ締めの一行を、§3 の検証へ第11問を追加。理由：レポートレーンへの移行で、締め（Next Step → Next Query）が boot 回答に届かなかったため。原本は HARNESS §3 が所有し、本書は入口と検証で担ぐ。
 - v011（2026-11-07）: Router にレポートレーン憲章（artifacts/report/LANE.md）への一行を追加した。移行の作法は HARNESS §9 が所有する。検証は変更なしで有効。
 - v012（2026-11-15）: Router のレーン憲章ポインタ2件を、各家 README の「レーン憲章」の節へ付け替えた（仕様002の全体適用で LANE.md が消滅したため）。検証は変更なしで有効。
+- v013（2026-11-15）: Router に CONCEPT.md（仮説の定義）への一行を追加した ── 復元者が玄関だけを辿っても、仮説の原本へ届くようにするため。Skill LANE Case 002（欠陥3）への対応。検証は変更なしで有効。あわせて同日の同じ束で、HARNESS v011（§3 の yomiyasu 生きた参照化）・CONTROL v019（v013 重複への注記つき訂正）・GOAL v003（§7 グラフの問い表記）・artifacts/report/README v016（憲章の部屋名の現行化）が進んだ ── 各変更の記録は、各ファイル自身の版履歴が持つ。
 
-EOF::AI_MAMMOTH_MUSE_HOME::v012
+EOF::AI_MAMMOTH_MUSE_HOME::v013

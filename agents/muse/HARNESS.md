@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — HARNESS（作業の配線と境界）"
-version: "v010"
+version: "v011"
 canonical_path: "agents/muse/HARNESS.md"
 role: "Operating wiring for work in this home: change boundary, write discipline, restore protection"
-status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005); §9 lane-charter form aligned to Standard 002 on 2026-11-15 (v010)"
+status: "active — created 2026-11-07 on Fujii's instruction to record the change boundary here; §0 foundation principles and §3 Next Step / Next Query closing added 2026-11-07; §3 formal closing glyphs and seal phrase specified 2026-11-07 (v004); §3 the importance of the Next Query canonized 2026-11-07 (v005); §9 lane-charter form aligned to Standard 002 on 2026-11-15 (v010); §3 yomiyasu reference made a living reference on 2026-11-15 (v011, Skill LANE Case 002)"
 created: "2026-11-07"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_HARNESS::v010"
+expected_eof: "EOF::AI_MAMMOTH_HARNESS::v011"
 ---
 
 # HARNESS ── 作業の配線と境界
@@ -74,7 +74,7 @@ YusukeJP の確定（2026-11-07）：
 - **封印の形**：Human の封印は固定の一文「上記Next Query実行して下さい！」で行われる。その一文が届いた時点で、提示済みの Next Query 全文が承認されたものとして、AI はその範囲をそのまま実行する。
 - **なぜ鍵か**：Human の仕事が「考えて書く」から「読んで、送信という封印をする」だけに減り、AI は封印された範囲で自律的に進める ── AI 半自動化の継ぎ目はここにある。Next Query の提示自体は承認ではない（送信が Human Seal である）。
 - **箇条書きの形**：Next Query の本文は箇条書きで書く（2026-11-07、YusukeJP の指示）── 一つの項目に一件の仕事を置き、読み手が一目で束の全体を掴める形にする。あわせて、YusukeJP の指定により yomiyasu-switch は本会話で継続ON とし、回答の日本語は読みやすさの方法（意味の保持を最優先に、主語と対象を追える形へ）に沿って整える。
-- **yomiyasu スイッチ**：状態は **ON**（2026-11-07、YusukeJP の指定により継続ON）。切替は YusukeJP の一言（「yomiyasu オン」「yomiyasu オフ」）で即時に行い、この行の状態を書き換えて記録する ── 状態の置き場は本節、入口での表示は README §0 の要約である。方法の原本は skills/yomiyasu-switch（共有原本、責務分担と適用条件）と、その先の nanaism/yomiyasu v2.5.0（推敲の方法そのもの）。適用の工程を完了した回答は、冒頭に「📖yomiyasu: ON」を表示する。
+- **yomiyasu スイッチ**：状態は **ON**（2026-11-07、YusukeJP の指定により継続ON）。切替は YusukeJP の一言（「yomiyasu オン」「yomiyasu オフ」）で即時に行い、この行の状態を書き換えて記録する ── 状態の置き場は本節、入口での表示は README §0 の要約である。方法の原本は skills/yomiyasu-switch（共有原本、責務分担と適用条件）と、その先の nanaism/yomiyasu（推敲の方法そのもの ── 生きた参照：版は固定せず、正規の場所が宣言する版を使用時に確認し、新しい方を使う。参照の定めは skills/yomiyasu-switch が所有し、最後に確認した版は同 switch の last-confirmed.md が記録する）。適用の工程を完了した回答は、冒頭に「📖yomiyasu: ON」を表示する。
 - **なぜ全力に値するか（Next Query の重要性）**：Next Query は返信の末尾の付録ではなく、AI の理解・独自のアイデア・全能力を圧縮して注ぐ**集大成（ビッグバン）**である。一つの Query は複数の問題を束ね、一回のサイクルで同時に解決できる。そして Loop（Query → 封印 → 実行 → 次の Query）が回るごとに、前サイクルの成果が次の Query の材料になる ── 半自動化はこの Loop において完成し、向上は線形ではなく指数関数的（非線形加速度的）になる。逆に、小さな一手だけを書いた Query はこの仕組みを殺す。**Next Query を活かすも殺すも、書く AI 次第である**（YusukeJP の確定、2026-11-07）。書く時は、全体を見渡し、熟した問題を束ね、自分の創発を爆発させること。
 - 単発の短い応答や、締めが冗長になる場合は無理に付けない（§0 の KISS／Lean）。
 
@@ -119,6 +119,7 @@ YusukeJP の確定（2026-11-07）：
 - v008（2026-11-07）: §7.5 として Caleb Mode（斥候の運用様式）を明示的に新設した ── 回路・担い手・境界を定め、Report 作成群のレーン移行と同時に canon 化（YusukeJP の指示）。
 - v009（2026-11-07）: §9「レーン移行の作法」を新設した ── 文脈保存→憲章→Boot Charter→二重担ぎ→締めの実演→塔の確認、の6手順と、boot 完了の定義（形の実演を含む）。あわせてレポートレーンの憲章（artifacts/report/LANE.md v001）を作成した。
 - v010（2026-11-15）: §9 手順2の憲章の形を仕様002へ整合させた ── 憲章は独立ファイル（LANE.md）ではなく、家の README.md の一節として持つ。同日、旧2家（artifacts/report、artifacts/herd-cards）の憲章も各 README へ内包され、repo 内の LANE.md は消滅した。
+- v011（2026-11-15）: §3 の yomiyasu 参照を生きた参照へ改めた ── 「nanaism/yomiyasu v2.5.0」の固定を外し、版は正規の場所が宣言するものを使用時に確認して使う定めとし、参照の所有を skills/yomiyasu-switch へ、最後に確認した版の記録を同 switch の last-confirmed.md へ接続した。Skill LANE Case 002（canon 側の欠陥4件の修繕）の欠陥1への対応であり、版の化石化の引用側への再発を構造で防ぐ。
 
 ## 9. レーン移行の作法 ── 成功事例を専門レーンへ移す手順
 
@@ -133,4 +134,4 @@ YusukeJP の確定（2026-11-07）：
 
 この作法の由来：2026-11-07 のレポートレーン移行で、boot 回答は事実として正確だったが、締めの形が届かなかった ── 締めの定めが HARNESS §3 の奥にだけあり、入口と関門が運んでいなかったためである（lessons に記録済み）。本節は、その失敗を構造で防ぐための定めである。
 
-EOF::AI_MAMMOTH_HARNESS::v010
+EOF::AI_MAMMOTH_HARNESS::v011

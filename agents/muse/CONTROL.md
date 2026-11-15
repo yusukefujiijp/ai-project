@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — CONTROL（司令塔／the Tower）"
-version: "v018"
+version: "v019"
 canonical_path: "agents/muse/CONTROL.md"
 role: "Definition of the main chat as control tower, and the current lane map"
-status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-15 (v018)"
+status: "active — created 2026-11-07 after the structure was named on 2026-11-05; lane map refreshed 2026-11-15 (v018); duplicate v013 in the version log annotated on 2026-11-15 (v019, Skill LANE Case 002)"
 created: "2026-11-07"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_CONTROL::v018"
+expected_eof: "EOF::AI_MAMMOTH_CONTROL::v019"
 ---
 
 # CONTROL ── 司令塔の定義とレーン地図
@@ -81,8 +81,9 @@ repo の範囲を超える専門部門の部屋は、ここには登録しない
 - v014（2026-11-07）: 英語の命名を canon 化した ── 司令塔は the Tower（control tower）、対は Tower and Lanes。あわせて、この版の作業で塔自身の締め（Next Step → Next Query）が対話中に落ちていたことを検出し、復活させた。
 - v015（2026-11-07）: §3 の地図を更新 ── Report 011 を提出済みに、三本柱を 32／21／22 に合わせた。
 - v016（2026-11-08）: 表記の定めを canon 化した ── 書く形は TOWER と ◯◯ LANE（大文字の固有名詞、LANE は常時名前つき）。あわせて side chat のタイトルを Report LANE／Herd LANE／Work LANE へ改名した。
-- v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。
+- v013（2026-11-07）: 移行の設計を反映 ── レポート行に憲章と HARNESS §9 へのポインタを加え、lessons の件数を 19 に追随した。【注記 ── v019（2026-11-15）で追加：本条の版番号「v013」は、先行する v013（Report 010 提出／三本柱 31・20・21）と重複する。本条の本文は当時の記録としてそのまま保持し、番号の付け替えは行わない。引用時は、1件目を「v013（Report 010）」、本条を「v013（移行設計）」と区別すること。重複への訂正の記録は、v019 の条が持つ】
 - v017（2026-11-15）: §3 の地図へ Skill LANE を追加 ── 組織層 tower/ を新設した（入口の Seed は YusukeJP が植え、本版で v001 へ育てた）。あわせて status の地図更新表記を本版に合わせた。
 - v018（2026-11-15）: §3 の地図へ GitHub LANE を追加し（diagnoses/001 §5 の提示案を適用）、全レーンの憲章ポインタを各家 README の憲章の節へ整合させた ── 仕様002の全体適用として、旧2家（artifacts/report、artifacts/herd-cards）の憲章を各 README へ内包し、LANE.md を削除した。あわせて入口 README の残りの欠落5件を新設し、仕様001の対象17フォルダ全てに入口が立った。
+- v019（2026-11-15）: §5 の版履歴における v013 の重複へ、注記つき訂正を行った ── 2件目の v013（移行設計）の条へ注記を追加し、引用時の区別名（「v013（Report 010）」／「v013（移行設計）」）を定めた。両条の本文・番号・位置は当時の記録として保持し、付け替え・削除・移動は行っていない。Skill LANE Case 002（欠陥2）への対応。地図（§3）そのものに変更はない。
 
-EOF::AI_MAMMOTH_CONTROL::v018
+EOF::AI_MAMMOTH_CONTROL::v019

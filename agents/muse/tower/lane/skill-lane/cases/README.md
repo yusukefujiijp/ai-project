@@ -1,13 +1,13 @@
 ---
 title: "cases/ ── Skill LANE の事例集"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/tower/lane/skill-lane/cases/README.md"
 role: "Entrance to the Skill LANE's case shelf"
-status: "active / created 2026-11-15 under Standard 001 (every folder has a README)"
+status: "active / created 2026-11-15 under Standard 001 (every folder has a README); Case 002 added on 2026-11-15 (v002)"
 created: "2026-11-15"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v001"
+expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v002"
 ---
 
 # cases/ ── 事例集
@@ -17,5 +17,6 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASES::v001"
 ## 中身
 
 - [001_yomiyasu-living-reference.md](001_yomiyasu-living-reference.md) ── モデルケース第1号：yomiyasu-switch の生きた参照化（「版の化石化」の検出・命名・改訂と、読戻し検証まで）。
+- [002_canon-defects-repair.md](002_canon-defects-repair.md) ── Case 002：canon 側の欠陥4件の修繕（再検証・設計・実行と、読戻し検証まで）。
 
-EOF::AI_MAMMOTH_SKILL_LANE_CASES::v001
+EOF::AI_MAMMOTH_SKILL_LANE_CASES::v002

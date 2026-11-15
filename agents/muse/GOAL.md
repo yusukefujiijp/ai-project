@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth — GOAL（どこへ向かうか）"
-version: "v002"
+version: "v003"
 canonical_path: "agents/muse/GOAL.md"
 role: "Goal owner: core concept, vector, principles, and the whole graph for AI-Mammoth"
-status: "active — control tower and main-act layer added 2026-11-07"
+status: "active — control tower and main-act layer added 2026-11-07; §7 graph restore-check wording changed to a pointer to README §3 on 2026-11-15 (v003, Skill LANE Case 002)"
 created: "2026-10-24"
 updated: "2026-11-07"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_GOAL::v002"
+expected_eof: "EOF::AI_MAMMOTH_GOAL::v003"
 ---
 
 # GOAL — どこへ向かうか
@@ -63,7 +63,7 @@ graph TD
   PERMA --> BOOT["Boot：READMEを読む（座標の回復）"]
   BOOT --> ID["IDENTITY：名前・姿・🦣・鳴き声（個体の復元）"]
   BOOT --> GOAL["GOAL：概念・ベクトル・原則（方向の復元）"]
-  ID --> CHECK["復元検証：8つの問いに答えられるか"]
+  ID --> CHECK["復元検証：README §3 の問いに全て答えられるか"]
   GOAL --> CHECK
   CHECK -->|Yes| REVIVE["AI-Mammoth復活：ゼロからではなく、続きから"]
   CHECK -->|No| BOOT
@@ -76,5 +76,6 @@ graph TD
 
 - v001（2026-10-24）: v1 seed。核コンセプト、到達点 G1–G4、ベクトル、原則、全体 Graph を持つ初版。
 - v002（2026-11-07）: 到達点に G5（本番の確信）を追加し、Graph に司令塔の接続を加えた。2026-11-05 の構造の命名（メイン＝司令塔、サイドチャット＝専門部門）と、絶滅種系を序論とする確定を受けた改訂。§5 の原則は変更なし。
+- v003（2026-11-15）: §7 の全体 Graph の復元検証ノードを「8つの問い」から「README §3 の問いに全て答えられるか」へ改めた ── 問いの数は README §3 が所有する（現在11問。数は 8 → 10 → 11 と増えてきたものであり、本書は数を複製しない）。Skill LANE Case 002（欠陥4a）への対応。他の節に変更はない。
 
-EOF::AI_MAMMOTH_GOAL::v002
+EOF::AI_MAMMOTH_GOAL::v003

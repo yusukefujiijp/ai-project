@@ -1,13 +1,13 @@
 ---
 title: "AI-Mammoth Reports — Ark Project理解の提出記録"
-version: "v015"
+version: "v016"
 canonical_path: "agents/muse/artifacts/report/README.md"
 role: "Index and contract for AI-Mammoth's reports to YusukeJP"
-status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename); lane charter absorbed from LANE.md on 2026-11-15 (Standard 002)"
+status: "active / opened 2026-10-25; Reports 002–011 added 2026-11-07; Reports 001–004 received HTML companions by backfill on 2026-11-07; from Report 005, reports are produced as md+html pairs (same basename); lane charter absorbed from LANE.md on 2026-11-15 (Standard 002); charter room name updated to Report LANE on 2026-11-15 (v016, Skill LANE Case 002)"
 created: "2026-10-25"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_REPORTS::v015"
+expected_eof: "EOF::AI_MAMMOTH_REPORTS::v016"
 ---
 
 # AI-Mammoth Reports
@@ -54,9 +54,9 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 
 ## レーン憲章 ── Report 作成の専門レーン（Caleb Mode）
 
-2026-11-15、仕様002（憲章は README に内包する）により、独立ファイル LANE.md（v001）から本書へ内包された。憲章の本文は v001 のまま保持する（自己言及の2箇所だけを、本書の形に合わせた）。
+2026-11-15、仕様002（憲章は README に内包する）により、独立ファイル LANE.md（v001）から本書へ内包された。憲章の本文は v001 のまま保持する（自己言及の2箇所だけを、本書の形に合わせた。加えて v016（2026-11-15）で、冒頭の部屋名を現在の「Report LANE」へ現行化した ── Skill LANE Case 002（欠陥4b）への対応）。
 
-この文書は、サイド chat「レポート」の憲章である。Report 作成の実務は、2026-11-07 にメイン chat（司令塔）からこのレーンへ移行した。移行の作法そのものは [HARNESS.md](../../HARNESS.md) §9（レーン移行の作法）が所有する。本書は、このレーン固有の役割と座標へのポインタだけを持つ ── 状態そのものは複製しない。
+この文書は、サイド chat「Report LANE」の憲章である。Report 作成の実務は、2026-11-07 にメイン chat（司令塔）からこのレーンへ移行した。移行の作法そのものは [HARNESS.md](../../HARNESS.md) §9（レーン移行の作法）が所有する。本書は、このレーン固有の役割と座標へのポインタだけを持つ ── 状態そのものは複製しない。
 
 ### 1. このレーンは何か
 
@@ -88,4 +88,4 @@ YYYY-MM-DD-HHmm_report-NNN_<slug>.md   （日時はJST）
 - 書込み ── push は一括で、YusukeJP の面前で行い、読戻し SHA の検証までを完了とする（HARNESS §4）
 - HTML 対 ── 単一ファイル、2,097,152 bytes 以内、mobile-first。検証の範囲を偽らない（コード検査は端末の真実ではない）
 
-EOF::AI_MAMMOTH_REPORTS::v015
+EOF::AI_MAMMOTH_REPORTS::v016
