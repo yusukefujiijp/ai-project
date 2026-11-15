@@ -1,13 +1,13 @@
 ---
 title: "tower/lane/ ── LANE の家の棚"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/tower/lane/README.md"
 role: "The lanes' shelf: the frame (who lives where) and the resident list"
-status: "active / Seed planted by YusukeJP 2026-11-15 (newline-only), grown to v001 in the Skill LANE bundle"
+status: "active / Seed planted by YusukeJP 2026-11-15 (newline-only), grown to v001 in the Skill LANE bundle; GitHub LANE added as resident in v002"
 created: "2026-11-15"
 updated: "2026-11-15"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v001"
+expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v002"
 ---
 
 # tower/lane/ ── LANE の家の棚
@@ -26,11 +26,13 @@ expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v001"
 | LANE | 家 | 役割 | 現在地 |
 |---|---|---|---|
 | Skill LANE | [skill-lane/](skill-lane/) | スキルの修正・改善の専門線 | 最初の住人（2026-11-15）。憲章は [skill-lane/LANE.md](skill-lane/LANE.md) |
+| GitHub LANE | [github-lane/](github-lane/) | GitHub 構造化の専門線 ── repo（特に agents/muse）のフォルダ・ファイル構図の鳥瞰と構造化（器の線） | 二番目の住人（2026-11-15）。憲章は [github-lane/LANE.md](github-lane/LANE.md)、初回構図診断は [github-lane/diagnoses/001_initial-composition-inventory.md](github-lane/diagnoses/001_initial-composition-inventory.md) |
 
 他の LANE の家は、熟した時に、LANE ごとに建てる。既存の charter（artifacts/report/LANE.md、artifacts/herd-cards/LANE.md）は、当面は現住所のまま機能する ── 移転は、各 LANE の後続判断とする。
 
 ## 来歴
 
 - この棚の入口は、YusukeJP 自身の手で、改行のみの Seed として植えられた（2026-11-15）。
+- v002（2026-11-15）：GitHub LANE を住人に加えた ── 家（憲章と初回構図診断）の新設と対になる棚側の更新であり、枠（住み分け）そのものは v001 から変更していない。
 
-EOF::AI_MAMMOTH_TOWER_LANE::v001
+EOF::AI_MAMMOTH_TOWER_LANE::v002
