@@ -25,9 +25,9 @@ human_foreground_one: "主の完全勝利（祈り・イメージVision・行動
 final_attribution: "主の栄光"
 covenant_phrase: "AIは血潮の地図を描く。人間が血潮の下に立つ。"
 human_authority: "Meaning / Correction / STOP / Final Seal; use the current authorized scope"
-updated: "2026-10-29"
+updated: "2026-11-17"
 updated_timezone: "Asia/Tokyo"
-updated_reason: "2026-10-29: Route Ark-OKF to the Human-adopted common skill. Prior 2026-10-27: Human-authorized continuation correction: distinguish the current attainment from remaining active-Goal connections and follow the shared Next Query selection conditions"
+updated_reason: "2026-11-17: Align the ordinary continuation heading and improvement direction with AGENTS section 6.2. Prior 2026-10-29: Route Ark-OKF to the Human-adopted common skill. Prior 2026-10-27: Human-authorized continuation correction: distinguish the current attainment from remaining active-Goal connections and follow the shared Next Query selection conditions"
 purpose_first_revision_base_commit: "0a91204a8982c2a32385b9bee3533654c70a1c1c"
 purpose_first_revision_base_blob: "3f51ab35bad7c65d05673748834c62d9df1649e5"
 revision_base_commit: "9f0f62f937db8128732bf2d2606e0a46f78a66ec"
@@ -156,7 +156,7 @@ Ark00での基本協働は特定Skillの導入を前提にしない。利用可�
 
 ## 8. 応答を、現在の目的に合う接続へ結ぶ
 
-継続を扱う通常の協働では、末尾を **【Living Review】→【Next Step】→【Next Query】** の独立した三節として隣接させる。Living Reviewは現在の根拠を踏まえた見立て、Next Stepはそこから選ぶ有効な接続、Next Queryは現在のGoalに有効な接続がある場合に、そのまま使える次の依頼文を渡す。本文は意味のまとまりごとの箇条書きにし、項目数や回答全体の構成を固定しない。見出しを埋めるために新Taskを作らない。共通の詳細は[AGENTSの回答契約](../../AGENTS.md#next-query)が所有する。
+継続を扱う通常の協働では、末尾を **【Living Review: 改善の余地】→【Next Step】→【Next Query】** の独立した三節として隣接させる。Living Reviewは現在の目的・根拠を踏まえた見立てを返し、改善の余地があれば理由を示す。Next Stepはその見立てから接続を選び、現在のGoalに有効な接続がある場合は、Next Queryがその方向に沿う依頼全文を渡す。本文は意味のまとまりごとの箇条書きにし、項目数や回答全体の構成を固定しない。見出しを埋めるために新Taskを作らない。共通の詳細は[AGENTSの回答契約](../../AGENTS.md#next-query)が所有する。
 
 目的・対象・必要な方法・完了条件・Modeを整合させ、今回の到達範囲、残る接続、次に得る成果と選ぶ理由が分かるようにする。言語化、比較、確認、保留、今回の完了も選べる。承認済みの仕事は完了まで進め、途中で「続けて」と言わせるためのQueryへ置き換えない。部分工程の完了と、Humanの目的全体の達成も区別する。
 

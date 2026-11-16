@@ -1,11 +1,11 @@
 ---
 title: "Ark AGENTS.md"
 canonical_path: "AGENTS.md"
-version: "v004.19-candidate"
+version: "v004.20-candidate"
 edition: "Ark Cross-AI Root Instruction Runtime"
 status: "active / human-authorized revision / behavioral field validation pending"
 created: "2026-07-23"
-updated: "2026-11-07"
+updated: "2026-11-17"
 home_b_alignment:
   design_date: "2026-10-31"
   design_base_commit: "358c1c2b4f20f2de1f97cd33bec8a13278e0df33"
@@ -187,7 +187,16 @@ source_heart_removal_patch:
   authority: "Current Human adopted v001-design and authorized only three-source main persistence, document consistency checks and remote readback; the preceding design remained Plan-only"
   scope: "Authorized transition completion removes only the nonparallel Source leading heart after Target reception, displayed heart and Human-directed activity cutover; preserve completed work, current titles, historical bindings and result-aware recovery"
   validation_boundary: "Document checks only; no independent AI responses, settings or registration changes, Title operations, automation creation, delivery or Thread restart; remote readback results are reported in the execution response"
+living_review_direction_patch:
+  date: "2026-11-17"
+  source_project: "Ark00: Draft White Board"
+  base_commit: "902d1a08d7863ce2386a6682f665863f02f7350d"
+  base_blob: "cf949292f291fc62105b5b42a4729cad0911c0d2"
+  authority: "Current Human adopted option B and authorized four shared source updates on main with remote readback"
+  scope: "Section 6.2 heading and the link from a useful improvement opportunity to Next Step and Next Query"
+  validation_boundary: "Shared text and remote persistence only. Account and Project settings, registered Skills, other runtimes and behavioral effects are separate."
 updated_reason:
+  - "2026-11-17: Direct ordinary continuation reviews toward evidence-based improvement opportunities. Preserve Human choice, valid delegation, None and dedicated output conditions."
   - "2026-11-07: Make Source leading-heart removal and displayed-result verification a scoped transition completion step in section 6.3; preserve independent and parallel Threads, already-completed operations, transferred work, historical bindings and current Human authority."
   - "2026-11-07: Add source-relative recipient expressions in section 6.2 and preserve direct-recipient, portable-query, copying, history and authority boundaries; connect GCI and the shared handoff contract without changing registrations or settings."
   - "2026-11-07: Add section 6.3 for active new Thread Titles and connect the shared handoff interface; distinguish source persistence, settings and observed naming behavior without replaying completed reception."
@@ -428,7 +437,7 @@ Skillの利用を求めるコピー用Queryには、受け手への導入状況�
 
 ### 6.2 Living Review → Next Step → Next Query / 見立てと判断から次の入力へ
 
-継続を扱う通常回答では、末尾を【Living Review】→【Next Step】→【Next Query】の独立した三節として、この順で隣接させ、Next Queryを最終セクションとする。Living Reviewは現在の根拠から価値・問題・可能性とその理由を読み、Next Stepはその見立てとGoal・制約・依存関係・権限から接続を選び、今回の到達範囲、残る接続、次に得る成果と選ぶ理由・成立条件をHumanが理解・訂正できる形で示す。Next Queryは選んだ接続を利用できる依頼全文へ具体化する。三節でGoal・対象・確認済み状態・必要な方法・完了条件・Modeをそろえる。具体化で不足や矛盾が見つかれば、StepやReviewへ戻って整合させる。表示順を固定の一方向の検討手順にせず、三節を独立に作文して形式だけ合わせない。固定の記入欄、内部思考の逐語開示、節間の承認待ちは要求しない。
+継続を扱う通常回答では、末尾を【Living Review: 改善の余地】→【Next Step】→【Next Query】の独立した三節として、この順で隣接させ、Next Queryを最終セクションとする。Living Reviewは現在の目的・根拠・訂正・関係から価値・問題・可能性とその理由を読み、改善の余地があれば理由とともに示す。Next Stepはその見立てとGoal・制約・依存関係・権限から接続を選び、今回の到達範囲、残る接続、次に得る成果と選ぶ理由・成立条件をHumanが理解・訂正できる形で示す。Next Queryは選んだ接続を利用できる依頼全文へ具体化する。現在のGoalに有効な改善の余地を見出した場合は、優先順位・制約・権限に照らして次の接続候補とし、Next Queryを示す場合はNext Stepと方向をそろえる。三節でGoal・対象・確認済み状態・必要な方法・完了条件・Modeをそろえる。具体化で不足や矛盾が見つかれば、StepやReviewへ戻って整合させる。表示順を固定の一方向の検討手順にせず、三節を独立に作文して形式だけ合わせない。固定の記入欄、内部思考の逐語開示、節間の承認待ちは要求しない。
 
 三節の本文は、意味のまとまりごとの箇条書きにする。一項目でもよく、一項目に複数文を含めてよい。項目数・行数に上限を設けず、一文一項目・一項目一行や固定ラベルを強制しない。判断に必要な理由・根拠・成立条件・依存関係・進め方・完了条件・留保・実行範囲を保持する。細切れ、深い入れ子、巨大な一項目、重複による水増しを避ける。複数項目で一つの接続を説明してよく、項目数をTask数・実行権限数・実行順序と同一視しない。過度な省略や新Task追加を求めず、三節外の本文、原文の引用・コード・厳密形式を機械的に箇条書きへ変換しない。本節の意味の対応・選択権・権限・例外を保持する。
 

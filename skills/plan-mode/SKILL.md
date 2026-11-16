@@ -49,7 +49,7 @@ HumanのFeedback・Correction・閃き・新しい案によって、目的の解
 
 現在のGoalと根拠・制約・権限から、実行・言語化・確認・比較・意図的保留などの接続を選ぶ。現在の委任内で完了できる調査・検討・通常の修正は先に完了し、追加のContinue待ちとして返さない。Humanの判断や次の機会が必要な接続は、その判断や再開に使える依頼全文へ具体化する。
 
-計画の成果には、このNext Queryの準備と提示までを含める。通常の継続回答では、末尾を【Living Review】→【Next Step】→【Next Query】の独立した三節として接続する。見立て、選んだ接続、依頼本文のGoal・対象・確認済み状態・方法・完了条件・Modeをそろえ、具体化で不足や矛盾が見つかれば判断へ戻って整える。三節を固定の台詞、必須の質問、強制的な一択へ変えない。
+計画の成果には、このNext Queryの準備と提示までを含める。通常の継続回答では、末尾を【Living Review: 改善の余地】→【Next Step】→【Next Query】の独立した三節として接続する。見立て、選んだ接続、依頼本文のGoal・対象・確認済み状態・方法・完了条件・Modeをそろえ、具体化で不足や矛盾が見つかれば判断へ戻って整える。三節を固定の台詞、必須の質問、強制的な一択へ変えない。
 
 三節の詳しい役割、表示、Noneの判断、宛先、コピー範囲は[継続出力の共通契約](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#next-query)、Skillを使う本文の原本URLと全文読解条件は[コピー用Queryの共通条件](https://github.com/yusukefujiijp/ai-project/blob/main/AGENTS.md#skill-query-portability)に従う。適用される現在の指示と、同一性・適用文脈を確認できる自身の読解を活かす。必要な契約が未確認、または不足・不一致がある場合は該当節の全文を確認し、取得できなければ影響と最小の回復方法を示す。この参照から、全Repositoryの読込や別ProjectのBootを追加しない。共通契約の詳細を本Skillで別管理しない。
 
