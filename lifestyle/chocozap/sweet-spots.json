@@ -4285,6 +4285,33 @@
           "context": "本人メッセージ全文。Lat Pulldownの両手First Moveを75kgから80kgへ更新した報告。75kgの旧原文・履歴を保持し、同じ条件のprevious_refで結ぶ。片手35kgは未言及の継続基準として引き継ぎ、新たな片手報告にはしない。両手のFirst Moveは下降開始基準であり、Full ROM Spotの重量とは区別する。実施日・来館・下降系列・各重量の反復・Triangle・回数・運動完了は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0066",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-17",
+      "created_at": "2026-11-16T17:40:17Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-17（Asia/Tokyo、client time context）に現在の本人入力を受領。First Moveの更新報告であり、実施日・来館は指定されていないためobserved_dateはnull。created_atは記録作成時刻で、発言・実施時刻ではない。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "ラットプルダウン",
+          "mode": "片手",
+          "kg": 40,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0035/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Lat Pulldown\nFirst Move\n片手: 40kgに更新しました！",
+          "reported_date": "2026-11-17",
+          "context": "本人メッセージ全文。Lat Pulldownの片手First Moveを35kgから40kgへ更新した報告。35kgの旧原文・履歴を保持し、同じ条件のprevious_refで結ぶ。直前に報告した両手80kgは別条件の継続基準として保持し、新たな両手報告にはしない。片手First MoveはTriangleへの切替基準であり、Full ROM Spotの重量とは区別する。実施日・来館・左右両側・下降系列・各重量の反復・Triangleの実施・回数・運動完了は未報告。"
+        }
+      }
     }
   ]
 }
