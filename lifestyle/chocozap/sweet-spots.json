@@ -4420,6 +4420,45 @@
           "context": "本人メッセージ全文。Lat Pulldown片手First Moveを40kgから45kgへ更新。両手80kgは別条件の継続基準。片手First MoveはTriangleへの切替基準。FRSの重量・実施日・来館・左右両側・下降系列・回数・完了は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0071",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": null,
+      "created_at": "2026-11-17T17:23:35Z",
+      "reference_scope": "current",
+      "date_basis": "この会話の先行本人発言を報告順に保存。当初の各発言日・実施日は独立に確認できないためnull。created_atは今回の記録作成時刻。",
+      "spots": [],
+      "sources": {
+        "S01": {
+          "text": "重要な変更です！\n\nTreadmillが復活しました！\nなぜなら、私(YusukeJP)はTreadmillを、ごく低速状態(1.2-1.4、おそらく1.3固定かも知れないが実験が必要です！)で腿上げと軽い肩や肘のストレッチを交互にしていた！\nこれをしないと結局の所、外出Workoutでフォローしないといけないので二度手間になるからです！\n簡単に言うと(最もSimpleに考えると)、chocoZAP内で終わらせられる作業は終わらせておく方がとても有利だからです！",
+          "reported_date": null,
+          "context": "本人発言から方針・理由を原文抜粋。当時の検討はPlan-only。1.2–1.4・1.3候補は後続S03の実験結果で更新。外出Workout全廃や効果の実証ではない。"
+        },
+        "S02": {
+          "text": "そして、Treadmillの低速状態での腿上げと肩肘ストレッチはクールダウン的な動きであるために最後の仕上げとして最期の締めに入れるべきです！",
+          "reported_date": null,
+          "context": "本人の後続説明から原文抜粋。Exercise Bikeを基本に含め、その後のWorkoutの最後としてTreadmillを位置づける。退館や帰宅が不要という意味ではない。"
+        },
+        "S03": {
+          "text": "実験結果としてTreadmillは\n速度1.2の低速固定で\n腿上げ\n肩肘ストレッチ\nに加えて腹式呼吸等の深い呼吸法\nの三点セットになりました！",
+          "reported_date": null,
+          "context": "本人の実験結果部分を原文抜粋。速度1.2固定を現在の本人方針とし、速度単位・傾斜・時間・回数や呼吸と各動きの同時性・順番は未確認。具体的な来館・完了を作らない。"
+        }
+      },
+      "feedback": [
+        {
+          "source": "S01"
+        },
+        {
+          "source": "S02"
+        },
+        {
+          "source": "S03"
+        }
+      ]
     }
   ]
 }
+
