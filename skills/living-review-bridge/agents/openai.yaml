@@ -1,0 +1,4 @@
+interface:
+  display_name: "Living Review Bridge"
+  short_description: "目的に照らした見立てを次の判断と使える依頼文へつなぐ"
+  default_prompt: "$living-review-bridge を使い、現在の目的に照らした見立てから次の協働へつないでください。直接利用できない場合は https://github.com/yusukefujiijp/ai-project/blob/main/skills/living-review-bridge/SKILL.md を全文読み、取得できなければ不足・影響・回復方法を示してください。"
