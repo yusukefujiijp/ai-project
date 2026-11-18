@@ -4512,6 +4512,33 @@
           "context": "本人メッセージ全文。Lat Pulldown片手First Moveを45kgから50kgへ更新。両手90kgは別条件の継続基準。片手First MoveはTriangleへの切替基準。FRS重量・実施日・来館・左右両側・下降系列・回数・完了は未報告。"
         }
       }
+    },
+    {
+      "id": "cz-record-0074",
+      "reporter": "YusukeJP",
+      "observed_date": null,
+      "reported_date": "2026-11-18",
+      "created_at": "2026-11-18T09:53:52Z",
+      "reference_scope": "current",
+      "date_basis": "2026-11-18（Asia/Tokyo、client time context）に本人入力を受領。実施日・来館は未報告のためobserved_dateはnull。created_atは記録作成時刻。",
+      "spots": [
+        {
+          "id": "O001",
+          "machine": "チェストプレス",
+          "mode": "両手",
+          "kg": 90,
+          "source": "S01",
+          "report_kind": "update",
+          "previous_ref": "cz-record-0067/O001"
+        }
+      ],
+      "sources": {
+        "S01": {
+          "text": "Chest Press\nFirst Move\n両手: 90kg(chocoZAPでのMax重量)に更新しました！\n\n因みに、\nLat Pulldown\n両手: 90kgもchocoZAPでのMax重量です！",
+          "reported_date": "2026-11-18",
+          "context": "本人メッセージ全文。Chest Press両手First Moveを80kgから90kgへ更新し、Chest PressとLat Pulldownの90kgがchocoZAPでのMax重量と補足。本人の利用したマシンの表示上限として受け取り、全店舗・全機種への一般化や本人の生理的最大能力の確定にはしない。Lat Pulldown両手90kgはcz-record-0072の既報告を引き継ぎ、新しい重量観察を重複生成しない。実施日・来館・FRS・Full ROM達成・回数・完了は未報告。"
+        }
+      }
     }
   ]
 }
