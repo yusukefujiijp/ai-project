@@ -1,15 +1,15 @@
 ---
 title: Ark Project chocoZAP系 — 継続協働のためのProject指示
-version: v006
+version: v007
 updated: 2026-11-18
-updated_reason: Treadmill復活、最後の締め、速度1.2固定と三点セットを現在方針へ反映。既存のFirst Move・Bike・原文・履歴・呼出し名を保持
+updated_reason: Treadmill復活、最後の締め、速度1.1固定と三点セットを現在方針へ反映。既存のFirst Move・Bike・原文・履歴・呼出し名を保持
 canonical_path: lifestyle/chocozap/INSTRUCTIONS.md
 status: active
 ---
 
 # 【Ark Project: chocoZAP系: 継続協働のためのProject指示】
 
-Version: v006（2026-11-18）
+Version: v007（2026-11-18）
 
 ## 1. 【目的と適用範囲】
 
@@ -73,7 +73,7 @@ First Move（旧称Sweet Spot）は、このchocoZAP Workoutで、種目・両�
 
 本人が説明する5kg刻みの下降と各重量のオールアウトを保持し、Triangleは各重量で左手→右手→両手、その後に5kg下げる。Full ROM Spot（FRS）は、First Moveから5kgずつ重量を下げ、各重量でオールアウトする下降過程で、最重要要素のFull ROMに至る地点と、その条件での重量を指す。 FRSと片手の切替点を同一視せず、FRS重量・到達後の可動域や終了条件は未説明のまま残す。「の」のタメとLat Pulldownの「4の戻し」は、それぞれの意味を保持し、秒数やTriangleの手順との拍対応を作らない。
 
-現在のroutineではExercise Bikeを次の予定にかかわらず基本に含め、復活したTreadmillをWorkoutの最後の締めに置く。Treadmillは速度1.2固定、腿上げ・軽い肩肘ストレッチ・腹式呼吸等の深い呼吸法の三点セット。腿上げと肩肘ストレッチは交互で、呼吸の同時性・順序や傾斜・時間は未確認。旧全面カットは履歴に残す。外出Dumbbellはできれば帰宅後に5kgを準備して外出する条件を保持する。旧Bike省略・Dips終了は過去の方針として辿り、現在の基本へ戻さない。具体的なコース・想起項目・出所はREADMEを参照する。
+現在のroutineではExercise Bikeを次の予定にかかわらず基本に含め、復活したTreadmillをWorkoutの最後の締めに置く。Treadmillは速度1.1固定、腿上げ・軽い肩肘ストレッチ・腹式呼吸等の深い呼吸法の三点セット。できる限り深い呼吸が主、腿上げが副。腿上げはオールアウトし、腿上げと肩肘ストレッチは交互インターバルで、呼吸の同時性・順序や傾斜・時間は未確認。旧全面カットは履歴に残す。外出Dumbbellはできれば帰宅後に5kgを準備して外出する条件を保持する。旧Bike省略・Dips終了は過去の方針として辿り、現在の基本へ戻さない。具体的なコース・想起項目・出所はREADMEを参照する。
 
 現在表示とAI説明はFirst Moveへ揃え、FMは略称候補のままにする。旧称Sweet Spotの本人原文・重量・分析履歴は保持し、Arkの他文脈は改名しない。ファイル名・既存キー・ID・スクリプト・呼出し名を維持する。日付未確認を保存日で埋めず、報告順と出所から現在基準を読む。FRSをFirst Moveの重量表へ混ぜず、Biceps Curlの報告からコース順や当日の実施を補わない。
 
@@ -109,5 +109,6 @@ Threadが変わっても、目的・重要な訂正・現在の方法・routine�
 
 短いHuman入力、ジム利用中、推定した認知負担や待ち時間を理由に、AIの検討・調査・説明の品質を下げない。Humanの入力と開始を簡単にしながら、AIは必要な検討と整理を十分に担う。回答の長短や固定Templateを目的にせず、現在の依頼へ十分に答える。
 
-EOF::CHOCOZAP_PROJECT_INSTRUCTIONS::v006
+EOF::CHOCOZAP_PROJECT_INSTRUCTIONS::v007
+
 
