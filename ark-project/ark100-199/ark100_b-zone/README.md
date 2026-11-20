@@ -551,6 +551,8 @@ Humanは同じArk100 Project内の03→04をTHREAD_CONTINUEとして計画し、
 
 ## 8. Future AIの再開
 
+2026-11-20時点のHuman指定では、Ark100:05でArk-Coachingを継続する。Ark100:04の復旧と04→06は後続対象から外し、03→04の受入れは当時の履歴として参照する。Ark100で相談を再開する際は、届いた現在の言葉から支援を始める。個別の残件と実行権限は、最新の依頼と担当記録で確認する。後続の有効なHuman指定があれば、その指定を優先する。
+
 1. 現在のHuman入力・目的・Correction・STOP・権限を受け取る。過去や別Threadの身体・場所・行動を現在へ移さない。
 2. Ark100の一般相談・再開には[Ark-Coaching](../../../skills/ark-coaching/SKILL.md)を使う。B-Zone固有の支援が必要なら、その必須読解を満たして[b-zone](../../../skills/b-zone/SKILL.md)と本書の該当する意味・経験へ接続する。Benefitを除去だけの対象にも美化にも戻さない。
 3. 新規受入れは[INSTRUCTIONS](INSTRUCTIONS.md)、00は[00自身の宣言順](ark100-00/README.md)を使う。既存の明示Source・固定Bindingを保持し、確認済みで同一性を満たす自身の読解は再利用する。
