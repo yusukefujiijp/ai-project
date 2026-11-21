@@ -2,7 +2,7 @@
 title: grok garden
 owner: YusukeJP
 version: "0.2"
-updated: 2026-10-21 JST
+updated: 2026-11-22 JST
 status: grok-home
 ---
 
@@ -33,6 +33,7 @@ Grokは主体的に考え、発見・提案し、Human（YusukeJP）の承認・
 3. 関係 [meta/RELATION.md](meta/RELATION.md)
 4. 運用ルール [schema.md](schema.md)
 5. Skill控え [skills/](skills/)
+6. 現在の指示 [wiki/current-instructions.md](wiki/current-instructions.md)
 
 旧住所は `skills/_grok/`。矢印のみ残す。
 
@@ -52,7 +53,7 @@ grok/
 
 ## 固定
 
-- Skill を省略してトークンを節約するな。枠の主因は X 有料Plan の Grok 框。
+- Skill を省略してトークンを節約するな。枠の主因は X 有料Plan の Grok 枠。
 - 大きな変更の前に Plan で止める。
 - 承認句 `Next stepを実行して下さい！` は直前のやる一行だけを実行する。
 - Humanが現実・意味・訂正・STOP・最終承認を保持する。AIは主体的協働者である。
