@@ -1,7 +1,7 @@
 ---
 title: grok board NOW
 written: 2026-10-01 22:56 JST
-updated: 2026-10-29
+updated: 2026-11-22
 status: current
 ---
 
@@ -19,6 +19,11 @@ status: current
 ## Ark-OKFの配置更新 — 2026-10-29
 
 上の2026-10-01の配置・Hub状態は当時の記録として保持する。Ark-OKFの現行本文は[共通Skill](../../skills/ark-okf-responder/SKILL.md)へ統合し、旧Grok本文と旧控え本文は退役、旧配置と旧Promptは案内へ変更した。[Skills Hub](../../skills/README.md)への掲載はArk-OKFについての今回の更新であり、他のGrok Skillの掲載・統合や、各環境への登録・実際の挙動を確認した意味ではない。
+
+## 2026-11-22 更新
+
+Karpathy的コンテキストエンジニアリングとArkの接続を確認。単一タスクのファイル化から始める方向。
+表のセルは3行以内を厳守。
 
 ## 次
 
