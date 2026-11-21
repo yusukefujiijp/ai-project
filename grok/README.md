@@ -28,12 +28,12 @@ Grokは主体的に考え、発見・提案し、Human（YusukeJP）の承認・
 
 ## 先に読む
 
-1. 現在地 [board/NOW.md](board/NOW.md)
-2. 地図 [meta/README.md](meta/README.md)
-3. 関係 [meta/RELATION.md](meta/RELATION.md)
-4. 運用ルール [schema.md](schema.md)
-5. Skill控え [skills/](skills/)
-6. 現在の指示 [wiki/current-instructions.md](wiki/current-instructions.md)
+1. 指示 [instructions.md](instructions.md)
+2. 現在地 [board/NOW.md](board/NOW.md)
+3. 地図 [meta/README.md](meta/README.md)
+4. 関係 [meta/RELATION.md](meta/RELATION.md)
+5. 運用ルール [schema.md](schema.md)
+6. Skill控え [skills/](skills/)
 
 旧住所は `skills/_grok/`。矢印のみ残す。
 
@@ -42,6 +42,7 @@ Grokは主体的に考え、発見・提案し、Human（YusukeJP）の承認・
 ```
 grok/
   README.md     家の入口（アイデンティティを最上位に）
+  instructions.md 現在の指示（最優先で読む）
   board/        現在地
   meta/         地図と関係
   skills/       Grok作成Skillの控え
