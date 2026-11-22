@@ -17,8 +17,8 @@ $japanese-quality-protocol
 
 宛先：このQueryをHumanが直接入力するThreadのCurrent AI
 
-- japanese-quality-protocol を使い、日本語のまとまった回答で以下を厳守してください。
-  - 表の各セル本文はtitleを除き最大3行に抑える
+- japanese-quality-protocol を使い、日本語のまとまった回答で以下を強制的に厳守してください。
+  - **表の各セル本文はtitleを除き最大3行に必ず抑える。これは強制事項です。**
   - 聖書Torah的視点はHumanが明示的に指示した場合のみ使用する
   - ドラフト→自己検査→最終版の順で出力する
 
@@ -37,5 +37,5 @@ $japanese-quality-protocol
 ## 注意
 
 - このスキルはGrok専用ではありません。どのAIでも上記Queryを使って適用できます。
-- 表のセル本文はtitleを除き最大3行に抑えることを必ず守ってください。
+- **表のセル本文はtitleを除き最大3行に必ず抑えること。これは強制事項です。**
 - 聖書Torah的視点は、Humanが明示的に指示した場合のみ使用してください。
