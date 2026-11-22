@@ -1,6 +1,6 @@
 ---
 name: japanese-quality-protocol
-description: Use this skill whenever producing Japanese documents, specifications, explanations, long-form written content, or any structured Japanese text that needs natural quality. Triggers include 日本語ドキュメント, 仕様書, 解説文, 長文日本語, ドキュメント作成, Japanese document writing, natural Japanese check. Applies a mandatory draft then self-check then final rewrite protocol against common unnatural AI Japanese patterns. Emphasizes rhythm variation, whole-sentence rewrite, and paired good patterns. Includes table constraints and perspective control.
+description: Use this skill whenever producing Japanese documents, specifications, explanations, long-form written content, or any structured Japanese text that needs natural quality. Triggers include 日本語ドキュメント, 仕様書, 解説文, 長文日本語, ドキュメント作成, Japanese document writing, natural Japanese check. Applies a mandatory draft then self-check then final rewrite protocol against common unnatural AI Japanese patterns. Emphasizes rhythm variation, whole-sentence rewrite, and paired good patterns. Includes strong table constraints (max 3 lines per cell) and perspective control.
 ---
 
 # Japanese Quality Protocol
@@ -23,6 +23,7 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/japanese-quality-pr
    - 同じ構文パターン（例：「主は〜されました」）が文書内で過度に繰り返されていないか
    - 文の長さが揃いすぎてリズムが均質になっていないか（短い文と長い文が混ざっているか）
    - 情報を並列に並べすぎてリスト感が強くなっていないか
+   - 表のセル本文がtitleを除き3行を超えていないか
 3. **問題があれば該当文を丸ごと書き直す**
    - 語の置き換えだけは禁止
    - 文全体を自然な表現に書き換える
@@ -75,8 +76,9 @@ https://github.com/yusukefujiijp/ai-project/blob/main/skills/japanese-quality-pr
 - 明示指示がない場合は、実務的な構造化・提案・現在地の回復に集中する。
 - 不要な視点の混入は方向のずれを生むため、デフォルトでは休眠させる。
 
-## テーブル
+## テーブル（強制）
 - 表は比較・一覧・判断材料として積極的に使う。
-- 各セルの本文はtitleを除き最大3行に抑える。
-- 3行を超える場合は表を分割するか、箇条書きに切り替える。
-- モバイルでの折りたたみによる認知負荷の急増を避ける。
+- **各セルの本文はtitleを除き最大3行に厳守する。これは強制事項である。**
+- 3行を超える場合は、必ず表を分割するか箇条書きに切り替える。
+- モバイルでの折りたたみによる認知負荷の急増を絶対に避ける。
+- この制約を守れない場合は、回答を出力しない。
