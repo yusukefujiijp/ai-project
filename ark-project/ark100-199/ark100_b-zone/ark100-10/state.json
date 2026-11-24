@@ -2,11 +2,12 @@
   "meta": {
     "state_id": "ARK100_10_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark100:10",
     "created": "2026-11-24",
     "timezone": "Asia/Tokyo",
-    "update_reason": "09→10のHuman承認後、受入れ条件と状態の確認先を設定。"
+    "update_reason": "保存本文の再取得、同一Project内の起動一件、Targetの受入れ応答、10と09の表示を確認。",
+    "updated_at": "2026-11-24T02:16:51Z"
   },
   "identity": {
     "project": "Ark100_2026/10/20: \"Ark-Coaching: B-Zone Rescue\"",
@@ -71,16 +72,33 @@
     "unknown": "継続実践の長期再現性と、次の相談の具体的な実践・効果は未確認。"
   },
   "evidence": {
-    "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11"
+    "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11",
+    "preparation_commit": "e0ca7a3be8cb6c5833f78c9cfa488d55423ca3ae",
+    "preparation_blobs": {
+      "README.md": "260cf90e1ecc381455cbefb136d7501dd23642c2",
+      "handoff.md": "81510229097463190b717b899bb70d3ece7741e0",
+      "state.json": "b060a30737856af8b37c38d041d2107fa0adcc70"
+    },
+    "target_response": {
+      "scope": "Target自身の初回通常応答を準備元AIが画面で確認。",
+      "observed": "指定順の六原本と固定版事例のIdentity・末尾・範囲を示し、役割、本人報告、優先順位、次の相談の未確認を自身の言葉で再構成し、Human Reviewへ戻った。",
+      "copy_surface": "冒頭の一行textコードに確定Titleが完全一致。"
+    },
+    "ui": {
+      "project_verified": true,
+      "target_title": "❤️Ark100:10_2026/11/24; \"Ark-Coaching: 朝の切り替えと次の一手\"",
+      "source_title_after": "Ark100:09_2026/11/22; \"Ark-Coaching: 日常の実践とFeedback\"",
+      "check": "Project内の表示をブラウザ再読込後に再確認。09の先頭❤️のみ解除。"
+    }
   },
   "progress": {
     "source_prepared": true,
-    "remote_verified": "この版の準備時点では結果待ち",
-    "delivery": "この版の準備時点では未確認",
-    "target_reconstruction": "未確認",
-    "target_title_display": "未確認",
-    "source_heart_removal": "未確認",
-    "human_access_and_field_effect": "未観測"
+    "remote_verified": "準備三原本をmainから再取得し全文一致を確認。",
+    "delivery": "同一ProjectにArk100:10を一件起動し、送信済みの起動本文とその応答を画面で確認。",
+    "target_reconstruction": "確認済み。",
+    "target_title_display": "確認済み。",
+    "source_heart_removal": "確認済み。",
+    "human_access_and_field_effect": "Human本人の到達・実利用・生活効果は未観測。"
   },
   "eof_sentinel": "EOF::ARK100_10_CURRENT_STATE::v001"
 }
