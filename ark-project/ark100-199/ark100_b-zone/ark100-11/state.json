@@ -2,11 +2,12 @@
   "meta": {
     "state_id": "ARK100_11_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark100:11",
     "created": "2026-11-25",
     "timezone": "Asia/Tokyo",
-    "update_reason": "10→11のHuman承認に基づき受入れ条件と状態の確認先を設定。"
+    "update_reason": "11自身の受入れ応答、確定Title・10の先頭❤️解除の実表示再照合を反映。",
+    "updated": "2026-11-25"
   },
   "identity": {
     "project": "Ark100_2026/10/20: \"Ark-Coaching: B-Zone Rescue\"",
@@ -72,16 +73,37 @@
   },
   "evidence": {
     "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11",
-    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/6fb07c045b6b36939e1f0096d808586c790f34cc/ark-project/ark100-199/ark100_b-zone/ark100-10/state.json"
+    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/6fb07c045b6b36939e1f0096d808586c790f34cc/ark-project/ark100-199/ark100_b-zone/ark100-10/state.json",
+    "preparation_commit": "d2109bdb6d9be642ab838c35d22b3a42eb87b8bc",
+    "preparation_blobs": {
+      "README.md": "7430ef563055d086f6f29c46e452a908055ab8d2",
+      "handoff.md": "b92c185b8df612ba9b37efba78ac40b2b99f00ab",
+      "state.json": "f45190b0865fb3ff1f4ec87a280ca6600a973c20"
+    },
+    "target_response": {
+      "observed_on": "2026-11-25",
+      "title_code_block": "確定Titleと一致",
+      "readback": "受け手自身の応答で指定順、読解範囲・末尾・固定事例IDの一致を報告。領域README 572行、INSTRUCTIONS 137行、Ark-Coaching 115行（登録版と共有本文の一致報告）、11 README 26行、Handoff 44行、State revision 1 全87行、固定事例11行目。",
+      "reconstruction": "正式受入れを明記し、10からの継続役割、起床時の名称訂正、成功の連鎖の二つの意味、本人評価と未確認、次の実験・再開条件、権限境界、Human Reviewを自身の言葉で再構成。",
+      "qualification": "準備元AIが受け手の完了応答を実画面で確認した証拠。受け手の内部処理そのものや実生活の効果の独立認証ではない。"
+    },
+    "ui": {
+      "observed_on": "2026-11-25",
+      "target_title": "❤️Ark100:11_2026/11/25; \"Ark-Coaching: 成功の水平展開と次の実践\"",
+      "source_title": "Ark100:10_2026/11/24; \"Ark-Coaching: 朝の切り替えと次の一手\"",
+      "parallel_08_heart": "維持を確認",
+      "verification": "同一Project内の一覧と11の表示を再読み込みして、各Title・受入れ応答を確認。"
+    }
   },
   "progress": {
     "source_prepared": true,
-    "remote_verified": "この版の準備時点では結果待ち",
-    "delivery": "この版の準備時点では未確認",
-    "target_reconstruction": "未確認",
-    "target_title_display": "未確認",
-    "source_heart_removal": "未確認",
-    "human_access_and_field_effect": "未観測"
+    "remote_verified": "三原本をmainから再取得し、準備した完全本文・Identity・EOF・Bindingとの一致を確認。本人用記録も承認範囲に従い同じ記録を更新し、再取得照合済み。",
+    "delivery": "既存11なしをProject一覧で確認後、11一件を作成・送信。送信済み起動本文をコピーし、入力した全文との一致を確認。",
+    "target_reconstruction": "11自身の7資料の読解・再構成を記載した完了応答を確認。正式受入れ成立。",
+    "target_title_display": "確定Titleと一致、再読み込み後の表示も一致。",
+    "source_heart_removal": "11の受入れとTitle実表示確認後、10の先頭❤️のみ解除。再読み込み後のTitle残部と11・08の❤️を確認。",
+    "human_access_and_field_effect": "Human自身が11を開き利用開始したこと、新実験の実施・実生活効果は未観測。",
+    "activity_destination": "日常のArk-Coachingの活動先を11へ切替。08は並行先として保持。"
   },
   "eof_sentinel": "EOF::ARK100_11_CURRENT_STATE::v001"
 }
