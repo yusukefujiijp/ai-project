@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "state_id": "ARK100_11_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "owner": "Ark100:11",
+    "created": "2026-11-25",
+    "timezone": "Asia/Tokyo",
+    "update_reason": "10→11のHuman承認に基づき受入れ条件と状態の確認先を設定。"
+  },
+  "identity": {
+    "project": "Ark100_2026/10/20: \"Ark-Coaching: B-Zone Rescue\"",
+    "project_id": "g-p-6ad7138ef51c8191bb4f648e0fbea785",
+    "transition_kind": "THREAD_CONTINUE",
+    "source": "Ark100:10",
+    "source_confirmed_title": "❤️Ark100:10_2026/11/24; \"Ark-Coaching: 朝の切り替えと次の一手\"",
+    "target": "Ark100:11",
+    "confirmed_title": "❤️Ark100:11_2026/11/25; \"Ark-Coaching: 成功の水平展開と次の実践\""
+  },
+  "bindings": {
+    "type": "Current owner identity and compatible meaning",
+    "required_sources": [
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/README.md",
+        "identity": "ARK100_B_ZONE",
+        "end": "EOF::ARK100_B_ZONE::v007-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+        "identity": "ARK100_PROJECT_INSTRUCTIONS",
+        "end": "EOF::ARK100_PROJECT_INSTRUCTIONS::v007-human-authorized"
+      },
+      {
+        "path": "skills/ark-coaching/SKILL.md",
+        "identity": "name: ark-coaching / # Ark-Coaching",
+        "end": "実ファイル末尾"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-11/README.md",
+        "identity": "ARK100_11_RUNTIME",
+        "end": "EOF::ARK100_11_RUNTIME::v001-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-11/handoff.md",
+        "identity": "ARK100_10_TO_11_HANDOFF",
+        "end": "EOF::ARK100_10_TO_11_HANDOFF::v001-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-11/state.json",
+        "identity": "ARK100_11_CURRENT_STATE",
+        "end": "EOF::ARK100_11_CURRENT_STATE::v001"
+      }
+    ],
+    "success_case": {
+      "case_id": "409383f4-a822-4255-8e15-2c3053cea516",
+      "fixed_evidence": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11"
+    }
+  },
+  "authority": {
+    "source": "2026-11-25 Human input v001",
+    "scope": [
+      "11三原本の準備・保存後照合と承認済み本人用記録の必要な更新",
+      "同一Projectの11一件、起動・確定Title・受入れ確認",
+      "受入れ・Title表示・活動先切替確認後、10の先頭❤️解除と再照合"
+    ],
+    "private_handoff": "11の同一Project内の起動本文と既存の本人用記録に限定"
+  },
+  "now": {
+    "completed": "ベッド上スマホ禁止(起床時)の本人報告と評価、名称訂正、水平展開の理由を継承。",
+    "next": "Humanの今ある言葉から、成功の水平展開と次の実践の協働を再開する。",
+    "unknown": "新しい実験の実行・効果、既存の成功の長期再現性、その他の実践結果は未確認。"
+  },
+  "evidence": {
+    "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11",
+    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/6fb07c045b6b36939e1f0096d808586c790f34cc/ark-project/ark100-199/ark100_b-zone/ark100-10/state.json"
+  },
+  "progress": {
+    "source_prepared": true,
+    "remote_verified": "この版の準備時点では結果待ち",
+    "delivery": "この版の準備時点では未確認",
+    "target_reconstruction": "未確認",
+    "target_title_display": "未確認",
+    "source_heart_removal": "未確認",
+    "human_access_and_field_effect": "未観測"
+  },
+  "eof_sentinel": "EOF::ARK100_11_CURRENT_STATE::v001"
+}
