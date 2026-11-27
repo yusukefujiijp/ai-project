@@ -1,13 +1,13 @@
 ---
 title: "tower/lane/ ── LANE の家の棚"
-version: "v003"
+version: "v004"
 canonical_path: "agents/muse/tower/lane/README.md"
 role: "The lanes' shelf: the frame (who lives where) and the resident list"
-status: "active / Seed planted by YusukeJP 2026-11-15 (newline-only), grown to v001 in the Skill LANE bundle; GitHub LANE added as resident in v002; v003 aligns the frame and pointers with Standard 002 (charter inside the house README)"
+status: "active / Seed planted by YusukeJP 2026-11-15 (newline-only), grown to v001 in the Skill LANE bundle; GitHub LANE added as resident in v002; v003 aligns the frame and pointers with Standard 002 (charter inside the house README); v004 adds pstack LANE as third resident"
 created: "2026-11-15"
-updated: "2026-11-15"
+updated: "2026-11-27"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v003"
+expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v004"
 ---
 
 # tower/lane/ ── LANE の家の棚
@@ -27,13 +27,15 @@ expected_eof: "EOF::AI_MAMMOTH_TOWER_LANE::v003"
 |---|---|---|---|
 | Skill LANE | [skill-lane/](skill-lane/) | スキルの修正・改善の専門線 | 最初の住人（2026-11-15）。入口と憲章は [skill-lane/README.md](skill-lane/README.md) |
 | GitHub LANE | [github-lane/](github-lane/) | GitHub 構造化の専門線 ── repo（特に agents/muse）のフォルダ・ファイル構図の鳥瞰と構造化（器の線） | 二番目の住人（2026-11-15）。入口と憲章は [github-lane/README.md](github-lane/README.md)、初回構図診断は [github-lane/diagnoses/001_initial-composition-inventory.md](github-lane/diagnoses/001_initial-composition-inventory.md) |
+| pstack LANE | [pstack-lane/](pstack-lane/) | Lauren Tan（@poteto）／pstack の追跡・研究と、Muse への移植・運用の専門線 | 三番目の住人（2026-11-27）。入口と憲章は [pstack-lane/README.md](pstack-lane/README.md)、成り立ちの原本は [pstack-lane/migration_2026-11-27.md](pstack-lane/migration_2026-11-27.md) |
 
-他の LANE の家は、熟した時に、LANE ごとに建てる。既存の charter（artifacts/report/LANE.md、artifacts/herd-cards/LANE.md）は、当面は現住所のまま機能する ── 移転は、各 LANE の後続判断とする。
+他の LANE の家は、熟した時に、LANE ごとに建てる。Report LANE と Herd LANE の憲章は、仕様002 の完了（2026-11-15）に伴い artifacts 側の各 README へ「レーン憲章」の節として内包済みである（独立した LANE.md は repo 内に現存しない）。
 
 ## 来歴
 
 - この棚の入口は、YusukeJP 自身の手で、改行のみの Seed として植えられた（2026-11-15）。
 - v002（2026-11-15）：GitHub LANE を住人に加えた ── 家（憲章と初回構図診断）の新設と対になる棚側の更新であり、枠（住み分け）そのものは v001 から変更していない。
 - v003（2026-11-15）：仕様002（憲章は README に内包する、YusukeJP の KISS の決定）の確立に合わせ、枠の「家の最小形」と住人表の憲章ポインタを、README 内包の形へ更新した。既存 charter（artifacts/ の2家）は現住所のまま ── その追随は仕様002 §4 のとおり、各家の移行束による。
+- v004（2026-11-27）：pstack LANE を三番目の住人として加えた ── 家（入口と憲章、移行記録 v001）の新設と対になる棚側の更新。あわせて、仕様002 完了後の現況に合わせ、Report／Herd 両憲章の所在の記述を実態へ更新した。
 
-EOF::AI_MAMMOTH_TOWER_LANE::v003
+EOF::AI_MAMMOTH_TOWER_LANE::v004
