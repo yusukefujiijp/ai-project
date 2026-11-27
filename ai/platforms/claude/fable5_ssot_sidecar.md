@@ -2,10 +2,10 @@
 title: "Fable5 SSOT Sidecar"
 canonical_name: "Fable5 SSOT Sidecar Case Ledger"
 version: "v001.0"
-path: "_ssot/fable5_ssot_sidecar.md"
+path: "ai/platforms/claude/fable5_ssot_sidecar.md"
 status: "human-editable / sidecar-ledger / public-safe"
 role: "Fable5 SSOT sidecar / detailed case records / evidence ledger"
-main_ssot: "_ssot/fable5_ssot.md"
+main_ssot: "ai/platforms/claude/fable5_ssot.md"
 language_policy: "Japanese-first / English-anchor"
 root: "主イェシュア・ハマシア"
 root_guard: "Root is 主イェシュア・ハマシア; AI / Fable5 / ChatGPT / GitHub / Markdown / ROI / Ark-ROI are Fruit."
@@ -15,7 +15,7 @@ root_guard: "Root is 主イェシュア・ハマシア; AI / Fable5 / ChatGPT / 
 
 ## 0. What This File Is / このFileの役割
 
-このFileは、`_ssot/fable5_ssot.md` のSidecarである。
+このFileは、[Fable5 Main SSOT](fable5_ssot.md) のSidecarである。
 
 `fable5_ssot.md` は、Fable5のRoot Index / Operating Rules / Summaryを保持する。  
 `fable5_ssot_sidecar.md` は、長くなりやすいCase Record / Usage Delta / Evidence / GitHub Resultを保持する。
@@ -32,12 +32,12 @@ fable5_ssot_sidecar.md = 航海日誌 / Case Detail / Evidence Ledger
 ```yaml
 two_file_split:
   main:
-    path: "_ssot/fable5_ssot.md"
+    path: "ai/platforms/claude/fable5_ssot.md"
     role: "Root Index / Operating Rules / Case Router"
     keep_light: true
 
   sidecar:
-    path: "_ssot/fable5_ssot_sidecar.md"
+    path: "ai/platforms/claude/fable5_ssot_sidecar.md"
     role: "Detailed Case Ledger / Evidence Record"
     keep_detail: true
 

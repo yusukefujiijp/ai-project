@@ -4,7 +4,7 @@ canonical_name: "Fable5 Single Source of Truth"
 version: "v001.1"
 version_note: "v001.1 appends the Ark05 observed usage timeline from same-thread Fable5 screenshots so Future AI can reuse the data even if it cannot access the original images."
 status: "human-editable / growing-ledger"
-canonical_path: "_ssot/fable5_ssot.md"
+canonical_path: "ai/platforms/claude/fable5_ssot.md"
 role: "Fable5 usage / limit / effort / answer weight / breakthrough / adopted-patch SSOT"
 growth_model: "append-only / thread-by-thread update"
 language_policy: "Japanese-first / English-anchor"
@@ -59,7 +59,7 @@ Next Operating Rule
 
 ```yaml
 current_summary:
-  file: "_ssot/fable5_ssot.md"
+  file: "ai/platforms/claude/fable5_ssot.md"
   status: "growing SSOT"
   main_question:
     - "Fable5は、どのEffortで、どれくらい使用量%を消費し、どんな価値を返すのか？"

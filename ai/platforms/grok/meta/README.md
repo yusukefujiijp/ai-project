@@ -12,10 +12,10 @@ updated: "2026-10-29 JST"
 
 | Skill | 完結 |
 |---|---|
-| ark-okf-responder | [Ark Project共通Skill](../../skills/ark-okf-responder/SKILL.md)へ統合。旧配置は案内のみ。環境への登録・挙動は未確認 |
+| ark-okf-responder | [Ark Project共通Skill](../../../../skills/ark-okf-responder/SKILL.md)へ統合。旧配置は案内のみ。環境への登録・挙動は未確認 |
 | cortisol-meal-ops | 単体 |
 | grok-awakening-mode | 起動面 v1.1 Next step 必須 |
-| japanese-quality-protocol | 単体 |
+| japanese-quality-protocol | [Ark Project共通Skill](../../../../skills/japanese-quality-protocol/SKILL.md) |
 | living-graph-mode | 本文+refs |
 | long-form-response-rhythm | 本文+refs |
 | one-table-interface | 本文+refs |

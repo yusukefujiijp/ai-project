@@ -40,7 +40,7 @@ Rootは主イェシュア・ハマシア御自身。中央軸はTeshuvah、Human
 | [共有Lessons](../references/lessons/README.md) | 領域横断の条件付き判断。工程委任・保存・再開などは既存原本を参照する |
 | [共有Success Cases](../references/success-cases/README.md) | 領域横断の成功の意味・成立条件。Wiki固有の成功はWiki Referencesへ |
 | [Report References](../artifacts/reports/references/README.md) | Report領域の専門的な学び。共通の入口と専門原本をつなぎ、本文を二重管理しない |
-| [Grok Actorのホーム](../grok/README.md) | Grok固有の実験と理解。そのwiki・meta・rawは所有先を保持する。Ark共有Wikiへ自動統合・移設しない |
+| [Grok Actorのホーム](../ai/platforms/grok/README.md) | Grok固有の実験と理解。そのwiki・meta・rawは所有先を保持する。Ark共有Wikiへ自動統合・移設しない |
 
 同じ本文や現在状態を各所へ複製しません。一つの経験をFeedback・Lesson・Success Caseすべてへ登録することも条件にしません。関連する既存原本へ必要な意味を添えてリンクします。
 
