@@ -1,0 +1,91 @@
+{
+  "meta": {
+    "state_id": "ARK100_13_CURRENT_STATE",
+    "schema_version": "v001",
+    "revision": 1,
+    "owner": "Ark100:13",
+    "created": "2026-11-28",
+    "timezone": "Asia/Tokyo",
+    "update_reason": "12→13の限定承認に基づく起動準備。",
+    "updated": "2026-11-28"
+  },
+  "identity": {
+    "project": "Ark100_2026/10/20: \"Ark-Coaching: B-Zone Rescue\"",
+    "project_id": "g-p-6ad7138ef51c8191bb4f648e0fbea785",
+    "transition_kind": "THREAD_CONTINUE",
+    "source": "Ark100:12",
+    "source_confirmed_title": "❤️Ark100:12_2026/11/27; \"Ark-Coaching: 起床の切り替えと次の実践\"",
+    "target": "Ark100:13",
+    "confirmed_title": "❤️Ark100:13_2026/11/28; \"Ark-Coaching: 霊的ハシャマイムと血潮の注ぎ所\""
+  },
+  "bindings": {
+    "type": "Current owner identity and compatible meaning",
+    "required_sources": [
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/README.md",
+        "identity": "ARK100_B_ZONE",
+        "end": "EOF::ARK100_B_ZONE::v007-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/INSTRUCTIONS.md",
+        "identity": "ARK100_PROJECT_INSTRUCTIONS",
+        "end": "EOF::ARK100_PROJECT_INSTRUCTIONS::v007-human-authorized"
+      },
+      {
+        "path": "skills/ark-coaching/SKILL.md",
+        "identity": "name: ark-coaching / # Ark-Coaching",
+        "end": "実ファイル末尾"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-13/README.md",
+        "identity": "ARK100_13_RUNTIME",
+        "end": "EOF::ARK100_13_RUNTIME::v001-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-13/handoff.md",
+        "identity": "ARK100_12_TO_13_HANDOFF",
+        "end": "EOF::ARK100_12_TO_13_HANDOFF::v001-human-authorized"
+      },
+      {
+        "path": "ark-project/ark100-199/ark100_b-zone/ark100-13/state.json",
+        "identity": "ARK100_13_CURRENT_STATE",
+        "end": "EOF::ARK100_13_CURRENT_STATE::v001"
+      }
+    ],
+    "success_case": {
+      "case_id": "409383f4-a822-4255-8e15-2c3053cea516",
+      "fixed_evidence": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11",
+      "application": "起床時の実践の枝を再開する際の固定根拠。"
+    }
+  },
+  "authority": {
+    "source": "2026-11-28 Human input v001",
+    "scope": [
+      "13のREADME・Handoff・Stateをmainへ保存し再取得照合",
+      "既存の同一Project内の13一件への起動本文送達、受け手自身の受入れと確定Titleの実表示確認",
+      "受入れ・実表示・活動先切替の成立後、12の先頭❤️だけを解除して再表示確認"
+    ],
+    "private_handoff": "本人の信仰的イメージと生活実践の個別内容は承認された同一Project内の13への起動本文で渡す。"
+  },
+  "now": {
+    "priority": "血潮の注ぎ所と、霊的ハシャマイムとハシャマイムの区別が祈りの方向の理解に及ぼす関係。",
+    "next": "必須読解後に本人の採用した祈りの方向と開いた関係仮説を再構成する。本人の新たな入力があればそこから再開。",
+    "unknown": "聖心・聖なる血潮・霊的ハシャマイムの関係。起床時の候補の影響、朝への再現性。"
+  },
+  "evidence": {
+    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark100-199/ark100_b-zone/ark100-12/state.json",
+    "source_runtime": "https://github.com/yusukefujiijp/ai-project/blob/main/ark-project/ark100-199/ark100_b-zone/ark100-12/README.md",
+    "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11"
+  },
+  "progress": {
+    "source_prepared": true,
+    "remote_verified": "保存後の再取得照合により確認する。",
+    "delivery": "起動準備。",
+    "target_reconstruction": "未観測。",
+    "target_title_display": "未観測。",
+    "source_heart_removal": "13の受入れ・実表示・活動先切替後に確認。",
+    "activity_destination": "12→13の切替は受入れ・実表示の確認後に成立。",
+    "human_access": "未観測。"
+  },
+  "eof_sentinel": "EOF::ARK100_13_CURRENT_STATE::v001"
+}
