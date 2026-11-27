@@ -57,4 +57,4 @@
 ## 残ること
 
 - 実機判定は未了のまま： Task 14（v022 LP の良し悪し）、Task 2・3（v021 の見え方）。本検証はその代わりにならない。
-- 収蔵の範囲（2026-11-27 バンドル）： 本レポート・metrics・judgment-tasks.md・README.md を収蔵した。撮影 PNG（32枚）と共有画像 PNG はバイナリであり、GitHub connector の snapshot 経路（UTF-8 テキストのみ）では送れないため repo には入っていない ── 実ファイルはローカルに所在する。
+- 収蔵の範囲と、バイナリの置き場所（2026-11-27、YusukeJP が「甲」で確定）： 本レポート・metrics・judgment-tasks.md・README.md を repo に収蔵した（commit 867ae5d7、読戻し検証済み）。撮影 PNG（32枚）と共有画像 PNG は repo に入れない ── connector の snapshot 経路（UTF-8 テキストのみ）では送れないことに加え、置き場所の設計として「repo はテキストの記録を所有し、画像の実ファイルはローカル（your_files/herd-cards/）に置く」と決めた。共有画像は原本デッキ（本番 herd-cards_v003.html）と生成スクリプト（~/workspace/herd-cards/make_share_v004.py）から再生成でき、描画検証も render_check.py から再実行できる ── 「作り直せる」ことが、この分担の根拠である。
