@@ -1,13 +1,13 @@
 ---
 title: "skill-lane/ ── Skill LANE の家（入口と憲章）"
-version: "v003"
+version: "v004"
 canonical_path: "agents/muse/tower/lane/skill-lane/README.md"
 role: "Entrance and charter of the Skill LANE house — one document: the entrance guides, the charter section constitutes the lane (Standard 002)"
-status: "active / house created 2026-11-15 with charter (LANE.md) and model case 001; this README was created the same day under Standards 001–002, absorbing the charter, and the separate LANE.md was deleted; Case 002 (canon defects repair) executed on 2026-11-15 (v002); Case 003 (question-count fossil) executed on 2026-11-15 (v003)"
+status: "active / house created 2026-11-15 with charter (LANE.md) and model case 001; this README was created the same day under Standards 001–002, absorbing the charter, and the separate LANE.md was deleted; Case 002 (canon defects repair) executed on 2026-11-15 (v002); Case 003 (question-count fossil) executed on 2026-11-15 (v003); Case 004 (skills living-reference audit, record only) recorded on 2026-11-27 (v004)"
 created: "2026-11-15"
-updated: "2026-11-15"
+updated: "2026-11-27"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_README::v003"
+expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_README::v004"
 ---
 
 # skill-lane/ ── Skill LANE の家
@@ -22,6 +22,7 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_README::v003"
   - [001_yomiyasu-living-reference.md](cases/001_yomiyasu-living-reference.md) ── モデルケース第1号：yomiyasu-switch の「生きた参照」化（2026-11-15、TOWER で実証され、このレーンへ移行した成功ケース）。
   - [002_canon-defects-repair.md](cases/002_canon-defects-repair.md) ── Case 002：canon 側の欠陥4件の修繕（2026-11-15、Skill LANE で再検証・設計・実行）。
   - [003_question-count-fossil.md](cases/003_question-count-fossil.md) ── Case 003：問いの数の化石化の修繕（2026-11-15、引用の棚卸しの再走査から発生）。
+  - [004_skills-living-reference-audit.md](cases/004_skills-living-reference-audit.md) ── Case 004：skills/ の生きた参照の初監査の記録（2026-11-16 監査実行、欠陥0件 ── 修繕ではなく記録の案件）。
 
 ## 住み分け（ポインタ）
 
@@ -71,6 +72,7 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_README::v003"
 - 同日、仕様001（全フォルダに README）と仕様002（憲章は README に内包する）により、本書が家の入口として新設され、憲章は独立した LANE.md から本書へ内包された（LANE.md は削除）。
 - 最初の案件 Case 002（canon 側の欠陥4件の修繕）は、2026-11-15 に実行済みである ── HARNESS §3 の yomiyasu 固定の生きた参照化（HARNESS v011）、CONTROL の版履歴の v013 重複への注記つき訂正（CONTROL v019）、CONCEPT.md の Router 入口の追加（README v013）、古い名前と数の現行化（GOAL v003、artifacts/report/README v016）。記録は [cases/002_canon-defects-repair.md](cases/002_canon-defects-repair.md) が保持する。
 - Case 003（問いの数の化石化の修繕）は、2026-11-15 に実行済みである ── README §3 の見出しの無数化（README v014）、artifacts/report/README の憲章の読み順のポインタ化（同 v017）。記録は [cases/003_question-count-fossil.md](cases/003_question-count-fossil.md) が保持する。
+- Case 004（skills/ の生きた参照の初監査）は、2026-11-16 に実行済みである ── repo のスキル47件の SKILL.md を全件監査し、化石化の欠陥は0件だった（家はもともと生きた参照で建っていた）。修繕は無く、監査の記録は [cases/004_skills-living-reference-audit.md](cases/004_skills-living-reference-audit.md) が保持する。
 
 ## 来歴
 
@@ -78,5 +80,6 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_README::v003"
 - 本書は同日、仕様001・仕様002の確立と同じ束で新設され、憲章を内包した。
 - v002（2026-11-15）: Case 002 の実行にあわせ、cases の一覧へ 002 を追加し、憲章5「現在地」を実行済みの形へ現行化した。
 - v003（2026-11-15）: Case 003 の実行にあわせ、cases の一覧へ 003 を追加し、憲章5「現在地」へ Case 003 の実行済みを追記した。
+- v004（2026-11-27）: Case 004（skills/ の生きた参照の初監査の記録）の新設にあわせ、cases の一覧へ 004 を追加し、憲章5「現在地」へ Case 004 の実行済みを追記した。監査は 2026-11-16 の実行であり、本版はその記録の収蔵である。
 
-EOF::AI_MAMMOTH_SKILL_LANE_README::v003
+EOF::AI_MAMMOTH_SKILL_LANE_README::v004
