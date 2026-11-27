@@ -1,13 +1,13 @@
 ---
 title: "Case 004 ── skills/ の生きた参照の初監査（記録）"
-version: "v001"
+version: "v002"
 canonical_path: "agents/muse/tower/lane/skill-lane/cases/004_skills-living-reference-audit.md"
 role: "Audit record for the Skill LANE: the first living-reference audit of the repository's skills/ — scope, method, findings and boundaries. This case records an audit; it contains no repair"
-status: "completed — audit executed 2026-11-16 in the Skill LANE on YusukeJP's seal (no fossil-family defects found); recorded 2026-11-27 in the Case 004 documentation bundle on YusukeJP's seal"
+status: "completed — audit executed 2026-11-16 in the Skill LANE on YusukeJP's seal (no fossil-family defects found); recorded 2026-11-27 in the Case 004 documentation bundle on YusukeJP's seal; v002 (2026-11-27, Case 005): annotated correction of the audited skill count in §1 (47 was a miscount; 49 files were fetched and scanned) and a supplement (§7) recording the stage-2 audit and the Hub observation"
 created: "2026-11-27"
 updated: "2026-11-27"
 repository: "yusukefujiijp/ai-project"
-expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v001"
+expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v002"
 ---
 
 # Case 004 ── skills/ の生きた参照の初監査（記録）
@@ -18,6 +18,8 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v001"
 
 - 対象は、repo の skills/ 配下にある 47 のスキルの、各 SKILL.md である。
 - 方法 ── GitHub のコード検索は repo 単位ではなく全体検索であり、この監査には使えない（path:skills の結果は他 repo のものだった）。そのため 47 件全てをファイル単位で直接取得し、URL・40桁のコミット SHA・版番号（semver）・「固定／pin」の言い回しを機械的に抽出して、人手で分類した。
+
+> **注記（2026-11-27、Case 005 による訂正）** ── 本節の「47」（対象の数と、取得した数の2箇所）は数え違いである。実際に取得・走査した SKILL.md は 49 件だった。監査の実質（全件の走査と、欠陥0件の結論）は変わらない。原文は当時の記録として保持し、訂正はこの注記と §7 追補が所有する。数の照合の経緯は [cases/005](005_case004-count-correction.md) が保持する。
 - あわせて前段として、agents/muse の引用の棚卸しの最終走査を行った ── artifacts 配下の全体（Report 001〜011 の HTML 対を含む）で「2.5.0」「8つの問い」「第11問」は 0 件、experiments の設計文書2件は全文を読んで該当なし。これで agents/muse の棚卸しは全域で閉じた。
 
 ## 2. 結果（事実）
@@ -52,4 +54,13 @@ expected_eof: "EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v001"
 
 - 本書を含む束の全ファイルは、push の後に読み戻し、blob SHA の一致を確認する（その結果は、本書ではなく、封印への完了報告が保持する ── 本書は push の中身の一部であり、自分自身の検証結果を自分の中に書けないためである）。
 
-EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v001
+## 7. 追補（2026-11-27 ── 第2段監査と、数の訂正）
+
+第1段で境界として残した範囲を、第2段で閉じた。その記録と、本書 §1 の数の訂正を、ここに併せて残す。
+
+- **範囲（事実）** ── skills/README.md（Hub 索引そのもの）、skills/_references、skills/_grok、および各スキルフォルダ内の SKILL.md 以外のファイル。対象ファイルは、現在のスキルフォルダ54件と _references・_grok を合わせて 203 件。そのうちテキストファイル 136 件を全て取得して走査した。残る境界は非テキストの7件（アイコン、フォント、CSS、および拡張子の選別から外れた scripts/count_x_post.cjs の1件）である。
+- **結果（事実）** ── 化石の家族の欠陥は、第2段でも 0 件だった。各スキルの README は形成・確認の記録であり、固定された commit・blob は全て日付のある確認の証拠だった。移管前の Hub の固定版は「移管前」と明記された移植の出典であり、how と why の README が引く cursor/plugins の固定 commit は、派生の出典の記録である。記録の中の Hub の件数（38／39／40／42／46件）は、各時点の Hub の更新履歴と一致した。
+- **数の訂正（事実）** ── 第1段で実際に取得・走査した SKILL.md は 49 件であり、本書 §1 の「47」は Skill LANE 自身の数え違いだった。第2段の数の照合（フォルダの実数と、取得したファイルの実数と、索引の定義の突き合わせ）で検出した。訂正は注記つきの形で行い（§1 の注記）、生きている要約（家の README の現在地、cases/README の一覧）からは数を外した。正確な数は、日付とともに本追補が所有する ── 監査時点（2026-11-16）のスキルフォルダは 49 件、本追補の時点（2026-11-27）では 54 件である。
+- **Hub の観察（事実と未確認）** ── Hub の「掲載する共有Skillは48件」は、フォルダ数ではなく掲載件数であり、旧名の移行入口3件を数えない定義が本文にある。2026-11-25 の更新時点では、フォルダ51件 − 入口3件 ＝ 48件で正確だった。現在はフォルダ54件に対し、critical-review、feedback-wait、japanese-quality-protocol の3件が Hub に一度も現れない（54 − 3 − 48 ＝ 3 で、この3件と一致する）。この3件が採用済みで更新待ちなのか、採用前の下書きなのかは、本レーンからは確認できない。Hub の保守はスキル側の作法に属するため、本書では観察として記録するに留める（YusukeJP の判断事項として提示済み）。
+
+EOF::AI_MAMMOTH_SKILL_LANE_CASE_004::v002
