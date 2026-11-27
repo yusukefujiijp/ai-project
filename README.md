@@ -318,7 +318,8 @@ Canonical GitHub Reality、Current HumanのLiving Reality、過去の記録、AI
 | [`lifestyle/README.md`](lifestyle/README.md) | 生活領域の安定した案内口 | chocoZAPなど、本人の実践・工夫・記録の担当原本へ進む時。記録本文や全生活の進捗は各領域が所有する |
 | [旧Projects／Ark-WTPの保管記録](control-center/github/ARCHIVE.md#arc-012) | Historical project archive | 退役したProjects入口・Ark-WTPの凍結Benchmark・前身設計・保存理由を調べる時。通常運用のProject入口ではない |
 | [旧Ark Systemの知恵・形成史](control-center/github/ARCHIVE.md#arc-010) | Historical growth record / retired operating map | Thread横断の成長や、AIによる保存・長期的助言が育った由来を調べる時。原本と当時の証拠へ進み、現在の運用契約とは区別する |
-| [`_system/chatgpt/global-custom-instructions.md`](_system/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
+| [`ai/README.md`](ai/README.md) | AI製品別資料とエージェント協働への入口 | 対象製品の資料や協働原本を探す時 |
+| [`ai/platforms/chatgpt/global-custom-instructions.md`](ai/platforms/chatgpt/global-custom-instructions.md) | ChatGPT GCIとプロフィールへの入口・正確な貼付本文 | 全体設定の継承・改訂・反映を扱う時。長期メモリの同期先ではない |
 | [`references/success-cases/README.md`](references/success-cases/README.md) | 重要な成功の意味・Human評価・根拠をつなぐ事例入口 | 成功経験から現在の協働への再利用・再解釈を考える時 |
 | [`repository-reviews/README.md`](repository-reviews/README.md) | Repository Living Reviewの方法と観測履歴への入口 | 前回の根拠と現在を比較し、保持・改善・保留を判断する時 |
 | [`harness/README.md`](harness/README.md) | 読み取り専用Repositoryレビューの実行補助・初版 | Work＋GitHub読取Connector＋Pythonで固定原本・読解範囲・結果検証・中断再開・成果保存を接続する時。方法は既存Review Prompt、通し試験と制約は[STR-024](control-center/changes/STR-024-harness-repository-review.md#live-trial)へ |

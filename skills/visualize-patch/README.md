@@ -69,7 +69,7 @@ Mermaidが文字列として表示された後など、過去の図を作り直�
 
 YusukeJPはdot-0000との会話で、Workが選んだMermaidがiOSでは文字列になり、再依頼が必要になると報告し、「Mermaidを選ぼうとした機会をVisualizeへつなぐ」方針の計画と実行を承認しました。これはHumanの表示観測と採用判断であり、アプリ全般の原因特定や全環境の優位性の実証ではありません。
 
-共通の選択方針は[GCI 5.5](../../_system/chatgpt/global-custom-instructions.md#2-貼付本文)、関係分析からの説明用可視化への接続は[現行Graph Skill](../analyze-living-graph/SKILL.md)、起動対象・表示品質・能力差は[Visualize Patch](SKILL.md)が所有します。PatchのdescriptionはAIが選ぶ単純な説明図も対象に含め、普通のMarkdown表・引用・言及だけの一律起動は避けます。規則全文をHubへ複製しません。
+共通の選択方針は[GCI 5.5](../../ai/platforms/chatgpt/global-custom-instructions.md#2-貼付本文)、関係分析からの説明用可視化への接続は[現行Graph Skill](../analyze-living-graph/SKILL.md)、起動対象・表示品質・能力差は[Visualize Patch](SKILL.md)が所有します。PatchのdescriptionはAIが選ぶ単純な説明図も対象に含め、普通のMarkdown表・引用・言及だけの一律起動は避けます。規則全文をHubへ複製しません。
 
 [共有版改訂commit](https://github.com/yusukefujiijp/ai-project/commit/22771fcf61766c533a368cf90538380ac6af431a)時点のGraph blobは `3164e7c25c57bab72179f9737352bf09bc6d6e28`、Patch blobは `a3acbba383ad0a5c4b6c316034ef6ac60eadd885`。両共有本文を保存後に再取得し、既存の登録済み二Skillも更新して登録先Remote本文との完全一致を確認しました。新しいSkill複製・他Skillの変更はありません。Graphの既存の明示呼出し設定とPatchの自動選択許可設定は保持しています。Graph分析の自動起動を広げる変更ではありません。
 

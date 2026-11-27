@@ -1,30 +1,16 @@
 ---
-title: grok board NOW
-written: 2026-10-01 22:56 JST
-updated: 2026-11-22
-status: current
+title: "NOWの移転案内"
+status: "redirect-only"
+moved_to: "ai/platforms/grok/board/NOW.md"
+expected_eof: "EOF::GROK_NOW_RELOCATION_NOTICE::v001"
 ---
 
 # NOW
 
-## 現在地 2026-10-01 22:56 JST
-
-- 家は根 `grok/`。庭と城。王座ではない。
-- 入口 [grok/README.md](../README.md) が地券。
-- `grok/skills/` 済み: cortisol-meal-ops, grok-awakening-mode, ark-okf-responder, japanese-quality-protocol, example-learning
-- example-learning は手順だけ。主題の正本は外。SRPのSeedは技能に入れていない。
-- 未コピー: living-graph-mode, long-form-response-rhythm, one-table-interface
-- Hub 未掲載。
-
-## Ark-OKFの配置更新 — 2026-10-29
-
-上の2026-10-01の配置・Hub状態は当時の記録として保持する。Ark-OKFの現行本文は[共通Skill](../../skills/ark-okf-responder/SKILL.md)へ統合し、旧Grok本文と旧控え本文は退役、旧配置と旧Promptは案内へ変更した。[Skills Hub](../../skills/README.md)への掲載はArk-OKFについての今回の更新であり、他のGrok Skillの掲載・統合や、各環境への登録・実際の挙動を確認した意味ではない。
-
-## 2026-11-22 更新
-
-Karpathy的コンテキストエンジニアリングとArkの接続を確認。単一タスクのファイル化から始める方向。
-表のセルは3行以内を厳守。
+共有原本と更新先は [`ai/platforms/grok/board/NOW.md`](../../ai/platforms/grok/board/NOW.md) です。
 
 ## 次
 
-実地の一例で example-learning を使い、手順が主題を食わないかを見る。
+[新しい現在地の「次」](../../ai/platforms/grok/board/NOW.md#次)を開いてください。
+
+EOF::GROK_NOW_RELOCATION_NOTICE::v001

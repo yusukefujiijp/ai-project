@@ -121,7 +121,7 @@
     "current_work_owners": {
       "continuation_interface": [
         "AGENTS.md#next-query",
-        "_system/chatgpt/global-custom-instructions.md"
+        "ai/platforms/chatgpt/global-custom-instructions.md"
       ],
       "recall_hub": [
         "skills/recall-hub/README.md",

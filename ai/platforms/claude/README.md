@@ -1,3 +1,7 @@
+## Claudeの指示
+
+[Claudeの指示原本](claude-instructions.md)
+
 ## Fable5
 - [`fable5_ssot.md`](./fable5_ssot.md)
 
