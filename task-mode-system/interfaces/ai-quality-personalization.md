@@ -20,8 +20,8 @@ expected_eof: "EOF::AI_QUALITY_PERSONALIZATION::v0.2.0"
 
 Humanは、AI品質の長期原則を他AI・Future AIへ継承できるように、ChatGPT全体の指示とプロフィールを整えることを求めた。今回の正確な貼付本文と版は、次の二つが所有する。本書へ同じ本文を複製しない。
 
-- [Global Custom Instructions（GCI: ChatGPT全体カスタム指示）](../../_system/chatgpt/global-custom-instructions.md)：5000文字以内の全体協働方針、重要なCorrection、採用理由、設定間の境界。
-- [User Profile](../../_system/chatgpt/user-profile.md)：現在提示された1500文字以内のプロフィールを、改稿せず保持した原本。
+- [Global Custom Instructions（GCI: ChatGPT全体カスタム指示）](../../ai/platforms/chatgpt/global-custom-instructions.md)：5000文字以内の全体協働方針、重要なCorrection、採用理由、設定間の境界。
+- [User Profile](../../ai/platforms/chatgpt/user-profile.md)：現在提示された1500文字以内のプロフィールを、改稿せず保持した原本。
 - [Ark27 Project指示](../../ark-project/ark27/INSTRUCTIONS.md)：Ark27固有の表示・運用・Source契約。全体設定とは別の適用先。
 
 品質原則の成立理由は[現場運用 §4.2–4.3](../operation.md)、当時の直接の依頼・訂正は[05経験原本](../../ark-project/ark27/ark27-05/task-records.json)の `quality-correction`・`durable-quality-principle`・`memory-profile-request` にある。これらはHumanの発言と経験の記録であり、ChatGPTアカウントメモリの取得結果ではない。過去の依頼を現在の実行権限へ変えない。
