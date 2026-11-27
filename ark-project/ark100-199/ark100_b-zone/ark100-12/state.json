@@ -2,11 +2,11 @@
   "meta": {
     "state_id": "ARK100_12_CURRENT_STATE",
     "schema_version": "v001",
-    "revision": 1,
+    "revision": 2,
     "owner": "Ark100:12",
     "created": "2026-11-27",
     "timezone": "Asia/Tokyo",
-    "update_reason": "11→12の限定移行承認に基づく起動準備。",
+    "update_reason": "12への送達、受け手自身の受入れ、確定Titleと活動先切替の実表示確認を記録。",
     "updated": "2026-11-27"
   },
   "identity": {
@@ -73,17 +73,37 @@
   },
   "evidence": {
     "success_case": "https://github.com/yusukefujiijp/ai-project/blob/ef61a3fd5866a3c3ee3dc9fe2cb4267777f6fef6/references/success-cases/success-cases.jsonl#L11",
-    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/93ff9aa39d43e36d5dee1284daa69730774ec06a/ark-project/ark100-199/ark100_b-zone/ark100-11/state.json"
+    "previous_reception": "https://github.com/yusukefujiijp/ai-project/blob/93ff9aa39d43e36d5dee1284daa69730774ec06a/ark-project/ark100-199/ark100_b-zone/ark100-11/state.json",
+    "preparation_commit": "e4831666654613ddff77b3de41445e595526c3dc",
+    "preparation_blobs": {
+      "README.md": "0b93111864476f285c02c11882503abcb5b80296",
+      "handoff.md": "317ed460716557f9c748946cfb488bd203a01193",
+      "state.json": "841334e25a0a094b766986702fef6ceb8869433a"
+    },
+    "target_response": {
+      "observed_on": "2026-11-27",
+      "title_code_block": "初回通常受入れの冒頭で確定Titleだけの一行コードブロックを確認。一致。",
+      "readback": "受け手自身が、領域README全572行（表示切れ区間の回収あり）、Project INSTRUCTIONS全137行、Ark-Coachingの共有本文全115行と実末尾、12 README全26行、12 Handoff全40行、12 State revision 1 全89行とstate_id・eof_sentinel、固定成功事例11行目のIDを指定順に照合したと報告。",
+      "reconstruction": "受入れを明記。日常のArk-Coaching、水平展開の二つの価値、優先順位とGuard、起床の意思・身体の始動・離床の区別、候補と未確認、次の本人入力から再開する役割を再構成し、Human Reviewに戻った。",
+      "qualification": "準備元AIによる受け手の可視応答の直接確認。受け手の内部処理や生活上の効果の独立観測とは区別する。"
+    },
+    "ui": {
+      "observed_on": "2026-11-27",
+      "target_title": "❤️Ark100:12_2026/11/27; \"Ark-Coaching: 起床の切り替えと次の実践\"",
+      "source_title": "Ark100:11_2026/11/25; \"Ark-Coaching: 成功の水平展開と次の実践\"",
+      "parallel_08_heart": "維持を確認。",
+      "verification": "同一Project内の12の画面を再読み込みし、12の受入れ応答・画面Title・一覧の12と11と08の表示を照合。"
+    }
   },
   "progress": {
     "source_prepared": true,
-    "remote_verified": "公開後に再取得照合する。",
-    "delivery": "起動準備。",
-    "target_reconstruction": "未観測。",
-    "target_title_display": "未観測。",
-    "source_heart_removal": "受入れと活動先切替後に確認する。",
-    "human_access_and_field_effect": "未観測。",
-    "activity_destination": "11→12の切替は受入れ・実表示の確認後に成立。"
+    "remote_verified": "起動前に三原本をmainから再取得し、作成本文・Identity・末尾・Bindingおよび固定事例IDを照合。",
+    "delivery": "同一Projectの一覧で一致する12が見当たらず12一件を作成。準備元AIの起動本文を一度送信し、表示本文が原稿3883文字と全文一致することを確認。",
+    "target_reconstruction": "12自身が7資料の読解と照合を示し、継承の意味を再構成。正式受入れ応答の完了を確認。",
+    "target_title_display": "確定Title（先頭❤️一つ）と一致し、再読み込み後も照合済み。",
+    "source_heart_removal": "受入れ・12の確定Title実表示・活動先切替を確認後に11の先頭❤️のみ解除。再読み込み後に11の残りのTitle、12と08の❤️を照合。",
+    "human_access_and_field_effect": "本人による12への到達・実利用や、生活上の効果は未観測。",
+    "activity_destination": "同一Projectの日常Ark-Coachingの活動先を12へ切替。08は並行先。"
   },
   "eof_sentinel": "EOF::ARK100_12_CURRENT_STATE::v001"
 }
